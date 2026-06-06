@@ -3,6 +3,9 @@
 
 A curated aggregator index and operational template suite to establish a single source of truth for all AI coding assistants in your projects.
 
+> [!NOTE]
+> **Agentic Ops vs. AIOps**: While *AIOps* traditionally refers to using machine learning to monitor enterprise IT infrastructure and logs, **Agentic Ops** focuses on the developer-centric operations, orchestration, guardrails, and alignment of autonomous AI coding agents (like Claude Code, Cursor, and ACOS). This repository is the home of Agentic Ops.
+
 ---
 
 ## 🏛️ Curated Ecosystem Index
