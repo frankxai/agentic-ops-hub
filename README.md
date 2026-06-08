@@ -1,3 +1,5 @@
+![Agentic Operations Hub Banner](images/hero-banner.png)
+
 # 🚀 Agentic Operations Hub (agentic-ops-hub)
 ### The Configuration Control Plane for AI Coding Agents: Claude Code, Cursor, Cline, Copilot, Codex, Antigravity & Grok
 
