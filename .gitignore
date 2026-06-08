@@ -17,3 +17,6 @@ Thumbs.db
 node_modules/
 .cache/
 .acos/
+aoh-sync.bat
+aoh-cleanup.bat
+*.log
