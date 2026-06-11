@@ -1,9 +1,32 @@
+<div align="center">
+
 ![Agentic Operations Hub Banner](images/hero-banner.png)
 
-# 🚀 Agentic Operations Hub (agentic-ops-hub)
-### The Configuration Control Plane for AI Coding Agents: Claude Code, Cursor, Cline, Copilot, Codex, Antigravity & Grok
+# 🚀 Agentic Operations Hub
+
+### The Configuration Control Plane for AI Coding Agents
+**Claude Code · Codex · Copilot · Cursor · Cline · Antigravity · Grok**
 
 One source of truth (`AGENTS.md`), one sync engine, every agent aligned — plus a curated index of the operational layer that keeps autonomous coding agents safe, fast, and consistent.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
+[![AGENTS.md Standard](https://img.shields.io/badge/AGENTS.md-Standard-8b5cf6?style=for-the-badge)](https://agents.md)
+[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-0ea5e9?style=for-the-badge)](https://modelcontextprotocol.io)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-f59e0b?style=for-the-badge)](#-partnerships--collaboration)
+
+**Aligned with the official agent platforms:**
+
+[![Anthropic](https://img.shields.io/badge/Anthropic-Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code/overview)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Codex-412991?style=flat-square&logo=openai&logoColor=white)](https://developers.openai.com/codex)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub-Copilot-24292f?style=flat-square&logo=githubcopilot&logoColor=white)](https://docs.github.com/en/copilot)
+[![xAI Grok](https://img.shields.io/badge/xAI-Grok-000000?style=flat-square&logo=x&logoColor=white)](https://docs.x.ai)
+[![Google Antigravity](https://img.shields.io/badge/Google-Antigravity-4285F4?style=flat-square&logo=google&logoColor=white)](https://antigravity.google)
+[![Cursor](https://img.shields.io/badge/Cursor-Rules-111111?style=flat-square)](https://docs.cursor.com/context/rules)
+[![Cline](https://img.shields.io/badge/Cline-Rules-1e293b?style=flat-square)](https://docs.cline.bot)
+
+[**⚡ Quick Start**](#-quick-start) · [**📚 Official Core Truths**](#-official-core-truths) · [**🧠 Layering Model**](#-the-layering-model) · [**🏛️ Curated Index**](#%EF%B8%8F-curated-agentic-ops-index) · [**🤝 Partners**](#-partnerships--collaboration)
+
+</div>
 
 ---
 
@@ -20,6 +43,25 @@ This repository exists to draw — and own — an exact distinction:
 | **Unit of config** | Dashboards, runbooks | `AGENTS.md`, `SKILL.md`, hooks, rule files |
 
 **AIOps** uses machine learning to monitor infrastructure. **Agentic Ops** is the developer-centric discipline of configuring, orchestrating, guarding, and aligning the AI agents that write your code. Different layer, different operator, different failure modes. This repository is the home of Agentic Ops.
+
+---
+
+## 📚 Official Core Truths
+
+Agentic Ops only works if every layer traces back to **primary, official documentation** — not folklore. These are the canonical sources this hub aligns to, per vendor:
+
+| Vendor | Agent | Official Docs (the core truth) | Config files this hub manages |
+| :--- | :--- | :--- | :--- |
+| **Anthropic** | [Claude Code](https://www.claude.com/product/claude-code) | [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code/overview) · [Memory & CLAUDE.md](https://docs.anthropic.com/en/docs/claude-code/memory) · [Agent Skills](https://docs.anthropic.com/en/docs/claude-code/skills) · [Hooks](https://docs.anthropic.com/en/docs/claude-code/hooks) | `CLAUDE.md`, `.claude/skills/`, hooks |
+| **OpenAI** | [Codex](https://developers.openai.com/codex) | [Codex docs](https://developers.openai.com/codex) · [AGENTS.md guidance](https://developers.openai.com/codex/guides/agents-md) · [Agents platform](https://platform.openai.com/docs/guides/agents) | `AGENTS.md` (read natively) |
+| **GitHub** | [Copilot](https://github.com/features/copilot) | [Copilot docs](https://docs.github.com/en/copilot) · [Custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot) · [Copilot coding agent](https://docs.github.com/en/copilot/concepts/about-copilot-coding-agent) | `.github/copilot-instructions.md` |
+| **xAI** | [Grok](https://x.ai/grok) | [xAI docs](https://docs.x.ai) · [Grok API](https://docs.x.ai/docs/overview) | `AGENTS.md` (read natively) |
+| **Google** | [Antigravity](https://antigravity.google) | [Antigravity docs](https://antigravity.google/docs) · [Gemini API](https://ai.google.dev/gemini-api/docs) | `AGENTS.md` (read natively) |
+| **Cursor** | [Cursor](https://cursor.com) | [Rules docs](https://docs.cursor.com/context/rules) | `.cursor/rules/*.mdc` (generated) |
+| **Cline** | [Cline](https://cline.bot) | [Cline rules docs](https://docs.cline.bot/features/cline-rules) | `.clinerules/*.md` (generated) |
+| **Standards** | — | [AGENTS.md standard](https://agents.md) · [Model Context Protocol](https://modelcontextprotocol.io) | `AGENTS.md`, MCP configs |
+
+> When a vendor doc and a community convention disagree, **the vendor doc wins**. The [Curated Agentic Ops Index](#%EF%B8%8F-curated-agentic-ops-index) below layers community best practices *on top of* these core truths — never instead of them.
 
 ---
 
@@ -83,7 +125,7 @@ Rule of thumb: **capabilities live in ACOS, enforcement lives in hooks, configur
 
 ## 🏛️ Curated Agentic Ops Index
 
-The best external repositories, toolkits, and skills for operating AI coding agents:
+The best **community** repositories, toolkits, and skills for operating AI coding agents — layered on top of the [Official Core Truths](#-official-core-truths) above:
 
 ### 1. Behavior & Guardrails
 * [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) — The original viral Karpathy rules for Claude Code.
@@ -112,5 +154,28 @@ The best external repositories, toolkits, and skills for operating AI coding age
 
 ---
 
+## 🤝 Partnerships & Collaboration
+
+Agentic Ops Hub is being built **in the open, with intent** — we want this to become the shared control plane for agent operators across communities.
+
+**Current posture:**
+* 🔭 **Open to building together.** Communities, toolmakers, and agent platform teams who want to align on `AGENTS.md`-first configuration are welcome — open an [issue](https://github.com/frankxai/agentic-ops-hub/issues) or [discussion](https://github.com/frankxai/agentic-ops-hub/discussions) to start the conversation.
+* 🧪 **Curated, not yet free-for-all.** While the foundation stabilizes, direct collaboration is invitation-based. Index suggestions and fixes via PR are welcome; larger contributions should be discussed first.
+* 🛡️ **Protected by design.** The project is [MIT-licensed](LICENSE) — free to use, fork, and distribute, with copyright retained by FrankX and no warranty liability. Vendor names and logos referenced here belong to their respective owners (Anthropic, OpenAI, GitHub, xAI, Google, Cursor, Cline) and are used only to identify the platforms this hub configures — no affiliation or endorsement is implied.
+
+**Partner with FrankX:**
+
+[![Partner with FrankX](https://img.shields.io/badge/🌌_Partner_with_FrankX-frankx.ai/partners-7c3aed?style=for-the-badge)](https://frankx.ai/partners)
+[![FrankX Ecosystem](https://img.shields.io/badge/Explore_the_Ecosystem-frankx.ai-0ea5e9?style=for-the-badge)](https://frankx.ai)
+
+---
+
 ## 📜 License
-MIT License. Free to use, fork, and distribute. Contribution PRs are welcome!
+
+[MIT License](LICENSE) © FrankX. Free to use, fork, and distribute — attribution retained, no warranty. See [Partnerships & Collaboration](#-partnerships--collaboration) for how to build with us.
+
+<div align="center">
+
+**Built by [FrankX](https://frankx.ai)** · part of the [FrankX Agentic Ops stack](#-position-in-the-frankx-ecosystem)
+
+</div>
