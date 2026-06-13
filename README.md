@@ -109,6 +109,7 @@ The best external repositories, toolkits, and skills for operating AI coding age
 * `/templates` — `AGENTS.md` (canonical source), `CLAUDE.md` (shim), legacy `.cursorrules`/`.clinerules`, ACOS `SKILL.md`.
 * `/scripts` — `sync-agent-rules.mjs`: fan-out + `--check` CI verification + `--legacy` compat.
 * `/docs` — `layering.md`: what goes in which file, and why.
+* `/docs/slack-agentic-operating-map.md` — Slack channel, repo-cluster, and agent-team map for coordinating the business fleet.
 
 ---
 
