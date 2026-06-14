@@ -108,7 +108,7 @@ The best external repositories, toolkits, and skills for operating AI coding age
 
 * `/templates` — `AGENTS.md` (canonical source), `CLAUDE.md` (shim), legacy `.cursorrules`/`.clinerules`, ACOS `SKILL.md`.
 * `/scripts` — `sync-agent-rules.mjs`: fan-out + `--check` CI verification + `--legacy` compat.
-* `/docs` — `layering.md`: what goes in which file, and why.
+* `/docs` — `layering.md`: what goes in which file, and why; `CODING_AGENTS.md`: selection matrix and inventory of coding agents.
 
 ---
 
