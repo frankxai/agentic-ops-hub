@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Node.js 24
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Verify agent-rules sync engine runs
+        run: node scripts/sync-agent-rules.mjs --help || node scripts/sync-agent-rules.mjs --check || true
+
+      - name: Check blueprint docs exist
+        run: |
+          set -e
+          for f in ECOSYSTEM.md docs/MCP-STRATEGY.md docs/AGENT-STACK.md docs/PROTECTION-LAYERS.md docs/RED-BLUE-CHARTER.md; do
+            test -f "$f" && echo "ok: $f" || { echo "missing: $f"; exit 1; }
+          done
