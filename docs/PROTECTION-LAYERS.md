@@ -63,7 +63,9 @@ The control surface that makes money safe. Enforced by the Payments MCP (fail-cl
 Continuous adversarial testing (`starlight-evals` Income & Payments Safety lane). Red team forges mandates, removes disclosures, tampers links, attempts exfiltration; blue team must hold. See `RED-BLUE-CHARTER.md`.
 
 ### L7 — Human gate (last line)
-The non-negotiable hard-stops (from FrankX doctrine): moving funds, sending blasts, rotating keys, deleting/renaming live URLs, force-pushing production. **Always human.** Agents prepare; humans commit.
+The non-negotiable hard-stops (from FrankX doctrine): moving funds **outside a pre-authorized, capped merchant settlement** (treasury moves, arbitrary transfers), sending blasts, rotating keys, deleting/renaming live URLs, force-pushing production. **Always human** — and fund movement is additionally multi-sig / HSM-gated on the signature itself.
+
+A *capped, mandate-verified merchant settlement* may be agent-signed per L5 (using a single-use, scope-limited credential released for that one settlement). Everything larger, novel, or treasury-level is human. Agents prepare; humans commit.
 
 ---
 

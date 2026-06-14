@@ -76,11 +76,15 @@ This is the safety spine of the hybrid model. **No autonomous money movement. Ev
 |---|---|---|
 | Worker task within stream (draft, audit, research) | Worker → Queen | Queen review |
 | Bind an affiliate link, schedule a post, build a product page | Queen | brand/claims gate (`@integrity-guard`, `@claims-guard`) |
-| Any payment / settlement | Payments Queen | **AP2 mandate verified + spend-cap check + audit entry** (Payments MCP, fail-closed) |
+| **Verify** a payment is authorized (AP2 mandate + spend-cap) | Payments Queen | Payments MCP, **verify-only, fail-closed**. The Queen authorizes; it never holds standing rail credentials. |
+| **Settle** a *pre-authorized, capped merchant* payment | Payments Queen, agent-signed via x402/ACP | mandate verified + under cap + audit entry; signed with a **single-use, scope-limited credential released per settlement** by the governance layer — never a standing key |
 | Spend **above cap**, new rail, new vendor contract | Founder | `/starlight-board` pressure-test + **human approval** |
-| Irreversible (delete, rename live URL, rotate key, send blast, move funds) | Founder | **human approval, always** (per FrankX hard-stops) |
+| Move funds outside a pre-authorized capped settlement (treasury, arbitrary transfer) | Founder | **human approval, always** + multi-sig / HSM on the signature (per FrankX hard-stops) |
+| Other irreversible (delete, rename live URL, rotate key, send blast) | Founder | **human approval, always** |
 
-**The standing rule (inherited from `agentic-business-os`):** *agents draft, gate, and commit; humans deploy, post, and send.* Money and irreversibility are never delegated to autonomy.
+**Reconciling "verify-only" with "settle":** the swarm never holds a standing rail credential (matches `MCP-STRATEGY.md` — income swarm = verify-only). A *capped, pre-authorized merchant* settlement may be agent-signed, but only with a single-use, scope-limited credential the governance layer releases for that one settlement after mandate + cap verification. Everything larger, novel, or treasury-level escalates to the Founder + human gate.
+
+**The standing rule (inherited from `agentic-business-os`):** *agents draft, gate, and commit; humans deploy, post, and send.* Arbitrary or treasury-level money movement and irreversibility are never delegated to autonomy.
 
 ---
 

@@ -77,9 +77,9 @@ Legend: 🟢 production · 🟡 real scaffold · 🔴 seeded this wave (was empt
   L0 SIS Wealth IS    ──┐
   (thesis, gate ladder) │
                         ▼
-  L4 agentic-income ───────►  affiliate links (recurring)  ─┐
-     brain decides           digital products              │
-     what to build           content → traffic → trust     │
+  L4 income engine  ───────►  affiliate links (recurring)  ─┐
+     agentic-income-skills    digital products              │
+     (brain) → agenticincome  content → traffic → trust     │
                         │                                   ▼
   L6 starlight-swarm  ──┘    queens run the streams   ──►  L5 payments
      (Affiliate/Products/    workers do the work           AP2 mandate (was this authorized?)
