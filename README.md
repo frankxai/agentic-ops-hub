@@ -7,6 +7,18 @@ One source of truth (`AGENTS.md`), one sync engine, every agent aligned — plus
 
 ---
 
+## 🗺️ The Agentic Income Ecosystem blueprint
+
+This repo is also the **canonical map** of the agentic-income ecosystem — the L0–L7 layer model, every repo's purpose and status, the MCP own-vs-adopt strategy, the founder/queen/worker agent stack, the protection layers for humans + agents + wealth, and the red/blue charter.
+
+- **[`ECOSYSTEM.md`](ECOSYSTEM.md)** — the canonical map: layers, repos, money path.
+- **[`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md)** — which MCP servers we own vs adopt (incl. AP2 / x402 / ACP).
+- **[`docs/AGENT-STACK.md`](docs/AGENT-STACK.md)** — founder agent · stream queens · workers · escalation contract.
+- **[`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md)** — defense-in-depth for humans, agents, and wealth.
+- **[`docs/RED-BLUE-CHARTER.md`](docs/RED-BLUE-CHARTER.md)** — what red attacks, what blue defends, the cadence.
+
+---
+
 ## 🎯 Agentic Ops ≠ AIOps
 
 This repository exists to draw — and own — an exact distinction:
