@@ -14,6 +14,7 @@ This repo is also the **canonical map** of the agentic-income ecosystem — the 
 - **[`ECOSYSTEM.md`](ECOSYSTEM.md)** — the canonical map: layers, repos, money path.
 - **[`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md)** — which MCP servers we own vs adopt (incl. AP2 / x402 / ACP).
 - **[`docs/AGENT-STACK.md`](docs/AGENT-STACK.md)** — founder agent · stream queens · workers · escalation contract.
+- **[`docs/AGENT-OPERATING-SYSTEM-STACK.md`](docs/AGENT-OPERATING-SYSTEM-STACK.md)** — how AGENTS.md, rules, hooks, skills, MCP, Hermes, OpenClaw, DeepAgents, Claude Code, and Codex map into the broader agent OS stack.
 - **[`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md)** — defense-in-depth for humans, agents, and wealth.
 - **[`docs/RED-BLUE-CHARTER.md`](docs/RED-BLUE-CHARTER.md)** — what red attacks, what blue defends, the cadence.
 
