@@ -39,17 +39,20 @@ HITL gates + trajectory memory. List any blockers, run the smoke fixtures, and i
 green open a PR to main (or merge). I want the 6 workflows usable from any repo.
 ```
 
-**[F4 · Starlight-Intelligence-System]** — unstrand the reconcile (R4)
+**[F4 · Starlight-Intelligence-System]** — execute Hero demo assets (R5) and forge extraction
 ```
-docs/drift-fixes-2026-05-26 has been unmerged 10+ days holding the 47→54 agent
-reconcile + dreaming pipeline. Diff it against main, resolve any drift, and land it
-(PR or merge). Confirm agent counts are consistent across CLAUDE.md / GEMINI.md / docs.
+We have PR #22 open covering the Web4/Estate Factory delivery and closing the REVISE track. Next: (1) implement the full estate-provision cmd/Steward details, (2) build the Hero demo execution assets (resolving R5), (3) run /sis-forge extraction on Trinity, and (4) set up overnight scheduler loops. Keep highest Frank DNA and "Built on SIP" posture.
 ```
 
 **[F5 · agentic-ops-hub]** — operationalize this system
 ```
 Run /ops-sweep to refresh the ledger, then sync the 6 open Risk items to Linear
 (Arcanea team) as issues linked to the ledger. Schedule a daily morning summary.
+```
+
+**[F6 · Arcanea]** — finalize agent-native integration and clean tree
+```
+We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session captures are stored and synced in the tracker MD. Next: (1) complete the staged fandom/mythology registry additions, (2) reconcile the remaining unstaged edits in book outline/universe classes, (3) verify build and test suites, and (4) merge/PR to main.
 ```
 
 ---

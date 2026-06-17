@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-> **Last sweep:** 2026-06-08 · **Cadence:** end of each working session (`/ops-sweep`)
+> **Last sweep:** 2026-06-16 · **Cadence:** end of each working session (`/ops-sweep`)
 
 ---
 
@@ -20,20 +20,24 @@ Everything in motion maps to one of three layers. Read top-down: the infrastruct
 
 ---
 
-## 🔥 Active Fronts (from git, last 14 days)
+## 🔥 Active Fronts (from git, since 2026-06-08)
 
 | # | Repo | Branch | Signal | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| F1 | `frankx.ai-vercel-website` | `main` | 84 commits — AEO comparison articles, 6 tool pillars, affiliate-programs article, June-2026 verified content | 🟢 Hot |
-| F2 | `FrankX` | `feat/music-intelligence-system` | 54 commits — content Batches A/B/C, affiliate signup map, hero manifests | 🟡 Branch drift (content on a music branch) |
-| F3 | `agentic-creator-os` | `feat/workflow-tier` | 6 portable workflows + HITL gates + trajectory memory | 🟠 Stalled since 06-02, unmerged |
-| F4 | `Starlight-Intelligence-System` | `docs/drift-fixes-2026-05-26` | agent count 47→54 reconcile, dreaming pipeline, drift fixes | 🟠 Stalled since 05-29, unmerged 10+ days |
-| F5 | `agentic-ops-hub` | `main` | AGENTS.md source-of-truth + multi-format sync + this ops ledger | 🟢 Shipped this session |
+| F1 | `FrankX` | `main` | Machine status churn (GREEN↔RED), ops handover W24, registry + doctrine | 🟡 Machine RED — disk/RAM |
+| F2 | `frankx.ai-vercel-website` | `feat/ikigai-branding-workshop` | Agent observatory catalog sync, CI concurrency/path filters | 🟡 Prod on feature branch |
+| F3 | `agentic-creator-os` | `main` | Grok/Antigravity/gstack workflow integrations, observatory catalog | 🟢 Active |
+| F4 | `Starlight-Intelligence-System` | `main` | Estate Factory evolutions, Steward spec, README/PR #22 updates | 🟢 Active |
+| F5 | `agentic-ops` | `main` | init-harness CLI, coding agents registry, matrix sync | 🟢 Active |
+| F6 | `Arcanea` | `integrate/agent-native-main-2026-06-12` | Lore reconcile, visual assets capture & tracker MD sync | 🟡 Integration branch |
 
 ---
 
 ## ✅ Recently Done
 
+- **2026-06-17** — **Web4 Estate, Release Sync & Visual Capture:** `SIS`: Resolved branch alignment, integrated night autonomous commits, and ran clean verification (`npm run verify` passed, Next.js site/console builds ✅). Elevated builds to Working status in `STATUS.md`. Synced release branch `ship/wave2` to `main` at `538e679`. Delivered deploy spec (`commands/estate-army-deploy.md`), updating PR #22. `Arcanea`: Captured 13 session JPGs, updated public mirrors, and synced ecosystem tracker MD.
+- **2026-06-16** — **Machine massive-action compounding:** `PRINCIPLES.md`, `STANDARDS.md`, `REGISTER-BOUNDARIES.md`, `AGENT-COUNCIL.md`; `HANDOVER-2026-06-16.md`; W24 sprint; `_inbox/` restored; 28 shadow repos → `incubating` in `repo-registry.json`; `newsletter-friday` trajectory Record; `GITHUB-CLASSIFICATION-BATCH-01.md`; plan initiative cap doc; FrankX + prod AGENTS register sections.
+- **2026-06-12** — `Arcanea`: agent-native integration branch; lore/books reconcile.
 - **2026-06-08** — `agentic-ops-hub`: repointed sync engine to AGENTS.md standard, multi-format fan-out (`.cursor/rules/*.mdc`, `.clinerules/`, copilot, ACOS skill) + `--check` CI gate; README Agentic-Ops-vs-AIOps distinction + ecosystem map; **stood up this ops ledger system**.
 - **2026-06-07** — `frankx.ai` + `FrankX`: shipped ~28 articles (Batches A/B/C) + 6 ultimate-workflow tool pillars + best-affiliate-programs article. Major content push.
 - **2026-06-06** — `frankx.ai`: 10 AEO comparison articles, AI Superpowers Stack 2026, roadmap vaporware strip.
@@ -49,9 +53,11 @@ Everything in motion maps to one of three layers. Read top-down: the infrastruct
 | **R1** | **FrankX → GenCreator bridge is broken** — 40k readers, zero links to gencreator.ai | Linear ARC-204 (P0, overdue) | The entire content→CoE flywheel can't spin. Highest-leverage fix. |
 | **R2** | Domain transfer arcanea.ai + realitydiffusion.ai out of IONOS | Linear ARC-105 (High, **overdue 05-20**) | Contract cancellation deadline risk — could lose domains. |
 | **R3** | `FrankX` content committed on `feat/music-intelligence-system` | Repo F2 | Branch hygiene; content not on main, music-IS work obscured. |
-| **R4** | `docs/drift-fixes-2026-05-26` unmerged 10+ days | Repo F4 (SIS) | Reconcile work stranded; main diverging. |
+| **R4** | PR #22 unmerged (resolves drift + REVISE) | Repo F4 (SIS) | Blocks full merge of Web4/Estate Factory & agent army substrate. |
 | **R5** | `feat/workflow-tier` unmerged since 06-02 | Repo F3 (ACOS) | 6 workflows built but not landed/usable. |
 | **R6** | Founding 50 pre-sell + Proton Mail setup | Linear ARC-205, ARC-108 | Revenue + comms continuity, both overdue. |
+| **R7** | Newsletter Issues 1–2 send truth ambiguous (`status: draft` in MDX) | FrankX `content/newsletters/issues/` | Blocks L5/L6 learning loop until operator verifies Resend |
+| **R8** | Machine RED zone (disk ~94%, RAM pressure) | `FrankX/docs/ops/MACHINE-STATUS.md` | Storage reclamation before next content sprint |
 
 ---
 
