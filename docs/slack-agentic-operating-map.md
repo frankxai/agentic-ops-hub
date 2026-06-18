@@ -28,6 +28,17 @@ This map connects Slack channels, local repos, and agentic teams so Codex, Claud
 | `#design-intelligence` | `C0B9W4TE5K5` | Design intelligence, visual intelligence, design agent skills. |
 | `#revenue-ops` | `C0B9W4UKYP5` | Monetization, checkout, offers, analytics, affiliate and funnel operations. |
 | `#content-comms` | `C0B9W4W4SLB` | Public updates, launches, social/content calendars, internal comms drafts. |
+| `#social-command` | `C0BB6K4U4MT` | Social media command center and weekly content plan. |
+| `#social-approvals` | `C0BB6K6TT1B` | Human approval queue before any social post is published. |
+| `#social-x` | `C0BBDL3UCLU` | X/Twitter drafts, threads, hooks, profile state. |
+| `#social-linkedin` | `C0BBBS3JH5X` | LinkedIn posts, articles, carousels, profile authority. |
+| `#social-instagram` | `C0BBDL5KQ2G` | Instagram captions, carousels, reels, visual asset notes. |
+| `#social-youtube` | `C0BBBSBPKLZ` | YouTube Shorts, titles, descriptions, long-form notes. |
+| `#social-tiktok` | `C0BBA1T0AE6` | TikTok scripts, hooks, short-form experiments. |
+| `#social-threads` | `C0BAUH4N61M` | Threads drafts and conversational distribution. |
+| `#social-bluesky` | `C0BC49Z2464` | Bluesky drafts and direct/Web3 social ops. |
+| `#social-farcaster` | `C0BBDL79TJ8` | Farcaster casts and Web3 community distribution. |
+| `#social-syndication` | `C0BB3LHL8F5` | Medium, Dev.to, Mirror, Substack/newsletter, blog syndication. |
 
 ## Channel Topology
 
@@ -36,6 +47,7 @@ Use three layers of Slack channels:
 1. Command channels: `#ops`, `#repo-command`, `#agent-teams`.
 2. Business channels: `#arcanea`, `#agentic-creator-os`, `#starlight-systems`, `#agentic-income`, `#ai-coe`, `#frankx-growth`, `#creator-systems`, `#reality-architect`, `#anime-legends`.
 3. Workflow channels: `#prompt-systems`, `#mcp-integrations`, `#knowledge-systems`, `#design-intelligence`, `#revenue-ops`, `#content-comms`.
+4. Social channels: `#social-command`, `#social-approvals`, and one platform channel per managed profile surface.
 
 Routing rule:
 - If the work changes the business direction, post in the business channel.
@@ -51,6 +63,8 @@ Routing rule:
 | Repo | Primary channel | Secondary channel | Business / function |
 | --- | --- | --- | --- |
 | `affiliate-agent-skills` | `#agentic-income` | `#revenue-ops` | Affiliate skills and revenue automation. |
+| `Agent-Intelligence-System` | `#starlight-systems` | `#agent-teams` | Agent intelligence architecture and orchestration surface. |
+| `agentic-architecture-field-guide` | `#ai-coe` | `#content-comms` | Field guide / educational content for agentic architecture. |
 | `agentic-creator-skills` | `#creator-systems` | `#agent-teams` | Creator skill packs: brand, content, design, intelligence, product launch, music, visual studio. |
 | `agentic-creator-os` | `#agentic-creator-os` | `#agent-teams` | ACOS capability system, commands, skills, agents. |
 | `agentic-income-skills` | `#agentic-income` | `#revenue-ops` | Agentic income skill library. |
@@ -68,18 +82,23 @@ Routing rule:
 | `arcanea-orchestrator` | `#arcanea` | `#repo-command` | Arcanea orchestration layer. |
 | `arcanea-studio` | `#arcanea` | `#content-comms` | Arcanea studio/product surface. |
 | `author-os` | `#creator-systems` | `#content-comms` | Author workflow system. |
+| `awesome-agent-operating-systems` | `#ai-coe` | `#agent-teams` | Curated agent operating systems research. |
 | `awesome-agentic-income` | `#agentic-income` | `#content-comms` | Curated market/research list. |
 | `awesome-ai-coe` | `#ai-coe` | `#content-comms` | AI CoE curated list. |
 | `awesome-cosmos-ai-agents` | `#ai-coe` | `#agent-teams` | Agent ecosystem research. |
 | `awesome-design-agent-skills` | `#design-intelligence` | `#creator-systems` | Design-agent skill research. |
+| `awesome-hermes-agents` | `#starlight-systems` | `#agent-teams` | Hermes/agent ecosystem research. |
 | `claude-code-config` | `#ops` | `#agent-teams` | Claude/Codex/Grok config layer. |
 | `claude-code-hooks` | `#ops` | `#repo-command` | Hooks, gates, and lifecycle enforcement. |
 | `claude-skills-library` | `#creator-systems` | `#agent-teams` | Reusable skill library. |
 | `disruptivepassiveincome` | `#agentic-income` | `#revenue-ops` | DPI business/product. |
 | `dpi` | `#agentic-income` | `#revenue-ops` | DPI implementation repo. |
 | `FrankX` | `#frankx-growth` | `#content-comms` | FrankX brand and site/app surface. |
+| `frankx-blog-vos-worktree` | `#frankx-growth` | `#social-syndication` | FrankX blog/content worktree. |
 | `frankx.ai-vercel-website` | `#frankx-growth` | `#repo-command` | frankx.ai website. |
 | `gencreator.ai` | `#creator-systems` | `#revenue-ops` | GenCreator product/site. |
+| `go-agenticincome` | `#agentic-income` | `#repo-command` | Go implementation/support repo for Agentic Income. |
+| `health-intelligence-system` | `#starlight-systems` | `#knowledge-systems` | Health intelligence system. |
 | `hermes-cockpit` | `#starlight-systems` | `#repo-command` | Cockpit/control interface. |
 | `kura` | `#frankx-growth` | `#content-comms` | Growth/content product. |
 | `litellm-agent-platform` | `#mcp-integrations` | `#ai-coe` | LiteLLM agent platform/integration. |
@@ -91,6 +110,7 @@ Routing rule:
 | `realityarchitect-vault` | `#reality-architect` | `#knowledge-systems` | Reality Architect knowledge vault. |
 | `second-brain-os` | `#knowledge-systems` | `#ops` | Personal/team memory substrate. |
 | `sentinel-swarm-cockpit` | `#starlight-systems` | `#repo-command` | Sentinel cockpit. |
+| `starlight-agent-army-architecture` | `#starlight-systems` | `#agent-teams` | Starlight agent army architecture. |
 | `starlight-agent-skills` | `#starlight-systems` | `#agent-teams` | Starlight skill layer. |
 | `starlight-command-center` | `#starlight-systems` | `#repo-command` | Command center. |
 | `starlight-cosmos-engine` | `#starlight-systems` | `#knowledge-systems` | Cosmos engine. |
@@ -98,6 +118,7 @@ Routing rule:
 | `starlight-devices` | `#starlight-systems` | `#repo-command` | Device integration. |
 | `Starlight-Intelligence-System` | `#starlight-systems` | `#knowledge-systems` | Starlight intelligence/memory system. |
 | `starlight-knowledge-tree` | `#knowledge-systems` | `#starlight-systems` | Knowledge tree. |
+| `starlight-social` | `#social-command` | `#content-comms` | Social publishing MCP/adapters and approval workflow. |
 | `starlight-swarm` | `#starlight-systems` | `#agent-teams` | Starlight swarm and delegation. |
 | `suno-mcp-server` | `#mcp-integrations` | `#content-comms` | Suno MCP/music integration. |
 | `visual-intelligence` | `#design-intelligence` | `#starlight-systems` | Visual intelligence tooling. |
