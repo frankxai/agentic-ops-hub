@@ -2,7 +2,9 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-> **Last sweep:** 2026-06-16 · **Cadence:** end of each working session (`/ops-sweep`)
+> **Last sweep:** 2026-06-18 · **Cadence:** end of each working session (`/ops-sweep`)
+>
+> **Current command center:** `docs/ECOSYSTEM_COMMAND_CENTER_2026-06-18.md` upgrades this ledger to the live 267-repo GitHub estate. Agents should also read `ops/ecosystem-sprint-2026-06-18.json` before cross-repo work.
 
 ---
 
@@ -35,6 +37,7 @@ Everything in motion maps to one of three layers. Read top-down: the infrastruct
 
 ## ✅ Recently Done
 
+- **2026-06-18** — `agentic-ops-hub`: added the 267-repo ecosystem command center, sprint JSON, and refreshed next prompts. The repo now points agents at the live GitHub audit, local stabilization report, command-center state, and current sprint milestones before they touch high-surface repos.
 - **2026-06-17** — **Web4 Estate, Release Sync & Visual Capture:** `SIS`: Resolved branch alignment, integrated night autonomous commits, and ran clean verification (`npm run verify` passed, Next.js site/console builds ✅). Elevated builds to Working status in `STATUS.md`. Synced release branch `ship/wave2` to `main` at `538e679`. Delivered deploy spec (`commands/estate-army-deploy.md`), updating PR #22. `Arcanea`: Captured 13 session JPGs, updated public mirrors, and synced ecosystem tracker MD.
 - **2026-06-16** — **Machine massive-action compounding:** `PRINCIPLES.md`, `STANDARDS.md`, `REGISTER-BOUNDARIES.md`, `AGENT-COUNCIL.md`; `HANDOVER-2026-06-16.md`; W24 sprint; `_inbox/` restored; 28 shadow repos → `incubating` in `repo-registry.json`; `newsletter-friday` trajectory Record; `GITHUB-CLASSIFICATION-BATCH-01.md`; plan initiative cap doc; FrankX + prod AGENTS register sections.
 - **2026-06-12** — `Arcanea`: agent-native integration branch; lore/books reconcile.

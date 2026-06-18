@@ -5,6 +5,8 @@ Rolling, low-token documentation of all work across every repo and terminal sess
 ## Files
 - **`OPS-LEDGER.md`** — single source of truth. Bigger picture (3 layers), active fronts, done, open/risks, Linear action map.
 - **`NEXT-PROMPTS.md`** — copy-paste next prompt per repo/terminal, ranked by leverage. Includes the terminal→repo map.
+- **`ecosystem-sprint-2026-06-18.json`** — machine-readable sprint, milestones, repo risks, and agent protocol for the 267-repo estate.
+- **`../docs/ECOSYSTEM_COMMAND_CENTER_2026-06-18.md`** — human-readable portfolio command center and weekly review agenda.
 - **`sessions/YYYY-MM-DD.md`** — append-only session log. One entry per sweep.
 - **`/ops-sweep`** (`.claude/commands/ops-sweep.md`) — the repeatable protocol that refreshes everything.
 

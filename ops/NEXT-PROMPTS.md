@@ -1,42 +1,29 @@
-# ⏭️ Next Prompts — per active front / terminal
+# Next Prompts - per active front / terminal
 
-> Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
->
-> **Terminal map** (edit as you reassign windows):
-> | Window | Repo | Harness |
-> | :--- | :--- | :--- |
-> | T1 | `frankx.ai-vercel-website` | _set_ |
-> | T2 | `FrankX` | _set_ |
-> | T3 | `agentic-creator-os` | _set_ |
-> | T4 | `Starlight-Intelligence-System` | _set_ |
-> | T5 | `agentic-ops-hub` | _set_ |
+Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo, ordered by leverage.
 
----
+Read first for every wave:
 
-## 🥇 Highest leverage first
+- `agentic-ops-hub/docs/ECOSYSTEM_COMMAND_CENTER_2026-06-18.md`
+- `agentic-ops-hub/ops/ecosystem-sprint-2026-06-18.json`
+- `C:\Users\frank\starlight\repos\GITHUB_267_REPO_AUDIT_2026-06-18.md`
+- target repo `AGENTS.md` / `CLAUDE.md`
 
-**[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
-```
-The 28 new articles (Batches A/B/C) have no links to gencreator.ai. Audit every
-article published since 2026-06-06, add a contextual GenCreator CoE pivot CTA +
-one inline link each, and add a footer nav item. Verify no broken links. This
-closes ARC-204 (the broken FrankX→GenCreator flywheel).
+## Highest Leverage First
+
+**[P0 / M0 - frankx.ai-vercel-website] - production trust**
+```text
+You are in frankx.ai-vercel-website. Review PR #186 / branch codex/remove-acos-agentdb. Confirm the .acos database removal, downloads page syntax fix, and .gitignore update. Repair or track the broken git hooks that forced --no-verify. Run type-check, lint, and a secrets scan. If green, prepare the PR for merge with a short risk note and validation evidence.
 ```
 
-**[F2 · FrankX]** — resolve branch drift (R3)
-```
-This repo is on feat/music-intelligence-system but the last 54 commits are content
-batches, not music-IS work. Decide: (a) rename branch to content/june-2026 and cut
-a fresh feat branch for music intelligence, or (b) merge content to main. Show me
-the cleanest path, then execute it. Then summarize what the music-intelligence-system
-was actually supposed to deliver so we can resume it.
+**[P1 / M1 - FrankX to GenCreator bridge] - revenue flywheel**
+```text
+You are in frankx.ai-vercel-website and FrankX. Audit all post-2026-06-06 FrankX content and add one contextual GenCreator / Personal CoE path per relevant article, plus persistent footer/nav access. Keep CTAs natural, not spammy. Verify links. Output the changed URLs/files and close or update ARC-204.
 ```
 
-**[F3 · agentic-creator-os]** — land stalled work (R5)
-```
-feat/workflow-tier has been unmerged since 2026-06-02 with 6 portable workflows +
-HITL gates + trajectory memory. List any blockers, run the smoke fixtures, and if
-green open a PR to main (or merge). I want the 6 workflows usable from any repo.
+**[P2 / M2 - agentic-ops-hub + SIS] - 267-repo registry**
+```text
+Use the 2026-06-18 GitHub audit as the baseline and build the new fleet registry. Every active repo needs name, URL, visibility, archive state, default branch, constellation, lifecycle, owner, local checkout path if any, health command, and notes. Mark the old 28-repo registry as a harness subset. Update the agent read-first protocol so new repos cannot become invisible.
 ```
 
 **[F4 · Starlight-Intelligence-System]** — execute Hero demo assets (R5) and forge extraction
@@ -44,10 +31,14 @@ green open a PR to main (or merge). I want the 6 workflows usable from any repo.
 We have PR #22 open covering the Web4/Estate Factory delivery and closing the REVISE track. Next: (1) implement the full estate-provision cmd/Steward details, (2) build the Hero demo execution assets (resolving R5), (3) run /sis-forge extraction on Trinity, and (4) set up overnight scheduler loops. Keep highest Frank DNA and "Built on SIP" posture.
 ```
 
-**[F5 · agentic-ops-hub]** — operationalize this system
+**[P3 / M3 - branch/default hygiene] - repo risk decisions**
+```text
+Review these risk decisions and record outcomes in agentic-ops-hub: arcanea-flow README rewrite (5997 deleted lines), arcanea-agent-skills default branch set to codex/world-engine-docs, damfrost1/damfrost2 no default branch, SIS local main ahead one commit, and litellm-agent-platform local-only ignore branch. Do not force-push. Use PRs or explicit owner decisions.
 ```
-Run /ops-sweep to refresh the ledger, then sync the 6 open Risk items to Linear
-(Arcanea team) as issues linked to the ledger. Schedule a daily morning summary.
+
+**[P4 / M4 - Arcanea + Starlight agent OS] - promote good work**
+```text
+Review arcanea-orchestrator codex/agent-stack-runtime, arcanea-ecosystem codex/agent-stack-strategy and codex/world-engine-docs, claude-code-config SDS, and SIS agent profile gates. Confirm verification commands, identify merge blockers, and prepare PRs/merge notes so the agent stack becomes usable rather than stranded.
 ```
 
 **[F6 · Arcanea]** — finalize agent-native integration and clean tree
@@ -55,10 +46,14 @@ Run /ops-sweep to refresh the ledger, then sync the 6 open Risk items to Linear
 We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session captures are stored and synced in the tracker MD. Next: (1) complete the staged fandom/mythology registry additions, (2) reconcile the remaining unstaged edits in book outline/universe classes, (3) verify build and test suites, and (4) merge/PR to main.
 ```
 
----
+**[P5 - revenue packaging] - turn built assets into offers**
+```text
+Create the shipping checklist for Founding 50, Personal CoE Starter PDF, Blue Life Commons/Starlight Starter downloads, and any GenCreator offer bridge. Each item needs owner, audience, URL or repo, proof asset, due date, and done criteria. Mirror owner-needed tasks to Linear and the executive narrative to Notion.
+```
 
-## ⚡ Ops / revenue (non-repo, do directly or delegate)
+## Non-Repo Actions
 
-- **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
-- **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
-- **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+- ARC-105: request IONOS auth codes for arcanea.ai and realitydiffusion.ai, then initiate transfer.
+- ARC-205: draft Founding 50 DM template and pull top engaged FrankX subscribers.
+- ARC-209: finish Personal CoE Starter PDF as the first clean bridge asset.
+- Weekly: rerun GitHub inventory, compare registry coverage, and close stale branches older than 7 days.

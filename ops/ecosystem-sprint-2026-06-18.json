@@ -1,0 +1,137 @@
+{
+  "schema": "https://frankx.ai/schemas/ecosystem-sprint.v1.json",
+  "generated": "2026-06-18",
+  "sourceRepo": "agentic-ops-hub",
+  "canonicalDocs": {
+    "commandCenter": "docs/ECOSYSTEM_COMMAND_CENTER_2026-06-18.md",
+    "ledger": "ops/OPS-LEDGER.md",
+    "nextPrompts": "ops/NEXT-PROMPTS.md",
+    "githubAudit": "C:\\Users\\frank\\starlight\\repos\\GITHUB_267_REPO_AUDIT_2026-06-18.md",
+    "localStabilization": "C:\\Users\\frank\\starlight\\repos\\REPO_STABILIZATION_REPORT_2026-06-18.md",
+    "cockpitState": "C:\\Users\\frank\\starlight\\command-center\\state.json"
+  },
+  "northStar": "FrankX demand feeds GenCreator and CoE offers; Arcanea converts creator energy into products; Starlight provides the agentic substrate, governance, memory, and quality gates.",
+  "estate": {
+    "githubRepos": 267,
+    "activeGithubRepos": 225,
+    "archivedGithubRepos": 42,
+    "localCheckouts": 62,
+    "localDirtyRepos": 0,
+    "reposActiveLast7Days": 96,
+    "reposWithAgentStyleBranches": 56,
+    "riskFlaggedRepos": 83
+  },
+  "priorities": [
+    {
+      "id": "P0",
+      "name": "Production trust",
+      "surface": "frankx.ai-vercel-website",
+      "outcome": "Merge or resolve PR #186, repair hooks, and keep production validation green."
+    },
+    {
+      "id": "P1",
+      "name": "Revenue bridge",
+      "surface": "FrankX -> GenCreator / CoE",
+      "outcome": "Every high-value FrankX content path points readers into a clear owned offer."
+    },
+    {
+      "id": "P2",
+      "name": "Fleet registry",
+      "surface": "agentic-ops-hub / Starlight",
+      "outcome": "The 267-repo estate is classified, owned, and routable by agents."
+    },
+    {
+      "id": "P3",
+      "name": "Agent stack promotion",
+      "surface": "Arcanea + Starlight",
+      "outcome": "Runtime, SDS, world-engine, and profile work lands through reviewable PRs."
+    },
+    {
+      "id": "P4",
+      "name": "Revenue packaging",
+      "surface": "Linear / Notion / downloads",
+      "outcome": "Founding 50, Personal CoE Starter PDF, and starter packs have owner, due date, and ship criteria."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "M0",
+      "name": "Production Safety",
+      "due": "2026-06-20",
+      "priority": "urgent",
+      "githubRepos": ["frankx.ai-vercel-website"],
+      "linearCandidates": ["ARC-204"],
+      "doneWhen": ["PR #186 reviewed/merged or explicitly superseded", "type-check passes", "lint passes", "secrets scan passes", "broken hooks repaired or tracked"]
+    },
+    {
+      "id": "M1",
+      "name": "FrankX Revenue Bridge",
+      "due": "2026-06-22",
+      "priority": "urgent",
+      "githubRepos": ["frankx.ai-vercel-website", "FrankX"],
+      "linearCandidates": ["ARC-204", "ARC-205", "ARC-209"],
+      "doneWhen": ["Post-2026-06-06 content audited", "GenCreator / CoE CTAs added", "footer/nav path added", "broken-link check passes"]
+    },
+    {
+      "id": "M2",
+      "name": "267-Repo Fleet Registry",
+      "due": "2026-06-24",
+      "priority": "high",
+      "githubRepos": ["agentic-ops-hub", "Starlight-Intelligence-System"],
+      "linearCandidates": [],
+      "doneWhen": ["Registry covers 267 repos", "Active repos have constellation and lifecycle", "new-repo intake template exists", "agent read-first protocol references registry"]
+    },
+    {
+      "id": "M3",
+      "name": "Branch and Default Hygiene",
+      "due": "2026-06-24",
+      "priority": "high",
+      "githubRepos": ["arcanea-flow", "arcanea-agent-skills", "damfrost1", "damfrost2", "Starlight-Intelligence-System", "litellm-agent-platform"],
+      "linearCandidates": [],
+      "doneWhen": ["arcanea-flow README rewrite decision recorded", "arcanea-agent-skills default branch decision recorded", "damfrost repos initialized or archived", "SIS ahead commit promoted safely"]
+    },
+    {
+      "id": "M4",
+      "name": "Agent OS Promotion",
+      "due": "2026-06-25",
+      "priority": "high",
+      "githubRepos": ["arcanea-orchestrator", "arcanea-ecosystem", "claude-code-config", "Starlight-Intelligence-System"],
+      "linearCandidates": [],
+      "doneWhen": ["AO run record PR reviewed", "world-engine docs PR reviewed", "SDS installed or documented", "agent profile quality gates documented"]
+    }
+  ],
+  "riskDecisions": [
+    {
+      "id": "R-prod-site",
+      "repo": "frankx.ai-vercel-website",
+      "decisionNeeded": "Review and merge/supersede PR #186; repair hooks that forced --no-verify."
+    },
+    {
+      "id": "R-arcanea-flow",
+      "repo": "arcanea-flow",
+      "decisionNeeded": "Approve concise README or restore/transplant the 5997 deleted lines into docs."
+    },
+    {
+      "id": "R-agent-skills-default",
+      "repo": "arcanea-agent-skills",
+      "decisionNeeded": "Confirm whether codex/world-engine-docs should be the default branch."
+    },
+    {
+      "id": "R-no-default",
+      "repo": "damfrost1, damfrost2",
+      "decisionNeeded": "Initialize with a default branch or archive."
+    },
+    {
+      "id": "R-sis-ahead",
+      "repo": "Starlight-Intelligence-System",
+      "decisionNeeded": "Promote local ahead commit through explicit push or branch/PR."
+    }
+  ],
+  "agentProtocol": [
+    "Read docs/ECOSYSTEM_COMMAND_CENTER_2026-06-18.md and ops/ecosystem-sprint-2026-06-18.json before cross-repo work.",
+    "Check git status before edits and preserve user changes.",
+    "Use PR-first promotion for production or high-surface repos.",
+    "Record validation commands in every PR or final report.",
+    "Update the registry/sprint docs whenever creating or materially changing a repo."
+  ]
+}
