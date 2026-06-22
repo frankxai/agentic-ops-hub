@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Red/Blue Assurance backplate: a rigorous eval lane where red-team probes test an agentic income/payments stack, blue-team controls respond, scorecards collect receipts, and a release gate opens only after evidence passes.
+Scene/backdrop: dark assurance lab table with two opposing signal lanes converging into an evidence board and guarded release gate.
+Subject: red probe lane, blue defense lane, central receipt/scorecard matrix represented as blank tiles, and final release checkpoint.
+Style/medium: premium technical assurance illustration, cybersecurity lab meets product QA, crisp and legible.
+Composition/framing: wide landscape, split red/blue lanes left and right, central evidence grid, final gate toward right; room for text overlays above and below.
+Lighting/mood: rigorous, skeptical, controlled, high-trust.
+Color palette: graphite, cyan-blue defense, signal red probe, amber release, emerald pass accents; not neon chaos.
+Materials/textures: matte dark lab surface, glass tiles, lit rails, precision frames, no written marks.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no fake code text, no skulls, no weapons, no humans, no bokeh, no decorative orbs.
+Avoid: hacker cliche, fake terminal text, scary imagery, clutter, over-saturated red-blue gradients.

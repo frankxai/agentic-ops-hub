@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Income Engine Flow backplate: an honest AI-tool income workflow represented as a clean operational pipeline from research signals to comparison evidence, curated catalog, email capture, and audit receipts.
+Scene/backdrop: dark editorial workspace made of luminous data lanes and proof artifacts, no readable text.
+Subject: five-stage pipeline with evidence panels, catalog blocks, capture gate, and audit ledger represented by abstract shapes only.
+Style/medium: premium 3D technical illustration with product-storytelling clarity, not marketing fluff.
+Composition/framing: left-to-right flow with five distinct stations, open top area and bottom caption area for deterministic overlay text later.
+Lighting/mood: commercially sharp, credible, useful, calm confidence.
+Color palette: graphite, cyan, teal, emerald, amber accents; restrained contrast, no beige/tan, no one-color theme.
+Materials/textures: glass data trays, fine scan lines, precise routing, subtle paper-like proof surfaces without markings.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no coins, no dollar signs, no credit cards, no fake UI text, no humans.
+Avoid: get-rich imagery, generic funnels, stock marketing charts, bokeh, decorative orbs, unreadable labels.

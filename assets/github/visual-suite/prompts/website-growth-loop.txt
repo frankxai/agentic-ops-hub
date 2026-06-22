@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Website Growth Loop backplate: a hub-and-spoke growth network for AI income sites, showing flagship hub, forkable template, passive-income spoke, curated list, and skills library feeding each other in a clean circular operating loop.
+Scene/backdrop: polished web systems command surface with browser-like panels as abstract blank glass slabs, no readable text.
+Subject: central hub plane with four connected spokes, looped signal paths, content proof blocks, and conversion path represented abstractly.
+Style/medium: premium product-storytelling 3D illustration, editorial website operations map.
+Composition/framing: wide landscape, circular flow centered slightly right, left side has calm negative space for overlay headline, lower band clear for deterministic step labels.
+Lighting/mood: sharp, credible, commercial, not hypey.
+Color palette: graphite, cyan, teal, emerald, amber highlights, restrained white glints; avoid purple-blue dominance.
+Materials/textures: blank glass browser panes, precise path lines, soft metal frames, crisp reflection control.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no fake UI text, no coins, no dollar signs, no humans, no bokeh.
+Avoid: generic marketing funnel, dark abstract fog, social-media icons, unreadable interface marks.

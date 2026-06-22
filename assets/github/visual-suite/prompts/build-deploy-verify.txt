@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Build Deploy Verify Path backplate: a disciplined software delivery path for agentic repos from branch, local gates, PR, CI, preview deploy, main merge, and live verification.
+Scene/backdrop: dark engineering release runway with sequential checkpoints and evidence beacons, no readable UI.
+Subject: a clear release pipeline path with seven clean stations, code branch fork, check gates, preview portal, merge spine, and live verification beacon represented abstractly.
+Style/medium: premium developer-ops 3D illustration, Vercel/Linear-like clarity without copying any brand.
+Composition/framing: wide landscape, left-to-right path with distinct checkpoints, clean upper band for deterministic title and lower band for labels.
+Lighting/mood: precise, fast, careful, production-grade.
+Color palette: graphite, cyan, white, emerald pass lights, amber preview, small red blocked state accents; avoid one-note blue/purple.
+Materials/textures: matte rails, glass checkpoint tiles, subtle terminal-like surfaces without text, crisp routing lines.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no fake code text, no GitHub/Vercel logos, no humans, no bokeh, no decorative orbs.
+Avoid: generic DevOps clipart, fake terminal windows, clutter, dark fog, illegible symbols.
