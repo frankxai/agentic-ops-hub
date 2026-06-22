@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="0.48" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="38%" r="56%">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#05070d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 0; }
+      .fine { stroke: rgba(219,234,254,0.16); stroke-width: 1; }
+      .panel { fill: rgba(15,23,42,0.72); stroke: rgba(219,234,254,0.16); }
+      .chip { fill: rgba(255,255,255,0.055); stroke: rgba(219,234,254,0.16); }
+    </style>
+  </defs>
+  <rect width="1280" height="820" fill="url(#bg)"/>
+  <rect width="1280" height="820" fill="url(#glow)"/>
+  <g opacity="0.38">
+    <path class="fine" d="M -80 820 C 160 508.4, 420 262.4, 1360 70"/>
+<path class="fine" d="M 35 820 C 220 508.4, 452 262.4, 1360 88"/>
+<path class="fine" d="M 150 820 C 280 508.4, 484 262.4, 1360 106"/>
+<path class="fine" d="M 265 820 C 340 508.4, 516 262.4, 1360 124"/>
+<path class="fine" d="M 380 820 C 400 508.4, 548 262.4, 1360 142"/>
+<path class="fine" d="M 495 820 C 460 508.4, 580 262.4, 1360 160"/>
+<path class="fine" d="M 610 820 C 520 508.4, 612 262.4, 1360 178"/>
+<path class="fine" d="M 725 820 C 580 508.4, 644 262.4, 1360 196"/>
+<path class="fine" d="M 840 820 C 640 508.4, 676 262.4, 1360 214"/>
+<path class="fine" d="M 955 820 C 700 508.4, 708 262.4, 1360 232"/>
+<path class="fine" d="M 1070 820 C 760 508.4, 740 262.4, 1360 250"/>
+<path class="fine" d="M 1185 820 C 820 508.4, 772 262.4, 1360 268"/>
+<path class="fine" d="M 1300 820 C 880 508.4, 804 262.4, 1360 286"/>
+<path class="fine" d="M 1415 820 C 940 508.4, 836 262.4, 1360 304"/>
+    <path class="fine" d="M 1280 60 C 921.5999999999999 164, 576 639.6, 0 765"/>
+<path class="fine" d="M 1280 134 C 921.5999999999999 183, 576 617.6, 0 710"/>
+<path class="fine" d="M 1280 208 C 921.5999999999999 202, 576 595.6, 0 655"/>
+<path class="fine" d="M 1280 282 C 921.5999999999999 221, 576 573.6, 0 600"/>
+<path class="fine" d="M 1280 356 C 921.5999999999999 240, 576 551.6, 0 545"/>
+<path class="fine" d="M 1280 430 C 921.5999999999999 259, 576 529.6, 0 490"/>
+<path class="fine" d="M 1280 504 C 921.5999999999999 278, 576 507.6, 0 435"/>
+<path class="fine" d="M 1280 578 C 921.5999999999999 297, 576 485.6, 0 380"/>
+<path class="fine" d="M 1280 652 C 921.5999999999999 316, 576 463.6, 0 325"/>
+  </g>
+  
+  <title>Agentic income ecosystem map</title>
+  <desc>L0 through L7 operating map for capability, config, income, payments, swarm runtime, and assurance.</desc>
+  <g transform="translate(60 52)">
+    <text x="0" y="34" font-size="18" font-weight="820" fill="#38bdf8">CANONICAL OPERATING MAP</text>
+    <text x="0" y="92" font-size="52" font-weight="880" fill="#f8fafc">Agentic income stack</text>
+    <text x="0" y="132" font-size="20" font-weight="520" fill="#94a3b8">Capability -> config -> income -> payments -> swarm -> assurance, all grounded in substrate memory and human gates.</text>
+  </g>
+  <g transform="translate(82 188)">
+    <g>
+        <rect x="0" y="0" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="0" width="96" height="50" rx="18" fill="#ef4444" opacity="0.22"/>
+        <text x="34" y="32" font-size="18" font-weight="850" fill="#ef4444">L7</text>
+        <text x="124" y="32" font-size="20" font-weight="780" fill="#f8fafc">Assurance</text>
+        <text x="370" y="32" font-size="16" font-weight="520" fill="#94a3b8">starlight-evals</text>
+      </g>
+<g>
+        <rect x="0" y="64" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="64" width="96" height="50" rx="18" fill="#8b5cf6" opacity="0.22"/>
+        <text x="34" y="96" font-size="18" font-weight="850" fill="#8b5cf6">L6</text>
+        <text x="124" y="96" font-size="20" font-weight="780" fill="#f8fafc">Swarm Runtime</text>
+        <text x="370" y="96" font-size="16" font-weight="520" fill="#94a3b8">starlight-swarm</text>
+      </g>
+<g>
+        <rect x="0" y="128" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="128" width="96" height="50" rx="18" fill="#f59e0b" opacity="0.22"/>
+        <text x="34" y="160" font-size="18" font-weight="850" fill="#f59e0b">L5</text>
+        <text x="124" y="160" font-size="20" font-weight="780" fill="#f8fafc">Payments</text>
+        <text x="370" y="160" font-size="16" font-weight="520" fill="#94a3b8">payment-intelligence-system + awesome-payment-agent-skills</text>
+      </g>
+<g>
+        <rect x="0" y="192" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="192" width="96" height="50" rx="18" fill="#60a5fa" opacity="0.22"/>
+        <text x="34" y="224" font-size="18" font-weight="850" fill="#60a5fa">L4</text>
+        <text x="124" y="224" font-size="20" font-weight="780" fill="#f8fafc">Income Engine</text>
+        <text x="370" y="224" font-size="16" font-weight="520" fill="#94a3b8">skills + hub + template + curated lists + spokes</text>
+      </g>
+<g>
+        <rect x="0" y="256" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="256" width="96" height="50" rx="18" fill="#38bdf8" opacity="0.22"/>
+        <text x="34" y="288" font-size="18" font-weight="850" fill="#38bdf8">L2</text>
+        <text x="124" y="288" font-size="20" font-weight="780" fill="#f8fafc">Config</text>
+        <text x="370" y="288" font-size="16" font-weight="520" fill="#94a3b8">agentic-ops-hub</text>
+      </g>
+<g>
+        <rect x="0" y="320" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="320" width="96" height="50" rx="18" fill="#22d3ee" opacity="0.22"/>
+        <text x="34" y="352" font-size="18" font-weight="850" fill="#22d3ee">L1</text>
+        <text x="124" y="352" font-size="20" font-weight="780" fill="#f8fafc">Capability</text>
+        <text x="370" y="352" font-size="16" font-weight="520" fill="#94a3b8">starlight-agent-skills</text>
+      </g>
+<g>
+        <rect x="0" y="384" width="1116" height="50" rx="18" fill="rgba(255,255,255,0.05)" stroke="rgba(219,234,254,0.13)"/>
+        <rect x="0" y="384" width="96" height="50" rx="18" fill="#38bdf8" opacity="0.22"/>
+        <text x="34" y="416" font-size="18" font-weight="850" fill="#38bdf8">L0</text>
+        <text x="124" y="416" font-size="20" font-weight="780" fill="#f8fafc">Substrate</text>
+        <text x="370" y="416" font-size="16" font-weight="520" fill="#94a3b8">SIS + second-brain-os</text>
+      </g>
+  </g>
+  <g transform="translate(82 654)">
+    <rect x="0" y="0" width="1116" height="96" rx="24" fill="rgba(245,158,11,0.09)" stroke="rgba(245,158,11,0.32)"/>
+    <text x="32" y="38" font-size="16" font-weight="850" fill="#fbbf24">MONEY SAFETY RULE</text>
+    <text x="32" y="70" font-size="22" font-weight="760" fill="#f8fafc">Agents draft, verify, gate, and audit. Humans approve capital and irreversible actions.</text>
+  </g>
+</svg>
