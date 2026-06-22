@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Repo Constellation backplate: a precise map of interconnected software repositories as grouped operational districts, showing capability libraries, ops hub, income engines, payments governance, swarm runtime, and evals assurance as distinct clusters.
+Scene/backdrop: dark developer command board with luminous pathways and grouped repositories represented as clean abstract modules, not stars in space.
+Subject: six clearly separated clusters connected by routed traces, with one subtle central control hub.
+Style/medium: premium editorial technical illustration, high-trust systems cartography, glass-and-metal depth.
+Composition/framing: wide landscape, central constellation occupies middle band, clean margins for future labels and repo names, no tiny details that look like text.
+Lighting/mood: calm, intelligent, organized, source-grounded.
+Color palette: graphite, cyan, emerald, amber, restrained violet, small red assurance signals; balanced, not monochrome.
+Materials/textures: etched grid, translucent panels, precise connection traces, subtle node glow, crisp edges.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no fake glyphs, no finance icons, no humans, no decorative orbs, no bokeh.
+Avoid: galaxy/starfield look, fake UI labels, cluttered circuit-board noise, generic SaaS gradient.

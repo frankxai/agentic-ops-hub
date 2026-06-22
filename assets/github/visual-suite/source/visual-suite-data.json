@@ -1,0 +1,490 @@
+{
+  "version": "2026.06-premium",
+  "generatedAt": "2026-06-22",
+  "visuals": [
+    {
+      "slug": "ecosystem-north-star",
+      "title": "Ecosystem North Star",
+      "kicker": "L0-L7 OPERATING SYSTEM",
+      "story": "Skills, ops, income, payments, swarm, and assurance connected as one governed system.",
+      "steps": [
+        "L1 Skills",
+        "L2 Ops hub",
+        "L4 Income",
+        "L5 Payments",
+        "L6 Swarm",
+        "L7 Evals"
+      ],
+      "homes": [
+        "All READMEs",
+        "agentic-ops-hub docs",
+        "site OG"
+      ],
+      "accent": "#22d3ee",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390d6c55d481938ea5635d4248a50f.png",
+      "promptFile": "../prompts/ecosystem-north-star.txt"
+    },
+    {
+      "slug": "repo-constellation",
+      "title": "Repo Constellation",
+      "kicker": "WHICH REPO DOES WHAT",
+      "story": "A grouped map of the estate by capability, operations, income, payments, swarm, and evals.",
+      "steps": [
+        "Capability libraries",
+        "Ops control",
+        "Income engines",
+        "Payments guardrails",
+        "Swarm runtime",
+        "Evals lane"
+      ],
+      "homes": [
+        "agentic-ops-hub",
+        "all README maps"
+      ],
+      "accent": "#34d399",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390dae457081939df56d8f365316cd.png",
+      "promptFile": "../prompts/repo-constellation.txt"
+    },
+    {
+      "slug": "income-engine-flow",
+      "title": "Income Engine Flow",
+      "kicker": "HONEST RECURRING REVENUE",
+      "story": "Research demand, publish useful comparisons, bind the catalog, capture email, and audit every link.",
+      "steps": [
+        "Research",
+        "Compare",
+        "Catalog",
+        "Capture",
+        "Audit"
+      ],
+      "homes": [
+        "agenticincome",
+        "template",
+        "L4 repos"
+      ],
+      "accent": "#6ee7b7",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390e47a234819391be0dc38f04abc0.png",
+      "promptFile": "../prompts/income-engine-flow.txt"
+    },
+    {
+      "slug": "website-growth-loop",
+      "title": "Website Growth Loop",
+      "kicker": "HUB, TEMPLATE, SPOKES, SKILLS",
+      "story": "The flagship site, forkable template, passive spoke, awesome list, and skills library feed one loop.",
+      "steps": [
+        "Hub",
+        "Template",
+        "Spoke",
+        "Awesome list",
+        "Skills"
+      ],
+      "homes": [
+        "3 Next.js sites",
+        "L4 READMEs"
+      ],
+      "accent": "#14b8a6",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390e8bba608193875b5f77080c6ffe.png",
+      "promptFile": "../prompts/website-growth-loop.txt"
+    },
+    {
+      "slug": "payments-safety-spine",
+      "title": "Payments Safety Spine",
+      "kicker": "FAIL-CLOSED BY DEFAULT",
+      "story": "Mandate verification, spend caps, audit records, and human approval before settlement.",
+      "steps": [
+        "Mandate",
+        "Spend cap",
+        "Audit",
+        "Human gate"
+      ],
+      "homes": [
+        "payments MCP",
+        "payment protocol list"
+      ],
+      "accent": "#f59e0b",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390ed7681c8193b614e2ef374d506b.png",
+      "promptFile": "../prompts/payments-safety-spine.txt"
+    },
+    {
+      "slug": "swarm-runtime",
+      "title": "Swarm Runtime",
+      "kicker": "QUEEN/WORKER ORCHESTRATION",
+      "story": "Founder command, queen coordination, worker lanes, escalation, and receipts.",
+      "steps": [
+        "Founder",
+        "Queen",
+        "Workers",
+        "Escalate",
+        "Receipts"
+      ],
+      "homes": [
+        "starlight-swarm",
+        "ops hub"
+      ],
+      "accent": "#a78bfa",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390f1c06e881938f91307cfd4f455d.png",
+      "promptFile": "../prompts/swarm-runtime.txt"
+    },
+    {
+      "slug": "red-blue-assurance",
+      "title": "Red/Blue Assurance",
+      "kicker": "EVALS BEFORE MONEY",
+      "story": "Red probes, blue controls, scorecards, receipts, and release gates for income/payment flows.",
+      "steps": [
+        "Probe",
+        "Exploit attempt",
+        "Guardrail",
+        "Scorecard",
+        "Release gate"
+      ],
+      "homes": [
+        "starlight-evals",
+        "ops hub",
+        "payments"
+      ],
+      "accent": "#fb7185",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390f59d738819389f9901823abb48d.png",
+      "promptFile": "../prompts/red-blue-assurance.txt"
+    },
+    {
+      "slug": "build-deploy-verify",
+      "title": "Build / Deploy / Verify",
+      "kicker": "SHIPPING PATH",
+      "story": "Branch, local gates, PR, CI, preview, main, and live verification as one disciplined path.",
+      "steps": [
+        "Branch",
+        "Local gates",
+        "PR",
+        "CI",
+        "Preview",
+        "Main",
+        "Live check"
+      ],
+      "homes": [
+        "ops docs",
+        "README contribution paths"
+      ],
+      "accent": "#10b981",
+      "source": "C:/Users/frank/.codex/generated_images/019eee93-7525-7c43-bb1f-836e174dd5cb/ig_0f176f3eb23cee4f016a390fc49668819383d2eb7e46e4969d.png",
+      "promptFile": "../prompts/build-deploy-verify.txt"
+    }
+  ],
+  "repos": [
+    {
+      "repo": "agentic-ops-hub",
+      "title": "Agentic Ops Hub",
+      "layer": "L2",
+      "subtitle": "The control plane for the L0-L7 agentic income ecosystem.",
+      "headerVisual": "ecosystem-north-star",
+      "mapVisual": "repo-constellation",
+      "chips": [
+        "ECOSYSTEM",
+        "MCP strategy",
+        "Protection layers",
+        "Red/blue charter"
+      ],
+      "role": "Keeps agent rules, MCP strategy, protection layers, and the full estate map aligned.",
+      "primaryPath": "Design the operating contract -> sync agents -> verify the release path.",
+      "proofGate": "Every repo gets visual provenance, deterministic text, and build/deploy checks.",
+      "steps": [
+        "Define the L0-L7 map",
+        "Sync repo rules",
+        "Route skills and MCPs",
+        "Gate releases with evidence"
+      ],
+      "outputs": [
+        "README command surface",
+        "Premium suite source",
+        "Cross-repo manifest"
+      ]
+    },
+    {
+      "repo": "starlight-agent-skills",
+      "title": "Starlight Agent Skills",
+      "layer": "L1",
+      "subtitle": "Portable substrate skills for Starlight work.",
+      "headerVisual": "ecosystem-north-star",
+      "mapVisual": "repo-constellation",
+      "chips": [
+        "agentic-income",
+        "affiliate-audit",
+        "payments-mandate",
+        "swarm-queen"
+      ],
+      "role": "Turns the income thesis, affiliate loop, payment mandate, and queen coordination into portable skills.",
+      "primaryPath": "Package repeatable behavior -> document triggers -> ship skills into agents.",
+      "proofGate": "Skills stay small, named, and backed by source repo workflows.",
+      "steps": [
+        "Name the job",
+        "Write trigger rules",
+        "Encode the workflow",
+        "Use in coding agents"
+      ],
+      "outputs": [
+        "Reusable skills",
+        "Agent behavior contracts",
+        "Income operating memory"
+      ]
+    },
+    {
+      "repo": "agenticincome",
+      "title": "Agentic Income",
+      "layer": "L4",
+      "subtitle": "The flagship hub for honest AI-agent income systems.",
+      "headerVisual": "income-engine-flow",
+      "mapVisual": "website-growth-loop",
+      "chips": [
+        "Hub site",
+        "Comparison posts",
+        "Affiliate catalog",
+        "Owned audience"
+      ],
+      "role": "Ranks for high-intent searches, tells the truth, and routes only to tools that genuinely win.",
+      "primaryPath": "Research demand -> publish comparisons -> bind affiliate catalog -> capture email.",
+      "proofGate": "Affiliate links are audited, JSON-LD is hardened, and build output is static-safe.",
+      "steps": [
+        "Find search demand",
+        "Test and compare tools",
+        "Bind the catalog",
+        "Capture email",
+        "Audit links"
+      ],
+      "outputs": [
+        "Authority pages",
+        "Recurring revenue paths",
+        "Network traffic"
+      ]
+    },
+    {
+      "repo": "agentic-income-template",
+      "title": "Agentic Income Template",
+      "layer": "L4",
+      "subtitle": "Clone-and-deploy starter for honest AI-tool comparison sites.",
+      "headerVisual": "website-growth-loop",
+      "mapVisual": "income-engine-flow",
+      "chips": [
+        "Next.js 16",
+        "MDX",
+        "Affiliate binding",
+        "Forkable brand config"
+      ],
+      "role": "Packages the hub method into a reusable site engine.",
+      "primaryPath": "Fork the template -> swap site config -> write comparisons -> deploy.",
+      "proofGate": "Portable affiliate audit and static OG surfaces ship with the template.",
+      "steps": [
+        "Fork",
+        "Configure brand",
+        "Write MDX posts",
+        "Sync catalog",
+        "Deploy"
+      ],
+      "outputs": [
+        "Reusable starter",
+        "Site visual assets",
+        "Affiliate-safe workflow"
+      ]
+    },
+    {
+      "repo": "agentic-income-skills",
+      "title": "Agentic Income Skills",
+      "layer": "L4",
+      "subtitle": "Portable operating brain for income systems.",
+      "headerVisual": "income-engine-flow",
+      "mapVisual": "website-growth-loop",
+      "chips": [
+        "agentic-income",
+        "affiliate-audit",
+        "Audit script",
+        "Five principles"
+      ],
+      "role": "Extracts the income thesis and affiliate audit loop into standalone skills.",
+      "primaryPath": "Explain the thesis -> choose programs honestly -> audit every recommendation.",
+      "proofGate": "Skills encode the no-hype, best-tool-wins rule.",
+      "steps": [
+        "Load thesis",
+        "Select use case",
+        "Compare honestly",
+        "Audit links",
+        "Publish receipts"
+      ],
+      "outputs": [
+        "Income skill pack",
+        "Audit patterns",
+        "Reusable prompts"
+      ]
+    },
+    {
+      "repo": "awesome-agentic-income",
+      "title": "Awesome Agentic Income",
+      "layer": "L4",
+      "subtitle": "Curated map of honest agentic income systems.",
+      "headerVisual": "repo-constellation",
+      "mapVisual": "income-engine-flow",
+      "chips": [
+        "Method",
+        "Engines",
+        "Programs",
+        "Playbooks"
+      ],
+      "role": "Separates useful recurring-income resources from generic affiliate noise.",
+      "primaryPath": "Find source-grounded resources -> sort by usefulness -> keep the list current.",
+      "proofGate": "Public curation favors proof, recency, and editorial selectivity.",
+      "steps": [
+        "Source",
+        "Filter",
+        "Group",
+        "Link",
+        "Maintain"
+      ],
+      "outputs": [
+        "Curated list",
+        "Learning map",
+        "Traffic bridge"
+      ]
+    },
+    {
+      "repo": "agenticpassiveincome",
+      "title": "Agentic Passive Income",
+      "layer": "L4",
+      "subtitle": "Spoke site for set-and-review income loops.",
+      "headerVisual": "website-growth-loop",
+      "mapVisual": "income-engine-flow",
+      "chips": [
+        "Spoke site",
+        "Passive loop",
+        "Shared catalog",
+        "Hub links"
+      ],
+      "role": "Uses the shared engine with a passive-income angle for builders who want set-and-review systems.",
+      "primaryPath": "Adapt the hub -> focus passive loops -> reuse catalog -> cross-link authority.",
+      "proofGate": "The spoke keeps the same audit discipline as the flagship hub.",
+      "steps": [
+        "Choose passive angle",
+        "Reuse engine",
+        "Publish comparison",
+        "Cross-link hub",
+        "Capture email"
+      ],
+      "outputs": [
+        "Spoke authority",
+        "Passive loop pages",
+        "Shared revenue paths"
+      ]
+    },
+    {
+      "repo": "payment-intelligence-system",
+      "title": "Payment Intelligence System",
+      "layer": "L5",
+      "subtitle": "Fail-closed payments governance MCP.",
+      "headerVisual": "payments-safety-spine",
+      "mapVisual": "red-blue-assurance",
+      "chips": [
+        "Ed25519",
+        "AP2 mandate",
+        "Spend cap",
+        "Audit log"
+      ],
+      "role": "Verifies mandates, checks caps, records audit entries, and requires humans without moving money.",
+      "primaryPath": "Verify mandate -> check cap -> record audit -> require approval.",
+      "proofGate": "The MCP exposes verify-only tools and fails closed under invalid input.",
+      "steps": [
+        "Verify mandate",
+        "Check spend cap",
+        "Record audit",
+        "Require human approval"
+      ],
+      "outputs": [
+        "Verify-only MCP",
+        "Audit receipts",
+        "Human approval objects"
+      ]
+    },
+    {
+      "repo": "awesome-payment-agent-skills",
+      "title": "Awesome Payment Agent Skills",
+      "layer": "L5",
+      "subtitle": "Curated payment protocols and safety tooling.",
+      "headerVisual": "payments-safety-spine",
+      "mapVisual": "repo-constellation",
+      "chips": [
+        "AP2",
+        "x402",
+        "ACP",
+        "Safety tooling"
+      ],
+      "role": "Maps authorization, settlement, and audit tooling so agents can pay only under guardrails.",
+      "primaryPath": "Collect protocols -> classify risk -> link safety patterns -> update the map.",
+      "proofGate": "Curation favors protocols with clear authorization and audit semantics.",
+      "steps": [
+        "Collect",
+        "Classify",
+        "Explain guardrails",
+        "Link source",
+        "Maintain"
+      ],
+      "outputs": [
+        "Protocol list",
+        "Safety map",
+        "Implementation pointers"
+      ]
+    },
+    {
+      "repo": "starlight-swarm",
+      "title": "Starlight Swarm",
+      "layer": "L6",
+      "subtitle": "Queen-worker runtime for governed income streams.",
+      "headerVisual": "swarm-runtime",
+      "mapVisual": "payments-safety-spine",
+      "chips": [
+        "Founder",
+        "Queens",
+        "Workers",
+        "Escalation"
+      ],
+      "role": "Models founder, queens, workers, and escalation with verify-only payments integration.",
+      "primaryPath": "Founder intent -> queen plan -> worker tasks -> escalation when risk rises.",
+      "proofGate": "Escalation spine and payments adapter are unit-tested.",
+      "steps": [
+        "Receive intent",
+        "Coordinate queens",
+        "Dispatch workers",
+        "Escalate risk",
+        "Record receipts"
+      ],
+      "outputs": [
+        "Runtime primitives",
+        "Escalation tests",
+        "Payments adapter"
+      ]
+    },
+    {
+      "repo": "starlight-evals",
+      "title": "Starlight Evals",
+      "layer": "L7",
+      "subtitle": "Whole-system evals and income/payments red-blue lane.",
+      "headerVisual": "red-blue-assurance",
+      "mapVisual": "build-deploy-verify",
+      "chips": [
+        "R1-R6 probes",
+        "Scorecards",
+        "Receipts",
+        "Named weaknesses"
+      ],
+      "role": "Records receipts, named weaknesses, and red-blue probes before the stack touches real funds.",
+      "primaryPath": "Run probes -> collect receipts -> score risk -> gate release.",
+      "proofGate": "R4/R5/R6 lanes prove income and payments defenses before promotion.",
+      "steps": [
+        "Probe",
+        "Attack the workflow",
+        "Apply guardrail",
+        "Score evidence",
+        "Gate release"
+      ],
+      "outputs": [
+        "Runnable evals",
+        "Scorecards",
+        "Release evidence"
+      ]
+    }
+  ]
+}

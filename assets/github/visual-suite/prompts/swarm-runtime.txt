@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Swarm Runtime backplate: a governed queen-worker orchestration runtime with founder command, queen coordinator, worker lanes, escalation ladder, and verification receipts.
+Scene/backdrop: dark operational command floor with routed task lanes and elevated coordination nodes, no readable UI.
+Subject: one high-level coordinator node directing several worker lanes, with a clear escalation path rising to a guarded decision point and receipt trail.
+Style/medium: premium 3D systems illustration, calm operational intelligence, developer-grade precision.
+Composition/framing: wide landscape, coordinator centered, workers arranged in ordered lanes, diagonal escalation path toward upper-right; clean areas for overlay text.
+Lighting/mood: intelligent, decisive, controlled, collaborative without human figures.
+Color palette: graphite, cyan, violet, emerald, amber, tiny red escalation signals; avoid all-purple wash.
+Materials/textures: glass task lanes, metal docking points, light rails, subtle grid, receipt-like blank tiles with no marks.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no humans, no animals, no fake UI text, no coins, no bokeh or decorative orbs.
+Avoid: sci-fi spaceship bridge, fantasy throne imagery, generic network cloud, clutter.

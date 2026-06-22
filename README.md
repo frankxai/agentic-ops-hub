@@ -1,12 +1,19 @@
 <!-- GITHUB_VISUALS_START -->
 <p align="center">
-  <img src="assets/github/header.svg" alt="Agentic Ops Hub - Configuration control plane for AI coding agents" width="100%">
+  <img src="assets/github/header.svg" alt="Agentic Ops Hub - The control plane for the L0-L7 agentic income ecosystem." width="100%">
 </p>
 
 <details open>
 <summary><strong>How this repo works</strong></summary>
 <p align="center">
   <img src="assets/github/how-it-works.svg" alt="Agentic Ops Hub operating map" width="100%">
+</p>
+</details>
+
+<details>
+<summary><strong>Build, deploy, verify path</strong></summary>
+<p align="center">
+  <img src="assets/github/build-deploy-verify.svg" alt="Agentic Ops Hub build deploy verify path" width="100%">
 </p>
 </details>
 

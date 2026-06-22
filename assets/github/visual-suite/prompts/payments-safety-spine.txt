@@ -1,0 +1,13 @@
+Use case: stylized-concept
+Asset type: Premium visual-suite backplate for GitHub README and website infographic, 16:9 landscape, no text
+Primary request: Payments Safety Spine backplate: a fail-closed agent payments governance flow where a mandate, spend cap, audit ledger, and human approval gate protect any settlement path.
+Scene/backdrop: secure dark technical operations table with four guarded checkpoints and a final locked human gate represented abstractly.
+Subject: a clear left-to-right safety spine with cryptographic seal object, cap threshold gate, append-only ledger stack, and approval lock, all without readable symbols.
+Style/medium: premium cybersecurity and payments-governance 3D illustration, precise, serious, no hype.
+Composition/framing: wide landscape, strong horizontal spine through center, negative space above for deterministic headline, lower space for labels.
+Lighting/mood: trustworthy, fail-closed, high-assurance, controlled.
+Color palette: graphite, amber, cyan, emerald, small red guardrail alerts; no finance gold overload.
+Materials/textures: dark metal rails, glass guard panels, etched verification paths, precise light gates.
+Text (verbatim): none.
+Constraints: no words, no letters, no numbers, no logos, no watermarks, no coins, no dollar signs, no credit card graphics, no bank icons, no fake UI text, no humans.
+Avoid: casino/finance imagery, generic padlock clipart, fake code text, clutter, bokeh, decorative orbs.
