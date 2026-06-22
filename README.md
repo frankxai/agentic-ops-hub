@@ -1,4 +1,16 @@
-![Agentic Operations Hub Banner](images/hero-banner.png)
+<!-- GITHUB_VISUALS_START -->
+<p align="center">
+  <img src="assets/github/header.svg" alt="Agentic Ops Hub - Configuration control plane for AI coding agents" width="100%">
+</p>
+
+<details open>
+<summary><strong>How this repo works</strong></summary>
+<p align="center">
+  <img src="assets/github/how-it-works.svg" alt="Agentic Ops Hub operating map" width="100%">
+</p>
+</details>
+
+<!-- GITHUB_VISUALS_END -->
 
 # 🚀 Agentic Operations Hub (agentic-ops-hub)
 ### The Configuration Control Plane for AI Coding Agents: Claude Code, Cursor, Cline, Copilot, Codex, Antigravity & Grok
