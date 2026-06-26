@@ -24,6 +24,36 @@
 
 One source of truth (`AGENTS.md`), one sync engine, every agent aligned — plus a curated index of the operational layer that keeps autonomous coding agents safe, fast, and consistent.
 
+[![Agentic Ops](https://img.shields.io/badge/discipline-Agentic%20Ops-2563eb)](#-agentic-ops--aiops)
+[![Source of Truth](https://img.shields.io/badge/source-AGENTS.md-0f766e)](AGENTS.md)
+[![Sync Engine](https://img.shields.io/badge/sync-agent%20rules-7c3aed)](scripts/sync-agent-rules.mjs)
+[![Visual System](https://img.shields.io/badge/visuals-GitHub%20suite-f59e0b)](assets/github/README.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-0891b2)](#-license)
+
+---
+
+## 90-second start
+
+Use this repo when you need one canonical instruction layer for Claude Code, Cursor, Cline, Copilot, Codex, Antigravity, Grok, or a mixed agent fleet.
+
+```bash
+git clone https://github.com/frankxai/agentic-ops-hub.git
+cd agentic-ops-hub
+node scripts/sync-agent-rules.mjs --check
+```
+
+Start with:
+
+| I want to... | Start with |
+|---|---|
+| Understand the canonical rule source | [`AGENTS.md`](AGENTS.md) |
+| Fan rules out to agent-specific files | [`scripts/sync-agent-rules.mjs`](scripts/sync-agent-rules.mjs) |
+| Copy the baseline into another repo | [`templates/AGENTS.md`](templates/AGENTS.md) |
+| Understand the operating ecosystem | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
+| See MCP and protection strategy | [`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md) and [`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md) |
+
+This is a library/configuration repo, not a deployable app. The fastest health check is the generated-rule drift check above.
+
 ---
 
 ## 🗺️ The Agentic Income Ecosystem blueprint
