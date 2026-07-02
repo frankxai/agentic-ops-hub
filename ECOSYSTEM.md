@@ -21,7 +21,9 @@ L5 PAYMENTS       payment-intelligence-system (vertical + MCP) · awesome-paymen
 L4 INCOME ENGINE  affiliate-agent-skills (ext engine) → agentic-income-skills (brain)
                   → agenticincome (hub) + agenticpassiveincome (spoke) + agentic-income-template
                   ▲ generates active + passive income streams
-L3 OS FAMILY      agentic-business-os · agentic-creator-os · agentic-investor-os (in dev)
+L3 OS FAMILY      agentic-business-os · agentic-creator-os · investor OS (shipped as
+                  agentic-business-os/packs/investor-os-pack + the engine at
+                  SIS verticals/investment-intelligence; dedicated repo deferred)
                   ▲ packages capability into installable operating systems (5-file contract)
 L2 CONFIG         agentic-ops-hub  ← YOU ARE HERE
                   ▲ one AGENTS.md source of truth, fanned out to every agent format
@@ -43,7 +45,7 @@ Legend: 🟢 production · 🟡 real scaffold · 🔴 seeded this wave (was empt
 
 | Repo | Layer | State | Purpose | This-wave action |
 |---|---|---|---|---|
-| `Starlight-Intelligence-System` | L0 | 🟢 v8.2.0 | SIP substrate: 49 agents, 76 skills, 6 vaults, MCP (`sis_*`), Wealth IS, Crypto IS | (consumer) |
+| `Starlight-Intelligence-System` | L0 | 🟢 v8.2.0+ | SIP substrate: agents, skills, vaults, MCP (`sis_*`), Wealth IS (ACL manifest), Crypto IS, **Investment Intelligence vertical + trade-gate MCP** (2026-07-02 board) | (consumer) |
 | `second-brain-os` | L0 | 🟢 v0.2.0 | Private two-vault memory, SIP-composing, 37 tests | — |
 | `agentic-creator-os` | L1 | 🟢 v11 | Canonical skills/agents/safety hub; 7 own MCP servers | (safety source) |
 | `claude-skills-library` | L1 | 🟢 | 107 portable skills, CI link/frontmatter validation | — |
@@ -74,8 +76,9 @@ Legend: 🟢 production · 🟡 real scaffold · 🔴 seeded this wave (was empt
 ```
   INTELLIGENCE                 GENERATION                 SETTLEMENT
   ────────────                 ──────────                 ──────────
-  L0 SIS Wealth IS    ──┐
-  (thesis, gate ladder) │
+  L0 SIS Wealth IS    ──┐   (investment side: SIS verticals/investment-intelligence —
+  (thesis, gate ladder) │    11-agent engine → trade-gate MCP: human token above DCA,
+                        │    paper-first; brokers wired operator-local only)
                         ▼
   L4 income engine  ───────►  affiliate links (recurring)  ─┐
      agentic-income-skills    digital products              │

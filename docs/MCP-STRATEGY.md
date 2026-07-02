@@ -63,6 +63,23 @@ Full protocol detail: `payment-intelligence-system/docs/PAYMENT-PROTOCOLS.md`.
 
 ---
 
+## Investing: broker MCP policy (July 2026 state)
+
+Same build-vs-adopt logic as payments: brokers are **adopted official MCPs**, never reimplemented — and they sit *below* our own governance layer, the **trade-gate MCP** (`Starlight-Intelligence-System/verticals/investment-intelligence/mcp/trade-gate/` — caps + single-use human approval token above the DCA whitelist + append-only audit; paper broker default; live adapters ship as NOT_WIRED stubs).
+
+| Server | Source | Used for | Gate posture |
+|---|---|---|---|
+| **Alpaca MCP V2** | official `alpacahq/alpaca-mcp-server` (MIT) | stocks/ETF/options/crypto orders + data; `ALPACA_PAPER_TRADE=True` by default | wired operator-local only; paper parity before any live key |
+| **IBKR AI integrations** | Interactive Brokers | EU/NL live path; its "AI Instructions" review tab is a broker-side human gate | composes with (never replaces) the trade-gate token |
+| **Coinbase for Agents / AgentKit** | Coinbase (Apache-2.0) | crypto with MPC wallet, session caps, per-tx limits | custody never self-built |
+| **OpenBB ODP · Ghostfolio · Actual Budget · Langfuse** | self-hosted (AGPL/AGPL/MIT/MIT) | data · portfolio · ledger · agent traces | T0 sovereign tier; read-only tokens for agents |
+
+**Skip-list (reviewed 2026-07-02):** FinGPT/FinRL (research-grade), hummingbot (off-mission HFT), Maybe Finance (dead), Monarch (redundant), LangSmith (closed SaaS; Langfuse covers it), Nous Portal (OpenRouter is the machine route). freqtrade runs as a GPL appliance for backtests — never merged.
+
+Routing tiers + data-classification rule (balances are local-only): `Starlight-Intelligence-System/verticals/investment-intelligence/ROUTING.md`.
+
+---
+
 ## Configuration by operator profile
 
 | Operator | MCP stack to enable |
