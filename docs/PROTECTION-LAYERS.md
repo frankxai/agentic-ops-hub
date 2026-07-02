@@ -92,9 +92,9 @@ A *capped, mandate-verified merchant settlement* may be agent-signed per L5 (usi
 
 | Layer | Implemented in |
 |---|---|
-| L1 Audit | `agentic-creator-os` hooks · `payment-intelligence-system/mcp` · trade-gate MCP append-only JSONL (`SIS verticals/investment-intelligence/mcp/trade-gate`) |
+| L1 Audit | `agentic-creator-os` hooks · `payment-intelligence-system/mcp` · trade-gate MCP append-only JSONL (`Starlight-Intelligence-System/verticals/investment-intelligence/mcp/trade-gate`) |
 | L2 Circuit breaker | `agentic-creator-os` hooks (applied to income agents) |
-| L3 Agent IAM | `agentic-creator-os` IAM profiles · IIS agent catalog `tools_denied` (all 11 agents denied `execution-platforms` + `credential-stores`) |
+| L3 Agent IAM | `agentic-creator-os` IAM profiles · `FrankX/iis` agent catalog `tools_denied` (all 11 agents denied `execution-platforms` + `credential-stores`) |
 | L4 Escalation | `agentic-ops-hub/docs/AGENT-STACK.md` · `starlight-swarm` runtime |
 | L5 Payment gov | `payment-intelligence-system` (vertical + MCP) — payments rail. **Trading sibling:** trade-gate MCP (caps + single-use approval token above DCA whitelist + paper default + NOT_WIRED live stubs) |
 | L6 Red/blue | `starlight-evals` Income & Payments Safety lane · `investment-gate` lane |

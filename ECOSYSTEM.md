@@ -23,7 +23,8 @@ L4 INCOME ENGINE  affiliate-agent-skills (ext engine) → agentic-income-skills 
                   ▲ generates active + passive income streams
 L3 OS FAMILY      agentic-business-os · agentic-creator-os · investor OS (shipped as
                   agentic-business-os/packs/investor-os-pack + the engine at
-                  SIS verticals/investment-intelligence; dedicated repo deferred)
+                  Starlight-Intelligence-System/verticals/investment-intelligence;
+                  dedicated repo deferred)
                   ▲ packages capability into installable operating systems (5-file contract)
 L2 CONFIG         agentic-ops-hub  ← YOU ARE HERE
                   ▲ one AGENTS.md source of truth, fanned out to every agent format
@@ -76,7 +77,7 @@ Legend: 🟢 production · 🟡 real scaffold · 🔴 seeded this wave (was empt
 ```
   INTELLIGENCE                 GENERATION                 SETTLEMENT
   ────────────                 ──────────                 ──────────
-  L0 SIS Wealth IS    ──┐   (investment side: SIS verticals/investment-intelligence —
+  L0 SIS Wealth IS    ──┐   (investment side: SIS/verticals/investment-intelligence —
   (thesis, gate ladder) │    11-agent engine → trade-gate MCP: human token above DCA,
                         │    paper-first; brokers wired operator-local only)
                         ▼
