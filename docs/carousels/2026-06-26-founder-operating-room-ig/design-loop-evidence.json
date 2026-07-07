@@ -1,0 +1,76 @@
+{
+  "task": "Build a premium iconic agency-style Instagram carousel for FrankX / Starlight using image generation and Motion Design Studio direction.",
+  "date": "2026-06-26",
+  "brand": "FrankX / Starlight",
+  "surface": "Instagram carousel",
+  "dimensions": "1080x1350",
+  "mode": "internal review ready; not posted externally",
+  "standards_loaded": [
+    "DESIGN_TASTE.md L99 section",
+    "design-agent-standards/DESIGN.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/ULTIMATE_AGENTIC_LOOPS.md",
+    "design-agent-standards/RED_TEAM_CHECKLIST.md",
+    "starlight-design-intelligence/brand-packs/frankx/BRAND.md",
+    "VISUAL_QA_GATE.md",
+    "OUTCOMES.md",
+    "generated-asset-quality-gate.md",
+    "Motion Design Studio motion-director",
+    "Motion Design Studio motion-media-producer",
+    "imagegen skill"
+  ],
+  "references": [
+    {
+      "name": "Meta Instagram Feed ad guide",
+      "url": "https://www.facebook.com/business/ads-guide/image/instagram-feed",
+      "use": "Instagram feed/carousel sizing and platform surface constraint"
+    },
+    {
+      "name": "Hootsuite social media image sizes guide",
+      "url": "https://blog.hootsuite.com/social-media-image-sizes-guide/",
+      "use": "Cross-check of 4:5 portrait social crop practice"
+    }
+  ],
+  "creative_thesis": "Founder Operating Room: show the real operating system behind AI agent work through tactile editorial artifacts, Slack rooms, proof trails, and content production flow.",
+  "motion_thesis": "Motion should reveal causality: insight -> room -> work -> proof -> approval -> platform cuts.",
+  "image_generation": {
+    "tool": "built-in image_gen",
+    "source_folder": "C:\\Users\\frank\\.codex\\generated_images\\019eb9b2-d1ad-70f1-b951-b9198470159e",
+    "workspace_sources": [
+      "source-01-founder-operating-room.png",
+      "source-02-slack-cockpit.png",
+      "source-03-proof-wall.png",
+      "source-04-content-studio.png"
+    ],
+    "prompt_strategy": "Generated text-free cinematic editorial source frames; exact copy and channel names rendered deterministically in Python/Pillow."
+  },
+  "artifacts": {
+    "review_png_dir": "exports/png",
+    "posting_jpg_dir": "exports/jpg",
+    "contact_sheet": "contact-sheet.png",
+    "caption": "CAPTION.md",
+    "motion_storyboard": "MOTION_STORYBOARD.md",
+    "renderer": "render_carousel.py"
+  },
+  "critic_notes": [
+    "V1 problem: too generic AI dashboard and negative framing.",
+    "V2 correction: tactile founder operating room, positive copy, exact Slack/workflow specifics.",
+    "Contact sheet pass exposed dense system slides; revised slides 2 and 4 with larger cards and affirmative copy.",
+    "Removed negative phrasings such as 'does not just', 'not chat rooms', and 'not autonomy theater'."
+  ],
+  "score_30_point_gate": {
+    "first_read_and_hierarchy": 5,
+    "brand_fit_and_distinctiveness": 5,
+    "craft_typography_spacing_composition": 4,
+    "accessibility_contrast_surface_fit": 4,
+    "accuracy_provenance_no_artifacts": 5,
+    "usefulness_for_surface": 5,
+    "total": 28
+  },
+  "remaining_risks": [
+    "Generated source frames contain tiny pseudo-UI marks, but final precise copy is deterministic and overlays the intended information.",
+    "For final flagship publication, a Canva/Figma hand-kerning pass could raise craft from 28/30 to 29-30/30.",
+    "Motion derivative is specified but not rendered as MP4 yet."
+  ],
+  "verdict": "Pass with notes; ready for internal approval and platform-specific polish."
+}

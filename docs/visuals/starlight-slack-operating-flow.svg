@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#071014"/><stop offset="1" stop-color="#0c1118"/></linearGradient>
+    <linearGradient id="card" x1="0" x2="1"><stop offset="0" stop-color="#14242b"/><stop offset="1" stop-color="#0d171e"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity=".35"/></filter>
+    <style>
+      .title{font:700 58px Inter,Segoe UI,Arial,sans-serif;fill:#f7fbff}
+      .sub{font:400 25px Inter,Segoe UI,Arial,sans-serif;fill:#a9bdc9}
+      .h{font:800 28px Inter,Segoe UI,Arial,sans-serif;fill:#fff}
+      .m{font:600 22px Inter,Segoe UI,Arial,sans-serif;fill:#d8edf5}
+      .s{font:500 18px Inter,Segoe UI,Arial,sans-serif;fill:#9fb5bf}
+      .card{fill:url(#card);stroke:#2f4d59;stroke-width:1.5;filter:url(#shadow)}
+      .line{stroke:#4be0ff;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .gold{stroke:#f5c96a}.green{stroke:#58e6a6}.red{stroke:#ff7b7b}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10 Z" fill="#4be0ff"/></marker>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <text x="90" y="92" class="title">Signal to Proof: How Work Actually Moves</text>
+  <text x="92" y="132" class="sub">Slack cockpit + Hermes runtime + GitHub truth + approval gates</text>
+
+  <g transform="translate(80 220)">
+    <rect width="235" height="170" rx="22" class="card"/>
+    <text x="28" y="54" class="h">1. SIGNAL</text>
+    <text x="28" y="94" class="m">#research-intel</text>
+    <text x="28" y="126" class="m">#ops</text>
+    <text x="28" y="150" class="s">news · repo risk · idea · blocker</text>
+  </g>
+  <path d="M315 305 H400" class="line"/>
+
+  <g transform="translate(400 220)">
+    <rect width="235" height="170" rx="22" class="card"/>
+    <text x="28" y="54" class="h">2. INTAKE</text>
+    <text x="28" y="94" class="m">#work-queue</text>
+    <text x="28" y="126" class="s">outcome · owner · repo</text>
+    <text x="28" y="150" class="s">deadline · proof · decision</text>
+  </g>
+  <path d="M635 305 H720" class="line"/>
+
+  <g transform="translate(720 220)">
+    <rect width="235" height="170" rx="22" class="card"/>
+    <text x="28" y="54" class="h">3. ROUTE</text>
+    <text x="28" y="94" class="m">#hermes-agent</text>
+    <text x="28" y="126" class="m">brand room</text>
+    <text x="28" y="150" class="s">profile · kanban · agent lane</text>
+  </g>
+  <path d="M955 305 H1040" class="line"/>
+
+  <g transform="translate(1040 220)">
+    <rect width="235" height="170" rx="22" class="card"/>
+    <text x="28" y="54" class="h">4. EXECUTE</text>
+    <text x="28" y="94" class="m">#execution-room</text>
+    <text x="28" y="126" class="m">#repo-command</text>
+    <text x="28" y="150" class="s">Codex · Claude · Hermes task</text>
+  </g>
+  <path d="M1275 305 H1360" class="line"/>
+
+  <g transform="translate(1360 220)">
+    <rect width="235" height="170" rx="22" class="card"/>
+    <text x="28" y="54" class="h">5. PROOF</text>
+    <text x="28" y="94" class="m">PR / commit</text>
+    <text x="28" y="126" class="m">preview / file</text>
+    <text x="28" y="150" class="s">screenshot · report · approval</text>
+  </g>
+  <path d="M1595 305 H1680" class="line"/>
+
+  <g transform="translate(1680 220)">
+    <rect width="160" height="170" rx="22" class="card"/>
+    <text x="22" y="54" class="h">6. LEARN</text>
+    <text x="22" y="94" class="m">#daily-report</text>
+    <text x="22" y="126" class="m">brand room</text>
+    <text x="22" y="150" class="s">next loop</text>
+  </g>
+
+  <g transform="translate(100 500)">
+    <rect width="520" height="265" rx="24" class="card"/>
+    <text x="32" y="54" class="h">Code / Repo Path</text>
+    <text x="32" y="100" class="m">#repo-command</text>
+    <text x="32" y="136" class="s">branch · PR · build · deploy state · owner</text>
+    <text x="32" y="182" class="m">Approval gates</text>
+    <text x="32" y="218" class="s">merge to main · production deploy · domain changes</text>
+  </g>
+
+  <g transform="translate(700 500)">
+    <rect width="520" height="265" rx="24" class="card"/>
+    <text x="32" y="54" class="h">Content / Social Path</text>
+    <text x="32" y="100" class="m">#content-film-prep → #social-command</text>
+    <text x="32" y="136" class="s">script · carousel · thumbnail · platform variants</text>
+    <text x="32" y="182" class="m">Hard gate</text>
+    <text x="32" y="218" class="s">#social-approvals before publish or schedule</text>
+  </g>
+
+  <g transform="translate(1300 500)">
+    <rect width="520" height="265" rx="24" class="card"/>
+    <text x="32" y="54" class="h">Brand / Business Path</text>
+    <text x="32" y="100" class="m">#brand-frankx · #brand-arcanea</text>
+    <text x="32" y="136" class="m">#brand-starlight · #brand-ai-coe</text>
+    <text x="32" y="172" class="s">priority · audience · offer · public/private boundary</text>
+    <text x="32" y="218" class="s">decisions escalate to #ops</text>
+  </g>
+
+  <g transform="translate(190 855)">
+    <rect width="1540" height="92" rx="24" fill="#0d1b22" stroke="#304d59"/>
+    <text x="40" y="39" class="m">Allowed by default: research, triage, draft, test, prepare PRs, queue work.</text>
+    <text x="40" y="70" class="m">Approval required: publish, schedule, merge, deploy production, spend, message customers/partners, expose private material.</text>
+  </g>
+</svg>

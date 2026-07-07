@@ -1,0 +1,54 @@
+{
+  "date": "2026-06-26",
+  "status": "internal anchor registry",
+  "rule": "No proof means not done.",
+  "labels": ["Decision", "Ask", "Update", "Blocker", "Proof", "Draft", "Approval"],
+  "core": [
+    {"channel": "#ops", "id": "C0B9M0AM2BZ", "job": "business decisions and spend gates"},
+    {"channel": "#start-here-agents", "id": "C0BBP54EMA9", "job": "onboarding for humans and agents"},
+    {"channel": "#work-queue", "id": "C0BBRH91709", "job": "intake before assignment"},
+    {"channel": "#execution-room", "id": "C0BB87M571V", "job": "active assigned work and proof"},
+    {"channel": "#daily-report", "id": "C0BBHBAQZMH", "job": "executive rollup and decisions"}
+  ],
+  "support": [
+    {"channel": "#hermes-agent", "id": "C0BBMKHSVAS", "job": "runtime health and activation gates"},
+    {"channel": "#repo-command", "id": "C0BA49F2BRP", "job": "repo, branch, deploy, domain, and infra truth"},
+    {"channel": "#mcp-integrations", "id": "C0BA2FHNP2N", "job": "MCP/plugin/tooling integrations"},
+    {"channel": "#knowledge-systems", "id": "C0B9W4SNR0B", "job": "memory, docs, registries, and knowledge systems"},
+    {"channel": "#design-intelligence", "id": "C0B9W4TE5K5", "job": "visual QA and design standards"}
+  ],
+  "social": [
+    {"channel": "#research-intel", "id": "C0BBMJYA17Y", "job": "source-backed research and claim checks"},
+    {"channel": "#content-film-prep", "id": "C0BCJ0MNLKS", "job": "recording briefs and B-roll prep"},
+    {"channel": "#social-command", "id": "C0BB6K4U4MT", "job": "social strategy and routing"},
+    {"channel": "#social-carousels", "id": "C0BCPG55PJB", "job": "carousel workroom and asset proof"},
+    {"channel": "#social-approvals", "id": "C0BB6K6TT1B", "job": "final human approval gate"}
+  ],
+  "brandRooms": [
+    {"brand": "Starlight", "channel": "#brand-starlight", "id": "C0BBUAMFCP3"},
+    {"brand": "FrankX", "channel": "#brand-frankx", "id": "C0BBP3AJ39T"},
+    {"brand": "GenCreator", "channel": "#brand-creator-systems", "id": "C0BBSFAJKDG"},
+    {"brand": "Arcanea", "channel": "#brand-arcanea", "id": "C0BBUAKTGSD"},
+    {"brand": "Agentic Income", "channel": "#brand-agentic-income", "id": "C0BBP3CF0CD"},
+    {"brand": "AI CoE", "channel": "#brand-ai-coe", "id": "C0BCLPDGHAL"},
+    {"brand": "Reality Architect", "channel": "#brand-reality-architect", "id": "C0BBQCXV7AA"},
+    {"brand": "Anime Legends", "channel": "#brand-anime-legends", "id": "C0BBUAQ1N57"},
+    {"brand": "Mind", "channel": "#brand-mind", "id": "C0BBN7ZS8TZ"},
+    {"brand": "Tooling / OSS", "channel": "#brand-tooling-oss", "id": "C0BCLPGJ3RN"}
+  ],
+  "approvalGates": {
+    "publishPublicly": ["#social-approvals", "relevant #brand-* channel"],
+    "productionDeploy": ["#repo-command", "brand/business owner"],
+    "mergeToMain": ["#repo-command"],
+    "customerOrPartnerMessage": ["relevant #brand-* channel", "account/business owner"],
+    "spendMoney": ["#ops", "business owner"],
+    "publicClaim": ["source proof", "relevant #brand-* channel"],
+    "privateToPublicAsset": ["guardian review", "relevant #brand-* channel"]
+  },
+  "nextProofTest": {
+    "channel": "#brand-arcanea",
+    "goal": "Run one weekly brand proof cadence test around Arcanea domain/project mapping and dirty-state split.",
+    "supportChannel": "#repo-command",
+    "summaryChannel": "#daily-report"
+  }
+}

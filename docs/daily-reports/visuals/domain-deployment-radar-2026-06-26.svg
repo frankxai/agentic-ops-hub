@@ -1,0 +1,141 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='2218' viewBox='0 0 1500 2218'>
+<rect width='100%' height='100%' fill='#f7f5ef'/>
+<text x='48' y='64' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='#161616'>Domain Deployment Radar - 2026-06-26</text>
+<text x='48' y='100' font-family='Arial, sans-serif' font-size='18' fill='#494949'>Read-only portfolio board: 0 green / 24 yellow / 3 red / 0 newly mapped</text>
+<circle cx='58' cy='135' r='9' fill='#1c8f4a'/><text x='74' y='141' font-family='Arial' font-size='15'>green</text><circle cx='148' cy='135' r='9' fill='#c99316'/><text x='164' y='141' font-family='Arial' font-size='15'>yellow</text><circle cx='252' cy='135' r='9' fill='#c93b32'/><text x='268' y='141' font-family='Arial' font-size='15'>red</text>
+<rect x='48' y='178' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='207' r='10' fill='#c99316'/>
+<text x='104' y='202' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>FrankX - frankx.ai</text>
+<text x='104' y='225' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS unknown | Vercel frankx-ai-vercel-website READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='213' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-frankx</text>
+<rect x='48' y='252' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='281' r='10' fill='#c99316'/>
+<text x='104' y='276' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>FrankX / GenCreator - gencreator.ai</text>
+<text x='104' y='299' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel gencreator-ai READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='287' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-creator-systems</text>
+<rect x='48' y='326' width='1404' height='58' rx='8' fill='#fff0ee' stroke='#ddd7ca'/>
+<circle cx='76' cy='355' r='10' fill='#c93b32'/>
+<text x='104' y='350' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea - arcanea.ai</text>
+<text x='104' y='373' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS unknown | Vercel arcanea-ai-app BLOCKED | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='361' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='400' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='429' r='10' fill='#c99316'/>
+<text x='104' y='424' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Starlight Intelligence Systems - starlightintelligence.org</text>
+<text x='104' y='447' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel site READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='435' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-starlight</text>
+<rect x='48' y='474' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='503' r='10' fill='#c99316'/>
+<text x='104' y='498' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea / AnimeLegends - animelegends.ai</text>
+<text x='104' y='521' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel anime-legends READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='509' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-anime-legends</text>
+<rect x='48' y='548' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='577' r='10' fill='#c99316'/>
+<text x='104' y='572' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea / Experience - vibeclubs.ai</text>
+<text x='104' y='595' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel vibeclubs-web READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='583' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='622' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='651' r='10' fill='#c99316'/>
+<text x='104' y='646' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - agenticincome.ai</text>
+<text x='104' y='669' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel agenticincome READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='657' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='696' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='725' r='10' fill='#c99316'/>
+<text x='104' y='720' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - disruptivepassiveincome.com</text>
+<text x='104' y='743' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS unknown | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='731' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='770' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='799' r='10' fill='#c99316'/>
+<text x='104' y='794' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Reality Architect - realityarchitect.ai</text>
+<text x='104' y='817' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel realityarchitect READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='805' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-reality-architect</text>
+<rect x='48' y='844' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='873' r='10' fill='#c99316'/>
+<text x='104' y='868' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>AI Architect Academy - aiarchitectacademy.com</text>
+<text x='104' y='891' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS unknown | Vercel aiarchitectacademy none | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='879' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-ai-coe</text>
+<rect x='48' y='918' width='1404' height='58' rx='8' fill='#fff0ee' stroke='#ddd7ca'/>
+<circle cx='76' cy='947' r='10' fill='#c93b32'/>
+<text x='104' y='942' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea - arcanea.io</text>
+<text x='104' y='965' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS unknown | Vercel arcanea-ai-app BLOCKED | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='953' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='992' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1021' r='10' fill='#c99316'/>
+<text x='104' y='1016' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Product / Other - akamoto.io</text>
+<text x='104' y='1039' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS unknown | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1027' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-starlight</text>
+<rect x='48' y='1066' width='1404' height='58' rx='8' fill='#fff0ee' stroke='#ddd7ca'/>
+<circle cx='76' cy='1095' r='10' fill='#c93b32'/>
+<text x='104' y='1090' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea - arcanea.dev</text>
+<text x='104' y='1113' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 404 | DNS Vercel DNS/surface | Vercel arcanea-ai-app BLOCKED | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1101' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='1140' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1169' r='10' fill='#c99316'/>
+<text x='104' y='1164' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea - arcanea.com</text>
+<text x='104' y='1187' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS unknown | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1175' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='1214' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1243' r='10' fill='#c99316'/>
+<text x='104' y='1238' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea - arcanean.org</text>
+<text x='104' y='1261' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 404 | DNS Vercel DNS/surface | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1249' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='1288' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1317' r='10' fill='#c99316'/>
+<text x='104' y='1312' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Arcanea - arcanealabs.com</text>
+<text x='104' y='1335' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 404 | DNS Vercel DNS/surface | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1323' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-arcanea</text>
+<rect x='48' y='1362' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1391' r='10' fill='#c99316'/>
+<text x='104' y='1386' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>FrankX - frankx.dev</text>
+<text x='104' y='1409' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS no public DNS record observed | Vercel frankx-ai-vercel-website READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1397' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-frankx</text>
+<rect x='48' y='1436' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1465' r='10' fill='#c99316'/>
+<text x='104' y='1460' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>FrankX - frankx.io</text>
+<text x='104' y='1483' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 404 | DNS unknown | Vercel frankx-ai-vercel-website READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1471' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-frankx</text>
+<rect x='48' y='1510' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1539' r='10' fill='#c99316'/>
+<text x='104' y='1534' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>FrankX - frank-riemer.com</text>
+<text x='104' y='1557' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS unknown | Vercel frankx-ai-vercel-website READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1545' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-frankx</text>
+<rect x='48' y='1584' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1613' r='10' fill='#c99316'/>
+<text x='104' y='1608' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Reality Architect / Arcanea - realitydiffusion.ai</text>
+<text x='104' y='1631' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS unknown | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1619' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-reality-architect</text>
+<rect x='48' y='1658' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1687' r='10' fill='#c99316'/>
+<text x='104' y='1682' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - agenticpassiveincome.com</text>
+<text x='104' y='1705' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 200 | DNS Vercel DNS/surface | Vercel agenticpassiveincome READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1693' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='1732' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1761' r='10' fill='#c99316'/>
+<text x='104' y='1756' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - agenticpassiveincome.ai</text>
+<text x='104' y='1779' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS no public DNS record observed | Vercel agenticpassiveincome READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1767' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='1806' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1835' r='10' fill='#c99316'/>
+<text x='104' y='1830' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - go.agenticincome.ai</text>
+<text x='104' y='1853' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP 404 | DNS unknown | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1841' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='1880' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1909' r='10' fill='#c99316'/>
+<text x='104' y='1904' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - disruptivepassiveincom.com</text>
+<text x='104' y='1927' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS no public DNS record observed | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1915' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='1954' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='1983' r='10' fill='#c99316'/>
+<text x='104' y='1978' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Revenue Network - disruptivepassiveincome.de</text>
+<text x='104' y='2001' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS unknown | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='1989' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-agentic-income</text>
+<rect x='48' y='2028' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='2057' r='10' fill='#c99316'/>
+<text x='104' y='2052' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>FrankX / Music - music-academy.ai</text>
+<text x='104' y='2075' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS no public DNS record observed | Vercel   | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='2063' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-frankx</text>
+<rect x='48' y='2102' width='1404' height='58' rx='8' fill='#fff8e7' stroke='#ddd7ca'/>
+<circle cx='76' cy='2131' r='10' fill='#c99316'/>
+<text x='104' y='2126' font-family='Arial, sans-serif' font-size='18' font-weight='700' fill='#1d1d1d'>Starlight Intelligence Systems - starlight-intelligence.ai</text>
+<text x='104' y='2149' font-family='Arial, sans-serif' font-size='14' fill='#505050'>HTTP  | DNS no public DNS record observed | Vercel site READY | changed: prior verdict=red, prior http=</text>
+<text x='1180' y='2137' font-family='Arial, sans-serif' font-size='14' fill='#505050'>#brand-starlight</text>
+</svg>

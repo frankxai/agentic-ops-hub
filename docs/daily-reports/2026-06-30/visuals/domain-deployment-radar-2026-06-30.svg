@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#101418"/>
+  <text x="60" y="76" fill="#f4f1ea" font-family="Arial, sans-serif" font-size="34" font-weight="700">Domain Deployment Radar - 2026-06-30</text>
+  <text x="60" y="112" fill="#b8c0c8" font-family="Arial, sans-serif" font-size="18">Read-only portfolio scan. Red 16 / Yellow 6 / Green 5.</text>
+  <g transform="translate(60 155)">
+    <rect x="0" y="0" width="330" height="120" rx="8" fill="#3b1117" stroke="#ef4444"/>
+    <text x="26" y="48" fill="#fecaca" font-family="Arial" font-size="18">Red surfaces</text>
+    <text x="26" y="92" fill="#fff" font-family="Arial" font-size="48" font-weight="700">16</text>
+    <rect x="370" y="0" width="330" height="120" rx="8" fill="#33260d" stroke="#f59e0b"/>
+    <text x="396" y="48" fill="#fde68a" font-family="Arial" font-size="18">Yellow surfaces</text>
+    <text x="396" y="92" fill="#fff" font-family="Arial" font-size="48" font-weight="700">6</text>
+    <rect x="740" y="0" width="330" height="120" rx="8" fill="#0f2f23" stroke="#22c55e"/>
+    <text x="766" y="48" fill="#bbf7d0" font-family="Arial" font-size="18">Green surfaces</text>
+    <text x="766" y="92" fill="#fff" font-family="Arial" font-size="48" font-weight="700">5</text>
+  </g>
+  <text x="60" y="330" fill="#f4f1ea" font-family="Arial" font-size="22" font-weight="700">Decision Bottlenecks</text>
+  <text x="80" y="370" fill="#fecaca" font-family="Arial" font-size="18">agenticpassiveincome.ai - root not healthy; www not healthy; missing: deploy target</text>
+  <text x="80" y="404" fill="#fecaca" font-family="Arial" font-size="18">aiarchitectacademy.com - root not healthy; www not healthy</text>
+  <text x="80" y="438" fill="#fecaca" font-family="Arial" font-size="18">arcanea.ai - latest Vercel deployment UNKNOWN; local dirty count 91</text>
+  <text x="80" y="472" fill="#fecaca" font-family="Arial" font-size="18">arcanea.com - root not healthy; missing: provider verification; missing: canonical repo; missing: deploy target</text>
+  <text x="80" y="506" fill="#fecaca" font-family="Arial" font-size="18">arcanea.dev - root not healthy; www not healthy; latest Vercel deployment UNKNOWN; local dirty count 91; missing...</text>
+  <text x="80" y="540" fill="#fecaca" font-family="Arial" font-size="18">arcanea.io - latest Vercel deployment UNKNOWN; local dirty count 91; missing: provider verification</text>
+  <text x="80" y="574" fill="#fecaca" font-family="Arial" font-size="18">arcanealabs.com - root not healthy; www not healthy; missing: provider verification; missing: deploy target</text>
+  <text x="80" y="608" fill="#fecaca" font-family="Arial" font-size="18">arcanean.org - root not healthy; www not healthy; missing: provider verification; missing: deploy target</text>
+  <text x="80" y="642" fill="#fecaca" font-family="Arial" font-size="18">disruptivepassiveincom.com - root not healthy; www not healthy; missing: provider verification; missing: canonic...</text>
+  <text x="60" y="680" fill="#8f9aa6" font-family="Arial" font-size="15">Proof: HTTP/DNS + Vercel CLI + local git. No mutations performed.</text>
+</svg>

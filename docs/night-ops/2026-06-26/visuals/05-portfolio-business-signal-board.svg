@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1350" viewBox="0 0 1800 1350">
+  <rect width="1800" height="1350" fill="#05060A"/>
+  <rect x="56" y="56" width="1688" height="1238" rx="34" fill="#0A0C14" stroke="#1A1F2E" stroke-width="2"/>
+  <text x="96" y="134" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Portfolio Business Signal Board</text>
+  <text x="98" y="184" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="25">Ten business lanes, one Slack cockpit, proof before public action.</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(96,242)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#6EA8FE" stroke-width="2"/>
+      <text x="24" y="44" fill="#6EA8FE" font-size="26" font-weight="800">Starlight</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">runtime + governance</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-starlight</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: gateway dry-run</text>
+    </g>
+    <g transform="translate(440,242)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#14B8A6" stroke-width="2"/>
+      <text x="24" y="44" fill="#14B8A6" font-size="26" font-weight="800">FrankX</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">authority + demand</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-frankx</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: approval choice</text>
+    </g>
+    <g transform="translate(784,242)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="24" y="44" fill="#72E6AC" font-size="26" font-weight="800">GenCreator</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">creator OS templates</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-creator-systems</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: client template</text>
+    </g>
+    <g transform="translate(1128,242)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#FF7A90" stroke-width="2"/>
+      <text x="24" y="44" fill="#FF7A90" font-size="26" font-weight="800">Arcanea</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">product + IP</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-arcanea</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: split red lane</text>
+    </g>
+    <g transform="translate(96,476)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="24" y="44" fill="#F6C86B" font-size="26" font-weight="800">AI CoE</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">enterprise governance</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-ai-coe</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: operating room deck</text>
+    </g>
+    <g transform="translate(440,476)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="24" y="44" fill="#72E6AC" font-size="26" font-weight="800">Income</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">offers + checkout</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-agentic-income</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: revenue blocker</text>
+    </g>
+    <g transform="translate(784,476)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#A78BFA" stroke-width="2"/>
+      <text x="24" y="44" fill="#A78BFA" font-size="26" font-weight="800">Reality</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">method + vault</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-reality-architect</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: public boundary</text>
+    </g>
+    <g transform="translate(1128,476)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#6EA8FE" stroke-width="2"/>
+      <text x="24" y="44" fill="#6EA8FE" font-size="26" font-weight="800">Mind / Research</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">sources + claim risk</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-mind</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: room decision</text>
+    </g>
+    <g transform="translate(96,710)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#14B8A6" stroke-width="2"/>
+      <text x="24" y="44" fill="#14B8A6" font-size="26" font-weight="800">Tooling / OSS</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">skills + templates</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-tooling-oss</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: org OS package</text>
+    </g>
+    <g transform="translate(440,710)">
+      <rect width="320" height="190" rx="20" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="24" y="44" fill="#F6C86B" font-size="26" font-weight="800">Anime Legends</text>
+      <text x="24" y="84" fill="#F1F3F9" font-size="20">IP + media canon</text>
+      <text x="24" y="118" fill="#8A90A8" font-size="18">#brand-anime-legends</text>
+      <text x="24" y="154" fill="#F6C86B" font-size="19">Next: asset provenance</text>
+    </g>
+    <g transform="translate(784,710)">
+      <rect width="664" height="190" rx="20" fill="#111827" stroke="#1A1F2E" stroke-width="2"/>
+      <text x="24" y="44" fill="#F1F3F9" font-size="26" font-weight="800">Shared Operating Rule</text>
+      <text x="24" y="88" fill="#F1F3F9" font-size="22">Every lane needs: owner, channel, next move, approval gate, proof.</text>
+      <text x="24" y="128" fill="#8A90A8" font-size="20">Agents prepare. Humans approve public, production, spend, customer, access, domain, and runtime moves.</text>
+    </g>
+    <g transform="translate(96,984)">
+      <rect width="1352" height="188" rx="24" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="30" y="56" fill="#72E6AC" font-size="31" font-weight="800">Tonight's Portfolio Focus</text>
+      <text x="30" y="104" fill="#F1F3F9" font-size="24">Close proof loops, choose approvals, scan second device, split Arcanea red lane, keep gateways stopped.</text>
+      <text x="30" y="148" fill="#8A90A8" font-size="22">The cockpit is working when each room produces fewer guesses and more receipts.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+  <defs>
+    <linearGradient id="edge" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6ea8ff"/>
+      <stop offset="0.48" stop-color="#5df2ad"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+  </defs>
+  <rect width="1800" height="1200" fill="#05070b"/>
+  <rect x="54" y="54" width="1692" height="1092" rx="34" fill="#0b0f19" stroke="#20283a" stroke-width="2"/>
+  <rect x="78" y="78" width="1644" height="1044" rx="28" fill="none" stroke="url(#edge)" stroke-width="1" opacity="0.44"/>
+
+  <text x="96" y="132" fill="#f4f7ff" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">Arcanea Weekly Proof</text>
+  <text x="98" y="180" fill="#9fb0d8" font-family="Inter, Arial, sans-serif" font-size="25">Brand-room cadence test: public signal, repo truth, domain risk, and the next decision.</text>
+  <text x="1512" y="134" fill="#ffd166" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">2026-06-26</text>
+
+  <rect x="96" y="236" width="510" height="286" rx="22" fill="#101522" stroke="#5df2ad" stroke-width="2"/>
+  <text x="126" y="292" fill="#74f7bd" font-family="Inter, Arial, sans-serif" font-size="33" font-weight="800">Domain Signal</text>
+  <text x="126" y="342" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">arcanea.ai = HTTP 200</text>
+  <text x="126" y="386" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">www.arcanea.ai = HTTP 200</text>
+  <text x="126" y="430" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">Title: Creative Intelligence Platform</text>
+  <text x="126" y="474" fill="#ffd166" font-family="Inter, Arial, sans-serif" font-size="22">Risk: nameserver mismatch remains</text>
+
+  <rect x="646" y="236" width="510" height="286" rx="22" fill="#101522" stroke="#6ea8ff" stroke-width="2"/>
+  <text x="676" y="292" fill="#6ea8ff" font-family="Inter, Arial, sans-serif" font-size="33" font-weight="800">Vercel Signal</text>
+  <text x="676" y="342" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">lobe.arcanea.ai has owner proof</text>
+  <text x="676" y="386" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">Project: arcanea-lobechat-labs</text>
+  <text x="676" y="430" fill="#ff8fa3" font-family="Inter, Arial, sans-serif" font-size="24">arcanea-ai-app latest = ERROR</text>
+  <text x="676" y="474" fill="#ffd166" font-family="Inter, Arial, sans-serif" font-size="22">Root custom domain owner not proven</text>
+
+  <rect x="1196" y="236" width="510" height="286" rx="22" fill="#101522" stroke="#ff8fa3" stroke-width="2"/>
+  <text x="1226" y="292" fill="#ff8fa3" font-family="Inter, Arial, sans-serif" font-size="33" font-weight="800">Repo Signal</text>
+  <text x="1226" y="342" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="24">Branch: codex/arcanea-homepage...</text>
+  <text x="1226" y="386" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">Dirty state: 14 top-level groups</text>
+  <text x="1226" y="430" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="24">Genesis + Creature Atlas detected</text>
+  <text x="1226" y="474" fill="#ffd166" font-family="Inter, Arial, sans-serif" font-size="22">Too broad for one quiet promotion</text>
+
+  <rect x="96" y="584" width="1610" height="186" rx="24" fill="#111827" stroke="#2d3650" stroke-width="2"/>
+  <text x="126" y="640" fill="#f4f7ff" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Slack Route</text>
+  <text x="126" y="688" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">#brand-arcanea: decision</text>
+  <text x="126" y="730" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">split / hold / ship-as-campaign</text>
+  <text x="560" y="688" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">#repo-command: technical proof</text>
+  <text x="560" y="730" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">domain, Vercel, dirty-state groups</text>
+  <text x="1060" y="688" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">#daily-report: executive signal</text>
+  <text x="1060" y="730" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="25">#execution-room: proof receipt</text>
+
+  <rect x="96" y="824" width="510" height="206" rx="22" fill="#101a17" stroke="#5df2ad" stroke-width="2"/>
+  <text x="126" y="878" fill="#74f7bd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800">Recommended</text>
+  <text x="126" y="928" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">SPLIT</text>
+  <text x="126" y="970" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">Genesis, Atlas, homepage, tooling</text>
+
+  <rect x="646" y="824" width="510" height="206" rx="22" fill="#151521" stroke="#ffd166" stroke-width="2"/>
+  <text x="676" y="878" fill="#ffd166" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800">Hold Gate</text>
+  <text x="676" y="928" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">FIX VERCEL</text>
+  <text x="676" y="970" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">Root directory + domain ownership</text>
+
+  <rect x="1196" y="824" width="510" height="206" rx="22" fill="#19121b" stroke="#ff8fa3" stroke-width="2"/>
+  <text x="1226" y="878" fill="#ff8fa3" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800">Public Gate</text>
+  <text x="1226" y="928" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">NO PUBLIC PUSH</text>
+  <text x="1226" y="970" fill="#a9b8dd" font-family="Inter, Arial, sans-serif" font-size="22">until one green proof link exists</text>
+
+  <rect x="96" y="1070" width="1610" height="44" rx="12" fill="#15111d" stroke="#30384e" stroke-width="1"/>
+  <text x="126" y="1100" fill="#c8d4f6" font-family="Inter, Arial, sans-serif" font-size="20">No deploy, merge, gateway start, schedule, spend, or external message was performed. This is a guarded proof packet.</text>
+</svg>

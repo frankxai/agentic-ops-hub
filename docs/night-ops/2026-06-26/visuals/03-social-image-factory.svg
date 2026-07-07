@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#05060A"/>
+  <rect x="56" y="56" width="1488" height="1088" rx="32" fill="#0A0C14" stroke="#1A1F2E" stroke-width="2"/>
+  <text x="96" y="136" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Social + Image Factory</text>
+  <text x="98" y="184" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="25">The premium route from signal to asset to approval, without public automation risk.</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(100,266)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#6EA8FE" stroke-width="2"/>
+      <text x="26" y="52" fill="#6EA8FE" font-size="28" font-weight="800">1. Signal</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">AI lab update</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">repo/domain change</text>
+    </g>
+    <path d="M360 342 L455 342" stroke="#1A1F2E" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(472,266)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#14B8A6" stroke-width="2"/>
+      <text x="26" y="52" fill="#14B8A6" font-size="28" font-weight="800">2. Research</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">official sources</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">claim-risk label</text>
+    </g>
+    <path d="M732 342 L827 342" stroke="#1A1F2E" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(844,266)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="26" y="52" fill="#F6C86B" font-size="28" font-weight="800">3. Brief</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">hook + beats</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">audience + CTA</text>
+    </g>
+    <path d="M1104 342 L1199 342" stroke="#1A1F2E" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(1216,266)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="26" y="52" fill="#72E6AC" font-size="28" font-weight="800">4. Asset</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">image cover</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">deterministic text</text>
+    </g>
+
+    <g transform="translate(100,548)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="26" y="52" fill="#72E6AC" font-size="28" font-weight="800">5. QA</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">30 point gate</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">visual critique</text>
+    </g>
+    <path d="M360 624 L455 624" stroke="#1A1F2E" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(472,548)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="26" y="52" fill="#F6C86B" font-size="28" font-weight="800">6. Workroom</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">#social-carousels</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">proof packet</text>
+    </g>
+    <path d="M732 624 L827 624" stroke="#1A1F2E" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(844,548)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#FF7A90" stroke-width="2"/>
+      <text x="26" y="52" fill="#FF7A90" font-size="28" font-weight="800">7. Approval</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">#social-approvals</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">human decision</text>
+    </g>
+    <path d="M1104 624 L1199 624" stroke="#1A1F2E" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(1216,548)">
+      <rect width="250" height="150" rx="20" fill="#101521" stroke="#6EA8FE" stroke-width="2"/>
+      <text x="26" y="52" fill="#6EA8FE" font-size="28" font-weight="800">8. Learn</text>
+      <text x="26" y="94" fill="#F1F3F9" font-size="21">performance</text>
+      <text x="26" y="124" fill="#F1F3F9" font-size="21">style memory</text>
+    </g>
+  </g>
+
+  <g transform="translate(96,808)">
+    <rect width="676" height="200" rx="22" fill="#111827" stroke="#F6C86B" stroke-width="2"/>
+    <text x="30" y="56" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Image Generation Rule</text>
+    <text x="30" y="104" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">Use generated images for covers, scenes, mood, and metaphors.</text>
+    <text x="30" y="148" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">Use HTML, SVG, Figma, Canva, or slides for exact text and diagrams.</text>
+  </g>
+
+  <g transform="translate(826,808)">
+    <rect width="676" height="200" rx="22" fill="#111827" stroke="#72E6AC" stroke-width="2"/>
+    <text x="30" y="56" fill="#72E6AC" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Tonight's Asset</text>
+    <text x="30" y="104" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="23">Founder Operating Room is ready for workroom proof.</text>
+    <text x="30" y="150" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="23">Do not add to approvals until existing approval backlog moves.</text>
+  </g>
+</svg>

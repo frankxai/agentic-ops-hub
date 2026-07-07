@@ -1,0 +1,100 @@
+{
+  "schema": "starlight.agent_loop_contract.v1",
+  "updated": "2026-06-23",
+  "owner": "agentic-ops-hub",
+  "purpose": "A portable execution contract for Codex, Claude Code, Cursor, Copilot, Cline, Grok, Antigravity, OpenHands, Aider-style loops, and Starlight queues.",
+  "defaultLoop": [
+    {
+      "id": "orient",
+      "evidence": ["nearest AGENTS.md", "tool shim when relevant", "git status", "minimal relevant source surface"]
+    },
+    {
+      "id": "bound",
+      "evidence": ["success criteria", "non-goals", "risk gates", "validation plan"]
+    },
+    {
+      "id": "discover",
+      "evidence": ["existing patterns", "current docs", "source citations for unstable facts"]
+    },
+    {
+      "id": "execute",
+      "evidence": ["scoped file changes", "preserved dirty work", "single synthesis owner"]
+    },
+    {
+      "id": "verify",
+      "evidence": ["tests, type checks, lint, build, smoke, visual QA, deployment readback, or doc consistency"]
+    },
+    {
+      "id": "red_team",
+      "evidence": ["false-claim scan", "privacy and secret scan", "unsafe-action scan", "generated-file drift scan", "missing-test scan"]
+    },
+    {
+      "id": "handoff",
+      "evidence": ["changed files", "commands run", "residual risks", "next action"]
+    }
+  ],
+  "routingRules": {
+    "singleAgentDefault": "Use one coding agent for scoped work where the context fits and validation is local.",
+    "subagentWhen": [
+      "research would consume large context but can return a compact answer",
+      "independent verification is useful",
+      "tool access is specialized",
+      "the work is separable and low collision"
+    ],
+    "queueWhen": [
+      "work crosses repos",
+      "work is long running",
+      "multiple worker lanes need bounded artifacts",
+      "human synthesis is required after independent findings"
+    ],
+    "doNotUse": [
+      "persona-only agents with no artifact",
+      "parallel edits to the same working tree",
+      "unbounded agents that can publish, spend, delete, invite, rotate secrets, or promote production"
+    ]
+  },
+  "approvalGates": [
+    "spend money",
+    "send external messages",
+    "publish publicly",
+    "change access",
+    "delete data",
+    "rotate secrets",
+    "promote production",
+    "take irreversible external actions"
+  ],
+  "sourceInfluences": [
+    {
+      "name": "AGENTS.md",
+      "lesson": "Use one predictable project instruction file as portable base."
+    },
+    {
+      "name": "OpenAI Codex AGENTS.md",
+      "lesson": "Layer global and project instructions with local precedence."
+    },
+    {
+      "name": "Claude Code hooks and skills",
+      "lesson": "Use skills for reusable procedures and hooks for deterministic lifecycle gates."
+    },
+    {
+      "name": "mini-swe-agent",
+      "lesson": "Prefer simple, inspectable loops and independent command execution over ornate scaffolding."
+    },
+    {
+      "name": "SWE-agent",
+      "lesson": "Treat the agent-computer interface and feedback format as core product surface."
+    },
+    {
+      "name": "OpenHands",
+      "lesson": "Use remote or sandbox workspaces for always-on or multi-agent work."
+    },
+    {
+      "name": "Aider",
+      "lesson": "Maintain repo maps, git visibility, and automatic lint/test feedback."
+    },
+    {
+      "name": "GitHub Copilot customizations",
+      "lesson": "Project rules, path-scoped instructions, hooks, workflows, and skills should be machine-discoverable."
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+name: Agentic Organization OS
+version: 0.1.0
+operating_loop:
+  - Signal
+  - Decision
+  - Work
+  - Proof
+  - Distribution
+  - Learning
+runtime_mode:
+  default: guarded_24_7
+  autonomy_policy: approval_gated
+  agents_may:
+    - research
+    - triage
+    - draft
+    - test
+    - summarize
+    - prepare_branches
+    - prepare_pull_requests
+    - queue_work
+  agents_may_not_without_approval:
+    - publish_publicly
+    - deploy_to_production
+    - merge_to_main
+    - spend_money
+    - send_customer_or_partner_messages
+    - post_to_social_channels
+    - delete_data
+    - change_credentials
+    - produce_medical_or_legal_advice
+    - publish_unverified_research_claims
+  worker_tiers:
+    human_approval:
+      examples:
+        - publish
+        - merge
+        - production_deploy
+        - customer_send
+        - spend
+      default: required
+    lightweight_always_on:
+      examples:
+        - daily_digest
+        - health_heartbeat
+        - slack_summary
+      default: allowed_after_setup
+    queued_workers:
+      examples:
+        - kanban_task
+        - repo_sweep
+        - research_scan
+        - support_draft
+      default: approval_gated
+    heavy_specialists:
+      examples:
+        - claude_code
+        - codex
+        - antigravity
+        - grok
+        - long_builds
+        - visual_qa
+      default: invoked_not_daemonized
+  execution_doctrine:
+    default: hybrid_orchestrator_first
+    rule: "Use one strong brand/function orchestrator first. Escalate to swarm only when the task is cross-domain, parallelizable, uncertain, blocked, or verification-heavy."
+    public_or_production_requires:
+      - human_approval
+      - proof_artifact
+      - rollback_or_stop_path
+      - repo_or_slack_record
+layers:
+  slack_cockpit:
+    purpose: "Human command surface for intake, approvals, updates, reports, and proof."
+    minimum_channels:
+      - hq
+      - daily
+      - work-queue
+      - approvals
+      - content
+      - sales
+      - build
+      - support
+      - knowledge
+    prefixes:
+      hq: "executive command and allocation"
+      ops: "shared services"
+      brief: "recurring reports"
+      brand: "brand or business unit"
+      camp: "temporary campaign or launch"
+      prod: "product execution"
+      repo: "load-bearing repositories only"
+      client: "client-specific delivery"
+      social: "social execution and approvals"
+  agent_runtime:
+    default_profiles:
+      - orchestrator
+      - ops
+      - research
+      - sensitive-research
+      - content
+      - growth
+      - build
+      - guardian
+      - knowledge
+    hermes_enabled: true
+    kanban_enabled: true
+    gateway_optional: true
+  device_runtime:
+    primary_command_workstation:
+      purpose: "Command, approvals, creative direction, frontend/product review, executive decisions."
+      example_device: "Yoga Book 9i"
+      recommended_profiles:
+        - orchestrator
+        - brand
+        - creative
+        - content
+        - frontend
+      max_heavy_sessions_default: 4
+      owns:
+        - slack_command
+        - frontend_review
+        - creative_review
+        - visual_qa
+        - content_film_prep
+        - preview_verification
+    satellite_batch_worker:
+      purpose: "Backend, repo hygiene, QA, research, support drafts, and batch jobs."
+      example_device: "Second Lenovo Yoga"
+      recommended_profiles:
+        - tooling
+        - research
+        - backend
+        - support
+        - revenue
+      max_heavy_sessions_default: 2
+      owns:
+        - repo_sweeps
+        - tests_and_builds
+        - backend_jobs
+        - github_hygiene
+        - research_scans
+        - customer_support_drafts
+    mobile_cockpit:
+      purpose: "Approvals, triage, and quick executive decisions."
+      example_device: "Phone or tablet"
+      recommended_profiles: []
+    health_zones:
+      green: "May spawn approved workers within concurrency limits."
+      yellow: "Finish current work, queue new work, avoid new heavy sessions."
+      red: "No new workers; stop unsafe runtime, run safe cleanup, report status."
+    sync_policy:
+      code: Git
+      allowed_sync:
+        - vaults
+        - inbox
+        - scratch
+        - notes
+        - handoffs
+      forbidden_sync:
+        - .git
+        - tokens
+        - .env
+        - ssh_keys
+        - logs
+        - sessions
+        - runtime_state
+        - mcp_credentials
+        - caches
+        - node_modules
+        - .venv
+        - .next
+        - .turbo
+        - lock_files
+        - pid_files
+        - ports
+  source_of_truth:
+    code: GitHub
+    execution: "Linear or repo-native sprint files"
+    strategy: "Docs, Notion, or Drive"
+    customer: CRM
+  automation:
+    codex:
+      - daily-executive-digest
+      - approval-monitor
+      - repo-risk-sweep
+      - weekly-review
+      - content-prep-builder
+      - onboarding-drift-check
+    n8n:
+      - intake-webhooks
+      - approval-notifications
+      - crm-sync
+    temporal:
+      - durable-publication-pipeline
+      - long-running-delivery-workflows
+approval_gates:
+  external_publish: human_approval
+  spend_money: business_owner
+  production_deploy: build_owner_and_business_owner
+  customer_partner_message: account_owner
+  private_data_to_public_asset: guardian
+  social_post: social_approvals_channel
+  main_branch_merge: repo_command
+  public_claim: source_backed_research
+  health_sensitive_output: guardian_and_subject_matter_review
+  private_family_or_memory_data: explicit_owner_approval
+activation_sequence:
+  - map_devices_and_roles
+  - run_machine_health_scans
+  - confirm_sync_exclusions
+  - create_slack_anchor_posts
+  - create_profiles_and_keep_gateways_stopped
+  - configure_first_orchestrator_gateway
+  - run_one_read_only_test_card
+  - verify_proof_and_no_public_action
+  - add_satellite_worker
+  - activate_specialist_profiles_one_at_a_time
+  - activate_sensitive_research_only_after_boundary_tests
+templates:
+  daily_brief:
+    fields:
+      - top_outcomes
+      - signals
+      - blockers
+      - approvals_needed
+      - proof
+  weekly_review:
+    fields:
+      - shipped
+      - business_movement
+      - stalled
+      - decisions
+      - next_top_3
+client_variants:
+  founder:
+    profile_count: 5
+    key_channels:
+      - hq
+      - daily
+      - content
+      - sales
+      - build
+      - approvals
+  smb_agency:
+    profile_count: 7
+    key_channels:
+      - hq
+      - ops-delivery
+      - client-*
+      - approvals
+      - sales
+      - support
+  creator_media:
+    profile_count: 6
+    key_channels:
+      - brand
+      - content-command
+      - film-prep
+      - social-approvals
+      - sponsorships
+      - analytics
+  university_lab:
+    profile_count: 7
+    key_channels:
+      - lab-hq
+      - research-intel
+      - paper-pipeline
+      - grant-ops
+      - student-agents
+      - ethics-review
+  enterprise:
+    profile_count: 6
+    key_channels:
+      - ai-coe-hq
+      - use-case-intake
+      - risk-review
+      - delivery
+      - platform
+      - executive-brief

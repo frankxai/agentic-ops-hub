@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Positive Agentic OS Carousel</title>
+  <style>
+    :root {
+      --ink: #05060a;
+      --ivory: #f4f1e8;
+      --muted: #b7b3aa;
+      --blue: #6ea8fe;
+      --gold: #e4c57a;
+      --emerald: #79d7a6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #05060a;
+      font-family: "Inter", "Geist", "Instrument Sans", "Segoe UI", Arial, sans-serif;
+      color: var(--ivory);
+    }
+
+    .deck {
+      display: grid;
+      gap: 32px;
+      padding: 32px;
+    }
+
+    .slide {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: var(--ink);
+      isolation: isolate;
+    }
+
+    .slide img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -3;
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(110, 168, 254, 0.16), transparent 30%),
+        linear-gradient(180deg, rgba(5, 6, 10, 0.62) 0%, rgba(5, 6, 10, 0.22) 48%, rgba(5, 6, 10, 0.68) 100%),
+        linear-gradient(90deg, rgba(5, 6, 10, 0.78) 0%, rgba(5, 6, 10, 0.22) 54%, rgba(5, 6, 10, 0.38) 100%);
+      z-index: -2;
+    }
+
+    .slide::after {
+      content: "";
+      position: absolute;
+      inset: 34px;
+      border: 1px solid rgba(244, 241, 232, 0.22);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .content {
+      position: absolute;
+      inset: 78px 82px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: rgba(244, 241, 232, 0.78);
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold), var(--blue));
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 92px;
+      line-height: 0.96;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .body {
+      max-width: 740px;
+      color: rgba(244, 241, 232, 0.86);
+      font-size: 35px;
+      line-height: 1.18;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-wrap: pretty;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 40px;
+      color: rgba(244, 241, 232, 0.68);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .mark {
+      color: var(--ivory);
+    }
+
+    .count {
+      color: var(--gold);
+    }
+
+    .slide-2::before {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(167, 139, 250, 0.14), transparent 32%),
+        linear-gradient(180deg, rgba(5, 6, 10, 0.58) 0%, rgba(5, 6, 10, 0.22) 50%, rgba(5, 6, 10, 0.7) 100%),
+        linear-gradient(90deg, rgba(5, 6, 10, 0.78) 0%, rgba(5, 6, 10, 0.24) 58%, rgba(5, 6, 10, 0.4) 100%);
+    }
+
+    .slide-3::before {
+      background:
+        radial-gradient(circle at 70% 20%, rgba(121, 215, 166, 0.12), transparent 28%),
+        linear-gradient(180deg, rgba(5, 6, 10, 0.54) 0%, rgba(5, 6, 10, 0.2) 48%, rgba(5, 6, 10, 0.68) 100%),
+        linear-gradient(90deg, rgba(5, 6, 10, 0.82) 0%, rgba(5, 6, 10, 0.30) 60%, rgba(5, 6, 10, 0.38) 100%);
+    }
+
+    .slide-4::before {
+      background:
+        radial-gradient(circle at 46% 50%, rgba(228, 197, 122, 0.16), transparent 30%),
+        linear-gradient(180deg, rgba(5, 6, 10, 0.52) 0%, rgba(5, 6, 10, 0.18) 50%, rgba(5, 6, 10, 0.72) 100%),
+        linear-gradient(90deg, rgba(5, 6, 10, 0.64) 0%, rgba(5, 6, 10, 0.18) 52%, rgba(5, 6, 10, 0.58) 100%);
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+    <section class="slide slide-1" data-export="01-final-positive-future.png">
+      <img src="./01-future-we-get-to-build.png" alt="" />
+      <div class="content">
+        <div class="eyebrow">FrankX / Agentic OS</div>
+        <div>
+          <h1>The future we get to build</h1>
+          <p class="body">When AI agents carry the busywork, founders can give more attention to taste, trust, and the work that deserves us.</p>
+        </div>
+        <div class="footer"><span class="mark">frankx.ai</span><span class="count">01 / 04</span></div>
+      </div>
+    </section>
+
+    <section class="slide slide-2" data-export="02-final-meaningful-teammates.png">
+      <img src="./02-agents-as-meaningful-teammates.png" alt="" />
+      <div class="content">
+        <div class="eyebrow">Human-led systems</div>
+        <div>
+          <h1>Agents become teammates when work has meaning</h1>
+          <p class="body">Give every agent a role, a channel, a proof trail, and a clear moment where the human decides.</p>
+        </div>
+        <div class="footer"><span class="mark">FrankX / Starlight</span><span class="count">02 / 04</span></div>
+      </div>
+    </section>
+
+    <section class="slide slide-3" data-export="03-final-proof-creates-trust.png">
+      <img src="./03-proof-creates-trust.png" alt="" />
+      <div class="content">
+        <div class="eyebrow">Trust architecture</div>
+        <div>
+          <h1>Proof is how intelligence becomes trust</h1>
+          <p class="body">Research is cited. Code is checked. Designs are inspected. Approvals stay human where the stakes are real.</p>
+        </div>
+        <div class="footer"><span class="mark">Agentic operations</span><span class="count">03 / 04</span></div>
+      </div>
+    </section>
+
+    <section class="slide slide-4" data-export="04-final-company-that-learns.png">
+      <img src="./04-company-that-learns.png" alt="" />
+      <div class="content">
+        <div class="eyebrow">Founder leverage</div>
+        <div>
+          <h1>Build a company that learns every day</h1>
+          <p class="body">Your repos, websites, Slack rooms, content, and customers should feed one living system of momentum.</p>
+        </div>
+        <div class="footer"><span class="mark">Portfolio OS</span><span class="count">04 / 04</span></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

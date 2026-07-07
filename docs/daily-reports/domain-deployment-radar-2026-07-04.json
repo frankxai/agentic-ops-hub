@@ -1,0 +1,3078 @@
+{
+  "task": "Daily domain and deployment radar for FrankX / Arcanea / Starlight portfolio",
+  "date": "2026-07-04",
+  "generatedAt": "2026-07-04T06:42:34.3015044Z",
+  "mode": "read-only",
+  "lastAutomationRun": "2026-07-03T06:36:48.933Z",
+  "priorArtifactCompared": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/daily-reports/domain-deployment-radar-2026-07-02.json",
+  "sources": [
+    "C:\\Users\\frank\\starlight\\ecosystem.json",
+    "C:\\Users\\frank\\starlight\\repos\\starlight-agent-config\\core\\estate\\repo-estate.control.json",
+    "C:\\Users\\frank\\starlight\\repos\\frankx-domain-command\\registry\\domains.json",
+    "C:\\Users\\frank\\starlight\\repos\\frankx-domain-command\\registry\\repos.json",
+    "C:\\Users\\frank\\starlight\\repos\\agentic-ops-hub\\docs\\daily-reports\\domain-deployment-radar-2026-07-02.json",
+    "Slack/Vercel/GitHub connectors where available",
+    "HTTPS root/www checks",
+    "Resolve-DnsName DNS checks",
+    "local git branch/status"
+  ],
+  "summary": {
+    "green": 1,
+    "yellow": 10,
+    "red": 16,
+    "changed": 17,
+    "newlyMapped": 4,
+    "total": 27
+  },
+  "domains": [
+    {
+      "brand": "FrankX",
+      "domain": "frankx.ai",
+      "portfolioRole": "Flagship authority, content, downloads, products, advisory, July launch funnel",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Former AI architect at Oracle. Creator of 12,000+ songs with Suno. Practical AI systems, music experiments, and evidence-led performance notes for creators who ship with clarity.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "FrankX - AI Architect & Creator Systems",
+        "url": "https://frankx.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Former AI architect at Oracle. Creator of 12,000+ songs with Suno. Practical AI systems, music experiments, and evidence-led performance notes for creators who ship with clarity.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "FrankX - AI Architect & Creator Systems",
+        "url": "https://www.frankx.ai"
+      },
+      "dnsProvider": "ns1102.ui-dns.biz, ns1034.ui-dns.de, ns1106.ui-dns.org, ns1050.ui-dns.com",
+      "dnsRecords": [
+        {
+          "name": "frankx.ai",
+          "type": "A",
+          "ttl": 3600,
+          "data": "216.150.1.1"
+        },
+        {
+          "name": "frankx.ai",
+          "type": "AAAA",
+          "ttl": 519,
+          "data": "frankx.ai"
+        },
+        {
+          "name": "frankx.ai",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "frankx.ai"
+        },
+        {
+          "name": "frankx.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1102.ui-dns.biz"
+        },
+        {
+          "name": "frankx.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1034.ui-dns.de"
+        },
+        {
+          "name": "frankx.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1106.ui-dns.org"
+        },
+        {
+          "name": "frankx.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1050.ui-dns.com"
+        }
+      ],
+      "titleSignal": "FrankX - AI Architect & Creator Systems",
+      "metadataSignal": "Former AI architect at Oracle. Creator of 12,000+ songs with Suno. Practical AI systems, music experiments, and evidence-led performance notes for creators who ship with clarity.",
+      "registryStatus": "live-production",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "frankx.ai-vercel-website",
+      "githubRepo": "frankxai/frankx.ai-vercel-website",
+      "localRepo": {
+        "aheadBehind": "## agent/codex/rights-foundation...origin/agent/codex/rights-foundation",
+        "dirtyCount": 53,
+        "branch": "agent/codex/rights-foundation",
+        "isGit": true,
+        "head": "67f6c3b2",
+        "exists": true,
+        "remote": "https://github.com/frankxai/frankx.ai-vercel-website.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "New production deployment: Fable flagship book.",
+        "inspector": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm",
+        "latestSha": "5a574693968cf6f3287a13a200a93db30bd52c08",
+        "latestUrl": "https://frankx-ai-vercel-website-gt8wjtob5-starlight-intelligence.vercel.app",
+        "project": "frankx-ai-vercel-website",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "frankx",
+      "channel": "#brand-frankx",
+      "channelId": "C0BBP3AJ39T",
+      "changedSincePriorRun": "title changed; dirty 22->53; deployment sha changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "content brief; preview URL when web-facing; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/frankx.ai-vercel-website",
+        "root": "https://frankx.ai",
+        "www": "https://www.frankx.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website",
+        "vercel": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm"
+      },
+      "recommendedNextAction": "P0: repair FrankX to GenCreator bridge across nav, footer, content CTAs, and July launch paths"
+    },
+    {
+      "brand": "FrankX / GenCreator",
+      "domain": "gencreator.ai",
+      "portfolioRole": "Creator OS, cohort, and product funnel",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Creator intelligence OS for vault memory, outlier radar, campaign drafts, approval gates, and agent-readable tools.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "GenCreator — The Operating System for AI-Native Creators",
+        "url": "https://gencreator.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Creator intelligence OS for vault memory, outlier radar, campaign drafts, approval gates, and agent-readable tools.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "GenCreator — The Operating System for AI-Native Creators",
+        "url": "https://www.gencreator.ai"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "gencreator.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.65"
+        },
+        {
+          "name": "gencreator.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.1"
+        },
+        {
+          "name": "gencreator.ai",
+          "type": "AAAA",
+          "ttl": 599,
+          "data": "gencreator.ai"
+        },
+        {
+          "name": "gencreator.ai",
+          "type": "CNAME",
+          "ttl": 482,
+          "data": "gencreator.ai"
+        },
+        {
+          "name": "gencreator.ai",
+          "type": "NS",
+          "ttl": 86282,
+          "data": "ns1.vercel-dns.com"
+        },
+        {
+          "name": "gencreator.ai",
+          "type": "NS",
+          "ttl": 86282,
+          "data": "ns2.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "GenCreator — The Operating System for AI-Native Creators",
+      "metadataSignal": "Creator intelligence OS for vault memory, outlier radar, campaign drafts, approval gates, and agent-readable tools.",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "gencreator.ai",
+      "githubRepo": "frankxai/gencreator.ai",
+      "localRepo": {
+        "aheadBehind": "## codex/main-preserve-20260630...origin/codex/main-preserve-20260630",
+        "dirtyCount": 1,
+        "branch": "codex/main-preserve-20260630",
+        "isGit": true,
+        "head": "dae2890",
+        "exists": true,
+        "remote": "https://github.com/frankxai/gencreator.ai.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\gencreator.ai"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "Unchanged latest production deployment.",
+        "inspector": "https://vercel.com/starlight-intelligence/gencreator-ai/Dyb6QykSogDZo2sSLSRAAzn4KVgg",
+        "latestSha": "dae2890c18b74c5b42b164c7818e7268a245ac15",
+        "latestUrl": "https://gencreator-2f67dhubl-starlight-intelligence.vercel.app",
+        "project": "gencreator-ai",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "gencreator",
+      "channel": "#brand-creator-systems",
+      "channelId": "C0BBSFAJKDG",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "template artifact; client/community packaging note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/gencreator.ai",
+        "root": "https://gencreator.ai",
+        "www": "https://www.gencreator.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\gencreator.ai",
+        "vercel": "https://vercel.com/starlight-intelligence/gencreator-ai/Dyb6QykSogDZo2sSLSRAAzn4KVgg"
+      },
+      "recommendedNextAction": "Add clear offer, waitlist, FrankX referral continuity, and checkout/product access readiness checks"
+    },
+    {
+      "brand": "Arcanea",
+      "domain": "arcanea.ai",
+      "portfolioRole": "Main creative intelligence platform",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "A creative multiverse: chat with AI, build fantasy worlds, share what you make, and turn imagination into products. 190K+ words of creative philosophy. Free to start.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Arcanea™ — Creative Intelligence Platform",
+        "url": "https://arcanea.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "A creative multiverse: chat with AI, build fantasy worlds, share what you make, and turn imagination into products. 190K+ words of creative philosophy. Free to start.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Arcanea™ — Creative Intelligence Platform",
+        "url": "https://www.arcanea.ai"
+      },
+      "dnsProvider": "ns1124.ui-dns.org, ns1024.ui-dns.com, ns1048.ui-dns.biz, ns1033.ui-dns.de",
+      "dnsRecords": [
+        {
+          "name": "arcanea.ai",
+          "type": "A",
+          "ttl": 3533,
+          "data": "216.150.1.1"
+        },
+        {
+          "name": "arcanea.ai",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "arcanea.ai"
+        },
+        {
+          "name": "arcanea.ai",
+          "type": "CNAME",
+          "ttl": 481,
+          "data": "arcanea.ai"
+        },
+        {
+          "name": "arcanea.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1124.ui-dns.org"
+        },
+        {
+          "name": "arcanea.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1024.ui-dns.com"
+        },
+        {
+          "name": "arcanea.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1048.ui-dns.biz"
+        },
+        {
+          "name": "arcanea.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1033.ui-dns.de"
+        }
+      ],
+      "titleSignal": "Arcanea™ — Creative Intelligence Platform",
+      "metadataSignal": "A creative multiverse: chat with AI, build fantasy worlds, share what you make, and turn imagination into products. 190K+ words of creative philosophy. Free to start.",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "arcanea-ai-app",
+      "githubRepo": "frankxai/arcanea-ai-app",
+      "localRepo": {
+        "aheadBehind": "## codex/arcanea-homepage-world-engine...origin/codex/arcanea-homepage-world-engine",
+        "dirtyCount": 98,
+        "branch": "codex/arcanea-homepage-world-engine",
+        "isGit": true,
+        "head": "eaf954c3",
+        "exists": true,
+        "remote": "https://github.com/frankxai/arcanea-ai-app.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app"
+      },
+      "vercel": {
+        "latestState": "BLOCKED",
+        "observed": "connector 2026-07-04",
+        "note": "Newest event is blocked backup snapshot; production READY on main at 7b4bf066.",
+        "inspector": "https://vercel.com/starlight-intelligence/arcanea-ai-app/4u3Bc4LeX1WrtqFACEtmwgCewuxc",
+        "latestSha": "c0611eb1d1ca4073828df41343ea246088d8f58e",
+        "latestUrl": "https://arcanea-ai-2tauobhj8-starlight-intelligence.vercel.app",
+        "project": "arcanea-ai-app",
+        "latestTarget": null,
+        "latestBranch": "backup/claude-snapshots"
+      },
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/arcanea-ai-app",
+        "root": "https://arcanea.ai",
+        "www": "https://www.arcanea.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app",
+        "vercel": "https://vercel.com/starlight-intelligence/arcanea-ai-app/4u3Bc4LeX1WrtqFACEtmwgCewuxc"
+      },
+      "recommendedNextAction": "Verify canonical www/non-www, then run premium first-viewport, copy, motion, and creator onboarding pass"
+    },
+    {
+      "brand": "Starlight Intelligence Systems",
+      "domain": "starlightintelligence.org",
+      "portfolioRole": "Protocol, plugins, open standards, downloads, and trust layer",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Operational memory, governance, traces, evals, logs, and operator control for AI agent fleets. Built on SIP. Local-first, forkable, and proof-oriented.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Starlight Intelligence — Persistent context for AI agents · Built on SIP",
+        "url": "https://starlightintelligence.org"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Operational memory, governance, traces, evals, logs, and operator control for AI agent fleets. Built on SIP. Local-first, forkable, and proof-oriented.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Starlight Intelligence — Persistent context for AI agents · Built on SIP",
+        "url": "https://www.starlightintelligence.org"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "starlightintelligence.org",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.1.129"
+        },
+        {
+          "name": "starlightintelligence.org",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.193"
+        },
+        {
+          "name": "starlightintelligence.org",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "starlightintelligence.org"
+        },
+        {
+          "name": "starlightintelligence.org",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "starlightintelligence.org"
+        },
+        {
+          "name": "starlightintelligence.org",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1.vercel-dns.com"
+        },
+        {
+          "name": "starlightintelligence.org",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns2.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "Starlight Intelligence — Persistent context for AI agents · Built on SIP",
+      "metadataSignal": "Operational memory, governance, traces, evals, logs, and operator control for AI agent fleets. Built on SIP. Local-first, forkable, and proof-oriented.",
+      "registryStatus": "live-production",
+      "registryConfidence": "doc-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "Starlight-Intelligence-System",
+      "githubRepo": "frankxai/Starlight-Intelligence-System",
+      "localRepo": {
+        "aheadBehind": "## codex/main-preserve-20260630...origin/codex/main-preserve-20260630",
+        "dirtyCount": 67,
+        "branch": "codex/main-preserve-20260630",
+        "isGit": true,
+        "head": "88073a2",
+        "exists": true,
+        "remote": "https://github.com/frankxai/Starlight-Intelligence-System.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\Starlight-Intelligence-System"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "Newest preview READY; production still prior phase1/foundations deployment.",
+        "inspector": "https://vercel.com/starlight-intelligence/site/BC25vi2AwG77dNhYitDAnQJ8xVbv",
+        "latestSha": "28e602269dba85f35d7cf949774a50527b3df972",
+        "latestUrl": "https://site-9kx9iw6r7-starlight-intelligence.vercel.app",
+        "project": "site",
+        "latestTarget": null,
+        "latestBranch": "claude/starlight-sis-docs-eclr0l"
+      },
+      "ownerProfile": "starlight",
+      "channel": "#brand-starlight",
+      "channelId": "C0BBUAMFCP3",
+      "changedSincePriorRun": "deployment sha changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "kanban card; repo-command update; health/registry artifact",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/Starlight-Intelligence-System",
+        "root": "https://starlightintelligence.org",
+        "www": "https://www.starlightintelligence.org",
+        "local": "C:\\Users\\frank\\starlight\\repos\\Starlight-Intelligence-System",
+        "vercel": "https://vercel.com/starlight-intelligence/site/BC25vi2AwG77dNhYitDAnQJ8xVbv"
+      },
+      "recommendedNextAction": "Harden download UX, release manifests, checksums, public/private plugin boundaries, and standard docs"
+    },
+    {
+      "brand": "Arcanea / AnimeLegends",
+      "domain": "animelegends.ai",
+      "portfolioRole": "Premium IP and interactive anime experience",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "An AI-native anime studio built on a 7-stage pipeline and an open-source forge. Meet AKASHI, KAGE, and MIRA.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "AnimeLegends.ai — Where legends are remembered, measured, and born.",
+        "url": "https://animelegends.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "An AI-native anime studio built on a 7-stage pipeline and an open-source forge. Meet AKASHI, KAGE, and MIRA.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "AnimeLegends.ai — Where legends are remembered, measured, and born.",
+        "url": "https://www.animelegends.ai"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "animelegends.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.1.1"
+        },
+        {
+          "name": "animelegends.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.1.129"
+        },
+        {
+          "name": "animelegends.ai",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "animelegends.ai"
+        },
+        {
+          "name": "animelegends.ai",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "animelegends.ai"
+        },
+        {
+          "name": "animelegends.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1.vercel-dns.com"
+        },
+        {
+          "name": "animelegends.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns2.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "AnimeLegends.ai — Where legends are remembered, measured, and born.",
+      "metadataSignal": "An AI-native anime studio built on a 7-stage pipeline and an open-source forge. Meet AKASHI, KAGE, and MIRA.",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "AnimeLegends",
+      "githubRepo": "frankxai/AnimeLegends",
+      "localRepo": {
+        "aheadBehind": "## main...origin/main",
+        "dirtyCount": 2,
+        "branch": "main",
+        "isGit": true,
+        "head": "053d297",
+        "exists": true,
+        "remote": "https://github.com/frankxai/AnimeLegends.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\AnimeLegends"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "Unchanged latest production deployment.",
+        "inspector": "https://vercel.com/starlight-intelligence/anime-legends/3H96CYVbssHUF1pM1sw2rvKHD9zH",
+        "latestSha": "053d297db4a490b93c84dafe4a94c76ecca4e48d",
+        "latestUrl": "https://anime-legends-h44ykveue-starlight-intelligence.vercel.app",
+        "project": "anime-legends",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/AnimeLegends",
+        "root": "https://animelegends.ai",
+        "www": "https://www.animelegends.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\AnimeLegends",
+        "vercel": "https://vercel.com/starlight-intelligence/anime-legends/3H96CYVbssHUF1pM1sw2rvKHD9zH"
+      },
+      "recommendedNextAction": "Run visual intelligence and motion pass; add launch-quality first viewport, OG, and waitlist path"
+    },
+    {
+      "brand": "Arcanea / Experience",
+      "domain": "vibeclubs.ai",
+      "portfolioRole": "Community, co-working, and live experience surface",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Claude Code + your crew + a soundtrack. Lock in for 90 minutes, ship the thing, recap lands on your profile. Open source. Works on Meet, Discord, Zoom, anywhere.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Vibeclubs — Host a vibeclub",
+        "url": "https://vibeclubs.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Claude Code + your crew + a soundtrack. Lock in for 90 minutes, ship the thing, recap lands on your profile. Open source. Works on Meet, Discord, Zoom, anywhere.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Vibeclubs — Host a vibeclub",
+        "url": "https://www.vibeclubs.ai"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "vibeclubs.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.1.1"
+        },
+        {
+          "name": "vibeclubs.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.65"
+        },
+        {
+          "name": "vibeclubs.ai",
+          "type": "AAAA",
+          "ttl": 599,
+          "data": "vibeclubs.ai"
+        },
+        {
+          "name": "vibeclubs.ai",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "vibeclubs.ai"
+        },
+        {
+          "name": "vibeclubs.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns2.vercel-dns.com"
+        },
+        {
+          "name": "vibeclubs.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "Vibeclubs — Host a vibeclub",
+      "metadataSignal": "Claude Code + your crew + a soundtrack. Lock in for 90 minutes, ship the thing, recap lands on your profile. Open source. Works on Meet, Discord, Zoom, anywhere.",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "doc-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "vibeclubs",
+      "githubRepo": "frankxai/vibeclubs",
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": false,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\vibeclubs"
+      },
+      "vercel": {
+        "latestState": "UNKNOWN",
+        "observed": "Vercel project list",
+        "note": "Vercel project exists but local canonical repo is not cloned.",
+        "inspector": "https://vercel.com/starlight-intelligence/vibeclubs-web",
+        "latestSha": null,
+        "latestUrl": "https://vibeclubs-web.vercel.app",
+        "project": "vibeclubs-web",
+        "latestTarget": null,
+        "latestBranch": null
+      },
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "vercel READY->UNKNOWN; deployment sha changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [
+        "localPath"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/vibeclubs",
+        "root": "https://vibeclubs.ai",
+        "www": "https://www.vibeclubs.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\vibeclubs",
+        "vercel": "https://vercel.com/starlight-intelligence/vibeclubs-web"
+      },
+      "recommendedNextAction": "Clone or attach canonical repo, verify deploy, add Stripe/waitlist readiness and premium community positioning"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "agenticincome.ai",
+      "portfolioRole": "Affiliate authority hub",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "A premium intelligence desk for turning AI-tool demand into honest comparisons, recurring payer routes, owned audience, and direct product systems.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Agentic Income — The AI-tool income desk.",
+        "url": "https://agenticincome.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "A premium intelligence desk for turning AI-tool demand into honest comparisons, recurring payer routes, owned audience, and direct product systems.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Agentic Income — The AI-tool income desk.",
+        "url": "https://www.agenticincome.ai"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "agenticincome.ai",
+          "type": "A",
+          "ttl": 1749,
+          "data": "216.150.16.129"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "A",
+          "ttl": 1749,
+          "data": "216.150.1.193"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "agenticincome.ai"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "agenticincome.ai"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1.vercel-dns.com"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns2.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "Agentic Income — The AI-tool income desk.",
+      "metadataSignal": "A premium intelligence desk for turning AI-tool demand into honest comparisons, recurring payer routes, owned audience, and direct product systems.",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "agenticincome",
+      "githubRepo": "frankxai/agenticincome",
+      "localRepo": {
+        "aheadBehind": "## codex/production-main-sync...origin/main",
+        "dirtyCount": 2,
+        "branch": "codex/production-main-sync",
+        "isGit": true,
+        "head": "c4e4594",
+        "exists": true,
+        "remote": "https://github.com/frankxai/agenticincome.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\agenticincome"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "local .vercel + prior mapping",
+        "note": "Vercel project exists; full deployment list not refreshed this run.",
+        "inspector": "https://vercel.com/starlight-intelligence/agenticincome",
+        "latestSha": "c4e4594",
+        "latestUrl": "https://agenticincome.vercel.app",
+        "project": "agenticincome",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "dirty 49->2; branch agent/cleanup-sync->codex/production-main-sync; deployment sha changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/agenticincome",
+        "root": "https://agenticincome.ai",
+        "www": "https://www.agenticincome.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\agenticincome",
+        "vercel": "https://vercel.com/starlight-intelligence/agenticincome"
+      },
+      "recommendedNextAction": "P0: fix deployment/DNS/404, then connect go-links and spoke network"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "disruptivepassiveincome.com",
+      "portfolioRole": "Affiliate spoke for disruption/value-capture angle",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Welcome to dpi, your ultimate guide to unlocking the potential of disruptive passive income. Join the community of disruptive dreamers and learn about cryptocurrency, AI-driven wealth-building, NFTs, and affiliate marketing for financial freedom.",
+        "status": 200,
+        "server": "Apache",
+        "ok": true,
+        "title": "Disruptive Passive Income",
+        "url": "https://disruptivepassiveincome.com"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Welcome to dpi, your ultimate guide to unlocking the potential of disruptive passive income. Join the community of disruptive dreamers and learn about cryptocurrency, AI-driven wealth-building, NFTs, and affiliate marketing for financial freedom.",
+        "status": 200,
+        "server": "Apache",
+        "ok": true,
+        "title": "Disruptive Passive Income",
+        "url": "https://www.disruptivepassiveincome.com"
+      },
+      "dnsProvider": "ns1026.ui-dns.de, ns1037.ui-dns.com, ns1030.ui-dns.org, ns1046.ui-dns.biz",
+      "dnsRecords": [
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "A",
+          "ttl": 3547,
+          "data": "217.160.0.99"
+        },
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "AAAA",
+          "ttl": 3600,
+          "data": "2001:8d8:100f:f000::226"
+        },
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "disruptivepassiveincome.com"
+        },
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1026.ui-dns.de"
+        },
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1037.ui-dns.com"
+        },
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1030.ui-dns.org"
+        },
+        {
+          "name": "disruptivepassiveincome.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1046.ui-dns.biz"
+        }
+      ],
+      "titleSignal": "Disruptive Passive Income",
+      "metadataSignal": "Welcome to dpi, your ultimate guide to unlocking the potential of disruptive passive income. Join the community of disruptive dreamers and learn about cryptocurrency, AI-driven wealth-building, NFTs, and affiliate marketing for financial freedom.",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P1",
+      "canonicalRepo": "disruptivepassiveincome",
+      "githubRepo": "frankxai/disruptivepassiveincome",
+      "localRepo": {
+        "aheadBehind": "## main...origin/main",
+        "dirtyCount": 2,
+        "branch": "main",
+        "isGit": true,
+        "head": "d035a60",
+        "exists": true,
+        "remote": "https://github.com/frankxai/disruptivepassiveincome.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\disruptivepassiveincome"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "local .vercel + prior mapping",
+        "note": "Project newly observed in Vercel list after prior radar.",
+        "inspector": "https://vercel.com/starlight-intelligence/disruptivepassiveincome",
+        "latestSha": "d035a60",
+        "latestUrl": "https://disruptivepassiveincome.vercel.app",
+        "project": "disruptivepassiveincome",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "dirty 10->2",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/disruptivepassiveincome",
+        "root": "https://disruptivepassiveincome.com",
+        "www": "https://www.disruptivepassiveincome.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\disruptivepassiveincome",
+        "vercel": "https://vercel.com/starlight-intelligence/disruptivepassiveincome"
+      },
+      "recommendedNextAction": "Polish copy, add hub cross-links, verify affiliate disclosures and go-link tracking"
+    },
+    {
+      "brand": "Reality Architect",
+      "domain": "realityarchitect.ai",
+      "portfolioRole": "Public method with premium vault companion",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Go from AI tool-user to system-builder. The open method for designing agents, automations, and income loops that compound — the operating system, given away free.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Reality Architect — Build the systems that build the life you want.",
+        "url": "https://realityarchitect.ai"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Go from AI tool-user to system-builder. The open method for designing agents, automations, and income loops that compound — the operating system, given away free.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Reality Architect — Build the systems that build the life you want.",
+        "url": "https://www.realityarchitect.ai"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "realityarchitect.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.1"
+        },
+        {
+          "name": "realityarchitect.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.193"
+        },
+        {
+          "name": "realityarchitect.ai",
+          "type": "AAAA",
+          "ttl": 599,
+          "data": "realityarchitect.ai"
+        },
+        {
+          "name": "realityarchitect.ai",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "realityarchitect.ai"
+        },
+        {
+          "name": "realityarchitect.ai",
+          "type": "NS",
+          "ttl": 86272,
+          "data": "ns2.vercel-dns.com"
+        },
+        {
+          "name": "realityarchitect.ai",
+          "type": "NS",
+          "ttl": 86272,
+          "data": "ns1.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "Reality Architect — Build the systems that build the life you want.",
+      "metadataSignal": "Go from AI tool-user to system-builder. The open method for designing agents, automations, and income loops that compound — the operating system, given away free.",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "realityarchitect",
+      "githubRepo": "frankxai/realityarchitect",
+      "localRepo": {
+        "aheadBehind": "## main...origin/main",
+        "dirtyCount": 6,
+        "branch": "main",
+        "isGit": true,
+        "head": "6476312",
+        "exists": true,
+        "remote": "https://github.com/frankxai/realityarchitect.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\realityarchitect"
+      },
+      "vercel": {
+        "latestState": "UNKNOWN",
+        "observed": "Vercel project list",
+        "note": "Project exists; deployment list not refreshed this run.",
+        "inspector": "https://vercel.com/starlight-intelligence/realityarchitect",
+        "latestSha": null,
+        "latestUrl": "https://realityarchitect.vercel.app",
+        "project": "realityarchitect",
+        "latestTarget": null,
+        "latestBranch": null
+      },
+      "ownerProfile": "reality",
+      "channel": "#brand-reality-architect",
+      "channelId": "C0BBQCXV7AA",
+      "changedSincePriorRun": "vercel READY->UNKNOWN; deployment sha changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "private/public boundary note; content approval",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/realityarchitect",
+        "root": "https://realityarchitect.ai",
+        "www": "https://www.realityarchitect.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\realityarchitect",
+        "vercel": "https://vercel.com/starlight-intelligence/realityarchitect"
+      },
+      "recommendedNextAction": "Fix deploy or redirect; rebuild public method surface with clear vault boundary"
+    },
+    {
+      "brand": "AI Architect Academy",
+      "domain": "aiarchitectacademy.com",
+      "portfolioRole": "Professional academy and enterprise AI education funnel",
+      "rootHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://aiarchitectacademy.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://aiarchitectacademy.com"
+      },
+      "wwwHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://www.aiarchitectacademy.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.aiarchitectacademy.com"
+      },
+      "dnsProvider": "ns1092.ui-dns.de, ns1118.ui-dns.biz, ns1049.ui-dns.com, ns1070.ui-dns.org",
+      "dnsRecords": [
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "A",
+          "ttl": 3471,
+          "data": "217.160.0.152"
+        },
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "AAAA",
+          "ttl": 3600,
+          "data": "2001:8d8:100f:f000::253"
+        },
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "CNAME",
+          "ttl": 556,
+          "data": "aiarchitectacademy.com"
+        },
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1092.ui-dns.de"
+        },
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1118.ui-dns.biz"
+        },
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1049.ui-dns.com"
+        },
+        {
+          "name": "aiarchitectacademy.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1070.ui-dns.org"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "provider-verification-required",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "ai-architect-academy",
+      "githubRepo": "frankxai/ai-architect-academy",
+      "localRepo": {
+        "aheadBehind": "## main...origin/main",
+        "dirtyCount": 9,
+        "branch": "main",
+        "isGit": true,
+        "head": "529f63d",
+        "exists": true,
+        "remote": "https://github.com/frankxai/ai-architect-academy",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\ai-architect-academy"
+      },
+      "vercel": {
+        "latestState": "UNKNOWN",
+        "observed": "Vercel project list",
+        "note": "Project exists; provider/SSL still needs verification.",
+        "inspector": "https://vercel.com/starlight-intelligence/aiarchitectacademy",
+        "latestSha": null,
+        "latestUrl": "https://aiarchitectacademy.vercel.app",
+        "project": "aiarchitectacademy",
+        "latestTarget": null,
+        "latestBranch": null
+      },
+      "ownerProfile": "aicoe",
+      "channel": "#brand-ai-coe",
+      "channelId": "C0BCLPDGHAL",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer brief; partner prep note; source/proof packet",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/ai-architect-academy",
+        "root": "https://aiarchitectacademy.com",
+        "www": "https://www.aiarchitectacademy.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\ai-architect-academy",
+        "vercel": "https://vercel.com/starlight-intelligence/aiarchitectacademy"
+      },
+      "recommendedNextAction": "Verify SSL/domain provider, choose canonical repo, and align with enterprise AI CoE offer"
+    },
+    {
+      "brand": "Arcanea",
+      "domain": "arcanea.io",
+      "portfolioRole": "Potential Arcanea developer or product alias",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "",
+        "status": 200,
+        "server": "Apache",
+        "ok": true,
+        "title": "",
+        "url": "https://arcanea.io"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "",
+        "status": 200,
+        "server": "cloudflare",
+        "ok": true,
+        "title": "",
+        "url": "https://www.arcanea.io"
+      },
+      "dnsProvider": "ns1087.ui-dns.biz, ns1115.ui-dns.com, ns1079.ui-dns.de, ns1119.ui-dns.org",
+      "dnsRecords": [
+        {
+          "name": "arcanea.io",
+          "type": "A",
+          "ttl": 3600,
+          "data": "217.160.0.118"
+        },
+        {
+          "name": "arcanea.io",
+          "type": "AAAA",
+          "ttl": 3600,
+          "data": "2001:8d8:100f:f000::2cf"
+        },
+        {
+          "name": "arcanea.io",
+          "type": "CNAME",
+          "ttl": 470,
+          "data": "arcanea.io"
+        },
+        {
+          "name": "arcanea.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1087.ui-dns.biz"
+        },
+        {
+          "name": "arcanea.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1115.ui-dns.com"
+        },
+        {
+          "name": "arcanea.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1079.ui-dns.de"
+        },
+        {
+          "name": "arcanea.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1119.ui-dns.org"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P1",
+      "canonicalRepo": "arcanea-ai-app",
+      "githubRepo": "frankxai/arcanea-ai-app",
+      "localRepo": {
+        "aheadBehind": "## codex/arcanea-homepage-world-engine...origin/codex/arcanea-homepage-world-engine",
+        "dirtyCount": 98,
+        "branch": "codex/arcanea-homepage-world-engine",
+        "isGit": true,
+        "head": "eaf954c3",
+        "exists": true,
+        "remote": "https://github.com/frankxai/arcanea-ai-app.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app"
+      },
+      "vercel": {
+        "latestState": "BLOCKED",
+        "observed": "connector 2026-07-04",
+        "note": "Newest event is blocked backup snapshot; production READY on main at 7b4bf066.",
+        "inspector": "https://vercel.com/starlight-intelligence/arcanea-ai-app/4u3Bc4LeX1WrtqFACEtmwgCewuxc",
+        "latestSha": "c0611eb1d1ca4073828df41343ea246088d8f58e",
+        "latestUrl": "https://arcanea-ai-2tauobhj8-starlight-intelligence.vercel.app",
+        "project": "arcanea-ai-app",
+        "latestTarget": null,
+        "latestBranch": "backup/claude-snapshots"
+      },
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/arcanea-ai-app",
+        "root": "https://arcanea.io",
+        "www": "https://www.arcanea.io",
+        "local": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app",
+        "vercel": "https://vercel.com/starlight-intelligence/arcanea-ai-app/4u3Bc4LeX1WrtqFACEtmwgCewuxc"
+      },
+      "recommendedNextAction": "Verify ownership and decide developer portal vs redirect to arcanea.ai"
+    },
+    {
+      "brand": "Product / Other",
+      "domain": "akamoto.io",
+      "portfolioRole": "Reachable domain with unclear portfolio purpose",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Akamoto longs for the light but loves the darkness. Explore AI-generated NFT artworks linked with multiple storylines that lead to the Metaverse.",
+        "status": 200,
+        "server": "Apache",
+        "ok": true,
+        "title": "Akamoto - The forgotten Prophecies of Darkness & Light",
+        "url": "https://akamoto.io"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Akamoto longs for the light but loves the darkness. Explore AI-generated NFT artworks linked with multiple storylines that lead to the Metaverse.",
+        "status": 200,
+        "server": "Apache",
+        "ok": true,
+        "title": "Akamoto - The forgotten Prophecies of Darkness & Light",
+        "url": "https://www.akamoto.io"
+      },
+      "dnsProvider": "ns1021.ui-dns.biz, ns1125.ui-dns.com, ns1059.ui-dns.org, ns1027.ui-dns.de",
+      "dnsRecords": [
+        {
+          "name": "akamoto.io",
+          "type": "A",
+          "ttl": 3467,
+          "data": "217.160.0.99"
+        },
+        {
+          "name": "akamoto.io",
+          "type": "AAAA",
+          "ttl": 3600,
+          "data": "2001:8d8:100f:f000::226"
+        },
+        {
+          "name": "akamoto.io",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "akamoto.io"
+        },
+        {
+          "name": "akamoto.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1021.ui-dns.biz"
+        },
+        {
+          "name": "akamoto.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1125.ui-dns.com"
+        },
+        {
+          "name": "akamoto.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1059.ui-dns.org"
+        },
+        {
+          "name": "akamoto.io",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1027.ui-dns.de"
+        }
+      ],
+      "titleSignal": "Akamoto - The forgotten Prophecies of Darkness & Light",
+      "metadataSignal": "Akamoto longs for the light but loves the darkness. Explore AI-generated NFT artworks linked with multiple storylines that lead to the Metaverse.",
+      "registryStatus": "live-needs-polish",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": null,
+      "githubRepo": null,
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": true,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\"
+      },
+      "vercel": null,
+      "ownerProfile": "frankx",
+      "channel": "#brand-frankx",
+      "channelId": "C0BBP3AJ39T",
+      "changedSincePriorRun": "title changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [
+        "canonicalRepo",
+        "localPath",
+        "githubRepo",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "content brief; preview URL when web-facing; approval receipt",
+      "inspectLinks": {
+        "github": null,
+        "root": "https://akamoto.io",
+        "www": "https://www.akamoto.io",
+        "local": "C:\\Users\\frank\\starlight\\repos\\",
+        "vercel": null
+      },
+      "recommendedNextAction": "Classify as product, client/other, redirect, or retire from launch scope"
+    },
+    {
+      "brand": "Arcanea",
+      "domain": "arcanea.dev",
+      "portfolioRole": "Developer/docs portal or redirect to Arcanea SDK/open standards",
+      "rootHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://arcanea.dev",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://arcanea.dev"
+      },
+      "wwwHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://www.arcanea.dev",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.arcanea.dev"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "arcanea.dev",
+          "type": "A",
+          "ttl": 1755,
+          "data": "216.150.1.65"
+        },
+        {
+          "name": "arcanea.dev",
+          "type": "A",
+          "ttl": 1755,
+          "data": "216.150.16.129"
+        },
+        {
+          "name": "arcanea.dev",
+          "type": "AAAA",
+          "ttl": 599,
+          "data": "arcanea.dev"
+        },
+        {
+          "name": "arcanea.dev",
+          "type": "CNAME",
+          "ttl": 556,
+          "data": "arcanea.dev"
+        },
+        {
+          "name": "arcanea.dev",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1.vercel-dns.com"
+        },
+        {
+          "name": "arcanea.dev",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns2.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P1",
+      "canonicalRepo": "arcanea-ai-app",
+      "githubRepo": "frankxai/arcanea-ai-app",
+      "localRepo": {
+        "aheadBehind": "## codex/arcanea-homepage-world-engine...origin/codex/arcanea-homepage-world-engine",
+        "dirtyCount": 98,
+        "branch": "codex/arcanea-homepage-world-engine",
+        "isGit": true,
+        "head": "eaf954c3",
+        "exists": true,
+        "remote": "https://github.com/frankxai/arcanea-ai-app.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app"
+      },
+      "vercel": {
+        "latestState": "BLOCKED",
+        "observed": "connector 2026-07-04",
+        "note": "Newest event is blocked backup snapshot; production READY on main at 7b4bf066.",
+        "inspector": "https://vercel.com/starlight-intelligence/arcanea-ai-app/4u3Bc4LeX1WrtqFACEtmwgCewuxc",
+        "latestSha": "c0611eb1d1ca4073828df41343ea246088d8f58e",
+        "latestUrl": "https://arcanea-ai-2tauobhj8-starlight-intelligence.vercel.app",
+        "project": "arcanea-ai-app",
+        "latestTarget": null,
+        "latestBranch": "backup/claude-snapshots"
+      },
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/arcanea-ai-app",
+        "root": "https://arcanea.dev",
+        "www": "https://www.arcanea.dev",
+        "local": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app",
+        "vercel": "https://vercel.com/starlight-intelligence/arcanea-ai-app/4u3Bc4LeX1WrtqFACEtmwgCewuxc"
+      },
+      "recommendedNextAction": "Verify ownership, then redirect or build minimal developer docs shell"
+    },
+    {
+      "brand": "Arcanea",
+      "domain": "arcanea.com",
+      "portfolioRole": "Potential premium brand alias",
+      "rootHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://arcanea.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://arcanea.com"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Dit domein kan te koop zijn!",
+        "status": 200,
+        "server": "",
+        "ok": true,
+        "title": "arcanea.com",
+        "url": "https://www.arcanea.com"
+      },
+      "dnsProvider": "ns1.dnsowl.com, ns3.dnsowl.com, ns2.dnsowl.com",
+      "dnsRecords": [
+        {
+          "name": "arcanea.com",
+          "type": "A",
+          "ttl": 7200,
+          "data": "13.248.151.237"
+        },
+        {
+          "name": "arcanea.com",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "arcanea.com"
+        },
+        {
+          "name": "arcanea.com",
+          "type": "CNAME",
+          "ttl": 465,
+          "data": "arcanea.com"
+        },
+        {
+          "name": "arcanea.com",
+          "type": "NS",
+          "ttl": 86265,
+          "data": "ns1.dnsowl.com"
+        },
+        {
+          "name": "arcanea.com",
+          "type": "NS",
+          "ttl": 86265,
+          "data": "ns3.dnsowl.com"
+        },
+        {
+          "name": "arcanea.com",
+          "type": "NS",
+          "ttl": 86265,
+          "data": "ns2.dnsowl.com"
+        }
+      ],
+      "titleSignal": "arcanea.com",
+      "metadataSignal": "Dit domein kan te koop zijn!",
+      "registryStatus": "provider-verification-required",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P1",
+      "canonicalRepo": null,
+      "githubRepo": null,
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": true,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\"
+      },
+      "vercel": {
+        "project": "arcanea-ai-app",
+        "latestState": "BLOCKED",
+        "latestUrl": "https://arcanea-ai-40or8q0sk-starlight-intelligence.vercel.app",
+        "latestTarget": null,
+        "latestBranch": "backup/claude-snapshots",
+        "latestSha": "712dd8d9ec0f7b12a73ce7d3569b956e0861352b",
+        "latestDeploymentId": "arcanea-ai-40or8q0sk-starlight-intelligence.vercel.app",
+        "createdAt": null,
+        "inspector": "https://arcanea-ai-40or8q0sk-starlight-intelligence.vercel.app"
+      },
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "canonicalRepo",
+        "localPath",
+        "githubRepo",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": null,
+        "root": "https://arcanea.com",
+        "www": "https://www.arcanea.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\",
+        "vercel": "https://arcanea-ai-40or8q0sk-starlight-intelligence.vercel.app"
+      },
+      "recommendedNextAction": "Confirm ownership; if owned, configure SSL and redirect to arcanea.ai"
+    },
+    {
+      "brand": "Arcanea",
+      "domain": "arcanean.org",
+      "portfolioRole": "Standards/community/nonprofit-style surface",
+      "rootHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://arcanean.org",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://arcanean.org"
+      },
+      "wwwHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://www.arcanean.org",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.arcanean.org"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "arcanean.org",
+          "type": "A",
+          "ttl": 1664,
+          "data": "216.150.16.65"
+        },
+        {
+          "name": "arcanean.org",
+          "type": "A",
+          "ttl": 1664,
+          "data": "216.150.1.65"
+        },
+        {
+          "name": "arcanean.org",
+          "type": "AAAA",
+          "ttl": 555,
+          "data": "arcanean.org"
+        },
+        {
+          "name": "arcanean.org",
+          "type": "CNAME",
+          "ttl": 464,
+          "data": "arcanean.org"
+        },
+        {
+          "name": "arcanean.org",
+          "type": "NS",
+          "ttl": 86264,
+          "data": "ns1.vercel-dns.com"
+        },
+        {
+          "name": "arcanean.org",
+          "type": "NS",
+          "ttl": 86264,
+          "data": "ns2.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "arcanean-library",
+      "githubRepo": "frankxai/arcanean-library",
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": false,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\arcanean-library"
+      },
+      "vercel": null,
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/arcanean-library",
+        "root": "https://arcanean.org",
+        "www": "https://www.arcanean.org",
+        "local": "C:\\Users\\frank\\starlight\\repos\\arcanean-library",
+        "vercel": null
+      },
+      "recommendedNextAction": "Verify ownership and decide standards portal vs redirect"
+    },
+    {
+      "brand": "Arcanea",
+      "domain": "arcanealabs.com",
+      "portfolioRole": "Planned or legacy lab alias",
+      "rootHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://arcanealabs.com",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://arcanealabs.com"
+      },
+      "wwwHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://www.arcanealabs.com",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.arcanealabs.com"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "arcanealabs.com",
+          "type": "A",
+          "ttl": 1664,
+          "data": "216.150.16.65"
+        },
+        {
+          "name": "arcanealabs.com",
+          "type": "A",
+          "ttl": 1664,
+          "data": "216.150.1.129"
+        },
+        {
+          "name": "arcanealabs.com",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "arcanealabs.com"
+        },
+        {
+          "name": "arcanealabs.com",
+          "type": "CNAME",
+          "ttl": 464,
+          "data": "arcanealabs.com"
+        },
+        {
+          "name": "arcanealabs.com",
+          "type": "NS",
+          "ttl": 86264,
+          "data": "ns2.vercel-dns.com"
+        },
+        {
+          "name": "arcanealabs.com",
+          "type": "NS",
+          "ttl": 86264,
+          "data": "ns1.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "Arcanea-Labs",
+      "githubRepo": "frankxai/Arcanea-Labs",
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": false,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\Arcanea-Labs"
+      },
+      "vercel": null,
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/Arcanea-Labs",
+        "root": "https://arcanealabs.com",
+        "www": "https://www.arcanealabs.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\Arcanea-Labs",
+        "vercel": null
+      },
+      "recommendedNextAction": "Verify ownership and redirect or park intentionally"
+    },
+    {
+      "brand": "FrankX",
+      "domain": "frankx.dev",
+      "portfolioRole": "Developer/agent docs or redirect to frankx.ai/dev",
+      "rootHealth": {
+        "error": "No such host is known. (frankx.dev:443)",
+        "finalUrl": "https://frankx.dev",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://frankx.dev"
+      },
+      "wwwHealth": {
+        "error": "No such host is known. (www.frankx.dev:443)",
+        "finalUrl": "https://www.frankx.dev",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.frankx.dev"
+      },
+      "dnsProvider": "no public DNS record observed",
+      "dnsRecords": [],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "dns-missing",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "frankx.ai-vercel-website",
+      "githubRepo": "frankxai/frankx.ai-vercel-website",
+      "localRepo": {
+        "aheadBehind": "## agent/codex/rights-foundation...origin/agent/codex/rights-foundation",
+        "dirtyCount": 53,
+        "branch": "agent/codex/rights-foundation",
+        "isGit": true,
+        "head": "67f6c3b2",
+        "exists": true,
+        "remote": "https://github.com/frankxai/frankx.ai-vercel-website.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "New production deployment: Fable flagship book.",
+        "inspector": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm",
+        "latestSha": "5a574693968cf6f3287a13a200a93db30bd52c08",
+        "latestUrl": "https://frankx-ai-vercel-website-gt8wjtob5-starlight-intelligence.vercel.app",
+        "project": "frankx-ai-vercel-website",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "frankx",
+      "channel": "#brand-frankx",
+      "channelId": "C0BBP3AJ39T",
+      "changedSincePriorRun": "dirty 22->53; deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "content brief; preview URL when web-facing; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/frankx.ai-vercel-website",
+        "root": "https://frankx.dev",
+        "www": "https://www.frankx.dev",
+        "local": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website",
+        "vercel": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm"
+      },
+      "recommendedNextAction": "Verify ownership/DNS, then redirect to frankx.ai/dev or build docs shell"
+    },
+    {
+      "brand": "FrankX",
+      "domain": "frankx.io",
+      "portfolioRole": "Legacy/alias candidate",
+      "rootHealth": {
+        "error": "Response status code does not indicate success: 404 (Not Found).",
+        "finalUrl": "https://frankx.io",
+        "metaDescription": "",
+        "status": 404,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://frankx.io"
+      },
+      "wwwHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://www.frankx.io",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.frankx.io"
+      },
+      "dnsProvider": "ns1018.ui-dns.de, ns1060.ui-dns.org, ns1110.ui-dns.biz, ns1074.ui-dns.com",
+      "dnsRecords": [
+        {
+          "name": "frankx.io",
+          "type": "A",
+          "ttl": 16,
+          "data": "76.76.21.21"
+        },
+        {
+          "name": "frankx.io",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "frankx.io"
+        },
+        {
+          "name": "frankx.io",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "frankx.io"
+        },
+        {
+          "name": "frankx.io",
+          "type": "NS",
+          "ttl": 86263,
+          "data": "ns1018.ui-dns.de"
+        },
+        {
+          "name": "frankx.io",
+          "type": "NS",
+          "ttl": 86263,
+          "data": "ns1060.ui-dns.org"
+        },
+        {
+          "name": "frankx.io",
+          "type": "NS",
+          "ttl": 86263,
+          "data": "ns1110.ui-dns.biz"
+        },
+        {
+          "name": "frankx.io",
+          "type": "NS",
+          "ttl": 86263,
+          "data": "ns1074.ui-dns.com"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "frankx.ai-vercel-website",
+      "githubRepo": "frankxai/frankx.ai-vercel-website",
+      "localRepo": {
+        "aheadBehind": "## agent/codex/rights-foundation...origin/agent/codex/rights-foundation",
+        "dirtyCount": 53,
+        "branch": "agent/codex/rights-foundation",
+        "isGit": true,
+        "head": "67f6c3b2",
+        "exists": true,
+        "remote": "https://github.com/frankxai/frankx.ai-vercel-website.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "New production deployment: Fable flagship book.",
+        "inspector": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm",
+        "latestSha": "5a574693968cf6f3287a13a200a93db30bd52c08",
+        "latestUrl": "https://frankx-ai-vercel-website-gt8wjtob5-starlight-intelligence.vercel.app",
+        "project": "frankx-ai-vercel-website",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "frankx",
+      "channel": "#brand-frankx",
+      "channelId": "C0BBP3AJ39T",
+      "changedSincePriorRun": "dirty 22->53; deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "content brief; preview URL when web-facing; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/frankx.ai-vercel-website",
+        "root": "https://frankx.io",
+        "www": "https://www.frankx.io",
+        "local": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website",
+        "vercel": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm"
+      },
+      "recommendedNextAction": "Verify ownership and redirect to frankx.ai or park intentionally"
+    },
+    {
+      "brand": "FrankX",
+      "domain": "frank-riemer.com",
+      "portfolioRole": "Personal/legal identity alias",
+      "rootHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://frank-riemer.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://frank-riemer.com"
+      },
+      "wwwHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://www.frank-riemer.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.frank-riemer.com"
+      },
+      "dnsProvider": "ns1017.ui-dns.org, ns1113.ui-dns.com, ns1049.ui-dns.de, ns1040.ui-dns.biz",
+      "dnsRecords": [
+        {
+          "name": "frank-riemer.com",
+          "type": "A",
+          "ttl": 3600,
+          "data": "217.160.0.99"
+        },
+        {
+          "name": "frank-riemer.com",
+          "type": "AAAA",
+          "ttl": 3600,
+          "data": "2001:8d8:100f:f000::226"
+        },
+        {
+          "name": "frank-riemer.com",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "frank-riemer.com"
+        },
+        {
+          "name": "frank-riemer.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1017.ui-dns.org"
+        },
+        {
+          "name": "frank-riemer.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1113.ui-dns.com"
+        },
+        {
+          "name": "frank-riemer.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1049.ui-dns.de"
+        },
+        {
+          "name": "frank-riemer.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1040.ui-dns.biz"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "provider-verification-required",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "frankx.ai-vercel-website",
+      "githubRepo": "frankxai/frankx.ai-vercel-website",
+      "localRepo": {
+        "aheadBehind": "## agent/codex/rights-foundation...origin/agent/codex/rights-foundation",
+        "dirtyCount": 53,
+        "branch": "agent/codex/rights-foundation",
+        "isGit": true,
+        "head": "67f6c3b2",
+        "exists": true,
+        "remote": "https://github.com/frankxai/frankx.ai-vercel-website.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "New production deployment: Fable flagship book.",
+        "inspector": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm",
+        "latestSha": "5a574693968cf6f3287a13a200a93db30bd52c08",
+        "latestUrl": "https://frankx-ai-vercel-website-gt8wjtob5-starlight-intelligence.vercel.app",
+        "project": "frankx-ai-vercel-website",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "frankx",
+      "channel": "#brand-frankx",
+      "channelId": "C0BBP3AJ39T",
+      "changedSincePriorRun": "dirty 22->53; deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "content brief; preview URL when web-facing; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/frankx.ai-vercel-website",
+        "root": "https://frank-riemer.com",
+        "www": "https://www.frank-riemer.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website",
+        "vercel": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/GVH2r7PWEgcA2mk8cMZsuDAEvotm"
+      },
+      "recommendedNextAction": "Verify ownership and configure SSL redirect to frankx.ai/about"
+    },
+    {
+      "brand": "Reality Architect / Arcanea",
+      "domain": "realitydiffusion.ai",
+      "portfolioRole": "Reality/visual generation engine or legacy alias",
+      "rootHealth": {
+        "error": "The requested name is valid, but no data of the requested type was found. (realitydiffusion.ai:443)",
+        "finalUrl": "https://realitydiffusion.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://realitydiffusion.ai"
+      },
+      "wwwHealth": {
+        "error": "No such host is known. (www.realitydiffusion.ai:443)",
+        "finalUrl": "https://www.realitydiffusion.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.realitydiffusion.ai"
+      },
+      "dnsProvider": "ns1024.ui-dns.com, ns1048.ui-dns.biz, ns1124.ui-dns.org, ns1033.ui-dns.de",
+      "dnsRecords": [
+        {
+          "name": "realitydiffusion.ai",
+          "type": "A",
+          "ttl": 600,
+          "data": "realitydiffusion.ai"
+        },
+        {
+          "name": "realitydiffusion.ai",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "realitydiffusion.ai"
+        },
+        {
+          "name": "realitydiffusion.ai",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "realitydiffusion.ai"
+        },
+        {
+          "name": "realitydiffusion.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1024.ui-dns.com"
+        },
+        {
+          "name": "realitydiffusion.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1048.ui-dns.biz"
+        },
+        {
+          "name": "realitydiffusion.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1124.ui-dns.org"
+        },
+        {
+          "name": "realitydiffusion.ai",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1033.ui-dns.de"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "dns-missing",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P1",
+      "canonicalRepo": "realitydiffusion",
+      "githubRepo": "frankxai/realitydiffusion",
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": false,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\realitydiffusion"
+      },
+      "vercel": null,
+      "ownerProfile": "arcanea",
+      "channel": "#brand-arcanea",
+      "channelId": "C0BBUAKTGSD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "visual QA; preview URL or asset proof; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/realitydiffusion",
+        "root": "https://realitydiffusion.ai",
+        "www": "https://www.realitydiffusion.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\realitydiffusion",
+        "vercel": null
+      },
+      "recommendedNextAction": "Verify ownership/DNS and decide Reality Architect vs Arcanea visual engine route"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "agenticpassiveincome.com",
+      "portfolioRole": "Affiliate spoke for passive-income angle",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Practical blueprints for passive compounding. Real AI-tool comparisons, automated income systems, and set-and-forget loops that earn while you sleep.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Agentic Passive Income — Set it once, let it run.",
+        "url": "https://agenticpassiveincome.com"
+      },
+      "wwwHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Practical blueprints for passive compounding. Real AI-tool comparisons, automated income systems, and set-and-forget loops that earn while you sleep.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Agentic Passive Income — Set it once, let it run.",
+        "url": "https://www.agenticpassiveincome.com"
+      },
+      "dnsProvider": "Vercel DNS signal",
+      "dnsRecords": [
+        {
+          "name": "agenticpassiveincome.com",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.1.193"
+        },
+        {
+          "name": "agenticpassiveincome.com",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.65"
+        },
+        {
+          "name": "agenticpassiveincome.com",
+          "type": "AAAA",
+          "ttl": 600,
+          "data": "agenticpassiveincome.com"
+        },
+        {
+          "name": "agenticpassiveincome.com",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "agenticpassiveincome.com"
+        },
+        {
+          "name": "agenticpassiveincome.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns2.vercel-dns.com"
+        },
+        {
+          "name": "agenticpassiveincome.com",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns1.vercel-dns.com"
+        }
+      ],
+      "titleSignal": "Agentic Passive Income — Set it once, let it run.",
+      "metadataSignal": "Practical blueprints for passive compounding. Real AI-tool comparisons, automated income systems, and set-and-forget loops that earn while you sleep.",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P1",
+      "canonicalRepo": "agenticpassiveincome",
+      "githubRepo": "frankxai/agenticpassiveincome",
+      "localRepo": {
+        "aheadBehind": "## codex/production-main-sync...origin/main",
+        "dirtyCount": 2,
+        "branch": "codex/production-main-sync",
+        "isGit": true,
+        "head": "eba102b",
+        "exists": true,
+        "remote": "https://github.com/frankxai/agenticpassiveincome.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\agenticpassiveincome"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "local .vercel + prior mapping",
+        "note": "Vercel project exists; full deployment list not refreshed this run.",
+        "inspector": "https://vercel.com/starlight-intelligence/agenticpassiveincome",
+        "latestSha": "eba102b",
+        "latestUrl": "https://agenticpassiveincome.vercel.app",
+        "project": "agenticpassiveincome",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "dirty 10->2; branch agent/cleanup-sync->codex/production-main-sync; deployment sha changed",
+      "riskVerdict": "yellow",
+      "riskReason": "mapping, provider, deployment target, or dirty-repo proof incomplete",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/agenticpassiveincome",
+        "root": "https://agenticpassiveincome.com",
+        "www": "https://www.agenticpassiveincome.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\agenticpassiveincome",
+        "vercel": "https://vercel.com/starlight-intelligence/agenticpassiveincome"
+      },
+      "recommendedNextAction": "Verify whether .com or .ai is canonical, then deploy or redirect one to the other"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "agenticpassiveincome.ai",
+      "portfolioRole": "Known prior registry spoke for passive-income angle",
+      "rootHealth": {
+        "error": "No such host is known. (agenticpassiveincome.ai:443)",
+        "finalUrl": "https://agenticpassiveincome.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://agenticpassiveincome.ai"
+      },
+      "wwwHealth": {
+        "error": "No such host is known. (www.agenticpassiveincome.ai:443)",
+        "finalUrl": "https://www.agenticpassiveincome.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.agenticpassiveincome.ai"
+      },
+      "dnsProvider": "no public DNS record observed",
+      "dnsRecords": [],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "dns-missing",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P1",
+      "canonicalRepo": "agenticpassiveincome",
+      "githubRepo": "frankxai/agenticpassiveincome",
+      "localRepo": {
+        "aheadBehind": "## codex/production-main-sync...origin/main",
+        "dirtyCount": 2,
+        "branch": "codex/production-main-sync",
+        "isGit": true,
+        "head": "eba102b",
+        "exists": true,
+        "remote": "https://github.com/frankxai/agenticpassiveincome.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\agenticpassiveincome"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "local .vercel + prior mapping",
+        "note": "Vercel project exists; full deployment list not refreshed this run.",
+        "inspector": "https://vercel.com/starlight-intelligence/agenticpassiveincome",
+        "latestSha": "eba102b",
+        "latestUrl": "https://agenticpassiveincome.vercel.app",
+        "project": "agenticpassiveincome",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "dirty 10->2; branch agent/cleanup-sync->codex/production-main-sync; deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/agenticpassiveincome",
+        "root": "https://agenticpassiveincome.ai",
+        "www": "https://www.agenticpassiveincome.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\agenticpassiveincome",
+        "vercel": "https://vercel.com/starlight-intelligence/agenticpassiveincome"
+      },
+      "recommendedNextAction": "Verify ownership and choose .com vs .ai canonical"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "go.agenticincome.ai",
+      "portfolioRole": "Affiliate redirect/go-link surface",
+      "rootHealth": {
+        "error": null,
+        "finalUrl": null,
+        "metaDescription": "Catalog-driven short-link and affiliate CTA routing layer for the Agentic Income network.",
+        "status": 200,
+        "server": "Vercel",
+        "ok": true,
+        "title": "Agentic Income Router",
+        "url": "https://go.agenticincome.ai"
+      },
+      "wwwHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://www.go.agenticincome.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.go.agenticincome.ai"
+      },
+      "dnsProvider": "agenticincome.ai",
+      "dnsRecords": [
+        {
+          "name": "go.agenticincome.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.193"
+        },
+        {
+          "name": "go.agenticincome.ai",
+          "type": "A",
+          "ttl": 1800,
+          "data": "216.150.16.65"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "AAAA",
+          "ttl": 599,
+          "data": "agenticincome.ai"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "CNAME",
+          "ttl": 560,
+          "data": "agenticincome.ai"
+        },
+        {
+          "name": "agenticincome.ai",
+          "type": "NS",
+          "ttl": 600,
+          "data": "agenticincome.ai"
+        }
+      ],
+      "titleSignal": "Agentic Income Router",
+      "metadataSignal": "Catalog-driven short-link and affiliate CTA routing layer for the Agentic Income network.",
+      "registryStatus": "parked-or-404",
+      "registryConfidence": "repo-evidenced",
+      "priority": "P0",
+      "canonicalRepo": "go-agenticincome",
+      "githubRepo": "frankxai/go-agenticincome",
+      "localRepo": {
+        "aheadBehind": "## main...origin/main",
+        "dirtyCount": 0,
+        "branch": "main",
+        "isGit": true,
+        "head": "ddc474a",
+        "exists": true,
+        "remote": "https://github.com/frankxai/go-agenticincome.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\go-agenticincome"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "local .vercel + prior mapping",
+        "note": "Unchanged mapped redirect project.",
+        "inspector": "https://vercel.com/starlight-intelligence/go-agenticincome",
+        "latestSha": "94fba60ed0a663579cb157b8642715e66d1b37dd",
+        "latestUrl": "https://go-agenticincome-bw9b01fkj-starlight-intelligence.vercel.app",
+        "project": "go-agenticincome",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "green",
+      "riskReason": "public health, deployment, repo, and mapping proof aligned",
+      "missingFields": [],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/go-agenticincome",
+        "root": "https://go.agenticincome.ai",
+        "www": "https://www.go.agenticincome.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\go-agenticincome",
+        "vercel": "https://vercel.com/starlight-intelligence/go-agenticincome"
+      },
+      "recommendedNextAction": "Fix 404, verify redirect service, and connect hub/spokes"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "disruptivepassiveincom.com",
+      "portfolioRole": "Likely typo of disruptivepassiveincome.com",
+      "rootHealth": {
+        "error": "No such host is known. (disruptivepassiveincom.com:443)",
+        "finalUrl": "https://disruptivepassiveincom.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://disruptivepassiveincom.com"
+      },
+      "wwwHealth": {
+        "error": "No such host is known. (www.disruptivepassiveincom.com:443)",
+        "finalUrl": "https://www.disruptivepassiveincom.com",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.disruptivepassiveincom.com"
+      },
+      "dnsProvider": "no public DNS record observed",
+      "dnsRecords": [],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "typo-or-alias",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P3",
+      "canonicalRepo": null,
+      "githubRepo": null,
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": true,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\"
+      },
+      "vercel": null,
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "canonicalRepo",
+        "localPath",
+        "githubRepo",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": null,
+        "root": "https://disruptivepassiveincom.com",
+        "www": "https://www.disruptivepassiveincom.com",
+        "local": "C:\\Users\\frank\\starlight\\repos\\",
+        "vercel": null
+      },
+      "recommendedNextAction": "Confirm whether typo is owned; if not owned, remove from active launch scope"
+    },
+    {
+      "brand": "Revenue Network",
+      "domain": "disruptivepassiveincome.de",
+      "portfolioRole": "German alias/localization candidate",
+      "rootHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://disruptivepassiveincome.de",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://disruptivepassiveincome.de"
+      },
+      "wwwHealth": {
+        "error": "The SSL connection could not be established, see inner exception.",
+        "finalUrl": "https://www.disruptivepassiveincome.de",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.disruptivepassiveincome.de"
+      },
+      "dnsProvider": "ns.ui-global-dns.de, ns.ui-global-dns.biz, ns.ui-global-dns.com, ns.ui-global-dns.org",
+      "dnsRecords": [
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "A",
+          "ttl": 3600,
+          "data": "217.160.0.207"
+        },
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "AAAA",
+          "ttl": 3600,
+          "data": "2001:8d8:100f:f000::2b6"
+        },
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "CNAME",
+          "ttl": 600,
+          "data": "disruptivepassiveincome.de"
+        },
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns.ui-global-dns.de"
+        },
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns.ui-global-dns.biz"
+        },
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns.ui-global-dns.com"
+        },
+        {
+          "name": "disruptivepassiveincome.de",
+          "type": "NS",
+          "ttl": 86400,
+          "data": "ns.ui-global-dns.org"
+        }
+      ],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "provider-verification-required",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "disruptivepassiveincome",
+      "githubRepo": "frankxai/disruptivepassiveincome",
+      "localRepo": {
+        "aheadBehind": "## main...origin/main",
+        "dirtyCount": 2,
+        "branch": "main",
+        "isGit": true,
+        "head": "d035a60",
+        "exists": true,
+        "remote": "https://github.com/frankxai/disruptivepassiveincome.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\disruptivepassiveincome"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "local .vercel + prior mapping",
+        "note": "Project newly observed in Vercel list after prior radar.",
+        "inspector": "https://vercel.com/starlight-intelligence/disruptivepassiveincome",
+        "latestSha": "d035a60",
+        "latestUrl": "https://disruptivepassiveincome.vercel.app",
+        "project": "disruptivepassiveincome",
+        "latestTarget": "production",
+        "latestBranch": "main"
+      },
+      "ownerProfile": "income",
+      "channel": "#brand-agentic-income",
+      "channelId": "C0BBP3CF0CD",
+      "changedSincePriorRun": "dirty 10->2",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "offer page proof; checkout blocker note; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/disruptivepassiveincome",
+        "root": "https://disruptivepassiveincome.de",
+        "www": "https://www.disruptivepassiveincome.de",
+        "local": "C:\\Users\\frank\\starlight\\repos\\disruptivepassiveincome",
+        "vercel": "https://vercel.com/starlight-intelligence/disruptivepassiveincome"
+      },
+      "recommendedNextAction": "Verify ownership and redirect to .com until localization exists"
+    },
+    {
+      "brand": "FrankX / Music",
+      "domain": "music-academy.ai",
+      "portfolioRole": "AI music academy candidate",
+      "rootHealth": {
+        "error": "No such host is known. (music-academy.ai:443)",
+        "finalUrl": "https://music-academy.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://music-academy.ai"
+      },
+      "wwwHealth": {
+        "error": "No such host is known. (www.music-academy.ai:443)",
+        "finalUrl": "https://www.music-academy.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.music-academy.ai"
+      },
+      "dnsProvider": "no public DNS record observed",
+      "dnsRecords": [],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "dns-missing",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "ai-music-academy",
+      "githubRepo": "frankxai/ai-music-academy",
+      "localRepo": {
+        "aheadBehind": null,
+        "dirtyCount": null,
+        "branch": null,
+        "isGit": false,
+        "head": null,
+        "exists": false,
+        "remote": null,
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\ai-music-academy"
+      },
+      "vercel": null,
+      "ownerProfile": "frankx",
+      "channel": "#brand-frankx",
+      "channelId": "C0BBP3AJ39T",
+      "changedSincePriorRun": "no material change observed since 2026-07-02 radar",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "content brief; preview URL when web-facing; approval receipt",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/ai-music-academy",
+        "root": "https://music-academy.ai",
+        "www": "https://www.music-academy.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\ai-music-academy",
+        "vercel": null
+      },
+      "recommendedNextAction": "Verify ownership and decide whether to activate in July or backlog"
+    },
+    {
+      "brand": "Starlight Intelligence Systems",
+      "domain": "starlight-intelligence.ai",
+      "portfolioRole": "AI alias or product surface candidate",
+      "rootHealth": {
+        "error": "No such host is known. (starlight-intelligence.ai:443)",
+        "finalUrl": "https://starlight-intelligence.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://starlight-intelligence.ai"
+      },
+      "wwwHealth": {
+        "error": "No such host is known. (www.starlight-intelligence.ai:443)",
+        "finalUrl": "https://www.starlight-intelligence.ai",
+        "metaDescription": "",
+        "status": null,
+        "server": "",
+        "ok": false,
+        "title": "",
+        "url": "https://www.starlight-intelligence.ai"
+      },
+      "dnsProvider": "no public DNS record observed",
+      "dnsRecords": [],
+      "titleSignal": "",
+      "metadataSignal": "",
+      "registryStatus": "dns-missing",
+      "registryConfidence": "needs-provider-verification",
+      "priority": "P2",
+      "canonicalRepo": "Starlight-Intelligence-System",
+      "githubRepo": "frankxai/Starlight-Intelligence-System",
+      "localRepo": {
+        "aheadBehind": "## codex/main-preserve-20260630...origin/codex/main-preserve-20260630",
+        "dirtyCount": 67,
+        "branch": "codex/main-preserve-20260630",
+        "isGit": true,
+        "head": "88073a2",
+        "exists": true,
+        "remote": "https://github.com/frankxai/Starlight-Intelligence-System.git",
+        "localPath": "C:\\Users\\frank\\starlight\\repos\\Starlight-Intelligence-System"
+      },
+      "vercel": {
+        "latestState": "READY",
+        "observed": "connector 2026-07-04",
+        "note": "Newest preview READY; production still prior phase1/foundations deployment.",
+        "inspector": "https://vercel.com/starlight-intelligence/site/BC25vi2AwG77dNhYitDAnQJ8xVbv",
+        "latestSha": "28e602269dba85f35d7cf949774a50527b3df972",
+        "latestUrl": "https://site-9kx9iw6r7-starlight-intelligence.vercel.app",
+        "project": "site",
+        "latestTarget": null,
+        "latestBranch": "claude/starlight-sis-docs-eclr0l"
+      },
+      "ownerProfile": "starlight",
+      "channel": "#brand-starlight",
+      "channelId": "C0BBUAMFCP3",
+      "changedSincePriorRun": "deployment sha changed",
+      "riskVerdict": "red",
+      "riskReason": "domain unavailable/provider verification required or latest Vercel deployment blocked/error",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "approvalGate": "No DNS/domain/deploy/merge/promotion action without #repo-command plus relevant brand/business owner approval",
+      "proofRequired": "kanban card; repo-command update; health/registry artifact",
+      "inspectLinks": {
+        "github": "https://github.com/frankxai/Starlight-Intelligence-System",
+        "root": "https://starlight-intelligence.ai",
+        "www": "https://www.starlight-intelligence.ai",
+        "local": "C:\\Users\\frank\\starlight\\repos\\Starlight-Intelligence-System",
+        "vercel": "https://vercel.com/starlight-intelligence/site/BC25vi2AwG77dNhYitDAnQJ8xVbv"
+      },
+      "recommendedNextAction": "Verify ownership and redirect to starlightintelligence.org or reserve as product alias"
+    }
+  ],
+  "deploymentSurfaces": [
+    {
+      "status": "newly observed in Vercel project list",
+      "risk": "yellow",
+      "nextAction": "Classify owner brand, repo, domain, and approval gate before public routing.",
+      "domain": null,
+      "project": "blue-life-commons"
+    },
+    {
+      "status": "newly observed in Vercel project list",
+      "risk": "yellow",
+      "nextAction": "Classify as internal creative tool or public surface before promotion.",
+      "domain": null,
+      "project": "grok-creative-studio"
+    },
+    {
+      "status": "newly observed in Vercel project list",
+      "risk": "yellow",
+      "nextAction": "Map to Starlight/Tooling repo and decide if public domain is needed.",
+      "domain": null,
+      "project": "agentic-intelligence-system"
+    },
+    {
+      "status": "now present in Vercel project list",
+      "risk": "yellow",
+      "nextAction": "Verify production domain binding and affiliate disclosure readiness.",
+      "domain": "disruptivepassiveincome.com",
+      "project": "disruptivepassiveincome"
+    }
+  ],
+  "approvalGates": {
+    "publishPublicly": [
+      "#social-approvals",
+      "relevant #brand-* channel"
+    ],
+    "productionDeploy": [
+      "#repo-command",
+      "brand/business owner"
+    ],
+    "mergeToMain": [
+      "#repo-command"
+    ],
+    "customerOrPartnerMessage": [
+      "relevant #brand-* channel",
+      "account/business owner"
+    ],
+    "spendMoney": [
+      "#ops",
+      "business owner"
+    ],
+    "publicClaim": [
+      "source proof",
+      "relevant #brand-* channel"
+    ],
+    "privateToPublicAsset": [
+      "guardian review",
+      "relevant #brand-* channel"
+    ]
+  },
+  "executionDoctrine": {
+    "default": "hybrid_orchestrator_first",
+    "rule": "Use one strong brand orchestrator by default. Escalate to swarm only for parallelizable, uncertain, cross-domain, or failed tasks.",
+    "requiredForPublicOrProduction": [
+      "human approval",
+      "source/proof artifact",
+      "repo or Slack record",
+      "rollback/stop path"
+    ],
+    "alwaysOffUntilApproved": [
+      "profile gateways",
+      "crons",
+      "production deploys",
+      "social publishing",
+      "customer sends",
+      "spend actions"
+    ]
+  },
+  "missingRegistryFields": [
+    {
+      "domain": "vibeclubs.ai",
+      "brand": "Arcanea / Experience",
+      "missingFields": [
+        "localPath"
+      ],
+      "recommendedNextAction": "Clone or attach canonical repo, verify deploy, add Stripe/waitlist readiness and premium community positioning"
+    },
+    {
+      "domain": "aiarchitectacademy.com",
+      "brand": "AI Architect Academy",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify SSL/domain provider, choose canonical repo, and align with enterprise AI CoE offer"
+    },
+    {
+      "domain": "arcanea.io",
+      "brand": "Arcanea",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and decide developer portal vs redirect to arcanea.ai"
+    },
+    {
+      "domain": "akamoto.io",
+      "brand": "Product / Other",
+      "missingFields": [
+        "canonicalRepo",
+        "localPath",
+        "githubRepo",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Classify as product, client/other, redirect, or retire from launch scope"
+    },
+    {
+      "domain": "arcanea.dev",
+      "brand": "Arcanea",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership, then redirect or build minimal developer docs shell"
+    },
+    {
+      "domain": "arcanea.com",
+      "brand": "Arcanea",
+      "missingFields": [
+        "canonicalRepo",
+        "localPath",
+        "githubRepo",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Confirm ownership; if owned, configure SSL and redirect to arcanea.ai"
+    },
+    {
+      "domain": "arcanean.org",
+      "brand": "Arcanea",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and decide standards portal vs redirect"
+    },
+    {
+      "domain": "arcanealabs.com",
+      "brand": "Arcanea",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and redirect or park intentionally"
+    },
+    {
+      "domain": "frankx.dev",
+      "brand": "FrankX",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership/DNS, then redirect to frankx.ai/dev or build docs shell"
+    },
+    {
+      "domain": "frankx.io",
+      "brand": "FrankX",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and redirect to frankx.ai or park intentionally"
+    },
+    {
+      "domain": "frank-riemer.com",
+      "brand": "FrankX",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and configure SSL redirect to frankx.ai/about"
+    },
+    {
+      "domain": "realitydiffusion.ai",
+      "brand": "Reality Architect / Arcanea",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership/DNS and decide Reality Architect vs Arcanea visual engine route"
+    },
+    {
+      "domain": "agenticpassiveincome.com",
+      "brand": "Revenue Network",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify whether .com or .ai is canonical, then deploy or redirect one to the other"
+    },
+    {
+      "domain": "agenticpassiveincome.ai",
+      "brand": "Revenue Network",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and choose .com vs .ai canonical"
+    },
+    {
+      "domain": "disruptivepassiveincom.com",
+      "brand": "Revenue Network",
+      "missingFields": [
+        "canonicalRepo",
+        "localPath",
+        "githubRepo",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Confirm whether typo is owned; if not owned, remove from active launch scope"
+    },
+    {
+      "domain": "disruptivepassiveincome.de",
+      "brand": "Revenue Network",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and redirect to .com until localization exists"
+    },
+    {
+      "domain": "music-academy.ai",
+      "brand": "FrankX / Music",
+      "missingFields": [
+        "localPath",
+        "vercelProjectMapping",
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and decide whether to activate in July or backlog"
+    },
+    {
+      "domain": "starlight-intelligence.ai",
+      "brand": "Starlight Intelligence Systems",
+      "missingFields": [
+        "providerOwnershipVerification"
+      ],
+      "recommendedNextAction": "Verify ownership and redirect to starlightintelligence.org or reserve as product alias"
+    }
+  ]
+}

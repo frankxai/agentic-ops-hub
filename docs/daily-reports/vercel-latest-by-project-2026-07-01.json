@@ -1,0 +1,123 @@
+[
+  {
+    "project": "frankx-ai-vercel-website",
+    "state": "READY",
+    "target": null,
+    "url": "frankx-ai-vercel-website-g253riyb0-starlight-intelligence.vercel.app",
+    "ref": "claude/premium-ops-ruxnO",
+    "sha": "6ec0f9e6715efdb668f2519d50735c42faca5004",
+    "repo": "frankx.ai-vercel-website",
+    "inspector": "https://vercel.com/starlight-intelligence/frankx-ai-vercel-website/",
+    "branchAlias": "frankx-ai-vercel-website-git-clau-2bf883-starlight-intelligence.vercel.app"
+  },
+  {
+    "project": "gencreator-ai",
+    "state": "READY",
+    "target": "production",
+    "url": "gencreator-2f67dhubl-starlight-intelligence.vercel.app",
+    "ref": "main",
+    "sha": "dae2890c18b74c5b42b164c7818e7268a245ac15",
+    "repo": "gencreator.ai",
+    "inspector": "https://vercel.com/starlight-intelligence/gencreator-ai/",
+    "branchAlias": null
+  },
+  {
+    "project": "arcanea-ai-app",
+    "state": "BLOCKED",
+    "target": null,
+    "url": "arcanea-ai-lh32a2ej3-starlight-intelligence.vercel.app",
+    "ref": "backup/claude-snapshots",
+    "sha": "712dd8d9ec0f7b12a73ce7d3569b956e0861352b",
+    "repo": "arcanea-ai-app",
+    "inspector": "https://vercel.com/starlight-intelligence/arcanea-ai-app/",
+    "branchAlias": "arcanea-ai-app-git-backup-claude-60764a-starlight-intelligence.vercel.app"
+  },
+  {
+    "project": "site",
+    "state": "READY",
+    "target": "production",
+    "url": "site-kmww93egw-starlight-intelligence.vercel.app",
+    "ref": null,
+    "sha": null,
+    "repo": null,
+    "inspector": "https://vercel.com/starlight-intelligence/site/",
+    "branchAlias": null
+  },
+  {
+    "project": "anime-legends",
+    "state": "READY",
+    "target": "production",
+    "url": "anime-legends-h44ykveue-starlight-intelligence.vercel.app",
+    "ref": "main",
+    "sha": "053d297db4a490b93c84dafe4a94c76ecca4e48d",
+    "repo": "AnimeLegends",
+    "inspector": "https://vercel.com/starlight-intelligence/anime-legends/",
+    "branchAlias": "anime-legends-git-main-starlight-intelligence.vercel.app"
+  },
+  {
+    "project": "agenticincome",
+    "state": "READY",
+    "target": "production",
+    "url": "agenticincome-qlgi3o7tr-starlight-intelligence.vercel.app",
+    "ref": "agent/cleanup-sync",
+    "sha": "b07a68a6ca4499a877149bfd210ced9aec262942",
+    "repo": "agenticincome",
+    "inspector": "https://vercel.com/starlight-intelligence/agenticincome/",
+    "branchAlias": null
+  },
+  {
+    "project": "go-agenticincome",
+    "state": "READY",
+    "target": "production",
+    "url": "go-agenticincome-bw9b01fkj-starlight-intelligence.vercel.app",
+    "ref": null,
+    "sha": null,
+    "repo": null,
+    "inspector": "https://vercel.com/starlight-intelligence/go-agenticincome/",
+    "branchAlias": null
+  },
+  {
+    "project": "agenticpassiveincome",
+    "state": "READY",
+    "target": "production",
+    "url": "agenticpassiveincome-8tqugohg6-starlight-intelligence.vercel.app",
+    "ref": "main",
+    "sha": "cd658a4fc73cf76761389b63969171769f4e328b",
+    "repo": "agenticpassiveincome",
+    "inspector": "https://vercel.com/starlight-intelligence/agenticpassiveincome/",
+    "branchAlias": "agenticpassiveincome-git-main-starlight-intelligence.vercel.app"
+  },
+  {
+    "project": "realityarchitect",
+    "state": "READY",
+    "target": "production",
+    "url": "realityarchitect-79dqrl3ns-starlight-intelligence.vercel.app",
+    "ref": "main",
+    "sha": "64763120749f76a688c5f6f1501eb7d623827e41",
+    "repo": "realityarchitect",
+    "inspector": "https://vercel.com/starlight-intelligence/realityarchitect/",
+    "branchAlias": "realityarchitect-git-main-starlight-intelligence.vercel.app"
+  },
+  {
+    "project": "aiarchitectacademy",
+    "state": "NO_DEPLOYMENTS",
+    "target": null,
+    "url": null,
+    "ref": null,
+    "sha": null,
+    "repo": null,
+    "inspector": null,
+    "branchAlias": null
+  },
+  {
+    "project": "vibeclubs-web",
+    "state": "READY",
+    "target": null,
+    "url": "vibeclubs-nfydq1936-starlight-intelligence.vercel.app",
+    "ref": "main",
+    "sha": "1565f4da4a464ad471fe69bb7eb7369985308838",
+    "repo": "vibeclubs",
+    "inspector": "https://vercel.com/starlight-intelligence/vibeclubs-web/",
+    "branchAlias": null
+  }
+]

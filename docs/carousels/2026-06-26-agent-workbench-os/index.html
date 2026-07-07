@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>Agent Workbench OS Carousel</title>
+  <style>
+    :root {
+      --bg: #05060A;
+      --panel: #0B0F14;
+      --panel2: #111827;
+      --ink: #F8FAFC;
+      --muted: #94A3B8;
+      --border: #1A1F2E;
+      --tech: #14B8A6;
+      --cyan: #06B6D4;
+      --approval: #F59E0B;
+      --proof: #72E6AC;
+      --danger: #FF7A90;
+      --white: #FFFFFF;
+      --slide-w: 1080px;
+      --slide-h: 1350px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      background: #05060A;
+      color: var(--ink);
+      font-family: "Instrument Sans", "Geist", "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body.single {
+      width: var(--slide-w);
+      height: var(--slide-h);
+      overflow: hidden;
+    }
+
+    .slide {
+      position: relative;
+      width: var(--slide-w);
+      height: var(--slide-h);
+      overflow: hidden;
+      padding: 74px 76px;
+      isolation: isolate;
+      background:
+        linear-gradient(135deg, rgba(20,184,166,0.12), transparent 33%),
+        linear-gradient(315deg, rgba(245,158,11,0.12), transparent 30%),
+        var(--bg);
+      page-break-after: always;
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.032) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.032) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.72), rgba(0,0,0,0.18));
+      z-index: -3;
+    }
+
+    .slide::after {
+      content: "";
+      position: absolute;
+      inset: 34px;
+      border: 1px solid rgba(248,250,252,0.12);
+      pointer-events: none;
+      z-index: 6;
+    }
+
+    .single .slide { display: none; }
+    .single .slide.active { display: block; }
+
+    .kicker {
+      color: var(--tech);
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--approval);
+      display: inline-block;
+    }
+
+    .meta {
+      position: absolute;
+      right: 76px;
+      top: 76px;
+      color: rgba(248,250,252,0.58);
+      font-size: 18px;
+      font-weight: 650;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-size: 88px;
+      line-height: 0.94;
+      font-weight: 840;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      max-width: 850px;
+      font-size: 72px;
+      line-height: 0.96;
+      font-weight: 820;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      max-width: 760px;
+      margin-top: 28px;
+      color: #C9D2E4;
+      font-size: 34px;
+      line-height: 1.18;
+      font-weight: 520;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1.35;
+      font-weight: 520;
+    }
+
+    .brand {
+      position: absolute;
+      left: 76px;
+      bottom: 58px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(248,250,252,0.72);
+      font-size: 18px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+
+    .brand .dot {
+      width: 9px;
+      height: 9px;
+      background: var(--tech);
+      box-shadow: 0 0 20px rgba(20,184,166,0.72);
+    }
+
+    .slide-number {
+      position: absolute;
+      right: 76px;
+      bottom: 58px;
+      color: var(--approval);
+      font-size: 18px;
+      font-weight: 760;
+    }
+
+    .rule {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 108px;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(20,184,166,0.76), rgba(245,158,11,0.46), transparent);
+    }
+
+    .workbench-cover {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 150px;
+      height: 430px;
+      border: 1px solid rgba(248,250,252,0.13);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)),
+        rgba(8,12,20,0.84);
+      box-shadow: 0 40px 120px rgba(0,0,0,0.48);
+    }
+
+    .bench-rail {
+      position: absolute;
+      left: 44px;
+      right: 44px;
+      top: 192px;
+      height: 6px;
+      background: linear-gradient(90deg, var(--tech), var(--cyan), var(--approval));
+      box-shadow: 0 0 28px rgba(20,184,166,0.45);
+    }
+
+    .bench-card {
+      position: absolute;
+      top: 92px;
+      width: 126px;
+      height: 210px;
+      border: 1px solid rgba(248,250,252,0.15);
+      background: rgba(5,6,10,0.9);
+      padding: 18px 14px;
+    }
+
+    .bench-card strong {
+      display: block;
+      font-size: 22px;
+      line-height: 1;
+      margin-top: 36px;
+    }
+
+    .bench-card span {
+      display: block;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.2;
+    }
+
+    .bench-card i {
+      position: absolute;
+      top: 18px;
+      left: 16px;
+      width: 16px;
+      height: 16px;
+      background: var(--tech);
+      box-shadow: 0 0 24px rgba(20,184,166,0.7);
+      font-style: normal;
+    }
+
+    .bench-card:nth-child(2) { left: 54px; }
+    .bench-card:nth-child(3) { left: 204px; }
+    .bench-card:nth-child(4) { left: 354px; }
+    .bench-card:nth-child(5) { left: 504px; }
+    .bench-card:nth-child(6) { left: 654px; border-color: rgba(245,158,11,0.44); }
+    .bench-card:nth-child(6) i { background: var(--approval); box-shadow: 0 0 24px rgba(245,158,11,0.72); }
+    .bench-card:nth-child(7) { left: 804px; }
+
+    .big-word {
+      position: absolute;
+      right: 74px;
+      bottom: 618px;
+      font-size: 128px;
+      line-height: 0.78;
+      font-weight: 900;
+      color: rgba(248,250,252,0.04);
+      z-index: -1;
+    }
+
+    .chaos-board {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 155px;
+      height: 555px;
+    }
+
+    .broken-line {
+      position: absolute;
+      left: 0;
+      top: 242px;
+      width: 100%;
+      height: 4px;
+      background: repeating-linear-gradient(90deg, var(--danger) 0 54px, transparent 54px 84px);
+      opacity: 0.76;
+    }
+
+    .drift-card {
+      position: absolute;
+      width: 268px;
+      min-height: 190px;
+      padding: 24px;
+      border: 1px solid rgba(255,122,144,0.28);
+      background: rgba(8,10,16,0.92);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.34);
+    }
+
+    .drift-card strong {
+      display: block;
+      color: var(--ink);
+      font-size: 32px;
+      line-height: 1.02;
+    }
+
+    .drift-card span {
+      display: block;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .drift-card.one { left: 0; top: 30px; }
+    .drift-card.two { left: 328px; top: 178px; }
+    .drift-card.three { right: 0; top: 60px; }
+    .drift-card.four { left: 132px; bottom: 0; border-color: rgba(245,158,11,0.34); }
+
+    .model-wrap {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 142px;
+      height: 648px;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .model-core {
+      border: 1px solid rgba(20,184,166,0.32);
+      background: rgba(6,12,16,0.88);
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .model-core::after {
+      content: "";
+      position: absolute;
+      inset: 50px;
+      border: 1px solid rgba(248,250,252,0.11);
+    }
+
+    .model-core .surface-name {
+      position: absolute;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 28px;
+    }
+
+    .surface-name.intake { left: 40px; top: 64px; color: var(--tech); }
+    .surface-name.bench { left: 210px; top: 238px; font-size: 42px; }
+    .surface-name.source { right: 50px; top: 96px; color: var(--cyan); }
+    .surface-name.proof { left: 62px; bottom: 112px; color: var(--proof); }
+    .surface-name.approval { right: 44px; bottom: 132px; color: var(--approval); }
+    .surface-name.learn { right: 170px; bottom: 48px; }
+
+    .packet-stack {
+      position: absolute;
+      left: 198px;
+      top: 320px;
+      width: 160px;
+      height: 110px;
+      background: var(--ink);
+      color: var(--bg);
+      padding: 18px;
+      font-weight: 900;
+      font-size: 19px;
+      box-shadow: 14px 14px 0 rgba(20,184,166,0.36);
+      z-index: 3;
+    }
+
+    .model-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .model-item {
+      border: 1px solid rgba(248,250,252,0.13);
+      background: rgba(11,15,20,0.92);
+      padding: 24px;
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 62px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .model-item b {
+      width: 58px;
+      height: 58px;
+      background: rgba(20,184,166,0.13);
+      color: var(--tech);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .model-item strong {
+      font-size: 30px;
+      line-height: 1.02;
+    }
+
+    .model-item span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.22;
+    }
+
+    .surface-grid {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 148px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .surface {
+      min-height: 238px;
+      padding: 24px;
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(8,12,20,0.91);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .surface .icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      background: rgba(20,184,166,0.12);
+      color: var(--tech);
+      font-weight: 900;
+      font-size: 26px;
+      margin-bottom: 28px;
+    }
+
+    .surface.approve .icon { background: rgba(245,158,11,0.14); color: var(--approval); }
+
+    .surface strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .surface span {
+      display: block;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.22;
+    }
+
+    .split {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 148px;
+      height: 620px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .split-panel {
+      position: relative;
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(8,12,20,0.92);
+      padding: 38px;
+      overflow: hidden;
+    }
+
+    .split-panel.prepare { border-color: rgba(20,184,166,0.38); }
+    .split-panel.approve { border-color: rgba(245,158,11,0.44); }
+
+    .split-panel h3 {
+      margin: 0;
+      font-size: 50px;
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .split-panel.prepare h3 { color: var(--proof); }
+    .split-panel.approve h3 { color: var(--approval); }
+
+    .split-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 38px 0 0;
+      display: grid;
+      gap: 18px;
+    }
+
+    .split-panel li {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 14px;
+      color: #DDE6F7;
+      font-size: 28px;
+      line-height: 1.12;
+    }
+
+    .split-panel li::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      margin-top: 7px;
+      background: currentColor;
+    }
+
+    .gate-bar {
+      position: absolute;
+      left: -40px;
+      right: -40px;
+      bottom: 70px;
+      height: 84px;
+      background: repeating-linear-gradient(90deg, rgba(245,158,11,0.85) 0 18px, rgba(245,158,11,0.2) 18px 36px);
+      transform: rotate(-2deg);
+      opacity: 0.86;
+    }
+
+    .packet {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 140px;
+      height: 688px;
+      background: #F8FAFC;
+      color: #05060A;
+      padding: 54px 56px;
+      box-shadow: 24px 24px 0 rgba(20,184,166,0.34), -18px -18px 0 rgba(245,158,11,0.24);
+    }
+
+    .packet h3 {
+      margin: 0 0 34px;
+      font-size: 52px;
+      line-height: 0.94;
+      letter-spacing: 0;
+    }
+
+    .field {
+      min-height: 76px;
+      border-top: 2px solid rgba(5,6,10,0.16);
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .field:last-child { border-bottom: 2px solid rgba(5,6,10,0.16); }
+
+    .field b {
+      color: #0B0F14;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .field span {
+      color: rgba(5,6,10,0.68);
+      font-size: 26px;
+      line-height: 1.05;
+      font-weight: 650;
+    }
+
+    .stamp {
+      position: absolute;
+      right: 52px;
+      top: 50px;
+      border: 5px solid var(--approval);
+      color: var(--approval);
+      padding: 14px 18px;
+      font-size: 26px;
+      font-weight: 900;
+      transform: rotate(7deg);
+    }
+
+    .proof-wall {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 145px;
+      height: 620px;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 28px;
+    }
+
+    .proof-card {
+      background: rgba(248,250,252,0.96);
+      color: var(--bg);
+      padding: 38px;
+      position: relative;
+    }
+
+    .proof-card strong {
+      display: block;
+      font-size: 56px;
+      line-height: 0.9;
+      letter-spacing: 0;
+    }
+
+    .proof-card p {
+      margin-top: 24px;
+      color: rgba(5,6,10,0.68);
+      font-size: 28px;
+      line-height: 1.14;
+      font-weight: 640;
+    }
+
+    .receipt-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .receipt {
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(8,12,20,0.94);
+      padding: 22px 24px;
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 16px;
+      align-items: center;
+      min-height: 92px;
+    }
+
+    .receipt b {
+      width: 34px;
+      height: 34px;
+      background: var(--proof);
+      color: #06100D;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .receipt span {
+      color: #E8EEF9;
+      font-size: 27px;
+      line-height: 1.04;
+      font-weight: 720;
+    }
+
+    .source-signal {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 148px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .source-card {
+      min-height: 340px;
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(8,12,20,0.92);
+      padding: 28px;
+      position: relative;
+    }
+
+    .source-card .tag {
+      color: var(--tech);
+      font-size: 18px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .source-card strong {
+      display: block;
+      margin-top: 26px;
+      font-size: 38px;
+      line-height: 0.95;
+    }
+
+    .source-card span {
+      display: block;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 22px;
+      line-height: 1.23;
+    }
+
+    .source-card .link {
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      bottom: 26px;
+      color: rgba(248,250,252,0.58);
+      font-size: 13px;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+
+    .setup {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 138px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .setup-row {
+      min-height: 92px;
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(8,12,20,0.92);
+      display: grid;
+      grid-template-columns: 92px 1fr 220px;
+      align-items: center;
+      gap: 22px;
+      padding: 0 26px 0 0;
+    }
+
+    .setup-row b {
+      height: 92px;
+      background: rgba(20,184,166,0.16);
+      color: var(--tech);
+      display: grid;
+      place-items: center;
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .setup-row strong {
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .setup-row span {
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.14;
+    }
+
+    .setup-row.approval b {
+      background: rgba(245,158,11,0.16);
+      color: var(--approval);
+    }
+
+    .final-grid {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 142px;
+      height: 570px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+    }
+
+    .final-card {
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(8,12,20,0.92);
+      padding: 34px;
+    }
+
+    .final-card h3 {
+      margin: 0;
+      font-size: 58px;
+      line-height: 0.92;
+      letter-spacing: 0;
+    }
+
+    .cta {
+      margin-top: 38px;
+      display: inline-block;
+      background: var(--ink);
+      color: var(--bg);
+      padding: 22px 28px;
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .mini-sources {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.35;
+    }
+
+    .mini-bench {
+      position: relative;
+      min-height: 100%;
+      border: 1px solid rgba(245,158,11,0.26);
+      background: rgba(5,6,10,0.78);
+      padding: 28px;
+    }
+
+    .mini-node {
+      border: 1px solid rgba(248,250,252,0.14);
+      background: rgba(11,15,20,0.94);
+      padding: 18px;
+      font-size: 24px;
+      font-weight: 850;
+      margin-bottom: 16px;
+    }
+
+    .mini-node.approve {
+      border-color: rgba(245,158,11,0.44);
+      color: var(--approval);
+    }
+
+    @page {
+      size: 1080px 1350px;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body {
+        width: 1080px;
+        margin: 0;
+        background: #05060A;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .slide {
+        width: 1080px;
+        height: 1350px;
+        page-break-after: always;
+        break-after: page;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="slide" id="slide-1">
+      <div class="kicker">FrankX / Builder Education</div>
+      <div class="meta">Agent Workbench OS</div>
+      <h1 style="margin-top: 102px;">Your AI agents do not need more prompts.</h1>
+      <p class="sub">They need a workbench: a place for work to enter, proof to form, and risky moves to wait for human approval.</p>
+      <div class="big-word">WORK<br>BENCH</div>
+      <div class="workbench-cover" aria-hidden="true">
+        <div class="bench-rail"></div>
+        <div class="bench-card"><i></i><strong>Intake</strong><span>what changed and why</span></div>
+        <div class="bench-card"><i></i><strong>Bench</strong><span>bounded active work</span></div>
+        <div class="bench-card"><i></i><strong>Source</strong><span>repo, docs, proof</span></div>
+        <div class="bench-card"><i></i><strong>Proof</strong><span>checks and evidence</span></div>
+        <div class="bench-card"><i></i><strong>Approve</strong><span>human gate</span></div>
+        <div class="bench-card"><i></i><strong>Learn</strong><span>carry forward</span></div>
+      </div>
+      <div class="rule"></div>
+      <div class="brand"><span class="dot"></span>FrankX / AI-Architect</div>
+      <div class="slide-number">01 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-2">
+      <div class="kicker">The failure mode</div>
+      <div class="meta">02 / 10</div>
+      <h2 style="margin-top: 96px;">Prompts alone create drift.</h2>
+      <p class="sub">When every request starts from a blank chat, the agent has no lane, no source of truth, no proof standard, and no stop condition.</p>
+      <div class="chaos-board" aria-hidden="true">
+        <div class="broken-line"></div>
+        <div class="drift-card one"><strong>Loose ask</strong><span>No owner, scope, boundary, or proof requirement.</span></div>
+        <div class="drift-card two"><strong>Tool hopping</strong><span>Work spreads across chats, branches, docs, and apps.</span></div>
+        <div class="drift-card three"><strong>Silent change</strong><span>Something moves, but nobody knows what changed.</span></div>
+        <div class="drift-card four"><strong>Autonomy theater</strong><span>It looks advanced until approval, evidence, or source truth is needed.</span></div>
+      </div>
+      <div class="rule"></div>
+      <div class="brand"><span class="dot"></span>Steal the packet, not the vibe</div>
+      <div class="slide-number">02 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-3">
+      <div class="kicker">The new model</div>
+      <div class="meta">03 / 10</div>
+      <h2 style="margin-top: 88px;">A workbench, not a chat.</h2>
+      <p class="sub">Give each agent workflow a physical operating surface: intake, bench, source, proof, approval, and learning.</p>
+      <div class="model-wrap" aria-hidden="true">
+        <div class="model-core">
+          <div class="surface-name intake">Intake</div>
+          <div class="surface-name source">Source</div>
+          <div class="surface-name bench">Active bench</div>
+          <div class="surface-name proof">Proof</div>
+          <div class="surface-name approval">Approval gate</div>
+          <div class="surface-name learn">Learning shelf</div>
+          <div class="packet-stack">WORK ORDER</div>
+        </div>
+        <div class="model-list">
+          <div class="model-item"><b>1</b><div><strong>Requests enter before agents act.</strong><span>Capture objective, owner, and risk.</span></div></div>
+          <div class="model-item"><b>2</b><div><strong>Work happens inside a bounded space.</strong><span>Branch, thread, project, repo, or app workspace.</span></div></div>
+          <div class="model-item"><b>3</b><div><strong>Proof returns before approval.</strong><span>Links, checks, screenshots, source notes, and decision needed.</span></div></div>
+          <div class="model-item"><b>4</b><div><strong>Learning changes the next run.</strong><span>Keep what worked. Cut what failed.</span></div></div>
+        </div>
+      </div>
+      <div class="brand"><span class="dot"></span>Founder AI Operations</div>
+      <div class="slide-number">03 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-4">
+      <div class="kicker">The six surfaces</div>
+      <div class="meta">04 / 10</div>
+      <h2 style="margin-top: 92px;">Every agent workflow needs a place to live.</h2>
+      <div class="surface-grid" aria-hidden="true">
+        <div class="surface"><div class="icon">I</div><strong>Intake</strong><span>Requests, context, owner, priority, and risk.</span></div>
+        <div class="surface"><div class="icon">B</div><strong>Bench</strong><span>Branch, thread, project, or bounded app workspace.</span></div>
+        <div class="surface"><div class="icon">S</div><strong>Source</strong><span>Repo, docs, product truth, citations, and constraints.</span></div>
+        <div class="surface"><div class="icon">P</div><strong>Proof</strong><span>Tests, screenshots, diffs, citations, and QA notes.</span></div>
+        <div class="surface approve"><div class="icon">A</div><strong>Approval</strong><span>Human gate for public, production, money, and customer risk.</span></div>
+        <div class="surface"><div class="icon">L</div><strong>Learning</strong><span>Decision notes, performance, corrections, and next rule.</span></div>
+      </div>
+      <div class="brand"><span class="dot"></span>Spaces before tools</div>
+      <div class="slide-number">04 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-5">
+      <div class="kicker">Guarded autonomy</div>
+      <div class="meta">05 / 10</div>
+      <h2 style="margin-top: 92px;">Agents prepare. Humans approve.</h2>
+      <div class="split" aria-hidden="true">
+        <div class="split-panel prepare">
+          <h3>Allowed by default</h3>
+          <ul>
+            <li>Research and summarize</li>
+            <li>Draft copy or code</li>
+            <li>Run local checks</li>
+            <li>Prepare screenshots</li>
+            <li>Return proof packets</li>
+          </ul>
+        </div>
+        <div class="split-panel approve">
+          <h3>Needs a human yes</h3>
+          <ul>
+            <li>Publish or schedule</li>
+            <li>Deploy production</li>
+            <li>Merge to main</li>
+            <li>Message customers</li>
+            <li>Spend or change access</li>
+          </ul>
+          <div class="gate-bar"></div>
+        </div>
+      </div>
+      <div class="brand"><span class="dot"></span>The first workflow is the approval workflow</div>
+      <div class="slide-number">05 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-6">
+      <div class="kicker">The packet</div>
+      <div class="meta">06 / 10</div>
+      <h2 style="margin-top: 92px;">Give the agent the work order, not a vibe.</h2>
+      <div class="packet" aria-hidden="true">
+        <div class="stamp">USE FIRST</div>
+        <h3>Operating packet</h3>
+        <div class="field"><b>Objective</b><span>What should exist when this is done?</span></div>
+        <div class="field"><b>Context</b><span>Repo, docs, brand, customer, sources, constraints.</span></div>
+        <div class="field"><b>Boundary</b><span>Allowed files, non-goals, stop conditions.</span></div>
+        <div class="field"><b>Checks</b><span>Build, lint, test, visual QA, source review.</span></div>
+        <div class="field"><b>Proof</b><span>Links, screenshots, diffs, source list, decision needed.</span></div>
+        <div class="field"><b>Approval</b><span>What needs a human yes before action?</span></div>
+      </div>
+      <div class="brand"><span class="dot"></span>Copyable builder template</div>
+      <div class="slide-number">06 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-7">
+      <div class="kicker">Proof before autonomy</div>
+      <div class="meta">07 / 10</div>
+      <h2 style="margin-top: 92px;">A confident agent is not a trustworthy system.</h2>
+      <p class="sub">Trust arrives when the agent returns evidence another human can inspect.</p>
+      <div class="proof-wall" aria-hidden="true">
+        <div class="proof-card">
+          <strong>No proof, no public move.</strong>
+          <p>The proof packet is the difference between useful delegation and blind automation.</p>
+        </div>
+        <div class="receipt-list">
+          <div class="receipt"><b>1</b><span>Source links or repo paths</span></div>
+          <div class="receipt"><b>2</b><span>Checks run and result</span></div>
+          <div class="receipt"><b>3</b><span>Screenshot or rendered asset</span></div>
+          <div class="receipt"><b>4</b><span>Claim-risk label</span></div>
+          <div class="receipt"><b>5</b><span>Human decision requested</span></div>
+        </div>
+      </div>
+      <div class="brand"><span class="dot"></span>Proof is the trust layer</div>
+      <div class="slide-number">07 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-8">
+      <div class="kicker">Current official signal</div>
+      <div class="meta">08 / 10</div>
+      <h2 style="margin-top: 88px;">Capability is rising. Governance has to rise with it.</h2>
+      <p class="sub">Official product docs frame coding agents as systems that can work with codebases, tools, and longer software tasks. Treat that as a reason to improve the operating model.</p>
+      <div class="source-signal" aria-hidden="true">
+        <div class="source-card">
+          <div class="tag">OpenAI</div>
+          <strong>Codex</strong>
+          <span>Official Codex materials describe a cloud-based coding agent for software work.</span>
+          <div class="link">openai.com/codex/</div>
+        </div>
+        <div class="source-card">
+          <div class="tag">OpenAI docs</div>
+          <strong>Codex cloud</strong>
+          <span>Cloud docs frame Codex as a way to delegate software engineering tasks in a controlled environment.</span>
+          <div class="link">developers.openai.com/codex/cloud</div>
+        </div>
+        <div class="source-card">
+          <div class="tag">Anthropic</div>
+          <strong>Claude Code</strong>
+          <span>Claude Code docs describe an agentic coding tool for terminal, IDE, browser, and cloud workflows.</span>
+          <div class="link">code.claude.com/docs/en/overview</div>
+        </div>
+      </div>
+      <div class="brand"><span class="dot"></span>Source-backed, not hype-backed</div>
+      <div class="slide-number">08 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-9">
+      <div class="kicker">Starter setup</div>
+      <div class="meta">09 / 10</div>
+      <h2 style="margin-top: 92px;">Build the workbench before you add autonomy.</h2>
+      <div class="setup" aria-hidden="true">
+        <div class="setup-row"><b>1</b><strong>Name the intake lane.</strong><span>Where requests arrive before assignment.</span></div>
+        <div class="setup-row"><b>2</b><strong>Pick the active workspace.</strong><span>Branch, thread, project, repo, app, or room.</span></div>
+        <div class="setup-row"><b>3</b><strong>Define source truth.</strong><span>Repos, docs, specs, brand packs, and citations.</span></div>
+        <div class="setup-row"><b>4</b><strong>Require proof.</strong><span>Rendered assets, tests, checks, links, and screenshots.</span></div>
+        <div class="setup-row approval"><b>5</b><strong>Write the approval gate.</strong><span>Public, production, financial, customer, access.</span></div>
+        <div class="setup-row"><b>6</b><strong>Save the learning.</strong><span>What to make, cut, and carry forward.</span></div>
+      </div>
+      <div class="brand"><span class="dot"></span>Use before your next Codex or Claude Code session</div>
+      <div class="slide-number">09 / 10</div>
+    </section>
+
+    <section class="slide" id="slide-10">
+      <div class="kicker">Save this</div>
+      <div class="meta">10 / 10</div>
+      <h2 style="margin-top: 92px;">The real stack is not more tools.</h2>
+      <p class="sub">It is intake, workspace, truth, proof, approval, and learning.</p>
+      <div class="final-grid" aria-hidden="true">
+        <div class="final-card">
+          <h3>Agents prepare the work. Humans approve irreversible moves.</h3>
+          <div class="cta">Comment "agent OS" for the setup template.</div>
+          <div class="mini-sources">
+            Sources checked: OpenAI Codex, OpenAI Codex cloud docs, Anthropic Claude Code overview. No public publish or schedule action is approved by this deck.
+          </div>
+        </div>
+        <div class="mini-bench">
+          <div class="mini-node">Intake</div>
+          <div class="mini-node">Bench</div>
+          <div class="mini-node">Source</div>
+          <div class="mini-node">Proof</div>
+          <div class="mini-node approve">Approval</div>
+          <div class="mini-node">Learning</div>
+        </div>
+      </div>
+      <div class="brand"><span class="dot"></span>FrankX / Builder Education</div>
+      <div class="slide-number">10 / 10</div>
+    </section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const slide = params.get("slide");
+    if (slide) {
+      document.body.classList.add("single");
+      const target = document.getElementById(`slide-${slide}`);
+      if (target) target.classList.add("active");
+    }
+  </script>
+</body>
+</html>

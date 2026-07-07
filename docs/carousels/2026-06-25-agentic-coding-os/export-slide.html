@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    html, body { margin: 0; width: 1080px; height: 1350px; overflow: hidden; background: #05060A; }
+    iframe { position: absolute; left: 0; top: 0; width: 1080px; height: 13500px; border: 0; transform-origin: 0 0; }
+  </style>
+</head>
+<body>
+  <iframe id="deck" src="index.html"></iframe>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const slide = Math.max(1, Number(params.get('slide') || '1'));
+    const iframe = document.getElementById('deck');
+    iframe.style.transform = `translateY(-${(slide - 1) * 1350}px)`;
+  </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
  *   1. AGENTS.md   — the cross-agent standard (agents.md)
  *   2. CLAUDE.md   — legacy fallback
  *
- * Extracts the "## LLM Behavioral Guardrails" section and fans it out to:
+ * Extracts the always-on guardrail section and fans it out to:
  *   - Cursor:   .cursor/rules/coding-guardrails.mdc   (current .mdc format, alwaysApply)
  *   - Cline:    .clinerules/coding-guardrails.md      (directory format)
  *   - Copilot:  .github/copilot-instructions.md
@@ -50,7 +50,7 @@ function extractRules(content) {
 function targets(rules) {
   const skill = `---
 name: coding-guardrails
-description: "Unified LLM coding rules: thinking protocols, simplicity, surgical changes, goal-driven verification. Triggers on: code rules, guardrails, coding guidelines, conventions, coding style."
+description: "Unified coding rules and execution loop: thinking protocols, scoped changes, verification, red-team handoff. Triggers on: code rules, guardrails, coding guidelines, conventions, coding style, agent loop."
 ---
 
 ${GENERATED_NOTICE}
@@ -61,7 +61,7 @@ ${rules}
 `;
 
   const mdc = `---
-description: Unified coding guardrails (Top Thinkers System) — synced from AGENTS.md
+description: Unified coding guardrails and execution loop — synced from AGENTS.md
 alwaysApply: true
 ---
 

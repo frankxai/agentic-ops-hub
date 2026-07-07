@@ -1,0 +1,166 @@
+name: Device Runtime Template
+version: 0.1.0
+mode: guarded_24_7
+principles:
+  - "Slack is the cockpit."
+  - "The agent runtime is the work queue and execution layer."
+  - "GitHub is code truth."
+  - "Docs are durable operating memory."
+  - "Heavy coding agents are invoked specialists, not uncontrolled daemons."
+  - "No public action happens without approval."
+devices:
+  primary_command_workstation:
+    role: command_and_creative
+    example: "Yoga Book 9i"
+    responsibilities:
+      - executive_decisions
+      - slack_command
+      - frontend_review
+      - product_review
+      - creative_direction
+      - visual_qa
+      - content_film_prep
+      - preview_verification
+    profiles:
+      - orchestrator
+      - brand
+      - content
+      - creative
+      - frontend
+    max_heavy_sessions_default: 4
+    can_start_gateways: true
+    first_gateway_only: orchestrator
+  satellite_batch_worker:
+    role: backend_repo_qa_research
+    example: "Second Lenovo Yoga"
+    responsibilities:
+      - repo_sweeps
+      - tests_and_builds
+      - backend_jobs
+      - github_branch_hygiene
+      - source_backed_research
+      - support_drafts
+      - batch_automation
+    profiles:
+      - tooling
+      - research
+      - sensitive-research
+      - backend
+      - support
+      - revenue
+    max_heavy_sessions_default: 2
+    can_start_gateways: true
+    first_gateway_only: tooling_or_research
+  mobile_cockpit:
+    role: approvals_and_triage
+    responsibilities:
+      - approve_or_reject_public_actions
+      - triage_asks
+      - read_daily_digest
+      - escalate_blockers
+    profiles: []
+    can_start_gateways: false
+health_zones:
+  green:
+    can:
+      - spawn_approved_workers
+      - run_scheduled_lightweight_automation
+      - process_queued_tasks
+    requires:
+      - disk_ok
+      - memory_ok
+      - network_ok
+      - sync_ok
+      - credentials_ok
+  yellow:
+    can:
+      - finish_current_work
+      - queue_new_work
+      - run_read_only_checks
+    cannot:
+      - start_new_heavy_sessions
+      - start_new_gateways
+  red:
+    can:
+      - stop_unsafe_runtime
+      - run_safe_cleanup
+      - report_status
+      - block_work_queue
+    cannot:
+      - spawn_workers
+      - publish
+      - deploy
+      - merge
+      - send_external_messages
+sync_policy:
+  code: Git
+  allowed_sync:
+    - vaults
+    - inbox
+    - scratch
+    - notes
+    - handoffs
+  forbidden_sync:
+    - .git
+    - .env
+    - tokens
+    - ssh_keys
+    - sessions
+    - logs
+    - runtime_state
+    - caches
+    - node_modules
+    - .venv
+    - .next
+    - .turbo
+    - mcp_credentials
+    - lock_files
+    - pid_files
+    - ports
+approval_gates:
+  publish_publicly: social_approvals
+  production_deploy: repo_command_and_business_owner
+  merge_to_main: repo_command
+  customer_message: account_or_brand_owner
+  spend_money: business_owner
+  private_to_public_asset: guardian
+  public_claim: research_proof
+  health_sensitive_output: guardian_and_subject_matter_review
+  private_family_or_memory_data: explicit_owner_approval
+first_safe_test:
+  name: read_only_runtime_health_report
+  allowed:
+    - read_profile_list
+    - read_kanban_stats
+    - read_repo_status
+    - read_device_scan_output
+  forbidden:
+    - start_gateway
+    - create_branch
+    - deploy
+    - publish
+    - send_external_message
+  proof:
+    - slack_update
+    - report_link
+    - no_public_action
+activation_sequence:
+  - run_primary_device_scan
+  - run_satellite_device_scan
+  - confirm_sync_exclusions
+  - confirm_profiles_exist
+  - confirm_gateways_stopped
+  - create_command_room_anchor_posts
+  - configure_orchestrator_gateway_credentials
+  - start_orchestrator_gateway_only
+  - run_first_safe_test
+  - add_satellite_worker
+  - activate_specialist_profiles_one_at_a_time
+  - activate_sensitive_research_only_after_boundary_tests
+stop_procedure:
+  - stop_new_workers
+  - stop_newly_started_gateway_if_needed
+  - preserve_logs
+  - post_blocker
+  - block_active_cards
+  - record_handoff

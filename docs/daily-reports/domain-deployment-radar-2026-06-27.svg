@@ -1,0 +1,93 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='920' viewBox='0 0 1400 920'>
+<rect width='100%' height='100%' fill='#0f1115'/>
+<text x='48' y='64' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='30' font-weight='700'>Domain Deployment Radar - 2026-06-27</text>
+<text x='48' y='98' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='16'>Read-only run: 1 green, 23 yellow, 3 red. Changed signals: 15 / 27.</text>
+<circle cx='1040' cy='54' r='7' fill='#19a974'/><text x='1056' y='59' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='14'>Green</text>
+<circle cx='1040' cy='84' r='7' fill='#d99000'/><text x='1056' y='89' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='14'>Yellow</text>
+<circle cx='1040' cy='114' r='7' fill='#d33f49'/><text x='1056' y='119' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='14'>Red</text>
+<rect x='48' y='135' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='48' y='135' width='7' height='155' rx='3' fill='#19a974'/>
+<text x='70' y='165' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>frankx.ai</text>
+<text x='70' y='190' fill='#19a974' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>GREEN - FrankX</text>
+<text x='70' y='215' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production main</text>
+<text x='70' y='239' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: none</text>
+<text x='70' y='263' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: verdict yellow-&gt;green; sha 495542d-&gt;2ee3d30; dirty 267-&gt;0</text>
+<rect x='477' y='135' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='477' y='135' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='499' y='165' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>gencreator.ai</text>
+<text x='499' y='190' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - FrankX / GenCreator</text>
+<text x='499' y='215' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production main</text>
+<text x='499' y='239' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject</text>
+<text x='499' y='263' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 1d2fecc-&gt;201fb64; dirty 9-&gt;0</text>
+<rect x='906' y='314' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='906' y='314' width='7' height='155' rx='3' fill='#d33f49'/>
+<text x='928' y='344' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>arcanea.ai</text>
+<text x='928' y='369' fill='#d33f49' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>RED - Arcanea</text>
+<text x='928' y='394' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: BLOCKED/ backup/claude-snapshots</text>
+<text x='928' y='418' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject</text>
+<text x='928' y='442' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 2d1b070-&gt;6a4774f; dirty 87-&gt;88</text>
+<rect x='48' y='314' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='48' y='314' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='70' y='344' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>starlightintelligence.org</text>
+<text x='70' y='369' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - Starlight Intelligence Systems</text>
+<text x='70' y='394' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production phase1/foundations</text>
+<text x='70' y='418' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: none</text>
+<text x='70' y='442' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha unknown-&gt;63a434f</text>
+<rect x='477' y='314' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='477' y='314' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='499' y='344' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>agenticincome.ai</text>
+<text x='499' y='369' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - Revenue Network</text>
+<text x='499' y='394' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production agent/cleanup-sync</text>
+<text x='499' y='418' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: none</text>
+<text x='499' y='442' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: dirty 39-&gt;49</text>
+<rect x='906' y='493' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='906' y='493' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='928' y='523' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>aiarchitectacademy.com</text>
+<text x='928' y='548' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - AI Architect Academy</text>
+<text x='928' y='573' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: / </text>
+<text x='928' y='597' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject</text>
+<text x='928' y='621' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: vercelState none-&gt;; sha none-&gt;</text>
+<rect x='48' y='493' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='48' y='493' width='7' height='155' rx='3' fill='#d33f49'/>
+<text x='70' y='523' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>arcanea.io</text>
+<text x='70' y='548' fill='#d33f49' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>RED - Arcanea</text>
+<text x='70' y='573' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: BLOCKED/ backup/claude-snapshots</text>
+<text x='70' y='597' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject, providerOwnershipVerification</text>
+<text x='70' y='621' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 2d1b070-&gt;6a4774f; dirty 87-&gt;88</text>
+<rect x='477' y='493' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='477' y='493' width='7' height='155' rx='3' fill='#d33f49'/>
+<text x='499' y='523' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>arcanea.dev</text>
+<text x='499' y='548' fill='#d33f49' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>RED - Arcanea</text>
+<text x='499' y='573' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: BLOCKED/ backup/claude-snapshots</text>
+<text x='499' y='597' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject, providerOwnershipVerification</text>
+<text x='499' y='621' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 2d1b070-&gt;6a4774f; dirty 87-&gt;88</text>
+<rect x='906' y='672' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='906' y='672' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='928' y='702' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>frankx.dev</text>
+<text x='928' y='727' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - FrankX</text>
+<text x='928' y='752' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production main</text>
+<text x='928' y='776' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject, providerOwnershipVerification</text>
+<text x='928' y='800' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 495542d-&gt;2ee3d30; dirty 267-&gt;0</text>
+<rect x='48' y='672' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='48' y='672' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='70' y='702' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>frankx.io</text>
+<text x='70' y='727' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - FrankX</text>
+<text x='70' y='752' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production main</text>
+<text x='70' y='776' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject, providerOwnershipVerification</text>
+<text x='70' y='800' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 495542d-&gt;2ee3d30; dirty 267-&gt;0</text>
+<rect x='477' y='672' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='477' y='672' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='499' y='702' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>frank-riemer.com</text>
+<text x='499' y='727' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - FrankX</text>
+<text x='499' y='752' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production main</text>
+<text x='499' y='776' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: customDomainOnExpectedVercelProject, providerOwnershipVerification</text>
+<text x='499' y='800' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha 495542d-&gt;2ee3d30; dirty 267-&gt;0</text>
+<rect x='906' y='851' width='405' height='155' rx='8' fill='#181b22' stroke='#303642'/>
+<rect x='906' y='851' width='7' height='155' rx='3' fill='#d99000'/>
+<text x='928' y='881' fill='#f2f4f8' font-family='Segoe UI, Arial, sans-serif' font-size='18' font-weight='700'>agenticpassiveincome.com</text>
+<text x='928' y='906' fill='#d99000' font-family='Segoe UI, Arial, sans-serif' font-size='13' font-weight='700'>YELLOW - Revenue Network</text>
+<text x='928' y='931' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Vercel: READY/production main</text>
+<text x='928' y='955' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='13'>Missing: providerOwnershipVerification</text>
+<text x='928' y='979' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='12'>Change: sha unknown-&gt;cd658a4</text>
+<text x='48' y='872' fill='#aab1bf' font-family='Segoe UI, Arial, sans-serif' font-size='14'>Approval gate: no deploy, DNS, merge, promotion, purchase, public publish, external message, or gateway start from this radar.</text>
+</svg>

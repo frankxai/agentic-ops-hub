@@ -1,0 +1,113 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='760' viewBox='0 0 1200 760'>
+<rect width='100%' height='100%' fill='#101316'/>
+<text x='40' y='52' fill='#f4f1e8' font-family='Arial' font-size='28' font-weight='700'>Domain Deployment Radar - 2026-06-28</text>
+<text x='40' y='82' fill='#aeb6bf' font-family='Arial' font-size='14'>Green 0 | Yellow 24 | Red 3 | Changed 12 | Read-only proof board</text>
+<rect x='40' y='115' width='360' height='74' rx='6' fill='#181d22' stroke='#ef4444' stroke-width='2'/>
+<circle cx='60' cy='140' r='7' fill='#ef4444'/>
+<text x='76' y='143' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>arcanea.ai</text>
+<text x='60' y='165' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea | 200/200 | BLOCKED</text>
+<rect x='418' y='115' width='360' height='74' rx='6' fill='#181d22' stroke='#ef4444' stroke-width='2'/>
+<circle cx='438' cy='140' r='7' fill='#ef4444'/>
+<text x='454' y='143' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>arcanea.dev</text>
+<text x='438' y='165' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea | 404/404 | BLOCKED</text>
+<rect x='796' y='115' width='360' height='74' rx='6' fill='#181d22' stroke='#ef4444' stroke-width='2'/>
+<circle cx='816' cy='140' r='7' fill='#ef4444'/>
+<text x='832' y='143' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>arcanea.io</text>
+<text x='816' y='165' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea | 200/200 | BLOCKED</text>
+<rect x='40' y='207' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='232' r='7' fill='#f59e0b'/>
+<text x='76' y='235' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>agenticincome.ai</text>
+<text x='60' y='257' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | 200/200 | READY</text>
+<rect x='418' y='207' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='232' r='7' fill='#f59e0b'/>
+<text x='454' y='235' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>agenticpassiveincome.ai</text>
+<text x='438' y='257' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | None/None | READY</text>
+<rect x='796' y='207' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='232' r='7' fill='#f59e0b'/>
+<text x='832' y='235' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>agenticpassiveincome.com</text>
+<text x='816' y='257' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | 200/200 | READY</text>
+<rect x='40' y='299' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='324' r='7' fill='#f59e0b'/>
+<text x='76' y='327' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>aiarchitectacademy.com</text>
+<text x='60' y='349' fill='#aeb6bf' font-family='Arial' font-size='12'>AI Architect Academy | None/None | NO_DEPLOYMENTS</text>
+<rect x='418' y='299' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='324' r='7' fill='#f59e0b'/>
+<text x='454' y='327' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>akamoto.io</text>
+<text x='438' y='349' fill='#aeb6bf' font-family='Arial' font-size='12'>Product / Other | 200/200 | no vercel</text>
+<rect x='796' y='299' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='324' r='7' fill='#f59e0b'/>
+<text x='832' y='327' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>animelegends.ai</text>
+<text x='816' y='349' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea / AnimeLegends | 200/200 | READY</text>
+<rect x='40' y='391' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='416' r='7' fill='#f59e0b'/>
+<text x='76' y='419' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>arcanea.com</text>
+<text x='60' y='441' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea | None/200 | no vercel</text>
+<rect x='418' y='391' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='416' r='7' fill='#f59e0b'/>
+<text x='454' y='419' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>arcanealabs.com</text>
+<text x='438' y='441' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea | 404/404 | no vercel</text>
+<rect x='796' y='391' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='416' r='7' fill='#f59e0b'/>
+<text x='832' y='419' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>arcanean.org</text>
+<text x='816' y='441' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea | 404/404 | no vercel</text>
+<rect x='40' y='483' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='508' r='7' fill='#f59e0b'/>
+<text x='76' y='511' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>disruptivepassiveincom.com</text>
+<text x='60' y='533' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | None/None | no vercel</text>
+<rect x='418' y='483' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='508' r='7' fill='#f59e0b'/>
+<text x='454' y='511' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>disruptivepassiveincome.com</text>
+<text x='438' y='533' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | 200/200 | no vercel</text>
+<rect x='796' y='483' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='508' r='7' fill='#f59e0b'/>
+<text x='832' y='511' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>disruptivepassiveincome.de</text>
+<text x='816' y='533' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | None/None | no vercel</text>
+<rect x='40' y='575' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='600' r='7' fill='#f59e0b'/>
+<text x='76' y='603' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>frank-riemer.com</text>
+<text x='60' y='625' fill='#aeb6bf' font-family='Arial' font-size='12'>FrankX | None/None | READY</text>
+<rect x='418' y='575' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='600' r='7' fill='#f59e0b'/>
+<text x='454' y='603' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>frankx.ai</text>
+<text x='438' y='625' fill='#aeb6bf' font-family='Arial' font-size='12'>FrankX | 200/200 | READY</text>
+<rect x='796' y='575' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='600' r='7' fill='#f59e0b'/>
+<text x='832' y='603' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>frankx.dev</text>
+<text x='816' y='625' fill='#aeb6bf' font-family='Arial' font-size='12'>FrankX | None/None | READY</text>
+<rect x='40' y='667' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='692' r='7' fill='#f59e0b'/>
+<text x='76' y='695' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>frankx.io</text>
+<text x='60' y='717' fill='#aeb6bf' font-family='Arial' font-size='12'>FrankX | 404/None | READY</text>
+<rect x='418' y='667' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='692' r='7' fill='#f59e0b'/>
+<text x='454' y='695' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>gencreator.ai</text>
+<text x='438' y='717' fill='#aeb6bf' font-family='Arial' font-size='12'>FrankX / GenCreator | 200/200 | READY</text>
+<rect x='796' y='667' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='692' r='7' fill='#f59e0b'/>
+<text x='832' y='695' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>go.agenticincome.ai</text>
+<text x='816' y='717' fill='#aeb6bf' font-family='Arial' font-size='12'>Revenue Network | 200/None | READY</text>
+<rect x='40' y='759' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='784' r='7' fill='#f59e0b'/>
+<text x='76' y='787' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>music-academy.ai</text>
+<text x='60' y='809' fill='#aeb6bf' font-family='Arial' font-size='12'>FrankX / Music | None/None | no vercel</text>
+<rect x='418' y='759' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='784' r='7' fill='#f59e0b'/>
+<text x='454' y='787' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>realityarchitect.ai</text>
+<text x='438' y='809' fill='#aeb6bf' font-family='Arial' font-size='12'>Reality Architect | 200/200 | READY</text>
+<rect x='796' y='759' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='784' r='7' fill='#f59e0b'/>
+<text x='832' y='787' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>realitydiffusion.ai</text>
+<text x='816' y='809' fill='#aeb6bf' font-family='Arial' font-size='12'>Reality Architect / Arcanea | None/None | no vercel</text>
+<rect x='40' y='851' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='60' cy='876' r='7' fill='#f59e0b'/>
+<text x='76' y='879' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>starlight-intelligence.ai</text>
+<text x='60' y='901' fill='#aeb6bf' font-family='Arial' font-size='12'>Starlight Intelligence Systems | None/None | READY</text>
+<rect x='418' y='851' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='438' cy='876' r='7' fill='#f59e0b'/>
+<text x='454' y='879' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>starlightintelligence.org</text>
+<text x='438' y='901' fill='#aeb6bf' font-family='Arial' font-size='12'>Starlight Intelligence Systems | 200/200 | READY</text>
+<rect x='796' y='851' width='360' height='74' rx='6' fill='#181d22' stroke='#f59e0b' stroke-width='2'/>
+<circle cx='816' cy='876' r='7' fill='#f59e0b'/>
+<text x='832' y='879' fill='#f4f1e8' font-family='Arial' font-size='15' font-weight='700'>vibeclubs.ai</text>
+<text x='816' y='901' fill='#aeb6bf' font-family='Arial' font-size='12'>Arcanea / Experience | 200/200 | READY</text>
+</svg>

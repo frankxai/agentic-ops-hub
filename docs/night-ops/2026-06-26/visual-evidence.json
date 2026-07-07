@@ -1,0 +1,98 @@
+{
+  "task": "Build deterministic visual operating cards for the nightly Starlight/FrankX agentic team and Slack operations pass.",
+  "date": "2026-06-26",
+  "surface": "Internal Slack proof and repo operating packet",
+  "mode": "deterministic SVG rendered to PNG previews with Chrome headless; no raw image generation in this pass",
+  "standards_loaded": [
+    "DESIGN_TASTE.md",
+    "WEB_EXPERIENCE_STANDARD.md",
+    "MOTION_TASTE_RUBRIC.md",
+    "MULTI_AGENT_DESIGN_COUNCIL.md",
+    "VISUAL_QA_GATE.md",
+    "design-agent-standards/DESIGN.md",
+    "design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "design-agent-standards/ULTIMATE_AGENTIC_LOOPS.md",
+    "design-agent-standards/RED_TEAM_CHECKLIST.md",
+    "design-agent-standards/OUTCOMES.md",
+    "design-agent-standards/best-practices/image-logo-visual-generation.md",
+    "starlight-design-intelligence/DESIGN_AGENT_OPERATING_SYSTEM.md",
+    "starlight-design-intelligence/evals/generated-asset-quality-gate.md"
+  ],
+  "observed_state": {
+    "hermes_gateway": "stopped",
+    "hermes_kanban": {
+      "ready": 7,
+      "blocked": 4,
+      "running": 0
+    },
+    "social_carousel_packs": [
+      "2026-06-25-agentic-coding-os",
+      "2026-06-26-positive-agentic-os",
+      "2026-06-26-founder-operating-room-ig"
+    ],
+    "approval_queue": "waiting candidates exist; avoid adding new approval burden unless selected by Frank"
+  },
+  "proof_loop": {
+    "work_queue_route": "passes with notes",
+    "channel_verdict": "keep work-queue to execution-room to daily-report; revise brand-room proof cadence; pause new permanent channels",
+    "approval_backlog": "do not add more approval candidates until one existing item is approved, revised, held, archived, or replaced"
+  },
+  "artifacts": [
+    "visuals/01-slack-agent-cockpit.svg",
+    "visuals/02-agent-swarm-map.svg",
+    "visuals/03-social-image-factory.svg",
+    "visuals/04-tonight-action-board.svg",
+    "visuals/05-portfolio-business-signal-board.svg",
+    "visuals/06-arcanea-red-lane-map.svg",
+    "visuals/07-slack-proof-loop-scorecard.svg",
+    "visuals/08-social-approval-backlog-board.svg",
+    "visuals/09-domain-deployment-radar.svg",
+    "visuals/10-slack-channel-anchor-matrix.svg",
+    "visuals/11-arcanea-weekly-proof.svg",
+    "visuals/png/01-slack-agent-cockpit.png",
+    "visuals/png/02-agent-swarm-map.png",
+    "visuals/png/03-social-image-factory.png",
+    "visuals/png/04-tonight-action-board.png",
+    "visuals/png/05-portfolio-business-signal-board.png",
+    "visuals/png/06-arcanea-red-lane-map.png",
+    "visuals/png/07-slack-proof-loop-scorecard.png",
+    "visuals/png/08-social-approval-backlog-board.png",
+    "visuals/png/09-domain-deployment-radar.png",
+    "visuals/png/10-slack-channel-anchor-matrix.png",
+    "visuals/png/11-arcanea-weekly-proof.png",
+    "NIGHTLY_AGENTIC_TEAM_PACKET_2026-06-26.md",
+    "PORTFOLIO_BUSINESS_SIGNAL_BOARD_2026-06-26.md",
+    "ARCANEA_AI_APP_GROUPED_STATUS_2026-06-26.md",
+    "SLACK_PROOF_LOOP_EVALUATION_2026-06-26.md",
+    "SOCIAL_APPROVAL_BACKLOG_2026-06-26.md",
+    "DOMAIN_DEPLOYMENT_RADAR_2026-06-26.md",
+    "domain-deployment-radar-2026-06-26.json",
+    "SLACK_CHANNEL_ANCHOR_PACKET_2026-06-26.md",
+    "slack-channel-anchor-registry-2026-06-26.json",
+    "ARCANEA_WEEKLY_PROOF_2026-06-26.md",
+    "arcanea-weekly-proof-2026-06-26.json",
+    "VISUALS.md",
+    "VISUAL_QA.md"
+  ],
+  "inspection_notes": [
+    "Card 01 initially clipped the guardrail sentence; fixed by splitting into two deterministic text lines and re-rendering.",
+    "Card 03 initially overflowed the image-generation rule; fixed by shortening the first line and re-rendering.",
+    "Cards 02, 04, and 05 passed visual inspection without text overlap.",
+    "Card 06 initially rendered with extra whitespace from a mismatched viewport; re-rendered at 1800x1200 and inspected.",
+    "Card 07 initially had two dense labels that overflowed the top cards; fixed by shortening labels and re-rendering.",
+    "Card 08 social approval backlog board was inspected in the Codex image viewer and passed for internal Slack.",
+    "Card 09 initially had top-row overflow; fixed by shortening governance and red-decision copy, re-rendered, and inspected.",
+    "Card 10 Slack channel anchor matrix was inspected in the Codex image viewer and passed for internal Slack.",
+    "Card 11 Arcanea weekly proof initially had a route-line collision; fixed by splitting route labels into columns, re-rendered, and inspected."
+  ],
+  "score_30_point_gate": {
+    "first_read_and_hierarchy": 5,
+    "brand_fit_and_distinctiveness": 4,
+    "craft_typography_spacing_composition": 4,
+    "accessibility_contrast_surface_fit": 5,
+    "accuracy_provenance_no_artifacts": 5,
+    "usefulness_for_surface": 5,
+    "total": 28
+  },
+  "verdict": "Pass with notes for internal Slack/team operations. Public versions should be split into carousel slides with more whitespace."
+}

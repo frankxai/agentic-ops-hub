@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+  <rect width="1800" height="1200" fill="#05060A"/>
+  <rect x="56" y="56" width="1688" height="1088" rx="34" fill="#0A0C14" stroke="#1A1F2E" stroke-width="2"/>
+  <text x="96" y="134" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Arcanea Red Lane Map</text>
+  <text x="98" y="184" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="25">Grouped read-only status for `arcanea-ai-app` before any cleanup, build, deploy, or merge.</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(96,246)">
+      <rect width="498" height="222" rx="22" fill="#101521" stroke="#FF7A90" stroke-width="2"/>
+      <text x="28" y="52" fill="#FF7A90" font-size="30" font-weight="800">Risk Signal</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">26 dirty tracked files</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">30 sampled untracked paths</text>
+      <text x="28" y="180" fill="#8A90A8" font-size="21">Branch: codex/arcanea-homepage-world-engine</text>
+    </g>
+    <g transform="translate(650,246)">
+      <rect width="498" height="222" rx="22" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="28" y="52" fill="#F6C86B" font-size="30" font-weight="800">Main Question</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">One Arcanea relaunch push?</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">Or five overlapping change sets?</text>
+      <text x="28" y="180" fill="#8A90A8" font-size="21">Default: split unless owner confirms campaign.</text>
+    </g>
+    <g transform="translate(1204,246)">
+      <rect width="498" height="222" rx="22" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="28" y="52" fill="#72E6AC" font-size="30" font-weight="800">Safe Next</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">File-level grouped status</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">Owner decision: split / ship / hold</text>
+      <text x="28" y="180" fill="#8A90A8" font-size="21">No reset. No deploy. No broad stage.</text>
+    </g>
+
+    <g transform="translate(96,540)">
+      <rect width="760" height="322" rx="24" fill="#111827" stroke="#6EA8FE" stroke-width="2"/>
+      <text x="30" y="58" fill="#6EA8FE" font-size="31" font-weight="800">Change Buckets</text>
+      <text x="30" y="110" fill="#F1F3F9" font-size="24">.claude hooks: agent governance changes</text>
+      <text x="30" y="152" fill="#F1F3F9" font-size="24">apps/web: homepage, v3, genesis, e2e</text>
+      <text x="30" y="194" fill="#F1F3F9" font-size="24">.arcanea + docs: canon, lore, research, OS docs</text>
+      <text x="30" y="236" fill="#F1F3F9" font-size="24">packages/world-engine: types and exports</text>
+      <text x="30" y="278" fill="#F1F3F9" font-size="24">.visual-qa + .grok: evidence or local harness artifacts</text>
+    </g>
+    <g transform="translate(942,540)">
+      <rect width="760" height="322" rx="24" fill="#111827" stroke="#F6C86B" stroke-width="2"/>
+      <text x="30" y="58" fill="#F6C86B" font-size="31" font-weight="800">Decision Menu</text>
+      <text x="30" y="112" fill="#72E6AC" font-size="25" font-weight="800">SPLIT</text>
+      <text x="130" y="112" fill="#F1F3F9" font-size="24">governance / frontend / canon / QA / package</text>
+      <text x="30" y="172" fill="#6EA8FE" font-size="25" font-weight="800">SHIP</text>
+      <text x="130" y="172" fill="#F1F3F9" font-size="24">only if one deliberate relaunch campaign</text>
+      <text x="30" y="232" fill="#FF7A90" font-size="25" font-weight="800">HOLD</text>
+      <text x="130" y="232" fill="#F1F3F9" font-size="24">until originating agent/human explains intent</text>
+    </g>
+
+    <g transform="translate(96,940)">
+      <rect width="1606" height="112" rx="22" fill="#101521" stroke="#FF7A90" stroke-width="2"/>
+      <text x="30" y="48" fill="#FF7A90" font-size="28" font-weight="800">Guardrail</text>
+      <text x="30" y="86" fill="#F1F3F9" font-size="23">Do not clean, reset, deploy, merge, or treat generated/local harness folders as repo-owned without explicit owner proof.</text>
+    </g>
+  </g>
+</svg>

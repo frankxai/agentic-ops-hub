@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Founder Operating Room Carousel</title>
+  <style>
+    @page {
+      size: 1080px 1350px;
+      margin: 0;
+    }
+
+    :root {
+      --bg: #05060a;
+      --ink: #f1f3f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      width: 1080px;
+      margin: 0 auto;
+      background: var(--bg);
+    }
+
+    .slide {
+      width: 1080px;
+      height: 1350px;
+      page-break-after: always;
+      break-after: page;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .slide:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    img {
+      display: block;
+      width: 1080px;
+      height: 1350px;
+      object-fit: cover;
+    }
+
+    @media screen {
+      main {
+        width: min(1080px, 100vw);
+      }
+
+      .slide {
+        width: min(1080px, 100vw);
+        height: auto;
+        aspect-ratio: 4 / 5;
+        border-bottom: 1px solid #1a1f2e;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main aria-label="Founder Operating Room carousel">
+    <section class="slide"><img src="exports/png/01-founder-operating-room.png" alt="A calmer company. A smarter system."></section>
+    <section class="slide"><img src="exports/png/02-founder-operating-room.png" alt="One insight becomes a system."></section>
+    <section class="slide"><img src="exports/png/03-founder-operating-room.png" alt="Slack becomes the cockpit."></section>
+    <section class="slide"><img src="exports/png/04-founder-operating-room.png" alt="Every agent gets a job."></section>
+    <section class="slide"><img src="exports/png/05-founder-operating-room.png" alt="Proof makes momentum trustworthy."></section>
+    <section class="slide"><img src="exports/png/06-founder-operating-room.png" alt="Content becomes a studio pipeline."></section>
+    <section class="slide"><img src="exports/png/07-founder-operating-room.png" alt="One idea. Four cuts."></section>
+    <section class="slide"><img src="exports/png/08-founder-operating-room.png" alt="Build the company that learns daily."></section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+<rect width="1400" height="980" fill="#101418"/>
+<text x="48" y="62" fill="#f2f4f7" font-family="Arial" font-size="30" font-weight="700">Domain Deployment Radar - 2026-06-29</text>
+<text x="48" y="96" fill="#aeb7c2" font-family="Arial" font-size="16">27 surfaces | 8 red | 19 yellow | 0 green | 17 changed</text>
+<rect x="48" y="132" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="156" r="7" fill="#ff5c5c"/>
+<text x="88" y="161" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">agenticincome.ai</text>
+<text x="88" y="181" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="88" y="197" fill="#7f8a96" font-family="Arial" font-size="11">verdict yellow-&gt;red; root 200-&gt;308</text>
+<rect x="488" y="132" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="156" r="7" fill="#ff5c5c"/>
+<text x="528" y="161" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">agenticpassiveincome.com</text>
+<text x="528" y="181" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="528" y="197" fill="#7f8a96" font-family="Arial" font-size="11">verdict yellow-&gt;red; root 200-&gt;308</text>
+<rect x="928" y="132" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="156" r="7" fill="#ff5c5c"/>
+<text x="968" y="161" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">arcanea.ai</text>
+<text x="968" y="181" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea</text>
+<text x="968" y="197" fill="#7f8a96" font-family="Arial" font-size="11">root 200-&gt;307; deployment changed; sha d4ee7cb-&gt;6ae7467</text>
+<rect x="48" y="222" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="246" r="7" fill="#ff5c5c"/>
+<text x="88" y="251" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">arcanea.dev</text>
+<text x="88" y="271" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea</text>
+<text x="88" y="287" fill="#7f8a96" font-family="Arial" font-size="11">deployment -&gt;dpl_B63mPxS1BXBSvn2ySTGj1FnFgX7V; sha 6a4774f-&gt...</text>
+<rect x="488" y="222" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="246" r="7" fill="#ff5c5c"/>
+<text x="528" y="251" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">arcanea.io</text>
+<text x="528" y="271" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea</text>
+<text x="528" y="287" fill="#7f8a96" font-family="Arial" font-size="11">deployment -&gt;dpl_B63mPxS1BXBSvn2ySTGj1FnFgX7V; sha 6a4774f-&gt...</text>
+<rect x="928" y="222" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="246" r="7" fill="#ff5c5c"/>
+<text x="968" y="251" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">arcanealabs.com</text>
+<text x="968" y="271" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea</text>
+<text x="968" y="287" fill="#7f8a96" font-family="Arial" font-size="11">verdict yellow-&gt;red</text>
+<rect x="48" y="312" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="336" r="7" fill="#ff5c5c"/>
+<text x="88" y="341" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">arcanean.org</text>
+<text x="88" y="361" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea</text>
+<text x="88" y="377" fill="#7f8a96" font-family="Arial" font-size="11">verdict yellow-&gt;red</text>
+<rect x="488" y="312" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="336" r="7" fill="#ff5c5c"/>
+<text x="528" y="341" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">realityarchitect.ai</text>
+<text x="528" y="361" fill="#aeb7c2" font-family="Arial" font-size="12">Reality Architect</text>
+<text x="528" y="377" fill="#7f8a96" font-family="Arial" font-size="11">verdict yellow-&gt;red; root 200-&gt;308</text>
+<rect x="928" y="312" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="336" r="7" fill="#f2c94c"/>
+<text x="968" y="341" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">agenticpassiveincome.ai</text>
+<text x="968" y="361" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="968" y="377" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="48" y="402" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="426" r="7" fill="#f2c94c"/>
+<text x="88" y="431" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">aiarchitectacademy.com</text>
+<text x="88" y="451" fill="#aeb7c2" font-family="Arial" font-size="12">AI Architect Academy</text>
+<text x="88" y="467" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="488" y="402" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="426" r="7" fill="#f2c94c"/>
+<text x="528" y="431" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">akamoto.io</text>
+<text x="528" y="451" fill="#aeb7c2" font-family="Arial" font-size="12">Product / Other</text>
+<text x="528" y="467" fill="#7f8a96" font-family="Arial" font-size="11">www 200-&gt;301</text>
+<rect x="928" y="402" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="426" r="7" fill="#f2c94c"/>
+<text x="968" y="431" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">animelegends.ai</text>
+<text x="968" y="451" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea / AnimeLegends</text>
+<text x="968" y="467" fill="#7f8a96" font-family="Arial" font-size="11">root 200-&gt;307</text>
+<rect x="48" y="492" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="516" r="7" fill="#f2c94c"/>
+<text x="88" y="521" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">arcanea.com</text>
+<text x="88" y="541" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea</text>
+<text x="88" y="557" fill="#7f8a96" font-family="Arial" font-size="11">root -&gt;302; www 200-&gt;410</text>
+<rect x="488" y="492" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="516" r="7" fill="#f2c94c"/>
+<text x="528" y="521" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">disruptivepassiveincom.com</text>
+<text x="528" y="541" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="528" y="557" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="928" y="492" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="516" r="7" fill="#f2c94c"/>
+<text x="968" y="521" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">disruptivepassiveincome.com</text>
+<text x="968" y="541" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="968" y="557" fill="#7f8a96" font-family="Arial" font-size="11">www 200-&gt;301</text>
+<rect x="48" y="582" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="606" r="7" fill="#f2c94c"/>
+<text x="88" y="611" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">disruptivepassiveincome.de</text>
+<text x="88" y="631" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="88" y="647" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="488" y="582" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="606" r="7" fill="#f2c94c"/>
+<text x="528" y="611" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">frank-riemer.com</text>
+<text x="528" y="631" fill="#aeb7c2" font-family="Arial" font-size="12">FrankX</text>
+<text x="528" y="647" fill="#7f8a96" font-family="Arial" font-size="11">deployment -&gt;dpl_H6DxSpNvE4sbFYQc5NTRzXHiPesH; sha 2ee3d30-&gt...</text>
+<rect x="928" y="582" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="606" r="7" fill="#f2c94c"/>
+<text x="968" y="611" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">frankx.ai</text>
+<text x="968" y="631" fill="#aeb7c2" font-family="Arial" font-size="12">FrankX</text>
+<text x="968" y="647" fill="#7f8a96" font-family="Arial" font-size="11">root 200-&gt;307</text>
+<rect x="48" y="672" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="696" r="7" fill="#f2c94c"/>
+<text x="88" y="701" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">frankx.dev</text>
+<text x="88" y="721" fill="#aeb7c2" font-family="Arial" font-size="12">FrankX</text>
+<text x="88" y="737" fill="#7f8a96" font-family="Arial" font-size="11">deployment -&gt;dpl_H6DxSpNvE4sbFYQc5NTRzXHiPesH; sha 2ee3d30-&gt...</text>
+<rect x="488" y="672" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="696" r="7" fill="#f2c94c"/>
+<text x="528" y="701" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">frankx.io</text>
+<text x="528" y="721" fill="#aeb7c2" font-family="Arial" font-size="12">FrankX</text>
+<text x="528" y="737" fill="#7f8a96" font-family="Arial" font-size="11">deployment -&gt;dpl_H6DxSpNvE4sbFYQc5NTRzXHiPesH; sha 2ee3d30-&gt...</text>
+<rect x="928" y="672" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="696" r="7" fill="#f2c94c"/>
+<text x="968" y="701" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">gencreator.ai</text>
+<text x="968" y="721" fill="#aeb7c2" font-family="Arial" font-size="12">FrankX / GenCreator</text>
+<text x="968" y="737" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="48" y="762" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="786" r="7" fill="#f2c94c"/>
+<text x="88" y="791" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">go.agenticincome.ai</text>
+<text x="88" y="811" fill="#aeb7c2" font-family="Arial" font-size="12">Revenue Network</text>
+<text x="88" y="827" fill="#7f8a96" font-family="Arial" font-size="11">www -&gt;307; branch main-&gt;; dirty 0-&gt;</text>
+<rect x="488" y="762" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="786" r="7" fill="#f2c94c"/>
+<text x="528" y="791" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">music-academy.ai</text>
+<text x="528" y="811" fill="#aeb7c2" font-family="Arial" font-size="12">FrankX / Music</text>
+<text x="528" y="827" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="928" y="762" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="786" r="7" fill="#f2c94c"/>
+<text x="968" y="791" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">realitydiffusion.ai</text>
+<text x="968" y="811" fill="#aeb7c2" font-family="Arial" font-size="12">Reality Architect / Arcanea</text>
+<text x="968" y="827" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="48" y="852" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="70" cy="876" r="7" fill="#f2c94c"/>
+<text x="88" y="881" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">starlight-intelligence.ai</text>
+<text x="88" y="901" fill="#aeb7c2" font-family="Arial" font-size="12">Starlight Intelligence Systems</text>
+<text x="88" y="917" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="488" y="852" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="510" cy="876" r="7" fill="#f2c94c"/>
+<text x="528" y="881" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">starlightintelligence.org</text>
+<text x="528" y="901" fill="#aeb7c2" font-family="Arial" font-size="12">Starlight Intelligence Systems</text>
+<text x="528" y="917" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+<rect x="928" y="852" width="408" height="72" rx="6" fill="#171d23" stroke="#2b3440"/>
+<circle cx="950" cy="876" r="7" fill="#f2c94c"/>
+<text x="968" y="881" fill="#f2f4f7" font-family="Arial" font-size="15" font-weight="700">vibeclubs.ai</text>
+<text x="968" y="901" fill="#aeb7c2" font-family="Arial" font-size="12">Arcanea / Experience</text>
+<text x="968" y="917" fill="#7f8a96" font-family="Arial" font-size="11">no material change observed since 2026-06-28</text>
+</svg>

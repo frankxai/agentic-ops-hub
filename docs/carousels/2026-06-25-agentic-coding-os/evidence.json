@@ -1,0 +1,150 @@
+{
+  "version": "2026-06-25",
+  "task": "Create the first premium LinkedIn/Instagram carousel pack for FrankX and AI-Architect builder education.",
+  "surface": "LinkedIn document carousel and Instagram carousel variant",
+  "audience": "Founders, AI architects, and builders learning to operate Codex, Claude Code, and agentic coding workflows",
+  "first_read": "Build an operating system for your AI agents.",
+  "standards": [
+    "C:/Users/frank/starlight/repos/DESIGN_TASTE.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/DESIGN.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/OUTCOMES.md"
+  ],
+  "references": [
+    {
+      "label": "OpenAI Codex",
+      "source": "https://openai.com/codex/",
+      "reason": "Official Codex product and multi-surface coding agent signal"
+    },
+    {
+      "label": "Anthropic Claude Code",
+      "source": "https://code.claude.com/docs/en/overview",
+      "reason": "Official Claude Code agentic coding tool framing"
+    },
+    {
+      "label": "FrankX Brand Pack",
+      "source": "C:/Users/frank/starlight/repos/starlight-design-intelligence/brand-packs/frankx/BRAND.md",
+      "reason": "Voice and brand behavior"
+    }
+  ],
+  "direction": {
+    "keep": ["direct founder language", "operational mechanism", "high-contrast premium dark system"],
+    "avoid": ["generic AI hype", "fake autonomy claims", "tiny text", "image-generated slide text"],
+    "signature": "Agents need operating spaces, source truth, proof, approvals, and learning.",
+    "system": ["deterministic HTML/CSS deck", "exact text", "dark #05060A palette", "operating spaces", "proof and approval motifs"]
+  },
+  "artifacts": [
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/index.html",
+      "kind": "web",
+      "inspected": true,
+      "notes": "Deterministic carousel source created with exact text and print CSS"
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/deck.pdf",
+      "kind": "pdf",
+      "inspected": true,
+      "notes": "LinkedIn document carousel export re-created via Chrome/Playwright after 2026-06-26 source-language tightening"
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/cover-preview.png",
+      "kind": "image",
+      "inspected": true,
+      "notes": "First-slide preview re-exported and inspected after 2026-06-26 source-language tightening; clear hierarchy, no clipping, exact text, operating-space visual motif retained"
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/INSTAGRAM_VARIANT.md",
+      "kind": "platform-adaptation",
+      "inspected": true,
+      "notes": "Added lighter Instagram slide-copy plan and caption so the LinkedIn PDF is not reused as-is for a dense mobile feed."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/contact-sheet.png",
+      "kind": "image-contact-sheet",
+      "inspected": true,
+      "notes": "Contact sheet for all 10 rendered slide images inspected in Codex."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/exports/png/",
+      "kind": "png-sequence",
+      "inspected": true,
+      "notes": "10 deterministic 1080x1350 PNG slide exports generated from index.html via local Chrome headless."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/exports/jpg/",
+      "kind": "jpg-sequence",
+      "inspected": true,
+      "notes": "10 compressed JPG slide exports generated from the PNG sequence for review/posting workflows."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/agentic-coding-os-carousel-jpg.zip",
+      "kind": "zip",
+      "inspected": true,
+      "notes": "Packaged JPG sequence for convenient handoff."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/assets/generated/agentic-coding-os-premium-cover-concept.png",
+      "kind": "generated-cover-concept",
+      "inspected": true,
+      "notes": "Built-in image_gen premium cover/metaphor concept inspected in Codex. No exact slide text is baked into the image; deterministic overlay still required before final use."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/QUALITY_AUDIT_2026-06-26.md",
+      "kind": "quality-audit",
+      "inspected": true,
+      "notes": "Audit marks the current pack REBUILD_REQUIRED and scores it below the V2 approval threshold."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/CREATIVE_DIRECTION.md",
+      "kind": "creative-rebuild-direction",
+      "inspected": true,
+      "notes": "Defines the Agent Workbench rebuild direction for a future social-grade version."
+    },
+    {
+      "path_or_url": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-25-agentic-coding-os/DESIGN_REVIEW.md",
+      "kind": "multi-critic-design-review",
+      "inspected": true,
+      "notes": "Creative Director, Visual Designer, Social Strategist, Source Editor, and Production QA all withhold approval for the current artifact."
+    }
+  ],
+  "checks": [
+    {
+      "name": "visual-qa",
+      "status": "pass-with-notes",
+      "evidence": "Cover preview inspected after headline/stack revision. PDF exists and is nontrivial. Instagram text-reduction plan added 2026-06-26. Revised to make Slack one cockpit implementation rather than the whole stack. 2026-06-26 pass removed loose Google/Gemini/Antigravity claims and kept official OpenAI/Anthropic source framing."
+    },
+    {
+      "name": "daily-factory-learning-2026-06-26",
+      "status": "pass-with-notes",
+      "evidence": "Read #social-approvals, #social-carousels, #design-intelligence, and #social-command. Approval backlog says do not add more top-level candidates until revised Agentic Coding OS is decided. Official source links were rechecked. Decision: improve learning metadata and route a concise carousel-channel learning note instead of creating a new candidate."
+    },
+    {
+      "name": "image-sequence-export-2026-06-26",
+      "status": "pass-with-notes",
+      "evidence": "Rendered 10 PNG slides and 10 JPG slides from deterministic index.html using local Chrome headless. Contact sheet and first slide inspected. Minor footer-band crop polish remains before final external posting."
+    },
+    {
+      "name": "premium-cover-imagegen-2026-06-26",
+      "status": "pass-with-notes",
+      "evidence": "Generated and inspected a premium cover/metaphor image with built-in image_gen. Use only as cover/background material; exact text remains deterministic."
+    }
+  ],
+  "score": {
+    "total": 27,
+    "max": 30,
+    "notes": "Strong first read, exact text, good brand fit, concrete operating-space motif, and a premium generated cover concept. PDF, cover preview, PNG sequence, JPG sequence, contact sheet, generated cover, and JPG zip now exist. Minor footer-band crop polish remains; Instagram adaptation plan still needs lighter final export before external publishing."
+  },
+  "social_confidence_score": {
+    "total": 68,
+    "max": 100,
+    "verdict": "REBUILD_REQUIRED",
+    "notes": "Useful mechanism and responsible source posture, but not top-notch social creative. Deck feels like internal proof, generated cover is generic, sequence is templated, and export polish issue remains."
+  },
+  "decision": "rebuild-required",
+  "known_risks": [
+    "Needs human approval before publishing.",
+    "LinkedIn image sequence exists; Instagram still needs lighter copy treatment before external use.",
+    "Current PNG/JPG export has a minor dark footer band from the source layout.",
+    "Latest platform claims require source-backed phrasing."
+  ]
+}

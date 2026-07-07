@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#05060A"/>
+  <rect x="56" y="56" width="1488" height="1088" rx="32" fill="#0A0C14" stroke="#1A1F2E" stroke-width="2"/>
+  <text x="96" y="136" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Agent Swarm Map</text>
+  <text x="98" y="184" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="25">Dedicated profiles, business lanes, and machine roles for guarded 24/7 operations.</text>
+
+  <g transform="translate(96,238)">
+    <rect width="300" height="760" rx="24" fill="#101521" stroke="#6EA8FE" stroke-width="2"/>
+    <text x="28" y="54" fill="#6EA8FE" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Command</text>
+    <text x="28" y="110" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">starlight</text>
+    <text x="28" y="150" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">orchestrator</text>
+    <text x="28" y="210" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">tooling</text>
+    <text x="28" y="250" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">repo hygiene</text>
+    <text x="28" y="310" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">research</text>
+    <text x="28" y="350" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">source checks</text>
+    <text x="28" y="430" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="23">Tonight:</text>
+    <text x="28" y="468" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">health scans</text>
+    <text x="28" y="504" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">registry proof</text>
+    <text x="28" y="540" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">gateway dry-run</text>
+  </g>
+
+  <g transform="translate(440,238)">
+    <rect width="300" height="760" rx="24" fill="#101521" stroke="#14B8A6" stroke-width="2"/>
+    <text x="28" y="54" fill="#14B8A6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Demand</text>
+    <text x="28" y="110" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">frankx</text>
+    <text x="28" y="150" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">authority + funnel</text>
+    <text x="28" y="210" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">gencreator</text>
+    <text x="28" y="250" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">creator systems</text>
+    <text x="28" y="310" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">aicoe</text>
+    <text x="28" y="350" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">enterprise CoE</text>
+    <text x="28" y="430" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="23">Tonight:</text>
+    <text x="28" y="468" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">positive hooks</text>
+    <text x="28" y="504" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">carousel proof</text>
+    <text x="28" y="540" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">CoE angle queue</text>
+  </g>
+
+  <g transform="translate(784,238)">
+    <rect width="300" height="760" rx="24" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+    <text x="28" y="54" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Product + Media</text>
+    <text x="28" y="110" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">arcanea</text>
+    <text x="28" y="150" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">creative platform</text>
+    <text x="28" y="210" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">anime</text>
+    <text x="28" y="250" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">IP + canon</text>
+    <text x="28" y="310" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">reality</text>
+    <text x="28" y="350" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">method + vault</text>
+    <text x="28" y="430" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="23">Tonight:</text>
+    <text x="28" y="468" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">visual QA gate</text>
+    <text x="28" y="504" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">canon proof</text>
+    <text x="28" y="540" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">public boundary</text>
+  </g>
+
+  <g transform="translate(1128,238)">
+    <rect width="374" height="760" rx="24" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+    <text x="28" y="54" fill="#72E6AC" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Machines</text>
+    <text x="28" y="112" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">Yoga Book 9i</text>
+    <text x="28" y="152" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">command + creative</text>
+    <text x="28" y="208" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="25">Second Lenovo Yoga</text>
+    <text x="28" y="248" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="21">backend + batch</text>
+    <text x="28" y="328" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="23">Rule:</text>
+    <text x="28" y="366" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">No 24/7 expansion</text>
+    <text x="28" y="402" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">before telemetry</text>
+    <text x="28" y="438" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">and sync lanes.</text>
+    <text x="28" y="520" fill="#FF7A90" font-family="Inter, Arial, sans-serif" font-size="23">Off limits:</text>
+    <text x="28" y="558" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">tokens, logs, .git,</text>
+    <text x="28" y="594" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="22">sessions, runtime state.</text>
+  </g>
+
+  <text x="96" y="1088" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="24">Best practice: keep heavy coding agents cold until assigned; keep Slack as cockpit; keep GitHub as code truth; keep approvals human.</text>
+</svg>

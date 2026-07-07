@@ -1,0 +1,248 @@
+{
+  "version": "2026-06-26",
+  "run_type": "rebuild_candidate",
+  "candidate": "Agent Workbench OS",
+  "brand": "FrankX / Builder Education / AI-Architect",
+  "surface": "LinkedIn document carousel primary; Instagram 4:5 image sequence secondary",
+  "status": "replacement-quality approval candidate; not published; not scheduled; routed as replacement for older Agentic Coding OS direction",
+  "objective": "Rebuild the failed Agentic Coding OS creative system into a higher-quality deterministic carousel with actual exported assets and a stricter social-confidence review.",
+  "audience": "Technical founders, AI architects, and builders operating Codex, Claude Code, ChatGPT, GitHub, Slack, Notion, Linear, and agentic workflows.",
+  "first_read": "Your AI agents do not need more prompts. They need a workbench.",
+  "production_method": {
+    "deck": "deterministic HTML/CSS/SVG",
+    "generated_images": "none used in final slides",
+    "rationale": "Prior generated cover quality did not clear the campaign bar. This topic needs exact text, diagrams, and artifact control."
+  },
+  "standards_loaded": [
+    "C:/Users/frank/.codex/skills/premium-visual-design/SKILL.md",
+    "C:/Users/frank/.codex/skills/.system/imagegen/SKILL.md",
+    "C:/Users/frank/starlight/repos/DESIGN_TASTE.md",
+    "C:/Users/frank/starlight/repos/WEB_EXPERIENCE_STANDARD.md",
+    "C:/Users/frank/starlight/repos/MOTION_TASTE_RUBRIC.md",
+    "C:/Users/frank/starlight/repos/MULTI_AGENT_DESIGN_COUNCIL.md",
+    "C:/Users/frank/starlight/repos/VISUAL_QA_GATE.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/DESIGN.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/AGENTIC_DESIGN_LOOP.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/ULTIMATE_AGENTIC_LOOPS.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/RED_TEAM_CHECKLIST.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/OUTCOMES.md",
+    "C:/Users/frank/starlight/repos/design-agent-standards/best-practices/image-logo-visual-generation.md",
+    "C:/Users/frank/starlight/repos/starlight-design-intelligence/DESIGN_AGENT_OPERATING_SYSTEM.md",
+    "C:/Users/frank/starlight/repos/starlight-design-intelligence/evals/generated-asset-quality-gate.md",
+    "C:/Users/frank/starlight/repos/starlight-design-intelligence/brand-packs/frankx/BRAND.md",
+    "C:/Users/frank/starlight/repos/starlight-design-intelligence/brand-packs/frankx/DESIGN.md",
+    "C:/Users/frank/starlight/repos/starlight-design-intelligence/brand-packs/frankx/COPY.md",
+    "C:/Users/frank/starlight/repos/starlight-design-intelligence/brand-packs/frankx/TOKENS.md",
+    "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/CAROUSEL_FACTORY_CREATIVE_STANDARD_V2_2026-06-26.md",
+    "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/SOCIAL_MEDIA_TEAM_OS_2026-06-26.md",
+    "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/social-media-team-os/frankx-ai-architect-builder-education/BRAND_SOCIAL.md",
+    "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/social-media-team-os/frankx-ai-architect-builder-education/CAROUSEL_STYLE.md",
+    "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/social-media-team-os/frankx-ai-architect-builder-education/POST_VOICE.md",
+    "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/social-media-team-os/frankx-ai-architect-builder-education/IMAGE_GENERATION.md"
+  ],
+  "official_sources_checked": [
+    {
+      "label": "OpenAI Codex",
+      "url": "https://openai.com/codex/",
+      "claim_use": "Official Codex product context"
+    },
+    {
+      "label": "OpenAI Codex cloud docs",
+      "url": "https://developers.openai.com/codex/cloud",
+      "claim_use": "Conservative delegation and controlled-environment framing"
+    },
+    {
+      "label": "Anthropic Claude Code overview",
+      "url": "https://code.claude.com/docs/en/overview",
+      "claim_use": "Official Claude Code agentic coding tool framing"
+    }
+  ],
+  "learning_inputs": {
+    "official_source_signal": "Use only conservative official-source context. No benchmark, ranking, or unsupported product claim.",
+    "approval_rejection_signal": "#social-approvals has queue-hygiene guidance. Frank rejected the old visual quality bar; old Agentic Coding OS is REBUILD_REQUIRED.",
+    "design_qa_signal": "Generated images are covers/metaphors only. Exact text and diagrams stay deterministic. Prior generated cover was not campaign-defining.",
+    "performance_signal": "No published-post performance metrics available.",
+    "brand_guide_signal": "FrankX requires direct founder language, mechanism-first teaching, proof, and explicit approval boundaries."
+  },
+  "direction": {
+    "keep": [
+      "direct founder hook",
+      "Agent Workbench metaphor",
+      "proof packet and approval gate motifs",
+      "deterministic exact slide text",
+      "source-backed conservative claims"
+    ],
+    "cut": [
+      "generic AI gradient art",
+      "Slack-first operating system framing",
+      "raw generated-image text",
+      "approval-ready label below the 90/100 gate",
+      "unsupported AI lab claims"
+    ],
+    "signature": "A founder workbench where requests enter, agents prepare, proof accumulates, and human approval controls irreversible moves."
+  },
+  "artifacts": [
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/index.html",
+      "kind": "deterministic_deck_source",
+      "status": "created"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/deck.pdf",
+      "kind": "pdf",
+      "status": "exported"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/cover-preview.png",
+      "kind": "cover_preview",
+      "status": "exported_and_inspected"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/contact-sheet.png",
+      "kind": "contact_sheet",
+      "status": "exported_and_inspected"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/exports/png/",
+      "kind": "png_sequence",
+      "status": "10_slides_exported"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/exports/jpg/",
+      "kind": "jpg_sequence",
+      "status": "10_slides_exported"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/agent-workbench-os-carousel-jpg.zip",
+      "kind": "handoff_zip",
+      "status": "created"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/assets/generated/agent-workbench-os-imagegen-cover-mood-2026-06-29.png",
+      "source_path": "C:/Users/frank/.codex/generated_images/019f12a9-df21-7180-8067-155b75abe536/ig_0148fd8009dac57f016a4250b9d61c8196b41a33ebd1d0d89c.png",
+      "kind": "imagegen_cover_mood_frame",
+      "status": "generated_copied_inspected",
+      "notes": "Generated with built-in image_gen after Frank said the automation should not produce only Markdown. Strong workbench/proof/approval metaphor with negative space and no baked-in title text, fake logos, or fake product UI. Use as a cover/background candidate with deterministic overlay text."
+    }
+  ],
+  "checks": [
+    {
+      "name": "visual_inspection_contact_sheet",
+      "status": "pass",
+      "evidence": "Contact sheet inspected in Codex after full re-render."
+    },
+    {
+      "name": "cover_preview_inspection",
+      "status": "pass_with_note",
+      "evidence": "Cover preview inspected. Strong deterministic editorial cover; not a cinematic campaign-defining image."
+    },
+    {
+      "name": "source_slide_url_wrap",
+      "status": "fixed",
+      "evidence": "Slide 8 URL wrap defect was found during inspection, CSS was patched, and all assets were re-rendered."
+    },
+    {
+      "name": "exact_text_rule",
+      "status": "pass",
+      "evidence": "Final slide text is deterministic HTML/CSS/SVG. No generated-image text is used."
+    },
+    {
+      "name": "daily_factory_refresh_2026_06_27",
+      "status": "pass",
+      "evidence": "Cover preview and contact sheet inspected again; no new topical claims added; packet updated as replacement approval candidate."
+    },
+    {
+      "name": "daily_factory_refresh_2026_06_29",
+      "status": "pass",
+      "evidence": "Live Slack approval threads checked; no human decision found. Cover preview and contact sheet inspected again; required assets and evidence JSON confirmed."
+    },
+    {
+      "name": "imagegen_redo_2026_06_29",
+      "status": "pass",
+      "evidence": "Built-in image_gen used to create a real cover/mood-frame asset, copied into assets/generated, and inspected. The automation prompt was rewritten and paused so future runs require actual visual artifacts and cannot complete as Markdown-only output."
+    }
+  ],
+  "claim_risk": {
+    "level": "medium-low",
+    "reason": "Claims are method-level or official-source contextual. No autonomous public action or product-performance claim is made.",
+    "approval_boundary": "No public publish, schedule, customer or partner message, production deploy, merge, spend, access change, domain change, or Hermes gateway activation is approved."
+  },
+  "visual_qa_30_point": {
+    "total": 27,
+    "max": 30,
+    "first_read_and_hierarchy": 5,
+    "brand_fit_and_distinctiveness": 5,
+    "craft_typography_spacing_composition": 4,
+    "accessibility_contrast_surface_fit": 4,
+    "accuracy_provenance_no_artifacts": 5,
+    "usefulness_for_surface": 4,
+    "notes": "Clear first read, stronger ownable workbench metaphor, exact deterministic text, complete export set, and conservative claim posture. Deductions: cover is deterministic/editorial rather than campaign-defining cinematic art; some supporting labels are intentionally small and best suited to LinkedIn review."
+  },
+  "social_confidence_score": {
+    "total": 91,
+    "max": 100,
+    "editorial_hook_and_usefulness": 14,
+    "creative_concept_and_memorability": 18,
+    "visual_craft_and_typography": 18,
+    "platform_fit": 13,
+    "brand_fit": 9,
+    "factual_provenance": 10,
+    "production_evidence": 9,
+    "verdict": "replacement_quality_candidate",
+    "notes": "Clears the 90/100 V2 threshold as a replacement-quality candidate, but not flagship. Route as the replacement for the older Agentic Coding OS approval item."
+  },
+  "daily_factory_refresh_2026_06_27": {
+    "run_time": "2026-06-27 Europe/Amsterdam",
+    "decision": "No new carousel topic. Update and route Agent Workbench OS as the replacement approval candidate.",
+    "official_source_signal": "Official OpenAI Codex and Anthropic Claude Code source posture remains conservative; no benchmark, ranking, or unsupported performance claim added.",
+    "approval_rejection_signal": "#social-approvals still has no explicit decision after the queue hygiene note; old Agentic Coding OS remains superseded/rebuild-required.",
+    "design_qa_signal": "cover-preview.png and contact-sheet.png inspected in Codex; score remains 91/100 social confidence and 27/30 visual QA.",
+    "performance_signal": "No published-post metrics available.",
+    "brand_guide_signal": "FrankX/Builder Education: mechanism-first, direct, proof-aware, with explicit human approval gate.",
+    "learning_note": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/DAILY_FACTORY_NOTE_2026-06-27.md"
+  },
+  "daily_factory_refresh_2026_06_28": {
+    "run_time": "2026-06-28 Europe/Amsterdam",
+    "decision": "No new carousel topic and no new approval item. Maintain Agent Workbench OS as the active replacement candidate while the approval decision is still waiting.",
+    "official_source_signal": "Official OpenAI Codex, OpenAI Codex cloud, and Anthropic Claude Code sources support only conservative agentic-coding context. No benchmark, ranking, model-comparison, or autonomous-public-action claim added.",
+    "approval_rejection_signal": "#social-approvals shows queue-hygiene guidance and repeated Agent Workbench OS replacement requests without an explicit decision. Do not add more queue noise.",
+    "design_qa_signal": "cover-preview.png and contact-sheet.png inspected again. Cover has strong first read and deterministic text; sequence remains replacement-quality, not flagship, because the cover is editorial/systemic rather than campaign-defining.",
+    "performance_signal": "No published-post metrics available in checked local files or recent Slack approval context.",
+    "brand_guide_signal": "FrankX/Builder Education remains mechanism-first and proof-aware; AI-Architect framing preserves governance and human approval boundaries.",
+    "visual_qa_30_point": 27,
+    "social_confidence_score": 91,
+    "learning_note": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/DAILY_FACTORY_NOTE_2026-06-28.md"
+  },
+  "daily_factory_refresh_2026_06_29": {
+    "run_time": "2026-06-29 Europe/Amsterdam",
+    "decision": "No new carousel topic and no duplicate approval item. Maintain Agent Workbench OS as the active replacement candidate while the approval decision is still waiting. After Frank's correction, pause and rewrite the automation so future runs require real visual artifacts and imagegen-backed cover/mood production instead of Markdown-only refreshes.",
+    "official_source_signal": "Official OpenAI Codex cloud and Anthropic Claude Code docs support conservative product-context framing only. No benchmark, ranking, model-comparison, platform-performance, or autonomous-public-action claim added.",
+    "approval_rejection_signal": "#social-approvals still has no explicit APPROVE, APPROVE WITH EDITS, REVISE, or HOLD decision. #social-command on 2026-06-29 again says Agent Workbench OS remains the current approval decision item.",
+    "design_qa_signal": "cover-preview.png and contact-sheet.png inspected again. Cover has strong first read and deterministic text; contact sheet shows all 10 slides with no obvious clipping, blank media, fake logos, or generated-image text.",
+    "performance_signal": "No published-post metrics available in checked local files or recent Slack context.",
+    "brand_guide_signal": "FrankX/Builder Education remains direct, mechanism-first, and proof-aware; AI-Architect framing preserves governance and human approval boundaries.",
+    "visual_qa_30_point": 27,
+    "social_confidence_score": 91,
+    "claim_risk": "medium-low",
+    "imagegen_asset": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/assets/generated/agent-workbench-os-imagegen-cover-mood-2026-06-29.png",
+    "automation_status": "PAUSED",
+    "learning_note": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-agent-workbench-os/DAILY_FACTORY_NOTE_2026-06-29.md"
+  },
+  "slack_routing": {
+    "social_carousels_2026_06_29_learning": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782724898035089",
+    "social_carousels_2026_06_29_workroom_proof": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782724829401559",
+    "social_approvals_2026_06_29_thread_reminder": "https://frankxintelli-cu22555.slack.com/archives/C0BB6K6TT1B/p1782724799232809?thread_ts=1782557721.729739&cid=C0BB6K6TT1B",
+    "social_carousels_2026_06_28_learning": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782638496864059",
+    "social_approvals_2026_06_28_thread_reminder": "https://frankxintelli-cu22555.slack.com/archives/C0BB6K6TT1B/p1782638507954329?thread_ts=1782557721.729739&cid=C0BB6K6TT1B",
+    "social_carousels_2026_06_28_learning_followup": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782638470661369",
+    "social_carousels_2026_06_28_factory_proof": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782638529459279",
+    "social_approvals_2026_06_28_status_thread": "https://frankxintelli-cu22555.slack.com/archives/C0BB6K6TT1B/p1782638544684839?thread_ts=1782439434.663929&cid=C0BB6K6TT1B",
+    "social_carousels": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782557816128779",
+    "previous_social_carousels": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782502414284319",
+    "social_approvals": "https://frankxintelli-cu22555.slack.com/archives/C0BB6K6TT1B/p1782557834684479?thread_ts=1782439434.663929&cid=C0BB6K6TT1B",
+    "routing_note": "2026-06-27 proof posted to #social-carousels; replacement approval request posted as a thread reply under the queue-hygiene item; concise routing note posted to #social-command. 2026-06-28 posted workroom learning/proof to #social-carousels and a thread-only status reminder in #social-approvals; no duplicate top-level approval request. 2026-06-29 posted workroom learning/proof to #social-carousels and preserved the existing same-day approval thread status rather than creating a new top-level approval request.",
+    "social_command": "https://frankxintelli-cu22555.slack.com/archives/C0BB6K4U4MT/p1782557849094649",
+    "routing_note_2026_06_29": "Posted one workroom learning/proof note to #social-carousels. No duplicate #social-approvals request because Agent Workbench OS is already the active approval decision item."
+  },
+  "decision": "approval_replacement_candidate_ready_waiting_human_decision"
+}

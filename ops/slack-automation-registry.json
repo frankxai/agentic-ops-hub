@@ -1,0 +1,136 @@
+{
+  "schema": "starlight.slackAutomationRegistry.v1",
+  "createdAt": "2026-06-25",
+  "purpose": "Durable registry of active Codex-driven Slack operating loops for the FrankX / Arcanea / Starlight portfolio.",
+  "sourceOfTruth": {
+    "ecosystem": "C:/Users/frank/starlight/ecosystem.json",
+    "slackAudit": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/SLACK_OPERATING_SYSTEM_AUDIT_2026-06-22.md",
+    "executionLayer": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/SLACK_AUTOMATION_EXECUTION_LAYER_2026-06-25.md",
+    "codexAutomations": "C:/Users/frank/.codex/automations"
+  },
+  "globalGates": [
+    "No external publishing without approval",
+    "No social scheduling without approval",
+    "No production deploy or promotion without approval",
+    "No merge to main without approval",
+    "No spending or vendor activation without approval",
+    "No customer or partner messages without approval",
+    "No Hermes gateway activation without verified credentials, routing, and machine health"
+  ],
+  "automations": [
+    {
+      "id": "daily-hermes-report-prep",
+      "kind": "heartbeat",
+      "cadence": "daily",
+      "owner": "Codex",
+      "primaryChannels": ["current Codex thread"],
+      "secondaryChannels": ["#daily-report", "#repo-command", "#content-film-prep", "#social-command", "#social-approvals"],
+      "job": "Prepare the full multi-brand action loop and notify only when useful.",
+      "riskClass": "guarded"
+    },
+    {
+      "id": "starlight-daily-slack-executive-digest",
+      "kind": "cron",
+      "cadence": "daily 08:10",
+      "owner": "Codex",
+      "primaryChannels": ["#daily-report"],
+      "secondaryChannels": ["#ops"],
+      "job": "Post the daily executive digest: outcomes, blockers, decisions, repo/site risks, brand signals, and execution queue.",
+      "riskClass": "internal-report"
+    },
+    {
+      "id": "starlight-daily-domain-and-deployment-digest",
+      "kind": "cron",
+      "cadence": "daily 08:35",
+      "owner": "Codex",
+      "primaryChannels": ["#repo-command"],
+      "secondaryChannels": ["#daily-report"],
+      "job": "Report known domains, subdomains, site ownership, GitHub/Vercel movement, inspect links, and deployment/domain risks.",
+      "riskClass": "read-only"
+    },
+    {
+      "id": "starlight-daily-repo-risk-sweep",
+      "kind": "cron",
+      "cadence": "daily 09:05",
+      "owner": "Codex",
+      "primaryChannels": ["#repo-command"],
+      "secondaryChannels": ["#daily-report"],
+      "job": "Run read-only repo risk sweep across flagship and now-priority repos.",
+      "riskClass": "read-only"
+    },
+    {
+      "id": "starlight-daily-content-and-image-pipeline-prep",
+      "kind": "cron",
+      "cadence": "daily 10:30",
+      "owner": "Codex",
+      "primaryChannels": ["#content-film-prep"],
+      "secondaryChannels": ["#social-command", "#social-carousels", "#social-approvals", "#design-intelligence"],
+      "job": "Produce recording briefs, social variants, image/carousel specs, and approval packets.",
+      "riskClass": "draft-only"
+    },
+    {
+      "id": "starlight-daily-carousel-factory",
+      "kind": "cron",
+      "cadence": "daily 11:15",
+      "owner": "Codex",
+      "primaryChannels": ["#social-carousels"],
+      "secondaryChannels": ["#social-approvals", "#social-command", "#design-intelligence"],
+      "job": "Produce or improve one high-quality LinkedIn/Instagram carousel candidate from current AI-lab signals, brand strategy, portfolio context, and prior learning.",
+      "learningInputs": [
+        "official AI lab/product updates when topical claims are made",
+        "#social-approvals decisions and Frank edit notes",
+        "prior carousel evidence.json scores",
+        "#design-intelligence QA findings",
+        "published-post performance metrics when available",
+        "brand/lane guides under docs/social-media-team-os",
+        "brand packs from starlight-design-intelligence"
+      ],
+      "outputRequirements": [
+        "learning note",
+        "approval packet",
+        "claim-risk label",
+        "visual QA score",
+        "explicit no-publish/no-schedule gate"
+      ],
+      "riskClass": "draft-only"
+    },
+    {
+      "id": "starlight-daily-slack-workflow-proof-monitor",
+      "kind": "cron",
+      "cadence": "daily 16:20",
+      "owner": "Codex",
+      "primaryChannels": ["#daily-report"],
+      "secondaryChannels": ["#work-queue", "#execution-room", "#repo-command", "#hermes-agent", "#social-approvals"],
+      "job": "Detect stale anchors, missing proof, waiting approvals, missing handoffs, and naming drift.",
+      "riskClass": "internal-report"
+    },
+    {
+      "id": "starlight-weekly-portfolio-ops-review",
+      "kind": "cron",
+      "cadence": "Friday 15:00",
+      "owner": "Codex",
+      "primaryChannels": ["#ops"],
+      "secondaryChannels": ["#daily-report"],
+      "job": "Weekly portfolio review: shipped proof, business movement, repo/domain movement, content, approvals, and what to keep, merge, park, or archive.",
+      "riskClass": "internal-report"
+    },
+    {
+      "id": "starlight-weekly-blessing-ledger",
+      "kind": "cron",
+      "cadence": "Sunday 09:00",
+      "owner": "Codex",
+      "primaryChannels": ["repo ledger"],
+      "secondaryChannels": [],
+      "job": "Create private weekly estate ledger and visual constellation.",
+      "riskClass": "private-ledger"
+    }
+  ],
+  "validationPlan": [
+    "Check that the first digest posts to #daily-report.",
+    "Check that repo and domain reports post to #repo-command.",
+    "Confirm read-only automations do not stage, commit, push, deploy, or mutate public state.",
+    "Confirm content automation prepares #social-approvals packets without publishing.",
+    "Confirm carousel factory records learning from approvals, performance, design QA, and brand guides.",
+    "Use weekly review to cut or park channels and loops that do not produce proof."
+  ]
+}

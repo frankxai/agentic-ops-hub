@@ -1,0 +1,94 @@
+{
+  "date": "2026-06-26",
+  "brand": "Arcanea",
+  "mode": "read-only proof packet",
+  "channels": {
+    "decision": "#brand-arcanea",
+    "technical_truth": "#repo-command",
+    "executive_summary": "#daily-report",
+    "receipt": "#execution-room"
+  },
+  "domain_signal": {
+    "arcanea_ai_http": 200,
+    "www_arcanea_ai_http": 200,
+    "title": "Arcanea(TM) - Creative Intelligence Platform",
+    "a_record": "216.150.1.1",
+    "risk": "Vercel intended nameservers do not match current ui-dns nameservers; visible Vercel project metadata does not prove root custom-domain ownership for arcanea-ai-app."
+  },
+  "vercel_signal": {
+    "arcanea_lobechat_labs_domains": [
+      "lobe.arcanea.ai",
+      "arcanea-lobechat-labs.vercel.app",
+      "arcanea-lobechat-labs-frankx-projects.vercel.app",
+      "arcanea-lobechat-labs-git-main-frankx-projects.vercel.app"
+    ],
+    "arcanea_ai_app_domains": [
+      "arcanea-ai-app.vercel.app",
+      "arcanea-ai-app-starlight-intelligence.vercel.app",
+      "arcanea-ai-app-frankx-eth-starlight-intelligence.vercel.app"
+    ],
+    "latest_arcanea_ai_app_deployments": [
+      {
+        "created_local": "2026-06-26 04:51:47 +02:00",
+        "state": "ERROR",
+        "branch": "claude/arcanea-motion-system-gsap",
+        "commit": "3be1643"
+      },
+      {
+        "created_local": "2026-06-26 04:50:14 +02:00",
+        "state": "ERROR",
+        "branch": "claude/arcanea-mobile-e2e-refinements",
+        "commit": "b4efdd3"
+      },
+      {
+        "created_local": "2026-06-26 04:46:51 +02:00",
+        "state": "ERROR",
+        "branch": "claude/arcanea-mobile-e2e-refinements",
+        "commit": "29da05e"
+      },
+      {
+        "created_local": "2026-06-26 02:17:45 +02:00",
+        "state": "READY",
+        "branch": "HEAD",
+        "commit": "90972ee"
+      }
+    ],
+    "latest_build_failure": "No Next.js version detected. Check Root Directory and package.json dependency visibility."
+  },
+  "repo_signal": {
+    "path": "C:\\Users\\frank\\starlight\\repos\\arcanea-ai-app",
+    "branch": "codex/arcanea-homepage-world-engine",
+    "head": "eaf954c3",
+    "head_subject": "Polish Arcanea homepage and production build",
+    "dirty_group_count": {
+      ".agent-harness.json": 1,
+      ".arcanea": 30,
+      ".claude": 14,
+      ".grok": 4,
+      ".visual-qa": 18,
+      "AGENTS.md": 1,
+      "apps": 24,
+      "DESIGN.md": 1,
+      "docs": 15,
+      "packages": 9,
+      "planning-with-files": 4,
+      "scripts": 1,
+      "supabase": 1,
+      "TASTE.md": 1
+    },
+    "product_slices_detected": [
+      "Genesis activation",
+      "Creature Atlas",
+      "homepage/product polish",
+      "agent harness/tooling"
+    ]
+  },
+  "recommended_decision": "SPLIT",
+  "approval_gate": "No public/social Arcanea activation, production promotion, merge, or domain change without Frank approval.",
+  "slack_receipts": {
+    "brand_arcanea": "https://frankxintelli-cu22555.slack.com/archives/C0BBUAKTGSD/p1782442973433779",
+    "repo_command": "https://frankxintelli-cu22555.slack.com/archives/C0BA49F2BRP/p1782442988266099",
+    "daily_report": "https://frankxintelli-cu22555.slack.com/archives/C0BBHBAQZMH/p1782442998695569",
+    "execution_room": "https://frankxintelli-cu22555.slack.com/archives/C0BB87M571V/p1782443006077779"
+  }
+}

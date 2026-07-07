@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#05060A"/>
+  <rect x="56" y="56" width="1488" height="1088" rx="32" fill="#0A0C14" stroke="#1A1F2E" stroke-width="2"/>
+  <text x="96" y="136" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Slack Agent Cockpit</text>
+  <text x="98" y="184" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="25">Visible rooms for work, proof, approvals, and brand-specific execution.</text>
+
+  <g transform="translate(96,238)">
+    <rect width="430" height="322" rx="20" fill="#101521" stroke="#6EA8FE" stroke-width="2"/>
+    <text x="28" y="52" fill="#6EA8FE" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Executive + Proof</text>
+    <text x="28" y="102" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#daily-report</text>
+    <text x="28" y="142" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#ops</text>
+    <text x="28" y="182" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#repo-command</text>
+    <text x="28" y="222" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="22">Needs: daily proof closure</text>
+    <text x="28" y="260" fill="#72E6AC" font-family="Inter, Arial, sans-serif" font-size="22">Works: executive signal exists</text>
+  </g>
+
+  <g transform="translate(584,238)">
+    <rect width="430" height="322" rx="20" fill="#101521" stroke="#14B8A6" stroke-width="2"/>
+    <text x="28" y="52" fill="#14B8A6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Intake + Execution</text>
+    <text x="28" y="102" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#work-queue</text>
+    <text x="28" y="142" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#execution-room</text>
+    <text x="28" y="182" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#hermes-agent</text>
+    <text x="28" y="222" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="22">Needs: close first loop</text>
+    <text x="28" y="260" fill="#72E6AC" font-family="Inter, Arial, sans-serif" font-size="22">Works: queue to proof visible</text>
+  </g>
+
+  <g transform="translate(1072,238)">
+    <rect width="430" height="322" rx="20" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+    <text x="28" y="52" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Content + Social</text>
+    <text x="28" y="102" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#social-command</text>
+    <text x="28" y="142" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#social-carousels</text>
+    <text x="28" y="182" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="24">#social-approvals</text>
+    <text x="28" y="222" fill="#F6C86B" font-family="Inter, Arial, sans-serif" font-size="22">Needs: decisions, not noise</text>
+    <text x="28" y="260" fill="#72E6AC" font-family="Inter, Arial, sans-serif" font-size="22">Works: carousel lane live</text>
+  </g>
+
+  <g transform="translate(96,632)">
+    <rect width="1406" height="252" rx="24" fill="#0D111B" stroke="#1A1F2E" stroke-width="2"/>
+    <text x="30" y="56" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800">Brand Rooms</text>
+    <g fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="23">
+      <text x="30" y="112">#brand-starlight</text>
+      <text x="270" y="112">#brand-frankx</text>
+      <text x="510" y="112">#brand-creator-systems</text>
+      <text x="840" y="112">#brand-arcanea</text>
+      <text x="1085" y="112">#brand-ai-coe</text>
+      <text x="30" y="164">#brand-agentic-income</text>
+      <text x="340" y="164">#brand-reality-architect</text>
+      <text x="690" y="164">#brand-mind</text>
+      <text x="890" y="164">#brand-tooling-oss</text>
+      <text x="1165" y="164">#brand-anime-legends</text>
+    </g>
+    <text x="30" y="218" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="23">Healthy room pattern: decision -> build -> proof -> next action. Most rooms still need live proof cadence.</text>
+  </g>
+
+  <g transform="translate(96,940)">
+    <rect width="1406" height="140" rx="22" fill="#111827" stroke="#FF7A90" stroke-width="2"/>
+    <text x="28" y="52" fill="#FF7A90" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Guardrail</text>
+    <text x="28" y="92" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="23">Agents may research, draft, test, prepare assets, and post internal proof.</text>
+    <text x="28" y="126" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="23">They may not publish, deploy, merge, spend, message externally, change access, or start gateways without approval.</text>
+  </g>
+</svg>

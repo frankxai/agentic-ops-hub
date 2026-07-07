@@ -17,12 +17,15 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Verify agent-rules sync engine runs
-        run: node scripts/sync-agent-rules.mjs --help || node scripts/sync-agent-rules.mjs --check || true
+      - name: Check generated agent rules are in sync
+        run: node scripts/sync-agent-rules.mjs --check
+
+      - name: Check agent loop contract
+        run: node scripts/check-agent-loop.mjs
 
       - name: Check blueprint docs exist
         run: |
           set -e
-          for f in ECOSYSTEM.md docs/MCP-STRATEGY.md docs/AGENT-STACK.md docs/PROTECTION-LAYERS.md docs/RED-BLUE-CHARTER.md; do
+          for f in ECOSYSTEM.md docs/MCP-STRATEGY.md docs/AGENT-STACK.md docs/PROTECTION-LAYERS.md docs/RED-BLUE-CHARTER.md docs/AGENT_LOOP_OS.md; do
             test -f "$f" && echo "ok: $f" || { echo "missing: $f"; exit 1; }
           done

@@ -35,3 +35,19 @@ These guidelines enforce discipline, conceptual clarity, and simplicity:
 * Transform vague requests into verifiable targets.
 * **Reproduce First**: Write a reproducing test or run code demonstrating a failure before implementing a bug fix.
 * For multi-step tasks, state a brief plan and verification steps before writing code (e.g., `1. [Step] -> verify: [check]`).
+
+## Core Agent Execution Loop
+
+This repo optimizes for reliable loops, not bigger one-off prompts. Every coding agent should run the same loop and leave evidence:
+
+1. **Orient:** read the nearest `AGENTS.md`, tool-specific shim, current `git status`, and the smallest relevant code/doc surface.
+2. **Bound:** turn the request into success criteria, explicit non-goals, risk gates, and a validation plan.
+3. **Discover:** inspect existing patterns and current docs before inventing a new approach.
+4. **Execute:** make scoped changes, preserve unrelated dirty work, and keep one coordinator responsible for synthesis.
+5. **Verify:** run the most relevant checks available: unit, type, lint, build, smoke, visual, deployment, or doc consistency.
+6. **Red-team:** attack the result for false claims, unsafe external actions, privacy leaks, brittle assumptions, stale generated files, and missing tests.
+7. **Handoff:** report changed files, checks run, residual risks, and the exact next action.
+
+Use subagents, queues, or swarms only when they add a real capability: context-heavy research, independent verification, cross-repo work, long-running jobs, or specialized tool access. Do not create persona-only agents. A worker must have input context, allowed tools, write scope, stop condition, validation evidence, and handoff format.
+
+Human approval is required before spending money, sending messages, publishing publicly, changing access, deleting data, rotating secrets, promoting production, or taking any other irreversible external action.

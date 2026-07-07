@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#071014"/><stop offset="1" stop-color="#0c1118"/></linearGradient>
+    <linearGradient id="green" x1="0" x2="1"><stop offset="0" stop-color="#102821"/><stop offset="1" stop-color="#0c1817"/></linearGradient>
+    <linearGradient id="amber" x1="0" x2="1"><stop offset="0" stop-color="#2b2412"/><stop offset="1" stop-color="#15140d"/></linearGradient>
+    <linearGradient id="blue" x1="0" x2="1"><stop offset="0" stop-color="#102431"/><stop offset="1" stop-color="#0c151d"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity=".34"/></filter>
+    <style>
+      .title{font:700 58px Inter,Segoe UI,Arial,sans-serif;fill:#f7fbff}
+      .sub{font:400 25px Inter,Segoe UI,Arial,sans-serif;fill:#a9bdc9}
+      .h{font:800 30px Inter,Segoe UI,Arial,sans-serif;fill:#fff}
+      .m{font:650 22px Inter,Segoe UI,Arial,sans-serif;fill:#d8edf5}
+      .s{font:500 18px Inter,Segoe UI,Arial,sans-serif;fill:#a9bdc9}
+      .box{stroke:#304d59;stroke-width:1.5;filter:url(#shadow)}
+      .line{stroke:#2f4d59;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <text x="90" y="92" class="title">Configured, Missing, and Next Capabilities</text>
+  <text x="92" y="132" class="sub">Current state of the Slack / Hermes / repo operating system</text>
+
+  <rect x="80" y="190" width="555" height="735" rx="28" fill="url(#green)" class="box"/>
+  <text x="120" y="250" class="h">CONFIGURED</text>
+  <line x1="120" y1="275" x2="595" y2="275" class="line"/>
+  <text x="120" y="325" class="m">Channel map in ecosystem.json</text>
+  <text x="120" y="358" class="s">all channel names + IDs captured</text>
+  <text x="120" y="410" class="m">Core rooms</text>
+  <text x="120" y="443" class="s">#ops · #daily-report · #work-queue · #execution-room</text>
+  <text x="120" y="495" class="m">Runtime rooms</text>
+  <text x="120" y="528" class="s">#hermes-agent · #repo-command · #mcp-integrations</text>
+  <text x="120" y="580" class="m">Social rooms</text>
+  <text x="120" y="613" class="s">#social-command · #social-approvals · platform rooms</text>
+  <text x="120" y="665" class="m">Brand rooms</text>
+  <text x="120" y="698" class="s">FrankX · Arcanea · Starlight · CoE · Income</text>
+  <text x="120" y="731" class="s">Reality · Mind · Tooling · Anime · Creator Systems</text>
+  <text x="120" y="783" class="m">Hermes profiles</text>
+  <text x="120" y="816" class="s">starlight · frankx · gencreator · arcanea · research</text>
+  <text x="120" y="849" class="s">aicoe · income · reality · anime · tooling · mind</text>
+
+  <rect x="682" y="190" width="555" height="735" rx="28" fill="url(#amber)" class="box"/>
+  <text x="722" y="250" class="h">MISSING / WEAK</text>
+  <line x1="722" y1="275" x2="1197" y2="275" class="line"/>
+  <text x="722" y="325" class="m">Live intake traffic</text>
+  <text x="722" y="358" class="s">#work-queue is anchored but not used daily</text>
+  <text x="722" y="410" class="m">Proof traffic</text>
+  <text x="722" y="443" class="s">#execution-room has no active proof chain yet</text>
+  <text x="722" y="495" class="m">Portfolio repo registry</text>
+  <text x="722" y="528" class="s">portfolio-repo-registry.json still needed</text>
+  <text x="722" y="580" class="m">Slack forms / lists</text>
+  <text x="722" y="613" class="s">intake, social approval, repo risk, film prep not confirmed</text>
+  <text x="722" y="665" class="m">Runtime activation</text>
+  <text x="722" y="698" class="s">gateways stopped · crons empty · kanban blocked</text>
+  <text x="722" y="750" class="m">Repo hygiene</text>
+  <text x="722" y="783" class="s">large dirty trees and Arcanea CI/build risks</text>
+  <text x="722" y="835" class="m">Second laptop telemetry</text>
+  <text x="722" y="868" class="s">satellite worker not fully verified</text>
+
+  <rect x="1285" y="190" width="555" height="735" rx="28" fill="url(#blue)" class="box"/>
+  <text x="1325" y="250" class="h">NEXT CAPABILITIES</text>
+  <line x1="1325" y1="275" x2="1800" y2="275" class="line"/>
+  <text x="1325" y="325" class="m">Universal Work Intake</text>
+  <text x="1325" y="358" class="s">form posts structured asks to #work-queue</text>
+  <text x="1325" y="410" class="m">Social Approval Queue</text>
+  <text x="1325" y="443" class="s">platform, copy, media, risk, approval status</text>
+  <text x="1325" y="495" class="m">Content-to-Film Builder</text>
+  <text x="1325" y="528" class="s">briefs, scripts, B-roll, carousel prompts</text>
+  <text x="1325" y="580" class="m">Repo Risk Sweep</text>
+  <text x="1325" y="613" class="s">repo, branch, PR, build, owner, next command</text>
+  <text x="1325" y="665" class="m">Brand Scoreboards</text>
+  <text x="1325" y="698" class="s">weekly shipped, blocked, KPI, next bet</text>
+  <text x="1325" y="750" class="m">Hermes activation gates</text>
+  <text x="1325" y="783" class="s">one profile at a time after proof loop passes</text>
+  <text x="1325" y="835" class="m">Pack Factory</text>
+  <text x="1325" y="868" class="s">turn this into client/community templates</text>
+
+  <g transform="translate(112 970)">
+    <rect width="1696" height="54" rx="16" fill="#0d1b22" stroke="#304d59"/>
+    <text x="28" y="36" class="s">Activation order: prove one manual Slack loop, then add forms/lists, then Hermes kanban dispatch, then selected gateways/crons.</text>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+<rect width="1400" height="820" fill="#111827"/>
+<text x="44" y="58" fill="#f9fafb" font-family="Arial, sans-serif" font-size="32" font-weight="700">Domain Deployment Radar - 2026-07-02</text>
+<text x="44" y="88" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="15">Read-only: 1 green / 10 yellow / 16 red. Changed: 12. No deploy/DNS/promote actions.</text>
+<rect x="44" y="126" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="68" cy="154" r="8" fill="#ef4444"/>
+<text x="86" y="159" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">agenticpassiveincome.ai</text>
+<text x="62" y="184" fill="#cbd5e1" font-family="Arial" font-size="12">Revenue Network | root fail / www fail</text>
+<text x="62" y="203" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="482" y="126" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="506" cy="154" r="8" fill="#ef4444"/>
+<text x="524" y="159" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">aiarchitectacademy.com</text>
+<text x="500" y="184" fill="#cbd5e1" font-family="Arial" font-size="12">AI Architect Academy | root fail / www fail</text>
+<text x="500" y="203" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="920" y="126" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="944" cy="154" r="8" fill="#ef4444"/>
+<text x="962" y="159" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">arcanea.ai</text>
+<text x="938" y="184" fill="#cbd5e1" font-family="Arial" font-size="12">Arcanea | root 200 / www 200</text>
+<text x="938" y="203" fill="#94a3b8" font-family="Arial" font-size="11">dirty 96-&gt;98</text>
+<rect x="44" y="238" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="68" cy="266" r="8" fill="#ef4444"/>
+<text x="86" y="271" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">arcanea.com</text>
+<text x="62" y="296" fill="#cbd5e1" font-family="Arial" font-size="12">Arcanea | root fail / www 200</text>
+<text x="62" y="315" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="482" y="238" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="506" cy="266" r="8" fill="#ef4444"/>
+<text x="524" y="271" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">arcanea.dev</text>
+<text x="500" y="296" fill="#cbd5e1" font-family="Arial" font-size="12">Arcanea | root 404 / www 404</text>
+<text x="500" y="315" fill="#94a3b8" font-family="Arial" font-size="11">dirty 96-&gt;98</text>
+<rect x="920" y="238" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="944" cy="266" r="8" fill="#ef4444"/>
+<text x="962" y="271" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">arcanea.io</text>
+<text x="938" y="296" fill="#cbd5e1" font-family="Arial" font-size="12">Arcanea | root 200 / www 200</text>
+<text x="938" y="315" fill="#94a3b8" font-family="Arial" font-size="11">dirty 96-&gt;98</text>
+<rect x="44" y="350" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="68" cy="378" r="8" fill="#ef4444"/>
+<text x="86" y="383" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">arcanealabs.com</text>
+<text x="62" y="408" fill="#cbd5e1" font-family="Arial" font-size="12">Arcanea | root 404 / www 404</text>
+<text x="62" y="427" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="482" y="350" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="506" cy="378" r="8" fill="#ef4444"/>
+<text x="524" y="383" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">arcanean.org</text>
+<text x="500" y="408" fill="#cbd5e1" font-family="Arial" font-size="12">Arcanea | root 404 / www 404</text>
+<text x="500" y="427" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="920" y="350" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="944" cy="378" r="8" fill="#ef4444"/>
+<text x="962" y="383" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">disruptivepassiveincom.com</text>
+<text x="938" y="408" fill="#cbd5e1" font-family="Arial" font-size="12">Revenue Network | root fail / www fail</text>
+<text x="938" y="427" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="44" y="462" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="68" cy="490" r="8" fill="#ef4444"/>
+<text x="86" y="495" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">disruptivepassiveincome.de</text>
+<text x="62" y="520" fill="#cbd5e1" font-family="Arial" font-size="12">Revenue Network | root fail / www fail</text>
+<text x="62" y="539" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="482" y="462" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="506" cy="490" r="8" fill="#ef4444"/>
+<text x="524" y="495" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">frank-riemer.com</text>
+<text x="500" y="520" fill="#cbd5e1" font-family="Arial" font-size="12">FrankX | root fail / www fail</text>
+<text x="500" y="539" fill="#94a3b8" font-family="Arial" font-size="11">dirty 19-&gt;22</text>
+<rect x="920" y="462" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="944" cy="490" r="8" fill="#ef4444"/>
+<text x="962" y="495" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">frankx.dev</text>
+<text x="938" y="520" fill="#cbd5e1" font-family="Arial" font-size="12">FrankX | root fail / www fail</text>
+<text x="938" y="539" fill="#94a3b8" font-family="Arial" font-size="11">dirty 19-&gt;22</text>
+<rect x="44" y="574" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="68" cy="602" r="8" fill="#ef4444"/>
+<text x="86" y="607" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">frankx.io</text>
+<text x="62" y="632" fill="#cbd5e1" font-family="Arial" font-size="12">FrankX | root 404 / www fail</text>
+<text x="62" y="651" fill="#94a3b8" font-family="Arial" font-size="11">dirty 19-&gt;22</text>
+<rect x="482" y="574" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="506" cy="602" r="8" fill="#ef4444"/>
+<text x="524" y="607" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">music-academy.ai</text>
+<text x="500" y="632" fill="#cbd5e1" font-family="Arial" font-size="12">FrankX / Music | root fail / www fail</text>
+<text x="500" y="651" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="920" y="574" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="944" cy="602" r="8" fill="#ef4444"/>
+<text x="962" y="607" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">realitydiffusion.ai</text>
+<text x="938" y="632" fill="#cbd5e1" font-family="Arial" font-size="12">Reality Architect / Arcanea | root fail / www fail</text>
+<text x="938" y="651" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="44" y="686" width="410" height="92" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="2"/>
+<circle cx="68" cy="714" r="8" fill="#ef4444"/>
+<text x="86" y="719" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">starlight-intelligence.ai</text>
+<text x="62" y="744" fill="#cbd5e1" font-family="Arial" font-size="12">Starlight Intelligence Systems | root fail / www fail</text>
+<text x="62" y="763" fill="#94a3b8" font-family="Arial" font-size="11">dirty 66-&gt;67</text>
+<rect x="482" y="686" width="410" height="92" rx="8" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="506" cy="714" r="8" fill="#f59e0b"/>
+<text x="524" y="719" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">agenticincome.ai</text>
+<text x="500" y="744" fill="#cbd5e1" font-family="Arial" font-size="12">Revenue Network | root 200 / www 200</text>
+<text x="500" y="763" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+<rect x="920" y="686" width="410" height="92" rx="8" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="944" cy="714" r="8" fill="#f59e0b"/>
+<text x="962" y="719" fill="#f9fafb" font-family="Arial" font-size="17" font-weight="700">agenticpassiveincome.com</text>
+<text x="938" y="744" fill="#cbd5e1" font-family="Arial" font-size="12">Revenue Network | root 200 / www 200</text>
+<text x="938" y="763" fill="#94a3b8" font-family="Arial" font-size="11">no material change observed since 2026-07-01</text>
+</svg>

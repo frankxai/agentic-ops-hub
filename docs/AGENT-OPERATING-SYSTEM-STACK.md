@@ -9,6 +9,7 @@ For the broader vendor-neutral architecture, use [agentic-architecture-field-gui
 | Layer | Owned here | Connects to |
 | --- | --- | --- |
 | Shared instructions | `AGENTS.md` | Codex, Cursor, Copilot, Gemini, Cline, Claude shim |
+| Execution loop | `AGENTS.md` Core Agent Execution Loop, `ops/agent-loop-contract.v1.json` | Codex, Claude Code, Cursor, Copilot, Cline, Grok, Antigravity, Starlight queues |
 | Tool-specific shims | `CLAUDE.md`, `.cursor/rules/*.mdc`, `.clinerules/*.md`, Copilot instructions | Claude Code, Cursor, Cline, Copilot |
 | Skills | `.claude/skills/*/SKILL.md`, ACOS skill template | Claude Code, Codex skills, portable skill libraries |
 | Hooks and enforcement | Generated guardrails plus `claude-code-hooks` pointers | Lifecycle gates, circuit breakers, audit trails |
@@ -29,4 +30,4 @@ This repository should not duplicate runtime documentation for those tools. It s
 
 ## Operating Rule
 
-If a behavior should apply to every coding agent, put it in `AGENTS.md` and regenerate downstream rule files. If it is enforcement rather than advice, wire it through hooks. If it is tool access, treat it as MCP or platform configuration with explicit trust boundaries.
+If a behavior should apply to every coding agent, put it in `AGENTS.md` and regenerate downstream rule files. If it is a repeatable execution pattern, keep the short form in `AGENTS.md` and the full researched rationale in `docs/AGENT_LOOP_OS.md`. If it is enforcement rather than advice, wire it through hooks. If it is tool access, treat it as MCP or platform configuration with explicit trust boundaries.

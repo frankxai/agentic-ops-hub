@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1048" viewBox="0 0 1400 1048">
+<rect width="100%" height="100%" fill="#f7f8fa"/>
+<text x="32" y="42" font-family="Arial" font-size="24" font-weight="700" fill="#111827">Domain Deployment Radar - 2026-06-29</text>
+<text x="32" y="72" font-family="Arial" font-size="14" fill="#374151">Red 3 / Yellow 24 / Green 0 / Changed 17</text>
+<rect x="24" y="88" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="103" r="7" fill="#b7791f"/>
+<text x="58" y="108" font-family="Arial" font-size="13" fill="#111827">YELLOW  frankx.ai | FrankX | root 200-&gt;307</text>
+<rect x="24" y="122" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="137" r="7" fill="#b7791f"/>
+<text x="58" y="142" font-family="Arial" font-size="13" fill="#111827">YELLOW  gencreator.ai | FrankX / GenCreator | no material change observed since 2026-06-28</text>
+<rect x="24" y="156" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="171" r="7" fill="#c53030"/>
+<text x="58" y="176" font-family="Arial" font-size="13" fill="#111827">RED  arcanea.ai | Arcanea | root 200-&gt;307; deployment dpl_42HrgnddRvzFPWkeZgtLzYzTS6Nv-&gt;dpl_B63mPxS1BXBSvn2ySTGj1F</text>
+<rect x="24" y="190" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="205" r="7" fill="#b7791f"/>
+<text x="58" y="210" font-family="Arial" font-size="13" fill="#111827">YELLOW  starlightintelligence.org | Starlight Intelligence Systems | no material change observed since 2026-06-28</text>
+<rect x="24" y="224" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="239" r="7" fill="#b7791f"/>
+<text x="58" y="244" font-family="Arial" font-size="13" fill="#111827">YELLOW  animelegends.ai | Arcanea / AnimeLegends | root 200-&gt;307</text>
+<rect x="24" y="258" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="273" r="7" fill="#b7791f"/>
+<text x="58" y="278" font-family="Arial" font-size="13" fill="#111827">YELLOW  vibeclubs.ai | Arcanea / Experience | no material change observed since 2026-06-28</text>
+<rect x="24" y="292" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="307" r="7" fill="#b7791f"/>
+<text x="58" y="312" font-family="Arial" font-size="13" fill="#111827">YELLOW  agenticincome.ai | Revenue Network | verdict yellow-&gt;red; root 200-&gt;308</text>
+<rect x="24" y="326" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="341" r="7" fill="#b7791f"/>
+<text x="58" y="346" font-family="Arial" font-size="13" fill="#111827">YELLOW  disruptivepassiveincome.com | Revenue Network | www 200-&gt;301</text>
+<rect x="24" y="360" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="375" r="7" fill="#b7791f"/>
+<text x="58" y="380" font-family="Arial" font-size="13" fill="#111827">YELLOW  realityarchitect.ai | Reality Architect | verdict yellow-&gt;red; root 200-&gt;308</text>
+<rect x="24" y="394" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="409" r="7" fill="#c53030"/>
+<text x="58" y="414" font-family="Arial" font-size="13" fill="#111827">RED  aiarchitectacademy.com | AI Architect Academy | no material change observed since 2026-06-28</text>
+<rect x="24" y="428" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="443" r="7" fill="#b7791f"/>
+<text x="58" y="448" font-family="Arial" font-size="13" fill="#111827">YELLOW  arcanea.io | Arcanea | deployment -&gt;dpl_B63mPxS1BXBSvn2ySTGj1FnFgX7V; sha 6a4774f-&gt;6ae7467</text>
+<rect x="24" y="462" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="477" r="7" fill="#b7791f"/>
+<text x="58" y="482" font-family="Arial" font-size="13" fill="#111827">YELLOW  akamoto.io | Product / Other | www 200-&gt;301</text>
+<rect x="24" y="496" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="511" r="7" fill="#c53030"/>
+<text x="58" y="516" font-family="Arial" font-size="13" fill="#111827">RED  arcanea.dev | Arcanea | deployment -&gt;dpl_B63mPxS1BXBSvn2ySTGj1FnFgX7V; sha 6a4774f-&gt;6ae7467</text>
+<rect x="24" y="530" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="545" r="7" fill="#b7791f"/>
+<text x="58" y="550" font-family="Arial" font-size="13" fill="#111827">YELLOW  arcanea.com | Arcanea | root -&gt;302; www 200-&gt;410</text>
+<rect x="24" y="564" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="579" r="7" fill="#b7791f"/>
+<text x="58" y="584" font-family="Arial" font-size="13" fill="#111827">YELLOW  arcanean.org | Arcanea | verdict yellow-&gt;red</text>
+<rect x="24" y="598" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="613" r="7" fill="#b7791f"/>
+<text x="58" y="618" font-family="Arial" font-size="13" fill="#111827">YELLOW  arcanealabs.com | Arcanea | verdict yellow-&gt;red</text>
+<rect x="24" y="632" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="647" r="7" fill="#b7791f"/>
+<text x="58" y="652" font-family="Arial" font-size="13" fill="#111827">YELLOW  frankx.dev | FrankX | deployment -&gt;dpl_H6DxSpNvE4sbFYQc5NTRzXHiPesH; sha 2ee3d30-&gt;7fbbd84</text>
+<rect x="24" y="666" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="681" r="7" fill="#b7791f"/>
+<text x="58" y="686" font-family="Arial" font-size="13" fill="#111827">YELLOW  frankx.io | FrankX | deployment -&gt;dpl_H6DxSpNvE4sbFYQc5NTRzXHiPesH; sha 2ee3d30-&gt;7fbbd84</text>
+<rect x="24" y="700" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="715" r="7" fill="#b7791f"/>
+<text x="58" y="720" font-family="Arial" font-size="13" fill="#111827">YELLOW  frank-riemer.com | FrankX | deployment -&gt;dpl_H6DxSpNvE4sbFYQc5NTRzXHiPesH; sha 2ee3d30-&gt;7fbbd84</text>
+<rect x="24" y="734" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="749" r="7" fill="#b7791f"/>
+<text x="58" y="754" font-family="Arial" font-size="13" fill="#111827">YELLOW  realitydiffusion.ai | Reality Architect / Arcanea | no material change observed since 2026-06-28</text>
+<rect x="24" y="768" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="783" r="7" fill="#b7791f"/>
+<text x="58" y="788" font-family="Arial" font-size="13" fill="#111827">YELLOW  agenticpassiveincome.com | Revenue Network | verdict yellow-&gt;red; root 200-&gt;308</text>
+<rect x="24" y="802" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="817" r="7" fill="#b7791f"/>
+<text x="58" y="822" font-family="Arial" font-size="13" fill="#111827">YELLOW  agenticpassiveincome.ai | Revenue Network | no material change observed since 2026-06-28</text>
+<rect x="24" y="836" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="851" r="7" fill="#b7791f"/>
+<text x="58" y="856" font-family="Arial" font-size="13" fill="#111827">YELLOW  go.agenticincome.ai | Revenue Network | www -&gt;307; branch main-&gt;; dirty 0-&gt;</text>
+<rect x="24" y="870" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="885" r="7" fill="#b7791f"/>
+<text x="58" y="890" font-family="Arial" font-size="13" fill="#111827">YELLOW  disruptivepassiveincom.com | Revenue Network | no material change observed since 2026-06-28</text>
+<rect x="24" y="904" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="919" r="7" fill="#b7791f"/>
+<text x="58" y="924" font-family="Arial" font-size="13" fill="#111827">YELLOW  disruptivepassiveincome.de | Revenue Network | no material change observed since 2026-06-28</text>
+<rect x="24" y="938" width="1352" height="30" rx="4" fill="#eef2f7"/>
+<circle cx="42" cy="953" r="7" fill="#b7791f"/>
+<text x="58" y="958" font-family="Arial" font-size="13" fill="#111827">YELLOW  music-academy.ai | FrankX / Music | no material change observed since 2026-06-28</text>
+<rect x="24" y="972" width="1352" height="30" rx="4" fill="#fff"/>
+<circle cx="42" cy="987" r="7" fill="#b7791f"/>
+<text x="58" y="992" font-family="Arial" font-size="13" fill="#111827">YELLOW  starlight-intelligence.ai | Starlight Intelligence Systems | no material change observed since 2026-06-28</text>
+</svg>

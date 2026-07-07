@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+  <rect width="1800" height="1200" fill="#05060A"/>
+  <rect x="56" y="56" width="1688" height="1088" rx="34" fill="#0A0C14" stroke="#1A1F2E" stroke-width="2"/>
+  <text x="96" y="134" fill="#F1F3F9" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">Slack Proof Loop Scorecard</text>
+  <text x="98" y="184" fill="#8A90A8" font-family="Inter, Arial, sans-serif" font-size="25">First operating test: keep the route, close the backlog, pause autonomy expansion.</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(96,246)">
+      <rect width="380" height="196" rx="22" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="28" y="52" fill="#72E6AC" font-size="31" font-weight="800">Pass</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">Work queue to execution</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">to daily report produced proof</text>
+    </g>
+    <g transform="translate(520,246)">
+      <rect width="380" height="196" rx="22" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="28" y="52" fill="#72E6AC" font-size="31" font-weight="800">Pass</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">No public publishing, deploy,</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">merge, spend, or gateway start</text>
+    </g>
+    <g transform="translate(944,246)">
+      <rect width="380" height="196" rx="22" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="28" y="52" fill="#F6C86B" font-size="31" font-weight="800">Needs Action</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">Approval backlog is real</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">Decide before more candidates</text>
+    </g>
+    <g transform="translate(1368,246)">
+      <rect width="334" height="196" rx="22" fill="#101521" stroke="#F6C86B" stroke-width="2"/>
+      <text x="28" y="52" fill="#F6C86B" font-size="31" font-weight="800">Needs Action</text>
+      <text x="28" y="100" fill="#F1F3F9" font-size="24">Brand rooms need</text>
+      <text x="28" y="140" fill="#F1F3F9" font-size="24">weekly proof cadence</text>
+    </g>
+
+    <g transform="translate(96,528)">
+      <rect width="760" height="330" rx="24" fill="#111827" stroke="#6EA8FE" stroke-width="2"/>
+      <text x="30" y="58" fill="#6EA8FE" font-size="32" font-weight="800">Keep</text>
+      <text x="30" y="112" fill="#F1F3F9" font-size="25">Daily executive proof</text>
+      <text x="30" y="154" fill="#F1F3F9" font-size="25">Social carousel workroom</text>
+      <text x="30" y="196" fill="#F1F3F9" font-size="25">Social approval gate</text>
+      <text x="30" y="238" fill="#F1F3F9" font-size="25">Repo-command and Hermes runtime proof</text>
+      <text x="30" y="280" fill="#8A90A8" font-size="22">They produced receipts instead of vague status.</text>
+    </g>
+
+    <g transform="translate(942,528)">
+      <rect width="760" height="330" rx="24" fill="#111827" stroke="#FF7A90" stroke-width="2"/>
+      <text x="30" y="58" fill="#FF7A90" font-size="32" font-weight="800">Pause / Cut</text>
+      <text x="30" y="112" fill="#F1F3F9" font-size="25">Pause more permanent channels</text>
+      <text x="30" y="154" fill="#F1F3F9" font-size="25">Pause Hermes gateway activation</text>
+      <text x="30" y="196" fill="#F1F3F9" font-size="25">Cut public social automation for now</text>
+      <text x="30" y="238" fill="#F1F3F9" font-size="25">Do not add approval candidates until one closes</text>
+      <text x="30" y="280" fill="#8A90A8" font-size="22">Autonomy expands after proof loops behave.</text>
+    </g>
+
+    <g transform="translate(96,942)">
+      <rect width="1606" height="112" rx="22" fill="#101521" stroke="#72E6AC" stroke-width="2"/>
+      <text x="30" y="48" fill="#72E6AC" font-size="30" font-weight="800">Verdict</text>
+      <text x="170" y="48" fill="#F1F3F9" font-size="25">The proof loop works. The next bottleneck is not automation. It is decision closure.</text>
+      <text x="170" y="86" fill="#8A90A8" font-size="22">Next: clear approvals, scan second device, keep gateways stopped, split Arcanea red lane.</text>
+    </g>
+  </g>
+</svg>

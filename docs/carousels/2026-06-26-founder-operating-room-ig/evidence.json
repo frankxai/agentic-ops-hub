@@ -1,0 +1,87 @@
+{
+  "version": "2026-06-26",
+  "run_type": "improve_existing_candidate",
+  "candidate": "Founder Operating Room",
+  "brand": "FrankX / Starlight",
+  "surface": "Instagram carousel primary; LinkedIn PDF review secondary",
+  "status": "internal review ready; not published; not scheduled; not routed as a new approval candidate",
+  "reason_for_improvement": "Approval queue already has waiting candidates, so this run made an existing strong workroom proof factory-complete instead of adding queue noise.",
+  "learning_inputs": {
+    "official_source_signal": "No topical AI lab/product claims used. Platform sizing references retained for Instagram 4:5 review.",
+    "approval_rejection_signal": "social-approvals queue hygiene says decide current candidates before adding more.",
+    "design_qa_signal": "Generated visuals are acceptable as text-free source frames; exact copy is deterministic.",
+    "performance_signal": "No published-post metrics available.",
+    "brand_guide_signal": "Use positive founder language, mechanism-first framing, proof, and explicit approval boundaries."
+  },
+  "sources": [
+    {
+      "label": "Meta Instagram feed ad guide",
+      "url": "https://www.facebook.com/business/ads-guide/image/instagram-feed",
+      "use": "4:5 Instagram surface reference"
+    },
+    {
+      "label": "Carousel Factory Operating System",
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/CAROUSEL_FACTORY_OPERATING_SYSTEM_2026-06-25.md",
+      "use": "Required pack files and deterministic deck standard"
+    },
+    {
+      "label": "Social Media Team OS",
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/SOCIAL_MEDIA_TEAM_OS_2026-06-26.md",
+      "use": "Approval gates, channel routing, and learning loop"
+    },
+    {
+      "label": "FrankX / AI-Architect / Builder Education lane guide",
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/social-media-team-os/frankx-ai-architect-builder-education/BRAND_SOCIAL.md",
+      "use": "Voice, visual identity, and review gate"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-founder-operating-room-ig/index.html",
+      "kind": "deterministic_html_wrapper",
+      "status": "created"
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-founder-operating-room-ig/deck.pdf",
+      "kind": "pdf",
+      "status": "exported",
+      "notes": "Generated with Chrome headless from index.html."
+    },
+    {
+      "path": "C:/Users/frank/starlight/repos/agentic-ops-hub/docs/carousels/2026-06-26-founder-operating-room-ig/cover-preview.png",
+      "kind": "cover_preview",
+      "status": "created",
+      "notes": "Copied from exports/png/01-founder-operating-room.png."
+    }
+  ],
+  "claim_risk": {
+    "level": "medium-low",
+    "safe_claims": [
+      "This is FrankX / Starlight's internal operating model.",
+      "Agents can support research, drafting, preparation, QA, and proof.",
+      "Human approval remains required for public, production, financial, customer, partner, domain, access, and runtime activation actions."
+    ],
+    "avoid": [
+      "Autonomous publishing is live.",
+      "Hermes gateways are active for public posting.",
+      "This is a universal best practice without context."
+    ]
+  },
+  "visual_qa": {
+    "score": 28,
+    "max": 30,
+    "first_read_and_hierarchy": 5,
+    "brand_fit_and_distinctiveness": 5,
+    "craft_typography_spacing_composition": 4,
+    "accessibility_contrast_surface_fit": 4,
+    "accuracy_provenance_no_artifacts": 5,
+    "usefulness_for_surface": 5,
+    "notes": "Contact sheet inspected. Strong sequence and brand fit. Exact text is deterministic. Some supporting labels remain small; final flagship use could benefit from a Figma/Canva kerning pass."
+  },
+  "approval_gate": "No external publish, schedule, paid boost, customer or partner message, production deploy, merge, spend, access change, domain change, or Hermes gateway activation is approved by this packet."
+  ,
+  "slack_routing": {
+    "social_carousels": "https://frankxintelli-cu22555.slack.com/archives/C0BCPG55PJB/p1782473640642489",
+    "social_approvals": "not routed; approval queue hygiene says wait until current candidates are decided or this replaces one"
+  }
+}

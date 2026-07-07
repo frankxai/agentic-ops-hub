@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#071014"/>
+      <stop offset="0.52" stop-color="#101820"/>
+      <stop offset="1" stop-color="#070b10"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" x2="1">
+      <stop offset="0" stop-color="#13232b" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#0b141a" stop-opacity="0.96"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+    <style>
+      .title{font:700 58px Inter,Segoe UI,Arial,sans-serif;fill:#f7fbff}
+      .subtitle{font:400 25px Inter,Segoe UI,Arial,sans-serif;fill:#a9bdc9}
+      .section{font:700 30px Inter,Segoe UI,Arial,sans-serif;fill:#fff}
+      .small{font:500 22px Inter,Segoe UI,Arial,sans-serif;fill:#cfe5ef}
+      .tiny{font:500 18px Inter,Segoe UI,Arial,sans-serif;fill:#9db2bd}
+      .rule{stroke:#2c4652;stroke-width:2}
+      .cyan{fill:#4be0ff}.gold{fill:#f5c96a}.green{fill:#58e6a6}.red{fill:#ff7b7b}
+      .card{fill:url(#panel);stroke:#2d4651;stroke-width:1.5;filter:url(#shadow)}
+      .chip{fill:#0d1b22;stroke:#294653;stroke-width:1}
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1580" cy="120" r="300" fill="#12313d" opacity="0.18"/>
+  <circle cx="260" cy="900" r="340" fill="#5b451f" opacity="0.14"/>
+  <text x="90" y="92" class="title">Starlight Slack Cockpit</text>
+  <text x="92" y="132" class="subtitle">Exact operating surface for FrankX / Arcanea / Starlight portfolio work</text>
+
+  <rect x="760" y="168" width="400" height="150" rx="22" class="card"/>
+  <text x="960" y="224" text-anchor="middle" class="section">#ops</text>
+  <text x="960" y="260" text-anchor="middle" class="small">Portfolio decisions</text>
+  <text x="960" y="292" text-anchor="middle" class="tiny">spend · priorities · cross-brand blockers</text>
+
+  <g>
+    <rect x="80" y="185" width="500" height="250" rx="22" class="card"/>
+    <text x="112" y="238" class="section">Core Command</text>
+    <line x1="112" y1="258" x2="548" y2="258" class="rule"/>
+    <text x="112" y="302" class="small">#daily-report — daily brief + EOD proof</text>
+    <text x="112" y="338" class="small">#work-queue — intake before assignment</text>
+    <text x="112" y="374" class="small">#execution-room — active assigned work</text>
+    <text x="112" y="410" class="small">#start-here-agents — onboarding manual</text>
+  </g>
+
+  <g>
+    <rect x="1340" y="185" width="500" height="250" rx="22" class="card"/>
+    <text x="1372" y="238" class="section">Agent Runtime + Repo Truth</text>
+    <line x1="1372" y1="258" x2="1808" y2="258" class="rule"/>
+    <text x="1372" y="302" class="small">#hermes-agent — profiles, gateways, kanban</text>
+    <text x="1372" y="338" class="small">#repo-command — PRs, builds, branch risks</text>
+    <text x="1372" y="374" class="small">#mcp-integrations — MCP + tool access</text>
+    <text x="1372" y="410" class="small">#knowledge-systems · #design-intelligence</text>
+  </g>
+
+  <g>
+    <rect x="80" y="505" width="500" height="390" rx="22" class="card"/>
+    <text x="112" y="558" class="section">Content + Social</text>
+    <line x1="112" y1="578" x2="548" y2="578" class="rule"/>
+    <text x="112" y="622" class="small">#research-intel — source-backed signals</text>
+    <text x="112" y="658" class="small">#content-film-prep — scripts, B-roll, carousels</text>
+    <text x="112" y="694" class="small">#social-command — calendar + campaign planning</text>
+    <text x="112" y="730" class="small">#social-approvals — final publish gate</text>
+    <text x="112" y="782" class="tiny">Platform rooms</text>
+    <text x="112" y="818" class="small">#social-x · #social-linkedin · #social-instagram</text>
+    <text x="112" y="854" class="small">#social-youtube · #social-tiktok · #social-threads</text>
+    <text x="112" y="890" class="small">#social-bluesky · #social-farcaster · #social-syndication</text>
+  </g>
+
+  <g>
+    <rect x="1340" y="505" width="500" height="390" rx="22" class="card"/>
+    <text x="1372" y="558" class="section">Brand Rooms</text>
+    <line x1="1372" y1="578" x2="1808" y2="578" class="rule"/>
+    <text x="1372" y="622" class="small">#brand-starlight · #brand-frankx</text>
+    <text x="1372" y="658" class="small">#brand-creator-systems · #brand-arcanea</text>
+    <text x="1372" y="694" class="small">#brand-ai-coe · #brand-agentic-income</text>
+    <text x="1372" y="730" class="small">#brand-reality-architect · #brand-anime-legends</text>
+    <text x="1372" y="766" class="small">#brand-mind · #brand-research-intelligence</text>
+    <text x="1372" y="802" class="small">#brand-tooling-oss</text>
+    <text x="1372" y="856" class="tiny">Rule: brand rooms own priorities, decisions, proof, and approvals.</text>
+  </g>
+
+  <g>
+    <rect x="700" y="395" width="520" height="410" rx="28" fill="#0d1b22" stroke="#3d6573" stroke-width="2" filter="url(#shadow)"/>
+    <text x="960" y="455" text-anchor="middle" class="section">How A Work Item Moves</text>
+    <line x1="744" y1="482" x2="1176" y2="482" class="rule"/>
+    <text x="760" y="532" class="small">1. Ask enters #work-queue</text>
+    <text x="760" y="575" class="small">2. Route to brand room or #repo-command</text>
+    <text x="760" y="618" class="small">3. Active work goes to #execution-room</text>
+    <text x="760" y="661" class="small">4. Proof returns to source channel</text>
+    <text x="760" y="704" class="small">5. Public actions require #social-approvals</text>
+    <text x="760" y="747" class="small">6. Daily synthesis lands in #daily-report</text>
+  </g>
+
+  <path d="M580 310 C650 310 690 245 760 245" fill="none" stroke="#4be0ff" stroke-width="3" opacity="0.7"/>
+  <path d="M1160 245 C1230 245 1270 310 1340 310" fill="none" stroke="#4be0ff" stroke-width="3" opacity="0.7"/>
+  <path d="M580 700 C650 700 660 600 700 600" fill="none" stroke="#f5c96a" stroke-width="3" opacity="0.7"/>
+  <path d="M1220 600 C1260 600 1270 700 1340 700" fill="none" stroke="#f5c96a" stroke-width="3" opacity="0.7"/>
+
+  <g transform="translate(90 970)">
+    <rect width="1740" height="54" rx="16" fill="#0d1b22" stroke="#304d59"/>
+    <text x="32" y="36" class="tiny">Operating labels: Decision · Ask · Update · Blocker · Proof · Draft · Approval. No proof means not done. No public action without approval.</text>
+  </g>
+</svg>
