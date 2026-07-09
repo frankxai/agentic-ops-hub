@@ -41,35 +41,37 @@ jobs:
           vibe-os
           EOF
           )
-          NEEDS="" ; MOVED="" ; HEALTH=""
+          # Accumulate into temp files (no echo -e / \n escapes — PR titles are untrusted).
+          NEEDS_FILE=$(mktemp); HEALTH_FILE=$(mktemp)
           for R in $REPOS; do
             SLUG="$OWNER/$R"
-            # PRs needing a human (labeled) or red — one gh call each, no polling loops
+            # PRs needing a human (labeled) — one gh call each, no polling loops
             NH=$(gh pr list --repo "$SLUG" --state open --label 'estate:needs-human' --json number,title,url \
                   --jq '.[] | "  - [\(.number)] \(.title) — \(.url)"' 2>/dev/null || true)
-            [ -n "$NH" ] && NEEDS="${NEEDS}\n**${R}**\n${NH}"
+            if [ -n "$NH" ]; then
+              printf '\n**%s**\n%s\n' "$R" "$NH" >> "$NEEDS_FILE"
+            fi
             OPEN=$(gh pr list --repo "$SLUG" --state open --json number --jq 'length' 2>/dev/null || echo 0)
-            HEALTH="${HEALTH}\n| ${R} | ${OPEN} |"
+            printf '| %s | %s |\n' "$R" "$OPEN" >> "$HEALTH_FILE"
           done
           {
             echo "# Estate Digest — $(date -u +%Y-%m-%d)"
             echo
-            if [ -n "$NEEDS" ]; then
-              echo "## 🟠 Needs you"; echo -e "$NEEDS"
+            if [ -s "$NEEDS_FILE" ]; then
+              echo "## 🟠 Needs you"; cat "$NEEDS_FILE"
             else
               echo "## 🟢 Estate green — nothing needs a human."
             fi
             echo
             echo "## Health (open PRs)"
-            echo "| repo | open PRs |"; echo "|---|---|"; echo -e "$HEALTH"
+            echo "| repo | open PRs |"; echo "|---|---|"; cat "$HEALTH_FILE"
           } > digest.md
           cat digest.md >> "$GITHUB_STEP_SUMMARY"
-          echo "DIGEST<<EOF" >> "$GITHUB_ENV"; cat digest.md >> "$GITHUB_ENV"; echo "EOF" >> "$GITHUB_ENV"
       - name: Open/refresh the digest issue (one, updated in place)
         uses: actions/github-script@v7
         with:
           script: |
-            const body = process.env.DIGEST;
+            const body = require('fs').readFileSync('digest.md', 'utf8');
             const title = 'Estate Digest';
             const {data:issues} = await github.rest.issues.listForRepo({...context.repo, state:'open', labels:'estate:digest'});
             if (issues.length) {

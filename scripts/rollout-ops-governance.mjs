@@ -12,9 +12,10 @@
 // See docs/ESTATE-OPS-ACTIVATION.md.
 
 import { execSync } from 'node:child_process';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const HUB = join(HERE, '..');
@@ -55,21 +56,17 @@ for (const t of targets) {
   if (!APPLY) { console.log('    (dry run — nothing changed)\n'); continue; }
 
   // APPLY path: clone shallow into a temp dir, branch, add files, PR. Requires gh + git authed.
-  const tmp = `/tmp/estate-rollout-${t.repo}`;
+  const tmp = join(tmpdir(), `estate-rollout-${t.repo}`);
   sh(`rm -rf ${tmp} && gh repo clone ${slug} ${tmp} -- --depth=1`);
   const branch = 'ops/estate-governance';
   sh(`git -C ${tmp} checkout -B ${branch}`);
   sh(`mkdir -p ${tmp}/.github/workflows`);
-  writeInto(`${tmp}/.github/workflows/estate-pr-guardian.yml`, guardian);
-  if (t.hub) writeInto(`${tmp}/.github/workflows/estate-digest.yml`, digest);
+  writeFileSync(join(tmp, '.github/workflows/estate-pr-guardian.yml'), guardian);
+  if (t.hub) writeFileSync(join(tmp, '.github/workflows/estate-digest.yml'), digest);
   sh(`git -C ${tmp} add .github/workflows/ && git -C ${tmp} -c user.name=estate-ops -c user.email=ops@frankx.ai commit -m "ci: add Estate PR Guardian (off until ESTATE_AUTONOMY + key set)"`);
   sh(`git -C ${tmp} push -u origin ${branch} --force-with-lease`);
   sh(`gh pr create -R ${slug} --draft --base main --head ${branch} --title "ci: Estate Ops Governance" --body "Adds the estate-governed PR guardian. Off until ESTATE_AUTONOMY (${t.autonomy}) + ANTHROPIC_API_KEY are set. See agentic-ops-hub/docs/ESTATE-OPS-GOVERNANCE.md."`);
   console.log('    ✓ draft PR opened\n');
-}
-
-function writeInto(path, content) {
-  execSync(`cat > ${path} <<'ESTATE_EOF'\n${content}\nESTATE_EOF`, { stdio: 'inherit', shell: '/bin/bash' });
 }
 
 if (!APPLY) console.log('Re-run with --apply to open the draft PRs (nothing merges automatically).');

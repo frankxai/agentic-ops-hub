@@ -79,7 +79,7 @@ jobs:
                 STANDARD:'Independent Claude review queued. Comment `@estate fix <what>` to apply a scoped fix.',
                 HIGH_RISK:'Full review + human gate. Labeled `estate:needs-human` — a person makes the call.',
                 BLOCKED:'Exceeds safety thresholds. Add `BIG-CHANGE:` or `SACRED-DELETE:` to a commit, or split the PR.'}[tier]);
-            const {data}=await github.rest.issues.listComments({...context.repo, issue_number: context.issue.number});
+            const {data}=await github.rest.issues.listComments({...context.repo, issue_number: context.issue.number, per_page:100});
             const prev=data.find(c=>c.body?.includes(marker));
             if(prev){ await github.rest.issues.updateComment({...context.repo, comment_id: prev.id, body}); }
             else    { await github.rest.issues.createComment({...context.repo, issue_number: context.issue.number, body}); }
@@ -100,10 +100,12 @@ jobs:
 
   # 3 ─ Independent review (STANDARD/HIGH_RISK) — read-only, scope-limited to the diff
   review:
+    # Runs as a gate node for every non-off, non-blocked, non-draft PR so `automerge`'s
+    # `needs: [classify, review]` resolves even on TRIVIAL (where the paid step is skipped).
     if: >
       github.event_name == 'pull_request' &&
-      vars.ESTATE_AUTONOMY != 'off' &&
-      (needs.classify.outputs.tier == 'STANDARD' || needs.classify.outputs.tier == 'HIGH_RISK') &&
+      (vars.ESTATE_AUTONOMY == 'assist' || vars.ESTATE_AUTONOMY == 'auto') &&
+      needs.classify.outputs.tier != 'BLOCKED' &&
       github.event.pull_request.draft == false
     needs: classify
     runs-on: ubuntu-latest
@@ -112,7 +114,7 @@ jobs:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
       - name: Claude review (independent, no writes)
-        if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+        if: ${{ secrets.ANTHROPIC_API_KEY != '' && (needs.classify.outputs.tier == 'STANDARD' || needs.classify.outputs.tier == 'HIGH_RISK') }}
         uses: anthropics/claude-code-action@beta
         with:
           model: claude-sonnet-4-5
@@ -138,13 +140,22 @@ jobs:
     if: >
       github.event_name == 'issue_comment' &&
       github.event.issue.pull_request != null &&
-      vars.ESTATE_AUTONOMY != 'off' &&
+      (vars.ESTATE_AUTONOMY == 'assist' || vars.ESTATE_AUTONOMY == 'auto') &&
       startsWith(github.event.comment.body, '@estate fix')
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
+      # On issue_comment the checkout above lands on the default branch — move to the PR head
+      # so any edit targets the branch under review, and set an identity for the commit.
+      - name: Check out the PR branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr checkout ${{ github.event.issue.number }}
+          git config user.name  "estate-ops[bot]"
+          git config user.email "estate-ops@users.noreply.github.com"
       - name: Claude scoped fix
         if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
         uses: anthropics/claude-code-action@beta
@@ -158,6 +169,17 @@ jobs:
             Apply the smallest change that satisfies exactly that request. Touch nothing else.
             Never edit a sacred path (.github/workflows, CLAUDE.md, .claude/**, app/, public/, live URLs)
             without it being explicitly named in the request. Match the surrounding style.
+      # Safety net: if the action left changes uncommitted, commit and push them; if it already
+      # pushed, the tree is clean and this is a no-op.
+      - name: Commit and push if anything changed
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Working tree clean — nothing to push."
+          else
+            git add -A
+            git commit -m "fix: apply @estate scoped fix (requested by @${{ github.event.comment.user.login }})"
+            git push
+          fi
 
   # 5 ─ Conditional auto-merge (autonomy = auto only, safe tiers, green, not sacred)
   automerge:
