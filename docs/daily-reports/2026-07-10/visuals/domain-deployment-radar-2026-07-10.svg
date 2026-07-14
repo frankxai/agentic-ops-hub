@@ -1,0 +1,210 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1400' height='1296' viewBox='0 0 1400 1296'>
+<rect width='100%' height='100%' fill='#f7f4ef'/>
+<text x='32' y='46' font-family='Arial, sans-serif' font-size='26' font-weight='700' fill='#101418'>Domain Deployment Radar - 2026-07-10</text>
+<text x='32' y='78' font-family='Arial, sans-serif' font-size='15' fill='#333'>Read-only portfolio board: 8 green / 0 yellow / 26 red across 34 surfaces</text>
+<text x='32' y='112' font-family='Arial, sans-serif' font-size='13' fill='#555'>Green=healthy mapped surface; Yellow=watch; Red=health/deploy/proof gate blocked. No mutation performed.</text>
+<rect x='32' y='118' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='132' r='7' fill='#c43d32'/>
+<text x='72' y='136' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>aiarchitectacademy.com</text>
+<text x='300' y='136' font-family='Arial, sans-serif' font-size='12' fill='#333'>AI Architect Academy</text>
+<text x='520' y='136' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='136' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification</text>
+<rect x='32' y='152' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='166' r='7' fill='#c43d32'/>
+<text x='72' y='170' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>cecilia.chat</text>
+<text x='300' y='170' font-family='Arial, sans-serif' font-size='12' fill='#333'>Ana Cecilia companion concept</text>
+<text x='520' y='170' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='170' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: canonical repo; missing: deploy target / domain attachment proof</text>
+<rect x='32' y='186' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='200' r='7' fill='#c43d32'/>
+<text x='72' y='204' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanea.ai</text>
+<text x='300' y='204' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea</text>
+<text x='520' y='204' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: BLOCKED</text>
+<text x='690' y='204' font-family='Arial, sans-serif' font-size='12' fill='#555'>latest Vercel deployment BLOCKED</text>
+<rect x='32' y='220' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='234' r='7' fill='#c43d32'/>
+<text x='72' y='238' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanea.com</text>
+<text x='300' y='238' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea</text>
+<text x='520' y='238' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='238' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: canonical repo; missing: deploy targ...</text>
+<rect x='32' y='254' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='268' r='7' fill='#c43d32'/>
+<text x='72' y='272' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanea.dev</text>
+<text x='300' y='272' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea</text>
+<text x='520' y='272' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: BLOCKED</text>
+<text x='690' y='272' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; latest Vercel deployment BLOCKED; missing: provider verification; missing: de...</text>
+<rect x='32' y='288' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='302' r='7' fill='#c43d32'/>
+<text x='72' y='306' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanea.io</text>
+<text x='300' y='306' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea</text>
+<text x='520' y='306' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: BLOCKED</text>
+<text x='690' y='306' font-family='Arial, sans-serif' font-size='12' fill='#555'>latest Vercel deployment BLOCKED; missing: provider verification; missing: deploy target / domain attachment pro...</text>
+<rect x='32' y='322' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='336' r='7' fill='#c43d32'/>
+<text x='72' y='340' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanealabs.com</text>
+<text x='300' y='340' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea</text>
+<text x='520' y='340' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='340' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='356' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='370' r='7' fill='#c43d32'/>
+<text x='72' y='374' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanean.org</text>
+<text x='300' y='374' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea</text>
+<text x='520' y='374' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='374' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='390' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='404' r='7' fill='#c43d32'/>
+<text x='72' y='408' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>arcanea.academy</text>
+<text x='300' y='408' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea Academy</text>
+<text x='520' y='408' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='408' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: canonical repo</text>
+<rect x='32' y='424' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='438' r='7' fill='#c43d32'/>
+<text x='72' y='442' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>oceanintelligence.app</text>
+<text x='300' y='442' font-family='Arial, sans-serif' font-size='12' fill='#333'>Blue Life Commons / Starlight marine lane</text>
+<text x='520' y='442' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='442' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: deploy target / domain attachment proof</text>
+<rect x='32' y='458' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='472' r='7' fill='#c43d32'/>
+<text x='72' y='476' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>frank-riemer.com</text>
+<text x='300' y='476' font-family='Arial, sans-serif' font-size='12' fill='#333'>FrankX</text>
+<text x='520' y='476' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='476' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='492' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='506' r='7' fill='#c43d32'/>
+<text x='72' y='510' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>frankx.dev</text>
+<text x='300' y='510' font-family='Arial, sans-serif' font-size='12' fill='#333'>FrankX</text>
+<text x='520' y='510' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='510' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='526' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='540' r='7' fill='#c43d32'/>
+<text x='72' y='544' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>frankx.io</text>
+<text x='300' y='544' font-family='Arial, sans-serif' font-size='12' fill='#333'>FrankX</text>
+<text x='520' y='544' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='544' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='560' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='574' r='7' fill='#c43d32'/>
+<text x='72' y='578' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>music-academy.ai</text>
+<text x='300' y='578' font-family='Arial, sans-serif' font-size='12' fill='#333'>FrankX / Music</text>
+<text x='520' y='578' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='578' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='594' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='608' r='7' fill='#c43d32'/>
+<text x='72' y='612' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>gencreator.community</text>
+<text x='300' y='612' font-family='Arial, sans-serif' font-size='12' fill='#333'>GenCreator Community</text>
+<text x='520' y='612' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='612' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: canonical repo</text>
+<rect x='32' y='628' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='642' r='7' fill='#c43d32'/>
+<text x='72' y='646' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>akamoto.io</text>
+<text x='300' y='646' font-family='Arial, sans-serif' font-size='12' fill='#333'>Product / Other</text>
+<text x='520' y='646' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='646' font-family='Arial, sans-serif' font-size='12' fill='#555'>missing: provider verification; missing: canonical repo; missing: deploy target / domain attachment proof</text>
+<rect x='32' y='662' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='676' r='7' fill='#c43d32'/>
+<text x='72' y='680' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>realitydiffusion.ai</text>
+<text x='300' y='680' font-family='Arial, sans-serif' font-size='12' fill='#333'>Reality Architect / Arcanea</text>
+<text x='520' y='680' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='680' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: deploy target / domain attachment proof</text>
+<rect x='32' y='696' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='710' r='7' fill='#c43d32'/>
+<text x='72' y='714' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>agenticincome.ai</text>
+<text x='300' y='714' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='714' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: ERROR</text>
+<text x='690' y='714' font-family='Arial, sans-serif' font-size='12' fill='#555'>latest Vercel deployment ERROR</text>
+<rect x='32' y='730' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='744' r='7' fill='#c43d32'/>
+<text x='72' y='748' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>agenticpassiveincome.ai</text>
+<text x='300' y='748' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='748' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: ERROR</text>
+<text x='690' y='748' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; latest Vercel deployment ERROR; missing: provider verification; missing: depl...</text>
+<rect x='32' y='764' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='778' r='7' fill='#c43d32'/>
+<text x='72' y='782' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>agenticpassiveincome.com</text>
+<text x='300' y='782' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='782' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: ERROR</text>
+<text x='690' y='782' font-family='Arial, sans-serif' font-size='12' fill='#555'>latest Vercel deployment ERROR; missing: deploy target / domain attachment proof</text>
+<rect x='32' y='798' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='812' r='7' fill='#c43d32'/>
+<text x='72' y='816' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>disruptivepassiveincom.com</text>
+<text x='300' y='816' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='816' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: no-vercel</text>
+<text x='690' y='816' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: canonical repo; missing: deploy targ...</text>
+<rect x='32' y='832' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='846' r='7' fill='#c43d32'/>
+<text x='72' y='850' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>disruptivepassiveincome.com</text>
+<text x='300' y='850' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='850' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: ERROR</text>
+<text x='690' y='850' font-family='Arial, sans-serif' font-size='12' fill='#555'>latest Vercel deployment ERROR</text>
+<rect x='32' y='866' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='880' r='7' fill='#c43d32'/>
+<text x='72' y='884' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>disruptivepassiveincome.de</text>
+<text x='300' y='884' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='884' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: ERROR</text>
+<text x='690' y='884' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; latest Vercel deployment ERROR; missing: provider verification; missing: depl...</text>
+<rect x='32' y='900' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='914' r='7' fill='#c43d32'/>
+<text x='72' y='918' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>go.agenticincome.ai</text>
+<text x='300' y='918' font-family='Arial, sans-serif' font-size='12' fill='#333'>Revenue Network</text>
+<text x='520' y='918' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: ERROR</text>
+<text x='690' y='918' font-family='Arial, sans-serif' font-size='12' fill='#555'>latest Vercel deployment ERROR</text>
+<rect x='32' y='934' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='948' r='7' fill='#c43d32'/>
+<text x='72' y='952' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>starlightintelligence.academy</text>
+<text x='300' y='952' font-family='Arial, sans-serif' font-size='12' fill='#333'>Starlight Intelligence Academy</text>
+<text x='520' y='952' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='952' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: canonical repo</text>
+<rect x='32' y='968' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='982' r='7' fill='#c43d32'/>
+<text x='72' y='986' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>starlight-intelligence.ai</text>
+<text x='300' y='986' font-family='Arial, sans-serif' font-size='12' fill='#333'>Starlight Intelligence Systems</text>
+<text x='520' y='986' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='986' font-family='Arial, sans-serif' font-size='12' fill='#555'>root not healthy; www not healthy; missing: provider verification; missing: deploy target / domain attachment pr...</text>
+<rect x='32' y='1002' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1016' r='7' fill='#2f8f5b'/>
+<text x='72' y='1020' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>anaceciliacancino.com</text>
+<text x='300' y='1020' font-family='Arial, sans-serif' font-size='12' fill='#333'>Ana Cecilia Cancino</text>
+<text x='520' y='1020' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1020' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1036' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1050' r='7' fill='#2f8f5b'/>
+<text x='72' y='1054' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>animelegends.ai</text>
+<text x='300' y='1054' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea / AnimeLegends</text>
+<text x='520' y='1054' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1054' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1070' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1084' r='7' fill='#2f8f5b'/>
+<text x='72' y='1088' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>vibeclubs.ai</text>
+<text x='300' y='1088' font-family='Arial, sans-serif' font-size='12' fill='#333'>Arcanea / Experience</text>
+<text x='520' y='1088' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1088' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1104' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1118' r='7' fill='#2f8f5b'/>
+<text x='72' y='1122' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>bluelifecommons.org</text>
+<text x='300' y='1122' font-family='Arial, sans-serif' font-size='12' fill='#333'>Blue Life Commons</text>
+<text x='520' y='1122' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1122' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1138' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1152' r='7' fill='#2f8f5b'/>
+<text x='72' y='1156' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>frankx.ai</text>
+<text x='300' y='1156' font-family='Arial, sans-serif' font-size='12' fill='#333'>FrankX</text>
+<text x='520' y='1156' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1156' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1172' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1186' r='7' fill='#2f8f5b'/>
+<text x='72' y='1190' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>gencreator.ai</text>
+<text x='300' y='1190' font-family='Arial, sans-serif' font-size='12' fill='#333'>FrankX / GenCreator</text>
+<text x='520' y='1190' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1190' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1206' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1220' r='7' fill='#2f8f5b'/>
+<text x='72' y='1224' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>realityarchitect.ai</text>
+<text x='300' y='1224' font-family='Arial, sans-serif' font-size='12' fill='#333'>Reality Architect</text>
+<text x='520' y='1224' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1224' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+<rect x='32' y='1240' width='1336' height='28' rx='4' fill='#ffffff' stroke='#ded8ce'/>
+<circle cx='52' cy='1254' r='7' fill='#2f8f5b'/>
+<text x='72' y='1258' font-family='Arial, sans-serif' font-size='13' font-weight='700' fill='#101418'>starlightintelligence.org</text>
+<text x='300' y='1258' font-family='Arial, sans-serif' font-size='12' fill='#333'>Starlight Intelligence Systems</text>
+<text x='520' y='1258' font-family='Arial, sans-serif' font-size='12' fill='#333'>Vercel: READY</text>
+<text x='690' y='1258' font-family='Arial, sans-serif' font-size='12' fill='#555'>clear</text>
+</svg>
