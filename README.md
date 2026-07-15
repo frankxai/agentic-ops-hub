@@ -32,6 +32,20 @@ One source of truth (`AGENTS.md`), one sync engine, every agent aligned — plus
 
 ---
 
+## Open-core: public hub vs private control plane
+
+**Agentic Ops** is the public discipline name. This hub is the **shareable system**. Live fleet queues stay private.
+
+| Repo | Visibility | Owns |
+| :--- | :--- | :--- |
+| **[agentic-ops-hub](https://github.com/frankxai/agentic-ops-hub)** (you are here) | **Public** | `AGENTS.md` sync, ecosystem map, safety doctrine, multi-machine *patterns* |
+| **[agentic-ops](https://github.com/frankxai/agentic-ops)** | **Private** | Multi-machine bus, ASPH runtime, secrets wrappers, real task envelopes |
+
+Rule: **share the system; keep the control plane private.**  
+Boundary: [`docs/OPEN_CORE_BOUNDARY.md`](docs/OPEN_CORE_BOUNDARY.md) · Multi-machine pattern: [`docs/MULTI_MACHINE_AGENTIC_OPS.md`](docs/MULTI_MACHINE_AGENTIC_OPS.md)
+
+---
+
 ## 90-second start
 
 Use this repo when you need one canonical instruction layer for Claude Code, Cursor, Cline, Copilot, Codex, Antigravity, Grok, or a mixed agent fleet.
@@ -130,7 +144,8 @@ Agentic Ops is a stack. Each repo owns one layer — agentic-ops-hub is the **co
 
 | Layer | Repo | Owns |
 | :--- | :--- | :--- |
-| **Config control plane** | **agentic-ops-hub** (you are here) | Rule source-of-truth, cross-agent sync, the Agentic Ops index |
+| **Config control plane (public)** | **agentic-ops-hub** (you are here) | Rule source-of-truth, cross-agent sync, Agentic Ops index + doctrine |
+| **Live fleet ops (private)** | [agentic-ops](https://github.com/frankxai/agentic-ops) | Multi-machine bus, ASPH runtime, secrets/veil, real envelopes |
 | Capability system | [agentic-creator-os](https://github.com/frankxai/agentic-creator-os) | 90+ skills, 65+ commands, 38 agents — what agents *can do* |
 | Lifecycle enforcement | [claude-code-hooks](https://github.com/frankxai/claude-code-hooks) | Quality gates, circuit breakers, audit trails — what agents *may do* |
 | Integration health | [mcp-doctor](https://github.com/frankxai/mcp-doctor) | Diagnose/optimize MCP servers — what agents *connect to* |
@@ -139,7 +154,7 @@ Agentic Ops is a stack. Each repo owns one layer — agentic-ops-hub is the **co
 | Prompt layer | [prompt-engine](https://github.com/frankxai/prompt-engine) · [prompt-library](https://github.com/frankxai/prompt-library) | Evaluated, red-teamed prompts — what agents *are told* |
 | Domain expertise | [claude-skills-library](https://github.com/frankxai/claude-skills-library) | Deep research-backed domain skills — what agents *know* |
 
-Rule of thumb: **capabilities live in ACOS, enforcement lives in hooks, configuration alignment lives here.** If a file tells multiple agents how to behave in a repo, this hub owns its lifecycle.
+Rule of thumb: **capabilities live in ACOS, enforcement lives in hooks, configuration alignment lives here, live multi-machine queues live in private agentic-ops.** If a file tells multiple agents how to behave in a repo, this hub owns its lifecycle.
 
 ---
 
@@ -170,7 +185,7 @@ The best external repositories, toolkits, and skills for operating AI coding age
 
 * `/templates` — `AGENTS.md` (canonical source), `CLAUDE.md` (shim), legacy `.cursorrules`/`.clinerules`, ACOS `SKILL.md`.
 * `/scripts` — `sync-agent-rules.mjs`: fan-out + `--check` CI verification + `--legacy` compat.
-* `/docs` — `layering.md`: what goes in which file, and why; `CODING_AGENTS.md`: selection matrix and inventory of coding agents.
+* `/docs` — layering, coding-agent matrix, **open-core boundary**, multi-machine pattern, protection layers.
 
 ---
 
