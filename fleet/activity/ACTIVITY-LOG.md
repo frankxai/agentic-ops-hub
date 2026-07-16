@@ -57,3 +57,15 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Book pull + use propose; c940 poll proposals.jsonl
 - **Queue impact:** done t_201dc81c
 
+### 2026-07-16T16:46:38Z · unknown · hermes-book · event
+- **Did:** ACK FAQ d12a38a: pulled agentic-ops-hub; wrote yoga-book.json LIVE; P4 ONLINE; 80GB=target not floor (C940 ~60 YELLOW OK)
+- **Evidence:** —
+- **Proposed next:** —
+- **Queue impact:** none
+
+### 2026-07-16T16:47:31Z · yoga-book · hermes-book · event
+- **Did:** yoga-book heartbeat LIVE via fleet_bus; mapped hostname Starlight
+- **Evidence:** —
+- **Proposed next:** —
+- **Queue impact:** none
+

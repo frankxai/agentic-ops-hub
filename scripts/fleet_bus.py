@@ -14,10 +14,12 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-BUS_ROOT = Path(__file__).resolve().parents[1] / "bus"
+BUS_ROOT = Path(__file__).resolve().parents[1] / "fleet" / "bus"
 MACHINE_MAP = {
     "DESKTOP-1B4ICID": "c940",
+    "Starlight": "yoga-book",  # Yogabook 9i Command Center hostname
 }
+
 
 
 def utc_now() -> str:
@@ -30,9 +32,9 @@ def detect_machine() -> str:
     for hint, mid in MACHINE_MAP.items():
         if hint.lower() in host.lower() or hint.lower() in node.lower():
             return mid
-    # yoga-book: only if hostname contains yoga/book (set on first boot)
+    # yoga-book: hostname contains yoga/book OR mapped Starlight
     h = f"{host} {node}".lower()
-    if "yoga" in h or "book" in h:
+    if "yoga" in h or "book" in h or host == "Starlight":
         return "yoga-book"
     return "unknown"
 

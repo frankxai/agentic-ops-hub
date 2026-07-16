@@ -20,7 +20,10 @@ CAL = ACT / "calendar"
 PROPOSALS = ACT / "proposals.jsonl"
 QUEUES = ROOT / "fleet" / "bus" / "queues"
 
-MACHINE_MAP = {"DESKTOP-1B4ICID": "c940"}
+MACHINE_MAP = {
+    "DESKTOP-1B4ICID": "c940",
+    "Starlight": "yoga-book",
+}
 
 
 def utc_now() -> datetime:
@@ -33,7 +36,7 @@ def detect_machine() -> str:
         if hint.lower() in h.lower():
             return mid
     hl = h.lower()
-    if "yoga" in hl or "book" in hl:
+    if "yoga" in hl or "book" in hl or h == "Starlight":
         return "yoga-book"
     return "unknown"
 
