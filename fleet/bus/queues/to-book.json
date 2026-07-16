@@ -1,0 +1,28 @@
+{
+  "to": "yoga-book",
+  "from": "command-center",
+  "issued_at": "2026-07-16T16:30:00+00:00",
+  "priority": "P0",
+  "items": [
+    {
+      "id": "P4",
+      "title": "Packet 4 first boot + Telegram align",
+      "docs": [
+        "fleet/YOGA-BOOK-FIRST-BOOT.md",
+        "fleet/YOGA-BOOK-TELEGRAM-ALIGN.md",
+        "fleet/STARLIGHT-SWARM-DRIVER.md"
+      ]
+    },
+    {
+      "id": "P4b",
+      "title": "Write heartbeat yoga-book.json and post [book] ONLINE once",
+      "constraints": ["never forge c940 heartbeat", "frontend lanes only"]
+    },
+    {
+      "id": "FE1",
+      "title": "After online: claim frontend lane for R1 CTA UI if C940 marks need",
+      "branch_prefix": "agent/book/"
+    }
+  ],
+  "source": "fleet/TASK-PACKETS.md Packet 4"
+}

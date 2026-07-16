@@ -7,6 +7,39 @@
 ||**2026-07-14 Swarm Deployment (C940 Always-On Leader):** DEVICE-STRATEGY.md + PER-DOMAIN-EXECUTION-PROMPTS.md created. 6 Hermes cron jobs deployed and active (daily-ops-sweep, content-geo-strategy, sis-memory-maintenance, brand-geo-audit, image-asset-pipeline, pr-review-swarm). Sample Grok images generated for frankx.ai and Arcanea landing pages (links in results). claude-code skill activated with print-mode aliases ready. All actions respect register boundaries and professional standards. R1 bridge prioritized in content-geo cron.
 ||**2026-07-15 /ops-sweep (Cron Autonomous):** Git deltas collected across 10+ repos (FrankX machine status YELLOW/RED flux, vercel content-integrity-gate branch active, SIS dreaming consolidation, ACOS v12-open-core, Arcanea integrate branch, agentic-ops ledger update). Session log created. REGISTER-BOUNDARIES.md enforced (no violations in deltas; all artifacts align to Professional/Neutral/Mythic registers). Cross-repo status: interconnects stable via SIS→ACOS memory/workflows, FrankX meta-os, Arcanea agent-native. Risks R1/R8 active. DEVICE-STRATEGY next actions suggested below. Machine on C940 executing backend/content/ops per strategy.
 ||**2026-07-16 Fleet Control Plane (multi-machine ops):** Stood up `fleet/` under agentic-ops — `clone-manifest.json` (c940 + yoga-book + future slots), `FLEET-OPS.md`, `BACKUP-MIGRATION.md`, `TASK-PACKETS.md` (Packets 0–6). Scripts: `fleet_inventory.py`, `fleet_sync.py` (safe fetch / ff-only clean), `fleet_backup_check.py`. C940 inventory: 16/16 tier clones present; dirty=11 clean=5; disk free ~67GB; gh frankxai OK; restic present; rclone MISSING; Business no origin. Hot dirty: frankx.ai-vercel-website ~427, FrankX ~111, Arcanea ~100, SIS ~22, agentic-ops fleet untracked. Dispatched parallel agent packets 1–3; Packet 4 is Yoga Book first-boot (run on Book). Production targets P0/P1 tracked in manifest. Hermes crons still active (+ Railway daily/weekly/monthly).
+||**2026-07-16 batch complete (deleg_e583dd16):** Packets 1–3 GREEN complete. Reports in `fleet/reports/packet{1,2,3}-*.md`. P1 prod hygiene RED; P2 R1 YELLOW (ledger zero-links stale); P4 ACOS GREEN; backup check RED (rclone + disk + Business origin). Control plane commits on agentic-ops main (local ahead; origin behind 4 — rebase before push). Cron `fleet-inventory-sync` 08:00 daily. Next: Book Packet 4 · dirty steward · R1 primary CTA · rclone.
+
+
+
+## Command Center dispatch execution — 2026-07-16 (C940)
+
+- **Dispatch SoT:** `fleet/bus/queues/COMMAND-CENTER-DISPATCH.md` (+ `to-c940.json` / `to-book.json`).
+- **B1:** Fleet multi-agent driver + bus scripts staged/committed on agentic-ops.
+- **B2 R1 evidence (refresh):** frankx.ai=200, gencreator.ai=200. Prod site has **Footer** external `https://gencreator.ai` + **~49 files** with external URL (mostly blog). Command palette / mega-nav still steer heavily to **on-site** `/gencreator` → **R1 YELLOW** (not “zero links”). Next: primary homepage/nav CTA → external product (Book UI + C940 content), no ship until dirty gate classified.
+- **B3:** `fleet/reports/packet6-dirty-light.md` — vercel~427 WIP no-ship; FrankX~111 authoring; Arcanea~100 integrate.
+- **Book:** still OPEN Packet 4 — no `yoga-book` heartbeat.
+- **Channel:** status-only; work in DMs / this ledger / bus queues.
+
+## Fleet multi-agent align — 2026-07-16 (C940 executed)
+
+- **Driver:** `fleet/STARLIGHT-SWARM-DRIVER.md` — DM = interactive work; Starlight Swarm channel = one-way bus only (not home).
+- **Anti-thrash:** channel require-mention + echo filter + `busy_input_mode=queue` on C940; bot `@lenovostarlightbot`.
+- **Crons:** all active jobs **pinned** to `xai-oauth` / `grok-4.5` (fixed model-drift skip).
+- **Bus:** `scripts/fleet_bus.py` + heartbeat `fleet/bus/heartbeats/c940.json` LIVE.
+- **Pulse cron:** `fleet-swarm-pulse` every 6h → Telegram `-1004300203404` (no-agent).
+- **Book pending:** Packet 4 + `fleet/YOGA-BOOK-TELEGRAM-ALIGN.md` on Yogabook (mirror Telegram gates; no full cron fleet).
+- **Lead:** C940 backend/content/ops. **Book:** frontend UI only after join.
+
+## Fleet daily
+- **2026-07-16 08:00 C940** — inventory→backup_check→sync OK (cron).
+- Disk free **63.2 GB** (86.7% used) — above 50GB floor; below 80GB target.
+- Clones **16/16** present · dirty trees **11** · clean **5** · missing **0**.
+- Hot dirty: vercel **427** (prod branch off main), FrankX **111**, Arcanea **100**.
+- Sync **16 OK / 0 fail** — dirty=fetch-only; 4 clean ff-pull up-to-date.
+- Backup **RED**: rclone missing · disk<80GB · Business NO_ORIGIN · agentic-ops dirty~19.
+- Core tools OK (git/gh/node/python/hermes); npm/pnpm/codex/railway bash-OK (inventory WinError false-neg).
+- gh auth **OK** (frankxai). No force-push / no dirty wipe.
+- Next: install rclone crypt · reclaim disk · Packet 6 dirty steward · Book Packet 4.
 
 ---
 

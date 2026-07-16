@@ -1,0 +1,24 @@
+{
+  "to": "c940",
+  "from": "command-center",
+  "issued_at": "2026-07-16T16:30:00+00:00",
+  "priority": "P0",
+  "items": [
+    {
+      "id": "B1",
+      "title": "Commit agentic-ops fleet control plane",
+      "constraints": ["no force push", "no dirty wipe"]
+    },
+    {
+      "id": "B2",
+      "title": "R1 GenCreator bridge evidence refresh",
+      "constraints": ["no main/prod ship without approval"]
+    },
+    {
+      "id": "B3",
+      "title": "Dirty tree classification top-3",
+      "constraints": ["classify only", "enhance-never-erase"]
+    }
+  ],
+  "source": "fleet/TASK-PACKETS.md + OPS-LEDGER Next"
+}

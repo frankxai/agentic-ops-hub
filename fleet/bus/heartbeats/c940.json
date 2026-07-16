@@ -1,0 +1,9 @@
+{
+  "machine_id": "c940",
+  "hostname": "DESKTOP-1B4ICID",
+  "status": "live",
+  "role": "always-on-backend-content-ops",
+  "telegram_bot": "@lenovostarlightbot",
+  "notes": "cron fleet-pulse",
+  "at": "2026-07-16T16:00:26+00:00"
+}
