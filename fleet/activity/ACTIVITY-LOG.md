@@ -75,3 +75,9 @@ See `fleet/activity/README.md`.
 - **Proposed next:** C940 continues C1-C5; Book B1-B5 independently
 - **Queue impact:** none-circular-wait
 
+### 2026-07-16T23:13:21Z · c940 · hermes-lenovo · event
+- **Did:** Published REPO-LANES.md ownership map: C940 vs Book, private vs public, prod vs authoring
+- **Evidence:** fleet/REPO-LANES.md
+- **Proposed next:** use as SoT for work assignment
+- **Queue impact:** none
+
