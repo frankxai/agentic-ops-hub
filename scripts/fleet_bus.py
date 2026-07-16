@@ -14,10 +14,23 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-BUS_ROOT = Path(__file__).resolve().parents[1] / "bus"
+# Canonical bus (shared via git). Optional legacy mirror under agentic-ops/bus/.
+_OPS_ROOT = Path(__file__).resolve().parents[1]
+BUS_ROOT = _OPS_ROOT / "fleet" / "bus"
+LEGACY_BUS_ROOT = _OPS_ROOT / "bus"
 MACHINE_MAP = {
     "DESKTOP-1B4ICID": "c940",
 }
+
+
+def _mirror_legacy(rel: Path, content: str) -> None:
+    """Keep legacy agentic-ops/bus/ in sync for older docs/scripts."""
+    try:
+        dest = LEGACY_BUS_ROOT / rel
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(content, encoding="utf-8")
+    except OSError:
+        pass
 
 
 def utc_now() -> str:
@@ -47,39 +60,43 @@ def cmd_identity(_: argparse.Namespace) -> int:
         "at": utc_now(),
     }
     path = BUS_ROOT / "identity" / f"{mid}.json"
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(payload, indent=2))
-    if mid == "unknown":
-        print("WARN: hostname not mapped — update MACHINE_MAP / clone-manifest", file=sys.stderr)
-        return 2
-    return 0
+        path.parent.mkdir(parents=True, exist_ok=True)
+        text = json.dumps(payload, indent=2) + "\n"
+        path.write_text(text, encoding="utf-8")
+        _mirror_legacy(Path("identity") / f"{mid}.json", text)
+        print(json.dumps(payload, indent=2))
+        if mid == "unknown":
+            print("WARN: hostname not mapped — update MACHINE_MAP / clone-manifest", file=sys.stderr)
+            return 2
+        return 0
 
 
-def cmd_heartbeat(args: argparse.Namespace) -> int:
-    mid = args.machine or detect_machine()
-    if mid == "unknown":
-        print("REFUSE: unknown machine — will not write heartbeat", file=sys.stderr)
-        return 2
-    # Never forge: only self
-    self_id = detect_machine()
-    if mid != self_id:
-        print(f"REFUSE: cannot write heartbeat for {mid} from host mapped as {self_id}", file=sys.stderr)
-        return 3
-    payload = {
-        "machine_id": mid,
-        "hostname": socket.gethostname(),
-        "status": args.status,
-        "role": "always-on-backend-content-ops" if mid == "c940" else "frontend-innovation",
-        "telegram_bot": "@lenovostarlightbot" if mid == "c940" else "@Hermesyogabookbot",
-        "notes": args.notes or "",
-        "at": utc_now(),
-    }
-    path = BUS_ROOT / "heartbeats" / f"{mid}.json"
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(payload, indent=2))
-    return 0
+    def cmd_heartbeat(args: argparse.Namespace) -> int:
+        mid = args.machine or detect_machine()
+        if mid == "unknown":
+            print("REFUSE: unknown machine — will not write heartbeat", file=sys.stderr)
+            return 2
+        # Never forge: only self
+        self_id = detect_machine()
+        if mid != self_id:
+            print(f"REFUSE: cannot write heartbeat for {mid} from host mapped as {self_id}", file=sys.stderr)
+            return 3
+        payload = {
+            "machine_id": mid,
+            "hostname": socket.gethostname(),
+            "status": args.status,
+            "role": "always-on-backend-content-ops" if mid == "c940" else "frontend-innovation",
+            "telegram_bot": "@lenovostarlightbot" if mid == "c940" else "@Hermesyogabookbot",
+            "notes": args.notes or "",
+            "at": utc_now(),
+        }
+        path = BUS_ROOT / "heartbeats" / f"{mid}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        text = json.dumps(payload, indent=2) + "\n"
+        path.write_text(text, encoding="utf-8")
+        _mirror_legacy(Path("heartbeats") / f"{mid}.json", text)
+        print(json.dumps(payload, indent=2))
+        return 0
 
 
 def cmd_status(_: argparse.Namespace) -> int:

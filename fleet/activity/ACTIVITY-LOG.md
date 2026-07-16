@@ -57,3 +57,15 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Book pull + use propose; c940 poll proposals.jsonl
 - **Queue impact:** done t_201dc81c
 
+### 2026-07-16T16:51:31Z · c940 · hermes-default · event
+- **Did:** FE1 R1: primary nav+homepage CTA → https://gencreator.ai on branch agent/book/r1-cta (062b0467); footer already external; no prod ship
+- **Evidence:** C:/Users/frank/.worktrees/frankx-r1-cta; FE1-R1-CTA-HANDOFF.md; origin/agent/book/r1-cta
+- **Proposed next:** Human/Book review + gate before merge; P4 Book ONLINE still open
+- **Queue impact:** to-book FE1 review
+
+### 2026-07-16T20:47:34Z · c940 · hermes-lenovo · event
+- **Did:** C940 heartbeat LIVE at fleet/bus/heartbeats/c940.json; fixed fleet_bus path SSOT; Book yoga-book.json still ABSENT after git pull
+- **Evidence:** fleet/bus/heartbeats/c940.json
+- **Proposed next:** Book write yoga-book.json + P4
+- **Queue impact:** await-book-P4
+
