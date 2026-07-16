@@ -33,3 +33,9 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Seed hermes kanban fleet board; Book must mirror private-DM proposals here
 - **Queue impact:** kanban seed
 
+### 2026-07-16T16:37:55Z · c940 · hermes-lenovo · event
+- **Did:** Published BOOK-FAQ: c940.json is git heartbeat (Book writes yoga-book.json only); no full estate worktree; 80GB is target not floor (now ~60GB free YELLOW); opened activity+heartbeat docs for Frank
+- **Evidence:** fleet/BOOK-FAQ-c940-disk-worktree.md
+- **Proposed next:** Safe disk reclaim when approved; Book git pull
+- **Queue impact:** disk-reclaim ready
+

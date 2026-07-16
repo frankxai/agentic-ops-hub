@@ -19,6 +19,8 @@ Agents must write **shared files** so Command Center (you) and peer bots can see
 | --- | --- | --- |
 | **Activity log** | `fleet/activity/ACTIVITY-LOG.md` | Append-only timestamped events |
 | **Day calendar** | `fleet/activity/calendar/YYYY-MM-DD.md` | Human glance of the day |
+| **Proposals stream** | `fleet/activity/proposals.jsonl` | Machine-readable DM mirrors |
+| **Book DM mirror playbook** | `fleet/activity/BOOK-DM-MIRROR.md` | Mandatory Book private-DM → log |
 | **Machine queues** | `fleet/bus/queues/to-*.json` | Durable assign/claim |
 | **Hermes Kanban** | `hermes kanban` (board `fleet`) | Atomic claim / status / schedule |
 | **OPS-LEDGER** | `ops/OPS-LEDGER.md` | Cross-repo executive status |
@@ -45,23 +47,37 @@ Agents must write **shared files** so Command Center (you) and peer bots can see
 ## After every meaningful turn
 
 ```bash
-# from agentic-ops
+# from agentic-ops — general event
 python scripts/fleet_activity.py log \
   --machine c940 \
   --agent hermes-lenovo \
   --did "..." \
   --evidence "..." \
   --next "..."
+
+# Book (or any agent): private-DM proposal mirror (REQUIRED for cross-machine)
+python scripts/fleet_activity.py propose \
+  --machine yoga-book \
+  --agent hermes-book \
+  --title "one-line proposal" \
+  --body "short detail" \
+  --next "what peer should do" \
+  --source private-dm \
+  --queue-to c940
+
+# then commit + push so peer can pull
 ```
 
-Or hand-edit `ACTIVITY-LOG.md` + today’s `calendar/YYYY-MM-DD.md`.
+Or hand-edit `ACTIVITY-LOG.md` + today’s `calendar/YYYY-MM-DD.md`.  
+Full Book protocol: **`BOOK-DM-MIRROR.md`**.
 
 ## Reading peers (Book / other)
 
 1. `git pull` agentic-ops (or hub)  
 2. Read tail of `ACTIVITY-LOG.md`  
-3. Read `fleet/bus/queues/to-c940.json` / `to-book.json`  
-4. `hermes kanban list` on shared board if used  
+3. `python scripts/fleet_activity.py proposals -n 10`  
+4. Read `fleet/bus/queues/to-c940.json` / `to-book.json`  
+5. `hermes kanban list` on shared board if used  
 
 **Private Telegram DM with one bot never reaches the other machine.**  
 Peer must **mirror** proposals into this log (or queues).
