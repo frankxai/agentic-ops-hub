@@ -46,3 +46,10 @@ Separate decision: private remote vs encrypted-only. Not auto-created here.
 ## Status this session
 
 See Swarm one-liner and `to-c940.json` results.B4 for install outcome.
+
+## Status this session
+
+**INSTALLED this session** via winget `Rclone.Rclone` **v1.74.4**.  
+`fleet_backup_check.py` → **YELLOW** (rclone=True; disk free still under 80GB; Business no origin).
+
+Crypt remote configuration remains **manual operator** (secrets).
