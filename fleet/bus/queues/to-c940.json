@@ -31,7 +31,7 @@
   "source": "fleet/TASK-PACKETS.md + OPS-LEDGER Next",
   "status": "active",
   "claimed_by": "c940",
-  "updated_at": "2026-07-16T16:22:09+00:00",
+  "updated_at": "2026-07-16T22:01:33+00:00",
   "results": {
     "B1": "DONE d10d81c agentic-ops-hub main",
     "B2": "DONE R1 YELLOW evidence",
@@ -40,8 +40,10 @@
     "B5": "DONE anti-thrash + pulse"
   },
   "next": [
-    "B4b document crypt remote names in SECRETS only",
-    "disk reclaim toward 80GB",
-    "await book P4"
-  ]
+    "disk reclaim (optional comfort)",
+    "R1 content when free",
+    "keep heartbeat+activity"
+  ],
+  "alignment": "parallel-no-wait",
+  "note": "Do NOT wait for Book heartbeat. Book does not wait for c940."
 }

@@ -86,3 +86,15 @@ See `fleet/activity/README.md`.
 - **Proposed next:** —
 - **Queue impact:** none
 
+### 2026-07-16T22:01:33Z · c940 · hermes-lenovo · event
+- **Did:** Broke circular wait: ALIGNMENT.md parallel lanes; C940 not gated on Book; Swarm+git dual wire
+- **Evidence:** fleet/ALIGNMENT.md
+- **Proposed next:** C940 continues C1-C5; Book B1-B5 independently
+- **Queue impact:** none-circular-wait
+
+### 2026-07-16T22:02:03Z · yoga-book · hermes-book · event
+- **Did:** parallel ACK ALIGNMENT cd93616 — B1 pull done; FE1 when free; not gated on C940
+- **Evidence:** —
+- **Proposed next:** —
+- **Queue impact:** none
+
