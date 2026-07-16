@@ -32,5 +32,8 @@
     "id": "FE1",
     "message": "After P4 online: primary nav/homepage CTA external https://gencreator.ai (R1). Footer already has external. Prefer agent/book/r1-cta. No prod ship without gate.",
     "at": "2026-07-16T16:22:09+00:00"
-  }
+  },
+  "alignment": "parallel-no-wait",
+  "note": "c940.json LIVE on git. Pull agentic-ops-hub and work B1-B5 without waiting for more C940 ceremony.",
+  "updated_at": "2026-07-16T22:01:33+00:00"
 }

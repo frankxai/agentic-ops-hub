@@ -69,3 +69,9 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Book write yoga-book.json + P4
 - **Queue impact:** await-book-P4
 
+### 2026-07-16T22:01:33Z · c940 · hermes-lenovo · event
+- **Did:** Broke circular wait: ALIGNMENT.md parallel lanes; C940 not gated on Book; Swarm+git dual wire
+- **Evidence:** fleet/ALIGNMENT.md
+- **Proposed next:** C940 continues C1-C5; Book B1-B5 independently
+- **Queue impact:** none-circular-wait
+
