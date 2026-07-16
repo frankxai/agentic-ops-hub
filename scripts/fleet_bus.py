@@ -20,6 +20,7 @@ BUS_ROOT = _OPS_ROOT / "fleet" / "bus"
 LEGACY_BUS_ROOT = _OPS_ROOT / "bus"
 MACHINE_MAP = {
     "DESKTOP-1B4ICID": "c940",
+    "Starlight": "yoga-book",  # Yogabook 9i Command Center hostname
 }
 
 
@@ -44,7 +45,7 @@ def detect_machine() -> str:
         if hint.lower() in host.lower() or hint.lower() in node.lower():
             return mid
     h = f"{host} {node}".lower()
-    if "yoga" in h or "book" in h:
+    if "yoga" in h or "book" in h or host == "Starlight":
         return "yoga-book"
     return "unknown"
 

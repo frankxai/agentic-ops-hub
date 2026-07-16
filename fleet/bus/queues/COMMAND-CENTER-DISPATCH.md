@@ -19,15 +19,17 @@
 ### A. yoga-book (Packet 4) — RUN ON BOOK
 
 **Owner:** `@Hermesyogabookbot` / Book machine  
-**Status:** OPEN — no Book heartbeat on bus  
+**Status:** **DONE / ONLINE** — `fleet/bus/heartbeats/yoga-book.json` LIVE (2026-07-16T16:45:59Z)
 
-**Do:**
-1. Follow `fleet/YOGA-BOOK-FIRST-BOOT.md`  
-2. Apply `fleet/YOGA-BOOK-TELEGRAM-ALIGN.md`  
-3. `fleet_inventory` + `fleet_sync` for `yoga-book`  
-4. Write heartbeat only if host is Book (never forge c940)  
-5. Paste one Swarm line: `[book] ONLINE host=… repos=…`  
-6. Claim frontend only: frankx.ai UI, GenCreator UI, Arcanea UI on `agent/book/<scope>`
+**Done:**
+1. First-boot + Telegram align (Book control plane + Packet 4 claim report)  
+2. Heartbeat `yoga-book.json` written **on Book only** (never forged c940)  
+3. FAQ d12a38a applied: pull agentic-ops-hub only; ~60GB C940 = YELLOW not hard stop  
+4. FE1 CLAIMED / implement HELD (disk TIGHT + dirty frankx `codex/blog` primary — no new worktree)
+
+**Do next (optional):**
+- `fleet_inventory` + `fleet_sync --machine yoga-book` when free headroom allows  
+- FE1 branch `agent/book/r1-cta` when worktree gate clear  
 
 **Blocked if:** Business clone, full C940 cron fleet, dual-write dirty C940 trees.
 
@@ -58,10 +60,11 @@
 ## Acceptance
 
 - [x] `fleet/bus/heartbeats/c940.json` LIVE  
-- [ ] `fleet/bus/heartbeats/yoga-book.json` LIVE (Book)  
+- [x] `fleet/bus/heartbeats/yoga-book.json` LIVE (Book)  
 - [x] agentic-ops fleet committed + pushed when clean enough  
 - [x] R1 evidence table updated in ledger  
 - [x] Dirty top-3 classified  
 - [ ] Swarm used only for short status  
 
-**Last update:** 2026-07-16T16:22:09+00:00 · C940 B1–B4 done; Book P4 OPEN  
+**Last update:** 2026-07-16T16:45:59+00:00 · Book P4 ONLINE; FE1 claimed/held  
+
