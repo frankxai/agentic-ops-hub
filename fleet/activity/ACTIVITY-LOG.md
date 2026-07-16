@@ -39,3 +39,21 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Safe disk reclaim when approved; Book git pull
 - **Queue impact:** disk-reclaim ready
 
+### 2026-07-16T16:38:24Z · c940 · hermes-c940 · event
+- **Did:** B4b rclone crypt: verified install, zero remotes, wrote operator runbook; blocked for human secrets
+- **Evidence:** fleet/reports/b4-rclone-crypt-operator.md
+- **Proposed next:** operator: rclone config b2/s3 + crypt-offsite smoke test
+- **Queue impact:** none
+
+### 2026-07-16T16:38:30Z · c940 · hermes-lenovo · proposal
+- **Did:** [DM-MIRROR] Book DM mirror protocol LIVE (propose CLI + BOOK-DM-MIRROR.md) — Book agents must run fleet_activity.py propose after private-DM proposals; c940 reads ACTIVITY-LOG + proposals.jsonl after pull
+- **Evidence:** fleet/activity/BOOK-DM-MIRROR.md; scripts/fleet_activity.py propose
+- **Proposed next:** Book pull agentic-ops; ACK protocol; mirror any prior DM proposals
+- **Queue impact:** none
+
+### 2026-07-16T16:38:30Z · c940 · hermes-lenovo · event
+- **Did:** Implemented Book private-DM → fleet/activity mirror (propose + docs)
+- **Evidence:** BOOK-DM-MIRROR.md; fleet_activity.py propose/proposals; align/boot/driver updates
+- **Proposed next:** Book pull + use propose; c940 poll proposals.jsonl
+- **Queue impact:** done t_201dc81c
+

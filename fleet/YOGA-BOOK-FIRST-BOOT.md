@@ -50,7 +50,32 @@ repos present: ...
 dirty: ...
 ```
 
-## 6. First frontend claims (after sync)
+Also write self heartbeat + first activity entry:
+
+```bash
+python scripts/fleet_bus.py identity
+python scripts/fleet_bus.py heartbeat --status live --notes "Packet 4 first boot"
+python scripts/fleet_activity.py log \
+  --machine yoga-book --agent hermes-book \
+  --did "Packet 4 first boot complete" \
+  --evidence "fleet/last-inventory.json" \
+  --next "claim FE1 if open"
+git add fleet/ && git commit -m "activity(book): online" && git push
+```
+
+## 6. Private DM proposals → shared log (always)
+
+Any plan agreed with Frank in **private DM** is invisible to C940. Mirror with:
+
+```bash
+python scripts/fleet_activity.py propose \
+  --machine yoga-book --agent hermes-book \
+  --title "…" --source private-dm --queue-to c940
+```
+
+See `fleet/activity/BOOK-DM-MIRROR.md` + `fleet/YOGA-BOOK-TELEGRAM-ALIGN.md`.
+
+## 7. First frontend claims (after sync)
 
 1. frankx.ai UI polish (coord with C940 content)  
 2. GenCreator product UI (R1 bridge complement)  

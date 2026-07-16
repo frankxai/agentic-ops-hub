@@ -197,6 +197,18 @@ Until then: **DM = work · Swarm channel = bulletin**.
 | `fleet/FLEET-OPS.md` | Daily/weekly loops |
 | `fleet/clone-manifest.json` | Machines + clone sets |
 | `fleet/YOGA-BOOK-FIRST-BOOT.md` | Book onboard |
+| `fleet/activity/` | Shared ACTIVITY-LOG + calendar + proposals |
+| `fleet/activity/BOOK-DM-MIRROR.md` | Book private-DM → log (mandatory) |
+| `scripts/fleet_activity.py` | `log` / `propose` / `proposals` / `tail` / `today` |
 | `ops/OPS-LEDGER.md` | Cross-repo status |
 | `~/.hermes` (per machine) | Gateway + Telegram config |
 | skill `agentic-fleet-strategy` | Agent playbook |
+
+### Private DM mirror (both bots)
+
+Private Telegram DMs never cross machines. After a proposal in DM:
+
+```bash
+python scripts/fleet_activity.py propose --agent hermes-book --title "…" --source private-dm
+# commit + push agentic-ops so the peer can pull
+```

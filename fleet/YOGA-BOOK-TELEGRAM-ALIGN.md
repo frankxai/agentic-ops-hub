@@ -58,6 +58,25 @@ Search for `_CHANNEL_ECHO_PREFIXES` / `_is_channel_system_echo` on C940 and mirr
 | Status: `hermes send --to telegram:-1004300203404 "[book] …"` | Dual-@ both bots same task |
 | Branches `agent/book/<scope>` | Full C940 cron fleet |
 | Frontend lanes only | Clone Business / wallets |
+| **Mirror DM proposals** into fleet/activity (see below) | Assume C940 can read private DM |
+
+## Private DM → fleet/activity (MANDATORY)
+
+C940 cannot see Book’s private DM with Frank. After any proposal / next-step / blocker:
+
+```bash
+cd ~/agentic-ops
+python scripts/fleet_activity.py propose \
+  --machine yoga-book \
+  --agent hermes-book \
+  --title "…" \
+  --body "…" \
+  --source private-dm \
+  --queue-to c940   # when c940 must act
+git add fleet/activity fleet/bus/queues && git commit -m "activity(book): mirror DM proposal" && git push
+```
+
+Playbook: **`fleet/activity/BOOK-DM-MIRROR.md`**.
 
 ## After boot — paste once to Swarm
 
@@ -75,3 +94,5 @@ bot: @Hermesyogabookbot
 - `fleet/STARLIGHT-SWARM-DRIVER.md` — full operating model  
 - `fleet/FLEET-OPS.md` — daily loops  
 - `fleet/YOGA-BOOK-FIRST-BOOT.md` — install/sync  
+- `fleet/activity/BOOK-DM-MIRROR.md` — private-DM proposal mirror  
+
