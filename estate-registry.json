@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "updated": "2026-07-16",
+  "generatedBy": "hermes fleet control plane session",
+  "entities": {
+    "repos": {
+      "source": "repo-registry.json + fleet/clone-manifest.json",
+      "count": 68,
+      "fleet_manifest_repos": 16,
+      "tiers": {
+        "production": 12,
+        "utility": 15,
+        "template": 12,
+        "incubating": 28
+      }
+    },
+    "visualArtifacts": {
+      "source": "dashboards-registry.json",
+      "count": 3,
+      "active": 1,
+      "incubating": 2
+    },
+    "agentProfiles": {
+      "source": "hermes profile list",
+      "count": 7,
+      "active": ["default (grok-4.5 xAI)", "arcanea-agent", "gemini-35", "publishing-house", "smoke variants"],
+      "primary": "default (Grok)",
+      "secondary": "gemini-35"
+    },
+    "machines": {
+      "count": 2,
+      "primary": "c940",
+      "details": [
+        {
+          "id": "c940",
+          "hostname": "DESKTOP-1B4ICID",
+          "os": "Windows 10/11",
+          "role": "always-on-backend-content-ops",
+          "diskFreeGb": 67,
+          "diskStatus": "YELLOW",
+          "ghAuth": "frankxai",
+          "activeProfiles": ["default"],
+          "cloneSet": "full",
+          "controlPlane": true
+        },
+        {
+          "id": "yoga-book",
+          "hostname": "TBD-ON-FIRST-BOOT",
+          "os": "Windows",
+          "role": "frontend-innovation",
+          "diskStatus": "UNKNOWN",
+          "cloneSet": "yoga_book_core",
+          "onboardPacket": "fleet/TASK-PACKETS.md#packet-4"
+        }
+      ]
+    },
+    "fleet": {
+      "manifest": "fleet/clone-manifest.json",
+      "ops": "fleet/FLEET-OPS.md",
+      "backup": "fleet/BACKUP-MIGRATION.md",
+      "tasks": "fleet/TASK-PACKETS.md",
+      "scripts": ["scripts/fleet_inventory.py", "scripts/fleet_sync.py", "scripts/fleet_backup_check.py"]
+    },
+    "socialProfiles": {
+      "count": 5,
+      "platforms": ["LinkedIn", "X", "newsletter", "GitHub", "YouTube"]
+    },
+    "objectives": {
+      "source": "objectives-registry.json + fleet production_targets",
+      "p0": ["frankx.ai production", "R1 FrankX-GenCreator bridge"]
+    },
+    "sharedModules": {
+      "modules": ["ACOS", "SIS memory provider", "agentic-ops control plane", "claude-code-config hooks", "fleet sync"]
+    }
+  },
+  "status": "Fleet control plane live 2026-07-16 — Yoga Book onboard pending"
+}

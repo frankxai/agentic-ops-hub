@@ -1,0 +1,378 @@
+{
+  "generated_at": "2026-07-16T03:48:50.425007+00:00",
+  "hostname": "DESKTOP-1B4ICID",
+  "machine_id": "c940",
+  "os": "Windows-11-10.0.26200-SP0",
+  "home": "C:\\Users\\frank",
+  "disk": {
+    "total_gb": 475.6,
+    "used_gb": 410.6,
+    "free_gb": 65.0,
+    "used_pct": 86.3
+  },
+  "tools": {
+    "git": "git version 2.55.0.windows.2",
+    "gh": "gh version 2.88.1 (2026-03-12)",
+    "node": "v24.14.0",
+    "npm": "ERR: [WinError 2] The system cannot find the file specified",
+    "pnpm": "ERR: [WinError 2] The system cannot find the file specified",
+    "python": "Python 3.13.7",
+    "uv": "uv 0.11.28 (ebf0f43d7 2026-07-07 x86_64-pc-windows-msvc)",
+    "hermes": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream f8ddf4fd \u00b7 local 29b8cacf (+1 carried commit)",
+    "claude": "2.1.178 (Claude Code)",
+    "codex": "ERR: [WinError 2] The system cannot find the file specified",
+    "opencode": "ERR: [WinError 2] The system cannot find the file specified",
+    "railway": "ERR: [WinError 2] The system cannot find the file specified",
+    "docker": "MISSING",
+    "rclone": "MISSING"
+  },
+  "gh_auth_ok": true,
+  "gh_auth_snippet": "github.com\n  \u2713 Logged in to github.com account frankxai (keyring)\n  - Active account: true\n  - Git operations protocol: https\n  - Token: gho_************************************\n  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'",
+  "repos": [
+    {
+      "name": "agentic-ops",
+      "path": "C:\\Users\\frank\\agentic-ops",
+      "remote": "frankxai/agentic-ops-hub",
+      "exists": true,
+      "is_git": true,
+      "priority": 0,
+      "prod": false,
+      "lane": {
+        "c940": "ops-lead",
+        "yoga-book": "ops-read"
+      },
+      "branch": "main",
+      "dirty": 24,
+      "head": "efd71ab",
+      "origin": "https://github.com/frankxai/agentic-ops-hub",
+      "behind": "4",
+      "ahead": "0"
+    },
+    {
+      "name": "claude-code-config",
+      "path": "C:\\Users\\frank\\claude-code-config",
+      "remote": "frankxai/claude-code-config",
+      "exists": true,
+      "is_git": true,
+      "priority": 0,
+      "prod": false,
+      "lane": {
+        "c940": "hooks-lead",
+        "yoga-book": "consume"
+      },
+      "branch": "main",
+      "dirty": 5,
+      "head": "21859c2",
+      "origin": "https://github.com/frankxai/claude-code-config.git",
+      "behind": "8",
+      "ahead": "0"
+    },
+    {
+      "name": "FrankX",
+      "path": "C:\\Users\\frank\\FrankX",
+      "remote": "frankxai/FrankX",
+      "exists": true,
+      "is_git": true,
+      "priority": 1,
+      "prod": false,
+      "lane": {
+        "c940": "content-geo-backend",
+        "yoga-book": "ui-polish"
+      },
+      "branch": "main",
+      "dirty": 111,
+      "head": "9ebb5330",
+      "origin": "https://github.com/frankxai/FrankX.git",
+      "behind": "131",
+      "ahead": "39"
+    },
+    {
+      "name": "frankx.ai-vercel-website",
+      "path": "C:\\Users\\frank\\frankx.ai-vercel-website",
+      "remote": "frankxai/frankx.ai-vercel-website",
+      "exists": true,
+      "is_git": true,
+      "priority": 1,
+      "prod": true,
+      "lane": {
+        "c940": "content-gate-prod-policy",
+        "yoga-book": "frontend-ship"
+      },
+      "branch": "agent/claude/content-integrity-gate",
+      "dirty": 427,
+      "head": "aa8e2229",
+      "origin": "https://github.com/frankxai/frankx.ai-vercel-website.git",
+      "behind": "0",
+      "ahead": "0"
+    },
+    {
+      "name": "frankx-prod-sync",
+      "path": "C:\\Users\\frank\\frankx-prod-sync",
+      "remote": "frankxai/frankx.ai-vercel-website",
+      "exists": true,
+      "is_git": true,
+      "priority": 2,
+      "prod": true,
+      "lane": {
+        "c940": "prod-mirror"
+      },
+      "branch": "main",
+      "dirty": 2,
+      "head": "32cf00c9",
+      "origin": "https://github.com/frankxai/frankx.ai-vercel-website.git",
+      "behind": "156",
+      "ahead": "0"
+    },
+    {
+      "name": "gencreator.ai",
+      "path": "C:\\Users\\frank\\gencreator.ai",
+      "remote": "frankxai/gencreator.ai",
+      "exists": true,
+      "is_git": true,
+      "priority": 1,
+      "prod": true,
+      "lane": {
+        "c940": "backend-content-bridge",
+        "yoga-book": "product-ui"
+      },
+      "branch": "main",
+      "dirty": 1,
+      "head": "1d19755",
+      "origin": "https://github.com/frankxai/gencreator.ai.git",
+      "behind": "45",
+      "ahead": "0"
+    },
+    {
+      "name": "Arcanea",
+      "path": "C:\\Users\\frank\\Arcanea",
+      "remote": "frankxai/arcanea-ai-app",
+      "exists": true,
+      "is_git": true,
+      "priority": 1,
+      "prod": false,
+      "lane": {
+        "c940": "mythic-backend",
+        "yoga-book": "platform-ui"
+      },
+      "branch": "integrate/agent-native-main-2026-06-12",
+      "dirty": 100,
+      "head": "3e1ec71b",
+      "origin": "https://github.com/frankxai/arcanea-ai-app.git",
+      "behind": "36",
+      "ahead": "8"
+    },
+    {
+      "name": "agentic-creator-os",
+      "path": "C:\\Users\\frank\\agentic-creator-os",
+      "remote": "frankxai/agentic-creator-os",
+      "exists": true,
+      "is_git": true,
+      "priority": 1,
+      "prod": false,
+      "lane": {
+        "c940": "skills-lead",
+        "yoga-book": "consume"
+      },
+      "branch": "feat/v12-open-core",
+      "dirty": 0,
+      "head": "7168d20",
+      "origin": "https://github.com/frankxai/agentic-creator-os.git",
+      "behind": "0",
+      "ahead": "0"
+    },
+    {
+      "name": "Starlight-Intelligence-System",
+      "path": "C:\\Users\\frank\\Starlight-Intelligence-System",
+      "remote": "frankxai/Starlight-Intelligence-System",
+      "exists": true,
+      "is_git": true,
+      "priority": 1,
+      "prod": false,
+      "lane": {
+        "c940": "memory-lead",
+        "yoga-book": "light-read"
+      },
+      "branch": "main",
+      "dirty": 22,
+      "head": "d0ed1ee",
+      "origin": "https://github.com/frankxai/Starlight-Intelligence-System.git",
+      "behind": "29",
+      "ahead": "8"
+    },
+    {
+      "name": "Business",
+      "path": "C:\\Users\\frank\\Business",
+      "remote": null,
+      "exists": true,
+      "is_git": true,
+      "priority": 3,
+      "prod": false,
+      "lane": {
+        "c940": "bv-ops-sensitive"
+      },
+      "branch": "main",
+      "dirty": 23,
+      "head": "daa37a0",
+      "origin": "error: No such remote 'origin'",
+      "behind": "fatal:",
+      "ahead": "no"
+    },
+    {
+      "name": "arcanea-platform",
+      "path": "C:\\Users\\frank\\arcanea-platform",
+      "remote": "frankxai/arcanea-platform",
+      "exists": true,
+      "is_git": true,
+      "priority": 2,
+      "prod": false,
+      "lane": {
+        "c940": "platform-backend",
+        "yoga-book": "ui-when-assigned"
+      },
+      "branch": "staging/madrid-2026-05-25",
+      "dirty": 0,
+      "head": "2d8cb93",
+      "origin": "https://github.com/frankxai/arcanea-platform.git",
+      "behind": "0",
+      "ahead": "0"
+    },
+    {
+      "name": "AnimeLegends.ai",
+      "path": "C:\\Users\\frank\\AnimeLegends.ai",
+      "remote": "frankxai/AnimeLegends",
+      "exists": true,
+      "is_git": true,
+      "priority": 2,
+      "prod": false,
+      "lane": null,
+      "branch": "rename/akashic-frame-drops-way-origins",
+      "dirty": 0,
+      "head": "48c10c9",
+      "origin": "https://github.com/frankxai/AnimeLegends.git",
+      "behind": "fatal:",
+      "ahead": "no"
+    },
+    {
+      "name": "vibeclubs.ai",
+      "path": "C:\\Users\\frank\\vibeclubs.ai",
+      "remote": "frankxai/vibeclubs",
+      "exists": true,
+      "is_git": true,
+      "priority": 2,
+      "prod": false,
+      "lane": null,
+      "branch": "main",
+      "dirty": 0,
+      "head": "2b23275",
+      "origin": "https://github.com/frankxai/vibeclubs.git",
+      "behind": "0",
+      "ahead": "0"
+    },
+    {
+      "name": "library-os",
+      "path": "C:\\Users\\frank\\library-os",
+      "remote": "frankxai/library-os",
+      "exists": true,
+      "is_git": true,
+      "priority": 3,
+      "prod": false,
+      "lane": null,
+      "branch": "main",
+      "dirty": 1,
+      "head": "cbdb69e",
+      "origin": "https://github.com/frankxai/library-os.git",
+      "behind": "2",
+      "ahead": "0"
+    },
+    {
+      "name": "starlight-memory",
+      "path": "C:\\Users\\frank\\starlight-memory",
+      "remote": "frankxai/starlight-memory",
+      "exists": true,
+      "is_git": true,
+      "priority": 2,
+      "prod": false,
+      "lane": null,
+      "branch": "main",
+      "dirty": 9,
+      "head": "32c8b85",
+      "origin": "https://github.com/frankxai/starlight-memory.git",
+      "behind": "3",
+      "ahead": "0"
+    },
+    {
+      "name": "agentic-life-os",
+      "path": "C:\\Users\\frank\\agentic-life-os",
+      "remote": "frankxai/agentic-life-os",
+      "exists": true,
+      "is_git": true,
+      "priority": 3,
+      "prod": false,
+      "lane": null,
+      "branch": "main",
+      "dirty": 0,
+      "head": "f8e5ceb",
+      "origin": "https://github.com/frankxai/agentic-life-os.git",
+      "behind": "0",
+      "ahead": "0"
+    }
+  ],
+  "production_targets": [
+    {
+      "id": "P1",
+      "name": "frankx.ai production",
+      "repo": "frankx.ai-vercel-website",
+      "url": "https://frankx.ai",
+      "health": "pnpm build",
+      "gate": "merge:gate / predeploy via FrankX sync",
+      "owner_machine": "c940+yoga-book",
+      "priority": "P0"
+    },
+    {
+      "id": "P2",
+      "name": "R1 FrankX\u2192GenCreator bridge",
+      "repo": "FrankX + gencreator.ai",
+      "url": "https://gencreator.ai",
+      "blocker": "R1 \u2014 40k readers, weak bridge links",
+      "owner_machine": "c940 content + yoga-book UI",
+      "priority": "P0"
+    },
+    {
+      "id": "P3",
+      "name": "SIS memory substrate",
+      "repo": "Starlight-Intelligence-System",
+      "health": "pnpm test / npm run verify",
+      "owner_machine": "c940",
+      "priority": "P1"
+    },
+    {
+      "id": "P4",
+      "name": "ACOS execution layer",
+      "repo": "agentic-creator-os",
+      "health": "pnpm test",
+      "owner_machine": "c940",
+      "priority": "P1"
+    },
+    {
+      "id": "P5",
+      "name": "Arcanea product surface",
+      "repo": "Arcanea / arcanea-platform",
+      "owner_machine": "c940 backend + yoga-book UI",
+      "priority": "P1"
+    },
+    {
+      "id": "P6",
+      "name": "Railway estate health",
+      "surface": "Railway frankx-eth projects",
+      "owner_machine": "c940",
+      "cron": "railway-daily-health-check",
+      "priority": "P1"
+    }
+  ],
+  "summary": {
+    "repo_count": 16,
+    "missing": 0,
+    "dirty": 11,
+    "clean": 5
+  }
+}

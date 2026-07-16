@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-07-16T03:48:12.763907+00:00",
+  "machine": "c940",
+  "hostname": "DESKTOP-1B4ICID",
+  "dry_run": false,
+  "results": [
+    {
+      "name": "agentic-ops",
+      "path": "C:\\Users\\frank\\agentic-ops",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "claude-code-config",
+      "path": "C:\\Users\\frank\\claude-code-config",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "FrankX",
+      "path": "C:\\Users\\frank\\FrankX",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "frankx.ai-vercel-website",
+      "path": "C:\\Users\\frank\\frankx.ai-vercel-website",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "gencreator.ai",
+      "path": "C:\\Users\\frank\\gencreator.ai",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "Arcanea",
+      "path": "C:\\Users\\frank\\Arcanea",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "agentic-creator-os",
+      "path": "C:\\Users\\frank\\agentic-creator-os",
+      "action": "fetch_and_ff_pull",
+      "ok": true,
+      "detail": "Already up to date."
+    },
+    {
+      "name": "Starlight-Intelligence-System",
+      "path": "C:\\Users\\frank\\Starlight-Intelligence-System",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "frankx-prod-sync",
+      "path": "C:\\Users\\frank\\frankx-prod-sync",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "arcanea-platform",
+      "path": "C:\\Users\\frank\\arcanea-platform",
+      "action": "fetch_and_ff_pull",
+      "ok": true,
+      "detail": "Already up to date."
+    },
+    {
+      "name": "AnimeLegends.ai",
+      "path": "C:\\Users\\frank\\AnimeLegends.ai",
+      "action": "fetch_ok_pull_skipped",
+      "ok": true,
+      "detail": "There is no tracking information for the current branch.\nPlease specify which branch you want to merge with.\nSee git-pull(1) for details.\n\n    git pull <remote> <branch>\n\nIf you wish to set tracking information for this branch you can do so with:\n\n    git branch --set-upstream-to=origin/<branch> rename/akashic-frame-drops-way-origins"
+    },
+    {
+      "name": "vibeclubs.ai",
+      "path": "C:\\Users\\frank\\vibeclubs.ai",
+      "action": "fetch_and_ff_pull",
+      "ok": true,
+      "detail": "eate mode 100644 apps/web/lib/production-host-contract.test.ts\n create mode 100644 apps/web/lib/ritual-proof.test.ts\n create mode 100644 apps/web/lib/ritual-proof.ts\n create mode 100644 design/PAGE_SPEC.md\n create mode 100644 design/SCENE_BRIEF.md\n create mode 100644 design/design-loop-evidence.json\n create mode 100644 design/visual-qa/.gitkeep\n create mode 100644 design/visual-qa/home-desktop.png"
+    },
+    {
+      "name": "starlight-memory",
+      "path": "C:\\Users\\frank\\starlight-memory",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "Business",
+      "path": "C:\\Users\\frank\\Business",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "library-os",
+      "path": "C:\\Users\\frank\\library-os",
+      "action": "fetch_only_dirty",
+      "ok": true,
+      "detail": "working tree dirty \u2014 no pull"
+    },
+    {
+      "name": "agentic-life-os",
+      "path": "C:\\Users\\frank\\agentic-life-os",
+      "action": "fetch_and_ff_pull",
+      "ok": true,
+      "detail": "Already up to date."
+    }
+  ],
+  "ok": 16,
+  "fail": 0
+}

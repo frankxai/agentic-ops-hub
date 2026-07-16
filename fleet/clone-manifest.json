@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "updated": "2026-07-16",
+  "owner": "frankxai",
+  "control_plane_repo": "agentic-ops",
+  "github_user": "frankxai",
+  "home_default": "C:/Users/frank",
+  "machines": {
+    "c940": {
+      "id": "c940",
+      "role": "always-on-backend-content-ops",
+      "hostname_hints": ["DESKTOP-1B4ICID"],
+      "os": "Windows",
+      "primary_agents": ["hermes", "claude-code", "codex", "opencode"],
+      "hermes_profiles": ["default", "sis-starlight", "acos-creator", "frankx-prod", "arcanea-mythic", "agentic-ops", "satellite-brands", "business-sensitive"],
+      "notes": "Control plane. Full clone set. Owns crons, GEO/content, SIS/ACOS, backups orchestration."
+    },
+    "yoga-book": {
+      "id": "yoga-book",
+      "role": "frontend-innovation",
+      "hostname_hints": ["YOGA", "BOOK", "TBD-SET-ON-FIRST-BOOT"],
+      "os": "Windows",
+      "primary_agents": ["codex", "antigravity", "claude-code", "hermes-lite"],
+      "hermes_profiles": ["default"],
+      "notes": "Frontend burst engine. Thin Hermes. Lane-split shared repos only."
+    },
+    "future": {
+      "id": "future",
+      "role": "expandable-slot",
+      "hostname_hints": [],
+      "notes": "Template for machine N+1: assign role, clone_set, primary_agents, then run fleet-sync --machine <id>."
+    }
+  },
+  "clone_sets": {
+    "control_plane": ["agentic-ops", "claude-code-config"],
+    "tier1_shared": [
+      "FrankX",
+      "frankx.ai-vercel-website",
+      "gencreator.ai",
+      "Arcanea",
+      "agentic-creator-os",
+      "Starlight-Intelligence-System"
+    ],
+    "c940_extra": [
+      "frankx-prod-sync",
+      "Business",
+      "arcanea-platform",
+      "AnimeLegends.ai",
+      "vibeclubs.ai",
+      "library-os",
+      "starlight-memory",
+      "agentic-life-os"
+    ],
+    "yoga_book_core": [
+      "agentic-ops",
+      "claude-code-config",
+      "FrankX",
+      "frankx.ai-vercel-website",
+      "gencreator.ai",
+      "Arcanea",
+      "agentic-creator-os"
+    ],
+    "c940_only_sensitive": ["Business"]
+  },
+  "repos": [
+    {
+      "name": "agentic-ops",
+      "remote": "frankxai/agentic-ops-hub",
+      "private": false,
+      "path": "agentic-ops",
+      "on": ["c940", "yoga-book"],
+      "priority": 0,
+      "lane": { "c940": "ops-lead", "yoga-book": "ops-read" }
+    },
+    {
+      "name": "claude-code-config",
+      "remote": "frankxai/claude-code-config",
+      "private": true,
+      "path": "claude-code-config",
+      "on": ["c940", "yoga-book"],
+      "priority": 0,
+      "lane": { "c940": "hooks-lead", "yoga-book": "consume" }
+    },
+    {
+      "name": "FrankX",
+      "remote": "frankxai/FrankX",
+      "private": true,
+      "path": "FrankX",
+      "on": ["c940", "yoga-book"],
+      "priority": 1,
+      "lane": { "c940": "content-geo-backend", "yoga-book": "ui-polish" }
+    },
+    {
+      "name": "frankx.ai-vercel-website",
+      "remote": "frankxai/frankx.ai-vercel-website",
+      "private": false,
+      "path": "frankx.ai-vercel-website",
+      "on": ["c940", "yoga-book"],
+      "priority": 1,
+      "lane": { "c940": "content-gate-prod-policy", "yoga-book": "frontend-ship" },
+      "prod": true
+    },
+    {
+      "name": "frankx-prod-sync",
+      "remote": "frankxai/frankx.ai-vercel-website",
+      "private": false,
+      "path": "frankx-prod-sync",
+      "on": ["c940"],
+      "priority": 2,
+      "lane": { "c940": "prod-mirror" },
+      "prod": true
+    },
+    {
+      "name": "gencreator.ai",
+      "remote": "frankxai/gencreator.ai",
+      "private": true,
+      "path": "gencreator.ai",
+      "on": ["c940", "yoga-book"],
+      "priority": 1,
+      "lane": { "c940": "backend-content-bridge", "yoga-book": "product-ui" },
+      "prod": true
+    },
+    {
+      "name": "Arcanea",
+      "remote": "frankxai/arcanea-ai-app",
+      "private": true,
+      "path": "Arcanea",
+      "on": ["c940", "yoga-book"],
+      "priority": 1,
+      "lane": { "c940": "mythic-backend", "yoga-book": "platform-ui" }
+    },
+    {
+      "name": "agentic-creator-os",
+      "remote": "frankxai/agentic-creator-os",
+      "private": false,
+      "path": "agentic-creator-os",
+      "on": ["c940", "yoga-book"],
+      "priority": 1,
+      "lane": { "c940": "skills-lead", "yoga-book": "consume" }
+    },
+    {
+      "name": "Starlight-Intelligence-System",
+      "remote": "frankxai/Starlight-Intelligence-System",
+      "private": false,
+      "path": "Starlight-Intelligence-System",
+      "on": ["c940", "yoga-book"],
+      "priority": 1,
+      "lane": { "c940": "memory-lead", "yoga-book": "light-read" },
+      "sparse_on": ["yoga-book"]
+    },
+    {
+      "name": "Business",
+      "remote": null,
+      "private": true,
+      "path": "Business",
+      "on": ["c940"],
+      "priority": 3,
+      "lane": { "c940": "bv-ops-sensitive" },
+      "notes": "No origin on 2026-07-16 inventory — keep local-only until remote policy decided."
+    },
+    {
+      "name": "arcanea-platform",
+      "remote": "frankxai/arcanea-platform",
+      "private": true,
+      "path": "arcanea-platform",
+      "on": ["c940"],
+      "priority": 2,
+      "lane": { "c940": "platform-backend", "yoga-book": "ui-when-assigned" }
+    },
+    {
+      "name": "AnimeLegends.ai",
+      "remote": "frankxai/AnimeLegends",
+      "private": true,
+      "path": "AnimeLegends.ai",
+      "on": ["c940"],
+      "priority": 2
+    },
+    {
+      "name": "vibeclubs.ai",
+      "remote": "frankxai/vibeclubs",
+      "private": false,
+      "path": "vibeclubs.ai",
+      "on": ["c940"],
+      "priority": 2
+    },
+    {
+      "name": "library-os",
+      "remote": "frankxai/library-os",
+      "private": false,
+      "path": "library-os",
+      "on": ["c940"],
+      "priority": 3
+    },
+    {
+      "name": "starlight-memory",
+      "remote": "frankxai/starlight-memory",
+      "private": false,
+      "path": "starlight-memory",
+      "on": ["c940"],
+      "priority": 2
+    },
+    {
+      "name": "agentic-life-os",
+      "remote": "frankxai/agentic-life-os",
+      "private": true,
+      "path": "agentic-life-os",
+      "on": ["c940"],
+      "priority": 3
+    }
+  ],
+  "sync_policy": {
+    "never_auto_merge_dirty": true,
+    "fetch_prune": true,
+    "pull_ff_only_when_clean": true,
+    "branch_prefix": "agent/<machine>/<scope>",
+    "worktree_dir": ".worktrees",
+    "coordination_sot": "ops/OPS-LEDGER.md"
+  },
+  "production_targets": [
+    {
+      "id": "P1",
+      "name": "frankx.ai production",
+      "repo": "frankx.ai-vercel-website",
+      "url": "https://frankx.ai",
+      "health": "pnpm build",
+      "gate": "merge:gate / predeploy via FrankX sync",
+      "owner_machine": "c940+yoga-book",
+      "priority": "P0"
+    },
+    {
+      "id": "P2",
+      "name": "R1 FrankX→GenCreator bridge",
+      "repo": "FrankX + gencreator.ai",
+      "url": "https://gencreator.ai",
+      "blocker": "R1 — 40k readers, weak bridge links",
+      "owner_machine": "c940 content + yoga-book UI",
+      "priority": "P0"
+    },
+    {
+      "id": "P3",
+      "name": "SIS memory substrate",
+      "repo": "Starlight-Intelligence-System",
+      "health": "pnpm test / npm run verify",
+      "owner_machine": "c940",
+      "priority": "P1"
+    },
+    {
+      "id": "P4",
+      "name": "ACOS execution layer",
+      "repo": "agentic-creator-os",
+      "health": "pnpm test",
+      "owner_machine": "c940",
+      "priority": "P1"
+    },
+    {
+      "id": "P5",
+      "name": "Arcanea product surface",
+      "repo": "Arcanea / arcanea-platform",
+      "owner_machine": "c940 backend + yoga-book UI",
+      "priority": "P1"
+    },
+    {
+      "id": "P6",
+      "name": "Railway estate health",
+      "surface": "Railway frankx-eth projects",
+      "owner_machine": "c940",
+      "cron": "railway-daily-health-check",
+      "priority": "P1"
+    }
+  ]
+}
