@@ -7,18 +7,41 @@
     {
       "id": "B1",
       "title": "Commit agentic-ops fleet control plane",
-      "constraints": ["no force push", "no dirty wipe"]
+      "constraints": [
+        "no force push",
+        "no dirty wipe"
+      ]
     },
     {
       "id": "B2",
       "title": "R1 GenCreator bridge evidence refresh",
-      "constraints": ["no main/prod ship without approval"]
+      "constraints": [
+        "no main/prod ship without approval"
+      ]
     },
     {
       "id": "B3",
       "title": "Dirty tree classification top-3",
-      "constraints": ["classify only", "enhance-never-erase"]
+      "constraints": [
+        "classify only",
+        "enhance-never-erase"
+      ]
     }
   ],
-  "source": "fleet/TASK-PACKETS.md + OPS-LEDGER Next"
+  "source": "fleet/TASK-PACKETS.md + OPS-LEDGER Next",
+  "status": "active",
+  "claimed_by": "c940",
+  "updated_at": "2026-07-16T16:22:09+00:00",
+  "results": {
+    "B1": "DONE d10d81c agentic-ops-hub main",
+    "B2": "DONE R1 YELLOW evidence",
+    "B3": "DONE packet6-dirty-light.md",
+    "B4": "DONE rclone winget install Rclone.Rclone 1.74.4; config crypt still MANUAL",
+    "B5": "DONE anti-thrash + pulse"
+  },
+  "next": [
+    "B4b document crypt remote names in SECRETS only",
+    "disk reclaim toward 80GB",
+    "await book P4"
+  ]
 }

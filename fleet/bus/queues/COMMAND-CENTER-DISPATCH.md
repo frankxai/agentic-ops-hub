@@ -37,10 +37,10 @@
 
 | ID | Assignment | Priority | Status |
 |----|------------|----------|--------|
-| B1 | Commit `agentic-ops` fleet control plane (driver, bus, scripts, reports) | P0 ops | IN PROGRESS |
-| B2 | R1 evidence refresh: frankx.ai ↔ gencreator.ai CTAs (measure, don’t ship) | P0 product | NEXT |
-| B3 | Packet 6 light: classify top dirty trees (commit names only, no wipe) | P1 | NEXT |
-| B4 | rclone install path documented / attempt if safe | P1 backup | AFTER B1 |
+| B1 | Commit `agentic-ops` fleet control plane (driver, bus, scripts, reports) | P0 ops | DONE d10d81c |
+| B2 | R1 evidence refresh: frankx.ai ↔ gencreator.ai CTAs (measure, don’t ship) | P0 product | DONE YELLOW |
+| B3 | Packet 6 light: classify top dirty trees (commit names only, no wipe) | P1 | DONE |
+| B4 | rclone install path documented / attempt if safe | P1 backup | DONE install; crypt config MANUAL |
 | B5 | Keep anti-thrash + pulse cron | ongoing | DONE |
 
 **Do not:** ship frankx.ai main/prod; reset dirty; thrash Swarm.
@@ -57,11 +57,11 @@
 
 ## Acceptance
 
-- [ ] `fleet/bus/heartbeats/c940.json` LIVE  
+- [x] `fleet/bus/heartbeats/c940.json` LIVE  
 - [ ] `fleet/bus/heartbeats/yoga-book.json` LIVE (Book)  
-- [ ] agentic-ops fleet committed + pushed when clean enough  
-- [ ] R1 evidence table updated in ledger  
-- [ ] Dirty top-3 classified  
+- [x] agentic-ops fleet committed + pushed when clean enough  
+- [x] R1 evidence table updated in ledger  
+- [x] Dirty top-3 classified  
 - [ ] Swarm used only for short status  
 
-**Last update:** 2026-07-16 · C940  
+**Last update:** 2026-07-16T16:22:09+00:00 · C940 B1–B4 done; Book P4 OPEN  

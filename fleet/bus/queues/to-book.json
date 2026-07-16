@@ -16,7 +16,10 @@
     {
       "id": "P4b",
       "title": "Write heartbeat yoga-book.json and post [book] ONLINE once",
-      "constraints": ["never forge c940 heartbeat", "frontend lanes only"]
+      "constraints": [
+        "never forge c940 heartbeat",
+        "frontend lanes only"
+      ]
     },
     {
       "id": "FE1",
@@ -24,5 +27,10 @@
       "branch_prefix": "agent/book/"
     }
   ],
-  "source": "fleet/TASK-PACKETS.md Packet 4"
+  "source": "fleet/TASK-PACKETS.md Packet 4",
+  "from_c940_request": {
+    "id": "FE1",
+    "message": "After P4 online: primary nav/homepage CTA external https://gencreator.ai (R1). Footer already has external. Prefer agent/book/r1-cta. No prod ship without gate.",
+    "at": "2026-07-16T16:22:09+00:00"
+  }
 }
