@@ -62,10 +62,24 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertIn("--model sonnet", command)
         self.assertNotIn("push origin main", command)
 
-    def test_codex_command_uses_hermes_windows_safe_sandbox(self):
+    def test_codex_command_uses_workspace_write_sandbox_not_full_access(self):
         command = self.planner.command_for(self._mission(agent="codex", budget=30))
-        self.assertIn("--sandbox danger-full-access", command)
+        self.assertIn("--sandbox workspace-write", command)
+        self.assertNotIn("danger-full-access", command)
         self.assertIn("timeout", command.lower())
+
+    def test_no_launcher_emits_a_sandbox_bypass_token(self):
+        for agent in ("claude", "codex", "opencode", "gemini"):
+            command = self.planner.command_for(self._mission(agent=agent, budget=30))
+            lowered = command.lower()
+            for token in ("danger-full-access", "--dangerously-skip-permissions",
+                          "--dangerously-bypass-approvals-and-sandbox", "--yolo"):
+                self.assertNotIn(token, lowered, f"{agent} launcher leaks {token}")
+
+    def test_launcher_boundary_rejects_a_bypass_token(self):
+        from fleet.token_planner import Planner as _P
+        with self.assertRaisesRegex(PlannerError, "forbidden token"):
+            _P._assert_launch_safe("timeout 60m codex exec --sandbox danger-full-access 'x'")
 
     def test_status_marks_reports_complete_and_missing(self):
         with tempfile.TemporaryDirectory() as tmp:

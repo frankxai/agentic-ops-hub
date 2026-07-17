@@ -14,6 +14,16 @@ class PlannerError(ValueError):
     pass
 
 
+# Tokens that grant an unattended agent full disk/network access or bypass approvals.
+# No launcher command may contain any of these — enforced at the launcher boundary.
+_FORBIDDEN_LAUNCH_TOKENS = (
+    "danger-full-access",
+    "--dangerously-skip-permissions",
+    "--dangerously-bypass-approvals-and-sandbox",
+    "--yolo",
+)
+
+
 @dataclass
 class Planner:
     config: dict[str, Any]
@@ -86,17 +96,35 @@ class Planner:
             budget = float(mission["budget_usd"])
             budget_text = f"{budget:g}"
             turns = int(mission["max_turns"])
-            return (
+            command = (
                 f"claude -p {quoted} --model {model} --max-budget-usd {budget_text} "
                 f"--max-turns {turns} --permission-mode acceptEdits --output-format json"
             )
-        if agent == "codex":
-            return f"timeout {timeout}m codex exec --sandbox danger-full-access {quoted}"
-        if agent == "opencode":
-            return f"timeout {timeout}m opencode run {quoted}"
-        if agent == "gemini":
-            return f"timeout {timeout}m gemini -p {quoted}"
-        raise PlannerError(f"agent {agent!r} has no unattended launcher")
+        elif agent == "codex":
+            # workspace-write, not danger-full-access: an unattended launcher must never grant
+            # full disk/network access. The Windows sandbox error must be fixed at the boundary,
+            # not bypassed by widening the sandbox (see best-state operating program 2026-07-17).
+            command = f"timeout {timeout}m codex exec --sandbox workspace-write {quoted}"
+        elif agent == "opencode":
+            command = f"timeout {timeout}m opencode run {quoted}"
+        elif agent == "gemini":
+            command = f"timeout {timeout}m gemini -p {quoted}"
+        else:
+            raise PlannerError(f"agent {agent!r} has no unattended launcher")
+        return self._assert_launch_safe(command)
+
+    @staticmethod
+    def _assert_launch_safe(command: str) -> str:
+        # Enforce the sandbox at the launcher boundary, not only in the prompt's HARD RULES text
+        # (which the launched agent is free to ignore). No unattended command may bypass sandboxing.
+        lowered = command.lower()
+        for token in _FORBIDDEN_LAUNCH_TOKENS:
+            if token in lowered:
+                raise PlannerError(
+                    f"launcher command contains forbidden token {token!r}; "
+                    "unattended runs must not bypass the sandbox"
+                )
+        return command
 
     def status(self, manifest: dict[str, Any]) -> dict[str, Any]:
         rows = []
