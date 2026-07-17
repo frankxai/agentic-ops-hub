@@ -1,0 +1,76 @@
+{
+  "to": "c940",
+  "from": "yoga-book-command-center",
+  "issued_at": "2026-07-17T03:45:48+00:00",
+  "priority": "P0",
+  "status": "ready",
+  "intent": "Continue autonomously through the rest of the night; review work that stopped early and advance backend/GitOps while Book owns frontend/UX.",
+  "items": [
+    {
+      "id": "N1",
+      "title": "FrankX #315 post-merge release audit",
+      "done_when": [
+        "Confirm final CI/Vercel and production /ask + llms.txt",
+        "Audit 426-file public/reading payload for repo/deploy bloat, accidental private data, AEO correctness and rollback risk",
+        "Open a bounded fix PR or issue only when evidence justifies it"
+      ],
+      "constraints": [
+        "Do not rollback a live green release without evidence",
+        "No force-push",
+        "No money/DNS changes"
+      ]
+    },
+    {
+      "id": "N2",
+      "title": "Arcanea #188 post-rebase GitOps gate",
+      "done_when": [
+        "Wait for new CI after update-branch",
+        "If clean + green, land the CI-cost optimization through normal gates",
+        "Record exact checks and merge/result URL"
+      ],
+      "constraints": [
+        "Do not bypass red CI",
+        "No unrelated Arcanea UI edits"
+      ]
+    },
+    {
+      "id": "N3",
+      "title": "C940 Hermes model-policy alignment",
+      "done_when": [
+        "Set model.default=gpt-5.6-terra and model.provider=openai-codex if supported",
+        "Set agent.reasoning_effort=high",
+        "Prove with a fresh-process chat/log line showing model=gpt-5.6-terra provider=openai-codex",
+        "Classify any provider failure by provider/model/error; do not mislabel Firecrawl as Terra inference failure"
+      ],
+      "constraints": [
+        "C940 uses its own config only",
+        "Do not run Telegram receive on the Yogabook primary bot token",
+        "Keep xAI/Grok for image/video routes where intentional"
+      ]
+    },
+    {
+      "id": "N4",
+      "title": "Fleet heartbeat + handoff",
+      "done_when": [
+        "Refresh only fleet/bus/heartbeats/c940.json",
+        "Append a short activity result with evidence and next",
+        "Send one short Swarm result; Git remains SSOT"
+      ],
+      "constraints": [
+        "Never write yoga-book heartbeat",
+        "No echo-loop/status spam"
+      ]
+    }
+  ],
+  "book_parallel_lane": [
+    "Production frontend smoke/UX",
+    "Command Center cron/model remediation",
+    "Review C940 evidence and continue incomplete work"
+  ],
+  "evidence_required": [
+    "commit/PR/issue URLs",
+    "check names/statuses",
+    "fresh model log line",
+    "updated c940 heartbeat timestamp"
+  ]
+}
