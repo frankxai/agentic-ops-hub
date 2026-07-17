@@ -80,6 +80,30 @@
       "status": "completed-by-yoga-book",
       "evidence": "https://github.com/frankxai/arcanea-ai-app/pull/188",
       "note": "Rebased, full CI green, merged 2026-07-17T03:54:03Z. C940 must not duplicate."
+    },
+    {
+      "at": "2026-07-17T04:02:22+00:00",
+      "id": "N0",
+      "status": "urgent-safety-correction",
+      "evidence": "C940 Swarm report: Codex sandbox 1312 -> danger-full-access",
+      "required_action": [
+        "Stop or pause any Codex lane using --sandbox danger-full-access",
+        "Restart only with --sandbox workspace-write (or read-only for review), -C exact verified repo, -m gpt-5.6-terra, and -c model_reasoning_effort=high",
+        "If nested Hermes causes Windows sandbox 1312, run Codex directly from a normal C940 shell with repo scope; never bypass sandbox/approvals",
+        "Do not retry Claude after OAuth 401; leave at $0 and route bounded work to authenticated Terra"
+      ],
+      "constraints": [
+        "no YOLO",
+        "no danger-full-access",
+        "no force-push",
+        "no main/prod ship",
+        "no paid overage without Frank approval"
+      ],
+      "done_when": [
+        "process list/log proves unsafe runs stopped",
+        "fresh Codex log shows repo-scoped Terra/high workspace-write or read-only",
+        "report exact branch/commit/check URLs"
+      ]
     }
   ]
 }
