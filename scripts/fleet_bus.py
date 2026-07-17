@@ -20,6 +20,7 @@ BUS_ROOT = _OPS_ROOT / "fleet" / "bus"
 LEGACY_BUS_ROOT = _OPS_ROOT / "bus"
 MACHINE_MAP = {
     "DESKTOP-1B4ICID": "c940",
+    "Starlight": "yoga-book",
 }
 
 
