@@ -52,7 +52,7 @@
     "branch": "agent/book/first-100-hardening",
     "commit": "60808f3adc8b6f6edd0500533ff694b24ee9724e",
     "pull_request": "https://github.com/frankxai/frankx.ai-vercel-website/pull/334",
-    "pull_request_state_at_receipt": "draft; CI and Vercel preview pending",
+    "pull_request_state_at_receipt": "draft; GitHub CI green; Vercel status passed via Ignored Build Step with no preview artifact",
     "route": "/challenge",
     "changed_files": [
       "app/api/checkout/route.ts",
