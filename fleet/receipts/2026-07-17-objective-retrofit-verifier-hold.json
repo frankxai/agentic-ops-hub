@@ -10,7 +10,7 @@
   "branch": "agent/hermes/objective-campaign-v2-20260717",
   "commit": "19873b33b8648c79f5476cd1aa6eae75b05ba745",
   "artifacts": [
-    "fleet/reports/2026-07-17-objective-retrofit-verification.md"
+    "fleet/reports/2026-07-17-objective-retrofit-verification-hold.md"
   ],
   "verification": [],
   "integration_state": "hold",
