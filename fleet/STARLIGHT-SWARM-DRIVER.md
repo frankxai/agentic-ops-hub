@@ -32,8 +32,8 @@ This is the **operating model** for continuous multi-agent / multi-machine work 
 | Who | Leads | Executes |
 | --- | --- | --- |
 | **You (Frank)** | Priorities, ship gates, hard-stops | Approvals, secrets, Book first-boot |
-| **C940 / Lenovo bot** | Fleet control plane, backend, content/GEO, crons, Railway | Heavy Hermes profiles + Claude/Codex |
-| **Yoga Book bot** | Frontend / product UI / innovation | Thin Hermes + Codex/Antigravity |
+| **C940 / Lenovo bot** | Fleet control plane, backend, content/GEO, crons, Railway | Hermes/xAI Queen + Claude Max/Codex Max |
+| **Yoga Book bot** | Frontend / product UI / innovation | Thin Hermes + Codex Max/Gemini Ultra/Claude review |
 | **Git + OPS-LEDGER** | Cross-machine truth | Branches `agent/<machine>/<scope>` |
 
 **Rule:** One machine = one role = one primary Telegram **DM** session for interactive work.  
@@ -95,18 +95,20 @@ Deep work → **DM**.
 - [x] Swarm allowlisted; anti-thrash config
 - [ ] All crons **pinned** to `xai-oauth` / `grok-4.5` (fix after pin)
 - [ ] `python scripts/fleet_inventory.py --machine c940` daily (cron)
-- [ ] Heartbeat file written under `fleet/bus/heartbeats/c940.json`
+- [x] Heartbeat file written under `fleet/bus/heartbeats/c940.json`
 - [ ] No second full always-on Hermes profile fighting default gateway
 
 ### Yoga Book (companion)
 
-- [ ] Run Packet 4: `fleet/YOGA-BOOK-FIRST-BOOT.md`
-- [ ] Hostname recorded in `clone-manifest.json` hints
+- [x] Packet 4 heartbeat/identity evidence present on `origin/main`
+- [x] Hostname `Starlight` mapped to `yoga-book`
 - [ ] Same Telegram discipline: **require_mention**, **busy_input_mode=queue**, group allowlist for Swarm
 - [ ] **Do not** install full C940 cron fleet
 - [ ] Bot only responds to `@Hermesyogabookbot`
 - [ ] Clone set `yoga_book_core` only — no Business
-- [ ] Paste “Book online” inventory summary to Swarm **once** after boot
+- [x] Book online heartbeat published; status must read remote Git truth, not local existence only
+- [ ] Run `scripts/cli_capacity.py --machine yoga-book --live` and commit redacted capacity evidence
+- [ ] Claim `BOOK-CLI-20260717` from `fleet/bus/queues/to-book.json`
 
 ### Shared excellence bar
 
@@ -132,6 +134,8 @@ cd C:/Users/frank/agentic-ops
 python scripts/fleet_inventory.py --machine c940
 python scripts/fleet_sync.py --machine c940 --dry-run
 python scripts/fleet_backup_check.py
+python scripts/fleet_bus.py status --fetch
+python scripts/cli_capacity.py --machine c940 --live --codex-model gpt-5.6-terra
 
 # One-way status to Swarm (no agent loop)
 hermes send --to telegram:-1004300203404 "[c940] …"

@@ -1,39 +1,50 @@
 {
+  "version": 2,
   "to": "yoga-book",
-  "from": "command-center",
-  "issued_at": "2026-07-16T16:30:00+00:00",
+  "from": "c940-command-center",
+  "issued_at": "2026-07-17T13:35:00+00:00",
   "priority": "P0",
-  "items": [
+  "connection": {
+    "remote_heartbeat_observed": "2026-07-17T03:41:53+00:00",
+    "status": "live-via-origin-main",
+    "hostname": "Starlight",
+    "telegram_bot": "@Hermesyogabookbot"
+  },
+  "active": [
     {
-      "id": "P4",
-      "title": "Packet 4 first boot + Telegram align",
-      "docs": [
-        "fleet/YOGA-BOOK-FIRST-BOOT.md",
-        "fleet/YOGA-BOOK-TELEGRAM-ALIGN.md",
-        "fleet/STARLIGHT-SWARM-DRIVER.md"
-      ]
-    },
-    {
-      "id": "P4b",
-      "title": "Write heartbeat yoga-book.json and post [book] ONLINE once",
+      "id": "BOOK-CLI-20260717",
+      "status": "queued",
+      "owner_machine": "yoga-book",
+      "primary_cli": "codex",
+      "verifier_cli": "gemini-or-claude",
+      "repo": "frankxai/frankx.ai-vercel-website",
+      "source_pr": 326,
+      "branch": "agent/book/first-100-hardening",
+      "outcome": "Harden the production First EUR100 Weekend revenue experience with mobile/browser evidence and an integration decision.",
+      "wiring_doc": "fleet/YOGA-BOOK-CLI-MAX-WIRING.md",
+      "report": "fleet/reports/book/2026-07-17-first-100-hardening.md",
+      "receipt": "fleet/receipts/BOOK-CLI-20260717.json",
+      "done_when": [
+        "live CLI capacity report exists for yoga-book",
+        "dedicated clean worktree and exact branch used",
+        "repo-local lint/typecheck/tests/build exit zero or blocker is explicit",
+        "mobile/browser review evidence is recorded",
+        "commit and PR or explicit hold/rejection integration state exists",
+        "machine-readable receipt is committed and pushed"
+      ],
       "constraints": [
-        "never forge c940 heartbeat",
-        "frontend lanes only"
+        "one heavy coding CLI at a time on YogaBook",
+        "no production deploy or merge without Frank gate",
+        "no second writer in the same worktree",
+        "no danger-full-access, yolo, force push, or credential output"
       ]
-    },
-    {
-      "id": "FE1",
-      "title": "After online: claim frontend lane for R1 CTA UI if C940 marks need",
-      "branch_prefix": "agent/book/"
     }
   ],
-  "source": "fleet/TASK-PACKETS.md Packet 4",
-  "from_c940_request": {
-    "id": "FE1",
-    "message": "After P4 online: primary nav/homepage CTA external https://gencreator.ai (R1). Footer already has external. Prefer agent/book/r1-cta. No prod ship without gate.",
-    "at": "2026-07-16T16:22:09+00:00"
-  },
-  "alignment": "parallel-no-wait",
-  "note": "c940.json LIVE on git. Pull agentic-ops-hub and work B1-B5 without waiting for more C940 ceremony.",
-  "updated_at": "2026-07-16T22:01:33+00:00"
+  "historical": [
+    {"id": "P4", "status": "delivered", "evidence": "fleet/bus/heartbeats/yoga-book.json"},
+    {"id": "P4b", "status": "delivered", "evidence": "origin/main heartbeat at 2026-07-17T03:41:53+00:00"},
+    {"id": "FE1", "status": "hold-review-required", "evidence": "agent/book/r1-cta@062b046; no PR; behind main"}
+  ],
+  "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
+  "updated_at": "2026-07-17T13:35:00+00:00"
 }

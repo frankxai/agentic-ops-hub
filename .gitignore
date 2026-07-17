@@ -17,6 +17,11 @@ Thumbs.db
 node_modules/
 .cache/
 .acos/
+__pycache__/
+*.pyc
+fleet/runs/
+fleet/reports/night/*-raw.json
+
 aoh-sync.bat
 aoh-cleanup.bat
 *.log

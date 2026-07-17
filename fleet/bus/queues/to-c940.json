@@ -1,49 +1,33 @@
 {
+  "version": 2,
   "to": "c940",
   "from": "command-center",
-  "issued_at": "2026-07-16T16:30:00+00:00",
+  "issued_at": "2026-07-17T13:35:00+00:00",
   "priority": "P0",
-  "items": [
+  "active": [
     {
-      "id": "B1",
-      "title": "Commit agentic-ops fleet control plane",
-      "constraints": [
-        "no force push",
-        "no dirty wipe"
-      ]
-    },
-    {
-      "id": "B2",
-      "title": "R1 GenCreator bridge evidence refresh",
-      "constraints": [
-        "no main/prod ship without approval"
-      ]
-    },
-    {
-      "id": "B3",
-      "title": "Dirty tree classification top-3",
-      "constraints": [
-        "classify only",
-        "enhance-never-erase"
+      "id": "C940-CLI-MAX-20260717",
+      "status": "in-progress",
+      "owner_machine": "c940",
+      "branch": "agent/c940/cli-fleet-maximize",
+      "outcome": "Replace activity-based swarm status with live CLI capacity, resource gates, receipt-backed completion, and remote YogaBook truth.",
+      "done_when": [
+        "all control-plane tests pass",
+        "YogaBook remote heartbeat is reconciled and fresh",
+        "unsafe Codex sandbox widening is removed",
+        "version-2 receipt contract blocks report-only completion",
+        "CLI capacity probe is runnable on both machines",
+        "PR is green and integrated or explicit hold is recorded"
       ]
     }
   ],
-  "source": "fleet/TASK-PACKETS.md + OPS-LEDGER Next",
-  "status": "active",
-  "claimed_by": "c940",
-  "updated_at": "2026-07-16T22:01:33+00:00",
-  "results": {
-    "B1": "DONE d10d81c agentic-ops-hub main",
-    "B2": "DONE R1 YELLOW evidence",
-    "B3": "DONE packet6-dirty-light.md",
-    "B4": "DONE rclone winget install Rclone.Rclone 1.74.4; config crypt still MANUAL",
-    "B5": "DONE anti-thrash + pulse"
-  },
-  "next": [
-    "disk reclaim (optional comfort)",
-    "R1 content when free",
-    "keep heartbeat+activity"
+  "historical": [
+    {"id": "B1", "status": "delivered", "evidence": "d10d81c"},
+    {"id": "B2", "status": "delivered", "evidence": "R1 YELLOW evidence"},
+    {"id": "B3", "status": "delivered", "evidence": "packet6-dirty-light.md"},
+    {"id": "B4", "status": "partial-manual", "evidence": "rclone 1.74.4 installed; crypt config manual"},
+    {"id": "B5", "status": "delivered", "evidence": "anti-thrash and pulse"}
   ],
-  "alignment": "parallel-no-wait",
-  "note": "Do NOT wait for Book heartbeat. Book does not wait for c940."
+  "coordination": "C940 integrates backend/control-plane; YogaBook independently owns the frontend outcome packet.",
+  "updated_at": "2026-07-17T13:35:00+00:00"
 }

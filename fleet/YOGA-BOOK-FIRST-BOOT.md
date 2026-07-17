@@ -8,7 +8,7 @@ Run this **on the Yoga Book** (frontend machine). C940 is already the control pl
 - GitHub CLI (`gh`)
 - Node 24 LTS + pnpm
 - Python 3.11+
-- Claude Code, Codex (optional Hermes lite)
+- Claude Code, Codex, Gemini CLI, and thin Hermes
 
 ## 2. Auth
 
@@ -27,6 +27,8 @@ cd agentic-ops
 python scripts/fleet_inventory.py --machine yoga-book
 python scripts/fleet_sync.py --machine yoga-book
 python scripts/fleet_backup_check.py
+python scripts/fleet_bus.py status --fetch
+python scripts/cli_capacity.py --machine yoga-book --live --codex-model gpt-5.6-terra
 ```
 
 ## 4. Role rules
@@ -82,3 +84,11 @@ See `fleet/activity/BOOK-DM-MIRROR.md` + `fleet/YOGA-BOOK-TELEGRAM-ALIGN.md`.
 3. Arcanea platform UI  
 
 Full prompts: `fleet/TASK-PACKETS.md` Packet 4.
+
+## 8. Current CLI-max packet
+
+After pulling `main`, follow `fleet/YOGA-BOOK-CLI-MAX-WIRING.md` and claim the
+single active item in `fleet/bus/queues/to-book.json`. One heavy coding CLI at a
+time on Book; C940 runs its independent lane in parallel. A report or heartbeat
+alone is not completion — commit the version-2 receipt with test and integration
+evidence.
