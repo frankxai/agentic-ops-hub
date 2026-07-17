@@ -100,17 +100,37 @@ always → log estimate in night report; next day Token Tracker measures actual
 ## 6. Commands
 
 ```bash
-# See plan
-cat ~/agentic-ops/fleet/TOKEN-PLANNER.md
-cat ~/agentic-ops/fleet/night/$(date +%Y-%m-%d).md
+# Recommend the right agent/model and explain why
+token-plan recommend deep-backend --complexity 8 --unattended
+
+# Validate / inspect today's manifest
+night-queen plan
+night-queen commands
+night-queen status
+night-queen debrief
+
+# Safety-gated launch (explicit only; dry run is default)
+night-queen dry-run
+night-queen launch
 
 # After night
 token-usage daily
 token-usage hermes
 token-usage codex
-# Optional: aggregate fleet
-aggregate-reports
+python ~/starlight-token-tracker/scripts/planner_snapshot.py
+python ~/starlight-token-tracker/scripts/anomaly_check.py
 ```
+
+### Executable SoT
+
+| Artifact | Purpose |
+|----------|---------|
+| `fleet/model-routing.json` | Job class → agent/model/budget/why |
+| `fleet/token_planner.py` | Recommend, validate, commands, status, debrief |
+| `fleet/night_runner.py` | Branch/auth/disk preflight + durable run state |
+| `fleet/night/YYYY-MM-DD.json` | Machine-readable mission contract |
+| `~/bin/token-plan` | Planner CLI |
+| `~/bin/night-queen` | Night UX wrapper |
 
 ---
 
