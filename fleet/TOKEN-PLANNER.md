@@ -62,12 +62,12 @@ Dollar values are **API-equivalent planner targets**, not the primary control fo
 
 ## 4. Campaign protocol
 
-1. Select at most three objectives from `objectives-registry.json`; ID, repo, owner, outcome, and success metric must match the canonical entry exactly.
+1. Select at most three objectives from `objectives-registry.json`; ID, repo, owner, outcome, and success metric must match the canonical entry exactly. Campaigns accept only the full `github.com/frankxai/<repo>` origin identity; an attacker-owned same-name fork is rejected for both the control repo and mission repos.
 2. Create a version-3 manifest in `fleet/campaigns/` with objective, role, quota pool, repo, branch, artifacts, verification IDs, exact acceptance commands, wave budget, stop conditions, report, and portable repo-relative receipt.
-3. Capture live quota; route depleted agents to a healthy configured fallback.
-4. Admit only one writer per repo and require a different verifier for consequential work. Persist the maker's effective fallback agent and exclude it from verifier routing.
+3. Capture live quota; recommend a healthy configured fallback when the declared campaign agent is depleted. Before execution, commit that fallback as the manifest agent and quota pool; the runner returns `requires-manifest-reroute` rather than accepting a self-attested fallback receipt.
+4. Admit only one writer per repo and require a different verifier for consequential work. The committed manifest identity is the execution identity and is excluded from verifier routing.
 5. Launch only the lowest dependency-ready wave. A verifier names every maker in `depends_on`, runs later, and cannot launch after a blocked or failed maker.
-6. Count only receipts whose required artifacts exist, commit is reachable from the expected branch, agent is an allowed/effective route, and verification IDs match the manifest's exact commands.
+6. Count only VERIFIED receipts whose agent exactly matches the committed manifest, commit is reachable from the expected branch, every required artifact is tracked and unchanged from that exact commit, and verification IDs match the manifest's exact commands. HOLD/BLOCKED/FAILED receipts may record attempted fallback diagnostics but never advance an objective.
 7. Human-gated merge, deploy, spend, production, external send, and destructive actions remain held.
 
 ### Six-hour wave shape

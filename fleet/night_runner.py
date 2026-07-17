@@ -308,6 +308,21 @@ class NightRunner:
             routed, quota_detail, health = self._route_mission(
                 mission, usage, excluded_agents, checked_agents
             )
+            if mission.get("objective_id") and routed["agent"] != mission["agent"]:
+                rows.append(
+                    {
+                        "id": mission["id"],
+                        "agent": mission["agent"],
+                        "recommended_agent": routed["agent"],
+                        "action": "requires-manifest-reroute",
+                        "branch": expected,
+                        "wave": mission.get("wave"),
+                        "quota": quota_detail,
+                        "health": health,
+                        "detail": "commit the fallback as the manifest agent before campaign execution",
+                    }
+                )
+                continue
             argv = self.planner.command_args(routed)
             rows.append(
                 {
@@ -362,6 +377,7 @@ class NightRunner:
                 "queued-wave",
                 "queued-dependency",
                 "blocked-upstream",
+                "requires-manifest-reroute",
             }:
                 state["missions"].append(
                     {

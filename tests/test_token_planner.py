@@ -131,6 +131,38 @@ class TokenPlannerTests(unittest.TestCase):
             with self.assertRaisesRegex(PlannerError, "canonical registry"):
                 self.planner.validate_manifest(manifest)
 
+    def test_campaign_rejects_attacker_owned_same_name_control_repo(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            subprocess.run(
+                ["git", "remote", "set-url", "origin", "https://github.com/attacker/agentic-ops-hub.git"],
+                cwd=tmp,
+                check=True,
+            )
+            with self.assertRaisesRegex(PlannerError, "canonical frankxai control repository"):
+                self.planner.validate_manifest(manifest)
+
+    def test_campaign_rejects_attacker_owned_same_name_mission_repo(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            attacker = Path(tmp) / "attacker-repo"
+            attacker.mkdir()
+            subprocess.run(
+                ["git", "init", "-b", "agent/hermes/test"],
+                cwd=attacker,
+                capture_output=True,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "remote", "add", "origin", "https://github.com/attacker/agentic-ops-hub.git"],
+                cwd=attacker,
+                check=True,
+            )
+            for mission in manifest["missions"]:
+                mission["repo"] = str(attacker)
+            with self.assertRaisesRegex(PlannerError, "repo does not match objective"):
+                self.planner.validate_manifest(manifest)
+
     def test_campaign_rejects_same_wave_verifier(self):
         with tempfile.TemporaryDirectory() as tmp:
             manifest = self._campaign(tmp)
@@ -189,6 +221,17 @@ class TokenPlannerTests(unittest.TestCase):
             artifact = root / mission["required_artifacts"][0]
             artifact.parent.mkdir(parents=True)
             artifact.write_text("artifact", encoding="utf-8")
+            subprocess.run(
+                ["git", "add", mission["required_artifacts"][0]],
+                cwd=tmp,
+                check=True,
+            )
+            subprocess.run(
+                ["git", "commit", "-m", "add artifact"],
+                cwd=tmp,
+                capture_output=True,
+                check=True,
+            )
             commit = subprocess.run(
                 ["git", "-C", tmp, "rev-parse", "HEAD"],
                 capture_output=True,
@@ -222,6 +265,12 @@ class TokenPlannerTests(unittest.TestCase):
             self.assertEqual(state["missions"][0]["status"], "verified")
             self.assertEqual(state["missions"][1]["status"], "missing-receipt")
             self.assertEqual(self.planner.active_wave(manifest), 2)
+            artifact.write_text("changed after receipt commit", encoding="utf-8")
+            self.assertEqual(
+                self.planner.status(manifest)["missions"][0]["status"],
+                "invalid-receipt",
+            )
+            artifact.write_text("artifact", encoding="utf-8")
             payload = json.loads(receipt.read_text(encoding="utf-8"))
             payload["verification"][0]["command"] = "true"
             receipt.write_text(json.dumps(payload), encoding="utf-8")
@@ -230,7 +279,7 @@ class TokenPlannerTests(unittest.TestCase):
                 "invalid-receipt",
             )
             payload["verification"][0]["command"] = mission["acceptance_commands"][0]
-            payload["agent"] = "gemini"
+            payload["agent"] = "claude"
             receipt.write_text(json.dumps(payload), encoding="utf-8")
             self.assertEqual(
                 self.planner.status(manifest)["missions"][0]["status"],
@@ -252,7 +301,7 @@ class TokenPlannerTests(unittest.TestCase):
         root = Path(tmp)
         canonical_objective = {
             "id": "OBJ-1",
-            "repo": "test-repo",
+            "repo": "agentic-ops-hub",
             "executive_owner": "CTO",
             "outcome": "working artifact",
             "success_metric": "artifact verified",
@@ -271,7 +320,7 @@ class TokenPlannerTests(unittest.TestCase):
         subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=tmp, check=True)
         subprocess.run(["git", "config", "user.name", "Test"], cwd=tmp, check=True)
         subprocess.run(
-            ["git", "remote", "add", "origin", "https://github.com/example/test-repo.git"],
+            ["git", "remote", "add", "origin", "https://github.com/frankxai/agentic-ops-hub.git"],
             cwd=tmp,
             check=True,
         )

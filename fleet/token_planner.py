@@ -10,6 +10,7 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath, PureWindowsPath
 from typing import Any
+from urllib.parse import urlparse
 
 
 class PlannerError(ValueError):
@@ -30,6 +31,10 @@ _FORBIDDEN_LAUNCH_TOKENS = {
     "--dangerously-bypass-approvals-and-sandbox",
     "--yolo",
 }
+
+_CANONICAL_GITHUB_HOST = "github.com"
+_CANONICAL_GITHUB_OWNER = "frankxai"
+_CANONICAL_CONTROL_REPO = "agentic-ops-hub"
 
 
 def _repo_path(mission: dict[str, Any], value: str) -> Path:
@@ -64,7 +69,7 @@ def _require_portable_path(mission: dict[str, Any], key: str, value: str) -> Non
     _portable_repo_path(str(mission["repo"]), value, f"mission {mission['id']} {key}")
 
 
-def _git_repo_name(repo: str) -> str:
+def _git_repo_identity(repo: str) -> tuple[str, str, str]:
     result = subprocess.run(
         ["git", "-C", repo, "remote", "get-url", "origin"],
         capture_output=True,
@@ -75,8 +80,19 @@ def _git_repo_name(repo: str) -> str:
     if result.returncode:
         raise PlannerError("campaign mission repo must have a readable origin")
     origin = result.stdout.strip().replace("\\", "/").rstrip("/")
-    name = re.split(r"[/:]", origin)[-1]
-    return name[:-4] if name.endswith(".git") else name
+    scp = re.fullmatch(r"(?:[^@]+@)?([^:]+):(.+)", origin) if "://" not in origin else None
+    if scp:
+        host, path = scp.group(1), scp.group(2)
+    else:
+        parsed = urlparse(origin)
+        host, path = parsed.hostname or "", parsed.path
+    parts = [part for part in path.strip("/").split("/") if part]
+    if len(parts) < 2 or not host:
+        raise PlannerError("campaign mission origin is not a canonical repository URL")
+    owner, name = parts[-2], parts[-1]
+    if name.endswith(".git"):
+        name = name[:-4]
+    return host.lower(), owner.lower(), name.lower()
 
 
 @dataclass
@@ -155,6 +171,13 @@ class Planner:
             registry_value = str(manifest.get("objective_registry", ""))
             if not control_repo or not registry_value:
                 raise PlannerError("campaign manifest requires control_repo and objective_registry")
+            canonical_control = (
+                _CANONICAL_GITHUB_HOST,
+                _CANONICAL_GITHUB_OWNER,
+                _CANONICAL_CONTROL_REPO,
+            )
+            if _git_repo_identity(control_repo) != canonical_control:
+                raise PlannerError("campaign control_repo is not the canonical frankxai control repository")
             registry_path = _portable_repo_path(
                 control_repo, registry_value, "campaign objective_registry"
             )
@@ -238,7 +261,12 @@ class Planner:
                 if objective_id not in objective_ids:
                     raise PlannerError(f"mission {mission_id} has unknown objective_id")
                 canonical_repo = str(registry_by_id[objective_id]["repo"])
-                if _git_repo_name(str(mission["repo"])) != canonical_repo:
+                expected_identity = (
+                    _CANONICAL_GITHUB_HOST,
+                    _CANONICAL_GITHUB_OWNER,
+                    canonical_repo.lower(),
+                )
+                if _git_repo_identity(str(mission["repo"])) != expected_identity:
                     raise PlannerError(
                         f"mission {mission_id} repo does not match objective {objective_id}"
                     )
@@ -479,6 +507,31 @@ class Planner:
                 return True, "commit is reachable from expected branch"
         return False, "commit is not reachable from expected branch"
 
+    @staticmethod
+    def _artifact_commit_state(
+        mission: dict[str, Any], commit: str, artifact: str
+    ) -> tuple[bool, str]:
+        repo = str(mission["repo"])
+        tracked = subprocess.run(
+            ["git", "-C", repo, "cat-file", "-e", f"{commit}:{artifact}"],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            check=False,
+        )
+        if tracked.returncode:
+            return False, f"artifact is not present at receipt commit: {artifact}"
+        unchanged = subprocess.run(
+            ["git", "-C", repo, "diff", "--quiet", commit, "--", artifact],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            check=False,
+        )
+        if unchanged.returncode:
+            return False, f"artifact differs from receipt commit: {artifact}"
+        return True, "artifact matches receipt commit"
+
     def _receipt_state(self, mission: dict[str, Any]) -> tuple[str, str]:
         receipt_value = mission.get("receipt")
         if not receipt_value:
@@ -501,16 +554,12 @@ class Planner:
                 return "invalid-receipt", "objective_id mismatch"
             if payload.get("role") != mission.get("role"):
                 return "invalid-receipt", "role mismatch"
-            receipt_agent = str(payload.get("agent", ""))
-            allowed_agents = {
-                str(mission["agent"]),
-                *self.config.get("fallbacks", {}).get(str(mission["agent"]), []),
-            }
-            if receipt_agent not in allowed_agents:
-                return "invalid-receipt", "agent is not the declared route or an allowed fallback"
             outcome = str(payload.get("outcome_status", "FAILED")).upper()
             if outcome in {"HOLD", "BLOCKED", "FAILED"}:
                 return outcome.lower(), f"outcome_status={outcome}"
+            receipt_agent = str(payload.get("agent", ""))
+            if receipt_agent != str(mission["agent"]):
+                return "invalid-receipt", "verified receipt agent does not match the committed manifest route"
             if payload.get("execution_status") != "ok" or outcome != "VERIFIED":
                 return "unverified", "execution or outcome status is not verified"
         if payload.get("status") not in {"verified", "delivered"}:
@@ -535,6 +584,11 @@ class Planner:
                 resolved = _repo_path(mission, str(artifact))
                 if not resolved.is_file() or resolved.stat().st_size == 0:
                     return "unverified", f"artifact missing: {artifact}"
+                matches_commit, artifact_detail = self._artifact_commit_state(
+                    mission, commit, str(artifact)
+                )
+                if not matches_commit:
+                    return "invalid-receipt", artifact_detail
             expected_checks = dict(
                 zip(mission["verification_ids"], mission["acceptance_commands"], strict=True)
             )

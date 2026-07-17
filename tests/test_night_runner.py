@@ -139,6 +139,37 @@ class NightRunnerTests(unittest.TestCase):
         self.assertEqual(routed["routed_from"], "codex")
         self.assertIn("70", detail)
 
+    def test_campaign_fallback_requires_committed_manifest_reroute(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        manifest = self._manifest("C:/repo")
+        manifest["mode"] = "campaign"
+        mission = manifest["missions"][0]
+        mission.update({
+            "objective_id": "OBJ-1",
+            "role": "verifier",
+            "wave": 1,
+            "quota_pool": "codex",
+        })
+        status = {"missions": [{"id": mission["id"], "status": "missing-receipt"}]}
+        with patch.object(self.planner, "validate_manifest", return_value={"valid": True}), \
+             patch.object(self.planner, "status", return_value=status), \
+             patch.object(self.planner, "active_wave", return_value=1), \
+             patch.object(runner, "current_branch", return_value=mission["branch"]), \
+             patch.object(runner, "disk_free_gb", return_value=60.0), \
+             patch.object(runner, "memory_percent", return_value=50.0), \
+             patch.object(runner, "is_clean", return_value=True), \
+             patch.object(runner, "agent_health", return_value={"ready": True, "detail": "live"}), \
+             patch.object(runner, "subscription_usage", return_value={
+                 "codex": {"remaining_percent": 2},
+                 "claude": {"remaining_percent": 70},
+             }):
+            result = runner.prepare(manifest)
+        row = result["missions"][0]
+        self.assertEqual(row["action"], "requires-manifest-reroute")
+        self.assertEqual(row["agent"], "codex")
+        self.assertEqual(row["recommended_agent"], "claude")
+        self.assertNotIn("argv", row)
+
     def test_verifier_route_excludes_effective_maker_agent(self):
         runner = NightRunner(self.planner, state_dir=Path("state"))
         mission = self._manifest("C:/repo")["missions"][0]
