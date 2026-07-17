@@ -23,19 +23,44 @@
 
 From ledger: rclone missing · disk ~61GB free · Business NO_ORIGIN.
 
-**Morning Windows install path (operator):**
-```powershell
-winget install Rclone.Rclone
-# or: choco install rclone
-rclone version
-# Then configure crypt remote per fleet/BACKUP-MIGRATION.md / b4-rclone docs
-```
+**Morning Windows rclone install path (operator):**
+1. Open a new PowerShell window. If `winget` is unavailable, install or update **App Installer** from Microsoft Store first.
+   ```powershell
+   winget install Rclone.Rclone
+   ```
+2. Close and reopen PowerShell so the newly installed `rclone` is on `PATH`, then verify the binary:
+  ```powershell
+  rclone version
+  Get-Command rclone
+  ```
+3. If `winget` is not available, use Chocolatey from an elevated PowerShell instead:
+  ```powershell
+  choco install rclone
+  ```
+4. Configure the approved remote and crypt layer only from the documented migration/operator instructions:
+  ```powershell
+  rclone config
+  rclone listremotes
+  ```
+   Use `fleet/BACKUP-MIGRATION.md` and the `fleet/reports/b4-rclone*.md` notes; do not paste credentials into this report or the repository.
+5. Confirm the crypt remote is readable with a small, non-destructive listing before starting any backup. Do **not** run a large restic job until the free-disk threshold below is met.
+
 Do **not** run large restic until free disk ≥80GB target (currently ~61GB).
 
 ## Recommended morning PRs (if night workers finish)
 1. `agentic-ops` night branch → PR: TOKEN-PLANNER + night reports only  
 2. `starlight-token-tracker` night branch → PR: anomaly_check.py  
 3. SIS/ACOS only if green tests  
+
+## Morning PR checklist — agentic-ops
+- [ ] Confirm the source branch is `night/2026-07-17-fleet-hygiene`; do not merge or push directly to `main`.
+- [ ] Review `git status --short` and include only `fleet/TOKEN-PLANNER.md` and `fleet/reports/night/*` in the PR/commit.
+- [ ] Confirm no unrelated dirty files, generated raw artifacts, credentials, or local state are staged.
+- [ ] Read the final diff and ensure it contains the token-planner/night-report scope only.
+- [ ] Run the relevant lightweight documentation or repository checks, and record any check that could not run.
+- [ ] Push the night branch normally; never force-push.
+- [ ] Open a PR to `main` with a concise summary, verification results, and the remaining backup constraints: rclone configuration and ≥80GB free disk.
+- [ ] Before merge, confirm required CI/review checks are green and the PR has no out-of-scope files.
 
 ## Explicit non-touch
 - vercel prod dirty  
