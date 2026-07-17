@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "scope": "current estate outcomes",
+  "generated_at": "2026-07-17",
+  "sources": [
+    "starlight-agent-config/core/estate/repo-contract-catalog.v2.json",
+    "starlight-agent-config/core/tasks/global-progress-ledger.json",
+    "starlight-agent-config/core/business-os/starlight-swarm-kickoff.v1.md"
+  ],
+  "policy": {
+    "max_top_level_objectives_per_campaign": 3,
+    "tier_0_coverage_slo_days": 7,
+    "now_coverage_slo_days": 14,
+    "one_writer_per_repo": true,
+    "independent_verifier_required": true,
+    "completion_requires": [
+      "machine-readable receipt",
+      "required artifacts",
+      "passed verification ids"
+    ],
+    "non_outcomes": [
+      "agent invocation",
+      "token consumption",
+      "prose report without proof",
+      "unacknowledged swarm dispatch",
+      "plan without an accepted implementation artifact"
+    ]
+  },
+  "objectives": [
+    {
+      "id": "OBJ-ESTATE-GOVERNANCE",
+      "repo": "starlight-agent-config",
+      "priority": "tier-0",
+      "executive_owner": "CIO",
+      "outcome": "Deterministic governed delivery across the estate",
+      "success_metric": "At least one campaign contract is admitted, executed, and verified against canonical estate policy."
+    },
+    {
+      "id": "OBJ-SIS-TRUST",
+      "repo": "Starlight-Intelligence-System",
+      "priority": "tier-0",
+      "executive_owner": "CTO",
+      "outcome": "Adoption, reliability, and partner confidence",
+      "success_metric": "A tested reliability, interoperability, or adoption improvement reaches reviewable PR state with conformance evidence."
+    },
+    {
+      "id": "OBJ-JARVISOPS-CALM",
+      "repo": "jarvisops-desktop",
+      "priority": "tier-0",
+      "executive_owner": "CPO",
+      "outcome": "Calm local visibility and receipt-backed actions",
+      "success_metric": "One operator flow becomes measurably clearer or safer and records a machine-readable action receipt."
+    },
+    {
+      "id": "OBJ-HERMES-AWARENESS",
+      "repo": "hermes-cockpit",
+      "priority": "tier-0",
+      "executive_owner": "CIO",
+      "outcome": "Reliable operator awareness",
+      "success_metric": "One live status or decision surface is verified against its source and tested."
+    },
+    {
+      "id": "OBJ-FLEET-DELIVERY",
+      "repo": "agentic-ops-hub",
+      "priority": "tier-0",
+      "executive_owner": "CIO",
+      "outcome": "Repeatable governed agent delivery",
+      "success_metric": "A campaign produces objective-linked artifacts and passed verification receipts while respecting quota, branch, storage, and concurrency gates."
+    },
+    {
+      "id": "OBJ-FRANKX-REVENUE",
+      "repo": "frankx.ai-vercel-website",
+      "priority": "tier-0",
+      "executive_owner": "CEO",
+      "outcome": "Qualified purchase, delivery, and upgrade",
+      "success_metric": "One tested change reduces qualified purchase, delivery, or upgrade friction without triggering duplicate deployment paths."
+    },
+    {
+      "id": "OBJ-FRANKX-EVIDENCE",
+      "repo": "FrankX",
+      "priority": "tier-0",
+      "executive_owner": "CMO",
+      "outcome": "Evidence-backed offers and content",
+      "success_metric": "One offer or content asset is grounded in product proof and connected to a measurable qualified action."
+    },
+    {
+      "id": "OBJ-ARCANEA-CREATION",
+      "repo": "arcanea-ai-app",
+      "priority": "tier-0",
+      "executive_owner": "CPO",
+      "outcome": "First creation and retained creative use",
+      "success_metric": "One canon-safe tested flow improves time to first creation or repeat creative use."
+    },
+    {
+      "id": "OBJ-GENCREATOR-ACTIVATION",
+      "repo": "gencreator.ai",
+      "priority": "tier-0",
+      "executive_owner": "CRO",
+      "outcome": "Purchase-to-activation and upgrade",
+      "success_metric": "One tested product change removes purchase-to-activation or upgrade friction and reaches reviewable PR state."
+    },
+    {
+      "id": "OBJ-DESIGN-QUALITY",
+      "repo": "starlight-design-intelligence",
+      "priority": "tier-0",
+      "executive_owner": "CDO",
+      "outcome": "Consistent premium visual quality",
+      "success_metric": "One important visual artifact passes provenance, export inspection, responsive QA, and the premium score gate."
+    },
+    {
+      "id": "OBJ-COMMUNITY-ACTIVATION",
+      "repo": "starlight-communities",
+      "priority": "now",
+      "executive_owner": "CMO",
+      "outcome": "Community activation and repeat contribution",
+      "success_metric": "One real pilot or contribution loop is executable and yields a measured activation or repeat-contribution signal."
+    },
+    {
+      "id": "OBJ-SWARM-EXECUTION",
+      "repo": "starlight-swarm",
+      "priority": "now",
+      "executive_owner": "CTO",
+      "outcome": "Bounded verified multi-agent execution",
+      "success_metric": "A maker and independent verifier return acknowledged receipts for a bounded job without duplicate writers."
+    },
+    {
+      "id": "OBJ-CREATOR-WORKFLOWS",
+      "repo": "agentic-creator-os",
+      "priority": "now",
+      "executive_owner": "CPO",
+      "outcome": "Repeatable creator workflows",
+      "success_metric": "One end-to-end creator workflow is tested, repeatable, and produces a useful artifact."
+    },
+    {
+      "id": "OBJ-INFLUENCER-DISTRIBUTION",
+      "repo": "agentic-influencer-os",
+      "priority": "now",
+      "executive_owner": "CMO",
+      "outcome": "Consented qualified distribution and learning",
+      "success_metric": "One consent-safe distribution experiment records audience, action, and learning evidence."
+    },
+    {
+      "id": "OBJ-OS-INTEROPERABILITY",
+      "repo": "agentic-operating-system-standard",
+      "priority": "now",
+      "executive_owner": "CTO",
+      "outcome": "Portable adoption and interoperability",
+      "success_metric": "One conformance example passes the standard in a second implementation context."
+    },
+    {
+      "id": "OBJ-CAPABILITY-ROUTING",
+      "repo": "ai-capability-registry",
+      "priority": "now",
+      "executive_owner": "CIO",
+      "outcome": "Resolvable team and capability routing",
+      "success_metric": "One real task resolves to an available capability and produces an acknowledged result."
+    },
+    {
+      "id": "OBJ-MCP-SAFETY",
+      "repo": "mcp-doctor",
+      "priority": "now",
+      "executive_owner": "CTO",
+      "outcome": "Safe interoperable agent tooling",
+      "success_metric": "One compatibility or safety defect is reproduced, fixed, and covered by a regression test."
+    },
+    {
+      "id": "OBJ-MUSIC-PROVENANCE",
+      "repo": "suno-mcp-server",
+      "priority": "now",
+      "executive_owner": "CPO",
+      "outcome": "Reliable provenance-backed music operations",
+      "success_metric": "One music operation records source, prompt, output, and verification provenance end to end."
+    },
+    {
+      "id": "OBJ-ANIME-WORKFLOWS",
+      "repo": "awesome-anime-agent-skills",
+      "priority": "now",
+      "executive_owner": "CDO",
+      "outcome": "High-quality reusable anime creation workflows",
+      "success_metric": "One reusable workflow produces an inspected artifact that passes its documented quality gate."
+    },
+    {
+      "id": "OBJ-ARCANEA-LEARNING",
+      "repo": "arcanea-academy",
+      "priority": "now",
+      "executive_owner": "CPO",
+      "outcome": "Qualified learning activation",
+      "success_metric": "One learner reaches a useful first result and the activation evidence is recorded."
+    },
+    {
+      "id": "OBJ-GENCREATOR-COMMUNITY",
+      "repo": "gencreator-community",
+      "priority": "now",
+      "executive_owner": "CRO",
+      "outcome": "Community activation and paid-wrapper qualification",
+      "success_metric": "One community flow records activation and a qualified paid-wrapper signal."
+    },
+    {
+      "id": "OBJ-OCEAN-SIGNAL",
+      "repo": "ocean-intelligence",
+      "priority": "now",
+      "executive_owner": "CEO",
+      "outcome": "Audience and partner signal before infrastructure",
+      "success_metric": "One evidence-backed audience or partner signal is recorded before new infrastructure is authorized."
+    },
+    {
+      "id": "OBJ-SIS-ACADEMY",
+      "repo": "starlight-intelligence-academy",
+      "priority": "now",
+      "executive_owner": "CRO",
+      "outcome": "Cohort completion and qualified enterprise lead",
+      "success_metric": "One cohort flow records completion evidence or a qualified enterprise lead signal."
+    }
+  ]
+}

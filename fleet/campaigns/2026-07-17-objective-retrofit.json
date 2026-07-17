@@ -1,0 +1,101 @@
+{
+  "version": 3,
+  "date": "2026-07-17",
+  "campaign_id": "2026-07-17-objective-campaign-retrofit",
+  "mode": "campaign",
+  "total_budget_usd": 30,
+  "max_concurrency": 1,
+  "minimum_verified_outcomes": 1,
+  "wave_budgets_usd": {
+    "1": 20,
+    "2": 10
+  },
+  "stop_conditions": [
+    "free disk below 50 GiB",
+    "memory pressure above 85 percent",
+    "no healthy quota-safe subscription route",
+    "branch or clean-worktree admission fails",
+    "required verification fails",
+    "human-gated merge, deploy, spend, credential, DNS, or external-send action is reached"
+  ],
+  "objectives": [
+    {
+      "id": "OBJ-FLEET-DELIVERY",
+      "source": "objectives-registry.json",
+      "success_metric": "A current-main campaign contract admits only objective-linked maker/verifier waves and accepts completion only from portable proof-bearing receipts."
+    }
+  ],
+  "missions": [
+    {
+      "id": "retrofit-maker",
+      "objective_id": "OBJ-FLEET-DELIVERY",
+      "role": "maker",
+      "wave": 1,
+      "agent": "codex",
+      "quota_pool": "codex",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "repo": "C:/Users/frank/starlight/worktrees/agentic-ops-hub-objective-campaign",
+      "branch": "agent/hermes/objective-campaign-v2-20260717",
+      "budget_usd": 20,
+      "max_turns": 25,
+      "timeout_minutes": 90,
+      "outcome": "Implement and test objective-to-agent campaign contracts, wave budgets, live subscription routing, safe fallback, and portable outcome receipts on current origin/main.",
+      "task": "Finish only the scoped campaign control-plane implementation. Preserve v2 night-runner safety gates, add tests, and update the operator contract. Do not commit, push, merge, deploy, spend, access credentials, or send externally.",
+      "why": "Codex has healthy live quota and this is a deterministic implementation plus test lane.",
+      "required_artifacts": [
+        "fleet/token_planner.py",
+        "fleet/night_runner.py",
+        "tests/test_token_planner.py",
+        "tests/test_night_runner.py",
+        "fleet/TOKEN-PLANNER.md",
+        "objectives-registry.json",
+        "fleet/reports/2026-07-17-six-hour-retrospective.md"
+      ],
+      "verification_ids": [
+        "full-unit-suite",
+        "json-contracts",
+        "campaign-admission"
+      ],
+      "acceptance_commands": [
+        "python -m unittest discover -s tests -p 'test_*.py' -v",
+        "python -m json.tool objectives-registry.json && python -m json.tool fleet/campaigns/2026-07-17-objective-retrofit.json",
+        "python -m fleet.token_planner validate fleet/campaigns/2026-07-17-objective-retrofit.json"
+      ],
+      "report": "fleet/reports/2026-07-17-six-hour-retrospective.md",
+      "receipt": "fleet/receipts/2026-07-17-objective-retrofit-maker.json"
+    },
+    {
+      "id": "retrofit-verifier",
+      "objective_id": "OBJ-FLEET-DELIVERY",
+      "role": "verifier",
+      "wave": 2,
+      "agent": "claude",
+      "quota_pool": "claude",
+      "model": "opus",
+      "repo": "C:/Users/frank/starlight/worktrees/agentic-ops-hub-objective-campaign",
+      "branch": "agent/hermes/objective-campaign-v2-20260717",
+      "budget_usd": 10,
+      "max_turns": 15,
+      "timeout_minutes": 60,
+      "outcome": "Independently verify the implementation against safety, receipt portability, wave sequencing, fallback routing, tests, and the stated objective.",
+      "task": "Review the committed maker diff and run acceptance checks. Do not change product code. Write only the verification report and receipt. Do not commit, push, merge, deploy, spend, access credentials, or send externally.",
+      "why": "Claude is a distinct high-judgement verifier with healthy live quota; runtime fallback must preserve maker/checker separation.",
+      "required_artifacts": [
+        "fleet/reports/2026-07-17-objective-retrofit-verification.md"
+      ],
+      "verification_ids": [
+        "independent-code-review",
+        "full-unit-suite",
+        "receipt-schema-review"
+      ],
+      "acceptance_commands": [
+        "python -m unittest discover -s tests -p 'test_*.py' -v",
+        "git diff --check",
+        "python -m fleet.token_planner validate fleet/campaigns/2026-07-17-objective-retrofit.json"
+      ],
+      "report": "fleet/reports/2026-07-17-objective-retrofit-verification.md",
+      "receipt": "fleet/receipts/2026-07-17-objective-retrofit-verifier.json"
+    }
+  ]
+}

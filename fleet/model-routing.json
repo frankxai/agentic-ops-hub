@@ -4,7 +4,7 @@
   "night_cap_usd": 110,
   "defaults": {
     "unattended": true,
-    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night",
+    "report_root": "fleet/reports/night",
     "receipt_required": true,
     "acceptance_commands_required": true,
     "clean_dedicated_worktree_required": true,
@@ -12,6 +12,27 @@
     "max_parallel_across_fleet": 2,
     "disk_floor_gb": 50,
     "memory_ceiling_percent": 85
+  },
+  "agent_defaults": {
+    "claude": {"model": "opus", "max_turns": 30},
+    "codex": {"model": "gpt-5.6-terra", "reasoning_effort": "high", "max_turns": 25},
+    "opencode": {"model": "github-copilot/gpt-5.4", "max_turns": 20},
+    "agy": {"model": "default", "max_turns": 20},
+    "gemini": {"model": "gemini-3.5", "max_turns": 15}
+  },
+  "quota_providers": {
+    "Claude": "claude",
+    "Codex": "codex",
+    "Grok Build": "grok"
+  },
+  "subscription_gates": {
+    "claude": {"minimum_remaining_percent": 15, "allow_unmeasured": false},
+    "codex": {"minimum_remaining_percent": 15, "allow_unmeasured": false},
+    "grok": {"minimum_remaining_percent": 10, "allow_unmeasured": false},
+    "opencode": {"mode": "unmetered"},
+    "agy": {"allow_unmeasured": true},
+    "gemini": {"allow_unmeasured": true},
+    "github": {"mode": "unmetered"}
   },
   "subscription_strategy": {
     "principle": "Flat Max/Ultra/Heavy subscriptions are capacity pools. Consume them on bounded deliverables, not duplicated analysis or synthetic token burn.",
@@ -40,11 +61,12 @@
   },
   "routes": {
     "orchestration": {
-      "agent": "hermes",
-      "model": "grok-4.5",
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
       "budget_usd": 10,
       "max_turns": 10,
-      "why": "Queen judgment, owner assignment, conflict resolution, and concise delivery reporting"
+      "why": "Codex has healthy live quota; reserve exhausted Grok capacity while Queen keeps owner and conflict judgment"
     },
     "deep-backend": {
       "agent": "claude",
@@ -77,11 +99,11 @@
       "why": "Long-context repository mapping before focused implementation"
     },
     "research": {
-      "agent": "hermes",
-      "model": "grok-4.5",
+      "agent": "claude",
+      "model": "opus",
       "budget_usd": 15,
       "max_turns": 15,
-      "why": "Current web/X research and adversarial synthesis with citations"
+      "why": "Claude has healthy live quota for bounded synthesis; use Grok only after its weekly pool resets"
     },
     "low-stakes": {
       "agent": "codex",
@@ -108,18 +130,21 @@
       "why": "Deterministic issue, PR, CI, and repository operations"
     },
     "infra": {
-      "agent": "hermes",
-      "model": "grok-4.5",
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
       "budget_usd": 15,
       "max_turns": 15,
-      "why": "Queen plus domain skills for gated infrastructure operations"
+      "why": "Healthy Codex quota for gated deterministic infrastructure changes under Queen supervision"
     }
   },
   "fallbacks": {
-    "claude": ["codex", "hermes"],
-    "codex": ["claude", "hermes"],
+    "claude": ["opencode", "agy"],
+    "codex": ["claude", "opencode", "agy"],
     "gemini": ["claude", "codex"],
-    "opencode": ["codex"],
+    "opencode": ["claude", "codex"],
+    "agy": ["claude", "codex"],
+    "grok": ["claude", "codex"],
     "cursor": ["codex"],
     "github": ["hermes"],
     "hermes": ["codex"]

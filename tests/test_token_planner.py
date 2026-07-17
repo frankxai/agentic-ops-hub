@@ -93,6 +93,105 @@ class TokenPlannerTests(unittest.TestCase):
             self.assertIn("incomplete", text)
             self.assertIn("Human review required", text)
 
+    def test_campaign_requires_distinct_maker_and_verifier(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            manifest["missions"][1]["agent"] = "codex"
+            manifest["missions"][1]["quota_pool"] = "codex"
+            with self.assertRaisesRegex(PlannerError, "must differ"):
+                self.planner.validate_manifest(manifest)
+
+    def test_campaign_rejects_nonportable_receipt_path(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            manifest["missions"][0]["receipt"] = str(Path(tmp) / "receipt.json")
+            with self.assertRaisesRegex(PlannerError, "portable"):
+                self.planner.validate_manifest(manifest)
+
+    def test_campaign_rejects_prohibited_task_operation(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            manifest["missions"][0]["task"] = "Run git push origin main"
+            with self.assertRaisesRegex(PlannerError, "prohibited operation"):
+                self.planner.validate_manifest(manifest)
+
+    def test_quota_depletion_routes_to_healthy_fallback(self):
+        decision = self.planner.recommend(
+            "deep-backend",
+            usage={
+                "claude": {"remaining_percent": 2},
+                "opencode": {"remaining_percent": 100},
+            },
+        )
+        self.assertEqual(decision["agent"], "opencode")
+        self.assertEqual(decision["original_agent"], "claude")
+
+    def test_campaign_receipt_requires_schema_artifacts_and_verification_ids(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            manifest = self._campaign(tmp)
+            mission = manifest["missions"][0]
+            artifact = root / mission["required_artifacts"][0]
+            artifact.parent.mkdir(parents=True)
+            artifact.write_text("artifact", encoding="utf-8")
+            receipt = root / mission["receipt"]
+            receipt.parent.mkdir(parents=True)
+            receipt.write_text(json.dumps({
+                "schema_version": 1,
+                "mission_id": mission["id"],
+                "objective_id": mission["objective_id"],
+                "role": mission["role"],
+                "agent": mission["agent"],
+                "execution_status": "ok",
+                "outcome_status": "VERIFIED",
+                "status": "verified",
+                "branch": mission["branch"],
+                "commit": "abc1234",
+                "artifacts": mission["required_artifacts"],
+                "verification": [{
+                    "id": mission["verification_ids"][0],
+                    "command": "python -m unittest",
+                    "exit_code": 0,
+                    "status": "passed",
+                }],
+                "integration_state": "pr_open",
+                "completed_at": "2026-07-17T18:00:00+00:00",
+            }), encoding="utf-8")
+            state = self.planner.status(manifest)
+            self.assertEqual(state["missions"][0]["status"], "verified")
+            self.assertEqual(state["missions"][1]["status"], "missing-receipt")
+            self.assertEqual(self.planner.active_wave(manifest), 2)
+
+    def test_launcher_rejects_known_sandbox_bypass(self):
+        with self.assertRaisesRegex(PlannerError, "sandbox bypass"):
+            self.planner._assert_launch_safe(["codex", "--yolo"])
+
+    def _campaign(self, tmp: str):
+        maker = {
+            "id": "C1-M", "objective_id": "OBJ-1", "role": "maker", "wave": 1,
+            "agent": "codex", "quota_pool": "codex", "model": "gpt-5.6-terra",
+            "repo": tmp, "branch": "agent/hermes/test", "budget_usd": 20,
+            "max_turns": 20, "timeout_minutes": 60, "task": "Build safely",
+            "outcome": "working artifact", "report": "reports/maker.md",
+            "receipt": "receipts/maker.json", "required_artifacts": ["artifacts/output.txt"],
+            "verification_ids": ["unit"], "acceptance_commands": ["python -m unittest"],
+        }
+        verifier = {
+            **maker,
+            "id": "C1-V", "role": "verifier", "wave": 2,
+            "agent": "claude", "quota_pool": "claude", "model": "opus",
+            "budget_usd": 10, "report": "reports/verifier.md",
+            "receipt": "receipts/verifier.json", "required_artifacts": ["reports/verifier.md"],
+        }
+        return {
+            "version": 3, "date": "2026-07-17", "campaign_id": "campaign-test",
+            "mode": "campaign", "total_budget_usd": 30, "max_concurrency": 1,
+            "minimum_verified_outcomes": 1, "wave_budgets_usd": {"1": 20, "2": 10},
+            "stop_conditions": ["test failure"],
+            "objectives": [{"id": "OBJ-1", "success_metric": "artifact verified"}],
+            "missions": [maker, verifier],
+        }
+
     def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md", receipt="C:/reports/n1.json"):
         return {
             "id": "N1", "agent": agent,

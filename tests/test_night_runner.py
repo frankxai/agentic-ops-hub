@@ -20,13 +20,17 @@ class NightRunnerTests(unittest.TestCase):
             patch.object(runner, "memory_percent", return_value=50.0),
             patch.object(runner, "is_clean", return_value=True),
             patch.object(runner, "agent_health", return_value={"ready": True, "detail": "codex test"}),
+            patch.object(runner, "subscription_usage", return_value={
+                "codex": {"remaining_percent": 70},
+                "claude": {"remaining_percent": 70},
+            }),
         )
 
     def test_prepare_is_dry_run_and_writes_no_state(self):
         with tempfile.TemporaryDirectory() as tmp:
             runner = NightRunner(self.planner, state_dir=Path(tmp) / "state")
             mocks = self._safe_prepare_mocks(runner)
-            with mocks[0], mocks[1], mocks[2], mocks[3], mocks[4]:
+            with mocks[0], mocks[1], mocks[2], mocks[3], mocks[4], mocks[5]:
                 result = runner.prepare(self._manifest(tmp))
             self.assertTrue(result["ready"])
             self.assertFalse((Path(tmp) / "state").exists())
@@ -53,7 +57,14 @@ class NightRunnerTests(unittest.TestCase):
     def test_launch_records_bounded_exit_and_receipt_state(self):
         with tempfile.TemporaryDirectory() as tmp:
             runner = NightRunner(self.planner, state_dir=Path(tmp) / "state")
-            prepared = {"ready": True, "missions": [{"action": "would-launch"}]}
+            prepared = {
+                "ready": True,
+                "missions": [{
+                    "action": "would-launch",
+                    "agent": "codex",
+                    "argv": ["codex", "exec", "test"],
+                }],
+            }
             fake_result = type("R", (), {"returncode": 0})()
             with patch.object(runner, "prepare", return_value=prepared), \
                  patch.object(runner, "enforce_resources"), \
@@ -84,6 +95,49 @@ class NightRunnerTests(unittest.TestCase):
             health = runner.agent_health({"agent": "codex", "model": "gpt-5.6-terra", "repo": "C:/repo"})
         self.assertFalse(health["ready"])
         self.assertIn("not found", health["detail"])
+
+    def test_subscription_usage_accepts_list_root_and_strips_identity(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        payload = [{
+            "provider": "Claude",
+            "plan": "Max 20x",
+            "email": "private@example.com",
+            "metrics": [
+                {"label": "Session", "remaining_percent": 91},
+                {"label": "Weekly", "remaining_percent": 68},
+            ],
+        }]
+        result = type("R", (), {
+            "returncode": 0,
+            "stdout": json.dumps(payload),
+            "stderr": "",
+        })()
+        with patch("fleet.night_runner.shutil.which", return_value="C:/bin/tokscale"), \
+             patch("fleet.night_runner.subprocess.run", return_value=result):
+            usage = runner.subscription_usage()
+        self.assertEqual(usage["claude"]["remaining_percent"], 68)
+        self.assertNotIn("email", usage["claude"])
+
+    def test_route_mission_falls_back_when_preferred_quota_is_depleted(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        mission = self._manifest("C:/repo")["missions"][0]
+        with patch.object(
+            runner,
+            "agent_health",
+            return_value={"ready": True, "detail": "live"},
+        ):
+            routed, detail, _ = runner._route_mission(
+                mission,
+                {
+                    "codex": {"remaining_percent": 2},
+                    "claude": {"remaining_percent": 70},
+                },
+                set(),
+                {},
+            )
+        self.assertEqual(routed["agent"], "claude")
+        self.assertEqual(routed["routed_from"], "codex")
+        self.assertIn("70", detail)
 
     def _manifest(self, tmp: str):
         return {
