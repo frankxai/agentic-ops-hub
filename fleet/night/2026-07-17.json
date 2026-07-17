@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "date": "2026-07-17",
+  "mode": "night",
+  "operator": "C940 Starlight Queen",
+  "total_budget_usd": 110,
+  "safety": {
+    "human_merge_required": true,
+    "no_main_push": true,
+    "no_force_push": true,
+    "no_production_deploy": true,
+    "minimum_free_disk_gb": 40
+  },
+  "missions": [
+    {
+      "id": "N1",
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "original_agent": "claude",
+      "fallback_reason": "Claude OAuth expired (401)",
+      "repo": "C:/Users/frank/agentic-ops",
+      "branch": "night/2026-07-17-fleet-hygiene",
+      "budget_usd": 40,
+      "max_turns": 25,
+      "timeout_minutes": 90,
+      "job_class": "deep-backend",
+      "why": "Queen fallback after Claude preflight failed; bounded fleet hygiene and planner work",
+      "task": "Build and verify the Token Planner, fleet hygiene report, rclone remediation, and morning PR checklist. Commit only scoped files on the night branch.",
+      "report": "C:/Users/frank/agentic-ops/fleet/reports/night/2026-07-17-n1-agentic-ops.md"
+    },
+    {
+      "id": "N2",
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "repo": "C:/Users/frank/Starlight-Intelligence-System",
+      "branch": "night/2026-07-17-sis-verify",
+      "budget_usd": 30,
+      "max_turns": 20,
+      "timeout_minutes": 90,
+      "job_class": "refactor",
+      "why": "Mechanical health verification and low-risk local fixes",
+      "task": "Run SIS health and memory-provider tests. Fix only small failures. Preserve existing dirty work.",
+      "report": "C:/Users/frank/agentic-ops/fleet/reports/night/2026-07-17-n2-sis.md"
+    },
+    {
+      "id": "N3",
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "original_agent": "claude",
+      "fallback_reason": "Claude OAuth expired (401)",
+      "repo": "C:/Users/frank/agentic-creator-os",
+      "branch": "night/2026-07-17-acos-health",
+      "budget_usd": 25,
+      "max_turns": 20,
+      "timeout_minutes": 90,
+      "job_class": "deep-backend",
+      "why": "Codex fallback for cross-platform health checks under strict API compatibility",
+      "task": "Run ACOS health, typecheck, builds, catalog tests; fix low-risk cross-platform failures only.",
+      "report": "C:/Users/frank/agentic-ops/fleet/reports/night/2026-07-17-n3-acos.md"
+    },
+    {
+      "id": "N4",
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "repo": "C:/Users/frank/starlight-token-tracker",
+      "branch": "night/2026-07-17-tracker-planner",
+      "budget_usd": 15,
+      "max_turns": 10,
+      "timeout_minutes": 45,
+      "job_class": "refactor",
+      "why": "Small anomaly probe and planner/tracker cross-link",
+      "task": "Add and test anomaly_check.py and cross-link Token Planner from the tracker product documentation.",
+      "report": "C:/Users/frank/agentic-ops/fleet/reports/night/2026-07-17-n4-tracker.md"
+    }
+  ]
+}

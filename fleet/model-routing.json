@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "night_cap_usd": 110,
+  "defaults": {
+    "unattended": true,
+    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night"
+  },
+  "routes": {
+    "orchestration": {
+      "agent": "hermes",
+      "model": "grok-4.5",
+      "budget_usd": 10,
+      "max_turns": 10,
+      "why": "Queen judgment, coordination, and concise reporting"
+    },
+    "deep-backend": {
+      "agent": "claude",
+      "model": "sonnet",
+      "budget_usd": 40,
+      "max_turns": 25,
+      "why": "Deep multi-file backend reasoning and autonomous TDD loops"
+    },
+    "refactor": {
+      "agent": "codex",
+      "model": "default",
+      "budget_usd": 30,
+      "max_turns": 20,
+      "why": "Fast mechanical edits, local verification, and bounded batch fixes"
+    },
+    "long-context": {
+      "agent": "gemini",
+      "model": "gemini-3.5",
+      "budget_usd": 15,
+      "max_turns": 10,
+      "why": "Long-context repository mapping before focused implementation"
+    },
+    "low-stakes": {
+      "agent": "opencode",
+      "model": "free",
+      "budget_usd": 0,
+      "max_turns": 15,
+      "why": "High-volume low-risk work without paid metered spend"
+    },
+    "ui": {
+      "agent": "cursor",
+      "model": "interactive",
+      "budget_usd": 20,
+      "max_turns": 15,
+      "why": "Human-in-the-loop visual iteration on Yogabook"
+    },
+    "repo-ops": {
+      "agent": "github",
+      "model": "deterministic-cli",
+      "budget_usd": 2,
+      "max_turns": 5,
+      "why": "Deterministic issue, PR, CI, and repository operations"
+    },
+    "infra": {
+      "agent": "hermes",
+      "model": "grok-4.5",
+      "budget_usd": 15,
+      "max_turns": 15,
+      "why": "Queen plus domain skills for gated infrastructure operations"
+    }
+  },
+  "fallbacks": {
+    "claude": ["codex", "hermes"],
+    "codex": ["claude", "hermes"],
+    "gemini": ["claude", "codex"],
+    "opencode": ["codex"],
+    "cursor": ["codex"],
+    "github": ["hermes"],
+    "hermes": ["codex"]
+  }
+}
