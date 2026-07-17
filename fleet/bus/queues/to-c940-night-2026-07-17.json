@@ -104,6 +104,23 @@
         "fresh Codex log shows repo-scoped Terra/high workspace-write or read-only",
         "report exact branch/commit/check URLs"
       ]
+    },
+    {
+      "at": "2026-07-17T04:10:36+00:00",
+      "id": "N1-P1",
+      "status": "production-fix-required",
+      "issue": "https://github.com/frankxai/frankx.ai-vercel-website/issues/333",
+      "finding": "All 13 live /ask/[slug] pages are absent from public sitemap.xml; /ask and llms.txt are present.",
+      "done_when": [
+        "Fix route generator or app/sitemap.ts so all askQuestions detail URLs are present",
+        "Add regression assertion/test for all 13 current Ask URLs in sitemap output",
+        "Green CI/Vercel preview and post-deploy public sitemap proof"
+      ],
+      "constraints": [
+        "No #315 rollback without separate evidence",
+        "No generated public/reading churn in focused fix",
+        "Exact repo-scoped Terra/high workspace-write only; no danger-full-access"
+      ]
     }
   ]
 }
