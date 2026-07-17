@@ -13,7 +13,9 @@
   "active": [
     {
       "id": "BOOK-CLI-20260717",
-      "status": "queued",
+      "status": "claimed",
+      "claimed_at": "2026-07-17T14:01:53+00:00",
+      "claimed_by": "yoga-book/hermes-book",
       "owner_machine": "yoga-book",
       "primary_cli": "codex",
       "verifier_cli": "gemini-or-claude",

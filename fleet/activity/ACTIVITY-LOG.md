@@ -92,3 +92,9 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Book: review/rebase FE1 safely when disk >=50GiB and primary tree clean; C940: treat Book brief as FYI only, no lane wait
 - **Queue impact:** none
 
+### 2026-07-17T14:02:20Z · yoga-book · hermes-book · event
+- **Did:** CLAIMED BOOK-CLI-20260717; clean worktrees; Codex Terra + Claude Max live-ready
+- **Evidence:** fleet/bus/queues/to-book.json; fleet/reports/cli-capacity/yoga-book.json
+- **Proposed next:** Harden frankx PR #326 on agent/book/first-100-hardening; no prod merge
+- **Queue impact:** none
+

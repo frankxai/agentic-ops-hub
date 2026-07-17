@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-07-17T14:01:52.020638+00:00",
+  "machine_id": "yoga-book",
+  "hostname": "Starlight",
+  "live_requested": true,
+  "live_checked": true,
+  "resource_gate": {
+    "launch_allowed": true,
+    "blockers": [],
+    "disk_free_gb": 86.7,
+    "disk_floor_gb": 50,
+    "memory_percent": 80.0,
+    "memory_ceiling_percent": 85
+  },
+  "subscription_clis": {
+    "claude-max": {
+      "installed": true,
+      "version": "2.1.207 (Claude Code)",
+      "status": "ready",
+      "auth_declared": true,
+      "declared_detail": "logged-in",
+      "live_detail": "[{\"type\":\"system\",\"subtype\":\"init\",\"cwd\":\"C:\\\\Users\\\\frank\\\\starlight\\\\worktrees\\\\agentic-ops-hub-book-cli-20260717\",\"session_id\":\"4b962433-2c41-486d-b4f7-8eb37df7a197\",\"tools\":[\"Task\",\"Bash\",\"CronCreate\",\"CronDelete\",\"CronList\",\"DesignSync\",\"Edit\",\"EnterWorktree\",\"ExitWorktree\",\"Glob\",\"Grep\",\"Monit"
+    },
+    "openai-codex-max": {
+      "installed": true,
+      "version": "codex-cli 0.144.1",
+      "model": "gpt-5.6-terra",
+      "status": "ready",
+      "auth_declared": true,
+      "declared_detail": "Logged in using ChatGPT",
+      "live_detail": " fatal: Transport channel closed, when AuthRequired(AuthRequiredError { www_authenticate_header: \"Bearer realm=\\\"mcp\\\", resource_metadata=\\\"https://mcp.railway.com/.well-known/oauth-protected-resource\\\"\" })\nwarning: Exceeded skills context budget of 2%. All skill descriptions were removed and 211 ad"
+    },
+    "gemini-ultra": {
+      "installed": true,
+      "version": "0.43.0",
+      "model": "gemini-3.5",
+      "status": "auth-missing",
+      "auth_declared": false,
+      "auth_source": "none",
+      "declared_detail": "no Gemini OAuth credential source found",
+      "live_detail": "not run"
+    },
+    "opencode": {
+      "installed": true,
+      "version": "1.15.10",
+      "status": "auth-missing",
+      "auth_declared": false,
+      "declared_detail": "\u001b[90m\u250c\u001b[39m  Credentials \u001b[90m~\\.local\\share\\opencode\\auth.json\n\u001b[90m\u2502\u001b[39m\n\u001b[90m\u2514\u001b[39m  0 credentials\n\n\u001b[90m\u250c\u001b[39m  Environment\n\u001b[90m\u2502\u001b[39m\n\u001b[34m\u25cf\u001b[39m  v0 \u001b[90mV0_API_KEY\n\u001b[90m\u2502\u001b[39m\n\u001b[90m\u2514\u001b[39m  1 ",
+      "live_detail": "not run"
+    }
+  },
+  "ready_lanes": [
+    "claude-max",
+    "openai-codex-max"
+  ],
+  "launch_policy": "bounded-outcome-only",
+  "notes": [
+    "Flat subscriptions should be maximized by verified outcomes, not synthetic token burn.",
+    "Declared auth is never treated as ready without a one-turn live preflight.",
+    "Across machines, parallelize owners; on a 16GB node, run coding CLIs sequentially."
+  ]
+}

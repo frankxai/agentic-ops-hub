@@ -34,6 +34,10 @@ class CliCapacityTests(unittest.TestCase):
         self.assertTrue(gate["launch_allowed"])
         self.assertEqual([], gate["blockers"])
 
+    def test_claude_live_probe_accepts_json_result_list(self) -> None:
+        output = '[{"type":"result","subtype":"success","is_error":false,"result":"PONG"}]'
+        self.assertTrue(cli_capacity.claude_live_ok(0, output))
+
 
 if __name__ == "__main__":
     unittest.main()

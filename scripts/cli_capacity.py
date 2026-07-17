@@ -114,6 +114,26 @@ def _version(binary: str) -> tuple[bool, str]:
     return code == 0, line[:200]
 
 
+def claude_live_ok(exit_code: int, output: str) -> bool:
+    if exit_code != 0:
+        return False
+    try:
+        payload: Any = json.loads(output)
+    except json.JSONDecodeError:
+        try:
+            payload = json.loads(output.splitlines()[0])
+        except (json.JSONDecodeError, IndexError):
+            return "PONG" in output.upper()
+    if isinstance(payload, list):
+        payload = next(
+            (item for item in reversed(payload) if isinstance(item, dict) and item.get("type") == "result"),
+            payload[-1] if payload else None,
+        )
+    if not isinstance(payload, dict):
+        return False
+    return not payload.get("is_error") and "PONG" in str(payload.get("result", "")).upper()
+
+
 def _probe_claude(live: bool) -> dict[str, Any]:
     installed, version = _version("claude")
     auth_declared = False
@@ -144,11 +164,7 @@ def _probe_claude(live: bool) -> dict[str, Any]:
             timeout=90,
         )
         live_detail = output[:800]
-        try:
-            payload = json.loads(output.splitlines()[0])
-            live_ok = code == 0 and not payload.get("is_error") and "PONG" in str(payload.get("result", "")).upper()
-        except (json.JSONDecodeError, IndexError):
-            live_ok = code == 0 and "PONG" in output.upper()
+        live_ok = claude_live_ok(code, output)
     return {
         "installed": installed,
         "version": version,
