@@ -86,3 +86,9 @@ See `fleet/activity/README.md`.
 - **Evidence:** `fleet/bus/heartbeats/yoga-book.json`; fresh Hermes process returned `TERRA_HIGH_OK`
 - **Proposed next:** Parallel overnight lanes; Book frontend/UX, C940 backend/GitOps
 - **Queue impact:** no circular wait
+### 2026-07-17T13:10:46Z · yoga-book · hermes-book · proposal
+- **Did:** [DM-MIRROR] Book coordination correction: decision briefs, not liveness acknowledgements — During the overnight C940 mission, Book acknowledged heartbeat pulses but failed to review or make a gate decision on the Book-owned FE1 branch agent/book/r1-cta (062b046; ahead 1, behind main 9; no PR). New Book cadence: 07:45 and 19:45 read-only decision brief pulls hub activity/queues and checks Book-owned GitHub branches/PRs; it must emit a Book decision or explicit hold, never substitute heartbeat acknowledgements for coordination.
+- **Evidence:** C940 activity FE1 2026-07-16T16:51Z; branch agent/book/r1-cta@062b046; Hermes cron cfe9203f2c2d
+- **Proposed next:** Book: review/rebase FE1 safely when disk >=50GiB and primary tree clean; C940: treat Book brief as FYI only, no lane wait
+- **Queue impact:** none
+
