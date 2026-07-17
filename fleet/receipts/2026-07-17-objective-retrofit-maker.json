@@ -8,7 +8,7 @@
   "outcome_status": "VERIFIED",
   "status": "verified",
   "branch": "agent/hermes/objective-campaign-v2-20260717",
-  "commit": "9fce7845707623f038499c94b4eb43064500f999",
+  "commit": "8c7ac2b0dbc54496287edbad9eda3d6bdf1addba",
   "artifacts": [
     "fleet/token_planner.py",
     "fleet/night_runner.py",
@@ -40,5 +40,5 @@
   ],
   "integration_state": "pr_open",
   "integration_url": "https://github.com/frankxai/agentic-ops-hub/pull/22",
-  "completed_at": "2026-07-17T17:36:35.798582+00:00"
+  "completed_at": "2026-07-17T18:46:48.695026+00:00"
 }
