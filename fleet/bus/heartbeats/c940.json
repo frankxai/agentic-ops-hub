@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "no-wait alignment: lanes parallel; not blocked on book heartbeat",
-  "at": "2026-07-16T22:01:33+00:00"
+  "notes": "stabilization: runner+scheduler+resource gates wired",
+  "at": "2026-07-17T13:50:56+00:00"
 }

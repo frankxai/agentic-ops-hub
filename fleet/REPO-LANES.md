@@ -2,7 +2,7 @@
 
 **SoT:** this file + `fleet/clone-manifest.json` + `REPO-REGISTRY.md` + `docs/DEVICE-STRATEGY.md`  
 **Machine:** C940 = `@lenovostarlightbot` · Book = `@Hermesyogabookbot`  
-**Updated:** 2026-07-16  
+**Updated:** 2026-07-17
 
 Enhance-never-erase. Parallel lanes — no “you first” deadlock (`fleet/ALIGNMENT.md`).
 
@@ -35,7 +35,7 @@ Shared repos are allowed only with **lane splits** (content vs UI, backend vs fr
 
 | Repo / surface | Remote | Visibility | C940 | Book | Engineering |
 | --- | --- | --- | --- | --- | --- |
-| **agentic-ops** | `frankxai/agentic-ops-hub` | **Public** | **ops-lead** | ops-read | Fleet bus, ALIGNMENT, activity log, OPS-LEDGER, packets |
+| **agentic-ops (local control plane)** | origin → `frankxai/agentic-ops-hub` (**Public**) · sibling `frankxai/agentic-ops` (**Private**) | dual | **ops-lead** | ops-read | Fleet bus, ALIGNMENT, activity log, OPS-LEDGER, packets. Never publish secrets/private reports to the public hub. |
 | **claude-code-config** | `frankxai/claude-code-config` | (check) | **hooks-lead** | consume | Global agent harness / hooks |
 
 ---
@@ -99,7 +99,8 @@ Shared repos are allowed only with **lane splits** (content vs UI, backend vs fr
 | Kind | Examples | Rule |
 | --- | --- | --- |
 | **Private engineering** | FrankX, gencreator.ai, Arcanea app, Business | Secrets, unfinished product, BV — no public dumps |
-| **Public product/site** | frankx.ai-vercel-website, agentic-ops-hub, SIS, ACOS, library-os | Ship-ready docs/code; no secrets; register boundaries |
+| **Public product/site** | frankx.ai-vercel-website, SIS, ACOS, library-os | Ship-ready docs/code; no secrets; register boundaries |
+| **Private ops control plane** | agentic-ops / agentic-ops-hub mirrors | Fleet queues, activity, budgets — keep private; no secrets in Swarm posts |
 | **Public brand updates** | Live sites via Vercel | Only through **prod** repos + gates |
 | **Coordination** | OPS-LEDGER, fleet/activity, Swarm | Status OK public-ish; no secrets |
 

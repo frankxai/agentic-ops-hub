@@ -81,3 +81,9 @@ See `fleet/activity/README.md`.
 - **Proposed next:** use as SoT for work assignment
 - **Queue impact:** none
 
+### 2026-07-17T14:30:27Z · c940 · hermes-lenovo · event
+- **Did:** Stabilized C940: drained 163 orphan shells + rebuildable caches (disk ~70.6 GiB free, RAM ~78.5%); installed 6 fail-closed scheduled tasks; consolidated Hermes crons; hardened night runner (workspace-write, 0 cap, queue+resource gates); fixed heartbeat freshness; secret-scan fail-closed with private triage (raw Finding blocks history-aware; unique path/rule/line 341; SIS clean).
+- **Evidence:** tests 28 ok; install_c940_automation.ps1; private/api-monitor/SECRET-SCAN-TRIAGE-2026-07-17.md
+- **Proposed next:** Rotate high-priority leaked-shaped keys; push scoped agentic-ops + SIS automation commits; Book heartbeat still missing
+- **Queue impact:** to-c940 results already closed B1-B5; next is key rotation + one closure outcome
+

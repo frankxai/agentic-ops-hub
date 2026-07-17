@@ -1,36 +1,40 @@
 {
-  "version": 1,
-  "night_cap_usd": 110,
+  "version": 2,
+  "night_cap_usd": 40,
   "defaults": {
     "unattended": true,
-    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night"
+    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night",
+    "minimum_free_disk_gb": 50,
+    "maximum_ram_percent": 90,
+    "minimum_available_ram_gb": 2,
+    "max_concurrent_missions": 1
   },
   "routes": {
     "orchestration": {
       "agent": "hermes",
       "model": "grok-4.5",
-      "budget_usd": 10,
+      "budget_usd": 5,
       "max_turns": 10,
       "why": "Queen judgment, coordination, and concise reporting"
     },
     "deep-backend": {
       "agent": "claude",
       "model": "sonnet",
-      "budget_usd": 40,
+      "budget_usd": 20,
       "max_turns": 25,
       "why": "Deep multi-file backend reasoning and autonomous TDD loops"
     },
     "refactor": {
       "agent": "codex",
       "model": "default",
-      "budget_usd": 30,
+      "budget_usd": 20,
       "max_turns": 20,
       "why": "Fast mechanical edits, local verification, and bounded batch fixes"
     },
     "long-context": {
       "agent": "gemini",
       "model": "gemini-3.5",
-      "budget_usd": 15,
+      "budget_usd": 10,
       "max_turns": 10,
       "why": "Long-context repository mapping before focused implementation"
     },
@@ -44,9 +48,9 @@
     "ui": {
       "agent": "cursor",
       "model": "interactive",
-      "budget_usd": 20,
+      "budget_usd": 15,
       "max_turns": 15,
-      "why": "Human-in-the-loop visual iteration on Yogabook"
+      "why": "Human-in-the-loop visual iteration on Yoga Book"
     },
     "repo-ops": {
       "agent": "github",
@@ -58,7 +62,7 @@
     "infra": {
       "agent": "hermes",
       "model": "grok-4.5",
-      "budget_usd": 15,
+      "budget_usd": 10,
       "max_turns": 15,
       "why": "Queen plus domain skills for gated infrastructure operations"
     }

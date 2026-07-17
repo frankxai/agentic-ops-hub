@@ -21,6 +21,7 @@ LEGACY_BUS_ROOT = _OPS_ROOT / "bus"
 MACHINE_MAP = {
     "DESKTOP-1B4ICID": "c940",
 }
+HEARTBEAT_MAX_AGE_SECONDS = 8 * 60 * 60
 
 
 def _mirror_legacy(rel: Path, content: str) -> None:
@@ -35,6 +36,21 @@ def _mirror_legacy(rel: Path, content: str) -> None:
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def heartbeat_freshness(data: dict, now: datetime | None = None) -> tuple[bool, int | None]:
+    raw = data.get("at")
+    if not raw:
+        return False, None
+    try:
+        stamp = datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
+        if stamp.tzinfo is None:
+            stamp = stamp.replace(tzinfo=timezone.utc)
+        current = now or datetime.now(timezone.utc)
+        age_seconds = max(0, int((current - stamp.astimezone(timezone.utc)).total_seconds()))
+        return age_seconds <= HEARTBEAT_MAX_AGE_SECONDS, age_seconds // 60
+    except (TypeError, ValueError):
+        return False, None
 
 
 def detect_machine() -> str:
@@ -107,13 +123,17 @@ def cmd_status(_: argparse.Namespace) -> int:
         if (BUS_ROOT / "heartbeats").exists()
         else []
     )
-    out = {"self": mid, "heartbeats": [], "book_online": False}
+    out = {"self": mid, "heartbeats": [], "book_online": False, "book_state": "missing"}
     for p in beats:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
+            fresh, age_minutes = heartbeat_freshness(data)
+            data["fresh"] = fresh
+            data["age_minutes"] = age_minutes
             out["heartbeats"].append(data)
             if data.get("machine_id") in ("yoga-book", "yogabook") or p.name.startswith("yoga"):
-                out["book_online"] = True
+                out["book_online"] = fresh
+                out["book_state"] = "online" if fresh else "stale"
         except Exception as e:
             out["heartbeats"].append({"file": p.name, "error": str(e)})
     print(json.dumps(out, indent=2))
@@ -131,7 +151,14 @@ def cmd_swarm_line(_: argparse.Namespace) -> int:
         except Exception:
             pass
     book = BUS_ROOT / "heartbeats" / "yoga-book.json"
-    peer = "book=ONLINE" if book.exists() else "book=MISSING"
+    peer = "book=MISSING"
+    if book.exists():
+        try:
+            book_data = json.loads(book.read_text(encoding="utf-8"))
+            fresh, age_minutes = heartbeat_freshness(book_data)
+            peer = "book=ONLINE" if fresh else f"book=STALE({age_minutes if age_minutes is not None else '?'}m)"
+        except Exception:
+            peer = "book=INVALID"
     print(
         f"[{mid}] host={host} status={status} {peer} at={utc_now()} · bus=fleet/bus"
     )

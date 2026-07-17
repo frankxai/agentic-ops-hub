@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shlex
 from dataclasses import dataclass
 from pathlib import Path
@@ -57,7 +58,7 @@ class Planner:
             branch = str(mission.get("branch", ""))
             if not branch.startswith("night/"):
                 raise PlannerError(f"mission {mission_id} branch must start with night/")
-            for key in ("agent", "repo", "task", "report"):
+            for key in ("queue_item_id", "agent", "repo", "task", "report"):
                 if not mission.get(key):
                     raise PlannerError(f"mission {mission_id} missing {key}")
             budget = float(mission.get("budget_usd", 0))
@@ -75,7 +76,11 @@ class Planner:
     def command_for(self, mission: dict[str, Any]) -> str:
         task = (
             "HARD RULES: Current branch only. No main push. No force-push. "
-            "No git reset --hard. No secrets. Write the required report.\n\n"
+            "No git reset --hard. No secrets. Stay inside the assigned worktree. "
+            f"Work only queue item {mission['queue_item_id']} from origin/main. "
+            "Write the required report with Status: PASS|FAIL, Commit:, and Tests: receipt lines. "
+            f"Declared budget: ${float(mission['budget_usd']):g}; stop at the timeout because "
+            "Codex does not expose a hard dollar cap.\n\n"
             + str(mission["task"])
         )
         quoted = shlex.quote(task)
@@ -91,7 +96,9 @@ class Planner:
                 f"--max-turns {turns} --permission-mode acceptEdits --output-format json"
             )
         if agent == "codex":
-            return f"timeout {timeout}m codex exec --sandbox danger-full-access {quoted}"
+            model = str(mission.get("model", "default"))
+            model_flag = "" if model == "default" else f" --model {shlex.quote(model)}"
+            return f"timeout {timeout}m codex exec --sandbox workspace-write --ephemeral{model_flag} {quoted}"
         if agent == "opencode":
             return f"timeout {timeout}m opencode run {quoted}"
         if agent == "gemini":
@@ -101,12 +108,21 @@ class Planner:
     def status(self, manifest: dict[str, Any]) -> dict[str, Any]:
         rows = []
         complete = 0
+        unverified = 0
         for mission in manifest.get("missions", []):
             report = Path(mission["report"])
-            state = "complete" if report.is_file() and report.stat().st_size > 0 else "missing"
+            state = "missing"
+            if report.is_file() and report.stat().st_size > 0:
+                text = report.read_text(encoding="utf-8", errors="replace")
+                has_pass = bool(re.search(r"(?mi)^status:\s*pass\b", text))
+                has_commit = bool(re.search(r"(?mi)^commit:\s*(?:[0-9a-f]{7,40}|none\b)", text))
+                has_tests = bool(re.search(r"(?mi)^tests:\s*\S.+", text))
+                state = "complete" if has_pass and has_commit and has_tests else "unverified"
+                unverified += state == "unverified"
             complete += state == "complete"
             rows.append({"id": mission["id"], "agent": mission["agent"], "status": state, "report": str(report)})
-        return {"complete": complete, "missing": len(rows) - complete, "missions": rows}
+        missing = sum(row["status"] == "missing" for row in rows)
+        return {"complete": complete, "unverified": unverified, "missing": missing, "missions": rows}
 
     def debrief(self, manifest: dict[str, Any]) -> str:
         state = self.status(manifest)
@@ -114,7 +130,7 @@ class Planner:
             f"# Night debrief — {manifest.get('date', 'unknown')}",
             "",
             f"Budget envelope: ${float(manifest.get('total_budget_usd', 0)):g}",
-            f"Missions: {state['complete']} complete · {state['missing']} missing",
+            f"Missions: {state['complete']} complete · {state['unverified']} unverified · {state['missing']} missing",
             "",
             "| Mission | Agent | Status | Report |",
             "|---------|-------|--------|--------|",
