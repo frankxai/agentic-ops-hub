@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "mission_id": "retrofit-verifier",
+  "objective_id": "OBJ-FLEET-DELIVERY",
+  "role": "verifier",
+  "agent": "agy",
+  "execution_status": "error",
+  "outcome_status": "HOLD",
+  "status": "hold",
+  "branch": "agent/hermes/objective-campaign-v2-20260717",
+  "commit": "19873b33b8648c79f5476cd1aa6eae75b05ba745",
+  "artifacts": [
+    "fleet/reports/2026-07-17-objective-retrofit-verification.md"
+  ],
+  "verification": [],
+  "integration_state": "hold",
+  "completed_at": "2026-07-17T17:50:27.264314+00:00",
+  "recorded_by": "hermes-orchestrator",
+  "failure": {
+    "run_id": "20260717T173751Z",
+    "exit_code": 1,
+    "receipt_status": "missing-receipt",
+    "detail": "AGY timed out waiting for a response and produced no independent verification artifacts."
+  },
+  "fallback_attempts": [
+    {
+      "agent": "opencode",
+      "model": "v0/v0-1.5-md",
+      "status": "failed-smoke",
+      "detail": "Not Found"
+    },
+    {
+      "agent": "opencode",
+      "model": "v0/v0-1.0-md",
+      "status": "failed-smoke",
+      "detail": "Not Found"
+    }
+  ],
+  "deterministic_checks": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py' -v",
+      "exit_code": 0,
+      "detail": "39 tests passed"
+    },
+    {
+      "command": "python -m fleet.token_planner validate fleet/campaigns/2026-07-17-objective-retrofit.json",
+      "exit_code": 0,
+      "detail": "campaign valid"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "detail": "passed"
+    }
+  ]
+}
