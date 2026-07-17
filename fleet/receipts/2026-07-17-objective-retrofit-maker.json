@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "mission_id": "retrofit-maker",
+  "objective_id": "OBJ-FLEET-DELIVERY",
+  "role": "maker",
+  "agent": "codex",
+  "execution_status": "ok",
+  "outcome_status": "VERIFIED",
+  "status": "verified",
+  "branch": "agent/hermes/objective-campaign-v2-20260717",
+  "commit": "278167b00defb1c6ff786c29000df417abf07dd9",
+  "artifacts": [
+    "fleet/token_planner.py",
+    "fleet/night_runner.py",
+    "tests/test_token_planner.py",
+    "tests/test_night_runner.py",
+    "fleet/TOKEN-PLANNER.md",
+    "objectives-registry.json",
+    "fleet/reports/2026-07-17-six-hour-retrospective.md"
+  ],
+  "verification": [
+    {
+      "id": "full-unit-suite",
+      "command": "python -m unittest discover -s tests -p 'test_*.py' -v",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "id": "json-contracts",
+      "command": "python -m json.tool objectives-registry.json && python -m json.tool fleet/campaigns/2026-07-17-objective-retrofit.json",
+      "exit_code": 0,
+      "status": "passed"
+    },
+    {
+      "id": "campaign-admission",
+      "command": "python -m fleet.night_runner fleet/campaigns/2026-07-17-objective-retrofit.json",
+      "exit_code": 0,
+      "status": "passed"
+    }
+  ],
+  "integration_state": "pr_open",
+  "integration_url": "https://github.com/frankxai/agentic-ops-hub/pull/22",
+  "completed_at": "2026-07-17T16:58:41.261027+00:00"
+}
