@@ -114,16 +114,32 @@ def _version(binary: str) -> tuple[bool, str]:
     return code == 0, line[:200]
 
 
+def _json_payload_from_mixed_output(output: str) -> Any | None:
+    """Return the last complete JSON value without preserving surrounding CLI noise."""
+    try:
+        return json.loads(output)
+    except json.JSONDecodeError:
+        pass
+
+    decoder = json.JSONDecoder()
+    candidates: list[Any] = []
+    for index, character in enumerate(output):
+        if character not in "[{":
+            continue
+        try:
+            payload, _ = decoder.raw_decode(output[index:])
+        except json.JSONDecodeError:
+            continue
+        candidates.append(payload)
+    return candidates[-1] if candidates else None
+
+
 def claude_live_ok(exit_code: int, output: str) -> bool:
     if exit_code != 0:
         return False
-    try:
-        payload: Any = json.loads(output)
-    except json.JSONDecodeError:
-        try:
-            payload = json.loads(output.splitlines()[0])
-        except (json.JSONDecodeError, IndexError):
-            return "PONG" in output.upper()
+    payload = _json_payload_from_mixed_output(output)
+    if payload is None:
+        return output.strip().upper() == "PONG"
     if isinstance(payload, list):
         payload = next(
             (item for item in reversed(payload) if isinstance(item, dict) and item.get("type") == "result"),
@@ -132,6 +148,19 @@ def claude_live_ok(exit_code: int, output: str) -> bool:
     if not isinstance(payload, dict):
         return False
     return not payload.get("is_error") and "PONG" in str(payload.get("result", "")).upper()
+
+
+def structured_live_detail(
+    *, checked: bool, ok: bool, exit_code: int | None = None
+) -> dict[str, str]:
+    """Publish only probe disposition; never raw CLI/session/tool/auth output."""
+    if not checked:
+        return {"status": "not-run", "reason": "live-check-not-admitted"}
+    if ok:
+        return {"status": "verified", "reason": "pong-verified"}
+    if exit_code not in {None, 0}:
+        return {"status": "failed", "reason": f"probe-exit-{exit_code}"}
+    return {"status": "failed", "reason": "pong-not-verified"}
 
 
 def _probe_claude(live: bool) -> dict[str, Any]:
@@ -147,8 +176,9 @@ def _probe_claude(live: bool) -> dict[str, Any]:
         except json.JSONDecodeError:
             auth_declared = code == 0 and "logged" in output.lower()
     live_ok = False
-    live_detail = "not run"
-    if live and installed:
+    live_checked = live and installed
+    live_exit_code: int | None = None
+    if live_checked:
         code, output = run(
             [
                 "claude",
@@ -163,7 +193,7 @@ def _probe_claude(live: bool) -> dict[str, Any]:
             ],
             timeout=90,
         )
-        live_detail = output[:800]
+        live_exit_code = code
         live_ok = claude_live_ok(code, output)
     return {
         "installed": installed,
@@ -171,12 +201,14 @@ def _probe_claude(live: bool) -> dict[str, Any]:
         "status": classify_probe(
             installed=installed,
             auth_declared=auth_declared,
-            live_checked=live,
+            live_checked=live_checked,
             live_ok=live_ok,
         ),
         "auth_declared": auth_declared,
         "declared_detail": "logged-in" if auth_declared else declared_detail[:200],
-        "live_detail": live_detail[:300],
+        "live_detail": structured_live_detail(
+            checked=live_checked, ok=live_ok, exit_code=live_exit_code
+        ),
     }
 
 
@@ -189,8 +221,9 @@ def _probe_codex(live: bool, repo: str, model: str) -> dict[str, Any]:
         declared_detail = output[:300]
         auth_declared = code == 0 and "logged in" in output.lower()
     live_ok = False
-    live_detail = "not run"
-    if live and installed:
+    live_checked = live and installed
+    live_exit_code: int | None = None
+    if live_checked:
         code, output = run(
             [
                 "codex",
@@ -207,8 +240,8 @@ def _probe_codex(live: bool, repo: str, model: str) -> dict[str, Any]:
             ],
             timeout=120,
         )
+        live_exit_code = code
         live_ok = code == 0 and "PONG" in output.upper()
-        live_detail = output[-800:]
     return {
         "installed": installed,
         "version": version,
@@ -216,12 +249,14 @@ def _probe_codex(live: bool, repo: str, model: str) -> dict[str, Any]:
         "status": classify_probe(
             installed=installed,
             auth_declared=auth_declared,
-            live_checked=live,
+            live_checked=live_checked,
             live_ok=live_ok,
         ),
         "auth_declared": auth_declared,
         "declared_detail": declared_detail[:200],
-        "live_detail": live_detail[:300],
+        "live_detail": structured_live_detail(
+            checked=live_checked, ok=live_ok, exit_code=live_exit_code
+        ),
     }
 
 
@@ -234,15 +269,15 @@ def _probe_gemini(live: bool, model: str = "gemini-3.5") -> dict[str, Any]:
     metered_key_present = bool(os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY"))
     auth_declared = oauth_declared
     live_ok = False
-    live_detail = "not run"
+    live_exit_code: int | None = None
     live_checked = live and installed and auth_declared
     if live_checked:
         code, output = run(
             ["gemini", "-m", model, "-p", "Reply exactly PONG.", "--output-format", "json"],
             timeout=120,
         )
+        live_exit_code = code
         live_ok = code == 0 and "PONG" in output.upper()
-        live_detail = output[-500:]
     return {
         "installed": installed,
         "version": version,
@@ -262,7 +297,9 @@ def _probe_gemini(live: bool, model: str = "gemini-3.5") -> dict[str, Any]:
             if metered_key_present
             else "no Gemini OAuth credential source found"
         ),
-        "live_detail": live_detail[:300],
+        "live_detail": structured_live_detail(
+            checked=live_checked, ok=live_ok, exit_code=live_exit_code
+        ),
     }
 
 
@@ -276,12 +313,12 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
         lowered = output.lower()
         auth_declared = code == 0 and "0 credentials" not in lowered and "not logged" not in lowered
     live_ok = False
-    live_detail = "not run"
+    live_exit_code: int | None = None
     live_checked = live and installed and auth_declared
     if live_checked:
         code, output = run(live_command, timeout=120)
+        live_exit_code = code
         live_ok = code == 0 and "PONG" in output.upper()
-        live_detail = output[-500:]
     return {
         "installed": installed,
         "version": version,
@@ -293,7 +330,9 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
         ),
         "auth_declared": auth_declared,
         "declared_detail": declared_detail[:200],
-        "live_detail": live_detail[:300],
+        "live_detail": structured_live_detail(
+            checked=live_checked, ok=live_ok, exit_code=live_exit_code
+        ),
     }
 
 

@@ -1,9 +1,0 @@
-{
-  "machine_id": "yoga-book",
-  "hostname": "Starlight",
-  "status": "live",
-  "role": "frontend-innovation",
-  "telegram_bot": "@Hermesyogabookbot",
-  "notes": "BOOK-CLI-20260717 claimed; CLI-max wiring synced",
-  "at": "2026-07-17T13:57:04+00:00"
-}

@@ -38,6 +38,29 @@ class CliCapacityTests(unittest.TestCase):
         output = '[{"type":"result","subtype":"success","is_error":false,"result":"PONG"}]'
         self.assertTrue(cli_capacity.claude_live_ok(0, output))
 
+    def test_claude_live_probe_accepts_warning_before_json_result(self) -> None:
+        output = 'warning: plugin unavailable\n[{"type":"result","is_error":false,"result":"PONG"}]'
+        self.assertTrue(cli_capacity.claude_live_ok(0, output))
+
+    def test_claude_live_probe_rejects_unstructured_pong_noise(self) -> None:
+        self.assertFalse(cli_capacity.claude_live_ok(0, "warning: expected PONG but received nothing"))
+        self.assertFalse(cli_capacity.claude_live_ok(0, ""))
+        self.assertFalse(cli_capacity.claude_live_ok(1, '{"type":"result","result":"PONG"}'))
+
+    def test_live_detail_is_structured_and_never_carries_raw_output(self) -> None:
+        self.assertEqual(
+            {"status": "verified", "reason": "pong-verified"},
+            cli_capacity.structured_live_detail(checked=True, ok=True, exit_code=0),
+        )
+        self.assertEqual(
+            {"status": "failed", "reason": "probe-exit-7"},
+            cli_capacity.structured_live_detail(checked=True, ok=False, exit_code=7),
+        )
+        self.assertEqual(
+            {"status": "not-run", "reason": "live-check-not-admitted"},
+            cli_capacity.structured_live_detail(checked=False, ok=False),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
