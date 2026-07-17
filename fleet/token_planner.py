@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Starlight Token Planner: model assignment, hard manifest checks, and night UX."""
+"""Starlight Token Planner: outcome routing, manifest checks, and night UX."""
 from __future__ import annotations
 
 import argparse
@@ -49,6 +49,7 @@ class Planner:
             raise PlannerError("manifest requires at least one mission")
         ids: set[str] = set()
         total = 0.0
+        version = int(manifest.get("version", 1))
         for mission in missions:
             mission_id = str(mission.get("id", ""))
             if not mission_id or mission_id in ids:
@@ -60,6 +61,12 @@ class Planner:
             for key in ("agent", "repo", "task", "report"):
                 if not mission.get(key):
                     raise PlannerError(f"mission {mission_id} missing {key}")
+            if version >= 2:
+                if not mission.get("receipt"):
+                    raise PlannerError(f"mission {mission_id} missing receipt")
+                checks = mission.get("acceptance_commands")
+                if not isinstance(checks, list) or not checks:
+                    raise PlannerError(f"mission {mission_id} requires acceptance_commands")
             budget = float(mission.get("budget_usd", 0))
             if budget < 0:
                 raise PlannerError(f"mission {mission_id} budget cannot be negative")
@@ -72,40 +79,122 @@ class Planner:
             raise PlannerError(f"mission budgets ${total:g} exceed declared budget ${declared:g}")
         return {"valid": True, "mission_count": len(missions), "budget_usd": total, "cap_usd": cap}
 
-    def command_for(self, mission: dict[str, Any]) -> str:
-        task = (
-            "HARD RULES: Current branch only. No main push. No force-push. "
-            "No git reset --hard. No secrets. Write the required report.\n\n"
-            + str(mission["task"])
+    def _task_contract(self, mission: dict[str, Any]) -> str:
+        rules = (
+            "HARD RULES: Work only in the exact current branch/worktree. No main push. "
+            "No force-push. No git reset --hard. No secrets. Never widen sandbox or approvals."
         )
-        quoted = shlex.quote(task)
-        agent = mission["agent"]
-        timeout = int(mission.get("timeout_minutes", 60))
+        acceptance = mission.get("acceptance_commands") or []
+        receipt = mission.get("receipt")
+        contract = [rules, "", str(mission["task"])]
+        if acceptance:
+            contract += ["", "ACCEPTANCE COMMANDS (run and record exact exit codes):"]
+            contract += [f"- {command}" for command in acceptance]
+        if receipt:
+            contract += [
+                "",
+                f"Write machine-readable receipt JSON to: {receipt}",
+                "Receipt fields: mission_id, status=verified|delivered, branch, commit, "
+                "verification[{command,exit_code}], integration_state, completed_at.",
+                f"Also write the human report to: {mission['report']}",
+            ]
+        return "\n".join(contract)
+
+    def command_args(self, mission: dict[str, Any], *, sandbox: str = "workspace-write") -> list[str]:
+        task = self._task_contract(mission)
+        agent = str(mission["agent"])
         if agent == "claude":
-            model = shlex.quote(str(mission.get("model", "sonnet")))
-            budget = float(mission["budget_usd"])
-            budget_text = f"{budget:g}"
-            turns = int(mission["max_turns"])
-            return (
-                f"claude -p {quoted} --model {model} --max-budget-usd {budget_text} "
-                f"--max-turns {turns} --permission-mode acceptEdits --output-format json"
-            )
+            return [
+                "claude",
+                "-p",
+                task,
+                "--model",
+                str(mission.get("model", "sonnet")),
+                "--max-budget-usd",
+                f"{float(mission['budget_usd']):g}",
+                "--max-turns",
+                str(int(mission["max_turns"])),
+                "--permission-mode",
+                "acceptEdits",
+                "--output-format",
+                "json",
+            ]
         if agent == "codex":
-            return f"timeout {timeout}m codex exec --sandbox danger-full-access {quoted}"
+            return [
+                "codex",
+                "exec",
+                "-C",
+                str(mission["repo"]),
+                "--sandbox",
+                sandbox,
+                "-m",
+                str(mission.get("model", "gpt-5.6-terra")),
+                "-c",
+                f"model_reasoning_effort={mission.get('reasoning_effort', 'high')}",
+                task,
+            ]
         if agent == "opencode":
-            return f"timeout {timeout}m opencode run {quoted}"
+            return ["opencode", "run", task]
         if agent == "gemini":
-            return f"timeout {timeout}m gemini -p {quoted}"
+            return ["gemini", "-p", task]
         raise PlannerError(f"agent {agent!r} has no unattended launcher")
+
+    def command_for(self, mission: dict[str, Any]) -> str:
+        return shlex.join(self.command_args(mission))
+
+    def _receipt_state(self, mission: dict[str, Any]) -> tuple[str, str]:
+        receipt_value = mission.get("receipt")
+        if not receipt_value:
+            return "missing-receipt", "manifest has no receipt path"
+        receipt = Path(receipt_value)
+        if not receipt.is_file():
+            return "missing-receipt", str(receipt)
+        try:
+            payload = json.loads(receipt.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            return "invalid-receipt", str(exc)
+        if payload.get("mission_id") != mission.get("id"):
+            return "invalid-receipt", "mission_id mismatch"
+        if payload.get("branch") != mission.get("branch"):
+            return "invalid-receipt", "branch mismatch"
+        if payload.get("status") not in {"verified", "delivered"}:
+            return "unverified", "status is not verified/delivered"
+        if not payload.get("commit"):
+            return "unverified", "commit missing"
+        checks = payload.get("verification")
+        if not isinstance(checks, list) or not checks:
+            return "unverified", "verification missing"
+        if any(int(check.get("exit_code", 1)) != 0 for check in checks):
+            return "failed-verification", "acceptance command failed"
+        if payload.get("integration_state") not in {
+            "pr_open",
+            "merged",
+            "delivered",
+            "rejected",
+            "hold",
+        }:
+            return "unverified", "integration_state missing"
+        if not payload.get("completed_at"):
+            return "unverified", "completed_at missing"
+        return str(payload["status"]), "receipt accepted"
 
     def status(self, manifest: dict[str, Any]) -> dict[str, Any]:
         rows = []
         complete = 0
         for mission in manifest.get("missions", []):
-            report = Path(mission["report"])
-            state = "complete" if report.is_file() and report.stat().st_size > 0 else "missing"
-            complete += state == "complete"
-            rows.append({"id": mission["id"], "agent": mission["agent"], "status": state, "report": str(report)})
+            state, detail = self._receipt_state(mission)
+            is_complete = state in {"verified", "delivered"}
+            complete += int(is_complete)
+            rows.append(
+                {
+                    "id": mission["id"],
+                    "agent": mission["agent"],
+                    "status": state,
+                    "detail": detail,
+                    "report": str(mission["report"]),
+                    "receipt": str(mission.get("receipt", "")),
+                }
+            )
         return {"complete": complete, "missing": len(rows) - complete, "missions": rows}
 
     def debrief(self, manifest: dict[str, Any]) -> str:
@@ -114,13 +203,13 @@ class Planner:
             f"# Night debrief — {manifest.get('date', 'unknown')}",
             "",
             f"Budget envelope: ${float(manifest.get('total_budget_usd', 0)):g}",
-            f"Missions: {state['complete']} complete · {state['missing']} missing",
+            f"Missions: {state['complete']} verified/delivered · {state['missing']} incomplete",
             "",
-            "| Mission | Agent | Status | Report |",
-            "|---------|-------|--------|--------|",
+            "| Mission | Agent | Status | Receipt |",
+            "|---------|-------|--------|---------|",
         ]
         for row in state["missions"]:
-            lines.append(f"| {row['id']} | {row['agent']} | {row['status']} | `{row['report']}` |")
+            lines.append(f"| {row['id']} | {row['agent']} | {row['status']} | `{row['receipt']}` |")
         lines += [
             "",
             "**Human review required.** No unattended merge, main push, or production deploy.",

@@ -14,7 +14,7 @@ class TokenPlannerTests(unittest.TestCase):
     def test_recommends_claude_for_deep_backend_with_reason_and_budget(self):
         decision = self.planner.recommend("deep-backend", complexity=8, unattended=True)
         self.assertEqual(decision["agent"], "claude")
-        self.assertEqual(decision["model"], "sonnet")
+        self.assertEqual(decision["model"], "opus")
         self.assertEqual(decision["budget_usd"], 40)
         self.assertIn("multi-file", decision["why"].lower())
 
@@ -24,24 +24,16 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertEqual(decision["budget_usd"], 30)
 
     def test_rejects_manifest_over_night_cap(self):
-        manifest = {
-            "date": "2026-07-17",
-            "mode": "night",
-            "total_budget_usd": 111,
-            "missions": [],
-        }
+        manifest = {"date": "2026-07-17", "mode": "night", "total_budget_usd": 111, "missions": []}
         with self.assertRaisesRegex(PlannerError, "night cap"):
             self.planner.validate_manifest(manifest)
 
     def test_rejects_main_branch_and_missing_report(self):
         manifest = {
-            "date": "2026-07-17",
-            "mode": "night",
-            "total_budget_usd": 40,
+            "version": 2, "date": "2026-07-17", "mode": "night", "total_budget_usd": 40,
             "missions": [{
-                "id": "N1", "agent": "claude", "repo": "C:/repo",
-                "branch": "main", "budget_usd": 40, "max_turns": 20,
-                "task": "fix backend", "report": ""
+                "id": "N1", "agent": "claude", "repo": "C:/repo", "branch": "main",
+                "budget_usd": 40, "max_turns": 20, "task": "fix backend", "report": ""
             }],
         }
         with self.assertRaisesRegex(PlannerError, "night/"):
@@ -49,7 +41,7 @@ class TokenPlannerTests(unittest.TestCase):
 
     def test_rejects_mission_sum_above_declared_budget(self):
         manifest = {
-            "date": "2026-07-17", "mode": "night", "total_budget_usd": 30,
+            "version": 2, "date": "2026-07-17", "mode": "night", "total_budget_usd": 30,
             "missions": [self._mission(budget=40)],
         }
         with self.assertRaisesRegex(PlannerError, "mission budgets"):
@@ -62,43 +54,53 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertIn("--model sonnet", command)
         self.assertNotIn("push origin main", command)
 
-    def test_codex_command_uses_hermes_windows_safe_sandbox(self):
+    def test_codex_command_is_repo_scoped_without_sandbox_widening(self):
         command = self.planner.command_for(self._mission(agent="codex", budget=30))
-        self.assertIn("--sandbox danger-full-access", command)
-        self.assertIn("timeout", command.lower())
+        self.assertIn("--sandbox workspace-write", command)
+        self.assertIn("-C C:/repo", command)
+        self.assertNotIn("danger-full-access", command)
 
-    def test_status_marks_reports_complete_and_missing(self):
+    def test_status_requires_verified_receipt_not_only_report(self):
         with tempfile.TemporaryDirectory() as tmp:
             report = Path(tmp) / "n1.md"
-            m1 = self._mission(report=str(report))
-            m2 = self._mission(report=str(Path(tmp) / "n2.md"))
+            receipt = Path(tmp) / "n1.json"
+            m1 = self._mission(report=str(report), receipt=str(receipt))
+            m2 = self._mission(report=str(Path(tmp) / "n2.md"), receipt=str(Path(tmp) / "n2.json"))
             m2["id"] = "N2"
             report.write_text("# done", encoding="utf-8")
+            receipt.write_text(json.dumps({
+                "mission_id": "N1", "status": "verified", "branch": m1["branch"],
+                "commit": "abc1234",
+                "verification": [{"command": "python -m unittest", "exit_code": 0}],
+                "integration_state": "pr_open", "completed_at": "2026-07-17T13:00:00+00:00",
+            }), encoding="utf-8")
             status = self.planner.status({"missions": [m1, m2]})
             self.assertEqual(status["complete"], 1)
             self.assertEqual(status["missing"], 1)
-            self.assertEqual(status["missions"][0]["status"], "complete")
+            self.assertEqual(status["missions"][0]["status"], "verified")
 
-    def test_debrief_contains_budget_and_mission_status(self):
+    def test_debrief_contains_budget_and_incomplete_status(self):
         with tempfile.TemporaryDirectory() as tmp:
             report = Path(tmp) / "n1.md"
             report.write_text("# N1\n\nResult: PASS.\n", encoding="utf-8")
             manifest = {
                 "date": "2026-07-17", "total_budget_usd": 30,
-                "missions": [self._mission(report=str(report), budget=30)],
+                "missions": [self._mission(report=str(report), receipt=str(Path(tmp) / "n1.json"), budget=30)],
             }
             text = self.planner.debrief(manifest)
             self.assertIn("Budget envelope: $30", text)
             self.assertIn("N1", text)
-            self.assertIn("complete", text)
+            self.assertIn("incomplete", text)
             self.assertIn("Human review required", text)
 
-    def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md"):
+    def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md", receipt="C:/reports/n1.json"):
         return {
-            "id": "N1", "agent": agent, "model": "sonnet" if agent == "claude" else "default",
+            "id": "N1", "agent": agent,
+            "model": "sonnet" if agent == "claude" else "gpt-5.6-terra",
             "repo": "C:/repo", "branch": "night/2026-07-17-test",
             "budget_usd": budget, "max_turns": 20, "timeout_minutes": 60,
             "task": "Fix backend safely", "why": "fit", "report": report,
+            "receipt": receipt, "acceptance_commands": ["python -m unittest discover -v"],
         }
 
 

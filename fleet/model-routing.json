@@ -1,9 +1,42 @@
 {
-  "version": 1,
+  "version": 2,
+  "optimization_objective": "maximize_verified_outcomes_per_wall_clock_hour",
   "night_cap_usd": 110,
   "defaults": {
     "unattended": true,
-    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night"
+    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night",
+    "receipt_required": true,
+    "acceptance_commands_required": true,
+    "clean_dedicated_worktree_required": true,
+    "max_parallel_per_machine": 1,
+    "max_parallel_across_fleet": 2,
+    "disk_floor_gb": 50,
+    "memory_ceiling_percent": 85
+  },
+  "subscription_strategy": {
+    "principle": "Flat Max/Ultra/Heavy subscriptions are capacity pools. Consume them on bounded deliverables, not duplicated analysis or synthetic token burn.",
+    "openai-codex-max": {
+      "primary": "implementation, mechanical refactors, independent verification",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "machines": ["c940", "yoga-book"]
+    },
+    "anthropic-claude-max": {
+      "primary": "deep multi-file backend implementation and architecture review",
+      "model": "opus",
+      "fallback_model": "sonnet",
+      "machines": ["c940", "yoga-book"]
+    },
+    "gemini-ultra": {
+      "primary": "long-context repository mapping, research synthesis, visual review",
+      "model": "gemini-3.5",
+      "machines": ["yoga-book", "c940"]
+    },
+    "xai-heavy": {
+      "primary": "Hermes Queen orchestration, adversarial challenge, current web/X research, media",
+      "model": "grok-4.5",
+      "machines": ["c940", "yoga-book"]
+    }
   },
   "routes": {
     "orchestration": {
@@ -11,42 +44,61 @@
       "model": "grok-4.5",
       "budget_usd": 10,
       "max_turns": 10,
-      "why": "Queen judgment, coordination, and concise reporting"
+      "why": "Queen judgment, owner assignment, conflict resolution, and concise delivery reporting"
     },
     "deep-backend": {
       "agent": "claude",
-      "model": "sonnet",
+      "model": "opus",
       "budget_usd": 40,
-      "max_turns": 25,
-      "why": "Deep multi-file backend reasoning and autonomous TDD loops"
+      "max_turns": 30,
+      "why": "Deep multi-file backend reasoning and autonomous TDD loops on a single owned worktree"
     },
     "refactor": {
       "agent": "codex",
-      "model": "default",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
       "budget_usd": 30,
-      "max_turns": 20,
-      "why": "Fast mechanical edits, local verification, and bounded batch fixes"
+      "max_turns": 25,
+      "why": "Fast implementation, local verification, and bounded batch fixes"
+    },
+    "independent-review": {
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "budget_usd": 20,
+      "max_turns": 15,
+      "why": "Second-agent review against tests, diff, security, and integration contract"
     },
     "long-context": {
       "agent": "gemini",
       "model": "gemini-3.5",
       "budget_usd": 15,
-      "max_turns": 10,
+      "max_turns": 12,
       "why": "Long-context repository mapping before focused implementation"
     },
-    "low-stakes": {
-      "agent": "opencode",
-      "model": "free",
-      "budget_usd": 0,
+    "research": {
+      "agent": "hermes",
+      "model": "grok-4.5",
+      "budget_usd": 15,
       "max_turns": 15,
-      "why": "High-volume low-risk work without paid metered spend"
+      "why": "Current web/X research and adversarial synthesis with citations"
+    },
+    "low-stakes": {
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "medium",
+      "budget_usd": 10,
+      "max_turns": 10,
+      "why": "Use paid flat subscription capacity for useful small fixes; do not route to an unauthenticated free lane"
     },
     "ui": {
-      "agent": "cursor",
-      "model": "interactive",
-      "budget_usd": 20,
-      "max_turns": 15,
-      "why": "Human-in-the-loop visual iteration on Yogabook"
+      "agent": "codex",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "budget_usd": 30,
+      "max_turns": 25,
+      "machine": "yoga-book",
+      "why": "YogaBook-owned frontend implementation with local browser verification"
     },
     "repo-ops": {
       "agent": "github",
@@ -71,5 +123,11 @@
     "cursor": ["codex"],
     "github": ["hermes"],
     "hermes": ["codex"]
+  },
+  "completion_contract": {
+    "states": ["queued", "claimed", "artifact-produced", "tested", "integrated", "verified", "delivered"],
+    "done_requires": ["receipt", "commit", "zero-exit acceptance commands", "integration_state", "completed_at"],
+    "report_only_is_done": false,
+    "configured_cron_is_outcome": false
   }
 }
