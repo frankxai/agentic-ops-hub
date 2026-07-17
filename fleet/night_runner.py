@@ -249,9 +249,11 @@ class NightRunner:
         rows = []
         checked_agents: dict[tuple[str, str, str], dict[str, Any]] = {}
         usage = self.subscription_usage()
+        campaign_status = self.planner.status(manifest)
+        status_by_id = {row["id"]: row["status"] for row in campaign_status["missions"]}
         active_wave = self.planner.active_wave(manifest)
         for mission in manifest["missions"]:
-            state = self.planner.status({"missions": [mission]})["missions"][0]["status"]
+            state = status_by_id[mission["id"]]
             if state in {"verified", "delivered"}:
                 rows.append({
                     "id": mission["id"],
@@ -266,6 +268,15 @@ class NightRunner:
                     "agent": mission["agent"],
                     "action": "skip-terminal",
                     "receipt_status": state,
+                })
+                continue
+            dependency_state = self.planner.dependency_state(mission, status_by_id)
+            if dependency_state != "ready":
+                rows.append({
+                    "id": mission["id"],
+                    "agent": mission["agent"],
+                    "action": "blocked-upstream" if dependency_state == "blocked" else "queued-dependency",
+                    "dependencies": mission.get("depends_on", []),
                 })
                 continue
             if manifest.get("mode") == "campaign" and int(mission["wave"]) != active_wave:
@@ -286,12 +297,14 @@ class NightRunner:
                 raise RunnerError(f"mission {mission['id']} repo is dirty; use a clean dedicated worktree")
             excluded_agents: set[str] = set()
             if mission.get("role") == "verifier":
-                excluded_agents = {
-                    str(other["agent"])
-                    for other in manifest["missions"]
-                    if other.get("objective_id") == mission.get("objective_id")
-                    and other.get("role") == "maker"
-                }
+                for other in manifest["missions"]:
+                    if (
+                        other.get("objective_id") == mission.get("objective_id")
+                        and other.get("role") == "maker"
+                    ):
+                        excluded_agents.add(
+                            self.planner.recorded_agent(other) or str(other["agent"])
+                        )
             routed, quota_detail, health = self._route_mission(
                 mission, usage, excluded_agents, checked_agents
             )
@@ -343,7 +356,13 @@ class NightRunner:
         self._write_state(state_path, state)
 
         for mission, row in zip(manifest["missions"], prepared["missions"], strict=True):
-            if row["action"] in {"skip-verified", "skip-terminal", "queued-wave"}:
+            if row["action"] in {
+                "skip-verified",
+                "skip-terminal",
+                "queued-wave",
+                "queued-dependency",
+                "blocked-upstream",
+            }:
                 state["missions"].append(
                     {
                         "id": mission["id"],
@@ -376,7 +395,19 @@ class NightRunner:
             except subprocess.TimeoutExpired:
                 exit_code = 124
                 run_status = "timeout"
-            receipt_state = self.planner.status({"missions": [mission]})["missions"][0]
+            effective_mission = dict(mission)
+            effective_mission["agent"] = row["agent"]
+            effective_mission["quota_pool"] = row["agent"]
+            receipt_state = self.planner.status(
+                {"missions": [effective_mission]}
+            )["missions"][0]
+            recorded_agent = self.planner.recorded_agent(mission)
+            if recorded_agent and recorded_agent != row["agent"]:
+                receipt_state = {
+                    **receipt_state,
+                    "status": "invalid-receipt",
+                    "detail": "receipt agent does not match effective runtime route",
+                }
             if run_status == "exited" and receipt_state["status"] not in {"verified", "delivered"}:
                 run_status = "failed-unverified"
             state["missions"].append(

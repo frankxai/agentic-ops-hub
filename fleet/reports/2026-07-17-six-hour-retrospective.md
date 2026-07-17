@@ -237,6 +237,11 @@ Implemented on `agent/hermes/objective-campaign-v2-20260717`, based on current `
 - 50 GiB minimum disk gate;
 - role and quota-pool contracts;
 - complete estate objective registry;
-- 23 focused planner/runner tests passing before the full-suite gate.
+- canonical objective ID/repo/owner/outcome/metric enforcement;
+- Windows rooted, drive-relative, traversal, and resolved containment checks;
+- dependency-gated verifier waves that stop after failed or blocked makers;
+- effective fallback-agent exclusion for maker/verifier independence;
+- receipt commit reachability and exact acceptance-command binding;
+- focused planner/runner regression coverage before the full-suite gate.
 
 This file is evidence of the retrospective, not evidence that the retrofit is complete. Completion requires the test, dry-run, diff, and independent review receipts listed in the campaign manifest.

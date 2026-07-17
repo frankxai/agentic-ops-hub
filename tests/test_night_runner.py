@@ -139,6 +139,24 @@ class NightRunnerTests(unittest.TestCase):
         self.assertEqual(routed["routed_from"], "codex")
         self.assertIn("70", detail)
 
+    def test_verifier_route_excludes_effective_maker_agent(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        mission = self._manifest("C:/repo")["missions"][0]
+        mission.update({"agent": "claude", "quota_pool": "claude", "model": "opus"})
+        with patch.object(
+            runner,
+            "agent_health",
+            return_value={"ready": True, "detail": "live"},
+        ):
+            routed, _, _ = runner._route_mission(
+                mission,
+                {"claude": {"remaining_percent": 70}},
+                {"claude"},
+                {},
+            )
+        self.assertEqual(routed["agent"], "opencode")
+        self.assertNotEqual(routed["agent"], "claude")
+
     def _manifest(self, tmp: str):
         return {
             "version": 2, "date": "2026-07-17", "mode": "night", "total_budget_usd": 30,

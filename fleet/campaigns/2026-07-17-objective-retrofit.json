@@ -3,6 +3,8 @@
   "date": "2026-07-17",
   "campaign_id": "2026-07-17-objective-campaign-retrofit",
   "mode": "campaign",
+  "control_repo": "C:/Users/frank/starlight/worktrees/agentic-ops-hub-objective-campaign",
+  "objective_registry": "objectives-registry.json",
   "total_budget_usd": 30,
   "max_concurrency": 1,
   "minimum_verified_outcomes": 1,
@@ -22,7 +24,10 @@
     {
       "id": "OBJ-FLEET-DELIVERY",
       "source": "objectives-registry.json",
-      "success_metric": "A current-main campaign contract admits only objective-linked maker/verifier waves and accepts completion only from portable proof-bearing receipts."
+      "repo": "agentic-ops-hub",
+      "executive_owner": "CIO",
+      "outcome": "Repeatable governed agent delivery",
+      "success_metric": "A campaign produces objective-linked artifacts and passed verification receipts while respecting quota, branch, storage, and concurrency gates."
     }
   ],
   "missions": [
@@ -60,7 +65,7 @@
       "acceptance_commands": [
         "python -m unittest discover -s tests -p 'test_*.py' -v",
         "python -m json.tool objectives-registry.json && python -m json.tool fleet/campaigns/2026-07-17-objective-retrofit.json",
-        "python -m fleet.token_planner validate fleet/campaigns/2026-07-17-objective-retrofit.json"
+        "python -m fleet.night_runner fleet/campaigns/2026-07-17-objective-retrofit.json"
       ],
       "report": "fleet/reports/2026-07-17-six-hour-retrospective.md",
       "receipt": "fleet/receipts/2026-07-17-objective-retrofit-maker.json"
@@ -70,6 +75,9 @@
       "objective_id": "OBJ-FLEET-DELIVERY",
       "role": "verifier",
       "wave": 2,
+      "depends_on": [
+        "retrofit-maker"
+      ],
       "agent": "claude",
       "quota_pool": "claude",
       "model": "opus",

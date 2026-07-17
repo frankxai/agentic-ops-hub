@@ -62,12 +62,12 @@ Dollar values are **API-equivalent planner targets**, not the primary control fo
 
 ## 4. Campaign protocol
 
-1. Select at most three objectives from `objectives-registry.json`.
-2. Create a version-3 manifest in `fleet/campaigns/` with objective, role, quota pool, repo, branch, artifacts, verification IDs, wave budget, stop conditions, report, and portable repo-relative receipt.
+1. Select at most three objectives from `objectives-registry.json`; ID, repo, owner, outcome, and success metric must match the canonical entry exactly.
+2. Create a version-3 manifest in `fleet/campaigns/` with objective, role, quota pool, repo, branch, artifacts, verification IDs, exact acceptance commands, wave budget, stop conditions, report, and portable repo-relative receipt.
 3. Capture live quota; route depleted agents to a healthy configured fallback.
-4. Admit only one writer per repo and require a different verifier for consequential work.
-5. Launch only the lowest incomplete wave. Yogabook defaults to one writer; a later verifier wave uses a different agent.
-6. Count only receipts whose required artifacts exist and whose verification IDs passed.
+4. Admit only one writer per repo and require a different verifier for consequential work. Persist the maker's effective fallback agent and exclude it from verifier routing.
+5. Launch only the lowest dependency-ready wave. A verifier names every maker in `depends_on`, runs later, and cannot launch after a blocked or failed maker.
+6. Count only receipts whose required artifacts exist, commit is reachable from the expected branch, agent is an allowed/effective route, and verification IDs match the manifest's exact commands.
 7. Human-gated merge, deploy, spend, production, external send, and destructive actions remain held.
 
 ### Six-hour wave shape

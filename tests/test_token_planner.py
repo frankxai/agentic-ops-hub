@@ -1,4 +1,5 @@
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -108,6 +109,53 @@ class TokenPlannerTests(unittest.TestCase):
             with self.assertRaisesRegex(PlannerError, "portable"):
                 self.planner.validate_manifest(manifest)
 
+    def test_campaign_rejects_windows_rooted_and_drive_relative_paths(self):
+        for bad_path in (r"\outside\receipt.json", r"C:outside\receipt.json"):
+            with tempfile.TemporaryDirectory() as tmp:
+                manifest = self._campaign(tmp)
+                manifest["missions"][0]["receipt"] = bad_path
+                with self.assertRaisesRegex(PlannerError, "repo-relative"):
+                    self.planner.validate_manifest(manifest)
+
+    def test_campaign_rejects_objective_registry_mismatch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            manifest["objectives"][0]["success_metric"] = "invented metric"
+            with self.assertRaisesRegex(PlannerError, "canonical registry"):
+                self.planner.validate_manifest(manifest)
+
+    def test_campaign_rejects_same_wave_verifier(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            manifest["missions"][1]["wave"] = 1
+            manifest["wave_budgets_usd"]["1"] = 30
+            with self.assertRaisesRegex(PlannerError, "after maker wave"):
+                self.planner.validate_manifest(manifest)
+
+    def test_blocked_maker_never_advances_to_verifier_wave(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = self._campaign(tmp)
+            maker = manifest["missions"][0]
+            receipt = Path(tmp) / maker["receipt"]
+            receipt.parent.mkdir(parents=True)
+            receipt.write_text(json.dumps({
+                "schema_version": 1,
+                "mission_id": maker["id"],
+                "objective_id": maker["objective_id"],
+                "role": maker["role"],
+                "agent": maker["agent"],
+                "outcome_status": "BLOCKED",
+                "branch": maker["branch"],
+            }), encoding="utf-8")
+            status = self.planner.status(manifest)
+            self.assertEqual(status["missions"][0]["status"], "blocked")
+            status_by_id = {row["id"]: row["status"] for row in status["missions"]}
+            self.assertEqual(
+                self.planner.dependency_state(manifest["missions"][1], status_by_id),
+                "blocked",
+            )
+            self.assertIsNone(self.planner.active_wave(manifest))
+
     def test_campaign_rejects_prohibited_task_operation(self):
         with tempfile.TemporaryDirectory() as tmp:
             manifest = self._campaign(tmp)
@@ -134,6 +182,12 @@ class TokenPlannerTests(unittest.TestCase):
             artifact = root / mission["required_artifacts"][0]
             artifact.parent.mkdir(parents=True)
             artifact.write_text("artifact", encoding="utf-8")
+            commit = subprocess.run(
+                ["git", "-C", tmp, "rev-parse", "HEAD"],
+                capture_output=True,
+                text=True,
+                check=True,
+            ).stdout.strip()
             receipt = root / mission["receipt"]
             receipt.parent.mkdir(parents=True)
             receipt.write_text(json.dumps({
@@ -146,7 +200,7 @@ class TokenPlannerTests(unittest.TestCase):
                 "outcome_status": "VERIFIED",
                 "status": "verified",
                 "branch": mission["branch"],
-                "commit": "abc1234",
+                "commit": commit,
                 "artifacts": mission["required_artifacts"],
                 "verification": [{
                     "id": mission["verification_ids"][0],
@@ -161,12 +215,66 @@ class TokenPlannerTests(unittest.TestCase):
             self.assertEqual(state["missions"][0]["status"], "verified")
             self.assertEqual(state["missions"][1]["status"], "missing-receipt")
             self.assertEqual(self.planner.active_wave(manifest), 2)
+            payload = json.loads(receipt.read_text(encoding="utf-8"))
+            payload["verification"][0]["command"] = "true"
+            receipt.write_text(json.dumps(payload), encoding="utf-8")
+            self.assertEqual(
+                self.planner.status(manifest)["missions"][0]["status"],
+                "invalid-receipt",
+            )
+            payload["verification"][0]["command"] = mission["acceptance_commands"][0]
+            payload["agent"] = "gemini"
+            receipt.write_text(json.dumps(payload), encoding="utf-8")
+            self.assertEqual(
+                self.planner.status(manifest)["missions"][0]["status"],
+                "invalid-receipt",
+            )
+            payload["agent"] = mission["agent"]
+            payload["commit"] = "deadbeef"
+            receipt.write_text(json.dumps(payload), encoding="utf-8")
+            self.assertEqual(
+                self.planner.status(manifest)["missions"][0]["status"],
+                "invalid-receipt",
+            )
 
     def test_launcher_rejects_known_sandbox_bypass(self):
         with self.assertRaisesRegex(PlannerError, "sandbox bypass"):
             self.planner._assert_launch_safe(["codex", "--yolo"])
 
     def _campaign(self, tmp: str):
+        root = Path(tmp)
+        canonical_objective = {
+            "id": "OBJ-1",
+            "repo": "test-repo",
+            "executive_owner": "CTO",
+            "outcome": "working artifact",
+            "success_metric": "artifact verified",
+        }
+        (root / "objectives-registry.json").write_text(
+            json.dumps({"schema_version": 1, "objectives": [canonical_objective]}),
+            encoding="utf-8",
+        )
+        (root / "seed.txt").write_text("seed", encoding="utf-8")
+        subprocess.run(
+            ["git", "init", "-b", "agent/hermes/test"],
+            cwd=tmp,
+            capture_output=True,
+            check=True,
+        )
+        subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=tmp, check=True)
+        subprocess.run(["git", "config", "user.name", "Test"], cwd=tmp, check=True)
+        subprocess.run(
+            ["git", "remote", "add", "origin", "https://github.com/example/test-repo.git"],
+            cwd=tmp,
+            check=True,
+        )
+        subprocess.run(["git", "add", "seed.txt", "objectives-registry.json"], cwd=tmp, check=True)
+        subprocess.run(
+            ["git", "commit", "-m", "seed"],
+            cwd=tmp,
+            capture_output=True,
+            check=True,
+        )
         maker = {
             "id": "C1-M", "objective_id": "OBJ-1", "role": "maker", "wave": 1,
             "agent": "codex", "quota_pool": "codex", "model": "gpt-5.6-terra",
@@ -179,16 +287,19 @@ class TokenPlannerTests(unittest.TestCase):
         verifier = {
             **maker,
             "id": "C1-V", "role": "verifier", "wave": 2,
+            "depends_on": ["C1-M"],
             "agent": "claude", "quota_pool": "claude", "model": "opus",
             "budget_usd": 10, "report": "reports/verifier.md",
             "receipt": "receipts/verifier.json", "required_artifacts": ["reports/verifier.md"],
         }
         return {
             "version": 3, "date": "2026-07-17", "campaign_id": "campaign-test",
-            "mode": "campaign", "total_budget_usd": 30, "max_concurrency": 1,
+            "mode": "campaign", "control_repo": tmp,
+            "objective_registry": "objectives-registry.json",
+            "total_budget_usd": 30, "max_concurrency": 1,
             "minimum_verified_outcomes": 1, "wave_budgets_usd": {"1": 20, "2": 10},
             "stop_conditions": ["test failure"],
-            "objectives": [{"id": "OBJ-1", "success_metric": "artifact verified"}],
+            "objectives": [canonical_objective],
             "missions": [maker, verifier],
         }
 

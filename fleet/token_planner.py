@@ -6,8 +6,9 @@ import argparse
 import json
 import re
 import shlex
+import subprocess
 from dataclasses import dataclass
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 from typing import Any
 
 
@@ -32,14 +33,50 @@ _FORBIDDEN_LAUNCH_TOKENS = {
 
 
 def _repo_path(mission: dict[str, Any], value: str) -> Path:
+    if mission.get("objective_id"):
+        return _portable_repo_path(str(mission["repo"]), value, f"mission {mission['id']}")
     path = Path(value)
     return path if path.is_absolute() else Path(mission["repo"]) / path
 
 
-def _require_portable_path(mission_id: str, key: str, value: str) -> None:
-    path = Path(value)
-    if path.is_absolute() or ".." in path.parts:
-        raise PlannerError(f"mission {mission_id} {key} must be a repo-relative portable path")
+def _portable_repo_path(repo: str, value: str, owner: str) -> Path:
+    windows = PureWindowsPath(value)
+    posix = PurePosixPath(value)
+    if (
+        windows.anchor
+        or windows.root
+        or windows.drive
+        or posix.is_absolute()
+        or ".." in windows.parts
+        or ".." in posix.parts
+    ):
+        raise PlannerError(f"{owner} path must be repo-relative and portable: {value}")
+    root = Path(repo).resolve()
+    resolved = (root / Path(value)).resolve()
+    try:
+        resolved.relative_to(root)
+    except ValueError as exc:
+        raise PlannerError(f"{owner} path escapes repo: {value}") from exc
+    return resolved
+
+
+def _require_portable_path(mission: dict[str, Any], key: str, value: str) -> None:
+    _portable_repo_path(str(mission["repo"]), value, f"mission {mission['id']} {key}")
+
+
+def _git_repo_name(repo: str) -> str:
+    result = subprocess.run(
+        ["git", "-C", repo, "remote", "get-url", "origin"],
+        capture_output=True,
+        text=True,
+        timeout=15,
+        check=False,
+    )
+    if result.returncode:
+        raise PlannerError("campaign mission repo must have a readable origin")
+    origin = result.stdout.strip().replace("\\", "/").rstrip("/")
+    name = re.split(r"[/:]", origin)[-1]
+    return name[:-4] if name.endswith(".git") else name
 
 
 @dataclass
@@ -114,6 +151,22 @@ class Planner:
         if mode == "campaign":
             if not manifest.get("campaign_id"):
                 raise PlannerError("campaign manifest requires campaign_id")
+            control_repo = str(manifest.get("control_repo", ""))
+            registry_value = str(manifest.get("objective_registry", ""))
+            if not control_repo or not registry_value:
+                raise PlannerError("campaign manifest requires control_repo and objective_registry")
+            registry_path = _portable_repo_path(
+                control_repo, registry_value, "campaign objective_registry"
+            )
+            try:
+                registry_payload = json.loads(registry_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as exc:
+                raise PlannerError(f"cannot load objective registry: {exc}") from exc
+            registry_by_id = {
+                str(item.get("id")): item
+                for item in registry_payload.get("objectives", [])
+                if item.get("id")
+            }
             stop_conditions = manifest.get("stop_conditions")
             if not isinstance(stop_conditions, list) or not stop_conditions:
                 raise PlannerError("campaign manifest requires stop_conditions")
@@ -128,10 +181,18 @@ class Planner:
                     raise PlannerError("objective ids must be non-empty and unique")
                 if not objective.get("success_metric"):
                     raise PlannerError(f"objective {objective_id} missing success_metric")
+                canonical = registry_by_id.get(objective_id)
+                if not canonical:
+                    raise PlannerError(f"objective {objective_id} is not in the canonical registry")
+                for key in ("repo", "executive_owner", "outcome", "success_metric"):
+                    if objective.get(key) != canonical.get(key):
+                        raise PlannerError(
+                            f"objective {objective_id} {key} does not match the canonical registry"
+                        )
                 objective_ids.add(objective_id)
             max_concurrency = int(manifest.get("max_concurrency", 1))
-            if not 1 <= max_concurrency <= 3:
-                raise PlannerError("campaign max_concurrency must be between 1 and 3")
+            if max_concurrency != 1:
+                raise PlannerError("campaign max_concurrency must be 1 for the sequential runner")
         declared = float(manifest.get("total_budget_usd", 0))
         cap = float(self.config["night_cap_usd"])
         if declared > cap:
@@ -140,6 +201,7 @@ class Planner:
         if not isinstance(missions, list) or not missions:
             raise PlannerError("manifest requires at least one mission")
         ids: set[str] = set()
+        mission_by_id: dict[str, dict[str, Any]] = {}
         total = 0.0
         objective_roles: dict[str, dict[str, set[str]]] = {
             objective_id: {"maker": set(), "verifier": set()} for objective_id in objective_ids
@@ -151,6 +213,7 @@ class Planner:
             if not mission_id or mission_id in ids:
                 raise PlannerError("mission ids must be non-empty and unique")
             ids.add(mission_id)
+            mission_by_id[mission_id] = mission
             branch = str(mission.get("branch", ""))
             allowed_prefixes = ("night/",) if mode == "night" else ("night/", "agent/")
             if not branch.startswith(allowed_prefixes):
@@ -174,6 +237,11 @@ class Planner:
                 objective_id = str(mission.get("objective_id", ""))
                 if objective_id not in objective_ids:
                     raise PlannerError(f"mission {mission_id} has unknown objective_id")
+                canonical_repo = str(registry_by_id[objective_id]["repo"])
+                if _git_repo_name(str(mission["repo"])) != canonical_repo:
+                    raise PlannerError(
+                        f"mission {mission_id} repo does not match objective {objective_id}"
+                    )
                 for key in ("outcome", "receipt", "role", "quota_pool"):
                     if not mission.get(key):
                         raise PlannerError(f"mission {mission_id} missing {key}")
@@ -191,10 +259,14 @@ class Planner:
                     raise PlannerError(f"mission {mission_id} requires required_artifacts")
                 if not isinstance(verification_ids, list) or not verification_ids:
                     raise PlannerError(f"mission {mission_id} requires verification_ids")
-                _require_portable_path(mission_id, "report", str(mission["report"]))
-                _require_portable_path(mission_id, "receipt", str(mission["receipt"]))
+                if len(verification_ids) != len(checks) or len(set(verification_ids)) != len(verification_ids):
+                    raise PlannerError(
+                        f"mission {mission_id} verification_ids must uniquely map to acceptance_commands"
+                    )
+                _require_portable_path(mission, "report", str(mission["report"]))
+                _require_portable_path(mission, "receipt", str(mission["receipt"]))
                 for artifact in artifacts:
-                    _require_portable_path(mission_id, "required_artifact", str(artifact))
+                    _require_portable_path(mission, "required_artifact", str(artifact))
                 if role in {"maker", "verifier"}:
                     objective_roles[objective_id][role].add(str(mission["agent"]))
                 if role in {"maker", "integrator"}:
@@ -214,6 +286,30 @@ class Planner:
                 raise PlannerError(f"mission {mission_id} Claude requires max_turns")
             if int(mission.get("timeout_minutes", 60)) > 180:
                 raise PlannerError(f"mission {mission_id} timeout exceeds 180 minutes")
+        if mode == "campaign":
+            for mission in missions:
+                if mission.get("role") != "verifier":
+                    continue
+                mission_id = str(mission["id"])
+                maker_ids = {
+                    str(other["id"])
+                    for other in missions
+                    if other.get("objective_id") == mission.get("objective_id")
+                    and other.get("role") == "maker"
+                }
+                dependencies = mission.get("depends_on")
+                if not isinstance(dependencies, list) or set(dependencies) != maker_ids:
+                    raise PlannerError(
+                        f"mission {mission_id} depends_on must name every maker for its objective"
+                    )
+                for dependency_id in dependencies:
+                    dependency = mission_by_id.get(str(dependency_id))
+                    if not dependency or dependency.get("role") != "maker":
+                        raise PlannerError(f"mission {mission_id} has invalid maker dependency")
+                    if int(dependency["wave"]) >= int(mission["wave"]):
+                        raise PlannerError(
+                            f"mission {mission_id} verifier wave must be after maker wave"
+                        )
         if total > declared:
             raise PlannerError(f"mission budgets ${total:g} exceed declared budget ${declared:g}")
         if mode == "campaign":
@@ -338,6 +434,40 @@ class Planner:
     def command_for(self, mission: dict[str, Any]) -> str:
         return shlex.join(self.command_args(mission))
 
+    @staticmethod
+    def _commit_state(mission: dict[str, Any], commit: str) -> tuple[bool, str]:
+        repo = str(mission["repo"])
+        exists = subprocess.run(
+            ["git", "-C", repo, "cat-file", "-e", f"{commit}^{{commit}}"],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            check=False,
+        )
+        if exists.returncode:
+            return False, "commit does not exist in mission repo"
+        branch = str(mission["branch"])
+        for ref in (branch, f"origin/{branch}"):
+            resolved = subprocess.run(
+                ["git", "-C", repo, "rev-parse", "--verify", ref],
+                capture_output=True,
+                text=True,
+                timeout=15,
+                check=False,
+            )
+            if resolved.returncode:
+                continue
+            ancestor = subprocess.run(
+                ["git", "-C", repo, "merge-base", "--is-ancestor", commit, ref],
+                capture_output=True,
+                text=True,
+                timeout=15,
+                check=False,
+            )
+            if ancestor.returncode == 0:
+                return True, "commit is reachable from expected branch"
+        return False, "commit is not reachable from expected branch"
+
     def _receipt_state(self, mission: dict[str, Any]) -> tuple[str, str]:
         receipt_value = mission.get("receipt")
         if not receipt_value:
@@ -360,6 +490,13 @@ class Planner:
                 return "invalid-receipt", "objective_id mismatch"
             if payload.get("role") != mission.get("role"):
                 return "invalid-receipt", "role mismatch"
+            receipt_agent = str(payload.get("agent", ""))
+            allowed_agents = {
+                str(mission["agent"]),
+                *self.config.get("fallbacks", {}).get(str(mission["agent"]), []),
+            }
+            if receipt_agent not in allowed_agents:
+                return "invalid-receipt", "agent is not the declared route or an allowed fallback"
             outcome = str(payload.get("outcome_status", "FAILED")).upper()
             if outcome in {"HOLD", "BLOCKED", "FAILED"}:
                 return outcome.lower(), f"outcome_status={outcome}"
@@ -367,8 +504,13 @@ class Planner:
                 return "unverified", "execution or outcome status is not verified"
         if payload.get("status") not in {"verified", "delivered"}:
             return "unverified", "status is not verified/delivered"
-        if not payload.get("commit"):
+        commit = str(payload.get("commit", ""))
+        if not commit:
             return "unverified", "commit missing"
+        if mission.get("objective_id"):
+            commit_valid, commit_detail = self._commit_state(mission, commit)
+            if not commit_valid:
+                return "invalid-receipt", commit_detail
         checks = payload.get("verification")
         if not isinstance(checks, list) or not checks:
             return "unverified", "verification missing"
@@ -382,14 +524,21 @@ class Planner:
                 resolved = _repo_path(mission, str(artifact))
                 if not resolved.is_file() or resolved.stat().st_size == 0:
                     return "unverified", f"artifact missing: {artifact}"
-            passed_ids = {
-                str(check.get("id"))
-                for check in checks
-                if check.get("status") == "passed"
-                and int(check.get("exit_code", 1)) == 0
-                and check.get("command")
-            }
-            missing_ids = set(mission["verification_ids"]) - passed_ids
+            expected_checks = dict(
+                zip(mission["verification_ids"], mission["acceptance_commands"], strict=True)
+            )
+            recorded_checks: dict[str, str] = {}
+            for check in checks:
+                check_id = str(check.get("id", ""))
+                command = str(check.get("command", ""))
+                if check_id in recorded_checks:
+                    return "invalid-receipt", f"duplicate verification id: {check_id}"
+                if expected_checks.get(check_id) != command:
+                    return "invalid-receipt", f"verification command mismatch: {check_id}"
+                if check.get("status") != "passed" or int(check.get("exit_code", 1)) != 0:
+                    return "failed-verification", f"verification failed: {check_id}"
+                recorded_checks[check_id] = command
+            missing_ids = set(expected_checks) - set(recorded_checks)
             if missing_ids:
                 return "unverified", f"verification ids missing: {','.join(sorted(missing_ids))}"
         if payload.get("integration_state") not in {
@@ -403,6 +552,18 @@ class Planner:
         if not payload.get("completed_at"):
             return "unverified", "completed_at missing"
         return str(payload["status"]), "receipt accepted"
+
+    def recorded_agent(self, mission: dict[str, Any]) -> str | None:
+        receipt_value = mission.get("receipt")
+        if not receipt_value:
+            return None
+        receipt = _repo_path(mission, str(receipt_value))
+        try:
+            payload = json.loads(receipt.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return None
+        agent = payload.get("agent")
+        return str(agent) if agent else None
 
     def status(self, manifest: dict[str, Any]) -> dict[str, Any]:
         rows = []
@@ -455,21 +616,37 @@ class Planner:
         if manifest.get("mode") != "campaign":
             return None
         status_by_id = {row["id"]: row["status"] for row in self.status(manifest)["missions"]}
+        terminal = {
+            "verified",
+            "delivered",
+            "hold",
+            "blocked",
+            "failed",
+            "failed-verification",
+            "invalid-receipt",
+        }
         pending_waves = [
             int(mission["wave"])
             for mission in manifest["missions"]
-            if status_by_id[mission["id"]]
-            not in {
-                "verified",
-                "delivered",
-                "hold",
-                "blocked",
-                "failed",
-                "failed-verification",
-                "invalid-receipt",
-            }
+            if status_by_id[mission["id"]] not in terminal
+            and self.dependency_state(mission, status_by_id) == "ready"
         ]
         return min(pending_waves) if pending_waves else None
+
+    @staticmethod
+    def dependency_state(mission: dict[str, Any], status_by_id: dict[str, str]) -> str:
+        dependencies = mission.get("depends_on") or []
+        if not dependencies:
+            return "ready"
+        states = [status_by_id.get(str(dependency), "missing-receipt") for dependency in dependencies]
+        if all(state in {"verified", "delivered"} for state in states):
+            return "ready"
+        if any(
+            state in {"hold", "blocked", "failed", "failed-verification", "invalid-receipt"}
+            for state in states
+        ):
+            return "blocked"
+        return "waiting"
 
     def debrief(self, manifest: dict[str, Any]) -> str:
         state = self.status(manifest)
