@@ -20,7 +20,7 @@ CAL = ACT / "calendar"
 PROPOSALS = ACT / "proposals.jsonl"
 QUEUES = ROOT / "fleet" / "bus" / "queues"
 
-MACHINE_MAP = {"DESKTOP-1B4ICID": "c940"}
+MACHINE_MAP = {"DESKTOP-1B4ICID": "c940", "Starlight": "yoga-book"}
 
 
 def utc_now() -> datetime:

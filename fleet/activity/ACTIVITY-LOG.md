@@ -81,3 +81,8 @@ See `fleet/activity/README.md`.
 - **Proposed next:** use as SoT for work assignment
 - **Queue impact:** none
 
+### 2026-07-17T03:41:53+00:00 · yoga-book · hermes-book · event
+- **Did:** Restored canonical fleet heartbeat + Starlight machine mapping; observed real C940 LIVE; set new-chat policy to OpenAI Codex GPT-5.6 Terra at high reasoning
+- **Evidence:** `fleet/bus/heartbeats/yoga-book.json`; fresh Hermes process returned `TERRA_HIGH_OK`
+- **Proposed next:** Parallel overnight lanes; Book frontend/UX, C940 backend/GitOps
+- **Queue impact:** no circular wait
