@@ -61,6 +61,13 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertIn("-C C:/repo", command)
         self.assertNotIn("danger-full-access", command)
 
+    def test_agy_command_uses_mission_timeout_and_safe_repo_scope(self):
+        command = self.planner.command_for(self._mission(agent="agy", budget=10))
+        self.assertIn("--print-timeout 60m0s", command)
+        self.assertIn("WINDOWS PHONE LINK PATH BAN", command)
+        self.assertIn("exact repo leaf C:/repo", command)
+        self.assertIn("Do not clone", command)
+
     def test_status_requires_verified_receipt_not_only_report(self):
         with tempfile.TemporaryDirectory() as tmp:
             report = Path(tmp) / "n1.md"

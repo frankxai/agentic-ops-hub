@@ -349,7 +349,11 @@ class Planner:
     def _task_contract(self, mission: dict[str, Any]) -> str:
         rules = (
             "HARD RULES: Work only in the exact current branch/worktree. No main push. "
-            "No force-push. No git reset --hard. No secrets. Never widen sandbox or approvals."
+            "No force-push. No git reset --hard. No secrets. Never widen sandbox or approvals. "
+            "WINDOWS PHONE LINK PATH BAN: Never recursively search C:/, C:/Users/frank, home, ~, "
+            "Desktop, Documents, Downloads, OneDrive, This PC, or phone/MTP paths; search only the "
+            f"exact repo leaf {mission['repo']}. STORAGE GATE: Do not clone, add worktrees, bulk-install "
+            "dependencies, or generate media in this mission."
         )
         acceptance = mission.get("acceptance_commands") or []
         receipt = mission.get("receipt")
@@ -420,7 +424,14 @@ class Planner:
         if agent == "gemini":
             return self._assert_launch_safe(["gemini", "-p", task])
         if agent == "agy":
-            return self._assert_launch_safe(["agy", "-p", task])
+            timeout_minutes = int(mission.get("timeout_minutes", 60))
+            return self._assert_launch_safe([
+                "agy",
+                "--print-timeout",
+                f"{timeout_minutes}m0s",
+                "-p",
+                task,
+            ])
         raise PlannerError(f"agent {agent!r} has no unattended launcher")
 
     @staticmethod
