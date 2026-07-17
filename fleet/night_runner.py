@@ -195,11 +195,27 @@ class NightRunner:
         detail = (result.stdout or result.stderr).strip()[:1000]
         if agent == "claude":
             try:
-                payload = json.loads(result.stdout.splitlines()[0])
-            except (json.JSONDecodeError, IndexError):
+                decoded = json.loads(result.stdout)
+                if isinstance(decoded, dict):
+                    payload = decoded
+                elif isinstance(decoded, list):
+                    terminal_events = [
+                        item
+                        for item in decoded
+                        if isinstance(item, dict) and "is_error" in item and "result" in item
+                    ]
+                    payload = terminal_events[-1]
+                else:
+                    raise ValueError("unsupported Claude JSON response")
+            except (json.JSONDecodeError, IndexError, ValueError):
                 return {"ready": False, "detail": detail}
+            detail = str(payload.get("result", "Claude preflight returned no result"))[:500]
             if payload.get("is_error"):
-                return {"ready": False, "detail": str(payload.get("result", "Claude preflight failed"))}
+                return {"ready": False, "detail": detail}
+            return {
+                "ready": result.returncode == 0 and "PONG" in detail.upper(),
+                "detail": detail,
+            }
         ready = result.returncode == 0 and "PONG" in (result.stdout + result.stderr).upper()
         return {"ready": ready, "detail": detail}
 

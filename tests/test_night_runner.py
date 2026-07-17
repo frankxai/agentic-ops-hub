@@ -89,6 +89,24 @@ class NightRunnerTests(unittest.TestCase):
         self.assertFalse(health["ready"])
         self.assertIn("401", health["detail"])
 
+    def test_claude_health_accepts_event_list_without_leaking_metadata(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        response = [
+            {"type": "system", "session_id": "private-session"},
+            {"type": "result", "is_error": False, "result": "PONG", "session_id": "private-session"},
+        ]
+        succeeded = type("R", (), {
+            "returncode": 0,
+            "stdout": json.dumps(response),
+            "stderr": "",
+        })()
+        with patch("fleet.night_runner.subprocess.run", return_value=succeeded), \
+             patch("fleet.night_runner.shutil.which", return_value="C:/bin/claude"):
+            health = runner.agent_health({"agent": "claude", "model": "opus", "repo": "C:/repo"})
+        self.assertTrue(health["ready"])
+        self.assertEqual(health["detail"], "PONG")
+        self.assertNotIn("private-session", health["detail"])
+
     def test_codex_health_requires_installed_cli(self):
         runner = NightRunner(self.planner, state_dir=Path("state"))
         with patch("fleet.night_runner.shutil.which", return_value=None):
