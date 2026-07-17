@@ -1,0 +1,111 @@
+{
+  "schema_version": "starlight.fleet.receipt.v1",
+  "task_id": "BOOK-CLI-20260717",
+  "status": "completed",
+  "completed_at": "2026-07-17T14:34:19+00:00",
+  "machine": {
+    "machine_id": "yoga-book",
+    "hostname": "Starlight",
+    "role": "frontend-innovation"
+  },
+  "control_plane": {
+    "repository": "frankxai/agentic-ops-hub",
+    "baseline": "main@455b4e1",
+    "branch": "agent/book/cli-max-wiring",
+    "claim_commit": "ee95d5d02988affe2f8875b08c1752eaa2a7d50b",
+    "pull_request": "https://github.com/frankxai/agentic-ops-hub/pull/20",
+    "ci_at_receipt": "green"
+  },
+  "cli_capacity": {
+    "report": "fleet/reports/cli-capacity/yoga-book.json",
+    "resource_gate": "passed",
+    "ready_lanes": [
+      "claude-max",
+      "openai-codex-max"
+    ],
+    "blocked_lanes": {
+      "gemini-ultra": "auth-missing",
+      "opencode": "auth-missing"
+    },
+    "probe_regression_fixed": "Claude Code 2.1.207 JSON-list result parsing"
+  },
+  "execution": {
+    "primary_cli": {
+      "name": "codex",
+      "version": "0.144.1",
+      "model": "gpt-5.6-terra",
+      "reasoning_effort": "high",
+      "sandbox": "workspace-write",
+      "result": "source port and TDD scaffold produced; Windows sandbox child-process error required parent-run verification and one scoped parent fix"
+    },
+    "verifier_cli": {
+      "name": "claude",
+      "version": "2.1.207",
+      "model": "sonnet",
+      "result": "PASS",
+      "residual_risk": "STRIPE_PRICE_ACOS_EUR_99 must resolve to an active EUR 99.00 Stripe price; route fails closed with 503 on drift"
+    }
+  },
+  "product": {
+    "repository": "frankxai/frankx.ai-vercel-website",
+    "source_pull_request": "https://github.com/frankxai/frankx.ai-vercel-website/pull/326",
+    "branch": "agent/book/first-100-hardening",
+    "commit": "60808f3adc8b6f6edd0500533ff694b24ee9724e",
+    "pull_request": "https://github.com/frankxai/frankx.ai-vercel-website/pull/334",
+    "pull_request_state_at_receipt": "draft; CI and Vercel preview pending",
+    "route": "/challenge",
+    "changed_files": [
+      "app/api/checkout/route.ts",
+      "app/challenge/ChallengeExperience.tsx",
+      "app/challenge/page.tsx",
+      "data/challenges/first-100-weekend.json",
+      "scripts/tests/first-100-weekend-contract.test.mjs"
+    ],
+    "hardening": [
+      "EUR 99.00 Stripe price is verified active before session creation",
+      "checkout fails closed when secret, price ID, currency, amount, or active state is invalid",
+      "delivery productSlug metadata is emitted exactly once on the session and once on the payment intent",
+      "mobile CTAs fit the viewport and expose async errors through an aria-live status region",
+      "public ledger starts at truthful zero and requires timestamped completion proof plus postmortem"
+    ]
+  },
+  "verification": [
+    {
+      "check": "node --test scripts/tests/first-100-weekend-contract.test.mjs",
+      "result": "pass: 2/2"
+    },
+    {
+      "check": "tsc --noEmit",
+      "result": "pass"
+    },
+    {
+      "check": "focused ESLint on checkout and challenge route",
+      "result": "pass"
+    },
+    {
+      "check": "Next.js 16.2.6 production build",
+      "result": "pass; 1121 static pages; /challenge route present"
+    },
+    {
+      "check": "Puppeteer mobile 390x844",
+      "result": "pass: scrollWidth=viewport=390; h1 within [24,366]; CTA within [24,366]; keyboard reachable; fail-closed status announced"
+    },
+    {
+      "check": "Claude Max independent complete-file verification",
+      "result": "PASS; no blockers"
+    },
+    {
+      "check": "secret scan at product commit",
+      "result": "pass: no leaks"
+    }
+  ],
+  "evidence": {
+    "mobile_screenshot_local": "C:/Users/frank/starlight/queen/reports/evidence/book-cli-20260717-challenge-mobile.png",
+    "local_checkout_status": "Payment system is being configured. Please try again soon.",
+    "local_console_notes": "Expected local-only Auth/Vercel telemetry configuration errors plus deliberate checkout 503; no challenge page exception",
+    "production_deploy_performed": false,
+    "merge_performed": false,
+    "force_push_performed": false,
+    "paid_checkout_performed": false
+  }
+}

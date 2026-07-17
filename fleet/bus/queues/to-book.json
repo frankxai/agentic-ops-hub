@@ -13,9 +13,13 @@
   "active": [
     {
       "id": "BOOK-CLI-20260717",
-      "status": "claimed",
+      "status": "completed",
       "claimed_at": "2026-07-17T14:01:53+00:00",
       "claimed_by": "yoga-book/hermes-book",
+      "completed_at": "2026-07-17T14:34:19+00:00",
+      "receipt": "fleet/receipts/BOOK-CLI-20260717.json",
+      "product_commit": "60808f3adc8b6f6edd0500533ff694b24ee9724e",
+      "product_pr": "https://github.com/frankxai/frankx.ai-vercel-website/pull/334",
       "owner_machine": "yoga-book",
       "primary_cli": "codex",
       "verifier_cli": "gemini-or-claude",

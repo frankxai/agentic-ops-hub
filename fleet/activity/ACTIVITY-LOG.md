@@ -98,3 +98,9 @@ See `fleet/activity/README.md`.
 - **Proposed next:** Harden frankx PR #326 on agent/book/first-100-hardening; no prod merge
 - **Queue impact:** none
 
+### 2026-07-17T14:35:21Z · yoga-book · hermes-book · event
+- **Did:** COMPLETED BOOK-CLI-20260717; product commit 60808f3ad; draft PR #334; Claude verifier PASS
+- **Evidence:** fleet/receipts/BOOK-CLI-20260717.json; https://github.com/frankxai/frankx.ai-vercel-website/pull/334
+- **Proposed next:** Wait for product CI/preview; no merge or production deploy from this mission
+- **Queue impact:** none
+
