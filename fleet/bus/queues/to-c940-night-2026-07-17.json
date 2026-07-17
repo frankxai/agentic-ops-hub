@@ -72,5 +72,14 @@
     "check names/statuses",
     "fresh model log line",
     "updated c940 heartbeat timestamp"
+  ],
+  "updates": [
+    {
+      "at": "2026-07-17T03:54:28+00:00",
+      "id": "N2",
+      "status": "completed-by-yoga-book",
+      "evidence": "https://github.com/frankxai/arcanea-ai-app/pull/188",
+      "note": "Rebased, full CI green, merged 2026-07-17T03:54:03Z. C940 must not duplicate."
+    }
   ]
 }
