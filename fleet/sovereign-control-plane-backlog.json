@@ -24,12 +24,14 @@
       "priority": "P0",
       "status": "ready_after_clean_worktree",
       "owner_repo": "starlight-memory",
-      "title": "Define the provider-neutral SISAITraceEnvelope contract",
-      "why": "Provides one immutable correlation and policy shape across direct providers, optional gateways, agent runs, tool calls, and evaluations.",
+      "title": "Define the provider-neutral ControlPlaneTraceEnvelope and pure builder",
+      "why": "Provides one immutable correlation and policy shape across direct providers, optional gateways, agent runs, tool calls, and evaluations without introducing a runtime dependency.",
       "dependencies": ["Clean dedicated worktree based on the intended starlight-memory commit"],
       "acceptance": [
         "Types compile.",
+        "A pure buildMemoryAddTrace(record, policy, context) uses existing routeMemoryRecord and estimateProviderResourcePlan primitives.",
         "Tests first prove parent-child spans, unknown cost, privacy classes, prompt references, and provider shadow references.",
+        "Serialized output contains no raw memory content, prompt text, tokens, secrets, or absolute filesystem paths.",
         "No runtime dependency is added."
       ],
       "risk": "Do not let a generic trace schema become a second policy system; reference existing SIS privacy and provenance types."

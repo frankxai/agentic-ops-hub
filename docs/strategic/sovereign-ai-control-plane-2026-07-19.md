@@ -123,7 +123,9 @@ versions + cases    regression + drift    cost/capacity + outcome routing
 
 ## The first vertical slice: trace → evaluation case
 
-The first implementation is deliberately narrow. It closes the highest-value gap—unified observability connected to quality—without building an agent platform, RAG product, or SaaS dashboard.
+The first implementation is deliberately narrow. It closes the highest-value gap—**a privacy-safe policy-decision receipt**—before attaching the existing SIS memory gateway or building a dashboard.
+
+The first code change belongs in `starlight-memory`: a pure `buildMemoryAddTrace(record, policy, context)` function that invokes the existing `routeMemoryRecord()` and `estimateProviderResourcePlan()` primitives. The following SIS gateway attachment is only permitted after this contract is independently tested and reviewed.
 
 ### Input
 
@@ -131,10 +133,10 @@ A gateway/client wrapper receives a model call or tool step.
 
 ### Canonical receipt
 
-It writes a policy-sanitized `SISAITraceEnvelope` locally:
+It writes a policy-sanitized `ControlPlaneTraceEnvelope` locally:
 
 ```ts
-interface SISAITraceEnvelope {
+interface ControlPlaneTraceEnvelope {
   trace_id: string;
   span_id: string;
   parent_span_id?: string;
