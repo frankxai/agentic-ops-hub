@@ -137,15 +137,21 @@ It writes a policy-sanitized `ControlPlaneTraceEnvelope` locally:
 
 ```ts
 interface ControlPlaneTraceEnvelope {
+  schema_version: "1";
+  event_id: string;
   trace_id: string;
   span_id: string;
   parent_span_id?: string;
   occurred_at: string;
 
   tenant_id: string;
+  project_id?: string;
   workspace_id?: string;
   agent_id?: string;
   run_id?: string;
+  thread_id?: string;
+  session_id?: string;
+  idempotency_key?: string;
 
   operation: "model" | "tool" | "retrieval" | "evaluation" | "approval";
   status: "started" | "succeeded" | "failed" | "blocked";
@@ -176,6 +182,11 @@ interface ControlPlaneTraceEnvelope {
 }
 ```
 
+`trace_id`, `span_id`, and `parent_span_id` use the OpenTelemetry/W3C Trace Context
+wire shapes so a policy-safe projection can be exported without identifier translation.
+`event_id` makes start and terminal writes independently durable and idempotent. `thread_id`
+groups turns; `session_id` groups threads. These fields are Starlight values, not vendor IDs.
+
 ### Feedback loop
 
 1. A human correction, failed call, policy block, latency breach, or evaluator failure attaches to the trace.
@@ -201,17 +212,18 @@ interface ControlPlaneTraceEnvelope {
 
 | ID | Outcome | Owner repo | Done when |
 |---|---|---|---|
-| SCP-001 | `SISAITraceEnvelope` and policy result types | `starlight-memory` / SIS | Types compile; fixtures cover parent-child spans, cost unknown, privacy classes, and provider shadow references. |
+| SCP-001 | `SISAITraceEnvelope` and policy result types | `starlight-memory` / SIS | Types compile; fixtures cover W3C-compatible parent-child correlation, terminal-write idempotency, cost unknown, privacy classes, and provider shadow references. |
 | SCP-002 | Local append-only trace writer plus bounded SQLite index | SIS | A trace survives provider failure; trace lookup by `trace_id` works; no heavy per-agent process. |
 | SCP-003 | Privacy/export gate | `starlight-memory` / SIS | `secret` is local-only; `regulated` defaults local-only; redacted private trace export has an explicit receipt. |
-| SCP-004 | Trace-to-evaluation candidate selector | SIS + Starlight Evals | Failure/feedback generates an evaluable candidate with provenance; no automatic promotion. |
-| SCP-005 | Prompt/test reference bridge | Prompt Engine | A trace can point to an immutable prompt version and an accepted case can link back to the trace receipt. |
+| SCP-004 | Trace-to-evaluation candidate selector and typed review | SIS + Starlight Evals | Failure/feedback generates an evaluable candidate with provenance; review schemas validate labels/corrections; no automatic promotion. |
+| SCP-005 | Prompt/test reference bridge | Prompt Engine | A trace can point to an immutable prompt version and evaluator version; an accepted case can link back to the trace receipt. |
+| SCP-007 | Retention, deletion, and export receipt lifecycle | SIS / `starlight-memory` | Retention expiry, deletion/tombstone, and every approved export leave replayable local receipts; derived mirrors receive the same lifecycle intent. |
 
 ### P1 — policy-aware gateway and operational views
 
 | ID | Outcome | Owner repo | Done when |
 |---|---|---|---|
-| SCP-101 | Provider-neutral gateway adapter contract | SIS / product runtime | Direct providers and an optional Orq/OpenTelemetry adapter share the same trace and policy shape. |
+| SCP-101 | Provider-neutral gateway adapter contract | SIS / product runtime | Direct providers and an optional Orq/OpenTelemetry adapter share the same trace and policy shape; retries and fallbacks are idempotency-, error-, and budget-gated. |
 | SCP-102 | Route policy: model capability, privacy, retry, budget, fallback | Agentic Ops + SIS | A decision is explainable and recorded before dispatch; planner capacity is an input, not overridden. |
 | SCP-103 | Compact local control view | Agentic Ops / cockpit | Displays live trace health, policy blocks, cost/capacity, evaluation backlog, and receipt freshness—not raw private prompts. |
 | SCP-104 | Evaluation promotion gate | Starlight Evals | Candidate → evaluated → accepted/rejected state is enforceable and appears in a dated scorecard. |

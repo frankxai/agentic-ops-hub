@@ -1,7 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "Sovereign AI Control Plane Backlog",
   "created_at": "2026-07-19T05:10:27+02:00",
+  "updated_at": "2026-07-19T07:07:11+02:00",
   "authority": {
     "memory_policy_provenance": "SIS and starlight-memory",
     "agent_work_receipts": "agentic-ops and SIS",
@@ -11,6 +12,7 @@
   },
   "invariants": [
     "Starlight creates the trace_id before provider dispatch.",
+    "Trace/span correlation uses Starlight-owned OpenTelemetry/W3C-compatible identifiers; vendor identifiers remain shadow references.",
     "Secret records never leave local authority.",
     "Regulated records require an explicit external-mirror policy.",
     "A provider trace ID is a shadow reference, not the canonical receipt.",
@@ -24,17 +26,19 @@
       "priority": "P0",
       "status": "ready_after_clean_worktree",
       "owner_repo": "starlight-memory",
-      "title": "Define the provider-neutral ControlPlaneTraceEnvelope and pure builder",
+      "title": "Define the provider-neutral, OpenTelemetry-compatible ControlPlaneTraceEnvelope and pure builder",
       "why": "Provides one immutable correlation and policy shape across direct providers, optional gateways, agent runs, tool calls, and evaluations without introducing a runtime dependency.",
-      "dependencies": ["Clean dedicated worktree based on the intended starlight-memory commit"],
+      "dependencies": ["Clean dedicated worktree based on the intended starlight-memory commit", "Existing routeMemoryRecord and estimateProviderResourcePlan primitives"],
       "acceptance": [
         "Types compile.",
         "A pure buildMemoryAddTrace(record, policy, context) uses existing routeMemoryRecord and estimateProviderResourcePlan primitives.",
+        "Fixtures prove a 32-hex trace ID, 16-hex span and parent-span IDs, and Starlight-owned project, thread, and session correlation across an agent, tool, and model span.",
+        "A duplicate terminal write with the same event_id or idempotency_key does not create a second receipt.",
         "Tests first prove parent-child spans, unknown cost, privacy classes, prompt references, and provider shadow references.",
-        "Serialized output contains no raw memory content, prompt text, tokens, secrets, or absolute filesystem paths.",
+        "Serialized output contains no raw memory content, prompt text, tokens, secrets, absolute filesystem paths, display names, or email addresses.",
         "No runtime dependency is added."
       ],
-      "risk": "Do not let a generic trace schema become a second policy system; reference existing SIS privacy and provenance types."
+      "risk": "Do not let a generic trace schema become a second policy system or turn external identity fields into canonical identities; reference existing SIS privacy and provenance types."
     },
     {
       "id": "SCP-002",
@@ -72,16 +76,48 @@
       "id": "SCP-004",
       "priority": "P0",
       "status": "blocked_by_SCP-002",
-      "owner_repo": "starlight-evals",
-      "title": "Create trace-to-evaluation candidate selection",
-      "why": "Turns production failures and corrections into measurable regression cases rather than dashboard noise.",
-      "dependencies": ["SCP-002", "Privacy gate", "Prompt Engine immutable references"],
+      "owner_repo": "Starlight-Intelligence-System/tools/proving-ground",
+      "title": "Create trace-to-evaluation candidate selection and typed human review",
+      "why": "Turns production failures and corrections into measurable regression cases rather than dashboard noise, while keeping a correction distinct from an accepted fixture.",
+      "dependencies": ["SCP-002", "SCP-003 privacy gate", "SCP-005 immutable prompt/evaluator references"],
       "acceptance": [
         "Feedback, policy blocks, and configured failures create de-duplicated candidate cases.",
-        "Candidate has trace and prompt provenance.",
-        "Candidate promotion requires independent evaluation evidence."
+        "Candidate has trace, prompt, evaluator, and privacy provenance.",
+        "Review schemas validate categorical, range, and correction annotations without retaining raw secret payloads.",
+        "Candidate promotion requires independent evaluation evidence and records accepted, rejected, and withdrawn outcomes."
       ],
-      "risk": "Never turn raw customer data into a fixture without a privacy review."
+      "risk": "Never turn raw customer data into a fixture without privacy review; reviewer identity and correction text require the same retention/export policy as the trace."
+    },
+    {
+      "id": "SCP-005",
+      "priority": "P0",
+      "status": "blocked_by_SCP-001",
+      "owner_repo": "prompt-engine",
+      "title": "Bridge immutable prompt and evaluator versions to trace and fixture receipts",
+      "why": "The Prompt Engine already versions, evaluates, and red-teams patterns; a minimal reference bridge makes production behavior reproducible without moving prompts into a vendor library.",
+      "dependencies": ["SCP-001", "Prompt Engine pattern schema", "Starlight-Intelligence-System eval-result schema"],
+      "acceptance": [
+        "A trace stores prompt id, semver, source commit, evaluator id/version, and fixture id as references only.",
+        "A promotion receipt resolves those references at the recorded commit and fails closed when a referenced version is absent.",
+        "Prompt text, test inputs, and customer corrections are not copied into the trace envelope."
+      ],
+      "risk": "A reference bridge must not create a second prompt registry or expose private prompt content in operational telemetry."
+    },
+    {
+      "id": "SCP-007",
+      "priority": "P0",
+      "status": "blocked_by_SCP-002_and_SCP-003",
+      "owner_repo": "Starlight-Intelligence-System",
+      "title": "Make retention, deletion, and approved export lifecycle events replayable",
+      "why": "The memory substrate already declares retention policies, but trace and review receipts need the same deletion/export evidence before enterprise claims are credible.",
+      "dependencies": ["SCP-002", "SCP-003", "Existing SISMemoryRecord retention_policy and provider shadow references"],
+      "acceptance": [
+        "Expiry emits a local tombstone/expiry receipt that preserves the minimum non-content provenance needed for audit.",
+        "An approved export records recipient adapter, redaction transform, policy decision, and correlation IDs without copying raw payloads.",
+        "Deletion and export requests are idempotent and propagate derived-mirror intent; unresolved mirrors remain visible as failed lifecycle receipts.",
+        "Tests cover secret local-only behavior, regulated default denial, expiry, and a failed external mirror."
+      ],
+      "risk": "Tombstones and audit records must not become an undeletable shadow copy of personal or secret content; retention clocks and legal requirements remain tenant policy."
     },
     {
       "id": "SCP-101",
@@ -90,13 +126,15 @@
       "owner_repo": "SIS / product runtime",
       "title": "Implement a policy-aware provider gateway adapter",
       "why": "Provides controlled retries, fallbacks, capability routing, and cost/latency receipts without an external gateway becoming mandatory.",
-      "dependencies": ["SCP-001", "SCP-002", "SCP-003", "Token Planner route inputs"],
+      "dependencies": ["SCP-001", "SCP-002", "SCP-003", "SCP-007", "Token Planner route inputs"],
       "acceptance": [
         "At least two direct provider adapters share one trace and policy contract.",
         "Fallback is policy-gated and recorded before dispatch.",
+        "Retries are limited to classified transient failures, use a declared retry budget/backoff, and record every attempt under one trace.",
+        "Non-idempotent tool and approval operations are never automatically retried or replayed; duplicate terminal receipts are rejected.",
         "Optional Orq/OpenTelemetry export is an adapter, not a required path."
       ],
-      "risk": "Do not duplicate subscription-capacity planning in request-time routing."
+      "risk": "Do not duplicate subscription-capacity planning in request-time routing or let a retry/fallback repeat a charged or irreversible action."
     },
     {
       "id": "SCP-102",
