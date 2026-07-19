@@ -66,6 +66,7 @@ This repo is also the **canonical map** of the agentic-income ecosystem — the 
 - **[`docs/AGENT-OPERATING-SYSTEM-STACK.md`](docs/AGENT-OPERATING-SYSTEM-STACK.md)** — how AGENTS.md, rules, hooks, skills, MCP, Hermes, OpenClaw, DeepAgents, Claude Code, and Codex map into the broader agent OS stack.
 - **[`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md)** — defense-in-depth for humans, agents, and wealth.
 - **[`docs/RED-BLUE-CHARTER.md`](docs/RED-BLUE-CHARTER.md)** — what red attacks, what blue defends, the cadence.
+- **[`docs/strategic/sovereign-ai-control-plane-2026-07-19.md`](docs/strategic/sovereign-ai-control-plane-2026-07-19.md)** — Orq-class observability and evaluation patterns with SIS retained as the sovereign authority.
 
 ---
 

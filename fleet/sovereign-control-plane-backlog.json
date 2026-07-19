@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "title": "Sovereign AI Control Plane Backlog",
+  "created_at": "2026-07-19T05:10:27+02:00",
+  "authority": {
+    "memory_policy_provenance": "SIS and starlight-memory",
+    "agent_work_receipts": "agentic-ops and SIS",
+    "prompt_versions": "prompt-engine and Git",
+    "evaluation_promotion": "starlight-evals",
+    "capacity_allocation": "starlight-token-tracker and agentic-ops/fleet/TOKEN-PLANNER.md"
+  },
+  "invariants": [
+    "Starlight creates the trace_id before provider dispatch.",
+    "Secret records never leave local authority.",
+    "Regulated records require an explicit external-mirror policy.",
+    "A provider trace ID is a shadow reference, not the canonical receipt.",
+    "Provider failure cannot prevent the local trace receipt.",
+    "Production feedback becomes a candidate evaluation case, never automatic truth.",
+    "No per-terminal heavyweight collector, index, or memory runtime."
+  ],
+  "work_items": [
+    {
+      "id": "SCP-001",
+      "priority": "P0",
+      "status": "ready_after_clean_worktree",
+      "owner_repo": "starlight-memory",
+      "title": "Define the provider-neutral SISAITraceEnvelope contract",
+      "why": "Provides one immutable correlation and policy shape across direct providers, optional gateways, agent runs, tool calls, and evaluations.",
+      "dependencies": ["Clean dedicated worktree based on the intended starlight-memory commit"],
+      "acceptance": [
+        "Types compile.",
+        "Tests first prove parent-child spans, unknown cost, privacy classes, prompt references, and provider shadow references.",
+        "No runtime dependency is added."
+      ],
+      "risk": "Do not let a generic trace schema become a second policy system; reference existing SIS privacy and provenance types."
+    },
+    {
+      "id": "SCP-002",
+      "priority": "P0",
+      "status": "blocked_by_SCP-001",
+      "owner_repo": "Starlight-Intelligence-System",
+      "title": "Write durable local trace receipts with bounded indexing",
+      "why": "Closes the core observability gap while retaining local sovereignty and operation during vendor outage.",
+      "dependencies": ["SCP-001", "Existing JSONL/SQLite event-store conventions"],
+      "acceptance": [
+        "Write succeeds before optional provider export.",
+        "Trace lookup by trace_id works after process restart.",
+        "Disk and retention behavior is explicit and bounded.",
+        "Provider dispatch failure still creates a failed trace receipt."
+      ],
+      "risk": "No new per-agent daemon or unbounded local payload retention."
+    },
+    {
+      "id": "SCP-003",
+      "priority": "P0",
+      "status": "blocked_by_SCP-001",
+      "owner_repo": "starlight-memory",
+      "title": "Add policy-aware trace export decisions",
+      "why": "Makes OpenTelemetry and optional vendor export safe without treating the vendor as canonical.",
+      "dependencies": ["SCP-001", "Existing TenantMemoryPolicy / PrivacyClass routing"],
+      "acceptance": [
+        "Secret traces are local-only.",
+        "Regulated traces default local-only.",
+        "Redacted export has a provenance receipt.",
+        "Export is skipped, not retried blindly, when policy denies it."
+      ],
+      "risk": "Input/output payloads must not leak under metadata or error fields."
+    },
+    {
+      "id": "SCP-004",
+      "priority": "P0",
+      "status": "blocked_by_SCP-002",
+      "owner_repo": "starlight-evals",
+      "title": "Create trace-to-evaluation candidate selection",
+      "why": "Turns production failures and corrections into measurable regression cases rather than dashboard noise.",
+      "dependencies": ["SCP-002", "Privacy gate", "Prompt Engine immutable references"],
+      "acceptance": [
+        "Feedback, policy blocks, and configured failures create de-duplicated candidate cases.",
+        "Candidate has trace and prompt provenance.",
+        "Candidate promotion requires independent evaluation evidence."
+      ],
+      "risk": "Never turn raw customer data into a fixture without a privacy review."
+    },
+    {
+      "id": "SCP-101",
+      "priority": "P1",
+      "status": "planned",
+      "owner_repo": "SIS / product runtime",
+      "title": "Implement a policy-aware provider gateway adapter",
+      "why": "Provides controlled retries, fallbacks, capability routing, and cost/latency receipts without an external gateway becoming mandatory.",
+      "dependencies": ["SCP-001", "SCP-002", "SCP-003", "Token Planner route inputs"],
+      "acceptance": [
+        "At least two direct provider adapters share one trace and policy contract.",
+        "Fallback is policy-gated and recorded before dispatch.",
+        "Optional Orq/OpenTelemetry export is an adapter, not a required path."
+      ],
+      "risk": "Do not duplicate subscription-capacity planning in request-time routing."
+    },
+    {
+      "id": "SCP-102",
+      "priority": "P1",
+      "status": "planned",
+      "owner_repo": "agentic-ops cockpit",
+      "title": "Ship a privacy-safe local operational view",
+      "why": "Brings together trace health, blocked actions, evaluation backlog, and capacity without exposing raw private prompts.",
+      "dependencies": ["SCP-002", "SCP-004", "Fleet cockpit conventions"],
+      "acceptance": [
+        "Shows receipt freshness, outcome state, latency/cost aggregates, policy blocks, and evaluation candidate counts.",
+        "Does not render secret payloads.",
+        "References canonical artifacts rather than copying their data."
+      ],
+      "risk": "Do not build a visual dashboard before the receipt contract works."
+    },
+    {
+      "id": "SCP-201",
+      "priority": "P2",
+      "status": "demand_gated",
+      "owner_repo": "product-specific",
+      "title": "Enterprise tenancy and vendor adapters",
+      "why": "Adds RBAC, SSO/SCIM, quotas, private deployment, and approved enterprise integrations only if a customer needs them.",
+      "dependencies": ["Paying customer acceptance criteria", "DPA/security review", "SCP-101"],
+      "acceptance": [
+        "Tenant isolation and audit export are tested.",
+        "Vendor exit/export path is exercised.",
+        "Commercial margin and operational burden are approved."
+      ],
+      "risk": "Do not acquire enterprise platform complexity for hypothetical demand."
+    }
+  ]
+}
