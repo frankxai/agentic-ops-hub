@@ -50,6 +50,7 @@ Start with:
 | Fan rules out to agent-specific files | [`scripts/sync-agent-rules.mjs`](scripts/sync-agent-rules.mjs) |
 | Copy the baseline into another repo | [`templates/AGENTS.md`](templates/AGENTS.md) |
 | Understand the operating ecosystem | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
+| See the shared intelligence architecture and ownership map | [`STARLIGHT-INTELLIGENCE-ARCHITECTURE.md`](STARLIGHT-INTELLIGENCE-ARCHITECTURE.md) |
 | See MCP and protection strategy | [`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md) and [`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md) |
 
 This is a library/configuration repo, not a deployable app. The fastest health check is the generated-rule drift check above.
