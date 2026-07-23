@@ -13,7 +13,7 @@ Creating every named repository now would recreate the portfolio-sprawl problem 
 ## Decision
 
 - `agentic-ops` owns portfolio architecture, ADRs, roadmap/coordination and cross-repo receipts.
-- SIS owns memory, provenance doctrine, agent governance and public substrate semantics.
+- SIS owns control-plane policy, provenance doctrine, agent governance and public substrate semantics; `starlight-memory` owns the provider-neutral memory-routing/adapters boundary that SIS must consume rather than copy.
 - Knowledge Tree lineage owns public knowledge/capability graph canon.
 - A new `starlight-signal-intelligence` repository is justified once the Highest Self Signal vertical contract is accepted. It owns operational signals, consent, private evidence, retrieval, workflows and the initial admin surface.
 - Contracts, agents and studio begin as internal versioned packages/modules in the signal-service repository.

@@ -22,7 +22,7 @@ Do **not**:
 - create independent per-brand signal engines;
 - extract separate contracts, agents, or studio repositories before a real second deployable consumer proves their boundary.
 
-The correct first production proof is **FrankX — Highest Self Signal**. It is a privacy-bounded, anonymous-first, voice-or-text reflection flow—not a diagnosis—and exercises the entire chain from capture through an internal evidence view.
+The correct first production proof is **Highest Self Signal, hosted in Arcanea**. Arcanea is the canonical implementation host because it already has a durable authenticated profile, a real assessment/result experience, guardian handoff, and optional voice primitives. FrankX remains the editorial/acquisition and future presentation surface; it must not become a second system of record. The flow is privacy-bounded and anonymous-first—not a diagnosis—and exercises the chain from capture through an internal evidence view.
 
 ## What was inspected
 
@@ -33,8 +33,9 @@ The correct first production proof is **FrankX — Highest Self Signal**. It is 
 | `starlight-knowledge-tree` | `packages/graph-schema`, graph utilities, public graph nodes/edges, evidence/progression types. | Reusable public-graph semantics and validator ideas; insufficient as a private operational graph by itself. |
 | `research-intelligence-os` and `research-intelligence-systems` | Reusable research contracts, claim/evidence/paper schemas, packs, and evaluation-oriented documentation. | Reuse semantic vocabulary and fixtures selectively; no demonstrated production graph service or operational participant store. |
 | `gencreator.ai` | Supabase schema for members, purchases, leads, events; RLS; PostHog client; research and Ask routes. Open PR #4 supplies a tested privacy-bounded quiz/ladder experiment with versioned experiment ID and preview evidence. | Closest user-facing routing/experiment reference. Reuse patterns, not tables, as a cross-brand system. |
-| `frankx.ai-vercel-website` | Existing `/assess`, `/assessment`, `/ai-assessment` routes and lead/analytics APIs. The local production checkout is heavily dirty and has active deployments. | FrankX is the first branded surface, but implementation must use a clean branch/worktree and normal production release gates. |
-| `Arcanea` | Supabase profile, conversation, message, relationship, creation, and media schemas. Storage permits private audio. Local branch is heavily dirty. | Reuse future auth/media/RLS patterns; Creator Soulprint is config over the shared engine, not an Arcanea-specific intelligence fork. |
+| `frankx.ai-vercel-website` | Existing `/assess`, `/assessment`, `/ai-assessment` routes and lead/analytics APIs; answers are local/email-list oriented rather than a durable result identity model. The local production checkout is heavily dirty and has active deployments. | FrankX is the editorial/referral and later presentation surface. It must not become the first system of record or be edited in the dirty production checkout. |
+| `Arcanea` | `apps/web/app/academy/assessment/page.tsx` implements a real assessment/result flow; active Supabase auth/profile fields, guardian handoff and optional voice infrastructure exist. Storage permits private audio. Local branch is heavily dirty. | Canonical first vertical-slice host. Add a dedicated signal domain model rather than overloading Gate/Academy fields; Creator Soulprint remains a configuration over the shared engine. |
+| `starlight-memory` | Published provider-neutral memory package with typed records, deterministic routing, local/Mem0 adapters, tests and MCP. Some provider/router source is duplicated inside SIS. | Canonical shared memory SDK/package. Signal service integrates through its versioned boundary rather than copying provider routing. |
 | `Blue Life Commons` + `ocean-intelligence-system` | Commons owns source/ethics/review metadata; Ocean system owns connectors, agents, dashboards and explicitly cannot override the commons. | The desired pattern: canonical evidence authority below operational agents and branded surfaces. |
 | `agentic-ops` | Control-plane docs, portfolio SoT, registry, ledger, machine/agent doctrine. | Owns this cross-repository architecture map, ADR index, migration coordination, and implementation receipts—not participant data or domain logic. |
 
@@ -103,7 +104,7 @@ The correct first production proof is **FrankX — Highest Self Signal**. It is 
 | Context | Canonical owner now | Target repository decision | Why |
 |---|---|---|---|
 | Portfolio ownership, ADRs, migration coordination | `agentic-ops` | Reuse | It is already the cross-repo control plane and document SoT. |
-| Memory, durable agent recall, public provenance doctrine | SIS | Reuse | SIS is the established substrate; participant operations do not belong there. |
+| Memory, durable agent recall, public provenance doctrine | SIS + `starlight-memory` | Reuse | SIS owns control-plane policy/provenance; `starlight-memory` owns provider-neutral routing/adapters. Participant operations do not belong in either. |
 | Public knowledge taxonomy and public contribution graph | Knowledge Tree lineage / SIS PR #44 | Reconcile, do not duplicate | Existing typed graph and active governance proposal are the correct upstream concern. |
 | Operational signals, consent, private evidence, jobs, retrieval | none | Create `starlight-signal-intelligence` when vertical-slice contract is accepted | This is a genuine deployable bounded context with data lifecycle and security needs separate from brands. |
 | Workflow catalog, prompts, eval fixtures | initially inside signal service | Extract `starlight-intelligence-agents` only after independent version/release cadence is proven | Avoid a repository before there are reusable consumers. |
@@ -336,7 +337,8 @@ All charts must declare: filter set, time window, sample size, denominator, data
 
 ### Product contract
 
-- **Brand:** FrankX, Professional register.
+- **Implementation host:** Arcanea `apps/web`; Arcanea register with optional Aiyami/Crown handoff.
+- **FrankX role:** editorial/referral and later thin presentation configuration, not the first persistence owner.
 - **Purpose:** help a participant reflect on declared friction, desired change, assets and next actions; generate a private, non-diagnostic report.
 - **Instrument class:** assessment plus router; it is not a research survey or a general Ask funnel.
 - **Identity:** anonymous session by default; optional contact capture after report, with distinct marketing consent.
@@ -349,9 +351,9 @@ Each experience uses the same journey runtime, policy enforcement, evidence mode
 
 | Brand | Journey configuration | Primary purpose | Instrument boundary |
 |---|---|---|---|
-| FrankX | Highest Self Signal | Reflective friction/asset/next-path report | Assessment + router |
+| FrankX | Highest Self Signal | Editorial/referral and a later presentation configuration over the shared service | Assessment + router; not the first persistence owner |
 | Starlight Intelligence | Agentic Leverage Scan | Capability and leverage-path discovery | Assessment + router |
-| Arcanea | Creator Soulprint | Creative-practice and creative-path reflection | Assessment + router; non-clinical |
+| Arcanea | Creator Soulprint / Highest Self Signal first slice | Reflective friction/asset/next-path report, practical action, optional guardian handoff | Assessment + router; non-clinical; canonical first host |
 | GenCreator | Creator Bottleneck Scan | Creator workflow bottleneck and next intervention | Ask funnel + router, distinct from research |
 | Agentic Income | Income Architecture Scan | Income-system constraints and viable next build path | Assessment + router; no income promise |
 | AI Architect Academy | Architect Readiness Scan | Learning readiness and curriculum routing | Assessment + router |
@@ -428,16 +430,16 @@ A later longitudinal pulse can measure change for any of these journeys, but is 
 6. Typed model adapter and workflow-run receipt store.
 7. Eval fixtures, redaction tests, observability and cost/latency telemetry.
 
-### Phase 2 — Highest Self Signal vertical slice
+### Phase 2 — Highest Self Signal vertical slice in Arcanea
 
-1. FrankX journey UI in a clean branch.
+1. Arcanea journey UI in a clean branch: `apps/web/app/academy/highest-self-signal/page.tsx`; preserve existing Gate/Academy fields and create a dedicated assessment record.
 2. Service integration, transcript confirmation, extraction, report and operator review.
 3. Preview-only test deployment and complete security/privacy/UX test matrix.
 4. No production rollout until data-processing, legal copy, retention path, analytics allowlist and release review pass.
 
 ### Phase 3 — configurable journey engine
 
-Add Starlight Agentic Leverage Scan, Arcanea Creator Soulprint, GenCreator Creator Bottleneck Scan, and Agentic Income Income Architecture Scan as configuration/presentation packages—not cloned systems.
+Add FrankX’s thin Highest Self presentation, Starlight Agentic Leverage Scan, Arcanea Creator Soulprint, GenCreator Creator Bottleneck Scan, and Agentic Income Income Architecture Scan as configuration/presentation packages—not cloned systems.
 
 ### Phase 4 — compounding intelligence
 
