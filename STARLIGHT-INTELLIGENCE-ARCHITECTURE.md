@@ -448,6 +448,7 @@ Add research ingestion, market evidence, content lineage, opportunity ranking, l
 - [ADR 0001 — Postgres-first operational graph](docs/adr/0001-postgres-first-operational-graph.md)
 - [ADR 0002 — Canonical ontology reconciliation and evidence immutability](docs/adr/0002-ontology-reconciliation-and-evidence-immutability.md)
 - [ADR 0003 — Repository boundaries and extraction gates](docs/adr/0003-repository-boundaries-and-extraction-gates.md)
+- [Knowledge Tree ↔ operational intelligence mapping](docs/intelligence/knowledge-tree-operational-ontology-mapping.md)
 
 ## Verification status
 
