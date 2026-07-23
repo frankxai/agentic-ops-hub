@@ -343,6 +343,23 @@ All charts must declare: filter set, time window, sample size, denominator, data
 - **Input:** text or voice “ramble”; participant sees and may correct the transcript.
 - **Output:** private reflective report, clearly distinguishing stated evidence from interpretations; route recommendation; optional consented aggregate insights for operators.
 
+### Configurable journey matrix
+
+Each experience uses the same journey runtime, policy enforcement, evidence model, model-run receipt, and report contract. Brand-owned configuration controls presentation, approved question versions, scoring/routing rubric, report copy, permitted models, and data-use policy. It never forks the storage or derived-intelligence logic.
+
+| Brand | Journey configuration | Primary purpose | Instrument boundary |
+|---|---|---|---|
+| FrankX | Highest Self Signal | Reflective friction/asset/next-path report | Assessment + router |
+| Starlight Intelligence | Agentic Leverage Scan | Capability and leverage-path discovery | Assessment + router |
+| Arcanea | Creator Soulprint | Creative-practice and creative-path reflection | Assessment + router; non-clinical |
+| GenCreator | Creator Bottleneck Scan | Creator workflow bottleneck and next intervention | Ask funnel + router, distinct from research |
+| Agentic Income | Income Architecture Scan | Income-system constraints and viable next build path | Assessment + router; no income promise |
+| AI Architect Academy | Architect Readiness Scan | Learning readiness and curriculum routing | Assessment + router |
+| AI Music Academy | Artist Signal | Creation/learning intent and curriculum routing | Assessment + router |
+| Blue Life Commons | Ocean Impact Signal | Declared impact interests and appropriate commons pathway | Research survey + router; scientific claims remain commons-governed |
+
+A later longitudinal pulse can measure change for any of these journeys, but is a separate versioned instrument with an explicit baseline/cohort definition. A research survey is never silently repurposed for marketing or a commercial router without a new consent/purpose boundary.
+
 ### Minimum delivery sequence
 
 1. Versioned journey and question configuration.
