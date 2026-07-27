@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "identity": {
+    "id_format": "uuidv7_or_prefixed_immutable_id",
+    "timestamps": "ISO-8601 UTC",
+    "event_log": "append_only_jsonl",
+    "unknown_value": "unknown"
+  },
+  "lifecycle": ["created", "reviewed", "verified", "delivered", "published", "observed"],
+  "required_entities": {
+    "experiment": ["id", "hypothesis", "brand_id", "primary_metric", "guardrails", "decision_rule", "pre_registered_at"],
+    "run": ["id", "experiment_id", "tool_id", "workflow_version", "operator_type", "machine_id", "status", "input_hashes", "output_asset_ids"],
+    "asset": ["id", "run_id", "uri", "content_hash", "provenance_status", "rights_review_status", "quality_review_status"],
+    "review": ["id", "run_id", "review_mode", "decision", "quality_scores", "human_minutes", "defect_tags"],
+    "publication_intent": ["id", "package_id", "channel_id", "asset_hashes", "approval_receipt_ids", "idempotency_key", "mode"],
+    "publication_receipt": ["id", "publication_intent_id", "adapter", "state", "external_refs", "published_at"],
+    "outcome": ["id", "package_id", "measurement_window", "source", "metrics", "qualitative_feedback"]
+  },
+  "cost_accounting": {
+    "billing_modes": ["metered_api", "flat_subscription", "credit_pack", "hybrid", "unknown"],
+    "fields": ["provider_reported_cost", "invoice_reconciled_cost", "list_price_estimate", "quantity", "unit", "plan_id"],
+    "rules": [
+      "Metered cost, flat-plan commitment, and list-price attribution are separate values.",
+      "Flat-plan included usage is not billed marginal spend.",
+      "Cost conclusions use approved and outcome-qualified packages, never raw generations alone.",
+      "Missing data remains unknown and is visible in reports."
+    ]
+  },
+  "core_metrics": [
+    "first_pass_acceptance_rate",
+    "median_turnaround_minutes",
+    "human_minutes_per_accepted_package",
+    "quality_adjusted_accepted_cost",
+    "automation_success_rate",
+    "rights_block_rate",
+    "critical_failure_rate",
+    "saves_shares_or_watch_time",
+    "qualified_click_or_conversion"
+  ]
+}

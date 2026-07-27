@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "evidence_snapshot_date": "2026-07-27",
+  "records": [
+    {
+      "id": "meta-instagram-platform",
+      "category": "direct_distribution",
+      "state": "adopt_as_adapter_candidate",
+      "source_url": "https://developers.facebook.com/documentation/instagram-platform/content-publishing",
+      "evidence_status": "primary_docs_checked_2026-07-27",
+      "commercial_or_automation_rights": "requires_account_scopes_review_and_app_readiness",
+      "notes": "Professional-account publishing; public asset hosting and Page Publishing Authorization are integration gates."
+    },
+    {
+      "id": "youtube-data-api",
+      "category": "direct_distribution",
+      "state": "adopt_as_adapter_candidate",
+      "source_url": "https://developers.google.com/youtube/v3/docs/videos/insert",
+      "evidence_status": "primary_docs_checked_2026-07-27",
+      "commercial_or_automation_rights": "requires_oauth_and_project_compliance_audit_review",
+      "notes": "Begin with private/unlisted validation because unaudited projects are restricted."
+    },
+    {
+      "id": "openai-gpt-image",
+      "category": "image_generation",
+      "state": "pilot",
+      "source_url": "https://developers.openai.com/api/docs/guides/image-generation",
+      "evidence_status": "primary_docs_checked_2026-07-27",
+      "commercial_or_automation_rights": "verify_terms_and_api_billing_before_production",
+      "notes": "Persist model, parameters, prompt/edit recipe, source hash, and output hash for every evaluated run."
+    },
+    {
+      "id": "buffer-api",
+      "category": "scheduler_adapter",
+      "state": "pilot",
+      "source_url": "https://developers.buffer.com/guides/posts-and-scheduling.html",
+      "evidence_status": "docs_reviewed_by_radar_2026-07-27",
+      "commercial_or_automation_rights": "contract_and_plan_verification_required",
+      "notes": "Optional paid fallback/calendar UX; never the canonical ledger."
+    },
+    {
+      "id": "postiz",
+      "category": "self_hosted_scheduler",
+      "state": "quarantined_pilot_only",
+      "source_url": "https://github.com/gitroomhq/postiz-app",
+      "evidence_status": "github_metadata_and_advisories_reviewed_2026-07-27",
+      "commercial_or_automation_rights": "AGPL_and_security_review_required",
+      "notes": "Synthetic-account evaluation only until exact-version remediation and external security review."
+    },
+    {
+      "id": "mixpost",
+      "category": "self_hosted_scheduler",
+      "state": "watch",
+      "source_url": "https://github.com/inovector/mixpost",
+      "evidence_status": "github_metadata_and_provider_coverage_reviewed_2026-07-27",
+      "commercial_or_automation_rights": "MIT_code_license_not_platform_or_commercial_rights",
+      "notes": "Useful permissive reference; current OSS provider coverage does not meet this portfolio's required channels."
+    }
+  ]
+}

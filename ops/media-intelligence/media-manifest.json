@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "system_id": "starlight-media-intelligence",
+  "state": "foundation",
+  "canonical_owner": "agentic-ops/ops/media-intelligence",
+  "autonomy_stage": 0,
+  "brands": [
+    {
+      "id": "frankx",
+      "editorial_owner": "FrankX",
+      "register": "professional",
+      "first_slice": true,
+      "allowed_output_classes": ["research_brief", "social_candidate", "newsletter_candidate", "blog_candidate"]
+    },
+    {
+      "id": "gencreator",
+      "editorial_owner": "gencreator.ai",
+      "register": "professional",
+      "first_slice": true,
+      "allowed_output_classes": ["learning_resource_candidate", "community_candidate"]
+    }
+  ],
+  "channels": [
+    {
+      "id": "frankx-instagram",
+      "brand_id": "frankx",
+      "adapter_class": "meta-graph",
+      "capability_state": "research_only",
+      "publication_mode": "human_approved"
+    },
+    {
+      "id": "frankx-youtube",
+      "brand_id": "frankx",
+      "adapter_class": "youtube-data-api",
+      "capability_state": "research_only",
+      "publication_mode": "private_or_unlisted_validation"
+    }
+  ],
+  "required_gates": [
+    "source_provenance",
+    "rights_and_reuse",
+    "brand_voice",
+    "accessibility",
+    "platform_policy",
+    "human_approval",
+    "idempotency",
+    "cost_or_quota"
+  ],
+  "forbidden": [
+    "store_credentials_in_git",
+    "auto_publish_at_stage_0",
+    "treat_scheduler_ids_as_canonical",
+    "treat_unknown_rights_as_permitted",
+    "bypass_platform_terms_with_browser_automation"
+  ]
+}
