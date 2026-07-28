@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "1.0",
+  "graph_id": "smis-knowledge-graph",
+  "generated_at": "2026-07-28T12:48:06Z",
+  "purpose": "Versioned ownership and handoff projection for Starlight Media Intelligence System work.",
+  "nodes": [
+    {"id": "smis", "kind": "control_plane", "owner": "agentic-ops", "state": "stage_0_implemented", "canonical_data": "policies, operational contracts, experiment decisions, sanitized receipts"},
+    {"id": "sis", "kind": "memory_substrate", "owner": "Starlight-Intelligence-System", "state": "active", "canonical_data": "durable provenance, reusable lessons, private-safe recall"},
+    {"id": "acos", "kind": "workflow_library", "owner": "agentic-creator-os", "state": "active", "canonical_data": "proven generic skills, commands, and templates"},
+    {"id": "frankx", "kind": "private_editorial_authoring", "owner": "FrankX", "state": "first_slice", "canonical_data": "professional editorial drafts, owned recordings, and brand assets; not deployed publication artifacts"},
+    {"id": "frankx_production", "kind": "production_surface", "owner": "frankx.ai-vercel-website and distribution platforms", "state": "first_slice", "canonical_data": "deployed public artifacts and external publication/deployment receipts"},
+    {"id": "gencreator", "kind": "learning_product", "owner": "gencreator.ai", "state": "first_slice", "canonical_data": "public-safe educational surfaces and member learning experiences"},
+    {"id": "token_tracker", "kind": "cost_telemetry", "owner": "starlight-token-tracker", "state": "active", "canonical_data": "model and subscription utilization telemetry"},
+    {"id": "sandcastles", "kind": "external_discovery_adapter", "owner": "vendor", "state": "pilot", "canonical_data": "none; vendor export is reference input only"},
+    {"id": "firecrawl", "kind": "external_web_research_adapter", "owner": "vendor", "state": "watch", "canonical_data": "none; extracted public web material is reference input only"},
+    {"id": "hook_ledger", "kind": "smis_module", "owner": "agentic-ops", "state": "planned", "canonical_data": "rights-aware hook mechanisms, source references, and original adaptation briefs"},
+    {"id": "moment_intelligence", "kind": "smis_module", "owner": "agentic-ops", "state": "planned", "canonical_data": "owned-content timestamped transcript and human-ranked clip candidate records"}
+  ],
+  "edges": [
+    {"from": "frankx", "to": "smis", "relation": "submits_source_backed_content_package", "data_boundary": "package metadata and opaque references; full editorial bodies/assets remain in FrankX storage"},
+    {"from": "frankx", "to": "frankx_production", "relation": "syncs_reviewed_editorial_for_deployment", "data_boundary": "authoring-to-production sync remains a separate reviewed workflow; FrankX itself does not deploy"},
+    {"from": "smis", "to": "sis", "relation": "projects_sanitized_learning", "data_boundary": "one-way distilled facts and provenance pointers; no secrets, raw assets, or operational queue state"},
+    {"from": "smis", "to": "acos", "relation": "promotes_proven_workflow", "data_boundary": "only reusable generic skills and templates after evidence; no Frank-specific policy, metrics, or credentials"},
+    {"from": "smis", "to": "gencreator", "relation": "projects_public_safe_teaching", "data_boundary": "approved learning patterns and templates only; no private operations or source exports"},
+    {"from": "smis", "to": "token_tracker", "relation": "projects_sanitized_cost_event", "data_boundary": "cost class and opaque run/package references; no editorial body or prompt"},
+    {"from": "sandcastles", "to": "hook_ledger", "relation": "supplies_reference_export", "data_boundary": "manual or documented export; reference-only, provenance and rights state required"},
+    {"from": "firecrawl", "to": "smis", "relation": "supplies_public_web_source_packet", "data_boundary": "public-web research only; not a social-outlier authority or publishing adapter"},
+    {"from": "hook_ledger", "to": "smis", "relation": "creates_original_hook_brief", "data_boundary": "mechanism and constraints, never copied wording/visuals/audio"},
+    {"from": "frankx", "to": "moment_intelligence", "relation": "supplies_owned_timestamped_transcript", "data_boundary": "owned or explicitly authorized recordings only"},
+    {"from": "moment_intelligence", "to": "smis", "relation": "creates_human_ranked_clip_brief", "data_boundary": "candidate moments and evidence references; publication remains human-approved"}
+  ]
+}
