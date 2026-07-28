@@ -30,7 +30,7 @@ FrankX → GenCreator weekly signal-to-brief bridge:
 1. Accept a source-backed AI/creator signal.
 2. Record source, freshness, confidence, rights caution, and a content angle.
 3. Produce an approval-ready FrankX draft with a GenCreator CTA.
-4. Keep the published editorial record in FrankX.
+4. Keep the private authoring record in FrankX; the deployed website or social platform owns its published artifact and external receipt.
 5. Record only an opaque run ID, outcome class, and cost-class projection here.
 
 ## Stage 0 CLI
@@ -80,6 +80,10 @@ python3 -m smis.cli preflight \
 ## Canonical documents
 
 - Strategy: `../../docs/strategic/STARLIGHT-MEDIA-INTELLIGENCE-SYSTEM-2026-07-27.md`
+- Current execution program: `EXECUTION-PROGRAM.md`
+- Research ledger: `RESEARCH-LEDGER.md`
+- Knowledge governance: `KNOWLEDGE-GOVERNANCE.md`
+- Ownership graph: `KNOWLEDGE-GRAPH.md` (machine-readable source: `knowledge-graph.json`)
 - Manifest: `media-manifest.json`
 - Metrics: `metrics-contract.json`
 - Source policy: `source-policy.md`
