@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "stabilization: runner+scheduler+resource gates wired",
-  "at": "2026-07-17T13:50:56+00:00"
+  "notes": "cron fleet-pulse",
+  "at": "2026-08-03T13:15:00+00:00"
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T16:22:04.953116+00:00",
+  "generated_at": "2026-08-03T13:13:43.807218+00:00",
   "hostname": "DESKTOP-1B4ICID",
-  "disk_free_gb": 55.3,
+  "disk_free_gb": 53.4,
   "disk_free_ok": false,
   "gh_auth_ok": true,
   "onedrive_path": "C:\\Users\\frank\\OneDrive",
@@ -13,11 +13,11 @@
   "business_has_origin": false,
   "business_origin": null,
   "control_plane_path": "C:\\Users\\frank\\agentic-ops",
-  "control_plane_dirty": 24,
+  "control_plane_dirty": 39,
   "gaps": [
-    "disk free 55.3GB < 80GB target",
+    "disk free 53.4GB < 80GB target",
     "Business has no git origin \u2014 local-only risk",
-    "agentic-ops dirty=24 \u2014 commit fleet control plane"
+    "agentic-ops dirty=39 \u2014 commit fleet control plane"
   ],
   "status": "YELLOW"
 }

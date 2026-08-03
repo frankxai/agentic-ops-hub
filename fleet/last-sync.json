@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T03:48:12.763907+00:00",
+  "generated_at": "2026-08-03T13:14:16.630634+00:00",
   "machine": "c940",
   "hostname": "DESKTOP-1B4ICID",
   "dry_run": false,
@@ -49,9 +49,9 @@
     {
       "name": "agentic-creator-os",
       "path": "C:\\Users\\frank\\agentic-creator-os",
-      "action": "fetch_and_ff_pull",
+      "action": "fetch_only_dirty",
       "ok": true,
-      "detail": "Already up to date."
+      "detail": "working tree dirty \u2014 no pull"
     },
     {
       "name": "Starlight-Intelligence-System",
@@ -86,7 +86,7 @@
       "path": "C:\\Users\\frank\\vibeclubs.ai",
       "action": "fetch_and_ff_pull",
       "ok": true,
-      "detail": "eate mode 100644 apps/web/lib/production-host-contract.test.ts\n create mode 100644 apps/web/lib/ritual-proof.test.ts\n create mode 100644 apps/web/lib/ritual-proof.ts\n create mode 100644 design/PAGE_SPEC.md\n create mode 100644 design/SCENE_BRIEF.md\n create mode 100644 design/design-loop-evidence.json\n create mode 100644 design/visual-qa/.gitkeep\n create mode 100644 design/visual-qa/home-desktop.png"
+      "detail": "Already up to date."
     },
     {
       "name": "starlight-memory",
@@ -112,9 +112,9 @@
     {
       "name": "agentic-life-os",
       "path": "C:\\Users\\frank\\agentic-life-os",
-      "action": "fetch_and_ff_pull",
+      "action": "fetch_only_dirty",
       "ok": true,
-      "detail": "Already up to date."
+      "detail": "working tree dirty \u2014 no pull"
     }
   ],
   "ok": 16,
