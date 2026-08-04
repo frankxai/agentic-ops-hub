@@ -88,6 +88,7 @@ python3 -m smis.cli preflight \
 - Metrics: `metrics-contract.json`
 - Source policy: `source-policy.md`
 - Tool catalog: `registry/tool-catalog.json`
+- Local exploration/review projection: [`studio/CONTENT-STUDIO.md`](studio/CONTENT-STUDIO.md) — saved source cards and original draft packages; no publishing, scheduling, OAuth, or provider calls.
 - Temporary swarm contracts: `SWARM-CONTRACTS.md`
 
 ## Data handling

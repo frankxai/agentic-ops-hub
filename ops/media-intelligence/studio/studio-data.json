@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "studio_id": "smis-content-studio-stage-0",
+  "generated_at": "2026-08-04T23:25:25Z",
+  "status": "draft_only",
+  "authority_note": "This is a local, versioned exploration projection. Canonical policy and research are linked, not copied as operational authority.",
+  "metrics": {
+    "research_records": 4,
+    "draft_packages": 3,
+    "review_ready": 0,
+    "external_actions": 0
+  },
+  "principles": [
+    "Mine mechanisms, not copied wording, visuals, audio, or creator identity.",
+    "Drafts are original analysis, not performance promises.",
+    "No scheduling or publishing exists in this Studio.",
+    "Unknown rights or evidence block review rather than becoming permission."
+  ],
+  "research": [
+    {
+      "id": "research_sandcastles_20260728",
+      "title": "Sandcastles — discovery candidate",
+      "source_url": "https://www.sandcastles.ai/",
+      "source_kind": "official_vendor_page",
+      "retrieved_at": "2026-07-28T12:47:22Z",
+      "decision": "pilot",
+      "confidence": "medium",
+      "rights_state": "unknown",
+      "summary": "Potential discovery input for manual selection of organic short-form references. Vendor claims are not performance proof and it never becomes the record of truth.",
+      "constraint": "No account, export, subscription, or MCP connection is configured."
+    },
+    {
+      "id": "research_firecrawl_20260728",
+      "title": "Firecrawl — public-web source research candidate",
+      "source_url": "https://www.firecrawl.dev/pricing",
+      "source_kind": "official_vendor_page",
+      "retrieved_at": "2026-07-28T12:47:22Z",
+      "decision": "watch",
+      "confidence": "medium",
+      "rights_state": "unknown",
+      "summary": "Useful later for controlled public-web sources such as official documentation, research papers, and product pages; not a replacement for social-outlier discovery.",
+      "constraint": "No subscription, credential, or SMIS adapter exists."
+    },
+    {
+      "id": "research_hook_mechanism_reel_20260728",
+      "title": "Reference workflow: hook mechanisms over copied language",
+      "source_url": "https://www.instagram.com/reel/DbS_V27uOvC/",
+      "source_kind": "creator_caption",
+      "retrieved_at": "2026-07-28T12:47:55Z",
+      "decision": "research_only",
+      "confidence": "medium",
+      "rights_state": "reference_only",
+      "summary": "The useful pattern is a human-reviewed flow from selected reference to mechanism analysis to an original brief—not bulk rewriting copied hooks.",
+      "constraint": "Creator and vendor performance claims are not verified and are never reused as factual claims."
+    },
+    {
+      "id": "research_moment_intelligence_reel_20260728",
+      "title": "Reference workflow: owned-content moment selection",
+      "source_url": "https://www.instagram.com/reel/DbVKVz0y8xo/",
+      "source_kind": "creator_caption",
+      "retrieved_at": "2026-07-28T12:48:06Z",
+      "decision": "adopt",
+      "confidence": "medium",
+      "rights_state": "reference_only",
+      "summary": "Selection comes before editing: use an owned transcript to identify moments with intact context, tension, proof, and payoff, then let a human rank the candidates.",
+      "constraint": "Use only owned or explicitly authorized long-form material; never download or reuse external creator material."
+    }
+  ],
+  "drafts": [
+    {
+      "id": "draft_frankx_moment_selection_v1",
+      "brand": "FrankX",
+      "format": "Talking-head script + LinkedIn companion post",
+      "lane": "Moment Intelligence",
+      "status": "draft",
+      "title": "Editing is not the bottleneck. Selection is.",
+      "thesis": "The highest-leverage content system improves the decision about what to cut before it tries to make edits faster.",
+      "audience_job": "Help builders with an archive of conversations, calls, or ideas choose a clip with enough context to stand alone.",
+      "source_refs": ["research_moment_intelligence_reel_20260728"],
+      "claims": [
+        {"text": "A clip can fail even when the edit is polished, because the selected moment lacks enough context to stand on its own.", "basis": "original editorial analysis"},
+        {"text": "A useful candidate moment contains tension, proof, and a payoff a viewer can understand without the full recording.", "basis": "original operational rubric"}
+      ],
+      "draft_body": "HOOK\nMost content teams think repurposing starts in the edit. It starts earlier: with selection.\n\nBODY\nIf every minute of a recording gets the same chance, you are not choosing a story. You are scanning for noise.\n\nBefore I cut anything, I look for four signals: the context is intact; there is real tension; a piece of proof appears; and the payoff changes an operating decision.\n\nThat gives an editor something worth sharpening. It also means a short clip can stand alone without pretending the original conversation never existed.\n\nCLOSE\nThe next content system I am building is not an auto-publisher. It is a selection layer for owned material: transcript, candidate moments, human ranking, then a clear edit brief.\n\nCOMPANION POST\nFast editing is useful. Choosing the wrong moment faster is not.\n\nFor any long-form recording, identify the passages where context survives the cut, tension is clear, proof arrives, and the payoff is useful. Then let a human choose what deserves production.\n\nThat is the difference between a content factory and an editorial system.",
+      "accessibility": "Captions required for video; companion text provides the full argument; no visual-only claim is required.",
+      "rights": "Original copy. Reference workflow only; no creator wording, footage, audio, or visual treatment is reused.",
+      "next_human_move": "Record one 45–60 second first take, then add an owned transcript before any edit decision."
+    },
+    {
+      "id": "draft_frankx_hook_mechanisms_v1",
+      "brand": "FrankX",
+      "format": "Short video / carousel outline",
+      "lane": "Hook Intelligence",
+      "status": "draft",
+      "title": "A hook is a mechanism, not a sentence to steal.",
+      "thesis": "Original work comes from understanding why attention holds, then translating the mechanism into a truthful brand-specific promise.",
+      "audience_job": "Help operators use reference material without turning their content system into a plagiarism machine.",
+      "source_refs": ["research_hook_mechanism_reel_20260728", "research_sandcastles_20260728"],
+      "claims": [
+        {"text": "Reference material can be useful for analyzing attention mechanisms without copying the expression that carried them.", "basis": "original policy and editorial analysis"},
+        {"text": "Specificity, contrast, proof, identity, and curiosity are useful categories for a human hook review.", "basis": "original working taxonomy"}
+      ],
+      "draft_body": "OPEN\nDo not save hooks so you can rewrite them. Save them so you can understand the job they are doing.\n\nFRAME\nA strong opening usually earns attention through one mechanism: specificity, contrast, proof, identity, or curiosity. The words are not the asset. The mechanism is.\n\nEXAMPLE\nInstead of borrowing someone else’s line, ask: what proof would make this true for my audience? What contrast does my experience actually earn? What question can I answer with a real system, not a tease?\n\nCLOSE\nThat produces original content with a clearer point of view—and it gives your future self a library of thinking, not a folder of borrowed sentences.\n\nCAROUSEL OUTLINE\n1. A hook is a mechanism, not a sentence.\n2. Capture the context, not just the words.\n3. Classify the mechanism.\n4. Translate it through a truth your brand can prove.\n5. Keep the reference boundary visible.",
+      "accessibility": "Use full on-screen text in the caption; every carousel panel needs equivalent body copy and descriptive alt text.",
+      "rights": "Original copy. All external examples stay at mechanism level with URLs and a reference-only rights state.",
+      "next_human_move": "Choose one real FrankX operating lesson and replace the placeholder example with an earned proof point."
+    },
+    {
+      "id": "draft_gencreator_editorial_system_v1",
+      "brand": "GenCreator",
+      "format": "Teaching post / lesson outline",
+      "lane": "Teaching Surface",
+      "status": "draft",
+      "title": "Build an editorial system before you build an automation system.",
+      "thesis": "A responsible AI content workflow preserves human judgment at source selection, evidence review, authorship, and release.",
+      "audience_job": "Give creators a teachable model for using AI without giving up judgment or inventing performance claims.",
+      "source_refs": ["research_hook_mechanism_reel_20260728", "research_moment_intelligence_reel_20260728", "research_firecrawl_20260728"],
+      "claims": [
+        {"text": "Automation can accelerate a weak editorial decision as easily as a strong one.", "basis": "original analysis"},
+        {"text": "Human decision points should remain explicit at source selection, claim review, authoring, and release.", "basis": "SMIS Stage 0 policy"}
+      ],
+      "draft_body": "LESSON PROMISE\nAI can accelerate production without becoming the editor-in-chief.\n\nTHE MODEL\n1. Collect source material with provenance.\n2. Choose one opportunity a human actually wants to pursue.\n3. Generate a structured draft, not a finished claim.\n4. Review source rights, accessibility, brand voice, and evidence.\n5. Publish only after a human approves the final version.\n\nWHY THIS MATTERS\nThe goal is not to make more posts. It is to reduce the distance between a real idea and a clear, useful artifact—without hiding who made the decisions.\n\nEXERCISE\nTake one owned recording. Identify one moment with context, tension, proof, and payoff. Draft a 45-second explanation. Mark every factual claim with its basis before you edit the first frame.",
+      "accessibility": "Lesson must include text-first notes, captioned video if produced, and clear claim/source annotations.",
+      "rights": "Original teaching material. External sources inform the workflow only and are not reproduced.",
+      "next_human_move": "Choose whether this becomes a GenCreator lesson, a FrankX post, or stays research-only until one owned transcript exists."
+    }
+  ],
+  "queue": [
+    {"id": "queue_contract_review", "name": "Stage 0 draft-package contracts", "state": "review gate", "owner": "SMIS engineering", "next": "obtain independent review before integration"},
+    {"id": "queue_hook_ledger", "name": "Hook Intelligence Ledger", "state": "next", "owner": "Research + provenance", "next": "model original mechanism cards and rights boundary"},
+    {"id": "queue_moment_pilot", "name": "Owned Moment Intelligence pilot", "state": "queued", "owner": "FrankX editorial", "next": "select one owned or authorized transcript"}
+  ]
+}

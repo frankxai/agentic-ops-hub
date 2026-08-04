@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "artifact_id": "smis-content-studio-stage-0",
+  "title": "Starlight Content Studio",
+  "generated_at": "2026-08-04T23:25:25Z",
+  "lifecycle": "draft_only",
+  "authority": "versioned projection; canonical policy and research remain in ../",
+  "entrypoint": "index.html",
+  "local_url": "http://127.0.0.1:4173",
+  "data_file": "studio-data.json",
+  "allowed_actions": ["explore", "filter", "search", "copy_local_draft", "open_source_link"],
+  "prohibited_actions": ["publish", "schedule", "oauth", "account_connection", "provider_request", "external_write"],
+  "canonical_documents": [
+    "../README.md",
+    "../RESEARCH-LEDGER.md",
+    "../EXECUTION-PROGRAM.md",
+    "../KNOWLEDGE-GOVERNANCE.md",
+    "../KNOWLEDGE-GRAPH.md"
+  ]
+}
