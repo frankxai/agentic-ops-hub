@@ -1,7 +1,7 @@
 {
   "schema": "topology-health/v1",
   "status": "RED",
-  "generated_at": "2026-08-06T02:20:27+00:00",
+  "generated_at": "2026-08-06T10:04:03+00:00",
   "machine": {
     "hostname": "DESKTOP-1B4ICID",
     "node": "DESKTOP-1B4ICID",
@@ -9,7 +9,7 @@
     "claimed_role": "c940"
   },
   "planes": {
-    "disk_free_gb": 29.43,
+    "disk_free_gb": 30.16,
     "disk_class": "HARD_RED",
     "hermes_home": "C:\\Users\\frank\\AppData\\Local\\hermes",
     "tools": {
@@ -46,7 +46,7 @@
       "hermes": {
         "ok": true,
         "path": "C:\\Users\\frank\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\hermes.EXE",
-        "version": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream 01a1037d \u00b7 local 29b8cacf (+1 carried commit)"
+        "version": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream aaf96885 \u00b7 local 29b8cacf (+1 carried commit)"
       },
       "claude": {
         "ok": true,
@@ -132,8 +132,8 @@
       }
     ],
     "cron": {
-      "total": 27,
-      "active": 23,
+      "total": 26,
+      "active": 22,
       "paused": 4,
       "active_names": [
         "daily-ops-sweep",
@@ -157,7 +157,6 @@
         "brand-media-control-plane-watch",
         "github-tech-radar-daily",
         "github-tech-radar-weekly-review",
-        "seven-hour-autonomous-chief-of-staff",
         "topology-health-pulse"
       ],
       "paused_names": [
@@ -174,10 +173,10 @@
     "heartbeat": {
       "path": "C:\\Users\\frank\\agentic-ops\\fleet\\bus\\heartbeats\\c940.json",
       "fresh": true,
-      "age_minutes": 260,
-      "at": "2026-08-05T22:00:21+00:00"
+      "age_minutes": 4,
+      "at": "2026-08-06T10:00:00+00:00"
     },
-    "cron_ticker_age_seconds": 21
+    "cron_ticker_age_seconds": 1
   },
   "lifecycle": {
     "declared": [
@@ -191,7 +190,7 @@
       "claude": true,
       "codex": true
     },
-    "scheduled_active": 23,
+    "scheduled_active": 22,
     "running_gateways": 1,
     "delivered_note": "delivery proof is per-job; this receipt is control-plane health only"
   },
@@ -199,7 +198,7 @@
     {
       "severity": "RED",
       "code": "disk_hard_floor",
-      "detail": "29.43GB free < 35.0GB hard floor; block heavyweight work"
+      "detail": "30.16GB free < 35.0GB hard floor; block heavyweight work"
     }
   ],
   "next_actions": [

@@ -42,12 +42,27 @@ You
 ## Closed loops now installed
 
 1. **Topology health** — `python %LOCALAPPDATA%\hermes\scripts\topology_health.py`  
-   Cron: `topology-health-pulse` every 6h (no-agent; silent when GREEN).
+   Cron: `topology-health-pulse` every 6h at :15 (no-agent; silent when GREEN).
 2. **Mission receipts** — `mission_envelope.py envelope|receipt|validate`  
-   Worker = `candidate` only. `verified` needs named independent evaluator.
+   Worker = `candidate` only. `verified` requires named independent evaluator (not self).
 3. **Council** — skill `multi-llm-council` for rare stakes.
-4. **Memory maintenance** — daily 11:00 resumed on `openai-codex`.
-5. **PR review swarm** — weekdays 15:00 resumed on `openai-codex`.
+4. **Memory maintenance** — daily 11:00 on `openai-codex`.
+5. **PR review swarm** — weekdays 15:00 on `openai-codex`.
+
+## Brand / design identity path (2026-08-06)
+
+```text
+brand-identity-strategy  →  logo-system  →  tokens/design-md  →  UI
+         │                      │
+         │                      └─ FONT-LICENSING-SOURCES.md
+         └─ REGISTER-BOUNDARIES.md
+
+Figma → figma-design-to-code (auth gate first)
+21st  → twenty-first-component-bridge (named component only)
+Gen   → GENERATION-A11Y-CHECKLIST.md before production
+```
+
+Doctrine: `.agent-harness\DESIGN-EXCELLENCE.md` · audit: `brand-design-audit-20260806.md`
 
 ## Disk law (live)
 
