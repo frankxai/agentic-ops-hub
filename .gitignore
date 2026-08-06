@@ -25,3 +25,6 @@ fleet/reports/night/*-raw.json
 aoh-sync.bat
 aoh-cleanup.bat
 *.log
+
+# Generated host health snapshots (Hermes state is SoT)
+fleet/reports/topology-health-latest.json

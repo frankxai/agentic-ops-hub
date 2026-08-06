@@ -46,16 +46,16 @@ These are commonly safe when loaded from **official** sources and used per their
 | **Inter** | OFL | `next/font/google` or self-host woff2 | Default UI sans for many products |
 | **IBM Plex Sans / Mono** | OFL | self-host or official package | Good professional stack |
 | **Source Serif / Source Sans / Source Code** | OFL | official | Adobe OFL faces |
-| **Geist / Geist Mono** | SIL OFL (Vercel) | official package | Confirm current license file in package |
 | **JetBrains Mono** | OFL | official | Code only |
 | **system-ui stack** | OS | `system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif` | Zero font files; preferred when brand allows |
 
-**Google Fonts is not a blank check.** Each family has its own license page; some are OFL, some are not free for all embedding. Check the family page before shipping.
+**Google Fonts:** each family must have its license URL and embedding terms recorded before approval. Do not treat the catalog as a single blanket license.
 
 ## Explicitly research-only / high-risk until licensed
 
 | Family / class | Why |
 | --- | --- |
+| **Geist / Geist Mono** | Confirm current package LICENSE before promoting to approved |
 | **Söhne, Circular, Cereal, Satoshi (commercial cuts), Neue Haas, Akkurat** | Proprietary foundry faces — do not CDN-substitute silently |
 | **SF Pro / San Francisco / New York** | Apple system fonts — restricted embedding outside Apple platforms |
 | **Any “free download” from random GitHub/zip blogs** | Often illegal redistributions |

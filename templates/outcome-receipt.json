@@ -18,9 +18,14 @@
     "cost_usd": null
   },
   "evaluator": null,
+  "roles": {
+    "worker": "self",
+    "queen": "hermes-default"
+  },
   "security": {
     "red_team": "not_run",
     "supply_chain": "not_run"
   },
-  "notes": "Worker reports cannot self-promote to verified. verified requires named independent evaluator + deterministic gates."
+  "notes": "Worker reports cannot self-promote to verified. verified requires named independent evaluator + deterministic gates.",
+  "receipt_hash": "REPLACE_AFTER_BODY_HASH"
 }

@@ -51,6 +51,8 @@ def sanitize(value: Any, limit: int = 200) -> Any:
     text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", "", text)
     # drop obvious secret-ish assignments
     text = re.sub(r"(?i)(api[_-]?key|token|password|secret|authorization)\s*[:=]\s*\S+", r"\1=[redacted]", text)
+    text = re.sub(r"(?i)\bbearer\s+\S+", "Bearer [redacted]", text)
+    text = re.sub(r"\b(gh[pousr]_|sk-|xox[baprs]-)\S+", r"\1[redacted]", text)
     if len(text) > limit:
         text = text[: limit - 3] + "..."
     return text
@@ -146,7 +148,10 @@ def assert_safe_write_path(path: Path, home: Path) -> Path:
         raise ValueError("write path must end with .json")
     if ".." in Path(str(path)).parts:
         raise ValueError("path traversal rejected")
-    resolved = path.expanduser().resolve()
+    try:
+        resolved = path.expanduser().resolve()
+    except OSError as e:
+        raise ValueError(f"cannot resolve path: {e}") from e
     for root in write_allow_roots(home):
         try:
             resolved.relative_to(root)
@@ -412,7 +417,7 @@ def build_receipt(write_path: Path | None = None) -> dict[str, Any]:
         Path(__file__).resolve().parents[1],
     ]
     heartbeat = None
-    claimed_c940 = "1B4ICID" in socket.gethostname().upper()
+    claimed_c940 = os.environ.get("C940_HOST", "1B4ICID").upper() in socket.gethostname().upper()
     for root in ops_candidates:
         hb = root / "fleet" / "bus" / "heartbeats" / "c940.json"
         if hb.is_file():
