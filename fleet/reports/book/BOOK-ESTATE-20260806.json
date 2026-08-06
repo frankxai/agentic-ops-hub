@@ -1,0 +1,81 @@
+{
+  "schema": "starlight.fleetBookEstateReceipt.v1",
+  "taskId": "BOOK-ESTATE-20260806",
+  "machine": {
+    "machineId": "yoga-book",
+    "hostname": "Starlight",
+    "model": "83KJ",
+    "identityAt": "2026-08-06T13:14:17+00:00"
+  },
+  "capacity": {
+    "diskTotalGiB": 951.65,
+    "diskFreeGiB": 161.78,
+    "diskUsedPercent": 83.0,
+    "storageMode": "BOUNDED",
+    "ramTotalGiB": 31.43,
+    "ramAvailableGiB": 7.33,
+    "ramUsedPercent": 76.7,
+    "admission": "one bounded remote frontend verification lane; no broad install or build"
+  },
+  "controlPlane": {
+    "repo": "frankxai/agentic-ops-hub",
+    "originMain": "2c661402a4a8764d6f06367794729618ce77cf98",
+    "branch": "agent/hermes/book-estate-20260806",
+    "worktree": "C:/Users/frank/starlight/repos/.hermes-worktrees/agentic-ops-hub-book-estate-20260806",
+    "queueInspected": "origin/main:fleet/bus/queues/to-book.json",
+    "queueVerdict": "stale: active item BOOK-CLI-20260717 points to closed PR 326; not claimed"
+  },
+  "frontendTriage": [
+    {
+      "repo": "frankxai/frankx.ai-vercel-website",
+      "pr": 423,
+      "head": "8d5357a7788117fd54aaad51dcd74b94212e6be3",
+      "verdict": "HOLD",
+      "reason": "draft and CONFLICTING despite green checks"
+    },
+    {
+      "repo": "frankxai/frankx.ai-vercel-website",
+      "pr": 419,
+      "head": "5f897f3cc962aca469a01a0a17bcb33433a40388",
+      "verdict": "HOLD",
+      "reason": "draft with failing CI"
+    },
+    {
+      "repo": "frankxai/gencreator.ai",
+      "pr": 34,
+      "head": "93bb16228f067fe49598a2dadbb87279956c8b75",
+      "verdict": "CLAIMED_HOLD",
+      "reason": "bounded four-file frontend/media lane; lint, typecheck, unit, build, E2E and design checks pass; Vercel preview is blocked by commit-author/account verification before deployment"
+    },
+    {
+      "repo": "frankxai/solarcarport.tech",
+      "pr": 2,
+      "head": "aa02d04a424ecf08e6bf5de8f45ed61a6bf13b0a",
+      "verdict": "NOT_CLAIMED",
+      "reason": "clean preview but broad 10-file redesign with 707 additions and 1416 deletions"
+    },
+    {
+      "repo": "frankxai/arcanea-ai-app",
+      "pr": 231,
+      "head": "18e64cf0bef2a042de1689df2c8c39240a964a32",
+      "verdict": "NOT_CLAIMED",
+      "reason": "Codex-owned oversized lane with failed book and Aiyami checks"
+    }
+  ],
+  "claimedLane": {
+    "repo": "frankxai/gencreator.ai",
+    "pr": 34,
+    "head": "93bb16228f067fe49598a2dadbb87279956c8b75",
+    "scope": "remote release-gate verification only",
+    "result": "HOLD until a repository or Vercel administrator validates the commit-author account association, triggers a new preview, and the actual desktop/mobile export is inspected",
+    "productMutation": false
+  },
+  "nonActions": [
+    "no c940 heartbeat or identity written",
+    "no shared dirty checkout used for writes",
+    "no product repository modified",
+    "no main merge or production deployment",
+    "no credentials or account settings changed",
+    "no broad install or build"
+  ]
+}
