@@ -68,8 +68,15 @@ def which(name: str) -> str | None:
     local = os.environ.get("LOCALAPPDATA")
     home = Path.home()
     if roaming:
-        extras.append(Path(roaming) / "npm" / f"{name}.cmd")
-        extras.append(Path(roaming) / "npm" / name)
+        npm = Path(roaming) / "npm"
+        extras.extend(
+            [
+                npm / f"{name}.cmd",
+                npm / f"{name}.exe",
+                npm / f"{name}.ps1",
+                npm / name,
+            ]
+        )
     if local:
         extras.append(Path(local) / "hermes" / "bin" / name)
     extras.append(home / ".local" / "bin" / name)
@@ -195,20 +202,16 @@ def tool_probe(names: list[str]) -> dict[str, Any]:
         if not path:
             out[n] = {"ok": False, "path": None}
             continue
-        ver_args = {
-            "hermes": ["hermes", "--version"],
-            "claude": ["claude", "--version"],
-            "codex": ["codex", "--version"],
-            "opencode": ["opencode", "--version"],
-            "git": ["git", "--version"],
-            "gh": ["gh", "--version"],
-            "node": ["node", "--version"],
-            "python": ["python", "--version"],
-            "npm": ["npm", "--version"],
-            "pnpm": ["pnpm", "--version"],
-        }.get(n, [n, "--version"])
-        c, o = run_cmd(ver_args, timeout=20)
-        out[n] = {"ok": c == 0, "path": path, "version": (o.splitlines()[0] if o else "")[:120]}
+        # Always invoke the resolved path — bare names often miss npm-global PATH in Python.
+        flag = "--version"
+        c, o = run_cmd([path, flag], timeout=20)
+        if c != 0 and path.lower().endswith(".cmd"):
+            c, o = run_cmd(["cmd.exe", "/c", path, flag], timeout=20)
+        out[n] = {
+            "ok": c == 0,
+            "path": path,
+            "version": (o.splitlines()[0] if o else "")[:120],
+        }
     return out
 
 
