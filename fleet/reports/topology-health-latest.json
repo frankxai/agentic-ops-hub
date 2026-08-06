@@ -1,7 +1,7 @@
 {
   "schema": "topology-health/v1",
   "status": "RED",
-  "generated_at": "2026-08-06T02:11:33+00:00",
+  "generated_at": "2026-08-06T02:20:27+00:00",
   "machine": {
     "hostname": "DESKTOP-1B4ICID",
     "node": "DESKTOP-1B4ICID",
@@ -9,7 +9,7 @@
     "claimed_role": "c940"
   },
   "planes": {
-    "disk_free_gb": 32.15,
+    "disk_free_gb": 29.43,
     "disk_class": "HARD_RED",
     "hermes_home": "C:\\Users\\frank\\AppData\\Local\\hermes",
     "tools": {
@@ -68,42 +68,42 @@
       {
         "name": "default",
         "gateway": "running",
-        "raw": "gpt-5.6-terra running \u2014 \u2014"
+        "summary": "gpt-5.6-terra running \u2014 \u2014"
       },
       {
         "name": "arcanea-agent",
         "gateway": "stopped",
-        "raw": "grok-4.3 stopped arcanea-agent arcanea-agent@0.2.0"
+        "summary": "grok-4.3 stopped arcanea-agent arcanea-agent@0.2.0"
       },
       {
         "name": "arcanea-agent-public-smoke",
         "gateway": "stopped",
-        "raw": "gpt-5.5 stopped \u2014 arcanea-agent-public-smoke@0.1"
+        "summary": "gpt-5.5 stopped \u2014 arcanea-agent-public-smoke@0.1"
       },
       {
         "name": "arcanea-agent-smoke",
         "gateway": "stopped",
-        "raw": "gpt-5.5 stopped \u2014 arcanea-agent-smoke@0.1.0"
+        "summary": "gpt-5.5 stopped \u2014 arcanea-agent-smoke@0.1.0"
       },
       {
         "name": "arcanea-publishing-test",
         "gateway": "stopped",
-        "raw": "\u2014 stopped \u2014 arcanea-publishing-test@0.1.0"
+        "summary": "\u2014 stopped \u2014 arcanea-publishing-test@0.1.0"
       },
       {
         "name": "gemini-35",
         "gateway": "stopped",
-        "raw": "gemini-3.5-flash stopped gemini-35 \u2014"
+        "summary": "gemini-3.5-flash stopped gemini-35 \u2014"
       },
       {
         "name": "music-producer",
         "gateway": "stopped",
-        "raw": "grok-4.3 stopped music-producer music-producer@0.1.0"
+        "summary": "grok-4.3 stopped music-producer music-producer@0.1.0"
       },
       {
         "name": "publishing-house",
         "gateway": "stopped",
-        "raw": "grok-4.3 stopped publishing-house publishing-house@0.1.0"
+        "summary": "grok-4.3 stopped publishing-house publishing-house@0.1.0"
       }
     ],
     "gateways_running": [
@@ -116,7 +116,7 @@
         "source": "hermes mcp list",
         "enabled": true,
         "transport": "stdio",
-        "command": "node",
+        "command_basename": "node",
         "handshake_ok": true,
         "tools": 13
       },
@@ -126,7 +126,7 @@
         "source": "hermes mcp list",
         "enabled": true,
         "transport": "stdio",
-        "command": "node",
+        "command_basename": "node",
         "handshake_ok": true,
         "tools": 4
       }
@@ -174,10 +174,10 @@
     "heartbeat": {
       "path": "C:\\Users\\frank\\agentic-ops\\fleet\\bus\\heartbeats\\c940.json",
       "fresh": true,
-      "age_minutes": 251,
+      "age_minutes": 260,
       "at": "2026-08-05T22:00:21+00:00"
     },
-    "cron_ticker_age_seconds": 1
+    "cron_ticker_age_seconds": 21
   },
   "lifecycle": {
     "declared": [
@@ -199,7 +199,7 @@
     {
       "severity": "RED",
       "code": "disk_hard_floor",
-      "detail": "32.15GB free < 35.0GB hard floor; block heavyweight work"
+      "detail": "29.43GB free < 35.0GB hard floor; block heavyweight work"
     }
   ],
   "next_actions": [
