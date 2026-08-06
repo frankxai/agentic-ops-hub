@@ -1,0 +1,215 @@
+{
+  "schema": "topology-health/v1",
+  "status": "RED",
+  "generated_at": "2026-08-06T02:08:02+00:00",
+  "machine": {
+    "hostname": "DESKTOP-1B4ICID",
+    "node": "DESKTOP-1B4ICID",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "claimed_role": "c940"
+  },
+  "planes": {
+    "disk_free_gb": 32.94,
+    "disk_class": "HARD_RED",
+    "hermes_home": "C:\\Users\\frank\\AppData\\Local\\hermes",
+    "tools": {
+      "git": {
+        "ok": true,
+        "path": "C:\\Program Files\\Git\\mingw64\\bin\\git.EXE",
+        "version": "git version 2.55.0.windows.2"
+      },
+      "gh": {
+        "ok": true,
+        "path": "C:\\Program Files\\GitHub CLI\\gh.EXE",
+        "version": "gh version 2.88.1 (2026-03-12)"
+      },
+      "node": {
+        "ok": true,
+        "path": "C:\\Program Files\\nodejs\\node.EXE",
+        "version": "v24.14.0"
+      },
+      "npm": {
+        "ok": false,
+        "path": "C:\\Program Files\\nodejs\\npm.CMD",
+        "version": "not found"
+      },
+      "pnpm": {
+        "ok": false,
+        "path": "C:\\Users\\frank\\AppData\\Roaming\\npm\\pnpm.CMD",
+        "version": "not found"
+      },
+      "python": {
+        "ok": true,
+        "path": "C:\\Users\\frank\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\python.EXE",
+        "version": "Python 3.11.11"
+      },
+      "hermes": {
+        "ok": true,
+        "path": "C:\\Users\\frank\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\hermes.EXE",
+        "version": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream 01a1037d \u00b7 local 29b8cacf (+1 carried commit)"
+      },
+      "claude": {
+        "ok": true,
+        "path": "C:\\Users\\frank\\.local\\bin\\claude.EXE",
+        "version": "2.1.215 (Claude Code)"
+      },
+      "codex": {
+        "ok": false,
+        "path": "C:\\Users\\frank\\AppData\\Roaming\\npm\\codex.CMD",
+        "version": "not found"
+      },
+      "opencode": {
+        "ok": false,
+        "path": "C:\\Users\\frank\\AppData\\Roaming\\npm\\opencode.CMD",
+        "version": "not found"
+      }
+    },
+    "profiles": [
+      {
+        "name": "default",
+        "gateway": "running",
+        "raw": "gpt-5.6-terra running \u2014 \u2014"
+      },
+      {
+        "name": "arcanea-agent",
+        "gateway": "stopped",
+        "raw": "grok-4.3 stopped arcanea-agent arcanea-agent@0.2.0"
+      },
+      {
+        "name": "arcanea-agent-public-smoke",
+        "gateway": "stopped",
+        "raw": "gpt-5.5 stopped \u2014 arcanea-agent-public-smoke@0.1"
+      },
+      {
+        "name": "arcanea-agent-smoke",
+        "gateway": "stopped",
+        "raw": "gpt-5.5 stopped \u2014 arcanea-agent-smoke@0.1.0"
+      },
+      {
+        "name": "arcanea-publishing-test",
+        "gateway": "stopped",
+        "raw": "\u2014 stopped \u2014 arcanea-publishing-test@0.1.0"
+      },
+      {
+        "name": "gemini-35",
+        "gateway": "stopped",
+        "raw": "gemini-3.5-flash stopped gemini-35 \u2014"
+      },
+      {
+        "name": "music-producer",
+        "gateway": "stopped",
+        "raw": "grok-4.3 stopped music-producer music-producer@0.1.0"
+      },
+      {
+        "name": "publishing-house",
+        "gateway": "stopped",
+        "raw": "grok-4.3 stopped publishing-house publishing-house@0.1.0"
+      }
+    ],
+    "gateways_running": [
+      "default"
+    ],
+    "mcp": [
+      {
+        "name": "starlight-memory",
+        "status": "enabled",
+        "source": "hermes mcp list",
+        "enabled": true,
+        "transport": "stdio",
+        "command": "node",
+        "handshake_ok": true,
+        "tools": 13
+      },
+      {
+        "name": "starlight-substrate",
+        "status": "enabled",
+        "source": "hermes mcp list",
+        "enabled": true,
+        "transport": "stdio",
+        "command": "node",
+        "handshake_ok": true,
+        "tools": 4
+      }
+    ],
+    "cron": {
+      "total": 27,
+      "active": 23,
+      "paused": 4,
+      "active_names": [
+        "daily-ops-sweep",
+        "sis-memory-maintenance",
+        "pr-review-swarm",
+        "railway-queen-weekly-review",
+        "railway-monthly-rotation-audit",
+        "railway-daily-health-check",
+        "fleet-swarm-pulse",
+        "starlight-token-weekly",
+        "starlight-token-plan-weekly",
+        "c940-travel-health-watchdog",
+        "c940-security-sentinel-watchdog",
+        "c940-disk-growth-guard",
+        "c940-safe-reclaim-worker",
+        "starlight-media-daily-draft-pulse",
+        "starlight-queen-autonomy-control",
+        "starlight-estate-merge-queen",
+        "design-workflow-drift-watch",
+        "c940-storage-movement-graph-refresh",
+        "brand-media-control-plane-watch",
+        "github-tech-radar-daily",
+        "github-tech-radar-weekly-review",
+        "seven-hour-autonomous-chief-of-staff",
+        "topology-health-pulse"
+      ],
+      "paused_names": [
+        "content-geo-strategy",
+        "brand-geo-audit",
+        "image-asset-pipeline",
+        "fleet-inventory-sync"
+      ],
+      "paused_grok_or_xai": [
+        "fleet-inventory-sync"
+      ],
+      "unpinned_active_llm": []
+    },
+    "heartbeat": {
+      "path": "C:\\Users\\frank\\agentic-ops\\fleet\\bus\\heartbeats\\c940.json",
+      "fresh": true,
+      "age_minutes": 247,
+      "at": "2026-08-05T22:00:21+00:00"
+    },
+    "cron_ticker_age_seconds": 31
+  },
+  "lifecycle": {
+    "declared": [
+      "profiles",
+      "mcp_servers",
+      "cron_jobs",
+      "coding_clis"
+    ],
+    "installed": {
+      "hermes": true,
+      "claude": true,
+      "codex": false
+    },
+    "scheduled_active": 23,
+    "running_gateways": 1,
+    "delivered_note": "delivery proof is per-job; this receipt is control-plane health only"
+  },
+  "findings": [
+    {
+      "severity": "RED",
+      "code": "disk_hard_floor",
+      "detail": "32.94GB free < 35.0GB hard floor; block heavyweight work"
+    },
+    {
+      "severity": "YELLOW",
+      "code": "tool_missing_codex",
+      "detail": "codex"
+    }
+  ],
+  "next_actions": [
+    "Run safe reclaim of rebuildable caches; block new heavy clones/builds",
+    "Repin paused content/memory/PR crons to openai-codex live provider or keep HOLD explicit"
+  ],
+  "written_to": "C:\\Users\\frank\\AppData\\Local\\hermes\\state\\topology-health-latest.json"
+}

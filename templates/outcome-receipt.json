@@ -1,0 +1,26 @@
+{
+  "schema": "outcome-receipt/v1",
+  "receipt_id": "rcpt_REPLACE",
+  "envelope_id": "env_REPLACE",
+  "created_at": "YYYY-MM-DDTHH:MM:SS+00:00",
+  "machine": "HOST",
+  "status": "candidate",
+  "summary": "What was attempted and what evidence exists",
+  "evidence_refs": [
+    "path/or/url/to/diff-or-test-log"
+  ],
+  "route": {
+    "provider": null,
+    "model": null
+  },
+  "resources": {
+    "tokens": null,
+    "cost_usd": null
+  },
+  "evaluator": null,
+  "security": {
+    "red_team": "not_run",
+    "supply_chain": "not_run"
+  },
+  "notes": "Worker reports cannot self-promote to verified. verified requires named independent evaluator + deterministic gates."
+}
