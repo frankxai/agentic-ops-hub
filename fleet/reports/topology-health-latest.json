@@ -1,7 +1,7 @@
 {
   "schema": "topology-health/v1",
   "status": "RED",
-  "generated_at": "2026-08-06T02:08:02+00:00",
+  "generated_at": "2026-08-06T02:11:33+00:00",
   "machine": {
     "hostname": "DESKTOP-1B4ICID",
     "node": "DESKTOP-1B4ICID",
@@ -9,7 +9,7 @@
     "claimed_role": "c940"
   },
   "planes": {
-    "disk_free_gb": 32.94,
+    "disk_free_gb": 32.15,
     "disk_class": "HARD_RED",
     "hermes_home": "C:\\Users\\frank\\AppData\\Local\\hermes",
     "tools": {
@@ -29,14 +29,14 @@
         "version": "v24.14.0"
       },
       "npm": {
-        "ok": false,
+        "ok": true,
         "path": "C:\\Program Files\\nodejs\\npm.CMD",
-        "version": "not found"
+        "version": "11.6.1"
       },
       "pnpm": {
-        "ok": false,
+        "ok": true,
         "path": "C:\\Users\\frank\\AppData\\Roaming\\npm\\pnpm.CMD",
-        "version": "not found"
+        "version": "10.32.1"
       },
       "python": {
         "ok": true,
@@ -54,14 +54,14 @@
         "version": "2.1.215 (Claude Code)"
       },
       "codex": {
-        "ok": false,
+        "ok": true,
         "path": "C:\\Users\\frank\\AppData\\Roaming\\npm\\codex.CMD",
-        "version": "not found"
+        "version": "codex-cli 0.144.5"
       },
       "opencode": {
-        "ok": false,
+        "ok": true,
         "path": "C:\\Users\\frank\\AppData\\Roaming\\npm\\opencode.CMD",
-        "version": "not found"
+        "version": "1.14.48"
       }
     },
     "profiles": [
@@ -174,10 +174,10 @@
     "heartbeat": {
       "path": "C:\\Users\\frank\\agentic-ops\\fleet\\bus\\heartbeats\\c940.json",
       "fresh": true,
-      "age_minutes": 247,
+      "age_minutes": 251,
       "at": "2026-08-05T22:00:21+00:00"
     },
-    "cron_ticker_age_seconds": 31
+    "cron_ticker_age_seconds": 1
   },
   "lifecycle": {
     "declared": [
@@ -189,7 +189,7 @@
     "installed": {
       "hermes": true,
       "claude": true,
-      "codex": false
+      "codex": true
     },
     "scheduled_active": 23,
     "running_gateways": 1,
@@ -199,12 +199,7 @@
     {
       "severity": "RED",
       "code": "disk_hard_floor",
-      "detail": "32.94GB free < 35.0GB hard floor; block heavyweight work"
-    },
-    {
-      "severity": "YELLOW",
-      "code": "tool_missing_codex",
-      "detail": "codex"
+      "detail": "32.15GB free < 35.0GB hard floor; block heavyweight work"
     }
   ],
   "next_actions": [
