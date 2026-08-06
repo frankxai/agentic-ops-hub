@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""No-agent pulse: write latest receipt; stdout only on non-GREEN or --force."""
+"""No-agent pulse: write latest receipt; stdout only on non-GREEN or --force.
+
+Hermes no_agent semantics: empty stdout = silent success; non-empty stdout =
+deliver alert with success=True; non-zero exit is treated as *script failure*
+(not a health finding). Always exit 0 after a successful receipt build so RED
+surfaces as a clean alert, matching peer watchdogs (disk/travel/sentinel).
+CLI gating (exit 2 on RED) stays on topology_health.py --write only.
+"""
 from __future__ import annotations
 import json
 import sys
@@ -37,7 +44,7 @@ def main() -> int:
         "written_to": str(out),
     }
     print(json.dumps(compact, indent=2))
-    return 0 if receipt.get("status") != "RED" else 2
+    return 0
 
 if __name__ == "__main__":
     raise SystemExit(main())
