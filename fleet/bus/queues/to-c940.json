@@ -4,30 +4,28 @@
   "from": "command-center",
   "issued_at": "2026-07-17T13:35:00+00:00",
   "priority": "P0",
-  "active": [
-    {
-      "id": "C940-CLI-MAX-20260717",
-      "status": "in-progress",
-      "owner_machine": "c940",
-      "branch": "agent/c940/cli-fleet-maximize",
-      "outcome": "Replace activity-based swarm status with live CLI capacity, resource gates, receipt-backed completion, and remote YogaBook truth.",
-      "done_when": [
-        "all control-plane tests pass",
-        "YogaBook remote heartbeat is reconciled and fresh",
-        "unsafe Codex sandbox widening is removed",
-        "version-2 receipt contract blocks report-only completion",
-        "CLI capacity probe is runnable on both machines",
-        "PR is green and integrated or explicit hold is recorded"
-      ]
-    }
-  ],
+  "active": [],
   "historical": [
     {"id": "B1", "status": "delivered", "evidence": "d10d81c"},
     {"id": "B2", "status": "delivered", "evidence": "R1 YELLOW evidence"},
     {"id": "B3", "status": "delivered", "evidence": "packet6-dirty-light.md"},
     {"id": "B4", "status": "partial-manual", "evidence": "rclone 1.74.4 installed; crypt config manual"},
-    {"id": "B5", "status": "delivered", "evidence": "anti-thrash and pulse"}
+    {"id": "B5", "status": "delivered", "evidence": "anti-thrash and pulse"},
+    {
+      "id": "C940-CLI-MAX-20260717",
+      "status": "integrated",
+      "branch": "agent/c940/cli-fleet-maximize",
+      "outcome": "Replace activity-based swarm status with live CLI capacity, resource gates, receipt-backed completion, and remote YogaBook truth.",
+      "evidence": "PR #19 merged 2026-07-17 as 455b4e163632e3ac06627b257e052e01db017bd5; active status cleared 2026-08-07 queue reconcile (issue #36)"
+    }
   ],
-  "coordination": "C940 integrates backend/control-plane; YogaBook independently owns the frontend outcome packet.",
-  "updated_at": "2026-07-17T13:35:00+00:00"
+  "coordination": "C940 integrates backend/control-plane; YogaBook independently owns the frontend outcome packet. No new active items without unique id, repo/branch/path/test bindings, TTL, and content hash.",
+  "dispatch_gate": {
+    "unattended_dispatch": "blocked",
+    "reason": "YogaBook heartbeat not fresh under 24h gate; no new owner-approved active items after reconcile",
+    "book_heartbeat_at": "2026-08-06T13:19:01+00:00",
+    "reconciled_at": "2026-08-07T15:45:00+00:00",
+    "issue": "https://github.com/frankxai/agentic-ops-hub/issues/36"
+  },
+  "updated_at": "2026-08-07T15:45:00+00:00"
 }

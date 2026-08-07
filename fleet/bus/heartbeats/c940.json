@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "no-wait alignment: lanes parallel; not blocked on book heartbeat",
-  "at": "2026-07-16T22:01:33+00:00"
+  "notes": "queue reconcile 2026-08-07; unattended dispatch blocked until queues terminal + book heartbeat fresh",
+  "at": "2026-08-07T15:45:23+00:00"
 }

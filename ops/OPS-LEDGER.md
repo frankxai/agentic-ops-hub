@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-07-18 · **Cadence:** end of each working session (`/ops-sweep`)
+**Last sweep:** 2026-08-07 · **Cadence:** end of each working session (`/ops-sweep`)
+
+## Estate action — 2026-08-07 (C940 Hermes)
+
+- **Queues (#36):** `C940-CLI-MAX-20260717` → historical `integrated` (PR #19 / `455b4e1`). `BOOK-CLI-20260717` → historical `closed-unmerged` (FrankX website PR #326 closed). Both `active` arrays empty. Unattended/remote dispatch remains **blocked** until YogaBook publishes a fresh self-heartbeat (<24h) and new owner-approved items exist.
+- **Helpers:** `scripts/queue_reconcile.py` + `tests/test_queue_reconcile.py` reject active items with merged/closed `source_pr`, duplicate IDs, and stale peer heartbeats for remote dispatch.
+- **CI (#37 partial):** workflow now runs Python `compileall` + deterministic unit tests + queue-document contract. Meaningful required checks land before any branch ruleset. Pre-existing `test_topology_health` host allowlist failures excluded from gate until hermetic.
+- **ClickHouse (#35):** second sample `4440.67 / 5000 MB` (**88.81%**, free 559 MB, Δ +21.8 MB ~24h). Still capacity incident not outage. Receipt: `fleet/reports/railway-clickhouse-sample-2026-08-07.md`. **No volume resize/delete/purge/redeploy** without infrastructure gate.
+- **Merges observed:** ops-hub #33 night-loops, #34 YogaBook estate receipt; website #435 nav cleanup; awesome-hermes-agent-skills #2 RunAPI skill.
+- **Heartbeats:** c940 refreshed `2026-08-07T15:45:23Z`. yoga-book remains `2026-08-06T13:19:01Z` → `book_online=false` under 24h gate (not forged).
 ||> **Note:** REGISTER-BOUNDARIES.md created and enforced during 2026-07-12 sweep. Skill agentic-ops skipped per invocation. 2026-07-13 sweep: git deltas from FrankX (machine status) + SIS (dreaming). Enforced REGISTER-BOUNDARIES.md. Updated fronts/risks/cross-repo status. Suggested DEVICE-STRATEGY.md next actions.
 ||**2026-07-14 Swarm Deployment (C940 Always-On Leader):** DEVICE-STRATEGY.md + PER-DOMAIN-EXECUTION-PROMPTS.md created. 6 Hermes cron jobs deployed and active (daily-ops-sweep, content-geo-strategy, sis-memory-maintenance, brand-geo-audit, image-asset-pipeline, pr-review-swarm). Sample Grok images generated for frankx.ai and Arcanea landing pages (links in results). claude-code skill activated with print-mode aliases ready. All actions respect register boundaries and professional standards. R1 bridge prioritized in content-geo cron.
 ||**2026-07-15 /ops-sweep (Cron Autonomous):** Git deltas collected across 10+ repos (FrankX machine status YELLOW/RED flux, vercel content-integrity-gate branch active, SIS dreaming consolidation, ACOS v12-open-core, Arcanea integrate branch, agentic-ops ledger update). Session log created. REGISTER-BOUNDARIES.md enforced (no violations in deltas; all artifacts align to Professional/Neutral/Mythic registers). Cross-repo status: interconnects stable via SIS→ACOS memory/workflows, FrankX meta-os, Arcanea agent-native. Risks R1/R8 active. DEVICE-STRATEGY next actions suggested below. Machine on C940 executing backend/content/ops per strategy.
