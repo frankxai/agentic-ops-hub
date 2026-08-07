@@ -2,8 +2,8 @@
   "machine_id": "yoga-book",
   "hostname": "Starlight",
   "status": "live",
-  "role": "command-center-frontend-innovation",
+  "role": "frontend-innovation",
   "telegram_bot": "@Hermesyogabookbot",
-  "notes": "dual-plane aligned; openai-codex/gpt-5.6-terra high; C940 heartbeat observed",
-  "at": "2026-07-17T03:41:53+00:00"
+  "notes": "BOOK-ESTATE-20260806 complete: GenCreator PR34 claimed as bounded remote verification HOLD; evidence=fleet/reports/book/2026-08-06-book-estate.md",
+  "at": "2026-08-06T13:19:01+00:00"
 }
