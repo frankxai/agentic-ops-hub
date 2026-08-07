@@ -1,0 +1,221 @@
+# Estate PR Guardian — event-driven, tiered, cost-capped, autonomy-gated.
+# Source of truth: frankxai/agentic-ops-hub · docs/ESTATE-OPS-GOVERNANCE.md
+# Distributed by scripts/rollout-ops-governance.mjs — edit in ops-hub, re-roll, don't hand-edit copies.
+#
+# Behaviour is gated by the repo variable ESTATE_AUTONOMY (off | assist | auto; unset = off).
+# Requires secret ANTHROPIC_API_KEY for the review/fix jobs (classify runs free without it).
+
+name: Estate PR Guardian
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: estate-guardian-${{ github.event.pull_request.number || github.event.issue.number }}
+  cancel-in-progress: true
+
+# Default to read-only; each job asks only for what it needs (L3 — least privilege).
+permissions:
+  contents: read
+
+jobs:
+  # 1 ─ Classify risk (free, always runs on PR events)
+  classify:
+    if: github.event_name == 'pull_request'
+    name: Classify risk
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    timeout-minutes: 3
+    outputs:
+      tier: ${{ steps.tier.outputs.tier }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Diff stats + sacred-path scan
+        id: diff
+        run: |
+          BASE="${{ github.event.pull_request.base.sha }}"
+          HEAD="${{ github.event.pull_request.head.sha }}"
+          STATS=$(git diff --shortstat "$BASE".."$HEAD" || true)
+          FILES=$(echo "$STATS" | grep -oE '[0-9]+ files? changed' | grep -oE '[0-9]+' || echo 0)
+          DELS=$(echo "$STATS" | grep -oE '[0-9]+ deletions?' | grep -oE '[0-9]+' || echo 0)
+          SACRED=no
+          # .claude/ is sacred wholesale — settings.json and hooks/ grant agent permissions,
+          # so they are as escalation-sensitive as agents/ and commands/.
+          for p in ".github/workflows/" ".claude/" "CLAUDE.md" "AGENTS.md" ".github/CODEOWNERS" "app/" "public/" "papa/"; do
+            if git diff --name-only "$BASE".."$HEAD" | grep -q "^$p"; then SACRED=yes; break; fi
+          done
+          echo "files=${FILES:-0}"     >> "$GITHUB_OUTPUT"
+          echo "dels=${DELS:-0}"       >> "$GITHUB_OUTPUT"
+          echo "sacred=${SACRED}"      >> "$GITHUB_OUTPUT"
+      - name: Compute tier
+        id: tier
+        run: |
+          F=${{ steps.diff.outputs.files }}; D=${{ steps.diff.outputs.dels }}; S=${{ steps.diff.outputs.sacred }}
+          if   [ "$F" -gt 500 ] || [ "$D" -gt 10000 ]; then T=BLOCKED
+          elif [ "$F" -gt 50 ]  || [ "$S" = "yes" ];    then T=HIGH_RISK
+          elif [ "$F" -le 5 ]   && [ "$D" -le 100 ];    then T=TRIVIAL
+          else T=STANDARD; fi
+          echo "tier=$T" >> "$GITHUB_OUTPUT"
+      - name: Apply tier label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tier = '${{ steps.tier.outputs.tier }}';
+            const label = 'estate:tier-' + tier.toLowerCase().replace('_','-');
+            try { await github.rest.issues.addLabels({ ...context.repo, issue_number: context.issue.number, labels: [label] }); } catch (e) {}
+      - name: Sticky risk status
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const tier='${{ steps.tier.outputs.tier }}';
+            const emoji={TRIVIAL:'🟢',STANDARD:'🟡',HIGH_RISK:'🟠',BLOCKED:'🔴'}[tier];
+            const marker='<!-- estate-guardian-status -->';
+            const body=`${marker}\n## ${emoji} Estate PR Guardian — **${tier}**\n\n`+
+              `files: ${{ steps.diff.outputs.files }} · deletions: ${{ steps.diff.outputs.dels }} · sacred path: ${{ steps.diff.outputs.sacred }}\n\n`+
+              ({TRIVIAL:'Fast path: CI only. Eligible for auto-merge when green (if repo autonomy = auto).',
+                STANDARD:'Independent Claude review queued. Comment `@estate fix <what>` to apply a scoped fix.',
+                HIGH_RISK:'Full review + human gate. Labeled `estate:needs-human` — a person makes the call.',
+                BLOCKED:'Exceeds safety thresholds. Add `BIG-CHANGE:` or `SACRED-DELETE:` to a commit, or split the PR.'}[tier]);
+            const {data}=await github.rest.issues.listComments({...context.repo, issue_number: context.issue.number, per_page:100});
+            const prev=data.find(c=>c.body?.includes(marker));
+            if(prev){ await github.rest.issues.updateComment({...context.repo, comment_id: prev.id, body}); }
+            else    { await github.rest.issues.createComment({...context.repo, issue_number: context.issue.number, body}); }
+
+  # 2 ─ BLOCKED gate
+  block:
+    if: github.event_name == 'pull_request' && needs.classify.outputs.tier == 'BLOCKED'
+    needs: classify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - run: |
+          BASE="${{ github.event.pull_request.base.sha }}"; HEAD="${{ github.event.pull_request.head.sha }}"
+          if git log --format=%B "$BASE".."$HEAD" | grep -qE 'BIG-CHANGE:|SACRED-DELETE:|MASS-REFACTOR:'; then
+            echo "Override tag present — allowing."; exit 0; fi
+          echo "PR exceeds size thresholds and carries no override tag."; exit 1
+
+  # 3 ─ Independent review (STANDARD/HIGH_RISK) — read-only, scope-limited to the diff
+  review:
+    # Runs as a gate node for every non-off, non-blocked, non-draft PR so `automerge`'s
+    # `needs: [classify, review]` resolves even on TRIVIAL (where the paid step is skipped).
+    if: >
+      github.event_name == 'pull_request' &&
+      (vars.ESTATE_AUTONOMY == 'assist' || vars.ESTATE_AUTONOMY == 'auto') &&
+      needs.classify.outputs.tier != 'BLOCKED' &&
+      github.event.pull_request.draft == false
+    needs: classify
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    # Read-only job by design: the reviewer must not hold a token that can push.
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Claude review (independent, no writes)
+        if: ${{ secrets.ANTHROPIC_API_KEY != '' && (needs.classify.outputs.tier == 'STANDARD' || needs.classify.outputs.tier == 'HIGH_RISK') }}
+        uses: anthropics/claude-code-action@beta
+        with:
+          model: claude-sonnet-4-5
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          max_turns: 6
+          allowed_tools: "Bash,Read,Grep,Glob"
+          direct_prompt: |
+            Review ONLY this pull request's diff as an independent staff engineer.
+            Standards: correctness first; no AI-slop; match existing style; flag anything touching
+            a sacred path (.github/workflows, CLAUDE.md, .claude/agents|commands, app/, public/, live URLs).
+            Do NOT edit files. Post ONE review comment: verdict (APPROVE / REQUEST-CHANGES / BLOCK),
+            the 1-3 highest-leverage issues with file:line, and whether this is safe to auto-merge.
+            Be terse. If it's clean, say so in one line — do not invent problems.
+      - name: Flag for human on HIGH_RISK
+        if: needs.classify.outputs.tier == 'HIGH_RISK'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try { await github.rest.issues.addLabels({ ...context.repo, issue_number: context.issue.number, labels: ['estate:needs-human'] }); } catch(e){}
+
+  # 4 ─ Fix on request (assist/auto only) — surgical, scoped to the comment.
+  # Only maintainers may trigger it: comment bodies are an untrusted boundary
+  # (PROTECTION-LAYERS.md), and this job runs an agent with write tools.
+  fix:
+    if: >
+      github.event_name == 'issue_comment' &&
+      github.event.issue.pull_request != null &&
+      (vars.ESTATE_AUTONOMY == 'assist' || vars.ESTATE_AUTONOMY == 'auto') &&
+      startsWith(github.event.comment.body, '@estate fix') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      # On issue_comment the checkout above lands on the default branch — move to the PR head
+      # so any edit targets the branch under review, and set an identity for the commit.
+      - name: Check out the PR branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr checkout ${{ github.event.issue.number }}
+          git config user.name  "estate-ops[bot]"
+          git config user.email "estate-ops@users.noreply.github.com"
+      - name: Claude scoped fix
+        if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+        uses: anthropics/claude-code-action@beta
+        with:
+          model: claude-sonnet-4-5
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          max_turns: 6
+          allowed_tools: "Bash,Edit,Write,Read,Grep,Glob"
+          direct_prompt: |
+            A maintainer requested a fix on this PR: "${{ github.event.comment.body }}"
+            Apply the smallest change that satisfies exactly that request. Touch nothing else.
+            Never edit a sacred path (.github/workflows, CLAUDE.md, .claude/**, app/, public/, live URLs)
+            without it being explicitly named in the request. Match the surrounding style.
+      # Safety net: if the action left changes uncommitted, commit and push them; if it already
+      # pushed, the tree is clean and this is a no-op.
+      - name: Commit and push if anything changed
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Working tree clean — nothing to push."
+          else
+            git add -A
+            git commit -m "fix: apply @estate scoped fix (requested by @${{ github.event.comment.user.login }})"
+            git push
+          fi
+
+  # 5 ─ Conditional auto-merge (autonomy = auto only, TRIVIAL tier, green, not sacred).
+  # TRIVIAL only: the STANDARD review verdict is an advisory comment — nothing machine-reads
+  # it, so `needs: review` alone would merge a REQUEST-CHANGES/BLOCK verdict. Until the
+  # verdict is wired into a machine-readable check, STANDARD stays with a human merge.
+  automerge:
+    if: >
+      github.event_name == 'pull_request' &&
+      vars.ESTATE_AUTONOMY == 'auto' &&
+      needs.classify.outputs.tier == 'TRIVIAL' &&
+      github.event.pull_request.draft == false
+    needs: [classify, review]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Enable auto-merge (waits for required checks + review)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ github.event.pull_request.number }}" --auto --squash --repo "${{ github.repository }}" || \
+            echo "auto-merge not enabled (branch protection or checks pending) — leaving for the digest."

@@ -1,0 +1,81 @@
+# Estate Digest — ONE cross-repo health report. Replaces every per-PR watch/poll.
+# Source of truth: frankxai/agentic-ops-hub · docs/ESTATE-OPS-GOVERNANCE.md
+# Runs on a schedule (default: daily 08:00 UTC) or on demand. Emits a single report.
+# If the estate is green and nothing needs a human, the report is one line.
+#
+# Install in ONE hub repo (agentic-ops-hub). Needs a token with read access to the estate
+# (default GITHUB_TOKEN covers this repo; set ESTATE_GH_TOKEN with org read scope for cross-repo).
+
+name: Estate Digest
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Sweep the estate → one report
+        env:
+          GH_TOKEN: ${{ secrets.ESTATE_GH_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          OWNER=frankxai
+          # Repos governed by the estate. Keep in sync with rollout targets.
+          REPOS=$(cat <<'EOF'
+          frankx.ai-vercel-website
+          agentic-creator-os
+          FrankX
+          Starlight-Intelligence-System
+          arcanea
+          arcanea-ai-app
+          claude-skills-library
+          agentic-ops-hub
+          vibe-os
+          EOF
+          )
+          # Accumulate into temp files (no echo -e / \n escapes — PR titles are untrusted).
+          NEEDS_FILE=$(mktemp); HEALTH_FILE=$(mktemp)
+          for R in $REPOS; do
+            SLUG="$OWNER/$R"
+            # PRs needing a human (labeled) — one gh call each, no polling loops
+            NH=$(gh pr list --repo "$SLUG" --state open --label 'estate:needs-human' --json number,title,url \
+                  --jq '.[] | "  - [\(.number)] \(.title) — \(.url)"' 2>/dev/null || true)
+            if [ -n "$NH" ]; then
+              printf '\n**%s**\n%s\n' "$R" "$NH" >> "$NEEDS_FILE"
+            fi
+            OPEN=$(gh pr list --repo "$SLUG" --state open --json number --jq 'length' 2>/dev/null || echo 0)
+            printf '| %s | %s |\n' "$R" "$OPEN" >> "$HEALTH_FILE"
+          done
+          {
+            echo "# Estate Digest — $(date -u +%Y-%m-%d)"
+            echo
+            if [ -s "$NEEDS_FILE" ]; then
+              echo "## 🟠 Needs you"; cat "$NEEDS_FILE"
+            else
+              echo "## 🟢 Estate green — nothing needs a human."
+            fi
+            echo
+            echo "## Health (open PRs)"
+            echo "| repo | open PRs |"; echo "|---|---|"; cat "$HEALTH_FILE"
+          } > digest.md
+          cat digest.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Open/refresh the digest issue (one, updated in place)
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = require('fs').readFileSync('digest.md', 'utf8');
+            const title = 'Estate Digest';
+            const {data:issues} = await github.rest.issues.listForRepo({...context.repo, state:'open', labels:'estate:digest'});
+            if (issues.length) {
+              await github.rest.issues.update({...context.repo, issue_number: issues[0].number, body});
+            } else {
+              await github.rest.issues.create({...context.repo, title, body, labels:['estate:digest']});
+            }
