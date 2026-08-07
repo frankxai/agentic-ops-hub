@@ -17,6 +17,11 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Verify agent-rules sync engine runs
         run: node scripts/sync-agent-rules.mjs --help || node scripts/sync-agent-rules.mjs --check || true
 
@@ -26,3 +31,47 @@ jobs:
           for f in ECOSYSTEM.md docs/MCP-STRATEGY.md docs/AGENT-STACK.md docs/PROTECTION-LAYERS.md docs/RED-BLUE-CHARTER.md; do
             test -f "$f" && echo "ok: $f" || { echo "missing: $f"; exit 1; }
           done
+
+      - name: Python syntax compile (control-plane paths)
+        run: |
+          set -e
+          python -m compileall -q scripts fleet tests
+
+      - name: Unit tests (fleet control plane)
+        run: |
+          set -e
+          # topology_health tests currently depend on host allowlist/write paths;
+          # keep them local until hermetic. Gate main on deterministic modules.
+          python -m unittest \
+            tests.test_queue_reconcile \
+            tests.test_fleet_control \
+            tests.test_token_planner \
+            tests.test_cli_capacity \
+            tests.test_night_runner \
+            -v
+
+      - name: Queue documents validate empty-active + no closed-PR actives
+        run: |
+          set -e
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from scripts.queue_reconcile import validate_queue_document
+
+          # Live GitHub PR states are not available in CI without a token.
+          # Contract: no active items may carry a source_pr unless explicitly open,
+          # which we enforce by requiring active lists empty OR source_pr absent
+          # until a future tokenized check is added.
+          for rel in ("fleet/bus/queues/to-c940.json", "fleet/bus/queues/to-book.json"):
+              doc = json.loads(Path(rel).read_text(encoding="utf-8"))
+              errors = validate_queue_document(doc, pr_states={})
+              # allow active items without source_pr; still reject terminal-in-active etc.
+              if errors:
+                  raise SystemExit(f"{rel}: " + "; ".join(errors))
+              for item in doc.get("active") or []:
+                  if "source_pr" in item:
+                      raise SystemExit(
+                          f"{rel}: active item {item.get('id')} has source_pr without CI PR-state check; move to historical or drop source_pr"
+                      )
+              print(f"ok: {rel} active={len(doc.get('active') or [])}")
+          PY

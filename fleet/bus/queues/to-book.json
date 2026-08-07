@@ -5,46 +5,37 @@
   "issued_at": "2026-07-17T13:35:00+00:00",
   "priority": "P0",
   "connection": {
-    "remote_heartbeat_observed": "2026-07-17T03:41:53+00:00",
-    "status": "live-via-origin-main",
+    "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
+    "status": "stale-unverified",
     "hostname": "Starlight",
-    "telegram_bot": "@Hermesyogabookbot"
+    "telegram_bot": "@Hermesyogabookbot",
+    "note": "C940 must not forge YogaBook heartbeat. Fresh self-heartbeat required before remote dispatch."
   },
-  "active": [
+  "active": [],
+  "historical": [
+    {"id": "P4", "status": "delivered", "evidence": "fleet/bus/heartbeats/yoga-book.json"},
+    {"id": "P4b", "status": "delivered", "evidence": "origin/main heartbeat lineage"},
+    {
+      "id": "FE1",
+      "status": "hold",
+      "evidence": "agent/book/r1-cta@062b046; no PR; behind main"
+    },
     {
       "id": "BOOK-CLI-20260717",
-      "status": "queued",
-      "owner_machine": "yoga-book",
-      "primary_cli": "codex",
-      "verifier_cli": "gemini-or-claude",
+      "status": "closed-unmerged",
       "repo": "frankxai/frankx.ai-vercel-website",
       "source_pr": 326,
       "branch": "agent/book/first-100-hardening",
       "outcome": "Harden the production First EUR100 Weekend revenue experience with mobile/browser evidence and an integration decision.",
-      "wiring_doc": "fleet/YOGA-BOOK-CLI-MAX-WIRING.md",
-      "report": "fleet/reports/book/2026-07-17-first-100-hardening.md",
-      "receipt": "fleet/receipts/BOOK-CLI-20260717.json",
-      "done_when": [
-        "live CLI capacity report exists for yoga-book",
-        "dedicated clean worktree and exact branch used",
-        "repo-local lint/typecheck/tests/build exit zero or blocker is explicit",
-        "mobile/browser review evidence is recorded",
-        "commit and PR or explicit hold/rejection integration state exists",
-        "machine-readable receipt is committed and pushed"
-      ],
-      "constraints": [
-        "one heavy coding CLI at a time on YogaBook",
-        "no production deploy or merge without Frank gate",
-        "no second writer in the same worktree",
-        "no danger-full-access, yolo, force push, or credential output"
-      ]
+      "evidence": "source PR #326 CLOSED unmerged; cleared from active 2026-08-07 queue reconcile (issue #36). Do not reuse this queue_item_id."
     }
   ],
-  "historical": [
-    {"id": "P4", "status": "delivered", "evidence": "fleet/bus/heartbeats/yoga-book.json"},
-    {"id": "P4b", "status": "delivered", "evidence": "origin/main heartbeat at 2026-07-17T03:41:53+00:00"},
-    {"id": "FE1", "status": "hold-review-required", "evidence": "agent/book/r1-cta@062b046; no PR; behind main"}
-  ],
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
-  "updated_at": "2026-07-17T13:35:00+00:00"
+  "dispatch_gate": {
+    "remote_dispatch": "blocked",
+    "reason": "peer heartbeat stale under 24h freshness gate; no active items authorized",
+    "reconciled_at": "2026-08-07T15:45:00+00:00",
+    "issue": "https://github.com/frankxai/agentic-ops-hub/issues/36"
+  },
+  "updated_at": "2026-08-07T15:45:00+00:00"
 }

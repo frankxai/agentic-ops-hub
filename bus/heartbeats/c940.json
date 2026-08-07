@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "LIVE aligned UTC now; SSOT fleet/bus/heartbeats; Book peer still MISSING",
-  "at": "2026-07-16T20:48:02+00:00"
+  "notes": "queue reconcile 2026-08-07; unattended dispatch blocked until queues terminal + book heartbeat fresh",
+  "at": "2026-08-07T15:45:23+00:00"
 }
