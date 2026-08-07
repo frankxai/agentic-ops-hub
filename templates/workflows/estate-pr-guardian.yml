@@ -2,7 +2,7 @@
 # Source of truth: frankxai/agentic-ops-hub · docs/ESTATE-OPS-GOVERNANCE.md
 # Distributed by scripts/rollout-ops-governance.mjs — edit in ops-hub, re-roll, don't hand-edit copies.
 #
-# Behaviour is gated by the repo variable ESTATE_AUTONOMY (off | assist | auto; default assist).
+# Behaviour is gated by the repo variable ESTATE_AUTONOMY (off | assist | auto; unset = off).
 # Requires secret ANTHROPIC_API_KEY for the review/fix jobs (classify runs free without it).
 
 name: Estate PR Guardian
@@ -17,11 +17,9 @@ concurrency:
   group: estate-guardian-${{ github.event.pull_request.number || github.event.issue.number }}
   cancel-in-progress: true
 
+# Default to read-only; each job asks only for what it needs (L3 — least privilege).
 permissions:
-  contents: write
-  pull-requests: write
-  issues: write
-  checks: read
+  contents: read
 
 jobs:
   # 1 ─ Classify risk (free, always runs on PR events)
@@ -29,6 +27,10 @@ jobs:
     if: github.event_name == 'pull_request'
     name: Classify risk
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     timeout-minutes: 3
     outputs:
       tier: ${{ steps.tier.outputs.tier }}
@@ -44,7 +46,9 @@ jobs:
           FILES=$(echo "$STATS" | grep -oE '[0-9]+ files? changed' | grep -oE '[0-9]+' || echo 0)
           DELS=$(echo "$STATS" | grep -oE '[0-9]+ deletions?' | grep -oE '[0-9]+' || echo 0)
           SACRED=no
-          for p in ".github/workflows/" ".claude/agents/" ".claude/commands/" "CLAUDE.md" ".github/CODEOWNERS" "app/" "public/" "papa/"; do
+          # .claude/ is sacred wholesale — settings.json and hooks/ grant agent permissions,
+          # so they are as escalation-sensitive as agents/ and commands/.
+          for p in ".github/workflows/" ".claude/" "CLAUDE.md" "AGENTS.md" ".github/CODEOWNERS" "app/" "public/" "papa/"; do
             if git diff --name-only "$BASE".."$HEAD" | grep -q "^$p"; then SACRED=yes; break; fi
           done
           echo "files=${FILES:-0}"     >> "$GITHUB_OUTPUT"
@@ -110,6 +114,11 @@ jobs:
     needs: classify
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    # Read-only job by design: the reviewer must not hold a token that can push.
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
@@ -135,15 +144,22 @@ jobs:
           script: |
             try { await github.rest.issues.addLabels({ ...context.repo, issue_number: context.issue.number, labels: ['estate:needs-human'] }); } catch(e){}
 
-  # 4 ─ Fix on request (assist/auto only) — surgical, scoped to the comment
+  # 4 ─ Fix on request (assist/auto only) — surgical, scoped to the comment.
+  # Only maintainers may trigger it: comment bodies are an untrusted boundary
+  # (PROTECTION-LAYERS.md), and this job runs an agent with write tools.
   fix:
     if: >
       github.event_name == 'issue_comment' &&
       github.event.issue.pull_request != null &&
       (vars.ESTATE_AUTONOMY == 'assist' || vars.ESTATE_AUTONOMY == 'auto') &&
-      startsWith(github.event.comment.body, '@estate fix')
+      startsWith(github.event.comment.body, '@estate fix') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
@@ -181,15 +197,21 @@ jobs:
             git push
           fi
 
-  # 5 ─ Conditional auto-merge (autonomy = auto only, safe tiers, green, not sacred)
+  # 5 ─ Conditional auto-merge (autonomy = auto only, TRIVIAL tier, green, not sacred).
+  # TRIVIAL only: the STANDARD review verdict is an advisory comment — nothing machine-reads
+  # it, so `needs: review` alone would merge a REQUEST-CHANGES/BLOCK verdict. Until the
+  # verdict is wired into a machine-readable check, STANDARD stays with a human merge.
   automerge:
     if: >
       github.event_name == 'pull_request' &&
       vars.ESTATE_AUTONOMY == 'auto' &&
-      (needs.classify.outputs.tier == 'TRIVIAL' || needs.classify.outputs.tier == 'STANDARD') &&
+      needs.classify.outputs.tier == 'TRIVIAL' &&
       github.event.pull_request.draft == false
     needs: [classify, review]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Enable auto-merge (waits for required checks + review)
         env:

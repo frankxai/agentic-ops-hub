@@ -21,19 +21,19 @@ The correct shape is neither. It is **event-driven CI that acts on real events, 
 
 1. **React to events, never poll.** Work is triggered by a PR event (opened, pushed, CI failed, review comment) or a schedule — never by an agent sitting in a loop asking "changed yet?". CI success, merges, and conflict transitions arrive as events; there is nothing to poll.
 2. **Batch, don't nag.** Per-PR status is written **once** and updated **in place** (one sticky comment per PR). Cross-repo state is a **single scheduled digest**, not a message per repo per hour. If nothing is actionable, say nothing.
-3. **Agents prepare; humans commit the irreversible.** Everything below auto-fixes, reviews, labels, and can auto-merge the safe tier. The [L7 hard-stops](PROTECTION-LAYERS.md#l7--human-gate-last-line) are never delegated.
+3. **Agents prepare; humans commit the irreversible.** Everything below auto-fixes, reviews, labels, and can auto-merge the TRIVIAL tier. The [L7 hard-stops](PROTECTION-LAYERS.md#l7--human-gate-last-line) are never delegated.
 
 ---
 
 ## Autonomy levels (per repo)
 
-Every repo runs at exactly one level, set by the `ESTATE_AUTONOMY` repository variable. Default `assist`. Production websites stay `assist` or `off`.
+Every repo runs at exactly one level, set by the `ESTATE_AUTONOMY` repository variable. Unset behaves as `off` (fail closed); `assist` is the recommended working level. Production websites stay `assist` or `off`.
 
 | Level | Agents may… | Never |
 |---|---|---|
-| `off` | run the free risk-classify + post the sticky status | call any paid agent |
-| `assist` (default) | review, comment, label, and **fix on request** (`@estate fix`) | merge; push unrequested commits |
-| `auto` | additionally **auto-merge the safe tier** (TRIVIAL/STANDARD, green, agent-approved, no sacred paths) | auto-merge HIGH_RISK/BLOCKED, sacred paths, or production-URL changes |
+| `off` (and unset) | run the free risk-classify + post the sticky status | call any paid agent |
+| `assist` (recommended) | review, comment, label, and **fix on request** (`@estate fix`, maintainers only) | merge; push unrequested commits |
+| `auto` | additionally **auto-merge the TRIVIAL tier** (green, no sacred paths) | auto-merge STANDARD/HIGH_RISK/BLOCKED, sacred paths, or production-URL changes |
 
 `auto` is opt-in per repo and only appropriate for low-blast-radius repos (skills packs, internal tools). The production site is `assist`.
 
@@ -46,8 +46,8 @@ Reuses the proven classifier from `arcanea-ai-app/guardian-pr-check.yml` — dif
 | Tier | Trigger | What runs | Cost cap |
 |---|---|---|---|
 | 🟢 **TRIVIAL** | ≤5 files, ≤100 deletions, no sacred path (dependabot, typos, docs) | CI only + sticky status; `auto` may merge | $0 |
-| 🟡 **STANDARD** | code, <50 files | one domain reviewer (Claude) → verdict; `auto` may merge on approve | ≤ $0.15 |
-| 🟠 **HIGH_RISK** | >50 files **or** a sacred path (`.github/workflows/`, `CLAUDE.md`, `.claude/agents|commands/`, prod `app/`, URLs) | full review + **escalate to human** (label `estate:needs-human`) | ≤ $1.00 |
+| 🟡 **STANDARD** | code, <50 files | one domain reviewer (Claude) → verdict; the verdict is advisory (not yet a machine-readable check), so the merge stays with a human even at `auto` | ≤ $0.15 |
+| 🟠 **HIGH_RISK** | >50 files **or** a sacred path (`.github/workflows/`, `CLAUDE.md`, `AGENTS.md`, `.claude/`, prod `app/`, URLs) | full review + **escalate to human** (label `estate:needs-human`) | ≤ $1.00 |
 | 🔴 **BLOCKED** | >500 files **or** >10k deletions | auto-reject unless a commit carries `BIG-CHANGE:` / `SACRED-DELETE:` | $0 |
 
 Sacred paths always route to HIGH_RISK regardless of size — that is where reputation and irreversibility live.
@@ -72,9 +72,10 @@ Rule: **no single agent both writes and approves.** The harness that fixes is ne
 ## The escalation ladder (what reaches a human)
 
 ```
-event → classify (free) → [TRIVIAL/STANDARD] review+fix → green? ──auto level──▶ auto-merge
-                              │                              └─assist level─▶ label estate:ready → digest
-                              └[HIGH_RISK] review → label estate:needs-human ──▶ digest (one line)
+event → classify (free) → [TRIVIAL] CI green? ──auto level──▶ auto-merge
+                              │                └─assist level─▶ label estate:ready → digest
+                              ├[STANDARD] review+fix → verdict (advisory) ──▶ human merges → digest
+                              ├[HIGH_RISK] review → label estate:needs-human ──▶ digest (one line)
                               └[BLOCKED] fail with instructions
 ```
 
