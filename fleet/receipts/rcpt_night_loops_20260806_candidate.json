@@ -1,0 +1,29 @@
+{
+  "schema": "outcome-receipt/v1",
+  "receipt_id": "rcpt_c81457580d9c",
+  "envelope_id": "env_50545e10a083",
+  "created_at": "2026-08-06T02:07:48+00:00",
+  "machine": "DESKTOP-1B4ICID",
+  "status": "candidate",
+  "summary": "28 tests OK; topology pulse live RED(disk); council skill installed; crons pinned/resumed; SIS strategic/wisdom/technical entries",
+  "evidence_refs": [
+    "tests/test_topology_health.py",
+    "ops/sessions/2026-08-06-night-loops.md",
+    "C:/Users/frank/AppData/Local/hermes/state/topology-health-latest.json"
+  ],
+  "route": {
+    "provider": "openai-codex",
+    "model": "gpt-5.6-terra"
+  },
+  "resources": {
+    "tokens": null,
+    "cost_usd": null
+  },
+  "evaluator": null,
+  "security": {
+    "red_team": "not_run",
+    "supply_chain": "not_run"
+  },
+  "notes": "Worker reports cannot self-promote to verified",
+  "receipt_hash": "edaf728fa4d4cb1bc21b5da785c3dd16e903e0f70690c8d54f3dd33ec944e0dc"
+}

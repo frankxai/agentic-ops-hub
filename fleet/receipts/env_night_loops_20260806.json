@@ -1,0 +1,46 @@
+{
+  "schema": "run-envelope/v1",
+  "envelope_id": "env_50545e10a083",
+  "created_at": "2026-08-06T02:07:47+00:00",
+  "machine": "DESKTOP-1B4ICID",
+  "objective": "Night loops control-plane: topology health + receipts + council + cron repair",
+  "non_goals": [],
+  "bindings": {
+    "queen": "hermes-default",
+    "worker": "self",
+    "evaluator": "required-independent"
+  },
+  "scope": {
+    "repo": "agentic-ops-hub",
+    "branch": "agent/c940/night-loops-20260806",
+    "path_scope": [
+      "scripts/topology_health.py",
+      "scripts/mission_envelope.py",
+      "docs/HOW-TO-USE-AGENT-STACK.md"
+    ]
+  },
+  "autonomy": {
+    "requested": "A2",
+    "effective": "A2",
+    "notes": "Effective autonomy is min(human, identity, policy, action gate, machine policy)"
+  },
+  "budget": {
+    "metered_usd_cap": null,
+    "max_turns": 90,
+    "wall_time_minutes": null
+  },
+  "stop_conditions": [
+    "budget exhausted",
+    "lease lost",
+    "kill switch",
+    "disk hard floor",
+    "approval expiry"
+  ],
+  "acceptance": {
+    "commands": [],
+    "deterministic_required": true,
+    "llm_judge_optional": true
+  },
+  "status": "open",
+  "envelope_hash": "58ff0b6c49aaddadf16a4c1f82bc71d53af27ce967f747ea26f8e68789a3e05c"
+}
