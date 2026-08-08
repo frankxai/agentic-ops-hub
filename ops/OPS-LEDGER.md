@@ -2,7 +2,14 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-08-07 · **Cadence:** end of each working session (`/ops-sweep`)
+**Last sweep:** 2026-08-09 Fleet Spring board receipt · **Cadence:** end of each working session (`/ops-sweep`)
+
+## Fleet Spring board receipt — 2026-08-09 (C940)
+
+- **Verified bounded outcome:** current cross-site reliability and wiring admission decision recorded in [`fleet/reports/SPRING-BOARD-REVIEW-2026-08-09.md`](../fleet/reports/SPRING-BOARD-REVIEW-2026-08-09.md). Inventory is 16/0/13 with 44.4 GB free: above the 35 GB hard floor but below the 50 GB operating floor. The receipt uses an isolated clean worktree and makes no product/infra mutation.
+- **Decision:** HOLD new mutating lanes. Fetched `origin/main` has no active C940 queue item; Book has no fresh self-heartbeat; FrankX/prod, Arcanea, and the primary control root are dirty/occupied. R1/GEO remains YELLOW; Railway ClickHouse capacity remains a P0 incident, not an outage.
+- **Evidence chain:** live FrankX/GenCreator endpoints and `robots.txt`/`llms.txt` are 200; SIS local_core has 1,449 entries and recent dreaming evidence; Railway ClickHouse is serving with latest deployment success while observability services have failed latest rollouts; remote fleet PR #39 merged as `5433f9fd` after `verify` success. No peer heartbeat, queue, deploy, secret, or Railway state was written.
+- **Next:** reconcile independent General reviews against the exact receipt, run branch diff gates, then choose one owner-approved clean lane only if a durable queue item with evaluator/acceptance scope exists.
 
 ## Estate action — 2026-08-07 (C940 Hermes)
 
