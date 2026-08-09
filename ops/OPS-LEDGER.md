@@ -2,7 +2,10 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-08-07 · **Cadence:** end of each working session (`/ops-sweep`)
+**Last sweep:** 2026-08-09T04:40+02:00 (Queen 10h autonomy start) · **Cadence:** daily 09:00 + end of each working session (`/ops-sweep`)
+|||||> **Register:** Neutral (ops/fleet). REGISTER-BOUNDARIES enforced — no Professional/Mythic voice in this ledger.
+||||||**2026-08-09 Queen 10h autonomy (start · DESKTOP-1B4ICID):** Window ~04:30–14:30 local. Disk **55 GiB free** (floor PASS). Mission: `ops/sessions/2026-08-09-queen-10h-mission.md`. #36 queues **CLOSED** (July actives historical; dispatch_gate blocked on Book heartbeat). Packet6 report: `fleet/reports/packet6-dirty-2026-08-09.md` (vercel dirty 434 NO-SHIP; FrankX 130; Arcanea 101; ops 66). ClickHouse **4352/5000 MB (87.0%)** still P0 #35. Live: frankx.ai / founder-signal / gencreator **200**. Continuation: finite Queen cron ticks. No DNS/Railway resize/dirty wipe.
+
 
 ## Estate action — 2026-08-07 (C940 Hermes)
 
