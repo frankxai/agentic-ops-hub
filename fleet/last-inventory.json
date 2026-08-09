@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-07-16T03:49:09.068775+00:00",
+  "generated_at": "2026-08-09T05:11:13.211598+00:00",
   "hostname": "DESKTOP-1B4ICID",
   "machine_id": "c940",
-  "os": "Windows-11-10.0.26200-SP0",
+  "os": "Windows-10-10.0.26200-SP0",
   "home": "C:\\Users\\frank",
   "disk": {
     "total_gb": 475.6,
-    "used_gb": 410.6,
-    "free_gb": 65.0,
-    "used_pct": 86.3
+    "used_gb": 422.7,
+    "free_gb": 52.9,
+    "used_pct": 88.9
   },
   "tools": {
     "git": "git version 2.55.0.windows.2",
     "gh": "gh version 2.88.1 (2026-03-12)",
     "node": "v24.14.0",
-    "npm": "ERR: [WinError 2] The system cannot find the file specified",
-    "pnpm": "ERR: [WinError 2] The system cannot find the file specified",
-    "python": "Python 3.13.7",
+    "npm": "ERR: [WinError 2] Das System kann die angegebene Datei nicht finden",
+    "pnpm": "ERR: [WinError 2] Das System kann die angegebene Datei nicht finden",
+    "python": "Python 3.11.11",
     "uv": "uv 0.11.28 (ebf0f43d7 2026-07-07 x86_64-pc-windows-msvc)",
-    "hermes": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream f8ddf4fd \u00b7 local 29b8cacf (+1 carried commit)",
-    "claude": "2.1.178 (Claude Code)",
-    "codex": "ERR: [WinError 2] The system cannot find the file specified",
-    "opencode": "ERR: [WinError 2] The system cannot find the file specified",
-    "railway": "ERR: [WinError 2] The system cannot find the file specified",
+    "hermes": "Hermes Agent v0.18.2 (2026.7.7.2) \u00b7 upstream 3a915c46 \u00b7 local 29b8cacf (+1 carried commit)",
+    "claude": "2.1.215 (Claude Code)",
+    "codex": "ERR: [WinError 2] Das System kann die angegebene Datei nicht finden",
+    "opencode": "ERR: [WinError 2] Das System kann die angegebene Datei nicht finden",
+    "railway": "ERR: [WinError 2] Das System kann die angegebene Datei nicht finden",
     "docker": "MISSING",
-    "rclone": "MISSING"
+    "rclone": "rclone v1.74.4"
   },
   "gh_auth_ok": true,
   "gh_auth_snippet": "github.com\n  \u2713 Logged in to github.com account frankxai (keyring)\n  - Active account: true\n  - Git operations protocol: https\n  - Token: gho_************************************\n  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'",
@@ -41,12 +41,12 @@
         "c940": "ops-lead",
         "yoga-book": "ops-read"
       },
-      "branch": "main",
-      "dirty": 17,
-      "head": "b71abef",
+      "branch": "agent/c940/massive-action-receipts-20260803",
+      "dirty": 68,
+      "head": "3e7f59a",
       "origin": "https://github.com/frankxai/agentic-ops-hub",
-      "behind": "4",
-      "ahead": "1"
+      "behind": "0",
+      "ahead": "0"
     },
     {
       "name": "claude-code-config",
@@ -61,10 +61,10 @@
         "yoga-book": "consume"
       },
       "branch": "main",
-      "dirty": 5,
+      "dirty": 13,
       "head": "21859c2",
       "origin": "https://github.com/frankxai/claude-code-config.git",
-      "behind": "8",
+      "behind": "9",
       "ahead": "0"
     },
     {
@@ -80,11 +80,11 @@
         "yoga-book": "ui-polish"
       },
       "branch": "main",
-      "dirty": 111,
-      "head": "9ebb5330",
+      "dirty": 130,
+      "head": "39b56ec1",
       "origin": "https://github.com/frankxai/FrankX.git",
-      "behind": "131",
-      "ahead": "39"
+      "behind": "138",
+      "ahead": "49"
     },
     {
       "name": "frankx.ai-vercel-website",
@@ -99,11 +99,11 @@
         "yoga-book": "frontend-ship"
       },
       "branch": "agent/claude/content-integrity-gate",
-      "dirty": 427,
-      "head": "aa8e2229",
+      "dirty": 434,
+      "head": "aa8e22297",
       "origin": "https://github.com/frankxai/frankx.ai-vercel-website.git",
-      "behind": "0",
-      "ahead": "0"
+      "behind": "fatal:",
+      "ahead": "ambiguous"
     },
     {
       "name": "frankx-prod-sync",
@@ -120,7 +120,7 @@
       "dirty": 2,
       "head": "32cf00c9",
       "origin": "https://github.com/frankxai/frankx.ai-vercel-website.git",
-      "behind": "156",
+      "behind": "239",
       "ahead": "0"
     },
     {
@@ -135,11 +135,11 @@
         "c940": "backend-content-bridge",
         "yoga-book": "product-ui"
       },
-      "branch": "main",
-      "dirty": 1,
-      "head": "1d19755",
+      "branch": "agent/c940/gencreator-logo-system-20260807",
+      "dirty": 2,
+      "head": "4cc4aa6",
       "origin": "https://github.com/frankxai/gencreator.ai.git",
-      "behind": "45",
+      "behind": "0",
       "ahead": "0"
     },
     {
@@ -155,10 +155,10 @@
         "yoga-book": "platform-ui"
       },
       "branch": "integrate/agent-native-main-2026-06-12",
-      "dirty": 100,
-      "head": "3e1ec71b",
+      "dirty": 101,
+      "head": "3e1ec71be",
       "origin": "https://github.com/frankxai/arcanea-ai-app.git",
-      "behind": "36",
+      "behind": "53",
       "ahead": "8"
     },
     {
@@ -173,12 +173,12 @@
         "c940": "skills-lead",
         "yoga-book": "consume"
       },
-      "branch": "feat/v12-open-core",
-      "dirty": 0,
-      "head": "7168d20",
+      "branch": "phase-c/quality-bar-acos-meta",
+      "dirty": 5,
+      "head": "5b40f15",
       "origin": "https://github.com/frankxai/agentic-creator-os.git",
-      "behind": "0",
-      "ahead": "0"
+      "behind": "fatal:",
+      "ahead": "no"
     },
     {
       "name": "Starlight-Intelligence-System",
@@ -192,12 +192,12 @@
         "c940": "memory-lead",
         "yoga-book": "light-read"
       },
-      "branch": "main",
-      "dirty": 22,
-      "head": "d0ed1ee",
+      "branch": "night/2026-07-17-sis-verify",
+      "dirty": 37,
+      "head": "bcf67a4",
       "origin": "https://github.com/frankxai/Starlight-Intelligence-System.git",
-      "behind": "29",
-      "ahead": "8"
+      "behind": "0",
+      "ahead": "3"
     },
     {
       "name": "Business",
@@ -263,7 +263,7 @@
       "lane": null,
       "branch": "main",
       "dirty": 0,
-      "head": "2b23275",
+      "head": "417dc51",
       "origin": "https://github.com/frankxai/vibeclubs.git",
       "behind": "0",
       "ahead": "0"
@@ -294,10 +294,10 @@
       "prod": false,
       "lane": null,
       "branch": "main",
-      "dirty": 9,
+      "dirty": 10,
       "head": "32c8b85",
       "origin": "https://github.com/frankxai/starlight-memory.git",
-      "behind": "3",
+      "behind": "4",
       "ahead": "0"
     },
     {
@@ -310,7 +310,7 @@
       "prod": false,
       "lane": null,
       "branch": "main",
-      "dirty": 0,
+      "dirty": 3,
       "head": "f8e5ceb",
       "origin": "https://github.com/frankxai/agentic-life-os.git",
       "behind": "0",
@@ -372,7 +372,7 @@
   "summary": {
     "repo_count": 16,
     "missing": 0,
-    "dirty": 11,
-    "clean": 5
+    "dirty": 13,
+    "clean": 3
   }
 }
