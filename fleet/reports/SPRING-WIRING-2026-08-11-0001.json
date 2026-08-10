@@ -1,0 +1,66 @@
+{
+  "schema": "fleet-spring-wiring/v1",
+  "generated_at": "2026-08-10T22:03:23Z",
+  "cycle": "2026-08-11-0001",
+  "host": {
+    "machine_id": "c940",
+    "hostname": "DESKTOP-1B4ICID"
+  },
+  "receipt": {
+    "status": "hold",
+    "scope": "serial evidence-only board review",
+    "origin_main": "d701ea317d34ee5b52c9f60e54db4b73ebe32c37",
+    "writer_authorized": false,
+    "independent_reviews": "advisory-pending"
+  },
+  "capacity": {
+    "disk_free_gib": 42.6,
+    "hard_floor_gib": 35,
+    "execution_floor_gib": 50,
+    "band": "between-hard-and-execution-floor"
+  },
+  "references": {
+    "spring_registry": {
+      "path": "fleet/SPRING-PROJECTS-REGISTRY.md",
+      "authority": "local-root-reference-only",
+      "mutated": false
+    },
+    "objectives": {
+      "path": "objectives-registry.json",
+      "authority": "local-root-reference-only",
+      "mutated": false,
+      "ids": ["OBJ-FX-001", "OBJ-GC-001", "OBJ-SIS-001", "OBJ-ACOS-001", "OBJ-ARC-001", "OBJ-GEO-001"]
+    },
+    "memory": {
+      "authority": "SIS local_core",
+      "mcp": "sis-memory-mcp",
+      "entry_total": 1484,
+      "operational_entries": 1419
+    },
+    "bus": {
+      "queue_path": "fleet/bus/queues/to-c940.json",
+      "active_items": 0,
+      "unattended_dispatch": "blocked",
+      "book_heartbeat": "missing"
+    },
+    "railway": {
+      "issue": "https://github.com/frankxai/agentic-ops-hub/issues/35",
+      "state": "open",
+      "last_durable_clickhouse_mb": 4431,
+      "capacity_mb": 5000,
+      "risk": "P0 capacity incident"
+    }
+  },
+  "edges": [
+    {"from": "OBJ-FX-001", "to": "OBJ-GC-001", "relation": "R1 product bridge", "state": "yellow"},
+    {"from": "OBJ-FX-001", "to": "OBJ-GEO-001", "relation": "discoverability dependency", "state": "yellow"},
+    {"from": "OBJ-SIS-001", "to": "SIS local_core", "relation": "canonical memory authority", "state": "active"},
+    {"from": "fleet/bus/to-c940", "to": "writer lanes", "relation": "dispatch gate", "state": "blocked"},
+    {"from": "Railway issue #35", "to": "Fleet Control", "relation": "capacity risk", "state": "open"}
+  ],
+  "non_actions": [
+    "No root-only registry or objectives rewrite",
+    "No deployment, merge, push, queue, peer-heartbeat, Railway, DNS, credential, dependency, or build action",
+    "No writer lane authorized"
+  ]
+}
