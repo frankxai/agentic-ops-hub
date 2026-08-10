@@ -1,0 +1,42 @@
+{
+  "schema": "fleet-spring-wiring/v1",
+  "generated_at": "2026-08-10T19:01:08+00:00",
+  "register": "Neutral",
+  "host": "DESKTOP-1B4ICID",
+  "capacity_gate": {
+    "free_gib": 44.1,
+    "hard_floor_gib": 35,
+    "execution_floor_gib": 50,
+    "writer_admitted": false,
+    "reason": "Below execution floor; no current C940 queue item; dirty production and authoring paths."
+  },
+  "nodes": [
+    {"id": "frankx", "objective": "OBJ-FX-001", "state": "YELLOW"},
+    {"id": "gencreator", "objective": "OBJ-GC-001", "state": "YELLOW"},
+    {"id": "sis", "objective": "OBJ-SIS-001", "state": "ACTIVE_INTEGRATION_HOLD"},
+    {"id": "acos", "objective": "OBJ-ACOS-001", "state": "HOLD"},
+    {"id": "arcanea", "objective": "OBJ-ARC-001", "state": "AT_RISK_HOLD"},
+    {"id": "railway", "objective": "P6", "state": "P0_HOLD"},
+    {"id": "fleet-control", "objective": "capacity-and-bus", "state": "YELLOW"},
+    {"id": "sis-local-core", "state": "CANONICAL"},
+    {"id": "fleet-bus", "state": "ACTIVE_EMPTY_QUEUE"}
+  ],
+  "edges": [
+    {"from": "frankx", "to": "gencreator", "relation": "R1_content_to_product", "state": "YELLOW"},
+    {"from": "sis-local-core", "to": "fleet-control", "relation": "knowledge_provision", "state": "ACTIVE"},
+    {"from": "fleet-bus", "to": "fleet-control", "relation": "dispatch_gate", "state": "BLOCKED"},
+    {"from": "railway", "to": "fleet-control", "relation": "capacity_incident", "state": "P0"},
+    {"from": "fleet-control", "to": "frankx", "relation": "capacity_gate", "state": "HOLD"},
+    {"from": "fleet-control", "to": "acos", "relation": "clean_lane_required", "state": "HOLD"},
+    {"from": "fleet-control", "to": "arcanea", "relation": "clean_lane_required", "state": "HOLD"}
+  ],
+  "sources": [
+    "fleet/last-inventory.json",
+    "origin/main:fleet/bus/queues/to-c940.json",
+    "OPS-LEDGER.md",
+    "SIS MCP stats/recent entries",
+    "live HTTP probes",
+    "GitHub issue #35"
+  ],
+  "derived_receipt": "fleet/reports/SPRING-BOARD-REVIEW-2026-08-10-2101.md"
+}
