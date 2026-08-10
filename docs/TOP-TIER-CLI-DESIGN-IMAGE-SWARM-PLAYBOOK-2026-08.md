@@ -4,7 +4,8 @@
 **Verified:** 2026-08-11 (Book / Windows host)  
 **Canonical repo:** [`frankxai/agentic-ops-hub`](https://github.com/frankxai/agentic-ops-hub) → `docs/TOP-TIER-CLI-DESIGN-IMAGE-SWARM-PLAYBOOK-2026-08.md`  
 **Design SoT companion:** [`frankxai/starlight-design-intelligence`](https://github.com/frankxai/starlight-design-intelligence) → `playbooks/top-tier-cli-image-design-swarm.md`  
-**Harness mirrors:** `~/.agent-harness/UI-STACK-RADAR.md`, `DESIGN-SOURCE-CATALOG.md`, `GENERATION-A11Y-CHECKLIST.md`
+**App Factory (ideate → persona/gstack → SOTA UI → micro-SaaS/AaaS → stores):** `docs/app-factory/` · Hermes skill `app-factory-pipeline`  
+**Harness mirrors:** `~/.agent-harness/UI-STACK-RADAR.md`, `DESIGN-SOURCE-CATALOG.md`, `GENERATION-A11Y-CHECKLIST.md`, `APP-FACTORY.md`
 
 This document answers: what are the **best 2026 workflows** for Grok CLI + the rest of Frank’s CLIs, native image gen, open design tools/icons/templates, and the **most successful agent skills + swarms** — mapped to **this machine’s installed reality**, not a shopping list.
 
