@@ -2,6 +2,7 @@
 
 **Status:** active estate operating system  
 **Verified:** 2026-08-11  
+**Commercial portfolio / vertical product routing:** `../digital-product-empire/README.md`  
 **Canonical repo:** [`frankxai/agentic-ops-hub`](https://github.com/frankxai/agentic-ops-hub) → `docs/app-factory/`  
 **Design companion:** [`frankxai/starlight-design-intelligence`](https://github.com/frankxai/starlight-design-intelligence) → `playbooks/app-factory-design.md`  
 **Hermes skill:** `app-factory-pipeline`  
