@@ -57,6 +57,7 @@ No generic "AI transformation." No cloned sites sold as separate companies. No c
 | `05-90-DAY-BUILD-AND-SALES-PLAN.md` | execution sequence |
 | `06-SWARM-DELIVERY-AND-CLIENT-TRUST.md` | client delivery, security, governance |
 | `07-MEASUREMENTS-AND-DECISION-LOG.md` | operating metrics / stage gates |
+| `08-APP-FACTORY-12H-24H-TOKEN-AND-CLI-PLAN.md` | non-executing, receipt-gated 12h/24h build plan |
 | `templates/` | client-ready commercial documents |
 
 ## Truth states
