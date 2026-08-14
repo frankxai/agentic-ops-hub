@@ -4,6 +4,6 @@
   "status": "live",
   "role": "frontend-innovation",
   "telegram_bot": "@Hermesyogabookbot",
-  "notes": "BOOK-ESTATE-20260806 complete: GenCreator PR34 claimed as bounded remote verification HOLD; evidence=fleet/reports/book/2026-08-06-book-estate.md",
-  "at": "2026-08-06T13:19:01+00:00"
+  "notes": "Book live; identity yogabook/Starlight/83KJ; observed C940 LIVE host=DESKTOP-1B4ICID gateway=@lenovostarlightbot at=2026-08-14T22:47:18Z; public SSH:22 closed-by-design (not expected); Tailscale not installed yet; dual ONLINE via git bus+SIS; no C940 worktree prune",
+  "at": "2026-08-14T22:50:38+00:00"
 }
