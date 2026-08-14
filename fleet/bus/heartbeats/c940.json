@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "queue reconcile 2026-08-07; unattended dispatch blocked until queues terminal + book heartbeat fresh",
-  "at": "2026-08-07T15:45:23+00:00"
+  "notes": "C940 live; Hermes default gateway only; tailnet not installed; public SSH closed by design; Book should use git bus + SIS + @lenovostarlightbot DM, not port 22",
+  "at": "2026-08-14T22:47:18+00:00"
 }
