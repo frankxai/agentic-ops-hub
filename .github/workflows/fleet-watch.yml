@@ -1,0 +1,64 @@
+# Fleet liveness watch — the off-machine dead-man's switch.
+#
+# Every other liveness signal (topology-health-pulse, host-watchdog, the 6h
+# Telegram pulse) runs ON C940, so an offline C940 silences its own alarms
+# and event-driven CI simply stops running when pushes stop. This workflow
+# runs on GitHub's schedule instead: a dark machine, a stale ops ledger, or
+# an expired queue item CAUSES an alert rather than suppressing one.
+#
+# Durable-output-sink law: findings land as a GitHub issue (created once,
+# then commented per firing), never report-only into a run log.
+name: Fleet watch
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  liveness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fleet liveness check
+        id: watch
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python scripts/fleet_watch.py 2>&1 | tee watch.out
+
+      - name: File findings as a durable issue
+        if: steps.watch.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          {
+            echo "Scheduled fleet-watch run failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo
+            echo '```'
+            cat watch.out
+            echo '```'
+          } > issue-body.md
+          NUM=$(gh issue list --search "Fleet liveness watch in:title" --state open --json number --jq '.[0].number' || true)
+          if [ -z "$NUM" ]; then
+            gh issue create \
+              --title "Fleet liveness watch: stale signals" \
+              --body-file issue-body.md
+          else
+            gh issue comment "$NUM" --body-file issue-body.md
+          fi
+
+      - name: Propagate result
+        if: steps.watch.outcome == 'failure'
+        run: exit 1
