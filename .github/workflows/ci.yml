@@ -44,6 +44,7 @@ jobs:
           # keep them local until hermetic. Gate main on deterministic modules.
           python -m unittest \
             tests.test_queue_reconcile \
+            tests.test_fleet_watch \
             tests.test_fleet_control \
             tests.test_token_planner \
             tests.test_cli_capacity \
@@ -64,7 +65,9 @@ jobs:
           # until a future tokenized check is added.
           for rel in ("fleet/bus/queues/to-c940.json", "fleet/bus/queues/to-book.json"):
               doc = json.loads(Path(rel).read_text(encoding="utf-8"))
-              errors = validate_queue_document(doc, pr_states={})
+              # require_ttl enforces the to-c940.json coordination contract:
+              # every active item must carry expires_at or ttl_hours.
+              errors = validate_queue_document(doc, pr_states={}, require_ttl=True)
               # allow active items without source_pr; still reject terminal-in-active etc.
               if errors:
                   raise SystemExit(f"{rel}: " + "; ".join(errors))

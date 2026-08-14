@@ -51,6 +51,29 @@ def heartbeat_is_fresh(
     return observed >= current - timedelta(hours=max_age_hours)
 
 
+def item_is_expired(item: dict[str, Any], *, now: datetime | None = None) -> bool:
+    """True when an active item's declared TTL has elapsed.
+
+    Fails closed: an unparseable expires_at/ttl_hours, or a ttl_hours with no
+    issued_at/updated_at anchor, counts as expired. Items that declare no TTL
+    at all return False here — require_ttl in validate_queue_document decides
+    whether that absence is itself an error.
+    """
+    current = now or datetime.now(timezone.utc)
+    expires = item.get("expires_at")
+    if expires is not None:
+        return _parse_time(str(expires)) < current
+    ttl = item.get("ttl_hours")
+    if ttl is None:
+        return False
+    try:
+        ttl_hours = float(ttl)
+    except (TypeError, ValueError):
+        return True
+    anchor = _parse_time(str(item.get("updated_at") or item.get("issued_at") or ""))
+    return anchor + timedelta(hours=ttl_hours) < current
+
+
 def source_pr_blocks_active(item: dict[str, Any], pr_state: str | None) -> bool:
     """True when an active item still points at a finished GitHub PR."""
     if "source_pr" not in item:
@@ -69,6 +92,7 @@ def validate_queue_document(
     pr_states: dict[int, str] | None = None,
     peer_heartbeat: dict[str, Any] | None = None,
     require_fresh_peer_for_remote: bool = False,
+    require_ttl: bool = False,
     now: datetime | None = None,
     max_age_hours: float = 24,
 ) -> list[str]:
@@ -95,6 +119,16 @@ def validate_queue_document(
             errors.append(f"active item {item_id} has terminal status {status}")
         if status not in ACTIVE_STATUSES:
             errors.append(f"active item {item_id} has non-active status {status!r}")
+        has_ttl = "expires_at" in item or "ttl_hours" in item
+        if require_ttl and not has_ttl:
+            errors.append(
+                f"active item {item_id} missing ttl (expires_at or ttl_hours) "
+                "required by the coordination contract"
+            )
+        if has_ttl and item_is_expired(item, now=now):
+            errors.append(
+                f"active item {item_id} ttl expired; move to historical or renew"
+            )
         source_pr = item.get("source_pr")
         if source_pr is not None:
             try:
