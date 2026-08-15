@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 live; Hermes default gateway only; tailnet not installed; public SSH closed by design; Book should use git bus + SIS + @lenovostarlightbot DM, not port 22",
-  "at": "2026-08-14T22:47:18+00:00"
+  "notes": "C940 live; Tailscale 1.102.2 installed NeedsLogin \u2014 browser auth required; public SSH closed; gateway default @lenovostarlightbot; git bus SoT until both online on same tailnet",
+  "at": "2026-08-15T12:56:42+00:00"
 }
