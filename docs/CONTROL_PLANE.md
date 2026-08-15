@@ -20,8 +20,11 @@ Last updated: 2026-08-15.
 - MCP own-vs-adopt strategy (`docs/MCP-STRATEGY.md`)
 - Agent stack and protection layers
 - Configuration alignment for the entire fleet
+- Live fleet source-of-truth (`fleet/`, `bus/heartbeats`, ops ledger)
 
-This is where all agents look for behavioral instruction, and where the ecosystem's architecture is documented.
+This is where all agents look for behavioral instruction, where the ecosystem's architecture is documented, and where fleet state is recorded.
+
+**Naming trap:** The local folder historically named `agentic-ops` remotes to `frankxai/agentic-ops-hub` (this repo). The private remote `frankxai/agentic-ops` is a different sibling (ASPH/protocol spec). Do not treat the private remote as the config plane.
 
 ---
 
@@ -33,7 +36,7 @@ This is where all agents look for behavioral instruction, and where the ecosyste
 | **`starlight-command-center`** | Desktop cockpit | Human-facing dashboard, topology view, stream health UI |
 | `agentic-ops` | Supporting (protocol reference) | ASPH protocol spec, governance doc, reference implementation |
 | `starlight-agent-config` | Supporting (fleet config) | Git-backed fleet config that feeds the hub |
-| `claude-code-config` | Supporting (Claude-only) | Claude Code–specific config dump |
+| `claude-code-config` | Supporting (hooks companion) | Claude Code–specific config and hooks (still in hub clone-manifest) |
 
 ### Demoted cockpits
 
@@ -52,7 +55,7 @@ If you're linking to a "command center" or "cockpit," link to **`starlight-comma
 
 ### Security note
 
-**`personal-backup-critical`** — credential incident, rotate, take off GitHub.
+**`personal-backup-critical`** — private, ~257 MB, description admits credentials/browser/OneNote, last write March 2026. Rotate and take off GitHub.
 
 ---
 
