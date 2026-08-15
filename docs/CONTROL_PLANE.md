@@ -39,10 +39,20 @@ This is where all agents look for behavioral instruction, and where the ecosyste
 
 These repos are **no longer cockpits** and should not be used for new control-plane or dashboard work:
 
-- **`frankx-starlight-command`** — mission-control and catalog features; superseded by `starlight-command-center`
-- **`frankx-os`** — stale public OS/hub attempt; last push February 2026; archived
+- **`hermes-cockpit`** — Hermes-only profile registry, not the fleet desktop
+- **`jarvisops-desktop`** — competing native desktop control plane; keep as scanner, not promoted
+- **`starlight-command`** — earlier "live cockpit" OS, cooling, name-collides with command-center
+- **`starlight-agentic-os`** — public agent-pack "command center", not the operator cockpit
+- **`StarlightOS`** — hosted productization shell, not an operator cockpit
+- **`awesome-repo-control-plane`** — awesome-* catalog only, not fleet control
+- **`frankx-starlight-command`** — portfolio map/catalog, not a running cockpit
+- **`frankx-os`** — stale 1-commit public stub
 
 If you're linking to a "command center" or "cockpit," link to **`starlight-command-center`**. Do not create new ones.
+
+### Security note
+
+**`personal-backup-critical`** — credential incident, rotate, take off GitHub.
 
 ---
 
