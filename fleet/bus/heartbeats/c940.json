@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 Queen 14h T0; disk 43.4 after 355MiB reclaim; RAM serial; #481/#88 HOLD comments posted; Tailscale NeedsLogin; content-geo paused",
-  "at": "2026-08-16T03:15:35+00:00"
+  "notes": "C940 Queen 14h T7; disk 45.94 RED_EXEC; RAM 1.12 SERIAL; website Production==144be8c18e2d #486; GC Production==e04326575d #45; Tailscale NeedsLogin; content-geo paused",
+  "at": "2026-08-16T10:43:30+00:00"
 }
