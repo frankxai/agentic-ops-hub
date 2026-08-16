@@ -2,6 +2,8 @@
   "machine_id": "yoga-book",
   "hostname": "Starlight",
   "node": "Starlight",
+  "model": "83KJ",
+  "tag": "yogabook",
   "platform": "Windows-11-10.0.26200-SP0",
-  "at": "2026-08-15T13:04:46+00:00"
+  "at": "2026-08-16T06:06:08+00:00"
 }
