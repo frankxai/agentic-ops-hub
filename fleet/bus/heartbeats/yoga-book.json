@@ -4,9 +4,10 @@
   "status": "live",
   "role": "frontend-innovation",
   "telegram_bot": "@Hermesyogabookbot",
-  "free_gib": 154.4,
+  "free_gib": 149.9,
   "storage_mode": "BOUNDED",
-  "notes": "Book live; identity yogabook/Starlight/83KJ. ACK C940 12h quality wave c52cb6e4af32; C940 disk 45GiB CRITICAL serial-remote-only; Production==main 0b5e09caa3; content-geo paused (dirty prod checkout). Do not prune C940 worktrees. Tailscale: not installed on Book (no tailscale.exe/service); fleet note also tailnet-not-installed on C940 — same-tailnet pending install both sides. Dual ONLINE via hermes-bus push 5f2da14 + SIS; invalid local c940 HB (hostname Starlight) quarantined.",
+  "notes": "Book live yogabook/Starlight/83KJ. ACK C940 14h night wave c52cb6e4af32 (hourly x14); reclaim +355MiB noted; Prod 0b5e09caa3; HOLD intake #481 + SIS #88. Do not prune C940 trees. C940 disk 43GiB serial. Tailscale: MSI downloaded (38MB) but INSTALL HOLD — zombie elevated msiexec PID blocked (access denied kill) + UAC elevation canceled; Frank must approve admin install once. hermes-bus HB push fa60861.",
   "ack_c940_wave": "c52cb6e4af32",
-  "at": "2026-08-16T02:44:30+00:00"
+  "tailscale": "hold_needs_uac",
+  "at": "2026-08-16T03:32:00+00:00"
 }
