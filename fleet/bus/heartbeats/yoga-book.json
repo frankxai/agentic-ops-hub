@@ -2,8 +2,11 @@
   "machine_id": "yoga-book",
   "hostname": "Starlight",
   "status": "live",
-  "role": "command-center-frontend-innovation",
+  "role": "frontend-innovation",
   "telegram_bot": "@Hermesyogabookbot",
-  "notes": "dual-plane aligned; openai-codex/gpt-5.6-terra high; C940 heartbeat observed",
-  "at": "2026-07-17T03:41:53+00:00"
+  "free_gib": 154.4,
+  "storage_mode": "BOUNDED",
+  "notes": "Book live; identity yogabook/Starlight/83KJ. ACK C940 12h quality wave c52cb6e4af32; C940 disk 45GiB CRITICAL serial-remote-only; Production==main 0b5e09caa3; content-geo paused (dirty prod checkout). Do not prune C940 worktrees. Tailscale: not installed on Book (no tailscale.exe/service); fleet note also tailnet-not-installed on C940 — same-tailnet pending install both sides. Dual ONLINE via hermes-bus push 5f2da14 + SIS; invalid local c940 HB (hostname Starlight) quarantined.",
+  "ack_c940_wave": "c52cb6e4af32",
+  "at": "2026-08-16T02:44:30+00:00"
 }
