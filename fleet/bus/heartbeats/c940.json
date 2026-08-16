@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 live; Tailscale 1.102.2 installed NeedsLogin \u2014 browser auth required; public SSH closed; gateway default @lenovostarlightbot; git bus SoT until both online on same tailnet",
-  "at": "2026-08-15T12:56:42+00:00"
+  "notes": "C940 Queen 12h wave-quality T0; disk 45.36 RED_EXEC; Production==main 0b5e09caa3; content-geo paused (dirty prod checkout); Tailscale NeedsLogin; no worktree prune",
+  "at": "2026-08-16T02:40:18+00:00"
 }
