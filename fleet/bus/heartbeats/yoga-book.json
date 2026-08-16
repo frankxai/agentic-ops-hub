@@ -4,10 +4,10 @@
   "status": "live",
   "role": "frontend-innovation",
   "telegram_bot": "@Hermesyogabookbot",
-  "free_gib": 149.9,
+  "free_gib": 148.28,
   "storage_mode": "BOUNDED",
-  "notes": "Book live yogabook/Starlight/83KJ. ACK C940 14h night wave c52cb6e4af32 (hourly x14); reclaim +355MiB noted; Prod 0b5e09caa3; HOLD intake #481 + SIS #88. Do not prune C940 trees. C940 disk 43GiB serial. Tailscale: MSI downloaded (38MB) but INSTALL HOLD — zombie elevated msiexec PID blocked (access denied kill) + UAC elevation canceled; Frank must approve admin install once. hermes-bus HB push fa60861.",
-  "ack_c940_wave": "c52cb6e4af32",
+  "notes": "Book HB fresh. ACK C940 T1 Production==dc9d67bc (#482 music/studio titles live 200, no doubled | FrankX). #481 closed superseded. C940 disk 45.9 RED_EXEC RAM 2.4 SERIAL. Remaining website BEHIND/CONFLICTING stay parked. No C940 tree prune. Tailscale still HOLD (UAC). hermes-bus HB f3b396a.",
+  "ack_c940_prod": "dc9d67bc",
   "tailscale": "hold_needs_uac",
-  "at": "2026-08-16T03:32:00+00:00"
+  "at": "2026-08-16T04:19:34+00:00"
 }
