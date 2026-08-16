@@ -4,10 +4,11 @@
   "status": "live",
   "role": "frontend-innovation",
   "telegram_bot": "@Hermesyogabookbot",
-  "free_gib": 151.9,
+  "free_gib": 151.01,
   "storage_mode": "BOUNDED",
-  "notes": "Book HB fresh on origin/main path. identity yogabook/Starlight/83KJ. ACK C940 fleet-inventory-sync 06:02Z: disk 45.7 RED, RAM RED SERIAL, control-only, website BEHIND parked, vercel dirty NO-SHIP. hermes-bus HB 15c8acf. Tailscale HOLD (UAC). No C940 tree prune. No peer HB forge.",
-  "ack_inventory": "2026-08-16T06:02Z",
+  "notes": "Book HB fresh. ACK C940 T7 Production==144be8c18e2d #486 Dream100 live /dream-100 /signals /api snapshot 2026-08-16.2; GC Production==e04326575d #45; C940 HB 10:43Z; Tailscale leftover NeedsLogin (C940) + Book UAC HOLD. Dual ONLINE git-bus.",
+  "ack_t7_prod": "144be8c18e2d",
+  "ack_gc": "e04326575d",
   "tailscale": "hold_needs_uac",
-  "at": "2026-08-16T06:06:08+00:00"
+  "at": "2026-08-16T10:45:05+00:00"
 }
