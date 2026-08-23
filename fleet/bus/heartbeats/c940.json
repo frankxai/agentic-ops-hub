@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 Queen 14h T7; disk 45.94 RED_EXEC; RAM 1.12 SERIAL; website Production==144be8c18e2d #486; GC Production==e04326575d #45; Tailscale NeedsLogin; content-geo paused",
-  "at": "2026-08-16T10:43:30+00:00"
+  "notes": "C940 live; travel-mode ON; gateway default @lenovostarlightbot; Tailscale 100.74.27.0 online; Book starlight last seen offline; disk ~53GiB; heavy LLM paused; public SSH closed; git bus SoT",
+  "at": "2026-08-22T12:48:57+00:00"
 }
