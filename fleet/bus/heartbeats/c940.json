@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 live; travel-mode ON; gateway default @lenovostarlightbot; Tailscale 100.74.27.0; Swarm=bulletin only require_mention; public SSH closed; git bus SoT",
-  "at": "2026-08-23T10:22:51+00:00"
+  "notes": "C940 live; GPT-5.6 Terra Queen; Tailscale peer Book/Starlight online; travel-mode ON; public SSH closed; serial control mode below 50GiB; git bus authoritative",
+  "at": "2026-08-25T01:27:57+00:00"
 }

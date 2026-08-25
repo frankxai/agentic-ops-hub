@@ -11,10 +11,45 @@
     "telegram_bot": "@Hermesyogabookbot",
     "note": "C940 must not forge YogaBook heartbeat. Fresh self-heartbeat required before remote dispatch."
   },
-  "active": [],
+  "active": [
+    {
+      "id": "BOOK-HEARTBEAT-20260825",
+      "title": "Publish Yoga Book self-heartbeat after verified tailnet join",
+      "owner": "yoga-book",
+      "priority": "P0",
+      "issued_by": "c940",
+      "issued_at": "2026-08-25T01:28:34+00:00",
+      "ttl_hours": 24,
+      "scope": [
+        "fleet/bus/heartbeats/yoga-book.json",
+        "fleet/bus/identity/yoga-book.json"
+      ],
+      "constraints": [
+        "run only on physical Yoga Book",
+        "never write c940 heartbeat",
+        "no Swarm dialogue; git bus only",
+        "no public SSH"
+      ],
+      "acceptance": [
+        "Yoga Book runs fleet_bus.py identity and self-only heartbeat",
+        "published origin/main JSON has fresh at timestamp and says Tailscale online",
+        "C940 observes the exact main file; queue item marked done only after that"
+      ],
+      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16.",
+      "status": "active"
+    }
+  ],
   "historical": [
-    {"id": "P4", "status": "delivered", "evidence": "fleet/bus/heartbeats/yoga-book.json"},
-    {"id": "P4b", "status": "delivered", "evidence": "origin/main heartbeat lineage"},
+    {
+      "id": "P4",
+      "status": "delivered",
+      "evidence": "fleet/bus/heartbeats/yoga-book.json"
+    },
+    {
+      "id": "P4b",
+      "status": "delivered",
+      "evidence": "origin/main heartbeat lineage"
+    },
     {
       "id": "FE1",
       "status": "hold",
@@ -32,10 +67,10 @@
   ],
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
   "dispatch_gate": {
-    "remote_dispatch": "blocked",
-    "reason": "peer heartbeat stale under 24h freshness gate; no active items authorized",
-    "reconciled_at": "2026-08-07T15:45:00+00:00",
-    "issue": "https://github.com/frankxai/agentic-ops-hub/issues/36"
+    "remote_dispatch": "bounded-book-heartbeat-only",
+    "reason": "Tailscale peer is live but durable Book Git heartbeat is stale; C940 cannot forge it.",
+    "c940_observed_peer": "Starlight / 100.83.206.47 / Online",
+    "reconciled_at": "2026-08-25T01:28:34+00:00"
   },
-  "updated_at": "2026-08-07T15:45:00+00:00"
+  "updated_at": "2026-08-25T01:28:34+00:00"
 }
