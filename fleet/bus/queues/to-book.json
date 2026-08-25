@@ -35,7 +35,8 @@
         "published origin/main JSON has fresh at timestamp and says Tailscale online",
         "C940 observes the exact main file; queue item marked done only after that"
       ],
-      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16."
+      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16.",
+      "status": "active"
     }
   ],
   "historical": [
