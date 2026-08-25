@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 live; GPT-5.6 Terra Queen; Tailscale peer Book/Starlight online; travel-mode ON; public SSH closed; serial control mode below 50GiB; git bus authoritative",
-  "at": "2026-08-25T01:27:57+00:00"
+  "notes": "C940 live; GPT-5.6 Terra Queen 14h wave T5; Tailscale Online peers arcanea+Starlight/Book; public SSH closed; disk~57GiB YELLOW serial-ok; Production==150d7da92; Book git HB still stale BOOK-HEARTBEAT-20260825; git bus authoritative",
+  "at": "2026-08-25T08:09:32+00:00"
 }
