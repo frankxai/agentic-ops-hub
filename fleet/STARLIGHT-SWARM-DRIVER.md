@@ -204,6 +204,28 @@ Until then: **DM = work · Swarm channel = bulletin**.
 | `~/.hermes` (per machine) | Gateway + Telegram config |
 | skill `agentic-fleet-strategy` | Agent playbook |
 
+## 11. Historical 7h swarm packet (2026-08-19 — closed)
+
+**Status:** the 7-hour window expired on 2026-08-20. The packet, Japanese/precision guidance, and
+sample contract are retained as historical examples only; they are **not** an active assignment, a
+current queue claim, or evidence that a machine executed work.
+
+### Reusing the pattern safely
+
+1. Verify the executing machine and its current repository/worktree before any write.
+2. Inspect the live queue and an existing task contract before creating another task; preserve stale
+   envelopes and send one explicit priority-1 `SUPERSEDES <id>` correction when required.
+3. Issue a fresh, dated contract with a machine owner, relative path allowlist, resource budget,
+   expiry, and non-empty done condition. The issuer and owner must be proven separately.
+4. The owner machine alone may claim, heartbeat, or complete that contract. Completion requires a
+   current result reference; a historical report or stale heartbeat is not a completion receipt.
+5. Keep all work subject to the existing human gates for merges, deploys, credentials, spending,
+   external sends, and destructive operations.
+
+Historical references: `fleet/bus/queues/7h-godmode-principles-swarm-evolution-2026-08-19.json`,
+`fleet/bus/contracts/sample-jp-precision-swarm-contract-2026-08-19.json`, and
+`fleet/docs/7h-godmode-lanes-2026-08-19.md`.
+
 ### Private DM mirror (both bots)
 
 Private Telegram DMs never cross machines. After a proposal in DM:

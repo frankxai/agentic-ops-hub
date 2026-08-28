@@ -64,4 +64,29 @@
 - [x] Dirty top-3 classified  
 - [ ] Swarm used only for short status  
 
-**Last update:** 2026-07-16T16:22:09+00:00 · C940 B1–B4 done; Book P4 OPEN  
+**Last reconciled:** 2026-08-28T11:32:57+00:00 · this document distinguishes historical entries from
+current work; it is not a machine-liveness source.
+
+## Current control-plane reconciliation (2026-08-28)
+
+- The 2026-07 B1–B5 rows above are historical. They are not an authorization to restart C940 work.
+- `fleet/bus/heartbeats/c940.json` and `fleet/bus/heartbeats/yoga-book.json` are observed historical
+  files. Only their physical machine may refresh them; a stale heartbeat proves neither current work
+  nor current availability.
+- The prior private-bus Observatory envelope
+  `da6438f6-12f2-4fc5-953d-3b7cd741bbc3` remains pending without a `resultRef`. It is superseded by
+  priority-1 envelope `1c8e7f46-872a-4369-a665-6341ef10afcb`; C940 must provide the next receipt.
+- The 2026-08-19 seven-hour packet is historical. It is not a current queue item or a basis for a
+  second concurrent campaign.
+
+### Dispatch rules for new work
+
+1. Verify the local machine identity and four Git facts before a lane write.
+2. Inspect active queues/contracts first. Preserve stale envelopes; send at most one explicit
+   priority-1 supersession rather than duplicate tasks.
+3. Create a fresh contract with `task-lease --file`; only its issuer may write the lease and only its
+   owner may claim or complete it. Expired or unclaimed contracts cannot receive a receipt.
+4. Keep peer identities/heartbeats out of other machines' commits. Use a returned `resultRef`, not a
+   chat update, as cross-machine completion evidence.
+5. Merges, deploys, credentials, spending, external sends, force pushes, and branch deletion remain
+   human-gated.

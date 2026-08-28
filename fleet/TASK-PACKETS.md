@@ -148,6 +148,12 @@ Execute now.
 | 5 Future | On demand | orchestrator |
 | 6 Dirty steward | C940 follow-up | github |
 
+**Task-contract rule (v1):** Serious tasks use a fresh `fleet/bus/contracts/<task_id>.json` lease with
+machine owner, relative allowlist, budget, expiry, and a non-empty done condition. The issuing machine
+creates it only with `python scripts/fleet_bus.py task-lease --task-id <id> --file <contract.json>`;
+the owner machine then claims it and may issue its receipt. Never infer a live task from a historical
+contract, receipt, heartbeat, or queue file. See `fleet/TASK-CONTRACTS.md`.
+
 ---
 
 ## Reporting format (all packets)
