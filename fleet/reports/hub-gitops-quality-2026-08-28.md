@@ -97,6 +97,12 @@ Explicitly excluded: pre-existing `README.md`, peer-owned `fleet/bus/heartbeats/
 untracked materials, and the generated legacy mirror `bus/heartbeats/yoga-book.json`. No broad staging
 is used.
 
+## Draft PR
+
+Draft PR [#54](https://github.com/frankxai/agentic-ops-hub/pull/54) was opened against `main`.
+At creation it pointed to `41fb2d24ea28ecdacb7ed72810eed8ff087e1f47` and reported `DIRTY`,
+so it is explicitly held for a normal base reconciliation and fresh exact-tip review.
+
 ## Remaining gate
 
 This receipt records draft-PR preparation, not shipment. A fresh exact-index review, commit, push, and
