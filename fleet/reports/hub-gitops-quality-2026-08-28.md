@@ -93,6 +93,10 @@ tests/test_fleet_bus.py
 fleet/reports/hub-gitops-quality-2026-08-28.md
 ```
 
+These paths were staged explicitly (no broad add) and committed as
+`41fb2d24ea28ecdacb7ed72810eed8ff087e1f47`; this receipt's PR-link amendment is
+`74547b238d9319b414150db483e2d98596df4c70`.
+
 Explicitly excluded: pre-existing `README.md`, peer-owned `fleet/bus/heartbeats/c940.json`, unrelated
 untracked materials, and the generated legacy mirror `bus/heartbeats/yoga-book.json`. No broad staging
 is used.
@@ -105,6 +109,6 @@ so it is explicitly held for a normal base reconciliation and fresh exact-tip re
 
 ## Remaining gate
 
-This receipt records draft-PR preparation, not shipment. A fresh exact-index review, commit, push, and
-draft PR are required before any merge decision. The peer's C940-owned Observatory completion remains
-**pending peer execution** until a returned `resultRef` is observed.
+This receipt records a committed draft-PR candidate, not shipment. Before any merge decision, perform a
+normal current-base reconciliation and fresh exact-tip review. The peer's C940-owned Observatory
+completion remains **pending peer execution** until a returned `resultRef` is observed.
