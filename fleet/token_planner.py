@@ -5,9 +5,12 @@ from __future__ import annotations
 import argparse
 import json
 import shlex
+from collections.abc import Iterable
 from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 
 class PlannerError(ValueError):
@@ -215,6 +218,181 @@ class Planner:
             "**Human review required.** No unattended merge, main push, or production deploy.",
         ]
         return "\n".join(lines) + "\n"
+
+
+_WEEKDAYS = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3, "friday": 4, "saturday": 5, "sunday": 6}
+_TIER_ORDER = {"haiku": 0, "sonnet": 1, "opus": 2, "fable": 3}
+
+
+def parse_timestamp(value: str | datetime) -> datetime:
+    if isinstance(value, datetime):
+        return value if value.tzinfo else value.replace(tzinfo=timezone.utc)
+    parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
+
+
+@dataclass
+class PlanLimits:
+    """Claude subscription allowance plane: weekly model-time, not USD.
+
+    Anthropic meters paid plans in hours of model use (a weekly limit with a
+    fixed per-account reset, plus a 5-hour session window), so the USD
+    envelopes elsewhere in this file do not apply to subscription-metered runs.
+    There is NO public API endpoint for subscription usage: consumption is
+    estimated from local Claude Code session JSONL (see fleet/usage_ingest.py),
+    and `/usage` inside a Claude Code session is the authoritative human
+    cross-check. Internal unit: STE (Sonnet-5-token-equivalents) - tokens
+    weighted per kind by API price ratio, then per model so Sonnet 5 = 1.0.
+    Numbers in plan_limits.json carry provenance/confidence; estimates are
+    calibration priors, never contract values.
+    """
+
+    config: dict[str, Any]
+
+    @classmethod
+    def from_file(cls, path: Path | str) -> "PlanLimits":
+        with Path(path).open(encoding="utf-8") as handle:
+            return cls(json.load(handle))
+
+    def weekly_window(self, now: datetime) -> tuple[datetime, datetime]:
+        reset = self.config["weekly_reset"]
+        local = parse_timestamp(now).astimezone(ZoneInfo(reset["timezone"]))
+        anchor = local.replace(hour=int(reset["hour"]), minute=0, second=0, microsecond=0)
+        while anchor.weekday() != _WEEKDAYS[str(reset["weekday"]).lower()] or anchor > local:
+            anchor -= timedelta(days=1)
+        return anchor, anchor + timedelta(days=7)
+
+    def session_window(
+        self, now: datetime, records: Iterable[dict[str, Any]] = ()
+    ) -> tuple[datetime, datetime]:
+        """Current 5-hour block: starts at the top of the hour of the first
+        activity after the previous block ends (same anchoring ccusage uses)."""
+        hours = int(self.config["session_window_hours"]["value"])
+        now = parse_timestamp(now)
+        start = None
+        for record in sorted(records, key=lambda item: parse_timestamp(item["timestamp"])):
+            when = parse_timestamp(record["timestamp"])
+            if when > now:
+                break
+            if start is None or when >= start + timedelta(hours=hours):
+                start = when.replace(minute=0, second=0, microsecond=0)
+        if start is None or now >= start + timedelta(hours=hours):
+            start = now.replace(minute=0, second=0, microsecond=0)
+        return start, start + timedelta(hours=hours)
+
+    def boost_multiplier(self, now: datetime) -> float:
+        boost = self.config["boost"]
+        active = parse_timestamp(now) < parse_timestamp(boost["expires"])
+        return float(boost["multiplier"]) if active else 1.0
+
+    def weight_for(self, model: str) -> float:
+        weights = self.config["weights"]
+        for name, value in weights.items():
+            if name in {"$comment", "provenance", "confidence", "default"}:
+                continue
+            if name in model:
+                return float(value)
+        return float(weights["default"])
+
+    def weighted_tokens(self, record: dict[str, Any]) -> float:
+        kinds = self.config["token_kind_multipliers"]
+        raw = (
+            float(record.get("input_tokens", 0)) * float(kinds["input"])
+            + float(record.get("output_tokens", 0)) * float(kinds["output"])
+            + float(record.get("cache_creation_input_tokens", 0)) * float(kinds["cache_creation"])
+            + float(record.get("cache_read_input_tokens", 0)) * float(kinds["cache_read"])
+        )
+        return raw * self.weight_for(str(record.get("model", "")))
+
+    def _bucket_matches(self, bucket: str, model: str) -> bool:
+        patterns = self.config["buckets"][bucket]["match"]
+        return "*" in patterns or any(pattern in model for pattern in patterns)
+
+    def bucket_usage(self, records: Iterable[dict[str, Any]], now: datetime) -> dict[str, Any]:
+        now = parse_timestamp(now)
+        start, end = self.weekly_window(now)
+        boost = self.boost_multiplier(now)
+        per_hour = float(self.config["calibration"]["sonnet_tokens_per_hour"])
+        consumed = {name: 0.0 for name in self.config["buckets"]}
+        for record in records:
+            when = parse_timestamp(record["timestamp"])
+            if when < start or when > now:
+                continue
+            burn = self.weighted_tokens(record)
+            model = str(record.get("model", ""))
+            for name in consumed:
+                if self._bucket_matches(name, model):
+                    consumed[name] += burn
+        buckets = {}
+        for name, spec in self.config["buckets"].items():
+            capacity = float(spec["weekly_hours_planning"]) * per_hour * boost
+            fraction = max(0.0, 1.0 - consumed[name] / capacity) if capacity else 0.0
+            buckets[name] = {
+                "capacity_ste": capacity,
+                "consumed_ste": consumed[name],
+                "remaining_fraction": round(fraction, 4),
+            }
+        return {
+            "window": {"start": start.isoformat(), "end": end.isoformat()},
+            "boost_multiplier": boost,
+            "buckets": buckets,
+        }
+
+    def binding_fraction(self, usage: dict[str, Any], model: str) -> float:
+        """Smallest remaining fraction among the buckets this model draws from
+        (all_models always; plus the model-specific bucket)."""
+        return min(
+            bucket["remaining_fraction"]
+            for name, bucket in usage["buckets"].items()
+            if self._bucket_matches(name, model)
+        )
+
+    def normal_model(self, job_class: str) -> str:
+        models = self.config["advice"]["normal_models"]
+        return str(models.get(job_class, models["default"]))
+
+    def advise(self, remaining_fraction: float, job_class: str, critical: bool = False) -> dict[str, Any]:
+        """Routing recommendation that down-tiers as the weekly allowance
+        depletes: >60% left honors normal routing, below ~30% non-critical
+        classes drop to Sonnet/Haiku, below ~10% everything not explicitly
+        critical goes to the cheapest passing tier."""
+        advice = self.config["advice"]
+        thresholds = advice["thresholds"]
+        normal = self.normal_model(job_class)
+        if remaining_fraction > float(thresholds["normal_above"]):
+            posture = "normal"
+        elif remaining_fraction > float(thresholds["watch_above"]):
+            posture = "watch"
+        elif remaining_fraction > float(thresholds["conserve_above"]):
+            posture = "conserve"
+        else:
+            posture = "floor"
+        model = normal
+        if critical:
+            reason = f"critical flag set: {normal} kept regardless of {posture} posture"
+        elif posture == "normal":
+            reason = "allowance healthy: normal routing honored"
+        elif posture == "watch":
+            reason = "allowance thinning: normal routing still honored; prefer cheaper tiers where quality allows"
+        elif posture == "conserve":
+            if job_class in advice["needs_expensive"]:
+                reason = f"{job_class} measurably needs its tier: {normal} reserved"
+            elif _TIER_ORDER.get(normal, 1) > _TIER_ORDER["sonnet"]:
+                model = "sonnet"
+                reason = "allowance low: non-critical work capped at sonnet"
+            else:
+                reason = f"allowance low: {normal} already at or below sonnet"
+        else:
+            model = str(advice["floor_models"].get(job_class, advice["floor_models"]["default"]))
+            reason = "allowance nearly exhausted: cheapest passing tier only"
+        return {
+            "job_class": job_class,
+            "remaining_fraction": remaining_fraction,
+            "posture": posture,
+            "model": model,
+            "critical": critical,
+            "reason": reason,
+        }
 
 
 def load_json(path: str) -> dict[str, Any]:

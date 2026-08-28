@@ -1,0 +1,99 @@
+{
+  "$comment": "Claude Max subscription allowance plane. Currency here is weekly model-time allowance, NOT USD - never mix with model-routing.json budget_usd envelopes. Weight derivation: allowance burn per token is approximated by output-price ratios (USD per MTok output: Haiku 4.5 = 5, Sonnet 5 = 10, Opus 5 = 25, Fable 5 = 50; input prices 1/2/5/10 share the same 5:1 output:input ratio, so the ranking is identical either way). Normalized to Sonnet 5 = 1.0: haiku 5/10 = 0.5, sonnet 10/10 = 1.0, opus 25/10 = 2.5, fable 50/10 = 5.0. Fable 5 burns 2.0x Opus 5 per token - the single most important routing fact once the allowance thins.",
+  "plan": "claude-max-20x",
+  "verified_as_of": "2026-08-28",
+  "authoritative_source": "/usage inside a Claude Code session (live read); Settings -> Usage (next reset time). No public API endpoint exposes subscription usage - everything computed from this file is an estimator to cross-check against /usage.",
+  "weekly_reset": {
+    "weekday": "monday",
+    "hour": 9,
+    "timezone": "Europe/Berlin",
+    "provenance": "PLACEHOLDER - the weekly reset day/time is per-account and stable; read the real value from Settings -> Usage and set it here",
+    "confidence": "placeholder"
+  },
+  "session_window_hours": {
+    "value": 5,
+    "provenance": "Anthropic plan docs: session limit resets every 5 hours; verified 2026-08-28",
+    "confidence": "verified"
+  },
+  "boost": {
+    "multiplier": 1.5,
+    "expires": "2026-09-01T00:00:00+00:00",
+    "provenance": "Anthropic: weekly limits boosted 50% on all paid plans through 2026-08-31 (verified 2026-08-28). Exact expiry instant/timezone not published; modeled as end of 2026-08-31 UTC",
+    "confidence": "verified multiplier and end date; estimated exact expiry instant"
+  },
+  "weights": {
+    "$comment": "Relative allowance burn per token, Sonnet 5 = 1.0, matched by substring against the model id. Derived from output USD/MTok divided by Sonnet 5's 10: haiku 5/10 = 0.5, sonnet 10/10 = 1.0, opus 25/10 = 2.5, fable 50/10 = 5.0.",
+    "haiku": 0.5,
+    "sonnet": 1.0,
+    "opus": 2.5,
+    "fable": 5.0,
+    "default": 1.0,
+    "provenance": "API price ratios verified 2026-08-28; that subscription allowance burn tracks price ratios is an assumption",
+    "confidence": "verified ratios; estimated mapping from price to allowance burn"
+  },
+  "token_kind_multipliers": {
+    "$comment": "Token kinds are not equally expensive. Output:input = 5:1 on every model above (10/2, 25/5, 50/10, 5/1). Cache multipliers use standard Anthropic API cache pricing (5-minute write 1.25x input, read 0.1x input). Without the 0.1x cache-read discount, Claude Code cache reads dominate raw counts and overstate burn by an order of magnitude.",
+    "input": 1.0,
+    "output": 5.0,
+    "cache_creation": 1.25,
+    "cache_read": 0.1,
+    "provenance": "output:input ratio derived from the verified 2026-08-28 prices; cache multipliers assumed from standard Anthropic API cache pricing, not part of the verified plan-limit ground truth",
+    "confidence": "verified output ratio; estimated cache multipliers"
+  },
+  "calibration": {
+    "sonnet_tokens_per_hour": 2000000,
+    "$comment": "Estimated input-equivalent tokens consumed by one hour of model time. Pure calibration knob: after a week of data, adjust until the computed remaining fraction agrees with /usage.",
+    "provenance": "unverified working estimate",
+    "confidence": "estimate"
+  },
+  "buckets": {
+    "all_models": {
+      "match": ["*"],
+      "weekly_hours_planning": 360,
+      "published_range_hours": [240, 480],
+      "provenance": "No all-models hour figure published; reuses the Max 20x Sonnet range 240-480 h/week as the prior, planning value = midpoint",
+      "confidence": "estimate"
+    },
+    "sonnet": {
+      "match": ["sonnet"],
+      "weekly_hours_planning": 360,
+      "published_range_hours": [240, 480],
+      "provenance": "Max 20x published 240-480 h/week of Sonnet - figures for the Sonnet 4 generation, a range not a guarantee; planning value = midpoint. Calibration prior, never a hard contract number",
+      "confidence": "verified range (older model generation); estimated planning value"
+    },
+    "opus": {
+      "match": ["opus", "fable"],
+      "weekly_hours_planning": 32,
+      "published_range_hours": [24, 40],
+      "provenance": "Max 20x published 24-40 h/week of Opus - figures for the Opus 4 generation; planning value = midpoint. Opus is tracked and reset separately (verified). Fable-class models ASSUMED to meter against this premium bucket - unverified, check /usage",
+      "confidence": "verified range (older model generation) and separate tracking; estimated planning value; fable membership is an estimate"
+    }
+  },
+  "advice": {
+    "$comment": "Claude-lane model per job class when work runs on the subscription. Deliberately separate from model-routing.json, which routes across vendors and denominates in USD.",
+    "thresholds": {
+      "normal_above": 0.6,
+      "watch_above": 0.3,
+      "conserve_above": 0.1
+    },
+    "needs_expensive": ["deep-backend"],
+    "normal_models": {
+      "deep-backend": "opus",
+      "low-stakes": "haiku",
+      "repo-ops": "haiku",
+      "default": "sonnet"
+    },
+    "floor_models": {
+      "deep-backend": "sonnet",
+      "default": "haiku"
+    },
+    "provenance": "fleet doctrine set in this change; class-to-model view mirrors the Claude lane of model-routing.json",
+    "confidence": "policy, not a measurement"
+  },
+  "overflow": {
+    "usage_credits_at_api_rates": true,
+    "daily_redemption_cap_usd": 2000,
+    "provenance": "Anthropic: usage credits extend past the included limit at standard API rates, capped at $2,000 redemption/day; verified 2026-08-28",
+    "confidence": "verified"
+  }
+}
