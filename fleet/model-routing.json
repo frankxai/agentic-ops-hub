@@ -1,79 +1,80 @@
 {
-  "version": 2,
+  "version": 3,
+  "updated": "2026-08-29",
   "night_cap_usd": 40,
   "defaults": {
     "unattended": true,
-    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/night",
+    "report_root": "C:/Users/frank/agentic-ops/fleet/reports/agents",
     "minimum_free_disk_gb": 50,
     "maximum_ram_percent": 90,
     "minimum_available_ram_gb": 2,
     "max_concurrent_missions": 1
   },
-  "routes": {
-    "orchestration": {
-      "agent": "hermes",
-      "model": "grok-4.5",
-      "budget_usd": 5,
-      "max_turns": 10,
-      "why": "Queen judgment, coordination, and concise reporting"
+  "tiers": {
+    "free": {
+      "primary": "opencode/hy3-free",
+      "rotating": "omniroute/auto/best-free",
+      "selection_rule": "weekly_free_model_rotator pins the current best-free winner into routing.free.active; hy3-free stays the declared primary until a weekly probe beats it",
+      "use_for": [
+        "code review of non-prod branches",
+        "best-practice / lint / style enforcement",
+        "research summarization and corpus indexing",
+        "docs and metadata generation",
+        "low-stakes refactors and observers/evaluators",
+        "satellite-brand GEO content drafts"
+      ],
+      "do_not_use_for": [
+        "prod main ship",
+        "security/money/legal/credential actions",
+        "R1 bridge or pricing/email sends"
+      ]
     },
-    "deep-backend": {
-      "agent": "claude",
-      "model": "sonnet",
-      "budget_usd": 20,
-      "max_turns": 25,
-      "why": "Deep multi-file backend reasoning and autonomous TDD loops"
+    "critical": {
+      "orchestrate": "hermes/grok-4.6",
+      "implement": "openai-codex/gpt-5.6-terra",
+      "implement_fallback": "openai-codex/gpt-5.6-sol",
+      "review": "different-family-from-implementer (codex vs grok-4.6 vs claude-sonnet-4-6)",
+      "use_for": [
+        "frankx.ai production deploy path",
+        "R1 FrankX to GenCreator bridge",
+        "security / secrets / billing",
+        "any main-branch mutation or Vercel deploy"
+      ],
+      "why": "Only where needed; flat Max/Ultra capacity on bounded deliverables, never synthetic burn"
     },
-    "refactor": {
-      "agent": "codex",
-      "model": "default",
-      "budget_usd": 20,
-      "max_turns": 20,
-      "why": "Fast mechanical edits, local verification, and bounded batch fixes"
-    },
-    "long-context": {
-      "agent": "gemini",
-      "model": "gemini-3.5",
-      "budget_usd": 10,
-      "max_turns": 10,
-      "why": "Long-context repository mapping before focused implementation"
-    },
-    "low-stakes": {
-      "agent": "opencode",
-      "model": "free",
-      "budget_usd": 0,
-      "max_turns": 15,
-      "why": "High-volume low-risk work without paid metered spend"
-    },
-    "ui": {
-      "agent": "cursor",
-      "model": "interactive",
-      "budget_usd": 15,
-      "max_turns": 15,
-      "why": "Human-in-the-loop visual iteration on Yoga Book"
-    },
-    "repo-ops": {
-      "agent": "github",
-      "model": "deterministic-cli",
-      "budget_usd": 2,
-      "max_turns": 5,
-      "why": "Deterministic issue, PR, CI, and repository operations"
-    },
-    "infra": {
-      "agent": "hermes",
-      "model": "grok-4.5",
-      "budget_usd": 10,
-      "max_turns": 15,
-      "why": "Queen plus domain skills for gated infrastructure operations"
+    "research": {
+      "implement": "openai-codex/gpt-5.6-terra",
+      "long_context": "gemini-3.5-flash",
+      "live_web": "hermes/grok-4.6",
+      "use_for": [
+        "repository mapping and literature survey",
+        "architecture research and tech-radar synthesis",
+        "backend + product R&D"
+      ]
     }
+  },
+  "routes": {
+    "orchestration": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 5, "max_turns": 10, "why": "Queen judgment, coordination, concise reporting" },
+    "deep-backend": { "agent": "claude", "model": "sonnet", "budget_usd": 20, "max_turns": 25, "why": "Deep multi-file backend TDD (fallback lane)" },
+    "refactor": { "agent": "codex", "model": "gpt-5.6-terra", "budget_usd": 20, "max_turns": 20, "why": "Fast mechanical edits + local verification" },
+    "long-context": { "agent": "gemini", "model": "gemini-3.5", "budget_usd": 10, "max_turns": 10, "why": "Long-context repo mapping" },
+    "free-review": { "agent": "opencode", "model": "opencode/hy3-free", "budget_usd": 0, "max_turns": 15, "why": "Non-critical code review / best-practice on free tier" },
+    "free-observer": { "agent": "opencode", "model": "omniroute/auto/best-free", "budget_usd": 0, "max_turns": 10, "why": "Health/observer/eval on rotating best-free" },
+    "ui": { "agent": "cursor", "model": "interactive", "budget_usd": 15, "max_turns": 15, "why": "Human-in-loop visual iteration on Yoga Book" },
+    "repo-ops": { "agent": "github", "model": "deterministic-cli", "budget_usd": 2, "max_turns": 5, "why": "Deterministic issue/PR/CI" },
+    "infra": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 10, "max_turns": 15, "why": "Queen + railway skills, gated" }
+  },
+  "free_rotation": {
+    "cron": "weekly-free-model-rotator",
+    "schedule": "0 3 * * 0",
+    "action": "probe opencode models omniroute/auto/best-free; if winner != active, update tiers.free.active + ledger; never downgrade to a metered key",
+    "pin_file": "fleet/free-model-active.json"
   },
   "fallbacks": {
     "claude": ["codex", "hermes"],
     "codex": ["claude", "hermes"],
     "gemini": ["claude", "codex"],
     "opencode": ["codex"],
-    "cursor": ["codex"],
-    "github": ["hermes"],
     "hermes": ["codex"]
   }
 }
