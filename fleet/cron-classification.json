@@ -1,48 +1,352 @@
 {
-  "schema": "cron-classification/v1",
+  "schema": "cron-classification/v2",
   "generated": "2026-08-29T14:35:00+00:00",
   "machine": "c940",
   "hostname": "DESKTOP-1B4ICID",
-  "source_of_truth": "hermes cron list (live)",
+  "source_of_truth": "fleet/cron-classification.json",
+  "live_source": "hermes cron list on DESKTOP-1B4ICID",
   "class_legend": {
     "watchdog": "script-only, no-agent; silent when healthy; never mutates LLM state",
     "specialist": "one domain, one outcome, pinned model (or script)",
-    "queen": "the single permitted cross-domain LLM mutator (read-only by default)",
+    "queen": "cross-domain judgment lane; write permissions are declared independently and default to false",
     "oneshot": "expire/remove after fire",
     "retired": "deleted, not accumulated"
+  },
+  "write_dimension_legend": {
+    "llm_state": "writes or consolidates LLM-managed memory/state",
+    "heartbeat_control_plane": "writes fleet heartbeat, queue, or control-plane state",
+    "filesystem": "creates, updates, or removes filesystem content beyond transient process logs"
   },
   "summary": {
     "active": 17,
     "paused": 0,
-    "watchdog": 12,
-    "specialist": 4,
+    "watchdog": 14,
+    "specialist": 2,
     "queen": 1,
     "unclassified": 0,
-    "note": "All active crons now classified. One mutating 'queen' lane honored (railway-queen-weekly-review is read-only doc review). Dormant Queens (Queen-autonomy, Merge-Queen, 7h-Spring-Orchestrator, tier1-self-heal) remain paused per 2026-08-14 collision fix (FLEET-OPS Foundation #1)."
+    "write_dimensions": {
+      "llm_state": 1,
+      "heartbeat_control_plane": 1,
+      "filesystem": 3
+    },
+    "note": "All active crons are classified. sis-memory-maintenance is the only scheduled LLM-state writer; railway-queen-weekly-review is read-only. Heartbeat/control-plane and filesystem writes are declared separately."
+  },
+  "write_policy": {
+    "max_concurrent_llm_state_writers": 1,
+    "llm_state_writer_jobs": [
+      "sis-memory-maintenance"
+    ],
+    "read_only_queen_jobs": [
+      "railway-queen-weekly-review"
+    ],
+    "heartbeat_control_plane_writer_jobs": [
+      "fleet-swarm-pulse"
+    ],
+    "filesystem_writer_jobs": [
+      "sis-memory-maintenance",
+      "fleet-swarm-pulse",
+      "c940-safe-reclaim-worker"
+    ]
   },
   "jobs": [
-    {"id": "341fbe4c6c21", "name": "sis-memory-maintenance", "class": "specialist", "domain": "memory/SIS", "schedule": "0 11 * * 1-5", "mode": "agent", "deliver": "local", "skills": ["sovereign-memory-architecture", "resource-aware-agent-memory"], "workdir": "Starlight-Intelligence-System", "mutating": true, "notes": "SIS vault dreaming/consolidation; LLM but bounded + receipted"},
-    {"id": "c981621c9d62", "name": "railway-queen-weekly-review", "class": "queen", "domain": "Railway estate", "schedule": "30 9 * * 1", "mode": "agent", "deliver": "local", "skills": ["railway-starlight-queen", "railway-infra-swarm", "railway-monitoring-billing-subagent"], "workdir": "FrankX", "mutating": false, "notes": "Documentation-only review; no deploy/secret/billing mutation (verified 2026-08-03)"},
-    {"id": "be0ec52d4b87", "name": "railway-monthly-rotation-audit", "class": "specialist", "domain": "Railway security/audit", "schedule": "0 10 1 * *", "mode": "agent", "deliver": "local", "skills": ["railway-health-rotation-subagent", "railway-secrets-subagent", "api-key-management"], "workdir": "FrankX", "mutating": false, "notes": "Read-only rotation audit"},
-    {"id": "e37ad751663c", "name": "fleet-swarm-pulse", "class": "watchdog", "domain": "fleet bus", "schedule": "0 */6 * * *", "mode": "no-agent", "deliver": "telegram:-1004300203404", "script": "fleet_pulse.py", "mutating": false, "notes": "Writes c940 heartbeat + one-line Swarm bulletin; UPGRaded 2026-08-29 to carry real disk/uptime metrics"},
-    {"id": "8b8ad7726cdb", "name": "c940-always-on-host-watchdog", "class": "watchdog", "domain": "host health", "schedule": "every 120m", "mode": "no-agent", "deliver": "telegram:8582160385", "script": "always_on_host_watchdog.py", "mutating": false},
-    {"id": "da05124f0a1c", "name": "c940-security-sentinel-watchdog", "class": "watchdog", "domain": "security", "schedule": "every 720m", "mode": "no-agent", "deliver": "telegram:8582160385", "script": "security_sentinel_watchdog.py", "mutating": false},
-    {"id": "c934fd1f1744", "name": "c940-disk-growth-guard", "class": "watchdog", "domain": "capacity", "schedule": "every 60m", "mode": "no-agent", "deliver": "origin", "script": "c940_disk_growth_guard.py", "mutating": false, "notes": "Enforces 35GiB hard floor; transition-only alerts"},
-    {"id": "9664800ec4d2", "name": "c940-safe-reclaim-worker", "class": "watchdog", "domain": "capacity/reclaim", "schedule": "every 360m", "mode": "no-agent", "deliver": "origin", "script": "c940_safe_reclaim.py", "mutating": true, "notes": "Removes ONLY idle rebuildable cache leaves after exact owner gates; never touches source/WIP/main"},
-    {"id": "a24d6c482903", "name": "design-workflow-drift-watch", "class": "watchdog", "domain": "design system", "schedule": "0 8 * * *", "mode": "no-agent", "deliver": "origin", "script": "check-design-workflow.py", "mutating": false},
-    {"id": "67ce4c1941fc", "name": "c940-storage-movement-graph-refresh", "class": "watchdog", "domain": "storage intelligence", "schedule": "every 360m", "mode": "no-agent", "deliver": "local", "script": "build_storage_movement_graph.py", "mutating": false},
-    {"id": "f88e36a4dbbc", "name": "brand-media-control-plane-watch", "class": "watchdog", "domain": "brand media", "schedule": "50 7 * * *", "mode": "no-agent", "deliver": "origin", "script": "check_brand_media_control_plane.py", "mutating": false},
-    {"id": "ea7cc77f88c2", "name": "github-tech-radar-daily", "class": "watchdog", "domain": "tech radar", "schedule": "15 6 * * *", "mode": "no-agent", "deliver": "local", "script": "github_tech_radar.py", "mutating": false, "note_repeat": "25/9999 (times-bcheduled; will auto-expire)"},
-    {"id": "bd4cb3b03c6c", "name": "topology-health-pulse", "class": "watchdog", "domain": "topology", "schedule": "15 */6 * * *", "mode": "no-agent", "deliver": "local", "script": "topology_health_pulse.py", "mutating": false},
-    {"id": "8aa021a7326b", "name": "llm-evals-integrity-watchdog", "class": "watchdog", "domain": "LLM evals", "schedule": "30 6 * * *", "mode": "no-agent", "deliver": "origin", "script": "llm_evals_integrity_watchdog.py", "mutating": false},
-    {"id": "c8f381107dd8", "name": "llm-evals-weekly-d0-regression", "class": "watchdog", "domain": "LLM evals", "schedule": "15 7 * * 0", "mode": "no-agent", "deliver": "origin", "script": "llm_evals_weekly_d0.py", "mutating": false, "notes": "Last run error: canonical repo not clean (guard working as designed; fix = clean worktree)"},
-    {"id": "e43dc2db783e", "name": "creative-enterprise-stage0-watchdog", "class": "watchdog", "domain": "creative enterprise", "schedule": "every 120m", "mode": "no-agent", "deliver": "origin", "script": "creative_enterprise_watchdog.py", "mutating": false},
-    {"id": "ec8c1ece4eab", "name": "grok-bot-health-pulse", "class": "watchdog", "domain": "grok bot", "schedule": "45 */6 * * *", "mode": "no-agent", "deliver": "local", "script": "grok_bot_health_pulse.py", "mutating": false}
+    {
+      "id": "341fbe4c6c21",
+      "name": "sis-memory-maintenance",
+      "class": "specialist",
+      "domain": "memory/SIS",
+      "schedule": "0 11 * * 1-5",
+      "mode": "agent",
+      "deliver": "local",
+      "skills": [
+        "sovereign-memory-architecture",
+        "resource-aware-agent-memory"
+      ],
+      "workdir": "Starlight-Intelligence-System",
+      "notes": "SIS vault dreaming/consolidation; LLM but bounded + receipted",
+      "writes": {
+        "llm_state": true,
+        "heartbeat_control_plane": false,
+        "filesystem": true
+      }
+    },
+    {
+      "id": "c981621c9d62",
+      "name": "railway-queen-weekly-review",
+      "class": "queen",
+      "domain": "Railway estate",
+      "schedule": "30 9 * * 1",
+      "mode": "agent",
+      "deliver": "local",
+      "skills": [
+        "railway-starlight-queen",
+        "railway-infra-swarm",
+        "railway-monitoring-billing-subagent"
+      ],
+      "workdir": "FrankX",
+      "notes": "Documentation-only review; no deploy/secret/billing mutation (verified 2026-08-03)",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "be0ec52d4b87",
+      "name": "railway-monthly-rotation-audit",
+      "class": "specialist",
+      "domain": "Railway security/audit",
+      "schedule": "0 10 1 * *",
+      "mode": "agent",
+      "deliver": "local",
+      "skills": [
+        "railway-health-rotation-subagent",
+        "railway-secrets-subagent",
+        "api-key-management"
+      ],
+      "workdir": "FrankX",
+      "notes": "Read-only rotation audit",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "e37ad751663c",
+      "name": "fleet-swarm-pulse",
+      "class": "watchdog",
+      "domain": "fleet bus",
+      "schedule": "0 */6 * * *",
+      "mode": "no-agent",
+      "deliver": "telegram:-1004300203404",
+      "script": "fleet_pulse.py",
+      "notes": "Writes c940 heartbeat + one-line Swarm bulletin; UPGRaded 2026-08-29 to carry real disk/uptime metrics",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": true,
+        "filesystem": true
+      }
+    },
+    {
+      "id": "8b8ad7726cdb",
+      "name": "c940-always-on-host-watchdog",
+      "class": "watchdog",
+      "domain": "host health",
+      "schedule": "every 120m",
+      "mode": "no-agent",
+      "deliver": "telegram:8582160385",
+      "script": "always_on_host_watchdog.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "da05124f0a1c",
+      "name": "c940-security-sentinel-watchdog",
+      "class": "watchdog",
+      "domain": "security",
+      "schedule": "every 720m",
+      "mode": "no-agent",
+      "deliver": "telegram:8582160385",
+      "script": "security_sentinel_watchdog.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "c934fd1f1744",
+      "name": "c940-disk-growth-guard",
+      "class": "watchdog",
+      "domain": "capacity",
+      "schedule": "every 60m",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "c940_disk_growth_guard.py",
+      "notes": "Enforces 35GiB hard floor; transition-only alerts",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "9664800ec4d2",
+      "name": "c940-safe-reclaim-worker",
+      "class": "watchdog",
+      "domain": "capacity/reclaim",
+      "schedule": "every 360m",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "c940_safe_reclaim.py",
+      "notes": "Removes ONLY idle rebuildable cache leaves after exact owner gates; never touches source/WIP/main",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": true
+      }
+    },
+    {
+      "id": "a24d6c482903",
+      "name": "design-workflow-drift-watch",
+      "class": "watchdog",
+      "domain": "design system",
+      "schedule": "0 8 * * *",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "check-design-workflow.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "67ce4c1941fc",
+      "name": "c940-storage-movement-graph-refresh",
+      "class": "watchdog",
+      "domain": "storage intelligence",
+      "schedule": "every 360m",
+      "mode": "no-agent",
+      "deliver": "local",
+      "script": "build_storage_movement_graph.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "f88e36a4dbbc",
+      "name": "brand-media-control-plane-watch",
+      "class": "watchdog",
+      "domain": "brand media",
+      "schedule": "50 7 * * *",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "check_brand_media_control_plane.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "ea7cc77f88c2",
+      "name": "github-tech-radar-daily",
+      "class": "watchdog",
+      "domain": "tech radar",
+      "schedule": "15 6 * * *",
+      "mode": "no-agent",
+      "deliver": "local",
+      "script": "github_tech_radar.py",
+      "note_repeat": "25/9999 (times-bcheduled; will auto-expire)",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "bd4cb3b03c6c",
+      "name": "topology-health-pulse",
+      "class": "watchdog",
+      "domain": "topology",
+      "schedule": "15 */6 * * *",
+      "mode": "no-agent",
+      "deliver": "local",
+      "script": "topology_health_pulse.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "8aa021a7326b",
+      "name": "llm-evals-integrity-watchdog",
+      "class": "watchdog",
+      "domain": "LLM evals",
+      "schedule": "30 6 * * *",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "llm_evals_integrity_watchdog.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "c8f381107dd8",
+      "name": "llm-evals-weekly-d0-regression",
+      "class": "watchdog",
+      "domain": "LLM evals",
+      "schedule": "15 7 * * 0",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "llm_evals_weekly_d0.py",
+      "notes": "Last run error: canonical repo not clean (guard working as designed; fix = clean worktree)",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "e43dc2db783e",
+      "name": "creative-enterprise-stage0-watchdog",
+      "class": "watchdog",
+      "domain": "creative enterprise",
+      "schedule": "every 120m",
+      "mode": "no-agent",
+      "deliver": "origin",
+      "script": "creative_enterprise_watchdog.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    },
+    {
+      "id": "ec8c1ece4eab",
+      "name": "grok-bot-health-pulse",
+      "class": "watchdog",
+      "domain": "grok bot",
+      "schedule": "45 */6 * * *",
+      "mode": "no-agent",
+      "deliver": "local",
+      "script": "grok_bot_health_pulse.py",
+      "writes": {
+        "llm_state": false,
+        "heartbeat_control_plane": false,
+        "filesystem": false
+      }
+    }
   ],
   "gaps": [
-    {"id": "book-peer-offline", "severity": "P1", "detail": "No yoga-book.json heartbeat; Packet 4 first-boot never completed since 2026-07-16. c940 reports book_state=missing. Fix = run fleet/YOGA-BOOK-FIRST-BOOT.md ON the Yoga Book machine."},
-    {"id": "disk-below-floor", "severity": "P0-ops", "detail": "44GiB free < 50GiB ops floor < 80GiB target. Capacity watchdogs active but heavy work must stay gated."},
-    {"id": "evals-weekly-dirty", "severity": "P2", "detail": "llm-evals-weekly-d0-regression exits 1 because canonical repo is dirty; needs a clean worktree before live eval."},
-    {"id": "github-harness-inventory-stale", "severity": "P2", "detail": "GITHUB-HARNESS-INVENTORY.md (2026-07-21) shows 214 unregistered operational repos; refresh via awesome-repo-control-plane generator."}
+    {
+      "id": "book-peer-offline",
+      "severity": "P1",
+      "detail": "No yoga-book.json heartbeat; Packet 4 first-boot never completed since 2026-07-16. c940 reports book_state=missing. Fix = run fleet/YOGA-BOOK-FIRST-BOOT.md ON the Yoga Book machine."
+    },
+    {
+      "id": "disk-below-floor",
+      "severity": "P0-ops",
+      "detail": "44GiB free < 50GiB ops floor < 80GiB target. Capacity watchdogs active but heavy work must stay gated."
+    },
+    {
+      "id": "evals-weekly-dirty",
+      "severity": "P2",
+      "detail": "llm-evals-weekly-d0-regression exits 1 because canonical repo is dirty; needs a clean worktree before live eval."
+    },
+    {
+      "id": "github-harness-inventory-stale",
+      "severity": "P2",
+      "detail": "GITHUB-HARNESS-INVENTORY.md (2026-07-21) shows 214 unregistered operational repos; refresh via awesome-repo-control-plane generator."
+    }
   ]
 }
