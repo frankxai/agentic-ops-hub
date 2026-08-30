@@ -1,54 +1,75 @@
 # Agent Roster — Per-Domain Responsibilities, Tiers, Cadence, Verifier
 
 **SoT:** `fleet/AGENT-ROSTER.md` + `fleet/model-routing.json` (machine-readable).
-**Machine:** C940 control plane. Peer (Yoga Book) owns UI lanes (offline until Packet 4).
-**Last verified:** 2026-08-29 (real `hermes`/`opencode`/`codex`/`gh` state).
+**Machine:** C940 control plane. Peer (Yoga Book) owns UI lanes via **git-bus** (not Hermes LAN peer).
+**Last verified:** 2026-08-30 — **Grok 4.6 PRIMARY** (user correction). Codex gpt-5.6 = fallback only.
+
+## Primary model doctrine
+| Tier | Model | When |
+| --- | --- | --- |
+| **PRIMARY (default)** | `hermes/grok-4.6` (xai-oauth) | Orchestrate, implement, critical, Queen, research live-web |
+| **FREE (non-critical)** | `opencode/hy3-free` + `omniroute/auto/best-free` | Non-prod review, best-practice, observers, docs drafts |
+| **FALLBACK only** | `openai-codex/gpt-5.6-sol` (or terra) | When Grok blocked/unavailable OR different-family review after Grok implement |
+| **LONG-CONTEXT only** | `gemini-3.5-flash` | Huge corpus map, not default implement |
+
+**Never prefer Codex terra over Grok 4.6.** Prior v3 wrongly elevated terra from stale token-planner notes — corrected 2026-08-30.
 
 ## The 4 standing roles (per live domain)
 | Role | Responsibility | Default tier | Verifier |
 | --- | --- | --- | --- |
-| **R1 Backend Lead** | Backend/product engineering, APIs, SIS/ACOS primitives, Railway | critical (codex gpt-5.6) or research | different-family review |
-| **R2 Code Reviewer** | PR/branch review, security + contract gates, no auto-merge | free (hy3) for non-prod; critical (grok-4.6) for prod | tests + merge gate |
-| **R3 Best-Practice Dev** | Lint/style/health-command adherence, taste.md, register boundaries | free (hy3) | CI/health cmd |
-| **R4 Research & Developer** | Lit survey, architecture research, long-context mapping, R&D | research (codex+gemini+grok) | receipt + citation |
+| **R1 Backend Lead** | Backend/product engineering, APIs, SIS/ACOS, Railway | **critical = grok-4.6** | different-family review (codex/claude) |
+| **R2 Code Reviewer** | PR/branch review, security + contract gates, no auto-merge | free (hy3) non-prod; **grok-4.6** prod | tests + merge gate |
+| **R3 Best-Practice Dev** | Lint/style/health-command, taste.md, register boundaries | free (hy3) | CI/health cmd |
+| **R4 Research & Developer** | Lit survey, architecture research, long-context, R&D | **grok-4.6** (+ gemini long-ctx) | receipt + citation |
 
-Every role respects: **register boundaries** (FrankX Professional / Arcanea Mythic / SIS-ACOS Neutral), **one agent per branch**, **dirty trees are leases** (fetch-only / classify), and **critical actions need human approval**.
+Every role respects: **register boundaries**, **one agent per branch**, **dirty trees are leases**, **critical actions need human approval**.
 
 ## Live domains × roles
 | Domain (repo) | R1 Backend Lead | R2 Code Reviewer | R3 Best-Practice | R4 Research & Dev |
 | --- | --- | --- | --- | --- |
-| **frankx.ai-vercel-website** (prod) | codex gpt-5.6 (critical) | grok-4.6 (critical, merge-gated) | hy3 (free, non-prod branches) | grok-4.6 live web |
-| **FrankX** (content/dev) | codex (research) | hy3 (free) | hy3 (free) | grok-4.6 + gemini |
-| **Arcanea** (mythic) | codex (critical) | hy3 (free) | hy3 (free) | grok-4.6 |
-| **arcanea-platform** | codex gpt-5.6 | hy3 | hy3 | gemini long-context |
-| **gencreator.ai** | codex (critical, R1 bridge) | hy3 (free) + grok-4.6 (prod gate) | hy3 | grok-4.6 |
-| **AnimeLegends.ai** | codex | hy3 | hy3 | grok-4.6 |
-| **VibeClubs.ai** | codex | hy3 | hy3 | grok-4.6 |
-| **Starlight-Intelligence-System** (SIS) | codex (critical) | hy3 (free) | hy3 | gemini long-context |
-| **agentic-creator-os** (ACOS) | codex | hy3 | hy3 | grok-4.6 |
-| **agentic-ops** (control plane) | codex | hy3 | hy3 | grok-4.6 |
-| **starlight-token-tracker** | codex | hy3 | hy3 | gemini |
-| **Business** (private/sensitive) | human-only | human-only | human-only | human-only (no auto-agent) |
-| **satellite brands** | codex | hy3 | hy3 | grok-4.6 GEO |
+| **frankx.ai-vercel-website** (prod) | **grok-4.6** (critical) | grok-4.6 (merge-gated) | hy3 (non-prod) | grok-4.6 live web |
+| **FrankX** (content/dev) | **grok-4.6** | hy3 (free) | hy3 | grok-4.6 + gemini |
+| **Arcanea** (mythic) | **grok-4.6** | hy3 | hy3 | grok-4.6 |
+| **arcanea-platform** | **grok-4.6** | hy3 | hy3 | gemini long-context |
+| **gencreator.ai** | **grok-4.6** (R1 bridge) | hy3 + grok-4.6 (prod gate) | hy3 | grok-4.6 |
+| **AnimeLegends.ai** | **grok-4.6** | hy3 | hy3 | grok-4.6 |
+| **VibeClubs.ai** | **grok-4.6** | hy3 | hy3 | grok-4.6 |
+| **Starlight-Intelligence-System** (SIS) | **grok-4.6** | hy3 | hy3 | gemini long-context |
+| **agentic-creator-os** (ACOS) | **grok-4.6** | hy3 | hy3 | grok-4.6 |
+| **agentic-ops** (control plane) | **grok-4.6** | hy3 | hy3 | grok-4.6 |
+| **starlight-token-tracker** | **grok-4.6** | hy3 | hy3 | gemini |
+| **Business** (private/sensitive) | human-only | human-only | human-only | human-only |
+| **satellite brands** | **grok-4.6** | hy3 | hy3 | grok-4.6 GEO |
 
 ## Profiles (Hermes model-family isolation)
-- `default` (grok-4.6) — critical orchestration/judgment.
-- `free-tier` — `opencode/hy3-free` + `omniroute/auto/best-free`; non-critical reviewers/observers. **Created 2026-08-29.**
+- `default` (**grok-4.6**) — primary for all critical/implement/orchestrate.
+- `free-tier` — `opencode/hy3-free` + rotating best-free; non-critical reviewers/observers.
 - `arcanea-agent` (grok-4.6) — Arcanea mythic lane.
-- `gemini-35` — long-context survey (Gemini 3.5 OAuth).
-- Optional `kimi-k3` reviewer after live probe (adversarial, different-family).
+- `gemini-35` — long-context survey only.
+- Optional `kimi-k3` / codex reviewer **after** Grok implement (different-family only).
 
-## Cadence pattern (pilot, then bulk)
-- **Observers/evals (free):** every 6h, no-agent script → opencode best-free.
-- **Reviewers (free):** every 6h on non-prod branches; prod review daily 02:00 critical.
-- **Best-practice (free):** daily 02:30.
-- **Research & dev (research tier):** daily 03:00 or on-demand.
-- **Weekly:** free-model rotator (Sun 03:00); Railway Queen (Mon 09:30, read-only).
+## Yoga Book connection model (corrected 2026-08-30)
+Book was **already online via the git-bus** (origin heartbeat 2026-08-16: hostname Starlight, free 151 GiB, dual ONLINE). It is **not** a Hermes LAN peer (`hermes peer list` empty is expected until optional gateway peer is added).
 
-## Verification ladder (every role)
-`CREATED → VERIFIED → DELIVERED`. Report/existence alone is not done. Independent verifier = different model family than implementer.
+| Channel | Status | Purpose |
+| --- | --- | --- |
+| **git-bus** (`fleet/bus/heartbeats/`, queues, activity) | **canonical** | heartbeats, task queues, activity proposals |
+| Telegram Swarm `@Hermesyogabookbot` | status one-liners + DM work | human + Book agent |
+| Hermes `peer add` (LAN gateway) | optional | only if Book gateway URL+key shared |
+
+Local C940 tree had dropped the Book heartbeat; restored from `origin/main` (Book-authored, not forged). Age ~14d → Book needs a **refresh pulse**, not cold Packet-4 install.
+
+## Cadence pattern
+- Observers/evals (free): every 6h
+- Reviewers (free non-prod): every 6h; prod review = grok-4.6
+- Best-practice (free): daily 02:30
+- Research (grok-4.6): on-demand / daily
+- Weekly: free-model rotator Sun 03:00; Railway Queen Mon 09:30
+
+## Verification ladder
+`CREATED → VERIFIED → DELIVERED`. Independent verifier = different family than implementer when needed.
 
 ## Gated / not yet done
-1. **Observability DOWN** — ClickHouse 88.8% P0; Langfuse/LiteLLM/evals-service FAILED ~23d. "Evaluate all" currently relies on lightweight evals watchdogs + SIS tracker; repair is a separate gated action (capacity + possible redeploy cost). See `OBSERVABILITY-PLAN.md`.
-2. **Bulk rollout** — roster above defines all 13 domains × 4 roles. Pilot crons prove the pattern; bulk creation (≈ one cron per role/domain) is the next approved wave (disk 44 GiB < 50 floor — keep free-tier jobs as cheap no-agent opencode scripts).
-3. **Yoga Book** — UI lanes (R1 CTA UI, frontend) await Packet 4 boot.
+1. Observability DOWN — ClickHouse 88.8% P0; Langfuse/LiteLLM/evals FAILED ~23d.
+2. Bulk free-tier cron rollout across 13 domains.
+3. Book HB refresh (give Book the refresh command below; last HB 2026-08-16).

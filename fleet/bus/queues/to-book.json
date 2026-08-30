@@ -1,49 +1,49 @@
 {
   "to": "yoga-book",
   "from": "c940",
-  "issued_at": "2026-08-29T16:55:00+00:00",
+  "issued_at": "2026-08-30T12:30:00+00:00",
   "priority": "P0",
-  "subject": "C940 lifesign + boot handshake + ready tasks",
+  "subject": "Book was already on git-bus — REFRESH not cold boot · Grok 4.6 primary",
+  "connection_model": {
+    "canonical": "git-bus (fleet/bus heartbeats + queues + activity)",
+    "telegram": "@Hermesyogabookbot DM + Swarm one-liners",
+    "hermes_lan_peer": "optional only — not required for fleet ops",
+    "correction": "C940 local tree had dropped Book HB; restored Book-authored origin/main yoga-book.json (2026-08-16 dual ONLINE). Age ~14d → refresh pulse needed."
+  },
   "c940_status": {
     "machine_id": "c940",
     "hostname": "DESKTOP-1B4ICID",
     "alive": true,
-    "disk_free_gb": 44.3,
-    "book_reachable_from_c940": false,
-    "note": "Book not resolvable on LAN (DNS/ping fail). Boot Packet 4 to connect. C940 cannot forge Book heartbeat (Foundation #11)."
+    "primary_model": "hermes/grok-4.6",
+    "model_routing": "v4 — Grok 4.6 primary; Codex gpt-5.6 fallback-only; free=hy3/best-free",
+    "note": "DNS yoga-book LAN name fails from C940; git-bus is the real link."
   },
   "action_for_book": [
     {
-      "id": "P4",
-      "title": "Packet 4 first boot + Telegram align",
-      "docs": ["fleet/YOGA-BOOK-FIRST-BOOT.md", "fleet/YOGA-BOOK-TELEGRAM-ALIGN.md", "fleet/STARLIGHT-SWARM-DRIVER.md"],
-      "steps": [
-        "Install gh / node24 / pnpm / python3.11; gh auth login (frankxai, repo+workflow+read:org)",
-        "gh repo clone frankxai/agentic-ops-hub agentic-ops && cd agentic-ops",
+      "id": "REFRESH",
+      "title": "HB refresh + fleet_sync (preferred — Book already had agentic-ops)",
+      "doc": "fleet/YOGA-BOOK-REFRESH.md",
+      "steps_summary": [
+        "cd agentic-ops && git pull",
         "python scripts/fleet_inventory.py --machine yoga-book",
         "python scripts/fleet_sync.py --machine yoga-book",
-        "Start Hermes gateway: hermes gateway run (note its URL + API_SERVER_KEY)",
-        "On C940: hermes peer add yoga-book --url <book-gateway-url> --key <book-key>  (C940 will do this once you share the URL+key)",
-        "python scripts/fleet_bus.py identity && fleet_bus.py heartbeat --status live --notes 'Packet 4 boot'",
-        "Paste Swarm line: [book] ONLINE host=… repos=… gateway=…"
+        "python scripts/fleet_bus.py heartbeat --status live --notes 'Book refresh 2026-08-30'",
+        "activity log + commit + push",
+        "Swarm: [book] ONLINE …"
       ]
     },
     {
-      "id": "P4b",
-      "title": "Write heartbeat yoga-book.json + post [book] ONLINE once",
-      "constraints": ["never forge c940 heartbeat", "frontend lanes only"]
+      "id": "P4-COLD",
+      "title": "Only if agentic-ops missing on Book",
+      "docs": ["fleet/YOGA-BOOK-FIRST-BOOT.md", "fleet/YOGA-BOOK-TELEGRAM-ALIGN.md"]
     },
     {
       "id": "FE1",
-      "title": "After online: claim frontend lane (frankx.ai / GenCreator / Arcanea UI) on agent/book/<scope>",
-      "status": "ready when P4 done; product gate cleared (PR#384 CLOSED)"
+      "title": "After fresh HB: claim frontend lanes agent/book/<scope>",
+      "status": "ready when HB age fresh"
     }
   ],
-  "c940_ready_to_take": [
-    "Backend/content/GEO/Railway/SIS/ACOS + code-review of open PRs (agentic-ops-hub #53/#54/#48; FrankX; Arcanea; frankx.ai-vercel-website)",
-    "Best-practice + observability draft (ClickHouse/Langfuse repair gated on approval+capacity)",
-    "Free-tier review crons already live (hy3-free); critical merges stay on grok-4.6/codex"
-  ],
+  "paste_prompt_path": "fleet/YOGA-BOOK-REFRESH.md",
   "alignment": "parallel-no-wait",
-  "note": "Do NOT wait for Book. C940 proceeds on backend lane; Book boots at will. Handoff via branch + 5 lines OPS-LEDGER."
+  "note": "Do NOT forge c940 heartbeat. Do NOT prefer Codex over Grok 4.6."
 }

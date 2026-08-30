@@ -1,7 +1,9 @@
 {
-  "version": 3,
-  "updated": "2026-08-29",
+  "version": 4,
+  "updated": "2026-08-30",
   "night_cap_usd": 40,
+  "primary_model": "hermes/grok-4.6",
+  "primary_why": "User directive: Grok 4.6 is the primary model for orchestration, judgment, implement, and critical work. Codex gpt-5.6 is fallback-only, never default.",
   "defaults": {
     "unattended": true,
     "report_root": "C:/Users/frank/agentic-ops/fleet/reports/agents",
@@ -14,38 +16,44 @@
     "free": {
       "primary": "opencode/hy3-free",
       "rotating": "omniroute/auto/best-free",
-      "selection_rule": "weekly_free_model_rotator pins the current best-free winner into routing.free.active; hy3-free stays the declared primary until a weekly probe beats it",
+      "selection_rule": "weekly_free_model_rotator pins omniroute/auto/best-free (native best-free) with hy3-free explicit fallback; never metered",
       "use_for": [
         "code review of non-prod branches",
         "best-practice / lint / style enforcement",
         "research summarization and corpus indexing",
         "docs and metadata generation",
-        "low-stakes refactors and observers/evaluators",
+        "low-stakes observers/evaluators",
         "satellite-brand GEO content drafts"
       ],
       "do_not_use_for": [
         "prod main ship",
         "security/money/legal/credential actions",
-        "R1 bridge or pricing/email sends"
+        "R1 bridge or pricing/email sends",
+        "critical implement"
       ]
     },
     "critical": {
+      "primary": "hermes/grok-4.6",
       "orchestrate": "hermes/grok-4.6",
-      "implement": "openai-codex/gpt-5.6-terra",
+      "implement": "hermes/grok-4.6",
       "implement_fallback": "openai-codex/gpt-5.6-sol",
-      "review": "different-family-from-implementer (codex vs grok-4.6 vs claude-sonnet-4-6)",
+      "implement_fallback_alt": "openai-codex/gpt-5.6-terra",
+      "review": "different-family-from-implementer when needed (codex or claude-sonnet-4-6 after grok implement)",
       "use_for": [
+        "default C940 agent work",
         "frankx.ai production deploy path",
         "R1 FrankX to GenCreator bridge",
         "security / secrets / billing",
-        "any main-branch mutation or Vercel deploy"
+        "any main-branch mutation or Vercel deploy",
+        "Queen judgment and coordination"
       ],
-      "why": "Only where needed; flat Max/Ultra capacity on bounded deliverables, never synthetic burn"
+      "why": "Grok 4.6 primary always. Codex gpt-5.6 only as fallback when Grok unavailable or for different-family review. Never prefer terra over Grok."
     },
     "research": {
-      "implement": "openai-codex/gpt-5.6-terra",
+      "primary": "hermes/grok-4.6",
       "long_context": "gemini-3.5-flash",
       "live_web": "hermes/grok-4.6",
+      "fallback_implement": "openai-codex/gpt-5.6-sol",
       "use_for": [
         "repository mapping and literature survey",
         "architecture research and tech-radar synthesis",
@@ -54,27 +62,31 @@
     }
   },
   "routes": {
-    "orchestration": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 5, "max_turns": 10, "why": "Queen judgment, coordination, concise reporting" },
-    "deep-backend": { "agent": "claude", "model": "sonnet", "budget_usd": 20, "max_turns": 25, "why": "Deep multi-file backend TDD (fallback lane)" },
-    "refactor": { "agent": "codex", "model": "gpt-5.6-terra", "budget_usd": 20, "max_turns": 20, "why": "Fast mechanical edits + local verification" },
-    "long-context": { "agent": "gemini", "model": "gemini-3.5", "budget_usd": 10, "max_turns": 10, "why": "Long-context repo mapping" },
+    "orchestration": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 5, "max_turns": 10, "why": "Grok 4.6 primary — Queen judgment, coordination, concise reporting" },
+    "implement": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 20, "max_turns": 25, "why": "Grok 4.6 primary for implement; Codex only if Grok blocked" },
+    "deep-backend": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 20, "max_turns": 25, "why": "Grok 4.6 primary; claude-sonnet-4-6 only as different-family fallback" },
+    "refactor": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 15, "max_turns": 20, "why": "Grok 4.6 primary; codex gpt-5.6-sol fallback only" },
+    "long-context": { "agent": "gemini", "model": "gemini-3.5", "budget_usd": 10, "max_turns": 10, "why": "Long-context repo mapping only" },
     "free-review": { "agent": "opencode", "model": "opencode/hy3-free", "budget_usd": 0, "max_turns": 15, "why": "Non-critical code review / best-practice on free tier" },
     "free-observer": { "agent": "opencode", "model": "omniroute/auto/best-free", "budget_usd": 0, "max_turns": 10, "why": "Health/observer/eval on rotating best-free" },
-    "ui": { "agent": "cursor", "model": "interactive", "budget_usd": 15, "max_turns": 15, "why": "Human-in-loop visual iteration on Yoga Book" },
+    "ui": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 15, "max_turns": 15, "why": "Book frontend lane still Grok-primary; interactive Cursor only when human-in-loop visual" },
     "repo-ops": { "agent": "github", "model": "deterministic-cli", "budget_usd": 2, "max_turns": 5, "why": "Deterministic issue/PR/CI" },
     "infra": { "agent": "hermes", "model": "grok-4.6", "budget_usd": 10, "max_turns": 15, "why": "Queen + railway skills, gated" }
   },
   "free_rotation": {
     "cron": "weekly-free-model-rotator",
     "schedule": "0 3 * * 0",
-    "action": "probe opencode models omniroute/auto/best-free; if winner != active, update tiers.free.active + ledger; never downgrade to a metered key",
+    "action": "pin omniroute/auto/best-free via opencode models list; hy3-free explicit fallback; never metered",
     "pin_file": "fleet/free-model-active.json"
   },
   "fallbacks": {
-    "claude": ["codex", "hermes"],
-    "codex": ["claude", "hermes"],
-    "gemini": ["claude", "codex"],
-    "opencode": ["codex"],
-    "hermes": ["codex"]
+    "hermes": ["codex", "claude"],
+    "claude": ["hermes", "codex"],
+    "codex": ["hermes", "claude"],
+    "gemini": ["hermes", "claude"],
+    "opencode": ["hermes"]
+  },
+  "corrections": {
+    "2026-08-30": "User corrected: Grok 4.6 is PRIMARY for implement/critical, not Codex gpt-5.6-terra. Terra/sol are fallback-only. Prior v3 wrongly elevated terra from stale starlight-token-planner C940 notes."
   }
 }

@@ -75,30 +75,26 @@ Use these as **self-contained goals** for Hermes profiles, `delegate_task`, Clau
 ## Packet 4 — Yoga Book Agent (run ON Book)
 
 **Machine:** yoga-book  
-**Agent:** Codex / Antigravity / Hermes lite  
-**Goal:** Join fleet as frontend node; first sync.  
-**Do:**
-1. Install tools (git, gh, node, pnpm, python, claude, codex).  
+**Agent:** **Hermes default = Grok 4.6 primary** (Codex/Antigravity fallback only)  
+**Connection:** **git-bus** is canonical (`fleet/bus/`). Hermes LAN peer optional. Bot `@Hermesyogabookbot`.  
+**Goal:** Frontend node; sync + HB. Prefer **refresh** if Book already had agentic-ops (it did — dual ONLINE 2026-08-16).  
+**Do (refresh path — preferred):** follow **`fleet/YOGA-BOOK-REFRESH.md`** (pull, inventory, sync, heartbeat, activity, push, Swarm one-liner).  
+**Do (cold path — only if agentic-ops missing):**  
+1. Install tools (git, gh, node, pnpm, python, hermes).  
 2. `gh auth login` as frankxai.  
 3. Clone `frankxai/agentic-ops-hub` → `agentic-ops`.  
-4. `python scripts/fleet_inventory.py --machine yoga-book`  
-5. `python scripts/fleet_sync.py --machine yoga-book`  
-6. Read OPS-LEDGER + DEVICE-STRATEGY; claim **frontend** lanes only.  
-7. Worktrees: `agent/book/<scope>` on FrankX, prod site, gencreator, Arcanea.  
-**Constraints:** No Business clone; no always-on heavy crons; no dual-write main trees dirty on C940.  
-**Verify:** inventory JSON on Book; at least control plane + 3 product repos present.  
-**Report:** paste inventory summary back to Telegram Starlight Swarm / OPS-LEDGER.
+4. Then same as refresh path + `fleet/YOGA-BOOK-TELEGRAM-ALIGN.md`.  
+**Constraints:** No Business clone; no always-on heavy crons; no dual-write dirty C940 mains; never forge c940 HB.  
+**Verify:** fresh `fleet/bus/heartbeats/yoga-book.json` age_minutes small on C940 after pull; inventory present.  
+**Report:** Swarm `[book] ONLINE …` + OPS-LEDGER.
 
-### Copy-paste Book kickoff prompt
+### Copy-paste Book kickoff prompt (refresh)
+See full prompt in `fleet/YOGA-BOOK-REFRESH.md`. Short form:
+
 ```
-You are the Yoga Book frontend fleet agent for Frank's estate.
-Control plane docs live in agentic-ops after clone: fleet/FLEET-OPS.md, fleet/TASK-PACKETS.md, docs/DEVICE-STRATEGY.md, ops/OPS-LEDGER.md.
-Machine role: frontend-innovation. Branch prefix: agent/book/<scope>.
-1) Verify gh auth frankxai. 2) Run fleet_inventory + fleet_sync for yoga-book.
-3) Report installed tools and repo dirty counts.
-4) Take frontend-only tasks: frankx.ai UI polish, GenCreator product UI, Arcanea platform UI.
-5) Do not touch Business; do not force-push; update OPS-LEDGER after work.
-Execute now.
+You are Yoga Book frontend agent (yoga-book / Starlight). C940 is backend control plane.
+Primary model: Grok 4.6. Codex fallback only. Git-bus is the fleet link (not LAN peer required).
+REFRESH (you were already online 2026-08-16): cd agentic-ops && git pull && python scripts/fleet_inventory.py --machine yoga-book && python scripts/fleet_sync.py --machine yoga-book && python scripts/fleet_bus.py heartbeat --status live --notes "Book refresh" && python scripts/fleet_activity.py log --machine yoga-book --agent hermes-book --did "HB refresh" --evidence "fleet/bus/heartbeats/yoga-book.json" --next "FE claim" && git add fleet/ && git commit -m "activity(book): HB refresh" && git push. Swarm: [book] ONLINE …. Frontend lanes agent/book/<scope> only. No Business. No c940 forge. Execute now.
 ```
 
 ---
