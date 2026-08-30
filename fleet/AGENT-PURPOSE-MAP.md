@@ -38,12 +38,12 @@ CONTENT (FrankX → frankx.ai)  →  FUNNEL BRIDGE (R1 → GenCreator)  →  PRO
 | **SIS memory maintenance** | Dreaming/consolidation of sovereign memory vaults | `sis-memory-maintenance` cron (Mo–Fr 11:00, LLM, receipted) | Memory is the cross-agent recall layer; must stay fresh |
 | **Railway Queen (weekly)** | Read-only review of Railway estate (health, billing, rotation) | `railway-queen-weekly-review` cron (Mon 09:30) | Capacity/cost visibility; no mutation |
 | **Railway rotation audit (monthly)** | Secrets/rotation compliance check | `railway-monthly-rotation-audit` cron (1st 10:00) | Security hygiene |
-| **Fleet swarm pulse** | Heartbeat + Swarm bulletin | `fleet-swarm-pulse` cron (every 6h, no-agent) | Real+tive liveness to peer + channel |
+| **Fleet swarm pulse** | Heartbeat + Swarm bulletin | `fleet-swarm-pulse` cron (every 6h, no-agent) | Real-time liveness to peer + channel |
 | **Host watchdog** | C940 uptime/power/health | `c940-always-on-host-watchdog` (every 120m) | Always-on machine must self-report |
 | **Security sentinel** | Intrusion/defense posture | `c940-security-sentinel-watchdog` (every 720m) | Early warning |
-| **Disk growth guard** | Enforce 35 GiB hard floor | `c940-disk-growth-guard` (every 60m) | Prevent OOS thrash |
+| **Disk growth guard** | Enforce 35 GiB hard floor | `c940-disk-growth-guard` (every 60m) | Prevent out-of-space failures |
 | **Safe reclaim worker** | Remove idle cache leaves only | `c940-safe-reclaim-worker` (every 360m, gated) | Recover space without touching source |
-| **Topology / storage / brand-media / design / evals / grok-bot / tech-radar / creative watchdogs** | 9 script-only monitors | various cadences | Cheap, reliable, no-agent signal |
+| **Topology / storage / brand-media / design / evals / grok-bot / tech-radar / creative watchdogs** | Script-only monitors | various cadences | Cheap, reliable, no-agent signal |
 
 ### B. Content / funnel agents (C940 content lane — FrankX Professional register)
 | Agent | Purpose | Why |
@@ -81,7 +81,7 @@ CONTENT (FrankX → frankx.ai)  →  FUNNEL BRIDGE (R1 → GenCreator)  →  PRO
 - **One SoT per concern:** status=`OPS-LEDGER.md`, objectives=`objectives-registry.json`, clones=`clone-manifest.json`, crons=`cron-classification.json`, memory=SIS. No second authority.
 - **Register boundaries:** FrankX Professional / Arcanea Mythic / SIS-ACOS Neutral — enforced by Agent Council + publish gates.
 - **Enhance-never-erase + leases:** dirty trees are fetch-only; never mass-wipe; one agent = one branch.
-- **Watchdogs > LLM loops:** reliability; 12 script watchdogs vs 1–2 LLM lanes.
+- **Watchdogs > LLM loops:** reliability; script watchdogs dominate, while each write dimension is declared in `cron-classification.json`.
 - **Capacity floors are gates:** <35 GiB hard stop, <50 ops RED, ≥80 target.
 
 ---
