@@ -145,4 +145,56 @@ python ~/starlight-token-tracker/scripts/anomaly_check.py
 
 ---
 
-*Living planner — update when pricing, agents, or night policy change.*
+## 8. Local activity index — subscription-metered work (the second currency)
+
+Everything above denominates in **USD at API rates**. That is correct when a run is metered by an API key: `--max-budget-usd` is a real wall. It is the **wrong denominator for work on a Claude Max subscription**, where you do not spend dollars — Anthropic meters a weekly allowance in **hours of model use**, reset on a fixed per-account schedule, with a 5-hour session window on top.
+
+**These are two different currencies. Never conflate them.** USD envelopes (§3) govern API-metered work; this plane governs subscription-metered work.
+
+### What this measures, and what it does not
+
+This plane emits a **local activity index**: locally-observed session tokens, weighted per model and token kind, divided by an *estimated* capacity.
+
+**It is not a measurement of your plan state, and nothing here may be called "remaining allowance."** Getting from local token counts to a percentage of the real plan requires an inference stack, and every layer is an assumption:
+
+| Layer | Status |
+|---|---|
+| API output-price ratios → allowance burn | assumption; prices are verified, the mapping is not |
+| Published hour ranges (240–480 Sonnet, 24–40 Opus) | measured on the **Sonnet 4 / Opus 4** generation; a range, not a contract |
+| Per-account weekly reset anchor | **required input** — no defensible default exists |
+| Fable-class → Opus bucket | assumed, unverified; check `/usage` |
+| `sonnet_tokens_per_hour` calibration constant | the weakest link; unverified until derived from observations |
+
+None of those establish how Claude Max actually meters usage. Reporting a figure like "98.6% remaining" from that chain is false precision, and acting on it can down-tier the wrong work.
+
+### Consequences, enforced in code
+
+- **Index rises with use.** `activity_index` of 1.0 means local activity reached the midpoint capacity *estimate*. It is not a percentage of anything real.
+- **Every index carries an interval.** `activity_index_interval` comes from the width of the published hour range — a wide band, honestly reported. Each bucket also carries `is_measurement: false`.
+- **The reset anchor is required input.** `weekly_window()` raises rather than guessing. Read the real value from Settings → Usage, set `weekly_reset`, and mark `confidence: "verified"`.
+- **Dated facts expire.** `valid_until` on `weights`, `token_kind_multipliers`, `boost` and each bucket. Any expired fact forces the uncalibrated state — stale facts are loud, not silent.
+- **Uncalibrated is advisory-only and never auto-routes.** `advise()` returns `advisory_only: true` and `auto_route: false` unless calibrated. Calibrated requires **both** a verified anchor **and** at least `minimum_observations` human `/usage` readings spanning at least one reset boundary, recorded in `calibration.observations`.
+
+### Calibrating it
+
+Record what `/usage` actually showed, by hand, into `calibration.observations` (schema in `plan_limits.json`). Three readings spanning a reset boundary is the floor. Until then the state is uncalibrated by definition, and that is the correct state — not a bug to work around.
+
+### Relationship to model routing
+
+`model-routing.json` remains the **single source of truth for model routing**. It routes across vendors and denominates in USD. This file adds no routes and overrides none; its `advice` block is a Claude-lane suggestion keyed by the same job classes, advisory until calibrated.
+
+### Commands
+
+```bash
+python3 -m fleet.usage_ingest                          # local activity report
+python3 -m fleet.usage_ingest --advise deep-backend    # + advisory suggestion
+python3 -m fleet.usage_ingest --ccusage out.json       # ccusage daily --json as input
+```
+
+Exits 2 with a plain message when no session data exists — expected on a fresh container, not a bug.
+
+| Artifact | Role |
+|---|---|
+| `fleet/plan_limits.json` | facts, expiries, weights, buckets, calibration observations |
+| `fleet/token_planner.py` → `PlanLimits` | windows, weighting, index + interval, calibration status, advice |
+| `fleet/usage_ingest.py` | reads `~/.claude/projects/**/*.jsonl` or ccusage; read-only, no network, no ClickHouse |
