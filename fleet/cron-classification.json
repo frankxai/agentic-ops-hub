@@ -331,7 +331,7 @@
     {
       "id": "book-peer-offline",
       "severity": "P1",
-      "detail": "No yoga-book.json heartbeat; Packet 4 first-boot never completed since 2026-07-16. c940 reports book_state=missing. Fix = run fleet/YOGA-BOOK-FIRST-BOOT.md ON the Yoga Book machine."
+      "detail": "Yoga Book heartbeat is stale; no fresh self-heartbeat has been observed since 2026-08-16T10:45:05+00:00. Packet 4 first-boot remains incomplete, so dispatch stays blocked. Fix = run fleet/YOGA-BOOK-FIRST-BOOT.md ON the Yoga Book machine."
     },
     {
       "id": "disk-below-floor",

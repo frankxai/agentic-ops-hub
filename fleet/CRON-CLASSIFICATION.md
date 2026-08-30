@@ -53,7 +53,7 @@
 
 ## Open gaps
 
-1. **P1 — book-peer-offline.** No yoga-book.json heartbeat; Packet 4 first-boot never completed since 2026-07-16. c940 reports book_state=missing. Fix = run fleet/YOGA-BOOK-FIRST-BOOT.md ON the Yoga Book machine.
+1. **P1 — book-peer-offline.** Yoga Book heartbeat is stale; no fresh self-heartbeat has been observed since 2026-08-16T10:45:05+00:00. Packet 4 first-boot remains incomplete, so dispatch stays blocked. Fix = run fleet/YOGA-BOOK-FIRST-BOOT.md ON the Yoga Book machine.
 2. **P0-ops — disk-below-floor.** 44GiB free < 50GiB ops floor < 80GiB target. Capacity watchdogs active but heavy work must stay gated.
 3. **P2 — evals-weekly-dirty.** llm-evals-weekly-d0-regression exits 1 because canonical repo is dirty; needs a clean worktree before live eval.
 4. **P2 — github-harness-inventory-stale.** GITHUB-HARNESS-INVENTORY.md (2026-07-21) shows 214 unregistered operational repos; refresh via awesome-repo-control-plane generator.
