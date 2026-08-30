@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Validate and regenerate cron inventory projection
+        run: python scripts/render_cron_classification.py --check
+
       - name: Verify agent-rules sync engine runs
         run: node scripts/sync-agent-rules.mjs --help || node scripts/sync-agent-rules.mjs --check || true
 
