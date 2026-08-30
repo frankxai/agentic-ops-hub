@@ -24,15 +24,15 @@ class PlanLimitsTests(unittest.TestCase):
         self.assertEqual(start.isoformat(), "2026-08-24T09:00:00+02:00")
         self.assertEqual(end - start, timedelta(days=7))
 
-    def test_bucket_usage_excludes_records_before_weekly_reset(self):
+    def test_bucket_activity_excludes_records_before_weekly_reset(self):
         limits = self._pinned()
         now = datetime.fromisoformat("2026-08-26T12:00:00+02:00")
         stale = self._record("2026-08-24T08:00:00+02:00", "claude-sonnet-5-20260203", output_tokens=1000)
         fresh = self._record("2026-08-25T10:00:00+02:00", "claude-sonnet-5-20260203", output_tokens=1000)
-        usage = limits.bucket_usage([stale, fresh], now)
-        self.assertEqual(usage["buckets"]["sonnet"]["consumed_ste"], 5000.0)  # output x5, sonnet weight 1.0
-        self.assertEqual(usage["buckets"]["all_models"]["consumed_ste"], 5000.0)
-        self.assertEqual(usage["buckets"]["opus"]["consumed_ste"], 0.0)
+        usage = limits.bucket_activity([stale, fresh], now)
+        self.assertEqual(usage["buckets"]["sonnet"]["observed_ste"], 5000.0)  # output x5, sonnet weight 1.0
+        self.assertEqual(usage["buckets"]["all_models"]["observed_ste"], 5000.0)
+        self.assertEqual(usage["buckets"]["opus"]["observed_ste"], 0.0)
 
     def test_boost_multiplier_expires_after_2026_08_31(self):
         boosted_at = datetime(2026, 8, 28, 12, tzinfo=timezone.utc)
@@ -40,9 +40,11 @@ class PlanLimitsTests(unittest.TestCase):
         self.assertEqual(self.limits.boost_multiplier(boosted_at), 1.5)
         self.assertEqual(self.limits.boost_multiplier(flat_at), 1.0)
         limits = self._pinned()
-        boosted = limits.bucket_usage([], boosted_at)["buckets"]["opus"]["capacity_ste"]
-        flat = limits.bucket_usage([], flat_at)["buckets"]["opus"]["capacity_ste"]
-        self.assertAlmostEqual(boosted, flat * 1.5)
+        rec = [self._record("2026-08-24T12:00:00+02:00", "claude-opus-5", output_tokens=100_000)]
+        boosted = limits.bucket_activity(rec, boosted_at)["buckets"]["opus"]["activity_index"]
+        rec = [self._record("2026-08-31T12:00:00+02:00", "claude-opus-5", output_tokens=100_000)]
+        flat = limits.bucket_activity(rec, flat_at)["buckets"]["opus"]["activity_index"]
+        self.assertAlmostEqual(boosted, flat / 1.5, places=4)  # more capacity -> lower index
 
     def test_weights_follow_output_price_ratios_normalized_to_sonnet(self):
         self.assertEqual(self.limits.weight_for("claude-haiku-4-5-20251001"), 0.5)
@@ -51,24 +53,24 @@ class PlanLimitsTests(unittest.TestCase):
         self.assertEqual(self.limits.weight_for("claude-fable-5"), 5.0)
         self.assertEqual(self.limits.weight_for("claude-fable-5"), 2 * self.limits.weight_for("claude-opus-5"))
 
-    def test_advise_honors_normal_routing_above_60_percent(self):
-        decision = self.limits.advise(0.8, "deep-backend")
+    def test_advise_honors_normal_routing_at_low_activity(self):
+        decision = self.limits.advise(0.2, "deep-backend")
         self.assertEqual(decision["model"], "opus")
         self.assertEqual(decision["posture"], "normal")
 
-    def test_advise_downtiers_noncritical_below_30_percent(self):
+    def test_advise_downtiers_noncritical_at_high_activity(self):
         self.assertEqual(self.limits.advise(0.5, "deep-backend")["model"], "opus")  # watch band still honors routing
-        self.assertEqual(self.limits.advise(0.2, "deep-backend")["model"], "opus")  # class measurably needs its tier
-        self.assertEqual(self.limits.advise(0.2, "refactor")["model"], "sonnet")
-        self.assertEqual(self.limits.advise(0.2, "low-stakes")["model"], "haiku")
+        self.assertEqual(self.limits.advise(0.8, "deep-backend")["model"], "opus")  # class measurably needs its tier
+        self.assertEqual(self.limits.advise(0.8, "refactor")["model"], "sonnet")
+        self.assertEqual(self.limits.advise(0.8, "low-stakes")["model"], "haiku")
         stripped = self._pinned()
         stripped.config["advice"]["needs_expensive"] = []
-        self.assertEqual(stripped.advise(0.2, "deep-backend")["model"], "sonnet")
+        self.assertEqual(stripped.advise(0.8, "deep-backend")["model"], "sonnet")
 
-    def test_advise_floors_everything_noncritical_below_10_percent(self):
-        self.assertEqual(self.limits.advise(0.05, "refactor")["model"], "haiku")
-        self.assertEqual(self.limits.advise(0.05, "deep-backend")["model"], "sonnet")
-        critical = self.limits.advise(0.05, "deep-backend", critical=True)
+    def test_advise_floors_everything_noncritical_at_capacity(self):
+        self.assertEqual(self.limits.advise(0.95, "refactor")["model"], "haiku")
+        self.assertEqual(self.limits.advise(0.95, "deep-backend")["model"], "sonnet")
+        critical = self.limits.advise(0.95, "deep-backend", critical=True)
         self.assertEqual(critical["model"], "opus")
         self.assertEqual(critical["posture"], "floor")
 
@@ -91,10 +93,10 @@ class PlanLimitsTests(unittest.TestCase):
             path.write_text("\n".join([sonnet, sonnet, fable] + noise), encoding="utf-8")
             records = usage_ingest.records_from_jsonl(Path(tmp))
             self.assertEqual(len(records), 2)  # duplicate (msg_1, req_1) collapsed
-            usage = self._pinned().bucket_usage(records, datetime.fromisoformat("2026-08-25T12:00:00+02:00"))
-            self.assertEqual(usage["buckets"]["sonnet"]["consumed_ste"], 150.0)  # (100 + 10*5) * 1.0
-            self.assertEqual(usage["buckets"]["opus"]["consumed_ste"], 250.0)  # (10*5) * 5.0 - fable meters here
-            self.assertEqual(usage["buckets"]["all_models"]["consumed_ste"], 400.0)
+            usage = self._pinned().bucket_activity(records, datetime.fromisoformat("2026-08-25T12:00:00+02:00"))
+            self.assertEqual(usage["buckets"]["sonnet"]["observed_ste"], 150.0)  # (100 + 10*5) * 1.0
+            self.assertEqual(usage["buckets"]["opus"]["observed_ste"], 250.0)  # (10*5) * 5.0 - fable meters here
+            self.assertEqual(usage["buckets"]["all_models"]["observed_ste"], 400.0)
 
     def test_ingest_accepts_ccusage_daily_json(self):
         payload = {"daily": [{"date": "2026-08-25", "modelBreakdowns": [{
@@ -115,9 +117,60 @@ class PlanLimitsTests(unittest.TestCase):
             self.assertEqual(code, 2)
             self.assertIn("expected on a fresh container", stderr.getvalue())
 
+    def test_unverified_reset_anchor_refuses_to_compute(self):
+        from fleet.token_planner import PlannerError
+        now = datetime.fromisoformat("2026-08-26T12:00:00+02:00")
+        # the shipped file carries a placeholder anchor, never a usable default
+        self.assertFalse(self.limits.reset_anchor_verified())
+        with self.assertRaises(PlannerError) as ctx:
+            self.limits.weekly_window(now)
+        self.assertIn("Settings -> Usage", str(ctx.exception))
+
+    def test_expired_model_facts_force_uncalibrated(self):
+        limits = self._pinned()
+        fresh = datetime.fromisoformat("2026-08-26T12:00:00+02:00")
+        self.assertEqual(limits.facts_expired(fresh), [])
+        stale_at = datetime.fromisoformat("2027-01-01T12:00:00+02:00")
+        self.assertIn("weights", limits.facts_expired(stale_at))
+        self.assertFalse(limits.calibration_status(stale_at)["calibrated"])
+
+    def test_uncalibrated_state_is_advisory_only_and_never_auto_routes(self):
+        limits = self._pinned()
+        now = datetime.fromisoformat("2026-08-26T12:00:00+02:00")
+        status = limits.calibration_status(now)
+        self.assertFalse(status["calibrated"])  # zero observations recorded
+        self.assertTrue(any("observations" in r for r in status["blockers"]))
+        decision = limits.advise(0.2, "deep-backend", calibrated=status["calibrated"])
+        self.assertTrue(decision["advisory_only"])
+        self.assertFalse(decision["auto_route"])
+        self.assertIn("ADVISORY ONLY", decision["reason"])
+
+    def test_activity_index_carries_an_interval_matching_published_range_width(self):
+        limits = self._pinned()
+        now = datetime.fromisoformat("2026-08-26T12:00:00+02:00")
+        rec = [self._record("2026-08-25T10:00:00+02:00", "claude-opus-5", output_tokens=10_000_000)]
+        opus = limits.bucket_activity(rec, now)["buckets"]["opus"]
+        low, high = opus["activity_index_interval"]
+        self.assertLess(low, opus["activity_index"])
+        self.assertGreater(high, opus["activity_index"])
+        # interval ends come from the 24-40 h/week published range
+        self.assertAlmostEqual(high / low, 40 / 24, places=2)
+        self.assertFalse(opus["is_measurement"])
+
+    def test_report_never_claims_remaining_allowance(self):
+        limits = self._pinned()
+        now = datetime.fromisoformat("2026-08-26T12:00:00+02:00")
+        blob = json.dumps(limits.bucket_activity([], now)).lower()
+        for banned in ("remaining_fraction", "remaining allowance", "percent remaining"):
+            self.assertNotIn(banned, blob)
+        self.assertIn("not remaining plan allowance", blob)
+
     def _pinned(self):
         config = json.loads((self.root / "fleet" / "plan_limits.json").read_text(encoding="utf-8"))
-        config["weekly_reset"] = {"weekday": "monday", "hour": 9, "timezone": "Europe/Berlin"}
+        config["weekly_reset"] = {
+            "weekday": "monday", "hour": 9, "timezone": "Europe/Berlin",
+            "confidence": "verified",
+        }
         return PlanLimits(config)
 
     def _record(self, timestamp, model, input_tokens=0, output_tokens=0, cache_creation=0, cache_read=0):

@@ -254,7 +254,61 @@ class PlanLimits:
         with Path(path).open(encoding="utf-8") as handle:
             return cls(json.load(handle))
 
+    def facts_expired(self, now: datetime) -> list[str]:
+        """Names of dated facts whose valid_until has passed. Any expired fact
+        makes the whole computation uncalibrated - stale facts are loud."""
+        now = parse_timestamp(now)
+        stale = []
+        for name, spec in self.config.items():
+            if isinstance(spec, dict) and "valid_until" in spec:
+                if now >= parse_timestamp(spec["valid_until"]):
+                    stale.append(name)
+        for name, spec in self.config.get("buckets", {}).items():
+            if isinstance(spec, dict) and "valid_until" in spec:
+                if now >= parse_timestamp(spec["valid_until"]):
+                    stale.append(f"buckets.{name}")
+        return sorted(stale)
+
+    def reset_anchor_verified(self) -> bool:
+        """The weekly reset day/time is per-account. It has no defensible
+        default: an unverified anchor is an error state, not a fallback."""
+        return self.config["weekly_reset"].get("confidence") == "verified"
+
+    def observations(self) -> list[dict[str, Any]]:
+        return list(self.config.get("calibration", {}).get("observations", []))
+
+    def calibration_status(self, now: datetime) -> dict[str, Any]:
+        """Calibrated requires BOTH a verified reset anchor AND enough human
+        /usage observations spanning at least one reset boundary. Absent
+        either, every number this module emits is uncalibrated and advisory."""
+        calib = self.config["calibration"]
+        minimum = int(calib["minimum_observations"])
+        obs = self.observations()
+        reasons = []
+        if not self.reset_anchor_verified():
+            reasons.append("weekly_reset anchor is not verified - read it from Settings -> Usage")
+        if len(obs) < minimum:
+            reasons.append(f"{len(obs)}/{minimum} human /usage observations recorded")
+        spans_reset = False
+        if obs:
+            windows = {self.weekly_window(parse_timestamp(o["observed_at"]))[0]
+                       for o in obs} if self.reset_anchor_verified() else set()
+            spans_reset = len(windows) > 1
+            if not spans_reset:
+                reasons.append("observations do not span a reset boundary")
+        stale = self.facts_expired(now)
+        if stale:
+            reasons.append(f"expired facts: {', '.join(stale)}")
+        return {"calibrated": not reasons, "blockers": reasons,
+                "observations": len(obs), "spans_reset": spans_reset}
+
     def weekly_window(self, now: datetime) -> tuple[datetime, datetime]:
+        if not self.reset_anchor_verified():
+            raise PlannerError(
+                "weekly_reset anchor is not verified; refusing to compute a window. "
+                "Read the real reset day/time from Settings -> Usage, set it in "
+                "plan_limits.json, and mark confidence 'verified'."
+            )
         reset = self.config["weekly_reset"]
         local = parse_timestamp(now).astimezone(ZoneInfo(reset["timezone"]))
         anchor = local.replace(hour=int(reset["hour"]), minute=0, second=0, microsecond=0)
@@ -288,7 +342,7 @@ class PlanLimits:
     def weight_for(self, model: str) -> float:
         weights = self.config["weights"]
         for name, value in weights.items():
-            if name in {"$comment", "provenance", "confidence", "default"}:
+            if name in {"$comment", "provenance", "confidence", "default", "valid_until"}:
                 continue
             if name in model:
                 return float(value)
@@ -308,11 +362,18 @@ class PlanLimits:
         patterns = self.config["buckets"][bucket]["match"]
         return "*" in patterns or any(pattern in model for pattern in patterns)
 
-    def bucket_usage(self, records: Iterable[dict[str, Any]], now: datetime) -> dict[str, Any]:
+    def bucket_activity(self, records: Iterable[dict[str, Any]], now: datetime) -> dict[str, Any]:
+        """Local activity index per bucket: locally-observed STE divided by an
+        ESTIMATED capacity. This is NOT remaining allowance and NOT a reading of
+        the real plan. The index rises with use; 1.0 means local activity has
+        reached the midpoint capacity estimate. The interval comes from the
+        published hour range - a wide band, honestly reported.
+        """
         now = parse_timestamp(now)
         start, end = self.weekly_window(now)
         boost = self.boost_multiplier(now)
         per_hour = float(self.config["calibration"]["sonnet_tokens_per_hour"])
+        status = self.calibration_status(now)
         consumed = {name: 0.0 for name in self.config["buckets"]}
         for record in records:
             when = parse_timestamp(record["timestamp"])
@@ -325,25 +386,38 @@ class PlanLimits:
                     consumed[name] += burn
         buckets = {}
         for name, spec in self.config["buckets"].items():
-            capacity = float(spec["weekly_hours_planning"]) * per_hour * boost
-            fraction = max(0.0, 1.0 - consumed[name] / capacity) if capacity else 0.0
+            low_h, high_h = (float(v) for v in spec["published_range_hours"])
+            mid_h = float(spec["weekly_hours_planning"])
+
+            def index(hours: float) -> float:
+                cap = hours * per_hour * boost
+                return round(consumed[name] / cap, 4) if cap else float("inf")
+
             buckets[name] = {
-                "capacity_ste": capacity,
-                "consumed_ste": consumed[name],
-                "remaining_fraction": round(fraction, 4),
+                "observed_ste": consumed[name],
+                # More hours of capacity -> lower index. Interval ends swap.
+                "activity_index": index(mid_h),
+                "activity_index_interval": [index(high_h), index(low_h)],
+                "capacity_estimate_hours": {"low": low_h, "mid": mid_h, "high": high_h},
+                "is_measurement": False,
             }
         return {
             "window": {"start": start.isoformat(), "end": end.isoformat()},
             "boost_multiplier": boost,
+            "calibration": status,
             "buckets": buckets,
+            "disclaimer": (
+                "Local activity index derived from local session tokens and estimated "
+                "capacity. NOT remaining plan allowance. Cross-check /usage."
+            ),
         }
 
-    def binding_fraction(self, usage: dict[str, Any], model: str) -> float:
-        """Smallest remaining fraction among the buckets this model draws from
+    def binding_index(self, activity: dict[str, Any], model: str) -> float:
+        """Highest activity index among the buckets this model draws from
         (all_models always; plus the model-specific bucket)."""
-        return min(
-            bucket["remaining_fraction"]
-            for name, bucket in usage["buckets"].items()
+        return max(
+            bucket["activity_index"]
+            for name, bucket in activity["buckets"].items()
             if self._bucket_matches(name, model)
         )
 
@@ -351,19 +425,25 @@ class PlanLimits:
         models = self.config["advice"]["normal_models"]
         return str(models.get(job_class, models["default"]))
 
-    def advise(self, remaining_fraction: float, job_class: str, critical: bool = False) -> dict[str, Any]:
-        """Routing recommendation that down-tiers as the weekly allowance
-        depletes: >60% left honors normal routing, below ~30% non-critical
-        classes drop to Sonnet/Haiku, below ~10% everything not explicitly
-        critical goes to the cheapest passing tier."""
+    def advise(
+        self,
+        activity_index: float,
+        job_class: str,
+        critical: bool = False,
+        calibrated: bool = False,
+    ) -> dict[str, Any]:
+        """Suggest a Claude-lane model for a job class given the local activity
+        index. ADVISORY ONLY unless `calibrated` is True: an uncalibrated call
+        returns `auto_route: False` and no caller may act on it automatically.
+        Index rises with use, so higher means scarcer."""
         advice = self.config["advice"]
         thresholds = advice["thresholds"]
         normal = self.normal_model(job_class)
-        if remaining_fraction > float(thresholds["normal_above"]):
+        if activity_index < float(thresholds["normal_below"]):
             posture = "normal"
-        elif remaining_fraction > float(thresholds["watch_above"]):
+        elif activity_index < float(thresholds["watch_below"]):
             posture = "watch"
-        elif remaining_fraction > float(thresholds["conserve_above"]):
+        elif activity_index < float(thresholds["conserve_below"]):
             posture = "conserve"
         else:
             posture = "floor"
@@ -371,26 +451,30 @@ class PlanLimits:
         if critical:
             reason = f"critical flag set: {normal} kept regardless of {posture} posture"
         elif posture == "normal":
-            reason = "allowance healthy: normal routing honored"
+            reason = "local activity low: normal routing suggested"
         elif posture == "watch":
-            reason = "allowance thinning: normal routing still honored; prefer cheaper tiers where quality allows"
+            reason = "local activity rising: normal routing still suggested; prefer cheaper tiers where quality allows"
         elif posture == "conserve":
             if job_class in advice["needs_expensive"]:
                 reason = f"{job_class} measurably needs its tier: {normal} reserved"
             elif _TIER_ORDER.get(normal, 1) > _TIER_ORDER["sonnet"]:
                 model = "sonnet"
-                reason = "allowance low: non-critical work capped at sonnet"
+                reason = "local activity high: non-critical work suggested at sonnet"
             else:
-                reason = f"allowance low: {normal} already at or below sonnet"
+                reason = f"local activity high: {normal} already at or below sonnet"
         else:
             model = str(advice["floor_models"].get(job_class, advice["floor_models"]["default"]))
-            reason = "allowance nearly exhausted: cheapest passing tier only"
+            reason = "local activity at or past the capacity estimate: cheapest passing tier suggested"
+        if not calibrated:
+            reason = f"ADVISORY ONLY (uncalibrated): {reason}"
         return {
             "job_class": job_class,
-            "remaining_fraction": remaining_fraction,
+            "activity_index": activity_index,
             "posture": posture,
             "model": model,
             "critical": critical,
+            "advisory_only": not calibrated,
+            "auto_route": bool(calibrated),
             "reason": reason,
         }
 

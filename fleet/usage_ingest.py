@@ -95,7 +95,7 @@ def records_from_ccusage(payload: dict[str, Any]) -> list[dict[str, Any]]:
 
 def report(limits: PlanLimits, records: list[dict[str, Any]], now: datetime) -> dict[str, Any]:
     now = parse_timestamp(now)
-    usage = limits.bucket_usage(records, now)
+    usage = limits.bucket_activity(records, now)
     window_start = parse_timestamp(usage["window"]["start"])
     session_start, session_end = limits.session_window(now, records)
     per_model: dict[str, dict[str, Any]] = {}
@@ -153,8 +153,11 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     result = report(limits, records, now)
     if args.advise:
-        fraction = limits.binding_fraction(result, limits.normal_model(args.advise))
-        result["advice"] = limits.advise(fraction, args.advise, critical=args.critical)
+        index = limits.binding_index(result, limits.normal_model(args.advise))
+        calibrated = bool(result["calibration"]["calibrated"])
+        result["advice"] = limits.advise(
+            index, args.advise, critical=args.critical, calibrated=calibrated
+        )
     print(json.dumps(result, indent=2))
     return 0
 

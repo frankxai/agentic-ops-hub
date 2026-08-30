@@ -145,53 +145,56 @@ python ~/starlight-token-tracker/scripts/anomaly_check.py
 
 ---
 
-## 8. Plan-limit plane — subscription allowance (the second currency)
+## 8. Local activity index — subscription-metered work (the second currency)
 
-Everything above denominates in **USD at API rates**. That is correct when a run is metered by an API key: `--max-budget-usd` is a real wall. It is the **wrong denominator for work on a Claude Max subscription**, where you do not spend dollars — you spend a **weekly allowance metered in hours of model use**, reset on a fixed per-account schedule, with a 5-hour session window on top.
+Everything above denominates in **USD at API rates**. That is correct when a run is metered by an API key: `--max-budget-usd` is a real wall. It is the **wrong denominator for work on a Claude Max subscription**, where you do not spend dollars — Anthropic meters a weekly allowance in **hours of model use**, reset on a fixed per-account schedule, with a 5-hour session window on top.
 
-**These are two different currencies. Never conflate them.** A $40 envelope says nothing about how much of the week's allowance is left; a healthy allowance says nothing about API spend. USD envelopes (§3) govern API-metered work; this plane governs subscription-metered work.
+**These are two different currencies. Never conflate them.** USD envelopes (§3) govern API-metered work; this plane governs subscription-metered work.
 
-| Plane | Currency | Governs | Hard wall |
-|---|---|---|---|
-| USD envelopes (§3) | dollars at API rates | API-key-metered runs | `--max-budget-usd`, `--max-turns` |
-| Plan-limit plane (§8) | weekly model-time allowance | Claude Max subscription runs | Anthropic's weekly + 5h session caps |
+### What this measures, and what it does not
 
-### Mechanics (verified 2026-08-28)
+This plane emits a **local activity index**: locally-observed session tokens, weighted per model and token kind, divided by an *estimated* capacity.
 
-- Every paid plan meters two ways: a **session limit resetting every 5 hours** and a **weekly limit resetting at a fixed per-account day/time**. Read the reset from Settings → Usage and write it into `plan_limits.json:weekly_reset` (shipped value is a placeholder).
-- **Opus is tracked and reset separately.** Max plans carry an all-models weekly limit plus a Sonnet-specific one; the planner tracks three buckets: `all_models`, `sonnet`, `opus` (Fable-class models are *assumed* to meter in the premium bucket — unverified).
-- Published Max 20x figures — **240–480 h Sonnet, 24–40 h Opus per week** — were for the Sonnet 4 / Opus 4 generation and are **ranges: calibration priors, never contract numbers**. Actual burn varies with codebase size, message length, and history.
-- Weekly limits carry a **+50% boost through 2026-08-31**, modeled as a time-bounded multiplier (`plan_limits.json:boost`), not a permanent one.
-- Burn per token differs per model. Normalized to Sonnet 5 = 1.0 (output-price ratios): Haiku 0.5 · Sonnet 1.0 · Opus 2.5 · **Fable 5.0 — Fable burns 2x Opus per token**. This is the single most important routing fact once the allowance thins.
-- **No public API exposes subscription usage.** The estimator reads local Claude Code session JSONL (`~/.claude/projects/**/*.jsonl`, natively — or `ccusage daily --json` as alternative input); `/usage` inside a session is the authoritative live read. Past the included limit, usage credits extend at standard API rates, capped at $2,000 redemption/day.
+**It is not a measurement of your plan state, and nothing here may be called "remaining allowance."** Getting from local token counts to a percentage of the real plan requires an inference stack, and every layer is an assumption:
 
-### Down-tier policy (`PlanLimits.advise`)
+| Layer | Status |
+|---|---|
+| API output-price ratios → allowance burn | assumption; prices are verified, the mapping is not |
+| Published hour ranges (240–480 Sonnet, 24–40 Opus) | measured on the **Sonnet 4 / Opus 4** generation; a range, not a contract |
+| Per-account weekly reset anchor | **required input** — no defensible default exists |
+| Fable-class → Opus bucket | assumed, unverified; check `/usage` |
+| `sonnet_tokens_per_hour` calibration constant | the weakest link; unverified until derived from observations |
 
-| Remaining (binding bucket) | Posture | Effect |
-|---|---|---|
-| > 60% | normal | honor normal routing |
-| 30–60% | watch | normal routing honored; prefer cheaper tiers where quality allows |
-| 10–30% | conserve | non-critical classes capped at Sonnet/Haiku; expensive tiers reserved for classes that measurably need them (`deep-backend`) |
-| ≤ 10% | floor | everything except `--critical` work goes to the cheapest passing tier |
+None of those establish how Claude Max actually meters usage. Reporting a figure like "98.6% remaining" from that chain is false precision, and acting on it can down-tier the wrong work.
+
+### Consequences, enforced in code
+
+- **Index rises with use.** `activity_index` of 1.0 means local activity reached the midpoint capacity *estimate*. It is not a percentage of anything real.
+- **Every index carries an interval.** `activity_index_interval` comes from the width of the published hour range — a wide band, honestly reported. Each bucket also carries `is_measurement: false`.
+- **The reset anchor is required input.** `weekly_window()` raises rather than guessing. Read the real value from Settings → Usage, set `weekly_reset`, and mark `confidence: "verified"`.
+- **Dated facts expire.** `valid_until` on `weights`, `token_kind_multipliers`, `boost` and each bucket. Any expired fact forces the uncalibrated state — stale facts are loud, not silent.
+- **Uncalibrated is advisory-only and never auto-routes.** `advise()` returns `advisory_only: true` and `auto_route: false` unless calibrated. Calibrated requires **both** a verified anchor **and** at least `minimum_observations` human `/usage` readings spanning at least one reset boundary, recorded in `calibration.observations`.
+
+### Calibrating it
+
+Record what `/usage` actually showed, by hand, into `calibration.observations` (schema in `plan_limits.json`). Three readings spanning a reset boundary is the floor. Until then the state is uncalibrated by definition, and that is the correct state — not a bug to work around.
+
+### Relationship to model routing
+
+`model-routing.json` remains the **single source of truth for model routing**. It routes across vendors and denominates in USD. This file adds no routes and overrides none; its `advice` block is a Claude-lane suggestion keyed by the same job classes, advisory until calibrated.
 
 ### Commands
 
 ```bash
-python fleet/usage_ingest.py                          # bucket fractions + per-model burn, this week
-python fleet/usage_ingest.py --advise deep-backend    # + routing recommendation for a job class
-python fleet/usage_ingest.py --ccusage usage.json     # ingest `ccusage daily --json` instead of raw JSONL
+python3 -m fleet.usage_ingest                          # local activity report
+python3 -m fleet.usage_ingest --advise deep-backend    # + advisory suggestion
+python3 -m fleet.usage_ingest --ccusage out.json       # ccusage daily --json as input
 ```
 
-No session data on a fresh container/machine is expected, not a bug: the CLI says so and exits non-zero.
+Exits 2 with a plain message when no session data exists — expected on a fresh container, not a bug.
 
-### Executable SoT (this plane)
-
-| Artifact | Purpose |
-|----------|---------|
-| `fleet/plan_limits.json` | Plan tier, reset anchor, buckets, boost, per-model weights — every number tagged provenance + confidence |
-| `PlanLimits` in `fleet/token_planner.py` | Weekly/session windows, consumed-vs-remaining per bucket, down-tier advice |
-| `fleet/usage_ingest.py` | Local JSONL / ccusage ingestion into allowance-equivalent consumption |
-
----
-
-*Living planner — update when pricing, agents, or night policy change.*
+| Artifact | Role |
+|---|---|
+| `fleet/plan_limits.json` | facts, expiries, weights, buckets, calibration observations |
+| `fleet/token_planner.py` → `PlanLimits` | windows, weighting, index + interval, calibration status, advice |
+| `fleet/usage_ingest.py` | reads `~/.claude/projects/**/*.jsonl` or ccusage; read-only, no network, no ClickHouse |
