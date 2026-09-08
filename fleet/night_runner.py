@@ -3,10 +3,14 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import shutil
+import socket
 import subprocess
+import tempfile
+from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -19,12 +23,82 @@ class RunnerError(RuntimeError):
     pass
 
 
+class LeaseUnavailable(RunnerError):
+    pass
+
+
 @dataclass
 class NightRunner:
     planner: Planner
     state_dir: Path
     minimum_free_gb: float = 50.0
     maximum_memory_percent: float = 85.0
+
+    def local_machine_id(self) -> str:
+        hostname = socket.gethostname().strip().lower()
+        matches = [
+            machine_id
+            for machine_id, identity in self.planner.config.get("machine_identities", {}).items()
+            if hostname in {str(item).strip().lower() for item in identity.get("hostnames", [])}
+        ]
+        if len(matches) != 1:
+            raise RunnerError(f"hostname is not mapped to exactly one canonical machine: {hostname}")
+        return str(matches[0])
+
+    @staticmethod
+    def _lock_handle(handle: Any) -> None:
+        handle.seek(0)
+        if os.name == "nt":
+            import msvcrt
+
+            msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+        else:
+            import fcntl
+
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+
+    @staticmethod
+    def _unlock_handle(handle: Any) -> None:
+        handle.seek(0)
+        if os.name == "nt":
+            import msvcrt
+
+            msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+        else:
+            import fcntl
+
+            fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+
+    @contextmanager
+    def execution_leases(self, machine: str, repo: str):
+        lease_root = Path.home() / ".starlight" / "swarm-leases"
+        lease_root.mkdir(parents=True, exist_ok=True)
+        normalized_repo = str(Path(repo).resolve()).replace("\\", "/").casefold().rstrip("/")
+        repo_digest = hashlib.sha256(normalized_repo.encode("utf-8")).hexdigest()
+        paths = [
+            lease_root / f"machine-{machine}.lock",
+            lease_root / f"worktree-{repo_digest}.lock",
+        ]
+        handles: list[Any] = []
+        try:
+            for path in paths:
+                handle = path.open("a+b")
+                if path.stat().st_size == 0:
+                    handle.write(b"0")
+                    handle.flush()
+                try:
+                    self._lock_handle(handle)
+                except OSError as exc:
+                    handle.close()
+                    raise LeaseUnavailable(f"execution lease unavailable: {path.name}") from exc
+                handles.append(handle)
+            yield
+        finally:
+            for handle in reversed(handles):
+                try:
+                    self._unlock_handle(handle)
+                finally:
+                    handle.close()
 
     def current_branch(self, repo: str) -> str:
         result = subprocess.run(
@@ -70,26 +144,7 @@ class NightRunner:
             payload = json.loads(result.stdout)
         except json.JSONDecodeError:
             return {}
-        providers = payload if isinstance(payload, list) else payload.get("providers", [])
-        provider_map = self.planner.config.get("quota_providers", {})
-        usage = {}
-        for provider in providers:
-            label = str(provider.get("provider") or provider.get("label", ""))
-            agent = provider_map.get(label)
-            if not agent:
-                continue
-            remaining = [
-                float(metric["remaining_percent"])
-                for metric in provider.get("metrics", [])
-                if metric.get("remaining_percent") is not None
-            ]
-            if remaining:
-                usage[agent] = {
-                    "provider": label,
-                    "plan": provider.get("plan", "unknown"),
-                    "remaining_percent": min(remaining),
-                }
-        return usage
+        return self.planner.normalize_quota_payload(payload)
 
     def memory_percent(self) -> float:
         try:
@@ -140,6 +195,8 @@ class NightRunner:
             "gemini": "gemini",
             "agy": "agy",
             "opencode": "opencode",
+            "grok": "grok",
+            "dcode": "dcode",
         }.get(agent)
         if not binary:
             return {"ready": False, "detail": f"unsupported unattended agent: {agent}"}
@@ -172,8 +229,52 @@ class NightRunner:
                 "model_reasoning_effort=low",
                 "Reply exactly PONG. Do not inspect or modify files.",
             ]
-        elif agent in {"gemini", "agy"}:
+        elif agent == "gemini":
+            command = [
+                resolved,
+                "-p",
+                "Reply exactly PONG.",
+                "--approval-mode",
+                "plan",
+                "--sandbox=true",
+                "--output-format",
+                "json",
+            ]
+        elif agent == "agy":
             command = [resolved, "-p", "Reply exactly PONG."]
+        elif agent == "grok":
+            command = [
+                resolved,
+                "--single",
+                "Reply exactly PONG.",
+                "--cwd",
+                str(mission["repo"]),
+                "--model",
+                str(mission.get("model", "grok-4.5")),
+                "--max-turns",
+                "1",
+                "--output-format",
+                "json",
+                "--permission-mode",
+                "plan",
+                "--sandbox",
+                "read-only",
+                "--no-memory",
+                "--no-subagents",
+                "--disable-web-search",
+            ]
+        elif agent == "dcode":
+            command = [
+                resolved,
+                "--non-interactive",
+                "Reply exactly PONG.",
+                "--max-turns",
+                "1",
+                "--timeout",
+                "90",
+                "--no-mcp",
+                "--json",
+            ]
         else:
             auth = subprocess.run(
                 [resolved, "auth", "list"],
@@ -182,9 +283,12 @@ class NightRunner:
                 timeout=30,
                 check=False,
             )
-            detail = (auth.stdout or auth.stderr).strip()[:500]
-            ready = auth.returncode == 0 and "0 credentials" not in detail.lower()
-            return {"ready": ready, "detail": detail or "OpenCode auth not verified"}
+            raw_detail = (auth.stdout or auth.stderr).strip()
+            ready = auth.returncode == 0 and "0 credentials" not in raw_detail.lower()
+            return {
+                "ready": ready,
+                "detail": "credentials declared" if ready else "OpenCode auth not verified",
+            }
         result = subprocess.run(
             command,
             capture_output=True,
@@ -208,16 +312,25 @@ class NightRunner:
                 else:
                     raise ValueError("unsupported Claude JSON response")
             except (json.JSONDecodeError, IndexError, ValueError):
-                return {"ready": False, "detail": detail}
-            detail = str(payload.get("result", "Claude preflight returned no result"))[:500]
+                return {
+                    "ready": False,
+                    "detail": f"claude preflight failed (exit {result.returncode})",
+                }
             if payload.get("is_error"):
-                return {"ready": False, "detail": detail}
+                return {
+                    "ready": False,
+                    "detail": f"claude preflight failed (exit {result.returncode})",
+                }
+            ready = result.returncode == 0 and "PONG" in str(payload.get("result", "")).upper()
             return {
-                "ready": result.returncode == 0 and "PONG" in detail.upper(),
-                "detail": detail,
+                "ready": ready,
+                "detail": "PONG" if ready else f"claude preflight failed (exit {result.returncode})",
             }
         ready = result.returncode == 0 and "PONG" in (result.stdout + result.stderr).upper()
-        return {"ready": ready, "detail": detail}
+        return {
+            "ready": ready,
+            "detail": "PONG" if ready else f"{agent} preflight failed (exit {result.returncode})",
+        }
 
     def _route_mission(
         self,
@@ -233,6 +346,16 @@ class NightRunner:
             if candidate in excluded_agents:
                 failures.append(f"{candidate}: reserved for maker/checker separation")
                 continue
+            pool = self.planner.config.get("cli_pools", {}).get(candidate, {})
+            mission_machine = str(mission.get("machine") or "")
+            if mission_machine and mission_machine not in set(map(str, pool.get("machines", []))):
+                failures.append(f"{candidate}: not configured for machine {mission_machine}")
+                continue
+            role = str(mission.get("role", "maker"))
+            supported_roles = set(pool.get("roles", []))
+            if supported_roles and role not in supported_roles:
+                failures.append(f"{candidate}: role {role} is unsupported")
+                continue
             routed = dict(mission)
             if candidate != preferred:
                 defaults = self.planner.config.get("agent_defaults", {}).get(candidate)
@@ -241,9 +364,14 @@ class NightRunner:
                     continue
                 routed.update({key: value for key, value in defaults.items() if key != "budget_usd"})
                 routed["agent"] = candidate
-                routed["quota_pool"] = candidate
+                routed["quota_pool"] = str(pool.get("quota_pool") or candidate)
                 routed["routed_from"] = preferred
-            quota_ready, quota_detail = self.planner.quota_health(candidate, usage)
+            quota_ready, quota_detail = self.planner.quota_health(
+                candidate,
+                usage,
+                metered_approval=routed.get("metered_spend_approval"),
+                budget_usd=routed.get("budget_usd", 0),
+            )
             if not quota_ready:
                 failures.append(f"{candidate}: {quota_detail}")
                 continue
@@ -262,6 +390,7 @@ class NightRunner:
         if int(manifest.get("version", 1)) < 2:
             raise RunnerError("runner requires manifest version 2 with acceptance commands and receipts")
         validation = self.planner.validate_manifest(manifest)
+        local_machine = self.local_machine_id() if manifest.get("mode") == "campaign" else None
         rows = []
         checked_agents: dict[tuple[str, str, str], dict[str, Any]] = {}
         usage = self.subscription_usage()
@@ -303,6 +432,15 @@ class NightRunner:
                     "wave": mission["wave"],
                 })
                 continue
+            if local_machine is not None and str(mission["machine"]) != local_machine:
+                rows.append({
+                    "id": mission["id"],
+                    "agent": mission["agent"],
+                    "action": "queued-machine",
+                    "machine": mission["machine"],
+                    "local_machine": local_machine,
+                })
+                continue
             repo = str(mission["repo"])
             self.enforce_resources(repo)
             actual = self.current_branch(repo)
@@ -324,7 +462,7 @@ class NightRunner:
             routed, quota_detail, health = self._route_mission(
                 mission, usage, excluded_agents, checked_agents
             )
-            if mission.get("objective_id") and routed["agent"] != mission["agent"]:
+            if routed["agent"] != mission["agent"]:
                 rows.append(
                     {
                         "id": mission["id"],
@@ -335,7 +473,7 @@ class NightRunner:
                         "wave": mission.get("wave"),
                         "quota": quota_detail,
                         "health": health,
-                        "detail": "commit the fallback as the manifest agent before campaign execution",
+                        "detail": "commit and revalidate the fallback as the manifest agent before execution",
                     }
                 )
                 continue
@@ -368,6 +506,137 @@ class NightRunner:
     def _write_state(self, path: Path, state: dict[str, Any]) -> None:
         path.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
+    def _revalidate_for_launch(
+        self,
+        manifest: dict[str, Any],
+        mission: dict[str, Any],
+    ) -> dict[str, Any]:
+        self.planner.validate_manifest(manifest)
+        campaign_status = self.planner.status(manifest)
+        status_by_id = {row["id"]: row["status"] for row in campaign_status["missions"]}
+        state = status_by_id[mission["id"]]
+        if state in {"verified", "delivered"}:
+            return {
+                "id": mission["id"],
+                "agent": mission["agent"],
+                "action": "skip-verified",
+                "receipt": mission["receipt"],
+            }
+        if state in {"hold", "blocked", "failed", "failed-verification", "invalid-receipt"}:
+            return {
+                "id": mission["id"],
+                "agent": mission["agent"],
+                "action": "skip-terminal",
+                "receipt_status": state,
+            }
+        dependency_state = self.planner.dependency_state(mission, status_by_id)
+        if dependency_state != "ready":
+            return {
+                "id": mission["id"],
+                "agent": mission["agent"],
+                "action": "blocked-upstream" if dependency_state == "blocked" else "queued-dependency",
+                "dependencies": mission.get("depends_on", []),
+            }
+        if manifest.get("mode") == "campaign":
+            local_machine = self.local_machine_id()
+            if str(mission["machine"]) != local_machine:
+                return {
+                    "id": mission["id"],
+                    "agent": mission["agent"],
+                    "action": "queued-machine",
+                    "machine": mission["machine"],
+                    "local_machine": local_machine,
+                }
+            if int(mission["wave"]) != self.planner.active_wave(manifest):
+                return {
+                    "id": mission["id"],
+                    "agent": mission["agent"],
+                    "action": "queued-wave",
+                    "wave": mission["wave"],
+                }
+        repo = str(mission["repo"])
+        branch = self.current_branch(repo)
+        if branch != mission["branch"]:
+            raise RunnerError(
+                f"branch mismatch for {mission['id']}: expected {mission['branch']}, got {branch}"
+            )
+        if not self.is_clean(repo):
+            raise RunnerError(f"repo is dirty for {mission['id']}: {repo}")
+        self.enforce_resources(repo)
+        excluded_agents = set()
+        if manifest.get("mode") == "campaign" and mission.get("role") == "verifier":
+            excluded_agents = {
+                str(other["agent"])
+                for other in manifest["missions"]
+                if other.get("objective_id") == mission.get("objective_id")
+                and other.get("role") == "maker"
+            }
+        routed, quota_detail, health = self._route_mission(
+            mission,
+            self.subscription_usage(),
+            excluded_agents,
+            {},
+        )
+        if routed["agent"] != mission["agent"]:
+            return {
+                "id": mission["id"],
+                "agent": mission["agent"],
+                "action": "requires-manifest-reroute",
+                "requested_agent": mission["agent"],
+                "recommended_agent": routed["agent"],
+                "detail": "commit and revalidate the fallback as the manifest agent before execution",
+            }
+        return {
+            "id": mission["id"],
+            "agent": routed["agent"],
+            "action": "would-launch",
+            "quota": quota_detail,
+            "health": health["detail"],
+            "argv": self.planner.command_args(routed),
+        }
+
+    def _execute_prepared_mission(
+        self,
+        mission: dict[str, Any],
+        row: dict[str, Any],
+        log_path: Path,
+    ) -> tuple[dict[str, Any], str]:
+        started = datetime.now(timezone.utc).isoformat()
+        try:
+            with log_path.open("w", encoding="utf-8") as log_handle:
+                result = subprocess.run(
+                    row["argv"],
+                    cwd=str(mission["repo"]),
+                    stdout=log_handle,
+                    stderr=subprocess.STDOUT,
+                    timeout=int(mission.get("timeout_minutes", 60)) * 60,
+                    check=False,
+                )
+            exit_code = result.returncode
+            run_status = "exited" if exit_code == 0 else "failed-exit"
+        except subprocess.TimeoutExpired:
+            exit_code = 124
+            run_status = "timeout"
+        receipt_state = self.planner.status(
+            {"missions": [mission]}
+        )["missions"][0]
+        if run_status == "exited" and receipt_state["status"] not in {"verified", "delivered"}:
+            run_status = "failed-unverified"
+        result_row = {
+            "id": mission["id"],
+            "agent": row["agent"],
+            "requested_agent": mission["agent"],
+            "status": run_status,
+            "exit_code": exit_code,
+            "started_at": started,
+            "finished_at": datetime.now(timezone.utc).isoformat(),
+            "log": str(log_path),
+            "report": str(mission["report"]),
+            "receipt": str(mission["receipt"]),
+            "receipt_status": receipt_state["status"],
+        }
+        return result_row, run_status
+
     def launch(self, manifest: dict[str, Any]) -> dict[str, Any]:
         prepared = self.prepare(manifest)
         run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -393,6 +662,7 @@ class NightRunner:
                 "queued-wave",
                 "queued-dependency",
                 "blocked-upstream",
+                "queued-machine",
                 "requires-manifest-reroute",
             }:
                 state["missions"].append(
@@ -410,54 +680,49 @@ class NightRunner:
                 state["missions"].append({"id": mission["id"], "status": "blocked-resource", "error": str(exc)})
                 self._write_state(state_path, state)
                 break
-            log_path = logs / f"{mission['id']}.log"
-            started = datetime.now(timezone.utc).isoformat()
-            try:
-                with log_path.open("w", encoding="utf-8") as log_handle:
-                    result = subprocess.run(
-                        row["argv"],
-                        cwd=str(mission["repo"]),
-                        stdout=log_handle,
-                        stderr=subprocess.STDOUT,
-                        timeout=int(mission.get("timeout_minutes", 60)) * 60,
-                        check=False,
-                    )
-                exit_code = result.returncode
-                run_status = "exited" if exit_code == 0 else "failed-exit"
-            except subprocess.TimeoutExpired:
-                exit_code = 124
-                run_status = "timeout"
-            effective_mission = dict(mission)
-            effective_mission["agent"] = row["agent"]
-            effective_mission["quota_pool"] = row["agent"]
-            receipt_state = self.planner.status(
-                {"missions": [effective_mission]}
-            )["missions"][0]
-            recorded_agent = self.planner.recorded_agent(mission)
-            if recorded_agent and recorded_agent != row["agent"]:
-                receipt_state = {
-                    **receipt_state,
-                    "status": "invalid-receipt",
-                    "detail": "receipt agent does not match effective runtime route",
-                }
-            if run_status == "exited" and receipt_state["status"] not in {"verified", "delivered"}:
-                run_status = "failed-unverified"
-            state["missions"].append(
-                {
+            if row["agent"] != mission["agent"]:
+                state["missions"].append({
                     "id": mission["id"],
-                    "agent": row["agent"],
+                    "status": "requires-manifest-reroute",
                     "requested_agent": mission["agent"],
-                    "status": run_status,
-                    "exit_code": exit_code,
-                    "started_at": started,
-                    "finished_at": datetime.now(timezone.utc).isoformat(),
-                    "log": str(log_path),
-                    "report": str(mission["report"]),
-                    "receipt": str(mission["receipt"]),
-                    "receipt_status": receipt_state["status"],
-                }
-            )
-            self._write_state(state_path, state)
+                    "recommended_agent": row["agent"],
+                })
+                self._write_state(state_path, state)
+                break
+            log_path = logs / f"{mission['id']}.log"
+            lease_machine = str(mission.get("machine") or socket.gethostname().strip().lower())
+            try:
+                with self.execution_leases(lease_machine, str(mission["repo"])):
+                    fresh_row = self._revalidate_for_launch(manifest, mission)
+                    if fresh_row["action"] != "would-launch":
+                        state["missions"].append({
+                            key: value
+                            for key, value in fresh_row.items()
+                            if key != "argv"
+                        } | {"status": fresh_row["action"]})
+                        self._write_state(state_path, state)
+                        continue
+                    mission_state, run_status = self._execute_prepared_mission(
+                        mission, fresh_row, log_path
+                    )
+                    state["missions"].append(mission_state)
+                    self._write_state(state_path, state)
+            except LeaseUnavailable as exc:
+                state["missions"].append({
+                    "id": mission["id"],
+                    "status": "blocked-lease",
+                    "error": str(exc),
+                })
+                self._write_state(state_path, state)
+                break
+            except RunnerError as exc:
+                state["missions"].append({
+                    "id": mission["id"],
+                    "status": "blocked-revalidation",
+                    "error": str(exc),
+                })
+                self._write_state(state_path, state)
+                break
             if run_status not in {"exited"}:
                 break
         state["finished_at"] = datetime.now(timezone.utc).isoformat()

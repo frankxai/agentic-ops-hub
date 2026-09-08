@@ -35,8 +35,10 @@
       "id": "retrofit-maker",
       "objective_id": "OBJ-FLEET-DELIVERY",
       "role": "maker",
+      "job_class": "orchestration",
       "wave": 1,
       "agent": "codex",
+      "machine": "yoga-book",
       "quota_pool": "codex",
       "model": "gpt-5.6-terra",
       "reasoning_effort": "high",
@@ -59,12 +61,14 @@
       ],
       "verification_ids": [
         "full-unit-suite",
-        "json-contracts",
+        "objective-registry-json",
+        "campaign-json",
         "campaign-admission"
       ],
       "acceptance_commands": [
         "python -m unittest discover -s tests -p 'test_*.py' -v",
-        "python -m json.tool objectives-registry.json && python -m json.tool fleet/campaigns/2026-07-17-objective-retrofit.json",
+        "python -m json.tool objectives-registry.json",
+        "python -m json.tool fleet/campaigns/2026-07-17-objective-retrofit.json",
         "python -m fleet.night_runner fleet/campaigns/2026-07-17-objective-retrofit.json"
       ],
       "report": "fleet/reports/2026-07-17-six-hour-retrospective.md",
@@ -74,17 +78,19 @@
       "id": "retrofit-verifier",
       "objective_id": "OBJ-FLEET-DELIVERY",
       "role": "verifier",
+      "job_class": "orchestration",
       "wave": 2,
       "depends_on": [
         "retrofit-maker"
       ],
       "agent": "claude",
+      "machine": "c940",
       "quota_pool": "claude",
       "model": "opus",
       "repo": "C:/Users/frank/starlight/worktrees/agentic-ops-hub-objective-campaign",
       "branch": "agent/hermes/objective-campaign-v2-20260717",
       "budget_usd": 10,
-      "max_turns": 15,
+      "max_turns": 25,
       "timeout_minutes": 60,
       "outcome": "Independently verify the implementation against safety, receipt portability, wave sequencing, fallback routing, tests, and the stated objective.",
       "task": "Review the committed maker diff and run acceptance checks. Do not change product code. Write only the verification report and receipt. Do not commit, push, merge, deploy, spend, access credentials, or send externally.",

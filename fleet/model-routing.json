@@ -13,17 +13,88 @@
     "disk_floor_gb": 50,
     "memory_ceiling_percent": 85
   },
+  "daily_planning": {
+    "timezone": "Europe/Amsterdam",
+    "planning_horizon_hours": 24,
+    "replan_interval_minutes": 90,
+    "target_usable_capacity_ratio": 0.85,
+    "unmeasured_lane_cap": 1,
+    "unmetered_lane_cap": 4,
+    "default_quota_delta_percent": {
+      "maker": 6,
+      "verifier": 2,
+      "researcher": 3,
+      "integrator": 2
+    },
+    "default_duration_minutes": {
+      "maker": 90,
+      "verifier": 45,
+      "researcher": 60,
+      "integrator": 45
+    },
+    "policy": "Use 85% of capacity above each reserve floor, replan from receipts and resets, and never invent work merely to consume quota."
+  },
+  "machine_identities": {
+    "yoga-book": {"hostnames": ["starlight"]},
+    "c940": {"hostnames": ["desktop-1b4icid"]}
+  },
+  "cli_pools": {
+    "codex": {
+      "kind": "coding-cli", "quota_pool": "codex", "mode": "measured",
+      "machines": ["yoga-book", "c940"], "roles": ["maker", "verifier", "integrator"]
+    },
+    "claude": {
+      "kind": "coding-cli", "quota_pool": "claude", "mode": "measured",
+      "machines": ["c940", "yoga-book"], "roles": ["maker", "verifier", "integrator"]
+    },
+    "gemini": {
+      "kind": "long-context-cli", "quota_pool": "gemini", "mode": "measured",
+      "machines": ["yoga-book", "c940"], "roles": ["researcher", "verifier"]
+    },
+    "grok": {
+      "kind": "research-and-coding-cli", "quota_pool": "grok", "mode": "measured",
+      "machines": ["yoga-book", "c940"], "roles": ["researcher", "verifier", "maker"]
+    },
+    "agy": {
+      "kind": "multi-model-cli", "quota_pool": "agy", "mode": "unmeasured",
+      "machines": ["yoga-book", "c940"], "roles": ["maker", "verifier", "researcher"]
+    },
+    "opencode": {
+      "kind": "provider-routing-cli", "quota_pool": "opencode", "mode": "unmeasured",
+      "machines": ["yoga-book", "c940"], "roles": ["maker", "verifier"]
+    },
+    "dcode": {
+      "kind": "provider-routing-cli", "quota_pool": "metered-api", "mode": "metered",
+      "hard_spend_cap_supported": false,
+      "machines": ["yoga-book", "c940"], "roles": ["maker", "verifier", "researcher"]
+    },
+    "hermes": {
+      "kind": "queen-orchestrator", "quota_pool": "orchestration", "mode": "control-only",
+      "machines": ["yoga-book"], "roles": ["integrator"]
+    }
+  },
   "agent_defaults": {
     "claude": {"model": "opus", "max_turns": 30},
     "codex": {"model": "gpt-5.6-terra", "reasoning_effort": "high", "max_turns": 25},
     "opencode": {"model": "github-copilot/gpt-5.4", "max_turns": 20},
     "agy": {"model": "default", "max_turns": 20},
-    "gemini": {"model": "gemini-3.5", "max_turns": 15}
+    "gemini": {"model": "gemini-3.5", "max_turns": 15},
+    "grok": {"model": "grok-4.5", "max_turns": 20},
+    "dcode": {"model": "gpt-5.5", "max_turns": 20}
   },
   "quota_providers": {
     "Claude": "claude",
     "Codex": "codex",
     "Grok Build": "grok"
+  },
+  "cli_capacity_keys": {
+    "claude": "claude-max",
+    "codex": "openai-codex-max",
+    "gemini": "gemini-ultra",
+    "grok": "grok-heavy",
+    "agy": "agy",
+    "opencode": "opencode",
+    "dcode": "dcode-metered"
   },
   "subscription_gates": {
     "claude": {"minimum_remaining_percent": 15, "allow_unmeasured": false},
@@ -32,6 +103,7 @@
     "opencode": {"mode": "unmetered"},
     "agy": {"allow_unmeasured": true},
     "gemini": {"allow_unmeasured": true},
+    "metered-api": {"mode": "metered"},
     "github": {"mode": "unmetered"}
   },
   "subscription_strategy": {
@@ -99,11 +171,11 @@
       "why": "Long-context repository mapping before focused implementation"
     },
     "research": {
-      "agent": "claude",
-      "model": "opus",
+      "agent": "grok",
+      "model": "grok-4.5",
       "budget_usd": 15,
       "max_turns": 15,
-      "why": "Claude has healthy live quota for bounded synthesis; use Grok only after its weekly pool resets"
+      "why": "Current web/X research and adversarial synthesis, dynamically falling back when the xAI pool is near reserve"
     },
     "low-stakes": {
       "agent": "codex",
@@ -139,12 +211,13 @@
     }
   },
   "fallbacks": {
-    "claude": ["opencode", "agy"],
-    "codex": ["claude", "opencode", "agy"],
-    "gemini": ["claude", "codex"],
-    "opencode": ["claude", "codex"],
-    "agy": ["claude", "codex"],
-    "grok": ["claude", "codex"],
+    "claude": ["codex", "opencode", "agy", "dcode"],
+    "codex": ["claude", "agy", "opencode", "dcode"],
+    "gemini": ["grok", "codex", "claude", "agy", "dcode"],
+    "opencode": ["codex", "claude", "agy", "dcode"],
+    "agy": ["codex", "claude", "grok", "opencode", "dcode"],
+    "grok": ["gemini", "codex", "claude", "agy", "dcode"],
+    "dcode": ["codex", "claude", "agy", "opencode"],
     "cursor": ["codex"],
     "github": ["hermes"],
     "hermes": ["codex"]

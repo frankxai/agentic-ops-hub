@@ -27,11 +27,13 @@ Expected identity is `yoga-book` even though the hostname is `Starlight`. Never 
 python scripts/cli_capacity.py \
   --machine yoga-book \
   --live \
+  --live-cli codex \
+  --live-cli claude \
   --codex-model gpt-5.6-terra \
-  --output fleet/reports/cli-capacity/yoga-book.json
+  --output C:/Users/frank/.starlight/token-planner/cli-capacity-yoga-book.json
 ```
 
-The report may say a lane is blocked. That is a valid result. Do not label a lane ready from version/login output alone. Do not commit credentials or raw tokens.
+The report may say a lane is blocked. That is a valid result. Do not label a lane ready from version/login output alone. Keep runtime reports machine-local under `.starlight`; do not commit credentials, raw tokens, account metadata, or live provider responses.
 
 ## Active outcome packet: BOOK-CLI-20260717
 

@@ -120,15 +120,16 @@ def _probe_claude(live: bool) -> dict[str, Any]:
     declared_detail = ""
     if installed:
         code, output = run(["claude", "auth", "status"], timeout=30)
-        declared_detail = output[:500]
         try:
             payload = json.loads(output)
             auth_declared = code == 0 and bool(payload.get("loggedIn"))
         except json.JSONDecodeError:
             auth_declared = code == 0 and "logged" in output.lower()
+        declared_detail = "credentials declared" if auth_declared else "credentials unavailable"
     live_ok = False
     live_detail = "not run"
-    if live and installed:
+    live_checked = live and installed and auth_declared
+    if live_checked:
         code, output = run(
             [
                 "claude",
@@ -143,23 +144,35 @@ def _probe_claude(live: bool) -> dict[str, Any]:
             ],
             timeout=90,
         )
-        live_detail = output[:800]
         try:
-            payload = json.loads(output.splitlines()[0])
-            live_ok = code == 0 and not payload.get("is_error") and "PONG" in str(payload.get("result", "")).upper()
-        except (json.JSONDecodeError, IndexError):
+            decoded = json.loads(output)
+            if isinstance(decoded, dict):
+                payload = decoded
+            elif isinstance(decoded, list):
+                terminal_events = [
+                    item
+                    for item in decoded
+                    if isinstance(item, dict) and "is_error" in item and "result" in item
+                ]
+                payload = terminal_events[-1]
+            else:
+                raise ValueError("unsupported Claude JSON response")
+            live_detail = str(payload.get("result", "Claude preflight returned no result"))[:300]
+            live_ok = code == 0 and not payload.get("is_error") and "PONG" in live_detail.upper()
+        except (json.JSONDecodeError, IndexError, ValueError):
             live_ok = code == 0 and "PONG" in output.upper()
+        live_detail = "PONG" if live_ok else f"claude preflight failed (exit {code})"
     return {
         "installed": installed,
         "version": version,
         "status": classify_probe(
             installed=installed,
             auth_declared=auth_declared,
-            live_checked=live,
+            live_checked=live_checked,
             live_ok=live_ok,
         ),
         "auth_declared": auth_declared,
-        "declared_detail": "logged-in" if auth_declared else declared_detail[:200],
+        "declared_detail": declared_detail,
         "live_detail": live_detail[:300],
     }
 
@@ -170,17 +183,20 @@ def _probe_codex(live: bool, repo: str, model: str) -> dict[str, Any]:
     declared_detail = ""
     if installed:
         code, output = run(["codex", "login", "status"], timeout=30)
-        declared_detail = output[:300]
         auth_declared = code == 0 and "logged in" in output.lower()
+        declared_detail = "credentials declared" if auth_declared else "credentials unavailable"
     live_ok = False
     live_detail = "not run"
-    if live and installed:
+    live_checked = live and installed and auth_declared
+    if live_checked:
+        probe_dir = os.environ.get("TEMP") or os.environ.get("TMP") or repo
         code, output = run(
             [
                 "codex",
                 "exec",
                 "-C",
-                repo,
+                probe_dir,
+                "--skip-git-repo-check",
                 "--sandbox",
                 "read-only",
                 "-m",
@@ -189,10 +205,10 @@ def _probe_codex(live: bool, repo: str, model: str) -> dict[str, Any]:
                 "model_reasoning_effort=low",
                 "Reply exactly PONG. Do not inspect or modify files.",
             ],
-            timeout=120,
+            timeout=180,
         )
         live_ok = code == 0 and "PONG" in output.upper()
-        live_detail = output[-800:]
+        live_detail = "PONG" if live_ok else f"codex preflight failed (exit {code})"
     return {
         "installed": installed,
         "version": version,
@@ -200,11 +216,11 @@ def _probe_codex(live: bool, repo: str, model: str) -> dict[str, Any]:
         "status": classify_probe(
             installed=installed,
             auth_declared=auth_declared,
-            live_checked=live,
+            live_checked=live_checked,
             live_ok=live_ok,
         ),
         "auth_declared": auth_declared,
-        "declared_detail": declared_detail[:200],
+        "declared_detail": declared_detail,
         "live_detail": live_detail[:300],
     }
 
@@ -222,11 +238,14 @@ def _probe_gemini(live: bool, model: str = "gemini-3.5") -> dict[str, Any]:
     live_checked = live and installed and auth_declared
     if live_checked:
         code, output = run(
-            ["gemini", "-m", model, "-p", "Reply exactly PONG.", "--output-format", "json"],
+            [
+                "gemini", "-m", model, "-p", "Reply exactly PONG.",
+                "--approval-mode", "plan", "--sandbox=true", "--output-format", "json",
+            ],
             timeout=120,
         )
         live_ok = code == 0 and "PONG" in output.upper()
-        live_detail = output[-500:]
+        live_detail = "PONG" if live_ok else f"gemini preflight failed (exit {code})"
     return {
         "installed": installed,
         "version": version,
@@ -256,16 +275,16 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     declared_detail = ""
     if installed:
         code, output = run(auth_command, timeout=30)
-        declared_detail = output[:300]
         lowered = output.lower()
         auth_declared = code == 0 and "0 credentials" not in lowered and "not logged" not in lowered
+        declared_detail = "credentials declared" if auth_declared else "credentials unavailable"
     live_ok = False
     live_detail = "not run"
     live_checked = live and installed and auth_declared
     if live_checked:
         code, output = run(live_command, timeout=120)
         live_ok = code == 0 and "PONG" in output.upper()
-        live_detail = output[-500:]
+        live_detail = "PONG" if live_ok else f"{binary} preflight failed (exit {code})"
     return {
         "installed": installed,
         "version": version,
@@ -281,23 +300,79 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     }
 
 
-def build_report(*, machine: str, live: bool, repo: str, codex_model: str) -> dict[str, Any]:
+def _probe_metered_dcode() -> dict[str, Any]:
+    installed, version = _version("dcode")
+    auth_declared = False
+    declared_detail = "missing"
+    if installed:
+        code, output = run(["dcode", "auth", "list"], timeout=30)
+        auth_declared = code == 0 and "not configured" not in output.lower()
+        declared_detail = "credentials declared" if auth_declared else "credentials unavailable"
+    return {
+        "installed": installed,
+        "version": version,
+        "status": "metered-disabled" if installed else "missing-cli",
+        "auth_declared": auth_declared,
+        "declared_detail": declared_detail[:200],
+        "live_detail": "not run; metered providers require explicit campaign budget approval",
+        "cost_mode": "metered-fail-closed",
+    }
+
+
+def grok_probe_command() -> list[str]:
+    probe_dir = os.environ.get("TEMP") or os.environ.get("TMP") or str(ROOT)
+    return [
+        "grok", "--single", "Reply exactly PONG.",
+        "--model", "grok-4.5", "--max-turns", "1",
+        "--output-format", "json", "--permission-mode", "plan",
+        "--sandbox", "read-only", "--cwd", probe_dir,
+        "--system-prompt-override", "You are a minimal connectivity probe. Reply exactly PONG.",
+        "--verbatim", "--no-memory", "--no-subagents", "--disable-web-search",
+    ]
+
+
+def build_report(
+    *,
+    machine: str,
+    live: bool,
+    repo: str,
+    codex_model: str,
+    live_clis: set[str] | None = None,
+) -> dict[str, Any]:
     usage = shutil.disk_usage(repo)
     gate = resource_gate(
         disk_free_gb=usage.free / (1024**3),
         memory_percent=memory_percent(),
     )
     effective_live = live and gate["launch_allowed"]
+    selected = set(live_clis or ())
+
+    def should_probe(name: str) -> bool:
+        return effective_live and (not selected or name in selected)
+
     probes = {
-        "claude-max": _probe_claude(effective_live),
-        "openai-codex-max": _probe_codex(effective_live, repo, codex_model),
-        "gemini-ultra": _probe_gemini(effective_live),
+        "claude-max": _probe_claude(should_probe("claude")),
+        "openai-codex-max": _probe_codex(should_probe("codex"), repo, codex_model),
+        "gemini-ultra": _probe_gemini(should_probe("gemini")),
         "opencode": _probe_simple(
             "opencode",
-            effective_live,
+            should_probe("opencode"),
             ["opencode", "run", "Reply exactly PONG."],
             ["opencode", "auth", "list"],
         ),
+        "grok-heavy": _probe_simple(
+            "grok",
+            should_probe("grok"),
+            grok_probe_command(),
+            ["grok", "models"],
+        ),
+        "agy": _probe_simple(
+            "agy",
+            should_probe("agy"),
+            ["agy", "--sandbox", "--print-timeout", "90s", "-p", "Reply exactly PONG."],
+            ["agy", "models"],
+        ),
+        "dcode-metered": _probe_metered_dcode(),
     }
     ready = [name for name, probe in probes.items() if probe["status"] == "ready"]
     return {
@@ -306,6 +381,7 @@ def build_report(*, machine: str, live: bool, repo: str, codex_model: str) -> di
         "hostname": platform.node(),
         "live_requested": live,
         "live_checked": effective_live,
+        "live_cli_selection": sorted(selected) if selected else ["all"],
         "resource_gate": gate,
         "subscription_clis": probes,
         "ready_lanes": ready if gate["launch_allowed"] else [],
@@ -318,6 +394,8 @@ def build_report(*, machine: str, live: bool, repo: str, codex_model: str) -> di
             "Flat subscriptions should be maximized by verified outcomes, not synthetic token burn.",
             "Declared auth is never treated as ready without a one-turn live preflight.",
             "Across machines, parallelize owners; on a 16GB node, run coding CLIs sequentially.",
+            "Grok and AGY are distinct CLI surfaces; dcode remains metered and fail-closed.",
+            "Hermes Queen is the control plane and is not counted as an independent burn pool.",
         ],
     }
 
@@ -328,10 +406,22 @@ def main() -> int:
     parser.add_argument("--repo", default=str(ROOT))
     parser.add_argument("--codex-model", default="gpt-5.6-terra")
     parser.add_argument("--live", action="store_true")
+    parser.add_argument(
+        "--live-cli",
+        action="append",
+        choices=("claude", "codex", "gemini", "opencode", "grok", "agy"),
+        help="scope live PONG checks; repeat for multiple CLIs",
+    )
     parser.add_argument("--output", default=None)
     args = parser.parse_args()
     machine = args.machine or detect_machine()
-    report = build_report(machine=machine, live=args.live, repo=args.repo, codex_model=args.codex_model)
+    report = build_report(
+        machine=machine,
+        live=args.live,
+        repo=args.repo,
+        codex_model=args.codex_model,
+        live_clis=set(args.live_cli or ()),
+    )
     output = Path(args.output) if args.output else ROOT / "fleet" / "reports" / "cli-capacity" / f"{machine}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2), encoding="utf-8")

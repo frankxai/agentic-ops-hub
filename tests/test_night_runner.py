@@ -67,6 +67,7 @@ class NightRunnerTests(unittest.TestCase):
             }
             fake_result = type("R", (), {"returncode": 0})()
             with patch.object(runner, "prepare", return_value=prepared), \
+                 patch.object(runner, "_revalidate_for_launch", return_value=prepared["missions"][0]), \
                  patch.object(runner, "enforce_resources"), \
                  patch("fleet.night_runner.subprocess.run", return_value=fake_result):
                 result = runner.launch(self._manifest(tmp))
@@ -75,6 +76,42 @@ class NightRunnerTests(unittest.TestCase):
             self.assertEqual(state["missions"][0]["status"], "failed-unverified")
             self.assertEqual(state["missions"][0]["receipt_status"], "missing-receipt")
             self.assertTrue(Path(state["missions"][0]["log"]).parent.is_dir())
+
+    def test_launch_rechecks_receipt_after_lease_and_skips_stale_prepared_row(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            runner = NightRunner(self.planner, state_dir=Path(tmp) / "state")
+            prepared = {
+                "ready": True,
+                "missions": [{
+                    "action": "would-launch",
+                    "agent": "codex",
+                    "argv": ["codex", "exec", "stale"],
+                }],
+            }
+            verified = {"missions": [{"id": "N1", "status": "verified"}]}
+            with patch.object(runner, "prepare", return_value=prepared), \
+                 patch.object(self.planner, "validate_manifest", return_value={"valid": True}), \
+                 patch.object(self.planner, "status", return_value=verified), \
+                 patch("fleet.night_runner.Path.home", return_value=Path(tmp)), \
+                 patch("fleet.night_runner.subprocess.run") as run_mock:
+                result = runner.launch(self._manifest(tmp))
+            self.assertEqual(result["missions"][0]["status"], "skip-verified")
+            run_mock.assert_not_called()
+
+    def test_post_lease_revalidation_blocks_changed_worktree(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            runner = NightRunner(self.planner, state_dir=Path(tmp) / "state")
+            manifest = self._manifest(tmp)
+            missing = {"missions": [{"id": "N1", "status": "missing-receipt"}]}
+            with patch.object(self.planner, "validate_manifest", return_value={"valid": True}), \
+                 patch.object(self.planner, "status", return_value=missing), \
+                 patch.object(self.planner, "dependency_state", return_value="ready"), \
+                 patch.object(runner, "current_branch", return_value=manifest["missions"][0]["branch"]), \
+                 patch.object(runner, "is_clean", return_value=False), \
+                 patch.object(runner, "_route_mission") as route_mock:
+                with self.assertRaisesRegex(RunnerError, "repo is dirty"):
+                    runner._revalidate_for_launch(manifest, manifest["missions"][0])
+            route_mock.assert_not_called()
 
     def test_claude_health_detects_expired_oauth(self):
         runner = NightRunner(self.planner, state_dir=Path("state"))
@@ -87,7 +124,8 @@ class NightRunnerTests(unittest.TestCase):
              patch("fleet.night_runner.shutil.which", return_value="C:/bin/claude"):
             health = runner.agent_health({"agent": "claude", "model": "sonnet", "repo": "C:/repo"})
         self.assertFalse(health["ready"])
-        self.assertIn("401", health["detail"])
+        self.assertEqual("claude preflight failed (exit 0)", health["detail"])
+        self.assertNotIn("401", health["detail"])
 
     def test_claude_health_accepts_event_list_without_leaking_metadata(self):
         runner = NightRunner(self.planner, state_dir=Path("state"))
@@ -113,6 +151,34 @@ class NightRunnerTests(unittest.TestCase):
             health = runner.agent_health({"agent": "codex", "model": "gpt-5.6-terra", "repo": "C:/repo"})
         self.assertFalse(health["ready"])
         self.assertIn("not found", health["detail"])
+
+    def test_non_claude_health_redacts_provider_output(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        succeeded = type("R", (), {
+            "returncode": 0,
+            "stdout": 'PONG {"requestId":"private-id"}',
+            "stderr": "",
+        })()
+        with patch("fleet.night_runner.subprocess.run", return_value=succeeded), \
+             patch("fleet.night_runner.shutil.which", return_value="C:/bin/grok"):
+            health = runner.agent_health({"agent": "grok", "model": "grok-4.5", "repo": "C:/repo"})
+        self.assertTrue(health["ready"])
+        self.assertEqual("PONG", health["detail"])
+
+    def test_gemini_health_probe_is_read_only_and_never_yolo(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        succeeded = type("R", (), {"returncode": 0, "stdout": "PONG", "stderr": ""})()
+        with patch("fleet.night_runner.subprocess.run", return_value=succeeded) as run_mock, \
+             patch("fleet.night_runner.shutil.which", return_value="C:/bin/gemini"):
+            health = runner.agent_health(
+                {"agent": "gemini", "model": "gemini-2.5-pro", "repo": "C:/repo"}
+            )
+        command = run_mock.call_args.args[0]
+        self.assertNotIn("--yolo", command)
+        self.assertIn("--approval-mode", command)
+        self.assertEqual("plan", command[command.index("--approval-mode") + 1])
+        self.assertIn("--sandbox=true", command)
+        self.assertTrue(health["ready"])
 
     def test_subscription_usage_accepts_list_root_and_strips_identity(self):
         runner = NightRunner(self.planner, state_dir=Path("state"))
@@ -166,8 +232,34 @@ class NightRunnerTests(unittest.TestCase):
             "objective_id": "OBJ-1",
             "role": "verifier",
             "wave": 1,
+            "machine": "yoga-book",
             "quota_pool": "codex",
         })
+        status = {"missions": [{"id": mission["id"], "status": "missing-receipt"}]}
+        with patch.object(self.planner, "validate_manifest", return_value={"valid": True}), \
+             patch.object(self.planner, "status", return_value=status), \
+             patch.object(self.planner, "active_wave", return_value=1), \
+             patch.object(runner, "local_machine_id", return_value="yoga-book"), \
+             patch.object(runner, "current_branch", return_value=mission["branch"]), \
+             patch.object(runner, "disk_free_gb", return_value=60.0), \
+             patch.object(runner, "memory_percent", return_value=50.0), \
+             patch.object(runner, "is_clean", return_value=True), \
+             patch.object(runner, "agent_health", return_value={"ready": True, "detail": "live"}), \
+             patch.object(runner, "subscription_usage", return_value={
+                 "codex": {"remaining_percent": 2},
+                 "claude": {"remaining_percent": 70},
+             }):
+            result = runner.prepare(manifest)
+        row = result["missions"][0]
+        self.assertEqual(row["action"], "requires-manifest-reroute")
+        self.assertEqual(row["agent"], "codex")
+        self.assertEqual(row["recommended_agent"], "claude")
+        self.assertNotIn("argv", row)
+
+    def test_version_two_fallback_requires_committed_manifest_reroute(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        manifest = self._manifest("C:/repo")
+        mission = manifest["missions"][0]
         status = {"missions": [{"id": mission["id"], "status": "missing-receipt"}]}
         with patch.object(self.planner, "validate_manifest", return_value={"valid": True}), \
              patch.object(self.planner, "status", return_value=status), \
@@ -188,6 +280,43 @@ class NightRunnerTests(unittest.TestCase):
         self.assertEqual(row["recommended_agent"], "claude")
         self.assertNotIn("argv", row)
 
+    def test_execution_leases_block_concurrent_machine_or_worktree_runner(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            first = NightRunner(self.planner, state_dir=Path(tmp) / "state-1")
+            second = NightRunner(self.planner, state_dir=Path(tmp) / "state-2")
+            machine = f"test-{Path(tmp).name.lower()}"
+            with patch("fleet.night_runner.Path.home", return_value=Path(tmp)):
+                with first.execution_leases(machine, tmp):
+                    with self.assertRaisesRegex(RunnerError, "execution lease unavailable"):
+                        with second.execution_leases(machine, tmp):
+                            self.fail("concurrent runner acquired an active lease")
+                with second.execution_leases(machine, tmp):
+                    pass
+
+    def test_campaign_mission_is_queued_on_wrong_machine(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        manifest = self._manifest("C:/repo")
+        manifest["mode"] = "campaign"
+        mission = manifest["missions"][0]
+        mission.update({
+            "objective_id": "OBJ-1",
+            "role": "maker",
+            "wave": 1,
+            "machine": "c940",
+            "quota_pool": "codex",
+        })
+        status = {"missions": [{"id": mission["id"], "status": "missing-receipt"}]}
+        with patch.object(self.planner, "validate_manifest", return_value={"valid": True}), \
+             patch.object(self.planner, "status", return_value=status), \
+             patch.object(self.planner, "active_wave", return_value=1), \
+             patch.object(runner, "local_machine_id", return_value="yoga-book"), \
+             patch.object(runner, "subscription_usage", return_value={}):
+            result = runner.prepare(manifest)
+        row = result["missions"][0]
+        self.assertEqual(row["action"], "queued-machine")
+        self.assertEqual(row["machine"], "c940")
+        self.assertEqual(row["local_machine"], "yoga-book")
+
     def test_verifier_route_excludes_effective_maker_agent(self):
         runner = NightRunner(self.planner, state_dir=Path("state"))
         mission = self._manifest("C:/repo")["missions"][0]
@@ -203,19 +332,80 @@ class NightRunnerTests(unittest.TestCase):
                 {"claude"},
                 {},
             )
-        self.assertEqual(routed["agent"], "opencode")
+        self.assertEqual(routed["agent"], "agy")
         self.assertNotEqual(routed["agent"], "claude")
+
+    def test_dcode_is_blocked_without_metered_approval(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        self.planner.config["fallbacks"]["dcode"] = []
+        mission = self._manifest("C:/repo")["missions"][0]
+        mission.update({"agent": "dcode", "quota_pool": "metered-api", "model": "openai"})
+        with patch.object(runner, "agent_health", return_value={"ready": True, "detail": "live"}):
+            with self.assertRaisesRegex(RunnerError, "explicit approval"):
+                runner._route_mission(mission, {}, set(), {})
+
+    def test_dcode_approval_still_fails_closed_without_enforceable_hard_cap(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        self.planner.config["fallbacks"]["dcode"] = []
+        mission = self._manifest("C:/repo")["missions"][0]
+        mission.update({
+            "agent": "dcode",
+            "quota_pool": "metered-api",
+            "model": "openai",
+            "metered_spend_approval": {
+                "approval_id": "human:approval-002",
+                "approved": True,
+                "provider": "dcode",
+                "quota_pool": "metered-api",
+                "currency": "USD",
+                "max_spend_usd": 10,
+                "expires_at": "2099-01-01T00:00:00+00:00",
+            },
+        })
+        with patch.object(runner, "agent_health", return_value={"ready": True, "detail": "live"}):
+            with self.assertRaisesRegex(RunnerError, "no enforceable hard spend cap"):
+                runner._route_mission(mission, {}, set(), {})
+
+    def test_zero_percent_measured_quota_is_blocked(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        self.planner.config["fallbacks"]["gemini"] = []
+        mission = self._manifest("C:/repo")["missions"][0]
+        mission.update({
+            "agent": "gemini",
+            "quota_pool": "gemini",
+            "model": "gemini-2.5-pro",
+            "role": "verifier",
+        })
+        usage = {"gemini": {"remaining_percent": 0}}
+        with patch.object(runner, "agent_health", return_value={"ready": True, "detail": "live"}):
+            with self.assertRaisesRegex(RunnerError, "0% remaining"):
+                runner._route_mission(mission, usage, set(), {})
+
+    def test_runner_fallback_respects_role_constraints(self):
+        runner = NightRunner(self.planner, state_dir=Path("state"))
+        mission = self._manifest("C:/repo")["missions"][0]
+        mission.update({"agent": "grok", "quota_pool": "grok", "model": "grok-4.5", "role": "maker"})
+        with patch.object(runner, "agent_health", return_value={"ready": True, "detail": "live"}):
+            routed, _, _ = runner._route_mission(
+                mission,
+                {"grok": {"remaining_percent": 70}, "claude": {"remaining_percent": 70}},
+                {"grok", "claude"},
+                {},
+            )
+        self.assertEqual("agy", routed["agent"])
 
     def _manifest(self, tmp: str):
         return {
             "version": 2, "date": "2026-07-17", "mode": "night", "total_budget_usd": 30,
             "missions": [{
-                "id": "N1", "agent": "codex", "model": "gpt-5.6-terra",
+                "id": "N1", "agent": "codex", "role": "maker", "model": "gpt-5.6-terra",
                 "repo": tmp, "branch": "night/2026-07-17-test",
                 "budget_usd": 30, "max_turns": 20, "timeout_minutes": 60,
                 "task": "Fix safely", "why": "mechanical",
-                "report": str(Path(tmp) / "n1.md"),
-                "receipt": str(Path(tmp) / "n1.json"),
+                "report": "reports/n1.md",
+                "receipt": "receipts/n1.json",
+                "required_artifacts": ["artifacts/output.txt"],
+                "verification_ids": ["unit"],
                 "acceptance_commands": ["python -m unittest discover -v"],
             }],
         }

@@ -1,0 +1,15 @@
+{
+  "observed_at": "2026-07-17T12:00:00Z",
+  "agent": "codex",
+  "job_class": "orchestration",
+  "role": "maker",
+  "duration_minutes": 75,
+  "outcome_status": "VERIFIED",
+  "artifact_score": 4,
+  "quota_before_percent": 68,
+  "quota_after_percent": 62,
+  "receipt_id": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "mission_id": "retrofit-maker",
+  "receipt_path": "fleet/receipts/2026-07-17-objective-retrofit-maker.json",
+  "receipt_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

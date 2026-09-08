@@ -1,0 +1,27 @@
+{
+  "fixture_only": true,
+  "claude": {
+    "provider": "Claude",
+    "plan": "Max",
+    "remaining_percent": 72,
+    "reset_at": "2026-07-18T08:00:00+02:00"
+  },
+  "codex": {
+    "provider": "Codex",
+    "plan": "Max",
+    "remaining_percent": 68,
+    "reset_at": "2026-07-18T09:00:00+02:00"
+  },
+  "gemini": {
+    "provider": "Gemini",
+    "plan": "Ultra",
+    "remaining_percent": 75,
+    "reset_at": "2026-07-18T07:00:00+02:00"
+  },
+  "grok": {
+    "provider": "Grok Build",
+    "plan": "Heavy",
+    "remaining_percent": 55,
+    "reset_at": "2026-07-18T10:00:00+02:00"
+  }
+}

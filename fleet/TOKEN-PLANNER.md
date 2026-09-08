@@ -3,7 +3,22 @@
 **Companion to Token Tracker.** Tracker answers *what did we spend?* Planner answers *which estate objective should move next, which agent should own it, under which live subscription window, and what proof must exist before it counts.*
 
 **Owners:** Starlight Queen (C940 backend) · Command Center (Book frontend)  
-**SoT files:** this doc · `objectives-registry.json` · `fleet/campaigns/` · `fleet/model-routing.json` · tracker `reports/`
+**SoT files:** this doc · `fleet/DAILY-TOKEN-PLANNER.md` · `objectives-registry.json` · `fleet/campaigns/` · `fleet/model-routing.json`
+
+The tracker is a telemetry sensor, not a reasoning or dispatch owner. Daily planning, quota allocation, historical learning, campaign compilation, and Queen decisions remain in this swarm repository.
+
+The daily loop is now explicit:
+
+```text
+canonical objectives + admitted fleet + live CLI health + sanitized quota
+  -> daily-plan allocation
+  -> version-3 maker/verifier campaign missions
+  -> receipts
+  -> redacted duration/quota/outcome observation
+  -> receipt/reset/90-minute replan
+```
+
+See `fleet/DAILY-TOKEN-PLANNER.md` for commands, private runtime paths, all CLI pools, and the single-scheduler ownership rule.
 
 ---
 
@@ -27,9 +42,10 @@ Tracker = **accounting**. Planner = **allocation + assignment**.
 | **Orchestration / Queen judgment** | Hermes | Objective selection, admission, routing, receipts | Treating orchestration as implementation |
 | **Hard multi-file backend / TDD** | **Claude Code** (Sonnet default; Opus only if stuck) | Best long autonomous coding loops | Opus for docs |
 | **Mechanical refactor / batch fix** | **Codex** (`workspace-write`) | Fast, good at local edits under Pro plan | Unsafe full-access sandbox |
-| **Huge context map / repo survey** | **AGY**, after smoke test | Secondary long-context lane | Repeating timeouts instead of falling back |
-| **Trivial / high-volume** | **OpenCode free models** | $0 metered | Free models for prod security |
+| **Huge context map / repo survey** | **Gemini Ultra**, then AGY after smoke test | Long-context subscription lane | Repeating timeouts instead of falling back |
+| **Provider-routed secondary work** | **OpenCode / AGY**, after live auth proof | Additional bounded CLI capacity | Calling an installed binary a live lane |
 | **Current signal / CMO research** | **Grok**, only above its quota floor | Strong current-information and creative signal | Routine routing when weekly quota is depleted |
+| **Metered provider fallback** | **dcode**, explicit campaign budget only | Useful provider router when flat pools cannot fit | Automatic spend or treating it as flat capacity |
 | **Interactive UI polish** | Cursor / Book UI lane | Human-in-loop visual | Overnight unattended UI |
 | **GitHub PR/issue ops** | `gh` + light model | Deterministic CLI | LLM inventing merge without gate |
 | **Infra / Railway** | Queen + railway skills | Domain skill > raw LLM | Blind `railway up` overnight |

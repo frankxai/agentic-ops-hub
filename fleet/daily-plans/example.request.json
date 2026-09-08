@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-17",
+  "timezone": "Europe/Amsterdam",
+  "machine_status": {
+    "yoga-book": "online",
+    "c940": "online"
+  },
+  "cli_health": {
+    "codex": "ready",
+    "claude": "ready",
+    "gemini": "ready",
+    "grok": "ready",
+    "agy": "ready",
+    "opencode": "blocked-live-auth",
+    "dcode": "metered-disabled"
+  },
+  "objectives": [
+    {
+      "id": "OBJ-FLEET-DELIVERY",
+      "job_class": "orchestration",
+      "priority_score": 100,
+      "maker_minutes": 90,
+      "verifier_minutes": 45,
+      "independent_verifier": true,
+      "artifact_contract": "A tested objective-to-quota daily plan plus machine-readable verification evidence."
+    }
+  ],
+  "notes": "Template only. Machine and CLI health must be regenerated from current fleet evidence before dispatch."
+}

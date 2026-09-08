@@ -25,15 +25,19 @@ class PlannerTests(unittest.TestCase):
         return {
             "id": "N1",
             "agent": "codex",
+            "role": "maker",
             "model": "gpt-5.6-terra",
             "reasoning_effort": "high",
             "repo": str(root),
             "branch": "night/2026-07-17-test",
             "budget_usd": 30,
+            "max_turns": 20,
             "timeout_minutes": 45,
             "task": "Implement the named outcome.",
-            "report": str(root / "report.md"),
-            "receipt": str(root / "receipt.json"),
+            "report": "report.md",
+            "receipt": "receipt.json",
+            "required_artifacts": ["artifact.txt"],
+            "verification_ids": ["unit"],
             "acceptance_commands": ["python -m unittest discover -v"],
         }
 
@@ -51,16 +55,16 @@ class PlannerTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             mission = self.mission(root)
-            Path(mission["report"]).write_text("looks done", encoding="utf-8")
+            (root / mission["report"]).write_text("looks done", encoding="utf-8")
             status = self.planner.status({"missions": [mission]})
         self.assertEqual(0, status["complete"])
         self.assertEqual("missing-receipt", status["missions"][0]["status"])
 
-    def test_verified_receipt_requires_commit_tests_and_integration_state(self) -> None:
+    def test_forged_legacy_receipt_is_not_verified(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             mission = self.mission(root)
-            Path(mission["receipt"]).write_text(
+            (root / mission["receipt"]).write_text(
                 json.dumps(
                     {
                         "mission_id": "N1",
@@ -75,8 +79,8 @@ class PlannerTests(unittest.TestCase):
                 encoding="utf-8",
             )
             status = self.planner.status({"missions": [mission]})
-        self.assertEqual(1, status["complete"])
-        self.assertEqual("verified", status["missions"][0]["status"])
+        self.assertEqual(0, status["complete"])
+        self.assertEqual("invalid-receipt", status["missions"][0]["status"])
 
 
 class NightRunnerTests(unittest.TestCase):
