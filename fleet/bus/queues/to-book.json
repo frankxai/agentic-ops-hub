@@ -11,7 +11,8 @@
     "telegram_bot": "@Hermesyogabookbot",
     "note": "C940 must not forge YogaBook heartbeat. Fresh self-heartbeat required before remote dispatch."
   },
-  "active": [
+  "active": [],
+  "historical": [
     {
       "id": "BOOK-HEARTBEAT-20260825",
       "title": "Publish Yoga Book self-heartbeat after verified tailnet join",
@@ -35,11 +36,10 @@
         "published origin/main JSON has fresh at timestamp and says Tailscale online",
         "C940 observes the exact main file; queue item marked done only after that"
       ],
-      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16.",
-      "status": "active"
-    }
-  ],
-  "historical": [
+      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16. CI: ttl expired; C940 cannot forge Book HB; moved historical 2026-09-09.",
+      "status": "expired-ttl",
+      "closed_at": "2026-09-09T11:35:00+00:00"
+    },
     {
       "id": "P4",
       "status": "delivered",
@@ -67,10 +67,10 @@
   ],
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
   "dispatch_gate": {
-    "remote_dispatch": "bounded-book-heartbeat-only",
-    "reason": "Tailscale peer is live but durable Book Git heartbeat is stale; C940 cannot forge it.",
+    "remote_dispatch": "blocked",
+    "reason": "Book git heartbeat still stale on origin/main; C940 will not forge it. Overlay Tailscale pong 11ms is a different plane.",
     "c940_observed_peer": "Starlight / 100.83.206.47 / Online",
     "reconciled_at": "2026-08-25T01:28:34+00:00"
   },
-  "updated_at": "2026-08-25T01:28:34+00:00"
+  "updated_at": "2026-09-09T11:35:00+00:00"
 }
