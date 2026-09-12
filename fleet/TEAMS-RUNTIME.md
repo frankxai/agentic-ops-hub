@@ -6,7 +6,7 @@ Brand team **templates** live in Observatory `/os` (PR frankxai/starlight-comman
 |---|---|---|
 | Queen | Hermes.exe | 1 family (~1.2 GB) |
 | Maker | Codex | 2 already — do not add a third |
-| Checker | This Grok session | comments only |
+| Checker | Codex comments (not author) | comments only; not GitHub approve |
 | 24/7 plumber | n8n + 1 Railway puller | not a coding agent |
 | Cloud | GitHub Actions / Vercel | 0 local RAM |
 | Peer | C940 Hermes | **not executing** — issue 61 |
