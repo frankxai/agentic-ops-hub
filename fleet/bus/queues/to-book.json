@@ -6,39 +6,16 @@
   "priority": "P0",
   "connection": {
     "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
-    "status": "stale-unverified",
+    "book_self_heartbeat": "2026-09-12T05:45:27+00:00",
+    "book_self_heartbeat_path": "C:/Users/frank/.starlight/swarm-bus/heartbeats/yogabook.json",
+    "status": "book-fresh-peer-unverified",
     "hostname": "Starlight",
+    "model": "83KJ",
+    "detectedTag": "yogabook",
     "telegram_bot": "@Hermesyogabookbot",
-    "note": "C940 must not forge YogaBook heartbeat. Fresh self-heartbeat required before remote dispatch."
+    "note": "C940 must not forge YogaBook heartbeat. Book self-heartbeat refreshed this tick. Do not forge C940. Local c940.json left unread-write."
   },
-  "active": [
-    {
-      "id": "BOOK-HEARTBEAT-20260825",
-      "title": "Publish Yoga Book self-heartbeat after verified tailnet join",
-      "owner": "yoga-book",
-      "priority": "P0",
-      "issued_by": "c940",
-      "issued_at": "2026-08-25T01:28:34+00:00",
-      "ttl_hours": 24,
-      "scope": [
-        "fleet/bus/heartbeats/yoga-book.json",
-        "fleet/bus/identity/yoga-book.json"
-      ],
-      "constraints": [
-        "run only on physical Yoga Book",
-        "never write c940 heartbeat",
-        "no Swarm dialogue; git bus only",
-        "no public SSH"
-      ],
-      "acceptance": [
-        "Yoga Book runs fleet_bus.py identity and self-only heartbeat",
-        "published origin/main JSON has fresh at timestamp and says Tailscale online",
-        "C940 observes the exact main file; queue item marked done only after that"
-      ],
-      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16.",
-      "status": "active"
-    }
-  ],
+  "active": [],
   "historical": [
     {
       "id": "P4",
@@ -63,14 +40,72 @@
       "branch": "agent/book/first-100-hardening",
       "outcome": "Harden the production First EUR100 Weekend revenue experience with mobile/browser evidence and an integration decision.",
       "evidence": "source PR #326 CLOSED unmerged; cleared from active 2026-08-07 queue reconcile (issue #36). Do not reuse this queue_item_id."
+    },
+    {
+      "id": "BOOK-HEARTBEAT-20260825",
+      "status": "expired",
+      "title": "Publish Yoga Book self-heartbeat after verified tailnet join",
+      "issued_at": "2026-08-25T01:28:34+00:00",
+      "ttl_hours": 24,
+      "expired_at": "2026-08-26T01:28:34+00:00",
+      "outcome": "TTL 24h elapsed; not renewed. Live Book heartbeat is a standing local swarm-bus duty, not an infinite active queue item. Do not forge C940.",
+      "evidence": "CI 2026-09-12 verify: active item BOOK-HEARTBEAT-20260825 ttl expired. Moved to historical by Yogabook Queen 8h god-mode tick. Local swarm-bus heartbeat remains Book-only."
     }
   ],
+  "book_window_tick": {
+    "window": "2026-09-12 05:26-13:26 CEST",
+    "tick_at": "2026-09-12T05:54:42+00:00",
+    "free_gib": 160.07,
+    "mode": "BOUNDED",
+    "identity": "Starlight / 83KJ / yogabook",
+    "inbox_pending": 1,
+    "inbox_pending_id": "0408597f-3211-4266-aa93-eab8554ab5b1",
+    "inbox_disposition": "HOLD invalid priority 10 + occupied observatory; preserve pending; no SUPERSEDES this tick; no steal",
+    "claims_open": 3,
+    "claimed_lane": "hermes-c7af8e27 agentic-ops-hub PR63 to-book + receipt",
+    "do_not_steal": [
+      "hermes-59bc86ad frankx.ai-vercel-website PR696 320 CTA @ 47c390b9",
+      "starlight-command-center-integrate-20260912 Codex",
+      "SIS federation HANDOFF",
+      "local dirty: command, SIS, agent-config, frankx, gencreator, akamoto, hub PR60",
+      "observatory envelope 0408597f and claimed SUPERSEDES aa4d4eb6"
+    ],
+    "frontend_canary": {
+      "generatedAt": "2026-09-12T05:52:50.465339+00:00",
+      "p0": "15/15",
+      "satellites": "9/9",
+      "failing": [],
+      "changes": [],
+      "empty_title_200": [
+        "starlight.tech"
+      ],
+      "method": "GET-only frontend_canary.py --verbose; no Playwright; no secrets"
+    },
+    "money_doors_get_only": {
+      "prompt_vault": "200 waitlist=True buy=False",
+      "bv_kit": "200 waitlist=True buy=False",
+      "frankx_home": "200 suno_cdn=1 occupied-by-PR696-and-688",
+      "gencreator_health": "200 degraded=True occupied",
+      "akamoto_io": "404 dnf=True founder-domain",
+      "www_akamoto_io": "404 dnf=True founder-domain",
+      "arcanea_ai": "200",
+      "vibeclubs_ai": "200",
+      "probed_at": "2026-09-12T05:34:22+00:00",
+      "method": "GET-only urllib prior tick; this tick canary covers P0 homes; no POST; no secrets"
+    },
+    "demand_capture": {
+      "waitlist_enabled_in_graph": 22,
+      "would_pay_rank": "HOLD",
+      "reason": "report.mjs requires KV_REST_API_URL + KV_REST_API_TOKEN; demand-kv FOUNDER env not on Book"
+    }
+  },
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
   "dispatch_gate": {
-    "remote_dispatch": "bounded-book-heartbeat-only",
-    "reason": "Tailscale peer is live but durable Book Git heartbeat is stale; C940 cannot forge it.",
-    "c940_observed_peer": "Starlight / 100.83.206.47 / Online",
-    "reconciled_at": "2026-08-25T01:28:34+00:00"
+    "remote_dispatch": "hold",
+    "reason": "No infinite Book heartbeat in active. C940 remote dispatch stays held until a fresh verified peer heartbeat exists on C940 hardware. Do not forge C940. Do not enqueue another generic rejoin.",
+    "c940_local_json_mtime": "2026-08-10T02:43:55.985574+02:00",
+    "c940_observed_peer": "not re-verified this tick; local c940.json left untouched",
+    "reconciled_at": "2026-09-12T05:54:42+00:00"
   },
-  "updated_at": "2026-08-25T01:28:34+00:00"
+  "updated_at": "2026-09-12T05:54:42+00:00"
 }
