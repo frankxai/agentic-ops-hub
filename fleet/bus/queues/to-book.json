@@ -6,7 +6,7 @@
   "priority": "P0",
   "connection": {
     "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
-    "book_self_heartbeat": "2026-09-12T05:30:20+00:00",
+    "book_self_heartbeat": "2026-09-12T05:45:27+00:00",
     "book_self_heartbeat_path": "C:/Users/frank/.starlight/swarm-bus/heartbeats/yogabook.json",
     "status": "book-fresh-peer-unverified",
     "hostname": "Starlight",
@@ -54,8 +54,8 @@
   ],
   "book_window_tick": {
     "window": "2026-09-12 05:26-13:26 CEST",
-    "tick_at": "2026-09-12T05:34:22+00:00",
-    "free_gib": 160.34,
+    "tick_at": "2026-09-12T05:54:42+00:00",
+    "free_gib": 160.07,
     "mode": "BOUNDED",
     "identity": "Starlight / 83KJ / yogabook",
     "inbox_pending": 1,
@@ -70,6 +70,17 @@
       "local dirty: command, SIS, agent-config, frankx, gencreator, akamoto, hub PR60",
       "observatory envelope 0408597f and claimed SUPERSEDES aa4d4eb6"
     ],
+    "frontend_canary": {
+      "generatedAt": "2026-09-12T05:52:50.465339+00:00",
+      "p0": "15/15",
+      "satellites": "9/9",
+      "failing": [],
+      "changes": [],
+      "empty_title_200": [
+        "starlight.tech"
+      ],
+      "method": "GET-only frontend_canary.py --verbose; no Playwright; no secrets"
+    },
     "money_doors_get_only": {
       "prompt_vault": "200 waitlist=True buy=False",
       "bv_kit": "200 waitlist=True buy=False",
@@ -80,7 +91,12 @@
       "arcanea_ai": "200",
       "vibeclubs_ai": "200",
       "probed_at": "2026-09-12T05:34:22+00:00",
-      "method": "GET-only urllib; no POST; no secrets"
+      "method": "GET-only urllib prior tick; this tick canary covers P0 homes; no POST; no secrets"
+    },
+    "demand_capture": {
+      "waitlist_enabled_in_graph": 22,
+      "would_pay_rank": "HOLD",
+      "reason": "report.mjs requires KV_REST_API_URL + KV_REST_API_TOKEN; demand-kv FOUNDER env not on Book"
     }
   },
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
@@ -89,7 +105,7 @@
     "reason": "No infinite Book heartbeat in active. C940 remote dispatch stays held until a fresh verified peer heartbeat exists on C940 hardware. Do not forge C940. Do not enqueue another generic rejoin.",
     "c940_local_json_mtime": "2026-08-10T02:43:55.985574+02:00",
     "c940_observed_peer": "not re-verified this tick; local c940.json left untouched",
-    "reconciled_at": "2026-09-12T05:34:22+00:00"
+    "reconciled_at": "2026-09-12T05:54:42+00:00"
   },
-  "updated_at": "2026-09-12T05:34:22+00:00"
+  "updated_at": "2026-09-12T05:54:42+00:00"
 }

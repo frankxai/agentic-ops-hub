@@ -7,13 +7,15 @@ God-mode continuation: `starlight/queen/reports/8h-godmode-queue-2026-09-12.md`.
 ## Evidence this session
 
 - Identity: Starlight / 83KJ / yogabook
-- Disk 160.34 GiB free (BOUNDED). RAM HOLD clear. No new worktrees.
-- GET-only money doors at 2026-09-12T05:34:22+00:00: frankx waitlist surfaces live; homepage suno_cdn=1; gencreator health degraded=True; akamoto.io dnf=True; www dnf=True; arcanea 200; vibeclubs 200. No POST. No secrets.
-- frankx.ai homepage still inlines cdn1.suno.ai (count=1). Draft PR 688 occupied; parallel live lane hermes-59bc86ad owns PR 696 320 CTA @ 47c390b9. No steal.
-- Book self-heartbeat `2026-09-12T05:30:20+00:00` Book-only. Local c940.json mtime `2026-08-10T02:43:55.985574+02:00` unread-write.
-- Yogabook inbox: 1 pending (`0408597f` Observatory) HOLD — invalid priority 10 + occupied observatory/claimed SUPERSEDES `aa4d4eb6`. Preserve pending. No steal. `3c41777d` already completed HOLD.
-- Forgotten-PRs latest.json (2026-09-12T03:27:11Z dry-run): pending_create 0; hold_unpushed 9; over_budget 3. No new drafts. No push-unpushed.
-- Parent tip `4b0c0cf8`. This commit refreshes live inbox/heartbeat/money-door GET fields only.
+- Disk 160.07 GiB free (BOUNDED). RAM HOLD clear. No new worktrees.
+- Frontend canary GET-only at `2026-09-12T05:52:50.465339+00:00`: P0 15/15; satellites 9/9; failing []; changes []. empty_title_200=['starlight.tech']. No Playwright. No secrets.
+- Money-door GET stamp remains 2026-09-12T05:34:22+00:00 (prior tick): waitlist live; akamoto 404 DNF; gencreator health degraded. No POST.
+- frankx.ai homepage still inlines cdn1.suno.ai. Draft PR 688 occupied; parallel live lane hermes-59bc86ad owns PR 696 320 CTA @ 47c390b9. No steal.
+- Book self-heartbeat `2026-09-12T05:45:27+00:00` Book-only. Local c940.json mtime `2026-08-10T02:43:55.985574+02:00` unread-write.
+- Yogabook inbox: 1 pending (`0408597f` Observatory) HOLD — invalid priority 10 + occupied observatory/claimed SUPERSEDES `aa4d4eb6`. Preserve pending. No steal.
+- Forgotten-PRs latest.json (2026-09-12T05:32:59Z apply): created 0; pending_create 0; hold_unpushed 9; over_budget 3. No new drafts. No push-unpushed.
+- Demand would-pay rank HOLD: 22 waitlist-enabled products in `graph/products.graph.json`; `packages/demand-capture/report.mjs` needs founder KV env.
+- Parent tip `d63d2cf9`. This commit refreshes live heartbeat + frontend canary inventory only.
 - Independent Codex reviews remain comment-only (`approve: false`), not GitHub approval. Checker slot is Codex comments bound to the live head after this absorb — not a third maker process.
 
 ## Tick absorb (live drift)
