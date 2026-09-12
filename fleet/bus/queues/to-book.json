@@ -6,10 +6,14 @@
   "priority": "P0",
   "connection": {
     "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
-    "status": "stale-unverified",
+    "book_self_heartbeat": "2026-09-12T05:09:31+00:00",
+    "book_self_heartbeat_path": "C:/Users/frank/.starlight/swarm-bus/heartbeats/yogabook.json",
+    "status": "book-fresh-peer-unverified",
     "hostname": "Starlight",
+    "model": "83KJ",
+    "detectedTag": "yogabook",
     "telegram_bot": "@Hermesyogabookbot",
-    "note": "C940 must not forge YogaBook heartbeat. Fresh self-heartbeat required before remote dispatch."
+    "note": "C940 must not forge YogaBook heartbeat. Book self-heartbeat refreshed this tick. Do not forge C940. Local c940.json mtime 2026-08-10T02:43:55+02:00 left unread-write."
   },
   "active": [],
   "historical": [
@@ -48,12 +52,40 @@
       "evidence": "CI 2026-09-12 verify: active item BOOK-HEARTBEAT-20260825 ttl expired. Moved to historical by Yogabook Queen 8h god-mode tick. Local swarm-bus heartbeat remains Book-only."
     }
   ],
+  "book_window_tick": {
+    "window": "2026-09-12 05:26-13:26 CEST",
+    "tick_at": "2026-09-12T05:11:15+00:00",
+    "free_gib": 160.35,
+    "mode": "BOUNDED",
+    "identity": "Starlight / 83KJ / yogabook",
+    "inbox_pending": 2,
+    "claims_open": 3,
+    "claimed_lane": "hermes-c7af8e27 agentic-ops-hub PR63 to-book + receipt",
+    "do_not_steal": [
+      "hermes-59bc86ad frankx.ai-vercel-website PR696 320 CTA @ 47c390b9",
+      "starlight-command-center-integrate-20260912 Codex",
+      "SIS federation HANDOFF",
+      "local dirty: command, SIS, agent-config, frankx, gencreator, akamoto, hub PR60"
+    ],
+    "money_doors_get_only": {
+      "prompt_vault": "200 href=/waitlist no /buy",
+      "bv_kit": "200 href=/waitlist no /buy",
+      "frankx_home": "200 suno_cdn_mp3=1 occupied-by-PR696-and-688",
+      "gencreator_health": "200 status=degraded durableReceipts=unavailable occupied",
+      "akamoto_io": "404 DEPLOYMENT_NOT_FOUND founder-domain",
+      "www_akamoto_io": "404 DEPLOYMENT_NOT_FOUND founder-domain",
+      "arcanea_ai": "200",
+      "vibeclubs_ai": "200",
+      "inventory": "C:/Users/frank/AppData/Local/Temp/hermes-8h-money-doors-20260912.json"
+    }
+  },
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
   "dispatch_gate": {
     "remote_dispatch": "hold",
-    "reason": "No infinite Book heartbeat in active. C940 remote dispatch stays held until a fresh verified peer heartbeat exists. Do not forge C940.",
-    "c940_observed_peer": "Starlight / 100.83.206.47 / Online (as of 2026-08-25; not re-verified this tick)",
-    "reconciled_at": "2026-09-12T03:30:00+00:00"
+    "reason": "No infinite Book heartbeat in active. C940 remote dispatch stays held until a fresh verified peer heartbeat exists on C940 hardware. Do not forge C940. Do not enqueue another generic rejoin.",
+    "c940_local_json_mtime": "2026-08-10T02:43:55+02:00",
+    "c940_observed_peer": "not re-verified this tick; local c940.json left untouched",
+    "reconciled_at": "2026-09-12T05:11:15+00:00"
   },
-  "updated_at": "2026-09-12T03:30:00+00:00"
+  "updated_at": "2026-09-12T05:11:15+00:00"
 }
