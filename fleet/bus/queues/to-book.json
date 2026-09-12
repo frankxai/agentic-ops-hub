@@ -6,14 +6,14 @@
   "priority": "P0",
   "connection": {
     "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
-    "book_self_heartbeat": "2026-09-12T05:09:31+00:00",
+    "book_self_heartbeat": "2026-09-12T05:30:20+00:00",
     "book_self_heartbeat_path": "C:/Users/frank/.starlight/swarm-bus/heartbeats/yogabook.json",
     "status": "book-fresh-peer-unverified",
     "hostname": "Starlight",
     "model": "83KJ",
     "detectedTag": "yogabook",
     "telegram_bot": "@Hermesyogabookbot",
-    "note": "C940 must not forge YogaBook heartbeat. Book self-heartbeat refreshed this tick. Do not forge C940. Local c940.json mtime 2026-08-10T02:43:55+02:00 left unread-write."
+    "note": "C940 must not forge YogaBook heartbeat. Book self-heartbeat refreshed this tick. Do not forge C940. Local c940.json left unread-write."
   },
   "active": [],
   "historical": [
@@ -54,38 +54,42 @@
   ],
   "book_window_tick": {
     "window": "2026-09-12 05:26-13:26 CEST",
-    "tick_at": "2026-09-12T05:11:15+00:00",
-    "free_gib": 160.35,
+    "tick_at": "2026-09-12T05:34:22+00:00",
+    "free_gib": 160.34,
     "mode": "BOUNDED",
     "identity": "Starlight / 83KJ / yogabook",
-    "inbox_pending": 2,
+    "inbox_pending": 1,
+    "inbox_pending_id": "0408597f-3211-4266-aa93-eab8554ab5b1",
+    "inbox_disposition": "HOLD invalid priority 10 + occupied observatory; preserve pending; no SUPERSEDES this tick; no steal",
     "claims_open": 3,
     "claimed_lane": "hermes-c7af8e27 agentic-ops-hub PR63 to-book + receipt",
     "do_not_steal": [
       "hermes-59bc86ad frankx.ai-vercel-website PR696 320 CTA @ 47c390b9",
       "starlight-command-center-integrate-20260912 Codex",
       "SIS federation HANDOFF",
-      "local dirty: command, SIS, agent-config, frankx, gencreator, akamoto, hub PR60"
+      "local dirty: command, SIS, agent-config, frankx, gencreator, akamoto, hub PR60",
+      "observatory envelope 0408597f and claimed SUPERSEDES aa4d4eb6"
     ],
     "money_doors_get_only": {
-      "prompt_vault": "200 href=/waitlist no /buy",
-      "bv_kit": "200 href=/waitlist no /buy",
-      "frankx_home": "200 suno_cdn_mp3=1 occupied-by-PR696-and-688",
-      "gencreator_health": "200 status=degraded durableReceipts=unavailable occupied",
-      "akamoto_io": "404 DEPLOYMENT_NOT_FOUND founder-domain",
-      "www_akamoto_io": "404 DEPLOYMENT_NOT_FOUND founder-domain",
+      "prompt_vault": "200 waitlist=True buy=False",
+      "bv_kit": "200 waitlist=True buy=False",
+      "frankx_home": "200 suno_cdn=1 occupied-by-PR696-and-688",
+      "gencreator_health": "200 degraded=True occupied",
+      "akamoto_io": "404 dnf=True founder-domain",
+      "www_akamoto_io": "404 dnf=True founder-domain",
       "arcanea_ai": "200",
       "vibeclubs_ai": "200",
-      "inventory": "C:/Users/frank/AppData/Local/Temp/hermes-8h-money-doors-20260912.json"
+      "probed_at": "2026-09-12T05:34:22+00:00",
+      "method": "GET-only urllib; no POST; no secrets"
     }
   },
   "coordination": "Git queue and receipt are authoritative; Telegram is one-line notification only.",
   "dispatch_gate": {
     "remote_dispatch": "hold",
     "reason": "No infinite Book heartbeat in active. C940 remote dispatch stays held until a fresh verified peer heartbeat exists on C940 hardware. Do not forge C940. Do not enqueue another generic rejoin.",
-    "c940_local_json_mtime": "2026-08-10T02:43:55+02:00",
+    "c940_local_json_mtime": "2026-08-10T02:43:55.985574+02:00",
     "c940_observed_peer": "not re-verified this tick; local c940.json left untouched",
-    "reconciled_at": "2026-09-12T05:11:15+00:00"
+    "reconciled_at": "2026-09-12T05:34:22+00:00"
   },
-  "updated_at": "2026-09-12T05:11:15+00:00"
+  "updated_at": "2026-09-12T05:34:22+00:00"
 }

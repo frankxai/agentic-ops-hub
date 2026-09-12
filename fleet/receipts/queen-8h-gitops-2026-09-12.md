@@ -2,28 +2,23 @@
 
 Complementary lane. Yogabook Command Center. No C940 forge. No merge.
 
-Full tick: local `starlight/queen/reports/8h-gitops-tick-2026-09-12-0505.md` (untracked on dirty `codex/fix`; this file is the Git artifact).
-
 God-mode continuation: `starlight/queen/reports/8h-godmode-queue-2026-09-12.md`.
 
 ## Evidence this session
 
 - Identity: Starlight / 83KJ / yogabook
-- Disk 160.35 GiB free (BOUNDED; earlier receipt 163.81 / 160.58 are historical). RAM HOLD clear. No new worktrees.
-- Live sites GET 200: frankx, gencreator health, arcanea, vibeclubs. akamoto.io + www: 404 `DEPLOYMENT_NOT_FOUND`.
-- FrankX money CTAs: `/products/prompt-vault` and `/products/bv-kit` href `/waitlist?intent=…` (no `/buy`). HOLD 03 stale. No waitlist POST this tick.
-- GenCreator `/api/health` still `degraded` (`durableReceipts: unavailable`). Occupied product tree. No second health draft.
-- frankx.ai homepage still inlines `cdn1.suno.ai` MP3 (count=1). Draft PR 688 occupied; parallel live lane `hermes-59bc86ad` owns PR 696 320 CTA @ `47c390b9`. No steal. No third Codex.
-- Book self-heartbeat refreshed `2026-09-12T05:09:31+00:00` (`~/.starlight/swarm-bus/heartbeats/yogabook.json`). Local `c940.json` mtime `2026-08-10T02:43:55+02:00` untouched.
-- Yogabook inbox: 2 pending. `3c41777d` MF-2026-09-10 → HOLD (COORDINATION occupied). `0408597f` Observatory Aug-6 → leave pending (invalid priority 10 + occupied observatory).
-- Open PRs org: do not invent from truncated dumps; this tick used `gh search` + live `gh pr view`.
-- Prior commit on this branch: moved `BOOK-HEARTBEAT-20260825` from `to-book.json` active → historical `expired` so CI `require_ttl` passes. Active list still empty. No C940 heartbeat written.
-- Independent Codex review of this PR at `932605b5` = FAIL (`approve: false`). Re-review at `0d38a8ed` = PASS (`approve: false`, comment not GitHub approval). This commit is a new tip after that PASS; checker comments stay Codex, not the Grok author. Codex inventory is 2 already (do not add a third).
+- Disk 160.34 GiB free (BOUNDED). RAM HOLD clear. No new worktrees.
+- GET-only money doors at 2026-09-12T05:34:22+00:00: frankx waitlist surfaces live; homepage suno_cdn=1; gencreator health degraded=True; akamoto.io dnf=True; www dnf=True; arcanea 200; vibeclubs 200. No POST. No secrets.
+- frankx.ai homepage still inlines cdn1.suno.ai (count=1). Draft PR 688 occupied; parallel live lane hermes-59bc86ad owns PR 696 320 CTA @ 47c390b9. No steal.
+- Book self-heartbeat `2026-09-12T05:30:20+00:00` Book-only. Local c940.json mtime `2026-08-10T02:43:55.985574+02:00` unread-write.
+- Yogabook inbox: 1 pending (`0408597f` Observatory) HOLD — invalid priority 10 + occupied observatory/claimed SUPERSEDES `aa4d4eb6`. Preserve pending. No steal. `3c41777d` already completed HOLD.
+- Forgotten-PRs latest.json (2026-09-12T03:27:11Z dry-run): pending_create 0; hold_unpushed 9; over_budget 3. No new drafts. No push-unpushed.
+- Parent tip `4b0c0cf8`. This commit refreshes live inbox/heartbeat/money-door GET fields only.
+- Independent Codex reviews remain comment-only (`approve: false`), not GitHub approval. Checker slot is Codex comments bound to the live head after this absorb — not a third maker process.
 
-## Tick 2026-09-12T05:11Z (this absorb)
+## Tick absorb (live drift)
 
-- Window 05:26–13:26 CEST; remaining ~6h at 07:07 CEST.
-- Money-door inventory: `C:/Users/frank/AppData/Local/Temp/hermes-8h-money-doors-20260912.json` (GET-only urllib).
+- Window 05:26–13:26 CEST.
 - Claimed writer paths only: `fleet/bus/queues/to-book.json` + this receipt.
 - Sprint-horizon already exists as starlight-agent-config PR 38 — no duplicate.
 - Founder gates unchanged: `merge N` · attach `akamoto.io` / `www` · Polar / DNS / prod Vercel · C940 physical · `gh pr ready`. Not 680/682. Not 688 until #687 restored.
@@ -32,7 +27,7 @@ God-mode continuation: `starlight/queen/reports/8h-godmode-queue-2026-09-12.md`.
 
 SSOT templates: starlight-command-center#21 `apps/observatory/src/server/os/teams.ts`
 
-Runtime slots on this Book: Hermes Queen + 2 Codex already (do not add a third) + GitHub Actions. C940 is the second chassis only after issue 61.
+Runtime slots on this Book: Hermes Queen + existing Codex makers (do not add a third maker) + GitHub Actions. Independent checker = Codex comment on this PR bound to live SHA. C940 is the second chassis only after issue 61.
 
 ## Human gates
 
