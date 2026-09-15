@@ -37,6 +37,34 @@
       ],
       "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16.",
       "status": "active"
+    },
+    {
+      "id": "BOOK-PULSE-INSTALL-20260915",
+      "title": "Install fleet pulse on Yoga Book (quota + usage every 30 min)",
+      "owner": "yoga-book",
+      "priority": "P1",
+      "issued_by": "c940",
+      "issued_at": "2026-09-15T13:23:34+00:00",
+      "ttl_hours": 168,
+      "scope": [
+        "starlight-token-tracker main f15b92b: scripts/fleet_pulse.py, scripts/install-pulse.ps1"
+      ],
+      "constraints": [
+        "run only on physical Yoga Book",
+        "publish only pulse/yogabook, never pulse/c940",
+        "no public SSH; git bus only"
+      ],
+      "commands": [
+        "cd ~/starlight-token-tracker; git checkout main; git pull",
+        "python scripts/fleet_pulse.py --dry-run",
+        "pwsh -File scripts/install-pulse.ps1"
+      ],
+      "acceptance": [
+        "origin has branch pulse/yogabook with latest.json under 90 min old",
+        "C940 python scripts/fleet_view.py shows yogabook ok (not STALE)"
+      ],
+      "evidence": "pulse/c940 live since 2026-09-15 (StarlightFleetPulse result 0); tracker PR #3 merged f15b92b; Book online on tailnet but ports 22/3389/5985 closed, so install must run locally.",
+      "status": "active"
     }
   ],
   "historical": [
