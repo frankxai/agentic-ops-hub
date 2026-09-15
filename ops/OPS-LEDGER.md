@@ -224,3 +224,6 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+## 2026-09-15 Estate audit + council (C940, Claude lead)
+
+Four read-only lanes (GitHub, runtime, fleet/cloud, economics) plus Agent Council verdicts; evidence and full list in `ops/audits/2026-09-15-estate/SUMMARY.md`. Shipped: fleet pulse v2 (starlight-token-tracker #3-#5), claude-code-config CI #9; open with auto-merge: agentic-ops-hub #65 (needs approval, unblocks repo CI), #67 pacing policy, #68 fleet-watch dedupe; Copilot cloud lanes FrankX #199, library-os #5, frankx.ai #709. Decision: heavy lanes run in cloud (Copilot agent / Codex Cloud), light lanes local lean, reviews in-process different-family. Blockers escalated to Frank in SUMMARY.md.
