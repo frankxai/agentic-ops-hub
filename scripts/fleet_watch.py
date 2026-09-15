@@ -54,6 +54,8 @@ FINGERPRINT_MARKER_RE = re.compile(
 ISO_TIMESTAMP_RE = re.compile(r"\d{4}-\d{2}-\d{2}T[0-9:.+\-Z]+")
 RUN_ID_RE = re.compile(r"/actions/runs/\d+")
 ALL_CLEAR_RE = re.compile(r"all clear|all liveness signals fresh", re.IGNORECASE)
+BOT_LOGIN = "github-actions[bot]"
+EXIT_NOTIFY_ERROR = 2
 
 
 def check_heartbeats(now: datetime, max_age_hours: float) -> list[str]:
@@ -306,6 +308,10 @@ def fetch_issue_comment_bodies(issue: int) -> list[str]:
     for item in parse_paginated_json_arrays(raw):
         if not isinstance(item, dict):
             continue
+        # Only the workflow's own comments count; a human pasting the marker
+        # must not be able to suppress or reset alerts.
+        if (item.get("user") or {}).get("login") != BOT_LOGIN:
+            continue
         body = item.get("body") or ""
         if body:
             bodies.append(str(body))
@@ -394,7 +400,12 @@ def maybe_notify(
         print(f"WOULD_COMMENT={'true' if post else 'false'}")
         return decision
     if not lookup_ok:
-        return "skip"
+        print(
+            f"fleet-watch: ERROR could not read tracking issue state; "
+            f"{len(findings)} finding(s) were NOT reported",
+            file=sys.stderr,
+        )
+        return "error"
     if not post:
         print("fleet-watch: comment skipped (fingerprint unchanged)")
         return decision
@@ -456,13 +467,15 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.notify or args.dry_run:
         run_url = os.environ.get("FLEET_WATCH_RUN_URL", "").strip()
-        maybe_notify(
+        decision = maybe_notify(
             findings,
             now=now,
             dry_run=args.dry_run,
             last_comment_body=args.last_comment_body,
             run_url=run_url,
         )
+        if decision == "error":
+            return EXIT_NOTIFY_ERROR
 
     return 1 if findings else 0
 

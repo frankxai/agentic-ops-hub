@@ -1,9 +1,13 @@
 import io
+import json
+import os
 import unittest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 from scripts.fleet_watch import (
+    BOT_LOGIN,
+    EXIT_NOTIFY_ERROR,
     LAST_SWEEP_RE,
     build_comment_body,
     fingerprint_findings,
@@ -184,6 +188,103 @@ class DedupeDecisionTests(unittest.TestCase):
         raw = '[{"body": "a"}]\n[{"body": "b"}]'
         items = parse_paginated_json_arrays(raw)
         self.assertEqual([item["body"] for item in items], ["a", "b"])
+
+    def test_paginated_json_arrays_directly_adjacent(self) -> None:
+        raw = '[{"body": "a"}][{"body": "b"}]'
+        items = parse_paginated_json_arrays(raw)
+        self.assertEqual([item["body"] for item in items], ["a", "b"])
+
+
+class LiveNotifyPathTests(unittest.TestCase):
+    """Exercise --notify through the _run_gh seam without touching GitHub."""
+
+    ISSUE = 42
+
+    def _comment(self, body: str, login: str = BOT_LOGIN) -> dict:
+        return {"body": body, "user": {"login": login}}
+
+    def _run_notify(
+        self,
+        findings: list[str],
+        comments: list[dict],
+        *,
+        fail_on: str | None = None,
+    ) -> tuple[int, list[list[str]]]:
+        calls: list[list[str]] = []
+
+        def fake_gh(args: list[str]) -> str:
+            calls.append(list(args))
+            if args[:2] == ["issue", "list"]:
+                if fail_on == "lookup":
+                    raise RuntimeError("lookup boom")
+                return f"{self.ISSUE}\n"
+            if args[0] == "api":
+                return json.dumps(comments)
+            if args[:2] in (["issue", "comment"], ["issue", "create"]):
+                if fail_on == "post":
+                    raise RuntimeError("post boom")
+                return ""
+            raise AssertionError(f"unexpected gh call {args}")
+
+        argv = ["--notify", "--skip-live-checks"]
+        for item in findings:
+            argv.extend(["--finding", item])
+        with patch.dict(os.environ, {"GITHUB_REPOSITORY": "o/r"}), patch(
+            "scripts.fleet_watch._run_gh", side_effect=fake_gh
+        ), patch("sys.stdout", io.StringIO()), patch("sys.stderr", io.StringIO()):
+            code = main(argv)
+        return code, calls
+
+    @staticmethod
+    def _comment_calls(calls: list[list[str]]) -> list[list[str]]:
+        return [c for c in calls if c[:2] == ["issue", "comment"]]
+
+    def test_same_fingerprint_does_not_comment(self) -> None:
+        findings = ["ledger stale"]
+        prior = build_comment_body(findings, fingerprint_findings(findings))
+        code, calls = self._run_notify(findings, [self._comment(prior)])
+        self.assertEqual(code, 1)
+        self.assertEqual(self._comment_calls(calls), [])
+
+    def test_changed_fingerprint_comments_exactly_once(self) -> None:
+        prior = build_comment_body(["ledger stale"], fingerprint_findings(["ledger stale"]))
+        code, calls = self._run_notify(
+            ["ledger stale", "queue expired"], [self._comment(prior)]
+        )
+        self.assertEqual(code, 1)
+        self.assertEqual(len(self._comment_calls(calls)), 1)
+
+    def test_lookup_failure_exits_nonzero_even_when_all_clear(self) -> None:
+        code, calls = self._run_notify([], [], fail_on="lookup")
+        self.assertEqual(code, EXIT_NOTIFY_ERROR)
+        self.assertEqual(self._comment_calls(calls), [])
+
+    def test_lookup_failure_with_findings_exits_nonzero(self) -> None:
+        code, _ = self._run_notify(["ledger stale"], [], fail_on="lookup")
+        self.assertEqual(code, EXIT_NOTIFY_ERROR)
+
+    def test_post_failure_exits_nonzero(self) -> None:
+        prior = build_comment_body(["ledger stale"], fingerprint_findings(["ledger stale"]))
+        code, calls = self._run_notify([], [self._comment(prior)], fail_on="post")
+        self.assertEqual(code, EXIT_NOTIFY_ERROR)
+        self.assertEqual(len(self._comment_calls(calls)), 1)
+
+    def test_non_bot_comment_with_marker_is_ignored(self) -> None:
+        findings = ["ledger stale"]
+        spoof = build_comment_body(findings, fingerprint_findings(findings))
+        code, calls = self._run_notify(findings, [self._comment(spoof, login="some-human")])
+        self.assertEqual(code, 1)
+        self.assertEqual(len(self._comment_calls(calls)), 1)
+
+    def test_legacy_unmarked_bot_comment_still_dedupes(self) -> None:
+        legacy = (
+            "Scheduled fleet-watch run failed: https://example/actions/runs/9\n\n"
+            "```\nfleet-watch: 1 stale/failing signal(s) as of 2026-09-15T18:30:38+00:00\n"
+            "- ledger stale\n```\n"
+        )
+        code, calls = self._run_notify(["ledger stale"], [self._comment(legacy)])
+        self.assertEqual(code, 1)
+        self.assertEqual(self._comment_calls(calls), [])
 
 
 class DryRunCliTests(unittest.TestCase):
