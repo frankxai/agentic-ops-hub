@@ -1,6 +1,8 @@
 {
   "version": 5,
   "pacing": {
+    "rule_precedence": ["expiring_first", "claude_pacing", "codex_floor"],
+    "rule_precedence_scope": "Apply routing preferences in listed order among eligible work only; Claude over-target restrictions and the Fable cutoff remain mandatory.",
     "expiring_first": {
       "minimum_remaining_percent": 30,
       "reset_within_hours": 24,
@@ -8,16 +10,10 @@
     },
     "claude_pacing": {
       "weekly_window_start": "Sunday 04:00 UTC",
-      "weekly_target_used_percent": "min(100, 15 * days_elapsed_since_window_start)",
-      "daily_target_used_percent": {
-        "Mon": 15,
-        "Tue": 30,
-        "Wed": 45,
-        "Thu": 60,
-        "Fri": 75,
-        "Sat": 90,
-        "Sun": 100
-      },
+      "days_elapsed": "floor((now_utc - most_recent_Sunday_04_00_UTC) / 24_hours)",
+      "percent_per_elapsed_day": 15,
+      "cap_percent": 100,
+      "weekly_target_used_percent": "min(cap_percent, percent_per_elapsed_day * (days_elapsed + 1))",
       "over_target": {
         "allowed_work_classes": [
           "architecture",
@@ -59,10 +55,13 @@
     },
     "budget": {
       "monthly_envelope_eur": 499,
-      "condition": "Month-to-date spend plus the worker cap must fit the monthly envelope.",
+      "condition": "envelope_fit or frank_approval_recorded",
+      "envelope_fit": "Month-to-date spend plus the worker cap must fit the monthly envelope.",
+      "envelope_fit_waived_by": "frank_approval_recorded",
+      "waiver_scope": ["envelope_fit"],
       "measured_on": "2026-09-15",
       "fixed_plan_costs_exceed_envelope": true,
-      "over_envelope_exception": "Explicit approval by Frank is required; all other conditions and caps still apply."
+      "over_envelope_exception": "Recorded explicit approval by Frank waives only envelope fit; subscription exhaustion, job requirements, capped OpenRouter key, all execution caps, receipts, and never_for exclusions remain mandatory."
     },
     "execution": {
       "provider": "openrouter",
