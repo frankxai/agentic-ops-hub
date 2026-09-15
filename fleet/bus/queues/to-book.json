@@ -21,7 +21,7 @@
       "issued_at": "2026-09-15T13:23:34+00:00",
       "ttl_hours": 168,
       "scope": [
-        "starlight-token-tracker main f15b92b: scripts/fleet_pulse.py, scripts/install-pulse.ps1"
+        "starlight-token-tracker main (includes PR #3 pulse + PR #4 priority 4): scripts/fleet_pulse.py, scripts/install-pulse.ps1"
       ],
       "constraints": [
         "run only on physical Yoga Book",
@@ -29,9 +29,10 @@
         "no public SSH; git bus only"
       ],
       "commands": [
-        "cd ~/starlight-token-tracker; git checkout main; git pull",
+        "Set-Location ~/starlight-token-tracker -ErrorAction Stop",
+        "git checkout main; git pull --ff-only",
         "python scripts/fleet_pulse.py --dry-run",
-        "pwsh -File scripts/install-pulse.ps1"
+        "if (Get-Command pwsh -ErrorAction SilentlyContinue) { pwsh -File scripts/install-pulse.ps1 } else { powershell -ExecutionPolicy Bypass -File scripts/install-pulse.ps1 }"
       ],
       "acceptance": [
         "origin has branch pulse/yogabook with latest.json under 90 min old",
