@@ -318,6 +318,25 @@ def fetch_issue_comment_bodies(issue: int) -> list[str]:
     return bodies
 
 
+def fetch_bot_issue_body(issue: int) -> str | None:
+    """Return the issue body only when the workflow bot authored the issue."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    if not repo:
+        raise RuntimeError("GITHUB_REPOSITORY is not set")
+    raw = _run_gh(["api", f"repos/{repo}/issues/{issue}"])
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError as err:
+        raise RuntimeError(f"could not parse issue {issue} JSON: {err}") from err
+    if not isinstance(data, dict):
+        raise RuntimeError(f"unexpected issue {issue} payload")
+    # A human-opened issue carrying a pasted marker must not suppress alerts.
+    if (data.get("user") or {}).get("login") != BOT_LOGIN:
+        return None
+    body = data.get("body") or ""
+    return str(body) if body else None
+
+
 def publish_tracking_comment(issue: int | None, body: str) -> None:
     handle = tempfile.NamedTemporaryFile(
         "w", encoding="utf-8", delete=False, suffix=".md"
@@ -374,7 +393,19 @@ def lookup_last_fingerprint(
     except RuntimeError as err:
         print(f"fleet-watch: comment lookup failed ({err}); not commenting", file=sys.stderr)
         return issue, None, False
-    return issue, last_automated_fingerprint(bodies), True
+    if bodies:
+        # Newest qualifying bot comment wins over the original issue body.
+        return issue, last_automated_fingerprint(bodies), True
+    # No bot comments yet: the tracker was likely just created with the report
+    # (and fingerprint marker) in its body, so read that instead.
+    try:
+        issue_body = fetch_bot_issue_body(issue)
+    except RuntimeError as err:
+        print(f"fleet-watch: issue body lookup failed ({err}); not commenting", file=sys.stderr)
+        return issue, None, False
+    if issue_body is None:
+        return issue, None, True
+    return issue, last_automated_fingerprint([issue_body]), True
 
 
 def maybe_notify(

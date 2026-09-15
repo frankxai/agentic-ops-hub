@@ -209,6 +209,8 @@ class LiveNotifyPathTests(unittest.TestCase):
         comments: list[dict],
         *,
         fail_on: str | None = None,
+        issue_body: str = "",
+        issue_author: str = BOT_LOGIN,
     ) -> tuple[int, list[list[str]]]:
         calls: list[list[str]] = []
 
@@ -218,6 +220,10 @@ class LiveNotifyPathTests(unittest.TestCase):
                 if fail_on == "lookup":
                     raise RuntimeError("lookup boom")
                 return f"{self.ISSUE}\n"
+            if args[0] == "api" and args[-1] == f"repos/o/r/issues/{self.ISSUE}":
+                if fail_on == "issue_body":
+                    raise RuntimeError("issue body boom")
+                return json.dumps({"body": issue_body, "user": {"login": issue_author}})
             if args[0] == "api":
                 return json.dumps(comments)
             if args[:2] in (["issue", "comment"], ["issue", "create"]):
@@ -284,6 +290,38 @@ class LiveNotifyPathTests(unittest.TestCase):
         )
         code, calls = self._run_notify(["ledger stale"], [self._comment(legacy)])
         self.assertEqual(code, 1)
+        self.assertEqual(self._comment_calls(calls), [])
+
+    def test_bot_issue_body_fingerprint_dedupes_when_no_comments(self) -> None:
+        findings = ["ledger stale"]
+        body = build_comment_body(findings, fingerprint_findings(findings))
+        code, calls = self._run_notify(findings, [], issue_body=body)
+        self.assertEqual(code, 1)
+        self.assertEqual(self._comment_calls(calls), [])
+        self.assertIn(["api", f"repos/o/r/issues/{self.ISSUE}"], calls)
+
+    def test_non_bot_issue_body_marker_is_ignored(self) -> None:
+        findings = ["ledger stale"]
+        body = build_comment_body(findings, fingerprint_findings(findings))
+        code, calls = self._run_notify(
+            findings, [], issue_body=body, issue_author="some-human"
+        )
+        self.assertEqual(code, 1)
+        self.assertEqual(len(self._comment_calls(calls)), 1)
+
+    def test_bot_comment_takes_precedence_over_issue_body(self) -> None:
+        findings = ["ledger stale", "queue expired"]
+        older = build_comment_body(["ledger stale"], fingerprint_findings(["ledger stale"]))
+        current_body = build_comment_body(findings, fingerprint_findings(findings))
+        code, calls = self._run_notify(
+            findings, [self._comment(older)], issue_body=current_body
+        )
+        self.assertEqual(code, 1)
+        self.assertEqual(len(self._comment_calls(calls)), 1)
+
+    def test_issue_body_lookup_failure_exits_nonzero(self) -> None:
+        code, calls = self._run_notify(["ledger stale"], [], fail_on="issue_body")
+        self.assertEqual(code, EXIT_NOTIFY_ERROR)
         self.assertEqual(self._comment_calls(calls), [])
 
 
