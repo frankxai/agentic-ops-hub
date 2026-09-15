@@ -49,6 +49,17 @@ Values are **planner targets**, not hard API walls (except Claude `--max-budget-
 | **OpenCode free** | unlimited tokens | ok | No paid burn |
 | **Fleet weekly pace** | ≤ ~€115/week (~€499/4.33) | same | Tracker budget health |
 
+### Subscription pacing and on-demand API workers
+
+**Measured 2026-09-15:** Claude Max 20x weekly 69% used and Fable 75%, with 4 days left (about 1.8x linear pace); Codex Pro weekly 25%; Grok Build weekly 54%, expiring within a day; Copilot premium 0 of 7000 used. Fixed plan costs already exceed the EUR 499/month fleet envelope.
+
+Policy is recorded in `fleet/model-routing.json` (version 5); existing routes and planner recommendation logic are unchanged.
+
+1. **Expiring first:** If a subscription meter has >=30% remaining and resets within 24 hours, route all eligible work classes there first. Eligibility includes the restrictions below.
+2. **Claude pacing:** Weekly target used is <=15% x days elapsed since Sunday 04:00 UTC, capped at 100% (Mon 15, Tue 30, Wed 45, Thu 60, Fri 75, Sat 90, Sun 100). Over target, Claude is only for architecture/security/long-instruction work; Fable/Opus require named tickets, and fan-out moves to Grok/Codex. At Fable >=80% used, disable Fable until reset.
+3. **Codex floor:** Weekly usage should be >=10% x days elapsed in its own window. Below that floor, implement/refactor defaults to Codex, subject to expiring-first priority.
+4. **On-demand API worker:** All gates must hold: every eligible subscription for the job class is >=95% used or rate-limited until after the deadline; the job is revenue- or production-critical, has a named ticket, and a deadline before reset; month-to-date spend plus the worker cap fits EUR 499. Fixed costs currently exceed that envelope, so explicit approval by Frank is required for the budget exception; all other gates and caps still apply. Run through the capped OpenRouter key only: max USD 20/job, USD 50/week, one concurrent worker, and a receipt in `fleet/reports/agents/`. Never for convenience, docs, research, or cron.
+
 **Stop conditions (any agent):**
 1. Budget flag hit (`error_budget` / cost cap)
 2. Main-branch ship attempted without approval → abort

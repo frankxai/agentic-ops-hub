@@ -1,5 +1,85 @@
 {
-  "version": 2,
+  "version": 5,
+  "pacing": {
+    "expiring_first": {
+      "minimum_remaining_percent": 30,
+      "reset_within_hours": 24,
+      "action": "Route all eligible work classes to the qualifying subscription first."
+    },
+    "claude_pacing": {
+      "weekly_window_start": "Sunday 04:00 UTC",
+      "weekly_target_used_percent": "min(100, 15 * days_elapsed_since_window_start)",
+      "daily_target_used_percent": {
+        "Mon": 15,
+        "Tue": 30,
+        "Wed": 45,
+        "Thu": 60,
+        "Fri": 75,
+        "Sat": 90,
+        "Sun": 100
+      },
+      "over_target": {
+        "allowed_work_classes": [
+          "architecture",
+          "security",
+          "long-instruction"
+        ],
+        "fable_opus_named_ticket_required": true,
+        "fan_out_moves_to": [
+          "grok",
+          "codex"
+        ]
+      },
+      "fable_disable_at_used_percent": 80,
+      "fable_disabled_until": "reset"
+    },
+    "codex_floor": {
+      "weekly_minimum_used_percent": "10 * days_elapsed_in_own_weekly_window",
+      "below_floor_default_work_classes": [
+        "implement",
+        "refactor"
+      ],
+      "below_floor_default_agent": "codex"
+    }
+  },
+  "on_demand_api_worker": {
+    "all_conditions_required": true,
+    "subscription_exhaustion": {
+      "scope": "every eligible subscription for the job class",
+      "minimum_used_percent": 95,
+      "alternative": "rate-limited until after the job deadline"
+    },
+    "job": {
+      "criticality_any_of": [
+        "revenue-critical",
+        "production-critical"
+      ],
+      "named_ticket_required": true,
+      "deadline_before_reset_required": true
+    },
+    "budget": {
+      "monthly_envelope_eur": 499,
+      "condition": "Month-to-date spend plus the worker cap must fit the monthly envelope.",
+      "measured_on": "2026-09-15",
+      "fixed_plan_costs_exceed_envelope": true,
+      "over_envelope_exception": "Explicit approval by Frank is required; all other conditions and caps still apply."
+    },
+    "execution": {
+      "provider": "openrouter",
+      "capped_key_required": true,
+      "max_usd_per_job": 20,
+      "max_usd_per_week": 50,
+      "max_concurrent_workers": 1,
+      "receipt_required": true,
+      "receipt_directory": "fleet/reports/agents/"
+    },
+    "never_for": [
+      "convenience",
+      "docs",
+      "research",
+      "cron"
+    ]
+  },
   "optimization_objective": "maximize_verified_outcomes_per_wall_clock_hour",
   "night_cap_usd": 110,
   "defaults": {
