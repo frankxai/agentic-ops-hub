@@ -7,7 +7,8 @@
 # an expired queue item CAUSES an alert rather than suppressing one.
 #
 # Durable-output-sink law: findings land as a GitHub issue (created once,
-# then commented per firing), never report-only into a run log.
+# then commented when the finding fingerprint changes), never report-only
+# into a run log. Identical consecutive failures do not re-comment.
 name: Fleet watch
 
 on:
@@ -31,34 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Fleet liveness check
-        id: watch
-        continue-on-error: true
-        run: |
-          set -o pipefail
-          python scripts/fleet_watch.py 2>&1 | tee watch.out
-
-      - name: File findings as a durable issue
-        if: steps.watch.outcome == 'failure'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: |
-          set -e
-          {
-            echo "Scheduled fleet-watch run failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-            echo
-            echo '```'
-            cat watch.out
-            echo '```'
-          } > issue-body.md
-          NUM=$(gh issue list --search "Fleet liveness watch in:title" --state open --json number --jq '.[0].number' || true)
-          if [ -z "$NUM" ]; then
-            gh issue create \
-              --title "Fleet liveness watch: stale signals" \
-              --body-file issue-body.md
-          else
-            gh issue comment "$NUM" --body-file issue-body.md
-          fi
-
-      - name: Propagate result
-        if: steps.watch.outcome == 'failure'
-        run: exit 1
+          FLEET_WATCH_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/fleet_watch.py --notify
