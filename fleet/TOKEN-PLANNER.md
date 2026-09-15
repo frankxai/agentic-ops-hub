@@ -49,6 +49,19 @@ Values are **planner targets**, not hard API walls (except Claude `--max-budget-
 | **OpenCode free** | unlimited tokens | ok | No paid burn |
 | **Fleet weekly pace** | ≤ ~€115/week (~€499/4.33) | same | Tracker budget health |
 
+### Subscription pacing and on-demand API workers
+
+**Measured 2026-09-15:** Claude Max 20x weekly 69% used and Fable 75%, with 4 days left (about 1.8x linear pace); Codex Pro weekly 25%; Grok Build weekly 54%, expiring within a day; Copilot premium 0 of 7000 used. Fixed plan costs already exceed the EUR 499/month fleet envelope.
+
+Policy is recorded in `fleet/model-routing.json` (version 5); existing routes and planner recommendation logic are unchanged.
+
+**Rule precedence:** `rule_precedence: ["expiring_first", "claude_pacing", "codex_floor"]`. Apply routing preferences in listed order among eligible work only; Claude over-target restrictions and the Fable cutoff remain mandatory.
+
+1. **Expiring first:** If a subscription meter has >=30% remaining and resets within 24 hours, route all eligible work classes there first.
+2. **Claude pacing:** The weekly window starts Sunday 04:00 UTC. Define `days_elapsed = floor((now_utc - most_recent_Sunday_04_00_UTC) / 24_hours)`, `percent_per_elapsed_day = 15`, and `cap_percent = 100`. The weekly target used percent is `min(cap_percent, percent_per_elapsed_day * (days_elapsed + 1))`: the first 24 hours allow 15%, and elapsed days 0..6 yield 15, 30, 45, 60, 75, 90, 100%. There is no weekday-name map. Over target, Claude is only for architecture/security/long-instruction work; Fable/Opus require named tickets, and fan-out moves to Grok/Codex. At Fable >=80% used, disable Fable until reset.
+3. **Codex floor:** Weekly usage should be >=10% x days elapsed in its own window. Below that floor, implement/refactor defaults to Codex.
+4. **On-demand API worker:** All gates must hold: every eligible subscription for the job class is >=95% used or rate-limited until after the deadline; the job is revenue- or production-critical, has a named ticket, and a deadline before reset; the budget condition is `envelope_fit or frank_approval_recorded`. Envelope fit means month-to-date spend plus the worker cap fits EUR 499. Fixed costs currently exceed that envelope. JSON records `envelope_fit_waived_by: "frank_approval_recorded"` and `waiver_scope: ["envelope_fit"]`. Recorded explicit approval by Frank waives only envelope fit; subscription exhaustion, job requirements, capped OpenRouter key, all execution caps, receipts, and never_for exclusions remain mandatory. Run through the capped OpenRouter key only: max USD 20/job, USD 50/week, one concurrent worker, and a receipt in `fleet/reports/agents/`. Never for convenience, docs, research, or cron.
+
 **Stop conditions (any agent):**
 1. Budget flag hit (`error_budget` / cost cap)
 2. Main-branch ship attempted without approval → abort
