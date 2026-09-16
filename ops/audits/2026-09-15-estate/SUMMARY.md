@@ -49,6 +49,14 @@ Local healing: codex 0.154.0, gemini 0.59.0, opencode 1.18.31; `ccusage`/`toksca
 - FrankX `ci.yml` is path-filtered and `main` requires no checks or reviews, so subproject-only PRs (e.g. #203) merge with only the key-guard check: a coverage gap.
 - Different-family reviews caught real defects in 3 of 5 PRs (#67 pacing contradiction + unusable approval waiver, #68 silent exit 0 + duplicate comment on new issue, #9 secret regex missing modern key formats).
 
+## 2026-09-16 follow-up (proactive pass)
+
+- **Fleet complete:** Frank installed the pulse on the Book; `pulse/c940` and `pulse/yogabook` both report. This resolved the opening question: the Book is the Codex-heavy machine (30 codex processes; +14 Codex quota points and 33 M tokens in 12 h), so the earlier "unattributed Codex burn" was the Book, not claude.ai. Quota 04:30 CEST: Claude weekly 71 % (over the 45 % Wednesday pace target), Fable 75 %, Codex 32 %, Grok 60 %, Copilot premium 7 %.
+- **New audit artifacts in this folder:** `stale-branches.md` (236 agent-lane branches, 14+ days, no open PR), `pr-backlog.md` (92 open PRs with age, draft, mergeability, failing checks), `pr-recommendations.md` (Codex triage of arcanea + ACOS: 0 MERGE / 3 REBASE / 2 CLOSE / 11 ASK FRANK - report only; closing or rebasing Frank-authored drafts needs his approval).
+- **#67 hardened twice:** the Codex weekly window is now derived explicitly (tokscale reports the UPCOMING reset, so window start = `resets_at - 168 h`) and the floor formula reuses `cap_percent`; a reviewer finding to revert the config version to 2 was rejected (the PR intentionally publishes v5; `token_planner` requires only >= 2).
+- **Cloud agent network limit found:** the Copilot cloud lane for the stale frankx.ai intelligence snapshot ran the fixture tests and licence check, then stopped because `models.dev` fails DNS inside GitHub's agent network. It refused to fabricate data, so the empty PR (#711) was closed and the refresh moved to a machine with normal network access. To use cloud lanes for this job later, `models.dev` must be allowlisted for the Copilot agent.
+- **Copilot enablement extended:** `copilot-setup-steps.yml` (free disk + pre-install) merged in FrankX (#200, #202) and proposed for the 1.4 GB pnpm workspace `arcanea-ai-app` (#431), which holds the largest backlog (29 open PRs) and the two stale security drafts.
+
 ## True blockers for Frank
 1. Approve agentic-ops-hub **#65** (unblocks CI and auto-merge for #67, #68 and this ledger PR).
 2. On the Yoga Book: run `install-fleet-pulse-book.cmd` from Downloads (no remote shell exists).
