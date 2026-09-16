@@ -1,7 +1,11 @@
 {
   "version": 5,
   "pacing": {
-    "rule_precedence": ["expiring_first", "claude_pacing", "codex_floor"],
+    "rule_precedence": [
+      "expiring_first",
+      "claude_pacing",
+      "codex_floor"
+    ],
     "rule_precedence_scope": "Apply routing preferences in listed order among eligible work only; Claude over-target restrictions and the Fable cutoff remain mandatory.",
     "expiring_first": {
       "minimum_remaining_percent": 30,
@@ -30,12 +34,16 @@
       "fable_disabled_until": "reset"
     },
     "codex_floor": {
-      "weekly_minimum_used_percent": "10 * days_elapsed_in_own_weekly_window",
+      "weekly_minimum_used_percent": "min(100, percent_per_elapsed_day * (days_elapsed + 1))",
       "below_floor_default_work_classes": [
         "implement",
         "refactor"
       ],
-      "below_floor_default_agent": "codex"
+      "below_floor_default_agent": "codex",
+      "weekly_window_start": "Codex Pro weekly meter reset time reported by `tokscale usage --json` (resets_at for Codex/Weekly); it is not Sunday 04:00 UTC like Claude",
+      "days_elapsed_definition": "floor((now - weekly_window_start_of_current_window) / 1 day)",
+      "percent_per_elapsed_day": 10,
+      "cap_percent": 100
     }
   },
   "on_demand_api_worker": {
@@ -58,7 +66,9 @@
       "condition": "envelope_fit or frank_approval_recorded",
       "envelope_fit": "Month-to-date spend plus the worker cap must fit the monthly envelope.",
       "envelope_fit_waived_by": "frank_approval_recorded",
-      "waiver_scope": ["envelope_fit"],
+      "waiver_scope": [
+        "envelope_fit"
+      ],
       "measured_on": "2026-09-15",
       "fixed_plan_costs_exceed_envelope": true,
       "over_envelope_exception": "Recorded explicit approval by Frank waives only envelope fit; subscription exhaustion, job requirements, capped OpenRouter key, all execution caps, receipts, and never_for exclusions remain mandatory."
@@ -98,23 +108,35 @@
       "primary": "implementation, mechanical refactors, independent verification",
       "model": "gpt-5.6-terra",
       "reasoning_effort": "high",
-      "machines": ["c940", "yoga-book"]
+      "machines": [
+        "c940",
+        "yoga-book"
+      ]
     },
     "anthropic-claude-max": {
       "primary": "deep multi-file backend implementation and architecture review",
       "model": "opus",
       "fallback_model": "sonnet",
-      "machines": ["c940", "yoga-book"]
+      "machines": [
+        "c940",
+        "yoga-book"
+      ]
     },
     "gemini-ultra": {
       "primary": "long-context repository mapping, research synthesis, visual review",
       "model": "gemini-3.5",
-      "machines": ["yoga-book", "c940"]
+      "machines": [
+        "yoga-book",
+        "c940"
+      ]
     },
     "xai-heavy": {
       "primary": "Hermes Queen orchestration, adversarial challenge, current web/X research, media",
       "model": "grok-4.5",
-      "machines": ["c940", "yoga-book"]
+      "machines": [
+        "c940",
+        "yoga-book"
+      ]
     }
   },
   "routes": {
@@ -195,17 +217,48 @@
     }
   },
   "fallbacks": {
-    "claude": ["codex", "hermes"],
-    "codex": ["claude", "hermes"],
-    "gemini": ["claude", "codex"],
-    "opencode": ["codex"],
-    "cursor": ["codex"],
-    "github": ["hermes"],
-    "hermes": ["codex"]
+    "claude": [
+      "codex",
+      "hermes"
+    ],
+    "codex": [
+      "claude",
+      "hermes"
+    ],
+    "gemini": [
+      "claude",
+      "codex"
+    ],
+    "opencode": [
+      "codex"
+    ],
+    "cursor": [
+      "codex"
+    ],
+    "github": [
+      "hermes"
+    ],
+    "hermes": [
+      "codex"
+    ]
   },
   "completion_contract": {
-    "states": ["queued", "claimed", "artifact-produced", "tested", "integrated", "verified", "delivered"],
-    "done_requires": ["receipt", "commit", "zero-exit acceptance commands", "integration_state", "completed_at"],
+    "states": [
+      "queued",
+      "claimed",
+      "artifact-produced",
+      "tested",
+      "integrated",
+      "verified",
+      "delivered"
+    ],
+    "done_requires": [
+      "receipt",
+      "commit",
+      "zero-exit acceptance commands",
+      "integration_state",
+      "completed_at"
+    ],
     "report_only_is_done": false,
     "configured_cron_is_outcome": false
   }
