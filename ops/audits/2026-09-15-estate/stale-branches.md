@@ -240,3 +240,21 @@ Branches matching agent lane prefixes with no open PR and no commit in 14+ days.
 | starlight-agent-config | codex/sds-hardening | 2026-08-15 | 32 |
 | starlight-agent-config | codex/subscription-routing-control | 2026-07-19 | 58 |
 | ai-architect-academy | agent/claude/academy-site | 2026-09-01 | 14 |
+
+## CORRECTION 2026-09-16: do NOT bulk-delete these 236 branches
+
+The header above says these are deletion candidates. **That recommendation is unsafe as written.** Every branch was re-checked against its repo's default branch and against its PR history. Raw data: `branch-merge-status.tsv`, `branch-verdicts.tsv`.
+
+| Verdict | Count | Meaning | Action |
+|---|---:|---|---|
+| Fully merged (`ahead_by == 0`) | **3** | Commits are ancestors of the default branch | Safe to delete |
+| Squash-merged (PR MERGED) | **20** | Work is in main under a rewritten commit | Safe to delete |
+| PR CLOSED, not merged | **135** | Work was proposed and rejected; branch is the only copy | Judgment call — Frank decides |
+| **No PR ever opened** | **78** | **402 commits that exist nowhere else** | **Never delete blind** |
+
+Two traps this correction closes:
+
+1. **`ahead_by > 0` does not mean unmerged.** Squash-merged branches always report ahead, because the squash creates a new commit that is not a descendant of the branch. Judging by `ahead_by` alone would have kept 20 disposable branches and, worse, implied the other 213 were equally disposable.
+2. **"No commit in 14+ days and no open PR" does not mean abandoned.** 78 branches carry 402 commits that were never proposed in any PR. Deleting those destroys the only copy of that work. Examples: `frankx.ai-vercel-website :: agent/claude/lead-funnel-repair` (16 commits), `agent/antigravity/lead-funnels-v1` (15), `agent/c940/research-hub-recommend-preserve-20260818` (10), `agent/hermes/estate-public` (9).
+
+**Safe deletion set is 23 branches, not 236.** The remaining 213 need a decision, not a script.
