@@ -81,6 +81,14 @@ The 4 remaining highs are deliberate, each with a named blocker:
 - `extract-zip` #377, #352 - development scope, **no patched release exists**; they clear only with puppeteer 25, which needs Node >= 22.12 (decision: FrankX issue #215).
 - nested `postcss` #66, #65 - runtime scope in `new-landing-page-backup/`, pinned by `next@15.5.25`; only a Next major moves it.
 
+### Blockers cleared by agent, 2026-09-16 (removed from Frank's list)
+
+**Dependabot alerts: enabled on 13 repos.** Done via `PUT /repos/{owner}/{repo}/vulnerability-alerts` and confirmed with a `GET` returning 204 on each: arcanea-ai-app, arcanea-platform, agentic-ops-hub, hermes, arcanea, agentic-creator-os, starlight-token-tracker, claude-code-config, library-os, FrankX, starlight-gravity-engine, frankx-app-studio, Starlight-Intelligence-System. `arcanea-opencode` is the one exception — it is archived, so it must be unarchived before the setting will take. Alert counts read 0 right after enabling; that is Dependabot backfill lag, not a failed write.
+
+**The puppeteer/Node question is one decision covering two repos.** FrankX and frankx.ai-vercel-website both pin `puppeteer ^24.35.0` with `.nvmrc 20` and no `engines` block. Verified against the npm registry: 24.35.0 requires node>=18, while every 25.x release (25.0.2 through the current 25.11.0) requires node>=22.12.0 — there is no 25.x that runs on Node 20. Choosing Node 22 therefore clears **four** high-severity `extract-zip` alerts (FrankX #377/#352, frankx.ai #148/#128), not two. Recorded on FrankX issue #215.
+
+**arcanea #124 was mis-triaged in `pr-recommendations.md` as REBASE.** Its two changed files produce zero lint errors; 142 unrelated files across the monorepo carry the failures, and `Test & Build Apps` fails on a package the PR never touches. The gate lints the whole monorepo, so every arcanea PR is red regardless of content — rebasing changes nothing. The real fix is to scope the lint gate to changed packages or run a debt-cleanup pass. Recommendation corrected on the PR.
+
 ## True blockers for Frank
 1. Approve agentic-ops-hub **#65** (unblocks CI and auto-merge for #67, #68 and this ledger PR).
 2. On the Yoga Book: run `install-fleet-pulse-book.cmd` from Downloads (no remote shell exists).
