@@ -57,6 +57,22 @@ Local healing: codex 0.154.0, gemini 0.59.0, opencode 1.18.31; `ccusage`/`toksca
 - **Cloud agent network limit found:** the Copilot cloud lane for the stale frankx.ai intelligence snapshot ran the fixture tests and licence check, then stopped because `models.dev` fails DNS inside GitHub's agent network. It refused to fabricate data, so the empty PR (#711) was closed and the refresh moved to a machine with normal network access. To use cloud lanes for this job later, `models.dev` must be allowlisted for the Copilot agent.
 - **Copilot enablement extended:** `copilot-setup-steps.yml` (free disk + pre-install) merged in FrankX (#200, #202) and proposed for the 1.4 GB pnpm workspace `arcanea-ai-app` (#431), which holds the largest backlog (29 open PRs) and the two stale security drafts.
 
+### 2026-09-16 merges and incidents
+
+| Repo | PR | Result |
+|---|---|---|
+| arcanea-ai-app | #431 | Copilot setup steps (free disk + corepack pnpm 8.15 + frozen install) - merged 542f8ec, all required checks green; cloud lanes now possible on the largest backlog repo |
+| frankx.ai-vercel-website | #712 | External intelligence snapshot refreshed locally (the scheduled workflow cannot open PRs) - merged 3290b93, 9/9 checks incl. Merge Gate, Vercel production READY, frankx.ai 200. Clears the stale-snapshot Merge Gate failure repo-wide |
+| frankx.ai-vercel-website | #711 | Cloud attempt at the same refresh - closed: models.dev fails DNS inside GitHub's agent network; the agent correctly refused to fabricate data |
+| FrankX | #208 | 13 high-severity alerts fixed in new-landing-page-backup (sharp, flatted, glob, minimatch x6, picomatch x2) - merged 9775597, one file changed |
+| FrankX | issue #215 | Decision opened: move FrankX to Node 22 or stay on puppeteer 24.x (puppeteer 25 requires Node >= 22.12, repo pins 20) |
+
+**Incidents on the #208 branch, both caught by review or verification and repaired before merge:**
+1. The lane raised `postcss` to `^8.5.10` in the backup lockfile metadata without the matching manifest change, which breaks `npm ci`'s in-sync requirement; restored to `^8`.
+2. A maintainer tree built through the Git Data API used abbreviated commit SHAs (the API rejects them), so empty blob references **deleted** both root `package.json` and `package-lock.json` instead of restoring them; repaired with main's exact blobs and verified by diffing against main before the ref moved.
+
+**Corrections to the lane's claims:** `toml` alerts #371/#370 do have patched versions (4.2.0 / 4.1.2), so "no patched version" was wrong - the blocker is the `remark-mdx-frontmatter` dependency path; `extract-zip` #377/#352 were only cleared by the puppeteer bump that is now split out.
+
 ## True blockers for Frank
 1. Approve agentic-ops-hub **#65** (unblocks CI and auto-merge for #67, #68 and this ledger PR).
 2. On the Yoga Book: run `install-fleet-pulse-book.cmd` from Downloads (no remote shell exists).
