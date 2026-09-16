@@ -73,6 +73,14 @@ Local healing: codex 0.154.0, gemini 0.59.0, opencode 1.18.31; `ccusage`/`toksca
 
 **Corrections to the lane's claims:** `toml` alerts #371/#370 do have patched versions (4.2.0 / 4.1.2), so "no patched version" was wrong - the blocker is the `remark-mdx-frontmatter` dependency path; `extract-zip` #377/#352 were only cleared by the puppeteer bump that is now split out.
 
+### FrankX security end state (2026-09-16)
+
+**Critical 0 - High 19 -> 4** across the day: #203 (both criticals, vitest ^3.2.6), #208 (13 backup-folder alerts), #216 (runtime `toml` #371/#370, by removing `remark-mdx-frontmatter`, its sole parent and unused in the MDX pipeline - verified independently: `toml` and the package gone from the lockfile, `remark-gfm`/`remark-frontmatter` retained, 1686 -> 1682 packages, manifest and lock in sync).
+
+The 4 remaining highs are deliberate, each with a named blocker:
+- `extract-zip` #377, #352 - development scope, **no patched release exists**; they clear only with puppeteer 25, which needs Node >= 22.12 (decision: FrankX issue #215).
+- nested `postcss` #66, #65 - runtime scope in `new-landing-page-backup/`, pinned by `next@15.5.25`; only a Next major moves it.
+
 ## True blockers for Frank
 1. Approve agentic-ops-hub **#65** (unblocks CI and auto-merge for #67, #68 and this ledger PR).
 2. On the Yoga Book: run `install-fleet-pulse-book.cmd` from Downloads (no remote shell exists).
