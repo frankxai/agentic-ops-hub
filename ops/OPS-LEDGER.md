@@ -2,7 +2,17 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-09-16 (Antigravity · #710 merged · #209 merged · #430 CI)
+**Last sweep:** 2026-09-16 (Antigravity · #428 healed & landed · #430 landed · #707 landed · #710 landed · #209 landed)
+
+**2026-09-16 Arcanea & FrankX excellence wave (Antigravity massive-action):**
+- **Arcanea #428 Healed & Landed:** Resolved Prettier failure on `AGENTS.md` in **[PR #428](https://github.com/frankxai/arcanea-ai-app/pull/428)** (`f35e7df6`). Re-ran full test suite: all 9 checks (Install, Lint, TypeScript, Build, Analyze/CodeQL, Vercel preview ignore-build) passed 100% green. Squash-merged to `main` (`d63aba60`).
+- **Arcanea #430 Landed (Issue #294 Fix):** Replaced 147MB `_global-error` Lambda with standalone <1MB boundary and gated CodeQL on Dependabot PRs. All 10 checks passed green. Squash-merged to `main` (`663eb294`).
+- **Prod #707 Landed:** Rebased onto `main`, all 9 checks passed green, squash-merged (`932991358`).
+- **Disk & Runtime Status:** C: free space **51.88 GB** (well above 50 GB ops floor). Starlight bridge `:8767` healthy. Clean working trees across `arcanea-ai-app` and `frankx-prod-sync`.
+
+**2026-09-16 land-green (Grok 4.6):** Squash-merged prod **[#707](https://github.com/frankxai/frankx.ai-vercel-website/pull/707)** `93299135` (CI+Merge Gate green after rebase). Squash-merged starlight-swarm **[#25](https://github.com/frankxai/starlight-swarm/pull/25)** `e184a5c3` (clean, build green). Squash-merged FrankX **[#210](https://github.com/frankxai/FrankX/pull/210)** `4048a5a9` (actions/setup-node 4→7, CI green). Confirmed already on main this morning: GC #70, Arcanea #423/#360/#430. **Not landed:** FrankX #211 `unstable` after #210; hub #67/#68/#69 verify fail; #333 DIRTY; HOLDs #429/#388/#413/#379/#380/#385; stacked #411. Register: Neutral.
+
+**2026-09-16 massive-action land (Grok 4.6):** Squash-merged gencreator **[#70](https://github.com/frankxai/gencreator.ai/pull/70)** evidence-first voice review (`c9f4ff2`). Squash-merged Arcanea **[#423](https://github.com/frankxai/arcanea-ai-app/pull/423)** chapter slugs + stop serving `CLAUDE.md` (`19e60547`). Squash-merged Arcanea **[#360](https://github.com/frankxai/arcanea-ai-app/pull/360)** draft-skip for 12 non-required workflows (`2e49906`; Prettier heal then rebase). **HOLD #411** stacked on #409 + own 200ms gallery gate. **HOLD #429** react 19.3. **HOLD #388/#413**. Disk ~52.5 GB. Queens not unpaused. Register: Neutral.
 
 **2026-09-16 Vercel & GitHub Actions cost & throughput heal (Antigravity massive-action):**
 - **Vercel Cost Surges Healed:** Investigated W38 Vercel metrics (+141% build minutes, 673 min, 167 deploys). Identified root driver: 137 preview deploys (82% of all runs) triggered by parallel agent branch pushes without PRs or on draft PRs. Updated `scripts/should-deploy.sh` in `frankx.ai-vercel-website` to query GitHub Pull Request API (`api.github.com/repos/{owner}/{repo}/pulls?head=...&state=open`) and exit 0 (skip build) in <10s for direct branch pushes with no open PR or only draft PRs. Added unit test suite in `scripts/tests/vercel-agent-wip-build-guard.test.mjs` (17/17 passing). Opened and **squash-merged [PR #710](https://github.com/frankxai/frankx.ai-vercel-website/pull/710)** (`6bbe7a084`).
