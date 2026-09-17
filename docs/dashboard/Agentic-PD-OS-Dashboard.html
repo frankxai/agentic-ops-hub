@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic PD-OS Dashboard • Starlight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        :root {
+            --starlight-gold: #D4AF37;
+        }
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .heading { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; }
+        .premium-card {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .section-header {
+            background: linear-gradient(90deg, #0f172a, #1e293b);
+        }
+        .agent-dot { animation: pulse 2s infinite; }
+        .metric-value { font-variant-numeric: tabular-nums; }
+        .cosmic-bg {
+            background: radial-gradient(circle at 50% 30%, #1e293b 0%, #0f172a 70%);
+        }
+        .anti-slop { color: #D4AF37; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 cosmic-bg">
+    <div class="max-w-screen-2xl mx-auto">
+        <!-- Header -->
+        <div class="border-b border-slate-800 px-8 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-x-4">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-400 to-yellow-600 flex items-center justify-center">
+                    <i class="fa-solid fa-infinity text-slate-950 text-3xl"></i>
+                </div>
+                <div>
+                    <div class="text-2xl heading font-semibold tracking-tighter">Agentic PD-OS</div>
+                    <div class="text-xs text-slate-500 -mt-1">Starlight Queen • L2 Config</div>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-x-3">
+                <div class="px-3 py-1.5 bg-slate-900 rounded-3xl text-xs flex items-center gap-x-2 border border-slate-800">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="font-medium text-emerald-400">Queen Active</span>
+                </div>
+                <div class="text-xs px-4 py-2 bg-slate-900 rounded-3xl border border-slate-800 flex items-center gap-x-2">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>Multi-CLI Swarm • G-Stack + Paperclip concepts + SIS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Selector -->
+        <div class="px-8 pt-8 pb-4">
+            <div class="flex items-end justify-between mb-4">
+                <div>
+                    <div class="text-xs uppercase tracking-[2px] text-amber-400 font-medium">Focus Layer</div>
+                    <div class="text-4xl heading tracking-tighter">Choose Brand</div>
+                </div>
+                <div class="text-xs text-slate-500">6 active verticals • 23 specialists online</div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                <!-- Brand Cards -->
+                <div onclick="selectBrand(this, 'starlight')" class="premium-card hover:border-amber-400/40 transition-all cursor-pointer border border-slate-800 rounded-3xl p-4 active">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Starlight Intelligence</div>
+                        <i class="fa-solid fa-brain text-amber-400"></i>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">SIS • Queen • Memory</div>
+                    <div class="mt-3 flex items-center gap-1.5 text-[10px]">
+                        <div class="bg-emerald-900/60 text-emerald-400 px-2 py-0.5 rounded-full text-[9px]">Core</div>
+                        <div class="text-emerald-400">94%</div>
+                    </div>
+                </div>
+                
+                <div onclick="selectBrand(this, 'arcanea')" class="premium-card hover:border-amber-400/40 transition-all cursor-pointer border border-slate-800 rounded-3xl p-4">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Arcanea</div>
+                        <i class="fa-solid fa-magic text-violet-400"></i>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">Lore • Worlds • Academy</div>
+                    <div class="mt-3 flex items-center gap-1.5 text-[10px]">
+                        <div class="bg-violet-900/60 text-violet-400 px-2 py-0.5 rounded-full text-[9px]">Creative</div>
+                        <div class="text-violet-400">87%</div>
+                    </div>
+                </div>
+                
+                <div onclick="selectBrand(this, 'gencreator')" class="premium-card hover:border-amber-400/40 transition-all cursor-pointer border border-slate-800 rounded-3xl p-4">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">GenCreator</div>
+                        <i class="fa-solid fa-rocket text-sky-400"></i>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">Creator OS • Skills • Cohorts</div>
+                    <div class="mt-3 flex items-center gap-1.5 text-[10px]">
+                        <div class="bg-sky-900/60 text-sky-400 px-2 py-0.5 rounded-full text-[9px]">OS</div>
+                        <div class="text-sky-400">91%</div>
+                    </div>
+                </div>
+                
+                <div onclick="selectBrand(this, 'agenticincome')" class="premium-card hover:border-amber-400/40 transition-all cursor-pointer border border-slate-800 rounded-3xl p-4">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Agentic Income</div>
+                        <i class="fa-solid fa-dollar-sign text-emerald-400"></i>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">Active • AaaS • Products</div>
+                    <div class="mt-3 flex items-center gap-1.5 text-[10px]">
+                        <div class="bg-emerald-900/60 text-emerald-400 px-2 py-0.5 rounded-full text-[9px]">Active</div>
+                        <div class="text-emerald-400">78%</div>
+                    </div>
+                </div>
+                
+                <div onclick="selectBrand(this, 'passive')" class="premium-card hover:border-amber-400/40 transition-all cursor-pointer border border-slate-800 rounded-3xl p-4">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Agentic Passive</div>
+                        <i class="fa-solid fa-infinity text-teal-400"></i>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">Compounding • Templates</div>
+                    <div class="mt-3 flex items-center gap-1.5 text-[10px]">
+                        <div class="bg-teal-900/60 text-teal-400 px-2 py-0.5 rounded-full text-[9px]">Passive</div>
+                        <div class="text-teal-400">82%</div>
+                    </div>
+                </div>
+                
+                <div onclick="selectBrand(this, 'reality')" class="premium-card hover:border-amber-400/40 transition-all cursor-pointer border border-slate-800 rounded-3xl p-4">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Reality Art Attack</div>
+                        <i class="fa-solid fa-bolt text-orange-400"></i>
+                    </div>
+                    <div class="text-[10px] text-slate-400 mt-1">Visual Attack • Campaigns</div>
+                    <div class="mt-3 flex items-center gap-1.5 text-[10px]">
+                        <div class="bg-orange-900/60 text-orange-400 px-2 py-0.5 rounded-full text-[9px]">Creative</div>
+                        <div class="text-orange-400">71%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Kanban + Stages -->
+            <div class="lg:col-span-5 premium-card border border-slate-800 rounded-3xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="font-semibold text-lg">Lifecycle Stages</div>
+                    <div class="text-xs px-3 py-1 bg-slate-900 rounded-2xl flex items-center gap-1">
+                        <i class="fa-solid fa-sync text-xs"></i>
+                        <span class="text-emerald-400">Live</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-2 text-sm">
+                    <div class="flex items-center justify-between px-4 py-3 bg-slate-900/60 rounded-2xl">
+                        <div class="flex items-center gap-x-3">
+                            <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full"></div>
+                            <span>Discover &amp; Reframe</span>
+                        </div>
+                        <div class="text-emerald-400 text-xs font-medium">94 • 12 active</div>
+                    </div>
+                    <div class="flex items-center justify-between px-4 py-3 bg-slate-900/60 rounded-2xl">
+                        <div class="flex items-center gap-x-3">
+                            <div class="w-2.5 h-2.5 bg-emerald-400 rounded-full"></div>
+                            <span>Define (Spec + Packet)</span>
+                        </div>
+                        <div class="text-emerald-400 text-xs font-medium">87 • 9 active</div>
+                    </div>
+                    <div class="flex items-center justify-between px-4 py-3 bg-slate-900/60 rounded-2xl border-l-2 border-amber-400">
+                        <div class="flex items-center gap-x-3">
+                            <div class="w-2.5 h-2.5 bg-amber-400 rounded-full"></div>
+                            <span><strong>Build + Guardrails</strong> (current)</span>
+                        </div>
+                        <div class="text-amber-400 text-xs font-medium">71 • 18 active</div>
+                    </div>
+                    <div class="flex items-center justify-between px-4 py-3 bg-slate-900/60 rounded-2xl">
+                        <div class="flex items-center gap-x-3">
+                            <div class="w-2.5 h-2.5 bg-slate-400 rounded-full"></div>
+                            <span>Test + Companion Experience</span>
+                        </div>
+                        <div class="text-xs font-medium text-slate-400">54 • 7 active</div>
+                    </div>
+                    <div class="flex items-center justify-between px-4 py-3 bg-slate-900/60 rounded-2xl">
+                        <div class="flex items-center gap-x-3">
+                            <div class="w-2.5 h-2.5 bg-slate-400 rounded-full"></div>
+                            <span>Ship / Learn / Scale</span>
+                        </div>
+                        <div class="text-xs font-medium text-slate-400">41 • 14 complete</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assumptions + Experiments -->
+            <div class="lg:col-span-4 premium-card border border-slate-800 rounded-3xl p-6">
+                <div class="font-semibold mb-3">Assumptions &amp; Split Tests</div>
+                
+                <div class="space-y-3 text-sm">
+                    <div class="bg-slate-900/50 p-3 rounded-2xl text-xs">
+                        <div class="flex justify-between"><span class="font-medium">ICP for Agentic Income → high-ticket creators</span> <span class="text-emerald-400">VALID</span></div>
+                        <div class="text-[10px] text-slate-500 mt-1">Test: 3 variants • 2,140 users • +41% conversion</div>
+                    </div>
+                    <div class="bg-slate-900/50 p-3 rounded-2xl text-xs">
+                        <div class="flex justify-between"><span class="font-medium">Premium visuals reduce churn 18%</span> <span class="text-amber-400">RUNNING</span></div>
+                        <div class="text-[10px] text-slate-500 mt-1">Variant B (G-Stack taste) leading</div>
+                    </div>
+                    <div class="bg-slate-900/50 p-3 rounded-2xl text-xs flex justify-between items-center">
+                        <span class="font-medium">Human + AI companion experience lifts NPS +29</span>
+                        <span class="px-2 py-0.5 bg-emerald-900 text-emerald-400 text-[10px] rounded">VALIDATED</span>
+                    </div>
+                </div>
+                
+                <div class="text-[10px] mt-4 text-amber-400 flex items-center gap-1">
+                    <i class="fa-solid fa-flask"></i> <span>23 experiments active across brands</span>
+                </div>
+            </div>
+
+            <!-- Agent Swarm Activity -->
+            <div class="lg:col-span-3 premium-card border border-slate-800 rounded-3xl p-6">
+                <div class="font-semibold mb-3 flex items-center gap-x-2">
+                    <span>Agent Swarm Activity</span>
+                    <span class="text-emerald-400 text-xs">(G-Stack + Queen)</span>
+                </div>
+                
+                <div class="space-y-2 text-xs">
+                    <div class="flex justify-between items-center"><div><span class="text-emerald-400">Product Queen</span> <span class="text-slate-400">— Arcanea</span></div><div class="font-mono text-[10px]">on /plan-ceo-review</div></div>
+                    <div class="flex justify-between items-center"><div><span class="text-sky-400">Designer</span> <span class="text-slate-400">— Agentic Income</span></div><div class="font-mono text-[10px]">generating visuals</div></div>
+                    <div class="flex justify-between items-center"><div><span class="text-violet-400">Companion Tester</span></div><div class="font-mono text-[10px]">human+AI journey • 4 loops</div></div>
+                    <div class="flex justify-between items-center"><div><span class="text-amber-400">G-Stack Review</span></div><div class="font-mono text-[10px]">/review + /qa running</div></div>
+                </div>
+                
+                <div class="mt-4 text-[10px] text-emerald-400">42 agents • 7 active specialists • 19 tasks in flight</div>
+            </div>
+
+            <!-- Roadmap + Goals -->
+            <div class="lg:col-span-12 premium-card border border-slate-800 rounded-3xl p-6 mt-1">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="font-semibold">Current Roadmap (Q1 2026)</div>
+                    <div class="text-xs bg-slate-900 px-3 py-1 rounded-2xl">12 goals • 7 on track</div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+                    <div class="bg-slate-900/40 p-4 rounded-2xl">
+                        <div class="font-medium">Q1 Goal 1</div>
+                        <div class="text-xs text-slate-400">Ship Agentic PD-OS v1 with G-Stack absorption</div>
+                        <div class="h-1.5 bg-emerald-900 rounded mt-2"><div class="h-1.5 w-[95%] bg-emerald-400 rounded"></div></div>
+                    </div>
+                    <div class="bg-slate-900/40 p-4 rounded-2xl">
+                        <div class="font-medium">Q1 Goal 2</div>
+                        <div class="text-xs text-slate-400">Unified dashboard live across 6 brands</div>
+                        <div class="h-1.5 bg-emerald-900 rounded mt-2"><div class="h-1.5 w-[68%] bg-emerald-400 rounded"></div></div>
+                    </div>
+                    <div class="bg-slate-900/40 p-4 rounded-2xl">
+                        <div class="font-medium">Q1 Goal 3</div>
+                        <div class="text-xs text-slate-400">Human+AI companion testing framework + feedback loops</div>
+                        <div class="h-1.5 bg-amber-900 rounded mt-2"><div class="h-1.5 w-[45%] bg-amber-400 rounded"></div></div>
+                    </div>
+                    <div class="bg-slate-900/40 p-4 rounded-2xl">
+                        <div class="font-medium">Q1 Goal 4</div>
+                        <div class="text-xs text-slate-400">Native image + infographic engine (anti-gravity + nano-banana + Codex)</div>
+                        <div class="h-1.5 bg-emerald-900 rounded mt-2"><div class="h-1.5 w-[82%] bg-emerald-400 rounded"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="px-8 py-6 text-[10px] text-slate-500 flex items-center justify-between border-t border-slate-800 mt-4">
+            <div>Interconnected with SIS memory • Agentic ops-hub L2 • Starlight Queen orchestration</div>
+            <div>Anti-slop • Premium taste • Evidence-backed • State-of-the-art</div>
+        </div>
+    </div>
+
+    <script>
+        function selectBrand(el, brand) {
+            document.querySelectorAll('.premium-card').forEach(c => c.classList.remove('active', 'border-amber-400/60'));
+            el.classList.add('active', 'border-amber-400/60');
+            
+            // In real version this would load brand-specific data, agents, roadmap
+            console.log('Switched to brand:', brand);
+            
+            // Fake update for demo
+            const header = document.querySelector('.heading');
+            if (header) header.innerHTML = `Agentic PD-OS • ${brand.toUpperCase()}`;
+        }
+        
+        // Keyboard support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/') {
+                e.preventDefault();
+                const firstCard = document.querySelector('.premium-card');
+                if (firstCard) firstCard.click();
+            }
+        });
+        
+        // Demo: simulate live agent activity
+        setInterval(() => {
+            const dots = document.querySelectorAll('.fa-robot, .fa-brain');
+            dots.forEach(d => {
+                d.classList.add('animate-pulse');
+                setTimeout(() => d.classList.remove('animate-pulse'), 800);
+            });
+        }, 4500);
+    </script>
+</body>
+</html>

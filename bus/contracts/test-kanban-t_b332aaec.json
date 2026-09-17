@@ -1,0 +1,36 @@
+{
+  "claimed_at": null,
+  "claimed_by": null,
+  "constraints": [
+    "no force push",
+    "surgical per AGENTS.md"
+  ],
+  "description": "",
+  "done_condition": {
+    "conditions": [],
+    "type": "and"
+  },
+  "evidence_refs": [],
+  "execution_status": "issued",
+  "expiry": "2026-08-22T23:10:33+00:00",
+  "issued_at": "2026-08-21T23:10:33+00:00",
+  "issuer": "yoga-book",
+  "machine_owner": "yoga-book",
+  "outcome_status": null,
+  "priority": "P1",
+  "repo_path_allowlist": [
+    "agentic-ops"
+  ],
+  "resource_budget": {
+    "max_cost_usd": 0.5,
+    "max_minutes": 30,
+    "max_tokens": 50000,
+    "models_allowed": [
+      "grok-4.5"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "source": "fleet_bus task-lease",
+  "task_id": "test-kanban-t_b332aaec",
+  "title": "Test lease impl"
+}

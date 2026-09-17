@@ -1,0 +1,61 @@
+{
+  "claimed_at": "2026-07-17T15:30:00Z",
+  "claimed_by": "c940",
+  "constraints": [
+    "no force push",
+    "no dirty wipe",
+    "register-boundary:neutral",
+    "4-fact git check before edit",
+    "surgical per AGENTS.md"
+  ],
+  "description": "In agentic-ops-hub define task lease, machine owner, repo/path allowlist, resource budget, expiry, done-condition, execution_status, outcome_status and evidence refs. Cross-machine SSOT only; no live private telemetry. (kanban t_b332aaec). Bus helpers implemented in fleet_bus.py",
+  "done_condition": {
+    "conditions": [
+      {
+        "path": "fleet/TASK-CONTRACTS.md",
+        "type": "file_exists"
+      },
+      {
+        "pattern": "feat(fleet): task-contract and receipt schema v1",
+        "type": "git_commit"
+      },
+      {
+        "local_id": "t_b332aaec",
+        "type": "kanban_done"
+      },
+      {
+        "path": "scripts/fleet_bus.py",
+        "type": "file_exists"
+      }
+    ],
+    "type": "and"
+  },
+  "evidence_refs": [
+    "fleet/TASK-CONTRACTS.md",
+    "fleet/bus/contracts/fleet-task-contract-schema-v1.json",
+    "kanban:t_b332aaec",
+    "scripts/fleet_bus.py:task-*"
+  ],
+  "execution_status": "running",
+  "expiry": "2026-08-23T00:00:00Z",
+  "issued_at": "2026-07-17T15:00:00Z",
+  "issuer": "command-center",
+  "machine_owner": "c940",
+  "outcome_status": null,
+  "priority": "P0",
+  "repo_path_allowlist": [
+    "agentic-ops"
+  ],
+  "resource_budget": {
+    "max_cost_usd": 0.5,
+    "max_minutes": 30,
+    "max_tokens": 50000,
+    "models_allowed": [
+      "grok-4.5"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "source": "kanban t_b332aaec + fleet/TASK-PACKETS.md + fleet_bus.py impl",
+  "task_id": "fleet-task-contract-schema-v1",
+  "title": "Engineer fleet task-contract and receipt schema v1"
+}

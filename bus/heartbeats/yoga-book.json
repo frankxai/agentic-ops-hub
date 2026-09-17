@@ -1,0 +1,9 @@
+{
+  "machine_id": "yoga-book",
+  "hostname": "Starlight",
+  "status": "live",
+  "role": "frontend-innovation",
+  "telegram_bot": "@Hermesyogabookbot",
+  "notes": "Hub GitOps quality lane active on verified branch agent/hermes/fleet-task-contract-v1. Observatory envelope da6438f6 is superseded by private-bus priority-1 1c8e7f46; C940 receipt pending. No peer heartbeat, identity, merge, deploy, force-push, or delete performed.",
+  "at": "2026-08-28T11:43:29+00:00"
+}

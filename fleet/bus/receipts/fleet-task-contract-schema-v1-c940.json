@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "fleet-task-contract-schema-v1",
+  "machine": "c940",
+  "receipt_id": "receipt-2026-08-22-schema-v1-impl",
+  "at": "2026-08-22T23:20:00Z",
+  "execution_status": "completed",
+  "outcome_status": "success",
+  "summary": "v1 schema + bus task-lease/claim/receipt/status implemented and tested in scripts/fleet_bus.py. Contract updated to running. Verified via task-status cmd. 4-fact git checked on agentic-ops-hub (frankxai origin). Cross-machine SSOT via git only. Child kanban t_bd2b6d9d for bridge ready. No private telemetry.",
+  "done_condition_met": [
+    "file_exists:fleet/TASK-CONTRACTS.md",
+    "file_exists:scripts/fleet_bus.py",
+    "python:task-lease,python:task-receipt,python:task-status",
+    "kanban:t_b332aaec"
+  ],
+  "evidence_refs": [
+    "fleet/TASK-CONTRACTS.md",
+    "fleet/bus/contracts/fleet-task-contract-schema-v1.json",
+    "fleet/bus/receipts/fleet-task-contract-schema-v1-c940.json",
+    "kanban:t_b332aaec",
+    "scripts/fleet_bus.py",
+    "bus/heartbeats/c940.json"
+  ],
+  "artifacts": [
+    {
+      "type": "file",
+      "path": "fleet/TASK-CONTRACTS.md"
+    },
+    {
+      "type": "file",
+      "path": "scripts/fleet_bus.py"
+    },
+    {
+      "type": "file",
+      "path": "fleet/bus/contracts/fleet-task-contract-schema-v1.json"
+    }
+  ],
+  "resource_used": {
+    "tokens": 12000,
+    "minutes": 25,
+    "cost_usd": 0.12
+  },
+  "next_actions": [
+    "update TASK-CONTRACTS.md verification",
+    "cross-ref docs",
+    "kanban complete for t_b332aaec",
+    "proceed to child t_bd2b6d9d bridge to Hermes kanban"
+  ],
+  "errors": []
+}

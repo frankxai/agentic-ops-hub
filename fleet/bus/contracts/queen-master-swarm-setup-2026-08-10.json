@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "queen-master-swarm-setup-2026-08-10",
+  "title": "Elevate Starlight Queen + Best-in-World Swarm Setup Process",
+  "description": "AGY 3.1 Pro (High) + 3.5 Flash council audit and implementation of Queen as Contract Orchestrator, executable admission gates, KG/memory boundaries, one-command swarm cockpit, and full 8-step human-gated process. Evolved 2026-08-19 7h God Mode: integrated Freedom & Extreme Mutual Expansion doctrine (sovereignty for self + all collaborators, dual-outcome contracts for mission + personal brand/income/expansion/empowerment, consent/revocation, portable value, mutual extreme growth, never hold talent down). Apply to all swarms including Japanese/precision high-discipline genius execution variants. Best-devs/genius standards, evidence-backed, BOUNDED constraints.",
+  "issuer": "hermes-queen-yogabook",
+  "issued_at": "2026-08-10T03:20:00+02:00",
+  "machine_owner": "yogabook",
+  "repo_path_allowlist": ["agentic-ops-hub/fleet/*", "agentic-ops-hub/docs/*"],
+  "resource_budget": {
+    "max_tokens": 200000,
+    "max_minutes": 120,
+    "max_cost_usd": 5.0,
+    "models_allowed": ["Gemini 3.1 Pro (High)", "Gemini 3.5 Flash (High)"]
+  },
+  "expiry": "2026-08-11T00:00:00+02:00",
+  "allowed_kg_mutations": false,
+  "allowed_memory_claims": false,
+  "done_condition": {
+    "type": "and",
+    "conditions": [
+      { "type": "receipt_exists", "worker_task": "queen-admission-gate" },
+      { "type": "receipt_exists", "worker_task": "swarm-setup-process" },
+      { "type": "file_exists", "path": "fleet/reports/queen-swarm-elevation-2026-08-10.md" },
+      { "type": "git_commit", "pattern": "feat(fleet): queen swarm elevation" }
+    ]
+  },
+  "priority": "P0",
+  "constraints": [
+    "no force push",
+    "no dirty wipe",
+    "surgical per AGENTS.md",
+    "one-agent-branch",
+    "phone-link-ban",
+    "BOUNDED storage",
+    "apply Freedom-Expansion doctrine"
+  ],
+  "source": "AGY council audit 2026-08-10 + 7h God Mode 2026-08-19 principles evolution",
+  "execution_status": "issued",
+  "outcome_status": null,
+  "claimed_by": null,
+  "claimed_at": null,
+  "evidence_refs": [],
+  "principles_evolution_2026-08-19": {
+    "doctrine_ref": "starlight-agent-config/core/doctrine/freedom-and-mutual-expansion.md",
+    "key_additions": [
+      "dual-outcome contracts (mission + collaborator expansion)",
+      "sovereignty, consent, empowerment",
+      "mutual extreme growth",
+      "precision/JP high-discipline variant"
+    ]
+  }
+}

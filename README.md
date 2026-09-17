@@ -66,6 +66,18 @@ This repo is also the **canonical map** of the agentic-income ecosystem — the 
 - **[`docs/AGENT-OPERATING-SYSTEM-STACK.md`](docs/AGENT-OPERATING-SYSTEM-STACK.md)** — how AGENTS.md, rules, hooks, skills, MCP, Hermes, OpenClaw, DeepAgents, Claude Code, and Codex map into the broader agent OS stack.
 - **[`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md)** — defense-in-depth for humans, agents, and wealth.
 - **[`docs/RED-BLUE-CHARTER.md`](docs/RED-BLUE-CHARTER.md)** — what red attacks, what blue defends, the cadence.
+- **[`docs/Agentic-Product-Development-OS.md`](docs/Agentic-Product-Development-OS.md)** — evidence-led product lifecycle and brand extensions.
+- **[`docs/GSTACK-PORTABLE-SKILL-PROJECTION.md`](docs/GSTACK-PORTABLE-SKILL-PROJECTION.md)** — proposal for portable specialist skills and runtime adapters.
+
+---
+
+## Product-development skills
+
+| Skill | Use when |
+|---|---|
+| [`agentic-product-development`](skills/agentic-product-development/SKILL.md) | Running the evidence-backed product lifecycle for a digital product or agentic service. |
+| [`arcanea-product-development`](skills/orchestration/arcanea-product-development/SKILL.md) | A product surface carries Arcanea lore, worldbuilding, academy, or premium narrative experience requirements. |
+| [`gencreator-product-development`](skills/orchestration/gencreator-product-development/SKILL.md) | A creator workflow, template, cohort, marketplace surface, or creator-facing product must prove practical leverage. |
 
 ---
 

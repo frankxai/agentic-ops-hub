@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "sample-jp-precision-swarm-2026-08-19",
+  "title": "Sample Japanese/Precision Swarm Contract (7h God Mode)",
+  "description": "High-discipline, genius-execution swarm run for Arcanea-tied creative or R&D output. Aligned with Freedom & Extreme Mutual Expansion principles.",
+  "issuer": "yogabook-queen-7h-godmode",
+  "issued_at": "2026-08-19T00:46:00Z",
+  "machine_owner": "yogabook",
+  "lane": "JP-Precision-Swarms",
+  "repo_path_allowlist": ["agentic-ops-hub/fleet", "starlight-agent-config/core/doctrine"],
+  "resource_budget": {
+    "max_tokens": 150000,
+    "max_minutes": 90,
+    "max_cost_usd": 5.0
+  },
+  "done_condition": {
+    "type": "and",
+    "conditions": [
+      {
+        "type": "file_exists",
+        "path": "fleet/docs/japanese-precision-swarms.md"
+      },
+      {
+        "type": "evidence",
+        "description": "Mission deliverable + collaborator expansion artifact (e.g., portfolio piece or skill receipt)"
+      }
+    ]
+  },
+  "constraints": [
+    "BOUNDED storage",
+    "dual-outcome mandatory: mission success + explicit collaborator growth",
+    "anti-slop gates, genius standards",
+    "Arcanea cultural precision and craftsmanship"
+  ],
+  "outcomes": {
+    "A_mission": "Produce high-precision deliverable with evidence (e.g., Arcanea scene, asset, or research synthesis).",
+    "B_collaborator_expansion": "Participants receive documented personal brand asset, skill receipt, portfolio credit, or income pathway progress."
+  },
+  "principles_alignment": "Sovereignty and agency preserved. Mutual extreme expansion: your growth fuels ours. Never hold talent down. Empower personal brands, income streams, and independence.",
+  "execution_status": "sample",
+  "evidence_refs": [
+    "fleet/docs/japanese-precision-swarms.md",
+    "fleet/docs/7h-godmode-lanes-2026-08-19.md",
+    "fleet/STARLIGHT-SWARM-DRIVER.md#section-11"
+  ]
+}

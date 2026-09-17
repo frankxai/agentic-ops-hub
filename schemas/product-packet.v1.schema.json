@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agentic One Product Packet v1",
+  "description": "Canonical thin-slice decision and delivery contract. One per canonical work ID. Maps to Outcome Pack / Income Asset.",
+  "type": "object",
+  "required": ["workId", "brand", "icp", "hypothesis", "scope", "metrics", "owners", "gates"],
+  "properties": {
+    "workId": { "type": "string", "description": "Canonical work identity shared across Hermes, Git, swarm, packets." },
+    "brand": { "type": "string", "enum": ["Starlight Intelligence", "Arcanea", "GenCreator", "Agentic Income", "Agentic Passive Income", "Reality Art Attack", "FrankX", "Other"] },
+    "lifecycle": { "type": "string", "enum": ["Discover", "Define", "Build", "Test", "Ship", "Learn"] },
+    "icp": { "type": "string" },
+    "offer": { "type": "string" },
+    "hypothesis": {
+      "type": "array",
+      "items": { "type": "object", "properties": { "id": {"type": "string"}, "statement": {"type": "string"}, "evidenceLevel": {"type": "string"} } }
+    },
+    "scope": { "type": "string", "description": "Thin slice description" },
+    "metrics": { "type": "object" },
+    "owners": { "type": "array", "items": { "type": "string" } },
+    "gates": {
+      "type": "object",
+      "properties": {
+        "tasteScore": { "type": "number", "minimum": 26 },
+        "evidenceCompleteness": { "type": "number", "minimum": 80 },
+        "humanGate": { "type": "boolean" }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "assumptionsLedger": { "type": "string" },
+        "experiments": { "type": "array", "items": { "type": "string" } },
+        "dashboardSection": { "type": "string" },
+        "sisMemory": { "type": "string" }
+      }
+    },
+    "stopCondition": { "type": "string" }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "7h-godmode-principles-swarm-evolution-2026-08-19",
+  "title": "7h God Mode Queen: Massive R&D + Deploy Agent Swarms (incl. Japanese/Precision) + Evolve with Freedom & Mutual Expansion Doctrine",
+  "description": "Yogabook Queen leads 7h session: Embed and activate Freedom & Extreme Mutual Expansion principles (sovereignty, empowerment of collaborators for personal brands/income/expansion, mutual growth, never hold down, genius execution for beautiful future) across swarm systems. Inspect and evolve existing infrastructure in agentic-ops-hub. Deploy/elevate agent swarms using STARLIGHT-SWARM-DRIVER, task packets, queen-master contracts. Define and integrate Japanese/precision swarms as high-discipline, genius-execution style (tied to Arcanea cultural precision). Apply to SIS/Arcanea/creator surfaces where scoped. Use god-mode best-devs standards: evidence-backed, dual-outcome contracts, anti-slop, premium gates. BOUNDED disk: no new worktrees. One agent per branch. Human gates for any production.",
+  "issuer": "yogabook-queen-command-center",
+  "issued_at": "2026-08-19T00:19:00Z",
+  "machine_owner": "yogabook",
+  "repo_path_allowlist": [
+    "agentic-ops-hub/fleet/*",
+    "agentic-ops-hub/docs/*",
+    "starlight-agent-config/core/doctrine/*"
+  ],
+  "resource_budget": {
+    "max_tokens": 500000,
+    "max_minutes": 420,
+    "max_cost_usd": 20.0,
+    "models_allowed": ["grok-4.5", "gemini-high", "opus"]
+  },
+  "expiry": "2026-08-19T08:00:00Z",
+  "allowed_kg_mutations": false,
+  "allowed_memory_claims": false,
+  "done_condition": {
+    "type": "and",
+    "conditions": [
+      {
+        "type": "file_exists",
+        "path": "queen/reports/7h-godmode-swarm-2026-08-19.md"
+      },
+      {
+        "type": "git_commit",
+        "pattern": "feat(swarm): 7h godmode principles evolution + deploy"
+      },
+      {
+        "type": "receipt_exists",
+        "worker_task": "principles-swarm-deploy"
+      }
+    ]
+  },
+  "priority": "P0",
+  "constraints": [
+    "BOUNDED storage - no new worktrees",
+    "4-fact git verify before any edit",
+    "apply Freedom-Expansion doctrine to all contracts/packets/driver",
+    "define Japanese/precision swarms as high-discipline genius style",
+    "dual-outcome: mission success + collaborator expansion",
+    "no production deploy/spend/credentials without human gate",
+    "evidence only - receipts, diffs, reports"
+  ],
+  "source": "User /starlight-queen 7h godmode trigger + principles 2026-08-19",
+  "execution_status": "issued",
+  "outcome_status": null,
+  "claimed_by": "yogabook-queen",
+  "claimed_at": "2026-08-19T00:20:00Z",
+  "evidence_refs": [
+    "queen/reports/7h-godmode-swarm-2026-08-19.md",
+    "starlight-agent-config/core/doctrine/freedom-and-mutual-expansion.md"
+  ]
+}
