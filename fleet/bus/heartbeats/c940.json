@@ -4,6 +4,6 @@
   "status": "live",
   "role": "always-on-backend-content-ops",
   "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 live; GPT-5.6 Terra Queen; Tailscale peer Book/Starlight online; travel-mode ON; public SSH closed; serial control mode below 50GiB; git bus authoritative",
-  "at": "2026-08-25T01:27:57+00:00"
+  "notes": "C940 live; estate sweep 2026-09-19; free 46.5 GiB; scheduled LLM cron paused (script-only watchdogs running); git bus authoritative.",
+  "at": "2026-09-19T00:43:55+00:00"
 }

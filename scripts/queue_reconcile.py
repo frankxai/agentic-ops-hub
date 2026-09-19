@@ -51,6 +51,24 @@ def heartbeat_is_fresh(
     return observed >= current - timedelta(hours=max_age_hours)
 
 
+RETIRED_STATUSES = frozenset({"retired", "decommissioned"})
+
+
+def is_retired(heartbeat: dict[str, Any] | None) -> bool:
+    """True when a machine has been deliberately taken out of the fleet.
+
+    Requires a parseable retired_at alongside the status so that an
+    unreachable machine cannot retire itself by falling silent.
+    """
+    if not heartbeat:
+        return False
+    if str(heartbeat.get("status", "")).lower() not in RETIRED_STATUSES:
+        return False
+    return _parse_time(str(heartbeat.get("retired_at", ""))) > datetime.min.replace(
+        tzinfo=timezone.utc
+    )
+
+
 def item_is_expired(item: dict[str, Any], *, now: datetime | None = None) -> bool:
     """True when an active item's declared TTL has elapsed.
 
