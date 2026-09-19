@@ -2,7 +2,15 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-09-19 (Antigravity · Quadruple Production Landing & Release Gate Healing Wave)
+**Last sweep:** 2026-09-19 (Antigravity · Starlight Protocol Attestation & Academy Multi-Agent Reconciliation Wave)
+
+**2026-09-19 Starlight Protocol Attestation & Academy Multi-Agent Reconciliation Wave (Antigravity):**
+- **Starlight Intelligence System PR #170 Landed (`Attest SIS's own SIP graph profile on every push to main`)**: Verified all 8 checks passed green (`conform`, `harness`, `protocol 18/20/22`, `design-contract`, `editorial-contract`, `Vercel`). Squash-merged to `main` at `2026-09-19T04:07:09Z`. Makes Sigstore signing real for SIS's own profile (`https://starlightintelligence.org/protocol/receipt/v0.1.0`), proving Starlight's self-attesting protocol standard.
+- **Starlight Intelligence Academy Reconciliation (PR #42, #43, #51)**:
+  - Confirmed PR #42 (`Build the Academy creative mission and living faculty portraits`) and PR #43 (`Let learners save, resume and recover Academy field practice`) landed on `main`.
+  - Reconciled with Claude Code's PR #51 (`Decision: the Antigravity Academy blueprint is not canon`). Solidified the canonical brand boundary: Starlight Academy is strictly sovereign delegation proven by deterministic receipts—NOT AI Architect Academy (which belongs to FrankX), free from inflationary paid attestations or credential theater.
+- **FrankX Production PR #717 Armed for Landing**: All guards passed green (`Media Guard`, `Web Interface Guidelines`, `design-contract`, `editorial-contract`, `Vercel` deploy completed). CI executing; auto-merge armed for squash into `main`.
+- **Machine & Estate Invariants**: Protected disk space and preserved dirty worktrees under enhance-never-erase doctrine. Register: Neutral.
 
 **2026-09-19 Quadruple Production Landing & Release Gate Healing Wave (Antigravity):**
 - **FrankX Prod PR #719 Landed (`data(ecosystem): update gencreator.ai entry to live status`)**: Decoupled ecosystem metadata from protected homepage surfaces per Contract Guard doctrine. All 8 checks passed green (`CI`, `Contract Guard`, `Media Guard`, `Merge Gate`, `design-contract`, `editorial-contract`, `Web Interface Guidelines`, `Vercel`). Squash-merged to `main` at `2026-09-19T00:44:58Z`.
