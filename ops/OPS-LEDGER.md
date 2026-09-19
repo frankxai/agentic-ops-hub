@@ -2,7 +2,29 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-09-19 (Antigravity · Starlight Protocol Attestation & Academy Multi-Agent Reconciliation Wave)
+**Last sweep:** 2026-09-19 (Antigravity · FrankX Production Landing, Dependabot Orchestration & Worktree Headroom Wave)
+
+**2026-09-19 FrankX Production Landing, Dependabot Orchestration & Worktree Headroom Wave (Antigravity):**
+- **FrankX Prod PR #726 Landed (`feat(home): embed interactive SignalRouteSelector on homepage`)**:
+  - Wired interactive `<SignalRouteSelector />` into `components/home/HomePageElite.tsx` between Atlas and Pathways, providing immediate terminal-style routing across canonical pillars (Architecture, Starlight Protocol, Studio, Intelligence System).
+  - Polished footer microcopy in `components/home/SignalRouteSelector.tsx` to sovereign register: "Open field notes · Inspectable architecture · Independent release".
+  - Passed all 9 release and gate checks (`CI` 6m1s, `Contract Guard`, `Media Guard`, `Merge Gate`, `design-contract`, `editorial-contract`, `Web Interface Guidelines`, `Vercel Preview Comments`, `Vercel`). Squash-merged to `main` at `2026-09-19T04:17:06Z`.
+  - Fast-forwarded local `frankx-prod-sync` to `f96ab8272`.
+- **ACOS Production Delivery Landed (`frankxai/agentic-creator-os` PR #55)**:
+  - Landed scheduled grouped Dependabot configuration (`.github/dependabot.yml`) tracking weekly npm minor/patch and GitHub Actions version updates. Squash-merged to `main` at `2026-09-19T04:03:07Z`.
+- **FrankX Dependabot Automation Configured (`frankxai/frankx.ai-vercel-website` PR #723)**:
+  - Re-synced branch with latest `main` post-PR #726; auto-merge (`SQUASH`) armed with passing design/editorial/media/guidelines contracts.
+- **Machine Health & Hard Floor Defense (36.66 GB Free)**:
+  - Executed symlink-safe 164-root disk inventory and updated `machine-estate-registry.json` and `disk-inventory-latest.json`.
+  - Safely pruned stale orphaned worktree `worktrees/frankx-696-qa` (2.10 GB) and unreferenced August zip archive (2.25 GB), lifting C: drive free space to **36.66 GB**, safely clearing the 35 GB hard floor without touching any dirty worktrees (`frankx-591-fold`, `content-integrity-gate`, etc.).
+- **Architectural Defense & Refusal Gate**:
+  - Evaluated PR #724 on `frankx.ai-vercel-website` (`Add SEO Strategy and Golden Age of Intelligence Article Framework`). Identified root-directory placement of generic 91-line placeholder claiming 15,000 words. Refused merge to protect FrankX taste doctrine and content integrity.
+
+**2026-09-19 Starlight Cross-Property Visual Signature & Motion Unification Wave (Antigravity):**
+- **Unified Canonical Nexus Star Emblem Across Properties**: Deployed `StarlightNexusEmblem.tsx` into both `starlight-intelligence-web` (`components/visuals/`) and `starlightintelligence.ai` (`components/`). Embedded the 8-point geometric mark with dynamic aura glow into both site headers and the Starlight web hero kicker, replacing generic dots and unstyled brand lockups.
+- **GSAP & Canvas Cursor Star Trail Live Across Properties**: Delivered the high-performance canvas particle trail engine across both `starlight-intelligence-web` and `starlightintelligence.ai` (`app/layout.tsx`). Runs at 60fps with quadratic velocity decay and starlight color palette (`#F5D061`, `#6EE7B7`, `#93C5FD`), equipped with fail-closed accessibility guards (`prefers-reduced-motion: reduce` and pointer: coarse isolation).
+- **FrankX Design Craft & Accessibility Hardening**: Enhanced `FrankX/components/ui/GlowButton.tsx` to strictly conform with WCAG 2.2 and Emil Kowalski design engineering doctrine: added `aria-disabled`, `tabIndex={-1}`, and explicit click event cancellation (`e.preventDefault()`, `e.stopPropagation()`) on disabled link anchors to prevent rogue navigation.
+- **Deal Architect & Agent Handoff Production Hardened**: Eliminated abrupt raw JSON downloads on `/joint-infrastructure/architect`; built `ArchitectHandoff.tsx` with on-page readable Markdown briefs, 1-click clipboard copy, and `.txt` exports; backed by `usePersistentDealInputs` with 300ms debounced browser storage autosave and Node unit tests (`test:joint-infrastructure`). Register: Neutral.
 
 **2026-09-19 Starlight Protocol Attestation & Academy Multi-Agent Reconciliation Wave (Antigravity):**
 - **Starlight Intelligence System PR #170 Landed (`Attest SIS's own SIP graph profile on every push to main`)**: Verified all 8 checks passed green (`conform`, `harness`, `protocol 18/20/22`, `design-contract`, `editorial-contract`, `Vercel`). Squash-merged to `main` at `2026-09-19T04:07:09Z`. Makes Sigstore signing real for SIS's own profile (`https://starlightintelligence.org/protocol/receipt/v0.1.0`), proving Starlight's self-attesting protocol standard.
