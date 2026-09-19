@@ -49,6 +49,7 @@ jobs:
             tests.test_token_planner \
             tests.test_cli_capacity \
             tests.test_night_runner \
+            tests.test_plan_limits \
             -v
 
       - name: Queue documents validate empty-active + no closed-PR actives
