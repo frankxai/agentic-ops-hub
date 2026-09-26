@@ -76,6 +76,7 @@ To keep the control plane singular and the ecosystem aligned:
 3. Link to this repo's docs when explaining ecosystem architecture
 4. Open PRs here for MCP strategy updates, protection-layer changes, or agent-stack revisions
 5. Use `starlight-command-center` for any human-facing dashboard or topology UI work
+6. Observability interconnect shared-field contract: [docs/OBS-INTERCONNECT.md](./OBS-INTERCONNECT.md) (Queen Wave 1-C)
 
 ---
 
