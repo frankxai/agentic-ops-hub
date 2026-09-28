@@ -45,6 +45,7 @@ jobs:
           python -m unittest \
             tests.test_queue_reconcile \
             tests.test_fleet_watch \
+            tests.test_estate_ci_watch \
             tests.test_fleet_control \
             tests.test_token_planner \
             tests.test_cli_capacity \
