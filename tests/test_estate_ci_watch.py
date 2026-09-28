@@ -64,6 +64,14 @@ class FindingsTests(unittest.TestCase):
         self.assertEqual(([], []), (findings, suspects))
 
 
+    def test_fixed_yaml_rename_clears_path_named_failure(self) -> None:
+        broken = run(1, 1, "failure", name=".github/workflows/ci.yml")
+        fixed = run(2, 27, "success", name="ci")
+        for r in (broken, fixed):
+            r["workflow_id"] = 42
+        self.assertEqual(([], []), find_findings("o/r", [broken, fixed], NOW, max_red_hours=24))
+
+
 class NeverStartedTests(unittest.TestCase):
     def test_budget_blocked_job_has_no_steps_and_no_runner(self) -> None:
         jobs = [

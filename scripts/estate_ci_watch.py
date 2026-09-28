@@ -69,10 +69,13 @@ def workflow_key(run: dict) -> str:
     # so a later successful update would never clear an earlier failure. Judge them
     # per ecosystem: directory lists change when dependabot.yml is regrouped, which
     # would otherwise leave a key that can never run again.
-    name = run.get("name") or str(run.get("workflow_id"))
+    # Everything else is keyed by workflow_id: a workflow whose YAML failed to parse
+    # runs under its file path, then under its real name once fixed, so a name key
+    # would keep the broken era's red run alive forever.
+    name = run.get("name") or ""
     if run.get("event") == "dynamic" and " in " in name:
         return "Dependabot " + name.split(" in ", 1)[0]
-    return name
+    return str(run.get("workflow_id") or name)
 
 
 def find_findings(
@@ -88,11 +91,12 @@ def find_findings(
 
     findings: list[str] = []
     suspects: list[int] = []
-    for name, wf_runs in sorted(by_workflow.items()):
+    for key, wf_runs in sorted(by_workflow.items()):
         start = red_streak_start(wf_runs)
         if start is None:
             continue
         latest_red = next(r for r in wf_runs if r.get("conclusion") in RED)
+        name = key if key.startswith("Dependabot ") else (wf_runs[0].get("name") or key)
         suspects.append(latest_red["id"])
         if start < now - timedelta(hours=max_red_hours):
             days = (now - start).total_seconds() / 86400
@@ -154,7 +158,7 @@ def main(argv: list[str] | None = None) -> int:
         full = repo["full_name"]
         branch = repo["default_branch"]
         try:
-            runs = get(f"/repos/{full}/actions/runs?branch={branch}&per_page=50", token)["workflow_runs"]
+            runs = get(f"/repos/{full}/actions/runs?branch={branch}&per_page=100", token)["workflow_runs"]
         except urllib.error.HTTPError as err:
             findings.append(f"{full}: could not read workflow runs (HTTP {err.code})")
             continue
