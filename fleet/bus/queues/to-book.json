@@ -6,12 +6,13 @@
   "priority": "P0",
   "connection": {
     "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
-    "status": "stale-unverified",
+    "status": "retired",
     "hostname": "Starlight",
     "telegram_bot": "@Hermesyogabookbot",
-    "note": "C940 must not forge YogaBook heartbeat. Fresh self-heartbeat required before remote dispatch."
+    "note": "Yoga Book retired 2026-09-19; no dispatch until it rejoins with a fresh self-heartbeat. C940 must not forge YogaBook heartbeat."
   },
-  "active": [
+  "active": [],
+  "historical": [
     {
       "id": "BOOK-HEARTBEAT-20260825",
       "title": "Publish Yoga Book self-heartbeat after verified tailnet join",
@@ -35,11 +36,10 @@
         "published origin/main JSON has fresh at timestamp and says Tailscale online",
         "C940 observes the exact main file; queue item marked done only after that"
       ],
-      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16.",
-      "status": "active"
-    }
-  ],
-  "historical": [
+      "evidence": "Tailscale C940 observed peer Starlight 100.83.206.47 Online at 2026-08-25T01:27Z; remote Book git heartbeat remains stale 2026-08-16. | TTL 24h elapsed 2026-08-26; Book heartbeat still 2026-08-16 as of 2026-09-19T00:43:55+00:00; machine retired rather than renewed.",
+      "status": "expired",
+      "expired_at": "2026-09-19T00:43:55+00:00"
+    },
     {
       "id": "P4",
       "status": "delivered",

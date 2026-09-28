@@ -31,7 +31,11 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from scripts.queue_reconcile import heartbeat_is_fresh, validate_queue_document
+from scripts.queue_reconcile import (
+    heartbeat_is_fresh,
+    is_retired,
+    validate_queue_document,
+)
 
 HEARTBEAT_DIR = REPO_ROOT / "fleet" / "bus" / "heartbeats"
 LEDGER_PATH = REPO_ROOT / "ops" / "OPS-LEDGER.md"
@@ -53,6 +57,13 @@ def check_heartbeats(now: datetime, max_age_hours: float) -> list[str]:
             beat = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError) as err:
             findings.append(f"{rel}: unreadable heartbeat ({err})")
+            continue
+        if is_retired(beat):
+            # A machine deliberately taken out of the fleet has no liveness
+            # duty, so its silence is expected rather than a finding. The
+            # switch stays armed: retirement must be declared in-repo with a
+            # retired_at stamp, so an unreachable machine cannot retire itself
+            # by simply going quiet.
             continue
         if not heartbeat_is_fresh(beat, max_age_hours=max_age_hours, now=now):
             findings.append(
