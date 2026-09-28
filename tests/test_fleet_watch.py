@@ -1,8 +1,13 @@
+import json
+import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from unittest import mock
 
+from scripts import fleet_watch
 from scripts.fleet_watch import LAST_SWEEP_RE
-from scripts.queue_reconcile import item_is_expired, validate_queue_document
+from scripts.queue_reconcile import is_retired, item_is_expired, validate_queue_document
 
 NOW = datetime(2026, 8, 14, 12, 0, tzinfo=timezone.utc)
 
@@ -66,6 +71,59 @@ class ValidateTtlTests(unittest.TestCase):
             "historical": [],
         }
         self.assertEqual([], validate_queue_document(doc, require_ttl=True, now=NOW))
+
+
+class RetiredHeartbeatTests(unittest.TestCase):
+    def test_retired_machine_is_retired(self) -> None:
+        beat = {"status": "retired", "retired_at": "2026-09-19T00:00:00Z"}
+        self.assertTrue(is_retired(beat))
+
+    def test_decommissioned_is_also_retired(self) -> None:
+        beat = {"status": "decommissioned", "retired_at": "2026-09-19T00:00:00Z"}
+        self.assertTrue(is_retired(beat))
+
+    def test_retired_without_stamp_is_not_retired(self) -> None:
+        # Silence must not retire a machine: without a declared retired_at the
+        # dead-man's switch keeps watching it.
+        self.assertFalse(is_retired({"status": "retired"}))
+
+    def test_live_machine_is_not_retired(self) -> None:
+        beat = {"status": "live", "at": "2026-09-19T00:00:00Z"}
+        self.assertFalse(is_retired(beat))
+
+    def test_retired_machine_is_skipped_by_heartbeat_check(self) -> None:
+        with tempfile.TemporaryDirectory(dir=fleet_watch.REPO_ROOT) as tmp:
+            beats = Path(tmp)
+            (beats / "retired-box.json").write_text(
+                json.dumps(
+                    {
+                        "machine_id": "retired-box",
+                        "status": "retired",
+                        "retired_at": "2026-08-16T00:00:00Z",
+                        "at": "2026-08-16T00:00:00Z",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with mock.patch.object(fleet_watch, "HEARTBEAT_DIR", beats):
+                self.assertEqual([], fleet_watch.check_heartbeats(NOW, 24))
+
+    def test_stale_live_machine_is_still_flagged(self) -> None:
+        with tempfile.TemporaryDirectory(dir=fleet_watch.REPO_ROOT) as tmp:
+            beats = Path(tmp)
+            (beats / "dark-box.json").write_text(
+                json.dumps(
+                    {
+                        "machine_id": "dark-box",
+                        "status": "live",
+                        "at": "2026-08-01T00:00:00Z",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with mock.patch.object(fleet_watch, "HEARTBEAT_DIR", beats):
+                findings = fleet_watch.check_heartbeats(NOW, 24)
+            self.assertTrue(any("dark-box" in f for f in findings), findings)
 
 
 class LedgerHeaderTests(unittest.TestCase):
