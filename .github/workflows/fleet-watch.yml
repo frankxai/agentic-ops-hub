@@ -25,6 +25,11 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # Heartbeats live on unprotected pulse/<machine> branches because main
+      # is PR-only; see scripts/fleet_watch.py.
+      - name: Fetch machine pulse branches
+        run: git fetch --no-tags --depth=1 origin '+refs/heads/pulse/*:refs/remotes/origin/pulse/*'
+
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:

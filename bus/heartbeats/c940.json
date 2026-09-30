@@ -1,9 +1,0 @@
-{
-  "machine_id": "c940",
-  "hostname": "DESKTOP-1B4ICID",
-  "status": "live",
-  "role": "always-on-backend-content-ops",
-  "telegram_bot": "@lenovostarlightbot",
-  "notes": "queue reconcile 2026-08-07; unattended dispatch blocked until queues terminal + book heartbeat fresh",
-  "at": "2026-08-07T15:45:23+00:00"
-}
