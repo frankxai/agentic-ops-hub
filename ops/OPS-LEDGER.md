@@ -2,13 +2,20 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-09-30 (repo-placement handover) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-09-30 (repo-placement handover, after applied AI lab landed on main) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-09-30 — applied AI lab (YogaBook)
+
+- Production on Railway perceptive-curiosity was rechecked and not changed. Langfuse 3.213.0 health returned 200, the trace API returned 401, LiteLLM has no public domain, and ClickHouse has no TCP proxy. MinIO and ParadeDB stayed stopped. Bill $82.74 spent, $119.28 estimated, hard cap $130, not over the limit. Full recap: `ops/sessions/2026-09-30-applied-ai-lab.md`.
+- Product record is [PR 72](https://github.com/frankxai/starlight-agent-config/pull/72) on `frankxai/starlight-agent-config`, base `agent/grok/repo-placement-gate`, head `922d94e`. Not merged to `main`. That `main` does not contain the progress ledger, and the lab branch is 38 commits ahead of it. Open door: [issue 73](https://github.com/frankxai/starlight-agent-config/issues/73).
+- `agentic-ops` #20 stays open. Follow-up comment: https://github.com/frankxai/agentic-ops/issues/20#issuecomment-5911937332. #94 stays a separate C940 plan.
+- This sweep is [PR 82](https://github.com/frankxai/agentic-ops-hub/pull/82), branch `agent/grok/applied-ai-lab-2026-09-30` from `origin/main` `51c57ba`. The session file is not `ops/sessions/2026-09-30.md` because that path is already on unmerged [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80). Primary checkout remains `agent/hermes/fleet-task-contract-v1`. Fronts dated 2026-09-19 and earlier, below, were not re-derived.
 
 ## 2026-09-30 — repo placement (YogaBook)
 
 - Product code is on `frankxai/starlight-agent-config` `main` as squash `0ac1d7e` ([PR 51](https://github.com/frankxai/starlight-agent-config/pull/51)). Files: `core/tools/repo_placement.py`, `core/tools/tests/test_repo_placement.py`. Full recap: `ops/sessions/2026-09-30.md`.
 - This repo is the progress git. `agentic-ops` is the ASPH protocol and was not edited. Linear was not synced. No placement issue existed, so none was opened. Issue 12 stays a different dossier.
-- Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is on `agent/grok/placement-handover-2026-09-30` from `origin/main` `51c57ba`, pushed as [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80). Not merged.
+- Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is on `agent/grok/placement-handover-2026-09-30`, opened from `origin/main` `51c57ba` and brought onto `065456a` after [PR 82](https://github.com/frankxai/agentic-ops-hub/pull/82) landed. Pushed as [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80). Not merged.
 - Still open: placement temp-dir parent; inventory class when a control-plane worktree sits outside the control-plane folder; 127 canonical checkouts left on unmerged branches; 16 local mains that are not a fast-forward of GitHub and were not pushed. Frank-gated moves (home twins, universe, third-party clones, payment-intelligence copies, duplicate canonical origins, `repos/.git`) stay in place.
 - Fronts dated 2026-09-19 and earlier, below, were not re-derived.
 

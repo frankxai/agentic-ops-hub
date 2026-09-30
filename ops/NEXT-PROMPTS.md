@@ -13,7 +13,7 @@
 
 ---
 
-> **2026-09-30:** one current prompt. The prompts below it were written in July and were not re-derived.
+> **2026-09-30:** two current prompts. The prompts below them were written in July and were not re-derived.
 
 ## Current
 
@@ -26,6 +26,18 @@ make the inventory blocker match the gate when a control-plane worktree
 lives outside the control-plane folder. Leave the 127 unmerged branches,
 the 16 non-fast-forward mains, repos/.git, and agent/grok/repo-placement-gate
 untouched. Do not change enforce_admins on any other repo.
+```
+
+**[applied AI lab · Railway and starlight-agent-config]** — finish the human doors, leave main alone
+```
+The lab is already running on Railway project perceptive-curiosity.
+Do not merge starlight-agent-config PR 72 into main. Its base is
+agent/grok/repo-placement-gate. Sign in to Langfuse at
+https://langfuse-web-production-840d.up.railway.app, create a project
+API key, and do not paste it. Then sign the Vercel CLI back in.
+Leave LiteLLM private until you say to publish it, and only after
+anonymous model calls are rejected. If the Railway estimate climbs
+through $125, say so. Do not change the $130 cap. Issue 73 tracks this.
 ```
 
 ## 🥇 Highest leverage first
