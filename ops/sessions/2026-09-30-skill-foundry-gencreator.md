@@ -29,3 +29,10 @@
 ## Local cleanup done
 
 Removed 20 merged/empty worktrees and 2 merged clones (+11 GiB); local excludes for tool folders in 5 repos; stray `$null` removed in 6 repos; live skill links repaired by restoring tracked copies.
+
+## Later on 2026-09-30
+
+- Frank ran the admin merges (#52, #54), renamed agentic-creator-skills -> gencreator-skills, merged #4. Install: `/plugin marketplace add frankxai/gencreator-skills`.
+- Live config: claude-code-config #22 (reconcile, Grok pass) merged; live checkout switched from codex/hook-context-review to main with the guarded procedure (old branch kept on origin).
+- Tier live: #24 (118 cold skills -> /command only, git-based skill age), #25 (untier 2 junctioned skills), #27 (discovery hook matches hidden tier). Turn-0 listing 28,841 -> 18,653 tokens. `foundry-skill-suggest.js` registered in ~/.claude/settings.json (UserPromptSubmit); settings backup kept in the session tmp.
+- Estate root: `docs/handoffs/land-rova.ps1` merged (#21, Grok pass after a personal-state fix). Frank runs it; agents are blocked from the root by verify-lane.

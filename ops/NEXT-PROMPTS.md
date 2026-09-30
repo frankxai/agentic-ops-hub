@@ -17,11 +17,9 @@
 
 **[F0 · claude-code-config + estate root]** — make the merged skill foundry live
 ```
-Review claude-code-config PR #22 (live config onto main): check the 6 .gitleaksignore
-entries, merge through tools/pr-gate.mjs, then run the guarded switch in the PR body so
-~/.claude loads from main. Next run `pwsh -File repos/claude-code-config/docs/handoffs/land-rova.ps1`
+Live config is on main with tier applied. Next run `pwsh -File repos/claude-code-config/docs/handoffs/land-rova.ps1`
 (dry run) and `-Apply` to land codex/rova; then apply docs/handoffs/skill-foundry-control-plane.patch
-and `node scripts/skill-foundry/foundry.mjs tier --apply`.
+then submit gencreator-skills and claude-skills-library at clau.de/plugin-directory-submission.
 ```
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
