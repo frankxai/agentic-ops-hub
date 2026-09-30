@@ -13,6 +13,22 @@
 
 ---
 
+> **2026-09-30:** one current prompt. The prompts below it were written in July and were not re-derived. [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80) also inserts a current prompt at this same place, so expect a small header conflict if both land.
+
+## Current
+
+**[applied AI lab · Railway and starlight-agent-config]** — finish the human doors, leave main alone
+```
+The lab is already running on Railway project perceptive-curiosity.
+Do not merge starlight-agent-config PR 72 into main. Its base is
+agent/grok/repo-placement-gate. Sign in to Langfuse at
+https://langfuse-web-production-840d.up.railway.app, create a project
+API key, and do not paste it. Then sign the Vercel CLI back in.
+Leave LiteLLM private until you say to publish it, and only after
+anonymous model calls are rejected. If the Railway estimate climbs
+through $125, say so. Do not change the $130 cap. Issue 73 tracks this.
+```
+
 ## 🥇 Highest leverage first
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
