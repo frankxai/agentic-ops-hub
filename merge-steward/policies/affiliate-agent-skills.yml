@@ -75,7 +75,8 @@ review:
 
 auto:
   - "docs/**"
-  - "**/*.md"
+  # not "**/*.md": agents obey markdown instruction files under many names;
+  # other markdown takes the default tier (two independent model reviews)
   - "content/**"
   - "public/images/**"
   - "tests/**"

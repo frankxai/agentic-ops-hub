@@ -226,7 +226,10 @@ class PathBypassTests(unittest.TestCase):
                 self.assertEqual("human", tier([f(path)]))
 
     def test_docs_only_is_auto(self) -> None:
-        self.assertEqual("auto", tier([f("docs/guide.md"), f("README.md")]))
+        self.assertEqual("auto", tier([f("docs/guide.md"), f("docs/api/ref.md")]))
+        # Round 6: markdown outside docs/ is no longer auto (agent instruction files hide there).
+        self.assertEqual("review", tier([f("docs/guide.md"), f("README.md")]))
+        self.assertEqual("human", tier([f("QWEN.md")]))
 
     def test_application_code_is_review(self) -> None:
         self.assertEqual("review", tier([f("docs/a.md"), f("app/page.tsx")]))
@@ -929,7 +932,9 @@ class OrchestrationTests(unittest.TestCase):
                  ".aider.conf.yml", ".aiderignore", ".continue/rules/a.md", ".roo/rules/a.md",
                  ".kilocode/rules/a.md", ".amazonq/rules/a.md", ".junie/guidelines.md", "apps/x/AGENTS.md",
                  "Claude.local.md", "sub/GEMINI.md", ".agent/workflows/a.md", ".agents/a.md", ".mcp.json",
-                 ".vscode/mcp.json", "packages/a/.windsurfrules", ".codex/notes.md", ".gemini/styleguide.md"]
+                 ".vscode/mcp.json", "packages/a/.windsurfrules", ".codex/notes.md", ".gemini/styleguide.md",
+                 "QWEN.md", "WARP.md", "docs/CRUSH.md", "AGENT.md", "CONVENTIONS.md", "Copilot.md", "llms.txt",
+                 ".github/prompts/x.prompt.md", "src/review.instructions.md"]
         for path in paths:
             with self.subTest(path=path):
                 self.assertEqual("human", tier([f(path)], PERMISSIVE))

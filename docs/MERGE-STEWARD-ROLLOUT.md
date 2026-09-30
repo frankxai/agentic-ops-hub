@@ -83,12 +83,12 @@ Every policy starts from [`_template.yml`](../merge-steward/policies/_template.y
 
 | Repo | Visibility | `human` additions | `review` | `auto` | Start |
 | --- | --- | --- | --- | --- | --- |
-| `affiliate-agent-skills` | public | `data/**/affiliate*.json` (skills are already human via the template) | `src/**`, `scripts/**` | `docs/**`, `examples/**`, `**/*.md` | Phase 1 pilot |
+| `affiliate-agent-skills` | public | `data/**/affiliate*.json` (skills are already human via the template) | `src/**`, `scripts/**` | `docs/**`, `examples/**` | Phase 1 pilot |
 | `arcanea-ai-app` | public | `supabase/**`, `apps/web/app/api/**`, `renovate.json` | `apps/**`, `packages/**`, `scripts/**` | `book/**`, `wiki/**`, `docs/**` (plain text only) | Phase 1 pilot |
-| `frankx.ai-vercel-website` | public | `app/api/**`, `.vercelignore`, `next.config.*`, `.env*.example` | `app/**`, `components/**`, `lib/**`, `scripts/**` | `content/**`, `docs/**`, `public/images/**`, `**/*.md(x)` | Phase 1 pilot |
+| `frankx.ai-vercel-website` | public | `app/api/**`, `.vercelignore`, `next.config.*`, `.env*.example` | `app/**`, `components/**`, `lib/**`, `scripts/**` | `content/**`, `docs/**`, `public/images/**` | Phase 1 pilot |
 | `Starlight-Intelligence-System` | public | `packages/**/receipts/**`, `**/attestation*/**`, `ATTESTATIONS.md`, `site/vercel.json` | `packages/**`, `site/**`, `src/**` | `docs/**`, `vault/**` public notes | after pilot |
 | `gencreator.ai` | private | `proxy.ts`, `instrumentation.ts`, `app/api/**`, `sentry.*` | `app/**`, `lib/**`, `packages/**` | `content/**`, `docs/**`, `brand/**`, `design/**` | after Actions billing fixed |
 | `agenticincome` | private | `products/**`, `packs/**/license*` | `app/**`, `components/**`, `lib/**` (agents/commands human via template) | `knowledge/**`, `docs/**`, `design/**` | after billing |
 | `go-agenticincome` | private | `app/api/**`, `data/**/links*` | `app/**`, `lib/**`, `scripts/**` | `docs/**`, `reports/**`, `design/**` | after billing |
 | `agenticpassiveincome` | private | `products/**`, `schemas/**`, pricing experiments | `app/**`, `components/**`, `lib/**` | `knowledge/**`, `docs/**`, `design/**` | after billing |
-| `arcanea-onchain` | public | `packages/**/deploy*/**`, `**/Anchor.toml`, `**/programs/**` (contracts already human) | `packages/**` | `docs/**`, `assets/**`, `**/*.md` | after pilot; contracts never leave human |
+| `arcanea-onchain` | public | `packages/**/deploy*/**`, `**/Anchor.toml`, `**/programs/**` (contracts already human) | `packages/**` | `docs/**`, `assets/**` | after pilot; contracts never leave human |

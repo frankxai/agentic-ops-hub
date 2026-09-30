@@ -137,7 +137,16 @@ AGENT_CONFIG_FILES = frozenset({
 # Any segment starting with one of these (`AGENTS.override.md`, `CLAUDE.local.md`,
 # `.aider.conf.yml`, `.aiderignore`, `.clinerules-code`, `.roorules-architect`).
 AGENT_CONFIG_PREFIXES = ("agents", "claude", "gemini", ".aider", ".clinerules", ".roorules", ".windsurfrules", ".cursorrules")
-AGENT_CONFIG_SUFFIXES = (".mdc",)
+AGENT_CONFIG_SUFFIXES = (".mdc", ".instructions.md", ".prompt.md", ".chatmode.md", ".agent.md")
+# Instruction files agents load by name (`QWEN.md`, `WARP.md`, `CRUSH.md`,
+# `AGENT.md`, `CONVENTIONS.md`, ...): any segment whose name before the first
+# dot is one of these is protected, whatever its extension.
+AGENT_DOC_STEMS = frozenset({
+    "agent", "agents", "claude", "gemini", "qwen", "warp", "crush", "grok", "kimi", "codex", "copilot",
+    "cursor", "windsurf", "cline", "roo", "kilo", "kilocode", "junie", "aider", "opencode", "goose", "amp",
+    "devin", "jules", "augment", "trae", "kiro", "droid", "factory", "cody", "tabnine", "continue", "zed",
+    "amazonq", "conventions", "llm", "llms", "ai", "rules", "instructions", "memory", "system-prompt",
+})
 # Directories that only matter under a `.github` segment (Copilot reads them).
 AGENT_CONFIG_GITHUB_DIRS = frozenset({"instructions", "prompts", "chatmodes", "agents", "copilot"})
 
@@ -152,6 +161,8 @@ def agent_config_hit(path: str) -> str | None:
             return f"agent config `{part}`"
         if part.endswith(AGENT_CONFIG_SUFFIXES):
             return f"agent rule file `{part}`"
+        if i == len(parts) - 1 and part.lstrip(".").split(".", 1)[0] in AGENT_DOC_STEMS:
+            return f"agent instruction file `{part}`"
         if part == ".github" and i + 1 < len(parts) and (
                 parts[i + 1] in AGENT_CONFIG_GITHUB_DIRS or parts[i + 1].startswith("copilot")):
             return f"agent config `.github/{parts[i + 1]}`"
