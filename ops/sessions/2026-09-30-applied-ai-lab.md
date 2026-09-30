@@ -8,7 +8,7 @@ Grok. YogaBook. Production was rechecked and left as it is. The product record i
 | :--- | :--- | :--- |
 | Product source | `frankxai/starlight-agent-config` | Lab policies and the progress item are on [PR 72](https://github.com/frankxai/starlight-agent-config/pull/72), head `922d94e`, base `agent/grok/repo-placement-gate` at `6e723ea`. Six files. Not merged to `main`. |
 | Open door | `frankxai/starlight-agent-config` #73 | https://github.com/frankxai/starlight-agent-config/issues/73 |
-| Agentic progress | `frankxai/agentic-ops-hub` | This file. Branch `agent/grok/applied-ai-lab-2026-09-30` from `origin/main` `51c57ba`. |
+| Agentic progress | `frankxai/agentic-ops-hub` | This file. [PR 82](https://github.com/frankxai/agentic-ops-hub/pull/82), branch `agent/grok/applied-ai-lab-2026-09-30` from `origin/main` `51c57ba`. |
 | Railway note | `frankxai/agentic-ops` #20 | Stays open. Follow-up: https://github.com/frankxai/agentic-ops/issues/20#issuecomment-5911937332 |
 | Separate plan | `frankxai/agentic-ops` #94 | C940 Podman LiteLLM and Langfuse. Not this Railway lab. Left open. |
 | Control plane | `C:/Users/frank/starlight` (`frankxai/starlight-command`, branch `codex/rova`) | Dirty. The two Postiz files stayed untracked. |
