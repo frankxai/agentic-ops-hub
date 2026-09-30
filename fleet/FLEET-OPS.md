@@ -93,6 +93,7 @@ See `fleet/TASK-PACKETS.md` — copy-paste goals for Hermes / Claude Code / Code
 | Path | Role |
 | --- | --- |
 | `fleet/clone-manifest.json` | SoT for machines, repos, prod targets |
+| `pulse/<machine>` branches | Live heartbeat (`heartbeat.json`, one force-pushed commit). Main is PR-only, so heartbeats never go there. Expected machines = `liveness` blocks in clone-manifest; `.github/workflows/fleet-watch.yml` alarms on a missing or stale pulse |
 | `fleet/last-inventory.json` | Latest inventory snapshot |
 | `fleet/last-sync.json` | Latest sync report |
 | `fleet/BACKUP-MIGRATION.md` | Backup + migration plan |

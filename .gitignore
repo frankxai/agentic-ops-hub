@@ -28,3 +28,8 @@ aoh-cleanup.bat
 
 # Generated host health snapshots (Hermes state is SoT)
 fleet/reports/topology-health-latest.json
+
+# Machine heartbeats publish to pulse/<machine> branches (scripts/fleet_bus.py
+# publish_pulse); local copies are runtime state and must never reach main.
+fleet/bus/heartbeats/
+bus/heartbeats/
