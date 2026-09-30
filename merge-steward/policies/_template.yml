@@ -12,9 +12,13 @@
 #     .gitattributes, .gitmodules, .env*, *.pem, *.key.
 #   * Symlinks, submodules, binary or oversized patches, incomplete file lists,
 #     non-canonical or non-NFC paths are always human.
-#   * Manifests/lockfiles are auto/review only for a verified Dependabot or
-#     Renovate PR that changes nothing but the named package's version.
-#     Otherwise human.
+#   * Manifests/lockfiles are auto/review only for a verified single-commit
+#     Dependabot/Renovate PR whose parsed files change nothing but the named
+#     package's version. Otherwise human.
+#   * Build/deploy entry points (setup.py, wrangler.*, vercel.json, Makefile,
+#     Dockerfile*, renovate config, toolchain pins) are always human.
+#   * Only plain text (md, txt, rst, adoc, csv) can be `auto`; any other file
+#     matching an `auto` glob is at least `review`.
 #   * default_tier never drops below `review`; numeric limits are clamped to
 #     the built-in ceilings (max_files 250, max_patch_lines 3000,
 #     max_diff_bytes 400000, daily_merge_cap 50).
@@ -69,6 +73,13 @@ human:
   # onchain
   - "contracts/**"
   - "**/*.sol"
+  # instructions other agents obey
+  - "**/SKILL.md"
+  - "**/skills/**"
+  - "**/prompts/**"
+  - "**/agents/**"
+  - "**/commands/**"
+  - "**/.claude-plugin/**"
 
 review:
   - "app/**"
@@ -91,7 +102,6 @@ review:
 auto:
   - "docs/**"
   - "**/*.md"
-  - "**/*.mdx"
   - "content/**"
   - "public/images/**"
   - "tests/**"

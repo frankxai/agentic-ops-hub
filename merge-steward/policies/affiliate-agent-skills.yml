@@ -45,6 +45,13 @@ human:
   # onchain
   - "contracts/**"
   - "**/*.sol"
+  # instructions other agents obey
+  - "**/SKILL.md"
+  - "**/skills/**"
+  - "**/prompts/**"
+  - "**/agents/**"
+  - "**/commands/**"
+  - "**/.claude-plugin/**"
   # repo-specific
   - "data/**/affiliate*.json"
 
@@ -69,7 +76,6 @@ review:
 auto:
   - "docs/**"
   - "**/*.md"
-  - "**/*.mdx"
   - "content/**"
   - "public/images/**"
   - "tests/**"

