@@ -22,6 +22,14 @@ Live config is on main with tier applied. Next run `pwsh -File repos/claude-code
 then submit gencreator-skills and claude-skills-library at clau.de/plugin-directory-submission.
 ```
 
+**[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
+```
+In repos/starlight-memory on main: when `pp preflight --workload build` allows, run `pnpm i`
+(adds @hono/node-server so cloud-gateway tests pass, and @huggingface/transformers). Then
+`node eval/memory-recall.mjs --set all --gate` and compare hybrid vs lexical on the 4 misses.
+Work the 9 items in <vault>/review/queue.md with Frank; each item names its action.
+```
+
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
 ```
 The 28 new articles (Batches A/B/C) have no links to gencreator.ai. Audit every
