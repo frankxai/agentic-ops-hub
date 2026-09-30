@@ -1,6 +1,6 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-> Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
+> Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
 **Last sweep:** 2026-09-30 (repo-placement handover) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
