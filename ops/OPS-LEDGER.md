@@ -8,7 +8,7 @@
 
 - Product code is on `frankxai/starlight-agent-config` `main` as squash `0ac1d7e` ([PR 51](https://github.com/frankxai/starlight-agent-config/pull/51)). Files: `core/tools/repo_placement.py`, `core/tools/tests/test_repo_placement.py`. Full recap: `ops/sessions/2026-09-30.md`.
 - This repo is the progress git. `agentic-ops` is the ASPH protocol and was not edited. Linear was not synced. No placement issue existed, so none was opened. Issue 12 stays a different dossier.
-- Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is on `agent/grok/placement-handover-2026-09-30` from `origin/main` `51c57ba`.
+- Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is on `agent/grok/placement-handover-2026-09-30` from `origin/main` `51c57ba`, pushed as [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80). Not merged.
 - Still open: placement temp-dir parent; inventory class when a control-plane worktree sits outside the control-plane folder; 127 canonical checkouts left on unmerged branches; 16 local mains that are not a fast-forward of GitHub and were not pushed. Frank-gated moves (home twins, universe, third-party clones, payment-intelligence copies, duplicate canonical origins, `repos/.git`) stay in place.
 - Fronts dated 2026-09-19 and earlier, below, were not re-derived.
 
