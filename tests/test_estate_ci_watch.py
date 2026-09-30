@@ -72,6 +72,18 @@ class FindingsTests(unittest.TestCase):
         self.assertEqual(([], []), find_findings("o/r", [broken, fixed], NOW, max_red_hours=24))
 
 
+    def test_deleted_workflow_red_run_is_ignored(self) -> None:
+        gone = run(1, 1, "failure", name="Deploy")
+        gone["workflow_id"] = 7
+        live = run(2, 1, "failure", name="CI")
+        live["workflow_id"] = 8
+        dependabot = run(3, 1, "failure", name="npm_and_yarn in / for qs - Update #1")
+        dependabot.update(event="dynamic", workflow_id=99)
+        findings, _ = find_findings("o/r", [gone, live, dependabot], NOW, max_red_hours=24, live_workflow_ids={8})
+        self.assertEqual(2, len(findings))
+        self.assertFalse(any("'Deploy'" in f for f in findings))
+
+
 class NeverStartedTests(unittest.TestCase):
     def test_budget_blocked_job_has_no_steps_and_no_runner(self) -> None:
         jobs = [
