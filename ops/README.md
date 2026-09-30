@@ -33,3 +33,7 @@ Or ask: "sweep my sessions and update the ledger." At session end, it:
 3. Appends `sessions/<today>.md`, refreshes `OPS-LEDGER.md` + `NEXT-PROMPTS.md`.
 4. Mirrors to Obsidian; syncs changed open items to Linear if asked.
 5. Commits + pushes.
+
+## Who suggests it
+
+Any harness that finishes a slice suggests this sweep in its closing reply, then writes it when the checkout is free. The suggestion names two saves: this ledger, and the product repo's existing GitHub issue. Open a GitHub issue only when the slice is still open and has none. A merged slice with no issue stays in the session file. Linear stays archive unless Frank asks. The primary checkout of this repo is often another harness's branch; use a worktree from `origin/main` rather than committing onto that branch.
