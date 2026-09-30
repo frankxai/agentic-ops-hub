@@ -102,6 +102,27 @@ PROTECTED = (
     "**/.node-version",
     "**/.python-version",
     "**/.tool-versions",
+    "**/runtime.txt",
+    "**/constraints*.txt",
+    "**/CMakeLists.txt",
+    "**/*.cmake",
+    "**/meson.build",
+    "**/BUILD",
+    "**/BUILD.bazel",
+    "**/WORKSPACE*",
+    "**/build.gradle*",
+    "**/settings.gradle*",
+    "**/pom.xml",
+    "**/conf.py",
+    # executable scripts: which of them CI or a deploy runs is repo-specific,
+    # so none of them is ever machine-merged
+    "**/*.sh",
+    "**/*.bash",
+    "**/*.zsh",
+    "**/*.ps1",
+    "**/*.psm1",
+    "**/*.bat",
+    "**/*.cmd",
 )
 # The only files that can be `auto`: text nothing executes or obeys.
 INERT_EXTENSIONS = {"md", "txt", "rst", "adoc", "csv"}
@@ -408,12 +429,6 @@ LINE_MANIFEST = {
     "requirements": re.compile(r"^\s*(?P<name>[A-Za-z0-9][A-Za-z0-9._-]*)\s*(?P<ver>==\s*[0-9][\w.+-]*)\s*$"),
     "go.mod": re.compile(r"^\s*(?:require\s+)?(?P<name>[A-Za-z0-9][\w./-]*)\s+(?P<ver>v\d[\w.+-]*)(?:\s*//\s*indirect)?\s*$"),
 }
-# Lockfiles checked line by line (formats without a stable parser here). They
-# can reach `review` at most: two reviewers, never a single-review auto merge.
-LINE_LOCKFILES = {"pnpm-lock.yaml", "yarn.lock", "go.sum"}
-LOCK_LINE_OK = re.compile(
-    r"^\s*(?:(?:\"?version\"?\s*[:=]?\s*\"?[\w.+()@/-]+\"?,?)|(?:\"?integrity\"?\s*[:=]?\s*\"?sha\d+-[A-Za-z0-9+/=]+\"?,?)|"
-    r"(?:resolution:\s*\{integrity:\s*sha\d+-[A-Za-z0-9+/=]+\})|(?:specifier:\s*[\^~]?[\w.+-]+))\s*$")
 
 
 def bump_level(old: str, new: str) -> str:
@@ -493,27 +508,25 @@ def package_json_change(path: str, base_text, head_text, name: str) -> tuple[str
     return found
 
 
-def package_lock_change(path: str, base_text, head_text, name: str) -> None:
+def package_lock_change(path: str, base_text, head_text, name: str) -> set:
     """package-lock v2/v3: only the bumped package's own entries and the root
     spec for it may change; no package may appear or disappear; tarballs must
     come from registry.npmjs.org under that package's name."""
     old, new = _json(base_text, f"{path} (base)"), _json(head_text, f"{path} (head)")
     if not isinstance(old, dict) or not isinstance(new, dict) or set(old) != set(new):
         raise DepError(f"{path}: top-level keys changed")
-    if old.get("lockfileVersion") not in (2, 3) or new.get("lockfileVersion") != old.get("lockfileVersion"):
-        raise DepError(f"{path}: only lockfileVersion 2/3 is checked")
+    # v2 also carries a legacy `dependencies` tree that older npm clients
+    # install from; only v3 (packages map only) is verified.
+    if old.get("lockfileVersion") != 3 or new.get("lockfileVersion") != 3 or "dependencies" in old or "dependencies" in new:
+        raise DepError(f"{path}: only lockfileVersion 3 is verified")
     for key in old:
-        if key not in ("packages", "dependencies") and old[key] != new[key]:
+        if key != "packages" and old[key] != new[key]:
             raise DepError(f"{path}: `{key}` changed")
-    if old.get("lockfileVersion") == 2 and old.get("dependencies") != new.get("dependencies"):
-        # v2 duplicates the tree in a legacy section; accept only the named package there too.
-        legacy_old, legacy_new = old.get("dependencies") or {}, new.get("dependencies") or {}
-        if set(legacy_old) != set(legacy_new) or [k for k in legacy_old if legacy_old[k] != legacy_new[k]] != [name]:
-            raise DepError(f"{path}: legacy `dependencies` changes more than {name!r}")
     pk_old, pk_new = old.get("packages") or {}, new.get("packages") or {}
     if set(pk_old) != set(pk_new):
         raise DepError(f"{path}: packages added or removed (transitive changes are a human call)")
     suffix = f"node_modules/{name}"
+    locked = set()
     for key in pk_old:
         a, b = pk_old[key], pk_new[key]
         if a == b:
@@ -524,8 +537,8 @@ def package_lock_change(path: str, base_text, head_text, name: str) -> None:
             for field in a:
                 if a[field] == b[field]:
                     continue
-                if field not in NPM_DEP_SECTIONS or set(a[field]) != set(b[field]) or \
-                        [k for k in a[field] if a[field][k] != b[field][k]] != [name]:
+                if (field not in NPM_DEP_SECTIONS or set(a[field]) != set(b[field])
+                        or [k for k in a[field] if a[field][k] != b[field][k]] != [name]):
                     raise DepError(f"{path}: root `{field}` changes more than {name!r}")
             continue
         if not (key == suffix or key.endswith("/" + suffix)):
@@ -537,30 +550,10 @@ def package_lock_change(path: str, base_text, head_text, name: str) -> None:
         expected = f"https://registry.npmjs.org/{name}/-/{name.rsplit('/', 1)[-1]}-{b.get('version')}.tgz"
         if resolved != expected:
             raise DepError(f"{path}: `{key}` resolves to {resolved!r}, expected the npm registry tarball")
-
-
-def line_lockfile_change(path: str, patch: str, name: str) -> None:
-    """Every hunk mentions the package and every changed line is the package
-    itself or a version/integrity/specifier line; no escapes, no URLs except
-    the public registry path of that package."""
-    if not isinstance(patch, str) or not patch:
-        raise DepError(f"{path}: patch unavailable")
-    hunks = re.split(r"(?m)^@@[^\n]*@@[^\n]*$", patch)[1:]
-    if not hunks:
-        raise DepError(f"{path}: no hunks")
-    for hunk in hunks:
-        if name not in hunk:
-            raise DepError(f"{path}: a hunk does not mention {name!r} (transitive change)")
-    removed, added = _changed_lines(patch)
-    for line in removed + added:
-        if "\\" in line:
-            raise DepError(f"{path}: escape sequence in a changed line")
-        for url in re.findall(r"[a-z][a-z0-9+.-]*:[^\s\"',)]+", line, re.IGNORECASE):
-            parts = urllib.parse.urlsplit(url)
-            if parts.scheme != "https" or (parts.hostname or "") not in REGISTRY_HOSTS or f"/{name}/" not in parts.path:
-                raise DepError(f"{path}: reference outside the registry path of {name!r}")
-        if name not in line and not LOCK_LINE_OK.match(line):
-            raise DepError(f"{path}: changed line is not about {name!r}: `{line.strip()[:80]}`")
+        locked.add(str(b.get("version")))
+    if not locked:
+        raise DepError(f"{path}: the lockfile does not change {name!r}")
+    return locked
 
 
 def _line_manifest_change(path: str, patch: str, name: str) -> tuple[str, str]:
@@ -603,7 +596,7 @@ def dependency_verdict(snapshot: dict, dep_files: list[dict]) -> tuple[str, str]
         return "human", "title is not a single-package bump (grouped or unrecognised)"
     name = title["name"]
     versions = None
-    line_lockfile = False
+    locked: set = set()
     try:
         for f in dep_files:
             path, base = f["filename"], _basename(f["filename"])
@@ -612,11 +605,7 @@ def dependency_verdict(snapshot: dict, dep_files: list[dict]) -> tuple[str, str]
             if base == "package.json":
                 v = package_json_change(path, f.get("base_text"), f.get("head_text"), name)
             elif base in ("package-lock.json", "npm-shrinkwrap.json"):
-                package_lock_change(path, f.get("base_text"), f.get("head_text"), name)
-                continue
-            elif base in LINE_LOCKFILES:
-                line_lockfile_change(path, f.get("patch"), name)
-                line_lockfile = True
+                locked |= package_lock_change(path, f.get("base_text"), f.get("head_text"), name)
                 continue
             elif base == "go.mod" or re.fullmatch(r"requirements[\w.-]*\.txt", base):
                 v = _line_manifest_change(path, f.get("patch"), name)
@@ -630,12 +619,13 @@ def dependency_verdict(snapshot: dict, dep_files: list[dict]) -> tuple[str, str]
     if versions is None:
         return "human", "lockfile-only change: nothing ties it to the named package"
     old, new = versions
-    if title.get("to") and title["to"].lstrip("v") not in new:
+    new_base = new.lstrip("^~<>=v ")
+    if title.get("to") and title["to"].lstrip("v") != new_base:
         return "human", "title version does not match the manifest"
+    if locked and locked != {new_base}:
+        return "human", f"locked version(s) {sorted(locked)} do not match the manifest ({new})"
     level = bump_level(old, new)
     tier = "auto" if level in ("patch", "minor") else "review"
-    if line_lockfile:
-        tier = _max_tier(tier, "review")
     return tier, f"verified {login} {level} bump of {name} ({old} -> {new})"
 
 
@@ -1111,14 +1101,15 @@ def checks_state(gh: GitHub, repo: str, sha: str) -> str:
     """success | pending | failure for every check run and commit status on sha."""
     runs = gh.paginate(f"repos/{repo}/commits/{sha}/check-runs", key="check_runs")
     status = gh.get(f"repos/{repo}/commits/{sha}/status")
-    statuses = status.get("statuses") or []
-    if not runs and not statuses:
+    # The combined `state` covers every context; `statuses` is only a page.
+    combined = status.get("state") if status.get("total_count") else None
+    if not runs and combined is None:
         return "pending"  # no CI reported yet: never merge on silence
-    if any(r["status"] != "completed" for r in runs) or any(s["state"] == "pending" for s in statuses):
+    if combined in ("failure", "error") or any(r["status"] == "completed" and r["conclusion"] not in ("success", "neutral", "skipped") for r in runs):
+        return "failure"
+    if combined == "pending" or any(r["status"] != "completed" for r in runs):
         return "pending"
-    if all(r["conclusion"] in ("success", "neutral", "skipped") for r in runs) and all(s["state"] == "success" for s in statuses):
-        return "success"
-    return "failure"
+    return "success"
 
 
 # --------------------------------------------------------------------------
@@ -1226,16 +1217,45 @@ class Steward:
 
     # ---- revocation: the steward never leaves an approval standing ----
     def withdraw(self, repo: str, pr: dict, reason: str) -> int:
+        """Dismiss every approval of ours on the PR, then disarm auto-merge.
+        Dismissal comes first and each step is attempted even if an earlier
+        one fails; the first error is raised afterwards (the run fails and an
+        incident pauses the steward)."""
         mine = [r for r in self.app.paginate(f"repos/{repo}/pulls/{pr['number']}/reviews")
                 if r.get("state") == "APPROVED" and same_bot(r.get("user"), self.login)]
-        if mine:
-            current = self.app.get(f"repos/{repo}/pulls/{pr['number']}")
-            if current.get("auto_merge") and current.get("state") == "open":
-                self.app.graphql(DISABLE_AUTO_MERGE, {"id": current["node_id"]})
+        errors: list[BaseException] = []
         for review in mine:
-            self.app.request("PUT", f"repos/{repo}/pulls/{pr['number']}/reviews/{review['id']}/dismissals",
-                             {"message": f"Merge Steward: {reason}", "event": "DISMISS"})
+            try:
+                self.app.request("PUT", f"repos/{repo}/pulls/{pr['number']}/reviews/{review['id']}/dismissals",
+                                 {"message": f"Merge Steward: {reason}", "event": "DISMISS"})
+            except Exception as err:
+                errors.append(err)
+        if mine:
+            try:
+                current = self.app.get(f"repos/{repo}/pulls/{pr['number']}")
+                if current.get("auto_merge") and current.get("state") == "open":
+                    self.app.graphql(DISABLE_AUTO_MERGE, {"id": current["node_id"]})
+            except Exception as err:
+                errors.append(err)
+        if errors:
+            raise errors[0]
         return len(mine)
+
+    def sweep(self, reason: str) -> int:
+        since = self.now - timedelta(days=14)
+        revoked = 0
+        for repo in [r["full_name"] for r in self.app.paginate("installation/repositories", key="repositories")]:
+            pulls = self.app.paginate(f"repos/{repo}/pulls?state=open")
+            for closed in self.app.paginate(f"repos/{repo}/pulls?state=closed&sort=updated&direction=desc", limit=300):
+                if _ts(closed["updated_at"]) < since:
+                    break
+                if not closed.get("merged_at"):
+                    pulls.append(closed)
+            count = sum(self.withdraw(repo, pr, reason) for pr in pulls)
+            if count:
+                self.log(f"{repo}: withdrew {count} standing steward approval(s)")
+            revoked += count
+        return revoked
 
     # ---- per-PR ----
     def sticky(self, repo: str, number: int) -> dict | None:
@@ -1317,6 +1337,9 @@ class Steward:
             return abort("kill switch turned on during the run")
         if self.open_incidents():
             return abort("an incident opened during the run")
+        stale = self.stale_reason()
+        if stale:
+            return abort(f"not approving: {stale}")
         total = sum(self.merged_24h(t["repo"]) for t in self.cfg["targets"])
         if total >= min(cls["daily_merge_cap"], self.cfg["global_daily_cap"]):
             return abort(f"daily merge cap reached ({total})")
@@ -1365,12 +1388,18 @@ class Steward:
         repo = target["repo"]
         owner, name = repo.split("/")
         commits = self.app.get(f"repos/{repo}/commits?sha={urllib.parse.quote(default_branch)}&per_page=20")
-        if not commits or checks_state(self.app, repo, commits[0]["sha"]) != "failure":
+        states = []
+        for c in commits:  # newest first, back to the last green commit
+            states.append(checks_state(self.app, repo, c["sha"]))
+            if states[-1] == "success":
+                break
+        # A pending tip must not hide a red commit underneath it.
+        if "failure" not in states:
             return
-        suspects, parent_green = [], False
-        for i, c in enumerate(commits):
-            if i and checks_state(self.app, repo, c["sha"]) == "success":
-                parent_green = i == 1
+        tip_state = states[0]
+        suspects, parent_green = [], len(states) == 2 and states[1] == "success"
+        for i, c in enumerate(commits[: len(states)]):
+            if states[i] == "success":
                 break
             node = self.app.graphql(COMMIT_PR_QUERY, {"owner": owner, "name": name, "oid": c["sha"]})["repository"]["object"]
             for p in node["associatedPullRequests"]["nodes"]:
@@ -1384,11 +1413,11 @@ class Steward:
             if marker in (issue.get("body") or ""):
                 return
         numbers = ", ".join(f"#{n}" for _, n, _ in suspects)
-        if parent_green and suspects[0][0] == tip and suspects[0][2] == 1:
+        if tip_state == "failure" and parent_green and suspects[0][0] == tip and suspects[0][2] == 1:
             revert = self.open_revert(repo, tip, commits[1]["sha"], suspects[0][1], default_branch)
         else:
             revert = "not opened (red spans several commits) — revert by hand"
-        body = "\n".join([marker, f"`{repo}` {default_branch} is red at `{tip[:12]}`; steward merges since the last green commit: {numbers}.",
+        body = "\n".join([marker, f"`{repo}` {default_branch} has a red commit below `{tip[:12]}`; steward merges since the last green commit: {numbers}.",
                           "", f"- Revert PR: {revert}",
                           "", "**The steward merges nothing anywhere while this issue is open.** Close it once main is green."])
         self.hub.request("POST", f"repos/{HUB_REPO}/issues",
@@ -1417,6 +1446,10 @@ class Steward:
             self.log(f"not acting: {stale}")
             return []
         kill = self.kill_active()
+        # Every run, in every mode: an approval of ours on any open or recently
+        # closed PR in any repo the App can reach (targets or not) is a
+        # leftover — we merge in the same breath — so withdraw it.
+        self.sweep("kill switch" if kill else "standing approval withdrawn")
         incidents = len(self.open_incidents())
         merged = {"total": 0}
         live_any = self.global_mode == "live" and any(t["mode"] == "live" for t in self.cfg["targets"])
@@ -1428,15 +1461,6 @@ class Steward:
             mode = "live" if (self.global_mode == "live" and target["mode"] == "live") else "shadow"
             default_branch = self.app.get(f"repos/{repo}")["default_branch"]
             pulls = self.app.paginate(f"repos/{repo}/pulls?state=open&sort=created&direction=asc")
-            recently_closed = [p for p in self.app.get(f"repos/{repo}/pulls?state=closed&sort=updated&direction=desc&per_page=30")
-                               if not p.get("merged_at")]
-            # Every run, in every mode: an approval of ours on an open (or
-            # closed-but-reopenable) PR is a leftover — we merge in the same
-            # breath — so withdraw it.
-            revoked = sum(self.withdraw(repo, pr, "kill switch" if kill else "standing approval withdrawn")
-                          for pr in pulls + recently_closed)
-            if revoked:
-                self.log(f"{repo}: withdrew {revoked} standing steward approval(s)")
             if kill:
                 continue
             if mode == "live":
@@ -1581,12 +1605,13 @@ def main(argv: list[str] | None = None) -> int:
 
     env = os.environ
     app_token, hub_token = env.get("APP_TOKEN", ""), env.get("HUB_TOKEN", "")
-    if not app_token or not hub_token:
-        print("APP_TOKEN/HUB_TOKEN missing — nothing to do (fail closed)", file=sys.stderr)
+    login = env.get("STEWARD_LOGIN", "")
+    if not app_token or not hub_token or not re.fullmatch(r"[a-z0-9][a-z0-9-]*\[bot\]", login):
+        print("APP_TOKEN/HUB_TOKEN/STEWARD_LOGIN missing or malformed — nothing to do (fail closed)", file=sys.stderr)
         return 1
     steward = Steward(GitHub(app_token), GitHub(hub_token), config, policies,
                       mode=env.get("MERGE_STEWARD_MODE", ""), kill_var=env.get("MERGE_STEWARD", ""),
-                      steward_login=env.get("STEWARD_LOGIN") or "frankx-steward[bot]",
+                      steward_login=login,
                       hub_sha=env.get("GITHUB_SHA", "unknown"), reviewer=make_reviewer(env),
                       run_attempt=env.get("GITHUB_RUN_ATTEMPT", "1"))
     results = steward.run(digest=args.digest)

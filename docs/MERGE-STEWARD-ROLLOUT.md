@@ -7,7 +7,7 @@ Design: [`MERGE-STEWARD.md`](MERGE-STEWARD.md). Each phase has an exit test; not
 Agents cannot do these steps: they create credentials, grant permissions, or change settings. **Nothing is added to the target repos** — no workflow, no policy, no secret.
 
 1. **Create the `frankx-steward` GitHub App** (https://github.com/settings/apps/new, account `frankxai`):
-   - name `frankx-steward` (if taken, pick another and set hub variable `MERGE_STEWARD_LOGIN` to `<name>[bot]`); homepage `https://github.com/frankxai/agentic-ops-hub`; **Webhook: Active off**;
+   - name `frankx-steward` (if taken, any name works — the workflow reads the App's identity from its token); homepage `https://github.com/frankxai/agentic-ops-hub`; **Webhook: Active off**;
    - **Repository permissions**: Contents *Read & write*, Pull requests *Read & write*, Checks *Read*, Commit statuses *Read*, Metadata *Read*. Everything else *No access* — in particular **no Workflows, Administration, Secrets, Actions, Environments**. No organisation/account permissions;
    - *Only on this account* → Create. Copy the **Client ID** (`Iv23…`); **Generate a private key** (a `.pem` downloads).
 2. **Install the App on the pilot repos only**: App page → Install App → `frankxai` → *Only select repositories* → `affiliate-agent-skills`, `arcanea-ai-app`, `frankx.ai-vercel-website`. **Do not install it on `agentic-ops-hub`.**
@@ -79,16 +79,16 @@ Restore the `review` globs in the pilot policies. Review-tier PRs now merge when
 
 ## Proposed tier map
 
-Every policy starts from [`_template.yml`](../merge-steward/policies/_template.yml); built-in protected paths apply everywhere. Per-repo additions:
+Every policy starts from [`_template.yml`](../merge-steward/policies/_template.yml); built-in protected paths apply everywhere, and only plain-text files (`md`, `txt`, `rst`, `adoc`, `csv`) can ever be `auto`. Per-repo additions:
 
 | Repo | Visibility | `human` additions | `review` | `auto` | Start |
 | --- | --- | --- | --- | --- | --- |
-| `affiliate-agent-skills` | public | `data/**/affiliate*.json` | `src/**`, `scripts/**`, `skills/**` | `docs/**`, `examples/**`, `**/*.md` | Phase 1 pilot |
-| `arcanea-ai-app` | public | `supabase/**`, `apps/web/app/api/**`, `renovate.json` | `apps/**`, `packages/**`, `scripts/**` | `book/**`, `wiki/**`, `docs/**`, `prompts/**` | Phase 1 pilot |
+| `affiliate-agent-skills` | public | `data/**/affiliate*.json` (skills are already human via the template) | `src/**`, `scripts/**` | `docs/**`, `examples/**`, `**/*.md` | Phase 1 pilot |
+| `arcanea-ai-app` | public | `supabase/**`, `apps/web/app/api/**`, `renovate.json` | `apps/**`, `packages/**`, `scripts/**` | `book/**`, `wiki/**`, `docs/**` (plain text only) | Phase 1 pilot |
 | `frankx.ai-vercel-website` | public | `app/api/**`, `.vercelignore`, `next.config.*`, `.env*.example` | `app/**`, `components/**`, `lib/**`, `scripts/**` | `content/**`, `docs/**`, `public/images/**`, `**/*.md(x)` | Phase 1 pilot |
 | `Starlight-Intelligence-System` | public | `packages/**/receipts/**`, `**/attestation*/**`, `ATTESTATIONS.md`, `site/vercel.json` | `packages/**`, `site/**`, `src/**` | `docs/**`, `vault/**` public notes | after pilot |
 | `gencreator.ai` | private | `proxy.ts`, `instrumentation.ts`, `app/api/**`, `sentry.*` | `app/**`, `lib/**`, `packages/**` | `content/**`, `docs/**`, `brand/**`, `design/**` | after Actions billing fixed |
-| `agenticincome` | private | `products/**`, `packs/**/license*` | `app/**`, `components/**`, `lib/**`, `agents/**`, `commands/**` | `knowledge/**`, `docs/**`, `design/**` | after billing |
+| `agenticincome` | private | `products/**`, `packs/**/license*` | `app/**`, `components/**`, `lib/**` (agents/commands human via template) | `knowledge/**`, `docs/**`, `design/**` | after billing |
 | `go-agenticincome` | private | `app/api/**`, `data/**/links*` | `app/**`, `lib/**`, `scripts/**` | `docs/**`, `reports/**`, `design/**` | after billing |
 | `agenticpassiveincome` | private | `products/**`, `schemas/**`, pricing experiments | `app/**`, `components/**`, `lib/**` | `knowledge/**`, `docs/**`, `design/**` | after billing |
 | `arcanea-onchain` | public | `packages/**/deploy*/**`, `**/Anchor.toml`, `**/programs/**` (contracts already human) | `packages/**` | `docs/**`, `assets/**`, `**/*.md` | after pilot; contracts never leave human |

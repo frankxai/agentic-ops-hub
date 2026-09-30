@@ -67,8 +67,11 @@ jobs:
           MERGE_STEWARD_MODE: ${{ vars.MERGE_STEWARD_MODE }}
         run: python3 scripts/merge_steward.py repos >> "$GITHUB_OUTPUT"
 
-      # contents:write only when some repo is live (merging needs it). No
-      # workflows, administration, secrets or actions permission, ever.
+      # Scoped to every repo the App is installed on (Frank selects those), so
+      # the per-run sweep can withdraw steward approvals even in a repo that
+      # was removed from targets.yml. contents:write only when some repo is
+      # live (merging needs it). No workflows, administration, secrets or
+      # actions permission, ever.
       - name: Mint steward App token
         id: app
         if: steps.configured.outputs.ok == 'true'
@@ -77,7 +80,6 @@ jobs:
           client-id: ${{ secrets.STEWARD_APP_ID }}
           private-key: ${{ secrets.STEWARD_PRIVATE_KEY }}
           owner: frankxai
-          repositories: ${{ steps.targets.outputs.repos }}
           permission-contents: ${{ steps.targets.outputs.live == 'true' && 'write' || 'read' }}
           permission-pull-requests: write
           permission-checks: read
@@ -91,7 +93,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           STEWARD_OPENAI_MODEL: ${{ vars.MERGE_STEWARD_OPENAI_MODEL }}
-          STEWARD_LOGIN: ${{ vars.MERGE_STEWARD_LOGIN || 'frankx-steward[bot]' }}
+          # The identity comes from the App itself: no name to misconfigure.
+          STEWARD_LOGIN: ${{ steps.app.outputs.app-slug }}[bot]
           MERGE_STEWARD_MODE: ${{ vars.MERGE_STEWARD_MODE }}
           MERGE_STEWARD: ${{ vars.MERGE_STEWARD }}
           DIGEST: ${{ github.event.schedule == '17 6 * * *' || inputs.digest == true }}
@@ -118,5 +121,5 @@ jobs:
           if [ "$OPEN" = "0" ]; then
             gh issue create --repo "$GITHUB_REPOSITORY" --label steward:incident \
               --title "Merge Steward run failed" \
-              --body "The steward run $RUN_URL failed (commit \`$GITHUB_SHA\`). While any \`steward:incident\` issue is open the steward merges nothing. Read the log, fix, then close this issue."
+              --body "The steward run $RUN_URL failed (commit \`$GITHUB_SHA\`). While any \`steward:incident\` issue is open the steward merges nothing. Read the log; if it failed while withdrawing an approval, check open PRs for a standing steward approval and dismiss it. Fix, then close this issue."
           fi
