@@ -1,0 +1,100 @@
+# .github/merge-policy.yml — Merge Steward risk tiers for this repo.
+# Source of truth: frankxai/agentic-ops-hub · docs/MERGE-STEWARD.md
+#
+# The steward reads this file from the BASE branch, so a PR cannot loosen its
+# own tier. Editing this file is itself always `human`.
+#
+# How a PR's tier is computed:
+#   1. Built-in human paths (this file, merge-steward workflows, CODEOWNERS,
+#      dependabot.yml, .env*, *.pem, *.key) -> human. Not overridable.
+#   2. Per file: `human` glob -> human; else a recognised single-package
+#      patch/minor dependency bump on a manifest/lockfile -> `dependency_bumps`;
+#      else `review` glob -> review; else `auto` glob -> auto; else default_tier.
+#   3. Workflow files: a diff line touching permissions, secrets, privileged
+#      triggers (pull_request_target, workflow_run), id-token, write scopes,
+#      environments or self-hosted runners -> human; a changed `uses:` -> review.
+#   4. The PR's tier is the most restrictive file tier. A `steward:human` or
+#      `steward:hold` label forces human.
+#
+# Supported syntax is a small YAML subset: `key: value`, nested mappings,
+# `- item` lists, `[a, b]` inline lists, comments. Anything else fails to parse,
+# and a policy that fails to parse makes every PR `human` (fail closed).
+#
+# Globs: `*` stays inside one directory, `**` crosses directories,
+# `**/x` also matches `x` at the root.
+
+version: 1
+
+# Tier for files that match no rule. Keep `review` unless the repo is docs-only.
+default_tier: review
+
+# Patch/minor bump of one package (Dependabot/Renovate title) that only touches
+# manifests and lockfiles. Major, 0.x minor, grouped or unparseable bumps -> review.
+dependency_bumps: auto
+
+# PRs changing more files than this are human (too big to review by machine).
+max_files: 300
+
+# Most PRs the steward may merge in this repo per UTC day.
+daily_merge_cap: 10
+
+human:
+  # money, identity, secrets
+  - "**/payments/**"
+  - "**/billing/**"
+  - "**/checkout/**"
+  - "**/stripe/**"
+  - "**/polar/**"
+  - "**/auth/**"
+  - "**/middleware.ts"
+  - "**/proxy.ts"
+  - "**/*secret*"
+  # production infrastructure and DNS
+  - "vercel.json"
+  - "**/vercel.json"
+  - "wrangler.toml"
+  - "**/wrangler.toml"
+  - "infra/**"
+  - "terraform/**"
+  - "**/*.tf"
+  - "supabase/migrations/**"
+  - "**/CNAME"
+  # licence gates
+  - "LICENSE"
+  - "LICENSE.*"
+  - "LICENSING.md"
+  - "NOTICE"
+  # onchain
+  - "contracts/**"
+  # agent operating config: grants agents permissions
+  - ".claude/settings*.json"
+  - ".claude/hooks/**"
+  - "AGENTS.md"
+  - "CLAUDE.md"
+
+review:
+  - "app/**"
+  - "src/**"
+  - "lib/**"
+  - "components/**"
+  - "packages/**"
+  - "apps/**"
+  - "scripts/**"
+  - "package.json"
+  - "next.config.*"
+  - "tsconfig*.json"
+
+auto:
+  - "docs/**"
+  - "**/*.md"
+  - "**/*.mdx"
+  - "content/**"
+  - "public/images/**"
+  - "tests/**"
+  - "test/**"
+  - "**/__tests__/**"
+  - "**/*.test.*"
+  - "**/*.spec.*"
+  - "data/**/*.json"
+  - ".github/workflows/**"
+  - ".github/ISSUE_TEMPLATE/**"
