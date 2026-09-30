@@ -42,7 +42,7 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: read
-      issues: write # hub-only: incidents, digest, kill-switch reads
+      issues: write # hub-only: incidents, digest, approval ledger, kill-switch reads
     steps:
       # Until Frank installs the App and stores its key, the steward has no
       # authority at all: skip quietly instead of failing every 10 minutes.

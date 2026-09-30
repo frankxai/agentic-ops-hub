@@ -58,17 +58,6 @@ PROTECTED = (
     "**/merge-steward*",
     "**/merge-steward*/**",
     "**/merge-policy*",
-    "**/.claude/**",
-    "**/CLAUDE*",
-    "**/AGENTS*",
-    "**/GEMINI*",
-    "**/.clinerules*",
-    "**/.windsurfrules",
-    "**/.cursor/**",
-    "**/.cursorrules",
-    "**/.codex/**",
-    "**/.gemini/**",
-    "**/.mcp.json",
     "**/.agent-harness.json",
     "**/.gitattributes",
     "**/.gitmodules",
@@ -131,6 +120,44 @@ PROTECTED = (
     "**/*.bat",
     "**/*.cmd",
 )
+# Locations AI coding agents read and obey automatically (rules, memories,
+# instructions, MCP servers). A change here re-programs every downstream agent,
+# so it is always human. Matched case-insensitively against EVERY path segment,
+# so a directory entry covers all of its descendants and a nested copy
+# (`packages/web/.cursor/rules/x.mdc`) counts as much as a root one.
+AGENT_CONFIG_DIRS = frozenset({
+    ".claude", ".cursor", ".cline", ".clinerules", ".windsurf", ".codex", ".gemini",
+    ".continue", ".roo", ".kilocode", ".amazonq", ".junie", ".agent", ".agents",
+    ".aider", ".augment", ".trae", ".qwen", ".kiro", ".opencode", ".goose", ".zed",
+})
+AGENT_CONFIG_FILES = frozenset({
+    ".cursorrules", ".clinerules", ".windsurfrules", ".roorules", ".mcp.json", "mcp.json",
+    ".goosehints", ".rules", "opencode.json", "opencode.jsonc", "copilot-instructions.md",
+})
+# Any segment starting with one of these (`AGENTS.override.md`, `CLAUDE.local.md`,
+# `.aider.conf.yml`, `.aiderignore`, `.clinerules-code`, `.roorules-architect`).
+AGENT_CONFIG_PREFIXES = ("agents", "claude", "gemini", ".aider", ".clinerules", ".roorules", ".windsurfrules", ".cursorrules")
+AGENT_CONFIG_SUFFIXES = (".mdc",)
+# Directories that only matter under a `.github` segment (Copilot reads them).
+AGENT_CONFIG_GITHUB_DIRS = frozenset({"instructions", "prompts", "chatmodes", "agents", "copilot"})
+
+
+def agent_config_hit(path: str) -> str | None:
+    """Why `path` is an agent instruction/config location, or None."""
+    parts = [part.lower() for part in path.split("/")]
+    for i, part in enumerate(parts):
+        if part in AGENT_CONFIG_DIRS or part in AGENT_CONFIG_FILES:
+            return f"agent config `{part}`"
+        if part.startswith(AGENT_CONFIG_PREFIXES):
+            return f"agent config `{part}`"
+        if part.endswith(AGENT_CONFIG_SUFFIXES):
+            return f"agent rule file `{part}`"
+        if part == ".github" and i + 1 < len(parts) and (
+                parts[i + 1] in AGENT_CONFIG_GITHUB_DIRS or parts[i + 1].startswith("copilot")):
+            return f"agent config `.github/{parts[i + 1]}`"
+    return None
+
+
 # The only files that can be `auto`: text nothing executes or obeys.
 INERT_EXTENSIONS = {"md", "txt", "rst", "adoc", "csv"}
 
@@ -676,6 +703,9 @@ def classify(snapshot: dict, policy_text: str | None, steward_login: str = "") -
         return human("file list incomplete or at the API limit")
     if len(files) > policy["max_files"]:
         return human(f"{len(files)} files exceeds max_files={policy['max_files']}")
+    reviews = snapshot.get("review_count", 0)
+    if not isinstance(reviews, int) or reviews > MAX_PR_REVIEWS:
+        return human(f"PR carries {reviews} reviews (> {MAX_PR_REVIEWS}) — too many to audit the steward's own approvals")
 
     modes = snapshot.get("modes") or {}
     head_modes, base_modes = modes.get("head") or {}, modes.get("base") or {}
@@ -690,6 +720,9 @@ def classify(snapshot: dict, policy_text: str | None, steward_login: str = "") -
             hit = matches(p, PROTECTED)
             if hit:
                 reasons.append(f"{p}: protected path `{hit}` (built in, not overridable)")
+            agent_hit = agent_config_hit(p)
+            if agent_hit:
+                reasons.append(f"{p}: {agent_hit} — agents obey it (built in, not overridable)")
         if f.get("status") not in ("added", "modified", "removed", "renamed"):
             reasons.append(f"{f['filename']}: status `{f.get('status')}` (mode or type change)")
         sides = []
@@ -1101,7 +1134,14 @@ def build_snapshot(gh: GitHub, repo: str, number: int, default_branch: str) -> d
         "files_complete": len(files) < API_FILE_LIMIT and cmp.get("status") in ("ahead", "diverged"),
         "modes": modes, "commits": commits, "total_commits": cmp.get("total_commits", 0),
         "head_ref_actors": head_ref_actors,
+        "review_count": review_count(gh, repo, number),
     }
+
+
+def review_count(gh: GitHub, repo: str, number: int) -> int:
+    owner, name = repo.split("/")
+    data = gh.graphql(REVIEW_COUNT_QUERY, {"owner": owner, "name": name, "number": number})
+    return int(data["repository"]["pullRequest"]["reviews"]["totalCount"])
 
 
 def checks_state(gh: GitHub, repo: str, sha: str) -> str:
@@ -1132,6 +1172,19 @@ MARKER = "<!-- merge-steward"
 DIGEST_MARKER = "<!-- merge-steward-digest -->"
 INCIDENT_MARKER = "<!-- merge-steward-incident"
 HUB_BOT = "github-actions[bot]"
+LEDGER_MARKER = "<!-- merge-steward-ledger"
+LEDGER_LABEL = "steward:ledger"
+# Refuse to approve a PR that already carries more reviews than this: the
+# steward's own approval then sits early in GitHub's chronological review list
+# (creating reviews is rate-limited), so an oldest-first listing always reaches
+# it, however many reviews an attacker piles on afterwards.
+MAX_PR_REVIEWS = 300
+REVIEW_COUNT_QUERY = """query($owner:String!,$name:String!,$number:Int!){repository(owner:$owner,name:$name){
+pullRequest(number:$number){reviews{totalCount}}}}"""
+# Newest-first, only the steward's own approvals: immune to review flooding.
+STEWARD_APPROVALS_QUERY = """query($owner:String!,$name:String!,$number:Int!,$author:String!,$cursor:String){
+repository(owner:$owner,name:$name){pullRequest(number:$number){reviews(last:100,before:$cursor,author:$author,states:[APPROVED]){
+pageInfo{hasPreviousPage startCursor} nodes{databaseId author{__typename login}}}}}}"""
 MERGED_QUERY = """query($owner:String!,$name:String!,$cursor:String){repository(owner:$owner,name:$name){
 pullRequests(states:MERGED,first:50,after:$cursor,orderBy:{field:UPDATED_AT,direction:DESC}){
 pageInfo{hasNextPage endCursor} nodes{number mergedAt updatedAt mergedBy{__typename login}}}}}"""
@@ -1230,21 +1283,43 @@ class Steward:
             cursor = conn["pageInfo"]["endCursor"]
 
     # ---- revocation: the steward never leaves an approval standing ----
-    def withdraw(self, repo: str, pr: dict, reason: str, known_id=None) -> int:
+    def steward_approval_ids(self, repo: str, number: int) -> list[int]:
+        """The steward's own standing approvals on a PR, newest first, via the
+        author-filtered GraphQL connection (other people's reviews cannot push
+        ours out of reach). Every node is re-checked to be the App."""
+        owner, name = repo.split("/")
+        ids, cursor = [], None
+        for _ in range(50):
+            conn = self.app.graphql(STEWARD_APPROVALS_QUERY, {"owner": owner, "name": name, "number": number,
+                                                              "author": bot_name(self.login), "cursor": cursor})
+            conn = conn["repository"]["pullRequest"]["reviews"]
+            ids += [n["databaseId"] for n in reversed(conn["nodes"]) if same_bot(n.get("author"), self.login)]
+            if not conn["pageInfo"]["hasPreviousPage"]:
+                return ids
+            cursor = conn["pageInfo"]["startCursor"]
+        raise GitHubError(0, f"{repo}#{number}: too many steward approvals to enumerate")
+
+    def withdraw(self, repo: str, pr: dict, reason: str, known_id=None, known_ids=(), scan_newest: bool = False) -> int:
         """Dismiss every approval of ours on the PR, then disarm auto-merge.
-        A just-created approval (`known_id`) is dismissed directly first, so a
-        failing review listing cannot stop it. Every step is attempted even if
-        an earlier one fails; the first error is raised afterwards (the run
-        fails and an incident pauses the steward)."""
+        Approvals whose id is already known (`known_id`, `known_ids`: just
+        created, or recorded in the hub ledger) are dismissed directly, so a
+        failing or incomplete review listing cannot hide them. `scan_newest`
+        adds the newest-first author-filtered scan. Every step is attempted
+        even if an earlier one fails; the first error is raised afterwards (the
+        run fails and an incident pauses the steward)."""
         errors: list[BaseException] = []
-        mine: list = []
-        if known_id is not None:
-            mine.append({"id": known_id})
+        ids = [i for i in ([known_id] if known_id is not None else []) + list(known_ids) if i is not None]
+        if scan_newest:
+            try:
+                ids += self.steward_approval_ids(repo, pr["number"])
+            except Exception as err:
+                errors.append(err)
         try:
-            mine += [r for r in self.app.paginate(f"repos/{repo}/pulls/{pr['number']}/reviews")
-                     if r.get("state") == "APPROVED" and same_bot(r.get("user"), self.login) and r["id"] != known_id]
+            ids += [r["id"] for r in self.app.paginate(f"repos/{repo}/pulls/{pr['number']}/reviews")
+                    if r.get("state") == "APPROVED" and same_bot(r.get("user"), self.login)]
         except Exception as err:
             errors.append(err)
+        mine = [{"id": i} for i in dict.fromkeys(ids)]
         for review in mine:
             try:
                 self.app.request("PUT", f"repos/{repo}/pulls/{pr['number']}/reviews/{review['id']}/dismissals",
@@ -1262,9 +1337,60 @@ class Steward:
             raise errors[0]
         return len(mine)
 
+    # ---- approval ledger: a hub-side record of every approval, written first ----
+    def ledger_entries(self) -> list[dict]:
+        out = []
+        for issue in self.hub.paginate(f"repos/{HUB_REPO}/issues?state=open&labels={LEDGER_LABEL}&creator={urllib.parse.quote(HUB_BOT)}"):
+            body = issue.get("body") or ""
+            if "pull_request" in issue or (issue.get("user") or {}).get("login") != HUB_BOT or not body.startswith(LEDGER_MARKER):
+                continue
+            fields = dict(re.findall(r"(\w+)=([\w.:/-]+)", body.split("\n", 1)[0]))
+            if re.fullmatch(r"[\w.-]+/[\w.-]+", fields.get("repo", "")) and fields.get("pr", "").isdigit():
+                out.append({**fields, "issue": issue["number"]})
+        return out
+
+    def ledger_write(self, repo: str, number: int, sha: str, state: str, review_id=None, issue=None, close=False):
+        body = "\n".join([
+            f"{LEDGER_MARKER} repo={repo} pr={number} sha={sha} state={state} review={review_id or 'unknown'} -->",
+            f"Merge Steward approval record for {repo}#{number} at `{sha[:12]}`: **{state}**.",
+            "", "Written before the approval is requested. The steward closes it once the approval is merged or dismissed;",
+            "while it is open, every run dismisses that approval. Do not close it by hand unless you checked the PR."])
+        if issue is None:
+            return self.hub.request("POST", f"repos/{HUB_REPO}/issues",
+                                    {"title": f"Merge Steward approval ledger: {repo}#{number}", "body": body,
+                                     "labels": [LEDGER_LABEL]})[0]["number"]
+        payload = {"body": body}
+        if close:
+            payload["state"] = "closed"
+        self.hub.request("PATCH", f"repos/{HUB_REPO}/issues/{issue}", payload)
+        return issue
+
+    def sweep_ledger(self, reason: str) -> tuple[int, list]:
+        """Dismiss every approval recorded in an open ledger entry, whatever the
+        PR's state or age, then close the entry."""
+        revoked, errors = 0, []
+        for entry in self.ledger_entries():
+            repo, number = entry["repo"], int(entry["pr"])
+            review = entry.get("review", "")
+            try:
+                pr = self.app.get(f"repos/{repo}/pulls/{number}")
+                if pr.get("merged_at"):
+                    self.ledger_write(repo, number, entry.get("sha", ""), "merged", review, entry["issue"], close=True)
+                    continue
+                known = []
+                if review.isdigit():
+                    found = self.app.get(f"repos/{repo}/pulls/{number}/reviews/{review}")
+                    if found.get("state") == "APPROVED" and same_bot(found.get("user"), self.login):
+                        known.append(found["id"])
+                revoked += self.withdraw(repo, pr, reason, known_ids=known, scan_newest=not review.isdigit())
+                self.ledger_write(repo, number, entry.get("sha", ""), "dismissed", review, entry["issue"], close=True)
+            except Exception as err:
+                errors.append(err)
+        return revoked, errors
+
     def sweep(self, reason: str) -> int:
-        since = self.now - timedelta(days=14)
-        revoked = 0
+        since = self.now - timedelta(days=30)
+        revoked, errors = self.sweep_ledger(reason)
         for repo in [r["full_name"] for r in self.app.paginate("installation/repositories", key="repositories")]:
             pulls = self.app.paginate(f"repos/{repo}/pulls?state=open")
             for closed in self.app.paginate(f"repos/{repo}/pulls?state=closed&sort=updated&direction=desc", limit=300):
@@ -1272,10 +1398,17 @@ class Steward:
                     break
                 if not closed.get("merged_at"):
                     pulls.append(closed)
-            count = sum(self.withdraw(repo, pr, reason) for pr in pulls)
+            count = 0
+            for pr in pulls:
+                try:
+                    count += self.withdraw(repo, pr, reason)
+                except Exception as err:
+                    errors.append(err)
             if count:
                 self.log(f"{repo}: withdrew {count} standing steward approval(s)")
             revoked += count
+        if errors:
+            raise errors[0]
         return revoked
 
     # ---- per-PR ----
@@ -1378,11 +1511,28 @@ class Steward:
             return abort("auto-merge is armed by someone else — disable it to let the steward merge")
         if checks_state(self.app, repo, sha) != "success":
             return abort("checks are no longer green")
-        done, approval_id = False, None
+        count = review_count(self.app, repo, number)
+        if count > MAX_PR_REVIEWS:
+            return abort(f"PR carries {count} reviews (> {MAX_PR_REVIEWS}) — not approving")
+        # The record exists before the approval does: whatever happens next
+        # (lost response, crash, killed runner), every later run finds it.
         try:
-            approval_id = self.app.request("POST", f"repos/{repo}/pulls/{number}/reviews",
-                                           {"commit_id": sha, "event": "APPROVE",
-                                            "body": f"Merge Steward approval of `{sha}` (hub `{self.hub_sha[:12]}`)."})[0]["id"]
+            ledger = self.ledger_write(repo, number, sha, "pending")
+        except Exception as err:
+            return abort(f"could not record the approval in the hub ledger ({err}) — not approving")
+        done, approval_id, no_approval = False, None, False
+        try:
+            try:
+                approval_id = self.app.request("POST", f"repos/{repo}/pulls/{number}/reviews",
+                                               {"commit_id": sha, "event": "APPROVE",
+                                                "body": f"Merge Steward approval of `{sha}` (hub `{self.hub_sha[:12]}`)."})[0]["id"]
+            except GitHubError as err:
+                no_approval = err.status < 500  # a 4xx is a definite refusal; a 5xx may have landed
+                raise
+            try:
+                self.ledger_write(repo, number, sha, "approved", approval_id, ledger)
+            except Exception as err:  # the id is also held in memory; the sweep re-scans pending entries
+                self.log(f"ledger update failed for {repo}#{number}: {err}")
             if self.kill_active():
                 raise _Stop("kill switch turned on between approve and merge")
             self.app.request("PUT", f"repos/{repo}/pulls/{number}/merge", {"sha": sha, "merge_method": "squash"})
@@ -1395,10 +1545,22 @@ class Steward:
             return abort(f"merge refused ({err}) — approval withdrawn, re-queued")
         finally:
             if not done:
-                self.withdraw(repo, pr, "merge did not complete; approval withdrawn", known_id=approval_id)
+                self.withdraw(repo, pr, "merge did not complete; approval withdrawn", known_id=approval_id,
+                              scan_newest=approval_id is None and not no_approval)
+                # Only reached when every dismissal succeeded. An approval whose
+                # id never came back stays pending for the next sweep to re-check.
+                if approval_id is not None or no_approval:
+                    self._ledger_close(repo, number, sha, "none" if no_approval else "dismissed", approval_id, ledger)
+        self._ledger_close(repo, number, sha, "merged", approval_id, ledger)
         self.merges_left -= 1
         merged["total"] = merged.get("total", 0) + 1
         return {**decision, "reasons": decision["reasons"] + [f"merged `{sha[:12]}`"]}
+
+    def _ledger_close(self, repo, number, sha, state, review_id, issue) -> None:
+        try:
+            self.ledger_write(repo, number, sha, state, review_id, issue, close=True)
+        except Exception as err:  # an open entry is only re-checked by the sweep: safe to leave
+            self.log(f"ledger close failed for {repo}#{number}: {err}")
 
     # ---- red main after steward merges ----
     def revert_guard(self, target: dict, default_branch: str) -> None:

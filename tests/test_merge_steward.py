@@ -523,6 +523,14 @@ class FakeGitHub:
                 return ok({"data": {"disablePullRequestAutoMerge": {"clientMutationId": None}}})
             if "associatedPullRequests" in q:
                 return ok({"data": {"repository": {"object": s["commit_node"]}}})
+            if "reviews{totalCount}" in q:
+                return ok({"data": {"repository": {"pullRequest": {"reviews": {"totalCount": s.get("review_count", 1)}}}}})
+            if "states:[APPROVED]" in q:
+                s["approval_scans"] = s.get("approval_scans", 0) + 1
+                nodes = [{"databaseId": r["id"], "author": {"__typename": r["user"]["type"], "login": r["user"]["login"].removesuffix("[bot]")}}
+                         for r in s["reviews"] if r.get("state") == "APPROVED"]
+                return ok({"data": {"repository": {"pullRequest": {"reviews": {
+                    "pageInfo": {"hasPreviousPage": False, "startCursor": None}, "nodes": nodes}}}}})
             return ok({"data": {"repository": {"pullRequests": {"pageInfo": {"hasNextPage": False, "endCursor": None},
                                                                 "nodes": s["merged_nodes"]}}}})
         if path.startswith(f"repos/{HUB_REPO}/compare/"):
@@ -530,7 +538,14 @@ class FakeGitHub:
         if path.startswith(f"repos/{HUB_REPO}/issues"):
             if method == "POST":
                 s["hub_issues_created"] = s.get("hub_issues_created", []) + [(path, data)]
+                if s.get("ledger_fails"):
+                    return 503, {}, b"unavailable"
                 return ok({"number": 1})
+            if method == "PATCH":
+                s["hub_issues_patched"] = s.get("hub_issues_patched", []) + [(path, data)]
+                return ok({})
+            if "labels=steward:ledger" in path:
+                return ok(s.get("ledger", []))
             if "labels=steward:stop" in path:
                 return ok(s["stop"])
             if "labels=steward:incident" in path:
@@ -549,6 +564,9 @@ class FakeGitHub:
         if path == f"repos/{REPO}/pulls/5":
             head = s["head_now"].pop(0) if len(s["head_now"]) > 1 else s["head_now"][0]
             return ok(self.pr(head))
+        if re.fullmatch(rf"repos/{REPO}/pulls/5/reviews/\d+", path) and method == "GET":
+            rid = int(path.rsplit("/", 1)[1])
+            return ok(next((r for r in s["reviews"] if r["id"] == rid), {"id": rid, "state": "DISMISSED"}))
         if path.startswith(f"repos/{REPO}/pulls/5/reviews") and method == "GET":
             return ok(s["reviews"])
         if path == f"repos/{REPO}/pulls/5/reviews" and method == "POST":
@@ -901,6 +919,108 @@ class OrchestrationTests(unittest.TestCase):
             return original(method, url, headers, body)
         fake.gh.transport = transport
         self.assertEqual("failure", checks_state(fake.gh, REPO, H))
+
+    # ---- Round 5 ----
+    def test_agent_instruction_locations_are_human(self) -> None:
+        # Round 5 #1: directory-aware, any segment, case-insensitive.
+        paths = [".clinerules/01-policy.md", ".cline/rules/security.md", ".windsurf/rules/security.md",
+                 ".clinerules", ".CURSOR/rules/x.md", "pkg/web/.cursor/rules/a.mdc", "docs/rules/style.mdc",
+                 ".github/copilot-instructions.md", ".github/instructions/py.instructions.md",
+                 ".aider.conf.yml", ".aiderignore", ".continue/rules/a.md", ".roo/rules/a.md",
+                 ".kilocode/rules/a.md", ".amazonq/rules/a.md", ".junie/guidelines.md", "apps/x/AGENTS.md",
+                 "Claude.local.md", "sub/GEMINI.md", ".agent/workflows/a.md", ".agents/a.md", ".mcp.json",
+                 ".vscode/mcp.json", "packages/a/.windsurfrules", ".codex/notes.md", ".gemini/styleguide.md"]
+        for path in paths:
+            with self.subTest(path=path):
+                self.assertEqual("human", tier([f(path)], PERMISSIVE))
+        self.assertEqual("auto", tier([f("docs/guide.md")], PERMISSIVE))
+
+    def test_too_many_reviews_is_human(self) -> None:
+        self.assertEqual("human", tier([f("docs/a.md")], PERMISSIVE, review_count=301))
+        self.assertEqual("auto", tier([f("docs/a.md")], PERMISSIVE, review_count=300))
+
+    def test_review_flood_during_review_blocks_approval(self) -> None:
+        fake = FakeGitHub()
+        def reviewer(*_):
+            fake.state["review_count"] = 5000
+            return dict(APPROVE)
+        self.assertEqual("hold", steward(fake, reviewer=reviewer).run()[0]["action"])
+        self.assertFalse(any(p.endswith("/pulls/5/reviews") and m == "POST" for m, p, _ in fake.calls))
+
+    def test_ledger_written_before_approval_and_closed_after_merge(self) -> None:
+        fake = FakeGitHub()
+        self.assertEqual("merge", steward(fake).run()[0]["action"])
+        writes = fake.writes()
+        ledger = writes.index(("POST", f"repos/{HUB_REPO}/issues"))
+        approve = writes.index(("POST", f"repos/{REPO}/pulls/5/reviews"))
+        self.assertLess(ledger, approve)
+        patched = fake.state["hub_issues_patched"]
+        self.assertIn("state=approved review=99", patched[0][1]["body"])
+        self.assertEqual("closed", patched[-1][1]["state"])
+        self.assertIn("state=merged", patched[-1][1]["body"])
+
+    def test_ledger_failure_means_no_approval(self) -> None:
+        fake = FakeGitHub(ledger_fails=True)
+        self.assertEqual("hold", steward(fake).run()[0]["action"])
+        self.assertFalse(any(p.endswith("/pulls/5/reviews") and m == "POST" for m, p, _ in fake.calls))
+
+    def test_lost_approval_on_page_51_is_still_dismissed(self) -> None:
+        # Round 5 #2: 5,000 earlier reviews, the approve response is lost, and
+        # the oldest-first listing stops at 5,000. The newest-first
+        # author-filtered scan still finds and dismisses it.
+        foreign = [{"id": i, "state": "COMMENTED", "user": {"login": "attacker", "type": "User"}} for i in range(1, 5001)]
+        mine = {"id": 777, "state": "APPROVED", "user": {"login": STEWARD, "type": "Bot"}}
+        fake = FakeGitHub(reviews=list(foreign))
+        original = fake.transport
+
+        def transport(method, url, headers, body):
+            if method == "POST" and url.endswith("/pulls/5/reviews"):
+                fake.state["reviews"] = foreign + [mine]  # landed ...
+                raise TimeoutError("read timed out")    # ... but the response is lost
+            if method == "GET" and url.split("?")[0].endswith("/pulls/5/reviews"):
+                return 200, {}, json.dumps(fake.state["reviews"][:5000]).encode()
+            return original(method, url, headers, body)
+        fake.gh.transport = transport
+        with self.assertRaises(TimeoutError):
+            steward(fake).run()
+        self.assertTrue(any(m == "PUT" and p.endswith("/reviews/777/dismissals") for m, p, _ in fake.calls))
+        # The id never came back: the ledger entry stays pending for the next sweep.
+        self.assertFalse(any(d.get("state") == "closed" for _, d in fake.state.get("hub_issues_patched", [])))
+
+    def test_sweep_dismisses_ledger_approval_on_long_closed_pr(self) -> None:
+        # Round 5 #3: the PR closed long ago (not in the closed listing at all).
+        mine = {"id": 42, "state": "APPROVED", "user": {"login": STEWARD, "type": "Bot"}}
+        entry = {"number": 8, "user": {"login": "github-actions[bot]"},
+                 "body": f"<!-- merge-steward-ledger repo={REPO} pr=5 sha={H} state=approved review=42 -->\n..."}
+        fake = FakeGitHub(reviews=[mine], ledger=[entry])
+        original = fake.transport
+
+        def transport(method, url, headers, body):
+            if method == "GET" and url.endswith(f"repos/{REPO}/pulls/5"):
+                return 200, {}, json.dumps({**fake.pr(H), "state": "closed", "merged_at": None}).encode()
+            if "pulls?state=open" in url:
+                return 200, {}, b"[]"
+            return original(method, url, headers, body)
+        fake.gh.transport = transport
+        steward(fake, mode="shadow").sweep("test")
+        self.assertTrue(any(m == "PUT" and p.endswith("/reviews/42/dismissals") for m, p, _ in fake.calls))
+        closed = fake.state["hub_issues_patched"][-1]
+        self.assertEqual((f"repos/{HUB_REPO}/issues/8", "closed"), (closed[0], closed[1]["state"]))
+
+    def test_pending_ledger_entry_uses_newest_first_scan(self) -> None:
+        mine = {"id": 55, "state": "APPROVED", "user": {"login": STEWARD, "type": "Bot"}}
+        entry = {"number": 8, "user": {"login": "github-actions[bot]"},
+                 "body": f"<!-- merge-steward-ledger repo={REPO} pr=5 sha={H} state=pending review=unknown -->"}
+        fake = FakeGitHub(reviews=[mine], ledger=[entry])
+        steward(fake, mode="shadow").sweep("test")
+        self.assertEqual(1, fake.state.get("approval_scans"))
+        self.assertTrue(any(p.endswith("/reviews/55/dismissals") for _, p, _ in fake.calls))
+
+    def test_forged_ledger_entry_is_ignored(self) -> None:
+        forged = {"number": 8, "user": {"login": "attacker"},
+                  "body": f"<!-- merge-steward-ledger repo=victim/repo pr=1 sha={H} state=approved review=1 -->"}
+        fake = FakeGitHub(ledger=[forged])
+        self.assertEqual([], steward(fake).ledger_entries())
 
 if __name__ == "__main__":
     unittest.main()
