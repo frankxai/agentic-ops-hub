@@ -1297,12 +1297,13 @@ class Steward:
     def steward_approval_ids(self, repo: str, number: int) -> list[int]:
         """The steward's own standing approvals on a PR, newest first, via the
         author-filtered GraphQL connection (other people's reviews cannot push
-        ours out of reach). Every node is re-checked to be the App."""
+        ours out of reach). The filter needs the suffixed App login (`x[bot]`)
+        although nodes report `x`; every node is re-checked to be the App."""
         owner, name = repo.split("/")
         ids, cursor = [], None
         for _ in range(50):
             conn = self.app.graphql(STEWARD_APPROVALS_QUERY, {"owner": owner, "name": name, "number": number,
-                                                              "author": bot_name(self.login), "cursor": cursor})
+                                                              "author": f"{bot_name(self.login)}[bot]", "cursor": cursor})
             conn = conn["repository"]["pullRequest"]["reviews"]
             ids += [n["databaseId"] for n in reversed(conn["nodes"]) if same_bot(n.get("author"), self.login)]
             if not conn["pageInfo"]["hasPreviousPage"]:

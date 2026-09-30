@@ -531,7 +531,8 @@ class FakeGitHub:
             if "states:[APPROVED]" in q:
                 s["approval_scans"] = s.get("approval_scans", 0) + 1
                 nodes = [{"databaseId": r["id"], "author": {"__typename": r["user"]["type"], "login": r["user"]["login"].removesuffix("[bot]")}}
-                         for r in s["reviews"] if r.get("state") == "APPROVED"]
+                         for r in s["reviews"] if r.get("state") == "APPROVED"
+                         and r["user"]["login"] == data["variables"]["author"]]  # GitHub filters by the full `x[bot]` login
                 return ok({"data": {"repository": {"pullRequest": {"reviews": {
                     "pageInfo": {"hasPreviousPage": False, "startCursor": None}, "nodes": nodes}}}}})
             return ok({"data": {"repository": {"pullRequests": {"pageInfo": {"hasNextPage": False, "endCursor": None},
