@@ -31,8 +31,8 @@ Or ask: "sweep my sessions and update the ledger." At session end, it:
 1. Reads `OPS-LEDGER.md` (current state).
 2. Pulls git deltas since the last session file.
 3. Appends `sessions/<today>.md`, refreshes `OPS-LEDGER.md` + `NEXT-PROMPTS.md`.
-4. Mirrors to Obsidian; syncs changed open items to Linear if asked.
-5. Commits + pushes.
+4. Obsidian reads `ops/` here. Copy into FrankX only when that checkout is clean and on the assigned branch.
+5. Commits on `agent/<harness>/<scope>` from `origin/main` and opens or updates a PR. The product repo's GitHub issue is the action record. Linear only if Frank asks.
 
 ## Who suggests it
 

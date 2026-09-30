@@ -19,7 +19,7 @@ You are running the end-of-session sweep. Be **token-disciplined**: git is the s
    ```
    This yields what was done (commit subjects = the "why"), the active branch, and uncommitted work — without reading any terminal.
 
-3. **Pull Linear deltas (gated).** Only if open items may have changed: `list_issues assignee=me state=started,unstarted` on the Arcanea team. Do not mass-read.
+3. **GitHub issue on the product repo.** Comment on the issue that already tracks the slice. Open one only when the slice is still open and has none. A merged slice with no issue stays in the session file. Pull Linear only if Frank asks. Do not mass-read.
 
 4. **Only read a terminal** if git can't explain a front (interactive/REPL state) AND the user asks. Request access, take ONE screenshot, map window→repo. Never poll.
 
@@ -28,11 +28,11 @@ You are running the end-of-session sweep. Be **token-disciplined**: git is the s
    - Refresh `ops/OPS-LEDGER.md` — active fronts table, Recently Done, Open/Risks. Keep it tight; archive stale done-items.
    - Refresh `ops/NEXT-PROMPTS.md` — ranked next prompt per repo/front. Update the terminal map if changed.
 
-6. **Mirror to Obsidian** — copy `OPS-LEDGER.md` + `NEXT-PROMPTS.md` into the FrankX vault `Ops/` folder (file write, ~0 tokens).
+6. **Obsidian reads `ops/` in this repo.** Do not copy the ledger into FrankX while that checkout is dirty or on another harness's branch.
 
-7. **Sync to Linear (only if asked)** — create/update issues for new Risk items on the Arcanea team, linking back to the ledger.
+7. **Linear stays archive** unless Frank asks. The action record is the GitHub issue from step 3.
 
-8. **Commit + push** — on this Windows machine git must run host-side (the sandbox mount blocks file deletes and has no GitHub creds). Write a `.bat` that clears `.git/index.lock`, adds/commits/pushes with output to a log, run it via File Explorer address bar, then read the log to confirm.
+8. **Commit on a free branch.** `agent/<harness>/<scope>` from `origin/main`, explicit paths, push that branch, open or update a PR. Do not commit onto another harness's checkout. Do not push `main` from the sweep.
 
 ## Output to the user
-A 4-line summary: what landed, what's newly open, the single highest-leverage next prompt, and the ledger/Obsidian links. Nothing more.
+A 4-line summary: what landed, what's newly open, the single highest-leverage next prompt, and the ledger path plus the GitHub issue. Nothing more.
