@@ -190,7 +190,9 @@ class PathBypassTests(unittest.TestCase):
         self.assertEqual("human", tier([f("docs/moved.md", status="renamed", prev="contracts/Token.sol")]))
 
     def test_agent_instruction_files(self) -> None:
+        # Round 4 #1: AGENTS.override.md takes precedence over AGENTS.md for Codex.
         for path in (".claude/rules/review.md", "CLAUDE.local.md", "packages/x/CLAUDE.md", "AGENTS.md",
+                     "AGENTS.override.md", "web/GEMINI.local.md", ".clinerules",
                      "web/AGENTS.md", ".cursor/rules/a.mdc", ".codex/config.toml", ".mcp.json"):
             with self.subTest(path=path):
                 self.assertEqual("human", tier([f(path)], policy=PERMISSIVE))
@@ -212,7 +214,9 @@ class PathBypassTests(unittest.TestCase):
         for path in ("setup.py", "pkg/setup.cfg", "wrangler.jsonc", "renovate.json5", ".renovaterc",
                      "docs/Makefile", "Dockerfile.prod", "docker-compose.yml", ".nvmrc", "vercel.json",
                      "docs/CMakeLists.txt", "scripts/deploy.sh", "docs/ci.ps1", "docs/conf.py", "build.gradle.kts",
-                     "tools/run.bat", "runtime.txt", "constraints.txt"):
+                     "tools/run.bat", "runtime.txt", "constraints.txt",
+                     # Round 4 #2: CI/deploy entry points outside .github
+                     "scripts/deploy.py", "scripts/deploy.mjs", "actions/deploy/action.yml", "tools/release.ts"):
             with self.subTest(path=path):
                 self.assertEqual("human", tier([f(path)], policy=PERMISSIVE))
 
@@ -859,6 +863,44 @@ class OrchestrationTests(unittest.TestCase):
         incident = self._guard({"b" * 40: None, "a" * 40: bot, "g" * 40: None}, ["pending", "failure", "success"])
         self.assertEqual(1, len(incident))
         self.assertIn("revert by hand", incident[0]["body"])
+
+    def test_rename_of_steward_policy_counts_as_stale(self) -> None:
+        # Round 4 #3: archiving a policy by rename must stop the running steward.
+        fake = FakeGitHub(hub_compare={"status": "ahead", "files": [
+            {"filename": "archive/old-policy.yml", "previous_filename": "merge-steward/policies/demo.yml"}]})
+        self.assertEqual([], steward(fake).run())
+
+    def test_known_approval_dismissed_even_if_review_listing_fails(self) -> None:
+        # Round 4 #4: merge 409, then the review listing 503s.
+        fake = FakeGitHub(merge_status=409)
+        original = fake.transport
+        state = {"approved": False}
+
+        def transport(method, url, headers, body):
+            if method == "POST" and url.endswith("/pulls/5/reviews"):
+                state["approved"] = True
+            if method == "GET" and "/pulls/5/reviews" in url and state["approved"]:
+                return 503, {}, b"unavailable"
+            return original(method, url, headers, body)
+        fake.gh.transport = transport
+        from scripts.merge_steward import GitHubError
+        with self.assertRaises(GitHubError):
+            steward(fake).run()
+        self.assertTrue(any(m == "PUT" and p.endswith("/reviews/99/dismissals") for m, p, _ in fake.calls))
+
+    def test_check_run_enumeration_must_be_complete(self) -> None:
+        # Round 4 #6: a failure buried past the enumeration limit.
+        from scripts.merge_steward import checks_state
+        fake = FakeGitHub()
+        original = fake.transport
+
+        def transport(method, url, headers, body):
+            if "/check-runs" in url:
+                return 200, {}, json.dumps({"total_count": 5001, "check_runs": [
+                    {"status": "completed", "conclusion": "success"}] * 100}).encode()
+            return original(method, url, headers, body)
+        fake.gh.transport = transport
+        self.assertEqual("failure", checks_state(fake.gh, REPO, H))
 
 if __name__ == "__main__":
     unittest.main()

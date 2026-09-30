@@ -59,9 +59,11 @@ PROTECTED = (
     "**/merge-steward*/**",
     "**/merge-policy*",
     "**/.claude/**",
-    "**/CLAUDE*.md",
-    "**/AGENTS.md",
-    "**/GEMINI.md",
+    "**/CLAUDE*",
+    "**/AGENTS*",
+    "**/GEMINI*",
+    "**/.clinerules*",
+    "**/.windsurfrules",
     "**/.cursor/**",
     "**/.cursorrules",
     "**/.codex/**",
@@ -114,6 +116,11 @@ PROTECTED = (
     "**/settings.gradle*",
     "**/pom.xml",
     "**/conf.py",
+    "**/action.yml",
+    "**/action.yaml",
+    "**/*deploy*",
+    "**/*release*",
+    "**/*publish*",
     # executable scripts: which of them CI or a deploy runs is repo-specific,
     # so none of them is ever machine-merged
     "**/*.sh",
@@ -1099,7 +1106,13 @@ def build_snapshot(gh: GitHub, repo: str, number: int, default_branch: str) -> d
 
 def checks_state(gh: GitHub, repo: str, sha: str) -> str:
     """success | pending | failure for every check run and commit status on sha."""
-    runs = gh.paginate(f"repos/{repo}/commits/{sha}/check-runs", key="check_runs")
+    first = gh.get(f"repos/{repo}/commits/{sha}/check-runs?per_page=100")
+    total = first.get("total_count", 0)
+    if total > 1000:
+        return "failure"  # too many to enumerate reliably: never merge on it
+    runs = first["check_runs"] if total <= 100 else gh.paginate(f"repos/{repo}/commits/{sha}/check-runs", key="check_runs")
+    if len(runs) != total:
+        return "failure"  # incomplete enumeration fails closed
     status = gh.get(f"repos/{repo}/commits/{sha}/status")
     # The combined `state` covers every context; `statuses` is only a page.
     combined = status.get("state") if status.get("total_count") else None
@@ -1186,7 +1199,8 @@ class Steward:
         files = cmp.get("files") or []
         if cmp.get("status") != "ahead" or len(files) >= API_FILE_LIMIT:
             return f"run commit is not an ancestor of main ({cmp.get('status')}) — refusing"
-        changed = [f["filename"] for f in files if f["filename"].startswith(STEWARD_PATHS)]
+        changed = [p for f in files for p in (f["filename"], f.get("previous_filename") or "")
+                   if p.startswith(STEWARD_PATHS)]
         if changed:
             return f"steward code/policy changed on main since this run's commit ({changed[:3]}) — next run uses it"
         return None
@@ -1216,14 +1230,21 @@ class Steward:
             cursor = conn["pageInfo"]["endCursor"]
 
     # ---- revocation: the steward never leaves an approval standing ----
-    def withdraw(self, repo: str, pr: dict, reason: str) -> int:
+    def withdraw(self, repo: str, pr: dict, reason: str, known_id=None) -> int:
         """Dismiss every approval of ours on the PR, then disarm auto-merge.
-        Dismissal comes first and each step is attempted even if an earlier
-        one fails; the first error is raised afterwards (the run fails and an
-        incident pauses the steward)."""
-        mine = [r for r in self.app.paginate(f"repos/{repo}/pulls/{pr['number']}/reviews")
-                if r.get("state") == "APPROVED" and same_bot(r.get("user"), self.login)]
+        A just-created approval (`known_id`) is dismissed directly first, so a
+        failing review listing cannot stop it. Every step is attempted even if
+        an earlier one fails; the first error is raised afterwards (the run
+        fails and an incident pauses the steward)."""
         errors: list[BaseException] = []
+        mine: list = []
+        if known_id is not None:
+            mine.append({"id": known_id})
+        try:
+            mine += [r for r in self.app.paginate(f"repos/{repo}/pulls/{pr['number']}/reviews")
+                     if r.get("state") == "APPROVED" and same_bot(r.get("user"), self.login) and r["id"] != known_id]
+        except Exception as err:
+            errors.append(err)
         for review in mine:
             try:
                 self.app.request("PUT", f"repos/{repo}/pulls/{pr['number']}/reviews/{review['id']}/dismissals",
@@ -1357,11 +1378,11 @@ class Steward:
             return abort("auto-merge is armed by someone else — disable it to let the steward merge")
         if checks_state(self.app, repo, sha) != "success":
             return abort("checks are no longer green")
-        done = False
+        done, approval_id = False, None
         try:
-            self.app.request("POST", f"repos/{repo}/pulls/{number}/reviews",
-                             {"commit_id": sha, "event": "APPROVE",
-                              "body": f"Merge Steward approval of `{sha}` (hub `{self.hub_sha[:12]}`)."})
+            approval_id = self.app.request("POST", f"repos/{repo}/pulls/{number}/reviews",
+                                           {"commit_id": sha, "event": "APPROVE",
+                                            "body": f"Merge Steward approval of `{sha}` (hub `{self.hub_sha[:12]}`)."})[0]["id"]
             if self.kill_active():
                 raise _Stop("kill switch turned on between approve and merge")
             self.app.request("PUT", f"repos/{repo}/pulls/{number}/merge", {"sha": sha, "merge_method": "squash"})
@@ -1374,7 +1395,7 @@ class Steward:
             return abort(f"merge refused ({err}) — approval withdrawn, re-queued")
         finally:
             if not done:
-                self.withdraw(repo, pr, "merge did not complete; approval withdrawn")
+                self.withdraw(repo, pr, "merge did not complete; approval withdrawn", known_id=approval_id)
         self.merges_left -= 1
         merged["total"] = merged.get("total", 0) + 1
         return {**decision, "reasons": decision["reasons"] + [f"merged `{sha[:12]}`"]}
