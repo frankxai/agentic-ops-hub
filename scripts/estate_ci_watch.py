@@ -83,8 +83,16 @@ def find_findings(
     runs: list[dict],
     now: datetime,
     max_red_hours: float,
+    live_workflow_ids: set[int] | None = None,
 ) -> tuple[list[str], list[int]]:
-    """Return (red-streak findings, run ids whose jobs should be checked for a budget block)."""
+    """Return (red-streak findings, run ids whose jobs should be checked for a budget block).
+
+    A deleted workflow file drops out of the repo's workflow list but its last red run
+    stays in history forever, so when live_workflow_ids is given, runs of workflows that
+    no longer exist are ignored. Dependabot runs (event "dynamic") are always judged.
+    """
+    if live_workflow_ids is not None:
+        runs = [r for r in runs if r.get("event") == "dynamic" or r.get("workflow_id") in live_workflow_ids]
     by_workflow: dict[str, list[dict]] = {}
     for run in sorted(runs, key=lambda r: r["created_at"], reverse=True):
         by_workflow.setdefault(workflow_key(run), []).append(run)
@@ -159,10 +167,12 @@ def main(argv: list[str] | None = None) -> int:
         branch = repo["default_branch"]
         try:
             runs = get(f"/repos/{full}/actions/runs?branch={branch}&per_page=100", token)["workflow_runs"]
+            workflows = get(f"/repos/{full}/actions/workflows?per_page=100", token)["workflows"]
         except urllib.error.HTTPError as err:
             findings.append(f"{full}: could not read workflow runs (HTTP {err.code})")
             continue
-        repo_findings, suspects = find_findings(full, runs, now, args.max_red_hours)
+        live_ids = {w["id"] for w in workflows}
+        repo_findings, suspects = find_findings(full, runs, now, args.max_red_hours, live_ids)
         findings.extend(repo_findings)
         for run_id in suspects:
             jobs = get(f"/repos/{full}/actions/runs/{run_id}/jobs", token)["jobs"]
