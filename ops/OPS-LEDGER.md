@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
 >
-**Last sweep:** 2026-09-19T02:43+02:00 (estate audit — CI/security/prod/hygiene) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-09-30 (repo-placement handover) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-09-30 — repo placement (YogaBook)
+
+- Product code is on `frankxai/starlight-agent-config` `main` as squash `0ac1d7e` ([PR 51](https://github.com/frankxai/starlight-agent-config/pull/51)). Files: `core/tools/repo_placement.py`, `core/tools/tests/test_repo_placement.py`. Full recap: `ops/sessions/2026-09-30.md`.
+- This repo is the progress git. `agentic-ops` is the ASPH protocol and was not edited. Linear was not synced. No placement issue existed, so none was opened. Issue 12 stays a different dossier.
+- Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is on `agent/grok/placement-handover-2026-09-30` from `origin/main` `51c57ba`.
+- Still open: placement temp-dir parent; inventory class when a control-plane worktree sits outside the control-plane folder; 127 canonical checkouts left on unmerged branches; 16 local mains that are not a fast-forward of GitHub and were not pushed. Frank-gated moves (home twins, universe, third-party clones, payment-intelligence copies, duplicate canonical origins, `repos/.git`) stay in place.
+- Fronts dated 2026-09-19 and earlier, below, were not re-derived.
+
 |||||> **Register:** Neutral (ops/fleet). REGISTER-BOUNDARIES enforced — no Professional/Mythic voice in this ledger.
 ||||||**2026-09-19 estate audit (c940):** Four read-only audits across 7 repos. **P0 GitHub Actions billing**: jobs abort in ~2s with zero steps (FrankX #220/#219 `Google API key guard`, gencreator #75) — payment/spending-limit action required, no code fix. **Secrets**: 8 open secret-scanning alerts on frankx.ai-vercel-website + arcanea-ai-app are all HISTORICAL (keys already env-var'd on main, files deleted) — rotation still required; git history retains them. **Deps**: SIS `next` 16.2.6/16.3.3 split across site+console with dual npm+pnpm lockfiles (159 alerts); library-os next 14→15 and arcanea docs/atlas astro 4→7 are major bumps, not auto-fixable. Dependabot alerts + security PRs enabled on gencreator.ai, FrankX, llm-evals. **Prod**: all 7 live sites 200, sitemaps clean, certs 4+ weeks out; frankx.ai TTFB 2.3s is the outlier. **Hygiene**: 81 open PRs / 59 drafts / 20 DIRTY / 457 branches (~364 orphan). **Fleet**: this PR expires BOOK-HEARTBEAT-20260825, retires yoga-book (dark since 2026-08-16, not forged), refreshes c940. Disk 46.5 GiB free. Scheduled LLM cron remains paused; script-only watchdogs running.
 ||||||**2026-08-10 Queen 10h wave-2 start (c940):** Disk **~52.7 GiB** PASS floor; RAM **~1 GiB free TIGHT** (serial only). Prior 08-09 window PASS. Mission `ops/sessions/2026-08-10-queen-10h-mission.md`. Prod main advanced to security #452 `ee7e7524` — prove Production deploy. R1 live. Scorecard `fleet/reports/best-state-scorecard-2026-08-10.md`. GenCreator Vercel block HOLD. ClickHouse **88.6%**. No wipe/DNS/Railway mutate.
