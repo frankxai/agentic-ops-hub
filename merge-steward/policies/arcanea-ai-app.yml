@@ -1,0 +1,81 @@
+# Merge Steward policy for frankxai/arcanea-ai-app. Rules and floors: _template.yml.
+
+version: 1
+
+default_tier: review
+
+# Tier ceiling for verified bot patch/minor bumps. Majors are always >= review.
+dependency_bumps: auto
+
+max_files: 200
+max_patch_lines: 1500
+max_diff_bytes: 200000
+
+# Most PRs the steward may merge per rolling 24h in this repo (also capped
+# estate-wide by global_daily_cap in targets.yml).
+daily_merge_cap: 10
+
+human:
+  # money, identity, secrets
+  - "**/payments/**"
+  - "**/billing/**"
+  - "**/checkout/**"
+  - "**/stripe/**"
+  - "**/polar/**"
+  - "**/auth/**"
+  - "**/*auth*.*"
+  - "**/middleware.*"
+  - "**/proxy.*"
+  - "**/*secret*"
+  - "**/*credential*"
+  # production infrastructure and DNS
+  - "**/vercel.json"
+  - "**/wrangler.toml"
+  - "infra/**"
+  - "terraform/**"
+  - "**/*.tf"
+  - "**/migrations/**"
+  - "**/CNAME"
+  - "**/Dockerfile"
+  # licence gates
+  - "**/LICENSE"
+  - "**/LICENSE.*"
+  - "**/LICENSING.md"
+  - "**/NOTICE"
+  # onchain
+  - "contracts/**"
+  - "**/*.sol"
+  # repo-specific
+  - "supabase/**"
+  - "apps/web/app/api/**"
+  - "**/renovate.json"
+
+review:
+  - "app/**"
+  - "src/**"
+  - "lib/**"
+  - "components/**"
+  - "packages/**"
+  - "apps/**"
+  - "scripts/**"
+  - "next.config.*"
+  - "tsconfig*.json"
+  - "**/*.js"
+  - "**/*.mjs"
+  - "**/*.cjs"
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.py"
+  - "**/*.sh"
+
+auto:
+  - "docs/**"
+  - "**/*.md"
+  - "**/*.mdx"
+  - "content/**"
+  - "public/images/**"
+  - "tests/**"
+  - "test/**"
+  - "**/__tests__/**"
+  - "**/*.test.*"
+  - "**/*.spec.*"

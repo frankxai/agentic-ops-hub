@@ -1,159 +1,124 @@
 # Merge Steward
 
-**Problem.** Agents open more PRs than one person can review. Green, low-risk PRs (a docs fix, a patch bump) wait days for Frank's click, while a PR that changes payouts gets the same one-line glance. Both failure modes come from one queue.
+**Problem.** Agents open more PRs than one person can review. Green, low-risk PRs (a docs fix, a patch bump) wait days for Frank's click, while a PR that changes payouts gets the same one-line glance.
 
 **Model.** Split the queue by risk, decided by rules, not by a model:
 
-- **auto** — merge when required checks are green and one steward review passes.
-- **review** — merge only when checks are green and **two** independent reviews pass (a second, adversarial prompt on a different model).
-- **human** — never merged by a machine. The steward writes a decision brief and puts it in the daily digest.
+- **auto** — merge when checks are green and one steward review approves.
+- **review** — merge only when checks are green and **two** reviews approve (a second, adversarial prompt on a different model or vendor).
+- **human** — never merged by a machine. The steward writes a decision brief and lists the PR in the daily digest.
 
-A PR's tier is computed deterministically by `scripts/merge_steward.py` from the repo's `.github/merge-policy.yml` **as it exists on the base branch**. The AI reviewers can block a merge; they can never raise a PR's tier or merge anything on their own.
+The AI reviewers can stop a merge; they can never lower a tier or merge on their own.
 
-Related: [`ESTATE-OPS-GOVERNANCE.md`](ESTATE-OPS-GOVERNANCE.md) (the per-PR Estate PR Guardian), [`PROTECTION-LAYERS.md`](PROTECTION-LAYERS.md). Rollout plan: [`MERGE-STEWARD-ROLLOUT.md`](MERGE-STEWARD-ROLLOUT.md).
-
----
-
-## 1. Two GitHub Apps: author ≠ approver
-
-GitHub forbids approving your own PR, and branch protection counts only approvals from someone other than the last pusher. The estate uses that rule instead of trusting any agent to stay honest:
-
-| App | Does | Never does |
-| --- | --- | --- |
-| `frankx-builder` | pushes agent branches, opens PRs | approves, merges |
-| `frankx-steward` | reviews, approves, enables auto-merge, opens revert PRs | writes feature code, edits workflows, changes settings |
-
-Because the two identities differ, a steward approval satisfies "1 required approval" on a PR the builder wrote, and the builder can never approve its own work. PRs the steward itself opens (auto-reverts) are always `human` tier.
-
-### Least-privilege permissions
-
-Both Apps: **Webhook → Active: off**, **Where can this GitHub App be installed: Only on this account**, install on **selected repositories only**.
-
-| Repository permission | `frankx-builder` | `frankx-steward` | Why |
-| --- | --- | --- | --- |
-| Metadata | Read (mandatory) | Read (mandatory) | |
-| Contents | Read & write | Read & write | builder pushes branches; steward merges and pushes revert branches |
-| Pull requests | Read & write | Read & write | open PRs / review, approve, enable auto-merge |
-| Issues | Read & write | No access | steward labels and issues go through the workflow's `GITHUB_TOKEN` |
-| Workflows | No access | No access | neither App can change CI; workflow edits need a human-held token |
-| Administration | No access | No access | neither App can touch branch protection or settings |
-| Secrets, Actions, Environments | No access | No access | |
-
-The steward never gets `Workflows` or `Administration`, so even a fully compromised steward cannot weaken the checks that gate it. A consequence: if a steward-merged commit touched a workflow file, the auto-revert push is refused and the incident issue says "revert by hand" — acceptable, since workflow edits that touch permissions are already `human`.
-
-### Creating the Apps (Frank, ~10 min, once)
-
-For each App (`frankx-steward` first; `frankx-builder` when agents switch to it):
-
-1. Open **https://github.com/settings/apps/new** (personal account `frankxai`).
-2. **GitHub App name**: `frankx-steward` (names are global; if taken use `frankx-merge-steward` and set `steward_login: frankx-merge-steward[bot]` in the caller).
-3. **Homepage URL**: `https://github.com/frankxai/agentic-ops-hub`.
-4. **Webhook**: untick **Active**.
-5. **Permissions → Repository permissions**: set exactly the column from the table above; leave everything else at *No access*. Organization and account permissions: none.
-6. **Where can this GitHub App be installed?** → **Only on this account** → **Create GitHub App**.
-7. On the App page copy the **Client ID** (starts `Iv23`). Scroll to **Private keys** → **Generate a private key** → a `.pem` downloads.
-8. Left sidebar **Install App** → **Install** next to `frankxai` → **Only select repositories** → pick the pilot repos → **Install**.
-9. Per repo (Settings → Secrets and variables → **Actions** → *New repository secret*), or from a terminal:
-   ```sh
-   gh secret set STEWARD_APP_ID      -R frankxai/<repo> --body "Iv23..."   # the Client ID
-   gh secret set STEWARD_PRIVATE_KEY -R frankxai/<repo> < frankx-steward.<date>.private-key.pem
-   gh secret set ANTHROPIC_API_KEY   -R frankxai/<repo>                     # if not already set
-   ```
-   Repeat the three under the **Dependabot** secrets tab (`gh secret set ... --app dependabot`) — Dependabot-triggered runs only see Dependabot secrets.
-10. Delete the local `.pem` after storing it (or keep it in the password manager only).
-
-`STEWARD_APP_ID` holds the **Client ID**: `actions/create-github-app-token@v3` deprecated the numeric App ID in favour of `client-id`; the secret name stays for estate consistency.
+Rollout: [`MERGE-STEWARD-ROLLOUT.md`](MERGE-STEWARD-ROLLOUT.md). Related: [`ESTATE-OPS-GOVERNANCE.md`](ESTATE-OPS-GOVERNANCE.md), [`PROTECTION-LAYERS.md`](PROTECTION-LAYERS.md).
 
 ---
 
-## 2. Risk tiers — `.github/merge-policy.yml`
-
-Template: [`templates/merge-policy.yml`](../templates/merge-policy.yml). The file documents its own syntax; the rules:
-
-1. **Built-in human paths**, not overridable by policy: `.github/merge-policy.yml`, `.github/workflows/merge-steward*.yml`, `CODEOWNERS`, `.github/dependabot.yml`, `.env*`, `*.pem`, `*.key`.
-2. Per changed file (and its pre-rename path): a `human` glob → human; else a recognised single-package **patch/minor** dependency bump on a manifest/lockfile → `dependency_bumps` (default `auto`); else a `review` glob → review; else an `auto` glob → auto; else `default_tier` (default `review`).
-3. **Workflow files** (`.github/workflows/*`): any added/removed line touching `permissions:`, `secrets.`, `pull_request_target`, `workflow_run`, `id-token`, a `: write` scope, `environment:`, `GITHUB_TOKEN`/`github.token`, or self-hosted runners → **human**. A changed `uses:` (third-party action swap) → at least **review**. A deleted workflow, or a diff GitHub will not show (too large) → **human**. Everything else follows the policy (CI config such as a Node version bump is `auto`).
-4. The PR's tier is the **most restrictive** file tier. More than `max_files` changed files → human.
-5. Labels `steward:human` or `steward:hold` (applied by a person) force human.
-6. Fork PRs, PRs authored by the steward, and PRs with no file list → human.
-
-**Dependency bumps.** Parsed from Dependabot (`Bump x from 1.2.3 to 1.2.4`) and Renovate (`Update dependency x to v1.2.4`) titles. Patch and minor → `dependency_bumps`. Major, a `0.x` minor (allowed to break under semver), grouped updates, Renovate titles without a level, or a bump PR that also touches non-manifest files → review. A lockfile-only change without a bump title is not auto (a lockfile can point at any tarball).
-
-**Fail closed.** A missing policy, a policy that fails to parse (the parser accepts a small YAML subset on purpose), a wrong `version`, a missing API key, missing App secrets, a reviewer that returns no parseable verdict, or any count the workflow could not fetch → no merge.
-
-### What belongs in `human`
-
-Smart contracts and anything onchain · payments, billing, checkout, payouts · auth, sessions, middleware · secrets and `.env*` · branch protection, CODEOWNERS · workflow `permissions:`/secrets changes · licence files and licence gates · production infrastructure, `vercel.json`, DNS/`CNAME`, database migrations · agent permission config (`.claude/settings*.json`, hooks, `AGENTS.md`, `CLAUDE.md`) · **the merge steward itself** (its caller workflow and the policy).
-
----
-
-## 3. The pipeline
-
-Reusable workflow [`.github/workflows/merge-steward.yml`](../.github/workflows/merge-steward.yml), called by [`templates/merge-steward-caller.yml`](../templates/merge-steward-caller.yml) in each repo.
+## 1. Architecture: one central steward, nothing in target repos
 
 ```
-pull_request ─▶ classify (base-branch policy, no AI)            ─┐
-               ─▶ review  primary (Claude, read-only tools)       │
-                          adversarial (review tier only:          │
-                           different model, or OpenAI if keyed)   │
-               ─▶ decide ─ kill switch? tier? verdicts? mode?     │
-                           incident open? daily cap? secrets?   ◀─┘
-                    shadow ─▶ sticky comment "would merge / hold"
-                    live   ─▶ approve AS frankx-steward + gh pr merge --auto --squash --match-head-commit
-schedule     ─▶ digest: one durable "Merge Steward digest" issue, a comment per day
-workflow_run ─▶ revert_guard: main red after a steward merge ─▶ revert PR + incident issue
+agentic-ops-hub (main)                          target repos (allow-listed)
+┌──────────────────────────────────────┐        ┌───────────────────────────┐
+│ .github/workflows/merge-steward.yml  │        │ no steward workflow        │
+│   schedule */10 · workflow_dispatch  │  API   │ no steward policy          │
+│   environment: merge-steward (main)  │───────▶│ no steward secrets         │
+│ scripts/merge_steward.py             │ App    │ frankx-steward App         │
+│ merge-steward/targets.yml            │ token  │   installed (selected repos)│
+│ merge-steward/policies/<repo>.yml    │        └───────────────────────────┘
+└──────────────────────────────────────┘
 ```
 
-- **Classify** reads the policy from the base commit and the file list (with patches) from the API. The script comes from `agentic-ops-hub` at `steward_ref`, never from the PR, so a PR cannot edit the classifier that judges it.
-- **Review** jobs hold only `contents: read` / `pull-requests: read`. They run [`anthropics/claude-code-action@v1`](https://github.com/anthropics/claude-code-action) in automation mode (`prompt` + `claude_args`) with `--allowedTools "Read,Grep,Glob,Bash(git diff:*),Bash(git log:*),Bash(git show:*)"` and a `--json-schema`, so the verdict arrives as the action's `structured_output` (`verdict`, `summary`, `issues[]`, `brief`). Bot-authored PRs need `allowed_bots` (default `frankx-builder,dependabot,renovate`). The primary review runs for every tier (on `human` it writes the decision brief); the adversarial review runs only for `review`.
-- **Decide** is pure logic (`merge_steward.py decide`, unit-tested). An `approve` that lists a critical/high issue is downgraded to `request_changes`. In live mode, the token for the steward App is minted with `actions/create-github-app-token@v3` scoped to `contents: write, pull-requests: write` only.
-- **Head pinning.** On every new push the classify job first disarms auto-merge; the approval and `--match-head-commit` bind the merge to the reviewed SHA. Turn on **Dismiss stale pull request approvals when new commits are pushed** so a push after approval also removes the approval.
-- **No loops.** Labels and digest/incident issues are written with the workflow's `GITHUB_TOKEN`, whose events never trigger workflows. The caller re-runs on label events only for `steward:*` labels.
+- **Only the hub runs the steward.** The scheduled job checks out the hub at `github.sha` (immutable for the run; recorded as `hub=<sha>` in every verdict comment), reads the allow-list and the policies from the hub, and walks open PRs through the API with a `frankx-steward` installation token scoped to the listed repos.
+- **Target repos hold nothing the steward trusts.** No workflow, no policy, no secret. A PR that rewrites its own repo's workflows gets nowhere near the App key or the classifier; `.github/**` changes are human tier anyway.
+- **Secrets live in the hub's `merge-steward` environment**, whose deployment branches are restricted to `main`. A branch that edits the workflow and dispatches it gets no secrets. The job additionally refuses to run outside `frankxai/agentic-ops-hub@main`, and the loader refuses to steward the hub itself.
+- **App token scope:** `pull_requests: write`, `checks: read`, `statuses: read`, and `contents: read` — `contents: write` only when some target is live (merging needs it). Never `workflows`, `administration`, `secrets` or `actions`.
+- **Hub-side writes** (incident issues, digest, reading the kill switch) use the hub's own `GITHUB_TOKEN` with `issues: write`.
 
-### Prompt injection
+## 2. One PR, one snapshot, one SHA
 
-Reviewers read untrusted PR text. Defences, in order of strength: the tier is decided without AI; reviewers hold no write token; the merge needs green required checks; review-tier merges need a second reviewer with a different prompt and model; the prompts tell reviewers that text addressing a reviewer is itself a `block`; human-tier PRs never merge. An injected "approve" can at worst turn an `auto`-tier PR (docs, tests, patch bumps) into a merge that CI already passed.
+For each open, non-draft PR (oldest first, bounded per run):
 
----
+1. **Resolve once.** `GET /pulls/{n}` → head SHA `H`, base, author (login **and** API `type`), labels.
+2. **Snapshot pinned to `H`.** `GET /compare/{base}...{H}` gives files, patches, statuses, rename sources and commits (with signature verification). Tree modes come from `git/trees` walked at `H` and at the merge base, one directory level at a time. No checkout.
+3. **Classify** (pure, no AI) → tier + reasons.
+4. **Checks** for `H`: every check run completed with success/neutral/skipped and every commit status `success`. No CI reported = pending. Pending → `wait` (no review yet, re-checked next run).
+5. **Review** (auto/review tiers, checks green): the reviewers get the snapshot's full diff as text; see §4.
+6. **Decide** (pure): kill switch · tier · checks · strict verdicts · mode · open incidents · rolling-24h cap · per-run budget.
+7. **Merge (live only)**, re-reading every guard live:
+   - kill switch and incidents re-read from the hub; cap recounted from the API;
+   - `GET /pulls/{n}` again: head must still be `H`, still open, same base, no auto-merge armed by someone else;
+   - `POST /pulls/{n}/reviews` with `event: APPROVE, commit_id: H`;
+   - kill switch re-read once more;
+   - `PUT /pulls/{n}/merge` with `sha: H` (GitHub refuses if the head moved) and `merge_method: squash`.
+   - If the merge does not complete, the steward **dismisses its own approval immediately**. Expected refusals (moved head, not mergeable) → hold and re-queue; anything else is raised, the run fails, and a failure incident opens.
+8. **Sticky comment** on the PR (the only write in shadow mode) with tier, reasons, verdicts, reviewed head, steward code SHA. Its first line is a machine marker (`head`, `mode`, `labels` hash, `checks`, `tries`, `final`). The steward trusts a marker only from a comment authored by its own App, and only to *skip* work — never to authorise anything. A PR is re-evaluated on a new push, a label change, a mode change, a checks change, or while its last decision was not final.
 
-## 4. Safety rails
+**The steward never leaves authority standing.** Every run, in every mode, it lists its own `APPROVED` reviews on open PRs in each target and dismisses them (disabling any auto-merge riding on them). In normal operation there are none — approve and merge happen seconds apart in the same run.
+
+## 3. Risk tiers
+
+Policy file per repo: `merge-steward/policies/<repo>.yml` (template [`_template.yml`](../merge-steward/policies/_template.yml)), referenced from [`merge-steward/targets.yml`](../merge-steward/targets.yml).
+
+**Built-in human, in every repo, not overridable** (case-insensitive, old and new path of renames, deletions included):
+`.github/**` (all workflows, actions, CODEOWNERS, dependabot config) · `**/CODEOWNERS` · the steward's own paths (`**/merge_steward*`, `**/merge-steward*`, `**/merge-policy*`, and directories of those names) · agent instructions and config (`**/.claude/**`, `**/CLAUDE*.md`, `**/AGENTS.md`, `**/GEMINI.md`, `**/.cursor/**`, `.cursorrules`, `**/.codex/**`, `**/.gemini/**`, `.mcp.json`, `.agent-harness.json`) · package-manager and git config (`.npmrc`, `.yarnrc*`, `.pnpmfile.cjs`, `pip.conf`, `.gitattributes`, `.gitmodules`, `.husky/**`, `.pre-commit-config.yaml`, `.devcontainer/**`) · `.env*`, `*.pem`, `*.key`.
+
+**Also always human:**
+
+| Condition | Why |
+| --- | --- |
+| path with a control character, non-NFC unicode, `..`, `\`, leading `/`, empty segment | cannot be matched safely |
+| symlink (`120000`) or submodule (`160000`) on either side, or a tree mode the steward could not read | content is elsewhere |
+| any file without a patch (binary, too large, pure rename) | reviewers could not see it |
+| a file over `max_patch_lines`, or the whole diff over `max_diff_bytes` | reviewers must see all of it — nothing is ever truncated |
+| ≥ 300 files (API limit), incomplete compare, or over `max_files` | incomplete list |
+| fork PR, base other than the default branch, PR authored by the steward | out of scope |
+| label `steward:human` / `steward:hold` (or a policy `human_labels` entry) | a person said so |
+| unparseable policy, unknown key, wrong version, missing policy | fail closed |
+
+**Dependencies.** A manifest or lockfile change is auto/review only when **all** hold, else human:
+
+- author login is `dependabot[bot]` or `renovate[bot]` **and** the API user `type` is `Bot`; every commit is authored by that bot and signature-verified;
+- the PR touches only manifests and lockfiles, and the title names exactly one package (grouped updates → human);
+- every changed manifest line is that package's version string (plain semver range; no URL, git, `file:`, `npm:` alias, script, new dependency or source change); versions agree with the title;
+- lockfile lines reference only the public registries (`registry.npmjs.org`, `registry.yarnpkg.com`, PyPI, crates.io, the Go proxy) — no `git+`, `file:`, `link:`, `tarball:`, `http://`, other hosts, or registry settings.
+
+Then patch/minor → the policy's `dependency_bumps` (default auto); major, `0.x` minor or unknown → at least review. `dependency_bumps` can only raise the tier (`human` keeps even majors human). A manifest or lockfile changed alongside other files is human: adding or moving a dependency is a human call.
+
+**Policy globs.** Per file the strictest matching list wins (`human` > `review` > `auto`); unmatched → `default_tier`, which never drops below `review`. The PR's tier is its strictest file. Numeric limits are clamped to built-in ceilings. A policy can only make the steward stricter.
+
+## 4. Reviewers and prompt injection
+
+- Reviewers are **plain API calls** — Anthropic Messages (`claude-opus-5` primary, `claude-sonnet-5` adversarial) or, when `OPENAI_API_KEY` and `MERGE_STEWARD_OPENAI_MODEL` are set, OpenAI for the adversarial pass. **No tools, no workspace, no checkout**, so no PR-supplied `.claude/` settings, hooks, `CLAUDE.md` or skills can load. Raw HTTP on purpose: the job holding merge authority installs no packages.
+- **Instructions come only from the hub** (`PRIMARY_PROMPT`, `ADVERSARIAL_PROMPT` in the script). The PR (title, file names, diff — including any instruction files, which are human tier anyway) arrives in the user turn between delimiters carrying a fresh random nonce, labelled as untrusted data.
+- **Strict verdicts.** Output must be exactly `{verdict ∈ {approve, request_changes}, summary: str, brief: str, issues: [{severity ∈ {critical, high, medium, low}, file: str, detail: str}]}` — requested via JSON-schema output and re-validated. Missing/extra keys, wrong types, unknown enums, invalid or truncated JSON, a non-`end_turn` stop reason (e.g. `max_tokens`, `refusal`) → invalid → no approval. `approve` with a critical/high issue → `request_changes`.
+- An invalid verdict is retried on later runs at most 3 times per head, then the hold is final until the author pushes.
+- **Residual risk:** a successful injection can at worst turn an `auto`/`review`-tier PR whose checks are green into a merge. Everything that changes authority, CI, dependencies or agent config is human before any model sees it, and review-tier needs two models to be fooled.
+
+## 5. Safety rails
 
 | Rail | Mechanism |
 | --- | --- |
-| Kill switch | Repo variable `MERGE_STEWARD=off` → every job is skipped. Takes effect on the next event; to stop a queued auto-merge also run `gh pr merge <n> --disable-auto`. |
-| Mode | `MERGE_STEWARD_MODE` unset or anything but `live` = **shadow**: sticky comment with the verdict and what it *would* do; no approval, no merge. |
-| Daily cap | `daily_merge_cap` in the policy (default 10). Counts PRs labelled `steward:merged` merged today (UTC) plus those still queued. |
-| Auto-revert | Caller's `workflow_run` on the CI workflow. If a push to main fails, the head commit belongs to a `steward:merged` PR, and the same workflow was green on the commit before, the steward opens a revert PR (human merges it) and an incident issue labelled `steward:incident`. |
-| Circuit breaker | While any `steward:incident` issue is open, the steward approves and merges nothing in that repo. Closing the issue resumes it. |
-| One merge authority | Where the steward is `live`, keep `ESTATE_AUTONOMY` below `auto` so the Estate PR Guardian's TRIVIAL auto-merge does not run beside it. |
+| Kill switch | Hub variable `MERGE_STEWARD=off` **or** any open hub issue labelled `steward:stop`. The run then dismisses every standing steward approval, disables auto-merge riding on it, and does nothing else. Also re-read immediately before approving and again before merging. |
+| Mode | Live only if hub variable `MERGE_STEWARD_MODE=live` **and** the target's `mode: live`. Otherwise shadow: sticky comments only — no labels, approvals, merges, reverts or branches in target repos. |
+| Circuit breaker | Any open hub issue labelled `steward:incident` pauses all merges estate-wide. Opened automatically on a failed run or on a steward-caused red main; closing it resumes. |
+| Daily cap | Rolling 24h count of PRs whose `mergedBy` is the steward App (GraphQL, type `Bot`) across all targets, against `min(policy daily_merge_cap, global_daily_cap)`. Recounted live right before each merge; runs are serialised (`concurrency: merge-steward`), so the count cannot race. No labels involved. |
+| Per-run budgets | `max_merges_per_run`, `max_reviews_per_run`, `max_prs_per_run` in `targets.yml`. |
+| Auto-revert (live) | Each run checks each live target's default-branch tip. If it is red, its parent green, and the tip is the merge commit of a PR whose `mergedBy` is the steward App, the steward opens a hub incident and a revert PR built through the API (a commit whose tree is the parent's tree). A human merges the revert. |
+| Fail loudly | Unexpected API errors are raised, the run fails, and a `steward:incident` issue opens (deduplicated). Missing App secrets = the job skips with a notice (no authority, nothing to do). |
+| One merge authority | Where a repo is live, keep `ESTATE_AUTONOMY` below `auto` so the Estate PR Guardian's TRIVIAL auto-merge does not run beside it. |
 
----
+## 6. Daily digest
 
-## 5. Daily digest
-
-One issue per repo titled **Merge Steward digest**, created once and commented daily (the durable-output-sink pattern of `fleet-watch.yml` and `estate-ci-watch.yml`). Each comment has only:
-
-- stats: merged by steward (24h), steward reverts and revert rate (target < 2%), red-main hours (age of the oldest open steward incident), open PRs and their median age, human-queue size;
-- a checklist of open PRs labelled `steward:needs-human`, oldest first. The decision brief sits in each PR's steward comment.
-
----
-
-## 6. Labels
-
-| Label | Set by | Meaning |
-| --- | --- | --- |
-| `steward:needs-human` | steward | human tier; listed in the digest. Removed automatically if a later push re-tiers the PR. |
-| `steward:merged` | steward | approved and auto-merge enabled; counted for the cap and the revert guard |
-| `steward:human` / `steward:hold` | a person | take this PR out of the steward's hands |
-| `steward:incident` | steward | main went red after a steward merge; merges paused while open |
-| `steward:revert` | steward | the auto-revert PR |
+At 06:17 UTC (or `workflow_dispatch` with `digest: true`) the run posts to one hub issue identified by the hidden marker `<!-- merge-steward-digest -->` **and** author `github-actions[bot]` (never by title): merges by the steward (24h), open incidents, PRs seen, the human queue across all targets oldest first, and PRs not evaluated this run. Open PRs are paginated fully.
 
 ## 7. Files
 
 | Path | Role |
 | --- | --- |
-| `scripts/merge_steward.py` | classify · decide · digest · optional OpenAI second opinion (stdlib) |
-| `tests/test_merge_steward.py` | tiers, dependency bumps, workflow permission changes, fail-closed paths, decisions, digest |
-| `.github/workflows/merge-steward.yml` | reusable workflow |
-| `templates/merge-steward-caller.yml` | per-repo caller |
-| `templates/merge-policy.yml` | policy template |
+| `.github/workflows/merge-steward.yml` | the only steward runtime |
+| `scripts/merge_steward.py` | classify · verdicts · decide · API snapshot · merge · revert guard · digest (stdlib) |
+| `merge-steward/targets.yml` | allow-list, modes, estate-wide limits |
+| `merge-steward/policies/*.yml` | per-repo tiers (`_template.yml` documents the rules) |
+| `tests/test_merge_steward.py` | tier floors and every audited bypass, strict verdicts, decisions, and the run against a fake GitHub (TOCTOU, revocation, shadow writes, cap, digest, revert attribution) |
+
+Changing any of these is a hub PR that Frank merges; the hub is never stewarded.

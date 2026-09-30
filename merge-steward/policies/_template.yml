@@ -1,0 +1,101 @@
+# Merge Steward policy template. Copy to merge-steward/policies/<repo>.yml and
+# reference it from merge-steward/targets.yml. Design: docs/MERGE-STEWARD.md.
+#
+# Policies live ONLY in agentic-ops-hub. Target repos hold nothing the steward
+# reads as configuration, so a PR cannot loosen the rules that judge it.
+#
+# A policy can only make the steward stricter:
+#   * Built-in protected paths are always human in every repo and cannot be
+#     listed away: .github/**, **/CODEOWNERS, the steward's own files, agent
+#     instruction/config files (.claude/**, CLAUDE*.md, AGENTS.md, .cursor/**,
+#     .codex/**, ...), package-manager config (.npmrc, .yarnrc*, ...),
+#     .gitattributes, .gitmodules, .env*, *.pem, *.key.
+#   * Symlinks, submodules, binary or oversized patches, incomplete file lists,
+#     non-canonical or non-NFC paths are always human.
+#   * Manifests/lockfiles are auto/review only for a verified Dependabot or
+#     Renovate PR that changes nothing but the named package's version.
+#     Otherwise human.
+#   * default_tier never drops below `review`; numeric limits are clamped to
+#     the built-in ceilings (max_files 250, max_patch_lines 3000,
+#     max_diff_bytes 400000, daily_merge_cap 50).
+#
+# Per file the strictest matching glob wins (human > review > auto); unmatched
+# files get default_tier. The PR's tier is its strictest file. Globs are
+# case-insensitive; `*` stays in one directory, `**` crosses directories,
+# `**/x` also matches `x` at the root. Unknown keys fail the policy (= human).
+
+version: 1
+
+default_tier: review
+
+# Tier ceiling for verified bot patch/minor bumps. Majors are always >= review.
+dependency_bumps: auto
+
+max_files: 200
+max_patch_lines: 1500
+max_diff_bytes: 200000
+
+# Most PRs the steward may merge per rolling 24h in this repo (also capped
+# estate-wide by global_daily_cap in targets.yml).
+daily_merge_cap: 10
+
+human:
+  # money, identity, secrets
+  - "**/payments/**"
+  - "**/billing/**"
+  - "**/checkout/**"
+  - "**/stripe/**"
+  - "**/polar/**"
+  - "**/auth/**"
+  - "**/*auth*.*"
+  - "**/middleware.*"
+  - "**/proxy.*"
+  - "**/*secret*"
+  - "**/*credential*"
+  # production infrastructure and DNS
+  - "**/vercel.json"
+  - "**/wrangler.toml"
+  - "infra/**"
+  - "terraform/**"
+  - "**/*.tf"
+  - "**/migrations/**"
+  - "**/CNAME"
+  - "**/Dockerfile"
+  # licence gates
+  - "**/LICENSE"
+  - "**/LICENSE.*"
+  - "**/LICENSING.md"
+  - "**/NOTICE"
+  # onchain
+  - "contracts/**"
+  - "**/*.sol"
+
+review:
+  - "app/**"
+  - "src/**"
+  - "lib/**"
+  - "components/**"
+  - "packages/**"
+  - "apps/**"
+  - "scripts/**"
+  - "next.config.*"
+  - "tsconfig*.json"
+  - "**/*.js"
+  - "**/*.mjs"
+  - "**/*.cjs"
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.py"
+  - "**/*.sh"
+
+auto:
+  - "docs/**"
+  - "**/*.md"
+  - "**/*.mdx"
+  - "content/**"
+  - "public/images/**"
+  - "tests/**"
+  - "test/**"
+  - "**/__tests__/**"
+  - "**/*.test.*"
+  - "**/*.spec.*"
