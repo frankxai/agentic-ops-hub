@@ -153,7 +153,7 @@ Read docs/research/memory-rd-brief-2026-10-01.md on starlight-memory main and th
 ops/sessions/2026-10-01-memory-retrieval-v2.md. Be proactive: run E1 first (grow the real-prompt
 held-out set to ~150 by pooled labelling from ~/.starlight/memory/prompts, frozen hash split, Frank
 spot-checks 20%), then E2 (Granite embedder; fix the cache key to include the model id first).
-Every claim goes through eval/paired.mjs; finish #19 (referee) before citing any benchmark number.
+Every claim goes through eval/paired.mjs; then run the referee hybrid lane (`node eval/referee/run.mjs --embeddings on`, one run per process) when RAM allows; cite LongMemEval only via receipted scorecards.
 ```
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)

@@ -27,16 +27,27 @@ real vault served 13 tools, and hybrid recall plus reconcile returned the right 
 `npm install` (lockfile unchanged) added `@hono/node-server` and the embedder; preflight allowed it
 as an `interactive` workload with a 1.5 GB reserve while `build` was on HOLD. Suite: 138/138.
 
-## In flight
+## Referee lane (#19, merged after 7 Codex rounds)
 
-- **#19 referee lane** (draft): official LongMemEval-S retrieval scorer port, streaming dataset
-  reader, hash-pinned download, receipts. Codex found the reported 94.7% recall_any@5 inflated: the
-  runner dropped no-target questions that upstream keeps as zeros. The agent is correcting the
-  number plus 4 P2s (pinned numpy with UV_CACHE_DIR, exact cache-path check, output-path validation,
-  dirty-run receipts). Do not cite 94.7%.
-- **Security note:** before the hash pin existed, the referee agent executed the upstream
-  `eval_utils.py` once, unverified. It was fetched from a commit-pinned URL in the MIT LongMemEval
-  repo, and a classifier flagged the action. It is now refused unless its sha256 matches.
+- Official LongMemEval-S retrieval scorer, ported from upstream `eval_utils.py` @ `6a92d1a` with
+  aggregation matching `run_retrieval.py` @ `6a92d1a`. A crosscheck against the real upstream Python
+  found 0 mismatches.
+- **Headline, lexical BM25 at session level: recall_any@5 = 84.5% on all 470 non-abstention
+  questions** (receipt `e65ab62de9399f5e`). The ceiling under the pinned rule is 89.1%: 51 no-target
+  questions are unfindable by construction.
+- The earlier 94.7% came from upstream's later `cf920ec` rule, which drops no-target questions. It
+  is reported only as a labelled variant.
+- No hybrid run yet. It needs about 1 GB of RSS, unmeasured; run `node eval/referee/run.mjs
+  --embeddings on` once per process.
+- Hardening:
+  - the dataset and scorer are sha256-pinned and verified before use;
+  - numpy is pinned with hashes, and uv's cache is kept in a temp dir;
+  - every write goes through a real-path guard with exclusive create;
+  - each run gets its own memory home;
+  - dirty-tree receipts hash the diff.
+- **Security note:** before the hash pin existed, the agent executed the upstream `eval_utils.py` once
+  unverified. It came from a commit-pinned URL in the MIT-licensed LongMemEval repo, and a classifier
+  flagged it. Later it installed pinned numpy from PyPI for the crosscheck, by design.
 
 ## R&D for the next agent
 
