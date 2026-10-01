@@ -4,6 +4,25 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01: estate fundamentals continuation (Codex)
+
+The full estate audit and implementation goal is active. One local ledger repair
+is verified: 17 reproduced validation errors resolved with exact backup,
+preserved unfinished work, tested rollback/concurrent-change refusal and an
+independent Anthropic conditional PASS whose requirements were checked. A later
+external append was preserved and the ledger still passed (74 signals, 20
+objectives, four candidates). The daily job remains paused.
+
+Current blockers: four missing canonical config dependencies and 11 of 30 broken
+Codex index references; canonical agent identities still pending reconciliation;
+effective hook review, live eval pilot, brand team bindings and cloud trace proof
+remain open. Census counts establish indexed availability only. Existing records:
+[config 40](https://github.com/frankxai/starlight-agent-config/issues/40),
+[config 46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Handover: `ops/sessions/2026-10-01.md`, section "Estate fundamentals continuation".
+Private evidence: `.starlight/objective-ledger/review-inputs/estate-fundamentals-20261001/`.
+Next action is reviewed source recovery followed by the existing eval pilot.
+
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
 - The two placement review notes are on `frankxai/starlight-agent-config` `main` as squash `9c87802` ([PR 75](https://github.com/frankxai/starlight-agent-config/pull/75)), merged 2026-10-01T00:25:35Z. Tests take a system temp directory. A control-plane worktree outside the control-plane folder is class `control-plane-root` with blocker `control-plane-worktree`. 13 tests passed. The runtime module at `C:/Users/frank/.starlight/workspace-bootstrap/repo_placement.py` matches blob `416a4d863c2c9ef917dd6a46ba497791b380c63c`. No product issue: the slice is merged. Issue 12 stays a different dossier. The occupied primary checkout was not fetched, so its local `origin/main` ref can still read `99b1273`.

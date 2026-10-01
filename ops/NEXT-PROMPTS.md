@@ -17,6 +17,26 @@
 
 ## Current
 
+**Estate fundamentals continuation, Codex**
+```text
+Continue goal codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f at its full
+scope: governance, all instructions/skills, graphs, hooks, loops, teams, local/cloud
+execution, each brand's product development, GitHub integration, evals and telemetry.
+Read this hub's ops/sessions/2026-10-01.md, "Estate fundamentals continuation",
+and private objective-ledger/review-inputs/estate-fundamentals-20261001/AUDIT.md
+and completion-matrix.json. Existing config issues 40 and 46 track this evidence.
+The ledger schema repair passed; preserve its backup and the later external append.
+The full goal is not complete. Do not equate indexed files or enabled jobs with
+semantic correctness, active execution or successful products.
+First reconcile the four missing canonical config dependencies and 11 broken
+Codex index references with reviewed sources and active owners. Preserve occupied
+primaries and paused jobs; run route guard/check with explicit files and fresh
+machine/storage admission before changes. Then continue existing eval PR16 and
+prove one existing brand product workflow with trace, independent acceptance,
+budget enforcement, cancellation and recovery. Preserve the Langfuse Railway stop.
+The stale historical knowledge candidate needs an actual review by 8 October.
+```
+
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
 You are Claude Fable 5.1. Pin model id claude-fable-5-1. If this cloud seat
