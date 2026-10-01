@@ -20,43 +20,56 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read hub Brand and team source reconciliation and earlier hook/graph/eval/lane
-sections; private AUDIT/matrix and brand-team-audit-20261001/REPORT.md.
-All14 axes incomplete. Registrybd4d2f2 18 collections:13 brands/26 products,
-54 repo declarations,24 source pins,42 named local dirs, zero canonical agents,
-nine producers/five studios. Five skill/projection pairs match.16 product repo
-memberships/10 unmatched are capabilities, not assignments. Nulls mean unverified,
-not global absence. Respect issue51 Queen receipts report/#81; actual identity,
-liveness and accepted artifacts require checks. No new roster/store/scheduler.
-GenCreator main dacbb436 bound to current production/alias. CI36874985350 succeeds:
-845 unit/101 files,118 browser passed/2 skipped. PR115/117 and local-authoring67
-merged; PR95 e48f9845 separately845 unit/121 browser passed/2 skipped, non-draft
-open/UNSTABLE at read. Re-query current heads. Preserve programme owner's local
-branch/recovery files; acknowledge steward/maker/different checker before its
-owned source reconciliation and real save/reopen/edit/export/return acceptance.
-Issue5 retains ADR010/007, auth/migration/tenant/OAuth/provider and managed HOLD.
-Demand answers go as notes to Growth Core while shared report reads KV; source
-events are not usable demand/trace proof. Resolve existing reporting owner and
-verify actual evidence before using counts or admitting expansion.
-Creator Launch current main1288db33 differs historical receipt source; provider
-production SHA absent, anonymous alias302 SSO. Existing issue3 owns domain/source
-identity and real clean ZIP/install/license/buyer journey; no protection/DNS/
-pricing/promotion edits authorized by this audit. All13 brand root HTTP checks
-are bounded observations, not accepted product proof. Keep frozen/rights holds.
-Static audit PASS plus author-applied nonblocking clarification receipts; no
-reviewer execution. Product issue51/Gen5/Launch3 saves exist. Wider semantics,
-graph/loop/eval/local-cloud/observability/identity acceptance remains open.
-ConfigPR84 guard3f2ba5d actual Linux/Windows26 each and source PASS, installed
-guards unchanged; PR79 native adapter/runtime and PR80 instruction projection
-remain gates. Original08 branch preserved; source WT uses hook branch3f2ba5d.
-Private graph/swarm50 tests, evalV3 aee573d3 and laneV5 retain canonical integration,
-durable authority/recovery/artifact/admission gates. SIS150 original20-task/
-host/transport/restart release program unchanged. Re-query PPPR4 advanced by peers.
-Fresh PP/storage before heavy work; prior13.93% bounded, no new installs/worktrees/
-fanout/unattended work. Preserve paused jobs/stopped Langfuse and all foreign tasks.
-Guard/check exact paths and own retained lane; never age-clear writer locks.
-Complete an accepted traced brand workflow while preserving full scope; save hub
-and existing product issues. Read named source evidence, never unseen chats.
+Read hub Creator save and demand reporting source defects, Brand and team source
+reconciliation, earlier hook/graph/eval/lane sections and private AUDIT/matrix.
+All14 axes incomplete; do not replace full scope with these source fixtures.
+GenCreator main dacbb436 source-bound production prior receipt; programme now
+published c0ffae43 with no PR at read, local a96f708 adds two docs commits and
+untracked owner recovery work. Preserve owner checkout; no silent staging/takeover.
+Actual programme saveProject returns success on dropped writes; private patch
+e1d8da46 reads storage API value back, exact apply/staticPASS.18 safety behavior
+checks,9 defect reproductions,3 known-gate cases. Same-call readback is not durable
+or atomic. Precheck/write race remains; write success/readback error leaves caller
+expected.current stale and retry falsely says another tab. Reconcile actual caller
+and exclusive/transactional state with acknowledged maker/different checker before
+real source/edit/save/reload/new-session/reopen/export/return browser acceptance.
+Keep issue5 ADR010/007 auth/migration/tenant/OAuth/provider/managed HOLD, source
+rights, exact-revision review, full CI/mobile/reduced-motion and customer gates.
+PR115/117/67 merged at prior read; PR95 e48f9845 open/UNSTABLE with successful
+existing sourceCI/preview. Re-query current state, never equate greenCI with outcome.
+Demand issue62 owns proposed O1, not ratified strategy/staffed team. Cloud97 separate.
+Legacy package/control root4fd exact files; current command main7d78c434/opsbd4d2f20
+scoped complete trees have no demand-capture/growth-capture/growth-core paths.
+Guard refuses root product writes. Resolve canonical writer/backend/standard IDs
+before integration, import or personal-data migration. Local graph23 and Empire26
+have different IDs/purposes; no blind merge or invented aliases. Gen answer notes
+go to Growth Core, report reads KV; backend globally absent is not proved.
+Actual-source synthetic tests find duplicate inflation, answer overwrite (handler
+included), raw count/remaining-seats inference, pain-only undercount, unsupported
+imported price classified would-pay and empty rows labeled traffic without proof.
+Malformed HTTP200 error response yields NaN; normal Upstash400 errors are rejected.
+Handler validates bands; expected price is not commitment/conversion. No real
+demand/ranking/customer claims. Preserve consent/receipt IDs/test exclusions; fix
+atomic unique-email assignment/partial updates/typed result+deadline behavior,
+withholding/report classification, then approved test capture-to-report per62.
+Original staticPASS plus author clarifications/fixture bindings, exact candidate
+unchanged. Reviewer no execution; source tests neither whole CI nor runtime proof.
+Existing issue5/62 saves readback matched; public hub is sanitized only.
+Registry13 brands/26 products/zero canonical agents/nine producers/five studios;
+5 guide/projection pairs and16/10 repo memberships are capability metadata, not
+assigned/running teams. All13 root HTTP checks are availability only; Queen51 five
+receipts were owner claims not independently inspected. Preserve issue81 fail gate.
+ConfigPR84 source3f2ba5d prior Linux/Windows26+source PASS, installed hooks unchanged;
+PR79 native load/timeout/denial adoption and PR80 instructions remain gates. Original
+08 branch preserved. Graph/swarm50 private tests, evalV3 aee573d3 and laneV5 remain
+canonical/durable authority/recovery/artifact/admission gates. Original SIS15020-task/
+host/transport/restart programme unchanged; PPPR4 advanced by peers, re-query.
+Fresh PP/storage before heavy work; no new install/worktree/fanout/unattended work.
+Disabled Canvas/SIS/Substrate and stopped/paused jobs/Langfuse remain unchanged.
+Guard/check exact paths, full retained ownership and actual.lock; no TTL death or
+age cleanup. Preserve all prompts/source tasks and unfinished work. Continue all
+brand and rule/skill/graph/loop/eval/local-cloud/observability acceptance. Save hub
+and existing product issues; verify one accepted traced workflow with real evidence.
 ```
 
 [Starlight integration continuation, Codex]

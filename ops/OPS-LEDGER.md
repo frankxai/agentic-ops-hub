@@ -112,6 +112,19 @@ PASS with nonblocking clarifications; private raw data preserved. Existing
 [Launch3](https://github.com/frankxai/creator-launch-os/issues/3#issuecomment-5940199624) saves verified; hub handover here.
 All14 estate axes incomplete; session Brand and team source reconciliation.
 
+Creator/demand source continuation: published Gen programmec0ff/local a96 preserved;
+private readback repair e1d8da46 applies exact bytes/staticPASS, unintegrated.18
+safety checks/9 defect reproductions/3 expected open-gate cases; readback does not
+prove reload or transaction. Legacy demand4fd source reproduces count/update/
+withholding/report defects, absent from scoped current command7d78/opsbd4d trees.
+Gen notes-to-Growth Core versus KV remains unresolved; no live/customer proof.
+Existing [Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940944686) and
+[demand62](https://github.com/frankxai/agentic-ops/issues/62#issuecomment-5940945180) saved/readback match. Preserve proposed
+O1/Cloud97/full door and managed creator gates. All14 axes remain incomplete.
+Pickup: session Creator save and demand reporting source defects; private
+creator-demand-recovery-20261001/REPORT.md. Actual canonical ownership, transaction,
+recovery, demand report, accepted artifact/outcome/trace/cost remain next work.
+
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
 - Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
