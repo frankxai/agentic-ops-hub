@@ -70,12 +70,13 @@ video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server
 claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
 ```
 
-**[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
+**[F0b · starlight-memory R&D]** — make the next memory gain measurable, then win it
 ```
-In repos/starlight-memory on main: when `pp preflight --workload build` allows, run `pnpm i`
-(adds @hono/node-server so cloud-gateway tests pass, and @huggingface/transformers). Then
-`node eval/memory-recall.mjs --set all --gate` and compare hybrid vs lexical on the 4 misses.
-Work the 9 items in <vault>/review/queue.md with Frank; each item names its action.
+Read docs/research/memory-rd-brief-2026-10-01.md on starlight-memory main and the session note
+ops/sessions/2026-10-01-memory-retrieval-v2.md. Be proactive: run E1 first (grow the real-prompt
+held-out set to ~150 by pooled labelling from ~/.starlight/memory/prompts, frozen hash split, Frank
+spot-checks 20%), then E2 (Granite embedder; fix the cache key to include the model id first).
+Every claim goes through eval/paired.mjs; finish #19 (referee) before citing any benchmark number.
 ```
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
