@@ -45,8 +45,12 @@ visibility matches GitHub; diverged arcanea retained with salvage description.
 Source Vercel preview dpl_HoPFWbnZ28aBiQp9jVRWGTrVGsBC is CANCELED at ignored-build.
 No actual deployed trace/rendered acceptance. No extra deploy or settings change.
 Keep other-owner #451 preview decision and #488 workflow candidate intact.
-Next bounded work: actual trace/artifact verification and source-matched preview
-when available; trace imports/resources/implicit development consumers before
+Next bounded work: test and map candidate references/example.md links to their
+validated source folder at the full commit; the current detail-page ReactMarkdown
+uses default relative links. All four candidates include them; zero ready entries
+means no presently reachable ready-skill regression. Preserve external links and
+reject traversal. Actual trace/artifact verification and source-matched preview
+remain open. Trace imports/resources/implicit development consumers before
 current-tree rights remediation and eligible folds. No rights/ready promotion,
 blind deletion or licence choice. Other public assertions remain review work.
 
