@@ -19,31 +19,28 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue the full goal codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f:
-governance, all instructions/skills, graphs, hooks, loops, teams, local/cloud,
-each brand's products, GitHub integration, evals and attributable telemetry.
-Read this hub session's Estate fundamentals, catalog repair and PP admission
-sections plus private audit AUDIT.md/completion-matrix.json. All fourteen axes
-remain incomplete. Keep the live ledger's prior measurements dated; preserve
-unfinished objectives, paused jobs and the 8 October knowledge review.
-PP candidate 7cc20b9: issue3 and draftPR4 in frankxai/peak-performance, targeting
-the published Hermes admission-control producer branch. Eighteen actual-source
-and fixture-MCP cases pass; independent Anthropic reviews pass. Runtime is not
-projected. Full dependency tests/typecheck/build and producer/main reconciliation
-remain open. Disk is below15%, so no new installs, worktrees or build fanout.
-Legacy starlight/tools/lane.mjs removes writer locks by age: preserve any existing
-lock before invoking mutations; reconcile its owner/source and fix the behavior
-with explicit provenance. Also reproduce the pre-existing MCP cwd findings.
-Next repair missing config policy/reference sources and browser process ownership
-in existing config issue46. Nine catalog references were repaired at pinned main
-9c87802; 28/30 readable does not establish activation, prerequisites or quality.
-Source utility 1c39664 remains on codex/orchestration-integration-20260923.
-Registry main9a029f4 has unchanged collections from the previous pin; no agent
-identity import or brand runtime binding is certified. Preserve occupied primaries.
-Run route guard/check and separate ownership/admission checks before writes.
-Then continue the existing eval pilot and prove one brand workflow with accepted
-artifact, trace, independent acceptance, budgets, cancellation and recovery.
-Preserve the Langfuse Railway stop and verify Cloud wiring without restarting it.
+Continue existing task codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
+Read the hub session's Instruction source recovery and preceding repair sections,
+then the existing private AUDIT.md and completion matrix. Keep the full goal and
+unfinished work active; do not promote indexed counts into estate verification.
+Config08d6e80, draftPR80 and issue46: three restored policies plus three corrected
+guides, exact staged-source Anthropic PASS. Main integration, owned projection
+and fresh-task loading remain open. Codex junctions still target the occupied
+primary; installer/doctor manage SDS only. Preserve other agents' branches.
+Old catalog utility1c39664 and pinned9c87802 snapshot remain intact. Two skills,
+estate ownership and storage sensor sources still need review. Registry main
+bd4d2f2 collections are unchanged; accepted decisions govern. ConfigPR47 separately
+tracks the old media summary. Never import historical adapters blindly.
+Lane runtime issue frankxai/starlight-command#4: preserve any existing lock before
+mutations. Reconcile canonical source ownership; isolate heartbeat and ledger
+fixtures; reproduce age/concurrency concerns before a reviewed repair.
+PP7cc20b9, issue3/draftPR4 remain source-only; dependency tests/build/typecheck,
+producer/main integration and runtime projection still open.
+Disk14.69% is bounded: no new installs, worktrees or build fanout. Recheck admission
+for heavy work. Preserve paused jobs and the Langfuse Railway stop.
+Continue the existing eval pilot and prove one brand workflow with an accepted
+artifact, attributable trace, budgets, cancellation and recovery. Run routing
+and separate ownership gates before writes. Save issue evidence and this hub.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews

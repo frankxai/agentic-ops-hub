@@ -30,21 +30,29 @@ owned runtime projection remain open. Disk crossed below 15%; installs, worktree
 adds and build fanout are held. The pressure receipt is recorded privately.
 Source review also found age-based writer-lock deletion in the legacy lane helper
 and pre-existing MCP cwd response/existence-check concerns; those remain open.
-Registry main `9a029f4` has unchanged collections from the earlier pin.
+Registry main `bd4d2f2` was read in the instruction slice; collections remain unchanged from the prior pin.
 
-Current blockers: four missing canonical config dependencies now have exact retained
-source commits but remain unreviewed for promotion; two missing skill sources;
-stale required ledger/harness references and browser process-ownership instructions;
-canonical agent identities still pending reconciliation;
-effective hook review, live eval pilot, brand team bindings and cloud trace proof
-remain open. Census counts establish indexed availability only. Existing records:
-[config 40](https://github.com/frankxai/starlight-agent-config/issues/40),
-[config 46](https://github.com/frankxai/starlight-agent-config/issues/46).
-Handover: `ops/sessions/2026-10-01.md`, section "Estate fundamentals continuation".
-Private evidence: `.starlight/objective-ledger/review-inputs/estate-fundamentals-20261001/`.
-Next action is the bounded policy/reference correction in config issue 46, followed
-by the existing eval pilot. The catalog repair verifies source readability only;
-consumer tolerance, native activation and wider runtime behavior remain unverified.
+Instruction source update: config `08d6e80`,
+[draft PR80](https://github.com/frankxai/starlight-agent-config/pull/80), restores
+three policies and corrects three guides. Independent Anthropic PASS follows two
+preserved BLOCK rounds; six Git-index bindings, frontmatter/reference checks,
+whitespace and staged secret scan pass. Doctor is presence-only19/20, exit0.
+Source integration and runtime adoption remain open; junctions still point at the
+occupied primary and installer/doctor cover SDS only. Two release-control checks
+passed at readback; draft PR merge state remains blocked.
+
+Current blockers: missing estate/storage sources and two absent skill sources;
+owned projection/fresh-task loading; canonical agent identities; effective hooks,
+eval pilot, brand bindings and cloud trace proof. Legacy lane preservation and
+concurrency repair now have [issue4](https://github.com/frankxai/starlight-command/issues/4).
+Full estate acceptance remains incomplete. Existing records:
+[config40](https://github.com/frankxai/starlight-agent-config/issues/40),
+[config46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Handover: `ops/sessions/2026-10-01.md`, Instruction source recovery section.
+Private source/review evidence remains in the existing objective-ledger audit.
+Next: integrate and verify the reviewed instruction projection, reconcile remaining
+sources and repair isolated lane ownership, then continue the eval pilot and brand
+workflow proof. Historical ledger/catalog measurements above were not remeasured.
 
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
