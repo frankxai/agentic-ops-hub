@@ -29,10 +29,12 @@ Frank wants one control plane for every agent (Claude, Codex, Hermes, Grok, Anti
 
 ## Still open from this slice
 
-- **[agentic-ops#81](https://github.com/frankxai/agentic-ops/pull/81)** (Claude review scope). Codex FAIL findings are posted on the PR. Fix them or close the PR.
-- **[arcanea-ai-app#466](https://github.com/frankxai/arcanea-ai-app/pull/466)** (waitlist and real 404s). Draft with conflicts. Rebase it onto `main` after #458's migration. Signups return an honest 503 until Upstash is set up.
+- **[agentic-ops#81](https://github.com/frankxai/agentic-ops/pull/81)** (Claude review scope). A second agent fixed the Codex findings and merged in Grok's parallel commits; head is `c9c1a76`, `verify` passes, and 9 of 13 new workflow tests fail on the old head. Each finding is mapped to its fixing commit in a PR comment. Needs an exact-head review by a different harness.
+- **[arcanea-ai-app#466](https://github.com/frankxai/arcanea-ai-app/pull/466)** (waitlist and real 404s). Main is merged in, and #458's migration is unchanged. `dc6a9c1` fixes the `/pricing` Founding Circle form, which got a 400 after the merge. `6c4e354` applies Prettier to 2 files. Still a draft; needs an exact-head review. Flagged, not fixed: with no Supabase env vars, signups report success without storing anything. That affects preview and dev only.
 - **`agent/claude/queen-chain`** has one commit not on main, the `sweep2-academy-0926` plan. Grok has since taken over that worktree as `agent/grok/resume-identity` and carries the same commit. Leave it with Grok.
 - **Estate root** branch `agent/claude/watchdog-http-probe`: `tools/Deploy-Watchdogs.ps1` is uncommitted. This repo cannot be pushed until Frank rules on it.
+
+- **Hub triage** (15 open against a budget of 10) is posted on [#84](https://github.com/frankxai/agentic-ops-hub/pull/84#issuecomment-5923373985). Land: #88, #83, #76. Close-stale: #69, #66, #63. Close-superseded: #64, #59. Needs-Frank: #78, #73, #71, #67, #53.
 
 ## Estate review load (measured 2026-10-01)
 
