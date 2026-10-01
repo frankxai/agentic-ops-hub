@@ -4,6 +4,12 @@
 >
 **Last sweep:** 2026-09-30 (applied AI lab) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01 — GenInvestor open-source build (YogaBook)
+
+- Four repos carry the work, all draft PRs, none merged: `frankxai/GenInvestor` #1 (`f34ffd5`), `geninvestor-skills` #1 (`22c53d9`), `awesome-investor-agent-skills` #8, private incubator `starlight-investor-portal` #1 (`dccf345`). Apache-2.0, local-first, no hosted service, no new brand. Full record: `ops/sessions/2026-10-01-geninvestor.md`.
+- Verified: 148 TypeScript and 90 Python tests, planted-error corpus 100% with zero false alarms, CI matrix green. Not verified: SEC live path (HTTP 403 on first call), any cross-provider review (preflight HOLD all session). Next builder brief: `docs/geninvestor/CLOUD-AGENT-BRIEF.md` on the incubator branch.
+- Open for Frank: merge after review, Actions-created PRs on the awesome repo, SEC contact identity, counsel brief (#25), Vercel site ownership (#38).
+
 ## 2026-09-30 — applied AI lab (YogaBook)
 
 - Production on Railway perceptive-curiosity was rechecked and not changed. Langfuse 3.213.0 health returned 200, the trace API returned 401, LiteLLM has no public domain, and ClickHouse has no TCP proxy. MinIO and ParadeDB stayed stopped. Bill $82.74 spent, $119.28 estimated, hard cap $130, not over the limit. Full recap: `ops/sessions/2026-09-30-applied-ai-lab.md`.

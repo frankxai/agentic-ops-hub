@@ -29,6 +29,18 @@ anonymous model calls are rejected. If the Railway estimate climbs
 through $125, say so. Do not change the $130 cap. Issue 73 tracks this.
 ```
 
+**[GenInvestor · cloud agent on frankxai/starlight-investor-portal]** — review, absorb, build the dashboard
+```
+Clone frankxai/starlight-investor-portal, branch
+worktree-agent-claude-geninvestor-evals. Read docs/geninvestor/CLOUD-AGENT-BRIEF.md
+first and obey its hard rules. You are not the author of the three public PRs,
+so start with P0: review GenInvestor #1, geninvestor-skills #1 and
+awesome-investor-agent-skills #8 as a skeptical buyer, fix what you find, then
+work the build queue in order (Form 4/13F, price data, model adapters, then the
+Next.js dashboard with an evidence drawer on every figure). Draft PRs only. Do
+not merge, do not push to main, do not use any personal email.
+```
+
 ## 🥇 Highest leverage first
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
