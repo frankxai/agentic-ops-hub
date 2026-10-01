@@ -13,7 +13,7 @@
 
 ---
 
-> **2026-10-01:** two current prompts. The placement review-notes prompt is done (starlight-agent-config PR 75, `9c87802`). The July prompts under "Highest leverage first" were not re-derived. PR 81, still open, inserts two prompts above F1. This file does not copy them.
+> **2026-10-01:** two current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
 
@@ -26,7 +26,8 @@ in the PR. Do not request Mythos 5.1.
 Read first, then build. This prompt is not permission to merge the queue.
 - https://github.com/frankxai/agentic-ops-hub/pull/83
   ops/sessions/2026-10-01-merge-gates-handover.md
-- https://github.com/frankxai/agentic-ops-hub/pull/81
+- https://github.com/frankxai/agentic-ops-hub/pull/81 merged as 977d04a
+- https://github.com/frankxai/agentic-ops-hub/pull/86 Langfuse stop, 3cb34c1
 - ops/sessions/2026-10-01.md on this continuation branch
 
 Placement is finished. starlight-agent-config main is squash
@@ -47,9 +48,10 @@ Leave these checkouts alone:
 - agent/grok/continue-2026-10-01, agent/grok/placement-review-notes,
   agent/grok/placement-handover-2026-09-30
 
-Do not merge frankx.ai-vercel-website drafts 724 and 725, Dependabot major
-bumps, PR 81, or PR 83 until you have re-read the diff and the checks are
-green. PR 83 had an empty check rollup and mergeStateStatus BLOCKED.
+Do not merge frankx.ai-vercel-website drafts 724 and 725, or Dependabot
+major bumps. PR 81 is already merged (977d04a). Leave PR 83 until you have
+re-read the diff and the checks are green. PR 83 had an empty check rollup
+and mergeStateStatus BLOCKED.
 Do not merge the 127 unmerged canonical branches, and do not push the 16
 local mains that are not a fast-forward of GitHub. Do not batch-merge drafts.
 
@@ -61,9 +63,12 @@ Queen cards in queen/inbox/_hold-missing-agent-20260930/ stay held until
 each card has an agent and one child repo, and free RAM is at least 4 GiB.
 Do not spawn a local model under that floor.
 
-Lab doors stay with Frank. Langfuse sign-in, Vercel CLI sign-in, LiteLLM
-private until anonymous model calls are rejected, Railway cap $130 unchanged.
-If the estimate climbs through $125, say so. Do not paste keys. Issue 73.
+The Railway Langfuse stack is stopped. Web, worker, Langfuse Postgres, and
+ClickHouse were removed on 2026-10-01. Restart policy is NEVER. Disks stayed.
+Do not start them. The old health URL returns 404. Create a Langfuse Cloud
+project key and do not paste it. LiteLLM stays private until anonymous model
+calls are rejected. Do not change the $130 cap. Elasticsearch and Temporal
+stay up until Frank names them. Issue 73. Sign the Vercel CLI back in.
 
 Re-query gh before you trust this order. One product at a time. Name the
 product you have to beat. After the first draft, one pass whose only job is
@@ -92,19 +97,44 @@ batch-merge. Do not turn enforce_admins off on any other repo. Elsewhere,
 squash without --admin only when the protection rules already allow it.
 ```
 
-**[applied AI lab · Railway and starlight-agent-config]** — finish the human doors, leave main alone
+**[applied AI lab · Railway and starlight-agent-config]** — Cloud key and Vercel login, leave the stopped stack down
 ```
-The lab is already running on Railway project perceptive-curiosity.
-Do not merge starlight-agent-config PR 72 into main. Its base is
-agent/grok/repo-placement-gate. Sign in to Langfuse at
-https://langfuse-web-production-840d.up.railway.app, create a project
-API key, and do not paste it. Then sign the Vercel CLI back in.
-Leave LiteLLM private until you say to publish it, and only after
-anonymous model calls are rejected. If the Railway estimate climbs
-through $125, say so. Do not change the $130 cap. Issue 73 tracks this.
+The Railway Langfuse stack is stopped. Langfuse web, the worker, the
+Langfuse Postgres, and ClickHouse had their deployments removed on
+2026-10-01. Restart policy is NEVER. Disks stayed. Do not start them.
+Do not merge starlight-agent-config into origin/main. The record is
+c2154ba on agent/grok/repo-placement-gate.
+
+Create a Langfuse Cloud project API key and do not paste it. Do not use
+https://langfuse-web-production-840d.up.railway.app. That health URL
+returns 404. When the key exists, set LiteLLM success and failure
+callbacks to langfuse and set LANGFUSE_HOST to the Cloud URL.
+
+Then sign the Vercel CLI back in. Leave LiteLLM private until you say
+to publish it, and only after anonymous model calls are rejected. Do
+not change the $130 cap. Elasticsearch and Temporal stay up until you
+name them. Issue 73 tracks the Cloud key.
 ```
 
 ## 🥇 Highest leverage first
+
+**[F0 · gencreator-skills]** — list video-social-studio in the Claude plugin directory
+```
+Done already: live config on main with tier applied; codex/rova landed and pushed (4fd0383, includes
+the control-plane patch). Do not rerun land-rova.ps1 or the patch.
+gencreator-skills #5 (license + network disclosure) is merged (466d694). Next: submit at
+claude.ai/directory/manage -> Submit new -> Plugin bundle -> frankxai/gencreator-skills, folder
+video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server in a subfolder).
+claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
+```
+
+**[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
+```
+In repos/starlight-memory on main: when `pp preflight --workload build` allows, run `pnpm i`
+(adds @hono/node-server so cloud-gateway tests pass, and @huggingface/transformers). Then
+`node eval/memory-recall.mjs --set all --gate` and compare hybrid vs lexical on the 4 misses.
+Work the 9 items in <vault>/review/queue.md with Frank; each item names its action.
+```
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
 ```
