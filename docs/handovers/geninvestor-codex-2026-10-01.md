@@ -27,9 +27,9 @@ The first four PRs are stacked onto their original agent branches. Read full anc
 
 [GenInvestor packages CI](https://github.com/frankxai/GenInvestor/actions/runs/36803943062) passed all ten jobs at ebe4452: Node 22.18/24 on Linux/macOS/Windows, Python, policy parity, ownership and dashboard build. [Skills validation](https://github.com/frankxai/geninvestor-skills/actions/runs/36803898921) passed at 6eb38e7. [Catalogue validation](https://github.com/frankxai/awesome-investor-agent-skills/actions/runs/36803367698) passed at 3c1e1c3.
 
-The catalogue [link check](https://github.com/frankxai/awesome-investor-agent-skills/actions/runs/36803367807) initially failed on two existing Shields badge endpoints: a stars timeout and last-commit HTTP 503. All other checks in that report succeeded. A focused failed-job retry was requested without disabling checks or accepting 503. Re-fetch its final result.
+The catalogue [link check](https://github.com/frankxai/awesome-investor-agent-skills/actions/runs/36803367807) initially failed on two existing Shields badge endpoints: a stars timeout and last-commit HTTP 503. All other checks in that report succeeded. The focused failed-job retry passed on attempt two; checks remained enabled and HTTP 503 was not accepted.
 
-The private [packages run](https://github.com/frankxai/starlight-investor-portal/actions/runs/36804244314) was in progress when this receipt was prepared; its completed jobs were passing. Re-fetch final status. This docs-only receipt follows the feature commit; use the commit links above for the exact checked source.
+The private [packages run](https://github.com/frankxai/starlight-investor-portal/actions/runs/36804244314) passed at ad24097, including the platform matrix, Python, policy parity, ownership and dashboard. This docs-only receipt follows the feature commit; use the commit links above for the exact checked source.
 
 ## Remaining gates
 
