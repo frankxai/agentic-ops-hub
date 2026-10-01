@@ -13,9 +13,28 @@
 
 ---
 
-> **2026-10-01:** two current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
+> **2026-10-01:** three current prompts (fleet control plane added by Claude). Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
+
+**[fleet control plane · agentic-ops + estate]** — land, then grow the queue
+```
+Read ops/sessions/2026-10-01-fleet-control-plane.md in frankxai/agentic-ops-hub
+first, then re-measure every PR it names with gh. Work in this order:
+1. Land only through node C:/Users/frank/starlight/tools/pr-gate.mjs
+   signoff/merge; the reviewer harness must differ from the author. Never
+   force-push or self-merge. hub PR budget is 15 open against 10.
+2. agentic-ops#81 (head c9c1a76) and arcanea-ai-app#466 (head 6c4e354) have
+   fixes pushed; each needs an exact-head review by a different harness, then
+   land. Hub triage table is on agentic-ops-hub#84; close its 5 close-* PRs.
+3. Burn down the ~100-PR estate review load: per repo, land what passes CI and
+   an independent review, close superseded or stale drafts with a one-line
+   reason, rebase what is still wanted. Report counts before and after.
+4. Turn the next 3 provable production defects into chain plans: commit a
+   planner-owned *.acceptance.js first, prove it fails today and passes a
+   throwaway fix, then queue the plan in starlight/queen/chains/.
+Human gates in the session file stay with Frank. Do not kill Hermes processes.
+```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
@@ -128,12 +147,13 @@ video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server
 claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
 ```
 
-**[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
+**[F0b · starlight-memory R&D]** — make the next memory gain measurable, then win it
 ```
-In repos/starlight-memory on main: when `pp preflight --workload build` allows, run `pnpm i`
-(adds @hono/node-server so cloud-gateway tests pass, and @huggingface/transformers). Then
-`node eval/memory-recall.mjs --set all --gate` and compare hybrid vs lexical on the 4 misses.
-Work the 9 items in <vault>/review/queue.md with Frank; each item names its action.
+Read docs/research/memory-rd-brief-2026-10-01.md on starlight-memory main and the session note
+ops/sessions/2026-10-01-memory-retrieval-v2.md. Be proactive: run E1 first (grow the real-prompt
+held-out set to ~150 by pooled labelling from ~/.starlight/memory/prompts, frozen hash split, Frank
+spot-checks 20%), then E2 (Granite embedder; fix the cache key to include the model id first).
+Every claim goes through eval/paired.mjs; then run the referee hybrid lane (`node eval/referee/run.mjs --embeddings on`, one run per process) when RAM allows; cite LongMemEval only via receipted scorecards.
 ```
 
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
