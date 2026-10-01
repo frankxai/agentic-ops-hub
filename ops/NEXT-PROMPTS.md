@@ -42,6 +42,24 @@ through $125, say so. Do not change the $130 cap. Issue 73 tracks this.
 
 ## 🥇 Highest leverage first
 
+**[F0 · gencreator-skills]** — list video-social-studio in the Claude plugin directory
+```
+Done already: live config on main with tier applied; codex/rova landed and pushed (4fd0383, includes
+the control-plane patch). Do not rerun land-rova.ps1 or the patch.
+gencreator-skills #5 (license + network disclosure) is merged (466d694). Next: submit at
+claude.ai/directory/manage -> Submit new -> Plugin bundle -> frankxai/gencreator-skills, folder
+video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server in a subfolder).
+claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
+```
+
+**[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
+```
+In repos/starlight-memory on main: when `pp preflight --workload build` allows, run `pnpm i`
+(adds @hono/node-server so cloud-gateway tests pass, and @huggingface/transformers). Then
+`node eval/memory-recall.mjs --set all --gate` and compare hybrid vs lexical on the 4 misses.
+Work the 9 items in <vault>/review/queue.md with Frank; each item names its action.
+```
+
 **[F1 · frankx.ai-vercel-website]** — fixes the broken flywheel (R1/ARC-204)
 ```
 The 28 new articles (Batches A/B/C) have no links to gencreator.ai. Audit every
