@@ -21,9 +21,9 @@
 ```
 Read ops/sessions/2026-10-01-fleet-control-plane.md in frankxai/agentic-ops-hub
 first, then re-measure every PR it names with gh. Work in this order:
-1. Land agentic-ops-hub#72 after an independent review of its head (expected
-   6413f30): node C:/Users/frank/starlight/tools/pr-gate.mjs signoff/merge,
-   reviewer harness must differ from the author. Never force-push or self-merge.
+1. Land only through node C:/Users/frank/starlight/tools/pr-gate.mjs
+   signoff/merge; the reviewer harness must differ from the author. Never
+   force-push or self-merge. hub PR budget is 14 open against 10.
 2. Fix the Codex findings on agentic-ops#81, or close it with the evidence.
    Rebase arcanea-ai-app#466 onto main (keep #458's migration).
 3. Burn down the ~100-PR estate review load: per repo, land what passes CI and

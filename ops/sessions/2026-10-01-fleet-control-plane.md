@@ -25,10 +25,10 @@ Frank wants one control plane for every agent (Claude, Codex, Hermes, Grok, Anti
 - [starlight-you#9](https://github.com/frankxai/starlight-you/pull/9): dead links
 - [go-agenticincome#23](https://github.com/frankxai/go-agenticincome/pull/23): drift CI
 - [frankx.ai-vercel-website#763](https://github.com/frankxai/frankx.ai-vercel-website/pull/763): licence evidence pinned to an immutable commit. Grok and Codex both signed off on `665b178`.
+- [agentic-ops-hub#72](https://github.com/frankxai/agentic-ops-hub/pull/72): integer bus priorities. Codex failed the first head because the branch was stale and would have reactivated `BOOK-HEARTBEAT-20260825`. I merged `origin/main` in (no force push); Codex passed `6413f30`, and it merged through `pr-gate`.
 
 ## Still open from this slice
 
-- **[agentic-ops-hub#72](https://github.com/frankxai/agentic-ops-hub/pull/72)** (integer bus priorities). Codex failed the first head: the branch was stale and would have reactivated `BOOK-HEARTBEAT-20260825`. Fix: merged `origin/main` in as `6413f30` (no force push). The diff is now only the 4 priority lines. CI `verify` passes. The 2 `test_topology_health` failures also happen on `main`. Next: a Codex re-review on `6413f30`, then `pr-gate.mjs signoff` and `merge`.
 - **[agentic-ops#81](https://github.com/frankxai/agentic-ops/pull/81)** (Claude review scope). Codex FAIL findings are posted on the PR. Fix them or close the PR.
 - **[arcanea-ai-app#466](https://github.com/frankxai/arcanea-ai-app/pull/466)** (waitlist and real 404s). Draft with conflicts. Rebase it onto `main` after #458's migration. Signups return an honest 503 until Upstash is set up.
 - **`agent/claude/queen-chain`** has one commit not on main, the `sweep2-academy-0926` plan. Grok has since taken over that worktree as `agent/grok/resume-identity` and carries the same commit. Leave it with Grok.

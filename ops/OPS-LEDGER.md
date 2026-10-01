@@ -7,8 +7,8 @@
 ## 2026-10-01 — fleet control plane (YogaBook, Claude)
 
 - Shared verifier, chained dispatch and patched dispatcher are live on the queue (agentic-ops `main` `f278176`, [PR 69](https://github.com/frankxai/agentic-ops/pull/69)). 5 verified records are on `queen/receipts`. Full recap: `ops/sessions/2026-10-01-fleet-control-plane.md`.
-- Landed: [ai-architect-academy#37](https://github.com/frankxai/ai-architect-academy/pull/37) (built by the queue), [starlight-you#9](https://github.com/frankxai/starlight-you/pull/9), [go-agenticincome#23](https://github.com/frankxai/go-agenticincome/pull/23), [frankx.ai-vercel-website#763](https://github.com/frankxai/frankx.ai-vercel-website/pull/763), agentic-ops #79.
-- Open: [hub#72](https://github.com/frankxai/agentic-ops-hub/pull/72) (main merged in as `6413f30` after a Codex FAIL; waiting for re-review), [agentic-ops#81](https://github.com/frankxai/agentic-ops/pull/81) (Codex FAIL posted), [arcanea-ai-app#466](https://github.com/frankxai/arcanea-ai-app/pull/466) (conflicting).
+- Landed: [ai-architect-academy#37](https://github.com/frankxai/ai-architect-academy/pull/37) (built by the queue), [starlight-you#9](https://github.com/frankxai/starlight-you/pull/9), [go-agenticincome#23](https://github.com/frankxai/go-agenticincome/pull/23), [frankx.ai-vercel-website#763](https://github.com/frankxai/frankx.ai-vercel-website/pull/763), agentic-ops #79, [hub#72](https://github.com/frankxai/agentic-ops-hub/pull/72) (Codex FAIL on the stale head, then PASS on `6413f30`).
+- Open: [agentic-ops#81](https://github.com/frankxai/agentic-ops/pull/81) (Codex FAIL posted), [arcanea-ai-app#466](https://github.com/frankxai/arcanea-ai-app/pull/466) (conflicting).
 - Estate review load: about 100 open PRs across about 60 repos. The 7 human gates are listed in the session file.
 - This sweep is on `agent/claude/fleet-handover-2026-10-01` from `origin/main`. Primary checkout stays `agent/hermes/fleet-task-contract-v1`.
 
