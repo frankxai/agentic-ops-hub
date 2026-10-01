@@ -319,3 +319,28 @@ PR #487 remains draft/BEHIND. [Issue receipt](https://github.com/frankxai/arcane
 appends this final observation to the earlier phase record. Current prompt now treats
 this run as terminal; no rerun/ready/merge requested. Independent review, rights,
 behavioral evaluation and accepted production/creator proof remain open.
+
+
+## 2026-10-01 — Arcanea creator smoke and launcher pickup (Codex)
+
+- App draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487), head
+  `2ba6309aad2ead8225a8eab8ccf1cad0cdac5d7b`: four isolated outputs exposed
+  source-boundary failures; four instructions/examples refined; one continuity
+  rerun avoids the observed repair failure. Five unedited artifacts/receipts,
+  $0.3390966 reported list equivalent, no billed-spend claim or readiness.
+- Eight Node 22 tests, four skill validations, source/hash/format/secret checks
+  pass. Raw .md evidence caused the prior CI formatting failure; exact .txt
+  storage corrected it. [CI 36884998748](https://github.com/frankxai/arcanea-ai-app/actions/runs/36884998748)
+  completed SUCCESS at this head: all four required checks plus Install. Rendered
+  gallery/browser checks skipped; PR remains draft, zero ready skills.
+- Scoped final-package source review timed out at 180 seconds with zero output;
+  no sign-off/model/cost receipt. Smaller complete scopes next, with independent
+  cases/repeats and authentic creator work. [#276 save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5934864583).
+- Queued private launcher patch now recorded here: 29 mocked tests and read-only
+  apply check pass at 027fe963. Root selects discovery/install, source identity
+  repo/root/sha. Still unapplied: origin unresolved and foreign writer branch.
+  Patch hash/path and prior [issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5933946047)
+  are in the session. No remote guessed, archive, license or production change.
+- Full task active; other refined workflows, rights/Heart decisions, donor folds,
+  plugin/MCP consumers and creator/revenue/release proof remain open. Session
+  appended and only the current Arcanea fenced prompt replaced; other fronts kept.
