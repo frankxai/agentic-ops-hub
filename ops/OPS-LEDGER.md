@@ -265,3 +265,15 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 ## Arcanea source consolidation, 2026-10-01
 
 Codex task `01a0f74f-8bad-7db1-ab06-fd89b5faec84` remains active. App review branch pushed at `64a6e3859eddeeecf60d1b08e030e75fa89196b0`: committed-source inventory and full repo/skills/plugin/MCP/community/revenue proposal. Two Node tests, formatting and secret scan passed. Proposed curated root is `packages/arcanea-skills/skills`; one public Arcanea integration repo, no mirror/new Arcanea repos. Shared dependency ownership remains until reviewed migration. No license, archive, canon, installed plugin, production or commerce change. Full app CI and independent provider/installed-harness proof remain open. Source/rulings: [program #276 comment](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5931137792). Pickup and remaining decisions: `ops/sessions/2026-10-01.md`, Arcanea prompt in `ops/NEXT-PROMPTS.md`. Do not overwrite the Claude launcher lane; obtain rights/Heart rulings and review source survivors next.
+
+### Creator candidates and installer continuation
+
+App candidate branch now at `b48f6ccf94f276a7df3eb03d48f4bf2119dfda2c`.
+Four creator workflows have pending passports and original examples; zero ready/installable.
+Installer/API use the catalog, preserve support files, refuse overwrites/junctions and bind
+declared evidence to source bytes. Package is private; legacy folders remain for review.
+Eight installer tests, two existing audit tests, four UTF-8 skill validations, formatting and
+staged secret scan pass locally. CI, different-harness sign-off, behavioral evaluation and
+rights decisions remain open. [#276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5931868496).
+Hub lane initially occupied, then cleared and saved here. Launcher missing-origin/owner hold
+persists. Full objective active; next evaluate pinned candidates independently before promotion.

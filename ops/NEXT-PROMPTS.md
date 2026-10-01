@@ -21,8 +21,8 @@
 
 ```text
 Continue Codex task 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and Arcanea issue #276.
-Read the proposal and source-audit scripts at arcanea-ai-app commit
-64a6e3859eddeeecf60d1b08e030e75fa89196b0, branch
+Read the proposal, source audit and creator-candidate implementation at app commit
+b48f6ccf94f276a7df3eb03d48f4bf2119dfda2c, branch
 agent/codex/arcanea-source-consolidation-20261001. Worktree:
 C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 The broader community/revenue goal remains active. This is proposed policy,
@@ -31,13 +31,20 @@ Keep one public Arcanea integration source; no new Arcanea repo or mirror.
 Reuse packages/arcanea-skills/skills as the proposed curated root. Preserve
 shared protocol, authoring, graph and durable-runtime ownership until reviewed
 contract migration. Respect #408 integration order and #427 quality work.
-Next: review exact source survivors/support files and coordinate launcher root
+Four candidates exist in the existing root: world-build, continuity-check,
+scene-to-media and quest-adapt. Zero ready skills; package private, metadata
+internal. Rights, behavioral evaluation and independent review remain pending.
+Authored Tideglass examples are not independent evaluations. Installer/API use
+the catalog and preserve support files; old folders remain excluded for review.
+Next: fresh behavioral requests with saved outputs/failure cases against pinned
+bytes, independent review, exact source reconciliation; coordinate launcher root
 support with its existing owner. skill-bundles has no origin and the launcher
 worktree is on agent/claude/skill-bundles; do not overwrite it. Root must control
 both discovery and installation, and merge keys must include repo/root/sha.
 Obtain Frank's rights and Heart-frequency rulings before applying either.
 #278 owns generated canon; #283 owns world write safety. Use those contracts.
-Tests/format/secret scan passed locally; independent provider review, app CI,
+Eight installer tests, two audit tests, four UTF-8 skill validations, format and
+secret scan passed locally; independent provider review, app CI,
 actual installs and community/revenue proof remain open. No PR was added to
 the over-budget queue; the review branch is pushed and #276 has the evidence.
 Recheck route guard, explicit files, ownership, machine/storage admission and
