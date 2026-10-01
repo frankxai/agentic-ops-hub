@@ -2,7 +2,15 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-09-30 (repo-placement handover, after applied AI lab landed on main) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (fleet control plane handover) · 2026-09-30 (repo-placement handover, after applied AI lab landed on main) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01 — fleet control plane (YogaBook, Claude)
+
+- Shared verifier, chained dispatch and patched dispatcher are live on the queue (agentic-ops `main` `f278176`, [PR 69](https://github.com/frankxai/agentic-ops/pull/69)). 5 verified records are on `queen/receipts`. Full recap: `ops/sessions/2026-10-01-fleet-control-plane.md`.
+- Landed: [ai-architect-academy#37](https://github.com/frankxai/ai-architect-academy/pull/37) (built by the queue), [starlight-you#9](https://github.com/frankxai/starlight-you/pull/9), [go-agenticincome#23](https://github.com/frankxai/go-agenticincome/pull/23), [frankx.ai-vercel-website#763](https://github.com/frankxai/frankx.ai-vercel-website/pull/763), agentic-ops #79.
+- Open: [hub#72](https://github.com/frankxai/agentic-ops-hub/pull/72) (main merged in as `6413f30` after a Codex FAIL; waiting for re-review), [agentic-ops#81](https://github.com/frankxai/agentic-ops/pull/81) (Codex FAIL posted), [arcanea-ai-app#466](https://github.com/frankxai/arcanea-ai-app/pull/466) (conflicting).
+- Estate review load: about 100 open PRs across about 60 repos. The 7 human gates are listed in the session file.
+- This sweep is on `agent/claude/fleet-handover-2026-10-01` from `origin/main`. Primary checkout stays `agent/hermes/fleet-task-contract-v1`.
 
 ## 2026-09-30 — applied AI lab (YogaBook)
 

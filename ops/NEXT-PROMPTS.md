@@ -13,9 +13,27 @@
 
 ---
 
-> **2026-09-30:** two current prompts. The prompts below them were written in July and were not re-derived.
+> **2026-10-01:** one fleet prompt added at the top. **2026-09-30:** two current prompts. The prompts below them were written in July and were not re-derived.
 
 ## Current
+
+**[fleet control plane · agentic-ops + estate]** — land, then grow the queue
+```
+Read ops/sessions/2026-10-01-fleet-control-plane.md in frankxai/agentic-ops-hub
+first, then re-measure every PR it names with gh. Work in this order:
+1. Land agentic-ops-hub#72 after an independent review of its head (expected
+   6413f30): node C:/Users/frank/starlight/tools/pr-gate.mjs signoff/merge,
+   reviewer harness must differ from the author. Never force-push or self-merge.
+2. Fix the Codex findings on agentic-ops#81, or close it with the evidence.
+   Rebase arcanea-ai-app#466 onto main (keep #458's migration).
+3. Burn down the ~100-PR estate review load: per repo, land what passes CI and
+   an independent review, close superseded or stale drafts with a one-line
+   reason, rebase what is still wanted. Report counts before and after.
+4. Turn the next 3 provable production defects into chain plans: commit a
+   planner-owned *.acceptance.js first, prove it fails today and passes a
+   throwaway fix, then queue the plan in starlight/queen/chains/.
+Human gates in the session file stay with Frank. Do not kill Hermes processes.
+```
 
 **[placement · starlight-agent-config]** — two review notes, fresh branch from `origin/main`
 ```
