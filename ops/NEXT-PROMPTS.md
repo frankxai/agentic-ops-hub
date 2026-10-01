@@ -20,34 +20,43 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read hub Effective hook audit and bounded secret guard source, Graph budget and
-checkpoint recovery repairs, prior eval/safety sections and private AUDIT/matrix.
-All14 axes incomplete. ConfigPR84/3f2ba5d portable guard:26 local,26 Windows and26
-Linux tests, source-head CI green, static guard/workflow PASS after two BLOCK fixes.
-Issue78: https://github.com/frankxai/starlight-agent-config/issues/78#issuecomment-5939254590
-Installed hooks unchanged. Re-query PR79 native adapter and PR84 exact heads;
-respect required GitHub approvals. Claim actual canonical/projection files only
-when free; pin interpreter and trusted adapter, prove deny on load/timeout/exit
-and actual owned hosts. One app synthetic-header denial is limited native proof.
-Hook timeouts are seconds. Audit project/managed/plugin/SDK overlays with current
-official docs; preserve security and disabled Canvas/SIS/Substrate.
-Source worktree orchestration-integration-20260923 now holds hook branch3f2ba5d;
-original instruction branch08d6e80/PR80 is preserved, pending main/owned projection.
-Graph private source passes50 tests/staticPASS: SISmain2a60/swarmmain286b bases,
-SIS266 exact patch/regressions and swarm15comment5938322059. Canonical integration,
-tsc/source CI, durable authority/idempotency/authentic artifacts, bounded resume
-and provider cancellation are open. SIS150 original20-task/host/transport/recovery
-program stays authoritative; SIS147 reconciliation and125/124 actual verifier.
-EvalV3 aee573d3 needs authority/pattern/submitted-parent/late-fact/state/comparator
-extensions and real host. Command4 laneV5 77CLI+96 references+handshake/staticPASS
-stays private; legacy migration, shared ledger and covering-claim host remain gates.
-PP original7cc20b9 provenance is retained; PR4 was advanced by another thread,
-so re-read current head/source/runtime before claiming its state. No task death
-from TTL, no lock age deletion. Preserve all other prompts, tasks and branches.
-Fresh PP/storage admission required; last disk13.95%, no installs/newworktree adds,
-fanout or unattended work. Keep paused jobs and stopped Langfuse stack unchanged.
-Continue broader semantic/brand audits and prove one accepted traced brand workflow.
-Guard/check exact files plus independent ownership; save hub and existing issues.
+Read hub Brand and team source reconciliation and earlier hook/graph/eval/lane
+sections; private AUDIT/matrix and brand-team-audit-20261001/REPORT.md.
+All14 axes incomplete. Registrybd4d2f2 18 collections:13 brands/26 products,
+54 repo declarations,24 source pins,42 named local dirs, zero canonical agents,
+nine producers/five studios. Five skill/projection pairs match.16 product repo
+memberships/10 unmatched are capabilities, not assignments. Nulls mean unverified,
+not global absence. Respect issue51 Queen receipts report/#81; actual identity,
+liveness and accepted artifacts require checks. No new roster/store/scheduler.
+GenCreator main dacbb436 bound to current production/alias. CI36874985350 succeeds:
+845 unit/101 files,118 browser passed/2 skipped. PR115/117 and local-authoring67
+merged; PR95 e48f9845 separately845 unit/121 browser passed/2 skipped, non-draft
+open/UNSTABLE at read. Re-query current heads. Preserve programme owner's local
+branch/recovery files; acknowledge steward/maker/different checker before its
+owned source reconciliation and real save/reopen/edit/export/return acceptance.
+Issue5 retains ADR010/007, auth/migration/tenant/OAuth/provider and managed HOLD.
+Demand answers go as notes to Growth Core while shared report reads KV; source
+events are not usable demand/trace proof. Resolve existing reporting owner and
+verify actual evidence before using counts or admitting expansion.
+Creator Launch current main1288db33 differs historical receipt source; provider
+production SHA absent, anonymous alias302 SSO. Existing issue3 owns domain/source
+identity and real clean ZIP/install/license/buyer journey; no protection/DNS/
+pricing/promotion edits authorized by this audit. All13 brand root HTTP checks
+are bounded observations, not accepted product proof. Keep frozen/rights holds.
+Static audit PASS plus author-applied nonblocking clarification receipts; no
+reviewer execution. Product issue51/Gen5/Launch3 saves exist. Wider semantics,
+graph/loop/eval/local-cloud/observability/identity acceptance remains open.
+ConfigPR84 guard3f2ba5d actual Linux/Windows26 each and source PASS, installed
+guards unchanged; PR79 native adapter/runtime and PR80 instruction projection
+remain gates. Original08 branch preserved; source WT uses hook branch3f2ba5d.
+Private graph/swarm50 tests, evalV3 aee573d3 and laneV5 retain canonical integration,
+durable authority/recovery/artifact/admission gates. SIS150 original20-task/
+host/transport/restart release program unchanged. Re-query PPPR4 advanced by peers.
+Fresh PP/storage before heavy work; prior13.93% bounded, no new installs/worktrees/
+fanout/unattended work. Preserve paused jobs/stopped Langfuse and all foreign tasks.
+Guard/check exact paths and own retained lane; never age-clear writer locks.
+Complete an accepted traced brand workflow while preserving full scope; save hub
+and existing product issues. Read named source evidence, never unseen chats.
 ```
 
 [Starlight integration continuation, Codex]

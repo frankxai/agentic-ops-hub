@@ -99,6 +99,19 @@ Deferred graph handover is included. All14 estate axes remain incomplete.
 Pickup: session Effective hook audit and bounded secret guard source; private
 hooks-audit-20261001/published-evidence.json.
 
+Brand/team continuation:18 current Registry collections reconcile13 brands/26
+products/54 repo declarations,24 default-head pins and42 named local directories.
+Five manager/projection pairs match; zero canonical agents and16/10 direct studio
+memberships do not establish teams. All13 roots return200 directly/via own www.
+GenCreator current production source-bound/CI845 unit+118 browser pass/2 skip;
+PR95 separately121 pass/2 skip remains open. Creator Launch alias still302 SSO,
+source SHA unbound. Durable creator/demand/outcome gates remain open. Static audit
+PASS with nonblocking clarifications; private raw data preserved. Existing
+[team51](https://github.com/frankxai/agentic-ops/issues/51#issuecomment-5940198763),
+[Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940199231) and
+[Launch3](https://github.com/frankxai/creator-launch-os/issues/3#issuecomment-5940199624) saves verified; hub handover here.
+All14 estate axes incomplete; session Brand and team source reconciliation.
+
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
 - Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
