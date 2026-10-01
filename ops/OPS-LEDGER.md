@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
+
+- Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
+- Config31 merged into PR22 as `9f98152`; Config32 merged into PR26 as `036fb66`. Refreshed PR22 and PR32 deltas received independent static PASS; both parent CI suites pass. PR22/26 remain off main pending approving GitHub reviews; PR26 also needs full-parent review. Issue30 remains open for actual fleet projection and byte/SHA verification. No live installer ran.
+- Swarm28 remains draft with concrete host-admission, invocation-evidence and portable-reference findings; issue15 links the authority-plane requirements. Config79 still requires approval. Website70 is ready, but rendered QA in issue69 remains unproven.
+- Full goal and twelve acceptance groups remain open. Exact heads, commits, CI and issue links are in the October 1 session and integration evidence. Existing owned worktrees were reused; no new workers, servers, builds or installs.
+
 ## 2026-10-01: Website security patch deployed; map QA and federation remain open (Codex)
 
 - Website PR72 integrated as `6893f36`, independently reviewed and cloud CI passed. Post-merge CI run 36887914675 passes; Vercel exact-SHA production READY and nine routes 200; two critical Next alerts fixed. Issue71 closed with evidence. Runtime log query returned no error/fatal entries in its observed window.

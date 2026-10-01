@@ -20,37 +20,40 @@
 [Starlight integration continuation, Codex]
 ```
 Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1
-Codex sections in ops/sessions/2026-10-01.md and both integration/census JSON
-files. Twelve broad acceptance groups remain open; the census is a dated
-snapshot, not proof of complete review.
+Codex sessions and integration/census evidence. All twelve broad acceptance
+groups remain open. Census counts are dated metadata, not completed reviews.
 
-Done: hub76/94 and post-merge CI; website security72 integrated as 6893f36,
-production exact-SHA READY, nine routes 200, alerts 1/2 fixed, issue 71 closed.
-Other sessions merged website64 and voice/spec changes; preserve them.
+Done: hub PRs76/94/96; website PR72 security patch as 6893f36 with prior exact-SHA
+production READY, nine routes 200, alerts 1/2 fixed. Preserve other sessions'
+website64 and voice/spec merges. Config PR82 now requires the Work contract;
+ten tests/no skips, missing policy fails exit 1, independent review and CI pass.
+Config PR31 merged into proposal PR22 as 9f98152; corrected PR32 merged into proposal PR26
+as 036fb66. Both refreshed parent CI suites pass. PR22 full diff and PR32 delta
+have independent static PASS. PR22/26 still require approving GitHub reviews;
+PR26 needs full-parent review. No policy installer or live projection ran.
+Issue30 retains installed-byte/SHA checks, cold-session and stale-authority proof.
 
-First re-query config79 at c12cc404260dd9bc368300fb5d62e6b965df523b:
-independent review and all tests/CI pass, but GitHub requires one approving
-review that this actor cannot self-provide. Issue78 also needs actual owned
-Grok-host secret-denial proof. No live hook projection has changed.
-Map70 at 7a908a15455457b57f6fd0b7ddf928515ffbe1ef has static PASS and green
-CI; issue69 retains rendered pinch/keyboard/Fit/touch/motion/menu/contrast QA.
-No connected browser was available. Do not mark these release gates passed.
+First re-query config PR79 at c12cc404260dd9bc368300fb5d62e6b965df523b and
+proposal PR22/26 at their current heads. Do not bypass required GitHub approval.
+Issue78 also needs actual owned Grok-host secret-denial proof. Map70 remains
+at 7a908a15455457b57f6fd0b7ddf928515ffbe1ef and is currently ready, but issue69
+still requires rendered pinch/keyboard/Fit/touch/motion/menu/contrast QA.
+Swarm PR28 remains draft; review 5935754440 and issue15 identify real host admission,
+process-local limits, invocation evidence and portable Pack A provenance.
 
-Resume SIS144 source reconciliation under SIS143, SIS219 dossier and SIS220
-one-authority pilot. Remote main 9db1d5c lacks federation/runtime-bridge.
-Local codex/consolidate@b6bfebb tracks source; isolated portable runtime
-worktree@ab07b67 still contains uncommitted work. Preserve both and import
-only selected reviewed foundation paths into an admitted owned lane. Do not
-merge unrelated checkpoint or memory content.
+Resume SIS144 selected-source reconciliation under 143/219/220. Remote main
+9db1d5c lacks federation/runtime-bridge. Local consolidate@b6bfebb tracks source;
+isolated portable worktree@ab07b67 has unfinished edits. Preserve both; import
+only selected reviewed foundation paths in an admitted owned lane. No wholesale
+checkpoint/memory merge. Keep one mission authority and existing registry owners.
+Use scoped credentials, source-cited memory and truthful capability/cost receipts.
 
-Latest disk 14.19% is below 15% floor: no new worktrees, dependency installs,
-local builds, media or swarms until fresh admission permits. Routine reads,
-small owned edits and cloud checks can continue. Guard location, check explicit
-files and ownership separately. Keep prior cloud prompts and unfinished tasks.
-Use current registry owners, one mission authority, scoped credentials,
-source-cited memory, exact-head review and truthful capability/cost states.
-Save in this hub and existing product issues. Keep estate CI-watch issue 75
-open until its missing ESTATE_READ_TOKEN is resolved; no estate-green claim.
+Fresh disk admission is required: the latest sample is below 15%; no new worktrees,
+installs, build fanout, media or swarms. Reads and small owned edits can continue.
+Review-lite permits one serial tool-less checker. Guard, exact-file check and
+ownership are separate. Save this hub and existing product issues; preserve
+prior prompts and unfinished tasks. Estate CI-watch issue75 still lacks
+ESTATE_READ_TOKEN, so estate-wide green remains unproven.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
