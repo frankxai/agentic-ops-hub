@@ -295,3 +295,11 @@ broader salvage and community/revenue proof remain open. Current Arcanea prompt 
 - Claude Code requested Sonnet 4.6 but returned no output in 300 seconds. Session-owned invocation terminated; no findings, served-model/cost receipt or sign-off. $3 cap is not spend. Record all attempts; repeat with isolated contexts and hidden rubrics after restoring harness availability.
 - Four internal candidates, zero ready, package private and rights pending. 11 local tests, formatting, hash/status assertions and staged secrets passed; no full app CI, installs, runtime/game proof or release approval. Main ed25729cea changed no skills files; branch unintegrated.
 - Full session appended in `ops/sessions/2026-10-01.md`; current Arcanea prompt refreshed while preserving other fronts. Launcher routing/ownership, donor folding, license/Heart rulings and community/revenue proof remain open. Broad goal active; no production or archive changes.
+
+
+## 2026-10-01 — Arcanea public entry and draft PR (Codex)
+
+- [Draft #487](https://github.com/frankxai/arcanea-ai-app/pull/487), head `3d7494cd0f8f9ca63fc0a61927972820492873ce`: correct README/package source links, add contribution/conduct/security guidance and two issue forms; unignore three root community files. No license/canon/archive/production change; four candidates/zero ready.
+- Three README commands and eight installer tests pass; 18 local links, three YAML files, manifest-only-two-URLs comparison, format/diff and staged secrets pass (21.54 KB, no leaks). Main 4740b4c395 has unrelated MCP/route changes. Maintainer mailbox/form submission/web setup untested.
+- [CI 36873712870](https://github.com/frankxai/arcanea-ai-app/actions/runs/36873712870) confirmed in progress at this head: Install passed, Lint/TypeScript running. Vercel check SUCCESS is preview status. PR draft/BEHIND; Build/Lint/TypeScript/CI Status and independent review remain unverified. Poll the existing run; do not restart because an observation times out.
+- [Issue #276 save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5933161381), session appended and one current Arcanea prompt updated. Private vulnerability reporting disabled; existing metadata contact used, no SLA/settings change. Rights/Heart rulings, launcher ownership/origin, source folds and community/revenue proof remain open.

@@ -20,52 +20,58 @@
 ### Arcanea source consolidation, Codex pickup
 
 ```text
-Continue Codex task 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and Arcanea issue #276.
-Read the proposal, source audit and creator-candidate implementation at app commit
-95eacd844c194fcd4fc1b456e84306336b8a6dc1, branch
+Continue task 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and app issue #276.
+Draft PR https://github.com/frankxai/arcanea-ai-app/pull/487, exact app head
+3d7494cd0f8f9ca63fc0a61927972820492873ce, branch
 agent/codex/arcanea-source-consolidation-20261001. Worktree:
 C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
-The broader community/revenue goal remains active. This is proposed policy,
-not an approved license, archive, canon migration or product release.
-Keep one public Arcanea integration source; no new Arcanea repo or mirror.
-Reuse packages/arcanea-skills/skills as the proposed curated root. Preserve
-shared protocol, authoring, graph and durable-runtime ownership until reviewed
-contract migration. Respect #408 integration order and #427 quality work.
-Four candidates exist in the existing root: world-build, continuity-check,
-scene-to-media and quest-adapt. Zero ready skills; package private, metadata
-internal. Rights, behavioral evaluation and independent review remain pending.
-Authored Tideglass examples are not independent evaluations. Installer/API use
-the catalog and preserve support files; old folders remain excluded for review.
-Read docs/strategy/arcanea-skill-survivors-2026-10-01.md and its evidence JSON.
-122 entries are source copies/versions. Distilled main e4530e9fba is UNLICENSED;
-the local 8bd8f50ae1 fork has separate install/runtime work. Preserve it. Legacy
-a88b76974a reserves root rights but has MIT pack metadata; review both/history.
-Sovereign-depths is an intentional adapter. Keep story generation distinct.
-Read packages/arcanea-skills/evals/creator-smoke-2026-10-01.{json,md}.
-Four Ember Post requests/rubrics prepared; 14 source hashes/four skill hashes
-verified at ecb22a33a3. Zero cases executed. Claude Code 2.1.286 requested
-Sonnet 4.6, timed out at 300s with no stdout and was terminated. No findings,
-served-model/cost receipt or sign-off; $3 was a cap, not measured spend. No
-second run. Restore bounded review-harness availability before another full
-packet; isolate each skill/context and hide checks from the producer (the
-failed batch exposed them). Save unedited outputs, all attempts/interventions,
-then obtain independent review, rights ruling and self-contained install proof.
-Inspect retained world/continuity support files before folding donors. Coordinate
-launcher root support with its existing owner. skill-bundles has no origin and
-the launcher
-worktree is on agent/claude/skill-bundles; do not overwrite it. Root must control
-both discovery and installation, and merge keys must include repo/root/sha.
-Obtain Frank's rights and Heart-frequency rulings before applying either.
-#278 owns generated canon; #283 owns world write safety. Use those contracts.
-Eight installer tests and three audit tests pass. Four unchanged candidate skill
-validations previously passed in UTF-8 mode. Format and
-secret scan passed locally; independent provider review, app CI,
-actual installs and community/revenue proof remain open. Current main ed25729cea
-adds MCP reader docs and changes no skills files; this branch is unintegrated.
-No PR was added in this continuation; the review branch is pushed and #276 has
-the evidence. The earlier queue-budget observation needs a fresh check.
-Recheck route guard, explicit files, ownership, machine/storage admission and
-current main before writing. Preserve other task records and handovers.
+Goal remains active. Proposed branch work, not an approved license, archive,
+canon migration or product release. Keep one public app integration source;
+no new Arcanea repo or mirror. Preserve shared authoring/graph/runtime/MCP
+owners and #408/#427 integration/quality contracts; respect world/release focus.
+
+FIRST poll CI run 36873712870 at this head. Install passed; Lint job
+110407989144 and TypeScript job 110407989317 were confirmed in progress.
+Vercel check SUCCESS is preview metadata, not release/QA. PR draft/BEHIND.
+Main last seen 4740b4c395. Do not restart a job due to observation timeout.
+Inspect final required Build/Lint/TypeScript/CI Status results and actual failure
+logs before repairs. Keep draft until required checks, independent-provider
+review and release/rights decisions are fulfilled. No merge authorization here.
+
+Read planning-with-files/CURRENT_STATE_2026-10-01_PUBLIC_ENTRY.md plus the
+creator/source-fold records. README/package source URLs now identify this app;
+CONTRIBUTING/SECURITY/CODE_OF_CONDUCT and bug/workflow forms are added. Three
+ignore rules removed. 18 local links/three YAML files/three README commands
+verified; eight installer tests pass. Package changes only two URLs. No full
+app CI/real web setup/form submission/mailbox delivery proof. Private vulnerability
+reporting disabled; existing maintainer email used, no SLA/settings change.
+
+Reuse packages/arcanea-skills/skills. Four internal candidates: world-build,
+continuity-check, scene-to-media, quest-adapt. Zero ready, package private;
+rights/evaluation/review pending. Authored Tideglass examples are not evals.
+Fresh Ember Post cases and failed attempt are in evals/creator-smoke-2026-10-01.
+Claude Code requested Sonnet 4.6, timed out after 300s with zero output; no
+served-model/cost receipt/sign-off, $3 cap is not spend. Zero cases executed.
+Restore bounded harness availability, isolate skill/context, hide producer rubrics,
+save unedited outputs/attempts/interventions and obtain exact-byte independent
+review. Confirm final byte hash convention across Git/Windows newline conversion.
+
+Read docs/strategy/arcanea-skill-survivors-2026-10-01.{md,json}: 122 source
+copies/versions, not release count. Distilled main e4530e9fba is UNLICENSED;
+local 8bd8f50ae1 fork holds distinct install/runtime work. Preserve it. Legacy
+a88b76974a reserves root rights with MIT pack metadata; review historical grants.
+Preserve sovereign-depths adapter and story specialty. Inspect shared support
+files before donor folds. Obtain Frank's license and Heart-frequency decisions.
+#278 owns generated canon, #283 world write safety, #388/#421 MCP/WorldPack.
+
+Launcher skill-bundles still has no origin; worktree agent/claude/skill-bundles
+is foreign-owned. Coordinate verified origin/ownership before writes. Root must
+control discovery AND installation; source keys include repo/root/sha. Bundle
+lists pin app/folder/commit. Other roots/working links/archive salvage and broader
+community/revenue/release proof remain open. Eleven earlier audit/installer tests
+passed; unchanged skill validations passed in UTF-8 mode. Recheck route guard,
+explicit file checks, ownership and machine/storage admission before writing.
+Save the hub handover here and comment on existing #276; preserve other prompts.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
