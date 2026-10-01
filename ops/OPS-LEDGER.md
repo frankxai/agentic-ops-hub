@@ -4,6 +4,11 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+
+## 2026-10-01 — premium product revenue sprint (Codex)
+
+EUR 10,000 deadline is governed by paid product revenue excluding VAT and refunds; actual revenue and seller/audience readiness remain unknown. Decision packet and objective ledger preserve the original scope. [Creator Launch draft PR 11](https://github.com/frankxai/creator-launch-os/pull/11) adds editable portfolio cases/contact and standalone delivery, stacked on PR 8. All 64 Node tests plus type/lint passed. Cloud Node 24 cold export/install/build and responsive keyboard/reduced-motion Chromium checks passed at 6219a91; independent critique reconciliation, visual craft and cold buyer checks remain open. Paid release remains held. [Product issue 3](https://github.com/frankxai/creator-launch-os/issues/3), [FrankX issue 124](https://github.com/frankxai/FrankX/issues/124). Full receipt is appended in `ops/sessions/2026-10-01.md`; next action is the current Codex sprint prompt.
+
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
 - The two placement review notes are on `frankxai/starlight-agent-config` `main` as squash `9c87802` ([PR 75](https://github.com/frankxai/starlight-agent-config/pull/75)), merged 2026-10-01T00:25:35Z. Tests take a system temp directory. A control-plane worktree outside the control-plane folder is class `control-plane-root` with blocker `control-plane-worktree`. 13 tests passed. The runtime module at `C:/Users/frank/.starlight/workspace-bootstrap/repo_placement.py` matches blob `416a4d863c2c9ef917dd6a46ba497791b380c63c`. No product issue: the slice is merged. Issue 12 stays a different dossier. The occupied primary checkout was not fetched, so its local `origin/main` ref can still read `99b1273`.

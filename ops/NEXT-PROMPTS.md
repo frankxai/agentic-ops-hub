@@ -13,9 +13,27 @@
 
 ---
 
-> **2026-10-01:** two current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
+> **2026-10-01:** current prompts include the Codex revenue sprint and prior cloud continuation. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
+
+**[current · Codex · premium product revenue sprint]**
+```text
+Continue task 01a0f725-83df-7ef1-8bc0-2979b9f33cd6 and the active
+OBJ-20261001-PREMIUM-PRODUCT-REVENUE-SPRINT. Metric: EUR 10,000 paid
+product revenue excluding VAT/refunds by 10 October; actual revenue unknown.
+Read the appended sprint receipt in ops/sessions/2026-10-01.md and the private
+SPRINT-DECISION.md packet referenced there. Preserve all prior fronts.
+Use the existing portfolio worktree only after fresh ownership/routing checks.
+Read Creator Launch PR 11, its latest CI (including cold Node 24 export and
+browser job), and the independent critique/reconciliation. Repair failures,
+inspect rendered craft and complete a cold buyer trial. Keep PR 8 dependency.
+Then verify seller approvals and prepare concrete channel delivery/listings
+from the canonical product manifest. Source Next.js is not native Framer.
+No checkout before the paid release gate, real 24-hour access/refund evidence
+and Frank's price decision. No invented demand or completed estate audit.
+Keep the goal active while required revenue/product work remains.
+```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
