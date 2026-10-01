@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01: Website security patch deployed; map QA and federation remain open (Codex)
+
+- Website PR72 integrated as `6893f36`, independently reviewed and cloud CI passed. Post-merge CI run 36887914675 passes; Vercel exact-SHA production READY and nine routes 200; two critical Next alerts fixed. Issue71 closed with evidence. Runtime log query returned no error/fatal entries in its observed window.
+- Map PR70/issue69 remain open: static PASS and CI pass, actual browser QA unavailable. Original PR64 merged in another session; preserve concurrent voice/spec work. Config PR79 still requires an approving GitHub review, issue78 open for host enforcement.
+- SIS144 must reconcile selected federation/runtime source from `codex/consolidate@b6bfebb` and the unfinished isolated worktree; current remote main `9db1d5c` lacks those modules. No wholesale checkpoint merge. Full goal and twelve acceptance groups remain open.
+- Latest storage 135.04GiB/14.19% is below 15% floor. No new worktrees, installs, local builds, media or swarm. Full continuation and immutable evidence: `ops/sessions/2026-10-01.md`, `ops/evidence/starlight-convergence-20261001.json`.
+
 ## 2026-10-01: Starlight census and hook repair (Codex)
 
 - Full integration objective remains open. Census: 57 selected repos, 532 remote branches, 162 open PRs at 13:35:15Z; zero API errors, metadata only. Full requirement audit and exact references: `ops/evidence/starlight-convergence-20261001.json`, `ops/evidence/starlight-branch-census-20261001.json`; recap appended to `ops/sessions/2026-10-01.md`.
