@@ -13,19 +13,83 @@
 
 ---
 
-> **2026-09-30:** two current prompts. The prompts below them were written in July and were not re-derived.
+> **2026-10-01:** two current prompts. The placement review-notes prompt is done (starlight-agent-config PR 75, `9c87802`). The July prompts under "Highest leverage first" were not re-derived. PR 81, still open, inserts two prompts above F1. This file does not copy them.
 
 ## Current
 
-**[placement · starlight-agent-config]** — two review notes, fresh branch from `origin/main`
+**[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
-PR 51 is already on main as 0ac1d7e. Do not commit in the checkout that is
-still on agent/grok/placement-on-main. From origin/main, on a new
-agent/grok branch: let the placement tests use a system temp directory, and
-make the inventory blocker match the gate when a control-plane worktree
-lives outside the control-plane folder. Leave the 127 unmerged branches,
-the 16 non-fast-forward mains, repos/.git, and agent/grok/repo-placement-gate
-untouched. Do not change enforce_admins on any other repo.
+You are Claude Fable 5.1. Pin model id claude-fable-5-1. If this cloud seat
+cannot pin that id, use Claude Opus 5.5 and write the id you actually ran
+in the PR. Do not request Mythos 5.1.
+
+Read first, then build. This prompt is not permission to merge the queue.
+- https://github.com/frankxai/agentic-ops-hub/pull/83
+  ops/sessions/2026-10-01-merge-gates-handover.md
+- https://github.com/frankxai/agentic-ops-hub/pull/81
+- ops/sessions/2026-10-01.md on this continuation branch
+
+Placement is finished. starlight-agent-config main is squash
+9c8780287f472bb1d5568e608722992075c18fe6 (PR 75). This repo's placement
+handover is squash 9b04f062359e685f14ddc65451fbcee04833d27e (PR 80).
+Do not reopen them. PR 72 merged into agent/grok/repo-placement-gate
+(922d94e), not into main. Leave that branch off main.
+
+Use a new branch agent/claude/<scope> from origin/main in a free worktree.
+Push with git push origin HEAD:agent/claude/<scope>. Never plain git push.
+One writer per worktree.
+
+Leave these checkouts alone:
+- agentic-ops-hub primary, agent/hermes/fleet-task-contract-v1, 14f889f
+- starlight-agent-config primary, agent/grok/placement-on-main, cb4655e, dirty
+- FrankX primary, agent/antigravity/v0-sovereign-creator-engine, 7fe4fde1
+- agentic-ops primary, agent/claude/c940-vacation-envelope, 27f18ac
+- agent/grok/continue-2026-10-01, agent/grok/placement-review-notes,
+  agent/grok/placement-handover-2026-09-30
+
+Do not merge frankx.ai-vercel-website drafts 724 and 725, Dependabot major
+bumps, PR 81, or PR 83 until you have re-read the diff and the checks are
+green. PR 83 had an empty check rollup and mergeStateStatus BLOCKED.
+Do not merge the 127 unmerged canonical branches, and do not push the 16
+local mains that are not a fast-forward of GitHub. Do not batch-merge drafts.
+
+starlightintelligence.ai 5, 8, 9, 11, 12 and arcanea-ai-app 436 are already
+merged. Do not revert them. Leave the 2026-10-01 Starlight voice branches:
+starlight-agent-config #74, agentic-ops #131, starlightintelligence.ai #68.
+
+Queen cards in queen/inbox/_hold-missing-agent-20260930/ stay held until
+each card has an agent and one child repo, and free RAM is at least 4 GiB.
+Do not spawn a local model under that floor.
+
+Lab doors stay with Frank. Langfuse sign-in, Vercel CLI sign-in, LiteLLM
+private until anonymous model calls are rejected, Railway cap $130 unchanged.
+If the estimate climbs through $125, say so. Do not paste keys. Issue 73.
+
+Re-query gh before you trust this order. One product at a time. Name the
+product you have to beat. After the first draft, one pass whose only job is
+quality. A second model reviews the diff. A frankxai review does not count.
+Jules cannot approve.
+
+1. frankxai/agentic-ops #116 if the diff still keeps private memory data off
+   public surfaces. Run that repo's tests. Land only when green.
+2. frankxai/starlightintelligence.ai #66, then the next CLEAN non-draft
+   product PR in that repo. Keep drafts as drafts until the spec is on main
+   and you have rebased them.
+3. Rebase frankxai/gencreator.ai #115 and #117 onto origin/main. Land the
+   fail-closed waitlist step after the buyer-route checks pass. Leave #108
+   and other major bumps. #130 was UNSTABLE.
+4. frankxai/FrankX #239 from a new worktree off origin/main. Do not switch
+   the Antigravity primary. Read the diff before merge.
+5. After each landed slice, build the buyer-facing gap that PR still leaves,
+   in the same repo, on a new branch. Then write the next handover in a free
+   agentic-ops-hub worktree: ops/sessions, the top of ops/OPS-LEDGER.md, and
+   one prompt here. Do not edit PR 81's branch or PR 83's branch.
+
+starlight-agent-config is the only repo where enforce_admins is off. A green
+non-HOLD PR there may be squash-merged with --admin. #32 and #31 are CLEAN
+with an empty review and are constitutional doctrine: read them, do not
+batch-merge. Do not turn enforce_admins off on any other repo. Elsewhere,
+squash without --admin only when the protection rules already allow it.
 ```
 
 **[applied AI lab · Railway and starlight-agent-config]** — finish the human doors, leave main alone
