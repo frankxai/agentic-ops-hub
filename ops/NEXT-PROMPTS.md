@@ -13,7 +13,7 @@
 
 ---
 
-> **2026-09-30:** two current prompts. The prompts below them were written in July and were not re-derived.
+> **2026-10-01:** the applied AI lab prompt is current. The placement prompt stays. The prompts below Current were written in July and were not re-derived.
 
 ## Current
 
@@ -28,16 +28,23 @@ the 16 non-fast-forward mains, repos/.git, and agent/grok/repo-placement-gate
 untouched. Do not change enforce_admins on any other repo.
 ```
 
-**[applied AI lab · Railway and starlight-agent-config]** — finish the human doors, leave main alone
+**[applied AI lab · Railway and starlight-agent-config]** — Cloud key and Vercel login, leave the stopped stack down
 ```
-The lab is already running on Railway project perceptive-curiosity.
-Do not merge starlight-agent-config PR 72 into main. Its base is
-agent/grok/repo-placement-gate. Sign in to Langfuse at
-https://langfuse-web-production-840d.up.railway.app, create a project
-API key, and do not paste it. Then sign the Vercel CLI back in.
-Leave LiteLLM private until you say to publish it, and only after
-anonymous model calls are rejected. If the Railway estimate climbs
-through $125, say so. Do not change the $130 cap. Issue 73 tracks this.
+The Railway Langfuse stack is stopped. Langfuse web, the worker, the
+Langfuse Postgres, and ClickHouse had their deployments removed on
+2026-10-01. Restart policy is NEVER. Disks stayed. Do not start them.
+Do not merge starlight-agent-config into origin/main. The record is
+c2154ba on agent/grok/repo-placement-gate.
+
+Create a Langfuse Cloud project API key and do not paste it. Do not use
+https://langfuse-web-production-840d.up.railway.app. That health URL
+returns 404. When the key exists, set LiteLLM success and failure
+callbacks to langfuse and set LANGFUSE_HOST to the Cloud URL.
+
+Then sign the Vercel CLI back in. Leave LiteLLM private until you say
+to publish it, and only after anonymous model calls are rejected. Do
+not change the $130 cap. Elasticsearch and Temporal stay up until you
+name them. Issue 73 tracks the Cloud key.
 ```
 
 ## 🥇 Highest leverage first
