@@ -31,11 +31,10 @@ CURRENT APP WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolid
 CURRENT BRANCH: agent/codex/arcanea-preview-binding-20261001
 CURRENT preview binding draft https://github.com/frankxai/arcanea-ai-app/pull/491
 HEAD a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962; base e863be8304fdde9f00ba812d7845d66ec52787b9.
-CI 36926343395 passed all four required checks. Complete five-file independent
-CURRENT edited-event CI handle36927439029 at unchanged source after the one
-post-CI verification-description update: in_progress / pending.
-Re-poll that handle rather than rerun or edit metadata for activity.
-Sonnet 4.6 HIGH source review PASS/three LOW/one INFO; source scope only.
+Source CI36926343395 and description-edited CI36927439029 both completed
+SUCCESS with all four required checks at this unchanged source. No live CI
+handle remains from this slice; both receipts are preserved. Complete five-file
+independent Sonnet 4.6 HIGH source review PASS/three LOW/one INFO; source scope only.
 Read planning-with-files/CURRENT_STATE_2026-10-01_VISUAL_PREVIEW_BINDING.md and
 scripts/resolve-visual-preview.mjs plus its actual-workflow tests. 52 local tests
 pass. Bot comments are no longer authority: exact GitHub SHA/repository/Preview
