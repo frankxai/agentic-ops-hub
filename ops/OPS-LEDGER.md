@@ -4,6 +4,14 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01: Starlight census and hook repair (Codex)
+
+- Full integration objective remains open. Census: 57 selected repos, 532 remote branches, 162 open PRs at 13:35:15Z; zero API errors, metadata only. Full requirement audit and exact references: `ops/evidence/starlight-convergence-20261001.json`, `ops/evidence/starlight-branch-census-20261001.json`; recap appended to `ops/sessions/2026-10-01.md`.
+- Hub PR 76 merged as `a699929`, post-merge CI 36867184561 passed; rule-sync failures now fail CI. Source branch absent, no retrospective issue.
+- Config PR 79 head `c12cc404260dd9bc368300fb5d62e6b965df523b` supersedes unsafe PR 48: no automatic checkout formatter execution, Windows denial preserved, trusted absolute Node. Local 19 Node + 5 Python tests pass, independent Anthropic review passes, Windows push and PR CI pass. GitHub requires an approving review; no self-approval or bypass. Issue 78 remains open for integration and actual host enforcement. No live hook projection changed.
+- Next: land the reviewed repair after required approval/checks; continue SIS 143/219/220 and per-head PR reviews. Website PR 64 still lacks a usable preview/rendered release proof. Estate CI-watch issue 75 lacks ESTATE_READ_TOKEN. Neither estate production nor full branch cleanup is green.
+- One bounded local review only; no new swarm agents, builds, installs, media or services. Occupied other-harness worktrees and all earlier prompts remain intact.
+
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
 - The two placement review notes are on `frankxai/starlight-agent-config` `main` as squash `9c87802` ([PR 75](https://github.com/frankxai/starlight-agent-config/pull/75)), merged 2026-10-01T00:25:35Z. Tests take a system temp directory. A control-plane worktree outside the control-plane folder is class `control-plane-root` with blocker `control-plane-worktree`. 13 tests passed. The runtime module at `C:/Users/frank/.starlight/workspace-bootstrap/repo_placement.py` matches blob `416a4d863c2c9ef917dd6a46ba497791b380c63c`. No product issue: the slice is merged. Issue 12 stays a different dossier. The occupied primary checkout was not fetched, so its local `origin/main` ref can still read `99b1273`.
