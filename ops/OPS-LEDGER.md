@@ -2,7 +2,14 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-09-30 (repo-placement handover, after applied AI lab landed on main) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (Langfuse stack stopped) · prior sweeps 2026-09-30 remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01 — Langfuse stack stopped (YogaBook)
+
+- Langfuse web, Langfuse worker, the Langfuse Postgres, and ClickHouse were stopped on Railway perceptive-curiosity. Restart policy is NEVER. Disks stayed. Two-minute memory was 0. The public health URL returned 404. LiteLLM, Infisical, shared Redis, and capital-P Postgres stayed up. Elasticsearch and Temporal were not touched. Full recap: `ops/sessions/2026-10-01-langfuse-stop.md`.
+- Product record is commit `c2154ba` on `frankxai/starlight-agent-config` branch `agent/grok/repo-placement-gate`. Not on that repo's `origin/main`. Open door: [issue 73](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-5922212634).
+- Traces belong on Langfuse Cloud after Frank creates a project key and does not paste it. Do not start the four Railway services to finish that wiring. Do not change the $130 cap.
+- `agentic-ops` #20 and #94 stay open. Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is branch `agent/grok/lab-stop-2026-10-01` from `origin/main` `977d04a`.
 
 ## 2026-09-30 — applied AI lab (YogaBook)
 
