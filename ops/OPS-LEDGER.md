@@ -6,7 +6,7 @@
 
 ## 2026-10-01 — home Wave 0 (YogaBook)
 
-- Removed five 0-byte accident files and four empty home directories. File bytes removed: 0. Recap: the Home Wave 0 section of `ops/sessions/2026-10-01.md`. Issue: https://github.com/frankxai/agentic-ops-hub/issues/90
+- Removed five 0-byte accident files and four empty home directories. File bytes removed: 0. Recap: the Home Wave 0 section of `ops/sessions/2026-10-01.md`. Issue: https://github.com/frankxai/agentic-ops-hub/issues/90. Draft: https://github.com/frankxai/agentic-ops-hub/pull/91
 - Skipped three empty directories under `starlight\worktrees` (`acs-video-social-studio`, `ccc-skill-foundry`, `gencreator-creator-pack`). They were unregistered in estate `.git/worktrees` scans. Task ownership was not proven.
 - Left in place: Claude temp file, memory-bus watcher logs and pid, home `node_modules`, `%SystemDrive%\ProgramData` (contains `Microsoft`), `universe\QUARANTINE.md`.
 - Control plane stayed on `codex/rova` with 17 porcelain paths. This lane did not edit it. Hub primary stays `agent/hermes/fleet-task-contract-v1`. This sweep is `agent/grok/wave0-cleanup-2026-10-01` from `origin/main` `a378f0b`.
