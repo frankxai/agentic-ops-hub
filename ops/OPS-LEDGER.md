@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01 - development capability workflow
+
+- Added five bounded development profiles, a shared capability-loading guide, and read-only discovery through the existing installer. [Product draft PR 81](https://github.com/frankxai/starlight-agent-config/pull/81), commit `75b928a`, is stacked on startup PR 76. Neither is merged; the canonical primary guide pointer remains unresolved until source integration.
+- Installed the hashed private payload locally with `install.ps1 -DevelopmentReadiness`. All five installed profiles returned source inputs present and exact repository identity. Dependencies/native loading remain unverified, runtime probes were not performed, and execution admission remains false. No services, native profiles or catalog rewrites were activated.
+- Nine unit tests, Windows/Linux isolated installer CI, PowerShell contracts and release control passed. Independent Anthropic review passed on the final source. Doctor exited 0 with its optional machine-local profile absent. [Session handover](sessions/2026-10-01.md#development-capability-workflow-codex) records evidence and limits.
+- Next priority: apply the workflow to one useful feature in the existing Command Center after exact repo/lane and fresh machine/storage admission. Design interaction evidence is pending for that product pilot. Keep the next-sign-in verification and wider ownership follow-ups under [issue 46](https://github.com/frankxai/starlight-agent-config/issues/46).
+
 ## 2026-10-01 - startup hook and performance repairs
 
 - Applied the reviewed Codex SessionStart JSON repair and existing Bash/CMD search guards. The configured hook returned valid `{}` in 323 ms, other hook states were preserved, and real wrapper/backend regression checks passed. Shared memory still served 297 atoms/vectors.
