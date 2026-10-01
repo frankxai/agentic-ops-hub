@@ -19,49 +19,50 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read hub 2026-10-02 PP gates, 2026-10-01 creator/demand and brand/team sections,
-earlier hook/graph/eval/lane sections, private AUDIT and completion matrix.
-Full14 axes remain incomplete. Preserve original all-brand/rule/skill/graph/loop/
-team/Git/local-cloud/eval/observability/maintenance scope, budgets and provenance.
-PP candidate b12d8ec0/PR4: full source21/tsc/build/emitted21/native18/compiled8
-passed Linux+Windows at exact-headCI36933071875 (push also PASS). Two staticPASS.
-ID0 unknown-method fix reproduced; synthetic sensor builder only. Overlapping
-suites are not unique totals. Source targets existing Hermes producer branch,
-not main; installed shared primary dist unchanged. Resolve canonical ownership,
-producer/main integration and real consumer floor enforcement before rollout.
-Actual npx launcher/package-name path, malformed non-string cwd response, broader
-MCP protocol/version/Node18/nested-test discovery and live sensor accuracy remain
-gates. Proposed quoted test glob reverted to original, no unverified compatibility
-change. Re-query current PR/source state; no silent merge/approval bypass.
-ConfigPR79/80/84 still need review/integration; installed guards unchanged. Prior
-source guard26 Linux/Windows checks prove source, not native host adoption. Prove
-effective denial/load/timeout/exit coverage without weakening security controls.
-Private laneV5/graph50/evalV3 remain canonical/durable authority, host invocation,
-admission/recovery/artifact gates. Preserve original SIS15020-task/host/transport/
-restart programme and denominator. Paused/stopped jobs and Langfuse stay unchanged.
-GenCreator programme publishedc0ff/local a96 prior read, original owner/untracked
-work preserved; private readback e1d8da46 does not prove durability/transactions.
-Prewrite overwrite and uncertain-save caller retry remain gates. Reconcile maker/
-different-checker ownership and actual exclusive storage/caller before real source/
-edit/save/reload/new-session/reopen/export/return accepted browser outcome under5.
-Demand62 proposed O1 remains unratified. Legacy4fd control-root source is not in
-scoped current command/ops main; resolve canonical writer/backend/standard IDs.
-Repair atomic unique email, partial answers, typed failures/deadlines/withholding/
-report classifications, then approved synthetic capture-to-report with exclusions.
-No inferred customer demand, backend global absence or subscriber writes.
-Registry13brands/26products/zero canonical agents/nine producers/five studios and
-role guides are capability metadata, not assigned/running teams. HTTP/CI/provider
-availability does not establish accepted artifact or business outcomes. Preserve
-original rights/frozen/managed/provider/customer gates for every brand, Queen51
-owner receipts versus independent proof, and issue81 failure. One accepted traced
-brand workflow needs actual actor/owned work/artifact/cost/outcome/recovery proof.
-Fresh PP/storage before heavy work; bounded storage means no install/worktree/
-build fanout/unattended work. One owner/parallel1, no extra agents without explicit
-authorization/admission. Guard then check explicit paths, full retained ownership
-and actual.lock; no TTL death/foreign lock deletion/process killing. Keep security
-hooks and disabled base Canvas/SIS/Substrate. Preserve all task records/prompts.
-Save hub and existing product issues with readback evidence. Keep full goal active.
+Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. Full14 estate axes
+incomplete; preserve original all-brand/rule/AGENTS/skills/graph/loop/hook/team/Git/
+local-cloud/eval/observability/maintenance intent, all task records and provenance.
+PP boundaries deferred hub packet is saved after explicit codex-c37e1409 release.
+Current issue3/46 comments are readback verified; read the newest 2026-10-02 entry. Do not infer task death from age/TTL or remove writer locks.
+Read latest private AUDIT/matrix and prior hub 2026-10-01/02 sections.
+PP source8ab0d94b/PR4 existing Hermes producer base: exact-headCI36936982202 and
+push SUCCESS. Linux/Windows source21/tsc/build/emitted21/native18/compiled53 under
+Node24; emitted21/compiled53 under18.20.8. Overlap is not unique totals. Seven blobs
+match. --mcp/mcp launcher exercised; validators/notification boundaries/error
+correlation/framing and encoded PowerShell LiteralPath verified with synthetic
+operations. Original conditional staticPASS treated BLOCK after actual nested
+PowerShell interpolation found, candidate second staticPASS + disclosed author
+containment/docs refinements. Native AST test is parse-only, not live exploit proof.
+Primary/main/runtime unchanged; no npx/client registration or real sensors/outcome.
+Anonymous npm404 atUTC22:18; source checkout docs. Settle UNC/device/root-relative
+stat/network-authentication risk before client adoption; real fix default deletion
+is unchanged and annotation hints do not enforce approval. Full lifecycle, version
+and schema checks, rate limits and permissions remain gates. Source integration,
+installed projection and actual consumer floor enforcement remain open.
+Two named guide paths are absent at the inspected primary/main revisions; see
+the session entry. Read the exact guide blobs in candidate 08d6e80/PR80; do not
+install unapproved historical policy.
+Primary Grok checkout preserved; preferences absence on main expected by live rule.
+ConfigPR79/80/84 review/native adoption stays open; source guard tests do not prove
+installed denial/load/timeout/exit. Preserve laneV5/graph50/evalV3 durable authority/
+host invocation/admission/recovery/artifact gates and original SIS15020-task/host/
+transport/restart denominator. Paused/stopped jobs/Langfuse and disabled base tools
+unchanged. GenCreator maker/different-checker ownership, exclusive/uncertain save
+and actual source/edit/save/reopen/export/return acceptance remain under issue5;
+private readback isn't durability/transaction. Demand62 O1 unratified; resolve
+canonical writer/backend/standard IDs, atomic unique email/partial answers/failure/
+withholding/report classification before approved synthetic capture-to-report.
+Registry13brands/26products/zero canonical agents/nine producers/five studios are
+capability metadata, not assigned/running teams. Provider/CI/HTTP doesn't establish
+accepted artifact/business outcome. Preserve all brand source-rights/frozen/managed/
+customer/host release gates, Queen51 claimed receipts and81 fail gate. Prove one
+accepted traced owned brand workflow with real actor/artifact/cost/outcome/recovery.
+Fresh PP/storage before heavy work; bounded storage means no new install/worktree/
+build fanout/unattended work. One lead/parallel1; extra agents need explicit wording/
+admission. Guard then explicit-file check, full retained ownership and actual.lock.
+Keep security hooks, existing shared tools, local versus cloud distinctions and
+all unfinished fronts. Save hub and existing product issues with readbacks; goal
+remains active until every original requirement has authoritative completion proof.
 ```
 
 [Starlight integration continuation, Codex]

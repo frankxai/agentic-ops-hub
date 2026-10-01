@@ -446,3 +446,64 @@ session/ledger/next prompt. Preserve prior GenCreator/demand62, configPR79/80/84
 graph/eval/lane held source and original SIS15020-task acceptance program.
 Next: resolve owned producer/main integration and runtime enforcement, harden
 the confirmed adapter boundary gaps, then an accepted traced brand workflow.
+
+## PP MCP boundaries, launcher and encoded probe path (Codex)
+
+Source task01a0f720-641c-7af2-af40-cc12eafd6a4f. Full goal active, all14 axes
+incomplete; previous/current turns progress. PP source 8ab0d94b87635002c07ee25a66d77fa348935588 in draftPR4,
+still targeting the existing Hermes producer branch. [Exact-head CI](https://github.com/frankxai/peak-performance/actions/runs/36936982202)
+and push run36936976615 PASS. Linux/Windows Node24: frozen install/source21/
+typecheck/build/emitted21/native18/compiled53. Node18.20.8: emitted21/compiled53.
+Zero failures/skips/cancellations; overlapping suites/versions/platforms are not
+unique totals. Node18 EOL and allpatch/real-tool support are not certified.
+Seven changed remote blobs match exact candidate bytes.
+
+CLI --mcp/mcp now launches actual adapter; emitted initialize/admission pass.
+Request/id/params/args/cwd/dryRun/format/theme/count checks precede operations;
+notifications never execute tools, IDs on notification methods are rejected,
+ping works, failures are generic/correlated. Existing absolute directory required;
+no silent cwd substitution. Input65,536 UTF16 cap drains to newline/recovery.
+Private actual-source VM10 additionally verifies controlled fragments/exact limit.
+Fixtures deny all audit/fix actions and use synthetic metrics; no live probes.
+
+First conditional staticPASS treated BLOCK when actual Windows probeGit cwd
+interpolation was found. Actual original/candidate source with synthetic process/
+filesystem interception plus real PowerShell parser AST: adversarial string adds
+Write-Output in old script, candidate contains only intended size pipeline and
+round-trips path as encoded data. No captured script executed; this is not a
+reachable live MCP attack certification under prior filter/filesystem constraints.
+Candidate UTF8/base64+LiteralPath closes script interpolation; emitted tests
+intercept Git/size children, and Windows executes only a bounded decode/reencode
+prefix guarded by delimiter/absence/exact-grammar assertions.
+
+Second static AnthropicPASS; two tool-free calls USD0.6827356
+list equivalent, cash unknown. Frozen packets retained. Author post-review adds
+requested test containment, permanent-deletion description and UTC/newline/
+cwd-scope/error/hint docs; production logic unchanged, not third provider review.
+Real pp_fix default deletion remains, hints are not approval enforcement. Removed
+false reversible/PP_CWD/macOS Full claims. Official anonymous package reads both
+names404 at2026-10-01T22:18Z; source checkout instructions replace npx promises.
+
+Current config primary Grok branch cb4655ed and main7d3946af lack exact capability/
+progressive guide paths. Both exist/read/hash-bound in original instruction
+candidate08d6e80/PR80. Recovered source qualifies reading; source/main/projection
+integration remains open. Preferences absence on main is an expected user-contract
+exception. No foreign primary, settings or global capability changes.
+
+Both product saves readback:
+- https://github.com/frankxai/peak-performance/issues/3#issuecomment-5942245043
+- https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5942245321
+Hub session/ledger/prompt save was prepared but retained foreign codex-c37e1409
+owned same files. Never infer terminal ownership from age/TTL. Preserve that task
+and unfinished records. Source/main/runtime/client/package/live sensor/consumer
+floor enforcement, UNC/device/network-authentication paths, full lifecycle/version/
+access/rate/schema and accepted brand workflow remain open. No deployment/merge,
+local install/build/worktree/fanout, customer writes, live fixes or quality eval.
+PP22:27:54Z bounded8442MBfree/6144required, parallel1; disk13.81% bounded, now dated.
+Prior creator/demand/configPR79/80/84/graph/eval/lane and SIS150 gates preserved.
+Next: save this deferred hub packet when ownership is explicitly released, then
+resolve source/main/runtime/client safety and accepted traced brand work.
+
+Retained codex-c37e1409 explicitly released at 2026-10-01T22:45:43.085Z; own lane acquired
+after full journal replay. The deferred hub packet is now saved in this session,
+ledger and one current estate prompt; other prompts/history are preserved.
