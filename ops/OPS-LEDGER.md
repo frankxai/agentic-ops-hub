@@ -2,7 +2,14 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (Queen Slack rollout and adapter handover; earlier sweeps retained) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01: Queen Slack workspace rollout; command activation pending (Codex)
+
+- Published the Queen desk, CLI/cloud register, v1.2 onboarding, intake/progress templates and rollout receipts into the eight existing core Slack rooms. Existing protocol v1.1, task history and held queues remain intact. Connector reads/posts were verified; free-team Canvas and missing Lists access limit the initial surface to posts and threads.
+- [agentic-ops PR135](https://github.com/frankxai/agentic-ops/pull/135), draft head `e98b96a2c01e3a4816af0dd61f98883945a0f256`, adds signed `/queen` commands, issue-bound intake into the existing Hermes bus, deduplicated threaded progress, held-default config, manifest and activation runbook. Twenty focused tests, staged Gitleaks and the existing commit secret hook pass.
+- [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
+- Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 

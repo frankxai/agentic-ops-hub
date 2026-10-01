@@ -13,9 +13,25 @@
 
 ---
 
-> **2026-10-01:** two current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
+> **2026-10-01:** current prompts include Queen Slack activation and the earlier integration work. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
+
+[Queen Slack activation, Codex]
+```text
+Continue agentic-ops issue134 and draft PR135 at
+e98b96a2c01e3a4816af0dd61f98883945a0f256. Read docs/SLACK-QUEEN.md and
+the October 1 session receipt. The workspace standard is published, but /queen
+is unregistered and no inbound worker round trip has been verified. Obtain an
+independent provider review of the exact revision. Connect an approved Slack
+Queen app and HTTPS ingress with the supplied manifest and private secret loader.
+Keep intake held while checking help/status. On a freshly admitted runtime,
+verify one sandbox executor, then submit one issue-bound task and confirm one
+existing-bus envelope, one worker claim, meaningful progress in one Slack thread
+and final proof. Preserve routing, ownership and release gates. Keep cloud
+dispatch, cancellation and unseen ChatGPT coverage explicitly pending. No new
+worker/service/worktree under machine HOLD or BOUNDED storage restrictions.
+```
 
 [Starlight integration continuation, Codex]
 ```
