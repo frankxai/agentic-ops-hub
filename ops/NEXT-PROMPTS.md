@@ -19,31 +19,31 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue goal codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f at its full
-scope: governance, all instructions/skills, graphs, hooks, loops, teams, local/cloud
-execution, each brand's product development, GitHub integration, evals and telemetry.
-Read this hub's ops/sessions/2026-10-01.md, "Estate fundamentals continuation",
-and private objective-ledger/review-inputs/estate-fundamentals-20261001/AUDIT.md
-and completion-matrix.json. Existing config issues 40 and 46 track this evidence.
-The ledger schema repair passed; preserve its backup and the later external append.
-The full goal is not complete. Do not equate indexed files or enabled jobs with
-semantic correctness, active execution or successful products.
-Nine Codex catalog references were repaired from pinned config main 9c87802;
-28 of 30 targets are readable. Storage intelligence and voice swarm remain absent
-from main and explicitly unavailable. Eleven source tests, fifteen fresh Windows
-transaction tests and an exact-artifact Anthropic PASS verified this bounded repair.
-Read private source-recovery/v3/post-apply-verification.json and source-findings.json
-under the audit root. Source utility is config commit 1c39664 on the existing
-codex/orchestration-integration-20260923 branch, pushed but not merged to main.
-First reconcile the four absent canonical dependencies using their exact retained
-commits, correct missing required ledger/harness references and the browser cleanup
-ownership instructions, and review the two absent skill sources in issue 46. Source
-readability is not runtime verification. Preserve occupied
-primaries and paused jobs; run route guard/check with explicit files and fresh
-machine/storage admission before changes. Then continue existing eval PR16 and
-prove one existing brand product workflow with trace, independent acceptance,
-budget enforcement, cancellation and recovery. Preserve the Langfuse Railway stop.
-The stale historical knowledge candidate needs an actual review by 8 October.
+Continue the full goal codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f:
+governance, all instructions/skills, graphs, hooks, loops, teams, local/cloud,
+each brand's products, GitHub integration, evals and attributable telemetry.
+Read this hub session's Estate fundamentals, catalog repair and PP admission
+sections plus private audit AUDIT.md/completion-matrix.json. All fourteen axes
+remain incomplete. Keep the live ledger's prior measurements dated; preserve
+unfinished objectives, paused jobs and the 8 October knowledge review.
+PP candidate 7cc20b9: issue3 and draftPR4 in frankxai/peak-performance, targeting
+the published Hermes admission-control producer branch. Eighteen actual-source
+and fixture-MCP cases pass; independent Anthropic reviews pass. Runtime is not
+projected. Full dependency tests/typecheck/build and producer/main reconciliation
+remain open. Disk is below15%, so no new installs, worktrees or build fanout.
+Legacy starlight/tools/lane.mjs removes writer locks by age: preserve any existing
+lock before invoking mutations; reconcile its owner/source and fix the behavior
+with explicit provenance. Also reproduce the pre-existing MCP cwd findings.
+Next repair missing config policy/reference sources and browser process ownership
+in existing config issue46. Nine catalog references were repaired at pinned main
+9c87802; 28/30 readable does not establish activation, prerequisites or quality.
+Source utility 1c39664 remains on codex/orchestration-integration-20260923.
+Registry main9a029f4 has unchanged collections from the previous pin; no agent
+identity import or brand runtime binding is certified. Preserve occupied primaries.
+Run route guard/check and separate ownership/admission checks before writes.
+Then continue the existing eval pilot and prove one brand workflow with accepted
+artifact, trace, independent acceptance, budgets, cancellation and recovery.
+Preserve the Langfuse Railway stop and verify Cloud wiring without restarting it.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews

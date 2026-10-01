@@ -20,6 +20,18 @@ an independent Anthropic PASS bound the final transaction. All nineteen other
 entries were preserved. Source utility: config commit `1c39664` on
 `codex/orchestration-integration-20260923`, pushed and read back; not merged to main.
 
+PP admission update: corrected core/CLI/MCP source is pushed at `7cc20b9`.
+[Issue 3](https://github.com/frankxai/peak-performance/issues/3) and
+[draft PR 4](https://github.com/frankxai/peak-performance/pull/4) track the reserve
+gate and source integration. Eighteen actual-source/fixture-protocol cases pass;
+independent Anthropic core/CLI and MCP reviews pass. The running Hermes checkout
+is unchanged. Dependency tests/build/typecheck, producer/main integration and an
+owned runtime projection remain open. Disk crossed below 15%; installs, worktree
+adds and build fanout are held. The pressure receipt is recorded privately.
+Source review also found age-based writer-lock deletion in the legacy lane helper
+and pre-existing MCP cwd response/existence-check concerns; those remain open.
+Registry main `9a029f4` has unchanged collections from the earlier pin.
+
 Current blockers: four missing canonical config dependencies now have exact retained
 source commits but remain unreviewed for promotion; two missing skill sources;
 stale required ledger/harness references and browser process-ownership instructions;
