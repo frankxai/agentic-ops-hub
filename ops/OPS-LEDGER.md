@@ -54,6 +54,19 @@ Next: integrate and verify the reviewed instruction projection, reconcile remain
 sources and repair isolated lane ownership, then continue the eval pilot and brand
 workflow proof. Historical ledger/catalog measurements above were not remeasured.
 
+Execution safety update: private lane candidate 77 core checks plus 96 differential pairs; Anthropic PASS for
+the held static source slice with author test evidence, with prior BLOCK rounds preserved. Live source is
+unchanged. Frozen 819-event journal replay fails compatibility at line 252;
+23 owners remain unreleased. Actual verify-lane permits protocol failures 2/4.
+Canonical source/migration/recovery/shared authority and caller/hook denial
+remain gates in [command issue4](https://github.com/frankxai/starlight-command/issues/4).
+Eval mirror PR16 has 8 source checks but unbounded synthetic per-cell accounting;
+no live model-quality run. [SIS150](https://github.com/frankxai/Starlight-Intelligence-System/issues/150)
+owns the host repair and original 20-task release denominator. The former hub
+owner explicitly released; this three-file save now replaces the deferred save.
+All 14 estate axes remain incomplete. Pickup: session Execution safety and eval
+accounting continuation; preserve the other Codex/cloud prompts.
+
 ## 2026-10-01: Starlight census and hook repair (Codex)
 
 - Full integration objective remains open. Census: 57 selected repos, 532 remote branches, 162 open PRs at 13:35:15Z; zero API errors, metadata only. Full requirement audit and exact references: `ops/evidence/starlight-convergence-20261001.json`, `ops/evidence/starlight-branch-census-20261001.json`; recap appended to `ops/sessions/2026-10-01.md`.

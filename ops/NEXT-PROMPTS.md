@@ -20,27 +20,26 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue existing task codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read the hub session's Instruction source recovery and preceding repair sections,
-then the existing private AUDIT.md and completion matrix. Keep the full goal and
-unfinished work active; do not promote indexed counts into estate verification.
-Config08d6e80, draftPR80 and issue46: three restored policies plus three corrected
-guides, exact staged-source Anthropic PASS. Main integration, owned projection
-and fresh-task loading remain open. Codex junctions still target the occupied
-primary; installer/doctor manage SDS only. Preserve other agents' branches.
-Old catalog utility1c39664 and pinned9c87802 snapshot remain intact. Two skills,
-estate ownership and storage sensor sources still need review. Registry main
-bd4d2f2 collections are unchanged; accepted decisions govern. ConfigPR47 separately
-tracks the old media summary. Never import historical adapters blindly.
-Lane runtime issue frankxai/starlight-command#4: preserve any existing lock before
-mutations. Reconcile canonical source ownership; isolate heartbeat and ledger
-fixtures; reproduce age/concurrency concerns before a reviewed repair.
-PP7cc20b9, issue3/draftPR4 remain source-only; dependency tests/build/typecheck,
-producer/main integration and runtime projection still open.
-Disk14.69% is bounded: no new installs, worktrees or build fanout. Recheck admission
-for heavy work. Preserve paused jobs and the Langfuse Railway stop.
-Continue the existing eval pilot and prove one brand workflow with an accepted
-artifact, attributable trace, budgets, cancellation and recovery. Run routing
-and separate ownership gates before writes. Save issue evidence and this hub.
+Read hub session Execution safety and eval accounting continuation, then existing
+private AUDIT.md/completion matrix. Keep all 14 acceptance axes and source intent.
+Private lane v5: 77 core checks, 96 differential pairs and 1 handshake proof, exact-byte Anthropic PASS; no live projection.
+Issue frankxai/starlight-command#4: canonical child absent/control-plane refused;
+pin shared authority, prohibit mixed-version writers, implement verified owner
+recovery and migration before rollout. Frozen 819-event journal fails line 252;
+23 unreleased owners are preserved. verify-lane permits child errors2/4; repair
+caller canonical repo/stable identity and actual hook denial/timeout behavior.
+Never clear by age/TTL or infer owning-task death from the helper PID.
+Eval starlight-evals PR16/d2a4abf:8 tests, unbounded synthetic receipt accounting;
+no live model-quality run. SIS150 is canonical. Preserve its 20-task denominator.
+Bind durable per-call/failed-attempt reservations and host-attested receipts
+before launch or promotion. Old clean worktrees need current ownership proof.
+Config08d6e80/PR80/issue46 and PP7cc20b9/PR4/issue3 remain reviewed source candidates
+with integration/projection gates open. Preserve historical utility1c39664 and
+pinned catalog9c87802, two unavailable skills, occupied primaries and other tasks.
+Recheck PP/storage; last 14.04% free is bounded: no installs/new worktrees/fanout.
+Preserve paused jobs and the Langfuse Railway stop. Prove one accepted brand
+workflow with trace, budgets, cancellation/recovery. Before writes run routing
+and separate ownership checks. Save this hub and existing product issues.
 ```
 
 [Starlight integration continuation, Codex]
