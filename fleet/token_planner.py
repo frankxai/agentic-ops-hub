@@ -14,6 +14,17 @@ class PlannerError(ValueError):
     pass
 
 
+# An unattended launcher may never widen the sandbox or bypass approvals. This is enforced here, at the
+# launcher boundary, not only in the task contract's text, which the launched agent is free to ignore.
+_ALLOWED_SANDBOXES = frozenset({"read-only", "workspace-write"})
+_FORBIDDEN_LAUNCH_TOKENS = (
+    "danger-full-access",
+    "--dangerously-skip-permissions",
+    "--dangerously-bypass-approvals-and-sandbox",
+    "--yolo",
+)
+
+
 @dataclass
 class Planner:
     config: dict[str, Any]
@@ -101,7 +112,27 @@ class Planner:
         return "\n".join(contract)
 
     def command_args(self, mission: dict[str, Any], *, sandbox: str = "workspace-write") -> list[str]:
+        if sandbox not in _ALLOWED_SANDBOXES:
+            raise PlannerError(
+                f"sandbox {sandbox!r} is not allowed for unattended runs; use one of {sorted(_ALLOWED_SANDBOXES)}"
+            )
         task = self._task_contract(mission)
+        return self._assert_launch_safe(self._build_args(mission, task, sandbox), task=task)
+
+    @staticmethod
+    def _assert_launch_safe(args: list[str], *, task: str) -> list[str]:
+        for arg in args:
+            if arg == task:
+                continue  # the task prose may mention these words; only flags and values are checked
+            lowered = arg.lower()
+            for token in _FORBIDDEN_LAUNCH_TOKENS:
+                if token in lowered:
+                    raise PlannerError(
+                        f"launcher argument contains forbidden token {token!r}; unattended runs must not bypass the sandbox"
+                    )
+        return args
+
+    def _build_args(self, mission: dict[str, Any], task: str, sandbox: str) -> list[str]:
         agent = str(mission["agent"])
         if agent == "claude":
             return [
