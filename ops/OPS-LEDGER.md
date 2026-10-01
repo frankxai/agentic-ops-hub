@@ -287,3 +287,11 @@ legacy reserved-root/MIT-metadata conflict and the diverged donor fork require r
 Preserve intentional adapters and story specialty. [#276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5932361060).
 Full goal active; rights, independent eval/review, self-contained installs, app release gates,
 broader salvage and community/revenue proof remain open. Current Arcanea prompt points here.
+
+
+## 2026-10-01 — Arcanea candidate requests and review timeout (Codex)
+
+- App review branch: `95eacd844c194fcd4fc1b456e84306336b8a6dc1`; [issue #276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5932730952). Four original requests/rubrics prepared and source hashes verified; zero cases executed.
+- Claude Code requested Sonnet 4.6 but returned no output in 300 seconds. Session-owned invocation terminated; no findings, served-model/cost receipt or sign-off. $3 cap is not spend. Record all attempts; repeat with isolated contexts and hidden rubrics after restoring harness availability.
+- Four internal candidates, zero ready, package private and rights pending. 11 local tests, formatting, hash/status assertions and staged secrets passed; no full app CI, installs, runtime/game proof or release approval. Main ed25729cea changed no skills files; branch unintegrated.
+- Full session appended in `ops/sessions/2026-10-01.md`; current Arcanea prompt refreshed while preserving other fronts. Launcher routing/ownership, donor folding, license/Heart rulings and community/revenue proof remain open. Broad goal active; no production or archive changes.
