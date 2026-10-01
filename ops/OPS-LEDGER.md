@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01 - startup and shared memory review
+
+- Audit complete; runtime optimization remains open in [starlight-agent-config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46). Keep Grok's delayed prebuilt gateway and lean startup. Agent reads on 7317 succeeded; the separate 5200 gateway is not the shared agent memory endpoint. No startup settings changed.
+- Priority correction: the ripgrep wrapper's early exclusions can be overridden by later globs. Require bounded repository targets and repair argument precedence in the existing optimization owner's lane. The existing cross-repo indexer imports Claude memory; it is not a code-search index.
+- Tray source polls supervisor state through blocking PowerShell every 30 seconds and does not report 7317. Cache that task state and add bounded health reads in the proper owner lane. Backup/security task replacements and missing indexed guide paths remain unverified.
+- Evidence and acceptance criteria: [session review](sessions/2026-10-01.md#startup-and-shared-memory-review-codex). Local handover branch: `agent/codex/startup-memory-review-20261001`; no build, install, daemon, or settings change. Existing fronts below stay open.
+
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
 - The two placement review notes are on `frankxai/starlight-agent-config` `main` as squash `9c87802` ([PR 75](https://github.com/frankxai/starlight-agent-config/pull/75)), merged 2026-10-01T00:25:35Z. Tests take a system temp directory. A control-plane worktree outside the control-plane folder is class `control-plane-root` with blocker `control-plane-worktree`. 13 tests passed. The runtime module at `C:/Users/frank/.starlight/workspace-bootstrap/repo_placement.py` matches blob `416a4d863c2c9ef917dd6a46ba497791b380c63c`. No product issue: the slice is merged. Issue 12 stays a different dossier. The occupied primary checkout was not fetched, so its local `origin/main` ref can still read `99b1273`.

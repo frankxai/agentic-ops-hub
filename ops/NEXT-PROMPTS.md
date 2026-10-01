@@ -1,5 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Current prompt: startup and shared memory follow-up
+
+Continue [starlight-agent-config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46) in the verified existing optimization owner's lane. Read the Codex startup/memory audit in `ops/sessions/2026-10-01.md`. Preserve Grok's delayed prebuilt-only 5200 launcher and the authenticated shared agent reads on 7317. First fix search scope and glob precedence with isolated fixtures, preserving normal repository searches and other agents' processes. Verify wrapper bypass limits. The existing cross-repo indexer is a Claude memory importer, not a code index. Then make tray task-state polling cached and bounded and show 7317 separately from 5200. Verify memory fallback and one actual sign-in before claiming startup improvements. Verify authoritative backup/security jobs and missing guide projections; do not enable extra services or change Dreaming. Follow routing, machine/storage admission, rollback, and independent review before runtime deployment. Existing prompts below retain their source tasks.
+
 > Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
 >
 > **Terminal map** (edit as you reassign windows):
