@@ -13,9 +13,20 @@
 
 ---
 
-> **2026-09-30:** one current prompt. The prompts below it were written in July and were not re-derived. [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80) also inserts a current prompt at this same place, so expect a small header conflict if both land.
+> **2026-09-30:** two current prompts. The prompts below them were written in July and were not re-derived.
 
 ## Current
+
+**[placement · starlight-agent-config]** — two review notes, fresh branch from `origin/main`
+```
+PR 51 is already on main as 0ac1d7e. Do not commit in the checkout that is
+still on agent/grok/placement-on-main. From origin/main, on a new
+agent/grok branch: let the placement tests use a system temp directory, and
+make the inventory blocker match the gate when a control-plane worktree
+lives outside the control-plane folder. Leave the 127 unmerged branches,
+the 16 non-fast-forward mains, repos/.git, and agent/grok/repo-placement-gate
+untouched. Do not change enforce_admins on any other repo.
+```
 
 **[applied AI lab · Railway and starlight-agent-config]** — finish the human doors, leave main alone
 ```

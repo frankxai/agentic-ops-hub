@@ -1,8 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-> Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Mirrored to Obsidian (`Ops/`) for daily glance; open items sync to Linear (Arcanea team) for mobile + action.
+> Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-09-30 (applied AI lab) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-09-30 (repo-placement handover, after applied AI lab landed on main) · prior estate audit 2026-09-19T02:43+02:00 remains below and was not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-09-30 — applied AI lab (YogaBook)
 
@@ -10,6 +10,14 @@
 - Product record is [PR 72](https://github.com/frankxai/starlight-agent-config/pull/72) on `frankxai/starlight-agent-config`, base `agent/grok/repo-placement-gate`, head `922d94e`. Not merged to `main`. That `main` does not contain the progress ledger, and the lab branch is 38 commits ahead of it. Open door: [issue 73](https://github.com/frankxai/starlight-agent-config/issues/73).
 - `agentic-ops` #20 stays open. Follow-up comment: https://github.com/frankxai/agentic-ops/issues/20#issuecomment-5911937332. #94 stays a separate C940 plan.
 - This sweep is [PR 82](https://github.com/frankxai/agentic-ops-hub/pull/82), branch `agent/grok/applied-ai-lab-2026-09-30` from `origin/main` `51c57ba`. The session file is not `ops/sessions/2026-09-30.md` because that path is already on unmerged [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80). Primary checkout remains `agent/hermes/fleet-task-contract-v1`. Fronts dated 2026-09-19 and earlier, below, were not re-derived.
+
+## 2026-09-30 — repo placement (YogaBook)
+
+- Product code is on `frankxai/starlight-agent-config` `main` as squash `0ac1d7e` ([PR 51](https://github.com/frankxai/starlight-agent-config/pull/51)). Files: `core/tools/repo_placement.py`, `core/tools/tests/test_repo_placement.py`. Full recap: `ops/sessions/2026-09-30.md`.
+- This repo is the progress git. `agentic-ops` is the ASPH protocol and was not edited. Linear was not synced. No placement issue existed, so none was opened. Issue 12 stays a different dossier.
+- Primary checkout remains `agent/hermes/fleet-task-contract-v1`. This sweep is on `agent/grok/placement-handover-2026-09-30`, opened from `origin/main` `51c57ba` and brought onto `065456a` after [PR 82](https://github.com/frankxai/agentic-ops-hub/pull/82) landed. Pushed as [PR 80](https://github.com/frankxai/agentic-ops-hub/pull/80). Not merged.
+- Still open: placement temp-dir parent; inventory class when a control-plane worktree sits outside the control-plane folder; 127 canonical checkouts left on unmerged branches; 16 local mains that are not a fast-forward of GitHub and were not pushed. Frank-gated moves (home twins, universe, third-party clones, payment-intelligence copies, duplicate canonical origins, `repos/.git`) stay in place.
+- Fronts dated 2026-09-19 and earlier, below, were not re-derived.
 
 |||||> **Register:** Neutral (ops/fleet). REGISTER-BOUNDARIES enforced — no Professional/Mythic voice in this ledger.
 ||||||**2026-09-19 estate audit (c940):** Four read-only audits across 7 repos. **P0 GitHub Actions billing**: jobs abort in ~2s with zero steps (FrankX #220/#219 `Google API key guard`, gencreator #75) — payment/spending-limit action required, no code fix. **Secrets**: 8 open secret-scanning alerts on frankx.ai-vercel-website + arcanea-ai-app are all HISTORICAL (keys already env-var'd on main, files deleted) — rotation still required; git history retains them. **Deps**: SIS `next` 16.2.6/16.3.3 split across site+console with dual npm+pnpm lockfiles (159 alerts); library-os next 14→15 and arcanea docs/atlas astro 4→7 are major bumps, not auto-fixable. Dependabot alerts + security PRs enabled on gencreator.ai, FrankX, llm-evals. **Prod**: all 7 live sites 200, sitemaps clean, certs 4+ weeks out; frankx.ai TTFB 2.3s is the outlier. **Hygiene**: 81 open PRs / 59 drafts / 20 DIRTY / 457 branches (~364 orphan). **Fleet**: this PR expires BOOK-HEARTBEAT-20260825, retires yoga-book (dark since 2026-08-16, not forged), refreshes c940. Disk 46.5 GiB free. Scheduled LLM cron remains paused; script-only watchdogs running.
