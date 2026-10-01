@@ -30,8 +30,8 @@ canon migration or product release. Keep one public app integration source;
 no new Arcanea repo or mirror. Preserve shared authoring/graph/runtime/MCP
 owners and #408/#427 integration/quality contracts; respect world/release focus.
 
-FIRST poll CI run 36873712870 at this head. Install passed; Lint job
-110407989144 and TypeScript job 110407989317 were confirmed in progress.
+FIRST poll CI run 36873712870 at this head. Install, Lint and TypeScript
+completed success; Build job 110408801132 was confirmed in progress.
 Vercel check SUCCESS is preview metadata, not release/QA. PR draft/BEHIND.
 Main last seen 4740b4c395. Do not restart a job due to observation timeout.
 Inspect final required Build/Lint/TypeScript/CI Status results and actual failure

@@ -303,3 +303,9 @@ broader salvage and community/revenue proof remain open. Current Arcanea prompt 
 - Three README commands and eight installer tests pass; 18 local links, three YAML files, manifest-only-two-URLs comparison, format/diff and staged secrets pass (21.54 KB, no leaks). Main 4740b4c395 has unrelated MCP/route changes. Maintainer mailbox/form submission/web setup untested.
 - [CI 36873712870](https://github.com/frankxai/arcanea-ai-app/actions/runs/36873712870) confirmed in progress at this head: Install passed, Lint/TypeScript running. Vercel check SUCCESS is preview status. PR draft/BEHIND; Build/Lint/TypeScript/CI Status and independent review remain unverified. Poll the existing run; do not restart because an observation times out.
 - [Issue #276 save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5933161381), session appended and one current Arcanea prompt updated. Private vulnerability reporting disabled; existing metadata contact used, no SLA/settings change. Rights/Heart rulings, launcher ownership/origin, source folds and community/revenue proof remain open.
+
+
+CI follow-up at unchanged app head 3d7494cd0f: Install, Lint and TypeScript passed;
+run 36873712870 remains live with Build 110408801132 in progress. CI Status and
+independent review remain unverified. Vercel check SUCCESS, PR #487 draft/BEHIND.
+Current prompt polls that exact run next; no restart or ready/merge request.
