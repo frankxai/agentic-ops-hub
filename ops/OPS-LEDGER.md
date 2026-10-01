@@ -417,3 +417,34 @@ completed SUCCESS at unchanged app 5327861370. Install and the four required
 checks pass. The previous same-source successful run remains retained; no
 source, rights, independent-review or readiness claim changed. Hub draft #98
 is merge-clean at the recorded integration head; it remains a draft.
+
+
+## 2026-10-01 - Arcanea public reader entry repair (Codex)
+
+Draft [#490](https://github.com/frankxai/arcanea-ai-app/pull/490), head
+`60fcf333b4f178de0f255b5d8edb057a5ede6d25`, fixes catalog chapter folders,
+reader IDs and chapter/body word counts. Production observed at e863be8304
+advertised AUTHORS_NOTE or numbered IDs that returned Chapter Not Found under
+streaming HTTP 200. The proper reader IDs already returned chapter headings.
+No manuscripts, canon, publication visibility or API permissions changed.
+
+[CI 36906218369](https://github.com/frankxai/arcanea-ai-app/actions/runs/36906218369)
+passed Install plus all four required checks at the exact candidate. Build ran
+seven new fixture tests and six chapter policy/ID checks with native tsx.
+The seven regressions failed before and passed after locally under existing
+Sucrase/Node 22 runtime snapshots. Local tsx/compiler packages are incomplete;
+no install or local typecheck claim. Formatting and secrets pass.
+
+Preview dpl_51h5RXEBj9xjJaN2zNxRYv8ouHXb is READY at the candidate; login
+redirects and connector protected 302 prevented preview-content verification.
+Browser admission HOLD. Independent seven-file Sonnet review timed out after
+120s with zero output, no verdict/model/cost/sign-off. Its owned CLI stopped.
+Rendered and release proof remain open. No merge, archive or production action.
+
+Worktree C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
+now uses agent/codex/arcanea-reader-entry-20261001. Source-consolidation branch
+and draft #487 at 5327861370 remain intact, four internal skills and zero ready,
+with prior CI and nine unedited outputs preserved. Licence/Heart, launcher
+upstream, rights/consumer folds and community/revenue release proof remain open.
+Private runtime/HTTP/review/CI receipts stay in the existing isolated-evaluation
+packet. The full source goal remains active. [Product issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5937916531).
