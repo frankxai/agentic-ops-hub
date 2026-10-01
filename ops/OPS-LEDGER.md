@@ -67,6 +67,20 @@ owner explicitly released; this three-file save now replaces the deferred save.
 All 14 estate axes remain incomplete. Pickup: session Execution safety and eval
 accounting continuation; preserve the other Codex/cloud prompts.
 
+## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
+
+- Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
+- Config31 merged into PR22 as `9f98152`; Config32 merged into PR26 as `036fb66`. Refreshed PR22 and PR32 deltas received independent static PASS; both parent CI suites pass. PR22/26 remain off main pending approving GitHub reviews; PR26 also needs full-parent review. Issue30 remains open for actual fleet projection and byte/SHA verification. No live installer ran.
+- Swarm28 remains draft with concrete host-admission, invocation-evidence and portable-reference findings; issue15 links the authority-plane requirements. Config79 still requires approval. Website70 is ready, but rendered QA in issue69 remains unproven.
+- Full goal and twelve acceptance groups remain open. Exact heads, commits, CI and issue links are in the October 1 session and integration evidence. Existing owned worktrees were reused; no new workers, servers, builds or installs.
+
+## 2026-10-01: Website security patch deployed; map QA and federation remain open (Codex)
+
+- Website PR72 integrated as `6893f36`, independently reviewed and cloud CI passed. Post-merge CI run 36887914675 passes; Vercel exact-SHA production READY and nine routes 200; two critical Next alerts fixed. Issue71 closed with evidence. Runtime log query returned no error/fatal entries in its observed window.
+- Map PR70/issue69 remain open: static PASS and CI pass, actual browser QA unavailable. Original PR64 merged in another session; preserve concurrent voice/spec work. Config PR79 still requires an approving GitHub review, issue78 open for host enforcement.
+- SIS144 must reconcile selected federation/runtime source from `codex/consolidate@b6bfebb` and the unfinished isolated worktree; current remote main `9db1d5c` lacks those modules. No wholesale checkpoint merge. Full goal and twelve acceptance groups remain open.
+- Latest storage 135.04GiB/14.19% is below 15% floor. No new worktrees, installs, local builds, media or swarm. Full continuation and immutable evidence: `ops/sessions/2026-10-01.md`, `ops/evidence/starlight-convergence-20261001.json`.
+
 ## 2026-10-01: Starlight census and hook repair (Codex)
 
 - Full integration objective remains open. Census: 57 selected repos, 532 remote branches, 162 open PRs at 13:35:15Z; zero API errors, metadata only. Full requirement audit and exact references: `ops/evidence/starlight-convergence-20261001.json`, `ops/evidence/starlight-branch-census-20261001.json`; recap appended to `ops/sessions/2026-10-01.md`.

@@ -44,35 +44,42 @@ and separate ownership checks. Save this hub and existing product issues.
 
 [Starlight integration continuation, Codex]
 ```
-Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the Codex
-integration section in ops/sessions/2026-10-01.md and both ops/evidence
-starlight-*-20261001.json files. Twelve acceptance groups remain open.
-Preserve the existing cloud continuation and unfinished task references.
+Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1
+Codex sessions and integration/census evidence. All twelve broad acceptance
+groups remain open. Census counts are dated metadata, not completed reviews.
 
-First re-query config PR79, exact head c12cc404260dd9bc368300fb5d62e6b965df523b,
-CI, main protection and issue78. Full code and CI increment have independent
-Anthropic PASS; this actor cannot self-approve the required GitHub review.
-Merge only after that approval and required checks, then verify post-merge CI.
-Close superseded PR48 only after replacement lands; preserve its occupied
-local worktree. No live projection was applied. Actual Grok-host denial still
-needs an owned synthetic secret-write test.
+Done: hub PRs76/94/96; website PR72 security patch as 6893f36 with prior exact-SHA
+production READY, nine routes 200, alerts 1/2 fixed. Preserve other sessions'
+website64 and voice/spec merges. Config PR82 now requires the Work contract;
+ten tests/no skips, missing policy fails exit 1, independent review and CI pass.
+Config PR31 merged into proposal PR22 as 9f98152; corrected PR32 merged into proposal PR26
+as 036fb66. Both refreshed parent CI suites pass. PR22 full diff and PR32 delta
+have independent static PASS. PR22/26 still require approving GitHub reviews;
+PR26 needs full-parent review. No policy installer or live projection ran.
+Issue30 retains installed-byte/SHA checks, cold-session and stale-authority proof.
 
-Then resume SIS143 portable-runtime pilot, SIS219 source dossier, and SIS220
-one-authority interop. Reconcile current registry and planned/current code.
-Use the 57-repo census as discovery, refresh each exact head before review.
-Website PR64 needs a usable preview, browser QA and independent release proof.
-Hub issue75 still needs ESTATE_READ_TOKEN; do not declare estate green.
+First re-query config PR79 at c12cc404260dd9bc368300fb5d62e6b965df523b and
+proposal PR22/26 at their current heads. Do not bypass required GitHub approval.
+Issue78 also needs actual owned Grok-host secret-denial proof. Map70 remains
+at 7a908a15455457b57f6fd0b7ddf928515ffbe1ef and is currently ready, but issue69
+still requires rendered pinch/keyboard/Fit/touch/motion/menu/contrast QA.
+Swarm PR28 remains draft; review 5935754440 and issue15 identify real host admission,
+process-local limits, invocation evidence and portable Pack A provenance.
 
-Before writes: location guard, explicit file route check, separate ownership.
-Before heavy work: fresh pp/storage admission. No local fanout until admitted.
-Keep one owner per worktree, scoped credentials, one mission authority,
-source-cited memory and customer-owned local/self-hosted delivery. Any upstream
-import needs pinned source/license/dependencies, an owner, a tested reason and
-rollback. Preserve paused services and open acceptance; do not bulk merge,
-archive unfinished goals, publish premium claims or delete branches by age.
-Save results in this hub and existing product issues.
+Resume SIS144 selected-source reconciliation under 143/219/220. Remote main
+9db1d5c lacks federation/runtime-bridge. Local consolidate@b6bfebb tracks source;
+isolated portable worktree@ab07b67 has unfinished edits. Preserve both; import
+only selected reviewed foundation paths in an admitted owned lane. No wholesale
+checkpoint/memory merge. Keep one mission authority and existing registry owners.
+Use scoped credentials, source-cited memory and truthful capability/cost receipts.
+
+Fresh disk admission is required: the latest sample is below 15%; no new worktrees,
+installs, build fanout, media or swarms. Reads and small owned edits can continue.
+Review-lite permits one serial tool-less checker. Guard, exact-file check and
+ownership are separate. Save this hub and existing product issues; preserve
+prior prompts and unfinished tasks. Estate CI-watch issue75 still lacks
+ESTATE_READ_TOKEN, so estate-wide green remains unproven.
 ```
-
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
