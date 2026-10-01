@@ -2,7 +2,25 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (home Wave A assessment, home Wave 0, placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01 — home Wave A assessment (YogaBook)
+
+- Read-only. Nothing moved. 198 estate origins indexed from local `git remote get-url`. Folder names were not treated as ownership. Recap is the Home Wave A section of `ops/sessions/2026-10-01.md`. Same issue and draft: https://github.com/frankxai/agentic-ops-hub/issues/90 and https://github.com/frankxai/agentic-ops-hub/pull/91
+- Only origin match: home `vibeclubs.ai` is `frankxai/vibeclubs`, and the estate checkout `starlight\repos\vibeclubs` is `agent/claude/session-format-v1` at `6168214`, clean, 5 commits ahead of home `1565f4d`. Home still has 53 uncommitted paths. Do not copy them onto that checkout.
+- No estate checkout for `frankxai/remotion-video`, `frankxai/arcanea`, `frankxai/arcanea-platform`, karpathy `autoresearch`, or arscontexta. The home `arcanea` clone owns two clean Copilot worktrees. Leave it.
+- No-origin trees stay where they are: `agents-council`, `aurora-kit`, `eve-practitioner-template`, `suno-library`, `wallpapers`, and the five scratch git dirs named in the session. `suno-library` has a broken submodule path and was not read.
+- Disk at the start of the pass: 144.17 GiB free, 15.15%. No zip. Hub primary stays `agent/hermes/fleet-task-contract-v1`.
+- Wave B is not started.
+
+## 2026-10-01 — home Wave 0 (YogaBook)
+
+- Removed five 0-byte accident files and four empty home directories. File bytes removed: 0. Recap: the Home Wave 0 section of `ops/sessions/2026-10-01.md`. Issue: https://github.com/frankxai/agentic-ops-hub/issues/90. Draft: https://github.com/frankxai/agentic-ops-hub/pull/91
+- Skipped three empty directories under `starlight\worktrees` (`acs-video-social-studio`, `ccc-skill-foundry`, `gencreator-creator-pack`). They were unregistered in estate `.git/worktrees` scans. Task ownership was not proven.
+- Left in place: Claude temp file, memory-bus watcher logs and pid, home `node_modules`, `%SystemDrive%\ProgramData` (contains `Microsoft`), `universe\QUARANTINE.md`.
+- Control plane stayed on `codex/rova` with 17 porcelain paths. This lane did not edit it. Hub primary stays `agent/hermes/fleet-task-contract-v1`. This sweep is `agent/grok/wave0-cleanup-2026-10-01` from `origin/main` `a378f0b`.
+- Disk after the deletes: 144.50 GiB free, 15.18%. `pp preflight --workload interactive` returned ALLOW. Free RAM was 2123 MB, under the 4 GiB floor. No zip and no further worktree.
+- Waves A, B, C, and D are not approved. The cleanup prompt in `ops/NEXT-PROMPTS.md` does not replace the other fronts.
 
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 

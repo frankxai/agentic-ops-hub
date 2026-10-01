@@ -13,7 +13,41 @@
 
 ---
 
-> **2026-10-01:** two current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
+> **2026-10-01:** the two current prompts stay. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived. A cleanup prompt was added below them. It does not replace those fronts.
+
+## Cleanup, home Wave A recorded
+
+**[agentic-ops-hub · Grok]** — Wave B only after Frank names it
+```
+Wave 0 and Wave A are done.
+Issue https://github.com/frankxai/agentic-ops-hub/issues/90
+Draft https://github.com/frankxai/agentic-ops-hub/pull/91
+Receipt: ops/sessions/2026-10-01.md sections "Home Wave 0" and "Home Wave A".
+
+Do not repeat the Wave 0 deletes. Do not remove the three empty worktree
+directories until Git registration and a live task owner are both proven.
+Leave the Claude temp file, the watcher logs and pid, the home node_modules
+cache, and %SystemDrive%/ProgramData. Keep universe/QUARANTINE.md.
+
+Do not move the Wave A trees. vibeclubs estate checkout is
+agent/claude/session-format-v1 and is 5 commits ahead of the home main.
+The home tree still has 53 uncommitted paths. Do not copy them onto it.
+The home arcanea clone owns two Copilot worktrees. Leave that clone.
+suno-library was not read. Do not git init or invent a remote.
+
+Wave B, when named, assesses clean twins. Home HEAD alone is not enough.
+Require durable branch or tag reachability, other local branches, stashes,
+untracked and ignored files, submodules, and attached worktrees.
+Preserve agentic-ops while agentic-ops-fleet-serve remains attached.
+Do not overwrite another harness's checkout.
+Waves C and D stay unapproved.
+Do not zip on C: unless a fresh disk check is at least 15% free and PP admits it.
+
+Hub primary stays agent/hermes/fleet-task-contract-v1.
+This cleanup lane is agent/grok/wave0-cleanup-2026-10-01.
+Push only git push origin HEAD:agent/grok/wave0-cleanup-2026-10-01.
+Leave the Fable continuation prompt and the July fronts as they are.
+```
 
 ## Current
 
