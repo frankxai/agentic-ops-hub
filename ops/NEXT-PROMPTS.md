@@ -13,7 +13,37 @@
 
 ---
 
-> **2026-10-01:** two current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
+> **2026-10-01:** the two current prompts stay. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived. A cleanup prompt was added below them. It does not replace those fronts.
+
+## Cleanup, home Wave 0 done
+
+**[agentic-ops-hub · Grok]** — next cleanup wave is assessment only, and only after Frank names it
+```
+Wave 0 is done. Issue https://github.com/frankxai/agentic-ops-hub/issues/90
+Receipt: ops/sessions/2026-10-01.md section "Home Wave 0".
+
+Do not repeat those deletes. Do not remove:
+- starlight/worktrees/acs-video-social-studio
+- starlight/worktrees/ccc-skill-foundry
+- starlight/worktrees/gencreator-creator-pack
+until Git registration and a live task owner are both proven. Empty is not enough.
+Leave the Claude temp file, the memory-bus watcher logs and pid, the home
+node_modules cache, and %SystemDrive%/ProgramData. Keep universe/QUARANTINE.md.
+
+Do not start Waves A, B, C, or D until Frank names that wave.
+Wave A, when named, assesses dirty and origin-less sources without moving them.
+Record history, branches, tags, stashes, dirty files, untracked and ignored
+content, submodules, attached worktrees, and a verified destination.
+git cat-file is not retirement proof. Ignored output can be unique.
+Do not git init, invent a remote, or treat a folder name as ownership.
+Do not zip on C: unless a fresh disk check is at least 15% free and PP admits it.
+A zip grows disk before it can shrink it.
+
+Hub primary stays agent/hermes/fleet-task-contract-v1.
+Use a separate worktree from origin/main. Push only
+git push origin HEAD:agent/grok/<scope>.
+Leave the Fable continuation prompt and the July fronts as they are.
+```
 
 ## Current
 

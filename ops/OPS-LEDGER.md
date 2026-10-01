@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (home Wave 0, placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01 — home Wave 0 (YogaBook)
+
+- Removed five 0-byte accident files and four empty home directories. File bytes removed: 0. Recap: the Home Wave 0 section of `ops/sessions/2026-10-01.md`. Issue: https://github.com/frankxai/agentic-ops-hub/issues/90
+- Skipped three empty directories under `starlight\worktrees` (`acs-video-social-studio`, `ccc-skill-foundry`, `gencreator-creator-pack`). They were unregistered in estate `.git/worktrees` scans. Task ownership was not proven.
+- Left in place: Claude temp file, memory-bus watcher logs and pid, home `node_modules`, `%SystemDrive%\ProgramData` (contains `Microsoft`), `universe\QUARANTINE.md`.
+- Control plane stayed on `codex/rova` with 17 porcelain paths. This lane did not edit it. Hub primary stays `agent/hermes/fleet-task-contract-v1`. This sweep is `agent/grok/wave0-cleanup-2026-10-01` from `origin/main` `a378f0b`.
+- Disk after the deletes: 144.50 GiB free, 15.18%. `pp preflight --workload interactive` returned ALLOW. Free RAM was 2123 MB, under the 4 GiB floor. No zip and no further worktree.
+- Waves A, B, C, and D are not approved. The cleanup prompt in `ops/NEXT-PROMPTS.md` does not replace the other fronts.
 
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
