@@ -28,8 +28,17 @@ and completion-matrix.json. Existing config issues 40 and 46 track this evidence
 The ledger schema repair passed; preserve its backup and the later external append.
 The full goal is not complete. Do not equate indexed files or enabled jobs with
 semantic correctness, active execution or successful products.
-First reconcile the four missing canonical config dependencies and 11 broken
-Codex index references with reviewed sources and active owners. Preserve occupied
+Nine Codex catalog references were repaired from pinned config main 9c87802;
+28 of 30 targets are readable. Storage intelligence and voice swarm remain absent
+from main and explicitly unavailable. Eleven source tests, fifteen fresh Windows
+transaction tests and an exact-artifact Anthropic PASS verified this bounded repair.
+Read private source-recovery/v3/post-apply-verification.json and source-findings.json
+under the audit root. Source utility is config commit 1c39664 on the existing
+codex/orchestration-integration-20260923 branch, pushed but not merged to main.
+First reconcile the four absent canonical dependencies using their exact retained
+commits, correct missing required ledger/harness references and the browser cleanup
+ownership instructions, and review the two absent skill sources in issue 46. Source
+readability is not runtime verification. Preserve occupied
 primaries and paused jobs; run route guard/check with explicit files and fresh
 machine/storage admission before changes. Then continue existing eval PR16 and
 prove one existing brand product workflow with trace, independent acceptance,

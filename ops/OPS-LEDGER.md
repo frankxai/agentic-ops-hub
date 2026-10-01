@@ -13,15 +13,26 @@ independent Anthropic conditional PASS whose requirements were checked. A later
 external append was preserved and the ledger still passed (74 signals, 20
 objectives, four candidates). The daily job remains paused.
 
-Current blockers: four missing canonical config dependencies and 11 of 30 broken
-Codex index references; canonical agent identities still pending reconciliation;
+Source recovery update: nine catalog references now resolve to a pinned snapshot
+of reviewed config main `9c87802`. Two of thirty targets remain absent and explicitly
+unavailable. Eleven source tests and fifteen fresh Windows transaction tests passed;
+an independent Anthropic PASS bound the final transaction. All nineteen other
+entries were preserved. Source utility: config commit `1c39664` on
+`codex/orchestration-integration-20260923`, pushed and read back; not merged to main.
+
+Current blockers: four missing canonical config dependencies now have exact retained
+source commits but remain unreviewed for promotion; two missing skill sources;
+stale required ledger/harness references and browser process-ownership instructions;
+canonical agent identities still pending reconciliation;
 effective hook review, live eval pilot, brand team bindings and cloud trace proof
 remain open. Census counts establish indexed availability only. Existing records:
 [config 40](https://github.com/frankxai/starlight-agent-config/issues/40),
 [config 46](https://github.com/frankxai/starlight-agent-config/issues/46).
 Handover: `ops/sessions/2026-10-01.md`, section "Estate fundamentals continuation".
 Private evidence: `.starlight/objective-ledger/review-inputs/estate-fundamentals-20261001/`.
-Next action is reviewed source recovery followed by the existing eval pilot.
+Next action is the bounded policy/reference correction in config issue 46, followed
+by the existing eval pilot. The catalog repair verifies source readability only;
+consumer tolerance, native activation and wider runtime behavior remain unverified.
 
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
