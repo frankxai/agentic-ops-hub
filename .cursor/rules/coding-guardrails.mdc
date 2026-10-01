@@ -38,3 +38,10 @@ These guidelines enforce discipline, conceptual clarity, and simplicity:
 * Transform vague requests into verifiable targets.
 * **Reproduce First**: Write a reproducing test or run code demonstrating a failure before implementing a bug fix.
 * For multi-step tasks, state a brief plan and verification steps before writing code (e.g., `1. [Step] -> verify: [check]`).
+
+### 6. Keep the record current (Karpathy wiki)
+* **The ledger is compiled once and kept current. Do not re-derive it from chat.**
+* When a slice is finished, suggest both saves, then write them if this checkout is free. Append `ops/sessions/YYYY-MM-DD.md`, refresh `ops/OPS-LEDGER.md`, and put one current prompt in `ops/NEXT-PROMPTS.md`.
+* Comment on the product repo's existing GitHub issue. Open one only when the slice is still open and has none. A merged slice with no issue stays in the session file. Linear stays archive unless Frank asks.
+* Branch `agent/<harness>/<scope>` from `origin/main`. If the primary checkout is another harness's branch, use a separate worktree. Do not write the handover into `C:/Users/frank/starlight` or `agentic-ops`.
+* A file such as FrankX `docs/ops/HANDOVER-*.md`, or the agentic-ops Desktop reboot pack, is the in-repo pickup for the next session in that checkout. The estate record is still this ledger.
