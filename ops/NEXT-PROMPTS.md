@@ -19,35 +19,39 @@
 
 [Starlight integration continuation, Codex]
 ```
-Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the Codex
-integration section in ops/sessions/2026-10-01.md and both ops/evidence
-starlight-*-20261001.json files. Twelve acceptance groups remain open.
-Preserve the existing cloud continuation and unfinished task references.
+Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1
+Codex sections in ops/sessions/2026-10-01.md and both integration/census JSON
+files. Twelve broad acceptance groups remain open; the census is a dated
+snapshot, not proof of complete review.
 
-First re-query config PR79, exact head c12cc404260dd9bc368300fb5d62e6b965df523b,
-CI, main protection and issue78. Full code and CI increment have independent
-Anthropic PASS; this actor cannot self-approve the required GitHub review.
-Merge only after that approval and required checks, then verify post-merge CI.
-Close superseded PR48 only after replacement lands; preserve its occupied
-local worktree. No live projection was applied. Actual Grok-host denial still
-needs an owned synthetic secret-write test.
+Done: hub76/94 and post-merge CI; website security72 integrated as 6893f36,
+production exact-SHA READY, nine routes 200, alerts 1/2 fixed, issue 71 closed.
+Other sessions merged website64 and voice/spec changes; preserve them.
 
-Then resume SIS143 portable-runtime pilot, SIS219 source dossier, and SIS220
-one-authority interop. Reconcile current registry and planned/current code.
-Use the 57-repo census as discovery, refresh each exact head before review.
-Website PR64 needs a usable preview, browser QA and independent release proof.
-Hub issue75 still needs ESTATE_READ_TOKEN; do not declare estate green.
+First re-query config79 at c12cc404260dd9bc368300fb5d62e6b965df523b:
+independent review and all tests/CI pass, but GitHub requires one approving
+review that this actor cannot self-provide. Issue78 also needs actual owned
+Grok-host secret-denial proof. No live hook projection has changed.
+Map70 at 7a908a15455457b57f6fd0b7ddf928515ffbe1ef has static PASS and green
+CI; issue69 retains rendered pinch/keyboard/Fit/touch/motion/menu/contrast QA.
+No connected browser was available. Do not mark these release gates passed.
 
-Before writes: location guard, explicit file route check, separate ownership.
-Before heavy work: fresh pp/storage admission. No local fanout until admitted.
-Keep one owner per worktree, scoped credentials, one mission authority,
-source-cited memory and customer-owned local/self-hosted delivery. Any upstream
-import needs pinned source/license/dependencies, an owner, a tested reason and
-rollback. Preserve paused services and open acceptance; do not bulk merge,
-archive unfinished goals, publish premium claims or delete branches by age.
-Save results in this hub and existing product issues.
+Resume SIS144 source reconciliation under SIS143, SIS219 dossier and SIS220
+one-authority pilot. Remote main 9db1d5c lacks federation/runtime-bridge.
+Local codex/consolidate@b6bfebb tracks source; isolated portable runtime
+worktree@ab07b67 still contains uncommitted work. Preserve both and import
+only selected reviewed foundation paths into an admitted owned lane. Do not
+merge unrelated checkpoint or memory content.
+
+Latest disk 14.19% is below 15% floor: no new worktrees, dependency installs,
+local builds, media or swarms until fresh admission permits. Routine reads,
+small owned edits and cloud checks can continue. Guard location, check explicit
+files and ownership separately. Keep prior cloud prompts and unfinished tasks.
+Use current registry owners, one mission authority, scoped credentials,
+source-cited memory, exact-head review and truthful capability/cost states.
+Save in this hub and existing product issues. Keep estate CI-watch issue 75
+open until its missing ESTATE_READ_TOKEN is resolved; no estate-green claim.
 ```
-
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
