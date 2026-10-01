@@ -20,28 +20,34 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read hub session Per-invocation eval accounting candidate and prior Execution
-safety section; private AUDIT/matrix and eval-accounting-20261001/REVIEW-GATES.md.
-Keep all14 acceptance axes and unfinished work. Held evalV3 aee573d3:45 tests,
-static Anthropic PASS after two BLOCKs, zero live quality calls/source projection.
-SIS150 owns method, original20-task release denominator unchanged; swarm15 durable
-authority, SIS147 reconciliation, SIS125/124 authenticity. Fix required extensions:
-authority-minted keys, current-policy reserve vs historical facts, stop/resume,
-actual pattern/child configuration, submitted parent, post-terminal usage/facts,
-authentic state/evidence and pinned comparator, shared durable idempotency/lookup.
-Wire actual canonical host/CLI before live runs; mirrorPR16 reserve/CLI unprotected.
-No competing store/scheduler; arbitrary test caps authorize no actual spend.
-Source owner checks apply to old clean SIS/swarm worktrees. Latest SISmain2a60aa5
-adds docs only; swarmmain286b618 PR27 reference kit is not authority deployment.
-Command4 laneV5:77 CLI+96 references+handshake/staticPASS carries required source,
-legacy migration/recovery, canonical shared ledger and covering-claim hook gates.
-Frozen819 events/23 unreleased owners; never clear by age or infer task death.
-verify-lane permits errors2/4; live source unchanged. Config08d6e80/PR80 and
-PP7cc20b9/PR4 remain source candidates; preserve other prompts/tasks and source.
-Fresh PP/storage admission: prior14.04% bounded, no installs/new worktrees/fanout.
-Preserve paused jobs and Langfuse Railway stop. Prove one accepted brand workflow
-with trace, budget, cancellation/recovery. Guard/check exact files, separately
-own lane. Save this hub and existing product issue150. Full goal stays active.
+Read hub Effective hook audit and bounded secret guard source, Graph budget and
+checkpoint recovery repairs, prior eval/safety sections and private AUDIT/matrix.
+All14 axes incomplete. ConfigPR84/3f2ba5d portable guard:26 local,26 Windows and26
+Linux tests, source-head CI green, static guard/workflow PASS after two BLOCK fixes.
+Issue78: https://github.com/frankxai/starlight-agent-config/issues/78#issuecomment-5939254590
+Installed hooks unchanged. Re-query PR79 native adapter and PR84 exact heads;
+respect required GitHub approvals. Claim actual canonical/projection files only
+when free; pin interpreter and trusted adapter, prove deny on load/timeout/exit
+and actual owned hosts. One app synthetic-header denial is limited native proof.
+Hook timeouts are seconds. Audit project/managed/plugin/SDK overlays with current
+official docs; preserve security and disabled Canvas/SIS/Substrate.
+Source worktree orchestration-integration-20260923 now holds hook branch3f2ba5d;
+original instruction branch08d6e80/PR80 is preserved, pending main/owned projection.
+Graph private source passes50 tests/staticPASS: SISmain2a60/swarmmain286b bases,
+SIS266 exact patch/regressions and swarm15comment5938322059. Canonical integration,
+tsc/source CI, durable authority/idempotency/authentic artifacts, bounded resume
+and provider cancellation are open. SIS150 original20-task/host/transport/recovery
+program stays authoritative; SIS147 reconciliation and125/124 actual verifier.
+EvalV3 aee573d3 needs authority/pattern/submitted-parent/late-fact/state/comparator
+extensions and real host. Command4 laneV5 77CLI+96 references+handshake/staticPASS
+stays private; legacy migration, shared ledger and covering-claim host remain gates.
+PP original7cc20b9 provenance is retained; PR4 was advanced by another thread,
+so re-read current head/source/runtime before claiming its state. No task death
+from TTL, no lock age deletion. Preserve all other prompts, tasks and branches.
+Fresh PP/storage admission required; last disk13.95%, no installs/newworktree adds,
+fanout or unattended work. Keep paused jobs and stopped Langfuse stack unchanged.
+Continue broader semantic/brand audits and prove one accepted traced brand workflow.
+Guard/check exact files plus independent ownership; save hub and existing issues.
 ```
 
 [Starlight integration continuation, Codex]

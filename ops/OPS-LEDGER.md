@@ -78,6 +78,27 @@ Old mirror PR16 host/CLI remain unprotected. Source/promotion stay held. Both sa
 SIS150 comment5937462717 and this hub branch/PR95. Full14 estate axes incomplete.
 Pickup: session Per-invocation eval accounting candidate; private REVIEW-GATES.md.
 
+Graph/checkpoint continuation: six exact-main failures reproduced, private source
+repairs pass32 original+18 new tests=50. Three independent static Anthropic PASS
+reviews bind final source; generated JS/dependencies and private patch bytes checked.
+Canonical source/runtime unchanged. Focused [SIS graph issue](https://github.com/frankxai/Starlight-Intelligence-System/issues/266) and
+[swarm15 receipt](https://github.com/frankxai/starlight-swarm/issues/15#issuecomment-5938322059) contain exact patches/regressions; this hub
+branch/PR95 saves handover. Source ownership/storage/typecheck/actual durable policy,
+artifact authority and bounded resume/provider recovery remain gates. SIS150 original
+twenty-task release criteria unchanged; all14 estate axes incomplete. Pickup:
+session Graph budget and checkpoint recovery repairs; private graph-runtime leaf.
+
+Hook-source continuation: selected effective-declaration audit reproduced installed
+guard truncation, recursion/exit1 and malformed-input acceptance. Reviewed portable
+source 3f2ba5d/[draftPR84](https://github.com/frankxai/starlight-agent-config/pull/84) passes26 local tests plus26 Windows
+and26 Linux tests in actual source-head CI. Two static review BLOCKs corrected;
+final guard and workflow/doc PASS. Four remote files verified. Installed bytes
+unchanged; native timeout/load/interpreter/host adoption remains gated by issue78
+and PR79. [Product receipt](https://github.com/frankxai/starlight-agent-config/issues/78#issuecomment-5939254590); handover here/PR95.
+Deferred graph handover is included. All14 estate axes remain incomplete.
+Pickup: session Effective hook audit and bounded secret guard source; private
+hooks-audit-20261001/published-evidence.json.
+
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
 - Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
