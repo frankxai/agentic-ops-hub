@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT imported-skill notice delta in existing draft #487:
+CURRENT public skill consumer proposal in draft #487:
+HEAD b37c2a6dcb43a90a9872826b47d0b79dc8178b2c.
+Source CI36934422363 and description-edited CI36935138855 both SUCCESS at this
+unchanged source, all four required checks. Native CI ran7 consumer +11 package
+cases. Twelve-file baseline016 review PASS/two LOW/two INFO; four-file b37 delta
+PASS/one LOW/one INFO, both baseline LOWs fixed. Literal path-alias dedup and
+zero-ready assertion promotion maintenance remain optional follow-ups.
+Read the source-consolidation task record's public-consumer section, actual web
+lib/skills/loader.ts and tests, and shared catalog.cjs/declarations. /skills now
+uses the same ready/content/evidence validator as package API/installer. Default
+monorepo/apps-web roots work; missing/duplicate catalogs fail. Source/guidance
+links require full SHA. Candidate slugs are absent; all four candidates zero ready.
+Public /skills and homepage blanket MIT/count/source claims corrected in source;
+no live-public change. Unsupported installer commands removed. Registry app public
+visibility matches GitHub; diverged arcanea retained with salvage description.
+Source Vercel preview dpl_HoPFWbnZ28aBiQp9jVRWGTrVGsBC is CANCELED at ignored-build.
+No actual deployed trace/rendered acceptance. No extra deploy or settings change.
+Keep other-owner #451 preview decision and #488 workflow candidate intact.
+Next bounded work: actual trace/artifact verification and source-matched preview
+when available; trace imports/resources/implicit development consumers before
+current-tree rights remediation and eligible folds. No rights/ready promotion,
+blind deletion or licence choice. Other public assertions remain review work.
+
+Retained imported-skill notice delta in existing draft #487:
 21850c2da160e3319c582b6973e14e2be8368a04; source CI36930667126 completed SUCCESS
 with Install/all four required checks and four audit fixtures actually executed.
 Complete six-file/delta Sonnet4.6 HIGH review PASS/three LOW/one INFO, not licensing
@@ -40,9 +63,9 @@ document copies, algorithmic-art Apache2.0 placeholder copyright, apple-design
 Emil Kowalski MIT. Nine notices/zero skill bodies match pinned current upstream.
 Historical imports/resources/contracts unverified; existing copies unchanged.
 Four internal candidates, zero ready. Public licence copy still unchanged.
-Next bounded work: import/resource and consumer audit before current-tree remediation;
-correct blanket public MIT claims at apps/web/app/skills/page.tsx and
-apps/web/app/v3/v3-below-fold.tsx, preserving scoped package/import licences.
+Notice follow-up: import/resource and consumer audit before current-tree remediation.
+The current web proposal corrects the named /skills and homepage blanket claims;
+other assertions and scoped licence review remain open.
 Root/licensing, Heart, manuscript and archive choices remain Frank's. Do not delete
 consumers blindly or rewrite history. Retain all earlier source/review/failure receipts.
 
