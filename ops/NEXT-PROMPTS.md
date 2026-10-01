@@ -20,63 +20,71 @@
 ### Arcanea source consolidation, Codex pickup
 
 ```text
-Continue goal 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and app issue #276.
-Full goal active: repo roles, skills/bundles/plugins/MCP, live creator product,
-supporting tech, vision, community and revenue. Keep #276's world/audience/release
-priority; preserve shared author/graph/runtime owners and #408/#427 gates.
-
-Direction: one public arcanea-ai-app integration repo, no new Arcanea repo/mirror.
-Canon stays .arcanea/lore/CANON_LOCKED.md. Bundles pin repo/folder/full commit.
-Licence, Heart 417/639, archives and release remain human decisions. No guessed
-remote, history rewrite, canon pack, app merge or ready promotion.
+Continue active goal 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and app #276.
+Keep the world/audience/releases priority and shared author/graph/runtime/media
+owners. Direction: one public arcanea-ai-app integration source, canon in place,
+bundles listing repo/folder/full immutable commit. No new mirror or canon pack.
+Licence, Heart 417/639, archive/rename/history and release remain Frank decisions.
+No app merge without his named "merge N" instruction under #408; #427 binds release proof.
 
 CURRENT WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-CURRENT BRANCH: agent/codex/arcanea-reader-entry-20261001
-Draft https://github.com/frankxai/arcanea-ai-app/pull/490, exact head
-60fcf333b4f178de0f255b5d8edb057a5ede6d25; base e863be8304fdde9f00ba812d7845d66ec52787b9.
-Read planning-with-files/CURRENT_STATE_2026-10-01_READER_ENTRY.md. This repair
-aligns catalog directories/file policy/HTML IDs and counts; manuscripts, canon,
-publication gates and numbered API slugs unchanged. Seven fixture regressions
-failed before and pass after. Six chapter-policy/ID checks pass. Exact-head
-CI36906218369 passed Install and Build/Lint/TypeScript/CI Status and explicitly
-ran both suites natively. Local runtime snapshots used existing Sucrase/Node22;
-tsx lacks Windows esbuild and compiler files are absent. No install/typecheck claim.
+CURRENT BRANCH: agent/codex/arcanea-source-consolidation-20261001
+Draft https://github.com/frankxai/arcanea-ai-app/pull/487
+HEAD 823c0cf0ca37b69f2a965bb1d84ecd62cf0e25c2, clean at handover.
+CI36915277891 passed Install plus Build/Lint/TypeScript/CI Status at exact head.
+CURRENT EDITED-EVENT CI HANDLE:36916204878 at unchanged823 after final-scope
+description update; source CI is already terminal SUCCESS. Re-poll this existing
+handle; no rerun or metadata edit just for check observations.
+Read SOURCE_CONSOLIDATION task record and existing evaluation records. Guide
+baseline411ec427e7 got independent scoped PASS/twoLOW; e201 fixed historical
+identifier/queue findings and got independent delta PASS/no findings. Separate
+complete seven-file catalog/installer/API/test core review at e201 REVISE. Corrected
+core823 and complete delta received independent PASS: Node22 floor, API docs,
+source-link rejection assertion and residual-race disclosure. All11 local tests
+pass with existing yaml2.9.0; first missingdependency invocation failed. CI pins2.9.1.
+Installer logic unchanged; path checks need trusted/stable source/home parents.
+Guide CI36912589855/e201 is retained. These
+scopes do not approve the whole PR, omitted skill behavior, rights, installation or release.
+Four internal candidates, private package, zero ready. Nine unedited creator
+outputs retained; world invention labeling still fails. No held-out/control,
+authentic creator, engine import, media or actual home-install proof.
 
-Observed stable production remains e863, dpl_GG8FqkkKrfTEmBiW8zZVP6EXRBuS:
-catalog broken IDs yield Not Found/noindex under streaming200; proper IDs have
-chapter headings. Preview dpl_51h5RXEBj9xjJaN2zNxRYv8ouHXb READY at reader head,
-but login/protected302 blocked content verification. Browser admission HOLD.
-Independent seven-file Sonnet review timed out120s with zero output; owned CLI
-stopped. No served-model/cost/verdict/sign-off. Do not repeat unchanged timeouts.
-Next: an admitted independent review/authenticated rendered reader path; preserve
-draft/no-merge posture and the existing creator/world release queue. No manuscript
-selection or ARC-REL-001 release decision was made.
+Successful tool-free Sonnet 4.6 high-effort requests with 240/300 second deadlines
+followed a successful response probe; earlier zero-output timeouts/client rejection
+remain attempts, with no proven diagnosis. Full private hashes/inputs/outputs/usage:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
+Next bounded step: fix and test the documented world invention-labeling failure,
+or independently review retained reader source now response availability is evidenced.
+Do not treat package-core PASS as skill behavior or legal clearance.
 
-RETAINED skills draft https://github.com/frankxai/arcanea-ai-app/pull/487, head
-5327861370c95748764017dc2e022b67b4abb348; branch
-agent/codex/arcanea-source-consolidation-20261001 (same worktree was reused).
-Inspect that branch's planning/skills via git show; do not assume current HEAD
-contains it, erase it or mix source scopes. CI36900900930 passed all four checks
-and all11 catalog tests. Four internal candidates, private package, zero ready.
-Nine unedited outputs/receipts retained ($0.6054792 reported list equivalent).
-World still fails invention labeling; no held-out/control/authentic creator,
-engine import, generated media or home-install proof. Source review open with
-prior timeouts/Gemini client rejection preserved. Avoid known-repeat loops.
+RETAINED reader branch agent/codex/arcanea-reader-entry-20261001 in same reusedworktree,
+draft https://github.com/frankxai/arcanea-ai-app/pull/490, head
+60fcf333b4f178de0f255b5d8edb057a5ede6d25, base e863be8304fdde9f00ba812d7845d66ec52787b9.
+CI36906218369 passed four checks/13 native tests. Preview READY but login/protected 302
+prevented content QA; browser admission HOLD. Its earlier independent review
+timed out after 120s with zero output. Preserve branch and files; current checkout contains skills.
+Stable production was observed at e863/dpl_GG8FqkkKrfTEmBiW8zZVP6EXRBuS; no live fix.
+Frank's manuscript selection for #280 remains pending; don't select a source yourself.
 
-Launcher patch remains unapplied (no origin/foreign harness branch):
-C:/Users/frank/.starlight/reviews/arcanea-launcher-root-20261001/README.md,
-six-file hash 2f796e45dd294a472578a0c40915b6b3b9b458e98aeccb5c44c02ae361e2011e,
-29 mocked tests at027fe963. Establish intended upstream/ownership before applying.
-Donor map122 copies is not release count; donor rights/working-set links/plugin
-consumers, legacy salvage, #278 canon, #283 world safety, #388/#421 MCP/WorldPack,
-creator/community/revenue/release proof remain open. Third-party sample licence
-files do not establish original import/notices/resources clearance.
+Fresh release-control observations at main e863: four strict checks, required reviews 0,
+admin enforcement false, two disabled rulesets, ten GitHub environments unprotected,
+HAS_VERCEL_TOKEN false. Soft lint/manual path and ready-comment visual source binding
+remain #427 implementation gaps; no live settings or Vercel protection claim.
 
-Before writes: workflow, exact identity, guard/explicit files and lane ownership;
-resource/storage admission. No new worktrees/install/fanout under bounded disk.
-Save only in frankxai/agentic-ops-hub session/ledger/one Arcanea prompt and existing
-#276; preserve other fronts. Private proof: C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
-Previously rejected Temp cleanup remains unattempted; no owned runtime remains.
+Launcher six-file patch remains unapplied: no origin/foreign harness ownership.
+C:/Users/frank/.starlight/reviews/arcanea-launcher-root-20261001/README.md;
+hash 2f796e45dd294a472578a0c40915b6b3b9b458e98aeccb5c44c02ae361e2011e,
+29 mocked tests at027fe963. Establish intended upstream/owner before applying.
+Donor 122-copy map isn't release count. Rights/notices/resources, donor/OSS folds,
+working-set links/plugin consumers and legacy salvage remain open. #277 approval,
+#278 canon, #279 manifest, #280 editions, #283 world writes, #388/#421 MCP/WorldPack,
+#285 playable proof and creator/community/revenue acceptance stay open.
+
+Before writes: WORKFLOW, exact Git identity, guard/explicit files and lane ownership;
+fresh resource admission for heavy work. Bounded disk: no install/new worktree/fanout.
+Save only to existing agentic-ops-hub #98 session/ledger/one current Arcanea prompt
+and product issues #276/#427; preserve other fronts. All owned review CLIs ended.
+Previously rejected Temp cleanup remains unattempted. Full goal is active.
 ```
 
 [Starlight integration continuation, Codex]

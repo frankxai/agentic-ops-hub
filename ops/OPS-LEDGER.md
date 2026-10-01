@@ -448,3 +448,59 @@ with prior CI and nine unedited outputs preserved. Licence/Heart, launcher
 upstream, rights/consumer folds and community/revenue release proof remain open.
 Private runtime/HTTP/review/CI receipts stay in the existing isolated-evaluation
 packet. The full source goal remains active. [Product issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5937916531).
+
+
+## 2026-10-01 - Arcanea guide and package-core review (Codex)
+
+App draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487) is at
+`823c0cf0ca37b69f2a965bb1d84ecd62cf0e25c2`. Existing release guidance now points
+to the public app integration source and folder/commit pins; mirror, dual-push,
+direct-merge and age-only archive directions are withdrawn. Historical milestones
+and extraction references remain. Canon, licensing and deployment settings were
+not changed. The checkout is back on agent/codex/arcanea-source-consolidation-20261001.
+
+[CI 36915277891](https://github.com/frankxai/arcanea-ai-app/actions/runs/36915277891)
+passed Install and Build/Lint/TypeScript/CI Status at that exact head. Source and
+description-edited runs at 411ec427e7 and corrected-guide CI36912589855 at e201
+also passed. A tool-free independent Sonnet
+4.6 review returned PASS on all three guide files at 411ec427e7 with two LOW
+findings. The e201 correction restores code-spanned reading_progress/pb_*
+identifiers and labels historical queue numbers non-authoritative. Its independent
+delta review returned PASS with no findings, relying on the earlier unchanged
+baseline. Formatter and enabled secret checks passed for the source commits.
+After terminal source CI, the PR description was updated to the final review
+scope. That triggered edited-event CI36916204878 at unchanged823; it is a separate
+live check handle. Preserve both receipts and observe that run rather than
+editing the metadata again or starting a new run.
+
+A separate independent review at e201 returned REVISE on the complete seven-file
+package core: README, catalog, API, installer, package metadata, validator and
+tests. The correction aligns the Node floor with the repo's Node22 baseline,
+documents API identity/location exports and accepts both legitimate source-link
+rejection messages. The inferred Windows failure did not reproduce in the local
+baseline; all11 tests pass before/after with existing yaml2.9.0 via NODE_PATH.
+The initial invocation without that dependency failed; frozen CI uses yaml2.9.1.
+The same-user filesystem race is accepted as a documented trusted/stable-source
+and home precondition, not fixed or certified. Installer logic is unchanged.
+The corrected complete package core and delta at823 received independent PASS.
+The scope excludes skill instructions and examples. All four skills remain
+internal candidates with zero ready; review declarations do not authenticate
+rights or approve publication. Nine prior creator outputs and failed invention
+labeling remain in the evaluation record. Earlier zero-output review timeouts
+are retained; successful new requests establish current response availability
+without diagnosing those earlier failures. All owned review CLI processes ended.
+
+Fresh read-only release-control evidence: four strict required checks, zero
+required approving reviews, admin enforcement off, two disabled rulesets and
+ten GitHub environments with no protection rules. Manual deploy flag is false;
+soft lint and the visual resolver's missing source binding remain #427 gaps.
+Vercel's own protection and every promotion path were not verified.
+
+Reader draft [#490](https://github.com/frankxai/arcanea-ai-app/pull/490) remains
+on its separate branch at 60fcf333b4, with all four checks and 13 native tests
+passing. Independent reader review and authenticated rendered proof remain open.
+Frank's manuscript selection for #280 is pending. Licence/Heart, launcher upstream,
+donor rights and folds, creator/community/revenue evidence and release gates remain
+open. No app merge, archive, publication or live configuration change occurred.
+The full goal remains active. This saves the formerly queued hub handover after
+the previous owner released the paths; other fronts are preserved.
