@@ -1,0 +1,1637 @@
+{
+  "schema": "starlight.integration-review.v1",
+  "observedAt": "2026-10-01",
+  "source": {
+    "task": "01a0f791-4e88-7872-82ef-5437bad5f97a",
+    "attachment": "pasted-text-1.txt",
+    "query": "gh search prs --owner frankxai --state open --limit 1000",
+    "observationNote": "Initial search snapshot during this session; current per-repository census is recorded separately with its completion timestamp."
+  },
+  "scope": "Full Starlight integration, strategy, product, production, branch cleanup and upstream adoption remain open.",
+  "baseline": {
+    "ownerOpenPullRequests": 411,
+    "starlightAndOperationsPullRequests": 163
+  },
+  "pullRequests": [
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 92,
+      "title": "docs(ops): Queen loop runtime repairs, cross-harness PR signoffs, and website PR 840 audit",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/92",
+      "updatedAt": "2026-10-01T13:03:45Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 91,
+      "title": "ops: record home Wave 0 cleanup",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/91",
+      "updatedAt": "2026-10-01T13:01:59Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 265,
+      "title": "ci: reduce redundant workflow minutes",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/265",
+      "updatedAt": "2026-10-01T12:53:40Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 89,
+      "title": "Record revenue sprint and portfolio delivery evidence",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/89",
+      "updatedAt": "2026-10-01T12:21:38Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 28,
+      "title": "chore(deps-dev): bump the development-dependencies group with 2 updates",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-technology/pull/28",
+      "updatedAt": "2026-10-01T10:16:29Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 27,
+      "title": "chore(deps): bump the production-dependencies group with 2 updates",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-technology/pull/27",
+      "updatedAt": "2026-10-01T10:15:51Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 26,
+      "title": "chore(deps): bump the framework-lint-toolchain group with 2 updates",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-technology/pull/26",
+      "updatedAt": "2026-10-01T10:15:21Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 25,
+      "title": "Reconcile held hardware research onto main",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-technology/pull/25",
+      "updatedAt": "2026-10-01T06:37:26Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-investor-portal",
+      "number": 41,
+      "title": "Review fixes, audited research foundations and evidence dashboard",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-investor-portal/pull/41",
+      "updatedAt": "2026-10-01T02:10:27Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 88,
+      "title": "ops: 2026-10-01 fleet pass",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/88",
+      "updatedAt": "2026-10-01T01:55:31Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 84,
+      "title": "ops: fleet control plane handover (2026-10-01)",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/84",
+      "updatedAt": "2026-10-01T02:42:02Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 83,
+      "title": "ops: handover \u2014 merge gates + autonomous merge (2026-10-01)",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/83",
+      "updatedAt": "2026-10-01T00:26:25Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command-center",
+      "number": 42,
+      "title": "Load shared Starlight voice for Command Center work",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command-center/pull/42",
+      "updatedAt": "2026-09-30T23:23:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 68,
+      "title": "Add shared Starlight voice instructions for website work",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/68",
+      "updatedAt": "2026-09-30T23:17:17Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 263,
+      "title": "Load the new Starlight voice across agent instruction files",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/263",
+      "updatedAt": "2026-09-30T23:17:19Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 131,
+      "title": "Register Starlight voice ownership and cross-agent loading",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/131",
+      "updatedAt": "2026-09-30T23:16:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 74,
+      "title": "Load Starlight voice consistently across agents and chats",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/74",
+      "updatedAt": "2026-09-30T23:16:12Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-design-intelligence",
+      "number": 26,
+      "title": "Give Starlight a curious, powerful, human voice",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-design-intelligence/pull/26",
+      "updatedAt": "2026-09-30T23:23:14Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-design-intelligence",
+      "number": 25,
+      "title": "Connect portfolio design sources to user experiences and Figma-native template delivery",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-design-intelligence/pull/25",
+      "updatedAt": "2026-09-30T22:59:48Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command-center",
+      "number": 41,
+      "title": "Add Queen connection management and proactive reconciliation board",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command-center/pull/41",
+      "updatedAt": "2026-09-30T20:11:09Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 129,
+      "title": "Propose existing Suite source ownership and Queen connection admission",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/129",
+      "updatedAt": "2026-09-30T19:32:28Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 128,
+      "title": "Propose operator plugin ownership and Queen integration sequence",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/128",
+      "updatedAt": "2026-09-30T21:16:26Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 127,
+      "title": "Audit the invention catalogue and propose source ownership, alignment and deeper dossiers",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/127",
+      "updatedAt": "2026-09-30T18:59:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-skills",
+      "number": 29,
+      "title": "Add Starlight and Starlight Queen operator plugins",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-skills/pull/29",
+      "updatedAt": "2026-09-30T21:16:28Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 126,
+      "title": "Propose official Starlight email agent and federated operations contract",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/126",
+      "updatedAt": "2026-09-30T16:12:40Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 261,
+      "title": "Bind Arcanea Records artist operations and stop simulated release success",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/261",
+      "updatedAt": "2026-09-30T15:21:30Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 124,
+      "title": "Connect founder operations, knowledge recovery and commercial delivery",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/124",
+      "updatedAt": "2026-09-30T14:45:59Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 123,
+      "title": "Clarify portfolio commerce boundaries and lifecycle vocabulary",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/123",
+      "updatedAt": "2026-09-30T13:17:01Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 121,
+      "title": "Golden Age: research-backed editorial operating system",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/121",
+      "updatedAt": "2026-09-30T12:24:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-memory-vault",
+      "number": 1,
+      "title": "fix(sync): fail-loud memory sync with heartbeat",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-memory-vault/pull/1",
+      "updatedAt": "2026-09-30T12:47:03Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 63,
+      "title": "docs(statusline): plan, design spec, review panel, acceptance",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/63",
+      "updatedAt": "2026-09-30T12:23:03Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-estate",
+      "number": 8,
+      "title": "chore: back up the agent control plane (kernel, agent factory, compiler, gates)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-estate/pull/8",
+      "updatedAt": "2026-09-30T11:04:41Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 78,
+      "title": "feat: Merge Steward \u2014 tiered, fail-closed auto-merge for agent PRs",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/78",
+      "updatedAt": "2026-09-30T05:18:30Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 53,
+      "title": "fix(skills): rescue 8 live skills that existed only as uncommitted worktree files",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/53",
+      "updatedAt": "2026-09-30T15:14:42Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-swarm",
+      "number": 29,
+      "title": "fix(deps): patch in-range advisories and pin latest specifiers",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-swarm/pull/29",
+      "updatedAt": "2026-09-29T12:27:52Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 76,
+      "title": "fix(ci): run the rules-drift check instead of a step that cannot fail",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/76",
+      "updatedAt": "2026-09-29T12:14:11Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-investor-portal",
+      "number": 1,
+      "title": "Investor engine: guardrail matrix, regime stress sims, TradingView adapter, agent spec",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-investor-portal/pull/1",
+      "updatedAt": "2026-10-01T00:55:57Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-estate",
+      "number": 7,
+      "title": "team-forge: brand product teams from archetypes (+ GenCreator team)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-estate/pull/7",
+      "updatedAt": "2026-09-29T11:56:44Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-evals",
+      "number": 18,
+      "title": "feat(brand-lab): multi-brand model adoption lane with pre-registered verdicts",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-evals/pull/18",
+      "updatedAt": "2026-09-29T11:52:50Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-estate",
+      "number": 6,
+      "title": "docs(strategy): fold frankx-starlight-command unique into strategy/ + ecosystem 27",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-estate/pull/6",
+      "updatedAt": "2026-09-29T02:09:11Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 67,
+      "title": "Add Starlight Intelligence design system v2",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/67",
+      "updatedAt": "2026-09-29T01:51:34Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 250,
+      "title": "chore(deps)(deps-dev): bump the npm-root-minor-patch group with 2 updates",
+      "draft": false,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/250",
+      "updatedAt": "2026-10-01T12:53:34Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-estate",
+      "number": 5,
+      "title": "fix(docs): P0-2 estate origin leak + private-remote pre-push guard",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-estate/pull/5",
+      "updatedAt": "2026-09-29T01:19:30Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command-center",
+      "number": 34,
+      "title": "chore: scrub .asph-wip (Wave 0 P1-2)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command-center/pull/34",
+      "updatedAt": "2026-09-29T01:18:46Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-social",
+      "number": 1,
+      "title": "chore: scrub .asph-wip (Wave 0 P1-2)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-social/pull/1",
+      "updatedAt": "2026-09-29T01:18:45Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-evals",
+      "number": 17,
+      "title": "chore: scrub .asph-wip (Wave 0 P1-2)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-evals/pull/17",
+      "updatedAt": "2026-09-29T01:18:44Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-knowledge-tree",
+      "number": 11,
+      "title": "chore: scrub .asph-wip (Wave 0 P1-2)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-knowledge-tree/pull/11",
+      "updatedAt": "2026-09-29T01:18:44Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-design-intelligence",
+      "number": 24,
+      "title": "chore: scrub .asph-wip (Wave 0 P1-2)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-design-intelligence/pull/24",
+      "updatedAt": "2026-09-29T01:18:43Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-communities",
+      "number": 18,
+      "title": "chore: scrub .asph-wip (Wave 0 P1-2)",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-communities/pull/18",
+      "updatedAt": "2026-09-29T01:18:42Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 24,
+      "title": "Technology Atlas: visual decision workspace, portable estate and read-only APIs",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-technology/pull/24",
+      "updatedAt": "2026-09-29T01:10:27Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 120,
+      "title": "docs(registry): Site Fleet strategy and Starlight live-site ownership correction",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/120",
+      "updatedAt": "2026-09-28T22:33:15Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 119,
+      "title": "Portfolio experience program for web, local Suite, and mobile",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/119",
+      "updatedAt": "2026-09-30T18:29:40Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 117,
+      "title": "Align portfolio runtime strategy to portable ownership",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/117",
+      "updatedAt": "2026-09-28T18:03:55Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-estate",
+      "number": 4,
+      "title": "Rule portable ownership and gate managed hosting separately",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-estate/pull/4",
+      "updatedAt": "2026-09-28T18:03:33Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 115,
+      "title": "registry: propose named R2 storage exceptions (media fabric v2)",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops/pull/115",
+      "updatedAt": "2026-09-28T15:00:24Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 246,
+      "title": "chore(foundry): reviewed toolchain-lock refresh for root tsx + @types/node bumps",
+      "draft": false,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/246",
+      "updatedAt": "2026-10-01T13:01:03Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-canvas",
+      "number": 29,
+      "title": "chore(deps): bump the app-dependencies group across 1 directory with 12 updates",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-canvas/pull/29",
+      "updatedAt": "2026-09-28T13:26:29Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-communities",
+      "number": 16,
+      "title": "build(deps-dev): bump vitest from 4.1.9 to 5.0.2",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-communities/pull/16",
+      "updatedAt": "2026-10-01T01:52:44Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 64,
+      "title": "Homepage: council-led experience and explorable system map",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/64",
+      "updatedAt": "2026-10-01T13:09:41Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-architecture",
+      "number": 2,
+      "title": "docs: unsent OpenAI proposal for creative and institutional capacity",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-architecture/pull/2",
+      "updatedAt": "2026-09-30T12:47:13Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 217,
+      "title": "docs: Starlight vision, human experience and OpenAI proposal",
+      "draft": false,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/217",
+      "updatedAt": "2026-09-30T15:54:54Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 111,
+      "title": "Fix Dispatch ledger authority and cloud readiness",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/111",
+      "updatedAt": "2026-09-26T18:42:46Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 110,
+      "title": "Starlight Cloud programme: hosted layer of the Operator Suite (proposal)",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/110",
+      "updatedAt": "2026-10-01T00:03:12Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 78,
+      "title": "Starlight Dispatch: routing policy, reference router and cross-provider plan",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/78",
+      "updatedAt": "2026-09-27T18:39:52Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-cosmos-engine",
+      "number": 7,
+      "title": "Start Starlight Sky with a deterministic pointing kernel",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-cosmos-engine/pull/7",
+      "updatedAt": "2026-09-26T13:42:18Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-knowledge-tree",
+      "number": 9,
+      "title": "Propose evidence-first Open Inventor Path and water kit handover",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-knowledge-tree/pull/9",
+      "updatedAt": "2026-09-26T13:42:03Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 214,
+      "title": "docs(architecture): sovereign production envelopes and shipped agent teams",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/214",
+      "updatedAt": "2026-09-28T14:08:12Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 72,
+      "title": "Propose creative portfolio operating architecture and cross-brand lineage",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/72",
+      "updatedAt": "2026-09-29T11:33:45Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 71,
+      "title": "Propose FrankX founder identity, funnel, and agent operating contract",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/71",
+      "updatedAt": "2026-09-26T13:37:58Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 213,
+      "title": "The Desk, hardened for a deployment: durable vault, spend limits, Desk-only signing (slice C of #189)",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/213",
+      "updatedAt": "2026-10-01T07:27:35Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 212,
+      "title": "Convergence v4: the option space for all twenty-one dimensions (replaces #192)",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/212",
+      "updatedAt": "2026-09-26T08:56:22Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 211,
+      "title": "Convergence v1 to v3 and the hackathon records (slice E of #189)",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/211",
+      "updatedAt": "2026-09-26T08:54:44Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 210,
+      "title": "Proposed: run receipt v1 JSON Schema as a SIP graph extension (slice D of #189, waits on Board #193)",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/210",
+      "updatedAt": "2026-09-26T08:53:49Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 209,
+      "title": "Receipt issue path: MCP tools, ledger, one-command issue and share (slice B of #189)",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/209",
+      "updatedAt": "2026-09-26T08:53:19Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 208,
+      "title": "Run receipt v1: issuer, verifier and compact share links (slice A of #189)",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/208",
+      "updatedAt": "2026-09-26T08:50:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/frankx-starlight-command",
+      "number": 23,
+      "title": "docs(empire): Starlight constellation audit \u2014 52 \u2192 27 repos",
+      "draft": true,
+      "url": "https://github.com/frankxai/frankx-starlight-command/pull/23",
+      "updatedAt": "2026-09-26T08:34:03Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-swarm",
+      "number": 28,
+      "title": "docs: absorb #27 capability-checked dispatch into Model Architecture doctrine",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-swarm/pull/28",
+      "updatedAt": "2026-09-26T07:35:07Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 73,
+      "title": "docs: observability interconnect shared-field contract (Wave 1-C)",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/73",
+      "updatedAt": "2026-09-26T02:19:27Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 68,
+      "title": "Managed Agents guardrail template: BYOK agent packs + desktop-off fallback (not the internal runtime)",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/68",
+      "updatedAt": "2026-09-26T21:54:28Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command-center",
+      "number": 30,
+      "title": "Add fail-closed GitHub agent-lane claim projection",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command-center/pull/30",
+      "updatedAt": "2026-09-25T16:23:35Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 63,
+      "title": "fix(home): primary CTA to constellation system room",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/63",
+      "updatedAt": "2026-09-25T08:41:56Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command-center",
+      "number": 29,
+      "title": "feat(daemon): bounded Gmail metadata review preview",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command-center/pull/29",
+      "updatedAt": "2026-09-24T22:53:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 65,
+      "title": "Communications OS v1: provider-neutral event contract and release gates",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/65",
+      "updatedAt": "2026-09-25T00:20:55Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 62,
+      "title": "chrome: integrate the Starlight Studio front door and guarded AI workbench",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/62",
+      "updatedAt": "2026-09-24T21:41:47Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 64,
+      "title": "GitHub-first weekly execution contract and drift guard",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/64",
+      "updatedAt": "2026-09-25T17:48:14Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 61,
+      "title": "feat(platform): inspectable provider integration map",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/61",
+      "updatedAt": "2026-09-24T18:19:36Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 203,
+      "title": "feat(foundry): guarded developer-first agent platform beta",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/203",
+      "updatedAt": "2026-09-28T14:07:53Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 23,
+      "title": "Visual comparisons and approval-gated editorial media",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-technology/pull/23",
+      "updatedAt": "2026-09-24T16:48:27Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 22,
+      "title": "Add XR device intelligence and creator workflow hub",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-technology/pull/22",
+      "updatedAt": "2026-09-24T21:34:47Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 60,
+      "title": "feat: integrate portable Department OS compiler",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/60",
+      "updatedAt": "2026-09-24T02:26:56Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 59,
+      "title": "feat: add one-click Starlight activation experience",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/59",
+      "updatedAt": "2026-09-24T02:33:04Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 49,
+      "title": "Add candidate GPT-6 orchestration policy and provenance checks",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/49",
+      "updatedAt": "2026-09-24T02:18:51Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agentic-os",
+      "number": 10,
+      "title": "Document candidate orchestration adoption lifecycle",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agentic-os/pull/10",
+      "updatedAt": "2026-09-24T02:18:46Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-operating-system-standard",
+      "number": 1,
+      "title": "Add candidate orchestration dispatch contract",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-operating-system-standard/pull/1",
+      "updatedAt": "2026-09-24T18:11:50Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-evals",
+      "number": 16,
+      "title": "Add frozen GPT-6 orchestration evaluation pilot",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-evals/pull/16",
+      "updatedAt": "2026-10-01T02:07:24Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 202,
+      "title": "fix(plugin): align activation router manifest with current schema",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/202",
+      "updatedAt": "2026-09-24T02:33:05Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 57,
+      "title": "Define the live and memory experience contract",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/57",
+      "updatedAt": "2026-09-24T15:43:44Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 48,
+      "title": "Stop Grok SessionStart from being killed at three seconds",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/48",
+      "updatedAt": "2026-09-24T01:57:32Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 60,
+      "title": "Propose decision-to-outcome operating loop for the full venture estate",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/60",
+      "updatedAt": "2026-09-24T23:14:18Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 200,
+      "title": "Issue 197: public experience, proof, Notes, and visual system",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/200",
+      "updatedAt": "2026-09-28T14:08:10Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 199,
+      "title": "Issue 197: measurable capability transfer",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/199",
+      "updatedAt": "2026-09-23T17:07:40Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 198,
+      "title": "Issue 197: evidence map and narrative canon",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/198",
+      "updatedAt": "2026-09-23T17:06:01Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 196,
+      "title": "split(ontology): fixture in the substrate, portfolio stays with the operator",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/196",
+      "updatedAt": "2026-09-22T13:26:24Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 195,
+      "title": "fix(receipts): a signed ledger row is not proof until the signature is checked",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/195",
+      "updatedAt": "2026-09-22T13:06:11Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 54,
+      "title": "feat(receipts): every run leaves a receipt \u2014 homepage, /receipts, /verify, verify API and MCP tool",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/54",
+      "updatedAt": "2026-09-22T00:21:27Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 182,
+      "title": "chore(deps)(deps-dev): bump eslint from 9.39.4 to 10.11.0 in /console",
+      "draft": false,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/182",
+      "updatedAt": "2026-09-26T07:44:36Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 181,
+      "title": "chore(deps)(deps): bump better-sqlite3 from 12.8.0 to 13.0.3",
+      "draft": false,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/181",
+      "updatedAt": "2026-09-19T16:30:12Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 177,
+      "title": "chore(ci)(deps): bump actions/attest from 2.4.0 to 4.2.2 in the gha-actions group across 1 directory",
+      "draft": false,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/177",
+      "updatedAt": "2026-09-29T01:51:32Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 50,
+      "title": "Resume galaxy loop and lazy-load constellation films",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/50",
+      "updatedAt": "2026-09-19T15:01:42Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-intelligence-academy",
+      "number": 52,
+      "title": "Operator Lab homepage, one faculty film, and cheaper images",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-intelligence-academy/pull/52",
+      "updatedAt": "2026-09-19T15:01:04Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-skills",
+      "number": 27,
+      "title": "docs(agents): add the cross-harness agent contract this T0 repo was missing",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-skills/pull/27",
+      "updatedAt": "2026-09-21T22:32:21Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 175,
+      "title": "feat(ontology): estate accountability graph + executive tier + AGENTS.md contract",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/175",
+      "updatedAt": "2026-09-29T12:38:15Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 71,
+      "title": "ci: add dependabot config for GitHub Actions",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/71",
+      "updatedAt": "2026-09-19T01:04:34Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence-ai-spec",
+      "number": 12,
+      "title": "Hold incompatible platform-ID matches for review",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence-ai-spec/pull/12",
+      "updatedAt": "2026-09-23T01:50:59Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence-ai-spec",
+      "number": 11,
+      "title": "Waitlist for Human Roster \u2014 no checkout, Signal renamed",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence-ai-spec/pull/11",
+      "updatedAt": "2026-09-23T01:51:34Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence-ai-spec",
+      "number": 10,
+      "title": "Add Human Roster partner packet and operator-pilot spec",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence-ai-spec/pull/10",
+      "updatedAt": "2026-09-18T19:11:07Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-architecture",
+      "number": 1,
+      "title": "Record Human Roster YC partner-product pack",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-architecture/pull/1",
+      "updatedAt": "2026-09-18T19:11:06Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 47,
+      "title": "Align fleet strategy preflight and current media policy",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/47",
+      "updatedAt": "2026-09-18T14:30:11Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops",
+      "number": 59,
+      "title": "Reconcile strategy adoption, release state and hosted tenancy",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops/pull/59",
+      "updatedAt": "2026-09-24T23:14:47Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-intelligence-academy",
+      "number": 41,
+      "title": "Add an interactive Context Lab and a continuous Academy first practice",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-intelligence-academy/pull/41",
+      "updatedAt": "2026-09-17T04:54:52Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 46,
+      "title": "Give Starlight a clear front door and a bounded Architecture Studio",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/46",
+      "updatedAt": "2026-09-24T17:36:47Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 45,
+      "title": "Replace the architect export dead end with guided review and agent handoff",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/45",
+      "updatedAt": "2026-09-17T04:46:03Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 44,
+      "title": "Define architecture-led Starlight positioning and voice",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/44",
+      "updatedAt": "2026-09-16T15:36:43Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 69,
+      "title": "ops(ledger): 2026-09-15 estate audit, council verdicts, delivered PRs",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/69",
+      "updatedAt": "2026-09-19T04:20:33Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 68,
+      "title": "ci(fleet-watch): comment only when findings change",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/68",
+      "updatedAt": "2026-09-16T06:24:57Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence-ai-spec",
+      "number": 9,
+      "title": "Deliver Human Roster portal, guided setup and agent-ready workflow brief",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence-ai-spec/pull/9",
+      "updatedAt": "2026-09-17T18:57:38Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 67,
+      "title": "fleet(routing): add subscription pacing and on-demand API worker policy",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/67",
+      "updatedAt": "2026-09-16T06:24:58Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 66,
+      "title": "docs(fleet): Book pulse install receipt 2026-09-15",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/66",
+      "updatedAt": "2026-09-15T18:49:43Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "number": 161,
+      "title": "Add durable brand workflows with signed evidence and bounded recovery",
+      "draft": true,
+      "url": "https://github.com/frankxai/Starlight-Intelligence-System/pull/161",
+      "updatedAt": "2026-09-16T03:27:51Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 45,
+      "title": "Add product outcome acceptance and explicit adoption receipts",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/45",
+      "updatedAt": "2026-09-15T13:12:33Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 44,
+      "title": "feat(ops): Founder Week OS contract, snapshot, and projections",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/44",
+      "updatedAt": "2026-09-14T21:39:08Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command",
+      "number": 2,
+      "title": "feat(swarm): Harness Rooms \u2014 parallel Codex/Claude off the Yoga Book",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command/pull/2",
+      "updatedAt": "2026-09-14T21:06:20Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 15,
+      "title": "feat: establish governed Starlight Agentic Engine",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-technology/pull/15",
+      "updatedAt": "2026-09-14T20:42:28Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 64,
+      "title": "docs(fleet): finalize draft receipt state [skip ci]",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/64",
+      "updatedAt": "2026-09-29T02:05:06Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-research-hub",
+      "number": 5,
+      "title": "feat: converge research app and evidence engine",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-research-hub/pull/5",
+      "updatedAt": "2026-09-14T02:54:15Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-technology",
+      "number": 14,
+      "title": "Install Vercel Web Analytics",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-technology/pull/14",
+      "updatedAt": "2026-09-13T23:10:05Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 43,
+      "title": "Attest skill sources before projecting supported frontmatter metadata",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/43",
+      "updatedAt": "2026-09-12T09:50:13Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 42,
+      "title": "Correct redirect classification and isolate malformed headers",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/42",
+      "updatedAt": "2026-09-12T09:20:15Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-command-center",
+      "number": 27,
+      "title": "Correct Observatory collection and verify manifest readback",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-command-center/pull/27",
+      "updatedAt": "2026-09-12T08:59:18Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 63,
+      "title": "docs(fleet): 8h Queen GitOps tick \u2014 C940 truth, PR TOP3, runtime teams",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/63",
+      "updatedAt": "2026-09-14T17:55:35Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-you",
+      "number": 6,
+      "title": "chore(twin): resync vendored reality.md standard to realityarchitect@...",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-you/pull/6",
+      "updatedAt": "2026-09-29T02:11:10Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-knowledge-tree",
+      "number": 8,
+      "title": "feat(canon): scale knowledge tree to 264 nodes, add MCP server, Noteb...",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-knowledge-tree/pull/8",
+      "updatedAt": "2026-09-19T01:20:31Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-skills",
+      "number": 25,
+      "title": "feat(substrate): add universal quantum-jump skill for timeline naviga...",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-skills/pull/25",
+      "updatedAt": "2026-09-29T02:09:50Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-canvas",
+      "number": 18,
+      "title": "Add Q-Town second-brain world and registered domain agents.",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-canvas/pull/18",
+      "updatedAt": "2026-09-29T02:09:43Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 39,
+      "title": "feat(doctrine): SIS memory spine + executable orchestrator runtime",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/39",
+      "updatedAt": "2026-10-01T02:17:01Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-swarm",
+      "number": 23,
+      "title": "feat(workforce): assess twelve-unit readiness from estate evidence",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-swarm/pull/23",
+      "updatedAt": "2026-10-01T02:07:27Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-domains",
+      "number": 17,
+      "title": "feat(portfolio): the public projection of the governed portfolio graph",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-domains/pull/17",
+      "updatedAt": "2026-09-10T23:09:16Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlightintelligence.ai",
+      "number": 37,
+      "title": "feat(constellation): native Grok Imagine loops for Agent Collective stills",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlightintelligence.ai/pull/37",
+      "updatedAt": "2026-09-10T22:10:32Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-design-intelligence",
+      "number": 22,
+      "title": "Establish typography standards, font audits and applied brand studio",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-design-intelligence/pull/22",
+      "updatedAt": "2026-09-10T02:39:45Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-communities",
+      "number": 9,
+      "title": "Add draft host programme planner and Codex operations skill",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-communities/pull/9",
+      "updatedAt": "2026-09-09T17:03:00Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/StarlightOS",
+      "number": 1,
+      "title": "Starlight Astrology Studio: venture plan, six skills and tested MCP foundation",
+      "draft": true,
+      "url": "https://github.com/frankxai/StarlightOS/pull/1",
+      "updatedAt": "2026-09-09T16:56:00Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-design-intelligence",
+      "number": 21,
+      "title": "Document image generation field pilot, prompt patterns and publication map",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-design-intelligence/pull/21",
+      "updatedAt": "2026-09-09T16:12:23Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-skills",
+      "number": 23,
+      "title": "Add Starlight Golden Age practice companion and portable plugin",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-skills/pull/23",
+      "updatedAt": "2026-09-11T12:39:21Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 59,
+      "title": "bus(c940): live heartbeat 2026-09-09 (self only)",
+      "draft": false,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/59",
+      "updatedAt": "2026-09-12T10:57:28Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 34,
+      "title": "Establish Starlight ontology and Sacred Horizons integrity",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/34",
+      "updatedAt": "2026-09-12T10:57:36Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 33,
+      "title": "policy: require artifact authority before repo placement",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/33",
+      "updatedAt": "2026-09-12T10:57:38Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 32,
+      "title": "Bind constitutional eligibility to reviewed portfolio admission",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/32",
+      "updatedAt": "2026-10-01T00:23:21Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 31,
+      "title": "Correct Work contract authority and activation semantics",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/31",
+      "updatedAt": "2026-10-01T00:23:18Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 28,
+      "title": "fix(vercel): classify hostname integrity without project.live",
+      "draft": true,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/28",
+      "updatedAt": "2026-10-01T02:07:26Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 26,
+      "title": "Establish the Starlight constitutional doctrine",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/26",
+      "updatedAt": "2026-09-14T17:55:48Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/agentic-ops-hub",
+      "number": 53,
+      "title": "feat(fleet): local activity index for subscription-metered work \u2014 advisory until calibrated",
+      "draft": true,
+      "url": "https://github.com/frankxai/agentic-ops-hub/pull/53",
+      "updatedAt": "2026-09-28T18:23:07Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 22,
+      "title": "Codify ChatGPT Work execution contract",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/22",
+      "updatedAt": "2026-09-14T17:55:50Z",
+      "reviewStatus": "not-yet-reviewed"
+    },
+    {
+      "repository": "frankxai/starlight-agent-config",
+      "number": 19,
+      "title": "GitOps cost governance and estate auditor",
+      "draft": false,
+      "url": "https://github.com/frankxai/starlight-agent-config/pull/19",
+      "updatedAt": "2026-09-30T13:19:22Z",
+      "reviewStatus": "not-yet-reviewed"
+    }
+  ],
+  "verified": {
+    "merged": [
+      {
+        "repository": "frankxai/agentic-ops-hub",
+        "pullRequest": 76,
+        "commit": "a699929c26fee7d15b7beaa005feb50f9344d757",
+        "ciRun": 36867184561,
+        "status": "success",
+        "sourceBranch": "absent"
+      }
+    ],
+    "held": [
+      {
+        "repository": "frankxai/starlight-agent-config",
+        "pullRequest": 48,
+        "head": "485c906619d84eade2bb5fde3eb15a8d7781c1e7",
+        "reason": "Checkout-controlled formatter execution; independent security finding reproduced."
+      },
+      {
+        "repository": "frankxai/starlightintelligence.ai",
+        "pullRequest": 64,
+        "head": "8e7218639a2f6065f266876c48080448e29a179a",
+        "reason": "Ignored preview, responsive browser QA and independent release review still unproven."
+      }
+    ],
+    "operations": [
+      {
+        "repository": "frankxai/agentic-ops-hub",
+        "issue": 75,
+        "run": 36827998077,
+        "status": "failure",
+        "reason": "ESTATE_READ_TOKEN not configured"
+      }
+    ],
+    "routing": {
+      "discovery": "missing registry at canonical config path",
+      "explicitGuardAndFileCheck": "pass",
+      "localRefs": "must refresh before using as current truth"
+    },
+    "upstreamIdentity": {
+      "agentOrchestrator": "ComposioHQ/agent-orchestrator redirects to Untrivial-ai/agent-orchestrator",
+      "ohMyOpenAgent": "Current default README is OmO on senpi; earlier OpenCode edition is a different revision",
+      "mempalace": "MemPalace/mempalace; current default branch develop",
+      "adoption": "research only; no source imported or runtime installed"
+    },
+    "upstreamPins": {
+      "Untrivial-ai/agent-orchestrator": "ab9f2d62c4314ea83ea590e62d72738c70579f53",
+      "code-yeongyu/oh-my-openagent": "aa93a3b98a07792d8625ac613c9e353fd3cda59f",
+      "ruvnet/ruflo": "6cfd88654f2c571940f32704d79a2a1892de4392",
+      "MemPalace/mempalace": "5ea40d30caf0ed2ff6e49623e386a0863b28edaa",
+      "mem0ai/mem0": "94c3fe9f238f3dbf29c9ce98643bd71eb13077cd",
+      "paperclipai/paperclip": "467125fafb47a8520856504fecc48d6e32055db1"
+    },
+    "hookRepair": {
+      "repository": "frankxai/starlight-agent-config",
+      "pullRequest": 79,
+      "issue": 78,
+      "head": "c12cc404260dd9bc368300fb5d62e6b965df523b",
+      "originalPullRequest": 48,
+      "localTests": {
+        "node": 19,
+        "python": 5,
+        "skipped": 0
+      },
+      "independentProvider": {
+        "provider": "Anthropic",
+        "model": "claude-sonnet-5-5",
+        "codeHead": "88fea87594c2c62b571b8308b022039cde00ddbd",
+        "codeVerdict": "PASS",
+        "ciHead": "ace2f97b56996a1225bc023ee2663fee3f09d751",
+        "ciVerdict": "PASS",
+        "reviewedCodeBlobsUnchangedAtCurrentHead": true
+      },
+      "ciRun": 36871425675,
+      "ciStatus": "success",
+      "liveProjection": "unchanged",
+      "hostEnforcement": "unverified",
+      "githubApproval": "one required; cannot self-approve",
+      "pullRequestCiRun": 36871538539,
+      "pullRequestCiStatus": "success"
+    }
+  },
+  "acceptanceAudit": [
+    {
+      "requirement": "Review every Starlight branch and PR, integrate useful work onto main",
+      "status": "open",
+      "evidenceNeeded": "Census rows each receive exact-head diff review, required checks and dependency disposition."
+    },
+    {
+      "requirement": "Verify production green and clean merged branches",
+      "status": "open",
+      "evidenceNeeded": "Intended deployment SHA, runtime probes, rendered QA, post-merge CI and branch/worktree ownership proof."
+    },
+    {
+      "requirement": "Choose and integrate new design and logos",
+      "status": "open",
+      "evidenceNeeded": "Pinned design authority, provenance sidecars, both visual ledgers, independent visual review, desktop/mobile QA and deployed artifact."
+    },
+    {
+      "requirement": "Reconcile Queen and task queue implementation with plans",
+      "status": "open",
+      "evidenceNeeded": "One authority per mission, atomic claims, replay/cancel/restart tests, real artifact and cost receipt."
+    },
+    {
+      "requirement": "Absorb named upstream projects and AI-lab SDKs",
+      "status": "open",
+      "evidenceNeeded": "Per-file pinned provenance/license, owner, connect/adopt/reimplement/defer verdict and frozen comparative fixtures."
+    },
+    {
+      "requirement": "Modernize specialists and multi-agent teams",
+      "status": "open",
+      "evidenceNeeded": "Versioned agent capability cards, actual provider probes, bounded resource admission and independently accepted task corpus."
+    },
+    {
+      "requirement": "Prove memory, graph and ontology collaboration",
+      "status": "open",
+      "evidenceNeeded": "Source/freshness/tenant scope, forget/revoke semantics, prompt-injection and graph consistency tests, benchmark against incumbent."
+    },
+    {
+      "requirement": "Resolve repository, marketplace, skill, agent, app and plugin ownership",
+      "status": "open",
+      "evidenceNeeded": "Reviewed registry owner matrix and consistent consumer projections without duplicate authorities."
+    },
+    {
+      "requirement": "Deliver education and portable Academy plugins",
+      "status": "open",
+      "evidenceNeeded": "Source curriculum and mission artifacts, per-host install proof, ChatGPT host/directory verification and tested learning transfer."
+    },
+    {
+      "requirement": "Deliver meta harness across local/cloud agents, desktop, trays and web",
+      "status": "open",
+      "evidenceNeeded": "Real inspect-plan-run-recover-verify journey across two hosts with scoped connection and budget/cost/subscription visibility."
+    },
+    {
+      "requirement": "Establish OSS and premium products and templates",
+      "status": "open",
+      "evidenceNeeded": "Cold install, demand and price evidence, rights/provenance, accepted primary journey and exact-artifact release gate."
+    },
+    {
+      "requirement": "Close tasks and preserve source goals and ops evidence",
+      "status": "open",
+      "evidenceNeeded": "Existing issue/objective records updated on evidence, hub session/ledger/prompt saved, no unfinished task archived."
+    }
+  ],
+  "currentCensus": {
+    "file": "starlight-branch-census-20261001.json",
+    "repositories": 57,
+    "remoteBranches": 532,
+    "openPullRequests": 162,
+    "apiErrors": 0,
+    "recordedAt": "2026-10-01T13:35:15.214472+00:00",
+    "note": "Snapshot before repair PR79; does not establish branch merge safety."
+  }
+}

@@ -17,6 +17,38 @@
 
 ## Current
 
+[Starlight integration continuation, Codex]
+```
+Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the Codex
+integration section in ops/sessions/2026-10-01.md and both ops/evidence
+starlight-*-20261001.json files. Twelve acceptance groups remain open.
+Preserve the existing cloud continuation and unfinished task references.
+
+First re-query config PR79, exact head c12cc404260dd9bc368300fb5d62e6b965df523b,
+CI, main protection and issue78. Full code and CI increment have independent
+Anthropic PASS; this actor cannot self-approve the required GitHub review.
+Merge only after that approval and required checks, then verify post-merge CI.
+Close superseded PR48 only after replacement lands; preserve its occupied
+local worktree. No live projection was applied. Actual Grok-host denial still
+needs an owned synthetic secret-write test.
+
+Then resume SIS143 portable-runtime pilot, SIS219 source dossier, and SIS220
+one-authority interop. Reconcile current registry and planned/current code.
+Use the 57-repo census as discovery, refresh each exact head before review.
+Website PR64 needs a usable preview, browser QA and independent release proof.
+Hub issue75 still needs ESTATE_READ_TOKEN; do not declare estate green.
+
+Before writes: location guard, explicit file route check, separate ownership.
+Before heavy work: fresh pp/storage admission. No local fanout until admitted.
+Keep one owner per worktree, scoped credentials, one mission authority,
+source-cited memory and customer-owned local/self-hosted delivery. Any upstream
+import needs pinned source/license/dependencies, an owner, a tested reason and
+rollback. Preserve paused services and open acceptance; do not bulk merge,
+archive unfinished goals, publish premium claims or delete branches by age.
+Save results in this hub and existing product issues.
+```
+
+
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
 You are Claude Fable 5.1. Pin model id claude-fable-5-1. If this cloud seat
