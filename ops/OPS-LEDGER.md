@@ -344,3 +344,35 @@ behavioral evaluation and accepted production/creator proof remain open.
 - Full task active; other refined workflows, rights/Heart decisions, donor folds,
   plugin/MCP consumers and creator/revenue/release proof remain open. Session
   appended and only the current Arcanea fenced prompt replaced; other fronts kept.
+
+
+## 2026-10-01 - Arcanea visibility and refined workflow evidence (Codex)
+
+- App draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487), head
+  `5327861370c95748764017dc2e022b67b4abb348`: parsed YAML visibility and explicit
+  CI inclusion of all 11 curated tests; source refinement preserves unknown
+  world cause/recovery. Four internal candidates, zero ready.
+- Media/quest avoid specific earlier findings. World still fails invention
+  labeling at the second refinement. Nine unedited creator outputs, exact
+  source/input/output receipts, $0.6054792 reported list equivalent; no held-out,
+  control, runtime, authentic creator or billed-spend claim.
+- [CI 36898615122](https://github.com/frankxai/arcanea-ai-app/actions/runs/36898615122)
+  completed SUCCESS at source bfd005dadd with required four checks plus Install.
+  Final evidence-only head 5327861370 awaits its own receipt. Local 11 tests,
+  world validation, formatting, staged artifact hashes and secrets pass.
+- Bounded Sonnet catalog review again timed out without output/sign-off;
+  previous review failures and Gemini client rejection retained. Third-party
+  sample confirms local licence files, not original import/resource clearance.
+  Licence/Heart, launcher origin/ownership and broader creator/release work open.
+- [Product issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5936832073), session appended,
+  one Arcanea prompt refreshed after a fresh clear ownership check. Other fronts
+  preserved. No production, archive, licensing or commerce change; full goal active.
+
+
+Final-head receipt: [CI 36899521150](https://github.com/frankxai/arcanea-ai-app/actions/runs/36899521150)
+completed SUCCESS at app `5327861370c95748764017dc2e022b67b4abb348`.
+Install and all four required Build/Lint/TypeScript/CI Status checks passed.
+Build explicitly ran all 11 curated catalog tests, 11 pass, zero fail. Draft
+rendered gallery/browser skips remain; independent review, rights, world
+invention labeling and broader creator/release proof remain open. PR #487 is
+still draft/BEHIND. This supersedes the pending-CI phase above, without erasing it.
