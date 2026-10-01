@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (home Wave A assessment, home Wave 0, placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (home renames, Wave A assessment, Wave 0, placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01 — home renames into repos (YogaBook)
+
+- Same-volume renames into `starlight\repos`. No new remotes. Control plane not edited. Detail is the "Home moves" section of `ops/sessions/2026-10-01.md`.
+- Now under repos: `remotion-video`, `agents-council`, `aurora-kit`, `eve-practitioner-template`, `suno-library`, `wallpapers`, `arcanea-platform`, `arcanea`.
+- Two clean Copilot worktrees of the home `arcanea` clone were removed with `git worktree remove` and no `--force`. An empty shell left by a denied `Move-Item` was removed after the repo checked out at `a88b769`.
+- Home `vibeclubs.ai` changes are `64a473b` on `agent/grok/home-uncommitted-2026-10-01`. Draft https://github.com/frankxai/vibeclubs/pull/16. Estate checkout stayed `agent/claude/session-format-v1`. Home folder removed after `ls-remote` matched.
+- Disk 133.88 GiB / 14.07% before the moves, 134.67 GiB / 14.15% after the vibeclubs delete. Under the 15% floor. No zip and no new worktree.
+- Clean home twins are not retired yet. That is the next reclaim.
 
 ## 2026-10-01 — home Wave A assessment (YogaBook)
 
