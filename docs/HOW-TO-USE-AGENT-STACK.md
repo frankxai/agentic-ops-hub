@@ -62,7 +62,7 @@ Figma → figma-design-to-code (auth gate first)
 Gen   → GENERATION-A11Y-CHECKLIST.md before production
 ```
 
-Doctrine: [DESIGN-EXCELLENCE.md](../design-control-plane/) is machine-local under `.agent-harness`; audit snapshot: [brand-design-audit-20260806.md](./design-control-plane/brand-design-audit-20260806.md).
+Doctrine: `DESIGN-EXCELLENCE.md` is machine-local under `.agent-harness`; audit snapshot: [brand-design-audit-20260806.md](./design-control-plane/brand-design-audit-20260806.md).
 
 ## Disk law (live)
 
