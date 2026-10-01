@@ -15,11 +15,14 @@
 
 ## 🥇 Highest leverage first
 
-**[F0 · claude-code-config + estate root]** — make the merged skill foundry live
+**[F0 · gencreator-skills]** — list video-social-studio in the Claude plugin directory
 ```
-Live config is on main with tier applied. Next run `pwsh -File repos/claude-code-config/docs/handoffs/land-rova.ps1`
-(dry run) and `-Apply` to land codex/rova; then apply docs/handoffs/skill-foundry-control-plane.patch
-then submit gencreator-skills and claude-skills-library at clau.de/plugin-directory-submission.
+Done already: live config on main with tier applied; codex/rova landed and pushed (4fd0383, includes
+the control-plane patch). Do not rerun land-rova.ps1 or the patch.
+Next: once gencreator-skills #5 (license + network disclosure) is merged, submit at
+claude.ai/directory/manage -> Submit new -> Plugin bundle -> frankxai/gencreator-skills, folder
+video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server in a subfolder).
+claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
 ```
 
 **[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
