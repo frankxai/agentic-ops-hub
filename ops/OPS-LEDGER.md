@@ -277,3 +277,13 @@ staged secret scan pass locally. CI, different-harness sign-off, behavioral eval
 rights decisions remain open. [#276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5931868496).
 Hub lane initially occupied, then cleared and saved here. Launcher missing-origin/owner hold
 persists. Full objective active; next evaluate pinned candidates independently before promotion.
+
+### Skill donor reconciliation
+
+App branch `ecb22a33a3bfb8becd77c5c02966c6122f8c86b9` adds an exact-source decision map:
+122 source entries / 192 file identities, with explicit-reference audit and eleven local
+tests passing. No donor text moved or source retired. Distilled main is UNLICENSED;
+legacy reserved-root/MIT-metadata conflict and the diverged donor fork require review.
+Preserve intentional adapters and story specialty. [#276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5932361060).
+Full goal active; rights, independent eval/review, self-contained installs, app release gates,
+broader salvage and community/revenue proof remain open. Current Arcanea prompt points here.

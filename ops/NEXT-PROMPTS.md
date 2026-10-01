@@ -22,7 +22,7 @@
 ```text
 Continue Codex task 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and Arcanea issue #276.
 Read the proposal, source audit and creator-candidate implementation at app commit
-b48f6ccf94f276a7df3eb03d48f4bf2119dfda2c, branch
+ecb22a33a3bfb8becd77c5c02966c6122f8c86b9, branch
 agent/codex/arcanea-source-consolidation-20261001. Worktree:
 C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 The broader community/revenue goal remains active. This is proposed policy,
@@ -36,14 +36,21 @@ scene-to-media and quest-adapt. Zero ready skills; package private, metadata
 internal. Rights, behavioral evaluation and independent review remain pending.
 Authored Tideglass examples are not independent evaluations. Installer/API use
 the catalog and preserve support files; old folders remain excluded for review.
-Next: fresh behavioral requests with saved outputs/failure cases against pinned
-bytes, independent review, exact source reconciliation; coordinate launcher root
+Read docs/strategy/arcanea-skill-survivors-2026-10-01.md and its evidence JSON.
+122 entries are source copies/versions. Distilled main e4530e9fba is UNLICENSED;
+the local 8bd8f50ae1 fork has separate install/runtime work. Preserve it. Legacy
+a88b76974a reserves root rights but has MIT pack metadata; review both/history.
+Sovereign-depths is an intentional adapter. Keep story generation distinct.
+Next: inspect world/continuity support files, review rights and select changes;
+fresh behavioral requests with saved outputs/failures against pinned final bytes,
+independent review and self-contained install proof; coordinate launcher root
 support with its existing owner. skill-bundles has no origin and the launcher
 worktree is on agent/claude/skill-bundles; do not overwrite it. Root must control
 both discovery and installation, and merge keys must include repo/root/sha.
 Obtain Frank's rights and Heart-frequency rulings before applying either.
 #278 owns generated canon; #283 owns world write safety. Use those contracts.
-Eight installer tests, two audit tests, four UTF-8 skill validations, format and
+Eight installer tests and three audit tests pass. Four unchanged candidate skill
+validations previously passed in UTF-8 mode. Format and
 secret scan passed locally; independent provider review, app CI,
 actual installs and community/revenue proof remain open. No PR was added to
 the over-budget queue; the review branch is pushed and #276 has the evidence.
