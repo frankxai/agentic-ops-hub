@@ -41,10 +41,11 @@ source-consolidation/survivor/public-entry strategy before writing. Parsed YAML
 visibility is tested; CI now explicitly runs all 11 catalog tests. Package
 private, four internal candidates, rights/evaluation/review pending, zero ready.
 
-CI 36899521150 completed SUCCESS at final app 5327861370: Install and required
+CI 36900900930 completed SUCCESS after final-description refresh at app
+5327861370: Install and required
 Build/Lint/TypeScript/CI Status. Build explicitly ran all 11 catalog tests,
-11 pass, zero fail, under frozen dependencies. Source-change CI36898615122 also
-passed at bfd005dadd. Both runs are terminal; do not restart them for activity.
+11 pass, zero fail, under frozen dependencies. Same-source CI36899521150 and source-change
+CI36898615122 also passed. These runs are terminal; do not restart for activity.
 Gallery/browser checks skipped by draft policy; no deployed creator success proof.
 PR remains draft/BEHIND. Recheck current head/main and owners before new work.
 

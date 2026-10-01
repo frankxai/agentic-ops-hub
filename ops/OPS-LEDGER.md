@@ -398,3 +398,22 @@ Build explicitly ran all 11 curated catalog tests, 11 pass, zero fail. Draft
 rendered gallery/browser skips remain; independent review, rights, world
 invention labeling and broader creator/release proof remain open. PR #487 is
 still draft/BEHIND. This supersedes the pending-CI phase above, without erasing it.
+
+
+Verification follow-up: all incoming ledger additions, both complete session
+appends, other current prompts and five main-source blobs are verified in
+3ff8ae3. The earlier assertion assumed incoming ledger additions were append-
+only; main inserted its record earlier. The command sequence continued after
+that assertion failed. Committed content was subsequently checked directly
+against both parents; no records were lost. Future dependent commands in this
+slice stop on a failed subprocess. The sparse checkout lacks the local sync
+script, so its local invocation failed; no local sync pass is claimed. Exact-head
+[hub CI 36901144779](https://github.com/frankxai/agentic-ops-hub/actions/runs/36901144779)
+passed and explicitly reports all four generated targets in sync.
+
+After refreshing the app PR description to its final scope, edited-event
+[CI 36900900930](https://github.com/frankxai/arcanea-ai-app/actions/runs/36900900930)
+completed SUCCESS at unchanged app 5327861370. Install and the four required
+checks pass. The previous same-source successful run remains retained; no
+source, rights, independent-review or readiness claim changed. Hub draft #98
+is merge-clean at the recorded integration head; it remains a draft.
