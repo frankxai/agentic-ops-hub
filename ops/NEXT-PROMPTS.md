@@ -27,9 +27,28 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
+CURRENT imported-skill notice delta in existing draft #487:
+21850c2da160e3319c582b6973e14e2be8368a04; source CI36930667126 completed SUCCESS
+with Install/all four required checks and four audit fixtures actually executed.
+Complete six-file/delta Sonnet4.6 HIGH review PASS/three LOW/one INFO, not licensing
+clearance or whole-PR/release approval. Read source-consolidation task record and
+docs/strategy/arcanea-skill-rights-evidence-2026-10-01.{md,json}.
+Auditor recognizes UPSTREAM-LICENSE and hashes committed notices; all applicability
+unreviewed. Root-scoped skills still return global notice evidence (LOW follow-up).
+Ten selected skill/notice pairs at parent0a04 and main e863: eight restrictive
+document copies, algorithmic-art Apache2.0 placeholder copyright, apple-design
+Emil Kowalski MIT. Nine notices/zero skill bodies match pinned current upstream.
+Historical imports/resources/contracts unverified; existing copies unchanged.
+Four internal candidates, zero ready. Public licence copy still unchanged.
+Next bounded work: import/resource and consumer audit before current-tree remediation;
+correct blanket public MIT claims at apps/web/app/skills/page.tsx and
+apps/web/app/v3/v3-below-fold.tsx, preserving scoped package/import licences.
+Root/licensing, Heart, manuscript and archive choices remain Frank's. Do not delete
+consumers blindly or rewrite history. Retain all earlier source/review/failure receipts.
+
 CURRENT APP WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-CURRENT BRANCH: agent/codex/arcanea-preview-binding-20261001
-CURRENT preview binding draft https://github.com/frankxai/arcanea-ai-app/pull/491
+CURRENT BRANCH: agent/codex/arcanea-source-consolidation-20261001
+Retained preview binding draft https://github.com/frankxai/arcanea-ai-app/pull/491
 HEAD a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962; base e863be8304fdde9f00ba812d7845d66ec52787b9.
 Source CI36926343395 and description-edited CI36927439029 both completed
 SUCCESS with all four required checks at this unchanged source. No live CI
