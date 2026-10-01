@@ -37,8 +37,11 @@ first and obey its hard rules. You are not the author of the three public PRs,
 so start with P0: review GenInvestor #1, geninvestor-skills #1 and
 awesome-investor-agent-skills #8 as a skeptical buyer, fix what you find, then
 work the build queue in order (Form 4/13F, price data, model adapters, then the
-Next.js dashboard with an evidence drawer on every figure). Draft PRs only. Do
-not merge, do not push to main, do not use any personal email.
+Next.js dashboard with an evidence drawer on every figure). Build the seven-agent
+team in the brief (scanner, signal, researcher, skeptic, quant check, calibrator,
+curator). Be proactive: run an R&D sweep every session, prototype the best idea
+visually, open issues for what you find, and keep going without asking. Draft PRs
+only. Do not merge, do not push to main, do not use any personal email.
 ```
 
 ## 🥇 Highest leverage first
