@@ -4,12 +4,12 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
-## 2026-10-01 - startup and shared memory review
+## 2026-10-01 - startup hook and performance repairs
 
-- Audit complete; runtime optimization remains open in [starlight-agent-config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46). Keep Grok's delayed prebuilt gateway and lean startup. Agent reads on 7317 succeeded; the separate 5200 gateway is not the shared agent memory endpoint. No startup settings changed.
-- Priority correction: the ripgrep wrapper's early exclusions can be overridden by later globs. Require bounded repository targets and repair argument precedence in the existing optimization owner's lane. The existing cross-repo indexer imports Claude memory; it is not a code-search index.
-- Tray source polls supervisor state through blocking PowerShell every 30 seconds and does not report 7317. Cache that task state and add bounded health reads in the proper owner lane. Backup/security task replacements and missing indexed guide paths remain unverified.
-- Evidence and acceptance criteria: [session review](sessions/2026-10-01.md#startup-and-shared-memory-review-codex). Local handover branch: `agent/codex/startup-memory-review-20261001`; no build, install, daemon, or settings change. Existing fronts below stay open.
+- Applied the reviewed Codex SessionStart JSON repair and existing Bash/CMD search guards. The configured hook returned valid `{}` in 323 ms, other hook states were preserved, and real wrapper/backend regression checks passed. Shared memory still served 297 atoms/vectors.
+- Tested tray binary is assigned to the existing Startup shortcut for next sign-in: background status reads, one-minute polling, five-minute task cache and bounded child/output deadlines. Keep the three-minute prebuilt-only gateway launcher. A real sign-in benchmark and native tray interaction QA remain pending.
+- [Product draft PR 76](https://github.com/frankxai/starlight-agent-config/pull/76), commit `97c1a46`: 26 Python tests, Windows CI compilation/process tests, all PR checks green, independent Anthropic review PASS. Local backups and rollback receipts retained privately. Direct/bundled search binaries bypass wrappers; scope policy still applies.
+- [Issue 46](https://github.com/frankxai/starlight-agent-config/issues/46) stays open for wider task/guide ownership and next-sign-in verification. [Session handover](sessions/2026-10-01.md#startup-hook-and-performance-repairs-codex). No extra fleet, indexer or memory service enabled; other fronts and user-owned processes preserved.
 
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
