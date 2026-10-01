@@ -20,17 +20,31 @@
 [Queen Slack activation, Codex]
 ```text
 Continue agentic-ops issue134 and draft PR135 at
-e98b96a2c01e3a4816af0dd61f98883945a0f256. Read docs/SLACK-QUEEN.md and
-the October 1 session receipt. The workspace standard is published, but /queen
-is unregistered and no inbound worker round trip has been verified. Obtain an
-independent provider review of the exact revision. Connect an approved Slack
-Queen app and HTTPS ingress with the supplied manifest and private secret loader.
-Keep intake held while checking help/status. On a freshly admitted runtime,
-verify one sandbox executor, then submit one issue-bound task and confirm one
-existing-bus envelope, one worker claim, meaningful progress in one Slack thread
-and final proof. Preserve routing, ownership and release gates. Keep cloud
-dispatch, cancellation and unseen ChatGPT coverage explicitly pending. No new
-worker/service/worktree under machine HOLD or BOUNDED storage restrictions.
+f29243d7ff572c730afd0d68902732c72bb11306. Read docs/SLACK-QUEEN.md,
+docs/QUEEN-OPERATIONS-BLUEPRINT.md, the private n8n audit and the October 1
+hub receipt. Forty-seven tests pass. Re-read exact-head independent review
+evidence and reconcile all activation gates; the full review requested the
+partial Slack delivery correction now present at this head. Independent delta
+review passed; exact-final full review remains required before production.
+
+Frank authorized a EUR100/month initial incremental API/cloud ceiling and
+subscription-first use through supported authentication. No automatic increase
+or API fallback. Reconcile existing commitments and billing evidence before
+paid admission. Trusted supervisor/reconciler exclusively owns ledger writes;
+models must not receive database/settlement access. Plan and reserve together
+against fresh observations. Dots, managed providers and Matrix remain candidates.
+
+The Slack standard is posted; /queen is unregistered. The existing n8n editor
+is awaiting Frank's sign-in. Reuse existing routing workflows; prepare disabled
+fixes for signed ingress, actor allowlists, duplicate handling, branch-specific
+forwarding and receipt-derived status. Validate and re-read connections before
+any publishing; preserve unrelated active workflows. No secrets in chat/export.
+Connect approved Queen app/HTTPS ingress and private state, then probe one
+sandbox executor. Prove one issue-bound envelope, claim, threaded progress and
+final evidence before admitting a deterministic health pilot. Preserve routing,
+lane ownership, release gates and account eligibility. Keep cloud dispatch,
+cancellation and unseen ChatGPT coverage pending. No new worker/service/worktree
+under machine HOLD or BOUNDED storage restrictions.
 ```
 
 [Starlight integration continuation, Codex]
