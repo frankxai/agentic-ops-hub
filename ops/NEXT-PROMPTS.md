@@ -25,11 +25,16 @@ product revenue excluding VAT/refunds by 10 October; actual revenue unknown.
 Read the appended sprint receipt in ops/sessions/2026-10-01.md and the private
 SPRINT-DECISION.md packet referenced there. Preserve all prior fronts.
 Use the existing portfolio worktree only after fresh ownership/routing checks.
-Read Creator Launch PR 11, its latest CI (including cold Node 24 export and
-browser job), and the independent critique/reconciliation. Repair failures,
-inspect rendered craft and complete a cold buyer trial. Keep PR 8 dependency.
-Then verify seller approvals and prepare concrete channel delivery/listings
-from the canonical product manifest. Source Next.js is not native Framer.
+Read Creator Launch PR 11 head 45414a2 and CI 36867988104. Preview/published
+exports build and render; unfinished published cases fail the build. Read the
+earlier cold buyer's 49-check receipt and current delivery SHA/inventory in
+the session. Keep PR 8 dependency; current publication settings still need
+cold use, an exact-current-artifact provider review and hosted preview.
+Make paid/free additional value concrete with real worked evidence before
+pricing. Verify seller access and reachable qualified traffic; Resend's 34
+records include tests, with no recent broadcast evidence of engagement.
+Prepare owned/Gumroad delivery and canonical listings, then native Framer
+only with a real native artifact/account. Preserve source MIT rights.
 No checkout before the paid release gate, real 24-hour access/refund evidence
 and Frank's price decision. No invented demand or completed estate audit.
 Keep the goal active while required revenue/product work remains.
