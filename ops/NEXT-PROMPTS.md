@@ -19,7 +19,7 @@
 ```
 Done already: live config on main with tier applied; codex/rova landed and pushed (4fd0383, includes
 the control-plane patch). Do not rerun land-rova.ps1 or the patch.
-Next: once gencreator-skills #5 (license + network disclosure) is merged, submit at
+gencreator-skills #5 (license + network disclosure) is merged (466d694). Next: submit at
 claude.ai/directory/manage -> Submit new -> Plugin bundle -> frankxai/gencreator-skills, folder
 video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server in a subfolder).
 claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
