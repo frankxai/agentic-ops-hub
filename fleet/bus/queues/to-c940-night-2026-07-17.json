@@ -2,7 +2,7 @@
   "to": "c940",
   "from": "yoga-book-command-center",
   "issued_at": "2026-07-17T03:45:48+00:00",
-  "priority": "P0",
+  "priority": 0,
   "status": "ready",
   "intent": "Continue autonomously through the rest of the night; review work that stopped early and advance backend/GitOps while Book owns frontend/UX.",
   "items": [

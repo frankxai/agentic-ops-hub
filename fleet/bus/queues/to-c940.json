@@ -3,7 +3,7 @@
   "to": "c940",
   "from": "command-center",
   "issued_at": "2026-07-17T13:35:00+00:00",
-  "priority": "P0",
+  "priority": 0,
   "active": [],
   "historical": [
     {"id": "B1", "status": "delivered", "evidence": "d10d81c"},

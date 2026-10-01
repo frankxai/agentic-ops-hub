@@ -3,7 +3,7 @@
   "to": "yoga-book",
   "from": "c940-command-center",
   "issued_at": "2026-07-17T13:35:00+00:00",
-  "priority": "P0",
+  "priority": 0,
   "connection": {
     "remote_heartbeat_observed": "2026-08-06T13:19:01+00:00",
     "status": "retired",
@@ -17,7 +17,7 @@
       "id": "BOOK-HEARTBEAT-20260825",
       "title": "Publish Yoga Book self-heartbeat after verified tailnet join",
       "owner": "yoga-book",
-      "priority": "P0",
+      "priority": 0,
       "issued_by": "c940",
       "issued_at": "2026-08-25T01:28:34+00:00",
       "ttl_hours": 24,
