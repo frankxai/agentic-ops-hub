@@ -30,13 +30,14 @@ canon migration or product release. Keep one public app integration source;
 no new Arcanea repo or mirror. Preserve shared authoring/graph/runtime/MCP
 owners and #408/#427 integration/quality contracts; respect world/release focus.
 
-FIRST poll CI run 36873712870 at this head. Install, Lint and TypeScript
-completed success; Build job 110408801132 was confirmed in progress.
-Vercel check SUCCESS is preview metadata, not release/QA. PR draft/BEHIND.
-Main last seen 4740b4c395. Do not restart a job due to observation timeout.
-Inspect final required Build/Lint/TypeScript/CI Status results and actual failure
-logs before repairs. Keep draft until required checks, independent-provider
-review and release/rights decisions are fulfilled. No merge authorization here.
+CI run 36873712870 COMPLETED SUCCESS at this head: Install, Lint, TypeScript,
+Build and CI Status passed. Build ran package tests and boundary/asset checks;
+rendered gallery/browser checks were skipped by the existing draft policy.
+Vercel check SUCCESS is preview metadata, not release/QA. PR remains draft/BEHIND;
+last main observed 4740b4c395. Do not restart the completed run. First recheck
+current PR/head and main, then restore bounded independent-review availability
+and reconcile final candidate bytes. Keep draft until independent-provider
+review, rights and release decisions are fulfilled. No merge authorization here.
 
 Read planning-with-files/CURRENT_STATE_2026-10-01_PUBLIC_ENTRY.md plus the
 creator/source-fold records. README/package source URLs now identify this app;
