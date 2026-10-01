@@ -4,6 +4,28 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
+
+- Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
+- Config31 merged into PR22 as `9f98152`; Config32 merged into PR26 as `036fb66`. Refreshed PR22 and PR32 deltas received independent static PASS; both parent CI suites pass. PR22/26 remain off main pending approving GitHub reviews; PR26 also needs full-parent review. Issue30 remains open for actual fleet projection and byte/SHA verification. No live installer ran.
+- Swarm28 remains draft with concrete host-admission, invocation-evidence and portable-reference findings; issue15 links the authority-plane requirements. Config79 still requires approval. Website70 is ready, but rendered QA in issue69 remains unproven.
+- Full goal and twelve acceptance groups remain open. Exact heads, commits, CI and issue links are in the October 1 session and integration evidence. Existing owned worktrees were reused; no new workers, servers, builds or installs.
+
+## 2026-10-01: Website security patch deployed; map QA and federation remain open (Codex)
+
+- Website PR72 integrated as `6893f36`, independently reviewed and cloud CI passed. Post-merge CI run 36887914675 passes; Vercel exact-SHA production READY and nine routes 200; two critical Next alerts fixed. Issue71 closed with evidence. Runtime log query returned no error/fatal entries in its observed window.
+- Map PR70/issue69 remain open: static PASS and CI pass, actual browser QA unavailable. Original PR64 merged in another session; preserve concurrent voice/spec work. Config PR79 still requires an approving GitHub review, issue78 open for host enforcement.
+- SIS144 must reconcile selected federation/runtime source from `codex/consolidate@b6bfebb` and the unfinished isolated worktree; current remote main `9db1d5c` lacks those modules. No wholesale checkpoint merge. Full goal and twelve acceptance groups remain open.
+- Latest storage 135.04GiB/14.19% is below 15% floor. No new worktrees, installs, local builds, media or swarm. Full continuation and immutable evidence: `ops/sessions/2026-10-01.md`, `ops/evidence/starlight-convergence-20261001.json`.
+
+## 2026-10-01: Starlight census and hook repair (Codex)
+
+- Full integration objective remains open. Census: 57 selected repos, 532 remote branches, 162 open PRs at 13:35:15Z; zero API errors, metadata only. Full requirement audit and exact references: `ops/evidence/starlight-convergence-20261001.json`, `ops/evidence/starlight-branch-census-20261001.json`; recap appended to `ops/sessions/2026-10-01.md`.
+- Hub PR 76 merged as `a699929`, post-merge CI 36867184561 passed; rule-sync failures now fail CI. Source branch absent, no retrospective issue.
+- Config PR 79 head `c12cc404260dd9bc368300fb5d62e6b965df523b` supersedes unsafe PR 48: no automatic checkout formatter execution, Windows denial preserved, trusted absolute Node. Local 19 Node + 5 Python tests pass, independent Anthropic review passes, Windows push and PR CI pass. GitHub requires an approving review; no self-approval or bypass. Issue 78 remains open for integration and actual host enforcement. No live hook projection changed.
+- Next: land the reviewed repair after required approval/checks; continue SIS 143/219/220 and per-head PR reviews. Website PR 64 still lacks a usable preview/rendered release proof. Estate CI-watch issue 75 lacks ESTATE_READ_TOKEN. Neither estate production nor full branch cleanup is green.
+- One bounded local review only; no new swarm agents, builds, installs, media or services. Occupied other-harness worktrees and all earlier prompts remain intact.
+
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
 - The two placement review notes are on `frankxai/starlight-agent-config` `main` as squash `9c87802` ([PR 75](https://github.com/frankxai/starlight-agent-config/pull/75)), merged 2026-10-01T00:25:35Z. Tests take a system temp directory. A control-plane worktree outside the control-plane folder is class `control-plane-root` with blocker `control-plane-worktree`. 13 tests passed. The runtime module at `C:/Users/frank/.starlight/workspace-bootstrap/repo_placement.py` matches blob `416a4d863c2c9ef917dd6a46ba497791b380c63c`. No product issue: the slice is merged. Issue 12 stays a different dossier. The occupied primary checkout was not fetched, so its local `origin/main` ref can still read `99b1273`.

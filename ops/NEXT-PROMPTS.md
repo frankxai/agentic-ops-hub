@@ -88,9 +88,49 @@ web form submission untested.
 Before writes: workflow, exact identity, guard/explicit files, separate lane
 ownership, resource/storage admission. No new repos/folders/fanout. Save in
 frankxai/agentic-ops-hub session/ledger/one Arcanea prompt and existing #276;
-preserve other fronts and incoming main records. Current product save:
+preserve other fronts and incoming main records. Hub main 807ce14 is now
+integrated into the handover branch without replacing its records. Current product save:
 https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5936832073.
 Temp proof copy remains after automatic cleanup rejection; do not evade it.
+```
+
+[Starlight integration continuation, Codex]
+```
+Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1
+Codex sessions and integration/census evidence. All twelve broad acceptance
+groups remain open. Census counts are dated metadata, not completed reviews.
+
+Done: hub PRs76/94/96; website PR72 security patch as 6893f36 with prior exact-SHA
+production READY, nine routes 200, alerts 1/2 fixed. Preserve other sessions'
+website64 and voice/spec merges. Config PR82 now requires the Work contract;
+ten tests/no skips, missing policy fails exit 1, independent review and CI pass.
+Config PR31 merged into proposal PR22 as 9f98152; corrected PR32 merged into proposal PR26
+as 036fb66. Both refreshed parent CI suites pass. PR22 full diff and PR32 delta
+have independent static PASS. PR22/26 still require approving GitHub reviews;
+PR26 needs full-parent review. No policy installer or live projection ran.
+Issue30 retains installed-byte/SHA checks, cold-session and stale-authority proof.
+
+First re-query config PR79 at c12cc404260dd9bc368300fb5d62e6b965df523b and
+proposal PR22/26 at their current heads. Do not bypass required GitHub approval.
+Issue78 also needs actual owned Grok-host secret-denial proof. Map70 remains
+at 7a908a15455457b57f6fd0b7ddf928515ffbe1ef and is currently ready, but issue69
+still requires rendered pinch/keyboard/Fit/touch/motion/menu/contrast QA.
+Swarm PR28 remains draft; review 5935754440 and issue15 identify real host admission,
+process-local limits, invocation evidence and portable Pack A provenance.
+
+Resume SIS144 selected-source reconciliation under 143/219/220. Remote main
+9db1d5c lacks federation/runtime-bridge. Local consolidate@b6bfebb tracks source;
+isolated portable worktree@ab07b67 has unfinished edits. Preserve both; import
+only selected reviewed foundation paths in an admitted owned lane. No wholesale
+checkpoint/memory merge. Keep one mission authority and existing registry owners.
+Use scoped credentials, source-cited memory and truthful capability/cost receipts.
+
+Fresh disk admission is required: the latest sample is below 15%; no new worktrees,
+installs, build fanout, media or swarms. Reads and small owned edits can continue.
+Review-lite permits one serial tool-less checker. Guard, exact-file check and
+ownership are separate. Save this hub and existing product issues; preserve
+prior prompts and unfinished tasks. Estate CI-watch issue75 still lacks
+ESTATE_READ_TOKEN, so estate-wide green remains unproven.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
