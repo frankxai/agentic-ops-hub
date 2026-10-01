@@ -19,27 +19,29 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue existing task codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read hub session Execution safety and eval accounting continuation, then existing
-private AUDIT.md/completion matrix. Keep all 14 acceptance axes and source intent.
-Private lane v5: 77 core checks, 96 differential pairs and 1 handshake proof, exact-byte Anthropic PASS; no live projection.
-Issue frankxai/starlight-command#4: canonical child absent/control-plane refused;
-pin shared authority, prohibit mixed-version writers, implement verified owner
-recovery and migration before rollout. Frozen 819-event journal fails line 252;
-23 unreleased owners are preserved. verify-lane permits child errors2/4; repair
-caller canonical repo/stable identity and actual hook denial/timeout behavior.
-Never clear by age/TTL or infer owning-task death from the helper PID.
-Eval starlight-evals PR16/d2a4abf:8 tests, unbounded synthetic receipt accounting;
-no live model-quality run. SIS150 is canonical. Preserve its 20-task denominator.
-Bind durable per-call/failed-attempt reservations and host-attested receipts
-before launch or promotion. Old clean worktrees need current ownership proof.
-Config08d6e80/PR80/issue46 and PP7cc20b9/PR4/issue3 remain reviewed source candidates
-with integration/projection gates open. Preserve historical utility1c39664 and
-pinned catalog9c87802, two unavailable skills, occupied primaries and other tasks.
-Recheck PP/storage; last 14.04% free is bounded: no installs/new worktrees/fanout.
-Preserve paused jobs and the Langfuse Railway stop. Prove one accepted brand
-workflow with trace, budgets, cancellation/recovery. Before writes run routing
-and separate ownership checks. Save this hub and existing product issues.
+Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
+Read hub session Per-invocation eval accounting candidate and prior Execution
+safety section; private AUDIT/matrix and eval-accounting-20261001/REVIEW-GATES.md.
+Keep all14 acceptance axes and unfinished work. Held evalV3 aee573d3:45 tests,
+static Anthropic PASS after two BLOCKs, zero live quality calls/source projection.
+SIS150 owns method, original20-task release denominator unchanged; swarm15 durable
+authority, SIS147 reconciliation, SIS125/124 authenticity. Fix required extensions:
+authority-minted keys, current-policy reserve vs historical facts, stop/resume,
+actual pattern/child configuration, submitted parent, post-terminal usage/facts,
+authentic state/evidence and pinned comparator, shared durable idempotency/lookup.
+Wire actual canonical host/CLI before live runs; mirrorPR16 reserve/CLI unprotected.
+No competing store/scheduler; arbitrary test caps authorize no actual spend.
+Source owner checks apply to old clean SIS/swarm worktrees. Latest SISmain2a60aa5
+adds docs only; swarmmain286b618 PR27 reference kit is not authority deployment.
+Command4 laneV5:77 CLI+96 references+handshake/staticPASS carries required source,
+legacy migration/recovery, canonical shared ledger and covering-claim hook gates.
+Frozen819 events/23 unreleased owners; never clear by age or infer task death.
+verify-lane permits errors2/4; live source unchanged. Config08d6e80/PR80 and
+PP7cc20b9/PR4 remain source candidates; preserve other prompts/tasks and source.
+Fresh PP/storage admission: prior14.04% bounded, no installs/new worktrees/fanout.
+Preserve paused jobs and Langfuse Railway stop. Prove one accepted brand workflow
+with trace, budget, cancellation/recovery. Guard/check exact files, separately
+own lane. Save this hub and existing product issue150. Full goal stays active.
 ```
 
 [Starlight integration continuation, Codex]

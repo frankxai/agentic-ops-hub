@@ -67,6 +67,17 @@ owner explicitly released; this three-file save now replaces the deferred save.
 All 14 estate axes remain incomplete. Pickup: session Execution safety and eval
 accounting continuation; preserve the other Codex/cloud prompts.
 
+Eval accounting continuation: private V3 passes45 tests (37 accounting plus8
+frozen comparator), including a six-cell actual-comparator wrapper fixture.
+Independent static Anthropic PASS follows two preserved BLOCKs and carries
+mandatory authority/pattern/parent/late-fact/shared-state integration conditions.
+No canonical source/runtime update, approved budget or live model-quality call.
+Methodology SIS150 and original20-task release denominator remain unchanged;
+swarm15 owns durable authority, SIS147 reconciliation, SIS125/124 verification.
+Old mirror PR16 host/CLI remain unprotected. Source/promotion stay held. Both saves:
+SIS150 comment5937462717 and this hub branch/PR95. Full14 estate axes incomplete.
+Pickup: session Per-invocation eval accounting candidate; private REVIEW-GATES.md.
+
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
 - Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
