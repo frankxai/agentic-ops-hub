@@ -17,14 +17,13 @@
 - Evals: first real `claude plugin eval` runs in the estate (ui-ux-design-expert 6/6 recall, 0/5 false fires; video-social-studio 35/36).
 - Grok caught 5 real defects in video-social-studio that Claude and Codex missed.
 
-## Open (owner → action)
+## Open (owner → action), as of 2026-10-01
 
-- claude-code-config #22 (reconcile live config onto main, ~4,500-file snapshot, `.gitleaksignore` 6 entries) → Frank reviews allowlist; Grok review requested. After merge run the guarded switch in the PR body so `~/.claude` loads from main.
-- Estate root codex/rova (3,820 dirty: 1,360 runtime, 1,724 generated, 46 media, 5 junk, ~768 real) → Frank runs `pwsh -File repos/claude-code-config/docs/handoffs/land-rova.ps1` (dry run), then `-Apply`. Never push until CONVERGENCE §7 desk 6 is ruled.
-- Control-plane patch (AGENTS/SYSTEM/WORKFLOW/SOUL, agent registry, resolver 124→467 skills) → apply after codex/rova lands: `git apply --3way --ignore-whitespace repos/claude-code-config/docs/handoffs/skill-foundry-control-plane.patch`.
-- `foundry.mjs tier --apply` (~17.6k tokens/session saved) → after the live checkout is on main.
-- Distribution: list gencreator-skills and claude-skills-library via clau.de/plugin-directory-submission; skills.sh indexes on `npx skills add` installs.
-- starlight-agent-config branch protection requires 1 review; with one GitHub account every merge needs `--admin`. Decide: drop the rule (pr-gate + Grok is the gate) or add a reviewer account.
+- Plugin directory: gencreator-skills #5 merged (466d694: MIT license + network disclosure). Frank or a browser-connected session submits `video-social-studio` at claude.ai/directory/manage (Plugin bundle, folder `video-social-studio`). Expect a Policy hold for the Node MCP server in a subfolder.
+- claude-skills-library: not submittable until Frank picks a license; it bundles imported third-party skills and is over the review limits (726 files vs 512).
+- starlight-agent-config branch protection requires 1 review; with one GitHub account every merge needs `--admin`. Frank decides: drop the rule (pr-gate + Grok is the gate) or add a reviewer account.
+
+Closed since the first draft of this file: #22 merged and live config on main; tier applied (#24, #25, #27); codex/rova landed and pushed by Frank (469e3d6..4fd0383, control-plane patch included).
 
 ## Local cleanup done
 
@@ -36,5 +35,5 @@ Removed 20 merged/empty worktrees and 2 merged clones (+11 GiB); local excludes 
 - Live config: claude-code-config #22 (reconcile, Grok pass) merged; live checkout switched from codex/hook-context-review to main with the guarded procedure (old branch kept on origin).
 - Tier live: #24 (118 cold skills -> /command only, git-based skill age), #25 (untier 2 junctioned skills), #27 (discovery hook matches hidden tier). Turn-0 listing 28,841 -> 18,653 tokens. `foundry-skill-suggest.js` registered in ~/.claude/settings.json (UserPromptSubmit); settings backup kept in the session tmp.
 - Estate root: `docs/handoffs/land-rova.ps1` merged (#21, Grok pass after a personal-state fix). Frank runs it; agents are blocked from the root by verify-lane.
-- 2026-10-01: codex/rova landed locally (3,826 dirty -> 11, 32 commits incl. 4fd0383 control-plane patch: resolver 476 names, 7 agents registered). Not pushed; push = Frank's ruling on CONVERGENCE section 7 desk 6. Held back: 7 tracked queen runtime files, velora-named files, graph/agents.atlas.json (>5 MB). Ignored: ops/automation-audit/*.json (process-dump session tokens from local apps; ephemeral, never committed, no rotation needed), raw supplier HTML scrapes.
+- 2026-10-01: codex/rova landed locally (3,826 dirty -> 11, 32 commits incl. 4fd0383 control-plane patch: resolver 476 names, 7 agents registered). Held back: 7 tracked queen runtime files, velora-named files, graph/agents.atlas.json (>5 MB). Ignored: ops/automation-audit/*.json (process-dump session tokens from local apps; ephemeral, never committed, no rotation needed), raw supplier HTML scrapes.
 - 2026-10-01: Frank pushed codex/rova to frankxai/starlight-command (private), 469e3d6..4fd0383. Estate root is clean except 11 deliberate holdbacks.
