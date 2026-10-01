@@ -21,70 +21,72 @@
 
 ```text
 Continue active goal 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and app #276.
-Keep the world/audience/releases priority and shared author/graph/runtime/media
-owners. Direction: one public arcanea-ai-app integration source, canon in place,
-bundles listing repo/folder/full immutable commit. No new mirror or canon pack.
-Licence, Heart 417/639, archive/rename/history and release remain Frank decisions.
-No app merge without his named "merge N" instruction under #408; #427 binds release proof.
+Keep world, audience and release priorities and the existing shared author, graph,
+runtime and media owners. One public arcanea-ai-app integration source; canon stays
+in place; bundles list repo/folder/full immutable commit. No new mirror or canon pack.
+Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
+choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-CURRENT BRANCH: agent/codex/arcanea-source-consolidation-20261001
+CURRENT APP WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
+CURRENT BRANCH: agent/codex/arcanea-reader-entry-20261001
+Reader draft https://github.com/frankxai/arcanea-ai-app/pull/490
+HEAD 768066b53996aec1379a316f9a9e28fae32dce4f, clean. CI 36922964255 passed all four required checks.
+Read planning-with-files/CURRENT_STATE_2026-10-01_READER_ENTRY.md.
+Complete seven-file independent review at60fcf333b4 returned PASS/WARN; three-file
+correction delta at768 returned PASS/WARN/two INFO. Its Linux warning assumes
+filename construction; the actual loader enumerates files and normalizes slugs.
+The raw reviews and source reconciliation are retained. INFO concerns about the
+separate empty-directory fixture and duplicate support write remain follow-ups.
+Bare BIBLE/OUTLINE files are excluded; numbered titles, HTML ID casing, real
+prologues and API numbering retain their contracts. Expanded fixtures failed
+before the fix; seven series and six policy checks pass afterward. Native CI
+uses frozen dependencies; local Sucrase runtime proof is not local typechecking.
+Manuscripts/publication gates unchanged. Preview authentication and browser
+admission prevented rendered QA; the older READY preview is bound to60, not this
+head. Frank's #280 manuscript selection remains pending. Do not choose a source.
+
+RETAINED skills branch: agent/codex/arcanea-source-consolidation-20261001
 Draft https://github.com/frankxai/arcanea-ai-app/pull/487
-HEAD 823c0cf0ca37b69f2a965bb1d84ecd62cf0e25c2, clean at handover.
-CI36915277891 passed Install plus Build/Lint/TypeScript/CI Status at exact head.
-CURRENT EDITED-EVENT CI HANDLE:36916204878 at unchanged823 after final-scope
-description update; source CI is already terminal SUCCESS. Re-poll this existing
-handle; no rerun or metadata edit just for check observations.
-Read SOURCE_CONSOLIDATION task record and existing evaluation records. Guide
-baseline411ec427e7 got independent scoped PASS/twoLOW; e201 fixed historical
-identifier/queue findings and got independent delta PASS/no findings. Separate
-complete seven-file catalog/installer/API/test core review at e201 REVISE. Corrected
-core823 and complete delta received independent PASS: Node22 floor, API docs,
-source-link rejection assertion and residual-race disclosure. All11 local tests
-pass with existing yaml2.9.0; first missingdependency invocation failed. CI pins2.9.1.
-Installer logic unchanged; path checks need trusted/stable source/home parents.
-Guide CI36912589855/e201 is retained. These
-scopes do not approve the whole PR, omitted skill behavior, rights, installation or release.
-Four internal candidates, private package, zero ready. Nine unedited creator
-outputs retained; world invention labeling still fails. No held-out/control,
-authentic creator, engine import, media or actual home-install proof.
+HEAD 0a04c976d66f2f2d12aa895060f94c6c089f635b. Source CI36920563361 and edited CI36921686751 passed.
+Evaluated world source00ec58bf11fce4522b9b3f5097d6f0f4ae9fa53b is unchanged in
+that evidence commit. Read the existing SKILL_BEHAVIOR task record and
+packages/arcanea-skills/evals/world-local-status-report.md/json.
+Three new exact producer outputs and raw review are preserved alongside nine
+prior outputs. Independent source PASS / behavior REVISE / KEEP_CANDIDATE.
+Both fresh synthetic paired outputs and the revised known W1 fail. No causal
+improvement, held-out result or authentic creator proof. Failures include unlabeled
+proposals, swapped IDs, unsupported permanence/causes and an accepted glyph limit
+violation. The review's session/cause mistakes and separate raw session wrappers
+are recorded. Its LOW source finding on loss-mechanism coverage remains open.
+Four internal candidates, private package, zero ready. Prior package-core823 and
+guide e201 scoped PASS/CI remain evidence for those files, not whole-PR clearance.
 
-Successful tool-free Sonnet 4.6 high-effort requests with 240/300 second deadlines
-followed a successful response probe; earlier zero-output timeouts/client rejection
-remain attempts, with no proven diagnosis. Full private hashes/inputs/outputs/usage:
+NEXT bounded action: inspect an authenticated reader preview if admitted, or address
+one concrete world source coverage gap. Preserve failing outputs; avoid repeating
+synthetic generations as a substitute for creator acceptance. Reuse existing
+candidates and shared owners. Issues #277 approval, #278 canon, #279 manifests,
+#280 editions, #283 world writes, #388/#421 MCP/WorldPack, #285 playable proof,
+and creator/community/revenue acceptance remain open.
+
+Launcher six-file patch remains unapplied: upstream and ownership unresolved.
+C:/Users/frank/.starlight/reviews/arcanea-launcher-root-20261001/README.md
+Hash2f796e45dd294a472578a0c40915b6b3b9b458e98aeccb5c44c02ae361e2011e;
+29 mocked tests at027fe963. Establish upstream/owner before applying. Donor122-copy
+map is not a release count. Rights, notices, resources, folds, working-set links,
+plugin consumers and legacy salvage remain open.
+Live controls at main e863: four strict checks, required reviews0, admin enforcement
+false, two disabled rulesets and ten unprotected environments. Manual deploy flag
+false; soft lint and visual resolver source-binding gaps remain #427. No settings
+changed or Vercel protection claim. Stable production was
+ e863/dpl_GG8FqkkKrfTEmBiW8zZVP6EXRBuS. These drafts made no live repair.
+
+Before writes: WORKFLOW, exact Git identity, guard, explicit files and lane ownership.
+Fresh admission for heavy work. Bounded disk forbids installs, new worktrees and
+build fanout. Sequential work only. Private exact inputs/outputs/hashes/attempts:
 C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
-Next bounded step: fix and test the documented world invention-labeling failure,
-or independently review retained reader source now response availability is evidenced.
-Do not treat package-core PASS as skill behavior or legal clearance.
-
-RETAINED reader branch agent/codex/arcanea-reader-entry-20261001 in same reusedworktree,
-draft https://github.com/frankxai/arcanea-ai-app/pull/490, head
-60fcf333b4f178de0f255b5d8edb057a5ede6d25, base e863be8304fdde9f00ba812d7845d66ec52787b9.
-CI36906218369 passed four checks/13 native tests. Preview READY but login/protected 302
-prevented content QA; browser admission HOLD. Its earlier independent review
-timed out after 120s with zero output. Preserve branch and files; current checkout contains skills.
-Stable production was observed at e863/dpl_GG8FqkkKrfTEmBiW8zZVP6EXRBuS; no live fix.
-Frank's manuscript selection for #280 remains pending; don't select a source yourself.
-
-Fresh release-control observations at main e863: four strict checks, required reviews 0,
-admin enforcement false, two disabled rulesets, ten GitHub environments unprotected,
-HAS_VERCEL_TOKEN false. Soft lint/manual path and ready-comment visual source binding
-remain #427 implementation gaps; no live settings or Vercel protection claim.
-
-Launcher six-file patch remains unapplied: no origin/foreign harness ownership.
-C:/Users/frank/.starlight/reviews/arcanea-launcher-root-20261001/README.md;
-hash 2f796e45dd294a472578a0c40915b6b3b9b458e98aeccb5c44c02ae361e2011e,
-29 mocked tests at027fe963. Establish intended upstream/owner before applying.
-Donor 122-copy map isn't release count. Rights/notices/resources, donor/OSS folds,
-working-set links/plugin consumers and legacy salvage remain open. #277 approval,
-#278 canon, #279 manifest, #280 editions, #283 world writes, #388/#421 MCP/WorldPack,
-#285 playable proof and creator/community/revenue acceptance stay open.
-
-Before writes: WORKFLOW, exact Git identity, guard/explicit files and lane ownership;
-fresh resource admission for heavy work. Bounded disk: no install/new worktree/fanout.
-Save only to existing agentic-ops-hub #98 session/ledger/one current Arcanea prompt
-and product issues #276/#427; preserve other fronts. All owned review CLIs ended.
-Previously rejected Temp cleanup remains unattempted. Full goal is active.
+All owned review processes terminal; previously rejected Temp cleanup untouched.
+Save existing agentic-ops-hub #98 session/ledger/one current prompt and app issues;
+preserve other fronts, attempts and objective. Full goal remains active.
 ```
 
 [Starlight integration continuation, Codex]
