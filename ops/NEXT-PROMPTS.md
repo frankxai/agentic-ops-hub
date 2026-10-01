@@ -17,6 +17,33 @@
 
 ## Current
 
+### Arcanea source consolidation, Codex pickup
+
+```text
+Continue Codex task 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and Arcanea issue #276.
+Read the proposal and source-audit scripts at arcanea-ai-app commit
+64a6e3859eddeeecf60d1b08e030e75fa89196b0, branch
+agent/codex/arcanea-source-consolidation-20261001. Worktree:
+C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+The broader community/revenue goal remains active. This is proposed policy,
+not an approved license, archive, canon migration or product release.
+Keep one public Arcanea integration source; no new Arcanea repo or mirror.
+Reuse packages/arcanea-skills/skills as the proposed curated root. Preserve
+shared protocol, authoring, graph and durable-runtime ownership until reviewed
+contract migration. Respect #408 integration order and #427 quality work.
+Next: review exact source survivors/support files and coordinate launcher root
+support with its existing owner. skill-bundles has no origin and the launcher
+worktree is on agent/claude/skill-bundles; do not overwrite it. Root must control
+both discovery and installation, and merge keys must include repo/root/sha.
+Obtain Frank's rights and Heart-frequency rulings before applying either.
+#278 owns generated canon; #283 owns world write safety. Use those contracts.
+Tests/format/secret scan passed locally; independent provider review, app CI,
+actual installs and community/revenue proof remain open. No PR was added to
+the over-budget queue; the review branch is pushed and #276 has the evidence.
+Recheck route guard, explicit files, ownership, machine/storage admission and
+current main before writing. Preserve other task records and handovers.
+```
+
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
 ```
 You are Claude Fable 5.1. Pin model id claude-fable-5-1. If this cloud seat
