@@ -1,5 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Current prompt: verify next sign-in and retain the repaired startup
+
+Read the startup repair handover in `ops/sessions/2026-10-01.md` and [starlight-agent-config PR 76](https://github.com/frankxai/starlight-agent-config/pull/76). Local projections are already applied and reviewed; do not reinstall broad profiles or undo other agents' launchers. Verify one real next sign-in: the prebuilt-only query gateway starts after its existing three-minute delay, the tested tray shortcut starts its binary, its native menu remains responsive, and shared memory/file-vault fallback works. Record timings without claiming a global boot improvement from unit tests. Exercise native keyboard/focus/touch behavior. Continue wider backup/security task replacement and missing-guide ownership under [issue 46](https://github.com/frankxai/starlight-agent-config/issues/46) in an admitted free lane. Keep Dreaming and the heavier fleet disabled; no always-on indexer is needed for this repair. Direct/bundled rg bypasses wrappers, so scoped-search instructions still apply. Preserve other prompts and unfinished work below.
+
 > Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
 >
 > **Terminal map** (edit as you reassign windows):

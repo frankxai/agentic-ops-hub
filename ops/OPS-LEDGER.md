@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-01 - startup hook and performance repairs
+
+- Applied the reviewed Codex SessionStart JSON repair and existing Bash/CMD search guards. The configured hook returned valid `{}` in 323 ms, other hook states were preserved, and real wrapper/backend regression checks passed. Shared memory still served 297 atoms/vectors.
+- Tested tray binary is assigned to the existing Startup shortcut for next sign-in: background status reads, one-minute polling, five-minute task cache and bounded child/output deadlines. Keep the three-minute prebuilt-only gateway launcher. A real sign-in benchmark and native tray interaction QA remain pending.
+- [Product draft PR 76](https://github.com/frankxai/starlight-agent-config/pull/76), commit `97c1a46`: 26 Python tests, Windows CI compilation/process tests, all PR checks green, independent Anthropic review PASS. Local backups and rollback receipts retained privately. Direct/bundled search binaries bypass wrappers; scope policy still applies.
+- [Issue 46](https://github.com/frankxai/starlight-agent-config/issues/46) stays open for wider task/guide ownership and next-sign-in verification. [Session handover](sessions/2026-10-01.md#startup-hook-and-performance-repairs-codex). No extra fleet, indexer or memory service enabled; other fronts and user-owned processes preserved.
+
 ## 2026-10-01 — placement review notes and cloud continuation (YogaBook)
 
 - The two placement review notes are on `frankxai/starlight-agent-config` `main` as squash `9c87802` ([PR 75](https://github.com/frankxai/starlight-agent-config/pull/75)), merged 2026-10-01T00:25:35Z. Tests take a system temp directory. A control-plane worktree outside the control-plane folder is class `control-plane-root` with blocker `control-plane-worktree`. 13 tests passed. The runtime module at `C:/Users/frank/.starlight/workspace-bootstrap/repo_placement.py` matches blob `416a4d863c2c9ef917dd6a46ba497791b380c63c`. No product issue: the slice is merged. Issue 12 stays a different dossier. The occupied primary checkout was not fetched, so its local `origin/main` ref can still read `99b1273`.
