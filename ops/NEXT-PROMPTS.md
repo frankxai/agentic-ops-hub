@@ -30,14 +30,24 @@ exports build and render; unfinished published cases fail the build. Read the
 earlier cold buyer's 49-check receipt and current delivery SHA/inventory in
 the session. Keep PR 8 dependency; current publication settings still need
 cold use, an exact-current-artifact provider review and hosted preview.
+Read CHANNEL-AND-OFFER-DECISION.md in the private packet. One owned proof
+page plus a hosted checkout if existing approval is verified precedes extra
+stores. Do not assume Gumroad Discover supplies initial sales; risk review
+averages three weeks after the genuine-sale threshold. Polar new Starter is
+5% + $0.50; grandfathering depends on actual organization date, unknown.
 Make paid/free additional value concrete with real worked evidence before
-pricing. Verify seller access and reachable qualified traffic; Resend's 34
-records include tests, with no recent broadcast evidence of engagement.
-Prepare owned/Gumroad delivery and canonical listings, then native Framer
-only with a real native artifact/account. Preserve source MIT rights.
+pricing. Verify seller access and qualified traffic through supported reads;
+browser inventory was empty and in-app browser unavailable. Resend records
+do not prove an engaged audience. Native Framer needs a native artifact.
+Park Agentic Builder until unsourced case-study outcomes/code are repaired.
+A deeper RAG lab is conditional and needs meaningful negative controls;
+present introductory tests do not prove retrieval quality. Studio's 30
+checks certify brief/evidence behavior, not app delivery. Preserve MIT rights
+and other agents' uncommitted work. Disk below 15% forbids new installs,
+worktrees, media, local-model runs and fanout; use text work and small tests.
 No checkout before the paid release gate, real 24-hour access/refund evidence
 and Frank's price decision. No invented demand or completed estate audit.
-Keep the goal active while required revenue/product work remains.
+Target remains unmet; retain unfinished work and record actual goal state.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
