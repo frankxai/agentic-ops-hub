@@ -724,3 +724,60 @@ currently reachable ready-skill regression; the catalog still has zero ready ent
 Next bounded action: add and test pinned relative-resource links in the existing
 consumer, preserving external links and rejecting traversal; keep actual deployed
 trace/source-matched preview acceptance open. App source and readiness unchanged.
+
+### 23:28 UTC - Pinned skill resource renderer and next world-first pickup
+
+App #276 / existing draft #487 current source
+`a20c06d43a8cc6f448076d15f9e13442660bacbb`, initial resource implementation2c63.
+Relative Markdown examples resolve from the validated file inventory to their own
+skill folder at the full source commit. Inline/reference links, query/fragments,
+encoded filenames and pinned raw local-image URLs work. Rejected links/images
+retain text/alt without clickable or broken elements. External HTTP(S) images
+retain normal Markdown behavior; their remote bytes are not pinned or validated.
+Four internal candidates, zero ready; no canon/content/rights/eval promotion.
+
+Initial example regression: seven pass/one fail. Rejected-image text fallback:
+thirteen pass/one fail. Fourteen consumer cases pass locally with existing
+Node22/Sucrase type erasure and process-scoped dependencies. Native source
+CI36939598342 actually ran fourteen consumer and eleven package cases and passed
+Install/all four required checks. Description-edited CI36940326792 also completed
+SUCCESS at unchangeda20. Initial2c63 CI36937913288 passed with native12/11 cases.
+No app metadata edit remains pending. Formatting, staged hashes and enabled secret
+hooks passed; static Markdown HTML is not a deployed/browser/image-download claim.
+
+Sequential tool-free Sonnet4.6 HIGH complete five-file review: first owned PID56100
+reached its configured300s deadline without output/verdict, exact CLI terminated.
+One streaming retry PID3172 completed REVISE/three LOW. Two findings covered the
+same missing-image fallback; the other asked for explicit external-image behavior.
+Actual React19 static output omitted rejected src while retaining img/alt; the
+review's inferred empty-src HTTP GET is not verified. Three-file correction review
+PID47936 at currenta20 returned PASS/no findings, all three prior findings resolved.
+Review scopes remain source-only; whole-PR/rights/creator/release acceptance open.
+Timeout cost unknown; retries reported list equivalents $0.3543174/$0.228603,
+not verified billing. All attempt/source/output/process/reconciliation receipts
+remain private. First/retry source packets match; CRLF/LF prompt transport digests
+are recorded separately. All three owned CLI processes/children are absent.
+
+Vercel current preview dpl_3H6nfDZ18H8XS6MQYxRW4i8BCzuY at a20 is CANCELED at
+ignored-build, URL arcanea-ai-myv8kxc63-starlight-intelligence.vercel.app.
+Initial2c63 preview dpl_38NrHhmPkKs7PJ6raPTBkjCRTqCM is also CANCELED. GitHub
+success status does not establish deployed trace or source-matched rendering.
+No extra deploy, settings change or bypass capture. #451/#488 owners retained.
+
+Next world-first pickup: reconcile existing draft #403 homepage/demand candidate
+f20484f8ec7cc02e2f9507f08186057597360db5 against current main e863be83.
+Fresh GitHub reads show #412 and #413 merged; #403 remains open/draft with keep.
+Ten selected file blobs compared at full revisions: world generate/save/create
+match main; seven others differ (homepage entry/experience/CSS, pricing, newsletter,
+waitlist API, CI). Main uses V3; candidate supplies HomeExperience. This is a scoped
+source comparison, not whole-candidate compatibility or database/user acceptance.
+Check ownership and all remaining paths before narrowing the existing candidate;
+preserve merged world/auth/CI work and avoid a competing implementation.
+
+Retain reader #490, preview binding #491, failed world behavior and all provenance.
+Other skill consumers, source folds, rights/resources, launcher ownership, licence,
+Heart, manuscripts, unique salvage/archives and authentic creator/community/revenue
+acceptance remain open. No new repo, history rewrite, installation, merge, production
+or commerce change. #408 still requires Frank's named merge; #427 gates stay open.
+Full goal active; this is progress. Save hub #98 and product #276. Own reviews are
+terminal; no session-owned server/watcher remains. Both current CI handles terminal.

@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT public skill consumer proposal in draft #487:
+CURRENT pinned resource correction in existing draft #487:
+HEAD a20c06d43a8cc6f448076d15f9e13442660bacbb.
+Source CI36939598342 and description-edited CI36940326792 both completed SUCCESS
+at this unchanged source, all four checks. Native14 consumer +11 package cases.
+Relative examples use validated inventory and same-SHA folders; local images use
+pinned raw URLs. Rejected links/images retain plain text/alt. External HTTP(S)
+images preserve Markdown behavior; remote bytes are not validated or pinned.
+Complete five-file2c63 review initially timed out; one retry REVISE/three LOW.
+Three-filea20 correction review PASS/no findings, all three prior findings resolved.
+Raw timeout/retry/correction/SSR/reconciliation receipts retained. Four internal
+candidates, zero ready. Vercel a20 dpl_3H6nfDZ18H8XS6MQYxRW4i8BCzuY is CANCELED.
+No deployed trace, source-matched browser, rights, whole-PR or release acceptance.
+
+NEXT bounded action: reuse draft #403 for remaining world-first homepage/demand
+work. Current candidate f20484f8ec7cc02e2f9507f08186057597360db5 remains draft/keep;
+#412/#413 are merged. Ten selected files compared against main e863be83: three
+world generate/save/create blobs match; homepage entry/experience/CSS, pricing,
+newsletter, waitlist API and CI differ. Main uses V3; candidate HomeExperience.
+Verify current revisions, lane/branch ownership and all remaining paths; narrow
+and review the existing candidate while preserving merged world/auth/CI work.
+Selected-file equality and merged PRs do not prove live database/creator acceptance.
+Reuse this implementation candidate; app merges require Frank's named instruction.
+
+RETAINED public skill consumer baseline in draft #487:
 HEAD b37c2a6dcb43a90a9872826b47d0b79dc8178b2c.
 Source CI36934422363 and description-edited CI36935138855 both SUCCESS at this
 unchanged source, all four required checks. Native CI ran7 consumer +11 package
@@ -45,14 +68,11 @@ visibility matches GitHub; diverged arcanea retained with salvage description.
 Source Vercel preview dpl_HoPFWbnZ28aBiQp9jVRWGTrVGsBC is CANCELED at ignored-build.
 No actual deployed trace/rendered acceptance. No extra deploy or settings change.
 Keep other-owner #451 preview decision and #488 workflow candidate intact.
-Next bounded work: test and map candidate references/example.md links to their
-validated source folder at the full commit; the current detail-page ReactMarkdown
-uses default relative links. All four candidates include them; zero ready entries
-means no presently reachable ready-skill regression. Preserve external links and
-reject traversal. Actual trace/artifact verification and source-matched preview
-remain open. Trace imports/resources/implicit development consumers before
-current-tree rights remediation and eligible folds. No rights/ready promotion,
-blind deletion or licence choice. Other public assertions remain review work.
+The relative-resource follow-up is now corrected at currenta20 above. Deployed
+trace/artifact and source-matched browser proof remain open. Other import/resource
+and implicit development consumers still need audit before rights remediation or
+eligible folds. No blind deletion, ready promotion or licence choice. Other public
+assertions remain review work.
 
 Retained imported-skill notice delta in existing draft #487:
 21850c2da160e3319c582b6973e14e2be8368a04; source CI36930667126 completed SUCCESS
@@ -128,7 +148,7 @@ are recorded. Its LOW source finding on loss-mechanism coverage remains open.
 Four internal candidates, private package, zero ready. Prior package-core823 and
 guide e201 scoped PASS/CI remain evidence for those files, not whole-PR clearance.
 
-NEXT bounded action: review the remaining #427 production promotion paths and
+Retained later work: review the remaining #427 production promotion paths and
 exact-check rejection cases, or obtain authenticated reader proof if admitted. Preserve failing outputs; avoid repeating
 synthetic generations as a substitute for creator acceptance. Reuse existing
 candidates and shared owners. Issues #277 approval, #278 canon, #279 manifests,
