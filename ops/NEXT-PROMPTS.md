@@ -28,8 +28,30 @@ Frank owns licence, Heart 417/639, archive, rename, history, manuscript and rele
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
 CURRENT APP WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-CURRENT BRANCH: agent/codex/arcanea-reader-entry-20261001
-Reader draft https://github.com/frankxai/arcanea-ai-app/pull/490
+CURRENT BRANCH: agent/codex/arcanea-preview-binding-20261001
+CURRENT preview binding draft https://github.com/frankxai/arcanea-ai-app/pull/491
+HEAD a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962; base e863be8304fdde9f00ba812d7845d66ec52787b9.
+CI 36926343395 passed all four required checks. Complete five-file independent
+CURRENT edited-event CI handle36927439029 at unchanged source after the one
+post-CI verification-description update: in_progress / pending.
+Re-poll that handle rather than rerun or edit metadata for activity.
+Sonnet 4.6 HIGH source review PASS/three LOW/one INFO; source scope only.
+Read planning-with-files/CURRENT_STATE_2026-10-01_VISUAL_PREVIEW_BINDING.md and
+scripts/resolve-visual-preview.mjs plus its actual-workflow tests. 52 local tests
+pass. Bot comments are no longer authority: exact GitHub SHA/repository/Preview
+metadata, latest trusted success, immutable host, checked override, current PR
+and post-capture recheck bind the manifest/report to their source. Truncated
+history blocks; terminal failure requires a new run; missing/pending wait bounded.
+Live metadata proves old reader 60 preview, not 768; Vercel says 768 CANCELED.
+No browser/capture/rendered/current-PR/release proof follows that metadata test.
+GitHub records do not independently authenticate Vercel project/build contents.
+LOW notes: document empty return and terminal retry; maintain URL regex with
+project/team changes. INFO: YAML/step-name extraction fails visibly on mismatch.
+No app merge/mark-ready/settings change; #427 promotion/check/canon/human/journey/
+domain/rollback acceptance remains open. #451/#488 retained, not folded or approved.
+
+RETAINED reader branch agent/codex/arcanea-reader-entry-20261001
+Draft https://github.com/frankxai/arcanea-ai-app/pull/490
 HEAD 768066b53996aec1379a316f9a9e28fae32dce4f, clean. CI 36922964255 passed all four required checks.
 Read planning-with-files/CURRENT_STATE_2026-10-01_READER_ENTRY.md.
 Complete seven-file independent review at60fcf333b4 returned PASS/WARN; three-file
@@ -61,8 +83,8 @@ are recorded. Its LOW source finding on loss-mechanism coverage remains open.
 Four internal candidates, private package, zero ready. Prior package-core823 and
 guide e201 scoped PASS/CI remain evidence for those files, not whole-PR clearance.
 
-NEXT bounded action: inspect an authenticated reader preview if admitted, or address
-one concrete world source coverage gap. Preserve failing outputs; avoid repeating
+NEXT bounded action: review the remaining #427 production promotion paths and
+exact-check rejection cases, or obtain authenticated reader proof if admitted. Preserve failing outputs; avoid repeating
 synthetic generations as a substitute for creator acceptance. Reuse existing
 candidates and shared owners. Issues #277 approval, #278 canon, #279 manifests,
 #280 editions, #283 world writes, #388/#421 MCP/WorldPack, #285 playable proof,
