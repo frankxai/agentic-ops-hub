@@ -20,56 +20,48 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read hub Creator save and demand reporting source defects, Brand and team source
-reconciliation, earlier hook/graph/eval/lane sections and private AUDIT/matrix.
-All14 axes incomplete; do not replace full scope with these source fixtures.
-GenCreator main dacbb436 source-bound production prior receipt; programme now
-published c0ffae43 with no PR at read, local a96f708 adds two docs commits and
-untracked owner recovery work. Preserve owner checkout; no silent staging/takeover.
-Actual programme saveProject returns success on dropped writes; private patch
-e1d8da46 reads storage API value back, exact apply/staticPASS.18 safety behavior
-checks,9 defect reproductions,3 known-gate cases. Same-call readback is not durable
-or atomic. Precheck/write race remains; write success/readback error leaves caller
-expected.current stale and retry falsely says another tab. Reconcile actual caller
-and exclusive/transactional state with acknowledged maker/different checker before
-real source/edit/save/reload/new-session/reopen/export/return browser acceptance.
-Keep issue5 ADR010/007 auth/migration/tenant/OAuth/provider/managed HOLD, source
-rights, exact-revision review, full CI/mobile/reduced-motion and customer gates.
-PR115/117/67 merged at prior read; PR95 e48f9845 open/UNSTABLE with successful
-existing sourceCI/preview. Re-query current state, never equate greenCI with outcome.
-Demand issue62 owns proposed O1, not ratified strategy/staffed team. Cloud97 separate.
-Legacy package/control root4fd exact files; current command main7d78c434/opsbd4d2f20
-scoped complete trees have no demand-capture/growth-capture/growth-core paths.
-Guard refuses root product writes. Resolve canonical writer/backend/standard IDs
-before integration, import or personal-data migration. Local graph23 and Empire26
-have different IDs/purposes; no blind merge or invented aliases. Gen answer notes
-go to Growth Core, report reads KV; backend globally absent is not proved.
-Actual-source synthetic tests find duplicate inflation, answer overwrite (handler
-included), raw count/remaining-seats inference, pain-only undercount, unsupported
-imported price classified would-pay and empty rows labeled traffic without proof.
-Malformed HTTP200 error response yields NaN; normal Upstash400 errors are rejected.
-Handler validates bands; expected price is not commitment/conversion. No real
-demand/ranking/customer claims. Preserve consent/receipt IDs/test exclusions; fix
-atomic unique-email assignment/partial updates/typed result+deadline behavior,
-withholding/report classification, then approved test capture-to-report per62.
-Original staticPASS plus author clarifications/fixture bindings, exact candidate
-unchanged. Reviewer no execution; source tests neither whole CI nor runtime proof.
-Existing issue5/62 saves readback matched; public hub is sanitized only.
-Registry13 brands/26 products/zero canonical agents/nine producers/five studios;
-5 guide/projection pairs and16/10 repo memberships are capability metadata, not
-assigned/running teams. All13 root HTTP checks are availability only; Queen51 five
-receipts were owner claims not independently inspected. Preserve issue81 fail gate.
-ConfigPR84 source3f2ba5d prior Linux/Windows26+source PASS, installed hooks unchanged;
-PR79 native load/timeout/denial adoption and PR80 instructions remain gates. Original
-08 branch preserved. Graph/swarm50 private tests, evalV3 aee573d3 and laneV5 remain
-canonical/durable authority/recovery/artifact/admission gates. Original SIS15020-task/
-host/transport/restart programme unchanged; PPPR4 advanced by peers, re-query.
-Fresh PP/storage before heavy work; no new install/worktree/fanout/unattended work.
-Disabled Canvas/SIS/Substrate and stopped/paused jobs/Langfuse remain unchanged.
-Guard/check exact paths, full retained ownership and actual.lock; no TTL death or
-age cleanup. Preserve all prompts/source tasks and unfinished work. Continue all
-brand and rule/skill/graph/loop/eval/local-cloud/observability acceptance. Save hub
-and existing product issues; verify one accepted traced workflow with real evidence.
+Read hub 2026-10-02 PP gates, 2026-10-01 creator/demand and brand/team sections,
+earlier hook/graph/eval/lane sections, private AUDIT and completion matrix.
+Full14 axes remain incomplete. Preserve original all-brand/rule/skill/graph/loop/
+team/Git/local-cloud/eval/observability/maintenance scope, budgets and provenance.
+PP candidate b12d8ec0/PR4: full source21/tsc/build/emitted21/native18/compiled8
+passed Linux+Windows at exact-headCI36933071875 (push also PASS). Two staticPASS.
+ID0 unknown-method fix reproduced; synthetic sensor builder only. Overlapping
+suites are not unique totals. Source targets existing Hermes producer branch,
+not main; installed shared primary dist unchanged. Resolve canonical ownership,
+producer/main integration and real consumer floor enforcement before rollout.
+Actual npx launcher/package-name path, malformed non-string cwd response, broader
+MCP protocol/version/Node18/nested-test discovery and live sensor accuracy remain
+gates. Proposed quoted test glob reverted to original, no unverified compatibility
+change. Re-query current PR/source state; no silent merge/approval bypass.
+ConfigPR79/80/84 still need review/integration; installed guards unchanged. Prior
+source guard26 Linux/Windows checks prove source, not native host adoption. Prove
+effective denial/load/timeout/exit coverage without weakening security controls.
+Private laneV5/graph50/evalV3 remain canonical/durable authority, host invocation,
+admission/recovery/artifact gates. Preserve original SIS15020-task/host/transport/
+restart programme and denominator. Paused/stopped jobs and Langfuse stay unchanged.
+GenCreator programme publishedc0ff/local a96 prior read, original owner/untracked
+work preserved; private readback e1d8da46 does not prove durability/transactions.
+Prewrite overwrite and uncertain-save caller retry remain gates. Reconcile maker/
+different-checker ownership and actual exclusive storage/caller before real source/
+edit/save/reload/new-session/reopen/export/return accepted browser outcome under5.
+Demand62 proposed O1 remains unratified. Legacy4fd control-root source is not in
+scoped current command/ops main; resolve canonical writer/backend/standard IDs.
+Repair atomic unique email, partial answers, typed failures/deadlines/withholding/
+report classifications, then approved synthetic capture-to-report with exclusions.
+No inferred customer demand, backend global absence or subscriber writes.
+Registry13brands/26products/zero canonical agents/nine producers/five studios and
+role guides are capability metadata, not assigned/running teams. HTTP/CI/provider
+availability does not establish accepted artifact or business outcomes. Preserve
+original rights/frozen/managed/provider/customer gates for every brand, Queen51
+owner receipts versus independent proof, and issue81 failure. One accepted traced
+brand workflow needs actual actor/owned work/artifact/cost/outcome/recovery proof.
+Fresh PP/storage before heavy work; bounded storage means no install/worktree/
+build fanout/unattended work. One owner/parallel1, no extra agents without explicit
+authorization/admission. Guard then check explicit paths, full retained ownership
+and actual.lock; no TTL death/foreign lock deletion/process killing. Keep security
+hooks and disabled base Canvas/SIS/Substrate. Preserve all task records/prompts.
+Save hub and existing product issues with readback evidence. Keep full goal active.
 ```
 
 [Starlight integration continuation, Codex]

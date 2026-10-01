@@ -404,3 +404,45 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+## Peak Performance project gates and MCP ID0 repair (Codex)
+
+Source task01a0f720-641c-7af2-af40-cc12eafd6a4f. Full estate goal active,
+all14 axes incomplete. This turn and the prior turn made progress.
+PP source head [b12d8ec0](https://github.com/frankxai/peak-performance/commit/b12d8ec0a12547e9a1585c20dba2e8be105e64d4)
+on [draft PR4](https://github.com/frankxai/peak-performance/pull/4), still targeting
+the existing Hermes producer branch. Fresh pre-slice head was original7cc20b9;
+the earlier claim that peers had advanced it was not supported by this read.
+
+[Final exact-head CI](https://github.com/frankxai/peak-performance/actions/runs/36933071875) passed Linux/Windows: frozen dependency install,
+source21, typecheck, build, emitted21, native fixture18 and compiled contracts8
+per platform, zero failures/skips. Push and PR runs both passed. Overlapping
+source/emitted/native suites and platforms are not summed as unique coverage.
+Node24.16.0/pnpm11.5.0, pinned actions, read-only token, sequential matrix;
+exact candidate head checked, no merge-ref integration certification.
+Four changed remote files byte-match. Source is CommonJS; compiled tests run
+actual emitted CLI/MCP child stdio with only sensor builder replaced. Synthetic
+metrics establish reserve/floor/hold-exit and adapter dispatch behavior.
+
+Independent review found unknown-method id0 dropped by source if(id). Actual
+source reproduction retained; id!==undefined fixes it, with emitted stdio
+regression and ignored notifications/id1 preserved. README four-tool and pnpm
+instructions corrected. Two serialized tool-free Anthropic staticPASS reviews,
+USD0.5027916 list equivalent, actual cash unknown.
+Proposed quoted test glob reverted exactly before publication to avoid a possible
+Node18 compatibility regression; reviewer packets retained, remaining changed
+code exact to final packet. Current21 tests run on both CI platforms; broader
+Node18/nested-test discovery and malformed cwd handling remain open.
+
+Installed primary dist/wrapper and main unchanged. Producer/main integration,
+real consumer floor enforcement, sensor accuracy, launcher/package reconciliation,
+MCP protocol/version conformance and accepted live workflow are still gates.
+No local install/build, deployment/merge, scheduler/role/service activation,
+customer capture or model-quality eval. Prior PP21:56:50Z bounded7652MBfree versus
+6144required; disk13.88% bounded at read. Text/small tests and one serialized
+review at a time, no fanout. Security scans active and pass for both commits.
+
+Both saves: [existing PP issue3](https://github.com/frankxai/peak-performance/issues/3#issuecomment-5941658442) with body readback, and this hub
+session/ledger/next prompt. Preserve prior GenCreator/demand62, configPR79/80/84,
+graph/eval/lane held source and original SIS15020-task acceptance program.
+Next: resolve owned producer/main integration and runtime enforcement, harden
+the confirmed adapter boundary gaps, then an accepted traced brand workflow.
