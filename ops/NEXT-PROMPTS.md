@@ -19,50 +19,54 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All14 original
-estate axes incomplete: organization/rules, AGENTS/skills, graph/loops/hooks,
-teams, Git/local/cloud, each brand's products, eval/observability/maintenance.
-Read instruction-identities-20261002 exact evidence and latest hub draft95
-publication/checks plus existing issues PP3/config46. Preserve all task history.
-Direct-root209 audit is root presence/identity/harness/static command scope,
-not full tracked-file semantics. RootAGENTS140/Claude46/Gemini7/harness80,
-formats52legacy/19v2/9minimal,20localplaceholderfiles/19committed/oneabsentHEAD;
-three manager disagreements/one missing script. Initial format/HEAD assumptions
-corrected before reporting. BOM/CRLF differences alone are not dirty proof.
-Command-free current generator function PS7.6.6 interpolates4fields, whole
-generator never run; existing-file guard preserves old placeholders. No Registry
-authority from name heuristics. Other19 local findings require owner/identity
-checks; PP primary remains unchanged. Older baselines/inventory remain dated.
-PPc6d7f7c5/PR4 two-file identity/build-declaration repair reviewed staticPASS,
-exact bytes published. PR36944276765/push36944272760 attempt1SUCCESS Linux/
-Windows Node24 source21/tsc/build/emitted21/native18/compiled58; Node18.20.8
-emitted21/compiled58. Remote2source+workflow match, overlapping counts. Collector
-UTF8 error corrected locally, CI not rerun. Prior2c timeout/retry evidence retained.
-Draft4 retains existing Hermes producer base, no main merge/runtime/client install.
-Actual installed CLI UTC23:27:38 reserve32GB:7792free/36864required yet bounded/
-exit0, no workload/allocation; not further workload admission. Wrapper/dist and
-foreign primary566 unchanged. Requery accepted producer/main source review and
-ownership, reconcile controlled projection/rollback, prove actual CLI hold/exit2
-for reserve and zero-reserve reading still available. Preserve server/target path
-gates, mapped-drive/mount/junction/permission/race, full MCP lifecycle/client,
-live sensor/consumer floors. No shared wrapper bypass to an unmerged candidate.
-Config guides original08/PR80 read-only source, absent inspected main/primary;
-PR79/80/84 review/main/projection/native hook load/denial/timeout/exit remain.
-Graph/eval/lane actual durable host/artifact/recovery/accounting acceptance and
-original SIS15020-task/host/transport/restart programme/denominators retained.
-GenCreator exclusive/uncertain-save caller/storage acceptance and demand62
-canonical backend/standard-ID/atomic capture gates remain. All13 historical
-Registry brand/product/team and skills/licence/loops/outcomes retained. Arcanea
-other owner holds community403/458; external487 source/checks not our review,
-rights/rendered/customer/creator acceptance. Never overwrite its branch or claims.
-Use accepted Registry/architecture, existing tool plane and exact child owners;
-no competing service/product queue or invented teams. Seek one accepted traced
-owned brand workflow actor/artifact/cost/outcome/recovery without fake receipts,
-borrowed credentials or customer writes. Fresh resource/storage admission before
-heavy work. Retained lane claims live until explicit release; never TTL/lock age.
-Save hub session/ledger/one current prompt and existing product issues, preserve
-other prompts/history and full goal; declare complete only when all requirements
-actually pass. Slice progress, consecutive impasse0, full goal stays active.
+Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. Full14estate
+axesincomplete, preserveoriginalall-brand/rules/AGENTS/skills/graph/loops/hooks/
+teams/Git/local/cloud/eval/observability/maintenance intent andtaskrecords.
+Read pp-main-readiness-20261002 exactevidence, existingPP3/config46 andlatest
+hub95publication/checks. Ifhubpacketstillpending onforeigncodex-4b7b7ca6,
+freshfullretainedownership/.lockcheck andexplicitrelease beforeapplying.
+NeverinferTTLexpiry,deleteagedlocks ordiscardotherprompts/history.
+PP6bb9df25/PR4nowexplicitmain target, bothc6andacceptedmain09 parents; earlier
+producer566basedreviewsdidnotcertifyfullmain. MainPR2strongerinstructions
+restored, source-onlyclass;pnpmtest+lintdefault/harnessprimarytest andmanual
+lint/build/emitted. InstructioninitialBLOCK/refinementPASSonly. Full19source
+reviewBLOCKremains, no release/runtime/main/client/npm adoption. Foreignprimary
+566/sharedwrapper/dist unchanged. PR36947859221/push36947856132 attempt1PASS
+Linux/WindowsNode24source21/tsc/build/emitted21/native18/compiled58;Node18.20.8
+emitted21/compiled58, overlap. Remote2+workflow match, sparseGitblobproof;
+runtime/test/workflow unchangedc6. Prior2c firsttimeout/unchangedretry retained.
+Actual-source/synthetic16storagecases with explicit12GBreserve:12genuinelowdisk
+violations3/5/10percent;four15normalcontrols. Firstdefaultmodeloraclequalified,
+read finalreproduction/oracle-refinement. Implementaccurateapplicablevolume
+floors/unknownmeasurements:under8growingworkhold/under4freeze,8-15onebounded
+buildonly/noinstalls/worktree/media/model/fanout/unattended. Probevalidity on
+timeouts/fallback/localizedevents/zerosamples/classification mustbespecified
+andtested; no unknown-as-clear. ActualpureTStrayCPU95/100scores2CRIT/9PERFECT,
+healthy20controlmatches;paritygatesbeforeacceptance. Noactualprobes/app/allocation
+inrepros. Realinstalledreserve32GBlastbounded/exit0 at7792free/36864required,
+notworkloadadmission. Correctsource/probes/callers thencontrolledprojection/
+rollbackandrealCLIhold/exit2;ordinaryreading remainsavailable.
+Fullreview claimsqualified: c6fieldsresolved/BOMretained, ppfixexposedonmain
+already, baselinecleanup/handover/overnight/history unchanged; unresolvedactual
+permission/ownership/durablehistory/lifecycle remain. No competing lease/service.
+Firstown180sreviewdeadlineunknowncost/verdict, confirmedterminal beforebounded
+newreview;completedcallsUSD1.2028564listequiv,totalpartlyunknown/cashunknown.
+20localplaceholderfindings nowqualifiedGitHubdefaults:15AGENTSreads,7still
+placeholders/8without,5absentrootfiles,0unresolved;all15localheadsdiverge.
+Separatedefaultdefects/branchdrift/absence; no fullsemantics/Registry/loading
+acceptance. Historical209/201/baseline/trackedcorpus scopesremain dated.
+Preserveconfig79/80/84source/main/nativehookload/denial/timeout/exit, graph/
+eval/laneactualdurablehost/artifact/recovery/accounting and originalSIS15020-task/
+host/transport/restartprogramme/denominators. GenCreatorcaller/uncertainsave/
+storage anddemand62canonicalbackend/standardID/atomiccapturegates retained.
+All13historicalRegistrybrand/product/team/licence/skill/loop/outcomegatesopen.
+Arcanea foreigncommunity403/458/hub493task untouched;source/check/rights/render/
+creatoracceptance neverborrowed. UseacceptedRegistryandexistingtools/exact
+childowners, no inventedteams orcompetingbusinessqueue. Seekacceptedtracedowned
+brandworkflowactualactor/artifact/cost/outcome/recoverywithoutfakeoutcomes,
+borrowedcredentials/customerwrites. Freshmachine/storageadmissionbeforeheavy
+work. Savehubsession/ledger/onepromptandexistingissues, retainfullgoalactive
+untilalloriginalrequirementsactuallypass. Thisturnprogress, impasse0.
 ```
 
 [Starlight integration continuation, Codex]
