@@ -50,7 +50,7 @@ Start with:
 | Fan rules out to agent-specific files | [`scripts/sync-agent-rules.mjs`](scripts/sync-agent-rules.mjs) |
 | Copy the baseline into another repo | [`templates/AGENTS.md`](templates/AGENTS.md) |
 | Understand the operating ecosystem | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
-| Find Queen foundations, activation status and next-agent goals | [`docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md`](docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md) |
+| Find Queen foundations, activation snapshot and next-agent goals | [`docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md`](docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md) |
 | See control-plane lock and designated repos | [`docs/CONTROL_PLANE.md`](docs/CONTROL_PLANE.md) |
 | See MCP and protection strategy | [`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md) and [`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md) |
 
