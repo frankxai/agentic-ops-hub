@@ -28,6 +28,21 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea SDK publication and rights boundary, draft499 (Codex)
+
+- [Draft499](https://github.com/frankxai/arcanea-ai-app/pull/499), source `1259381d98e6a07093c0265038480681bd7339d8`:
+  memory-to-public-canon APIs blocked; content/royalty defaults and invented
+  proof pointers removed; explicit caller policies retained/model decisions ignored.
+- CI36981919511 exposed same-timestamp memory loss. Two red regressions preceded
+  unique exclusive writes/timestamp validation. Current local24/nativeSDK24 and
+  CI36983223654/all4 required checks pass. Failed/cancelled attempts retained.
+- Complete11-file/8-context review prepared; not invoked under last PP HOLD
+  5232/6144MiB,32runtimes/12. Other SDK boundaries and signed human promotion
+  remain on283; no rights/creator/game/release approval. Source4877400659 retained.
+- [Issue283 receipt](https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5948168683) and [program276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5948197283); hub98 pickup
+  updated after the foreign lease cleared. Shared owners/prior drafts/#408/#427
+  retained. Full goal active; no new repo/install/worktree or persistent worker.
+
 ## 2026-10-02: Arcanea doc-coauthoring attribution and deduplication, draft487 (Codex)
 
 - [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `7400659ef1857172797adccbdc3a9889da927a7d`:

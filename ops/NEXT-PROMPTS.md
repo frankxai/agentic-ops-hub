@@ -27,7 +27,32 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT doc-coauthoring attribution/deduplication in draft487:
+CURRENT World SDK safety in draft499:
+Source1259381d98e6a07093c0265038480681bd7339d8, branch agent/codex/arcanea-world-sdk-safety-20261002,
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+Original consolidation branch487 remains at7400659; this worktree now holds SDK.
+Legacy evolveCharacter/evolve/CLI block before filesystem access; no approval bypass.
+No default content licence/commercial grant/remix permission/10% Arcanea royalty.
+Explicit caller values remain; model policy fields ignored by createWorld;
+proof pointers omitted when absent; generated policy summaries are not licence text.
+Memory timestamps previously collided: CI36981919511 SDK21pass/onefail. Two new
+red regressions preceded unique exclusive writes and timestamp validation.
+Current local24/nativeSDK24; CI36983223654 SUCCESS/all4 checks. Cancelled same-head
+36983222118 and initial failures retained. Enabled secrets; no install/new worktree.
+Read #283 https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5948168683
+and program276 https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5948197283; exact task contract in planning-with-files.
+Complete11-file/8-context private review packet plus red/failed/native receipts:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/world-sdk-promotion-20261002/
+Review not invoked: last PP07:59UTC HOLD5232/6144MiB,32runtimes/12; no PID/cost.
+NEXT: fresh admission before exact-source independent review; reconcile findings;
+continue283 containment, declared hashes, exact Git staging/errors, v1.1 validation,
+other canon writers and human promotion before a WorldPack/quest creator proof.
+Public scaffold defaults remain; no creator/game/release acceptance claimed.
+Keep full goal active, shared owners, earlier drafts/private reader patch and
+#408/#427. No licence/Heart choice, archive/rename/history rewrite, global install,
+working-set links, merge or release. World/audience/releases>=60%, Studio<=30%, OSS<=10%.
+
+RETAINED doc-coauthoring attribution/deduplication in draft487:
 Source7400659ef1857172797adccbdc3a9889da927a7d, branch agent/codex/arcanea-source-consolidation-20261001
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 External duplicate/index row removed; retained body64b962ad16442f65182d80c0b0bf838e5c9a77f7
