@@ -44,9 +44,26 @@ Five reviews report$2.525996 list, four priorREVISEs retained; all terminal/tool
 ThreeLOW limits:8MiB/10sec Git read ceiling, synthetic failure/executing-EOL coverage,
 CRLF equivalence only lowercase listed extensions; fresh attributes force textLF.
 No public artifact/listing/nativeinstall/rights/customer/release approval.
-NEXT: isolate a synthetic native consumer to prove discovery without changing
-user's installed working set; then real creator workflow/rights evidence before
-promotion/listing. Recheck launcher origin/owner before root support.
+NATIVE SESSION FOLLOW-UP: synthetic fixture e4f0cc0; app engines unchangedfd43.
+Six terminal Read-only/MCPempty observations, ready namespace registered, candidate
+absent. Loaded one supportRead/noSKILLRead +skill-only nonce supports user expansion
+inference. Initial no-plugin control manually read3files and returned same payload.
+Retain failed control. Matched loaded-first/unloaded-second pair shares appendSHA256
+6ca15095256291ed5f1175fb4bcbac01c06e616265780ee0498fb596122b6916; N=1/prompt-conditioned.
+Initialfour append/runner unbound; artifacts hash post-hoc, not per-run. Endfixture
+HEAD/clean/engine blob checks pass. Candidate passport does not test rights gates.
+Three named global files unchanged; total isolation/credential logs not audited.
+Report/method PASS at normalizedUTF8 SHA256 b658f9d86a1b53b13f84e8113fc4bbb1dbaa446b639436c3346a34191cd8fd53; five reviews3REVISE/1bad
+hash rejected/1PASS, reported$1.147247 list; native six$0.125662 separately.
+Exact report verifier5engines/4files/6terminal/Gitleaks pass. No install/globalstate
+or rights/customer/release inference. Product276/501 receipts and hub3files saved.
+Private native-consumer-20261002 receipts retain all source/prompts/attempts/reviews.
+NEXT: evaluate a real creator workflow and rights evidence before promotion/listing.
+Reuse existing useful world/manuscript/quest/media artifacts, compare a serious
+alternative, refine actual output and recovery. Do not turn more loader checklists
+into creator value. Marketplace/git-subdir install separately needs a future
+artifact-containing app commit; realready0. Recheck launcher origin/owner before
+canonical root support. Preserve inherited compiler review/CI and all shared owners.
 After487 lands, rebase501/reverify. Source review excludes parent/fullmainPR.
 Keep408 namedmerges,277 humanpublishing,427 releaseproof and shared owners.
 Product276/501 terminal receipts saved; hubsession/ledger/currentpickup updated.

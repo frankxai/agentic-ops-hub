@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea session plugin registration observed, report PASS (Codex)
+
+- Synthetic fixture e4f0cc0 with five fd43ed6 engine blobs matched: native CLI2.1.287 registers ready namespace; loaded slash request yields skill-only nonce and one support Read. User expansion is an inference; auto model invocation disabled. Candidate omitted by status; real4 candidates/0ready/private:true unchanged. App source still fd43ed6; no code edit or public install/listing request.
+- Six serial native observations: counts1/3/0/0/1/0; initial unloaded/manual fallback retained, showing correct payload alone insufficient. Matched prompt pair loaded-first/unloaded-second N=1; initialfour prompt/runner binding missing, artifact hashes post-hoc. Three global files unchanged; full isolation/rights/marketplace/creator usefulness unproven.
+- Exact qualified methods/report review PASS at normalizedUTF8 SHA256 `b658f9d86a1b53b13f84e8113fc4bbb1dbaa446b639436c3346a34191cd8fd53`; five attempts,3REVISE/1invalidhash/1PASS retained, report reviews$1.147247 list; native calls separately$0.125662. Verifier passes5engines/4files/6terminal; no release approval. All own processes terminal.
+- [276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5956769022)/[501 receipt](https://github.com/frankxai/arcanea-ai-app/pull/501#issuecomment-5956769509), three-file hub save; existing #408/#277/#427 and shared owners preserved. Next prioritize an actual creator workflow and rights evidence, marketplace separately against artifact-containing commit; launcher exact origin/ownership still pending. Full goal active.
+
 ## 2026-10-02: Arcanea native plugin compiler/installer PASS, draft501 (Codex)
 
 - [Draft501](https://github.com/frankxai/arcanea-ai-app/pull/501), source `fd43ed6aaedee8646502a8ffb2cd20ee17849190`: ten-file source-bound independent PASS, frozen Install/all four [CI checks](https://github.com/frankxai/arcanea-ai-app/actions/runs/37027234391) pass; Windows40, Linux39/0fail/1 native skip, quick632. Native strict validation is manifest only; discovery/install and release unproven.
