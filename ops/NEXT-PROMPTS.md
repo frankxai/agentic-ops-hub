@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT OSS working-set cleanup in existing draft487:
+CURRENT doc-coauthoring attribution/deduplication in draft487:
+Source7400659ef1857172797adccbdc3a9889da927a7d, branch agent/codex/arcanea-source-consolidation-20261001
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+External duplicate/index row removed; retained body64b962ad16442f65182d80c0b0bf838e5c9a77f7
+unchanged. UPSTREAM.md records observed Anthropic source/hashes/version-line change.
+Removing that one local line reconstructs upstream8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4.
+Importbe859c91a352c942d5b0b82e4acdc5d1cf0ef6c3, historical upstream pin unknown.
+No root/skill licence or marketplace grant at observed source; generic README
+Apache wording not treated as clearance. No sibling licence or root choice made.
+Working-set130 files/92 recognized names/zero recognized duplicates;38 names open.
+Index137 metadata and all historical JSON fields preserved; dated March audit retained.
+Candidate instructions/examples/passports unchanged, four candidates/zero ready.
+Local15 and CI36978047054 SUCCESS/all4 checks/native package11/audit4/consumer14/quick632.
+Read source task and October2 session plus276 receipt https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5947389736
+Cumulative298-removal/eight-document packet, basea20c06d43a8cc6f448076d15f9e13442660bacbb:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/doc-coauthoring-attribution-20261002/
+Review prepared/not invoked: PP HOLD5505/6144MiB,32runtimes/12; no PID/cost.
+NEXT: admitted independent full cleanup review; applicable rights/grants/attribution,
+remaining frontmatter/consumer/root-plugin reconciliation, canonical donor/plugin
+self-contained installation and genuine creator value. No global install/uninstall,
+working-set links, licence/Heart choice, canon change, archive/history rewrite,
+merge or release. Preserve earlier proposals/private patch/shared owners/#408/#427.
+
+RETAINED OSS working-set cleanup in existing draft487:
 Source24ddaec778c931ce2536986c611f8a5db74ec232, branch agent/codex/arcanea-source-consolidation-20261001
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 Removed18 identical `.claude/skills/oss` copies/18 index rows, retained role-based

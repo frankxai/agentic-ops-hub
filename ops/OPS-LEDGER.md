@@ -28,6 +28,19 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea doc-coauthoring attribution and deduplication, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `7400659ef1857172797adccbdc3a9889da927a7d`:
+  external duplicate/index row removed; retained body unchanged, upstream note added.
+  Working-set92 recognized unique/zero duplicates;137 index rows preserved/38 names open.
+- Exact upstream comparison: added version line only; import pin and applicable
+  licence grant remain unresolved. Historical metadata preserved, no sibling licence added.
+- Local15 and CI36978047054/all4 checks pass; native package11/audit4/consumer14/
+  quick632. Cumulative298-deletion/eight-document review prepared but not invoked:
+  PP HOLD5505/6144MiB,32runtimes/12. Four candidates/zero ready, rights/release open.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5947389736) and hub98 save current pickup. Other fronts, prior
+  proposals/private patch/shared owners and #408/#427 retained. Full goal active.
+
 ## 2026-10-02: Arcanea duplicate OSS working-set root removed, draft487 (Codex)
 
 - [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `24ddaec778c931ce2536986c611f8a5db74ec232`:
