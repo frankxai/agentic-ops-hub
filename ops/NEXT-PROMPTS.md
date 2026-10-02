@@ -21,80 +21,60 @@
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
 
-Latest skill evidence: skill-reference-audit-20261002. All30 reference entries
-audited structurally,28readable/2unavailable; not full installed/native corpus or
-semantic/licence acceptance. Exact3 entries now point to reviewed08d6 PR80 source
-six-file private immutable bundle; other27 entries unchanged. Six remote blobs/
-existing independent review hashes match. Explicit-dispatch/browser ownership/
-hub-only handover corrections retrieved. Native junctions/profiles/loaders unchanged.
-Four conditional refs separately hash-bound/not copied or covered by delta review;
-current missing raw candidates13 require guide-specific/source/host qualification.
-Gstack Codex named docs/question-helper absent, Claude source contains them; do not
-substitute provider paths or run unsupported helper. Licence provenance still open.
-Use exact source and conditional prerequisites before actual guide use. PR80 draft/
-reviewrequired/main pending. Dated review-lite08:57:27Z HOLD5608/6144MB; fresh
-admission required before a reviewer. Full PP and14-axis programme below preserved.
+Read pp-remediation-safety-20261002/resume-5/candidate-v7.json, verification-final.json,
+reproduction.log and frozen/ in the existing private estate review evidence.
+V7 is based on PP2d9d0fe:32 dirty/42 inherited files, unstaged/uncommitted/unpublished.
+67 source/29 Python/148 scoring5audit3collector checks pass. They do not establish
+full typecheck/build/emitted/Node18, installed/client or physical acceptance.
+The historical full inherited V5 independent verdict is BLOCK. Do not rerun V5
+or replay old save helpers that expect V5/V6 bytes. Preserve all earlier records.
 
-Current hook pickup: hooks-guard-projection-20261002 plus prior native reconciliation.
-Exact reviewed PR84 guard3f2ba5d/1bf556 installed in Codex/Claude/Grok with backups
-and conditional rollback. Local contract/source review and exact-head CI permit
-adoption; PR84 remains draft/open/reviewrequired, source not merged.25 helper
-observations overlap prior26: all3 permit benign and exit2 malformed/nonobject/
-oversize/invalidUTF8; one stdin-never-closes exits2. Current native Codex fictional
-patch denied/targetabsent; benign patch allowed with08:48:40Z post receipt checks[]
-and requires-explicit-workspace-check. PR79 shared module remains main9b1a244a.
-Settings/interpreter/adapters unchanged. Prove actual overlay identity/every tool/
-host and trusted launch/load/timeout denial; source/helper exits are not all-host
-acceptance. PR80 instruction loading still separate. Latest actualreview-lite
-08:42:07Z HOLD5527/6144MB; no new reviewer/package install/build/service/task archive.
+Verify current V7 hashes, WORKFLOW/root/origin/branch and retained ownership,
+guard then explicit files before backing up and claiming another source lane.
+Next fix distinct safe launcher-overlap causes in probes/storage/prep/maintenance
+probeEvidence/preflight hardBlocks, then the actual tray CLI entry/launcher.
+Reconcile failed TS/Python Git/secrets validity, temp traversal, artifact missing
+parent semantics, capture progress/DPI/size qualification, workflow/event branches,
+pinned-action provenance, harness BOM and actual external readers of older
+history/latest/watch/snapshot paths. Use unchanged context in resume-4/contexts/;
+pp_config.py exists in Git and is omitted from the sparse checkout.
 
-Read pp-remediation-safety-20261002/resume-3 and candidate-evidence-v5.json.
-PP2d9/draft4 has27 dirty unstaged uncommitted/unpublished paths. Review-v5 freezes
-all42 inherited candidate files against observed GitHub/main09d4917, plus all
-current local source. V1BLOCK and unreviewed V2/V3/V4 preserved, V4 superseded.
-Local55 remediation/30 native/22 Python/148 parity PASS, counts overlap. Actual
-snapshot overwrite/shell-path/false-census and report overwrite baseline failures
-are preserved. Unique owner-receipt bundles and final manifests replace shared
-latest writes; watch event journal locked/reloaded/append-only with no age recovery.
-Malformed/linked/hardlinked/partial/bound-exceeded files hold; fsync uncertainty
-needs inspection. Snapshot admission precedes writes/capture, held CLI exits2,
-constant encoded PowerShell uses paths as env data and exclusive outputs with
-budgets/disposal; syntax parsed only, no real images/capture/GUI executed. Latest
-census task counts govern overnight admission. Advice preserves unfinished tasks.
-Direct legacy history/latest/summary consumers require migration to new readers,
-returned paths/manifests or explicit discovery. Parent ownership/ACL/path races/
-device durability remain limits; tests do not prove physical/visual correctness.
+V7 waits500ms for an exclusive lock before append, preserves foreign locks and
+live history, and never retries uncertain writes. Capacity and writer-lock codes
+reach CLI/MCP/tray; the first hold reason survives later requests/refreshes.
+Aborted watch receipts separate measurementStatus/persistenceError/persistedEvents;
+manifest completion is receipt completion, not successful watch or durability.
+Review these API changes against actual consumers. Parent ownership/cooperative
+writers are assumptions; stalled filesystem syscalls can exceed the wait budget.
+Never rotate live history, prune writer locks by age or kill foreign workers.
 
-Historical review-lite07:55:34Z HOLD5545/6144MB; PP has no reviewer/source push/build/install/
-runtime change. Require actual fresh full6144MB for one serialized independent
-tool-free FULL inherited review-v5.py using authority-v5 and admission-v5-resume;
-both27 dirty and42 full inherited manifests must match. Changes require a new
-preserved freeze. Historical12/14/16/24-file publishers remain blocked. After
-latest PASS, update publication assertions to current ownership/manifests, stage
-named paths --sparse with security hooks, then both exact-head Ubuntu/Windows
-PR+push source/typecheck/build/emitted/Node18. Main source, installed runtime,
-actual client admission/new bundle/history discovery/recovery and rollback,
-physical calibration and accepted live estate trace each remain separate gates.
-Do not weaken reserve, start unadmitted jobs, touch foreign primary/live locks,
-archive unfinished tasks or infer runtime acceptance from source tests.
+After known repairs, freeze latest full inherited source plus needed unchanged
+contexts/readers. Obtain fresh actual6144MB/storage admission before one serialized
+independent review. Only latest exactPASS permits named staging/security and draft
+PR4 publication with full hosted Ubuntu/Windows/source/typecheck/build/emitted/Node18
+gates. Installed PP/foreign primary remain untouched until reviewed rollout,
+recovery and rollback. No current owned PP lane or fixture worker remains.
 
-Hub prior f76ac79 ownership violation remains historical. This turn observed
-codex-cb996aff release and acquired fresh own ops lane before correction save.
-Other branch work was not integrated; all foreign prompts/Queen owner preserved.
+Four formerly pending slices are now in this hub session/ledger: GenCreator PR111
+team/skills qualification, Queen receipts/installed dependency audit, PP initial
+BLOCK repairs and V7 journal repairs. PP3comment5950943689/config46comment5950944060
+are readbackverified. Preserve SDK draft98 and separate Queen134 owner's records.
+Latest hub save/CI must be checked by exact committed head; main integration stays
+separate. Keep this one estate prompt current and every other front intact.
 
-All14 estate axes remain incomplete. Preserve full all-brand organization,
-instructions/skills, graph/loop/hook/team, local/cloud/Git, eval/observability/
-maintenance objective and every original denominator. Seven upstream templates,
-eight without fields/five absent roots remain static qualifications, not host
-semantic acceptance. Preserve209-root snapshot, historical201/3680, skill
-authority/loading/licence/cost, config79/80/84 actual host gates, graph/eval/lane
-durable host/artifact/recovery/accounting, all13 historical brand/product/team
-demands, GenCreator exclusive/uncertain save/caller/storage, demand62 backend/
-standard-ID/atomic capture and SIS150 original20-task/host/transport/restart
-programme. Require one accepted traced owned brand workflow with actor,
-artifact/cost/outcome/recovery. No competing queue/service or unsupported fanout.
-Preserve other edits/history/prompts and unfinished records. Save only to hub
-and existing product issues; release owned lanes/workers at handoff.
+All14 axes remain incomplete. Retain original brand/product/organization/team/task
+provenance; SIS150 original20tasks/19hosts/10transports/7restartprogramme and
+acceptance denominators; GenCreator exclusive/uncertain-save/callerretry/tenant/
+provider/rights/reopen/export/customeracceptance and demand62backend/standardID/
+atomiccapture; graph/eval/lane durablehost/recovery/accounting; hook/instruction/
+skill native/semantic/licence/cost gates. Queen receipts are5records/4succeeded/
+1blocked, with3localbindings, not5acceptedcompletions. Installed ancestor/dispatcher
+reconciliation and live acceptance remain open. GenCreator PR111 proposes8roles,
+21skills with2Apache2/nooriginalpins, not an accepted main team. Registry69900c6 has
+0agents/9roles/5studios/13brands/26products pendingidentityreconciliation. Prior
+hook5/indexc16127 projections retain their own source/native/semantic/licence
+qualifications. Keep Langfuse/Railway paused; no implicit identity import/fanout/
+public release. Goal active; continue useful work within RAM/storage limits.
 ```
 
 [Queen Slack activation, Codex]
