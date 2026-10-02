@@ -20,30 +20,32 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read pp-remediation-safety-20261002 and earlier admission/source evidence.
-PP draft4 remote/source HEAD remains 2d9d0fe37e0205cd139117e55c110203d56a9f66.
-Fourteen owned local files are dirty, uncommitted and unpublished. Review-v1
-BLOCK (terminal USD0.6445968 list equivalent) is retained. V2 fixes emitted
-shebang wrapping, Windows lookup and Git optional index writes through the
-shared trusted-runtime launcher, ancestor cwd, all gain estimates, tray dry-run
-and docs. Local remediation25/native30/Python16/parity148 PASS, counts overlap.
-Frozen manifest and packet: review-v2; evidence: candidate-evidence-v2.json.
-Review-lite held at5867/6144MB; no v2 checker started. Do not publish from the
-old 12-file candidate-evidence.json or old publish-source.py. Both are v1
-historical artifacts. Keep security hooks and sparse definition unchanged.
+Read pp-remediation-safety-20261002/resume-1 and candidate-evidence-v3.json.
+PP HEAD remains2d9/draft4;16 local unstaged files are dirty/uncommitted/unpublished.
+Review-v3 has the current frozen bytes and packet. V1 terminal BLOCK and v2
+unreviewed/superseded evidence remain. Local safety32/native30/Python16/parity148
+PASS, including10 TS/Python redaction forms and real Windows lookup/index checks.
+Watch unknown/throwing/malformed evidence no longer invents stops/restarts;
+nullable counts and gap status are exposed. CLI invalid flags fail before probes.
 
-Next obtain fresh actual review-lite admission with the full6144MB requirement.
-Recheck retained ownership, reclaim only these exact paths after validating
-frozen hashes, then review-v2.py uses admission-v2-resume.json to run one
-serialized tool-free checker. If PASS, update publication helper to v2 review,
-14-file manifest and both original source lanes, stage explicit --sparse paths,
-publish to draft4 and verify both exact-head Ubuntu/Windows source/typecheck/
-build/emitted/native/compiled/Python/parity and Node18 remediation checks.
-Shared runtime/foreign primary remain untouched. Full main safety, inherited
-history/overnight/format/process/consumer review, physical calibration and
-controlled installed/client rollback acceptance remain open. No unadmitted
-checker, install/build/new worktree/fanout; other tasks remain owner-managed.
-Existing Queen activation gates/prompt remain unchanged.
+Five actual inherited caller defects were reproduced. Three remain: history
+concurrent lost update, corrupt-history overwrite, and overnight allowing new
+swarms from posture alone without reserve/storage/unknown admission. Fix those
+through retained ownership and explicit route guard/check before full main.
+Preserve live history and never age-delete writer locks. Review snapshot,
+process/watch persistence path ownership, format and actual consumers as well.
+Review-lite at06:24:06Z held5654/6144MB; no new checker started. Reuse no stale
+admission: require actual fresh full6144MB for one serialized tool-free review.
+review-v3.py uses authority-v3.json and admission-v3-resume.json. Its current
+manifest must match exactly; any new repair requires a new preserved freeze.
+Old12/14-file review/publication helpers are historical and blocked. Reclaim
+exact source paths with fresh lanes, update publication assertions to current
+review/manifest/lane IDs, then explicit --sparse staging with security hooks and
+both exact-head Ubuntu/Windows PR+push source/typecheck/build/emitted/Node18 CI.
+Source scoped acceptance cannot certify full main with remaining known defects.
+Installed runtime/foreign primary unchanged; actual client, calibration and
+controlled projection/rollback acceptance remain open. No unadmitted checker,
+install/build/new worktree/fanout. Preserve the Queen activation owner/prompt.
 
 All14 estate axes remain incomplete. Preserve full all-brand organization,
 instructions/skills, graph/loop/hook/team, local/cloud/Git, eval/observability/

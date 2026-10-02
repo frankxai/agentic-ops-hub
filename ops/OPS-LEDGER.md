@@ -1039,3 +1039,38 @@ observability and SIS150 programme denominators remain incomplete. Preserve
 the existing Queen activation owner/prompt and other histories/unfinished work.
 Both saves use this hub and existing PP3/config46. Resume with fresh admission,
 exact frozen-byte/lane verification, independent review, then scoped hosted CI.
+
+
+## PP caller evidence and redaction repaired locally (2026-10-02T06:43:00.956595+00:00)
+
+Actual-source virtual-I/O checks reproduced five inherited defects: concurrent
+history lost update, corrupt-history overwrite, false process stop/start across
+an unknown sample, overnight admission from expand posture alone below4096MB
+with unknown census, and quoted-token/URI-password redaction gaps. All values
+were synthetic; no live history, process or overnight state was changed.
+
+Watch and TypeScript/Python redaction are repaired in the latest16-file local
+candidate on PP2d9/draft4. Unknown/throwing/malformed process samples preserve
+the last measured baseline and emit no lifecycle events. First recovery starts
+a baseline. Summary status is measured/partial/unknown with unknownSamples and
+nullable baseline/final counts; CLI displays gaps. Invalid watch bounds fail
+before probes/writes. Redactors agree on10 credential forms, including quoted,
+escaped/unterminated values, spaced flags, Bearer tokens and URI user information.
+Arbitrary positional credentials and unobserved/PID-reuse transitions remain
+documented limits. History and overnight defects remain verified open blockers
+for full main acceptance. Explicit watch persistence also needs owner/path review.
+
+Local remediation32, admission30, Python16 and parity148 pass; counts overlap.
+Current frozen manifest/packet: pp-remediation-safety-20261002/review-v3,
+candidate-evidence-v3.json. V1 BLOCK and unreviewed v2 are preserved; v2 is
+superseded. Review-lite at06:24:06Z held at5654/6144MB. No new checker started,
+source commit/push, build/install, new worktree/worker or runtime projection.
+Independent review and exact-head hosted source/typecheck/build/emitted/Node18
+checks remain pending. Installed wrapper/dist and foreign primary unchanged.
+
+All14 estate axes and original brand/product/team, instructions/skills/graph/
+loop/hook/eval/observability and SIS150 denominators remain incomplete. Preserve
+the existing Queen owner/prompt. Next repair history/overnight admission before
+full inherited review, or obtain an admitted scoped v3 review with these blockers
+explicit. Both saves use this hub and existing PP3/config46; source16 dirty paths
+are preserved, owned lanes released at handoff, no task-owned worker remains.
