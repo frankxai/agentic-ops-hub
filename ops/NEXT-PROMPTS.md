@@ -19,45 +19,50 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. Full 14 estate axes
-remain incomplete. Preserve original all-brand, rules/AGENTS/skills, graph/loop/
-hook/team, Git/local/cloud, eval/observability/maintenance intent and all records.
-Read the pp-path-boundaries-20261002 records and latest hub draft95 publication/
-checks; resolve a deferred save only if its receipt remains pending. Product
-issue3 readback matched. Never infer ownership ends by TTL/age or delete another
-writer lock. Requery current state and exact ownership before any write.
-PP2c425209/PR4 on existing Hermes producer base: Linux/Windows Node24 source21/
-tsc/build/emitted21/native18/compiled58; Node18.20.8 emitted21/compiled58, final
-suites pass. PR36940718872 attempt2 and push36940714619 success. First PR Windows
-attempt existing5s trusted PowerShell decode/reencode timeout retained; unchanged
-failed-job retry passes, all new path gates passed first time. No stability claim.
-Server+target spellings checked before stat; valid target cannot bypass badserver.
-Windows drive-letter absolute only; POSIX// rejected before normalization. Initial
-BLOCK reproduced8 unsafe stat/dispatch in alltool/twoplatform VM; final38 zero
-unsafe stat/dispatch,4 validaccepted. Filesystem/tools synthetic, no network/fix.
-Second staticPASS; author docclarifications only, production/tests reviewedbytes.
-Actual installed CLI UTC23:27:38 returns bounded/exit0 at32GB requestedreserve,
-7792MBfree/36864required. No workload/allocation. Shared wrapper/dist+producer566
-unchanged; this observation is not workload admission. Resolve producer/main
-source and owned projection/rollback, prove installed same request hold/exit2,
-zero-reserve reading available. Mappeddrive/mount/junction/permission/race, full
-MCP lifecycle/client, real sensors/consumer floor remain open. No client install.
-Config guides read at original08/PR80 source, absent in inspected main/primary;
-projection/review gates open. PR79/80/84 require current review and native hook
-load/denial/timeout/exit evidence. Keep original graph/eval/lane durable host,
-artifact/recovery/accounting and SIS15020-task programme/denominators unchanged.
+Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All14 original
+estate axes incomplete: organization/rules, AGENTS/skills, graph/loops/hooks,
+teams, Git/local/cloud, each brand's products, eval/observability/maintenance.
+Read instruction-identities-20261002 exact evidence and latest hub draft95
+publication/checks plus existing issues PP3/config46. Preserve all task history.
+Direct-root209 audit is root presence/identity/harness/static command scope,
+not full tracked-file semantics. RootAGENTS140/Claude46/Gemini7/harness80,
+formats52legacy/19v2/9minimal,20localplaceholderfiles/19committed/oneabsentHEAD;
+three manager disagreements/one missing script. Initial format/HEAD assumptions
+corrected before reporting. BOM/CRLF differences alone are not dirty proof.
+Command-free current generator function PS7.6.6 interpolates4fields, whole
+generator never run; existing-file guard preserves old placeholders. No Registry
+authority from name heuristics. Other19 local findings require owner/identity
+checks; PP primary remains unchanged. Older baselines/inventory remain dated.
+PPc6d7f7c5/PR4 two-file identity/build-declaration repair reviewed staticPASS,
+exact bytes published. PR36944276765/push36944272760 attempt1SUCCESS Linux/
+Windows Node24 source21/tsc/build/emitted21/native18/compiled58; Node18.20.8
+emitted21/compiled58. Remote2source+workflow match, overlapping counts. Collector
+UTF8 error corrected locally, CI not rerun. Prior2c timeout/retry evidence retained.
+Draft4 retains existing Hermes producer base, no main merge/runtime/client install.
+Actual installed CLI UTC23:27:38 reserve32GB:7792free/36864required yet bounded/
+exit0, no workload/allocation; not further workload admission. Wrapper/dist and
+foreign primary566 unchanged. Requery accepted producer/main source review and
+ownership, reconcile controlled projection/rollback, prove actual CLI hold/exit2
+for reserve and zero-reserve reading still available. Preserve server/target path
+gates, mapped-drive/mount/junction/permission/race, full MCP lifecycle/client,
+live sensor/consumer floors. No shared wrapper bypass to an unmerged candidate.
+Config guides original08/PR80 read-only source, absent inspected main/primary;
+PR79/80/84 review/main/projection/native hook load/denial/timeout/exit remain.
+Graph/eval/lane actual durable host/artifact/recovery/accounting acceptance and
+original SIS15020-task/host/transport/restart programme/denominators retained.
 GenCreator exclusive/uncertain-save caller/storage acceptance and demand62
 canonical backend/standard-ID/atomic capture gates remain. All13 historical
-Registry brand/product/team and skills/licence/loop/outcome gates retained.
-Arcanea487 advanced externally while its owner retained lanes: source/check
-observations are not our implementation/review/rights/render/creator acceptance.
-Use accepted Registry/architecture, existing tools, exact child repos and current
-owners. No competing service/product queue, role/team activation or fake outcomes.
-Seek one accepted traced owned brand workflow with actor/artifact/cost/outcome/
-recovery. No borrowed credential, customer write or fabricated evidence. Resource
-admission fresh before heavy work; preserve machine floor and storage limits.
-Save hub session/ledger/one current prompt plus existing product issues, retaining
-other prompts/history. Keep goal active until every original requirement passes.
+Registry brand/product/team and skills/licence/loops/outcomes retained. Arcanea
+other owner holds community403/458; external487 source/checks not our review,
+rights/rendered/customer/creator acceptance. Never overwrite its branch or claims.
+Use accepted Registry/architecture, existing tool plane and exact child owners;
+no competing service/product queue or invented teams. Seek one accepted traced
+owned brand workflow actor/artifact/cost/outcome/recovery without fake receipts,
+borrowed credentials or customer writes. Fresh resource/storage admission before
+heavy work. Retained lane claims live until explicit release; never TTL/lock age.
+Save hub session/ledger/one current prompt and existing product issues, preserve
+other prompts/history and full goal; declare complete only when all requirements
+actually pass. Slice progress, consecutive impasse0, full goal stays active.
 ```
 
 [Starlight integration continuation, Codex]
