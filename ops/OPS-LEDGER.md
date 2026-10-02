@@ -16,6 +16,9 @@
 
 - Squash-merged [agentic-ops-hub #78](https://github.com/frankxai/agentic-ops-hub/pull/78) (`46ef7e3`) after 5 rounds of adversarial tests verifying instruction protections (`.cursor`, `.clinerules`, `AGENTS.md`, `.mcp.json`), check enumeration, and fail-closed merge policies. Signed off as `antigravity/pass @46ef7e3` (author: claude).
 - Squash-merged [frankx.ai-vercel-website #846](https://github.com/frankxai/frankx.ai-vercel-website/pull/846) (`258d956`) fixing focus loss on `/library` collapse transition via `useLayoutEffect` deferred focus. Resolved Codex review thread `PRRT_kwDOPu3ses6oCGBl` via GraphQL. All 11 checks green. Signed off as `antigravity/pass @258d956` (author: grok).
+- Squash-merged [FrankX #239](https://github.com/frankxai/FrankX/pull/239) (`1e910de`) delivering portfolio metrics strategy and Stripe/ConvertKit aggregation pull scripts. Verified 3 review comments addressed. Signed off as `antigravity/pass @1e910de` (author: claude).
+- Squash-merged [agentic-ops #115](https://github.com/frankxai/agentic-ops/pull/115) (`32d6bf4`) proposing named R2 storage exceptions under media fabric v2 in the ops registry. Signed off as `antigravity/pass @32d6bf4` (author: claude).
+- Squash-merged [frankx.ai-vercel-website #771](https://github.com/frankxai/frankx.ai-vercel-website/pull/771) (`a1269fd`) correctly surfacing Upstash rate limiter refusal and store outages. Resolved Review Gate review threads, all 11 checks green. Signed off as `antigravity/pass @a1269fd` (author: claude).
 - Maker != Checker preserved across all reviews. Pending peer sign-offs for Antigravity-authored PRs: [claude-code-config #28](https://github.com/frankxai/claude-code-config/pull/28) (gstack 1.91.9.0) and [agentic-ops-hub #92](https://github.com/frankxai/agentic-ops-hub/pull/92) (handover).
 
 
