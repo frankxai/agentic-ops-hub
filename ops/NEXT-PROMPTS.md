@@ -22,38 +22,42 @@
 Continue task 01a0f725-83df-7ef1-8bc0-2979b9f33cd6 and existing
 OBJ-20261001-PREMIUM-PRODUCT-REVENUE-SPRINT. Metric: EUR 10,000 paid
 product revenue excluding VAT/refunds by 10 October; actual revenue unknown.
-Read ops/sessions/2026-10-02.md and the earlier sprint receipts. Preserve
-all prior fronts, including other lanes' additions to the shared objective.
-Use the existing portfolio worktree only after fresh ownership/routing checks.
-Read Creator Launch PR11 head 1adfa5c and CI36962379343: 74 contracts,
-parent build, preview/published independent builds/browser checks and source
-rebuild from actual browser download all passed. Hosted editor preview is
-READY; final 28-file delivery SHA and private capture/sidecar receipts are
-in the session. Keep the six products and MIT rights. Complete workspace
-save/resume and persistent actions are implemented; do not rebuild them.
-PR8 remains another owner's draft and DIRTY against main. Reconcile that
-dependency only in an admitted owner lane; no foreign checkout rewrite.
-Current-artifact cold buyer and paid release review are still required.
-Poolside code-only PASS is not G0-G5. Shared ledger baseline fails on another
-lane's invalid status values; candidate is retained, no overwrite occurred.
-Read CHANNEL-AND-OFFER-DECISION.md in the private packet. One owned proof
-page plus a hosted checkout if existing approval is verified precedes extra
-stores. Do not assume Gumroad Discover supplies initial sales; risk review
-averages three weeks after the genuine-sale threshold. Polar new Starter is
-5% + $0.50; grandfathering depends on actual organization date, unknown.
-Make paid/free additional value concrete with real worked evidence before
-pricing. Verify seller access and qualified traffic through supported reads;
-browser inventory was empty and in-app browser unavailable. Resend records
-do not prove an engaged audience. Native Framer needs a native artifact.
-Park Agentic Builder until unsourced case-study outcomes/code are repaired.
-A deeper RAG lab is conditional and needs meaningful negative controls;
-present introductory tests do not prove retrieval quality. Studio's 30
-checks certify brief/evidence behavior, not app delivery. Preserve MIT rights
-and other agents' uncommitted work. Disk below 15% forbids new installs,
-worktrees, media, local-model runs and fanout; use text work and small tests.
-No checkout before the paid release gate, real 24-hour access/refund evidence
-and Frank's price decision. No invented demand or completed estate audit.
-Target remains unmet; retain unfinished work and record actual goal state.
+Read ops/sessions/2026-10-02.md and
+ops/strategy/gencreator-ai-creation-2026-10-02.md. Frank rejected the simple
+template studies as sufficient competitive commercial value and clarified
+AI creation, monetization, community and deep engineering are the direction.
+Read C:/Users/frank/.starlight/policies/product-outcome-quality.md. Its
+workspace/Codex pointers are loaded locally; universal CI/runtime adoption
+is not established. Preserve all prior fronts and shared-objective additions.
+Reuse GenCreator ADR-007/010/012 and the existing September programme.
+GenCreator issue5 owns source-to-useful-work/recovery/export/return. Confirm
+the actual maker/checker and source ownership; the primary programme tree
+has other lanes' untracked recovery/roadmap edits and must not be overwritten.
+PR67 is MERGED as 3c54858 and already supplies richer local authoring,
+editable media, film export, revisions and recovery. Inspect current code
+and refresh its dated checks; public plugin parity and managed readiness
+remain separate. Do not rebuild it or create another generic canvas/OS.
+The next packet: real release source, retained creator-selected phrases,
+one good LinkedIn post and editable five-slide carousel, restart/reopen,
+selective edit/export, and return with a second source. Compare repair,
+useful accepted output, time and cost with a plain assistant plus editor.
+Source arrangement/scaffold compilation is not professional AI generation.
+Same-machine recovery and portable export do not imply cloud synchronization.
+First Poolside critique hit the length limit; the narrowed second critique
+completed and calls differentiation/demand unproven. Both cost zero; neither
+is a release PASS. Verify promised platforms/formats before distribution.
+Test one professional local edition and one complete domain workflow pack
+before admitting the other preserved monetization families. Multi-marketplace
+distribution follows actual native format, seller approval and paid value.
+Keep the existing six template directions, MIT rights, PR11 1adfa5c and
+74-contract/browser evidence; they are assets, not founder-approved flagship
+or paid release proof. PR8 conflict stays with an admitted owner lane.
+Shared objective baseline validation fails on another lane's statuses;
+retain pending evidence rather than overwrite its work. Paid release needs
+actual buyer value, approved seller, purchase/delivery/refund/24h proof and
+price decision. No invented demand or growth. Keep existing book/RAG repair
+findings. Check fresh admission; below 15% disk no installs/worktree/media
+fanout. Target unmet; preserve unfinished work and record exact evidence.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
