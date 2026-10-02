@@ -1325,3 +1325,40 @@ All14 estate axes incomplete; preserve all original brand/product/team and skill
 authority/semantic/native/licence/cost, graph/eval/lane durable recovery/accounting,
 GenCreator/demand62 and SIS15020-task/host/transport/restart programme/denominators.
 Queen134 activation belongs to its separate owner. No source repository changed.
+
+
+## Estate fundamentals: PP V10 launcher and executable lookup repairs, 2 October 2026
+
+PP V10 remains local on base `2d9d0fe`: 34 dirty files and 44 inherited files.
+Source is uncommitted/unpublished; this slice made no runtime rollout.
+
+Runtime-overlap causes now reach probe, Git prep, maintenance and preflight
+callers. Affected readings stay unknown and budgeted work holds. Zero-reserve
+reading remains available with a diagnostic constraint. An unavailable-cwd
+exception found by review is contained.
+
+Tray actions launch this checkout's compiled CLI through fixed argument arrays
+and encoded JSON, keep its result window open, and report launch failures. The
+old monorepo entry was absent here. Editable installation and an admitted fresh
+build are required; installed menu clicks remain unverified. The installer now
+includes both helper modules; all six modules cover the static local import graph.
+
+A real Windows test exposed Python selecting an inert planted git.exe despite
+filtering the child's PATH. The adapter now resolves an absolute executable
+outside observed roots. Real Git regression preserves selected index bytes/mtime
+and a foreign index. Independent review then found the crash collector's bare
+powershell lookup; it now uses the guarded absolute system shell, trusted cwd
+and system module path. Its planted-executable regression executes inert JSON.
+
+73 source / 30 admission / 35 Python checks pass, with 148 scoring / 5 audit /
+3 collector comparisons. Exact V10 scoped Sonnet5.5 review PASS follows one
+UNKNOWN timeout, a required-fix conditional PASS treated BLOCK, and a reproduced
+BLOCK. Known completed calls total USD1.4704404 at list equivalents; timeout
+cost and invoiced cash are unknown. Original packets and failed checks are retained.
+
+Full inherited V5 BLOCK remains. TS system PowerShell/module-path parity,
+configured crash-target binding, Git/secrets validity, capture bounds and readers,
+Linux/Windows typecheck/build/emitted/Node18, installed recovery and physical
+calibration remain open. Product quality policy is local guidance; executable
+enforcement and accepted creator outcomes remain unverified. All 14 estate areas
+stay incomplete. The prior four handovers are saved in hub224371cc / draftPR95.

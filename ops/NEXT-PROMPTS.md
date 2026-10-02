@@ -21,48 +21,34 @@
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
 
-Read pp-remediation-safety-20261002/resume-5/candidate-v7.json, verification-final.json,
-reproduction.log and frozen/ in the existing private estate review evidence.
-V7 is based on PP2d9d0fe:32 dirty/42 inherited files, unstaged/uncommitted/unpublished.
-67 source/29 Python/148 scoring5audit3collector checks pass. They do not establish
-full typecheck/build/emitted/Node18, installed/client or physical acceptance.
-The historical full inherited V5 independent verdict is BLOCK. Do not rerun V5
-or replay old save helpers that expect V5/V6 bytes. Preserve all earlier records.
+Read pp-remediation-safety-20261002/resume-6/candidate-v10.json,
+verification-final-v10.json, review-v10-qualification.json and frozen-v10/.
+PP2d9d0fe V10 is 34 dirty/44 inherited, unstaged/uncommitted/unpublished.
+73 source/30 admission/35 Python and148scoring5audit3collector checks pass.
+Exact scoped Sonnet5.5 PASS covers this turn repairs only. Historical full V5
+BLOCK remains. Keep all earlier freezes, packets, failed tests and timeout
+receipts. Never replay old save helpers against newer source bytes.
 
-Verify current V7 hashes, WORKFLOW/root/origin/branch and retained ownership,
-guard then explicit files before backing up and claiming another source lane.
-Next fix distinct safe launcher-overlap causes in probes/storage/prep/maintenance
-probeEvidence/preflight hardBlocks, then the actual tray CLI entry/launcher.
-Reconcile failed TS/Python Git/secrets validity, temp traversal, artifact missing
-parent semantics, capture progress/DPI/size qualification, workflow/event branches,
-pinned-action provenance, harness BOM and actual external readers of older
-history/latest/watch/snapshot paths. Use unchanged context in resume-4/contexts/;
-pp_config.py exists in Git and is omitted from the sparse checkout.
+Verify current hashes, WORKFLOW/Git identity, guard then explicit-file routing
+and retained ownership before new edits. Source lanes are released at handoff.
+Next pin TS PowerShell and module path; bind configured crash target; repair
+failed TS/Python Git/secrets validity, temp traversal, missing-parent artifact
+semantics, capture progress/DPI/size limits, workflow/action/BOM and external
+reader migration. Python absolute Git and system PowerShell regressions now
+execute trusted native tools and exclude inert planted executables; index bytes
+and foreign files survive. Full compiled/Node18/installed/physical/durability
+acceptance remains open. Compare any rollout with the existing installed manual
+CLI on matched tasks, exact revisions, repair effort and recovery.
 
-V7 waits500ms for an exclusive lock before append, preserves foreign locks and
-live history, and never retries uncertain writes. Capacity and writer-lock codes
-reach CLI/MCP/tray; the first hold reason survives later requests/refreshes.
-Aborted watch receipts separate measurementStatus/persistenceError/persistedEvents;
-manifest completion is receipt completion, not successful watch or durability.
-Review these API changes against actual consumers. Parent ownership/cooperative
-writers are assumptions; stalled filesystem syscalls can exceed the wait budget.
-Never rotate live history, prune writer locks by age or kill foreign workers.
+Obtain a full inherited exact-revision review after known findings are repaired;
+only then stage source with enabled security hooks and publish draftPR4 with
+both platform/event typecheck/build/emitted/Node18 gates. Actual runtime rollout
+needs ownership, freshness, client acceptance and rollback. Apply product outcome
+policy to actual creator output and named alternatives; local loading is not
+runtime enforcement or customer acceptance. Both saves belong in hub95 and
+existing PP3/config46; other owners' prompts/history stay intact. All14 incomplete.
 
-After known repairs, freeze latest full inherited source plus needed unchanged
-contexts/readers. Obtain fresh actual6144MB/storage admission before one serialized
-independent review. Only latest exactPASS permits named staging/security and draft
-PR4 publication with full hosted Ubuntu/Windows/source/typecheck/build/emitted/Node18
-gates. Installed PP/foreign primary remain untouched until reviewed rollout,
-recovery and rollback. No current owned PP lane or fixture worker remains.
-
-Four formerly pending slices are now in this hub session/ledger: GenCreator PR111
-team/skills qualification, Queen receipts/installed dependency audit, PP initial
-BLOCK repairs and V7 journal repairs. PP3comment5950943689/config46comment5950944060
-are readbackverified. Preserve SDK draft98 and separate Queen134 owner's records.
-Latest hub save/CI must be checked by exact committed head; main integration stays
-separate. Keep this one estate prompt current and every other front intact.
-
-All14 axes remain incomplete. Retain original brand/product/organization/team/task
+Retain original brand/product/organization/team/task
 provenance; SIS150 original20tasks/19hosts/10transports/7restartprogramme and
 acceptance denominators; GenCreator exclusive/uncertain-save/callerretry/tenant/
 provider/rights/reopen/export/customeracceptance and demand62backend/standardID/
