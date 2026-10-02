@@ -27,7 +27,33 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT bundle launcher private repair / program276:
+CURRENT live binding and reader repair v2 / program276 (Amsterdam3October):
+504 is MERGED main4e1d914f1916987d0b059be9ca4c35077f9b6d9d, CI37060126763
+andCodeQL37060126713 PASS. Both public domains/project alias bind to READY
+productiondpl_9Yf7E8gKw8spUpQRPbktdFgrQNuJ. Old223 alias split superseded.
+16GETs200; records/creations markers; trending quarantine/empty still active.
+Two1h error aggregates empty. Hydrated chat/browser/OG/full rollback pending;
+no domain/deploy mutation; advertised build-log tool backend missing.
+Live reader0.5.1 HTTPinit/list/9calls work,6tools, lore/template refuse; installed
+client/conformance/source-deployedSHA unknown. Writteneleven/FireGuardian prose
+falsely clears; candidate now repairs that and irrelevant eleventh-chapter hit.
+Private live-entry-check-20261002/reader-canon-repair-v2.patch SHA256
+26783289b091a38f2206124d3aed1c9ebb55ef1769b308a85495939359671951,
+same7-file proposal vs savedGrok68456204. NativeNode24.16:34pass0fail0skip,
+old28plus6; correctedbaseline1pass5fail. Private Git reconstruction7exactfiles,
+Gitleaks0leaks. Currentmaincanon bytes equal previous740a immutablepin.
+Source/index/untrackedWrangler/earlierpatch preserved. No source repo edit or
+Cloudflare deploy; full package/type/build/CI/independent review/owner/human gate
+pending. Natural prose beyond patterns unchecked. Prior provider blocks retained.
+Owner integrates/reviews before listing; use existingapp498 setup/recovery,
+493community/494pricing proposals via408/427. No replacement platform/newrepo.
+Receipts223/503/privateMCP6 and276 https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5962298530; hubdraft98.
+Launcher ownership answer still pending; previous pickup below. Keep human
+manuscript/licence/Heart/engine/release, shared owners and all other drafts.
+Full goal active: actual creator delivery/recovery/export/community/demand/revenue
+and uniquelegacy salvage open. No owned processes. Hub lane releases at handoff.
+
+RETAINED bundle launcher private repair / program276:
 Sourcec035e594aa714bcdca2c2923f4f30d8405a734cc/core86bdf6ec remains on Claude branch,
 no origin, untracked file/index preserved. Route check holdsremote; candidate
 GitHubfrankxai/skill-bundles unresolved. Do not invent repo/remote or take branch.

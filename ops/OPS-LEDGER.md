@@ -4,6 +4,12 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-03: Current production binding and reader wording repair (Codex)
+
+- PR504 merged/main4e1d914; native CI37060126763 and CodeQL pass. Vercel binds both custom hosts and project alias to productiondpl_9Yf7E8gKw8spUpQRPbktdFgrQNuJ at that SHA. Historical223 alias split superseded. Sixteen GETs200, records/creations markers, trending quarantined, two1h error aggregates empty. Chat hydration/UI/OG/full rollback/runtime acceptance pending; no live writes.
+- Public reader0.5.1 falsely clears written11-Gate/Fire-Guardian prose. Existing private repair extended, seven-file v2patch26783289b091a38f2206124d3aed1c9ebb55ef1769b308a85495939359671951, native34pass/0fail/0skip; private Git reconstruction7exactfiles and enabled Gitleaks0leaks. Old revision, saved Grok source/index preserved. Full package/CI/source-owner integration/independent review/Cloudflare/human release pending; no installation/readiness claim.
+- [223](https://github.com/frankxai/arcanea-ai-app/issues/223#issuecomment-5962298242), [503](https://github.com/frankxai/arcanea-ai-app/issues/503#issuecomment-5962298380), [MCP6](https://github.com/frankxai/arcanea-mcp-generate/issues/6#issuecomment-5962298068), [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5962298530); hub draft98/current pickup. Next integrate/review existing reader repair before listing, then existing498/493/494 proposals. One public app/canon/pinned consumers/shared owners; launcher ownership and rights/Heart/manuscript/release decisions pending. Full goal active; creator value/demand/revenue not proven.
+
 ## 2026-10-02: Bundle launcher private repair prepared, ownership unresolved (Codex)
 
 - Sourcec035e594/core86bdf6ec; private two-file patch9913f760 refuses source root/ancestor/discovered links, conflicting pins and mixed visibility in all-mode. Original CLI public plan can include private skill names; candidate refuses. Matching/private/distinct-root plans preserved. Source/foreign branch/untracked/index untouched.
