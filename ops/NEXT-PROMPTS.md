@@ -19,17 +19,23 @@
 
 **[current · Codex · premium product revenue sprint]**
 ```text
-Continue task 01a0f725-83df-7ef1-8bc0-2979b9f33cd6 and the active
+Continue task 01a0f725-83df-7ef1-8bc0-2979b9f33cd6 and existing
 OBJ-20261001-PREMIUM-PRODUCT-REVENUE-SPRINT. Metric: EUR 10,000 paid
 product revenue excluding VAT/refunds by 10 October; actual revenue unknown.
-Read the appended sprint receipt in ops/sessions/2026-10-01.md and the private
-SPRINT-DECISION.md packet referenced there. Preserve all prior fronts.
+Read ops/sessions/2026-10-02.md and the earlier sprint receipts. Preserve
+all prior fronts, including other lanes' additions to the shared objective.
 Use the existing portfolio worktree only after fresh ownership/routing checks.
-Read Creator Launch PR 11 head 45414a2 and CI 36867988104. Preview/published
-exports build and render; unfinished published cases fail the build. Read the
-earlier cold buyer's 49-check receipt and current delivery SHA/inventory in
-the session. Keep PR 8 dependency; current publication settings still need
-cold use, an exact-current-artifact provider review and hosted preview.
+Read Creator Launch PR11 head 1adfa5c and CI36962379343: 74 contracts,
+parent build, preview/published independent builds/browser checks and source
+rebuild from actual browser download all passed. Hosted editor preview is
+READY; final 28-file delivery SHA and private capture/sidecar receipts are
+in the session. Keep the six products and MIT rights. Complete workspace
+save/resume and persistent actions are implemented; do not rebuild them.
+PR8 remains another owner's draft and DIRTY against main. Reconcile that
+dependency only in an admitted owner lane; no foreign checkout rewrite.
+Current-artifact cold buyer and paid release review are still required.
+Poolside code-only PASS is not G0-G5. Shared ledger baseline fails on another
+lane's invalid status values; candidate is retained, no overwrite occurred.
 Read CHANNEL-AND-OFFER-DECISION.md in the private packet. One owned proof
 page plus a hosted checkout if existing approval is verified precedes extra
 stores. Do not assume Gumroad Discover supplies initial sales; risk review
