@@ -28,6 +28,26 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea public MCP entry, draft498 (Codex)
+
+- [Draft498](https://github.com/frankxai/arcanea-ai-app/pull/498), source
+  `5e4b5be8bd58afc9f6832e320b55574a471d8752`: one observed reader catalog across
+  app/docs, correct client setup, public pinned canon, pattern-based tool limits,
+  unsupported generation controls removed and recoverable existing Studio signup.
+- [CI36968084342](https://github.com/frankxai/arcanea-ai-app/actions/runs/36968084342)
+  SUCCESS/all four checks/native20/four Chromium contexts. Artifact11210772113:
+  digest/18 selected source hashes/32 companions verified, six final panels inspected.
+  Fixture signup/clipboard only; no live DB/mail/client registration/AT/customer proof.
+- Full13 baseline independent source review PASS, complete3 correction PASS/no findings.
+  Heading LOW fixed, Kaelith misclassification reconciled. First timeout, actual
+  mobile overflow FAILURE36965201868 and all cancellation handles retained in session.
+  Completed reported list USD0.6308688; timeout cost/billing unknown. Owned PIDs absent.
+- Current-source Vercel CANCELED; no deployment acceptance. Live "Kaelith is of Fire."
+  false clear remains with the server owner; no private extraction. Retain all earlier
+  drafts/403 provenance, zero-ready skills, open human decisions and #408/#427 gates.
+  Full goal active. Issue276 final receipt and hub98 save the current pickup. Next:
+  retained footer one-file review, then server-owner repair and creator/rights proof.
+
 ## 2026-10-02: Arcanea footer recovery, draft497 (Codex)
 
 - Source b5bf8e5713c898a6473161e96409022e5feb2366 preserves fresh main740

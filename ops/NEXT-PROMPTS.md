@@ -27,9 +27,33 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT footer recovery proposal in draft #497:
+CURRENT public MCP entry proposal in draft #498:
+HEAD5e4b5be8bd58afc9f6832e320b55574a471d8752, branch
+agent/codex/arcanea-mcp-entry-20261002 in existing source worktree below.
+Read planning-with-files/CURRENT_STATE_2026-10-02_MCP_READER_ENTRY.md and276
+comment5946155632 for final execution receipts (task record is source snapshot).
+Shared six observed schemas/four client setups/public immutable canon links;
+specific lint patterns/Godbeast exclusion, no blanket reuse rights or generation
+controls. Exact footer497 helper/tests, unchanged Studio backend; pending/ref guard,
+literal save, retained failures, known400 focus, deadline retry and one receipt.
+Final CI36968084342 SUCCESS/all four/native20/four Chromium contexts. Artifact
+11210772113 digest/18 source hashes/32 companions checked; six scoped panels viewed.
+Full13 source1d34 PASS/two LOW/two INFO; full3 correction5e4 PASS/no findings.
+Heading LOW fixed, Kaelith Godbeast misclassification reconciled, coverage clarified.
+Prior timedout43192/no verdict, actual mobile overflow failure36965201868,
+all canceled/successful handles retained in October2 session/private evidence.
+Completed36432/46084 absent; reported listUSD0.6308688, timeout cost unknown/billing
+unverified. No owned service. Current5e4 Vercel CANCELED, earlierdaf READY different
+source/unrendered. Fixtures do not prove live DB/mail/client registration/real AT,
+customer, deployment, rights or release acceptance. No app merge/mark-ready.
+Live worker still falsely clears "Kaelith is of Fire." Coordinate repair with
+existing server owner; private server/canon source not copied into the app.
+Read-only health/protocol/tools/refusals actually verified; old default-GET403
+does not override those new receipts. Earlier drafts and owner421 are retained.
+
+RETAINED footer recovery proposal in draft #497:
 HEAD b5bf8e5713c898a6473161e96409022e5feb2366, branch
-agent/codex/arcanea-footer-capture-20261002 in existing source worktree below.
+agent/codex/arcanea-footer-capture-20261002 retained as a branch reference; current checkout is498.
 Fresh main740/public feedback preserved. Baseline callback race reproduced;
 pending input/ref guard, explicit success, retained errors/deadline retry,
 known400 cue/focus and stable polite status. Existing subscribe backend unchanged.
@@ -102,16 +126,18 @@ Browser HOLD7801/8192MiB; no browser, foreign cleanup, live signup, mail or DB w
 Original403 f20484f8ec7cc02e2f9507f08186057597360db5 draft/keep and owner audit intact.
 Read planning-with-files/CURRENT_STATE_2026-10-02_COMMUNITY_CAPTURE.md and #276.
 
-NEXT: refresh497 exact-head CI/artifacts and finish its one-file capture review
-when admitted. Then verify public MCP reader client configuration/health/protocol,
-public-canon/licensed-Studio copy and its signup state against existing393/388/421/478
-owners. Official Claude remote connectors are account-brokered; local Desktop
-config is a separate mechanism. Current default urllib health GET403 is not outage
-or handshake proof. Existing421 OPEN/non-draft e84b owner preserved. Retain496/494/493,
-403 provenance/world/auth, zero-ready487, launcher027 upstream question and #427
-same-source deployment/real generation/save/creator acceptance. Continue worlds,
-rights/folds/plugin/MCP/community/revenue; no duplicate public entry, app merge,
-mark-ready, archive/history/licence/canon/manuscript/release or production change.
+NEXT: finish retained497's one-file capture review when machine admission permits;
+its source branch is saved but current checkout is498. Coordinate the observed
+Kaelith/Godbeast false clear with existing393/388/421/478 server owners, reproducing
+the public endpoint behavior and respecting the public/private implementation split.
+Consumer copy does not repair that worker. Retain496/494/493/403 world/auth provenance,
+zero-ready487 and launcher027 upstream/owner question. Continue world, audience and
+release work (at least60%), Studio at most30%, OSS at most10%; preserve shared
+AuthorOS/SIS/Queen/Hermes/Temporal/media owners. Obtain genuine creator usefulness,
+rights/folds/plugin/community/revenue evidence and #427 same-source deployment,
+generation/save, human, domain and rollback acceptance. No duplicate public entry,
+app merge, mark-ready, archive/history/licence/canon/manuscript/release or production
+change without the applicable human decision.
 
 RETAINED pinned resource correction in existing draft #487:
 
@@ -181,7 +207,7 @@ Root/licensing, Heart, manuscript and archive choices remain Frank's. Do not del
 consumers blindly or rewrite history. Retain all earlier source/review/failure receipts.
 
 CURRENT APP WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-CURRENT BRANCH: agent/codex/arcanea-community-capture-20261002
+CURRENT BRANCH: agent/codex/arcanea-mcp-entry-20261002
 Retained preview binding draft https://github.com/frankxai/arcanea-ai-app/pull/491
 HEAD a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962; base e863be8304fdde9f00ba812d7845d66ec52787b9.
 Source CI36926343395 and description-edited CI36927439029 both completed
