@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea five-finding correction PASS, draft500 (Codex)
+
+- Source `3b730335c70aaa23685f6bf1a6f4e8b46b098472`: seven report/ledger corrections, both manuscript outputs/patches unchanged. Ten owner-question IDs agree, optional casualty and unchosen calendar conventions explicit, normalized baseline/fence gap and Git-only support disclosed.
+- Exact-source five-finding correction review PASS/two LOW residues; [native CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/37013326511) passes frozen Install/all four required checks. Two-edit chapter2 Git dry-run succeeds, excluding optional chapter1 hunk; sources/index preserved. Human acceptance/full PR/release pending.
+- Seven proof attempts report $4.813296 list; all terminal, earlier failures/binding error preserved. Four candidates/zero ready. Retain487/fcad,499/3c82 and existing shared owners; no promotion or merge.
+- Product282/276/500 receipts saved; hub files saved after foreign lane cleared. Next: root plugin currently exposes development skills; implement/verify curated plugin/launcher install isolation under existing owners and rights gates. Full goal active.
+
 ## 2026-10-02: Arcanea actual continuity proposal, draft500 (Codex)
 
 - [Draft500](https://github.com/frankxai/arcanea-ai-app/pull/500), `328b95d30a4bfcad0bbe27a86ec234e9af7b9f42`: complete two-chapter three-edit proposal and unchanged baseline reading output; originals/canon unchanged, human disposition pending.

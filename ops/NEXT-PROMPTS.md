@@ -28,6 +28,35 @@ Frank owns licence, Heart 417/639, archive, rename, history, manuscript and rele
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
 CURRENT creator continuity proof in draft500:
+Source 3b730335c70aaa23685f6bf1a6f4e8b46b098472; branch agent/codex/arcanea-creator-continuity-proof-20261002,
+checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
+clean/pushed. Eleven proof files relative to unmerged487/fcad; main CI includes parent.
+Seven-file correction to328b95d3 PASS, two LOW wording residues retained: historical
+casualty support language and frozen-B ambiguity. All ten question IDs agree;
+code-fence gap, unchosen calendar/reflection conventions, optional casualty and
+Git-only patch support explicit. Both complete reading outputs/patches unchanged.
+https://github.com/frankxai/arcanea-ai-app/actions/runs/37013326511
+passes frozen Install/all four checks. Selective Git dry-run --include chapter2
+isolates the two recommended temporal edits and excludes chapter1's optional hunk;
+index/source preserved. Human acceptance pending; u check and suggest is lead judgment.
+Seven proof attempts terminal/tools off, report$4.813296 list, not invoice/full-goal cost.
+Prior REVISE/binding error/integration failures/cancellations retained. No full20-task,
+1/3/5-cell, human/rights/creator-demand/release approval. Keep four candidates/zero ready.
+NEXT setup priority: root .claude-plugin/plugin.json still points .claude/skills,
+while packages/arcanea-skills is private and catalog-controlled. Inspect/implement
+curated plugin/launcher selection and actual native install isolation under277/276
+owners, preserving readiness/rights. Do not expose development imports or mint new repo.
+Existing launcher origin/ownership must be rechecked; former private patch is unapplied.
+After487 lands, rebase500/reverify. Keep408 named merges,427 release gates and280
+manuscript selection. Preserve shared AuthorOS/World Repo/SIS/runtime/media owners.
+Retained487/fcad cleanup review PASS/all298 removals/103 objects/38 equal survivors,
+CI37003006507 passes; cleanup$10.505852 is separate. SDK499/3c82 remains intact below.
+Private receipts under creator-continuity-proof-20261002 in
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
+No owned server/watcher; review49952 terminal. Full goal active, no merge/release choice.
+
+RETAINED prior creator-proof pickup at328b95d3 (superseded by current source above):
+CURRENT creator continuity proof in draft500:
 Source 328b95d30a4bfcad0bbe27a86ec234e9af7b9f42; branch agent/codex/arcanea-creator-continuity-proof-20261002
 is now checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
 clean and pushed. Do not assume the SDK branch is current. Draft500 has eleven
