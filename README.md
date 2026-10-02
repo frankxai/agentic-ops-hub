@@ -51,6 +51,7 @@ Start with:
 | Copy the baseline into another repo | [`templates/AGENTS.md`](templates/AGENTS.md) |
 | Understand the operating ecosystem | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
 | Find Queen foundations, activation snapshot and next-agent goals | [`docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md`](docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md) |
+| Understand Queen's purpose, first users, monetization and community hypotheses | [`docs/QUEEN-PURPOSE-AND-PRODUCT.md`](docs/QUEEN-PURPOSE-AND-PRODUCT.md) |
 | See control-plane lock and designated repos | [`docs/CONTROL_PLANE.md`](docs/CONTROL_PLANE.md) |
 | See MCP and protection strategy | [`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md) and [`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md) |
 

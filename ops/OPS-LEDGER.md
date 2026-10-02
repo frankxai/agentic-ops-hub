@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (Queen work acceptance merged; identity native-review gate and live dependencies recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-02: Queen work acceptance on main; identity and production gates open (Codex)
+
+- [Ops PR148](https://github.com/frankxai/agentic-ops/pull/148) merged `98f20458a295fb8bde06e7f4519a9c9fb611e470`: reviewed placement keeps identity in config, execution in private Ops and sanitized guidance in hub. No new repo, agent import or deployment.
+- [Ops PR150](https://github.com/frankxai/agentic-ops/pull/150) merged `d1d39191f13e1f62c0cfdd76ba7a63ae63c558ad`, after independent exact-head source-only APPROVE. Host-bound non-code acceptance pins check inputs, binds task/issue/snapshot/result/review, authenticates current activity, records accepted proof and retains artifact bytes for historical delivery recovery. Twelve local behavior tests and146 cloud tests pass; post-merge CI37006792719 passes. git-write stays held pending isolation/full adapter proof. No controller/provider activation.
+- [Config PR90](https://github.com/frankxai/starlight-agent-config/pull/90), head `c9b9c24d3ec61895c58b6ef12da72a28d3764d1a`, is ready with independent source-only APPROVE, validator/doctor required checks and CI pass. Own SOUL/working profile, all routes held, native enforcement false. Main requires a native approving GitHub review from another identity; normal merge was rejected, no admin bypass. Existing Hermes home/credentials and PR85/issue86 work preserved. Pre-activation refinements are in the session.
+- n8n read connector works,46 workflows visible/no Queen match. Management key still401; execution connector requires an unexposed executionMode field and returns no execution ID. No workflow edit/live execution. Access restoration and config review requested through supported paths; no credentials exposed or minted.
+- Purpose, first users, alternatives, market sizing, scalable monetization and community hypotheses are in `docs/QUEEN-PURPOSE-AND-PRODUCT.md`. No paying-product, customer, TAM, community-member or live automation claim. EUR100/month incremental pilot and supported subscription-first use unchanged. One lead/serial review under BOUNDED admission, no new worker/service/swarm/install/worktree.
+- Save/pickup: `ops/sessions/2026-10-02.md`, current Queen block in `ops/NEXT-PROMPTS.md`, Ops issue134 and config issue86. Broad outcome remains open. Next is protected controller/auth/cost integration plus a real non-code task roundtrip, and code isolation before coding transport. Earlier work below remains intact.
 
 ## 2026-10-02: Queen foundation and hardening on main; activation pending (Codex)
 
