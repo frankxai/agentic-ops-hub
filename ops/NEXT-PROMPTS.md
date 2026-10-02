@@ -56,7 +56,7 @@ C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
 No owned server/watcher; review49952 terminal. Full goal active, no merge/release choice.
 
 RETAINED prior creator-proof pickup at328b95d3 (superseded by current source above):
-CURRENT creator continuity proof in draft500:
+RETAINED creator continuity proof in draft500:
 Source 328b95d30a4bfcad0bbe27a86ec234e9af7b9f42; branch agent/codex/arcanea-creator-continuity-proof-20261002
 is now checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
 clean and pushed. Do not assume the SDK branch is current. Draft500 has eleven
