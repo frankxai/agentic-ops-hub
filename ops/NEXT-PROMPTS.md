@@ -23,7 +23,7 @@ Continue agentic-ops issue134 and config issue86, preserving Frank's full produc
 request and product-outcome quality policy. Read the October2 hub continuation,
 QUEEN-PURPOSE-AND-PRODUCT.md, foundation map and private runtime runbooks.
 
-Ops placement PR148 merged98f20458a295fb8bde06e7f4519a9c9fb611e470. PR150 adapter
+Ops placement PR148 merged 98f20458a295fb8bde06e7f4519a9c9fb611e470. PR150 adapter
 merged d1d39191f13e1f62c0cfdd76ba7a63ae63c558ad after independent exact-head APPROVE,
 146 CI tests and passing post-merge CI. Status MERGED_NOT_LIVE. Read
 lifecycle/queen-slack-work.js and docs/QUEEN-WORK-CONTRACT.md. Reuse existing bus,
@@ -40,12 +40,16 @@ no admin bypass. Own SOUL/AGENTS/capability source there, existing generic Herme
 home/credentials untouched. Complete activation follow-ups and prove BOTH SOUL and
 operating contract load in the actual isolated profile. Preserve PR85/issue86 work.
 
-n8n read connector sees46 workflows/no Queen match. Management key returns401;
+n8n read connector sees 46 workflows/no Queen match. Management key returns 401;
 execute requires executionMode absent from exposed schema and returned no execution
 ID. Restore supported API/editor access and connector contract through approved
 secret store or authenticated editor. No secrets in chat, auth bypass or repeated
 blind execution guesses. Read official n8n lifecycle skills; disabled corrections
-must be validated, re-read and tested before publication.
+must be validated, re-read and tested before publication. Preserve unrelated active
+n8n workflows. HTTP200 health/root responses do not prove executor work.
+Reuse existing routing workflows for signed ingress, actor allowlists, duplicate
+handling, branch-specific forwarding and receipt-derived status. Validate and
+re-read connections before publishing; never export secrets.
 
 EUR100/month initial incremental ceiling; supported subscription-first, no automatic
 paid fallback/increase. Reconcile baseline, fresh auth/allowance and private trusted
@@ -53,6 +57,13 @@ supervisor/reconciler. Models cannot settle accounting. Dots has official cloud/
 Slack/delegation docs; account access/cost/control unverified. Compare supported
 Hermes and provider-native alternatives on the same valuable job. No fork/new Queen
 repo without a reviewed independent release/distribution/permission boundary.
+
+The /queen command remains unregistered. Bind the approved Queen app/HTTPS ingress
+with rate limits and total deadlines. Provision private projection state outside
+every Git checkout, owner-only ACLs, approved secret loading and no untrusted proxy.
+Name the reconciliation owner and bind the owned bus without writing another
+harness's primary. Probe one sandbox executor first. Cloud dispatch, cancellation
+and unseen ChatGPT coverage remain pending; never claim unseen chat access.
 
 Finish protected controller/native permission/auth/budget integration. Authorize one
 exact-route/task/cap/expiry non-code pilot through canonical runtime. Prove signed

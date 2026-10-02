@@ -25,8 +25,8 @@ artifacts and a recovery path when a provider or machine stops.
 The narrative should show actual work. Lead with the creator's job, demonstrate the
 artifact and its limits, explain the mechanism, then offer a reproducible way to
 participate. Avoid claims of inevitable wealth, universal autonomy or industry
-leadership before evidence exists. This direction follows the Starlight brand pack
-at design-intelligence revision `c7a58f112b46ddd8ba85844ba03c31a1308bc5eb`.
+leadership before evidence exists. This direction follows the
+[Starlight brand pack at revision c7a58f1](https://github.com/frankxai/starlight-design-intelligence/blob/c7a58f112b46ddd8ba85844ba03c31a1308bc5eb/brand-packs/sis/BRAND.md).
 
 ## The first valuable job
 
@@ -42,6 +42,9 @@ workflow failure and delivering an actionable, checked repair, or producing a
 bounded repository fix with regression evidence. An agent register, manifest or
 dashboard supports this job; it cannot substitute for the result. A successful
 health probe alone does not prove the complete coding or workflow repair loop.
+The first live proof is a non-code investigation and checked repair artifact.
+Coding through Slack follows only after Git isolation and full adapter execution
+are proved; neither coding nor automatic workflow publication is available now.
 
 The initial pilot is our own operating estate. It establishes internal usefulness
 and exposes integration failures. External operators must subsequently reproduce
@@ -54,7 +57,7 @@ These are testable audience hypotheses, ordered by proximity to the first job.
 
 | Audience | Job and current behavior | Evidence to seek | Acquisition hypothesis |
 |---|---|---|---|
-| Technical founders and small software teams | Move issues between several coding agents, then manually inspect changes and failures | Repeated accepted fixes, less review/recovery time, willingness to keep using it | Reproducible GitHub examples, coding-agent communities and founder build logs |
+| Technical founders and small software teams | Move issues between agents, then manually inspect investigations, changes and failures | Useful non-code investigations first; accepted coding fixes after isolation proof; less review/recovery time and continued use | Reproducible GitHub examples, coding-agent communities and founder build logs |
 | n8n operators with several business workflows | Distinguish active configuration from actual execution health, recover duplicates/timeouts and maintain credentials | Accurate failure detection, lower repair time, zero duplicate external actions | n8n community failure studies and shared fault fixtures |
 | Platform engineers managing agent use | Control delegated identity, repositories, spending and audit evidence | Cross-provider controls pass their threat model and maintenance requirements | Open engineering specifications and reviewable integration cases |
 | Technical educators and AI creators | Teach reliable workflows and produce useful reusable artifacts | An independent learner reproduces and repairs the task using the package | Starlight Academy lessons, operator labs and contributed examples |
@@ -201,7 +204,9 @@ artifacts and observed outcomes, with human approval for live/premium publishing
    external actions; publish failures as well as successes.
 5. After the live receipt and rights review, release a reproducible adoption
    candidate. Have an independent operator complete and repair its task using only
-   that package. Then test demand, paid value and the five-person cohort hypothesis.
+   that package. Test demand through consented operator interviews and the existing
+   demand-capture surface, recording the job, willingness to pay and reasons to
+   decline. Use those observations to test the five-person cohort hypothesis.
 
 These are ordered work packets, not authorization to launch extra agents under
 machine constraints. Keep the existing product issue open until the running outcome
