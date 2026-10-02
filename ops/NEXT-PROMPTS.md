@@ -17,6 +17,31 @@
 
 ## Current
 
+[Queen away queue and installed admission, Codex]
+```text
+Continue config issue86 and runtime starlight-command issue3. Preserve the other
+Queen identity and Ops acceptance fronts below. Read the October2 installed/away
+receipt and product-outcome-quality policy. Keep one Queen clock, Claude judgment,
+Codex builder and Hermes memory/cron/Telegram; open chats are not workers to seize.
+
+The private clock admission patch is installed, SHA256
+2B94B8EB67F1C98AE22FED8919B2998D57F59FD55336A9B93F69915570568C72.
+Normal 14:06/14:11 ticks passed with result0, empty queue/running and eleven holds.
+Config PR85 head414bd7db6341528e1fc723a3095be16bf89562c5 has 34+44 local tests,
+required doctor/secret checks and all CI passing. Its modules are not imported
+by the clock. Obtain independent exact-current-head review and normal GitHub
+approval; do not bypass protection. Add trusted host capacity/lane callbacks and
+repeat fresh admission at dispatch; publication alone does not reserve resources.
+
+Private queen-production-20261002/away-plan has three unarmed complete cards:
+Claude review, Grok canary audit, then Codex host adapter after review and a fresh
+assigned lane. Compile dependencies through the existing verifier/chain emitter.
+Current away admission HOLD: thirty runtimes and disk below15%. No new unattended
+workers until actual admission clears. Preserve unfinished sessions and writer locks.
+Hermes remeasured62 jobs/eight enabled/zero overdue/fresh ticker; one frontend
+canary error. Telegram delivery unverified. No local LLM, new cron or Hermes fork.
+```
+
 [Queen verified execution continuation, Codex]
 ```text
 Continue agentic-ops issue134 and config issue86, preserving Frank's full production

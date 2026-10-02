@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-02 (Queen work acceptance merged; identity native-review gate and live dependencies recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (Queen admission installed; guarded away queue prepared; execution/main gates retained) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-02: Queen local admission live; away-work publication pending review (Codex)
+
+- Private clock patch installed at 14:05:38 local, exact SHA-256 `2B94B8EB67F1C98AE22FED8919B2998D57F59FD55336A9B93F69915570568C72`; independent Anthropic PASS and 60 checks. Atomic replacement/rollback fixture passed. Normal 14:06/14:11 ticks exited 0 with queue/running empty and eleven held cards; schedule preserved.
+- [Config PR85](https://github.com/frankxai/starlight-agent-config/pull/85), exact head `414bd7db6341528e1fc723a3095be16bf89562c5`, adds complete-card admission and bounded atomic away-card publication. Local 34 admission plus 44 publication tests, required doctor, secret scan and all CI jobs pass. Modules are not imported by the clock; independent current-head review, native GitHub approval and trusted host/dispatch-time integration remain open in [issue86](https://github.com/frankxai/starlight-agent-config/issues/86).
+- Three private continuation cards are schema-valid and unarmed: Claude source review, Grok Hermes-canary audit, Codex host-adapter implementation after review/ownership. Existing verifier chains must express dependencies before release. Open desktop sessions are not an admitted worker pool.
+- Away-work admission HOLD: thirty task runtimes, insufficient projected RAM at probe and disk below 15% (14.68% measured 15:28). No new reviewer/worker, local model, schedule, cleanup or session takeover. Queen task does not wake the PC.
+- Hermes metadata at 15:24: 62 jobs/eight enabled/zero overdue/zero unknown due timestamps/fresh ticker; frontend canary last error remains. Telegram delivery unverified. Existing Queen acceptance and identity fronts below remain intact.
+- Hub lane became free; reused clean merged-PR103 worktree on a new Codex branch from origin/main. Session and current prompt saved here; runtime issue3 and config issue86 track production acceptance. No owned worker/server/watcher remains.
 
 ## 2026-10-02: Queen work acceptance on main; identity and production gates open (Codex)
 
