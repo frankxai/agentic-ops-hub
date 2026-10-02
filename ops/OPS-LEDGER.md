@@ -2,7 +2,14 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-02 (home Wave B reclaim) · 2026-10-01 renames, Wave A, and Wave 0 remain below · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (five-clone finish) · Wave B, renames, Wave A, and Wave 0 remain below · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-02 — five home clones (YogaBook)
+
+- Clean extra worktrees were removed with `git worktree remove` and no `--force`. Three home clones were then deleted: `arcanea-ai-app`, `frankxai_FrankX`, and `gencreator.ai`. Detail and the pushed tips are in `ops/sessions/2026-10-02.md`.
+- Disk 121.68 GiB / 12.79% at the start of the pass, 133.00 GiB / 13.98% after. Under the 15% floor. No zip, no new worktree, no deploy.
+- Kept: home `agentic-ops` (four worktrees, three of them dirty, plus `.env` and a running tray) and home `starlightintelligence.ai` (seven dirty extra worktrees). Their committed tips are on origin. Estate checkouts were not switched.
+- `main` was not pushed. A short-lived preserve ref on `starlightintelligence.ai` was deleted after `cascade-integration` was shown to contain that commit.
 
 ## 2026-10-02 — home Wave B reclaim (YogaBook)
 

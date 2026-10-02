@@ -15,28 +15,33 @@
 
 > **2026-10-01:** the two current prompts stay. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived. A cleanup prompt was added below them. It does not replace those fronts.
 
-## Cleanup, Wave B partial
+## Cleanup, five-clone finish
 
-**[agentic-ops-hub · Grok]** — do not delete the kept home clones
+**[agentic-ops-hub · Grok]** — two home clones still stay
 ```
-Wave B removed nine home clones whose main tip was already on GitHub.
-Receipt: ops/sessions/2026-10-02.md
+The five-clone finish removed home arcanea-ai-app, frankxai_FrankX, and
+gencreator.ai after their branch tips were on GitHub and each had one clean
+worktree. Receipt: ops/sessions/2026-10-02.md
 Issue https://github.com/frankxai/agentic-ops-hub/issues/90
 Draft https://github.com/frankxai/agentic-ops-hub/pull/91
 
-Do not recreate those home folders. The estate checkouts under
-starlight/repos were left on their existing branches. Do not switch them.
+Do not recreate those home folders, or the nine Wave B folders. The estate
+checkouts under starlight/repos stay on the branches already checked out.
+Do not switch them.
 
-Still at the home root, and still the only reason they stayed:
-- agentic-ops and agentic-ops-fleet-serve (17 worktrees, .env present)
-- arcanea-ai-app (3 worktrees)
-- frankxai_FrankX (3 worktrees)
-- gencreator.ai (4 worktrees)
-- starlightintelligence.ai (12 worktrees, four unpushed local branches)
+Still at the home root:
+- agentic-ops. Four worktrees. Dirty: bridge-write-through,
+  bridge-session-index, and starlight/worktrees/agentic-ops-fleet-machines-view.
+  Ignored and not a cache: .env, business_loop.log, lifecycle/tray-cockpit.log.
+  StarlightCockpitTray.exe runs from agentic-ops/tray-app.
+  Do not delete the folder while any of those remain.
+- starlightintelligence.ai. Seven extra worktrees, all dirty. Committed tips
+  are on origin, including cascade-integration, cascade-release,
+  frankxai-production-modernization, and production-cascade-final.
+  Do not remove a dirty worktree. Do not commit those dirty files.
 
-Do not delete those until each extra worktree is removed without --force
-and every local branch tip is on the origin. Do not overwrite the estate
-checkouts. Disk was 13.62% free after Wave B. No new worktree. No zip.
+Disk was 13.98% free after this pass. No new worktree. No zip. Plugins and
+projects stay a one-folder pass and were not started.
 
 Leave the Fable continuation prompt and the July fronts as they are.
 Hub primary stays agent/hermes/fleet-task-contract-v1.
