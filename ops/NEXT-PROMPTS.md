@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT canonical-root cleanup in existing draft487:
+CURRENT OSS working-set cleanup in existing draft487:
+Source24ddaec778c931ce2536986c611f8a5db74ec232, branch agent/codex/arcanea-source-consolidation-20261001
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+Removed18 identical `.claude/skills/oss` copies/18 index rows, retained role-based
+source bodies and138 index-row metadata preserved. Working-set149->131 files,
+named111->93,92 unique names unchanged, duplicate groups19->1. Remaining group
+doc-coauthoring/external doc-coauthoring, both single-file/no companion notice;
+38 entries still need scalar/frontmatter name review. Not skills CLI install proof.
+Canonical root four candidates/zero ready; all instructions/examples/passports unchanged.
+Local15 and nativeCI36976265975 SUCCESS/all4 required checks; package11/audit4/
+consumer14/quick632. Read source task and October2 session plus276 receipt:
+https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5947145883
+Private cumulative review packet:297 deletions/7 complete edited documents,
+basea20c06d43a8cc6f448076d15f9e13442660bacbb, source24ddaec778c931ce2536986c611f8a5db74ec232:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/working-set-oss-cleanup-20261002/
+Review prepared, not invoked: PP HOLD5537MiB/6144,32runtimes/12; no PID/cost.
+NEXT: independent cumulative cleanup review only after fresh admission; reconcile
+findings, remaining third-party attribution, canonical donor/plugin self-contained
+installation and genuine creator acceptance. Broad root plugin/other roots/installed
+donors/shared owners remain open. No licence/Heart choice, source rights clearance,
+working-set links, canon change, archive/history rewrite, merge or release.
+Keep earlier proposals/private reader patch and #408/#427; full goal remains active.
+
+RETAINED canonical-root cleanup in existing draft487:
 Source0e20b3b42a2f5cb81617c8f9d6310e9a270746c5, branch agent/codex/arcanea-source-consolidation-20261001
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 Removed19 unlisted single-file package copies; every body has an identical retained
