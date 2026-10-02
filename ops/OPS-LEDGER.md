@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea complete editable quest proposal, draft502 (Codex)
+
+- [Draft502](https://github.com/frankxai/arcanea-ai-app/pull/502), source `50325f18c9bff59c7814d855a37a7c183120c082` on mainbaseb865: complete **Before the Road** JSON/reading, three counsel routes/sixendings preserve Sela/Atlantean departure. Added dialogue/notes/practices PROPOSAL; manuscripts/canon unchanged, no engine/shared graph contract.
+- Nine-file independent source-text PASS at packet410116df/bundle4190e7ef, committedblob binding verified separately. Local6ends/3denials/6mutantrefusals/inmemoryreset/12blob checks; [Native CI37041113463](https://github.com/frankxai/arcanea-ai-app/actions/runs/37041113463) at exact50325f18 passes frozen Install, Lint, TypeScript, Build and CI Status; the new packet diagnostic step passes. Existing draft browser gallery steps skip. Build checks packet only, local12source blobs separately. No game/browser/playtest proof.
+- Medium word-count and fourLOW polish/variable/whitespace limits retained:689nonterminal,894allstate/842distinct exceeds roughcap. Failed baseline actual180s/noartifact/costunknown, initialREVISE and prep/verifier failures preserved. Reviews$0.8053268list; no modelwinner/customer/release claim. All own reviewer calls terminal/tools0.
+- [282 receipt](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5957883041) / [276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5957883361) plus three-file hub save. Engine285 question unanswered, graph283/human/rights/demand/revenue and full282 evaluation pending. Retained487/500/499/501 and shared owners preserved;408/277/427 gates. Launcher registry lookup failure retained; no launcher writes. Current app checkout quest-authoring-proof branch, clean/pushed. Fullgoalactive.
+
 ## 2026-10-02: Arcanea session plugin registration observed, report PASS (Codex)
 
 - Synthetic fixture e4f0cc0 with five fd43ed6 engine blobs matched: native CLI2.1.287 registers ready namespace; loaded slash request yields skill-only nonce and one support Read. User expansion is an inference; auto model invocation disabled. Candidate omitted by status; real4 candidates/0ready/private:true unchanged. App source still fd43ed6; no code edit or public install/listing request.

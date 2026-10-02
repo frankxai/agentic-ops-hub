@@ -27,9 +27,36 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT native plugin compiler/installer in draft501:
+CURRENT quest authoring proof in draft502:
+Source50325f18c9bff59c7814d855a37a7c183120c082, mainbaseb86549c;
+app worktree C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
+is agent/codex/arcanea-quest-authoring-proof-20261002, clean/pushed.
+Read complete Before the Road in docs/research/benchmarks/quest-authoring-proof-2026-10-02/encounter.md.
+Three counsel routes/sixendings, everypath leaves with Sela for Atlantean.
+All new dialogue/practices/notes agreements PROPOSAL; sources/lore unchanged.
+Local finite diagnostic6ends/3denials/6mutantrefusals/inmemoryreset/12blobchecks PASS.
+Nine-file independent source-text review PASS, packet410116df/bundle4190e7ef.
+Reviewer supplied text/hash only, lead separately binds committedblobs/tests.
+Keep medium countlimit:689core,894allstate/842distinct dialogue, roughcap exceeded;
+fourLOW: evidence sequencing/repetition,variable semantics,whitespace only.
+Failed no-skill baseline actual180s/noartifact/costunknown; no model/skillwinner.
+Two reviews$0.8053268list, initialREVISE and allfailedpreps retained.
+NativeCI37041113463 passes frozenInstall/all4/newpacketstep; draftbrowserstepsskip.
+Bothproduct282/276andhub3files saved. Launcherfindregistryfails; origin/owner pending.
+Engine selection asked under285, unanswered; no engine import/playtest.
+Existing283 owns graphIDs/profile; release285 depends on RealmGraph/releases.
+NEXT: obtain human reading/playtest disposition and Frank's existing game/runtime
+selection, then adapt this real encounter inside that approved implementation.
+While dependent work waits, audit actual launcher origin/ownership and rights/donor
+salvage from existing repos; no new mirror, canonpack, generic platform or paid claim.
+Broader282twentytask/1-3-5cell, licence/Heart/rights/customer/revenue remain pending.
+Retain487/fcad,500/3b730335,499/3c82,501/fd43 and source-bound review/CI receipts.
+Privatequest receipts in arcanea-isolated-evaluation-20261001/quest-authoring-proof-20261002.
+Allownedprocessesterminal; fullgoalactive; no merge without Frank's namedmerge408.
+
+RETAINED native plugin compiler/installer in draft501:
 Source fd43ed6aaedee8646502a8ffb2cd20ee17849190; branch agent/codex/arcanea-plugin-isolation-20261002,
-checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
+previously checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
 clean/pushed. Ten-file full delta vs unmerged487/fcad reviewPASS,
 diffSHA256 519ca80d62176affae635123e930050cac09482de25a30d20ed3cc40354abb2e.
 https://github.com/frankxai/arcanea-ai-app/actions/runs/37027234391
