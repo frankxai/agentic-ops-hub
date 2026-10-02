@@ -27,9 +27,37 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT creator continuity proof in draft500:
-Source 3b730335c70aaa23685f6bf1a6f4e8b46b098472; branch agent/codex/arcanea-creator-continuity-proof-20261002,
+CURRENT native plugin compiler/installer in draft501:
+Source fd43ed6aaedee8646502a8ffb2cd20ee17849190; branch agent/codex/arcanea-plugin-isolation-20261002,
 checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
+clean/pushed. Ten-file full delta vs unmerged487/fcad reviewPASS,
+diffSHA256 519ca80d62176affae635123e930050cac09482de25a30d20ed3cc40354abb2e.
+https://github.com/frankxai/arcanea-ai-app/actions/runs/37027234391
+passes frozen Install/all4checks; Windows40/40 pinnedYAML2.9.1,
+Linux39pass/0fail/1 nativevalidator skip, quick632. Native strict contents[]
+proves manifest only. Real4candidates/0ready/private:true; actual CLI2 nooutput,
+wrongYAML2.9.0 CLI1 nooutput. Eleven protected real source/canon/rootplugin files unchanged.
+Compiler pins rawGit blobs/engines/YAML, refuses committedCRLF recognizedtext,
+execsupport100755, nonportable names and source/dev discovery output.
+Installer snapshots validation buffers and writes canonical bytes0644 exclusively.
+Five reviews report$2.525996 list, four priorREVISEs retained; all terminal/tools0.
+ThreeLOW limits:8MiB/10sec Git read ceiling, synthetic failure/executing-EOL coverage,
+CRLF equivalence only lowercase listed extensions; fresh attributes force textLF.
+No public artifact/listing/nativeinstall/rights/customer/release approval.
+NEXT: isolate a synthetic native consumer to prove discovery without changing
+user's installed working set; then real creator workflow/rights evidence before
+promotion/listing. Recheck launcher origin/owner before root support.
+After487 lands, rebase501/reverify. Source review excludes parent/fullmainPR.
+Keep408 namedmerges,277 humanpublishing,427 releaseproof and shared owners.
+Product276/501 terminal receipts saved; hubsession/ledger/currentpickup updated.
+Retain500/3b730335 humanacceptancepending and499/3c82 owner-profile hold.
+Private receipts: plugin-isolation-20261002 under
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
+No owned persistent worker/server/watcher; fullgoalactive.
+
+RETAINED creator continuity proof in draft500 (former checkout):
+Source 3b730335c70aaa23685f6bf1a6f4e8b46b098472; branch agent/codex/arcanea-creator-continuity-proof-20261002,
+previously checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
 clean/pushed. Eleven proof files relative to unmerged487/fcad; main CI includes parent.
 Seven-file correction to328b95d3 PASS, two LOW wording residues retained: historical
 casualty support language and frozen-B ambiguity. All ten question IDs agree;

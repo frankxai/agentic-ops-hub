@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea native plugin compiler/installer PASS, draft501 (Codex)
+
+- [Draft501](https://github.com/frankxai/arcanea-ai-app/pull/501), source `fd43ed6aaedee8646502a8ffb2cd20ee17849190`: ten-file source-bound independent PASS, frozen Install/all four [CI checks](https://github.com/frankxai/arcanea-ai-app/actions/runs/37027234391) pass; Windows40, Linux39/0fail/1 native skip, quick632. Native strict validation is manifest only; discovery/install and release unproven.
+- Canonical ready selection, raw commit/engine/exact-YAML pinning, LF/readonly support and discovery-output guards. Installer writes snapshotted canonical bytes; zero-ready2/no output and YAML-mismatch1/no output. Eleven protected source files unchanged;4 candidates/0ready/private:true.
+- Five reviews report$2.525996 list; four REVISEs and failed/cancelled receipts retained, three LOW limits remain (Git8MiB/10sec, synthetic failure/executing-EOL coverage, limited EOL extensions). All owned processes terminal. Parent487/whole main PR/rights/native installation/creator demand/release remain open.
+- [276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5955875985)/[501 receipt](https://github.com/frankxai/arcanea-ai-app/pull/501#issuecomment-5955876606) and hub three-file save. Current app checkout is plugin-isolation branch; prior487/500/499 and shared owners preserved. Next: isolated native consumer proof, then real creator/rights evidence before public listing. Full goal active; no merge/promotion/licence/Heart choice.
+
 ## 2026-10-02: Arcanea five-finding correction PASS, draft500 (Codex)
 
 - Source `3b730335c70aaa23685f6bf1a6f4e8b46b098472`: seven report/ledger corrections, both manuscript outputs/patches unchanged. Ten owner-question IDs agree, optional casualty and unchosen calendar conventions explicit, normalized baseline/fence gap and Git-only support disclosed.
