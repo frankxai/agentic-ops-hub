@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT shared EPUB source-fallback correction, AuthorOS draft3 / issue2:
+CURRENT bundle launcher private repair / program276:
+Sourcec035e594aa714bcdca2c2923f4f30d8405a734cc/core86bdf6ec remains on Claude branch,
+no origin, untracked file/index preserved. Route check holdsremote; candidate
+GitHubfrankxai/skill-bundles unresolved. Do not invent repo/remote or take branch.
+Frank asked existing owner repo/available branch; await actual answer for integration.
+Private launcher-source-boundary-repair-20261002 has complete two-file patch
+9913f760468696199e12725ecac50623e61d52e45c30f4839ea58636b0109531,
+raw pinned baseline/candidate copies, README/verification/CLI logs.
+Rejects same repo/root conflicting pins/pinned-unpinned or public/private mixtures;
+matching sources merge/private default exclusion/distinct roots preserved.
+Selected-root/ancestor junctions and links encountered by discovery refuse.
+Same48tests native WindowsNode24: original40pass/7fail/1skip, candidate47pass/
+0fail/1skip; file-symlinkEPERM skip, four directory-junction cases run.
+12 actual CLI planning/dry runs, no lock; read-only Git cached check PASS.
+No real fetch/npx/install/harness invocation, independent source review or readiness.
+Cache content identity/skipped-directory contents/concurrent swaps remain unproven.
+After owner answer, guard/check/lane before integration; exact final review and
+native installer/creator outcome before listing. Providers still blocked; no PASS.
+Issue276 https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5962016228; hub three files/draft98. All owned processes terminal.
+Preserve one public app/canon/pinned consumers, AuthorOS3/ba6/CI37066807370,
+487/499/500/501/502/504/shared owners,408/277/427/human/rights/engine choices.
+Full goal active; skills/launcher/salvage/live delivery/community demand/revenue open.
+
+RETAINED shared EPUB source-fallback correction, AuthorOS draft3 / issue2:
 Author-os branch agent/codex/author-epub-20261002 clean/pushed at
 ba6ce10f3e4f4449db886420c39f922f240fe5e7; preview parent30d90432,14files; three-file correction3dddaff8.
 Null saved graph previously fell through to unfingerprinted Markdown, producing

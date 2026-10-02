@@ -4,6 +4,12 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Bundle launcher private repair prepared, ownership unresolved (Codex)
+
+- Sourcec035e594/core86bdf6ec; private two-file patch9913f760 refuses source root/ancestor/discovered links, conflicting pins and mixed visibility in all-mode. Original CLI public plan can include private skill names; candidate refuses. Matching/private/distinct-root plans preserved. Source/foreign branch/untracked/index untouched.
+- Same48tests: baseline40pass/7fail/1skip, candidate47pass/0fail/1skip. Four native directory-junction cases; file-symlinkEPERM skip. Twelve CLI dry runs and read-only Git patch check pass. Function/planning scope only; no actual fetch/npx/install/harness/creator proof. Cached content, skipped-directory contents, concurrent swaps, independent review/rights/readiness still open.
+- Integration hold: launcher has no remote; route check failsremote, candidate GitHub repo unresolved and registry discovery missing. Frank asked existing owning repo/available branch after concrete private proposal; no answer inferred. [Existing276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5962016228) and three hub files saved. Keep one public app/canon/pinned consumers, all shared owners/drafts and human release requirements. Full goal active; no new repo/remote/install/merge/readiness claim.
+
 ## 2026-10-02: EPUB source fallback correction, AuthorOS draft3 (Codex)
 
 - Source `ba6ce10f3e4f4449db886420c39f922f240fe5e7`, three-file correction against3dc; fourteen-file draft still based on preview30d90432. Reproduced null-graph fallback with distinct manuscripts/same claimed source identity. Selected graph now validates and normalizes directly; invalid graph/manifest refuses before output. CLI/MCP, seven graph cases, source/old-output preservation and local full/core EPUB tests pass; enabled secret scan0findings.
