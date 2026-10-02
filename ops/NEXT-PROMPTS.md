@@ -19,20 +19,18 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Hub PR95 now contains accepted main babff6c50a54620eba9ea43b6915e55b1beaf4df;
-four record conflicts are resolved, and other prompts/history remain intact.
-No PR merged into main. Reviewer admission held at 4784/6144 MB; a later
-4068 MB sample breached the 4096 MB floor. Start no checker before fresh
-admission. Preserve the uncommitted five-file PP candidate and every gate.
-
-First read pp-admission-probes-20261002. Its five-file local uncommitted
-candidate removes unrelated full audits from preflight while preserving required
-measurements and exact holds; 30 actual-source admission/MCP/maintenance fixtures
-pass after two baseline regressions. Independent review, hosted typecheck/build/
-emitted/compiled checks and physical latency remain pending. Latest review-lite attempt measured 4784 MB free versus 6144 MB required and
-held the checker. Obtain fresh admission before starting a reviewer;
-then review frozen bytes and complete exact-head hosted checks before source
-acceptance or installed projection. Keep the original 14-axis goal intact.
+Read pp-admission-review-20261002 and the prior pp-admission-probes evidence.
+Independent review-v1 returned scoped PASS conditional on hosted checks; its
+production maintenance/preflight/README bytes are unchanged. Two test refinements
+now cover exact byte sides of 4/8/15% and actual emitted admission builders;
+30 native source fixtures pass, compiled82 execution remains pending. Final
+review-v2 is prepared but not started: latest review-lite held at5825/6144MB.
+Obtain fresh admission for one serial tool-free checker, review those two files
+against the frozen three matching source hashes, then publish exact reviewed
+bytes to draftPP4 and complete hosted Ubuntu/Windows Node24/18 checks. Candidate
+remains uncommitted/unpublished; main, installed/client and physical latency
+are unaccepted. Preserve prior reviews/failures and the full14-axis programme.
+Hub95 contains accepted main with conflicts resolved and all other prompts kept.
 
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All 14 estate
 axes remain incomplete. Preserve full all-brand organization/instructions/skills,
