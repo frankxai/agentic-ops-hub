@@ -28,6 +28,20 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea SDK file/source/Git boundary, draft499 (Codex)
+
+- [Draft499](https://github.com/frankxai/arcanea-ai-app/pull/499), source `01b711c0350dbb61bb7d3951499851c0363b9e02`:
+  contained writes/locked guards, declared hash/index selection, private candidates
+  and exact Git commits with surfaced failures; stable-tree/sole-writer limits remain.
+- Initial34 red; local/nativeSDK62 and quick632 pass. [Current CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/36990941601)
+  frozen Install/all4 required checks pass. Initial36990060684 failed package format;
+  semantic-preserving correction and all earlier failed/cancelled receipts retained.
+- Complete24-file/6-context packet; review uninvoked under HOLD5417/6144MiB,
+  32runtimes/12. Fullv1.1, signed promotion, graph/creator/game/release proof open.
+- [283](https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5949505766) and [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5949506259); hub98 current pickup updated.
+  Full goal/prior sources/shared owners/408/427 preserved. No licence/Heart/archive/
+  rename/history/merge/release choice or new repo/install/worktree/persistent worker.
+
 ## 2026-10-02: Arcanea SDK publication and rights boundary, draft499 (Codex)
 
 - [Draft499](https://github.com/frankxai/arcanea-ai-app/pull/499), source `1259381d98e6a07093c0265038480681bd7339d8`:

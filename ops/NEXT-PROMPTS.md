@@ -27,7 +27,35 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT World SDK safety in draft499:
+CURRENT World SDK file/source/Git boundary in draft499:
+Source01b711c0350dbb61bb7d3951499851c0363b9e02, branch agent/codex/arcanea-world-sdk-safety-20261002,
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+34 baseline red at1259381; local/nativeSDK62/62 and quick632/632 pass.
+Frozen Install/all4 checks pass: https://github.com/frankxai/arcanea-ai-app/actions/runs/36990941601
+Initial36990060684 at15d2a27 failed package formatting; Build/SDK/quick/TS passed.
+Correction preserves parsed package metadata and runtime code. All failures retained.
+Read/hash/index follow declared sources/custom folders/local policy/media pointers;
+strict YAML rejects ambiguous privacy/status and handles CRLF. Non-public public
+proof/index/hash rejects before adapters. Writes reject traversal/links/hardlinks/
+aliases/locked canon; batches prevalidate and scaffolds refuse existing files.
+Agent helpers append private local CANDIDATE files, leaving accepted sources unchanged.
+Commits name exact regular files at Git root, refuse foreign staged edits, surface
+errors and retain context pending files for retry. Stable tree/sole Git writer
+required; ancestor-swap race and partial I/O new files remain limitations.
+Private metadata does not make Git hosting confidential. Scaffolds remain public
+by default; fullv1.1 validation, signed human promotion and graph proofs remain open.
+Read issues https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5949505766
+and https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5949506259; full task contract in planning-with-files.
+Complete24-file/6-context exact-source packet, red/failed/native evidence:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/world-sdk-file-git-20261002/
+Review uninvoked: HOLD5417/6144MiB,32runtimes/12 at09:24:33UTC, no PID/verdict/cost.
+NEXT: admitted exact-source independent review; reconcile findings; complete
+existing schema/promotion acceptance under283 before WorldPack/quest creator proof.
+Keep full goal active, world/audience/releases>=60%,Studio<=30%,OSS<=10%.
+No licence/Heart choice, archive/rename/history rewrite, links/global install,
+merge/release; preserve shared owners, prior drafts/private patch and408/427.
+
+RETAINED World SDK safety in draft499:
 Source1259381d98e6a07093c0265038480681bd7339d8, branch agent/codex/arcanea-world-sdk-safety-20261002,
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 Original consolidation branch487 remains at7400659; this worktree now holds SDK.
