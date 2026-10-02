@@ -4,6 +4,11 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-03: Draft500 editorial recommendation, human acceptance pending (Codex)
+
+- Frank's "u check and suggest" received a source-bound lead reading at unchanged3b730335: recommend the two morning repairs; preserve Maret date and mother link pending author clarification; casualty wording optional, losing recovery-time cue. Rescue motive/Torven farewell preserved. No manuscript/canon/disposition write or skill/model winner claim.
+- [Existing282 assessment](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5962473170) and three-file hub save on draft98. Keep500 draft,487 dependency and280/408/427 gates; human acceptance remains pending. Reader/launcher/AuthorOS pickups and broad goal remain open.
+
 ## 2026-10-03: Current production binding and reader wording repair (Codex)
 
 - PR504 merged/main4e1d914; native CI37060126763 and CodeQL pass. Vercel binds both custom hosts and project alias to productiondpl_9Yf7E8gKw8spUpQRPbktdFgrQNuJ at that SHA. Historical223 alias split superseded. Sixteen GETs200, records/creations markers, trending quarantined, two1h error aggregates empty. Chat hydration/UI/OG/full rollback/runtime acceptance pending; no live writes.

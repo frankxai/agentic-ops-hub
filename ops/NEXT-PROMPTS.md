@@ -27,6 +27,13 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
+Frank's current500 reply "u check and suggest" is editorial judgment only.
+At unchanged3b730335, lead recommends the two chapter-two morning repairs;
+Maret's fourth-day visit and mother memory stay pending clarification.
+Casualty wording remains optional because it drops the morning recovery cue.
+No source/disposition change or human acceptance. Keep500 draft/487 dependency;
+assessment282 https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5962473170. Existing execution priority follows.
+
 CURRENT live binding and reader repair v2 / program276 (Amsterdam3October):
 504 is MERGED main4e1d914f1916987d0b059be9ca4c35077f9b6d9d, CI37060126763
 andCodeQL37060126713 PASS. Both public domains/project alias bind to READY
