@@ -12,6 +12,13 @@
 - Status is MERGED_NOT_LIVE. [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open for valid management access, validated n8n corrections, approved Queen app/ingress, supervisor/ACL and billing evidence, then one real issue-bound task round trip. The EUR100/month subscription-first pilot stays held. No new service, paid session, recurring schedule, install or worktree was started.
 - Receipt and current pickup: `ops/sessions/2026-10-02.md` and `ops/NEXT-PROMPTS.md`. Earlier unfinished prompts remain intact.
 
+## 2026-10-02: Estate PR Signoffs, Merge Steward, and Focus Transition (Antigravity)
+
+- Squash-merged [agentic-ops-hub #78](https://github.com/frankxai/agentic-ops-hub/pull/78) (`46ef7e3`) after 5 rounds of adversarial tests verifying instruction protections (`.cursor`, `.clinerules`, `AGENTS.md`, `.mcp.json`), check enumeration, and fail-closed merge policies. Signed off as `antigravity/pass @46ef7e3` (author: claude).
+- Squash-merged [frankx.ai-vercel-website #846](https://github.com/frankxai/frankx.ai-vercel-website/pull/846) (`258d956`) fixing focus loss on `/library` collapse transition via `useLayoutEffect` deferred focus. Resolved Codex review thread `PRRT_kwDOPu3ses6oCGBl` via GraphQL. All 11 checks green. Signed off as `antigravity/pass @258d956` (author: grok).
+- Maker != Checker preserved across all reviews. Pending peer sign-offs for Antigravity-authored PRs: [claude-code-config #28](https://github.com/frankxai/claude-code-config/pull/28) (gstack 1.91.9.0) and [agentic-ops-hub #92](https://github.com/frankxai/agentic-ops-hub/pull/92) (handover).
+
+
 ## 2026-10-01: Queen subscription-first operations pilot (Codex)
 
 - Frank authorized implementation and Slack workspace writes, considers Dots alongside Codex/ChatGPT, OpenAI Agents and Claude managed agents, and set an initial EUR100/month incremental API/cloud ceiling. Future increases require measured outcomes and an explicit budget revision. Existing subscriptions are separate commitments.
@@ -27,6 +34,13 @@
 - [agentic-ops PR135](https://github.com/frankxai/agentic-ops/pull/135), draft head `e98b96a2c01e3a4816af0dd61f98883945a0f256`, adds signed `/queen` commands, issue-bound intake into the existing Hermes bus, deduplicated threaded progress, held-default config, manifest and activation runbook. Twenty focused tests, staged Gitleaks and the existing commit secret hook pass.
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
+
+## 2026-10-01: Estate PR gate signoffs, Queen observation speedup, and held cards cleared (Antigravity)
+
+- 9 production PRs squash-merged under cross-harness Maker != Checker rules: [arcanea-ai-app #478](https://github.com/frankxai/arcanea-ai-app/pull/478), [frankx.ai-vercel-website #845](https://github.com/frankxai/frankx.ai-vercel-website/pull/845), [gencreator.ai #115](https://github.com/frankxai/gencreator.ai/pull/115), [frankx.ai-vercel-website #840](https://github.com/frankxai/frankx.ai-vercel-website/pull/840), [arcanea-ai-app #485](https://github.com/frankxai/arcanea-ai-app/pull/485), [starlightintelligence.ai #64](https://github.com/frankxai/starlightintelligence.ai/pull/64), [starlightintelligence.ai #68](https://github.com/frankxai/starlightintelligence.ai/pull/68), [gencreator.ai #117](https://github.com/frankxai/gencreator.ai/pull/117), [frankx.ai-vercel-website #825](https://github.com/frankxai/frankx.ai-vercel-website/pull/825), [gencreator.ai #131](https://github.com/frankxai/gencreator.ai/pull/131).
+- Retroactive signoffs recorded: [frankx.ai-vercel-website #843](https://github.com/frankxai/frankx.ai-vercel-website/pull/843) as `antigravity/pass @839d34b`, [agentic-ops-hub #83](https://github.com/frankxai/agentic-ops-hub/pull/83) as `antigravity/pass @81a4350`.
+- All 5 held cards in `queen/inbox/_hold-missing-agent-20260930/` cleared: large blob strip in arcanea-ai-app (#486), gbrain upgrade to v0.60.25 on :7318, gstack upgrade to 1.91.9.0 in claude-code-config (#28), 5 locked worktree shells pruned, property-portal-template PR #3 reopened and signed off.
+- Queen observation loop speedup (120x, from 59s to 0.47s) via batch WMI command lines and mutex fallback (`Global\` -> `Local\`).
 
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
