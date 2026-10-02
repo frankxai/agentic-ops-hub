@@ -4,6 +4,26 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea authored homepage, draft496 (Codex)
+
+- Source9a543a23b635d70f840013832073b466b149bbeb reuses403's authored example
+  and main creator/auth concept recovery; owner403 and audits preserved. JSON-LD,
+  canon/backend/auth/tokens unchanged. CSS split and component-terms source link.
+- Initial CI36954812805 FAILURE retained. Corrected source CI36955512616 and
+  description-triggered36956339221 SUCCESS/all four checks. Actual homepage4 and
+  draft3 Chromium contexts pass. Artifact11205667965 digest/15 source hashes/20
+  screenshot companions checked; seven current captures actually inspected.
+- Complete nine-file source review HOLD for then-pending execution; unchanged-source
+  execution reconciliation scoped PASS/two INFO. Stale private hashes clarified;
+  planning-doc finding disproved. Timeout/RAM2771 denial retained, owned PIDs absent.
+  Completed listUSD0.8918736; timeout cost unknown, billing unverified. No own service.
+- Current9a543 preview CANCELED; earlier7c2 READY/protected302. Narrow CI proof, no
+  real AI/storage/creator/rights/release acceptance. Keep487/493/494/490/491 and403,
+  zero-ready skills, licence/Heart/upstream/manuscript/archive/release choices open.
+  #408 named merge/#427 proof remain. Next: footer pending-email/late-success
+  assessment against fresh main with its durable backend; continue worlds/creator,
+  rights/folds/plugin/MCP/community/revenue acceptance. Full goal active.
+
 ## 2026-10-02: Arcanea honest plan proposals, draft494 (Codex)
 
 - App494 source `455f815db8352ffb31140694d9a4f9089ff3bc30`, exact main base

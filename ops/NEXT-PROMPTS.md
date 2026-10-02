@@ -27,7 +27,25 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT pricing proposal derivative in draft #494:
+CURRENT authored-homepage derivative in draft #496:
+HEAD9a543a23b635d70f840013832073b466b149bbeb, branch
+agent/codex/arcanea-homepage-workbench-20261002 in the existing source worktree below.
+Reuses403 owner/source/audits and main creator/auth/storage/JSON-LD/tokens. Authored
+rule/character/location interaction, keyboard handoff and anonymous concept return.
+Split CSS under500; component-terms source link, no blanket source rights claim.
+Initial7c2 CI36954812805 failed at alert selector/Next announcer, retained. Current
+CI36955512616 and description-triggered36956339221 SUCCESS/all four, homepage4
+Chromium and draft3 contexts pass. All handles terminal. Artifact11205667965 digest,
+15 Git-source hashes and20 companions checked; seven captures actually viewed.
+Full nine-file source review HOLD pending execution, unchanged-source reconciliation
+scoped PASS/two INFO. Stale hash LOW clarified, planning-doc-in-list LOW disproved.
+First provider timeout and RAM2771 denial retained; owned PIDs absent. Completed
+listUSD0.8918736, timeout cost unknown, billing unverified. No owned service remains.
+Current9a543 preview CANCELED; earlier7c2 READY/protected302. Narrow CI proof, no
+Vercel/live AI/storage/creator/rights/release acceptance. Source task record is the
+implementation snapshot; current evidence is in276 and October2 hub session.
+
+RETAINED pricing proposal derivative in draft #494:
 HEAD455f815db8352ffb31140694d9a4f9089ff3bc30, branch
 agent/codex/arcanea-pricing-demand-20261002 in existing source worktree below.
 Six-file baseline154 review PASS/two LOW/two INFO; full two-file455 correction
@@ -63,18 +81,17 @@ Browser HOLD7801/8192MiB; no browser, foreign cleanup, live signup, mail or DB w
 Original403 f20484f8ec7cc02e2f9507f08186057597360db5 draft/keep and owner audit intact.
 Read planning-with-files/CURRENT_STATE_2026-10-02_COMMUNITY_CAPTURE.md and #276.
 
-NEXT: reconcile403's remaining homepage/authored dossier against fresh main;
-retain pricing494 and community493 as separate reviewed proposals, not live proof.
-Preserve main458 storage/world/auth/CI; reuse authored candidate and
-owner provenance. Obtain current-source browser and actual storage proof when
-admitted. Launcher027 still no origin on agent/claude/skill-bundles; upstream/owner
-clarification pending. Public-entry read: app PUBLIC, root licence/security/
-contribution/conduct absent, package repo/bugs point at diverged arcanea and
-topics emphasise infrastructure/agents. Draft487 already contains proposed
-README/community files and corrected root repository/bugs links; main still lacks
-them. Licence/rights choice and integration remain open; do not duplicate487.
-Broader source/rights/plugin/MCP/world/release/community/
-revenue work remains active. No app merge/mark-ready/deploy without408/427 gates.
+NEXT: preserve496/494/493 as separate reviewed proposals. Assess footer
+pending-email/late-success against fresh main, retaining its durable subscribe
+backend. Preserve403 provenance and accepted world/auth/CI. Obtain authentic
+creator/real generation/save and same-source deployment acceptance under427 when
+authorized/admitted. Launcher027 no-origin on agent/claude/skill-bundles remains
+unapplied; owner/upstream clarification pending. Existing487 already proposes
+README/map/security/community/contribution/conduct and repository/bugs metadata;
+licence/rights choice, main integration and zero-ready promotion remain open.
+Continue worlds/releases/audience, rights/folds/plugin/MCP/community/revenue with
+shared owners. No duplicate public-entry proposal, app merge/mark-ready,
+archive/history/licence/canon/manuscript/release decision or production change.
 
 RETAINED pinned resource correction in existing draft #487:
 
