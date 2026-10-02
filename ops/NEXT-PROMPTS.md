@@ -21,6 +21,20 @@
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
 
+Latest skill evidence: skill-reference-audit-20261002. All30 reference entries
+audited structurally,28readable/2unavailable; not full installed/native corpus or
+semantic/licence acceptance. Exact3 entries now point to reviewed08d6 PR80 source
+six-file private immutable bundle; other27 entries unchanged. Six remote blobs/
+existing independent review hashes match. Explicit-dispatch/browser ownership/
+hub-only handover corrections retrieved. Native junctions/profiles/loaders unchanged.
+Four conditional refs separately hash-bound/not copied or covered by delta review;
+current missing raw candidates13 require guide-specific/source/host qualification.
+Gstack Codex named docs/question-helper absent, Claude source contains them; do not
+substitute provider paths or run unsupported helper. Licence provenance still open.
+Use exact source and conditional prerequisites before actual guide use. PR80 draft/
+reviewrequired/main pending. Dated review-lite08:57:27Z HOLD5608/6144MB; fresh
+admission required before a reviewer. Full PP and14-axis programme below preserved.
+
 Current hook pickup: hooks-guard-projection-20261002 plus prior native reconciliation.
 Exact reviewed PR84 guard3f2ba5d/1bf556 installed in Codex/Claude/Grok with backups
 and conditional rollback. Local contract/source review and exact-head CI permit

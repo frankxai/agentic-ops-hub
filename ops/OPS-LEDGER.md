@@ -1251,3 +1251,53 @@ inherited frozen files, full review/hosted/runtime/client/physical gates open.
 All14 estate axes remain incomplete; original semantic/skill/brand/team, graph/
 loop/lane/eval durable host/accounting/recovery, GenCreator/demand62, SIS150
 original20-task/host/transport/restart programme and Queen134 owner are preserved.
+
+
+### Estate fundamentals: reference skill audit and reviewed guide retrieval
+
+Audited all30 entries of the local Codex reference index:28 readable guides,
+2unavailable,379798 source bytes,28 named/description YAML frontmatters. This is
+the bounded reference catalog, not the entire installed skill estate or native
+loader output. Literal-reference inspection initially found63 candidates and15
+missing local targets. One is the research output placeholder `url`; four are
+gstack repo-level references with provider-specific source resolution. Counts
+are structural observations, not15 broken prerequisites or semantic certification.
+The first console excerpt stopped on Windows cp1252 encoding; ASCII JSON readback
+resolved observation only, with no source or audit rewrite based on that failure.
+
+Updated exactly3 reference entries: agent-harness-engineering, browser fleet and
+work ledger. They now retrieve exact reviewed [PR80](https://github.com/frankxai/starlight-agent-config/pull/80)
+source `08d6e80f010a6f71ac42eb7482fd13532f05e1fe`; all27 other entry objects are
+unchanged. Six source files were verified against the existing independent
+Anthropic PASS attestation and remote Git blobs, then copied into an immutable
+private source-qualified bundle. This retrieves the corrected explicit-dispatch,
+owned browser cleanup and hub-only handover contracts. It changes the reference
+index, not native skill junctions, profiles, loaders or services. PR80 remains
+draft/open/REVIEW_REQUIRED and main integration remains pending.
+
+Catalog metadata explicitly qualifies candidate/main state, source hash, review
+scope, dependency/Registry gates, unknown licence and unverified native selection.
+Four additional conditional source references are hash-bound at08d6 and separately
+retrievable; they are not copied, reviewed as part of the six-file delta or native
+activation proof. Current raw reference candidates remain63,13missing; work-ledger
+references and remaining source/runtime prerequisites stay qualified before use.
+The original index backup, exact manifests and ownership-gated conditional rollback
+are in private `skill-reference-audit-20261002/projection.json`.
+
+Named gstack checks show Codex's directory resolves to the existing agent-skills
+projection and lacks question-registry docs/script/helper/license; Claude's
+source directory contains those named files. No gstack command or cross-provider
+substitution ran. Only3 imported Superpowers guides have a nearby licence candidate
+in the bounded ancestor probe; this is neither provenance certification nor proof
+that other guides are unlicensed. Wider semantics, source/licence lineage and
+actual native loading/cost/accepted use remain open across the whole estate.
+
+Dated actual review-lite08:57:27Z HOLD5608/6144MB,32tasks; no new paidchecker,
+package install/build/worktree/agent/service/browser/task archival. PPV5 remains
+27 dirty unstaged/uncommitted/unpublished paths and42 inherited frozen files;
+full review/hosted/runtime/client/physical gates remain open. Reviewed guard1bf556
+and shared runtime9b1a244a local projections remain separate current evidence.
+All14 estate axes incomplete; preserve all original brand/product/team and skill
+authority/semantic/native/licence/cost, graph/eval/lane durable recovery/accounting,
+GenCreator/demand62 and SIS15020-task/host/transport/restart programme/denominators.
+Queen134 activation belongs to its separate owner. No source repository changed.
