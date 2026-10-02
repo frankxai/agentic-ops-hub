@@ -19,16 +19,16 @@
 
 <!-- GITHUB_VISUALS_END -->
 
-# 🚀 Agentic Operations Hub (agentic-ops-hub)
+# Agentic Operations Hub (agentic-ops-hub)
 ### The Configuration Control Plane for AI Coding Agents: Claude Code, Cursor, Cline, Copilot, Codex, Antigravity & Grok
 
 One source of truth (`AGENTS.md`), one sync engine, every agent aligned — plus a curated index of the operational layer that keeps autonomous coding agents safe, fast, and consistent.
 
-[![Agentic Ops](https://img.shields.io/badge/discipline-Agentic%20Ops-2563eb)](#-agentic-ops--aiops)
+[![Agentic Ops](https://img.shields.io/badge/discipline-Agentic%20Ops-2563eb)](#agentic-ops--aiops)
 [![Source of Truth](https://img.shields.io/badge/source-AGENTS.md-0f766e)](AGENTS.md)
 [![Sync Engine](https://img.shields.io/badge/sync-agent%20rules-7c3aed)](scripts/sync-agent-rules.mjs)
 [![Visual System](https://img.shields.io/badge/visuals-GitHub%20suite-f59e0b)](assets/github/README.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-0891b2)](#-license)
+[![License: MIT](https://img.shields.io/badge/license-MIT-0891b2)](#license)
 
 ---
 
@@ -50,6 +50,8 @@ Start with:
 | Fan rules out to agent-specific files | [`scripts/sync-agent-rules.mjs`](scripts/sync-agent-rules.mjs) |
 | Copy the baseline into another repo | [`templates/AGENTS.md`](templates/AGENTS.md) |
 | Understand the operating ecosystem | [`ECOSYSTEM.md`](ECOSYSTEM.md) |
+| Find Queen foundations, activation snapshot and next-agent goals | [`docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md`](docs/QUEEN-FOUNDATIONS-AND-NEXT-GOALS.md) |
+| Understand Queen's purpose, first users, monetization and community hypotheses | [`docs/QUEEN-PURPOSE-AND-PRODUCT.md`](docs/QUEEN-PURPOSE-AND-PRODUCT.md) |
 | See control-plane lock and designated repos | [`docs/CONTROL_PLANE.md`](docs/CONTROL_PLANE.md) |
 | See MCP and protection strategy | [`docs/MCP-STRATEGY.md`](docs/MCP-STRATEGY.md) and [`docs/PROTECTION-LAYERS.md`](docs/PROTECTION-LAYERS.md) |
 
@@ -57,7 +59,7 @@ This is a library/configuration repo, not a deployable app. The fastest health c
 
 ---
 
-## 🗺️ The Agentic Income Ecosystem blueprint
+## The Agentic Income Ecosystem blueprint
 
 This repo is also the **canonical map** of the agentic-income ecosystem — the L0–L7 layer model, every repo's purpose and status, the MCP own-vs-adopt strategy, the founder/queen/worker agent stack, the protection layers for humans + agents + wealth, and the red/blue charter.
 
@@ -70,7 +72,7 @@ This repo is also the **canonical map** of the agentic-income ecosystem — the 
 
 ---
 
-## 🎯 Agentic Ops ≠ AIOps
+## Agentic Ops ≠ AIOps
 
 This repository exists to draw — and own — an exact distinction:
 
@@ -86,7 +88,7 @@ This repository exists to draw — and own — an exact distinction:
 
 ---
 
-## 🧠 The Layering Model
+## The Layering Model
 
 Agent instruction files fragmented into a dozen formats. The 2026 resolution is layered:
 
@@ -105,7 +107,7 @@ You edit **one file**. The sync engine generates the rest with tamper-evident he
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # 1. Copy the canonical source + sync engine into your project
@@ -125,14 +127,14 @@ Templates ship the **Top Thinkers Guardrails** (Karpathy, Feynman, Ousterhout, H
 
 ---
 
-## 🌌 Position in the FrankX Ecosystem
+## Position in the FrankX Ecosystem
 
 Agentic Ops is a stack. Each repo owns one layer — agentic-ops-hub is the **config control plane** that aligns them:
 
 | Layer | Repo | Owns |
 | :--- | :--- | :--- |
 | **Config control plane** | **agentic-ops-hub** (you are here) | Rule source-of-truth, cross-agent sync, the Agentic Ops index |
-| Capability system | [agentic-creator-os](https://github.com/frankxai/agentic-creator-os) | 90+ skills, 65+ commands, 38 agents — what agents *can do* |
+| Capability system | [agentic-creator-os](https://github.com/frankxai/agentic-creator-os) | Skills, commands, and agent profiles — what agents *can do* |
 | Lifecycle enforcement | [claude-code-hooks](https://github.com/frankxai/claude-code-hooks) | Quality gates, circuit breakers, audit trails — what agents *may do* |
 | Integration health | [mcp-doctor](https://github.com/frankxai/mcp-doctor) | Diagnose/optimize MCP servers — what agents *connect to* |
 | Machine health | [peak-performance](https://github.com/frankxai/peak-performance) | System auditing for agent-heavy machines — what agents *run on* |
@@ -144,7 +146,7 @@ Rule of thumb: **capabilities live in ACOS, enforcement lives in hooks, configur
 
 ---
 
-## 🏛️ Curated Agentic Ops Index
+## Curated Agentic Ops Index
 
 The best external repositories, toolkits, and skills for operating AI coding agents:
 
@@ -167,7 +169,7 @@ The best external repositories, toolkits, and skills for operating AI coding age
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 * `/templates` — `AGENTS.md` (canonical source), `CLAUDE.md` (shim), legacy `.cursorrules`/`.clinerules`, ACOS `SKILL.md`.
 * `/scripts` — `sync-agent-rules.mjs`: fan-out + `--check` CI verification + `--legacy` compat.
@@ -175,5 +177,5 @@ The best external repositories, toolkits, and skills for operating AI coding age
 
 ---
 
-## 📜 License
+## License
 MIT License. Free to use, fork, and distribute. Contribution PRs are welcome!

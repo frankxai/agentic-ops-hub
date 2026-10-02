@@ -1,9 +1,0 @@
-{
-  "machine_id": "c940",
-  "hostname": "DESKTOP-1B4ICID",
-  "status": "live",
-  "role": "always-on-backend-content-ops",
-  "telegram_bot": "@lenovostarlightbot",
-  "notes": "C940 live; estate sweep 2026-09-19; free 46.5 GiB; scheduled LLM cron paused (script-only watchdogs running); git bus authoritative.",
-  "at": "2026-09-19T00:43:55+00:00"
-}

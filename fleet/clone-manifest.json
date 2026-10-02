@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-16",
+  "updated": "2026-09-30",
   "owner": "frankxai",
   "control_plane_repo": "agentic-ops",
   "github_user": "frankxai",
@@ -13,7 +13,13 @@
       "os": "Windows",
       "primary_agents": ["hermes", "claude-code", "codex", "opencode"],
       "hermes_profiles": ["default", "sis-starlight", "acos-creator", "frankx-prod", "arcanea-mythic", "agentic-ops", "satellite-brands", "business-sensitive"],
-      "notes": "Control plane. Full clone set. Owns crons, GEO/content, SIS/ACOS, backups orchestration."
+      "notes": "Control plane. Full clone set. Owns crons, GEO/content, SIS/ACOS, backups orchestration.",
+      "liveness": {
+        "status": "active",
+        "cadence_hours": 6,
+        "max_age_hours": 24,
+        "writer": "Hermes no-agent cron fleet-swarm-pulse (AppData/Local/hermes/scripts/fleet_pulse.py)"
+      }
     },
     "yoga-book": {
       "id": "yoga-book",
@@ -22,7 +28,15 @@
       "os": "Windows",
       "primary_agents": ["codex", "antigravity", "claude-code", "hermes-lite"],
       "hermes_profiles": ["default"],
-      "notes": "Frontend burst engine. Thin Hermes. Lane-split shared repos only."
+      "notes": "Frontend burst engine. Thin Hermes. Lane-split shared repos only.",
+      "liveness": {
+        "status": "retired",
+        "retired_at": "2026-09-19T00:43:55+00:00",
+        "cadence_hours": 6,
+        "max_age_hours": 24,
+        "writer": "python scripts/fleet_bus.py heartbeat --publish",
+        "notes": "No self-heartbeat since 2026-08-16; retired in #70. To rejoin, set status active and have the Book publish its own pulse."
+      }
     },
     "future": {
       "id": "future",
