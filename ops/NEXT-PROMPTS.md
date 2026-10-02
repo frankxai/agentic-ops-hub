@@ -27,9 +27,38 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT Media Studio source/rights reconciliation in existing draft487:
+CURRENT Next.js critical advisory patch, draft504/issue503:
+Source e2da61cd71e8b4a772682237a3f9e75ca25c4777, mainbaseb86549cd04562471a677301e5c095cd6f093919e.
+App worktree arcanea-source-consolidation-20261001 is now on
+agent/codex/arcanea-next-security-20261002, clean/pushed. Retained487/5a2b22af
+is safely committed on its own branch. Four files update Next16.3.5 to16.3.6,
+root/web/override and11Next/env/SWC snapshots plus consistent peer references.
+Complete parsed graph1,850snapshots unchanged outside upgrade; React19.3.0 same.
+Registry20raw URL/time/HTTP200/hash/integrity receipts preserved, issue503 has hashes.
+NativeCI37057006268 exacthead frozenInstall/Lint/TypeScript/Build/CIStatus PASS;
+build log Next16.3.6. ApplicableLinux artifacts only; optional otherplatforms untested.
+Reviewchain fullfourfileb86 qualifiedPASS, finalruntimeparagraph e2 PASS;
+lead binds Git/context/hash and unchanged3dependencyblobs. Not wholeapp/release.
+Final main diffSHA7dd64601; fullreview diffcafa9f50/bundle3cb6fba8;
+runtimecorrection diffbd72d481/bundle71dc2ff7. Threecalls$0.7364702list,
+allterminal/tools0/MCPempty. Originalfailures preserved; no gate disabled.
+Vercel e2 finalCANCELED/ignore despite statusSUCCESS; initial2a9988f4 READY/OGGET200.
+No exactfinal or production/deployedversion/visual/exploit claim. NativeCI compiledversion
+is separate from deployment. Satori appears in advisory references, not description;
+zero standalone lock names does not establish no vendoredcode. Preserve qualifications.
+NEXT: no merge without namedmerge504 under408, then exactreviewedsource release427.
+Consolidation487 must incorporate the patch after merge without restoring16.3.5.
+Safe independent progress: triage remaining32alerts, component rights/forward scene
+request/world eval, unique-source salvage and launcher owner/upstream regressionrepair.
+Do not repeat stale027 launcher patch, install globally or create extra Arcanea repos.
+Preserve499 profile/500 humanacceptance/501 compiler/502 engine285 and sharedowners.
+Licence/Heart/archive/rename/history/customer/demand/revenue/publicready unresolved.
+Both issue503 and hub98 threefile saves; allownedprocessesterminal, releaseownlanes.
+Private next-security-20261002 manifest/source/reviews/registry/CI/failure receipts.
+
+RETAINED Media Studio source/rights reconciliation in existing draft487:
 Appsource5a2b22af8a77fc3544b071e6970c9a4e314c9858, base9e287e47130bef39bf3b8caf7f60b20abd3b0ee3;
-app checkout still agent/codex/arcanea-source-consolidation-20261001, clean/pushed.
+Historical app checkout then: agent/codex/arcanea-source-consolidation-20261001, clean/pushed.
 Read docs/strategy/arcanea-media-rights-evidence-2026-10-02.md and its101fileJSON.
 Studioedaf7aff preserved clean; fork6f9cdee root notice variant scanempty,
 packages/studio metadataMIT. Upstream rootMIT addition1ff36675 June12/committerUTC,

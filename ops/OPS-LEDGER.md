@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea Next.js critical patch verified, draft504 (Codex)
+
+- [Draft504](https://github.com/frankxai/arcanea-ai-app/pull/504), final source `e2da61cd71e8b4a772682237a3f9e75ca25c4777` on mainbaseb86549c: four files update three Next pins and eleven Next/env/SWC snapshots to16.3.6; complete YAML2.9.1 comparison preserves1,850snapshots/React19.3.0/unrelated graph. Twenty refreshed registry URL/time/hash/integrity receipts retained; targeted metadata edit, no local install.
+- [Exact-head native CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/37057006268) passes frozen Install/Lint/TypeScript/Build/CI Status; build reports16.3.6. Full four-file b86e068a qualified PASS plus final two-line e2da61cd runtime-record PASS; lead verifies unchanged dependency blobs and bindings. Linux-only artifact scope, raw registry/full graph lead verification and source-text reviewer limits remain. Three calls$0.7364702list, all terminal/tools0; earlier failed/prep/verifier/native formatting attempts preserved.
+- Vercel final statusSUCCESS maps to CANCELED/ignored docs build, not final deployed proof. Initial2a9988f4 preview READY, existing OG GET200; connector binary is lossy text, no visual/exploit/production claim. Advisory description is silent on Satori but references link it; zero standalone graph names do not exclude vendoring.
+- [503 receipt](https://github.com/frankxai/arcanea-ai-app/issues/503#issuecomment-5960499718) and three hub files saved; thirty-two other alerts and full creator/distribution/rights/community/revenue work open. One public app/canon in place; retain487/5a2b22af and499/500/501/502 plus shared owners. #408 named merge/#427 source-bound release gates, licence/Heart/creative/engine decisions remain. App current branch next-security, clean/pushed; no merge/deploy/archive/install/new repo/worktree. Full goal active.
+
 ## 2026-10-02: Arcanea Media Studio root licence evidence updated (Codex)
 
 - [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `5a2b22af8a77fc3544b071e6970c9a4e314c9858`: four-document comparison of Studioedaf7aff/fork6f9cdee/observedfirst-rootMIT1ff36675/currentebebc51. Actual LICENSE additionJune12/committerUTC, blob84757c5a/sha17cd2323; historical root scan empty but component metadataMIT. Current no-root-licence assertion contradicted; dependency/redistribution hold unlifted, no rights/ruling/integration selection.
