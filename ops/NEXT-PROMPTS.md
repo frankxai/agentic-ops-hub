@@ -27,7 +27,41 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT World SDK review reconciled in draft499:
+CURRENT creator continuity proof in draft500:
+Source 328b95d30a4bfcad0bbe27a86ec234e9af7b9f42; branch agent/codex/arcanea-creator-continuity-proof-20261002
+is now checked out in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001,
+clean and pushed. Do not assume the SDK branch is current. Draft500 has eleven
+proof files relative to unmerged487/fcad; main-targeted CI includes that parent.
+After487 lands, rebase and reverify; neither draft has merge authorization.
+Read app planning-with-files/CURRENT_STATE_2026-10-02_CREATOR_CONTINUITY_PROOF.md
+and docs/research/benchmarks/2026-10-02_continuity-proof.md at this revision.
+Actual complete A3/B manuscripts and source patches are in the adjacent proof folder.
+A3 has three local repairs and retains Maret date/mother memory; human disposition
+pending. Frank said "u check and suggest": lead recommends two clear temporal
+edits, optional casualty wording, maternal link without new newborn biography and
+original visit date pending a worked origin. Reconcile five REVISE findings:
+normalized/frozen baseline and fence-gap wording, consistent author-question lists,
+day-origin/reflection table, optional casualty reason, explicit Git-only patch support.
+Exact-head independent review REVISE; no sign-off. Native CI:
+https://github.com/frankxai/arcanea-ai-app/actions/runs/37010636073
+Patch checks/in-memory inverse and stale refusal/native AuthorOS export-prose pass.
+Public baseline response JSON recipe yields962 whitespace tokens; private original
+prompt/response hashes are runner assertions. Shared kernel, different lead context,
+unequal caps and A-only unblinded review mean no skill/model/agent-count winner.
+All six proof attempts terminal; reported $4.310266 list, not invoice/full-goal cost.
+Prior REVISE and incorrect diff-hash attempt remain preserved. No full20-task,
+1/3/5-cell, human acceptance, EPUB/PDF or release proof. NEXT: author assessment
+of these concrete outputs; keep #282 and full goal open. #280 requires release choice.
+Retained487/fcad cleanup review batches PASS (all298 removals/103 objects/38 equal
+survivors), CI37003006507 passes. That prior hub save was initially held and is
+now captured in this session. Cleanup cost$10.505852 is separate from proof cost.
+Four candidates/zero ready. Launcher root/plugin/install/donor/rights/salvage work
+remains open. Shared AuthorOS/World Repo/SIS/runtime/media stay with their owners.
+Private receipts: creator-continuity-proof-20261002 and doc-coauthoring-attribution-20261002
+under C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/.
+Preserve older prompts and every unfinished draft. No owned servers/watchers remain.
+
+RETAINED World SDK review reconciled in draft499:
 Source 3c82b615f1e3645d70f5dfd0a187f2d2269d67b3; branch agent/codex/arcanea-world-sdk-safety-20261002
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 Local/native SDK70/70, native quick632/632, frozen Install/all4 checks pass:

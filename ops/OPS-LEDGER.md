@@ -4,6 +4,14 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea actual continuity proposal, draft500 (Codex)
+
+- [Draft500](https://github.com/frankxai/arcanea-ai-app/pull/500), `328b95d30a4bfcad0bbe27a86ec234e9af7b9f42`: complete two-chapter three-edit proposal and unchanged baseline reading output; originals/canon unchanged, human disposition pending.
+- Exact-source review REVISE, five findings open, no sign-off; [native CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/37010636073) passes frozen Install/all four required checks. Patch checks, in-memory inverse/stale recovery and AuthorOS Markdown export/prose verified. No crash-safe disk, EPUB/PDF or release acceptance.
+- Six proof attempts report $4.310266 list; all terminal/tools off. Earlier REVISE and wrong-hash binding attempt retained. Unequal contexts/caps, unblinded refinement, private receipt limits and public962-word serialization disclosed. No benchmark winner/full20-task completion.
+- Retained487/fcad cleanup reviews PASS for all298 removals/103 objects/38 identical survivors; CI37003006507 passes, four cleanup attempts $10.505852 separately. Retained499/3c82 SDK70/native/review PASS with profile-owner hold. Four skill candidates/zero ready.
+- Frank requested lead judgment, not acceptance. Recommend two clear temporal edits, optional casualty wording, maternal link without new newborn biography and original visit date pending worked origin. Reconcile five review findings before sign-off. Issue282/276 and hub98 records saved after foreign lane cleared. Current checkout is creator-proof branch; SDK/consolidation branches preserved. Full goal active.
+
 ## 2026-10-02: Queen foundation and hardening on main; activation pending (Codex)
 
 - Frank explicitly requested continuing end-to-end production build and main integration. [PR135](https://github.com/frankxai/agentic-ops/pull/135) merged as `7d3424916a7cb1794cd045244fd951c5b43199cd`, after independent full exact-head APPROVE, 47 tests and passing CI. [PR138](https://github.com/frankxai/agentic-ops/pull/138) merged as `7585db643af86ca404e397489355e3c767f89f1b`, after independent final hardening APPROVE, 52 tests and passing CI. Both merges used the existing cross-harness gate with matching heads.
