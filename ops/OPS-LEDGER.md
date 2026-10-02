@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02 - Command Center development workflow
+
+- [Command Center PR 43](https://github.com/frankxai/starlight-command-center/pull/43) merged as main `0b38a18`, matching the reviewed `7c91714` source tree. Adds the five-stage workflow to the existing Tool Plane, with a private, bounded, atomic manual capture bridge and preserved writer ownership. Primary/older branches and existing work remain intact. [Session evidence](sessions/2026-10-02.md).
+- Nineteen focused tests passed locally. All five PR checks passed, including the 302-test suite, typecheck, patched production build, full application screenshots and dedicated responsive browser journey. Final phone/tablet/desktop/error screenshots were inspected; independent source/dependency review PASS. All three post-merge default-branch workflows also completed successfully; local deployed-version readback is pending and port 4321 remains closed.
+- Next.js source/lock now pin 16.3.8 for the two critical advisories found in release triage; GitHub marked alerts 24 and 25 fixed on main. Lockfile-only update downloaded/added no packages. Local installed Next is still 16.2.10; do not claim that installation is patched. Disk is 13.0% free, one bounded interactive workload admitted; no new worktree/dependency install/local heavy server.
+- Startup PR 76 is ready with normal auto-merge awaiting its required GitHub approval. Discovery PR 81 is ready and remains stacked on it. No bypass or broad profile activation. Feature is tracked on [Command Center issue 23](https://github.com/frankxai/starlight-command-center/issues/23), wider dependency triage on issue 18, and startup follow-ups on starlight-agent-config issue 46.
+
 ## 2026-10-01 - development capability workflow
 
 - Added five bounded development profiles, a shared capability-loading guide, and read-only discovery through the existing installer. [Product draft PR 81](https://github.com/frankxai/starlight-agent-config/pull/81), commit `75b928a`, is stacked on startup PR 76. Neither is merged; the canonical primary guide pointer remains unresolved until source integration.
