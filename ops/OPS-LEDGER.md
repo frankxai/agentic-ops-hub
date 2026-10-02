@@ -2,7 +2,15 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (Queen operations pilot, budget, workflow audit and review corrections; earlier sweeps retained) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-02: Queen foundation and hardening on main; activation pending (Codex)
+
+- Frank explicitly requested continuing end-to-end production build and main integration. [PR135](https://github.com/frankxai/agentic-ops/pull/135) merged as `7d3424916a7cb1794cd045244fd951c5b43199cd`, after independent full exact-head APPROVE, 47 tests and passing CI. [PR138](https://github.com/frankxai/agentic-ops/pull/138) merged as `7585db643af86ca404e397489355e3c767f89f1b`, after independent final hardening APPROVE, 52 tests and passing CI. Both merges used the existing cross-harness gate with matching heads.
+- Main now requires private absolute projection state outside all Git checkouts, rejects ancestor locations, blocks authenticated redirects, holds malformed/uncertain Slack responses and caps observation TTLs at 300 seconds. The redirect regression drives the actual publish POST through loopback HTTP302 and confirms no redirected request.
+- Production observation: existing n8n health endpoint and Hermes public root return HTTP200. Railway reports successful existing deployments. These establish reachability/deployment metadata, not live Queen work. The existing n8n management key returns HTTP401; Chrome is unavailable to this session. No secrets were printed, replaced or minted.
+- Status is MERGED_NOT_LIVE. [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open for valid management access, validated n8n corrections, approved Queen app/ingress, supervisor/ACL and billing evidence, then one real issue-bound task round trip. The EUR100/month subscription-first pilot stays held. No new service, paid session, recurring schedule, install or worktree was started.
+- Receipt and current pickup: `ops/sessions/2026-10-02.md` and `ops/NEXT-PROMPTS.md`. Earlier unfinished prompts remain intact.
 
 ## 2026-10-01: Queen subscription-first operations pilot (Codex)
 
