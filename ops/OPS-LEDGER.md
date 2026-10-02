@@ -28,6 +28,18 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea canonical skill-root cleanup, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `0e20b3b42a2f5cb81617c8f9d6310e9a270746c5`:
+  nineteen unlisted package copies removed; all have identical retained app sources.
+  Root inventory4/4 unique/no duplicates, candidate bytes/passports unchanged/zero ready.
+- Local15 and exact-source CI36974853518/all4 checks pass. Native package11/audit4/
+  consumer14/quick632; source/evidence retention and enabled secret hook pass.
+- Cumulative279-removal/seven-document packet prepared, review not invoked:
+  PP HOLD5127MiB/6144,32 runtimes/12. Rights/creator/plugin/release work remains open.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5946945912) and hub98 save current pickup after foreign hub
+  lane released. Other fronts, earlier drafts/private patch and #408/#427 retained.
+
 ## 2026-10-02: Arcanea restricted document-skill subtraction, draft487 (Codex)
 
 - [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `794e83bb7a2e229c08a25faa980436196879c7e8`:

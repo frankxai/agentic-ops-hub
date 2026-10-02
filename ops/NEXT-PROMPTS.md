@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT restricted import subtraction in existing draft487:
+CURRENT canonical-root cleanup in existing draft487:
+Source0e20b3b42a2f5cb81617c8f9d6310e9a270746c5, branch agent/codex/arcanea-source-consolidation-20261001
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+Removed19 unlisted single-file package copies; every body has an identical retained
+app source. Root inventory4 named/4 unique/no duplicates, exact catalog match.
+All four instructions/examples/passports unchanged; four candidates/zero ready.
+Historical donor evidence preserved; remediation object pins removed/retained paths,
+Git blobs/hashes. No active direct-path consumers found beyond historical evidence.
+Local15 pass, exact-source CI36974853518 SUCCESS/all4 required checks; native
+package11/audit4/consumer14/quick632 pass. Read source task and October2 session plus
+276 receipt https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5946945912
+for source/limits. Private full cumulative review packet (279 removals/7 full edited
+documents, basea20c06d43a8cc6f448076d15f9e13442660bacbb):
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/canonical-root-cleanup-20261002/
+Review prepared, not invoked: PP HOLD5127MiB/required6144,32runtimes/12; no PID/cost.
+Hub foreign lane resolved before three-file save; no override/foreign changes.
+NEXT: independent full cumulative cleanup review only after fresh admission;
+reconcile findings, then canonical donor/plugin self-contained installation and
+genuine creator acceptance. Other roots/root plugin/installed donors, retained story
+and specialty/development jobs and shared owners remain. No rights clearance,
+working-set links, licence/Heart choice, canon change, archive/history rewrite,
+merge or release. Preserve all earlier candidates/private reader patch below.
+
+RETAINED restricted import subtraction in existing draft487:
 Source794e83bb7a2e229c08a25faa980436196879c7e8, branch agent/codex/arcanea-source-consolidation-20261001
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 Removed8 docx/pdf/pptx/xlsx trees including external duplicates,260files/8index rows.
