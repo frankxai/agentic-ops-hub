@@ -28,6 +28,215 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea SDK review reconciliation and proof-profile hold, draft499 (Codex)
+
+- SDK499 source `3c82b615f1e3645d70f5dfd0a187f2d2269d67b3`: local/native70 and quick632 pass; [CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/36995845230) frozen Install/all4 checks pass. Exact-source independent review PASS for bounded repair, not release.
+- Earlier REVISE reproduced with six red tests; fence privacy, Git failure cleanup/index preservation, environment guards and creative-only enrichment repaired. Complete25/five/two/full-diff review; all failed receipts retained. Provider-list reported total $7.841367; first requested cap was exceeded with no verdict.
+- Versioned breaking declared-public hash includes game. All claim adapters/writes blocked pending existing-owner proof-profile acceptance; local tagged computeProof only. Fullv1.1/promotion/graph/creator/release remain open.
+- Both saves: [283](https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5950728855), [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5950729789) and hub98 current pickup. Full goal, prior sources/shared owners/408/427 preserved; no license/Heart choice or archive/rename/history/merge/release action. No persistent session worker/reviewer.
+
+## 2026-10-02: Arcanea SDK file/source/Git boundary, draft499 (Codex)
+
+- [Draft499](https://github.com/frankxai/arcanea-ai-app/pull/499), source `01b711c0350dbb61bb7d3951499851c0363b9e02`:
+  contained writes/locked guards, declared hash/index selection, private candidates
+  and exact Git commits with surfaced failures; stable-tree/sole-writer limits remain.
+- Initial34 red; local/nativeSDK62 and quick632 pass. [Current CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/36990941601)
+  frozen Install/all4 required checks pass. Initial36990060684 failed package format;
+  semantic-preserving correction and all earlier failed/cancelled receipts retained.
+- Complete24-file/6-context packet; review uninvoked under HOLD5417/6144MiB,
+  32runtimes/12. Fullv1.1, signed promotion, graph/creator/game/release proof open.
+- [283](https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5949505766) and [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5949506259); hub98 current pickup updated.
+  Full goal/prior sources/shared owners/408/427 preserved. No licence/Heart/archive/
+  rename/history/merge/release choice or new repo/install/worktree/persistent worker.
+
+## 2026-10-02: Arcanea SDK publication and rights boundary, draft499 (Codex)
+
+- [Draft499](https://github.com/frankxai/arcanea-ai-app/pull/499), source `1259381d98e6a07093c0265038480681bd7339d8`:
+  memory-to-public-canon APIs blocked; content/royalty defaults and invented
+  proof pointers removed; explicit caller policies retained/model decisions ignored.
+- CI36981919511 exposed same-timestamp memory loss. Two red regressions preceded
+  unique exclusive writes/timestamp validation. Current local24/nativeSDK24 and
+  CI36983223654/all4 required checks pass. Failed/cancelled attempts retained.
+- Complete11-file/8-context review prepared; not invoked under last PP HOLD
+  5232/6144MiB,32runtimes/12. Other SDK boundaries and signed human promotion
+  remain on283; no rights/creator/game/release approval. Source4877400659 retained.
+- [Issue283 receipt](https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5948168683) and [program276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5948197283); hub98 pickup
+  updated after the foreign lease cleared. Shared owners/prior drafts/#408/#427
+  retained. Full goal active; no new repo/install/worktree or persistent worker.
+
+## 2026-10-02: Arcanea doc-coauthoring attribution and deduplication, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `7400659ef1857172797adccbdc3a9889da927a7d`:
+  external duplicate/index row removed; retained body unchanged, upstream note added.
+  Working-set92 recognized unique/zero duplicates;137 index rows preserved/38 names open.
+- Exact upstream comparison: added version line only; import pin and applicable
+  licence grant remain unresolved. Historical metadata preserved, no sibling licence added.
+- Local15 and CI36978047054/all4 checks pass; native package11/audit4/consumer14/
+  quick632. Cumulative298-deletion/eight-document review prepared but not invoked:
+  PP HOLD5505/6144MiB,32runtimes/12. Four candidates/zero ready, rights/release open.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5947389736) and hub98 save current pickup. Other fronts, prior
+  proposals/private patch/shared owners and #408/#427 retained. Full goal active.
+
+## 2026-10-02: Arcanea duplicate OSS working-set root removed, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `24ddaec778c931ce2536986c611f8a5db74ec232`:
+  eighteen identical OSS copies/index rows removed; retained role-based sources unchanged.
+  Working-set duplicate groups19->1,92 recognized unique names preserved; index138.
+- Local15 and exact-source CI36976265975/all4 required checks pass. Native package11/
+  audit4/consumer14/quick632; named-file/retention checks and secret hook pass.
+- Cumulative297-removal/seven-document packet prepared; review not invoked:
+  PP HOLD5537MiB/6144,32 runtimes/12. Remaining doc-coauthoring pair/38 name-review
+  entries, broader rights/plugin/creator/release work open; four candidates/zero ready.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5947145883) and hub98 save current pickup. Earlier drafts/private
+  patch, other fronts/shared owners and #408/#427 retained. Full goal active.
+
+## 2026-10-02: Arcanea canonical skill-root cleanup, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `0e20b3b42a2f5cb81617c8f9d6310e9a270746c5`:
+  nineteen unlisted package copies removed; all have identical retained app sources.
+  Root inventory4/4 unique/no duplicates, candidate bytes/passports unchanged/zero ready.
+- Local15 and exact-source CI36974853518/all4 checks pass. Native package11/audit4/
+  consumer14/quick632; source/evidence retention and enabled secret hook pass.
+- Cumulative279-removal/seven-document packet prepared, review not invoked:
+  PP HOLD5127MiB/6144,32 runtimes/12. Rights/creator/plugin/release work remains open.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5946945912) and hub98 save current pickup after foreign hub
+  lane released. Other fronts, earlier drafts/private patch and #408/#427 retained.
+
+## 2026-10-02: Arcanea restricted document-skill subtraction, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `794e83bb7a2e229c08a25faa980436196879c7e8`:
+  eight restricted import trees/260 files and eight active index rows removed;
+  remaining data and historical rights evidence retained, four candidates/zero ready.
+- Local15 pass after recorded missing-YAML11 failures. Native CI36973493648 SUCCESS,
+  all four checks and package/auditor/consumer job passed; secret hook enabled.
+- Full review packet prepared; invocation held at5315MiB/6144 and32 runtimes/12.
+  No review verdict, cost or release approval. History and broader rights work open.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5946774463) and hub98 save current pickup. Canon/licence/Heart/
+  archive/rename/history/release choices and #408/#427 retained; full goal active.
+
+## 2026-10-02: Arcanea pinned-canon reader repair, private patch (Codex)
+
+- Seven-file private patch against saved reader68456204, SHA256
+  `e8ecb0ccadb281ca8466f362fa20bab98f440c5b2e166070ae4ed9c4028bf220`.
+  Actual Worker verifies immutable app canon/hash, bounds source/deadline, excludes
+  staging and refuses unavailable-source verdicts; no mirror or canon mutation.
+- Native28/byte-exact private fixture application/Gitleaks pass. Explicit table
+  facts only; unstated elements unchecked. Node fixtures are not package/typecheck,
+  CI, Cloudflare, creator or release proof. Review prepared, not invoked: PP HOLD
+  6115 then5972MiB against6144; no PID/cost. Source-owner integration remains open.
+- Fresh05:55UTC live0.5.1 still clears Kaelith/Fire. Product276/278 and existing
+  server6 comments record artifact/limits; hub98 saves current pickup. Private source
+  stays private, all earlier candidates/owners/human gates retained. Full goal active.
+
+## 2026-10-02: Arcanea public MCP entry, draft498 (Codex)
+
+- [Draft498](https://github.com/frankxai/arcanea-ai-app/pull/498), source
+  `5e4b5be8bd58afc9f6832e320b55574a471d8752`: one observed reader catalog across
+  app/docs, correct client setup, public pinned canon, pattern-based tool limits,
+  unsupported generation controls removed and recoverable existing Studio signup.
+- [CI36968084342](https://github.com/frankxai/arcanea-ai-app/actions/runs/36968084342)
+  SUCCESS/all four checks/native20/four Chromium contexts. Artifact11210772113:
+  digest/18 selected source hashes/32 companions verified, six final panels inspected.
+  Fixture signup/clipboard only; no live DB/mail/client registration/AT/customer proof.
+- Full13 baseline independent source review PASS, complete3 correction PASS/no findings.
+  Heading LOW fixed, Kaelith misclassification reconciled. First timeout, actual
+  mobile overflow FAILURE36965201868 and all cancellation handles retained in session.
+  Completed reported list USD0.6308688; timeout cost/billing unknown. Owned PIDs absent.
+- Current-source Vercel CANCELED; no deployment acceptance. Live "Kaelith is of Fire."
+  false clear remains with the server owner; no private extraction. Retain all earlier
+  drafts/403 provenance, zero-ready skills, open human decisions and #408/#427 gates.
+  Full goal active. Issue276 final receipt and hub98 save the current pickup. Next:
+  retained footer one-file review, then server-owner repair and creator/rights proof.
+
+## 2026-10-02: Arcanea footer recovery, draft497 (Codex)
+
+- Source b5bf8e5713c898a6473161e96409022e5feb2366 preserves fresh main740
+  and existing subscribe backend. Pending input/duplicate guard, explicit receipt,
+  retained failures/timeout retry, known400 focus and stable labelled polite status.
+  Reuses compatible493/494 helper. Canon/auth/dependencies unchanged.
+- Local17 pass; full6 source01490 PASS/WARN corrected, full2 d416 PASS/three INFO.
+  Final one-file capture review denied before invocation at RAM2738/floor4096,
+  remains open. Owned completed PIDs absent; reported listUSD0.6038616/billing unknown.
+- Initial CI36958730233 FAILURE retained. Runtime d416 CI36959577948 SUCCESS/all
+  four checks/four Chromium contexts. Artifact11207453223 digest/11 source hashes/
+  20 companions verified, five actually viewed. Saved-mobile tall capture obscured
+  by fixed header; current b5bf captures exposed signup panel without masking.
+  Description-edited CI36960437718 SUCCESS/all four/native17/four contexts;
+  final artifact11207618970 digest/11 source hashes/20 companions verified, six
+  current panel captures viewed unobscured; one-file provider review remains open;
+  preceding source36960276417 cancelled. Keep every actual handle.
+- d416 Vercel CANCELED despite GitHub success; earlier01490 READY unrendered here;
+  b5bf not returned by current project listing. No live DB/mail/customer/real AT/deployment/release proof.
+  Retain496/494/493/487/490/491 and403 owner/audits, zero-ready skills and open
+  decisions. #408 named merge/#427 gates remain. Next: capture review, then public
+  MCP client setup/health/protocol/rights-copy against existing owners. Full goal active.
+
+## 2026-10-02: Arcanea authored homepage, draft496 (Codex)
+
+- Source9a543a23b635d70f840013832073b466b149bbeb reuses403's authored example
+  and main creator/auth concept recovery; owner403 and audits preserved. JSON-LD,
+  canon/backend/auth/tokens unchanged. CSS split and component-terms source link.
+- Initial CI36954812805 FAILURE retained. Corrected source CI36955512616 and
+  description-triggered36956339221 SUCCESS/all four checks. Actual homepage4 and
+  draft3 Chromium contexts pass. Artifact11205667965 digest/15 source hashes/20
+  screenshot companions checked; seven current captures actually inspected.
+- Complete nine-file source review HOLD for then-pending execution; unchanged-source
+  execution reconciliation scoped PASS/two INFO. Stale private hashes clarified;
+  planning-doc finding disproved. Timeout/RAM2771 denial retained, owned PIDs absent.
+  Completed listUSD0.8918736; timeout cost unknown, billing unverified. No own service.
+- Current9a543 preview CANCELED; earlier7c2 READY/protected302. Narrow CI proof, no
+  real AI/storage/creator/rights/release acceptance. Keep487/493/494/490/491 and403,
+  zero-ready skills, licence/Heart/upstream/manuscript/archive/release choices open.
+  #408 named merge/#427 proof remain. Next: footer pending-email/late-success
+  assessment against fresh main with its durable backend; continue worlds/creator,
+  rights/folds/plugin/MCP/community/revenue acceptance. Full goal active.
+
+## 2026-10-02: Arcanea honest plan proposals, draft494 (Codex)
+
+- App494 source `455f815db8352ffb31140694d9a4f9089ff3bc30`, exact main base
+  `e863be8304fdde9f00ba812d7845d66ec52787b9`, presents the existing $0/$12/$39
+  figures and features as unapproved proposals. Removes scarcity/discount/access,
+  unlimited capabilities/counts, local-only hosted privacy and blanket rights
+  claims from page and metadata. Current durable API/shared-list capture retained.
+- Six-file baseline154 review PASS/two LOW/two INFO; full two-file455 correction
+  PASS/two INFO. External opener behavior restored; email edits clear stale save
+  status. Network/storage failures are not mislabelled invalid email; field-specific
+  server400 cue remains shared follow-up. Reviews terminal, PIDs absent; reported
+  list USD0.5481876, billing unverified. Local15 behavior cases and actual React19
+  static markup passed; no interaction/layout/live storage proof.
+- Baseline CI36950210418 SUCCESS/all four/native15. Edited-baseline36950887431
+  completed cancelled after source push. Correction-source36950892525 SUCCESS:
+  all four checks/native15 cases. All three CI handles terminal. Both154/455 previews
+  CANCELED at ignored-build despite GitHub success.
+  No settings/extra deploy/browser/live signup/mail/checkout/production change.
+- Original403 and owner audit intact. Next is its remaining homepage/authored
+  dossier reconciliation. Existing487 already contains proposed README/community/
+  repository metadata; those files remain absent from main. Licence/Heart/launcher
+  upstream/manuscripts/archives, zero-ready skills, rights and wider world/release/
+  community/revenue work remain open. #408 named merge and #427 release gates apply.
+
+## 2026-10-02: Arcanea community signup candidate, draft493 (Codex)
+
+- App493 source `27ad6204f098b2edffd3a8fbb2dc828a1bd5b75e` adapts403's form to
+  main458's durable waitlist API. New registrations retain their source; explicit
+  save receipt, retained email on failure, duplicate guard and bounded timeout.
+  Signup copy describes interest in worlds/stories/releases. Existing overview
+  extracted below500 lines; other community content remains unverified.
+- Source CI36947008589 SUCCESS: all four checks, native15 cases. Complete seven-file
+  baseline REVISE followed by full3/2/2-file scoped corrections PASS; server400
+  validation cue remains LOW. Four tool-free reviews terminal, list USD1.0489434,
+  billing unverified. Two native formatting failures preserved; SHA512-verified
+  pinned formatter proved union-layout cause, disproving the conditional hypothesis.
+- Description-triggered CI36947550476 SUCCESS/all four checks at unchanged27; both source and edited runs terminal.
+  Current27 preview CANCELED at ignored-build. Earlier226 READY initial HTML proved
+  the earlier form/copy, not current browser behavior. Browser admission HOLD;
+  hydration/live Supabase/signup/mail and release remain unproven.
+- Original403/owner/untracked audit retained; homepage/dossier/proposed pricing
+  reconciliation remains next. Licence/Heart/launcher upstream/manuscript/archives
+  and world/rights/plugin/MCP/community/revenue acceptance remain open. App408 named
+  merge required. Prior487/490/491/451/488 and behavioral failures preserved.
+  Full goal active; no new repo/worktree/install, app merge or production change.
+
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
 - Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.
@@ -307,3 +516,501 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+## Arcanea source consolidation, 2026-10-01
+
+Codex task `01a0f74f-8bad-7db1-ab06-fd89b5faec84` remains active. App review branch pushed at `64a6e3859eddeeecf60d1b08e030e75fa89196b0`: committed-source inventory and full repo/skills/plugin/MCP/community/revenue proposal. Two Node tests, formatting and secret scan passed. Proposed curated root is `packages/arcanea-skills/skills`; one public Arcanea integration repo, no mirror/new Arcanea repos. Shared dependency ownership remains until reviewed migration. No license, archive, canon, installed plugin, production or commerce change. Full app CI and independent provider/installed-harness proof remain open. Source/rulings: [program #276 comment](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5931137792). Pickup and remaining decisions: `ops/sessions/2026-10-01.md`, Arcanea prompt in `ops/NEXT-PROMPTS.md`. Do not overwrite the Claude launcher lane; obtain rights/Heart rulings and review source survivors next.
+
+### Creator candidates and installer continuation
+
+App candidate branch now at `b48f6ccf94f276a7df3eb03d48f4bf2119dfda2c`.
+Four creator workflows have pending passports and original examples; zero ready/installable.
+Installer/API use the catalog, preserve support files, refuse overwrites/junctions and bind
+declared evidence to source bytes. Package is private; legacy folders remain for review.
+Eight installer tests, two existing audit tests, four UTF-8 skill validations, formatting and
+staged secret scan pass locally. CI, different-harness sign-off, behavioral evaluation and
+rights decisions remain open. [#276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5931868496).
+Hub lane initially occupied, then cleared and saved here. Launcher missing-origin/owner hold
+persists. Full objective active; next evaluate pinned candidates independently before promotion.
+
+### Skill donor reconciliation
+
+App branch `ecb22a33a3bfb8becd77c5c02966c6122f8c86b9` adds an exact-source decision map:
+122 source entries / 192 file identities, with explicit-reference audit and eleven local
+tests passing. No donor text moved or source retired. Distilled main is UNLICENSED;
+legacy reserved-root/MIT-metadata conflict and the diverged donor fork require review.
+Preserve intentional adapters and story specialty. [#276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5932361060).
+Full goal active; rights, independent eval/review, self-contained installs, app release gates,
+broader salvage and community/revenue proof remain open. Current Arcanea prompt points here.
+
+
+## 2026-10-01 — Arcanea candidate requests and review timeout (Codex)
+
+- App review branch: `95eacd844c194fcd4fc1b456e84306336b8a6dc1`; [issue #276 evidence](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5932730952). Four original requests/rubrics prepared and source hashes verified; zero cases executed.
+- Claude Code requested Sonnet 4.6 but returned no output in 300 seconds. Session-owned invocation terminated; no findings, served-model/cost receipt or sign-off. $3 cap is not spend. Record all attempts; repeat with isolated contexts and hidden rubrics after restoring harness availability.
+- Four internal candidates, zero ready, package private and rights pending. 11 local tests, formatting, hash/status assertions and staged secrets passed; no full app CI, installs, runtime/game proof or release approval. Main ed25729cea changed no skills files; branch unintegrated.
+- Full session appended in `ops/sessions/2026-10-01.md`; current Arcanea prompt refreshed while preserving other fronts. Launcher routing/ownership, donor folding, license/Heart rulings and community/revenue proof remain open. Broad goal active; no production or archive changes.
+
+
+## 2026-10-01 — Arcanea public entry and draft PR (Codex)
+
+- [Draft #487](https://github.com/frankxai/arcanea-ai-app/pull/487), head `3d7494cd0f8f9ca63fc0a61927972820492873ce`: correct README/package source links, add contribution/conduct/security guidance and two issue forms; unignore three root community files. No license/canon/archive/production change; four candidates/zero ready.
+- Three README commands and eight installer tests pass; 18 local links, three YAML files, manifest-only-two-URLs comparison, format/diff and staged secrets pass (21.54 KB, no leaks). Main 4740b4c395 has unrelated MCP/route changes. Maintainer mailbox/form submission/web setup untested.
+- [CI 36873712870](https://github.com/frankxai/arcanea-ai-app/actions/runs/36873712870) confirmed in progress at this head: Install passed, Lint/TypeScript running. Vercel check SUCCESS is preview status. PR draft/BEHIND; Build/Lint/TypeScript/CI Status and independent review remain unverified. Poll the existing run; do not restart because an observation times out.
+- [Issue #276 save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5933161381), session appended and one current Arcanea prompt updated. Private vulnerability reporting disabled; existing metadata contact used, no SLA/settings change. Rights/Heart rulings, launcher ownership/origin, source folds and community/revenue proof remain open.
+
+
+CI follow-up at unchanged app head 3d7494cd0f: Install, Lint and TypeScript passed;
+run 36873712870 remains live with Build 110408801132 in progress. CI Status and
+independent review remain unverified. Vercel check SUCCESS, PR #487 draft/BEHIND.
+Current prompt polls that exact run next; no restart or ready/merge request.
+
+
+Final CI receipt: [run 36873712870](https://github.com/frankxai/arcanea-ai-app/actions/runs/36873712870)
+completed SUCCESS at app 3d7494cd0f. All four required Build/Lint/TypeScript/CI Status
+checks passed, plus Install. Build executed package tests and boundary/asset checks;
+rendered gallery/browser checks were skipped for the draft. Vercel check SUCCESS;
+PR #487 remains draft/BEHIND. [Issue receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5933362241)
+appends this final observation to the earlier phase record. Current prompt now treats
+this run as terminal; no rerun/ready/merge requested. Independent review, rights,
+behavioral evaluation and accepted production/creator proof remain open.
+
+
+## 2026-10-01 — Arcanea creator smoke and launcher pickup (Codex)
+
+- App draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487), head
+  `2ba6309aad2ead8225a8eab8ccf1cad0cdac5d7b`: four isolated outputs exposed
+  source-boundary failures; four instructions/examples refined; one continuity
+  rerun avoids the observed repair failure. Five unedited artifacts/receipts,
+  $0.3390966 reported list equivalent, no billed-spend claim or readiness.
+- Eight Node 22 tests, four skill validations, source/hash/format/secret checks
+  pass. Raw .md evidence caused the prior CI formatting failure; exact .txt
+  storage corrected it. [CI 36884998748](https://github.com/frankxai/arcanea-ai-app/actions/runs/36884998748)
+  completed SUCCESS at this head: all four required checks plus Install. Rendered
+  gallery/browser checks skipped; PR remains draft, zero ready skills.
+- Scoped final-package source review timed out at 180 seconds with zero output;
+  no sign-off/model/cost receipt. Smaller complete scopes next, with independent
+  cases/repeats and authentic creator work. [#276 save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5934864583).
+- Queued private launcher patch now recorded here: 29 mocked tests and read-only
+  apply check pass at 027fe963. Root selects discovery/install, source identity
+  repo/root/sha. Still unapplied: origin unresolved and foreign writer branch.
+  Patch hash/path and prior [issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5933946047)
+  are in the session. No remote guessed, archive, license or production change.
+- Full task active; other refined workflows, rights/Heart decisions, donor folds,
+  plugin/MCP consumers and creator/revenue/release proof remain open. Session
+  appended and only the current Arcanea fenced prompt replaced; other fronts kept.
+
+
+## 2026-10-01 - Arcanea visibility and refined workflow evidence (Codex)
+
+- App draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487), head
+  `5327861370c95748764017dc2e022b67b4abb348`: parsed YAML visibility and explicit
+  CI inclusion of all 11 curated tests; source refinement preserves unknown
+  world cause/recovery. Four internal candidates, zero ready.
+- Media/quest avoid specific earlier findings. World still fails invention
+  labeling at the second refinement. Nine unedited creator outputs, exact
+  source/input/output receipts, $0.6054792 reported list equivalent; no held-out,
+  control, runtime, authentic creator or billed-spend claim.
+- [CI 36898615122](https://github.com/frankxai/arcanea-ai-app/actions/runs/36898615122)
+  completed SUCCESS at source bfd005dadd with required four checks plus Install.
+  Final evidence-only head 5327861370 awaits its own receipt. Local 11 tests,
+  world validation, formatting, staged artifact hashes and secrets pass.
+- Bounded Sonnet catalog review again timed out without output/sign-off;
+  previous review failures and Gemini client rejection retained. Third-party
+  sample confirms local licence files, not original import/resource clearance.
+  Licence/Heart, launcher origin/ownership and broader creator/release work open.
+- [Product issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5936832073), session appended,
+  one Arcanea prompt refreshed after a fresh clear ownership check. Other fronts
+  preserved. No production, archive, licensing or commerce change; full goal active.
+
+
+Final-head receipt: [CI 36899521150](https://github.com/frankxai/arcanea-ai-app/actions/runs/36899521150)
+completed SUCCESS at app `5327861370c95748764017dc2e022b67b4abb348`.
+Install and all four required Build/Lint/TypeScript/CI Status checks passed.
+Build explicitly ran all 11 curated catalog tests, 11 pass, zero fail. Draft
+rendered gallery/browser skips remain; independent review, rights, world
+invention labeling and broader creator/release proof remain open. PR #487 is
+still draft/BEHIND. This supersedes the pending-CI phase above, without erasing it.
+
+
+Verification follow-up: all incoming ledger additions, both complete session
+appends, other current prompts and five main-source blobs are verified in
+3ff8ae3. The earlier assertion assumed incoming ledger additions were append-
+only; main inserted its record earlier. The command sequence continued after
+that assertion failed. Committed content was subsequently checked directly
+against both parents; no records were lost. Future dependent commands in this
+slice stop on a failed subprocess. The sparse checkout lacks the local sync
+script, so its local invocation failed; no local sync pass is claimed. Exact-head
+[hub CI 36901144779](https://github.com/frankxai/agentic-ops-hub/actions/runs/36901144779)
+passed and explicitly reports all four generated targets in sync.
+
+After refreshing the app PR description to its final scope, edited-event
+[CI 36900900930](https://github.com/frankxai/arcanea-ai-app/actions/runs/36900900930)
+completed SUCCESS at unchanged app 5327861370. Install and the four required
+checks pass. The previous same-source successful run remains retained; no
+source, rights, independent-review or readiness claim changed. Hub draft #98
+is merge-clean at the recorded integration head; it remains a draft.
+
+
+## 2026-10-01 - Arcanea public reader entry repair (Codex)
+
+Draft [#490](https://github.com/frankxai/arcanea-ai-app/pull/490), head
+`60fcf333b4f178de0f255b5d8edb057a5ede6d25`, fixes catalog chapter folders,
+reader IDs and chapter/body word counts. Production observed at e863be8304
+advertised AUTHORS_NOTE or numbered IDs that returned Chapter Not Found under
+streaming HTTP 200. The proper reader IDs already returned chapter headings.
+No manuscripts, canon, publication visibility or API permissions changed.
+
+[CI 36906218369](https://github.com/frankxai/arcanea-ai-app/actions/runs/36906218369)
+passed Install plus all four required checks at the exact candidate. Build ran
+seven new fixture tests and six chapter policy/ID checks with native tsx.
+The seven regressions failed before and passed after locally under existing
+Sucrase/Node 22 runtime snapshots. Local tsx/compiler packages are incomplete;
+no install or local typecheck claim. Formatting and secrets pass.
+
+Preview dpl_51h5RXEBj9xjJaN2zNxRYv8ouHXb is READY at the candidate; login
+redirects and connector protected 302 prevented preview-content verification.
+Browser admission HOLD. Independent seven-file Sonnet review timed out after
+120s with zero output, no verdict/model/cost/sign-off. Its owned CLI stopped.
+Rendered and release proof remain open. No merge, archive or production action.
+
+Worktree C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
+now uses agent/codex/arcanea-reader-entry-20261001. Source-consolidation branch
+and draft #487 at 5327861370 remain intact, four internal skills and zero ready,
+with prior CI and nine unedited outputs preserved. Licence/Heart, launcher
+upstream, rights/consumer folds and community/revenue release proof remain open.
+Private runtime/HTTP/review/CI receipts stay in the existing isolated-evaluation
+packet. The full source goal remains active. [Product issue save](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5937916531).
+
+
+## 2026-10-01 - Arcanea guide and package-core review (Codex)
+
+App draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487) is at
+`823c0cf0ca37b69f2a965bb1d84ecd62cf0e25c2`. Existing release guidance now points
+to the public app integration source and folder/commit pins; mirror, dual-push,
+direct-merge and age-only archive directions are withdrawn. Historical milestones
+and extraction references remain. Canon, licensing and deployment settings were
+not changed. The checkout is back on agent/codex/arcanea-source-consolidation-20261001.
+
+[CI 36915277891](https://github.com/frankxai/arcanea-ai-app/actions/runs/36915277891)
+passed Install and Build/Lint/TypeScript/CI Status at that exact head. Source and
+description-edited runs at 411ec427e7 and corrected-guide CI36912589855 at e201
+also passed. A tool-free independent Sonnet
+4.6 review returned PASS on all three guide files at 411ec427e7 with two LOW
+findings. The e201 correction restores code-spanned reading_progress/pb_*
+identifiers and labels historical queue numbers non-authoritative. Its independent
+delta review returned PASS with no findings, relying on the earlier unchanged
+baseline. Formatter and enabled secret checks passed for the source commits.
+After terminal source CI, the PR description was updated to the final review
+scope. That triggered edited-event CI36916204878 at unchanged823; it is a separate
+live check handle. Preserve both receipts and observe that run rather than
+editing the metadata again or starting a new run.
+
+A separate independent review at e201 returned REVISE on the complete seven-file
+package core: README, catalog, API, installer, package metadata, validator and
+tests. The correction aligns the Node floor with the repo's Node22 baseline,
+documents API identity/location exports and accepts both legitimate source-link
+rejection messages. The inferred Windows failure did not reproduce in the local
+baseline; all11 tests pass before/after with existing yaml2.9.0 via NODE_PATH.
+The initial invocation without that dependency failed; frozen CI uses yaml2.9.1.
+The same-user filesystem race is accepted as a documented trusted/stable-source
+and home precondition, not fixed or certified. Installer logic is unchanged.
+The corrected complete package core and delta at823 received independent PASS.
+The scope excludes skill instructions and examples. All four skills remain
+internal candidates with zero ready; review declarations do not authenticate
+rights or approve publication. Nine prior creator outputs and failed invention
+labeling remain in the evaluation record. Earlier zero-output review timeouts
+are retained; successful new requests establish current response availability
+without diagnosing those earlier failures. All owned review CLI processes ended.
+
+Fresh read-only release-control evidence: four strict required checks, zero
+required approving reviews, admin enforcement off, two disabled rulesets and
+ten GitHub environments with no protection rules. Manual deploy flag is false;
+soft lint and the visual resolver's missing source binding remain #427 gaps.
+Vercel's own protection and every promotion path were not verified.
+
+Reader draft [#490](https://github.com/frankxai/arcanea-ai-app/pull/490) remains
+on its separate branch at 60fcf333b4, with all four checks and 13 native tests
+passing. Independent reader review and authenticated rendered proof remain open.
+Frank's manuscript selection for #280 is pending. Licence/Heart, launcher upstream,
+donor rights and folds, creator/community/revenue evidence and release gates remain
+open. No app merge, archive, publication or live configuration change occurred.
+The full goal remains active. This saves the formerly queued hub handover after
+the previous owner released the paths; other fronts are preserved.
+
+
+## 2026-10-01 - Arcanea world status evidence and reader warning correction (Codex)
+
+Skills draft [#487](https://github.com/frankxai/arcanea-ai-app/pull/487) is at
+`0a04c976d66f2f2d12aa895060f94c6c089f635b`. World-build source at 00ec58bf11fce4522b9b3f5097d6f0f4ae9fa53b adds
+local accepted/proposed/open-choice IDs and paragraph or bullet labels. The
+evidence commit preserves three complete new producer outputs and the exact
+independent reviewer result alongside the nine earlier outputs. CI 36920563361
+and description-edited CI 36921686751 passed at this exact final head. The
+evaluated source blobs remain unchanged from 00; the later commit packages evidence.
+
+Independent tool-free Sonnet 4.6 HIGH review returned source PASS, behavior REVISE,
+KEEP_CANDIDATE. Fresh baseline and revised Cinder Orchard outputs both fail; the
+revised known Tideglass output also fails. Failures include unlabeled inventions,
+swapped open-choice IDs, unsupported permanent erasure, alternate unsupported
+causes, and violating an accepted glyph-reading limit. One synthetic paired
+comparison establishes no reliable improvement, held-out result or creator proof.
+All three invocations had distinct sessions/processes. The reviewer mistakenly
+claimed shared sessions; raw wrappers disprove it. The reviewer also missed
+some semantic faults; maker and reviewer assessments are retained separately.
+The LOW source finding about weakened loss-mechanism coverage remains open.
+Four internal candidates, private package, zero ready; rights/release remain open.
+Prior guide/package-core PASS is scoped to those files and does not clear skills.
+
+Reader draft [#490](https://github.com/frankxai/arcanea-ai-app/pull/490) is at
+`768066b53996aec1379a316f9a9e28fae32dce4f` on agent/codex/arcanea-reader-entry-20261001 in the same reused clean
+app worktree. The recovered seven-file review at 60fcf333b4 returned source PASS
+with a WARN: bare BIBLE.md inside chapters remained eligible. Expanded fixtures
+reproduced six of seven series failures and one of six policy failures. Reserving
+only the BIBLE/OUTLINE basenames fixes counts, support-only read links and saga
+support-file loading. Numbered chapter titles remain eligible; existing HTML IDs,
+prologues and numbered API slugs retain their contracts. Seven series and six
+policy tests pass locally using existing Node22.23.2/Sucrase3.35.1; no local
+typecheck or install. CI 36922964255 passed all four required checks at the new
+head. Independent three-file delta review returned PASS with a WARN and two INFO
+findings. The WARN assumes lowercase filename construction on Linux. The actual
+unchanged loader enumerates filenames and compares filenameToSlug(f), which
+lowercases the slug; the Windows/Linux claim is unsupported by that code.
+INFO notes loss of the explicit empty-directory fixture and a duplicate support
+write; these remain disclosed maintenance follow-ups. Both source reviews exclude
+release approval. Manuscripts, publication gates and canon were unchanged.
+Rendered preview QA remains blocked by preview authentication and browser admission;
+the old READY deployment was for60, not proof of this changed source or live repair.
+
+No app merge, archive, licence decision or live configuration change. #408 requires
+Frank's named merge instruction; #427 release/control gaps remain open. Manuscript
+selection for #280, licence/Heart 417 or 639, launcher upstream/ownership, donor rights
+and folds, working-set/plugin consumers, actual creator/community/revenue proof and
+release remain pending. All owned review CLIs ended. Resource admission bounded
+this slice to sequential review, small tests and text edits; no worktree/install/build
+fanout. Full objective remains active. Other hub fronts and historical attempts remain.
+
+
+## 2026-10-01 - Arcanea preview source binding proposal (Codex)
+
+Draft [#491](https://github.com/frankxai/arcanea-ai-app/pull/491) is at `a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962`,
+base e863be8304fdde9f00ba812d7845d66ec52787b9, branch
+agent/codex/arcanea-preview-binding-20261001 in the reused owned app worktree.
+The original visual resolver was executed with a ready bot-comment fixture and
+accepted an older preview for a newer source without any metadata lookup.
+The five-file correction selects the exact GitHub deployment SHA/repository/Preview
+environment, requires the latest trusted Vercel bot success, restricts immutable
+Arcanea hosts and manual overrides, and rechecks the same deployment and current
+PR after capture. The capture manifest/report now identify the source/deployment;
+an invalid binding blocks the final verdict. A full history page blocks ambiguity;
+missing/pending metadata has a bounded wait, and terminal failure does not fall
+back to older success. Existing QA admission and production settings are unchanged.
+
+All 52 local checks passed, including 26 new helper/actual-workflow fixtures and 26
+existing excellence-review checks. Both YAML workflows parse; Node22 syntax,
+formatting and enabled secrets pass. Exact-head [CI 36926343395](https://github.com/frankxai/arcanea-ai-app/actions/runs/36926343395)
+passed Install and all four required checks. A complete five-file tool-free
+Sonnet 4.6 HIGH review returned scoped PASS with three LOW and one INFO findings:
+terminal failure requires a new workflow run, empty-history return is implicit,
+fixed host format needs coordinated config/test maintenance, and YAML fixture
+extraction requires coordinated step-name/indent changes. No code change is
+required for those notes; all findings/raw output remain in the private packet.
+The verification paragraph was refreshed once after terminal source CI, triggering
+edited-event CI36927439029 at unchanged source. Its observed state is
+in_progress / pending. Re-poll that same handle;
+do not restart or edit metadata again for check activity.
+The 264-second review ended normally; reported list-equivalent cost $0.4191144 is
+not a billing receipt. No review tools, parallel agents or local browser/build ran.
+
+Live read-only GitHub metadata accepted older reader 60fcf333b4/deployment 6791973953
+and rejected newer 768066b539 with no successful deployment. Independent Vercel
+metadata identifies older dpl_51h5RXEBj9xjJaN2zNxRYv8ouHXb READY at 60 and newer
+dpl_FPjeCQbqi4YFKqu2DeZxSTPdwYdt CANCELED at 768. The metadata proof intentionally
+does not assert current-PR eligibility, rendered behavior or a live reader repair.
+GitHub deployment records are the new authority; project configuration and actual
+Vercel build contents are not independently authenticated by this resolver.
+
+#427 remains open for every production promotion path, mandatory current checks,
+canon/human release enforcement, authenticated desktop/mobile/keyboard/recovery
+journey and source/domain/rollback proof. #451 remains the separate ignored-build
+candidate; #488 workflow admission changes are untouched. No app merge, mark-ready,
+capture, credential/settings change or production action. #408 still requires
+Frank's named merge instruction. Skills #487 at 0a04c976d6 and reader #490 at 768
+retain their evidence and branches; world behavior still REVISE, zero skills ready.
+Licence/Heart, manuscript selection, launcher upstream/ownership, rights/folds,
+consumers and creator/community/revenue acceptance remain open. Full goal active.
+All owned review processes terminal; no session-owned server/watcher remains.
+
+
+### 21:23 UTC - Preview binding final source checks
+
+Draft #491 remains at `a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962`. Source CI36926343395 and the separate
+description-edited CI36927439029 both completed SUCCESS, including all four
+required checks. The latter was observed on its original live handle, without
+a restart or further app metadata edit. Scoped independent source PASS and
+52 local checks remain bound to the same source. No live capture, release or
+merge approval follows. The earlier in-progress snapshot is now superseded.
+Current pickup also restores the review sentence split by the inserted check
+handle; other fronts and historical records are preserved. Full goal active.
+
+### 21:53 UTC - Arcanea imported skill notice evidence
+
+Product issue #276; existing app draft #487 at `21850c2da160e3319c582b6973e14e2be8368a04`, parent0a04c976.
+The existing auditor now recognizes UPSTREAM-LICENSE and records notice
+blob/SHA-256 identities with terms/applicability unreviewed. Four Node22 fixtures
+pass locally and actually ran in source CI36930667126. Install and all four
+required checks completed SUCCESS at this exact source. Formatting, YAML/wiring,
+ten local receipt hashes, append preservation and enabled secret checks passed.
+The omission was reproduced with the old auditor at base: apple-design had no
+ancestor notice paths and no notice hashes.
+
+Selected receipt: ten skill/notice pairs, unchanged between parent and main e863.
+Eight document-skill copies preserve restrictive Anthropic terms (docx/pdf/pptx/xlsx
+in .claude/skills and external). Algorithmic-art has Apache2.0 with a placeholder
+copyright appendix; apple-design preserves Emil Kowalski's MIT notice. Nine notices
+and zero skill bodies match pinned current upstream. This is comparison evidence,
+not import-revision identification, contractual permission or resource clearance.
+Development copies and notices unchanged; four internal candidates, zero ready.
+See app docs/strategy/arcanea-skill-rights-evidence-2026-10-01.{md,json}.
+
+Sequential tool-free Sonnet4.6 HIGH six-file/delta review PASS/three LOW/one INFO:
+global notice evidence when root-scoping skills; shared CI-step diagnostics;
+receipt-added commit binding recorded externally rather than self-referential;
+public-copy locations need citation. Review did not run tests or fetch upstream.
+No rights, whole-PR, creator-behavior or release certification. CLI2.1.287 PID49204
+terminal after about162s; reported list equivalent $0.3718584, not verified billed
+spend. Raw/source/process evidence and all optional findings retained privately.
+
+Next: trace imports/resources, audit document-skill consumers before reviewed
+current-tree remediation, correct unsupported blanket MIT claims at skills/page.tsx
+and v3/v3-below-fold.tsx while preserving scoped licences. No public-copy change
+in this slice. Canon remains in place. Licence/Heart, launcher origin/ownership,
+folds/consumers, manuscript, archives, creator/community/revenue proof and named
+merge/release approvals remain open. Preserve reader #490 and preview #491 candidates
+and their limits. No history rewrite or publishing; full goal active. Owned review
+process terminal; no session-owned server/watcher remains. Save hub #98 and product
+issue #276; source evidence does not replace Frank's #408 merge decision.
+
+### 22:35 UTC - Public canonical skill consumer and source terms
+
+App #276 / existing draft #487 source `b37c2a6dcb43a90a9872826b47d0b79dc8178b2c`; parent implementation529e4c29,
+formatted baseline016db8c281 and corrected root/category/type delta retained.
+The /skills reader now shares the curated package's ready/evidence/content gate;
+candidates and undeclared folders are absent, stale/malformed evidence fails,
+source/guidance links require a full SHA. Both monorepo and apps/web default roots
+work; absent/duplicate catalogs fail. Unsupported copy/npx commands are replaced
+with same-revision guidance. No installed-harness or rights clearance follows.
+
+Public /skills has a derived ready count, per-skill terms, honest empty state and
+app source link. Homepage blanket MIT/static licence and uncurated skill badges
+are removed; remaining counters are labelled registry listings. Its featured app
+and app registry visibility/public URL now match public GitHub metadata; diverged
+arcanea retains a salvage-review description. No archive or shared-owner change.
+All four internal candidates remain zero ready; source/public copy is a proposal.
+
+Source CI36934422363 and description-edited CI36935138855 both completed SUCCESS
+at unchanged b37 source, Install plus all four required checks. Native CI actually
+ran seven consumer and eleven package cases. Baseline016 CI36933777241 also passed.
+Local seven consumer cases pass with existing Sucrase3.35.1 type erasure and
+process-scoped YAML2.9.0; not a local native-tsx/typecheck claim. Initial old-reader
+comparison passed1/failed4; new explicit five cases passed. Maker then found the
+default-root assumption; new root and missing/duplicate cases plus category
+forwarding prove seven. Syntax, formatting, staged hashes and secret hooks passed.
+Task append formatting was corrected in a separate commit before review/push.
+
+Sequential tool-free Sonnet4.6 HIGH complete twelve-file baseline source/copy
+review PASS/two LOW/two INFO; four-file corrected delta PASS/one LOW/one INFO.
+Both baseline LOWs are fixed. Literal alias-path dedup remains optional LOW;
+zero-ready assertion promotion maintenance remains INFO. Deployed trace inspection
+remains open. Reviews did not execute tests, inspect browsers or certify whole PR,
+rights, creator reliability or installed users. Baseline/delta reported list
+equivalents $0.6636084/$0.2245734, not verified billing. CLI2.1.287 owned PIDs35696
+and54344 terminal; full raw/source/input/process receipts preserved privately.
+
+Vercel b37 preview dpl_HoPFWbnZ28aBiQp9jVRWGTrVGsBC, URL
+arcanea-ai-pmvtbayqw-starlight-intelligence.vercel.app, is CANCELED at ignored-build
+despite GitHub success status. /skills trace includes follow official Next docs,
+but deployed bundle contents/rendered behavior are unverified. Existing other-owner
+#451 is retained; no live Vercel setting, bypass capture or extra deploy was invoked.
+
+Next: inspect actual trace artifacts and a source-matched preview when available;
+audit import/resources and development consumers before rights remediation/folds.
+The bounded exact-path reference read found only document-pack self references and
+our rights receipt in .arcanea/.claude/.github/apps/packages/scripts/docs. This does
+not prove absence of dynamic harness consumers. Other public claims need review.
+Keep canon, existing shared owners, world behavioral failures, reader #490 and
+preview binding #491 with their scoped receipts and unresolved rendered limits.
+Licence/Heart, launcher ownership, donor/plugin/MCP folds, manuscript/archives,
+creator/community/revenue acceptance and Frank's named #408 merge remain open.
+No new repo, history rewrite, home install, merge, production or commerce change.
+Save hub #98 and product #276. Full goal active; owned reviews are terminal and no
+session-owned server/watcher remains. Both source/edited CI handles are terminal.
+
+### Public skill example-link follow-up
+
+At app b37c2a6dcb43a90a9872826b47d0b79dc8178b2c, all four candidate SKILL.md files
+link references/example.md. The detail page renders readmeContent with default
+ReactMarkdown and no resource-link resolver. Relative links therefore need a
+verified mapping to the validated source folder and full commit before any entry
+is promoted to ready. This is a source observation, not rendered acceptance or a
+currently reachable ready-skill regression; the catalog still has zero ready entries.
+Next bounded action: add and test pinned relative-resource links in the existing
+consumer, preserving external links and rejecting traversal; keep actual deployed
+trace/source-matched preview acceptance open. App source and readiness unchanged.
+
+### 23:28 UTC - Pinned skill resource renderer and next world-first pickup
+
+App #276 / existing draft #487 current source
+`a20c06d43a8cc6f448076d15f9e13442660bacbb`, initial resource implementation2c63.
+Relative Markdown examples resolve from the validated file inventory to their own
+skill folder at the full source commit. Inline/reference links, query/fragments,
+encoded filenames and pinned raw local-image URLs work. Rejected links/images
+retain text/alt without clickable or broken elements. External HTTP(S) images
+retain normal Markdown behavior; their remote bytes are not pinned or validated.
+Four internal candidates, zero ready; no canon/content/rights/eval promotion.
+
+Initial example regression: seven pass/one fail. Rejected-image text fallback:
+thirteen pass/one fail. Fourteen consumer cases pass locally with existing
+Node22/Sucrase type erasure and process-scoped dependencies. Native source
+CI36939598342 actually ran fourteen consumer and eleven package cases and passed
+Install/all four required checks. Description-edited CI36940326792 also completed
+SUCCESS at unchangeda20. Initial2c63 CI36937913288 passed with native12/11 cases.
+No app metadata edit remains pending. Formatting, staged hashes and enabled secret
+hooks passed; static Markdown HTML is not a deployed/browser/image-download claim.
+
+Sequential tool-free Sonnet4.6 HIGH complete five-file review: first owned PID56100
+reached its configured300s deadline without output/verdict, exact CLI terminated.
+One streaming retry PID3172 completed REVISE/three LOW. Two findings covered the
+same missing-image fallback; the other asked for explicit external-image behavior.
+Actual React19 static output omitted rejected src while retaining img/alt; the
+review's inferred empty-src HTTP GET is not verified. Three-file correction review
+PID47936 at currenta20 returned PASS/no findings, all three prior findings resolved.
+Review scopes remain source-only; whole-PR/rights/creator/release acceptance open.
+Timeout cost unknown; retries reported list equivalents $0.3543174/$0.228603,
+not verified billing. All attempt/source/output/process/reconciliation receipts
+remain private. First/retry source packets match; CRLF/LF prompt transport digests
+are recorded separately. All three owned CLI processes/children are absent.
+
+Vercel current preview dpl_3H6nfDZ18H8XS6MQYxRW4i8BCzuY at a20 is CANCELED at
+ignored-build, URL arcanea-ai-myv8kxc63-starlight-intelligence.vercel.app.
+Initial2c63 preview dpl_38NrHhmPkKs7PJ6raPTBkjCRTqCM is also CANCELED. GitHub
+success status does not establish deployed trace or source-matched rendering.
+No extra deploy, settings change or bypass capture. #451/#488 owners retained.
+
+Next world-first pickup: reconcile existing draft #403 homepage/demand candidate
+f20484f8ec7cc02e2f9507f08186057597360db5 against current main e863be83.
+Fresh GitHub reads show #412 and #413 merged; #403 remains open/draft with keep.
+Ten selected file blobs compared at full revisions: world generate/save/create
+match main; seven others differ (homepage entry/experience/CSS, pricing, newsletter,
+waitlist API, CI). Main uses V3; candidate supplies HomeExperience. This is a scoped
+source comparison, not whole-candidate compatibility or database/user acceptance.
+Check ownership and all remaining paths before narrowing the existing candidate;
+preserve merged world/auth/CI work and avoid a competing implementation.
+
+Retain reader #490, preview binding #491, failed world behavior and all provenance.
+Other skill consumers, source folds, rights/resources, launcher ownership, licence,
+Heart, manuscripts, unique salvage/archives and authentic creator/community/revenue
+acceptance remain open. No new repo, history rewrite, installation, merge, production
+or commerce change. #408 still requires Frank's named merge; #427 gates stay open.
+Full goal active; this is progress. Save hub #98 and product #276. Own reviews are
+terminal; no session-owned server/watcher remains. Both current CI handles terminal.
