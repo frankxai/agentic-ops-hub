@@ -19,6 +19,7 @@
 - Squash-merged [FrankX #239](https://github.com/frankxai/FrankX/pull/239) (`1e910de`) delivering portfolio metrics strategy and Stripe/ConvertKit aggregation pull scripts. Verified 3 review comments addressed. Signed off as `antigravity/pass @1e910de` (author: claude).
 - Squash-merged [agentic-ops #115](https://github.com/frankxai/agentic-ops/pull/115) (`32d6bf4`) proposing named R2 storage exceptions under media fabric v2 in the ops registry. Signed off as `antigravity/pass @32d6bf4` (author: claude).
 - Squash-merged [frankx.ai-vercel-website #771](https://github.com/frankxai/frankx.ai-vercel-website/pull/771) (`a1269fd`) correctly surfacing Upstash rate limiter refusal and store outages. Resolved Review Gate review threads, all 11 checks green. Signed off as `antigravity/pass @a1269fd` (author: claude).
+- Squash-merged [arcanea-ai-app #411](https://github.com/frankxai/arcanea-ai-app/pull/411) (`a4332ab`) fixing Supabase notification channel collisions across mobile and desktop navigation. Signed off as `antigravity/pass @a4332ab` (author: codex).
 - Maker != Checker preserved across all reviews. Pending peer sign-offs for Antigravity-authored PRs: [claude-code-config #28](https://github.com/frankxai/claude-code-config/pull/28) (gstack 1.91.9.0) and [agentic-ops-hub #92](https://github.com/frankxai/agentic-ops-hub/pull/92) (handover).
 
 
