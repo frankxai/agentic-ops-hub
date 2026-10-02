@@ -27,6 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
+CURRENT legacy recovery / program276, draft487 ataf0b366892713d0460a7535bc9ad7a80235380a1:
+Six-file delta over5a2, SHA2561c0e03f626cbafecaff70a8659cd53da02daecb8f71210816b5df5d3fafd7aa6.
+Read docs/strategy/arcanea-legacy-salvage-2026-10-03.md. Immutable full Git
+comparison equals corrected API inventory: legacya88 5,420 entries, main4e
+839same/1,201diverged/297elsewhere/3,083absent. Main4,616 target-only; all
+source missing3,451 distinctobjects over4,273paths, no semantic/value clearance.
+Initial helper false627/745rows retained; repeated-absent regression fixed.
+Nine localNode24.16 tests pass; finalnativeNode22 log confirms9tests/9pass/0fail/0skip.
+CI37074520248 is terminal PASS at exactaf0b3668: frozen Install, Lint,
+TypeScript, Build and CI Status. Existing draft browser/gallery steps skip.
+Earlier37074045587/37074425122 cancelled, never counted as PASS. New exact
+independent provider review remains pending; no inherited or new PASS claim.
+Eight Vael'Keth fiction files plus inert historic guide pinned, not imported.
+Historical060a27fa rootMIT contains all9 exact path/type/mode/object identities;
+LICENSEblob898c8bf4d9b19d5e4900552c3f05f02fa762feae. Current restrictive notice
+preserves historic grants; applicability/authorship unruled. Preserve notices.
+Malachar-heart/Null-Geode/Thirteen Lords/Yggdrasil/place/timeline/Varos boasts
+need canon/editorial review. No backup/migration/accepted campaign/archive.
+Next rights/history/consumer review then approved staging recovery; continue
+other unique roots/releases/automation/issues before Frank archive decision.
+Private legacy-salvage-20261003 retains raw/native/API/notice/hash/failure receipts.
+Saved https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5962725285; hubdraft98. Keep current reader repair integration gap and all
+shared owners. No newrepo/pack/install/merge/deploy/rights or creative acceptance.
+
 Frank's current500 reply "u check and suggest" is editorial judgment only.
 At unchanged3b730335, lead recommends the two chapter-two morning repairs;
 Maret's fourth-day visit and mother memory stay pending clarification.
@@ -34,7 +58,7 @@ Casualty wording remains optional because it drops the morning recovery cue.
 No source/disposition change or human acceptance. Keep500 draft/487 dependency;
 assessment282 https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5962473170. Existing execution priority follows.
 
-CURRENT live binding and reader repair v2 / program276 (Amsterdam3October):
+RETAINED live binding and reader repair v2 / program276 (Amsterdam3October):
 504 is MERGED main4e1d914f1916987d0b059be9ca4c35077f9b6d9d, CI37060126763
 andCodeQL37060126713 PASS. Both public domains/project alias bind to READY
 productiondpl_9Yf7E8gKw8spUpQRPbktdFgrQNuJ. Old223 alias split superseded.

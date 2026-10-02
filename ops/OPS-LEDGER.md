@@ -4,6 +4,12 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-03: Legacy recovery audit and pinned world candidate (Codex)
+
+- Draft487 at `af0b366892713d0460a7535bc9ad7a80235380a1` adds six-file immutable-tree comparison and nine local passing tests. Native/API rows agree: main839same/1,201diverged/297elsewhere/3,083absent; missing3,451distinctobjects, not useful-work count. Private helper's false627/745 rows retained and corrected; no archive/canon/content migration.
+- Vael'Keth eight fiction sources plus historic guide pinned; canon/timeline/continuity/consumer review pending. Historical rootMIT060a27fa contains nine exact current source identities; preserve that notice and later restrictive boundary, applicability/authorship unresolved.
+- Native37074520248 at exact head passes frozen Install and all four required contexts; actual Node22 audit9/9,0fail/0skip. Earlier runs cancelled; independent new-delta review pending. [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5962725285) / [487](https://github.com/frankxai/arcanea-ai-app/pull/487#issuecomment-5962725558) and three hub records saved. Next review rights/consumers for staging recovery; retain reader/launcher/AuthorOS and human gates. Full goal active.
+
 ## 2026-10-03: Draft500 editorial recommendation, human acceptance pending (Codex)
 
 - Frank's "u check and suggest" received a source-bound lead reading at unchanged3b730335: recommend the two morning repairs; preserve Maret date and mother link pending author clarification; casualty wording optional, losing recovery-time cue. Rescue motive/Torven farewell preserved. No manuscript/canon/disposition write or skill/model winner claim.
