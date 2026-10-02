@@ -27,10 +27,47 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT quest authoring proof in draft502:
+CURRENT scene-writing donor fold in existing draft487:
+Source9e287e47130bef39bf3b8caf7f60b20abd3b0ee3, basefcad9bf;
+app worktree C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
+is agent/codex/arcanea-source-consolidation-20261001, clean/pushed.
+Read packages/arcanea-skills/evals/scene-donor-fold-2026-10-02/primary.txt:
+complete621word The second seat, proposed Tideglass rescue/choice/cost.
+Original-guide actual615word alternative preserved; both useful, N=1/different
+producer/effort, no benefit or model winner. Scene-craft folds donor emotional-story
+method and app guide, two pinnedrawsourcehashes, self-contained reference/prose.
+Five candidates/zero ready/private:true. Original guides/four skills/examples,
+rootplugin/lockedcanon eleven protectedblobs unchanged. Otherdonorfolds open.
+Local catalog11/11 Node22.23.2/actualYAML2.9.1; zero-ready dryrun2/no home install.
+Reviewchain11file9dd qualifiedPASS +7filee8 PASS +2doc9e PASS; lead binds all12
+Gitblobs/context hashes/sourceHistory. Not whole inherited487/ready/release.
+Final metadata diff7b35f237/bundleab8cd644; optional craft/guidance retained.
+Forward different-world/request eval and rights/human acceptance before promotion.
+NativeCI37047294126 exact9e frozenInstall/Lint/TypeScript/Build/CIStatus PASS;
+existingdraftgalleryskip, no browser/nativeinstall/playtestproof.
+Completed reviews$0.6843742list; firstactual180s timeoutcostunknown;
+alternative$0.1100294list separate. Prep/encoding/parser failures/supersededCI kept.
+Launcheractualc035e594 rootselection/pinnedCLI alreadypresent, old027patch stale.
+No origin, existingClaude branch/untrackedbacktick preserved. Pinnedrawmodule
+86bdf6ec probes follow rootjunction outsidecheckout and allmode silently unions
+conflictingpins same repo/root atfirstsha. No Git/npx/globalinstall/launcherwrites.
+NEXT: coordinate actual launcher upstream/owner and fix those two regressions;
+meanwhile forward-evaluate scene-craft on a different creator world/request and
+resolve component rights/attribution before promotion or oldrepo archive.
+Preserve donor sources, unfinished tasks and shared graph/author/MCP/runtime owners.
+Bothproduct282/276/draft487 and hub3files saved; no newrepo/archive/rename/history/
+licence/Heart/merge/deploy/commerce decision. Fullgoalactive, rights/customer/revenue
+and full282twentytask evaluation open.500 humanacceptance pending, two temporal
+repairs recommended; casualty optional, Maret date/mother link unchanged.
+Retain499/3c82 profilehold,501/fd43 fourcandidate pinnedcompiler and502/50325f18
+quest/engine285 selection unresolved. Keep408/277/427 owner/release gates.
+Private receipts: scene-donor-fold-20261002 under arcanea-isolated-evaluation-20261001.
+Allownedprocessesterminal; releaseownlanes at handoff.
+
+RETAINED quest authoring proof in draft502:
 Source50325f18c9bff59c7814d855a37a7c183120c082, mainbaseb86549c;
 app worktree C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-is agent/codex/arcanea-quest-authoring-proof-20261002, clean/pushed.
+previously used agent/codex/arcanea-quest-authoring-proof-20261002; branch retained clean/pushed.
 Read complete Before the Road in docs/research/benchmarks/quest-authoring-proof-2026-10-02/encounter.md.
 Three counsel routes/sixendings, everypath leaves with Sela for Atlantean.
 All new dialogue/practices/notes agreements PROPOSAL; sources/lore unchanged.
