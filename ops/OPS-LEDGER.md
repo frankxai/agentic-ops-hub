@@ -955,3 +955,46 @@ bytes to draftPP4 for source CI, verify actual emitted82/source51/native30/Pytho
 parity148/Node18 and both remote runs, then remaining full-main/controlled runtime
 gates. Preserve history, other prompts and unfinished tasks. Both saves use this
 hub only and existing PP3/config46.
+
+
+## Admission source accepted in draft; runtime and full estate remain open (2026-10-02T05:14:09.159729+00:00)
+
+PP draft PR4 now contains reviewed commit 2d9d0fe37e0205cd139117e55c110203d56a9f66, a five-file child of aefe.
+Admission collects memory, CPU, disk, processes, uptime and crashes plus the
+three storage scopes. Full maintenance keeps its audit and score; admission
+reports null/UNKNOWN with an explicitly uncollected Ten Gate score. Unknown
+probe holds, reserve plus 4 GiB, exact 4/8/15% byte floors, ordinary reading and
+MCP isError remain covered. Final independent Anthropic test review-v2 passed
+after one bounded admission at 6490/6144 MB. The checker ended normally; cost
+USD 0.2839888 list equivalent, billed cash unknown. Production
+and README match review-v1, whose conditions are now fulfilled for this scope.
+
+Both exact-head source runs passed: pull_request36967516891 and push36967513865.
+Each Ubuntu/Windows run passed source51, typecheck/build, emitted51, native30,
+compiled82, Python16 and parity148, with Node18 emitted51/compiled82/parity148.
+Every required step and count was checked separately for all four event/platform
+pairs. Counts overlap. All five remote blobs match reviewed bytes. The actual
+compiled builder fixture executed, including six unknown/unsupported cases
+across five probes and full-maintenance snapshot reuse. The child prints a
+literal unknownCases:6; that nonblocking reporting finding remains recorded.
+
+Source publication first hit the existing sparse-checkout definition for two
+test files. Their owned bytes were then explicitly staged with --sparse; all
+five staged blobs matched the review, enabled secret hooks passed and normal
+push succeeded. There was no install, local build, new worktree or runtime
+projection. Shared launcher/dist and foreign primary remain unchanged. Full
+main safety, physical latency/calibration and actual installed/client acceptance
+remain open. Next audit/repair inherited cleanup/prep/security bypass, caller,
+snapshot/history/MCP safety and remaining classifier coverage before runtime.
+
+Queen PR135 and PR138 are verified MERGED, with their merge commits ancestral
+to observed agentic-ops main 69900c6dd7c88772011723f8352771d2992a956a. Issue134 remains OPEN for activation.
+These are GitHub source/ancestry facts. The other owner's 47/52-test and deployment
+claims were not independently rerun; no live task, transport or cloud outcome
+is accepted by this observation. Preserve that owner's activation workflow.
+
+All14 axes remain incomplete, including original all-brand product/team demands,
+AGENTS/skill semantics, authority/loading/licence/cost, graph/loop/hook/eval/
+observability and SIS150 programme denominators. Historical failures, other
+prompts and unfinished tasks remain. Both saves use this hub and existing
+PP3/config46; PP4 and hub95 stay draft, with no main merge by this task.
