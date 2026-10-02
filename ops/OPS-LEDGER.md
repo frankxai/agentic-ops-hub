@@ -4,6 +4,28 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea community signup candidate, draft493 (Codex)
+
+- App493 source `27ad6204f098b2edffd3a8fbb2dc828a1bd5b75e` adapts403's form to
+  main458's durable waitlist API. New registrations retain their source; explicit
+  save receipt, retained email on failure, duplicate guard and bounded timeout.
+  Signup copy describes interest in worlds/stories/releases. Existing overview
+  extracted below500 lines; other community content remains unverified.
+- Source CI36947008589 SUCCESS: all four checks, native15 cases. Complete seven-file
+  baseline REVISE followed by full3/2/2-file scoped corrections PASS; server400
+  validation cue remains LOW. Four tool-free reviews terminal, list USD1.0489434,
+  billing unverified. Two native formatting failures preserved; SHA512-verified
+  pinned formatter proved union-layout cause, disproving the conditional hypothesis.
+- Description-triggered CI36947550476 SUCCESS/all four checks at unchanged27; both source and edited runs terminal.
+  Current27 preview CANCELED at ignored-build. Earlier226 READY initial HTML proved
+  the earlier form/copy, not current browser behavior. Browser admission HOLD;
+  hydration/live Supabase/signup/mail and release remain unproven.
+- Original403/owner/untracked audit retained; homepage/dossier/proposed pricing
+  reconciliation remains next. Licence/Heart/launcher upstream/manuscript/archives
+  and world/rights/plugin/MCP/community/revenue acceptance remain open. App408 named
+  merge required. Prior487/490/491/451/488 and behavioral failures preserved.
+  Full goal active; no new repo/worktree/install, app merge or production change.
+
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
 - Config82 fixes the missing-policy test: ten tests pass/no skips, missing contract fails exit1, doctor required checks and cloud CI pass, independent exact-head Anthropic PASS. It merged into PR32 as `13fafe0`.

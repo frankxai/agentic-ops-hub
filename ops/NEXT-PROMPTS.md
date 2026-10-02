@@ -27,7 +27,39 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT pinned resource correction in existing draft #487:
+CURRENT community capture derivative in draft #493:
+HEAD27ad6204f098b2edffd3a8fbb2dc828a1bd5b75e, branch
+agent/codex/arcanea-community-capture-20261002 in existing source worktree below.
+Source CI36947008589 SUCCESS/all four checks and actual native15 cases.
+Description-edited CI36947550476 SUCCESS/all four checks at unchanged27; both
+current-source CI handles terminal. Initial full7 review REVISE; full3/2/2 corrections PASS,
+current2 no findings, prior server400 validation cue LOW retained. Raw attempts,
+two native formatting failures, missing local native-tool attempts and verified
+locked formatter receipts preserved. Actual formatting difference was union type
+layout; conditional hypothesis and reviewer assertion disproved. Four review PIDs
+terminal; reported list USD1.0489434, billing unverified.
+Community form now uses main458 durable API, exact email/source, explicit save,
+retained email/error/timeout retry and duplicate guard; direct field description.
+Existing overview extracted below500 lines; other community content unverified.
+Current27 dpl_2Avg2NoJ8KC2drDRBTuZ6d2eg9cc is CANCELED at ignored-build.
+Older226 dpl_FmU9eyQMw6PWP2dhusKZaepBjZ6c READY; authenticated initial HTML
+contains deployment marker and changed form/copy, not current27/browser proof.
+Browser HOLD7801/8192MiB; no browser, foreign cleanup, live signup, mail or DB write.
+Original403 f20484f8ec7cc02e2f9507f08186057597360db5 draft/keep and owner audit intact.
+Read planning-with-files/CURRENT_STATE_2026-10-02_COMMUNITY_CAPTURE.md and #276.
+
+NEXT: reconcile403's remaining homepage/dossier and honest proposed pricing against
+fresh main. Preserve main458 storage/world/auth/CI; reuse authored candidate and
+owner provenance. Obtain current-source browser and actual storage proof when
+admitted. Launcher027 still no origin on agent/claude/skill-bundles; upstream/owner
+clarification pending. Public-entry read: app PUBLIC, root licence/security/
+contribution/conduct absent, package repo/bugs point at diverged arcanea and
+topics emphasise infrastructure/agents. Metadata/map/community work remains.
+Broader source/rights/plugin/MCP/world/release/community/
+revenue work remains active. No app merge/mark-ready/deploy without408/427 gates.
+
+RETAINED pinned resource correction in existing draft #487:
+
 HEAD a20c06d43a8cc6f448076d15f9e13442660bacbb.
 Source CI36939598342 and description-edited CI36940326792 both completed SUCCESS
 at this unchanged source, all four checks. Native14 consumer +11 package cases.
@@ -40,7 +72,7 @@ Raw timeout/retry/correction/SSR/reconciliation receipts retained. Four internal
 candidates, zero ready. Vercel a20 dpl_3H6nfDZ18H8XS6MQYxRW4i8BCzuY is CANCELED.
 No deployed trace, source-matched browser, rights, whole-PR or release acceptance.
 
-NEXT bounded action: reuse draft #403 for remaining world-first homepage/demand
+RETAINED pre493 observation: draft #403 contains remaining homepage/demand
 work. Current candidate f20484f8ec7cc02e2f9507f08186057597360db5 remains draft/keep;
 #412/#413 are merged. Ten selected files compared against main e863be83: three
 world generate/save/create blobs match; homepage entry/experience/CSS, pricing,
@@ -94,7 +126,7 @@ Root/licensing, Heart, manuscript and archive choices remain Frank's. Do not del
 consumers blindly or rewrite history. Retain all earlier source/review/failure receipts.
 
 CURRENT APP WORKTREE: C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
-CURRENT BRANCH: agent/codex/arcanea-source-consolidation-20261001
+CURRENT BRANCH: agent/codex/arcanea-community-capture-20261002
 Retained preview binding draft https://github.com/frankxai/arcanea-ai-app/pull/491
 HEAD a6a6eca5d72dca4c3fcde3d767a41bb9b1e44962; base e863be8304fdde9f00ba812d7845d66ec52787b9.
 Source CI36926343395 and description-edited CI36927439029 both completed
