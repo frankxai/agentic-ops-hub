@@ -4,6 +4,30 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea honest plan proposals, draft494 (Codex)
+
+- App494 source `455f815db8352ffb31140694d9a4f9089ff3bc30`, exact main base
+  `e863be8304fdde9f00ba812d7845d66ec52787b9`, presents the existing $0/$12/$39
+  figures and features as unapproved proposals. Removes scarcity/discount/access,
+  unlimited capabilities/counts, local-only hosted privacy and blanket rights
+  claims from page and metadata. Current durable API/shared-list capture retained.
+- Six-file baseline154 review PASS/two LOW/two INFO; full two-file455 correction
+  PASS/two INFO. External opener behavior restored; email edits clear stale save
+  status. Network/storage failures are not mislabelled invalid email; field-specific
+  server400 cue remains shared follow-up. Reviews terminal, PIDs absent; reported
+  list USD0.5481876, billing unverified. Local15 behavior cases and actual React19
+  static markup passed; no interaction/layout/live storage proof.
+- Baseline CI36950210418 SUCCESS/all four/native15. Edited-baseline36950887431
+  completed cancelled after source push. Correction-source36950892525 SUCCESS:
+  all four checks/native15 cases. All three CI handles terminal. Both154/455 previews
+  CANCELED at ignored-build despite GitHub success.
+  No settings/extra deploy/browser/live signup/mail/checkout/production change.
+- Original403 and owner audit intact. Next is its remaining homepage/authored
+  dossier reconciliation. Existing487 already contains proposed README/community/
+  repository metadata; those files remain absent from main. Licence/Heart/launcher
+  upstream/manuscripts/archives, zero-ready skills, rights and wider world/release/
+  community/revenue work remain open. #408 named merge and #427 release gates apply.
+
 ## 2026-10-02: Arcanea community signup candidate, draft493 (Codex)
 
 - App493 source `27ad6204f098b2edffd3a8fbb2dc828a1bd5b75e` adapts403's form to

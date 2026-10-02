@@ -27,7 +27,22 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT community capture derivative in draft #493:
+CURRENT pricing proposal derivative in draft #494:
+HEAD455f815db8352ffb31140694d9a4f9089ff3bc30, branch
+agent/codex/arcanea-pricing-demand-20261002 in existing source worktree below.
+Six-file baseline154 review PASS/two LOW/two INFO; full two-file455 correction
+PASS/two INFO. Local15 behavior and actual React19 static markup pass. Source154
+native CI36950210418 SUCCESS/all four/native15. Edited154 CI36950887431 CANCELLED;
+current455 CI36950892525 SUCCESS/all four/native15. All three handles terminal.
+Current455 dpl_5zo55nSdrrzw4FDS2L5MhAVzVLdU CANCELED at ignored-build; no preview,
+browser interaction/layout, real storage or customer acceptance inferred.
+Existing prices are proposals, no scarcity/discount/access/unlimited/rights claims.
+Current458 API unchanged; helper/tests exact493; no community edits on this branch.
+Editing email clears stale save message. Server400 field cue remains a follow-up.
+Reviews terminal/PIDs absent, listUSD0.5481876, billing unverified. No owned service.
+Read CURRENT_STATE_2026-10-02_PRICING_DEMAND.md and276 for current evidence.
+
+RETAINED community capture derivative in draft #493:
 HEAD27ad6204f098b2edffd3a8fbb2dc828a1bd5b75e, branch
 agent/codex/arcanea-community-capture-20261002 in existing source worktree below.
 Source CI36947008589 SUCCESS/all four checks and actual native15 cases.
@@ -48,13 +63,16 @@ Browser HOLD7801/8192MiB; no browser, foreign cleanup, live signup, mail or DB w
 Original403 f20484f8ec7cc02e2f9507f08186057597360db5 draft/keep and owner audit intact.
 Read planning-with-files/CURRENT_STATE_2026-10-02_COMMUNITY_CAPTURE.md and #276.
 
-NEXT: reconcile403's remaining homepage/dossier and honest proposed pricing against
-fresh main. Preserve main458 storage/world/auth/CI; reuse authored candidate and
+NEXT: reconcile403's remaining homepage/authored dossier against fresh main;
+retain pricing494 and community493 as separate reviewed proposals, not live proof.
+Preserve main458 storage/world/auth/CI; reuse authored candidate and
 owner provenance. Obtain current-source browser and actual storage proof when
 admitted. Launcher027 still no origin on agent/claude/skill-bundles; upstream/owner
 clarification pending. Public-entry read: app PUBLIC, root licence/security/
 contribution/conduct absent, package repo/bugs point at diverged arcanea and
-topics emphasise infrastructure/agents. Metadata/map/community work remains.
+topics emphasise infrastructure/agents. Draft487 already contains proposed
+README/community files and corrected root repository/bugs links; main still lacks
+them. Licence/rights choice and integration remain open; do not duplicate487.
 Broader source/rights/plugin/MCP/world/release/community/
 revenue work remains active. No app merge/mark-ready/deploy without408/427 gates.
 
