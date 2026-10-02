@@ -27,7 +27,34 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT World SDK file/source/Git boundary in draft499:
+CURRENT World SDK review reconciled in draft499:
+Source 3c82b615f1e3645d70f5dfd0a187f2d2269d67b3; branch agent/codex/arcanea-world-sdk-safety-20261002
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+Local/native SDK70/70, native quick632/632, frozen Install/all4 checks pass:
+https://github.com/frankxai/arcanea-ai-app/actions/runs/36995845230
+Exact-source tools-disabled independent Claude Code review PASS, bounded SDK repair
+only: complete25 changed/five context/two pinned external contracts/full diff.
+Prior REVISE reproduced six red tests; privacy fences, failed staging cleanup/prior
+index bytes, Git environment and creative-only model enrichment corrected.
+Versioned breaking profile arcanea-world-sdk/declared-public-v1 includes game.
+All claimWorldProof calls reject WORLD_HASH_PROFILE_REQUIRES_REVIEW before adapters
+or writes, including mocks. computeProof is a tagged local proposal, not a claim.
+NEXT: existing World Repo owner accepts a profile-aware proof contract under283;
+complete v1.1 validation and human promotion before WorldPack/quest creator proof.
+No duplicate schema/repo. Preserve shared graph/AuthorOS/SIS/runtime/media owners.
+Read https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5950728855
+and https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5950729789; task contract in planning-with-files.
+Private exact-source review/native/red/failed/cost receipts:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/world-sdk-file-git-20261002/
+Three attempts provider-list reported $7.841367; first1USD cap exceeded without
+verdict. Current reviewer exited. Stable-tree/sole-writer and partial I/O limits;
+fullv1.1, graph continuity, public scaffold defaults and creator/release proof open.
+Minor follow-ups: unsafe hidden/nested-Git abort docs, golden hash vector,
+existing CLI remember parsing and explicit all-GIT-variable rejection wording.
+Keep full goal active, world/audience/releases>=60%,Studio<=30%,OSS<=10%,408/427.
+License, Heart417/639, archive/rename/history/merge/release remain Frank's choices.
+
+RETAINED World SDK file/source/Git boundary in draft499:
 Source01b711c0350dbb61bb7d3951499851c0363b9e02, branch agent/codex/arcanea-world-sdk-safety-20261002,
 in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
 34 baseline red at1259381; local/nativeSDK62/62 and quick632/632 pass.

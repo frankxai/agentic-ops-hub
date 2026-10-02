@@ -28,6 +28,13 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea SDK review reconciliation and proof-profile hold, draft499 (Codex)
+
+- SDK499 source `3c82b615f1e3645d70f5dfd0a187f2d2269d67b3`: local/native70 and quick632 pass; [CI](https://github.com/frankxai/arcanea-ai-app/actions/runs/36995845230) frozen Install/all4 checks pass. Exact-source independent review PASS for bounded repair, not release.
+- Earlier REVISE reproduced with six red tests; fence privacy, Git failure cleanup/index preservation, environment guards and creative-only enrichment repaired. Complete25/five/two/full-diff review; all failed receipts retained. Provider-list reported total $7.841367; first requested cap was exceeded with no verdict.
+- Versioned breaking declared-public hash includes game. All claim adapters/writes blocked pending existing-owner proof-profile acceptance; local tagged computeProof only. Fullv1.1/promotion/graph/creator/release remain open.
+- Both saves: [283](https://github.com/frankxai/arcanea-ai-app/issues/283#issuecomment-5950728855), [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5950729789) and hub98 current pickup. Full goal, prior sources/shared owners/408/427 preserved; no license/Heart choice or archive/rename/history/merge/release action. No persistent session worker/reviewer.
+
 ## 2026-10-02: Arcanea SDK file/source/Git boundary, draft499 (Codex)
 
 - [Draft499](https://github.com/frankxai/arcanea-ai-app/pull/499), source `01b711c0350dbb61bb7d3951499851c0363b9e02`:
