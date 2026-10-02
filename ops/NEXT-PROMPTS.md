@@ -19,52 +19,37 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All 14 original
-estate axes remain incomplete. Keep the full all-brand, rules/instructions/skills,
-graphs/loops/hooks/teams, Git/local/cloud, eval/observability/maintenance goal.
-Read pp-main-readiness-20261002 exact evidence, existing PP3/config46 and latest
-hub95 publication/checks. Preserve all tasks, other prompts and history.
-PP6bb9df25/PR4 now explicitly targets main and retains c6 + accepted main09
-parents. Stronger main policy is restored; instruction reconciliation PASS only.
-Full 19-file review remains BLOCK. No main release, runtime/client/npm adoption.
-PR36947859221/push36947856132 attempt1 pass: Linux/Windows Node24 source21/
-typecheck/build/emitted21/native18/compiled58; Node18.20.8 emitted21/compiled58,
-overlapping counts. Remote2 + workflow match, runtime/tests/workflow unchanged c6.
-Prior source2c first timeout and unchanged retry evidence remains.
-Repair accurate applicable-volume storage floors and unknown evidence next.
-Actual-source/synthetic16 final cases with explicit12GB reserve show12 low-disk
-violations at3/5/10%, four15% controls. Read final oracle qualification; the first
-default-model labels were flawed and preserved. Under8 growing work holds, under4
-freezes;8-15 allows one bounded build, no model/fanout/unattended/install/worktree.
-Probe timeout/fallback/localized-event/zero-sample/classification validity and
-TS/tray parity need acceptance. Pure CPU95/100 scoresTS2/tray9;20% control agrees.
-No live probes or workload ran in reproductions. Last installed reserve32GB:
-7792free/36864required yet bounded/exit0. Wrapper/dist/foreign primary566 unchanged.
-Correct source/probes/callers, then controlled projection/rollback and real CLI
-hold/exit2 proof; ordinary reading remains available. No shared wrapper bypass.
-Full review claims reconciled: c6 fields resolved/BOM retained; pp_fix was already
-on main. Baseline cleanup/handover/history/overnight unchanged. Actual permission,
-ownership, caller/nonzero enforcement, history/MCP lifecycle still need proof.
-No competing lease service. One own-deadline review had unknown verdict/cost;
-confirmed terminal before retry. Completed calls USD1.2028564 list equivalent,
-total partly unknown/billed cash unknown. Preserve all failed-assumption evidence.
-The20 earlier local placeholder findings compare to20 GitHub defaults:15 AGENTS
-reads,7 with templates/8 without,5 absent files,0 unresolved reads. All15 observed
-local heads diverge. Separate default defects, branch drift and absence; no full
-semantic/Registry/loading acceptance. Historical209/201/baseline scopes remain.
-Keep config79/80/84 source/main/native hook load/denial/timeout/exit, graph/eval/
-lane actual durable host/artifact/recovery/accounting and original SIS15020-task/
-host/transport/restart programme and denominators. GenCreator uncertain-save/
-caller/storage and demand62 backend/standard-ID/atomic capture remain open.
-Preserve all13 historical Registry brand/product/team/licence/skill/loop/outcomes.
-Arcanea community403/458/493 is another owner's work; do not borrow implementation,
-rights/rendered/customer/creator acceptance. Use accepted Registry, existing tools
-and exact owners; no invented teams or competing business queue. Seek an accepted
-traced owned brand workflow with actual actor/artifact/cost/outcome/recovery.
-Fresh machine/storage admission before heavy work. Retained claims require
-explicit release, never TTL or lock age. Save hub session/ledger/one prompt and
-existing issues. Keep the goal active until every original requirement passes.
-This turn made progress; consecutive impasse count remains zero.
+Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All 14 estate
+axes remain incomplete. Preserve full all-brand organization/instructions/skills,
+graphs/loops/hooks/teams, local/cloud/Git, eval/observability/maintenance intent.
+Read pp-storage-validity-20261002 evidence, existing PP3/config46 and hub95.
+PP b8969b384ee6584bb187942735fad7bcb5081e28/draft4 targets main and preserves 6bb main09+c6 ancestry.
+Exact-byte system/target/temp 4/8/15 floors, explicit unknown probe holds and
+maintenance constrain/pause, structured bounded limits and caller fixtures have
+scoped independent PASS after BLOCK. Local25+14; Linux/Windows Node24 source41/
+typecheck/build/emitted41/native25/compiled79; Node18.20.8 emitted41/compiled79,
+overlapping counts, two attempt1 successes, remote12 match. Retain all earlier
+failure/review/oracle qualification evidence. Full main readiness remains BLOCK.
+POSIX crashes unsupported and elevated/other-session runtime commands unknown
+hold budgeted work. Do not weaken these into measured zero. Resolve classifier
+coverage and TS/tray parity (95/100 CPU TS2 versus tray9, 20 control agrees),
+full-audit preflight latency, baseline irreversible cleanup/prep/security bypass,
+ownership/caller/snapshot enforcement and history/MCP durability before acceptance.
+Then controlled installed projection/rollback and real reserve32GB hold/exit2
+plus ordinary reading availability. Shared wrapper/dist and foreign primary566
+remain unchanged; last installed floor fails, source PASS is not client adoption.
+Seven upstream template files/eight without fields/five absent roots remain
+qualified static findings, not Registry/host/semantic acceptance. Preserve209 root
+snapshot, historical201/3680 and full instruction/skill loading/licence/cost work.
+Preserve config79/80/84, graph/eval/lane durable actual host/artifact/recovery/cost,
+all 13 historical brands and product/team demands, GenCreator exclusive/uncertain
+save/caller/storage and demand62 backend/standard-ID/atomic capture, original
+SIS150 20-task/host/transport/restart programme and denominators. Seek an accepted
+traced owned brand workflow with actor/artifact/cost/outcome/recovery.
+Fresh machine/storage and full retained ownership checks before heavy work.
+No new competing service/queue, no false team/customer/cloud outcomes. Preserve
+other edits/history/prompts and unfinished task records. Save handover only in
+agentic-ops-hub and update existing product issues. Release own lanes/workers.
 ```
 
 [Starlight integration continuation, Codex]
