@@ -20,29 +20,30 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read pp-admission-hosted-20261002 and earlier review/probe/parity records.
-PP 2d9d0fe37e0205cd139117e55c110203d56a9f66/draft4 is reviewed and source-accepted in this scoped slice:
-review-v1 production PASS plus final test review-v2 PASS, both conditions
-fulfilled by exact-head Ubuntu/Windows pull_request and push source checks.
-Each platform/event: source51/typecheck/build/emitted51/native30/compiled82/
-Python16/parity148 and Node18 emitted51/compiled82/parity148. Counts overlap;
-five remote files match. Admission skips the full audit; full maintenance keeps
-all gates. Literal compiled unknownCases metadata remains a nonblocking finding.
-Preserve exact byte 4/8/15 storage floors, fresh unknown/failed probe holds,
-reserve plus4096MB, ordinary reading, bounded limits and MCP isError. Consumers
-must honor decision/diskGrowthPermitted. Installed wrapper/dist and foreign
-primary566 remain untouched. Physical calibration, actual tray/client use and
-32GB reserve/exit2/read acceptance remain open; full main readiness is BLOCK.
+Read pp-remediation-safety-20261002 and earlier admission/source evidence.
+PP draft4 remote/source HEAD remains 2d9d0fe37e0205cd139117e55c110203d56a9f66.
+Fourteen owned local files are dirty, uncommitted and unpublished. Review-v1
+BLOCK (terminal USD0.6445968 list equivalent) is retained. V2 fixes emitted
+shebang wrapping, Windows lookup and Git optional index writes through the
+shared trusted-runtime launcher, ancestor cwd, all gain estimates, tray dry-run
+and docs. Local remediation25/native30/Python16/parity148 PASS, counts overlap.
+Frozen manifest and packet: review-v2; evidence: candidate-evidence-v2.json.
+Review-lite held at5867/6144MB; no v2 checker started. Do not publish from the
+old 12-file candidate-evidence.json or old publish-source.py. Both are v1
+historical artifacts. Keep security hooks and sparse definition unchanged.
 
-Next reproduce and repair inherited irreversible cleanup and prep/security
-bypass, remaining classifier coverage, ownership/caller/snapshot/history/MCP
-safety before main and controlled installed projection/rollback. Use actual
-source and meaningful counterexamples, fresh machine/storage and retained
-ownership checks. Preserve aefe and all original failures/unknown evidence.
-Queen135/138 merges are ancestors of observed agentic-ops main 69900c6dd7c88772011723f8352771d2992a956a;
-issue134 activation remains OPEN. This turn verified source ancestry/issue
-state only. Follow the existing owner's live access/actor/transport/budget
-round-trip gate; no new service or fabricated executor/customer outcomes.
+Next obtain fresh actual review-lite admission with the full6144MB requirement.
+Recheck retained ownership, reclaim only these exact paths after validating
+frozen hashes, then review-v2.py uses admission-v2-resume.json to run one
+serialized tool-free checker. If PASS, update publication helper to v2 review,
+14-file manifest and both original source lanes, stage explicit --sparse paths,
+publish to draft4 and verify both exact-head Ubuntu/Windows source/typecheck/
+build/emitted/native/compiled/Python/parity and Node18 remediation checks.
+Shared runtime/foreign primary remain untouched. Full main safety, inherited
+history/overnight/format/process/consumer review, physical calibration and
+controlled installed/client rollback acceptance remain open. No unadmitted
+checker, install/build/new worktree/fanout; other tasks remain owner-managed.
+Existing Queen activation gates/prompt remain unchanged.
 
 All14 estate axes remain incomplete. Preserve full all-brand organization,
 instructions/skills, graph/loop/hook/team, local/cloud/Git, eval/observability/
