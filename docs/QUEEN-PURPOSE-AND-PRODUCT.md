@@ -37,9 +37,8 @@ runs. The first promise to prove is: send one bounded issue from Slack and recei
 one useful, independently reviewed result with its source revision, cost state
 and recovery record in the same thread.
 
-The demonstration must do consequential work, such as investigating an observed
-workflow failure and delivering an actionable, checked repair, or producing a
-bounded repository fix with regression evidence. An agent register, manifest or
+The first demonstration must investigate an observed workflow failure and deliver
+an actionable, checked repair artifact. An agent register, manifest or
 dashboard supports this job; it cannot substitute for the result. A successful
 health probe alone does not prove the complete coding or workflow repair loop.
 The first live proof is a non-code investigation and checked repair artifact.
@@ -81,8 +80,10 @@ sample size, consent and uncertainty. Do not publish a fabricated billion-dollar
 
 Keep Queen's SOUL and working profile versioned in agent config, with execution,
 admission and evidence in private Ops. Use upstream Hermes profiles and extensions
-before taking on a fork. Hermes provides isolated agent profiles and a SOUL loading
-mechanism. Our host still has to prove native tool permissions and writer boundaries.
+before taking on a fork. Hermes provides separate profile configuration and data
+directories and a SOUL loading mechanism. Host tools share the real OS-user home by
+default; profile separation does not establish a security boundary. Our host still
+has to prove native tool permissions and writer boundaries.
 [Profiles](https://hermes-agent.nousresearch.com/docs/user-guide/profiles),
 [SOUL](https://hermes-agent.nousresearch.com/docs/guides/use-soul-with-hermes).
 
@@ -94,7 +95,7 @@ details stay with their owners.
 
 | Same-task alternative | What to reuse | What Queen must additionally demonstrate |
 |---|---|---|
-| An unmodified Hermes profile | Conversation, tools, gateway and profile isolation | Issue/repository admission, verified allowances, exact-result review and durable operating evidence across delegated workers |
+| An unmodified Hermes profile | Conversation, tools, gateway and separate profile configuration/data | Issue/repository admission, native execution isolation, verified allowances, exact-result review and durable operating evidence across delegated workers |
 | Existing n8n Slack routing with a human operator | Deterministic routing and integrations that already exist | Authenticated task identity, truthful execution state, bounded delegation, duplicate recovery and result acceptance |
 | A coding-agent Slack integration | Supported provider-native task entry and progress | A measured reason to add cross-provider admission, independent acceptance and cost/recovery records |
 
@@ -103,15 +104,18 @@ repair effort, elapsed time, human review minutes and full cost. Retain the simp
 route if it achieves the outcome more reliably. These are comparison questions;
 we have not established that another product lacks a specific control.
 
-OpenAI's current documentation describes Dots as an always-on cloud agent, with
+OpenAI's current documentation describes Dots as a cloud agent, with
 supported Slack messaging and delegation to cloud or connected-computer tasks.
-Account rollout and permissions still need verification. We should evaluate it as
+Connected-computer work requires that computer to be online with the app open;
+messaging does not automatically grant app or computer permissions. Account rollout
+and permissions still need verification. We should evaluate it as
 a delegated responsibility with an explicit owner and proof boundary, then measure
 whether it removes more operating work than it adds.
 [Official Dots documentation](https://learn.chatgpt.com/docs/dots).
-The OpenAI Agents API supplies a managed Codex harness and recovery, a distinct
-integration option from a self-hosted SDK application. It still needs account,
-cost, data and cancellation/reconciliation admission.
+The OpenAI Agents API supplies a managed Codex harness and recovery. Our architectural
+choice is to compare that managed service with a self-hosted SDK application; this
+comparison is our interpretation of the integration options. Both still need
+account, cost, data and cancellation/reconciliation admission.
 [Official Agents API documentation](https://developers.openai.com/api/docs/guides/agents-api/overview).
 
 Claude managed agents, supported local clients and future Matrix transport follow
@@ -189,6 +193,10 @@ Apply the same quality expectation to our own outputs. Public stories use review
 artifacts and observed outcomes, with human approval for live/premium publishing.
 
 ## Next delivery decisions
+
+With founder-approved invitations, consented problem interviews can run alongside
+the engineering work. Record existing behavior and repair effort before asking
+about our proposed product; a favorable reaction alone is weak demand evidence.
 
 1. Restore supported n8n management/editor access and resolve the execution
    connector's required-field contract before attempting live corrections. Validate,

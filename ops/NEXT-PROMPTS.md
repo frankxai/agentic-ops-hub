@@ -38,7 +38,8 @@ APPROVE/CI/validator/required doctor checks, but normal merge rejected: main req
 one native approving GitHub review from another identity. Preserve reviewed head;
 no admin bypass. Own SOUL/AGENTS/capability source there, existing generic Hermes
 home/credentials untouched. Complete activation follow-ups and prove BOTH SOUL and
-operating contract load in the actual isolated profile. Preserve PR85/issue86 work.
+operating contract load in the actual separate profile. Profile data separation
+does not establish OS/security isolation. Preserve PR85/issue86 work.
 
 n8n read connector sees 46 workflows/no Queen match. Management key returns 401;
 execute requires executionMode absent from exposed schema and returned no execution
@@ -53,7 +54,10 @@ re-read connections before publishing; never export secrets.
 
 EUR100/month initial incremental ceiling; supported subscription-first, no automatic
 paid fallback/increase. Reconcile baseline, fresh auth/allowance and private trusted
-supervisor/reconciler. Models cannot settle accounting. Dots has official cloud/
+supervisor/reconciler. The trusted supervisor/reconciler exclusively owns ledger
+writes; models must receive no database or settlement access. Plan and reserve
+together against fresh observations. Matrix and managed providers remain candidates.
+Dots has official cloud/
 Slack/delegation docs; account access/cost/control unverified. Compare supported
 Hermes and provider-native alternatives on the same valuable job. No fork/new Queen
 repo without a reviewed independent release/distribution/permission boundary.
@@ -73,7 +77,8 @@ and worker completion are not LIVE_VERIFIED. Measure repair/time/cost against th
 serious alternative. Marketing/premium live posts human-gated. Save hub receipt,
 ledger, one current prompt and existing issues. Explicit routing/lane checks, one
 owner per worktree, current RAM/storage admission. No new worktree/install or
-unattended worker under storage BOUNDED; preserve every other unfinished front.
+service or unattended worker under machine HOLD or storage BOUNDED. Preserve release
+gates, account eligibility and every other unfinished front.
 ```
 
 [Starlight integration continuation, Codex]
