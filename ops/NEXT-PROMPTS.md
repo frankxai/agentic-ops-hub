@@ -27,7 +27,27 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT pinned-canon reader repair, PRIVATE PATCH ONLY:
+CURRENT restricted import subtraction in existing draft487:
+Source794e83bb7a2e229c08a25faa980436196879c7e8, branch agent/codex/arcanea-source-consolidation-20261001
+in C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001.
+Removed8 docx/pdf/pptx/xlsx trees including external duplicates,260files/8index rows.
+All156 retained rows preserve data (7Prettier emphasis-only edits). Historical
+rights entries/hashes retained; four candidates/zero ready. No cleared root licence,
+history rewrite, global uninstall, archive, canon edit, merge or release.
+Local15 pass after missing-YAML11 failures recorded; nativeCI36973493648 SUCCESS,
+all4 checks and package/auditor/consumer job passed. Read existing source task plus
+October2 session and276 receipt https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5946774463
+for source/attempt/limitations. Private full manifest/five-file diff/hashes/packet:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/restricted-import-removal-20261002/
+Review prepared, not invoked: PP HOLD5677 then5315MiB/required6144,32runtimes/12.
+No reviewer PID/cost or foreign cleanup. Root plugin still discovers broad dev
+skills; historical copies and other notices/imports/resources need rights review.
+NEXT: independent full removal review only after fresh admission, reconcile any
+findings, then continue canonical fold/plugin and real creator usefulness proof.
+Keep four candidates/zero ready until rights/evals and genuine acceptance are met.
+Retain reader repair and all earlier candidates/owners/human decisions below.
+
+RETAINED pinned-canon reader repair, PRIVATE PATCH ONLY:
 Existing saved reader68456204be0ecbf3546eedc64c53d9f2a7471e34, not on server main.
 Do not take Grok's worktree or create another public repo/server/pack. Artifact:
 C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/reader-canon-repair-20261002/reader-canon-repair.patch

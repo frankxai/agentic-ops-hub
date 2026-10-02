@@ -28,6 +28,18 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea restricted document-skill subtraction, draft487 (Codex)
+
+- [Draft487](https://github.com/frankxai/arcanea-ai-app/pull/487), source `794e83bb7a2e229c08a25faa980436196879c7e8`:
+  eight restricted import trees/260 files and eight active index rows removed;
+  remaining data and historical rights evidence retained, four candidates/zero ready.
+- Local15 pass after recorded missing-YAML11 failures. Native CI36973493648 SUCCESS,
+  all four checks and package/auditor/consumer job passed; secret hook enabled.
+- Full review packet prepared; invocation held at5315MiB/6144 and32 runtimes/12.
+  No review verdict, cost or release approval. History and broader rights work open.
+- [Issue276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5946774463) and hub98 save current pickup. Canon/licence/Heart/
+  archive/rename/history/release choices and #408/#427 retained; full goal active.
+
 ## 2026-10-02: Arcanea pinned-canon reader repair, private patch (Codex)
 
 - Seven-file private patch against saved reader68456204, SHA256
