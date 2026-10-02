@@ -941,7 +941,7 @@ audit score. Node syntax check passes; hosted execution remains pending, with
 Production maintenance/preflight and README hashes are unchanged from the
 scoped PASS. Only the two test files changed afterward. The final reconciliation
 packet includes exact hashes and unchanged CLI/formatter/types/overnight callers.
-At UTC04:44 fresh admission held that checker: 5825 MB free versus6144 required.
+At UTC04:43:43 fresh admission held that checker: 5825 MB free versus6144 required.
 No second reviewer started. The full latest five-file candidate is frozen in
 pp-admission-review-20261002; prior v1 and original source evidence stay intact.
 Source is still uncommitted/unpublished; hosted validation, final test review,
