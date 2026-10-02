@@ -616,68 +616,75 @@ one accepted traced brand workflow with actor/artifact/cost/outcome/recovery.
 
 ## PP main reconciliation and upstream instruction qualification (Codex)
 
-Source task01a0f720-641c-7af2-af40-cc12eafd6a4f. Full goalactive, all14 axes
-incomplete. Earlier209root20local/19committed placeholder findings retain
-their frozen branch scope. Compared20 exact GitHub defaults:15 rootAGENTS
-reads,7 with templatefields/8 without,5absentrootfiles,0 unresolvedrepository/
-branch reads; all15 observed local heads differ fromdefaults. Resolved fields
-or absence are not semantics/loading/health acceptance. No foreign sourcewrites.
+Source task 01a0f720-641c-7af2-af40-cc12eafd6a4f. The full goal remains active;
+all 14 axes are incomplete. The earlier 209-root audit's 20 local placeholder
+findings, including 19 committed files, retain their frozen branch scope.
+Comparison with 20 exact GitHub defaults found 15 root AGENTS files: seven
+have template fields and eight do not. Five defaults have no root AGENTS file;
+repository and branch reads had no unresolved results. All 15 observed local
+heads differ from defaults. These results do not prove semantics or loading.
 
-PP main09d4917 already repaired instructions via acceptedPR2, and diverges
-from producer566 atd3a3e629. Candidate c6 omitted stronger mainpolicy. Owned
-merge6bb9df25c7569d3ef4f020ae53f0f27539d0a808 retains c6+acceptedmain parents, restoresfloor/reversible-only/
-parity/redaction/estate responsibilities and removes unverifiedpublishednpm
-wording. AGENTS healthpnpmtest+lint; harnessprimarytest, lint/build/emitted
-checks explicitmanual/CI. Againstc6 twofields change; againstmain priorupdate
-date also included. Existing harnessformat/BOM retained. Fullmain19file review
-BLOCK; twofileinstruction initialBLOCK thenrefinedPASS, noeditsafterfinalreview.
-Existingdraft4 explicitlytargets main with provenance/readiness blockers, no
-mainmerge/runtime/client/npm adoption. Foreignprimary/sharedwrapper/dist unchanged.
+PP main09d4917 had repaired instructions in PR #2 and diverges from producer566
+at d3a3e629. Candidate c6 omitted stronger main policy. Merge 6bb9df25c7569d3ef4f020ae53f0f27539d0a808
+preserves both histories and restores the floor, reversible-only behavior,
+parity, redaction and estate responsibilities. It removes unverified npm
+publication wording. AGENTS defaults to pnpm test and lint; the harness uses
+test as primary, with lint/build/emitted checks explicit in manual checks and CI.
+Against c6 only those two harness fields change; against main the earlier update
+date also changes. Original harness format/BOM survives. The instruction review
+went from BLOCK to PASS after refinement; full main readiness remains BLOCK.
+Draft #4 explicitly targets main. Runtime, tests and workflow are unchanged.
 
-PR36947859221/push36947856132 attempt1SUCCESS:Linux/WindowsNode24 frozen/
-source21/typecheck/build/emitted21/native18/compiled58, Node18.20.8emitted21/
-compiled58, failure/skip/cancel0, repeatedsuites/platformsoverlap. Remote2+workflow
-match; sparseworkflowverifiedexactGitblobwithoutcheckout expansion. Runtime/
-test/workflowbytes unchangedfromc6. Prior2cfirsttimeout/retry evidence retained.
+PR36947859221 and push36947856132 passed on attempt 1. Per Linux/Windows:
+Node24 frozen install, source21/typecheck/build/emitted21/native18/compiled58;
+Node18.20.8 emitted21/compiled58. Failure/skip/cancel counts are zero and suites
+overlap. Two changed remote files and workflow match; the sparse workflow was
+checked through its exact Git blob. Earlier source2c timeout/retry evidence stays.
 CI: https://github.com/frankxai/peak-performance/actions/runs/36947859221
 CI: https://github.com/frankxai/peak-performance/actions/runs/36947856132
 
-Actualfrozenmaintenance/preflight/scoring with syntheticmeasurements:
-16diskcases explicit12GBreserve,12 genuinepolicycontradictions at3/5/10percent,
-four15percentnormal controls. Originaldefaultmodeloracle incorrectlycounted
-oneconservativeboundatnormaldisk andunderstated10percentmodel restriction;
-retainedinreview input, qualifiedbeforefinalreport.8-15 permitsoneboundedbuild,
-models/swarmfanout/unattendedheld;under4freeze meansgrowingworkheld. Noactual
-probe/allocation/workload. PureTS/PythonCPU95/100 score2CRIT/9PERFECT;20control
-matches. Traynotstarted. Nextactualsource fixes:applicablevolumestorage floors/
-unknowns, probevalidity/fallback/locale/CPU/classification andTS/trayparity.
-Ownership/remediation, actualcaller/nonzeroenforcement/durablehistory/MCP
-lifecycle remain acceptancegates. Selfdeclared labels/annotationsnotapproval.
+Actual frozen maintenance/preflight/scoring functions with synthetic measurements
+show 12 genuine storage-policy contradictions in 16 cases at 3%, 5% and 10%
+free space, using an explicit 12GB reserve. Four normal 15% controls pass. The
+first default-model oracle wrongly counted one conservative normal-disk result
+and understated the 10% model restriction; its review input is preserved and
+qualified. At 8-15%, only one bounded build is permitted; model, swarm/fanout
+and unattended work are held. Below 4%, freeze holds all tested growing work.
+No real probes, allocations or workloads ran. Pure TS/tray CPU scores at 95%
+and 100% are 2 CRIT versus 9 PERFECT; the 20% control agrees. Tray was not started.
 
-Fullreview reconciled: c6identityfieldsalreadyresolved, BOMretained; stronger
-mainpolicywasmissing. pp_fix/destructivebaseline alreadyexposedonmain,
-cleanup/handover/overnight/history unchanged.Ordinaryreadingpermissionretained,
-consumer/capacity proofstillopen; no newcompetinglease/service. Ownfirst180s
-reviewdeadline producedunknownverdict/cost, confirmedterminalbeforenextcall;
-completedreviewcallsUSD1.2028564listequivalent, earlier
-costpartlyunknown/billedcashunknown. Privateinitialancestor/BOM/oracle/synthetic
-link/sparsecollector corrections retained; no failurehiddenbybroadergreenclaim.
+Next source repairs: applicable-volume storage floors and unknown measurements,
+probe validity for fallback/locale/zero-sample cases, classification and TS/tray
+parity. Ownership/remediation, actual caller/nonzero enforcement, history and
+MCP lifecycle remain acceptance gates. Review claims were checked: c6 fields
+were already resolved and its old BOM retained; stronger main policy was lost.
+pp_fix already existed on main. Baseline cleanup/handover/overnight/history are
+unchanged. Ordinary reading stays permitted; caller/capacity proof remains open.
+No competing lease service is proposed. One review ended at its own deadline,
+with unknown verdict/cost; terminal state was confirmed before the next call.
+Completed calls cost USD1.2028564 list equivalent; total cost is partly unknown
+and billed cash unknown. Earlier failed assumptions and collectors remain recorded.
 
-Installedlastreserve32GB observationstillbounded/exit0 at7792free/36864required,
-noallocation/workload; hashesunchangedatfinalhandoff. Correctsource/machine/
-consumer/projection rollback acceptancebeforeactual adoption. Datedmachine
-interactive2GB UTC00:42:00 bounded7615free/6144requiredMB, disk13.8bounded;
-no localinstall/build/newworktree/browser/fanout/scheduler/provideractivation.
-Alloriginalconfig79/80/84nativehook/sourceprojection, graph/eval/laneactual
-durablehost/artifact/recovery/accounting, all13historicalbrand/product/team,
-GenCreatoruncertainsave/demand62standard/backendatomicgates and original
-SIS15020task/host/transport/restartprogramme/denominators preserved.
+The last installed 32GB reserve request still returned bounded/exit0 at 7792MB
+free versus 36864MB required, without a workload. Shared wrapper/dist and foreign
+primary are unchanged. Source, live probes, consumers and controlled projection/
+rollback need acceptance before adoption. Dated admission at UTC00:42:00 was
+bounded for a 2GB reserve: 7615MB free/6144MB required; disk was 13.8% free.
+No local install/build, new worktree, browser, fanout or scheduler/provider starts.
 
-Productreceipts verified:
+Preserve config79/80/84 native hook/source projection gates, graph/eval/lane
+durable host/artifact/recovery/accounting, all 13 historical brand/product/team
+requirements, GenCreator uncertain-save/storage and demand62 backend/standard-ID/
+atomic capture gates, and the original SIS150 20-task/host/transport/restart
+programme and denominators. All earlier task records remain incomplete where
+their actual acceptance is still missing.
+
+Verified product saves:
 - https://github.com/frankxai/peak-performance/issues/3#issuecomment-5943557808
 - https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5943558219
-This packet initially waited on retainedforeigncodex-4b7b7ca6 same3files;
-publication requiresfreshfullreplayandexplicit release, neverTTL/lock age.
-Next: accurate sourcefloors/unknowns/parity plus meaningfulhost/caller checks,
-thencontrolledinstalledproof. Continuefull estate/instruction/skill/team/
-loop/cloud/observability/brand outcomes, all14incomplete.
+
+The hub packet waited for foreign codex-4b7b7ca6 to release these three files
+explicitly at UTC00:56:03.997. Ownership uses retained replay, never expiry.
+The initial hub publication passed CI; this refinement improves wording only.
+Next: storage/unknowns/parity repairs with meaningful host/caller checks, then
+controlled installed proof. Continue the full estate goal, with all 14 axes open.

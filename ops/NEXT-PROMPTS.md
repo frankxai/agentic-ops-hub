@@ -19,54 +19,52 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
-Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. Full14estate
-axesincomplete, preserveoriginalall-brand/rules/AGENTS/skills/graph/loops/hooks/
-teams/Git/local/cloud/eval/observability/maintenance intent andtaskrecords.
-Read pp-main-readiness-20261002 exactevidence, existingPP3/config46 andlatest
-hub95publication/checks. Ifhubpacketstillpending onforeigncodex-4b7b7ca6,
-freshfullretainedownership/.lockcheck andexplicitrelease beforeapplying.
-NeverinferTTLexpiry,deleteagedlocks ordiscardotherprompts/history.
-PP6bb9df25/PR4nowexplicitmain target, bothc6andacceptedmain09 parents; earlier
-producer566basedreviewsdidnotcertifyfullmain. MainPR2strongerinstructions
-restored, source-onlyclass;pnpmtest+lintdefault/harnessprimarytest andmanual
-lint/build/emitted. InstructioninitialBLOCK/refinementPASSonly. Full19source
-reviewBLOCKremains, no release/runtime/main/client/npm adoption. Foreignprimary
-566/sharedwrapper/dist unchanged. PR36947859221/push36947856132 attempt1PASS
-Linux/WindowsNode24source21/tsc/build/emitted21/native18/compiled58;Node18.20.8
-emitted21/compiled58, overlap. Remote2+workflow match, sparseGitblobproof;
-runtime/test/workflow unchangedc6. Prior2c firsttimeout/unchangedretry retained.
-Actual-source/synthetic16storagecases with explicit12GBreserve:12genuinelowdisk
-violations3/5/10percent;four15normalcontrols. Firstdefaultmodeloraclequalified,
-read finalreproduction/oracle-refinement. Implementaccurateapplicablevolume
-floors/unknownmeasurements:under8growingworkhold/under4freeze,8-15onebounded
-buildonly/noinstalls/worktree/media/model/fanout/unattended. Probevalidity on
-timeouts/fallback/localizedevents/zerosamples/classification mustbespecified
-andtested; no unknown-as-clear. ActualpureTStrayCPU95/100scores2CRIT/9PERFECT,
-healthy20controlmatches;paritygatesbeforeacceptance. Noactualprobes/app/allocation
-inrepros. Realinstalledreserve32GBlastbounded/exit0 at7792free/36864required,
-notworkloadadmission. Correctsource/probes/callers thencontrolledprojection/
-rollbackandrealCLIhold/exit2;ordinaryreading remainsavailable.
-Fullreview claimsqualified: c6fieldsresolved/BOMretained, ppfixexposedonmain
-already, baselinecleanup/handover/overnight/history unchanged; unresolvedactual
-permission/ownership/durablehistory/lifecycle remain. No competing lease/service.
-Firstown180sreviewdeadlineunknowncost/verdict, confirmedterminal beforebounded
-newreview;completedcallsUSD1.2028564listequiv,totalpartlyunknown/cashunknown.
-20localplaceholderfindings nowqualifiedGitHubdefaults:15AGENTSreads,7still
-placeholders/8without,5absentrootfiles,0unresolved;all15localheadsdiverge.
-Separatedefaultdefects/branchdrift/absence; no fullsemantics/Registry/loading
-acceptance. Historical209/201/baseline/trackedcorpus scopesremain dated.
-Preserveconfig79/80/84source/main/nativehookload/denial/timeout/exit, graph/
-eval/laneactualdurablehost/artifact/recovery/accounting and originalSIS15020-task/
-host/transport/restartprogramme/denominators. GenCreatorcaller/uncertainsave/
-storage anddemand62canonicalbackend/standardID/atomiccapturegates retained.
-All13historicalRegistrybrand/product/team/licence/skill/loop/outcomegatesopen.
-Arcanea foreigncommunity403/458/hub493task untouched;source/check/rights/render/
-creatoracceptance neverborrowed. UseacceptedRegistryandexistingtools/exact
-childowners, no inventedteams orcompetingbusinessqueue. Seekacceptedtracedowned
-brandworkflowactualactor/artifact/cost/outcome/recoverywithoutfakeoutcomes,
-borrowedcredentials/customerwrites. Freshmachine/storageadmissionbeforeheavy
-work. Savehubsession/ledger/onepromptandexistingissues, retainfullgoalactive
-untilalloriginalrequirementsactuallypass. Thisturnprogress, impasse0.
+Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All 14 original
+estate axes remain incomplete. Keep the full all-brand, rules/instructions/skills,
+graphs/loops/hooks/teams, Git/local/cloud, eval/observability/maintenance goal.
+Read pp-main-readiness-20261002 exact evidence, existing PP3/config46 and latest
+hub95 publication/checks. Preserve all tasks, other prompts and history.
+PP6bb9df25/PR4 now explicitly targets main and retains c6 + accepted main09
+parents. Stronger main policy is restored; instruction reconciliation PASS only.
+Full 19-file review remains BLOCK. No main release, runtime/client/npm adoption.
+PR36947859221/push36947856132 attempt1 pass: Linux/Windows Node24 source21/
+typecheck/build/emitted21/native18/compiled58; Node18.20.8 emitted21/compiled58,
+overlapping counts. Remote2 + workflow match, runtime/tests/workflow unchanged c6.
+Prior source2c first timeout and unchanged retry evidence remains.
+Repair accurate applicable-volume storage floors and unknown evidence next.
+Actual-source/synthetic16 final cases with explicit12GB reserve show12 low-disk
+violations at3/5/10%, four15% controls. Read final oracle qualification; the first
+default-model labels were flawed and preserved. Under8 growing work holds, under4
+freezes;8-15 allows one bounded build, no model/fanout/unattended/install/worktree.
+Probe timeout/fallback/localized-event/zero-sample/classification validity and
+TS/tray parity need acceptance. Pure CPU95/100 scoresTS2/tray9;20% control agrees.
+No live probes or workload ran in reproductions. Last installed reserve32GB:
+7792free/36864required yet bounded/exit0. Wrapper/dist/foreign primary566 unchanged.
+Correct source/probes/callers, then controlled projection/rollback and real CLI
+hold/exit2 proof; ordinary reading remains available. No shared wrapper bypass.
+Full review claims reconciled: c6 fields resolved/BOM retained; pp_fix was already
+on main. Baseline cleanup/handover/history/overnight unchanged. Actual permission,
+ownership, caller/nonzero enforcement, history/MCP lifecycle still need proof.
+No competing lease service. One own-deadline review had unknown verdict/cost;
+confirmed terminal before retry. Completed calls USD1.2028564 list equivalent,
+total partly unknown/billed cash unknown. Preserve all failed-assumption evidence.
+The20 earlier local placeholder findings compare to20 GitHub defaults:15 AGENTS
+reads,7 with templates/8 without,5 absent files,0 unresolved reads. All15 observed
+local heads diverge. Separate default defects, branch drift and absence; no full
+semantic/Registry/loading acceptance. Historical209/201/baseline scopes remain.
+Keep config79/80/84 source/main/native hook load/denial/timeout/exit, graph/eval/
+lane actual durable host/artifact/recovery/accounting and original SIS15020-task/
+host/transport/restart programme and denominators. GenCreator uncertain-save/
+caller/storage and demand62 backend/standard-ID/atomic capture remain open.
+Preserve all13 historical Registry brand/product/team/licence/skill/loop/outcomes.
+Arcanea community403/458/493 is another owner's work; do not borrow implementation,
+rights/rendered/customer/creator acceptance. Use accepted Registry, existing tools
+and exact owners; no invented teams or competing business queue. Seek an accepted
+traced owned brand workflow with actual actor/artifact/cost/outcome/recovery.
+Fresh machine/storage admission before heavy work. Retained claims require
+explicit release, never TTL or lock age. Save hub session/ledger/one prompt and
+existing issues. Keep the goal active until every original requirement passes.
+This turn made progress; consecutive impasse count remains zero.
 ```
 
 [Starlight integration continuation, Codex]
