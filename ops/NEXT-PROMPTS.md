@@ -27,7 +27,28 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT authored-homepage derivative in draft #496:
+CURRENT footer recovery proposal in draft #497:
+HEAD b5bf8e5713c898a6473161e96409022e5feb2366, branch
+agent/codex/arcanea-footer-capture-20261002 in existing source worktree below.
+Fresh main740/public feedback preserved. Baseline callback race reproduced;
+pending input/ref guard, explicit success, retained errors/deadline retry,
+known400 cue/focus and stable polite status. Existing subscribe backend unchanged.
+Reuses compatible493/494 helper. Six files below500/local17/format/syntax pass.
+Full6 source01490 PASS/WARN corrected; full2 d416 PASS/three INFO. Final capture-only
+b5bf review prepared but denied before invocation at RAM2738/floor4096, no PID or
+verdict. Completed PIDs47408/55912 absent; listUSD0.6038616/billing unverified.
+Initial CI36958730233 FAILURE retained; runtime d416 CI36959577948 SUCCESS/all four
+checks/four contexts. Artifact11207453223 digest/11 source hashes/20 companions
+checked; five images viewed and saved-mobile header occlusion found. b5bf changes
+only capture: centered signup panel/exposed controls/declared scope, no masking.
+Final CI36960437718 SUCCESS/all four/native17/four contexts; artifact11207618970
+digest/11 source hashes/20 companions checked, six current captures unobscured.
+One-file source review stays open; source36960276417 cancelled after
+PR description edit. Keep actual handles and276 final receipt, no latest-pass claim.
+d416 preview CANCELED; earlier01490 READY unrendered; b5bf not returned by current project listing. No staging
+DB/mail/customer/real AT/deployed-source/rights/release acceptance. No own service.
+
+RETAINED authored-homepage derivative in draft #496:
 HEAD9a543a23b635d70f840013832073b466b149bbeb, branch
 agent/codex/arcanea-homepage-workbench-20261002 in the existing source worktree below.
 Reuses403 owner/source/audits and main creator/auth/storage/JSON-LD/tokens. Authored
@@ -81,17 +102,16 @@ Browser HOLD7801/8192MiB; no browser, foreign cleanup, live signup, mail or DB w
 Original403 f20484f8ec7cc02e2f9507f08186057597360db5 draft/keep and owner audit intact.
 Read planning-with-files/CURRENT_STATE_2026-10-02_COMMUNITY_CAPTURE.md and #276.
 
-NEXT: preserve496/494/493 as separate reviewed proposals. Assess footer
-pending-email/late-success against fresh main, retaining its durable subscribe
-backend. Preserve403 provenance and accepted world/auth/CI. Obtain authentic
-creator/real generation/save and same-source deployment acceptance under427 when
-authorized/admitted. Launcher027 no-origin on agent/claude/skill-bundles remains
-unapplied; owner/upstream clarification pending. Existing487 already proposes
-README/map/security/community/contribution/conduct and repository/bugs metadata;
-licence/rights choice, main integration and zero-ready promotion remain open.
-Continue worlds/releases/audience, rights/folds/plugin/MCP/community/revenue with
-shared owners. No duplicate public-entry proposal, app merge/mark-ready,
-archive/history/licence/canon/manuscript/release decision or production change.
+NEXT: refresh497 exact-head CI/artifacts and finish its one-file capture review
+when admitted. Then verify public MCP reader client configuration/health/protocol,
+public-canon/licensed-Studio copy and its signup state against existing393/388/421/478
+owners. Official Claude remote connectors are account-brokered; local Desktop
+config is a separate mechanism. Current default urllib health GET403 is not outage
+or handshake proof. Existing421 OPEN/non-draft e84b owner preserved. Retain496/494/493,
+403 provenance/world/auth, zero-ready487, launcher027 upstream question and #427
+same-source deployment/real generation/save/creator acceptance. Continue worlds,
+rights/folds/plugin/MCP/community/revenue; no duplicate public entry, app merge,
+mark-ready, archive/history/licence/canon/manuscript/release or production change.
 
 RETAINED pinned resource correction in existing draft #487:
 

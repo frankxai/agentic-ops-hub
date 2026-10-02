@@ -4,6 +4,29 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Arcanea footer recovery, draft497 (Codex)
+
+- Source b5bf8e5713c898a6473161e96409022e5feb2366 preserves fresh main740
+  and existing subscribe backend. Pending input/duplicate guard, explicit receipt,
+  retained failures/timeout retry, known400 focus and stable labelled polite status.
+  Reuses compatible493/494 helper. Canon/auth/dependencies unchanged.
+- Local17 pass; full6 source01490 PASS/WARN corrected, full2 d416 PASS/three INFO.
+  Final one-file capture review denied before invocation at RAM2738/floor4096,
+  remains open. Owned completed PIDs absent; reported listUSD0.6038616/billing unknown.
+- Initial CI36958730233 FAILURE retained. Runtime d416 CI36959577948 SUCCESS/all
+  four checks/four Chromium contexts. Artifact11207453223 digest/11 source hashes/
+  20 companions verified, five actually viewed. Saved-mobile tall capture obscured
+  by fixed header; current b5bf captures exposed signup panel without masking.
+  Description-edited CI36960437718 SUCCESS/all four/native17/four contexts;
+  final artifact11207618970 digest/11 source hashes/20 companions verified, six
+  current panel captures viewed unobscured; one-file provider review remains open;
+  preceding source36960276417 cancelled. Keep every actual handle.
+- d416 Vercel CANCELED despite GitHub success; earlier01490 READY unrendered here;
+  b5bf not returned by current project listing. No live DB/mail/customer/real AT/deployment/release proof.
+  Retain496/494/493/487/490/491 and403 owner/audits, zero-ready skills and open
+  decisions. #408 named merge/#427 gates remain. Next: capture review, then public
+  MCP client setup/health/protocol/rights-copy against existing owners. Full goal active.
+
 ## 2026-10-02: Arcanea authored homepage, draft496 (Codex)
 
 - Source9a543a23b635d70f840013832073b466b149bbeb reuses403's authored example
