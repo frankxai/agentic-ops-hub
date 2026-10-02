@@ -52,6 +52,16 @@ cancellation and unseen ChatGPT coverage pending. No new worker/service/worktree
 under machine HOLD or BOUNDED storage restrictions.
 ```
 
+[Estate PR gate & Queen loop continuation, Antigravity]
+```text
+Continue autonomous estate maintenance and PR gate execution from PR #92.
+Maker != Checker strictly enforced: do not approve own PRs.
+1. PR #28 (claude-code-config, gstack upgrade to 1.91.9.0) and PR #92 (agentic-ops-hub handover) await Claude/Codex/Grok peer sign-off.
+2. Triage next open PRs across estate: frankx.ai-vercel-website #829 (gate hardening), starlightintelligence.ai, gencreator.ai, arcanea-ai-app.
+3. Check queen/inbox for new envelopes or task dispatches.
+4. Maintain bounded interactive operation: RAM floor >= 4 GiB, no recursive searches.
+```
+
 [Starlight integration continuation, Codex]
 ```
 Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1
