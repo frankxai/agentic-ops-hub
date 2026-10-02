@@ -19,37 +19,49 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
+First read pp-admission-probes-20261002. Its five-file local uncommitted
+candidate removes unrelated full audits from preflight while preserving required
+measurements and exact holds; 30 actual-source admission/MCP/maintenance fixtures
+pass after two baseline regressions. Independent review, hosted typecheck/build/
+emitted/compiled checks and physical latency remain pending. Last RAM 3655 MB
+was below the 4096 MB floor. Obtain fresh review-lite admission before a checker;
+then review frozen bytes and complete exact-head hosted checks before source
+acceptance or installed projection. Keep the original 14-axis goal intact.
+
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f. All 14 estate
 axes remain incomplete. Preserve full all-brand organization/instructions/skills,
 graphs/loops/hooks/teams, local/cloud/Git, eval/observability/maintenance intent.
-Read pp-storage-validity-20261002 evidence, existing PP3/config46 and hub95.
-PP b8969b384ee6584bb187942735fad7bcb5081e28/draft4 targets main and preserves 6bb main09+c6 ancestry.
-Exact-byte system/target/temp 4/8/15 floors, explicit unknown probe holds and
-maintenance constrain/pause, structured bounded limits and caller fixtures have
-scoped independent PASS after BLOCK. Local25+14; Linux/Windows Node24 source41/
-typecheck/build/emitted41/native25/compiled79; Node18.20.8 emitted41/compiled79,
-overlapping counts, two attempt1 successes, remote12 match. Retain all earlier
-failure/review/oracle qualification evidence. Full main readiness remains BLOCK.
-POSIX crashes unsupported and elevated/other-session runtime commands unknown
-hold budgeted work. Do not weaken these into measured zero. Resolve classifier
-coverage and TS/tray parity (95/100 CPU TS2 versus tray9, 20 control agrees),
-full-audit preflight latency, baseline irreversible cleanup/prep/security bypass,
-ownership/caller/snapshot enforcement and history/MCP durability before acceptance.
-Then controlled installed projection/rollback and real reserve32GB hold/exit2
-plus ordinary reading availability. Shared wrapper/dist and foreign primary566
-remain unchanged; last installed floor fails, source PASS is not client adoption.
-Seven upstream template files/eight without fields/five absent roots remain
-qualified static findings, not Registry/host/semantic acceptance. Preserve209 root
-snapshot, historical201/3680 and full instruction/skill loading/licence/cost work.
-Preserve config79/80/84, graph/eval/lane durable actual host/artifact/recovery/cost,
+Read pp-parity-visibility-20261002 and earlier evidence, PP3/config46 and hub95.
+PP aefe42f5c923bacb2ba27821b9e9598da7c642f8/draft4 targets main, follows b896 and preserves 6bb main09+c6 ancestry.
+27-file scoped independent PASS with CI fulfilled: Windows IRQ single counting,
+TS/Python CPU/process/agent thresholds, nullable unknown grades across totals,
+history/trend/displays/doctor/CLI/MCP/tray, tree/runtime/MCP metrics and structured
+bounded Windows crashes. Local: 51 TS +26 admission +16 Python +148 common scorer
+cases incl5 audits, overlapping. Hosted Ubuntu/Windows Node 24 source 51/typecheck/
+build/emitted 51/native 26/compiled 81/parity 148, Node 18.20.8 emitted 51/compiled 81/
+parity 148, two attempt 1 successes, remote27 match. Retain all failure packets.
+Physical calibration and real tray acceptance remain unverified. Full main BLOCK.
+Preserve exact-byte 4/8/15 storage floors, fresh failed/unknown holds, ordinary
+reading, bounded limits and MCP isError; honor decision/diskGrowthPermitted first.
+Actual Windows diagnosis4 missing runtime commands (3node/1shell),0 malformed
+rows. Keep capacity unknown; no elevated visibility or invented zero. POSIX
+crashes unsupported. Next replace full-audit preflight (Git/GPU/temp) with bounded
+necessary evidence; resolve remaining classifier coverage and source irreversible
+cleanup/prep/security bypass, ownership/caller/snapshot/history/MCP safety before
+controlled installed projection/rollback and actual 32 GB hold/exit2/read acceptance.
+Shared wrapper/dist and foreign primary566 untouched; last installed floor fails.
+Seven upstream templates/eight without fields/five absent roots remain static
+qualifications, not Registry/host/semantic acceptance. Preserve209 root snapshot,
+historical201/3680 and instruction/skill loading, licence, authority and costs.
+Preserve config79/80/84, graph/eval/lane actual durable host/artifact/recovery/cost,
 all 13 historical brands and product/team demands, GenCreator exclusive/uncertain
 save/caller/storage and demand62 backend/standard-ID/atomic capture, original
 SIS150 20-task/host/transport/restart programme and denominators. Seek an accepted
 traced owned brand workflow with actor/artifact/cost/outcome/recovery.
 Fresh machine/storage and full retained ownership checks before heavy work.
-No new competing service/queue, no false team/customer/cloud outcomes. Preserve
-other edits/history/prompts and unfinished task records. Save handover only in
-agentic-ops-hub and update existing product issues. Release own lanes/workers.
+No new competing service/queue, false team/customer/cloud outcomes or fanout.
+Preserve other edits/history/prompts and unfinished task records. Save handover
+only in agentic-ops-hub and update existing product issues. Release own workers/lanes.
 ```
 
 [Starlight integration continuation, Codex]

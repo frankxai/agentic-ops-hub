@@ -750,3 +750,108 @@ Product records: [PP issue 3](https://github.com/frankxai/peak-performance/issue
 and [config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46).
 Evidence: private pp-storage-validity-20261002 frozen source, tests, reviews and
 readbacks. Prior failed tests and review findings remain recorded.
+
+
+## 2026-10-02T03:57:17.044947+00:00: PP tray parity and unknown health (Codex)
+
+PP draft #4 targets main at source `aefe42f5c923bacb2ba27821b9e9598da7c642f8`, following b896 storage/probe
+validity. Full estate goal active; all 14 axes remain incomplete. This owned
+27-file repair makes CPU/process/agent scoring use the same thresholds in
+TypeScript and Python. Windows CPU system time already includes interrupt time;
+the delta denominator now counts it once. Python uses two raw per-core samples
+and JavaScript half rounding. Synthetic 95% saturation now scores 2 in both.
+
+The first scoped PASS raised refinements, which were fixed before final review:
+redacted MCP duplicate signatures, recovery alerts, hidden crash child window,
+JS capacity rounding, pinned Python runtime, capacity status and truthful displays.
+Reserved preflight now requires fresh measured memory/disk/CPU/process/crash
+evidence; old incomplete plans hold. Unknown capacity cannot trigger cleanup
+or a restart diagnosis from fabricated zero.
+
+Unknown or invalid required evidence returns null gate and audit scores with
+grade UNKNOWN. Audit totals, history, best/worst comparisons, trend deltas,
+terminal/Markdown/compact displays, doctor, CLI/MCP changes and tray state carry
+that distinction. A probe exception clears a stale healthy tray grade. Python
+process metrics include observed agent trees, task runtimes, MCP leaves and
+duplicates. Command lines stay transient. Failed enumeration, partial rows and
+denied runtime commands remain unknown. Python Windows crash collection uses
+structured Application Error events and an eight-second deadline; POSIX remains
+unsupported. Known critical gates and crash loops retain their numeric caps.
+
+Independent provider review: two scoped conditional PASS reviews, then final
+three-file reconciliation PASS with the other 23 hashes unchanged, then a
+single-test refinement PASS with the other 25 hashes unchanged. Final compiled
+fixture-only reconciliation PASS preserves the other 26 hashes. Final 27 source
+bytes are frozen, with the
+CI condition fulfilled. Preserve every prior review and failure. Current slice
+completed review cost: USD 2.6632520 list equivalent; 0 completed
+review cost entries unknown, billed cash unknown. Earlier partly unknown costs
+are preserved. Local: 51 actual-source TS tests, 26 admission/MCP fixtures,
+16 isolated Python collectors/actual tray methods and 148 common scorer cases,
+including five full synthetic audits and three matching collector fixtures. The Python crash collector also ran on
+this Windows host and CI; no real tray session was started. Counts overlap. The initial two local
+failures were directory cleanup EISDIR; rmdirSync fixed the fixture without
+weakening assertions. Initial hosted head 15b failed both runs because the
+compiled normal control omitted required memory/disk fields; Node 18 steps were
+skipped. Those failures remain recorded. A test-only child commit repairs the
+measured control and adds two emitted legacy-plan hold checks; production gates
+and old assertions are preserved. Hosted Ubuntu/Windows Node 24: source 51/typecheck/build/
+emitted 51/native 26/compiled 81 and source/emitted parity 148; Node 18.20.8:
+emitted 51/compiled 81/parity 148. Both exact-head runs passed attempt 1, no
+failures/skips/cancellations on the final head; 27 remote blobs match reviewed bytes.
+- https://github.com/frankxai/peak-performance/actions/runs/36960571452
+- https://github.com/frankxai/peak-performance/actions/runs/36960568292
+
+Physical CPU calibration and a real tray session are unverified. POSIX counter
+coverage follows Node's five counters; Linux iowait/softirq/steal coverage stays
+open. Full main readiness remains BLOCK for remaining process classifier
+coverage, irreversible cleanup/prep and inherited doctor/Git advice, expensive
+full-audit preflight, caller/ownership/snapshot enforcement, history/MCP
+durability, installed/client acceptance and controlled rollback. No main merge,
+runtime projection, client registration, local dependency install/build, new worktree or monitor
+startup occurred. Shared launcher/dist and foreign primary remain unchanged;
+historical installed RAM-floor failure remains open.
+
+Read-only Windows process diagnosis found four missing runtime commands:
+three Node processes and one shell, zero structurally incomplete rows. This
+explains the current source visibility hold; no permission assumption or
+process termination was used to remove it. POSIX unsupported crashes also hold
+budgeted admission. Fresh review-lite admission at UTC 03:17:28 was bounded:
+6504MB free versus 6144MB required, one reviewer; disk remains bounded. Final bounded source probe observation
+at UTC 03:31:46 measured 2283 MB free, below 4096 MB floor; CPU 79/system 40,
+process capacity unknown (799 processes/32 runtimes), crashes 0 and all storage
+scopes bounded. All owned reviewers were already terminal. Remaining work
+uses cloud CI readback and text saves; no other process was stopped. No
+installed CLI or workload acceptance is claimed.
+
+Keep the full instruction/skill/Registry and upstream qualifications, all-brand
+products and teams, config79/80/84 installed hooks, graph/eval/lane durable host,
+artifact/recovery/accounting, GenCreator uncertain/exclusive save and caller
+durability, demand62 backend/standard-ID/atomic capture, and original SIS150
+20-task/host/transport/restart programme and denominators. Next: replace full
+audit admission with the necessary bounded fresh evidence, then resolve source
+safety and controlled installed/consumer acceptance while continuing all 14 axes.
+
+Product records: [PP issue 3](https://github.com/frankxai/peak-performance/issues/3)
+and [config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Private evidence: pp-parity-visibility-20261002 frozen source, local checks,
+review packets, process diagnosis, CI and remote readbacks. All earlier history
+and other continuation prompts remain preserved.
+
+Current admission follow-up (local source candidate, pending acceptance):
+Five files on the same owned PP worktree now separate headroom collection from
+full audit. Preflight collects memory, CPU, disk, processes, uptime and crashes
+plus the three storage scopes; GPU/Git/secrets/temp-file/knowledge audits are
+skipped. Full maintenance still audits all gates. Admission-only maintenance
+carries null score and UNKNOWN grade with an explicit uncollected-score summary.
+Baseline dependency fixtures failed two regressions; the repair passes all 30
+actual-source admission/MCP/maintenance fixtures. All five unknown/unsupported
+holds, RAM reserve/floor, exact storage thresholds and freeze on reading remain.
+The five-file diff and hashes are frozen in pp-admission-probes-20261002.
+This candidate is uncommitted, unpublished and unreviewed. Hosted typecheck,
+build/emitted/compiled checks and physical latency acceptance remain pending.
+At UTC 03:53:16 RAM was 3655 MB, below the 4096 MB floor; no reviewer, build,
+install or full machine probes were started. After resource recovery, require
+fresh review-lite admission, independent provider review, then exact-head hosted
+checks before accepting/publishing this candidate. Preserve the previously
+verified aefe candidate and all failure/review evidence; all 14 axes stay open.
