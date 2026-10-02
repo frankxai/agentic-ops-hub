@@ -2,7 +2,16 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-01 (fleet pass: #81 remeasured, #466 updated onto main, two superseded drafts closed) · earlier 2026-10-01 and 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-01 — fleet pass (YogaBook)
+
+- Open frankxai PRs: **432** before this pass, **385** after the same REST search. Closed here: claude-code-config [#17](https://github.com/frankxai/claude-code-config/pull/17) and [#20](https://github.com/frankxai/claude-code-config/pull/20), superseded by draft [#26](https://github.com/frankxai/claude-code-config/pull/26). The other drop was not this session. No mass close. Human gates stayed with Frank. Hermes was not stopped.
+- [agentic-ops #81](https://github.com/frankxai/agentic-ops/pull/81) head is `c9c1a766`. The Codex findings on `8078e68` are addressed on that head (opened trigger, no branch-name skip, incomplete review fails). Codex code-review usage is exhausted. Not signed off and not merged.
+- [arcanea-ai-app #466](https://github.com/frankxai/arcanea-ai-app/pull/466) fast-forwarded to `3089cb7866`. Migration `20260926000001_waitlists.sql` kept. Product waitlist stays on demand capture. Footer subscribe writes `public.subscribers` through `captureEmail` (5/5 tests). Draft until a different harness signs that SHA.
+- Live: Arcanea unknown paths and `/waitlist` are still HTTP 200. Those two defects are the unmerged draft, so no second chain was queued. Frankx, starlightintelligence.ai, akamoto.io, and gencreator.ai unknown paths returned real 404s. A third production defect outside an open PR was not proven, so `queen/chains/` was not given a new plan.
+- Jules was not started. Awaiting User Feedback remains on sessions `10254169434191635759` and `1814326469422839011`.
+- Full recap: `ops/sessions/2026-10-01-fleet-pass.md`. This branch is `agent/grok/fleet-close-2026-10-01` from `origin/main` `a378f0b`. Primary checkout remains `agent/hermes/fleet-task-contract-v1`. Hub #84 stays a draft.
 
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
