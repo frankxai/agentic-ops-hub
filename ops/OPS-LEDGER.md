@@ -4,6 +4,30 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Estate team audits and PP journal repairs (Codex)
+
+All 14 estate audit axes remain incomplete. Four pending slices are recorded here after the previous owner released the shared ops files.
+
+### GenCreator proposed team
+
+[Draft PR111](https://github.com/frankxai/gencreator.ai/pull/111) at `d4046ac1` proposes eight roles absent from observed main `1ca14c1`. Lint/unit/design/editorial checks passed; build and e2e were skipped, CIStatus failed, and no review was recorded in the audited result. All 21 locked skills were present. Two MCP sources use Apache-2.0, contradicting the all-MIT claim. Lock rows lack original upstream commit pins and a stated hash algorithm. Skill presence does not establish native loading, rights, or team acceptance. [GenCreator issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5949322094) and [agentic-ops issue51](https://github.com/frankxai/agentic-ops/issues/51#issuecomment-5949323096) retain the qualifications. Registry `69900c6` has 0 canonical agents, 9 producer roles, 5 studios, 13 brands and 26 products; identities still need reconciliation.
+
+### Queen receipt and installed-source audit
+
+Published Git branch `queen/receipts` at `89489140` contains five records: four succeeded and one blocked. Three local verifier copies bind exact worker receipt bytes, task, commit, assigned ref, dispatch base and required commands. The academy record matches merged PR37; buyer acceptance, authenticity, output recovery and cost/trace proof remain open. Installed release `f5e8` matches four release files but lacks main's required-ancestor binding. A pure function probe reproduced the gap. The live dispatcher also differs from its manifest and has later local edits; reconcile through its owner before rollout. The dated queue observation had no inbox/running records. Scheduler success and historical PIDs do not prove a live team. [Issue51 receipt](https://github.com/frankxai/agentic-ops/issues/51#issuecomment-5949625308). Queen activation remains the separate issue134 owner's work.
+
+### PP independent BLOCK and repairs
+
+The full inherited V5 text review returned BLOCK. It ran without tools/MCP, completed normally using claude-sonnet-5-5 and reported $1.4027708 at list rates; actual invoiced cash is unknown. Raw packet SHA256 `5174ebf456bc1d03374a0d83ef1f34b7ad15ff5fa3263bc8b12893dfbc0282a5`; exact sent text SHA256 `2939c9bbac6a62a020a01ea81e0b42047dffce91706f5adf2040cd06781831b2`. Newline normalization explains the difference. Historical V1 BLOCK and V2-V6 evidence remain preserved.
+
+Initial repairs protect Python Git collection with argument arrays, optional locks disabled and environment/cwd checks; preserve unfinished tasks in advice; redact header credentials; retain measured health when history fails; and qualify diagnostic estimates. These are local source changes. Junction/tool trust, actual Python index preservation and complete collector validity parity remain open.
+
+V7 adds a 500 ms lock-acquisition wait before appending, distinct capacity/lock holds and owned aborted-watch receipts. Foreign locks and existing history remain intact. Append/sync uncertainty receives no automatic retry. Separate Node watch processes with synthetic census/time and real filesystem I/O prove contention, retention of both events and separate receipts. CLI watch returns an aborted receipt and exits2. `measurementStatus` is separate; `persistedEvents` counts confirmed appends, so uncertain data can exist outside that count. Completing a receipt manifest does not make the watch successful or prove physical durability.
+
+Final evidence: 67 source remediation checks, 29 Python checks, 148 scoring parity cases, five audit cases, three collector comparisons and diff whitespace passed. V7 remains 32 dirty files and 42 full inherited files on PP base `2d9d0fe`, unstaged/uncommitted/unpublished. Candidate receipt SHA256 `6725ee3a59e4a86668e10b2ccf71de47e115008f398c29ecbe6c5aa2785c3a1c`. V7 has no independent review. Remaining launcher diagnostics, tray entry point, collector/capture parity, workflow/action provenance, harness BOM and external readers precede the next review. Typecheck/build/emitted/Node18, installed adoption and physical calibration remain open. Installed PP and draft PR4 are unchanged. [PP issue3](https://github.com/frankxai/peak-performance/issues/3#issuecomment-5950943689), [config issue46](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5950944060).
+
+The original brand/product/team and AGENTS/skills/graphs/loops/hooks/evals/observability programme remains open, including SIS150's original 20 tasks, 19 hosts, 10 transports and seven restart programmes. Keep prior hook/instruction adoption qualifications, GenCreator customer/provider/rights/demand work and paused Langfuse/Railway state. No new review call, install/build, worker activation or runtime projection was made for the journal slice.
+
 ## 2026-10-02: Queen foundation and hardening on main; activation pending (Codex)
 
 - Frank explicitly requested continuing end-to-end production build and main integration. [PR135](https://github.com/frankxai/agentic-ops/pull/135) merged as `7d3424916a7cb1794cd045244fd951c5b43199cd`, after independent full exact-head APPROVE, 47 tests and passing CI. [PR138](https://github.com/frankxai/agentic-ops/pull/138) merged as `7585db643af86ca404e397489355e3c767f89f1b`, after independent final hardening APPROVE, 52 tests and passing CI. Both merges used the existing cross-harness gate with matching heads.
@@ -307,3 +331,997 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+
+
+## 2026-10-01: estate fundamentals continuation (Codex)
+
+The full estate audit and implementation goal is active. One local ledger repair
+is verified: 17 reproduced validation errors resolved with exact backup,
+preserved unfinished work, tested rollback/concurrent-change refusal and an
+independent Anthropic conditional PASS whose requirements were checked. A later
+external append was preserved and the ledger still passed (74 signals, 20
+objectives, four candidates). The daily job remains paused.
+
+Source recovery update: nine catalog references now resolve to a pinned snapshot
+of reviewed config main `9c87802`. Two of thirty targets remain absent and explicitly
+unavailable. Eleven source tests and fifteen fresh Windows transaction tests passed;
+an independent Anthropic PASS bound the final transaction. All nineteen other
+entries were preserved. Source utility: config commit `1c39664` on
+`codex/orchestration-integration-20260923`, pushed and read back; not merged to main.
+
+PP admission update: corrected core/CLI/MCP source is pushed at `7cc20b9`.
+[Issue 3](https://github.com/frankxai/peak-performance/issues/3) and
+[draft PR 4](https://github.com/frankxai/peak-performance/pull/4) track the reserve
+gate and source integration. Eighteen actual-source/fixture-protocol cases pass;
+independent Anthropic core/CLI and MCP reviews pass. The running Hermes checkout
+is unchanged. Dependency tests/build/typecheck, producer/main integration and an
+owned runtime projection remain open. Disk crossed below 15%; installs, worktree
+adds and build fanout are held. The pressure receipt is recorded privately.
+Source review also found age-based writer-lock deletion in the legacy lane helper
+and pre-existing MCP cwd response/existence-check concerns; those remain open.
+Registry main `bd4d2f2` was read in the instruction slice; collections remain unchanged from the prior pin.
+
+Instruction source update: config `08d6e80`,
+[draft PR80](https://github.com/frankxai/starlight-agent-config/pull/80), restores
+three policies and corrects three guides. Independent Anthropic PASS follows two
+preserved BLOCK rounds; six Git-index bindings, frontmatter/reference checks,
+whitespace and staged secret scan pass. Doctor is presence-only19/20, exit0.
+Source integration and runtime adoption remain open; junctions still point at the
+occupied primary and installer/doctor cover SDS only. Two release-control checks
+passed at readback; draft PR merge state remains blocked.
+
+Current blockers: missing estate/storage sources and two absent skill sources;
+owned projection/fresh-task loading; canonical agent identities; effective hooks,
+eval pilot, brand bindings and cloud trace proof. Legacy lane preservation and
+concurrency repair now have [issue4](https://github.com/frankxai/starlight-command/issues/4).
+Full estate acceptance remains incomplete. Existing records:
+[config40](https://github.com/frankxai/starlight-agent-config/issues/40),
+[config46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Handover: `ops/sessions/2026-10-01.md`, Instruction source recovery section.
+Private source/review evidence remains in the existing objective-ledger audit.
+Next: integrate and verify the reviewed instruction projection, reconcile remaining
+sources and repair isolated lane ownership, then continue the eval pilot and brand
+workflow proof. Historical ledger/catalog measurements above were not remeasured.
+
+Execution safety update: private lane candidate 77 core checks plus 96 differential pairs; Anthropic PASS for
+the held static source slice with author test evidence, with prior BLOCK rounds preserved. Live source is
+unchanged. Frozen 819-event journal replay fails compatibility at line 252;
+23 owners remain unreleased. Actual verify-lane permits protocol failures 2/4.
+Canonical source/migration/recovery/shared authority and caller/hook denial
+remain gates in [command issue4](https://github.com/frankxai/starlight-command/issues/4).
+Eval mirror PR16 has 8 source checks but unbounded synthetic per-cell accounting;
+no live model-quality run. [SIS150](https://github.com/frankxai/Starlight-Intelligence-System/issues/150)
+owns the host repair and original 20-task release denominator. The former hub
+owner explicitly released; this three-file save now replaces the deferred save.
+All 14 estate axes remain incomplete. Pickup: session Execution safety and eval
+accounting continuation; preserve the other Codex/cloud prompts.
+
+Eval accounting continuation: private V3 passes45 tests (37 accounting plus8
+frozen comparator), including a six-cell actual-comparator wrapper fixture.
+Independent static Anthropic PASS follows two preserved BLOCKs and carries
+mandatory authority/pattern/parent/late-fact/shared-state integration conditions.
+No canonical source/runtime update, approved budget or live model-quality call.
+Methodology SIS150 and original20-task release denominator remain unchanged;
+swarm15 owns durable authority, SIS147 reconciliation, SIS125/124 verification.
+Old mirror PR16 host/CLI remain unprotected. Source/promotion stay held. Both saves:
+SIS150 comment5937462717 and this hub branch/PR95. Full14 estate axes incomplete.
+Pickup: session Per-invocation eval accounting candidate; private REVIEW-GATES.md.
+
+Graph/checkpoint continuation: six exact-main failures reproduced, private source
+repairs pass32 original+18 new tests=50. Three independent static Anthropic PASS
+reviews bind final source; generated JS/dependencies and private patch bytes checked.
+Canonical source/runtime unchanged. Focused [SIS graph issue](https://github.com/frankxai/Starlight-Intelligence-System/issues/266) and
+[swarm15 receipt](https://github.com/frankxai/starlight-swarm/issues/15#issuecomment-5938322059) contain exact patches/regressions; this hub
+branch/PR95 saves handover. Source ownership/storage/typecheck/actual durable policy,
+artifact authority and bounded resume/provider recovery remain gates. SIS150 original
+twenty-task release criteria unchanged; all14 estate axes incomplete. Pickup:
+session Graph budget and checkpoint recovery repairs; private graph-runtime leaf.
+
+Hook-source continuation: selected effective-declaration audit reproduced installed
+guard truncation, recursion/exit1 and malformed-input acceptance. Reviewed portable
+source 3f2ba5d/[draftPR84](https://github.com/frankxai/starlight-agent-config/pull/84) passes26 local tests plus26 Windows
+and26 Linux tests in actual source-head CI. Two static review BLOCKs corrected;
+final guard and workflow/doc PASS. Four remote files verified. Installed bytes
+unchanged; native timeout/load/interpreter/host adoption remains gated by issue78
+and PR79. [Product receipt](https://github.com/frankxai/starlight-agent-config/issues/78#issuecomment-5939254590); handover here/PR95.
+Deferred graph handover is included. All14 estate axes remain incomplete.
+Pickup: session Effective hook audit and bounded secret guard source; private
+hooks-audit-20261001/published-evidence.json.
+
+Brand/team continuation:18 current Registry collections reconcile13 brands/26
+products/54 repo declarations,24 default-head pins and42 named local directories.
+Five manager/projection pairs match; zero canonical agents and16/10 direct studio
+memberships do not establish teams. All13 roots return200 directly/via own www.
+GenCreator current production source-bound/CI845 unit+118 browser pass/2 skip;
+PR95 separately121 pass/2 skip remains open. Creator Launch alias still302 SSO,
+source SHA unbound. Durable creator/demand/outcome gates remain open. Static audit
+PASS with nonblocking clarifications; private raw data preserved. Existing
+[team51](https://github.com/frankxai/agentic-ops/issues/51#issuecomment-5940198763),
+[Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940199231) and
+[Launch3](https://github.com/frankxai/creator-launch-os/issues/3#issuecomment-5940199624) saves verified; hub handover here.
+All14 estate axes incomplete; session Brand and team source reconciliation.
+
+Creator/demand source continuation: published Gen programmec0ff/local a96 preserved;
+private readback repair e1d8da46 applies exact bytes/staticPASS, unintegrated.18
+safety checks/9 defect reproductions/3 expected open-gate cases; readback does not
+prove reload or transaction. Legacy demand4fd source reproduces count/update/
+withholding/report defects, absent from scoped current command7d78/opsbd4d trees.
+Gen notes-to-Growth Core versus KV remains unresolved; no live/customer proof.
+Existing [Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940944686) and
+[demand62](https://github.com/frankxai/agentic-ops/issues/62#issuecomment-5940945180) saved/readback match. Preserve proposed
+O1/Cloud97/full door and managed creator gates. All14 axes remain incomplete.
+Pickup: session Creator save and demand reporting source defects; private
+creator-demand-recovery-20261001/REPORT.md. Actual canonical ownership, transaction,
+recovery, demand report, accepted artifact/outcome/trace/cost remain next work.
+
+
+
+## Peak Performance project gates and MCP ID0 repair (Codex)
+
+Source task01a0f720-641c-7af2-af40-cc12eafd6a4f. Full estate goal active,
+all14 axes incomplete. This turn and the prior turn made progress.
+PP source head [b12d8ec0](https://github.com/frankxai/peak-performance/commit/b12d8ec0a12547e9a1585c20dba2e8be105e64d4)
+on [draft PR4](https://github.com/frankxai/peak-performance/pull/4), still targeting
+the existing Hermes producer branch. Fresh pre-slice head was original7cc20b9;
+the earlier claim that peers had advanced it was not supported by this read.
+
+[Final exact-head CI](https://github.com/frankxai/peak-performance/actions/runs/36933071875) passed Linux/Windows: frozen dependency install,
+source21, typecheck, build, emitted21, native fixture18 and compiled contracts8
+per platform, zero failures/skips. Push and PR runs both passed. Overlapping
+source/emitted/native suites and platforms are not summed as unique coverage.
+Node24.16.0/pnpm11.5.0, pinned actions, read-only token, sequential matrix;
+exact candidate head checked, no merge-ref integration certification.
+Four changed remote files byte-match. Source is CommonJS; compiled tests run
+actual emitted CLI/MCP child stdio with only sensor builder replaced. Synthetic
+metrics establish reserve/floor/hold-exit and adapter dispatch behavior.
+
+Independent review found unknown-method id0 dropped by source if(id). Actual
+source reproduction retained; id!==undefined fixes it, with emitted stdio
+regression and ignored notifications/id1 preserved. README four-tool and pnpm
+instructions corrected. Two serialized tool-free Anthropic staticPASS reviews,
+USD0.5027916 list equivalent, actual cash unknown.
+Proposed quoted test glob reverted exactly before publication to avoid a possible
+Node18 compatibility regression; reviewer packets retained, remaining changed
+code exact to final packet. Current21 tests run on both CI platforms; broader
+Node18/nested-test discovery and malformed cwd handling remain open.
+
+Installed primary dist/wrapper and main unchanged. Producer/main integration,
+real consumer floor enforcement, sensor accuracy, launcher/package reconciliation,
+MCP protocol/version conformance and accepted live workflow are still gates.
+No local install/build, deployment/merge, scheduler/role/service activation,
+customer capture or model-quality eval. Prior PP21:56:50Z bounded7652MBfree versus
+6144required; disk13.88% bounded at read. Text/small tests and one serialized
+review at a time, no fanout. Security scans active and pass for both commits.
+
+Both saves: [existing PP issue3](https://github.com/frankxai/peak-performance/issues/3#issuecomment-5941658442) with body readback, and this hub
+session/ledger/next prompt. Preserve prior GenCreator/demand62, configPR79/80/84,
+graph/eval/lane held source and original SIS15020-task acceptance program.
+Next: resolve owned producer/main integration and runtime enforcement, harden
+the confirmed adapter boundary gaps, then an accepted traced brand workflow.
+
+## PP MCP boundaries, launcher and encoded probe path (Codex)
+
+Source task01a0f720-641c-7af2-af40-cc12eafd6a4f. Full goal active, all14 axes
+incomplete; previous/current turns progress. PP source 8ab0d94b87635002c07ee25a66d77fa348935588 in draftPR4,
+still targeting the existing Hermes producer branch. [Exact-head CI](https://github.com/frankxai/peak-performance/actions/runs/36936982202)
+and push run36936976615 PASS. Linux/Windows Node24: frozen install/source21/
+typecheck/build/emitted21/native18/compiled53. Node18.20.8: emitted21/compiled53.
+Zero failures/skips/cancellations; overlapping suites/versions/platforms are not
+unique totals. Node18 EOL and allpatch/real-tool support are not certified.
+Seven changed remote blobs match exact candidate bytes.
+
+CLI --mcp/mcp now launches actual adapter; emitted initialize/admission pass.
+Request/id/params/args/cwd/dryRun/format/theme/count checks precede operations;
+notifications never execute tools, IDs on notification methods are rejected,
+ping works, failures are generic/correlated. Existing absolute directory required;
+no silent cwd substitution. Input65,536 UTF16 cap drains to newline/recovery.
+Private actual-source VM10 additionally verifies controlled fragments/exact limit.
+Fixtures deny all audit/fix actions and use synthetic metrics; no live probes.
+
+First conditional staticPASS treated BLOCK when actual Windows probeGit cwd
+interpolation was found. Actual original/candidate source with synthetic process/
+filesystem interception plus real PowerShell parser AST: adversarial string adds
+Write-Output in old script, candidate contains only intended size pipeline and
+round-trips path as encoded data. No captured script executed; this is not a
+reachable live MCP attack certification under prior filter/filesystem constraints.
+Candidate UTF8/base64+LiteralPath closes script interpolation; emitted tests
+intercept Git/size children, and Windows executes only a bounded decode/reencode
+prefix guarded by delimiter/absence/exact-grammar assertions.
+
+Second static AnthropicPASS; two tool-free calls USD0.6827356
+list equivalent, cash unknown. Frozen packets retained. Author post-review adds
+requested test containment, permanent-deletion description and UTC/newline/
+cwd-scope/error/hint docs; production logic unchanged, not third provider review.
+Real pp_fix default deletion remains, hints are not approval enforcement. Removed
+false reversible/PP_CWD/macOS Full claims. Official anonymous package reads both
+names404 at2026-10-01T22:18Z; source checkout instructions replace npx promises.
+
+Current config primary Grok branch cb4655ed and main7d3946af lack exact capability/
+progressive guide paths. Both exist/read/hash-bound in original instruction
+candidate08d6e80/PR80. Recovered source qualifies reading; source/main/projection
+integration remains open. Preferences absence on main is an expected user-contract
+exception. No foreign primary, settings or global capability changes.
+
+Both product saves readback:
+- https://github.com/frankxai/peak-performance/issues/3#issuecomment-5942245043
+- https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5942245321
+Hub session/ledger/prompt save was prepared but retained foreign codex-c37e1409
+owned same files. Never infer terminal ownership from age/TTL. Preserve that task
+and unfinished records. Source/main/runtime/client/package/live sensor/consumer
+floor enforcement, UNC/device/network-authentication paths, full lifecycle/version/
+access/rate/schema and accepted brand workflow remain open. No deployment/merge,
+local install/build/worktree/fanout, customer writes, live fixes or quality eval.
+PP22:27:54Z bounded8442MBfree/6144required, parallel1; disk13.81% bounded, now dated.
+Prior creator/demand/configPR79/80/84/graph/eval/lane and SIS150 gates preserved.
+Next: save this deferred hub packet when ownership is explicitly released, then
+resolve source/main/runtime/client safety and accepted traced brand work.
+
+Retained codex-c37e1409 explicitly released at 2026-10-01T22:45:43.085Z; own lane acquired
+after full journal replay. The deferred hub packet is now saved in this session,
+ledger and one current estate prompt; other prompts/history are preserved.
+
+## PP path spelling gate and installed floor observation (Codex)
+
+Source task 01a0f720-641c-7af2-af40-cc12eafd6a4f; full goal active, all 14 axes
+incomplete. PP source 2c4252099a7107bbd9e9c6a7fd7655dc72f7a7b0 in draft #4, existing Hermes producer base.
+[PR CI](https://github.com/frankxai/peak-performance/actions/runs/36940718872) attempt 2 and push CI36940714619 pass. Linux/Windows Node 24:
+frozen/source 21/typecheck/build/emitted 21/native 18/compiled 58; Node 18.20.8
+emitted 21/compiled 58. Final failure/skip/cancel counts zero, overlapping suites
+and platforms are not unique outcomes. Earlier PR Windows compiled attempt had
+57 pass/one guarded PowerShell decode/reencode five-second timeout. All new path
+cases passed. One failed-job retry uses identical source/timeouts/assertions;
+passes and original failure preserved. Transient cause/stability not certified.
+Four changed remote source files and unchanged workflow match candidate bytes.
+
+Every MCP tool call validates server and explicit target spellings before either
+filesystem check; both must be existing directories. Windows drive-letter paths
+supported; UNC/device/extended/root-relative/drive-relative rejected. POSIX
+leading two-or-more slashes rejected before normalization. Explicit valid target
+cannot bypass unsafe server scope for fix/trend/audit history. This spelling gate
+does not isolate mapped drives, mounts, junctions, permissions or races.
+Frozen original synthetic matrix30 reaches unsafe stat11/dispatch24. Initial
+static BLOCK identifies server bypass, frozen v1 expanded matrix38 reproduces
+eight unsafe stat/eight dispatches across four tools/two platform models. Final
+matrix38:26 invalid spelling/default+8 bypass+4 valid, unsafe stat/dispatch zero.
+All fs/tool imports synthetic, no share/probe/history/cleanup action. Second
+tool-free Anthropic source PASS; two calls USD0.6597836
+list equivalent/cash unknown. Author applies two doc nits after review; production
+and test bytes match reviewed packet. Scoped static review, no runtime approval.
+
+Actual installed compiled CLI at UTC2026-10-01T23:27:38: interactive reserve32 GB
+requires36,864 MB with7,792 MB free, yet returns bounded/exit0. Required hold/exit2
+not enforced. This asks for an admission decision only, no allocation/workload;
+not admission for further heavy work. Wrapper/dist hashes and primary5667943
+unchanged. Producer/main/runtime projection remains urgent with ownership,
+rollback and real CLI checks; zero-reserve reading exemption must still pass.
+Full MCP lifecycle/client/filesystem boundaries/live-sensor/consumer/brand outcomes
+remain open. No merge/runtime replacement/client install/customer write/live fix.
+
+Product save verified: https://github.com/frankxai/peak-performance/issues/3#issuecomment-5942693645
+The product save initially noted retained foreign codex-a76f8335 ownership of the
+same three hub files. Save only after explicit release, never by TTL. Earlier
+PR79/80/84, creator/demand,
+graph/eval/lane, all-brand team and SIS #150 original programme remain intact.
+PP interactive2 GB admission bounded atUTC23:12:54,7,880 MB free/6,144 required;
+storage13.807% bounded, now dated. No local install/build/worktree/browser/fanout.
+Next: verify this hub save's publication/checks; resolve producer/main source
+review/integration and owned runtime floor proof, then accepted traced brand work.
+
+## Root instruction identity audit and PP repair (Codex)
+
+Source task 01a0f720-641c-7af2-af40-cc12eafd6a4f. Full estate goal active,
+all 14 axes incomplete. Direct canonical-root snapshot:209 exact Git roots,
+140 root AGENTS.md,46 CLAUDE.md,7 GEMINI.md and80 harness files, all parsed.
+Formats52 legacy named/19 repo_profile.v2/9 minimal health. Earlier baseline
+counts and tracked-file inventory retained with their original scopes/dates.
+Twenty local root instruction files contain literal identity placeholders:
+19 frozen HEAD files plus one local file absent HEAD. All19 committed files
+match local text after UTF-8 BOM/CRLF normalization only. Three package-manager
+disagreements and one missing declared root script are static observations.
+Full semantics, instruction loading, skills, authority and token cost unreviewed.
+
+Initial audit's single-format assumption corrected before public report; initial
+qualification's all-files-in-HEAD assumption also corrected. Both retained.
+Current legacy generator command-free Get-AgentMarkdown function: PowerShell
+7.6.6, four identity expansions PASS, command AST count0. Existing-file guard
+does not repair old placeholders. Whole generator/health commands not run;
+name heuristics are not accepted Registry classification.
+
+Owned PP source c6d7f7c5ea9fb8a5c4036bf323865a00416dcee4 in draft4, existing Hermes producer base: four
+identity placeholders resolved; harness primaryCheck matches pnpm run build,
+date updated; build remains tsc. Resource admission and acceptance paragraph
+added. All other harness values/types retained, no new private paths. Primary
+checkout unchanged; other19 local findings remain owner/identity-gated.
+Exact reviewed two-file bytes, no post-review edit. Tool-free Anthropic static
+PASS, USD0.1168608 list equivalent/billed cash unknown.
+Review is scoped source reading, no corpus/runtime acceptance.
+
+PR36944276765 and push36944272760 attempt1 SUCCESS on source above. Per Linux/
+Windows Node24 frozen install/source21/typecheck/build/emitted21/native18/
+compiled58; Node18.20.8 emitted21/compiled58. Failure/skip/cancel counts zero,
+overlapping suites/platforms not unique totals. Two remote changed files and
+unchanged workflow match. Collector first hit Windows text decoding of its own
+copied source; corrected UTF-8 and verified logs, no CI/source changes or retry.
+Prior2c first Windows timeout and unchanged retry remain in earlier evidence.
+CI: https://github.com/frankxai/peak-performance/actions/runs/36944276765
+CI: https://github.com/frankxai/peak-performance/actions/runs/36944272760
+
+Installed reserve-floor failure observed UTC2026-10-01T23:27:38 remains open:
+interactive reserve32GB returned bounded/exit0 with7792MBfree/36864required,
+no allocation/workload. Source metadata repair does not project code to primary,
+wrapper/dist or clients. Producer/main review, ownership, projection/rollback,
+real installed CLI/consumer/MCP lifecycle and filesystem boundaries still open.
+No local install/build/new worktree/browser/fanout/scheduler/provider activation.
+Interactive2GB admission bounded UTC00:01:58,7966MBfree/6144required; disk13.8%
+bounded, dated. Secret checks enabled. Preserve original source/projection,
+graph/eval/lane durable host/recovery/accounting, all-brand/GenCreator/demand
+gates and original SIS #150 20-task programme/denominators.
+
+Verified product saves:
+- https://github.com/frankxai/peak-performance/issues/3#issuecomment-5943135667
+- https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5943136368
+
+Next: verify this hub commit/checks; requery accepted producer/main ownership,
+reconcile PP projection and prove actual installed reserve hold/exit2 plus
+zero-reserve reading. Continue owner-scoped corpus repairs/full semantics and
+one accepted traced brand workflow with actor/artifact/cost/outcome/recovery.
+
+## PP main reconciliation and upstream instruction qualification (Codex)
+
+Source task 01a0f720-641c-7af2-af40-cc12eafd6a4f. The full goal remains active;
+all 14 axes are incomplete. The earlier 209-root audit's 20 local placeholder
+findings, including 19 committed files, retain their frozen branch scope.
+Comparison with 20 exact GitHub defaults found 15 root AGENTS files: seven
+have template fields and eight do not. Five defaults have no root AGENTS file;
+repository and branch reads had no unresolved results. All 15 observed local
+heads differ from defaults. These results do not prove semantics or loading.
+
+PP main09d4917 had repaired instructions in PR #2 and diverges from producer566
+at d3a3e629. Candidate c6 omitted stronger main policy. Merge 6bb9df25c7569d3ef4f020ae53f0f27539d0a808
+preserves both histories and restores the floor, reversible-only behavior,
+parity, redaction and estate responsibilities. It removes unverified npm
+publication wording. AGENTS defaults to pnpm test and lint; the harness uses
+test as primary, with lint/build/emitted checks explicit in manual checks and CI.
+Against c6 only those two harness fields change; against main the earlier update
+date also changes. Original harness format/BOM survives. The instruction review
+went from BLOCK to PASS after refinement; full main readiness remains BLOCK.
+Draft #4 explicitly targets main. Runtime, tests and workflow are unchanged.
+
+PR36947859221 and push36947856132 passed on attempt 1. Per Linux/Windows:
+Node24 frozen install, source21/typecheck/build/emitted21/native18/compiled58;
+Node18.20.8 emitted21/compiled58. Failure/skip/cancel counts are zero and suites
+overlap. Two changed remote files and workflow match; the sparse workflow was
+checked through its exact Git blob. Earlier source2c timeout/retry evidence stays.
+CI: https://github.com/frankxai/peak-performance/actions/runs/36947859221
+CI: https://github.com/frankxai/peak-performance/actions/runs/36947856132
+
+Actual frozen maintenance/preflight/scoring functions with synthetic measurements
+show 12 genuine storage-policy contradictions in 16 cases at 3%, 5% and 10%
+free space, using an explicit 12GB reserve. Four normal 15% controls pass. The
+first default-model oracle wrongly counted one conservative normal-disk result
+and understated the 10% model restriction; its review input is preserved and
+qualified. At 8-15%, only one bounded build is permitted; model, swarm/fanout
+and unattended work are held. Below 4%, freeze holds all tested growing work.
+No real probes, allocations or workloads ran. Pure TS/tray CPU scores at 95%
+and 100% are 2 CRIT versus 9 PERFECT; the 20% control agrees. Tray was not started.
+
+Next source repairs: applicable-volume storage floors and unknown measurements,
+probe validity for fallback/locale/zero-sample cases, classification and TS/tray
+parity. Ownership/remediation, actual caller/nonzero enforcement, history and
+MCP lifecycle remain acceptance gates. Review claims were checked: c6 fields
+were already resolved and its old BOM retained; stronger main policy was lost.
+pp_fix already existed on main. Baseline cleanup/handover/overnight/history are
+unchanged. Ordinary reading stays permitted; caller/capacity proof remains open.
+No competing lease service is proposed. One review ended at its own deadline,
+with unknown verdict/cost; terminal state was confirmed before the next call.
+Completed calls cost USD1.2028564 list equivalent; total cost is partly unknown
+and billed cash unknown. Earlier failed assumptions and collectors remain recorded.
+
+The last installed 32GB reserve request still returned bounded/exit0 at 7792MB
+free versus 36864MB required, without a workload. Shared wrapper/dist and foreign
+primary are unchanged. Source, live probes, consumers and controlled projection/
+rollback need acceptance before adoption. Dated admission at UTC00:42:00 was
+bounded for a 2GB reserve: 7615MB free/6144MB required; disk was 13.8% free.
+No local install/build, new worktree, browser, fanout or scheduler/provider starts.
+
+Preserve config79/80/84 native hook/source projection gates, graph/eval/lane
+durable host/artifact/recovery/accounting, all 13 historical brand/product/team
+requirements, GenCreator uncertain-save/storage and demand62 backend/standard-ID/
+atomic capture gates, and the original SIS150 20-task/host/transport/restart
+programme and denominators. All earlier task records remain incomplete where
+their actual acceptance is still missing.
+
+Verified product saves:
+- https://github.com/frankxai/peak-performance/issues/3#issuecomment-5943557808
+- https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5943558219
+
+The hub packet waited for foreign codex-4b7b7ca6 to release these three files
+explicitly at UTC00:56:03.997. Ownership uses retained replay, never expiry.
+The initial hub publication passed CI; this refinement improves wording only.
+Next: storage/unknowns/parity repairs with meaningful host/caller checks, then
+controlled installed proof. Continue the full estate goal, with all 14 axes open.
+
+
+## 2026-10-02T01:59:03.465882+00:00: PP storage floors and probe validity (Codex)
+
+The full estate goal remains active and all 14 axes remain incomplete. PP draft
+#4 targets main at source `b8969b384ee6584bb187942735fad7bcb5081e28`. This owned 12-file repair uses exact byte
+ratios for system, target and temporary volumes: below 4% freeze/escalation;
+below 8% no disk growth; 8–15% one bounded interactive build with cleanup.
+Structured limits prohibit installs, worktree adds, fanout, media/model and
+unattended work under storage pressure. Ordinary zero-reserve reading remains
+permitted above freeze. Interactive/review-lite labels grant no disk growth.
+
+Unknown, stale, failed or unsupported CPU/process/crash probes hold budgeted
+admission. Unknown maintenance evidence cannot advertise expansion. CPU zero
+deltas and rollback are unknown; Windows Application Error events use structured
+AppName fields and a provider filter. Mapped/network/device paths and resolved
+network junctions have actual child-code fixtures; exact mount filesystem bytes
+apply. Missing runtime commands remain unknown, including elevated/other-session
+access denial. POSIX crash evidence remains unsupported and holds budgeted work.
+
+Independent review returned two BLOCKs, then scoped PASS after maintenance,
+provider filter, executable path fixtures, structured limits, CPU rounding and
+actual MCP isError refinements. All review packets/results are preserved. The initial
+UTF8 preparation failed before any provider call. Completed reviews cost
+USD2.1857004 list equivalent; billed cash is unknown. This scoped PASS does not
+clear full main readiness. Tests are overlapping, not unique outcome totals.
+
+Local dependency-free tests: 25 admission/maintenance/MCP and 14 probe/storage
+cases, including actual Windows storage/crash reads. Exact-head hosted Linux and
+Windows: Node24 frozen install, source41/typecheck/build/emitted41/native25/
+compiled79; Node18.20.8 emitted41/compiled79. Both runs passed attempt 1 with no
+failures/skips/cancellations. Twelve remote source blobs match frozen reviewed
+bytes. Actual emitted CLI holds with exit2; MCP hold isError is tested.
+- https://github.com/frankxai/peak-performance/actions/runs/36953200471
+- https://github.com/frankxai/peak-performance/actions/runs/36953198138
+
+Consumers must respect decision and diskGrowthPermitted before inspecting the
+storage-only limits. A normal storage state grants no workload permission itself.
+Full main readiness remains BLOCK: process classifier coverage, TS/tray CPU
+parity, baseline irreversible cleanup/prep, expensive full-audit admission,
+snapshot/caller races and real consumer enforcement, history/MCP lifecycle,
+installed/client acceptance remain open. Audit grades still ignore probe status;
+the unknown-evidence repair is scoped to preflight and maintenance. No source merge, installed runtime
+projection, client registration, local install/build or new worktree occurred.
+The candidate itself currently holds budgeted work on this Windows host because
+process visibility is unknown, and on POSIX because crashes are unsupported.
+This PASS does not establish candidate usability. The shared launcher/dist and foreign PP primary are unchanged; the last real
+installed 32GB floor request still failed. Fresh UTC01:41:58 review-lite admission
+was bounded, 7397MB free against 6144MB required; disk remains in bounded storage.
+
+Keep all prior instruction/upstream/Registry qualifications, all-brand product
+and team requirements, config79/80/84 native hook acceptance, graph/eval/lane
+durable host/artifact/recovery/accounting, GenCreator uncertain-save/caller/
+storage gates, demand62 backend/standard-ID/atomic capture, and original SIS150
+20-task/host/transport/restart programme and denominators. Next: resolve probe
+coverage and TS/tray parity, reduce full-audit admission latency, then resolve
+remaining main safety and controlled installed/consumer acceptance.
+
+Product records: [PP issue 3](https://github.com/frankxai/peak-performance/issues/3)
+and [config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Evidence: private pp-storage-validity-20261002 frozen source, tests, reviews and
+readbacks. Prior failed tests and review findings remain recorded.
+
+
+## 2026-10-02T03:57:17.044947+00:00: PP tray parity and unknown health (Codex)
+
+PP draft #4 targets main at source `aefe42f5c923bacb2ba27821b9e9598da7c642f8`, following b896 storage/probe
+validity. Full estate goal active; all 14 axes remain incomplete. This owned
+27-file repair makes CPU/process/agent scoring use the same thresholds in
+TypeScript and Python. Windows CPU system time already includes interrupt time;
+the delta denominator now counts it once. Python uses two raw per-core samples
+and JavaScript half rounding. Synthetic 95% saturation now scores 2 in both.
+
+The first scoped PASS raised refinements, which were fixed before final review:
+redacted MCP duplicate signatures, recovery alerts, hidden crash child window,
+JS capacity rounding, pinned Python runtime, capacity status and truthful displays.
+Reserved preflight now requires fresh measured memory/disk/CPU/process/crash
+evidence; old incomplete plans hold. Unknown capacity cannot trigger cleanup
+or a restart diagnosis from fabricated zero.
+
+Unknown or invalid required evidence returns null gate and audit scores with
+grade UNKNOWN. Audit totals, history, best/worst comparisons, trend deltas,
+terminal/Markdown/compact displays, doctor, CLI/MCP changes and tray state carry
+that distinction. A probe exception clears a stale healthy tray grade. Python
+process metrics include observed agent trees, task runtimes, MCP leaves and
+duplicates. Command lines stay transient. Failed enumeration, partial rows and
+denied runtime commands remain unknown. Python Windows crash collection uses
+structured Application Error events and an eight-second deadline; POSIX remains
+unsupported. Known critical gates and crash loops retain their numeric caps.
+
+Independent provider review: two scoped conditional PASS reviews, then final
+three-file reconciliation PASS with the other 23 hashes unchanged, then a
+single-test refinement PASS with the other 25 hashes unchanged. Final compiled
+fixture-only reconciliation PASS preserves the other 26 hashes. Final 27 source
+bytes are frozen, with the
+CI condition fulfilled. Preserve every prior review and failure. Current slice
+completed review cost: USD 2.6632520 list equivalent; 0 completed
+review cost entries unknown, billed cash unknown. Earlier partly unknown costs
+are preserved. Local: 51 actual-source TS tests, 26 admission/MCP fixtures,
+16 isolated Python collectors/actual tray methods and 148 common scorer cases,
+including five full synthetic audits and three matching collector fixtures. The Python crash collector also ran on
+this Windows host and CI; no real tray session was started. Counts overlap. The initial two local
+failures were directory cleanup EISDIR; rmdirSync fixed the fixture without
+weakening assertions. Initial hosted head 15b failed both runs because the
+compiled normal control omitted required memory/disk fields; Node 18 steps were
+skipped. Those failures remain recorded. A test-only child commit repairs the
+measured control and adds two emitted legacy-plan hold checks; production gates
+and old assertions are preserved. Hosted Ubuntu/Windows Node 24: source 51/typecheck/build/
+emitted 51/native 26/compiled 81 and source/emitted parity 148; Node 18.20.8:
+emitted 51/compiled 81/parity 148. Both exact-head runs passed attempt 1, no
+failures/skips/cancellations on the final head; 27 remote blobs match reviewed bytes.
+- https://github.com/frankxai/peak-performance/actions/runs/36960571452
+- https://github.com/frankxai/peak-performance/actions/runs/36960568292
+
+Physical CPU calibration and a real tray session are unverified. POSIX counter
+coverage follows Node's five counters; Linux iowait/softirq/steal coverage stays
+open. Full main readiness remains BLOCK for remaining process classifier
+coverage, irreversible cleanup/prep and inherited doctor/Git advice, expensive
+full-audit preflight, caller/ownership/snapshot enforcement, history/MCP
+durability, installed/client acceptance and controlled rollback. No main merge,
+runtime projection, client registration, local dependency install/build, new worktree or monitor
+startup occurred. Shared launcher/dist and foreign primary remain unchanged;
+historical installed RAM-floor failure remains open.
+
+Read-only Windows process diagnosis found four missing runtime commands:
+three Node processes and one shell, zero structurally incomplete rows. This
+explains the current source visibility hold; no permission assumption or
+process termination was used to remove it. POSIX unsupported crashes also hold
+budgeted admission. Fresh review-lite admission at UTC 03:17:28 was bounded:
+6504MB free versus 6144MB required, one reviewer; disk remains bounded. Final bounded source probe observation
+at UTC 03:31:46 measured 2283 MB free, below 4096 MB floor; CPU 79/system 40,
+process capacity unknown (799 processes/32 runtimes), crashes 0 and all storage
+scopes bounded. All owned reviewers were already terminal. Remaining work
+uses cloud CI readback and text saves; no other process was stopped. No
+installed CLI or workload acceptance is claimed.
+
+Keep the full instruction/skill/Registry and upstream qualifications, all-brand
+products and teams, config79/80/84 installed hooks, graph/eval/lane durable host,
+artifact/recovery/accounting, GenCreator uncertain/exclusive save and caller
+durability, demand62 backend/standard-ID/atomic capture, and original SIS150
+20-task/host/transport/restart programme and denominators. Next: replace full
+audit admission with the necessary bounded fresh evidence, then resolve source
+safety and controlled installed/consumer acceptance while continuing all 14 axes.
+
+Product records: [PP issue 3](https://github.com/frankxai/peak-performance/issues/3)
+and [config issue 46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Private evidence: pp-parity-visibility-20261002 frozen source, local checks,
+review packets, process diagnosis, CI and remote readbacks. All earlier history
+and other continuation prompts remain preserved.
+
+Current admission follow-up (local source candidate, pending acceptance):
+Five files on the same owned PP worktree now separate headroom collection from
+full audit. Preflight collects memory, CPU, disk, processes, uptime and crashes
+plus the three storage scopes; GPU/Git/secrets/temp-file/knowledge audits are
+skipped. Full maintenance still audits all gates. Admission-only maintenance
+carries null score and UNKNOWN grade with an explicit uncollected-score summary.
+Baseline dependency fixtures failed two regressions; the repair passes all 30
+actual-source admission/MCP/maintenance fixtures. All five unknown/unsupported
+holds, RAM reserve/floor, exact storage thresholds and freeze on reading remain.
+The five-file diff and hashes are frozen in pp-admission-probes-20261002.
+This candidate is uncommitted, unpublished and unreviewed. Hosted typecheck,
+build/emitted/compiled checks and physical latency acceptance remain pending.
+At UTC 03:53:16 RAM was 3655 MB, below the 4096 MB floor; no reviewer, build,
+install or full machine probes were started. After resource recovery, require
+fresh review-lite admission, independent provider review, then exact-head hosted
+checks before accepting/publishing this candidate. Preserve the previously
+verified aefe candidate and all failure/review evidence; all 14 axes stay open.
+
+
+## 2026-10-02T04:23:33.687537+00:00: Hub records reconciled; PP review held (Codex)
+
+Hub PR95 now includes accepted main babff6c50a54620eba9ea43b6915e55b1beaf4df
+in the owned branch. Merge cb170ec06ea34f80379e4cfe1a9f57e358be494b resolved
+four record conflicts. Current-main ledger/session bytes, every own historical
+addition, and all other current prompts are preserved. Eleven non-record files
+match accepted main Git blobs exactly. No code was rewritten and no PR merged
+into main. PR95 is OPEN/DRAFT and CLEAN at readback; exact-head CI36964121201
+passed. The next child records this handover and still requires its own CI.
+
+Fresh installed preflight at UTC04:13:44 held review-lite: 4784 MB free versus
+6144 MB required, CPU28/system9, 32 Codex runtimes, two observed dev servers.
+A later cheap sample at UTC04:21:38 measured4068 MB, below4096 MB floor. No
+reviewer, build, install, full follow-up probe or other task termination followed
+the hold. Installed preflight lacks the new storage evidence; it is not source
+storage/client acceptance. C drive remains bounded from the current sample.
+
+The five-file admission-only PP candidate remains frozen, unchanged, uncommitted
+and unpublished on aefe. Its 30 actual-source fixtures passed previously; review,
+source hosted typecheck/build/emitted/compiled checks, physical latency and
+installed/client acceptance remain pending. No new review cost incurred; actual
+cash and earlier partly unknown costs remain qualified. Full main BLOCK and all
+14 axes remain incomplete. Preserve original brands/products/teams, instructions,
+skills, graphs/loops/hooks/evals/observability and the SIS150 20-task programme
+and denominators. Next: fresh resource admission, frozen-source independent
+review and hosted checks, then full-main/controlled consumer gates. Keep current
+source records and unfinished work; no competing service or queue.
+
+Both product saves: existing PP3 and config46. Private proof: hub-reconcile-20261002
+and pp-admission-probes-20261002/review-resume-1. Other sessions' records retained.
+
+
+## 2026-10-02T04:50:15.548565+00:00: PP admission review and coverage refinements (Codex)
+
+Fresh review-lite admission measured 6230 MB free versus 6144 MB required and
+allowed one bounded, tool-free checker. Independent Anthropic review of the
+frozen five-file admission candidate returned scoped PASS conditional on real
+Ubuntu/Windows Node24/18 typecheck/build/emitted/compiled checks. It verified the
+collector boundary, retained full maintenance, null/UNKNOWN uncollected score,
+unchanged evidence/floors and import/mock wiring. Reviewer18936 ended normally.
+Actual reported model: claude-sonnet-5-5. Cost USD0.5131748 list equivalent;
+billed cash unknown. Earlier review outcomes and partly unknown costs remain.
+
+Two nonblocking coverage findings were addressed. The native test now drives
+actual admission through exact integer-byte sides of 4%,8%,15% (39999/40000,
+79999/80000,149999/150000 of total1000000). All30 source admission/MCP/maintenance
+fixtures still pass. A new compiled case exercises actual emitted admission and
+maintenance builders with individual probes mocked, forbids full audit during
+admission, checks six unknown/unsupported cases and preserves full maintenance
+audit score. Node syntax check passes; hosted execution remains pending, with
+82 compiled cases expected. Counts overlap. No physical latency is claimed.
+
+Production maintenance/preflight and README hashes are unchanged from the
+scoped PASS. Only the two test files changed afterward. The final reconciliation
+packet includes exact hashes and unchanged CLI/formatter/types/overnight callers.
+At UTC04:43:43 fresh admission held that checker: 5825 MB free versus6144 required.
+No second reviewer started. The full latest five-file candidate is frozen in
+pp-admission-review-20261002; prior v1 and original source evidence stay intact.
+Source is still uncommitted/unpublished; hosted validation, final test review,
+full main safety and installed/client acceptance remain open. Shared runtime
+and foreign primary remain unchanged. No install/build/new worktree/fanout.
+
+All14 axes and all original brand/product/team, AGENTS/skills/graph/loop/hook/
+eval/observability, GenCreator/demand62 and SIS150 programme denominators remain
+incomplete. Next: fresh admitted test-only reconciliation, publish exact reviewed
+bytes to draftPP4 for source CI, verify actual emitted82/source51/native30/Python16/
+parity148/Node18 and both remote runs, then remaining full-main/controlled runtime
+gates. Preserve history, other prompts and unfinished tasks. Both saves use this
+hub only and existing PP3/config46.
+
+
+## Admission source accepted in draft; runtime and full estate remain open (2026-10-02T05:14:09.159729+00:00)
+
+PP draft PR4 now contains reviewed commit 2d9d0fe37e0205cd139117e55c110203d56a9f66, a five-file child of aefe.
+Admission collects memory, CPU, disk, processes, uptime and crashes plus the
+three storage scopes. Full maintenance keeps its audit and score; admission
+reports null/UNKNOWN with an explicitly uncollected Ten Gate score. Unknown
+probe holds, reserve plus 4 GiB, exact 4/8/15% byte floors, ordinary reading and
+MCP isError remain covered. Final independent Anthropic test review-v2 passed
+after one bounded admission at 6490/6144 MB. The checker ended normally; cost
+USD 0.2839888 list equivalent, billed cash unknown. Production
+and README match review-v1, whose conditions are now fulfilled for this scope.
+
+Both exact-head source runs passed: pull_request36967516891 and push36967513865.
+Each Ubuntu/Windows run passed source51, typecheck/build, emitted51, native30,
+compiled82, Python16 and parity148, with Node18 emitted51/compiled82/parity148.
+Every required step and count was checked separately for all four event/platform
+pairs. Counts overlap. All five remote blobs match reviewed bytes. The actual
+compiled builder fixture executed, including six unknown/unsupported cases
+across five probes and full-maintenance snapshot reuse. The child prints a
+literal unknownCases:6; that nonblocking reporting finding remains recorded.
+
+Source publication first hit the existing sparse-checkout definition for two
+test files. Their owned bytes were then explicitly staged with --sparse; all
+five staged blobs matched the review, enabled secret hooks passed and normal
+push succeeded. There was no install, local build, new worktree or runtime
+projection. Shared launcher/dist and foreign primary remain unchanged. Full
+main safety, physical latency/calibration and actual installed/client acceptance
+remain open. Next audit/repair inherited cleanup/prep/security bypass, caller,
+snapshot/history/MCP safety and remaining classifier coverage before runtime.
+
+Queen PR135 and PR138 are verified MERGED, with their merge commits ancestral
+to observed agentic-ops main 69900c6dd7c88772011723f8352771d2992a956a. Issue134 remains OPEN for activation.
+These are GitHub source/ancestry facts. The other owner's 47/52-test and deployment
+claims were not independently rerun; no live task, transport or cloud outcome
+is accepted by this observation. Preserve that owner's activation workflow.
+
+All14 axes remain incomplete, including original all-brand product/team demands,
+AGENTS/skill semantics, authority/loading/licence/cost, graph/loop/hook/eval/
+observability and SIS150 programme denominators. Historical failures, other
+prompts and unfinished tasks remain. Both saves use this hub and existing
+PP3/config46; PP4 and hub95 stay draft, with no main merge by this task.
+
+
+## PP remediation repair frozen; final review held (2026-10-02T06:18:28.413470+00:00)
+
+The revised 14-file cleanup/prep candidate remains uncommitted and unpublished
+in the existing PP worktree on 2d9d0fe37e0205cd139117e55c110203d56a9f66, draft PR4.
+Legacy cleanup functions now return held plans and never spawn deletion.
+Bare CLI fix and omitted/false MCP dryRun hold before an audit; explicit
+dry-run performs one scoped audit with performed0. Prep observes exact-root
+Git metadata without stage/commit, hook bypass, history reads, Desktop writes
+or saved-checkpoint claims. Observations are bounded and non-atomic.
+
+Independent Anthropic review-v1 returned BLOCK. The checker ended normally,
+reported claude-sonnet-5-5 and USD0.6445968 list equivalent; billed cash unknown.
+The shebang test-wrapper bug, Windows checkout command lookup, audit Git index
+refresh risk, unmeasured gain estimates, tray action and README contradictions
+were repaired in v2. Both prep and existing system/audit collectors share a
+launcher rooted at the trusted Node directory, filtering observed/relative PATH
+and inherited Git overrides and disabling optional locks/fsmonitor/untracked
+cache. This trusts the Node installation/external PATH tools and is not a
+sandbox for configured tools, junction aliases or races. Ancestor roots hold.
+V1's only-PR-CI claim was incorrect: the push branch matches the actual branch.
+
+Final local remediation25 PASS includes an inert plantedgit.exe Windows
+reproduction and real prep/audit Git index/HEAD preservation with inherited
+redirects. Native admission30, Python16 and scoring parity148 pass. Counts
+overlap. The actual tray method is tested without GUI dependencies; installed
+tray adoption remains open. All14 source bytes and final review packet are
+frozen privately in pp-remediation-safety-20261002/review-v2. Review-v1 and
+original failing fixtures remain. Fresh review-lite admission at06:13:15Z
+held at5867/6144MB, so v2 review was not launched. Typecheck/build/emitted/
+Node18 and both exact-head Ubuntu/Windows PR+push checks remain pending.
+
+Installed PP wrapper/dist and foreign primary are unchanged. No install,
+local build, new worktree, fanout, service or runtime projection. Full main
+safety and controlled installed/client acceptance remain open. All14 estate
+axes and all original brand/product/team, AGENTS/skills/graph/loop/hook/eval/
+observability and SIS150 programme denominators remain incomplete. Preserve
+the existing Queen activation owner/prompt and other histories/unfinished work.
+Both saves use this hub and existing PP3/config46. Resume with fresh admission,
+exact frozen-byte/lane verification, independent review, then scoped hosted CI.
+
+
+## PP caller evidence and redaction repaired locally (2026-10-02T06:43:00.956595+00:00)
+
+Actual-source virtual-I/O checks reproduced five inherited defects: concurrent
+history lost update, corrupt-history overwrite, false process stop/start across
+an unknown sample, overnight admission from expand posture alone below4096MB
+with unknown census, and quoted-token/URI-password redaction gaps. All values
+were synthetic; no live history, process or overnight state was changed.
+
+Watch and TypeScript/Python redaction are repaired in the latest16-file local
+candidate on PP2d9/draft4. Unknown/throwing/malformed process samples preserve
+the last measured baseline and emit no lifecycle events. First recovery starts
+a baseline. Summary status is measured/partial/unknown with unknownSamples and
+nullable baseline/final counts; CLI displays gaps. Invalid watch bounds fail
+before probes/writes. Redactors agree on10 credential forms, including quoted,
+escaped/unterminated values, spaced flags, Bearer tokens and URI user information.
+Arbitrary positional credentials and unobserved/PID-reuse transitions remain
+documented limits. History and overnight defects remain verified open blockers
+for full main acceptance. Explicit watch persistence also needs owner/path review.
+
+Local remediation32, admission30, Python16 and parity148 pass; counts overlap.
+Current frozen manifest/packet: pp-remediation-safety-20261002/review-v3,
+candidate-evidence-v3.json. V1 BLOCK and unreviewed v2 are preserved; v2 is
+superseded. Review-lite at06:24:06Z held at5654/6144MB. No new checker started,
+source commit/push, build/install, new worktree/worker or runtime projection.
+Independent review and exact-head hosted source/typecheck/build/emitted/Node18
+checks remain pending. Installed wrapper/dist and foreign primary unchanged.
+
+All14 estate axes and original brand/product/team, instructions/skills/graph/
+loop/hook/eval/observability and SIS150 denominators remain incomplete. Preserve
+the existing Queen owner/prompt. Next repair history/overnight admission before
+full inherited review, or obtain an admitted scoped v3 review with these blockers
+explicit. Both saves use this hub and existing PP3/config46; source16 dirty paths
+are preserved, owned lanes released at handoff, no task-owned worker remains.
+
+
+## PP history and overnight admission repairs (2026-10-02T07:26:38.051793+00:00)
+
+PP base2d9/draft4 now has24 local dirty unstaged paths, uncommitted and
+unpublished. Prior cleanup/prep/watch/redaction repairs are preserved. New
+TypeScript and Python history writers preserve the legacy array byte-for-byte
+and share an append journal/exclusive PID+nonce lock. They reload under lock,
+never trim or expire locks by age, and hold on malformed/linked/partial/over8MiB
+data. Fsync failure reports an uncertain append requiring inspection before
+retry. Actual tray save delegates to this helper; open-history prefers journal.
+Direct legacy readers need combined-reader adoption. Cooperative parent-path
+ownership and filesystem/device durability remain limits, not accepted proof.
+
+Overnight now invokes actual overnight preflight and scoped storage admission:
+6GiB reserve+4GiB safety floor, CPU/task/fresh-evidence/storage gates. Latest
+unknown census feeds admission and nullable summaries; hold refuses new swarms,
+CLI exits2 and both formatters explain constraints. Allowed parallelism follows
+admission; each new step requires fresh preflight. Storage subprocesses use
+the shared trusted Node cwd and clear NODE_OPTIONS for the constant Node child.
+
+Local remediation42/native30/Python22/parity148 PASS, counts overlap. Tests use
+actual source, owned small temporary files, actual tray method and mixed-language
+writers, including stale TS refresh, foreign old lock preservation, malformed
+legacy/partial journal and fsync uncertainty. Initial Windows Python lock-release
+failures were corrected and preserved; an incorrect parity command was preserved
+and rerun with the correct runner. No live history/process cleanup occurred.
+Frozen24-file packet/manifest: pp-remediation-safety-20261002/review-v4 and
+candidate-evidence-v4.json. V1 BLOCK and unreviewed V2/V3 remain preserved;
+V3 is superseded. Actual review-lite at07:22:18Z HOLD5916/6144MB; no new reviewer
+started. Full main remains BLOCK: snapshot shell interpolation/minute overwrite,
+watch/overnight report path ownership/concurrency, full inherited review, hosted
+exact-head source/typecheck/build/emitted/Node18, installed consumer projection/
+rollback and physical calibration are still open. No source push/local build/
+install/new worktree/worker/runtime change. Installed foreign primary untouched.
+
+All14 estate axes and original requirements/denominators remain incomplete.
+Preserve other owners and Queen activation prompt. Save in this hub and existing
+PP3/config46. Next review remaining persistence/snapshot callers under retained
+ownership, freeze changed bytes again, then admit one serialized independent
+tool-free review at full6144MB. Scoped source PASS cannot certify main/runtime.
+
+
+## PP artifact persistence and owned handover correction (2026-10-02T08:04:58.010693+00:00)
+
+Current PP base2d9/draft4 has27 local dirty unstaged paths, uncommitted and
+unpublished. The full inherited candidate covers42 final files against observed
+main09d4917 (GitHub matches local origin/main). V5 immutable packet/manifest is
+pp-remediation-safety-20261002/review-v5 with candidate-evidence-v5.json. V1BLOCK
+and unreviewed V2/V3/V4 are preserved; V4 is superseded. Earlier TS/Python history,
+cleanup/prep/watch evidence and redaction repairs remain in this candidate.
+
+Actual virtual-I/O baseline reproduced snapshot same-minute overwrite, caller
+path entering shell source, failed census inferred as zero and repeated report
+writes replacing latest/timestamp files. New reports and watch summaries reserve
+unique owner-receipt directories with exclusive files and a final integrity
+manifest. Existing latest/summary files remain untouched and may be stale.
+Shared watch JSONL serializes cooperative appenders under PID/nonce locks,
+retains all old bytes, rejects malformed/partial/linked/hardlinked/over8MiB
+files and never expires locks by age. Fsync uncertainty requires inspection
+before retry. Incomplete receipts are preserved for owner recovery. Parent-path
+ownership, ACL/path races and device durability remain explicit limits.
+
+Snapshot applies actual browser-QA reserve and storage/media admission before
+writes/capture; hold exits2. Windows command is constant encoded PowerShell,
+caller paths passed only as environment data, screenshot files use CreateNew,
+resources disposed in finally, screen/pixel/time budgets bounded. Failed capture
+reports unknown and preserves incomplete receipt; other platforms unsupported;
+unmeasured census counts are null. No real screen capture or generated image
+was run: fixtures use inert bytes for naming/hash checks, and Windows parser
+only validates syntax. Installed capture and consumer calibration remain open.
+Overnight admission now uses latest valid census task/MCP/model/server counts;
+a newer task-budget breach cannot hide behind the earlier maintenance census.
+Advice requires owner-confirmed completed task closure and preserves unfinished
+work. Watch packet exposes summaryTarget/summaryDirectory for new bundle discovery.
+
+Local remediation55/native30/Python22/parity148 PASS, overlap applies. These
+include simultaneous watch owners, equal/path-like timestamps, exact manifest
+hashes, changed/linked/hardlinked files, partial fsync outcomes, actual CLI and
+static Windows capture syntax. Review-lite07:55:34Z HOLD5545/6144MB; no reviewer
+started. Independent FULL inherited review, hosted exact-head source/typecheck/
+build/emitted/Node18 on both Ubuntu/Windows PR+push, installed projection/client
+adoption/rollback, physical/capture calibration and full estate trace remain open.
+No source push/local build/install/new worktree/fanout/runtime change.
+
+Ownership correction: prior hubf76ac79 was erroneously published after a failed
+ownership assertion against retained codex-cb996aff. That error and issue notes
+remain preserved. This turn observed its actual release event, verified this
+worktree clean, passed explicit routing and acquired a new own hub lane before
+writing. This append and prompt update are owned; it does not claim integration
+of the other agent's unpublished branch. Other prompt bytes/history are preserved.
+Both saves use this hub and existing PP3/config46. All14 axes and original
+brand/product/team, instructions/skills/graph/loop/hook/eval/observability and
+SIS150 denominators remain incomplete. Preserve Queen's separate activation owner.
+
+
+### Estate fundamentals: merged hook repair projected and native Codex proof
+
+Config [PR79](https://github.com/frankxai/starlight-agent-config/pull/79) merged as
+`c1caf5a5526bae801a5d7dac1d29086287d3ef30` at 2026-10-02T04:35:15Z. Current
+main `d3a824134d0119f4bfa2e72ad791e6279f026a85` contains that merge. Eight of nine
+PR files retain their exact bytes; CI subsequently expanded its policy test glob.
+The shared module matches independent Anthropic code-review head `88fea875`
+byte for byte, as recorded in hub main's existing convergence receipt; earlier
+CI review PASS at `ace2f97` is preserved. This turn made no new paid review call.
+
+The installed Codex and Grok shared modules still executed checkout formatter
+code. After full retained-claim replay and a fresh own estate lane, both were
+replaced with the reviewed merged bytes, SHA256
+`9b1a244afee7559fe2fae7f33205b2764a2994bcac9ce4c29b122de6e7a62673`.
+Individual original backups and hash-conditional ownership-gated rollback are
+in private `hooks-native-reconciliation-20261002/projection.json`. Selected
+settings, interpreter declarations, Codex/Claude/Grok secret guards and Grok's
+native adapter were unchanged. No source repository or foreign checkout changed.
+
+Actual Codex app proof: a fictional marker patch was blocked by PreToolUse and
+its target is absent. A later benign patch generated a native post receipt at
+08:32:54.482Z for task `01a0f720-641c-7af2-af40-cc12eafd6a4f`, tool `apply_patch`,
+`checks: []`, `durationMs: 0`, and `requires-explicit-workspace-check`. The receipt
+binds this one native invocation to the projected behavior. The denial overlay's
+origin is unresolved; declared Codex PreToolUse matcher alone omits apply_patch.
+Grok `.compat.claude.hooks` is false; this does not prove every native Grok setting.
+No Grok host execution, formatter execution, credentials or customer data used.
+
+Six direct helper checks separately show both guards permit benign input;
+installed guard permits malformed JSON/null while PR84 candidate exits2 for both.
+These helper exits do not prove outer host denial. [PR84](https://github.com/frankxai/starlight-agent-config/pull/84)
+and [PR80](https://github.com/frankxai/starlight-agent-config/pull/80) remain draft
+open/review-required at `3f2ba5d` and `08d6e80`. Guard adoption, trusted pinned
+launcher/load-failure/timeout denial and every effective overlay/host remain open.
+
+PP V5 remains unchanged:27 unstaged/uncommitted/unpublished files,42 inherited
+final files, local55 remediation/30 native/22 Python/148 parity PASS with overlap.
+Actual review-lite 08:27:17Z HOLD5582/6144MB,32 task runtimes; no reviewer started.
+No builds, installs, new worktrees, agents, services, watchers or task archival.
+Original full source/hosted/installed consumer/physical PP gates and every original
+14-axis programme, brand/team, SIS15020-task/host/transport/restart denominator,
+graph/eval/lane durable recovery/accounting and Queen134 separate owner remain open.
+All14 estate axes remain incomplete. Task remains active; this turn is progress.
+
+
+### Estate fundamentals: reviewed portable guard adopted locally
+
+Adopted the exact independently reviewed [PR84](https://github.com/frankxai/starlight-agent-config/pull/84)
+guard from `3f2ba5d67d769e88ade19092edf4095abcde55c7` into the installed Codex,
+Claude and Grok hook directories. All3 files match SHA256
+`1bf556ae56d9fbc68850af9944260bea95fbbadf1224d8eaadb5a42f2eca070a`.
+Current PR-head guard/release CI pass; existing static Anthropic PASS after two
+reproduced BLOCKs is unchanged. The source install contract permits reviewed/CI
+adoption with separate runtime ownership. PR84 remains draft/open/REVIEW_REQUIRED;
+no main merge, self-approval or branch-protection bypass occurred. No source repo
+or foreign checkout changed. Individual exact backups and conditional rollback
+are in private `hooks-guard-projection-20261002/projection.json`.
+
+Current installed helper checks: all3 old guards permitted malformed/null JSON;
+all3 replacements return exit2 for malformed/nonobject/oversized/invalid UTF8,
+and permit benign input. One current replacement with stdin deliberately kept
+open returns exit2 at its internal deadline.25 before/after helper observations
+(9before,16after) overlap with original26 source regressions, not a larger unique
+test corpus or host certification. No credential or customer material used.
+
+Actual Codex app: after projection a fictional marker patch was denied by
+PreToolUse and its target is absent. A benign patch was allowed and produced a
+native post receipt08:48:40.002Z for this task/apply_patch with checks[] and
+requires-explicit-workspace-check. PR79 reviewed shared-runtime projection from
+the previous turn remains intact; settings, adapters, compatibility flags and
+interpreter commands were unchanged. These observations establish one current
+native path; denial-overlay identity, other tools/hosts, trusted launcher/load
+failures, host-killed timeout behavior and every effective overlay remain open.
+
+Latest actual review-lite08:42:07Z HOLD5527/6144MB,32task runtimes. No new paid
+checker, package/dependency install, build, worktree, agent, service, watcher or
+task archival. PP V5 remains27 dirty unstaged/uncommitted/unpublished files and42
+inherited frozen files, full review/hosted/runtime/client/physical gates open.
+All14 estate axes remain incomplete; original semantic/skill/brand/team, graph/
+loop/lane/eval durable host/accounting/recovery, GenCreator/demand62, SIS150
+original20-task/host/transport/restart programme and Queen134 owner are preserved.
+
+
+### Estate fundamentals: reference skill audit and reviewed guide retrieval
+
+Audited all30 entries of the local Codex reference index:28 readable guides,
+2unavailable,379798 source bytes,28 named/description YAML frontmatters. This is
+the bounded reference catalog, not the entire installed skill estate or native
+loader output. Literal-reference inspection initially found63 candidates and15
+missing local targets. One is the research output placeholder `url`; four are
+gstack repo-level references with provider-specific source resolution. Counts
+are structural observations, not15 broken prerequisites or semantic certification.
+The first console excerpt stopped on Windows cp1252 encoding; ASCII JSON readback
+resolved observation only, with no source or audit rewrite based on that failure.
+
+Updated exactly3 reference entries: agent-harness-engineering, browser fleet and
+work ledger. They now retrieve exact reviewed [PR80](https://github.com/frankxai/starlight-agent-config/pull/80)
+source `08d6e80f010a6f71ac42eb7482fd13532f05e1fe`; all27 other entry objects are
+unchanged. Six source files were verified against the existing independent
+Anthropic PASS attestation and remote Git blobs, then copied into an immutable
+private source-qualified bundle. This retrieves the corrected explicit-dispatch,
+owned browser cleanup and hub-only handover contracts. It changes the reference
+index, not native skill junctions, profiles, loaders or services. PR80 remains
+draft/open/REVIEW_REQUIRED and main integration remains pending.
+
+Catalog metadata explicitly qualifies candidate/main state, source hash, review
+scope, dependency/Registry gates, unknown licence and unverified native selection.
+Four additional conditional source references are hash-bound at08d6 and separately
+retrievable; they are not copied, reviewed as part of the six-file delta or native
+activation proof. Current raw reference candidates remain63,13missing; work-ledger
+references and remaining source/runtime prerequisites stay qualified before use.
+The original index backup, exact manifests and ownership-gated conditional rollback
+are in private `skill-reference-audit-20261002/projection.json`.
+
+Named gstack checks show Codex's directory resolves to the existing agent-skills
+projection and lacks question-registry docs/script/helper/license; Claude's
+source directory contains those named files. No gstack command or cross-provider
+substitution ran. Only3 imported Superpowers guides have a nearby licence candidate
+in the bounded ancestor probe; this is neither provenance certification nor proof
+that other guides are unlicensed. Wider semantics, source/licence lineage and
+actual native loading/cost/accepted use remain open across the whole estate.
+
+Dated actual review-lite08:57:27Z HOLD5608/6144MB,32tasks; no new paidchecker,
+package install/build/worktree/agent/service/browser/task archival. PPV5 remains
+27 dirty unstaged/uncommitted/unpublished paths and42 inherited frozen files;
+full review/hosted/runtime/client/physical gates remain open. Reviewed guard1bf556
+and shared runtime9b1a244a local projections remain separate current evidence.
+All14 estate axes incomplete; preserve all original brand/product/team and skill
+authority/semantic/native/licence/cost, graph/eval/lane durable recovery/accounting,
+GenCreator/demand62 and SIS15020-task/host/transport/restart programme/denominators.
+Queen134 activation belongs to its separate owner. No source repository changed.
