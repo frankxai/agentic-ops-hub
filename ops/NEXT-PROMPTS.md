@@ -20,32 +20,39 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read pp-remediation-safety-20261002/resume-2 and candidate-evidence-v4.json.
-PP base2d9/draft4 has24 dirty unstaged uncommitted/unpublished source paths.
-The final frozen packet/manifest is review-v4; original V1BLOCK and unreviewed
-V2/V3 are preserved, V3 superseded. Local42 remediation/30 native/22 Python/
-148 parity PASS, overlap applies. TS/Python append journal retains legacy bytes
-and all stale-writer records; malformed/partial/linked data and old locks hold,
-no trim/age recovery/retry. Fsync uncertainty requires readback. Tray uses helper;
-direct legacy readers require adoption. Overnight now applies actual reserve/
-storage/freshness/CPU/task gates and unknown latest census, CLI exit2, exposed
-constraints and actual parallelism. Shared storage Node child clears NODE_OPTIONS.
+Read pp-remediation-safety-20261002/resume-3 and candidate-evidence-v5.json.
+PP2d9/draft4 has27 dirty unstaged uncommitted/unpublished paths. Review-v5 freezes
+all42 inherited candidate files against observed GitHub/main09d4917, plus all
+current local source. V1BLOCK and unreviewed V2/V3/V4 preserved, V4 superseded.
+Local55 remediation/30 native/22 Python/148 parity PASS, counts overlap. Actual
+snapshot overwrite/shell-path/false-census and report overwrite baseline failures
+are preserved. Unique owner-receipt bundles and final manifests replace shared
+latest writes; watch event journal locked/reloaded/append-only with no age recovery.
+Malformed/linked/hardlinked/partial/bound-exceeded files hold; fsync uncertainty
+needs inspection. Snapshot admission precedes writes/capture, held CLI exits2,
+constant encoded PowerShell uses paths as env data and exclusive outputs with
+budgets/disposal; syntax parsed only, no real images/capture/GUI executed. Latest
+census task counts govern overnight admission. Advice preserves unfinished tasks.
+Direct legacy history/latest/summary consumers require migration to new readers,
+returned paths/manifests or explicit discovery. Parent ownership/ACL/path races/
+device durability remain limits; tests do not prove physical/visual correctness.
 
-Review-lite07:22:18Z HOLD5916/6144MB. No new review, build/install/source push or
-runtime projection. Current freeze is unreviewed. Review-v4.py uses authority-v4
-and admission-v4-resume.json, requires fresh actual full6144MB and exact manifest
-for one serialized tool-free checker. Preserve review history and original failures.
-Known full-main gates remain snapshot shell interpolation/minute overwrite and
-watch/overnight report persistence path/ownership/concurrency; inspect actual
-consumers/classifiers and whole inherited delta. Repair under fresh retained lane
-ownership and explicit route guard/check, then create a new immutable freeze if
-bytes change. Do not use historical12/14/16-file publication helpers. After latest
-scoped PASS, named --sparse staging with security hooks and both exact-head
-Ubuntu/Windows PR+push source/typecheck/build/emitted/Node18 CI are required.
-Full main, installed CLI/tray/client adoption/rollback and physical calibration
-stay open. Do not touch foreign primary or live history/locks, weaken admission,
-archive unfinished tasks, or start unadmitted builds/checkers/new worktrees.
-Preserve Queen's separate owner and activation prompt.
+Actual review-lite07:55:34Z HOLD5545/6144MB; no reviewer/source push/build/install/
+runtime change. Require actual fresh full6144MB for one serialized independent
+tool-free FULL inherited review-v5.py using authority-v5 and admission-v5-resume;
+both27 dirty and42 full inherited manifests must match. Changes require a new
+preserved freeze. Historical12/14/16/24-file publishers remain blocked. After
+latest PASS, update publication assertions to current ownership/manifests, stage
+named paths --sparse with security hooks, then both exact-head Ubuntu/Windows
+PR+push source/typecheck/build/emitted/Node18. Main source, installed runtime,
+actual client admission/new bundle/history discovery/recovery and rollback,
+physical calibration and accepted live estate trace each remain separate gates.
+Do not weaken reserve, start unadmitted jobs, touch foreign primary/live locks,
+archive unfinished tasks or infer runtime acceptance from source tests.
+
+Hub prior f76ac79 ownership violation remains historical. This turn observed
+codex-cb996aff release and acquired fresh own ops lane before correction save.
+Other branch work was not integrated; all foreign prompts/Queen owner preserved.
 
 All14 estate axes remain incomplete. Preserve full all-brand organization,
 instructions/skills, graph/loop/hook/team, local/cloud/Git, eval/observability/
