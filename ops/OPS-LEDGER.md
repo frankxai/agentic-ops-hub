@@ -4,6 +4,13 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: Shared AuthorOS EPUB reading proof, dependent draft3 (Codex)
+
+- [Draft3](https://github.com/frankxai/author-os/pull/3), final3dcaa2094c3d5bf818586bdaf759c5ded607fe79 against preview30d90432,14files. CLI/local MCP share safe Markdown/OPF/nav/spine/ZIP export, immutable checksum editions/source receipts, no source writes, manual-edit refusal and missing-receipt retry. Separate Hermes/preview preserved; no whole-preview/main/production approval.
+- [Final native CI37063669842](https://github.com/frankxai/author-os/actions/runs/37063669842) frozen Install/full+new tests/build/smoke PASS; pinned EPUBCheck5.4.0 public sample0fatals/0errors/0warnings/0infos under3.4rules. Private unchanged Arcanea2chap40,896bytes/b130cf70 ZIP/XML/order/repeat pass, no real-reader/EPUBCheck/private publication claim. Local graph/file CLI/MCP/output-junction/revision/manual-edit/receipt recovery tests pass.
+- Independent sign-off PENDING:180s timeout/costunknown, then weeklylimit/reported0/no verdict; both terminal/tools0. First13 blobs unchanged; finaldiff658584f3. Vendor pinned/notices preserved, legal/certification/rights gates not inferred. YAML2.9.1 reproduces/fixes existing preview echo parse failure; manual trigger/job gate unchanged, no manual deploy. Both issue2 receipt and three hub files saved; no new issue.
+- AuthorOS[issue2](https://github.com/frankxai/author-os/issues/2#issuecomment-5961385352) stays open; app276/280/277/408/427 and shared owners retained. Two readers, source-bound review, broader revision/rights/manual effort/hosted delivery/creator demand/revenue pending. Keep487/499/500/501/502/504, licence/Heart/engine/human gates. Fullgoalactive; source branch author-epub clean/pushed; no install/newrepo/worktree/media/fanout/merge/release.
+
 ## 2026-10-02: Arcanea Next.js critical patch verified, draft504 (Codex)
 
 - [Draft504](https://github.com/frankxai/arcanea-ai-app/pull/504), final source `e2da61cd71e8b4a772682237a3f9e75ca25c4777` on mainbaseb86549c: four files update three Next pins and eleven Next/env/SWC snapshots to16.3.6; complete YAML2.9.1 comparison preserves1,850snapshots/React19.3.0/unrelated graph. Twenty refreshed registry URL/time/hash/integrity receipts retained; targeted metadata edit, no local install.

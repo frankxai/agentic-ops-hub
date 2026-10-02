@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT Next.js critical advisory patch, draft504/issue503:
+CURRENT shared AuthorOS EPUB draft3 / owning issue2:
+Canonical author-os checkout branch agent/codex/author-epub-20261002, clean/pushed,
+source3dcaa2094c3d5bf818586bdaf759c5ded607fe79, preview parent30d90432d84c526315985d806cd938c726b4271d.
+14files; first13 implementation blobs unchanged from318b9f91; finaldiff658584f3.
+CLI/local MCP safe text EPUB, actual ZIP/metadata/nav/spine, immutable checksummed
+editions/receipts, source unchanged, manual replacement denial/retry. Local full/new
+tests pass incl file workflow/output junction. Final nativeCI37063669842 passes
+frozenInstall/tests/build/smoke and pinned EPUBCheck5.4.0 public sample0/0/0/0,
+3.4rules. Private unchanged Arcanea2chap/b130cf70/40896bytes structural/repeat pass,
+not EPUBChecked, not inspected in real readers, not for upload/publication.
+Existing Vercel YAML Preview echo error fixed; manual trigger/job gate unchanged.
+Do NOT infer independent sign-off: first180s timeout/costunknown then provider
+weeklylimit/reported0; no verdict. Both terminal/tools0, failures retained privately.
+Next source-bound independent review via admitted available authenticated provider,
+two real-reader proof and full issue2 revision/rights/five-task effort acceptance.
+Keep draft dependent on unmerged preview; core absent on main, no whole-product or
+security release approval. Pandoc unavailable; no productivity/quality winner.
+Source timestamps and final-check race/power-loss limits remain explicit. Images,
+covers/fonts/cross-file relative links/multi-book and hosted/installed delivery open.
+Records: AuthorOS issue2#5961385352 and this hub/draft98. Shell access recovered.
+Preserve Hermes worktree and prior app drafts/shared owners; no install/new repo,
+worktree/media/fanout, merge/deploy/licence/Heart/price/outreach/publication decision.
+
+RETAINED Next.js critical advisory patch, draft504/issue503:
 Source e2da61cd71e8b4a772682237a3f9e75ca25c4777, mainbaseb86549cd04562471a677301e5c095cd6f093919e.
 App worktree arcanea-source-consolidation-20261001 is now on
 agent/codex/arcanea-next-security-20261002, clean/pushed. Retained487/5a2b22af
