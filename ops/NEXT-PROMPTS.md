@@ -15,35 +15,28 @@
 
 > **2026-10-01:** the two current prompts stay. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived. A cleanup prompt was added below them. It does not replace those fronts.
 
-## Cleanup, home renames landed
+## Cleanup, Wave B partial
 
-**[agentic-ops-hub · Grok]** — Wave B only after Frank names it
+**[agentic-ops-hub · Grok]** — do not delete the kept home clones
 ```
-Wave 0, Wave A, and the same-volume renames are done.
+Wave B removed nine home clones whose main tip was already on GitHub.
+Receipt: ops/sessions/2026-10-02.md
 Issue https://github.com/frankxai/agentic-ops-hub/issues/90
 Draft https://github.com/frankxai/agentic-ops-hub/pull/91
-vibeclubs draft https://github.com/frankxai/vibeclubs/pull/16 at 64a473b.
-Receipt: ops/sessions/2026-10-01.md section "Home moves".
 
-Do not move those folders back to the home root.
-Do not touch starlight/repos/vibeclubs while it is on
-agent/claude/session-format-v1.
-The home vibeclubs.ai folder is gone. The branch is on GitHub.
+Do not recreate those home folders. The estate checkouts under
+starlight/repos were left on their existing branches. Do not switch them.
 
-Disk was 14.15% free after that delete. No new worktree. No zip.
+Still at the home root, and still the only reason they stayed:
+- agentic-ops and agentic-ops-fleet-serve (17 worktrees, .env present)
+- arcanea-ai-app (3 worktrees)
+- frankxai_FrankX (3 worktrees)
+- gencreator.ai (4 worktrees)
+- starlightintelligence.ai (12 worktrees, four unpushed local branches)
 
-Wave B, when named, is the clean-twin reclaim.
-Home HEAD alone is not enough. Require durable branch or tag
-reachability, other local branches, stashes, untracked and ignored
-files, submodules, and attached worktrees.
-Preserve agentic-ops while agentic-ops-fleet-serve remains attached.
-Do not overwrite another harness's checkout.
-Deleting a proven duplicate is the disk return. Do it one repo at a time.
-
-Leave the three empty worktree directories, the Claude temp file, the
-watcher logs and pid, the home node_modules cache, and
-%SystemDrive%/ProgramData. Keep universe/QUARANTINE.md.
-Do not git init or invent a remote.
+Do not delete those until each extra worktree is removed without --force
+and every local branch tip is on the origin. Do not overwrite the estate
+checkouts. Disk was 13.62% free after Wave B. No new worktree. No zip.
 
 Leave the Fable continuation prompt and the July fronts as they are.
 Hub primary stays agent/hermes/fleet-task-contract-v1.

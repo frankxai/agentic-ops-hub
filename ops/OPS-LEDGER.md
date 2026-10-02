@@ -2,7 +2,14 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (home renames, Wave A assessment, Wave 0, placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (home Wave B reclaim) · 2026-10-01 renames, Wave A, and Wave 0 remain below · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-02 — home Wave B reclaim (YogaBook)
+
+- Nine clean home clones removed after `ls-remote` showed `main` already on GitHub and the estate checkout was still there. Heads and the branches left untouched are in `ops/sessions/2026-10-02.md`.
+- Disk 128.64 GiB / 13.52% before, 129.60 GiB / 13.62% after. Under the 15% floor. No zip, no new worktree, no deploy.
+- Kept because of extra worktrees or unpushed branches: `agentic-ops` (17 worktrees, includes `.env`), `agentic-ops-fleet-serve`, `arcanea-ai-app` (3), `frankxai_FrankX` (3), `gencreator.ai` (4), `starlightintelligence.ai` (12, four local branches absent from origin).
+- Canonical checkouts under `starlight\repos` were not switched.
 
 ## 2026-10-01 — home renames into repos (YogaBook)
 
