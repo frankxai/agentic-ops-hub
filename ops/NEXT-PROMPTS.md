@@ -20,44 +20,37 @@
 **[current · Codex · premium product revenue sprint]**
 ```text
 Continue task 01a0f725-83df-7ef1-8bc0-2979b9f33cd6 and existing
-OBJ-20261001-PREMIUM-PRODUCT-REVENUE-SPRINT. Metric: EUR 10,000 paid
-product revenue excluding VAT/refunds by 10 October; actual revenue unknown.
-Read ops/sessions/2026-10-02.md and
-ops/strategy/gencreator-ai-creation-2026-10-02.md. Frank rejected the simple
-template studies as sufficient competitive commercial value and clarified
-AI creation, monetization, community and deep engineering are the direction.
-Read C:/Users/frank/.starlight/policies/product-outcome-quality.md. Its
-workspace/Codex pointers are loaded locally; universal CI/runtime adoption
-is not established. Preserve all prior fronts and shared-objective additions.
-Reuse GenCreator ADR-007/010/012 and the existing September programme.
-GenCreator issue5 owns source-to-useful-work/recovery/export/return. Confirm
-the actual maker/checker and source ownership; the primary programme tree
-has other lanes' untracked recovery/roadmap edits and must not be overwritten.
-PR67 is MERGED as 3c54858 and already supplies richer local authoring,
-editable media, film export, revisions and recovery. Inspect current code
-and refresh its dated checks; public plugin parity and managed readiness
-remain separate. Do not rebuild it or create another generic canvas/OS.
-The next packet: real release source, retained creator-selected phrases,
-one good LinkedIn post and editable five-slide carousel, restart/reopen,
-selective edit/export, and return with a second source. Compare repair,
-useful accepted output, time and cost with a plain assistant plus editor.
-Source arrangement/scaffold compilation is not professional AI generation.
-Same-machine recovery and portable export do not imply cloud synchronization.
-First Poolside critique hit the length limit; the narrowed second critique
-completed and calls differentiation/demand unproven. Both cost zero; neither
-is a release PASS. Verify promised platforms/formats before distribution.
-Test one professional local edition and one complete domain workflow pack
-before admitting the other preserved monetization families. Multi-marketplace
-distribution follows actual native format, seller approval and paid value.
-Keep the existing six template directions, MIT rights, PR11 1adfa5c and
-74-contract/browser evidence; they are assets, not founder-approved flagship
-or paid release proof. PR8 conflict stays with an admitted owner lane.
-Shared objective baseline validation fails on another lane's statuses;
-retain pending evidence rather than overwrite its work. Paid release needs
-actual buyer value, approved seller, purchase/delivery/refund/24h proof and
-price decision. No invented demand or growth. Keep existing book/RAG repair
-findings. Check fresh admission; below 15% disk no installs/worktree/media
-fanout. Target unmet; preserve unfinished work and record exact evidence.
+OBJ-20261001-PREMIUM-PRODUCT-REVENUE-SPRINT. EUR10,000 paid product revenue
+excluding VAT/refunds by October10; actual revenue unknown, target unmet.
+Read ops/sessions/2026-10-02.md, existing AI creation strategy, quality
+policy and GenCreator issue5. Preserve all products/names/unfinished work.
+GenCreator PR135 implements selective source-bound host revision at 3a8204a,
+stacked on programme, not main. Exact Vercel preview and 30 focused browser
+cases pass; cloud full CI37015753555 succeeds (828 unit, 156 E2E passed,
+one flaky project-save retry, two skipped). Actual host-authored release
+post/five slides imported, exported and reopened with source phrases intact.
+Poolside exact-source PASS has no visual/buyer scope. Earlier failures and
+external drafting timeout remain evidence. Own worktree dependencies are
+partial from interrupted pnpm repair; use admitted existing tools/cloud.
+Next: investigate existing save/reload text-appending flaky result and
+reconcile with the admitted owner of open hydration PR95. Do not hide it
+with a retry or overwrite other lanes. Then complete second-source return
+and compare with a capable assistant plus creator's Canva/Figma workflow
+on accepted useful output, repair effort, recovery, time and cost. Review
+actual post/slides with independent editorial/design judgment before price.
+Revision requests do not survive page close; durable session continuation
+is a concrete next gap. Plain source quotations do not prove factual support.
+Keep existing PR67 rich authoring/media/recovery foundation and ADR007/010/012.
+No new canvas/OS/product name or superficial paid-template substitution.
+User has explicitly authorized design-agent orchestration; PP swarm HOLD
+prevents fanout until fresh admission allows it. Below15% disk no installs,
+worktree additions or media/model/build fanout. Do not close foreign tasks.
+Local policy loading is verified; universal runtime enforcement is not.
+Buyer demand, native-format portability, approved seller, purchase/delivery/
+refund/24h access and founder price signoff remain paid-release gates.
+Keep Creator Launch issue3/PR11 assets and FrankX issue124 revenue scope.
+Shared objective validation fails on foreign statuses; preserve pending
+evidence instead of replacing their records. Save hub handover and issue5.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
