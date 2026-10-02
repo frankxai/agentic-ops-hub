@@ -1168,3 +1168,48 @@ of the other agent's unpublished branch. Other prompt bytes/history are preserve
 Both saves use this hub and existing PP3/config46. All14 axes and original
 brand/product/team, instructions/skills/graph/loop/hook/eval/observability and
 SIS150 denominators remain incomplete. Preserve Queen's separate activation owner.
+
+
+### Estate fundamentals: merged hook repair projected and native Codex proof
+
+Config [PR79](https://github.com/frankxai/starlight-agent-config/pull/79) merged as
+`c1caf5a5526bae801a5d7dac1d29086287d3ef30` at 2026-10-02T04:35:15Z. Current
+main `d3a824134d0119f4bfa2e72ad791e6279f026a85` contains that merge. Eight of nine
+PR files retain their exact bytes; CI subsequently expanded its policy test glob.
+The shared module matches independent Anthropic code-review head `88fea875`
+byte for byte, as recorded in hub main's existing convergence receipt; earlier
+CI review PASS at `ace2f97` is preserved. This turn made no new paid review call.
+
+The installed Codex and Grok shared modules still executed checkout formatter
+code. After full retained-claim replay and a fresh own estate lane, both were
+replaced with the reviewed merged bytes, SHA256
+`9b1a244afee7559fe2fae7f33205b2764a2994bcac9ce4c29b122de6e7a62673`.
+Individual original backups and hash-conditional ownership-gated rollback are
+in private `hooks-native-reconciliation-20261002/projection.json`. Selected
+settings, interpreter declarations, Codex/Claude/Grok secret guards and Grok's
+native adapter were unchanged. No source repository or foreign checkout changed.
+
+Actual Codex app proof: a fictional marker patch was blocked by PreToolUse and
+its target is absent. A later benign patch generated a native post receipt at
+08:32:54.482Z for task `01a0f720-641c-7af2-af40-cc12eafd6a4f`, tool `apply_patch`,
+`checks: []`, `durationMs: 0`, and `requires-explicit-workspace-check`. The receipt
+binds this one native invocation to the projected behavior. The denial overlay's
+origin is unresolved; declared Codex PreToolUse matcher alone omits apply_patch.
+Grok `.compat.claude.hooks` is false; this does not prove every native Grok setting.
+No Grok host execution, formatter execution, credentials or customer data used.
+
+Six direct helper checks separately show both guards permit benign input;
+installed guard permits malformed JSON/null while PR84 candidate exits2 for both.
+These helper exits do not prove outer host denial. [PR84](https://github.com/frankxai/starlight-agent-config/pull/84)
+and [PR80](https://github.com/frankxai/starlight-agent-config/pull/80) remain draft
+open/review-required at `3f2ba5d` and `08d6e80`. Guard adoption, trusted pinned
+launcher/load-failure/timeout denial and every effective overlay/host remain open.
+
+PP V5 remains unchanged:27 unstaged/uncommitted/unpublished files,42 inherited
+final files, local55 remediation/30 native/22 Python/148 parity PASS with overlap.
+Actual review-lite 08:27:17Z HOLD5582/6144MB,32 task runtimes; no reviewer started.
+No builds, installs, new worktrees, agents, services, watchers or task archival.
+Original full source/hosted/installed consumer/physical PP gates and every original
+14-axis programme, brand/team, SIS15020-task/host/transport/restart denominator,
+graph/eval/lane durable recovery/accounting and Queen134 separate owner remain open.
+All14 estate axes remain incomplete. Task remains active; this turn is progress.

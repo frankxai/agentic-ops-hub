@@ -20,6 +20,18 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
+
+Current hook evidence: hooks-native-reconciliation-20261002. Config79 is merged
+at c1caf5a; main d3a8241 shared module matches earlier independent reviewed88fea875.
+Owned installed Codex/Grok shared modules now match main9b1a244a with exact backups
+and conditional rollback. Actual native Codex apply_patch post receipt08:32:54Z
+records requires-explicit-workspace-check/no formatter checks. One synthetic
+PreToolUse patch denial wrote no fixture; overlay identity remains unresolved.
+Secret guards/settings unchanged; PR84/80 still draft/review-required. Prove
+every actual host/tool, launcher/load/timeout denial and effective overlays before
+claiming complete hook enforcement. Grok compatibility hooks are false, not proof
+of all native loading. Keep current safety repair and preserve all earlier gates.
+Latest actual review-lite08:27:17Z HOLD5582/6144MB; no new checker or source rollout.
 Read pp-remediation-safety-20261002/resume-3 and candidate-evidence-v5.json.
 PP2d9/draft4 has27 dirty unstaged uncommitted/unpublished paths. Review-v5 freezes
 all42 inherited candidate files against observed GitHub/main09d4917, plus all
@@ -37,7 +49,7 @@ Direct legacy history/latest/summary consumers require migration to new readers,
 returned paths/manifests or explicit discovery. Parent ownership/ACL/path races/
 device durability remain limits; tests do not prove physical/visual correctness.
 
-Actual review-lite07:55:34Z HOLD5545/6144MB; no reviewer/source push/build/install/
+Historical review-lite07:55:34Z HOLD5545/6144MB; PP has no reviewer/source push/build/install/
 runtime change. Require actual fresh full6144MB for one serialized independent
 tool-free FULL inherited review-v5.py using authority-v5 and admission-v5-resume;
 both27 dirty and42 full inherited manifests must match. Changes require a new
