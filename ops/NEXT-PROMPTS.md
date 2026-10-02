@@ -27,7 +27,39 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT scene-writing donor fold in existing draft487:
+CURRENT Media Studio source/rights reconciliation in existing draft487:
+Appsource5a2b22af8a77fc3544b071e6970c9a4e314c9858, base9e287e47130bef39bf3b8caf7f60b20abd3b0ee3;
+app checkout still agent/codex/arcanea-source-consolidation-20261001, clean/pushed.
+Read docs/strategy/arcanea-media-rights-evidence-2026-10-02.md and its101fileJSON.
+Studioedaf7aff preserved clean; fork6f9cdee root notice variant scanempty,
+packages/studio metadataMIT. Upstream rootMIT addition1ff36675 June12/committerUTC,
+currentebebc51 sameLicense84757c5a/sha17cd2323. Actual commit API addedstatus verified.
+Mechanical38 exact licensed-tree matches (all26 selectedassets),34 unchangedfork
+unmatched,8 modifiedfork unmatched,21 noforkpath. Treelevel only; no rightsclasses.
+Fourdocs only; appcode/candidates5ready0/canon/manuscripts/Studio/media/notices same.
+Fullfourdoc textreview qualifiedPASS/1MEDIUM/6LOW; diff80d485a2/bundlea3eb5938.
+Leadbinds4Gitblobs/101rows/API facts separately. Notwhole487/rights/release.
+FirstREVISE retained, reviews$0.7463848list, bothterminal/tools0/MCPempty.
+Followup4checkpoint/config Gitleaks8.30.1/default scan0findings, scope25584bytes;
+no fulltree/history/privateclassification proof. Qualifiers retained externally.
+NativeCI37050772791 exact5a frozenInstall/Lint/TypeScript/Build/CIStatus PASS;
+existingdraftgalleryskip. Three priorcancelled receipts kept, no forcecancel/restart.
+Initial review2HIGH/4MEDIUM/5LOW retained; no new source/license/visibility permission.
+User goal authorizes audit/draftpreparation; owner integration/rights/release gates remain.
+Current Studio release index0/limit100, prior/deleted/external binaries unaudited;
+operator/public classification of savedpatches/harnessconfig/localpaths remains.
+NEXT: component/hunk lineage on42 fork-era unmatched paths and21 new paths,
+reconcile applicable notice/copyright and asset/provider terms, then compare
+historical-fork maintenance against bounded adapter to reviewed pinnedcurrent
+upstream or existing app mediaservice (acceptanceunverified). None chosen/approved.
+Reducedcatalogmaintenance hypothesis only; redistribution/dependencyhold unlifted.
+Keeponepublicappintegration/canoninplace; no newrepo/mirror/canonpack/archives/
+visibility/licence/Heart/history/merge/deploy/commerce decision. Preserve allowners,
+408/277/427,500 humanacceptance and502 gameengine285 selection; fullgoalactive.
+Both issue276/draft487 and hub3file saves; allownedprocessesterminal/lane release.
+Private media-rights-reconciliation-20261002 raw API/text/review/failed receipts.
+
+RETAINED scene-writing donor fold in existing draft487:
 Source9e287e47130bef39bf3b8caf7f60b20abd3b0ee3, basefcad9bf;
 app worktree C:/Users/frank/starlight/worktrees/arcanea-source-consolidation-20261001
 is agent/codex/arcanea-source-consolidation-20261001, clean/pushed.
