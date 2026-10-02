@@ -2,7 +2,31 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-02: Queen foundation and hardening on main; activation pending (Codex)
+
+- Frank explicitly requested continuing end-to-end production build and main integration. [PR135](https://github.com/frankxai/agentic-ops/pull/135) merged as `7d3424916a7cb1794cd045244fd951c5b43199cd`, after independent full exact-head APPROVE, 47 tests and passing CI. [PR138](https://github.com/frankxai/agentic-ops/pull/138) merged as `7585db643af86ca404e397489355e3c767f89f1b`, after independent final hardening APPROVE, 52 tests and passing CI. Both merges used the existing cross-harness gate with matching heads.
+- Main now requires private absolute projection state outside all Git checkouts, rejects ancestor locations, blocks authenticated redirects, holds malformed/uncertain Slack responses and caps observation TTLs at 300 seconds. The redirect regression drives the actual publish POST through loopback HTTP302 and confirms no redirected request.
+- Production observation: existing n8n health endpoint and Hermes public root return HTTP200. Railway reports successful existing deployments. These establish reachability/deployment metadata, not live Queen work. The existing n8n management key returns HTTP401; Chrome is unavailable to this session. No secrets were printed, replaced or minted.
+- Status is MERGED_NOT_LIVE. [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open for valid management access, validated n8n corrections, approved Queen app/ingress, supervisor/ACL and billing evidence, then one real issue-bound task round trip. The EUR100/month subscription-first pilot stays held. No new service, paid session, recurring schedule, install or worktree was started.
+- Receipt and current pickup: `ops/sessions/2026-10-02.md` and `ops/NEXT-PROMPTS.md`. Earlier unfinished prompts remain intact.
+
+## 2026-10-01: Queen subscription-first operations pilot (Codex)
+
+- Frank authorized implementation and Slack workspace writes, considers Dots alongside Codex/ChatGPT, OpenAI Agents and Claude managed agents, and set an initial EUR100/month incremental API/cloud ceiling. Future increases require measured outcomes and an explicit budget revision. Existing subscriptions are separate commitments.
+- [Draft product PR135](https://github.com/frankxai/agentic-ops/pull/135), current head `f29243d7ff572c730afd0d68902732c72bb11306`, adds held-default provider routing, atomic EUR-cent reservations and a reusable operations blueprint. `/queen workflows` and `/queen budget` expose dated configuration and unknown live balances. Forty-seven tests pass (31 Slack, 16 admission); Gitleaks and enabled secret hooks pass.
+- Read-only n8n audit found 46 workflows, 27 configured active and 19 inactive. Existing command router, listener, Claude forwarder and health monitor have a concrete remediation plan; configured active is not execution-health proof. Editor sign-in is pending. Private instance evidence stays in the private product repo.
+- Independent Anthropic full-diff review at `186b64e` requested one remaining Slack delivery correction. It is fixed at `f29243d`: only allowlisted definitive errors permit replay; partial or unknown failures remain held. Independent correction review returned PASS for that delta. Exact-final full review and activation evidence remain required before production. No provider transport was activated.
+- [Issue134](https://github.com/frankxai/agentic-ops/issues/134) stays open for app registration, approved ingress, n8n authentication/branch corrections, trusted admission/reconciliation ownership, current billing baseline, account eligibility and one sandbox worker round trip. Matrix remains a transport plan using the same task IDs and admission authority.
+- Existing Codex worktrees reused; no installs, new worktrees, persistent workers or paid cloud sessions. Latest machine admission was BOUNDED interactive, one serial checker. Dated earlier receipts and unfinished prompts are preserved.
+
+## 2026-10-01: Queen Slack workspace rollout; command activation pending (Codex)
+
+- Published the Queen desk, CLI/cloud register, v1.2 onboarding, intake/progress templates and rollout receipts into the eight existing core Slack rooms. Existing protocol v1.1, task history and held queues remain intact. Connector reads/posts were verified; free-team Canvas and missing Lists access limit the initial surface to posts and threads.
+- [agentic-ops PR135](https://github.com/frankxai/agentic-ops/pull/135), draft head `e98b96a2c01e3a4816af0dd61f98883945a0f256`, adds signed `/queen` commands, issue-bound intake into the existing Hermes bus, deduplicated threaded progress, held-default config, manifest and activation runbook. Twenty focused tests, staged Gitleaks and the existing commit secret hook pass.
+- [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
+- Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
 ## 2026-10-02: Arcanea footer recovery, draft497 (Codex)
 
