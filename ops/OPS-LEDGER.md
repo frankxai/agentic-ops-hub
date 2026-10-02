@@ -28,6 +28,20 @@
 - [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
 - Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
+## 2026-10-02: Arcanea pinned-canon reader repair, private patch (Codex)
+
+- Seven-file private patch against saved reader68456204, SHA256
+  `e8ecb0ccadb281ca8466f362fa20bab98f440c5b2e166070ae4ed9c4028bf220`.
+  Actual Worker verifies immutable app canon/hash, bounds source/deadline, excludes
+  staging and refuses unavailable-source verdicts; no mirror or canon mutation.
+- Native28/byte-exact private fixture application/Gitleaks pass. Explicit table
+  facts only; unstated elements unchecked. Node fixtures are not package/typecheck,
+  CI, Cloudflare, creator or release proof. Review prepared, not invoked: PP HOLD
+  6115 then5972MiB against6144; no PID/cost. Source-owner integration remains open.
+- Fresh05:55UTC live0.5.1 still clears Kaelith/Fire. Product276/278 and existing
+  server6 comments record artifact/limits; hub98 saves current pickup. Private source
+  stays private, all earlier candidates/owners/human gates retained. Full goal active.
+
 ## 2026-10-02: Arcanea public MCP entry, draft498 (Codex)
 
 - [Draft498](https://github.com/frankxai/arcanea-ai-app/pull/498), source

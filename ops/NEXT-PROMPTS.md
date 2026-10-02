@@ -27,7 +27,30 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT public MCP entry proposal in draft #498:
+CURRENT pinned-canon reader repair, PRIVATE PATCH ONLY:
+Existing saved reader68456204be0ecbf3546eedc64c53d9f2a7471e34, not on server main.
+Do not take Grok's worktree or create another public repo/server/pack. Artifact:
+C:/Users/frank/.starlight/reviews/arcanea-isolated-evaluation-20261001/reader-canon-repair-20261002/reader-canon-repair.patch
+SHA256e8ecb0ccadb281ca8466f362fa20bab98f440c5b2e166070ae4ed9c4028bf220.
+Read README/source-receipt/verification/review-input and complete seven-file packet.
+Actual Worker uses immutable app740 locked source, hash verification/64KiB/3s;
+unavailable source cannot clear/score. Gate counts/frequencies/named bonds/explicit
+elemental domains only; staging and inferred assignments excluded/unchecked.
+No persistent mirror, canon edit, private-source publication or new repo.
+Native Node28 pass, private Git apply output byte-exact, Gitleaks pass. Full legacy
+tests/typecheck/build/native CI/Cloudflare/creator acceptance unverified. Review
+not invoked: PP HOLD6115 then5972MiB/required6144; no PID/cost. One source fetch
+per lint/score: assess availability/rate/latency/caching before release.
+Fresh05:55UTC live0.5.1 still falsely clears Kaelith/Fire; patch is not deployed.
+276comment5946406948/278comment5946407127/server6comment5946407248 record scope.
+NEXT: independent full7 source review only after fresh admission; selected server
+owner integrates into the surviving branch and runs full exact-source checks and
+human release gates. Finish retained497 one-file review when admitted. Preserve
+world/audience/release >=60%, Studio <=30%, OSS <=10%, existing shared owners,
+earlier candidates, zero-ready skills, launcher question and #408/#427. Continue
+genuine creator usefulness, rights/folds/plugin/community/revenue proof. Goal active.
+
+RETAINED public MCP entry proposal in draft #498:
 HEAD5e4b5be8bd58afc9f6832e320b55574a471d8752, branch
 agent/codex/arcanea-mcp-entry-20261002 in existing source worktree below.
 Read planning-with-files/CURRENT_STATE_2026-10-02_MCP_READER_ENTRY.md and276
@@ -126,6 +149,7 @@ Browser HOLD7801/8192MiB; no browser, foreign cleanup, live signup, mail or DB w
 Original403 f20484f8ec7cc02e2f9507f08186057597360db5 draft/keep and owner audit intact.
 Read planning-with-files/CURRENT_STATE_2026-10-02_COMMUNITY_CAPTURE.md and #276.
 
+RETAINED PRIOR PICKUP (source-state context; current action is above):
 NEXT: finish retained497's one-file capture review when machine admission permits;
 its source branch is saved but current checkout is498. Coordinate the observed
 Kaelith/Godbeast false clear with existing393/388/421/478 server owners, reproducing
