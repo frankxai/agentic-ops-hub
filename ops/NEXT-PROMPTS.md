@@ -27,7 +27,28 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT shared AuthorOS EPUB draft3 / owning issue2:
+CURRENT shared EPUB source-fallback correction, AuthorOS draft3 / issue2:
+Author-os branch agent/codex/author-epub-20261002 clean/pushed at
+ba6ce10f3e4f4449db886420c39f922f240fe5e7; preview parent30d90432,14files; three-file correction3dddaff8.
+Null saved graph previously fell through to unfingerprinted Markdown, producing
+different manuscripts with the same claimed source hash. Selected graph now
+validates and normalizes directly; seven invalid values/manifest null refuse.
+Real CLI/MCP, full local/core tests/source and prior-output preservation pass.
+Native CI37066807370 frozen Install/full/new tests/build/smoke/pinned sample
+EPUBCheck5.4.0 PASS,3.4rules,0fatals/errors/warnings/infos. Private original Arcanea
+artifact stillb130cf70/40896bytes; no private EPUBCheck/real reader/approval.
+Independent review pending: Claude timeout/weekly limit, Gemini0.60.0 rejected
+UNSUPPORTED_CLIENT before usable review; terminal55/tools0, costunreported.
+Task ACL/trust warnings retained; no bypass/update/new login. Four checked global
+files unchanged; configured isolation is not a verified tools registry/OS sandbox.
+Next use admitted supported existing-auth provider for exact final14-file source
+review, then two real readers on owner-approved source; issue2 revision/rights/
+five-task effort/hosted delivery still open. Keep dependent draft; preserve preview/
+Hermes/shared owners. No merge/release/canon/licence/Heart/price/install choice.
+Issue2 receipt https://github.com/frankxai/author-os/issues/2#issuecomment-5961785145; hub three-file record/draft98.
+No live owned worker/server; release own lanes after verified save.
+
+RETAINED shared AuthorOS EPUB draft3 / owning issue2:
 Canonical author-os checkout branch agent/codex/author-epub-20261002, clean/pushed,
 source3dcaa2094c3d5bf818586bdaf759c5ded607fe79, preview parent30d90432d84c526315985d806cd938c726b4271d.
 14files; first13 implementation blobs unchanged from318b9f91; finaldiff658584f3.

@@ -4,6 +4,12 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-02: EPUB source fallback correction, AuthorOS draft3 (Codex)
+
+- Source `ba6ce10f3e4f4449db886420c39f922f240fe5e7`, three-file correction against3dc; fourteen-file draft still based on preview30d90432. Reproduced null-graph fallback with distinct manuscripts/same claimed source identity. Selected graph now validates and normalizes directly; invalid graph/manifest refuses before output. CLI/MCP, seven graph cases, source/old-output preservation and local full/core EPUB tests pass; enabled secret scan0findings.
+- [Exact-head CI37066807370](https://github.com/frankxai/author-os/actions/runs/37066807370) frozen Install/full/new tests/build/smoke and pinned public-sample EPUBCheck PASS,0fatals/errors/warnings/infos. Private original Arcanea artifact repeatsb130cf70/40,896bytes; no reader/private EPUBCheck/rights/publication proof.
+- Independent review pending: Claude timeout/weekly quota; Gemini0.60.0 server UNSUPPORTED_CLIENT, terminal55/3.17s/tools0/no verdict/cost unreported. Task ACL/trust warnings retained; no bypass/update, four checked global files unchanged. Config isolation is not runtime proof. Existing [issue2 receipt](https://github.com/frankxai/author-os/issues/2#issuecomment-5961785145) plus three-file hub save. One public Arcanea app/canon/pinned consumers; broader creator delivery, rights, demand/revenue unfinished. Full goal active; keep draft and source-bound/human release requirements.
+
 ## 2026-10-02: Shared AuthorOS EPUB reading proof, dependent draft3 (Codex)
 
 - [Draft3](https://github.com/frankxai/author-os/pull/3), final3dcaa2094c3d5bf818586bdaf759c5ded607fe79 against preview30d90432,14files. CLI/local MCP share safe Markdown/OPF/nav/spine/ZIP export, immutable checksum editions/source receipts, no source writes, manual-edit refusal and missing-receipt retry. Separate Hermes/preview preserved; no whole-preview/main/production approval.
