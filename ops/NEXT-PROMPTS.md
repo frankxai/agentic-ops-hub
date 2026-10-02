@@ -17,39 +17,52 @@
 
 ## Current
 
-[Queen Slack activation, Codex]
+[Queen verified execution continuation, Codex]
 ```text
-Continue agentic-ops issue134, preserving Frank's end-to-end production request.
-PR135 and PR138 are merged. Verified main is
-7585db643af86ca404e397489355e3c767f89f1b; status MERGED_NOT_LIVE.
-Both had independent full reviewed scopes and passing CI; 52 tests pass.
-Read docs/SLACK-QUEEN.md, docs/QUEEN-OPERATIONS-BLUEPRINT.md, the private n8n
-audit and the October 2 hub receipt. Do not reopen the merged code slices.
+Continue agentic-ops issue134 and config issue86, preserving Frank's full production
+request and product-outcome quality policy. Read the October2 hub continuation,
+QUEEN-PURPOSE-AND-PRODUCT.md, foundation map and private runtime runbooks.
 
-Frank authorized a EUR100/month initial incremental API/cloud ceiling and
-subscription-first use through supported authentication. No automatic increase
-or API fallback. Reconcile existing commitments and billing evidence before
-paid admission. Trusted supervisor/reconciler exclusively owns ledger writes;
-models must not receive database/settlement access. Plan and reserve together
-against fresh observations. Dots, managed providers and Matrix remain candidates.
+Ops placement PR148 merged98f20458a295fb8bde06e7f4519a9c9fb611e470. PR150 adapter
+merged d1d39191f13e1f62c0cfdd76ba7a63ae63c558ad after independent exact-head APPROVE,
+146 CI tests and passing post-merge CI. Status MERGED_NOT_LIVE. Read
+lifecycle/queen-slack-work.js and docs/QUEEN-WORK-CONTRACT.md. Reuse existing bus,
+verifier/admission accounting. Raw receipts, protected contracts/snapshots and
+review/current-task provenance required. recordAccepted retains actual artifact
+bytes; readAccepted recovers historical delivery evidence, never new authority.
+Code transport stays held pending isolated Git config/hooks, pinned checkers and
+full adapter success/failure/restart proof. Address pre-activation refinements.
 
-The Slack standard is posted; /queen is unregistered. Existing n8n management
-access returned HTTP401 and Chrome was unavailable. Restore supported access
-through the approved secret store or reconnect/authenticate the editor; never
-paste or mint credentials in chat. HTTP200 health/root responses do not prove
-executor work. Reuse existing routing workflows; prepare disabled
-fixes for signed ingress, actor allowlists, duplicate handling, branch-specific
-forwarding and receipt-derived status. Validate and re-read connections before
-any publishing; preserve unrelated active workflows. No secrets in chat/export.
-Connect approved Queen app/HTTPS ingress with rate/total deadlines. Provision
-private projection state outside every Git checkout, owner-only ACLs, approved
-secret loading and no untrusted proxy. Name the reconciliation owner and bind
-the owned bus without writing another harness's primary. Then probe one
-sandbox executor. Prove one issue-bound envelope, claim, threaded progress and
-final evidence before admitting a deterministic health pilot. Preserve routing,
-lane ownership, release gates and account eligibility. Keep cloud dispatch,
-cancellation and unseen ChatGPT coverage pending. No new worker/service/worktree
-under machine HOLD or BOUNDED storage restrictions.
+Config PR90 head c9b9c24d3ec61895c58b6ef12da72a28d3764d1a is ready with independent
+APPROVE/CI/validator/required doctor checks, but normal merge rejected: main requires
+one native approving GitHub review from another identity. Preserve reviewed head;
+no admin bypass. Own SOUL/AGENTS/capability source there, existing generic Hermes
+home/credentials untouched. Complete activation follow-ups and prove BOTH SOUL and
+operating contract load in the actual isolated profile. Preserve PR85/issue86 work.
+
+n8n read connector sees46 workflows/no Queen match. Management key returns401;
+execute requires executionMode absent from exposed schema and returned no execution
+ID. Restore supported API/editor access and connector contract through approved
+secret store or authenticated editor. No secrets in chat, auth bypass or repeated
+blind execution guesses. Read official n8n lifecycle skills; disabled corrections
+must be validated, re-read and tested before publication.
+
+EUR100/month initial incremental ceiling; supported subscription-first, no automatic
+paid fallback/increase. Reconcile baseline, fresh auth/allowance and private trusted
+supervisor/reconciler. Models cannot settle accounting. Dots has official cloud/
+Slack/delegation docs; account access/cost/control unverified. Compare supported
+Hermes and provider-native alternatives on the same valuable job. No fork/new Queen
+repo without a reviewed independent release/distribution/permission boundary.
+
+Finish protected controller/native permission/auth/budget integration. Authorize one
+exact-route/task/cap/expiry non-code pilot through canonical runtime. Prove signed
+Slack intake, one durable task/claim, useful artifact, checks, independent review,
+one progress thread, delivery/restart/duplicate recovery and actual cost. Fixtures
+and worker completion are not LIVE_VERIFIED. Measure repair/time/cost against the
+serious alternative. Marketing/premium live posts human-gated. Save hub receipt,
+ledger, one current prompt and existing issues. Explicit routing/lane checks, one
+owner per worktree, current RAM/storage admission. No new worktree/install or
+unattended worker under storage BOUNDED; preserve every other unfinished front.
 ```
 
 [Starlight integration continuation, Codex]
