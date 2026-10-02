@@ -13,7 +13,7 @@
 
 ---
 
-> **2026-10-01:** three current prompts. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
+> **2026-10-02:** Queen foundation and hardening are on main; its current prompt covers activation access and proof. Earlier integration work remains open. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
 
@@ -23,8 +23,8 @@ First read pp-admission-probes-20261002. Its five-file local uncommitted
 candidate removes unrelated full audits from preflight while preserving required
 measurements and exact holds; 30 actual-source admission/MCP/maintenance fixtures
 pass after two baseline regressions. Independent review, hosted typecheck/build/
-emitted/compiled checks and physical latency remain pending. Last RAM 3655 MB
-was below the 4096 MB floor. Obtain fresh review-lite admission before a checker;
+emitted/compiled checks and physical latency remain pending. Latest review-lite attempt measured 4784 MB free versus 6144 MB required and
+held the checker. Obtain fresh admission before starting a reviewer;
 then review frozen bytes and complete exact-head hosted checks before source
 acceptance or installed projection. Keep the original 14-axis goal intact.
 
@@ -62,6 +62,41 @@ Fresh machine/storage and full retained ownership checks before heavy work.
 No new competing service/queue, false team/customer/cloud outcomes or fanout.
 Preserve other edits/history/prompts and unfinished task records. Save handover
 only in agentic-ops-hub and update existing product issues. Release own workers/lanes.
+```
+
+[Queen Slack activation, Codex]
+```text
+Continue agentic-ops issue134, preserving Frank's end-to-end production request.
+PR135 and PR138 are merged. Verified main is
+7585db643af86ca404e397489355e3c767f89f1b; status MERGED_NOT_LIVE.
+Both had independent full reviewed scopes and passing CI; 52 tests pass.
+Read docs/SLACK-QUEEN.md, docs/QUEEN-OPERATIONS-BLUEPRINT.md, the private n8n
+audit and the October 2 hub receipt. Do not reopen the merged code slices.
+
+Frank authorized a EUR100/month initial incremental API/cloud ceiling and
+subscription-first use through supported authentication. No automatic increase
+or API fallback. Reconcile existing commitments and billing evidence before
+paid admission. Trusted supervisor/reconciler exclusively owns ledger writes;
+models must not receive database/settlement access. Plan and reserve together
+against fresh observations. Dots, managed providers and Matrix remain candidates.
+
+The Slack standard is posted; /queen is unregistered. Existing n8n management
+access returned HTTP401 and Chrome was unavailable. Restore supported access
+through the approved secret store or reconnect/authenticate the editor; never
+paste or mint credentials in chat. HTTP200 health/root responses do not prove
+executor work. Reuse existing routing workflows; prepare disabled
+fixes for signed ingress, actor allowlists, duplicate handling, branch-specific
+forwarding and receipt-derived status. Validate and re-read connections before
+any publishing; preserve unrelated active workflows. No secrets in chat/export.
+Connect approved Queen app/HTTPS ingress with rate/total deadlines. Provision
+private projection state outside every Git checkout, owner-only ACLs, approved
+secret loading and no untrusted proxy. Name the reconciliation owner and bind
+the owned bus without writing another harness's primary. Then probe one
+sandbox executor. Prove one issue-bound envelope, claim, threaded progress and
+final evidence before admitting a deterministic health pilot. Preserve routing,
+lane ownership, release gates and account eligibility. Keep cloud dispatch,
+cancellation and unseen ChatGPT coverage pending. No new worker/service/worktree
+under machine HOLD or BOUNDED storage restrictions.
 ```
 
 [Starlight integration continuation, Codex]

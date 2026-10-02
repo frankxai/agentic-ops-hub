@@ -46,6 +46,7 @@ jobs:
             tests.test_queue_reconcile \
             tests.test_fleet_watch \
             tests.test_estate_ci_watch \
+            tests.test_merge_steward \
             tests.test_fleet_control \
             tests.test_token_planner \
             tests.test_cli_capacity \

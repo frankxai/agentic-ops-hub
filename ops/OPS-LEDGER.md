@@ -2,128 +2,31 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
-## 2026-10-01: estate fundamentals continuation (Codex)
+## 2026-10-02: Queen foundation and hardening on main; activation pending (Codex)
 
-The full estate audit and implementation goal is active. One local ledger repair
-is verified: 17 reproduced validation errors resolved with exact backup,
-preserved unfinished work, tested rollback/concurrent-change refusal and an
-independent Anthropic conditional PASS whose requirements were checked. A later
-external append was preserved and the ledger still passed (74 signals, 20
-objectives, four candidates). The daily job remains paused.
+- Frank explicitly requested continuing end-to-end production build and main integration. [PR135](https://github.com/frankxai/agentic-ops/pull/135) merged as `7d3424916a7cb1794cd045244fd951c5b43199cd`, after independent full exact-head APPROVE, 47 tests and passing CI. [PR138](https://github.com/frankxai/agentic-ops/pull/138) merged as `7585db643af86ca404e397489355e3c767f89f1b`, after independent final hardening APPROVE, 52 tests and passing CI. Both merges used the existing cross-harness gate with matching heads.
+- Main now requires private absolute projection state outside all Git checkouts, rejects ancestor locations, blocks authenticated redirects, holds malformed/uncertain Slack responses and caps observation TTLs at 300 seconds. The redirect regression drives the actual publish POST through loopback HTTP302 and confirms no redirected request.
+- Production observation: existing n8n health endpoint and Hermes public root return HTTP200. Railway reports successful existing deployments. These establish reachability/deployment metadata, not live Queen work. The existing n8n management key returns HTTP401; Chrome is unavailable to this session. No secrets were printed, replaced or minted.
+- Status is MERGED_NOT_LIVE. [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open for valid management access, validated n8n corrections, approved Queen app/ingress, supervisor/ACL and billing evidence, then one real issue-bound task round trip. The EUR100/month subscription-first pilot stays held. No new service, paid session, recurring schedule, install or worktree was started.
+- Receipt and current pickup: `ops/sessions/2026-10-02.md` and `ops/NEXT-PROMPTS.md`. Earlier unfinished prompts remain intact.
 
-Source recovery update: nine catalog references now resolve to a pinned snapshot
-of reviewed config main `9c87802`. Two of thirty targets remain absent and explicitly
-unavailable. Eleven source tests and fifteen fresh Windows transaction tests passed;
-an independent Anthropic PASS bound the final transaction. All nineteen other
-entries were preserved. Source utility: config commit `1c39664` on
-`codex/orchestration-integration-20260923`, pushed and read back; not merged to main.
+## 2026-10-01: Queen subscription-first operations pilot (Codex)
 
-PP admission update: corrected core/CLI/MCP source is pushed at `7cc20b9`.
-[Issue 3](https://github.com/frankxai/peak-performance/issues/3) and
-[draft PR 4](https://github.com/frankxai/peak-performance/pull/4) track the reserve
-gate and source integration. Eighteen actual-source/fixture-protocol cases pass;
-independent Anthropic core/CLI and MCP reviews pass. The running Hermes checkout
-is unchanged. Dependency tests/build/typecheck, producer/main integration and an
-owned runtime projection remain open. Disk crossed below 15%; installs, worktree
-adds and build fanout are held. The pressure receipt is recorded privately.
-Source review also found age-based writer-lock deletion in the legacy lane helper
-and pre-existing MCP cwd response/existence-check concerns; those remain open.
-Registry main `bd4d2f2` was read in the instruction slice; collections remain unchanged from the prior pin.
+- Frank authorized implementation and Slack workspace writes, considers Dots alongside Codex/ChatGPT, OpenAI Agents and Claude managed agents, and set an initial EUR100/month incremental API/cloud ceiling. Future increases require measured outcomes and an explicit budget revision. Existing subscriptions are separate commitments.
+- [Draft product PR135](https://github.com/frankxai/agentic-ops/pull/135), current head `f29243d7ff572c730afd0d68902732c72bb11306`, adds held-default provider routing, atomic EUR-cent reservations and a reusable operations blueprint. `/queen workflows` and `/queen budget` expose dated configuration and unknown live balances. Forty-seven tests pass (31 Slack, 16 admission); Gitleaks and enabled secret hooks pass.
+- Read-only n8n audit found 46 workflows, 27 configured active and 19 inactive. Existing command router, listener, Claude forwarder and health monitor have a concrete remediation plan; configured active is not execution-health proof. Editor sign-in is pending. Private instance evidence stays in the private product repo.
+- Independent Anthropic full-diff review at `186b64e` requested one remaining Slack delivery correction. It is fixed at `f29243d`: only allowlisted definitive errors permit replay; partial or unknown failures remain held. Independent correction review returned PASS for that delta. Exact-final full review and activation evidence remain required before production. No provider transport was activated.
+- [Issue134](https://github.com/frankxai/agentic-ops/issues/134) stays open for app registration, approved ingress, n8n authentication/branch corrections, trusted admission/reconciliation ownership, current billing baseline, account eligibility and one sandbox worker round trip. Matrix remains a transport plan using the same task IDs and admission authority.
+- Existing Codex worktrees reused; no installs, new worktrees, persistent workers or paid cloud sessions. Latest machine admission was BOUNDED interactive, one serial checker. Dated earlier receipts and unfinished prompts are preserved.
 
-Instruction source update: config `08d6e80`,
-[draft PR80](https://github.com/frankxai/starlight-agent-config/pull/80), restores
-three policies and corrects three guides. Independent Anthropic PASS follows two
-preserved BLOCK rounds; six Git-index bindings, frontmatter/reference checks,
-whitespace and staged secret scan pass. Doctor is presence-only19/20, exit0.
-Source integration and runtime adoption remain open; junctions still point at the
-occupied primary and installer/doctor cover SDS only. Two release-control checks
-passed at readback; draft PR merge state remains blocked.
+## 2026-10-01: Queen Slack workspace rollout; command activation pending (Codex)
 
-Current blockers: missing estate/storage sources and two absent skill sources;
-owned projection/fresh-task loading; canonical agent identities; effective hooks,
-eval pilot, brand bindings and cloud trace proof. Legacy lane preservation and
-concurrency repair now have [issue4](https://github.com/frankxai/starlight-command/issues/4).
-Full estate acceptance remains incomplete. Existing records:
-[config40](https://github.com/frankxai/starlight-agent-config/issues/40),
-[config46](https://github.com/frankxai/starlight-agent-config/issues/46).
-Handover: `ops/sessions/2026-10-01.md`, Instruction source recovery section.
-Private source/review evidence remains in the existing objective-ledger audit.
-Next: integrate and verify the reviewed instruction projection, reconcile remaining
-sources and repair isolated lane ownership, then continue the eval pilot and brand
-workflow proof. Historical ledger/catalog measurements above were not remeasured.
-
-Execution safety update: private lane candidate 77 core checks plus 96 differential pairs; Anthropic PASS for
-the held static source slice with author test evidence, with prior BLOCK rounds preserved. Live source is
-unchanged. Frozen 819-event journal replay fails compatibility at line 252;
-23 owners remain unreleased. Actual verify-lane permits protocol failures 2/4.
-Canonical source/migration/recovery/shared authority and caller/hook denial
-remain gates in [command issue4](https://github.com/frankxai/starlight-command/issues/4).
-Eval mirror PR16 has 8 source checks but unbounded synthetic per-cell accounting;
-no live model-quality run. [SIS150](https://github.com/frankxai/Starlight-Intelligence-System/issues/150)
-owns the host repair and original 20-task release denominator. The former hub
-owner explicitly released; this three-file save now replaces the deferred save.
-All 14 estate axes remain incomplete. Pickup: session Execution safety and eval
-accounting continuation; preserve the other Codex/cloud prompts.
-
-Eval accounting continuation: private V3 passes45 tests (37 accounting plus8
-frozen comparator), including a six-cell actual-comparator wrapper fixture.
-Independent static Anthropic PASS follows two preserved BLOCKs and carries
-mandatory authority/pattern/parent/late-fact/shared-state integration conditions.
-No canonical source/runtime update, approved budget or live model-quality call.
-Methodology SIS150 and original20-task release denominator remain unchanged;
-swarm15 owns durable authority, SIS147 reconciliation, SIS125/124 verification.
-Old mirror PR16 host/CLI remain unprotected. Source/promotion stay held. Both saves:
-SIS150 comment5937462717 and this hub branch/PR95. Full14 estate axes incomplete.
-Pickup: session Per-invocation eval accounting candidate; private REVIEW-GATES.md.
-
-Graph/checkpoint continuation: six exact-main failures reproduced, private source
-repairs pass32 original+18 new tests=50. Three independent static Anthropic PASS
-reviews bind final source; generated JS/dependencies and private patch bytes checked.
-Canonical source/runtime unchanged. Focused [SIS graph issue](https://github.com/frankxai/Starlight-Intelligence-System/issues/266) and
-[swarm15 receipt](https://github.com/frankxai/starlight-swarm/issues/15#issuecomment-5938322059) contain exact patches/regressions; this hub
-branch/PR95 saves handover. Source ownership/storage/typecheck/actual durable policy,
-artifact authority and bounded resume/provider recovery remain gates. SIS150 original
-twenty-task release criteria unchanged; all14 estate axes incomplete. Pickup:
-session Graph budget and checkpoint recovery repairs; private graph-runtime leaf.
-
-Hook-source continuation: selected effective-declaration audit reproduced installed
-guard truncation, recursion/exit1 and malformed-input acceptance. Reviewed portable
-source 3f2ba5d/[draftPR84](https://github.com/frankxai/starlight-agent-config/pull/84) passes26 local tests plus26 Windows
-and26 Linux tests in actual source-head CI. Two static review BLOCKs corrected;
-final guard and workflow/doc PASS. Four remote files verified. Installed bytes
-unchanged; native timeout/load/interpreter/host adoption remains gated by issue78
-and PR79. [Product receipt](https://github.com/frankxai/starlight-agent-config/issues/78#issuecomment-5939254590); handover here/PR95.
-Deferred graph handover is included. All14 estate axes remain incomplete.
-Pickup: session Effective hook audit and bounded secret guard source; private
-hooks-audit-20261001/published-evidence.json.
-
-Brand/team continuation:18 current Registry collections reconcile13 brands/26
-products/54 repo declarations,24 default-head pins and42 named local directories.
-Five manager/projection pairs match; zero canonical agents and16/10 direct studio
-memberships do not establish teams. All13 roots return200 directly/via own www.
-GenCreator current production source-bound/CI845 unit+118 browser pass/2 skip;
-PR95 separately121 pass/2 skip remains open. Creator Launch alias still302 SSO,
-source SHA unbound. Durable creator/demand/outcome gates remain open. Static audit
-PASS with nonblocking clarifications; private raw data preserved. Existing
-[team51](https://github.com/frankxai/agentic-ops/issues/51#issuecomment-5940198763),
-[Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940199231) and
-[Launch3](https://github.com/frankxai/creator-launch-os/issues/3#issuecomment-5940199624) saves verified; hub handover here.
-All14 estate axes incomplete; session Brand and team source reconciliation.
-
-Creator/demand source continuation: published Gen programmec0ff/local a96 preserved;
-private readback repair e1d8da46 applies exact bytes/staticPASS, unintegrated.18
-safety checks/9 defect reproductions/3 expected open-gate cases; readback does not
-prove reload or transaction. Legacy demand4fd source reproduces count/update/
-withholding/report defects, absent from scoped current command7d78/opsbd4d trees.
-Gen notes-to-Growth Core versus KV remains unresolved; no live/customer proof.
-Existing [Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940944686) and
-[demand62](https://github.com/frankxai/agentic-ops/issues/62#issuecomment-5940945180) saved/readback match. Preserve proposed
-O1/Cloud97/full door and managed creator gates. All14 axes remain incomplete.
-Pickup: session Creator save and demand reporting source defects; private
-creator-demand-recovery-20261001/REPORT.md. Actual canonical ownership, transaction,
-recovery, demand report, accepted artifact/outcome/trace/cost remain next work.
+- Published the Queen desk, CLI/cloud register, v1.2 onboarding, intake/progress templates and rollout receipts into the eight existing core Slack rooms. Existing protocol v1.1, task history and held queues remain intact. Connector reads/posts were verified; free-team Canvas and missing Lists access limit the initial surface to posts and threads.
+- [agentic-ops PR135](https://github.com/frankxai/agentic-ops/pull/135), draft head `e98b96a2c01e3a4816af0dd61f98883945a0f256`, adds signed `/queen` commands, issue-bound intake into the existing Hermes bus, deduplicated threaded progress, held-default config, manifest and activation runbook. Twenty focused tests, staged Gitleaks and the existing commit secret hook pass.
+- [Issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. Independent exact-head review, Slack app/approved ingress connection and a sandbox worker round trip are still required. `/queen` is unregistered; cloud dispatch and cancellation remain pending. No worker availability or production activation is claimed.
+- Reused clean existing Codex worktrees and preserved their former branches. No dependency installation, new worktree, worker or persistent service. Machine admission held heavier work. The hub writer released its paths before this handover was added. Next prompt and full receipt are recorded below and in `ops/sessions/2026-10-01.md`.
 
 ## 2026-10-01: Contract proposal stacks reconciled; main and fleet gates retained (Codex)
 
@@ -404,6 +307,132 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+
+
+## 2026-10-01: estate fundamentals continuation (Codex)
+
+The full estate audit and implementation goal is active. One local ledger repair
+is verified: 17 reproduced validation errors resolved with exact backup,
+preserved unfinished work, tested rollback/concurrent-change refusal and an
+independent Anthropic conditional PASS whose requirements were checked. A later
+external append was preserved and the ledger still passed (74 signals, 20
+objectives, four candidates). The daily job remains paused.
+
+Source recovery update: nine catalog references now resolve to a pinned snapshot
+of reviewed config main `9c87802`. Two of thirty targets remain absent and explicitly
+unavailable. Eleven source tests and fifteen fresh Windows transaction tests passed;
+an independent Anthropic PASS bound the final transaction. All nineteen other
+entries were preserved. Source utility: config commit `1c39664` on
+`codex/orchestration-integration-20260923`, pushed and read back; not merged to main.
+
+PP admission update: corrected core/CLI/MCP source is pushed at `7cc20b9`.
+[Issue 3](https://github.com/frankxai/peak-performance/issues/3) and
+[draft PR 4](https://github.com/frankxai/peak-performance/pull/4) track the reserve
+gate and source integration. Eighteen actual-source/fixture-protocol cases pass;
+independent Anthropic core/CLI and MCP reviews pass. The running Hermes checkout
+is unchanged. Dependency tests/build/typecheck, producer/main integration and an
+owned runtime projection remain open. Disk crossed below 15%; installs, worktree
+adds and build fanout are held. The pressure receipt is recorded privately.
+Source review also found age-based writer-lock deletion in the legacy lane helper
+and pre-existing MCP cwd response/existence-check concerns; those remain open.
+Registry main `bd4d2f2` was read in the instruction slice; collections remain unchanged from the prior pin.
+
+Instruction source update: config `08d6e80`,
+[draft PR80](https://github.com/frankxai/starlight-agent-config/pull/80), restores
+three policies and corrects three guides. Independent Anthropic PASS follows two
+preserved BLOCK rounds; six Git-index bindings, frontmatter/reference checks,
+whitespace and staged secret scan pass. Doctor is presence-only19/20, exit0.
+Source integration and runtime adoption remain open; junctions still point at the
+occupied primary and installer/doctor cover SDS only. Two release-control checks
+passed at readback; draft PR merge state remains blocked.
+
+Current blockers: missing estate/storage sources and two absent skill sources;
+owned projection/fresh-task loading; canonical agent identities; effective hooks,
+eval pilot, brand bindings and cloud trace proof. Legacy lane preservation and
+concurrency repair now have [issue4](https://github.com/frankxai/starlight-command/issues/4).
+Full estate acceptance remains incomplete. Existing records:
+[config40](https://github.com/frankxai/starlight-agent-config/issues/40),
+[config46](https://github.com/frankxai/starlight-agent-config/issues/46).
+Handover: `ops/sessions/2026-10-01.md`, Instruction source recovery section.
+Private source/review evidence remains in the existing objective-ledger audit.
+Next: integrate and verify the reviewed instruction projection, reconcile remaining
+sources and repair isolated lane ownership, then continue the eval pilot and brand
+workflow proof. Historical ledger/catalog measurements above were not remeasured.
+
+Execution safety update: private lane candidate 77 core checks plus 96 differential pairs; Anthropic PASS for
+the held static source slice with author test evidence, with prior BLOCK rounds preserved. Live source is
+unchanged. Frozen 819-event journal replay fails compatibility at line 252;
+23 owners remain unreleased. Actual verify-lane permits protocol failures 2/4.
+Canonical source/migration/recovery/shared authority and caller/hook denial
+remain gates in [command issue4](https://github.com/frankxai/starlight-command/issues/4).
+Eval mirror PR16 has 8 source checks but unbounded synthetic per-cell accounting;
+no live model-quality run. [SIS150](https://github.com/frankxai/Starlight-Intelligence-System/issues/150)
+owns the host repair and original 20-task release denominator. The former hub
+owner explicitly released; this three-file save now replaces the deferred save.
+All 14 estate axes remain incomplete. Pickup: session Execution safety and eval
+accounting continuation; preserve the other Codex/cloud prompts.
+
+Eval accounting continuation: private V3 passes45 tests (37 accounting plus8
+frozen comparator), including a six-cell actual-comparator wrapper fixture.
+Independent static Anthropic PASS follows two preserved BLOCKs and carries
+mandatory authority/pattern/parent/late-fact/shared-state integration conditions.
+No canonical source/runtime update, approved budget or live model-quality call.
+Methodology SIS150 and original20-task release denominator remain unchanged;
+swarm15 owns durable authority, SIS147 reconciliation, SIS125/124 verification.
+Old mirror PR16 host/CLI remain unprotected. Source/promotion stay held. Both saves:
+SIS150 comment5937462717 and this hub branch/PR95. Full14 estate axes incomplete.
+Pickup: session Per-invocation eval accounting candidate; private REVIEW-GATES.md.
+
+Graph/checkpoint continuation: six exact-main failures reproduced, private source
+repairs pass32 original+18 new tests=50. Three independent static Anthropic PASS
+reviews bind final source; generated JS/dependencies and private patch bytes checked.
+Canonical source/runtime unchanged. Focused [SIS graph issue](https://github.com/frankxai/Starlight-Intelligence-System/issues/266) and
+[swarm15 receipt](https://github.com/frankxai/starlight-swarm/issues/15#issuecomment-5938322059) contain exact patches/regressions; this hub
+branch/PR95 saves handover. Source ownership/storage/typecheck/actual durable policy,
+artifact authority and bounded resume/provider recovery remain gates. SIS150 original
+twenty-task release criteria unchanged; all14 estate axes incomplete. Pickup:
+session Graph budget and checkpoint recovery repairs; private graph-runtime leaf.
+
+Hook-source continuation: selected effective-declaration audit reproduced installed
+guard truncation, recursion/exit1 and malformed-input acceptance. Reviewed portable
+source 3f2ba5d/[draftPR84](https://github.com/frankxai/starlight-agent-config/pull/84) passes26 local tests plus26 Windows
+and26 Linux tests in actual source-head CI. Two static review BLOCKs corrected;
+final guard and workflow/doc PASS. Four remote files verified. Installed bytes
+unchanged; native timeout/load/interpreter/host adoption remains gated by issue78
+and PR79. [Product receipt](https://github.com/frankxai/starlight-agent-config/issues/78#issuecomment-5939254590); handover here/PR95.
+Deferred graph handover is included. All14 estate axes remain incomplete.
+Pickup: session Effective hook audit and bounded secret guard source; private
+hooks-audit-20261001/published-evidence.json.
+
+Brand/team continuation:18 current Registry collections reconcile13 brands/26
+products/54 repo declarations,24 default-head pins and42 named local directories.
+Five manager/projection pairs match; zero canonical agents and16/10 direct studio
+memberships do not establish teams. All13 roots return200 directly/via own www.
+GenCreator current production source-bound/CI845 unit+118 browser pass/2 skip;
+PR95 separately121 pass/2 skip remains open. Creator Launch alias still302 SSO,
+source SHA unbound. Durable creator/demand/outcome gates remain open. Static audit
+PASS with nonblocking clarifications; private raw data preserved. Existing
+[team51](https://github.com/frankxai/agentic-ops/issues/51#issuecomment-5940198763),
+[Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940199231) and
+[Launch3](https://github.com/frankxai/creator-launch-os/issues/3#issuecomment-5940199624) saves verified; hub handover here.
+All14 estate axes incomplete; session Brand and team source reconciliation.
+
+Creator/demand source continuation: published Gen programmec0ff/local a96 preserved;
+private readback repair e1d8da46 applies exact bytes/staticPASS, unintegrated.18
+safety checks/9 defect reproductions/3 expected open-gate cases; readback does not
+prove reload or transaction. Legacy demand4fd source reproduces count/update/
+withholding/report defects, absent from scoped current command7d78/opsbd4d trees.
+Gen notes-to-Growth Core versus KV remains unresolved; no live/customer proof.
+Existing [Gen5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-5940944686) and
+[demand62](https://github.com/frankxai/agentic-ops/issues/62#issuecomment-5940945180) saved/readback match. Preserve proposed
+O1/Cloud97/full door and managed creator gates. All14 axes remain incomplete.
+Pickup: session Creator save and demand reporting source defects; private
+creator-demand-recovery-20261001/REPORT.md. Actual canonical ownership, transaction,
+recovery, demand report, accepted artifact/outcome/trace/cost remain next work.
+
+
+
 ## Peak Performance project gates and MCP ID0 repair (Codex)
 
 Source task01a0f720-641c-7af2-af40-cc12eafd6a4f. Full estate goal active,

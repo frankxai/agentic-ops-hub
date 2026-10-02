@@ -1,0 +1,24 @@
+# Merge Steward allow-list. Only repos listed here are stewarded; the steward
+# runs from .github/workflows/merge-steward.yml in THIS repo and never touches
+# agentic-ops-hub itself (rejected by the loader).
+#
+# A repo merges only when BOTH the hub variable MERGE_STEWARD_MODE=live AND its
+# own `mode: live`. Otherwise it is shadow: sticky comments only.
+# Adding a repo here also requires installing the frankx-steward App on it.
+
+# Estate-wide ceiling across all targets per rolling 24h.
+global_daily_cap: 20
+max_merges_per_run: 3
+max_reviews_per_run: 8
+max_prs_per_run: 60
+
+targets:
+  - repo: frankxai/affiliate-agent-skills
+    mode: shadow
+    policy: policies/affiliate-agent-skills.yml
+  - repo: frankxai/arcanea-ai-app
+    mode: shadow
+    policy: policies/arcanea-ai-app.yml
+  - repo: frankxai/frankx.ai-vercel-website
+    mode: shadow
+    policy: policies/frankx.ai-vercel-website.yml
