@@ -884,3 +884,35 @@ install or full machine probes were started. After resource recovery, require
 fresh review-lite admission, independent provider review, then exact-head hosted
 checks before accepting/publishing this candidate. Preserve the previously
 verified aefe candidate and all failure/review evidence; all 14 axes stay open.
+
+
+## 2026-10-02T04:23:33.687537+00:00: Hub records reconciled; PP review held (Codex)
+
+Hub PR95 now includes accepted main babff6c50a54620eba9ea43b6915e55b1beaf4df
+in the owned branch. Merge cb170ec06ea34f80379e4cfe1a9f57e358be494b resolved
+four record conflicts. Current-main ledger/session bytes, every own historical
+addition, and all other current prompts are preserved. Eleven non-record files
+match accepted main Git blobs exactly. No code was rewritten and no PR merged
+into main. PR95 is OPEN/DRAFT and CLEAN at readback; exact-head CI36964121201
+passed. The next child records this handover and still requires its own CI.
+
+Fresh installed preflight at UTC04:13:44 held review-lite: 4784 MB free versus
+6144 MB required, CPU28/system9, 32 Codex runtimes, two observed dev servers.
+A later cheap sample at UTC04:21:38 measured4068 MB, below4096 MB floor. No
+reviewer, build, install, full follow-up probe or other task termination followed
+the hold. Installed preflight lacks the new storage evidence; it is not source
+storage/client acceptance. C drive remains bounded from the current sample.
+
+The five-file admission-only PP candidate remains frozen, unchanged, uncommitted
+and unpublished on aefe. Its 30 actual-source fixtures passed previously; review,
+source hosted typecheck/build/emitted/compiled checks, physical latency and
+installed/client acceptance remain pending. No new review cost incurred; actual
+cash and earlier partly unknown costs remain qualified. Full main BLOCK and all
+14 axes remain incomplete. Preserve original brands/products/teams, instructions,
+skills, graphs/loops/hooks/evals/observability and the SIS150 20-task programme
+and denominators. Next: fresh resource admission, frozen-source independent
+review and hosted checks, then full-main/controlled consumer gates. Keep current
+source records and unfinished work; no competing service or queue.
+
+Both product saves: existing PP3 and config46. Private proof: hub-reconcile-20261002
+and pp-admission-probes-20261002/review-resume-1. Other sessions' records retained.

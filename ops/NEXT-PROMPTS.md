@@ -19,6 +19,12 @@
 
 **Estate fundamentals continuation, Codex**
 ```text
+Hub PR95 now contains accepted main babff6c50a54620eba9ea43b6915e55b1beaf4df;
+four record conflicts are resolved, and other prompts/history remain intact.
+No PR merged into main. Reviewer admission held at 4784/6144 MB; a later
+4068 MB sample breached the 4096 MB floor. Start no checker before fresh
+admission. Preserve the uncommitted five-file PP candidate and every gate.
+
 First read pp-admission-probes-20261002. Its five-file local uncommitted
 candidate removes unrelated full audits from preflight while preserving required
 measurements and exact holds; 30 actual-source admission/MCP/maintenance fixtures
