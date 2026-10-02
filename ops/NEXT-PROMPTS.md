@@ -20,32 +20,32 @@
 **Estate fundamentals continuation, Codex**
 ```text
 Continue codex://threads/01a0f720-641c-7af2-af40-cc12eafd6a4f.
-Read pp-remediation-safety-20261002/resume-1 and candidate-evidence-v3.json.
-PP HEAD remains2d9/draft4;16 local unstaged files are dirty/uncommitted/unpublished.
-Review-v3 has the current frozen bytes and packet. V1 terminal BLOCK and v2
-unreviewed/superseded evidence remain. Local safety32/native30/Python16/parity148
-PASS, including10 TS/Python redaction forms and real Windows lookup/index checks.
-Watch unknown/throwing/malformed evidence no longer invents stops/restarts;
-nullable counts and gap status are exposed. CLI invalid flags fail before probes.
+Read pp-remediation-safety-20261002/resume-2 and candidate-evidence-v4.json.
+PP base2d9/draft4 has24 dirty unstaged uncommitted/unpublished source paths.
+The final frozen packet/manifest is review-v4; original V1BLOCK and unreviewed
+V2/V3 are preserved, V3 superseded. Local42 remediation/30 native/22 Python/
+148 parity PASS, overlap applies. TS/Python append journal retains legacy bytes
+and all stale-writer records; malformed/partial/linked data and old locks hold,
+no trim/age recovery/retry. Fsync uncertainty requires readback. Tray uses helper;
+direct legacy readers require adoption. Overnight now applies actual reserve/
+storage/freshness/CPU/task gates and unknown latest census, CLI exit2, exposed
+constraints and actual parallelism. Shared storage Node child clears NODE_OPTIONS.
 
-Five actual inherited caller defects were reproduced. Three remain: history
-concurrent lost update, corrupt-history overwrite, and overnight allowing new
-swarms from posture alone without reserve/storage/unknown admission. Fix those
-through retained ownership and explicit route guard/check before full main.
-Preserve live history and never age-delete writer locks. Review snapshot,
-process/watch persistence path ownership, format and actual consumers as well.
-Review-lite at06:24:06Z held5654/6144MB; no new checker started. Reuse no stale
-admission: require actual fresh full6144MB for one serialized tool-free review.
-review-v3.py uses authority-v3.json and admission-v3-resume.json. Its current
-manifest must match exactly; any new repair requires a new preserved freeze.
-Old12/14-file review/publication helpers are historical and blocked. Reclaim
-exact source paths with fresh lanes, update publication assertions to current
-review/manifest/lane IDs, then explicit --sparse staging with security hooks and
-both exact-head Ubuntu/Windows PR+push source/typecheck/build/emitted/Node18 CI.
-Source scoped acceptance cannot certify full main with remaining known defects.
-Installed runtime/foreign primary unchanged; actual client, calibration and
-controlled projection/rollback acceptance remain open. No unadmitted checker,
-install/build/new worktree/fanout. Preserve the Queen activation owner/prompt.
+Review-lite07:22:18Z HOLD5916/6144MB. No new review, build/install/source push or
+runtime projection. Current freeze is unreviewed. Review-v4.py uses authority-v4
+and admission-v4-resume.json, requires fresh actual full6144MB and exact manifest
+for one serialized tool-free checker. Preserve review history and original failures.
+Known full-main gates remain snapshot shell interpolation/minute overwrite and
+watch/overnight report persistence path/ownership/concurrency; inspect actual
+consumers/classifiers and whole inherited delta. Repair under fresh retained lane
+ownership and explicit route guard/check, then create a new immutable freeze if
+bytes change. Do not use historical12/14/16-file publication helpers. After latest
+scoped PASS, named --sparse staging with security hooks and both exact-head
+Ubuntu/Windows PR+push source/typecheck/build/emitted/Node18 CI are required.
+Full main, installed CLI/tray/client adoption/rollback and physical calibration
+stay open. Do not touch foreign primary or live history/locks, weaken admission,
+archive unfinished tasks, or start unadmitted builds/checkers/new worktrees.
+Preserve Queen's separate owner and activation prompt.
 
 All14 estate axes remain incomplete. Preserve full all-brand organization,
 instructions/skills, graph/loop/hook/team, local/cloud/Git, eval/observability/
