@@ -23,7 +23,9 @@ The base-owned Surface Guard cannot authenticate its private PR fetch.
 `fac3b05`, preserves the policy and uses the official GitHub credential helper
 for one command, with event-head verification. Its live
 contents-read-only proof rejects unauthenticated access, fetches the exact head
-and verifies absent retained credential configuration. The trusted base remains
+and verifies absent retained credential configuration. Scoped final Cohere source
+review is PASS; low suggestions were reconciled with the read-only permissions
+and command-scoped config/proof. The trusted base remains
 red until the reviewed repair is merged; governance is locked and needs Frank's
 current-head approval. Main protection is currently off, with no rulesets.
 An explicit five-check protection proposal is prepared privately; no permission

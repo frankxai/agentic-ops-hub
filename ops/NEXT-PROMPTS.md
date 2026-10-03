@@ -29,8 +29,10 @@ PR13 at `7b6b841c8c3c5c3143ab81c2a450b1e60170f019` has passing build/adoption an
 private fetch. Repair PR14 at `fac3b053f0682736331fb3cef7f85096d2983169` has a
 passing exact-head/read-only fetch proof and requires Frank's locked-governance
 approval. Its final command uses the official GitHub credential helper and checks
-the event head. Preserve that approval boundary and the red status until repaired;
-obtain a scoped independent verdict before merge. Reconcile PR13 onto the repaired
+the event head. Final scoped Cohere source review is PASS and live proof/product CI
+pass. Preserve the human approval boundary and red base status until repaired.
+An approval question for the frozen repair and optional five-check main protection
+is pending; silence supplies no permission. Reconcile PR13 onto the repaired
 base, rerun all checks and prove the trusted guard evaluates it. Apply the prepared
 five-check main-protection proposal only with explicit permission; no protection
 has been changed. Community issue12 tracks adoption and issue2 retains launch gates.
