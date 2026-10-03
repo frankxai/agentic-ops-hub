@@ -2,7 +2,36 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (design foundation merged and verified; estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (community browser pilot passes; trusted guard repair and merge protection await review) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Community interface pilot and private guard repair (Codex)
+
+[Kernel PR29](https://github.com/frankxai/starlight-design-intelligence/pull/29)
+merged `f90a3a3`; PR/main CI passed the audit, 61 existing tests and 42 real-browser/
+process checks. Scoped independent public-source review passed. The actual Next.js
+pilot exposed arrow/open-shadow false positives; the inspector now traverses and
+hashes reachable open shadow roots under its existing budget.
+
+[Community PR13](https://github.com/frankxai/gencreator-community/pull/13), head
+`7b6b841`, passes product CI, pinned adoption and 32 browser checks across four
+contexts/16 clean inspected states. Actual packet creation, invalid-input recovery,
+keyboard focus, Markdown download, mail draft, privacy and controlled rejection
+were exercised on CI merge `9533e27`. Visual/production acceptance stays open.
+
+The base-owned Surface Guard cannot authenticate its private PR fetch.
+[Repair PR14](https://github.com/frankxai/gencreator-community/pull/14), head
+`fac3b05`, preserves the policy and uses the official GitHub credential helper
+for one command, with event-head verification. Its live
+contents-read-only proof rejects unauthenticated access, fetches the exact head
+and verifies absent retained credential configuration. The trusted base remains
+red until the reviewed repair is merged; governance is locked and needs Frank's
+current-head approval. Main protection is currently off, with no rulesets.
+An explicit five-check protection proposal is prepared privately; no permission
+mutation or red-gate bypass occurred. See [session](sessions/2026-10-03.md).
+
+Fresh read-only verification found 13 pinned design skills/56 projections intact;
+fresh host activation remains unverified. The full estate objective and both
+tracking issues remain open. No public page or brand identity changed.
 
 ## 2026-10-03: Estate design quality foundations (Codex)
 

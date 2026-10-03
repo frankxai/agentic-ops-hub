@@ -17,25 +17,32 @@
 
 ## Current
 
-### Estate design quality: reconcile acceptance and prove one downstream gate
+### Estate design quality: restore the trusted pilot gate and verify host use
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
 [session](sessions/2026-10-03.md) and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
-Shared foundation PR28 is merged as `20bea898c78f0a73fa1479527c99c6c2675df15d`;
-main CI and independent code-only review passed. Reconcile current brand packs
-with the founder rejection in Git `7043905`, the missing foundation-reset paths
-and later accepted directions before propagating design instructions. Verify
-actual native/plugin capability coverage and source ownership. Then integrate
-the pinned rendered inspector into one accepted product's complete browser
-journey and required CI boundary; demonstrate a controlled failing interface is
-blocked. Preserve existing products, asset provenance and other owners. Inspect
-actual logo quality, responsive composition, icons, copy, keyboard, performance
-and save/resume/export recovery with independent design review. Expand to the
-observed 24-domain estate only after that pilot and fresh-host proof. Keep missing
-evidence pending; maintain all other prompts. Fresh machine/storage admission is
-required before heavy work; last RAM was below 4 GiB. No new fanout or broad
-installation is authorized by this prompt.
+Kernel PR29 is merged as `f90a3a31f4dca5feafd9f9f427848ec42330fe3f`, with passing
+main CI, 61 existing/42 browser-process checks and scoped source review. Community
+PR13 at `7b6b841c8c3c5c3143ab81c2a450b1e60170f019` has passing build/adoption and
+32 real journey checks. Its base-owned Surface Guard fails on unauthenticated
+private fetch. Repair PR14 at `fac3b053f0682736331fb3cef7f85096d2983169` has a
+passing exact-head/read-only fetch proof and requires Frank's locked-governance
+approval. Its final command uses the official GitHub credential helper and checks
+the event head. Preserve that approval boundary and the red status until repaired;
+obtain a scoped independent verdict before merge. Reconcile PR13 onto the repaired
+base, rerun all checks and prove the trusted guard evaluates it. Apply the prepared
+five-check main-protection proposal only with explicit permission; no protection
+has been changed. Community issue12 tracks adoption and issue2 retains launch gates.
+
+Then verify a fresh native host selected, read, applied and verified these rules,
+including a meaningful denial and useful allowed artifact. The 13-skill/56-projection
+filesystem check passes but does not prove runtime use. Reconcile the founder
+reset at Git `7043905` with later accepted territories before brand propagation.
+Inspect logo/assets and the actual preview, typography, icons, responsive behavior,
+performance and recovery with independent design review. Preserve other owners,
+all prompts and the full 24-domain/full-harness objective. Refresh machine/storage
+admission before heavy work; local RAM was below 4 GiB. No new fanout is authorized.
 
 [Queen verified execution continuation, Codex]
 ```text
