@@ -60,11 +60,13 @@ other session/front at hub6f58958, including Config80/fed3c56 and reader8/ba3172
   native ID `starlight-control-plane@starlight-estate`. This same-provider result
   is useful consumption evidence; it does not supply independent source approval.
 - Default consumer completed but native reported all descriptions removed and
-  604 additional skills omitted. Per-skill task profile rendered five described
+  604 additional skills omitted. Per-skill task profile at2,000 tokens rendered five described
   skills, yet execution removed descriptions and omitted89. The prompt renderer
   alone did not establish effective execution. Temporary skill-and-plugin profile
   completes named lookup with no skills-budget warning/error or unexpected tool.
   Five skills are measured in renderer only; complete execution count unmeasured.
+  Final profile uses8,000 tokens; the combined comparison does not isolate the
+  effect of plugin controls from the budget change.
 - Final profile retains default8,000 catalog tokens and existing configured hook
   providers, including activation and Windows security. Only the task disables
   apps/direct MCP startup/web/multi-agent. Base config and installed guide bytes
