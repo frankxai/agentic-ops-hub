@@ -2,7 +2,36 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 3 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 3 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Arcanea source authority and identity gaps (Codex)
+
+[Kernel PR32](https://github.com/frankxai/starlight-design-intelligence/pull/32)
+merged `15f109e` from reviewed `3142252`; exact-source CI37146803709 and main
+CI37147449465 pass 61 existing Node tests, 42 browser/process checks, 15 Python
+cases, audit and validation. All three changed blobs match. Shared Arcanea
+DESIGN/source audit/runtime metadata now follow owning product main `79f3fb25`
+for declared font roles and agreed accents, with aquamarine reference-only.
+Background, version/schema, icon/font rights and actual adoption remain unresolved.
+Forbidden Higgsfield execution guidance is removed; historical sources stay intact.
+
+One actual 784x1168 product-selected raster was viewed, bringing private image
+observations to eight. Two differently constructed SVGs were source-inspected,
+not rendered or approved. Assets match main but supply no verified editable,
+monochrome or small-size family. The prior 166 filename census is preserved;
+newly found raster sits outside its public-path coverage. No image generation,
+identity change, provenance fabrication or product/canon/pin/config mutation.
+
+Final Poolside clarification is source PASS and product release PENDING. Earlier
+REVISE and timeout/truncated receipts remain intact. Guidance metadata provides
+no universal runtime enforcement. Other-owner Config PR95 at `d004224` is a draft
+with green checks and owner-reported native temporary-profile consumer proof;
+independent/approving review, installation, real design output and broader host
+adoption remain pending. Preserve its active lane and Config80/hook84/Queen90.
+Community approvals and GenCreator wordmark choice remain outstanding. Full
+estate goal and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12)
+stay open. No session-owned worker/server/watcher remains. See
+[session](sessions/2026-10-03.md).
 
 ## 2026-10-03: Native Codex design execution and recovery (Codex)
 
