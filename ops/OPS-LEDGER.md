@@ -2,7 +2,29 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (community capture/denial repair verified, visual refinement open; Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 6 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch6 release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Review desk, stale sharing and applied design evidence (Codex)
+
+[Community draft PR15](https://github.com/frankxai/gencreator-community/pull/15)
+is frozen at `3ea8626`: the actual review desk is recomposed under the accepted
+local identity, mobile choices/alignment corrected and stale export/email sharing
+reproduced then denied. Current CI37159183007 passes 49 tests/build and 144 browser
+checks/8 contexts/40 states. All 80 PNG/sidecar pairs are CRC, byte, pixel and
+source-bound verified; nine final lead views and five-image StepFun image-only
+PASS. Prior failed capture/runner-only recovery and inconclusive reviews retained.
+390px full-page height falls 9,875 to 4,697px; editable title/summary now open above
+the fold. Actual CI faces are Liberation Sans/Mono; typography/rights remain open.
+
+Native Impeccable context/manual detector applied once; automatic session design
+hook absent. Actual owned-artifact comparison finds manual context-specific
+Markdown more actionable for that job; no external creator/valuable AI proof.
+Base guard still fails private fetch; exact-head human approval/repair/required
+checks and whole release gates remain. Preview source/status metadata only, supported
+browser unavailable. PR13/14 and other owners unchanged. Stop polishing this frozen
+revision; continue preview, measured quality/usefulness and native owner rollout.
+All eleven estate requirements remain active. No owned worker/server remains.
+See [October4 session](sessions/2026-10-04.md) and current pickup prompt.
 
 ## 2026-10-03: Actual community captures and sentence-case repair (Codex)
 
