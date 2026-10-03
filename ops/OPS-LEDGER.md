@@ -2,7 +2,44 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (GenCreator authority reconciled; FrankX batch 2 saved locally/release held; 49 community tests/36 browser checks and source review pass; locked guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 2 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Native Codex design execution and recovery (Codex)
+
+[Kernel PR31](https://github.com/frankxai/starlight-design-intelligence/pull/31)
+merged `8729fc3` from reviewed `f813469`. Exact-source CI37142810316 passes 15
+Python cases, 61 existing Node tests, 42 browser/process checks, audit and existing
+validation. Main CI37143006516 passes on the merged revision. Local
+Python passes 14 with one unprivileged-symlink skip; absent ajv/pngjs prevented
+local Node execution. No local dependency install or missing-test PASS is claimed.
+
+The native Codex 0.160.0 app-server probe passes in 14.938 seconds: both turns
+complete, allowed handler 1/denied handler 0, 24 completed hooks/one security block,
+required Impeccable post/Stop runs complete, routing and its description delivered,
+shared configuration unchanged, process/server closed. The source SHA-256 matches
+the reviewed Git blob. Native failures had exposed required engine 0.1.11 absent
+despite intact skills/trusted hooks and cached 0.1.5. Installing the official 17 MB
+binary after storage recovery, with release digest/sidecar verification, restored
+execution. Hook definitions, trust and security checks were preserved.
+
+Final scoped Poolside source review is PASS. Earlier REVISE, timeout and truncated
+review receipts remain intact. Exclusive contained writes and early HTTP bounds
+were refined; a real-socket regression reproduced unbounded header reads and
+verified the fix before release. Another pre-write symlink check adds no atomic
+protection beyond the existing exclusive creation. This review covers source,
+and the native run covers a deterministic dynamic-tool fixture; neither certifies
+model-applied craft, real refinement, shell/MCP coverage or visual acceptance.
+
+Default native discovery still has 829 enabled rows and omits 417 catalog entries
+under its budget. The fixture's 27-entry override restores the design description
+only within its own threads. Global catalog repair, fresh applied artifacts on
+other harnesses, missing canonical config sources and estate adoption remain open.
+The full goal and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12)
+stay active. Human community approvals and GenCreator wordmark choice below are
+unchanged. Machine storage crossed 14.89% then recovered above 15%; the private floor
+receipt and this owned handover preserve the event because routing refused writes
+to another owner's Queen checkout. No cleanup or other-owner mutation occurred.
+No session-owned worker, server or watcher remains. See [session](sessions/2026-10-03.md).
 
 ## 2026-10-03: FrankX editorial renewal (Codex)
 
