@@ -27,7 +27,27 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT draft500 editorial assessment at3b730335c70aaa23685f6bf1a6f4e8b46b098472:
+CURRENT reader source integration / private MCP draft8 at6225b964a527a300e952c2ae26db312bf1aa6a43:
+Existing arcanea-mcp origin is privatefrankxai/arcanea-mcp-generate. Own branch
+agent/codex/reader-canon-integration-20261003 targets published reader68456204;
+do not replace Studio4 or mutate Grok's worktree/untracked Wrangler state.
+Ten-file diff2ae97da3, complete private review-packet.json/eight contexts under
+.starlight/reviews/arcanea-isolated-evaluation-20261001/reader-integration-20261003.
+Native CI37085867091 passes36 source tests, actual TS5.9.3 compile and the same36
+emitted-JavaScript tests; local Node22.23.2 passes36/0fail/0skip. Keep setup/cache
+failure37085576105 and fixture type failure37085738958 with their fixes. No checks
+disabled. This proves the actual handler with injected verified canon bytes, not
+deployment or full Studio package. Public0.5.1 still falsely clears eleven Gates
+and Lyssandria-as-Fire wording. Next obtain exact-revision independent review and
+reconcile reader/Studio integration/full package checks before human Worker release.
+Canon stays in public app at740a6328/hash58c9c86f; no copy or Heart decision.
+Clear grants no release; source failure grants no verdict and retry can recover.
+Launcherc035 local/no remote and stub061bf empty/no origin; do not guess upstream.
+Private root-boundary/pin repair remains; Frank's publication/upstream choice open.
+Saves MCP6/5964087632, app278/5964087762, app276/5964087896 and hubdraft98.
+Retain all fronts and human408/427/rights/manuscript/engine gates; broad goal active.
+
+RETAINED draft500 editorial assessment at3b730335c70aaa23685f6bf1a6f4e8b46b098472:
 Frank asked "u check and suggest"; human acceptance remains pending. Both full
 chapter versions, exact patches, ledger and comparison were read. Recommend the
 two chapter-two morning repairs; casualty wording optional. Keep the mother link,
