@@ -2,8 +2,14 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-02 (Queen work acceptance merged; identity native-review gate and live dependencies recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Queen signed-review/recovery PR156; exact-head review and live activation pending) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-03: Queen signed review and retained artifact recovery (Codex)
+
+- [Ops PR156](https://github.com/frankxai/agentic-ops/pull/156), exact `b0eb8709fe060eab3bc3b44159434f39bb9be48f`, is draft pending independent review. Adds host-selected Ed25519 broker attestations and artifact recovery bound to the full accepted subject, preserving the existing bus, verifier and cost admission. 153 local tests, Ubuntu/Windows CI and enabled secret checks pass. Source/test evidence does not establish deployed trust or native provider identity.
+- Native review access measured: Claude weekly limit, installed Gemini client rejected, Grok zero-tool retry running. No paid fallback. Config PR90 still needs native GitHub approval; its identity/profile is uninstalled. Separate session-desk PR154 and all other agents' changes remain intact.
+- [Ops issue134](https://github.com/frankxai/agentic-ops/issues/134#issuecomment-5964798120) and [Slack desk](https://frankxintelli-cu22555.slack.com/archives/C0B9M0AM2BZ/p1790996084082729) contain the receipt. Live Slack registration, n8n management access, protected controller/broker/storage, native executor admission and billing remain open. Next is one useful real non-code task with review, progress and recovery, within EUR100/month incremental allowance.
+- Frontier integration continues through distinct supported adapters: existing ACP client pending Registry placement, MCP tools, A2A peers, upstream Hermes/OpenClaw, isolated OpenHands, account-specific Dots/Workspace Agents/managed APIs. No forks, installs, new queue or recurring worker. Detailed dated protocol/auth observations and remaining gaps are in `ops/sessions/2026-10-03.md`. Broader outcome remains open; historical records and unfinished prompts stay intact.
 ## 2026-10-02: Queen work acceptance on main; identity and production gates open (Codex)
 
 - [Ops PR148](https://github.com/frankxai/agentic-ops/pull/148) merged `98f20458a295fb8bde06e7f4519a9c9fb611e470`: reviewed placement keeps identity in config, execution in private Ops and sanitized guidance in hub. No new repo, agent import or deployment.

@@ -19,6 +19,31 @@
 
 [Queen verified execution continuation, Codex]
 ```text
+October3 current update: reconcile Ops PR156 exact head
+b0eb8709fe060eab3bc3b44159434f39bb9be48f. 153 local tests and Ubuntu/Windows CI pass.
+Independent source review and merge remain pending. Native Claude review returned
+weekly limit; installed Gemini client was rejected; zero-tool Grok retry is running.
+Require a complete exact-head independent review and normal gated merge. Preserve
+session-desk PR154 draft. Read October3 session and issue134 receipt5964798120.
+
+Bind createReviewAuthenticator only in protected controller bootstrap with host
+selected issuer keys and a separately protected broker. Signatures authenticate
+broker assertions; require real provider invocation, storage ACL and accounting
+proof. Rebuild policy on revocation. Historical recovery binds acceptedSubject
+and archive/evidence; incomplete legacy records hold. Preserve raw receipt bytes.
+No live Slack credentials are exposed in this runtime; secret-store entry names
+were requested, never values. Connector-posted Slack status is not bot execution.
+
+Keep bus/Queen clock. Reuse command-center ACP client after Registry placement;
+pinned acpx optional, MCP tools, A2A remote peers. Dots, Workspace Agents and
+Agents API are distinct; Workspace Agents trigger needs authenticated artifact
+return since its documented API does not return response contents. Do not pool
+consumer OAuth for unsupported hosted SDK/services. Hermes ACP initialize is
+protocol-only evidence. Coding/OpenHands need actual isolation; Paperclip needs
+pinned consumer security review. Compare useful artifacts and actual repair/time/
+cost with a supported native assistant or upstream runtime before expanding.
+The full acceptance criteria below still apply; older receipts are historical.
+
 Continue agentic-ops issue134 and config issue86, preserving Frank's full production
 request and product-outcome quality policy. Read the October2 hub continuation,
 QUEEN-PURPOSE-AND-PRODUCT.md, foundation map and private runtime runbooks.
