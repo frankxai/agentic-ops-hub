@@ -2,7 +2,40 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (FrankX PR 866 merged `6f735abb`, issue 449 closed; Reality Architect PR 47 stays a draft; four Jules sessions still in progress) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (FrankX PR 868 merged `20eaf115`, issue 842 closed; FrankX PR 869 merged `6f204384`, issue 824 stays open; PR 871 open for song headcounts; Jules 279 still in progress) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: FrankX research gate merged, song counts in review (Grok)
+
+[frankx.ai-vercel-website PR 868](https://github.com/frankxai/frankx.ai-vercel-website/pull/868)
+squash-merged at 2026-10-03T17:40:35Z as `20eaf115a8190cbc46ecab1b68958d068f1b8171`
+and closed [issue 842](https://github.com/frankxai/frankx.ai-vercel-website/issues/842).
+The check fails when a new pair of posts shares hero bytes. The 20 groups and
+79 slugs already on main stay as the baseline. Issues 838 and 839 still own
+unique heroes. The shared heroes were not replaced. Jules session
+`7771091644676001707` was not applied.
+
+[frankx.ai-vercel-website PR 869](https://github.com/frankxai/frankx.ai-vercel-website/pull/869)
+squash-merged at 2026-10-03T18:06:15Z as `6f204384ad735129a021a48b263b38700a548d2c`.
+The generator exits before it can write grades. `validated-claims.ts` is empty.
+The publication check rejects a search URL, a `/research/` self URL, and
+high / RCT / replicated unless the same record has a DOI, PubMed, or arXiv
+abs/pdf id. [Issue 824](https://github.com/frankxai/frankx.ai-vercel-website/issues/824)
+stays open. No citations were added. Jules session `8651854513076101430` was
+not applied. Comment:
+[issuecomment-5972008312](https://github.com/frankxai/frankx.ai-vercel-website/issues/824#issuecomment-5972008312).
+
+Jules session `9363571137422053674` finished and was rejected. It replaced
+song counts with Catalog, Extensive, and Vast. The deletion is
+[PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871), head
+`0e5e49e32`, not merged at this handover. 16 public-claims tests passed
+locally. [Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
+tracks the song counts still on coaching, creators, developers, music, team,
+and the Vibe OS product page.
+
+Jules session `9191613497530593819` (arcanea-ai-app issue 279) was still in
+progress. Do not merge it until the manifest fixtures fail closed, and do not
+touch Arcanea 434 or 436. Reality Architect PR 47 stays a draft. No deploy
+command was run. The occupied primary checkouts were not written.
 
 ## 2026-10-03: FrankX link scanner merged, Jules still full (Grok)
 
