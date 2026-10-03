@@ -6,9 +6,9 @@
 
 ## 2026-10-03: Craft check drafted, open product pull requests left unmerged (Grok)
 
-84 open pull requests across frankx.ai-vercel-website, gencreator.ai, arcanea-ai-app, and starlightintelligence.ai have one disposition: 64 left draft, 17 rejected, 3 held. Held: FrankX 724 and 725, GenCreator 93. None met the merge gate, so nothing was squash-merged and no cherry-pick was opened. `starlight-intelligence-web` is the same GitHub repository as `starlightintelligence.ai` (id 1333657540).
+84 open pull requests across frankx.ai-vercel-website (25), gencreator.ai (21), arcanea-ai-app (37), and starlightintelligence.ai (1) have one disposition: 64 left draft, 17 rejected, 3 held. Held: FrankX 724 and 725, GenCreator 93. FrankX 864 is rejected because CI failed and no other provider approved it. None met the merge gate, so nothing was squash-merged and no cherry-pick was opened. `starlight-intelligence-web` is the same GitHub repository as `starlightintelligence.ai` (id 1333657540).
 
-Jules was authenticated with 0 awaiting feedback and 0 in flight under the cap of 4. Create refused before any post because the CLI login create body is not mapped. The packet queue stayed empty.
+Jules was authenticated again after the official CLI list. Awaiting feedback is 0. In flight is 1, session 8998031460721841797, under the cap of 4. Create refused before any post because the CLI login create body is not mapped. The packet queue stayed empty.
 
 Draft checks, not merged: [config 92](https://github.com/frankxai/starlight-agent-config/pull/92) `be81f92`, [FrankX 862](https://github.com/frankxai/frankx.ai-vercel-website/pull/862) `79760c750`, [GenCreator 142](https://github.com/frankxai/gencreator.ai/pull/142) `1cf5d19`, [Arcanea 506](https://github.com/frankxai/arcanea-ai-app/pull/506) `4637d78fff`, [Starlight 84](https://github.com/frankxai/starlightintelligence.ai/pull/84) `1514e4b`. The loaded PostToolUse `post` command scores written HTML. The emoji fixture exits 2 and the sentence-case fixture exits 0, twice. A non-UI prompt keeps the shared route hint. The committed repo checks reject and accept the same fixtures on two runs. Design-capability verify exited 0. Claude, Codex, and Jules do not load this check yet.
 
