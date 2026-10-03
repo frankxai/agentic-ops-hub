@@ -2,7 +2,55 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (native catalog discovery recovered; Arcanea hook141 on main and persistence139 refreshed; source-review gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (reader origin repair verified at ba31720; native discovery and Arcanea hook/persistence records preserved; storage/review gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+
+## Reader origin refusal and source-bound verification, 3 October 2026 (Codex)
+
+Full goal `01a10210-9679-7260-9789-a969ef438339` remains active with every Starlight
+repo/PR/branch, skills/AGENTS/workflows, ChatGPT plugins, Arcanea MCP/platform,
+Supabase/Vercel, main/production, safe cleanup, READMEs and community/org work.
+This continuation preserves the other session's hub36cbb196 hook141/main and
+refreshed persistence139 records, plus the prior native catalog and reader work.
+
+- [MCP draft8](https://github.com/frankxai/arcanea-mcp-generate/pull/8) now binds
+  `ba31720d9c99c0a6b8b9aad771dce9503398fd07`. Its three-file follow-up validates
+  Origin on every `/mcp` method. Supplied origin must exactly match the endpoint's
+  scheme/host/port; foreign, empty, null and malformed origins return403 before
+  reading a draft or loading canon. Unread body cancels. Header-free native clients
+  and same-origin discovery pass; a valid request on the same Worker recovers.
+  Pre-fix regressions reproduced foreign POST408 and GET405 instead of403.
+- [CI37135393615](https://github.com/frankxai/arcanea-mcp-generate/actions/runs/37135393615)
+  passes48 source tests, TypeScript5.9.3 compile and48 emitted-JS tests at this exact
+  head, zero failures/skips. Local Node24.16.0 passes48; final Headers typing
+  refinement passes all three focused tests and the full remote suites. Enabled
+  staged secret scan and diff checks pass. Ten-file base-to-head diff SHA256
+  `9c14f6e89386e839fbe9a92b4c717e1a42fe5d4b01f3d33393c40442d96b3b1b`;
+  three-file delta SHA256 `5bafb1743a415d40b7ead703c29a647b8bfb09b8240f37fbedd9d827547efe10`.
+  Base68456204 and pinned app740a6328/SHA58c9c86f remain unchanged. Studio4 is
+  separate; full package/consumer/host interoperability and release remain open.
+- Native curl health returns200/reader0.5.1 and a read-only ping with foreign Origin
+  returns200. The correction is not deployed. Python urllib returned403 for both
+  probes; both client observations are retained, without a blanket uptime verdict.
+  No customer draft, key, generation or persistent state was sent.
+- Gemini0.60.0 attempted a full source packet at prior headedc23ea, then native Google
+  auth rejected UNSUPPORTED_CLIENT before any model request hook/result. No verdict,
+  usage result or tool-enforcement proof; configured overage was disabled. Isolated
+  native OAuth copies were removed and PID55940 is gone. Earlier Claude/Grok terminal
+  quota/restriction/deadline evidence remains. Current independent review is pending;
+  no retry, paid fallback, provider configuration or completed review is claimed.
+- Disk crossed below15%: fresh free153240748032bytes/14.996820496%. A private ignored
+  floor receipt records BOUNDED. No new worktree/dependency tree is admitted.
+  Config80 remains draft at08d6e80 with all five source corrections pending; its
+  foreign primary is preserved. The prescribed storage sensor is absent there.
+  Small edits/tests used the existing owned reader checkout; no destructive reclaim.
+
+Both saves: [existing MCP issue6](https://github.com/frankxai/arcanea-mcp-generate/issues/6#issuecomment-5970906195)
+and this existing hub98 session/ledger/current prompt. PR8's body now binds current
+head/CI and review limits. Local discovery14skills and operator29/Ops128/SIS262,
+site84/issue85, app human408/release427, creator/customer acceptance and organization
+preparation remain open. Loading policies is distinct from runtime enforcement.
+Owned reader/hub leases release at handoff; no owned reviewer/server/watcher remains.
 
 
 ## Arcanea hook fix on main and persistence refresh, 3 October 2026 (Codex)
