@@ -29,7 +29,7 @@ as `6f204384`. Issue 824 stays open. The research pages did not gain citations.
 The 79 shared blog heroes were not replaced.
 
 [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871) head
-`0e5e49e32` deletes the song counts on the nav, about, creators, connect, vibe,
+`b0db351ab` deletes the song counts on the nav, about, creators, connect, vibe,
 lab, and frankx pages. Squash-merge it when CI, Review Gate, and Vercel are
 success on that head. It is not HOLD. Do not merge it while a required check
 is pending or failing. [Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
