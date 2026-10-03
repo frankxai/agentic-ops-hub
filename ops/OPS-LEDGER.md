@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (Creator runtime routes/contingency and32 browser checks verified, hub save recovered; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 7 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (full private report placement/source critique saved; Creator runtime routes/contingency and32 browser checks verified, hub save recovered; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 7 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
 ## 2026-10-04: Review desk, stale sharing and applied design evidence (Codex)
@@ -761,3 +761,66 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+
+## AI-factory full report: execution placement and complete source critique
+
+Keep the npm cache. Local package installs can reuse its downloads; the existing
+cloud CI build succeeded with its own dependencies while the local cache stayed
+intact. No purge approval was given.
+
+The private standalone report is now SHA256 `642c9551b8820b88d7dbe1f79259a4b464c50d5e96bb558e4f7e1944d0c04184`. It preserves
+27 mapped properties, 12 team functions, 54 primary sources, 15 runtime comparisons,
+14 selectable model-rate rows, subscription/host/data/hardware alternatives and
+editable mission economics. Its execution-placement comparison covers existing
+Codex/Claude managed cloud, customer-hosted Linux workers, actual GitHub CI build
+offload and persistent browser/desktops. Use existing managed cloud where account,
+model, quota and repository access allow it before buying another plan. GLM Lite
+is conditional on useful accepted output and a supported coding route; membership
+prices alone do not prove API credits or external worker eligibility. Recompute
+actual host allocation for managed cloud or CI rather than adding both blindly.
+
+Official Claude documentation separates Pro/Max/Team/eligible Enterprise managed
+cloud, owner-enabled Team/Enterprise self-hosted beta and Remote Control on an
+awake host. Kimi K3 has a dated 22 July launch quote, current TTL cache-write
+semantics and an unverified current numeric quote. It remains outside selectable
+rates. The derived 2.8T four-bit weight payload is about1.273TiB before overhead;
+this is not a benchmark or a complete in-memory128GiB serving claim.
+
+All 33 calculation/import/recovery/catalog/synthetic-DOM checks pass at this
+artifact. Model/UI/catalog contents exactly match the embedded source. The final
+native Gemini critique covers ONE COMPLETE HTML including all inline source,
+PASS in35.447s with a valid footer and zero observed tool steps. Requested model,
+native CLI init and inherited always-proceed permissions are not model/provider
+attestation or enforced confinement. Owned review and quota-reader processes exited.
+
+Preserve the two earlier full-report attempts: the first inferred missing disk
+dependencies from packet omission; actual dependency existence, embedded identity
+and33 passing checks disprove that finding. The second duplicate-dependency packet
+was truncated and lacked its footer, so review acceptance is incomplete. Neither
+failure is relabeled PASS. Final source hashes and each raw receipt are private
+evidence under the existing audit leaf and [private Ops149](https://github.com/frankxai/agentic-ops/issues/149).
+
+Starlight light institutional guidance was retrieved; the decorative star was
+removed while its existing identity stayed intact. Emil's immediate navigation
+and44px controls are preserved. Native Impeccable context ran once, automatic
+design hooks are absent, and one static detector retained its findings. A single
+source correction reduces accent borders to1px and print-table text increases
+from10px to12px. Screen tables remain13px with13px/17px cell inset. Static wrapper
+padding and print-cascade findings are not rendered design proof; the shadow/copy
+advisories remain recorded. Browser PP is HOLD:6568MB free/8192required, twelve
+runtimes. Dual isolated design assessments were unadmitted under one-worker/
+pause-new-swarms posture. Current HTML desktop/mobile rendering and design acceptance
+remain pending. Earlier captures retain their original hashes. Both provenance
+sidecars and both ledgers are saved; schema validation/taste-memory sync are pending.
+
+Technology [draft PR34](https://github.com/frankxai/starlight-technology/pull/34)
+remains unchanged at `082988a`, with147 unit/32 cloud Chromium checks and its
+native Git preview. Those checks cover Creator Studio, not this private HTML.
+The serious incumbent hardware sheet and all prior exports remain preserved.
+No buyer time/repair advantage or ROI is measured. The hypothetical USD250 report
+scenario cap is distinct from the approved EUR100 incremental pilot ceiling.
+No new subscription, paid API fallback, schedule, fleet worker or production
+activation occurred. The full Queen/subscription/API/cloud/team/brand objective
+remains active; use [swarm15](https://github.com/frankxai/starlight-swarm/issues/15)
+for the next named reversible mission's authority/access/security path.

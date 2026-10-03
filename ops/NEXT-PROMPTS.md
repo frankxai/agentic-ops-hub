@@ -17,42 +17,44 @@
 
 ## Current
 
-### AI-factory architecture: review runtime choices and prove a useful mission
+### AI-factory architecture: prove placement and a useful recoverable mission
 
-Continue source task01a101b1-9d38-7fa1-b1f0-dec923631d7f, Technology issue30,
-private Ops149 and hub102. Preserve the complete Queen/subscription/API/cloud/team/
-creation/business objective, accepted products and all other owners' prompts.
+Continue task01a101b1-9d38-7fa1-b1f0-dec923631d7f, Technology30, private Ops149
+and hub102. Preserve the complete Queen/subscription/API/cloud/team/creation/
+business objective and all other owners' prompts. Keep the npm cache.
 
-Reuse Technology draft PR34 at `082988a20532c5c187cad76e6a1cc116aca554fa` and its native Git preview.
-The saved report v3 now combines editable hardware/context/cost inputs, source-date
-provenance, native/API execution requirements and matched fully metered contingency.
-Old report v1/v2 imports remain recoverable; imported runtime claims are recomputed.
-CI37160380791 passes147 unit/11 editorial/51-page build/32 real desktop/mobile browser
-checks. Tested merge `e187c8e5c06008cb493c932f29516435c0721a60` shares head tree `4e5bfaedb9525b37e6f2c3ae87e818cbd2f1cfff`.
-Six current actual captures/sidecars/both visual ledgers are saved; owned browser
-and server exited. Local build/browser remains RAM-held. Keep the npm cache.
+The private full operating report is `642c9551b8820b88d7dbe1f79259a4b464c50d5e96bb558e4f7e1944d0c04184`:54 primary sources,
+27 mapped properties,12 team functions,15 runtime comparisons,14 selectable
+model-rate rows. Its placement decision distinguishes existing managed native
+cloud, customer-host workers, actual CI build offload and persistent desktops.
+Kimi K3 launch prices are dated; current numeric quote/cache-write charges are
+unverified and excluded from selectable rates. No complete128GiB K3 benchmark.
+All33 checks pass. Complete inline HTML native source critique PASS35.447s;
+retain earlier missing-file false finding and duplicate-packet truncation. This
+is source acceptance, not rendered design, account access, identity or billing.
 
-Native Gemini review `321930285597a6eda1412303f7f659ae5d9f89d8` PASS74.358s covers six complete unchanged
-runtime/report/cost/React files only. Broader source, CSS/browser verifier, rendered
-design26/30, skeptical buyer, privacy/licence/commercial, identity/confinement and
-invoice gates remain open. Preserve earlier Sonnet truncation/WARN and failed CI
-receipts; do not repeat an unchanged source review or infer denial from zero tools.
+One static detector and one batched correction retain screen13px/table cell inset,
+increase print12px and reduce accent borders1px. Brand/Emil context applied;
+automatic design hooks absent. Current browser/design acceptance and dual isolated
+assessments remain held. Earlier captures retain their old hashes. Sidecars/both
+ledgers saved; schema validation/taste-memory sync pending. Prefer approved cloud
+rendering without placing private business/account data in public repositories.
 
-Actual source-derived v3 planning and 50%-native contingency exports restore every
-input. USD56.9012 vs78.9012 with example EUR60 cap is hypothetical; approved pilot
-cap remains EUR100. Account/quota capacity, delivered hardware cost, usable output
-rate and ROI remain unknown. Compare the actual artifact with the incumbent
-hardware build sheet and measure useful output/repair/time before paid claims.
+Reuse Technology draft PR34 `082988a20532c5c187cad76e6a1cc116aca554fa`, actual
+native Git preview and CI37160380791:147 unit/11 editorial/51-page build/32 real
+Chromium checks. Complete reportv3 restores every input; v1/v2 recover; matched
+fully metered contingency changes both API shares only. Six complete unchanged
+runtime/report/cost/React files have separate source PASS74.358s; broader sources,
+independent rendered design/buyer/privacy/rights/commercial gates remain open.
 
-The prior foreign hub lease released; session04/ledger and this prompt are now
-saved with normal main reconciliation. Ops draft PR157 remains875d64e,113 local/
-57 Win+Linux CI cases, scoped review7e778fe PASS and unactivated. Standalone private
-HTML2335003e preserves50 sources/27 properties/13 runtimes/33 checks; current full
-render acceptance and visual memory sync are open. Existing Railway deployment
-records, merged swarm lifecycle rails and SIS160 do not prove a useful autonomous
-mission. Use swarm15's named pilot/authority/access/security track for the next
-bounded recoverable creator mission. No paid fallback, schedule, live worker or
-production activation is granted by these receipts. Keep the full objective active.
+Compare actual useful output/repair/time against the preserved hardware sheet.
+Invoice currency/native capacity/hardware throughput and ROI remain unmeasured.
+USD250 report cap and product EUR60 example are hypothetical; approved pilot
+ceiling remains EUR100. Ops draft PR157875d64e stays unactivated. Railway/swarm/
+SIS infrastructure receipts do not prove a useful autonomous mission. Next use
+swarm15's exact named pilot, operation-time authority, access/security and recovery
+track for one useful bounded mission. No new plan/API fallback/schedule/live
+worker/production authority follows from source or CI checks. Full objective active.
 
 ### FrankX: continue the article register and release reviewed revisions
 
