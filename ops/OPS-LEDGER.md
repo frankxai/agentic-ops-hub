@@ -2,7 +2,25 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-02 (Queen work acceptance merged; identity native-review gate and live dependencies recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (design foundation merged and verified; estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Estate design quality foundations (Codex)
+
+[Design Intelligence PR28](https://github.com/frankxai/starlight-design-intelligence/pull/28)
+merged as `20bea89`; PR and main CI passed the security audit, 61 existing tests
+and 27 rendered-browser/process checks. Independent Poolside source critique
+returned PASS within its code-only scope. The kernel now inspects emoji chrome,
+placeholders, basic names, SVG semantics, uppercase, dead links and overflow.
+This closes [issue27](https://github.com/frankxai/starlight-design-intelligence/issues/27).
+
+The private Registry-backed observation covers 24 domains/21 repo candidates,
+20 matching local children and four checked local contract/workflow adopters.
+Logo quality, required checks and fresh hosts are unverified. Historical founder
+reset evidence is preserved in Git `7043905` and requires reconciliation with
+current packs and subsequent approvals before propagation. Continue under
+[issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12);
+see [session](sessions/2026-10-03.md). The full goal remains active. No site or
+identity was redesigned and no universal enforcement is claimed.
 
 ## 2026-10-02: Queen work acceptance on main; identity and production gates open (Codex)
 
