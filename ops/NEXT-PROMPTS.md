@@ -27,7 +27,20 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT public reader journey / draft490 ata2cb83194a6e84ba8df6f33ad57f11459ad015f5:
+CURRENT Frank-requested editorial assessment / draft500 at03816c1e61a70b72943a5b1f74302e8c53a01898:
+Read https://github.com/frankxai/arcanea-ai-app/pull/500#issuecomment-5964790931
+and owning282 receipt5964793900. Lead recommends revision before selection:
+two morning repairs and explicit Atlantean choice; trim repeated theory exchange.
+Chapter four's "Don't read them. They're about you" packet needs Kael response
+or an intentional trust fracture. Track joint mother-file request into Academy
+scene; chapter eight's multi-element records do not themselves discharge it.
+Keep rescue/Torven and unresolved maternal/date/sleep clues. Temporal-only option
+remains shorter. Source unchanged; fresh required checks pass at03816. Independent
+review of new fiction and human acceptance remain pending; keep draft487 dependency
+and280/408/427. Check/suggest does not authorize manuscript acceptance or publication.
+Preserve every retained front below; broader goal remains active.
+
+RETAINED public reader journey / draft490 ata2cb83194a6e84ba8df6f33ad57f11459ad015f5:
 Read current reader task record and scripts/verify-reader-entry-browser.cjs.
 Existing catalog repair plus two static Van Linh featured href fixes; all other
 book data/chapters/canon/visibility unchanged. Full review packet10files pending.

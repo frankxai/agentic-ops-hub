@@ -5,6 +5,12 @@
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
+## 2026-10-03: Draft 500 lead assessment with later-chapter follow-through (Codex)
+
+Frank requested a check and suggestions on unchanged draft500/`03816c1e61a70b72943a5b1f74302e8c53a01898`. Recommend revision before manuscript selection: both morning repairs and explicit Atlantean choice, shorter notebook exchange, Kael response to chapter four's secret packet and a tracked joint mother-file request. Chapter eight's multi-element records do not themselves fulfill that new promise. Preserve rescue/Torven, maternal link and unresolved chronology; baseline Kael-newborn substitution invents biography. Temporal-only selection remains a shorter alternative. Fresh required CI checks pass; no new independent sign-off, model/skill winner or human acceptance. Manuscripts/canon/disposition/PR state unchanged. Keep500 draft,487 dependency and280/408/427.
+
+Saves: [500 assessment](https://github.com/frankxai/arcanea-ai-app/pull/500#issuecomment-5964790931), [owning282](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5964793900), session and current prompt on existing hubdraft98. All reader/creator/scene/MCP/launcher/AuthorOS/SDK/plugin/quest/community/revenue fronts remain retained; broad goal active. No provider call, installation, production action or persistent worker this review. Hubcodex-9a37436f releases at verified handoff.
+
 ## 2026-10-03: Reader repair integrated as draft MCP 8, release pending (Codex)
 
 Existing private MCP [draft8](https://github.com/frankxai/arcanea-mcp-generate/pull/8) now carries the applied/refined ten-file reader repair at `6225b964a527a300e952c2ae26db312bf1aa6a43`, targeting published reader branch68456204. Diff SHA-256 `2ae97da358c5966fcbba34fbd3558d4e9567f48c8956c72543ca5697beae04e5`. Canon stays in app at740a6328/hash58c9c86f; no copied canon pack or owner Heart decision. The actual Worker handler catches eleven-Gates/wrong-Lyssandria prose, refuses unverified source and recovers on retry. Health/discovery and retrieval/licence boundaries remain. Pack files and Grok's worktree/index contents are unchanged; Studio draft4 remains separate.
