@@ -27,7 +27,20 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT scene-craft forward / draft487 atcd2e8376236eb5ea02a00592e66ec12bf5b3a425:
+CURRENT draft500 editorial assessment at3b730335c70aaa23685f6bf1a6f4e8b46b098472:
+Frank asked "u check and suggest"; human acceptance remains pending. Both full
+chapter versions, exact patches, ledger and comparison were read. Recommend the
+two chapter-two morning repairs; casualty wording optional. Keep the mother link,
+fourth-day visit and week of poor sleep until chronology supports an alteration.
+Craft follow-up: preserve rescue losses and Torven's care; propose a concrete Kael
+action/condition in negotiations and clarify whether Sela travel chooses Atlantean.
+Suggestions are not accepted manuscript/canon. Required current CI checks pass;
+no new independent review or model/skill winner. Keep draft500 and487 dependency,
+280/408/427. Saves282/5963919655 and500/5963923991; hubdraft98. Next revise a
+bounded proposed scene only if requested; otherwise await author disposition.
+Preserve every retained product front and its evidence; broad goal stays active.
+
+RETAINED scene-craft forward / draft487 atcd2e8376236eb5ea02a00592e66ec12bf5b3a425:
 Read packages/arcanea-skills/evals/scene-forward-2026-10-03/report.md and both
 complete scenes. Primary832words/alternative718, quiet Cinder Orchard bargaining;
 sourceCO-v2 three accepted facts, selectedP2/P3/P6 proposed. Vale cannot decode

@@ -5,6 +5,12 @@
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
+## 2026-10-03: Draft 500 editorial recommendation, human acceptance pending (Codex)
+
+Frank replied "u check and suggest". Read both complete two-chapter outputs, exact patches, author ledger and comparison at `3b730335c70aaa23685f6bf1a6f4e8b46b098472`. Recommend the lead continuity proposal's two morning repairs; casualty wording optional. Preserve the mother link, Maret's fourth-day visit and week of poor sleep pending actual chronology. Existing earlier assessment remains; this follow-up adds craft judgment: chapter one's rescue losses and Torven's care merit preservation; chapter two needs a concrete action or condition from Kael and clarity about whether travelling with Sela chooses Atlantean. These are editorial proposals, with no manuscript or canon write.
+
+Fresh required GitHub checks pass at that head: Install, Lint, TypeScript, Build and CI Status. Existing scoped correction-review PASS remains limited; no new independent review, model/skill winner, human acceptance or release approval. Keep draft500, parent487 and280/408/427. Saves: [owning issue282](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5963919655), [draft500 receipt](https://github.com/frankxai/arcanea-ai-app/pull/500#issuecomment-5963923991) and these three hub records/draft98. Broad goal and all prior product work remain open. Hub lane codex-cd818924 covers only these records and releases at handoff.
+
 ## 2026-10-03: Cinder Orchard scene forward walkthrough, independent acceptance pending (Codex)
 
 Existing app draft487 now includes one quiet-bargaining request and two complete Cinder Orchard scenes: primary832words and alternative718words. Exactsourcecd2e8376236eb5ea02a00592e66ec12bf5b3a425; six-file delta overaf0b3668, SHA256bffa8cdb00c3eae4c9ec80cd4639ecfc52ea07219488ea2fbccb2ec0416c0051. Lead recommends The blank side first for its negotiation; The six tiles remains a usable alternative. Same lead/context/guides read/refinement, not independent or blinded; no skill/model winner.
