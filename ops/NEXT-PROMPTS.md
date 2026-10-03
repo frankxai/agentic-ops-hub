@@ -27,7 +27,24 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT chapter-two craft / draft500 at03816c1e61a70b72943a5b1f74302e8c53a01898:
+CURRENT public reader journey / draft490 ata2cb83194a6e84ba8df6f33ad57f11459ad015f5:
+Read current reader task record and scripts/verify-reader-entry-browser.cjs.
+Existing catalog repair plus two static Van Linh featured href fixes; all other
+book data/chapters/canon/visibility unchanged. Full review packet10files pending.
+Native CI37089348472 exacthead passes all required contexts and real Chromium built-app
+journeys: desktop/375touch/reducedmotion, four cards and six featured links each,
+keyboard/content/article bounds, next/previous/reload, noindex/back recovery.
+Read private reader-browser-20261003/handoff.json and actual artifact for source
+head versus built checkout/merge identity. Preserve attempts and13fixture tests.
+Local browser held; canceledVercelFPjeCQ is not preview/production evidence.
+No screenshot/visual approval/fulla11y/completion/customer/rights/release claim.
+Heart of Pyrathis source mojibake remains editorial work; do not silently rewrite.
+Next exact10file independent review and source-bound release/visual/reader proof;
+human408 namedmerge,277/280publication and427release still required.
+Saves280 https://github.com/frankxai/arcanea-ai-app/issues/280#issuecomment-5964606374,490 https://github.com/frankxai/arcanea-ai-app/pull/490#issuecomment-5964611745 and hubdraft98.
+Keep all following repo/skills/plugin/MCP/creator/author/game/community/revenue fronts.
+
+RETAINED chapter-two craft / draft500 at03816c1e61a70b72943a5b1f74302e8c53a01898:
 Read the complete chapter-two-craft-proposal.md and report in the existing continuity
 proof folder. Four exact replacements at3b source: two morning fixes, Kael examines
 Sela's notes/marks suppression theory, explicit Atlantean choice and mother-file request.
