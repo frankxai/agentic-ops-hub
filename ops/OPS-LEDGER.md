@@ -2,7 +2,29 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (design foundation merged and verified; estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (FrankX renewal source saved locally; release held; design foundation merged and estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: FrankX editorial renewal (Codex)
+
+The full website/content goal remains open under
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source commit
+`26051cbdb390271d8e46817fd96ffb93c5e3d060` on
+`agent/codex/editorial-renewal-20261003` aggregates 278 slugs/769 source variants,
+prepares three evidence-led article rewrites, publication/affiliate boundaries,
+SEO standards, a six-audience renewal plan and shared typography drafts.
+Ten Node boundary tests and seven Python corpus tests pass; the enabled Gitleaks
+commit hook found no leaks. No source push, PR, merge or production deployment.
+
+The merge gate stops at missing TypeScript; lint also cannot load that dependency,
+and Next.js is missing. Strict language audit has 16 existing findings in nine
+files. Browser capture and independent review are unavailable. Two cover drafts
+miss the required minimum resolution and remain held with provenance. Machine
+admission prohibits new agents, and free storage fell below 15%. No installs,
+fanout or persistent processes were started. See the appended
+[session receipt](sessions/2026-10-03.md) and current pickup prompt. Preserve newer
+production work and existing research/hero issues; the first source slice cannot
+close the corpus or website renewal.
 
 ## 2026-10-03: Estate design quality foundations (Codex)
 
