@@ -27,7 +27,27 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT reader source integration / private MCP draft8 at6225b964a527a300e952c2ae26db312bf1aa6a43:
+CURRENT chapter-two craft / draft500 at03816c1e61a70b72943a5b1f74302e8c53a01898:
+Read the complete chapter-two-craft-proposal.md and report in the existing continuity
+proof folder. Four exact replacements at3b source: two morning fixes, Kael examines
+Sela's notes/marks suppression theory, explicit Atlantean choice and mother-file request.
+Chapter three already confirms Atlantean and road research; no prohibition invented.
+Raw3467words/net231, new fiction proposed, file-access/follow-through unaccepted.
+Torven scene, original chapters/canon, frozen A/B outputs and skills unchanged.
+Five-file diff fc0ee31d; exact private review packet under chapter-two-craft-20261003.
+Native CI37088116370 exact03816 passes Install/Lint/TypeScript/Build/CI Status.
+Local replacement, inverse, stale/hash refusal, dry patch, formatted equality pass.
+Retain patch whitespace correction and cancelled old-head runs37088107624/37088107687.
+Earlier3b review does not approve new fiction; independent and human review pending.
+Recommend temporal repairs; consider craft for agency, keep temporal-only alternative.
+Ten-question ledger/chapter-one memory/date/sleep/casualty decisions remain open.
+Next obtain exact-revision editorial judgment, then let author decide manuscript280.
+Do not claim human acceptance, skill/model winner, installation or release. Retain487
+dependency and four candidates on500 versus later five on487, all zero ready.
+Saves282 https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5964408825,500 https://github.com/frankxai/arcanea-ai-app/pull/500#issuecomment-5964411972 and hubdraft98.
+Preserve all following fronts and human408/427/rights/Heart/archive/engine choices.
+
+RETAINED reader source integration / private MCP draft8 at6225b964a527a300e952c2ae26db312bf1aa6a43:
 Existing arcanea-mcp origin is privatefrankxai/arcanea-mcp-generate. Own branch
 agent/codex/reader-canon-integration-20261003 targets published reader68456204;
 do not replace Studio4 or mutate Grok's worktree/untracked Wrangler state.
