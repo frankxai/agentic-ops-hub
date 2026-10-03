@@ -30,40 +30,21 @@ Use the authenticated 441-PR census (172 Starlight/Arcanea-name matches across 3
 ### Arcanea estate processing and state recovery, current Codex pickup
 
 ```text
-Continue full active goal01a1020e-e898-7093-b301-b31684ccb819. Keep all Arcanea
-PRs/repos, skills/AGENTS/workflows, ChatGPT plugins, MCP, platform, Supabase,
-Vercel, main/production and cleanup in scope. Do not declare completion from one
-passing slice. Preserve the accepted public app/canon and every retained front.
+Continue full active goal01a1020e-e898-7093-b301-b31684ccb819. Keep every Arcanea PR/repo/branch, skills/AGENTS/workflows, ChatGPT plugins, MCP, platform/Supabase/Vercel, main/production and safe cleanup. Preserve the accepted app/canon, all unfinished fronts and the separate goal01a10210 native-marketplace/reader records above. Do not shrink completion around a passing slice.
 
-Read private arcanea-goal-20261003 inventory/summary/persistence-receipt and
-persistence-review-input.txt. Paginated snapshot14:29:24UTC:29repos/1,854refs/
-59PRs, excluding the subsequently created arcanea139. Archive status and ref
-age do not prove integration or authorize deletion. 1,214refs are arcanea-agent.
+Read private arcanea-goal-20261003 receipts. Inventory14:29:24UTC is historical:29repos/1854refs/59PRs before139/141 and124 closure; not current totals or deletion permission. Never infer landing from age/archive/alias status. Most refs remain unreviewed; arcanea-agent has1214 in that snapshot.
 
-Draft arcanea139 at b973b21b2fba0f61424c2204547b3db6a383839a implements isolated
-test stores, atomic memory/credential saves, corruption preservation, rollback,
-interruption and bounded Windows refusal/retry. Local14tests/13pass/1POSIXskip;
-native37129723834/237/239/899 pass compiled Node20/22/typecheck/build. Existing
-audit is non-blocking, not a clean security verdict. Provider37129723836 failed
-is_error:true/modelUsage{}, no verdict. Keep draft; exact11-file independent
-review packet diff91397a88/packet6e7af488 is prepared. Get a real exact-source
-verdict when provider capacity is available; do not retry a known quota failure
-before its supported reset. Then inspect acceptance and release gates, and
-reconcile the platform twin in a verified free lane with fresh checks.
+Root hook141 is merged at f9c6c2d2352b78d1cac3560184af9e53b6119087. Original124/3a57f101 was cherry-picked-x at a1f0bb54; both full source-file hashes match original and main. Compiled Node20/22/type/build pass; independent xAI two-file static PASS at exact a1f0/basea88, packet77814eac. Main quality/type/secret pass. Original124 closed after verification; its branch remains. Issue140 closed with5970805419. No arcanea.ai deployment follows.
 
-Production app READY main79f3fb25/dpl_EsnqcP39fiAv1fJLffn8nic7o2kv; Supabase
-ACTIVE_HEALTHY. Authenticated creation/save/reopen and plugin cloud availability
-remain unproved. Advisor's RLS-no-policy and leaked-password findings need their
-owner; no DDL/configuration changes made. App508/d0aa0689 has only CLI mode diff,
-no requested CI gate. Preserve hook-failure receipt and require actual skip/
-ready/rollup-denial tests before accepting a future CI patch.
+Draft139 is now935b3d043fdc0f8cec2d06f001886d6e85289901, base mainf9c6c2d. Main was merged without rebase/force push; all11 persistence blobs equal b973 and the current diff is exactly those11 files. Fresh native37134508554/556/595/593 pass compiled packages/CLI/TS/production/quality. Audit remains nonblocking. Independent review is pending. Issue130/5970805251, persistence-refresh-receipt and pr139-refreshed-status hold exact current facts. Windows14/13pass/1POSIXskip is historical at b973; its test source bytes match, but no new Windows run is claimed. Single writer, corruption/restart and unchanged encryption limits remain.
 
-Saves: arcanea130/5970183926, app508/5970184055 and hub98. Previous source
-consolidation goal01a0f74f and app276 records remain below. Preserve app505/501,
-MCP8/Studio4, skills, manuscript, author/graph/runtime/media and human rights/
-Heart/price choices, plus408/427. No owned persistent processes. One lead;
-machinebounded, no fanout; storage143GiB/~15% at observation. Release only this
-thread's two verified writer receipts at handoff. Full goal remains active.
+Gemini0.60 UNSUPPORTED_CLIENT authentication failed. At b973, Grok default large prompt shortened source; three reads denied/maxturns1 no verdict. Verbatim/full180s and focused600s timed out/no verdict/no usage. Preserve all attempts. A separate10,510-byte hook packet succeeded with Grok1.0.46, requested4.7/high, nativeUsage4.7-build and tools0. Do not rerun unchanged timeout-only delivery or label all xAI unavailable. Next obtain a supported exact-source review delivery for current139: if partitioning, bind each part's immutable source/coverage and require a combined whole-delta verdict, never infer it from one part. Confirm source/repo/branch/ownership and CI before normal integration; no admin bypass. Do not use earlierb973 review requests as new-head verdicts.
+
+Release427/5970531224 records strict four main contexts, reviews0/adminfalse, GitHub Production protection absent and HAS_VERCEL_TOKEN=false. The optional manual path is currently disabled, but source79f3fb25 makes lint nonblocking and lacks canonical-release bindings. Fix/prove that gate before enabling. App508 still only CLI mode change. Prior READY deployment79f3fb25/dpl_Esnqc... and ACTIVE_HEALTHY Supabase do not prove authenticated creation/save/reopen, rollback or cloud plugins; no config/DDL/customer writes made.
+
+Preserve app505 creator integration,501 compiler/limited Claude native consumer proof,487 parent (currently has native-success evidence to recheck),491 exact-source preview binding,409 auth/key boundaries, full500/499 AuthorOS/World/SIS/media/runtime owners, #276/#277 human publishing/rights and Heart/408/427 decisions. Real plugin catalog remains4candidates/0ready/private; no cloud publication or real promotion. The other active source owner now records MCP8/edc23ea with45tests; verify its actual current head/lease and Studio/package/consumer gates rather than using the earlier6225 reader snapshot. Platform primary remains another harness's lane. Do not overwrite those sources or delete branches/locks for tidiness.
+
+Use fresh machine/storage admission; one bounded workload, no new parallel agents. Current canonical Arcanea primary is clean on persistence139/935b3d0 and existing hub98 pickup is clean after this handover. No task-owned reviewer/server/watcher remains. Follow routing guards, exact files and separate owner claims. Both saves belong to existing product issues and agentic-ops-hub98; broader main/production, creator/customer usefulness and safe estate reconciliation remain open.
 ```
 
 ### Retained Arcanea source consolidation, Codex pickup
