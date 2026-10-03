@@ -2,7 +2,17 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (design foundation merged and verified; estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (craft-check drafts open, no product merge; earlier design-foundation sweep remains below) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Craft check drafted, open product pull requests left unmerged (Grok)
+
+85 open pull requests across frankx.ai-vercel-website (26), gencreator.ai (21), arcanea-ai-app (37), and starlightintelligence.ai (1) have one disposition: 64 left draft, 18 rejected, 3 held. Held: FrankX 724 and 725, GenCreator 93. FrankX 864 and 865 are rejected because CI failed and no other provider approved them. None met the merge gate, so nothing was squash-merged and no cherry-pick was opened. `starlight-intelligence-web` is the same GitHub repository as `starlightintelligence.ai` (id 1333657540).
+
+Jules status ran twice. The token was fresh, awaiting feedback was 0, and in flight was 0 under the cap of 4. Failed checker 10254169434191635759 is not in flight. Create stays refused before any post because the CLI login create body is not mapped. The packet queue stayed empty.
+
+Draft checks, not merged: [config 92](https://github.com/frankxai/starlight-agent-config/pull/92) `4195b99`, [FrankX 862](https://github.com/frankxai/frankx.ai-vercel-website/pull/862) `0ab4c0943`, [GenCreator 142](https://github.com/frankxai/gencreator.ai/pull/142) `d8df31d`, [Arcanea 506](https://github.com/frankxai/arcanea-ai-app/pull/506) `d0b37a047f`, [Starlight 84](https://github.com/frankxai/starlightintelligence.ai/pull/84) `8471164`. The loaded PostToolUse `post` command scores `.html` and `.htm` documents only. A `write_file` of `app/button.tsx` that contains a button element exits 0 and is not denied. The post command and each committed repo checker use one contract: emoji fixture verdict reject, status 2; sentence-case fixture verdict accept, status 0. Two runs of the session entry and of all five local checkers returned those same verdicts and status codes. A non-UI prompt keeps the shared route hint. Design-capability verify exited 0. Claude, Codex, and Jules do not load this check yet.
+
+Fifteen estate-graph brands were read from disk. Keep: Anime Legends, Arcanea, Income, Starlight. Iterate: FrankX, GenCreator. The other nine are missing a design.md or a logo. Figma was not opened. No public page, Territory B copy, Arcanea canon, or FrankX first viewport changed. Waitlist stays the door. Receipt: `ops/sessions/2026-10-03.md`. Tracking issues: config 93, FrankX 863, GenCreator 143, Arcanea 507, Starlight 85. Design Intelligence 12 stays the program tracker. Next reviewer is a different identity. Do not self-merge.
 
 ## 2026-10-03: Estate design quality foundations (Codex)
 
