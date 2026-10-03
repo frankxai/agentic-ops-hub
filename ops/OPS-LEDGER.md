@@ -2,7 +2,54 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (reader origin repair verified at ba31720; native discovery and Arcanea hook/persistence records preserved; storage/review gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Config80 five source findings corrected at fed3c56; reader/native/Arcanea records preserved; review/projection/merge remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+
+## Config80 review corrections in a preserved checkout, 3 October 2026 (Codex)
+
+Full goal `01a10210-9679-7260-9789-a969ef438339` remains active across all Starlight
+repos/PRs/branches, skills/AGENTS/workflows, ChatGPT plugins, Arcanea MCP/platform,
+Supabase/Vercel, main/production, safe cleanup, READMEs and community/org preparation.
+This continuation preserves reader8/ba31720 and every other session/front at hub9611479.
+
+- [Config draft80](https://github.com/frankxai/starlight-agent-config/pull/80) now binds
+  `fed3c56c8166ef4457cf164b36d5524e569b7224`. Four source files correct the five
+  current inline findings: declared Python/other verified Playwright bindings use
+  their own environment/pinned browser; index miss requires native discovery and
+  discovery failure stays unverified; merged/no-issue exceptions cover completion
+  and blocked saves; explicit installer/doctor commands remain; the full Registry
+  and architecture scopes require the same reviewed source SHA/decision IDs.
+  Full proposal stays six files, diffSHA256
+  `2c129126f864f4d43c1d755beb0dd775e902bde04264155668a658cc61e8aeb8`.
+  Original findings/history and the other two restored policy blobs remain intact.
+- [CI37136731734](https://github.com/frankxai/starlight-agent-config/actions/runs/37136731734)
+  and push37136728634 succeed with source headfed3c56. PR CI passes release-control,
+  Windows hook/input/formatter and installer/secret-denial checks; those mechanical
+  gates do not review every guide's semantics. Enabled staged secret/diff checks
+  pass. Read-only doctor exits0,19/20 paths present; optional machine-local profile
+  absent. Doctor path checks do not establish native loading or adoption.
+- New complete six-file/AGENTS/Registry/diff source packet was attempted once with
+  Grok1.0.46, requested4.7/high, init4.7. At180s no assistant/result/verdict; owned
+  PID44168 stopped. search_tool/use_tool remained advertised under explicit deny;
+  no tool-use event observed. Cash cost unknown. Keep independent review pending;
+  do not restart unchanged timeout-only delivery or transfer prior08d6e80 approval.
+- Inspected install.ps1 writes global SDS/machine-ops shims and links only the SDS
+  skill/commands. It does not project these changed guides. The required command
+  remains unrun: current-source review and a supported owned/scoped projection
+  must be resolved. No global shim replacement, runtime adoption or main merge.
+  Current main d3a82413 requires one approving GitHub review; no bypass.
+- Disk remains below15%. Reused existing clean Codex worktree
+  `orchestration-integration-20260923` after guard/check and exclusive ownership.
+  Original unfinished hook84/local+remote3f2ba5d remained intact before/after switch.
+  The checkout now holds Config80; its upstream was corrected from origin/main to
+  its actual remote PR branch. No new worktree/dependencies or foreign primary edit.
+
+Both saves: [existing config issue46](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5971111865)
+and this hub98 session/ledger/current prompt. Native discovery14skills, operator29/
+Ops128/SIS262, reader8/Studio4, site84/85, app408/427, real Supabase/Vercel user flows
+and product/commercial/community/org acceptance remain open. No source-only slice
+establishes the full goal or universal policy enforcement. Owned review is terminal;
+config/hub leases release at handoff, with no owned service/watcher left running.
 
 
 ## Reader origin refusal and source-bound verification, 3 October 2026 (Codex)
