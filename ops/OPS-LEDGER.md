@@ -2,9 +2,31 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Creator complete report and remote recovery verified; native billing guard CI passed; Memory Studio preserved; Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 5 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (Creator runtime routes/contingency and32 browser checks verified, hub save recovered; community capture/denial repair verified, visual refinement open; Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 6 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
+
+
+
+## 2026-10-04: Creator runtime choices and matched metered contingency (Codex)
+
+Technology draftPR34 is `082988a20532c5c187cad76e6a1cc116aca554fa`. Editable reportv3 adds sourced native/API host
+requirements and a matched fully metered contingency; reportv1/v2 recovery stays
+supported. Example50% native maker isUSD56.9012 vsUSD78.9012 fully metered; only
+the latter exceeds exampleEUR60. ActualEUR100 pilot cap/account/quota unknowns stay.
+CI37160380791:147 unit/11 editorial/51-page build/32 actual desktop/mobile Chromium
+checks; owned browser/server exited; tested merge/head tree matches. Native Git
+preview READY/HTTP200/noindex. Six inspected captures/sidecars/both ledgers saved;
+schema/memory sync and independent design/buyer approval remain open.
+
+Native Gemini3219302 six-file sourcePASS74.358s, unchanged hashes at this head;
+CSS/browser verifier/broader source/design/buyer/identity/confinement/invoice/release
+excluded. Actual v3 exports restore all inputs; hardware-only incumbent and prior
+exports/failures preserved. Foreign hub lease released; normal merge main4a789dad
+retains all other records and saves prior fadd4f7 provenance plus this slice in
+session04. Technology30/hub102/privateOps149 remain the tracking issues. Cache kept,
+local heavy build/browser RAM-held; no subscriptions/API fallback/schedule/workers/
+production activated. Full Queen/team/brand/creator outcome and useful mission open.
 
 
 ## 2026-10-03: Creator complete report and remote recovery verified (Codex)
@@ -50,6 +72,30 @@ outcome remain open. Wider design/buyer/security/privacy/licence/commercial chec
 remain pending. Current main 7ffaf455 and all other handovers/prompts are retained.
 See today's session and Technology30/hub102/private Ops149.
 
+
+
+## 2026-10-03: Actual community captures and sentence-case repair (Codex)
+
+[Kernel PR33](https://github.com/frankxai/starlight-design-intelligence/pull/33)
+merged `c810469` from reviewed `3ae57c7`; source/main CI passes 61 Node, 15 Python and 53
+browser/process checks, with three changed blobs equal. Actual counter falsePASS
+was reproduced and repaired; generic source review PASS is separate from product
+visual/human/production acceptance. Earlier disputed/inconclusive records remain.
+
+[Community draft PR15](https://github.com/frankxai/gencreator-community/pull/15) at
+`ccaa8a7` pins the released inspector and verified raw brand blob. Forty-four
+actual browser checks and 49 tests/build pass. Thirty-two PNGs/sidecars are CRC, byte,
+pixel and source-bound verified; six current exports were viewed after eight
+baseline/eight intermediate views. Twelve uppercase CSS declarations are corrected.
+Overall visual verdict remains revise: below-fold mobile fields, 9,875 px page,
+dense type and staged copy. Source-matched Vercel preview metadata is verified,
+but browser/rights/type/a11y/performance/usefulness/human/production gates remain.
+
+Base guard still fails private fetch; current-head locked approvals and proposed
+required checks remain human-gated. Latest Review Gate passes; cancelled history
+is preserved. PR13/14 stay frozen, Config PR95 and all other owners untouched.
+The full goal and both existing issue 12 fronts remain open. All owned workers are
+terminal. See [session](sessions/2026-10-03.md) and current pickup prompt.
 
 ## 2026-10-03: Arcanea source authority and identity gaps (Codex)
 
@@ -244,59 +290,58 @@ Cloud read-only metadata worked; existing ready results were preserved. No
 enabled Computer Use browser was available for native-provider review.
 
 
-## 2026-10-03: FrankX editorial renewal (Codex)
 
-The full website/all-article/six-audience goal remains active under
+## 2026-10-04: FrankX editorial renewal (Codex)
+
+The complete website/all-article/six-audience goal remains active under
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source now ends at
-`56cd190b909af7c202c3f20aff49ef8a49051cdb`, after batch 5 `421b0f08` and all six
-earlier source commits. The 278-slug/769-variant register contains 22 prepared
-revisions, four observed production corrections and 252 unreviewed rows.
-All 26 progress hashes match. No article has release acceptance.
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at `5166bb5ff214fc5b804200818187d5388fc07835`,
+after batch 6 `88dcb830` and all earlier preserved commits. The 278-slug/769-variant
+register now has 27 prepared articles, four observed production corrections and
+247 unreviewed rows. All 27 authoring hashes match; earlier 26 receipts remain.
+No article has release acceptance. Twenty-seven social sets remain held.
 
-Five revisions address the frontier model landscape, model costs, coding agents,
-durable agent memory and six agent primitives. The coding article uses the
-substantially newer August production guide rather than the private January
-draft, preserving its workflow, publication metadata, hero and infographic.
-All five production bodies were read at `044c8447`. Other original URLs and
-metadata remain. Current primary documentation supports dated rates, promotion
-expiry, pricing thresholds, alias drift and effective tool permissions. Worked
-costs are hypothetical arithmetic; no current usage dataset or model trial is
-claimed. Gateway documentation links carry no invented affiliate attribution.
-Five new article-linked social sets bring the held kit to 22; prior sets remain.
+Five actual music articles cover prompting, production, catalog lessons,
+Suno/Udio and tool costs by reader job. Original production metadata, images and
+URLs remain. Pinned public production `044c8447` is in the distinct repository
+`frankxai/frankx.ai-vercel-website`; private authoring is `frankxai/FrankX`.
+July 2 catalog files have 817 visible track IDs and 240 indexed entries, without
+duplicate IDs within either. Actual selection/tagging code is source-checked;
+these observations establish no lifetime total, prompt success or audio quality.
+No music-owner file or provider audio was changed/retrieved. Current documented
+v6 editing/stems/export conditions and unresolved licensing differences replace
+unverified release promises. Legacy Suno 25% Impact/90-day strings are corrected
+to unverified; official links remain. No partner enrollment or reward is invented.
 
-A five-article Cohere response was truncated and supplies no completed verdict.
-Separate Poolside two-article and three-article critiques at `421b0f08` completed,
-both labeled PASS. All ten findings and lead reconciliations are preserved.
-The lead rejected misread/already-covered findings, clarified the rate-table
-header and sourced five other coding tools through current primary pages.
-These two refinements postdate the critiques. Supplied source summaries, no
-independent browse/render/execution, and inconsistent findings limit acceptance.
-Neither PASS label grants current-source or publication approval.
+Isolated two- and three-article Poolside critiques completed at `88dcb830` with
+PASS/no findings and INCONCLUSIVE/five findings. Original verdicts and all lead
+responses are preserved. Three minor clarity refinements postdate the critiques;
+one quotation was not verbatim and several concerns were already addressed.
+Supplied source summaries and no browse/listen/render limit confidence. No
+current-source, rights, visual or publication acceptance follows either label.
 
-Five MDX files compile, metadata and 16 distinct source article links validate,
-decimal examples check, and nine corpus tests pass. Prior 38 deterministic
-checks remain scoped evidence. Source secret hooks pass both commits: 129.55 KB
-and 40.93 KB. A false positive matched a verified article digest; explicit
-`slug`/`contentSha256` fields resolved it without bypassing or weakening the hook.
-All 23 unrelated newline changes remain unstaged. Source push/PR is held.
+Five refined MDX bodies compile; metadata, seven internal source links and
+hypothetical Decimal calculations verify. Nine corpus plus ten boundary tests
+pass; scoped claim audit passes. The language audit still finds 15 existing hits
+in eight unrelated files. Both source secret hooks pass, scanning 133.05 KB and
+39.18 KB. All 23 unrelated newline changes remain unstaged. Source is unpushed.
 
-Fresh build admission is HOLD: 8,186 MB free versus 8,192 required, projected
-4,090 MB, twelve runtimes, pause-new-swarms. Quick/NoWrite storage reports
-147.1 GiB/15.5%, critical against its 30% target; no cleanup is authorized by
-that observation. Borrowed Next.js/TypeScript targets are absent. Codespaces
-inventory lacks account scope; the Vercel project connector rejects its exposed
-argument mapping. Browser inventory has no apps or browsers. No build, install,
-new worktree, agent, image, social post, schedule, cleanup or persistent worker
-was started. The required merge gate, current capture and release remain open.
+Build PP at October 3 21:58 UTC is HOLD: 7,599 MB free, 8,192 required,
+projected 3,503 MB, twelve runtimes, pause-new-swarms. Last storage sensor remains
+historical 147.1 GiB/15.5%; recheck before growth. Borrowed Next.js/TypeScript
+targets are absent. Fresh supported browser inventory has no apps or browsers;
+the access question remains pending. Prior remote build/preview lookup failures
+do not prove a release environment. No build, install, new worktree, agent,
+image, social post, cleanup, schedule or persistent worker was started.
 
-Recover admitted isolated build dependencies without mutating the borrowed
-production tree, restore supported desktop/mobile capture and review exact
-revisions. Continue the remaining register from newer production variants,
-preserve research holds and affiliate/home/product work, and port only accepted
-public assets. Prior hub PR117 merged `9263c1da` with passing PR/main CI; that
-proves documentation only. See [session](sessions/2026-10-03.md), source
-REVIEW-BATCH-05.md and the current pickup prompt.
+Recover admitted isolated build dependencies and supported desktop/mobile
+capture; review exact current source and visuals, port only accepted public
+files, pass production gates and verify deployed SHA/recovery. Continue the
+remaining register from stronger production versions while preserving research
+holds, affiliate/home/product work and every other owner. Prior hub PR118 merged
+`663338ee` with passing PR/main CI; this records documentation, not website
+deployment. See [session](sessions/2026-10-04.md), source REVIEW-BATCH-06.md,
+MUSIC-PARTNERS-2026-10-03.md and the current pickup prompt.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
