@@ -17,6 +17,40 @@
 
 ## Current
 
+### Jules: finish the four in-flight sessions, then merge what is green
+
+Frank does not open the Jules UI. Read the appended Grok section in
+[ops/sessions/2026-10-03.md](sessions/2026-10-03.md).
+
+[frankx.ai-vercel-website PR 866](https://github.com/frankxai/frankx.ai-vercel-website/pull/866)
+is already merged as `6f735abb` and closed issue 449. Do not redo it.
+[realityarchitect PR 47](https://github.com/frankxai/realityarchitect/pull/47)
+stays a draft. Issue 35 says draft only.
+
+The estate cap is 4. These were In Progress at 2026-10-03T17:00Z. Re-list
+before acting. When one leaves In Progress, `jules remote pull` that session,
+review the diff, and open or repair the pull request yourself. Squash-merge
+only when the checks on that head are green and the pull request is outside
+HOLD. Leave FrankX 724 and 725, Dependabot majors, and Arcanea 436. Do not
+write the occupied FrankX, Reality Architect, or agentic-ops-hub primary
+checkouts. Use a free worktree from `origin/main`.
+
+- `8651854513076101430` FrankX issue 824. Fail closed on unsupported research
+  claim grades. Do not let generated Scholar URLs stay labeled as journals.
+- `7771091644676001707` FrankX issue 842. Fail when two posts share hero
+  bytes. Keep the allowlist explicit.
+- `9363571137422053674` continues the #865 headcount cleanup. Reject a vague
+  replacement such as "Catalog" or "Extensive tracks" if deleting the
+  unsupported number is the truthful edit.
+- `9191613497530593819` arcanea-ai-app issue 279. Review the release manifest
+  before any merge. Invalid missing-rights fixtures must fail.
+
+`jules-ops.mjs` still cannot refresh its token (`invalid_client`). Use
+`jules remote list`, `pull`, and `new`. Do not print credentials. Do not ask
+Frank to click Jules. After one slot frees, fill it with the next safe
+tests-or-docs issue on a public repo. Jules does not design. Keep the other
+current prompts.
+
 ### FrankX: review and release the first editorial renewal slice
 
 Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and

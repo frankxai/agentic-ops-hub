@@ -2,7 +2,36 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (GenCreator authority reconciled; FrankX source saved locally/release held; 49 community tests/36 browser checks and source review pass; locked guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (FrankX PR 866 merged `6f735abb`, issue 449 closed; Reality Architect PR 47 stays a draft; four Jules sessions still in progress) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: FrankX link scanner merged, Jules still full (Grok)
+
+[frankx.ai-vercel-website PR 866](https://github.com/frankxai/frankx.ai-vercel-website/pull/866)
+squash-merged as `6f735abb3162ce189fbbc174658f60ac768d8f7c` and closed
+[issue 449](https://github.com/frankxai/frankx.ai-vercel-website/issues/449).
+Head `e22a55ecb` passed CI, Merge Gate, Contract Guard, Media Guard, the design
+and editorial contracts, Surface Guard, Web Interface Guidelines, Vercel, and
+the Review Gate status. Codex's P2 on quoted `href` keys was fixed in that head
+and the thread was resolved before merge. Local proof: 6 link tests passed, and
+`node scripts/check-internal-links.mjs` scanned 2787 files with exit 0. No
+deploy command was run. The merge to main is what starts the normal Vercel
+production build.
+
+[realityarchitect PR 47](https://github.com/frankxai/realityarchitect/pull/47)
+stays a draft. [Issue 35](https://github.com/frankxai/realityarchitect/issues/35)
+says draft only. The comment with the URL is
+[issuecomment-5971286662](https://github.com/frankxai/realityarchitect/issues/35#issuecomment-5971286662).
+Issues 33 and 34 were closed with proof. `node --test` in the focus-ring
+worktree passed 59 tests. Do not merge PR 47 from this record.
+
+Jules cap is full. In progress at handover: `8651854513076101430` (FrankX 824),
+`7771091644676001707` (FrankX 842), `9363571137422053674` (FrankX headcount
+continuation), `9191613497530593819` (arcanea-ai-app 279). No fifth session was
+started. Frank does not open the Jules UI. When one of these finishes, pull the
+diff, fix it if it has no pull request, and squash-merge only when that pull
+request is green and outside the HOLD list. Leave FrankX 724/725, Dependabot
+majors, and Arcanea 436. The occupied FrankX and Reality Architect primary
+checkouts were not written.
 
 ## 2026-10-03: FrankX editorial renewal (Codex)
 
