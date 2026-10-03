@@ -1602,3 +1602,61 @@ canon487/MCP8/launcher/AuthorOS/SDK/plugin/quest/shared graph/runtime/media/reve
 fronts and human decisions. Broad goal remains active; no persistent owned process.
 Release only appcodex-7daedb39 and hubcodex-7ccbc34d at verified handoff.
 Policy loading is not universal enforcement.
+
+## Native Codex skill profiles and owned recovery, 3 October 2026 (Codex)
+
+Full estate goal `01a10210-9679-7260-9789-a969ef438339` remains active. This
+continuation preserves all prior Hub982a3e4 records, including Arcanea143 and
+native consumer/config recovery, Config80 and reader8 work.
+
+[Draft Config95](https://github.com/frankxai/starlight-agent-config/pull/95) is
+`d004224a3e11f14f9f30ca1f5c5edae3ab6d0261`, base d3a82413, five files, full diff SHA256
+`d589b30b116f3778303ea689b9f3159bae9faf88cc92c0ab4cf21c18ad5e19ad`. Existing clean Codex checkout was reused; Queen90's local/remote c9b9c24
+branch is retained. The foreign primary and other owners' work are untouched.
+Registry fdd0233 records Agent Config as executable configuration/release-policy
+owner; a distinct artifact authority and approval before default adoption remain.
+
+The stdlib adapter uses native discovery, exact guide lookup, exclusive profile
+intent, renderer verification and one read-only ephemeral consumer. Explicit
+disables, enabled system guides, configured hook providers/model/reasoning and
+base configuration are preserved. Worker PIDs are persisted as soon as started;
+failed stopping retains the profile. Recovery refuses live ownership, changed
+bytes, symlinks and foreign namespace/home. A reproduced quick-exit output-cap
+bug is fixed; final stdout/stderr and discovery stderr thresholds are checked.
+
+Local23 tests:22 executed pass, one Windows symlink privilege skip. Native
+[Windows/Linux37144284428](https://github.com/frankxai/starlight-agent-config/actions/runs/37144284428)
+executes all23 successfully on both hosts; startup37144284421 and CI/security
+37144284462 pass at this exact head. Enabled staged secret/diff checks pass.
+Doctor exit0:19/20 present, optional machine profile absent, Hermes links pass.
+The installer projects SDS/machine-ops, not this adapter; it remains unrun.
+
+Fresh actual Codex0.160.0 consumer is source-hash/head bound to current d004224.
+Installed `starlight-control-plane:verify-starlight-release` is invoked by name
+without a path in the user prompt. Renderer5; one completed native turn, no
+error/budget warning; base config unchanged and profile removed. Its supplied
+Config80/fed3c56 release verdict remains human-gated/blocked. This establishes
+useful installed-guide consumption, not independent source/release approval.
+Internal system `review-agent` is preserved but omitted from normal rendering.
+
+Full-source review attempts at predecessor888c01d produced no verdict: native
+Claude2.1.287/claude-sonnet-5-5 quota429 before inference, tools/MCP empty, reported
+cost0; Grok1.0.46/4.7-high timeout180s, cash unknown. Workers terminal. Current
+source review and GitHub approval remain pending; no inherited approval. Deny/
+observed no-tool-use evidence does not establish universal isolation. Native
+turn usage is accumulated; no prompt-size/cash savings claim.
+
+Caller PP/storage admission remains required; the adapter enforces its own
+worker/output/profile boundaries. Latest admission8609MB free/4096 floor,
+one serial worker; disk15.58%, no reclaim/cleanup. No new worktree/dependencies,
+default profile rollout, main merge, deployment, desktop/cloud or paid-product
+completion. Same-budget comparison, implicit/full-catalog routing and complete
+execution catalog measurement remain open. Config80/fed3c56 source review/scoped
+projection, hook84, MCP8/ba31720, operator29, site84, full Supabase/Vercel flows,
+production, commercial/community/org and every retained objective stay open.
+
+Both saves: [existing Config46 receipt](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5972231361) and this Ops Hub draft98
+session/ledger/current prompt. Private `native-profile-source-progress-receipt`
+and final source/runtime/provider packets retain exact evidence. Next obtain
+supported exact-current-source review and compare same-budget behavior before
+any default adoption. Policy loading is separate from runtime enforcement.
