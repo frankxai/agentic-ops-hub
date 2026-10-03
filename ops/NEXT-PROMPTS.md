@@ -17,32 +17,50 @@
 
 ## Current
 
-### FrankX: review and release the first editorial renewal slice
+### FrankX: continue the article register and release reviewed revisions
 
 Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
 website, all-article, six-audience objective and Frank's sentence-case/serif,
 human writing, current primary sources, truthful research and visual requirements.
 Read the appended [session](sessions/2026-10-03.md). Source commit
-`26051cbdb390271d8e46817fd96ffb93c5e3d060` is local in the owned
+`6b410b6b7b4cb9c829a03139dd3384095976f975` follows `26051cbdb` and is local in the owned
 `starlight/worktrees/frankx-editorial-renewal-20261003` checkout,
 branch `agent/codex/editorial-renewal-20261003`. It contains the 278-slug register,
-RENEWAL-PLAN.md, REVIEW-2026-10-03.md and SOCIAL-KIT.md under docs/ops/editorial.
+RENEWAL-PLAN.md, REVIEW-BATCH-02.md, INTELLIGENCE-INTAKE.md, hash-bound progress
+receipts and SOCIAL-KIT.md under docs/ops/editorial. Five revisions are prepared,
+four production corrections are preservation observations, and 269 rows remain
+unreviewed. No row is release-accepted.
 
-Obtain fresh machine/storage admission before heavy work: last posture prohibited
-new agents and storage was below 15%. Restore usable dependencies and browser
+Obtain fresh machine/storage admission before heavy work: build posture was
+bounded and new agents remain prohibited. Storage recovered to approximately
+16.17%, but the prescribed quick sensor is missing and its stored plan is stale.
+Restore usable dependencies and browser
 capability through an owned lane; do not repair another owner's shared junctions
 or start broad installs. Source merge gate stops at TypeScript, lint has the same
 missing dependency, Next.js is absent, and strict slop audit has 16 existing
-findings needing contextual disposition. Ten Node/seven Python tests pass.
+findings needing contextual disposition. Thirty-eight distinct tests pass:
+13 Python collector, six Node intake, nine Python corpus, ten Node boundaries.
+Both new articles compile as MDX. No source push, complete CI or website deployment.
 
 Capture current desktop/mobile article states before further visual design;
 compare exactly three directions and inspect typography, focus, reflow, motion
 and navigation. Obtain independent reviews of the exact source revision. The
-three rewritten research-library, skills/agents/MCP and model-routing guides make
-no invented experiment or provider-ranking claim. Native cover drafts are below
+five prepared guides cover the research library, skills/agents/MCP, model routing,
+music evidence and research intake. They make no invented experiment or provider
+ranking claim. Preserve four newer production science/music corrections instead
+of replacing them with older private versions. Native cover drafts are below
 2048 pixels wide and are unaccepted; retain sidecars and both ledgers. Social
 companions stay draft until matching release and human posting approval.
+
+Continue bounded source work through the register while release access recovers.
+Inspect the three Vibe OS articles for remaining neuroscience/operating claims,
+then the next stale frontier/SEO cluster using exact production source versions.
+The new ai:scan is real metadata intake: its manual run checked four feeds and
+retained 158 records, 89 recent. It measures no keyword demand or model quality.
+Keep the initial partial receipt, source states, dates and hashes. Do not activate
+a routine from these files or describe the intake as a daily service. Obtain
+actual Search Console/OpenRouter data before publishing demand/usage analysis.
 
 Port only reviewed changes to an owned production branch, preserving production
 PR825's research holds and newer affiliate/workshop/homepage implementations.
