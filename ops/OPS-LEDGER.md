@@ -2,8 +2,48 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Config80 five source findings corrected at fed3c56; reader/native/Arcanea records preserved; review/projection/merge remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Arcanea release143 full metadata CI passes; recovery review pending; Config80/reader/native and other records preserved) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+
+## Arcanea recovery review and release metadata verification, 3 October 2026 (Codex)
+
+Full goal `01a1020e-e898-7093-b301-b31684ccb819` remains active across every Arcanea
+repo/PR/branch, skills/AGENTS/workflows, ChatGPT plugins, MCP, platform/Supabase/Vercel,
+main/production and safe cleanup. Preserve goal01a10210 and its hub109fcf80 records.
+
+- Recovery draft139 stays `935b3d043fdc0f8cec2d06f001886d6e85289901`, base mainf9c6c2d.
+  Compiled CI passes. Three current-head Grok4.7/high attempts each ended at180s
+  without assistant/result/verdict/tool use: 27,121-byte core implementation/diff,
+  10,345-byte complete memory, then isolated static audit system prompt. Remaining
+  prepared parts were not run or reviewed. MCPs disabled, tools denied, hooks kept;
+  only owned process trees stopped. No blanket provider outage or inherited PASS.
+- [Release draft143](https://github.com/frankxai/arcanea/pull/143) binds
+  `ae6695384b5f47c80d6d0a67760f319d1c46059f`, base mainf9c6c2d. Four files reuse
+  version-packages for Changesets, lockfile-only regeneration and frozen validation.
+  Publishing and Node20 Packages CI call the same command. Existing frozen installs,
+  Node20/22 cases and security remain; release input paths now trigger Packages CI.
+- Release136/5eff985b complete46-project manifest copy fails outdated-lock validation.
+  Eight actual internal before/after graphs under pnpm8.15.0 reproduce refusal and
+  pass regeneration/frozen verification; external dependencies omitted. Full local
+  repair stopped on missing offline @turbo/gen tarball. No node_modules created;
+  owned sandboxes cleaned. The original bot payload and branch remain intact.
+- [CI37138256527](https://github.com/frankxai/arcanea/actions/runs/37138256527) actually
+  executes the shared command across all50 workspace projects at ae669538: full
+  Changesets versioning, regeneration, frozen validation and diff check pass.
+  Compiled Node20/22 packages/CLI/security, suite37138256517, quality/build37138256536,
+  workspace type37138256548, secret and mechanical canon pass. Audit is nonblocking,
+  not a clean dependency-risk verdict. Claude37138256539 fails; exact independent
+  source review remains pending. Keep143 draft and136 open for regenerated metadata.
+- Disk14.93%/142.13GiB is BOUNDED; private queen floor receipt exists. No new worktree,
+  dependencies, local build fanout, global config changes, main merge, publication
+  or app deployment. Root is clean/pushed on release143/ae669538;139 remains intact.
+
+Both saves: [issue142](https://github.com/frankxai/arcanea/issues/142#issuecomment-5971295341)
+and this hub98 session/ledger/current prompt. [Release136](https://github.com/frankxai/arcanea/pull/136#issuecomment-5971295491)
+and [recovery130](https://github.com/frankxai/arcanea/issues/130#issuecomment-5971295664)
+retain exact findings. MCP8/ba31720/48 source+emitted tests stays with its other owner.
+App408/427, Studio/package/consumer, creator/customer/commercial and all other fronts
+remain open. Owned reviewers are terminal; only this session's leases release at handoff.
 
 ## Config80 review corrections in a preserved checkout, 3 October 2026 (Codex)
 
