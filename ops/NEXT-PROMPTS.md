@@ -27,7 +27,26 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT legacy recovery / program276, draft487 ataf0b366892713d0460a7535bc9ad7a80235380a1:
+CURRENT creator portability / draft496 at76d1a92856f1ea20018bc26482d3a7133512deb6:
+Use the existing homepage/creator; no new editor/repo. Accepted main4e integrated
+d702; full main-targeted15-file proposal and exact-source review packet preserved.
+Restorable JSON retains concept/ID/all known world text; older JSON gets new ID
+and explicit concept fallback. Invalid/unknown/cancelled/failed storage preserves
+screen text; rollback failure is honest. Same-ID restore/pending-concept/read
+exclusion have real browser regressions. Art/account state remain separate.
+Ten local/runtime and native portability tests pass at prior8806214; all three
+native draft modes passed there. Overall880 CI failed homepage forced-colors
+on2labelled DOM matches; artifact11257054953 validated2reports/19companions.
+Final76d1 requires exactly1visible example and records matching DOM dimensions.
+Final CI37080234547 passes Install and all four required contexts; actual Chromium homepage desktop/mobile375/reduced-motion/forced-colors and draft desktop/mobile375/reduced-motion journeys pass. Final artifact11258144961 matches2source reports/23image companions. All four homepage reports observed one matching DOM node; the earlier duplicate cause remains unproven.
+Retain all cancelled/failed attempts. Final-source independent provider review
+pending; no inherited PASS, customer/rights/revenue/production acceptance/merge.
+Receipts191/5963161621,276/5963164745,496/5963164968; hubdraft98.
+Next inspect final browser diagnostic and obtain source-bound independent review,
+then real creator/account/customer repair and demand proof under191/276/427.
+Keep all existing shared author/graph/runtime/media owners and open pickups.
+
+RETAINED legacy recovery / program276, draft487 ataf0b366892713d0460a7535bc9ad7a80235380a1:
 Six-file delta over5a2, SHA2561c0e03f626cbafecaff70a8659cd53da02daecb8f71210816b5df5d3fafd7aa6.
 Read docs/strategy/arcanea-legacy-salvage-2026-10-03.md. Immutable full Git
 comparison equals corrected API inventory: legacya88 5,420 entries, main4e
