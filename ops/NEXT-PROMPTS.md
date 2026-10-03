@@ -20,55 +20,59 @@
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website, all-article, six-audience objective and Frank's sentence-case/serif,
-human writing, current primary sources, truthful research and visual requirements.
-Read the appended [session](sessions/2026-10-03.md). Source commit
-`6b410b6b7b4cb9c829a03139dd3384095976f975` follows `26051cbdb` and is local in the owned
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252), preserving the full
+website/all-article/six-audience objective, sentence case, existing serif identity,
+human writing, grounded research, current partners and meaningful visuals.
+Read the appended [session](sessions/2026-10-03.md). Local source commit
+`74a4012d1f8e8850e0d6c3c083ab61b5cb9fc655` follows `6b410b6b7`/`26051cbdb`, in the owned
 `starlight/worktrees/frankx-editorial-renewal-20261003` checkout,
-branch `agent/codex/editorial-renewal-20261003`. It contains the 278-slug register,
-RENEWAL-PLAN.md, REVIEW-BATCH-02.md, INTELLIGENCE-INTAKE.md, hash-bound progress
-receipts and SOCIAL-KIT.md under docs/ops/editorial. Five revisions are prepared,
-four production corrections are preservation observations, and 269 rows remain
-unreviewed. No row is release-accepted.
+branch `agent/codex/editorial-renewal-20261003`. Read REVIEW-BATCH-03.md,
+RENEWAL-PLAN.md, the exact-hash article register/progress and held SOCIAL-KIT.md
+under docs/ops/editorial. Twelve revisions await independent review; four
+production corrections are observations to preserve; 262 rows remain unreviewed.
+No article has release acceptance. Prior hub PR113/main CI passed; no website
+release follows from that documentation evidence.
 
-Obtain fresh machine/storage admission before heavy work: build posture was
-bounded and new agents remain prohibited. Storage recovered to approximately
-16.17%, but the prescribed quick sensor is missing and its stored plan is stale.
-Restore usable dependencies and browser
-capability through an owned lane; do not repair another owner's shared junctions
-or start broad installs. Source merge gate stops at TypeScript, lint has the same
-missing dependency, Next.js is absent, and strict slop audit has 16 existing
-findings needing contextual disposition. Thirty-eight distinct tests pass:
-13 Python collector, six Node intake, nine Python corpus, ten Node boundaries.
-Both new articles compile as MDX. No source push, complete CI or website deployment.
+Recheck PP/storage before heavy work. Build admission was bounded; ten runtimes
+kept new agents paused. An existing clean tool at blob b20fdf718b3f791b1062f13586974f323217e189
+ran Quick/NoWrite from agent-config-outcome-intent without modifying that checkout
+or the shared plan: 149.6 GiB / 15.7% free. Canonical sensor path is still missing;
+its older census/baseline does not grant cleanup permission. Do not mutate shared
+borrowed dependencies or other owners. Missing TypeScript/Next.js prevents the
+full source gate; 16 known strict-slop findings need contextual review in named
+files. Thirty-eight deterministic tests pass. Seven new articles compile as MDX.
+No source push/PR, accepted design or website deployment has occurred.
 
-Capture current desktop/mobile article states before further visual design;
-compare exactly three directions and inspect typography, focus, reflow, motion
-and navigation. Obtain independent reviews of the exact source revision. The
-five prepared guides cover the research library, skills/agents/MCP, model routing,
-music evidence and research intake. They make no invented experiment or provider
-ranking claim. Preserve four newer production science/music corrections instead
-of replacing them with older private versions. Native cover drafts are below
-2048 pixels wide and are unaccepted; retain sidecars and both ledgers. Social
-companions stay draft until matching release and human posting approval.
+The seven new guides cover pinned Vibe OS source/CLI failures, a prompt-to-take
+workflow, creative-session music, an editorial topic map, AI-search access/panel
+measurement, evidence-led ACOS editorial work and a public campaign method.
+Their Vibe receipt checks source 90b902fb9c6835cebcd58aae9221049d4aa7232e; code
+preset count is 15, JSON key can disagree with its prompt, and product/license
+claims need exact-version reconciliation. No audio or clinical trial is claimed.
+The full old 2024 plan is preserved privately under docs/strategy/editorial;
+exclude it and private intake/ops records from any public production port.
 
-Continue bounded source work through the register while release access recovers.
-Inspect the three Vibe OS articles for remaining neuroscience/operating claims,
-then the next stale frontier/SEO cluster using exact production source versions.
-The new ai:scan is real metadata intake: its manual run checked four feeds and
-retained 158 records, 89 recent. It measures no keyword demand or model quality.
-Keep the initial partial receipt, source states, dates and hashes. Do not activate
-a routine from these files or describe the intake as a daily service. Obtain
-actual Search Console/OpenRouter data before publishing demand/usage analysis.
+Continue bounded review through the next stale frontier/production-agent cluster,
+using exact production variants and current primary sources. Preserve the prior
+music evidence/research intake revisions and four August production corrections.
+The real scanner's four-feed manual receipt is metadata, not demand or model
+quality. Obtain actual Search Console account/export and licensed OpenRouter
+usage data before claiming observations. Never describe the intake as a daily
+service or activate a routine from a document.
 
-Port only reviewed changes to an owned production branch, preserving production
-PR825's research holds and newer affiliate/workshop/homepage implementations.
-Run required gates, inspect the preview, merge by PR and verify production SHA,
-routes, affiliate qualification, publication holds and rollback. Then work through
-every article register row and remaining audience/SEO/visual/data work. Update
-issue252 and this hub's receipt/ledger/prompt. Do not claim a green release from
-source tests or mark the broad goal complete. Maintain the other current prompts.
+Recover usable admitted build/browser and independent provider-review capability.
+Capture current desktop/mobile states before further visual design; compare three
+considered directions and inspect typography, focus, reflow, motion and navigation.
+Review the exact revision independently. Earlier native covers remain unaccepted
+and below 2048 pixels wide; preserve sidecars/ledgers. The 12 social companion
+sets remain held until matching release and human posting approval.
+
+Before porting accepted public files, compare with fresh production main and
+preserve PR825's holds and newer affiliate/workshop/homepage implementations.
+Use an owned production branch, run required checks, inspect the existing preview,
+merge normally and verify deployed SHA, routes, links, publication boundaries and
+recovery. Update issue252 and this hub receipt/ledger/current prompt. The broad
+goal stays open. Preserve the other current prompts and unfinished work.
 
 ### Estate design quality: repair default discovery and prove applied host use
 
