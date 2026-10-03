@@ -5,6 +5,52 @@
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
+## 2026-10-03: Arcanea estate inventory and recoverable local state (Codex)
+
+Active goal `01a1020e-e898-7093-b301-b31684ccb819` keeps all Arcanea PRs/repos,
+skills, AGENTS/workflows, ChatGPT plugins, MCP, platform/Supabase/Vercel,
+main/production integration and safe cleanup in scope. Paginated GitHub snapshot
+at 14:29:24 UTC records 29 repositories, 1,854 branches and 59 open PRs. The PR
+snapshot precedes new arcanea#139; it includes app#508. There are 1,214 refs in
+arcanea-agent and 225 in archived arcanea-orchestrator. Metadata and hashes are
+preserved privately; no branch is deleted or treated as integrated by age.
+
+[Draft arcanea#139](https://github.com/frankxai/arcanea/pull/139), exact head
+`b973b21b2fba0f61424c2204547b3db6a383839a`, repairs real-home test writes and
+truncating local persistence under [owning issue130](https://github.com/frankxai/arcanea/issues/130#issuecomment-5970183926).
+Eleven files add absolute state-directory selection, per-process temporary test
+stores, flushed private sibling replacement for memory/credentials, failed-write
+rollback/retry and corruption/interruption preservation. AGENTS.md records the
+actual rules and single-writer limitation. Existing encryption derivation remains.
+Local Node24 source tests:14 total/13pass/0fail/1POSIX-on-Windows skip. Both genuine
+Windows contention failures were retained before bounded retry and sustained-
+reader/refusal/recovery checks passed. No real home/customer state was touched.
+
+[Native suite37129723834](https://github.com/frankxai/arcanea/actions/runs/37129723834),
+packages37129723837, workspace37129723839 and quality37129723899 pass at that
+head: compiled Node20/22 suites, type checks and production build. Enabled
+Gitleaks/secret guards pass. Existing dependency audit uses `|| true`, so its
+green job is not a clean-audit verdict. [Provider job37129723836](https://github.com/frankxai/arcanea/actions/runs/37129723836)
+failed with is_error:true/empty model usage at observed claude-sonnet-5-5;
+no independent verdict. Keep139 draft. Complete diff SHA256
+`91397a889283360515dad0b84a006a916f9b9617cbadc086ebd69419f87c6bee`, review
+packet SHA256 `6e7af4885f889501b8d275598aad9cf26719772381690847c708b7eaedecb811`.
+
+Vercel production dpl_EsnqcP39fiAv1fJLffn8nic7o2kv is READY on app main
+79f3fb25, with both public domains. Supabase Arcanea is ACTIVE_HEALTHY; security
+advisor reports reader_illustration_requests RLS without policies and disabled
+leaked-password protection. Those findings need ownership/configuration review;
+health metadata does not prove authenticated creation or persistence. App508 at
+d0aa0689 only changes compiled CLI mode; its claimed CI gate is absent. [Review
+receipt](https://github.com/frankxai/arcanea-ai-app/pull/508#issuecomment-5970184055)
+keeps the hook failure and implementation/verification pending.
+
+Both saves are owning130 and this existing hub98 session/ledger/current prompt.
+All earlier app505/501, reader MCP8/Studio4, manuscripts, skills, canon/rights/
+Heart and release408/427 fronts remain. No merge, deployment, new worktree,
+local install/build, global MCP change or persistent owned process. Shared
+policy loading remains distinct from runtime enforcement. Broad goal active.
+
 ## 2026-10-03: Six app drafts verified together as creator entry integration (Codex)
 
 Draft [505](https://github.com/frankxai/arcanea-ai-app/pull/505) at `b6a2b30b270f91a03f75c67c67237739c4404ac9` combines reading, homepage/world portability, community, pricing, footer and published-reader setup on accepted main79f3fb25. The six original #490/#496/#493/#494/#497/#498 drafts remain open and unchanged. All46 unique input files match pinned source bytes; the two shared helper/tests match #497/#498. The one composed workflow retains current main's checks and non-draft gallery/starter checks, runs seven serial entry suites with one browser installation/server, collects later evidence after failure and blocks Build on any failure. No canon/manuscript, dependency/security, package, price, licence or ready-status change.

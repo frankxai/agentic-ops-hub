@@ -17,7 +17,46 @@
 
 ## Current
 
-### Arcanea source consolidation, Codex pickup
+### Arcanea estate processing and state recovery, current Codex pickup
+
+```text
+Continue full active goal01a1020e-e898-7093-b301-b31684ccb819. Keep all Arcanea
+PRs/repos, skills/AGENTS/workflows, ChatGPT plugins, MCP, platform, Supabase,
+Vercel, main/production and cleanup in scope. Do not declare completion from one
+passing slice. Preserve the accepted public app/canon and every retained front.
+
+Read private arcanea-goal-20261003 inventory/summary/persistence-receipt and
+persistence-review-input.txt. Paginated snapshot14:29:24UTC:29repos/1,854refs/
+59PRs, excluding the subsequently created arcanea139. Archive status and ref
+age do not prove integration or authorize deletion. 1,214refs are arcanea-agent.
+
+Draft arcanea139 at b973b21b2fba0f61424c2204547b3db6a383839a implements isolated
+test stores, atomic memory/credential saves, corruption preservation, rollback,
+interruption and bounded Windows refusal/retry. Local14tests/13pass/1POSIXskip;
+native37129723834/237/239/899 pass compiled Node20/22/typecheck/build. Existing
+audit is non-blocking, not a clean security verdict. Provider37129723836 failed
+is_error:true/modelUsage{}, no verdict. Keep draft; exact11-file independent
+review packet diff91397a88/packet6e7af488 is prepared. Get a real exact-source
+verdict when provider capacity is available; do not retry a known quota failure
+before its supported reset. Then inspect acceptance and release gates, and
+reconcile the platform twin in a verified free lane with fresh checks.
+
+Production app READY main79f3fb25/dpl_EsnqcP39fiAv1fJLffn8nic7o2kv; Supabase
+ACTIVE_HEALTHY. Authenticated creation/save/reopen and plugin cloud availability
+remain unproved. Advisor's RLS-no-policy and leaked-password findings need their
+owner; no DDL/configuration changes made. App508/d0aa0689 has only CLI mode diff,
+no requested CI gate. Preserve hook-failure receipt and require actual skip/
+ready/rollup-denial tests before accepting a future CI patch.
+
+Saves: arcanea130/5970183926, app508/5970184055 and hub98. Previous source
+consolidation goal01a0f74f and app276 records remain below. Preserve app505/501,
+MCP8/Studio4, skills, manuscript, author/graph/runtime/media and human rights/
+Heart/price choices, plus408/427. No owned persistent processes. One lead;
+machinebounded, no fanout; storage143GiB/~15% at observation. Release only this
+thread's two verified writer receipts at handoff. Full goal remains active.
+```
+
+### Retained Arcanea source consolidation, Codex pickup
 
 ```text
 Continue active goal 01a0f74f-8bad-7db1-ab06-fd89b5faec84 and app #276.
