@@ -74,9 +74,31 @@ merge normally and verify deployed SHA, routes, links, publication boundaries an
 recovery. Update issue252 and this hub receipt/ledger/current prompt. The broad
 goal stays open. Preserve the other current prompts and unfinished work.
 
-### Estate design quality: apply accepted authority, preserve pilot gates and verify host use
+### Estate design quality: repair default discovery and prove applied host use
 
-New continuation: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
+Kernel PR31 merged `8729fc3e136686b2a967a82e6f02d79f25c512dd` from scoped-reviewed
+`f81346993ac9c9a5c575f6cb7981d9318e8c549d`. CI37142810316 passes 15 Python cases,
+61 Node tests/42 browser-process checks; main CI37143006516 also passes. Read
+`docs/native-codex-design-probe.md` and the appended session. The actual native
+0.160.0 app-server fixture passes after the required Impeccable 0.1.11 cache repair,
+without changing global hooks/trust/config. Its source hash binds the run to this
+revision. Native prompt-input rendering alone did not dispatch UserPromptSubmit;
+offline projection verification did not detect the missing engine. Retain both
+checks for their own scopes and require actual native hook events for execution.
+
+Advance the next consequential host gap: default discovery enables 829 rows,
+exhausts its budget and omits 417 entries. The 27-row selection is only a fixture
+thread override; it is not a global repair. Resolve the missing gateway/source
+dependencies in an owned configuration lane, with fresh machine/storage admission
+before any new worktree/install. Do not edit the other-owner primary config tree
+or borrow another harness's model/permissions. Preserve explicit disables,
+system/security skills and source provenance; scoped config changes require the
+owning review, rollback and native recovery proof. Verify fresh selected/read/
+applied/refined artifact evidence on Codex and every other actual harness. A
+deterministic local Write fixture cannot close real model, shell/MCP, design or
+bounded-loop acceptance. Keep the entire 20+ brand/production/e2e goal open.
+
+Prior authority slice: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
 and final scoped source PASS. Read the current GenCreator
 SOURCE_AUTHORITY.md and runtime pack. The owning product ADR-011 at `1ca14c1`
 documents accepted Territory B; a stale shared green palette has been corrected.
