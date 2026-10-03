@@ -2,7 +2,34 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (AI-factory report/recovery evidence recorded; runtime and product gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (native PR routing fix and exact-head CI recorded; independent review, runtime and product gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Native PR model binding and resource recovery (Codex)
+
+Source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` continues the full AI-factory
+goal. Private [Ops draft PR157](https://github.com/frankxai/agentic-ops/pull/157)
+at `55f4a9e1a744b62286a9836fa13bf9d2843f05b7` extends the existing review loop.
+Both native CLIs receive the dispatch model; unsafe/missing values refuse launch.
+Receipts distinguish requested model from unproven served model. Quota and machine
+admission are rechecked before every review, including the first. RAM/reservation
+and unrounded disk floors fail closed. An empty Codex run cannot reuse an old verdict.
+
+Ninety local tests pass, including the original 56 identity/sign-off tests. The
+34 portable routing cases pass on Windows and Linux in exact-head
+[CI run37132527877](https://github.com/frankxai/agentic-ops/actions/runs/37132527877).
+Enabled staged secret scanning passed. A real read-only PP/filesystem/GitHub/
+dispatch run held the pending PR when its independent native pool was unavailable;
+it invoked no model and created no review state directory. This is integration
+evidence for dry-run behavior, not a completed autonomous review or worker mission.
+
+A tools-denied native xAI review of this exact head timed out without output.
+Its session-owned client stopped; remote cancellation remains unconfirmed. The
+PR remains draft and independent approval is pending. No merge or activation.
+The inherited managed-security boundary and proposal dispatch dependency still
+need activation evidence. Original creator-plan source, other Queen changes and
+the existing pilot ceiling are preserved. [Issue149](https://github.com/frankxai/agentic-ops/issues/149)
+tracks the runtime slice; creator-plan issue30 remains open. See today's
+[session](sessions/2026-10-03.md) and current prompt for the next admitted action.
 
 ## 2026-10-03: AI-factory operating architecture and recovery evidence (Codex)
 
