@@ -2,7 +2,25 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Creator Studio cost source/cache hold, native PR routing, current FrankX and estate-design work recorded; integration/release gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Creator Studio integrated and native/CI/preview verified; cache preserved; current FrankX and estate work preserved; independent release gates open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+
+## 2026-10-03: Creator Studio integrated and verified; cache retained (Codex)
+
+The earlier storage hold recovered externally. After fresh admission and exact
+ownership/preflight checks, the published Studio and cost source was integrated
+in [Technology draft PR34](https://github.com/frankxai/starlight-technology/pull/34)
+at b8b079ff. Full Windows toolchain/lint/types, 100 Vitest/11 editorial tests,
+production build and 15 actual Chrome recovery checks pass. Exact-head CI37141130877
+passes and Vercel preview dpl_GfprgRhsMLwxfbPpzTxqqcQd8ZKx is READY; /studio returned
+HTTP200 with matching deployment ID and noindex. Production stays unchanged.
+
+No npm cache purge. Offline installation reused340 cached packages but missed
+caniuse-lite; frozen-lockfile retry downloaded25. Google native review exited with
+empty text/zero usage and supplies no verdict. Independent provider/design/buyer/
+privacy/licence/commercial gates remain open. All owned servers/workers stopped.
+See today's session, Technology issue30 and the current prompt. Full objective
+remains open; Ops PR157 stays draft and unactivated.
 
 
 ## 2026-10-03: Creator Studio cost source prepared; cache purge held (Codex)
@@ -101,27 +119,37 @@ pilot ceiling; quality, incomplete charges and dispatch remain unproven. Codex
 Cloud read-only metadata worked; existing ready results were preserved. No
 enabled Computer Use browser was available for native-provider review.
 
+
 ## 2026-10-03: FrankX editorial renewal (Codex)
 
 The full website/content goal remains open under
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source commit
-`26051cbdb390271d8e46817fd96ffb93c5e3d060` on
-`agent/codex/editorial-renewal-20261003` aggregates 278 slugs/769 source variants,
-prepares three evidence-led article rewrites, publication/affiliate boundaries,
-SEO standards, a six-audience renewal plan and shared typography drafts.
-Ten Node boundary tests and seven Python corpus tests pass; the enabled Gitleaks
-commit hook found no leaks. No source push, PR, merge or production deployment.
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source now ends at
+`6b410b6b7b4cb9c829a03139dd3384095976f975`, following `26051cbdb`, on
+`agent/codex/editorial-renewal-20261003`. The 278-slug/769-variant register binds
+five prepared revisions and four observed production corrections to exact text
+hashes; 269 rows remain unreviewed. No row has independent/release acceptance.
 
-The merge gate stops at missing TypeScript; lint also cannot load that dependency,
-and Next.js is missing. Strict language audit has 16 existing findings in nine
-files. Browser capture and independent review are unavailable. Two cover drafts
-miss the required minimum resolution and remain held with provenance. Machine
-admission prohibits new agents, and free storage fell below 15%. No installs,
-fanout or persistent processes were started. See the appended
-[session receipt](sessions/2026-10-03.md) and current pickup prompt. Preserve newer
-production work and existing research/hero issues; the first source slice cannot
-close the corpus or website renewal.
+Batch 2 corrects music effect-size/brain-state promises and unsupported daily
+research operation. The former simulated scanner now retrieves four primary
+feeds and preserves source/failure evidence. The manual October 3 run retained
+158 records, 89 in its two-week window; these are unreviewed metadata, with no
+invented demand, score or model-performance claim. The initial partial run remains.
+
+Thirty-eight distinct deterministic tests pass; both new articles compile as MDX.
+The enabled Gitleaks hook found no leaks. Source merge gate still stops at missing
+TypeScript, and Next.js is missing. No source push/PR or website deployment.
+Browser inventory is still empty and independent review remains pending. Two
+earlier cover drafts remain held with provenance. Build admission is bounded;
+new agents remain prohibited. Storage rose to approximately 16.17%, but the
+prescribed quick-sensor path is missing and its last stored plan is stale. No
+install, new worktree, media run, schedule or persistent process was started.
+
+See the appended [session receipt](sessions/2026-10-03.md) and current pickup prompt.
+Preserve newer production corrections and research/hero issues. Continue source
+reviews while recovering admitted release capability; the full website/corpus
+renewal remains active. The prior handover was merged through hub PR110 with
+green main CI; that was estate documentation, not a website release.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
