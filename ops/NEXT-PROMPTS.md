@@ -17,6 +17,16 @@
 
 ## Current
 
+### Starlight estate PR integration and reader repair, current Codex pickup
+
+```text
+Continue full goal01a10210-9679-7260-9789-a969ef438339. Preserve all Starlight PRs/repos/branches, skills/AGENTS/workflows, ChatGPT plugins, Arcanea MCP/platform, Supabase/Vercel, main/production, cleanup, GitHub README quality and community/organization preparation. Do not declare completion from this repair or PR metadata. Preserve the Arcanea139 handover below, original goals and every unfinished product.
+Read private estate-pr-integration-20261003-01a10210 receipt/census. MCP8 exactedc23ea has45 local tests and native37129672203 passing45 source tests, TypeScript compile and45 emitted-JS tests. Pinned canon plus HTTP version/id/params validation,512KiB/3s request limits, stream cancellation and retry are implemented; live reader remains0.5.1. No independent verdict exists: Claude quota, two rejected Grok tool sets, final deny-all monitored Grok timeout240s. Processes are terminal; do not restart them or retry quota before supported reset. Actual tool advertising differs from flag intent.
+When native reviewer capacity is available, obtain completed exact-source review, reconcile existing reader/Studio integration and full package/consumer checks, then use existing owner/release gates and verify deployed RPC/source identity. Preserve rights/Heart/release408/427 decisions. Config80 is ready but actual GitHub approval-blocked; runtime projection/effective loading need separate proof. Have site84 owner repair the two regressions in85, re-query its changing head and inspect actual test/CI coverage.
+Use fresh441-PR owner census (172Starlight/Arcanea-name matches across39repos) to select the next consequential owned PR. This is not full branch or organization readiness evidence. Follow draft ancestry, route explicit files, preserve live writers and current security/performance gates. Both saves are issue6/5970265786 and existing hub98. All other plugin/platform/Supabase/Vercel/production/commercial/README/community/org fronts remain open.
+```
+
+
 ### Arcanea estate processing and state recovery, current Codex pickup
 
 ```text
