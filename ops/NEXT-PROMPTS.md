@@ -17,6 +17,26 @@
 
 ## Current
 
+### Estate design quality: reconcile acceptance and prove one downstream gate
+
+Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
+[session](sessions/2026-10-03.md) and
+[Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
+Shared foundation PR28 is merged as `20bea898c78f0a73fa1479527c99c6c2675df15d`;
+main CI and independent code-only review passed. Reconcile current brand packs
+with the founder rejection in Git `7043905`, the missing foundation-reset paths
+and later accepted directions before propagating design instructions. Verify
+actual native/plugin capability coverage and source ownership. Then integrate
+the pinned rendered inspector into one accepted product's complete browser
+journey and required CI boundary; demonstrate a controlled failing interface is
+blocked. Preserve existing products, asset provenance and other owners. Inspect
+actual logo quality, responsive composition, icons, copy, keyboard, performance
+and save/resume/export recovery with independent design review. Expand to the
+observed 24-domain estate only after that pilot and fresh-host proof. Keep missing
+evidence pending; maintain all other prompts. Fresh machine/storage admission is
+required before heavy work; last RAM was below 4 GiB. No new fanout or broad
+installation is authorized by this prompt.
+
 [Queen verified execution continuation, Codex]
 ```text
 Continue agentic-ops issue134 and config issue86, preserving Frank's full production
