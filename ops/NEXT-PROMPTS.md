@@ -101,6 +101,29 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
+Native hook coverage is now measured separately in kernel draft PR34, frozen
+`c99adec2da97a0ec4170a2a5232cb86a340dceab`. Owned canonical kernel checkout branch
+`agent/codex/native-patch-proof-20261004` is clean. Raw Git native0.160 runs prove
+dynamic Write and actual patch denial/post/Stop; actual exec_command shell FAILS:
+both private synthetic writes succeed, no matching pre-tool denial/Impeccable post.
+No global config or trust mutation. Preserve native failures and sandbox-hidden
+Python attempts. Counterexamples at47c865b reproduced mixed-tool false passes;
+current21st regression and strict unselected-event checks repair them.
+CI37162399939 passes61Node/21Python/53browser-process checks at mergef6afe2a;
+three source blobs equal. Independent Poolside current-source PASS only; earlier
+REVISE and three truncated no-verdict records remain. PR34 draft/unmerged, named
+human/source promotion and installed coverage repair pending. Diagnostic success
+cannot approve real model application, code mode/app/MCP/other hosts, automatic
+defect refinement, design/creator usefulness or production.
+
+Prioritize a concrete native configuration repair through its owner. Current
+post-edit aliases cover patch, while shell matches Bash. Preserve current disabled
+Impeccable SessionStart, trust, system/security skills, provider states and Config
+other-owner95/d004224,80,84/Queen90. Never self-trust changed definitions. Prove
+actual denial/post-edit, reload, failure/interruption and rollback, then a real
+bounded UI defect/repair and native model-guidance consumer. Do not spend the next
+slice polishing the frozen community desk or counting installed skill files.
+
 Community draft PR15 is frozen at `3ea86262e8d0bccd32554c43e52005247786c421`,
 owned worktree `starlight/worktrees/gencreator-community-interface-20261003`,
 branch `agent/codex/community-visual-proof-20261003`. Keep accepted local identity,
@@ -119,8 +142,8 @@ creator/human/production acceptance is separate. Mobile 390 height 4,697 vs 9,87
 Retain d9cfc32/136-check initial proof, failed tablet run37158906344/60 partial
 PNGs and runner-only recovery; four UI blobs are equal. Stop polishing this revision.
 
-Native Impeccable 4.5 context/manual detector actually ran once. No automatic
-session hook; legacy PRODUCT and missing native matching brief are reported.
+Native Impeccable 4.5 context/manual detector actually ran once. Current app-session automatic execution is unverified;
+manual detector required was reported; legacy PRODUCT and missing native matching brief are reported.
 Grid advisory was repaired after scan; no exact-final clean-scan claim. Local
 brand/Premium Web OS/Emil guidance was applied and hashes recorded; gesture skipped.
 Prior native Codex 0.160.0 deterministic fixture/engine 0.1.11 proves scoped hook
@@ -153,16 +176,16 @@ Arcanea owning-source correction and conflicting backgrounds/rights remain.
 Eight identity images/166 filename census do not establish approved masters or
 all-brand acceptance. Keep local and parent identity authority distinct.
 
-Fresh PP/storage admission before heavy/growing work. Last00:35 interactiveALLOW
-7,730 MB free, 34% CPU, 12 runtimes,one parallel, pause-new-swarms; read-only fallback
-146.7 GiB/15.4%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
+Fresh PP/storage admission before heavy/growing work. Last01:34 interactiveALLOW
+6,716 MB free, 30% CPU, 12 runtimes,one parallel, pause-new-swarms; fresh disk
+145.95 GiB/15.34%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
 worktrees, cleanup or persistent workers under constraints. Owned requests/decoder
 terminal; no server/watchers. Canvas/SIS/Substrate disabled; Higgsfield banned.
 Current captures are non-generative with actual sidecars; generation-schema404
 unverified. New generated media requires both ledgers and actual provenance.
 
 Save finished slices to this hub session/ledger/prompt and existing issues12.
-Preserve newer FrankX batch6, Queen and every unfinished front. The original
+Preserve newer FrankX batch7, Queen and every unfinished front. The original
 estate goal stays active; retain exact-revision scope and all remaining gaps.
 
 [Queen verified execution continuation, Codex]
