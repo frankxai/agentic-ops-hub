@@ -4,6 +4,12 @@
 >
 **Last sweep:** 2026-10-01 (placement review notes on main, cloud continuation, after the Langfuse stop) · 2026-09-30 sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-03 - creator workflow definition
+
+- [Command Center draft PR 50](https://github.com/frankxai/starlight-command-center/pull/50), `d5c9cd2`, defines six complete creator/development workflows and fourteen requirements around the existing owners. Product packet validation, diff checks and secret scans pass; independent definition review and implementation remain pending. [Session](sessions/2026-10-03.md) retains source/production distinctions, standards, comparison and recovery/delivery exits.
+- Existing source slices 43/44/46 remain merged at observed main `eaa218c`; local installed/runtime proof remains pending. Newer AuthorOS EPUB PR 3 and Founder/GenCreator PR 49 are open drafts, not deployed creator capability. Preserve their owners and issue 48 rather than duplicating intake/export.
+- Fresh bounded admission: 5,091 MB free RAM, 38 task runtimes, about 14.1% free C disk; no new swarms/dependencies/worktrees/media or local heavy build. Memory ports 5200/7317/7318 listen on loopback; Command Center 4321 is closed. No processes were killed. First next action: issue 45 navigation/interruption recovery, then an owner-confirmed real edited edition with its manual comparison. Issue 26/runtime HOLD, issue 18/security and startup follow-ups stay open.
+
 ## 2026-10-02 - Command Center development workflow
 
 - Product brief [PR 46](https://github.com/frankxai/starlight-command-center/pull/46) merged as `eaa218c`, exact reviewed tree verified. Existing `/os` now retains editable source-derived release packets, strict browser saves, competing-writer/corrupt-record recovery and Markdown/JSON backups. All five checks, 311 tests, full responsive browser run and independent exact-head source review PASS. Six exact captures inspected; synthetic estate explicitly retained. [Session and remaining gaps](sessions/2026-10-02.md#product-release-brief-workbench-codex-continuation).
