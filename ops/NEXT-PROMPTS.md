@@ -58,71 +58,74 @@ production activation is granted by these receipts. Keep the full objective acti
 
 Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website/all-article/six-audience outcome, including musicians, producers,
-creators, founders, executives and AI architects; human writing, true research
-framing, public/private boundaries, current partners, sentence case, existing
-serif identity, useful visuals and verified production behavior.
+website/all-article outcome for musicians, producers, creators, founders,
+executives and AI architects: useful human writing, true research framing,
+public/private separation, current evidence, verified partners, existing serif
+identity, sentence case, original visuals/social and green production behavior.
 
-Read the [session](sessions/2026-10-04.md), source REVIEW-BATCH-06.md and renewal
-plan. Owned source worktree `starlight/worktrees/frankx-editorial-renewal-20261003`,
-branch `agent/codex/editorial-renewal-20261003`, current local `5166bb5ff214fc5b804200818187d5388fc07835` after
-`88dcb830` and all earlier preserved commits. Private authoring `frankxai/FrankX`
-differs from public production `frankxai/frankx.ai-vercel-website`; never copy the
-private tree over stronger production content or publish private operations.
+Read the [session](sessions/2026-10-04.md), source REVIEW-BATCH-07.md and renewal
+plan. Source worktree `starlight/worktrees/frankx-editorial-renewal-20261003`,
+branch `agent/codex/editorial-renewal-20261003`, local `f278639ba04ca1eebe67a6185ad532ee4c46055a` after article
+commit `f77a89c1`. Private `frankxai/FrankX` differs from public production
+`frankxai/frankx.ai-vercel-website`. Never bulk-copy the private tree or overwrite
+stronger production improvements. Batch7 bodies matched normalized production
+`044c8447`; original date/author/category/image/featured presence is retained.
 
-The 278-slug/769-variant register has 27 prepared source revisions, four observed
-production corrections and 247 unreviewed rows; 31 receipts, earlier 26 preserved.
-All 27 authoring hashes match. There are 27 held article-linked social sets.
-No article is release-accepted. Five batch 6 music MDX bodies compile; original
-metadata, seven internal source links and Decimal arithmetic verify. Nine corpus
-and ten publication/affiliate boundary tests pass. Scoped claims audit passes;
-15 existing language findings across eight unrelated files remain. Both secret
-hooks pass. Preserve 23 foreign newline changes and the music data/script owner.
+The 278-slug/769-variant register has 32 prepared revisions, four observed
+production corrections and 242 unreviewed rows; 36 receipts, earlier 31 preserved.
+All 32 authoring hashes match. There are 32 held social sets; no article is
+release-accepted. Five latest bodies compile with GFM; metadata, six internal
+source links and illustrative Decimal arithmetic pass. Nine corpus/scoped claim
+checks pass; 15 ordinary language findings in eight other files remain. Prior
+ten boundary tests passed; their code is unchanged. Both secret hooks pass.
+Preserve the 23 foreign unstaged newline edits, music ownership and all history.
 
-Prioritize release capability. Fresh build PP is HOLD (7,599 MB free, 8,192
-required, projected 3,503; twelve runtimes and pause-new-swarms). Last quick
-storage reading 147.1 GiB/15.5% is historical; recheck before material growth.
-Do not add agents, install/build while held, write through the borrowed
-dependency junction, or delete/kill another owner's work. Required source
-merge gate has not passed; source push is held. Codespaces lacked account scope
-and Vercel connector rejected its exposed mapping; neither proves available
-remote build. Supported browser inventory is still empty. Restore exact current
-desktop/mobile capture and visual review before promotion.
+Prioritize capability recovery. Build PP22:54UTC remains HOLD: 7,518 MB free,
+8,192 required, 3,422 projected; twelve runtimes and pause-new-swarms. Disk
+15.42% is a lightweight observation, not a full material-growth admission. Recheck
+PP/storage before installs, media, worktree fanout or builds. Do not touch the
+borrowed dependency tree, kill processes or archive unfinished work to make room.
+Next/TypeScript targets remain absent, required merge gate unpassed, source push
+held. Codespaces account-scope and Vercel mapping failures remain unresolved.
+Supported browser inventory is empty; exact desktop/mobile captures and current
+visual review must precede promotion. No owned worker/server remains.
 
-Batch 6 replaces music release promises and success rates with original draft
-briefs, recoverable repairs and actual public catalog/code observations. July 2
-production has 817 visible IDs and 240 indexed entries, no duplicate IDs within
-either, overlapping selection groups and comma-derived style fragments. Those
-facts establish no lifetime generation count, success rate or listening result.
-Current Suno docs list v6 family/stems and approved-download conditions; old
-free-song help needs case-specific reconciliation. Udio help says downloads
-disabled with no live-account test; Mubert Creator license pages conflict.
-Currency, interval and use stay explicit. Google Flow Music redirects/help are
-verified without commercial clearance. Legacy Suno commission/cookie numbers
-are unverified; no referral, account or partner terms fabricated. Read the
-audio partner strategy and preserve the fresh-evidence affiliate resolver.
+Batch7 gives available-memory budgets, four documented weight candidates,
+Ollama cloud-disable/process scope, current headless/MCP/experimental MLX
+capabilities and a synthetic confidential-brief architecture. Documentation,
+proposal and executed results stay distinct. store:false is not approved ZDR.
+Qwen/NVIDIA card hashes pin README files, not all weights/conversions. No model
+benchmark, network audit, license clearance or deployed mesh was performed.
 
-Poolside creation review PASS/no findings and comparison INCONCLUSIVE/five
-findings are exact to `88dcb830`. Preserve both labels, original quotes, supplied
-source limits and all decisions. Three clarity refinements postdate critique;
-current-source independence, listening, rights, visuals and release remain open.
-Do not turn reviewer prose into a trial or acceptance. Prior arena, model/coding
-production improvements, source failures/recovery and all history remain.
+At `f77a89c1`, isolated Poolside architecture and selection-recovery critiques
+completed PASS/no findings. Preserve the earlier selection timeout, full quotes,
+same-packet recovery and all limitations. Reviewer praise contains a unit error
+and an unsupported saving characterization; actual article/Decimal arithmetic
+remain correct. Five article bytes are unchanged. Labels grant no visual,
+privacy/legal, buyer, SEO or release acceptance. Earlier batch5/6 review findings,
+source failures, catalog/rights and relationship evidence remain preserved.
 
-Continue consequential source work through remaining register rows while held.
-Obtain actual current Search Console demand and licensed model-usage data before
-making traffic/rank/usage claims. No fabricated trial, first-person result,
-copyright-safe winner or scarcity. Draft five distinct music visual compositions;
-current covers remain unaccepted, including a reused comparison cover. New media
-needs actual sidecars and both ledgers; earlier 1672x941 drafts fail the 2048 gate.
-Social posting remains human-gated after matching article release.
+Continue valuable work across the remaining register from reconciled production
+sources. Each article needs distinct reader intent, actual contribution, serious
+alternative, truthful dates/sources and meaningful recovery. Obtain current
+Search Console demand and licensed usage data before ranking/traffic claims.
+No invented benchmark, lived experience, healing/legal-safe result or scarcity.
+Official citations remain direct; current account/issued-link/terms/navigation
+evidence is needed before activating affiliates. No enrollment or outreach.
 
-After capability recovery, run full source and production gates, exact-revision
-independent/design review, normal PR merge and deployed SHA/routes/recovery
-checks. Save the next hub handover and issue252 comment. Prior hub PR118 merged
-`663338ee567c4d7bff89013cf463cfe527db0cbf` with passing PR/main CI, documentation
-only. Preserve the newer estate-design prompt and all other unfinished work.
-The full goal stays active.
+Five local-model visual briefs join earlier held briefs. Use established serif
+tokens and sentence-case labels, exact units and equivalent text; replace the
+reused runner-comparison hero after real review. New media needs prompt sidecars,
+both ledgers, taste memory synchronization and resolution/design acceptance.
+Earlier 1672x941 covers fail the 2048 gate. Social publication stays human-gated
+after matching article release. Never use Higgsfield.
+
+After admission/capture recovery, run full source and production gates, exact
+independent/design review, normal PR merge and deployed SHA/routes/filtering/
+affiliate/recovery checks. Save the next hub handover and issue252 comment.
+Prior hub120 merged4a789dad with passing exact PR/main CI and three blobs equal;
+that proves documentation only. Preserve the newer estate-design/community
+fronts and all other unfinished objectives. The complete goal remains active.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 

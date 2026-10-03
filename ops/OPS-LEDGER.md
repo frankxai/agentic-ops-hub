@@ -2,7 +2,8 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (Creator runtime routes/contingency and32 browser checks verified, hub save recovered; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch6 release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (Creator runtime routes/contingency and32 browser checks verified, hub save recovered; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 7 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
 
 ## 2026-10-04: Review desk, stale sharing and applied design evidence (Codex)
 
@@ -316,55 +317,54 @@ enabled Computer Use browser was available for native-provider review.
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-The complete website/all-article/six-audience goal remains active under
+The website/all-article/six-audience goal remains active under
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at `5166bb5ff214fc5b804200818187d5388fc07835`,
-after batch 6 `88dcb830` and all earlier preserved commits. The 278-slug/769-variant
-register now has 27 prepared articles, four observed production corrections and
-247 unreviewed rows. All 27 authoring hashes match; earlier 26 receipts remain.
-No article has release acceptance. Twenty-seven social sets remain held.
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at `f278639ba04ca1eebe67a6185ad532ee4c46055a` after batch
+7 article commit `f77a89c1` and all earlier preserved work. The 278-slug/769-variant
+register has 32 prepared articles, four observed production corrections and 242
+unreviewed rows. All 32 authoring hashes match; 36 receipts preserve earlier 31.
+Thirty-two social sets remain held. No article has release acceptance.
 
-Five actual music articles cover prompting, production, catalog lessons,
-Suno/Udio and tool costs by reader job. Original production metadata, images and
-URLs remain. Pinned public production `044c8447` is in the distinct repository
-`frankxai/frankx.ai-vercel-website`; private authoring is `frankxai/FrankX`.
-July 2 catalog files have 817 visible track IDs and 240 indexed entries, without
-duplicate IDs within either. Actual selection/tagging code is source-checked;
-these observations establish no lifetime total, prompt success or audio quality.
-No music-owner file or provider audio was changed/retrieved. Current documented
-v6 editing/stems/export conditions and unresolved licensing differences replace
-unverified release promises. Legacy Suno 25% Impact/90-day strings are corrected
-to unverified; official links remain. No partner enrollment or reward is invented.
+Five actual local-model articles cover memory-first hardware selection,
+open-weight licenses/artifacts, Ollama privacy, runner comparison and hybrid
+approval/recovery. They retain production metadata, images and URLs while removing
+unrecorded trials, fixed speed/quality claims and blanket no-egress/zero-retention
+promises. Worked synthetic briefs and exact GiB/GB calculations replace rankings.
+Actual primary Qwen/NVIDIA README bytes are revision/hash-bound; model specs and
+vendor evaluations remain attributed. No weight download, inference, network
+audit, commercial clearance or deployed sovereign mesh is claimed.
 
-Isolated two- and three-article Poolside critiques completed at `88dcb830` with
-PASS/no findings and INCONCLUSIVE/five findings. Original verdicts and all lead
-responses are preserved. Three minor clarity refinements postdate the critiques;
-one quotation was not verbatim and several concerns were already addressed.
-Supplied source summaries and no browse/listen/render limit confidence. No
-current-source, rights, visual or publication acceptance follows either label.
+Two isolated Poolside critiques completed PASS/no findings at `f77a89c1`.
+The initial selection timeout and same-packet recovery are preserved. The reviewer
+misstated arithmetic units in praise; the article and Decimal checks correctly
+use four bits per parameter. All reviewed article bytes remain unchanged.
+Supplied lead-checked facts, absent execution/rendering and reviewer summary
+mistakes limit the critique. No privacy/license/SEO or publication approval follows.
 
-Five refined MDX bodies compile; metadata, seven internal source links and
-hypothetical Decimal calculations verify. Nine corpus plus ten boundary tests
-pass; scoped claim audit passes. The language audit still finds 15 existing hits
-in eight unrelated files. Both source secret hooks pass, scanning 133.05 KB and
-39.18 KB. All 23 unrelated newline changes remain unstaged. Source is unpushed.
+Five actual GFM MDX compiles, original metadata, six internal source links and
+Decimal arithmetic pass; nine corpus tests and scoped claims audit pass. Existing
+ten boundary tests passed in the prior slice, with no boundary code change here.
+Ordinary language audit still finds 15 hits in eight other files. Enabled secret
+hooks pass 132.10 KB/32.60 KB. All 23 foreign newline changes remain unstaged.
+No source push or website deployment. Direct official links remain; no new
+partner entitlement, enrollment or hardware referral was fabricated.
 
-Build PP at October 3 21:58 UTC is HOLD: 7,599 MB free, 8,192 required,
-projected 3,503 MB, twelve runtimes, pause-new-swarms. Last storage sensor remains
-historical 147.1 GiB/15.5%; recheck before growth. Borrowed Next.js/TypeScript
-targets are absent. Fresh supported browser inventory has no apps or browsers;
-the access question remains pending. Prior remote build/preview lookup failures
-do not prove a release environment. No build, install, new worktree, agent,
-image, social post, cleanup, schedule or persistent worker was started.
+Latest build PP at October3 22:54UTC is HOLD: 7,518 MB free, 8,192 required,
+3,422 projected, twelve runtimes and pause-new-swarms. Lightweight disk reading
+15.42% is observational; recheck full storage admission before material growth.
+Next.js/TypeScript package targets were freshly checked and remain absent.
+Supported browser inventory remains apps=[]/browsers=[], with no responsive
+capture. No new agents, installs, worktrees, media, posts, schedules, cleanup or
+persistent workers. Both earlier low-resolution covers and all current historical
+heroes remain unaccepted; five new distinct visual briefs await execution/review.
 
-Recover admitted isolated build dependencies and supported desktop/mobile
-capture; review exact current source and visuals, port only accepted public
-files, pass production gates and verify deployed SHA/recovery. Continue the
-remaining register from stronger production versions while preserving research
-holds, affiliate/home/product work and every other owner. Prior hub PR118 merged
-`663338ee` with passing PR/main CI; this records documentation, not website
-deployment. See [session](sessions/2026-10-04.md), source REVIEW-BATCH-06.md,
-MUSIC-PARTNERS-2026-10-03.md and the current pickup prompt.
+Prior hub PR120 merged `4a789dad` with exact passing PR/main CI and three blobs
+equal. That is documentation evidence. Recover admitted isolated build and
+supported exact browser capture, review current visuals/relationships, then port
+only accepted public files, pass gates, merge normally and verify deployed SHA,
+routes and recovery. Continue remaining useful source work while held. Preserve
+stronger production versions, research holds and every other owner's work.
+See [session](sessions/2026-10-04.md), source REVIEW-BATCH-07.md and current prompt.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
