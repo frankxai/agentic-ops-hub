@@ -12,7 +12,7 @@ Jules was authenticated with 0 awaiting feedback and 0 in flight under the cap o
 
 Draft checks, not merged: [config 92](https://github.com/frankxai/starlight-agent-config/pull/92) `925fadd`, [FrankX 862](https://github.com/frankxai/frankx.ai-vercel-website/pull/862) `79760c750`, [GenCreator 142](https://github.com/frankxai/gencreator.ai/pull/142) `1cf5d19`, [Arcanea 506](https://github.com/frankxai/arcanea-ai-app/pull/506) `4637d78fff`, [Starlight 84](https://github.com/frankxai/starlightintelligence.ai/pull/84) `1514e4b`. The Grok session hook and those committed checks reject the emoji fixture and accept the sentence-case fixture on two runs. Design-capability verify exited 0. Claude, Codex, and Jules do not load this check yet.
 
-Fifteen estate-graph brands were read from disk. Keep: Anime Legends, Arcanea, Income, Starlight. Iterate: FrankX, GenCreator. The other nine are missing a design.md or a logo. Figma was not opened. No public page, Territory B copy, Arcanea canon, or FrankX first viewport changed. Waitlist stays the door. Receipt: `ops/sessions/2026-10-03.md`. Next reviewer is a different identity. Do not self-merge.
+Fifteen estate-graph brands were read from disk. Keep: Anime Legends, Arcanea, Income, Starlight. Iterate: FrankX, GenCreator. The other nine are missing a design.md or a logo. Figma was not opened. No public page, Territory B copy, Arcanea canon, or FrankX first viewport changed. Waitlist stays the door. Receipt: `ops/sessions/2026-10-03.md`. Tracking issues: config 93, FrankX 863, GenCreator 143, Arcanea 507, Starlight 85. Design Intelligence 12 stays the program tracker. Next reviewer is a different identity. Do not self-merge.
 
 ## 2026-10-03: Estate design quality foundations (Codex)
 
