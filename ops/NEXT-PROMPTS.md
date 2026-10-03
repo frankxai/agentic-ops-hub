@@ -45,7 +45,9 @@ claim. Recheck PP/storage before heavy work and preserve foreign processes/locks
 Obtain independent exact-commit provider/security and rendered design/buyer review,
 then privacy/licence/commercial acceptance before release. Native Google catalog
 was reachable, but the corrected print request returned empty response/zero usage
-after128.516s. Client stopped; remote cancellation remains unconfirmed. Previous
+after128.516s. Stderr reported ineffective plan mode with slash commands disabled
+and a print timeout while the turn remained in progress. Requested read-only mode
+is not proved enforced; client stopped, remote cancellation unconfirmed. Previous
 Claude quota and native xAI/Google failures remain historical evidence. Diagnose
 provider availability or use an explicitly admitted budgeted route; avoid blind
 retries and paid fallback. Lead score28/30 and passing tests confer no acceptance.
