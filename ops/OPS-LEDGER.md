@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Arcanea release143 full metadata CI passes; recovery review pending; Config80/reader/native and other records preserved) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Native named-plugin consumer passes with temporary task scope; Arcanea143 metadata/Config80/reader records preserved; release review/runtime still pending) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
 ## Arcanea recovery review and release metadata verification, 3 October 2026 (Codex)
@@ -44,6 +44,53 @@ and [recovery130](https://github.com/frankxai/arcanea/issues/130#issuecomment-59
 retain exact findings. MCP8/ba31720/48 source+emitted tests stays with its other owner.
 App408/427, Studio/package/consumer, creator/customer/commercial and all other fronts
 remain open. Owned reviewers are terminal; only this session's leases release at handoff.
+
+## Native installed-plugin consumer and task scope, 3 October 2026 (Codex)
+
+Full estate goal `01a10210-9679-7260-9789-a969ef438339` remains active. This
+continuation preserves the Arcanea143 metadata/recovery review records and every
+other session/front at hub6f58958, including Config80/fed3c56 and reader8/ba31720.
+
+- Native Codex0.160.0 read-only `exec --ephemeral` consumed installed
+  `starlight-control-plane:verify-starlight-release` by its explicit name, with
+  no file path supplied in the user prompt. One correct guide read exits0;
+  result is human-gated/blocked against supplied Config80/fed3c56 evidence.
+  It retains pending six-file independent review, GitHub approval and supported
+  changed-guide projection/fresh-runtime proof. Installed plugin sourceb12e904,
+  native ID `starlight-control-plane@starlight-estate`. This same-provider result
+  is useful consumption evidence; it does not supply independent source approval.
+- Default consumer completed but native reported all descriptions removed and
+  604 additional skills omitted. Per-skill task profile rendered five described
+  skills, yet execution removed descriptions and omitted89. The prompt renderer
+  alone did not establish effective execution. Temporary skill-and-plugin profile
+  completes named lookup with no skills-budget warning/error or unexpected tool.
+  Five skills are measured in renderer only; complete execution count unmeasured.
+- Final profile retains default8,000 catalog tokens and existing configured hook
+  providers, including activation and Windows security. Only the task disables
+  apps/direct MCP startup/web/multi-agent. Base config and installed guide bytes
+  unchanged. Both owned profile files removed after SHA verification; private
+  immutable profile/receipt copies retained. Owned PIDs all terminal. Argument,
+  unsupported app-server profile and Windows separator monitor failures retained;
+  each correction addresses its observed failure, without timeout-only retry.
+  Accumulated input/output usage is recorded; cash cost and cost savings unknown.
+- Task controls follow official [profile/skill configuration](https://learn.chatgpt.com/docs/config-file/config-sample)
+  and [effective plugin states](https://learn.chatgpt.com/docs/config-file/config-reference).
+  Explicit native named lookup is verified for this guide. Implicit routing,
+  complete catalog coverage, desktop pickup and ChatGPT cloud publication remain
+  open. No installer, default-profile rollout, Config80 merge or deployment.
+- Hook84/3f2ba5d remains open: all four proposal files are absent on current
+  Config main d3a824134d0119f4bfa2e72ad791e6279f026a85. Preserve its source/branch;
+  it cannot be closed as already integrated. Fresh disk16.17% is above15% floor;
+  this session performed no cleanup and claims no reclaim. No new worktree/build.
+
+Both saves: [existing Config issue46](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-5971567071) and this Ops Hub draft98
+session/ledger/current prompt. Next graduate the demonstrated task-scoping controls
+through the existing canonical harness/config owner with actual effective-runtime
+evidence. Preserve Config80's source review/projection/approval requirements and
+all Arcanea/site/Supabase/Vercel/production/commercial/community/org acceptance.
+Private evidence: existing review root `estate-pr-integration-20261003-01a10210`,
+`native-consumer-progress-receipt.json`; no universal enforcement claim.
+
 
 ## Config80 review corrections in a preserved checkout, 3 October 2026 (Codex)
 
