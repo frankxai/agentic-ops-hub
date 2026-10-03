@@ -52,7 +52,24 @@ every article register row and remaining audience/SEO/visual/data work. Update
 issue252 and this hub's receipt/ledger/prompt. Do not claim a green release from
 source tests or mark the broad goal complete. Maintain the other current prompts.
 
-### Estate design quality: restore the trusted pilot gate and verify host use
+### Estate design quality: apply accepted authority, preserve pilot gates and verify host use
+
+New continuation: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
+and final scoped source PASS. Read the current GenCreator
+SOURCE_AUTHORITY.md and runtime pack. The owning product ADR-011 at `1ca14c1`
+documents accepted Territory B; a stale shared green palette has been corrected.
+Wordmark selection, Territory B application quartet, gate7/gate8, legal and rollout
+remain pending. Preserve the community pilot's current SHA and accepted product;
+new pack adoption needs its owner's pin change and application QA. Figma file
+`rQRcBL1Kg5TMzEYa5TO9On` reads successfully and contains one empty page. Await
+Frank's explicit X/Y/Z wordmark choice before native reconstruction. Do not infer
+today's write capability from reads or the prior quota report. Reconcile other
+brands against their actual approval sources. The old 166 filename matches
+include extensions, third-party logos and illustrations; private classification
+and seven actual image/hash observations preserve that distinction. No new
+identity, master, font deployment, visual release or full-estate acceptance was
+approved by the source review. Continue the still-current pilot path below.
+
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
 [session](sessions/2026-10-03.md) and

@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (FrankX source saved locally/release held; 49 community tests/36 browser checks and source review pass; locked guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (GenCreator authority reconciled; FrankX source saved locally/release held; 49 community tests/36 browser checks and source review pass; locked guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-03: FrankX editorial renewal (Codex)
 
@@ -25,6 +25,26 @@ fanout or persistent processes were started. See the appended
 [session receipt](sessions/2026-10-03.md) and current pickup prompt. Preserve newer
 production work and existing research/hero issues; the first source slice cannot
 close the corpus or website renewal.
+
+## 2026-10-03: GenCreator identity authority and asset review (Codex)
+
+[Kernel PR30](https://github.com/frankxai/starlight-design-intelligence/pull/30)
+merged `2277678` from reviewed `7a44ebb`. CI37135167081 passes 61 tests, 42
+browser/process checks, audit and kernel/index validation; main CI37135502197 passes.
+Final scoped Poolside source PASS follows repaired provenance/scope/role findings;
+earlier REVISE and Cohere timeout receipts remain intact. This implements the
+owning product's documented Territory B approval, replacing the shared green
+palette with paper/ink/red and Instrument roles. Exact decision/font/license
+blobs and six byte/hash checks support the correction; wordmark/application/
+legal/rollout approvals are still pending. Downstream pins/pages/assets unchanged.
+
+The owning GenCreator Figma file is now readable and empty. Human choice from its
+existing anonymous shortlist precedes native reconstruction. Seven actual images
+were inspected and hashed. The old 166 filename matches included 44 browser
+extension files, 16 third-party logos and 2 illustrative logo-generator images;
+those are excluded from identity accounting. No master status or approval follows
+from a raster, 3D lockup, outline license, model preference or filename. Full
+estate design quality remains open; current community approvals below still apply.
 
 ## 2026-10-03: Community interface pilot and private guard repair (Codex)
 
