@@ -14,7 +14,7 @@ through7cac69e, accepted app/canon, source provenance and human release checks.
   protected squash at b148455bc448fbe2349ff6bfcd80e793203d37eb, parentf9c6c2d.
   Reviewed120198d45e141270977742550b1b87ca0b1fbd1a, six-file diffSHA256
   2bd4b27e9d875b73db6a839063f490872d1a1f8c4566c9601be769447625e885.
-  All six main blobs equal the reviewed source. Source branch retained clean/pushed.
+  All six main blobs equal the reviewed source. Source branch retained locally at120198d; repository auto-delete removes its remote after merge.
 - Shared Changesets command generates and frozen-checks lock before release commit.
   CI uses full history, two durable isolated real-pnpm refusal/recovery tests,
   independent frozen verification, exact lock artifacts, then generated-graph frozen
