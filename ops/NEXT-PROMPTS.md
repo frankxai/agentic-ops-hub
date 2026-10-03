@@ -23,6 +23,11 @@ Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` using this day's
 [session](sessions/2026-10-03.md), private
 [agentic-ops issue149](https://github.com/frankxai/agentic-ops/issues/149) and
 [Starlight Technology issue30](https://github.com/frankxai/starlight-technology/issues/30).
+At the latest close disk was 14.99797% free: below the 15% unattended/worktree floor.
+The real revised adapter returned `hold` on fresh PP/filesystem evidence. Keep new
+worktrees, installs and unattended/model work held until fresh admission recovers.
+Continue bounded text/read-only work; no cleanup or process killing is authorized.
+
 The existing native PR review loop now has draft
 [Ops PR157](https://github.com/frankxai/agentic-ops/pull/157), exact head
 `55f4a9e1a744b62286a9836fa13bf9d2843f05b7`: explicit model arguments, requested/served

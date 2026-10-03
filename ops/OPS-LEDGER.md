@@ -6,6 +6,13 @@
 
 ## 2026-10-03: Native PR model binding and resource recovery (Codex)
 
+At close the system volume crossed below the 15% unattended floor. A fresh native
+probe measured 14.99797% and the changed review adapter returned `hold` using real
+PP and filesystem evidence. New worktrees, installs and unattended/model work are
+held; bounded text and read-only recording continue. No cleanup or foreign process
+termination. A one-line crossing receipt was saved in the existing ignored Queen
+reports directory and the event was reported to Frank.
+
 Source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` continues the full AI-factory
 goal. Private [Ops draft PR157](https://github.com/frankxai/agentic-ops/pull/157)
 at `55f4a9e1a744b62286a9836fa13bf9d2843f05b7` extends the existing review loop.
