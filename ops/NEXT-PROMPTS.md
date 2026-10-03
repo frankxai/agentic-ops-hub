@@ -74,92 +74,81 @@ merge normally and verify deployed SHA, routes, links, publication boundaries an
 recovery. Update issue252 and this hub receipt/ledger/current prompt. The broad
 goal stays open. Preserve the other current prompts and unfinished work.
 
-### Estate design quality: repair default discovery and prove applied host use
+### Estate design quality: prove applied host use and reconcile owning brands
 
-Kernel PR31 merged `8729fc3e136686b2a967a82e6f02d79f25c512dd` from scoped-reviewed
-`f81346993ac9c9a5c575f6cb7981d9318e8c549d`. CI37142810316 passes 15 Python cases,
-61 Node tests/42 browser-process checks; main CI37143006516 also passes. Read
-`docs/native-codex-design-probe.md` and the appended session. The actual native
-0.160.0 app-server fixture passes after the required Impeccable 0.1.11 cache repair,
-without changing global hooks/trust/config. Its source hash binds the run to this
-revision. Native prompt-input rendering alone did not dispatch UserPromptSubmit;
-offline projection verification did not detect the missing engine. Retain both
-checks for their own scopes and require actual native hook events for execution.
-
-Advance the next consequential host gap: default discovery enables 829 rows,
-exhausts its budget and omits 417 entries. The 27-row selection is only a fixture
-thread override; it is not a global repair. Resolve the missing gateway/source
-dependencies in an owned configuration lane, with fresh machine/storage admission
-before any new worktree/install. Do not edit the other-owner primary config tree
-or borrow another harness's model/permissions. Preserve explicit disables,
-system/security skills and source provenance; scoped config changes require the
-owning review, rollback and native recovery proof. Verify fresh selected/read/
-applied/refined artifact evidence on Codex and every other actual harness. A
-deterministic local Write fixture cannot close real model, shell/MCP, design or
-bounded-loop acceptance. Keep the entire 20+ brand/production/e2e goal open.
-
-Prior authority slice: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
-and final scoped source PASS. Read the current GenCreator
-SOURCE_AUTHORITY.md and runtime pack. The owning product ADR-011 at `1ca14c1`
-documents accepted Territory B; a stale shared green palette has been corrected.
-Wordmark selection, Territory B application quartet, gate7/gate8, legal and rollout
-remain pending. Preserve the community pilot's current SHA and accepted product;
-new pack adoption needs its owner's pin change and application QA. Figma file
-`rQRcBL1Kg5TMzEYa5TO9On` reads successfully and contains one empty page. Await
-Frank's explicit X/Y/Z wordmark choice before native reconstruction. Do not infer
-today's write capability from reads or the prior quota report. Reconcile other
-brands against their actual approval sources. The old 166 filename matches
-include extensions, third-party logos and illustrations; private classification
-and seven actual image/hash observations preserve that distinction. No new
-identity, master, font deployment, visual release or full-estate acceptance was
-approved by the source review. Continue the still-current pilot path below.
-
-
-Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
-[session](sessions/2026-10-03.md) and
+Continue full source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
-Kernel PR29 is merged as `f90a3a31f4dca5feafd9f9f427848ec42330fe3f`, with passing
-main CI, 61 existing/42 browser-process checks and scoped source review. Community
-PR13 at `67f6dbbb20052aef74d8244a0d88ce8bf4f46f77` is ready: product CI37132129964,
-browser CI37132129969, fetch proof37132129960 and adoption37132130495 pass. There
-are 49 tests/build, 36 real journey checks and 16 complete inspected states. The
-artifact binds merge `7b65540fa2104c28ebe4545b723e7f899aaf380f`, whose verified
-parents are base `f03c5166c509a7bded584e3ee4a938f0a0d3378a` and this exact PR head.
-Final scoped Poolside source review is PASS; preserve earlier REVISE/inconclusive
-receipts and scope limits. The pilot locks all workflows and browser/pin/test
-inputs. Separate tests deny a candidate registry removal and arbitrary new
-workflow names despite a complete preservation brief. This locked registry
-change requires Frank's current-head approval too.
+All 20+ brands, relevant installed/applied skills, licensed foundations, Figma,
+assets, native harnesses, bounded refinement, release enforcement, useful creator
+outcomes and production/performance/recovery requirements remain open.
 
-PR13 contains frozen repair PR14 `fac3b053f0682736331fb3cef7f85096d2983169` as an
-ancestor. Its official command-scoped GitHub credential helper/event-head check,
-contents-read fetch proof and final scoped Cohere review pass. The trusted main
-guard still fails an unauthenticated private fetch. With Frank's explicit repair
-approval, merge PR14 using a merge commit to retain ancestry, then rerun PR13's
-base-owned Surface Guard against the unchanged current head. The one-time repair
-merge while the broken base guard is red must be authorized. Obtain the pilot's
-current-head approval and all passing trusted checks before its merge. A changed
-source head invalidates approval and needs fresh checks/review. Do not forge an
-approval from the authenticated CLI identity or infer it from elapsed time.
+Kernel PR32 merged `15f109ebf04fa5d723fc69fe98f34410d09d314e` from reviewed
+`31422521e49914b738f00de7a596324039417353`; PR/main CI37146803709/37147449465 pass.
+Read Arcanea DESIGN.md and SOURCE_AUTHORITY.md. Product main `79f3fb25` and Registry
+`fdd0233` establish source ownership. Shared font/accent references are corrected;
+aquamarine is reference-only. Resolve three backgrounds, package/schema claims,
+font/icon rights and actual application before product adoption. Preserve the
+product-selected portrait raster and two differently constructed SVGs. Eight
+actual images have been viewed; two Arcanea SVGs were source-inspected only.
+The old 166 classified filenames remain a scoped census, not approved masters.
+No new identity/visual/production approval was granted. Final independent verdict
+is shared-source PASS with product-release PENDING; preserve every earlier receipt.
 
-Main has no protection/rulesets. Enable the prepared five required contexts only
-with explicit permission after both approved changes are integrated: Verify,
-Surface Guard, Review Gate, design-contract / design-contract, Interface
-foundations and proof packet. Demonstrate an actual unapproved gate/registry/new
-workflow change is denied by trusted base, in addition to the unit evidence.
-No protection has been changed. Community issue12 tracks adoption; issue2 keeps
-launch gates. Source approval does not grant visual, host or production acceptance.
+The consequential host gap remains default discovery: 829 enabled rows, 417
+budget omissions. Another owner has Config PR95 at
+`d004224a3e11f14f9f30ca1f5c5edae3ab6d0261`, draft/open with green checks, source
+review and approving GitHub review pending. Its temporary exact-guide profile and
+native release-guide consumer are a proposal; no global default or installation
+was changed. Do not write its active lane, reuse its private evidence as approval,
+run its installer, or duplicate the adapter. Preserve Config80, hook84 and Queen90.
+After owning review/release and fresh machine/storage admission, prove a real
+useful design consumer selected/read/applied/refined the rules with bounded output,
+independent design judgment, time/cost/repair evidence and interruption recovery.
+Compare a serious alternative on the same task and require actual valuable output.
 
-Then verify a fresh native host selected, read, applied and verified these rules,
-including a meaningful denial and useful allowed artifact. The 13-skill/56-projection
-filesystem check passes but does not prove runtime use. Reconcile the founder
-reset at Git `7043905` with later accepted territories before brand propagation.
-Inspect logo/assets and the actual preview, typography, icons, responsive behavior,
-performance and recovery with independent design review. Preserve other owners,
-all prompts and the full 24-domain/full-harness objective. Fresh browser preflight
-reports BOUNDED with 12,410 MB RAM free and 10/8 task runtimes. Computer-use reports
-no available browsers; preview metadata/HTTP response are not visual inspection.
-Refresh admission before heavy work. No new fanout is authorized.
+Prior kernel PR31 merged `8729fc3` from `f813469`, with passing PR/main CI and a
+source-bound native Codex0.160.0 fixture after the official Impeccable0.1.11 repair.
+Read docs/native-codex-design-probe.md. Both actual app-server turns completed;
+allow handler1/deny0, required post/Stop hooks, routing and cleanup passed without
+shared config drift. The 27-row thread override is a fixture selection, not a
+global catalog repair. Prompt-input rendering and filesystem projections alone
+missed required runtime execution. Neither this deterministic dynamic Write nor
+the proposed release consumer certifies design artifacts, shell/MCP paths, every
+host or loops. Preserve explicit disables, system/security skills and provenance.
+
+Prior kernel PR30 merged `2277678` from `7a44ebb`, reconciling GenCreator Territory B
+against owning ADR-011 main `1ca14c1`. Current paper/ink/red/Instrument roles follow
+documented approval; wordmark choice, application quartet, gates7/8, legal and
+rollout remain pending. Owning Figma file `rQRcBL1Kg5TMzEYa5TO9On` was read empty.
+Await Frank's explicit X/Y/Z choice before native reconstruction. New downstream
+pack adoption requires its owner's pin update and actual application QA. Continue
+other brands against owning approvals, font/icon artifacts and real masters.
+
+Community PR13 remains open at `67f6dbbb20052aef74d8244a0d88ce8bf4f46f77`, with its
+49 tests/build, 36 browser journeys/four contexts and 16 complete states; scoped
+source/CI evidence does not approve visual or production use. It contains frozen
+repair PR14 `fac3b053f0682736331fb3cef7f85096d2983169` as an ancestor. Both human
+questions remain pending. The trusted main guard still fails a private unauthenticated
+fetch. With explicit one-time repair approval, merge PR14 using a merge commit to
+retain ancestry; rerun PR13's base-owned guard on unchanged head. Obtain the pilot's
+current-head locked-registry approval and passing trusted checks before merge.
+Do not forge GitHub approval, infer it from silence or grant changed-head approval.
+
+Main's proposed five required contexts remain unapplied: Verify, Surface Guard,
+Review Gate, design-contract / design-contract, Interface foundations and proof
+packet. Permission changes require their existing explicit human decision after
+integration. Demonstrate a real unapproved gate/registry/workflow change denied by
+trusted base. Then pin and independently inspect the actual deployment. Preview
+metadata is not browser/visual acceptance. Earlier computer-use inventory was
+empty; refresh actual supported access and admission before a new browser attempt.
+
+Keep policy loading, file presence, native execution, useful artifact acceptance,
+independent/human review and production adoption separate. Work in free owned
+lanes with route guard/check and fresh admission before heavy work. This slice ran
+small source/schema/hash checks and remote CI, with no local build/install/native/
+media/browser/fanout. Preserve other fronts and all unfinished records. Save the
+hub session/ledger/current prompt and comment existing issue12 after each slice.
+
 
 [Queen verified execution continuation, Codex]
 ```text
