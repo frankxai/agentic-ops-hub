@@ -21,8 +21,11 @@
 ```text
 October3 current update: reconcile Ops PR156 exact head
 b0eb8709fe060eab3bc3b44159434f39bb9be48f. 153 local tests and Ubuntu/Windows CI pass.
-Independent source review and merge remain pending. Native Claude review returned
-weekly limit; installed Gemini client was rejected; zero-tool Grok retry is running.
+Independent source review and merge remain blocked. Native Claude review returned
+weekly limit; installed Gemini client was rejected; zero-tool Grok retry timed out
+after fifteen minutes and only that reviewer was stopped. GitHub Claude review also
+failed incomplete; overall PR checks are not green. Restore a supported reviewer
+and recover the required check without disabling the gate.
 Require a complete exact-head independent review and normal gated merge. Preserve
 session-desk PR154 draft. Read October3 session and issue134 receipt5964798120.
 
