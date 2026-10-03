@@ -75,65 +75,66 @@ website/all-article/six-audience objective: musicians, producers, creators,
 founders, executives and AI architects; thoughtful human writing, grounded
 research, current partners, sentence case, existing serif identity, meaningful
 visuals and end-to-end production verification. Read the appended
-[session](sessions/2026-10-03.md) and source REVIEW-BATCH-04.md/RENEWAL-PLAN.md.
+[session](sessions/2026-10-03.md), REVIEW-BATCH-05.md and RENEWAL-PLAN.md.
 
 Owned worktree: `starlight/worktrees/frankx-editorial-renewal-20261003`, branch
 `agent/codex/editorial-renewal-20261003`, local source
-`bcd319d4bdb6e21f664095158df3a525cf836a63` after `223513c4`/`935e5bcc` and prior
-`74a4012d`/`6b410b6b7`/`26051cbdb`. The register binds 17 prepared revisions,
-four observed production corrections and 257 unreviewed rows across 278 slugs
-and 769 variants. All 21 hashes match; none grants release acceptance. Five
-new MDX rewrites compile and original metadata/internal links validate. Nine
-current corpus tests pass; prior 38 deterministic tests retain their scope.
-All three source secret hooks pass. Fifteen strict-slop hits remain in eight
-other files. Preserve the 23 unrelated newline-only changes and other owners.
+`56cd190b909af7c202c3f20aff49ef8a49051cdb` after `421b0f08` and six earlier
+commits. The register binds 22 prepared revisions, four observed production
+corrections and 252 unreviewed rows across 278 slugs/769 variants. All 26 hashes
+match; none grants release acceptance. Five new MDX revisions compile, metadata,
+16 distinct source links and decimal examples check, and nine corpus tests pass.
+Prior 38 deterministic tests retain their scope. Both new secret hooks pass;
+the digest false positive was resolved structurally with the hook enabled.
+Preserve all 23 unrelated newline changes and other owners.
 
-Prioritize release capability: recheck PP/storage, inspect the missing
-TypeScript/Next targets and establish admitted isolated dependencies without
-mutating the borrowed production tree. No install through the node_modules
-junction. Required full merge gate has not passed; do not push the source lane
-until it does. Capture current desktop/mobile through the supported browser
-connection when available; the outstanding access question remains pending.
-No render, accepted visual or website deployment is established.
+Prioritize release capability. Fresh build PP is HOLD (8,186 MB free versus
+8,192 required; projected 4,090; twelve runtimes), with pause-new-swarms. Quick
+NoWrite storage reports 147.1 GiB/15.5%, critical against the 30% target.
+Recheck before heavy work or material growth. Establish admitted isolated
+Next.js/TypeScript dependencies without writing through the borrowed junction.
+Required merge gate has not passed; do not push the source lane until it does.
+Codespaces inventory failed for account scope; Vercel project lookup failed
+its exposed argument mapping. Neither proves a remote release environment.
+Browser inventory remains empty and the access question is pending. Restore
+supported desktop/mobile capture; no render or website deployment is established.
 
-Two complete independent critiques now exist for the Fable audit with four
-public reports. Cohere returned REVISE at `223513c4`; supported clarification
-was applied and contradictory/missing-context findings reconciled. Poolside
-returned PASS at `935e5bcc` with internally inconsistent/already-covered/non-
-article findings, so do not count the label as release approval. Preserve both
-final receipts, exact hashes and decisions; raw reasoning is not a verdict.
-Use narrowly scoped fresh reviews for remaining articles, with actual sources.
-The revised Fable bytes are unchanged after the second critique. The fallback
-article and sanitized public data include three original failures and two
-later complete critiques; multiple settings changed, so no causal recovery or
-reliability claim is supported.
+Batch 5 corrects model access/cost, coding permissions, memory freshness and
+agent boundaries. Preserve the newer production coding workflow/hero/infographic
+and its January 20 date. Anthropic/OpenAI/Google/DeepSeek and tool docs were
+checked; rates carry expiry/time-band/threshold conditions, aliases can change
+backends, and proposed comparisons are explicitly illustrative. No current
+authenticated OpenRouter dataset, invoice or performance trial exists. Obtain
+real Search Console demand and licensed usage before making such observations.
 
-Continue the next stale frontier/production-agent cluster with current primary
-sources and actual outputs. Keep vendor claims, public usage, proposals and
-measured results distinct. Preserve June arena results and the actual Vibe OS
-code failures without implying a current-model winner or an audio trial. Obtain
-real Search Console demand/account exports and licensed OpenRouter usage before
-reporting those observations. The manual four-feed intake is metadata, not an
-activated daily service. Prior production corrections and private old planning
-source remain preserved; do not port internal records into a public repository.
+The incomplete Cohere packet supplies no verdict. Two fresh Poolside packets
+completed at `421b0f08`, both labeled PASS; all ten findings were reconciled.
+Several affirm correct arithmetic/safeguards or misread the article. A clearer
+table header and five current coding-tool links are later source refinements.
+Review the exact current bytes before acceptance; preserve original labels,
+hashes, source limits and decisions. Prior June arena source corrections and
+gateway failures/recovery receipts remain intact. No reasoning fragment or
+uncritical PASS label constitutes a review.
 
-Seventeen social sets remain held for the matching accepted article release
-and human posting approval. Original cover references are preserved, with no
-new accepted replacements; earlier native drafts are below the width gate.
-Preserve their sidecars/ledgers and synchronize taste through an owned workflow.
-Follow the release kernel, compare three considered design directions after
-current capture, and inspect typography, keyboard/touch/reflow, motion and errors.
-No new agent is admitted under pause-new-swarms; do not fan out from enthusiasm.
+Continue remaining audience/frontier rows from current production variants and
+primary sources, with actual useful artifacts and a serious alternative. Keep
+vendor statements, public usage, design proposals and measured results distinct.
+The four-feed manual intake is metadata, not an activated daily service.
+Twenty-two social sets are held for matching accepted article releases and human
+posting approval. The frontier cover still depicts an older model family;
+current visual review/replacement is pending. Preserve existing draft sidecars,
+both ledgers and taste records; synchronize through an owned workflow. Follow
+the release kernel and inspect typography, responsive layout, keyboard/touch,
+motion and recovery after current capture. No swarm is admitted while paused.
 
-Before porting accepted public files, verify fresh production main and ownership,
+Before a surgical public port, verify fresh production main/ownership and
 preserve PR825 research holds/noindex and newer affiliate/home/workshop/product
-work, and declare a surgical public manifest. Current five-file comparison at
-`044c8447` is evidence only; the full register still freezes `badd9c44`. Use the
-owned production lane, pass required checks/preview and independent review,
-merge normally, then verify deployed SHA/routes/links/publication filtering and
-recovery. Save the next hub receipt/current prompt and issue252 comment. Prior
-hub PR115/main CI was green only for docs; the broad goal stays active. Preserve
-all other current prompts and unfinished tasks.
+work. The five-file `044c8447` comparison is bounded evidence; the full register
+still freezes `badd9c44`. Exclude private intake, planning and ops records. Pass
+full gates, reviewed preview and independent exact-revision acceptance; merge
+normally and verify deployed SHA, routes, publication filtering and recovery.
+Save the next hub handover and issue252 update. Preserve all other current
+prompts and unfinished work. The complete goal stays active.
 
 ### Estate design quality: prove applied host use and reconcile owning brands
 

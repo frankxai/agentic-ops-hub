@@ -2,7 +2,8 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Creator complete report and remote recovery verified; native billing guard CI passed; FrankX batch 4, Memory Studio and all other unfinished records preserved; release and activation remain open). Earlier sweeps remain below.
+**Last sweep:** 2026-10-03 (Creator complete report and remote recovery verified; native billing guard CI passed; Memory Studio preserved; Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 5 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
 
 
 
@@ -247,52 +248,55 @@ enabled Computer Use browser was available for native-provider review.
 
 The full website/all-article/six-audience goal remains active under
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at
-`bcd319d4bdb6e21f664095158df3a525cf836a63`, following batch 4 commits `223513c4`
-and `935e5bcc`, and prior `74a4012d`/`6b410b6b7`/`26051cbdb` on the same owned
-editorial branch. The 278-slug/769-variant register has 17 prepared revisions,
-four observed production corrections and 257 unreviewed rows. All 21 receipts
-match text. No article has release acceptance.
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source now ends at
+`56cd190b909af7c202c3f20aff49ef8a49051cdb`, after batch 5 `421b0f08` and all six
+earlier source commits. The 278-slug/769-variant register contains 22 prepared
+revisions, four observed production corrections and 252 unreviewed rows.
+All 26 progress hashes match. No article has release acceptance.
 
-Five new rewrites cover the Fable receipt audit, prompting, fallback recovery,
-agent rollout and turning social leads into useful articles. Pinned public
-June reports show both models committed the governed edit and Fable had already
-failed format in round 3. Those two false prior claims were corrected; four
-small reports/fifteen tasks do not create an October leaderboard. Five current
-production bodies were compared at `044c8447` without overwriting newer work.
-Current primary release/API/search sources support narrower facts and access
-limits. Original URLs, dates, author/category, featured fields and covers remain.
-Five new social companions bring the held kit to 17; earlier twelve are intact.
+Five revisions address the frontier model landscape, model costs, coding agents,
+durable agent memory and six agent primitives. The coding article uses the
+substantially newer August production guide rather than the private January
+draft, preserving its workflow, publication metadata, hero and infographic.
+All five production bodies were read at `044c8447`. Other original URLs and
+metadata remain. Current primary documentation supports dated rates, promotion
+expiry, pricing thresholds, alias drift and effective tool permissions. Worked
+costs are hypothetical arithmetic; no current usage dataset or model trial is
+claimed. Gateway documentation links carry no invented affiliate attribution.
+Five new article-linked social sets bring the held kit to 22; prior sets remain.
 
-Independent transport now returns complete critiques on a smaller packet.
-Cohere returned REVISE at `223513c4`; five findings were reconciled against the
-source, supported clarifications applied and a contradictory repair rejected.
-Poolside reviewed the refined Fable bytes at `935e5bcc` and returned PASS with
-internally inconsistent/already-covered/non-article findings. Its label is not
-accepted as publication approval. Both final critiques and decisions are
-preserved; no reasoning fragment is approval. The fallback article/public
-receipt retains three initial failures and two later completed critiques,
-without a causal recovery, availability or quality ranking.
+A five-article Cohere response was truncated and supplies no completed verdict.
+Separate Poolside two-article and three-article critiques at `421b0f08` completed,
+both labeled PASS. All ten findings and lead reconciliations are preserved.
+The lead rejected misread/already-covered findings, clarified the rate-table
+header and sourced five other coding tools through current primary pages.
+These two refinements postdate the critiques. Supplied source summaries, no
+independent browse/render/execution, and inconsistent findings limit acceptance.
+Neither PASS label grants current-source or publication approval.
 
-Five MDX files compile, metadata/internal source links validate, nine current
-corpus tests pass, and prior 38 deterministic tests remain scoped evidence.
-The strict slop audit is down to 15 findings in eight other files. Enabled
-secret hooks passed all three source commits. Missing TypeScript/Next.js targets
-still prevent the required full gate; source was not pushed. Browser/render,
-independent article acceptance, visuals, production port/CI/deployment remain
-pending. No new image, social post, enrollment, agent, dependency install,
-worktree, server, watcher, schedule or cleanup was started. Twenty-three other
-agents' newline-only changes remain unstaged. Interactive admission permits one
-workload and pauses new swarms; recheck before material growth.
+Five MDX files compile, metadata and 16 distinct source article links validate,
+decimal examples check, and nine corpus tests pass. Prior 38 deterministic
+checks remain scoped evidence. Source secret hooks pass both commits: 129.55 KB
+and 40.93 KB. A false positive matched a verified article digest; explicit
+`slug`/`contentSha256` fields resolved it without bypassing or weakening the hook.
+All 23 unrelated newline changes remain unstaged. Source push/PR is held.
+
+Fresh build admission is HOLD: 8,186 MB free versus 8,192 required, projected
+4,090 MB, twelve runtimes, pause-new-swarms. Quick/NoWrite storage reports
+147.1 GiB/15.5%, critical against its 30% target; no cleanup is authorized by
+that observation. Borrowed Next.js/TypeScript targets are absent. Codespaces
+inventory lacks account scope; the Vercel project connector rejects its exposed
+argument mapping. Browser inventory has no apps or browsers. No build, install,
+new worktree, agent, image, social post, schedule, cleanup or persistent worker
+was started. The required merge gate, current capture and release remain open.
 
 Recover admitted isolated build dependencies without mutating the borrowed
-production tree; restore current desktop/mobile capture and exact-revision
-review. Continue the remaining register using current production variants,
-primary sources and audience-specific artifacts. Preserve research holds/newer
-affiliate/home/product work and exclude private intake/planning/ops records
-from public ports. Prior hub PR115 merged `acf2beaf`, with passing PR/main CI;
-that proves the documentation scope only. See [session](sessions/2026-10-03.md)
-and the current pickup prompt.
+production tree, restore supported desktop/mobile capture and review exact
+revisions. Continue the remaining register from newer production variants,
+preserve research holds and affiliate/home/product work, and port only accepted
+public assets. Prior hub PR117 merged `9263c1da` with passing PR/main CI; that
+proves documentation only. See [session](sessions/2026-10-03.md), source
+REVIEW-BATCH-05.md and the current pickup prompt.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
