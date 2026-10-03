@@ -17,6 +17,29 @@
 
 ## Current
 
+### AI-factory architecture: extend the accepted plan and prove execution
+
+Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` using this day's
+[session](sessions/2026-10-03.md), private
+[agentic-ops issue149](https://github.com/frankxai/agentic-ops/issues/149) and
+[Starlight Technology issue30](https://github.com/frankxai/starlight-technology/issues/30).
+The private operating-architecture-20261003 report is `5e42affcfd7c2ee4bb99862784cd1788badad94a255b09d71845d755ae54fa72`: 33 local checks
+and 21 actual Chrome checks pass; independent native-provider attempts are
+incomplete. Obtain a compact frozen exact-revision review and reconcile actual
+invoice, reset and allowance evidence. Preserve all accepted DecisionGraph/AI
+Creator Studio source and unfinished patches; do not create another planner,
+Queen, cost ledger or service business. Integrate separate maker/reviewer billing,
+provider-local cache assumptions, correctly scaled rate units and typed source
+freshness into the existing editable complete system plan in an owned lane.
+Retain the existing approved EUR100/month incremental Queen pilot ceiling until
+an explicit revision; calculator scenarios do not revise it. Then prove one
+recoverable remote mission through existing atomic reservations/leases, supported
+native authentication and tools, including denial, quota exhaustion, cancellation,
+duplicate effects, stale fences, integration and serving SHA. Keep finance private.
+Fresh PP/storage admission precedes new heavy work. Preserve all other prompts
+and update hub records plus the existing product issues. Original goal stays open;
+report/test completion does not establish running teams or paid-product readiness.
+
 ### Estate design quality: reconcile acceptance and prove one downstream gate
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from

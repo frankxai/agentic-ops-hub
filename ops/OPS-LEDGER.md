@@ -2,7 +2,48 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (design foundation merged and verified; estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (AI-factory report/recovery evidence recorded; runtime and product gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: AI-factory operating architecture and recovery evidence (Codex)
+
+Source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`. The original broad goal remains
+active: one Queen across the existing brands, supported subscription/API routing,
+durable remote execution, dynamic teams, complete cost/ROI and reusable creator
+planning. Preserve the existing accepted product and unfinished work.
+
+A private self-contained study now connects 47 primary source URLs, 14 priced API
+models, 14 subscription rows, 16 infrastructure rows, 11 runtime choices and 27
+existing source-mapped properties. Current provider-host eligibility is distinct
+from API eligibility. Existing Cloudflare cross-service and Vercel app-owned
+workflow boundaries are preserved. Vercel Blob/Image stays the accepted new-app
+media default; R2 is a compared exception. No second Queen or cost ledger.
+
+Exact HTML SHA-256: `5e42affcfd7c2ee4bb99862784cd1788badad94a255b09d71845d755ae54fa72`. Thirty-three calculation/import/synthetic-DOM checks
+and 21 actual installed-Chrome checks pass. The browser receipt covers desktop,
+mobile/tablet, keyboard/touch, separate review billing, import/export, cancellation
+and storage-denied recovery. Four screenshots have companion provenance; both
+required visual ledgers were appended. Lead inspection refined mobile cost
+feedback and desktop overlap. Founder/buyer appearance approval and writable
+memory-vault synchronization remain pending.
+
+Reviewer caches and native allowances are now modeled separately from maker
+caches/allowances. The reviewer defaults to cold cache and API billing. Strict v1
+import migration retains user values and adds conservative v2 assumptions;
+fractional worker/CPU allocations fail. Existing invoice currency, quota balances,
+accepted throughput and attributable savings remain unconfirmed. No private
+financial values or account details are copied to this public handover.
+
+Native Claude, Grok and Google review attempts did not produce an independent verdict;
+private receipts retain their outcomes. No independent review PASS is claimed.
+The Chrome and reviewer CLI processes owned by this session stopped. Cancellation
+of a remote backend turn after CLI timeout was not established. No dependency,
+model, fleet, scheduler, purchase, paid cloud mission or deployment was started.
+Policy loading and proposed contracts are not runtime enforcement.
+
+Action records and next steps remain on private execution issue149, creator-plan
+issue30 and hub pickup issue102. See [session](sessions/2026-10-03.md) for scope,
+ownership and missing runtime/release proof. The EUR100/month approved Queen pilot
+record remains unchanged; illustrative scenarios are not new spending authority.
 
 ## 2026-10-03: Estate design quality foundations (Codex)
 
