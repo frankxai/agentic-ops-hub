@@ -1709,3 +1709,56 @@ session/ledger/current prompt. Private `native-profile-source-progress-receipt`
 and final source/runtime/provider packets retain exact evidence. Next obtain
 supported exact-current-source review and compare same-budget behavior before
 any default adoption. Policy loading is separate from runtime enforcement.
+
+## Memory Studio export/import recovery, 3 October 2026 (Codex)
+
+[Draft site PR86](https://github.com/frankxai/starlightintelligence.ai/pull/86)
+repairs a portable recovery defect: five legal Unicode documents export to
+180,239 bytes, while main rejects imports above 100,000. The shared parser and
+UI now allow 400,000 UTF-8 bytes, covering worst-case JSON escaping. Document,
+schema and path bounds remain enforced. Invalid imports preserve the draft.
+The existing portable schema and cloud curator boundaries remain unchanged.
+
+Source `f2a90d45b79653471c0da9b1abc9b247e7d5011a`, base `854357b89d6c160df6d7cb51d7bfdf92f96422e9`;
+nine files, full diff SHA256 `118e56fa19d9a25facebbb540f21312ba379295f6386990b94c16966a301923b`. The existing accepted editor allowance
+is retained without adding compression or export dependencies.
+
+All 26 local checks pass, including six memory tests. Syntax, diff and enabled
+staged secret checks pass. [CI37146976573](https://github.com/frankxai/starlightintelligence.ai/actions/runs/37146976573)
+passes type checking, production build, content and existing test suites.
+Chromium executes eight recovery cases across desktop 1440, tablet 1024,
+touch 390 and touch 360 with reduced motion. Actual downloads, five-file
+restoration, re-export equality, four rejected inputs and later valid recovery
+pass with no skips, failures or flaky cases. One worker, no retries, 25.4s.
+Built merge `fdefcee7326920cf5c4a177cc1b42adc8a8e49e9` has the exact base/head
+parents and matching studio/parser/declaration hashes. Cloud curation is off
+in the isolated test server.
+
+The existing [Vercel preview](https://starlightintelligence-di7n1szkq-starlight-intelligence.vercel.app/platform)
+is READY at this source, deployment `dpl_ANGDe8wdRy4jQqXoVv8eAKjMuUje`.
+GET /platform returns HTTP200 and matching deployment HTML. Hydrated preview
+and live account proof remain pending; browser controls are unavailable.
+
+Independent review remains pending. Native Grok 1.0.46 / grok-4.7 high
+initialized with the complete nine-file, 40,838-byte source packet, then ended
+at the enforced 180s deadline without a verdict. The owned worker is terminal;
+cash cost is unknown. Retained tool advertisement and deny/no-use observations
+do not establish universal isolation. Existing Claude quota429 and Gemini
+unsupported-client observations were not retried. Source/design and approving
+GitHub reviews are still required before integration.
+
+The clean merged PR80 checkout was reused after separate Git, routing and lane
+verification. Its old local branch survives; the remote was already absent.
+Foreign primary, unfinished roster work and craft PR84/issue85 are preserved.
+Registry fdd0233 site ownership was checked. PP admitted one serial interactive
+worker with 7,772MB free RAM above the 4,096MB floor; disk15.49%. No new local
+worktree, dependencies, build, browser/server, cleanup or production change.
+
+Both saves: [existing site issue82](https://github.com/frankxai/starlightintelligence.ai/issues/82#issuecomment-5972702299) and Hub98 session/ledger/current
+prompt. All Hub records through c99f341, including the other Arcanea goal,
+are preserved. Full goal01a10210-9679-7260-9789-a969ef438339 remains active.
+Issue82 design/value/field performance, live journey, source promotion and
+rollback acceptance stay open. Config95/80, hook84, MCP8, operator29 and all
+customer/community/org fronts remain open. Policy loading and CI success do
+not establish release enforcement. Next obtain current-source review and a
+hydrated journey, or advance consequential owned work while review is pending.
