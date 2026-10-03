@@ -2,7 +2,13 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (React copy rubric on the craft drafts; Jules cap full at 4; no product merge) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Jules working card on config PR 89; FrankX 867 held; FrankX 869 waiting on Codex) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Jules working card and the review loop (Grok)
+
+Jules now gets `core/tools/jules-knowledge.md` through `jules-brief.mjs` on starlight-agent-config `9ff392d` ([draft PR 89](https://github.com/frankxai/starlight-agent-config/pull/89)). Five tests passed. The card is the knowledge Jules can see. SOUL, skills, hooks, and a private graph stay off the cloud task.
+
+The loop is chair, then Jules draft, then Codex review, then Queen record. Queen does not merge. FrankX 868 merged the hero-byte check. [FrankX 867](https://github.com/frankxai/frankx.ai-vercel-website/pull/867) stays open: protected about surface, and the new words are Extensive, Vast, Catalog, and Global. [FrankX 869](https://github.com/frankxai/frankx.ai-vercel-website/pull/869) is green and needs a review from someone other than frankxai. Arcanea 279 was still in progress. Receipt: `ops/sessions/2026-10-03.md`.
 
 ## 2026-10-03: React and Next copy rubric, three Jules tasks (Grok)
 

@@ -27,7 +27,9 @@ Review these heads as a checker, not the author. Run `node --test scripts/tests/
 - https://github.com/frankxai/arcanea-ai-app/pull/506 at `d7ebeba30d`
 - https://github.com/frankxai/starlightintelligence.ai/pull/84 at `016fe97` (`starlight-intelligence-web` is this same repository)
 
-Jules is full (`auf=0`, in flight 4, cap 4). Do not create another task until one leaves the queue. Watch https://jules.google.com/session/7771091644676001707 (FrankX 842), https://jules.google.com/session/9191613497530593819 (Arcanea 279), https://jules.google.com/session/8651854513076101430 (FrankX 824), and the already running https://jules.google.com/session/9363571137422053674. When a session finishes, review the diff before any merge: draft only, no page rewrite outside the issue, no lockfile, no emoji decoration. Approve a plan only when the driver shows `AWAITING_PLAN_APPROVAL`.
+Build every new Jules task with `node C:/Users/frank/starlight/worktrees/jules-ops/core/tools/jules-brief.mjs --task "..."`. If it exits 2, do not create the task. Card and builder are starlight-agent-config `9ff392d` on draft PR 89. Codex reviews the draft. Queen records the outcome here and does not merge.
+
+FrankX 868 is merged. Leave FrankX 867 open until the scale words are gone and the about surface has a real brief. FrankX 869 is green and waits on a non-frankxai review. Watch Arcanea 279 at https://jules.google.com/session/9191613497530593819. Do not retry the failed citation session https://jules.google.com/session/8651854513076101430.
 
 Do not self-merge. FrankX 724 and 725 and GenCreator 93 stay held. GenCreator 141 is green against `agent/codex/creator-revision-20261002` and still needs an approval from someone other than frankxai. Do not edit the FrankX first viewport, GenCreator Territory B, or Arcanea canon.
 
