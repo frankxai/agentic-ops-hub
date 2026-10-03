@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (FrankX renewal source saved locally; release held; design foundation merged and estate adoption remains open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (FrankX source saved locally/release held; 49 community tests/36 browser checks and source review pass; locked guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-03: FrankX editorial renewal (Codex)
 
@@ -25,6 +25,51 @@ fanout or persistent processes were started. See the appended
 [session receipt](sessions/2026-10-03.md) and current pickup prompt. Preserve newer
 production work and existing research/hero issues; the first source slice cannot
 close the corpus or website renewal.
+
+## 2026-10-03: Community interface pilot and private guard repair (Codex)
+
+[Kernel PR29](https://github.com/frankxai/starlight-design-intelligence/pull/29)
+merged `f90a3a3`; PR/main CI passed the audit, 61 existing tests and 42 real-browser/
+process checks. Scoped independent public-source review passed. The actual Next.js
+pilot exposed arrow/open-shadow false positives; the inspector now traverses and
+hashes reachable open shadow roots under its existing budget.
+
+[Community PR13](https://github.com/frankxai/gencreator-community/pull/13), head
+`67f6dbb`, passes product CI with 49 tests, pinned adoption and 36 browser checks across four
+contexts/16 clean inspected states. Actual packet creation, invalid-input recovery,
+keyboard focus, Markdown download, mail draft, privacy and controlled rejection
+were exercised on CI merge `7b65540`. Cookie/IndexedDB/cache/service-worker and
+WebSocket observations, plus controlled storage rejection/restoration, now join
+the privacy checks. Final scoped Poolside source review is PASS; earlier REVISE
+and inconclusive receipts remain preserved. Visual/production acceptance stays open.
+
+The pilot contains frozen repair `fac3b05` as a Git ancestor and protects all
+workflows plus the browser/pin/test inputs in a locked trusted-base registry.
+Separate regression cases deny registry removal and new workflow filenames
+despite a complete preservation brief. This registry change also requires Frank's
+current-head approval. Workflow presence and unit denial are not live merge enforcement.
+
+The base-owned Surface Guard cannot authenticate its private PR fetch.
+[Repair PR14](https://github.com/frankxai/gencreator-community/pull/14), head
+`fac3b05`, preserves the policy and uses the official GitHub credential helper
+for one command, with event-head verification. Its live
+contents-read-only proof rejects unauthenticated access, fetches the exact head
+and verifies absent retained credential configuration. Scoped final Cohere source
+review is PASS; low suggestions were reconciled with the read-only permissions
+and command-scoped config/proof. The trusted base remains
+red until the reviewed repair is merged; governance is locked and needs Frank's
+current-head approval. Main protection is currently off, with no rulesets.
+An explicit five-check protection proposal is prepared privately; no permission
+mutation or red-gate bypass occurred. See [session](sessions/2026-10-03.md).
+
+The exact-source Vercel preview is READY, but computer-use reports no available
+browsers; independent visual inspection remains pending. Fresh browser admission
+recovered RAM to 12,410 MB with BOUNDED posture and 10/8 task runtimes. No local
+heavy workload, task archive or process termination followed.
+
+Fresh read-only verification found 13 pinned design skills/56 projections intact;
+fresh host activation remains unverified. The full estate objective and both
+tracking issues remain open. No public page or brand identity changed.
 
 ## 2026-10-03: Estate design quality foundations (Codex)
 

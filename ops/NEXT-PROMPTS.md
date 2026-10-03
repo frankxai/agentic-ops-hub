@@ -52,25 +52,53 @@ every article register row and remaining audience/SEO/visual/data work. Update
 issue252 and this hub's receipt/ledger/prompt. Do not claim a green release from
 source tests or mark the broad goal complete. Maintain the other current prompts.
 
-### Estate design quality: reconcile acceptance and prove one downstream gate
+### Estate design quality: restore the trusted pilot gate and verify host use
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
 [session](sessions/2026-10-03.md) and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
-Shared foundation PR28 is merged as `20bea898c78f0a73fa1479527c99c6c2675df15d`;
-main CI and independent code-only review passed. Reconcile current brand packs
-with the founder rejection in Git `7043905`, the missing foundation-reset paths
-and later accepted directions before propagating design instructions. Verify
-actual native/plugin capability coverage and source ownership. Then integrate
-the pinned rendered inspector into one accepted product's complete browser
-journey and required CI boundary; demonstrate a controlled failing interface is
-blocked. Preserve existing products, asset provenance and other owners. Inspect
-actual logo quality, responsive composition, icons, copy, keyboard, performance
-and save/resume/export recovery with independent design review. Expand to the
-observed 24-domain estate only after that pilot and fresh-host proof. Keep missing
-evidence pending; maintain all other prompts. Fresh machine/storage admission is
-required before heavy work; last RAM was below 4 GiB. No new fanout or broad
-installation is authorized by this prompt.
+Kernel PR29 is merged as `f90a3a31f4dca5feafd9f9f427848ec42330fe3f`, with passing
+main CI, 61 existing/42 browser-process checks and scoped source review. Community
+PR13 at `67f6dbbb20052aef74d8244a0d88ce8bf4f46f77` is ready: product CI37132129964,
+browser CI37132129969, fetch proof37132129960 and adoption37132130495 pass. There
+are 49 tests/build, 36 real journey checks and 16 complete inspected states. The
+artifact binds merge `7b65540fa2104c28ebe4545b723e7f899aaf380f`, whose verified
+parents are base `f03c5166c509a7bded584e3ee4a938f0a0d3378a` and this exact PR head.
+Final scoped Poolside source review is PASS; preserve earlier REVISE/inconclusive
+receipts and scope limits. The pilot locks all workflows and browser/pin/test
+inputs. Separate tests deny a candidate registry removal and arbitrary new
+workflow names despite a complete preservation brief. This locked registry
+change requires Frank's current-head approval too.
+
+PR13 contains frozen repair PR14 `fac3b053f0682736331fb3cef7f85096d2983169` as an
+ancestor. Its official command-scoped GitHub credential helper/event-head check,
+contents-read fetch proof and final scoped Cohere review pass. The trusted main
+guard still fails an unauthenticated private fetch. With Frank's explicit repair
+approval, merge PR14 using a merge commit to retain ancestry, then rerun PR13's
+base-owned Surface Guard against the unchanged current head. The one-time repair
+merge while the broken base guard is red must be authorized. Obtain the pilot's
+current-head approval and all passing trusted checks before its merge. A changed
+source head invalidates approval and needs fresh checks/review. Do not forge an
+approval from the authenticated CLI identity or infer it from elapsed time.
+
+Main has no protection/rulesets. Enable the prepared five required contexts only
+with explicit permission after both approved changes are integrated: Verify,
+Surface Guard, Review Gate, design-contract / design-contract, Interface
+foundations and proof packet. Demonstrate an actual unapproved gate/registry/new
+workflow change is denied by trusted base, in addition to the unit evidence.
+No protection has been changed. Community issue12 tracks adoption; issue2 keeps
+launch gates. Source approval does not grant visual, host or production acceptance.
+
+Then verify a fresh native host selected, read, applied and verified these rules,
+including a meaningful denial and useful allowed artifact. The 13-skill/56-projection
+filesystem check passes but does not prove runtime use. Reconcile the founder
+reset at Git `7043905` with later accepted territories before brand propagation.
+Inspect logo/assets and the actual preview, typography, icons, responsive behavior,
+performance and recovery with independent design review. Preserve other owners,
+all prompts and the full 24-domain/full-harness objective. Fresh browser preflight
+reports BOUNDED with 12,410 MB RAM free and 10/8 task runtimes. Computer-use reports
+no available browsers; preview metadata/HTTP response are not visual inspection.
+Refresh admission before heavy work. No new fanout is authorized.
 
 [Queen verified execution continuation, Codex]
 ```text
