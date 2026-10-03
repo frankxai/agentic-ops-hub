@@ -2,7 +2,13 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (craft-check drafts open, no product merge; earlier design-foundation sweep remains below) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (React copy rubric on the craft drafts; Jules cap full at 4; no product merge) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: React and Next copy rubric, three Jules tasks (Grok)
+
+The craft drafts now score `.tsx`, `.jsx`, and `.mdx` with a copy rubric: emoji, generic slop, and title case. HTML documents keep the page rubric, including focus and reduced motion. Heads: [config 92](https://github.com/frankxai/starlight-agent-config/pull/92) `6bbd478`, [FrankX 862](https://github.com/frankxai/frankx.ai-vercel-website/pull/862) `c23809bd2`, [GenCreator 142](https://github.com/frankxai/gencreator.ai/pull/142) `5331a0c`, [Arcanea 506](https://github.com/frankxai/arcanea-ai-app/pull/506) `d7ebeba30d`, [Starlight 84](https://github.com/frankxai/starlightintelligence.ai/pull/84) `016fe97`. A Save button accepts. Slop copy rejects with status 2. These drafts stay drafts.
+
+Jules `auf=0` and the cap is full. New this session: [842](https://jules.google.com/session/7771091644676001707) hero-byte check, [279](https://jules.google.com/session/9191613497530593819) release-manifest validator, [824](https://jules.google.com/session/8651854513076101430) citation check. Already in progress: [public headcounts](https://jules.google.com/session/9363571137422053674). Spawn is refused until one finishes. GenCreator 141 is green against another agent's branch and has no non-author approval, so it was not merged. Receipt: `ops/sessions/2026-10-03.md`.
 
 ## 2026-10-03: Craft check drafted, open product pull requests left unmerged (Grok)
 
