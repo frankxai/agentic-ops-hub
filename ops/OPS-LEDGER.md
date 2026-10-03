@@ -45,6 +45,12 @@ issue30 and hub pickup issue102. See [session](sessions/2026-10-03.md) for scope
 ownership and missing runtime/release proof. The EUR100/month approved Queen pilot
 record remains unchanged; illustrative scenarios are not new spending authority.
 
+Private companion plans now compare matched smaller cold-input workloads using
+fully billed APIs without assuming native quota. Arithmetic fits the approved
+pilot ceiling; quality, incomplete charges and dispatch remain unproven. Codex
+Cloud read-only metadata worked; existing ready results were preserved. No
+enabled Computer Use browser was available for native-provider review.
+
 ## 2026-10-03: Estate design quality foundations (Codex)
 
 [Design Intelligence PR28](https://github.com/frankxai/starlight-design-intelligence/pull/28)

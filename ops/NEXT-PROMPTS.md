@@ -32,7 +32,10 @@ Queen, cost ledger or service business. Integrate separate maker/reviewer billin
 provider-local cache assumptions, correctly scaled rate units and typed source
 freshness into the existing editable complete system plan in an owned lane.
 Retain the existing approved EUR100/month incremental Queen pilot ceiling until
-an explicit revision; calculator scenarios do not revise it. Then prove one
+an explicit revision; calculator scenarios do not revise it. Import the private
+matched paced plans to compare fully API-billed cold inputs without invented
+native quota. Review transports still need a usable verdict and cancellation
+acknowledgment; the browser UI route was unavailable. Then prove one
 recoverable remote mission through existing atomic reservations/leases, supported
 native authentication and tools, including denial, quota exhaustion, cancellation,
 duplicate effects, stale fences, integration and serving SHA. Keep finance private.
