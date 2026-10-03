@@ -4,6 +4,17 @@
 >
 **Last sweep:** 2026-10-02 (Queen foundation and transport hardening merged; live access gates recorded) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+
+## 2026-10-03: Cinder Orchard scene forward walkthrough, independent acceptance pending (Codex)
+
+Existing app draft487 now includes one quiet-bargaining request and two complete Cinder Orchard scenes: primary832words and alternative718words. Exactsourcecd2e8376236eb5ea02a00592e66ec12bf5b3a425; six-file delta overaf0b3668, SHA256bffa8cdb00c3eae4c9ec80cd4639ecfc52ea07219488ea2fbccb2ec0416c0051. Lead recommends The blank side first for its negotiation; The six tiles remains a usable alternative. Same lead/context/guides read/refinement, not independent or blinded; no skill/model winner.
+
+Both preserve noon gate, missing final verse/melody and Vale's inability to read glyphs; P2/P3/P6 stay proposed. One refund actually occurs; five remain future. Primary carries remaining coins; no restored verse or fruit release. First716/668-word drafts retained privately. Exactrequest/output hashes and six unchanged inputs verified. Original bible's unsupported high-yield interpretation and swappedO5/O6 labels recorded, not overwritten. Catalog/package/guides/canon and earlier evidence unchanged: five candidates, zero ready.
+
+CI37082730609 terminal success at exactcd2e8376; read named job receipts. Native CI is source/build evidence, not editorial acceptance. Initial37082659448 automatically cancelled on metadata edit; empty CLI run listing was revalidated through live handles and API, not treated as missing/terminal. No new provider request; final six-file review packet pending independent judgment. Mechanical counts/sections/hashes do not prove semantic/editorial acceptance. Provider spend0, lead time/cost and customer repair unmetered. Installed native bundle remains unproven; launcher upstream/rights/human gates open.
+
+Both saves: [282](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5963751395); [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5963751526); [487](https://github.com/frankxai/arcanea-ai-app/pull/487#issuecomment-5963751634) and hubdraft98 session/ledger/current pickup. Keep creator496/76d1 exact-native browser PASS, legacy487 history, reader/launcher/AuthorOS/world/game/media/shared owners and500 human acceptance. Licence/Heart/archive/rename/engine/merge/release/demand/revenue remain unresolved. Full goal active, no new repo/mirror/pack/public installation/release/production side effect. No persistent local workers; app4d5f/hubc093 lanes release at handoff.
+
 ## 2026-10-03: Reopenable world drafts, source review pending (Codex)
 
 - Existing app draft496 carries complete text drafts between tabs/devices through version1 JSON export/import, original concept/identity and legacy world-only support. Final source `76d1a92856f1ea20018bc26482d3a7133512deb6`; accepted-main4e integration d702 retained. Full main-targeted15-file proposal SHA256c942af04697ab34e4b728850e51fb94d9039b28ad3158b7d8d2c20137d839107; portability delta over d702 SHA25642665e10424e93b88a254cfb65c9239d7ac66baa8bb752bd1fec7154231aafd7. Unmerged.

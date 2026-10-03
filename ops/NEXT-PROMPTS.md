@@ -27,7 +27,29 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT creator portability / draft496 at76d1a92856f1ea20018bc26482d3a7133512deb6:
+CURRENT scene-craft forward / draft487 atcd2e8376236eb5ea02a00592e66ec12bf5b3a425:
+Read packages/arcanea-skills/evals/scene-forward-2026-10-03/report.md and both
+complete scenes. Primary832words/alternative718, quiet Cinder Orchard bargaining;
+sourceCO-v2 three accepted facts, selectedP2/P3/P6 proposed. Vale cannot decode
+glyphs; Neri does not regain verse; fruit remains attached. One actual refund,
+five future refunds; explicit knowledge/action/source status. Lead recommendation
+is The blank side first, not a skill/model winner. Same lead/context, not blinded
+or independent; full twenty-task and human emotional/voice review remain pending.
+Six-file delta overaf0b3668 bffa8cdb, input/output hashes/sixunchangedsource checks.
+Original input's high-yield interpretation and swappedO5/O6 labels retained as
+findings; no overwrite of earlier evidence. Guides/catalog/package/canon unchanged.
+Five candidates/zero ready; no installed/native bundle or public readiness claim.
+CI37082730609 terminal success at exactcd2e8376; read named job receipts. Native CI is source/build evidence, not editorial acceptance.
+Keep initial cancelled37082659448 and live-query/API recovery receipts. Exact
+six-file review packet ready; no independent provider invoked here, no new PASS.
+Prior provider availability blockers remain recorded. Next obtain an isolated
+result on this request without showing lead scenes, review independently and resolve
+rights/launcher upstream before promotion; preserve other useful product work.
+Receipts: [282](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-5963751395); [276](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5963751526); [487](https://github.com/frankxai/arcanea-ai-app/pull/487#issuecomment-5963751634); hubdraft98.
+No merge/release without408/427, human licence/Heart/manuscript/engine choices.
+Broad goal active; actual creator/customer/demand/revenue acceptance incomplete.
+
+RETAINED creator portability / draft496 at76d1a92856f1ea20018bc26482d3a7133512deb6:
 Use the existing homepage/creator; no new editor/repo. Accepted main4e integrated
 d702; full main-targeted15-file proposal and exact-source review packet preserved.
 Restorable JSON retains concept/ID/all known world text; older JSON gets new ID
