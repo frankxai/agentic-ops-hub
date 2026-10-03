@@ -21,7 +21,7 @@
 
 Review these heads as a checker, not the author. Run `node --test scripts/tests/test_craft_check.cjs` in each product draft, and `node --test core/tools/tests/test_craft_check.cjs` in starlight-agent-config. The emoji fixture must exit 1 and the sentence-case fixture must exit 0.
 
-- https://github.com/frankxai/starlight-agent-config/pull/92 at `925fadd`
+- https://github.com/frankxai/starlight-agent-config/pull/92 at `be81f92`
 - https://github.com/frankxai/frankx.ai-vercel-website/pull/862 at `79760c750`
 - https://github.com/frankxai/gencreator.ai/pull/142 at `1cf5d19`
 - https://github.com/frankxai/arcanea-ai-app/pull/506 at `4637d78fff`
