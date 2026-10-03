@@ -5,6 +5,47 @@
 **Last sweep:** 2026-10-03 (Native named-plugin consumer passes with temporary task scope; Arcanea143 metadata/Config80/reader records preserved; release review/runtime still pending) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
+## Arcanea platform lint recovery and completed release review, 3 October 2026 (Codex)
+
+Goal01a1020e remains active across the full estate. Preserve other goal01a10210 and
+Memory Studio records through hub480583c, accepted app/canon and all human gates.
+
+- Platform draft45 current `fe591a3c2c2e1571ca380618d6638f5b04fd032c`, baseb4738df9,
+  90-file diffSHA5997bace5027898ba2daa9cfffe48984f4923a16077684ab1b5e02be0c25763e.
+  All seven originals/branches remain; original cherry-pick provenance retained.
+- Exact native Packages37148198289, suite37148198290 and quality37148198287 pass.
+  Both Node20/22 full suites3322/3314pass/8skip/0fail; type/production compile/security
+  pass. MVP37148198284 and apps37148198280 still fail79web errors/224warnings.
+  All four repaired package lint tasks now pass; strict warnings0 retained.
+- One shared recommended root ESLint9/TypeScript config selects actual package source;
+  Turbo hashes it. Frozen8.15.0 validates six root lock-importer lines, with all other
+  importer/graph bytes preserved. Unrelated generated pruning was rejected privately.
+  Typed activity metadata, destructured dropdown refs/state and hoisted identical
+  stat-card implementation resolve25observed errors. Two regex escapes removed;
+  equality verified111,117cases. Unrelated random retrieval failed11of64source trials;
+  actual learned pattern/memory query assertions now pass compiled20/22 full suites.
+- Actual predecessor5b248d1 audit379 vulnerabilities (38low/184moderate/151high/6critical)
+  exits1 despite a green nonblocking job. Root/web Next16.1.1, Vitest2.1.9 and generator
+  critical advisory paths retained; reachability, dependency repair/compatibility and
+  remaining high findings require work. No clean security/customer/production claim.
+- Root143/ae669538 full four-file review now explicit WARN: native Grok4.6/high, actual
+  grok-4.6-build,175.07s/exit0/end_turn,tools0. Complete54,232byte packet includes original
+ 19,716byte/076eda33source verbatim and both full required guides. First alternate
+  request ended8.88s/maxturns after two denied skill reads; repaired delivery completed.
+  Preserve earlier timeout/quota/auth history. Native cost$0.04002412 is unreconciled.
+  Checkout-history, lock-churn/preservation and durable regression/publish-execution
+  context need reconciliation; keep143 draft. No approval transfers to platform45/139.
+- Disk147.36GiB/15.48% above15floor. No node_modules/local build/new agent/services,
+  global config change, live account/DDL, merge/deploy/publication or branch deletion.
+  Source/provider workers terminal; only exact own claims release after clean push.
+
+Both saves: [platform44](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5972782702),
+[root142](https://github.com/frankxai/arcanea/issues/142#issuecomment-5972759907) and hub98.
+Private final candidate90-file manifest/diff, exact native logs, lock/source/query/regex
+receipts and completed full provider WARN retain proof. Next repair79web errors and
+224warnings, dependency findings and whole-platform review; refine root143 findings,
+then use normal reviewed release gates. No broader estate completion inferred.
+
 ## Arcanea platform PR recovery and verified CI, 3 October 2026 (Codex)
 
 Goal `01a1020e-e898-7093-b301-b31684ccb819` remains active across all Arcanea repos,
