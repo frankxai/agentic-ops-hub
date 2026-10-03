@@ -17,6 +17,18 @@
 
 ## Current
 
+### Craft-check drafts: review them, leave them draft
+
+Review these heads as a checker, not the author. Run `node --test scripts/tests/test_craft_check.cjs` in each product draft, and `node --test core/tools/tests/test_craft_check.cjs` in starlight-agent-config. The emoji fixture must exit 1 and the sentence-case fixture must exit 0.
+
+- https://github.com/frankxai/starlight-agent-config/pull/92 at `925fadd`
+- https://github.com/frankxai/frankx.ai-vercel-website/pull/862 at `79760c750`
+- https://github.com/frankxai/gencreator.ai/pull/142 at `1cf5d19`
+- https://github.com/frankxai/arcanea-ai-app/pull/506 at `4637d78fff`
+- https://github.com/frankxai/starlightintelligence.ai/pull/84 at `1514e4b` (`starlight-intelligence-web` is this same repository)
+
+Do not self-merge. Do not mark a draft ready only to start CI. FrankX 724 and 725 and GenCreator 93 stay held. Do not edit the FrankX first viewport, GenCreator Territory B, or Arcanea canon. Jules create stays refused until the driver maps the CLI login create body. The packet queue stays empty while awaiting user feedback is above 0 or in flight is already 4.
+
 ### Estate design quality: reconcile acceptance and prove one downstream gate
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
