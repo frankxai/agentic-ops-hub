@@ -2,7 +2,25 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 7 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 7 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Native patch coverage passes; shell coverage fails (Codex)
+
+[Kernel draft34](https://github.com/frankxai/starlight-design-intelligence/pull/34)
+at `c99adec` adds separate actual native patch/shell modes. Raw Git bytes on CLI
+0.160.0: dynamic Write PASS; actual patch PASS with native denial and Impeccable
+post/Stop; actual shell coverage FAIL/exit2 with both private synthetic writes
+executed and no pre-tool block/post-edit event. Shared config/trust unchanged,
+no inference/MCP startup, own servers/clients terminal. This does not approve the
+Codex app session, code mode, other hosts or automatic design-defect correction.
+
+Independent Poolside exact-source PASS follows two preserved REVISE records and
+actual mixed-tool false-pass reproduction/repair. Three truncated responses have
+no verdict. CI37162399939 passes61Node/21Python/53browser-process checks, audit and
+validation; source and tested-merge f6afe2a blobs equal. Native/shell failure is
+still open, named human/configuration promotion pending, draft34 unmerged.
+Preserve Config95d004224/80/84/Queen90 and frozen community15/3ea8626. All eleven
+estate requirements remain open/partial. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-04: Review desk, stale sharing and applied design evidence (Codex)
 
