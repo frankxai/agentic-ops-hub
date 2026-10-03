@@ -22,35 +22,64 @@
 Continue task 01a0f725-83df-7ef1-8bc0-2979b9f33cd6 and existing
 OBJ-20261001-PREMIUM-PRODUCT-REVENUE-SPRINT. EUR10,000 paid product revenue
 excluding VAT/refunds by October10; actual revenue unknown, target unmet.
-Read ops/sessions/2026-10-02.md, existing AI creation strategy, quality
-policy and GenCreator issue5. Preserve all products/names/unfinished work.
-GenCreator PR135 implements selective source-bound host revision at 3a8204a,
-stacked on programme, not main. Exact Vercel preview and 30 focused browser
-cases pass; cloud full CI37015753555 succeeds (828 unit, 156 E2E passed,
-one flaky project-save retry, two skipped). Actual host-authored release
-post/five slides imported, exported and reopened with source phrases intact.
-Poolside exact-source PASS has no visual/buyer scope. Earlier failures and
-external drafting timeout remain evidence. Own worktree dependencies are
-partial from interrupted pnpm repair; use admitted existing tools/cloud.
-Next: investigate existing save/reload text-appending flaky result and
-reconcile with the admitted owner of open hydration PR95. Do not hide it
-with a retry or overwrite other lanes. Then complete second-source return
-and compare with a capable assistant plus creator's Canva/Figma workflow
-on accepted useful output, repair effort, recovery, time and cost. Review
-actual post/slides with independent editorial/design judgment before price.
-Revision requests do not survive page close; durable session continuation
-is a concrete next gap. Plain source quotations do not prove factual support.
-Keep existing PR67 rich authoring/media/recovery foundation and ADR007/010/012.
-No new canvas/OS/product name or superficial paid-template substitution.
-User has explicitly authorized design-agent orchestration; PP swarm HOLD
-prevents fanout until fresh admission allows it. Below15% disk no installs,
-worktree additions or media/model/build fanout. Do not close foreign tasks.
-Local policy loading is verified; universal runtime enforcement is not.
-Buyer demand, native-format portability, approved seller, purchase/delivery/
-refund/24h access and founder price signoff remain paid-release gates.
-Keep Creator Launch issue3/PR11 assets and FrankX issue124 revenue scope.
-Shared objective validation fails on foreign statuses; preserve pending
-evidence instead of replacing their records. Save hub handover and issue5.
+Read ops/sessions/2026-10-03.md and GenCreator issue5. Preserve all accepted
+products/names/unfinished work. GenCreator is the accepted CreatorPack/Mission.
+PR140 b69e75c contains the current outcome PRD plus intact cloud definition
+critique WARN. Build the complete source-backed edition: lead/complementary
+artifacts, stable identity, claim-level evidence, editable composition and
+reusable creator decisions. A post/carousel is a comparative specimen, not
+sufficient paid value. No renewed PRD definition PASS or customer study yet.
+Two actual Codex Cloud tasks returned, source/base/patches preserved. Recovery
+task task_e_6ac044e292508320a20f54abde9804da was preflighted, applied once and
+refined into PR141 2bf1cd3, stacked on PR135. It adds explicit same-browser
+checkpoint, disclosed retention of proposals that may reproduce the full source, renewed permission, source/target/
+identity binding, interruption guards, Web Locks and current-record restore.
+32 local focused unit tests/selected TypeScript/ESLint pass. Initial hosted
+CI d12db1d passed 835 unit/build, 173 E2E passed/two flaky/two skipped. The new
+retry exposed download-before-checkpoint timing; preparation now saves first
+or names the recovery failure while still delivering a brief. Changed context
+resets consent; replacement needs confirmation. Fresh code review found an
+unreadable/newer-schema overwrite path: recovery is now disabled unless the
+stored record parses, and ordinary brief creation preserves that raw record.
+Own successful slide restoration retains its success notice; a settled-render
+browser regression covers this. Failed replacement disables persistence for
+the unsaved request, preserving the prior checkpoint through cancellation.
+Selection feedback follows the latest write version; unsupported Web Locks
+disable recovery before opt-in. Clearing checks the current project inside the
+write lock, preserving the checkpoint when a draft changes during the wait.
+All eleven bot findings have author fix replies. Review Gate passes at 818a274;
+835 unit cases/type/lint/build pass at818a274. Browser192 passed/three failed/
+one flaky/two skipped: the three failures were one test attempting to edit
+Creator name inside collapsed Edition details. 2bf1cd3 opens that section,
+preserving its assertion and all runtime code. Final CI37087985987 at2bf1cd3
+SUCCESS:835 units/type/lint/build, browser195 passed/one existing flaky/two
+skipped. All39 new recovery scenarios pass. Review Gate37088033317 PASS;
+exact preview qzqyr3di5 READY. Read the session for preserved failures. The separate existing project-save retry/PR95 remains open.
+Poolside final selected-source reconciliation PASS is not craft/buyer proof.
+Earlier WARN, disputed FAIL, raw patch and corrections remain evidence.
+GitHub security-review bot hit its usage
+limit; no automatic security-review PASS follows from a status context.
+Production independently observed 1ca14c1/PR131; health200/degraded,
+ready503/managedAlphaReady false. PR139 has review/governance failures.
+PR138 at 85d5d17 requires a current-head founder approval and initial-repair
+merge decision; question pending. Do not forge approval or promote production.
+Next implementation: reuse existing rich production/renderer, add stable
+edition/source/artifact/element identity and typed editable composition,
+then verify actual export/reopen and delayed second/third source sessions.
+Run blinded capable-assistant-plus-design-tool comparison on source fidelity,
+usable artifacts, repair work/time/cost. No statistical superiority claim
+from prepared fixtures or twelve-person pilot. Inspect actual creator work
+with independent craft/buyer judgment before release or price.
+Local browser HOLD:2267MB RAM free, 4GiB floor; disk14.08% BOUNDED. No local
+installs/build/browser/model/fanout/worktree additions. Cloud is independent
+compute; one integrator. Use codex cloud exec --env 6ac034df8bcc81919562f019a0a9834b
+with a complete immutable-base/exclusive-files/bounded-attempt contract.
+Remaining quota not exposed. ADK/Agents SDK are runtime frameworks, API spend
+is separate. No blanket tasks or framework substitution for creator value.
+Native portability, approved merchant/price, purchase/delivery/refund/24-hour
+access, margin and buyer demand remain paid gates. Preserve Creator Launch
+issue3/PR11 and FrankX issue124. Shared objective validation remains blocked
+on foreign statuses; preserve pending evidence. Save hub handover and issue5.
 ```
 
 **[continuation · cloud, Claude Fable 5.1]** — build the next product slices from the open reviews
