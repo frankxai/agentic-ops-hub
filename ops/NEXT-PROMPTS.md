@@ -27,7 +27,7 @@ Review these heads as a checker, not the author. Run `node --test scripts/tests/
 - https://github.com/frankxai/arcanea-ai-app/pull/506 at `d0b37a047f`
 - https://github.com/frankxai/starlightintelligence.ai/pull/84 at `8471164` (`starlight-intelligence-web` is this same repository)
 
-Do not self-merge. Do not mark a draft ready only to start CI. FrankX 724 and 725 and GenCreator 93 stay held. FrankX 864 stays unmerged until CI is green and a provider other than the author approves. Do not edit the FrankX first viewport, GenCreator Territory B, or Arcanea canon. Jules create stays refused until the driver maps the CLI login create body. The last status had awaiting user feedback at 0 and one task already in progress, 8998031460721841797. Do not start another. The packet queue stays empty.
+Do not self-merge. Do not mark a draft ready only to start CI. FrankX 724 and 725 and GenCreator 93 stay held. FrankX 864 and 865 stay unmerged until CI is green and a provider other than the author approves. Do not edit the FrankX first viewport, GenCreator Territory B, or Arcanea canon. Jules create stays refused until the driver maps the CLI login create body. The last status had awaiting user feedback at 0 and in flight at 0. The packet queue stays empty.
 
 ### Estate design quality: reconcile acceptance and prove one downstream gate
 
