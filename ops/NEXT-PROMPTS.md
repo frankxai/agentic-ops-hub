@@ -27,7 +27,22 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT Frank-requested editorial assessment / draft500 at03816c1e61a70b72943a5b1f74302e8c53a01898:
+CURRENT community audience path / draft493 at658380ed5d75afc7159f5bbef1715255e41744ba:
+Read existing community task and private community-browser-20261003/handoff.json.
+Actual unchanged browser verifier first failed stale confirmation at7affa3b4,
+then six-line form correction passed nine grouped journeys per desktop/375touch/
+reducedmotion. Validation/pending/save/HTTP/connection/real10s timeout/retry/receipt
+clear/control bounds verified. All browser writes are intercepted fixtures.
+Native37092308687 all required contexts PASS; artifact11262911204 source hashes
+match. Builtmerge22d7942f parents acceptedmain79f3fb25 and candidate658380ed.
+Read-only Arcanea Supabase metadata confirms UNIQUE(email,source), RLS and public
+insert-only grants. No addresses read or writes. Current live-app DB binding,
+signup persistence/mail/demand remain unverified; inherited community content open.
+Next exact eight-file independent review, existing preview/live-binding and release
+proof. Preserve403/494/shared helper/API/schema and all following fronts.
+Saves276/5965003891,493/5965006509; hub98. Keep408 namedmerge/427 release gates.
+
+RETAINED Frank-requested editorial assessment / draft500 at03816c1e61a70b72943a5b1f74302e8c53a01898:
 Read https://github.com/frankxai/arcanea-ai-app/pull/500#issuecomment-5964790931
 and owning282 receipt5964793900. Lead recommends revision before selection:
 two morning repairs and explicit Atlantean choice; trim repeated theory exchange.
@@ -53,6 +68,9 @@ Local browser held; canceledVercelFPjeCQ is not preview/production evidence.
 No screenshot/visual approval/fulla11y/completion/customer/rights/release claim.
 Heart of Pyrathis source mojibake remains editorial work; do not silently rewrite.
 Next exact10file independent review and source-bound release/visual/reader proof;
+Prior tools-disabled Claude review attempt terminal at02:38UTC: weekly limit,
+reset October4 06:00 Amsterdam, USD0/tools0/no verdict. Private provider-reader
+receipt retained, no retry claimed. Preserved280/5965013690 and runner UTF-8 failure.
 human408 namedmerge,277/280publication and427release still required.
 Saves280 https://github.com/frankxai/arcanea-ai-app/issues/280#issuecomment-5964606374,490 https://github.com/frankxai/arcanea-ai-app/pull/490#issuecomment-5964611745 and hubdraft98.
 Keep all following repo/skills/plugin/MCP/creator/author/game/community/revenue fronts.
