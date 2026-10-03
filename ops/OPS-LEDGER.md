@@ -1176,3 +1176,82 @@ Added bounded cloud Build step uses frozen pinned Playwright1.63.0 and actual pr
 Heart of Pyrathis source has pre-existing mojibake in em-dash positions; manuscript unchanged and editorial quality remains open. Native/browser success proves these journeys, not book selection, customer value, licence or readiness. Independent final10file review remains pending; earlier60fc PASS/BIBLE warning does not approve this follow-up. Human named merge408, publication277/manuscript280 and release427 remain. No public content/visibility or production change.
 
 Both saves: [280](https://github.com/frankxai/arcanea-ai-app/issues/280#issuecomment-5964606374), [490](https://github.com/frankxai/arcanea-ai-app/pull/490#issuecomment-5964611745) and this three-file hubdraft98 handover. Keep chapter500/03816, scene487/cd2, creator496/76d1, readerMCPprivate8/6225 and wronglive0.5.1, unpublished launcher/root patch,499SDK/501plugin/502quest/AuthorOS/sharedmedia/runtime/community/revenue owners and all retained prompts. Licence/Heart/archive/rename/history/engine/customer demand/revenue and source integration remain open; broad goal active. Policy loading is not universal enforcement. No session-owned persistent server/worker; native watch exits and appf00097b5/hub941f1bbe release at verified handoff.
+
+## Community canonical entry paths, October 3
+
+Existing draft493 now at5812aeebaf1987fd33e2d346cf6a1a3752defdd7 makes the
+one-app repository strategy visible to readers/builders. Five-file follow-up
+over658380ed; full draft nine files. Cumulative diff SHA256
+870cc8790486263ded622563dd4fbd34fad45b67d6faf54ed83a826f6fa00c08.
+All community-main GitHub entries point to arcanea-ai-app or its app/book/packages/
+docs folders; books and Library entries stay in the same tab. Expired invite
+buttons reach the existing interest form. Gathering and creation concepts remain
+as ideas, with no unsupported schedules, unsupported creator credits, governance/canon
+voting, blanket reuse or install-readiness promise. Counts are replaced with
+usable entry actions. No new repo, canon pack, license, archive or backend.
+Fresh03:55UTC public GET confirms invite404/code10006 and both reader entry
+titles/200; authenticated GH confirms missing skills repo and archived integration.
+These entrypages do not establish full chapter-reader or production-source proof.
+
+Native37094670741 atc12569fb46 failed on the browser: inherited nested main
+landmarks in desktop/mobile, streamed-content readiness in reduced motion.
+Artifact11264385300, actual Chromium153.0.8010.12, JSON SHA256
+973603a2bceff8ce8f44422afd2c2da5df5a6df50991a9e07bfde42c9e1d4da2.
+Builtmerge745ff514 includes main79f3fb25 and sourcec12569fb46; Install/Lint/TS pass,
+Build/CI Status fail. No signup groups executed in that attempt. Correction uses
+the shared main and an explicit community-content container, awaits its heading
+and asserts one main landmark. All link/status and nine signup assertions remain.
+New four browser groups per mode cover canonical paths, hero interest anchor and
+actual books/Library navigation. Native37095208069 is running at5812aeebaf;
+terminal result will be appended below, without inferring success from intent.
+
+Pinned format/syntax/whitespace and enabled Gitleaks pass. UI files remain below500.
+API/helper/form/CI unchanged in this five-file follow-up; global footer/navigation,
+403, pricing494 and all other owners stay intact. First protected-source check
+stopped on an absent sparse unchanged helper; skip-worktree/HEAD evidence resolved
+it. Node child GH auth was absent; authenticated existing PowerShell CLI supplied
+availability evidence. No permission/authentication settings or security checks
+changed. Full current nine-file independent review pending; preserved Claude
+weekly-limit failure is terminal and no review verdict. All browser writes are
+intercepted; no real signup, join, message, local build/browser/install or live
+deployment. Current live DB binding, persistence/mail, visual/full accessibility,
+community value, demand and revenue remain unproven.
+
+Both saves belong in owning276/draft493 and agentic-ops-hub98. Keep full goal active:
+world/audience/releases first; retained manuscript500, reader490, creator496,
+consolidation487, privateMCP8, launcher/AuthorOS/SDK/plugin/quest/revenue and shared
+graph/runtime/media work stay open. Rights, Heart, archive/rename/history/engine,
+manuscript/human and408/427 release gates remain. App lane209eab67 and hubfe44bcb4
+are the only lanes owned for this slice; release them at verified handoff.
+
+Terminal receipt: current app draft493 is d67747968036cb9f58ac945ed8516d0caa61e876.
+Native37095775822 passes Install/Lint/TypeScript/Build/CI Status. Actual Chromium
+153.0.8010.12 passes13groups per desktop/375touch/reduced motion, including actual
+books/Library title and heading navigation, the interest anchor, single main and
+all9signup groups. Nine POSTs per mode intercepted; elapsed timeout10196/10171/10151ms.
+Artifact11264007606 is28121bytes; JSON SHA256
+c28b605d42ca9a6e2fe967ea6ad18bb1c2aade04913619e986dc3c10251403d8.
+Six source hashes match. Builtmergea986e72904bf2d22c222f49d4e898f505759d98b has
+verified parents acceptedmain79f3fb25 and sourced677479680. Console diagnostics
+retain localhost Vercel analytics404/MIME warnings and deliberate503/reset fixture
+errors; no clean production-console or full hydration claim.
+
+The second attempt37095208069/5812 is retained as FAILURE, artifact11264605147,
+JSON ac005dc6e67fc14f0ba2e63acc8a4078074d7d781d13a0e8f51f99b44079f4e0:
+single-main assertion passed; desktop/mobile encountered duplicate IDs outside
+the shared main, reduced motion passed link/anchor then lost focus during reload.
+Final verifier waits for browser load and scopes to the community container inside
+the shared main; all focus/URL/same-tab/recovery assertions retained. DOM ancestry
+and bounded console diagnostics added. Official Playwright navigation/hydration
+guidance consulted; waiting for load alone is not declared full hydration proof.
+Both failed artifacts/source packets are retained alongside the final packet.
+
+Final cumulative five-file diff SHA256
+f32acc569941209c0afce11a1f75e20a2481910de9cfc878c5be2a94c6ae3f2b.
+Full updated nine-file independent review remains pending; no new provider call,
+human acceptance, install, licence/canon promotion, production write or release.
+Suggested saves are now written: [owning276 receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-5965479425),
+[draft493 receipt](https://github.com/frankxai/arcanea-ai-app/pull/493#issuecomment-5965482609)
+and these three hub records/draft98. Existing app worktree is clean and pushed.
+All retained fronts/gates remain; broader goal stays active. No local persistent
+workers, watchers or server. Only app209eab67/hubfe44bcb4 release at handoff.

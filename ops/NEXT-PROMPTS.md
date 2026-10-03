@@ -27,7 +27,26 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT community audience path / draft493 at658380ed5d75afc7159f5bbef1715255e41744ba:
+CURRENT community canonical entries / draft493 atd67747968036cb9f58ac945ed8516d0caa61e876:
+Read existing community task and private community-entry-20261003/handoff.json.
+Five-file follow-up/full nine-file draft; canonical app folders plus books/Library
+same-tab entry paths, interest anchors and honest gathering/creation ideas.
+Initial37094670741/c125 and second37095208069/5812 browser failures retained.
+Final37095775822 all required contexts PASS, artifact11264007606/source hashes
+verified; builtmergea986e729 parents main79f3fb25 and sourced677479680.
+Actual Chromium passes13groups per desktop/375touch/reducedmotion; nine intercepted
+signup POSTs each, real10s deadline, failure/retry/receiptclear/bounds and actual
+reader entry title/headings. One shared main; scope within it and browser-load
+readiness retain focus/touch/URL assertions. Local Vercel analytics warnings and
+deliberate transport fixture console errors preserved; no production console claim.
+Next exact nine-file independent review when provider capacity permits, then existing
+preview/live-binding and release proof. No live signup/mail, full accessibility or
+visual approval, paid demand or installed curated bundles is inferred.
+Saves276/5965479425,493/5965482609 and hub98. Preserve403/494/API/helper/form/CI,
+every retained front below and408/427. Rights/Heart/archive/human choices pending.
+Goal remains active; no local persistent worker. Release only app209eab67/hubfe44bcb4.
+
+RETAINED community signup browser proof / draft493 at658380ed5d75afc7159f5bbef1715255e41744ba:
 Read existing community task and private community-browser-20261003/handoff.json.
 Actual unchanged browser verifier first failed stale confirmation at7affa3b4,
 then six-line form correction passed nine grouped journeys per desktop/375touch/
