@@ -17,6 +17,41 @@
 
 ## Current
 
+### FrankX: review and release the first editorial renewal slice
+
+Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
+website, all-article, six-audience objective and Frank's sentence-case/serif,
+human writing, current primary sources, truthful research and visual requirements.
+Read the appended [session](sessions/2026-10-03.md). Source commit
+`26051cbdb390271d8e46817fd96ffb93c5e3d060` is local in the owned
+`starlight/worktrees/frankx-editorial-renewal-20261003` checkout,
+branch `agent/codex/editorial-renewal-20261003`. It contains the 278-slug register,
+RENEWAL-PLAN.md, REVIEW-2026-10-03.md and SOCIAL-KIT.md under docs/ops/editorial.
+
+Obtain fresh machine/storage admission before heavy work: last posture prohibited
+new agents and storage was below 15%. Restore usable dependencies and browser
+capability through an owned lane; do not repair another owner's shared junctions
+or start broad installs. Source merge gate stops at TypeScript, lint has the same
+missing dependency, Next.js is absent, and strict slop audit has 16 existing
+findings needing contextual disposition. Ten Node/seven Python tests pass.
+
+Capture current desktop/mobile article states before further visual design;
+compare exactly three directions and inspect typography, focus, reflow, motion
+and navigation. Obtain independent reviews of the exact source revision. The
+three rewritten research-library, skills/agents/MCP and model-routing guides make
+no invented experiment or provider-ranking claim. Native cover drafts are below
+2048 pixels wide and are unaccepted; retain sidecars and both ledgers. Social
+companions stay draft until matching release and human posting approval.
+
+Port only reviewed changes to an owned production branch, preserving production
+PR825's research holds and newer affiliate/workshop/homepage implementations.
+Run required gates, inspect the preview, merge by PR and verify production SHA,
+routes, affiliate qualification, publication holds and rollback. Then work through
+every article register row and remaining audience/SEO/visual/data work. Update
+issue252 and this hub's receipt/ledger/prompt. Do not claim a green release from
+source tests or mark the broad goal complete. Maintain the other current prompts.
+
 ### Estate design quality: restore the trusted pilot gate and verify host use
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
