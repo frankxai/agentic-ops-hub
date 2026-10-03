@@ -21,7 +21,7 @@
 
 Review these heads as a checker, not the author. Run `node --test scripts/tests/test_craft_check.cjs` in each product draft, and `node --test core/tools/tests/test_craft_check.cjs` in starlight-agent-config. The emoji fixture verdict is reject and the status is 2. The sentence-case fixture verdict is accept and the status is 0. The session PostToolUse `post` hook uses those same verdicts and status codes.
 
-- https://github.com/frankxai/starlight-agent-config/pull/92 at `5469416`
+- https://github.com/frankxai/starlight-agent-config/pull/92 at `4195b99`
 - https://github.com/frankxai/frankx.ai-vercel-website/pull/862 at `0ab4c0943`
 - https://github.com/frankxai/gencreator.ai/pull/142 at `d8df31d`
 - https://github.com/frankxai/arcanea-ai-app/pull/506 at `d0b37a047f`
