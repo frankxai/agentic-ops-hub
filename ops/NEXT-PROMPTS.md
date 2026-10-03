@@ -27,7 +27,27 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT community canonical entries / draft493 atd67747968036cb9f58ac945ed8516d0caa61e876:
+CURRENT pricing browser recovery / draft494 at5af1f59949ba14e1cab9b9982b551290ae0dd18d:
+Read existing pricing task and private pricing-browser-20261003/handoff.json.
+Four-file follow-up/full seven files; shared helper/API/metadata/lockfile unchanged.
+Native37098242886 all required contexts PASS, artifact11264833552, four hashes
+match; builtmerge25c0b6aa parents main79f3fb25 and source5af1f59949 verified.
+Actual Chromium passes14groups per desktop/375touch/reducedmotion, nine intercepted
+POSTs each, real10s deadline/retry, receiptclear/bounds and actual world/library/
+privacy paths. Worlds first-visit dialog completed with keyboard/touch and focus
+return; no flag injection or Worlds source change. Two failed native artifacts and
+two PR-edited cancellations retained. Bounded20 console samples preserve localhost
+Vercel analytics warnings; no complete console/accessibility/production claim.
+Current-source Vercel dpl_Bq1DBnTZkEzPMuADWvNAHEQrkx1h is CANCELED/ignored-build
+despite GH SUCCESS. No usable preview, live signup/mail or paid demand inferred.
+Next complete exact seven-file independent review when provider capacity permits,
+then existing preview/live binding/persistence and release proof. Earlier reviews
+exclude new scope; do not invent provider/human approval or approve proposal prices.
+Saves276/5965801022,494/5965805144 and hub98; preserve403/493 and every retained
+front below. Goal active,408 namedmerge/427 release gates and human choices intact.
+No persistent local worker. Only app7daedb39/hub7ccbc34d release at handoff.
+
+RETAINED community canonical entries / draft493 atd67747968036cb9f58ac945ed8516d0caa61e876:
 Read existing community task and private community-entry-20261003/handoff.json.
 Five-file follow-up/full nine-file draft; canonical app folders plus books/Library
 same-tab entry paths, interest anchors and honest gathering/creation ideas.
