@@ -27,7 +27,28 @@ in place; bundles list repo/folder/full immutable commit. No new mirror or canon
 Frank owns licence, Heart 417/639, archive, rename, history, manuscript and release
 choices. No app merge without his named "merge N" under #408. #427 binds release proof.
 
-CURRENT pricing browser recovery / draft494 at5af1f59949ba14e1cab9b9982b551290ae0dd18d:
+CURRENT creator entry integration / draft505 at b6a2b30b270f91a03f75c67c67237739c4404ac9:
+Read the exact integration task and private creator-entry-integration-20261003/handoff.json.
+Six original drafts490/496/493/494/497/498 remain open/pinned. Fifty-file source packet
+binds main79f3fb25, full diffSHA d3b80155fcfb3cd4f869c0a66a0983205694a4b23fa34b8d32fe0fd39264afd4.
+Native37100660572 all required contexts PASS. Seven built-browser suites actually run
+together; builtmerge7f0f9520 parents main79f3fb25/candidateb6a2b30b verified. Downloaded
+artifact11266301492: seven reports and75 companions, source/image/sidecar bindings verified.
+Existing manuscripts read; complete synthetic drafts exported/imported/recovered, not live
+model/account proof. Community/pricing real deadlines; footer/MCP browser-clock deadlines.
+Local analytics/fixture console errors retained. Source-matched READY preview
+https://arcanea-ai-q31zewdtl-starlight-intelligence.vercel.app/
+at dpl_ADa1hjXDj1r6HUbs6JqeRUwuLQRW; eight GETs200/title/h1/dpl-bound, not hydrated preview.
+Next full exact fifty-file independent review when capacity permits (prior weekly limit
+resets October4), then actual authenticated creator generation/edit/save/reopen/export
+and human value/design acceptance. Fixture/CI/READY do not establish paid customer value.
+Do not rerun constituent reviews or transfer old PASS verdicts to this composition.
+Keep505 draft; licences/Heart/prices/game runtime, skill/bundle/reader release and
+408 namedmerge/427 source-bound release gates remain. Preserve all retained fronts below.
+Saves276/5966146196,505/5966146346 and hub98. No persistent local worker. Only app
+codex-ffa33610/hub codex-29277765 release at handoff. Full broad goal active.
+
+RETAINED pricing browser recovery / draft494 at5af1f59949ba14e1cab9b9982b551290ae0dd18d:
 Read existing pricing task and private pricing-browser-20261003/handoff.json.
 Four-file follow-up/full seven files; shared helper/API/metadata/lockfile unchanged.
 Native37098242886 all required contexts PASS, artifact11264833552, four hashes
