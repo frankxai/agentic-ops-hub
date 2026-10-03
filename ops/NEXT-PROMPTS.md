@@ -17,7 +17,7 @@
 
 ## Current
 
-### Jules: merge PR 871 when green, then the remaining song counts
+### Jules: delete the song counts still listed on issue 870
 
 Frank does not open the Jules UI. Read the appended Grok sections in
 [ops/sessions/2026-10-03.md](sessions/2026-10-03.md).
@@ -28,11 +28,9 @@ as `20eaf115` (issue 842), [PR 869](https://github.com/frankxai/frankx.ai-vercel
 as `6f204384`. Issue 824 stays open. The research pages did not gain citations.
 The 79 shared blog heroes were not replaced.
 
-[PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871) head
-`b0db351ab` deletes the song counts on the nav, about, creators, connect, vibe,
-lab, and frankx pages. Squash-merge it when CI, Review Gate, and Vercel are
-success on that head. It is not HOLD. Do not merge it while a required check
-is pending or failing. [Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
+[PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871) merged
+at 2026-10-03T18:32:50Z as `044c84472b5cbdffce12bb75ac9b6184dcc48efe`. Do not
+redo it. [Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
 lists the pages that still publish a song count. Delete the number. Do not
 write Catalog, Extensive, Vast, or Global in its place.
 

@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (FrankX PR 868 merged `20eaf115`, issue 842 closed; FrankX PR 869 merged `6f204384`, issue 824 stays open; PR 871 open for song headcounts; Jules 279 still in progress) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (FrankX PR 868 merged `20eaf115`, issue 842 closed; FrankX PR 869 merged `6f204384`, issue 824 stays open; PR 871 merged `044c8447`, issue 870 stays open; Jules 279 still in progress) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-03: FrankX research gate merged, song counts in review (Grok)
 
@@ -27,7 +27,7 @@ not applied. Comment:
 Jules session `9363571137422053674` finished and was rejected. It replaced
 song counts with Catalog, Extensive, and Vast. The deletion is
 [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871), head
-`b0db351ab`, not merged at this handover. 16 public-claims tests passed
+`b0db351ab`, squash-merged at 2026-10-03T18:32:50Z as `044c84472b5cbdffce12bb75ac9b6184dcc48efe`. 16 public-claims tests passed
 locally. [Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
 tracks the song counts still on coaching, creators, developers, music, team,
 and the Vibe OS product page.
