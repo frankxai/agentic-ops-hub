@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (community browser pilot passes; trusted guard repair and merge protection await review) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (49 community tests/36 browser checks and source review pass; locked guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-03: Community interface pilot and private guard repair (Codex)
 
@@ -13,10 +13,19 @@ pilot exposed arrow/open-shadow false positives; the inspector now traverses and
 hashes reachable open shadow roots under its existing budget.
 
 [Community PR13](https://github.com/frankxai/gencreator-community/pull/13), head
-`7b6b841`, passes product CI, pinned adoption and 32 browser checks across four
+`67f6dbb`, passes product CI with 49 tests, pinned adoption and 36 browser checks across four
 contexts/16 clean inspected states. Actual packet creation, invalid-input recovery,
 keyboard focus, Markdown download, mail draft, privacy and controlled rejection
-were exercised on CI merge `9533e27`. Visual/production acceptance stays open.
+were exercised on CI merge `7b65540`. Cookie/IndexedDB/cache/service-worker and
+WebSocket observations, plus controlled storage rejection/restoration, now join
+the privacy checks. Final scoped Poolside source review is PASS; earlier REVISE
+and inconclusive receipts remain preserved. Visual/production acceptance stays open.
+
+The pilot contains frozen repair `fac3b05` as a Git ancestor and protects all
+workflows plus the browser/pin/test inputs in a locked trusted-base registry.
+Separate regression cases deny registry removal and new workflow filenames
+despite a complete preservation brief. This registry change also requires Frank's
+current-head approval. Workflow presence and unit denial are not live merge enforcement.
 
 The base-owned Surface Guard cannot authenticate its private PR fetch.
 [Repair PR14](https://github.com/frankxai/gencreator-community/pull/14), head
@@ -30,6 +39,11 @@ red until the reviewed repair is merged; governance is locked and needs Frank's
 current-head approval. Main protection is currently off, with no rulesets.
 An explicit five-check protection proposal is prepared privately; no permission
 mutation or red-gate bypass occurred. See [session](sessions/2026-10-03.md).
+
+The exact-source Vercel preview is READY, but computer-use reports no available
+browsers; independent visual inspection remains pending. Fresh browser admission
+recovered RAM to 12,410 MB with BOUNDED posture and 10/8 task runtimes. No local
+heavy workload, task archive or process termination followed.
 
 Fresh read-only verification found 13 pinned design skills/56 projections intact;
 fresh host activation remains unverified. The full estate objective and both
