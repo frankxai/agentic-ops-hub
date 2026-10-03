@@ -5,6 +5,55 @@
 **Last sweep:** 2026-10-03 (Native named-plugin consumer passes with temporary task scope; Arcanea143 metadata/Config80/reader records preserved; release review/runtime still pending) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
+## Arcanea platform PR recovery and verified CI, 3 October 2026 (Codex)
+
+Goal `01a1020e-e898-7093-b301-b31684ccb819` remains active across all Arcanea repos,
+PRs, branches, skills/AGENTS/workflows, ChatGPT plugins, MCP, Supabase/Vercel,
+main/production and safe cleanup. Preserve the other goal01a10210 records through
+hub804e885 and all accepted app, canon and human release decisions.
+
+- [Platform draft45](https://github.com/frankxai/arcanea-platform/pull/45) at
+  `5d5be50f4ac9b5986d528c60e3f4c5b452f1ed55`, base `b4738df9`, includes originals
+  33/34/35/37/38/40/42 with eleven provenance-preserving cherry-picks. Only the
+  exact duplicate quality workflow commit was skipped after blob comparison.
+  All seven originals and branches remain open/preserved until reviewed integration.
+- The 77-file diffSHA `43543f7f63492d30f956fe582c613aa37191abdccdd58fb7a3ca98242d29aac2`
+  repairs durable single-writer memory/credential state and isolated tests. Runtime
+  Dates survive restart through validated ISO DTOs; corrupt files are preserved,
+  atomic replacement retries and rollback tested, encryption unchanged. Existing
+  adapters now explicitly reject unimplemented execution; availability checks stay.
+- Actual current-head native Node20 and22 full suites each execute3322 tests:
+  3314 pass,8 skip,0 fail. Packages37144402476 and full suite37144402624 pass;
+  quality37144402505 passes web TypeScript, production build and security. Lint
+  remains continue-on-error in that existing quality job; no gate was weakened.
+  Windows Node24 source recovery:15 cases,14 pass,1 POSIX skip,0 fail.
+- Actual MVP37144402469 still fails104 lint errors/224 warnings; deploy-apps37144402474
+  passes all-app TypeScript then fails content-api/database `eslint .` file selection.
+  Original15 test failures,49 web TypeScript errors and115 JSX quote errors repaired.
+  Inline SVG props typed, vector fallback tables allowlisted, Chrome settings typed,
+  useId unconditional. Original20 CRLF files restored; no semantic delta from that
+  line-ending correction. No live account, DDL, canon, API-model or UI acceptance claim.
+- Independent complete77-file review is pending. Keep45 draft; no platform main merge,
+  production deployment, branch deletion, package publication or cloud plugin rollout.
+  Foreign platform primary remains clean on Claude lane/cbeb69de. Own isolated lane
+  retains source/evidence; no node_modules, local build/server/watcher or new agent.
+- Root143/ae669538 remains draft. Additional complete four-file19,716-byte review
+  packetSHA076eda33 through native Grok4.7-build-fast/high ended180.28s with no verdict,
+  assistant/result/tool use/usage. Exact packet and terminal receipt retained; no
+  timeout-only retry or provider-outage inference. Root139/935b3d review stays pending.
+- Latest native disk148.29GiB/15.58% is above15 floor; no reclaim claimed. Prescribed
+  storage script is absent; source-only checkout admitted earlier, no dependency/build
+  growth added. Fresh admission is required for future material growth. Policy loading
+  does not establish runtime enforcement, authenticated creator recovery or release.
+
+Both saves: [platform44](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5972280779)
+and this hub98 session/ledger/current prompt. [Platform36](https://github.com/frankxai/arcanea-platform/issues/36#issuecomment-5972281000)
+records the adapter contract; [root142](https://github.com/frankxai/arcanea/issues/142#issuecomment-5972281221)
+records the additional no-verdict review. Private `arcanea-goal-20261003` manifests,
+complete diff, per-job logs, repair receipts and handoff preserve exact provenance.
+Next repair remaining lint/file selection, obtain exact-source independent review,
+then integrate through normal reviewed main/release gates. Overall goal stays active.
+
 ## Arcanea recovery review and release metadata verification, 3 October 2026 (Codex)
 
 Full goal `01a1020e-e898-7093-b301-b31684ccb819` remains active across every Arcanea
