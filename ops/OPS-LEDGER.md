@@ -2,7 +2,23 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (native PR routing/resource hold and current community/design continuation recorded; runtime and release gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Creator Studio cost source/cache hold, native PR routing, current FrankX and estate-design work recorded; integration/release gates remain open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+
+## 2026-10-03: Creator Studio cost source prepared; cache purge held (Codex)
+
+Frank requested consideration of build needs before cache deletion. No cache was
+purged. The owned private six-file extension reuses the exact published 54-file
+Studio candidate, preserving shared draft recovery. It adds editable model/cache/
+subscription/compute assumptions and an exportable same-workload comparison to
+the existing plan. Delta `8304b7f5caee24a569ddedf2ed99424dfad0e6ff0f84eb47422e5b2e1ee5b130`;
+strict cached-toolchain types, 15 Node and 24 Vitest cases pass. Source secret scan
+is clean. Partial-tree lint passes with discovery warnings; full build/browser/
+independent acceptance and canonical integration remain pending. No new install,
+service/model run or live release. See today's [session](sessions/2026-10-03.md),
+[issue30](https://github.com/frankxai/starlight-technology/issues/30) and the current
+prompt. The full AI-factory objective remains open; Ops PR157 stays draft/unapproved.
+
 
 ## 2026-10-03: Native PR model binding and resource recovery (Codex)
 
@@ -84,6 +100,48 @@ fully billed APIs without assuming native quota. Arithmetic fits the approved
 pilot ceiling; quality, incomplete charges and dispatch remain unproven. Codex
 Cloud read-only metadata worked; existing ready results were preserved. No
 enabled Computer Use browser was available for native-provider review.
+
+## 2026-10-03: FrankX editorial renewal (Codex)
+
+The full website/content goal remains open under
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source commit
+`26051cbdb390271d8e46817fd96ffb93c5e3d060` on
+`agent/codex/editorial-renewal-20261003` aggregates 278 slugs/769 source variants,
+prepares three evidence-led article rewrites, publication/affiliate boundaries,
+SEO standards, a six-audience renewal plan and shared typography drafts.
+Ten Node boundary tests and seven Python corpus tests pass; the enabled Gitleaks
+commit hook found no leaks. No source push, PR, merge or production deployment.
+
+The merge gate stops at missing TypeScript; lint also cannot load that dependency,
+and Next.js is missing. Strict language audit has 16 existing findings in nine
+files. Browser capture and independent review are unavailable. Two cover drafts
+miss the required minimum resolution and remain held with provenance. Machine
+admission prohibits new agents, and free storage fell below 15%. No installs,
+fanout or persistent processes were started. See the appended
+[session receipt](sessions/2026-10-03.md) and current pickup prompt. Preserve newer
+production work and existing research/hero issues; the first source slice cannot
+close the corpus or website renewal.
+
+## 2026-10-03: GenCreator identity authority and asset review (Codex)
+
+[Kernel PR30](https://github.com/frankxai/starlight-design-intelligence/pull/30)
+merged `2277678` from reviewed `7a44ebb`. CI37135167081 passes 61 tests, 42
+browser/process checks, audit and kernel/index validation; main CI37135502197 passes.
+Final scoped Poolside source PASS follows repaired provenance/scope/role findings;
+earlier REVISE and Cohere timeout receipts remain intact. This implements the
+owning product's documented Territory B approval, replacing the shared green
+palette with paper/ink/red and Instrument roles. Exact decision/font/license
+blobs and six byte/hash checks support the correction; wordmark/application/
+legal/rollout approvals are still pending. Downstream pins/pages/assets unchanged.
+
+The owning GenCreator Figma file is now readable and empty. Human choice from its
+existing anonymous shortlist precedes native reconstruction. Seven actual images
+were inspected and hashed. The old 166 filename matches included 44 browser
+extension files, 16 third-party logos and 2 illustrative logo-generator images;
+those are excluded from identity accounting. No master status or approval follows
+from a raster, 3D lockup, outline license, model preference or filename. Full
+estate design quality remains open; current community approvals below still apply.
 
 ## 2026-10-03: Community interface pilot and private guard repair (Codex)
 

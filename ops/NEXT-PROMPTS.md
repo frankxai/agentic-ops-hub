@@ -17,51 +17,103 @@
 
 ## Current
 
-### AI-factory architecture: extend the accepted plan and prove execution
+### AI-factory architecture: integrate the preserved Studio cost extension
 
-Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` using this day's
-[session](sessions/2026-10-03.md), private
-[agentic-ops issue149](https://github.com/frankxai/agentic-ops/issues/149) and
-[Starlight Technology issue30](https://github.com/frankxai/starlight-technology/issues/30).
-At the latest close disk was 14.99797% free: below the 15% unattended/worktree floor.
-The real revised adapter returned `hold` on fresh PP/filesystem evidence. Keep new
-worktrees, installs and unattended/model work held until fresh admission recovers.
-Continue bounded text/read-only work; no cleanup or process killing is authorized.
+Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, today's
+[session](sessions/2026-10-03.md), [Technology issue30](https://github.com/frankxai/starlight-technology/issues/30)
+and private [Ops issue149](https://github.com/frankxai/agentic-ops/issues/149).
+Keep the full one-Queen/subscription/API/cloud/team/business and reusable Studio
+goal intact. Frank asked to consider build needs before clearing the npm download
+cache. The purge is held; there is no cache-clearance approval. Fresh Windows disk
+was14.9969%, so new local worktrees/installs/unattended model work remain held.
+Existing cached remote Node24.21/Next16.3.6/React19.3 dependencies supported bounded
+checks without installs. This does not prove a clean/offline Windows build.
 
-The existing native PR review loop now has draft
-[Ops PR157](https://github.com/frankxai/agentic-ops/pull/157), exact head
-`55f4a9e1a744b62286a9836fa13bf9d2843f05b7`: explicit model arguments, requested/served
-model distinction, fresh per-review admission, resource floors and empty-output
-recovery. Ninety local tests and both Windows/Linux portable CI jobs pass. A real
-read-only integration held unavailable independent quota without launching a model
-or writing review state. Exact-head native xAI review timed out; its client stopped
-but remote cancellation is unconfirmed. Obtain a supported independent verdict
-after transport/allowance recovery; preserve the frozen head and avoid blind timeout
-retries or automatic paid fallback. Verify managed security and reviewed dispatch
-authority before adoption; no merge or activation is established. The separate
-Queen broker PR156 and other owners' source remain intact.
+Preserve the published 54-file Studio candidate at main base4588a240, fingerprint
+`7dd5c36c2789d05eb70bd5b31ecbf7f4e547d5e5f66704447611ce029c359ad5`;
+[source comment](https://github.com/frankxai/starlight-technology/issues/30#issuecomment-5967242898).
+Use its concurrency overlay, not the earlier reconciled saver. The private
+operating-architecture-20261003/creator-cost-extension has an exact six-file delta
+`8304b7f5caee24a569ddedf2ed99424dfad0e6ff0f84eb47422e5b2e1ee5b130`;
+source-delta.json SHA3194ed8775d2e8a1696776d979108b39e3b9cc618844a8f8763bbc0dd6a30658.
+Strict/noEmit, 15 Node and 24 targeted Vitest cases pass; source scan is clean.
+Partial-source lint has discovery warnings. No canonical product source integration,
+full build, rendered review or independent acceptance is established. Acquire an
+admitted owned canonical lane, check exact source movement, apply the published
+candidate once, then reconcile this additive delta by expected-before fingerprints.
+Retain all equipment/private context and Web Locks/conflict/export behavior. Verify
+complete lint/types/tests/build, desktop/mobile editing/export/denial and mixed-version
+recovery. Obtain independent provider/design/buyer/privacy/licence/commercial gates
+before native Git/Vercel release. Keep failed attempts and source provenance.
 
-The private operating-architecture-20261003 report is `5e42affcfd7c2ee4bb99862784cd1788badad94a255b09d71845d755ae54fa72`: 33 local checks
-and 21 actual Chrome checks pass; independent native-provider attempts are
-incomplete. Obtain a compact frozen exact-revision review and reconcile actual
-invoice, reset and allowance evidence. Preserve all accepted DecisionGraph/AI
-Creator Studio source and unfinished patches; do not create another planner,
-Queen, cost ledger or service business. Integrate separate maker/reviewer billing,
-provider-local cache assumptions, correctly scaled rate units and typed source
-freshness into the existing editable complete system plan in an owned lane.
-Retain the existing approved EUR100/month incremental Queen pilot ceiling until
-an explicit revision; calculator scenarios do not revise it. Import the private
-matched paced plans to compare fully API-billed cold inputs without invented
-native quota. Review transports still need a usable verdict and cancellation
-acknowledgment; the browser UI route was unavailable. Then prove one
-recoverable remote mission through existing atomic reservations/leases, supported
-native authentication and tools, including denial, quota exhaustion, cancellation,
-duplicate effects, stale fences, integration and serving SHA. Keep finance private.
-Fresh PP/storage admission precedes new heavy work. Preserve all other prompts
-and update hub records plus the existing product issues. Original goal stays open;
-report/test completion does not establish running teams or paid-product readiness.
+The researched HTML remains5e42affc with33 local/21 Chrome checks and native review
+pending. Ops draft PR157 remains55f4a9e with90 local cases and Windows/Linux CI;
+its real dry-run/floor hold is evidence, not a completed review or mission. Native
+xAI timed out; client stopped but remote cancellation is unconfirmed. Avoid blind
+retries and paid fallback. Verify managed security, reviewed dispatch authority and
+supported native quota before adoption. No activation/merge is established.
 
-### Estate design quality: restore the trusted pilot gate and verify host use
+Then prove one useful recoverable installed creator/remote mission and its serious
+alternative using the existing leases/budgets/tools, including denial, cancellation,
+quota exhaustion, duplicate effects, stale fences, integration and serving SHA.
+Keep the approved EUR100 incremental Queen pilot cap, actual finance private and
+unknown metrics unknown. Calculator prices/acceptance/native shares confer no
+dispatch permission or measured savings. No new Queen/planner/service business.
+Save hub records and the existing product issues; preserve every other owner/prompt.
+
+### FrankX: review and release the first editorial renewal slice
+
+Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
+website, all-article, six-audience objective and Frank's sentence-case/serif,
+human writing, current primary sources, truthful research and visual requirements.
+Read the appended [session](sessions/2026-10-03.md). Source commit
+`26051cbdb390271d8e46817fd96ffb93c5e3d060` is local in the owned
+`starlight/worktrees/frankx-editorial-renewal-20261003` checkout,
+branch `agent/codex/editorial-renewal-20261003`. It contains the 278-slug register,
+RENEWAL-PLAN.md, REVIEW-2026-10-03.md and SOCIAL-KIT.md under docs/ops/editorial.
+
+Obtain fresh machine/storage admission before heavy work: last posture prohibited
+new agents and storage was below 15%. Restore usable dependencies and browser
+capability through an owned lane; do not repair another owner's shared junctions
+or start broad installs. Source merge gate stops at TypeScript, lint has the same
+missing dependency, Next.js is absent, and strict slop audit has 16 existing
+findings needing contextual disposition. Ten Node/seven Python tests pass.
+
+Capture current desktop/mobile article states before further visual design;
+compare exactly three directions and inspect typography, focus, reflow, motion
+and navigation. Obtain independent reviews of the exact source revision. The
+three rewritten research-library, skills/agents/MCP and model-routing guides make
+no invented experiment or provider-ranking claim. Native cover drafts are below
+2048 pixels wide and are unaccepted; retain sidecars and both ledgers. Social
+companions stay draft until matching release and human posting approval.
+
+Port only reviewed changes to an owned production branch, preserving production
+PR825's research holds and newer affiliate/workshop/homepage implementations.
+Run required gates, inspect the preview, merge by PR and verify production SHA,
+routes, affiliate qualification, publication holds and rollback. Then work through
+every article register row and remaining audience/SEO/visual/data work. Update
+issue252 and this hub's receipt/ledger/prompt. Do not claim a green release from
+source tests or mark the broad goal complete. Maintain the other current prompts.
+
+### Estate design quality: apply accepted authority, preserve pilot gates and verify host use
+
+New continuation: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
+and final scoped source PASS. Read the current GenCreator
+SOURCE_AUTHORITY.md and runtime pack. The owning product ADR-011 at `1ca14c1`
+documents accepted Territory B; a stale shared green palette has been corrected.
+Wordmark selection, Territory B application quartet, gate7/gate8, legal and rollout
+remain pending. Preserve the community pilot's current SHA and accepted product;
+new pack adoption needs its owner's pin change and application QA. Figma file
+`rQRcBL1Kg5TMzEYa5TO9On` reads successfully and contains one empty page. Await
+Frank's explicit X/Y/Z wordmark choice before native reconstruction. Do not infer
+today's write capability from reads or the prior quota report. Reconcile other
+brands against their actual approval sources. The old 166 filename matches
+include extensions, third-party logos and illustrations; private classification
+and seven actual image/hash observations preserve that distinction. No new
+identity, master, font deployment, visual release or full-estate acceptance was
+approved by the source review. Continue the still-current pilot path below.
+
 
 Continue source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` from
 [session](sessions/2026-10-03.md) and
