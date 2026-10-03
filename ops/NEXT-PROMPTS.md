@@ -17,111 +17,126 @@
 
 ## Current
 
-### AI-factory architecture: review the integrated Creator Studio and prove a useful mission
+### AI-factory architecture: refine reviewed Creator Studio and prove a useful mission
 
-Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, today's
-[session](sessions/2026-10-03.md), [Technology issue30](https://github.com/frankxai/starlight-technology/issues/30)
-and private [Ops issue149](https://github.com/frankxai/agentic-ops/issues/149).
-Keep the full Queen/subscription/API/cloud/team/creation/business objective intact.
+Continue source task01a101b1-9d38-7fa1-b1f0-dec923631d7f, today's session,
+[Technology issue30](https://github.com/frankxai/starlight-technology/issues/30),
+private Ops issue149 and hub issue102. Preserve the full Queen/subscription/API/
+cloud/team/creation/business goal and every other product/unfinished prompt.
 
-Creator Studio is integrated in [draft PR34](https://github.com/frankxai/starlight-technology/pull/34),
-head `b8b079ffba5c8256d9febe206d68f7ac7302bc2f`. Reuse the owned
-starlight/worktrees/starlight-technology-creator-factory-20261003 checkout and
-docs/ops/CREATOR-FACTORY-INTEGRATION-20261003.md; do not reapply older source packets.
-Runtime source efd760e121785e3e924eba96553cdfc5754307a40848fd789b5590cacde383f5 has
-full Windows lint/types/build,100 Vitest/11 editorial tests and15 Chrome checks.
-CI37141130877 passes. Exact Git preview is READY at
-https://starlight-technology-71skdpg8l-starlight-intelligence.vercel.app/studio ;
-HTTP200/deployment ID/noindex checked. Remote browser interaction remains a
-separate scope from the successful optimized local Chrome tests. Production main4588
-was preserved. Seven captures/sidecars/both ledgers exist; memory sync is pending.
+Reuse the owned Technology creator-factory worktree and draft PR34 at
+2a1063937f02cf56229a2fc09dc95eda546fc22f; no old packet reapplication. The exact
+known-cost cap bug is fixed. Windows toolchain/lint/types/102 Vitest/build and
+CI37144250102/11 editorial tests pass; preview dpl_ABg3nVuMnHhfCkDyadwrXsoVREC8
+is READY, Studio HTTP200/deployment ID/noindex checked. The15 Chrome checks and
+seven captures/sidecars/ledgers remain bound to earlier b8b079ff; memory sync pending.
 
-Frank asked to consider build needs before clearing the npm cache. Keep the purge
-held. Space recovered externally above15%, so one bounded worktree/build was
-admitted after fresh PP and the quick sensor. Offline install reused340 packages
-then lacked caniuse-lite; a frozen retry fetched25. No cache purge or offline-build
-claim. Recheck PP/storage before heavy work and preserve foreign processes/locks.
+Native Google now completes small pinned reviews, but the whole four-file request
+timed out with empty partial output. Native Opus completed the same source in147.6s
+with WARN and confirmed the cost/cap arithmetic. Preserve every raw review, packet
+failure and source hash. Resolve monetary input precision; supply the complete
+Studio caller to assess recovery findings. The caller already pauses unreadable
+autosave and asks before replacement. Non-locking old writers remain best-effort.
 
-Obtain independent exact-commit provider/security and rendered design/buyer review,
-then privacy/licence/commercial acceptance before release. Native Google catalog
-was reachable, but the corrected print request returned empty response/zero usage
-after128.516s. Stderr reported ineffective plan mode with slash commands disabled
-and a print timeout while the turn remained in progress. Requested read-only mode
-is not proved enforced; client stopped, remote cancellation unconfirmed. Previous
-Claude quota and native xAI/Google failures remain historical evidence. Diagnose
-provider availability or use an explicitly admitted budgeted route; avoid blind
-retries and paid fallback. Lead score28/30 and passing tests confer no acceptance.
+Native /usage is available and reports weighted groups; private Ops149 carries
+actual before/after observations. Refresh before dispatch; infer no absolute token
+balance or invoice. The88,891-token Opus request demonstrates context overhead.
+Plan expansion plus inherited always-proceed/60tools is not hard confinement.
+Prove tool denial/isolation before wiring this route into autonomous PR signing.
+Do not add subscriptions or paid fallback based only on a catalog or quota row.
 
-The researched HTML remains5e42affc with33 local/21 Chrome checks and review open.
-Ops draft PR157 stays55f4a9e with90 local cases and Windows/Linux CI; reviewed
-dispatch authority, managed security, native quota and activation/mission remain
-unproven. Preserve its actual dry-run/disk hold behavior. Do not activate on a
-calendar or price-table assumption. Keep the approved EUR100 incremental pilot
-cap, private finance and unknown metrics unknown.
-
-Prove one useful recoverable installed creator/remote mission and the serious
-alternative through existing leases/budgets/tools, including denied tools, retry,
-quota exhaustion, cancellation, duplicate effects, stale fences, integration and
-serving SHA. Then continue the original full brand/team/business scope. Preserve
-every other product, source task and unfinished prompt. Save this hub and existing
-product issue records; no new Queen/planner or service-first business substitution.
+Keep the cache purge held. Builds passed using cached pnpm packages plus25 missing
+downloads; this does not prove every npm-cache object is needed. Recheck current
+PP/storage before heavy work; preserve other owners' processes, locks and checkouts.
+Obtain wider source/security, rendered design/buyer and privacy/licence/commercial
+acceptance before release. Keep Ops PR157 at55f4a9e draft/unactivated and the approved
+EUR100 incremental pilot distinct from calculator assumptions. Preserve the HTML
+5e42affc study and its33 local/21 Chrome checks. Then prove a recoverable installed
+creator/remote mission and serious alternative through existing rails and continue
+the full brand/team/business objective. Save the hub ledger and existing issues.
 
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website, all-article, six-audience objective and Frank's sentence-case/serif,
-human writing, current primary sources, truthful research and visual requirements.
-Read the appended [session](sessions/2026-10-03.md). Source commit
-`6b410b6b7b4cb9c829a03139dd3384095976f975` follows `26051cbdb` and is local in the owned
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252), preserving the full
+website/all-article/six-audience objective, sentence case, existing serif identity,
+human writing, grounded research, current partners and meaningful visuals.
+Read the appended [session](sessions/2026-10-03.md). Local source commit
+`74a4012d1f8e8850e0d6c3c083ab61b5cb9fc655` follows `6b410b6b7`/`26051cbdb`, in the owned
 `starlight/worktrees/frankx-editorial-renewal-20261003` checkout,
-branch `agent/codex/editorial-renewal-20261003`. It contains the 278-slug register,
-RENEWAL-PLAN.md, REVIEW-BATCH-02.md, INTELLIGENCE-INTAKE.md, hash-bound progress
-receipts and SOCIAL-KIT.md under docs/ops/editorial. Five revisions are prepared,
-four production corrections are preservation observations, and 269 rows remain
-unreviewed. No row is release-accepted.
+branch `agent/codex/editorial-renewal-20261003`. Read REVIEW-BATCH-03.md,
+RENEWAL-PLAN.md, the exact-hash article register/progress and held SOCIAL-KIT.md
+under docs/ops/editorial. Twelve revisions await independent review; four
+production corrections are observations to preserve; 262 rows remain unreviewed.
+No article has release acceptance. Prior hub PR113/main CI passed; no website
+release follows from that documentation evidence.
 
-Obtain fresh machine/storage admission before heavy work: build posture was
-bounded and new agents remain prohibited. Storage recovered to approximately
-16.17%, but the prescribed quick sensor is missing and its stored plan is stale.
-Restore usable dependencies and browser
-capability through an owned lane; do not repair another owner's shared junctions
-or start broad installs. Source merge gate stops at TypeScript, lint has the same
-missing dependency, Next.js is absent, and strict slop audit has 16 existing
-findings needing contextual disposition. Thirty-eight distinct tests pass:
-13 Python collector, six Node intake, nine Python corpus, ten Node boundaries.
-Both new articles compile as MDX. No source push, complete CI or website deployment.
+Recheck PP/storage before heavy work. Build admission was bounded; ten runtimes
+kept new agents paused. An existing clean tool at blob b20fdf718b3f791b1062f13586974f323217e189
+ran Quick/NoWrite from agent-config-outcome-intent without modifying that checkout
+or the shared plan: 149.6 GiB / 15.7% free. Canonical sensor path is still missing;
+its older census/baseline does not grant cleanup permission. Do not mutate shared
+borrowed dependencies or other owners. Missing TypeScript/Next.js prevents the
+full source gate; 16 known strict-slop findings need contextual review in named
+files. Thirty-eight deterministic tests pass. Seven new articles compile as MDX.
+No source push/PR, accepted design or website deployment has occurred.
 
-Capture current desktop/mobile article states before further visual design;
-compare exactly three directions and inspect typography, focus, reflow, motion
-and navigation. Obtain independent reviews of the exact source revision. The
-five prepared guides cover the research library, skills/agents/MCP, model routing,
-music evidence and research intake. They make no invented experiment or provider
-ranking claim. Preserve four newer production science/music corrections instead
-of replacing them with older private versions. Native cover drafts are below
-2048 pixels wide and are unaccepted; retain sidecars and both ledgers. Social
-companions stay draft until matching release and human posting approval.
+The seven new guides cover pinned Vibe OS source/CLI failures, a prompt-to-take
+workflow, creative-session music, an editorial topic map, AI-search access/panel
+measurement, evidence-led ACOS editorial work and a public campaign method.
+Their Vibe receipt checks source 90b902fb9c6835cebcd58aae9221049d4aa7232e; code
+preset count is 15, JSON key can disagree with its prompt, and product/license
+claims need exact-version reconciliation. No audio or clinical trial is claimed.
+The full old 2024 plan is preserved privately under docs/strategy/editorial;
+exclude it and private intake/ops records from any public production port.
 
-Continue bounded source work through the register while release access recovers.
-Inspect the three Vibe OS articles for remaining neuroscience/operating claims,
-then the next stale frontier/SEO cluster using exact production source versions.
-The new ai:scan is real metadata intake: its manual run checked four feeds and
-retained 158 records, 89 recent. It measures no keyword demand or model quality.
-Keep the initial partial receipt, source states, dates and hashes. Do not activate
-a routine from these files or describe the intake as a daily service. Obtain
-actual Search Console/OpenRouter data before publishing demand/usage analysis.
+Continue bounded review through the next stale frontier/production-agent cluster,
+using exact production variants and current primary sources. Preserve the prior
+music evidence/research intake revisions and four August production corrections.
+The real scanner's four-feed manual receipt is metadata, not demand or model
+quality. Obtain actual Search Console account/export and licensed OpenRouter
+usage data before claiming observations. Never describe the intake as a daily
+service or activate a routine from a document.
 
-Port only reviewed changes to an owned production branch, preserving production
-PR825's research holds and newer affiliate/workshop/homepage implementations.
-Run required gates, inspect the preview, merge by PR and verify production SHA,
-routes, affiliate qualification, publication holds and rollback. Then work through
-every article register row and remaining audience/SEO/visual/data work. Update
-issue252 and this hub's receipt/ledger/prompt. Do not claim a green release from
-source tests or mark the broad goal complete. Maintain the other current prompts.
+Recover usable admitted build/browser and independent provider-review capability.
+Capture current desktop/mobile states before further visual design; compare three
+considered directions and inspect typography, focus, reflow, motion and navigation.
+Review the exact revision independently. Earlier native covers remain unaccepted
+and below 2048 pixels wide; preserve sidecars/ledgers. The 12 social companion
+sets remain held until matching release and human posting approval.
 
-### Estate design quality: apply accepted authority, preserve pilot gates and verify host use
+Before porting accepted public files, compare with fresh production main and
+preserve PR825's holds and newer affiliate/workshop/homepage implementations.
+Use an owned production branch, run required checks, inspect the existing preview,
+merge normally and verify deployed SHA, routes, links, publication boundaries and
+recovery. Update issue252 and this hub receipt/ledger/current prompt. The broad
+goal stays open. Preserve the other current prompts and unfinished work.
 
-New continuation: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
+### Estate design quality: repair default discovery and prove applied host use
+
+Kernel PR31 merged `8729fc3e136686b2a967a82e6f02d79f25c512dd` from scoped-reviewed
+`f81346993ac9c9a5c575f6cb7981d9318e8c549d`. CI37142810316 passes 15 Python cases,
+61 Node tests/42 browser-process checks; main CI37143006516 also passes. Read
+`docs/native-codex-design-probe.md` and the appended session. The actual native
+0.160.0 app-server fixture passes after the required Impeccable 0.1.11 cache repair,
+without changing global hooks/trust/config. Its source hash binds the run to this
+revision. Native prompt-input rendering alone did not dispatch UserPromptSubmit;
+offline projection verification did not detect the missing engine. Retain both
+checks for their own scopes and require actual native hook events for execution.
+
+Advance the next consequential host gap: default discovery enables 829 rows,
+exhausts its budget and omits 417 entries. The 27-row selection is only a fixture
+thread override; it is not a global repair. Resolve the missing gateway/source
+dependencies in an owned configuration lane, with fresh machine/storage admission
+before any new worktree/install. Do not edit the other-owner primary config tree
+or borrow another harness's model/permissions. Preserve explicit disables,
+system/security skills and source provenance; scoped config changes require the
+owning review, rollback and native recovery proof. Verify fresh selected/read/
+applied/refined artifact evidence on Codex and every other actual harness. A
+deterministic local Write fixture cannot close real model, shell/MCP, design or
+bounded-loop acceptance. Keep the entire 20+ brand/production/e2e goal open.
+
+Prior authority slice: kernel PR30 merged `2277678` from `7a44ebb`, with passing PR/main CI
 and final scoped source PASS. Read the current GenCreator
 SOURCE_AUTHORITY.md and runtime pack. The owning product ADR-011 at `1ca14c1`
 documents accepted Territory B; a stale shared green palette has been corrected.

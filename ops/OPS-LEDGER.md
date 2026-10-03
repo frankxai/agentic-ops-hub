@@ -2,8 +2,56 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Creator Studio integrated and native/CI/preview verified; cache preserved; current FrankX and estate work preserved; independent release gates open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (Creator Studio cap corrected/native review WARN; native Codex design runtime proved; FrankX batch 3 and other unfinished work preserved; release gates open). Earlier dated sweeps remain below. Cadence: end of each working session.
 
+## 2026-10-03: Creator cap fixed; native route comparison completed (Codex)
+
+Technology draft PR34 is2a106393: known-cost cap breach preserved with unknown fees.
+Full Windows102 tests/build and exact CI37144250102/READY HTTP200 preview pass.
+Google three-file review found the bug; whole-four-file Google timed out. Native
+Opus reviewed the same source in147.6s with WARN, confirmed costs/cap and named
+precision/recovery boundaries. Scope, packet failures and dispositions remain in
+today's session and issue30. Native quota data stays private in Ops issue149.
+Hard tool confinement, wider design/buyer/security, commercial acceptance and
+useful autonomous mission remain open. Cache preserved; no production promotion.
+
+
+## 2026-10-03: Native Codex design execution and recovery (Codex)
+
+[Kernel PR31](https://github.com/frankxai/starlight-design-intelligence/pull/31)
+merged `8729fc3` from reviewed `f813469`. Exact-source CI37142810316 passes 15
+Python cases, 61 existing Node tests, 42 browser/process checks, audit and existing
+validation. Main CI37143006516 passes on the merged revision. Local
+Python passes 14 with one unprivileged-symlink skip; absent ajv/pngjs prevented
+local Node execution. No local dependency install or missing-test PASS is claimed.
+
+The native Codex 0.160.0 app-server probe passes in 14.938 seconds: both turns
+complete, allowed handler 1/denied handler 0, 24 completed hooks/one security block,
+required Impeccable post/Stop runs complete, routing and its description delivered,
+shared configuration unchanged, process/server closed. The source SHA-256 matches
+the reviewed Git blob. Native failures had exposed required engine 0.1.11 absent
+despite intact skills/trusted hooks and cached 0.1.5. Installing the official 17 MB
+binary after storage recovery, with release digest/sidecar verification, restored
+execution. Hook definitions, trust and security checks were preserved.
+
+Final scoped Poolside source review is PASS. Earlier REVISE, timeout and truncated
+review receipts remain intact. Exclusive contained writes and early HTTP bounds
+were refined; a real-socket regression reproduced unbounded header reads and
+verified the fix before release. Another pre-write symlink check adds no atomic
+protection beyond the existing exclusive creation. This review covers source,
+and the native run covers a deterministic dynamic-tool fixture; neither certifies
+model-applied craft, real refinement, shell/MCP coverage or visual acceptance.
+
+Default native discovery still has 829 enabled rows and omits 417 catalog entries
+under its budget. The fixture's 27-entry override restores the design description
+only within its own threads. Global catalog repair, fresh applied artifacts on
+other harnesses, missing canonical config sources and estate adoption remain open.
+The full goal and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12)
+stay active. Human community approvals and GenCreator wordmark choice below are
+unchanged. Machine storage crossed 14.89% then recovered above 15%; the private floor
+receipt and this owned handover preserve the event because routing refused writes
+to another owner's Queen checkout. No cleanup or other-owner mutation occurred.
+No session-owned worker, server or watcher remains. See [session](sessions/2026-10-03.md).
 
 ## 2026-10-03: Creator Studio integrated and verified; cache retained (Codex)
 
@@ -124,32 +172,34 @@ enabled Computer Use browser was available for native-provider review.
 
 The full website/content goal remains open under
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source now ends at
-`6b410b6b7b4cb9c829a03139dd3384095976f975`, following `26051cbdb`, on
-`agent/codex/editorial-renewal-20261003`. The 278-slug/769-variant register binds
-five prepared revisions and four observed production corrections to exact text
-hashes; 269 rows remain unreviewed. No row has independent/release acceptance.
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at
+`74a4012d1f8e8850e0d6c3c083ab61b5cb9fc655`, following `6b410b6b7` and `26051cbdb`, on the owned editorial branch.
+The 278-slug/769-variant register now binds 12 prepared revisions and four
+observed production corrections to exact text; 262 rows remain unreviewed.
+No row has independent or release acceptance.
 
-Batch 2 corrects music effect-size/brain-state promises and unsupported daily
-research operation. The former simulated scanner now retrieves four primary
-feeds and preserves source/failure evidence. The manual October 3 run retained
-158 records, 89 in its two-week window; these are unreviewed metadata, with no
-invented demand, score or model-performance claim. The initial partial run remains.
+Batch 3 revises seven Vibe OS/SEO articles, removes unsupported operating,
+brain-state and ranking claims, and preserves the old 2024 plan internally.
+An actual pinned Vibe prompt-code check reproduces inconsistent key output and
+unimplemented flags. Current search-provider guidance supports a defined access/
+measurement method, with no observed FrankX account or citation result. Seven
+social companions and visual briefs remain held; the kit now covers 12 articles.
+The preceding four-feed metadata intake and two article corrections remain intact.
 
-Thirty-eight distinct deterministic tests pass; both new articles compile as MDX.
-The enabled Gitleaks hook found no leaks. Source merge gate still stops at missing
-TypeScript, and Next.js is missing. No source push/PR or website deployment.
-Browser inventory is still empty and independent review remains pending. Two
-earlier cover drafts remain held with provenance. Build admission is bounded;
-new agents remain prohibited. Storage rose to approximately 16.17%, but the
-prescribed quick-sensor path is missing and its last stored plan is stale. No
-install, new worktree, media run, schedule or persistent process was started.
+Thirty-eight deterministic tests pass; seven new articles compile as MDX.
+Gitleaks scanned 260.16 KB with no leaks. Source gate stops at missing TypeScript;
+Next.js is absent. No source push/PR or website deployment. Browser/capture and
+independent review remain pending. Earlier cover drafts remain held with
+provenance. Fresh build admission is bounded and no new agents are admitted.
+An inspected existing storage sensor ran without writes: 149.6 GiB / 15.7% free;
+canonical primary path is still absent and underlying census is older. No install,
+new worktree, media, cleanup, schedule or persistent process was started.
 
-See the appended [session receipt](sessions/2026-10-03.md) and current pickup prompt.
-Preserve newer production corrections and research/hero issues. Continue source
-reviews while recovering admitted release capability; the full website/corpus
-renewal remains active. The prior handover was merged through hub PR110 with
-green main CI; that was estate documentation, not a website release.
+See [session](sessions/2026-10-03.md) and the current pickup prompt. Continue
+bounded source review while recovering release capabilities. Preserve production
+holds/newer changes, exclude private planning/intake records from public ports,
+and verify fresh main before integration. Prior hub PR113/main CI passed at
+`2aff916596cb16580ba7ccbd93b28724c14472c5`; that concerns documentation only.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
