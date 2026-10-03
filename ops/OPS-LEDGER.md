@@ -2,7 +2,30 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 5 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-03 (community capture/denial repair verified, visual refinement open; Arcanea shared authority corrected; native Codex design hooks repaired/proved; default catalog and other hosts open; GenCreator authority reconciled; FrankX batch 5 saved locally/release held; locked community guard/pilot and required checks await human approval) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-03: Actual community captures and sentence-case repair (Codex)
+
+[Kernel PR33](https://github.com/frankxai/starlight-design-intelligence/pull/33)
+merged `c810469` from reviewed `3ae57c7`; source/main CI passes 61 Node, 15 Python and 53
+browser/process checks, with three changed blobs equal. Actual counter falsePASS
+was reproduced and repaired; generic source review PASS is separate from product
+visual/human/production acceptance. Earlier disputed/inconclusive records remain.
+
+[Community draft PR15](https://github.com/frankxai/gencreator-community/pull/15) at
+`ccaa8a7` pins the released inspector and verified raw brand blob. Forty-four
+actual browser checks and 49 tests/build pass. Thirty-two PNGs/sidecars are CRC, byte,
+pixel and source-bound verified; six current exports were viewed after eight
+baseline/eight intermediate views. Twelve uppercase CSS declarations are corrected.
+Overall visual verdict remains revise: below-fold mobile fields, 9,875 px page,
+dense type and staged copy. Source-matched Vercel preview metadata is verified,
+but browser/rights/type/a11y/performance/usefulness/human/production gates remain.
+
+Base guard still fails private fetch; current-head locked approvals and proposed
+required checks remain human-gated. Latest Review Gate passes; cancelled history
+is preserved. PR13/14 stay frozen, Config PR95 and all other owners untouched.
+The full goal and both existing issue 12 fronts remain open. All owned workers are
+terminal. See [session](sessions/2026-10-03.md) and current pickup prompt.
 
 ## 2026-10-03: Arcanea source authority and identity gaps (Codex)
 

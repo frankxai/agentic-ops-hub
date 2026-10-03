@@ -86,81 +86,78 @@ normally and verify deployed SHA, routes, publication filtering and recovery.
 Save the next hub handover and issue252 update. Preserve all other current
 prompts and unfinished work. The complete goal stays active.
 
-### Estate design quality: prove applied host use and reconcile owning brands
+### Estate design quality: refine actual product output and complete the full rollout
 
-Continue full source task `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
-[Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
-All 20+ brands, relevant installed/applied skills, licensed foundations, Figma,
-assets, native harnesses, bounded refinement, release enforcement, useful creator
-outcomes and production/performance/recovery requirements remain open.
+Continue source goal `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
+[Design Intelligence issue 12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
+All eleven requirements stay open: 20+ brands, accepted direction, installed/applied
+skills, licensed foundations, assets/logos/Figma, native hosts, bounded refinement,
+release enforcement, useful creator outcomes, performance/recovery and production.
+Read the appended [session](sessions/2026-10-03.md) and private
+`.starlight/reviews/interface-foundations-20261003/program-progress.json`.
 
-Kernel PR32 merged `15f109ebf04fa5d723fc69fe98f34410d09d314e` from reviewed
-`31422521e49914b738f00de7a596324039417353`; PR/main CI37146803709/37147449465 pass.
-Read Arcanea DESIGN.md and SOURCE_AUTHORITY.md. Product main `79f3fb25` and Registry
-`fdd0233` establish source ownership. Shared font/accent references are corrected;
-aquamarine is reference-only. Resolve three backgrounds, package/schema claims,
-font/icon rights and actual application before product adoption. Preserve the
-product-selected portrait raster and two differently constructed SVGs. Eight
-actual images have been viewed; two Arcanea SVGs were source-inspected only.
-The old 166 classified filenames remain a scoped census, not approved masters.
-No new identity/visual/production approval was granted. Final independent verdict
-is shared-source PASS with product-release PENDING; preserve every earlier receipt.
+Kernel PR33 merged `c810469508f4cab78811aff0aa8cbaa99936293a` from `3ae57c7`;
+source/main CI 37153127947/37153343491 pass 61 Node, 15 Python and 53 browser checks. Three
+blobs match and independent NVIDIA generic source review passes. Actual labels
+and alphabetic CSS counters had falsely passed; repaired text-token inspection
+preserves image-only/hidden/code/editor exclusions. Retain every failed/confounded
+reproduction and disputed/inconclusive review; source approval is narrowly scoped.
 
-The consequential host gap remains default discovery: 829 enabled rows, 417
-budget omissions. Another owner has Config PR95 at
-`d004224a3e11f14f9f30ca1f5c5edae3ab6d0261`, draft/open with green checks, source
-review and approving GitHub review pending. Its temporary exact-guide profile and
-native release-guide consumer are a proposal; no global default or installation
-was changed. Do not write its active lane, reuse its private evidence as approval,
-run its installer, or duplicate the adapter. Preserve Config80, hook84 and Queen90.
-After owning review/release and fresh machine/storage admission, prove a real
-useful design consumer selected/read/applied/refined the rules with bounded output,
-independent design judgment, time/cost/repair evidence and interruption recovery.
-Compare a serious alternative on the same task and require actual valuable output.
+Community draft PR15 head `ccaa8a76c112d629adf5d5db552c1dd3a0c8bd56` pins released
+kernel in both workflows/contract; raw a76e8052 brand digest matches. CI 37153532125
+passes 49 tests/build, 44 browser checks, four contexts and 16 states, including real label/counter
+and persistence denial plus privacy/download/focus. The 32 PNG/sidecar artifact
+11284648064 is CRC/byte/decoded-RGBA/source-bound verified; merge 5564d16b parents
+are main f03c5166 and head ccaa8a7. Read its private verification/current visual
+observation. The actual captures now show sentence case after 12 CSS corrections.
+Eight baseline/eight intermediate/six current images were viewed; these are
+interface captures, distinct from the eight identity images/166-filename census.
+Current generic six-file source review PASS excludes private CSS/application/images.
 
-Prior kernel PR31 merged `8729fc3` from `f813469`, with passing PR/main CI and a
-source-bound native Codex0.160.0 fixture after the official Impeccable0.1.11 repair.
-Read docs/native-codex-design-probe.md. Both actual app-server turns completed;
-allow handler1/deny0, required post/Stop hooks, routing and cleanup passed without
-shared config drift. The 27-row thread override is a fixture selection, not a
-global catalog repair. Prompt-input rendering and filesystem projections alone
-missed required runtime execution. Neither this deterministic dynamic Write nor
-the proposed release consumer certifies design artifacts, shell/MCP paths, every
-host or loops. Preserve explicit disables, system/security skills and provenance.
+Prioritize actual creator-facing design next: the 9,875 px mobile page hides editable
+fields below the opening viewport, receipt microcopy is dense and supporting prose
+staged/repetitive. Compare three considered, materially distinct compositions
+before redesign; preserve the accepted artifact-to-proof outcome and local brand
+contracts. Verify actual typography/rights/platform faces, readable responsive
+controls, focus, reflow and measured performance. Compare a real consented creator
+job with manual Markdown/review preparation. Do not call a deterministic packet,
+installed skill, generated manifest, screenshot or passing test valuable AI creation.
+The overall visual verdict remains revise. OG styling and uncaptured routes stay
+outside current browser coverage. No new identity selection is authorized by a pin.
 
-Prior kernel PR30 merged `2277678` from `7a44ebb`, reconciling GenCreator Territory B
-against owning ADR-011 main `1ca14c1`. Current paper/ink/red/Instrument roles follow
-documented approval; wordmark choice, application quartet, gates7/8, legal and
-rollout remain pending. Owning Figma file `rQRcBL1Kg5TMzEYa5TO9On` was read empty.
-Await Frank's explicit X/Y/Z choice before native reconstruction. New downstream
-pack adoption requires its owner's pin update and actual application QA. Continue
-other brands against owning approvals, font/icon artifacts and real masters.
+Vercel READY preview metadata binds deployment 6833022800 to this head at
+https://gencreator-community-a4gbfqjh3-starlight-intelligence.vercel.app;
+actual Vercel browser inspection/independent/human visual acceptance is pending.
+Native computer-use surfaces remain unavailable; do not start a local workaround.
+PR15 is draft/unmerged, no approval label. Base guard 37154363767 fails private
+fetch; current-head locked governance/interface approval and proposed five required
+checks need Frank. Latest edited-body Review Gate 37154363636 passes, original
+cancelled job preserved. PR13 `67f6dbb` and repair PR14 `fac3b05` stay frozen; preserve
+their pending approval questions and all repair/policy ancestry. Do not count one
+head's approval for another. Source/build proof cannot clear these external gates.
 
-Community PR13 remains open at `67f6dbbb20052aef74d8244a0d88ce8bf4f46f77`, with its
-49 tests/build, 36 browser journeys/four contexts and 16 complete states; scoped
-source/CI evidence does not approve visual or production use. It contains frozen
-repair PR14 `fac3b053f0682736331fb3cef7f85096d2983169` as an ancestor. Both human
-questions remain pending. The trusted main guard still fails a private unauthenticated
-fetch. With explicit one-time repair approval, merge PR14 using a merge commit to
-retain ancestry; rerun PR13's base-owned guard on unchanged head. Obtain the pilot's
-current-head locked-registry approval and passing trusted checks before merge.
-Do not forge GitHub approval, infer it from silence or grant changed-head approval.
+Continue default native discovery through its actual owner: 829 enabled / 417 budget
+omissions remain. Other-owner Config PR95 at `d004224` is draft/BLOCKED; profile and
+owner-reported consumer tests do not prove installation, default use or applied
+artifacts. Preserve Config PR80 / hook PR84 / Queen PR90. Prior Codex 0.160.0 fixture proves native
+allow/block/routing/required post/Stop after exact 0.1.11 engine recovery; it is not
+real model-applied design or all-host enforcement. GenCreator source follows
+accepted Territory B but X/Y/Z wordmark choice/native Figma build/rights/rollout stay
+pending. Arcanea source correction and conflicting backgrounds/rights remain;
+preserve actual portrait raster and distinct SVGs, no canon/product/global restyle.
 
-Main's proposed five required contexts remain unapplied: Verify, Surface Guard,
-Review Gate, design-contract / design-contract, Interface foundations and proof
-packet. Permission changes require their existing explicit human decision after
-integration. Demonstrate a real unapproved gate/registry/workflow change denied by
-trusted base. Then pin and independently inspect the actual deployment. Preview
-metadata is not browser/visual acceptance. Earlier computer-use inventory was
-empty; refresh actual supported access and admission before a new browser attempt.
+Fresh PP/storage admission before heavy or growing work: last interactive allow
+7,929 MB free / 11% CPU / 12 runtimes / one parallel; read-only quick 147.1 GiB/15.5%, target 30%
+advisory. Use existing owned checkouts, no agents/fanout, new dependencies/worktrees,
+cleanup or persistent workers without proper admission. Three bounded 11 MB capture
+runs remain as evidence. No owned worker/server/watcher remains. Keep shared
+Canvas/SIS/Substrate disabled and Higgsfield banned. Future generated visuals need
+actual provenance and both required ledgers; current non-generative captures have
+sidecars, generation-schema 404/unverified and no invented seed/approval.
 
-Keep policy loading, file presence, native execution, useful artifact acceptance,
-independent/human review and production adoption separate. Work in free owned
-lanes with route guard/check and fresh admission before heavy work. This slice ran
-small source/schema/hash checks and remote CI, with no local build/install/native/
-media/browser/fanout. Preserve other fronts and all unfinished records. Save the
-hub session/ledger/current prompt and comment existing issue12 after each slice.
-
+Save each finished slice to existing product issues and this hub session/ledger/
+current prompt. Preserve the newer FrankX prompt, Queen and every other active
+front. The original full goal stays active; never shrink it to this pilot.
 
 [Queen verified execution continuation, Codex]
 ```text
