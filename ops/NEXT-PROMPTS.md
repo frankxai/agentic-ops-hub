@@ -17,103 +17,123 @@
 
 ## Current
 
-### AI-factory architecture: refine reviewed Creator Studio and prove a useful mission
+### AI-factory architecture: accept complete Creator output and prove a useful mission
 
-Continue source task 01a101b1-9d38-7fa1-b1f0-dec923631d7f, today's session,
+Continue source task01a101b1-9d38-7fa1-b1f0-dec923631d7f, today's session,
 [Technology issue30](https://github.com/frankxai/starlight-technology/issues/30),
-private Ops issue149 and hub issue102. Preserve the full Queen/subscription/API/
-cloud/team/creation/business objective and every other unfinished product/prompt.
+private Ops149 and hub102. Preserve the full Queen/subscription/API/cloud/team/
+creation/business objective, existing accepted products and all other prompts.
 
-Reuse the owned Technology creator-factory worktree and draft PR34 at
-f6fa654ed9daf3cf6cdd3c32d18a81aad1518eb5. No old packet reapplication. Cap and exact
-decimal input bugs are repaired with failing regressions;119 local and cloud unit
-cases, 11 editorial cases and existing source checks pass. CI37148784659 includes a
-successful 51-page build; tested merge 6297f6f and head share tree 1212f903. Local
-Windows full build/browser remains RAM-held; recheck admission after a meaningful
-machine change. Cache purge remains held. Keep all source/review/failure receipts.
+Reuse owned Technology creator-factory worktree/draft PR34 at885e7fa86d27ae91dd59d539f26ce37916d494f3.
+Complete JSON/Markdown includes validated private context, hardware preference,
+dated comparisons, cost assumptions, maker alternatives and purchase unknowns.
+Report v1/plan migration remains recoverable; hardware-only sharing omits private
+notes/factory data. Imports restore only validated inputs and recompute analyses.
+Blocked recovery and conflict replacements name unreadable data and require consent.
 
-Sonnet 5.5 Medium reviewed e86e8cb in 75.001s, WARN/zero observed tools, and confirmed
-no saved-value corruption. Its restore-focus finding is fixed later. Obtain
-actual exact-input browser recovery and final-source independent review. Review
-lower messaging/locale/IME/a11y observations without blind review retries. The
-inherited always-proceed/60tools is not hard tool confinement; prove denial before
-wiring autonomous signing. Native weighted quota figures remain private in Ops149.
-Do not infer invoices, absolute token balances or a new subscription requirement.
+Local lint/types/133 unit/11 editorial/syntax/secret gates pass. CI37154943659 passes
+the51-page build and24 actual Chromium checks at1440/390: downloads, imports, reload,
+rejected decimal/focus, cancelled replacement, malformed report, blocked recovery
+and another-tab conflict. Tested merge1424d91 and head share treef0d5ce90; browser
+and owned Next server exited. Synthetic-fixture receipts are private. This supplies
+behavior proof; rendered design score, independent buyer and creator ROI remain open.
+Local Windows full build/browser was RAM-held. Cache purge is held; retain cache.
 
-This draft branch temporarily disables native Vercel deployment. Remove only its
-branch rule when source/preview admission checks are satisfied. Earlier READY
-preview dpl_ABg3nVuMnHhfCkDyadwrXsoVREC8 remains 2a106393; 15 Chrome checks/seven captures
-remain b8b079ff, memory sync pending. No current-head browser/preview approval.
+Sonnet source critiques completed78.942s at022aae14 and67.152s at816a63e, both WARN,
+zero observed tools. Four initial medium export/recovery findings and the later
+GLM cache-write fallback were repaired. Final-source independent approval pending.
+Preserve redacted/full-blob identity limits, low Markdown URL/typed-argument limits,
+all earlier failure/review receipts. No blind review retries or provider upgrades.
+Inherited always-proceed/60tools is not confinement; prove denial before signing.
+Native weighted quotas remain private, with no invoice/exclusive-usage attribution.
 
-Actual launchpad health/public Queen reports deterministic planning, no autonomous
-execution, no continuous workers and zero running instances. Inspected source 6fd6181
-and successful 14 September deployment do not attest live worker source. SIS160 is
-merged; starlight-swarm15 remains the trusted activation track. Preserve Ops PR157
-at 55f4a9e draft/unactivated and the approved EUR100 incremental pilot ceiling.
-Prove one recoverable installed creator/remote mission and a serious alternative
-through the existing reviewed rails. Wider source/security, rendered design/buyer,
-privacy/licence and commercial acceptance remain required before release.
+Actual clean-head planning JSON35,617bytes/Markdown19,057bytes restored every input.
+Same-workload estimates USD78.9012/59.9812/122.9012 remain hypothetical; base/combined
+bills, hardware delivered cost and buyer advantage unmeasured. Reuse that useful
+artifact and the serious incumbent hardware-only alternative for user acceptance.
 
-Preserve HTML study 5e42affc and its 33 local/21 Chrome checks, accepted products,
-other owners' locks/processes/checkouts and all full-goal fronts. Save the hub
-ledger and existing issues after the next useful result.
+This draft branch still suppresses native Vercel deployment. Remove only its branch
+rule when source/preview admission checks pass. Old preview2a106393 and browser
+proofb8b079ff retain their scopes; no current-head visual/preview release approval.
+Ops draft PR157 is875d64e,113 local/57 Win+Linux CI tests, narrow review7e778fe PASS,
+unactivated. HTML2335003e has50 sources/27 properties/13 runtimes/33 local checks;
+old5e42affc browser evidence and all visual sidecars/ledgers are preserved, sync pending.
+
+Railway/public Queen shows deterministic planning, zero autonomous/continuous role
+instances; inspected source6fd6181 does not attest live model execution. SIS160 is
+merged; swarm15 remains trusted activation track. Approved incremental pilot EUR100
+unchanged. Obtain exact-source independent/design/buyer/security/privacy/licence/
+commercial gates, then prove one useful recoverable creator/remote mission through
+the existing reviewed rails. No paid fallback, new schedule, worker or production
+activation from these checks. Save hub ledger and existing issues after useful work.
 
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX issue252](https://github.com/frankxai/FrankX/issues/252), preserving the full
-website/all-article/six-audience objective, sentence case, existing serif identity,
-human writing, grounded research, current partners and meaningful visuals.
-Read the appended [session](sessions/2026-10-03.md). Local source commit
-`74a4012d1f8e8850e0d6c3c083ab61b5cb9fc655` follows `6b410b6b7`/`26051cbdb`, in the owned
-`starlight/worktrees/frankx-editorial-renewal-20261003` checkout,
-branch `agent/codex/editorial-renewal-20261003`. Read REVIEW-BATCH-03.md,
-RENEWAL-PLAN.md, the exact-hash article register/progress and held SOCIAL-KIT.md
-under docs/ops/editorial. Twelve revisions await independent review; four
-production corrections are observations to preserve; 262 rows remain unreviewed.
-No article has release acceptance. Prior hub PR113/main CI passed; no website
-release follows from that documentation evidence.
+[FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
+website/all-article/six-audience objective: musicians, producers, creators,
+founders, executives and AI architects; thoughtful human writing, grounded
+research, current partners, sentence case, existing serif identity, meaningful
+visuals and end-to-end production verification. Read the appended
+[session](sessions/2026-10-03.md) and source REVIEW-BATCH-04.md/RENEWAL-PLAN.md.
 
-Recheck PP/storage before heavy work. Build admission was bounded; ten runtimes
-kept new agents paused. An existing clean tool at blob b20fdf718b3f791b1062f13586974f323217e189
-ran Quick/NoWrite from agent-config-outcome-intent without modifying that checkout
-or the shared plan: 149.6 GiB / 15.7% free. Canonical sensor path is still missing;
-its older census/baseline does not grant cleanup permission. Do not mutate shared
-borrowed dependencies or other owners. Missing TypeScript/Next.js prevents the
-full source gate; 16 known strict-slop findings need contextual review in named
-files. Thirty-eight deterministic tests pass. Seven new articles compile as MDX.
-No source push/PR, accepted design or website deployment has occurred.
+Owned worktree: `starlight/worktrees/frankx-editorial-renewal-20261003`, branch
+`agent/codex/editorial-renewal-20261003`, local source
+`bcd319d4bdb6e21f664095158df3a525cf836a63` after `223513c4`/`935e5bcc` and prior
+`74a4012d`/`6b410b6b7`/`26051cbdb`. The register binds 17 prepared revisions,
+four observed production corrections and 257 unreviewed rows across 278 slugs
+and 769 variants. All 21 hashes match; none grants release acceptance. Five
+new MDX rewrites compile and original metadata/internal links validate. Nine
+current corpus tests pass; prior 38 deterministic tests retain their scope.
+All three source secret hooks pass. Fifteen strict-slop hits remain in eight
+other files. Preserve the 23 unrelated newline-only changes and other owners.
 
-The seven new guides cover pinned Vibe OS source/CLI failures, a prompt-to-take
-workflow, creative-session music, an editorial topic map, AI-search access/panel
-measurement, evidence-led ACOS editorial work and a public campaign method.
-Their Vibe receipt checks source 90b902fb9c6835cebcd58aae9221049d4aa7232e; code
-preset count is 15, JSON key can disagree with its prompt, and product/license
-claims need exact-version reconciliation. No audio or clinical trial is claimed.
-The full old 2024 plan is preserved privately under docs/strategy/editorial;
-exclude it and private intake/ops records from any public production port.
+Prioritize release capability: recheck PP/storage, inspect the missing
+TypeScript/Next targets and establish admitted isolated dependencies without
+mutating the borrowed production tree. No install through the node_modules
+junction. Required full merge gate has not passed; do not push the source lane
+until it does. Capture current desktop/mobile through the supported browser
+connection when available; the outstanding access question remains pending.
+No render, accepted visual or website deployment is established.
 
-Continue bounded review through the next stale frontier/production-agent cluster,
-using exact production variants and current primary sources. Preserve the prior
-music evidence/research intake revisions and four August production corrections.
-The real scanner's four-feed manual receipt is metadata, not demand or model
-quality. Obtain actual Search Console account/export and licensed OpenRouter
-usage data before claiming observations. Never describe the intake as a daily
-service or activate a routine from a document.
+Two complete independent critiques now exist for the Fable audit with four
+public reports. Cohere returned REVISE at `223513c4`; supported clarification
+was applied and contradictory/missing-context findings reconciled. Poolside
+returned PASS at `935e5bcc` with internally inconsistent/already-covered/non-
+article findings, so do not count the label as release approval. Preserve both
+final receipts, exact hashes and decisions; raw reasoning is not a verdict.
+Use narrowly scoped fresh reviews for remaining articles, with actual sources.
+The revised Fable bytes are unchanged after the second critique. The fallback
+article and sanitized public data include three original failures and two
+later complete critiques; multiple settings changed, so no causal recovery or
+reliability claim is supported.
 
-Recover usable admitted build/browser and independent provider-review capability.
-Capture current desktop/mobile states before further visual design; compare three
-considered directions and inspect typography, focus, reflow, motion and navigation.
-Review the exact revision independently. Earlier native covers remain unaccepted
-and below 2048 pixels wide; preserve sidecars/ledgers. The 12 social companion
-sets remain held until matching release and human posting approval.
+Continue the next stale frontier/production-agent cluster with current primary
+sources and actual outputs. Keep vendor claims, public usage, proposals and
+measured results distinct. Preserve June arena results and the actual Vibe OS
+code failures without implying a current-model winner or an audio trial. Obtain
+real Search Console demand/account exports and licensed OpenRouter usage before
+reporting those observations. The manual four-feed intake is metadata, not an
+activated daily service. Prior production corrections and private old planning
+source remain preserved; do not port internal records into a public repository.
 
-Before porting accepted public files, compare with fresh production main and
-preserve PR825's holds and newer affiliate/workshop/homepage implementations.
-Use an owned production branch, run required checks, inspect the existing preview,
-merge normally and verify deployed SHA, routes, links, publication boundaries and
-recovery. Update issue252 and this hub receipt/ledger/current prompt. The broad
-goal stays open. Preserve the other current prompts and unfinished work.
+Seventeen social sets remain held for the matching accepted article release
+and human posting approval. Original cover references are preserved, with no
+new accepted replacements; earlier native drafts are below the width gate.
+Preserve their sidecars/ledgers and synchronize taste through an owned workflow.
+Follow the release kernel, compare three considered design directions after
+current capture, and inspect typography, keyboard/touch/reflow, motion and errors.
+No new agent is admitted under pause-new-swarms; do not fan out from enthusiasm.
+
+Before porting accepted public files, verify fresh production main and ownership,
+preserve PR825 research holds/noindex and newer affiliate/home/workshop/product
+work, and declare a surgical public manifest. Current five-file comparison at
+`044c8447` is evidence only; the full register still freezes `badd9c44`. Use the
+owned production lane, pass required checks/preview and independent review,
+merge normally, then verify deployed SHA/routes/links/publication filtering and
+recovery. Save the next hub receipt/current prompt and issue252 comment. Prior
+hub PR115/main CI was green only for docs; the broad goal stays active. Preserve
+all other current prompts and unfinished tasks.
 
 ### Estate design quality: prove applied host use and reconcile owning brands
 

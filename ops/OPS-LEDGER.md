@@ -2,7 +2,32 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Creator Studio exact input and cloud build verified; Arcanea shared authority corrected; native Codex design hooks proved; GenCreator, FrankX, community and other unfinished work preserved; release and activation checks remain open). Earlier dated sweeps remain below. Cadence: end of each working session.
+**Last sweep:** 2026-10-03 (Creator complete report and remote recovery verified; native billing guard CI passed; FrankX batch 4, Memory Studio and all other unfinished records preserved; release and activation remain open). Earlier sweeps remain below.
+
+
+
+## 2026-10-03: Creator complete report and remote recovery verified (Codex)
+
+[Technology PR34](https://github.com/frankxai/starlight-technology/pull/34) is885e7fa.
+Complete private JSON/Markdown now preserves work context, hardware preferences,
+cost assumptions, matched maker alternatives and purchase unknowns; hardware-only
+sharing remains separate. Imports validate inputs and recompute analyses. Native
+Sonnet's medium export/recovery findings were reproduced or scoped and repaired;
+latest scoped review is WARN at816a63e, final-source acceptance still pending.
+
+[CI37154943659](https://github.com/frankxai/starlight-technology/actions/runs/37154943659)
+passes133 unit/11 editorial cases,51-page build and24 real Chromium desktop/mobile
+export/import/reload/decimal/recovery/conflict checks. Tested merge1424d91 and head
+share treef0d5ce90; owned runner browser/server exited. Local full build/browser was
+RAM-held. A clean-head private planning report executed and restored every input;
+matched hardware-only alternative and prior receipts preserved, buyer ROI unmeasured.
+
+Cache retained, EUR100 cap unchanged, no runtime/production activation. Ops PR157
+875d64e has113 local/57 Windows+Linux CI cases; HTML2335003e has33 local checks with
+current render acceptance pending. Main9263c1d and all other handovers/prompts are
+preserved. See today's session, Technology30, hub102 and private Ops149. Final-source,
+rendered design/buyer/privacy/licence/commercial and useful Queen mission gates remain.
+
 
 ## 2026-10-03: Creator exact input and remote source build (Codex)
 
@@ -220,36 +245,54 @@ enabled Computer Use browser was available for native-provider review.
 
 ## 2026-10-03: FrankX editorial renewal (Codex)
 
-The full website/content goal remains open under
+The full website/all-article/six-audience goal remains active under
 [FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
 `01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at
-`74a4012d1f8e8850e0d6c3c083ab61b5cb9fc655`, following `6b410b6b7` and `26051cbdb`, on the owned editorial branch.
-The 278-slug/769-variant register now binds 12 prepared revisions and four
-observed production corrections to exact text; 262 rows remain unreviewed.
-No row has independent or release acceptance.
+`bcd319d4bdb6e21f664095158df3a525cf836a63`, following batch 4 commits `223513c4`
+and `935e5bcc`, and prior `74a4012d`/`6b410b6b7`/`26051cbdb` on the same owned
+editorial branch. The 278-slug/769-variant register has 17 prepared revisions,
+four observed production corrections and 257 unreviewed rows. All 21 receipts
+match text. No article has release acceptance.
 
-Batch 3 revises seven Vibe OS/SEO articles, removes unsupported operating,
-brain-state and ranking claims, and preserves the old 2024 plan internally.
-An actual pinned Vibe prompt-code check reproduces inconsistent key output and
-unimplemented flags. Current search-provider guidance supports a defined access/
-measurement method, with no observed FrankX account or citation result. Seven
-social companions and visual briefs remain held; the kit now covers 12 articles.
-The preceding four-feed metadata intake and two article corrections remain intact.
+Five new rewrites cover the Fable receipt audit, prompting, fallback recovery,
+agent rollout and turning social leads into useful articles. Pinned public
+June reports show both models committed the governed edit and Fable had already
+failed format in round 3. Those two false prior claims were corrected; four
+small reports/fifteen tasks do not create an October leaderboard. Five current
+production bodies were compared at `044c8447` without overwriting newer work.
+Current primary release/API/search sources support narrower facts and access
+limits. Original URLs, dates, author/category, featured fields and covers remain.
+Five new social companions bring the held kit to 17; earlier twelve are intact.
 
-Thirty-eight deterministic tests pass; seven new articles compile as MDX.
-Gitleaks scanned 260.16 KB with no leaks. Source gate stops at missing TypeScript;
-Next.js is absent. No source push/PR or website deployment. Browser/capture and
-independent review remain pending. Earlier cover drafts remain held with
-provenance. Fresh build admission is bounded and no new agents are admitted.
-An inspected existing storage sensor ran without writes: 149.6 GiB / 15.7% free;
-canonical primary path is still absent and underlying census is older. No install,
-new worktree, media, cleanup, schedule or persistent process was started.
+Independent transport now returns complete critiques on a smaller packet.
+Cohere returned REVISE at `223513c4`; five findings were reconciled against the
+source, supported clarifications applied and a contradictory repair rejected.
+Poolside reviewed the refined Fable bytes at `935e5bcc` and returned PASS with
+internally inconsistent/already-covered/non-article findings. Its label is not
+accepted as publication approval. Both final critiques and decisions are
+preserved; no reasoning fragment is approval. The fallback article/public
+receipt retains three initial failures and two later completed critiques,
+without a causal recovery, availability or quality ranking.
 
-See [session](sessions/2026-10-03.md) and the current pickup prompt. Continue
-bounded source review while recovering release capabilities. Preserve production
-holds/newer changes, exclude private planning/intake records from public ports,
-and verify fresh main before integration. Prior hub PR113/main CI passed at
-`2aff916596cb16580ba7ccbd93b28724c14472c5`; that concerns documentation only.
+Five MDX files compile, metadata/internal source links validate, nine current
+corpus tests pass, and prior 38 deterministic tests remain scoped evidence.
+The strict slop audit is down to 15 findings in eight other files. Enabled
+secret hooks passed all three source commits. Missing TypeScript/Next.js targets
+still prevent the required full gate; source was not pushed. Browser/render,
+independent article acceptance, visuals, production port/CI/deployment remain
+pending. No new image, social post, enrollment, agent, dependency install,
+worktree, server, watcher, schedule or cleanup was started. Twenty-three other
+agents' newline-only changes remain unstaged. Interactive admission permits one
+workload and pauses new swarms; recheck before material growth.
+
+Recover admitted isolated build dependencies without mutating the borrowed
+production tree; restore current desktop/mobile capture and exact-revision
+review. Continue the remaining register using current production variants,
+primary sources and audience-specific artifacts. Preserve research holds/newer
+affiliate/home/product work and exclude private intake/planning/ops records
+from public ports. Prior hub PR115 merged `acf2beaf`, with passing PR/main CI;
+that proves the documentation scope only. See [session](sessions/2026-10-03.md)
+and the current pickup prompt.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
