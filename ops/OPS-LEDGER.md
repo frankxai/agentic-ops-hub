@@ -6,28 +6,31 @@
 
 
 
-## Arcanea guard and platform rendering, 4 October 2026 (Codex)
+## Arcanea guard and platform security, 4 October 2026 (Codex)
 
-- Root draft [144](https://github.com/frankxai/arcanea/pull/144) at39362eb records an
-  atomic source-bound release plan and refuses unplanned supported publication.
-  Six engineering workflows pass; both20/22 run296+137+18 checks. Generated20 graph
-  installs/rebuilds/tests; five-file artifact11286453604 digest/tree/plan verified.
-  Both full8-file nativeGrok4.6/high deliveries timeout240s/no verdict; Claude fails
-  without approval. Keep144 draft/136 open. Root clean/pushed, own claim released.
-  [Issue142](https://github.com/frankxai/arcanea/issues/142#issuecomment-5974099073) saved.
-- Platform draft [45](https://github.com/frankxai/arcanea-platform/pull/45) now716e675,
-  baseb4738df9,94 files/diff75a569c5. Pure indexed decoration replaces29 render random
-  samples; canvas resize cleanup and frameid0 fixed. Two real Node24 processes match
-  6,400 samples. Actual lint drops79/224 to50 errors/223 warnings, thresholds intact.
-- Packages37158926309, fullsuite37158926313 and quality/build37158926320 pass; actual
-  Node20.20.2/22.23.3 each3322/3314pass/8skip/0fail. Build generates129 routes.
-  Tested5bddcf180 has exact parents and tree=head; all93 present changed blobs match.
-  MVP/apps still fail lint. Current audit379 (151 high/6 critical) remains masked by
-  `pnpm audit --audit-level=high || true`, distinct from default-branch814 alerts.
-- Full94-source review, remaining lint/dependency/browser/live creator acceptance are
-  pending. No main/npm/production/cloud acceptance. Preserve originals and other-goal
-  records throughc9fc537,139/app408/427/creator/plugin/MCP/config/site87. Full goal active.
-  Complete evidence and next action are in this day's session and owned current prompt.
+- Root draft [144](https://github.com/frankxai/arcanea/pull/144) remains 39362eb:
+  atomic release plan and supported publication admission. Six engineering workflows
+  pass; both complete eight-file native attempts have no verdict. Keep 144 draft
+  and 136 open; no new root source, main or publication acceptance in this slice.
+- Platform draft [45](https://github.com/frankxai/arcanea-platform/pull/45) is 8167963,
+  base b4738df9, 99 files / full diff 63e1573a. Next/config 16.3.8, Vitest 3.2.7,
+  FTP 5.2.1 and Handlebars 4.7.9 fix the six prior critical findings. Preserve 46
+  other importers, 2,070 other snapshots and historical ai-agents/contracts records.
+- Current audit 111316322518: 329 = 34 low / 165 moderate / 130 high / 0 critical.
+  Its retained high threshold now blocks, rather than hiding exit 1. Suite workflow
+  37161708302 fails audit; both actual 20.20.2/22.23.3 compiled jobs pass each
+  3,322 / 3,314 pass / 8 skip / 0 fail, and four real Vitest startups per runtime.
+- Packages 37161708311 and quality/build 37161708300 pass; Next compiles 129 routes.
+  MVP/apps fail 50 errors / 227 warnings. Quality lint is nonblocking. Tested merge
+  96102fed has exact parents/tree equality and all 98 changed present blobs match.
+- Native 4.6-build/high nine-file WARN catches the shared Handlebars dev marker;
+  exact current two-file WARN accepts its removal with no further source edit.
+  Source scopes remain bounded; full 99-file, prod-only historical install, rendered
+  and live creator/app/canon acceptance remain pending. PR 45 stays draft.
+- [Issue 44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5974617518)
+  and this day's session/current pickup retain evidence. Preserve all other goals
+  through 46e8c1b, originals and unfinished work. Full estate goal active; no main,
+  npm/cloud/plugin/production/account/cleanup acceptance. Next lint and high findings.
 
 ## Arcanea release recovery on main, 3 October 2026 (Codex)
 
