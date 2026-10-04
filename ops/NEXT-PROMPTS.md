@@ -71,34 +71,35 @@ Save each completed slice to this hub plus existing product issue; full goal act
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the complete
 six-audience website, editorial, SEO, affiliate, visual and social objective.
-Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-13.md`, its evidence receipts and
+Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-14.md`, its exact-revision receipts and
 `article-review-progress.json` in `docs/ops/editorial/`.
-Authoring source: `44a6caf1da6cd1601e90d147cca18b024ea9a140`, branch `agent/codex/editorial-renewal-20261003`.
-Preserve batches 1–12, all 23 foreign edits and newer production improvements.
+Authoring source: `c0500f4bc8acfcce23a63ebf7aec1758080d4e31`, branch `agent/codex/editorial-renewal-20261003`.
+Preserve batches 1–13, all 23 foreign edits and newer production improvements.
 
-The register has 55 prepared revisions, four observed corrections and 219
-unreviewed articles; all prepared hashes match. Four latest guides cover voice
-selection, faceless production, avatars and clipping. Their tasks, rights,
-synthetic billing examples and failure handling remain proposed workflows.
-Production baseline `f255c9f9` differs from the frozen register's `badd9c44` and
-`7fe4fde1`. Preserve production assets/components and the ordinary Faceless.so
-destination. Three public partner rows are corrected; public check dates cannot
-activate paid referrals. Complete the valid exact-revision voice critique.
+The register has 59 prepared revisions, four observed corrections and 215
+unreviewed articles; all prepared hashes match. The latest guides cover a support
+pilot, team permissions, approved creator context and useful ecosystem choices.
+The synthetic examples and proposed recovery design are not installed runtime
+observations. Current production baseline `51f259c6` differs from the frozen
+register references `badd9c44`/`7fe4fde1`. Preserve production assets and stable
+metadata. Five legacy diagram embeds were replaced with tables, not asset deletes.
+No affiliate qualification or issued link changed. Complete exact-revision creator
+critique after two timeouts and the earlier missing batch 13 voice critique.
 
-Storage is below 15% free. Work on text/configuration and small tests; do not
-install dependencies, create worktrees, generate media or start new agents.
-The existing browser connection question remains unanswered. CUA is empty;
-borrowed Next/TypeScript targets are absent. Recover admitted owned dependencies
-and responsive capture without deleting files or interfering with foreign tasks.
+Storage is below 15% free. Continue text and small tests; do not install dependencies,
+create worktrees, generate media or start new agents. The existing browser connection
+question remains unanswered. CUA is empty; borrowed Next/TypeScript targets are absent.
+Recover admitted owned dependencies and responsive capture without deleting files
+or interfering with foreign tasks.
 
 Then complete full gates and independent rendered/security/commercial review,
 port accepted changes against fresh production main, merge normally and verify
-the exact green deployment. Continue remaining articles while held. Refine
-visual/social work after admission, with sentence-case Playfair typography,
-provenance and current taste evidence. Higgsfield MCP/skills remain banned.
-Public social posting and founder approvals remain gated. Save progress in this
-hub and issue #252; preserve the private objective ledger and unfinished work.
-Do not close the website goal from article counts or documentation CI.
+the exact green deployment. Continue the remaining article register while held.
+Refine visual/social work after admission with sentence-case serif typography,
+sidecars, both ledgers and taste synchronization. Higgsfield MCP/skills are banned.
+Public social posting and premium founder approval remain human-gated. Save
+progress in this hub and issue #252, preserving the private objective ledger and
+unfinished work. Article counts and documentation CI cannot close the website goal.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
@@ -111,9 +112,29 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Current source-authority slice: kernel draft36 is frozen at
+Current font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
+is frozen; canonical owned kernel lane agent/codex/font-artifact-denial-20261004.
+Before writes route/guard/check and ownership again. Original full-manifest four-byte
+WOFF2 acceptance is reproduced; decoded check now denies it. Final67/69Node,
+15Python,53browser-process plus Windows/Ubuntu nine actual pinned-font probes are
+green; all eleven blobs equal tested merge dad209f. Two ordinary Node skips are
+intentional, network covered separately. Keep all initial/final receipts.
+Migration uses preserved original plus adjacent candidate, changed file_check,
+actual full decoded validation, receipt and owning approval before pinning. Initial
+full independent REVISE corrected; exact-head correction PASS, incomplete full
+rereview retained; seven decoder/config blobs unchanged. Named human promotion,
+actual adopter migration, rights/computed browser/fallback/mobile specimens remain
+open. Source/font bytes and gate candidate do not prove every-harness enforcement.
+Thirteen observed resources/nine unique files/six families/sixteen CSS declarations
+and six pinned OFL sources recorded; private reader remains metadata-only. Protocol
+orbit-star and Academy shared star retained; Academy sphere alt defect open.
+Disk14.97% bounded: no new install/worktree/media/model/build fanout; no enabled CUA
+surfaces. Native hooks require Frank's explicit trusted confirmation before tests.
+Continue actual brand applications/creator outcomes and all eleven requirements.
+
+Preserved source-authority slice: kernel draft36 is frozen at
 `96192ed5ba3469665d1539757dbfbfaa7231fc35`. The canonical owned kernel checkout
-now uses `agent/codex/sis-identity-authority-20261004`; older35/ddf1d663 remains
+used `agent/codex/sis-identity-authority-20261004` for that slice; older35/ddf1d663 remains
 a preserved branch, not the current primary lane. Pack links owning lab main854357b
 and Academyabaf24b: recovered star, observed lab-only tokens/named type roles,
 retained protocol variant and four existing constitution modes. Historical web

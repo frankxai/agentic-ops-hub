@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (workflow operation context/readback merged; workflow v2 preparation merged/live authority open; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 13 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 
 ## 2026-10-04: Exact workflow operation binding and Cloudflare observation merged (Codex)
@@ -303,6 +303,23 @@ planning assumptions. No cache purge, purchase, recurring schedule, live worker
 or production activation follows from this slice. Continue one useful recoverable
 mission under current authority and measured same-task comparison; preserve the
 existing hardware sheet and all incomplete product/release gates.
+
+## 2026-10-04: Font artifacts decoded; migration verified in draft (Codex)
+
+Kernel draft37/f8b5438 denies the reproduced four-byte WOFF2 release bypass.
+Windows/Ubuntu decode nine pinned actual resources; metadata/coverage match the
+private reader. Full CI67/69Node(two intentional skips),15Python,53browser/process
+checks; all eleven tested-merge blobs equal. Initial independent REVISE's migration
+finding is corrected and receives scoped exact-head PASS; incomplete full rereview
+retained. Named human promotion and downstream migration remain open.
+
+Thirteen resource observations/nine unique files/six font families/sixteen CSS
+style-weight declarations and six pinned OFL source files are recorded. Rights,
+computed production fonts, fallback/mobile specimens and rendered mark acceptance
+remain open. Native `/hooks`, supported browser and favicon choice still pending.
+Disk14.97%, bounded text/small checks, installed node_modules unchanged. Both records
+save this progress; all eleven estate requirements remain open/partial. See
+[session](sessions/2026-10-04.md) and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
 
 ## 2026-10-04: Starlight pack references owning identity; promotion pending (Codex)
 
@@ -707,34 +724,35 @@ enabled Computer Use browser was available for native-provider review.
 Continue the full six-audience website goal, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, under
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 13 source: `44a6caf1da6cd1601e90d147cca18b024ea9a140`; article/catalogue revision `a0fd203f`.
-The frozen register covers 278 URLs and 769 variants: 55 prepared revisions,
-four observed production corrections and 219 unreviewed articles. All 55 hashes
-match; 59 receipts preserve earlier work. There are 55 held social brief sets.
+Batch 14 source: `c0500f4bc8acfcce23a63ebf7aec1758080d4e31`; article revision `939d648c`.
+The frozen register covers 278 URLs and 769 variants: 59 prepared revisions,
+four observed production corrections and 215 unreviewed articles. All 59 hashes
+match; 63 receipts preserve earlier work. There are 59 held social brief sets.
 
-Four guides now cover voice alternatives, faceless-video tools, avatars and
-OpusClip. They replace invented trials and unsupported quality, cost, rights or
-virality promises with documented choices and useful synthetic examples. Current
-Sonic 3.6, Fish S2.1 Pro billing ambiguity, consent, export requirements and
-recovery are explicit. Recorded presenters and existing editors remain serious
-alternatives. Three video-partner public catalogue rows change; account approval,
-issued URLs and sponsor qualification remain separate. Other 29 rows are preserved.
+Four guides now cover enterprise pilots, ACOS team deployment, creator context
+and the FrankX ecosystem. They replace unsupported staffing, capacity, rollout,
+intelligence and improvement claims with actual public source snapshots and
+useful synthetic tasks. Current ACOS 11.0.0 licensing and SIS 8.3.0 are separated
+from installed-runtime evidence. Template, editor and folder alternatives remain
+serious comparisons. Five legacy ACOS diagram embeds become readable tables;
+all asset files remain unchanged. No new image or commercial link is activated.
 
-Four MDX compiles, six source links, six arithmetic checks, six affiliate tests
-and nine corpus tests pass. The independent video critique returned PASS with
-four reconciled suggestions. Voice reviews produced two timeouts and an output
-limit without a valid final critique; that review remains open. No live product,
-render, rights, security, commercial, SEO or publication acceptance follows.
+Four MDX compiles, 16 source links, eight arithmetic checks and nine corpus tests
+pass. The independent enterprise critique returned PASS with four suggestions
+reconciled against exact text. Two creator routes timed out; that critique remains
+open. Batch 13's missing voice critique also remains open. No independent live
+source, render, security, rights, commercial, SEO or publication acceptance follows.
 
-Storage crossed below 15% free: text/configuration and small checks remain
-permitted; installs, new worktrees, media and new agents are held. CUA has no
-browser surfaces; borrowed Next/TypeScript targets are absent and untouched.
-Full gates, current desktop/mobile capture, independent acceptance, a surgical
-production port and exact green main deployment remain required. No website
-source push or deployment occurred. All 23 foreign edits remain unstaged.
+Storage remains below 15% free. Text and small tests continue; installs, new
+worktrees, media and new agents remain held. CUA has no browser surfaces;
+borrowed Next/TypeScript targets are absent and untouched. Full gates, current
+desktop/mobile capture, independent acceptance, a surgical production port and
+exact green main deployment remain required. No website source push or deployment
+occurred. All 23 foreign edits remain unstaged. Policy loading does not establish
+runtime enforcement. This task's writable-vault taste synchronization is pending.
 
-This handover changes only the FrankX ledger/prompt sections and appends the
-dated session from fresh hub main `9ce38af9`. Earlier history and other fronts
+This handover updates only the FrankX ledger/prompt sections and appends the
+dated session from fresh hub main `cacdc59b`. Other fronts and earlier history
 remain intact. Hub CI proves documentation only. Continue the remaining articles
 and recover admitted release capabilities without reducing the original outcome.
 
