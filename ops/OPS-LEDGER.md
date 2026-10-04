@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 17 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 18 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 
@@ -279,39 +279,44 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 The full six-audience website goal remains active, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 17 source `283d63cd8ff787d2d8149602cd9fd2ba4c5947e4`; exact article revision `3e782ebbbae8bc4e23e94b8eb2a8c76f606ba275`.
-There are 71 prepared revisions, four observed production corrections and 203
-unreviewed articles across 278 slugs/769 variants. All 71 hashes match; 75 receipts
-preserve previous rows. There are 71 held article-linked social/visual sets.
+Batch 18 source `7e2396e3b3ec4c00430c2e6b5939c5eb8147f8d8`; article revision `9efac94d2ea890b5b5571fcd91020f3690d58594`.
+There are 75 prepared revisions, four observed production corrections and 199
+unreviewed articles across 278 slugs/769 variants. All 75 hashes match; 79 receipts
+preserve previous rows. There are 75 held article-linked social/visual sets.
 
-Four revisions clarify the Atlas's editorial intelligence, a source-based video
-workflow, creative frequency as a metaphor and Higher Self as a personal essay.
-Unsupported fieldwork/client ROI, fixed identity, causal virality and spiritual
-outcome claims are removed. Serious analyst/editor/writer/notebook alternatives,
-useful authored examples and recovery remain. Existing personal opening and
-Christian Examen context are preserved; premium founder review is still required.
+Four substantive Llama, Gemma, Mistral and gpt-oss guides replace unverified current
+rankings, universal hardware fit, licence/compliance clearance, free inference,
+zero-egress and automatically installed tool promises. Actual source scope and
+authored credit, transcript, bilingual-policy and archive evaluations remain
+distinct from measured research. Serious search, editor and reviewer alternatives
+include useful retained artifacts and failure recovery.
 
-Four MDX/GFM compiles, 17 source resolutions, 14 arithmetic checks and nine corpus
-tests pass. All four original bodies match production `f9811d47`; stable metadata,
-URLs and assets stay. Google October 1 main-content/effort guidance informs the
-plan, without a ranking promise. Failed journal/full-text retrievals stay recorded;
-the actual author-posted arXiv v3 abstract supports only a scoped story experiment.
-No catalogue, referral qualification, model/pilot/campaign/spiritual trial, image
-or public posting. NVIDIA and Qwen critiques timed out without verdicts; all
-failures and earlier review gaps remain. No release acceptance follows.
+Actual primary and pinned small model documents cover Llama's EU multimodal
+restriction/end-user exception, Gemma's speech-capable subset and generation terms,
+Mistral catalogue/recipe scope and assumed route economics, and gpt-oss Harmony,
+route-specific memory and application tools. Gated HF401 and failed document reads
+remain. Four MDX compiles, five source resolutions, 13 Decimal checks and nine
+corpus tests pass. Original bodies match production `f9811d47`; metadata, URLs,
+assets and the OpenAI callout slug stay. No affiliate qualification or issued URL.
 
-CUA is empty and an actual live-site tab attempt returns “Browser is not available:
-iab.” Borrowed Next/TypeScript targets are absent and untouched. Storage remains
-below 15%, PP BOUNDED and new agents paused. Text and small checks continue;
-installs, new worktrees, media, build fanout, cleanup and website release stay held.
-Full gates, independent responsive/source/design/security/commercial acceptance,
-surgical production port and exact green main deployment remain required. Task
-writable-vault taste sync and frontier-overview freshness remain open. All 23
-foreign edits are unstaged. Policy loading is separate from runtime enforcement.
+Poolside eligibility REVISE retains all five findings. Three contradict actual
+primary documents and two quotes are absent; the lead rejects them without
+relabeling the provider verdict. NVIDIA eligibility retry timed out. StepFun
+integration exhausted its output limit; separate Poolside integration returned
+PASS. Every request is retained. Accepted eligibility critique, earlier reviews
+and premium founder review for Higher Self remain open. No publication acceptance.
 
-This handover reuses the free owned worktree from fresh main `309bb150`. Only
-FrankX ledger/prompt sections, its sweep fragment and appended session change;
-other fronts/history remain intact. Hub CI proves documentation only.
+Fresh CUA inventory is empty; prior actual iab creation failed. Borrowed Next and
+TypeScript are absent and untouched. Disk stays below 15%; PP is BOUNDED with new
+agents paused. No installs, new worktrees, media, build fanout, cleanup, source
+push or website deployment. Full gates, responsive capture, independent source,
+design/security/commercial acceptance, surgical production integration and exact
+green main deployment remain required. Taste writable-vault sync and earlier
+frontier-overview freshness stay open. All 23 foreign edits are unstaged.
+
+The free owned hub worktree is reused from fresh main `24beb0de`. Only FrankX
+ledger/prompt sections, its sweep fragment and appended session change. Other
+fronts and previous session bytes stay intact. Hub CI proves documentation only.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
