@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 16 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 17 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Current Starlight serving revisions verified (Codex)
 
@@ -268,50 +268,40 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
 The full six-audience website goal remains active, task
-`01a101fc-228c-7010-bba6-cf60bbad2357`, under
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 16 source `a32c5c34ba0f58517c5fae8ce97f90fd02f71fb8`; exact article revision `734b1ce631abc2a01581d093796d7849ceb9cef8`.
-The register covers 278 URLs/769 variants: 67 prepared revisions, four observed
-production corrections and 207 unreviewed. All 67 hashes match; 71 receipts
-preserve earlier rows. There are 67 held social/visual brief sets.
+`01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
+Batch 17 source `283d63cd8ff787d2d8149602cd9fd2ba4c5947e4`; exact article revision `3e782ebbbae8bc4e23e94b8eb2a8c76f606ba275`.
+There are 71 prepared revisions, four observed production corrections and 203
+unreviewed articles across 278 slugs/769 variants. All 71 hashes match; 75 receipts
+preserve previous rows. There are 71 held article-linked social/visual sets.
 
-Four model guides correct the Opus 4.5-to-4.6 price comparison, legacy migration
-choices, contradictory Kimi ratios, route modalities, licence scope, Qwen cache
-creation costs and verified autonomous-run language. Actual vendor sources mark
-Opus 4.6/4.8 active legacy, list K3 alongside K2.6 and document newer Qwen3.8-Max
-visual input. These are source observations, with no own model ranking or trial.
-The guides propose useful archive, release-credit, music-catalogue and launch-page
-decisions, each with a serious analyst, spreadsheet or designer comparison.
+Four revisions clarify the Atlas's editorial intelligence, a source-based video
+workflow, creative frequency as a metaphor and Higher Self as a personal essay.
+Unsupported fieldwork/client ROI, fixed identity, causal virality and spiritual
+outcome claims are removed. Serious analyst/editor/writer/notebook alternatives,
+useful authored examples and recovery remain. Existing personal opening and
+Christian Examen context are preserved; premium founder review is still required.
 
-Four MDX/GFM compiles, six existing source resolutions, 21 Decimal arithmetic
-checks and nine corpus tests pass. Actual pinned Kimi K2.6 README/LICENSE and live
-anonymous OpenRouter catalog metadata are hashed. Gateway rates and modalities
-remain separate from direct vendor terms and usage data. Four failed official
-Markdown reads remain recorded; no absent rate or endpoint is inferred. All four
-original bodies match current production baseline `f9811d47`. Stable metadata,
-URLs, Opus 4.8 LearnHubCallout slug and all assets remain. No affiliate catalogue,
-issued referral URL or account-qualification date changes.
+Four MDX/GFM compiles, 17 source resolutions, 14 arithmetic checks and nine corpus
+tests pass. All four original bodies match production `f9811d47`; stable metadata,
+URLs and assets stay. Google October 1 main-content/effort guidance informs the
+plan, without a ranking promise. Failed journal/full-text retrievals stay recorded;
+the actual author-posted arXiv v3 abstract supports only a scoped story experiment.
+No catalogue, referral qualification, model/pilot/campaign/spiritual trial, image
+or public posting. NVIDIA and Qwen critiques timed out without verdicts; all
+failures and earlier review gaps remain. No release acceptance follows.
 
-Cohere and NVIDIA critique requests both timed out without a verdict. Exact
-packets, hashes and failures remain; critique is open. Earlier batch 13 voice,
-batch 14 creator and batch 15 critique gaps also remain. Local checks provide no
-live-source, rendered, security, rights, commercial, SEO or publication acceptance.
-Earlier prepared frontier overviews need deliberate current-catalog revisions
-with their old hashes and history preserved. No new visual or public post occurs.
+CUA is empty and an actual live-site tab attempt returns “Browser is not available:
+iab.” Borrowed Next/TypeScript targets are absent and untouched. Storage remains
+below 15%, PP BOUNDED and new agents paused. Text and small checks continue;
+installs, new worktrees, media, build fanout, cleanup and website release stay held.
+Full gates, independent responsive/source/design/security/commercial acceptance,
+surgical production port and exact green main deployment remain required. Task
+writable-vault taste sync and frontier-overview freshness remain open. All 23
+foreign edits are unstaged. Policy loading is separate from runtime enforcement.
 
-Storage remains below 15% free. Text and small checks continue; installs, new
-worktrees, media and new agents stay held. CUA has no surfaces; borrowed
-Next/TypeScript targets are absent and untouched. Full gates, responsive capture,
-independent acceptance, surgical production integration and exact green main
-deployment remain open. Website source is unpushed and undeployed. All 23 foreign
-edits remain unstaged. Policy loading is separate from runtime enforcement.
-This task's taste synchronization awaits a writable vault interface.
-
-The free owned hub worktree is reused from fresh main `5f1087ea`. Only FrankX
-ledger/prompt sections, its sweep fragment and the appended dated session change.
-Other fronts and earlier bytes remain intact. Hub CI proves the handover only.
-Continue the remaining articles and admitted release recovery without reducing
-the full website goal.
+This handover reuses the free owned worktree from fresh main `309bb150`. Only
+FrankX ledger/prompt sections, its sweep fragment and appended session change;
+other fronts/history remain intact. Hub CI proves documentation only.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
