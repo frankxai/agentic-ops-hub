@@ -17,32 +17,34 @@
 
 ## Current
 
-### Watch the assess focus draft, then delete the remaining song counts locally
+### Delete the song counts still listed on issue 870
 
 Frank does not open the Jules UI. Read
 [ops/sessions/2026-10-04.md](sessions/2026-10-04.md).
 
-Already merged, do not redo: [PR 866](https://github.com/frankxai/frankx.ai-vercel-website/pull/866)
-as `6f735abb`, [PR 868](https://github.com/frankxai/frankx.ai-vercel-website/pull/868)
-as `20eaf115`, [PR 869](https://github.com/frankxai/frankx.ai-vercel-website/pull/869)
-as `6f204384`, [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871)
-as `044c84472`, and [PR 873](https://github.com/frankxai/frankx.ai-vercel-website/pull/873)
-as `f255c9f916a065c0886edccce30e76a4b4c3bc03`. Issue 824 stays open. Issue 842
-is closed. The research pages did not gain citations. The shared blog heroes
-were not replaced.
+Already merged, do not redo: [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871)
+as `044c84472`, [PR 873](https://github.com/frankxai/frankx.ai-vercel-website/pull/873)
+as `f255c9f9`, and [PR 874](https://github.com/frankxai/frankx.ai-vercel-website/pull/874)
+as `51f259c677165eca12a5b67d80166b373e942697`. PR 874 cleaned the press bio,
+achievements, the PDF email, both llms routes, the media kit, and the Frank
+Riemer page. Issue 824 stays open. Issue 842 is closed. The research pages did
+not gain citations. The shared blog heroes were not replaced.
 
-Jules session `10105741143636676934` is on Reality Architect issue 35. If it
-opens a pull request, leave it a draft. Do not merge it. Do not send Jules to
-FrankX issue 870 or back to the song-count pages. Do not apply the issue 279
-diff. Leave arcanea-ai-app PR 509, hub PR 112, and realityarchitect PR 47 as
-drafts. Leave FrankX 724 and 725, Dependabot majors, and Arcanea 436.
+Do not send Jules to FrankX issue 870. Do not apply the issue 279 diff. Leave
+arcanea-ai-app PR 509, hub PR 112, and realityarchitect PR 47 as drafts. Leave
+FrankX 724 and 725, Dependabot majors, and Arcanea 436. `jules-ops.mjs` token
+refresh returned `invalid_client`. The Jules CLI list still works. Do not run
+`jules login`. Do not print credentials.
 
 The next local deletion is the pages [issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
-still lists: bio, press, email, llms, achievements, and the other named files.
+still lists after PR 874: connect, soulbook preview, free-playbook, goals,
+intelligence-map, links metadata, map v3, newsletter thank-you, path/aesthete,
+rituals, students briefing, vision, youtube, AboutShell, the design-lab heroes,
+SignalRouteSelector, StartShell, IntelligenceMapShell, and the v0 variants.
 Delete the number. Do not write Catalog, Extensive, Vast, or Global in its
 place. Keep issue 870 open until those pages are clean. Use a new worktree.
-Do not write the occupied primary checkouts. Do not print credentials. Do not
-ask Frank to click Jules. Keep the other current prompts.
+Do not write the occupied primary checkouts. Do not ask Frank to click Jules.
+Keep the other current prompts.
 
 ### FrankX: review and release the first editorial renewal slice
 

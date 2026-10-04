@@ -2,7 +2,27 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (FrankX PR 873 merged `f255c9f9`, issue 870 stays open; PR 867 closed without merge; Jules 936 stopped; Jules 279 rejected and not applied; Jules session `10105741143636676934` planning Reality Architect issue 35, draft only) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (FrankX PR 874 merged `51f259c6`, issue 870 stays open; PR 873 merged `f255c9f9`; Jules assess session finished with no new PR; driver token refresh returned invalid_client, CLI list still works) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: bio and press song counts merged (Grok)
+
+[frankx.ai-vercel-website PR 874](https://github.com/frankxai/frankx.ai-vercel-website/pull/874)
+squash-merged at 2026-10-04T03:55:53Z as `51f259c677165eca12a5b67d80166b373e942697`.
+Head `2f8f71b56`. Local proof: 46 public-claims tests passed. Codex completed
+with no inline findings. CI failed once on the Next font build for
+`app/layout.tsx`, which this diff does not change. The rerun succeeded.
+Review Gate, Surface Guard, Contract Guard, Media Guard, Merge Gate,
+design-contract, and Vercel were success. Viewport proof was not run.
+[Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
+stays open. Connect, rituals, youtube, the design-lab heroes, and the other
+pages named on that issue still publish 12,000+.
+
+Jules session `10105741143636676934` finished with a diff and no pull request.
+The diff was not applied. It duplicated draft
+[realityarchitect PR 47](https://github.com/frankxai/realityarchitect/pull/47)
+and missed the build-path link. PR 47 stays a draft. Issue 35 stays open.
+`jules-ops.mjs` token refresh returned `invalid_client`. `jules remote list --session`
+still works. Do not print credentials. Do not ask Frank to run `jules login`.
 
 ## 2026-10-04: next song-count deletion merged (Grok)
 
