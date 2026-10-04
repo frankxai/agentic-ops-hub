@@ -8,54 +8,30 @@
 
 ## Arcanea guard and platform security, 4 October 2026 (Codex)
 
-- [Platform draft45](https://github.com/frankxai/arcanea-platform/pull/45) now
-  23f00e7/base b4738df9:135 paths/134 present, full diff b3a7b0ce.
-  Tested d22a80c has exact parents, whole tree and all134 changed blobs equal.
-  Existing creator ownership/output metadata/archive/search and MCP/state repairs,
-  original seven PRs/branches and all cherry-pick provenance remain.
-- Account signup/actual email confirmation, metadata bounds/collision handling,
-  missing-profile backfill and preservation are implemented. SDK insertion,
-  tier/verification/counter escalation denied. Seven owner edits persist and match
-  the official SDK. API owner preferences are private; stats retain caller creation
-  RLS and guarded follow aggregates. Legacy direct SDK private-column and
-  authenticated edge SELECT/historical privileged RPCs remain unresolved.
-- [Suite37182771046](https://github.com/frankxai/arcanea-platform/actions/runs/37182771046):
-  account20/22 each23PASS/0fail/skip/cancel and strict scoped types/lint PASS.
-  Actual GoTrue2.197.0/SMTP/PostgREST13.0.7/PG17/Chrome154, locked SDK, API/SQL
-  and five genuine React browser flows cover logout/retry/pending close-reopen.
-  Direct SDK same identity/rows/RLS is the serious alternative; no user benchmark.
-  Creation each19PASS/scoped checks, with Auth/embedding authority fixtures.
-  CLI each3349/3341PASS8skip0fail plus five installed cases PASS;
-  native production Rollup/Glob component PASS, absent Eliza/Solidity untested.
-- Packages37182771042/Quality37182771041 full types/Next16.3.8/secrets/topology PASS.
-  Web40errors215warnings; strict Apps/MVP FAIL and deploy/health/rollback SKIP.
-  Audit100=19low61moderate20high0critical/summary FAIL; gates stay enabled.
-  Earlier compatible dependency lock edc3146d/52importers/2166snapshots preserved;
-  no dependency/lock change in this account slice.
-- Native independent Grok4.7-build-fast/high: complete19 aa FAIL2 retained;
-  real5f22/19PASS3FAIL reproduces counter42501 and anonymous edge leakage.
-  Closed fixed-path triggers/ordered locks/guarded aggregate helper repair both;
-  complete19-file5b PASS0. Later5b23/22PASS1FAIL is revoked seed-token reuse
-  after real global logout. Current exact2-file23 correction PASS0 explicitly
-  checks old token401 and fresh genuine SDK owner stats200;17 other blobs identical.
-  Narrow124852bytes/bb7f5448/132.039s/USD0.12764008; three account reviews
-  USD0.84182912 unreconciled/tools0/sevenMCPdisabled/config unchanged.
-  Prior creator/client/dependency scopes retained; full135/GitHub/live review pending.
-  Final revoked-token assertion depends on preceding logout/full sequential file.
-- Scoped Impeccable detect[]/source focus44px/reducedmotion and actual browser
-  recovery refine existing UI. Computed CSS/contrast/mobile/screenreader/design
-  acceptance remains pending. Current task note is its historical pre-CI checkpoint.
-- [Issue44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5977415213) and this session/ledger/current pickup
-  retain both saves. Preserve foreign hub745e4404/goal01a10210/mobile/cursor/
-  projection and release144136139143; root142 receives no unrelated comment.
-- Next wire existing mock profile page, false-saved editor, stale plural hooks
-  and missing profile/settings navigation to actual owner/visitor state with durable
-  edits/interruption recovery. Twenty high advisories/strict lint/legacy SDK grants,
-  full integration/later migrations/live Supabase drift/model/media/storage/Vercel/
-  OAuth/ChatGPT-cloud/canon/customer/rendered design remain open. Main/live SQL/
-  production/registry/original branches unchanged. Goal ACTIVE. Disk14.82%BOUNDED,
-  cloud CI used; no new local modules/build/worktree/media/model/fanout. Policy
-  loading does not establish universal runtime enforcement.
+Implemented persisted creator profiles and discovery in draft #45 at `5faa1bf527f4bd2bcb99a3124a5f1f4d56da25e2`, base `b4738df9c483dced0f221360e23d2aa88f9a5879`.
+
+The existing profile/editor now reads the verified owner's stored row, saves six public fields through the actual UUID API, sends changed fields only and reloads persisted values. Owner and visitor portfolios retain caller RLS: visitors see published/public creations; owners can recover private, draft and archived work. Real follow edges and counts, missing/outage states, retry, account changes and late-response protection replace fabricated state. `/profile` resolves the signed-in owner; `/profile/user/[username]` handles names that collide with static routes. Discover uses actual published rows, server sorting/type filters, pagination and explicitly page-local search. Original output URL, prompt/model/seed 0, license and complete metadata are preserved. Fixture URLs do not prove media generation or successful downloads.
+
+[Suite 37188212286](https://github.com/frankxai/arcanea-platform/actions/runs/37188212286) completed:
+
+- Account/profile jobs [Node 20](https://github.com/frankxai/arcanea-platform/actions/runs/37188212286/job/111394651552) and [Node 22](https://github.com/frankxai/arcanea-platform/actions/runs/37188212286/job/111394651578) each pass all 36 cases, zero failures/skips/cancellations, scoped types and strict scoped lint. Actual GoTrue 2.197.0, SMTP, PostgREST 13.0.7, PostgreSQL 17, Chromium 154, real React/AuthProvider, locked SDK and API/database handlers exercise persistence and recovery. The alternative compares the same authenticated stored rows through the official SDK.
+- Creation jobs 111394651640/111394651581 each pass 19 cases and scoped checks; Auth/embedding authority remains a named fixture. CLI jobs 111394651557/111394651529 each pass 3,341 of 3,349 cases with eight existing skips, plus all five dependency cases. Actual frozen production installation/Rollup/Glob components pass; absent original Eliza/Solidity applications were not reconstructed.
+- [Packages 37188212230](https://github.com/frankxai/arcanea-platform/actions/runs/37188212230) and [Quality 37188212260](https://github.com/frankxai/arcanea-platform/actions/runs/37188212260) pass full types, Next 16.3.8 build, secret guard and topology. Nonblocking lint reports 33 errors/208 warnings.
+- Audit job 111394651586 fails with 100 findings: 19 low, 61 moderate, 20 high, zero critical. Test summary fails. [Apps 37188212253](https://github.com/frankxai/arcanea-platform/actions/runs/37188212253) and [MVP 37188212310](https://github.com/frankxai/arcanea-platform/actions/runs/37188212310) fail strict lint; deployment, health and rollback skip. Gates remain enabled.
+
+The full integration has 149 changed paths, 148 present files and the removed redundant npm lock. Full diff 1,778,235 bytes, SHA256 `82b06c37896bb9467cfb683275ed4a3c66729b7c2906cbec5103b3eabb0af5ca`. Actual tested merge `274cbf2cd6a4f2c7c7462e49776b77c9f47cfc39` has exact main/head parents, whole-tree equality and all 148 present changed blobs equal to the source.
+
+Independent native Grok 4.7-build-fast/high complete 24-file profile/discovery review at 5bce61b returned WARN1: a successful PATCH could commit before Cancel save, then Discard restored the stale local snapshot and reported it clean. Corrected baseline 552a341 reproduces that defect on both runtimes: 36 cases, 35 passes, one failure. Earlier d544031 reported 36 passes because its condition was already true before the click; that result is retained and invalidated. Discard now confirms the stored UUID row before resetting fields; failed/cancelled reads retain draft and uncertainty. Current native recovery waits for completed discard, compares fields with the committed SDK row read before cancellation, and verifies failed confirmation/retry.
+
+The exact five-file 5faa1bf correction review returns PASS0, with the other 19 of 24 profile blobs verified identical to the full reviewed revision. Packet 396,865 bytes/SHA256 `2a319792ad7d632aa786755a951b9e504dc3a1078082a5fd03f17489f0f5a7e4`; 262.236 seconds, reported USD0.2704564. Both profile reviews total USD0.68296616 unreconciled; zero tools, seven MCP entries disabled, global configuration unchanged, both workers terminal. Prior account/creator/client/dependency reviews retain their scopes. This is not a full 149-path source review or approving GitHub/live release review.
+
+Computed CSS at a real 360px iframe and 1280px desktop checks overflow, 44px controls, 2px input focus and sampled contrast 7.3213. Reduced-motion preference is active. Fonts/root decoration, physical touch/Safari, screen reader, native share/clipboard, full Next navigation/SSR/SEO and customer design acceptance remain outside that proof. A cancelled write committing after the confirmation GET can still make the editor stale; manual reversion, Cancel check and identity change during that read were reviewed in source, without dedicated new browser cases.
+
+No dependency, lock, schema or live SQL changes in this profile slice. Earlier pnpm8.15/lock6, 52 importers, 2,166 snapshots and lock SHA edc3146d remain. Original seven PR branches/cherry-pick provenance, foreign primary checkout and accepted app/canon remain preserved. Task notes retain historical pre-CI checkpoints; current job links and private source/native/review receipts record final results.
+
+Next resolve broad direct SDK private-profile columns/denormalized counters, authenticated follow-edge reads and historical privileged RPCs with actual caller denial/leak regressions and compatible migrations. Twenty high advisories, strict lint, whole-integration review, later/live migrations, actual storage/model/media output, OAuth, Vercel, live ChatGPT installation, accepted app/canon and user acceptance remain open. Main, production, live SQL, registry releases and original branches are unchanged. Estate save belongs in agentic-ops-hub session/ledger/current pickup; preserve foreign db448ec1 and other goals/releases. One lead/cloud CI, disk 14.80% BOUNDED, no new local installs/builds/worktrees/media/fanout. Policy loading does not establish universal runtime enforcement.
+
+Current issue save: https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5978129683. The 2026-10-04 session append and current pickup retain both saves. Preserve foreign parent db448ec1, every previous session and all other-goal/readiness/release/mobile/cursor/projection records.
 
 ## Arcanea release recovery on main, 3 October 2026 (Codex)
 
