@@ -427,7 +427,25 @@ gates, account eligibility and every other unfinished front.
 [Shared harness experiments, Codex design proposal, 2026-10-04]
 ```text
 Continue Frank's requested cross-harness improvement loop in existing Ops134;
-preserve Queen activation and SIS continuity work. Read the current Queen contract
+preserve Queen activation and SIS continuity work. Read the public/private boundary
+proposal/review response in the same private review
+directory. The earlier Ops runtime mapping names Frank's private integration only.
+Public reusable contracts/components are candidates under existing SIS ownership,
+with Board/maintainer, license and release review before extraction. Private Ops/
+Agent Config and runtime state retain personal registry/goals/memory/accounts/routes;
+public skill delivery uses the existing licensed seam. Labs publishes reviewed
+reproducible findings; Academy teaches; existing GenCreator community supports
+artifact feedback. Keep Queen as coordinator role and Starlight Intelligence as
+the public identity. No generic AgenticOps rebrand or new repository is decided.
+
+Benchmark current supported Paperclip against Queen/SIS on one real outcome before
+duplicating control features. Langfuse is an optional telemetry/evaluation seam;
+its stack stays stopped. Pin actual MCP/ACP/A2A/OTel capabilities as needed, with
+conformance and effective permissions proof. Require a clean second-operator
+install/useful artifact/feedback/restart/privacy/cost/rollback test before public
+promotion; reviewed migration names one durable owner and protects current queues.
+
+Read the current Queen contract
 and private queen-cross-harness-experiment-design-20261004.md plus its independent
 reviews/reconciliation in interface-foundations-20261003. Proposal only: both
 StepFun critiques REVISE, with remaining acceptance made explicit. No dispatch,

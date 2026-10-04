@@ -4,6 +4,25 @@
 >
 **Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX Chrome repair/review saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-04: Private Queen and public community boundary clarified (Codex)
+
+Frank challenged the earlier Queen ownership table. Its Ops assignment describes
+the current private instance integration, not a public core product decision.
+Registry main551e2f0 already separates private Ops, public SIS substrate and public
+sanitized hub. Fresh GitHub agrees; Agent Config/Labs/community app source remains
+private, while SIS and shared skills are public with detected MIT licenses.
+
+Proposed boundary: one reusable SIS-owned operations component after owning review,
+private instance data/bindings in Ops, existing Labs experiments/Academy teaching
+and GenCreator applied feedback. Queen stays configurable coordinator role. Retain
+Starlight Intelligence naming; observed AgentOps vendor/Cisco AgenticOps overlap.
+Benchmark Paperclip orchestration and consider Langfuse evaluation as separate seams.
+No extraction, rename, visibility change, new repo/runtime or protocol conformance
+claim. The exact private proposal7dfc638 received independent REVISE; rights audit,
+public release governance, selected conformance, second-operator recovery/privacy
+proof and single-orchestrator migration are recorded as implementation gates.
+Existing hub153 and Ops134 carry the correction; all earlier tasks remain open.
+
 ## 2026-10-04: Shared harness experiment design saved; pilot acceptance open (Codex)
 
 Frank requested shared Codex/Claude/Grok experiments, Queen observation, harness
