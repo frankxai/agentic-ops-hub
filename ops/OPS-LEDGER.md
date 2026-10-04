@@ -2,7 +2,379 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (workflow durable admission merged; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+
+
+## 2026-10-04: Workflow durable registration and signed admission merged (Codex)
+
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, [Swarm15](https://github.com/frankxai/starlight-swarm/issues/15),
+Technology30, hub102 and private Ops149. Previous goal turn made progress through
+PR33; this continuation revalidated current state and made further source progress.
+Keep the complete Queen/subscription/API/cloud/team/brand/creator/business goal active.
+
+[Swarm PR34](https://github.com/frankxai/starlight-swarm/pull/34) merged normally at
+`09b1dc8fef66b4e52af4a56175bb6e3b35d56e18` from `74b95ab108284a4093ae9f0a12d46c055673c7ec`. Source, tested PR merge
+`78afc850145a15aca26c54de60328fd9e9241df6` and main share tree `9e7970cfc9d87a3d889c961f7d2415894ea9661c`.
+[Exact main CI](https://github.com/frankxai/starlight-swarm/actions/runs/37179920405) passes 475 TypeScript/29 orchestration tests,
+PostgreSQL17, full typecheck, Next build and non-live dry run. 55 selected local
+regressions and ES5 source/imported typecheck pass. Commit secret hooks stayed
+enabled; no admin bypass or branch deletion. The unchanged preexisting test-only
+budget-secret fixture was retained; changed-source scans pass.
+
+The existing prepared registry now serializes insert, exact ready-row readback,
+database time, registration/denial audit and commit under the authority lock.
+Retries keep original time; conflicting immutable bindings and cancelled
+tombstones deny. Both fresh/upgrade audit constraints accept the two new events.
+The legacy registration call validates its timestamp but uses DB time for new
+registrations and throws on conflicts. Registration, prepared cancellation and
+reservation preserve the original persistence error when rollback also disconnects;
+audit remains best effort when storage is unavailable, and unknown commit outcomes
+require exact-ID reconciliation.
+
+Server bootstrap pins one issued verified operation ID/full digest/target/expiry
+and snapshots issuer keys privately. Signed receipt requests cannot replace that
+binding. Admission uses the existing durable prepared-state, revocation, fresh
+host/access/capability, capacity, cumulative-budget and duplicate-effect checks.
+No cached readiness grants authority. Four real PostgreSQL cases prove competing
+registry winners, permanent cancellation, broker insertion denial, exact signed
+workflow admission once and pre-start cancellation/release. Fifteen new fault/
+injection tests accompany these. Fixtures establish their test scope, not a live
+host, human approval or production database bootstrap.
+
+Independent native Google supplied-source PASS at the exact final revision:
+seven complete files and ten exact named PostgreSQL/test regions, 62.323 seconds,
+valid coverage/footer, no findings. Existing large PostgreSQL/test files were
+partially supplied; omitted code is not newly certified. Requested provider/model
+identity and confinement remain unproven. Preserve the initial 97e9740 CI failure
+from omitted audit event names and both original rollback-review FAIL receipts.
+Current corrected source/gates supersede them. Existing receipt schemas, database
+role grants/routines, planning contracts and all generated artifacts are unchanged.
+
+Next implement durable exact workflow-instance ownership and authenticated
+engine/executor dispatch with reconciliation before retrying an uncertain start.
+Reuse the merged GET observer, existing single-use leases, cumulative budgets,
+independent revocation/stop and usage authority. No second scheduler. Bootstrap,
+live tenant/credential scope, host capacity, authenticated executor session/start/
+stop/usage and external-effect reconciliation remain open. Cloudflare creation
+starts execution; obtain named pilot security acceptance, fresh live evidence and
+explicit exact human approval before a create call. A workflow instance is not
+runner OS process/descendant proof. Vercel app-local adapter remains open.
+
+Technology PR34/77a4374 and private complete HTML 8f99f177 are unchanged. Useful
+creator output versus the preserved hardware-sheet alternative, repair effort,
+time/actual cost, rendered design/buyer, mobile feedback/focus/touch, provenance/
+taste-memory, billing currency, native capacity/throughput/ROI and release remain
+open. No new purchase, paid fallback, worker, recurring schedule, funds or
+production operation was enabled; pilot ceiling unchanged. Cache retained
+for builds/reinstall recovery. Bounded storage used existing tooling, small local
+checks and cloud CI; no install/build/worktree fanout. Native review clients ended.
+
+Hub reconciled upstream b0f7b7d, preserving its font migration, actual deployed
+platform evidence and FrankX batch14 records. Two appended-record conflicts were
+resolved once; all upstream/new and own historical sections survive. The rolling
+FrankX summary follows its owning upstream; prior batch13 remains in ancestry.
+Other pickup prompts remain exact. Save the hub handover/ledger/current prompt
+and existing Swarm15, hub102 and private Ops149; archive no unfinished work.
+
+## 2026-10-04: Exact workflow operation binding and Cloudflare observation merged (Codex)
+
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, [Swarm15](https://github.com/frankxai/starlight-swarm/issues/15),
+Technology30, hub102 and private Ops149. Preserve the full Queen/subscription/API/
+cloud/team/brand/creator/business objective. The previous goal turn was no progress
+on implementation, consisting of cache clarification; current source and machine
+state were revalidated and this continuation made actual source progress.
+
+[Swarm PR33](https://github.com/frankxai/starlight-swarm/pull/33) merged normally
+at `c62155046ba80982148a05d5aa469fa8327f52ab` from source `0e2ddbad2a3430570cddcf0b83fa4165c55ba7eb`.
+Source, tested PR merge `b97e6ce9b807dfbf35650c6be7d591aa1795ac10` and main share tree
+`8b59429ad20d95a74c22c46b45122a8338deb853`. [Exact main CI](https://github.com/frankxai/starlight-swarm/actions/runs/37177811511) passes 456 TypeScript and
+29 orchestration cases, full typecheck, PostgreSQL 17, Next build and non-live
+dry run. 78 selected local regressions and ES5 source/imported typecheck pass.
+Secret hooks remain enabled. No admin bypass or branch deletion occurred.
+
+Six new files derive a workflow-specific operation from actual verifier-issued
+pack evidence and implement authenticated Cloudflare HTTPS GET readback. Binding
+checks exact profile/policy/plan/pack/compiler/lane/executor/role/capabilities and
+budget, then binds account, workflow UUID/name, deployed version and instance into
+the existing signed operation context digest. The existing authority actually
+rejects a receipt signed for another instance before attempting a reservation.
+Returned context data grants no activation and cannot promote itself in the
+durable prepared-operation registry.
+
+The observer checks authenticated workflow metadata and exact instance/version/
+digest-only correlation. Fixed origin, public IPv4 DNS pinning, standard TLS and
+connected-address checks, one in-flight read, one total deadline, complete 64 KiB
+UTF-8 JSON bodies, access expiry and one-minute evidence lifetime are enforced in
+code. Credentials remain module-private; provider correlation excludes private
+resource/actor/prompt data. Redirects, 404, incomplete bodies and timeouts remain
+unknown and never trigger a launch/retry. A terminal workflow or rollback does
+not release external-effect, descendant or budget holds. A workflow instance is
+not relabelled as runner OS process evidence. No deployed bootstrap or live
+Cloudflare credential/access/readback was verified.
+
+Complete native Google source critique at the exact revision passes with no
+material findings: all six new files plus five complete dependency files, 160.3
+seconds, valid coverage/footer. All eleven hashes match main. Requested model/
+provider labels and inherited permissions do not prove identity or confinement.
+Forty new meaningful tests use actual compiler/writer/verifier fixtures and
+mocked DNS/HTTPS; those mocks do not prove a live tenant or production behavior.
+Only six new files differ from PR32. All 37 existing generated files and the
+v1/v2 schema, compiler, prepared contract and authority SQL remain unchanged.
+Reuse `docs/WORKFLOW-INSTANCE-OBSERVATION.md` and `docs/WORKFLOW-RUNTIME-V2.md`.
+
+Next connect this final operation digest to sealed prepared-registration/readback
+and operation-time signed admission, then implement the authenticated engine/
+executor dispatch handshake and exact-ID recovery. Reuse the existing durable
+leases, cumulative budgets, independent revocation/stop and usage authority.
+Fresh tenant/credential scopes, host capacity, independent executor start/stop
+and external-effect settlement remain required. Obtain the named pilot security
+acceptance and separately named human approval before actual reversible worker
+activation. Keep one durable owner; Vercel app-local SDK transport remains open.
+
+Technology PR34/77a4374 and private complete HTML 8f99f177 are unchanged. Useful
+creator output versus the preserved hardware-sheet alternative, repair effort,
+time/actual cost, rendered design/buyer, mobile feedback/focus/touch, visual
+provenance/taste-memory, billing currency, throughput/ROI and release remain open.
+No paid fallback, purchase, recurring schedule, worker, funds or production
+operation was enabled. The pilot ceiling is unchanged and the full goal active.
+
+The npm cache is intact and held for build/reinstall recovery. Current work used
+installed tooling, small text/tests and cloud CI; no local dependency install,
+heavy build, worktree add, browser/server/watcher or model worker persists. The
+native review client ended. Disk remains below 15%; the earlier crossing receipt
+is retained. PP admitted one interactive workload with the RAM floor preserved.
+
+Hub reconciled immutable upstream `cacdc59b23625977341344f4aada822f2160160c`,
+preserving its Starlight identity and FrankX batch13 records and all other prompts.
+Two overlapping appended-record conflicts were resolved once. The rolling
+FrankX summary now matches upstream batch13; its prior batch12 revision and
+session evidence remain in ancestry. Save this pickup to the hub and existing
+Swarm15, hub102 and private Ops149. No unfinished work was archived.
+
+## 2026-10-04: Versioned workflow preparation integrated; live authority remains open (Codex)
+
+Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` and its full
+Queen, subscription/API, cloud, team, brand, creator and business objective.
+This is progress on the existing runtime factory; it does not complete the
+useful creator mission or the broader goal. The npm cache remains intact after
+Frank asked to consider build needs. Installed dependencies supported the earlier
+Creator Studio build; this slice required no local install or heavy build.
+
+[Swarm PR32](https://github.com/frankxai/starlight-swarm/pull/32) merged normally
+at `db5eeb4e9005e754fc41077a7088098f8ae118cd` from reviewed source `799e765892effcbff1c9445e0cf249193dc7b310`.
+Policy v2 and plan v2 require explicit scope/state/engine ownership. One workflow
+has one durable owner: Cloudflare for agent/cross-service work with state there,
+Vercel for app-local work. Railway, Hermes and n8n remain separate executors.
+AI Gateway is the accepted default model route. Compiler v3, pack v2 and prepared
+bundle v2 bind exact profile, source, policy, plan and owner map. The four existing
+CLIs dispatch the declared version. Exact microdollar planning arithmetic rejects
+precision, range and ceiling violations; it does not reserve actual spend.
+
+All 39 changed file hashes match three complete native Google source critiques
+(6 core, 8 consumers, 25 exports), each valid coverage/PASS/no material findings.
+Core/consumer files match their b982 reviews; exports are reviewed at the current
+revision, and all current hashes match the union. Review times: core: 143.439 seconds, consumers: 140.506 seconds, exports: 135.698 seconds. Requested provider/model labels and zero observed tool
+actions do not attest identity or confinement. Original coverage failure,
+canonicalization and Zod-version claims, earlier FAIL receipts and d616 CI
+TS2791 failure remain preserved. Integer arithmetic, ES5-compatible multiplication
+and the legacy admission type mismatch were corrected. Tests explicitly deny
+compiler-v3 receipts/new engine health in legacy admission; widening that parser
+is outside this preparation contract.
+
+Local verification passes 56 focused tests and selected/imported ES5/ESNext
+typechecks. Export review also led to expressible owner/config/privacy rules,
+strict path/date/commit checks and repair of two invalid empty tuple schemas.
+Real Draft 2020-12 validation accepts four schemas/four committed fixtures and
+passes all 26 mutation cases at source 799e765.
+Exact-object duplicates are rejected; keyed-ID/cross-file/canonical checks remain
+mandatory at runtime. Original v1 pack digest matches; 28 legacy source/export files are
+byte-identical. Four actual CLI stages wrote the example against immutable
+Git-verified profile b878eca0. Current source reread verifies all 18 artifact
+bytes, current Git provenance and canonical pack/bundle derivation. Secret hooks
+stay enabled. Source/PR/candidate CI 37175069041/37175071340/37175071344 pass.
+Source and tested PR merge `03c8d43d2ffbdc58049417f9017d2b9418b8b9db` share merged tree
+`03ad4c1a813ced485f6f4a9e24c3f4d2754bf986`. [Main CI](https://github.com/frankxai/starlight-swarm/actions/runs/37175342484) passes at the exact merged
+revision: full typecheck, 416 TypeScript/29 orchestration cases, PostgreSQL 17,
+Next build and non-live dry run. No admin bypass or branch deletion.
+
+Next implement operation-time workflow-engine authority and authenticated executor
+transport in the existing runtime. Preparation cannot start a mission: fresh owner
+binding/access/health/capacity, cumulative budget reservation, signed single-use
+grants, durable leases, independent stop and actual effect reconciliation remain
+required, followed by independent security acceptance and the separately named
+human-approved reversible pilot. Preserve one scheduler and old export/recovery.
+[Swarm issue15](https://github.com/frankxai/starlight-swarm/issues/15) stays open.
+Policy loading and descriptor checks are verified; live enforcement is not.
+
+Technology draft PR34 stays at 77a4374 and private complete HTML 8f99f177 retains
+its previous evidence. No Technology, HTML or visual edits this slice. Useful
+output versus the preserved hardware-sheet alternative, repair effort, elapsed
+time, actual accepted-outcome cost, rendered design/buyer, mobile interaction,
+native capacity, billing currency, throughput, ROI and release gates remain open.
+The EUR100 pilot ceiling is unchanged; no purchase, paid fallback, schedule, live
+worker, funds or production operation was enabled. All owned review clients ended.
+
+The hub normally reconciled upstream 20095f0 and 9f104a6, preserving newer
+brand-icon/design, FrankX and all other handovers/prompts. Save this pickup in this hub and
+existing Swarm15, hub102 and private Ops149; preserve prior task records and the
+active objective ledger. No unfinished work archived. Free disk crossed below15% at03:49UTC; the required
+queen report is preserved. Review and small text changes proceeded; cache purge remains
+unapproved and no local heavy or disk-growing workload started.
+
+
+## 2026-10-04: Queen recovery integrated; workflow ownership reconciled (Codex)
+
+Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` and the full
+Queen/subscription/API/cloud/team/brand/creator/business objective. Previous goal
+turn was progress: exact current handovers/issues/receipts were saved. This turn
+integrates the reviewed recovery library and corrects conflicting architecture.
+
+[Swarm PR30](https://github.com/frankxai/starlight-swarm/pull/30) merged normally
+as `f76370179022baadf468a50d6359b3519a2cb393`, including the preserved source-task
+`01a0f720-641c-7af2-af40-cc12eafd6a4f` repair. Original eleven RED regressions
+and 29 GREEN orchestration cases, earlier independent FAIL/reconciliation and
+native V8 crash retain their evidence. Runtime SHA256 stays
+`8a5d14bc20d45f8778097608d6b59ec5e5ca4cd62ecb4e09c5d072b165220dbe`.
+All seven changed files matched the union of reviewed source hashes before
+integration. Exact source/PR/candidate CI 37169743684/37169745850/37169745851
+passed; tested merge 56b65513 and source 3a0d2f24 share tree 18fb045a.
+Main CI 37170163309 passed at f763701. No admin bypass or branch deletion.
+
+The actual accepted Ops registry on main matches immutable 68bc808d, blob 60d33d85:
+Cloudflare Workflows for agent/cross-service work whose identity/state lives in
+Cloudflare; Vercel Workflows for app-local jobs; one workflow, one durable owner.
+Temporal, trigger.dev and n8n are not backbones. Railway is an executor host.
+README and the August ADR now explain this current choice while preserving old
+Temporal material, health and test history. They explicitly state that the
+current v1 planner/schemas/adapters/packs still encode Temporal and defer
+Cloudflare. Documentation/policy loading does not implement runtime enforcement.
+
+The first critique covered both changed documents and passed in 36.891 seconds,
+with four informational observations and no required fix. The lead then caught an incorrect schema label;
+[PR31](https://github.com/frankxai/starlight-swarm/pull/31) fixes it to actual
+`starlight.team_runtime_plan.v1`. Complete current README/ADR review at 346ca683
+is PASS, 25.947 seconds/no findings, both hashes verified. Source/PR/candidate
+CI 37170301221/37170384186/37170384194 pass. Requested Google/Gemini labels and
+inherited always-proceed permissions do not prove identity or confinement;
+only init/result/user/agent events and zero tool actions were observed.
+Full runtime/security, rendered/buyer, account/billing and live mission/release
+acceptance remain outside these documentation critiques.
+
+Final [main CI 37170662704](https://github.com/frankxai/starlight-swarm/actions/runs/37170662704)
+passes at merged `1a6ff89eacd2c8365fa923c798cca1f5155b46b6`.
+Main, current source and tested PR merge share tree
+`8f3cbc0bf01c3e7a3a91bb36cd31a1cc47149c93`. Standard CI covers typecheck,
+398 TypeScript/29 orchestration cases, PostgreSQL 17, Next build and non-live
+dry-run. This is source integration, with no worker, schedule, paid fallback or
+production operation enabled. Ops88's documentation correction is implemented;
+versioned runtime migration and authenticated named pilot remain open in
+[Swarm issue15](https://github.com/frankxai/starlight-swarm/issues/15).
+
+Next migrate the existing planner/policy/schema/compiler/prepared adapters as
+one versioned contract: explicit workload ownership, one durable engine per
+workflow, exact source/profile/plan/pack/approval bindings, old export/recovery,
+denial of stale/cross-engine grants and duplicate execution. Then establish
+fresh transport/access/health/budget evidence, independent security acceptance
+and the required named human-approved reversible pilot. Do not introduce a
+second scheduler or treat planned capabilities as grants. Measure useful output,
+repair effort, time and cost against the preserved hardware-sheet workflow.
+
+Technology PR34 remains at 77a4374 and the private complete HTML 8f99f177 retains
+its 55 sources/16 rates/27 properties/12 functions/15 runtimes, 38 local/14 actual
+Chrome checks and source-only PASS. No UI/data/visual change this turn; mobile
+sticky feedback/focus/touch, independent design/buyer, schema/taste-memory sync,
+actual currency/native quota/hardware throughput/ROI and release gates remain.
+The npm cache is intact; EUR100 pilot ceiling unchanged. Latest interactive PP
+ALLOW: 9,748 MB free / 4,096 required / 32% CPU / 12 runtimes / one/pause-new-swarms.
+No local dependency install, heavy build, worker, server or watcher persists.
+
+Hub's foreign Memory owner released the paths. This owner acquired explicit
+lanes and normally reconciled newer main deb852c, preserving FrankX batch 10,
+mobile workspace, shell-adapter/native-trust and all other sessions/prompts.
+The hub ledger/current prompt and existing Swarm15, Ops88, private Ops149 and
+hub102 issue records carry the pickup. Full goal remains active.
+
+
+## 2026-10-04: Kimi planning and actual report recovery verified (Codex)
+
+Source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`. Keep the full AI-factory,
+Queen, subscription/API, cloud, team, brand and valuable creator outcome active.
+The npm cache is held and untouched after Frank asked to consider build needs.
+Existing installed dependencies were sufficient for the completed local build.
+
+[Technology draft PR34](https://github.com/frankxai/starlight-technology/pull/34)
+is `77a4374bf153ac7b93c7efff0f28460e6899de98`. Kimi K3 five-minute and one-hour
+cache variants share Moonshot identity, have distinct write prices, and bill
+candidate cache misses as writes. Report/edit/import/export preserve both primary
+rate sources. New and legacy Kimi Code tiers and quota windows are distinguished;
+new regional plan prices and account billing remain unverified. Runtime freshness
+checks every selected trusted source date. No subscription or metered fallback
+has been enabled.
+
+Local toolchain, lint, types, 153 unit tests and 51-page build pass using installed
+dependencies under bounded machine admission. [CI37167418720](https://github.com/frankxai/starlight-technology/actions/runs/37167418720)
+passes those checks, 11 editorial cases and 34 actual Chromium desktop/mobile
+checks. Tested PR merge `6704a981a1d97e116ffe49464f3b8f53bd4976ed` and source head
+share tree `58813911965183863136ee4295560ba4b1e3695e`. Eight capture/sidecar pairs
+and both ledgers are saved; two Kimi captures were inspected by the lead.
+Native Google source review accepted the six changed source files with unchanged reviewed bytes:
+original invalid response shape, unsupported resume attempt and corrected same-
+conversation response remain preserved with an explicit acceptance addendum.
+Requested model labels and inherited permissions do not attest identity or confinement.
+
+The complete private HTML is
+`8f99f1779c1e462a7fedbd4327e512514f3191ea77551086706eeffc6baff9f5`:
+55 sources, 16 model-rate rows, 27 properties, 12 team functions and 15 runtime
+comparisons. Local pickup remains under the existing private technology audit,
+`ai-factory-20261001/operating-architecture-20261003/index.html`; no full private
+report or account payload is uploaded to this public repository.
+Actual browser testing reproduced overwriting unreadable saved bytes on an
+ordinary edit. The corrected page pauses saving, preserves unreadable, empty or
+detected changed copies, exports exact recovery bytes and requires confirmed
+replacement. This read/check/write protection is not an atomic multi-writer guarantee.
+All 38 calculation/catalog/synthetic-DOM checks and 14 actual isolated Chrome
+desktop/mobile checks pass at this hash. The failed run, three failed-state and
+six current captures, sidecars and both ledgers are preserved. Four current
+captures were lead-inspected. Mobile sticky cost feedback partly covers a
+duplicated result heading; design refinement remains due.
+
+Complete inline HTML native Google source review is PASS, 69.427 seconds, at the
+same hash, with no material findings and zero observed tool actions. This review
+covers source only. Browser behavior does not establish independent design or
+buyer acceptance. Identity, actual billing, installed hardware throughput, account
+capacity, independent rendered focus/touch review, useful mission, ROI and whole
+commercial release remain open. Provenance schema validation and taste-memory
+sync also remain pending. All owned build/browser/reviewer processes ended.
+
+The previously ownership-held Swarm handover is now saved here.
+[Swarm draft PR30](https://github.com/frankxai/starlight-swarm/pull/30) remains
+`86f47c4c311e2619b441cd3507869d14df909867`, integrating source task
+`01a0f720-641c-7af2-af40-cc12eafd6a4f` against merged base `286b618`.
+Eleven original recovery regressions fail before and all 29 pass after the
+byte-identical repair. Ownership/unknown execution/cached shape are checked before
+capacity holds; valid history is copied; resumed verification checks identity,
+honours cooperative AbortSignal, protects caller output and records fresh evidence.
+Exact-head CI37164620268 attempt 2 passes 398 TypeScript tests, 29 orchestration
+tests, build and non-live dry-run; both other PR/candidate runs pass. The first
+native V8/WASM crash remains preserved with root cause unestablished. Tested merge
+and source share tree `2e52db70`. Native source review PASS reconciles and retains
+the earlier FAIL/capacity finding using five simulated comparisons. Trusted-host
+callbacks remain distinct from authenticated operation-time grants, durable
+leases, bounded uncooperative verifiers, confirmed remote cancellation and one
+useful named reversible mission, all still open in
+[Swarm issue15](https://github.com/frankxai/starlight-swarm/issues/15).
+
+Hub paths became free through the previous owner's release. This owner acquired
+explicit lanes and normally merged newer main `93394a5cb2137689231641f0347997e008b7ec94`,
+preserving shell-adapter/native-trust, FrankX batch9 and all other records/prompts.
+[Technology issue30](https://github.com/frankxai/starlight-technology/issues/30),
+[hub issue102](https://github.com/frankxai/agentic-ops-hub/issues/102) and private
+Ops issue149 remain open. Approved pilot ceiling remains EUR100; report caps are
+planning assumptions. No cache purge, purchase, recurring schedule, live worker
+or production activation follows from this slice. Continue one useful recoverable
+mission under current authority and measured same-task comparison; preserve the
+existing hardware sheet and all incomplete product/release gates.
 
 ## 2026-10-04: Font artifacts decoded; migration verified in draft (Codex)
 
@@ -131,6 +503,77 @@ revision; continue preview, measured quality/usefulness and native owner rollout
 All eleven estate requirements remain active. No owned worker/server remains.
 See [October4 session](sessions/2026-10-04.md) and current pickup prompt.
 
+
+
+
+
+
+## 2026-10-04: Creator runtime choices and matched metered contingency (Codex)
+
+Technology draftPR34 is `082988a20532c5c187cad76e6a1cc116aca554fa`. Editable reportv3 adds sourced native/API host
+requirements and a matched fully metered contingency; reportv1/v2 recovery stays
+supported. Example50% native maker isUSD56.9012 vsUSD78.9012 fully metered; only
+the latter exceeds exampleEUR60. ActualEUR100 pilot cap/account/quota unknowns stay.
+CI37160380791:147 unit/11 editorial/51-page build/32 actual desktop/mobile Chromium
+checks; owned browser/server exited; tested merge/head tree matches. Native Git
+preview READY/HTTP200/noindex. Six inspected captures/sidecars/both ledgers saved;
+schema/memory sync and independent design/buyer approval remain open.
+
+Native Gemini3219302 six-file sourcePASS74.358s, unchanged hashes at this head;
+CSS/browser verifier/broader source/design/buyer/identity/confinement/invoice/release
+excluded. Actual v3 exports restore all inputs; hardware-only incumbent and prior
+exports/failures preserved. Foreign hub lease released; normal merge main4a789dad
+retains all other records and saves prior fadd4f7 provenance plus this slice in
+session04. Technology30/hub102/privateOps149 remain the tracking issues. Cache kept,
+local heavy build/browser RAM-held; no subscriptions/API fallback/schedule/workers/
+production activated. Full Queen/team/brand/creator outcome and useful mission open.
+
+
+## 2026-10-03: Creator complete report and remote recovery verified (Codex)
+
+[Technology PR34](https://github.com/frankxai/starlight-technology/pull/34) is885e7fa.
+Complete private JSON/Markdown now preserves work context, hardware preferences,
+cost assumptions, matched maker alternatives and purchase unknowns; hardware-only
+sharing remains separate. Imports validate inputs and recompute analyses. Native
+Sonnet's medium export/recovery findings were reproduced or scoped and repaired;
+latest scoped review is WARN at816a63e, final-source acceptance still pending.
+
+[CI37154943659](https://github.com/frankxai/starlight-technology/actions/runs/37154943659)
+passes133 unit/11 editorial cases,51-page build and24 real Chromium desktop/mobile
+export/import/reload/decimal/recovery/conflict checks. Tested merge1424d91 and head
+share treef0d5ce90; owned runner browser/server exited. Local full build/browser was
+RAM-held. A clean-head private planning report executed and restored every input;
+matched hardware-only alternative and prior receipts preserved, buyer ROI unmeasured.
+
+Cache retained, EUR100 cap unchanged, no runtime/production activation. Ops PR157
+875d64e has113 local/57 Windows+Linux CI cases; HTML2335003e has33 local checks with
+current render acceptance pending. Main9263c1d and all other handovers/prompts are
+preserved. See today's session, Technology30, hub102 and private Ops149. Final-source,
+rendered design/buyer/privacy/licence/commercial and useful Queen mission gates remain.
+
+
+## 2026-10-03: Creator exact input and remote source build (Codex)
+
+Technology draft PR34 is f6fa654e. Exact decimal parsing and draft/restore behavior
+preserve saved assumptions; 119 local unit cases and 11 editorial cases pass.
+Native Sonnet reviewed e86e8cb with WARN in 75.001s and zero tool steps; its restore-focus
+finding is fixed later. Final-head provider and browser acceptance remain pending.
+
+[CI37148784659](https://github.com/frankxai/starlight-technology/actions/runs/37148784659)
+passes all existing gates and the 51-page build. Tested PR merge 6297f6f and pushed
+head have identical tree 1212f903. Local Windows full build/browser is RAM-held.
+This draft branch's Vercel deployment is temporarily disabled; no later deployment
+was observed. Earlier preview2a106393 and browser proofb8b079ff retain their scopes.
+Cache preserved, EUR100 pilot unchanged, no runtime/production activation.
+
+Railway readiness/Queen planning reports zero autonomous/continuous role instances.
+SIS160 merged; swarm15 trusted activation and the full useful creator/brand/business
+outcome remain open. Wider design/buyer/security/privacy/licence/commercial checks
+remain pending. Current main 7ffaf455 and all other handovers/prompts are retained.
+See today's session and Technology30/hub102/private Ops149.
+
+
+
 ## 2026-10-03: Actual community captures and sentence-case repair (Codex)
 
 [Kernel PR33](https://github.com/frankxai/starlight-design-intelligence/pull/33)
@@ -183,6 +626,18 @@ estate goal and [issue12](https://github.com/frankxai/starlight-design-intellige
 stay open. No session-owned worker/server/watcher remains. See
 [session](sessions/2026-10-03.md).
 
+## 2026-10-03: Creator cap fixed; native route comparison completed (Codex)
+
+Technology draft PR34 is2a106393: known-cost cap breach preserved with unknown fees.
+Full Windows102 tests/build and exact CI37144250102/READY HTTP200 preview pass.
+Google three-file review found the bug; whole-four-file Google timed out. Native
+Opus reviewed the same source in147.6s with WARN, confirmed costs/cap and named
+precision/recovery boundaries. Scope, packet failures and dispositions remain in
+today's session and issue30. Native quota data stays private in Ops issue149.
+Hard tool confinement, wider design/buyer/security, commercial acceptance and
+useful autonomous mission remain open. Cache preserved; no production promotion.
+
+
 ## 2026-10-03: Native Codex design execution and recovery (Codex)
 
 [Kernel PR31](https://github.com/frankxai/starlight-design-intelligence/pull/31)
@@ -219,6 +674,122 @@ unchanged. Machine storage crossed 14.89% then recovered above 15%; the private 
 receipt and this owned handover preserve the event because routing refused writes
 to another owner's Queen checkout. No cleanup or other-owner mutation occurred.
 No session-owned worker, server or watcher remains. See [session](sessions/2026-10-03.md).
+
+## 2026-10-03: Creator Studio integrated and verified; cache retained (Codex)
+
+The earlier storage hold recovered externally. After fresh admission and exact
+ownership/preflight checks, the published Studio and cost source was integrated
+in [Technology draft PR34](https://github.com/frankxai/starlight-technology/pull/34)
+at b8b079ff. Full Windows toolchain/lint/types, 100 Vitest/11 editorial tests,
+production build and 15 actual Chrome recovery checks pass. Exact-head CI37141130877
+passes and Vercel preview dpl_GfprgRhsMLwxfbPpzTxqqcQd8ZKx is READY; /studio returned
+HTTP200 with matching deployment ID and noindex. Production stays unchanged.
+
+No npm cache purge. Offline installation reused340 cached packages but missed
+caniuse-lite; frozen-lockfile retry downloaded25. Google native review exited with
+empty text/zero usage and supplies no verdict. Independent provider/design/buyer/
+privacy/licence/commercial gates remain open. All owned servers/workers stopped.
+See today's session, Technology issue30 and the current prompt. Full objective
+remains open; Ops PR157 stays draft and unactivated.
+
+
+## 2026-10-03: Creator Studio cost source prepared; cache purge held (Codex)
+
+Frank requested consideration of build needs before cache deletion. No cache was
+purged. The owned private six-file extension reuses the exact published 54-file
+Studio candidate, preserving shared draft recovery. It adds editable model/cache/
+subscription/compute assumptions and an exportable same-workload comparison to
+the existing plan. Delta `8304b7f5caee24a569ddedf2ed99424dfad0e6ff0f84eb47422e5b2e1ee5b130`;
+strict cached-toolchain types, 15 Node and 24 Vitest cases pass. Source secret scan
+is clean. Partial-tree lint passes with discovery warnings; full build/browser/
+independent acceptance and canonical integration remain pending. No new install,
+service/model run or live release. See today's [session](sessions/2026-10-03.md),
+[issue30](https://github.com/frankxai/starlight-technology/issues/30) and the current
+prompt. The full AI-factory objective remains open; Ops PR157 stays draft/unapproved.
+
+
+## 2026-10-03: Native PR model binding and resource recovery (Codex)
+
+At close the system volume crossed below the 15% unattended floor. A fresh native
+probe measured 14.99797% and the changed review adapter returned `hold` using real
+PP and filesystem evidence. New worktrees, installs and unattended/model work are
+held; bounded text and read-only recording continue. No cleanup or foreign process
+termination. A one-line crossing receipt was saved in the existing ignored Queen
+reports directory and the event was reported to Frank.
+
+Source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` continues the full AI-factory
+goal. Private [Ops draft PR157](https://github.com/frankxai/agentic-ops/pull/157)
+at `55f4a9e1a744b62286a9836fa13bf9d2843f05b7` extends the existing review loop.
+Both native CLIs receive the dispatch model; unsafe/missing values refuse launch.
+Receipts distinguish requested model from unproven served model. Quota and machine
+admission are rechecked before every review, including the first. RAM/reservation
+and unrounded disk floors fail closed. An empty Codex run cannot reuse an old verdict.
+
+Ninety local tests pass, including the original 56 identity/sign-off tests. The
+34 portable routing cases pass on Windows and Linux in exact-head
+[CI run37132527877](https://github.com/frankxai/agentic-ops/actions/runs/37132527877).
+Enabled staged secret scanning passed. A real read-only PP/filesystem/GitHub/
+dispatch run held the pending PR when its independent native pool was unavailable;
+it invoked no model and created no review state directory. This is integration
+evidence for dry-run behavior, not a completed autonomous review or worker mission.
+
+A tools-denied native xAI review of this exact head timed out without output.
+Its session-owned client stopped; remote cancellation remains unconfirmed. The
+PR remains draft and independent approval is pending. No merge or activation.
+The inherited managed-security boundary and proposal dispatch dependency still
+need activation evidence. Original creator-plan source, other Queen changes and
+the existing pilot ceiling are preserved. [Issue149](https://github.com/frankxai/agentic-ops/issues/149)
+tracks the runtime slice; creator-plan issue30 remains open. See today's
+[session](sessions/2026-10-03.md) and current prompt for the next admitted action.
+
+## 2026-10-03: AI-factory operating architecture and recovery evidence (Codex)
+
+Source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`. The original broad goal remains
+active: one Queen across the existing brands, supported subscription/API routing,
+durable remote execution, dynamic teams, complete cost/ROI and reusable creator
+planning. Preserve the existing accepted product and unfinished work.
+
+A private self-contained study now connects 47 primary source URLs, 14 priced API
+models, 14 subscription rows, 16 infrastructure rows, 11 runtime choices and 27
+existing source-mapped properties. Current provider-host eligibility is distinct
+from API eligibility. Existing Cloudflare cross-service and Vercel app-owned
+workflow boundaries are preserved. Vercel Blob/Image stays the accepted new-app
+media default; R2 is a compared exception. No second Queen or cost ledger.
+
+Exact HTML SHA-256: `5e42affcfd7c2ee4bb99862784cd1788badad94a255b09d71845d755ae54fa72`. Thirty-three calculation/import/synthetic-DOM checks
+and 21 actual installed-Chrome checks pass. The browser receipt covers desktop,
+mobile/tablet, keyboard/touch, separate review billing, import/export, cancellation
+and storage-denied recovery. Four screenshots have companion provenance; both
+required visual ledgers were appended. Lead inspection refined mobile cost
+feedback and desktop overlap. Founder/buyer appearance approval and writable
+memory-vault synchronization remain pending.
+
+Reviewer caches and native allowances are now modeled separately from maker
+caches/allowances. The reviewer defaults to cold cache and API billing. Strict v1
+import migration retains user values and adds conservative v2 assumptions;
+fractional worker/CPU allocations fail. Existing invoice currency, quota balances,
+accepted throughput and attributable savings remain unconfirmed. No private
+financial values or account details are copied to this public handover.
+
+Native Claude, Grok and Google review attempts did not produce an independent verdict;
+private receipts retain their outcomes. No independent review PASS is claimed.
+The Chrome and reviewer CLI processes owned by this session stopped. Cancellation
+of a remote backend turn after CLI timeout was not established. No dependency,
+model, fleet, scheduler, purchase, paid cloud mission or deployment was started.
+Policy loading and proposed contracts are not runtime enforcement.
+
+Action records and next steps remain on private execution issue149, creator-plan
+issue30 and hub pickup issue102. See [session](sessions/2026-10-03.md) for scope,
+ownership and missing runtime/release proof. The EUR100/month approved Queen pilot
+record remains unchanged; illustrative scenarios are not new spending authority.
+
+Private companion plans now compare matched smaller cold-input workloads using
+fully billed APIs without assuming native quota. Arithmetic fits the approved
+pilot ceiling; quality, incomplete charges and dispatch remain unproven. Codex
+Cloud read-only metadata worked; existing ready results were preserved. No
+enabled Computer Use browser was available for native-provider review.
+
+
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
@@ -652,3 +1223,66 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+
+## AI-factory full report: execution placement and complete source critique
+
+Keep the npm cache. Local package installs can reuse its downloads; the existing
+cloud CI build succeeded with its own dependencies while the local cache stayed
+intact. No purge approval was given.
+
+The private standalone report is now SHA256 `642c9551b8820b88d7dbe1f79259a4b464c50d5e96bb558e4f7e1944d0c04184`. It preserves
+27 mapped properties, 12 team functions, 54 primary sources, 15 runtime comparisons,
+14 selectable model-rate rows, subscription/host/data/hardware alternatives and
+editable mission economics. Its execution-placement comparison covers existing
+Codex/Claude managed cloud, customer-hosted Linux workers, actual GitHub CI build
+offload and persistent browser/desktops. Use existing managed cloud where account,
+model, quota and repository access allow it before buying another plan. GLM Lite
+is conditional on useful accepted output and a supported coding route; membership
+prices alone do not prove API credits or external worker eligibility. Recompute
+actual host allocation for managed cloud or CI rather than adding both blindly.
+
+Official Claude documentation separates Pro/Max/Team/eligible Enterprise managed
+cloud, owner-enabled Team/Enterprise self-hosted beta and Remote Control on an
+awake host. Kimi K3 has a dated 22 July launch quote, current TTL cache-write
+semantics and an unverified current numeric quote. It remains outside selectable
+rates. The derived 2.8T four-bit weight payload is about 1.273 TiB before overhead;
+this is not a benchmark or a complete in-memory 128 GiB serving claim.
+
+All 33 calculation/import/recovery/catalog/synthetic-DOM checks pass at this
+artifact. Model/UI/catalog contents exactly match the embedded source. The final
+native Gemini critique covers ONE COMPLETE HTML including all inline source,
+PASS in 35.447 s with a valid footer and zero observed tool steps. Requested model,
+native CLI init and inherited always-proceed permissions are not model/provider
+attestation or enforced confinement. Owned review and quota-reader processes exited.
+
+Preserve the two earlier full-report attempts: the first inferred missing disk
+dependencies from packet omission; actual dependency existence, embedded identity
+and 33 passing checks disprove that finding. The second duplicate-dependency packet
+was truncated and lacked its footer, so review acceptance is incomplete. Neither
+failure is relabeled PASS. Final source hashes and each raw receipt are private
+evidence under the existing audit leaf and [private Ops149](https://github.com/frankxai/agentic-ops/issues/149).
+
+Starlight light institutional guidance was retrieved; the decorative star was
+removed while its existing identity stayed intact. Emil's immediate navigation
+and 44px controls are preserved. Native Impeccable context ran once, app-session automatic
+design enforcement is unverified, and one static detector retained its findings. A single
+source correction reduces accent borders to 1px and print-table text increases
+from 10px to 12px. Screen tables remain 13px with 13px/17px cell inset. Static wrapper
+padding and print-cascade findings are not rendered design proof; the shadow/copy
+advisories remain recorded. Browser PP is HOLD: 6,568 MB free/8,192 required, twelve
+runtimes. Dual isolated design assessments were unadmitted under one-worker/
+pause-new-swarms posture. Current HTML desktop/mobile rendering and design acceptance
+remain pending. Earlier captures retain their original hashes. Both provenance
+sidecars and both ledgers are saved; schema validation/taste-memory sync are pending.
+
+Technology [draft PR34](https://github.com/frankxai/starlight-technology/pull/34)
+remains unchanged at `082988a`, with 147 unit/32 cloud Chromium checks and its
+native Git preview. Those checks cover Creator Studio, not this private HTML.
+The serious incumbent hardware sheet and all prior exports remain preserved.
+No buyer time/repair advantage or ROI is measured. The hypothetical USD250 report
+scenario cap is distinct from the approved EUR100 incremental pilot ceiling.
+No new subscription, paid API fallback, schedule, fleet worker or production
+activation occurred. The full Queen/subscription/API/cloud/team/brand objective
+remains active; use [swarm15](https://github.com/frankxai/starlight-swarm/issues/15)
+for the next named reversible mission's authority/access/security path.

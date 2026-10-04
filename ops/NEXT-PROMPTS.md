@@ -17,6 +17,62 @@
 
 ## Current
 
+### AI-factory architecture: implement trusted workflow execution and prove a useful mission
+
+Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Swarm15, Technology30,
+hub102 and private Ops149. Preserve the full Queen/subscription/API/cloud/team/
+brand/creator/business goal and other owners. Cache retained; pilot ceiling unchanged. No new purchase, paid fallback, schedule or live authority follows
+from plans or CI.
+
+Swarm PR32 merged at `db5eeb4e9005e754fc41077a7088098f8ae118cd` from 799e7658. Exact main CI
+37175342484 passes 416 TypeScript/29 orchestration tests, typecheck,
+PostgreSQL 17, Next build and non-live dry run. All 39 changed hashes match
+three complete native source PASS critiques. Source/tested merge/main tree
+03ad4c1a813ced485f6f4a9e24c3f4d2754bf986 matches. Original FAIL/coverage/schema/API assumptions,
+type mismatch, TS2791 and all prior recovery evidence remain preserved.
+
+The actual v2 planning/compiler/verified/prepared pipeline requires one explicit
+Cloudflare or Vercel owner per workflow, separate executors, exact profile/policy/
+plan/pack binding and integer microdollar caps. Four CLI stages pass; 18 current
+artifact bytes and canonical derivation match. Old v1 pack and 28 legacy files
+are preserved. Legacy admission rejects v2 receipts and workflow health keys.
+Preparation is not operation authority. Reuse docs/WORKFLOW-RUNTIME-V2.md.
+
+Swarm PR33 merged at c62155046ba80982148a05d5aa469fa8327f52ab; source 0e2ddbad, exact main CI
+37177811511 passes 456/29 plus typecheck/PostgreSQL 17/build/dry run. Full eleven-file
+native source critique passes, all hashes match; six new files and 37 existing
+generated files preserved. Reuse docs/WORKFLOW-INSTANCE-OBSERVATION.md: actual
+pack-issued operation binding and fixed-origin authenticated Cloudflare GET
+observer. Forty new tests cover tenant/version/instance substitutions, old signed
+approval denial, network failures and exact-ID recovery. No live tenant/readback,
+executor/process/descendant or activation authority follows from mocked tests.
+
+Swarm PR34 merged at 09b1dc8fef66b4e52af4a56175bb6e3b35d56e18, source 74b95ab1.
+Exact main CI 37179920405 passes 475/29/typecheck/PostgreSQL17/build/dry run;
+55 selected local regressions/ES5 typecheck and current scoped native PASS.
+Seven complete source files/ten exact regions reviewed; omitted large existing
+PostgreSQL/test code not newly certified. Initial audit-migration failure and
+both original rollback-review FAILs remain preserved. Registry exact readback,
+immutable/cancelled tombstones, DB time/audit/commit and sealed signed admission
+are implemented. Do not rebuild them or the completed GET observer.
+
+Next implement durable exact workflow-instance ownership and authenticated
+engine/executor dispatch, retaining exact IDs and reconciling uncertain starts. Reuse existing single-use leases/cumulative budgets/independent stop/
+usage authority; do not rebuild the completed GET observer or add a scheduler.
+Retain exact instance IDs on uncertain outcomes and reconcile external effects.
+Implement Vercel's app-local adapter separately. Fresh tenant access, host capacity,
+executor/process/descendant evidence, independent named pilot security acceptance
+and the separately named human-approved reversible mission remain required.
+Measure useful output/repair/time/actual cost on the same hardware-sheet task.
+Preserve private-data restrictions, export/recovery and all human gates.
+
+Reuse Technology PR34/77a4374 and private complete HTML 8f99f177. Their prior
+153 unit/51-page/34 cloud-browser and 38 local/14 Chrome evidence remains in its
+scope. Current slice changes no UI/data/visuals. Mobile cost feedback/focus/touch,
+independent design/buyer, provenance/taste-memory, actual currency/native quota,
+hardware throughput/ROI and release remain open. Ops PR157 stays unactivated.
+Save each completed slice to this hub plus existing product issue; full goal active.
+
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
