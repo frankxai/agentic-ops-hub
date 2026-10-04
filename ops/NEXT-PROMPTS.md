@@ -31,6 +31,13 @@ Choose integration after comparing a real task against Paperclip goal/task/budge
 
 Read current contracts, acquire a free lane, run route_work guard/check, apply Emil guidance to actual UI changes and verify focus/touch/reduced motion/interruption. Return a concise PASS/HOLD receipt with clickable private view, source/build/install revisions, tests/review, rollback, remaining gaps, measured cost scope and refresh/collector coverage. Save the three hub records and the existing product issues. The user outcome is dependable recovery and oversight of valuable work; a green scaffold or aggregate counter does not close it.
 
+### Starlight sites: finish sentence case and mobile route by route
+
+Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. Production serves SIS main `232bcdc` (Protocol) and Lab `a0dbca5`; the live probe at `~/.starlight/reviews/interface-foundations-20261003/live-probe-20261004-232bcdc-a0dbca5/live-probe.mjs` is the repeatable check (run `pp preflight --workload browser-qa` first, once, throwaway profile, kill only its own Chrome).
+
+SIS 276 is merged (`9a139db`); re-read the `.org` alias binding for it. Take the next route with the most forced-uppercase text (`protocol`, `constitution`, `cockpit`, `deploy`, `download`, `knowledge-tree`, `yolo`, `verify`), capitalise its lowercase source labels by hand, probe it at 320/390/768/1440 with reduced motion, merge, and probe production. Judge the Lab's default 1px focus ring against its dark surface. Do not mint Vercel bypass links; confirm the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
+
+
 ### Queen: ship SIS session continuity from merged source
 
 Continue Frank's session-continuity outcome from original task `01a102ed-873c-7b92-b37b-4f299c63813b`. Source [Ops PR161](https://github.com/frankxai/agentic-ops/pull/161) is merged at `551e2f0435322c8d9c7c2745acce1c68d1eb2848`, with reviewed head `a1ac1e3c5661177122f307c75cdfbe37557bec5b`, Windows/Linux73 behavior +6 actual SIS conformance passes and independent source PASS. Main CI37215248609 is verified. Treat this as MERGED_NOT_LIVE and preserve prior findings and the original blocked native goal; source delivery did not finish the wider campaign.
