@@ -79,6 +79,45 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
+Current asset-foundations slice: kernel draft35 is frozen at
+`ddf1d663d186130f9aa6b349beb2e6599af0df55`, canonical clean
+`starlight/repos/starlight-design-intelligence`, branch
+`agent/codex/media-registry-proof-20261004` from mainc810469. Old native34/c99adec
+branch and unfinished Hermes work preserved. Echo-only sync returned0 with fabricated
+runtime approval/usage; sample preserved byte-for-byte, canonical registry now empty.
+Preview/apply/audit uses existing VIS receipt and owning sidecar schemas, current
+file hashes and native canonical containment. Apply binds registrySHA and artifact
+fingerprint; foreign locks/changed proofs fail, exact repeats no-op, audit rechecks.
+No actual artwork registration or human/rights/liveVIS/ledger/publication acceptance.
+
+Actual preview-proof RED atbd407 and native alias RED at735444ff repaired. Fourteen
+targeted Windows/Linux tests pass, no skips; final CI37171363371 and37171363383 pass
+75LinuxNode/15Python/53browser-process checks, merge96f8f761/all12blobs equal.
+Earlier clean Windows72/74 retains two incumbent symlinkEPERM failures. Same-task
+existing validator/manualSHA comparison and restored-fingerprint recovery executed
+on synthetic bytes, not customer/creative/value proof. Original Poolside735444ff
+REVISE is disputed with literal optional-chain/containment/lock/revalidation source;
+NVIDIA735444ff timeout and exactddf1d663 Cohere length/null8000 have no verdict.
+Keep draft/promotion held and all review/failure history. Recover one useful bounded
+current-head source critique when admitted, then real permitted asset/ledger proof.
+
+Figma JS tool discovered and Figma-use/library guides read, but actual metadata,
+libraries and read-onlyJS requests forrQRcBL1Kg5TMzEYa5TO9On hit Starter call limit.
+No canvas writes or current canvas state verified; keep historical state dated.
+GenCreator TerritoryB/InstrumentSerif/paperred accepted direction preserved; X/Y/Z
+wordmark choice, editable library application and all-brand masters/rights remain.
+Public sidecar URL404 confirmed; exact owningVIS91918bfa schema mirrored atSHAa198d2c0
+and unfinished Hermesefeccd7a binding schema reused atSHA200d3037. No owner edits.
+
+Latest native02:26UTC read still sees both new Bash hooks untrusted; never self-trust
+or infer approval from Frank saying he will review. Client exited0, shared config
+unchanged, no model/thread/MCP start. After actual trust, use the frozen Config96
+lane below for denial/design/Post/Stop/reload/recovery/model-guided UI proof.
+Read private media-registry-ci/local/preview-gap/alias/comparison/review receipts.
+PP02:23buildBOUNDED9780MBfree/8192required/5684projected/24%CPU/12runtimes/one
+parallel/pause-new-swarms; disk145.90GiB/15.33%. Refresh admission before heavy/growing
+work. No owned workers/servers/watchers or new worktrees; no task/process deletion.
+
 Config draft96 is frozen at `09d1bc46b87c2ba6cfddcb870a5b1eb50adeee06`, clean
 owned worktree `starlight/worktrees/native-design-hook-coverage-20261004`, branch
 `agent/codex/native-design-hook-coverage-20261004`. Pending-UI Bash adapter uses
@@ -179,7 +218,7 @@ Fresh PP/storage admission before heavy/growing work. Last03:04 interactiveALLOW
 worktrees, cleanup or persistent workers under constraints. Owned requests/decoder
 terminal; no server/watchers. Canvas/SIS/Substrate disabled; Higgsfield banned.
 Current captures are non-generative with actual sidecars; generation-schema404
-unverified. New generated media requires both ledgers and actual provenance.
+now confirmed; exact owning VIS schema is mirrored in draft35. New generated media requires both ledgers and actual provenance.
 
 Save finished slices to this hub session/ledger/prompt and existing Config78/kernel12 issues.
 Preserve newer FrankX batch9, Queen and every unfinished front. The original
