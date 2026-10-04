@@ -17,117 +17,133 @@
 
 ## Current
 
-### AI-factory architecture: prove placement and a useful recoverable mission
+### AI-factory architecture: prove useful mission and refine the accepted product
 
-Continue task01a101b1-9d38-7fa1-b1f0-dec923631d7f, Technology30, private Ops149
-and hub102. Preserve the complete Queen/subscription/API/cloud/team/creation/
-business objective and all other owners' prompts. Keep the npm cache.
+Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Technology30, private
+Ops149, Swarm15 and hub102. Preserve the complete Queen/subscription/API/cloud/
+team/brand/creation/business objective, all other owners and unfinished work.
+Keep the npm cache. Approved pilot ceiling remains EUR100; planning caps and
+source/CI checks grant no new subscription, API fallback, recurring schedule,
+live worker or production authority.
 
-The private full operating report is `642c9551b8820b88d7dbe1f79259a4b464c50d5e96bb558e4f7e1944d0c04184`: 54 primary sources,
-27 mapped properties, 12 team functions, 15 runtime comparisons, 14 selectable
-model-rate rows. Its placement decision distinguishes existing managed native
-cloud, customer-host workers, actual CI build offload and persistent desktops.
-Kimi K3 launch prices are dated; current numeric quote/cache-write charges are
-unverified and excluded from selectable rates. No complete 128 GiB K3 benchmark.
-All 33 checks pass. Complete inline HTML native source critique PASS 35.447 s;
-retain earlier missing-file false finding and duplicate-packet truncation. This
-is source acceptance, not rendered design, account access, identity or billing.
+Reuse Technology draft PR34 at `77a4374bf153ac7b93c7efff0f28460e6899de98`.
+Kimi K3 five-minute/one-hour cache models share provider identity and bill misses
+as TTL writes. New/legacy subscription quotas and source freshness are explicit;
+new regional prices/account billing remain unknown. Local full build/153 units
+pass using installed dependencies; CI37167418720 adds 11 editorial and 34 actual
+Chromium checks, with source and tested merge trees equal. Six changed source
+files have native source acceptance with original/corrected receipts retained.
+Broader design, buyer, identity and billing acceptance remains open.
 
-One static detector and one batched correction retain screen 13px/table cell inset,
-increase print 12px and reduce accent borders 1px. Brand/Emil context applied;
-app-session automatic enforcement unverified. Current browser/design acceptance and dual isolated
-assessments remain held. Earlier captures retain their old hashes. Sidecars/both
-ledgers saved; schema validation/taste-memory sync pending. Prefer approved cloud
-rendering without placing private business/account data in public repositories.
+Full private offline report at the existing technology audit is
+`8f99f1779c1e462a7fedbd4327e512514f3191ea77551086706eeffc6baff9f5`:
+55 sources, 16 rates, 27 properties, 12 functions, 15 runtime comparisons.
+All 38 local and 14 actual isolated Chrome checks pass. Reproduced unreadable-
+copy overwrite is repaired: edits pause writes, exact backup exports work and
+confirmed replacement recovers. Changed-copy protection is read/check/write,
+not atomic multi-writer coordination. Full inline native source review PASS
+69.427 seconds matches the hash; no rendered/buyer/billing acceptance follows.
+Preserve failed captures and both ledgers. Mobile sticky cost feedback covers
+part of a duplicated result heading; refine this and actual focus/touch behavior.
+Independent rendered design/buyer review, schema validation and taste-memory
+sync remain due. Private report/account payloads stay outside this public repo.
 
-Reuse Technology draft PR34 `082988a20532c5c187cad76e6a1cc116aca554fa`, actual
-native Git preview and CI37160380791: 147 unit/11 editorial/51-page build/32 real
-Chromium checks. Complete reportv3 restores every input; v1/v2 recover; matched
-fully metered contingency changes both API shares only. Six complete unchanged
-runtime/report/cost/React files have separate source PASS 74.358 s; broader sources,
-independent rendered design/buyer/privacy/rights/commercial gates remain open.
-
-Compare actual useful output/repair/time against the preserved hardware sheet.
-Invoice currency/native capacity/hardware throughput and ROI remain unmeasured.
-USD250 report cap and product EUR60 example are hypothetical; approved pilot
-ceiling remains EUR100. Ops draft PR157 at875d64e stays unactivated. Railway/swarm/
-SIS infrastructure receipts do not prove a useful autonomous mission. Next use
-swarm15's exact named pilot, operation-time authority, access/security and recovery
-track for one useful bounded mission. No new plan/API fallback/schedule/live
-worker/production authority follows from source or CI checks. Full objective active.
+Reuse Swarm draft PR30 `86f47c4c311e2619b441cd3507869d14df909867` and its original
+source-task repair. Eleven regressions RED before, 29 GREEN after; CI includes
+398 TypeScript cases/build/dry-run. Native source PASS reconciles the retained
+FAIL against five simulated comparisons; native V8 crash and retries remain.
+Trusted callbacks are not authenticated grants; timeout is not confirmed remote
+cancellation. Finish current access, durable lease and operation-time authority
+work for one named useful reversible mission without adding a second scheduler.
+Measure useful output, repair effort, time and accepted-outcome cost against the
+preserved hardware sheet on the same task. Invoice currency, actual native
+capacity, hardware throughput, ROI and product/release gates remain open. Ops
+draft PR157 stays unactivated. Full objective remains active.
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue source task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX issue252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website/all-article outcome for musicians, producers, creators, founders,
-executives and AI architects: useful human writing, true research framing,
-public/private separation, current evidence, verified partners, existing serif
-identity, sentence case, original visuals/social and green production behavior.
+Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
+website/article outcome for musicians, producers, creators, founders, executives
+and AI architects: useful human writing, honest research framing, distinct public
+and private intelligence, current primary sources, verified relationships,
+serif/sentence-case design, original visual/social work and green production.
 
-Read the [session](sessions/2026-10-04.md), source REVIEW-BATCH-07.md and renewal
-plan. Source worktree `starlight/worktrees/frankx-editorial-renewal-20261003`,
-branch `agent/codex/editorial-renewal-20261003`, local `f278639ba04ca1eebe67a6185ad532ee4c46055a` after article
-commit `f77a89c1`. Private `frankxai/FrankX` differs from public production
-`frankxai/frankx.ai-vercel-website`. Never bulk-copy the private tree or overwrite
-stronger production improvements. Batch7 bodies matched normalized production
-`044c8447`; original date/author/category/image/featured presence is retained.
+Read the [session](sessions/2026-10-04.md), source REVIEW-BATCH-09.md and renewal
+plan. Existing source worktree starlight/worktrees/frankx-editorial-renewal-20261003,
+branch agent/codex/editorial-renewal-20261003, local `bdcf130e4fb7c53cbfa65119f5076c785344e080` after e6b4bf77.
+Private frankxai/FrankX differs from public frankxai/frankx.ai-vercel-website.
+Reconcile fresh production before any surgical port. Preserve stronger public
+changes, research/private holds and all source/owner history.
 
-The 278-slug/769-variant register has 32 prepared revisions, four observed
-production corrections and 242 unreviewed rows; 36 receipts, earlier 31 preserved.
-All 32 authoring hashes match. There are 32 held social sets; no article is
-release-accepted. Five latest bodies compile with GFM; metadata, six internal
-source links and illustrative Decimal arithmetic pass. Nine corpus/scoped claim
-checks pass; 15 ordinary language findings in eight other files remain. Prior
-ten boundary tests passed; their code is unchanged. Both secret hooks pass.
-Preserve the 23 foreign unstaged newline edits, music ownership and all history.
+Register: 278 URLs, 769 source variants, 42 prepared revisions, four observed
+production corrections, 232 unreviewed. Forty-six receipts preserve earlier 41,
+all 42 authoring hashes match; 42 social sets remain held. No release acceptance.
+The full register's production snapshot remains badd9c44; current batch baselines
+are actual bounded raw files at 044c8447, which was freshly rechecked as main.
+Four batch9 original bodies matched; the solo-builder DEAL cross-link is newer
+and preserved with a pinned source hash. Original dates/author/category/hero/
+featured and MCP series identity remain. Publication must include the companion.
 
-Prioritize capability recovery. Build PP22:54UTC remains HOLD: 7,518 MB free,
-8,192 required, 3,422 projected; twelve runtimes and pause-new-swarms. Disk
-15.42% is a lightweight observation, not a full material-growth admission. Recheck
-PP/storage before installs, media, worktree fanout or builds. Do not touch the
-borrowed dependency tree, kill processes or archive unfinished work to make room.
-Next/TypeScript targets remain absent, required merge gate unpassed, source push
-held. Codespaces account-scope and Vercel mapping failures remain unresolved.
-Supported browser inventory is empty; exact desktop/mobile captures and current
-visual review must precede promotion. No owned worker/server remains.
+Batch9 separates runtime selection, solo-builder modules, authority/ownership,
+trajectory evaluation and MCP protocol/authorization. SDKv7 documentation is
+distinct from installed ^6.0.277 and from the builtin-only Node experiment.
+Request toolApproval differs from WorkflowAgent needsApproval; provider tool
+approval is separate. MCP latest actually resolves2026-07-28: request metadata,
+no implicit protocol session and request SSE closure cancellation. Old protocol
+assumptions need compatibility checks. OpenAI SDK supports non-OpenAI providers;
+the former Vercel Postgres offering is unavailable; the old starter returns404.
+No invented time/cost/maturity benchmark, infrastructure invoice or framework
+winner. Each article gives a named same-task alternative and comparison plan.
 
-Batch7 gives available-memory budgets, four documented weight candidates,
-Ollama cloud-disable/process scope, current headless/MCP/experimental MLX
-capabilities and a synthetic confidential-brief architecture. Documentation,
-proposal and executed results stay distinct. store:false is not approved ZDR.
-Qwen/NVIDIA card hashes pin README files, not all weights/conversions. No model
-benchmark, network audit, license clearance or deployed mesh was performed.
+Actual companion: single-writer trusted-operator teaching code. Local synthetic
+destination writes once, loses acknowledgement, reconstructed replay stays
+unknown, actual readback reconciles. Fourteen tests pass including queued-input
+mutation, denied/changed/expired approvals, corrupt-record rejection and a fresh
+Node process reading a completed receipt. The attempting checkpoint test is
+constructed, not a kill test. No model/MCP/OAuth/authenticated tenant, distributed
+transaction, remote delivery or filesystem power-loss guarantee. Payload hashes
+are not signatures; writable-ledger actors are outside protection. Existing gate
+now passes24 publication/affiliate/recovery tests. Five MDX compiles, metadata,
+eight source links and hypothetical12attempt arithmetic verify. Nine corpus
+tests/scoped claims pass. Regex scanner excludes blog content; language15/eight
+other files remains. Source secret hooks61.39/128.49KB pass;23foreignedits stay.
 
-At `f77a89c1`, isolated Poolside architecture and selection-recovery critiques
-completed PASS/no findings. Preserve the earlier selection timeout, full quotes,
-same-packet recovery and all limitations. Reviewer praise contains a unit error
-and an unsupported saving characterization; actual article/Decimal arithmetic
-remain correct. Five article bytes are unchanged. Labels grant no visual,
-privacy/legal, buyer, SEO or release acceptance. Earlier batch5/6 review findings,
-source failures, catalog/rights and relationship evidence remain preserved.
+Code independent review remains due: Nvidia and one Cohere recovery timed out,
+with no final content or usage. Editorial StepFun reached 8,000 output tokens with null
+final content; one Poolside same-packet recovery returned PASS with five findings plus
+duplicated JSON. Preserve all errors, inputs, original content and scope. Its
+high transport repair is false against newly re-read primary docs; other findings
+are covered or quote lead facts. All article/artifact hashes remain exact e6b4bf77.
+Reviewer did not browse or run tests. Catalog routes are zero-priced; only
+Poolside reports cost0, absent costs stay unknown. No source/code/design/legal/
+SEO/production acceptance follows the label. Do not repeat an unbounded review
+loop. Recover a smaller admitted exact-code critique when useful.
 
-Continue valuable work across the remaining register from reconciled production
-sources. Each article needs distinct reader intent, actual contribution, serious
-alternative, truthful dates/sources and meaningful recovery. Obtain current
-Search Console demand and licensed usage data before ranking/traffic claims.
-No invented benchmark, lived experience, healing/legal-safe result or scarcity.
-Official citations remain direct; current account/issued-link/terms/navigation
-evidence is needed before activating affiliates. No enrollment or outreach.
+Build PP remains HOLD: 7,151 MB free / 8,192 required / 3,055 projected, twelve runtimes and
+pause-new-swarms. Disk 15.33% is a lightweight reading; refresh full admission before
+material growth. Next/TypeScript targets missing. Fresh supported CUA surfaces
+empty, so desktop/mobile captures are unavailable. Release kernel requires
+capture: stop promotion when an existing surface cannot be captured. Preserve
+other tasks/processes; no borrowed dependency mutation, task archival, lock
+deletion or process killing to manufacture admission. No session-owned worker.
 
-Five local-model visual briefs join earlier held briefs. Use established serif
-tokens and sentence-case labels, exact units and equivalent text; replace the
-reused runner-comparison hero after real review. New media needs prompt sidecars,
-both ledgers, taste memory synchronization and resolution/design acceptance.
-Earlier 1672x941 covers fail the 2048 gate. Social publication stays human-gated
-after matching article release. Never use Higgsfield.
+Continue useful source revisions from reconciled production. Actual source-
+derived contributions and precise failure/recovery beat extra abstractions.
+Obtain current Search Console demand/actual permitted partner usage before
+ranking/traffic assertions. Keep unsupported healthcare/research framing held.
+Verify issued referral/account/terms/navigation before affiliate activation;
+informational citations stay direct. No enrollment, outreach or live posts.
+Use Playfair Display/Source Serif4 tokens and sentence-case labels, equivalent
+text, exact visual sidecars, both ledgers and taste-vault sync. No Higgsfield;
+earlier1672x941 covers remain below the2048 gate. Five new distinct visual briefs
+and article-linked social sets require generation/review and matching release.
 
-After admission/capture recovery, run full source and production gates, exact
-independent/design review, normal PR merge and deployed SHA/routes/filtering/
-affiliate/recovery checks. Save the next hub handover and issue252 comment.
-Prior hub120 merged4a789dad with passing exact PR/main CI and three blobs equal;
-that proves documentation only. Preserve the newer estate-design/community
-fronts and all other unfinished objectives. The complete goal remains active.
+When capabilities recover: full source/production gates, exact independent code/
+editorial/design and commercial review, normal PR merge, deployed SHA/routes/
+filter/affiliate/denial/recovery checks. Save the next three-file hub handover and
+issue252 update. This hub branch preserves fresh main7fa24c41 and all other
+fronts; documentation CI/blobs do not prove website acceptance. Goal stays active.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
@@ -140,28 +156,47 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Native hook coverage is now measured separately in kernel draft PR34, frozen
-`c99adec2da97a0ec4170a2a5232cb86a340dceab`. Owned canonical kernel checkout branch
-`agent/codex/native-patch-proof-20261004` is clean. Raw Git native0.160 runs prove
-dynamic Write and actual patch denial/post/Stop; actual exec_command shell FAILS:
-both private synthetic writes succeed, no matching pre-tool denial/Impeccable post.
-No global config or trust mutation. Preserve native failures and sandbox-hidden
-Python attempts. Counterexamples at47c865b reproduced mixed-tool false passes;
-current21st regression and strict unselected-event checks repair them.
-CI37162399939 passes61Node/21Python/53browser-process checks at mergef6afe2a;
-three source blobs equal. Independent Poolside current-source PASS only; earlier
-REVISE and three truncated no-verdict records remain. PR34 draft/unmerged, named
-human/source promotion and installed coverage repair pending. Diagnostic success
-cannot approve real model application, code mode/app/MCP/other hosts, automatic
-defect refinement, design/creator usefulness or production.
+Config draft96 is frozen at `09d1bc46b87c2ba6cfddcb870a5b1eb50adeee06`, clean
+owned worktree `starlight/worktrees/native-design-hook-coverage-20261004`, branch
+`agent/codex/native-design-hook-coverage-20261004`. Pending-UI Bash adapter uses
+installed Git/pinned engine/path-only Edit, pre-child checkout refusal, native
+Windows canonical paths and input/bytes/time budgets; failures emit INCOMPLETE.
+Matcher-only actual-engine alternative was silent. Preserve engine disables/
+quiet/ignores; ignored/outside/nested/media and same-command committed/reverted
+coverage excluded, prior pending edits may be included. No quality acceptance.
 
-Prioritize a concrete native configuration repair through its owner. Current
-post-edit aliases cover patch, while shell matches Bash. Preserve current disabled
-Impeccable SessionStart, trust, system/security skills, provider states and Config
-other-owner95/d004224,80,84/Queen90. Never self-trust changed definitions. Prove
-actual denial/post-edit, reload, failure/interruption and rollback, then a real
-bounded UI defect/repair and native model-guidance consumer. Do not spend the next
-slice polishing the frozen community desk or counting installed skill files.
+Exact CI37167142388 passes19Node/8Python on Windows/Linux without skips at merge
+46d4fe47, all six blobs equal; security/release/startup/required doctor checks pass.
+Eleven final actual-engine direct cases pass, including actual smart/ASCII quote
+and dollar paths. Initial e67 installed/untrusted candidate was byte-conditionally
+rolled back after missing Node0/missing script1 reproduced on both PowerShell
+versions. New separate Bash guard pins absolute Node and normalizes launch/load
+failure to denial2; actual allow/deny/load/missing cases pass both Windows shells
+and POSIX CI. Keep failed backslash/smart-delimiter cases and repaired regressions.
+
+Current independent Poolside complete source verdict REVISE remains. High shlex
+quote claim conflicts with executed Linux regression/official docs; other advice
+and uncertainty retained. Current NVIDIA ended length/null (no verdict), previous
+e67 PASS missed launch gap and cannot transfer. Named review/source promotion
+remain open; no approving native trust or creative acceptance inferred.
+
+Refined three-file projection installed with private receipt
+`shell-design-install-09d1bc4-20261004/receipt.json`, runtimeSHAaf3964f5/settings42c230f8.
+Native28 rows preserve old26 definition/key/enable/trust, display indexes shift.
+Both new `^Bash$` entries UNTRUSTED, Pre hashff8d0e32/Postba108c6f. Frank said he
+will review both via `/hooks`; verify actual state freshly, never write trust or
+bypass. Pre now ErrorActionPreference Stop/absolute Node, Post codex-shell-design.
+Config/guard/vendor bytes unchanged; native clients exited0, no inference/MCP.
+After real trust, prove shell security denial, UI finding/correction/Post/Stop,
+failure/interruption/reload/safe rollback and real model-guided refinement.
+Draft96 stays unmerged. Original Config78 Grok-host acceptance stays open.
+
+Kernel34 frozen c99adec proves dynamic Write/native patch, original shell baseline
+FAIL with both private fixtures written;61Node/21Python/53browser-process CI and
+static source PASS remain scoped. Preserve Config84/95(previousd004224)/80/83/
+Queen90 owners, all failures, strict counters, trust and system/security skills.
+Emil selected/read, no UI applied/verified in this hook slice. Keep all eleven
+estate outcomes; avoid polishing frozen desk or counting skill filenames.
 
 Community draft PR15 is frozen at `3ea86262e8d0bccd32554c43e52005247786c421`,
 owned worktree `starlight/worktrees/gencreator-community-interface-20261003`,
@@ -215,16 +250,16 @@ Arcanea owning-source correction and conflicting backgrounds/rights remain.
 Eight identity images/166 filename census do not establish approved masters or
 all-brand acceptance. Keep local and parent identity authority distinct.
 
-Fresh PP/storage admission before heavy/growing work. Last01:34 interactiveALLOW
-6,716 MB free, 30% CPU, 12 runtimes,one parallel, pause-new-swarms; fresh disk
-145.95 GiB/15.34%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
+Fresh PP/storage admission before heavy/growing work. Last03:04 interactiveALLOW
+10,125 MB free, 29% CPU, 12 runtimes,one parallel, pause-new-swarms; earlier source-only storage admission
+146.88 GiB/15.43%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
 worktrees, cleanup or persistent workers under constraints. Owned requests/decoder
 terminal; no server/watchers. Canvas/SIS/Substrate disabled; Higgsfield banned.
 Current captures are non-generative with actual sidecars; generation-schema404
 unverified. New generated media requires both ledgers and actual provenance.
 
-Save finished slices to this hub session/ledger/prompt and existing issues12.
-Preserve newer FrankX batch7, Queen and every unfinished front. The original
+Save finished slices to this hub session/ledger/prompt and existing Config78/kernel12 issues.
+Preserve newer FrankX batch9, Queen and every unfinished front. The original
 estate goal stays active; retain exact-revision scope and all remaining gaps.
 
 [Queen verified execution continuation, Codex]
