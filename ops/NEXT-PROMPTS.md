@@ -105,28 +105,47 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Native hook coverage is now measured separately in kernel draft PR34, frozen
-`c99adec2da97a0ec4170a2a5232cb86a340dceab`. Owned canonical kernel checkout branch
-`agent/codex/native-patch-proof-20261004` is clean. Raw Git native0.160 runs prove
-dynamic Write and actual patch denial/post/Stop; actual exec_command shell FAILS:
-both private synthetic writes succeed, no matching pre-tool denial/Impeccable post.
-No global config or trust mutation. Preserve native failures and sandbox-hidden
-Python attempts. Counterexamples at47c865b reproduced mixed-tool false passes;
-current21st regression and strict unselected-event checks repair them.
-CI37162399939 passes61Node/21Python/53browser-process checks at mergef6afe2a;
-three source blobs equal. Independent Poolside current-source PASS only; earlier
-REVISE and three truncated no-verdict records remain. PR34 draft/unmerged, named
-human/source promotion and installed coverage repair pending. Diagnostic success
-cannot approve real model application, code mode/app/MCP/other hosts, automatic
-defect refinement, design/creator usefulness or production.
+Config draft96 is frozen at `09d1bc46b87c2ba6cfddcb870a5b1eb50adeee06`, clean
+owned worktree `starlight/worktrees/native-design-hook-coverage-20261004`, branch
+`agent/codex/native-design-hook-coverage-20261004`. Pending-UI Bash adapter uses
+installed Git/pinned engine/path-only Edit, pre-child checkout refusal, native
+Windows canonical paths and input/bytes/time budgets; failures emit INCOMPLETE.
+Matcher-only actual-engine alternative was silent. Preserve engine disables/
+quiet/ignores; ignored/outside/nested/media and same-command committed/reverted
+coverage excluded, prior pending edits may be included. No quality acceptance.
 
-Prioritize a concrete native configuration repair through its owner. Current
-post-edit aliases cover patch, while shell matches Bash. Preserve current disabled
-Impeccable SessionStart, trust, system/security skills, provider states and Config
-other-owner95/d004224,80,84/Queen90. Never self-trust changed definitions. Prove
-actual denial/post-edit, reload, failure/interruption and rollback, then a real
-bounded UI defect/repair and native model-guidance consumer. Do not spend the next
-slice polishing the frozen community desk or counting installed skill files.
+Exact CI37167142388 passes19Node/8Python on Windows/Linux without skips at merge
+46d4fe47, all six blobs equal; security/release/startup/required doctor checks pass.
+Eleven final actual-engine direct cases pass, including actual smart/ASCII quote
+and dollar paths. Initial e67 installed/untrusted candidate was byte-conditionally
+rolled back after missing Node0/missing script1 reproduced on both PowerShell
+versions. New separate Bash guard pins absolute Node and normalizes launch/load
+failure to denial2; actual allow/deny/load/missing cases pass both Windows shells
+and POSIX CI. Keep failed backslash/smart-delimiter cases and repaired regressions.
+
+Current independent Poolside complete source verdict REVISE remains. High shlex
+quote claim conflicts with executed Linux regression/official docs; other advice
+and uncertainty retained. Current NVIDIA ended length/null (no verdict), previous
+e67 PASS missed launch gap and cannot transfer. Named review/source promotion
+remain open; no approving native trust or creative acceptance inferred.
+
+Refined three-file projection installed with private receipt
+`shell-design-install-09d1bc4-20261004/receipt.json`, runtimeSHAaf3964f5/settings42c230f8.
+Native28 rows preserve old26 definition/key/enable/trust, display indexes shift.
+Both new `^Bash$` entries UNTRUSTED, Pre hashff8d0e32/Postba108c6f. Frank said he
+will review both via `/hooks`; verify actual state freshly, never write trust or
+bypass. Pre now ErrorActionPreference Stop/absolute Node, Post codex-shell-design.
+Config/guard/vendor bytes unchanged; native clients exited0, no inference/MCP.
+After real trust, prove shell security denial, UI finding/correction/Post/Stop,
+failure/interruption/reload/safe rollback and real model-guided refinement.
+Draft96 stays unmerged. Original Config78 Grok-host acceptance stays open.
+
+Kernel34 frozen c99adec proves dynamic Write/native patch, original shell baseline
+FAIL with both private fixtures written;61Node/21Python/53browser-process CI and
+static source PASS remain scoped. Preserve Config84/95(previousd004224)/80/83/
+Queen90 owners, all failures, strict counters, trust and system/security skills.
+Emil selected/read, no UI applied/verified in this hook slice. Keep all eleven
+estate outcomes; avoid polishing frozen desk or counting skill filenames.
 
 Community draft PR15 is frozen at `3ea86262e8d0bccd32554c43e52005247786c421`,
 owned worktree `starlight/worktrees/gencreator-community-interface-20261003`,
@@ -180,16 +199,16 @@ Arcanea owning-source correction and conflicting backgrounds/rights remain.
 Eight identity images/166 filename census do not establish approved masters or
 all-brand acceptance. Keep local and parent identity authority distinct.
 
-Fresh PP/storage admission before heavy/growing work. Last01:34 interactiveALLOW
-6,716 MB free, 30% CPU, 12 runtimes,one parallel, pause-new-swarms; fresh disk
-145.95 GiB/15.34%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
+Fresh PP/storage admission before heavy/growing work. Last03:04 interactiveALLOW
+10,125 MB free, 29% CPU, 12 runtimes,one parallel, pause-new-swarms; earlier source-only storage admission
+146.88 GiB/15.43%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
 worktrees, cleanup or persistent workers under constraints. Owned requests/decoder
 terminal; no server/watchers. Canvas/SIS/Substrate disabled; Higgsfield banned.
 Current captures are non-generative with actual sidecars; generation-schema404
 unverified. New generated media requires both ledgers and actual provenance.
 
-Save finished slices to this hub session/ledger/prompt and existing issues12.
-Preserve newer FrankX batch7, Queen and every unfinished front. The original
+Save finished slices to this hub session/ledger/prompt and existing Config78/kernel12 issues.
+Preserve newer FrankX batch8, Queen and every unfinished front. The original
 estate goal stays active; retain exact-revision scope and all remaining gaps.
 
 [Queen verified execution continuation, Codex]
