@@ -19,45 +19,35 @@
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-six-audience website, intelligence, frontier, SEO, affiliate, serif visual and
-social outcome. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-16.md`, both exact-revision
-evidence files and `article-review-progress.json` in `docs/ops/editorial/`.
-Authoring source `a32c5c34ba0f58517c5fae8ce97f90fd02f71fb8`, branch `agent/codex/editorial-renewal-20261003`.
-Preserve batches 1-15, all 23 foreign edits and newer production improvements.
+Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the full
+six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social goal.
+Source `283d63cd8ff787d2d8149602cd9fd2ba4c5947e4`, branch `agent/codex/editorial-renewal-20261003`.
+Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-17.md`, both evidence files and progress JSON
+under `docs/ops/editorial/`. There are 71 prepared revisions, four observed
+corrections and 203 unreviewed. All hashes match; preserve all earlier receipts.
 
-There are 67 prepared revisions, four observed production corrections and 207
-unreviewed articles. All prepared hashes match. Four new guides distinguish active
-legacy Opus integrations, Kimi routes and licence conditions, and Qwen scope/cache
-creation categories from historical vendor results and proposed evaluations.
-No model, cache-hit, token-count, migration or product trial was performed.
-The Opus pair critique on Cohere and Kimi/Qwen critique on NVIDIA timed out.
-Obtain valid independent exact-revision critique, plus earlier batch 13 voice,
-batch 14 creator and batch 15 reviews. Preserve each original failure and finding.
-Earlier frontier overviews need fresh revisions with retained hashes/history.
+The new Atlas/video/creative-framework/personal-essay guides separate source facts,
+editorial judgement, assumptions and personal account. NVIDIA/Qwen critiques
+timed out; obtain valid exact-revision critique and the earlier missing reviews.
+Higher Self needs premium founder review. Current production `f9811d47` original
+bodies match; preserve metadata/assets/URLs and the existing scientific corrections.
+Earlier frontier overviews need deliberate new revision receipts, not hash resets.
 
-Current batch production baseline `f9811d47` differs from frozen register
-`badd9c44`/`7fe4fde1`. All four original bodies match. Preserve stable URLs, metadata,
-assets and the Opus 4.8 callout slug. No affiliate account qualification or issued
-URL changed; establish real qualification before commercial activation. The 67
-social/visual sets remain held. No new image. Taste retrieval does not establish
-this task's writable-vault synchronization.
+Supported CUA is empty; actual iab creation fails. Borrowed Next/TypeScript targets
+are absent. Storage below 15% limits work to text and small checks; do not install,
+create worktrees, generate media, start agents or clean foreign state. Recover
+admitted dependencies and supported desktop/mobile capture. Complete full gates
+and independent acceptance, port accepted changes against fresh production main,
+merge normally and verify exact green deployment. Continue useful article work.
 
-Storage remains below 15% free; text and small checks only. Do not install
-dependencies, create worktrees, generate media or start agents. CUA is empty and
-borrowed Next/TypeScript targets absent. The browser connection question remains
-unanswered. Recover admitted owned dependencies and capture without deleting
-files or interfering with foreign work. Complete full gates and independent
-responsive/design/security/commercial acceptance, port accepted changes against
-fresh production main, merge normally and verify the exact green deployment.
-Continue useful article work while release is held.
-
-Use sentence-case serif visuals, exact prompt sidecars, both ledgers and taste
-synchronization after admission. Higgsfield skills/MCP are banned. Public social
-posting and premium founder approval stay human-gated. Save completed slices in
-this hub and issue #252. Preserve the private objective ledger, original intent
-and unfinished work. Article totals and documentation CI cannot close the goal.
+Social/visual sets remain held. Require sentence-case serif design, exact prompt
+sidecars, both ledgers and taste synchronization after admission. Higgsfield
+skills/MCP are banned. Verify actual issued affiliate relationships before
+commercial activation. Public social and premium founder approval remain human-
+gated. Preserve the 23 foreign edits, private intent/remaining/history and other
+objectives. Save finished slices in this hub and issue #252; do not close the full
+goal from article counts or documentation CI.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
