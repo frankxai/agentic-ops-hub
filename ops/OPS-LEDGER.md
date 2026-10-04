@@ -2,7 +2,11 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (Arcanea validator draft 509; Jules planning FrankX 870) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (song-count PRs 873-878 merged earlier; Jules planning 870 lock and 841 generator; Arcanea 509 formatted) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Formatter rule, two new Jules tasks (Grok)
+
+FrankX 873-878 are merged. No other open pull request had a non-author approval on a clean main base. [Arcanea 509](https://github.com/frankxai/arcanea-ai-app/pull/509) is formatted at `025faff61c` and stays draft. The Jules card on [config PR 89](https://github.com/frankxai/starlight-agent-config/pull/89) at `81dbb7f` now requires the repository formatter. Planning: [870 lock](https://jules.google.com/session/9352871051179826401) and [841 generator](https://jules.google.com/session/6185998078557424291). Queue is 2 of 4. Receipt: `ops/sessions/2026-10-04.md`.
 
 ## 2026-10-04: Release validator drafted, song counts still open (Grok)
 
