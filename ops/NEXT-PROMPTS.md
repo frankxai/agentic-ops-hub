@@ -17,6 +17,22 @@
 
 ## Current
 
+### Queen: ship SIS session continuity from merged source
+
+Continue Frank's session-continuity outcome from original task `01a102ed-873c-7b92-b37b-4f299c63813b`. Source [Ops PR161](https://github.com/frankxai/agentic-ops/pull/161) is merged at `551e2f0435322c8d9c7c2745acce1c68d1eb2848`, with reviewed head `a1ac1e3c5661177122f307c75cdfbe37557bec5b`, Windows/Linux73 behavior +6 actual SIS conformance passes and independent source PASS. Main CI37215248609 is verified. Treat this as MERGED_NOT_LIVE and preserve prior findings and the original blocked native goal; source delivery did not finish the wider campaign.
+
+Deliver session continuity within the existing SIS/Second Brain offering in the user's sovereign runtime/BYOK: recover the real task and dirty checkout, show current owner/admission and accepted delivery proof, and survive interruption without duplicate execution or private-data leakage. Reuse SIS's existing Work Graph, goal/session store, MemoryGateway and MCP. Ops supplies collector observations and explicit bindings. The export emits only intent, and checksums/operator labels are not source authentication. Reconcile the native goal store and registry identities before trusted ingestion. Observation replay is not a new task, and paused work requires explicit reconciliation before execution.
+
+Read the applicable contracts, run fresh PP/storage admission and route_work guard/check, and acquire an available lane before writing. Peak-performance reserve-floor has another owner's34 dirty paths and draftPR4; preserve and reconcile them rather than replacing them. Repair/integrate its canonical caller through its owner, decide full-ID cursor/fingerprint migration and preserve existing history. SIS checkouts also have foreign owners: select/reconcile an owned lane, keep protocol/attestation Board requirements, and retain the separate Foundry#268 patch and its pending Board/provider review. Do not duplicate recallPR269.
+
+Implement one supported continuity import and web/MCP consumer against actual SIS contracts. Canvas main5bc91b8 contains apps/web and packages/core,mcp; first reconcile the separate local cockpit lane and use the accepted product. Provide visible source, unknown/partial states, ownership, admission and proof, plus recoverable export/import errors. Apply Emil guidance only where interface changes occur and verify focus, touch, reduced motion and interrupted transitions. No duplicate control plane, automatic resumption of paused work, customer compute subsidy, invented price or new product brand.
+
+Consider the named interfaces deliberately: ACP for structured editor/agent sessions; AG-UI for events/state to the existing web surface; MCP SDK for typed tools/resources; A2A at the existing federation boundary. Compare Paperclip's goals/budgets/approvals/audit flows and LangGraph's persistence/interrupt semantics with accepted SIS implementations. Vibe Kanban is sunsetting and remains a historical design reference. Pin versions, retrieve current official docs and prove compatibility before adopting any dependency.
+
+Own repos: Starlight-Intelligence-System (portable model/ingestion), agentic-ops (private collection/export), peak-performance (admission/canonical caller), starlight-agent-canvas (web/MCP consumer), starlight-memory (scoped recall projection), second-brain-os (non-coder install/two-vault recovery), starlight-evals (cross-harness proof), starlight-agent-config (client profiles/hooks), agentic-creator-os (creator consumer), agentic-ops-hub (handover).
+
+Done when a clean install and two-harness interruption/restart test prove original intent, exact checkout/owner, preserved dirty edits/history, privacy isolation, no duplicate side effects, correct pause/block behavior and proof-gated completion. Obtain independent review at exact revisions, preserve secret checks and demonstrate the canonical caller plus visible supported consumer. Complete the reviewed release/install/rollback path and verify the actual installed revision before calling it LIVE_VERIFIED. Update existing Ops#139/#134, SIS#48/federation#144 and hub session/ledger/prompt; preserve unrelated work and stop only session-owned processes. Report remaining concrete external gates if they prevent production.
+
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
