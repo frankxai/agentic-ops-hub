@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 9 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 10 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Shell design adapter installed; native trust pending (Codex)
 
@@ -152,64 +152,67 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-The complete website/article/six-audience goal remains active under
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source `bdcf130e4fb7c53cbfa65119f5076c785344e080` includes batch 9
-article/companion commit `e6b4bf77`. The 278-URL/769-variant register now has
-42 prepared source revisions, four observed production corrections and 232
-unreviewed URLs. Forty-six receipts preserve earlier 41; all 42 authoring hashes
-match. Forty-two social sets remain held. No article has release acceptance.
+The full website/article/six-audience goal stays active under
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252), task
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Source `82a811a03d3614ac01974aa9249ef19e04866d48` includes two batch 10
+rewrites at `d95b2b42`. The register covers 278 URLs/769 variants: 44 prepared
+authoring revisions, four observed production corrections and 230 unreviewed.
+All 44 authoring hashes match; 48 progress receipts preserve the earlier 46.
+44 article-linked social sets remain held. No row has release acceptance.
 
-Five actual rewrites cover AI SDK runtime selection, solo-builder ownership,
-production authority, trajectory evaluation and MCP transport/authorization.
-Current AI SDK docs are v7 while authoring declares ^6.0.277. Approval APIs
-differ by runtime; no SDK migration was performed. Current MCP latest resolves
-2026-07-28, with per-request metadata and different SSE cancellation behavior.
-False OpenAI-only SDK, obsolete Vercel Postgres and unsupported starter/time/
-cost/maturity claims are repaired. Actual pinned production raw baselines at
-044c8447 preserve the newer solo-builder DEAL link and original metadata.
+RAG for creators now covers approved archive selection, token-aware complete
+chunks, revision/citation/withdrawal behavior and ordinary search as a serious
+alternative. Temporal memory compares a relational state query with Graphiti
+and current Mem0 Platform. Unsupported personal headcounts, setup/cost claims,
+silent truncation, wrong package/tool assumptions, universal thresholds and
+latencies are removed. Original metadata/stable URLs remain; descriptions 148/
+156 characters, sentence-case headings, two MDX compiles and four source links.
+Nine corpus tests pass. The exact SQL ran eight in-memory SQLite 3.50.4 cases:
+two clocks, boundaries, unknown subject, fixture tenant filter and contradiction.
+No model extraction, hosted product, authentication or performance trial.
 
-The downloadable builtin-only Node companion is a local single-writer teaching
-experiment. An approved synthetic file write loses its acknowledgement; a
-reconstructed instance refuses redispatch and actual destination readback
-reconciles a matching receipt. Observed unknown/unknown/completed, one write.
-Fourteen actual tests pass on Node v24.16.0, including queued-input mutation,
-denial, changed/expired approvals and a receipt read by a fresh Node process.
-Authentication, multi-writer transactions, MCP/OAuth, remote delivery and
-power-loss durability remain outside this evidence. Port companion and articles
-together. The existing merge gate includes it; all 24 boundary/recovery tests pass.
+Actual immutable captures pin Chroma MCP 98ff6758 and Graphiti 3c427640/edge
+schema. npm chroma-mcp returns 404; maintained Python uvx path is documented.
+Mem0's old OSS graph URL redirects to its hosted native entity-memory graph:
+co-occurrence/ranking, explicitly no typed labeled entity relations. The guide
+preserves this distinction across products and versions. A complete strict JSON
+Poolside source critique returns PASS/no findings at d95b2b42. It received
+supplied facts and did not browse/execute; unsupported author-credential praise
+is not adopted. No source, rights, visual, commercial or publication acceptance.
 
-Exact-source code requests on Nvidia and one same-packet Cohere recovery timed
-out without final content or usage. Code review remains open. Separate editorial
-StepFun reached the output limit with null final content; one same-packet
-Poolside recovery returned PASS with five findings plus a duplicated JSON object.
-Strict format fails. The high MCP repair contradicts re-retrieved primary docs;
-other findings are already covered, quote lead notes or request optional detail.
-All findings, failures and source hashes are retained. All five article files
-and both companion files remain unchanged; the supplied critique confers no acceptance.
+A smaller isolated review of the unchanged Node companion finally returned
+REVISE with four findings. Actual source rejects its false returned-success,
+fsync claim and duplicate-replay assertions; snapshot capture is already before
+the queue and the reviewer acknowledges no defect. All original wording,
+usage and earlier timeouts are retained. Post-write save-failure injection is
+untested. Existing 14 tests and one local synthetic write retain their original
+scope. No code changes or renewed remote-delivery claims follow this review.
 
-Five MDX/GFM compiles, preserved metadata, eight source links and the explicitly
-hypothetical 4*(1+2)=12 arithmetic verify. Nine corpus tests and the scoped claims
-audit pass; blog truth is outside that regex scanner. Fifteen existing language
-findings in eight other files remain. Enabled source secret hooks pass 61.39 and
-128.49 KB. Twenty-three foreign newline edits remain unstaged. Five distinct
-serif/sentence-case visual briefs await generation/provenance/rendered review.
-No current qualified affiliate destination, account trial, new media or live post.
+Vercel connector access recovered through actual idOrName schema. Existing
+deployment dpl_7QPWKXeN5kCyAYC7rdmxKzoNkP3Z is READY on production 044c8447.
+Actual RAG HTTP 200/canonical/index-follow metadata still serves the old zero-
+cost claim, and the prepared title is absent. Source is unpushed; no website
+port/deployment ran. Current source/critique/release receipts accompany batch 10.
 
-Build admission HOLD: 7,151 MB free / 8,192 required / 3,055 projected,
-twelve runtimes and pause-new-swarms. Disk 15.33% is a lightweight observation,
-with full admission due before material growth. Next/TypeScript targets remain
-absent; refreshed supported CUA inventory apps=[]/browsers=[] prevents capture.
-No new agent, install, worktree, build/model/media, cleanup or persistent worker.
-Source is unpushed and website undeployed. This three-file hub save starts from
-fresh main 7fa24c41, preserving all other fronts and full session history.
-Prior PR124 exact PR/main CI and matching blobs establish documentation only.
+Earlier current-turn build PP changed HOLD to BOUNDED: 8,832 MB free/8,192 required/
+4,736 projected, one workload, 12 runtimes and pause-new-swarms. Fresh inspected
+preserved Quick/NoWrite sensor: 146 GiB/15.3% free, below 30% advisory target; old
+reclaim packet is stale. Next/TypeScript targets remain absent, borrowed junction
+untouched. Supported CUA apps=[]/browsers=[] prevents desktop/mobile capture;
+loaded release skill stops promotion and Browser connection was requested.
+No new agent/install/build/worktree/media/cleanup/persistent worker or live post.
+No current account-qualified affiliate destination or commercial trial verified.
+Earlier provenance/taste gaps remain. 23 foreign newline edits stay unstaged.
+Enabled source secret hooks 27.34/104.04 KB pass; no bypass. Policy loading is
+session context; query/tests enforce their exact fixture scope.
 
-Next recover admitted dependencies/build/capture and independent code/design/
-commercial review; port accepted public files surgically, pass gates, merge
-normally and verify deployed SHA/routes/denial/recovery. Continue the remaining
-article work while held. Policy loading supplies context; the actual tests
-enforce only their specific scope. See the [session](sessions/2026-10-04.md).
+Save both hub handover and issue 252 update. This three-file hub branch starts
+fresh main 93394a5c and preserves all other fronts and complete session history.
+Prior PR125 exact PR/main CI and three matching blobs verify documentation only.
+Next recover admitted owned dependencies/full gates/browser capture and exact
+source/design/commercial acceptance, then surgical public port, normal merge
+and deployed SHA/routes/recovery verification. Continue the remaining 230 URLs.
+See the [session](sessions/2026-10-04.md).
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 

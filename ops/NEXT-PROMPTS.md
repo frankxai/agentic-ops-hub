@@ -21,86 +21,52 @@
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website/article outcome for musicians, producers, creators, founders, executives
-and AI architects: useful human writing, honest research framing, distinct public
-and private intelligence, current primary sources, verified relationships,
-serif/sentence-case design, original visual/social work and green production.
+website/article goal for musicians, producers, creators, founders, executives
+and AI architects: useful human writing, honest research, public/private
+intelligence, current frontier sources, qualified affiliates, sophisticated
+sentence-case serif visuals, SEO/social connections and accepted production.
 
-Read the [session](sessions/2026-10-04.md), source REVIEW-BATCH-09.md and renewal
-plan. Existing source worktree starlight/worktrees/frankx-editorial-renewal-20261003,
-branch agent/codex/editorial-renewal-20261003, local `bdcf130e4fb7c53cbfa65119f5076c785344e080` after e6b4bf77.
-Private frankxai/FrankX differs from public frankxai/frankx.ai-vercel-website.
-Reconcile fresh production before any surgical port. Preserve stronger public
-changes, research/private holds and all source/owner history.
+Authoring source is `82a811a03d3614ac01974aa9249ef19e04866d48` on agent/codex/editorial-renewal-20261003 in
+`C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`.
+44 prepared revisions  + 4 observed corrections  + 230 unreviewed  = 278 URLs,
+769 variants; 48 receipts/all 44 source hashes match;44 social sets held.
+Read batch 10 source/review/release receipts before continuing. The new RAG and
+temporal memory guides preserve metadata, compare ordinary search/relational
+state and include eight executed synthetic SQLite cases. Two MDX compiles/four
+source links/nine corpus tests pass. Strict source critique PASS/no findings
+is supplied-text review, not independent browsing/execution or acceptance.
 
-Register: 278 URLs, 769 source variants, 42 prepared revisions, four observed
-production corrections, 232 unreviewed. Forty-six receipts preserve earlier 41,
-all 42 authoring hashes match; 42 social sets remain held. No release acceptance.
-The full register's production snapshot remains badd9c44; current batch baselines
-are actual bounded raw files at 044c8447, which was freshly rechecked as main.
-Four batch9 original bodies matched; the solo-builder DEAL cross-link is newer
-and preserved with a pinned source hash. Original dates/author/category/hero/
-featured and MCP series identity remain. Publication must include the companion.
+The unchanged e6b4bf77 Node companion got a complete isolated REVISE/four
+findings critique. All are reconciled against actual await/early-return/snapshot
+paths; fsync guarantees were excluded. Preserve original findings and all
+earlier failures. Actual post-write save-failure injection remains untested;
+no new authentication/multiwriter/delivery/durability guarantee. Earlier 14
+fixture tests and real local lost-ack/readback retain their original scope.
 
-Batch9 separates runtime selection, solo-builder modules, authority/ownership,
-trajectory evaluation and MCP protocol/authorization. SDKv7 documentation is
-distinct from installed ^6.0.277 and from the builtin-only Node experiment.
-Request toolApproval differs from WorkflowAgent needsApproval; provider tool
-approval is separate. MCP latest actually resolves2026-07-28: request metadata,
-no implicit protocol session and request SSE closure cancellation. Old protocol
-assumptions need compatibility checks. OpenAI SDK supports non-OpenAI providers;
-the former Vercel Postgres offering is unavailable; the old starter returns404.
-No invented time/cost/maturity benchmark, infrastructure invoice or framework
-winner. Each article gives a named same-task alternative and comparison plan.
+Vercel existing project prj_NHVIKZtglNidOE1FJiq6eYx5QjIL/team_q6LNT6rnFRlqlcjBJ2Wxz6PE
+reads work when get_project includes actual idOrName. READY deployment
+dpl_7QPWKXeN5kCyAYC7rdmxKzoNkP3Z maps to production 044c8447. Actual RAG HTTP 200
+still has the old zero-cost claim. No source push, public port or website release.
+Build PP had BOUNDED: 8,832/8,192/4,736 MB, one workload/12 runtimes and
+pause-new-swarms; refresh before heavy work when stale. Fresh preserved sensor
+Quick/NoWrite: 146 GiB/15.3%, below 30% target; no cleanup authority. Canonical
+storage script/registry remain absent in foreign control-plane checkout; inspect
+known preserved a911b62c source without restoring foreign files. Borrowed
+dependencies remain missing/untouched. Supported CUA inventory is empty; Browser
+connection requested. No deployment while capture/full gates/acceptance are open.
 
-Actual companion: single-writer trusted-operator teaching code. Local synthetic
-destination writes once, loses acknowledgement, reconstructed replay stays
-unknown, actual readback reconciles. Fourteen tests pass including queued-input
-mutation, denied/changed/expired approvals, corrupt-record rejection and a fresh
-Node process reading a completed receipt. The attempting checkpoint test is
-constructed, not a kill test. No model/MCP/OAuth/authenticated tenant, distributed
-transaction, remote delivery or filesystem power-loss guarantee. Payload hashes
-are not signatures; writable-ledger actors are outside protection. Existing gate
-now passes24 publication/affiliate/recovery tests. Five MDX compiles, metadata,
-eight source links and hypothetical12attempt arithmetic verify. Nine corpus
-tests/scoped claims pass. Regex scanner excludes blog content; language15/eight
-other files remains. Source secret hooks61.39/128.49KB pass;23foreignedits stay.
+Recover admitted OWNED dependencies, full merge/predeploy/build and supported
+desktop/mobile capture. Check independent source/security/design/commercial
+review and current qualified affiliate destinations. Port accepted public files
+and needed companion surgically against fresh production main; preserve stronger
+implementation and other agents' work. Normal PR merge, verify exact green
+deployment SHA, routes/filter/affiliate/denial/recovery. Continue other articles
+from current reconciled production sources while held, with distinct reader
+value and serious alternatives. No fake benchmark, usage, rank, scarcity or
+personal trial. Preserve provenance/taste and all prior review history.
 
-Code independent review remains due: Nvidia and one Cohere recovery timed out,
-with no final content or usage. Editorial StepFun reached 8,000 output tokens with null
-final content; one Poolside same-packet recovery returned PASS with five findings plus
-duplicated JSON. Preserve all errors, inputs, original content and scope. Its
-high transport repair is false against newly re-read primary docs; other findings
-are covered or quote lead facts. All article/artifact hashes remain exact e6b4bf77.
-Reviewer did not browse or run tests. Catalog routes are zero-priced; only
-Poolside reports cost0, absent costs stay unknown. No source/code/design/legal/
-SEO/production acceptance follows the label. Do not repeat an unbounded review
-loop. Recover a smaller admitted exact-code critique when useful.
-
-Build PP remains HOLD: 7,151 MB free / 8,192 required / 3,055 projected, twelve runtimes and
-pause-new-swarms. Disk 15.33% is a lightweight reading; refresh full admission before
-material growth. Next/TypeScript targets missing. Fresh supported CUA surfaces
-empty, so desktop/mobile captures are unavailable. Release kernel requires
-capture: stop promotion when an existing surface cannot be captured. Preserve
-other tasks/processes; no borrowed dependency mutation, task archival, lock
-deletion or process killing to manufacture admission. No session-owned worker.
-
-Continue useful source revisions from reconciled production. Actual source-
-derived contributions and precise failure/recovery beat extra abstractions.
-Obtain current Search Console demand/actual permitted partner usage before
-ranking/traffic assertions. Keep unsupported healthcare/research framing held.
-Verify issued referral/account/terms/navigation before affiliate activation;
-informational citations stay direct. No enrollment, outreach or live posts.
-Use Playfair Display/Source Serif4 tokens and sentence-case labels, equivalent
-text, exact visual sidecars, both ledgers and taste-vault sync. No Higgsfield;
-earlier1672x941 covers remain below the2048 gate. Five new distinct visual briefs
-and article-linked social sets require generation/review and matching release.
-
-When capabilities recover: full source/production gates, exact independent code/
-editorial/design and commercial review, normal PR merge, deployed SHA/routes/
-filter/affiliate/denial/recovery checks. Save the next three-file hub handover and
-issue252 update. This hub branch preserves fresh main7fa24c41 and all other
-fronts; documentation CI/blobs do not prove website acceptance. Goal stays active.
+Save next completed slice to this hub's session/ledger/current prompt plus issue 252.
+Keep goal active until the complete outcome is accepted; do not close it by counts.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
