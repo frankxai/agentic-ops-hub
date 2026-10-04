@@ -2,7 +2,24 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Font artifacts decoded; migration verified in draft (Codex)
+
+Kernel draft37/f8b5438 denies the reproduced four-byte WOFF2 release bypass.
+Windows/Ubuntu decode nine pinned actual resources; metadata/coverage match the
+private reader. Full CI67/69Node(two intentional skips),15Python,53browser/process
+checks; all eleven tested-merge blobs equal. Initial independent REVISE's migration
+finding is corrected and receives scoped exact-head PASS; incomplete full rereview
+retained. Named human promotion and downstream migration remain open.
+
+Thirteen resource observations/nine unique files/six font families/sixteen CSS
+style-weight declarations and six pinned OFL source files are recorded. Rights,
+computed production fonts, fallback/mobile specimens and rendered mark acceptance
+remain open. Native `/hooks`, supported browser and favicon choice still pending.
+Disk14.97%, bounded text/small checks, installed node_modules unchanged. Both records
+save this progress; all eleven estate requirements remain open/partial. See
+[session](sessions/2026-10-04.md) and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
 
 ## 2026-10-04: Starlight pack references owning identity; promotion pending (Codex)
 
