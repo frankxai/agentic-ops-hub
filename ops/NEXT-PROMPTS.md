@@ -60,6 +60,18 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
+Current deployment binding: read private starlight-current-deployment-binding-
+20261004 and protocol-repair-readiness-native-trust receipts. At 06:57:42 UTC,
+Vercel current Protocol/Lab/Academy aliases are READY at 12d794a/854357b/abaf24b,
+matching GitHub. Four protocol blobs match the prepared patch baseline. This is
+current metadata, not retroactive or compiled-repair proof. Latest canceled
+protocol preview is foreign scoped-recall/dbfc153b and remains untouched. Both
+Bash hooks are still untrusted, CUA is empty and PR200 assignment is pending.
+Do not repeat these status reads as progress without a changed external state.
+Complete missing product/native/rendered evidence after its actual dependency is
+available; keep the full eleven requirements and perform the blocked audit if
+no independent authorized action can advance them.
+
 Current protocol repair slice: kernel draft 39/855644e3ca0d63a40ed88218bbdbdcf9e48daf20,
 owned branch agent/codex/protocol-font-repair-trial-20261004, stacked on frozen38.
 Read the public evals/protocol-typography-repair-12d794a.patch and private
