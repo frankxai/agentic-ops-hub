@@ -2,7 +2,60 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (workflow instance ownership merged; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 15 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (editable AI-factory workbook/source union and native save/reopen verified; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 17 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+
+## 2026-10-04: Editable AI-factory decision workbook verified (Codex)
+
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, [Technology30](https://github.com/frankxai/starlight-technology/issues/30), hub102 and private Ops149. The full Queen/subscription/API/cloud/team/brand/creator/business objective remains active.
+
+One private XLSX companion to the complete HTML is saved in the existing private technology audit, under creator-cost-extension/outputs and the source task ID. Exact artifact `314fa9fa8aabddc6dbddd0e303989478f658f509e76c4f943c1a685470859327` is 37,036 bytes. Four tabs cover the editable monthly plan, dated rates, subscription/hosting/hardware/runtime choices, and team/brand coverage. It preserves 16 model rates, 55 original sources, 15 subscription choices, 16 infrastructure choices, 15 runtimes, six hardware options, 12 shared functions, six phases and 27 mapped properties. No private scenario totals are published here.
+
+Forty-four inputs drive Excel formulas for native/API shares, cache/repair, stopped versus always-on compute, browser tiers, currency, power, hardware allocation, contribution and savings payback. GLM peak maker credits, weekly/five-hour capacity and maker API break-even are included. A separate GLM price prevents other subscriptions from inflating its comparison. Credit allowances are assumptions, not read account balances. Existing CNY spend uses the entered FX rate. Railway GB/GiB conversion is exposed as an assumption; the account meter remains unverified. The existing HTML is unchanged at 8f99f177 and retains its earlier unit/currency behavior.
+
+Actual Microsoft Excel16.0 recalculation passes 21 scenarios/378 outputs, seven missing/zero-input checks and a formula-like string kept as literal text. Missing review share preserves the independent maker count while the full cost stays unavailable. A separate saved CNY test copy reopens with all 44 inputs and 18 results unchanged and result formulas preserved. The delivered original is unchanged by verification. All owned Excel processes ended. Partial current regions from all four tabs were inspected; whole-sheet design and buyer acceptance remain open.
+
+Four nonce/footer/hash-bound native Google critiques cover all nine complete supplied sources: builder/verifier, original model/catalog, all exported populated/formula cells and workbook metadata. Their manifest equals the current frozen artifact. Raw styles, blank formatting cells, package security and buyer/rendered-design acceptance remain outside this scope. Requested model/provider and inherited always-proceed do not establish serving identity or hard tool denial. No tool steps were observed; owned local clients ended. Remote cancellation of the earlier timed-out turn was not attested.
+
+Combined review is WARN with full declared-source coverage. GLM comparison uses today's unquoted-write fresh fallback; a future distinct write quote requires comparison-formula/source refresh. Hardware life is specified as1–120months; manually bypassing that with0 can still produce Excel division errors. Original catalog/Options Railway descriptions retain legacy GiB labels, while actual formulas use the qualified GB conversion. Those textual/source-refresh and malformed-input follow-ups remain open. Privacy filtering redacts Windows usernames; source hashes bind the original revision, not identical redacted transport bytes.
+
+Of27 property rows,26 have source repository mappings. starlightintelligence.org retains the original null mapping and existing [command-center38](https://github.com/frankxai/starlight-command-center/issues/38). This is an unresolved source gap, not a known mapping dropped by export; do not guess or dispatch it. Options contains original dated illustrative price arithmetic, not current-plan output formulas. Actual editable cost calculations are in Plan.
+
+The original transport truncation, initial reviewer credit/currency/title FAIL and later native deadline failure remain preserved. Their findings were repaired and current coverage is separate. Authoring writes the complete verified file but its runtime exits1 after reporting exitCode0 before shutdown; cause unresolved, so no clean authoring-process PASS is claimed. Companion sidecars and both visual ledgers are saved; schema validation and writable taste-memory synchronization remain pending.
+
+The cache stays preserved after Frank asked whether builds need it. Installed dependencies serve builds; cached packages also support reinstall/recovery. No purge approval was inferred. Disk remains below the15% floor: existing installed toolchain, small interactive work and existing CI only. No install, worktree addition, model/media run, subscription purchase, API fallback, scheduler or live worker was added. The pilot ceiling is unchanged.
+
+The previous foreign handover lane was released; current main552e11ea was integrated normally. Both session/ledger conflict bodies and all incoming other-owner prompts were preserved. An initial own-lane check used an autogenerated owner and the compound command continued into merge despite that refusal. Ownership was rebound to the explicit source session and separately verified before conflict resolution; this sequencing failure remains recorded, not a gate PASS. No foreign lease was displaced.
+
+Technology PR34/77a4374, its existing preview and153-unit/51-page/34-browser evidence remain unchanged. Swarm PR35/main2b4e159 and exact495/29/PG17/build/dry-run proof remain in their scope. Next prove a named useful creator mission against the existing hardware-sheet alternative, recording output, repair/time and actual attributable cost. Trusted workflow entrypoint/deployment enforcement, durable create intent/authenticated dispatch, Vercel app-local adapter and uncertain external-effect recovery remain required before a live worker. Mobile feedback/focus/touch, independent rendered design/buyer/security/privacy/licence/commercial gates, actual billing/native quota/hardware throughput/ROI and release remain open. Policy loading is distinct from runtime enforcement.
+
+
+## 2026-10-04: Current Starlight serving revisions verified (Codex)
+
+Read-only Vercel metadata binds current Protocol/Lab/Academy production aliases
+to READY deployments at 12d794a/854357b/abaf24b; all match GitHub main. Protocol's
+four source blobs equal the prepared repair base. Earlier observations stay dated,
+with no retroactive deployment or repair-acceptance claim. The latest canceled
+protocol preview belongs to foreign scoped-recall and is preserved. Draft39/HOLD,
+native trust, checkout assignment, browser/visual proof and all eleven requirements
+remain open. See [session](sessions/2026-10-04.md).
+
+## 2026-10-04: Protocol repair hypothesis verified; integration held (Codex)
+
+Kernel draft 39/855644e stacks on frozen 38 and includes the exact four-file protocol
+patch against 12d794a. Actual 10/10 cloud states and full kernel CI pass; four blobs
+equal tested merge f9ffdc0. All four hypothesis states change 22 classes/4 labels,
+remove observed uppercase findings and retain viewport-width reflow. Blocked body
+becomes DejaVu Sans and mono Liberation Mono; normal sampled roles stay unchanged.
+Independent Step HOLD requires compiled/deployment, global rules/routes/native
+zoom and post-change loading evidence. This is no product apply or release PASS.
+
+No free assigned protocol lane established; preserve PR200/202/203 and foreign
+primary. Both new Bash hooks remain untrusted. All eleven requirements, Lab width
+failures and prior candidates remain open/partial. Disk 14.83% free, bounded; existing
+owned checkouts only. See [session](sessions/2026-10-04.md), [draft39](https://github.com/frankxai/starlight-design-intelligence/pull/39)
+and [protocol197](https://github.com/frankxai/Starlight-Intelligence-System/issues/197).
+
 
 
 
@@ -882,48 +935,40 @@ enabled Computer Use browser was available for native-provider review.
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
 The full six-audience website goal remains active, task
-`01a101fc-228c-7010-bba6-cf60bbad2357`, under
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 15 source `2543a02aac38d6b2a30f533ad222841bdc3e3c3f`; exact article revision `5dd5e5b4`.
-The register covers 278 URLs/769 variants: 63 prepared revisions, four observed
-production corrections and 211 unreviewed. All 63 hashes match; 67 receipts
-preserve earlier rows. There are 63 held social/visual brief sets.
+`01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
+Batch 17 source `283d63cd8ff787d2d8149602cd9fd2ba4c5947e4`; exact article revision `3e782ebbbae8bc4e23e94b8eb2a8c76f606ba275`.
+There are 71 prepared revisions, four observed production corrections and 203
+unreviewed articles across 278 slugs/769 variants. All 71 hashes match; 75 receipts
+preserve previous rows. There are 71 held article-linked social/visual sets.
 
-Four rewrites cover GPT-5.5, Gemini 3.5 Pro availability, DeepSeek V4 and Grok 4.6.
-Current official capabilities, historical vendor results and proposed evaluations
-are distinct. Unsupported native audio/video, stale flagship routing, forecast
-availability and universal savings claims are removed. The checked catalogs show
-newer OpenAI recommendations, stable Gemini 3.8 Flash, DeepSeek Flash backing
-V4.1 and xAI recommending Grok 4.7. These are documented source observations,
-with no own performance ranking or model trial. Each article starts with a useful
-migration, producer lesson or repair task and a serious editor/developer baseline.
+Four revisions clarify the Atlas's editorial intelligence, a source-based video
+workflow, creative frequency as a metaphor and Higher Self as a personal essay.
+Unsupported fieldwork/client ROI, fixed identity, causal virality and spiritual
+outcome claims are removed. Serious analyst/editor/writer/notebook alternatives,
+useful authored examples and recovery remain. Existing personal opening and
+Christian Examen context are preserved; premium founder review is still required.
 
-Four MDX/GFM compiles, four authoring-source resolutions, one pinned production
-dynamic-route proof, 15 arithmetic checks and nine corpus tests pass. Original
-stable metadata, LearnHubCallout slugs and all assets remain. Production's corrected
-Grok model link is preserved against current baseline `2e6e8e73`; frozen register
-references remain separate. Both pinned DeepSeek MIT LICENSE files were read.
-No affiliate catalogue, issued URL or qualification date changes.
+Four MDX/GFM compiles, 17 source resolutions, 14 arithmetic checks and nine corpus
+tests pass. All four original bodies match production `f9811d47`; stable metadata,
+URLs and assets stay. Google October 1 main-content/effort guidance informs the
+plan, without a ranking promise. Failed journal/full-text retrievals stay recorded;
+the actual author-posted arXiv v3 abstract supports only a scoped story experiment.
+No catalogue, referral qualification, model/pilot/campaign/spiritual trial, image
+or public posting. NVIDIA and Qwen critiques timed out without verdicts; all
+failures and earlier review gaps remain. No release acceptance follows.
 
-Two isolated Poolside reviews and one Qwen alternate timed out without a verdict.
-All input/revision hashes and failures are retained. Exact-revision critique remains
-open, along with batch 13 voice and batch 14 creator review. No live-source,
-rendered, security, rights, commercial, SEO or publication acceptance follows.
-Earlier frontier overviews need a deliberate freshness follow-up, preserving their
-old hashes and revision history. No new visual or public post is produced.
+CUA is empty and an actual live-site tab attempt returns “Browser is not available:
+iab.” Borrowed Next/TypeScript targets are absent and untouched. Storage remains
+below 15%, PP BOUNDED and new agents paused. Text and small checks continue;
+installs, new worktrees, media, build fanout, cleanup and website release stay held.
+Full gates, independent responsive/source/design/security/commercial acceptance,
+surgical production port and exact green main deployment remain required. Task
+writable-vault taste sync and frontier-overview freshness remain open. All 23
+foreign edits are unstaged. Policy loading is separate from runtime enforcement.
 
-Storage remains below 15% free. Text and small checks continue; installs, new
-worktrees, media and new agents remain held. CUA is empty; borrowed Next/TypeScript
-targets are absent and untouched. Full gates, responsive desktop/mobile capture,
-independent acceptance, surgical production integration and exact green main
-deployment remain required. No website source push or deployment occurred.
-All 23 foreign edits remain unstaged. Policy loading is separate from demonstrated
-runtime enforcement. Task taste synchronization awaits a writable vault interface.
-
-This handover reuses the free owned worktree from fresh main `b0f7b7d8`. Only the
-FrankX ledger/prompt sections and appended dated session change; other fronts and
-earlier bytes remain intact. Hub CI proves this documentation only. Continue the
-remaining register and admitted release recovery without reducing the goal.
+This handover reuses the free owned worktree from fresh main `309bb150`. Only
+FrankX ledger/prompt sections, its sweep fragment and appended session change;
+other fronts/history remain intact. Hub CI proves documentation only.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 

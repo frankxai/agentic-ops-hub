@@ -17,113 +17,75 @@
 
 ## Current
 
-### AI-factory architecture: implement trusted workflow execution and prove a useful mission
+### AI-factory architecture: use the verified workbook and prove a useful creator mission
 
-Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Swarm15, Technology30,
+Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Technology30, Swarm15,
 hub102 and private Ops149. Preserve the full Queen/subscription/API/cloud/team/
-brand/creator/business goal and other owners. Cache retained; pilot ceiling unchanged. No new purchase, paid fallback, schedule or live authority follows
-from plans or CI.
+brand/creator/business goal, original source task and other owners' unfinished work.
+Keep the npm cache, installed toolchain and unchanged pilot ceiling. Storage below
+15% forbids new dependencies, worktrees, build fanout, media/models or unattended work.
 
-Swarm PR32 merged at `db5eeb4e9005e754fc41077a7088098f8ae118cd` from 799e7658. Exact main CI
-37175342484 passes 416 TypeScript/29 orchestration tests, typecheck,
-PostgreSQL 17, Next build and non-live dry run. All 39 changed hashes match
-three complete native source PASS critiques. Source/tested merge/main tree
-03ad4c1a813ced485f6f4a9e24c3f4d2754bf986 matches. Original FAIL/coverage/schema/API assumptions,
-type mismatch, TS2791 and all prior recovery evidence remain preserved.
+Reuse private complete HTML8f99f177 and the four-tab formula workbook314fa9fa,
+in creator-cost-extension/outputs under the source task ID. Actual Excel16.0 passes
+21 scenarios/378 results, seven missing/zero checks and62 save/reopen input/results.
+Forty-four inputs cover native/API/cache/repair, compute/browser, currencies,
+hardware/contribution and GLM peak credit capacity. Railway units, FX, GLM price,
+native allowances, throughput and contribution are explicit assumptions. Four
+bounded native Google critiques jointly cover nine complete supplied sources;
+raw styles/package security/rendered buyer acceptance remain excluded. Keep initial
+FAILs, transport/native timeout and unresolved authoring shutdown exit1. The saved
+artifact is verified; no clean authoring-process PASS, actual quota or ROI is claimed.
 
-The actual v2 planning/compiler/verified/prepared pipeline requires one explicit
-Cloudflare or Vercel owner per workflow, separate executors, exact profile/policy/
-plan/pack binding and integer microdollar caps. Four CLI stages pass; 18 current
-artifact bytes and canonical derivation match. Old v1 pack and 28 legacy files
-are preserved. Legacy admission rejects v2 receipts and workflow health keys.
-Preparation is not operation authority. Reuse docs/WORKFLOW-RUNTIME-V2.md.
+Technology draftPR34/77a4374 and native preview remain153-unit/51-page/34-browser
+verified in their existing scope. Preserve editable/recovery/complete exports and
+the serious hardware-sheet alternative. Next prove one useful matched creator
+mission and record output, repairs/time and actual attributable cost. Mobile cost
+feedback/focus/touch, independent rendered design/buyer, security/privacy/licence/
+commercial acceptance, schema/taste-memory, actual billing/hardware and release stay open.
 
-Swarm PR33 merged at c62155046ba80982148a05d5aa469fa8327f52ab; source 0e2ddbad, exact main CI
-37177811511 passes 456/29 plus typecheck/PostgreSQL 17/build/dry run. Full eleven-file
-native source critique passes, all hashes match; six new files and 37 existing
-generated files preserved. Reuse docs/WORKFLOW-INSTANCE-OBSERVATION.md: actual
-pack-issued operation binding and fixed-origin authenticated Cloudflare GET
-observer. Forty new tests cover tenant/version/instance substitutions, old signed
-approval denial, network failures and exact-ID recovery. No live tenant/readback,
-executor/process/descendant or activation authority follows from mocked tests.
-
-Swarm PR34 merged at 09b1dc8fef66b4e52af4a56175bb6e3b35d56e18, source 74b95ab1.
-Exact main CI 37179920405 passes 475/29/typecheck/PostgreSQL17/build/dry run;
-55 selected local regressions/ES5 typecheck and current scoped native PASS.
-Seven complete source files/ten exact regions reviewed; omitted large existing
-PostgreSQL/test code not newly certified. Initial audit-migration failure and
-both original rollback-review FAILs remain preserved. Registry exact readback,
-immutable/cancelled tombstones, DB time/audit/commit and sealed signed admission
-are implemented. Do not rebuild them or the completed GET observer.
-
-Swarm PR35 merged at 2b4e159dd81a99c1592ac57384c51986a909012b, source bc468812.
-Exact main CI 37182245285 passes 495/29/typecheck/PostgreSQL17/build/dry run;
-69 local tests/imported ES5 types and current combined native source PASS.
-Nine complete files/fourteen exact regions plus initial-import supplement cover
-all changed new lines; omitted existing SQL/runtime remains unproven. Durable
-exact API instance ownership, cancelled tombstones, atomic required mark/audit,
-lost-commit-response recovery and reservation-time signed context checking are
-implemented. Reuse them. Preserve initial V8 CI crash and coverage history.
-
-Next enforce the approved deployment at a trusted workflow entrypoint/executor
-before effects: Cloudflare create APIs have no documented version selector.
-Implement durable exact create intent and authenticated engine/executor dispatch,
-with exact-ID readback and external-effect reconciliation on uncertain starts. Reuse existing single-use leases/cumulative budgets/independent stop/
-usage authority; do not rebuild the completed GET observer or add a scheduler.
-Retain exact instance IDs on uncertain outcomes and reconcile external effects.
-Implement Vercel's app-local adapter separately. Fresh tenant access, host capacity,
-executor/process/descendant evidence, independent named pilot security acceptance
-and the separately named human-approved reversible mission remain required.
-Measure useful output/repair/time/actual cost on the same hardware-sheet task.
-Preserve private-data restrictions, export/recovery and all human gates.
-
-Reuse Technology PR34/77a4374 and private complete HTML 8f99f177. Their prior
-153 unit/51-page/34 cloud-browser and 38 local/14 Chrome evidence remains in its
-scope. Current slice changes no UI/data/visuals. Mobile cost feedback/focus/touch,
-independent design/buyer, provenance/taste-memory, actual currency/native quota,
-hardware throughput/ROI and release remain open. Ops PR157 stays unactivated.
-Save each completed slice to this hub plus existing product issue; full goal active.
+Reuse Swarm PR35/main2b4e159 (exact495/29/PG17/typecheck/build/dry-run) and merged
+v2 planning/preparation, authenticated GET observation, immutable registry/audit,
+exact instance ownership and signed reservation checks. Implement approved
+deployment enforcement at the trusted entrypoint/executor before effects,
+durable exact create intent and authenticated engine/executor dispatch. Preserve
+exact IDs on uncertain starts and reconcile external effects. Vercel's app-local
+adapter is separate. Reuse leases/cumulative budgets/independent stop/revocation/
+usage controls. Named security acceptance and exact human-approved reversible
+live mission remain required; no paid fallback, purchase, schedule or activation
+follows from a workbook, policy load or CI. Save completed slices to this hub and
+existing product issue. Full objective active; Ops PR157 remains unactivated.
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-six-audience website, intelligence, frontier, SEO, affiliate, serif visual and
-social outcome. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-15.md`, both exact-revision
-evidence files and `article-review-progress.json` in `docs/ops/editorial/`.
-Authoring source `2543a02aac38d6b2a30f533ad222841bdc3e3c3f`, branch `agent/codex/editorial-renewal-20261003`.
-Preserve batches 1-14, all 23 foreign edits and newer production improvements.
+Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the full
+six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social goal.
+Source `283d63cd8ff787d2d8149602cd9fd2ba4c5947e4`, branch `agent/codex/editorial-renewal-20261003`.
+Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-17.md`, both evidence files and progress JSON
+under `docs/ops/editorial/`. There are 71 prepared revisions, four observed
+corrections and 203 unreviewed. All hashes match; preserve all earlier receipts.
 
-The register has 63 prepared revisions, four observed corrections and 211
-unreviewed articles. All prepared hashes match. Four new model guides distinguish
-documented capabilities, historical vendor results and proposed useful tasks.
-Current public sources recommend newer OpenAI models, stable Gemini 3.8 Flash,
-DeepSeek V4.1 Flash and Grok 4.7. Earlier prepared overview freshness needs a new
-receipt and retained history. No model/audio/video/patch trial was performed.
-Source critiques timed out twice on Poolside and once on Qwen. Obtain a valid
-independent exact-revision critique, plus earlier batch 13 voice and batch 14
-creator reviews. Preserve every failure and do not infer release acceptance.
+The new Atlas/video/creative-framework/personal-essay guides separate source facts,
+editorial judgement, assumptions and personal account. NVIDIA/Qwen critiques
+timed out; obtain valid exact-revision critique and the earlier missing reviews.
+Higher Self needs premium founder review. Current production `f9811d47` original
+bodies match; preserve metadata/assets/URLs and the existing scientific corrections.
+Earlier frontier overviews need deliberate new revision receipts, not hash resets.
 
-Current batch production baseline `2e6e8e73` differs from frozen register
-`badd9c44`/`7fe4fde1`. Preserve the corrected Grok `/llm-hub/grok-4-6` route,
-original assets/metadata and both LearnHubCallout slugs. No affiliate account
-qualification or issued URL changed. Resolve real partner qualification before
-commercial activation. Social and visual sets remain held, with no generated
-image. Taste retrieval does not establish this task's writable-vault sync.
+Supported CUA is empty; actual iab creation fails. Borrowed Next/TypeScript targets
+are absent. Storage below 15% limits work to text and small checks; do not install,
+create worktrees, generate media, start agents or clean foreign state. Recover
+admitted dependencies and supported desktop/mobile capture. Complete full gates
+and independent acceptance, port accepted changes against fresh production main,
+merge normally and verify exact green deployment. Continue useful article work.
 
-Storage remains below 15% free; text and small tests only. Do not install
-dependencies, create worktrees, generate media or start agents. CUA is empty;
-borrowed Next/TypeScript targets remain absent. The earlier browser connection
-question remains unanswered. Recover admitted owned dependencies and capture
-without deleting files or interfering with foreign work. Complete full gates,
-independent responsive/design/security/commercial acceptance, surgical production
-port, normal merge and exact green deployment. Continue article work while held.
-
-Use sentence-case serif visuals, exact prompt sidecars, both ledgers and taste
-synchronization after admission. Higgsfield skills/MCP are banned. Public social
-posting and premium founder approval remain human-gated. Save completed slices in
-this hub and issue #252 and preserve the private objective ledger, original intent
-and unfinished work. Article totals and documentation CI cannot close the goal.
+Social/visual sets remain held. Require sentence-case serif design, exact prompt
+sidecars, both ledgers and taste synchronization after admission. Higgsfield
+skills/MCP are banned. Verify actual issued affiliate relationships before
+commercial activation. Public social and premium founder approval remain human-
+gated. Preserve the 23 foreign edits, private intent/remaining/history and other
+objectives. Save finished slices in this hub and issue #252; do not close the full
+goal from article counts or documentation CI.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
@@ -136,7 +98,36 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Current live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
+Current deployment binding: read private starlight-current-deployment-binding-
+20261004 and protocol-repair-readiness-native-trust receipts. At 06:57:42 UTC,
+Vercel current Protocol/Lab/Academy aliases are READY at 12d794a/854357b/abaf24b,
+matching GitHub. Four protocol blobs match the prepared patch baseline. This is
+current metadata, not retroactive or compiled-repair proof. Latest canceled
+protocol preview is foreign scoped-recall/dbfc153b and remains untouched. Both
+Bash hooks are still untrusted, CUA is empty and PR200 assignment is pending.
+Do not repeat these status reads as progress without a changed external state.
+Complete missing product/native/rendered evidence after its actual dependency is
+available; keep the full eleven requirements and perform the blocked audit if
+no independent authorized action can advance them.
+
+Current protocol repair slice: kernel draft 39/855644e3ca0d63a40ed88218bbdbdcf9e48daf20,
+owned branch agent/codex/protocol-font-repair-trial-20261004, stacked on frozen38.
+Read the public evals/protocol-typography-repair-12d794a.patch and private
+protocol-repair-trial-855644e/review-step/native-trust-pre receipts. The four-file
+patch applies in read-only check to exact source snapshots at protocol main12d794a;
+it is not applied, built or deployed. All ten actual cloud states/full kernel CI
+pass, four blobs equal tested merge f9ffdc0. Normal roles retained; blocked390/320/
+CSS zoom 2× hypotheses restore sans and mono faces, 22 class/4 label changes, zero uppercase
+findings and viewport-width reflow. Only normal390/blocked390 are matched pairs.
+Independent Step HOLD is preserved; no product/source-review PASS is inferred.
+Global selectors/routes/native zoom/initial loading/shifts and visual/rights/
+human acceptance remain open. Assign an admitted protocol product lane before
+applying the reviewable patch; clean PR200/202/203 lanes and foreign primary are
+unfinished. Do not create a new worktree/dependency install below 15% free.
+Fresh native hooks/list still finds both Bash entries untrusted; test dispatch
+only after actual trust. Keep all eleven requirements and all historical evidence.
+
+Prior live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
 is frozen, owned branch agent/codex/starlight-typography-runtime-20261004.
 Re-run guard/check with explicit paths and separate ownership before writes.
 Actual18/18 CI37180850730 and full CI37180850751 pass61Node/15Python/53browser-
