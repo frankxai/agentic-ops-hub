@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 7 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 8 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Native patch coverage passes; shell coverage fails (Codex)
 
@@ -135,54 +135,66 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-The website/all-article/six-audience goal remains active under
-[FrankX issue252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at `f278639ba04ca1eebe67a6185ad532ee4c46055a` after batch
-7 article commit `f77a89c1` and all earlier preserved work. The 278-slug/769-variant
-register has 32 prepared articles, four observed production corrections and 242
-unreviewed rows. All 32 authoring hashes match; 36 receipts preserve earlier 31.
-Thirty-two social sets remain held. No article has release acceptance.
+The full website/article/six-audience goal remains active under
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252), source task
+`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source ends at `5eeb80ef14ccf8f33f93526356ec1175d1e7d613` after
+batch 8 article commit `6a38ffed` and refinement `3d0ca4de`. The register has
+278 URLs/769 source variants: 37 prepared articles, four observed production
+corrections and 237 unreviewed rows. All 37 authoring hashes match; 41 progress
+receipts preserve the earlier 36. Thirty-seven social sets remain held.
 
-Five actual local-model articles cover memory-first hardware selection,
-open-weight licenses/artifacts, Ollama privacy, runner comparison and hybrid
-approval/recovery. They retain production metadata, images and URLs while removing
-unrecorded trials, fixed speed/quality claims and blanket no-egress/zero-retention
-promises. Worked synthetic briefs and exact GiB/GB calculations replace rankings.
-Actual primary Qwen/NVIDIA README bytes are revision/hash-bound; model specs and
-vendor evaluations remain attributed. No weight download, inference, network
-audit, commercial clearance or deployed sovereign mesh is claimed.
+Five actual rewrites cover creator tools, agent capability stacks, consumer
+assistants, Claude Code pricing and automation builders. They remove unsupported
+daily trials, quality rankings, guaranteed savings and blanket affiliate claims.
+Synthetic release/inquiry briefs and billing/task calculations supply concrete
+reader work. Actual Relay documentation redirects to its September shutdown;
+it leaves the current buying shortlist. Lindy's plan-label mismatch is disclosed.
+The current Anthropic SDK notice pauses an older announcement below it, and
+Work/Codex availability is separated from Chat. Proposed workflow checks remain
+separate from executed results. No account or workflow trial was performed.
 
-Two isolated Poolside critiques completed PASS/no findings at `f77a89c1`.
-The initial selection timeout and same-packet recovery are preserved. The reviewer
-misstated arithmetic units in praise; the article and Decimal checks correctly
-use four bits per parameter. All reviewed article bytes remain unchanged.
-Supplied lead-checked facts, absent execution/rendering and reviewer summary
-mistakes limit the critique. No privacy/license/SEO or publication approval follows.
+Actual pinned production raw files at `044c8447` supply baselines. Three original
+bodies matched authoring; the consumer and builder pages had newer summaries and
+cross-links, which are retained. Two production-only links have actual bounded
+retrieval hashes. Original dates, authors, categories, images and featured values
+remain. The private authoring repository is distinct from public production.
 
-Five actual GFM MDX compiles, original metadata, six internal source links and
-Decimal arithmetic pass; nine corpus tests and scoped claims audit pass. Existing
-ten boundary tests passed in the prior slice, with no boundary code change here.
-Ordinary language audit still finds 15 hits in eight other files. Enabled secret
-hooks pass 132.10 KB/32.60 KB. All 23 foreign newline changes remain unstaged.
-No source push or website deployment. Direct official links remain; no new
-partner entitlement, enrollment or hardware referral was fabricated.
+Three interpretable Poolside source critiques at `6a38ffed`/`3d0ca4de` retain
+REVISION_NEEDED, PASS with findings and REVISE labels. Two stopped null-content
+responses and same-packet recoveries remain recorded. Two complete outputs have
+trailing formatting defects. False n8n-link, unconfirmed-model and arithmetic
+findings were rejected with actual source/arithmetic evidence. Clearer billing
+wording and citation/recovery examples were adopted. Final refined article hashes
+are unchanged after critique. Supplied facts and absent independent browsing,
+rendering and execution limit this review; no source or release acceptance.
 
-Latest build PP at October3 22:54UTC is HOLD: 7,518 MB free, 8,192 required,
-3,422 projected, twelve runtimes and pause-new-swarms. Lightweight disk reading
-15.42% is observational; recheck full storage admission before material growth.
-Next.js/TypeScript package targets were freshly checked and remain absent.
-Supported browser inventory remains apps=[]/browsers=[], with no responsive
-capture. No new agents, installs, worktrees, media, posts, schedules, cleanup or
-persistent workers. Both earlier low-resolution covers and all current historical
-heroes remain unaccepted; five new distinct visual briefs await execution/review.
+Five MDX/GFM compiles pass, original metadata and eleven internal source links
+verify, and Decimal/integer examples are checked. Nine corpus tests and scoped
+claims audit pass; 15 existing language findings in eight other files remain.
+Prior ten publication/affiliate tests passed, with unchanged boundary code.
+Enabled source secret hooks pass 118.40/60.35/24.78 KB. Twenty-three foreign
+newline edits remain unstaged. No source push or website deployment occurred.
 
-Prior hub PR120 merged `4a789dad` with exact passing PR/main CI and three blobs
-equal. That is documentation evidence. Recover admitted isolated build and
-supported exact browser capture, review current visuals/relationships, then port
-only accepted public files, pass gates, merge normally and verify deployed SHA,
-routes and recovery. Continue remaining useful source work while held. Preserve
-stronger production versions, research holds and every other owner's work.
-See [session](sessions/2026-10-04.md), source REVIEW-BATCH-07.md and current prompt.
+Five held social/cover/infographic briefs use existing serif tokens and sentence
+case. Historical images await visual/provenance review; one duplicate creator
+cover and the assistant page's routing cover need replacement. No new media or
+live post. No current account-qualified affiliate destination was verified;
+official citations remain direct, with no enrollment or outreach.
+
+Latest build admission HOLD: 7,210 MB free RAM, 8,192 required, 3,114 projected,
+twelve task runtimes and pause-new-swarms. Lightweight disk reading 15.54% is
+observational; full storage admission is required before material growth.
+Next/TypeScript targets remain absent. Supported CUA inventory apps=[]/browsers=[]
+prevents responsive capture. No new agents, installs, worktrees, models, builds,
+cleanup, process kills, schedules or persistent workers were started.
+
+This hub branch preserves newer main `d5d3c0ca` (native patch/shell proof PR123)
+and all other fronts. Prior handover PR122 has exact successful PR/main CI and
+three matching blobs; that proves documentation. Recover admitted build/capture,
+review current visuals and relationships, then port accepted public files, pass
+gates, merge normally and verify deployed SHA/routes/recovery. Continue remaining
+source work while held. Policy loading supplies context, not universal runtime
+enforcement. See the [session](sessions/2026-10-04.md) and current prompt.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
