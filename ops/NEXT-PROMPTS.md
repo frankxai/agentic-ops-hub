@@ -17,47 +17,44 @@
 
 ## Current
 
-### AI-factory architecture: migrate the runtime and prove useful recoverable work
+### AI-factory architecture: implement trusted workflow execution and prove a useful mission
 
 Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Swarm15, Technology30,
-private Ops149 and hub102. Preserve the whole Queen/subscription/API/cloud/team/
-brand/creation/business objective, all other owners and unfinished work. Cache
-intact; EUR100 pilot ceiling unchanged; no new purchase/fallback/schedule/live
-worker/production authority follows from plans or green checks.
+hub102 and private Ops149. Preserve the full Queen/subscription/API/cloud/team/
+brand/creator/business goal and other owners. Cache intact; EUR100 ceiling
+unchanged. No new purchase, paid fallback, schedule or live authority follows
+from plans or CI.
 
-Swarm recovery and architecture corrections are on main 1a6ff89e through PR30/31.
-Exact main CI 37170662704 passes 398 TypeScript/29 orchestration cases, Postgres 17,
-build/dry-run. Main/source/tested merge tree 8f3cbc0b matches. Seven changed files
-matched reviewed source hashes; preserved original FAIL/native crash/reconciliation
-and eleven RED cases are retained. Current complete-doc native PASS, 25.947 seconds is
-source-only; identity/confinement/runtime security/useful mission/release unproven.
+Swarm PR32 merged at `db5eeb4e9005e754fc41077a7088098f8ae118cd` from 799e7658. Exact main CI
+37175342484 passes 416 TypeScript/29 orchestration tests, typecheck,
+PostgreSQL 17, Next build and non-live dry run. All 39 changed hashes match
+three complete native source PASS critiques. Source/tested merge/main tree
+03ad4c1a813ced485f6f4a9e24c3f4d2754bf986 matches. Original FAIL/coverage/schema/API assumptions,
+type mismatch, TS2791 and all prior recovery evidence remain preserved.
 
-Registry on main matches pinned Ops 68bc808d / blob 60d33d85. Cloudflare agent/cross-
-service workloads with identity/state there; Vercel app-local work; one durable
-owner per workflow. Temporal/trigger.dev/n8n are not backbones. Current
-`starlight.team_runtime_plan.v1` still emits legacy Temporal/deferred Cloudflare
-references, explicitly non-activating. Documentation correction is implemented;
-runtime enforcement is not. Migrate the existing owned pipeline as one versioned
-contract: workload ownership, policy/plan/compiler/prepared adapters, exact
-source/profile/pack/approval binding, prior export/recovery and denial of stale or
-cross-engine grants/duplicate execution. Preserve one scheduler, signed grants,
-durable leases and independent stop/reconciliation. No string replacement of
-legacy generated packs can implement the new backend. Read current official APIs.
+The actual v2 planning/compiler/verified/prepared pipeline requires one explicit
+Cloudflare or Vercel owner per workflow, separate executors, exact profile/policy/
+plan/pack binding and integer microdollar caps. Four CLI stages pass; 18 current
+artifact bytes and canonical derivation match. Old v1 pack and 28 legacy files
+are preserved. Legacy admission rejects v2 receipts and workflow health keys.
+Preparation is not operation authority. Reuse docs/WORKFLOW-RUNTIME-V2.md.
 
-Reuse Technology PR34/77a4374 and complete private HTML 8f99f177: 55 sources / 16 rates /
-27 properties / 12 functions / 15 runtimes. Keep 153 unit/51-page/34 actual cloud browser
-and 38 local/14 actual private Chrome proofs in their scope. Kimi TTL miss-write
-billing/source pairs/new versus legacy quota boundaries and unreadable/foreign
-copy recovery remain. No current UI/data/visual change; mobile sticky cost
-feedback, focus/touch, independent rendered design/buyer, provenance schema and
-taste-memory sync still need work. Private financial/account payloads stay local.
+Implement the existing runtime's authenticated owner/engine/executor transport:
+fresh tenant/instance binding, signed single-use operation grants, durable lease
+and cumulative spend reservation, independent stop and real reconciliation.
+Use current official APIs, one scheduler and exact source review. Preserve local
+private-data restrictions and export/recovery. Obtain the required security
+acceptance and separately named human-approved reversible pilot, then measure
+useful output/repair/time/cost on the same task against the existing hardware
+sheet. Do not treat caller-authored evidence as a grant or cancellation as proof
+that a remote effect stopped.
 
-After coherent runtime migration, prove fresh transport/access/health/budget,
-independent security acceptance and the separately required named reversible
-pilot. Measure useful output, repair, time and accepted-outcome cost on the same
-job against the preserved hardware sheet. Actual billing currency, native
-capacity, hardware throughput, ROI and commercial/release gates remain open.
-Ops PR157 stays unactivated. Full objective active; no scope reduction.
+Reuse Technology PR34/77a4374 and private complete HTML 8f99f177. Their prior
+153 unit/51-page/34 cloud-browser and 38 local/14 Chrome evidence remains in its
+scope. Current slice changes no UI/data/visuals. Mobile cost feedback/focus/touch,
+independent design/buyer, provenance/taste-memory, actual currency/native quota,
+hardware throughput/ROI and release remain open. Ops PR157 stays unactivated.
+Save each completed slice to this hub plus existing product issue; full goal active.
 
 ### FrankX: continue the article register and release reviewed revisions
 
