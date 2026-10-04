@@ -19,45 +19,31 @@
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the full
-six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social outcome.
-Source `1fa1a2724ab5b87829510d3fc6f17a33c78a496e`, branch `agent/codex/editorial-renewal-20261003`.
-Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-21.md`, source/review evidence and progress
-under `docs/ops/editorial/`. There are 87 prepared revisions, four observed
-production corrections and 187 unreviewed articles. Preserve every prior receipt,
-hash, asset and improved production scientific page. Continue useful reader work.
+Continue full task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
+Source `fc1850d99193501822fc9e3660b972fc99346977` in owned `frankx-editorial-renewal-20261003`,
+branch `agent/codex/editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`,
+`REVIEW-BATCH-22.md`, evidence and progress in `docs/ops/editorial/`.
+91 prepared/four observed/183 unreviewed, 95 receipts and 91 held social sets.
+Preserve all older hashes, improved production science and 23 foreign edits.
 
-Batch 21 corrects four personal agent/ACOS/agentic-AI/MCP guides with actual
-official source scope, authored copy/decisions/recovery and serious alternatives.
-Memory is context; effective runtime access needs separate proof. Model skill
-selection is not a fixed keyword trigger. Local Vercel registration remains
-remote account access. Full ACOS 11.0.0 differs from core 1.0.0; explicit batch20
-source receipts are reused, not a second installation claimed. Retain the
-production-only August field-guide link's dated limits and actual raw-source hash.
-Initial Poolside JSON is malformed; visible recommendations are manually
-reconciled, with two clarity refinements. Refined NVIDIA ended at length without
-a final critique/verdict. Preserve both originals and obtain usable exact-final
-independent review. Earlier20 creator timeouts,19 financial invalid JSON/value
-REVISE,18/17/16/15/14creator/13voice and Higher Self founder gaps remain open.
-Private IACOS does not qualify a public bundle; investor href="#" needs an actual
-qualified offer and responsive capture. Verify issued affiliate relationships.
+Current visual-tool guides replace unverified tests and stale models with useful
+authored examples and scoped primary sources. Three public affiliate candidates
+are pending enrollment; null issued URLs and absent qualification dates must
+remain until actual approval, destination and disclosure are verified. Preserve
+prior 32 rows and production Canva closure; legacy projections need review.
+NVIDIA minimal valid PASS responses are insufficient substantive critique; Qwen
+times out. Obtain useful exact-revision independent review and keep earlier gaps.
 
-Actual initial admission BOUNDED, new agents paused, disk below15%, CUA empty and
-dependencies absent. Ordinary text/small checks may continue. Refresh admission
-before heavy work; preserve foreign processes, 23 edits and other objectives.
-Recover admitted dependencies and supported desktop/mobile capture, pass full
-gates and independent source/design/security/commercial acceptance, then port
-accepted changes against fresh production main and verify its exact green deploy.
-Deliberately refresh earlier frontier overviews with current catalogue receipts.
-
-87 social/visual sets remain held. Use sentence-case Playfair design, exact prompt
-sidecars, both ledgers, taste synchronization and responsive review after
-admission. Higgsfield skills/MCP are banned. Public social and premium founder
-approval stay human-gated. Keep secret hooks enabled; batch21 relabeled a public
-revision field after a verified false positive, preserving its value and passing
-the enabled recheck. Save slices in this hub and issue #252. Article counts and
-hub CI cannot close the full website goal.
+Continue valuable content work while heavy work is constrained. Refresh machine/
+storage admission; restore supported responsive capture and admitted dependencies.
+Policies loaded are not runtime or deployment enforcement. Capture existing
+surfaces, refine sentence-case/serif visuals and verify full release gates before
+production port and exact green main. Actual uppercase token rule remains open.
+Frontier freshness, SEO/demand measurements, affiliate activation, visual
+sidecars/both ledgers/taste-vault sync and six-audience experiences remain required.
+No Higgsfield tools/skills. Live social and premium founder approval stay gated.
+Keep full goal active; save useful slices in this hub and issue252.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
