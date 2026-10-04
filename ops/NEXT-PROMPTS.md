@@ -59,36 +59,38 @@ existing product issue. Full objective active; Ops PR157 remains unactivated.
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the complete
-six-audience website, intelligence, frontier, SEO, affiliate, serif visual and
-social outcome. Source `7e2396e3b3ec4c00430c2e6b5939c5eb8147f8d8`, branch
-`agent/codex/editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-18.md`,
-its source/review evidence and progress JSON under `docs/ops/editorial/`.
-There are 75 prepared revisions, four observed corrections and 199 unreviewed.
-All hashes match; preserve every earlier receipt and the improved production
-scientific pages. Never overwrite them with legacy authoring text.
+six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social outcome.
+Source `a89c5bc25aa028919a44fa1a5072d34cad9b28c9`, branch `agent/codex/editorial-renewal-20261003`.
+Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-19.md`, source/review evidence and progress
+under `docs/ops/editorial/`. There are 79 prepared, four observed corrections and
+195 unreviewed articles. Preserve every prior hash/receipt and improved production
+scientific pages; never overwrite them with older authoring copies.
 
-The four open-model guides contain actual source scope and proposed useful tasks,
-not original measured research. Poolside eligibility REVISE has five source-
-contradicted or absent-quote findings; retain the exact comparisons. NVIDIA timed
-out. Obtain a valid accepted eligibility critique. Separate integration PASS does
-not recover StepFun output exhaustion or earlier review gaps. Higher Self still
-needs premium founder review. Earlier frontier overviews need deliberate new
-revision receipts with preserved hashes/history.
+Batch 19 adds substantive financial/value/integration guides and a functioning
+offline comparison aid. It validates supplied metadata, not truth. Initial
+financial/value PASS produced optional refinements. Refined financial JSON is
+invalid; refined value REVISE retains incorrect arithmetic repairs and unsupported
+attribution with lead reconciliation. No exact-revision publication acceptance.
+Earlier review gaps, Higher Self premium founder review and earlier frontier
+freshness remain open. Obtain usable independent reviews, including appropriate
+financial expertise; retain failures and original verdicts without review fishing.
+The private IACOS repo does not establish a public bundle, and authoring investor
+href="#" needs real qualified-offer behavior and capture.
 
-Storage below 15% and new-agent pause permit text and small checks. Do not install,
+Disk below 15% and new-agent pause permit text and small checks. Do not install,
 create worktrees, generate media, start agents or clean foreign state. Supported
 CUA remains empty; prior actual iab creation failed. Recover admitted dependencies,
-desktop/mobile capture, full gates and independent source/design/security/commercial
-acceptance. Port accepted changes against fresh production main, merge normally
-and verify the exact green deployment. Continue useful work on the article register.
+desktop/mobile capture, full gates and independent source/design/security/
+commercial acceptance. Port accepted changes against fresh production main, merge
+normally and verify the exact green deployment. Continue useful unreviewed articles.
 
-All social/visual sets remain held. Use sentence-case serif design and require
-exact prompt sidecars, both ledgers, taste synchronization and responsive review
+Social/visual drafts remain held. Sentence-case Playfair design, exact prompt
+sidecars, both ledgers, taste synchronization and responsive review are required
 after admission. Higgsfield skills/MCP are banned. Verify actual issued affiliate
-relationships before commercial activation. Public social and premium founder
-approval remain human-gated. Preserve 23 foreign edits, private intent/remaining
-history and other objectives. Save slices in this hub and issue #252; do not close
-the full goal from article counts or documentation CI.
+relationships before activation. Public social and premium founder approval remain
+human-gated. Preserve 23 foreign edits, task history and other objectives. Save
+slices in this hub and issue #252; article counts/documentation CI cannot close
+the full goal.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
