@@ -21,8 +21,7 @@
 
 Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Swarm15, Technology30,
 hub102 and private Ops149. Preserve the full Queen/subscription/API/cloud/team/
-brand/creator/business goal and other owners. Cache intact; EUR100 ceiling
-unchanged. No new purchase, paid fallback, schedule or live authority follows
+brand/creator/business goal and other owners. Cache retained; pilot ceiling unchanged. No new purchase, paid fallback, schedule or live authority follows
 from plans or CI.
 
 Swarm PR32 merged at `db5eeb4e9005e754fc41077a7088098f8ae118cd` from 799e7658. Exact main CI
@@ -48,9 +47,17 @@ observer. Forty new tests cover tenant/version/instance substitutions, old signe
 approval denial, network failures and exact-ID recovery. No live tenant/readback,
 executor/process/descendant or activation authority follows from mocked tests.
 
-Next wire the final context digest into sealed durable prepared registration and
-readback, operation-time signed admission and authenticated engine/executor
-dispatch. Reuse existing single-use leases/cumulative budgets/independent stop/
+Swarm PR34 merged at 09b1dc8fef66b4e52af4a56175bb6e3b35d56e18, source 74b95ab1.
+Exact main CI 37179920405 passes 475/29/typecheck/PostgreSQL17/build/dry run;
+55 selected local regressions/ES5 typecheck and current scoped native PASS.
+Seven complete source files/ten exact regions reviewed; omitted large existing
+PostgreSQL/test code not newly certified. Initial audit-migration failure and
+both original rollback-review FAILs remain preserved. Registry exact readback,
+immutable/cancelled tombstones, DB time/audit/commit and sealed signed admission
+are implemented. Do not rebuild them or the completed GET observer.
+
+Next implement durable exact workflow-instance ownership and authenticated
+engine/executor dispatch, retaining exact IDs and reconciling uncertain starts. Reuse existing single-use leases/cumulative budgets/independent stop/
 usage authority; do not rebuild the completed GET observer or add a scheduler.
 Retain exact instance IDs on uncertain outcomes and reconcile external effects.
 Implement Vercel's app-local adapter separately. Fresh tenant access, host capacity,

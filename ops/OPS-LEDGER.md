@@ -2,8 +2,80 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (workflow durable admission merged; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+
+
+## 2026-10-04: Workflow durable registration and signed admission merged (Codex)
+
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, [Swarm15](https://github.com/frankxai/starlight-swarm/issues/15),
+Technology30, hub102 and private Ops149. Previous goal turn made progress through
+PR33; this continuation revalidated current state and made further source progress.
+Keep the complete Queen/subscription/API/cloud/team/brand/creator/business goal active.
+
+[Swarm PR34](https://github.com/frankxai/starlight-swarm/pull/34) merged normally at
+`09b1dc8fef66b4e52af4a56175bb6e3b35d56e18` from `74b95ab108284a4093ae9f0a12d46c055673c7ec`. Source, tested PR merge
+`78afc850145a15aca26c54de60328fd9e9241df6` and main share tree `9e7970cfc9d87a3d889c961f7d2415894ea9661c`.
+[Exact main CI](https://github.com/frankxai/starlight-swarm/actions/runs/37179920405) passes 475 TypeScript/29 orchestration tests,
+PostgreSQL17, full typecheck, Next build and non-live dry run. 55 selected local
+regressions and ES5 source/imported typecheck pass. Commit secret hooks stayed
+enabled; no admin bypass or branch deletion. The unchanged preexisting test-only
+budget-secret fixture was retained; changed-source scans pass.
+
+The existing prepared registry now serializes insert, exact ready-row readback,
+database time, registration/denial audit and commit under the authority lock.
+Retries keep original time; conflicting immutable bindings and cancelled
+tombstones deny. Both fresh/upgrade audit constraints accept the two new events.
+The legacy registration call validates its timestamp but uses DB time for new
+registrations and throws on conflicts. Registration, prepared cancellation and
+reservation preserve the original persistence error when rollback also disconnects;
+audit remains best effort when storage is unavailable, and unknown commit outcomes
+require exact-ID reconciliation.
+
+Server bootstrap pins one issued verified operation ID/full digest/target/expiry
+and snapshots issuer keys privately. Signed receipt requests cannot replace that
+binding. Admission uses the existing durable prepared-state, revocation, fresh
+host/access/capability, capacity, cumulative-budget and duplicate-effect checks.
+No cached readiness grants authority. Four real PostgreSQL cases prove competing
+registry winners, permanent cancellation, broker insertion denial, exact signed
+workflow admission once and pre-start cancellation/release. Fifteen new fault/
+injection tests accompany these. Fixtures establish their test scope, not a live
+host, human approval or production database bootstrap.
+
+Independent native Google supplied-source PASS at the exact final revision:
+seven complete files and ten exact named PostgreSQL/test regions, 62.323 seconds,
+valid coverage/footer, no findings. Existing large PostgreSQL/test files were
+partially supplied; omitted code is not newly certified. Requested provider/model
+identity and confinement remain unproven. Preserve the initial 97e9740 CI failure
+from omitted audit event names and both original rollback-review FAIL receipts.
+Current corrected source/gates supersede them. Existing receipt schemas, database
+role grants/routines, planning contracts and all generated artifacts are unchanged.
+
+Next implement durable exact workflow-instance ownership and authenticated
+engine/executor dispatch with reconciliation before retrying an uncertain start.
+Reuse the merged GET observer, existing single-use leases, cumulative budgets,
+independent revocation/stop and usage authority. No second scheduler. Bootstrap,
+live tenant/credential scope, host capacity, authenticated executor session/start/
+stop/usage and external-effect reconciliation remain open. Cloudflare creation
+starts execution; obtain named pilot security acceptance, fresh live evidence and
+explicit exact human approval before a create call. A workflow instance is not
+runner OS process/descendant proof. Vercel app-local adapter remains open.
+
+Technology PR34/77a4374 and private complete HTML 8f99f177 are unchanged. Useful
+creator output versus the preserved hardware-sheet alternative, repair effort,
+time/actual cost, rendered design/buyer, mobile feedback/focus/touch, provenance/
+taste-memory, billing currency, native capacity/throughput/ROI and release remain
+open. No new purchase, paid fallback, worker, recurring schedule, funds or
+production operation was enabled; pilot ceiling unchanged. Cache retained
+for builds/reinstall recovery. Bounded storage used existing tooling, small local
+checks and cloud CI; no install/build/worktree fanout. Native review clients ended.
+
+Hub reconciled upstream b0f7b7d, preserving its font migration, actual deployed
+platform evidence and FrankX batch14 records. Two appended-record conflicts were
+resolved once; all upstream/new and own historical sections survive. The rolling
+FrankX summary follows its owning upstream; prior batch13 remains in ancestry.
+Other pickup prompts remain exact. Save the hub handover/ledger/current prompt
+and existing Swarm15, hub102 and private Ops149; archive no unfinished work.
 
 ## 2026-10-04: Exact workflow operation binding and Cloudflare observation merged (Codex)
 
