@@ -2,7 +2,17 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 16 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 16 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Current Starlight serving revisions verified (Codex)
+
+Read-only Vercel metadata binds current Protocol/Lab/Academy production aliases
+to READY deployments at 12d794a/854357b/abaf24b; all match GitHub main. Protocol's
+four source blobs equal the prepared repair base. Earlier observations stay dated,
+with no retroactive deployment or repair-acceptance claim. The latest canceled
+protocol preview belongs to foreign scoped-recall and is preserved. Draft39/HOLD,
+native trust, checkout assignment, browser/visual proof and all eleven requirements
+remain open. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-04: Protocol repair hypothesis verified; integration held (Codex)
 
