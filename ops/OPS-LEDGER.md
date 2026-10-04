@@ -2,7 +2,23 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 16 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 16 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Protocol repair hypothesis verified; integration held (Codex)
+
+Kernel draft 39/855644e stacks on frozen 38 and includes the exact four-file protocol
+patch against 12d794a. Actual 10/10 cloud states and full kernel CI pass; four blobs
+equal tested merge f9ffdc0. All four hypothesis states change 22 classes/4 labels,
+remove observed uppercase findings and retain viewport-width reflow. Blocked body
+becomes DejaVu Sans and mono Liberation Mono; normal sampled roles stay unchanged.
+Independent Step HOLD requires compiled/deployment, global rules/routes/native
+zoom and post-change loading evidence. This is no product apply or release PASS.
+
+No free assigned protocol lane established; preserve PR200/202/203 and foreign
+primary. Both new Bash hooks remain untrusted. All eleven requirements, Lab width
+failures and prior candidates remain open/partial. Disk 14.83% free, bounded; existing
+owned checkouts only. See [session](sessions/2026-10-04.md), [draft39](https://github.com/frankxai/starlight-design-intelligence/pull/39)
+and [protocol197](https://github.com/frankxai/Starlight-Intelligence-System/issues/197).
 
 ## 2026-10-04: Live typography observed; product repairs remain open (Codex)
 
