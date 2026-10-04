@@ -8,39 +8,36 @@
 
 ## Arcanea guard and platform security, 4 October 2026 (Codex)
 
-- Root draft [144](https://github.com/frankxai/arcanea/pull/144) remains 39362eb.
-  Six engineering workflows pass; both complete eight-file attempts have no verdict.
-  Keep 144 draft and 136 open; 143 main recovery and all other fronts are preserved.
-- Platform draft [45](https://github.com/frankxai/arcanea-platform/pull/45) is b015d48,
-  base b4738df9, 102 files / full diff 1efb7bff. New eight-file MCP continuation
-  upgrades SDK 0.5.0 to pinned 1.32.0 and scopes patched Hono/node-server/rate-limit
-  to SDK v1 parents. Earlier Next/config 16.3.8, Vitest 3.2.7, FTP 5.2.1 and
-  Handlebars 4.7.9 critical repairs remain. No blanket major-version overrides.
-- The actual stdio CLI has 28 tools / five resources. Advertised schemas validate
-  before state mutation; integer values, explicit sessions, UUID creation IDs,
-  zero link strength and explicit tool failures. Real CI catches and repairs SDK
-  malformed-call error classification. Invalid raw JSON-RPC framing remains open.
-- Both Node 20.20.2/22.23.3 compiled jobs pass: each 3,329 tests / 3,321 pass /
-  8 skip / 0 fail. All seven actual SDK-client/CLI stdio tests and four Vitest
-  startups pass per runtime. Native suite 37164191434 fails only its blocking audit.
-- Current audit 111323643506: 289 = 32 low / 132 moderate / 125 high / 0 critical,
-  exit 1. Five fewer high findings since 8167963; no clean-security or reachability
-  claim. DNS rebinding advisory excludes stdio. Web lint stays 50 errors / 227 warnings.
-- Packages 37164191482 and quality/build 37164191504 pass, 129 Next routes.
-  MVP/apps fail lint, deployments skipped. Tested merge 86280919 has exact parents,
-  whole tree equality and all 101 present changed source blobs verified.
-- Final MCP lock retains all 52 importers; other 50 importer blocks and 2,135
-  snapshot blocks retain bytes. Five generated snapshots, five unreachable replaced
-  MCP snapshots removed. Both historical absent ai-agents/contracts importers remain.
-- Current 118,788-byte complete eight-file delta/current implementation review and
-  predecessor full 149KB review each time out at 240s: no assistant/result/verdict,
-  zero tools. Unchanged task history/dependencies/lock blocks are disclosed omissions.
-  Earlier 9+2-file security/classification WARN scopes remain separate. Full 102-file
-  review, graph persistence, mcp-client TODOs, auth, canon and live creator gates stay open.
-- [Issue 44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5974943426) and [estate issue 142](https://github.com/frankxai/arcanea/issues/142#issuecomment-5974949974) retain results.
-  Handover session/current pickup updated; other-goal records through 7677827 retained.
-  PR 45 stays draft; estate goal active. No main/npm/cloud/plugin/account/deploy/cleanup
-  acceptance. Next repair compatible high findings and actual lint; no unchanged review retry.
+- Root144/39362eb draft,136/139 open and143 main recovery remain separate fronts.
+  Original branches, source provenance and all other estate goals stay preserved.
+- Platform [draft45](https://github.com/frankxai/arcanea-platform/pull/45) is
+  e3d2d8f/base b4738df9,108 files; complete diff f18b5db8. Actual MCP client now
+  performs SDK1.32.0 stdio/HTTP/legacySSE/nativeWebSocket discovery and calls;
+  formerly no-op transports and fabricated results are removed. Complete responses,
+  startup/request cancellation/deadlines, denial/retry, snapshots and heartbeat.
+- Reproduced real HTTP401 masking and concurrent reconnect/shutdown defects fixed.
+  All20 real client cases pass Node20.20.2/22.23.3, with prior7 server wire tests.
+  Full3349/3341pass/8existing skips/0fail/0cancel each; all4 Vitest startups pass.
+  Actual creator journey survives restart and matches direct SDK; no model benchmark.
+- Packages37167886411/Quality37167886417 pass, Next16.3.8 builds129 routes.
+  Suite37167886404 fails audit289=32low/132moderate/125high/0critical, exit1.
+  Web lint50errors/227warnings; MVP/apps fail, deployment skipped. No relaxed checks.
+- Tested merge1ed58e05 exact parents/tree and all107 present changed blobs verified.
+  Client lock/dependency graph unchanged; prior52-importer preservation retained.
+- Exact eight-file source review Grok4.7-build-fast/high PASS/0findings,413.534s.
+  Packet70901bytes/0daad21c; native USD0.2799288 unreconciled. All7 full current
+  source/test/docs +task append/support excerpts; full108/SDK remainder/history
+  omitted. SDK WebSocket close returns before close event; wrapper follows it.
+  This source verdict supplies no whole-integration/GitHub/browser/production approval.
+- Previous changed-source review timeouts supply no verdict; separate7.11s response
+  diagnostic proves only its response. Tools0/MCP7disabled/global config unchanged.
+  Workers terminal; no local dependency/build/browser/server or watcher.
+- [Issue44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5975453700) and hub session/current pickup bind both saves.
+  Foreign hub records through a76b1c3 and site87/f84c3093 stay unchanged. Closed root
+  issue142 gets no unrelated new platform comment. Full goal remains active.
+  Next compatible high repairs/actual web lint behavior/full integration review,
+  graph/agent persistence, OAuth/authenticated creator/canon/Supabase/Vercel/plugin
+  acceptance. PR45 draft; no main/npm/cloud/live account/branch cleanup acceptance.
 
 ## Arcanea release recovery on main, 3 October 2026 (Codex)
 
