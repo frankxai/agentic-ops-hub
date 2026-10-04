@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 14 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 15 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Font artifacts decoded; migration verified in draft (Codex)
 
@@ -222,40 +222,49 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-Continue the full six-audience website goal, task
+The full six-audience website goal remains active, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, under
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 14 source: `c0500f4bc8acfcce23a63ebf7aec1758080d4e31`; article revision `939d648c`.
-The frozen register covers 278 URLs and 769 variants: 59 prepared revisions,
-four observed production corrections and 215 unreviewed articles. All 59 hashes
-match; 63 receipts preserve earlier work. There are 59 held social brief sets.
+Batch 15 source `2543a02aac38d6b2a30f533ad222841bdc3e3c3f`; exact article revision `5dd5e5b4`.
+The register covers 278 URLs/769 variants: 63 prepared revisions, four observed
+production corrections and 211 unreviewed. All 63 hashes match; 67 receipts
+preserve earlier rows. There are 63 held social/visual brief sets.
 
-Four guides now cover enterprise pilots, ACOS team deployment, creator context
-and the FrankX ecosystem. They replace unsupported staffing, capacity, rollout,
-intelligence and improvement claims with actual public source snapshots and
-useful synthetic tasks. Current ACOS 11.0.0 licensing and SIS 8.3.0 are separated
-from installed-runtime evidence. Template, editor and folder alternatives remain
-serious comparisons. Five legacy ACOS diagram embeds become readable tables;
-all asset files remain unchanged. No new image or commercial link is activated.
+Four rewrites cover GPT-5.5, Gemini 3.5 Pro availability, DeepSeek V4 and Grok 4.6.
+Current official capabilities, historical vendor results and proposed evaluations
+are distinct. Unsupported native audio/video, stale flagship routing, forecast
+availability and universal savings claims are removed. The checked catalogs show
+newer OpenAI recommendations, stable Gemini 3.8 Flash, DeepSeek Flash backing
+V4.1 and xAI recommending Grok 4.7. These are documented source observations,
+with no own performance ranking or model trial. Each article starts with a useful
+migration, producer lesson or repair task and a serious editor/developer baseline.
 
-Four MDX compiles, 16 source links, eight arithmetic checks and nine corpus tests
-pass. The independent enterprise critique returned PASS with four suggestions
-reconciled against exact text. Two creator routes timed out; that critique remains
-open. Batch 13's missing voice critique also remains open. No independent live
-source, render, security, rights, commercial, SEO or publication acceptance follows.
+Four MDX/GFM compiles, four authoring-source resolutions, one pinned production
+dynamic-route proof, 15 arithmetic checks and nine corpus tests pass. Original
+stable metadata, LearnHubCallout slugs and all assets remain. Production's corrected
+Grok model link is preserved against current baseline `2e6e8e73`; frozen register
+references remain separate. Both pinned DeepSeek MIT LICENSE files were read.
+No affiliate catalogue, issued URL or qualification date changes.
 
-Storage remains below 15% free. Text and small tests continue; installs, new
-worktrees, media and new agents remain held. CUA has no browser surfaces;
-borrowed Next/TypeScript targets are absent and untouched. Full gates, current
-desktop/mobile capture, independent acceptance, a surgical production port and
-exact green main deployment remain required. No website source push or deployment
-occurred. All 23 foreign edits remain unstaged. Policy loading does not establish
-runtime enforcement. This task's writable-vault taste synchronization is pending.
+Two isolated Poolside reviews and one Qwen alternate timed out without a verdict.
+All input/revision hashes and failures are retained. Exact-revision critique remains
+open, along with batch 13 voice and batch 14 creator review. No live-source,
+rendered, security, rights, commercial, SEO or publication acceptance follows.
+Earlier frontier overviews need a deliberate freshness follow-up, preserving their
+old hashes and revision history. No new visual or public post is produced.
 
-This handover updates only the FrankX ledger/prompt sections and appends the
-dated session from fresh hub main `cacdc59b`. Other fronts and earlier history
-remain intact. Hub CI proves documentation only. Continue the remaining articles
-and recover admitted release capabilities without reducing the original outcome.
+Storage remains below 15% free. Text and small checks continue; installs, new
+worktrees, media and new agents remain held. CUA is empty; borrowed Next/TypeScript
+targets are absent and untouched. Full gates, responsive desktop/mobile capture,
+independent acceptance, surgical production integration and exact green main
+deployment remain required. No website source push or deployment occurred.
+All 23 foreign edits remain unstaged. Policy loading is separate from demonstrated
+runtime enforcement. Task taste synchronization awaits a writable vault interface.
+
+This handover reuses the free owned worktree from fresh main `b0f7b7d8`. Only the
+FrankX ledger/prompt sections and appended dated session change; other fronts and
+earlier bytes remain intact. Hub CI proves this documentation only. Continue the
+remaining register and admitted release recovery without reducing the goal.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
