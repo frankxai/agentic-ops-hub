@@ -2,10 +2,25 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (workflow deployment admission readback merged/source review reconciled; editable AI-factory workbook/source union and native save/reopen verified; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 20 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (actual recoverable creator case and qualified outcome review saved/cache retained; Swarm deployment readback merged; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 21 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-04: Recoverable first-wave creator plan produced; cache retained (Codex)
 
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, [Technology30](https://github.com/frankxai/starlight-technology/issues/30), Swarm15, hub102 and private Ops149. Full Queen/subscription/API/cloud/team/20+brand/creator offering objective remains active.
 
+The accepted Creator Studio at77a4374 produced an actual private Netherlands first-wave planning case, editable plan, complete JSON/Markdown report and same-task incumbent hardware-only sheet. Thirteen imported source/data files match exact Git blobs. The complete report's hardware object equals the incumbent's; the additional context, recurring inputs, maker comparisons and runtime routes recover from exports. Eight real-case checks cover input recovery, changed-input recalculation, unknown costs, matched contingency, forged computed verdict removal and execution-directive rejection. First standalone alias/fileURL/missing encoder-timestamp harness failures are retained. No repository source changed.
+
+The complete report is63,642bytes, SHA736e1019dc2afee32f9effc5dbaff1415f949307d8f7268eb8fec8c75223e0c0, only1,894bytes below the64KiB import cap. Editable plan d729ac33 and complete Markdown e337bdc0 are saved alongside incumbent JSON84bbbe87 and Markdown0d8c91a3 in the existing private creator-cost-extension/outputs/source-task leaf. Private actual scenario totals and business context remain there. A separate lead-authored decision memo explains reuse, hardware quote decisions, native/API versus tool-host costs, first two repository outputs and evidence required before scaling. Automated generation timing proves its own scope; actual buyer repair/time, account-attributed costs and ROI remain unmeasured.
+
+Native Google outcome critique covers five complete privacy-filtered plan/report/Markdown/incumbent/evidence artifacts, with nonce, source, report hash and final coverage footer. The original observer returns reviewCompleted:false because it compares raw frank-first labels with transported [USER]-first labels. A separate adjudication verifies the exact sanitizer, prompt hash, actual ordered transported labels, all original artifact hashes and terminal success. It preserves the original failure and native PASS with two warnings. This is qualified frozen-output critique, not complete source/security/design/buyer acceptance. No unexpected tool steps occurred; the owned native client stopped. Requested provider identity and inherited permissions are not attested confinement, and remote cancellation is not proven.
+
+Lead disposition clarifies Framework selection as an unpriced editable preference and model API shares as distinct from unchanged tool-host workload. The raw memo's environmental disqualification of RTX5090 is unsupported: actual constraints are empty. Unified memory does not prove backend/model throughput; API review does not guarantee unthrottled access. GMKtec's recorded same-currency listing exceeds the illustrative hardware ceiling, while its delivered total/verdict remain unknown. The corrected memo is lead-authored without a second independent review. Product follow-up: surface listed overshoot in existing purchase/report reasons without converting incomplete delivered evidence into a purchase verdict; test price age, currency, quantities and recovery. Preserve all original artifacts.
+
+Existing Vercel native-Git preview deployment dpl_3YMovKsRp8NNvhTFgWTCgqgtfspE is READY and binds77a4374; /studio HTTP200. Exact CI37167418720 remains successful in its153-unit/51-page/34-browser/11-editorial scope. CUA apps/browsers are empty and iab unavailable: no new rendered or interaction acceptance. Design-sight targeted Technology reports unknown brand, a Grok-only branch rule and16% disk floor; estate mode selects unrelated Arcanea. Those discovery failures are recorded, with no foreign edit, new visual or design PASS. The indexed canonical storage sensor is missing. Loaded user/repo/machine policies remain distinct from executable runtime enforcement.
+
+Frank asked to reconsider cache removal because builds may need it. Retain npm completed downloads for reinstall/offline recovery. Current Creator Studio uses pnpm10.15.1, its existing node_modules and separate pnpm store; it does not need a purge to finish this planning work. Fresh disk reading is14.795% free. No purge approval, install, new worktree, local full build/browser/model/media run, purchase, spend fallback, scheduler, worker or production activation was inferred. Existing verified cloud CI and preview remain the build path.
+
+Reuse unchanged complete HTML8f99f177, workbook314fa9fa and merged Swarm PR36/mainf5ccf6a. Trusted entrypoint/caller/executor/create intent/dispatch/effects-time/uncertain settlement/security/live mission remain open. Native quota/invoices, hardware/power/throughput, mobile/focus/touch/reduced motion, independent design/buyer/security/privacy/licensing/commercial release, visual schema/taste synchronization and accepted creator/business value remain required. Current hub main is integrated normally; incoming FrankX batch21 and other-owner sections/prompts are compared and preserved.
 
 ## 2026-10-04: Workflow deployment readback merged; build cache retained (Codex)
 
@@ -47,7 +62,6 @@ The previous foreign handover lane was released; current main552e11ea was integr
 
 Technology PR34/77a4374, its existing preview and153-unit/51-page/34-browser evidence remain unchanged. Swarm PR35/main2b4e159 and exact495/29/PG17/build/dry-run proof remain in their scope. Next prove a named useful creator mission against the existing hardware-sheet alternative, recording output, repair/time and actual attributable cost. Trusted workflow entrypoint/deployment enforcement, durable create intent/authenticated dispatch, Vercel app-local adapter and uncertain external-effect recovery remain required before a live worker. Mobile feedback/focus/touch, independent rendered design/buyer/security/privacy/licence/commercial gates, actual billing/native quota/hardware throughput/ROI and release remain open. Policy loading is distinct from runtime enforcement.
 
-
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 
 All eleven requirements remain open/partial. Fresh native hooks/list still marks
@@ -83,9 +97,6 @@ primary. Both new Bash hooks remain untrusted. All eleven requirements, Lab widt
 failures and prior candidates remain open/partial. Disk 14.83% free, bounded; existing
 owned checkouts only. See [session](sessions/2026-10-04.md), [draft39](https://github.com/frankxai/starlight-design-intelligence/pull/39)
 and [protocol197](https://github.com/frankxai/Starlight-Intelligence-System/issues/197).
-
-
-
 
 ## 2026-10-04: Durable exact workflow-instance ownership merged (Codex)
 
@@ -372,7 +383,6 @@ active objective ledger. No unfinished work archived. Free disk crossed below15%
 queen report is preserved. Review and small text changes proceeded; cache purge remains
 unapproved and no local heavy or disk-growing workload started.
 
-
 ## 2026-10-04: Queen recovery integrated; workflow ownership reconciled (Codex)
 
 Continue source task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` and the full
@@ -444,7 +454,6 @@ lanes and normally reconciled newer main deb852c, preserving FrankX batch 10,
 mobile workspace, shell-adapter/native-trust and all other sessions/prompts.
 The hub ledger/current prompt and existing Swarm15, Ops88, private Ops149 and
 hub102 issue records carry the pickup. Full goal remains active.
-
 
 ## 2026-10-04: Kimi planning and actual report recovery verified (Codex)
 
@@ -672,11 +681,6 @@ revision; continue preview, measured quality/usefulness and native owner rollout
 All eleven estate requirements remain active. No owned worker/server remains.
 See [October4 session](sessions/2026-10-04.md) and current pickup prompt.
 
-
-
-
-
-
 ## 2026-10-04: Creator runtime choices and matched metered contingency (Codex)
 
 Technology draftPR34 is `082988a20532c5c187cad76e6a1cc116aca554fa`. Editable reportv3 adds sourced native/API host
@@ -696,7 +700,6 @@ retains all other records and saves prior fadd4f7 provenance plus this slice in
 session04. Technology30/hub102/privateOps149 remain the tracking issues. Cache kept,
 local heavy build/browser RAM-held; no subscriptions/API fallback/schedule/workers/
 production activated. Full Queen/team/brand/creator outcome and useful mission open.
-
 
 ## 2026-10-03: Creator complete report and remote recovery verified (Codex)
 
@@ -720,7 +723,6 @@ current render acceptance pending. Main9263c1d and all other handovers/prompts a
 preserved. See today's session, Technology30, hub102 and private Ops149. Final-source,
 rendered design/buyer/privacy/licence/commercial and useful Queen mission gates remain.
 
-
 ## 2026-10-03: Creator exact input and remote source build (Codex)
 
 Technology draft PR34 is f6fa654e. Exact decimal parsing and draft/restore behavior
@@ -740,8 +742,6 @@ SIS160 merged; swarm15 trusted activation and the full useful creator/brand/busi
 outcome remain open. Wider design/buyer/security/privacy/licence/commercial checks
 remain pending. Current main 7ffaf455 and all other handovers/prompts are retained.
 See today's session and Technology30/hub102/private Ops149.
-
-
 
 ## 2026-10-03: Actual community captures and sentence-case repair (Codex)
 
@@ -806,7 +806,6 @@ today's session and issue30. Native quota data stays private in Ops issue149.
 Hard tool confinement, wider design/buyer/security, commercial acceptance and
 useful autonomous mission remain open. Cache preserved; no production promotion.
 
-
 ## 2026-10-03: Native Codex design execution and recovery (Codex)
 
 [Kernel PR31](https://github.com/frankxai/starlight-design-intelligence/pull/31)
@@ -861,7 +860,6 @@ privacy/licence/commercial gates remain open. All owned servers/workers stopped.
 See today's session, Technology issue30 and the current prompt. Full objective
 remains open; Ops PR157 stays draft and unactivated.
 
-
 ## 2026-10-03: Creator Studio cost source prepared; cache purge held (Codex)
 
 Frank requested consideration of build needs before cache deletion. No cache was
@@ -875,7 +873,6 @@ independent acceptance and canonical integration remain pending. No new install,
 service/model run or live release. See today's [session](sessions/2026-10-03.md),
 [issue30](https://github.com/frankxai/starlight-technology/issues/30) and the current
 prompt. The full AI-factory objective remains open; Ops PR157 stays draft/unapproved.
-
 
 ## 2026-10-03: Native PR model binding and resource recovery (Codex)
 
@@ -958,61 +955,65 @@ pilot ceiling; quality, incomplete charges and dispatch remain unproven. Codex
 Cloud read-only metadata worked; existing ready results were preserved. No
 enabled Computer Use browser was available for native-provider review.
 
-
-
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
 Full six-audience website goal remains active, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 20 source `03e955cefff9e0e3fdef99e41b7203a723ac5a91`; prepared and critiqued articles `51a1fb661b1e3077d419320f951442b106271ebe`.
-Across 278 slugs/769 variants: 83 prepared revisions, four observed production
-corrections and 191 unreviewed articles. All 83 content hashes match. There are
-87 progress receipts preserving 83 prior rows and 83 held social/visual sets.
+Batch 21 source `1fa1a2724ab5b87829510d3fc6f17a33c78a496e`; initial articles `34439ba1097a7cd902340447c054d42848f8a1a5`,
+refined articles `7439f8c222cfff6671e563ad77d1f5a61d3b7ab7`. Across 278 slugs/769 variants:
+87 prepared revisions, four observed production corrections and 187 unreviewed
+articles. All 87 content hashes match. There are 91 progress receipts preserving
+87 prior rows and 87 held social/visual sets.
 
-Four substantive ACOS overview, complete, setup and workflow guides remove
-mixed versions, universal install times, unverified first-person results,
-automatic enforcement and sixteen-hour weekly saving claims. Useful authored
-release copy, an operations report, a welcome draft, derivatives and a hypothetical
-code finding retain approved source, credit conflicts, unknown analytics and
-recovery after failed sessions or uncertain sends. Folder/editor/export/macro/
-spreadsheet processes remain serious alternatives. No actual model, installer,
-workflow, connector, hook, listening, revenue or user-success trial is claimed.
+Four substantial getting-started ACOS, personal Claude assistant, agentic-AI and
+Claude/ACOS/MCP setup guides replace fixed model/context/count/timing claims,
+unverified personal results, fake connector commands and automatic enforcement
+or publication promises. An explicitly invented producer lesson supplies useful
+authored copy, a source/credit conflict, durable decisions, handoff and a draft
+code finding. Approved revision, member/public access and unknown send status
+remain distinct. Existing editor/folder/fixed workflow and dashboard alternatives
+are assessed. No executed model, installer, skill, connector, listening or user
+success is claimed; a documented MCP command is unexecuted.
 
-Pinned public ACOS `8a481b6c` is full source 11.0.0; separate core plugin 1.0.0 has
-five skills. Actual tree counts: 174 non-empty Claude skills, five placeholders,
-85 top-level commands, 69 profiles, nine shell hooks and 32 activation entries.
-Apache 2.0 original software/docs retain historical MIT grants and other terms.
-Exact remote source CI 36966595546/build job pass; release job skipped. This
-evidence does not verify a reader's installation or FrankX deployment.
-The installer uses CLAUDE_HOME for Claude. Dry run previews destinations before
-conflict preflight, differing files/symlinks refuse, identical copies skip and
-state still writes. Copied hooks require active wiring and failure verification.
-Current official docs distinguish prompt context, session permissions and hooks.
+Actual official Anthropic, Claude Code, Vercel and GitHub documents ground agent
+architecture, scoped configuration and account access. Full ACOS 11.0.0 versus
+five-skill core 1.0.0 uses explicit batch 20 source/hash/licence receipts; main
+was freshly observed at the same pinned `8a481b6c`. Hosted Managed Agents do not
+prove a local installation. Prompt memory differs from effective permissions;
+manual skill invocation differs from model selection and fixed keyword matching.
+Vercel local registration remains a remote OAuth service with account access.
+GitHub local read-only mode does not prove every client or actor is read-only.
 
-Four MDX/GFM compiles, seven source links, twelve Decimal checks and nine corpus
-tests pass. Assumed current/assisted effort is 675/505 minutes, gross 170 minus
-90 upkeep/recovery = 80 net; two extra 40-minute reviews erase it. No measured
-time or cash-saving claim. Eight generic vendor-homepage affiliate wrappers and
-unqualified price/bundle claims removed; no catalogue or issued referral changed.
-All four original bodies match production `f9811d47`; stable metadata, URLs and
-asset files remain. Improved production scientific corrections remain untouched.
+Four MDX/GFM compiles, ten internal source resolutions and nine corpus tests
+pass. Three original bodies match production `f9811d47`. The agentic-AI original
+differs; its existing August field-guide link is retained with explicit dated
+limits. That production-only route has an actual raw-source hash, not live
+navigation or current recommendation acceptance. Stable metadata, URLs and
+existing asset files remain; improved scientific corrections stay untouched.
+Affiliate catalogue, issued referrals and qualification dates are unchanged.
 
-Poolside distribution returned valid PASS with three retained findings. One quote
-belongs to the other article, one quote is absent and one distinction is already
-explicit; lead text comparisons remain alongside the original verdict. Poolside
-creator and separate NVIDIA creator requests both timed out. All three are
-terminal; no creator verdict inferred. Exact-revision publication acceptance,
-earlier review gaps and Higher Self premium founder approval remain open.
+Initial exact-revision Poolside returned malformed JSON with visible REVISE
+wording/four recommendations, not a valid structured verdict. Two proposals
+conflate audio plugins or existing native file tools; original output and text
+reconciliation remain. Two source clarity refinements were made. Refined NVIDIA
+finished at length without final critique/verdict; private original is retained
+and public receipt omits intermediate reasoning. Both requests are terminal.
+Strict independent acceptance, earlier review gaps and Higher Self premium
+founder approval remain open. No publication acceptance is inferred.
 
-Build admission HOLD: 8068/8192/3972 MB, CPU 50%, 12/12 runtimes and new agents
-paused. Disk remains below 15%; actual CUA apps/browsers empty and Next/TypeScript
-targets absent. Only text/reads/small checks used. No install, app build, new
-worktree/agent/media, foreign cleanup, source push or website deployment. Full
-gates, responsive capture, independent source/design/security/commercial review,
+Actual initial build admission BOUNDED: 9248/8192/5152 MB, CPU 33%, 12/12 runtimes,
+one parallel workload and new agents paused. Disk remains 14.80% free; CUA apps/
+browsers empty and Next/TypeScript targets absent. Only text/reads/small checks
+used. No install, app build, new worktree/agent/media, foreign cleanup, source
+push, public post, website deployment or persistent worker/tab. Full gates,
+responsive capture, independent source/design/security/commercial review,
 surgical production integration and exact green deployment remain required.
-Taste writable-vault sync and frontier freshness remain open. All 23 foreign
-edits remain unstaged. Enabled source secret scans pass 39.74 KB and 99.68 KB.
-Free owned hub worktree reused from main `acaa57b9`; only FrankX regions/sweep
+Taste writable-vault sync and frontier freshness stay open; 23 foreign edits
+remain unstaged. Enabled source scans pass 38.17 KB, 869 bytes and 99.14 KB.
+The records hook initially blocked on a public Git commit hash. Actual public
+lookup verified it; relabeling metadata retained the value and the enabled
+recheck passed. No hook, exception, ignore rule or bypass changed.
+Free owned hub worktree reused from main `4896bc38`; only FrankX regions/sweep
 and session append change. Other fronts/history preserved. Hub CI proves
 documentation only; the complete goal stays active.
 
@@ -1194,7 +1195,6 @@ identity was redesigned and no universal enforcement is claimed.
 ||||||**2026-08-10 Queen 10h wave-2 start (c940):** Disk **~52.7 GiB** PASS floor; RAM **~1 GiB free TIGHT** (serial only). Prior 08-09 window PASS. Mission `ops/sessions/2026-08-10-queen-10h-mission.md`. Prod main advanced to security #452 `ee7e7524` — prove Production deploy. R1 live. Scorecard `fleet/reports/best-state-scorecard-2026-08-10.md`. GenCreator Vercel block HOLD. ClickHouse **88.6%**. No wipe/DNS/Railway mutate.
 ||||||**2026-08-09 Queen 10h autonomy (start · DESKTOP-1B4ICID):** Window ~04:30–14:30 local. Disk **55 GiB free** (floor PASS). Mission: `ops/sessions/2026-08-09-queen-10h-mission.md`. #36 queues **CLOSED** (July actives historical; dispatch_gate blocked on Book heartbeat). Packet6 report: `fleet/reports/packet6-dirty-2026-08-09.md` (vercel dirty 434 NO-SHIP; FrankX 130; Arcanea 101; ops 66). ClickHouse **4352/5000 MB (87.0%)** still P0 #35. Live: frankx.ai / founder-signal / gencreator **200**. Continuation: finite Queen cron ticks. No DNS/Railway resize/dirty wipe.
 
-
 ## Estate action — 2026-08-07 (C940 Hermes)
 
 - **Queues (#36):** `C940-CLI-MAX-20260717` → historical `integrated` (PR #19 / `455b4e1`). `BOOK-CLI-20260717` → historical `closed-unmerged` (FrankX website PR #326 closed). Both `active` arrays empty. Unattended/remote dispatch remains **blocked** until YogaBook publishes a fresh self-heartbeat (<24h) and new owner-approved items exist.
@@ -1217,8 +1217,6 @@ identity was redesigned and no universal enforcement is claimed.
 - **Cecilia:** release-hygiene [PR #2](https://github.com/frankxai/cecilia-chat/pull/2) → `8a388314` / `dpl_EYUvimvyJ8wBj6Nd8HjcQreHhpys`. The local-only bilingual reflection/copy flow passed preview and production QA with zero interaction requests; CSP/HSTS/COOP/CORP and related headers cover HTML, Next assets, `/agents.md`, and `/llms.txt`; `www.cecilia.chat` redirects to apex with HTTP 308.
 - **Quality baseline:** `arcanea.dev`, `arcanean.org`, and `arcanealabs.com` scored Lighthouse 100/100/100/100; `cecilia.chat` scored 98/100/100/100. All four CLS values were `0`.
 - **Human-only IONOS action:** `aiarchitectacademy.com` still resolves to `217.160.0.152` / `2001:8d8:100f:f000::253`; `disruptivepassiveincome.com` still resolves to `217.160.0.99` / `2001:8d8:100f:f000::226`. No IONOS credential is present. At IONOS, change only apex and `www` A records to `76.76.21.21`, delete both legacy AAAA records per domain, set TTL `600`, and preserve MX/TXT/CAA and unrelated records. Acceptance and rollback are documented in `docs/ops/DOMAIN-RECOVERY-2026-07-18.md`.
-
-
 
 ## Command Center dispatch execution — 2026-07-16 (C940)
 
@@ -1411,7 +1409,6 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
-
 
 ## AI-factory full report: execution placement and complete source critique
 
