@@ -76,37 +76,43 @@ Save each completed slice to this hub plus existing product issue; full goal act
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the complete
-six-audience website, editorial, SEO, affiliate, visual and social objective.
-Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-14.md`, its exact-revision receipts and
-`article-review-progress.json` in `docs/ops/editorial/`.
-Authoring source: `c0500f4bc8acfcce23a63ebf7aec1758080d4e31`, branch `agent/codex/editorial-renewal-20261003`.
-Preserve batches 1–13, all 23 foreign edits and newer production improvements.
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
+six-audience website, intelligence, frontier, SEO, affiliate, serif visual and
+social outcome. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-15.md`, both exact-revision
+evidence files and `article-review-progress.json` in `docs/ops/editorial/`.
+Authoring source `2543a02aac38d6b2a30f533ad222841bdc3e3c3f`, branch `agent/codex/editorial-renewal-20261003`.
+Preserve batches 1-14, all 23 foreign edits and newer production improvements.
 
-The register has 59 prepared revisions, four observed corrections and 215
-unreviewed articles; all prepared hashes match. The latest guides cover a support
-pilot, team permissions, approved creator context and useful ecosystem choices.
-The synthetic examples and proposed recovery design are not installed runtime
-observations. Current production baseline `51f259c6` differs from the frozen
-register references `badd9c44`/`7fe4fde1`. Preserve production assets and stable
-metadata. Five legacy diagram embeds were replaced with tables, not asset deletes.
-No affiliate qualification or issued link changed. Complete exact-revision creator
-critique after two timeouts and the earlier missing batch 13 voice critique.
+The register has 63 prepared revisions, four observed corrections and 211
+unreviewed articles. All prepared hashes match. Four new model guides distinguish
+documented capabilities, historical vendor results and proposed useful tasks.
+Current public sources recommend newer OpenAI models, stable Gemini 3.8 Flash,
+DeepSeek V4.1 Flash and Grok 4.7. Earlier prepared overview freshness needs a new
+receipt and retained history. No model/audio/video/patch trial was performed.
+Source critiques timed out twice on Poolside and once on Qwen. Obtain a valid
+independent exact-revision critique, plus earlier batch 13 voice and batch 14
+creator reviews. Preserve every failure and do not infer release acceptance.
 
-Storage is below 15% free. Continue text and small tests; do not install dependencies,
-create worktrees, generate media or start new agents. The existing browser connection
-question remains unanswered. CUA is empty; borrowed Next/TypeScript targets are absent.
-Recover admitted owned dependencies and responsive capture without deleting files
-or interfering with foreign tasks.
+Current batch production baseline `2e6e8e73` differs from frozen register
+`badd9c44`/`7fe4fde1`. Preserve the corrected Grok `/llm-hub/grok-4-6` route,
+original assets/metadata and both LearnHubCallout slugs. No affiliate account
+qualification or issued URL changed. Resolve real partner qualification before
+commercial activation. Social and visual sets remain held, with no generated
+image. Taste retrieval does not establish this task's writable-vault sync.
 
-Then complete full gates and independent rendered/security/commercial review,
-port accepted changes against fresh production main, merge normally and verify
-the exact green deployment. Continue the remaining article register while held.
-Refine visual/social work after admission with sentence-case serif typography,
-sidecars, both ledgers and taste synchronization. Higgsfield MCP/skills are banned.
-Public social posting and premium founder approval remain human-gated. Save
-progress in this hub and issue #252, preserving the private objective ledger and
-unfinished work. Article counts and documentation CI cannot close the website goal.
+Storage remains below 15% free; text and small tests only. Do not install
+dependencies, create worktrees, generate media or start agents. CUA is empty;
+borrowed Next/TypeScript targets remain absent. The earlier browser connection
+question remains unanswered. Recover admitted owned dependencies and capture
+without deleting files or interfering with foreign work. Complete full gates,
+independent responsive/design/security/commercial acceptance, surgical production
+port, normal merge and exact green deployment. Continue article work while held.
+
+Use sentence-case serif visuals, exact prompt sidecars, both ledgers and taste
+synchronization after admission. Higgsfield skills/MCP are banned. Public social
+posting and premium founder approval remain human-gated. Save completed slices in
+this hub and issue #252 and preserve the private objective ledger, original intent
+and unfinished work. Article totals and documentation CI cannot close the goal.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
@@ -119,7 +125,29 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Current font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
+Current live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
+is frozen, owned branch agent/codex/starlight-typography-runtime-20261004.
+Re-run guard/check with explicit paths and separate ownership before writes.
+Actual18/18 CI37180850730 and full CI37180850751 pass61Node/15Python/53browser-
+process/audit0; three blobs equal tested merge b53e6bc. Independent Step exact-
+head diagnostic-source PASS. Read private starlight-live-typography-c5af15c and
+verification/public-records receipts, preserving earlier raw/log/review evidence.
+
+Nine response hashes equal the prior font census; normal/fresh-recovery sampled
+faces agree. Lab width405/390 and328/320 unresolved, with clipped map candidates
+not causal proof. Protocol has22 uppercase text elements and blocked-font sans/
+mono becomes Liberation Serif; owner main12d794a lacks generic theme tails.
+Desktop raw shift0.354444 identifies footer impact, cause/CLS unknown. Existing
+Lab82 and protocol197 carry observed evidence; closed protocol22 is historical.
+Claim an admitted product lane and bind a preview SHA before the smallest repair.
+Preserve current font/identity roles and map69; verify visual/fallback/native zoom/
+keyboard/touch/recovery/performance under owner contracts. No product source or
+adopter pin changed; named human kernel promotion and all eleven requirements
+remain open. Native Bash trust is intent only; test after Frank confirms both.
+Disk14.97%bounded: no new deps/worktrees/media/local browsers/models/swarm. Continue
+the useful creator/artifact work and estate rollout within admission.
+
+Preserved font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
 is frozen; canonical owned kernel lane agent/codex/font-artifact-denial-20261004.
 Before writes route/guard/check and ownership again. Original full-manifest four-byte
 WOFF2 acceptance is reproduced; decoded check now denies it. Final67/69Node,
