@@ -2,7 +2,13 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 9 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 9 saved locally/release held) · Queen8h session repair draft161/CI pass, review/runtime open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Queen eight-hour campaign and session freshness repair (Codex)
+
+[agentic-ops draft161](https://github.com/frankxai/agentic-ops/pull/161) at `07ba9aa` preserves actual event activity in bounded session scans. Twelve tests and exact-head Linux CI37168725310 pass; six targeted regressions fail on the original parser; private real-rollout conformance improves one to six recent sessions. Secret hook passes. Independent review, cold/warm latency and shared-runtime rollout remain open. Issue134 receipt saved.
+
+Eight-hour goal `01a102ed` remains active until 09:00:23 UTC. Five other native owners are active and preserved. All 137 cloud tasks inventoried: 135 ready, two errors, zero running; individual integration unverified. Native UI unavailable. PP admits one interactive workload and pauses new swarms; storage about15.3%, Claude quota critical until about04:00 UTC in latest snapshot. No new agents/services/worktrees or shared-runtime changes. See [session](sessions/2026-10-04.md) and current campaign prompt.
 
 ## 2026-10-04: Shell design adapter installed; native trust pending (Codex)
 

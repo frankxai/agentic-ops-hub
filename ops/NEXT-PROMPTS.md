@@ -17,6 +17,18 @@
 
 ## Current
 
+### Queen: continue the active eight-hour campaign with admitted work
+
+Continue goal `01a102ed-873c-7b92-b37b-4f299c63813b`, deadline 2026-10-04 09:00:23 UTC (11:00 Amsterdam). Preserve the original terminal/session/pipeline and autonomous execution request. Read this session's [receipt](sessions/2026-10-04.md) and private campaign packet. Full goal stays active until its authorized duration and intended outcomes are handled.
+
+Root source branch `agent/codex/session-freshness-20261004` lives in the leased existing `starlight/worktrees/agentic-ops-pr-review-routing-20261003`; [draft161](https://github.com/frankxai/agentic-ops/pull/161) head `07ba9aa78541be35b7e7c1d81b8b9d751936fb5a`. Twelve tests and Linux CI pass. Independent exact-head source review and cold/warm latency measurement precede runtime promotion. Shared bridge still runs the secondary home source; preserve it until reviewed rollout is admitted. Cached-metadata estimate is 2,099 MiB cold read, versus722 MiB before. Do not equate fixed per-file bytes with a 120-second whole-scan proof.
+
+Check fresh PP, storage and provider capacity before new execution. Current posture pauses new swarms; one interactive text/test workload is admitted. Claude weekly quota is exhausted in the latest snapshot until about04:00 UTC. Avoid repeated refusals and paid fallback. Native UI surfaces are unavailable. Local SQLite/process/rollout metadata and supported CLI reads provide bounded coverage; unseen ChatGPT chats remain outside it.
+
+Preserve five live owners: Creator Studio/compute `01a101b1`, estate design `01a101be`, FrankX editorial `01a101fc`, Arcanea `01a1020e`, Starlight/memory `01a10210`. Use their current source PRs and receipts; do not duplicate, archive or steer occupied terminals blindly. Reconcile the 137 saved cloud tasks with exact repository/base/file ownership before applying any ready artifact. Fresh Queen heartbeat is idle with eleven held tasks; stale C940 receipts are not worker availability.
+
+Prepare concrete bounded independent tasks, assign only with verified executor/repository admission, and distinguish prepared, queued, claimed, running, reviewed and live. Update only this campaign's sections on hub branch `agent/codex/queen-eight-hour-campaign-20261004`; preserve all other fronts and the foreign operating-architecture conflict. Keep [product issue134](https://github.com/frankxai/agentic-ops/issues/134) current, save exact checks and gaps, and stop any session-owned workers at handoff.
+
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
