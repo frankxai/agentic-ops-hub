@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 19 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 20 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 
@@ -277,52 +277,59 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-The full six-audience website goal remains active, task
+Full six-audience website goal remains active, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 19 source `a89c5bc25aa028919a44fa1a5072d34cad9b28c9`; refined articles `94491893262b8f15fdff16be77291696058b87d6`;
-initial articles/companion `39c4facd658610cd9acf5b983dd59b2ffd12926c`.
-There are 79 prepared revisions, four observed production corrections and 195
-unreviewed articles across 278 slugs/769 variants. All 79 hashes match; 83 receipts
-preserve previous rows. There are 79 held article-linked social/visual sets.
+Batch 20 source `03e955cefff9e0e3fdef99e41b7203a723ac5a91`; prepared and critiqued articles `51a1fb661b1e3077d419320f951442b106271ebe`.
+Across 278 slugs/769 variants: 83 prepared revisions, four observed production
+corrections and 191 unreviewed articles. All 83 content hashes match. There are
+87 progress receipts preserving 83 prior rows and 83 held social/visual sets.
 
-Four substantive due-diligence, IACOS, AI value and integration guides replace
-unverified savings, source-prestige verification, package-access promises,
-macroeconomic certainty and deployed-platform claims. Historical NVIDIA tables,+an authored Claude configuration, an assumed studio budget and an invented
-membership scenario give readers source-linked artifacts and recoverable work.
-Manual filing/spreadsheet/second-reader and approved support macros remain serious
-alternatives. Actual source studies retain their dated task scope and limitations.
+Four substantive ACOS overview, complete, setup and workflow guides remove
+mixed versions, universal install times, unverified first-person results,
+automatic enforcement and sixteen-hour weekly saving claims. Useful authored
+release copy, an operations report, a welcome draft, derivatives and a hypothetical
+code finding retain approved source, credit conflicts, unknown analytics and
+recovery after failed sessions or uncertain sends. Folder/editor/export/macro/
+spreadsheet processes remain serious alternatives. No actual model, installer,
+workflow, connector, hook, listening, revenue or user-success trial is claimed.
 
-The working public offline Python companion checks supplied metadata and arithmetic.
-Sixteen behavioral tests pass, including mismatch/input denial and recovery.
-False values with matching metadata deliberately pass: this is not factual audit.
-The actual fixture produces two comparable and three blocked comparisons, exit 3.
-Canonical LF and physical CRLF input hashes are explicitly distinguished.
-Thirteen Decimal checks, four MDX compiles, eight source resolutions and nine
-corpus tests pass. Original bodies match production `f9811d47`; stable metadata,
-assets and URLs remain. No affiliate catalogue/qualification/issued-URL change.
+Pinned public ACOS `8a481b6c` is full source 11.0.0; separate core plugin 1.0.0 has
+five skills. Actual tree counts: 174 non-empty Claude skills, five placeholders,
+85 top-level commands, 69 profiles, nine shell hooks and 32 activation entries.
+Apache 2.0 original software/docs retain historical MIT grants and other terms.
+Exact remote source CI 36966595546/build job pass; release job skipped. This
+evidence does not verify a reader's installation or FrankX deployment.
+The installer uses CLAUDE_HOME for Claude. Dry run previews destinations before
+conflict preflight, differing files/symlinks refuse, identical copies skip and
+state still writes. Copied hooks require active wiring and failure verification.
+Current official docs distinguish prompt context, session permissions and hooks.
 
-Two initial Poolside critiques returned PASS with six retained findings. Three
-optional refinements produced the exact refined revision. Refined financial output
-is malformed JSON at position 5120; acceptance remains open. Refined value is valid
-REVISE: two proposed arithmetic repairs are incorrect and one attribution is
-unsupported. Original verdict/findings and lead calculations remain, with no
-relabelling. Its console print failed under CP1252 after the receipt was saved;
-existing UTF-8 receipt reading recovered observation without reposting. Earlier
-review gaps and Higher Self premium founder approval remain open.
+Four MDX/GFM compiles, seven source links, twelve Decimal checks and nine corpus
+tests pass. Assumed current/assisted effort is 675/505 minutes, gross 170 minus
+90 upkeep/recovery = 80 net; two extra 40-minute reviews erase it. No measured
+time or cash-saving claim. Eight generic vendor-homepage affiliate wrappers and
+unqualified price/bundle claims removed; no catalogue or issued referral changed.
+All four original bodies match production `f9811d47`; stable metadata, URLs and
+asset files remain. Improved production scientific corrections remain untouched.
 
-Actual GitHub metadata verifies the IACOS repository is private, not a public
-qualified bundle. Authoring investor Download Free Kit uses href="#"; rendered
-production behavior is unverified. Responsive CTA/capture remains a release gap.
-CUA inventory remains empty and borrowed Next/TypeScript packages are absent.
-Disk stays below 15%; PP is BOUNDED with new agents paused. Text and small tests
-continue. No installs, new worktrees, agents, media, app build, cleanup, source push
-or website deployment. Full gates, independent source/design/financial/security/
-commercial acceptance, surgical integration and exact green main remain pending.
+Poolside distribution returned valid PASS with three retained findings. One quote
+belongs to the other article, one quote is absent and one distinction is already
+explicit; lead text comparisons remain alongside the original verdict. Poolside
+creator and separate NVIDIA creator requests both timed out. All three are
+terminal; no creator verdict inferred. Exact-revision publication acceptance,
+earlier review gaps and Higher Self premium founder approval remain open.
 
-Taste writable-vault sync and earlier frontier freshness stay open. All 23 foreign
-edits are unstaged. Free owned hub worktree reused from main `3ebde1b9`; only
-FrankX regions/sweep and appended session change. Other fronts/history remain.
-Hub CI proves documentation only. The complete goal remains active.
+Build admission HOLD: 8068/8192/3972 MB, CPU 50%, 12/12 runtimes and new agents
+paused. Disk remains below 15%; actual CUA apps/browsers empty and Next/TypeScript
+targets absent. Only text/reads/small checks used. No install, app build, new
+worktree/agent/media, foreign cleanup, source push or website deployment. Full
+gates, responsive capture, independent source/design/security/commercial review,
+surgical production integration and exact green deployment remain required.
+Taste writable-vault sync and frontier freshness remain open. All 23 foreign
+edits remain unstaged. Enabled source secret scans pass 39.74 KB and 99.68 KB.
+Free owned hub worktree reused from main `acaa57b9`; only FrankX regions/sweep
+and session append change. Other fronts/history preserved. Hub CI proves
+documentation only; the complete goal stays active.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
