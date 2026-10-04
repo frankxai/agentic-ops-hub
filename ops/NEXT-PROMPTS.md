@@ -17,34 +17,41 @@
 
 ## Current
 
-### Delete the song counts still listed on issue 870
+### Delete the song counts still in lib and content
 
 Frank does not open the Jules UI. Read
 [ops/sessions/2026-10-04.md](sessions/2026-10-04.md).
 
-Already merged, do not redo: [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871)
+Already merged, do not redo the pages: [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871)
 as `044c84472`, [PR 873](https://github.com/frankxai/frankx.ai-vercel-website/pull/873)
-as `f255c9f9`, and [PR 874](https://github.com/frankxai/frankx.ai-vercel-website/pull/874)
-as `51f259c677165eca12a5b67d80166b373e942697`. PR 874 cleaned the press bio,
-achievements, the PDF email, both llms routes, the media kit, and the Frank
-Riemer page. Issue 824 stays open. Issue 842 is closed. The research pages did
-not gain citations. The shared blog heroes were not replaced.
+as `f255c9f9`, [PR 874](https://github.com/frankxai/frankx.ai-vercel-website/pull/874)
+as `51f259c677165eca12a5b67d80166b373e942697`, [PR 876](https://github.com/frankxai/frankx.ai-vercel-website/pull/876)
+as `2e6e8e735ea551ccefb7c6b1df2e034b9b86de1e`, and [PR 875](https://github.com/frankxai/frankx.ai-vercel-website/pull/875)
+as `05a2ffcf0c840605141f96c3c58dd8254529d504`. After 875, `app/` and
+`components/` on main have no `12,000+` and no `12K+`.
+
+[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877) locks
+the homepage route card in the claim test. Merge it when the latest required
+checks on its head are success. Do not redo that one-line test.
+
+Issue 870 stays open. The next deletion is `lib/email-templates.ts`,
+`lib/email-templates-premium.ts`, `lib/email-templates-welcome.ts`,
+`lib/hub.ts`, `lib/intake/personas.ts`, `lib/workshop-citations.ts`, and
+`lib/visual-intelligence/platform-personas.ts`. Treat
+`lib/voice/frankx-voice.ts` as its own change: that file tells writers to use
+the phrase. Then a careful content pass. Do not delete "Walked 12,000 steps",
+tool-output line counts, token unlock schedules, or YouTube revenue dollars.
+Do not write Catalog, Extensive, Vast, or Global in place of the song count.
+Leave the lab line "65 tracks indexed" until it is verified.
 
 Do not send Jules to FrankX issue 870. Do not apply the issue 279 diff. Leave
 arcanea-ai-app PR 509, hub PR 112, and realityarchitect PR 47 as drafts. Leave
 FrankX 724 and 725, Dependabot majors, and Arcanea 436. `jules-ops.mjs` token
 refresh returned `invalid_client`. The Jules CLI list still works. Do not run
-`jules login`. Do not print credentials.
-
-The next local deletion is the pages [issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
-still lists after PR 874: connect, soulbook preview, free-playbook, goals,
-intelligence-map, links metadata, map v3, newsletter thank-you, path/aesthete,
-rituals, students briefing, vision, youtube, AboutShell, the design-lab heroes,
-SignalRouteSelector, StartShell, IntelligenceMapShell, and the v0 variants.
-Delete the number. Do not write Catalog, Extensive, Vast, or Global in its
-place. Keep issue 870 open until those pages are clean. Use a new worktree.
-Do not write the occupied primary checkouts. Do not ask Frank to click Jules.
-Keep the other current prompts.
+`jules login`. Do not print credentials. Do not write the occupied primary
+checkouts. Do not ask Frank to click Jules. Keep the other current prompts.
+Issue 824 stays open. Issue 842 is closed. The research pages did not gain
+citations. The shared blog heroes were not replaced.
 
 ### FrankX: review and release the first editorial renewal slice
 

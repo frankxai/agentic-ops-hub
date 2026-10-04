@@ -2,7 +2,26 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (FrankX PR 874 merged `51f259c6`, issue 870 stays open; PR 873 merged `f255c9f9`; Jules assess session finished with no new PR; driver token refresh returned invalid_client, CLI list still works) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (FrankX PR 875 merged `05a2ffcf0`, PR 876 merged `2e6e8e73`, issue 870 stays open for lib and content; PR 877 open for the homepage claim lock) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: public page song counts merged (Grok)
+
+[frankx.ai-vercel-website PR 876](https://github.com/frankxai/frankx.ai-vercel-website/pull/876)
+squash-merged at 2026-10-04T05:13:05Z as `2e6e8e735ea551ccefb7c6b1df2e034b9b86de1e`.
+The homepage route card no longer says 12,000+ songs. The 100-tool line stayed.
+
+[PR 875](https://github.com/frankxai/frankx.ai-vercel-website/pull/875)
+squash-merged at 2026-10-04T05:22:44Z as `05a2ffcf0c840605141f96c3c58dd8254529d504`.
+The rest of the public app pages and components no longer publish `12,000+` or
+`12K+`. The goals page shows 5 of 15. Local proof before the main update: 73
+public-claims tests passed. CI passed on head `b716d39f9`. No viewport proof.
+[Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
+stays open. Email templates, hub copy, the voice file, and the content corpus
+still publish the count.
+
+[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877) is open.
+It locks the homepage route card in the claim test. Do not send Jules to the
+song-count pages.
 
 ## 2026-10-04: bio and press song counts merged (Grok)
 
