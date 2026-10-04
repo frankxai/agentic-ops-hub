@@ -2,7 +2,26 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 23 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 23 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Native Bash denial/feedback and compiled Protocol proof verified (Codex)
+
+Frank approved both Bash hooks; actual native discovery sees enabled/trusted.
+Source97/2fe7189 repairs absent nullable transcript handling. Actual allowed
+write, synthetic-secret denial before execution, defect feedback and fresh
+corrected scan pass; all processes close and configuration/trust hashes persist.
+20 Node/8 Python tests pass locally and in Windows/Linux CI; narrow independent
+source review PASS. Security Stop runs; vendor design Stop and other-host/model
+use remain open. Earlier failed broader host verdict is preserved.
+
+Kernel40/baeb7a7 builds source12d794a baseline and pinned patch candidate in CI,
+with2+9 actual observations, source-drift denial, fallback/recovery, touch back
+navigation and one interrupted reduced-motion entrance. All checks and limited
+independent source/evidence review pass; tested blobs equal. Isolated proof still
+needs owning integration/routes/rendered review and promotion; foreign PR200 stays
+untouched. All eleven requirements remain open/partial. See [session](sessions/2026-10-04.md)
+and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12#issuecomment-5979694995).
+
 
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 

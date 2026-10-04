@@ -55,14 +55,22 @@ timeline/team/budget gaps explicit. Queueing is not running automation.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
-Goal status: blocked after three consecutive turns with the same prerequisites.
-Resume only when actual /hooks trust, assigned integration lane or supported access
-changes. Frank intends to review both Bash hooks; fresh hooks/list still reports
-untrusted. Once trusted, run native denial and design-feedback tests without changing
-trust yourself. Integrate the prepared draft39 patch only in an assigned Protocol
-lane, preserving open PR200. Recover CUA/Figma access and exact-head human approval
-for locked pilot/guard and identity promotion. Preserve all eleven requirements,
-all earlier evidence and other owners; no source fixture closes this full goal.
+Frank approved both native Bash entries. Fresh hooks/list sees enabled/trusted;
+do not ask him to approve them again or write trust configuration. Source97/2fe7189
+fixes absent nullable transcript handling and is selectively installed. Actual
+native allow, synthetic-secret denial, UI finding, feedback transport and fresh
+corrected scan pass. Security Stop runs; vendor design Stop and broader host/model
+acceptance remain open. Preserve failed earlier broader host receipts.
+
+Kernel draft40/baeb7a7 has actual compiled2baseline+9candidate observations against
+owning main12d794a and immutable patchd69fc7. Full builds/checks, source-drift denial,
+font failure/recovery, one touch navigation/back and one interrupted reduced-motion
+entrance pass; limited independent source/evidence review PASS. Apply the patch
+only in an assigned Protocol lane, preserving foreign PR200. Obtain supported
+rendered review, owning-route proof and current-head promotion; CUA iab is unavailable.
+Figma quota, wordmark choice, locked pilot/guard and other brand decisions remain.
+Keep all eleven requirements open/partial and complete their actual missing proof.
+Earlier dated receipts below preserve the state before this trust/compiled repair.
 
 Continue full goal `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
