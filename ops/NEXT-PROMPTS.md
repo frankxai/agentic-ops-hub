@@ -36,38 +36,51 @@ Done when a clean install and two-harness interruption/restart test prove origin
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal remains
-paused after interruption; preserve intent and report actual state. Source
-`24e18e19f9791de3e65572019a792fa18c6a07ec` on owned branch `agent/codex/editorial-renewal-20261003`,
-worktree `frankx-editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`, batch23,
-`RELEASE-READINESS-2026-10-04.md`, Sonnet evidence and article progress.
-278 slugs/769 variants: 96 prepared/four observed/178 unreviewed, 100 receipts,
-96 held social/visual sets. Preserve stronger production work, dates/URLs/assets,
-prior hashes, affiliate rows and all 23 foreign edits. Serve musicians, music
-producers, creators, founders, executives and AI architects.
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). User authorized
+continuation and merge after reviews; runtime goal still reports paused. Preserve
+all intent and actual state. Owned source `7ad8fd995e4d524de383767ced77e1942068b221` on
+`agent/codex/editorial-renewal-20261003`, worktree `frankx-editorial-renewal-20261003`.
+Read the renewal plan, progress, batch23/Sonnet, release readiness, and new
+`docs/ops/affiliate/LINKS-AND-SETUP-2026-10-04.md`, browser prompt and review receipt.
+96 prepared/four observed/178 unreviewed; preserve all100 receipts,96 held social
+sets, stronger production implementations, dates/assets and23 foreign edits.
 
-The five latest creator-guide texts have independent Sonnet 5.5 review with ten
-required corrections resolved. It is not rendered/product/account acceptance.
-CapCut licence is non-US; old receipt is superseded. Prior failed/limited reviews
-remain. Complete earlier findings and reviews of other prepared revisions.
-Keep referral URLs null until account verification; never invent endorsement.
+ElevenLabs is account-confirmed in the signed-in PartnerStack UI, with exact
+issued URL `https://try.elevenlabs.io/7x6qh6upgry8` and normal browser navigation.
+Catalogue37 and copy-links CSV37 preserve19 configured URLs; remaining18 aliases
+are14 programme-page and4 hub fallbacks, not payable referral evidence. One
+account-qualified local relationship. The shared resolver adds official fallbacks,
+canonical IDs, unchanged signed URLs, sponsored qualification and HeyGen channel
+exclusion.34 boundary tests pass; new code independent review remains pending.
 
-The local Chrome resourcesPath repair is verified and Chrome transport works.
-Confirm the side panel opens. Refresh pp/workload and actual storage admission;
-obtain admitted desktop/mobile capture and dependency recovery. Browser QA held
-at 6230/8192 MB and 14/8 runtimes, storage below 15%; Next/TypeScript missing and
-runtime links gate has no owned dev server. No foreign process/lock deletion.
-Observed live Canva exposes HERO_PROMPT and uppercase interface labels. Finish
-captured serif/sentence-case design, useful visuals, SEO, affiliate checks and
-remaining corpus; compare/refine against stronger existing public experiences.
-No Higgsfield; generated visuals need sidecars and both ledgers. Live posting
-and founder approval retain existing gates. Apply humanizer and accessibility.
+Reconnect Chrome and inspect prepared Gamma/n8n applications before refilling
+or applying again. User signed in; do not create a duplicate network account.
+Binding submission/brand-bidding acknowledgement require the pending specific
+consent. Neither submission confirmed; connection disappeared before durable
+n8n handoff marking. Frank handles credentials, OTP, tax/bank/payout information.
+Capture approved issued URLs into catalogue/copy export; never manufacture refs.
+Gamma forbids masked URLs; use direct issued links and disclose all domains.
+HeyGen excludes SEO/blog-only promotion; Canva/Notion reject new applicants and
+Comet ended. Review Descript/Opus/Synthesia next, then reader-fit candidates.
+RouteRegistry.v2 lives in the foreign router lane: coordinate ownership and
+preserve reviewed upstream corrections before any sync or route activation.
 
-Port only accepted files through an owned production lane in
-`frankxai/frankx.ai-vercel-website`; pass predeploy/security and normal CI, merge
-to main without bypasses and verify exact deployed revision, critical journeys
-and recovery. Observed existing 0ff16a8d production metadata READY does not establish this
-source release. Authoring/handover CI cannot close the website. Save hub/issue proof.
+Enforce actual machine numbers: PP ALLOW contradicted2568/4608 MB and later
+freeRAM1237816 KiB; storage below15%. No new agents, installs, worktrees or builds.
+Refresh admission before independent Sonnet review and required dependency recovery.
+merge:gate stops at missing TypeScript after passing boundary/intake checks; do
+not push source until it passes. Normal reading/editing/small checks can continue.
+Chrome resourcesPath files were repaired earlier; side-panel reopening remains
+unconfirmed and this later browser disconnect is separate evidence.
+
+Finish meaningful six-audience articles, serif/sentence-case design, useful
+visuals/infographics, SEO/disclosures and existing linktrees. Linktree work is
+planned, not implemented. Apply humanizer/Emil/accessibility and verify rendered
+focus/touch/reduced motion/interrupted transitions under admission. No Higgsfield;
+generated media needs sidecars and both ledgers. Keep founder/live-posting gates.
+Port accepted files through an owned production lane, run predeploy/security and
+normal CI, merge to main and verify exact live revision and recovery. Observed
+existing0ff16a8d is not this release. Save hub and issue proof; no persistent worker.
 
 Queued next: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
 Experiences. Plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` is local.

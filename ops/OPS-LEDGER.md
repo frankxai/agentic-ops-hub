@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX Chrome repair/review saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX affiliate/account slice saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Queen/SIS continuity merged source and production acceptance (Codex)
 
@@ -310,55 +310,52 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-Full website outcome remains unfinished, task `01a101fc-228c-7010-bba6-cf60bbad2357`,
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). User authorizes reviewed
-main/production delivery. Runtime goal reports paused after interruption; intent
-remains unfinished. Source `24e18e19f9791de3e65572019a792fa18c6a07ec`, owned authoring branch
-`agent/codex/editorial-renewal-20261003`, is local only.
+Full website outcome remains unfinished: task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal reports
+paused; user explicitly requested continuation, affiliate implementation and
+account discovery/setup. Preserve intent and actual runtime state.
+Local source `7ad8fd995e4d524de383767ced77e1942068b221`, implementation `427c75a6a1448b5c920585082eb260c6b48b4bf7`,
+owned branch `agent/codex/editorial-renewal-20261003`. Article bodies unchanged:
+278 slugs/769 variants, 96 prepared/four observed/178 unreviewed, 100 receipts,
+96 held social/visual sets. Five latest texts retain independent Sonnet review;
+this new affiliate code has no independent provider verdict yet.
 
-Chrome blocker repaired locally: both Codex browser manifests retained a
-`resourcesPath` into removed app 26.928.4866.0. Backups preserve the old bytes;
-only that field was changed to installed app 26.930.3930.0. Ten entries in each
-copy have all seven required paths. Native-host/extension checks and supported
-Chrome transport pass. ChatGPT side-panel startup awaits user confirmation.
-This does not change ChatGPT cloud behavior. Owned review tab closed and viewport reset.
+GitHub affiliate-agent-skills/agenticincome/router catalogue checks recovered
+prior network-first plans and public-term reviews, not account approval. User
+completed PartnerStack login. Signed-in home showed one active programme,
+Eleven Labs Inc.; its exact issued URL matches the existing direct URL.
+Normal browser navigation reached the product page. Fresh account check records
+are now in the local catalogue; no conversion or payout is claimed.
 
-Three bounded Sonnet passes produced substantive independent text/source review
-for the five Canva/Gamma/CapCut/HeyGen/Perplexity guides. Actual final model
-`claude-sonnet-5-5` found all ten second-pass required changes resolved, no
-remaining blocking text defects, and explicitly withheld release approval.
-Corrected CapCut agreement is non-US; original wrong US receipt remains historical.
-Exact article hashes and scoped source limits are in
-`docs/ops/editorial/evidence/sonnet-review-2026-10-04.json`.
-Five final MDX/GFM compiles, six source-route resolutions and nine corpus tests
-pass. Authored CSV has three rows/four fields; illustrative SRT has four ordered
-nonoverlapping cues. Videos verified by official oEmbed identity, not watched.
+37 programme/candidate rows, 19 configured URLs preserved: 18 go aliases and
+one direct ElevenLabs URL. GET:14 programme pages/four hub fallbacks/one vendor
+attribution redirect. One account-qualified runtime relationship. Added explicit
+ordinary product fallbacks, canonical IDs, signed/query-safe sponsored marking,
+HeyGen editorial exclusion and safe JSON evidence normalization. Separated n8n
+Cloud, v0 ambassador and Railway template terms. Notion closure rechecked and
+Perplexity Comet closure corrected. CSV37/copy export37 and source hashes match.
+34 boundary tests pass, including16 affiliate tests; intake13 Python/six Node
+pass. Secret hooks scan both commits with no leaks; all23 foreign edits preserved.
 
-Register: 278 slugs/769 variants; 96 prepared, four observed production
-corrections, 178 unreviewed, 100 receipts and 96 held social/visual sets. All 96
-prepared hashes match; other 95 receipt rows intact. Affiliate catalogue 35;
-no account, enrollment or paid URL activation. Preserve 23 foreign source edits.
-`RELEASE-READINESS-2026-10-04.md` records exact gaps and pickup prompt.
+Gamma/n8n forms prepared in Chrome; explicit binding-consent questions pending,
+neither submission confirmed. Chrome later disconnected and inventory is empty;
+form survival is unverified. Saved browser prompt and exact application details.
+Gamma prohibits masked URLs; prefer direct issued links and disclose placements.
+Cookie conflicts and accepted account offers stay unverified. HeyGen excludes
+SEO/blog-only promotion; new Canva/Notion applications are closed.
 
-Existing production `frankxai/frankx.ai-vercel-website` main
-`0ff16a8dce94131601718f01e19ca1102c4d4b3d` has Vercel production
-`dpl_uZZxo5EkkACSR4iVrcSKGqCm59NB` metadata READY with frankx.ai/www aliases.
-These local revisions have not shipped. Next/TypeScript payloads are missing;
-type-check fails and runtime links:check fails without a session-owned dev server.
-Browser QA held: 6230 MB available versus 8192 required and 14 runtimes versus 8.
-Desktop screenshot timed out; no responsive acceptance. Interactive text/small
-checks admitted, storage below 15%; no installs, new worktrees, media or swarms.
-Observed live Canva exposes HERO_PROMPT and uppercase labels; shared serif/
-sentence-case refinement, original visuals, earlier independent/founder findings,
-affiliate checks, remaining corpus and exact green production journeys remain.
+Source push and production integration held: merge gate fails at missing tsc.
+PP printed ALLOW despite2568/4608 MB numeric budget; enforced the floor and did
+not launch Sonnet. Later free RAM1237816 KiB, storage below15%. No install, build,
+new agent/worktree/media or foreign process/lock changes. Linktree is placement
+planning only; render/focus/touch/reduced-motion/interruption review remains open.
+Production main observed0ff16a8d; these changes are local and not deployed.
+Hub documentation CI cannot establish website release or affiliate earnings.
 
-Multi-site plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` complete
-locally: six proposed briefs, approved partner-source matrix, real usage/fresh
-models, visuals/SEO/interconnections and timeline/resource placeholders. Site B,
-actual API access and publication-time model registry remain unverified.
-Implementation queued after full renewal, with no new goal or unattended worker.
-Save this handover through normal hub CI/merge and existing issue #252. Hub green
-covers this record only. No session-owned worker/server/watcher/tab remains.
+Continue account capture/consent, admitted independent review and dependency
+recovery, accepted article/visual/SEO/linktree refinement, then owned production
+integration through predeploy/security/normal CI and exact deployed verification.
+Keep the queued multi-site plan after full website renewal; no background worker.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
