@@ -69,7 +69,29 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Current font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
+Current live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
+is frozen, owned branch agent/codex/starlight-typography-runtime-20261004.
+Re-run guard/check with explicit paths and separate ownership before writes.
+Actual18/18 CI37180850730 and full CI37180850751 pass61Node/15Python/53browser-
+process/audit0; three blobs equal tested merge b53e6bc. Independent Step exact-
+head diagnostic-source PASS. Read private starlight-live-typography-c5af15c and
+verification/public-records receipts, preserving earlier raw/log/review evidence.
+
+Nine response hashes equal the prior font census; normal/fresh-recovery sampled
+faces agree. Lab width405/390 and328/320 unresolved, with clipped map candidates
+not causal proof. Protocol has22 uppercase text elements and blocked-font sans/
+mono becomes Liberation Serif; owner main12d794a lacks generic theme tails.
+Desktop raw shift0.354444 identifies footer impact, cause/CLS unknown. Existing
+Lab82 and protocol197 carry observed evidence; closed protocol22 is historical.
+Claim an admitted product lane and bind a preview SHA before the smallest repair.
+Preserve current font/identity roles and map69; verify visual/fallback/native zoom/
+keyboard/touch/recovery/performance under owner contracts. No product source or
+adopter pin changed; named human kernel promotion and all eleven requirements
+remain open. Native Bash trust is intent only; test after Frank confirms both.
+Disk14.97%bounded: no new deps/worktrees/media/local browsers/models/swarm. Continue
+the useful creator/artifact work and estate rollout within admission.
+
+Preserved font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
 is frozen; canonical owned kernel lane agent/codex/font-artifact-denial-20261004.
 Before writes route/guard/check and ownership again. Original full-manifest four-byte
 WOFF2 acceptance is reproduced; decoded check now denies it. Final67/69Node,
