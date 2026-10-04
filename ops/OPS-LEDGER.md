@@ -2,7 +2,35 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (FrankX PR 868 merged `20eaf115`, issue 842 closed; FrankX PR 869 merged `6f204384`, issue 824 stays open; PR 871 merged `044c8447`, issue 870 stays open; Jules 279 still in progress) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (FrankX PR 873 merged `f255c9f9`, issue 870 stays open; PR 867 closed without merge; Jules 936 stopped; Jules 279 rejected and not applied; Jules session `10105741143636676934` planning Reality Architect issue 35, draft only) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: next song-count deletion merged (Grok)
+
+[frankx.ai-vercel-website PR 873](https://github.com/frankxai/frankx.ai-vercel-website/pull/873)
+squash-merged at 2026-10-04T03:34:54Z as `f255c9f916a065c0886edccce30e76a4b4c3bc03`.
+Head `7743ad9c6`. Local proof: 38 public-claims tests passed. Codex completed
+with no findings. The first CI run failed in the Next font build for
+`app/layout.tsx`, which this diff does not change. The rerun succeeded.
+Review Gate, Surface Guard, Contract Guard, Media Guard, Merge Gate,
+design-contract, and Vercel were success. Viewport proof was not run.
+[Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
+stays open. Bio, press, email, llms, achievements, and the other pages named
+on that issue still publish 12,000+.
+
+[PR 867](https://github.com/frankxai/frankx.ai-vercel-website/pull/867) was
+closed without merge at 2026-10-03T19:37:16Z. Jules session
+`9363571137422053674` stopped. Session `13552161665831537438` finished with
+no diff. Do not send Jules back to the song-count pages.
+
+Jules session `9191613497530593819` (arcanea-ai-app issue 279) completed with
+no pull request. The pulled schema was not applied. Draft
+[PR 509](https://github.com/frankxai/arcanea-ai-app/pull/509) stays a draft.
+Issue 279 stays open.
+
+Jules session `10105741143636676934` is planning Reality Architect issue 35.
+The inputs on `components/Assessment.tsx` already have focus rings. Four
+buttons do not. Issue 35 says draft only. Do not merge that pull request.
+Hub draft PR 112 stays a draft. Reality Architect PR 47 stays a draft.
 
 ## 2026-10-03: FrankX research gate merged, song counts in review (Grok)
 
