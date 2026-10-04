@@ -29,7 +29,7 @@ Review these heads as a checker, not the author. Run `node --test scripts/tests/
 
 Build every new Jules task with `node C:/Users/frank/starlight/worktrees/jules-ops/core/tools/jules-brief.mjs --task "..."`. If it exits 2, do not create the task. Card and builder are starlight-agent-config `9ff392d` on draft PR 89. Codex reviews the draft. Queen records the outcome here and does not merge.
 
-FrankX 868 is merged. Leave FrankX 867 open until the scale words are gone and the about surface has a real brief. FrankX 869 is green and waits on a non-frankxai review. Watch Arcanea 279 at https://jules.google.com/session/9191613497530593819. Do not retry the failed citation session https://jules.google.com/session/8651854513076101430.
+FrankX 867 is closed. PR 871 is on main. FrankX 869 is merged. Review Arcanea draft https://github.com/frankxai/arcanea-ai-app/pull/509 at `890ae7fa5c` as a checker. Issue 279 stays open past that slice. Watch https://jules.google.com/session/13552161665831537438 for FrankX 870. Do not retry https://jules.google.com/session/8651854513076101430.
 
 Do not self-merge. FrankX 724 and 725 and GenCreator 93 stay held. GenCreator 141 is green against `agent/codex/creator-revision-20261002` and still needs an approval from someone other than frankxai. Do not edit the FrankX first viewport, GenCreator Territory B, or Arcanea canon.
 

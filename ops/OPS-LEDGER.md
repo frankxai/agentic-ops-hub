@@ -2,7 +2,11 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-03 (Jules working card on config PR 89; FrankX 867 held; FrankX 869 waiting on Codex) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (Arcanea validator draft 509; Jules planning FrankX 870) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Release validator drafted, song counts still open (Grok)
+
+FrankX 867 is closed. PR 871 is on main. FrankX 869 is merged. Arcanea Jules session 9191613497530593819 left a patch and no pull request. That patch is [draft 509](https://github.com/frankxai/arcanea-ai-app/pull/509) at `890ae7fa5c`. Three tests pass. Issue 279 stays open past this slice. [Jules 13552161665831537438](https://jules.google.com/session/13552161665831537438) is planning FrankX issue 870 with the working card. Receipt: `ops/sessions/2026-10-04.md`.
 
 ## 2026-10-03: Jules working card and the review loop (Grok)
 
