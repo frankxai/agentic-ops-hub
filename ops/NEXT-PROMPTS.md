@@ -30,9 +30,9 @@ as `2e6e8e735ea551ccefb7c6b1df2e034b9b86de1e`, and [PR 875](https://github.com/f
 as `05a2ffcf0c840605141f96c3c58dd8254529d504`. After 875, `app/` and
 `components/` on main have no `12,000+` and no `12K+`.
 
-[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877) locks
-the homepage route card in the claim test. Merge it when the latest required
-checks on its head are success. Do not redo that one-line test.
+[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877) merged
+as `b56723c8660b7f90a98a0a9c6ba56024f668c3ae`. It locks the homepage route card
+in the claim test. Do not redo that one-line test.
 
 Issue 870 stays open. The next deletion is `lib/email-templates.ts`,
 `lib/email-templates-premium.ts`, `lib/email-templates-welcome.ts`,

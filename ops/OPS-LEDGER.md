@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (FrankX PR 875 merged `05a2ffcf0`, PR 876 merged `2e6e8e73`, issue 870 stays open for lib and content; PR 877 open for the homepage claim lock) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (FrankX PR 875 merged `05a2ffcf0`, PR 876 merged `2e6e8e73`, PR 877 merged `b56723c8`, issue 870 stays open for lib and content) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: public page song counts merged (Grok)
 
@@ -19,8 +19,10 @@ public-claims tests passed. CI passed on head `b716d39f9`. No viewport proof.
 stays open. Email templates, hub copy, the voice file, and the content corpus
 still publish the count.
 
-[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877) is open.
-It locks the homepage route card in the claim test. Do not send Jules to the
+[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877)
+squash-merged at 2026-10-04T05:36:30Z as `b56723c8660b7f90a98a0a9c6ba56024f668c3ae`.
+The claim test now locks the homepage route card. CI failed once on the known
+Playfair font build and the rerun succeeded. Do not send Jules to the
 song-count pages.
 
 ## 2026-10-04: bio and press song counts merged (Grok)
