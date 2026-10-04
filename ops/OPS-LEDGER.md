@@ -4,6 +4,27 @@
 >
 **Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX Chrome repair/review saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
+## 2026-10-04: Shared harness experiment design saved; pilot acceptance open (Codex)
+
+Frank requested shared Codex/Claude/Grok experiments, Queen observation, harness
+checks, visible design/prompt/tool assessment and a feedback loop. The proposed
+loop reuses the existing bus/controller: one parent experiment, individually
+admitted candidate tasks, exact artifact checks, independent review, Frank's
+feedback, owning product release and live verification. Compare with one capable
+agent/manual review; record model separately from harness, prompt/skill/tool
+versions, repair effort and cost. Hard checks stay separate from anchored ratings.
+
+The private design is pinned by SHA-256
+`77aa4b2d1ae488bb89676b551c2f03b98e847e77107c92464b48b5b528d6fa8b`.
+Two independent StepFun critiques returned REVISE; child admission and feedback
+custody were refined. Remaining isolation, grader calibration and feedback conflict
+tests are explicit pilot requirements. No new service, worker, schedule, paid route,
+interface implementation or production change. Queen live roundtrip and code
+transport remain held; config PR90 still needs another approving GitHub identity.
+See the session and the current shared-experiment pickup under the existing Queen
+continuation. Track implementation in [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+Preserve merged continuity161, existing activation work and every unfinished front.
+
 ## 2026-10-04: Queen/SIS continuity merged source and production acceptance (Codex)
 
 [Agentic-ops PR161](https://github.com/frankxai/agentic-ops/pull/161) is merged at `551e2f0435322c8d9c7c2745acce1c68d1eb2848` (16:01:56 UTC), reviewed source `a1ac1e3c5661177122f307c75cdfbe37557bec5b`. Windows:73 behavior plus six conformance passes, zero failures/skips. [Final PR CI37215012071](https://github.com/frankxai/agentic-ops/actions/runs/37215012071) at merge29a0a13 contains that exact source and reports73+6 passes; [main CI37215248609](https://github.com/frankxai/agentic-ops/actions/runs/37215248609) checks out actual merge551e2f0 and reports the same. The lead read the raw logs and compared merged source blobs with the reviewed head. [Independent Anthropic PASS](https://github.com/frankxai/agentic-ops/pull/161#issuecomment-5981853939) is static source review with raw exact-head CI inspection, not test execution or deployment acceptance. WARN698a11f and FAILfe10d34 remain preserved with their fixes.

@@ -424,6 +424,48 @@ service or unattended worker under machine HOLD or storage BOUNDED. Preserve rel
 gates, account eligibility and every other unfinished front.
 ```
 
+[Shared harness experiments, Codex design proposal, 2026-10-04]
+```text
+Continue Frank's requested cross-harness improvement loop in existing Ops134;
+preserve Queen activation and SIS continuity work. Read the current Queen contract
+and private queen-cross-harness-experiment-design-20261004.md plus its independent
+reviews/reconciliation in interface-foundations-20261003. Proposal only: both
+StepFun critiques REVISE, with remaining acceptance made explicit. No dispatch,
+fanout, paid fallback, new controller or schedule follows from this design.
+
+First prove one real admitted non-code Queen task using Protocol's existing
+release evidence: useful review/recommendation, exact artifact, native executor
+identity, trusted checks, separate-provider authenticated review, Frank's feedback,
+one delivery and restart/duplicate/time/cost proof. Reuse the existing bus and
+controller, while respecting EUR100/month incremental ceiling, profile approval,
+current auth/owner and machine/storage admission. MERGED_NOT_LIVE remains true
+until a real roundtrip is evidenced. Code stays held pending actual isolated runner
+and adversarial permission/cancellation/recovery tests.
+
+After code isolation and admission, compare two native candidate makers on one
+real product task against a single-maker/manual-review baseline. Each candidate
+has its own child task, output ownership, common input/criteria hashes and versioned
+model/harness/prompt/skill/tool/environment receipt. Rotate roles; label whole-stack
+comparisons accurately and retain errors/held/losing trials. One independent
+reviewer authors neither. Calibrate any changed grader on held-out human examples;
+measure usable outcome, design fit, repair effort, elapsed time and cost.
+
+Reuse the existing founder review surface after verifying its owner. Show baseline,
+comparable artifacts/previews, exact revision, checks and reasons. Authenticate
+annotations/choices, bind them to artifact/state, deduplicate event IDs and resolve
+conflicting revision updates explicitly. Separate taste/defect and artifact/brand/
+reusable scope. Turn validated feedback into versioned evaluation/prompt/skill/
+brand/routing improvements, test held-out tasks, then use owning PR/preview/release
+and verify actual production alias/SHA and critical user journeys/recovery.
+
+Ops owns runtime/admission/evidence; Agent Config owns profiles/adapters; Design
+Intelligence owns brand rubrics; existing Evals owns shared evaluation seams after
+owner verification; product repos own code/deployment; this hub owns the sanitized
+handover. Preserve foreign ProtocolPR200 and design/config drafts. No unseen chats,
+raw transcript collection or policies-as-enforcement claim. Save this hub's three
+handover files and update existing Ops134 after each finished slice.
+```
+
 [Starlight integration continuation, Codex]
 ```
 Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1
