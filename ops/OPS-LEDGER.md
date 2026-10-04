@@ -2,7 +2,26 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 15 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 15 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Live typography observed; product repairs remain open (Codex)
+
+Kernel draft38/c5af15c has18/18 actual cloud observations across Lab/Academy/
+protocol. Full CI61Node/15Python/53browser-process/audit0; all three blobs equal
+tested merge b53e6bc. Independent exact-head source review PASS. Nine observed
+font hashes match the prior file census; sampled normal/recovery face sets agree.
+
+Lab root widths405/390 and328/320 remain unresolved; clipped map candidates
+do not prove their cause. Protocol has22 uppercase text elements and loses sans/
+mono fallback under blocked fonts. A raw desktop shift0.354444 identifies an
+impacted footer; cause/CLS remain unverified. Existing issue12/82/197 comments
+have exact-body readbacks. Product source/foreign lanes stay unchanged.
+
+PR38 is draft; deployment SHA, visual/rights/native zoom/WCAG/performance/product
+acceptance and promotion remain open. Native Bash trust still pending Frank's
+/hooks confirmation. Prior37/36/35/native96/community15 and all eleven estate
+requirements remain open/partial. Disk14.97%, existing owned checkouts only.
+See [session](sessions/2026-10-04.md) and [kernel issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
 
 ## 2026-10-04: Font artifacts decoded; migration verified in draft (Codex)
 
