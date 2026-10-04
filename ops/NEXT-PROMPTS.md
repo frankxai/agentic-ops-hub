@@ -19,56 +19,50 @@
 
 ### AI-factory architecture: use the verified workbook and prove a useful creator mission
 
-Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Technology30, Swarm15,
-hub102 and private Ops149. Preserve the full Queen/subscription/API/cloud/department/
-20+brand/creator/business offering goal and all other owners' unfinished work.
-Cache retained after Frank's build question. Reuse installed pnpm dependencies,
-separate store, cloud CI and native-Git previews. Below15% disk, no new installs,
-worktrees, build fanout, media/models or unattended jobs. Missing canonical storage
-sensor is not admission. Pilot spend ceiling unchanged; no fallback/purchase/schedule.
+Continue full task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` from the latest October4
+completion status, Technology30, Swarm15, hub102 and private Ops149. Frank asks to
+finish the outcome. Preserve other owners, all prior artifacts, source references
+and unfinished work. The factory is unfinished; the research/planning artifacts
+are usable. Do not loop on incidental serializer or documentation changes.
 
-Read latest October4 session and private listed-budget-mission-evidence, native-
-google-listed-budget-source-latest, formatting/initial-regression observations and
-source/cloud verification. Technology draft34 source03beedb adds recent sourced
-same-currency quantity-aware listing overshoot to existing reasons/exports while
-incomplete delivered totals/verdicts stay unknown. Decimal digit formatting fixes
-the reproduced safe-boundary cent error.169 local units/full eslint/typecheck pass.
-Exact CI37195692117 passes169/51pages/34browser/editorial/fullbuild; tested merge
-9f41bed and source03beedb have equal tree24390307. Product main4588a24 unchanged.
+Current Technology draft34 source89d1e6d retains every complete-report field while
+compacting JSON.172 local units/full lint/typecheck and exact cloudCI37196976513
+pass;51 pages/34 desktop-mobile recovery checks/full build. Tested merge9e8f1ac
+and source share treee64c2fce. NativeGoogle three complete files PASS/no findings
+covers this change only; client stopped. Actual13-blob case reportf620bcaa is
+45,857bytes with19,679headroom; rich multilingual case56,145bytes recovers every
+input and full parsed object. Oversized full reports deny with editable-plan
+recovery. Original artifacts/failures preserved. Current deploymentdpl_EAkQ6P is
+READY at exact source; /studio authenticatedHTTP200. Preview:
+https://starlight-technology-p1jowvd0h-starlight-intelligence.vercel.app/studio
 
-Actual private first-wave case at03beedb is saved alongside originals. Full report
-f6dbfe9e is63,865bytes, only1,671 below64KiB; recovery, unknown costs, matched API
-contingency, same-hardware alternative, forged-verdict and execution-key denial hold.
-Overshoot/size assertions also pass. New source critic covers six complete files:
-validated PASS with one export-growth warning. Entire report/runtime/render/current
-account evidence is excluded; no tools observed, client ended. Serving identity and
-hard confinement remain unattested. Preserve all original review failures/findings.
+Close Technology30 through exact-preview rendered keyboard/focus/touch/motion and
+ordinary buyer acceptance, independent full security/privacy/licence/commercial
+review, then applicable release gate. Current browser admission HOLD (7,846MBfree,
+8,192required;14/8runtimes), CUA empty. Use admitted existing cloud capacity; do not
+kill/close another owner's tasks or call HTTP/build a rendered acceptance. Retain
+npm cache. Disk14.782% bounded; no new installs/worktrees/build fanout/unattended
+work. Native source critique is not full serving identity or tool confinement.
 
-Next retain every comparison/source/explanation field and compact JSON serialization
-to reduce actual export size. Prove parsed contents identical, same input recovery,
-UTF8 bytes/boundary denial and the real case; obtain exact-source review and cloud
-CI for any revision. Do not narrow the report to only selected hardware to pass the
-cap. Complete report/Markdown usefulness and ordinary reader repair/time/cost remain
-required. Framework is unpriced preference, environmental constraints are empty,
-memory capacity is not measured throughput, API share is separate from tool-host work.
+Next consequential implementation is Swarm15 trusted native entrypoint/caller/
+executor, durable exact create/dispatch and authenticated readback audit, effects-
+time grant/budget/revocation checks and uncertain-effect settlement. Reuse merged
+Swarm36/mainf5ccf6a and existing Cloudflare authority, one workflow owner; keep
+Vercel app-local adapter separate. Current516/29/PG17/fullbuild proof certifies
+selected reservation snapshot scope only. Preserve IDs on uncertain starts and
+reconcile committed effects. Prepare one exact reversible pilot; named independent
+security PASS and exact human approval remain required before activation. No
+implicit paid fallback, schedule, external publishing or new subscription authority.
+Measure cancellation/recovery, useful output, repair/time and attributable account
+cost. Seven successful runs per lane precede promotion beyond concurrency one.
 
-Reuse earlier complete HTML8f99f177 and workbook314fa9fa/44inputs, actual Excel
-21scenarios/378outputs/seven missing-zero/62 saved-reopened values. Original authoring
-shutdown exit1/native timeout/FAILs remain. GLM write-price refresh, hardware-life
-zero bypass, Railway unit descriptions, command-center38 mapping and visual schema/
-taste-memory sync stay open. Prior case736e1019/corrected lead memo remain frozen.
-
-Current rendered CUA/iab access was unavailable. Preview77a4374 READY/HTTP200 is
-dated, no new03beedb binding. Mobile/focus/touch/reduced-motion, exact independent
-design/buyer/security/privacy/licensing/commercial and release remain open. Reuse
-Swarm36/mainf5ccf6a/516units29orchestrationPG17/fullbuild proof in its snapshot scope.
-Implement trusted native entrypoint/caller/executor/exact create intent/dispatch,
-effect-time authority and uncertain settlement; generic SQL/internal predicates and
-successful-readback audit persistence remain open. Preserve IDs and reconcile
-uncertain effects. Named security and approved reversible live mission are required.
-Actual quota/invoices/power/hardware/capacity/value before20+brand scale remain open.
-Policy loading is distinct from runtime enforcement. Save slices to this hub and
-existing product issues. Ops PR157 remains unactivated; full objective active.
+Reuse complete HTML8f99f177, Excel workbook314fa9fa/44inputs/21scenarios/378outputs/
+seven missing-zero/62saved-reopened values and private first-wave exports. Actual
+quota/invoices/power/hardware/throughput/economics are unknown until observed.
+Preserve workbook WARNs, command-center38 mapping, schema/taste sync and lead-only
+memo review.20+brand departments remain a rollout proposal. Policy loading is not
+runtime enforcement. Save each consequential finished outcome to this hub and
+existing issues; keep the full objective unfinished until its evidence exists.
 
 ### FrankX: continue the article register and release reviewed revisions
 
