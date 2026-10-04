@@ -19,39 +19,49 @@
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue unfinished task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal was paused
-on interruption; preserve the full objective and report actual runtime state.
-Owned source `9bd39ced1b16264f24b1cde9988731caa5640769`, branch `agent/codex/editorial-renewal-20261003`,
-worktree `frankx-editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`,
-`REVIEW-BATCH-23.md`, evidence and progress in `docs/ops/editorial/`.
-96 prepared/four observed/178 unreviewed, 100 receipts, 96 held social sets.
-Preserve stronger production implementations, original dates/URLs/assets,
-all prior receipt hashes, commercial rows and 23 foreign source edits.
+Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal remains
+paused after interruption; preserve intent and report actual state. Source
+`24e18e19f9791de3e65572019a792fa18c6a07ec` on owned branch `agent/codex/editorial-renewal-20261003`,
+worktree `frankx-editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`, batch23,
+`RELEASE-READINESS-2026-10-04.md`, Sonnet evidence and article progress.
+278 slugs/769 variants: 96 prepared/four observed/178 unreviewed, 100 receipts,
+96 held social/visual sets. Preserve stronger production work, dates/URLs/assets,
+prior hashes, affiliate rows and all 23 foreign edits. Serve musicians, music
+producers, creators, founders, executives and AI architects.
 
-Latest five creator guides are sourced and compile, with actual authored CSV/SRT
-validation. No connector/export/media/customer outcomes claimed. StepFun empty
-final supplies no independent verdict. Obtain useful exact-revision review and
-resolve earlier gaps. Keep null referral URLs pending account verification.
+The five latest creator-guide texts have independent Sonnet 5.5 review with ten
+required corrections resolved. It is not rendered/product/account acceptance.
+CapCut licence is non-US; old receipt is superseded. Prior failed/limited reviews
+remain. Complete earlier findings and reviews of other prepared revisions.
+Keep referral URLs null until account verification; never invent endorsement.
 
-Finish remaining articles and complete responsive design/SEO/affiliate gates.
-Refresh machine/storage admission; restore supported browser capture and admitted
-dependencies before heavy work. Sentence-case styling and serif visuals need
-captured implementation/refinement; existing uppercase token remains open.
-Port accepted changes surgically to the distinct production repo, pass normal
-CI and verify exact deployed commit, critical journeys and rollback evidence.
-No handover or authoring CI can close the website outcome. No Higgsfield tools.
-Generated visuals require sidecars and both ledgers; live posting/founder approval
-retain existing gates. Read humanizer and apply design/accessibility verification.
+The local Chrome resourcesPath repair is verified and Chrome transport works.
+Confirm the side panel opens. Refresh pp/workload and actual storage admission;
+obtain admitted desktop/mobile capture and dependency recovery. Browser QA held
+at 6230/8192 MB and 14/8 runtimes, storage below 15%; Next/TypeScript missing and
+runtime links gate has no owned dev server. No foreign process/lock deletion.
+Observed live Canva exposes HERO_PROMPT and uppercase interface labels. Finish
+captured serif/sentence-case design, useful visuals, SEO, affiliate checks and
+remaining corpus; compare/refine against stronger existing public experiences.
+No Higgsfield; generated visuals need sidecars and both ledgers. Live posting
+and founder approval retain existing gates. Apply humanizer and accessibility.
 
-Queued next task: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
-Experiences. Plan: `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md`.
-Execute after this website renewal is verified complete. Reconcile six proposed
-briefs with the register, confirm the second approved existing site and API access,
-then select two distinct reader jobs. Article sources restricted to Vercel, NVIDIA,
-OpenAI, Anthropic, OpenRouter and expressly approved APIs. Retrieve real usage and
-fresh model routes; never use documentation sample rows as observed data. Keep
-timeline/team/budget gaps explicit. Queueing is not running automation.
+Port only accepted files through an owned production lane in
+`frankxai/frankx.ai-vercel-website`; pass predeploy/security and normal CI, merge
+to main without bypasses and verify exact deployed revision, critical journeys
+and recovery. Observed existing 0ff16a8d production metadata READY does not establish this
+source release. Authoring/handover CI cannot close the website. Save hub/issue proof.
+
+Queued next: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
+Experiences. Plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` is local.
+Execute after full website renewal is verified complete. Reconcile six briefs,
+confirm the second approved existing site and authenticated/public API access,
+then select distinct reader jobs. Article sources restricted to Vercel, NVIDIA,
+OpenAI, Anthropic, OpenRouter and expressly approved APIs. Retrieve actual usage
+with measured window, attribution and stale/error behavior; keep current model
+routes, publication-time checks and timeline/team/budget gaps explicit. Queued
+records are not running automation.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
