@@ -19,31 +19,39 @@
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue full task `01a101fc-228c-7010-bba6-cf60bbad2357`,
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Source `fc1850d99193501822fc9e3660b972fc99346977` in owned `frankx-editorial-renewal-20261003`,
-branch `agent/codex/editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`,
-`REVIEW-BATCH-22.md`, evidence and progress in `docs/ops/editorial/`.
-91 prepared/four observed/183 unreviewed, 95 receipts and 91 held social sets.
-Preserve all older hashes, improved production science and 23 foreign edits.
+Continue unfinished task `01a101fc-228c-7010-bba6-cf60bbad2357` and
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal was paused
+on interruption; preserve the full objective and report actual runtime state.
+Owned source `9bd39ced1b16264f24b1cde9988731caa5640769`, branch `agent/codex/editorial-renewal-20261003`,
+worktree `frankx-editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`,
+`REVIEW-BATCH-23.md`, evidence and progress in `docs/ops/editorial/`.
+96 prepared/four observed/178 unreviewed, 100 receipts, 96 held social sets.
+Preserve stronger production implementations, original dates/URLs/assets,
+all prior receipt hashes, commercial rows and 23 foreign source edits.
 
-Current visual-tool guides replace unverified tests and stale models with useful
-authored examples and scoped primary sources. Three public affiliate candidates
-are pending enrollment; null issued URLs and absent qualification dates must
-remain until actual approval, destination and disclosure are verified. Preserve
-prior 32 rows and production Canva closure; legacy projections need review.
-NVIDIA minimal valid PASS responses are insufficient substantive critique; Qwen
-times out. Obtain useful exact-revision independent review and keep earlier gaps.
+Latest five creator guides are sourced and compile, with actual authored CSV/SRT
+validation. No connector/export/media/customer outcomes claimed. StepFun empty
+final supplies no independent verdict. Obtain useful exact-revision review and
+resolve earlier gaps. Keep null referral URLs pending account verification.
 
-Continue valuable content work while heavy work is constrained. Refresh machine/
-storage admission; restore supported responsive capture and admitted dependencies.
-Policies loaded are not runtime or deployment enforcement. Capture existing
-surfaces, refine sentence-case/serif visuals and verify full release gates before
-production port and exact green main. Actual uppercase token rule remains open.
-Frontier freshness, SEO/demand measurements, affiliate activation, visual
-sidecars/both ledgers/taste-vault sync and six-audience experiences remain required.
-No Higgsfield tools/skills. Live social and premium founder approval stay gated.
-Keep full goal active; save useful slices in this hub and issue252.
+Finish remaining articles and complete responsive design/SEO/affiliate gates.
+Refresh machine/storage admission; restore supported browser capture and admitted
+dependencies before heavy work. Sentence-case styling and serif visuals need
+captured implementation/refinement; existing uppercase token remains open.
+Port accepted changes surgically to the distinct production repo, pass normal
+CI and verify exact deployed commit, critical journeys and rollback evidence.
+No handover or authoring CI can close the website outcome. No Higgsfield tools.
+Generated visuals require sidecars and both ledgers; live posting/founder approval
+retain existing gates. Read humanizer and apply design/accessibility verification.
+
+Queued next task: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
+Experiences. Plan: `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md`.
+Execute after this website renewal is verified complete. Reconcile six proposed
+briefs with the register, confirm the second approved existing site and API access,
+then select two distinct reader jobs. Article sources restricted to Vercel, NVIDIA,
+OpenAI, Anthropic, OpenRouter and expressly approved APIs. Retrieve real usage and
+fresh model routes; never use documentation sample rows as observed data. Keep
+timeline/team/budget gaps explicit. Queueing is not running automation.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 

@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 22 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 23 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 
@@ -277,38 +277,37 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-Full six-audience website goal stays active, task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+Full website outcome remains unfinished, task `01a101fc-228c-7010-bba6-cf60bbad2357`,
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 22 source `fc1850d99193501822fc9e3660b972fc99346977`, articles/candidates `f6e4e291457fafe7d72a385e957785e2a0fafc7c`.
-Register: 278 slugs/769 variants, 91 prepared, four observed production corrections,
-183 unreviewed. All 91 prepared hashes match; 95 receipts preserve 91 prior rows.
+User requested status, slice completion and a queued multi-site partner plan.
+Goal tool reports paused after interruption; intent is preserved, not completed.
+Local source `9bd39ced1b16264f24b1cde9988731caa5640769`; article revision `fe728a408c32788b7280cd7b490d93cf03978f2f`.
+Register: 278 slugs/769 variants, 96 prepared, four observed production corrections,
+178 unreviewed, 100 receipts and 96 held social/visual sets. Prior 95 receipts intact.
 
-Four substantial image, accurate product-photo, vector-logo and editable-deck
-guides correct stale frontier models, fabricated testing/ranks, licence and
-export claims using current primary documentation. Authored cover/SKU/identity/
-five-slide artifacts are explicitly illustrative. Existing photo/editor/designer/
-presentation-template alternatives and specific recovery remain. No generated
-image/deck, observed benchmark, rights clearance or user-success claim.
+Five substantial Canva/Gamma/CapCut/HeyGen/Perplexity guides correct current
+official scope, access, licence, export, credit and research-mode claims. Authored
+campaign, proposal, SRT, onboarding and memo examples are explicitly illustrative.
+Canva preserves the stronger current production founder/MCP architecture, two
+videos, hub/dynamic guide, canonical-site and commercial sections. Six internal
+source resolutions, five MDX compiles, actual CSV/SRT parsing and nine tests pass.
+All 96 prepared hashes match. Catalogue remains 35; no paid URL or enrollment.
+StepFun exhausts 6000 response tokens with empty final: no critique or acceptance.
+Earlier independent/founder gaps remain. Source secret scans stay enabled.
 
-Catalog 35: three public Photoroom/Looka/Plus AI candidates added; all prior 32
-rows preserved, no new issued URL/account verification/enrollment/sponsored link.
-Four MDX compiles, four internal source links, nine corpus tests and candidate
-gate pass. Current production `f9811d47` comparison preserves its Canva closure,
-stable original dates/URLs/assets and improved scientific corrections.
+New planning deliverable: `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md`.
+Six proposed briefs, approved partner sources, actual-usage requirements, visuals,
+SEO, interconnections, recovery and timeline/resource placeholders. Site B and API
+access unverified. Model docs inspected; publication-time registry not retrieved.
+Implementation queued after full website renewal; no new goal or running worker.
 
-Two NVIDIA requests return valid minimal PASS JSON with None/empty usefulness;
-Qwen substantive request times out. Original receipts retained; no substantial
-independent source/editorial/design/security/commercial acceptance inferred.
-Earlier review and Higher Self founder gaps remain. 91 social/serif briefs held.
-Actual design tokens still have uppercase styling; capture/refinement required.
-
-Initial BOUNDED admission: 8923/8192/4827 MB, CPU 40%, 12/12 runtimes, new agents
-paused. Disk below 15%, supported apps/browsers empty, Next/TypeScript absent.
-Text/read/small checks only. No source push/deploy, install/build/new worktree/
-agent/media/foreign cleanup or persistent worker/tab. Enabled source secret
-scans 55.46/87.82 KB pass. Full responsive capture, independent acceptance,
-surgical production integration and exact green website main remain required.
-23 foreign source edits preserved. Hub CI proves this handover only.
+BOUNDED admission, 12/12 runtimes and new agents paused; storage below 15%.
+Supported browser/app inventory empty; Next/TypeScript unavailable. Text/small
+checks only. No website source push/deploy, new agents/media/worktrees or installs.
+23 foreign source edits preserved. No session-owned persistent worker or browser.
+Capture/refinement, useful independent review, affiliate verification, production
+integration and exact green website deployment remain open. Hub CI proves only
+this three-file handover, not the website. Keep the full six-audience scope.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
