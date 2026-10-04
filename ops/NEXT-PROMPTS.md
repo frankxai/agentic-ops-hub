@@ -39,15 +39,25 @@ artifact bytes and canonical derivation match. Old v1 pack and 28 legacy files
 are preserved. Legacy admission rejects v2 receipts and workflow health keys.
 Preparation is not operation authority. Reuse docs/WORKFLOW-RUNTIME-V2.md.
 
-Implement the existing runtime's authenticated owner/engine/executor transport:
-fresh tenant/instance binding, signed single-use operation grants, durable lease
-and cumulative spend reservation, independent stop and real reconciliation.
-Use current official APIs, one scheduler and exact source review. Preserve local
-private-data restrictions and export/recovery. Obtain the required security
-acceptance and separately named human-approved reversible pilot, then measure
-useful output/repair/time/cost on the same task against the existing hardware
-sheet. Do not treat caller-authored evidence as a grant or cancellation as proof
-that a remote effect stopped.
+Swarm PR33 merged at c62155046ba80982148a05d5aa469fa8327f52ab; source 0e2ddbad, exact main CI
+37177811511 passes 456/29 plus typecheck/PostgreSQL 17/build/dry run. Full eleven-file
+native source critique passes, all hashes match; six new files and 37 existing
+generated files preserved. Reuse docs/WORKFLOW-INSTANCE-OBSERVATION.md: actual
+pack-issued operation binding and fixed-origin authenticated Cloudflare GET
+observer. Forty new tests cover tenant/version/instance substitutions, old signed
+approval denial, network failures and exact-ID recovery. No live tenant/readback,
+executor/process/descendant or activation authority follows from mocked tests.
+
+Next wire the final context digest into sealed durable prepared registration and
+readback, operation-time signed admission and authenticated engine/executor
+dispatch. Reuse existing single-use leases/cumulative budgets/independent stop/
+usage authority; do not rebuild the completed GET observer or add a scheduler.
+Retain exact instance IDs on uncertain outcomes and reconcile external effects.
+Implement Vercel's app-local adapter separately. Fresh tenant access, host capacity,
+executor/process/descendant evidence, independent named pilot security acceptance
+and the separately named human-approved reversible mission remain required.
+Measure useful output/repair/time/actual cost on the same hardware-sheet task.
+Preserve private-data restrictions, export/recovery and all human gates.
 
 Reuse Technology PR34/77a4374 and private complete HTML 8f99f177. Their prior
 153 unit/51-page/34 cloud-browser and 38 local/14 Chrome evidence remains in its
