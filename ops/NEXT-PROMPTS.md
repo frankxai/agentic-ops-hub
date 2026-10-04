@@ -22,40 +22,41 @@
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
 six-audience website, intelligence, frontier, SEO, affiliate, serif visual and
-social outcome. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-15.md`, both exact-revision
+social outcome. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-16.md`, both exact-revision
 evidence files and `article-review-progress.json` in `docs/ops/editorial/`.
-Authoring source `2543a02aac38d6b2a30f533ad222841bdc3e3c3f`, branch `agent/codex/editorial-renewal-20261003`.
-Preserve batches 1-14, all 23 foreign edits and newer production improvements.
+Authoring source `a32c5c34ba0f58517c5fae8ce97f90fd02f71fb8`, branch `agent/codex/editorial-renewal-20261003`.
+Preserve batches 1-15, all 23 foreign edits and newer production improvements.
 
-The register has 63 prepared revisions, four observed corrections and 211
-unreviewed articles. All prepared hashes match. Four new model guides distinguish
-documented capabilities, historical vendor results and proposed useful tasks.
-Current public sources recommend newer OpenAI models, stable Gemini 3.8 Flash,
-DeepSeek V4.1 Flash and Grok 4.7. Earlier prepared overview freshness needs a new
-receipt and retained history. No model/audio/video/patch trial was performed.
-Source critiques timed out twice on Poolside and once on Qwen. Obtain a valid
-independent exact-revision critique, plus earlier batch 13 voice and batch 14
-creator reviews. Preserve every failure and do not infer release acceptance.
+There are 67 prepared revisions, four observed production corrections and 207
+unreviewed articles. All prepared hashes match. Four new guides distinguish active
+legacy Opus integrations, Kimi routes and licence conditions, and Qwen scope/cache
+creation categories from historical vendor results and proposed evaluations.
+No model, cache-hit, token-count, migration or product trial was performed.
+The Opus pair critique on Cohere and Kimi/Qwen critique on NVIDIA timed out.
+Obtain valid independent exact-revision critique, plus earlier batch 13 voice,
+batch 14 creator and batch 15 reviews. Preserve each original failure and finding.
+Earlier frontier overviews need fresh revisions with retained hashes/history.
 
-Current batch production baseline `2e6e8e73` differs from frozen register
-`badd9c44`/`7fe4fde1`. Preserve the corrected Grok `/llm-hub/grok-4-6` route,
-original assets/metadata and both LearnHubCallout slugs. No affiliate account
-qualification or issued URL changed. Resolve real partner qualification before
-commercial activation. Social and visual sets remain held, with no generated
-image. Taste retrieval does not establish this task's writable-vault sync.
+Current batch production baseline `f9811d47` differs from frozen register
+`badd9c44`/`7fe4fde1`. All four original bodies match. Preserve stable URLs, metadata,
+assets and the Opus 4.8 callout slug. No affiliate account qualification or issued
+URL changed; establish real qualification before commercial activation. The 67
+social/visual sets remain held. No new image. Taste retrieval does not establish
+this task's writable-vault synchronization.
 
-Storage remains below 15% free; text and small tests only. Do not install
-dependencies, create worktrees, generate media or start agents. CUA is empty;
-borrowed Next/TypeScript targets remain absent. The earlier browser connection
-question remains unanswered. Recover admitted owned dependencies and capture
-without deleting files or interfering with foreign work. Complete full gates,
-independent responsive/design/security/commercial acceptance, surgical production
-port, normal merge and exact green deployment. Continue article work while held.
+Storage remains below 15% free; text and small checks only. Do not install
+dependencies, create worktrees, generate media or start agents. CUA is empty and
+borrowed Next/TypeScript targets absent. The browser connection question remains
+unanswered. Recover admitted owned dependencies and capture without deleting
+files or interfering with foreign work. Complete full gates and independent
+responsive/design/security/commercial acceptance, port accepted changes against
+fresh production main, merge normally and verify the exact green deployment.
+Continue useful article work while release is held.
 
 Use sentence-case serif visuals, exact prompt sidecars, both ledgers and taste
 synchronization after admission. Higgsfield skills/MCP are banned. Public social
-posting and premium founder approval remain human-gated. Save completed slices in
-this hub and issue #252 and preserve the private objective ledger, original intent
+posting and premium founder approval stay human-gated. Save completed slices in
+this hub and issue #252. Preserve the private objective ledger, original intent
 and unfinished work. Article totals and documentation CI cannot close the goal.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
