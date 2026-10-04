@@ -2,7 +2,26 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 10 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 10 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Asset registry verifies current bytes; source promotion held (Codex)
+
+[Kernel draft35](https://github.com/frankxai/starlight-design-intelligence/pull/35)
+at ddf1d663 replaces echo-success/fabricated runtime approval with empty strict
+registry and preview-bound local VIS/job/output/provenance verification. Former
+sample preserved, Hermes/VIS schemas reused. Actual preview-proof and Windows
+short-alias RED cases repaired;14targeted tests pass on Windows/Linux. CI37171363371/
+37171363383 pass75LinuxNode/15Python/53browser-process checks; tested merge96f8f761,
+all12blobs equal. Prior clean Windows72/74 retains two incumbent EPERM failures.
+
+Same synthetic-job comparison shows manual SHA catches changed bytes that the
+incumbent media-job validator accepts; integrated preview rejects/recovery succeeds.
+No real artwork registered or authenticated approval/rights/ledger/publication.
+Poolside735444ff REVISE findings retained/disputed; NVIDIA timeout and current
+ddf1d663 Cohere length/null have no verdict. Draft source/release stay held.
+Three Figma reads hit Starter quota, no canvas edits/current state proof. Both
+Bash hooks still untrusted at02:26UTC; native dispatch/refinement remains pending.
+All eleven requirements remain open/partial. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-04: Shell design adapter installed; native trust pending (Codex)
 
