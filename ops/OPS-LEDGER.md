@@ -2,8 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (workflow v2 preparation merged/live authority open; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 12 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
-
+**Last sweep:** 2026-10-04 (workflow v2 preparation merged/live authority open; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 13 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Versioned workflow preparation integrated; live authority remains open (Codex)
 
@@ -228,6 +227,23 @@ planning assumptions. No cache purge, purchase, recurring schedule, live worker
 or production activation follows from this slice. Continue one useful recoverable
 mission under current authority and measured same-task comparison; preserve the
 existing hardware sheet and all incomplete product/release gates.
+
+## 2026-10-04: Starlight pack references owning identity; promotion pending (Codex)
+
+Kernel draft36/96192ed links the recovered star, scoped lab font/token roles,
+retained protocol variant and existing constitution modes. Lab manifest/SVG HTTP
+hashes match owning main854357b; Academy referenceabaf24b retained. Six real
+consumer probes preserve compatibility and reject invented caller/mode. Linux
+CI37175395531 passes61Node/15Python/53browser-process checks; all three tested
+merge blobs equal. Independent Step exact-source PASS; named human promotion,
+rendered identity, fonts/rights and actual product adoption remain open.
+
+Source consistency and schema loading establish no site/token runtime
+enforcement. No product/source geometry/image/downstream pin changed. Disk
+crossed15%floor to14.9735%, Queen receipt and live notice saved; text/small-check
+posture only. Both native Bash hooks still pending Frank's `/hooks` review.
+All eleven estate requirements remain open/partial. See [session](sessions/2026-10-04.md)
+and [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
 
 ## 2026-10-04: Brand images inspected; favicon choice remains open (Codex)
 
@@ -612,55 +628,39 @@ enabled Computer Use browser was available for native-provider review.
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-Continue the complete six-audience website goal, task
-`01a101fc-228c-7010-bba6-cf60bbad2357` and
+Continue the full six-audience website goal, task
+`01a101fc-228c-7010-bba6-cf60bbad2357`, under
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Source `6d7577effbad0f0d716bcbbd58b6652dff62515d` records batch 12; article/catalog revision `253bb2f9`.
-278 URLs/769 variants: 51 prepared authoring revisions, four observed production
-corrections, 223 unreviewed. All 51 hashes match; 55 receipts preserve prior51;
-51 article-linked social sets held. No website release acceptance or deployment.
+Batch 13 source: `44a6caf1da6cd1601e90d147cca18b024ea9a140`; article/catalogue revision `a0fd203f`.
+The frozen register covers 278 URLs and 769 variants: 55 prepared revisions,
+four observed production corrections and 219 unreviewed articles. All 55 hashes
+match; 59 receipts preserve earlier work. There are 55 held social brief sets.
 
-Four substantive creator/affiliate rewrites remove false trials, ranked earnings,
-MCP churn claims and the 164-word faceless scaffold. Current Eleven v4/v4Turbo
-interfaces/PVC support, generation-time licensing, owner verification and Alpha
-dubbing are scoped. Descript transcript correction differs from media editing;
-authorised repair, meaningful cuts, two usage allowances and final export review
-serve the same reader task. Faceless guide includes an original proposed script
-and five-shot storyboard with current YouTube disclosure/originality distinctions.
-Existing manual/recorded/human narrator/editor alternatives remain serious.
+Four guides now cover voice alternatives, faceless-video tools, avatars and
+OpusClip. They replace invented trials and unsupported quality, cost, rights or
+virality promises with documented choices and useful synthetic examples. Current
+Sonic 3.6, Fish S2.1 Pro billing ambiguity, consent, export requirements and
+recovery are explicit. Recorded presenters and existing editors remain serious
+alternatives. Three video-partner public catalogue rows change; account approval,
+issued URLs and sponsor qualification remain separate. Other 29 rows are preserved.
 
-Current public Descript terms: $25 once for new qualifying subscriptions, legacy
-recurring referrals distinct. Canva production closure retained. Three JSON/CSV
-programme rows and legacy Canva fields corrected; other29 historical rows held
-for review. Existing JSON issued URLs/statuses/account dates preserved. Public
-terms dates do not activate sponsor links. CSV Eleven URL aligned to the existing
-recorded issued URL. Global disclosure no longer claims universal personal use.
-Production narration figure/recommendation retained; sparse source mapping lacks
-them, so preserve current production components/registry during surgical port.
+Four MDX compiles, six source links, six arithmetic checks, six affiliate tests
+and nine corpus tests pass. The independent video critique returned PASS with
+four reconciled suggestions. Voice reviews produced two timeouts and an output
+limit without a valid final critique; that review remains open. No live product,
+render, rights, security, commercial, SEO or publication acceptance follows.
 
-Four MDX/GFM compiles, five source links, seven synthetic arithmetic checks,
-six affiliate boundary tests and nine corpus tests pass. Two exact supplied-source
-Poolside critiques returned PASS; intervening Qwen client timeout preserved.
-Creator PASS also offered four findings: SDK automation and an expanded YouTube
-policy were unsupported by primary pages, precise pricing optional, Descript
-allowances already scoped. Original findings/reconciliation retained, no private
-thought text published. No independently retrieved source/render/rights/security/
-commercial/SEO acceptance or actual audio/account/conversion trial follows.
+Storage crossed below 15% free: text/configuration and small checks remain
+permitted; installs, new worktrees, media and new agents are held. CUA has no
+browser surfaces; borrowed Next/TypeScript targets are absent and untouched.
+Full gates, current desktop/mobile capture, independent acceptance, a surgical
+production port and exact green main deployment remain required. No website
+source push or deployment occurred. All 23 foreign edits remain unstaged.
 
-Latest PP build BOUNDED9597/8192/5501MB,CPU8%,12/12runtimes,oneparallel,45minutes,
-pause-new-swarms. Disk snapshot144.21GiB/15.15% is not growth admission. Borrowed
-Next/TypeScript absent and untouched; supported CUA apps=[]/browsers=[] blocks
-responsive capture under the release kernel. No fanout, install, build, new
-worktree, media, cleanup, source push or live post. Owned processes terminal.
-Source secret hooks53.00KB/97.88KB pass;23 foreign edits remain unstaged.
-Prior Vercel, Node companion, cloud/eval and other receipts retain exact scopes.
-
-Save both this hub handover and issue252. Own free checkout starts fresh main
-`20095f0c`, preserving other fronts and full session history. Recover admitted
-owned dependencies, full gates and supported capture; independently review and
-port accepted files against fresh production main, normal merge and exact green
-deployment. Continue remaining223 URLs while held. Policy loading is distinct
-from runtime enforcement. See [session](sessions/2026-10-04.md).
+This handover changes only the FrankX ledger/prompt sections and appends the
+dated session from fresh hub main `9ce38af9`. Earlier history and other fronts
+remain intact. Hub CI proves documentation only. Continue the remaining articles
+and recover admitted release capabilities without reducing the original outcome.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 

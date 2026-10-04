@@ -59,64 +59,36 @@ Save each completed slice to this hub plus existing product issue; full goal act
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website/article goal for musicians, producers, creators, founders, executives
-and AI architects: useful human writing, honest research, public/private
-intelligence, current frontier sources, qualified affiliates, sophisticated
-sentence-case serif visuals, SEO/social connections and accepted production.
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the complete
+six-audience website, editorial, SEO, affiliate, visual and social objective.
+Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-13.md`, its evidence receipts and
+`article-review-progress.json` in `docs/ops/editorial/`.
+Authoring source: `44a6caf1da6cd1601e90d147cca18b024ea9a140`, branch `agent/codex/editorial-renewal-20261003`.
+Preserve batches 1–12, all 23 foreign edits and newer production improvements.
 
-Authoring source `6d7577effbad0f0d716bcbbd58b6652dff62515d`, branch agent/codex/editorial-renewal-20261003,
-worktree `C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`.
-51 prepared +4 observed corrections +223 unreviewed =278 URLs/769variants.
-55 receipts preserve prior51; all51 authoring hashes match;51 social sets held.
-Read REVIEW-BATCH-12 and source/independent receipts plus the existing renewal
-plan and release-recovery receipt. No article/social set is release-accepted.
+The register has 55 prepared revisions, four observed corrections and 219
+unreviewed articles; all prepared hashes match. Four latest guides cover voice
+selection, faceless production, avatars and clipping. Their tasks, rights,
+synthetic billing examples and failure handling remain proposed workflows.
+Production baseline `f255c9f9` differs from the frozen register's `badd9c44` and
+`7fe4fde1`. Preserve production assets/components and the ordinary Faceless.so
+destination. Three public partner rows are corrected; public check dates cannot
+activate paid referrals. Complete the valid exact-revision voice critique.
 
-Current batch12 four creator/affiliate articles bind to253bb2f9. Two isolated
-Poolside final critiques PASS; Qwen timeout preserved. Creator PASS included
-four suggestions, reconciled against actual current primary sources: SDK
-automation claim conflates SpeechEngine with TTD, expanded YouTube AI policy
-repair contradicts official minor clarification, precise rates optional,
-Descript allowance distinction already explicit. Preserve original critiques,
-facts, scope and unchanged hashes. No live-source/render/rights/commercial
-acceptance. Actual4MDX/5source links/7synthetic arithmetic/6affiliate/9corpus
-checks pass. No paidgeneration, listening, product/account/conversion trial.
+Storage is below 15% free. Work on text/configuration and small tests; do not
+install dependencies, create worktrees, generate media or start new agents.
+The existing browser connection question remains unanswered. CUA is empty;
+borrowed Next/TypeScript targets are absent. Recover admitted owned dependencies
+and responsive capture without deleting files or interfering with foreign tasks.
 
-Current public programme terms updated only forEleven/Descript/Canva.29other
-catalogue rows remain historical. Public terms date is not account qualification;
-do not fabricate sponsor freshness, approval or referral IDs. Preserve existing
-issued JSON URLs. Current production already corrects Canva closure and includes
-the voice-production figure/recommendation; keep these accepted implementations.
-Sparse authoring mapping lacks the components; compile is not render evidence.
-
-Earlier exact Node companion e6b4bf77 and14tests/lost-ack readback retain scope;
-post-write save-failure injection remains untested. Earlier eval/cloud reviews,
-12Python checker and8SQLite query cases, source refinements and all failed
-provider requests remain preserved. No SDK/Oracle/model/cloud/security trial.
-Never transfer a PASS across altered article bytes or infer one from token counts.
-
-Fresh build PP BOUNDED9597/8192/5501MB,CPU8%,12/12runtimes,oneparallel,45minutes,
-pause-new-swarms; refresh stale admission. Disk144.21GiB/15.15% is a sample,
-not storage-growth admission. No cleanup authority. Borrowed Next/TypeScript
-absent and untouched. Supported CUA has no surfaces; prior connection request
-remains pending. Release skill stops promotion without capture. Existing Vercel
-batch10deployment044c8447/old RAG observations retain their original timestamp;
-fresh GitHub production main was044c8447 at batch12 baseline, no new live route.
-
-Recover admitted owned dependencies, supported desktop/mobile capture and full
-merge/predeploy/build gates. Obtain independent source/security/design/commercial
-acceptance and actual partner destination checks. Port accepted public files
-surgically against fresh production main, preserving stronger work and owners.
-Normal PR merge, exact green deployment SHA, live route/filter/affiliate/denial/
-recovery verification. Continue remaining223 URLs with current primary sources,
-distinct reader jobs, useful examples and serious alternatives while held.
-
-Serif/sentence-case taste remains binding. Actual recall supports Playfair/quiet
-grain briefs; legacy uppercase tokens still need rendered design work. No new
-visual generated. Generation needs exact prompt sidecar,bothledgers,taste sync
-and responsive acceptance. Live social/premium founder approval stays gated.
-Save the next completed slice in this hub plus issue252. Preserve foreign edits
-and unfinished provenance. The complete goal stays active until accepted.
+Then complete full gates and independent rendered/security/commercial review,
+port accepted changes against fresh production main, merge normally and verify
+the exact green deployment. Continue remaining articles while held. Refine
+visual/social work after admission, with sentence-case Playfair typography,
+provenance and current taste evidence. Higgsfield MCP/skills remain banned.
+Public social posting and founder approvals remain gated. Save progress in this
+hub and issue #252; preserve the private objective ledger and unfinished work.
+Do not close the website goal from article counts or documentation CI.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
@@ -128,6 +100,26 @@ Figma/connected libraries; public release enforcement; every native host/entry;
 automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
+
+Current source-authority slice: kernel draft36 is frozen at
+`96192ed5ba3469665d1539757dbfbfaa7231fc35`. The canonical owned kernel checkout
+now uses `agent/codex/sis-identity-authority-20261004`; older35/ddf1d663 remains
+a preserved branch, not the current primary lane. Pack links owning lab main854357b
+and Academyabaf24b: recovered star, observed lab-only tokens/named type roles,
+retained protocol variant and four existing constitution modes. Historical web
+URL aliases canonical `.ai` repository; count once. HTTP manifest/three SVGs
+match pinned bytes, no rendered/application/rights/adoption proof. Six actual
+consumer probes pass expected compatibility and invented-repo/mode denials.
+Linux CI37175395531 passes61Node/15Python/53browser-process; all3tested-merge335a262
+blobs equal. Independent Step source PASS11337tokens; named human promotion open,
+PR36 draft/unmerged. Two incumbent Windows symlinkEPERM failures retained; clean
+adoption success case passed after commit. Token/site rules are guidance, not
+runtime enforcement. No new visuals/product pins. Private sis-identity receipts
+preserve exact sources, failures and review. Disk14.97%crossed15%floor: Queen
+receipt/live notice saved, bounded text/config/small checks; no new worktrees,
+installs, local media/model/build fanout. Existing untrusted Bash, Figma quota,
+browser/FrankX choice and all creator/estate gaps remain. Next inspect current
+protocol/Academy application and licensing; render only after fresh admission.
 
 Current visual-asset slice: FrankX issue872 tracks a real public favicon
 mismatch and prepared F/star exports. Source main044c84472b5cbdffce12bb75ac9b6184dcc48efe
