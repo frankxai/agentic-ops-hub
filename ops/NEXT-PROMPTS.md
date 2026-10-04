@@ -68,52 +68,58 @@ and AI architects: useful human writing, honest research, public/private
 intelligence, current frontier sources, qualified affiliates, sophisticated
 sentence-case serif visuals, SEO/social connections and accepted production.
 
-Authoring source `1d26ff5a522aa24674763719228919624439530c`, branch
-agent/codex/editorial-renewal-20261003, worktree
-`C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`.
-47 prepared + 4 observed corrections + 227 unreviewed = 278 URLs/769 variants.
-51 progress receipts preserve prior 48; all 47 authoring hashes match. 47 social
-sets held. Read batch 11 source/review receipts and existing release-recovery
-receipt. No prepared article or social set has publication acceptance.
+Authoring source `6d7577effbad0f0d716bcbbd58b6652dff62515d`, branch agent/codex/editorial-renewal-20261003,
+worktree `C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`.
+51 prepared +4 observed corrections +223 unreviewed =278 URLs/769variants.
+55 receipts preserve prior51; all51 authoring hashes match;51 social sets held.
+Read REVIEW-BATCH-12 and source/independent receipts plus the existing renewal
+plan and release-recovery receipt. No article/social set is release-accepted.
 
-New eval/AWS/OCI guides include actual pinned SDK inspection, current primary
-sources, serious existing report/status/eval-tool alternatives, 12 exact Python
-checker cases and eight exact six-row SQLite query cases. Three MDX compiles,
-ten internal source links and nine corpus tests pass. No model/cloud/Oracle
-trial. Cloud REVISE objections were reconciled with primary evidence; preserve
-original findings. Three eval failures plus malformed Poolside response and local
-routing correction remain. Corrected Cohere returned length/null. Eval/AWS bytes
-match original critique1855bf92; OCI session paragraph refined at082689d8. Source
-acceptance remains open. Never infer PASS from tokens, a fragment or missing text.
+Current batch12 four creator/affiliate articles bind to253bb2f9. Two isolated
+Poolside final critiques PASS; Qwen timeout preserved. Creator PASS included
+four suggestions, reconciled against actual current primary sources: SDK
+automation claim conflates SpeechEngine with TTD, expanded YouTube AI policy
+repair contradicts official minor clarification, precise rates optional,
+Descript allowance distinction already explicit. Preserve original critiques,
+facts, scope and unchanged hashes. No live-source/render/rights/commercial
+acceptance. Actual4MDX/5source links/7synthetic arithmetic/6affiliate/9corpus
+checks pass. No paidgeneration, listening, product/account/conversion trial.
 
-Prior Node companion e6b4bf77 and its 14 tests/local lost-ack readback keep their
-scope. Its later REVISE assertions were reconciled against actual paths; actual
-post-write save-failure injection remains untested. No new authentication,
-multiwriter, fsync or remote-delivery guarantee. Preserve every earlier receipt.
+Current public programme terms updated only forEleven/Descript/Canva.29other
+catalogue rows remain historical. Public terms date is not account qualification;
+do not fabricate sponsor freshness, approval or referral IDs. Preserve existing
+issued JSON URLs. Current production already corrects Canva closure and includes
+the voice-production figure/recommendation; keep these accepted implementations.
+Sparse authoring mapping lacks the components; compile is not render evidence.
 
-Latest build PP BOUNDED9,936/8,192/5,840 MB, CPU21%,12/12 runtimes,one workload,
-45 minutes,pause-new-swarms; refresh when stale. Disk145.85 GiB/15.33% sampled,
-not storage-growth admission. Canonical sensor remains absent in foreign config;
-known preserved a911b62c Quick/NoWrite evidence is historical. No cleanup authority.
-Borrowed Next/TypeScript absent and untouched. Supported CUA has no surfaces;
-prior Browser connection request remains pending. Release skill stops promotion
-without capture. No source push/public port/website deployment or live posting.
+Earlier exact Node companion e6b4bf77 and14tests/lost-ack readback retain scope;
+post-write save-failure injection remains untested. Earlier eval/cloud reviews,
+12Python checker and8SQLite query cases, source refinements and all failed
+provider requests remain preserved. No SDK/Oracle/model/cloud/security trial.
+Never transfer a PASS across altered article bytes or infer one from token counts.
 
-Recover admitted owned dependency environment and supported desktop/mobile capture,
-then full merge/predeploy/build plus independent source/security/design/commercial
-acceptance. Verify account-qualified affiliate destinations. Port accepted public
-files and needed companion against fresh production main, preserving stronger
-implementations and other owners. Normal PR merge; verify exact green deployment
-SHA, routes/filter/affiliate/denial/recovery. Vercel reads work with idOrName;
-batch 10 deployment044c8447 and old RAG copy were observed at their original time.
-Refresh live state before release. Continue remaining227 articles with current
-sources, distinct reader jobs and serious alternatives while held.
+Fresh build PP BOUNDED9597/8192/5501MB,CPU8%,12/12runtimes,oneparallel,45minutes,
+pause-new-swarms; refresh stale admission. Disk144.21GiB/15.15% is a sample,
+not storage-growth admission. No cleanup authority. Borrowed Next/TypeScript
+absent and untouched. Supported CUA has no surfaces; prior connection request
+remains pending. Release skill stops promotion without capture. Existing Vercel
+batch10deployment044c8447/old RAG observations retain their original timestamp;
+fresh GitHub production main was044c8447 at batch12 baseline, no new live route.
 
-Preserve serif/sentence-case taste; no fabricated benchmark, usage, ranking,
-scarcity, personal trial or partner enrollment. Actual memory recall supports
-serif briefs; no new asset generated. Generation needs sidecars, both ledgers and
-taste sync. Save next completed slice in this hub plus issue252. Keep the goal
-active until the entire outcome is accepted; counts do not close implementation.
+Recover admitted owned dependencies, supported desktop/mobile capture and full
+merge/predeploy/build gates. Obtain independent source/security/design/commercial
+acceptance and actual partner destination checks. Port accepted public files
+surgically against fresh production main, preserving stronger work and owners.
+Normal PR merge, exact green deployment SHA, live route/filter/affiliate/denial/
+recovery verification. Continue remaining223 URLs with current primary sources,
+distinct reader jobs, useful examples and serious alternatives while held.
+
+Serif/sentence-case taste remains binding. Actual recall supports Playfair/quiet
+grain briefs; legacy uppercase tokens still need rendered design work. No new
+visual generated. Generation needs exact prompt sidecar,bothledgers,taste sync
+and responsive acceptance. Live social/premium founder approval stays gated.
+Save the next completed slice in this hub plus issue252. Preserve foreign edits
+and unfinished provenance. The complete goal stays active until accepted.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 

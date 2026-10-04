@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 11 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 12 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Queen recovery integrated; workflow ownership reconciled (Codex)
 
@@ -543,43 +543,52 @@ enabled Computer Use browser was available for native-provider review.
 Continue the complete six-audience website goal, task
 `01a101fc-228c-7010-bba6-cf60bbad2357` and
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Source `1d26ff5a522aa24674763719228919624439530c` records batch 11, with article commits `1855bf92`/`082689d8`.
-278 URLs/769 variants: 47 prepared authoring revisions, four observed production
-corrections, 227 unreviewed. All 47 hashes match; 51 receipts preserve earlier
-48; 47 social sets remain held. No release acceptance or website deployment.
+Source `6d7577effbad0f0d716bcbbd58b6652dff62515d` records batch 12; article/catalog revision `253bb2f9`.
+278 URLs/769 variants: 51 prepared authoring revisions, four observed production
+corrections, 223 unreviewed. All 51 hashes match; 55 receipts preserve prior51;
+51 article-linked social sets held. No website release acceptance or deployment.
 
-Three substantive rewrites cover Claude Code eval methodology, current AWS
-Harness/Runtime/Strands choices and an inspectable OCI analyst query. They remove
-invented SDK APIs and unsupported speed, privacy, cost and security promises.
-Current Classic is closed to new AWS customers. Pinned SDK source and current
-official Oracle docs support the examples. Oracle session advice was narrowed
-after conflicting pages were reconciled. Original metadata and URLs preserved.
-Three MDX compiles, ten source links and nine corpus tests pass. The exact article
-checker ran 12 cases; its exact six-row SQL fixture ran eight SQLite cases.
-These are synthetic/source checks, not model, SDK-import, Oracle or cloud trials.
+Four substantive creator/affiliate rewrites remove false trials, ranked earnings,
+MCP churn claims and the 164-word faceless scaffold. Current Eleven v4/v4Turbo
+interfaces/PVC support, generation-time licensing, owner verification and Alpha
+dubbing are scoped. Descript transcript correction differs from media editing;
+authorised repair, meaningful cuts, two usage allowances and final export review
+serve the same reader task. Faceless guide includes an original proposed script
+and five-shot storyboard with current YouTube disclosure/originality distinctions.
+Existing manual/recorded/human narrator/editor alternatives remain serious.
 
-Five independent requests and their failures remain recorded. Cloud REVISE has
-two API objections contradicted by actual primary sources and one already scoped
-limit. Eval first length/null, second timeout, later Poolside malformed response
-and mistaken quotations, corrected Cohere length/null. A local wrapper routing
-mistake is preserved. Source acceptance remains pending; OCI prose changed after
-the original critique. Private thought text is excluded from the public receipt.
+Current public Descript terms: $25 once for new qualifying subscriptions, legacy
+recurring referrals distinct. Canva production closure retained. Three JSON/CSV
+programme rows and legacy Canva fields corrected; other29 historical rows held
+for review. Existing JSON issued URLs/statuses/account dates preserved. Public
+terms dates do not activate sponsor links. CSV Eleven URL aligned to the existing
+recorded issued URL. Global disclosure no longer claims universal personal use.
+Production narration figure/recommendation retained; sparse source mapping lacks
+them, so preserve current production components/registry during surgical port.
 
-Latest PP build BOUNDED: 9,936 MB free / 8,192 required / 5,840 projected,
-CPU21%, 12/12 runtimes, one workload, 45 minutes, pause-new-swarms. Disk sample
-145.85 GiB/15.33% is an observation, not storage growth admission. Borrowed
-Next/TypeScript remain absent; supported CUA apps=[]/browsers=[] blocks responsive
-capture under the release kernel. No agent fanout, install, build, new worktree,
-media, cleanup, source push or live post. All review processes are terminal.
-Current source secret hooks 42.78 KB/673 B/120.84 KB pass; 23 foreign edits remain
-unstaged. Existing batch 10 Vercel observation retains its original timestamp.
+Four MDX/GFM compiles, five source links, seven synthetic arithmetic checks,
+six affiliate boundary tests and nine corpus tests pass. Two exact supplied-source
+Poolside critiques returned PASS; intervening Qwen client timeout preserved.
+Creator PASS also offered four findings: SDK automation and an expanded YouTube
+policy were unsupported by primary pages, precise pricing optional, Descript
+allowances already scoped. Original findings/reconciliation retained, no private
+thought text published. No independently retrieved source/render/rights/security/
+commercial/SEO acceptance or actual audio/account/conversion trial follows.
 
-Save both this hub handover and issue252. The own three-file handover starts
-fresh main `3cbfb61b`, preserving all other fronts and complete session bytes.
-Next recover admitted owned dependencies, full gates and supported capture;
-review and port accepted public files surgically, then normal merge and verify
-the exact green deployment. Continue the remaining 227 articles while held.
-See [session](sessions/2026-10-04.md). Policy loading does not prove enforcement.
+Latest PP build BOUNDED9597/8192/5501MB,CPU8%,12/12runtimes,oneparallel,45minutes,
+pause-new-swarms. Disk snapshot144.21GiB/15.15% is not growth admission. Borrowed
+Next/TypeScript absent and untouched; supported CUA apps=[]/browsers=[] blocks
+responsive capture under the release kernel. No fanout, install, build, new
+worktree, media, cleanup, source push or live post. Owned processes terminal.
+Source secret hooks53.00KB/97.88KB pass;23 foreign edits remain unstaged.
+Prior Vercel, Node companion, cloud/eval and other receipts retain exact scopes.
+
+Save both this hub handover and issue252. Own free checkout starts fresh main
+`20095f0c`, preserving other fronts and full session history. Recover admitted
+owned dependencies, full gates and supported capture; independently review and
+port accepted files against fresh production main, normal merge and exact green
+deployment. Continue remaining223 URLs while held. Policy loading is distinct
+from runtime enforcement. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
