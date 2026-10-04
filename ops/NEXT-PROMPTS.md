@@ -26,47 +26,52 @@ and AI architects: useful human writing, honest research, public/private
 intelligence, current frontier sources, qualified affiliates, sophisticated
 sentence-case serif visuals, SEO/social connections and accepted production.
 
-Authoring source is `82a811a03d3614ac01974aa9249ef19e04866d48` on agent/codex/editorial-renewal-20261003 in
+Authoring source `1d26ff5a522aa24674763719228919624439530c`, branch
+agent/codex/editorial-renewal-20261003, worktree
 `C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`.
-44 prepared revisions  + 4 observed corrections  + 230 unreviewed  = 278 URLs,
-769 variants; 48 receipts/all 44 source hashes match;44 social sets held.
-Read batch 10 source/review/release receipts before continuing. The new RAG and
-temporal memory guides preserve metadata, compare ordinary search/relational
-state and include eight executed synthetic SQLite cases. Two MDX compiles/four
-source links/nine corpus tests pass. Strict source critique PASS/no findings
-is supplied-text review, not independent browsing/execution or acceptance.
+47 prepared + 4 observed corrections + 227 unreviewed = 278 URLs/769 variants.
+51 progress receipts preserve prior 48; all 47 authoring hashes match. 47 social
+sets held. Read batch 11 source/review receipts and existing release-recovery
+receipt. No prepared article or social set has publication acceptance.
 
-The unchanged e6b4bf77 Node companion got a complete isolated REVISE/four
-findings critique. All are reconciled against actual await/early-return/snapshot
-paths; fsync guarantees were excluded. Preserve original findings and all
-earlier failures. Actual post-write save-failure injection remains untested;
-no new authentication/multiwriter/delivery/durability guarantee. Earlier 14
-fixture tests and real local lost-ack/readback retain their original scope.
+New eval/AWS/OCI guides include actual pinned SDK inspection, current primary
+sources, serious existing report/status/eval-tool alternatives, 12 exact Python
+checker cases and eight exact six-row SQLite query cases. Three MDX compiles,
+ten internal source links and nine corpus tests pass. No model/cloud/Oracle
+trial. Cloud REVISE objections were reconciled with primary evidence; preserve
+original findings. Three eval failures plus malformed Poolside response and local
+routing correction remain. Corrected Cohere returned length/null. Eval/AWS bytes
+match original critique1855bf92; OCI session paragraph refined at082689d8. Source
+acceptance remains open. Never infer PASS from tokens, a fragment or missing text.
 
-Vercel existing project prj_NHVIKZtglNidOE1FJiq6eYx5QjIL/team_q6LNT6rnFRlqlcjBJ2Wxz6PE
-reads work when get_project includes actual idOrName. READY deployment
-dpl_7QPWKXeN5kCyAYC7rdmxKzoNkP3Z maps to production 044c8447. Actual RAG HTTP 200
-still has the old zero-cost claim. No source push, public port or website release.
-Build PP had BOUNDED: 8,832/8,192/4,736 MB, one workload/12 runtimes and
-pause-new-swarms; refresh before heavy work when stale. Fresh preserved sensor
-Quick/NoWrite: 146 GiB/15.3%, below 30% target; no cleanup authority. Canonical
-storage script/registry remain absent in foreign control-plane checkout; inspect
-known preserved a911b62c source without restoring foreign files. Borrowed
-dependencies remain missing/untouched. Supported CUA inventory is empty; Browser
-connection requested. No deployment while capture/full gates/acceptance are open.
+Prior Node companion e6b4bf77 and its 14 tests/local lost-ack readback keep their
+scope. Its later REVISE assertions were reconciled against actual paths; actual
+post-write save-failure injection remains untested. No new authentication,
+multiwriter, fsync or remote-delivery guarantee. Preserve every earlier receipt.
 
-Recover admitted OWNED dependencies, full merge/predeploy/build and supported
-desktop/mobile capture. Check independent source/security/design/commercial
-review and current qualified affiliate destinations. Port accepted public files
-and needed companion surgically against fresh production main; preserve stronger
-implementation and other agents' work. Normal PR merge, verify exact green
-deployment SHA, routes/filter/affiliate/denial/recovery. Continue other articles
-from current reconciled production sources while held, with distinct reader
-value and serious alternatives. No fake benchmark, usage, rank, scarcity or
-personal trial. Preserve provenance/taste and all prior review history.
+Latest build PP BOUNDED9,936/8,192/5,840 MB, CPU21%,12/12 runtimes,one workload,
+45 minutes,pause-new-swarms; refresh when stale. Disk145.85 GiB/15.33% sampled,
+not storage-growth admission. Canonical sensor remains absent in foreign config;
+known preserved a911b62c Quick/NoWrite evidence is historical. No cleanup authority.
+Borrowed Next/TypeScript absent and untouched. Supported CUA has no surfaces;
+prior Browser connection request remains pending. Release skill stops promotion
+without capture. No source push/public port/website deployment or live posting.
 
-Save next completed slice to this hub's session/ledger/current prompt plus issue 252.
-Keep goal active until the complete outcome is accepted; do not close it by counts.
+Recover admitted owned dependency environment and supported desktop/mobile capture,
+then full merge/predeploy/build plus independent source/security/design/commercial
+acceptance. Verify account-qualified affiliate destinations. Port accepted public
+files and needed companion against fresh production main, preserving stronger
+implementations and other owners. Normal PR merge; verify exact green deployment
+SHA, routes/filter/affiliate/denial/recovery. Vercel reads work with idOrName;
+batch 10 deployment044c8447 and old RAG copy were observed at their original time.
+Refresh live state before release. Continue remaining227 articles with current
+sources, distinct reader jobs and serious alternatives while held.
+
+Preserve serif/sentence-case taste; no fabricated benchmark, usage, ranking,
+scarcity, personal trial or partner enrollment. Actual memory recall supports
+serif briefs; no new asset generated. Generation needs sidecars, both ledgers and
+taste sync. Save next completed slice in this hub plus issue252. Keep the goal
+active until the entire outcome is accepted; counts do not close implementation.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
