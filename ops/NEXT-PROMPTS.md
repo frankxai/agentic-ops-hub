@@ -84,6 +84,23 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
+Current visual-asset slice: FrankX issue872 tracks a real public favicon
+mismatch and prepared F/star exports. Source main044c84472b5cbdffce12bb75ac9b6184dcc48efe
+serves F/star SVG and Omega PNG. Preserve mascot files; Frank's direction question
+is unanswered. Five private16/32/180/192/512px SVG exports have sidecars, ledger
+records and exact repeatable bytes; all viewed original. Step image-only PASS
+does not approve identity/runtime/production; exclude its unsupplied16pxwolf claim.
+Private memory PR2 merged76047d1 with exact-note readback; shared local retrieval
+not verified. Read private frankx-favicon-svg-export/image-review/memory-sync and
+identity-raster-selection/main-reconciliation receipts. No product branch/build/
+deployment/newidentity. CUA surfaces empty; browser-enable question pending.
+Current Figma metadata/libraries/read-onlyJS all hit Starter quota, no canvas
+writes/current-state proof; historical empty file is dated. Actual existing
+views expose duplicate FrankX v2 bytes, shared Income3D and differing BlueLife
+whale shapes; none is an approved flat-master count. Next resolve browser-icon
+roles, verify supported small-size application and prepare the selected exact
+owning candidate with required local gates. Keep every eleven-requirement front.
+
 Current asset-foundations slice: kernel draft35 is frozen at
 `ddf1d663d186130f9aa6b349beb2e6599af0df55`, canonical clean
 `starlight/repos/starlight-design-intelligence`, branch
