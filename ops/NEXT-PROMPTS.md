@@ -56,8 +56,19 @@ both original rollback-review FAILs remain preserved. Registry exact readback,
 immutable/cancelled tombstones, DB time/audit/commit and sealed signed admission
 are implemented. Do not rebuild them or the completed GET observer.
 
-Next implement durable exact workflow-instance ownership and authenticated
-engine/executor dispatch, retaining exact IDs and reconciling uncertain starts. Reuse existing single-use leases/cumulative budgets/independent stop/
+Swarm PR35 merged at 2b4e159dd81a99c1592ac57384c51986a909012b, source bc468812.
+Exact main CI 37182245285 passes 495/29/typecheck/PostgreSQL17/build/dry run;
+69 local tests/imported ES5 types and current combined native source PASS.
+Nine complete files/fourteen exact regions plus initial-import supplement cover
+all changed new lines; omitted existing SQL/runtime remains unproven. Durable
+exact API instance ownership, cancelled tombstones, atomic required mark/audit,
+lost-commit-response recovery and reservation-time signed context checking are
+implemented. Reuse them. Preserve initial V8 CI crash and coverage history.
+
+Next enforce the approved deployment at a trusted workflow entrypoint/executor
+before effects: Cloudflare create APIs have no documented version selector.
+Implement durable exact create intent and authenticated engine/executor dispatch,
+with exact-ID readback and external-effect reconciliation on uncertain starts. Reuse existing single-use leases/cumulative budgets/independent stop/
 usage authority; do not rebuild the completed GET observer or add a scheduler.
 Retain exact instance IDs on uncertain outcomes and reconcile external effects.
 Implement Vercel's app-local adapter separately. Fresh tenant access, host capacity,
