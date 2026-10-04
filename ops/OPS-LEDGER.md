@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 18 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 19 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 
@@ -279,44 +279,50 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 The full six-audience website goal remains active, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 18 source `7e2396e3b3ec4c00430c2e6b5939c5eb8147f8d8`; article revision `9efac94d2ea890b5b5571fcd91020f3690d58594`.
-There are 75 prepared revisions, four observed production corrections and 199
-unreviewed articles across 278 slugs/769 variants. All 75 hashes match; 79 receipts
-preserve previous rows. There are 75 held article-linked social/visual sets.
+Batch 19 source `a89c5bc25aa028919a44fa1a5072d34cad9b28c9`; refined articles `94491893262b8f15fdff16be77291696058b87d6`;
+initial articles/companion `39c4facd658610cd9acf5b983dd59b2ffd12926c`.
+There are 79 prepared revisions, four observed production corrections and 195
+unreviewed articles across 278 slugs/769 variants. All 79 hashes match; 83 receipts
+preserve previous rows. There are 79 held article-linked social/visual sets.
 
-Four substantive Llama, Gemma, Mistral and gpt-oss guides replace unverified current
-rankings, universal hardware fit, licence/compliance clearance, free inference,
-zero-egress and automatically installed tool promises. Actual source scope and
-authored credit, transcript, bilingual-policy and archive evaluations remain
-distinct from measured research. Serious search, editor and reviewer alternatives
-include useful retained artifacts and failure recovery.
+Four substantive due-diligence, IACOS, AI value and integration guides replace
+unverified savings, source-prestige verification, package-access promises,
+macroeconomic certainty and deployed-platform claims. Historical NVIDIA tables,+an authored Claude configuration, an assumed studio budget and an invented
+membership scenario give readers source-linked artifacts and recoverable work.
+Manual filing/spreadsheet/second-reader and approved support macros remain serious
+alternatives. Actual source studies retain their dated task scope and limitations.
 
-Actual primary and pinned small model documents cover Llama's EU multimodal
-restriction/end-user exception, Gemma's speech-capable subset and generation terms,
-Mistral catalogue/recipe scope and assumed route economics, and gpt-oss Harmony,
-route-specific memory and application tools. Gated HF401 and failed document reads
-remain. Four MDX compiles, five source resolutions, 13 Decimal checks and nine
-corpus tests pass. Original bodies match production `f9811d47`; metadata, URLs,
-assets and the OpenAI callout slug stay. No affiliate qualification or issued URL.
+The working public offline Python companion checks supplied metadata and arithmetic.
+Sixteen behavioral tests pass, including mismatch/input denial and recovery.
+False values with matching metadata deliberately pass: this is not factual audit.
+The actual fixture produces two comparable and three blocked comparisons, exit 3.
+Canonical LF and physical CRLF input hashes are explicitly distinguished.
+Thirteen Decimal checks, four MDX compiles, eight source resolutions and nine
+corpus tests pass. Original bodies match production `f9811d47`; stable metadata,
+assets and URLs remain. No affiliate catalogue/qualification/issued-URL change.
 
-Poolside eligibility REVISE retains all five findings. Three contradict actual
-primary documents and two quotes are absent; the lead rejects them without
-relabeling the provider verdict. NVIDIA eligibility retry timed out. StepFun
-integration exhausted its output limit; separate Poolside integration returned
-PASS. Every request is retained. Accepted eligibility critique, earlier reviews
-and premium founder review for Higher Self remain open. No publication acceptance.
+Two initial Poolside critiques returned PASS with six retained findings. Three
+optional refinements produced the exact refined revision. Refined financial output
+is malformed JSON at position 5120; acceptance remains open. Refined value is valid
+REVISE: two proposed arithmetic repairs are incorrect and one attribution is
+unsupported. Original verdict/findings and lead calculations remain, with no
+relabelling. Its console print failed under CP1252 after the receipt was saved;
+existing UTF-8 receipt reading recovered observation without reposting. Earlier
+review gaps and Higher Self premium founder approval remain open.
 
-Fresh CUA inventory is empty; prior actual iab creation failed. Borrowed Next and
-TypeScript are absent and untouched. Disk stays below 15%; PP is BOUNDED with new
-agents paused. No installs, new worktrees, media, build fanout, cleanup, source
-push or website deployment. Full gates, responsive capture, independent source,
-design/security/commercial acceptance, surgical production integration and exact
-green main deployment remain required. Taste writable-vault sync and earlier
-frontier-overview freshness stay open. All 23 foreign edits are unstaged.
+Actual GitHub metadata verifies the IACOS repository is private, not a public
+qualified bundle. Authoring investor Download Free Kit uses href="#"; rendered
+production behavior is unverified. Responsive CTA/capture remains a release gap.
+CUA inventory remains empty and borrowed Next/TypeScript packages are absent.
+Disk stays below 15%; PP is BOUNDED with new agents paused. Text and small tests
+continue. No installs, new worktrees, agents, media, app build, cleanup, source push
+or website deployment. Full gates, independent source/design/financial/security/
+commercial acceptance, surgical integration and exact green main remain pending.
 
-The free owned hub worktree is reused from fresh main `24beb0de`. Only FrankX
-ledger/prompt sections, its sweep fragment and appended session change. Other
-fronts and previous session bytes stay intact. Hub CI proves documentation only.
+Taste writable-vault sync and earlier frontier freshness stay open. All 23 foreign
+edits are unstaged. Free owned hub worktree reused from main `3ebde1b9`; only
+FrankX regions/sweep and appended session change. Other fronts/history remain.
+Hub CI proves documentation only. The complete goal remains active.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
