@@ -90,6 +90,26 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
+Current source-authority slice: kernel draft36 is frozen at
+`96192ed5ba3469665d1539757dbfbfaa7231fc35`. The canonical owned kernel checkout
+now uses `agent/codex/sis-identity-authority-20261004`; older35/ddf1d663 remains
+a preserved branch, not the current primary lane. Pack links owning lab main854357b
+and Academyabaf24b: recovered star, observed lab-only tokens/named type roles,
+retained protocol variant and four existing constitution modes. Historical web
+URL aliases canonical `.ai` repository; count once. HTTP manifest/three SVGs
+match pinned bytes, no rendered/application/rights/adoption proof. Six actual
+consumer probes pass expected compatibility and invented-repo/mode denials.
+Linux CI37175395531 passes61Node/15Python/53browser-process; all3tested-merge335a262
+blobs equal. Independent Step source PASS11337tokens; named human promotion open,
+PR36 draft/unmerged. Two incumbent Windows symlinkEPERM failures retained; clean
+adoption success case passed after commit. Token/site rules are guidance, not
+runtime enforcement. No new visuals/product pins. Private sis-identity receipts
+preserve exact sources, failures and review. Disk14.97%crossed15%floor: Queen
+receipt/live notice saved, bounded text/config/small checks; no new worktrees,
+installs, local media/model/build fanout. Existing untrusted Bash, Figma quota,
+browser/FrankX choice and all creator/estate gaps remain. Next inspect current
+protocol/Academy application and licensing; render only after fresh admission.
+
 Current visual-asset slice: FrankX issue872 tracks a real public favicon
 mismatch and prepared F/star exports. Source main044c84472b5cbdffce12bb75ac9b6184dcc48efe
 serves F/star SVG and Omega PNG. Preserve mascot files; Frank's direction question
