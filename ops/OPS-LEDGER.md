@@ -2,7 +2,24 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 12 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 12 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Starlight pack references owning identity; promotion pending (Codex)
+
+Kernel draft36/96192ed links the recovered star, scoped lab font/token roles,
+retained protocol variant and existing constitution modes. Lab manifest/SVG HTTP
+hashes match owning main854357b; Academy referenceabaf24b retained. Six real
+consumer probes preserve compatibility and reject invented caller/mode. Linux
+CI37175395531 passes61Node/15Python/53browser-process checks; all three tested
+merge blobs equal. Independent Step exact-source PASS; named human promotion,
+rendered identity, fonts/rights and actual product adoption remain open.
+
+Source consistency and schema loading establish no site/token runtime
+enforcement. No product/source geometry/image/downstream pin changed. Disk
+crossed15%floor to14.9735%, Queen receipt and live notice saved; text/small-check
+posture only. Both native Bash hooks still pending Frank's `/hooks` review.
+All eleven estate requirements remain open/partial. See [session](sessions/2026-10-04.md)
+and [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
 
 ## 2026-10-04: Brand images inspected; favicon choice remains open (Codex)
 
