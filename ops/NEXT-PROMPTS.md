@@ -58,36 +58,48 @@ existing product issue. Full objective active; Ops PR157 remains unactivated.
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the full
-six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social goal.
-Source `283d63cd8ff787d2d8149602cd9fd2ba4c5947e4`, branch `agent/codex/editorial-renewal-20261003`.
-Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-17.md`, both evidence files and progress JSON
-under `docs/ops/editorial/`. There are 71 prepared revisions, four observed
-corrections and 203 unreviewed. All hashes match; preserve all earlier receipts.
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the complete
+six-audience website, intelligence, frontier, SEO, affiliate, serif visual and
+social outcome. Source `7e2396e3b3ec4c00430c2e6b5939c5eb8147f8d8`, branch
+`agent/codex/editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-18.md`,
+its source/review evidence and progress JSON under `docs/ops/editorial/`.
+There are 75 prepared revisions, four observed corrections and 199 unreviewed.
+All hashes match; preserve every earlier receipt and the improved production
+scientific pages. Never overwrite them with legacy authoring text.
 
-The new Atlas/video/creative-framework/personal-essay guides separate source facts,
-editorial judgement, assumptions and personal account. NVIDIA/Qwen critiques
-timed out; obtain valid exact-revision critique and the earlier missing reviews.
-Higher Self needs premium founder review. Current production `f9811d47` original
-bodies match; preserve metadata/assets/URLs and the existing scientific corrections.
-Earlier frontier overviews need deliberate new revision receipts, not hash resets.
+The four open-model guides contain actual source scope and proposed useful tasks,
+not original measured research. Poolside eligibility REVISE has five source-
+contradicted or absent-quote findings; retain the exact comparisons. NVIDIA timed
+out. Obtain a valid accepted eligibility critique. Separate integration PASS does
+not recover StepFun output exhaustion or earlier review gaps. Higher Self still
+needs premium founder review. Earlier frontier overviews need deliberate new
+revision receipts with preserved hashes/history.
 
-Supported CUA is empty; actual iab creation fails. Borrowed Next/TypeScript targets
-are absent. Storage below 15% limits work to text and small checks; do not install,
-create worktrees, generate media, start agents or clean foreign state. Recover
-admitted dependencies and supported desktop/mobile capture. Complete full gates
-and independent acceptance, port accepted changes against fresh production main,
-merge normally and verify exact green deployment. Continue useful article work.
+Storage below 15% and new-agent pause permit text and small checks. Do not install,
+create worktrees, generate media, start agents or clean foreign state. Supported
+CUA remains empty; prior actual iab creation failed. Recover admitted dependencies,
+desktop/mobile capture, full gates and independent source/design/security/commercial
+acceptance. Port accepted changes against fresh production main, merge normally
+and verify the exact green deployment. Continue useful work on the article register.
 
-Social/visual sets remain held. Require sentence-case serif design, exact prompt
-sidecars, both ledgers and taste synchronization after admission. Higgsfield
-skills/MCP are banned. Verify actual issued affiliate relationships before
-commercial activation. Public social and premium founder approval remain human-
-gated. Preserve the 23 foreign edits, private intent/remaining/history and other
-objectives. Save finished slices in this hub and issue #252; do not close the full
-goal from article counts or documentation CI.
+All social/visual sets remain held. Use sentence-case serif design and require
+exact prompt sidecars, both ledgers, taste synchronization and responsive review
+after admission. Higgsfield skills/MCP are banned. Verify actual issued affiliate
+relationships before commercial activation. Public social and premium founder
+approval remain human-gated. Preserve 23 foreign edits, private intent/remaining
+history and other objectives. Save slices in this hub and issue #252; do not close
+the full goal from article counts or documentation CI.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
+
+Goal status: blocked after three consecutive turns with the same prerequisites.
+Resume only when actual /hooks trust, assigned integration lane or supported access
+changes. Frank intends to review both Bash hooks; fresh hooks/list still reports
+untrusted. Once trusted, run native denial and design-feedback tests without changing
+trust yourself. Integrate the prepared draft39 patch only in an assigned Protocol
+lane, preserving open PR200. Recover CUA/Figma access and exact-head human approval
+for locked pilot/guard and identity promotion. Preserve all eleven requirements,
+all earlier evidence and other owners; no source fixture closes this full goal.
 
 Continue full goal `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
