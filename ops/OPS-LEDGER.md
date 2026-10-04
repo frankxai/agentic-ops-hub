@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 15 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 16 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Live typography observed; product repairs remain open (Codex)
 
@@ -244,46 +244,48 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 The full six-audience website goal remains active, task
 `01a101fc-228c-7010-bba6-cf60bbad2357`, under
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 15 source `2543a02aac38d6b2a30f533ad222841bdc3e3c3f`; exact article revision `5dd5e5b4`.
-The register covers 278 URLs/769 variants: 63 prepared revisions, four observed
-production corrections and 211 unreviewed. All 63 hashes match; 67 receipts
-preserve earlier rows. There are 63 held social/visual brief sets.
+Batch 16 source `a32c5c34ba0f58517c5fae8ce97f90fd02f71fb8`; exact article revision `734b1ce631abc2a01581d093796d7849ceb9cef8`.
+The register covers 278 URLs/769 variants: 67 prepared revisions, four observed
+production corrections and 207 unreviewed. All 67 hashes match; 71 receipts
+preserve earlier rows. There are 67 held social/visual brief sets.
 
-Four rewrites cover GPT-5.5, Gemini 3.5 Pro availability, DeepSeek V4 and Grok 4.6.
-Current official capabilities, historical vendor results and proposed evaluations
-are distinct. Unsupported native audio/video, stale flagship routing, forecast
-availability and universal savings claims are removed. The checked catalogs show
-newer OpenAI recommendations, stable Gemini 3.8 Flash, DeepSeek Flash backing
-V4.1 and xAI recommending Grok 4.7. These are documented source observations,
-with no own performance ranking or model trial. Each article starts with a useful
-migration, producer lesson or repair task and a serious editor/developer baseline.
+Four model guides correct the Opus 4.5-to-4.6 price comparison, legacy migration
+choices, contradictory Kimi ratios, route modalities, licence scope, Qwen cache
+creation costs and verified autonomous-run language. Actual vendor sources mark
+Opus 4.6/4.8 active legacy, list K3 alongside K2.6 and document newer Qwen3.8-Max
+visual input. These are source observations, with no own model ranking or trial.
+The guides propose useful archive, release-credit, music-catalogue and launch-page
+decisions, each with a serious analyst, spreadsheet or designer comparison.
 
-Four MDX/GFM compiles, four authoring-source resolutions, one pinned production
-dynamic-route proof, 15 arithmetic checks and nine corpus tests pass. Original
-stable metadata, LearnHubCallout slugs and all assets remain. Production's corrected
-Grok model link is preserved against current baseline `2e6e8e73`; frozen register
-references remain separate. Both pinned DeepSeek MIT LICENSE files were read.
-No affiliate catalogue, issued URL or qualification date changes.
+Four MDX/GFM compiles, six existing source resolutions, 21 Decimal arithmetic
+checks and nine corpus tests pass. Actual pinned Kimi K2.6 README/LICENSE and live
+anonymous OpenRouter catalog metadata are hashed. Gateway rates and modalities
+remain separate from direct vendor terms and usage data. Four failed official
+Markdown reads remain recorded; no absent rate or endpoint is inferred. All four
+original bodies match current production baseline `f9811d47`. Stable metadata,
+URLs, Opus 4.8 LearnHubCallout slug and all assets remain. No affiliate catalogue,
+issued referral URL or account-qualification date changes.
 
-Two isolated Poolside reviews and one Qwen alternate timed out without a verdict.
-All input/revision hashes and failures are retained. Exact-revision critique remains
-open, along with batch 13 voice and batch 14 creator review. No live-source,
-rendered, security, rights, commercial, SEO or publication acceptance follows.
-Earlier frontier overviews need a deliberate freshness follow-up, preserving their
-old hashes and revision history. No new visual or public post is produced.
+Cohere and NVIDIA critique requests both timed out without a verdict. Exact
+packets, hashes and failures remain; critique is open. Earlier batch 13 voice,
+batch 14 creator and batch 15 critique gaps also remain. Local checks provide no
+live-source, rendered, security, rights, commercial, SEO or publication acceptance.
+Earlier prepared frontier overviews need deliberate current-catalog revisions
+with their old hashes and history preserved. No new visual or public post occurs.
 
 Storage remains below 15% free. Text and small checks continue; installs, new
-worktrees, media and new agents remain held. CUA is empty; borrowed Next/TypeScript
-targets are absent and untouched. Full gates, responsive desktop/mobile capture,
+worktrees, media and new agents stay held. CUA has no surfaces; borrowed
+Next/TypeScript targets are absent and untouched. Full gates, responsive capture,
 independent acceptance, surgical production integration and exact green main
-deployment remain required. No website source push or deployment occurred.
-All 23 foreign edits remain unstaged. Policy loading is separate from demonstrated
-runtime enforcement. Task taste synchronization awaits a writable vault interface.
+deployment remain open. Website source is unpushed and undeployed. All 23 foreign
+edits remain unstaged. Policy loading is separate from runtime enforcement.
+This task's taste synchronization awaits a writable vault interface.
 
-This handover reuses the free owned worktree from fresh main `b0f7b7d8`. Only the
-FrankX ledger/prompt sections and appended dated session change; other fronts and
-earlier bytes remain intact. Hub CI proves this documentation only. Continue the
-remaining register and admitted release recovery without reducing the goal.
+The free owned hub worktree is reused from fresh main `5f1087ea`. Only FrankX
+ledger/prompt sections, its sweep fragment and the appended dated session change.
+Other fronts and earlier bytes remain intact. Hub CI proves the handover only.
+Continue the remaining articles and admitted release recovery without reducing
+the full website goal.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
