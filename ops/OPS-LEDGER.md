@@ -2,7 +2,25 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (actual recoverable creator case and qualified outcome review saved/cache retained; Swarm deployment readback merged; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 21 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (actual recoverable creator case and qualified outcome review saved/cache retained; Swarm deployment readback merged; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 22 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Creator Studio exposes recorded listing overshoot (Codex)
+
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, [Technology30](https://github.com/frankxai/starlight-technology/issues/30), hub102 and private Ops149. Full Queen/subscription/API/cloud/department/20+brand/creator offering goal stays active.
+
+Technology draftPR34 source `03beedbd78af8b715be57eb0c257436c8bd92da9` adds a useful purchase reason when recent sourced prices in the budget currency already exceed its ceiling. It counts selected quantities even with other unpriced items, ignores future/malformed/stale/unverified/unsourced observations and assumes no FX. Existing unresolved reasons and cost notes carry the warning into Creator Studio and complete JSON/Markdown reports. Delivered total/verdict remain unknown until complete matching delivery terms exist; complete delivered verdict logic is unchanged. Three files change, with no new fields, dependencies or layout.
+
+Initial actual reproduction fails three of44 focused checks, preserving the observation. The first candidate passes168 units but a valid safe-boundary cents value divides/formats to the wrong cent. Exact Node reproduction is retained; decimal digit formatting preserves the integer amount and adds a regression. Final169 unit tests, full eslint and tsc noEmit/incrementalfalse pass locally. Secret hooks remain enabled. Local full Next/browser builds remain constrained by14.8% disk and missing canonical storage sensor; remote CI supplies those gates.
+
+Exact cloud CI37195692117 succeeds:169 unit tests,51 generated pages, full lint/typecheck/build, hardware editorial planner and34 browser recovery checks. Browser/server children close. Its tested pull-request merge is `9f41bed8740523e674e58cb1b32102a4a216f0b9`; both that commit and source03beedb have tree `24390307abfebfc5976fbdc278d58a74b1be5a79`. This verifies the actual tested tree, beyond the run's head metadata. Current main4588a24 is unchanged; the draft is not promoted.
+
+The actual private first-wave Netherlands case is regenerated alongside all original artifacts, with13 imported source/data blobs matching source03beedb. The complete report `f6dbfe9e486b07d9a10aa0b4a697b3e162bc3c5fb191c7f1a386937c4b850436` is63,865bytes, leaving1,671bytes under64KiB. The exact recorded overshoot appears while delivered cost stays unknown. Original eight recovery/unknown/contingency/forged-verdict/authority-denial checks plus explicit overshoot and size assertions pass. Complete hardware remains identical to its same-task incumbent. Known monthly components are unchanged, while complete cost, billed quota, throughput and ROI remain unknown. Automated generation timing is not buyer effort or operating mission performance.
+
+Native Google exact-source critique covers six complete files: the three changed files plus staleness/schema/creator-report source. Nonce/head/footer/ordered relative paths validate; reviewCompleted:true, PASS with one warning. A bounded actual purchase/export excerpt is context; the entire new report, full configurator/graph/dataset/runtime, rendered UI and live source/account evidence are not newly reviewed. No unexpected tool steps; owned client37004 stops after52.94seconds. Requested model/provider and inherited always-proceed do not attest serving identity or hard confinement; remote cancellation is not attested.
+
+The review correctly flags full report growth, then suggests limiting reviews to a selected system or omitting explanation fields. Keep the complete comparison and audit data. Next use compact JSON serialization without dropping fields, prove identical parsed contents/recovery and actual UTF8 boundary behavior, and rebind tests/source review/cloud build to that revision. Current case stays valid; further growth remains a concrete gap. Preserve the raw finding, source review, original observer failures and all frozen exports.
+
+The cache remains intact, installed toolchain and existing cloud/native-Git routes are reused, and no new local install/worktree/model/media/browser run, paid fallback, purchase, scheduler, worker or production activation occurs. Existing preview77a4374 evidence remains dated; no new exact-source preview or rendered design acceptance is inferred from CI. Mobile/focus/touch/reduced-motion, independent design/buyer/security/privacy/licensing/commercial release, live quotes/quotas/power/capacity/value and visual schema/taste synchronization remain open. Swarm36/mainf5ccf6a remains its earlier reservation-readback scope; native entrypoint/caller/executor/exact create intent/dispatch/effects-time/uncertain settlement and an approved reversible mission still need completion. Policy loading is distinct from runtime enforcement. Preserve incoming FrankX22 and every other owner's current prompt/history.
 
 ## 2026-10-04: Recoverable first-wave creator plan produced; cache retained (Codex)
 
@@ -957,65 +975,38 @@ enabled Computer Use browser was available for native-provider review.
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-Full six-audience website goal remains active, task
-`01a101fc-228c-7010-bba6-cf60bbad2357`, [FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 21 source `1fa1a2724ab5b87829510d3fc6f17a33c78a496e`; initial articles `34439ba1097a7cd902340447c054d42848f8a1a5`,
-refined articles `7439f8c222cfff6671e563ad77d1f5a61d3b7ab7`. Across 278 slugs/769 variants:
-87 prepared revisions, four observed production corrections and 187 unreviewed
-articles. All 87 content hashes match. There are 91 progress receipts preserving
-87 prior rows and 87 held social/visual sets.
+Full six-audience website goal stays active, task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
+Batch 22 source `fc1850d99193501822fc9e3660b972fc99346977`, articles/candidates `f6e4e291457fafe7d72a385e957785e2a0fafc7c`.
+Register: 278 slugs/769 variants, 91 prepared, four observed production corrections,
+183 unreviewed. All 91 prepared hashes match; 95 receipts preserve 91 prior rows.
 
-Four substantial getting-started ACOS, personal Claude assistant, agentic-AI and
-Claude/ACOS/MCP setup guides replace fixed model/context/count/timing claims,
-unverified personal results, fake connector commands and automatic enforcement
-or publication promises. An explicitly invented producer lesson supplies useful
-authored copy, a source/credit conflict, durable decisions, handoff and a draft
-code finding. Approved revision, member/public access and unknown send status
-remain distinct. Existing editor/folder/fixed workflow and dashboard alternatives
-are assessed. No executed model, installer, skill, connector, listening or user
-success is claimed; a documented MCP command is unexecuted.
+Four substantial image, accurate product-photo, vector-logo and editable-deck
+guides correct stale frontier models, fabricated testing/ranks, licence and
+export claims using current primary documentation. Authored cover/SKU/identity/
+five-slide artifacts are explicitly illustrative. Existing photo/editor/designer/
+presentation-template alternatives and specific recovery remain. No generated
+image/deck, observed benchmark, rights clearance or user-success claim.
 
-Actual official Anthropic, Claude Code, Vercel and GitHub documents ground agent
-architecture, scoped configuration and account access. Full ACOS 11.0.0 versus
-five-skill core 1.0.0 uses explicit batch 20 source/hash/licence receipts; main
-was freshly observed at the same pinned `8a481b6c`. Hosted Managed Agents do not
-prove a local installation. Prompt memory differs from effective permissions;
-manual skill invocation differs from model selection and fixed keyword matching.
-Vercel local registration remains a remote OAuth service with account access.
-GitHub local read-only mode does not prove every client or actor is read-only.
+Catalog 35: three public Photoroom/Looka/Plus AI candidates added; all prior 32
+rows preserved, no new issued URL/account verification/enrollment/sponsored link.
+Four MDX compiles, four internal source links, nine corpus tests and candidate
+gate pass. Current production `f9811d47` comparison preserves its Canva closure,
+stable original dates/URLs/assets and improved scientific corrections.
 
-Four MDX/GFM compiles, ten internal source resolutions and nine corpus tests
-pass. Three original bodies match production `f9811d47`. The agentic-AI original
-differs; its existing August field-guide link is retained with explicit dated
-limits. That production-only route has an actual raw-source hash, not live
-navigation or current recommendation acceptance. Stable metadata, URLs and
-existing asset files remain; improved scientific corrections stay untouched.
-Affiliate catalogue, issued referrals and qualification dates are unchanged.
+Two NVIDIA requests return valid minimal PASS JSON with None/empty usefulness;
+Qwen substantive request times out. Original receipts retained; no substantial
+independent source/editorial/design/security/commercial acceptance inferred.
+Earlier review and Higher Self founder gaps remain. 91 social/serif briefs held.
+Actual design tokens still have uppercase styling; capture/refinement required.
 
-Initial exact-revision Poolside returned malformed JSON with visible REVISE
-wording/four recommendations, not a valid structured verdict. Two proposals
-conflate audio plugins or existing native file tools; original output and text
-reconciliation remain. Two source clarity refinements were made. Refined NVIDIA
-finished at length without final critique/verdict; private original is retained
-and public receipt omits intermediate reasoning. Both requests are terminal.
-Strict independent acceptance, earlier review gaps and Higher Self premium
-founder approval remain open. No publication acceptance is inferred.
-
-Actual initial build admission BOUNDED: 9248/8192/5152 MB, CPU 33%, 12/12 runtimes,
-one parallel workload and new agents paused. Disk remains 14.80% free; CUA apps/
-browsers empty and Next/TypeScript targets absent. Only text/reads/small checks
-used. No install, app build, new worktree/agent/media, foreign cleanup, source
-push, public post, website deployment or persistent worker/tab. Full gates,
-responsive capture, independent source/design/security/commercial review,
-surgical production integration and exact green deployment remain required.
-Taste writable-vault sync and frontier freshness stay open; 23 foreign edits
-remain unstaged. Enabled source scans pass 38.17 KB, 869 bytes and 99.14 KB.
-The records hook initially blocked on a public Git commit hash. Actual public
-lookup verified it; relabeling metadata retained the value and the enabled
-recheck passed. No hook, exception, ignore rule or bypass changed.
-Free owned hub worktree reused from main `4896bc38`; only FrankX regions/sweep
-and session append change. Other fronts/history preserved. Hub CI proves
-documentation only; the complete goal stays active.
+Initial BOUNDED admission: 8923/8192/4827 MB, CPU 40%, 12/12 runtimes, new agents
+paused. Disk below 15%, supported apps/browsers empty, Next/TypeScript absent.
+Text/read/small checks only. No source push/deploy, install/build/new worktree/
+agent/media/foreign cleanup or persistent worker/tab. Enabled source secret
+scans 55.46/87.82 KB pass. Full responsive capture, independent acceptance,
+surgical production integration and exact green website main remain required.
+23 foreign source edits preserved. Hub CI proves this handover only.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 

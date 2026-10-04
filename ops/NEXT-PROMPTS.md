@@ -20,104 +20,83 @@
 ### AI-factory architecture: use the verified workbook and prove a useful creator mission
 
 Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`, Technology30, Swarm15,
-hub102 and private Ops149. Keep the full Queen/subscription/API/cloud/department/
-20+brand/creator/business offering objective active. Preserve other owners and all
-unfinished work. Cache retained after Frank's build question. Current pnpm10.15.1
-toolchain and separate store are installed; exact Technology77a4374 CI succeeded.
-Below15% disk, no new dependencies, worktrees, build fanout, media/models or
-unattended runs. Canonical storage sensor is missing; use existing CI/preview and
-ordinary text/small tests. No new spend/subscription/purchase/schedule is authorized.
+hub102 and private Ops149. Preserve the full Queen/subscription/API/cloud/department/
+20+brand/creator/business offering goal and all other owners' unfinished work.
+Cache retained after Frank's build question. Reuse installed pnpm dependencies,
+separate store, cloud CI and native-Git previews. Below15% disk, no new installs,
+worktrees, build fanout, media/models or unattended jobs. Missing canonical storage
+sensor is not admission. Pilot spend ceiling unchanged; no fallback/purchase/schedule.
 
-Read the latest October4 session and private creator-mission-evidence/comparison/
-review-adjudication/preview-binding receipts. The actual editable first-wave
-Netherlands case, full report736e1019, Markdown e337bdc0 and same-hardware incumbent
-are in creator-cost-extension/outputs under this task ID. Thirteen source blobs
-match Technology77a4374. Eight actual recovery/recalculation/unknown/contingency/
-forged-verdict/authority-denial checks pass. Report63,642bytes has only1,894bytes
-below64KiB. Preserve originals and early harness failures. The lead decision memo
-corrects unsupported raw-review claims and explains the first two useful repo jobs.
-Native Google critique covers five complete privacy-filtered artifacts. Original
-observer label mismatch stays false; separate exact sanitizer/prompt/footer/hash/
-terminal adjudication validates actual transport coverage. Keep raw PASS/twoWARNs
-and corrections; no complete source/security/buyer/identity/confinement is certified.
+Read latest October4 session and private listed-budget-mission-evidence, native-
+google-listed-budget-source-latest, formatting/initial-regression observations and
+source/cloud verification. Technology draft34 source03beedb adds recent sourced
+same-currency quantity-aware listing overshoot to existing reasons/exports while
+incomplete delivered totals/verdicts stay unknown. Decimal digit formatting fixes
+the reproduced safe-boundary cent error.169 local units/full eslint/typecheck pass.
+Exact CI37195692117 passes169/51pages/34browser/editorial/fullbuild; tested merge
+9f41bed and source03beedb have equal tree24390307. Product main4588a24 unchanged.
 
-Next surface same-currency listed overshoot in existing purchase/report reasons,
-while delivered total/verdict stay unknown until exact complete quotes. Reproduce
-the real case; test dates/staleness/currency/quantities/unknown lines and recovery.
-Framework selection is an unpriced editable preference, no purchased/budget winner.
-Actual environmental constraints are empty; RTX5090 is not disqualified by them.
-Matched API contingency retains the same tool-host workload. Do not fabricate
-prices, invoices, available quotas, wall power, throughput, acceptance or ROI.
-Bind any source fix to exact source, meaningful tests and independent review;
-regenerate alongside originals and respect the real64KiB edge before release.
+Actual private first-wave case at03beedb is saved alongside originals. Full report
+f6dbfe9e is63,865bytes, only1,671 below64KiB; recovery, unknown costs, matched API
+contingency, same-hardware alternative, forged-verdict and execution-key denial hold.
+Overshoot/size assertions also pass. New source critic covers six complete files:
+validated PASS with one export-growth warning. Entire report/runtime/render/current
+account evidence is excluded; no tools observed, client ended. Serving identity and
+hard confinement remain unattested. Preserve all original review failures/findings.
 
-Reuse existing native-Git /studio preview dpl_3YMovKsRp8NNvhTFgWTCgqgtfspE at77a4374.
-READY/HTTP200 and existing153-unit/51-page/34-browser/11-editorial proof cover their
-own scopes. CUA is empty/iab unavailable. Design-sight targeted Technology unknown/
-Grok-only branch/16% denial and unrelated estate Arcanea selection are preserved;
-do not treat them as design acceptance or edit that checkout. Mobile/focus/touch/
-reduced-motion/rendered design/buyer/security/privacy/licensing/commercial and
-release remain open. Loading policies is distinct from enforcing runtime gates.
+Next retain every comparison/source/explanation field and compact JSON serialization
+to reduce actual export size. Prove parsed contents identical, same input recovery,
+UTF8 bytes/boundary denial and the real case; obtain exact-source review and cloud
+CI for any revision. Do not narrow the report to only selected hardware to pass the
+cap. Complete report/Markdown usefulness and ordinary reader repair/time/cost remain
+required. Framework is unpriced preference, environmental constraints are empty,
+memory capacity is not measured throughput, API share is separate from tool-host work.
 
-Reuse complete HTML8f99f177 and workbook314fa9fa with44 editable inputs. Actual
-Excel16.0 passes21scenarios/378outputs, seven missing/zero checks and62 saved/reopened
-input/results. Four native groups cover nine complete supplied sources; raw styles/
-rendered buyer/security are excluded. Preserve authoring shutdown exit1, earlyFAILs
-and timeout. GLM write-price refresh, bypassed hardware-life zero, legacy Railway
-unit descriptions, visual schema/taste-memory and command-center38 mapping remain open.
+Reuse earlier complete HTML8f99f177 and workbook314fa9fa/44inputs, actual Excel
+21scenarios/378outputs/seven missing-zero/62 saved-reopened values. Original authoring
+shutdown exit1/native timeout/FAILs remain. GLM write-price refresh, hardware-life
+zero bypass, Railway unit descriptions, command-center38 mapping and visual schema/
+taste-memory sync stay open. Prior case736e1019/corrected lead memo remain frozen.
 
-Reuse merged Swarm PR36/mainf5ccf6a, tested treea9629e14 and exact516/29/PG17/full
-typecheck/build/non-live dry-run/contracts proof. Fresh exact authenticated running
-deployment/ownership/clock checks protect selected reservation admission. They are
-snapshot evidence. Next implement trusted native entrypoint, caller/executor,
-durable exact create intent/dispatch, effect-time authority and uncertain external
-settlement; generic internal authority/SQL predicates and readback audit persistence
-remain open. Preserve IDs on uncertain starts, reconcile effects, reuse cumulative
-budgets/leases/stop/revocation/usage. Named security and exact approved reversible
-live mission still required; Vercel adapter separate. No policy/CI allows activation.
-Save slices to this hub and existing product issues. Ops PR157 stays unactivated.
+Current rendered CUA/iab access was unavailable. Preview77a4374 READY/HTTP200 is
+dated, no new03beedb binding. Mobile/focus/touch/reduced-motion, exact independent
+design/buyer/security/privacy/licensing/commercial and release remain open. Reuse
+Swarm36/mainf5ccf6a/516units29orchestrationPG17/fullbuild proof in its snapshot scope.
+Implement trusted native entrypoint/caller/executor/exact create intent/dispatch,
+effect-time authority and uncertain settlement; generic SQL/internal predicates and
+successful-readback audit persistence remain open. Preserve IDs and reconcile
+uncertain effects. Named security and approved reversible live mission are required.
+Actual quota/invoices/power/hardware/capacity/value before20+brand scale remain open.
+Policy loading is distinct from runtime enforcement. Save slices to this hub and
+existing product issues. Ops PR157 remains unactivated; full objective active.
 
 ### FrankX: continue the article register and release reviewed revisions
 
-Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the full
-six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social outcome.
-Source `1fa1a2724ab5b87829510d3fc6f17a33c78a496e`, branch `agent/codex/editorial-renewal-20261003`.
-Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-21.md`, source/review evidence and progress
-under `docs/ops/editorial/`. There are 87 prepared revisions, four observed
-production corrections and 187 unreviewed articles. Preserve every prior receipt,
-hash, asset and improved production scientific page. Continue useful reader work.
+Continue full task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
+Source `fc1850d99193501822fc9e3660b972fc99346977` in owned `frankx-editorial-renewal-20261003`,
+branch `agent/codex/editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`,
+`REVIEW-BATCH-22.md`, evidence and progress in `docs/ops/editorial/`.
+91 prepared/four observed/183 unreviewed, 95 receipts and 91 held social sets.
+Preserve all older hashes, improved production science and 23 foreign edits.
 
-Batch 21 corrects four personal agent/ACOS/agentic-AI/MCP guides with actual
-official source scope, authored copy/decisions/recovery and serious alternatives.
-Memory is context; effective runtime access needs separate proof. Model skill
-selection is not a fixed keyword trigger. Local Vercel registration remains
-remote account access. Full ACOS 11.0.0 differs from core 1.0.0; explicit batch20
-source receipts are reused, not a second installation claimed. Retain the
-production-only August field-guide link's dated limits and actual raw-source hash.
-Initial Poolside JSON is malformed; visible recommendations are manually
-reconciled, with two clarity refinements. Refined NVIDIA ended at length without
-a final critique/verdict. Preserve both originals and obtain usable exact-final
-independent review. Earlier20 creator timeouts,19 financial invalid JSON/value
-REVISE,18/17/16/15/14creator/13voice and Higher Self founder gaps remain open.
-Private IACOS does not qualify a public bundle; investor href="#" needs an actual
-qualified offer and responsive capture. Verify issued affiliate relationships.
+Current visual-tool guides replace unverified tests and stale models with useful
+authored examples and scoped primary sources. Three public affiliate candidates
+are pending enrollment; null issued URLs and absent qualification dates must
+remain until actual approval, destination and disclosure are verified. Preserve
+prior 32 rows and production Canva closure; legacy projections need review.
+NVIDIA minimal valid PASS responses are insufficient substantive critique; Qwen
+times out. Obtain useful exact-revision independent review and keep earlier gaps.
 
-Actual initial admission BOUNDED, new agents paused, disk below15%, CUA empty and
-dependencies absent. Ordinary text/small checks may continue. Refresh admission
-before heavy work; preserve foreign processes, 23 edits and other objectives.
-Recover admitted dependencies and supported desktop/mobile capture, pass full
-gates and independent source/design/security/commercial acceptance, then port
-accepted changes against fresh production main and verify its exact green deploy.
-Deliberately refresh earlier frontier overviews with current catalogue receipts.
-
-87 social/visual sets remain held. Use sentence-case Playfair design, exact prompt
-sidecars, both ledgers, taste synchronization and responsive review after
-admission. Higgsfield skills/MCP are banned. Public social and premium founder
-approval stay human-gated. Keep secret hooks enabled; batch21 relabeled a public
-revision field after a verified false positive, preserving its value and passing
-the enabled recheck. Save slices in this hub and issue #252. Article counts and
-hub CI cannot close the full website goal.
+Continue valuable content work while heavy work is constrained. Refresh machine/
+storage admission; restore supported responsive capture and admitted dependencies.
+Policies loaded are not runtime or deployment enforcement. Capture existing
+surfaces, refine sentence-case/serif visuals and verify full release gates before
+production port and exact green main. Actual uppercase token rule remains open.
+Frontier freshness, SEO/demand measurements, affiliate activation, visual
+sidecars/both ledgers/taste-vault sync and six-audience experiences remain required.
+No Higgsfield tools/skills. Live social and premium founder approval stay gated.
+Keep full goal active; save useful slices in this hub and issue252.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
