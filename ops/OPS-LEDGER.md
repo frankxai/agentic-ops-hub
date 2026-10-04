@@ -8,29 +8,39 @@
 
 ## Arcanea guard and platform security, 4 October 2026 (Codex)
 
-- Root draft [144](https://github.com/frankxai/arcanea/pull/144) remains 39362eb:
-  atomic release plan and supported publication admission. Six engineering workflows
-  pass; both complete eight-file native attempts have no verdict. Keep 144 draft
-  and 136 open; no new root source, main or publication acceptance in this slice.
-- Platform draft [45](https://github.com/frankxai/arcanea-platform/pull/45) is 8167963,
-  base b4738df9, 99 files / full diff 63e1573a. Next/config 16.3.8, Vitest 3.2.7,
-  FTP 5.2.1 and Handlebars 4.7.9 fix the six prior critical findings. Preserve 46
-  other importers, 2,070 other snapshots and historical ai-agents/contracts records.
-- Current audit 111316322518: 329 = 34 low / 165 moderate / 130 high / 0 critical.
-  Its retained high threshold now blocks, rather than hiding exit 1. Suite workflow
-  37161708302 fails audit; both actual 20.20.2/22.23.3 compiled jobs pass each
-  3,322 / 3,314 pass / 8 skip / 0 fail, and four real Vitest startups per runtime.
-- Packages 37161708311 and quality/build 37161708300 pass; Next compiles 129 routes.
-  MVP/apps fail 50 errors / 227 warnings. Quality lint is nonblocking. Tested merge
-  96102fed has exact parents/tree equality and all 98 changed present blobs match.
-- Native 4.6-build/high nine-file WARN catches the shared Handlebars dev marker;
-  exact current two-file WARN accepts its removal with no further source edit.
-  Source scopes remain bounded; full 99-file, prod-only historical install, rendered
-  and live creator/app/canon acceptance remain pending. PR 45 stays draft.
-- [Issue 44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5974617518)
-  and this day's session/current pickup retain evidence. Preserve all other goals
-  through 46e8c1b, originals and unfinished work. Full estate goal active; no main,
-  npm/cloud/plugin/production/account/cleanup acceptance. Next lint and high findings.
+- Root draft [144](https://github.com/frankxai/arcanea/pull/144) remains 39362eb.
+  Six engineering workflows pass; both complete eight-file attempts have no verdict.
+  Keep 144 draft and 136 open; 143 main recovery and all other fronts are preserved.
+- Platform draft [45](https://github.com/frankxai/arcanea-platform/pull/45) is b015d48,
+  base b4738df9, 102 files / full diff 1efb7bff. New eight-file MCP continuation
+  upgrades SDK 0.5.0 to pinned 1.32.0 and scopes patched Hono/node-server/rate-limit
+  to SDK v1 parents. Earlier Next/config 16.3.8, Vitest 3.2.7, FTP 5.2.1 and
+  Handlebars 4.7.9 critical repairs remain. No blanket major-version overrides.
+- The actual stdio CLI has 28 tools / five resources. Advertised schemas validate
+  before state mutation; integer values, explicit sessions, UUID creation IDs,
+  zero link strength and explicit tool failures. Real CI catches and repairs SDK
+  malformed-call error classification. Invalid raw JSON-RPC framing remains open.
+- Both Node 20.20.2/22.23.3 compiled jobs pass: each 3,329 tests / 3,321 pass /
+  8 skip / 0 fail. All seven actual SDK-client/CLI stdio tests and four Vitest
+  startups pass per runtime. Native suite 37164191434 fails only its blocking audit.
+- Current audit 111323643506: 289 = 32 low / 132 moderate / 125 high / 0 critical,
+  exit 1. Five fewer high findings since 8167963; no clean-security or reachability
+  claim. DNS rebinding advisory excludes stdio. Web lint stays 50 errors / 227 warnings.
+- Packages 37164191482 and quality/build 37164191504 pass, 129 Next routes.
+  MVP/apps fail lint, deployments skipped. Tested merge 86280919 has exact parents,
+  whole tree equality and all 101 present changed source blobs verified.
+- Final MCP lock retains all 52 importers; other 50 importer blocks and 2,135
+  snapshot blocks retain bytes. Five generated snapshots, five unreachable replaced
+  MCP snapshots removed. Both historical absent ai-agents/contracts importers remain.
+- Current 118,788-byte complete eight-file delta/current implementation review and
+  predecessor full 149KB review each time out at 240s: no assistant/result/verdict,
+  zero tools. Unchanged task history/dependencies/lock blocks are disclosed omissions.
+  Earlier 9+2-file security/classification WARN scopes remain separate. Full 102-file
+  review, graph persistence, mcp-client TODOs, auth, canon and live creator gates stay open.
+- [Issue 44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5974943426) and [estate issue 142](https://github.com/frankxai/arcanea/issues/142#issuecomment-5974949974) retain results.
+  Handover session/current pickup updated; other-goal records through 7677827 retained.
+  PR 45 stays draft; estate goal active. No main/npm/cloud/plugin/account/deploy/cleanup
+  acceptance. Next repair compatible high findings and actual lint; no unchanged review retry.
 
 ## Arcanea release recovery on main, 3 October 2026 (Codex)
 
