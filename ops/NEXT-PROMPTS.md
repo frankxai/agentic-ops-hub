@@ -70,7 +70,24 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Current live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
+Current protocol repair slice: kernel draft 39/855644e3ca0d63a40ed88218bbdbdcf9e48daf20,
+owned branch agent/codex/protocol-font-repair-trial-20261004, stacked on frozen38.
+Read the public evals/protocol-typography-repair-12d794a.patch and private
+protocol-repair-trial-855644e/review-step/native-trust-pre receipts. The four-file
+patch applies in read-only check to exact source snapshots at protocol main12d794a;
+it is not applied, built or deployed. All ten actual cloud states/full kernel CI
+pass, four blobs equal tested merge f9ffdc0. Normal roles retained; blocked390/320/
+CSS zoom 2× hypotheses restore sans and mono faces, 22 class/4 label changes, zero uppercase
+findings and viewport-width reflow. Only normal390/blocked390 are matched pairs.
+Independent Step HOLD is preserved; no product/source-review PASS is inferred.
+Global selectors/routes/native zoom/initial loading/shifts and visual/rights/
+human acceptance remain open. Assign an admitted protocol product lane before
+applying the reviewable patch; clean PR200/202/203 lanes and foreign primary are
+unfinished. Do not create a new worktree/dependency install below 15% free.
+Fresh native hooks/list still finds both Bash entries untrusted; test dispatch
+only after actual trust. Keep all eleven requirements and all historical evidence.
+
+Prior live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
 is frozen, owned branch agent/codex/starlight-typography-runtime-20261004.
 Re-run guard/check with explicit paths and separate ownership before writes.
 Actual18/18 CI37180850730 and full CI37180850751 pass61Node/15Python/53browser-
