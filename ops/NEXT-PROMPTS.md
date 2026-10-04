@@ -62,9 +62,29 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
-Current source-authority slice: kernel draft36 is frozen at
+Current font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
+is frozen; canonical owned kernel lane agent/codex/font-artifact-denial-20261004.
+Before writes route/guard/check and ownership again. Original full-manifest four-byte
+WOFF2 acceptance is reproduced; decoded check now denies it. Final67/69Node,
+15Python,53browser-process plus Windows/Ubuntu nine actual pinned-font probes are
+green; all eleven blobs equal tested merge dad209f. Two ordinary Node skips are
+intentional, network covered separately. Keep all initial/final receipts.
+Migration uses preserved original plus adjacent candidate, changed file_check,
+actual full decoded validation, receipt and owning approval before pinning. Initial
+full independent REVISE corrected; exact-head correction PASS, incomplete full
+rereview retained; seven decoder/config blobs unchanged. Named human promotion,
+actual adopter migration, rights/computed browser/fallback/mobile specimens remain
+open. Source/font bytes and gate candidate do not prove every-harness enforcement.
+Thirteen observed resources/nine unique files/six families/sixteen CSS declarations
+and six pinned OFL sources recorded; private reader remains metadata-only. Protocol
+orbit-star and Academy shared star retained; Academy sphere alt defect open.
+Disk14.97% bounded: no new install/worktree/media/model/build fanout; no enabled CUA
+surfaces. Native hooks require Frank's explicit trusted confirmation before tests.
+Continue actual brand applications/creator outcomes and all eleven requirements.
+
+Preserved source-authority slice: kernel draft36 is frozen at
 `96192ed5ba3469665d1539757dbfbfaa7231fc35`. The canonical owned kernel checkout
-now uses `agent/codex/sis-identity-authority-20261004`; older35/ddf1d663 remains
+used `agent/codex/sis-identity-authority-20261004` for that slice; older35/ddf1d663 remains
 a preserved branch, not the current primary lane. Pack links owning lab main854357b
 and Academyabaf24b: recovered star, observed lab-only tokens/named type roles,
 retained protocol variant and four existing constitution modes. Historical web
