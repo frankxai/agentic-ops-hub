@@ -51,6 +51,15 @@ goal from article counts or documentation CI.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
+Goal status: blocked after three consecutive turns with the same prerequisites.
+Resume only when actual /hooks trust, assigned integration lane or supported access
+changes. Frank intends to review both Bash hooks; fresh hooks/list still reports
+untrusted. Once trusted, run native denial and design-feedback tests without changing
+trust yourself. Integrate the prepared draft39 patch only in an assigned Protocol
+lane, preserving open PR200. Recover CUA/Figma access and exact-head human approval
+for locked pilot/guard and identity promotion. Preserve all eleven requirements,
+all earlier evidence and other owners; no source fixture closes this full goal.
+
 Continue full goal `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
 Keep all eleven requirements: higher accepted design direction; installed/applied
