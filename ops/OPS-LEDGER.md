@@ -2,7 +2,24 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 9 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 9 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Shell design adapter installed; native trust pending (Codex)
+
+[Config draft96](https://github.com/frankxai/starlight-agent-config/pull/96) at
+09d1bc4:19Node/8Python pass on Windows/Linux, CI37167142388 at merge46d4fe47,
+six blobs equal; eleven final actual-engine direct cases pass. Actual missing
+Node/script exit0/1 prompted safe rollback and absolute launch/denial2 repair.
+POSIX backslash and PowerShell smart-quote failures reproduced and repaired.
+Current independent Poolside REVISE retained/disputed with executed Linux quoting
+evidence; NVIDIA length/null has no verdict. Earlier e67 PASS does not transfer.
+
+Refined additive global projection installed, private conditional rollback receipt.
+Native28 rows preserve26 prior definitions/enable/trust; new Bash Pre/Post are
+untrusted. Frank will review `/hooks`; actual trust/dispatch/denial/design/Stop/
+reload/recovery/model UI application are pending. Source stays draft/unmerged and
+review/promotion open. Preserve kernel34, community15 and every other owner.
+All eleven estate requirements remain open/partial. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-04: Native patch coverage passes; shell coverage fails (Codex)
 
