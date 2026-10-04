@@ -23,34 +23,34 @@ Continue task01a101b1-9d38-7fa1-b1f0-dec923631d7f, Technology30, private Ops149
 and hub102. Preserve the complete Queen/subscription/API/cloud/team/creation/
 business objective and all other owners' prompts. Keep the npm cache.
 
-The private full operating report is `642c9551b8820b88d7dbe1f79259a4b464c50d5e96bb558e4f7e1944d0c04184`:54 primary sources,
-27 mapped properties,12 team functions,15 runtime comparisons,14 selectable
+The private full operating report is `642c9551b8820b88d7dbe1f79259a4b464c50d5e96bb558e4f7e1944d0c04184`: 54 primary sources,
+27 mapped properties, 12 team functions, 15 runtime comparisons, 14 selectable
 model-rate rows. Its placement decision distinguishes existing managed native
 cloud, customer-host workers, actual CI build offload and persistent desktops.
 Kimi K3 launch prices are dated; current numeric quote/cache-write charges are
-unverified and excluded from selectable rates. No complete128GiB K3 benchmark.
-All33 checks pass. Complete inline HTML native source critique PASS35.447s;
+unverified and excluded from selectable rates. No complete 128 GiB K3 benchmark.
+All 33 checks pass. Complete inline HTML native source critique PASS 35.447 s;
 retain earlier missing-file false finding and duplicate-packet truncation. This
 is source acceptance, not rendered design, account access, identity or billing.
 
-One static detector and one batched correction retain screen13px/table cell inset,
-increase print12px and reduce accent borders1px. Brand/Emil context applied;
-automatic design hooks absent. Current browser/design acceptance and dual isolated
+One static detector and one batched correction retain screen 13px/table cell inset,
+increase print 12px and reduce accent borders 1px. Brand/Emil context applied;
+app-session automatic enforcement unverified. Current browser/design acceptance and dual isolated
 assessments remain held. Earlier captures retain their old hashes. Sidecars/both
 ledgers saved; schema validation/taste-memory sync pending. Prefer approved cloud
 rendering without placing private business/account data in public repositories.
 
 Reuse Technology draft PR34 `082988a20532c5c187cad76e6a1cc116aca554fa`, actual
-native Git preview and CI37160380791:147 unit/11 editorial/51-page build/32 real
+native Git preview and CI37160380791: 147 unit/11 editorial/51-page build/32 real
 Chromium checks. Complete reportv3 restores every input; v1/v2 recover; matched
 fully metered contingency changes both API shares only. Six complete unchanged
-runtime/report/cost/React files have separate source PASS74.358s; broader sources,
+runtime/report/cost/React files have separate source PASS 74.358 s; broader sources,
 independent rendered design/buyer/privacy/rights/commercial gates remain open.
 
 Compare actual useful output/repair/time against the preserved hardware sheet.
 Invoice currency/native capacity/hardware throughput and ROI remain unmeasured.
 USD250 report cap and product EUR60 example are hypothetical; approved pilot
-ceiling remains EUR100. Ops draft PR157875d64e stays unactivated. Railway/swarm/
+ceiling remains EUR100. Ops draft PR157 at875d64e stays unactivated. Railway/swarm/
 SIS infrastructure receipts do not prove a useful autonomous mission. Next use
 swarm15's exact named pilot, operation-time authority, access/security and recovery
 track for one useful bounded mission. No new plan/API fallback/schedule/live
@@ -140,6 +140,29 @@ automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
 
+Native hook coverage is now measured separately in kernel draft PR34, frozen
+`c99adec2da97a0ec4170a2a5232cb86a340dceab`. Owned canonical kernel checkout branch
+`agent/codex/native-patch-proof-20261004` is clean. Raw Git native0.160 runs prove
+dynamic Write and actual patch denial/post/Stop; actual exec_command shell FAILS:
+both private synthetic writes succeed, no matching pre-tool denial/Impeccable post.
+No global config or trust mutation. Preserve native failures and sandbox-hidden
+Python attempts. Counterexamples at47c865b reproduced mixed-tool false passes;
+current21st regression and strict unselected-event checks repair them.
+CI37162399939 passes61Node/21Python/53browser-process checks at mergef6afe2a;
+three source blobs equal. Independent Poolside current-source PASS only; earlier
+REVISE and three truncated no-verdict records remain. PR34 draft/unmerged, named
+human/source promotion and installed coverage repair pending. Diagnostic success
+cannot approve real model application, code mode/app/MCP/other hosts, automatic
+defect refinement, design/creator usefulness or production.
+
+Prioritize a concrete native configuration repair through its owner. Current
+post-edit aliases cover patch, while shell matches Bash. Preserve current disabled
+Impeccable SessionStart, trust, system/security skills, provider states and Config
+other-owner95/d004224,80,84/Queen90. Never self-trust changed definitions. Prove
+actual denial/post-edit, reload, failure/interruption and rollback, then a real
+bounded UI defect/repair and native model-guidance consumer. Do not spend the next
+slice polishing the frozen community desk or counting installed skill files.
+
 Community draft PR15 is frozen at `3ea86262e8d0bccd32554c43e52005247786c421`,
 owned worktree `starlight/worktrees/gencreator-community-interface-20261003`,
 branch `agent/codex/community-visual-proof-20261003`. Keep accepted local identity,
@@ -158,8 +181,8 @@ creator/human/production acceptance is separate. Mobile 390 height 4,697 vs 9,87
 Retain d9cfc32/136-check initial proof, failed tablet run37158906344/60 partial
 PNGs and runner-only recovery; four UI blobs are equal. Stop polishing this revision.
 
-Native Impeccable 4.5 context/manual detector actually ran once. No automatic
-session hook; legacy PRODUCT and missing native matching brief are reported.
+Native Impeccable 4.5 context/manual detector actually ran once. Current app-session automatic execution is unverified;
+manual detector required was reported; legacy PRODUCT and missing native matching brief are reported.
 Grid advisory was repaired after scan; no exact-final clean-scan claim. Local
 brand/Premium Web OS/Emil guidance was applied and hashes recorded; gesture skipped.
 Prior native Codex 0.160.0 deterministic fixture/engine 0.1.11 proves scoped hook
@@ -192,16 +215,16 @@ Arcanea owning-source correction and conflicting backgrounds/rights remain.
 Eight identity images/166 filename census do not establish approved masters or
 all-brand acceptance. Keep local and parent identity authority distinct.
 
-Fresh PP/storage admission before heavy/growing work. Last00:35 interactiveALLOW
-7,730 MB free, 34% CPU, 12 runtimes,one parallel, pause-new-swarms; read-only fallback
-146.7 GiB/15.4%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
+Fresh PP/storage admission before heavy/growing work. Last01:34 interactiveALLOW
+6,716 MB free, 30% CPU, 12 runtimes,one parallel, pause-new-swarms; fresh disk
+145.95 GiB/15.34%, 30% advisory target. Reuse owned checkouts; no swarms, new dependencies,
 worktrees, cleanup or persistent workers under constraints. Owned requests/decoder
 terminal; no server/watchers. Canvas/SIS/Substrate disabled; Higgsfield banned.
 Current captures are non-generative with actual sidecars; generation-schema404
 unverified. New generated media requires both ledgers and actual provenance.
 
 Save finished slices to this hub session/ledger/prompt and existing issues12.
-Preserve newer FrankX batch6, Queen and every unfinished front. The original
+Preserve newer FrankX batch7, Queen and every unfinished front. The original
 estate goal stays active; retain exact-revision scope and all remaining gaps.
 
 [Queen verified execution continuation, Codex]
