@@ -2,7 +2,11 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (song-count PRs 873-878 merged earlier; Jules planning 870 lock and 841 generator; Arcanea 509 formatted) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (Jules cap full; 841 plan not approved; Suno, Soulbook, and Vibe preview tasked) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Four Jules slots, three new page tasks (Grok)
+
+The queue is 4 of 4. [841](https://jules.google.com/session/6185998078557424291) is waiting on a plan that still turns Writing Tools into Writing. That plan was not approved. New sessions, all frankx.ai-vercel-website: [Suno page](https://jules.google.com/session/12739869681341538391), [Soulbook page](https://jules.google.com/session/16580621150055209714), [Vibe preview emoji](https://jules.google.com/session/11310999430359697101). The card is `6934d71` on config PR 89. Nothing new was merged. Receipt: `ops/sessions/2026-10-04.md`.
 
 ## 2026-10-04: Formatter rule, two new Jules tasks (Grok)
 
