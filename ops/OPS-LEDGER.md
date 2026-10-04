@@ -1,5 +1,19 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-05: SIS session continuity reviewed to PASS and merged (Claude)
+
+Session continuity is MERGED_NOT_LIVE:
+
+- [SIS #273](https://github.com/frankxai/Starlight-Intelligence-System/pull/273) `ea1d0a5`: trusted import, status, owner reconciliation.
+- [Ops #163](https://github.com/frankxai/agentic-ops/pull/163) `be49a10`: canonical PP caller, cursor baseline and shared lock, Codex native goals, proof.
+- [Canvas #31](https://github.com/frankxai/starlight-agent-canvas/pull/31) `d569167`: visible consumer.
+
+Each PR was reviewed by Grok on its exact head (six rounds; every block was reproduced and fixed with a regression) and merged through `pr-gate`. The post-merge proof passed 20 of 20 checks with `complete=true` on real interrupted Claude and Codex sessions and the original task `01a102ed`.
+
+#273's `package.json` change broke SIS `main`'s Foundry `RULES_LOCK` (`harness` was skipped on the draft). [SIS #286](https://github.com/frankxai/Starlight-Intelligence-System/pull/286) `6d4cbaa` restored the file and added a dedicated `continuity-gate` workflow.
+
+Install, the real trust policy, the live cursor baseline and LIVE_VERIFIED wait for PP storage evidence (PR4) and owner inputs. See [session](sessions/2026-10-05.md).
+
 ## 2026-10-04: Observatory session observer merged; hook106 diagnosis open
 
 [Observatory PR10](https://github.com/frankxai/starlight-observatory/pull/10) is merged at3c575180b425d06a73fec75a577be95b150d3f5d, reviewed head fb2aec86e786a0783aed04f270e4d485feac5c7c.55 local tests, [main CI37234828443](https://github.com/frankxai/starlight-observatory/actions/runs/37234828443) and [six-platform plus package CI37234550446](https://github.com/frankxai/starlight-observatory/actions/runs/37234550446) pass; [independent provider source PASS](https://github.com/frankxai/agentic-ops/issues/139#issuecomment-5984368523) follows repaired material WARN findings. Private Codex cards show machine/model/lifetime tokens, explicit ledger links and parent metadata. Source failure is distinct from a known missing link. Cost/per-goal allocation, process liveness and other machine/harness coverage remain unknown. [Issue9](https://github.com/frankxai/starlight-observatory/issues/9) stays open for product acceptance; no installed/hosted release is claimed.
