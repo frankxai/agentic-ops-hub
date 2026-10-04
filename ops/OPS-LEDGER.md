@@ -2,7 +2,24 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 11 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 11 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: Brand images inspected; favicon choice remains open (Codex)
+
+Nine further existing raster views reveal byte-identical FrankX v2 aliases,
+shared Income 3D artwork, differing Blue Life whale shapes and Omega app icons.
+Current owning mains match inspected bytes; no approved master count established.
+Live FrankX HTML serves F/star SVG and mascot PNG fallback. Five faithful private
+SVG exports have repeated bytes, exact dimensions and validated VIS sidecars;
+ledgers saved. Step image-only PASS supports review readiness, with its unsupplied
+16px wolf inference excluded. Founder/browser/platform/build/release proof open.
+
+[FrankX issue872](https://github.com/frankxai/frankx.ai-vercel-website/issues/872)
+tracks the choice and implementation. Private memory PR2 merged76047d1; exact
+note bytes verified, shared local retrieval pending. No product file, identity,
+deployment or existing mascot changed. Both Bash hooks still untrusted03:04UTC.
+Figma current canvas unverified after actual Starter refusals. All eleven estate
+requirements remain open/partial. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-04: Asset registry verifies current bytes; source promotion held (Codex)
 
