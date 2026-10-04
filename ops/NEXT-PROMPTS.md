@@ -17,7 +17,7 @@
 
 ## Current
 
-### Delete the song counts still in lib and content
+### Change the voice rule, then the content corpus
 
 Frank does not open the Jules UI. Read
 [ops/sessions/2026-10-04.md](sessions/2026-10-04.md).
@@ -34,12 +34,15 @@ as `05a2ffcf0c840605141f96c3c58dd8254529d504`. After 875, `app/` and
 as `b56723c8660b7f90a98a0a9c6ba56024f668c3ae`. It locks the homepage route card
 in the claim test. Do not redo that one-line test.
 
-Issue 870 stays open. The next deletion is `lib/email-templates.ts`,
-`lib/email-templates-premium.ts`, `lib/email-templates-welcome.ts`,
-`lib/hub.ts`, `lib/intake/personas.ts`, `lib/workshop-citations.ts`, and
-`lib/visual-intelligence/platform-personas.ts`. Treat
-`lib/voice/frankx-voice.ts` as its own change: that file tells writers to use
-the phrase. Then a careful content pass. Do not delete "Walked 12,000 steps",
+[PR 878](https://github.com/frankxai/frankx.ai-vercel-website/pull/878) merged
+as `f9811d47029ccf95b77455801d26c2de081f765f`. Do not redo the email templates,
+hub stats, workshop credentials, personas, Golden Age stat, or about variant.
+
+Issue 870 stays open. The next change is `lib/voice/frankx-voice.ts` on its
+own: that file tells writers to use "12,000+ AI songs", so the corpus will
+grow the claim back until the instruction changes. Then a careful content pass.
+`lib/qualities.ts` titles the live essay "12,000 Songs: Production Lessons".
+Change that title with the essay, not as a stray label. Do not delete "Walked 12,000 steps",
 tool-output line counts, token unlock schedules, or YouTube revenue dollars.
 Do not write Catalog, Extensive, Vast, or Global in place of the song count.
 Leave the lab line "65 tracks indexed" until it is verified.

@@ -2,7 +2,20 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (FrankX PR 875 merged `05a2ffcf0`, PR 876 merged `2e6e8e73`, PR 877 merged `b56723c8`, issue 870 stays open for lib and content) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (FrankX PR 878 merged `f9811d47`, issue 870 stays open for the voice file and the content corpus) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-04: email and hub song counts merged (Grok)
+
+[frankx.ai-vercel-website PR 878](https://github.com/frankxai/frankx.ai-vercel-website/pull/878)
+squash-merged at 2026-10-04T05:49:23Z as `f9811d47029ccf95b77455801d26c2de081f765f`.
+Email templates, hub stats, the music spotlight, workshop credentials, personas,
+the music-lab plan note, the Golden Age `500+` song stat, and the about-variant
+counter no longer publish the song total. Local proof: 85 public-claims tests
+passed. CI passed on the first build. No viewport proof.
+[Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870)
+stays open. `lib/voice/frankx-voice.ts` still tells writers to use the phrase.
+`lib/qualities.ts` still titles the live essay. The content corpus still
+publishes the count. The prompt email still says "500+ combined plays".
 
 ## 2026-10-04: public page song counts merged (Grok)
 
