@@ -8,36 +8,42 @@
 
 ## Arcanea guard and platform security, 4 October 2026 (Codex)
 
-- Root144/39362eb draft,136/139 open and143 main recovery remain separate fronts.
-  Original branches, source provenance and all other estate goals stay preserved.
-- Platform [draft45](https://github.com/frankxai/arcanea-platform/pull/45) is
-  e3d2d8f/base b4738df9,108 files; complete diff f18b5db8. Actual MCP client now
-  performs SDK1.32.0 stdio/HTTP/legacySSE/nativeWebSocket discovery and calls;
-  formerly no-op transports and fabricated results are removed. Complete responses,
-  startup/request cancellation/deadlines, denial/retry, snapshots and heartbeat.
-- Reproduced real HTTP401 masking and concurrent reconnect/shutdown defects fixed.
-  All20 real client cases pass Node20.20.2/22.23.3, with prior7 server wire tests.
-  Full3349/3341pass/8existing skips/0fail/0cancel each; all4 Vitest startups pass.
-  Actual creator journey survives restart and matches direct SDK; no model benchmark.
-- Packages37167886411/Quality37167886417 pass, Next16.3.8 builds129 routes.
-  Suite37167886404 fails audit289=32low/132moderate/125high/0critical, exit1.
-  Web lint50errors/227warnings; MVP/apps fail, deployment skipped. No relaxed checks.
-- Tested merge1ed58e05 exact parents/tree and all107 present changed blobs verified.
-  Client lock/dependency graph unchanged; prior52-importer preservation retained.
-- Exact eight-file source review Grok4.7-build-fast/high PASS/0findings,413.534s.
-  Packet70901bytes/0daad21c; native USD0.2799288 unreconciled. All7 full current
-  source/test/docs +task append/support excerpts; full108/SDK remainder/history
-  omitted. SDK WebSocket close returns before close event; wrapper follows it.
-  This source verdict supplies no whole-integration/GitHub/browser/production approval.
-- Previous changed-source review timeouts supply no verdict; separate7.11s response
-  diagnostic proves only its response. Tools0/MCP7disabled/global config unchanged.
-  Workers terminal; no local dependency/build/browser/server or watcher.
-- [Issue44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5975453700) and hub session/current pickup bind both saves.
-  Foreign hub records through a76b1c3 and site87/f84c3093 stay unchanged. Closed root
-  issue142 gets no unrelated new platform comment. Full goal remains active.
-  Next compatible high repairs/actual web lint behavior/full integration review,
-  graph/agent persistence, OAuth/authenticated creator/canon/Supabase/Vercel/plugin
-  acceptance. PR45 draft; no main/npm/cloud/live account/branch cleanup acceptance.
+- Platform [draft45](https://github.com/frankxai/arcanea-platform/pull/45) now
+  e04329e/base b4738df9,121 paths/120 present; complete diff ad6b3e06.
+  Verified creator identity controls per-request Supabase writes. Output URL and
+  all25 mapped generation/license fields survive save/retrieve/edit/archive.
+  Owner archive retains work; old direct owner DELETE remains permitted by RLS.
+- Private drafts stay out of public semantic search despite actual admin bypass;
+  negative control proves private data readable before the search predicates.
+  Actual PostgreSQL17/PostgREST13.0.7/schema/RLS/access migration, Node20/22:
+  each19pass0fail/skip/cancel, scoped graph/types and strict changed-code lint PASS.
+  Auth endpoint/refresh and embeddings are fixtures; live account/storage unproven.
+  Same persisted row/direct SDK comparison72/53ms is not a model/matched benchmark.
+- Native regression13cases1pass12fail retained; unauthed/foreign-owner POST201.
+  Later17runtimepass/3typefail and18/scopedpass/wholeweb vectorTSfail are retained.
+  Current19case proof is independent; downstream prerequisite failures stay labelled.
+- Suite37171459707 packages each3349/3341pass/8existing skip/0fail/cancel,
+  all20 real MCPclient/7 wire cases/four Vitest startups. Packages37171459668 and
+  Quality37171459727 PASS fullwebtypes/Next16.3.8/129routes/secrets/topology.
+  Audit289=32low132moderate125high0criticalFAIL; summary correctlyFAIL.
+  Web41errors222warnings; strict MVP/apps fail/deployment skip. No relaxed checks.
+- Tested merge636e48f4 exact parents/tree/all120 present changed blobs verified.
+  No lock/dependency change. Original branches/PRs/provenance stay intact.
+- Current complete18-file source Grok4.7-build-fast/high PASS0findings,387.084s,
+  packet162545bytes/2e94736a; reportedUSD0.27836208 unreconciled. Tools0/MCP7disabled,
+  global config unchanged/worker terminal. Full121/later schema/otherAPI/SDK/history
+  omitted. Prior8client/17creation reviews retain exact scopes, no blanket approval.
+- Review limits: view updates rewrite updated_at, old direct owner DELETE/RLS,
+  unpinned legacy SQL helpers/error branches and unused admin similarity paths.
+  No provided route calls that similarity path; expired session fixture JWT remains
+  unexpired. No live creator/browser/model/storage/canon/Vercel/cloud acceptance.
+- [Issue44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5975933078)
+  plus hub session/current prompt bind both saves. Preserve foreign1106bf5/mobile
+  43bb1da/cursor and other goal01a10210. Root144/136/139/143 and human app fronts stay.
+  Closed root142 gets no unrelated comment. Full goal ACTIVE, PR45 draft.
+  Next compatible security closure/actual remaining web behavior/full integration
+  and live creator/canon/Supabase/Vercel/plugin release proof. No main/npm/live SQL
+  or branch cleanup. Policy loading is not universal runtime enforcement.
 
 ## Arcanea release recovery on main, 3 October 2026 (Codex)
 
