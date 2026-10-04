@@ -8,42 +8,50 @@
 
 ## Arcanea guard and platform security, 4 October 2026 (Codex)
 
-- Platform [draft45](https://github.com/frankxai/arcanea-platform/pull/45) now
-  e04329e/base b4738df9,121 paths/120 present; complete diff ad6b3e06.
-  Verified creator identity controls per-request Supabase writes. Output URL and
-  all25 mapped generation/license fields survive save/retrieve/edit/archive.
-  Owner archive retains work; old direct owner DELETE remains permitted by RLS.
-- Private drafts stay out of public semantic search despite actual admin bypass;
-  negative control proves private data readable before the search predicates.
-  Actual PostgreSQL17/PostgREST13.0.7/schema/RLS/access migration, Node20/22:
-  each19pass0fail/skip/cancel, scoped graph/types and strict changed-code lint PASS.
-  Auth endpoint/refresh and embeddings are fixtures; live account/storage unproven.
-  Same persisted row/direct SDK comparison72/53ms is not a model/matched benchmark.
-- Native regression13cases1pass12fail retained; unauthed/foreign-owner POST201.
-  Later17runtimepass/3typefail and18/scopedpass/wholeweb vectorTSfail are retained.
-  Current19case proof is independent; downstream prerequisite failures stay labelled.
-- Suite37171459707 packages each3349/3341pass/8existing skip/0fail/cancel,
-  all20 real MCPclient/7 wire cases/four Vitest startups. Packages37171459668 and
-  Quality37171459727 PASS fullwebtypes/Next16.3.8/129routes/secrets/topology.
-  Audit289=32low132moderate125high0criticalFAIL; summary correctlyFAIL.
-  Web41errors222warnings; strict MVP/apps fail/deployment skip. No relaxed checks.
-- Tested merge636e48f4 exact parents/tree/all120 present changed blobs verified.
-  No lock/dependency change. Original branches/PRs/provenance stay intact.
-- Current complete18-file source Grok4.7-build-fast/high PASS0findings,387.084s,
-  packet162545bytes/2e94736a; reportedUSD0.27836208 unreconciled. Tools0/MCP7disabled,
-  global config unchanged/worker terminal. Full121/later schema/otherAPI/SDK/history
-  omitted. Prior8client/17creation reviews retain exact scopes, no blanket approval.
-- Review limits: view updates rewrite updated_at, old direct owner DELETE/RLS,
-  unpinned legacy SQL helpers/error branches and unused admin similarity paths.
-  No provided route calls that similarity path; expired session fixture JWT remains
-  unexpired. No live creator/browser/model/storage/canon/Vercel/cloud acceptance.
-- [Issue44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5975933078)
-  plus hub session/current prompt bind both saves. Preserve foreign1106bf5/mobile
-  43bb1da/cursor and other goal01a10210. Root144/136/139/143 and human app fronts stay.
-  Closed root142 gets no unrelated comment. Full goal ACTIVE, PR45 draft.
-  Next compatible security closure/actual remaining web behavior/full integration
-  and live creator/canon/Supabase/Vercel/plugin release proof. No main/npm/live SQL
-  or branch cleanup. Policy loading is not universal runtime enforcement.
+- [Platform draft45](https://github.com/frankxai/arcanea-platform/pull/45) is now
+  4639ec5/base b4738df9:123 paths/122 present, full diff a042bc0d.
+  Existing verified creator ownership, durable metadata/archive, private-search
+  predicates and real MCP transports remain. Canonical app/canon ownership stays
+  separate; original seven PRs/branches/cherry-pick provenance remain.
+- Installed-package regressions precede patches. Corrected a562d3e baseline:
+  each8 cases/1pass/7fail on Node20/22; current five installed cases all PASS.
+  Historical brace2 is metadata only. 35 new compatible overrides plus original7
+  retain pnpm8.15.0/lock6/Node support,52 importers and2166 snapshots;37 importer
+  blocks/2006 package blocks byte-identical. Native target/peer metadata and graph
+  closure retained. Original flags/peer contracts restored; OpenZeppelin upgrade
+  withdrawn, legacy Vite5 retained. Mocker Vite peer repaired separately.
+- [Suite37177519083](https://github.com/frankxai/arcanea-platform/actions/runs/37177519083):
+  each3349 package cases/3341pass/8skip/0fail/cancel, four Vitest startups,
+  five dependency cases,19 actual creation recovery cases/scoped types/lint and
+  native frozen --prod/Rollup creation-seed0/Glob component execution PASS.
+  PostgreSQL17/PostgREST13/schema/RLS/access migration actual; Auth/embeddings
+  fixtures. Original Eliza/Solidity source absent. Production baseline already
+  passed; prior review's prune-failure prediction was not reproduced.
+- Packages37177519081/Quality37177519113 PASS full types/Next16.3.8/129 routes/
+  secrets/topology. Web lint41errors222warnings; strict MVP/apps FAIL/deploySKIP.
+  Audit100=19low61moderate20high0critical FAIL; summary honestlyFAIL, gate unchanged.
+  Reduced189 total/105 high from e043's289/125. Twenty high findings remain.
+- Tested14beb74 actual parents/whole tree/all122 present changed blobs verified.
+  Frozen lock-only byte-stable edc3146d; no local modules/build/worktree.
+  C:~14.97% BOUNDED, floor event reported; no media/model/fanout/unattended work.
+- Independent native Grok4.7-build-fast/high: full5-file e6 FAIL7 retained and
+  reconciled against actual counterproof; full6-file b876 FAIL2 retained.
+  Current2-file 4639ec5 WARN0 closes mocker medium finding; high audit blocker stays.
+  Packet27966bytes/be338cad/128.379s/reportedUSD0.09212912 unreconciled.
+  Three reviews totalUSD1.57712468 unreconciled, tools0/MCP7disabled/config unchanged.
+  Current CI completed after narrow packet preparation. Prior18-file creation/
+  eight-file client PASS keep exact scopes; no fresh full123/source/GitHub approval.
+- [Issue44 save](https://github.com/frankxai/arcanea-platform/issues/44#issuecomment-5976673124)
+  and this session/current prompt bind both saves. Preserve foreign hub e2154aaa,
+  goal01a10210/mobile43bb1da/cursor/projection recovery and release144/136/139/143.
+  Closed root142 receives no unrelated comment. Full goal ACTIVE, draft45 remains.
+- Next trace web Drizzle0.34 declaration/database commands before removal/migration;
+  remaining high paths and41 errors in27 web files need actual recovery/rendering
+  proof. Deprecated Glob10/unpatched Braces3/legacy majors/missing implementations,
+  full integration/live creator/account/storage/model/Supabase/Vercel/cloud plugin/
+  canon/human gates remain. Old owner DELETE/view updated_at/SQL-helper/admin-path
+  limits remain. Main/live SQL/registry/production/original branches unchanged.
+  Policy loading is not universal runtime enforcement.
 
 ## Arcanea release recovery on main, 3 October 2026 (Codex)
 
