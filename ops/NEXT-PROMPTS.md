@@ -22,39 +22,42 @@
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357`,
 [FrankX #252](https://github.com/frankxai/FrankX/issues/252), preserving the full
 six-audience website/intelligence/frontier/SEO/affiliate/serif visual/social outcome.
-Source `03e955cefff9e0e3fdef99e41b7203a723ac5a91`, branch `agent/codex/editorial-renewal-20261003`.
-Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-20.md`, source/review evidence and progress
-under `docs/ops/editorial/`. There are 83 prepared revisions, four observed
-production corrections and 191 unreviewed articles. Preserve every prior receipt,
-hash and improved production scientific page. Continue substantive reader work.
+Source `1fa1a2724ab5b87829510d3fc6f17a33c78a496e`, branch `agent/codex/editorial-renewal-20261003`.
+Read `RENEWAL-PLAN.md`, `REVIEW-BATCH-21.md`, source/review evidence and progress
+under `docs/ops/editorial/`. There are 87 prepared revisions, four observed
+production corrections and 187 unreviewed articles. Preserve every prior receipt,
+hash, asset and improved production scientific page. Continue useful reader work.
 
-Batch 20 reconciles four ACOS guides with actual pinned source/installer/licence
-scope and useful authored creator artifacts. Full source 11.0.0 and five-skill
-core 1.0.0 differ. Remote source CI is not runtime verification. Dry run and
-copied hooks do not prove installation or enforcement. Effort is explicitly
-assumed, with review/recovery and a zero-net sensitivity example. Poolside
-distribution PASS retains three findings with exact text reconciliation. Poolside
-creator and separate NVIDIA creator timed out; both are terminal, not acceptance.
-Obtain usable independent review without erasing failures or earlier open reviews.
-Batch 19 refined financial JSON is invalid and value REVISE retains rejected
-arithmetic proposals. Higher Self premium founder approval remains open. The
-private IACOS repo does not establish a public bundle, and the authoring investor
-href="#" needs an actual qualified offer and responsive capture.
+Batch 21 corrects four personal agent/ACOS/agentic-AI/MCP guides with actual
+official source scope, authored copy/decisions/recovery and serious alternatives.
+Memory is context; effective runtime access needs separate proof. Model skill
+selection is not a fixed keyword trigger. Local Vercel registration remains
+remote account access. Full ACOS 11.0.0 differs from core 1.0.0; explicit batch20
+source receipts are reused, not a second installation claimed. Retain the
+production-only August field-guide link's dated limits and actual raw-source hash.
+Initial Poolside JSON is malformed; visible recommendations are manually
+reconciled, with two clarity refinements. Refined NVIDIA ended at length without
+a final critique/verdict. Preserve both originals and obtain usable exact-final
+independent review. Earlier20 creator timeouts,19 financial invalid JSON/value
+REVISE,18/17/16/15/14creator/13voice and Higher Self founder gaps remain open.
+Private IACOS does not qualify a public bundle; investor href="#" needs an actual
+qualified offer and responsive capture. Verify issued affiliate relationships.
 
-Actual build admission is HOLD, new agents paused, disk below 15%, CUA empty and
-dependencies absent. Text/small checks may continue. Refresh admission before
-heavy work; preserve foreign processes, assets, 23 edits and other objectives.
+Actual initial admission BOUNDED, new agents paused, disk below15%, CUA empty and
+dependencies absent. Ordinary text/small checks may continue. Refresh admission
+before heavy work; preserve foreign processes, 23 edits and other objectives.
 Recover admitted dependencies and supported desktop/mobile capture, pass full
 gates and independent source/design/security/commercial acceptance, then port
 accepted changes against fresh production main and verify its exact green deploy.
 Deliberately refresh earlier frontier overviews with current catalogue receipts.
 
-83 social/visual sets remain held. Use sentence-case Playfair design, exact prompt
+87 social/visual sets remain held. Use sentence-case Playfair design, exact prompt
 sidecars, both ledgers, taste synchronization and responsive review after
-admission. Higgsfield skills/MCP are banned. Verify actual issued affiliate
-relationships before activation. Public social and premium founder approval stay
-human-gated. Save slices in this hub and issue #252. Article counts and hub CI
-cannot close the full website goal.
+admission. Higgsfield skills/MCP are banned. Public social and premium founder
+approval stay human-gated. Keep secret hooks enabled; batch21 relabeled a public
+revision field after a verified false positive, preserving its value and passing
+the enabled recheck. Save slices in this hub and issue #252. Article counts and
+hub CI cannot close the full website goal.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
 
