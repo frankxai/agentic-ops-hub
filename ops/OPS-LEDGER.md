@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 9 saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX Chrome repair/review saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Queen/SIS continuity merged source and production acceptance (Codex)
 
@@ -17,6 +17,150 @@ The proposed offering is session continuity within existing SIS/Second Brain, in
 Fresh admission permits one interactive workload, pauses new swarms and keeps storage bounded. This continuation used one lead, existing worktrees and tiny tests, with security hooks enabled. No new agent, install, watcher or shared process was started. Original goal01a102ed remains blocked; the deadline09:00:23 UTC and original objective remain preserved, and no uninterrupted eight-hour run is claimed. Other paused/blocked goals were preserved. Emil Design Engineering was read before implementation; there were no new interface changes, so reduced motion/touch/transition verification is not claimed. Humanizer guidance was applied to this handover. The existing side-tab border predates the slice and stays unchanged; no design ignore was added. The plugin independently rate-limited hints on the unit-test file after repeated edits.
 
 See the session entry for the repository/interface map and current pickup prompt. The two campaign-owned leases are released after the hub save; no foreign lock, branch or worktree is removed.
+
+## 2026-10-04: Native Bash denial/feedback and compiled Protocol proof verified (Codex)
+
+Frank approved both Bash hooks; actual native discovery sees enabled/trusted.
+Source97/2fe7189 repairs absent nullable transcript handling. Actual allowed
+write, synthetic-secret denial before execution, defect feedback and fresh
+corrected scan pass; all processes close and configuration/trust hashes persist.
+20 Node/8 Python tests pass locally and in Windows/Linux CI; narrow independent
+source review PASS. Security Stop runs; vendor design Stop and other-host/model
+use remain open. Earlier failed broader host verdict is preserved.
+
+Kernel40/baeb7a7 builds source12d794a baseline and pinned patch candidate in CI,
+with2+9 actual observations, source-drift denial, fallback/recovery, touch back
+navigation and one interrupted reduced-motion entrance. All checks and limited
+independent source/evidence review pass; tested blobs equal. Isolated proof still
+needs owning integration/routes/rendered review and promotion; foreign PR200 stays
+untouched. All eleven requirements remain open/partial. See [session](sessions/2026-10-04.md)
+and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12#issuecomment-5979694995).
+
+
+## 2026-10-04: Estate design goal blocked pending actual trust and integration access
+
+All eleven requirements remain open/partial. Fresh native hooks/list still marks
+both Bash entries untrusted; no trust writes or model calls. Patch39/855644e is
+ready for assigned integration but not built/deployed; preserve open PR200 and
+other owners. CUA/Figma access and current-head human promotion remain unresolved.
+Three consecutive turns retained these blockers; automatic goal continuation stops
+until a prerequisite changes. See [session](sessions/2026-10-04.md) and
+[issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
+
+## 2026-10-04: Current Starlight serving revisions verified (Codex)
+
+Read-only Vercel metadata binds current Protocol/Lab/Academy production aliases
+to READY deployments at 12d794a/854357b/abaf24b; all match GitHub main. Protocol's
+four source blobs equal the prepared repair base. Earlier observations stay dated,
+with no retroactive deployment or repair-acceptance claim. The latest canceled
+protocol preview belongs to foreign scoped-recall and is preserved. Draft39/HOLD,
+native trust, checkout assignment, browser/visual proof and all eleven requirements
+remain open. See [session](sessions/2026-10-04.md).
+
+## 2026-10-04: Protocol repair hypothesis verified; integration held (Codex)
+
+Kernel draft 39/855644e stacks on frozen 38 and includes the exact four-file protocol
+patch against 12d794a. Actual 10/10 cloud states and full kernel CI pass; four blobs
+equal tested merge f9ffdc0. All four hypothesis states change 22 classes/4 labels,
+remove observed uppercase findings and retain viewport-width reflow. Blocked body
+becomes DejaVu Sans and mono Liberation Mono; normal sampled roles stay unchanged.
+Independent Step HOLD requires compiled/deployment, global rules/routes/native
+zoom and post-change loading evidence. This is no product apply or release PASS.
+
+No free assigned protocol lane established; preserve PR200/202/203 and foreign
+primary. Both new Bash hooks remain untrusted. All eleven requirements, Lab width
+failures and prior candidates remain open/partial. Disk 14.83% free, bounded; existing
+owned checkouts only. See [session](sessions/2026-10-04.md), [draft39](https://github.com/frankxai/starlight-design-intelligence/pull/39)
+and [protocol197](https://github.com/frankxai/Starlight-Intelligence-System/issues/197).
+
+## 2026-10-04: Live typography observed; product repairs remain open (Codex)
+
+Kernel draft38/c5af15c has18/18 actual cloud observations across Lab/Academy/
+protocol. Full CI61Node/15Python/53browser-process/audit0; all three blobs equal
+tested merge b53e6bc. Independent exact-head source review PASS. Nine observed
+font hashes match the prior file census; sampled normal/recovery face sets agree.
+
+Lab root widths405/390 and328/320 remain unresolved; clipped map candidates
+do not prove their cause. Protocol has22 uppercase text elements and loses sans/
+mono fallback under blocked fonts. A raw desktop shift0.354444 identifies an
+impacted footer; cause/CLS remain unverified. Existing issue12/82/197 comments
+have exact-body readbacks. Product source/foreign lanes stay unchanged.
+
+PR38 is draft; deployment SHA, visual/rights/native zoom/WCAG/performance/product
+acceptance and promotion remain open. Native Bash trust still pending Frank's
+/hooks confirmation. Prior37/36/35/native96/community15 and all eleven estate
+requirements remain open/partial. Disk14.97%, existing owned checkouts only.
+See [session](sessions/2026-10-04.md) and [kernel issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
+
+## 2026-10-04: Font artifacts decoded; migration verified in draft (Codex)
+
+Kernel draft37/f8b5438 denies the reproduced four-byte WOFF2 release bypass.
+Windows/Ubuntu decode nine pinned actual resources; metadata/coverage match the
+private reader. Full CI67/69Node(two intentional skips),15Python,53browser/process
+checks; all eleven tested-merge blobs equal. Initial independent REVISE's migration
+finding is corrected and receives scoped exact-head PASS; incomplete full rereview
+retained. Named human promotion and downstream migration remain open.
+
+Thirteen resource observations/nine unique files/six font families/sixteen CSS
+style-weight declarations and six pinned OFL source files are recorded. Rights,
+computed production fonts, fallback/mobile specimens and rendered mark acceptance
+remain open. Native `/hooks`, supported browser and favicon choice still pending.
+Disk14.97%, bounded text/small checks, installed node_modules unchanged. Both records
+save this progress; all eleven estate requirements remain open/partial. See
+[session](sessions/2026-10-04.md) and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
+
+## 2026-10-04: Starlight pack references owning identity; promotion pending (Codex)
+
+Kernel draft36/96192ed links the recovered star, scoped lab font/token roles,
+retained protocol variant and existing constitution modes. Lab manifest/SVG HTTP
+hashes match owning main854357b; Academy referenceabaf24b retained. Six real
+consumer probes preserve compatibility and reject invented caller/mode. Linux
+CI37175395531 passes61Node/15Python/53browser-process checks; all three tested
+merge blobs equal. Independent Step exact-source PASS; named human promotion,
+rendered identity, fonts/rights and actual product adoption remain open.
+
+Source consistency and schema loading establish no site/token runtime
+enforcement. No product/source geometry/image/downstream pin changed. Disk
+crossed15%floor to14.9735%, Queen receipt and live notice saved; text/small-check
+posture only. Both native Bash hooks still pending Frank's `/hooks` review.
+All eleven estate requirements remain open/partial. See [session](sessions/2026-10-04.md)
+and [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
+
+## 2026-10-04: Brand images inspected; favicon choice remains open (Codex)
+
+Nine further existing raster views reveal byte-identical FrankX v2 aliases,
+shared Income 3D artwork, differing Blue Life whale shapes and Omega app icons.
+Current owning mains match inspected bytes; no approved master count established.
+Live FrankX HTML serves F/star SVG and mascot PNG fallback. Five faithful private
+SVG exports have repeated bytes, exact dimensions and validated VIS sidecars;
+ledgers saved. Step image-only PASS supports review readiness, with its unsupplied
+16px wolf inference excluded. Founder/browser/platform/build/release proof open.
+
+[FrankX issue872](https://github.com/frankxai/frankx.ai-vercel-website/issues/872)
+tracks the choice and implementation. Private memory PR2 merged76047d1; exact
+note bytes verified, shared local retrieval pending. No product file, identity,
+deployment or existing mascot changed. Both Bash hooks still untrusted03:04UTC.
+Figma current canvas unverified after actual Starter refusals. All eleven estate
+requirements remain open/partial. See [session](sessions/2026-10-04.md).
+
+## 2026-10-04: Asset registry verifies current bytes; source promotion held (Codex)
+
+[Kernel draft35](https://github.com/frankxai/starlight-design-intelligence/pull/35)
+at ddf1d663 replaces echo-success/fabricated runtime approval with empty strict
+registry and preview-bound local VIS/job/output/provenance verification. Former
+sample preserved, Hermes/VIS schemas reused. Actual preview-proof and Windows
+short-alias RED cases repaired;14targeted tests pass on Windows/Linux. CI37171363371/
+37171363383 pass75LinuxNode/15Python/53browser-process checks; tested merge96f8f761,
+all12blobs equal. Prior clean Windows72/74 retains two incumbent EPERM failures.
+
+Same synthetic-job comparison shows manual SHA catches changed bytes that the
+incumbent media-job validator accepts; integrated preview rejects/recovery succeeds.
+No real artwork registered or authenticated approval/rights/ledger/publication.
+Poolside735444ff REVISE findings retained/disputed; NVIDIA timeout and current
+ddf1d663 Cohere length/null have no verdict. Draft source/release stay held.
+Three Figma reads hit Starter quota, no canvas edits/current state proof. Both
+Bash hooks still untrusted at02:26UTC; native dispatch/refinement remains pending.
+All eleven requirements remain open/partial. See [session](sessions/2026-10-04.md).
 
 ## 2026-10-04: Shell design adapter installed; native trust pending (Codex)
 
@@ -166,64 +310,55 @@ No session-owned worker, server or watcher remains. See [session](sessions/2026-
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-The complete website/article/six-audience goal remains active under
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252), source task
-`01a101fc-228c-7010-bba6-cf60bbad2357`. Local source `bdcf130e4fb7c53cbfa65119f5076c785344e080` includes batch 9
-article/companion commit `e6b4bf77`. The 278-URL/769-variant register now has
-42 prepared source revisions, four observed production corrections and 232
-unreviewed URLs. Forty-six receipts preserve earlier 41; all 42 authoring hashes
-match. Forty-two social sets remain held. No article has release acceptance.
+Full website outcome remains unfinished, task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). User authorizes reviewed
+main/production delivery. Runtime goal reports paused after interruption; intent
+remains unfinished. Source `24e18e19f9791de3e65572019a792fa18c6a07ec`, owned authoring branch
+`agent/codex/editorial-renewal-20261003`, is local only.
 
-Five actual rewrites cover AI SDK runtime selection, solo-builder ownership,
-production authority, trajectory evaluation and MCP transport/authorization.
-Current AI SDK docs are v7 while authoring declares ^6.0.277. Approval APIs
-differ by runtime; no SDK migration was performed. Current MCP latest resolves
-2026-07-28, with per-request metadata and different SSE cancellation behavior.
-False OpenAI-only SDK, obsolete Vercel Postgres and unsupported starter/time/
-cost/maturity claims are repaired. Actual pinned production raw baselines at
-044c8447 preserve the newer solo-builder DEAL link and original metadata.
+Chrome blocker repaired locally: both Codex browser manifests retained a
+`resourcesPath` into removed app 26.928.4866.0. Backups preserve the old bytes;
+only that field was changed to installed app 26.930.3930.0. Ten entries in each
+copy have all seven required paths. Native-host/extension checks and supported
+Chrome transport pass. ChatGPT side-panel startup awaits user confirmation.
+This does not change ChatGPT cloud behavior. Owned review tab closed and viewport reset.
 
-The downloadable builtin-only Node companion is a local single-writer teaching
-experiment. An approved synthetic file write loses its acknowledgement; a
-reconstructed instance refuses redispatch and actual destination readback
-reconciles a matching receipt. Observed unknown/unknown/completed, one write.
-Fourteen actual tests pass on Node v24.16.0, including queued-input mutation,
-denial, changed/expired approvals and a receipt read by a fresh Node process.
-Authentication, multi-writer transactions, MCP/OAuth, remote delivery and
-power-loss durability remain outside this evidence. Port companion and articles
-together. The existing merge gate includes it; all 24 boundary/recovery tests pass.
+Three bounded Sonnet passes produced substantive independent text/source review
+for the five Canva/Gamma/CapCut/HeyGen/Perplexity guides. Actual final model
+`claude-sonnet-5-5` found all ten second-pass required changes resolved, no
+remaining blocking text defects, and explicitly withheld release approval.
+Corrected CapCut agreement is non-US; original wrong US receipt remains historical.
+Exact article hashes and scoped source limits are in
+`docs/ops/editorial/evidence/sonnet-review-2026-10-04.json`.
+Five final MDX/GFM compiles, six source-route resolutions and nine corpus tests
+pass. Authored CSV has three rows/four fields; illustrative SRT has four ordered
+nonoverlapping cues. Videos verified by official oEmbed identity, not watched.
 
-Exact-source code requests on Nvidia and one same-packet Cohere recovery timed
-out without final content or usage. Code review remains open. Separate editorial
-StepFun reached the output limit with null final content; one same-packet
-Poolside recovery returned PASS with five findings plus a duplicated JSON object.
-Strict format fails. The high MCP repair contradicts re-retrieved primary docs;
-other findings are already covered, quote lead notes or request optional detail.
-All findings, failures and source hashes are retained. All five article files
-and both companion files remain unchanged; the supplied critique confers no acceptance.
+Register: 278 slugs/769 variants; 96 prepared, four observed production
+corrections, 178 unreviewed, 100 receipts and 96 held social/visual sets. All 96
+prepared hashes match; other 95 receipt rows intact. Affiliate catalogue 35;
+no account, enrollment or paid URL activation. Preserve 23 foreign source edits.
+`RELEASE-READINESS-2026-10-04.md` records exact gaps and pickup prompt.
 
-Five MDX/GFM compiles, preserved metadata, eight source links and the explicitly
-hypothetical 4*(1+2)=12 arithmetic verify. Nine corpus tests and the scoped claims
-audit pass; blog truth is outside that regex scanner. Fifteen existing language
-findings in eight other files remain. Enabled source secret hooks pass 61.39 and
-128.49 KB. Twenty-three foreign newline edits remain unstaged. Five distinct
-serif/sentence-case visual briefs await generation/provenance/rendered review.
-No current qualified affiliate destination, account trial, new media or live post.
+Existing production `frankxai/frankx.ai-vercel-website` main
+`0ff16a8dce94131601718f01e19ca1102c4d4b3d` has Vercel production
+`dpl_uZZxo5EkkACSR4iVrcSKGqCm59NB` metadata READY with frankx.ai/www aliases.
+These local revisions have not shipped. Next/TypeScript payloads are missing;
+type-check fails and runtime links:check fails without a session-owned dev server.
+Browser QA held: 6230 MB available versus 8192 required and 14 runtimes versus 8.
+Desktop screenshot timed out; no responsive acceptance. Interactive text/small
+checks admitted, storage below 15%; no installs, new worktrees, media or swarms.
+Observed live Canva exposes HERO_PROMPT and uppercase labels; shared serif/
+sentence-case refinement, original visuals, earlier independent/founder findings,
+affiliate checks, remaining corpus and exact green production journeys remain.
 
-Build admission HOLD: 7,151 MB free / 8,192 required / 3,055 projected,
-twelve runtimes and pause-new-swarms. Disk 15.33% is a lightweight observation,
-with full admission due before material growth. Next/TypeScript targets remain
-absent; refreshed supported CUA inventory apps=[]/browsers=[] prevents capture.
-No new agent, install, worktree, build/model/media, cleanup or persistent worker.
-Source is unpushed and website undeployed. This three-file hub save starts from
-fresh main 7fa24c41, preserving all other fronts and full session history.
-Prior PR124 exact PR/main CI and matching blobs establish documentation only.
-
-Next recover admitted dependencies/build/capture and independent code/design/
-commercial review; port accepted public files surgically, pass gates, merge
-normally and verify deployed SHA/routes/denial/recovery. Continue the remaining
-article work while held. Policy loading supplies context; the actual tests
-enforce only their specific scope. See the [session](sessions/2026-10-04.md).
+Multi-site plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` complete
+locally: six proposed briefs, approved partner-source matrix, real usage/fresh
+models, visuals/SEO/interconnections and timeline/resource placeholders. Site B,
+actual API access and publication-time model registry remain unverified.
+Implementation queued after full renewal, with no new goal or unattended worker.
+Save this handover through normal hub CI/merge and existing issue #252. Hub green
+covers this record only. No session-owned worker/server/watcher/tab remains.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 

@@ -36,89 +36,67 @@ Done when a clean install and two-harness interruption/restart test prove origin
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Preserve the full
-website/article outcome for musicians, producers, creators, founders, executives
-and AI architects: useful human writing, honest research framing, distinct public
-and private intelligence, current primary sources, verified relationships,
-serif/sentence-case design, original visual/social work and green production.
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal remains
+paused after interruption; preserve intent and report actual state. Source
+`24e18e19f9791de3e65572019a792fa18c6a07ec` on owned branch `agent/codex/editorial-renewal-20261003`,
+worktree `frankx-editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`, batch23,
+`RELEASE-READINESS-2026-10-04.md`, Sonnet evidence and article progress.
+278 slugs/769 variants: 96 prepared/four observed/178 unreviewed, 100 receipts,
+96 held social/visual sets. Preserve stronger production work, dates/URLs/assets,
+prior hashes, affiliate rows and all 23 foreign edits. Serve musicians, music
+producers, creators, founders, executives and AI architects.
 
-Read the [session](sessions/2026-10-04.md), source REVIEW-BATCH-09.md and renewal
-plan. Existing source worktree starlight/worktrees/frankx-editorial-renewal-20261003,
-branch agent/codex/editorial-renewal-20261003, local `bdcf130e4fb7c53cbfa65119f5076c785344e080` after e6b4bf77.
-Private frankxai/FrankX differs from public frankxai/frankx.ai-vercel-website.
-Reconcile fresh production before any surgical port. Preserve stronger public
-changes, research/private holds and all source/owner history.
+The five latest creator-guide texts have independent Sonnet 5.5 review with ten
+required corrections resolved. It is not rendered/product/account acceptance.
+CapCut licence is non-US; old receipt is superseded. Prior failed/limited reviews
+remain. Complete earlier findings and reviews of other prepared revisions.
+Keep referral URLs null until account verification; never invent endorsement.
 
-Register: 278 URLs, 769 source variants, 42 prepared revisions, four observed
-production corrections, 232 unreviewed. Forty-six receipts preserve earlier 41,
-all 42 authoring hashes match; 42 social sets remain held. No release acceptance.
-The full register's production snapshot remains badd9c44; current batch baselines
-are actual bounded raw files at 044c8447, which was freshly rechecked as main.
-Four batch9 original bodies matched; the solo-builder DEAL cross-link is newer
-and preserved with a pinned source hash. Original dates/author/category/hero/
-featured and MCP series identity remain. Publication must include the companion.
+The local Chrome resourcesPath repair is verified and Chrome transport works.
+Confirm the side panel opens. Refresh pp/workload and actual storage admission;
+obtain admitted desktop/mobile capture and dependency recovery. Browser QA held
+at 6230/8192 MB and 14/8 runtimes, storage below 15%; Next/TypeScript missing and
+runtime links gate has no owned dev server. No foreign process/lock deletion.
+Observed live Canva exposes HERO_PROMPT and uppercase interface labels. Finish
+captured serif/sentence-case design, useful visuals, SEO, affiliate checks and
+remaining corpus; compare/refine against stronger existing public experiences.
+No Higgsfield; generated visuals need sidecars and both ledgers. Live posting
+and founder approval retain existing gates. Apply humanizer and accessibility.
 
-Batch9 separates runtime selection, solo-builder modules, authority/ownership,
-trajectory evaluation and MCP protocol/authorization. SDKv7 documentation is
-distinct from installed ^6.0.277 and from the builtin-only Node experiment.
-Request toolApproval differs from WorkflowAgent needsApproval; provider tool
-approval is separate. MCP latest actually resolves2026-07-28: request metadata,
-no implicit protocol session and request SSE closure cancellation. Old protocol
-assumptions need compatibility checks. OpenAI SDK supports non-OpenAI providers;
-the former Vercel Postgres offering is unavailable; the old starter returns404.
-No invented time/cost/maturity benchmark, infrastructure invoice or framework
-winner. Each article gives a named same-task alternative and comparison plan.
+Port only accepted files through an owned production lane in
+`frankxai/frankx.ai-vercel-website`; pass predeploy/security and normal CI, merge
+to main without bypasses and verify exact deployed revision, critical journeys
+and recovery. Observed existing 0ff16a8d production metadata READY does not establish this
+source release. Authoring/handover CI cannot close the website. Save hub/issue proof.
 
-Actual companion: single-writer trusted-operator teaching code. Local synthetic
-destination writes once, loses acknowledgement, reconstructed replay stays
-unknown, actual readback reconciles. Fourteen tests pass including queued-input
-mutation, denied/changed/expired approvals, corrupt-record rejection and a fresh
-Node process reading a completed receipt. The attempting checkpoint test is
-constructed, not a kill test. No model/MCP/OAuth/authenticated tenant, distributed
-transaction, remote delivery or filesystem power-loss guarantee. Payload hashes
-are not signatures; writable-ledger actors are outside protection. Existing gate
-now passes24 publication/affiliate/recovery tests. Five MDX compiles, metadata,
-eight source links and hypothetical12attempt arithmetic verify. Nine corpus
-tests/scoped claims pass. Regex scanner excludes blog content; language15/eight
-other files remains. Source secret hooks61.39/128.49KB pass;23foreignedits stay.
-
-Code independent review remains due: Nvidia and one Cohere recovery timed out,
-with no final content or usage. Editorial StepFun reached 8,000 output tokens with null
-final content; one Poolside same-packet recovery returned PASS with five findings plus
-duplicated JSON. Preserve all errors, inputs, original content and scope. Its
-high transport repair is false against newly re-read primary docs; other findings
-are covered or quote lead facts. All article/artifact hashes remain exact e6b4bf77.
-Reviewer did not browse or run tests. Catalog routes are zero-priced; only
-Poolside reports cost0, absent costs stay unknown. No source/code/design/legal/
-SEO/production acceptance follows the label. Do not repeat an unbounded review
-loop. Recover a smaller admitted exact-code critique when useful.
-
-Build PP remains HOLD: 7,151 MB free / 8,192 required / 3,055 projected, twelve runtimes and
-pause-new-swarms. Disk 15.33% is a lightweight reading; refresh full admission before
-material growth. Next/TypeScript targets missing. Fresh supported CUA surfaces
-empty, so desktop/mobile captures are unavailable. Release kernel requires
-capture: stop promotion when an existing surface cannot be captured. Preserve
-other tasks/processes; no borrowed dependency mutation, task archival, lock
-deletion or process killing to manufacture admission. No session-owned worker.
-
-Continue useful source revisions from reconciled production. Actual source-
-derived contributions and precise failure/recovery beat extra abstractions.
-Obtain current Search Console demand/actual permitted partner usage before
-ranking/traffic assertions. Keep unsupported healthcare/research framing held.
-Verify issued referral/account/terms/navigation before affiliate activation;
-informational citations stay direct. No enrollment, outreach or live posts.
-Use Playfair Display/Source Serif4 tokens and sentence-case labels, equivalent
-text, exact visual sidecars, both ledgers and taste-vault sync. No Higgsfield;
-earlier1672x941 covers remain below the2048 gate. Five new distinct visual briefs
-and article-linked social sets require generation/review and matching release.
-
-When capabilities recover: full source/production gates, exact independent code/
-editorial/design and commercial review, normal PR merge, deployed SHA/routes/
-filter/affiliate/denial/recovery checks. Save the next three-file hub handover and
-issue252 update. This hub branch preserves fresh main7fa24c41 and all other
-fronts; documentation CI/blobs do not prove website acceptance. Goal stays active.
+Queued next: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
+Experiences. Plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` is local.
+Execute after full website renewal is verified complete. Reconcile six briefs,
+confirm the second approved existing site and authenticated/public API access,
+then select distinct reader jobs. Article sources restricted to Vercel, NVIDIA,
+OpenAI, Anthropic, OpenRouter and expressly approved APIs. Retrieve actual usage
+with measured window, attribution and stale/error behavior; keep current model
+routes, publication-time checks and timeline/team/budget gaps explicit. Queued
+records are not running automation.
 
 ### Estate design quality: verify the frozen desk and complete the full rollout
+
+Frank approved both native Bash entries. Fresh hooks/list sees enabled/trusted;
+do not ask him to approve them again or write trust configuration. Source97/2fe7189
+fixes absent nullable transcript handling and is selectively installed. Actual
+native allow, synthetic-secret denial, UI finding, feedback transport and fresh
+corrected scan pass. Security Stop runs; vendor design Stop and broader host/model
+acceptance remain open. Preserve failed earlier broader host receipts.
+
+Kernel draft40/baeb7a7 has actual compiled2baseline+9candidate observations against
+owning main12d794a and immutable patchd69fc7. Full builds/checks, source-drift denial,
+font failure/recovery, one touch navigation/back and one interrupted reduced-motion
+entrance pass; limited independent source/evidence review PASS. Apply the patch
+only in an assigned Protocol lane, preserving foreign PR200. Obtain supported
+rendered review, owning-route proof and current-head promotion; CUA iab is unavailable.
+Figma quota, wordmark choice, locked pilot/guard and other brand decisions remain.
+Keep all eleven requirements open/partial and complete their actual missing proof.
+Earlier dated receipts below preserve the state before this trust/compiled repair.
 
 Continue full goal `01a101be-4e85-74d1-8377-c0ccad8d2dc8` and
 [Design Intelligence issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12).
@@ -128,6 +106,153 @@ Figma/connected libraries; public release enforcement; every native host/entry;
 automatic hooks/bounded loops/evals; useful creator/AI outcomes/alternatives;
 performance/accessibility/recovery; production rollout and end-to-end adoption.
 Read [October4 session](sessions/2026-10-04.md) and private program-progress.
+
+Current deployment binding: read private starlight-current-deployment-binding-
+20261004 and protocol-repair-readiness-native-trust receipts. At 06:57:42 UTC,
+Vercel current Protocol/Lab/Academy aliases are READY at 12d794a/854357b/abaf24b,
+matching GitHub. Four protocol blobs match the prepared patch baseline. This is
+current metadata, not retroactive or compiled-repair proof. Latest canceled
+protocol preview is foreign scoped-recall/dbfc153b and remains untouched. Both
+Bash hooks are still untrusted, CUA is empty and PR200 assignment is pending.
+Do not repeat these status reads as progress without a changed external state.
+Complete missing product/native/rendered evidence after its actual dependency is
+available; keep the full eleven requirements and perform the blocked audit if
+no independent authorized action can advance them.
+
+Current protocol repair slice: kernel draft 39/855644e3ca0d63a40ed88218bbdbdcf9e48daf20,
+owned branch agent/codex/protocol-font-repair-trial-20261004, stacked on frozen38.
+Read the public evals/protocol-typography-repair-12d794a.patch and private
+protocol-repair-trial-855644e/review-step/native-trust-pre receipts. The four-file
+patch applies in read-only check to exact source snapshots at protocol main12d794a;
+it is not applied, built or deployed. All ten actual cloud states/full kernel CI
+pass, four blobs equal tested merge f9ffdc0. Normal roles retained; blocked390/320/
+CSS zoom 2× hypotheses restore sans and mono faces, 22 class/4 label changes, zero uppercase
+findings and viewport-width reflow. Only normal390/blocked390 are matched pairs.
+Independent Step HOLD is preserved; no product/source-review PASS is inferred.
+Global selectors/routes/native zoom/initial loading/shifts and visual/rights/
+human acceptance remain open. Assign an admitted protocol product lane before
+applying the reviewable patch; clean PR200/202/203 lanes and foreign primary are
+unfinished. Do not create a new worktree/dependency install below 15% free.
+Fresh native hooks/list still finds both Bash entries untrusted; test dispatch
+only after actual trust. Keep all eleven requirements and all historical evidence.
+
+Prior live-typography slice: kernel draft38/c5af15cb3e26286751ed2d5f5a00010b7204cb6f
+is frozen, owned branch agent/codex/starlight-typography-runtime-20261004.
+Re-run guard/check with explicit paths and separate ownership before writes.
+Actual18/18 CI37180850730 and full CI37180850751 pass61Node/15Python/53browser-
+process/audit0; three blobs equal tested merge b53e6bc. Independent Step exact-
+head diagnostic-source PASS. Read private starlight-live-typography-c5af15c and
+verification/public-records receipts, preserving earlier raw/log/review evidence.
+
+Nine response hashes equal the prior font census; normal/fresh-recovery sampled
+faces agree. Lab width405/390 and328/320 unresolved, with clipped map candidates
+not causal proof. Protocol has22 uppercase text elements and blocked-font sans/
+mono becomes Liberation Serif; owner main12d794a lacks generic theme tails.
+Desktop raw shift0.354444 identifies footer impact, cause/CLS unknown. Existing
+Lab82 and protocol197 carry observed evidence; closed protocol22 is historical.
+Claim an admitted product lane and bind a preview SHA before the smallest repair.
+Preserve current font/identity roles and map69; verify visual/fallback/native zoom/
+keyboard/touch/recovery/performance under owner contracts. No product source or
+adopter pin changed; named human kernel promotion and all eleven requirements
+remain open. Native Bash trust is intent only; test after Frank confirms both.
+Disk14.97%bounded: no new deps/worktrees/media/local browsers/models/swarm. Continue
+the useful creator/artifact work and estate rollout within admission.
+
+Preserved font-artifact slice: draft37/f8b54383c6c7fa0998b2e4f42407a23e44cece49
+is frozen; canonical owned kernel lane agent/codex/font-artifact-denial-20261004.
+Before writes route/guard/check and ownership again. Original full-manifest four-byte
+WOFF2 acceptance is reproduced; decoded check now denies it. Final67/69Node,
+15Python,53browser-process plus Windows/Ubuntu nine actual pinned-font probes are
+green; all eleven blobs equal tested merge dad209f. Two ordinary Node skips are
+intentional, network covered separately. Keep all initial/final receipts.
+Migration uses preserved original plus adjacent candidate, changed file_check,
+actual full decoded validation, receipt and owning approval before pinning. Initial
+full independent REVISE corrected; exact-head correction PASS, incomplete full
+rereview retained; seven decoder/config blobs unchanged. Named human promotion,
+actual adopter migration, rights/computed browser/fallback/mobile specimens remain
+open. Source/font bytes and gate candidate do not prove every-harness enforcement.
+Thirteen observed resources/nine unique files/six families/sixteen CSS declarations
+and six pinned OFL sources recorded; private reader remains metadata-only. Protocol
+orbit-star and Academy shared star retained; Academy sphere alt defect open.
+Disk14.97% bounded: no new install/worktree/media/model/build fanout; no enabled CUA
+surfaces. Native hooks require Frank's explicit trusted confirmation before tests.
+Continue actual brand applications/creator outcomes and all eleven requirements.
+
+Preserved source-authority slice: kernel draft36 is frozen at
+`96192ed5ba3469665d1539757dbfbfaa7231fc35`. The canonical owned kernel checkout
+used `agent/codex/sis-identity-authority-20261004` for that slice; older35/ddf1d663 remains
+a preserved branch, not the current primary lane. Pack links owning lab main854357b
+and Academyabaf24b: recovered star, observed lab-only tokens/named type roles,
+retained protocol variant and four existing constitution modes. Historical web
+URL aliases canonical `.ai` repository; count once. HTTP manifest/three SVGs
+match pinned bytes, no rendered/application/rights/adoption proof. Six actual
+consumer probes pass expected compatibility and invented-repo/mode denials.
+Linux CI37175395531 passes61Node/15Python/53browser-process; all3tested-merge335a262
+blobs equal. Independent Step source PASS11337tokens; named human promotion open,
+PR36 draft/unmerged. Two incumbent Windows symlinkEPERM failures retained; clean
+adoption success case passed after commit. Token/site rules are guidance, not
+runtime enforcement. No new visuals/product pins. Private sis-identity receipts
+preserve exact sources, failures and review. Disk14.97%crossed15%floor: Queen
+receipt/live notice saved, bounded text/config/small checks; no new worktrees,
+installs, local media/model/build fanout. Existing untrusted Bash, Figma quota,
+browser/FrankX choice and all creator/estate gaps remain. Next inspect current
+protocol/Academy application and licensing; render only after fresh admission.
+
+Current visual-asset slice: FrankX issue872 tracks a real public favicon
+mismatch and prepared F/star exports. Source main044c84472b5cbdffce12bb75ac9b6184dcc48efe
+serves F/star SVG and Omega PNG. Preserve mascot files; Frank's direction question
+is unanswered. Five private16/32/180/192/512px SVG exports have sidecars, ledger
+records and exact repeatable bytes; all viewed original. Step image-only PASS
+does not approve identity/runtime/production; exclude its unsupplied16pxwolf claim.
+Private memory PR2 merged76047d1 with exact-note readback; shared local retrieval
+not verified. Read private frankx-favicon-svg-export/image-review/memory-sync and
+identity-raster-selection/main-reconciliation receipts. No product branch/build/
+deployment/newidentity. CUA surfaces empty; browser-enable question pending.
+Current Figma metadata/libraries/read-onlyJS all hit Starter quota, no canvas
+writes/current-state proof; historical empty file is dated. Actual existing
+views expose duplicate FrankX v2 bytes, shared Income3D and differing BlueLife
+whale shapes; none is an approved flat-master count. Next resolve browser-icon
+roles, verify supported small-size application and prepare the selected exact
+owning candidate with required local gates. Keep every eleven-requirement front.
+
+Current asset-foundations slice: kernel draft35 is frozen at
+`ddf1d663d186130f9aa6b349beb2e6599af0df55`, canonical clean
+`starlight/repos/starlight-design-intelligence`, branch
+`agent/codex/media-registry-proof-20261004` from mainc810469. Old native34/c99adec
+branch and unfinished Hermes work preserved. Echo-only sync returned0 with fabricated
+runtime approval/usage; sample preserved byte-for-byte, canonical registry now empty.
+Preview/apply/audit uses existing VIS receipt and owning sidecar schemas, current
+file hashes and native canonical containment. Apply binds registrySHA and artifact
+fingerprint; foreign locks/changed proofs fail, exact repeats no-op, audit rechecks.
+No actual artwork registration or human/rights/liveVIS/ledger/publication acceptance.
+
+Actual preview-proof RED atbd407 and native alias RED at735444ff repaired. Fourteen
+targeted Windows/Linux tests pass, no skips; final CI37171363371 and37171363383 pass
+75LinuxNode/15Python/53browser-process checks, merge96f8f761/all12blobs equal.
+Earlier clean Windows72/74 retains two incumbent symlinkEPERM failures. Same-task
+existing validator/manualSHA comparison and restored-fingerprint recovery executed
+on synthetic bytes, not customer/creative/value proof. Original Poolside735444ff
+REVISE is disputed with literal optional-chain/containment/lock/revalidation source;
+NVIDIA735444ff timeout and exactddf1d663 Cohere length/null8000 have no verdict.
+Keep draft/promotion held and all review/failure history. Recover one useful bounded
+current-head source critique when admitted, then real permitted asset/ledger proof.
+
+Figma JS tool discovered and Figma-use/library guides read, but actual metadata,
+libraries and read-onlyJS requests forrQRcBL1Kg5TMzEYa5TO9On hit Starter call limit.
+No canvas writes or current canvas state verified; keep historical state dated.
+GenCreator TerritoryB/InstrumentSerif/paperred accepted direction preserved; X/Y/Z
+wordmark choice, editable library application and all-brand masters/rights remain.
+Public sidecar URL404 confirmed; exact owningVIS91918bfa schema mirrored atSHAa198d2c0
+and unfinished Hermesefeccd7a binding schema reused atSHA200d3037. No owner edits.
+
+Latest native02:26UTC read still sees both new Bash hooks untrusted; never self-trust
+or infer approval from Frank saying he will review. Client exited0, shared config
+unchanged, no model/thread/MCP start. After actual trust, use the frozen Config96
+lane below for denial/design/Post/Stop/reload/recovery/model-guided UI proof.
+Read private media-registry-ci/local/preview-gap/alias/comparison/review receipts.
+PP02:23buildBOUNDED9780MBfree/8192required/5684projected/24%CPU/12runtimes/one
+parallel/pause-new-swarms; disk145.90GiB/15.33%. Refresh admission before heavy/growing
+work. No owned workers/servers/watchers or new worktrees; no task/process deletion.
 
 Config draft96 is frozen at `09d1bc46b87c2ba6cfddcb870a5b1eb50adeee06`, clean
 owned worktree `starlight/worktrees/native-design-hook-coverage-20261004`, branch
@@ -229,7 +354,7 @@ Fresh PP/storage admission before heavy/growing work. Last03:04 interactiveALLOW
 worktrees, cleanup or persistent workers under constraints. Owned requests/decoder
 terminal; no server/watchers. Canvas/SIS/Substrate disabled; Higgsfield banned.
 Current captures are non-generative with actual sidecars; generation-schema404
-unverified. New generated media requires both ledgers and actual provenance.
+now confirmed; exact owning VIS schema is mirrored in draft35. New generated media requires both ledgers and actual provenance.
 
 Save finished slices to this hub session/ledger/prompt and existing Config78/kernel12 issues.
 Preserve newer FrankX batch9, Queen and every unfinished front. The original
