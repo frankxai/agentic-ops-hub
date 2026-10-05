@@ -137,19 +137,17 @@ name them. Issue 73 tracks the Cloud key.
 
 ## 🥇 Highest leverage first
 
-**[F0c · starlight-command-center]** — refresh and harden Starlight Home
+**[F0c · starlight-command-center]** — make Starlight Home usable by every agent and harness
 ```
-Starlight Home (https://claude.ai/artifact/Dw92kLEcn8ELG6bfeZauHy) is the founder's prompt deck,
-gate list and handover feed. Code: frankxai/starlight-command-center, branch agent/claude/home-feed
-(ops/home-feed.mjs, ops/home-goals.v1.json, apps/starlight-home/starlight-home.html).
-1. Get a different harness to review the draft PR and merge it through tools/pr-gate.mjs on GATE CLEAR.
-2. Remove any gate from ops/home-goals.v1.json that the compiler warns is closed, then recompile:
-   node ops/home-feed.mjs --ref <hub branch with the newest NEXT-PROMPTS> --ref main --days 6
-3. From a Claude session, read feed/{meta,prompts,sessions,decisions} for their versions and apply
-   ~/.starlight/home-feed/writes.json as one ArtifactData batch with if_version on every entry.
-4. Prove it: ArtifactData get feed/meta shows today's compiledAt and an empty warnings list.
-Stop if the compile fails on a hub fetch error; do not publish a partial feed.
-Handover: hub session note and one line in OPS-LEDGER.
+Read docs/starlight-home-plan.md on branch agent/claude/home-feed of frankxai/starlight-command-center
+(draft PR #52, issue #53) and build its steps 1-4 in order, one commit each:
+1. node ops/home-feed.mjs --commit writes ops/home/feed.json in that private repo, only when content changed.
+2. ops/home/state.json written through one rebase-and-retry function.
+3. home_feed, home_next, home_mark tools on starlight-tool-plane (127.0.0.1:7317/mcp), harness from x-starlight-agent.
+4. Observatory /home reading both files from GitHub, so localhost:4321 and Vercel run the same code.
+Never write feed or state into agentic-ops-hub: it is public and the feed names private PRs.
+Prove it: Codex and Claude each call home_next and home_mark, and state.json shows both harnesses.
+Stop at Frank's gates: Vercel deploy and protection, the read-only GitHub token env var.
 ```
 
 **[F0 · gencreator-skills]** — list video-social-studio in the Claude plugin directory
