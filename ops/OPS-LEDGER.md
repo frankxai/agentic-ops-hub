@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-05: AI Architects org reshape drafted (Claude)
+
+Org `oci-ai-architects` reshaped into a cloud-agnostic AI Architects org as draft PRs: [multi-cloud-ai-architect 1](https://github.com/oci-ai-architects/multi-cloud-ai-architect/pull/1) plus four fix PRs. Codex reviewed as a skeptical buyer; findings fixed. Two Claude cloud routines armed. Blocked on Frank: org name, issue approval, privately tracked cleanup, Railway, academy decisions. Detail in `ops/sessions/2026-10-05.md`.
+
 ## 2026-10-05: SIS session continuity reviewed to PASS and merged (Claude)
 
 Session continuity is MERGED_NOT_LIVE:
