@@ -784,3 +784,9 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+## 2026-10-05: FrankX affiliate account setup (Codex)
+
+[Session](sessions/2026-10-05.md) and [FrankX #252](https://github.com/frankxai/FrankX/issues/252). Source local `e64da2953a067a79cca9b3e40024e3a3e8ea0dc2`; 36 owned files committed, 23 foreign dirty files preserved. The catalogue has 38 rows, 19 configured URLs and one checked relationship. Issued ElevenLabs URL `https://try.elevenlabs.io/7x6qh6upgry8`; no conversion/payout test. Priority account applications drafted, no submission/terms/new URL, Chrome draft persistence unverified. n8n existing rejected; Canva and Descript official surfaces conflict; Magnific creator/publisher routes exclusive; Weave separate from Figma; HeyGen video restrictions remain enforced. Dub does not override vendor decisions.
+
+Linktree, public catalogue isolation, issued account proof, timestamp/expiry fallback and directory/source-conflict corrections implemented locally.43 boundary, 13 Python and 6 Node intake tests pass; the final resolver rerun passes 18; secret hook clean. Initial Sonnet changes required, lead corrections saved, final independent review pending. Missing compile dependencies, RAM below4GiB and bounded disk hold source push, merge and release. Production/income hub/router unchanged. Save is continuity evidence, not website acceptance. The full renewal remains 278 slugs, 96 prepared revisions, four observed corrections and 178 unreviewed articles and queued multi-site plan preserved; no worker.

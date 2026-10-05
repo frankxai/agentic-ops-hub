@@ -62,54 +62,15 @@ Each was reviewed by Grok to PASS on its exact head and merged through `pr-gate`
 
 Do not resume or admit work automatically, and keep collector attestation as SIP Board work. No new brand, price or hosted compute.
 
-### FrankX: continue the article register and release reviewed revisions
+### FrankX: finish truthful affiliate setup and review the saved website slice
 
-Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). User authorized
-continuation and merge after reviews; runtime goal still reports paused. Preserve
-all intent and actual state. Owned source `7ad8fd995e4d524de383767ced77e1942068b221` on
-`agent/codex/editorial-renewal-20261003`, worktree `frankx-editorial-renewal-20261003`.
-Read the renewal plan, progress, batch23/Sonnet, release readiness, and new
-`docs/ops/affiliate/LINKS-AND-SETUP-2026-10-04.md`, browser prompt and review receipt.
-96 prepared/four observed/178 unreviewed; preserve all100 receipts,96 held social
-sets, stronger production implementations, dates/assets and23 foreign edits.
+Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and [FrankX #252](https://github.com/frankxai/FrankX/issues/252). Read the October5 session and FrankX `docs/ops/affiliate/LINKS-AND-SETUP-2026-10-05.md`, browser prompt and account/review receipts. Source local `e64da2953a067a79cca9b3e40024e3a3e8ea0dc2`, branch `agent/codex/editorial-renewal-20261003`, existing owned worktree; preserve 23 foreign files, all 100 article receipts, 96 held companions and the full six-audience renewal: 278 slugs, 96 prepared revisions, four observed corrections and 178 unreviewed articles. User authorized continuation and merge after reviews; runtime goal remains separately paused. No source push/main merge or website release yet.
 
-ElevenLabs is account-confirmed in the signed-in PartnerStack UI, with exact
-issued URL `https://try.elevenlabs.io/7x6qh6upgry8` and normal browser navigation.
-Catalogue37 and copy-links CSV37 preserve19 configured URLs; remaining18 aliases
-are14 programme-page and4 hub fallbacks, not payable referral evidence. One
-account-qualified local relationship. The shared resolver adds official fallbacks,
-canonical IDs, unchanged signed URLs, sponsored qualification and HeyGen channel
-exclusion.34 boundary tests pass; new code independent review remains pending.
+Use the existing signed-in account. ElevenLabs issued URL `https://try.elevenlabs.io/7x6qh6upgry8` is account-confirmed; conversion/payout untested. The catalogue and both full CSVs contain 38 rows and preserve 19 URLs; the approved-only CSV contains one relationship. Network profile and Higgsfield/Descript/Canva/Weave/HeyGen applications are unsent drafts. Browser suspension/reset means fields must be checked after reconnecting; do not create duplicate accounts/applications. Collect confirmed owner emails, country, actual visitors and video/social audience facts. Freepik/Magnific Google chooser needs the existing subscription owner. n8n has an April1 rejection and malformed historic socials; no duplicate or outreach. Canva open community form conflicts with help closure; Descript portal advertises 15% for the first 12 months, while its agreement specifies $25 once. General Figma and Weave differ. HeyGen paid editorial is excluded. Dub network membership never overrides programme approval. Finish reviewable drafts before confirming exact binding terms at action time; Frank handles credentials and consequential payout information. Capture genuinely issued URLs/accepted offer/channels into the canonical catalogue and regenerate public/approved projections; never invent refs or manufacture a commission.
 
-Reconnect Chrome and inspect prepared Gamma/n8n applications before refilling
-or applying again. User signed in; do not create a duplicate network account.
-Binding submission/brand-bidding acknowledgement require the pending specific
-consent. Neither submission confirmed; connection disappeared before durable
-n8n handoff marking. Frank handles credentials, OTP, tax/bank/payout information.
-Capture approved issued URLs into catalogue/copy export; never manufacture refs.
-Gamma forbids masked URLs; use direct issued links and disclose all domains.
-HeyGen excludes SEO/blog-only promotion; Canva/Notion reject new applicants and
-Comet ended. Review Descript/Opus/Synthesia next, then reader-fit candidates.
-RouteRegistry.v2 lives in the foreign router lane: coordinate ownership and
-preserve reviewed upstream corrections before any sync or route activation.
+Local linktree and superpowers now use the issued-proof resolver and public whitelist. Request-time clock supplies stable SSR/hydration decisions, refreshes on focus/minute and fails stale paid click/middle-click to ordinary product. Raw exact issued MDX gets ordinary expiry fallback. Classification marks commercial variants/owned redirects without activating aliases; preserve all issued parameters and keep documentation citations direct. Public catalogue excludes internal account decisions/comments/unchecked rates. Account proof is separate from product testing. Higgsfield affiliate setup is authorized; its MCP/skills/generation remain prohibited by loaded policy, with no universal enforcement claim. Income hub and RouteRegistry.v2 remain in foreign lanes; coordinate owners and domain/masking restrictions before integration.
 
-Enforce actual machine numbers: PP ALLOW contradicted2568/4608 MB and later
-freeRAM1237816 KiB; storage below15%. No new agents, installs, worktrees or builds.
-Refresh admission before independent Sonnet review and required dependency recovery.
-merge:gate stops at missing TypeScript after passing boundary/intake checks; do
-not push source until it passes. Normal reading/editing/small checks can continue.
-Chrome resourcesPath files were repaired earlier; side-panel reopening remains
-unconfirmed and this later browser disconnect is separate evidence.
-
-Finish meaningful six-audience articles, serif/sentence-case design, useful
-visuals/infographics, SEO/disclosures and existing linktrees. Linktree work is
-planned, not implemented. Apply humanizer/Emil/accessibility and verify rendered
-focus/touch/reduced motion/interrupted transitions under admission. No Higgsfield;
-generated media needs sidecars and both ledgers. Keep founder/live-posting gates.
-Port accepted files through an owned production lane, run predeploy/security and
-normal CI, merge to main and verify exact live revision and recovery. Observed
-existing0ff16a8d is not this release. Save hub and issue proof; no persistent worker.
+43 boundary tests, 13 Python and 6 Node intake tests pass. The final resolver rerun passes 18 tests. Secret hook clean. Initial Sonnet 5.5 changes-required critique retained, major fixes implemented, final exact-revision review pending. Merge gate fails at absent TypeScript; Next/Babel also absent. PP's ALLOW contradicted 2570MB free versus 4608MB required, then native RAM was 1,256,508 KiB; enforce the 4 GiB floor. Disk below 15%; no installs, new worktrees, builds, agents or media runs or foreign cleanup. Refresh admission, recover owned dependencies without changing borrowed junctions, obtain final independent source review and actually render mobile/noJS/focus/touch/reduced-motion/hydration/bundle/performance/failure cases. Only after full merge/security/design/commercial/predeploy gates pass, port through an owned production checkout, merge reviewed revisions and verify the exact green deployment/rollback. Keep founder/live-posting gates, visual sidecars/both ledgers/taste-vault sync, all prior history and other objectives. Save in the hub and issue 252; no persistent worker exists.
 
 Queued next: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
 Experiences. Plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` is local.
