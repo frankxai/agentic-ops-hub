@@ -4,19 +4,17 @@
 >
 > **Terminal map** (edit as you reassign windows):
 > | Window | Repo | Harness |
-> | :---
-
-**[F0 · starlightintelligence.ai]** — build the shared demand capture, then wire waitlists
-```
-Read starlightintelligence.ai PR #89 (docs/strategy) and starlight-estate main (DEMAND-CAPTURE-STANDARD.md, packages/demand-capture, graph/products.graph.json). Frank has ruled on the consulting question: <fill in>. Build slice 2: one shared demand-capture endpoint on Supabase EU with the price-band / who / goal questions, a per-product waitlist on /start and each marketplace card, honest counts only. Draft PR, Grok review on the exact head, no checkout.
-```
-
- | :--- | :--- |
+> | :--- | :--- | :--- |
 > | T1 | `frankx.ai-vercel-website` | _set_ |
 > | T2 | `FrankX` | _set_ |
 > | T3 | `agentic-creator-os` | _set_ |
 > | T4 | `Starlight-Intelligence-System` | _set_ |
 > | T5 | `agentic-ops-hub` | _set_ |
+
+**[F0 · starlightintelligence.ai]** — build the shared demand capture, then wire waitlists
+```
+Read starlightintelligence.ai PR #89 (docs/strategy) and starlight-estate main (DEMAND-CAPTURE-STANDARD.md, packages/demand-capture, graph/products.graph.json). Frank has ruled on the consulting question: <fill in>. Build slice 2: one shared demand-capture endpoint on Supabase EU with the price-band / who / goal questions, a per-product waitlist on /start and each marketplace card, honest counts only. Draft PR, Grok review on the exact head, no checkout.
+```
 
 ---
 
