@@ -35,7 +35,7 @@ Read current contracts, acquire a free lane, run route_work guard/check, apply E
 
 Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. The Protocol site now has an automatic production canary ([SIS 284](https://github.com/frankxai/Starlight-Intelligence-System/pull/284), `.github/scripts/probe-production.mjs`): 80 checks, 0 violations on main `a16251d`. Read an open canary issue before anything else.
 
-1. Add the same canary to `frankxai/starlightintelligence.ai` (own workflow, `--base https://starlightintelligence.ai`, the Lab routes), pinned to the Actions SHAs that repo already uses; merge through `pr-gate`.
+1. The Lab canary is live ([Lab 92](https://github.com/frankxai/starlightintelligence.ai/pull/92), 46 checks, 0 violations, overflow only). Decide with Frank whether the Lab should also fail on forced-uppercase text before adding that check.
 2. Add a text check for literal capital letters typed into source (for example `DISTRIBUTED INTELLIGENCE` on `/queen`), then fix them route by route; probe dynamic routes (`cosmos/cards/[slug]`, `research/[slug]`, `verticals/[slug]`).
 3. Add what the canary cannot see: contrast, touch-target size, focus-ring visibility (the Lab default ring is 1px `auto`), native zoom, real touch. One Impeccable finish pass only after a look at 375/768/1440 with reduced motion.
 4. Do not mint Vercel bypass links; confirm whether the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
