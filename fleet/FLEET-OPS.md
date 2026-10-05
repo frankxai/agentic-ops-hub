@@ -14,8 +14,8 @@ Bring private GitHub estate, local clones, agent CLIs, backups, and production t
 | --- | --- | --- | --- |
 | `c940` | Backend, content/GEO, ops, crons, backups | Hermes full + Claude Code + Codex | Full (priority ≤3) |
 | `yoga-book` | Frontend, product UI, innovation | Codex + Antigravity + light Hermes | `yoga_book_core` |
+| `node-a` | Background agent swarm, headless browser QA, builds, MCP singletons, monitoring | Claude Code, Codex, Grok CLI, Playwright | Role-based subset (see Daily cells) |
 | `future` | Expandable | Assign on onboard | Role-based subset |
-
 ## Daily / Weekly Loops
 
 ### C940 (always-on)
@@ -38,6 +38,23 @@ Bring private GitHub estate, local clones, agent CLIs, backups, and production t
 5. Work on `agent/book/<scope>` branches only  
 6. Push + ledger note before shutdown  
 
+## Daily cells (proposal; every schedule stays Frank-gated)
+
+Inventory of 2026-10-05 (probe again before citing): 27 registered properties, 24 live; 50 `Starlight*` tasks with 5 enabled; 34 loop contracts, runner disabled, last run 27 green, 6 red, 5 without a gate; 15 registered agents plus 12 steward domains that have no schedule; 9 properties with owner [OPEN]; 418 open PRs, 9 repos over the 10-PR budget. The swarm extends this system. It adds no second orchestrator.
+
+| Cell | Lead (existing agent) | Daily output | Evidence |
+| --- | --- | --- | --- |
+| Reliability | corps-reliability, steward-infra | Tier 1 uptime and deploy verification, red CI triage | receipt per run, heartbeat |
+| Backlog landing | corps-engineering | land or close PRs until each repo is at 8 or fewer open | `pr-budget.json` before and after |
+| Design refinement | corps-design, plus a design steward to forge | one refinement lane per day on a Tier 1 site, mobile predicates, weekly excellence scan | craft receipt, device run |
+| Product engineering | gencreator-product-lead, skill-foundry-lead | one slice per day on a `building` product, broken waitlist doors first | gate receipt, `products.graph.json` row |
+| Content and distribution | steward-content | cadence per brand, Postiz queue; live posts stay human-gated | content-ops receipts |
+| Verification | a different harness than the maker (Grok first while its quota is low) | sign-off on exact head through `pr-gate` | PR comment bound to head SHA |
+| Weekly | steward-security, steward-release, steward-memory, steward-skills | sweep and report | receipt |
+
+Proposed owners for the nine [OPEN] properties, for Frank to accept or change: starlight.technology, starlight.you, starlightintelligence.academy, starlight.domains and starlightintelligence.ai to steward-substrate (one Starlight brand lead); gencreator.community to steward-revenue (it already owns gencreator.ai); bluelifecommons.org to steward-partnerships; cecilia.chat to steward-content; the personal site stays unowned.
+
+Enablement order, each step a Frank-run command with a metric before the next: (0) node installed, `pp` admitted, queen workers capped at 6; (1) backlog-landing sprint with two reviewer lanes, no schedule; (2) re-enable the property pulse; (3) fix the 6 red and 5 gate-less loops, then re-enable the loop fleet; (4) schedule steward passes one domain at a time; (5) forge the design steward with `agent-forge`, maker is not checker. A step counts as done when its metric has moved and receipts exist. Crons stay `alwaysOffUntilApproved`.
 ## Work distribution rules
 
 1. **Git is coordination.** One agent = one branch = preferably one worktree.  
