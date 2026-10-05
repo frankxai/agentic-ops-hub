@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-05: Estate Atlas v2 and Palace Reviews W39, W40 in draft
+
+[frankx-mind-palace PR 7](https://github.com/frankxai/frankx-mind-palace/pull/7) is a draft with no second-harness review. It holds a zero-dependency estate atlas generated from six graph files (23 products, 26 properties, 37 domains), 18 captured site screenshots with provenance sidecars, and weekly reviews W39 and W40 with zero blessings. Vercel Web Analytics is not enabled on frankx.ai and a protected GA4 reader exists; Frank owns the dashboard switch. Three claims taken from stale local clones were corrected; read origin through gh before stating a repo's state. Brand art, the phone check and review are open. See sessions/2026-10-05.md.
+
 ## 2026-10-04: Observatory session observer merged; hook106 diagnosis open
 
 [Observatory PR10](https://github.com/frankxai/starlight-observatory/pull/10) is merged at3c575180b425d06a73fec75a577be95b150d3f5d, reviewed head fb2aec86e786a0783aed04f270e4d485feac5c7c.55 local tests, [main CI37234828443](https://github.com/frankxai/starlight-observatory/actions/runs/37234828443) and [six-platform plus package CI37234550446](https://github.com/frankxai/starlight-observatory/actions/runs/37234550446) pass; [independent provider source PASS](https://github.com/frankxai/agentic-ops/issues/139#issuecomment-5984368523) follows repaired material WARN findings. Private Codex cards show machine/model/lifetime tokens, explicit ledger links and parent metadata. Source failure is distinct from a known missing link. Cost/per-goal allocation, process liveness and other machine/harness coverage remain unknown. [Issue9](https://github.com/frankxai/starlight-observatory/issues/9) stays open for product acceptance; no installed/hosted release is claimed.
