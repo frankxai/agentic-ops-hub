@@ -1,3 +1,11 @@
+## Current prompt: gaming ecosystem proposal review
+
+Read the 6 October gaming proposals and current product contracts. Treat names and company relationships as proposals. Compare setup planning with editable creative-world output on one real customer task, reusing sound existing implementations. Choose one consequential user outcome, owning issue and acceptance evidence before implementation. Preserve Reality Check, GenCreator's source-based product, Arcanea's platform and locked canon.
+
+Product proposals: https://github.com/frankxai/realitydiffusion/pull/4 and https://github.com/frankxai/arcanea-ai-app/pull/526.
+
+---
+
 # ⏭️ Next Prompts — per active front / terminal
 
 > Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
