@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-05: estate-guard — agentic surface scanned, gated, scheduled (Claude)
+
+The estate now has a scanner for its own attack surface, a deterministic in-session gate, a CI ratchet and a weekly sweep. [claude-skills-library #44](https://github.com/frankxai/claude-skills-library/pull/44) adds `packs/estate-guard` (33 rules, hooks, CI, tests). First scan of 48 repos: 0 critical, 5 high, 83 medium, 717 low; no live credential anywhere; exposure is supply chain (`@latest` in hooks and skills) and autonomy surface. The two production highs are fixed in [arcanea-ai-app #522](https://github.com/frankxai/arcanea-ai-app/pull/522) (`/api/forge` IDOR, comment-triggered agent gated) and [gencreator.ai #160](https://github.com/frankxai/gencreator.ai/pull/160) (`/api/studio/apply` abuse controls). Record: [docs/ESTATE-GUARD.md](../docs/ESTATE-GUARD.md); evidence: `ops/evidence/estate-guard/2026-10-05/`; rollout: `scripts/estate-guard-rollout.sh`. Routine `estate-guard-sweep-weekly` fires Mondays 06:11 Amsterdam with a draft PR here as its only success condition. Open: rollout waves 2–4, the medium PRs, Vercel firewall decision, the Routine's first fire. See [session](sessions/2026-10-05.md).
+
 ## 2026-10-05: SIS session continuity reviewed to PASS and merged (Claude)
 
 Session continuity is MERGED_NOT_LIVE:
