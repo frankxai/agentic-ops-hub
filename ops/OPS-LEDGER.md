@@ -1,8 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-05: Estate Atlas v2 and Palace Reviews W39, W40 in draft
+## 2026-10-06: estate views redirected into the command center; Hermes branches adopted; three cloud agents running
 
-[frankx-mind-palace PR 7](https://github.com/frankxai/frankx-mind-palace/pull/7) is a draft with no second-harness review. It holds a zero-dependency estate atlas generated from six graph files (23 products, 26 properties, 37 domains), 18 captured site screenshots with provenance sidecars, and weekly reviews W39 and W40 with zero blessings. Vercel Web Analytics is not enabled on frankx.ai and a protected GA4 reader exists; Frank owns the dashboard switch. Three claims taken from stale local clones were corrected; read origin through gh before stating a repo's state. Brand art, the phone check and review are open. See sessions/2026-10-05.md.
+The 2026-10-05 standalone atlas overlapped `starlight-command-center` (Observatory, Architecture Console, issues 39 and 40) and `starlight-agent-canvas`, so it was moved to a reference branch and [frankx-mind-palace PR 7](https://github.com/frankxai/frankx-mind-palace/pull/7) now holds only the Palace Reviews W39 and W40 (no blessings). Two dormant Hermes worktrees (`estate-overview-premium`, `brand-social-registry-board`) were committed unchanged and pushed. New issues: command-center 58 (land the routes), 59 (site wall), 60 (journeys), 61 (Dependabot, 100 alerts); realityarchitect 68; frankx.ai 905 (measure first); starlight-estate 51 (graph truth). Cloud agents run 58, 39 and realityarchitect 68 as draft PRs. Findings: the root workspace `origin` is stale and `starlight-estate` is canonical for `graph/*.json`; Vercel Web Analytics is not enabled on frankx.ai; the earlier "ledger stale" and "no weekly reviews W28 to W38" claims were wrong (stale local clones). See sessions/2026-10-05.md and the current prompt.
 
 ## 2026-10-04: Observatory session observer merged; hook106 diagnosis open
 
