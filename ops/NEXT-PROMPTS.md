@@ -44,27 +44,26 @@ Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0cc
 3. Add what the canary cannot see: visual quality, real-device touch, native zoom, interrupted transitions, text over photography. One Impeccable finish pass after a look at 375/768/1440 with reduced motion.
 4. Do not mint Vercel bypass links; confirm whether the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
 
-### Queen: install and live-verify merged SIS session continuity
+### Queen: take session continuity live (local) and land the cloud work
 
-Continue from the 2026-10-05 entry in [sessions](sessions/2026-10-05.md). Session continuity is MERGED_NOT_LIVE:
+Session continuity is MERGED_NOT_LIVE. On 2026-10-05 a real staging run recovered all 74 of Frank's Codex goals with 0 issues: 52 ran in checkouts and 22 are workspace sessions, including the original campaign goal `2309e8b0`, which shows as blocked. See the [2026-10-05 session](sessions/2026-10-05.md).
 
-- [SIS #273](https://github.com/frankxai/Starlight-Intelligence-System/pull/273) `ea1d0a5`: trusted import, status, owner reconciliation, MCP tools.
-- [Ops #163](https://github.com/frankxai/agentic-ops/pull/163) `be49a10`: canonical PP caller, cursor baseline and lock, Codex native goals, proof driver.
-- [Canvas #31](https://github.com/frankxai/starlight-agent-canvas/pull/31) `d569167`: `/continuity` page, API and MCP tool.
+1. **Review and merge the workspace-scope PRs, one at a time,** with Grok via `tools/pr-gate.mjs` under `review-lite` admission:
+   - [agentic-ops #178](https://github.com/frankxai/agentic-ops/pull/178) `80b5d8b`: Grok's block is fixed with regression tests.
+   - [SIS #291](https://github.com/frankxai/Starlight-Intelligence-System/pull/291) and [Canvas #32](https://github.com/frankxai/starlight-agent-canvas/pull/32): CI is green; the review was reaped for low memory.
+   - In SIS, let `harness` finish before merging, and never edit `package.json`.
+2. **Local rollout to LIVE_VERIFIED: [agentic-ops #181](https://github.com/frankxai/agentic-ops/issues/181).** PP PR4 install, clean install, Frank's trust policy decision (`~/.starlight/continuity/trust-policy.proposed.json`), live import, cursor baseline, proof with `--harness-runs`, rollback.
+3. **Cloud agents launched 2026-10-06** on these issues; review and merge their ready PRs through `pr-gate` with a non-Claude checker:
+   - [Canvas #33](https://github.com/frankxai/starlight-agent-canvas/issues/33): scale the page to 74+ items and guide reconciliation.
+   - [evals #20](https://github.com/frankxai/starlight-evals/issues/20): CI eval suite.
+   - [agent-config #99](https://github.com/frankxai/starlight-agent-config/issues/99): automatic capture hook, spool only.
+   - [memory #24](https://github.com/frankxai/starlight-memory/issues/24): scoped recall projection.
+   - [second-brain-os #14](https://github.com/frankxai/second-brain-os/issues/14): non-coder setup and recovery.
 
-Each was reviewed by Grok to PASS on its exact head and merged through `pr-gate`. The post-merge proof passed 20 of 20 checks with `complete=true`, including real interrupted Claude and Codex sessions. Repairs and follow-ups: [SIS #286](https://github.com/frankxai/Starlight-Intelligence-System/pull/286) (Foundry lock regression fixed), [Ops #177](https://github.com/frankxai/agentic-ops/pull/177) merged, and [SIS #285](https://github.com/frankxai/Starlight-Intelligence-System/pull/285) merged at `776b453`. In SIS, let `harness` run on a ready PR before merging.
+   If an agent stopped, its issue holds the full spec; relaunch from the issue.
+4. **Dependency:** [PP #3](https://github.com/frankxai/peak-performance/issues/3) and PR4 are owned by the Codex lane (34 dirty paths, untouched).
 
-1. Run fresh `node lifecycle/pp-admission.js build --grows-disk` from agentic-ops `main`, and reconcile owners. Preserve Codex's PP reserve-floor lane (PR4, 34 dirty paths), Hermes's Canvas PR18, the Claude cockpit worktree, Foundry #268 and PR269.
-2. The clean install waits for PP storage evidence. Once a reviewed PR4 build is installed through its owner and `build --grows-disk` admits:
-   - SIS `npm ci` and build from `main`, then confirm `node dist/continuity-cli.js status`. There is no bin entry, because `package.json` is pinned by the Foundry `RULES_LOCK`; never edit it for this.
-   - Canvas frozen install, with `STARLIGHT_CONTINUITY_CLI` set.
-3. Install `~/.starlight/continuity/trust-policy.json` with real work IDs and owners from the task records. Never invent them.
-4. Export real bound sessions with `--codex-goals`, import them, and check the Canvas `/continuity` page and the MCP status against the real store.
-5. Rerun `lifecycle/continuity-proof.js --harness-runs` against the installed revisions. Then interrupt a genuine interactive `/goal` session in a second harness and recover it.
-6. Cursor baseline: pause the ledger task, run the dry run, then `--apply --confirm-ledger-paused`. Keep the backup and verify rollback.
-7. Verify the installed revisions and the rollback path. Only then report LIVE_VERIFIED with direct evidence. Update Ops #139/#134, SIS #48 and the hub.
-
-Do not resume or admit work automatically, and keep collector attestation as SIP Board work. No new brand, price or hosted compute.
+Nothing resumes or admits work automatically. Collector attestation stays SIP Board work, and Foundry #268 and PR269 are untouched.
 
 ### FrankX: continue the article register and release reviewed revisions
 
