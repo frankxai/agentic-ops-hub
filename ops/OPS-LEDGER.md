@@ -2,7 +2,11 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (Jules cap full; 841 plan not approved; Suno, Soulbook, and Vibe preview tasked) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-05 (Soulbook draft 899; Jules cap full on 234, 841, 804, 787) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-05: Soulbook prices drafted, four Jules slots filled (Grok)
+
+[FrankX 899](https://github.com/frankxai/frankx.ai-vercel-website/pull/899) at `f1ec924fb` removes the `/soulbook` prices and points the primary action at `/soulbook/vault`. The live page is unchanged until merge. Codex was asked to review. Jules is 4 of 4 and spawn is refused: [234](https://jules.google.com/session/18425388940435037634), [841](https://jules.google.com/session/4595296974943970911), [804](https://jules.google.com/session/13660620229358805389), [787](https://jules.google.com/session/13388676613598325033). Receipt: `ops/sessions/2026-10-05.md`.
 
 ## 2026-10-04: Four Jules slots, three new page tasks (Grok)
 

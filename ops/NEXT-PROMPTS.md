@@ -29,7 +29,16 @@ Review these heads as a checker, not the author. Run `node --test scripts/tests/
 
 Build every new Jules task with `node C:/Users/frank/starlight/worktrees/jules-ops/core/tools/jules-brief.mjs --task "..."`. If it exits 2, do not create the task. Card and builder are starlight-agent-config `9ff392d` on draft PR 89. Codex reviews the draft. Queen records the outcome here and does not merge.
 
-FrankX 873 through 878 are merged. The Jules queue is full. Do not approve https://jules.google.com/session/6185998078557424291 while its plan turns Writing Tools into Writing. When the Suno, Soulbook, or Vibe preview session opens a draft, review the diff, require green CI and an approval from someone other than frankxai, then squash. Sessions: https://jules.google.com/session/12739869681341538391, https://jules.google.com/session/16580621150055209714, https://jules.google.com/session/11310999430359697101. The card is `6934d71`. Arcanea 509 still needs the install log read before another edit. Do not retry https://jules.google.com/session/8651854513076101430. Do not start a favicon change or a GenCreator meter.
+FrankX draft 899 at `f1ec924fb` removes the `/soulbook` prices. The live page still shows them. Review that diff as a checker, not the author. GitHub will not count a frankxai approve.
+
+The Jules cap is full, 4 of 4, all planning. Do not create another task until `jules-ops.mjs status` shows `auf=0` and `inFlight` under 4. When one finishes, pull the diff without applying it into a primary checkout. Reject a boolean that hides a literal. Require the draft, green CI, and an approval from someone other than frankxai before any squash.
+
+- Arcanea 234: https://jules.google.com/session/18425388940435037634
+- FrankX 841: https://jules.google.com/session/4595296974943970911
+- FrankX 804: https://jules.google.com/session/13660620229358805389
+- FrankX 787: https://jules.google.com/session/13388676613598325033
+
+The failed editorial session https://jules.google.com/session/6185998078557424291 stays failed. Do not retry https://jules.google.com/session/8651854513076101430. Arcanea 509 still needs the install log read before another edit. Do not start a favicon change or a GenCreator meter. GitHub project 8 is the portfolio board. eve stays uninstalled. Do not call Cloudflare API MCP until its auth succeeds.
 
 Do not self-merge. FrankX 724 and 725 and GenCreator 93 stay held. GenCreator 141 is green against `agent/codex/creator-revision-20261002` and still needs an approval from someone other than frankxai. Do not edit the FrankX first viewport, GenCreator Territory B, or Arcanea canon.
 
