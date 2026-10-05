@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-05: Starlight estate root landed on main; starlightintelligence.ai blueprint drafted (Claude)
+
+[estate #47](https://github.com/frankxai/starlight-estate/pull/47) merged `2ada597` after a Grok block and fix: the release-gate, demand-capture and products-graph doctrine now exists on main. [starlightintelligence.ai #89](https://github.com/frankxai/starlightintelligence.ai/pull/89) (blueprint, docs) and [#90](https://github.com/frankxai/starlightintelligence.ai/pull/90) (truth and safety patch, legal copy) are draft and wait on Frank. No product is sellable and no waitlist exists. An uncommitted `--admin` flag in `pr-gate.mjs` was reverted. See [session](sessions/2026-10-05.md).
+
 ## 2026-10-05: SIS session continuity reviewed to PASS and merged (Claude)
 
 Session continuity is MERGED_NOT_LIVE:
