@@ -1,0 +1,86 @@
+# Merge Steward policy for frankxai/affiliate-agent-skills. Rules and floors: _template.yml.
+
+version: 1
+
+default_tier: review
+
+# Tier ceiling for verified bot patch/minor bumps. Majors are always >= review.
+dependency_bumps: auto
+
+max_files: 200
+max_patch_lines: 1500
+max_diff_bytes: 200000
+
+# Most PRs the steward may merge per rolling 24h in this repo (also capped
+# estate-wide by global_daily_cap in targets.yml).
+daily_merge_cap: 10
+
+human:
+  # money, identity, secrets
+  - "**/payments/**"
+  - "**/billing/**"
+  - "**/checkout/**"
+  - "**/stripe/**"
+  - "**/polar/**"
+  - "**/auth/**"
+  - "**/*auth*.*"
+  - "**/middleware.*"
+  - "**/proxy.*"
+  - "**/*secret*"
+  - "**/*credential*"
+  # production infrastructure and DNS
+  - "**/vercel.json"
+  - "**/wrangler.toml"
+  - "infra/**"
+  - "terraform/**"
+  - "**/*.tf"
+  - "**/migrations/**"
+  - "**/CNAME"
+  - "**/Dockerfile"
+  # licence gates
+  - "**/LICENSE"
+  - "**/LICENSE.*"
+  - "**/LICENSING.md"
+  - "**/NOTICE"
+  # onchain
+  - "contracts/**"
+  - "**/*.sol"
+  # instructions other agents obey
+  - "**/SKILL.md"
+  - "**/skills/**"
+  - "**/prompts/**"
+  - "**/agents/**"
+  - "**/commands/**"
+  - "**/.claude-plugin/**"
+  # repo-specific
+  - "data/**/affiliate*.json"
+
+review:
+  - "app/**"
+  - "src/**"
+  - "lib/**"
+  - "components/**"
+  - "packages/**"
+  - "apps/**"
+  - "scripts/**"
+  - "next.config.*"
+  - "tsconfig*.json"
+  - "**/*.js"
+  - "**/*.mjs"
+  - "**/*.cjs"
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.py"
+  - "**/*.sh"
+
+auto:
+  - "docs/**"
+  # not "**/*.md": agents obey markdown instruction files under many names;
+  # other markdown takes the default tier (two independent model reviews)
+  - "content/**"
+  - "public/images/**"
+  - "tests/**"
+  - "test/**"
+  - "**/__tests__/**"
+  - "**/*.test.*"
+  - "**/*.spec.*"
