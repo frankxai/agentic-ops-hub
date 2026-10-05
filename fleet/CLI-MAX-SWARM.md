@@ -32,6 +32,24 @@ Use flat subscriptions aggressively for real deliverables. Do **not** create dup
 | **C940** | backend, SIS/ACOS, Railway, agentic-ops, integration | 1 heavy coding CLI | Claude Opus or Codex Terra-high |
 | **YogaBook** | production frontend, UX/browser QA, product innovation | 1 heavy coding CLI | Codex Terra-high; Gemini 3.5 mapping/review |
 | **Across fleet** | parallel independent owners | 2 total | one mission per node |
+| **Node A (64 GB, proposed 2026-10-05)** | background agent sessions, headless browsers, builds, queen workers | see the node budget below | Claude, Codex or Grok by quota headroom |
+
+## Node A concurrency budget (proposal, 2026-10-05)
+
+The 16 GB limits above came from C940. A 64 GB always-on node is sized from a measured profile of the 32 GB laptop: 360 samples at 5 s, RAM p95 30.5 of 31.4 GB, a Claude process about 0.31-0.37 GB, Chrome about 0.175 GB per process, headed Chrome 9.5 GB on average. Per-session cost (agent, its MCP children and a headless browser) is an estimate of 1.0-1.5 GB, not a benchmark of the node. Replace these numbers with the node's own heartbeat after one week.
+
+| Item | Budget | Basis |
+| --- | --- | --- |
+| Memory | 64 GB | purchase target |
+| OS, Defender, services, compression | 8 GB | measured baseline on the laptop |
+| Free-RAM floor | 4 GB | queen `MinFreeGB` and the Windows safety floor |
+| Build bursts | 8 GB (2 concurrent builds at about 4 GB) | estimate; measure on first real builds |
+| Left for agent sessions | about 44 GB | 64 - 8 - 4 - 8 |
+| Theoretical sessions | about 29 at 1.5 GB | 44 / 1.5 |
+| First cap | 6 queen workers, 12 sessions | worker RAM cap 1,800 MB, so 6 workers use about 11 GB |
+| Second cap (after 7 days of heartbeat) | 10 workers, 20 sessions | only if free RAM p5 stays at or above 12 GB and no HOLD |
+
+Raise a cap one step at a time. Lower it when `pp preflight` returns HOLD, free RAM falls under the floor, or a provider's weekly quota passes 85%. Concurrency is also bounded by things RAM cannot raise: provider quota (route builds to the pool with headroom), the 10-open-PR budget per repo, one writer per worktree, and a different-harness reviewer for every merge. Parallel sessions that open PRs into a repo already at its budget add nothing: land or close first.
 
 Hard launch gates on each node:
 
