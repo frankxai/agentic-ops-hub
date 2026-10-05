@@ -31,12 +31,14 @@ Choose integration after comparing a real task against Paperclip goal/task/budge
 
 Read current contracts, acquire a free lane, run route_work guard/check, apply Emil guidance to actual UI changes and verify focus/touch/reduced motion/interruption. Return a concise PASS/HOLD receipt with clickable private view, source/build/install revisions, tests/review, rollback, remaining gaps, measured cost scope and refresh/collector coverage. Save the three hub records and the existing product issues. The user outcome is dependable recovery and oversight of valuable work; a green scaffold or aggregate counter does not close it.
 
-### Starlight sites: finish sentence case and mobile route by route
+### Starlight sites: extend the canary, then the checks it cannot make
 
-Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. Production serves SIS main `232bcdc` (Protocol) and Lab `a0dbca5`; the live probe at `~/.starlight/reviews/interface-foundations-20261003/live-probe-20261004-232bcdc-a0dbca5/live-probe.mjs` is the repeatable check (run `pp preflight --workload browser-qa` first, once, throwaway profile, kill only its own Chrome).
+Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. The Protocol site now has an automatic production canary ([SIS 284](https://github.com/frankxai/Starlight-Intelligence-System/pull/284), `.github/scripts/probe-production.mjs`): 80 checks, 0 violations on main `a16251d`. Read an open canary issue before anything else.
 
-SIS 276 is merged (`9a139db`); re-read the `.org` alias binding for it. Take the next route with the most forced-uppercase text (`protocol`, `constitution`, `cockpit`, `deploy`, `download`, `knowledge-tree`, `yolo`, `verify`), capitalise its lowercase source labels by hand, probe it at 320/390/768/1440 with reduced motion, merge, and probe production. Judge the Lab's default 1px focus ring against its dark surface. Do not mint Vercel bypass links; confirm the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
-
+1. Add the same canary to `frankxai/starlightintelligence.ai` (own workflow, `--base https://starlightintelligence.ai`, the Lab routes), pinned to the Actions SHAs that repo already uses; merge through `pr-gate`.
+2. Add a text check for literal capital letters typed into source (for example `DISTRIBUTED INTELLIGENCE` on `/queen`), then fix them route by route; probe dynamic routes (`cosmos/cards/[slug]`, `research/[slug]`, `verticals/[slug]`).
+3. Add what the canary cannot see: contrast, touch-target size, focus-ring visibility (the Lab default ring is 1px `auto`), native zoom, real touch. One Impeccable finish pass only after a look at 375/768/1440 with reduced motion.
+4. Do not mint Vercel bypass links; confirm whether the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
 
 ### Queen: ship SIS session continuity from merged source
 
