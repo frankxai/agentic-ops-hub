@@ -137,6 +137,21 @@ name them. Issue 73 tracks the Cloud key.
 
 ## 🥇 Highest leverage first
 
+**[F0c · starlight-command-center]** — refresh and harden Starlight Home
+```
+Starlight Home (https://claude.ai/artifact/Dw92kLEcn8ELG6bfeZauHy) is the founder's prompt deck,
+gate list and handover feed. Code: frankxai/starlight-command-center, branch agent/claude/home-feed
+(ops/home-feed.mjs, ops/home-goals.v1.json, apps/starlight-home/starlight-home.html).
+1. Get a different harness to review the draft PR and merge it through tools/pr-gate.mjs on GATE CLEAR.
+2. Remove any gate from ops/home-goals.v1.json that the compiler warns is closed, then recompile:
+   node ops/home-feed.mjs --ref <hub branch with the newest NEXT-PROMPTS> --ref main --days 6
+3. From a Claude session, read feed/{meta,prompts,sessions,decisions} for their versions and apply
+   ~/.starlight/home-feed/writes.json as one ArtifactData batch with if_version on every entry.
+4. Prove it: ArtifactData get feed/meta shows today's compiledAt and an empty warnings list.
+Stop if the compile fails on a hub fetch error; do not publish a partial feed.
+Handover: hub session note and one line in OPS-LEDGER.
+```
+
 **[F0 · gencreator-skills]** — list video-social-studio in the Claude plugin directory
 ```
 Done already: live config on main with tier applied; codex/rova landed and pushed (4fd0383, includes
