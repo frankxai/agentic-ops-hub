@@ -17,6 +17,10 @@
 
 ## Current
 
+### Agent version control on plain jj: run gate G1
+
+Read `ops/sessions/2026-10-06.md`. On a scratch repo under `starlight\scratch\`, install `jj` (winget) and run three agents in three `jj workspace` copies concurrently, colocated with Git, then push to a throwaway remote. Record peak RAM and disk against three Git worktrees of the same repo, after `pp preflight --workload swarm` allows it. Pass means no lock errors and a clean push round-trip. Stop there: do not create the `agent-trails` repo, and do not install `agentic-jujutsu`, until Frank picks the repo home and name. Report the numbers; G2 and G3 follow only if G1 passes.
+
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 
 The pack is on `main` in twenty repos (see the 2026-10-05 session, night entry). From a clean checkout of the estate, run `scripts/estate-guard-rollout.sh ~/repos` for the repos in `ops/evidence/estate-guard/repos.txt` that are not yet installed (`--no-hooks` for the `awesome-*` and `*-skills` repos); one draft PR per repo, mark ready, let CI run, merge. Then the medium PRs in this order: `arcanea` hooks off `@latest` (10 lines in `.claude/settings.json`; record the pinned version), SHA-pin the 61 tag-pinned actions, CSP on the six sites without one. Two settings only Frank can change: add `CLAUDE_CODE_OAUTH_TOKEN` to arcanea or delete `claude-code-review.yml`; add the `surface-approved` label to [gencreator.ai #138](https://github.com/frankxai/gencreator.ai/pull/138) so Surface Guard works on that private repo too. One decision: ai-music-academy's audit (`next` 16.3.6 now; Tailwind 4 or an audit exception for `braces`). Read `docs/ESTATE-GUARD.md` for the five standing decisions. Watch the first fire of `estate-guard-sweep-weekly` on 2026-10-12 06:11 Amsterdam; it must produce a draft PR into `ops/evidence/estate-guard/2026-10-12/` or say RED.
