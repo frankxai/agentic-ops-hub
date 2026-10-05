@@ -147,6 +147,14 @@ video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server
 claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
 ```
 
+**[F0a · gencreator.ai]** — land the stack hub once #148 is fixed
+```
+Read ops/sessions/2026-10-05-gencreator-stack-hub.md. When Codex PR #148 has its P1 (subset CPU blow-up) and
+keep/cut gaps fixed and merged, rebase agent/claude/creator-offer-catalog and agent/claude/creator-stack-ui onto
+main, wire the sourced catalog into the UI OfferSource, run the Playwright spec on mobile + reduced motion,
+write the craft receipt, get a different-provider review, open draft PRs. Never stack on an unmerged branch.
+```
+
 **[F0b · starlight-memory R&D]** — make the next memory gain measurable, then win it
 ```
 Read docs/research/memory-rd-brief-2026-10-01.md on starlight-memory main and the session note
