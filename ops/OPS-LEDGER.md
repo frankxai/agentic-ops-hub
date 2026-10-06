@@ -2,12 +2,22 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-06 (FrankX PR 907 squash-merged as `17a67494` and production deploy `17a67494` is live; issue 870 stays open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-06 (FrankX PR 910 squash-merged as `bfbd87c28` and production `/magic` no longer prints the song count; PRs 911 and 912 are open and not merged; issue 870 stays open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-06: music page was printing the inventory header (Grok)
 
 https://frankx.ai/music still said "817+ published tracks" on 2026-10-06. `data/inventories/frankx/music.json` has `_count` 817 and 240 track records. [PR 907](https://github.com/frankxai/frankx.ai-vercel-website/pull/907) squash-merged at 2026-10-06T02:03:01Z as `17a67494b7d79a32da0497b08c029a4b46e9ef5c`. It removes that public render from `/music`, the unused `MusicShell`, and the mislabeled `/music-os` cell. Local public-claims proof: 88 pass. Contract guard and surface guard passed locally. Required checks on head `8a8f762ce` were success. No viewport proof. Production deployment `17a67494` was created at 2026-10-06T02:05:50Z. After that, https://frankx.ai/music no longer contained "published tracks" or "Public Tracks", and it did contain "Songs made with Suno". https://frankx.ai/music-os no longer contained "indexed tracks". The only remaining "817" on both pages is inside the id `cddc7a0ef817`. No viewport proof.
 [Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870) stays open. The voice file, the qualities essay title, the Aesthete "12k" line, `/magic`, and the content corpus still publish a song total. Draft [PR 879](https://github.com/frankxai/frankx.ai-vercel-website/pull/879) stays a draft. C: free space was 12.81% (bounded). No new worktree.
+
+## 2026-10-06: voice, inventory header, and /magic (Grok)
+
+[PR 908](https://github.com/frankxai/frankx.ai-vercel-website/pull/908) squash-merged at 2026-10-06T02:41:02Z as `86ae11920da7edd458a075c25c5843c3f8084625`. The voice file no longer instructs the song count. Draft PR 879 stays a draft.
+
+[PR 909](https://github.com/frankxai/frankx.ai-vercel-website/pull/909) squash-merged at 2026-10-06T03:11:15Z as `08f7e9d70cf293e87e5a80f950038dbaff2f08e3`. The inventory header is withheld when it disagrees with the track list. Admin no longer shows "Total on Suno". The JSON was not edited. The production deploy of that squash was not fetched. No viewport proof.
+
+[PR 910](https://github.com/frankxai/frankx.ai-vercel-website/pull/910) squash-merged at 2026-10-06T03:28:58Z as `bfbd87c28ee1ba95de4dde98cf3ad5be9e8dfc0e`. Production deploy `6874987362` completed at 2026-10-06T03:31:37Z. https://www.frankx.ai/magic no longer contains "12,000 songs" and does contain "was a partnership". "Browse 61 tracks" is still on the page. No viewport proof.
+
+[PR 911](https://github.com/frankxai/frankx.ai-vercel-website/pull/911) is open on `agent/grok/issue-870-aesthete` at `3c7f95f8d9dc29fb605226d062df180b7c07a10c`. [PR 912](https://github.com/frankxai/frankx.ai-vercel-website/pull/912) is open on `agent/grok/issue-870-qualities` at `634158b288a867b0997490caef22cf4027e9b93c`. Neither is merged. Issue 870 stays open. C: free space was 13.01% (132,888,358,912 of 1,021,821,579,264). No new worktree.
 
 ## 2026-10-04: email and hub song counts merged (Grok)
 
