@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Queen chair/controller reality and harness recommendation
+
+The local seat assigns Grok as chair, PowerShell QueenLoop as dispatcher and Hermes memory/messaging duties. Latest observed 04:31 Amsterdam tick: idle-held, 0 inbox, 27 held, 0 dispatched, sleepMode true; 13 pulse-listed cards lack self-contained prompts. Ops main `c194035e` has native launching and separate trusted Slack acceptance code, whose production roundtrip/code isolation remain open. [Current pickup](NEXT-PROMPTS.md) now reconciles those paths and respects one active chair. Retain Grok for now; benchmark a replaceable planning binding and verified native worker adapters before adopting a replacement. Advisory assessment only; no queue, worker, model, schedule or runtime changes. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: proactive implementation pickup prepared for 7 October (Codex)
 
 Frank requested a continuation that explicitly authorizes useful improvements, implementation, reviews, normal merges and end-to-end delivery. [The current prompt](NEXT-PROMPTS.md) reconciles the original requirements, approved native hook proof and newer continuity/Observatory/Estate Guard work before choosing owned implementation lanes. It requires one useful Queen roundtrip, actual code isolation before code admission, fair native-maker comparisons, artifact-linked human feedback, held-out evaluation, real Chrome inspection and owning release verification. It retains the private-instance/public-component boundary, exact-revision review, security checks and EUR100/month incremental pilot ceiling.

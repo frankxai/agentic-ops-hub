@@ -527,6 +527,19 @@ everything, including access, ownership, approvals and deployment state. Also
 reconcile newer SIS273, Ops163, Canvas31, Observatory10 and Estate Guard work in the
 latest hub main. Reuse their accepted implementations and keep their source-versus-
 runtime evidence separate. An old failure or old green test is not current evidence.
+Read C:/Users/frank/starlight/queen/AGENTS.md, QUEEN-PROTOCOL.md and fresh
+state/chair-pulse.json before any chair/controller change. The October 6 seat
+appoints Grok as chair and PowerShell QueenLoop as dispatcher; Hermes has memory/
+gateway duties. Keep one chair and one execution authority. A saved pulse is
+passive state. The latest observed tick was idle-held, with zero dispatches and
+27 held cards; 13 pulse-listed cards lacked self-contained prompts. Refresh these
+facts. Reconcile the existing launcher with the newer Slack acceptance adapter,
+which does not launch workers and holds code admission pending isolation. Repair
+specific native adapters; do not infer model quality from an old sandbox failure.
+Compare a replacement chair on real coordination/recovery/cost evidence, then
+handover explicitly. Do not start another controller merely because a worker
+harness supports subagents.
+
 Reconcile all eleven original requirements with their current proof and remaining
 gaps. Retain the approved native Bash hooks and their denial/design-feedback proof;
 repeat first-time trust approval only if the actual installed state requires it.
