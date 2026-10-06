@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Agent SDK tools kept, Claude review held on RAM (Grok)
+
+Local head `32840891f20170d17796287567ff08ffdf0a5d72`. Disk 121.22 GiB free, 12.74 percent. RAM 2.14 GiB free of 31.43 GiB. `node_modules/next/package.json` and tsc are absent on the borrowed junction, so `merge:gate` was not run. `claude-agent-sdk-credit-pause-agent-stack-2026` names the draft's tools. It does not print the credit amounts. Tools-disabled Claude review was not started because free RAM was under 4 GiB. Editorial boundary tests: 113 pass. The register row is still unreviewed. The next action is that review of `32840891`. `claude-code-2-1-mcp-revolution` was not started. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: ChatGPT Sites surfaces kept, merge gate still held (Grok)
 
 Local head `382aa68386dc21077737c0e3d2d8a9f61307680f`. Disk 121.57 GiB free, 12.77 percent. RAM 4.87 GiB free of 31.43 GiB. `node_modules/next/package.json` and tsc are absent on the borrowed junction, so `merge:gate` was not run. `chatgpt-sites-founder-guide-2026` names the draft's surfaces. It does not print the availability claim. Claude returned PASS on `382aa683`. Editorial boundary tests: 112 pass. The register row is still unreviewed. The next existing unreviewed file is `claude-agent-sdk-credit-pause-agent-stack-2026`. The register file column says no. Test-Path on that file was true, and its lastUpdated is still 2026-08-18. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
