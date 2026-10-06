@@ -11,6 +11,11 @@
 > | T4 | `Starlight-Intelligence-System` | _set_ |
 > | T5 | `agentic-ops-hub` | _set_ |
 
+**[F0 · starlightintelligence.ai]** — land the platform PR, then rebase and finish the waitlist
+```
+Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2cc7fe0 (no P0/P1) and waits on Frank's read of its privacy and terms copy; #90 is superseded by #91. Waitlist #94 follows the estate standard (KV + Resend, zero deps; #89 proposed Supabase EU, the standard wins) and conflicts with #91 in package.json, app/privacy/page.tsx, app/platform/page.tsx, app/platform/studio.tsx and studio.module.css. Frank has NOT ruled on the consulting question; do not change the nav. After Frank merges #91: rebase #94 onto main keeping #91's policy text and test script; fix Grok's buyer notes (/joint-infrastructure/start still reads as a sale; "Free now" on research cards points at an unsigned package; step 2 copy must say the first answers are the ones kept); have ci run scripts/tests/demand-capture.test.mjs through an existing script, not a workflow edit. Draft PR, fresh Grok review on the exact head, no checkout, Frank owns the merge.
+```
+
 ---
 
 > **2026-10-02:** Queen foundation and hardening are on main; its current prompt covers activation access and proof. Earlier integration work remains open. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
@@ -805,6 +810,14 @@ gencreator-skills #5 (license + network disclosure) is merged (466d694). Next: s
 claude.ai/directory/manage -> Submit new -> Plugin bundle -> frankxai/gencreator-skills, folder
 video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server in a subfolder).
 claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
+```
+
+**[F0c · agentic-creator-os]** — land the Agent OS, then review, fix and merge what the scheduled agents built
+```
+/si Agent OS lane. Mode: lead engineer, proactive, end to end, state of the art. Read first: the restart card, the Agent OS handover (sections 0, 4, 6, 11 to 15), the prompting playbook, and every touched repo's AGENTS.md. Full prompt: 2026-10-07-agent-os-NEXT-SESSION.md in the restart folder. Run mesh-doctor and respect the zone (RED or disk under 50 GiB: CI, cloud agents and API commits only). Then write five bullets on what you will do today and why, and start.
+Merge authority (Frank, 2026-10-06): suggest, build AND merge when required checks are green on the exact head, a different model family reviewed that head, and the change is not human-tier (money, auth, secrets, permissions, hooks, settings, legal or income claims, production data, deletes, publishing, identity). Human-tier goes to Starlight Home with a suggested answer. If auto mode refuses, record it; never route around it.
+Order: land agentic-creator-os #86, then rebuild #92 on main with the API-only script and land it, then claude-code-config #35. Review the cloud agents' PRs (starlight-agent-config #101; agentic-creator-os #95, #96, #97, #99): run each issue's done command yourself, require a test that fails on the old code, get a cross-family review, then fix and merge or close with a reason. Re-arm any routine that stopped on its guard. Roll the audit Action out to 3 pilot repos. Net open PRs must fall.
+Use named skills (superpowers brainstorming, writing-plans, TDD, systematic-debugging, verification-before-completion; code and security review; impeccable and visual QA for anything visible; Context7 for current docs). No slop: tests that fail before and pass after, rendered evidence for UI, no invented numbers, done = verified.
 ```
 
 **[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
