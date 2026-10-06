@@ -479,30 +479,39 @@ gates, account eligibility and every other unfinished front.
 
 Prepared at Frank's request on 6 October. Paste the following as the next agent's user task. This prompt gives normal implementation/merge authority within the existing gates and spending limits. No scheduled execution was created. The October 4 proposals and review gaps remain recorded in that session.
 
-Implementation pickup, 6 October: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
-now contains controller/capability source `2e36377b5a08cfcdcc0da7e7df567d2ea6218a85`.
-Linux CI142 Node+52 Python, Windows58+one Unix-only skip, worker matrix and governance
-pass. Cloud Claude review37411828357 completed with no issues found. Three earlier
-Anthropic critiques and repairs are retained. A genuine other-harness head-bound
-signoff remains required by pr-gate; no merge or live activation is claimed.
-Refresh all states. The owned implementation branch is
-`agent/codex/queen-controller-e2e-20261006` in the existing
-`agentic-ops-github-weekly-control-20260924` worktree; PR156 keeps its original
-remote branch. Read `lifecycle/queen-controller.js`, capability adapters, their
-tests and both Queen controller/technology docs. Address actual review findings
-and complete the normal merge gate; preserve this implementation.
-Local review-lite was HOLD at04:00 UTC, so obtain fresh admission or use the
-existing supported cloud route. AgentDB/Jujutsu are disabled: APIs inspected,
-runtimes unexecuted. Prove the current owner's host containment, broker and
-transport integration before the useful native roundtrip. Continue the complete
-journey below, preserving earlier requirements and other fronts.
+Implementation pickup, refreshed 6 October: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
+merged as `123d6798a505708b11876cd0e6a579e9b72846bc` at 05:08 UTC. The original
+lead implemented through `2e36377`; a separate owner fixed termination/claim-error
+handling and obtained exact-head independent signoff through the normal gate.
+Final head `3b36037` CI passes 145 Linux Node+52 Python cases and 59 Windows cases,
+with three platform skips. Preserve earlier failed reviews and all source history.
+[Ops194](https://github.com/frankxai/agentic-ops/pull/194) merged as `7e6f2ea` with
+the actual controller-to-Windows-Job-Object driver connection and22 passing
+native-driver cases. Main `9fb4372` also includes Ops195's cursor-lock repair.
+Refresh remote state and lane ownership before any edits; the original controller
+worktree still has historical `2e36377` and must not overwrite later accepted work.
 
-Current main7eea57a includes accepted Ops192 QueenWorker/Windows Job Object support.
-CI already tested the controller together with it at merge0730bc7. Reuse that
-implementation when wiring the host driver; keep one execution owner and prove
-the remaining filesystem/network/credential/broker/transport boundaries. Fresh
-04:14 UTC review-lite remains HOLD at5555 MB versus6144 required. Hub153 current
-CI and estate-guard checks pass; it remains a draft handover.
+Read main's controller, native driver, worker, verifier and related docs together.
+The source is dormant: the later owner reports inspected n8n routes do not call
+it, and the native goal is blocked on the protected runtime/profile, authenticated
+task reference, actual sandbox/store/scrubbing and independent acceptance issuer.
+Treat that owner report as bounded evidence; do not invent identity, permissive
+callbacks or credentials. Reuse one controller/worker authority and resolve the
+actual host dependency before one useful native task, interruption and delivery.
+AgentDB/Jujutsu remain disabled; actual package/value experiments are unfinished.
+Obtain fresh machine/storage admission; historical review-lite HOLD is not a
+current measurement. No unattended activation or new installation is authorized
+by a source merge. Continue the full journey below with all other fronts preserved.
+
+Boundary: private instance bindings/evidence stay in Agentic Ops. SIS is the
+existing candidate for a reusable public contract/core release, subject to its
+owner, exact-file rights review, extraction ADR, recovery/rollback and second-
+operator proof. Config owns versioned profiles; Observatory/Canvas expose evidence
+and artifact feedback; product repos own actual changes and release acceptance.
+Keep Ruflo/OmO below those authorities as optional measured worker capabilities.
+Current OmO license is Sustainable Use, not MIT; check selected-file rights before
+public copying. Compare useful output, repair effort, cost and interrupted recovery
+on the same job before any adoption. No public extraction is approved or delivered.
 
 ```text
 Continue Frank's Starlight/Queen work as the accountable engineering lead. Deliver

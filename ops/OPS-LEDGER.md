@@ -1,6 +1,27 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-06: Queen recovery controller implemented; merge and activation pending (Codex)
+## 2026-10-06: Queen source merged; private instance and public core remain separate (Codex)
+
+Fresh GitHub reads supersede the earlier merge hold: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
+merged as `123d6798a505708b11876cd0e6a579e9b72846bc`. Another owner completed
+termination/claim-error repairs, exact-head independent review and the normal gate.
+Final head `3b36037` CI passes 145 Linux Node+52 Python cases and 59 Windows cases,
+with three platform skips. [Ops194](https://github.com/frankxai/agentic-ops/pull/194)
+then merged the existing Windows Job Object driver connection as `7e6f2ea`; its
+22 native-driver fixtures pass. Current main is `9fb4372`. Source merge activates
+no live Queen route; useful native-model output and protected host integration
+remain open in [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+
+Repository placement is private-instance integration, not a public-core decision.
+Reusable contracts/core are proposed for the existing SIS authority after owning
+extraction/license/release review; private routes, accounts, policies and evidence
+stay in Ops. Ruflo is an optional overlay/component comparison; OmO supplies
+category routing and progressive skills/core layering patterns. Its Sustainable
+Use License requires selected-file redistribution review. Neither is installed,
+benchmarked here or promoted to fleet authority. See the appended session and
+refreshed existing continuation; prior critiques and requirements are preserved.
+
+## Earlier 2026-10-06 observation: Queen recovery source awaiting merge (Codex)
 
 [Ops156](https://github.com/frankxai/agentic-ops/pull/156) carries corrected source
 `2e36377b5a08cfcdcc0da7e7df567d2ea6218a85`: durable run recovery, signed acceptance
