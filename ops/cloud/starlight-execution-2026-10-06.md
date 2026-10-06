@@ -36,6 +36,8 @@ Each packet contains exact source refs, valuable job, explicit file ownership, p
 
 ## Dirty-state audit and preservation
 
+At 00:23 UTC, router PR301 returned draft head 0f3541a with agent-reported 10 tests and passing security/design/editorial reruns. Full harness is intentionally draft-skipped; independent review and native installation remain open. Site97 and runtime3 remain in_progress. See the session receipt for exact runs and issue links.
+
 Thirteen relevant canonical checkouts plus the owned hub worktree were inspected. Site candidate2cc7fe0 and hub14998e5 were clean, pushed and in their own Codex lanes. Memory, Observatory, creator MCP, Academy, ai-architect and the second site checkout were also clean at inspection. Six checkouts had pre-existing changes:
 
 | Checkout / branch | Observed changes | Required resolver |
