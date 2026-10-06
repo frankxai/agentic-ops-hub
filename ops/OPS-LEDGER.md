@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Golden Age outcome figures removed, release still held (Grok)
+
+Local head `477b3406f50bf4fa1c68e756c161cbe2d32f6502`. `08-golden-age-of-intelligence` no longer prints unsourced year-over-year search percentages or client outcome percentages. The three case studies are illustrations. The register row is still unreviewed. Claude PASS on that diff. Editorial boundary tests: 50 pass. `merge:gate`, the founder demo, and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: next unreviewed FrankX articles, text only (Grok)
 
 Local head `47c6bf21b6d64f628e2f6b12ff89aa82cd8d6dcb`. Corrected `voice-ai-agents-2026-elevenlabs-hume-audio`, `agentic-ai-roadmap-2025`, and `agi-2026-opportunities-students-creators`. Read `08-golden-age-of-intelligence` and left it unchanged. The register still has 178 unreviewed rows and 96 prepared rows. `merge:gate`, the founder demo, and production deploy are unchanged holds. Editorial boundary tests: 49 pass. See [session](sessions/2026-10-06.md).
