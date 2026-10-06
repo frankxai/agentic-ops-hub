@@ -1,9 +1,9 @@
-Implement the activation-router correction tracked in SIS issue 300.
+Implement the activation-router correction tracked in SIS issue300.
 
 Repository: frankxai/Starlight-Intelligence-System
 Issue: https://github.com/frankxai/Starlight-Intelligence-System/issues/300
 Base main observed c462fc7b0f0565dfdaa906ac5ef0021e76980eaa.
-Installed validated source is PR 202 at 439654e35b9a6ec914082295dd5f06227a04f43b, branch codex/plugin-manifest-compat-20260924, plugin0.1.1+codex.20260924. Preserve that source branch and reconcile its manifest compatibility with main before claiming native validity.
+Installed validated source is PR202 at439654e35b9a6ec914082295dd5f06227a04f43b, branch codex/plugin-manifest-compat-20260924, plugin0.1.1+codex.20260924. Preserve that source branch and reconcile its manifest compatibility with main before claiming native validity.
 
 Frank authorised bounded cloud implementation to carry the Starlight product vision forward and leave this chat with durable execution owners. Work in this repository's isolated cloud checkout. You are not alone in the ecosystem: preserve other agents' branches, edits, open tasks, provenance and accepted products. Read repository AGENTS.md and applicable contracts. Local Windows files and installed skills are not present in cloud.
 
@@ -27,4 +27,4 @@ Acceptance:
 - Validate against pinned current official native plugin schemas and host behavior. Test discovery/routing and clean install/update/remove where the cloud host can support it; Windows and actual installed-cache verification remain separate.
 - Return a small draft PR against main, exact source/host/manifest evidence and tested rollback. Do not publish marketplace packages or enable all tool servers.
 
-The generated index/scanner belongs to https://github.com/frankxai/ai-capability-registry/issues/6, not this lane. Its current Windows checkout has a pre-existing dirty generated index. Link the dependency and produce compatible schema requirements; never overwrite that file or infer configured enablement from cache presence. Parent release work remains SIS 123.
+The generated index/scanner belongs to https://github.com/frankxai/ai-capability-registry/issues/6, not this lane. Its current Windows checkout has a pre-existing dirty generated index. Link the dependency and produce compatible schema requirements; never overwrite that file or infer configured enablement from cache presence. Parent release work remains SIS123.
