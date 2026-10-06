@@ -1,0 +1,33 @@
+Deliver and verify the installable Starlight Agent Kit evidence-brief workflow with interruption recovery.
+
+Repository: frankxai/openclaw-acos-skills-railway-template
+Release owner issue (runtime repo issues disabled): https://github.com/frankxai/starlightintelligence.ai/issues/74
+Accepted product: https://github.com/frankxai/starlightintelligence.ai/issues/77
+Base main observed 3ef09c0e4fb712bcd9ac94ce34051a6e3f54fc92; previously reviewed equivalent source pin e000c3988cc55836bd19e9dfb8c9004b9e66d4d8.
+Existing runtime update PR 2 branch chore/bump-openclaw-ref, head 9c64a09e876855a2b914a953245fcf9e2c84f5ab, changes Dockerfile upstream build ref. Preserve it and verify current official upstream compatibility before incorporating.
+
+Frank authorised bounded cloud implementation to carry the Starlight product vision forward and leave this chat with durable execution owners. Work in this repository's isolated cloud checkout. You are not alone in the ecosystem: preserve other agents' branches, edits, open tasks, provenance and accepted products. Read repository AGENTS.md and applicable contracts. Local Windows files and installed skills are not present in cloud.
+
+Business constraints: customer-owned runtime/data/keys, BYOK and self-service; no multi-tenant inference SaaS, hourly consulting or support-retainer business. Preserve abundant product fronts. Academy remains free. Multi-marketplace distribution reuses one fulfillment/financial owner. Prices remain hypotheses until evidence and release approval. Prelaunch products capture demand honestly; no fabricated scarcity. A hosted licensing/auth plane is a proposal, not a ratified business change.
+
+Quality: deliver working useful behavior and a reviewable artifact, with editing/recovery/export where relevant. A scaffold, plan, mock or green build does not prove customer value. Reproduce failures before fixing them. Verify current official API/version documentation. Keep secrets/security checks enabled. Any UI changes require careful typography, sentence case, keyboard/touch/reduced-motion/interruption checks and exact-revision review; use existing approved assets. Generated visual assets need prompt/model/provider/session provenance and sidecars plus the owner's ledger. If the cloud lacks those records, return that limitation rather than inventing evidence.
+
+Budget and authority: one submitted job, no fanout/new tasks, max 90 minutes of implementation effort and one coherent build/test cycle; expand tests only for changes or unresolved failures. This is an instruction budget, not a verified provider-enforced timer. Do not rotate credentials, broaden account access, create paid resources, alter production, send marketing, accept contracts, publish packages or merge/deploy. Use fixtures and approved repo inputs. If an external grant/key is missing, finish the independent source/fixture work and return the exact owner action. Never treat a ready task, mocked execution or passing fixture as live acceptance.
+
+Return: draft PR or reviewable patch, exact starting/base/head SHAs, changed files, tests, failures/recovery, actual usage/cost if available (unknown otherwise), source links, remaining gates, rollback and one next action. Update the linked existing issue if accessible. Do not close product acceptance issues merely because source work is done.
+
+Buyer: developer-led automation studios and small product teams. Job: approved-source evidence brief -> checked editable draft -> human acceptance, with customer-owned data and keys. Paid pack prices are hypotheses, not an active checkout.
+
+Owns runtime/template source src/, packs/, scripts/, test/, Dockerfile, .railway/, scoped README/docs and required CI/lock changes. Do not edit the website, existing launchpad production operator, production-agent-patterns or commercial ledgers. Hermes/profile adapter belongs to https://github.com/frankxai/production-agent-patterns/issues/5; profile isolation to issue 6 there. Return those adapter requirements separately.
+
+Implement and prove:
+1. Inspect current accepted pack/server/recovery implementation. Reuse it. Establish exact wrapper, upstream OpenClaw pin/image, Node, Railway SDK and model adapter versions; inspect upstream primary documentation before API edits. Prior28 tests and Docker build36928975741 are historical evidence only.
+2. Validate PR 2's upstream update, authentication and health contracts. /setup/healthz is the accepted healthcheck. Setup/Gateway secrets must be distinct, deployment-scoped and denied when absent/wrong. Credentials are supplied at runtime by the owner, never logged/committed/echoed or exported.
+3. Make the approved-source briefing workflow independently usable with editable source/mission/output, source citations and run receipts. Use repository-contained public-source fixtures for deterministic failure tests. Build a verifier that can run a real approved briefing in an isolated customer-owned deployment with BYOK and human acceptance; include all attempts, cost and interventions in its receipt. If the cloud lacks keys, return an unexecuted live step explicitly rather than fabricated generated output.
+4. Demonstrate interruption/restart state continuity, export, restore into a fresh isolated instance and second use. Test corrupted/partial imports, unauthorized state access, quota/timeout/cancellation and no duplicated consequential action. A volume exists only when observed; a stub is not live recovery.
+5. Rehearse TOML-to-IaC migration with fixtures preserving service/volume identifiers and a rollback/export procedure. Prepare a sanitized template draft and customer quickstart, but do not publish a Railway template or touch an existing production project.
+6. Use current npm/node scripts: npm ci, npm run lint, npm test, npm run pack:verify, npm run iac:check, and one isolated Docker build/smoke if supported. Inspect package scripts before running. Cloud limitations must be exact, not silently marked PASS.
+7. Compare the usable brief/recovery workflow with vanilla Codex or Claude on the same approved inputs when a legitimate account/key is available. Measure output usefulness, repair effort, all attempts/time/cost and restore. An unavailable baseline stays pending.
+8. Return a draft PR against main, tested source/host/version matrix, actual install/recovery artifact and a concise live-verifier packet. Use issue 74 for remaining real Railway deployment/acceptance; issue 75 for payment/fulfillment and issue 76 for ten activations. Do not close those outcomes from source tests.
+
+Finish the largest useful isolated source/install/recovery slice possible within this job, preserving the real creator outcome and keeping unexecuted live gates visible.
