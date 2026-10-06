@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Runtime access and recovery corrected; fresh-host proof next
+
+[Runtime PR4](https://github.com/frankxai/openclaw-acos-skills-railway-template/pull/4) at21622df is stacked on PR3 and corrects anonymous Gateway delegation plus evidence-brief cancellation/locking/acceptance/export/recovery.45 tests and Node22/24 CI plus Docker build pass; separate same-harness reviewer approves exact bytes, independent-provider/native/live/customer gates remain open. Site97's current source histories and exact READY preview verified; router30110 tests rerun. [Receipt](cloud/starlight-continuation-review-2026-10-06.md), session and current prompt carry the next action: reviewed correction integration then issue74 fresh-host authenticated brief/restart/restore with actual usage. BYOK/DIY/free Academy/multi-marketplace and other owners remain intact.
+
 ## 2026-10-06: Foundation-to-implementation continuation prompt saved
 
 Frank's next-session [prompt](cloud/starlight-foundation-e2e-next-session.md) is saved for a local or cloud harness, with the customer job, competitive/architecture alternatives, design/funnel, useful end-to-end slice, true capability discovery and commercial/release evidence. It requires fresh inspection of site97/router301/runtime3 and preserves all source owners, PR164, existing issues and business/admission contracts. The current Starlight pickup now points to this full prompt. This completes a document deliverable; implementation and acceptance remain open under their existing owners.

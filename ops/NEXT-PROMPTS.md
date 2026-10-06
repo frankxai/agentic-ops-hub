@@ -17,11 +17,13 @@
 
 ## Current
 
-### Starlight: continue from foundations through implementation
+### Starlight: verify the corrected runtime on a fresh host
 
-Frank requested a next-session prompt for this agent or another capable harness, covering the foundations, capabilities, competitive view, architecture, design, funnel, commercial readiness and complete implementation. Use [the full continuation prompt](cloud/starlight-foundation-e2e-next-session.md). It points to the original assessment, current source owners, exact dispatch context and existing acceptance issues. Refresh PR97/301/runtime3 and their source/CI/review state before integration; preserve original source lanes and hub PR164.
+Continue [the full foundation brief](cloud/starlight-foundation-e2e-next-session.md) using [the current exact-evidence receipt](cloud/starlight-continuation-review-2026-10-06.md). Runtime PR4 head21622df80ca0fc0e37885a3b9cc4f1b216e5e775 is stacked on PR3 base8a25742;45 tests, Node22/24 CI37399866536 and Docker37399866528 pass. Same-harness independent source review approves file digests; independent provider/release review remains open. Refresh actual heads before integration. Do not recreate this patch or overwrite its existing PR.
 
-The useful outcome remains an owned workflow with real output, editing, recovery and export, followed by evidence-based site/distribution improvements. Keep BYOK/customer ownership, self-service, free Academy and multi-marketplace doctrine. Select and implement the most consequential complete slice, obtain applicable independent review and preserve explicit live/native/customer gates. Maintain the existing issues and hub records; no competing task queue or blind rebuild.
+Next consequential action: reviewed correction integration, then issue74's isolated fresh-host HTTPS/WSS authentication/onboarding/reload/reconnect, real accepted approved-source brief with actual attempts/usage/cost, volume restart and export/fresh restore. Raw WebSocket tests do not establish browser Basic-credential reuse. Do not weaken anonymous denial or retry interrupted saved drafts with another model call; use explicit recover after confirming the runner stopped.
+
+Site97 at883882e3 preserves current87/91/94/96 by ancestry; exact preview dpl_7s3P5k3WZ4LuMhksyaqTEh5Re6Mo is READY, not production or rendered acceptance. Router301 at0f3541a passes10 targeted tests; native Windows still pending. Continue useful site/design/fulfillment work through existing95/82/74-77 owners; keep customer acceptance open. Preserve BYOK/DIY/free Academy/multi-marketplace, single identity/fulfillment authorities, source history and hub164. Baseline quality/cost comparison and independent provider/design/legal gates remain pending.
 
 ### Observatory: integrate measured session oversight and isolate hook106
 
