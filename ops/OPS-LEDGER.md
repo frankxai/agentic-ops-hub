@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: image playbook prices removed, merge gate still held (Grok)
+
+Local head `6261e8ee3291c961aeec1775715424ceff4f0692`. Disk 12.98 percent free, RAM 6.42 GiB free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-image-video-generation-playbook-2026` no longer prints an unsourced price or quota. Claude PASS on that commit. Editorial boundary tests: 52 pass. The register row is still unreviewed. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: deal-flow growth figures removed, 47c6bf21 reviewed (Grok)
 
 Local head `af4f8cdb8e3cf8c0c4b264042e39e4ecc0f5696b`. Claude PASS on `47c6bf21` for the voice, 2025 roadmap, and AGI pages. `building-deal-flow-pipelines-ai` no longer prints an unsourced year-over-year rate. Claude PASS on `7afa6507` and `af4f8cdb`. The register rows are still unreviewed. Editorial boundary tests: 51 pass. `merge:gate`, the founder demo, and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
