@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-estate-graph-truth-ci",
+  "class": "BUILD",
+  "priority": 4,
+  "agent": "codex",
+  "risk": "medium",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight",
+  "what": "Graph truth pass: a CI check that fails when graph files disagree, plus the untracked generated file",
+  "why": "The graph holds conflicting claims (knowledge-tree gate PASS versus a void claim, Income band 99-299 EUR versus a planned 67 USD Blueprint) and an untracked 6.4 MB graph/agents.atlas.json next to tracked files. The root workspace remotes are also unsettled (origin stale, estate current, no upstream on main).",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. Release only after Frank rules on the estate root write target (item 5 of the decisions task) and claims a lane: node tools/lane.mjs claim --harness codex --scope graph-truth --repo starlight --paths 'graph/**' --ttl 4h. Add a check that fails when two graph files disagree on a product's stage or price band, and decide ignore-and-regenerate or track for agents.atlas.json. Fix a conflicting value only where a source documents the correct one; otherwise leave the conflict visible and ask the owner. Do not touch files live agents write (queen/state/*, ops/TASTE_FEEDBACK_LEDGER.jsonl, queen/swarm/STATUS-*). Done when: the check runs, fails on a seeded disagreement and passes on clean graph, issue 51 has the evidence. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state.",
+  "evidence": "https://github.com/frankxai/starlight-estate/issues/51",
+  "owner": "exec-cio + Frank (remote ruling)",
+  "maxMinutes": 60
+}
