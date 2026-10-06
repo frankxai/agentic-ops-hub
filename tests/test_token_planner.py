@@ -60,6 +60,31 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertIn("-C C:/repo", command)
         self.assertNotIn("danger-full-access", command)
 
+    def test_sandbox_cannot_be_widened_by_caller(self):
+        for widened in ("danger-full-access", "DANGER-FULL-ACCESS", "full"):
+            with self.assertRaisesRegex(PlannerError, "sandbox"):
+                self.planner.command_args(self._mission(agent="codex", budget=30), sandbox=widened)
+
+    def test_read_only_sandbox_is_allowed(self):
+        args = self.planner.command_args(self._mission(agent="codex", budget=30), sandbox="read-only")
+        self.assertIn("read-only", args)
+
+    def test_no_launcher_emits_a_bypass_flag(self):
+        for agent in ("claude", "codex", "opencode", "gemini"):
+            mission = self._mission(agent=agent, budget=30)
+            task = self.planner._task_contract(mission)
+            flags = [a.lower() for a in self.planner.command_args(mission) if a != task]
+            for token in ("danger-full-access", "--dangerously-skip-permissions",
+                          "--dangerously-bypass-approvals-and-sandbox", "--yolo"):
+                self.assertFalse(any(token in a for a in flags), f"{agent} launcher leaks {token}")
+
+    def test_boundary_rejects_bypass_flag_but_not_task_prose(self):
+        with self.assertRaisesRegex(PlannerError, "forbidden"):
+            Planner._assert_launch_safe(["codex", "exec", "--yolo", "task"], task="task")
+        mission = self._mission(agent="codex", budget=30)
+        mission["task"] = "Explain why danger-full-access and --yolo are never used"
+        self.planner.command_args(mission)  # prose that mentions a token must not be rejected
+
     def test_status_requires_verified_receipt_not_only_report(self):
         with tempfile.TemporaryDirectory() as tmp:
             report = Path(tmp) / "n1.md"

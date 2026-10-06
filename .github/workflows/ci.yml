@@ -22,8 +22,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Verify agent-rules sync engine runs
-        run: node scripts/sync-agent-rules.mjs --help || node scripts/sync-agent-rules.mjs --check || true
+      - name: Verify generated agent rules match AGENTS.md
+        run: node scripts/sync-agent-rules.mjs --check
 
       - name: Check blueprint docs exist
         run: |
@@ -45,6 +45,8 @@ jobs:
           python -m unittest \
             tests.test_queue_reconcile \
             tests.test_fleet_watch \
+            tests.test_estate_ci_watch \
+            tests.test_merge_steward \
             tests.test_fleet_control \
             tests.test_token_planner \
             tests.test_cli_capacity \

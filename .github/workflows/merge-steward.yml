@@ -1,0 +1,125 @@
+# Merge Steward — the ONLY place the steward runs. Design: docs/MERGE-STEWARD.md.
+#
+# Target repos carry no steward workflow, policy or secret. Every run checks
+# out THIS repo at the commit that triggered it (github.sha, recorded in every
+# verdict comment), reads merge-steward/targets.yml + policies, and walks the
+# open PRs of the allow-listed repos through the API with the frankx-steward
+# App installation token. PR code is never checked out or executed.
+#
+# Kill switch: hub variable MERGE_STEWARD=off, or any open hub issue labelled
+# `steward:stop`. Either one makes the run withdraw every standing steward
+# approval (and the auto-merge riding on it) and do nothing else.
+# Mode: hub variable MERGE_STEWARD_MODE=live AND a target's `mode: live`;
+# anything else is shadow (comments only).
+name: Merge Steward
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # steward pass
+    - cron: "17 6 * * *" # steward pass + daily digest
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: "Also post the daily digest"
+        type: boolean
+        default: false
+
+permissions: {}
+
+# One run at a time, never cancelled mid-merge: the daily cap and the
+# approve-then-merge sequence rely on no concurrent steward.
+concurrency:
+  group: merge-steward
+  cancel-in-progress: false
+
+jobs:
+  steward:
+    # Secrets live in the `merge-steward` environment, restricted to `main`
+    # (Frank's setup), so a pushed branch that edits this file gets none.
+    if: github.repository == 'frankxai/agentic-ops-hub' && github.ref == 'refs/heads/main'
+    environment: merge-steward
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      issues: write # hub-only: incidents, digest, approval ledger, kill-switch reads
+    steps:
+      # Until Frank installs the App and stores its key, the steward has no
+      # authority at all: skip quietly instead of failing every 10 minutes.
+      - name: Steward configured?
+        id: configured
+        env:
+          OK: ${{ secrets.STEWARD_APP_ID != '' && secrets.STEWARD_PRIVATE_KEY != '' }}
+        run: |
+          echo "ok=$OK" >> "$GITHUB_OUTPUT"
+          [ "$OK" = "true" ] || echo "::notice::STEWARD_APP_ID / STEWARD_PRIVATE_KEY not set in the merge-steward environment — nothing to do."
+
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        if: steps.configured.outputs.ok == 'true'
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Resolve target repos
+        id: targets
+        if: steps.configured.outputs.ok == 'true'
+        env:
+          MERGE_STEWARD_MODE: ${{ vars.MERGE_STEWARD_MODE }}
+        run: python3 scripts/merge_steward.py repos >> "$GITHUB_OUTPUT"
+
+      # Scoped to every repo the App is installed on (Frank selects those), so
+      # the per-run sweep can withdraw steward approvals even in a repo that
+      # was removed from targets.yml. contents:write only when some repo is
+      # live (merging needs it). No workflows, administration, secrets or
+      # actions permission, ever.
+      - name: Mint steward App token
+        id: app
+        if: steps.configured.outputs.ok == 'true'
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        with:
+          client-id: ${{ secrets.STEWARD_APP_ID }}
+          private-key: ${{ secrets.STEWARD_PRIVATE_KEY }}
+          owner: frankxai
+          permission-contents: ${{ steps.targets.outputs.live == 'true' && 'write' || 'read' }}
+          permission-pull-requests: write
+          permission-checks: read
+          permission-statuses: read
+
+      - name: Steward pass
+        if: steps.configured.outputs.ok == 'true'
+        env:
+          APP_TOKEN: ${{ steps.app.outputs.token }}
+          HUB_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          STEWARD_OPENAI_MODEL: ${{ vars.MERGE_STEWARD_OPENAI_MODEL }}
+          # The identity comes from the App itself: no name to misconfigure.
+          STEWARD_LOGIN: ${{ steps.app.outputs.app-slug }}[bot]
+          MERGE_STEWARD_MODE: ${{ vars.MERGE_STEWARD_MODE }}
+          MERGE_STEWARD: ${{ vars.MERGE_STEWARD }}
+          DIGEST: ${{ github.event.schedule == '17 6 * * *' || inputs.digest == true }}
+        run: |
+          set -euo pipefail
+          if [ "$DIGEST" = "true" ]; then
+            python3 scripts/merge_steward.py run --digest
+          else
+            python3 scripts/merge_steward.py run
+          fi
+
+      # Fail loudly: any error pauses the steward until Frank closes the issue.
+      - name: Open incident on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          gh label create steward:incident --color b60205 --description "Merge Steward incident: merges paused" \
+            --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
+          OPEN=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --label steward:incident \
+            --search "\"Merge Steward run failed\" in:title" --json number --jq 'length')
+          if [ "$OPEN" = "0" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --label steward:incident \
+              --title "Merge Steward run failed" \
+              --body "The steward run $RUN_URL failed (commit \`$GITHUB_SHA\`). While any \`steward:incident\` issue is open the steward merges nothing. Read the log; if it failed while withdrawing an approval, check open PRs for a standing steward approval and dismiss it. Fix, then close this issue."
+          fi

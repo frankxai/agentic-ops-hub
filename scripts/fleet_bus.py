@@ -2,7 +2,12 @@
 """Fleet bus helpers with local + remote Git truth reconciliation.
 
 Only write heartbeats for THIS machine. Status reads local files and the latest
-fetched origin/main tree so a dirty/diverged worktree cannot hide a live peer.
+fetched pulse branches so a dirty/diverged worktree cannot hide a live peer.
+
+Heartbeats are published to unprotected per-machine branches pulse/<machine>
+(one force-pushed single-commit branch each) because main is protected and
+PR-only: a daily heartbeat can never land there, so a watch reading main can
+never go green. Same pattern as frankxai/starlight-token-tracker.
 """
 from __future__ import annotations
 
@@ -19,6 +24,8 @@ from typing import Any
 _OPS_ROOT = Path(__file__).resolve().parents[1]
 BUS_ROOT = _OPS_ROOT / "fleet" / "bus"
 LEGACY_BUS_ROOT = _OPS_ROOT / "bus"
+PULSE_PREFIX = "pulse/"
+PULSE_FILE = "heartbeat.json"
 MACHINE_MAP = {
     "DESKTOP-1B4ICID": "c940",
     "Starlight": "yoga-book",
@@ -81,31 +88,81 @@ def _read_local_heartbeats(root: Path = BUS_ROOT) -> dict[str, dict[str, Any]]:
     return result
 
 
-def _run_git(args: list[str], timeout: int = 30) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        ["git", "-C", str(_OPS_ROOT), *args],
+def _run_git(
+    args: list[str], timeout: int = 30, repo: Path = _OPS_ROOT, stdin: str | None = None
+) -> subprocess.CompletedProcess[str]:
+    # Bytes in, not text: text-mode stdin on Windows rewrites \n as \r\n, which
+    # corrupts the file names git mktree reads.
+    done = subprocess.run(
+        ["git", "-C", str(repo), *args],
+        input=stdin.encode("utf-8") if stdin is not None else None,
         capture_output=True,
-        text=True,
         timeout=timeout,
         check=False,
     )
+    return subprocess.CompletedProcess(
+        done.args,
+        done.returncode,
+        done.stdout.decode("utf-8", "replace"),
+        done.stderr.decode("utf-8", "replace"),
+    )
 
 
-def _read_remote_heartbeats(ref: str = "origin/main") -> dict[str, dict[str, Any]]:
-    tree = _run_git(["ls-tree", "-r", "--name-only", ref, "fleet/bus/heartbeats"])
-    if tree.returncode:
+def read_pulse_heartbeats(
+    remote: str = "origin", repo: Path = _OPS_ROOT
+) -> dict[str, dict[str, Any] | str]:
+    """Map machine id (from the branch name) to its heartbeat, or to an error string.
+
+    Reads already-fetched refs/remotes/<remote>/pulse/*; the caller fetches.
+    """
+    prefix = f"refs/remotes/{remote}/{PULSE_PREFIX}"
+    refs = _run_git(["for-each-ref", "--format=%(refname)", prefix], repo=repo)
+    if refs.returncode:
         return {}
-    result: dict[str, dict[str, Any]] = {}
-    for relative in (line.strip() for line in tree.stdout.splitlines() if line.strip().endswith(".json")):
-        shown = _run_git(["show", f"{ref}:{relative}"])
+    result: dict[str, dict[str, Any] | str] = {}
+    for ref in (line.strip() for line in refs.stdout.splitlines() if line.strip()):
+        machine = ref[len(prefix):]
+        shown = _run_git(["show", f"{ref}:{PULSE_FILE}"], repo=repo)
         if shown.returncode:
+            result[machine] = f"no {PULSE_FILE} on {PULSE_PREFIX}{machine}"
             continue
         try:
             data = json.loads(shown.stdout)
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as err:
+            result[machine] = f"unreadable {PULSE_FILE} ({err})"
             continue
-        result[_heartbeat_key(data, Path(relative).name)] = data
+        result[machine] = data if isinstance(data, dict) else f"{PULSE_FILE} is not an object"
     return result
+
+
+def _read_remote_heartbeats(remote: str = "origin") -> dict[str, dict[str, Any]]:
+    return {
+        _heartbeat_key(beat, machine): beat
+        for machine, beat in read_pulse_heartbeats(remote).items()
+        if isinstance(beat, dict)
+    }
+
+
+def publish_pulse(
+    payload: dict[str, Any], remote: str = "origin", repo: Path = _OPS_ROOT
+) -> str:
+    """Force-push heartbeat.json as a single parentless commit on pulse/<machine>.
+
+    Git plumbing only, so the caller's working tree and branch are untouched.
+    History is deliberately not kept: the branch answers "is it alive now".
+    """
+    def git(args: list[str], stdin: str | None = None) -> str:
+        done = _run_git(args, timeout=120, repo=repo, stdin=stdin)
+        if done.returncode:
+            raise RuntimeError(f"git {args[0]} failed: {done.stderr.strip()[:300]}")
+        return done.stdout.strip()
+
+    machine = str(payload["machine_id"])
+    blob = git(["hash-object", "-w", "--stdin"], stdin=json.dumps(payload, indent=2) + "\n")
+    tree = git(["mktree"], stdin=f"100644 blob {blob}\t{PULSE_FILE}\n")
+    commit = git(["commit-tree", tree, "-m", f"pulse {machine} {payload.get('at', '')} [skip ci]"])
+    git(["push", "--quiet", "--force", remote, f"{commit}:refs/heads/{PULSE_PREFIX}{machine}"])
+    return commit
 
 
 def reconcile_heartbeats(
@@ -141,14 +198,14 @@ def peer_is_fresh(
     return observed >= current - timedelta(hours=max_age_hours)
 
 
-def reconciled_status(ref: str = "origin/main", max_age_hours: float = 24) -> dict[str, Any]:
+def reconciled_status(remote: str = "origin", max_age_hours: float = 24) -> dict[str, Any]:
     local = _read_local_heartbeats()
-    remote = _read_remote_heartbeats(ref)
-    heartbeats = reconcile_heartbeats(local, remote)
+    remote_beats = _read_remote_heartbeats(remote)
+    heartbeats = reconcile_heartbeats(local, remote_beats)
     book = heartbeats.get("yoga-book") or heartbeats.get("yogabook")
     return {
         "self": detect_machine(),
-        "remote_ref": ref,
+        "remote": remote,
         "heartbeats": list(heartbeats.values()),
         "book_online": bool(book and peer_is_fresh(book, max_age_hours=max_age_hours)),
         "book_heartbeat": book,
@@ -200,20 +257,27 @@ def cmd_heartbeat(args: argparse.Namespace) -> int:
     path.write_text(text, encoding="utf-8")
     _mirror_legacy(Path("heartbeats") / f"{mid}.json", text)
     print(json.dumps(payload, indent=2))
+    if args.publish:
+        try:
+            commit = publish_pulse(payload, remote=args.remote)
+        except (RuntimeError, subprocess.TimeoutExpired) as err:
+            print(f"WARN: pulse publish failed: {err}", file=sys.stderr)
+            return 4
+        print(f"published {PULSE_PREFIX}{mid} {commit[:10]}", file=sys.stderr)
     return 0
 
 
 def cmd_status(args: argparse.Namespace) -> int:
     if args.fetch:
-        fetched = _run_git(["fetch", "--prune", "origin"], timeout=120)
+        fetched = _run_git(["fetch", "--prune", args.remote], timeout=120)
         if fetched.returncode:
             print(f"WARN: fetch failed: {fetched.stderr.strip()}", file=sys.stderr)
-    print(json.dumps(reconciled_status(args.remote_ref, args.max_age_hours), indent=2))
+    print(json.dumps(reconciled_status(args.remote, args.max_age_hours), indent=2))
     return 0
 
 
 def cmd_swarm_line(args: argparse.Namespace) -> int:
-    out = reconciled_status(args.remote_ref, args.max_age_hours)
+    out = reconciled_status(args.remote, args.max_age_hours)
     mid = str(out["self"])
     own = next((beat for beat in out["heartbeats"] if beat.get("machine_id") == mid), {})
     peer = "book=ONLINE" if out["book_online"] else "book=STALE_OR_MISSING"
@@ -236,16 +300,18 @@ def main() -> int:
     heartbeat.add_argument("--machine", default=None, help="Must match self; default=detect")
     heartbeat.add_argument("--status", default="live")
     heartbeat.add_argument("--notes", default="")
+    heartbeat.add_argument("--publish", action="store_true", help=f"Force-push to {PULSE_PREFIX}<machine>")
+    heartbeat.add_argument("--remote", default="origin")
     heartbeat.set_defaults(func=cmd_heartbeat)
 
     status = sub.add_parser("status", help="Show reconciled local + remote heartbeats")
-    status.add_argument("--remote-ref", default="origin/main")
+    status.add_argument("--remote", default="origin", help="Remote whose pulse/* branches to read")
     status.add_argument("--max-age-hours", type=float, default=24)
-    status.add_argument("--fetch", action="store_true", help="Fetch origin before reading remote ref")
+    status.add_argument("--fetch", action="store_true", help="Fetch the remote before reading its pulse branches")
     status.set_defaults(func=cmd_status)
 
     swarm = sub.add_parser("swarm-line", help="One-line status for Telegram bus")
-    swarm.add_argument("--remote-ref", default="origin/main")
+    swarm.add_argument("--remote", default="origin", help="Remote whose pulse/* branches to read")
     swarm.add_argument("--max-age-hours", type=float, default=24)
     swarm.set_defaults(func=cmd_swarm_line)
 

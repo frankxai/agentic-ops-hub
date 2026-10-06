@@ -1,9 +1,0 @@
-{
-  "machine_id": "yoga-book",
-  "hostname": "Starlight",
-  "status": "live",
-  "role": "frontend-innovation",
-  "telegram_bot": "@Hermesyogabookbot",
-  "notes": "Book live; identity yoga-book/Starlight/83KJ; hermes-bus sync OK; observed C940 HB origin/main Tailscale 1.102.2 NeedsLogin (browser/tray on C940); Book Tailscale NOT installed; public SSH:22 closed-by-design; git bus remains SoT until both Online on same tailnet; hostname target yoga-book",
-  "at": "2026-08-15T13:04:46+00:00"
-}
