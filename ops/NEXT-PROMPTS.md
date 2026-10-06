@@ -24,10 +24,10 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ### Terminal: verify PR104, then repair Queen admission through its owner
 
-Read starlight-agent-config issue46 and draft PR104 (`060c503`), stacked on draft
+Read starlight-agent-config issue46 and draft PR104 (`5d44d2a`), stacked on draft
 PR87 (`9b9d678`). Small opening and owned palette entries are locally installed;
 556 checks passed, scoped provider review passed, native mouse/input redraw QA
-remains pending. Follow the 2026-10-06 hub session. Verify CI and native Terminal
+remains pending. Follow the 2026-10-06 hub session. Final Windows CI passed. Verify native Terminal
 Ctrl+click/focus/wrapped drafts after PP admission. Do not infer completion from
 transport sessions. Queen inbox0/held27/sleep on is observed, not dispatch
 authorization. Through Queen's current owning writer, repair one held card's

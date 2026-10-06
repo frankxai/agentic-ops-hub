@@ -3,12 +3,12 @@
 ## 2026-10-06: Terminal navigation installed locally; public release pending
 
 [Config draft PR104](https://github.com/frankxai/starlight-agent-config/pull/104)
-`060c503` is stacked on draft PR87. Local small opening and four owned palette
+`5d44d2a` is stacked on draft PR87. Local small opening and four owned palette
 entries installed; read-only Queen holds and interface navigation work in PS5/PS7.
 556 local checks, scoped provider review, source secret and UI detector checks
 passed. Profile medians 643 to456 ms (PS5), 555 to359 ms (PS7); window creation and
 input readiness excluded. [Issue46 update](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-6008826865)
-keeps the broader objective open. Native interaction QA, current CI, managed
+keeps the broader objective open. [Final Windows CI](https://github.com/frankxai/starlight-agent-config/actions/runs/37410086114) passed. Native interaction QA, managed
 offline cockpit launch, Queen authorship/receipt wiring, schema/vault sync and
 public packaging/license remain outstanding. See [session](sessions/2026-10-06.md).
 
