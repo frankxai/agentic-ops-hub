@@ -1,5 +1,29 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-05: estate-guard — agentic surface scanned, gated, scheduled (Claude)
+
+The estate now has a scanner for its own attack surface, a deterministic in-session gate, a CI ratchet and a weekly sweep. [claude-skills-library #44](https://github.com/frankxai/claude-skills-library/pull/44) adds `packs/estate-guard` (33 rules, hooks, CI, tests). First scan of 48 repos: 0 critical, 5 high, 83 medium, 717 low; no live credential anywhere; exposure is supply chain (`@latest` in hooks and skills) and autonomy surface. The two production highs are fixed in [arcanea-ai-app #522](https://github.com/frankxai/arcanea-ai-app/pull/522) (`/api/forge` IDOR, comment-triggered agent gated) and [gencreator.ai #160](https://github.com/frankxai/gencreator.ai/pull/160) (`/api/studio/apply` abuse controls). Record: [docs/ESTATE-GUARD.md](../docs/ESTATE-GUARD.md); evidence: `ops/evidence/estate-guard/2026-10-05/`; rollout: `scripts/estate-guard-rollout.sh`. Routine `estate-guard-sweep-weekly` fires Mondays 06:11 Amsterdam with a draft PR here as its only success condition. Wave 2 landed the same night: the pack is on `main` in twenty repos (sixteen wave-2 PRs, the three originals, this repo) and four base defects it surfaced are fixed or recorded. Open: waves 3–4, the medium PRs, two repo settings (arcanea review secret, gencreator.ai `surface-approved` label), the ai-music-academy audit decision, Vercel firewall decision, the Routine's first fire. See [session](sessions/2026-10-05.md).
+
+## 2026-10-05: SIS session continuity reviewed to PASS and merged (Claude)
+
+Session continuity is MERGED_NOT_LIVE:
+
+- [SIS #273](https://github.com/frankxai/Starlight-Intelligence-System/pull/273) `ea1d0a5`: trusted import, status, owner reconciliation.
+- [Ops #163](https://github.com/frankxai/agentic-ops/pull/163) `be49a10`: canonical PP caller, cursor baseline and shared lock, Codex native goals, proof.
+- [Canvas #31](https://github.com/frankxai/starlight-agent-canvas/pull/31) `d569167`: visible consumer.
+
+Each PR was reviewed by Grok on its exact head (six rounds; every block was reproduced and fixed with a regression) and merged through `pr-gate`. The post-merge proof passed 20 of 20 checks with `complete=true` on real interrupted Claude and Codex sessions and the original task `01a102ed`.
+
+#273's `package.json` change broke SIS `main`'s Foundry `RULES_LOCK` (`harness` was skipped on the draft). [SIS #286](https://github.com/frankxai/Starlight-Intelligence-System/pull/286) `6d4cbaa` restored the file and added a dedicated `continuity-gate` workflow.
+
+Install, the real trust policy, the live cursor baseline and LIVE_VERIFIED wait for PP storage evidence (PR4) and owner inputs. See [session](sessions/2026-10-05.md).
+
+## 2026-10-04: Observatory session observer merged; hook106 diagnosis open
+
+[Observatory PR10](https://github.com/frankxai/starlight-observatory/pull/10) is merged at3c575180b425d06a73fec75a577be95b150d3f5d, reviewed head fb2aec86e786a0783aed04f270e4d485feac5c7c.55 local tests, [main CI37234828443](https://github.com/frankxai/starlight-observatory/actions/runs/37234828443) and [six-platform plus package CI37234550446](https://github.com/frankxai/starlight-observatory/actions/runs/37234550446) pass; [independent provider source PASS](https://github.com/frankxai/agentic-ops/issues/139#issuecomment-5984368523) follows repaired material WARN findings. Private Codex cards show machine/model/lifetime tokens, explicit ledger links and parent metadata. Source failure is distinct from a known missing link. Cost/per-goal allocation, process liveness and other machine/harness coverage remain unknown. [Issue9](https://github.com/frankxai/starlight-observatory/issues/9) stays open for product acceptance; no installed/hosted release is claimed.
+
+Actual Chrome verification belongs to earlier head d401317; final embedded-script regressions execute at fb2aec8. Fresh PP browser admission held at4176MiB free versus8192 required. The11MiB owned TTL server was stopped through SDS after command validation; updated private HTML is saved. No24/7 job or new local worker was enabled. Hook106 remains unidentified/unreproduced: installed Impeccable Stop exits0, native adapter20+8 and exporter73+6 tests pass. No hook/config/trust/security bypass or suppression; original unattributed ASPh accent finding stands outside this scope. Other owner retains SIS273 at6366dc1, Canvas31 at64373bf and Ops163 at7d638cd, all open; see their hub PR155. Preserve those lanes and unfinished native goals. See the appended session entry and current prompt for artifacts and full repo/interface map.
+
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
 **Last sweep:** 2026-10-04 (complete report89d1e6d/172 tests/current preview verified; full factory release/live execution unfinished; actual recoverable creator case and qualified outcome review saved/cache retained; Swarm deployment readback merged; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 22 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
@@ -97,6 +121,53 @@ The cache stays preserved after Frank asked whether builds need it. Installed de
 The previous foreign handover lane was released; current main552e11ea was integrated normally. Both session/ledger conflict bodies and all incoming other-owner prompts were preserved. An initial own-lane check used an autogenerated owner and the compound command continued into merge despite that refusal. Ownership was rebound to the explicit source session and separately verified before conflict resolution; this sequencing failure remains recorded, not a gate PASS. No foreign lease was displaced.
 
 Technology PR34/77a4374, its existing preview and153-unit/51-page/34-browser evidence remain unchanged. Swarm PR35/main2b4e159 and exact495/29/PG17/build/dry-run proof remain in their scope. Next prove a named useful creator mission against the existing hardware-sheet alternative, recording output, repair/time and actual attributable cost. Trusted workflow entrypoint/deployment enforcement, durable create intent/authenticated dispatch, Vercel app-local adapter and uncertain external-effect recovery remain required before a live worker. Mobile feedback/focus/touch, independent rendered design/buyer/security/privacy/licence/commercial gates, actual billing/native quota/hardware throughput/ROI and release remain open. Policy loading is distinct from runtime enforcement.
+
+**Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX affiliate/account slice saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-05: canary v2 and zero-regression ratchet on both sites (Claude)
+
+[SIS 287](https://github.com/frankxai/Starlight-Intelligence-System/pull/287), [288](https://github.com/frankxai/Starlight-Intelligence-System/pull/288), [289](https://github.com/frankxai/Starlight-Intelligence-System/pull/289), [290](https://github.com/frankxai/Starlight-Intelligence-System/pull/290) and [Lab 93](https://github.com/frankxai/starlightintelligence.ai/pull/93) are merged with Grok signoff on each exact head; Grok blocked 287 (off-origin sitemap entry) and 289 (white-card contrast regression) first and both were fixed. Protocol production measures 0 on overflow, forced uppercase, typed capitals, touch targets, contrast and keyboard focus across 65 sitemap URLs (GitHub run 37318377332), and the Protocol canary now fails on all six. The Lab canary fails on overflow only; its uppercase (12), typed-capitals (14), touch (5) and contrast (22) findings are reported pending Frank's decisions. Open: Lab policy decisions, canaries and design contracts for other sites, visual/real-device/zoom checks, Arcanea icon migration (blocked), PR246 lock sequencing, the `.org` bypass link. Details in the 2026-10-04 session note.
+
+## 2026-10-04 (cont.): sentence-case sweep, /queen fix and production canary (Claude)
+
+[SIS 278](https://github.com/frankxai/Starlight-Intelligence-System/pull/278), [279](https://github.com/frankxai/Starlight-Intelligence-System/pull/279), [281](https://github.com/frankxai/Starlight-Intelligence-System/pull/281) (`/queen` overflowed 505px at 390px), [282](https://github.com/frankxai/Starlight-Intelligence-System/pull/282), [283](https://github.com/frankxai/Starlight-Intelligence-System/pull/283) and [284](https://github.com/frankxai/Starlight-Intelligence-System/pull/284) are merged with Grok signoff on each exact head. PR284 adds an automatic production design canary (80 checks, overflow and forced-uppercase): 15 violations on production before the fixes, 0 after, including a run on a GitHub runner triggered by a Production deploy. Lab canary and two Lab 320px fixes shipped in [Lab 92](https://github.com/frankxai/starlightintelligence.ai/pull/92) (46 checks, 0 violations on the Production deploy). Open: literal capitals typed in source, contrast/touch/focus checks, Arcanea icon migration (blocked), PR246 lock sequencing, the unexplained `.org` bypass link. Details in the 2026-10-04 session note.
+
+## 2026-10-04: Protocol typography and Lab overflow in production (Claude)
+
+Protocol typography patch ([SIS 270](https://github.com/frankxai/Starlight-Intelligence-System/pull/270)), Foundry rules renewal ([272](https://github.com/frankxai/Starlight-Intelligence-System/pull/272), [274](https://github.com/frankxai/Starlight-Intelligence-System/pull/274)), 320px and grid cleanup ([271](https://github.com/frankxai/Starlight-Intelligence-System/pull/271)), `/architecture` and `/quickstart` sentence case ([275](https://github.com/frankxai/Starlight-Intelligence-System/pull/275)) and the Lab vignette overflow ([Lab 88](https://github.com/frankxai/starlightintelligence.ai/pull/88)) are merged with Grok signoff on each exact head. `starlightintelligence.org` serves `232bcdc` and `starlightintelligence.ai` serves `a0dbca5`; a headless-Chrome probe at 320/390/768/1440 px with reduced motion on and off shows zero overflow and zero uppercase on four pages. SIS 276 (dead grid rule) merged at `9a139db` after the live check. Open: about 185 uppercase utilities in about 34 files, Lab focus ring, PR246 lock sequencing, Arcanea icon migration (blocked by dirty tree, branch and 14.52% free disk). Details in the 2026-10-04 session note.
+
+## 2026-10-04: Queen/SIS continuity merged source and production acceptance (Codex)
+
+[Agentic-ops PR161](https://github.com/frankxai/agentic-ops/pull/161) is merged at `551e2f0435322c8d9c7c2745acce1c68d1eb2848` (16:01:56 UTC), reviewed source `a1ac1e3c5661177122f307c75cdfbe37557bec5b`. Windows:73 behavior plus six conformance passes, zero failures/skips. [Final PR CI37215012071](https://github.com/frankxai/agentic-ops/actions/runs/37215012071) at merge29a0a13 contains that exact source and reports73+6 passes; [main CI37215248609](https://github.com/frankxai/agentic-ops/actions/runs/37215248609) checks out actual merge551e2f0 and reports the same. The lead read the raw logs and compared merged source blobs with the reviewed head. [Independent Anthropic PASS](https://github.com/frankxai/agentic-ops/pull/161#issuecomment-5981853939) is static source review with raw exact-head CI inspection, not test execution or deployment acceptance. WARN698a11f and FAILfe10d34 remain preserved with their fixes.
+
+The new `lifecycle/sis-continuity.js` CLI exports explicitly bound sessions to SIS's existing Work Graph at public base `12d794a389959a2360bd4c920689510f0949f02b`, requiring source SHA-256 `71c0597a32ec82c248f5b53ed0a3c742f45e537e7e8432606bfa8af6a8eb68a0` for conformance. It verifies root/origin/branch/HEAD, disables optional Git index locks and fsmonitor, preserves dirty changes, rejects detached checkouts and credential-bearing origins, and defaults to private metadata. Missing capture flags, partial/clipped requests and automation cannot establish intent authority. Exclusive exports have a final checksum manifest and a verification command. The actual CLI's written JSONL passes actual SIS parsing/projection. It emits only `intent.captured`, retains parser-derived source references as collector-claimed, and cannot admit, execute or complete work. Canonical IDs/state/source labels are operator claims. Checksums prove file integrity, not authentication. Windows privacy depends on inherited ACLs. Fresh snapshots are separate observations; immutable replay deduplicates, and neither is a count of admitted tasks.
+
+State: MERGED_NOT_LIVE. The installed canonical caller and full production recovery remain open. Peak Performance's reserve-floor lane at2d9d0fe still has34 foreign dirty paths, including its owner's handover rewrite; primary checkouts belong to other harnesses. No owner changes, legacy checkpoint/reset, live cursor migration or native-goal resume occurred. Review both full-ID cursor-key and fingerprint transitions before adoption. Native command dispatch, browser behavior, persistent index cost, process liveness and trusted goal/owner reconciliation remain unverified. The earlier scanner benchmark measures07ba9aa only. Public protocol/attestation changes retain SIS Board requirements. The separate [Foundry #268](https://github.com/frankxai/Starlight-Intelligence-System/issues/268) proposal remains uncommitted pending Board/provider review; adapter PASS does not cover it. Recall PR269 must not be applied twice.
+
+The proposed offering is session continuity within existing SIS/Second Brain, installed in the customer's own sovereign runtime/BYOK. A founder should recover the original task, exact checkout and ownership after interruption, while seeing admission and delivery proof separately. Promotion requires trusted ingestion, canonical caller integration, reviewed migrations, a supported web/MCP consumer, clean install and two-harness interruption/restart proof with private data isolation, no duplicate execution and rollback evidence. No new brand, price, hosted customer compute or production claim was introduced. [SIS #48 receipt](https://github.com/frankxai/Starlight-Intelligence-System/issues/48#issuecomment-5981898983), [Ops #139](https://github.com/frankxai/agentic-ops/issues/139#issuecomment-5981898601) and [Ops #134](https://github.com/frankxai/agentic-ops/issues/134#issuecomment-5981898782) record the source delivery and remaining acceptance.
+
+Fresh admission permits one interactive workload, pauses new swarms and keeps storage bounded. This continuation used one lead, existing worktrees and tiny tests, with security hooks enabled. No new agent, install, watcher or shared process was started. Original goal01a102ed remains blocked; the deadline09:00:23 UTC and original objective remain preserved, and no uninterrupted eight-hour run is claimed. Other paused/blocked goals were preserved. Emil Design Engineering was read before implementation; there were no new interface changes, so reduced motion/touch/transition verification is not claimed. Humanizer guidance was applied to this handover. The existing side-tab border predates the slice and stays unchanged; no design ignore was added. The plugin independently rate-limited hints on the unit-test file after repeated edits.
+
+See the session entry for the repository/interface map and current pickup prompt. The two campaign-owned leases are released after the hub save; no foreign lock, branch or worktree is removed.
+
+## 2026-10-04: Native Bash denial/feedback and compiled Protocol proof verified (Codex)
+
+Frank approved both Bash hooks; actual native discovery sees enabled/trusted.
+Source97/2fe7189 repairs absent nullable transcript handling. Actual allowed
+write, synthetic-secret denial before execution, defect feedback and fresh
+corrected scan pass; all processes close and configuration/trust hashes persist.
+20 Node/8 Python tests pass locally and in Windows/Linux CI; narrow independent
+source review PASS. Security Stop runs; vendor design Stop and other-host/model
+use remain open. Earlier failed broader host verdict is preserved.
+
+Kernel40/baeb7a7 builds source12d794a baseline and pinned patch candidate in CI,
+with2+9 actual observations, source-drift denial, fallback/recovery, touch back
+navigation and one interrupted reduced-motion entrance. All checks and limited
+independent source/evidence review pass; tested blobs equal. Isolated proof still
+needs owning integration/routes/rendered review and promotion; foreign PR200 stays
+untouched. All eleven requirements remain open/partial. See [session](sessions/2026-10-04.md)
+and [issue12](https://github.com/frankxai/starlight-design-intelligence/issues/12#issuecomment-5979694995).
+
 
 ## 2026-10-04: Estate design goal blocked pending actual trust and integration access
 
@@ -993,38 +1064,52 @@ enabled Computer Use browser was available for native-provider review.
 
 ## 2026-10-04: FrankX editorial renewal (Codex)
 
-Full six-audience website goal stays active, task `01a101fc-228c-7010-bba6-cf60bbad2357`,
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252).
-Batch 22 source `fc1850d99193501822fc9e3660b972fc99346977`, articles/candidates `f6e4e291457fafe7d72a385e957785e2a0fafc7c`.
-Register: 278 slugs/769 variants, 91 prepared, four observed production corrections,
-183 unreviewed. All 91 prepared hashes match; 95 receipts preserve 91 prior rows.
+Full website outcome remains unfinished: task `01a101fc-228c-7010-bba6-cf60bbad2357`,
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal reports
+paused; user explicitly requested continuation, affiliate implementation and
+account discovery/setup. Preserve intent and actual runtime state.
+Local source `7ad8fd995e4d524de383767ced77e1942068b221`, implementation `427c75a6a1448b5c920585082eb260c6b48b4bf7`,
+owned branch `agent/codex/editorial-renewal-20261003`. Article bodies unchanged:
+278 slugs/769 variants, 96 prepared/four observed/178 unreviewed, 100 receipts,
+96 held social/visual sets. Five latest texts retain independent Sonnet review;
+this new affiliate code has no independent provider verdict yet.
 
-Four substantial image, accurate product-photo, vector-logo and editable-deck
-guides correct stale frontier models, fabricated testing/ranks, licence and
-export claims using current primary documentation. Authored cover/SKU/identity/
-five-slide artifacts are explicitly illustrative. Existing photo/editor/designer/
-presentation-template alternatives and specific recovery remain. No generated
-image/deck, observed benchmark, rights clearance or user-success claim.
+GitHub affiliate-agent-skills/agenticincome/router catalogue checks recovered
+prior network-first plans and public-term reviews, not account approval. User
+completed PartnerStack login. Signed-in home showed one active programme,
+Eleven Labs Inc.; its exact issued URL matches the existing direct URL.
+Normal browser navigation reached the product page. Fresh account check records
+are now in the local catalogue; no conversion or payout is claimed.
 
-Catalog 35: three public Photoroom/Looka/Plus AI candidates added; all prior 32
-rows preserved, no new issued URL/account verification/enrollment/sponsored link.
-Four MDX compiles, four internal source links, nine corpus tests and candidate
-gate pass. Current production `f9811d47` comparison preserves its Canva closure,
-stable original dates/URLs/assets and improved scientific corrections.
+37 programme/candidate rows, 19 configured URLs preserved: 18 go aliases and
+one direct ElevenLabs URL. GET:14 programme pages/four hub fallbacks/one vendor
+attribution redirect. One account-qualified runtime relationship. Added explicit
+ordinary product fallbacks, canonical IDs, signed/query-safe sponsored marking,
+HeyGen editorial exclusion and safe JSON evidence normalization. Separated n8n
+Cloud, v0 ambassador and Railway template terms. Notion closure rechecked and
+Perplexity Comet closure corrected. CSV37/copy export37 and source hashes match.
+34 boundary tests pass, including16 affiliate tests; intake13 Python/six Node
+pass. Secret hooks scan both commits with no leaks; all23 foreign edits preserved.
 
-Two NVIDIA requests return valid minimal PASS JSON with None/empty usefulness;
-Qwen substantive request times out. Original receipts retained; no substantial
-independent source/editorial/design/security/commercial acceptance inferred.
-Earlier review and Higher Self founder gaps remain. 91 social/serif briefs held.
-Actual design tokens still have uppercase styling; capture/refinement required.
+Gamma/n8n forms prepared in Chrome; explicit binding-consent questions pending,
+neither submission confirmed. Chrome later disconnected and inventory is empty;
+form survival is unverified. Saved browser prompt and exact application details.
+Gamma prohibits masked URLs; prefer direct issued links and disclose placements.
+Cookie conflicts and accepted account offers stay unverified. HeyGen excludes
+SEO/blog-only promotion; new Canva/Notion applications are closed.
 
-Initial BOUNDED admission: 8923/8192/4827 MB, CPU 40%, 12/12 runtimes, new agents
-paused. Disk below 15%, supported apps/browsers empty, Next/TypeScript absent.
-Text/read/small checks only. No source push/deploy, install/build/new worktree/
-agent/media/foreign cleanup or persistent worker/tab. Enabled source secret
-scans 55.46/87.82 KB pass. Full responsive capture, independent acceptance,
-surgical production integration and exact green website main remain required.
-23 foreign source edits preserved. Hub CI proves this handover only.
+Source push and production integration held: merge gate fails at missing tsc.
+PP printed ALLOW despite2568/4608 MB numeric budget; enforced the floor and did
+not launch Sonnet. Later free RAM1237816 KiB, storage below15%. No install, build,
+new agent/worktree/media or foreign process/lock changes. Linktree is placement
+planning only; render/focus/touch/reduced-motion/interruption review remains open.
+Production main observed0ff16a8d; these changes are local and not deployed.
+Hub documentation CI cannot establish website release or affiliate earnings.
+
+Continue account capture/consent, admitted independent review and dependency
+recovery, accepted article/visual/SEO/linktree refinement, then owned production
+integration through predeploy/security/normal CI and exact deployed verification.
+Keep the queued multi-site plan after full website renewal; no background worker.
 
 ## 2026-10-03: GenCreator identity authority and asset review (Codex)
 
