@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: MAI launch scores left off, merge gate still held (Grok)
+
+Local head `2d9ad08c5aa3dca10d990590ea3c5266775a381d`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `microsoft-mai-frontier-models-2026` now follows the June 2, 2026 announcement and the August 12, 2026 Thinking-1 post. Copied benchmark percentages and the missing hero stayed off. Claude returned REVISE on `6e48369e`, then PASS on `2d9ad08c`. Editorial boundary tests: 67 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: micrograd lecture timestamps corrected, merge gate still held (Grok)
 
 Local head `4fbf03b27e5e53ee6e87c82d5ca3cabc862d4c35`. Disk 12.95 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `karpathys-ai-vision-deep-dive` now follows the August 16, 2022 chapter list and the micrograd README. The unsourced quote and the execution log are removed. Claude PASS on `4fbf03b2`. Editorial boundary tests: 66 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
