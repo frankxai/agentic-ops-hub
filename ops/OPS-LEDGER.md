@@ -2,7 +2,12 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (FrankX PR 878 merged `f9811d47`, issue 870 stays open for the voice file and the content corpus) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-06 (FrankX PR 907 squash-merged as `17a67494`; production was still `5117897ae` at merge time; issue 870 stays open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-06: music page was printing the inventory header (Grok)
+
+https://frankx.ai/music still said "817+ published tracks" on 2026-10-06. `data/inventories/frankx/music.json` has `_count` 817 and 240 track records. [PR 907](https://github.com/frankxai/frankx.ai-vercel-website/pull/907) squash-merged at 2026-10-06T02:03:01Z as `17a67494b7d79a32da0497b08c029a4b46e9ef5c`. It removes that public render from `/music`, the unused `MusicShell`, and the mislabeled `/music-os` cell. Local public-claims proof: 88 pass. Contract guard and surface guard passed locally. Required checks on head `8a8f762ce` were success. No viewport proof. At merge time production was still `5117897ae`. Vercel on `17a67494` was pending at 2026-10-06T02:03:05Z. The live pages had not changed yet.
+[Issue 870](https://github.com/frankxai/frankx.ai-vercel-website/issues/870) stays open. The voice file, the qualities essay title, the Aesthete "12k" line, `/magic`, and the content corpus still publish a song total. Draft [PR 879](https://github.com/frankxai/frankx.ai-vercel-website/pull/879) stays a draft. C: free space was 12.81% (bounded). No new worktree.
 
 ## 2026-10-04: email and hub song counts merged (Grok)
 

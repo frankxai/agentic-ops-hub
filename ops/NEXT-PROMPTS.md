@@ -17,44 +17,70 @@
 
 ## Current
 
-### Change the voice rule, then the content corpus
+### Finish the music truth pass, then build a surface someone uses, and merge it
 
-Frank does not open the Jules UI. Read
-[ops/sessions/2026-10-04.md](sessions/2026-10-04.md).
+You are the chair. Frank does not open the Jules UI and does not click Approve. If a diff is not merge-ready, you fix it, drive the checks, and squash-merge when the latest required status on that head is success and the pull request is not HOLD. A plan, a scaffold, or a status note is an unfinished slice.
 
-Already merged, do not redo the pages: [PR 871](https://github.com/frankxai/frankx.ai-vercel-website/pull/871)
-as `044c84472`, [PR 873](https://github.com/frankxai/frankx.ai-vercel-website/pull/873)
-as `f255c9f9`, [PR 874](https://github.com/frankxai/frankx.ai-vercel-website/pull/874)
-as `51f259c677165eca12a5b67d80166b373e942697`, [PR 876](https://github.com/frankxai/frankx.ai-vercel-website/pull/876)
-as `2e6e8e735ea551ccefb7c6b1df2e034b9b86de1e`, and [PR 875](https://github.com/frankxai/frankx.ai-vercel-website/pull/875)
-as `05a2ffcf0c840605141f96c3c58dd8254529d504`. After 875, `app/` and
-`components/` on main have no `12,000+` and no `12K+`.
+Proactive intelligence is the job. In the same session you suggest the next build, implement it, open a ready pull request, answer the findings, and merge it when it is green and not HOLD. Do all three. A reply that only names the build is incomplete. If you can see the next file and the checkout is free, change that file before you stop. Ask Frank only when the next step spends money, changes DNS, edits canon, or overrides a HOLD. Do not take another session's chair. Finish this slice in the checkout you just verified.
 
-[PR 877](https://github.com/frankxai/frankx.ai-vercel-website/pull/877) merged
-as `b56723c8660b7f90a98a0a9c6ba56024f668c3ae`. It locks the homepage route card
-in the claim test. Do not redo that one-line test.
+Quality engineering. Spend the session in the implementation. Before you write, name the live product this must beat and the dimension, then open that product. For a page, open the live URL and one current excellent reference that does the same job. For the browser, open Kura and the Chrome extension a creator already uses for that same job, and name the extension from the page you opened. Ship that job, including the path that fails and a test that fails first. A new manifest, a settings screen, a checklist, a prompt wrapper, or a thinner copy of an existing extension is a failed day. The change has to be on a surface a person uses, with the failure path tested and the recovery behavior real. A passing claim test does not finish a product. Record the exact revision and the gap that is still open. Use the highest reasoning you have. A second provider reviews a consequential diff as a buyer who already declined to pay. Fix what that review finds before Frank sees it.
 
-[PR 878](https://github.com/frankxai/frankx.ai-vercel-website/pull/878) merged
-as `f9811d47029ccf95b77455801d26c2de081f765f`. Do not redo the email templates,
-hub stats, workshop credentials, personas, Golden Age stat, or about variant.
+Read [ops/sessions/2026-10-06.md](sessions/2026-10-06.md) and re-check `origin/main` before you trust this note.
 
-Issue 870 stays open. The next change is `lib/voice/frankx-voice.ts` on its
-own: that file tells writers to use "12,000+ AI songs", so the corpus will
-grow the claim back until the instruction changes. Then a careful content pass.
-`lib/qualities.ts` titles the live essay "12,000 Songs: Production Lessons".
-Change that title with the essay, not as a stray label. Do not delete "Walked 12,000 steps",
-tool-output line counts, token unlock schedules, or YouTube revenue dollars.
-Do not write Catalog, Extensive, Vast, or Global in place of the song count.
-Leave the lab line "65 tracks indexed" until it is verified.
+Load these, then say which ones you used:
 
-Do not send Jules to FrankX issue 870. Do not apply the issue 279 diff. Leave
-arcanea-ai-app PR 509, hub PR 112, and realityarchitect PR 47 as drafts. Leave
-FrankX 724 and 725, Dependabot majors, and Arcanea 436. `jules-ops.mjs` token
-refresh returned `invalid_client`. The Jules CLI list still works. Do not run
-`jules login`. Do not print credentials. Do not write the occupied primary
-checkouts. Do not ask Frank to click Jules. Keep the other current prompts.
-Issue 824 stays open. Issue 842 is closed. The research pages did not gain
-citations. The shared blog heroes were not replaced.
+- `C:/Users/frank/.grok/installed-plugins/c--users-frank--grok-marketplace-cache-1eeb07e49f1c67aa-plugins-creator-os-core-4499cb0f/skills/start-safely/SKILL.md` before the first edit. Confirm git root, origin, branch, and that nobody else owns the files.
+- `C:/Users/frank/.grok/installed-plugins/c--users-frank--grok-marketplace-cache-1eeb07e49f1c67aa-plugins-creator-os-core-4499cb0f/skills/run-the-checks/SKILL.md` on the files you changed.
+- `C:/Users/frank/.grok/installed-plugins/c--users-frank--grok-marketplace-cache-1eeb07e49f1c67aa-plugins-creator-os-core-4499cb0f/skills/handoff-clean/SKILL.md` at the end.
+- `C:/Users/frank/.grok/skills/gitops-dispatcher/SKILL.md`
+- `C:/Users/frank/.grok/skills/jules-ops/SKILL.md`
+- `C:/Users/frank/.grok/skills/humanizer/SKILL.md` for anything Frank or a buyer reads. blader/humanizer 3.1.0. No em dash or en dash in new prose.
+- `C:/Users/frank/.grok/skills/design-capability-routing/SKILL.md` and workflow `C:/Users/frank/.grok/workflows/design-handoff.rhai` when the change is a page, component, or motion.
+- `C:/Users/frank/.grok/workflows/excellence-loop.rhai` before a consequential ship.
+- `C:/Users/frank/.grok/skills/estate-product-build/SKILL.md` when the work crosses brands.
+- `C:/Users/frank/.starlight/policies/product-outcome-quality.md`
+- `C:/Users/frank/.starlight/workspace-bootstrap/WORKFLOW.md`
+- `C:/Users/frank/.starlight/policies/machine-performance-contract.md`. Run `pp preflight` before a build, browser QA, a new install, or unattended work. Honor allow, bounded, or hold.
+- The target repo `AGENTS.md`, plus `CLAUDE.md` when that file is present. On FrankX also read `.grok/skills/excellence-review/SKILL.md` and `.grok/skills/repo-mastery/SKILL.md`. For a visual FrankX or GenCreator surface, follow `C:/Users/frank/starlight/repos/gencreator.ai/.claude/skills/web-release-gate/SKILL.md` and prove 375, 768, and 1440 on a preview a person can open. Viewport proof was not captured for the song-count pulls. Say so until you have it.
+- Kura: origin `https://github.com/frankxai/kura`. On 2026-10-06 the checkout `C:/Users/frank/starlight/repos/kura` was on `agent/claude/kura-godmode`. Do not write it. `package.json` describes a local-first Chrome extension (WXT) that captures AI conversations into an Obsidian-compatible vault, with `pnpm test:extension`. The `AGENTS.md` on that branch described arcanea-vault. Read `AGENTS.md` only after you confirm it matches `frankxai/kura` `origin/main`. Frank's FrankX Comet profile already runs OneTab, SideTab Pro, Save to Notion, and the Claude browser extension. Kura's job is local capture into a vault. Beat the extension that already does that job. Name it from the page you opened. Do not add another tab manager. Do not `pnpm install` while disk is on the bounded floor.
+- Seats: `C:/Users/frank/starlight/ops/model-arena/kb/dispatch-routing.md`. v0 designs. Codex builds. Claude checks. Grok chairs and merges. The maker and the checker are different providers. Jules is tests and docs on a public repo. Jules is never the maker on craft and never gets issue 870, issue 279, or Reality Architect 35. Higgsfield MCP and Higgsfield skills are banned.
+
+Run `python C:/Users/frank/.starlight/workspace-bootstrap/route_work.py check` with the worktree, origin, branch, and explicit files. A guard from `C:/Users/frank` refuses. Do not write an occupied primary. On 2026-10-06 the FrankX primary was `agent/codex/free-book-direct-download-20260927` and the hub primary was `agent/hermes/fleet-task-contract-v1`. Re-check both. Reuse `C:/Users/frank/starlight/worktrees/frankx-issue-870-bio` only when it is clean and on your branch. C: was 130,852,630,528 bytes free of 1,021,821,579,264 (12.81%) on 2026-10-06, inside the 8% to 15% bounded floor. Re-measure. No new worktree, `node_modules`, or unattended build while that floor holds. Receipt: `C:/Users/frank/starlight/queen/reports/2026-10-06-grok-disk-floor.txt`.
+
+Each slice:
+
+1. Name the product this must beat, the user job, and the file you will change.
+2. Build it. A popup shell, a README, or a number swapped for a softer word does not finish the slice.
+3. Open the pull request ready, so CI runs. Drafts skip required FrankX checks. Push `HEAD:agent/<harness>/<scope>`. Never push `main`.
+4. Answer every review finding in the thread, then resolve it. A P0 or P1 needs a commit on this pull request made after the finding, or a reply that starts `Declined: ` and gives at least 31 characters of reason. A frankxai review does not count. Jules cannot approve.
+5. If the branch is behind, merge `origin/main`. Do not force-push. A cancelled Review Gate check-run can leave `mergeStateStatus` UNSTABLE while the commit status "Review Gate" is success. Read the latest status per required name. `BEHIND` is not green.
+6. When those statuses are success and the pull request is not HOLD, `gh pr merge N --squash --admin`. Fetch the production URL and say what a person now sees. If you did not capture 375, 768, and 1440, say so.
+7. Comment the product issue. Leave it open while the rest of the job is still live. Append `ops/sessions/YYYY-MM-DD.md`, refresh `ops/OPS-LEDGER.md`, replace this prompt, commit on `agent/grok/jules-e2e-20261003` in `C:/Users/frank/starlight/worktrees/agentic-ops-hub-jules-e2e-20261003`, and push `HEAD:agent/grok/jules-e2e-20261003`. Leave hub PR 112 a draft.
+
+First job is already merged. [PR 907](https://github.com/frankxai/frankx.ai-vercel-website/pull/907) squash-merged at 2026-10-06T02:03:01Z as `17a67494b7d79a32da0497b08c029a4b46e9ef5c`. Head was `8a8f762ce37c73689920fab19d83600d6f801f31`. It stops `/music`, the unused `MusicShell`, and `/music-os` from rendering the inventory header. `_count` is still 817. `tracks.length` is still 240. No new song total was published. At merge time the production deployment was still `5117897ae`, https://frankx.ai/music still contained "817" and "published tracks", and https://frankx.ai/music-os still contained "817" and "indexed tracks". Vercel on `17a67494` was pending at 2026-10-06T02:03:05Z. Wait until that production deployment finishes, then fetch both URLs and say whether those sentences are gone. No viewport proof at 375, 768, or 1440. Do not merge 907 again. Then start the voice job below.
+
+Do not redo merged pulls 868, 869, 871 (`044c84472`), 873 (`f255c9f9`), 874 (`51f259c67`), 875 (`05a2ffcf`), 876 (`2e6e8e73`), 877 (`b56723c8`), 878 (`f9811d47`), 907 (`17a67494`). Main before 907 was `5117897ae`.
+
+Second job, its own ready pull request. Change `lib/voice/frankx-voice.ts` so it stops telling writers to print "12,000+ AI songs". Draft [PR 879](https://github.com/frankxai/frankx.ai-vercel-website/pull/879) has usable sentences for those three lines and must stay a draft. It also edits `data/products.json`, which draft PR 803 owns, and its test bans the word "plays" and bare `500+` across whole files. Copy only the voice sentences onto a fresh branch from current main. Leave "500+ combined plays" alone unless you can open a source for it. Do not write Catalog, Extensive, Vast, or Global in place of a count.
+
+Third job, its own ready pull request. Make the music inventory fail when `_count` disagrees with `tracks.length`. Derive the header from the array, or stop every public and admin reader from rendering the header. `app/admin/music` still says "Total on Suno" from `_count`. Write the test first, watch it fail, then make it pass. Do not publish a new song total.
+
+Then issue 870, one directory per pull request. Re-fetch before you edit. On 2026-10-06 these were still on main: `app/magic/page.tsx` and `components/magic/MagicShell.tsx` ("over 12,000 songs with Suno"); the Aesthete line "the 12k music catalog" in `lib/visual-intelligence/platform-personas.ts` and `lib/intake/personas.ts`; `lib/qualities.ts` title "12,000 Songs: Production Lessons", which changes only in the same pull request as the essay. Under `content/blog`, `content/books`, `content/guides`, `content/social`, and `content/lead-magnets`, read each hit. Keep "Walked 12,000 steps", tool-output line counts, token unlock schedules, and YouTube dollar amounts. Delete an unsupported song total and lock the phrase in `scripts/tests/public-claims.test.mjs`.
+
+Leave issue 870 open until the voice file, the inventory invariant, and the publishing corpus are clean. Leave 824 and 797 open. Do not apply the rejected issue 279 schema. Do not reopen PR 867. Issue 842 is closed by the shared-hero baseline. Do not generate heroes. Do not add research citations.
+
+HOLD, do not merge: SI.ai 5, 8, 9, 11, 12. FrankX 724 and 725. Dependabot majors. The default branch reported 23 vulnerabilities on 2026-10-06 (7 high, 9 moderate, 7 low). Arcanea 436, Arcanea 434, GenCreator 47 and 93, SIS 175 and 190. Reality Architect PR 47 stays a draft because issue 35 says draft only. Hub PR 112 stays a draft. Arcanea PR 509 stays a draft. Do not sweep FrankX drafts 855, 853, 847, 844, 831, 829, 823, 822, 816, 815, 810, 803, 802, 801, 862, 879, 899.
+
+Jules: `jules remote list --session` before any `jules remote new`. Cap 4 counts Planning and In Progress. One Awaiting User Feedback session blocks a new task. On 2026-10-04 `jules-ops.mjs` token refresh returned HTTP 401 `invalid_client`. Re-check. Do not run `jules login`. Do not print the client secret. Do not message checker `10254169434191635759`. Build task text with `jules-brief.mjs`. Exit 2 means do not create the task. Jules does not get issue 870, issue 279, or Reality Architect 35. When a slot is free, fill it with a different tests or docs issue on a public repo, pull the diff, open the pull request, and merge it when it is green.
+
+After that truth pass, build a surface a person uses and merge it in the same session. The song deletions are the truth pass. They do not elevate the music product. Pick one of these and start it the hour the truth pass is on main:
+
+1. Kura, one job deep. Read the open issues on `frankxai/kura`. Use a free worktree from current `origin/main`. Open the extension you are beating. Implement one capture job a creator already fails at, with the failing test first (`pnpm test:extension` once disk and `pp preflight` allow an install). Open the pull request ready and merge it when the checks are green. If the checkout is still `agent/claude/kura-godmode`, leave it and use another worktree only after the disk floor allows one.
+2. frankx.ai music room, workflow lab, or the editorial renewal that already has an owner. Read `product-outcome-quality.md`, FrankX `AGENTS.md`, and design-capability-routing before a visual change. Preserve the brand. Prove 375, 768, and 1440. Merge when the checks are green.
+
+If another harness owns the files, take a different file in the same product. Do not start another brand, another orchestrator, or a planning document. When you stop, the hub prompt you leave behind names the pull request you opened and the next file you would change.
+
+Keep the other current prompts in this file.
 
 ### FrankX: review and release the first editorial renewal slice
 
