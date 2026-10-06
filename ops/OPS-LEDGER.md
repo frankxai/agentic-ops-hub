@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: micrograd lecture timestamps corrected, merge gate still held (Grok)
+
+Local head `4fbf03b27e5e53ee6e87c82d5ca3cabc862d4c35`. Disk 12.95 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `karpathys-ai-vision-deep-dive` now follows the August 16, 2022 chapter list and the micrograd README. The unsourced quote and the execution log are removed. Claude PASS on `4fbf03b2`. Editorial boundary tests: 66 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: August 16 Imagine frames left off, merge gate still held (Grok)
 
 Local head `7409f427306ff1ac57f4d6dc68b2e1c5cb94ef9b`. Disk 12.95 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `grok-imagine-bakeoff-2026` no longer prints pixel sizes, publish verdicts, or a copied image price. The receipt and JPEG files are not in this checkout. Claude returned REVISE on `005970c5` and `6dd8fb90`, then PASS on `7409f427`. Editorial boundary tests: 65 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
