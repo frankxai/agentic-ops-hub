@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-estate-views-journeys",
+  "class": "BUILD",
+  "priority": 4,
+  "agent": "claude",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\starlight-command-center",
+  "what": "Journeys view: per-brand funnel with live, blocked and unmeasured stages",
+  "why": "Frank wants to see who arrives, where they stop and what to measure first. Real facts exist but are scattered across TRUTH.md, OBJECTIVES.md, products.graph.json, DEMAND-CAPTURE-OFFERS.md, the 2026-08 keyword pull and the starlight-social manifest.",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. Judgment first (stage model, evidence states) on claude with Fable allowance, then bulk build on codex-cloud; packet = issue 60. Stage entity in the graph contract from issue 39 (find, read, capture, pay; live, degraded, blocked, unmeasured), a read-only demand-door probe recording HTTP status with date and never submitting a form, route /journeys with an evidence drawer and the dated keyword table. Absent data renders unmeasured, never zero. Done when: every stage cites a source and observation time, the probe reproduces the known 404 and 401 doors or shows them fixed, no stage is green without evidence, issue 60 has the evidence. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state. exec-cmo checks demand claims.",
+  "evidence": "https://github.com/frankxai/starlight-command-center/issues/60",
+  "owner": "exec-cmo + corps-design",
+  "maxMinutes": 90
+}
