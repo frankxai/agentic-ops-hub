@@ -11,9 +11,9 @@
 > | T4 | `Starlight-Intelligence-System` | _set_ |
 > | T5 | `agentic-ops-hub` | _set_ |
 
-**[F0 · starlightintelligence.ai]** — build the shared demand capture, then wire waitlists
+**[F0 · starlightintelligence.ai]** — land the platform PR, then rebase and finish the waitlist
 ```
-Read starlightintelligence.ai PR #89 (docs/strategy) and starlight-estate main (DEMAND-CAPTURE-STANDARD.md, packages/demand-capture, graph/products.graph.json). Frank has ruled on the consulting question: <fill in>. Build slice 2: one shared demand-capture endpoint on Supabase EU with the price-band / who / goal questions, a per-product waitlist on /start and each marketplace card, honest counts only. Draft PR, Grok review on the exact head, no checkout.
+Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2cc7fe0 (no P0/P1) and waits on Frank's read of its privacy and terms copy; #90 is superseded by #91. Waitlist #94 follows the estate standard (KV + Resend, zero deps; #89 proposed Supabase EU, the standard wins) and conflicts with #91 in package.json, app/privacy/page.tsx, app/platform/page.tsx, app/platform/studio.tsx and studio.module.css. Frank has NOT ruled on the consulting question; do not change the nav. After Frank merges #91: rebase #94 onto main keeping #91's policy text and test script; fix Grok's buyer notes (/joint-infrastructure/start still reads as a sale; "Free now" on research cards points at an unsigned package; step 2 copy must say the first answers are the ones kept); have ci run scripts/tests/demand-capture.test.mjs through an existing script, not a workflow edit. Draft PR, fresh Grok review on the exact head, no checkout, Frank owns the merge.
 ```
 
 ---
