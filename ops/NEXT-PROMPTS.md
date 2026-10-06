@@ -17,57 +17,103 @@
 
 ## Current
 
-### Queen: ship SIS session continuity from merged source
+### Estate guard: waves 3–4, the medium PRs, two repo settings
 
-Continue Frank's session-continuity outcome from original task `01a102ed-873c-7b92-b37b-4f299c63813b`. Source [Ops PR161](https://github.com/frankxai/agentic-ops/pull/161) is merged at `551e2f0435322c8d9c7c2745acce1c68d1eb2848`, with reviewed head `a1ac1e3c5661177122f307c75cdfbe37557bec5b`, Windows/Linux73 behavior +6 actual SIS conformance passes and independent source PASS. Main CI37215248609 is verified. Treat this as MERGED_NOT_LIVE and preserve prior findings and the original blocked native goal; source delivery did not finish the wider campaign.
+The pack is on `main` in twenty repos (see the 2026-10-05 session, night entry). From a clean checkout of the estate, run `scripts/estate-guard-rollout.sh ~/repos` for the repos in `ops/evidence/estate-guard/repos.txt` that are not yet installed (`--no-hooks` for the `awesome-*` and `*-skills` repos); one draft PR per repo, mark ready, let CI run, merge. Then the medium PRs in this order: `arcanea` hooks off `@latest` (10 lines in `.claude/settings.json`; record the pinned version), SHA-pin the 61 tag-pinned actions, CSP on the six sites without one. Two settings only Frank can change: add `CLAUDE_CODE_OAUTH_TOKEN` to arcanea or delete `claude-code-review.yml`; add the `surface-approved` label to [gencreator.ai #138](https://github.com/frankxai/gencreator.ai/pull/138) so Surface Guard works on that private repo too. One decision: ai-music-academy's audit (`next` 16.3.6 now; Tailwind 4 or an audit exception for `braces`). Read `docs/ESTATE-GUARD.md` for the five standing decisions. Watch the first fire of `estate-guard-sweep-weekly` on 2026-10-12 06:11 Amsterdam; it must produce a draft PR into `ops/evidence/estate-guard/2026-10-12/` or say RED.
 
-Deliver session continuity within the existing SIS/Second Brain offering in the user's sovereign runtime/BYOK: recover the real task and dirty checkout, show current owner/admission and accepted delivery proof, and survive interruption without duplicate execution or private-data leakage. Reuse SIS's existing Work Graph, goal/session store, MemoryGateway and MCP. Ops supplies collector observations and explicit bindings. The export emits only intent, and checksums/operator labels are not source authentication. Reconcile the native goal store and registry identities before trusted ingestion. Observation replay is not a new task, and paused work requires explicit reconciliation before execution.
+### Observatory: integrate measured session oversight and isolate hook106
 
-Read the applicable contracts, run fresh PP/storage admission and route_work guard/check, and acquire an available lane before writing. Peak-performance reserve-floor has another owner's34 dirty paths and draftPR4; preserve and reconcile them rather than replacing them. Repair/integrate its canonical caller through its owner, decide full-ID cursor/fingerprint migration and preserve existing history. SIS checkouts also have foreign owners: select/reconcile an owned lane, keep protocol/attestation Board requirements, and retain the separate Foundry#268 patch and its pending Board/provider review. Do not duplicate recallPR269.
+Continue original task `01a102ed-873c-7b92-b37b-4f299c63813b`. [Observatory PR10](https://github.com/frankxai/starlight-observatory/pull/10) is merged at3c575180b425d06a73fec75a577be95b150d3f5d, exact reviewed source fb2aec86e786a0783aed04f270e4d485feac5c7c; [issue9](https://github.com/frankxai/starlight-observatory/issues/9) remains open.55 local tests, all six OS/Node and package CI37234550446 pass. Independent source PASS5984368523 follows repaired WARN5984251355, with its limits preserved. The real embedded page executes in final template-token and unavailable goal/relationship regressions. Earlier Chrome desktop/phone/reduced-motion/focus/failure/retry captures belong to d401317. Final browser rerun held on PP RAM4176MiB versus8192 required; no visual/production approval is inferred. Updated private HTML is saved; the owned server and browser worker are stopped. After admission, `node bin/observatory.js sessions --serve --ttl-minutes 30` prints a fresh loopback capability URL; `sessions --out <private-dir>` saves HTML. Reuse this view and accepted Canvas UI; retain private capture provenance. The next visual check must run at the exact final/deployed revision with an admitted local browser or isolated cloud fixture runner; never upload private session metadata.
 
-Implement one supported continuity import and web/MCP consumer against actual SIS contracts. Canvas main5bc91b8 contains apps/web and packages/core,mcp; first reconcile the separate local cockpit lane and use the accepted product. Provide visible source, unknown/partial states, ownership, admission and proof, plus recoverable export/import errors. Apply Emil guidance only where interface changes occur and verify focus, touch, reduced motion and interrupted transitions. No duplicate control plane, automatic resumption of paused work, customer compute subsidy, invented price or new product brand.
+First identify the exact hook/event/command causing exit106 and reproduce through the native host. Direct installed Impeccable Stop commands exit0; native adapter20 Node+8 Python tests pass. No106 repair is established. Keep security checks/trust/configuration and other writers intact; unrelated legacy-notify206 is not106. Isolate a real failure, repair its source-owned adapter, test allow/deny/failure recovery and install only reviewed exact bytes with rollback. Never silence a hook to get a green result.
 
-Consider the named interfaces deliberately: ACP for structured editor/agent sessions; AG-UI for events/state to the existing web surface; MCP SDK for typed tools/resources; A2A at the existing federation boundary. Compare Paperclip's goals/budgets/approvals/audit flows and LangGraph's persistence/interrupt semantics with accepted SIS implementations. Vibe Kanban is sunsetting and remains a historical design reference. Pin versions, retrieve current official docs and prove compatibility before adopting any dependency.
+Coordinate with the existing owner of SIS273 (`agent/claude/continuity-import`), Canvas31 (`agent/claude/continuity-consumer`) and [Ops163](https://github.com/frankxai/agentic-ops/pull/163) (`agent/claude/continuity-caller-migration`); latest owner heads6366dc1/64373bf/7d638cd remain open, with handover hub155. Verify exact source/build/install revisions, source/cursor migration, actual two-harness pause/restart/duplicate/privacy/dirty-work recovery and proof gates. SIS owns canonical work/goal/admission, Observatory supplies observations, Canvas supplies the customer interface. Preserve PP's foreign handover work and the blocked campaign state; no automatic resume or completion from a title or timestamp.
 
-Own repos: Starlight-Intelligence-System (portable model/ingestion), agentic-ops (private collection/export), peak-performance (admission/canonical caller), starlight-agent-canvas (web/MCP consumer), starlight-memory (scoped recall projection), second-brain-os (non-coder install/two-vault recovery), starlight-evals (cross-harness proof), starlight-agent-config (client profiles/hooks), agentic-creator-os (creator consumer), agentic-ops-hub (handover).
+Engineer the next useful gap through existing Ops#93 usage capture/#91 fleet/#85 cost baseline/#104 graph and SIS#48: per-request native usage events with model/account/cache provenance and exact goal assignment; explicit multiple/unknown assignments; cycle-safe bounded parent/child traversal; authenticated machine collectors and fresh/stale/offline states; server supervision, bounded incremental scans, single ownership, leases, polling backoff, stop/restore and resource/cost budgets. Keep subscription allocation, priced estimates and invoices separately sourced. Session lifetime counters cannot become goal charges. Under bounded storage, do not install an unattended scanner. Reuse PP/storage admission before work and keep one admitted local workload.
 
-Done when a clean install and two-harness interruption/restart test prove original intent, exact checkout/owner, preserved dirty edits/history, privacy isolation, no duplicate side effects, correct pause/block behavior and proof-gated completion. Obtain independent review at exact revisions, preserve secret checks and demonstrate the canonical caller plus visible supported consumer. Complete the reviewed release/install/rollback path and verify the actual installed revision before calling it LIVE_VERIFIED. Update existing Ops#139/#134, SIS#48/federation#144 and hub session/ledger/prompt; preserve unrelated work and stop only session-owned processes. Report remaining concrete external gates if they prevent production.
+Choose integration after comparing a real task against Paperclip goal/task/budget patterns (github.com/paperclipai/paperclip) and Langfuse usage/traces (github.com/langfuse/langfuse). Evaluate AG-UI (github.com/ag-ui-protocol/ag-ui), ACP (github.com/agentclientprotocol/agent-client-protocol), A2A (github.com/a2aproject/A2A), MCP TypeScript SDK (github.com/modelcontextprotocol/typescript-sdk) and LangGraph (github.com/langchain-ai/langgraph) only at an actual interface gap. Estate repos: frankxai/Starlight-Intelligence-System, starlight-agent-canvas, starlight-observatory, agentic-ops, peak-performance, starlight-agent-config, starlight-memory, second-brain-os, agentic-ops-hub. Interfaces: Canvas Next `/continuity` + read API/MCP; SIS CLI/MCP; Observatory private HTML/loopback; owned cockpit branch; supported machine bridge. A hosted Vercel page needs an authenticated broker for local data. Verify the exact deployed revision and private-data boundary before claiming production.
+
+Read current contracts, acquire a free lane, run route_work guard/check, apply Emil guidance to actual UI changes and verify focus/touch/reduced motion/interruption. Return a concise PASS/HOLD receipt with clickable private view, source/build/install revisions, tests/review, rollback, remaining gaps, measured cost scope and refresh/collector coverage. Save the three hub records and the existing product issues. The user outcome is dependable recovery and oversight of valuable work; a green scaffold or aggregate counter does not close it.
+
+### Starlight sites: the loop is closed; the rest needs decisions or other lanes
+
+Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. Both sites have an automatic production canary (`.github/workflows/production-design-canary.yml`): Protocol fails on overflow, forced and typed capitals, touch, contrast and focus (0 findings on 65 sitemap URLs); Lab fails on overflow only. Read an open "Production design canary is failing" issue first; it names the route, width and check.
+
+1. Ask Frank two Lab questions before touching code: should forced uppercase fail the Lab canary (12 findings today, the Lab's brand style), and should the Lab get a theme-level contrast lift like [SIS 289](https://github.com/frankxai/Starlight-Intelligence-System/pull/289) (22 pages at 4.2 to 4.3:1)?
+2. Extend the loop to other sites only with a per-site design contract (brand, icon library, which checks fail) in that repo's `AGENTS.md`: gencreator.ai, arcanea, FrankX. Reuse `.github/scripts/probe-production.mjs`; pin the Actions SHAs; merge through `pr-gate`.
+3. Add what the canary cannot see: visual quality, real-device touch, native zoom, interrupted transitions, text over photography. One Impeccable finish pass after a look at 375/768/1440 with reduced motion.
+4. Do not mint Vercel bypass links; confirm whether the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
+
+### Queen: install and live-verify merged SIS session continuity
+
+Continue from the 2026-10-05 entry in [sessions](sessions/2026-10-05.md). Session continuity is MERGED_NOT_LIVE:
+
+- [SIS #273](https://github.com/frankxai/Starlight-Intelligence-System/pull/273) `ea1d0a5`: trusted import, status, owner reconciliation, MCP tools.
+- [Ops #163](https://github.com/frankxai/agentic-ops/pull/163) `be49a10`: canonical PP caller, cursor baseline and lock, Codex native goals, proof driver.
+- [Canvas #31](https://github.com/frankxai/starlight-agent-canvas/pull/31) `d569167`: `/continuity` page, API and MCP tool.
+
+Each was reviewed by Grok to PASS on its exact head and merged through `pr-gate`. The post-merge proof passed 20 of 20 checks with `complete=true`, including real interrupted Claude and Codex sessions. Repairs and follow-ups: [SIS #286](https://github.com/frankxai/Starlight-Intelligence-System/pull/286) (Foundry lock regression fixed), [Ops #177](https://github.com/frankxai/agentic-ops/pull/177) merged, and [SIS #285](https://github.com/frankxai/Starlight-Intelligence-System/pull/285) merged at `776b453`. In SIS, let `harness` run on a ready PR before merging.
+
+1. Run fresh `node lifecycle/pp-admission.js build --grows-disk` from agentic-ops `main`, and reconcile owners. Preserve Codex's PP reserve-floor lane (PR4, 34 dirty paths), Hermes's Canvas PR18, the Claude cockpit worktree, Foundry #268 and PR269.
+2. The clean install waits for PP storage evidence. Once a reviewed PR4 build is installed through its owner and `build --grows-disk` admits:
+   - SIS `npm ci` and build from `main`, then confirm `node dist/continuity-cli.js status`. There is no bin entry, because `package.json` is pinned by the Foundry `RULES_LOCK`; never edit it for this.
+   - Canvas frozen install, with `STARLIGHT_CONTINUITY_CLI` set.
+3. Install `~/.starlight/continuity/trust-policy.json` with real work IDs and owners from the task records. Never invent them.
+4. Export real bound sessions with `--codex-goals`, import them, and check the Canvas `/continuity` page and the MCP status against the real store.
+5. Rerun `lifecycle/continuity-proof.js --harness-runs` against the installed revisions. Then interrupt a genuine interactive `/goal` session in a second harness and recover it.
+6. Cursor baseline: pause the ledger task, run the dry run, then `--apply --confirm-ledger-paused`. Keep the backup and verify rollback.
+7. Verify the installed revisions and the rollback path. Only then report LIVE_VERIFIED with direct evidence. Update Ops #139/#134, SIS #48 and the hub.
+
+Do not resume or admit work automatically, and keep collector attestation as SIP Board work. No new brand, price or hosted compute.
 
 ### FrankX: continue the article register and release reviewed revisions
 
 Continue task `01a101fc-228c-7010-bba6-cf60bbad2357` and
-[FrankX #252](https://github.com/frankxai/FrankX/issues/252). Runtime goal remains
-paused after interruption; preserve intent and report actual state. Source
-`24e18e19f9791de3e65572019a792fa18c6a07ec` on owned branch `agent/codex/editorial-renewal-20261003`,
-worktree `frankx-editorial-renewal-20261003`. Read `RENEWAL-PLAN.md`, batch23,
-`RELEASE-READINESS-2026-10-04.md`, Sonnet evidence and article progress.
-278 slugs/769 variants: 96 prepared/four observed/178 unreviewed, 100 receipts,
-96 held social/visual sets. Preserve stronger production work, dates/URLs/assets,
-prior hashes, affiliate rows and all 23 foreign edits. Serve musicians, music
-producers, creators, founders, executives and AI architects.
+[FrankX #252](https://github.com/frankxai/FrankX/issues/252). User authorized
+continuation and merge after reviews; runtime goal still reports paused. Preserve
+all intent and actual state. Owned source `7ad8fd995e4d524de383767ced77e1942068b221` on
+`agent/codex/editorial-renewal-20261003`, worktree `frankx-editorial-renewal-20261003`.
+Read the renewal plan, progress, batch23/Sonnet, release readiness, and new
+`docs/ops/affiliate/LINKS-AND-SETUP-2026-10-04.md`, browser prompt and review receipt.
+96 prepared/four observed/178 unreviewed; preserve all100 receipts,96 held social
+sets, stronger production implementations, dates/assets and23 foreign edits.
 
-The five latest creator-guide texts have independent Sonnet 5.5 review with ten
-required corrections resolved. It is not rendered/product/account acceptance.
-CapCut licence is non-US; old receipt is superseded. Prior failed/limited reviews
-remain. Complete earlier findings and reviews of other prepared revisions.
-Keep referral URLs null until account verification; never invent endorsement.
+ElevenLabs is account-confirmed in the signed-in PartnerStack UI, with exact
+issued URL `https://try.elevenlabs.io/7x6qh6upgry8` and normal browser navigation.
+Catalogue37 and copy-links CSV37 preserve19 configured URLs; remaining18 aliases
+are14 programme-page and4 hub fallbacks, not payable referral evidence. One
+account-qualified local relationship. The shared resolver adds official fallbacks,
+canonical IDs, unchanged signed URLs, sponsored qualification and HeyGen channel
+exclusion.34 boundary tests pass; new code independent review remains pending.
 
-The local Chrome resourcesPath repair is verified and Chrome transport works.
-Confirm the side panel opens. Refresh pp/workload and actual storage admission;
-obtain admitted desktop/mobile capture and dependency recovery. Browser QA held
-at 6230/8192 MB and 14/8 runtimes, storage below 15%; Next/TypeScript missing and
-runtime links gate has no owned dev server. No foreign process/lock deletion.
-Observed live Canva exposes HERO_PROMPT and uppercase interface labels. Finish
-captured serif/sentence-case design, useful visuals, SEO, affiliate checks and
-remaining corpus; compare/refine against stronger existing public experiences.
-No Higgsfield; generated visuals need sidecars and both ledgers. Live posting
-and founder approval retain existing gates. Apply humanizer and accessibility.
+Reconnect Chrome and inspect prepared Gamma/n8n applications before refilling
+or applying again. User signed in; do not create a duplicate network account.
+Binding submission/brand-bidding acknowledgement require the pending specific
+consent. Neither submission confirmed; connection disappeared before durable
+n8n handoff marking. Frank handles credentials, OTP, tax/bank/payout information.
+Capture approved issued URLs into catalogue/copy export; never manufacture refs.
+Gamma forbids masked URLs; use direct issued links and disclose all domains.
+HeyGen excludes SEO/blog-only promotion; Canva/Notion reject new applicants and
+Comet ended. Review Descript/Opus/Synthesia next, then reader-fit candidates.
+RouteRegistry.v2 lives in the foreign router lane: coordinate ownership and
+preserve reviewed upstream corrections before any sync or route activation.
 
-Port only accepted files through an owned production lane in
-`frankxai/frankx.ai-vercel-website`; pass predeploy/security and normal CI, merge
-to main without bypasses and verify exact deployed revision, critical journeys
-and recovery. Observed existing 0ff16a8d production metadata READY does not establish this
-source release. Authoring/handover CI cannot close the website. Save hub/issue proof.
+Enforce actual machine numbers: PP ALLOW contradicted2568/4608 MB and later
+freeRAM1237816 KiB; storage below15%. No new agents, installs, worktrees or builds.
+Refresh admission before independent Sonnet review and required dependency recovery.
+merge:gate stops at missing TypeScript after passing boundary/intake checks; do
+not push source until it passes. Normal reading/editing/small checks can continue.
+Chrome resourcesPath files were repaired earlier; side-panel reopening remains
+unconfirmed and this later browser disconnect is separate evidence.
+
+Finish meaningful six-audience articles, serif/sentence-case design, useful
+visuals/infographics, SEO/disclosures and existing linktrees. Linktree work is
+planned, not implemented. Apply humanizer/Emil/accessibility and verify rendered
+focus/touch/reduced motion/interrupted transitions under admission. No Higgsfield;
+generated media needs sidecars and both ledgers. Keep founder/live-posting gates.
+Port accepted files through an owned production lane, run predeploy/security and
+normal CI, merge to main and verify exact live revision and recovery. Observed
+existing0ff16a8d is not this release. Save hub and issue proof; no persistent worker.
 
 Queued next: Deliver High-Quality Multi-Article, Multi-Site, Interconnected
 Experiences. Plan `docs/ops/editorial/MULTI-SITE-PARTNER-CONTENT-PLAN.md` is local.
