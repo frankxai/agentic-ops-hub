@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-estate-views-site-wall",
+  "class": "BUILD",
+  "priority": 4,
+  "agent": "codex",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\starlight-command-center",
+  "what": "Site wall: real Playwright screenshots with provenance and capture history in the Observatory",
+  "why": "Real renders of every live property, with dated history, so site edits and design-lab work are visible. A prototype proved the lens with a rate-limited third-party API; a real browser collector replaces it.",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. codex-cloud: codex cloud exec --env <ENV_ID> --branch agent/codex/site-wall --attempts 1, packet = issue 59. Collector scripts/collect-captures.mjs (Playwright, 1440x900 and 390x844, public URLs only, recorded failures, provenance sidecar plus ledger line per image, atomic manifest starlight.siteCaptures.v1), route /sites and /api/sites, history view, fixture-server tests for success, timeout, 404, login redirect and huge page. Cloud runs need the target domains on the cloud egress allowlist; add them explicitly, do not widen it. Done when: five real sites captured with provenance, a forced failure shows an honest state, a second run shows history, typecheck, node --test, a11y and build pass, and issue 59 has the evidence. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state.",
+  "evidence": "https://github.com/frankxai/starlight-command-center/issues/59",
+  "owner": "corps-reliability + corps-design",
+  "maxMinutes": 90
+}
