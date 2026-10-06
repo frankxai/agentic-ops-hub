@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Monday model-card note, merge gate still held (Grok)
+
+Local head `aca991f9db5d82d19b09bad17ee39da1d1828c75`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `monday-operator-playbook-august-2026-models` now cites the opened Grok 4.6, Gemini 3.7 Flash, DeepSeek-V4-Pro, and qwen3.8-27b cards. Prices, scores, the five-day cadence, and the missing hero stayed off. Claude returned REVISE on `bada697d`, then PASS on `aca991f9`. Editorial boundary tests: 68 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: MAI launch scores left off, merge gate still held (Grok)
 
 Local head `2d9ad08c5aa3dca10d990590ea3c5266775a381d`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `microsoft-mai-frontier-models-2026` now follows the June 2, 2026 announcement and the August 12, 2026 Thinking-1 post. Copied benchmark percentages and the missing hero stayed off. Claude returned REVISE on `6e48369e`, then PASS on `2d9ad08c`. Editorial boundary tests: 67 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
