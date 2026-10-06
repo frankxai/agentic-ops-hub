@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-estate-views-land-hermes-routes",
+  "class": "BUILD",
+  "priority": 3,
+  "agent": "codex",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\starlight-command-center",
+  "what": "Land the two dormant Hermes routes (/estate and /registry) inside the Observatory, rebased on main and verified",
+  "why": "Frank asked for one place to see every brand, domain, product and channel. Hermes built /estate and /registry on 2026-08-17 and left them uncommitted; they were committed unchanged and pushed on 2026-10-06 (agent/hermes/estate-overview-premium 2e7b619, 47 commits behind main; agent/hermes/brand-social-registry-board e1e114e, 62 behind). The command center rules out a second cockpit (issue 28).",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. Bulk implement goes to codex-cloud: codex cloud exec --env <ENV_ID> --branch agent/codex/estate-route --attempts 1, packet = the Kickoff prompt comment on issue 58. Never on the shared checkout; if run locally, only in a fresh worktree after pp preflight --workload build says allow. One branch and one DRAFT PR per route (estate-route, registry-route) off current main; relocate app/estate to apps/observatory/src/app/estate; replace the registry's absolute sibling-repo paths with a configured root and an explicit source-unavailable state; never show a social handle as connected unless a source says so. Done when: typecheck, node --test, a11y and build pass in CI, fixtures cover missing source and malformed manifest, each PR has desktop and phone screenshots, and issue 58 has a comment with PR links, commands run and what could not be verified. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state.",
+  "evidence": "https://github.com/frankxai/starlight-command-center/issues/58",
+  "owner": "exec-cto + Frank (visual review)",
+  "maxMinutes": 90
+}
