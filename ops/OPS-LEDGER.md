@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Hooks reference cited, merge gate still held (Grok)
+
+Local head `97cd0dc934324542fc1d7e6f2ca0380982607873`. Disk 12.84 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-hooks-system-quality-gates` cites the Claude Code hooks reference opened on October 6, 2026. The old hooks file, the counts, and the missing hero stayed off. Claude returned PASS on `97cd0dc9`. Editorial boundary tests: 82 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Tallinn schedule lines kept, merge gate still held (Grok)
 
 Local head `97a5d99c24c85adf7ba323728c617e2e297d9186`. Disk 12.84 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `_drafts/mindvalley-university-2026-tallinn` keeps the opened schedule lines and this page's checklist. The score table, prices, attendance claim, and affiliation sentence stayed off. Claude returned PASS on `97a5d99c`. Editorial boundary tests: 81 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
