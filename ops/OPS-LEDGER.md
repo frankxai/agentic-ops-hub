@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Claude Code ranking removed, merge gate still held (Grok)
+
+Local head `5ba235331ceea85d8fb887027246f33d018d2adc`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `claude-code-mastery-top-resources` no longer ranks five teachers, endorses a course, or prints an agent execution log. Claude PASS on that commit. Editorial boundary tests: 58 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: aggregated video scores and commissions removed, merge gate still held (Grok)
 
 Local head `0d44c48aa5f534910e740d5c7669c1f16291c5ea`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `best-ai-video-generators-2026-x-aggregated` no longer prints a score, an engagement count, a plan price, or a commission range. The page does not instruct a Higgsfield connector call. Claude PASS on that commit. Editorial boundary tests: 57 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
