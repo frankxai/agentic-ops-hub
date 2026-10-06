@@ -22,20 +22,24 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
-### Terminal: verify PR104, then repair Queen admission through its owner
+### Terminal: preserve the restored design, verify the existing cockpit
 
-Read starlight-agent-config issue46 and draft PR104 (`5d44d2a`), stacked on draft
-PR87 (`9b9d678`). Small opening and owned palette entries are locally installed;
-556 checks passed, scoped provider review passed, native mouse/input redraw QA
-remains pending. Follow the 2026-10-06 hub session. Final Windows CI passed. Verify native Terminal
-Ctrl+click/focus/wrapped drafts after PP admission. Do not infer completion from
-transport sessions. Queen inbox0/held27/sleep on is observed, not dispatch
-authorization. Through Queen's current owning writer, repair one held card's
-self-contained admission evidence, preserving human holds and source tasks;
-prove interruption, retry, review and acceptance. Reuse existing SIS/Observatory/
-Canvas receipt contracts and managed SDS cockpit launch. Preserve occupied
-checkouts, resource gates, original work and provenance. Current repo is private;
-public packaging needs license, sanitized source and newcomer acceptance.
+Read config issue46 and draft PR104 (`cd0f7c5`), stacked on draft PR87.
+Frank rejected the sparse opening; the large sign, stars and panels are restored
+and installed as default. Keep that design. starlight/sli are the primary entries;
+si remains Set-Item.296 small local checks, scoped provider approval, clean scans;
+Windows CI success. Follow the2026-10-06 hub correction. Cold startup inventory
+can be unobserved after its30-second cache expires; do not invent process counts.
+After PP storage/RAM admission, verify native Terminal links/focus/wrapped drafts
+and install/build/launch the existing command-center Observatory through SDS.
+Ops observes runtime; Studio compares candidate packs without executing agents;
+Fleet observes machine/repos; Dashboards lists surfaces. Prove current failure,
+retry and data provenance. Consider existing Tailscale for private HTTPS access;
+no hosted/private endpoint is configured here. Through Queen's owning writer,
+repair one held card's self-contained admission prompt and prove interruption,
+review and acceptance, retaining human holds and source tasks. Reuse existing
+SIS/Observatory/Canvas contracts. Preserve occupied lanes, gates and unfinished
+work. Public packaging needs licensing, sanitized source and newcomer acceptance.
 
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 

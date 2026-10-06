@@ -1,16 +1,17 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-06: Terminal navigation installed locally; public release pending
+## 2026-10-06: Accepted terminal design restored; dashboard runtime pending
 
-[Config draft PR104](https://github.com/frankxai/starlight-agent-config/pull/104)
-`5d44d2a` is stacked on draft PR87. Local small opening and four owned palette
-entries installed; read-only Queen holds and interface navigation work in PS5/PS7.
-556 local checks, scoped provider review, source secret and UI detector checks
-passed. Profile medians 643 to456 ms (PS5), 555 to359 ms (PS7); window creation and
-input readiness excluded. [Issue46 update](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-6008826865)
-keeps the broader objective open. [Final Windows CI](https://github.com/frankxai/starlight-agent-config/actions/runs/37410086114) passed. Native interaction QA, managed
-offline cockpit launch, Queen authorship/receipt wiring, schema/vault sync and
-public packaging/license remain outstanding. See [session](sessions/2026-10-06.md).
+[Config PR104](https://github.com/frankxai/starlight-agent-config/pull/104) `cd0f7c5`
+corrects the sparse opening Frank rejected. The large sign, stars and panels are
+installed as default; branded starlight/sli commands preserve si and legacy shome.
+296 small local checks; [exact Windows CI](https://github.com/frankxai/starlight-agent-config/actions/runs/37453720187): success; approved
+scoped provider review and clean source scans. Earlier speed measurements belong
+to the rejected sparse revision. Four dashboard links share one existing offline
+app; Studio is candidate design, not execution. Browser QA admission HOLD;
+runtime/visual verification, Queen authored-card repair, private HTTPS access and
+public packaging/license remain open. Original work and provenance preserved.
+See [session](sessions/2026-10-06.md) and existing issue46.
 
 ## 2026-10-06: Agent OS studio, native evals, hook fix, cloud agents queued (Claude)
 
