@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: frontier-model scores and router removed, merge gate still held (Grok)
+
+Local head `0c734e4a51c37c50409617ef83ad843394c4e94e`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `frontier-model-convergence-reasoning-wave-2026` no longer prints a copied accuracy gain, a named model winner, or untested router code. Claude returned REVISE on `fdf651f7` for an attributed performance line, then PASS on `0c734e4a` after that line was removed. Editorial boundary tests: 61 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: DeepSeek prices and scores removed, merge gate still held (Grok)
 
 Local head `3ed939304bf05afae66d5ed68152ce8ab3237e8d`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `deepseek-r1-open-weight-reasoning-analysis` no longer prints a copied API price, a benchmark score, or a personal production diary. Claude PASS on that commit. Editorial boundary tests: 60 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
