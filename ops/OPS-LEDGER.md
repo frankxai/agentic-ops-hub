@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: ACOS credits file cited, merge gate still held (Grok)
+
+Local head `2ff8c2a4c53290edc1243e2e3acffa7af2749e15`. Disk 12.79 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-philosophy-technology-amplifies` cites the credits file and the Apache 2.0 license heading opened on October 6, 2026. The MIT line, the production diary, and the uncounted totals stayed off. Claude returned PASS on `2ff8c2a4`. Editorial boundary tests: 83 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Hooks reference cited, merge gate still held (Grok)
 
 Local head `97cd0dc934324542fc1d7e6f2ca0380982607873`. Disk 12.84 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-hooks-system-quality-gates` cites the Claude Code hooks reference opened on October 6, 2026. The old hooks file, the counts, and the missing hero stayed off. Claude returned PASS on `97cd0dc9`. Editorial boundary tests: 82 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
