@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-command-center-dependabot",
+  "class": "BROKEN",
+  "priority": 3,
+  "agent": "codex",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\starlight-command-center",
+  "what": "Security: 100 open Dependabot alerts on starlight-command-center main (29 high, 61 medium, 10 low)",
+  "why": "GitHub reported the alerts while the Hermes branches were pushed on 2026-10-06. Lockfile bumps collide with the route PRs, so they land last. Jules is refused for now (two sessions awaiting feedback), so this routes to codex-cloud.",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. codex-cloud: codex cloud exec --env <ENV_ID> --branch agent/codex/dependabot --attempts 1, packet = issue 61. Group alerts by package and by direct versus transitive; fix in the fewest PRs (apps/observatory pnpm; the root Electron app if needed); bump to patched versions; no force flags and no overrides without a written reason; dismiss an alert only with a documented reason, never in bulk. Done when: open high alerts are zero or each remaining one has a documented reason, typecheck, node --test, a11y and build pass, issue 61 lists the before and after counts from gh api. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state.",
+  "evidence": "https://github.com/frankxai/starlight-command-center/issues/61",
+  "owner": "corps-engineering",
+  "maxMinutes": 60
+}
