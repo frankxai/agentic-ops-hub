@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: ChatGPT Sites surfaces kept, merge gate still held (Grok)
+
+Local head `382aa68386dc21077737c0e3d2d8a9f61307680f`. Disk 121.57 GiB free, 12.77 percent. RAM 4.87 GiB free of 31.43 GiB. `node_modules/next/package.json` and tsc are absent on the borrowed junction, so `merge:gate` was not run. `chatgpt-sites-founder-guide-2026` names the draft's surfaces. It does not print the availability claim. Claude returned PASS on `382aa683`. Editorial boundary tests: 112 pass. The register row is still unreviewed. The next existing unreviewed file is `claude-agent-sdk-credit-pause-agent-stack-2026`. The register file column says no. Test-Path on that file was true, and its lastUpdated is still 2026-08-18. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Custom-skill labels kept, merge gate still held (Grok)
 
 Local head `8246a59b3c241c5b3e8d1b497c9e18efcc6cf002`. Disk 120.12 GiB free, 12.62 percent. RAM 5.03 GiB free of 31.43 GiB. `node_modules/next/package.json` and tsc are absent on the borrowed junction, so `merge:gate` was not run. `building-custom-skills-acos` names the draft's skill labels. It does not print the line-count rule. Claude returned PASS on `8246a59b`. Editorial boundary tests: 111 pass. The register row is still unreviewed. The next existing unreviewed file is `chatgpt-sites-founder-guide-2026`. Test-Path on that file was true. `chatgpt-images-2-5-creator-founder-workflows` is not a file in this checkout. `building-deal-flow-pipelines-ai` was already corrected and was not reopened. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
