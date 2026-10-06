@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: browser prices and winner removed, merge gate still held (Grok)
+
+Local head `f6ee862750dfd01ea78b66f75606952afff7622a`. Disk 12.98 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `best-ai-browser-2026` no longer prints a plan price, a referral payout, or a named winner. Claude PASS on that commit. Editorial boundary tests: 55 pass. The register row is still unreviewed. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Arcanea worlds claims corrected, merge gate still held (Grok)
 
 Local head `bce2a9d57d48f93beb6ea61d669d2d0009241d99`. Disk 12.98 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `arcanea-building-worlds-ai-agents` no longer prints the workflow ID, skill sizes, or the violet accent as Arcanea's color. Claude PASS on that commit. Editorial boundary tests: 54 pass. The register row is still unreviewed. Not pushed. See [session](sessions/2026-10-06.md).
