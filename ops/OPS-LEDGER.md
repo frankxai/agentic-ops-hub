@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Skills spec README quoted, merge gate still held (Grok)
+
+Local head `2cb59c7a4d2bfb5422fb3a35f859b7d88101f6bc`. Disk 121.6 GiB free, 12.77 percent. RAM 6.82 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-skills-operating-layer` quotes `spec/README.md` and keeps the draft's skill canvas. The cited `main/standard` path returned 404. Claude returned PASS on `2cb59c7a`. Editorial boundary tests: 99 pass. The register row is still unreviewed. The next existing unreviewed file is `ai-workshops-for-students-what-worked`. Prepared rows stay prepared. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Infrastructure headings kept, merge gate still held (Grok)
 
 Local head `ceaf4191bb3677bb03951ffafd930e1db575e795`. Disk 121.6 GiB free, 12.77 percent. RAM 6.80 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-infrastructure-blackwell-lpu-ai-factories-2026` keeps the draft's six section headings and three questions. Claude returned REVISE, then PASS on the same SHA `ceaf4191`. Editorial boundary tests: 98 pass. The register row is still unreviewed. The next existing unreviewed file is `ai-skills-operating-layer`. Prepared rows stay prepared. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
