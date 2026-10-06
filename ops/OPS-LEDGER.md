@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Anthropic prompting pages cited, merge gate still held (Grok)
+
+Local head `2a9112b0c214571e66f905b9f4fced491c55908b`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `prompt-engineering-2026-what-still-works` cites Anthropic's prompting and structured-output docs. The unsourced model test and the missing hero stayed off. Claude returned PASS on `2a9112b0`. Editorial boundary tests: 72 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Phi-4 cards cited, merge gate still held (Grok)
 
 Local head `957bbf7a055f3fda67f5a9d7dc88a0b65298b84f`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `phi-analysis-2026` cites the opened Phi-4, Phi-4-reasoning, and Phi-4-reasoning-vision-15B cards. Scores, VRAM estimates, and the missing hero stayed off. Claude returned PASS on `957bbf7a`. Editorial boundary tests: 71 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
