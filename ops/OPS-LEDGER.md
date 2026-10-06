@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Family AI instructions kept, merge gate still held (Grok)
+
+Local head `eb9d3cd4542e611cf1c00f4167cc5eda58b22a8c`. Disk 121.6 GiB free, 12.78 percent. RAM 6.79 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-guide-for-families-and-professionals` keeps the draft's family points, habits, weekly times, and three actions. An earlier local commit on the same file is `64723452`. Claude returned PASS on `eb9d3cd4`. Editorial boundary tests: 96 pass. The register row is still unreviewed. The next existing unreviewed file is `ai-health-fitness-athletes-creators-2026`. Prepared rows stay prepared. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Willison prompt-injection page quoted, merge gate still held (Grok)
 
 Local head `9c3ae647eabb78c654ed39c2dc0e6eda94724158`. Disk 121.3 GiB free, 12.75 percent. RAM 6.76 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-engineering-without-hype-willison` quotes the November 27, 2023 prompt-injection page and the fetched player total -1:12:43. The episode body was not in the fetch. Claude returned PASS on `9c3ae647`. Editorial boundary tests: 95 pass. The register row is still unreviewed. The next existing unreviewed file is `ai-guide-for-families-and-professionals`. Prepared rows stay prepared. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
