@@ -53,14 +53,14 @@ Session continuity is MERGED_NOT_LIVE. On 2026-10-05 a real staging run recovere
    - [SIS #291](https://github.com/frankxai/Starlight-Intelligence-System/pull/291) and [Canvas #32](https://github.com/frankxai/starlight-agent-canvas/pull/32): CI is green; the review was reaped for low memory.
    - In SIS, let `harness` finish before merging, and never edit `package.json`.
 2. **Local rollout to LIVE_VERIFIED: [agentic-ops #181](https://github.com/frankxai/agentic-ops/issues/181).** PP PR4 install, clean install, Frank's trust policy decision (`~/.starlight/continuity/trust-policy.proposed.json`), live import, cursor baseline, proof with `--harness-runs`, rollback.
-3. **Cloud agents launched 2026-10-06** on these issues; review and merge their ready PRs through `pr-gate` with a non-Claude checker:
-   - [Canvas #33](https://github.com/frankxai/starlight-agent-canvas/issues/33): scale the page to 74+ items and guide reconciliation.
-   - [evals #20](https://github.com/frankxai/starlight-evals/issues/20): CI eval suite.
-   - [agent-config #99](https://github.com/frankxai/starlight-agent-config/issues/99): automatic capture hook, spool only.
-   - [memory #24](https://github.com/frankxai/starlight-memory/issues/24): scoped recall projection.
-   - [second-brain-os #14](https://github.com/frankxai/second-brain-os/issues/14): non-coder setup and recovery.
+3. **Cloud agents finished 2026-10-06.** All five PRs are ready with CI green and none merged. Review each with a non-Claude checker through `pr-gate`:
+   - [Canvas #34](https://github.com/frankxai/starlight-agent-canvas/pull/34) `e346650` (issue #33): filters, grouping, search, and a copy-reconcile command whose ID allowlist blocks shell and flag injection. **Merge Canvas #32 first, then rebase #34**; #34 carries #32's optional-scope hunks.
+   - [evals #21](https://github.com/frankxai/starlight-evals/pull/21) `8a9ff06` (issue #20): CI eval suite, 104/104 locally, with the information-disclosure finding fixed. **Frank:** add the `AGENTIC_OPS_READ_TOKEN` repo secret (fine-grained, read-only Contents on agentic-ops) so CI runs the collector leg.
+   - [agent-config #102](https://github.com/frankxai/starlight-agent-config/pull/102) `a3f07ae` (issue #99): capture hook, spool only, not installed. The collector does not read the spool yet; that needs a follow-up in agentic-ops.
+   - [memory #27](https://github.com/frankxai/starlight-memory/pull/27) `a4e9a31` (issue #24): read-only scoped recall projection.
+   - [second-brain-os #15](https://github.com/frankxai/second-brain-os/pull/15) `7cb67be` (issue #14): non-coder setup, typed approval, backup and restore.
 
-   If an agent stopped, its issue holds the full spec; relaunch from the issue.
+   Safe to delete: `C:\Users\frank\starlight\scratch\sac-issue99`. The agents ran on this laptop, not in the cloud.
 4. **Dependency:** [PP #3](https://github.com/frankxai/peak-performance/issues/3) and PR4 are owned by the Codex lane (34 dirty paths, untouched).
 
 Nothing resumes or admits work automatically. Collector attestation stays SIP Board work, and Foundry #268 and PR269 are untouched.
