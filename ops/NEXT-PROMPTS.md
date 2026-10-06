@@ -17,9 +17,39 @@
 
 ## Current
 
-### Agent version control on plain jj: run gate G1
+### Agent version control on plain jj: land four PRs, then run G1
 
-Read `ops/sessions/2026-10-06.md`. On a scratch repo under `starlight\scratch\`, install `jj` (winget) and run three agents in three `jj workspace` copies concurrently, colocated with Git, then push to a throwaway remote. Record peak RAM and disk against three Git worktrees of the same repo, after `pp preflight --workload swarm` allows it. Pass means no lock errors and a clean push round-trip. Stop there: do not create the `agent-trails` repo, and do not install `agentic-jujutsu`, until Frank picks the repo home and name. Report the numbers; G2 and G3 follow only if G1 passes.
+You are the conductor. Maker is Claude on every PR below, so every review comes from a different provider (Grok first, `codex --profile review` as the fallback). Read `ops/sessions/2026-10-06.md` and epic issue #171 first; they are the plan and the status. Re-measure anything below before you rely on it: SHAs drift, and a stale belief is how this slice already lost an hour (a Grok block caught two wrong facts in the write-up).
+
+State at 2026-10-06 ~02:30 Amsterdam (verify each with `gh pr view`):
+
+| What | Where | State |
+| :--- | :--- | :--- |
+| Plan and handover | hub PR #170, head `4ddfcb8`, worktree `starlight\worktrees\agentic-ops-hub-jujutsu-20261006` | ready, no valid sign-off (Grok's block was on `8253a97`, now stale; its re-review was killed by memory pressure) |
+| G2 signed receipts | hub PR #174, `agent/claude/jj-g2-receipts` | draft; PASS re-run by the conductor, 8 of 8 |
+| Skill caveat and pin | claude-code-config PR #30 | draft, 4 files under `skills/agentic-jujutsu/` |
+| Trajectory record | starlight-memory PR #25, fixes at `e195874` | draft, 295 of 295 by the agent, not re-run |
+| Frontmatter escape | starlight-memory issue #28 | open, unstarted |
+| G1, G3 | #171 | not run, not built |
+
+Machine: free RAM was 2.1 GiB when the system killed the last Grok run. The floor is 4 GiB. Step zero is `pp preflight --workload swarm`; on `hold` or `bounded` with under 4 GiB free, stop and report, do not retry in a loop. Never kill another process tree to make room.
+
+Steps, each with an exit condition:
+
+1. Preflight passes. Exit: preflight says `allow`, or you report the hold and stop.
+2. Review one PR at a time, in order #170, #174, claude-code-config #30, starlight-memory #25. For each: `gh pr ready`, then from `C:\Users\frank\starlight` with `NO_COLOR=1 FORCE_COLOR=0 CLICOLOR_FORCE=0`, run `grok -p "<review prompt naming the exact head SHA and the claims to verify against primary sources>" --allow "Bash(gh:*)" --allow "Bash(node tools/pr-gate.mjs:*)" --allow "Bash(npm view:*)" --allow "Bash(sleep:*)" --max-turns 45`. Exit: `node tools/pr-gate.mjs verify` prints GATE CLEAR, or a block you have fixed and re-reviewed. A push voids a sign-off, so fix everything before re-asking. A block is policy-correct when CI is red, even if the red already exists on main.
+3. Merge only on GATE CLEAR, through `node tools/pr-gate.mjs merge`, never `gh pr merge`. starlight-memory and claude-code-config may require Frank's GitHub approval; if protection blocks the merge, record it and move on. Exit: merged, or blocked with the exact reason on #171.
+4. After #170 merges, append the outcomes to `ops/sessions/2026-10-06.md` and refresh the ledger in one small follow-up PR, and comment the final table on #171.
+5. G1 on the laptop, only after steps 1 to 4 and a fresh preflight: three agents in three `jj workspace` copies of a scratch repo under `starlight\scratch\`, colocated with Git, then push to a throwaway remote. The jj 0.45.1 binary is at `starlight\scratch\jj-g2-bin`. Record peak RAM and disk against three Git worktrees. Exit: no lock errors, a clean push round-trip, and the numbers on #171.
+6. Delete scratch only after merge: `starlight\scratch\jj-g2-hub`, and the nested `ccc-jj` and `sm` clones under `.claude\worktrees\agent-a7fb3848d77c06762` and `agent-a45e4f8ea91cacdbc`.
+
+Capability routing (AGENTS.md section 4): judgment, merge or kill, and red-team go to a Fable or Opus tier; build to Sonnet or Codex; bulk mechanics to `codex exec`; large-context scouting to antigravity; mechanical counts to Haiku. Concurrency budget on this machine: one local heavy agent at a time. Parallel work is allowed only on a genuinely remote runner, and the last "remote" launches ran on this laptop. Prove remoteness first with a canary that prints hostname and OS before you trust it for anything heavy. Cloud candidates after the merges: issue #28 (frontmatter escape) with its handover prompt, then the G3 on/off harness in starlight-memory.
+
+Do not: install `agentic-jujutsu` or `agentdb`; create the `agent-trails` repo before Frank picks a home and name; touch the `claude-code-config` `main` checkout (55 dirty files, one a rewrite of `hooks/secret-guard.cjs`, modified live that morning; it needs an owner); self-merge; push to main; or restart a killed background job without being asked.
+
+Frank-only: the arcanea `CLAUDE_CODE_OAUTH_TOKEN` or deleting `claude-code-review.yml`; the `surface-approved` label on gencreator.ai #138; the repo home and name; per-file licence confirmation before any code is copied from `ruvnet/agentic-flow` (the repo shows no licence; the npm package is MIT).
+
+Close with made, verified, proposed. Say plainly what you could not verify.
 
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 
