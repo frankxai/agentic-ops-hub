@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-frankx-analytics-baseline-agent",
+  "class": "MEASURE",
+  "priority": 4,
+  "agent": "codex",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\frankx.ai-vercel-website",
+  "what": "frankx.ai analytics baseline and the SEO P0s that are partly executed",
+  "why": "After Frank enables Vercel Web Analytics and chooses a GA4 read path, the funnels can replace unmeasured with dated numbers. The 2026-08 SEO strategy lists P0s as partially executed: sub-pages inheriting the hub canonical, /blueprint duplicates, sitemap and llms.txt.",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. Release only after items 1 to 3 of 2026-10-06-estate-views-frank-decisions are answered. Record a dated baseline as a source-linked snapshot (visitors, top 20 pages, top sources, landing pages for /ai-architecture); one PR for the SEO P0s with a canonical test per route; map keywords to intent and funnel stage for the pillar and spokes S1 to S8, high intent first (best bet from the pull: llm gateway, 720 searches, difficulty 23). No new content before the baseline exists. Done when: the baseline snapshot and the SEO PR exist and issue 905 shows them. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state. exec-cmo checks.",
+  "evidence": "https://github.com/frankxai/frankx.ai-vercel-website/issues/905",
+  "owner": "exec-cmo + steward-frankx",
+  "maxMinutes": 90
+}
