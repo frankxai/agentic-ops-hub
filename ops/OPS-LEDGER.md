@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: short-form prices and winner removed, merge gate still held (Grok)
+
+Local head `07aa1ffa2b33d4960f92e38866361d8bd7160148`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `best-ai-shorts-tiktok-tools-2026` no longer prints a plan price, a credit quota, a named winner, or an unverified commission. Claude PASS on that commit. Editorial boundary tests: 56 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: browser prices and winner removed, merge gate still held (Grok)
 
 Local head `f6ee862750dfd01ea78b66f75606952afff7622a`. Disk 12.98 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `best-ai-browser-2026` no longer prints a plan price, a referral payout, or a named winner. Claude PASS on that commit. Editorial boundary tests: 55 pass. The register row is still unreviewed. Not pushed. See [session](sessions/2026-10-06.md).
