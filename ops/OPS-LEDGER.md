@@ -796,3 +796,8 @@ Documentation saved. Preserve accepted RealityDiffusion, Arcanea and GenCreator 
 ## Gaming execution pickup, 6 October 2026
 
 Use the gaming-setup packet in NEXT-PROMPTS on the same branch for Arcanea issue #527, draft #526. Supply the actual repository-bound cloud environment, current quota and immutable head before submission. Preserve other active work. Return reviewable behavior and evidence; commercial strategy and brand adoption stay separate. Live Starlight Home refresh and implementation are pending; no worker is running for this packet.
+
+
+## Gaming continuation registered, 6 October 2026
+
+Queen card gaming-ecosystem-20261006 is held for fresh admission, not running. The existing gaming-setup prompt now carries explicit model/tool activation and review instructions. Use the saved private reopen/handover packet and the current issue #527 implementation scope. Do not duplicate this card or create another queue.
