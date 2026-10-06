@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: video comparison prices removed, merge gate still held (Grok)
+
+Local head `dddef13ba9cec5806c9fd8ca4d4dff261011b062`. Disk 12.98 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-video-generation-2026-sora-runway-kling-veo` no longer prints star scores or copied prices. Claude PASS on that commit. Editorial boundary tests: 53 pass. The register row is still unreviewed. `ai-agents-worth-evaluating-august-2026` is still missing from this checkout. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: image playbook prices removed, merge gate still held (Grok)
 
 Local head `6261e8ee3291c961aeec1775715424ceff4f0692`. Disk 12.98 percent free, RAM 6.42 GiB free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-image-video-generation-playbook-2026` no longer prints an unsourced price or quota. Claude PASS on that commit. Editorial boundary tests: 52 pass. The register row is still unreviewed. Not pushed. See [session](sessions/2026-10-06.md).
