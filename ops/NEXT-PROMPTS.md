@@ -479,6 +479,24 @@ gates, account eligibility and every other unfinished front.
 
 Prepared at Frank's request on 6 October. Paste the following as the next agent's user task. This prompt gives normal implementation/merge authority within the existing gates and spending limits. No scheduled execution was created. The October 4 proposals and review gaps remain recorded in that session.
 
+Implementation pickup, 6 October: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
+now contains controller/capability source `2e36377b5a08cfcdcc0da7e7df567d2ea6218a85`.
+Linux CI142 Node+52 Python, Windows58+one Unix-only skip, worker matrix and governance
+pass. Cloud Claude review37411828357 completed with no issues found. Three earlier
+Anthropic critiques and repairs are retained. A genuine other-harness head-bound
+signoff remains required by pr-gate; no merge or live activation is claimed.
+Refresh all states. The owned implementation branch is
+`agent/codex/queen-controller-e2e-20261006` in the existing
+`agentic-ops-github-weekly-control-20260924` worktree; PR156 keeps its original
+remote branch. Read `lifecycle/queen-controller.js`, capability adapters, their
+tests and both Queen controller/technology docs. Address actual review findings
+and complete the normal merge gate; preserve this implementation.
+Local review-lite was HOLD at04:00 UTC, so obtain fresh admission or use the
+existing supported cloud route. AgentDB/Jujutsu are disabled: APIs inspected,
+runtimes unexecuted. Prove the current owner's host containment, broker and
+transport integration before the useful native roundtrip. Continue the complete
+journey below, preserving earlier requirements and other fronts.
+
 ```text
 Continue Frank's Starlight/Queen work as the accountable engineering lead. Deliver
 a valuable working system through implementation, independent review, normal

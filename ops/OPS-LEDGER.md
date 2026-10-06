@@ -1,5 +1,25 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Queen recovery controller implemented; merge and activation pending (Codex)
+
+[Ops156](https://github.com/frankxai/agentic-ops/pull/156) carries corrected source
+`2e36377b5a08cfcdcc0da7e7df567d2ea6218a85`: durable run recovery, signed acceptance
+with retained provenance, cancellation context, archives and delivery recovery.
+Optional AgentDB accepted-reference indexing and an isolated Jujutsu probe remain
+disabled. Linux CI passes142 Node+52 Python cases; Windows passes58 cases with the
+Unix-only case skipped. Worker OS/Node matrix and governance pass. Cloud Claude
+review37411828357 completed with [no issues found](https://github.com/frankxai/agentic-ops/pull/156#issuecomment-6009095453).
+Three earlier private Anthropic critiques and their repairs are preserved.
+The merge gate still requires an actual other-harness head-bound signoff.
+
+Local review admission at04:00 UTC held at6001 MB versus6144 required. No new
+package, worktree, swarm, schedule or production runtime was installed. Active
+Grok/PowerShell Queen ownership is preserved. Native host containment, broker and
+delivery integration, useful task/restart proof, actual AgentDB/Jujutsu experiments,
+human feedback and public release remain open in [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+See the [session](sessions/2026-10-06.md) and existing proactive pickup in
+[NEXT-PROMPTS.md](NEXT-PROMPTS.md). All original requirements remain open.
+
 ## 2026-10-06: Queen chair/controller reality and harness recommendation
 
 The local seat assigns Grok as chair, PowerShell QueenLoop as dispatcher and Hermes memory/messaging duties. Latest observed 04:31 Amsterdam tick: idle-held, 0 inbox, 27 held, 0 dispatched, sleepMode true; 13 pulse-listed cards lack self-contained prompts. Ops main `c194035e` has native launching and separate trusted Slack acceptance code, whose production roundtrip/code isolation remain open. [Current pickup](NEXT-PROMPTS.md) now reconciles those paths and respects one active chair. Retain Grok for now; benchmark a replaceable planning binding and verified native worker adapters before adopting a replacement. Advisory assessment only; no queue, worker, model, schedule or runtime changes. See [session](sessions/2026-10-06.md).
