@@ -1,5 +1,17 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Terminal navigation installed locally; public release pending
+
+[Config draft PR104](https://github.com/frankxai/starlight-agent-config/pull/104)
+`060c503` is stacked on draft PR87. Local small opening and four owned palette
+entries installed; read-only Queen holds and interface navigation work in PS5/PS7.
+556 local checks, scoped provider review, source secret and UI detector checks
+passed. Profile medians 643 to456 ms (PS5), 555 to359 ms (PS7); window creation and
+input readiness excluded. [Issue46 update](https://github.com/frankxai/starlight-agent-config/issues/46#issuecomment-6008826865)
+keeps the broader objective open. Native interaction QA, current CI, managed
+offline cockpit launch, Queen authorship/receipt wiring, schema/vault sync and
+public packaging/license remain outstanding. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Agent OS studio, native evals, hook fix, cloud agents queued (Claude)
 
 [agentic-creator-os #86](https://github.com/frankxai/agentic-creator-os/pull/86) (Agent OS: one Expertise Kernel compiled into 9 Generals, 6 Domain Queens and 3 studio workers; dependency-free renderer; estate audit ratchet; /si) is green and waits on Frank's merge; [#92](https://github.com/frankxai/agentic-creator-os/pull/92) (renderer temp leak) is stacked and rebuilds on main afterwards. The impeccable hook's `cmd.exe /c` under Git Bash executed edited text as commands; it is fixed on c940 and the doctor check is [starlight-agent-config #101](https://github.com/frankxai/starlight-agent-config/issues/101). Five run-once cloud agents are queued (#101, then agentic-creator-os [#95](https://github.com/frankxai/agentic-creator-os/issues/95), [#96](https://github.com/frankxai/agentic-creator-os/issues/96), [#97](https://github.com/frankxai/agentic-creator-os/issues/97), [#99](https://github.com/frankxai/agentic-creator-os/issues/99)). #95, #96, #97 and #99 are each gated on #86 merged and fewer than three open routine PRs; #101 has base main and no #86 guard. Decisions are in the [register](https://github.com/frankxai/agentic-ops/pull/160) and Frank-only items in [Starlight Home](https://github.com/frankxai/starlight-command-center/pull/63). See [session](sessions/2026-10-05.md).

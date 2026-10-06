@@ -22,6 +22,21 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### Terminal: verify PR104, then repair Queen admission through its owner
+
+Read starlight-agent-config issue46 and draft PR104 (`060c503`), stacked on draft
+PR87 (`9b9d678`). Small opening and owned palette entries are locally installed;
+556 checks passed, scoped provider review passed, native mouse/input redraw QA
+remains pending. Follow the 2026-10-06 hub session. Verify CI and native Terminal
+Ctrl+click/focus/wrapped drafts after PP admission. Do not infer completion from
+transport sessions. Queen inbox0/held27/sleep on is observed, not dispatch
+authorization. Through Queen's current owning writer, repair one held card's
+self-contained admission evidence, preserving human holds and source tasks;
+prove interruption, retry, review and acceptance. Reuse existing SIS/Observatory/
+Canvas receipt contracts and managed SDS cockpit launch. Preserve occupied
+checkouts, resource gates, original work and provenance. Current repo is private;
+public packaging needs license, sanitized source and newcomer acceptance.
+
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 
 The pack is on `main` in twenty repos (see the 2026-10-05 session, night entry). From a clean checkout of the estate, run `scripts/estate-guard-rollout.sh ~/repos` for the repos in `ops/evidence/estate-guard/repos.txt` that are not yet installed (`--no-hooks` for the `awesome-*` and `*-skills` repos); one draft PR per repo, mark ready, let CI run, merge. Then the medium PRs in this order: `arcanea` hooks off `@latest` (10 lines in `.claude/settings.json`; record the pinned version), SHA-pin the 61 tag-pinned actions, CSP on the six sites without one. Two settings only Frank can change: add `CLAUDE_CODE_OAUTH_TOKEN` to arcanea or delete `claude-code-review.yml`; add the `surface-approved` label to [gencreator.ai #138](https://github.com/frankxai/gencreator.ai/pull/138) so Surface Guard works on that private repo too. One decision: ai-music-academy's audit (`next` 16.3.6 now; Tailwind 4 or an audit exception for `braces`). Read `docs/ESTATE-GUARD.md` for the five standing decisions. Watch the first fire of `estate-guard-sweep-weekly` on 2026-10-12 06:11 Amsterdam; it must produce a draft PR into `ops/evidence/estate-guard/2026-10-12/` or say RED.
