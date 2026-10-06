@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: ACOS visual command files cited, merge gate still held (Grok)
+
+Local head `a69ef0c559be952af3e2884e6924ce3bba27af08`. Disk 12.79 percent free. RAM 5.28 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-v11-visual-intelligence-site-integrity` cites vis-audit, vis-search, vis-scan, and vis-report at commit `71191a089b8125dd1627342625cf4db5629aa2ed`. Six named paths returned 404. The unsourced audit counts stayed off. Claude returned PASS on `a69ef0c5`. Editorial boundary tests: 86 pass. The register row is still unreviewed. The next existing unreviewed file is `agent-family-architecture`. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: ACOS v10 score line cited, merge gate still held (Grok)
 
 Local head `a8ff854b0fcb443096a9246d5d5ae47e5169249b`. Disk 12.79 percent free. RAM 5.31 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-v10-autonomous-intelligence` cites the monitoring guide score 93/100 and leaves the unsourced move from 72 off. Claude returned PASS on `a8ff854b`. Editorial boundary tests: 85 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
