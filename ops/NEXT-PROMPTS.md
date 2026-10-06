@@ -22,6 +22,10 @@ Read starlightintelligence.ai PR #89 (docs/strategy) and starlight-estate main (
 
 ## Current
 
+### Estate guard: waves 3–4, the medium PRs, two repo settings
+
+The pack is on `main` in twenty repos (see the 2026-10-05 session, night entry). From a clean checkout of the estate, run `scripts/estate-guard-rollout.sh ~/repos` for the repos in `ops/evidence/estate-guard/repos.txt` that are not yet installed (`--no-hooks` for the `awesome-*` and `*-skills` repos); one draft PR per repo, mark ready, let CI run, merge. Then the medium PRs in this order: `arcanea` hooks off `@latest` (10 lines in `.claude/settings.json`; record the pinned version), SHA-pin the 61 tag-pinned actions, CSP on the six sites without one. Two settings only Frank can change: add `CLAUDE_CODE_OAUTH_TOKEN` to arcanea or delete `claude-code-review.yml`; add the `surface-approved` label to [gencreator.ai #138](https://github.com/frankxai/gencreator.ai/pull/138) so Surface Guard works on that private repo too. One decision: ai-music-academy's audit (`next` 16.3.6 now; Tailwind 4 or an audit exception for `braces`). Read `docs/ESTATE-GUARD.md` for the five standing decisions. Watch the first fire of `estate-guard-sweep-weekly` on 2026-10-12 06:11 Amsterdam; it must produce a draft PR into `ops/evidence/estate-guard/2026-10-12/` or say RED.
+
 ### Observatory: integrate measured session oversight and isolate hook106
 
 Continue original task `01a102ed-873c-7b92-b37b-4f299c63813b`. [Observatory PR10](https://github.com/frankxai/starlight-observatory/pull/10) is merged at3c575180b425d06a73fec75a577be95b150d3f5d, exact reviewed source fb2aec86e786a0783aed04f270e4d485feac5c7c; [issue9](https://github.com/frankxai/starlight-observatory/issues/9) remains open.55 local tests, all six OS/Node and package CI37234550446 pass. Independent source PASS5984368523 follows repaired WARN5984251355, with its limits preserved. The real embedded page executes in final template-token and unavailable goal/relationship regressions. Earlier Chrome desktop/phone/reduced-motion/focus/failure/retry captures belong to d401317. Final browser rerun held on PP RAM4176MiB versus8192 required; no visual/production approval is inferred. Updated private HTML is saved; the owned server and browser worker are stopped. After admission, `node bin/observatory.js sessions --serve --ttl-minutes 30` prints a fresh loopback capability URL; `sessions --out <private-dir>` saves HTML. Reuse this view and accepted Canvas UI; retain private capture provenance. The next visual check must run at the exact final/deployed revision with an admitted local browser or isolated cloud fixture runner; never upload private session metadata.
@@ -36,13 +40,13 @@ Choose integration after comparing a real task against Paperclip goal/task/budge
 
 Read current contracts, acquire a free lane, run route_work guard/check, apply Emil guidance to actual UI changes and verify focus/touch/reduced motion/interruption. Return a concise PASS/HOLD receipt with clickable private view, source/build/install revisions, tests/review, rollback, remaining gaps, measured cost scope and refresh/collector coverage. Save the three hub records and the existing product issues. The user outcome is dependable recovery and oversight of valuable work; a green scaffold or aggregate counter does not close it.
 
-### Starlight sites: extend the canary, then the checks it cannot make
+### Starlight sites: the loop is closed; the rest needs decisions or other lanes
 
-Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. The Protocol site now has an automatic production canary ([SIS 284](https://github.com/frankxai/Starlight-Intelligence-System/pull/284), `.github/scripts/probe-production.mjs`): 80 checks, 0 violations on main `a16251d`. Read an open canary issue before anything else.
+Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0ccad8d2dc8`. Both sites have an automatic production canary (`.github/workflows/production-design-canary.yml`): Protocol fails on overflow, forced and typed capitals, touch, contrast and focus (0 findings on 65 sitemap URLs); Lab fails on overflow only. Read an open "Production design canary is failing" issue first; it names the route, width and check.
 
-1. The Lab canary is live ([Lab 92](https://github.com/frankxai/starlightintelligence.ai/pull/92), 46 checks, 0 violations, overflow only). Decide with Frank whether the Lab should also fail on forced-uppercase text before adding that check.
-2. Add a text check for literal capital letters typed into source (for example `DISTRIBUTED INTELLIGENCE` on `/queen`), then fix them route by route; probe dynamic routes (`cosmos/cards/[slug]`, `research/[slug]`, `verticals/[slug]`).
-3. Add what the canary cannot see: contrast, touch-target size, focus-ring visibility (the Lab default ring is 1px `auto`), native zoom, real touch. One Impeccable finish pass only after a look at 375/768/1440 with reduced motion.
+1. Ask Frank two Lab questions before touching code: should forced uppercase fail the Lab canary (12 findings today, the Lab's brand style), and should the Lab get a theme-level contrast lift like [SIS 289](https://github.com/frankxai/Starlight-Intelligence-System/pull/289) (22 pages at 4.2 to 4.3:1)?
+2. Extend the loop to other sites only with a per-site design contract (brand, icon library, which checks fail) in that repo's `AGENTS.md`: gencreator.ai, arcanea, FrankX. Reuse `.github/scripts/probe-production.mjs`; pin the Actions SHAs; merge through `pr-gate`.
+3. Add what the canary cannot see: visual quality, real-device touch, native zoom, interrupted transitions, text over photography. One Impeccable finish pass after a look at 375/768/1440 with reduced motion.
 4. Do not mint Vercel bypass links; confirm whether the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
 
 ### Queen: install and live-verify merged SIS session continuity
@@ -619,6 +623,11 @@ gencreator-skills #5 (license + network disclosure) is merged (466d694). Next: s
 claude.ai/directory/manage -> Submit new -> Plugin bundle -> frankxai/gencreator-skills, folder
 video-social-studio -> Validate -> Submit. Expect a Policy hold (Node MCP server in a subfolder).
 claude-skills-library stays unsubmitted until Frank picks a license for its imported skills.
+```
+
+**[F0c · agentic-creator-os]** — land the Agent OS, then review what the scheduled agents built
+```
+/si Resume the Agent OS lane in agentic-creator-os. Read first: the restart card, the Agent OS handover (sections 0, 4, 6, 11 to 13), and agentic-creator-os #88. Then: (1) run mesh-doctor and respect the zone; (2) if #86 is merged, rebuild #92 on main with the API-only rebuild script and ask Frank to merge it; (3) check the five run-once cloud agents (starlight-agent-config #101; agentic-creator-os #95, #96, #97, #99): review each draft PR against its issue's done command, fix or close it, and re-arm any that stopped on the #86 guard; (4) land before building, so the net open PR count falls; (5) record decisions in the agentic-ops register, Frank-only items in Starlight Home, and the handover here. Merge, deploy, publish, spend and secrets stay Frank's.
 ```
 
 **[F0b · starlight-memory + vault]** — finish the memory loop once the machine clears HOLD
