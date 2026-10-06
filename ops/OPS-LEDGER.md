@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: ACOS readme filenames cited, merge gate still held (Grok)
+
+Local head `59348b80d08941662be8dab48ae268853b319c46`. Disk 12.79 percent free. RAM 5.2 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-use-cases-creator-types` cites the ACOS README and lists command filenames without their steps. Claude returned REVISE on `0c8a0231`, then PASS on `59348b80`. Editorial boundary tests: 84 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: ACOS credits file cited, merge gate still held (Grok)
 
 Local head `2ff8c2a4c53290edc1243e2e3acffa7af2749e15`. Disk 12.79 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `acos-philosophy-technology-amplifies` cites the credits file and the Apache 2.0 license heading opened on October 6, 2026. The MIT line, the production diary, and the uncounted totals stayed off. Claude returned PASS on `2ff8c2a4`. Editorial boundary tests: 83 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
