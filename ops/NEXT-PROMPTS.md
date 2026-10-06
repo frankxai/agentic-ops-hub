@@ -22,6 +22,25 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### Terminal: preserve the restored design, verify the existing cockpit
+
+Read config issue46 and draft PR104 (`cd0f7c5`), stacked on draft PR87.
+Frank rejected the sparse opening; the large sign, stars and panels are restored
+and installed as default. Keep that design. starlight/sli are the primary entries;
+si remains Set-Item.296 small local checks, scoped provider approval, clean scans;
+Windows CI success. Follow the2026-10-06 hub correction. Cold startup inventory
+can be unobserved after its30-second cache expires; do not invent process counts.
+After PP storage/RAM admission, verify native Terminal links/focus/wrapped drafts
+and install/build/launch the existing command-center Observatory through SDS.
+Ops observes runtime; Studio compares candidate packs without executing agents;
+Fleet observes machine/repos; Dashboards lists surfaces. Prove current failure,
+retry and data provenance. Consider existing Tailscale for private HTTPS access;
+no hosted/private endpoint is configured here. Through Queen's owning writer,
+repair one held card's self-contained admission prompt and prove interruption,
+review and acceptance, retaining human holds and source tasks. Reuse existing
+SIS/Observatory/Canvas contracts. Preserve occupied lanes, gates and unfinished
+work. Public packaging needs licensing, sanitized source and newcomer acceptance.
+
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 
 The pack is on `main` in twenty repos (see the 2026-10-05 session, night entry). From a clean checkout of the estate, run `scripts/estate-guard-rollout.sh ~/repos` for the repos in `ops/evidence/estate-guard/repos.txt` that are not yet installed (`--no-hooks` for the `awesome-*` and `*-skills` repos); one draft PR per repo, mark ready, let CI run, merge. Then the medium PRs in this order: `arcanea` hooks off `@latest` (10 lines in `.claude/settings.json`; record the pinned version), SHA-pin the 61 tag-pinned actions, CSP on the six sites without one. Two settings only Frank can change: add `CLAUDE_CODE_OAUTH_TOKEN` to arcanea or delete `claude-code-review.yml`; add the `surface-approved` label to [gencreator.ai #138](https://github.com/frankxai/gencreator.ai/pull/138) so Surface Guard works on that private repo too. One decision: ai-music-academy's audit (`next` 16.3.6 now; Tailwind 4 or an audit exception for `braces`). Read `docs/ESTATE-GUARD.md` for the five standing decisions. Watch the first fire of `estate-guard-sweep-weekly` on 2026-10-12 06:11 Amsterdam; it must produce a draft PR into `ops/evidence/estate-guard/2026-10-12/` or say RED.
