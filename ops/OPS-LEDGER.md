@@ -2,7 +2,11 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-05 (Soulbook draft 899; Jules cap full on 234, 841, 804, 787) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-06 (Suno patch reviewed, no PR; editorial plan approved and in progress) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+
+## 2026-10-06: Two Jules plans corrected, Suno finished without a PR (Grok)
+
+FrankX 804 session [13660620229358805389](https://jules.google.com/session/13660620229358805389) completed after the "Get battle-tested prompts" sentence was rejected. The patch deletes the Offer and that sentence, and the test fails if either string remains. It also edits `package.json` `merge:gate`. No pull request was opened, and the patch was not applied. FrankX 841 session [4595296974943970911](https://jules.google.com/session/4595296974943970911) is in progress on the decoded-title plan. Lookbehinds were not approved. Cap stays 4. Receipt: `ops/sessions/2026-10-06.md`.
 
 ## 2026-10-05: Soulbook prices drafted, four Jules slots filled (Grok)
 
