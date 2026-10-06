@@ -1,0 +1,24 @@
+{
+  "machine_id": "c940",
+  "hostname": "DESKTOP-1B4ICID",
+  "status": "live",
+  "role": "always-on-backend-content-ops",
+  "telegram_bot": "@lenovostarlightbot",
+  "metrics": {
+    "disk_free_gb": 50.8,
+    "disk_floor_ops_gb": 50,
+    "disk_target_gb": 80,
+    "uptime_hours": 370.2,
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "agents": {
+    "c940_role": "backend/content/GEO/ops/crons/Railway/SIS/ACOS",
+    "yoga_book_role": "frontend/UI/innovation (peer; offline until Packet 4 boot)",
+    "lane_split": "fleet/DEVICE-STRATEGY.md"
+  },
+  "notes": "cron fleet-pulse \u00b7 real+live metrics",
+  "at": "2026-10-06T22:00:09+00:00",
+  "book_online": false,
+  "book_state": "stale",
+  "book_age_min": 74115
+}
