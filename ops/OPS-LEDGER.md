@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: DeepSeek prices and scores removed, merge gate still held (Grok)
+
+Local head `3ed939304bf05afae66d5ed68152ce8ab3237e8d`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `deepseek-r1-open-weight-reasoning-analysis` no longer prints a copied API price, a benchmark score, or a personal production diary. Claude PASS on that commit. Editorial boundary tests: 60 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: coding-agent prices and winners removed, merge gate still held (Grok)
 
 Local head `1cb6b236c5fac3c955a49d80d45b8fdea5dae2ec`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `cursor-vs-claude-code-vs-windsurf-2026` no longer prints a plan price, a named winner, or a personal daily-use claim. The July 1 Cascade date is marked already past. Claude PASS on that commit. Editorial boundary tests: 59 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
