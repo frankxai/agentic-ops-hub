@@ -84,11 +84,20 @@ Use current architecture, MCP and evaluation guidance at an actual implementatio
 
 #### Start from the saved work
 
-Source repo: `frankxai/FrankX`. Owned worktree: `C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`. Branch: `agent/codex/editorial-renewal-20261003`. Last verified head: `9acd630ebbca2fb86fbb195204cd6273b28abed4`. Verify this again. Local commits since `e64da2953a067a79cca9b3e40024e3a3e8ea0dc2` are `009ea4c3`, `46573c89`, `9a8f1fca`, `a6c53960`, and `9acd630e`. Preserve the 23 foreign dirty files, including `lib/affiliates/tracking.ts` and `lib/guides.ts`. The source changes are local; they have not been pushed, merged or deployed. Production belongs to `frankxai/frankx.ai-vercel-website`, with a separate owned lane and release contract.
+Source repo: `frankxai/FrankX`. Owned worktree: `C:/Users/frank/starlight/worktrees/frankx-editorial-renewal-20261003`. Branch: `agent/codex/editorial-renewal-20261003`. Last verified head: `47c6bf21b6d64f628e2f6b12ff89aa82cd8d6dcb`. Verify this again. Local commits since `e64da2953a067a79cca9b3e40024e3a3e8ea0dc2` are `009ea4c3`, `46573c89`, `9a8f1fca`, `a6c53960`, `9acd630e`, and `47c6bf21`. Preserve the 23 foreign dirty files, including `lib/affiliates/tracking.ts` and `lib/guides.ts`. The source changes are local; they have not been pushed, merged or deployed. Production belongs to `frankxai/frankx.ai-vercel-website`, with a separate owned lane and release contract.
 
 Read the hub October 5 and October 6 sessions, issue 252, FrankX `docs/ops/affiliate/LINKS-AND-SETUP-2026-10-05.md`, `BROWSER-SETUP-PROMPT-2026-10-05.md`, account/review evidence and the existing editorial plans. Reconcile the current objective ledger without replacing the original goal. The runtime goal was separately paused; user continuation intent does not prove a tool-level resume or completion.
 
-The full corpus is 278 slugs and 769 source variants: 96 prepared revisions, four observed production corrections and 178 unreviewed articles. Preserve all 100 progress receipts and 96 held social/visual companions. Prepared articles still need their applicable review and publication checks.
+The full corpus is 278 slugs and 769 source variants: 96 prepared revisions, four observed production corrections and 178 unreviewed articles. Preserve all 100 progress receipts and 96 held social/visual companions. Prepared articles still need their applicable review and publication checks. The register rows were not flipped.
+
+Text review on 2026-10-06, still unreviewed in `docs/ops/editorial/ARTICLE-REGISTER.md`:
+
+- `voice-ai-agents-2026-elevenlabs-hume-audio`: local correction in `47c6bf21`. Hume's EVI overview, read that day, says the TTS and EVI APIs end November 13, 2026. Unsourced star scores, dollar tables, and the personal studio story are removed. One ElevenLabs sponsored URL remains.
+- `agentic-ai-roadmap-2025`: local correction in `47c6bf21`. The unsourced 92 percent Fortune 500 line, the dead `#` assessment link, and the claim that `npm run roadmap:check` had been run are removed. The page stays a 2025 roadmap.
+- `agi-2026-opportunities-students-creators`: local correction in `47c6bf21`. The unsourced GPT-4 27 percent and GPT-5 57 percent AGI scores are removed.
+- `08-golden-age-of-intelligence`: read only. The file is unchanged. It still contains unsourced year-over-year search percentages and outcome percentages. It is 1135 lines and was not rewritten.
+
+Unchanged gaps: `merge:gate` was not run. C: was 13.01 percent free and `node_modules/next/package.json` is absent. The founder demo was not produced. No ElevenLabs credential was present, and media stayed held. Production was not deployed. The production checkout remains `ed4f501fe918ca22914c75b0184e8fb45df50ed6`. `frankx.ai-vercel-website` `origin/main` read as `960b4e9c1684b30c67ccf4c58a0219307d927495`. Editorial boundary tests on `47c6bf21` exited 0 with 49 passes. Claude has not reviewed `47c6bf21`.
 
 #### Contracts, capabilities and capacity
 

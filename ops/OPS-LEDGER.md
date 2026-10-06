@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: next unreviewed FrankX articles, text only (Grok)
+
+Local head `47c6bf21b6d64f628e2f6b12ff89aa82cd8d6dcb`. Corrected `voice-ai-agents-2026-elevenlabs-hume-audio`, `agentic-ai-roadmap-2025`, and `agi-2026-opportunities-students-creators`. Read `08-golden-age-of-intelligence` and left it unchanged. The register still has 178 unreviewed rows and 96 prepared rows. `merge:gate`, the founder demo, and production deploy are unchanged holds. Editorial boundary tests: 49 pass. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: FrankX guides and affiliate resolver reviewed locally, release held (Grok)
 
 FrankX issue 252, source `frankxai/FrankX` worktree `frankx-editorial-renewal-20261003`, branch `agent/codex/editorial-renewal-20261003`.
