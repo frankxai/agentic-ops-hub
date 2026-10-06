@@ -2,7 +2,7 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-06 (FrankX PR 910 squash-merged as `bfbd87c28` and production `/magic` no longer prints the song count; PRs 911 and 912 are open and not merged; issue 870 stays open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-06 (FrankX PR 911 squash-merged as `7034274d7` and production `/studio/visual` no longer prints the catalog size; PR 912 squash-merged as `e7252e271` and the essay body is on production; other post cards on that page still print a song total; issue 870 stays open) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-06: music page was printing the inventory header (Grok)
 
@@ -18,6 +18,12 @@ https://frankx.ai/music still said "817+ published tracks" on 2026-10-06. `data/
 [PR 910](https://github.com/frankxai/frankx.ai-vercel-website/pull/910) squash-merged at 2026-10-06T03:28:58Z as `bfbd87c28ee1ba95de4dde98cf3ad5be9e8dfc0e`. Production deploy `6874987362` completed at 2026-10-06T03:31:37Z. https://www.frankx.ai/magic no longer contains "12,000 songs" and does contain "was a partnership". "Browse 61 tracks" is still on the page. No viewport proof.
 
 [PR 911](https://github.com/frankxai/frankx.ai-vercel-website/pull/911) is open on `agent/grok/issue-870-aesthete` at `3c7f95f8d9dc29fb605226d062df180b7c07a10c`. [PR 912](https://github.com/frankxai/frankx.ai-vercel-website/pull/912) is open on `agent/grok/issue-870-qualities` at `634158b288a867b0997490caef22cf4027e9b93c`. Neither is merged. Issue 870 stays open. C: free space was 13.01% (132,888,358,912 of 1,021,821,579,264). No new worktree.
+
+## 2026-10-06: Aesthete line and Suno essay (Grok)
+
+[PR 911](https://github.com/frankxai/frankx.ai-vercel-website/pull/911) squash-merged at 2026-10-06T05:57:54Z as `7034274d7cc7326d1771faa6d05d191290acc46d`. https://www.frankx.ai/studio/visual contains "generative art and the music practice" and "Lyric video generation for music releases". "12k music catalog" and "12k catalog" are absent. No viewport proof.
+
+[PR 912](https://github.com/frankxai/frankx.ai-vercel-website/pull/912) squash-merged at 2026-10-06T12:01:19Z as `e7252e2715a2f12a5d215e3e3ab0384e595fdcc8`. Production deployment `6883402818` was created at 2026-10-06T12:04:08Z. https://www.frankx.ai/blog/suno-ai-12000-songs-production-lessons contains the new title and "six-row genre table". "65 tracks", "61 self-hosted", and "six genre families" are absent. Four other post cards on that page still contain "12,000". No viewport proof. Issue 870 stays open. C: free space was 12.63% (129,047,453,696 of 1,021,821,579,264). No new worktree.
 
 ## 2026-10-04: email and hub song counts merged (Grok)
 
