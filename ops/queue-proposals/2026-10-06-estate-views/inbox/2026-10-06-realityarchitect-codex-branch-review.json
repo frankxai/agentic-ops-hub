@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-realityarchitect-codex-branch-review",
+  "class": "MEASURE",
+  "priority": 4,
+  "agent": "claude",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\realityarchitect",
+  "what": "Independent review of the unmerged Codex branch experience-architecture-20260925 (134 files) and a planning-model spec for Reality Architect",
+  "why": "The branch holds +16,048 and -1,128 lines (Threshold entry, Reality Card studio, inner-obstacle reflection, two test files) and has never had a second-harness review. Frank also asked for project, sprint and spec planning with domain and branch review; no such feature exists in the repo.",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. Checker role, so a different provider than the maker (Codex): claude with Fable allowance, as a Claude cloud session started by Frank from the Kickoff prompt comment on issue 68. Check out the branch in a fresh worktree or cloud clone, run its tests, typecheck, lint, build and Surface Guard, read the diff by area, and post one review comment with a verdict (merge, split into reviewable PRs, or reject parts), file-and-line blockers, unsourced user-facing claims, privacy and security concerns, and accessibility problems. Then comment on issue 68 with a one-page planning spec (entities project, sprint, spec, branch, domain; derivation from reality.md goals and git state; what is out of scope; three questions for Frank). No planning code before Frank approves. Done when: the review comment and the spec comment exist, listing commands run and real results. Do not push to the Codex branch; do not merge.",
+  "evidence": "https://github.com/frankxai/realityarchitect/issues/68",
+  "owner": "exec-cto + Frank (planning approval)",
+  "maxMinutes": 60
+}
