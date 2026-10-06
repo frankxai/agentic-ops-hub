@@ -17,6 +17,83 @@
 
 ## Current
 
+### MISSION: build the estate's agent-native version-control layer, and beat the field
+
+Read this whole entry, then `ops/sessions/2026-10-06.md`, epic #171, and the entry below this one ("land four PRs, then run G1"), which is Phase 0 and holds the exact PR state, guards and sequencing. This entry is the mission; that one is the first step of it.
+
+**Thesis to test, not to assume.** Version control for parallel agents has two problems. The first is mechanical (locks, conflicts, workspace cost), and plain `jj` mostly solves it. The second is semantic: patches that pass alone and fail together, work silently lost to a wrong command, secrets captured by an auto-snapshot, and no provenance for which agent wrote what. The field has pieces of each and a finished answer to neither. The estate already owns the missing parts: the lane ledger is pre-write admission, `pr-gate` is maker-not-checker, estate-guard is a hazard scanner, `starlight-memory` is retrieval, the storage bands are an admission control. Build the layer that composes them over `jj`, prove each part with a measurement, and say plainly what did not work. A result that disproves the thesis is a deliverable.
+
+**How to work (the craft bar applies; none of this is optional).**
+- Research first, then spend most of the session building and measuring. A session that returns a plan and no better artifact failed.
+- Think hard before each architectural choice. Before every experiment write the hypothesis and the result that would falsify it, then run it. Keep what survives.
+- Every claim in a deliverable carries a source URL and the date you read it, or a command and its output. Open each lead yourself; the list below came from search snippets that were not read, so confirm an arXiv ID, title and abstract before citing. Never write a number a command can produce. Agent-built pages in this estate have invented benchmarks before; assume yours will unless you prove otherwise.
+- Maker is you. Every artifact gets one adversarial pass from a different provider (Grok or `codex --profile review`) prompted as a skeptical buyer who already declined to use it, and you fix what it finds before anything is called done.
+- Licences: `CodeAlive-AI/jj-agentic-workflow` and `ruvnet/agentic-flow` show no licence on GitHub, so read them for ideas and copy no code. Check the licence of anything else before reusing a line. `jj` itself is the engine; depend on its CLI.
+
+**Phase 1: research sprint, bounded to about two hours, dossier at `ops/evidence/jj-research/DOSSIER.md`.** For each source record: claim, URL, date read, confidence, what we adopt, what we beat, what we reject. Leads:
+- Direct references. `CodeAlive-AI/jj-agentic-workflow` (the strongest: skills, guarded wrappers, hooks, a hazard test suite; its README lists `jj undo` reverting concurrent writers, `jj status` snapshotting stray files, secrets committed by auto-snapshot and visible in `jj evolog`, ref deletion abandoning commits, empty revsets returning no error). `ruvnet/agentic-jujutsu` (already assessed, see the session file). `hugoh/awesome-jj` and its discovery report (issue 49), `keanemind/jj-mcp-server`, the `netresearch` jujutsu-workflow skill.
+- Alternatives. GitButler's parallel-agents docs (many agents in one workspace, no worktrees) and the 2026 JJ Con talks on blog.gitbutler.com; Sapling for parallel agents (ezyang, blog.ezyang.com/2026/03/parallel-agents-heart-sapling); Tandem, a prototype that shares jj workspace snapshots across machines; Google's internal jj work on tracking AI contributions through history rewrites; the wavect.io worktrees-versus-jj comparison; Joshua Lyman on jj workspaces; the jj compatibility note that partial clones are unsupported.
+- Science, to be opened and verified: arXiv 2609.25396 "Passes Alone, Fails Together" (a benchmark of semantic coordination in parallel agent development; candidate eval for gate G4), 2605.20563 multi-agent collaboration with state management, 2604.16339 semantic consensus (reports a 25.9 percent baseline conflict rate over 600 runs; check what that measures), 2607.00041 ATM, brokered pre-write admission for co-synthesis (compare with our lane ledger), 2605.17076 S-Bus, 2605.17279 Rover, 2605.16646 LLM-based versus search-based merge resolution. Then search the CRDT and patch-theory line yourself (Automerge, Loro, Peritext, Pijul, Darcs) and state honestly whether it applies; the first search found nothing on CRDTs.
+- Internal. `tools/lane.mjs`, `tools/pr-gate.mjs`, `.claude/ci/estate-guard-scan.mjs`, the starlight-memory retrieval stack, `pp`, and the storage bands.
+- Method. Fan research out to parallel sub-agents by lead cluster (references, alternatives, papers), each returning structured findings, then reconcile their disagreements yourself. Use a large-context model for the papers and a real-time-search model for the repos and talks. Respect the concurrency budget below.
+
+**Phase 2: reproduce the hazards, on jj 0.45.1, with a test that fails when the guard is removed.** Reproduce each of the five CodeAlive hazards yourself in a scratch repo. Add one the README does not mention: jj snapshots bypass Git hooks, so the estate's gitleaks pre-commit never sees a secret that jj commits; prove or refute it, and if true, that is a finding for estate-guard. Each confirmed hazard becomes a guarded-wrapper rule and an estate-guard rule.
+
+**Phase 3: build, in this order of leverage, each behind a gate you define up front.**
+1. Guarded `jj` wrapper: blocks bare `undo` and `op restore` in a shared repo, scans for secrets before any snapshot, makes empty revsets an error, refuses ref deletion that abandons commits. Gate: each hazard test fails without the wrapper and passes with it.
+2. Agent workspaces: one `jj workspace` per agent, claimed through `tools/lane.mjs`, refusing in storage CRITICAL or TIGHT, bookmark `agent/<harness>/<scope>` so `pr-gate` sees a normal branch. Gate: G1 numbers against Git worktrees (RAM, disk, push round-trip).
+3. Receipts bound to reality: extend the G2 receipt so it covers the actual operation id from the op store and the agent identity (set a per-agent jj user; today the log records the OS user). Gate: a receipt for the wrong op or the wrong agent fails.
+4. Semantic gate: build the integration of every live agent head with `jj new a b c`, run the repo's tests on the combined result, and report the passes-alone-fails-together rate. Add symbol-level pre-write claims to the lane ledger. Gate: on the G4 benchmark, with and without the gate, same tasks, a different provider grading.
+5. Trajectory memory: land `starlight-memory` #25, close #28, build the G3 on/off harness. Gate: suggestions on beat suggestions off, measured, or the feature is dropped.
+6. Provenance: record which agent and model wrote each change in commit trailers and carry it through rewrites. Gate: attribution survives a rebase and a squash.
+7. Pilot, only if 1 to 4 pass: Arcanea canon edits kept as first-class conflicts for `canon-guardian`, never touching `CANON_LOCKED.md`.
+Stop building at the first gate that fails and write down why; do not stack work on an unproven layer.
+
+**Phase 4: honest comparison, same tasks, same machine.** Plain Git worktrees, plain `jj`, `jj` with our layer, and GitButler if it installs within the RAM budget. Metrics: lost-work incidents, passes-alone-fails-together rate, merge time, peak RAM, disk, secrets caught. Record negative results next to positive ones.
+
+**Using the fleet at full strength.**
+- Judgment and architecture, red-team, and the merge-or-kill calls: the strongest reasoning tier with extended thinking. Build: Sonnet or Codex. Bulk mechanical edits: `codex exec`. Reading papers and large repos: the long-context model. Real-time repo and talk search, and adversarial review: Grok. Counts and greps: the cheapest tier.
+- Concurrency budget: `pp preflight` before any fan-out; one heavy local agent at a time; at most three light research sub-agents while free RAM stays above 4 GiB; stop fan-out the moment it drops. Prove a "remote" runner is remote with a hostname-and-OS canary before sending it anything heavy; the last three ran on this laptop. Firecrawl is out of credits; use the built-in web tools.
+- Every agent you spawn gets the full context it needs in its prompt, one branch `agent/<harness>/<scope>`, a draft PR, and a result file. None merges.
+
+**Deliverables.** `ops/evidence/jj-research/DOSSIER.md`; a hazard test suite; the built layers with their gate results; a comparison report with the negative results; updated epic #171; each PR through `pr-gate`. Public release, npm publish, or a new top-level repo needs Frank, and the repo name is still his to pick.
+
+**Do not.** Install `agentic-jujutsu` or `agentdb`; copy code from a repo with no licence; touch the `claude-code-config` `main` checkout; push to `main`; self-merge; restart a killed job unprompted; write a claim you did not verify. Close with made, verified, proposed, and name what you could not verify.
+
+### Phase 0 detail: land four PRs, then run G1
+
+You are the conductor. Maker is Claude on every PR below, so every review comes from a different provider (Grok first, `codex --profile review` as the fallback). Read `ops/sessions/2026-10-06.md` and epic issue #171 first; they are the plan and the status. Re-measure anything below before you rely on it: SHAs drift, and a stale belief is how this slice already lost an hour (a Grok block caught two wrong facts in the write-up).
+
+State at 2026-10-06 ~02:30 Amsterdam (verify each with `gh pr view`):
+
+| What | Where | State |
+| :--- | :--- | :--- |
+| Plan and handover | hub PR #170, head `4ddfcb8`, worktree `starlight\worktrees\agentic-ops-hub-jujutsu-20261006` | ready, no valid sign-off (Grok's block was on `8253a97`, now stale; its re-review was killed by memory pressure) |
+| G2 signed receipts | hub PR #174, `agent/claude/jj-g2-receipts` | draft; PASS re-run by the conductor, 8 of 8 |
+| Skill caveat and pin | claude-code-config PR #30 | draft, 4 files under `skills/agentic-jujutsu/` |
+| Trajectory record | starlight-memory PR #25, fixes at `e195874` | draft, 295 of 295 by the agent, not re-run |
+| Frontmatter escape | starlight-memory issue #28 | open, unstarted |
+| G1, G3 | #171 | not run, not built |
+
+Machine: free RAM was 2.1 GiB when the system killed the last Grok run. The floor is 4 GiB. Step zero is `pp preflight --workload swarm`; on `hold` or `bounded` with under 4 GiB free, stop and report, do not retry in a loop. Never kill another process tree to make room.
+
+Steps, each with an exit condition:
+
+1. Preflight passes. Exit: preflight says `allow`, or you report the hold and stop.
+2. Review one PR at a time, in order #170, #174, claude-code-config #30, starlight-memory #25. For each: `gh pr ready`, then from `C:\Users\frank\starlight` with `NO_COLOR=1 FORCE_COLOR=0 CLICOLOR_FORCE=0`, run `grok -p "<review prompt naming the exact head SHA and the claims to verify against primary sources>" --allow "Bash(gh:*)" --allow "Bash(node tools/pr-gate.mjs:*)" --allow "Bash(npm view:*)" --allow "Bash(sleep:*)" --max-turns 45`. Exit: `node tools/pr-gate.mjs verify` prints GATE CLEAR, or a block you have fixed and re-reviewed. A push voids a sign-off, so fix everything before re-asking. A block is policy-correct when CI is red, even if the red already exists on main.
+3. Merge only on GATE CLEAR, through `node tools/pr-gate.mjs merge`, never `gh pr merge`. starlight-memory and claude-code-config may require Frank's GitHub approval; if protection blocks the merge, record it and move on. Exit: merged, or blocked with the exact reason on #171.
+4. After #170 merges, append the outcomes to `ops/sessions/2026-10-06.md` and refresh the ledger in one small follow-up PR, and comment the final table on #171.
+5. G1 on the laptop, only after steps 1 to 4 and a fresh preflight: three agents in three `jj workspace` copies of a scratch repo under `starlight\scratch\`, colocated with Git, then push to a throwaway remote. The jj 0.45.1 binary is at `starlight\scratch\jj-g2-bin`. Record peak RAM and disk against three Git worktrees. Exit: no lock errors, a clean push round-trip, and the numbers on #171.
+6. Delete scratch only after merge: `starlight\scratch\jj-g2-hub`, and the nested `ccc-jj` and `sm` clones under `.claude\worktrees\agent-a7fb3848d77c06762` and `agent-a45e4f8ea91cacdbc`.
+
+Capability routing (AGENTS.md section 4): judgment, merge or kill, and red-team go to a Fable or Opus tier; build to Sonnet or Codex; bulk mechanics to `codex exec`; large-context scouting to antigravity; mechanical counts to Haiku. Concurrency budget on this machine: one local heavy agent at a time. Parallel work is allowed only on a genuinely remote runner, and the last "remote" launches ran on this laptop. Prove remoteness first with a canary that prints hostname and OS before you trust it for anything heavy. Cloud candidates after the merges: issue #28 (frontmatter escape) with its handover prompt, then the G3 on/off harness in starlight-memory.
+
+Do not: install `agentic-jujutsu` or `agentdb`; create the `agent-trails` repo before Frank picks a home and name; touch the `claude-code-config` `main` checkout (55 dirty files, one a rewrite of `hooks/secret-guard.cjs`, modified live that morning; it needs an owner); self-merge; push to main; or restart a killed background job without being asked.
+
+Frank-only: the arcanea `CLAUDE_CODE_OAUTH_TOKEN` or deleting `claude-code-review.yml`; the `surface-approved` label on gencreator.ai #138; the repo home and name; per-file licence confirmation before any code is copied from `ruvnet/agentic-flow` (the repo shows no licence; the npm package is MIT).
+
+Close with made, verified, proposed. Say plainly what you could not verify.
+
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 
 The pack is on `main` in twenty repos (see the 2026-10-05 session, night entry). From a clean checkout of the estate, run `scripts/estate-guard-rollout.sh ~/repos` for the repos in `ops/evidence/estate-guard/repos.txt` that are not yet installed (`--no-hooks` for the `awesome-*` and `*-skills` repos); one draft PR per repo, mark ready, let CI run, merge. Then the medium PRs in this order: `arcanea` hooks off `@latest` (10 lines in `.claude/settings.json`; record the pinned version), SHA-pin the 61 tag-pinned actions, CSP on the six sites without one. Two settings only Frank can change: add `CLAUDE_CODE_OAUTH_TOKEN` to arcanea or delete `claude-code-review.yml`; add the `surface-approved` label to [gencreator.ai #138](https://github.com/frankxai/gencreator.ai/pull/138) so Surface Guard works on that private repo too. One decision: ai-music-academy's audit (`next` 16.3.6 now; Tailwind 4 or an audit exception for `braces`). Read `docs/ESTATE-GUARD.md` for the five standing decisions. Watch the first fire of `estate-guard-sweep-weekly` on 2026-10-12 06:11 Amsterdam; it must produce a draft PR into `ops/evidence/estate-guard/2026-10-12/` or say RED.
