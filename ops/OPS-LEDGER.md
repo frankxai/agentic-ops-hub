@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: deal-flow growth figures removed, 47c6bf21 reviewed (Grok)
+
+Local head `af4f8cdb8e3cf8c0c4b264042e39e4ecc0f5696b`. Claude PASS on `47c6bf21` for the voice, 2025 roadmap, and AGI pages. `building-deal-flow-pipelines-ai` no longer prints an unsourced year-over-year rate. Claude PASS on `7afa6507` and `af4f8cdb`. The register rows are still unreviewed. Editorial boundary tests: 51 pass. `merge:gate`, the founder demo, and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Golden Age outcome figures removed, release still held (Grok)
 
 Local head `477b3406f50bf4fa1c68e756c161cbe2d32f6502`. `08-golden-age-of-intelligence` no longer prints unsourced year-over-year search percentages or client outcome percentages. The three case studies are illustrations. The register row is still unreviewed. Claude PASS on that diff. Editorial boundary tests: 50 pass. `merge:gate`, the founder demo, and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
