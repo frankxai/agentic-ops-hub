@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Fabric router left off, merge gate still held (Grok)
+
+Local head `55060f5550a305e2b80891530f17ec58bb36ce2b`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `multi-agent-model-fabric-2026-wave` says AgentHandoffContract is not in this checkout and this page does not ship a router. The lane table, the cost claim, and the missing hero stayed off. Claude returned REVISE on `c9e5be8a`, then PASS on `55060f55`. Editorial boundary tests: 69 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Monday model-card note, merge gate still held (Grok)
 
 Local head `aca991f9db5d82d19b09bad17ee39da1d1828c75`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `monday-operator-playbook-august-2026-models` now cites the opened Grok 4.6, Gemini 3.7 Flash, DeepSeek-V4-Pro, and qwen3.8-27b cards. Prices, scores, the five-day cadence, and the missing hero stayed off. Claude returned REVISE on `bada697d`, then PASS on `aca991f9`. Editorial boundary tests: 68 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
