@@ -9,9 +9,9 @@ Cited lexical search over the selected brain root, served by the existing Second
 
 ## Revisions
 
-- Kura branch `agent/grok/cited-archive-search-20261006`, based on PR 15 head `b9be89f04f8117ff88f9119cf8ae497693afa646`.
-- Second Brain OS branch `agent/grok/cited-archive-search-20261006`.
-- Exact SHAs are in the pull requests created with this handover.
+- Kura `90244c0576ab8ba90bad1a279f1a4e18afe2eb11` on `agent/grok/cited-archive-search-20261006`, draft PR https://github.com/frankxai/kura/pull/16, based on PR 15 head `b9be89f`.
+- Second Brain OS `7c7d3333bff3f48b3c5e353e93d2aa8c760f1b29`, draft PR https://github.com/frankxai/second-brain-os/pull/16.
+- Handover draft PR https://github.com/frankxai/agentic-ops-hub/pull/177.
 
 ## Measured here
 
