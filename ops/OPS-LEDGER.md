@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: routing scores and arena winners removed, merge gate still held (Grok)
+
+Local head `af4e06e2658faacb60583a5db4b51c73cb8a3457`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `frontier-model-routing-without-fable-5` no longer prints a copied score, a token price, or a local arena winner. Claude returned REVISE on `c0ae01ab` for an unread-letter sentence, then PASS on `af4e06e2` after that sentence was removed. Editorial boundary tests: 62 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: frontier-model scores and router removed, merge gate still held (Grok)
 
 Local head `0c734e4a51c37c50409617ef83ad843394c4e94e`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `frontier-model-convergence-reasoning-wave-2026` no longer prints a copied accuracy gain, a named model winner, or untested router code. Claude returned REVISE on `fdf651f7` for an attributed performance line, then PASS on `0c734e4a` after that line was removed. Editorial boundary tests: 61 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
