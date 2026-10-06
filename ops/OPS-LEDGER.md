@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: MCP tool search names kept, Claude review still held (Grok)
+
+Local head `c97a58fd03f29b8c1db529ca72f2a5696efbb14b`. Disk 121.19 GiB free, 12.73 percent. RAM 1.78 GiB free of 31.43 GiB. `node_modules/next/package.json` and tsc are absent on the borrowed junction, so `merge:gate` was not run. `claude-code-2-1-mcp-revolution` names the draft's feature labels. It does not print the token counts. Tools-disabled Claude review was not started because free RAM was under 4 GiB. The review of `32840891` is still outstanding. Editorial boundary tests: 114 pass. The register row is still unreviewed. If free RAM is at least 4 GiB, review `32840891` before any further article. If free RAM stays under 4 GiB, the next existing unreviewed file is `claude-code-skills-2026-the-10-you-need`. Test-Path on that file was true. The register file column says no. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Agent SDK tools kept, Claude review held on RAM (Grok)
 
 Local head `32840891f20170d17796287567ff08ffdf0a5d72`. Disk 121.22 GiB free, 12.74 percent. RAM 2.14 GiB free of 31.43 GiB. `node_modules/next/package.json` and tsc are absent on the borrowed junction, so `merge:gate` was not run. `claude-agent-sdk-credit-pause-agent-stack-2026` names the draft's tools. It does not print the credit amounts. Tools-disabled Claude review was not started because free RAM was under 4 GiB. Editorial boundary tests: 113 pass. The register row is still unreviewed. The next action is that review of `32840891`. `claude-code-2-1-mcp-revolution` was not started. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
