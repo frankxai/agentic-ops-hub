@@ -497,6 +497,13 @@ runtimes unexecuted. Prove the current owner's host containment, broker and
 transport integration before the useful native roundtrip. Continue the complete
 journey below, preserving earlier requirements and other fronts.
 
+Current main7eea57a includes accepted Ops192 QueenWorker/Windows Job Object support.
+CI already tested the controller together with it at merge0730bc7. Reuse that
+implementation when wiring the host driver; keep one execution owner and prove
+the remaining filesystem/network/credential/broker/transport boundaries. Fresh
+04:14 UTC review-lite remains HOLD at5555 MB versus6144 required. Hub153 current
+CI and estate-guard checks pass; it remains a draft handover.
+
 ```text
 Continue Frank's Starlight/Queen work as the accountable engineering lead. Deliver
 a valuable working system through implementation, independent review, normal

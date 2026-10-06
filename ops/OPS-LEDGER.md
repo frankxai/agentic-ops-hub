@@ -12,6 +12,11 @@ review37411828357 completed with [no issues found](https://github.com/frankxai/a
 Three earlier private Anthropic critiques and their repairs are preserved.
 The merge gate still requires an actual other-harness head-bound signoff.
 
+CI tested merge0730bc7 of this head with accepted Ops192/main7eea57a, including
+the existing Windows Job Object worker. Reuse that adapter for the host pilot;
+it leaves filesystem/network/credential isolation and native-model proof open.
+Fresh04:14 UTC review admission remains HOLD at5555 MB versus6144 required.
+
 Local review admission at04:00 UTC held at6001 MB versus6144 required. No new
 package, worktree, swarm, schedule or production runtime was installed. Active
 Grok/PowerShell Queen ownership is preserved. Native host containment, broker and
