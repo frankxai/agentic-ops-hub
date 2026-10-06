@@ -26,7 +26,7 @@ Actual Chrome verification belongs to earlier head d401317; final embedded-scrip
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-04 (complete report89d1e6d/172 tests/current preview verified; full factory release/live execution unfinished; actual recoverable creator case and qualified outcome review saved/cache retained; Swarm deployment readback merged; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 22 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-06 (Creator Studio official-media correction8bc3e53; 176units/40browser checks and actual Framework poster verified; playback/photo coverage and exact release gates open; production4588a24; live factory unfinished). Previous sweep retained: 2026-10-04 (complete report89d1e6d/172 tests/current preview verified; full factory release/live execution unfinished; actual recoverable creator case and qualified outcome review saved/cache retained; Swarm deployment readback merged; estate design blocked pending trust/assigned integration/access; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX batch 22 saved locally/release held) · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-04: Complete creator reports retain all fields; full factory completion status (Codex)
 
@@ -122,7 +122,7 @@ The previous foreign handover lane was released; current main552e11ea was integr
 
 Technology PR34/77a4374, its existing preview and153-unit/51-page/34-browser evidence remain unchanged. Swarm PR35/main2b4e159 and exact495/29/PG17/build/dry-run proof remain in their scope. Next prove a named useful creator mission against the existing hardware-sheet alternative, recording output, repair/time and actual attributable cost. Trusted workflow entrypoint/deployment enforcement, durable create intent/authenticated dispatch, Vercel app-local adapter and uncertain external-effect recovery remain required before a live worker. Mobile feedback/focus/touch, independent rendered design/buyer/security/privacy/licence/commercial gates, actual billing/native quota/hardware throughput/ROI and release remain open. Policy loading is distinct from runtime enforcement.
 
-**Last sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX affiliate/account slice saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Historical sweep:** 2026-10-04 (native Bash feedback/recovery and compiled Protocol proof verified; assigned integration/rendered promotion pending; current Protocol/Lab/Academy deployment bindings verified; protocol repair hypothesis10states verified/integration held; live typography18states verified, product defects open; font decoding/migration draft verified; Starlight source authority reconciled/draft promotion pending; brand-icon choice/export evidence saved; asset byte-proof draft/source review held; shell adapter installed/native trust pending; native patch proof/shell coverage failure saved in draft; review desk/stale-sharing repair and actual applied design confirmed in draft; image-only PASS, human/base/production open; Arcanea/native/GenCreator gaps preserved; FrankX affiliate/account slice saved locally/release held) · Queen/SIS continuity PR161 merged; main79 tests and independent source PASS; trusted import/caller/cockpit rollout open · Earlier dated sweeps remain below and were not re-derived · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
 ## 2026-10-05: canary v2 and zero-regression ratchet on both sites (Claude)
 
@@ -1565,3 +1565,95 @@ No new subscription, paid API fallback, schedule, fleet worker or production
 activation occurred. The full Queen/subscription/API/cloud/team/brand objective
 remains active; use [swarm15](https://github.com/frankxai/starlight-swarm/issues/15)
 for the next named reversible mission's authority/access/security path.
+
+## 2026-10-06: Official product media takes priority in Creator Studio (Codex)
+
+Task `01a101b1-9d38-7fa1-b1f0-dec923631d7f`. Frank rejected generic-first Studio
+visuals and asked why official images and videos were omitted across sessions.
+The concrete local mistake was an image-only registry and schematic fallback,
+with source/test/provenance work taking priority over official-media discovery.
+Other unseen sessions were not inspected. Shared policy does not prohibit official
+media; unavailable photo reuse is separate from video embedding or gallery linking.
+
+[Technology PR34](https://github.com/frankxai/starlight-technology/pull/34),
+source `8bc3e538e05bccb95ce924ffe2b0e15f05c4593b`, now includes official Framework local-AI and NVIDIA RTX5090
+video panels, direct manufacturer galleries for Framework, GMKtec, NVIDIA and
+Apple, exact-generation labels and a working close/recovery path. Apple UK's
+tested oEmbed route refused embedding, so its official video stays link-only.
+The existing Mac CC-BY photograph remains credited; it is not Apple imagery.
+No manufacturer photographs/videos/thumbnails were copied or new paid service
+added. GMKtec's default recommended candidate still has a gallery link and no
+cleared local official photo/video; that media gap remains open.
+
+The Technology AGENTS.md now requires official-media research before generated
+or diagram substitutes. The founder rejection is in the existing taste ledger.
+This is a documented expectation, not universal runtime enforcement or a claim
+that all agent sessions load it. Memory-vault synchronization remains pending.
+
+Activation loads only a fixed reviewed YouTube video ID through privacy-enhanced
+mode; no external media request before the click, private plan not interpolated,
+no autoplay. Closing removes the player without changing the saved plan. Native
+44px controls, keyboard focus and stable player geometry stay. One finish pass
+moves long demonstration scope/channel into a native disclosure.
+
+Initial full cloud CI37401124571 passed 176 unit and40 browser checks at4f6feee
+(test merge690e886). It proves recovery and an isolated player lifecycle fixture,
+not real playback. Its separate live-player inspection initially selected a
+candidate without video. CI37401438476 at39b5793 also passed40checks; corrected
+Framework inspection still did not render a poster while the restrictive route
+blocked ten player requests. CI37401795190 passed176units/40browser checks at0a70e64. Its actual player probe remained pending; Google playback-integrity requests were still blocked. Final8bc3e53 verification is pending at this save.
+The clean, non-private media probe now admits the unmodified player's metadata
+read and public static assets, while model/payment/write routes stay blocked.
+Actual media rendering/playback, independent design/buyer acceptance and≥26/30
+current design evidence remain required. Earlier28/30 is historical lead evidence
+and does not overturn the founder's rejection.
+
+Production `starlight.technology` still binds native Git deployment
+`dpl_Fhb3LNxgs56FFsrxK2aktoa3ycih`, SHA
+`4588a2409588b62cb394dc370ff52a46819ba346`. PR34 remains draft; no merge,
+promotion, live worker or rollback was performed. Existing rollback candidate
+stays available. Exact final security/privacy/licence/commercial review and
+production save/reload/export/import/recovery/CTA fulfillment remain open.
+GitHub has three open development-dependency DoS alerts; current lockfile has
+js-yaml4.3.0 andbrace-expansion1.1.16. Required fixes/disposition are unresolved.
+
+Latest Swarm main is5bb6d29 (estate guard PR37), containing the earlierf5ccf6a
+foundation. Swarm15 trusted executor/effect-time authorization/uncertain settlement
+and exact approved useful pilot remain unfinished. OpsPR157's pre-invocation
+admission finding remains open. Finish Technology production before advancing
+live factory execution; seven successful runs per lane precede wider concurrency.
+
+Existing Technology and hub worktrees reused. Interactive admission allowed with
+4794MB free and4GiB floor; disk12.8% bounded. No local build/browser/model worker,
+install, new worktree, cache purge or generated product substitute. Every received
+cloud capture retains its sidecar; both visual ledgers record the inspected run.
+No task-owned local server, browser, model reviewer or watcher is active. Cloud workers stop in the verifier finally block; current cloud run remains pending. Prior hub branches/history and all owner hunk
+bytes were preserved while normally integrating current maineea191e.
+
+### Final verification update, 6 October
+
+Current source8bc3e538e05bccb95ce924ffe2b0e15f05c4593b passes CI37402281712:
+176 units, full lint/typecheck/editorial/build and40browser checks. Tested merge
+bcf7356665d129011c06a5e28fe03af36d2dd0b1 and source share tree
+46d73c78ce8ed1810847ef8ee1b81f6172e38ad6. Current native Git preview is READY:
+https://starlight-technology-byzzpgyko-starlight-intelligence.vercel.app/studio
+Both deployment metadata and served revision marker match8bc3e53.
+
+The two actual1440/390official-player captures visibly show Framework's official
+video poster, publisher/title, play control and YouTube branding. The internal
+CSS selector timed out, so the raw probe's pending status stays preserved; manual
+render inspection establishes poster rendering only. Playback remains unverified.
+Sixteen current PNGs/sidecars are hash verified and in both existing visual ledgers.
+Prior pending runs and the cancelled4bfe0e3 run retain their original status.
+Owned current cloud browser/server exited. No task-owned local process remains.
+
+Current full design score and independent buyer/design/source-security/privacy/
+licence/commercial acceptance remain open. Inline manufacturer-photo coverage,
+GMKtec media and intermediate viewport still need refinement/verification.
+No26/30or founder acceptance is inferred. Production reread still binds4588a24,
+native Git deploymentdpl_Fhb3LNxgs56FFsrxK2aktoa3ycih; no release/live activation.
+
+Both saves: this hub session/ledger/current prompt and Technology30 comment
+6007899870, hub102comment6007900092 and privateOps149comment6007900311. The final
+verification follow-up follows those dated queued statuses. Full task remains
+unfinished; preserve the existing concrete media correction before further work.
