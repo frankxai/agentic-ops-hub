@@ -33,10 +33,10 @@ FrankX draft 899 at `f1ec924fb` removes the `/soulbook` prices. The live page st
 
 Jules spawn is open and the cap is 4. Do not create a task until `jules-ops.mjs status` shows `auf=0` and `inFlight` under 4, and only after the issue has been read. One create, then read status again. Pull a finished diff without applying it into a primary checkout. Reject a boolean that hides a literal, a deleted count replaced by a new sentence, and a test that asserts mojibake. Require the draft, green CI, and an approval from someone other than frankxai before any squash.
 
-- Arcanea 234 completed, no pull request, land by hand: https://jules.google.com/session/18425388940435037634
-- FrankX 841 in progress, decoded title, no lookbehinds: https://jules.google.com/session/4595296974943970911
-- FrankX 804 completed, no pull request, Offer and battle-tested line deleted, `merge:gate` edit unapplied: https://jules.google.com/session/13660620229358805389
-- FrankX 787 completed, emoji removed, mojibake test, do not land as-is: https://jules.google.com/session/13388676613598325033
+- Arcanea 234 completed, no pull request, accept, leave unapplied: https://jules.google.com/session/18425388940435037634
+- FrankX 841 completed, no pull request, accept, leave unapplied, decoded title: https://jules.google.com/session/4595296974943970911
+- FrankX 804 completed, no pull request, leave unapplied, Offer deleted, `merge:gate` edit unapplied: https://jules.google.com/session/13660620229358805389
+- FrankX 787 completed, no pull request, leave unapplied, mojibake test: https://jules.google.com/session/13388676613598325033
 
 The failed editorial session https://jules.google.com/session/6185998078557424291 stays failed. Do not retry https://jules.google.com/session/8651854513076101430. Arcanea 509 still needs the install log read before another edit. Do not start a favicon change or a GenCreator meter. GitHub project 8 is the portfolio board. eve stays uninstalled. Do not call Cloudflare API MCP until its auth succeeds.
 

@@ -2,11 +2,11 @@
 
 > Rolling state of all work across every repo and terminal session. Source of truth lives here (git-versioned). Obsidian reads this folder. Copy it into FrankX only when that checkout is clean and on the assigned branch. Linear stays archive unless Frank asks.
 >
-**Last sweep:** 2026-10-06 (Suno patch reviewed, no PR; editorial plan approved and in progress) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
+**Last sweep:** 2026-10-06 (four Jules sessions completed, no pull requests, patches left unapplied) · **Cadence:** end of each working session (`/ops-sweep`); Fleet watch flags a sweep older than 14 days
 
-## 2026-10-06: Two Jules plans corrected, Suno finished without a PR (Grok)
+## 2026-10-06: Four Jules sessions completed without pull requests (Grok)
 
-FrankX 804 session [13660620229358805389](https://jules.google.com/session/13660620229358805389) completed after the "Get battle-tested prompts" sentence was rejected. The patch deletes the Offer and that sentence, and the test fails if either string remains. It also edits `package.json` `merge:gate`. No pull request was opened, and the patch was not applied. FrankX 841 session [4595296974943970911](https://jules.google.com/session/4595296974943970911) is in progress on the decoded-title plan. Lookbehinds were not approved. Cap stays 4. Receipt: `ops/sessions/2026-10-06.md`.
+FrankX 841 session [4595296974943970911](https://jules.google.com/session/4595296974943970911) completed. `editorialTitle` returns `decodeTitle(post.title)`. The test expects the two full titles. No image files. Verdict: accept, leave unapplied. No pull request. FrankX 804 session [13660620229358805389](https://jules.google.com/session/13660620229358805389) deletes the Offer and the battle-tested line, and also edits `package.json` `merge:gate`. Verdict: leave unapplied. Arcanea 234 session [18425388940435037634](https://jules.google.com/session/18425388940435037634) is accept, leave unapplied. FrankX 787 session [13388676613598325033](https://jules.google.com/session/13388676613598325033) stays unapplied because the test asserts mojibake. Cap stays 4. `auf=0`, `inFlight=0`. Receipt: `ops/sessions/2026-10-06.md`.
 
 ## 2026-10-05: Soulbook prices drafted, four Jules slots filled (Grok)
 
