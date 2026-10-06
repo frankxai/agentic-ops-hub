@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Grok 4.3 scores and prices removed, merge gate still held (Grok)
+
+Local head `937d3b81d69be2a35dae507c4ef75c6481d5d257`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `grok-4-3-analysis-2026` now follows the model card opened on October 6, 2026. Copied index scores, token prices, and the always-on reasoning claim are removed. Claude PASS on `937d3b81`. Editorial boundary tests: 64 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: September 2024 Golden Age draft labeled, merge gate still held (Grok)
 
 Local head `a96a35fa7e8060d4c98c5c5bcf5b11035791ed4c`. Disk 12.93 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `golden-age-of-intelligence` was not covered by the `08-golden-age-of-intelligence` test. Its result tables are removed, and the page says this URL used to hold that draft. Claude PASS on `a96a35fa` after two wording revises. Editorial boundary tests: 63 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
