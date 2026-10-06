@@ -788,3 +788,16 @@ Updated by `/ops-sweep` at session end. The sweep reads **git deltas** (commits 
 *Maintenance run complete. Machine, private GitHubs, agent harness, Starlight memory, wisdom/vaults/knowledgebases maintained with excellence. Crons continue rest of night.* 
 
 **End of 2026-07-14 Maintenance Entry.**
+
+## Gaming ecosystem proposal pickup, 6 October 2026
+
+Documentation saved. Preserve accepted RealityDiffusion, Arcanea and GenCreator work. Next: compare setup planning with editable creative-world output on one intended user's real task, then select one owning product issue and define observable completion/recovery.
+
+## Gaming execution pickup, 6 October 2026
+
+Use the gaming-setup packet in NEXT-PROMPTS on the same branch for Arcanea issue #527, draft #526. Supply the actual repository-bound cloud environment, current quota and immutable head before submission. Preserve other active work. Return reviewable behavior and evidence; commercial strategy and brand adoption stay separate. Live Starlight Home refresh and implementation are pending; no worker is running for this packet.
+
+
+## Gaming continuation registered, 6 October 2026
+
+Queen card gaming-ecosystem-20261006 is held for fresh admission, not running. The existing gaming-setup prompt now carries explicit model/tool activation and review instructions. Use the saved private reopen/handover packet and the current issue #527 implementation scope. Do not duplicate this card or create another queue.
