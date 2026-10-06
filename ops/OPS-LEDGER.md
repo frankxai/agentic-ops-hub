@@ -1,5 +1,16 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: FrankX guides and affiliate resolver reviewed locally, release held (Grok)
+
+FrankX issue 252, source `frankxai/FrankX` worktree `frankx-editorial-renewal-20261003`, branch `agent/codex/editorial-renewal-20261003`.
+
+- Completed locally: three guide corrections (`009ea4c3`, `46573c89`, `9a8f1fca`) and affiliate resolver fixes (`a6c53960`, `9acd630e`). Head `9acd630ebbca2fb86fbb195204cd6273b28abed4`. 23 foreign dirty files remain unstaged. Not pushed.
+- Reviewed: Claude PASS on the guide revision `9a8f1fca`. Claude REVISE on `9a8f1fca` and `a6c53960` for the resolver, then PASS on `9acd630e`. Editorial boundary tests 47 pass. Intake 13 Python and 6 Node pass.
+- Live: none. `merge:gate` was not run. C: was 13.01 percent free and Next is missing from the junction. Founder demo was not produced. Production checkout stays `ed4f501fe918ca22914c75b0184e8fb45df50ed6`. `origin/main` of `frankx.ai-vercel-website` read as `960b4e9c1684b30c67ccf4c58a0219307d927495`, which this slice did not deploy.
+- Still open: 178 unreviewed articles, the queued multi-site plan, compile and browser acceptance, and any live post or new affiliate agreement.
+
+See [session](sessions/2026-10-06.md).
+
 ## 2026-10-05: SIS session continuity reviewed to PASS and merged (Claude)
 
 Session continuity is MERGED_NOT_LIVE:
