@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Willison prompt-injection page quoted, merge gate still held (Grok)
+
+Local head `9c3ae647eabb78c654ed39c2dc0e6eda94724158`. Disk 121.3 GiB free, 12.75 percent. RAM 6.76 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-engineering-without-hype-willison` quotes the November 27, 2023 prompt-injection page and the fetched player total -1:12:43. The episode body was not in the fetch. Claude returned PASS on `9c3ae647`. Editorial boundary tests: 95 pass. The register row is still unreviewed. The next existing unreviewed file is `ai-guide-for-families-and-professionals`. Prepared rows stay prepared. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Soulless-AI exercises kept, merge gate still held (Grok)
 
 Local head `a70d43bba06d77165ff380057aacbcbd501edd27`. Disk 121.4 GiB free, 12.75 percent. RAM 6.67 GiB free of 31.43 GiB. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `ai-doesnt-have-to-be-soulless` keeps the draft's five labels, five questions, and seven-day lines. Claude returned REVISE on `2fa2f7e4`, then PASS on `a70d43bb`. An earlier local commit on the same file is `3eb8a81e`. Editorial boundary tests: 94 pass. The register row is still unreviewed. The next existing unreviewed file is `ai-engineering-without-hype-willison`. Prepared rows stay prepared. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
