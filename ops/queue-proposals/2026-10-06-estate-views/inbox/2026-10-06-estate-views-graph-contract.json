@@ -1,0 +1,15 @@
+{
+  "id": "2026-10-06-estate-views-graph-contract",
+  "class": "BUILD",
+  "priority": 3,
+  "agent": "claude",
+  "risk": "low",
+  "sandbox": "workspace-write",
+  "repo": "C:\\Users\\frank\\starlight\\repos\\starlight-command-center",
+  "what": "Evidence-linked Atlas graph contract and fixtures: stale, missing and conflicting claims can never render as verified",
+  "why": "Issue 39 is the data prerequisite for the Empire Atlas pilot (issue 40). The graph on starlight-estate holds real conflicts to use as fixtures: knowledge-tree gate PASS versus the void claim in TRUTH.md, agentic-income band 99-299 EUR versus a planned 67 USD Blueprint, demand doors 404 and 401 on 2026-09-19, and no analytics source so funnels are unmeasured, not zero.",
+  "do": "Route per ops/model-arena/kb/dispatch-routing.md. Judgment and architecture go to claude (Fable has the most unspent allowance); run as a Claude cloud session started by Frank from the Kickoff prompt comment on issue 39, because the laptop is on HOLD. Read issues 39, 40, 38, 35, 28 and the 2026-10-06 context comment first; extend the existing observatory.snapshot.v1 pattern (collectors.ts, store.ts, observatory-schema.mjs); no second cockpit, daemon or write adapter. Deliver a Zod schema and types, deterministic fixtures with the real conflicts, a validator, a short source-mapping section in ARCHITECTURE-CONSOLE.md, and tests proving stale or missing input cannot become a verified badge. Branch agent/claude/atlas-graph-contract, one DRAFT PR. Done when: typecheck, node --test and build pass, issue 39 has a comment with the PR link, real command results and what was not verified. Never merge; a different provider than the maker signs off through node tools/pr-gate.mjs. Draft PR only, no secrets, no deployment. Read origin through gh api before stating any repo state. Codex reviews; exec-cio checks provenance.",
+  "evidence": "https://github.com/frankxai/starlight-command-center/issues/39",
+  "owner": "corps-engineering + exec-cio",
+  "maxMinutes": 90
+}
