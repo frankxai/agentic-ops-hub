@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-06: Tallinn schedule lines kept, merge gate still held (Grok)
+
+Local head `97a5d99c24c85adf7ba323728c617e2e297d9186`. Disk 12.84 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `_drafts/mindvalley-university-2026-tallinn` keeps the opened schedule lines and this page's checklist. The score table, prices, attendance claim, and affiliation sentence stayed off. Claude returned PASS on `97a5d99c`. Editorial boundary tests: 81 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
+
 ## 2026-10-06: Help-a-friend lists kept, merge gate still held (Grok)
 
 Local head `59bfedeb3d5b4afb0fb004154ff60786f75d0a23`. Disk 12.84 percent free. Next and tsc are absent on the borrowed junction, so `merge:gate` was not run. `_drafts/higher-self-protocol-part-4-help-a-friend` keeps the daily and weekly lists. The audience claim stayed off. Claude returned PASS on `59bfedeb`. Editorial boundary tests: 80 pass. The register row is still unreviewed. The founder demo and production deploy remain holds. Not pushed. See [session](sessions/2026-10-06.md).
