@@ -1,5 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Frontend, Vercel and Figma: finish the FrankX book journey pilot
+
+Read [the workflow](../docs/design/frontend-journey-workflow.md) and [7 October session](sessions/2026-10-07.md). Reuse [the FigJam board](https://www.figma.com/board/5ycG7mAq4Qk5D7OxXBKrHw) and [product issue #809](https://github.com/frankxai/frankx.ai-vercel-website/issues/809). Refresh the exact production/preview commit and inspect the existing `agent/codex/free-book-direct-download-20260927` lane before any edit. The pilot at `ca096f3` finds a missing Wordless Laws product entry and GET 404; verify an owned PDF and reconcile delivery before promising download. Do not submit email or infer that local `BookDownloadLink.tsx` is deployed. After fresh browser/storage admission or an existing authorized cloud runner, capture shelf/detail/chapter/next/error-retry at 375/768/1440, with focus, touch, reduced motion and interrupted transitions. Save screenshots and VIS sidecars, capture editable screens into a Figma Design file, and link them to this FigJam map with revision and node IDs. Preserve the first failed evidence and all other fronts. Follow one writer, routing/ownership and exact-review release gates. This prompt activates no standing automation or production promotion.
+
 > Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
 >
 > **Terminal map** (edit as you reassign windows):
