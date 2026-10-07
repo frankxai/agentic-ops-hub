@@ -5,11 +5,17 @@
 Home AGENTS.md now explicitly distinguishes the coordination cwd from per-command product worktrees and requires reading scoped instructions after transitions. Local change only; prior bytes preserved with backup/digests in .starlight/workspace-bootstrap/home-agents-multi-repo-update-20261007.json. Keep station and reader tasks unchanged. If asked to project this shared behavior across harnesses, discover the actual portable source in starlight-agent-config and claim an owned lane first; its primary is currently Grok-owned. Verify each harness's startup behavior, do not assume one provider's rules or that a local file change is an enforced global rollout.
 
 
-## Station research: real outcomes after the private experiment slice
+## Station research: broader innovation and real experiments
 
-Read product-plans draft27 at e85197f5bfc028addf71ef1caf40314a17d66342, issue28 and station/EXPERIMENTS.md, OPPORTUNITIES.md, CONTRIBUTIONS.md, PUBLISHING.md and current experiment-manifest.v0.json (SHA256 32ee005d044c8b6f072b3411459dffe6de2a81fe9231a3e1bf479c897dcb40b1); hub197 preserves context. Frank rejected the narrow first wedge. Preserve the full abundant programme, customer-paid compute and research-only scope. Three small private experiments ran and useful staging/journal/article exist; native multi-harness, live journey/Figma and real sandbox/billing remain open. No literary/customer approval or independent provider verdict.
+Lead Starlight’s next research pass with your strongest reasoning. Read product-plans PR26/27, issue28, hub197 and referenced evidence. Discover relevant repos, skills, designs and publishing workflows yourself. Frank rejects the narrow wedge and finds the current suggestions insufficiently innovative.
 
-Work autonomously in verified owned lanes. Global Codex handoff guide is installed locally; shell cwd does not reload native instructions. Fresh PP/storage/ownership before heavier work;3339MiB/6144required and60/16runtimes refused last reviewer. Never kill foreign tasks or replace the existing orchestrator. After admission, prioritize a real accepted frontend/Figma journey and source-bound native handoff; obtain finite different-provider exact-artifact review, repair confirmed defects and retain drafts. Customer-owned sandbox needs eligible account/cap and SECURITY. Verify useful output, control, interruption/recovery and billed cost; do not substitute another synthetic loop for real outcomes. Article stays outside the site: inspected loader does not demonstrate published:false hiding. Existing demand-capture, waitlist and human publishing gates bind. Preserve all other unfinished goals and source records.
+Expand possibilities across original AI creation, multi-harness workflows, frontend/Figma journeys, customer-owned sandboxes and ecosystem contributions. Challenge the shortlist; autonomously select and execute three admitted experiments with different mechanisms, existing-tool controls and failure/recovery checks. Produce useful creative outputs and concrete upstream contribution drafts. Measure quality, time and attributable actual cost; label unknowns. Pursue real outcomes beyond another fixture-only round.
+
+Draft an evidence-based comparison article and compare free publishing, paid packs, education and verified affiliate/sponsor paths. Reuse accepted products and the existing orchestrator. Preserve research-only scope, repo ownership, PP/storage, no WSL, customer-paid compute, SECURITY/waitlist and human publishing gates. Require different-provider review before merge.
+
+Decide routine details yourself. Deliver artifacts, failures, open gates and only consequential human decisions.
+
+Private exact task-prompt/work export: ~/.starlight/reports/station-experiments-20261007/. Product head e85197f remains draft; source hashes and measured small-test scope are preserved.
 
 ## Frontend, Vercel and Figma: build and release the native readers
 
