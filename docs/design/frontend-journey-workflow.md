@@ -90,7 +90,7 @@ Production Vercel deployment `dpl_9s2AxfEvWbGQ1iGGQD6TdYMqPMFb` is READY at that
 
 Preserve failed root installer37564426215, four-screen return failure37565170026, five-screen cached304 failure37565957085 and intermediate passing37566659772. Capture ledgers include all39 historical/current PNGs without invented human taste. Memory-vault synchronization remains pending. Impeccable scanned the actual changed UI files; incumbent palette and editorial quotation findings are retained with dispositions. No full premium design approval is claimed.
 
-Remaining work: pre-existing reader typography/duplicate heading, floating music control obstruction, sticky-header ancestor behavior, deterministic lazy-image/scroll capture states, full chapter keyboard coverage, other estate journeys, editable Design capture and token/component synchronization. Main CI37568682090 attempt1 was canceled after editing the merged PR body triggered another run with the existing ci-main concurrency group. It was not a test failure. The finalized description is saved; main CI attempt2 is queued once. Preserve both outcomes and inspect attempt2 before claiming green. No session-owned server, browser or reviewer remains running. Private receipts live in the existing `frontend-journey-map-20261007` report. The broad original goal remains active.
+Remaining work: pre-existing reader typography/duplicate heading, floating music control obstruction, sticky-header ancestor behavior, deterministic lazy-image/scroll capture states, full chapter keyboard coverage, other estate journeys, editable Design capture and token/component synchronization. Main CI37568682090 attempt3 passed at e3918f37b58e9e45c3c28e1609be07dc10f3efd9: 15 PNGs, 26 checks, no failures. Every PNG hash/dimension and VIS sidecar validates. Attempt1 cancellation and attempt2 Chrome mobile-keyboard timeout with14 valid captures remain preserved; cause is unproven and retry success is not a reliability repair. Protected preview passed seven exact redirects/four denials, and production passed25 checks. Issue809 is closed as completed; PR810 is closed as integrated, with branch and author/source history retained. Broader design, capture reliability and journey work stays open on674/706. No session-owned server, browser or reviewer remains running. Private receipts live in the existing `frontend-journey-map-20261007` report. The broad original goal remains active.
 
 ## Journey coverage inventory
 
@@ -107,3 +107,11 @@ This is a source-confirmed starting inventory at production tree5a754efc, not ex
 | Contact Frank | /contact → mailto and existing booking destination | Source outbound anchors exist | Responsive/focus checks and destination validation; no message or booking submission |
 
 Extend this inventory through the owning product issue before claiming all journeys. Add role/data state, terminal condition and failure recovery to each capture manifest; keep private/authenticated journeys in an isolated fixture. Maintain the same source/deployment/node linkage across brands while preserving each registered brand pack.
+
+## Keep review and capture costs bounded
+
+Finalize the PR title/body before merging. In this slice, editing the merged PR triggered the existing ci-main concurrency group and canceled the production push run. Retain each run attempt and its actual conclusion. A successful retry does not repair or erase an earlier browser failure.
+
+On a browser protocol timeout, preserve partial PNGs, their provenance and the failure manifest; inspect the failing viewport/command and server output. Use one unchanged-revision rerun to test repeatability. Diagnose a repeated failure before changing timeout limits or input behavior. Keep assertions for real keyboard traversal, pointer reachability and visible focus. Local browser diagnosis still requires machine admission.
+
+The current book pilot runs on every existing CI build. Broader route selection should account for shared navigation, layout and token changes before narrowing captures; always report the required CI context. Keep source/deployment/evidence linked and use the existing Vercel Git integration.
