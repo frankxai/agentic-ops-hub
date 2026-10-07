@@ -1,5 +1,24 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Brand command system: resolve authority, review and actual execution
+
+Continue Frank's approved skills-estate plan and expanded Starlight/Arcanea/GenCreator
+request through agent-config issue 105 and draft PR 106, source `1331e32`. Read
+`docs/brand-command-system.md` and `docs/brand-command-authority-proposal.md` in
+the assigned `agent/codex/brand-command-system` worktree. Preserve the original
+saved plan, three creator outcomes, other agents' source changes and existing
+SI/ACOS/ultrawork commands. Candidate menus/routes/graphs are implemented; real
+host execution and paid product outcomes remain unproven. Obtain an independent
+provider verdict at the exact final revision, resolve Registry authority through
+its reviewed source, then add SI routing in its verified owner without collisions.
+Reuse the existing Foundry engine/judge and SIS graph/admission contracts. Prove
+one admitted native host job with interruption/recovery before expanding to all
+seven; OpenClaw is absent locally. Finish a useful Starlight product slice, a
+canon-coherent Arcanea world/story and an editable source-backed GenCreator
+campaign, comparing actual output with serious alternatives before paid release.
+Run route_work guard/check and separate ownership checks; honor PP/storage.
+Update issue 105 and this hub's three records with exact-revision evidence.
+
 > Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
 >
 > **Terminal map** (edit as you reassign windows):
