@@ -1,5 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+**[Estate PR closure · native integration lead]**
+```text
+Own the PR queue to completion across frankxai and Arcanea-Labs. Read current authority and this census; verify live heads. Decide, repair, independently review, then merge through pr-gate or close proven redundant/unfit work. Drafts, conflicts, missing signatures and stacks are agent work, not Frank holds. Parents first; one writer per worktree; exact-head tests and different-harness signoff; verify Vercel production after each landed web change. No self-approval, --admin, force-push or protection changes. Hold only real human-tier decisions. Use existing Queen/review/landing machinery; make rejected reviews durable repair work and reconcile the full backlog. Record every SHA, reason, next owner and live result. Report net queue movement and unfinished work, never a census as delivery.
+Read agentic-ops203 and its private docs/ops/pr-queue/2026-10-07-report.md first. The API session closed four proven supersessions and prepared source repair; it could not run the native Windows merge gate. Preserve all other unfinished fronts.
+```
+
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
