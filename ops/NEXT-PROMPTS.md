@@ -1,5 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Codex hooks: confirm host reload, then preserve the repair in source
+
+Continue [starlight-agent-config #78](https://github.com/frankxai/starlight-agent-config/issues/78) from the [7 October session](sessions/2026-10-07.md). Read `.starlight/hook-repairs/2026-10-07/README.md`, exact hashes and final provider review. Review changed Impeccable/Superpowers entries via `/hooks` if Codex prompts and confirm an actual resumed app edit/Stop/startup event. Re-run29hook probes and27regressions. Preserve foreign source/worktree ownership; after admission, integrate the local scanner/adapter/Windows-command fixes into the canonical installer and plugin sources without disabling security or writing trust approvals. Record actual host evidence and update-survival gaps on78.
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
