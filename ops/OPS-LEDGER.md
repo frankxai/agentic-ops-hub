@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-07: Codex reader resilience candidate; release evidence pending
+
+[Draft PR919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919) follows the verified book release under [existing platform674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674). Owned reader branch localf16e757b8 adds server reading, scoped typography, native contents/navigation, safe notes/anchors, measured music clearance and escaped source recovery. Eighteen tests, typecheck, lint (8 incumbent unrelated warnings), language audit0hits and actual changed-UI detector pass. Corpus215 includes draft-parent/duplicate catalog entries and is not public coverage. Independent ad2 source review returned findings without approval; current fixes address those findings, with final source/visual review pending. Full254 source attempt timed out at240sec; narrower254 closure returned no confirmed blockers and withheld release approval. Actual ad2 full build passed (21 public static chapters, draft-parent404); latestf16 build,30-screen cloud browser, protected dynamic Vercel proof and independent visual review remain pending. Fresh PP holds the new build at6777MiB/7680required; no new build/browser or extra agent was started, and no foreign process was stopped. Prior productione391 book delivery remains the highest released proof. Figma read/edit quota and broader journey/token/memory gaps remain open. Goal01a11375 stays active; see [session](sessions/2026-10-07.md) and current prompt.
+
 ## 2026-10-07: Starlight interface implementation active (Codex)
 
 Frank subsequently authorized autonomous implementation, integration to main and production across the interface program. The earlier document-only scope describes the proposal slice, not the current authorization. Native goal `01a113ec-1c95-70a0-84eb-ae2b8aae03a3` remains active with the full creation, knowledge, product and multi-harness scope intact.
