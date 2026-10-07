@@ -1,5 +1,10 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Home startup and repo guide pickup
+
+Home AGENTS.md now explicitly distinguishes the coordination cwd from per-command product worktrees and requires reading scoped instructions after transitions. Local change only; prior bytes preserved with backup/digests in .starlight/workspace-bootstrap/home-agents-multi-repo-update-20261007.json. Keep station and reader tasks unchanged. If asked to project this shared behavior across harnesses, discover the actual portable source in starlight-agent-config and claim an owned lane first; its primary is currently Grok-owned. Verify each harness's startup behavior, do not assume one provider's rules or that a local file change is an enforced global rollout.
+
+
 ## Station research: obtain independent review, then Frank decisions
 
 Read product-plans [draft PR27](https://github.com/frankxai/product-plans/pull/27) and [issue28](https://github.com/frankxai/product-plans/issues/28), stacked on preserved Grok PR26. Owned Codex worktree C:/Users/frank/starlight/worktrees/product-plans-codex-station-radar, branch agent/codex/station-radar, clean f2b2964a9ca1b49ed070d893d4979b2b4be8fe90. Research-only files under station/. Follow TRUTH, one writer, no product code/second orchestrator/outside user. REVIEW.md has 13 exact committed artifact hashes and passed document checks; provider review is absent, not a pass.

@@ -1,5 +1,14 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-07: Home entry and multi-repository guidance
+
+Frank asked to advance the existing home AGENTS.md and explain home startup versus repo/worktree execution. Added one 240-word section to C:/Users/frank/AGENTS.md describing coordination entry, Codex startup discovery, explicit repo/nested-guide reads after tool workdir changes, per-repo routing and one named writer per worktree. The home guide is not automatically inherited across a child Git root; ~/.codex/AGENTS.md is Codex's global scope. Other harness discovery remains provider-specific.
+
+Private backup and before/after digests: C:/Users/frank/.starlight/workspace-bootstrap/home-agents-multi-repo-update-20261007.json. Concurrent-edit check passed; removing the inserted section reconstructs every prior byte exactly. No root rename, wholesale replacement, shared runtime projection, additional agent or product repo edit. Official source: https://developers.openai.com/codex/guides/agents-md.
+
+Shared starlight-agent-config checkout is agent/grok/product-dispatch-gate; preserved without edits. Referenced capability-loading.md was absent at the named primary path, so the added rule records unresolved guides rather than claiming loading. This local text change does not establish runtime enforcement or deployment across harnesses. Station PR27/issue28 and all prior unfinished work retain their scopes.
+
+
 ## 2026-10-07: Station research and design draft
 
 [MEASURED 2026-10-07] Research-only slice saved in [product-plans draft PR 27](https://github.com/frankxai/product-plans/pull/27), stacked on [Grok draft PR 26](https://github.com/frankxai/product-plans/pull/26). Codex head f2b2964a9ca1b49ed070d893d4979b2b4be8fe90, branch agent/codex/station-radar, clean owned worktree C:/Users/frank/starlight/worktrees/product-plans-codex-station-radar. Base 7f84b68879064cd1c999d1011dedad5d4fc6d1fb preserved. Track [product issue 28](https://github.com/frankxai/product-plans/issues/28).
