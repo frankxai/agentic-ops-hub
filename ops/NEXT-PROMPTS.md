@@ -19,6 +19,16 @@ campaign, comparing actual output with serious alternatives before paid release.
 Run route_work guard/check and separate ownership checks; honor PP/storage.
 Update issue 105 and this hub's three records with exact-revision evidence.
 
+Latest steering: read the private `.starlight/brand-commands/project-prompts.md`
+and `transfer-brief.md`. Frank wants more inventive experiments and contributions,
+plus an existing-surface blog testing several monetization paths. Choose three
+contrasting real trials across the three brands; compare usable artifacts and
+cost/recovery, implement/refine the promising paths, and turn actual evidence into
+approved articles, editable assets and measured offer tests. Decide autonomously
+within current authority/admission; ask only for missing decisions or required
+outward approvals. A new catalog, proposal or blog draft does not close the
+experimental creator/product outcomes.
+
 > Copy-paste prompts to drop into the terminal sitting in each repo. Keyed by repo (durable) rather than window position. Ordered by leverage. Regenerated each `/ops-sweep`.
 >
 > **Terminal map** (edit as you reassign windows):
