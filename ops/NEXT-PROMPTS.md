@@ -1,5 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Station research: obtain independent review, then Frank decisions
+
+Read product-plans [draft PR27](https://github.com/frankxai/product-plans/pull/27) and [issue28](https://github.com/frankxai/product-plans/issues/28), stacked on preserved Grok PR26. Owned Codex worktree C:/Users/frank/starlight/worktrees/product-plans-codex-station-radar, branch agent/codex/station-radar, clean f2b2964a9ca1b49ed070d893d4979b2b4be8fe90. Research-only files under station/. Follow TRUTH, one writer, no product code/second orchestrator/outside user. REVIEW.md has 13 exact committed artifact hashes and passed document checks; provider review is absent, not a pass.
+
+Fresh PP/storage/ownership admission before any reviewer: previous 4070 MiB free, 6144 required including 2 GiB reserve, hard floor4096. Do not archive another task, kill foreign processes or launch under that floor. If admitted, use a finite restricted independent Anthropic/Grok/Gemini review, bind input/output/provider/model/source digests, repair confirmed document defects, and retain both PRs draft before Frank rules first wedge, receipt/trust design and gated paid-pack demand experiment. Installer, conformance, legal/security, visual/human and demand proof are planned, not executed. Keep the old reader goal674/919 blocked and preserve all its unfinished records.
+
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
