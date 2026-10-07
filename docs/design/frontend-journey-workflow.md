@@ -1,6 +1,8 @@
 # Frontend, design and journey workflow
 
-Status: proposed operating workflow with one source-backed FrankX pilot. This document is adoption guidance. It installs no agent, synchronization, browser runner or release gate.
+Status: operating workflow with the FrankX book candidate in [ready PR916](https://github.com/frankxai/frankx.ai-vercel-website/pull/916). Actual cloud captures exposed and reproduced a covered reader link and a focus-capture timing gap. Current head7fe2ace9 is under cloud verification; production release remains pending. Figma native image upload works, while read and canvas editing are quota-blocked. No standing synchronization service was installed.
+
+The source-only pilot and its observations below are the preserved baseline. Current implementation evidence and remaining release work are in the continuation of the [7 October session](../../ops/sessions/2026-10-07.md).
 
 ## Ownership
 
@@ -57,3 +59,9 @@ Local browser preflight held at 4,989 MB free versus 8,192 required, with 55 tas
 PNG export hit the secret guard on Figma's signed AWS URL; the unsigned thumbnail returned AccessDenied. No screenshot or visual inspection is claimed. Both diagrams have exact Mermaid/prompt sidecars in the private report `frontend-journey-map-20261007`. Memory-vault synchronization remains pending; no shared memory provider was enabled.
 
 The named skills were read and applied to this bounded source-map workflow. Focus, touch, reduced motion, interrupted transitions, live capture, token synchronization, independent provider/design review and the PDF repair remain pending. No product code, production deployment or standing automation changed.
+
+### Rendered failure and Figma upload boundary
+
+CI37565170026 passed the browser installation and retained four actual desktop PNGs at tested merge dbe7baaff63011992adbc9fd4f32d08652309dad, reviewed head5d2fa75. It failed on returning from a chapter to the book. Inspection of the captured chapter and fixed NavigationMega source showed the reader return header under the global navigation. Candidate10b9fc7fdf98d54428ca37c2927f3c9107ba1d15 offsets that header by the existing56px mobile/64px desktop heights. The runner now verifies the real pointer hit target and waits for the previous chapter title. Changed-component lint,14 targeted tests, script syntax, diff and staged secret checks passed. The BookReader detector's existing prose blockquote border is retained as quotation typography, not introduced card styling. CI37565957085 runs this correction; no passing current capture or production release is claimed yet.
+
+Every baseline PNG's SHA256 and VIS sidecar schema passed. Capture ledgers were appended to the existing estate logs without duplicate lines; memory-vault synchronization remains pending. Figma native upload succeeded200 and placed desktop-first-chapter.png on node11:110 in the existing board. The subsequent use_figma annotation/layout operation returned the Starter quota limit. Image import therefore works; editing/layout and read tools remain blocked. The upload is an unannotated historical failure image, not an accepted design or current screenshot. Saved metadata identifies the node and source; no upgrade or quota evasion was attempted. The actual AI review P1 browser-installer finding was explicitly answered with later fix5d2fa75; required Review Gate is now passing. The current local browser admission held at6346MB free versus8192 required; no new local browser/build or agent started.
