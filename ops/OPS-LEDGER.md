@@ -1,5 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-07: Starlight whole-page creation candidate; live acceptance pending (Codex)
+
+[Draft Canvas45](https://github.com/frankxai/starlight-agent-canvas/pull/45), exact30c1e4e/tree089b4ebe, adds optional default-off source-scoped OpenAI/Anthropic directions, complete editable section copy, recoverable proposals and existing checkpoint-linked selected export. [SourceCI37602017753](https://github.com/frankxai/starlight-agent-canvas/actions/runs/37602017753) passes all5jobs (166core/14MCP/49browser+3existing skips per Node matrix). Final exact focused source review PASS5f191d25 and actual same-tree responsive confirm follow preserved failures/WARNs. Two real native drafting passes remain copyWARN; a saved/reloaded Codex-edited artifact receives WARN/usable private draft from independent reviewd74838df. There is no live in-app API call, final-copy/customer approval or matched repair-time savings claim. Capture readback proves456PNG/240original/216receiving companions and one hash-bound record each in both ledgers; vault/physical-device evidence remains pending. [Issue27](https://github.com/frankxai/starlight-agent-canvas/issues/27) stays open and45 draft. Latest RAM2738.9MiB holds further heavy work; all finite workers stopped. Next requires admitted actual provider/account walkthrough and the named editorial repairs. Preserve merged44, draft Command67 owner/privacy, native41 standing hold and the full active goal. See [session](sessions/2026-10-07.md).
 
 ## 2026-10-07: Starlight media comparison in the existing creation workbench (Codex)
 
