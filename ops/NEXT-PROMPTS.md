@@ -2,6 +2,8 @@
 
 ## Codex hooks: confirm host reload, then preserve the repair in source
 
+Loading/loop audit follow-up: preserve parked tasks and foreign branches. Compare live hooks against native host events and matcher coverage; restore the missing capability-loading/progressive-skill policy references through the source owner, then refresh discovery indexes. Reconcile source/build/install revisions before connecting the existing SIS graph kernel to the current Queen owner. Bind node receipts to actual process/provider identity and observed outcomes; a supplied actor string, evidence URI or PASS is not authenticated proof. Queen's observed 29 held cards need producer/admission reconciliation, not blind replay. The loop-fleet task is disabled and its latest run rows are 13 September. Hermes's eight enabled jobs are script-only; industrial-factory-pulse has a recorded exit-1 error. Investigate only under a named follow-up scope and capacity admission. Do not start another scheduler or expand the roster.
+
 Continue [starlight-agent-config #78](https://github.com/frankxai/starlight-agent-config/issues/78) from the [7 October session](sessions/2026-10-07.md). Read `.starlight/hook-repairs/2026-10-07/README.md`, exact hashes and final provider review. Review changed Impeccable/Superpowers entries via `/hooks` if Codex prompts and confirm an actual resumed app edit/Stop/startup event. Re-run29hook probes and27regressions. Preserve foreign source/worktree ownership; after admission, integrate the local scanner/adapter/Windows-command fixes into the canonical installer and plugin sources without disabling security or writing trust approvals. Record actual host evidence and update-survival gaps on78.
 
 ## Frontend, Vercel and Figma: build and release the native readers
