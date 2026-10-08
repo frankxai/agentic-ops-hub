@@ -7,15 +7,13 @@ Home AGENTS.md now explicitly distinguishes the coordination cwd from per-comman
 
 ## Station research: broader innovation and real experiments
 
-Lead Starlight’s next research pass with your strongest reasoning. Read product-plans PR26/27, issue28, hub197 and referenced evidence. Discover relevant repos, skills, designs and publishing workflows yourself. Frank rejects the narrow wedge and finds the current suggestions insufficiently innovative.
+Lead Starlight's next pass with strongest supported reasoning and the current shared product-outcome-quality policy. Read product-plans26/27, issue28, hub197 and agent-config30; discover relevant owned repos, designs, skills and publishing workflows. Frank rejects the narrow wedge and current creative quality remains unaccepted.
 
-Expand possibilities across original AI creation, multi-harness workflows, frontend/Figma journeys, customer-owned sandboxes and ecosystem contributions. Challenge the shortlist; autonomously select and execute three admitted experiments with different mechanisms, existing-tool controls and failure/recovery checks. Produce useful creative outputs and concrete upstream contribution drafts. Measure quality, time and attributable actual cost; label unknowns. Pursue real outcomes beyond another fixture-only round.
+Preserve the whole outcome: original useful AI creations, real frontend/Figma journeys with GitHub/Vercel provenance, multi-harness work, customer-owned sandboxes, ecosystem contributions and real-results publishing. Challenge existing opportunities, autonomously run three admitted experiments with different mechanisms and serious existing-tool controls, refine the artifacts, verify failure/recovery and measure usable output, repair effort, time and attributable actual cost. Do not substitute more synthetic checks or policy documents for these outcomes.
 
-Draft an evidence-based comparison article and compare free publishing, paid packs, education and verified affiliate/sponsor paths. Reuse accepted products and the existing orchestrator. Preserve research-only scope, repo ownership, PP/storage, no WSL, customer-paid compute, SECURITY/waitlist and human publishing gates. Require different-provider review before merge.
+Use the existing orchestrator, accepted products, brand systems and demand-capture package. Preserve research-only scope, one writer, PP/storage, no WSL, customer-paid compute, SECURITY/waitlist and human publishing gates. Skills loaded are not applied proof; policy pointers are not runtime enforcement. Different-provider exact-revision review is required before merge. Report evidence and remaining gaps; ask only consequential decisions. See the 8 October hub session for verified coverage and delivery gaps.
 
-Decide routine details yourself. Deliver artifacts, failures, open gates and only consequential human decisions.
-
-Private exact task-prompt/work export: ~/.starlight/reports/station-experiments-20261007/. Product head e85197f remains draft; source hashes and measured small-test scope are preserved.
+Private evidence: ~/.starlight/reports/station-experiments-20261007/. Product draft head e85197f remains unchanged.
 
 ## Frontend, Vercel and Figma: build and release the native readers
 
