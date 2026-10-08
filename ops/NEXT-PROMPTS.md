@@ -1,5 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Honor programme 201: integrate reviewed work and resolve named dependencies
+
+```text
+Continue https://github.com/frankxai/agentic-ops-hub/issues/201 from ops/sessions/2026-10-08.md. Implemented PRs are Design PR 45, FrankX PR 267, prompt-engine PR 5, Starlight PR 105 and GenCreator PR 169. Read their current exact heads, review threads, checks and owner instructions before continuing; the receipt is a snapshot, not permission to overwrite newer work.
+
+Design PR 45's three review corrections are implemented and independently accepted at 489207b; exact-head CI 37721724161 passes. Re-read any newer checks and findings before integration. Integrate only through that repository's required process, then pin downstream adoption separately. Preserve current identities, voices, fonts and brand modes. The shared principle is: Honor what you received. Take responsibility for what you pass on.
+
+FrankX PR 267 is private authoring work. Run the mandatory full npm run merge:gate in a complete authorized checkout before integration; sparse checks and green secret guards do not substitute. Keep its source-access, founder review, visual and public-route dependencies explicit. Nothing in content/drafts is a public release.
+
+Prompt-engine PR 5 has 23 passing native tests and independently checked schemas. Keep prompt-library as corpus owner, local private inputs private, and GitHub issue export dry-run/owner-attested. Receipt states record supplied observations; they do not prove worker liveness or authorization. No model evaluation or dispatch is established.
+
+Starlight PR 105 adds one About section using the existing team planner and trust page. Final-head CI 37721413329 and actual 375/1440 candidate/live-baseline comparison pass; re-read any newer review findings before integration. Preserve PR 102's broader owner lane. About-to-planner navigation and the new CTA's keyboard focus were observed; browser download-byte verification remains unavailable. Planning exports activate no agents, model calls, accounts or funds.
+
+GenCreator PR 169 is a 13-file rehearsal stacked on PR 141. Its final 32-test source/handoff correction is independently accepted and published unchanged at d63136e8a675eb55b66381589514cd20d8e8f9c7, tree ad92fd3b9cb048770fee4e00b46e2a553f00a205. The deterministic source project and proposed authored edition remain separate; both async adaptation entry points enforce permission, current brief and source integrity, and the host handoff matches actual newsletter/LinkedIn artifacts. Final native CI 37726880423 passes 867 unit tests, full lint/types/build and 196 browser tests plus 2 skips; matching exact-head preview, design/editorial contracts and Review Gate pass. Re-read all latest checks before integration rather than reusing historical runs. Integrate/rebase through the PR 141 owner without overwriting their work. Keep real creator/account/provider acceptance separate, and obtain owner review before public promotion. Do not turn staged review into authenticated human approval or accepted application activation.
+
+Return exact revision/check/artifact/remaining-dependency receipts in the existing issues. Update this hub's ledger, dated session and one current prompt. Keep Arcanea canon, family records, music and film in the private unselected backlog until a source and artifact scope is selected. Do not merge, deploy or publish merely because a task was assigned or a narrow test passed.
+```
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
