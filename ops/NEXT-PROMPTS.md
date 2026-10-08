@@ -475,9 +475,41 @@ service or unattended worker under machine HOLD or storage BOUNDED. Preserve rel
 gates, account eligibility and every other unfinished front.
 ```
 
-[Starlight/Queen proactive implementation, Codex pickup for 2026-10-07]
+[Starlight/Queen proactive implementation, Codex pickup refreshed 2026-10-08]
 
-Prepared at Frank's request on 6 October. Paste the following as the next agent's user task. This prompt gives normal implementation/merge authority within the existing gates and spending limits. No scheduled execution was created. The October 4 proposals and review gaps remain recorded in that session.
+Frank's latest direction adds abundant experimentation, upstream ecosystem
+contributions and an existing-blog monetization test. The short task below is
+the current entry point; the detailed constraints and earlier evidence below
+remain supporting context. The private recap retains all visible user requests
+and the original eleven unfinished requirements. No blog or revenue result is
+implemented or validated by this handover.
+
+```text
+Continue Frank's Starlight work from agentic-ops-hub/ops/NEXT-PROMPTS.md,
+agentic-ops#134 and the existing source-task receipts. Use your strongest supported
+reasoning. Discover current instructions, repo owners, accepted products and live
+state yourself; preserve unfinished work and other agents' changes.
+
+Think independently and propose ambitious, testable improvements. Select and run
+bounded experiments across models, harnesses, design/browser workflows, memory,
+version control and recovery. Let useful artifacts, Frank's feedback, independent
+review, actual cost and repair effort determine what we adopt. Contribute proven
+fixes and reusable work to the relevant ecosystems.
+
+Engineer one valuable end-to-end slice, then expand from evidence. Build a path
+from real experiments to reproducible posts on an existing blog and test demand
+for an appropriate monetization route. Choose the architecture and sequence;
+implement, refine, test, commit, push and merge eligible PRs through normal controls,
+then verify authorized production behavior. Act autonomously on routine decisions
+within privacy, machine, budget, licensing and human publication/release limits.
+Save exact evidence, open gaps and one next prompt in the hub and existing issues.
+```
+
+Supporting detail prepared at Frank's request on 6 October remains below. The short
+prompt above is the current entry point; these detailed instructions retain the
+same implementation authority, spending limits and unfinished requirements.
+No scheduled execution was created. The October 4 proposals and review gaps remain
+recorded in that session.
 
 Implementation pickup, refreshed 6 October: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
 merged as `123d6798a505708b11876cd0e6a579e9b72846bc` at 05:08 UTC. The original

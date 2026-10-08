@@ -1,5 +1,24 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-08: complete visible-request recap and broader experiment continuation (Codex)
+
+Frank requests a short complete work/open-items recap and more independent
+experimentation, ecosystem contributions and a monetizable blog. Private task
+evidence preserves ten visible task requests and two approval replies verbatim,
+plus an attributed work inventory and all eleven original open requirements.
+Instruction/environment blocks and unseen chats are not exported as task prompts.
+
+Fresh GitHub reads confirm Ops156/194 merged, Ops134 open and Hub153 still a draft.
+The last recorded live-runtime dependency remains unproved; no new production
+audit, model experiment, upstream contribution or blog/revenue result is claimed.
+The existing Queen continuation now includes a short autonomous prompt and
+candidate experiments in model/harness routing, design/browser approaches,
+memory ablation, conflict/recovery, scoped skills, creator production and
+reproducible publication/demand tests. Select an admitted active set by useful
+output, human feedback, independent review, cost and repair evidence. Preserve
+current product ownership and publication/release limits. See the
+[session](sessions/2026-10-08.md); this is a documentation slice.
+
 ## 2026-10-06: Queen source merged; private instance and public core remain separate (Codex)
 
 Fresh GitHub reads supersede the earlier merge hold: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
