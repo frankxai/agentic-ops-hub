@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-08T14:02:43.435660+00:00",
+  "state": "isolated_candidate_install",
+  "globallyActivated": false,
+  "upstreamCodeExecuted": false,
+  "behavioralBenchmark": "not_run",
+  "sources": [
+    {
+      "repo": "blacktwist/social-media-skills",
+      "revision": "4f85b07069983b3b0b9bbe6519fed7017edcce81",
+      "sourceDirectory": "skills",
+      "localDirectoryRelativeToIntake": "upstream/blacktwist",
+      "licenseSourcePath": "LICENSE",
+      "licenseSha256": "3f23da352b4bb86d77ac2bf9c7e57c205d12d5c8dbb47c27075f379cdbc90f98",
+      "skills": [
+        {
+          "name": "content-pattern-analyzer-sms",
+          "files": [
+            {
+              "path": "evals/.gitkeep",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "gitBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 12014,
+              "sha256": "30778f6a104e55d36e559f0ac9fcf77f5d3c7779e7e9f8867649ea1cbb30d3e4",
+              "gitBlobSha": "80fb8a73e107382092c70fdbe98cdf5ab40e5ef6"
+            }
+          ]
+        },
+        {
+          "name": "performance-analyzer-sms",
+          "files": [
+            {
+              "path": "evals/.gitkeep",
+              "bytes": 0,
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "gitBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 10379,
+              "sha256": "754788350be10b3303dee3fa6cc8f261332899a0b6eee0b8c980a08fe4eeda84",
+              "gitBlobSha": "efe194b6e2a7016b4cca76089de0ce1fc9b3bf3b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "coreyhaines31/marketingskills",
+      "revision": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "sourceDirectory": "skills",
+      "localDirectoryRelativeToIntake": "upstream/corey",
+      "licenseSourcePath": "LICENSE",
+      "licenseSha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591",
+      "skills": [
+        {
+          "name": "social",
+          "files": [
+            {
+              "path": "evals/evals.json",
+              "bytes": 11871,
+              "sha256": "1d2592a0cfc6378ba8742ce6e19f5974663b1d8018c4f136e5f529373bf17198",
+              "gitBlobSha": "9236ff6e05e419556c92c7dc280746109b05aa62"
+            },
+            {
+              "path": "references/carousel-frameworks.md",
+              "bytes": 11124,
+              "sha256": "e703aa530ec9f68cdf5b58e8e0d4d1a5cc3f22b9e2d3e3222f16a9763d423247",
+              "gitBlobSha": "76c65c3d34dfb43f9fdd672a9e55e48037a670aa"
+            },
+            {
+              "path": "references/listening-sources-template.md",
+              "bytes": 3479,
+              "sha256": "c68bc6f57b0a48c432b1ce72c9324d41a04d0e7784d0bab91afb4a6065a43e38",
+              "gitBlobSha": "286ca03a013ddfd23ef807cffd650ae04c6b7e02"
+            },
+            {
+              "path": "references/listening.md",
+              "bytes": 12268,
+              "sha256": "f905f772ac782872143fda477c0049973b2477d1ec165377b164250dabe3bac0",
+              "gitBlobSha": "6a157ae5288d2b9ffc675612760ef1570389e832"
+            },
+            {
+              "path": "references/platform-limits.md",
+              "bytes": 2830,
+              "sha256": "6ecc6b40ff82b95c48906341f7d3c58337671d4d94f624c858764f1ed5a77c3c",
+              "gitBlobSha": "94e1df9f22128ffc59e826c702c8a492b0e1bb03"
+            },
+            {
+              "path": "references/platforms.md",
+              "bytes": 5412,
+              "sha256": "1443ac17ff2ce0e8bb9cadeaa250441c7a1e3274e368ebff7283a5164ff6b4ca",
+              "gitBlobSha": "63f6ccc6e2de4efff265ebeb01abea06da15f7ef"
+            },
+            {
+              "path": "references/post-templates.md",
+              "bytes": 4016,
+              "sha256": "9cca4680c95801daedfd8acadf9089d0083784c2567784888807569896f71d9b",
+              "gitBlobSha": "10be33fe2104b3b984902deaa285d89963e18702"
+            },
+            {
+              "path": "references/reverse-engineering.md",
+              "bytes": 5551,
+              "sha256": "c27bef59d463b3b11331c1770f4a23e9e6bbce7d7c8db1e7f7f4f14ba206243f",
+              "gitBlobSha": "6d6b8f9d8a497fbefd9ab17f5a4d281c7035edf9"
+            },
+            {
+              "path": "references/short-form-video.md",
+              "bytes": 6517,
+              "sha256": "5e782aa064fe0916b9c432d3317628de961678f1503103a4450ad0d20e94bf46",
+              "gitBlobSha": "067ab1478f35763e0b68439cf3c7a681871265ed"
+            },
+            {
+              "path": "references/x-algorithm.md",
+              "bytes": 7113,
+              "sha256": "943b2c5a819aad53ebf62a1652adc47956d6fdf738e18cd98eeb609819a66180",
+              "gitBlobSha": "af6aef741f893d644ec4d56617c1f8ace3ee82c1"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 18260,
+              "sha256": "1fa237bc6884b7b6c048a334aee02aeaff23f7d6dcb06868ca4fb123e3b71379",
+              "gitBlobSha": "7f160d24420ce4761f7de9849f45814ad9e3a430"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "social-media-skills/skills",
+      "revision": "6e30eeb2f6736bda8683b6bbaa674af3641d7945",
+      "sourceDirectory": "skills",
+      "localDirectoryRelativeToIntake": "upstream/social-media-skills",
+      "licenseSourcePath": "LICENSE",
+      "licenseSha256": "0da5befdfbe93f4dd08098d43fcd115c8455ae4fef7672f800e761e843727c13",
+      "skills": [
+        {
+          "name": "social-strategy",
+          "files": [
+            {
+              "path": "evals/evals.json",
+              "bytes": 3625,
+              "sha256": "27c88fbd600418e122e9959d9e61cf329ea5420fdfff694e8d932fb57f900a4f",
+              "gitBlobSha": "ca0e7d4c5679d922f3c869590d0ab9af1546c8b2"
+            },
+            {
+              "path": "references/channel-selection.md",
+              "bytes": 3495,
+              "sha256": "cac4103deeec7cab3b90c9d026c23014b439a30c4541347a913f01a8e54bac98",
+              "gitBlobSha": "c2843d6c8340e2dd343d676e4f8794271d74d20b"
+            },
+            {
+              "path": "references/examples.md",
+              "bytes": 3381,
+              "sha256": "93152ad10f59bd35d4a1e69b7793f2e988d7086443912504a26ab56e8a18c8df",
+              "gitBlobSha": "745d022e294c8d9fdb11fb5d7d9adff757b1489b"
+            },
+            {
+              "path": "references/goals-and-measurement.md",
+              "bytes": 3106,
+              "sha256": "a57c5c92abaf25f4667a629989898e3a579dcef835627e74834cfdd97bc8cf6f",
+              "gitBlobSha": "3085661c9ff12c71709cffd612770619fa4875a8"
+            },
+            {
+              "path": "references/operating-model.md",
+              "bytes": 3271,
+              "sha256": "7d758123d3c7dac7378ba39ace40d9381da76730a7d1f8c306525337a04a3755",
+              "gitBlobSha": "719befd65423cbacc81b5d23864bc23ec337164b"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 7551,
+              "sha256": "bdaa271049bc5379b937046dd2a24798b3471addd2f074734f0726c6dcab0c2f",
+              "gitBlobSha": "8867fbe62ab6b4f910f40f6bc91d77b4b03d3ef6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "frankxai/gencreator-skills",
+      "revision": "982aa4a400fdc7eace03b65d118ada6c8a2c0cfe",
+      "sourceDirectory": "video-social-studio/skills",
+      "localDirectoryRelativeToIntake": "owned/gencreator-skills",
+      "licenseSourcePath": "video-social-studio/LICENSE",
+      "licenseSha256": "879750f650066134742fb7e6c61756792a7ad36612112a7ddd4e94741681c70f",
+      "skills": [
+        {
+          "name": "video-engine",
+          "files": [
+            {
+              "path": "references/contract.md",
+              "bytes": 2598,
+              "sha256": "231ad0684e345345b6e5eacf9e2a8154806ddfa24f3ead7abc8ed49d9829e6ff",
+              "gitBlobSha": "79089bc6f9b7df8b4a2f7e4169e9ba25f7a54c33"
+            },
+            {
+              "path": "scripts/vid.mjs",
+              "bytes": 28226,
+              "sha256": "fdd71b8be3936b3dce2f4cb678ab15f0c91a0e4176238770de66a35ed466fb59",
+              "gitBlobSha": "165eaaf0fb0b56fec63acc9f96515fc9dbc994fb"
+            },
+            {
+              "path": "scripts/vid.test.mjs",
+              "bytes": 5763,
+              "sha256": "94a3b3082fc109a7ba4f2199c2ebf799ed74303582337acd5f50c09173a0bb28",
+              "gitBlobSha": "72516f8244e61fc7559ad553470a22f78bdf3020"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 2539,
+              "sha256": "1f5b4adbf3486089c183f2463e40283209a2359fb2af4753888b32b2ec5c3cbb",
+              "gitBlobSha": "859fd969d49455c9b9a5a88654e3b47fd83a8b07"
+            }
+          ]
+        },
+        {
+          "name": "video-edit",
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 7268,
+              "sha256": "4386cc7993523dc618526c3d9d024be01fa6fa0efde0b1f95ba092f82bb3de85",
+              "gitBlobSha": "af1872fee50f407eeeedfea0485cd588aa5c9fb3"
+            }
+          ]
+        },
+        {
+          "name": "captions",
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 5878,
+              "sha256": "9634b7c7a2db3170d92b1386b9c085c76094bf8e3dc6c6b6ff5e44f86c50a934",
+              "gitBlobSha": "12526f2f03dc2c6de46714e1d125d60cb5fbc19a"
+            }
+          ]
+        },
+        {
+          "name": "shorts-from-long",
+          "files": [
+            {
+              "path": "references/research.md",
+              "bytes": 3309,
+              "sha256": "ab42e74c9dd33ab8f96a0c9a0462db8328311f3a512f59862839137b02fd2092",
+              "gitBlobSha": "1eb855e3834f3557a63189ab88c84574ca6ce682"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 6998,
+              "sha256": "6c5ae739267d897640b9d137223e626301d58bd0de30e2e9ba1d369a0cda9768",
+              "gitBlobSha": "bf3ba1760fee33727aed03e7b387e20be33c4916"
+            }
+          ]
+        },
+        {
+          "name": "platform-specs",
+          "files": [
+            {
+              "path": "references/specs-2026-09.md",
+              "bytes": 8488,
+              "sha256": "d20c0ce62b1524fe5602dfea15a49ff2a4bdde91c58cdd65ce57f7ffead5bf68",
+              "gitBlobSha": "5e2a7d4e5e95b1d2dbab113d585a714ed3abe641"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 4444,
+              "sha256": "e3b195d24736c94f646337905ffc0ef8e41cee207f1a4016f16b2068f8b4edd7",
+              "gitBlobSha": "6c1db23159deb76e228d64e01da3407d994e4050"
+            }
+          ]
+        },
+        {
+          "name": "social-post-kit",
+          "files": [
+            {
+              "path": "references/research.md",
+              "bytes": 3136,
+              "sha256": "e389434b9408855a8df9de56e8defc4ebc530d642d3b3a7b315a052965b397bc",
+              "gitBlobSha": "24240b3ec6e007e9a11d96f6155ebb80dcc2fa36"
+            },
+            {
+              "path": "SKILL.md",
+              "bytes": 9895,
+              "sha256": "ccde8cae5fc9c65e4f4db3b0c5ae01786ff3cb9b095c4f31d5ebc70eb9b224d2",
+              "gitBlobSha": "c765d548cee4d6ed0512ccdce9ca95f92dd7735f"
+            }
+          ]
+        },
+        {
+          "name": "content-calendar",
+          "files": [
+            {
+              "path": "SKILL.md",
+              "bytes": 9182,
+              "sha256": "ceb50a754f665c6c54fb0309cc2e7ef4cf84b1d3de70298b251d4b501a3f6967",
+              "gitBlobSha": "a085120e7ee6921a7562f755e3918d98586c5fb8"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "skills": 11,
+    "files": 34,
+    "sourceBytes": 232987,
+    "upstreamExecutableFiles": 0
+  },
+  "operationsProposalVerification": {
+    "schema": "gencreator.operations-plan.v1",
+    "brands": 6,
+    "connections": "all_unknown",
+    "externalWrites": false,
+    "inputSha256": "88bde3662b94723df592bc8860a7e65dfbb1e0b24fdcf491e9fb36e68d394b50",
+    "outputSha256": "fabba6424fba10869e9201872406a2f8d32af2c0f28ad5c27c868c1af950cea9",
+    "existingOutputRefused": true,
+    "existingOutputUnchanged": true,
+    "privateProposalNotPublished": true
+  },
+  "instructionSources": [
+    {
+      "path": "C:/Users/frank/starlight/worktrees/agentic-ops-hub-social-skills-20261008/AGENTS.md",
+      "sha256": "e9840259101eebfc38d274561e1c7bc344f64071a3ebfb54b68090f2ab9c449e"
+    },
+    {
+      "path": "C:/Users/frank/.starlight/workspace-bootstrap/WORKFLOW.md",
+      "sha256": "67513eb5230bd30336262d96068f9afcbbd5b369ffcdbe4c6e674d18be20e8e4"
+    },
+    {
+      "path": "C:/Users/frank/.starlight/policies/machine-performance-contract.md",
+      "sha256": "d0aa246919235dbf3ef06f234882a9674b1dea7382108cb13626ba809a9ce785"
+    },
+    {
+      "path": "C:/Users/frank/.starlight/policies/product-outcome-quality.md",
+      "sha256": "7911a4568a41fd3be4402ad5e1d1846e7ddd0e069b57b5b1536dd98cc387b481"
+    },
+    {
+      "path": "C:/Users/frank/.codex/skills/.system/skill-installer/SKILL.md",
+      "sha256": "2892d8b2fb11631132118f340aed80ae17e59d5a571fc2c4f4a4a7e73f139d52"
+    },
+    {
+      "path": "C:/Users/frank/.codex/plugins/cache/created-by-me-remote/gencreator-native/0.2.0-alpha.2/skills/gencreator-operations/SKILL.md",
+      "sha256": "afb5544f38a2f67e2e4e352622571e70da18541a645c9099413c374981527618"
+    }
+  ],
+  "liveReadChecks": [
+    {
+      "connector": "Canva",
+      "action": "list_brand_kits",
+      "result": "success",
+      "kits": 6,
+      "checkedOn": "2026-10-08",
+      "privateIdentifiersOmitted": true
+    },
+    {
+      "connector": "Descript",
+      "action": "list_projects",
+      "result": "success",
+      "checkedOn": "2026-10-08",
+      "privateIdentifiersOmitted": true
+    }
+  ],
+  "lane": {
+    "repo": "frankxai/agentic-ops-hub",
+    "branch": "agent/codex/social-skills-research-20261008",
+    "base": "5248640f4b257db8f689521e65fbe92bc10b620d",
+    "guard": "pass",
+    "explicitFilesCheck": "pass",
+    "owner": "Codex current task",
+    "primaryForeignCheckoutsPreserved": true
+  }
+}
