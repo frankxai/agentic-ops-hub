@@ -32,6 +32,10 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### Chrome ChatGPT: verify runtime repair, then resume Starlight
+
+Read agent-config issue91 and the October8 session. Both runtime manifests now use stable npm CLI0.160.1 and resources from the installed Codex package;10entries each, zero missing CLI/resources paths,9regressions and live idempotence pass. Native host/extension diagnostics pass. User Retry/reopen confirmation is pending; browser policy blocks extension pages and must not be bypassed. Source review was held before worker launch on RAM3848/4352; no verdict. The manual helper resolves current installed resources on every repair; later vendor updates can still require refresh. Preserve backups/unknown fields/other homes and do not add a watcher or kill sessions. Once the panel is confirmed, use the existing Starlight interface prompt below; fix actual Look/WARN gaps before release. Full scope is preserved and native goal last reports paused.
+
 ### Starlight interfaces: connect source-backed creation and knowledge
 
 ```text
