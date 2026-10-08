@@ -1,5 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Repository shortcut acceptance: config PR108 / issue46
+
+Resume source `008385cc52eaab9b274e65f8d625194220532692` in its owned `agent/codex/repo-shortcuts-20261008` lane. Read destination instructions and current leases. Shortcuts are locally installed for 14 repositories, with 29 isolated checks and full-shell previews passed. Obtain fresh PP admission before any reviewer or live agent. Review the exact source independently, reconcile findings, then verify admitted Codex/Claude/Gemini interactive startup, instruction reads, relevant current priority retrieval, and occupied-lane recovery. Preserve the existing terminal/dashboard, native `gm`, optional-service defaults, private task data, rollback copies, and unrelated unfinished work. Use [draft108](https://github.com/frankxai/starlight-agent-config/pull/108) and [issue46](https://github.com/frankxai/starlight-agent-config/issues/46). Do not claim the bootstrap prompt is runtime enforcement or close broader issue46 from these shortcut checks.
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
