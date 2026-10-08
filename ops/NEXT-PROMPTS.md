@@ -1,5 +1,11 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Estate production spine: board pre-pass, then first shadow run
+
+```text
+Read Starlight-Intelligence-System draft PR 319 (docs/strategic/2026-10-08-agentic-estate-production-architecture.md) and starlight-swarm draft PR 38 (src/managed-runtime/) first. Both are dry-run proposals from the 2026-10-08 session; nothing has run against a live provider and no money moves. Do not reimplement them. Step 1: run the /starlight-board pre-pass on §4.1 (the ManagedAgentRuntime port) and link the verdict in PR 319's substrate-gate field. Step 2: with Frank's targets set in revenue-streams.ts (never invent a figure), choose one bounded repository and run the first Anthropic Managed Agents shadow session as a repo steward: agents.create once, sessions.create with a hard list-cost budget and a user.define_outcome rubric, deny every paused tool confirmation, write the sealed receipt into ops/OPS-LEDGER.md. A human performs any side effect the session proposes. Step 3: file the four self-serve credit applications (Google $2,000, Cloudflare $10,000, AWS Founders, Azure) and record approvals in the ledger with dates. Preserve other owners' branches and the three open draft PRs. Draft PRs only; Frank owns the merge.
+```
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
