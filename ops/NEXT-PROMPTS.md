@@ -1,5 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Honor programme 201: integrate reviewed work and resolve named dependencies
+
+```text
+Continue https://github.com/frankxai/agentic-ops-hub/issues/201 from ops/sessions/2026-10-08.md. Implemented PRs are Design45, FrankX267, prompt-engine5, Starlight105 and GenCreator169. Read their current exact heads, review threads, checks and owner instructions before continuing; the receipt is a snapshot, not permission to overwrite newer work.
+
+Design45's three review corrections are implemented and independently accepted at489207b; exact-head CI37721724161 passes. Re-read any newer checks and findings before integration. Integrate only through that repository's required process, then pin downstream adoption separately. Preserve current identities, voices, fonts and brand modes. The shared principle is: Honor what you received. Take responsibility for what you pass on.
+
+FrankX267 is private authoring work. Run the mandatory full npm run merge:gate in a complete authorized checkout before integration; sparse checks and green secret guards do not substitute. Keep its source-access, founder review, visual and public-route dependencies explicit. Nothing in content/drafts is a public release.
+
+Prompt-engine5 has 23 passing native tests and independently checked schemas. Keep prompt-library as corpus owner, local private inputs private, and GitHub issue export dry-run/owner-attested. Receipt states record supplied observations; they do not prove worker liveness or authorization. No model evaluation or dispatch is established.
+
+Starlight105 adds one About section using the existing team planner and trust page. Final-head CI37721413329 and actual375/1440 candidate/live-baseline comparison pass; re-read any newer review findings before integration. Preserve PR102's broader owner lane. About-to-planner navigation and the new CTA's keyboard focus were observed; browser download-byte verification remains unavailable. Planning exports activate no agents, model calls, accounts or funds.
+
+GenCreator169 is a 13-file rehearsal stacked on PR141. Ten tests pass under Node22 and24; real exported files retain credit, pending owner review and no publish authority. The unchanged-head cache-free preview is READY, resolving the earlier js-yaml build failure without changing dependencies. Finish the owning repository's triggered full build/E2E gates and real creator/browser recovery checks. Do not turn staged review into authenticated human approval or accepted application activation.
+
+Return exact revision/check/artifact/remaining-dependency receipts in the existing issues. Update this hub's ledger, dated session and one current prompt. Keep Arcanea canon, family records, music and film in the private unselected backlog until a source and artifact scope is selected. Do not merge, deploy or publish merely because a task was assigned or a narrow test passed.
+```
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
