@@ -11,6 +11,8 @@ Lead Starlight's next pass with strongest supported reasoning and the current sh
 
 Preserve the whole outcome: original useful AI creations, real frontend/Figma journeys with GitHub/Vercel provenance, multi-harness work, customer-owned sandboxes, ecosystem contributions and real-results publishing. Challenge existing opportunities, autonomously run three admitted experiments with different mechanisms and serious existing-tool controls, refine the artifacts, verify failure/recovery and measure usable output, repair effort, time and attributable actual cost. Do not substitute more synthetic checks or policy documents for these outcomes.
 
+Prepare scoped upstream contribution drafts and an experiment journal/comparison article; compare paid packs and education with verified affiliate/sponsor terms.
+
 Use the existing orchestrator, accepted products, brand systems and demand-capture package. Preserve research-only scope, one writer, PP/storage, no WSL, customer-paid compute, SECURITY/waitlist and human publishing gates. Skills loaded are not applied proof; policy pointers are not runtime enforcement. Different-provider exact-revision review is required before merge. Report evidence and remaining gaps; ask only consequential decisions. See the 8 October hub session for verified coverage and delivery gaps.
 
 Private evidence: ~/.starlight/reports/station-experiments-20261007/. Product draft head e85197f remains unchanged.
