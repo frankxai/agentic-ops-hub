@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "checked_at_utc": "2026-10-08T11:22:34.802538+00:00",
+  "task": "Social media skills, strategy, planning, management and channel workflow audit",
+  "research_only": true,
+  "external_sources": [
+    {
+      "repo": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "observed_default_branch_head": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "pinned_tree_url": "https://github.com/coreyhaines31/marketingskills/tree/b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-10-08",
+      "inspection_scope": "source samples: social and content-strategy; tree; README rename table"
+    },
+    {
+      "repo": "social-media-skills/skills",
+      "url": "https://github.com/social-media-skills/skills",
+      "observed_default_branch_head": "6e30eeb2f6736bda8683b6bbaa674af3641d7945",
+      "pinned_tree_url": "https://github.com/social-media-skills/skills/tree/6e30eeb2f6736bda8683b6bbaa674af3641d7945",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-07-19",
+      "inspection_scope": "README, tree, social-strategy and experimentation-and-ab-testing source samples"
+    },
+    {
+      "repo": "blacktwist/social-media-skills",
+      "url": "https://github.com/blacktwist/social-media-skills",
+      "observed_default_branch_head": "4f85b07069983b3b0b9bbe6519fed7017edcce81",
+      "pinned_tree_url": "https://github.com/blacktwist/social-media-skills/tree/4f85b07069983b3b0b9bbe6519fed7017edcce81",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-05-01",
+      "inspection_scope": "README, tree, content-pattern-analyzer-sms source sample"
+    },
+    {
+      "repo": "aaron-he-zhu/aaron-marketing-skills",
+      "url": "https://github.com/aaron-he-zhu/aaron-marketing-skills",
+      "observed_default_branch_head": "174691d75ba02769ecee2a497d83a14f842f0df9",
+      "pinned_tree_url": "https://github.com/aaron-he-zhu/aaron-marketing-skills/tree/174691d75ba02769ecee2a497d83a14f842f0df9",
+      "license_observation": "Apache-2.0",
+      "head_commit_date": "2026-10-08",
+      "inspection_scope": "tree, platform-norm-profiler source sample, skills.sh voice/audience/message entries"
+    },
+    {
+      "repo": "gitroomhq/postiz-agent",
+      "url": "https://github.com/gitroomhq/postiz-agent",
+      "observed_default_branch_head": "7d093c072e645c1bd644a85d88f7e468b6d399a0",
+      "pinned_tree_url": "https://github.com/gitroomhq/postiz-agent/tree/7d093c072e645c1bd644a85d88f7e468b6d399a0",
+      "license_observation": "AGPL-3.0-or-later (LICENSE text); GitHub metadata NOASSERTION",
+      "head_commit_date": "2026-10-08",
+      "inspection_scope": "README, tree, skills/postiz/SKILL.md source sample, decoded LICENSE text"
+    },
+    {
+      "repo": "gitroomhq/postiz-app",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "observed_default_branch_head": "5ac6e10f5eecc56ea52e3502a1b1627c339b0756",
+      "pinned_tree_url": "https://github.com/gitroomhq/postiz-app/tree/5ac6e10f5eecc56ea52e3502a1b1627c339b0756",
+      "license_observation": "AGPL-3.0 (GitHub metadata)",
+      "head_commit_date": "2026-10-08",
+      "inspection_scope": "README and repository metadata; no code/runtime evaluation"
+    },
+    {
+      "repo": "inovector/mixpost",
+      "url": "https://github.com/inovector/mixpost",
+      "observed_default_branch_head": "df57648b866310446703f5294350552b62735df5",
+      "pinned_tree_url": "https://github.com/inovector/mixpost/tree/df57648b866310446703f5294350552b62735df5",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-03-16",
+      "inspection_scope": "README and repository metadata; Lite/Pro boundary"
+    },
+    {
+      "repo": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "observed_default_branch_head": "f99f6aa910a442b0197b768ce0ea7751e35e2060",
+      "pinned_tree_url": "https://github.com/msitarzewski/agency-agents/tree/f99f6aa910a442b0197b768ce0ea7751e35e2060",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-10-07",
+      "inspection_scope": "README and role catalog; no agent runtime launched"
+    },
+    {
+      "repo": "namddp/social-media-agent-skills",
+      "url": "https://github.com/namddp/social-media-agent-skills",
+      "observed_default_branch_head": "9af2d1e993e62c95bc41485ef31b1e75c05f5291",
+      "pinned_tree_url": "https://github.com/namddp/social-media-agent-skills/tree/9af2d1e993e62c95bc41485ef31b1e75c05f5291",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-08-05",
+      "inspection_scope": "README and repository metadata; no tests executed"
+    },
+    {
+      "repo": "langchain-ai/social-media-agent",
+      "url": "https://github.com/langchain-ai/social-media-agent",
+      "observed_default_branch_head": "fd94d602a190333d8fb4a5619b11ff2c5330fa8b",
+      "pinned_tree_url": "https://github.com/langchain-ai/social-media-agent/tree/fd94d602a190333d8fb4a5619b11ff2c5330fa8b",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-10-06",
+      "inspection_scope": "README/features documentation; no code/runtime evaluation"
+    },
+    {
+      "repo": "Darthflute/social-calendar-skill",
+      "url": "https://github.com/Darthflute/social-calendar-skill",
+      "observed_default_branch_head": "941ef96aa7200e78670f32e6f79615f5bad5c07a",
+      "pinned_tree_url": "https://github.com/Darthflute/social-calendar-skill/tree/941ef96aa7200e78670f32e6f79615f5bad5c07a",
+      "license_observation": null,
+      "head_commit_date": "2026-04-24",
+      "inspection_scope": "README/tree; no LICENSE found in inspected tree; reference only"
+    },
+    {
+      "repo": "gokulsvision/Crewm8-Social-Media-Manager-Skill-Graph",
+      "url": "https://github.com/gokulsvision/Crewm8-Social-Media-Manager-Skill-Graph",
+      "observed_default_branch_head": "6166e18e31069d19dc490d2bbfaed72ed9a65179",
+      "pinned_tree_url": "https://github.com/gokulsvision/Crewm8-Social-Media-Manager-Skill-Graph/tree/6166e18e31069d19dc490d2bbfaed72ed9a65179",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-05-01",
+      "inspection_scope": "README/function catalog; no execution"
+    },
+    {
+      "repo": "replynodes/awesome-social-media-skills",
+      "url": "https://github.com/replynodes/awesome-social-media-skills",
+      "observed_default_branch_head": "5bdeaa8eb0b4311c3952266a2d1f99682b4d18bb",
+      "pinned_tree_url": "https://github.com/replynodes/awesome-social-media-skills/tree/5bdeaa8eb0b4311c3952266a2d1f99682b4d18bb",
+      "license_observation": "MIT",
+      "head_commit_date": "2026-09-27",
+      "inspection_scope": "README/lifecycle examples; no execution"
+    }
+  ],
+  "pin_limit": "Heads were recorded during discovery; sampled live contents were not all fetched with explicit ref. Re-fetch exact pinned files before copying/installing. No whole-tree audit or behavioral benchmark is claimed.",
+  "local_sources": [
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\agentic-creator-os",
+      "git_root": "C:/Users/frank/starlight/repos/agentic-creator-os",
+      "origin": "https://github.com/frankxai/agentic-creator-os.git",
+      "branch": "agent/gemini/infogenius-skill",
+      "head": "09139fe87c3950a6c86e93d4e52a6cd2d44489d9",
+      "dirty_paths_observed": "D $null\n M .claude/hooks/secret-guard.cjs\n?? .claude/hooks/foundry-skill-suggest.js\n?? .claude/hooks/global-hooks.json\n?? .claude/hooks/hook_runtime.py\n?? .claude/hooks/humanizer-trigger.js\n?? .claude/hooks/session-boot.py\n?? .claude/hooks/session-stop.py",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\agentic-creator-os\\AGENTS.md",
+          "sha256": "008686c351a0f9f6ea5d6d79b3969bd1718f5babdfb1bf507d721fb3c9335585",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\agentic-creator-skills",
+      "git_root": "C:/Users/frank/starlight/repos/agentic-creator-skills",
+      "origin": "https://github.com/frankxai/gencreator-skills.git",
+      "branch": "main",
+      "head": "f296082b080c797e5c0908d488ac4b286c8fb708",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\agentic-creator-skills\\AGENTS.md",
+          "sha256": "7f2ce475f52df644eacc5e6a425527bec15f1abcb367437b9ae2ad5f683f238c",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\gencreator.ai",
+      "git_root": "C:/Users/frank/starlight/repos/gencreator.ai",
+      "origin": "https://github.com/frankxai/gencreator.ai.git",
+      "branch": "codex/gencreator-programme-20260922",
+      "head": "a96f70864aab86494d9b39f81657ab4ce4d29c5f",
+      "dirty_paths_observed": "?? .worktrees/\n?? docs/product/creator-outcome-roadmap.md\n?? docs/product/editorial-proof-20260923.md\n?? lib/creator-studio/recovery.ts\n?? tests/unit/creator-studio-recovery.test.ts",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\gencreator.ai\\AGENTS.md",
+          "sha256": "e4cddda4850d2237dac99714c370a8468f3eb51ee9b5800274acd7c85ae9f970",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\content-os",
+      "git_root": "C:/Users/frank/starlight/repos/content-os",
+      "origin": "https://github.com/frankxai/content-os.git",
+      "branch": "agent/codex/content-visual-production-20261002",
+      "head": "66135b568753f13ffcba81da420c04e2cb95f12d",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": []
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\starlight-social",
+      "git_root": "C:/Users/frank/starlight/repos/starlight-social",
+      "origin": "https://github.com/frankxai/starlight-social.git",
+      "branch": "main",
+      "head": "0b031aeec13d10ab3119d4c33ca7f164575dc71d",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\starlight-social\\AGENTS.md",
+          "sha256": "c5df141016fcd514b7deb78f98262d739ef1fcda9b6b40b77ff10381bc11e801",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\agentic-influencer-os",
+      "git_root": "C:/Users/frank/starlight/repos/agentic-influencer-os",
+      "origin": "https://github.com/frankxai/agentic-influencer-os.git",
+      "branch": "codex/main-preserve-20260630",
+      "head": "4d2628d8030e074ba93dd42c0b3f682e34ae0574",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\agentic-influencer-os\\AGENTS.md",
+          "sha256": "17e4f7cffb31bc628999b505fd2c5f9320e5e1892a5e297558f0cdf3c412c852",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\influencer-agent-skills",
+      "git_root": "C:/Users/frank/starlight/repos/influencer-agent-skills",
+      "origin": "https://github.com/frankxai/influencer-agent-skills.git",
+      "branch": "main",
+      "head": "2736475eb6d3cfd7876ed2dadacb9908fafdb8ed",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\influencer-agent-skills\\AGENTS.md",
+          "sha256": "082c9861969598383376ad6823b0f914b18125b23c40729a27cc5ffccd635828",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\frankx-x-growth",
+      "git_root": "C:/Users/frank/starlight/repos/frankx-x-growth",
+      "origin": "https://github.com/frankxai/frankx-x-growth.git",
+      "branch": "agent/hermes/linkedin-ai-visual-system",
+      "head": "f7ae624cec55299a7ebe2cfcd37739dd8f07e70b",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\frankx-x-growth\\AGENTS.md",
+          "sha256": "6d7534ef07642f589f52d69c8030322682084d8a557e77aba860cedb759b3ec6",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\GenCreator-OS",
+      "git_root": "C:/Users/frank/starlight/repos/GenCreator-OS",
+      "origin": "https://github.com/frankxai/GenCreator-OS.git",
+      "branch": "codex/gencreator-truthful-review-20260924",
+      "head": "b721091cb67065dc5090f2d903d43fcef0841ebc",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\GenCreator-OS\\AGENTS.md",
+          "sha256": "e3447d84251880fb34cfae09131cb4c57471529bbfe60976a3245793cf621627",
+          "root_guide_read": true
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\GenCreator-Studio",
+      "git_root": "C:/Users/frank/starlight/repos/GenCreator-Studio",
+      "origin": "https://github.com/frankxai/GenCreator-Studio.git",
+      "branch": "agent/hv-studio-workbench",
+      "head": "0a3b85cb4a3237f398f7fba10719a76c4557dc36",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": []
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\repos\\creator-skills",
+      "git_root": "C:/Users/frank/starlight/repos/creator-skills",
+      "origin": "https://github.com/frankxai/creator-skills.git",
+      "branch": "agent/claude/dollar-digit-lint-fix",
+      "head": "d9906c71c12577b475cb1ceb20e4a4c4700efe47",
+      "dirty_paths_observed": "",
+      "lane": "read-only; existing owners preserved",
+      "instruction_sources": [
+        {
+          "path": "C:\\Users\\frank\\starlight\\repos\\creator-skills\\AGENTS.md",
+          "sha256": "49fd55db67a523c29093881dc63ee6555a3e85adac4ab1287fee288d2296e61e",
+          "root_guide_read": true
+        }
+      ]
+    }
+  ],
+  "policy_sources": [
+    {
+      "path": "C:/Users/frank/.starlight/workspace-bootstrap/WORKFLOW.md",
+      "sha256": "67513eb5230bd30336262d96068f9afcbbd5b369ffcdbe4c6e674d18be20e8e4",
+      "read_scope": "read during session; referenced guides are not implicitly loaded"
+    },
+    {
+      "path": "C:/Users/frank/.starlight/policies/product-outcome-quality.md",
+      "sha256": "7911a4568a41fd3be4402ad5e1d1846e7ddd0e069b57b5b1536dd98cc387b481",
+      "read_scope": "read during session; referenced guides are not implicitly loaded"
+    },
+    {
+      "path": "C:/Users/frank/.starlight/policies/machine-performance-contract.md",
+      "sha256": "d0aa246919235dbf3ef06f234882a9674b1dea7382108cb13626ba809a9ce785",
+      "read_scope": "read during session; referenced guides are not implicitly loaded"
+    },
+    {
+      "path": "C:/Users/frank/starlight/content-ops/CONTENT_OPS_SSOT.md",
+      "sha256": "c7e2be653ea5ac8c145232fa17895e9b833193878678935aad5098fed6f29513",
+      "read_scope": "read during session; referenced guides are not implicitly loaded"
+    },
+    {
+      "path": "C:/Users/frank/.codex/skills/humanizer/SKILL.md",
+      "sha256": "590188602014734ca09a9b182f501dfaa1f6a170f111199777fc6c37a1dca7aa",
+      "read_scope": "read during session; referenced guides are not implicitly loaded"
+    },
+    {
+      "path": "C:\\Users\\frank\\starlight\\worktrees\\agentic-ops-hub-social-skills-20261008\\AGENTS.md",
+      "sha256": "e9840259101eebfc38d274561e1c7bc344f64071a3ebfb54b68090f2ab9c449e",
+      "read_scope": "read during session; referenced guides are not implicitly loaded"
+    }
+  ],
+  "owned_lane": {
+    "path": "C:\\Users\\frank\\starlight\\worktrees\\agentic-ops-hub-social-skills-20261008",
+    "origin": "https://github.com/frankxai/agentic-ops-hub.git",
+    "branch": "agent/codex/social-skills-research-20261008",
+    "base_head": "5248640f4b257db8f689521e65fbe92bc10b620d",
+    "owner": "Codex root for this task",
+    "ownership_check": "New unique worktree/branch from origin/main; clean initial index; no active-agent file; existing primary Hermes lane untouched. Route guard/check passed with explicit files."
+  },
+  "installed_native_skills": {
+    "path": "C:/Users/frank/.codex/plugins/cache/created-by-me-remote/gencreator-native/0.2.0-alpha.2/skills",
+    "names": [
+      "gencreator-launch",
+      "gencreator-operations",
+      "gencreator-produce"
+    ],
+    "scope": "producer and operations inspected; installation does not establish account connection"
+  },
+  "admission": {
+    "pp": "BOUNDED interactive; one parallel workload",
+    "free_ram_mb": 2874,
+    "task_runtimes": 56,
+    "free_disk_bytes": 116742037504,
+    "heavy_work": "not launched; below 4 GiB RAM floor",
+    "new_worktrees": 1,
+    "kind": "small text-only hub handover"
+  },
+  "limitations": [
+    "Independent provider review pending",
+    "Same-source behavioral evaluation pending",
+    "No new live Postiz/account or n8n execution verification",
+    "Instagram ranking page returned HTTP 429",
+    "TikTok current help page had no extractable text; foundational newsroom article is 2020",
+    "C:/Users/frank/starlight/repos/starlight-agent-config/core/policies/capability-loading.md missing at supplied path",
+    "Several skills.sh candidate pages inaccessible; upstream GitHub used",
+    "No complete worldwide platform or API-access verification"
+  ],
+  "issue": "https://github.com/frankxai/content-os/issues/5"
+}
