@@ -1,5 +1,15 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Lab: land LN-004 and run the behavioural half
+
+```
+Read memory agent-file-census-ln004, then starlight-intelligence-lab PR #5, issue #6 and notes/LN-004-agent-file-census.md (Review record section). Three jobs, drafts only, one worktree each, pp preflight first.
+1. Land: have a different harness run pr-gate on #5 and frankx.ai-vercel-website #930; fix what it finds; add the agentfile-audit row from proposals/agentfile-census/products-row.json to starlight/graph/products.graph.json on its own branch; do not merge, Frank owns merges. Then send the agents.md issue from proposals/agentfile-census/upstream.md only after Frank says go.
+2. Harden: collector fetch-by-SHA replay with dated cohort directories; hand-label 100 files for the command and commit/PR markers and publish precision in the note.
+3. Behavioural half: pick 5 estate repos with divergent AGENTS.md/CLAUDE.md, consolidate to one file plus pointer, run the same 10 tasks before and after through the Observatory claim checker, report failed-run and false-claim counts. This is the experiment the Codex reviewer said would make the result worth sharing.
+End with what ran, evidence paths, what you killed, three decisions for Frank.
+```
+
 ## Frontend, Vercel and Figma: build and release the native readers
 
 Capacity blocks full goal01a11375 after three consecutive no-progress turns. Preserve the full scope, [existing674](https://github.com/frankxai/frankx.ai-vercel-website/issues/674) and [draft919](https://github.com/frankxai/frankx.ai-vercel-website/pull/919). Owned product worktree C:/Users/frank/starlight/worktrees/frankx-book-journey-20261007, agent/codex/reader-resilience-20261007, clean local84f1fa45b767c41251a2ec2c77dfe4c539600ba2, remotead2. Main62131 blog fixes are integrated without rewriting history. Golden Age implementation,24reader+1dock tests, type/lint/language/detector and independent app source reviews retain their recorded scope; release is pending.
