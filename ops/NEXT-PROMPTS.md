@@ -24,81 +24,23 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ### AI-factory architecture: finish official-media Studio acceptance and production, then live factory
 
-Continue task `01a101b1-9d38-7fa1-b1f0-dec923631d7f` from hub session2026-10-07,
-Technology30/PR34, Swarm15, hub102 and privateOps149. Preserve other owners,
-existing worktrees, npm cache and original private HTML/workbook/creator case.
+Continue task 01a101b1-9d38-7fa1-b1f0-dec923631d7f. Read the latest agentic-ops-hub session, OPS-LEDGER and NEXT-PROMPTS; inspect actual repositories and production. Reuse owned worktrees and preserve other owners.
 
-Technology worktree: C:/Users/frank/starlight/worktrees/starlight-technology-creator-factory-20261003;
-branch agent/codex/creator-studio-factory-20261003. Current draft head
-`e214a91247bfa8e4d0937d9855f1c959b14e628c`. This changes only two evidence JSONs
-from implemented source53ed8b4. Reuse the Studio, cost engine, full export/import,
-interrupted recovery and mainPR38 privacy/Next integration. Read current contracts;
-Git identity, route guard/check explicit paths and lane ownership before writes.
+Finish Creator Studio PR34 to verified production, reconciling newer Shop PR39; then complete the approved Swarm15 pilot and review OpsPR157. Discover gaps, choose the approach and implement autonomously under existing release, privacy, resource and approval contracts.
 
-Frank rejected earlier1c1196c image-free/text-heavy layout and its27/30. Current
-real Framework guide kit photograph is local/unchanged with author,source/licence,
-optional-parts and395versus495 qualification. Compact initial comparison does not
-save a choice or change the engine recommendation. Actual photo/first-viewport,
-failed-image, keyboard/focus/touch/reduced motion/recovery regressions pass.
-CI37544657908 at53ed:182units/11editorial/51page build/48cloud browser checks;
-source/tested mergece0b415a share75536f78tree.32PNG/sidecar pairs hash-checked in
-both ledgers. Final e214 CI37545892007 also passes48checks; source/tested merge346bbcff
-share548573d1tree. Current32captures/sidecars verified in both ledgers; four
-initial/responsive PNGs match inspected53ed bytes. Current native Git preview:
+Explore broadly across ecosystems, creator workflows and revenue models. Choose useful experiments, compare serious alternatives and measure output, repair, time, cost and recovery. Produce working artifacts, visual article drafts on an existing blog, reproducible demos and useful upstream contributions. Test several monetization hypotheses with approved offers. Save evidence and remaining work in existing issues and the hub. Ask only for missing authority or consequential choices.
+
+Pickup: [8October session](sessions/2026-10-08.md) and [7October exact implementation/review evidence](sessions/2026-10-07.md).
+TechnologyPR34 e214a91draft; priorCI37545892007 passes182units/48browser checks.
+Current productionaf69bda is newer ShopPR39; actualStudio404. Preserve/reconcile
+its commerce, navigation and CSS. Last preview:
 https://starlight-technology-a1o2ba6g0-starlight-intelligence.vercel.app/studio
-READY deploymentdpl_GXovWgBV45rWEkMXWGPWdVTYFMd4 and fetched marker binde214.
-Public evidence JSON names inspected53ed; final CI/parity proof is in hub/issue.
-Do not trigger another evidence-only commit/build loop.
-
-Current26/30 is provisional lead inspection, not independent/buyer acceptance.
-Apple desktop/mobile real reference was inspected; NVIDIA consent dialog and
-Framework408 mean incomplete comparison. Native official GMKtec/Framework/NVIDIA
-players render; playback did not advance. Keep immediate YouTube fallback. Apple
-photo is credited CC BY, not official Apple imagery. Manufacturer photo rights
-for GMKtec/NVIDIA remain unresolved. Framework guide fetched fresh; licensing
-search policy CC BY-SA3.0 is cached1.3years old and direct licensing URL404.
-Resolve exact independent rights/commercial disposition before release.
-
-Current64-file e214 runtime/global-style/lock/media/CTA/privacy/cost/recovery
-packet about600KB, manifest5cacc2668e055f284d5547c384fcca2c0e5c2b6fa459bd55db2f084bf1725d3e,
-four inspected runtime-equivalent PNGs and actual receipt are in existing private
-audit. Gitleaks passes. No completed independent exact security/privacy/licence/
-commercial/rendered/skeptical-buyer verdict exists. Fresh visual-direction question
-is pending; prior question was answered by rejection, silence is not acceptance.
-Native review HOLD2277MiB versus4096floor/4710required, despite rawppBOUNDED.
-No client/inference started. Prior provider attempts' backend cancellation/full
-cost remain unconfirmed. Use stable admitted native/authorized cloud route, bounded
-output/cost/time and exact file/hash coverage; no paid API/subscription fallback.
-Do not kill/archive foreign tasks. Machinev1.2 storage15%is warning; actual disk
-121.25GiB/12.74%BOUNDED. Fresh numeric admission precedes any heavy effect.
-
-Production remains `starlight.technology` at
-`bbad55b90cbf5c8e0a6b1bf5599fbdd383745341`, deploymentdpl_Ej37XXXPA7bhoj4NPj2bpGJa8veL;
-actual Studio404.4588a24 is historical. Resolve rollback403/eligibility/access;
-Git revert must preserve then-current accepted main. Preview pricing/candidate
-CTA200 keeps orders closed and prepares a local draft the user sends by email;
-trusted release approvals empty. Independent offer/fulfillment review pending.
-Once all release gates pass, review/mergePR34 through existing native Git path,
-verify production domain's actual merged SHA, navigation/save/reload/export/import/
-recovery and sanitized examples. Require actual main-only production verifier
-receipt; preview/build cannot close the product.
-
-Then Swarm15 from main5bb6d29 containingf5ccf6a. Reuse durable Postgres authority;
-complete trusted entrypoint/executor, exact durable create/dispatch, authenticated
-persisted readback, effect-time authorization/budget and uncertain settlement.
-Prepare one useful reversible mission with cancellation/recovery/caps/output
-acceptance; named security review and exact human approval before activation.
-Measure actual cost/repair/useful output; seven successes per lane before concurrency.
-No task live factory worker/mission/scheduler/paid fallback activated. Whole-estate
-fleet state is not established by this task.
-
-OpsPR157 remains875d64e/draft: existing source finding5984306286 stands. Diff fetch
-precedes invocation without fresh numeric machine/storage/quota/model/budget check;
-require HOLD cursor preservation and RAM-drop-to3000-during-diff regression.
-Applyv1.2storagefloors, not15%warning as refusal. Preserve foreign owner source.
-Update existing issues and hub session/ledger/this one prompt; retain all other
-prompt bytes. Schemas/taste-memory sync, workbook WARNs, command-center38 mapping,
-actual billing/throughput/ROI remain open. Emil review uses Before/After/Why table.
+Independent source/rendered/buyer/licence/commercial review remains open. Native
+review admission was held on7October; measure fresh before repeating inference.
+Full private prompt history, work map/ten hypotheses and short prompt are in the
+existing creator-cost-extension audit. Retain original private creator inputs,
+report/workbook, npm cache, all unfinished work and all other owners. No task
+live factory worker is activated; exact human approval precedes its first mission.
 
 ### Estate guard: waves 3–4, the medium PRs, two repo settings
 
