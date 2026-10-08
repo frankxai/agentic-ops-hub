@@ -502,6 +502,259 @@ service or unattended worker under machine HOLD or storage BOUNDED. Preserve rel
 gates, account eligibility and every other unfinished front.
 ```
 
+[Starlight/Queen proactive implementation, Codex pickup refreshed 2026-10-08]
+
+Frank's latest direction adds abundant experimentation, upstream ecosystem
+contributions and an existing-blog monetization test. The short task below is
+the current entry point; the detailed constraints and earlier evidence below
+remain supporting context. The private recap retains all visible user requests
+and the original eleven unfinished requirements. No blog or revenue result is
+implemented or validated by this handover.
+
+```text
+Continue Frank's Starlight work from agentic-ops-hub/ops/NEXT-PROMPTS.md,
+agentic-ops#134 and the existing source-task receipts. Use your strongest supported
+reasoning. Discover current instructions, repo owners, accepted products and live
+state yourself; preserve unfinished work and other agents' changes.
+
+Think independently and propose ambitious, testable improvements. Select and run
+bounded experiments across models, harnesses, design/browser workflows, memory,
+version control and recovery. Let useful artifacts, Frank's feedback, independent
+review, actual cost and repair effort determine what we adopt. Contribute proven
+fixes and reusable work to the relevant ecosystems.
+
+Engineer one valuable end-to-end slice, then expand from evidence. Build a path
+from real experiments to reproducible posts on an existing blog and test demand
+for an appropriate monetization route. Choose the architecture and sequence;
+implement, refine, test, commit, push and merge eligible PRs through normal controls,
+then verify authorized production behavior. Act autonomously on routine decisions
+within privacy, machine, budget, licensing and human publication/release limits.
+Save exact evidence, open gaps and one next prompt in the hub and existing issues.
+```
+
+Supporting detail prepared at Frank's request on 6 October remains below. The short
+prompt above is the current entry point; these detailed instructions retain the
+same implementation authority, spending limits and unfinished requirements.
+No scheduled execution was created. The October 4 proposals and review gaps remain
+recorded in that session.
+
+Implementation pickup, refreshed 6 October: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
+merged as `123d6798a505708b11876cd0e6a579e9b72846bc` at 05:08 UTC. The original
+lead implemented through `2e36377`; a separate owner fixed termination/claim-error
+handling and obtained exact-head independent signoff through the normal gate.
+Final head `3b36037` CI passes 145 Linux Node+52 Python cases and 59 Windows cases,
+with three platform skips. Preserve earlier failed reviews and all source history.
+[Ops194](https://github.com/frankxai/agentic-ops/pull/194) merged as `7e6f2ea` with
+the actual controller-to-Windows-Job-Object driver connection and22 passing
+native-driver cases. Main `9fb4372` also includes Ops195's cursor-lock repair.
+Refresh remote state and lane ownership before any edits; the original controller
+worktree still has historical `2e36377` and must not overwrite later accepted work.
+
+Read main's controller, native driver, worker, verifier and related docs together.
+The source is dormant: the later owner reports inspected n8n routes do not call
+it, and the native goal is blocked on the protected runtime/profile, authenticated
+task reference, actual sandbox/store/scrubbing and independent acceptance issuer.
+Treat that owner report as bounded evidence; do not invent identity, permissive
+callbacks or credentials. Reuse one controller/worker authority and resolve the
+actual host dependency before one useful native task, interruption and delivery.
+AgentDB/Jujutsu remain disabled; actual package/value experiments are unfinished.
+Obtain fresh machine/storage admission; historical review-lite HOLD is not a
+current measurement. No unattended activation or new installation is authorized
+by a source merge. Continue the full journey below with all other fronts preserved.
+
+Boundary: private instance bindings/evidence stay in Agentic Ops. SIS is the
+existing candidate for a reusable public contract/core release, subject to its
+owner, exact-file rights review, extraction ADR, recovery/rollback and second-
+operator proof. Config owns versioned profiles; Observatory/Canvas expose evidence
+and artifact feedback; product repos own actual changes and release acceptance.
+Keep Ruflo/OmO below those authorities as optional measured worker capabilities.
+Current OmO license is Sustainable Use, not MIT; check selected-file rights before
+public copying. Compare useful output, repair effort, cost and interrupted recovery
+on the same job before any adoption. No public extraction is approved or delivered.
+
+```text
+Continue Frank's Starlight/Queen work as the accountable engineering lead. Deliver
+a valuable working system through implementation, independent review, normal
+merges and end-to-end verification. Use your strongest supported reasoning for
+architecture, difficult debugging, security and evaluation. Bring your own informed
+judgment: identify weak assumptions, propose a better approach, explain the tradeoff
+briefly and implement improvements within this outcome.
+
+Authority and initiative
+I authorize you to research, inspect, implement, refactor necessary foundations,
+fix defects, write meaningful tests, run admitted experiments, improve the design,
+commit named files, push branches, open/update PRs, address reviews and merge through
+normal GitHub controls once required checks and approvals are satisfied. Continue
+through the existing release workflow and verify any authorized deployment.
+Do not repeatedly ask whether to proceed or stop after producing a plan. Make
+routine implementation decisions. Complete all preparatory work before requesting
+a genuinely missing action-specific approval. Preserve branch protection, human
+release gates, account permissions, privacy and existing spending limits.
+
+Suggest and build
+Spot consequential gaps beyond the obvious symptom. Recommend and implement
+improvements that strengthen this user's outcome, including awkward flows, weak
+foundations, failure handling, integration, performance and maintainability.
+Keep the scope coherent. New brands, unrelated products, paid commitments,
+unattended schedules and private-repo visibility changes need separate authority.
+
+Start from verified state
+Read C:/Users/frank/AGENTS.md, the instructions for the harness actually running,
+and each selected repository's AGENTS.md and relevant release/security contracts.
+Read C:/Users/frank/.starlight/policies/product-outcome-quality.md,
+C:/Users/frank/.starlight/workspace-bootstrap/WORKFLOW.md and the machine policy.
+Discover relevant skills through the installed index/catalog and capability-loading
+guide. Load them as their phase needs them; verify their availability and full
+required references. Follow current user authority when older skill text conflicts.
+Do not invent slash commands, provider flags, model identities or tool access.
+
+Canonical repositories are C:/Users/frank/starlight/repos/. Verify Git root, origin,
+branch, dirty changes and lane ownership; run route_work.py guard, then check with
+explicit files before writes/staging. Preserve other agents' work. Never recursively
+search home or a drive, use quarantined universe, or create a competing task queue.
+
+Read the latest agentic-ops issue 134 and hub PR 153, current main source and existing
+task records. Preserve source task 01a101be-4e85-74d1-8377-c0ccad8d2dc8 and its unfinished
+requirements. In C:/Users/frank/.starlight/reviews/interface-foundations-20261003/,
+read queen-cross-harness-experiment-design-20261004.md and
+queen-public-private-community-boundary-20261004.md, their reviews and both
+reconciliation/response documents.
+Those designs received REVISE; their acceptance gaps remain implementation work.
+Last checked 6 October: hub153 is a draft; Config90 and Ops134 are open. Refresh
+everything, including access, ownership, approvals and deployment state. Also
+reconcile newer SIS273, Ops163, Canvas31, Observatory10 and Estate Guard work in the
+latest hub main. Reuse their accepted implementations and keep their source-versus-
+runtime evidence separate. An old failure or old green test is not current evidence.
+Read C:/Users/frank/starlight/queen/AGENTS.md, QUEEN-PROTOCOL.md and fresh
+state/chair-pulse.json before any chair/controller change. The October 6 seat
+appoints Grok as chair and PowerShell QueenLoop as dispatcher; Hermes has memory/
+gateway duties. Keep one chair and one execution authority. A saved pulse is
+passive state. The latest observed tick was idle-held, with zero dispatches and
+27 held cards; 13 pulse-listed cards lacked self-contained prompts. Refresh these
+facts. Reconcile the existing launcher with the newer Slack acceptance adapter,
+which does not launch workers and holds code admission pending isolation. Repair
+specific native adapters; do not infer model quality from an old sandbox failure.
+Compare a replacement chair on real coordination/recovery/cost evidence, then
+handover explicitly. Do not start another controller merely because a worker
+harness supports subagents.
+
+Reconcile all eleven original requirements with their current proof and remaining
+gaps. Retain the approved native Bash hooks and their denial/design-feedback proof;
+repeat first-time trust approval only if the actual installed state requires it.
+
+Product and ownership
+Keep Starlight Intelligence as the umbrella and Queen as a configurable coordinator
+role. Agentic Ops owns Frank's private operational integration, registry and instance
+bindings. Personal memory, credentials, budgets, routes and raw traces remain private.
+SIS is the existing candidate for reusable public contracts/components, subject to
+its owning protocol, security, licensing and release reviews. Public capabilities
+use existing licensed skills/evals seams. Labs hosts reproducible findings; Academy
+teaches accepted methods; existing GenCreator community supports artifact feedback.
+Confirm interface/source ownership before writing. Separate repository ownership
+from runtime hosting, and keep one durable orchestrator per process.
+
+Deliver the complete user journey
+Frank can request a real site/design/workflow improvement; admitted native agents
+produce useful artifacts; Queen shows honest evidence; Frank reviews comparable
+results and supplies artifact-linked feedback; validated changes improve subsequent
+work; accepted product changes reach the owning preview/release and are verified live.
+
+First reconcile and complete one real, useful non-code Queen roundtrip using existing
+Protocol release evidence: intake, admission, actual executor, useful artifact,
+trusted checks, independently authenticated review, visible feedback, accepted
+delivery, interruption/restart, duplicate prevention and time/cost accounting.
+Implement missing prerequisites in owned lanes. Then establish real native code
+isolation, credential/checker boundaries and cancellation/recovery before admitting
+code tasks. Continue into one actual product improvement and owning release.
+After code admission, compare two supported native makers, such as Codex, Claude
+or Grok, against a single-maker baseline on the same useful product task. Record
+common inputs/criteria and exact model, harness, prompt, skills, tools, environment
+and artifact versions. Rotate roles and use a reviewer who authored neither result.
+Distinguish whole-stack comparisons from isolated prompt/model experiments. Retain
+failures, held and losing trials; measure usable outcome, design fit, repair effort,
+elapsed time and actual cost. Frank must be able to inspect comparable previews,
+see the evidence behind ratings and give authenticated artifact-linked feedback.
+Resolve stale/conflicting feedback, then validate proposed prompt, skill, tool,
+brand or routing changes on held-out tasks before adopting them.
+For a shared component, prove a second operator can install a pinned release with
+their own accounts/data, produce useful work, give feedback and recover without
+duplicate execution or access to Frank's instance. Prepare public extraction to
+reviewable completion; public redistribution follows its actual owning approvals.
+
+Engineering and design expectations
+Take the time to understand the foundation and accepted implementation. Compare a
+serious alternative on the same task. Recheck current official documentation and
+license/dependency suitability. Evaluate Paperclip at the orchestration seam and
+Langfuse at the evaluation/telemetry seam when relevant; neither is an automatic
+installation or replacement. Respect current architecture decisions and migration
+ownership. Use supported MCP/ACP/A2A/OpenTelemetry interfaces only where useful,
+with pinned versions and observed capability/conformance tests.
+
+Deliver considered narrative, clear information architecture, distinctive brand
+design and complete interactions. Preserve Frank's accepted taste and products.
+Eliminate generic filler, template-like layouts, superficial wrappers and fake
+functionality. A simple interface may sit over deeply engineered internals.
+Measure correctness, actual usefulness, repair effort, performance and recovery;
+dependency count, agent count and novelty do not establish quality.
+
+Test meaningful boundaries: authentication/denial, tenant or instance separation,
+trusted checker/reviewer custody, idempotency, conflicting feedback, reconnect,
+timeout, cancellation, failed dependencies, partial results and rollback. Bind
+claims to exact source/artifact revisions. Fixtures and build success establish
+only their tested scope. Keep required checks separate from subjective ratings;
+calibrate changed graders on held-out accepted/rejected human examples.
+
+Browser, plugins and capabilities
+Use actual Chrome and the supported installed browser connector/extension for
+rendered review. Discover its identity/version, permissions and working connection.
+Read the computer-use/browser skill first. Exercise the user's full journey and
+inspect relevant console/network/performance behavior, mobile/touch, keyboard/focus,
+accessibility, font/image failure, reduced motion and interrupted transitions.
+Prefer existing Vercel previews; keep session-owned local servers bounded and stop
+them. If the connector fails, diagnose the actual integration, preserve the evidence
+and use a supported alternative; report any remaining Chrome-specific coverage.
+Select other plugins/tools by the concrete capability they add, observed reliability,
+privacy, footprint and rollback. Installed does not mean used or verified.
+
+Choose relevant skills rather than loading everything: agent-workspace-bootstrap
+for routing; ce-work for implementation and its actual shipping tail; diagnosing-bugs
+for failures; agentic-harness-landscape for runtime comparisons;
+agent-runtime-trust-boundaries for isolation; emil-design-eng/impeccable for craft;
+computer-use for browser interaction; appropriate GitHub review/release and evaluation skills; humanizer for
+public prose. Read adopted repository Estate Guard rules and preserve its checks.
+Read the official n8n plugin guidance before any workflow changes.
+Honor media provenance rules if generating visuals; Higgsfield remains prohibited.
+
+You may delegate independent architecture, implementation, design/browser or security
+work to supported specialists after machine/account/cost admission. Assign exact
+ownership and tell workers they are not alone; preserve others' edits. Keep one lead
+responsible for integration and authoritative checks. Consequential review uses a
+different provider and exact revision. Use serial work when resources constrain it.
+Before heavy work run pp preflight for the actual workload and check storage before
+disk growth. Preserve the 4 GiB RAM floor. Maintain the existing EUR100/month
+incremental pilot ceiling; verify subscription/API access and actual usage, with
+no automatic paid fallback. Resource limits require a productive bounded route,
+without weakening acceptance or treating more documentation as implementation.
+
+Finish and report
+Refine the artifact after independent critique and real browser inspection. Complete
+required checks, resolve owned conflicts, merge eligible PRs without admin bypass,
+and verify the accepted revision against any authorized production deployment.
+If a real gate remains, state the exact missing permission/evidence, show the
+concrete ready artifact and continue independent work that can still progress.
+
+Save the session, ledger and ONE current continuation in agentic-ops-hub, update the
+owning existing issue, preserve unfinished work and stop session-owned processes.
+Report the useful behavior delivered, exact commits/PRs/merges/deployments, actual
+skills/tools/harnesses used, meaningful tests and rendered evidence, review findings,
+cost/repair effort and precise remaining gaps. Distinguish proposed, implemented,
+reviewed, merged, deployed and live verified.
+
+Begin with a brief statement of the user's outcome, verified owning repos and next
+three concrete actions, then execute. Keep investigating and improving until the
+authorized slice is complete or a freshly evidenced dependency prevents it.
+```
+
 [Starlight integration continuation, Codex]
 ```
 Continue source goal 01a0f791-4e88-7872-82ef-5437bad5f97a. Read the October 1

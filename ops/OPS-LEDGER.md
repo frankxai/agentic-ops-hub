@@ -1,5 +1,24 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-08: complete visible-request recap and broader experiment continuation (Codex)
+
+Frank requests a short complete work/open-items recap and more independent
+experimentation, ecosystem contributions and a monetizable blog. Private task
+evidence preserves ten visible task requests and two approval replies verbatim,
+plus an attributed work inventory and all eleven original open requirements.
+Instruction/environment blocks and unseen chats are not exported as task prompts.
+
+Fresh GitHub reads confirm Ops156/194 merged, Ops134 open and Hub153 still a draft.
+The last recorded live-runtime dependency remains unproved; no new production
+audit, model experiment, upstream contribution or blog/revenue result is claimed.
+The existing Queen continuation now includes a short autonomous prompt and
+candidate experiments in model/harness routing, design/browser approaches,
+memory ablation, conflict/recovery, scoped skills, creator production and
+reproducible publication/demand tests. Select an admitted active set by useful
+output, human feedback, independent review, cost and repair evidence. Preserve
+current product ownership and publication/release limits. See the
+[session](sessions/2026-10-08.md); this is a documentation slice.
+
 ## 2026-10-07: Complete authored directions and optional OpenRouter; current acceptance pending (Codex)
 
 [Draft Canvas45](https://github.com/frankxai/starlight-agent-canvas/pull/45) advances to aeeabc19054e4f36920ac5ff6292b021f2591361/treec1279de8. Three complete authored pages repair observed copy gaps; optional OpenRouter shares existing source scope, strict validation, draft recovery and checkpoint export. Explicit schema-capable routing, no fallback/retry, server-only key; Qwen3.8 Flash is the first inexpensive candidate and Gemini2.5 Flash Lite the comparison. [ExactCI37622815098](https://github.com/frankxai/starlight-agent-canvas/actions/runs/37622815098) passes all5jobs:168core/14MCP/49browser+3existing skips per matrix, same-tree PR checkout verified. This is synthetic transport/browser verification, not live model acceptance. Current source/copy review and new complete-page capture receiving/inspection remain pending: direct RAM406.64MiB holds launches, no reviewer PID/verdict. Earlier30c source PASS and456 capture receipts retain their historical scope. No configured OpenRouter key, actual in-app call, customer approval or measured quality/cost comparison. Keep [issue27](https://github.com/frankxai/starlight-agent-canvas/issues/27) open,45 draft and full goal active. Preserve195/reader194, Command67 owner/privacy and native41 runtime holds. See [session](sessions/2026-10-07.md).
@@ -45,6 +64,61 @@ Production book slice verified on 7 October. [PR916](https://github.com/frankxai
 
 Live aggregate0→1, retry/DNT/GPC stayed1; no completed transfer or private-event attribution claimed. Seven direct PDF attachments are available without newsletter enrollment. Required protected checks passed. Original PR810 and historical failures are preserved. [Issue809 receipt](https://github.com/frankxai/frankx.ai-vercel-website/issues/809#issuecomment-6030592153), [workflow](../docs/design/frontend-journey-workflow.md) and [session](sessions/2026-10-07.md) hold details. Main CI37568682090 attempt3 passed at e3918f37b58e9e45c3c28e1609be07dc10f3efd9: 15 PNGs, 26 checks, no failures. Every PNG hash/dimension and VIS sidecar validates. Attempt1 cancellation and attempt2 Chrome mobile-keyboard timeout with14 valid captures remain preserved; cause is unproven and retry success is not a reliability repair. Protected preview passed seven exact redirects/four denials, and production passed25 checks. Issue809 is closed as completed; PR810 is closed as integrated, with branch and author/source history retained. Broader design, capture reliability and journey work stays open on674/706. Read/edit Figma quota, editable Design capture, other journeys, reader typography/widget/sticky issues and memory-vault synchronization remain open. Broad goal remains active.
 
+## 2026-10-06: Queen source merged; private instance and public core remain separate (Codex)
+
+Fresh GitHub reads supersede the earlier merge hold: [Ops156](https://github.com/frankxai/agentic-ops/pull/156)
+merged as `123d6798a505708b11876cd0e6a579e9b72846bc`. Another owner completed
+termination/claim-error repairs, exact-head independent review and the normal gate.
+Final head `3b36037` CI passes 145 Linux Node+52 Python cases and 59 Windows cases,
+with three platform skips. [Ops194](https://github.com/frankxai/agentic-ops/pull/194)
+then merged the existing Windows Job Object driver connection as `7e6f2ea`; its
+22 native-driver fixtures pass. Current main is `9fb4372`. Source merge activates
+no live Queen route; useful native-model output and protected host integration
+remain open in [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+
+Repository placement is private-instance integration, not a public-core decision.
+Reusable contracts/core are proposed for the existing SIS authority after owning
+extraction/license/release review; private routes, accounts, policies and evidence
+stay in Ops. Ruflo is an optional overlay/component comparison; OmO supplies
+category routing and progressive skills/core layering patterns. Its Sustainable
+Use License requires selected-file redistribution review. Neither is installed,
+benchmarked here or promoted to fleet authority. See the appended session and
+refreshed existing continuation; prior critiques and requirements are preserved.
+
+## Earlier 2026-10-06 observation: Queen recovery source awaiting merge (Codex)
+
+[Ops156](https://github.com/frankxai/agentic-ops/pull/156) carries corrected source
+`2e36377b5a08cfcdcc0da7e7df567d2ea6218a85`: durable run recovery, signed acceptance
+with retained provenance, cancellation context, archives and delivery recovery.
+Optional AgentDB accepted-reference indexing and an isolated Jujutsu probe remain
+disabled. Linux CI passes142 Node+52 Python cases; Windows passes58 cases with the
+Unix-only case skipped. Worker OS/Node matrix and governance pass. Cloud Claude
+review37411828357 completed with [no issues found](https://github.com/frankxai/agentic-ops/pull/156#issuecomment-6009095453).
+Three earlier private Anthropic critiques and their repairs are preserved.
+The merge gate still requires an actual other-harness head-bound signoff.
+
+CI tested merge0730bc7 of this head with accepted Ops192/main7eea57a, including
+the existing Windows Job Object worker. Reuse that adapter for the host pilot;
+it leaves filesystem/network/credential isolation and native-model proof open.
+Fresh04:14 UTC review admission remains HOLD at5555 MB versus6144 required.
+
+Local review admission at04:00 UTC held at6001 MB versus6144 required. No new
+package, worktree, swarm, schedule or production runtime was installed. Active
+Grok/PowerShell Queen ownership is preserved. Native host containment, broker and
+delivery integration, useful task/restart proof, actual AgentDB/Jujutsu experiments,
+human feedback and public release remain open in [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+See the [session](sessions/2026-10-06.md) and existing proactive pickup in
+[NEXT-PROMPTS.md](NEXT-PROMPTS.md). All original requirements remain open.
+
+## 2026-10-06: Queen chair/controller reality and harness recommendation
+
+The local seat assigns Grok as chair, PowerShell QueenLoop as dispatcher and Hermes memory/messaging duties. Latest observed 04:31 Amsterdam tick: idle-held, 0 inbox, 27 held, 0 dispatched, sleepMode true; 13 pulse-listed cards lack self-contained prompts. Ops main `c194035e` has native launching and separate trusted Slack acceptance code, whose production roundtrip/code isolation remain open. [Current pickup](NEXT-PROMPTS.md) now reconciles those paths and respects one active chair. Retain Grok for now; benchmark a replaceable planning binding and verified native worker adapters before adopting a replacement. Advisory assessment only; no queue, worker, model, schedule or runtime changes. See [session](sessions/2026-10-06.md).
+
+## 2026-10-06: proactive implementation pickup prepared for 7 October (Codex)
+
+Frank requested a continuation that explicitly authorizes useful improvements, implementation, reviews, normal merges and end-to-end delivery. [The current prompt](NEXT-PROMPTS.md) reconciles the original requirements, approved native hook proof and newer continuity/Observatory/Estate Guard work before choosing owned implementation lanes. It requires one useful Queen roundtrip, actual code isolation before code admission, fair native-maker comparisons, artifact-linked human feedback, held-out evaluation, real Chrome inspection and owning release verification. It retains the private-instance/public-component boundary, exact-revision review, security checks and EUR100/month incremental pilot ceiling.
+
+This slice produced the prompt and handoff only. Machine admission for swarm work returned HOLD at 2536 MB free RAM; no fanout, worker, browser server, schedule, paid fallback or production change was started. Hub PR153 remains a draft and [Ops issue134](https://github.com/frankxai/agentic-ops/issues/134) remains open. The broader goal and unfinished requirements remain open. Fresh hub main `eea191e0` was merged into the existing owned draft branch; both independent October 4 session additions were preserved.
 ## 2026-10-06: Agent OS studio, native evals, hook fix, cloud agents queued (Claude)
 
 [agentic-creator-os #86](https://github.com/frankxai/agentic-creator-os/pull/86) (Agent OS: one Expertise Kernel compiled into 9 Generals, 6 Domain Queens and 3 studio workers; dependency-free renderer; estate audit ratchet; /si) is green and waits on Frank's merge; [#92](https://github.com/frankxai/agentic-creator-os/pull/92) (renderer temp leak) is stacked and rebuilds on main afterwards. The impeccable hook's `cmd.exe /c` under Git Bash executed edited text as commands; it is fixed on c940 and the doctor check is [starlight-agent-config #101](https://github.com/frankxai/starlight-agent-config/issues/101). Five run-once cloud agents are queued (#101, then agentic-creator-os [#95](https://github.com/frankxai/agentic-creator-os/issues/95), [#96](https://github.com/frankxai/agentic-creator-os/issues/96), [#97](https://github.com/frankxai/agentic-creator-os/issues/97), [#99](https://github.com/frankxai/agentic-creator-os/issues/99)). #95, #96, #97 and #99 are each gated on #86 merged and fewer than three open routine PRs; #101 has base main and no #86 guard. Decisions are in the [register](https://github.com/frankxai/agentic-ops/pull/160) and Frank-only items in [Starlight Home](https://github.com/frankxai/starlight-command-center/pull/63). See [session](sessions/2026-10-05.md).
@@ -92,6 +166,46 @@ Actual Chrome verification belongs to earlier head d401317; final embedded-scrip
 ## 2026-10-04: Protocol typography and Lab overflow in production (Claude)
 
 Protocol typography patch ([SIS 270](https://github.com/frankxai/Starlight-Intelligence-System/pull/270)), Foundry rules renewal ([272](https://github.com/frankxai/Starlight-Intelligence-System/pull/272), [274](https://github.com/frankxai/Starlight-Intelligence-System/pull/274)), 320px and grid cleanup ([271](https://github.com/frankxai/Starlight-Intelligence-System/pull/271)), `/architecture` and `/quickstart` sentence case ([275](https://github.com/frankxai/Starlight-Intelligence-System/pull/275)) and the Lab vignette overflow ([Lab 88](https://github.com/frankxai/starlightintelligence.ai/pull/88)) are merged with Grok signoff on each exact head. `starlightintelligence.org` serves `232bcdc` and `starlightintelligence.ai` serves `a0dbca5`; a headless-Chrome probe at 320/390/768/1440 px with reduced motion on and off shows zero overflow and zero uppercase on four pages. SIS 276 (dead grid rule) merged at `9a139db` after the live check. Open: about 185 uppercase utilities in about 34 files, Lab focus ring, PR246 lock sequencing, Arcanea icon migration (blocked by dirty tree, branch and 14.52% free disk). Details in the 2026-10-04 session note.
+
+## 2026-10-04: Private Queen and public community boundary clarified (Codex)
+
+Frank challenged the earlier Queen ownership table. Its Ops assignment describes
+the current private instance integration, not a public core product decision.
+Registry main551e2f0 already separates private Ops, public SIS substrate and public
+sanitized hub. Fresh GitHub agrees; Agent Config/Labs/community app source remains
+private, while SIS and shared skills are public with detected MIT licenses.
+
+Proposed boundary: one reusable SIS-owned operations component after owning review,
+private instance data/bindings in Ops, existing Labs experiments/Academy teaching
+and GenCreator applied feedback. Queen stays configurable coordinator role. Retain
+Starlight Intelligence naming; observed AgentOps vendor/Cisco AgenticOps overlap.
+Benchmark Paperclip orchestration and consider Langfuse evaluation as separate seams.
+No extraction, rename, visibility change, new repo/runtime or protocol conformance
+claim. The exact private proposal7dfc638 received independent REVISE; rights audit,
+public release governance, selected conformance, second-operator recovery/privacy
+proof and single-orchestrator migration are recorded as implementation gates.
+Existing hub153 and Ops134 carry the correction; all earlier tasks remain open.
+
+## 2026-10-04: Shared harness experiment design saved; pilot acceptance open (Codex)
+
+Frank requested shared Codex/Claude/Grok experiments, Queen observation, harness
+checks, visible design/prompt/tool assessment and a feedback loop. The proposed
+loop reuses the existing bus/controller: one parent experiment, individually
+admitted candidate tasks, exact artifact checks, independent review, Frank's
+feedback, owning product release and live verification. Compare with one capable
+agent/manual review; record model separately from harness, prompt/skill/tool
+versions, repair effort and cost. Hard checks stay separate from anchored ratings.
+
+The private design is pinned by SHA-256
+`77aa4b2d1ae488bb89676b551c2f03b98e847e77107c92464b48b5b528d6fa8b`.
+Two independent StepFun critiques returned REVISE; child admission and feedback
+custody were refined. Remaining isolation, grader calibration and feedback conflict
+tests are explicit pilot requirements. No new service, worker, schedule, paid route,
+interface implementation or production change. Queen live roundtrip and code
+transport remain held; config PR90 still needs another approving GitHub identity.
+See the session and the current shared-experiment pickup under the existing Queen
+continuation. Track implementation in [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+Preserve merged continuity161, existing activation work and every unfinished front.
 
 ## 2026-10-04: Queen/SIS continuity merged source and production acceptance (Codex)
 
