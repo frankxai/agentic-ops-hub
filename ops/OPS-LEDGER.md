@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-09: Starlight chat continuity plans saved (Codex)
+
+[Private strategy draft210](https://github.com/frankxai/agentic-ops/pull/210) preserves the full stack, suite placement, commercial hypotheses and private Chrome/browser evidence; existing strategy, roadmap and operator-suite plan link it. [Kura draft17](https://github.com/frankxai/kura/pull/17), source bf937da, adds public continuity/identity/browser/recovery requirements. [Private review211](https://github.com/frankxai/agentic-ops/issues/211), [Kura12](https://github.com/frankxai/kura/issues/12#issuecomment-6083189264) and [SBO10](https://github.com/frankxai/second-brain-os/issues/10#issuecomment-6083189655) are linked on portfolio project8 as Backlog with next gates/evidence. Doc/link/privacy checks and secret scans passed. Product behavior, refreshed picker, vault/surface ownership, buyer economics and independent exact-head review remain open; no release, new runtime or automatic chat organization. Private chat URLs stay private. See [session](sessions/2026-10-09.md). Preserve other goals and product acceptance issues.
+
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.
