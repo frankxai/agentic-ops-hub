@@ -1,5 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## SIS: finish review of terminal execution, then prove the creator loop
+
+Read ops/sessions/2026-10-10.md and SIS issue144. Start with
+`codex --cd C:/Users/frank/starlight/repos/.codex-worktrees/sis-terminal-orchestration-20261010`.
+Verify the assigned lane and fourteen staged files on
+`agent/codex/terminal-orchestration-20261010`; preserve the original SIS checkout
+and all other fronts. Fresh machine/storage admission comes before heavy work.
+Run clean-install lint/build and the native hooks, obtain independent exact-source
+review with a proven empty tool plane, reconcile findings, then commit named files
+and open a draft. Earlier review attempts produced no verdict; do not relabel
+configured isolation as runtime enforcement. 43 terminal, 86 orchestrator/swarm
+and 8 core tests passed in their recorded scopes. Build HOLD, provider access and
+Grok compatibility discovery are pending. Next implement one real source-backed
+creator workflow with editing, verification, recovery and export, compare direct
+native-harness use, and connect existing GenCreator/web surfaces to the shared run
+records. Keep issue144 and the full six-domain program open. Save the product issue
+and this hub; do not activate recurring jobs, live publishing or spending grants.
+
 ## GenInvestor: obtain exact-head review before upstream trial
 
 Read ops/sessions/2026-10-09.md and product issue28 receipt6077597207. Hub205 is merged at c2446950. Planning42/private (82ddff6) and roadmap4/public (06f51f7) are held by explicit different-provider review and remain stacked on evidence-foundations; do not retarget unreviewed implementation into main. Refresh source/CI and independently review product2/private41 before ordered integration. Current machine free RAM1583MB blocks additional reviewer/runtime launch; preserve other tasks and credential boundaries. When admitted, select actual V5 OpenBB packages in a fresh environment, check the15 removed providers and provider-owned APIs, cap the default8GB SEC cache, confirm rights/basis and execute the matched direct/OpenBB benchmark from UPSTREAM_BENCHMARK.md. Complete one real audited research-and-replay workflow. QuantDinger remains a conditional isolated paper lab with denied live effects and no approved fork. Preserve local-first/L2/no-advice boundaries, all branches and unfinished book/UI/MCP/distribution work. User authorized merges if good; use exact-head normal gates, no admin bypass or self-certified independent review. Save both product issues and the hub. No upstream adoption/benchmark or review completion is established.
