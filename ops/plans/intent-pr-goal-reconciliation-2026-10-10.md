@@ -46,7 +46,7 @@ Outcome: Ten source-linked conversations become reviewed cited records and resum
 
 First bounded action: Reconcile Kura15/17 with Kura12, SBO10/14 and Ops204/211; use the already-selected vault; prove real folder grant, settled capture, lineage, duplicate handling, disk-index recovery, two-vault refusal and one owner-safe resume.
 
-Acceptance: CaptureÃ¢â€ â€™reviewÃ¢â€ â€™cited retrievalÃ¢â€ â€™resumeÃ¢â€ â€™useful editable artifactÃ¢â€ â€™save/reopen/export; fresh source, privacy, failure/retry and independent exact-revision review.
+Acceptance: Capture, review, cited retrieval, resume, useful editable artifact, and save/reopen/export; fresh source, privacy, failure/retry and independent exact-revision review.
 
 Proposed maker: Integration engineer. Checker: Different-provider privacy/recovery reviewer. Phase: 1. Repository hints require live ownership verification.
 
@@ -86,7 +86,7 @@ Outcome: A next-generation creator completes a useful repeatable production work
 
 First bounded action: Preserve GenCreator agency/distribution signal and issue147. Keep Idea Swarm reader acceptance separate from sales/community wiring. Reconcile saved proposals by exact source; no new platform/naming decision from a summary.
 
-Acceptance: Real briefÃ¢â€ â€™editable content/mediaÃ¢â€ â€™reviewÃ¢â€ â€™export/delivery, proven install/recovery, clear compute ownership, accepted creator advantage and repeat use evidence.
+Acceptance: Real brief, editable content/media, review, export/delivery, proven install/recovery, clear compute ownership, accepted creator advantage and repeat use evidence.
 
 Proposed maker: Creator workflow engineer. Checker: Different-provider creator/buyer reviewer. Phase: 2. Repository hints require live ownership verification.
 
