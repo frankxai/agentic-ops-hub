@@ -646,6 +646,102 @@ name them. Issue 73 tracks the Cloud key.
 
 ## 🥇 Highest leverage first
 
+**[fleet control plane · agentic-ops + estate]** — land, then grow the queue
+```
+Read ops/sessions/2026-10-01-fleet-control-plane.md in frankxai/agentic-ops-hub
+first, then re-measure every PR it names with gh. Work in this order:
+1. Land only through node C:/Users/frank/starlight/tools/pr-gate.mjs
+   signoff/merge; the reviewer harness must differ from the author. Never
+   force-push or self-merge. hub PR budget is 15 open against 10.
+2. agentic-ops#81 (head c9c1a76) and arcanea-ai-app#466 (head 6c4e354) have
+   fixes pushed; each needs an exact-head review by a different harness, then
+   land. Hub triage table is on agentic-ops-hub#84; close its 5 close-* PRs.
+3. Burn down the ~100-PR estate review load: per repo, land what passes CI and
+   an independent review, close superseded or stale drafts with a one-line
+   reason, rebase what is still wanted. Report counts before and after.
+4. Turn the next 3 provable production defects into chain plans: commit a
+   planner-owned *.acceptance.js first, prove it fails today and passes a
+   throwaway fix, then queue the plan in starlight/queen/chains/.
+Human gates in the session file stay with Frank. Do not kill Hermes processes.
+```
+
+**[F0c · starlight-command-center]** — make Starlight Home usable by every agent and harness
+```
+Read docs/starlight-home-plan.md on branch agent/claude/home-feed of frankxai/starlight-command-center
+(draft PR #52, issue #53) and build its steps 1-4 in order, one commit each:
+1. node ops/home-feed.mjs --commit writes ops/home/feed.json in that private repo, only when content changed.
+2. ops/home/state.json written through one rebase-and-retry function.
+3. home_feed, home_next, home_mark tools on starlight-tool-plane (127.0.0.1:7317/mcp), harness from x-starlight-agent.
+4. Observatory /home reading both files from GitHub, so localhost:4321 and Vercel run the same code.
+Never write feed or state into agentic-ops-hub: it is public and the feed names private PRs.
+Prove it: Codex and Claude each call home_next and home_mark, and state.json shows both harnesses.
+Stop at Frank's gates: Vercel deploy and protection, the read-only GitHub token env var.
+```
+
+**[F0a · gencreator.ai]** — take the creator stack hub to production, one landed slice at a time
+```
+You lead GenCreator to production. Read first: ops/sessions/2026-10-05-gencreator-stack-hub.md (this repo),
+gencreator.ai issue #147, PR #148 review + comment, PR #116 go-live comment, starlight TRUTH.md §2, AGENTS.md §5b/5c/5e/13,
+~/.starlight/policies/product-outcome-quality.md. Run `pp preflight --workload build`; on HOLD, no local builds:
+use GitHub CI + Vercel previews for verification and run only targeted tests locally.
+
+Order. Land each step before starting the next. Never stack a PR on an unmerged branch.
+0. Frank gates, as one batched ask at session start:
+   - #116: migrations 002 and 001, Firewall rule, merge.
+   - #138: surface-approved label.
+   - #113: ADR-013 ruling.
+   - #139: approval.
+   - Promote gencreator-managed-stack into estate graph/products.graph.json.
+   Do not wait on them; work the rest.
+1. #148 (codex/creator-operations-20261004). If its branch has no commit in the last 24 h, fix it yourself
+   (Frank 2026-09-30: any harness may edit; push separate commits, never force). Otherwise post and wait.
+   Fixes:
+   - P1 CPU blow-up: replace subset enumeration with a bounded greedy or branch-and-bound selection, and lift the
+     12-offer cap.
+   - A rate limit on /api/creator-operations and /api/mcp.
+   - An explicit keep/cut output that flags unused subscriptions.
+   - An unlimited-capacity value.
+   - Owned tools are never dropped silently.
+   - Vendor-checked "included" offers.
+   - Server-side freshness against now.
+   Then a cross-provider review (Codex or Grok), then pr-gate merge.
+2. Rebase agent/claude/creator-offer-catalog and agent/claude/creator-stack-ui onto main.
+   - Wire the sourced catalog into the UI OfferSource.
+   - Run tests/e2e/creator-stack.spec.ts on mobile and reduced motion, in CI or on a preview.
+   - Write queen/reports/craft/gencreator-managed-stack-<date>.md.
+   - Have a different provider critique it as a buyer who declined to pay; fix what it finds.
+   - Draft PR, then gate, then merge.
+   - Verify /creator-studio/stack on production Vercel.
+3. #149: a host-owned spend ceiling with a running total; a 401 or 422 marks the job failed, and retry by id is
+   allowed. Then review and merge.
+4. Social hub v1, as the next build: one creator home that joins the stack audit, Creator Mission (CreatorPack)
+   and verified post receipts read from the creator's own Postiz, Buffer or Metricool (#139 reads).
+   - BYOK only.
+   - No hosted compute and no holding of creator credentials.
+   - "Buy" means official and affiliate links with the vendor's own checkout.
+   - The managed tier is waitlist-only, with a gift.
+5. A monthly catalog refresh as a heartbeat-writing job (staged, off until Frank approves).
+
+Every slice needs:
+- research with dated sources;
+- a named bar it beats;
+- a refinement pass;
+- a different-provider critique;
+- a craft receipt;
+- a draft PR, then pr-gate, then production verification.
+Ask reviewers for ONE exhaustive pass. Max 3 parallel builders, one worktree each, under the RAM guard.
+Close the session with the hub handover plus a comment on issue #147.
+```
+
+**[F0b · starlight-memory R&D]** — make the next memory gain measurable, then win it
+```
+Read docs/research/memory-rd-brief-2026-10-01.md on starlight-memory main and the session note
+ops/sessions/2026-10-01-memory-retrieval-v2.md. Be proactive: run E1 first (grow the real-prompt
+held-out set to ~150 by pooled labelling from ~/.starlight/memory/prompts, frozen hash split, Frank
+spot-checks 20%), then E2 (Granite embedder; fix the cache key to include the model id first).
+Every claim goes through eval/paired.mjs; then run the referee hybrid lane (`node eval/referee/run.mjs --embeddings on`, one run per process) when RAM allows; cite LongMemEval only via receipted scorecards.
+```
+
 **[F0 · gencreator-skills]** — list video-social-studio in the Claude plugin directory
 ```
 Done already: live config on main with tier applied; codex/rova landed and pushed (4fd0383, includes
