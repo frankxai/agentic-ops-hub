@@ -4,12 +4,13 @@
 
 Read ops/sessions/2026-10-10.md and SIS issue144. Start with
 `codex --cd C:/Users/frank/starlight/repos/.codex-worktrees/sis-terminal-orchestration-20261010`.
-Verify the assigned lane and fourteen staged files on
+Verify the assigned lane and fourteen-file commit `defb3dc1` in draft SIS PR327 on
 `agent/codex/terminal-orchestration-20261010`; preserve the original SIS checkout
 and all other fronts. Fresh machine/storage admission comes before heavy work.
-Run clean-install lint/build and the native hooks, obtain independent exact-source
-review with a proven empty tool plane, reconcile findings, then commit named files
-and open a draft. Earlier review attempts produced no verdict; do not relabel
+Run clean-install lint/build, obtain independent exact-source review with a proven
+empty tool plane, reconcile findings and check exact-head CI before integration.
+Native commit hooks already passed all 135 tests. Earlier review attempts produced
+no verdict; do not relabel
 configured isolation as runtime enforcement. 43 terminal, 86 orchestrator/swarm
 and 8 core tests passed in their recorded scopes. Build HOLD, provider access and
 Grok compatibility discovery are pending. Next implement one real source-backed
