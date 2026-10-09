@@ -1,5 +1,22 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-09: GenCreator GitHub positioning and agency/distribution proposal (Codex)
+
+Three main repository descriptions are updated live; GenCreator Skills homepage
+links to GenCreator. ACOS104 at17e373ea161198158be3d278354356a1e55ef49e adds public
+ownership/distribution docs and passes exactCI37992955416 plus health/estate/
+alignment. GenCreator176 at16a853a2e5b7cd288709d3dca6b048894799ecdf corrects README
+readiness and adds the detailed creator/agency implementation proposal, retaining
+ADR-007/010 and Starlight fleet ownership. Diff/secret/Companion checks and exact
+editorial pass; app CI is separately recorded in the [session](sessions/2026-10-09.md).
+Existing issues103/147 and native PR9 have receipts; skills source is preserved
+pending its missing shared guide handoff. Public OpenAI packaging excludes hooks
+and app references and needs MCP in the first connected submission. No listing or
+new platform runtime is launched. Local extra installer verification was cancelled
+and its owned processes stopped; cloud evidence stays separate. Independent review,
+real creator/client trial, tenant/OAuth readiness and release convergence remain
+open. Current prompt and private objective signal saved; all earlier work preserved.
+
 ## 2026-10-09: GenCreator main entry and gc aliases (Codex)
 
 Latest [ACOS104](https://github.com/frankxai/agentic-creator-os/pull/104) at5f3eeff57aec23ae174ecffa3f5bc8c1986dd4c2 adds /gencreator and /gc mission entries plus six /gc-* aliases and native Codex equivalents. Canonical stage definitions are reused. The hook selects skills; the entry defines coordinated roles and authorized proactive work. Actual delegation requires host support, independent owned work and admission; no team is running from this hook. Local25 activation/proposal tests pass; exactCI37945607417 passes build/typecheck/public-surface/installer and95+8+3 cases with4 existing skips; health/estate/alignment/Agent OS/visual pass. Eight new entry routes exercised through the real hook. New npm dry-run436 files includes main/short/native definitions. Both existing product issues have current comments. RAM1,043MiB below4GiB floor; no fanout, runtime or global install. Independent review/creator acceptance remain open. Current pickup refreshed and older learning section heading restored without removing its body.
