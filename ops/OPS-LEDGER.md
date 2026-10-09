@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-09: Attached-worker lifecycle candidate; activation pending
+
+[Draft config108](https://github.com/frankxai/starlight-agent-config/pull/108) advances to `034dbbcf043faa780a67d2e74292976d72d1d512`, continuing [issue46](https://github.com/frankxai/starlight-agent-config/issues/46). Adds existing-store intent capture, durable admission holds, unique-task automatic pickup, checkpoint recovery, exclusive terminal attachment and Codex prompt-hash correlation. Queen reports cannot dispatch a duplicate; native exit leaves verification pending. 43 PowerShell wrapper/installer checks and five Node lifecycle tests pass; real local capture/report publication and actual installer WhatIf verified. Secret checks stayed enabled.
+
+The new candidate is not locally activated; the earlier 14-repo shortcut release remains installed. Independent review attempts failed on provider quota and unsupported client, with additional isolation errors in the Gemini attempt; no verdict exists for the final revision. No owned worker remains. Restore a supported isolated reviewer, review exact source, activate and test native callbacks/pickup. Native hook trust, timed Queen intake, SIS ingestion/proof projection and automatic checkpoint dispatch remain open. See [session](sessions/2026-10-09.md). Preserve the broader creator/content/revenue scope and keep draft108/issue46 open.
+
 ## 2026-10-08: Repository navigation and agent launch shortcuts (Codex)
 
 User requested short commands such as `cdfx` and consistent repository-aware agent startup. [Draft config PR108](https://github.com/frankxai/starlight-agent-config/pull/108), source `008385cc52eaab9b274e65f8d625194220532692`, implements the scoped installer and operating guide. Reviewed Registry projection source: `cf99c95559b741c6ed372c06f1030d2bd731913b`.
