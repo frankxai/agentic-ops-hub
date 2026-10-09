@@ -1,21 +1,21 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: SIS terminal execution draft saved; review and build admission pending
+## 2026-10-10: SIS execution and recovery implemented; independent acceptance pending
 
-[Session evidence](sessions/2026-10-10.md) records fourteen changed files on
-`agent/codex/terminal-orchestration-20261010`: pinned worker transport, durable
-attempts, CLI inspection/private handoffs and fail-closed default execution.
-43 terminal tests and 86 orchestrator/swarm tests passed; all 8 core regressions
-passed after a private dependency install. Lint/build passed before that install.
-Independent review remains pending: Claude quota, unsupported Gemini client,
-and Grok native MCP isolation remain unresolved. PP build HOLD at 2,387 MB free
-remains the latest build admission. Later review-lite admission allowed the short
-native hooks: all 135 tests passed. Commit `defb3dc1` is pushed in
-[draft PR327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327).
-No product release is claimed. Continue
+[Draft SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327)
+is at `17faf314`: fifteen files add pinned worker transports, explicit host grants,
+durable attempts, inspection/handoffs and fail-closed orchestration. Unknown
+outcomes and receipt-save failures retain owned writer markers; MCP arguments
+are JSON snapshots and malformed HTTP UTF-8 is rejected. 47 terminal, 86
+orchestrator/swarm, 8 core and 135 hook tests passed in their recorded scopes.
+Final lint/build and CLI smoke pass. Active CI passes; two jobs are draft-skipped.
+Build admission recovered. First independent Grok review was BLOCK; findings
+were reconciled and corrected, with exact-final independent acceptance still
+pending. See [session evidence](sessions/2026-10-10.md) for final review status,
+earlier admission exception and preserved provider failures. Keep
 [SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
-after fresh admission and exact-source review. The six packs, live creator proof,
-native adapters and web integration remain open; preserve the broader objective.
+and the full six-domain objective open. Native adapters, live creator proof,
+domain packs, fleet enforcement, web and academy integration remain unfinished.
 
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 

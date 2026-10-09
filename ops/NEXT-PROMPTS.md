@@ -1,23 +1,22 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## SIS: finish review of terminal execution, then prove the creator loop
+## SIS: reconcile exact-source review and prove one creator workflow
 
 Read ops/sessions/2026-10-10.md and SIS issue144. Start with
 `codex --cd C:/Users/frank/starlight/repos/.codex-worktrees/sis-terminal-orchestration-20261010`.
-Verify the assigned lane and fourteen-file commit `defb3dc1` in draft SIS PR327 on
-`agent/codex/terminal-orchestration-20261010`; preserve the original SIS checkout
-and all other fronts. Fresh machine/storage admission comes before heavy work.
-Run clean-install lint/build, obtain independent exact-source review with a proven
-empty tool plane, reconcile findings and check exact-head CI before integration.
-Native commit hooks already passed all 135 tests. Earlier review attempts produced
-no verdict; do not relabel
-configured isolation as runtime enforcement. 43 terminal, 86 orchestrator/swarm
-and 8 core tests passed in their recorded scopes. Build HOLD, provider access and
-Grok compatibility discovery are pending. Next implement one real source-backed
-creator workflow with editing, verification, recovery and export, compare direct
-native-harness use, and connect existing GenCreator/web surfaces to the shared run
-records. Keep issue144 and the full six-domain program open. Save the product issue
-and this hub; do not activate recurring jobs, live publishing or spending grants.
+Verify the owned lane and `17faf314` in draft SIS PR327; preserve all other fronts.
+Fresh machine/storage admission comes before heavy work. Lint/build, 47 terminal,
+86 orchestrator/swarm, 8 core and 135 hook tests passed in their recorded scopes.
+Active CI passes; harness/compiler remain draft-skipped. Grok's first BLOCK was
+reconciled into retained writer markers and MCP snapshots; preserve both that
+review and later no-verdict attempts. Read the final review receipt before deciding
+what remains. Obtain exact-head independent acceptance and normal CI gates before
+integration. Then implement one actual source-backed GenCreator workflow with
+editable output, verification, recovery and export, compare direct native harness
+use, and connect existing web surfaces to shared run records. Six domains remain
+descriptor-only; native adapters, fleet authority/budgets, lifecycle and academy
+integration are open. Save issue144 and this hub. No new recurring jobs, live posts
+or spending grants.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 
