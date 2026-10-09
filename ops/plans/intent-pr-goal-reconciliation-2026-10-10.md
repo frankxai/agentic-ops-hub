@@ -6,7 +6,7 @@ TL;DR: Prove reliable capture and owner-safe resumption first, repair existing p
 
 This is a dated reconciliation and continuation contract attached to existing objectives and issues. It creates no replacement controller, business queue or command-center product. The private source archive retains exact text and hashes; this public document contains sanitized routing and acceptance criteria. Original notes were read without mutation.
 
-Evidence captured late 9 October UTC, dated 10 October in Amsterdam: 46 recent notes, 45 distinct texts and one retained duplicate; 39 older work candidates; 21 source-linked local Codex sessions out of 29 referenced IDs; 147 user-role text records, 129 distinct. User-role classification does not establish founder authorship. Runtime replays, delegated packets and setup instructions require separate attribution. No claim is made to unseen cloud chats or all historical harness sessions. Two saved notes are truncated and require their full linked handovers.
+Evidence captured late 9 October UTC, dated 10 October in Amsterdam: 46 recent notes, 45 distinct texts and one retained duplicate; 39 older work candidates read with all39 source hashes verified; 21 source-linked local Codex sessions out of 29 referenced IDs; 147 user-role text records, 129 distinct. User-role classification does not establish founder authorship. Runtime replays, delegated packets and setup instructions require separate attribution. No claim is made to unseen cloud chats or all historical harness sessions. Two saved notes are truncated and require their full linked handovers.
 
 Fresh GitHub inventory covers 621 open frankxai PRs across 137 repositories, including 450 drafts, and one Arcanea-Labs PR. The search cap was not reached. Detailed metadata was fetched for 32 selected PRs; a 33rd request identified an issue rather than a PR. Checks and path lists are observations, not source approval. Large file lists may be capped. The existing objective ledger has 24 preserved objectives. Saved status, historical tests and merged PRs do not prove today's user outcome.
 
@@ -46,7 +46,7 @@ Outcome: Ten source-linked conversations become reviewed cited records and resum
 
 First bounded action: Reconcile Kura15/17 with Kura12, SBO10/14 and Ops204/211; use the already-selected vault; prove real folder grant, settled capture, lineage, duplicate handling, disk-index recovery, two-vault refusal and one owner-safe resume.
 
-Acceptance: Capture→review→cited retrieval→resume→useful editable artifact→save/reopen/export; fresh source, privacy, failure/retry and independent exact-revision review.
+Acceptance: CaptureÃ¢â€ â€™reviewÃ¢â€ â€™cited retrievalÃ¢â€ â€™resumeÃ¢â€ â€™useful editable artifactÃ¢â€ â€™save/reopen/export; fresh source, privacy, failure/retry and independent exact-revision review.
 
 Proposed maker: Integration engineer. Checker: Different-provider privacy/recovery reviewer. Phase: 1. Repository hints require live ownership verification.
 
@@ -86,7 +86,7 @@ Outcome: A next-generation creator completes a useful repeatable production work
 
 First bounded action: Preserve GenCreator agency/distribution signal and issue147. Keep Idea Swarm reader acceptance separate from sales/community wiring. Reconcile saved proposals by exact source; no new platform/naming decision from a summary.
 
-Acceptance: Real brief→editable content/media→review→export/delivery, proven install/recovery, clear compute ownership, accepted creator advantage and repeat use evidence.
+Acceptance: Real briefÃ¢â€ â€™editable content/mediaÃ¢â€ â€™reviewÃ¢â€ â€™export/delivery, proven install/recovery, clear compute ownership, accepted creator advantage and repeat use evidence.
 
 Proposed maker: Creator workflow engineer. Checker: Different-provider creator/buyer reviewer. Phase: 2. Repository hints require live ownership verification.
 
@@ -211,6 +211,10 @@ Rank by explicit founder priority and deadlines, prerequisite value, demonstrate
 
 Use a small review queue with exact-head expiry: any material change invalidates the relevant signoff. Reuse good implementation and publish useful experiments through the existing blog and products when their release gates pass. Compare a serious existing alternative for each substantial product claim. Record accepted artifacts and unresolved user demands alongside PR counts; drafting more PRs is not delivery. Keep upstream experiments, learning, books and media measurable as distinct jobs.
 
+## Older demands preserved in the next phases
+
+The historical review verified39/39 original source hashes and kept personal/reference-only bodies in the app. Carry literary manuscript/realm and sister-book continuity plus beta-reader approval into Arcanea; preserve the distinct music-label creation and distribution job; retain statuslineEpic55/PR63 research/mobile/license/usage work separately from Terminal Home. Reconcile the existing13-packet Atlas/mobile/Canvas foundation queue, KPI attestation and voice/workflow/memory recall against newer tasks. IONOS cutover, tested backups, privacy/security, legal-entity decisions, package publication and branch protection remain separate unresolved jobs with their original source locators. Historical DONE, prices, models and release claims require fresh proof.
+
 ## Evidence limits and next pickup
 
 Private evidence contains exact recent sources, hashes, per-note intent review, historical review, native-prompt attribution, source/session links, all-PR dispositions and preserved objective projections. Raw histories, personal/client materials and private source paths do not belong in this public hub. The older-note report is a separate source layer; its book-specific, memory, music-label, infrastructure, security and release demands must be carried into product packets.
@@ -218,3 +222,5 @@ Private evidence contains exact recent sources, hashes, per-note intent review, 
 Pending: unmatched eight session references; broader cloud/harness coverage; complete truncated handovers; verified ownership for every candidate route; source review beyond the selected PR metadata; live capture and runtime acceptance; current paid-outcome evidence; product worker admission; exact-head release reviews. Do not call this plan an implemented estate-wide runtime or claim all fronts delivered.
 
 Attach the dated receipt to existing Ops211 and hub159. Preserve the private objective ledger and all older hub prompts. The next admitted maker starts packet A with a freshly verified owner and source. If capture admission blocks, continue bounded read-only recovery and source review, then select an independently admitted existing product repair. Save each product outcome to its owning issue and this hub.
+
+Review status: different-provider approval pending. Claude review was refused by API usage limit; Gemini failed client eligibility. Grok inference was not launched because isolated inspection still inherited servers/hooks. Source-coverage review is independent work by an OpenAI specialist and does not satisfy the different-provider requirement. This document remains a draft for review and cannot certify product delivery or runtime controls.
