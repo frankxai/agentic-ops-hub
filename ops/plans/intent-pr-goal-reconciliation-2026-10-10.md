@@ -224,3 +224,77 @@ Pending: unmatched eight session references; broader cloud/harness coverage; com
 Attach the dated receipt to existing Ops211 and hub159. Preserve the private objective ledger and all older hub prompts. The next admitted maker starts packet A with a freshly verified owner and source. If capture admission blocks, continue bounded read-only recovery and source review, then select an independently admitted existing product repair. Save each product outcome to its owning issue and this hub.
 
 Review status: different-provider approval pending. Claude review was refused by API usage limit; Gemini failed client eligibility. Grok inference was not launched because isolated inspection still inherited servers/hooks. Source-coverage review is independent work by an OpenAI specialist and does not satisfy the different-provider requirement. This document remains a draft for review and cannot certify product delivery or runtime controls.
+
+
+## Full vision execution and measured first work, 10 October 2026
+
+Frank explicitly requested extensive execution, measurable goals, preservation of every original meaning and a complete presentation of his inventions. The private catalog now links 748 overlapping source-bound demand records across 36 domains, including 133 saved numbered items. These are not 748 independent jobs or 36 newly approved products. All 25 live objective records were preserved; the earlier 24-record projection remains a dated snapshot. The recovery objective now holds 36 nested measurable goals without adding a rival queue/controller or changing other owners' status or deadlines.
+
+Coverage: 88 notes semantically reviewed (46 recent, 39 historical, three additional); all 529 active app rows keyword-screened, with 441 unmatched rows still semantically unreviewed. There are 21 matched local sessions and 147 attribution-qualified native prompt locators. App originals and native sources remain unchanged. The 622-open-PR inventory is a dated metadata projection; it is not a code review or completion count. Eight unmatched session references, truncated handovers and unseen cloud history remain gaps.
+
+Actual product implementation: Second Brain OS branch `agent/codex/native-session-intake-20261010`, commit `1867de59d05328541a17548261b1c36a4e5394a0`, adds bounded local Codex JSONL text intake through the existing two-vault importer. Before this change, native sessions were misidentified as Claude exports and failed on missing `uuid`. Full worktree suite: 191 passed, one platform skip; Ruff and diff checks pass; staged secret scanner reports no leaks. Same-provider exact-source code review passes; different-provider approval remains pending. Ten explicitly selected work sessions are now imported into the existing selected vault: 950 retained messages match their sources, all ten repeat imports skip without duplicates, and original hashes remain unchanged. Intake makes no separate model call. Raw histories remain private; pending brain stubs contain no raw transcript. This proves text recovery, not full account export, live Kura browser permission, founder acceptance or automatic owner resume.
+
+Actual bounded repair: FrankX issue932/PR931 falsely reports demand capture on429/502/503 and network failure. Local commit `2a5ddf713fab352c669e145078b26eb1541da20a` on `agent/codex/demand-retry-20261010`, based on exact PR931 `f3167a8d438b3e0c3131faf4fd0a82a0c4af9263`, retains entered answers and the successful subscription, permits retry and emits capture analytics only after an OK response. Four failure regressions fail before the fix and pass after; empty optional-answer skip also passes (five total). This local component execution is not a browser/release test. Explicit failure feedback, privacy disclosure, PR930 overlap, full required release gates and different-provider review remain open. No source-owner branch was modified and the repair is not pushed or deployed.
+
+Current machine admission permits two parallel workers with a 90-minute bound, 13,114 MB free RAM and approximately 117 GiB free disk at the latest admission. The existing lead/maker and source/quality checker were used; no new daemon, scheduler, controller, automatic chat resume, merge or public content send was enabled. A larger roster needs an independently useful assignment and fresh admission.
+
+PR admission: the required PR-budget digest is absent, which the parent contract treats as over budget. Existing SBO15 and16 have separate scopes and owners. The native fix was saved as a reviewable remote branch and linked to existing issue10; no new product PR was opened. FrankX remains a clean local repair branch pending its required pre-push gates. This hub update uses existing draft211.
+
+Next acceptance: distill one recovered session with bounded source packets and complete coverage, retrieve its cited note, deliberately resume the verified existing owner, and deliver a useful editable artifact with interruption/recovery/export. Ten captures alone do not close this outcome. Measure accepted results and unresolved demands separately from code tests, task turns, drafts or merges. The paid-product EUR10,000 revenue objective retains its original 10 October deadline; actual revenue is unmeasured here and no success claim is made.
+
+### Preserved work areas and first measurable output
+
+| Work area | First useful output | Measure |
+|---|---|---|
+| books | Substantive manuscript chapter or sister-book Bible | Reader judgment, voice continuity, canon collisions, repair burden and beta-reader approval |
+| canon | Proposed world/character/myth artifact with locked-canon contradiction report | Traceable accepted names, manuscript continuity and approval of proposed lore changes |
+| music | Refined original track with lyrics/persona, production critique, cover and export | Listening against exact brief, musical/voice rights, editability, playback and approved distribution |
+| voice | Live supported listening/speaking or founder narration task | Speech usefulness, oversized-audio failures, latency, cancellation, secret isolation and cost |
+| dam | Searchable rights-aware asset set with editable source and recovery/export | Find/reuse time, duplicate assets, broken references, privacy denial and rights/provenance |
+| circle | Complete member course/project journey with access/awards rules | Member achievement, prerequisite unlocks, once-only scoring, approval, opt-in ranks and accessibility |
+| reader | Working operator cards and ephemeral member drop with Markdown export | Keyboard/Esc focus, timeline, provenance, path denial, no member persistence and responsive runtime |
+| canvas | Real creation/edit/save/reopen/export artifact in existing product | Useful output, repair time and loss-free recovery; keyboard/touch/reduced-motion at 375/768/1440 |
+| figma | Editable brand screens and journey map plus implemented preview | Fidelity, source-revision linkage, loading/error/denial/recovery and accessible task completion |
+| atlas | Evidence-linked existing React Flow Atlas plus mobile list/tree | Source/task/owner linkage, mobile comprehension, stale evidence and scoped Canvas |
+| statusline | Researched statusline/mobile rendering with pinned license notices | Truthful pace/cache/health/activity, phone rendering, useful brand skins and upgrade/recovery |
+| editorial | Refined source-derived article or founder demo in existing lane | Factual accuracy, actual partner usage, useful artifact, metadata and source/deployed match |
+| affiliate | Approved-account register, copyable issued links and draft guide integration | Account provenance, duplicate avoidance, disclosures, working links and real earnings attribution |
+| commerce | Useful existing-product workflow plus purchase/delivery/refund readiness | Paid product revenue excluding VAT/refunds, buyer acceptance, repeat use and fulfillment |
+| business | Legal/account/commercial decision packet tied to existing product | Named human decisions, current evidence, liability/cost and release impact |
+| gaming | Editable setup plan plus separate gaming business experiment | Compatibility/export against manual PCPartPicker; buyer/competitor differentiation separately |
+| compute | Matched workload/cost/energy comparison and staged capacity artifact | Throughput, RAM/VRAM, cooling/topology, recovery, energy and cash-preserving total cost |
+| cutover | Recovered IONOS plan/answers and rollback rehearsal | DNS/hosting truth, preserved content, restoration and reversible approved cutover |
+| security | Scoped malicious-input/exposure test and off-machine restore or denial receipt | Detected/missed attacks, sanitization, account isolation, restored integrity, recovery time and leakage |
+| release | Clean consumer installation plus exact-head release/check/registry evidence | Source-install-serving match, eligible review, license/publisher provenance and rollback |
+| geninvestor | Permitted OpenBB V5 card with raw receipts and offline replay | Rights, timestamps/currency/actions, audited values, replay/recovery and paper-strategy comparison |
+| science | Reproducible research workflow with useful independent result | Source accuracy, reproducibility, memory transfer, uncertainty, cost and downstream benefit |
+| blockchain | Ordinary-commerce versus blockchain licensing comparison | User benefit, rights, recovery, costs and risks before any minting or payment |
+| enterprise | Source-backed reusable solution blueprint and success-story draft | Real proof versus placeholders, confidentiality and relevant user benefit |
+| continuity | One recovered unfinished conversation deliberately resumed into its owned task | Hash fidelity, citation correctness, retrieval time, lost decisions, wrong-owner attempts and duplicates |
+| memory | Useful cited recall with durable index and rebuild evidence | Relevant recall, stale/conflicting memory, tokens/latency and privacy/index-loss recovery |
+| queen | Authenticated bounded native task with editable artifact and recovery receipt | Success, duplicate side effects, actor/lease integrity, revocation/restart, tokens and actual cost |
+| routing | Typed fail-closed route exercised by existing production consumer | Refusals clear command/spawn; authorized task succeeds within account/budget without silent fallback |
+| skills | Portable skill/command exercised on existing useful task | Preserved rules, license, native startup/update survival, failures/false claims and matched task comparison |
+| terminal | Rich terminal navigation, real dispatch and second-PC install/rollback | Comprehension, correct task status, native activation, useful artifact/recovery and performance |
+| jules | One admitted public file-scoped task with qualified diff review | Accepted usefulness, live account/quota, eligible integration and refusal recovery |
+| prtriage | Source-reviewed PR disposition with owner/dependency and exact revision | Merge SHA, proof-backed closure or concrete hold; retain unsatisfied source demands |
+| gencreator | Substantial editable campaign or agency delivery | Creator acceptance, originality, repair effort, recovery/export and repeat use |
+| arcanea | Customer-owned world Bible or scene with substantive editing/export | Real generation, author usefulness, private save/reopen, cancel/recovery and matched alternative |
+| media | Refined editable media with sidecar, both ledgers and distribution package | Inspected quality, readable type/mobile crops, rights/provenance and recipient usability |
+| operator | Reversible repair, source-backed email triage or outreach draft | Actual controls/launcher, preserved messages/files, usefulness and explicit account/send/delete scope |
+
+### Division of labor and dispatch order
+
+1. The lead links original source demands, resolves current authority and verifies the existing receiving owner. Existing makers receive bounded exclusive files, current base/head and a concrete artifact contract. Material revision changes expire the relevant review.
+2. Complete the continuity roundtrip first. Alongside it, one independently admitted repair may address observed loss or a broken creator/buyer flow. The FrankX failure repair is prepared locally; receiving integration remains deliberate.
+3. Admit authenticated recoverable Queen/native execution and the accepted terminal-to-web program with actor identity, leases, cost and integration receipts. Reuse the accepted current implementations. Do not launch historical stored commands as current authority.
+4. Use the stable execution path to deliver real campaigns/worlds, chapters, native readers, member learning projects and music/media packages. Keep literary/canon, rights, privacy and customer usefulness as distinct acceptance gates.
+5. Admit financial/science, gaming business/R&D, licensing/blockchain, compute and enterprise experiments against a serious existing alternative. No hardware purchase, trading, mint, account transfer or external send is implied.
+
+Each goal has source IDs, candidate existing objectives, a proposed maker, prerequisite/phase, first artifact and a domain-specific measure in the private catalog. Most baselines are UNKNOWN. A receiver combines overlaps without losing source IDs, updates the existing owning issue, and returns exact revision, useful artifact, checks, review identity, integration status and remaining gaps. No overall completion percentage is inferred from these counts.
+
+The 137 scoped demand proposals remain unaccepted candidates. The 36 domain headings aid navigation; source association and classifier subdivision do not prove a distinct uncovered invention. Receiving owners must resolve overlap and questionable classifications, including broad science associations, before dispatch.
+
+The first cited triage note is now saved and read back: all nine bounded packets were actually read and acknowledged across 52,158 private source bytes, with full hash coverage and unchanged original sources. It preserves the founder's email backlog, recent-mail workflow, partnership implementation/team and priority-alignment request separately from historical assistant proposals. Nine selected notes remain pending summaries. An editable private email/partnership pilot prepares a 20-thread read-only sample and three unsent evidence-backed opportunity briefs; neither mailbox sampling nor sending/cleanup has been launched. Founder and different-provider acceptance remain pending; intentional owner resume and useful product artifact/recovery/export are still open.
+
+The FrankX tests run transpiled component functions with substituted framework hooks and external effects; they do not mount React in a browser. The existing loading state hides the optional form, leaving its saving/disabled feedback untested and unreachable in that state. Preserve this UI gap with explicit failure feedback and privacy disclosure for the receiving owner.

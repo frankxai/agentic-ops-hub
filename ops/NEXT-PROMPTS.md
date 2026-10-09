@@ -723,3 +723,10 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 - **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
 - **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
 - **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+
+
+## Current execution: complete recovered intent into a useful result, 10 October 2026
+
+Read today's expanded reconciliation plan/session. Preserve all25 live objectives and36 nested goal contracts;748 catalog records overlap and are not separate jobs. SBO10 owns native recovery: branch agent/codex/native-session-intake-20261010 at1867de5, ten selected sessions/950 messages verified,191 tests/one skip. Finish bounded cited distillation, retrieval and one deliberate correct-owner resume into an editable useful artifact; prove recovery/export and compare the manual alternative. Browser Kura grant and cloud backfill remain separate. FrankX932 owns local2a5ddf713 on agent/codex/demand-retry-20261010, based on931f3167a8:five failed-request/retry/skip regressions pass; complete explicit failure feedback/disclosure, release gates and exact-revision independent review before source-owner integration. Preserve930 overlap and all other prompts. Use admitted makers, exclusive file lanes and receiving receipts. Current PR-budget digest is missing: no new product PR until admission, no forced merge or unreviewed release. Record useful accepted outcomes and every remaining source demand in the existing issues and this hub.
+
+Latest first note has complete9-packet source coverage and is read back;9 summaries remain pending. Continue from the cited email/partnership note and private pilot without treating historical inbox counts/cutoff as current fact or as send/delete authority. Preserve137 unaccepted scoped proposals; resolve source-authority, duplicates and questionable domain associations before adding product tasks. Demand tests are hook-substituted component functions; observe real loading/error/retry and privacy in the receiving browser before acceptance.
