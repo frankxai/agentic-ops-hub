@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Preserve source intent and reconcile current work (Codex)
+
+[Plan](plans/intent-pr-goal-reconciliation-2026-10-10.md) and [session](sessions/2026-10-10.md) preserve exact-source recovery privately and sanitized continuation publicly:46 recent notes,39 older candidates,21 linked local sessions,622 open PRs,24 saved objectives. Candidate routing requires live owner verification; this creates no replacement queue or scheduler. First outcome is real capture-to-owner-safe-resume-to-useful-artifact recovery, followed by existing product repairs and creation. No product execution or release acceptance is claimed. Existing Ops211/hub159 receive the receipt; previous goals and prompts remain intact.
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.
