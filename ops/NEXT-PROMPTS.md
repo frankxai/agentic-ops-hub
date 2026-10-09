@@ -80,27 +80,159 @@ Continue Frank's estate design objective from task `01a101be-4e85-74d1-8377-c0cc
 3. Add what the canary cannot see: visual quality, real-device touch, native zoom, interrupted transitions, text over photography. One Impeccable finish pass after a look at 375/768/1440 with reduced motion.
 4. Do not mint Vercel bypass links; confirm whether the existing `.org` shareable link was intended. Sequence PR246 before any further change to `foundry/validators/toolchain.lock.v1.json`. Arcanea icon migration waits for a clean `agent/grok` checkout and C: above 16% free; run `design-sight.py --estate` first.
 
-### Queen: install and live-verify merged SIS session continuity
+### Queen: take session continuity live (local) and land the cloud work
 
-Continue from the 2026-10-05 entry in [sessions](sessions/2026-10-05.md). Session continuity is MERGED_NOT_LIVE:
+Session continuity is MERGED_NOT_LIVE. On 2026-10-05 a real staging run recovered all 74 of Frank's Codex goals with 0 issues: 52 ran in checkouts and 22 are workspace sessions, including the original campaign goal `2309e8b0`, which shows as blocked. See the [2026-10-05 session](sessions/2026-10-05.md).
 
-- [SIS #273](https://github.com/frankxai/Starlight-Intelligence-System/pull/273) `ea1d0a5`: trusted import, status, owner reconciliation, MCP tools.
-- [Ops #163](https://github.com/frankxai/agentic-ops/pull/163) `be49a10`: canonical PP caller, cursor baseline and lock, Codex native goals, proof driver.
-- [Canvas #31](https://github.com/frankxai/starlight-agent-canvas/pull/31) `d569167`: `/continuity` page, API and MCP tool.
+1. **Review and merge the workspace-scope PRs, one at a time,** with Grok via `tools/pr-gate.mjs` under `review-lite` admission:
+   - [agentic-ops #178](https://github.com/frankxai/agentic-ops/pull/178) `80b5d8b`: Grok's block is fixed with regression tests.
+   - [SIS #291](https://github.com/frankxai/Starlight-Intelligence-System/pull/291) and [Canvas #32](https://github.com/frankxai/starlight-agent-canvas/pull/32): CI is green; the review was reaped for low memory.
+   - In SIS, let `harness` finish before merging, and never edit `package.json`.
+2. **Local rollout to LIVE_VERIFIED: [agentic-ops #181](https://github.com/frankxai/agentic-ops/issues/181).** PP PR4 install, clean install, Frank's trust policy decision (`~/.starlight/continuity/trust-policy.proposed.json`), live import, cursor baseline, proof with `--harness-runs`, rollback.
+3. **Cloud agents finished 2026-10-06.** All five PRs are ready with CI green and none merged. Review each with a non-Claude checker through `pr-gate`:
+   - [Canvas #34](https://github.com/frankxai/starlight-agent-canvas/pull/34) `e346650` (issue #33): filters, grouping, search, and a copy-reconcile command whose ID allowlist blocks shell and flag injection. **Merge Canvas #32 first, then rebase #34**; #34 carries #32's optional-scope hunks.
+   - [evals #21](https://github.com/frankxai/starlight-evals/pull/21) `8a9ff06` (issue #20): CI eval suite, 104/104 locally, with the information-disclosure finding fixed. **Frank:** add the `AGENTIC_OPS_READ_TOKEN` repo secret (fine-grained, read-only Contents on agentic-ops) so CI runs the collector leg.
+   - [agent-config #102](https://github.com/frankxai/starlight-agent-config/pull/102) `a3f07ae` (issue #99): capture hook, spool only, not installed. The collector does not read the spool yet; that needs a follow-up in agentic-ops.
+   - [memory #27](https://github.com/frankxai/starlight-memory/pull/27) `a4e9a31` (issue #24): read-only scoped recall projection.
+   - [second-brain-os #15](https://github.com/frankxai/second-brain-os/pull/15) `7cb67be` (issue #14): non-coder setup, typed approval, backup and restore.
 
-Each was reviewed by Grok to PASS on its exact head and merged through `pr-gate`. The post-merge proof passed 20 of 20 checks with `complete=true`, including real interrupted Claude and Codex sessions. Repairs and follow-ups: [SIS #286](https://github.com/frankxai/Starlight-Intelligence-System/pull/286) (Foundry lock regression fixed), [Ops #177](https://github.com/frankxai/agentic-ops/pull/177) merged, and [SIS #285](https://github.com/frankxai/Starlight-Intelligence-System/pull/285) merged at `776b453`. In SIS, let `harness` run on a ready PR before merging.
+   Safe to delete: `C:\Users\frank\starlight\scratch\sac-issue99`. The agents ran on this laptop, not in the cloud.
+4. **Dependency:** [PP #3](https://github.com/frankxai/peak-performance/issues/3) and PR4 are owned by the Codex lane (34 dirty paths, untouched).
 
-1. Run fresh `node lifecycle/pp-admission.js build --grows-disk` from agentic-ops `main`, and reconcile owners. Preserve Codex's PP reserve-floor lane (PR4, 34 dirty paths), Hermes's Canvas PR18, the Claude cockpit worktree, Foundry #268 and PR269.
-2. The clean install waits for PP storage evidence. Once a reviewed PR4 build is installed through its owner and `build --grows-disk` admits:
-   - SIS `npm ci` and build from `main`, then confirm `node dist/continuity-cli.js status`. There is no bin entry, because `package.json` is pinned by the Foundry `RULES_LOCK`; never edit it for this.
-   - Canvas frozen install, with `STARLIGHT_CONTINUITY_CLI` set.
-3. Install `~/.starlight/continuity/trust-policy.json` with real work IDs and owners from the task records. Never invent them.
-4. Export real bound sessions with `--codex-goals`, import them, and check the Canvas `/continuity` page and the MCP status against the real store.
-5. Rerun `lifecycle/continuity-proof.js --harness-runs` against the installed revisions. Then interrupt a genuine interactive `/goal` session in a second harness and recover it.
-6. Cursor baseline: pause the ledger task, run the dry run, then `--apply --confirm-ledger-paused`. Keep the backup and verify rollback.
-7. Verify the installed revisions and the rollback path. Only then report LIVE_VERIFIED with direct evidence. Update Ops #139/#134, SIS #48 and the hub.
+Nothing resumes or admits work automatically. Collector attestation stays SIP Board work, and Foundry #268 and PR269 are untouched.
 
-Do not resume or admit work automatically, and keep collector attestation as SIP Board work. No new brand, price or hosted compute.
+### Overnight (ChatGPT/Codex cloud): independent review of the continuity PRs, plus the spool reader
+
+You are Codex, the independent checker for nine PRs that Claude wrote. Claude cannot sign its own work, so your signoff is what lets these merge. Work from GitHub only.
+
+**Read first:**
+- agentic-ops [#181](https://github.com/frankxai/agentic-ops/issues/181): the rollout spec.
+- Hub `ops/sessions/2026-10-05.md` and the PR bodies.
+
+**Rules:**
+- Session continuity must never resume, admit or start work automatically.
+- Private data stays local.
+- Never edit SIS `package.json`: the Foundry `RULES_LOCK` pins it.
+- Do not push to Claude's branches.
+
+**A. Review, in this order.** First check that each PR head is still this SHA; if it moved, review the new head.
+
+1. SIS [#291](https://github.com/frankxai/Starlight-Intelligence-System/pull/291) `c8d7c4a`. Its `harness` and `continuity-gate` CI jobs must be green.
+2. agentic-ops [#178](https://github.com/frankxai/agentic-ops/pull/178) `80b5d8b`. Grok's earlier block, a fail-open when the git check fails, is claimed fixed; probe it again.
+3. Canvas [#32](https://github.com/frankxai/starlight-agent-canvas/pull/32) `013db53`.
+4. Canvas [#34](https://github.com/frankxai/starlight-agent-canvas/pull/34) `e346650`. Merge only after #32 has merged. If it conflicts afterwards, comment and leave it.
+5. evals [#21](https://github.com/frankxai/starlight-evals/pull/21) `8a9ff06`.
+6. agent-config [#102](https://github.com/frankxai/starlight-agent-config/pull/102) `a3f07ae`.
+7. memory [#27](https://github.com/frankxai/starlight-memory/pull/27) `a4e9a31`.
+8. second-brain-os [#15](https://github.com/frankxai/second-brain-os/pull/15) `7cb67be`.
+9. hub [#175](https://github.com/frankxai/agentic-ops-hub/pull/175) `1bd42d1` (docs only).
+
+**For each PR:**
+- Read the full diff, the PR body and the linked issue.
+- Run the repo's tests if your environment can.
+- Review as a skeptical engineer. Look for:
+  - fail-open paths;
+  - injection (shell, flag, path);
+  - private data leaking into artifacts or logs;
+  - crash and replay consistency;
+  - tests that pass without testing anything;
+  - claims in the PR body that the code does not support.
+- Sign through the gate from frankxai/starlight-command:
+  ```
+  node tools/pr-gate.mjs signoff --repo <owner/name> --pr <n> --harness codex --verdict pass|block --note "<findings, with file:line for every block>"
+  ```
+  If you cannot run `gh` there, post a PR comment whose first line is exactly `starlight-signoff: harness=codex verdict=<pass|block> sha=<full 40-char head sha>`, followed by your findings.
+- Merge only if you can run `node tools/pr-gate.mjs merge --repo <r> --pr <n> --squash`, it reports GATE CLEAR and every CI check is green. Otherwise leave the merge for the morning.
+
+**B. Build the spool reader, as maker.** Open an issue and a ready PR on `agent/codex/continuity-spool-collector` in agentic-ops.
+
+- **Input:** `lifecycle/sis-continuity.js` gains `--spool <capture-spool.jsonl>`. It reads the capture lines defined in agent-config #102: engine, sessionId, cwd and a scope of checkout, workspace or unverified.
+- **Output:** the snapshot and bindings the collector already accepts.
+- **Verification:**
+  - Re-verify each checkout or workspace at export time with the existing `verifyRepository` and `verifyWorkspace`. A spool line is a claim, not proof.
+  - Skip `unverified` lines with an issue code.
+  - Lines whose scope is not checkout or workspace are refused with an issue.
+  - Deduplicate by session.
+  - Keep the 32-binding limit per bundle by splitting deterministically.
+- **Tests:** a good line, a forged line whose cwd moved, a corrupt line, an oversized spool, and dedupe.
+- **CI:** add the test to `.github/workflows/asph-session-index.yml`.
+- **Review:** do not sign your own PR. Claude or Grok reviews it in the morning.
+
+**C. Report.** Before you stop, post one comment on agentic-ops #181 with:
+- each PR's verdict, merge SHA or blocking reasons;
+- the spool PR link and head;
+- anything that needs Frank.
+
+### Tomorrow (Claude Code, local, Opus at max effort): land, go live, then raise the foundation
+
+You are continuing Frank's session-continuity programme. The outcome to deliver: **any interrupted agent task, in any harness, can be recovered with its original intent, owner, checkout or workspace and uncommitted work intact. Nothing resumes on its own, and completion is proven.**
+
+Work at full depth. Verify everything yourself and leave Frank holding merged, live, proven work.
+
+**0. Orient (about 10 minutes, then act)**
+- Read:
+  - agentic-ops [#181](https://github.com/frankxai/agentic-ops/issues/181), including the overnight Codex report comment;
+  - hub `ops/NEXT-PROMPTS.md` and `ops/sessions/2026-10-05.md`;
+  - memory `sis-package-json-foundry-lock`.
+- Check every PR's live state and head SHA with `gh`. Never trust a summary, including this one.
+- Run `node lifecycle/pp-admission.js review-lite` and `build --grows-disk` from agentic-ops `main` (about 1 s each). Honor every hold.
+- Reconcile owners before writing:
+  - Codex owns the PP reserve-floor lane (PR4, 34 uncommitted files); Hermes owns Canvas PR18 and the primary checkouts.
+  - Preserve their work.
+  - Foundry #268 and PR269 are untouched.
+
+**1. Land the open work**
+- **Open PRs:**
+  - agentic-ops #178;
+  - SIS #291;
+  - Canvas #32, then #34;
+  - evals #21;
+  - agent-config #102;
+  - memory #27;
+  - second-brain-os #15;
+  - hub #175;
+  - plus the Codex spool-reader PR from overnight, if one exists.
+- Merge only through `node C:\Users\frank\starlight\tools\pr-gate.mjs merge --squash` on GATE CLEAR from a non-Claude signoff at the exact head.
+- If a PR is unsigned, have Grok review it headlessly, one PR at a time and only under `review-lite` admission, then fix what it blocks and re-review. If memory is short, stop and say so rather than letting jobs get reaped.
+- In SIS, let `harness` finish green before merging, then check `main`'s `harness` after each merge.
+- Review the Codex spool-reader PR yourself as the different harness.
+
+**2. Go live (agentic-ops #181, steps 2 to 8)**
+- **PP PR4:** blocked until a reviewed PR4 build is installed through its owner. If it still isn't, write the concrete ask on PP #3 and continue with steps that don't need it.
+- **Frank's decisions:** the trust policy (`~/.starlight/continuity/trust-policy.proposed.json`, 74 works) and the evals secret `AGENTIC_OPS_READ_TOKEN`. Ask once, with a recommendation.
+- **Live run:**
+  - clean install;
+  - live import of the real goals;
+  - check the Canvas `/continuity` page against the real store;
+  - cursor baseline with the ledger task paused, a backup and a rollback proof;
+  - `continuity-proof.js --harness-runs` with `complete=true`;
+  - recover a genuinely interrupted interactive `/goal` session in a second harness.
+- Report LIVE_VERIFIED only with direct evidence of the installed revisions.
+
+**3. Raise the foundation: think from first principles, then build the highest-leverage piece end to end**
+- Re-derive the system from the outcome, not from what exists. Stress-test these candidate gaps and rank them by value to Frank, risk and effort:
+  - **Authentication:** signed collector attestation instead of owner presence. Draft the SIP Board proposal and a reference implementation behind a flag.
+  - **Dispatch:** the Queen consumes `starlight.continuity-status.v1` to route only owner-admitted work, with a single-owner claim, so no work is ever dispatched twice.
+  - **Parity:** Claude Code has no equivalent of Codex's native goal store. Design and build one with the capture hook and spool.
+  - **Cross-device:** store sync with the C940 machine and two-vault recovery under device loss.
+  - **Interfaces:**
+    - MCP v2 migration plan;
+    - a pure A2A task-state projection for federation;
+    - AG-UI-style snapshot-then-patch for Canvas live updates.
+  - **Creator consumer:** agentic-creator-os as the creator-facing view.
+  - **Evals:** the scorecard in CI on every continuity PR across the estate.
+- Compare each candidate against the strongest external alternative (Paperclip, LangGraph persistence, ACP session resume) and say plainly where Starlight should borrow and where it already wins.
+- Pick the top one or two. Implement them fully: code, tests, docs, CI. Get a different harness's review, merge, and verify on `main`.
+
+**Rules:**
+- One writer per worktree.
+- Commit by default on `agent/claude/<scope>`, with ready PRs.
+- Never self-merge; never force-push `main`; never `--no-verify`.
+- Secret scanning stays on.
+- Fetch current official docs before adding any dependency.
+- Stop session-owned processes at the end.
+- Update #181, #139, #134 and SIS #48, and write the hub session log, ledger and next prompt.
+- Every claim needs evidence. Run humanizer on the final reply.
 
 ### FrankX: continue the article register and release reviewed revisions
 
