@@ -1,5 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Starlight & Arcanea NPM: execute frontier lab transformation
+
+Read ops/sessions/2026-10-10.md and Starlight-Intelligence-System docs/architecture/NPM_ECOSYSTEM_STRATEGY.md. All 6 packages are verified live on NPM: @starlight-intelligence/system@8.3.0, @starlight-intelligence/memory@0.2.0, @starlight-intelligence/creator-mcp@0.1.0, @frankxai/agentic-creator-os@15.0.0, @frankxai/suno-mcp-server@0.1.1, and @arcanea/starlight-intelligence-system@8.3.0 shim. Legacy SIS < 8.0.0 versions deprecated. Execute Phase 2 and 3 of the Frontier Lab Transformation: extract featherlight zero-dependency @starlight-intelligence/core, package @starlight-intelligence/ai-sdk memory provider for Vercel AI SDK, standalone @starlight-intelligence/mcp server, configure Turborepo + pnpm workspaces with @changesets/cli, and stand up starlightintelligence.org/docs. See FRONTIER_LAB_TRANSFORMATION_PROMPT.md.
+
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
 Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
