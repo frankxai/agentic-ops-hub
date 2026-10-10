@@ -1,3 +1,6 @@
+## Context continuity: review the exact revision and bind the existing host
+
+Read SIS draft PR330 at da9aebb6 and docs/architecture/context-continuity.md. Start in the owned sis-context-continuity-20261010 worktree, verify origin/branch/instructions and lane ownership, and obtain an independent provider review when admitted. Keep PR330 based on codex/consolidate; do not merge unrelated base changes into main. Prove one exact-revision host-bound review, command evidence, and interrupted-run reconciliation through the existing RuntimeBridge. Preserve source taint and private/public scope; implement the remaining lifecycle under SIS issue49. Integrate the tested local routing repair into its config owner under issue46. Repair estate lane age-based lock deletion and inherited harness identity under starlight-command issue4 through the permitted source lane. Shared memory is still lexical-only; do not claim vectors, signing, sandbox enforcement, recurring automation, or completed rollout without fresh evidence. Preserve every other prompt and unfinished task below.
 # ⏭️ Next Prompts — per active front / terminal
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
