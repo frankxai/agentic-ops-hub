@@ -16,6 +16,39 @@ and today's session retain creator/platform/commercial goals, failed/unknown
 attempts and other owners. Paid provider acceptance/full adoption remain unproved.
 
 
+## 2026-10-10: GenCreator security/MCP and editable PPTX live
+
+[GenCreator191](https://github.com/frankxai/gencreator.ai/pull/191) merged at
+`5f7c3c2`; exact-source independent Poolside review, candidate/main full CI and
+22 stable-domain smoke checks passed. READY production deployment is
+`dpl_6mY7BRikkAE3AsBEDZe6A5Cnwmxa`; GitHub open dependency alerts are zero.
+Superseded186/187 closed with source branches preserved. Editable PPTX integration
+[192](https://github.com/frankxai/gencreator.ai/pull/192) merged at `b6938e7` from
+reviewed `0ee51f2`:11 focused cases, candidate full CI and independent review pass.
+Native PowerPoint open/edit/save/reopen and first-slide renders were inspected.
+READY production `dpl_AcUownSYpdtgSy9fd3EvvjUvwMwu` passes13 delivery checks and22
+site/MCP checks; downloaded bytes match the native-tested specimen. Receiving-main
+full CI38024968968 also passed. Managed readiness remains503: no Vercel envs
+or GenCreator tables in the documented shared Supabase project. The full original
+creator/client/memory/cloud/subscription goal stays active; issues74/5 stay open.
+
+## 2026-10-10: hook recovery and ownership hardening merged
+
+Config111 merged normally after exact-head AGY PASS and green Linux/Windows CI. All six source hashes match main. Interrupted repair restoration now refuses later edits; lock replacement and escaping paths are protected. See today’s session for proof and remaining foreign-lane/Desktop/estate gaps.
+
+## 2026-10-10: hook fixes merged; conditional merge admission is live
+
+Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
+`13ebcf0` returned PASS. All 16 reviewed file hashes match main. Config PR110 merged
+normally at `12cd533e` after live no-receipt denial, real receipt acceptance,
+revocation denial and restoration acceptance. Required CI plus the trusted
+exact-head receipt check now applies to administrators; routine notes merge with
+zero blanket approvals. Fifty-one targeted tests and a fresh 13-hook native turn
+pass. FrankX's two conservative shell-wrapper findings, Desktop/untriggered events,
+PR80 and estate conformance remain open. See today's latest session entry.
+
+
+
 ## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
 
 [SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged
