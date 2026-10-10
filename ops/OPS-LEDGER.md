@@ -1,5 +1,22 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: workspace-aware provider requests and correct MCP release identity (Codex)
+
+SIS draft342 now10835dde426ed292b815e58366ead2b161fe8496, clean/pushed. Reproducing
+tests first returned3pass/2fail: MCP advertised0.1.0 for package0.2.0; exported
+gateway accepted mismatched workspace before HTTP. Core now forwards optional
+RecallRequest.workspace_id, gateway denies mismatched scope/invalid budgets before
+HTTP, MCP handshake reads installed package version. Official-client/installed
+stdio tests exercise workspace-scoped recall and reconnects. Hosted38029958479
+completed SUCCESS across all six jobs; local16 release/artifact tests pass.
+Fresh actual archives and consumer evidence bind merge65cfcef43778d9f1c3368f706286fcf406784aed,
+dirty=false, parentsbc73db9b/10835dde. ManifestSHA256e2322b5c14f4510348c307563df8db10662e9044c16eae81474784b01a7f9bc6.
+Core8689JSbytes/12509compressedbytes. Current54-file exact-source review packet
+artifacts/npm-review/10835dde prepared/not reviewed, full packet Gitleaks clean.
+Issue329 comment6094533387 records this slice. No publication; account bootstrap,
+provider review and broader platform/customer/value acceptance remain open.
+Local build HOLD5597MB/8192required; no local rebuild, install, reviewer or agent.
+
 ## 2026-10-10: SIS publication requires exact consumer evidence and isolated npm (Codex)
 
 SIS draft342 is clean/pushed at75132077ff1da8413fa76790f921d3a143a80ad2.

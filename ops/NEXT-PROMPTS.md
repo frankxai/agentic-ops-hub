@@ -4,7 +4,16 @@
 
 Read today's appended session, SIS issue329/draft342 and creator issue4/draft6.
 Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
-Owned branch agent/codex/npm-modular-ecosystem is pushed at75132077ff1da8413fa76790f921d3a143a80ad2.
+Owned branch agent/codex/npm-modular-ecosystem is pushed at10835dde426ed292b815e58366ead2b161fe8496.
+Core now forwards host workspace in RecallRequest; gateway rejects wrong scope or
+invalid query/limit before HTTP; MCP handshake follows installed package version.
+Official-client and installed stdio tests exercise workspace-scoped recall/reconnects.
+Hosted38029958479 completed SUCCESS all six jobs. Actual archives and consumer
+receipt validate merge65cfcef4,dirty=false,parentsbc73db9b/10835dde. Core8689JSbytes/
+12509gzipbytes. Current54-file review packet artifacts/npm-review/10835dde is
+prepared/not reviewed and full-packet Gitleaks clean. Obtain exact-revision review.
+Local build HOLD5597MB/8192required; no local rebuild or provider launch. Keep
+first-package account bootstrap, fresh main release and broader goal scope open.
 Publication now binds all consumer checks to exact manifest bytes/source, requires
 the exact manual main workflow/clean checkout and isolates inherited npm configs.
 Local16 release/artifact tests and mandatory135 tests pass. Hosted38029407740
@@ -24,7 +33,7 @@ including hosted artifact consumers; preserve the head/merge-receipt distinction
 SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
 Obtain independent provider review using an admitted isolated supported route;
 Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
-Regenerate the prepared54-file artifacts/npm-review/fdb1e47f source packet (not reviewed),
+Use the refreshed54-file artifacts/npm-review/10835dde source packet (not reviewed),
 and rebuild a clean final main-source receipt after normal integration. Reconcile
 npm org rights and first-publication trusted publishers, then
 publish exact reviewed bytes through the authorized OIDC path after normal gates.
