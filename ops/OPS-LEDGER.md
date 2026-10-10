@@ -1,6 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 
+## 2026-10-10: Actual ten-note retrieval measured; cursor repair reviewable
+
+Existing search returned expected citation first10/10; rg found10/10with median8.5candidates. Selected-corpus software timings do not prove human/whole-vault acceptance. [Second Brain18](https://github.com/frankxai/second-brain-os/pull/18) fixes reproduced same-path stale cursor at a6c3f391;180PASS/2explicitSKIP, estate guard PASS, existing lint findings8remain. [Issue10](https://github.com/frankxai/second-brain-os/issues/10#issuecomment-6094008926) records comparison and receiving gates. Original notes and65area scope preserved.
+
+
 ## 2026-10-10: Second Brain recovery repair has a receiving PR
 
 [Second Brain17](https://github.com/frankxai/second-brain-os/pull/17) is a two-file stacked DRAFT at dd188269 against existing owner PR15. Fresh37PASS/1optionalSKIP; same-head earlier full210PASS/2optionalSKIP source hashes match. Estate guard PASS; hosted matrix and independent review pending. [Issue14](https://github.com/frankxai/second-brain-os/issues/14#issuecomment-6093941136) records handoff. No live vault mutation or creator acceptance.
