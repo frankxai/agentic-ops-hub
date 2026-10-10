@@ -1,8 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: Arcanea billing recovery blocked at reviewed candidate (Codex)
+## 2026-10-10: Arcanea billing recovery merged; paid rollout stays closed (Codex)
 
-[PR525 review](https://github.com/frankxai/arcanea-ai-app/pull/525#issuecomment-6091742927), [issue529](https://github.com/frankxai/arcanea-ai-app/issues/529#issuecomment-6091743199), [issue511](https://github.com/frankxai/arcanea-ai-app/issues/511#issuecomment-6091743452). Read-only second-family review of exact `abef36e4b9073546a3024d93ebfc08e786b471d0`: four mocked recovery defects reproduced, one additional SQL finalization race identified by source analysis. Keep #529/#511 open and PR525 draft. Next is durable webhook retry repair in an owned implementation lane, followed by transactional/request recovery and repaired-head review. No product writes, live payments, migration or deployment. See [session](sessions/2026-10-10.md).
+[PR525](https://github.com/frankxai/arcanea-ai-app/pull/525) merged as `c79b6f4`, reviewed head `dbbd5b17`. Two BLOCK rounds were repaired; final independent source review PASS for code merge.30 tests, exact Linux CI and PostgreSQL rollback/concurrency pass. Final READY pricing preview checked on desktop/mobile; reduced motion and intercepted waitlist recovery verified. Keep[529](https://github.com/frankxai/arcanea-ai-app/issues/529)/[511](https://github.com/frankxai/arcanea-ai-app/issues/511) open for migrations, seller setup, sandbox fulfillment, reconciliation/retention, BotID/auth and entitlement gates. Checkout default-off; no production migration, purchase or permission changes. Receiving-main CI/deployment pending at this record. See [session](sessions/2026-10-10.md).
 
 ## 2026-10-10: hook repairs and native runtime verified; config merge requires review
 
