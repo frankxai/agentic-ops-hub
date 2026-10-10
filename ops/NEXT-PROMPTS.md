@@ -32,55 +32,47 @@ branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
 Honor machine admission, secret checks and publication/payment/migration gates.
 
 
-## GenCreator: managed identity and an accepted creator journey
+## GenCreator: activate reviewed account linking and prove the creator journey
 
-PR 194 is complete: merged/live 802e9aa, full CI and 22 stable checks pass.
-PR 195 reviewed candidate 82ef94c merged normally to 57fcf5b; all fourteen files
-match main. Native SQL 2/2, actual-store recovery, all 948 unit cases, 244 browser
-cases (two existing opt-in visual skips), final static review and 22 final-preview
-checks pass. Stable production READY dpl_6QAkAA1iVoon6dtahYTGWuKXjoNQ at 57fcf5b
-passes 22 site/MCP checks. Receiving-main full CI 38042747768 passes all required jobs, including native
-SQL 2/2, 948 unit cases and 244 browser cases with the same two visual skips.
-Pursue authoritative identity mapping, approved provision/
-API exposure and real authenticated source-to-reviewed-export recovery. Current
-Starlight main verifies Clerk with a fixed Starlight origin; it does not establish
-GenCreator's identity decision. No live database or credential writes occurred;
-managed 503 remains honest. Read today's session and preserve reviewed source,
-all three review fixes, failed attempts and the full product programme below.
+Continue active full goal `01a123db-5493-7220-8d0d-f80760cad443` and issue5. Frank
+confirmed “Keep Supabase sessions and explicitly link Starlight accounts.” Preserve
+Gen Supabase actor/workspace and separate Starlight Clerk principal; no email merge
+or inferred subscriptions/source rights. PR196 reviewed cc6965d merged normally
+to8d17f46 with all27 files identical. Final full CI38047625481 passes native3/3,
+971 unit cases and250 browser cases with two existing optional visual skips.
+Independent auth/data review468d28e and exact-final CSS delta reviewcc6965d PASS;
+source hashes bind the unchanged files. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd
+at8d17f46 passes22 site/MCP and7 safe account contracts. Finish receiving-main
+CI38048478637 full rerun; first execution canceled during metadata updates and
+correctly failed CI Status. Read today's session, preserve all failures and
+re-query exact heads/deployments before new writes.
 
-Continue active goal `01a123db-5493-7220-8d0d-f80760cad443` and issue 5; retain the
-CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, subscription/GTM and creator/
-developer-adoption scope. Read today's release record and re-query actual heads.
-193 reviewed 6ce8692 merged 373d411; candidate/main full CI 38034399944/38034975870 and
-117 stable-production browser,22 site/MCP and 13 editable-delivery cases passed.
-READY production dpl_FYduZEAp1GZE3hLe7NqX3qDmuaEu has gencreator.ai/www aliases.
-191/192 remain integrated; 135 closes with its branch retained, while 141 retains
-unique Honor-edition rehearsal and owner-review-pending writing. Preserve source
-branches, historical failures, the primary programme checkout and other owners.
+The reviewed14-table renderer preserves recognized12-table creator evidence, founding
+namespace and shared canonical identity. User consent/OIDC proof, active membership,
+durable idempotency and removal are implemented. No production database/API exposure,
+OAuth registration or credential setting occurred. Supabase currently has no dev
+branches. Managed readiness503 and inactive linking remain honest. Follow the
+activation packet and alpha runbook: Frank owns additive Supabase migration and
+production deployment approval; use separate staging/production OAuth registrations,
+retain provider consent/PKCE, and prove real accounts plus deletion/retention before
+promotion. Public sign-in captures and synthetic protocol/SQL checks do not certify
+authenticated UI, live two-account acceptance or a managed cohort.
 
-Use the live preserving migration, explicit saves, selected host revisions,
-opted-in recovery and editable PPTX. Recovered permissions/approval remain fresh
-human decisions. Global legacy chrome, mobile density/physical-device proof and
-native portable-font differences remain deferred; field metrics and founder/
-customer acceptance are open. Do not recast a deterministic local preview as a
-configured drafting service or a completed commercial product.
+PR195 isolated provision57fcf5b and PR194 hook triage802e9aa remain accepted; their
+source/main/deploy proof is in today's session. PR193 recovery/editable decks373d411
+and PR191/192 remain live. Source135 closes with its branch retained;141 retains
+unique Honor-edition rehearsal and owner-pending writing. Preserve other PRs/owners
+and previous source branches. Do not reopen the resolved Gen identity question.
 
-Managed readiness is 503. Re-query managed preflight, retrieve the referenced shared
-identity ADR, and reconcile sharedClerk/principal authority with GenCreator
-Supabase/member identity before managed writes. Earlier preflight had no GenCreator
-envs/tables and an absent CreatorPack migration base. Prepare a reviewed isolated
-fresh-provision path, preserve existing tenants, prove authenticated browser/service
-and cross-workspace denial plus durable receipt/retry/recovery, then connect the
-accepted creator loop. No monolithic-schema replay or assumed OAuth issuer.
-Keep publication/checkout closed until their accepted gates pass.
-
-Re-query actual installed and published SDK 8.5 and creator-MCP issue 4; older packaging
-observations need fresh verification. Connect existing clients and memory to one
-source-backed authored-edit/recovery/export journey. Compare usable output, repairs,
-time/cost and repeat use with a capable assistant plus the creator's editor before
-subscription/GTM claims. Keep one admitted workload, secret checks, an owned lane,
-exact-revision review and production proof. Save issue 5 and the hub; preserve all
-other objectives and handovers, and keep the original full goal active.
+Connect existing clients and memory to a source-backed authored-edit/recovery/export
+journey; retain CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, provider creation,
+GTM and bundled-subscription scope. Re-query published SDK8.5 and creator-MCP issue4.
+Compare useful output, repairs, time/cost and repeat use with a capable assistant
+and creator's editor. A deterministic compiler and green tests do not establish
+customer/editorial acceptance. Keep publication/checkout closed until accepted
+gates pass. Save issue5 and the hub, preserve every other goal/hand over and keep
+the original native goal active. One admitted lead; no local heavy work while PP
+HOLD. Stop owned workers and temporary preview access at handoff.
 
 ## Creator MCP: repair publication, then prove connected creator acceptance
 
