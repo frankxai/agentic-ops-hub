@@ -1,5 +1,14 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## NPM Ecosystem: Agent Harness Integration and Documentation Portals
+
+Integrate the newly published NPM package suites into production agent harness skills and developer portals:
+- `@gencreator`: Mount `@gencreator/cli` MCP tools (`gencreator_validate_post`, `gencreator_adapt_media`, `gencreator_route_model`) into the ACOS creator studio and `gencreator.ai` documentation site.
+- `@anime-legends`: Wire `@anime-legends/cli` MCP tools (`anime_check_character`, `anime_legal_firewall`, `anime_storyboard_breakdown`) into the AnimeLegends generation skills and studio pipeline.
+- `@agentic-income`: Connect `@agentic-income/cli` MCP tools (`income_validate_system`, `income_check_disclosure`, `income_route_alternative`) into affiliate-audit and monetization automation loops.
+- `@reality-architect`: Consume `@reality-architect/reality-md` and `@reality-architect/diffusion` within the core verification gate and Starlight Board governance checks.
+Review today's session record at `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure all downstream PRs preserve foreign harness worktrees and zero-leak secrets policies.
+
 ## Arcanea adoption: voice admission and a verified creator journey
 
 Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
