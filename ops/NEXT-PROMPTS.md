@@ -74,37 +74,41 @@ branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
 Honor machine admission, secret checks and publication/payment/migration gates.
 
 
-## GenCreator: connect the accepted creator loop and managed platform
+## GenCreator: managed identity and an accepted creator journey
 
-Continue the original active GenCreator/Starlight goal in thread
-`01a123db-5493-7220-8d0d-f80760cad443`; do not shrink it to the completed release.
-Read today's GenCreator session entry, issues74/5 and the current states of191/192.
-191 merged at5f7c3c2;192 is live atb6938e7 from reviewed0ee51f2. Re-query actual
-receiving-main/production metadata and its full CI before relying on that state.
-Preserve the primary programme checkout, all source branches and other owners.
+Continue active goal `01a123db-5493-7220-8d0d-f80760cad443` and issue 5; retain the
+CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, subscription/GTM and creator/
+developer-adoption scope. Read today's release record and re-query actual heads.
+193 reviewed 6ce8692 merged 373d411; candidate/main full CI 38034399944/38034975870 and
+117 stable-production browser,22 site/MCP and 13 editable-delivery cases passed.
+READY production dpl_FYduZEAp1GZE3hLe7NqX3qDmuaEu has gencreator.ai/www aliases.
+191/192 remain integrated; 135 closes with its branch retained, while 141 retains
+unique Honor-edition rehearsal and owner-review-pending writing. Preserve source
+branches, historical failures, the primary programme checkout and other owners.
 
-Reuse135/141/146 for the source-to-authored-edit-to-recovery-to-editable-export
-journey. The API edition schema differs from the current browser schema; its save
-key is deliberately separate. Define and verify a preserving migration/import
-path before mounting those helpers. Recovery141's old preview failed resolving
-js-yaml; integrate current main dependency state instead of reverting lockfiles.
+Use the live preserving migration, explicit saves, selected host revisions,
+opted-in recovery and editable PPTX. Recovered permissions/approval remain fresh
+human decisions. Global legacy chrome, mobile density/physical-device proof and
+native portable-font differences remain deferred; field metrics and founder/
+customer acceptance are open. Do not recast a deterministic local preview as a
+configured drafting service or a completed commercial product.
 
-Managed setup is an engineering dependency: Starlight Platform Supabase has
-shared tenant/principal/entitlement tables but no GenCreator tables. The existing
-additive migration requires absent CreatorPack base tables. Prepare a reviewed
-fresh-provision path, reconcile GenCreator's Supabase/member identity with the
-shared platform authority, prove browser/service and cross-workspace denial and
-actual receipt/retry behavior, then configure an isolated preview and authenticate
-the creator loop. No historical monolithic-schema replay or assumed OAuth issuer.
-Keep public checkout/posting closed until the accepted gates pass.
+Managed readiness is 503. Re-query managed preflight, retrieve the referenced shared
+identity ADR, and reconcile sharedClerk/principal authority with GenCreator
+Supabase/member identity before managed writes. Earlier preflight had no GenCreator
+envs/tables and an absent CreatorPack migration base. Prepare a reviewed isolated
+fresh-provision path, preserve existing tenants, prove authenticated browser/service
+and cross-workspace denial plus durable receipt/retry/recovery, then connect the
+accepted creator loop. No monolithic-schema replay or assumed OAuth issuer.
+Keep publication/checkout closed until their accepted gates pass.
 
-Connect actual installed CLI/SDK/ADK/Desktop/Mobile versions and memory to that same
-journey; SDK8.5 publication is another owner's verified slice, while creator-mcp0.1
-installation remains blocked under its issue4. Reconcile all remaining PRs by
-unique work, current checks and owner authority. Compare accepted useful output,
-editing/recovery, time/cost and repeat use against a capable assistant plus the
-creator's presentation/design tool before subscription/GTM claims. Save product
-issues and the hub; maintain one admitted workload and the full goal as active.
+Re-query actual installed and published SDK 8.5 and creator-MCP issue 4; older packaging
+observations need fresh verification. Connect existing clients and memory to one
+source-backed authored-edit/recovery/export journey. Compare usable output, repairs,
+time/cost and repeat use with a capable assistant plus the creator's editor before
+subscription/GTM claims. Keep one admitted workload, secret checks, an owned lane,
+exact-revision review and production proof. Save issue 5 and the hub; preserve all
+other objectives and handovers, and keep the original full goal active.
 
 ## Creator MCP: repair publication, then prove connected creator acceptance
 

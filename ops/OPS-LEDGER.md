@@ -27,6 +27,21 @@
 <!-- starlight-delivery-20261010:end -->
 
 
+## 2026-10-10: GenCreator browser recovery and editable decks live
+
+[193](https://github.com/frankxai/gencreator.ai/pull/193) merged normally at 373d411
+from reviewed 6ce8692; all 25 integrated files match. Exact-final source-delta and
+visual reviews PASS; candidate/main full CI 38034399944/38034975870 pass.
+READY production dpl_FYduZEAp1GZE3hLe7NqX3qDmuaEu serves gencreator.ai/www and
+passes 117 real browser cases, 22 site/MCP and 13 editable-delivery checks. Seven
+fresh mobile samples measure CLS 0. Current downloaded deck bytes match the earlier
+native PowerPoint open/edit/save/reopen proof. Source 135 closes with its branch
+retained; 141 keeps unique Honor-edition rehearsal. Failures/review limits are in
+[the session](sessions/2026-10-10.md) and [issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6095264268). Managed readiness 503,
+identity/provisioning, actual clients/memory, customer/editorial acceptance and
+commercial comparison remain open. Both cloud test machines and owned local
+workers stopped; the original full goal remains active.
+
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
 [Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), reviewed6def4ff717,
