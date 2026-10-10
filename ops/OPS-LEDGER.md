@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Memory tenant boundary repaired and final-head CI passes
+
+[SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340) at `2bf05c96f77a46a4534ab24a4013315b1d738988` now repairs tenant-ID collisions and caller mutation as well as SQLite recall.15 provider/routing tests,135 native conformance checks, nine Python regressions and seven smokes pass; final Windows/Linux focused CI and estate/editorial/design checks pass. Draft's broad harness build is skipped. Independent provider review and upstream production wiring remain open. Bounded discovery found initialized but empty AgentDB application tables and a schema-only Antigravity helper. Prescribed storage sensor entry point is missing; no upstream package installation was performed. Earlier RAM floor observation was followed by recovery; re-check fresh admission before the next workload. Hub merge preserved both peer and owned records.
+
+
 ## 2026-10-10: AgentDB recall correctness implemented; upstream wiring pending
 
 [SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340), head `27b67d5a79a71f7334e1483d017a687afce83799`: current-value recall, filter-before-pagination and literal namespaces repaired in the existing phase-0 SQLite adapter. Nine regressions and seven original smokes pass; Windows/Linux CI and estate/editorial/design checks pass. Independent provider acceptance remains open. [SIS151 updated](https://github.com/frankxai/Starlight-Intelligence-System/issues/151#issuecomment-6093350076). Ruvnet AgentDB installation and production gateway adoption are pending; latest RAM reading holds new heavy work. Existing fleet328 and peer work preserved. SISmain now includes terminal SDK8.4.0 in339, replacing the earlier terminal327 observation. No owned worker remains.
