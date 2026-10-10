@@ -2,11 +2,11 @@
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
 
-Deploy and wire the Starlight Queen Meta-Orchestrator (`src/queen/`) and Universal Knowledge Tree (`src/knowledge/`) into live operator surfaces:
-- Mount Queen Meta-Orchestrator into the central Starlight daemon and cockpit (`agy-tools.ps1`, `scripts/starlight-dashboard`).
+With the Universal Knowledge Tree (`src/knowledge/`) and Starlight Queen Meta-Orchestrator (`src/queen/`) fully wired into `@starlight-intelligence/system` core exports, CLI commands (`starlight knowledge`, `starlight queen`), and 6 Stdio MCP tools (`sis_knowledge_query`, `sis_queen_telemetry`, etc.) at commit `dbd3856f`:
+- Mount the Starlight Queen Meta-Orchestrator into the central Starlight daemon and cockpit (`agy-tools.ps1`, `scripts/starlight-dashboard`).
 - Connect the Universal Knowledge Graph to local memory vaults (`local_core`), Mem0 remote provider synchronization, and the infinite canvas (`starlight-agent-canvas`).
-- Instantiate the 4 synthesized swarms (`phd_research_deep`, `staff_eng_hyper`, `luxury_creative_cinema`, `autonomous_revenue_ops`) for real autonomous multi-agent task execution.
-- Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktrees and zero-leak secrets policies remain strictly enforced.
+- Drive live production workloads through the 4 synthesized swarms (`phd_research_deep`, `staff_eng_hyper`, `luxury_creative_cinema`, `autonomous_revenue_ops`) with Santa adversarial consensus verification.
+- Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
 ## NPM Ecosystem: Agent Harness Integration and Documentation Portals
 
