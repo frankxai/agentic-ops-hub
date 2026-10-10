@@ -1,5 +1,19 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Current npm ecosystem prompt
+
+Review SIS PR342 at 511c00757961ef7e3442644522820b2a211bbfb4 and creator
+PR6 at 5ec98735d0e591b1ea3df24967432877e49cbf5b with an authenticated,
+isolated independent provider. Current immutable packets and hosted archive
+receipts are prepared. OpenCode native auth check found zero credentials and
+isolated config no provider/model; no request/verdict. Claude quota resets
+11 October 2026 06:00 Europe/Amsterdam; Gemini installed-client eligibility and
+Grok MCP/hook isolation remain open. Preserve credentials/global configuration.
+Reconcile actual review findings before npm bootstrap/trust and protected
+main-source release. Preserve broader estate/platform/customer/value scope.
+
+## Prior prompts retained for provenance
+
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
 Current creator5ec98735d0e591b1ea3df24967432877e49cbf5b closes connection-time

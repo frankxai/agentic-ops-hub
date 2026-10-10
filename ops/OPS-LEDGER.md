@@ -1,5 +1,32 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: independent review route discovery (Codex)
+
+OpenCode 1.18.35 native providers list returned zero credentials and no provider
+API environment variables were present. Child-only XDG_CONFIG_HOME retained the
+native data/auth location. Resolved isolated configuration had no model/providers,
+MCP servers or external plugins. Used --pure and disabled project/Claude/external
+skill discovery. No model request, verdict, credential copy, global configuration
+change or tool-denial enforcement test. Empty configuration is not a completed
+security review. Evidence: creator artifacts/review-5ec9873/opencode-{isolation,review}.json.
+
+Creator source 5ec98735d0e591b1ea3df24967432877e49cbf5b and SIS source
+511c00757961ef7e3442644522820b2a211bbfb4 remain clean, pushed, open draft PRs
+6 and 342 respectively (GitHub heads reconfirmed). Prior hosted/installed-archive
+verification remains valid; no new build or package publication. Independent
+review remains open. Claude quota resets 2026-10-11 06:00 Europe/Amsterdam;
+Gemini client eligibility and Grok isolation remain unresolved. Do not repeat
+unchanged failed routes or copy credentials to obtain a verdict.
+
+Owner: Codex in existing creator/hub lanes. Hub AGENTS.md explicitly reread;
+creator SECURITY.md unchanged hash 4C51311F6636ADD2FBD8BCDC73058678A7357DFB298C5045326D32A3DADEA0B8.
+Git root/origin/branch and explicit path guard/check passed; both lanes clean
+before writes, no active-agents file found. Fresh interactive PP admission:
+9735 MB free, 4096 MB floor, CPU30%, one workload; no new workers/services.
+Existing product issue4 receives this checkpoint. Full goal remains active:
+review/account/bootstrap/platform/customer/paid acceptance and other package
+repairs are unfinished. Save in agentic-ops-hub PR217 and existing product issues.
+
 ## 2026-10-10: creator connection-time DNS validation verified (Codex)
 
 Creator draft6 source5ec98735d0e591b1ea3df24967432877e49cbf5b pushed, clean owned
