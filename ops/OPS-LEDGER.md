@@ -1,5 +1,22 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: GenCreator Supabase identity choice implemented
+
+Frank confirmed Supabase sessions with explicit Starlight linking. [PR196](https://github.com/frankxai/gencreator.ai/pull/196)
+reviewed cc6965d merged normally to8d17f46; all27 files match. Consent/OIDC proof,
+existing canonical membership, durable retries/removal and the preserving14-table
+upgrade pass final full CI38047625481: native3/3 without skips,971 unit and250 browser
+cases; two existing optional visual skips. Independent auth/data and exact-final
+delta reviews PASS. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd at8d17f46
+passes22 site/MCP and7 account failure contracts. MainCI38048478637 attempt2 passes
+all required jobs; first execution canceled during metadata updates and is retained. Public375/1440 sign-in captures inspected;
+authenticated linking is unproved. No live SQL/config/credential writes; managed503.
+Frank's infrastructure approval, staging/real-account/retention acceptance and
+full adoption programme remain open. [Today's session](sessions/2026-10-10.md) and
+[issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6097126763) retain the evidence.
+
+ 🛰️ Agentic Ops Ledger — Single Source of Truth
+
 
 
 ## 2026-10-10: Estate management accepted and protection live (Codex)
