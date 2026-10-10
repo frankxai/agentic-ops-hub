@@ -890,3 +890,10 @@ Demand feedback/loading regressions: one pass/five expected failures in a compon
 ### Source-bound PR checkpoint refresh, 10 October 2026
 
 Scoped39PR/oneissue refresh:32 open/seven merged; nine saved clauses bound, eight matching heads/one stale Hub175 head; nine shared-path pairs flagged. Ops178 exact-function fault probe: two pass/four fail; unintegrated narrow candidate six pass. Current-owner integration, full-module/provider review and useful acceptance remain open. Canvas34 conflict and Config102 review gate retained; no automatic merges or source erasure.
+
+
+### Workspace verification fix implemented locally, 10 October 2026
+
+Ops178's complete continuity module reproduced four abnormal Git-failure cases that were accepted as verified workspaces. Local commit `5c21167b570872a738c7a4a9745aa9bc4a782b59` on `agent/codex/workspace-git-failure-20261010` now requires the normal Git not-a-repository exit, without a process signal or execution error. All31 selected continuity/native-goal tests pass, including five refusal cases with no exported intent or observation, actual Git verification, private text redaction and dirty-index preservation. The staged secret hook passes.
+
+The clean existing Codex worktree was reused; its earlier continuity-save branch remains preserved. The locked Claude PR178 checkout was untouched. This commit is local and unpushed. Independent provider review, receiving-owner integration and adding the new regression file to the existing explicit CI command remain open. No production, automatic resume or useful creator-artifact acceptance is claimed. Private source hashes and the exact command are retained in `ops178-full-module-fix-receipt-20261010.json`; private implementation source remains outside this public hub. Existing product issue: frankxai/agentic-ops#211.
