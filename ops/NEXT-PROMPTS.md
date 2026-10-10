@@ -922,3 +922,7 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 - **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
 - **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
 - **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+
+## Arcanea foundation: prove one recoverable creator journey
+
+Read the latest product instructions, planning files, issues531/532/533 and529/511. Refresh reviewed Registry and reconcile the older R2 proposal before choosing storage. Requery current main and active owners. Obtain a separate admitted product write lane; this handover grants none. First verify platform-funded agent/generation admission with mocked outbound calls, then complete one owner-scoped browser/MCP world round trip: import, source-cited context, editable scene and visual, approval, durable save, reopen and export. Reuse current projects, media and billing boundaries. Require failure/tenant/cost evidence and exact-revision independent review before promotion. Preserve all other fronts; no new service, paid activation or larger agent roster follows from this prompt.
