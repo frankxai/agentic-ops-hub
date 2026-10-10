@@ -1,5 +1,65 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## SIS8.4: complete one community creator acceptance journey
+
+SIS327/339 merged; npm8.4.0 published from tested main8087a0fa and public bytes
+verified. Read today's latest session and SIS144. Preserve original unknown runs
+and all previous goals. Reuse existing GenCreator/Canvas receiving owner for one
+real installed-SDK creator journey: source-backed generation, reopen/edit,
+interruption recovery, export and actual editorial/receiving-owner acceptance.
+Measure usable output, repairs, time and cost against manual Markdown on same
+brief. Six descriptor-only domains do not establish installed brand products.
+Track plugin security update_not_possible and existing alerts separately; re-query
+production canary. Conversation migration and broad programme remain open.
+
+
+## SIS: close current review and live provider gates before integration
+
+Continue SIS327 at6b0df6c3 and existing issue144. Current local full package tests,
+terminal64, lint/build and negative source-lock probe pass; Foundry31pass/twoWindows
+skips and risk34pass/sevenTODOs retain their limits. Two package.json closure pins
+were repaired without changing rule versions or review dates. Obtain independent
+review of the current complete diff and reconcile findings; prior663d5646 Grok
+review timed out with no verdict. Verify current CI, including jobs skipped while
+draft, before normal merge. Do not retry the retained native-recovery-guide run.
+Its native1.18.35 anonymous provider route returned403; no generation accepted.
+Use an admitted supported provider/account route for a separately authorized
+attempt, then prove editing, recovery/export, usage and receiving-owner acceptance.
+Preserve existing creator proofs, all earlier prompts and the full brand programme.
+
+## Portfolio: connect preserved goals to one accepted creator outcome
+
+Read the portfolio audit in ops/sessions/2026-10-10.md and re-query exact heads.
+Preserve all25portfolio objectives,65recovered goal areas and native paused states.
+Coordinate existing receiving owners rather than creating another queue. Finish
+one cited source-to-owner-to-editable-artifact roundtrip with recovery and export;
+SIS327 owns the terminal boundary, Canvas45 owns its visual acceptance, Config106
+owns proposed brand commands, and memory/source authority stays with its existing
+owner. Before launch, reconcile quota and machine admission; one maker per lane.
+Arcanea525's billing BLOCK stays with its recovery owner. Resolve independent
+review and actual host/cold-use behavior before release. Record accepted output,
+repair effort, elapsed time, measured usage and remaining gaps. Preserve all older
+pickup prompts and the broad programme; do not resume another paused goal here.
+
+## SIS: prove the admitted OpenCode creator turn and connect the product
+
+Read the latest ops/sessions/2026-10-10.md and SIS issue144. Start with
+`codex --cd C:/Users/frank/starlight/repos/.codex-worktrees/sis-terminal-orchestration-20261010`.
+Verify `56dae5f1` in draft SIS327 and the owned lane; preserve every other front.
+Read the exact-source Grok review and reconcile its actual verdict before release.
+61 terminal tests, lint/build, 135 hooks and byte-verified built export passed.
+Native OpenCode1.18.35 health/OpenAPI and one denied session were checked with
+no model call; that server is stopped. The current example is Codex-authored content
+captured through a host callback, not native generation. Resolve the repeated missing GenCreator375 reference capture without relaxing the gate. Then run one authenticated,
+admitted source-only OpenCode model turn and test real denied-tool behavior,
+interruption and usage, using the same brief/direct baseline. Host authority/cost
+enforcement remains external. Connect accepted GenCreator and SIS web surfaces to
+shared run/editorial records under separate owned lanes. Keep six domain packs,
+native Codex/Claude/Hermes/Goose adapters, academy/experiment/subscription features
+and the whole objective open. Current MCP2026-07-28 extensions are not implemented;
+do not auto-upgrade, fork upstreams or mistake a catalog for tested capability.
+Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
+
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
 Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at

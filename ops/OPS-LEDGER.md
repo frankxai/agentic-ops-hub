@@ -1,5 +1,84 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Terminal SDK8.4.0 published; broad programme remains open
+
+[SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) merged
+at9707ea9d and [release339](https://github.com/frankxai/Starlight-Intelligence-System/pull/339)
+at8087a0fa after exact-revision independent xAI code/source-pin reviews. Main
+artifact38018894204 passed build/tests and independent installation. npm8.4.0 is
+published; downloaded public bytes match tested SHA256
+52e297ce06c95433162c8f3bde8389f17119f3812aefc2f667ec6d186e91c548.
+Native Grok creator output captured/reopened/refined/exported/imported; original
+unknown attempts preserved. Editorial/user/external-owner acceptance and measured
+comparison remain pending. Domain descriptors are not installed brand products.
+Today's session has exact evidence and security/admission limits. Existing
+[SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
+stays open. Later evidence supersedes older held-release statuses below.
+
+
+## 2026-10-10: Usage evidence and Foundry closure repair; release held
+
+[SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) is pushed
+at `6b0df6c3`. OpenCode final-message token/cost observations now bind to the packet,
+session, runtime and output. `run usage` checks those bindings; failed receipt saves
+retain unknown outcomes without redispatch. Provider-reported cost remains separate
+from invoices and whole-run usage. Two stale package source pins caused Foundry
+failures; the candidate updates only those hashes, preserving rules and review dates.
+
+64 terminal tests, lint/build, 135 native commit-hook checks and full `npm test`
+pass. Foundry passes 31 with two existing Windows symlink skips; risk evals pass 34
+with seven existing TODOs. A wrong source hash still fails preflight. Harness drift
+passes. CI-scoped mesh passes (one measured, 63 carried); default worktree/estate
+mesh remains a separate stale projection. Current npm OpenCode is 1.18.35.
+
+A real isolated native OpenCode attempt received provider HTTP403. The original
+run/session/unknown marker are preserved; no generation accepted or retry/bypass.
+The server is stopped. Different-provider review at663d5646 timed out after240s
+without a verdict; the current lock revision still needs exact-head review. No
+merge, npm publication or deployment. Preserve all six-domain programme requirements
+and other owners. See today's session; existing SIS144 receives this continuation.
+
+## 2026-10-10: Portfolio and goal reconciliation, observed 02:53–02:57 CEST
+
+Read current GitHub main and selected open handover/product branches, the private
+objective ledger, native Codex goal metadata and recent lease receipts. Native
+goals total77:12active,29blocked,16paused,19usage-limited,1complete. These are stored
+states, not worker liveness. The private portfolio ledger separately has25objectives
+and205signals; its six VERIFIED outcomes include evidence-only work. Do not sum
+these stores or infer product completion. Older interface handovers say active;
+the current native goal state is paused. Preserve that pause.
+
+The latest [intent recovery211](https://github.com/frankxai/agentic-ops-hub/pull/211)
+records529 source texts and65goal areas, with only two cited recovery notes and no
+accepted receiving-owner resume. Terminal327, Canvas45, Config106/109, Command67
+and Investor42 remain drafts. Arcanea525 has a source-bound BLOCK and a separately
+owned recovery lane; its production payment path is unverified. The main local hub
+checkout is a stale July Hermes branch; preserve it and use fresh remote records.
+
+Priority proposal: finish source recovery into one owner-accepted creator artifact;
+integrate existing admission/memory/runtime receipts; complete Arcanea billing
+recovery before activation; prove one community cold-use journey before expanding
+domain packs. No service, goal state, product source, merge or deployment changed.
+This audit is an unreviewed documentation addition. See today's appended session
+for coverage, implementation boundaries and the recommended founder/community loop.
+
+## 2026-10-10: OpenCode contract and creator revision workflow implemented
+
+[Draft SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327)
+is at `56dae5f1`. A version-bound OpenCode server adapter records the owned session
+before prompting; a creator workspace binds source snapshots, preserves revisions,
+rejects stale edits and exports provenance. 61 terminal tests, lint/build, 135 hooks
+and staged secret scan pass. Native 1.18.35 health/schema and denied-session probe
+passed without a model request; the owned server was stopped. A Codex-authored
+article with LinkedIn/newsletter drafts was captured as a host-supplied result,
+reopened, edited and exported with verified byte hash. External model generation,
+comparative quality/cost and current MCP extension compatibility are unproven.
+Exact-source independent acceptance remains pending; see the latest
+[session receipt](sessions/2026-10-10.md) for actual verdict/CI and earlier failures.
+Keep [SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
+and the full six-domain objective open. Native adapters, admitted live model proof,
+domain packs, fleet enforcement, web and academy integration remain unfinished.
+
 ## 2026-10-10: Arcanea billing recovery merged; paid rollout stays closed (Codex)
 
 [PR525](https://github.com/frankxai/arcanea-ai-app/pull/525) merged as `c79b6f4`, reviewed head `dbbd5b17`. Two BLOCK rounds were repaired; final independent source review PASS for code merge.30 tests, exact Linux CI and PostgreSQL rollback/concurrency pass. Final READY pricing preview checked on desktop/mobile; reduced motion and intercepted waitlist recovery verified. Keep[529](https://github.com/frankxai/arcanea-ai-app/issues/529)/[511](https://github.com/frankxai/arcanea-ai-app/issues/511) open for migrations, seller setup, sandbox fulfillment, reconciliation/retention, BotID/auth and entitlement gates. Checkout default-off; no production migration, purchase or permission changes. Receiving-main CI/deployment pending at this record. See [session](sessions/2026-10-10.md).
