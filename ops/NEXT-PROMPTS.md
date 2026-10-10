@@ -2,6 +2,12 @@
 
 ## Current npm ecosystem prompt
 
+Goal is blocked, not complete. Obtain an existing isolated authenticated reviewer or completed exact-revision review for SIS PR #342 at 07b430790f9fb88427f9b1815455490d7c6c7728 and creator PR #6 at d4eb90502fdeee0ccd9c3c431cb030324b39ba09. Alternatively, after the recorded Claude reset on 2026-10-11 at 06:00 Europe/Amsterdam, revalidate provider availability and review those packets. Reconcile findings, then finish protected main-source/npm bootstrap/trust release. Preserve occupied source lanes and the broader estate/platform/customer/paid-value objective. Current hosted checks passed; no independent review or publication is claimed. Resume only when new evidence permits meaningful progress.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
 Review gate remains unchanged: creator6d4eb905 and SIS34207b43079 prepared/CI-
 verified, not independently reviewed/published. Grok authenticated but startup
 hooks/MCP isolation unproven; Claude quota reset11Oct06Amsterdam. Frank asked for
