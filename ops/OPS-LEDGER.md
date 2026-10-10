@@ -1,6 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: modular npm packages pushed; hosted CI repair and review open (Codex)
+## 2026-10-10: published npm artifacts audited; installation gaps identified (Codex)
+
+[SIS issue329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329),
+[draft PR342](https://github.com/frankxai/Starlight-Intelligence-System/pull/342),
+head `54c41ddf170b9a4693af97a1280b910c771e5c69`. Bounded exact-tarball audit
+inspected 42/45 inventory packages without executing package code. Three published
+packages retain local workspace dependencies; arcanea-soul lacks advertised
+declarations. Two scanner findings require private triage, not a confirmed-leak
+claim. Five new audit fixtures and six release tests pass; mandatory 135 tests pass.
+Hosted run38025179265 passed all six modular jobs for this head. Prior head5a977a1d
+passed all six modular jobs. Local build admission is HOLD at6494MB/8192required.
+Independent review, final version/account/OIDC setup and publication remain open.
+The full goal stays active; source repair ownership and scanner triage are next.
+
+## 2026-10-10: modular npm packages pushed; hosted CI passed and review open (Codex)
 
 [SIS issue 329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329),
 [draft PR 342](https://github.com/frankxai/Starlight-Intelligence-System/pull/342),

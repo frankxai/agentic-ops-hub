@@ -4,9 +4,10 @@
 
 Read today's appended session, SIS issue329, draft PR342 and the owned product
 pickup. Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
-Owned branch agent/codex/npm-modular-ecosystem is pushed at 5a977a1db747a84459d2fcdc6c8f507619206b06.
-Verify guides, routing and separate lane ownership. Modular CI run38023639393
-passed all six jobs on that exact head, including hosted artifact consumers.
+Owned branch agent/codex/npm-modular-ecosystem is pushed at 54c41ddf170b9a4693af97a1280b910c771e5c69.
+Verify guides, routing and separate lane ownership. Modular CI run38025179265
+passed all six jobs for this head. Earlier run38023639393 passed all six jobs at5a977a1d,
+including hosted artifact consumers; preserve the head/merge-receipt distinction.
 SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
 Obtain independent provider review using an admitted isolated supported route;
 Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
@@ -14,8 +15,13 @@ Rebuild a clean final receipt, finalize the initial Changeset/version set, recon
 npm org rights, first-publication trusted publishers and npm-production setup, then
 publish exact reviewed bytes through the authorized OIDC path after normal gates.
 Do not force merges or use a token fallback. Preserve accepted terminal/creator SDK.
-Continue artifact/source audits beyond the45 metadata records in their registered
-owned lanes. Respect separate memory publication boundaries and site/plugin alerts.
+Read NPM_ARTIFACT_AUDIT.md and ignored sanitized artifact-audit.json:42/45 exact
+tarballs inspected, three published workspace-dependency failures, arcanea-soul
+declarations missing, two scanner findings needing private triage, three archives
+uninspected. Fix dependencies in registered owned source lanes and test actual
+installed consumers; do not substitute dry-run packing or scanner flags for proof.
+Respect separate memory publication boundaries and site/plugin alerts. Latest
+local build preflight HOLD at6494MB/8192required; small tests/records remain allowed.
 Resolve commercial integration authority and buyer evidence before platform changes
 or revenue claims. Save issue329 and hub217 with fresh evidence; leave the goal open.
 
