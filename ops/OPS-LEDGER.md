@@ -2,6 +2,10 @@
 
 
 
+## 2026-10-10: Duplicate Git ref preservation verified (Codex)
+
+Eight checkouts/four duplicate-source groups have private full-ref bundles and strict isolated-object-store recovery checks. Source metadata was unchanged. Four dirty checkouts still require worktree/index preservation; LFS, submodules and offsite recovery remain unproved. Missing configured storage capability was diagnosed using an inspected private historical NoWrite copy; its owner repair is open. [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains reviewed589e0d4; management/protection and organization decisions pending. Existing issues29/55 retain the remaining work. See today's session.
+
 ## 2026-10-10: Estate exact-head provider PASS; activation pending (Codex)
 
 [Ops213](https://github.com/frankxai/agentic-ops/pull/213), `589e0d4`: actual Antigravity PASS covers prior full8-file/13-part source and complete2-file delta, matching all current hashes. All117 tests and exact-head verify/validate pass. Governance verify now runs all PRs; push restricted to main avoids duplicate branch runs. Corrected app-bound verify protection payload remains unapplied. Concrete merge/protection acceptance and organization choice pending; Registry owner/source/publication review, local recovery and production acceptance remain open in issues29/55. Reviewer stopped; static review is not a release or legal/ownership verdict. See today's session.

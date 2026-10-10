@@ -20,8 +20,11 @@ The18 proposed source candidates retain unresolved owner/product/source/release
 and publication/data authority; proposed records72, reviewed main54. Ratification
 and downstream refresh require accepted main SHA. Preserve archived sources,
 agent-branch production, missing Git provenance, public-code/private-instance
-boundaries and all existing owners. Duplicate-source recovery must preserve
-commits and dirty work; missing/placeholder guidance requires owner repair.
+boundaries and all existing owners. Eight duplicate-source checkouts now have private full-ref bundles with strict
+isolated-object-store recovery checks. Preserve the four dirty worktrees and index
+staging separately before cleanup; LFS, submodules and offsite recovery remain
+unproved. Missing/placeholder source guides and the configured storage tool/skill
+require owner repair. Historical NoWrite diagnostics are not installed policy.
 Continue available safe independent work while awaiting decisions. No transfer,
 privacy/spend change, cleanup or production promotion is authorized by test results.
 
