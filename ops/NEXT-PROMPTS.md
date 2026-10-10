@@ -41,7 +41,7 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 ```text
 Read ops/sessions/2026-10-10.md. C:\Users\frank\repos is gone. Canonical clones stay in C:\Users\frank\starlight\repos.
 
-Do not delete C:\Users\frank\frankxai-empire-audit. Those folders are the git directories for the copilot worktrees under C:\Users\frank\copilot-worktrees. The website checkout there has a broken HEAD and still owns frankxai-animated-engine.
+Do not delete C:\Users\frank\frankxai-empire-audit. Those folders are the git directories for the copilot worktrees under C:\Users\frank\copilot-worktrees. The website checkout there is repaired on main at b7e617bd. frankxai-animated-engine is still 8a6cd80e.
 
 Do not move C:\Users\frank\plugins. It is the live plugin root. loop-system and domain-intelligence-system are junctions back to starlight\repos.
 
