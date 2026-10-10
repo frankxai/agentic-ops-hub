@@ -1,20 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: SIS execution and recovery implemented; independent acceptance pending
+## 2026-10-10: OpenCode contract and creator revision workflow implemented
 
 [Draft SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327)
-is at `17faf314`: fifteen files add pinned worker transports, explicit host grants,
-durable attempts, inspection/handoffs and fail-closed orchestration. Unknown
-outcomes and receipt-save failures retain owned writer markers; MCP arguments
-are JSON snapshots and malformed HTTP UTF-8 is rejected. 47 terminal, 86
-orchestrator/swarm, 8 core and 135 hook tests passed in their recorded scopes.
-Final lint/build and CLI smoke pass. Active CI passes; two jobs are draft-skipped.
-Build admission recovered. First independent Grok review was BLOCK; findings
-were reconciled and corrected, with exact-final independent acceptance still
-pending. See [session evidence](sessions/2026-10-10.md) for final review status,
-earlier admission exception and preserved provider failures. Keep
-[SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
-and the full six-domain objective open. Native adapters, live creator proof,
+is at `56dae5f1`. A version-bound OpenCode server adapter records the owned session
+before prompting; a creator workspace binds source snapshots, preserves revisions,
+rejects stale edits and exports provenance. 61 terminal tests, lint/build, 135 hooks
+and staged secret scan pass. Native 1.18.35 health/schema and denied-session probe
+passed without a model request; the owned server was stopped. A Codex-authored
+article with LinkedIn/newsletter drafts was captured as a host-supplied result,
+reopened, edited and exported with verified byte hash. External model generation,
+comparative quality/cost and current MCP extension compatibility are unproven.
+Exact-source independent acceptance remains pending; see the latest
+[session receipt](sessions/2026-10-10.md) for actual verdict/CI and earlier failures.
+Keep [SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
+and the full six-domain objective open. Native adapters, admitted live model proof,
 domain packs, fleet enforcement, web and academy integration remain unfinished.
 
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)

@@ -1,22 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## SIS: reconcile exact-source review and prove one creator workflow
+## SIS: prove the admitted OpenCode creator turn and connect the product
 
-Read ops/sessions/2026-10-10.md and SIS issue144. Start with
+Read the latest ops/sessions/2026-10-10.md and SIS issue144. Start with
 `codex --cd C:/Users/frank/starlight/repos/.codex-worktrees/sis-terminal-orchestration-20261010`.
-Verify the owned lane and `17faf314` in draft SIS PR327; preserve all other fronts.
-Fresh machine/storage admission comes before heavy work. Lint/build, 47 terminal,
-86 orchestrator/swarm, 8 core and 135 hook tests passed in their recorded scopes.
-Active CI passes; harness/compiler remain draft-skipped. Grok's first BLOCK was
-reconciled into retained writer markers and MCP snapshots; preserve both that
-review and later no-verdict attempts. Read the final review receipt before deciding
-what remains. Obtain exact-head independent acceptance and normal CI gates before
-integration. Then implement one actual source-backed GenCreator workflow with
-editable output, verification, recovery and export, compare direct native harness
-use, and connect existing web surfaces to shared run records. Six domains remain
-descriptor-only; native adapters, fleet authority/budgets, lifecycle and academy
-integration are open. Save issue144 and this hub. No new recurring jobs, live posts
-or spending grants.
+Verify `56dae5f1` in draft SIS327 and the owned lane; preserve every other front.
+Read the exact-source Grok review and reconcile its actual verdict before release.
+61 terminal tests, lint/build, 135 hooks and byte-verified built export passed.
+Native OpenCode1.18.35 health/OpenAPI and one denied session were checked with
+no model call; that server is stopped. The current example is Codex-authored content
+captured through a host callback, not native generation. Resolve the repeated missing GenCreator375 reference capture without relaxing the gate. Then run one authenticated,
+admitted source-only OpenCode model turn and test real denied-tool behavior,
+interruption and usage, using the same brief/direct baseline. Host authority/cost
+enforcement remains external. Connect accepted GenCreator and SIS web surfaces to
+shared run/editorial records under separate owned lanes. Keep six domain packs,
+native Codex/Claude/Hermes/Goose adapters, academy/experiment/subscription features
+and the whole objective open. Current MCP2026-07-28 extensions are not implemented;
+do not auto-upgrade, fork upstreams or mistake a catalog for tested capability.
+Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 
