@@ -1,4 +1,8 @@
 # ⏭️ Next Prompts — per active front / terminal
+
+## Business software: prove the existing professional CRM workflow
+
+Continue the 11 October 2026 build/buy request using the saved private business recommendation and docs/BUSINESS-SOFTWARE-DECISION-METHOD.md. Keep architecture decisions with reviewed agentic-ops Registry/main, human intake/projections in their existing Notion systems, and the estate handover in this hub. Refresh source revisions, current budget/invoices and lane ownership. Inspect a small authorized professional sample and prove source-preserving follow-up preparation, stable-ID edits, duplicate/concurrent handling, export, denied scopes and recovery. Preserve private identity/context boundaries. If automatic email/calendar capture is the evidenced gap, compare Attio against the incumbent on matched tasks, cost and operator repair before procurement/cutover. Reuse Communications OS #61 and architecture issue #10; no new CRM platform, registry, gateway or orchestrator. Keep external messages, publication, spend and production within existing authorization gates. Read/apply relevant design skills before any UI implementation, and obtain exact-revision independent review. Retain prior tasks/prompts. Update the existing issue and this session/ledger with actual configured/tested/accepted/live evidence.
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: review and release Supabase auth, then prove live account activation
 
