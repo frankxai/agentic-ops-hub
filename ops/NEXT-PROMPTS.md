@@ -36,6 +36,20 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### Placement: do not delete the empire-audit git dirs
+
+```text
+Read ops/sessions/2026-10-10.md. C:\Users\frank\repos is gone. Canonical clones stay in C:\Users\frank\starlight\repos.
+
+Do not delete C:\Users\frank\frankxai-empire-audit. Those folders are the git directories for the copilot worktrees under C:\Users\frank\copilot-worktrees. The website checkout there has a broken HEAD and still owns frankxai-animated-engine.
+
+Do not move C:\Users\frank\plugins. It is the live plugin root. loop-system and domain-intelligence-system are junctions back to starlight\repos.
+
+Suno fbd820e is already on frankxai/awesome-suno-agent-skills as agent/grok/suno-unpushed-20260701. It has no merge base with main. Do not open a pull request from it. Do not touch the Hermes checkout.
+
+Leave frank-gym-os without git init until a private remote exists. Leave home agentic-ops and home starlightintelligence.ai.
+```
+
 ### Starlight interfaces: connect source-backed creation and knowledge
 
 ```text
