@@ -973,12 +973,4 @@ Read the latest product instructions, planning files, issues531/532/533 and529/5
 
 ## v0 design alignment — 10 October 2026
 
-Continue Design Intelligence issue 48 and the v0 assessment in ops/sessions/2026-10-10.md.
-Reconnect the existing v0 MCP through supported OAuth; inventory only accessible chats and map them to existing Vercel projects and canonical repos.
-Reuse FrankX /v0 Product Foundry and the production v0 MCP operating standard.
-Coordinate with GenCreator issue 5's owner before touching its released edition-based Creator Studio.
-Import the approved GenCreator brand source plus a consumer app as a v0 design-system projection with recorded revisions.
-Compare distinct source-to-artifact/review/export compositions against a native Next.js refinement on the same source material.
-Choose by creator usefulness, completion, repair effort and interruption recovery; integrate only the selected direction in an owned lane.
-Keep Figma optional while Starter reads are quota-blocked. Obtain current desktop/mobile, focus, touch, reduced-motion and interruption evidence
-through an admitted local browser or the existing hosted QA lane before proposing any rollout.
+Continue existing Design Intelligence issue48 from the execution receipt in ops/sessions/2026-10-10.md. Connection, six source contexts, workflow49/50, repaired team gencreator skill and Creator Studio197 are implemented. Preserve original chats, defaults, source snapshots and accepted work. Read workflow31543da, verify the actual imported HEAD, and use verified attachments while native SHA checkout fails. Refresh skills explicitly before adoption. Next: coordinate Arcanea's entry-to-saved-world journey with its current owner; read canon/storage/recovery, compare three useful compositions against the native baseline, then integrate and verify one owned slice. Reconcile SIS ownership before adoption. Figma stays optional. Wider GenCreator identity and customer acceptance remain open under issue5.
