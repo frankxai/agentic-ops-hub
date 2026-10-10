@@ -1,5 +1,21 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: GenCreator security/MCP and editable PPTX live
+
+[GenCreator191](https://github.com/frankxai/gencreator.ai/pull/191) merged at
+`5f7c3c2`; exact-source independent Poolside review, candidate/main full CI and
+22 stable-domain smoke checks passed. READY production deployment is
+`dpl_6mY7BRikkAE3AsBEDZe6A5Cnwmxa`; GitHub open dependency alerts are zero.
+Superseded186/187 closed with source branches preserved. Editable PPTX integration
+[192](https://github.com/frankxai/gencreator.ai/pull/192) merged at `b6938e7` from
+reviewed `0ee51f2`:11 focused cases, candidate full CI and independent review pass.
+Native PowerPoint open/edit/save/reopen and first-slide renders were inspected.
+READY production `dpl_AcUownSYpdtgSy9fd3EvvjUvwMwu` passes13 delivery checks and22
+site/MCP checks; downloaded bytes match the native-tested specimen. Receiving-main
+full CI38024968968 also passed. Managed readiness remains503: no Vercel envs
+or GenCreator tables in the documented shared Supabase project. The full original
+creator/client/memory/cloud/subscription goal stays active; issues74/5 stay open.
+
 ## 2026-10-10: hook fixes merged; conditional merge admission is live
 
 Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
