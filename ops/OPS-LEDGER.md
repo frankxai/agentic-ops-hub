@@ -1,5 +1,21 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Terminal SDK8.4.0 published; broad programme remains open
+
+[SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) merged
+at9707ea9d and [release339](https://github.com/frankxai/Starlight-Intelligence-System/pull/339)
+at8087a0fa after exact-revision independent xAI code/source-pin reviews. Main
+artifact38018894204 passed build/tests and independent installation. npm8.4.0 is
+published; downloaded public bytes match tested SHA256
+52e297ce06c95433162c8f3bde8389f17119f3812aefc2f667ec6d186e91c548.
+Native Grok creator output captured/reopened/refined/exported/imported; original
+unknown attempts preserved. Editorial/user/external-owner acceptance and measured
+comparison remain pending. Domain descriptors are not installed brand products.
+Today's session has exact evidence and security/admission limits. Existing
+[SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
+stays open. Later evidence supersedes older held-release statuses below.
+
+
 ## 2026-10-10: Usage evidence and Foundry closure repair; release held
 
 [SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) is pushed

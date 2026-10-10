@@ -1,5 +1,18 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## SIS8.4: complete one community creator acceptance journey
+
+SIS327/339 merged; npm8.4.0 published from tested main8087a0fa and public bytes
+verified. Read today's latest session and SIS144. Preserve original unknown runs
+and all previous goals. Reuse existing GenCreator/Canvas receiving owner for one
+real installed-SDK creator journey: source-backed generation, reopen/edit,
+interruption recovery, export and actual editorial/receiving-owner acceptance.
+Measure usable output, repairs, time and cost against manual Markdown on same
+brief. Six descriptor-only domains do not establish installed brand products.
+Track plugin security update_not_possible and existing alerts separately; re-query
+production canary. Conversation migration and broad programme remain open.
+
+
 ## SIS: close current review and live provider gates before integration
 
 Continue SIS327 at6b0df6c3 and existing issue144. Current local full package tests,
