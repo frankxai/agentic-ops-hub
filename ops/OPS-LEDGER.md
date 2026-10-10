@@ -1,4 +1,15 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+<!-- starlight-delivery-20261010:start -->
+## Starlight platform delivery, 10 October 2026
+
+- Done: [PR107](https://github.com/frankxai/starlightintelligence.ai/pull/107) and [PR109](https://github.com/frankxai/starlightintelligence.ai/pull/109) merged normally. Latest main `1f1ff7e`, Vercel `dpl_7qLawsYTWXmZrhmn7uQV24W9aeWh` READY; security PR108 preserved. Released interruption/edit/export recovery, first-signup proof recovery, scoped original-brief recovery, corrected accounting labels and pytest security pin.
+- Verified: two exact-head recovery source PASS reviews plus the test-security PASS review, failed/time-limited evidence preserved. [Latest main CI38052675008](https://github.com/frankxai/starlightintelligence.ai/actions/runs/38052675008) PASS: 443 Node / 17 financial PostgreSQL / 210 browser cases and 79 main source hashes. [Latest live canary38052701792](https://github.com/frankxai/starlightintelligence.ai/actions/runs/38052701792) PASS: 138 page/viewport rows / seven team HTTP cases. Live 24 HTTP checks / five public MCP checks / five homes HTTP200. Seventy-eight current candidate/platform-main capture companions/ledger records; latest follow-up JSON proofs retained.
+- Database: existing EU migration `20261010122233` installed; exact stored 45,655-byte SQL/hash bound, eight RLS tables / sixteen service-only invoker RPCs verified. Existing business rows and identity/Reality Architect preserved; no customer/funds/usage rows created. Two pre-existing unrelated advisor warnings remain scoped in the session.
+- Security: GitHub alert5 fixed at12:40:07 UTC; fresh query zero open Dependabot alerts. Code scanning is not enabled, so no whole-product security certification. Secret hooks stayed enabled; hub verify/estate scan required.
+- Open: actual Clerk app/server credentials, customer membership/funding/rates, KV/Resend/reconciliation, maintenance invocation/alerts/expiry/backups, billing/licensing, wider craft and real customer acceptance. Full apps/router/cloud/five-domain/commercial objective remains unfinished. Peer SDK8.5.1/AGY handover PR237 is preserved; do not duplicate its published release or claim its creator acceptance.
+- Saves: current hub session/ledger/prompt and product issues [82 release update](https://github.com/frankxai/starlightintelligence.ai/issues/82#issuecomment-6097629776) / [95 release update](https://github.com/frankxai/starlightintelligence.ai/issues/95#issuecomment-6097630223). Source task `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`; hub lane `codex-7d9cfc62`, dedicated worktree. Earlier pause and other records preserved; full objective not closed.
+<!-- starlight-delivery-20261010:end -->
+
 
 ## 2026-10-10: AGY source review and Antigravity harmony fix
 
