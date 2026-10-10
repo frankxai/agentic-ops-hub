@@ -1,4 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+
+## 2026-10-10: GenCreator director recovery verified
+
+[PR 198](https://github.com/frankxai/gencreator.ai/pull/198)/[PR 199](https://github.com/frankxai/gencreator.ai/pull/199): reviewed 16cd81e merged normally to 503599b; 28 source files match and accepted UI preserved. Mixed-attempt/endpoint clips render through installed MCP SDK at zero generation budget. Uncertain jobs stay held across edits/endpoints/attempts; exact frame bytes and retained wire digests are checked. Final 77 focused cases, three exact-source PASS reviews, with earlier static FAIL/WARN records reconciled and preserved and full candidate/main CI: native 3/3, 1,049 unit/262 browser cases, two existing optional skips. Seven synthetic submissions, zero duplicates, six retained clips and native 30-second silent 720p preview. READY dpl_AkiZcXdA2Tj2gr6iqGXyvHvPCB6v; 22 stable checks, managed 503. PR 198's premature merge despite failed Review Gate and all failed/limited attempts are retained and repaired by PR 199. Source PR 149 closes with its branch kept. No live generation, npm/DB/OAuth/checkout activation or creator-quality claim. Supabase decision stays resolved; infrastructure/cost and real-account/creator acceptance remain open. [Issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6099958722) and [today's session](sessions/2026-10-10.md) retain the full active goal.
 <!-- starlight-delivery-20261010:start -->
 ## Starlight platform delivery, 10 October 2026
 
