@@ -8,9 +8,9 @@ Owned branch agent/codex/npm-modular-ecosystem is pushed at75132077ff1da8413fa76
 Publication now binds all consumer checks to exact manifest bytes/source, requires
 the exact manual main workflow/clean checkout and isolates inherited npm configs.
 Local16 release/artifact tests and mandatory135 tests pass. Hosted38029407740
-has passed five jobs, Windows24 in progress. Downloaded real archives and new
+completed SUCCESS across all six jobs. Downloaded real archives and new
 consumer.json validate against merge sourcef6db18a6, dirty=false, not PR head.
-Recheck final CI result and obtain review for current revision; priorfdb packet
+Obtain review for current revision; priorfdb packet
 is stale for the publisher changes. Fresh admission was BOUNDED10668MB/8192;
 one workload/no agents, no heavy workload needed. Do not infer current admission.
 Verify guides, routing and separate lane ownership. Modular CI run38025179265

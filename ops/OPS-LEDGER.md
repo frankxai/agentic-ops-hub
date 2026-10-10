@@ -8,8 +8,8 @@ now requires exact manual main workflow identity/source, clean checkout, matchin
 installed-consumer receipt and isolated project/user/global npm configuration.
 Failed consumer attempts invalidate prior success. Malformed versions are denied
 before file reads. Local16 release/artifact tests and mandatory135 checks pass.
-Hosted38029407740 passed artifact/installed-consumer, coreNode18 and Linux22/24
-plus Windows22; Windows24 is in progress at this record. Downloaded actual
+Hosted38029407740 completed SUCCESS across all six jobs: artifact/installed-consumer,
+coreNode18 and Windows/Linux22/24. Downloaded actual
 archives and consumer.json validate against merge sourcef6db18a60fab57dc69761deec3d2b13c63f5c7c8,
 dirty=false, distinct from the PR head. Core8642JSbytes/12465compressedbytes.
 Issue329 comment6094459203 and draft342 description updated. Account bootstrap,
