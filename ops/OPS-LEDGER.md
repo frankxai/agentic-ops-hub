@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Ninth source recovered; Windows router candidate repaired (Codex)
+
+Nine cited selected histories/one pending;529active-note snapshot/1587overlapping demands/65goal areas/25objectives retained. Site97/router301/runtime3 remain open drafts. Router exact-head Windows baseline7/3, private repair12/0; original/cache preserved. [Issue300](https://github.com/frankxai/Starlight-Intelligence-System/issues/300#issuecomment-6093420324) carries the patch. Owner integration, native-host install, Linux rerun, independent review and actual creator acceptance remain open. See [session](sessions/2026-10-10.md); no new swarm/merge/deploy/resume.
+
 ## 2026-10-10: Preserve source intent and reconcile current work (Codex)
 
 [Plan](plans/intent-pr-goal-reconciliation-2026-10-10.md) and [session](sessions/2026-10-10.md) preserve exact-source recovery privately and sanitized continuation publicly:46 recent notes,39 older candidates,21 linked local sessions,622 open PRs,24 saved objectives. Candidate routing requires live owner verification; this creates no replacement queue or scheduler. First outcome is real capture-to-owner-safe-resume-to-useful-artifact recovery, followed by existing product repairs and creation. No product execution or release acceptance is claimed. Existing Ops211/hub159 receive the receipt; previous goals and prompts remain intact.
