@@ -1,13 +1,25 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 ## 2026-10-10: Memory tenant boundary repaired and final-head CI passes
+## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
 
 [SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340) at `2bf05c96f77a46a4534ab24a4013315b1d738988` now repairs tenant-ID collisions and caller mutation as well as SQLite recall.15 provider/routing tests,135 native conformance checks, nine Python regressions and seven smokes pass; final Windows/Linux focused CI and estate/editorial/design checks pass. Draft's broad harness build is skipped. Independent provider review and upstream production wiring remain open. Bounded discovery found initialized but empty AgentDB application tables and a schema-only Antigravity helper. Prescribed storage sensor entry point is missing; no upstream package installation was performed. Earlier RAM floor observation was followed by recovery; re-check fresh admission before the next workload. Hub merge preserved both peer and owned records.
+[SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged
+atfe964d5a after independent xAI review/all checks. Existing organization system
+and Arcanea compatibility8.5.0 published; both public bytes match tested main
+artifacts. All377payload files identical, four installed exports and six descriptor
+domains verified. New ecosystem doctor reports bounded live package health without
+installing or granting authority. Both SDKs/memory metadata now pass; creator MCP
+workspace dependencies remain blocked. Today's session and SIS144 comment6093445212
+record proof and remaining user/creator/security/trusted-publishing gaps. Broad
+programme stays partial; preserve all previous owners and histories.
 
 
 ## 2026-10-10: AgentDB recall correctness implemented; upstream wiring pending
+## 2026-10-10: hook independent review WARN; current source owner refining
 
 [SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340), head `27b67d5a79a71f7334e1483d017a687afce83799`: current-value recall, filter-before-pagination and literal namespaces repaired in the existing phase-0 SQLite adapter. Nine regressions and seven original smokes pass; Windows/Linux CI and estate/editorial/design checks pass. Independent provider acceptance remains open. [SIS151 updated](https://github.com/frankxai/Starlight-Intelligence-System/issues/151#issuecomment-6093350076). Ruvnet AgentDB installation and production gateway adoption are pending; latest RAM reading holds new heavy work. Existing fleet328 and peer work preserved. SISmain now includes terminal SDK8.4.0 in339, replacing the earlier terminal327 observation. No owned worker remains.
+Grok4.7 high completed source review of older config109 `1bf683a`: WARN, nine-file coverage. Owner revision `13ebcf` addresses Node launch failure and adds native discovery; remaining findings/new merge gate require fresh review. Eligible approval still required. Older frozen source38 tests pass. [Review](https://github.com/frankxai/starlight-agent-config/pull/109#issuecomment-6093421779); preserve owner and issues78/101/98.
 
 
 ## 2026-10-10: Estate delivery audit and handover conflict recovery

@@ -1,8 +1,18 @@
 # ⏭️ Next Prompts — per active front / terminal
 
 ## Current memory pickup: review repairs, then prove actual upstream wiring
+## Creator MCP: repair publication, then prove connected creator acceptance
 
 Read the final memory-isolation session and SIS151/143. Freeze SIS340 at `2bf05c96f77a46a4534ab24a4013315b1d738988`: local-core tenant keys and mutation boundaries repaired,15 focused provider/routing and135 native conformance tests pass, plus nine Python regressions/seven smokes and final Windows/Linux focused CI. Obtain independent exact-head review before normal integration. Earlier advice to fix that collision is now historical; upstream package and production gateway adoption are still pending. Reconcile the missing canonical storage sensor entry point with its current owner before an install. Existing local ReasoningBank application tables are empty; the Antigravity helper writes schemas without a backend. Use the existing gateway/provider seam and canonical replay, test pinned AgentDB3.0.0-alpha.20 insert/search/delete/flush/reopen and denial, then compare a real creator task with OmO/Ruflo using output, repair cost and measured RAM. Current machine preflight permits one bounded workload and pauses new swarms; re-read numeric floors and owners. Preserve all other fronts, source records and fleet328; SDK8.4.0 is already on SISmain. Save the hub and existing product issue; leave broader objectives open.
+Read today's SDK8.5 organization handover and SIS144 comment6093445212. Existing
+@starlight-intelligence/system and Arcanea8.5 public tarballs match tested main
+fe964d5a; ecosystem doctor reports creator-mcp0.1 workspace:* dependencies blocked.
+Use the existing starlight-creator-mcp issue4 and verified available owner lane to
+repair independent package installation, review and versioned release. Preserve
+its auth/tenant/provenance/publishing contracts. Then prove one actual source-
+backed memory/creator/edit/recovery/export journey and receiving-owner/user
+acceptance. Retain all broader goals and unknown runs; no automatic MCP activation,
+provider quota, OIDC setup, commercial readiness or estate-wide completion assumed.
 
 
 ## AgentDB and cross-harness integration: continue from tested repairs
@@ -83,6 +93,10 @@ Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
 1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
 the final source bindings. Obtain exact-head independent provider review and
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Requery PR109 head; the owner published13ebcf059285b866c4618bc8306c53cf22e0263d.
+Older1bf683a received independent Grok WARN, not approval; see review6093421779.
+Preserve the active owner, validate remaining findings and new native inventory/merge-review gate,
+including cloud PR103 provenance and final source bindings. Obtain exact-head review and
 one eligible GitHub approval; normal merge was refused, and older review attempts
 are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
 status turn with 13 completed hooks pass. Preserve exact operator backups and
