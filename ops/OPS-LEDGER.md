@@ -1,4 +1,15 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+<!-- npm-managed-20261011:start -->
+## Npm and managed activation, 11 October 2026
+
+- Done: nine review findings repaired and pushed. SIS342 `cf7b9f6d` is CLEAN/ready with all thirteen workflows green; creator6 `46d638e1` is CLEAN/ready with all seven jobs green. Actual strict validation passed23 downloaded archives plus source-bound consumer receipts. Core9,865 runtime bytes,15 schemas/13 schema exports. No merge/publication claimed.
+- Independent review: native isolated AGY/Gemini3.1ProHigh ran on both frozen heads without credential copies/links or observed tool calls. SIS BLOCK claimed schemas absent; committed files and current archive disprove that assertion. Creator verdict omitted. Two separate corrected source packets prepared; neither final approval is obtained. Original evidence preserved. Current review-lite HOLD4,219MB free/6,144required; no new reviewer/build/swarm.
+- Live: GenCreator production `e540062` READY on Vercel, but readiness503 with durableReceipts/authenticatedWorkspace unavailable. Same-project native CLI reports no production environment variables after MCP403. Shared Starlight database has neither inspected Creator schema; data-plane selection remains unresolved. No config/database/billing changes made and foreign dirty lanes preserved.
+- Proposal: keep free local; existing Managed Pro/Team prices/caps remain private hypotheses. Implement owner-selected14-table data plane, verified subscription inbox/projection/outbox, scoped grants, financial admission, durable source-to-edit/recovery/export and real customer acceptance. Resolve public Polar vs accepted Stripe/Lemon vs legacy Whop payment authority before live wiring. Managed operations needs a defined customer-owned/hosted boundary, costs and support obligations.
+- Open: final exact-head AGY verdicts/normal merge; protected-main archives; legitimate first-package/npm trust403 and CLIversion prerequisites; root8.5.1 sanitizer patch separately; three high legacy dependency alerts; authentication/persistence/merchant/workspace/budget/customer gates. Full objective remains open.
+- Evidence and implementation plan: [11Oct session](sessions/2026-10-11.md), [hub217](https://github.com/frankxai/agentic-ops-hub/pull/217), [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329), [creator4](https://github.com/frankxai/starlight-creator-mcp/issues/4), [GenCreator5](https://github.com/frankxai/gencreator.ai/issues/5). Current prompt below names exact sources and bounded next action.
+<!-- npm-managed-20261011:end -->
+
 <!-- starlight-delivery-20261010:start -->
 ## Starlight platform delivery, 10 October 2026
 
