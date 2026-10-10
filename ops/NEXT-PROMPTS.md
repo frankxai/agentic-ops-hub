@@ -2,11 +2,11 @@
 
 ## Estate management: review the source map, then repair in owned lanes
 
-Read private canonical ops PR213 at a204fefa9dffabf9a012b5c39159ab6093d42cfe,
+Read private canonical ops PR213 at 46e32b8e6203cb21766fce7836139ad69b034c74,
 issues29/55 and the reviewed Registry. The hosted Claude review failed incomplete
 and the security-review connector reported a usage limit. Recover independent
-review for this exact head; no failed run counts as a verdict. Three earlier
-cloud code-review findings were fixed and all 82 tests pass. Compare one company namespace with the
+review for this exact head; no failed run counts as a verdict. Six earlier
+cloud code-review findings were fixed and all 85 tests pass. Compare one company namespace with the
 two-boundary proposal; preserve independently governed communities and private
 personal sources. Inspect the private captured reconciliation, classify missing
 admissions and resolve separate local histories with their owners before any
@@ -70,6 +70,12 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 > **2026-10-02:** Queen foundation and hardening are on main; its current prompt covers activation access and proof. Earlier integration work remains open. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
+
+### Arcanea: verify receiving main and complete existing release gates
+
+```text
+Continue Arcanea issues529/511 after PR525 merged as c79b6f4fa4283614ddf12129a7ab1a6e27e3318c (reviewed head dbbd5b17c26eceb7808cade28ed476d8fc0f3a02). Read repository instructions and latest planning/control records, refresh reviewed Registry authority, owner leases and actual remote state. Preserve foreign branches and dirty edits. First verify receiving-main CI/deployment; final candidate had independent Grok4.7 source PASS, Linux/PG concurrency PASS and a READY pricing preview with reduced-motion and intercepted waitlist recovery proof. Do not reimplement those repairs. Checkout is default-off. Keep the existing launch gates: authorized production migrations and seller/product setup, real sandbox purchase and duplicate/redelivery proof, refund/proration/replacement reconciliation, dead-worker receipt recovery, retention/private large-image storage, BotID/auth recovery, image BYOK and plan entitlement enforcement.3MiB inline outputs refund before debit; validate actual model sizes. No production migration, paid call or release activation is authorized by this pickup. Acquire an admitted owned lane for the next bounded issue slice; preserve accounts/financial history on rollback. Save public source-safe findings to the existing issues and agentic-ops-hub; keep private task records and instruction/source hashes private.
+```
 
 ### Starlight interfaces: connect source-backed creation and knowledge
 

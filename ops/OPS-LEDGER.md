@@ -3,10 +3,10 @@
 ## 2026-10-10: Estate ownership proposal and reconciliation ready for review (Codex)
 
 Private canonical [ops PR213](https://github.com/frankxai/agentic-ops/pull/213)
-at `a204fefa9dffabf9a012b5c39159ab6093d42cfe` proposes two active company
+at `46e32b8e6203cb21766fce7836139ad69b034c74` proposes two active company
 namespaces, preserves personal/community boundaries and adds a read-only
-source reconciler. All 82 script tests and final-head verify CI passed. Three
-cloud code-review findings were fixed with regressions. The hosted Claude
+source reconciler. All 85 script tests and final-head verify CI passed. Six
+cloud code-review findings across two rounds were fixed with regressions. The hosted Claude
 review failed incomplete before a verdict; the security-review connector reported
 a usage limit. A fresh ordinary cloud review of the final head was requested.
 Detailed deployment,
@@ -18,6 +18,10 @@ Registry ratification or production promotion. See today's session.
 ## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
 
 [Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
+
+## 2026-10-10: Arcanea billing recovery merged; paid rollout stays closed (Codex)
+
+[PR525](https://github.com/frankxai/arcanea-ai-app/pull/525) merged as `c79b6f4`, reviewed head `dbbd5b17`. Two BLOCK rounds were repaired; final independent source review PASS for code merge.30 tests, exact Linux CI and PostgreSQL rollback/concurrency pass. Final READY pricing preview checked on desktop/mobile; reduced motion and intercepted waitlist recovery verified. Keep[529](https://github.com/frankxai/arcanea-ai-app/issues/529)/[511](https://github.com/frankxai/arcanea-ai-app/issues/511) open for migrations, seller setup, sandbox fulfillment, reconciliation/retention, BotID/auth and entitlement gates. Checkout default-off; no production migration, purchase or permission changes. Receiving-main CI/deployment pending at this record. See [session](sessions/2026-10-10.md).
 
 ## 2026-10-10: hook repairs and native runtime verified; config merge requires review
 
