@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Arcanea billing recovery blocked at reviewed candidate (Codex)
+
+[PR525 review](https://github.com/frankxai/arcanea-ai-app/pull/525#issuecomment-6091742927), [issue529](https://github.com/frankxai/arcanea-ai-app/issues/529#issuecomment-6091743199), [issue511](https://github.com/frankxai/arcanea-ai-app/issues/511#issuecomment-6091743452). Read-only second-family review of exact `abef36e4b9073546a3024d93ebfc08e786b471d0`: four mocked recovery defects reproduced, one additional SQL finalization race identified by source analysis. Keep #529/#511 open and PR525 draft. Next is durable webhook retry repair in an owned implementation lane, followed by transactional/request recovery and repaired-head review. No product writes, live payments, migration or deployment. See [session](sessions/2026-10-10.md).
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.

@@ -36,6 +36,13 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### Arcanea billing recovery: continue the existing P0 candidate
+
+```text
+Continue Arcanea issues #529 and #511 through existing PR525. Read AGENTS.md and current planning/control records; refresh reviewed Registry authority, exact candidate head, overlaps and writer leases. The 10 October Codex second-family review BLOCKs abef36e4b9073546a3024d93ebfc08e786b471d0: https://github.com/frankxai/arcanea-ai-app/pull/525#issuecomment-6091742927 . Preserve all earlier creator, auth, canon and design work and commercial decisions. Acquire a separate admitted implementation lane before writes. First repair failed/unprocessed webhook redelivery so500 retries actually resume fulfillment and200 follows durable success. Then bind a user-scoped stable request key and request fingerprint to durable operation/result state; reconcile uncertain reserve/settle/release acknowledgements; move all paid enhancement behind admission; lock and finalize each reservation exactly once. Use offline mock providers and an isolated PostgreSQL concurrency fixture with two outstanding reservations. Verify denied requests invoke no provider, retries never regenerate/double-charge, failed grants retry and refunds eventually complete. Obtain second-family review on the repaired exact head, CI and a READY preview. No merge, migration, paid calls, pricing change or production deployment from this pickup. Save bounded evidence to the existing product issues and agentic-ops-hub.
+```
+
+
 ### Starlight interfaces: connect source-backed creation and knowledge
 
 ```text
