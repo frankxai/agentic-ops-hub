@@ -1,8 +1,10 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Estate management: accept reviewed implementation and continue recovery
+## Estate management: blocked pending owner acceptance
 
-Continue the active end-to-end goal from private Ops213 at
+Resume the incomplete end-to-end goal after the pending acceptance decision.
+Activation is BLOCKED; unchanged reviews cannot provide authorization.
+Continue from private Ops213 at
 589e0d4a6f1b0b6b8111f71de7b0c25791d71aac, issues29/55 and today's latest
 session. Actual Antigravity static PASS covers the complete8-file/13-part source
 at e62dea4 plus the complete2-file delta to current head. All current source hashes
