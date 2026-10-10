@@ -204,50 +204,46 @@ Organization confirmation is pending for the existing Starlight Platform organiz
 hblyvrhhjqkqndgpjcep; Supabase requires quoting and confirming branch cost before
 creation. Follow up on the pending answer; do not infer infrastructure approval.
 
-## Arcanea adoption: finish author556 and the accepted creator journey
+## Arcanea adoption: finish the accepted creator journey
 
-Continue authorized work in thread01a123df-58c6-72f3-b86c-65083426cf65, issue529
-and world-first Studio program276. The tracker still reports paused; available
-status tools cannot resume it. Frank explicitly requested continuation, production
-and merges. Keep the original creator/CLI/SDK/ADK/desktop/mobile/memory/router/
-cloud/API/narrative/bundle/GTM goal open and preserve every other owner's front.
+Continue Frank's explicit production/merge request in thread01a123df-58c6-72f3-b86c-65083426cf65.
+Programme276 owns the complete world-first creator/platform/CLI/SDK/ADK/mobile/desktop/router/memory/cloud/API/
+narrative/GTM objective;529 is specifically credit debit/refund/BotID and511 commerce. Keep the broad goal open.
+Native get_goal remains paused; the available status tool cannot resume it. Do not invent goal completion.
 
-Voice555 is merged/live at8a47d6b7154164770d9fbd6daafe4a08fca38678. Exact79de
-Grok PASS zero remaining findings, native45/candidate fullCI/CodeQL/compiled six
-behavior rows pass; receiving-main CI38050586413 passes. READYproduction
-F4kk81cSsSd3jus8SaiV2Jjeq9Nu has the three aliases. Safe audio denials/canonical
-redirects pass across preserved receipts; quota429cases were retried after the
-window. Direct ElevenLabs, paid audio quality, durable quota/XSS and other model
-aliases remain outside certification. All previous failures/review attempts stay.
+Author556 is merged/live at9cdbbe3b73c198fdd56b83c56782d9e4e235dc9d, exact tree equal to reviewed a74d7fc0.
+Candidate and receiving CI/CodeQL passed. Production J6MdFrSM1tdJhfH6QBkDQL1UpGPf is READY on www/apex/app.
+Real authenticated isolated-preview save/reopen/retry/recovery/native Back/stale409 and second-account isolation
+passed desktop/mobile/reduced motion; exact Gemini response J1DKavj2Lfm2sOIPvubtgAc PASS0 blocking findings,
+all48 source hashes verified. Receipt6098756758. Both reviewed production repairs are applied/preserved under
+actual versions20261010140429 and20261010144038; production rollback-only ownership/invitation proofs retain0 rows.
+No password request is pending. Do not ask Frank again for test-account paths or impersonate a live user.
+Production has0 linked authors/creators and0 GitHub identity matches for the verified connector actor;
+preview login and production database-role tests are not a signed-in production browser walkthrough.
 
-Author product lane is C:/Users/frank/starlight/repos/.codex-worktrees/
-arcanea-gateway-admission-20261010, branchagent/codex/author-draft-recovery-20261010,
-clean af79dbbde4b6077694cfbc8fd228b3aba2c425b3, PR556 from8a47. Reuse Novel,
-existing manuscript/character tracker and publishing workflow. Exact save
-acknowledgements, owner/account isolation, rich reopening, browser restore,
-download recovery, latest-editor feedback/customer key admission and mobile
-controls are implemented; productiondrafttable was absent. CI38050697708 full
-lint/types/build/native10 and real PostgreSQL owner-policy/reapplication fixture
-pass. Ready-event browser/security gates and exact independent review pending.
-OwnedGrok82446 is running; consult private lifecycle/deadline before another
-workload. No parallel agents/local browser. Don't adopt old review for new source.
+The exclusively owned app worktree is C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010,
+now branch agent/codex/auth-response-privacy-20261010 ate04bb35502a9c1af10111952191992201dd9c5be, PR557.
+PR557 is merged at2ed6ae8b362689d21075aa983ecc3f438e36bcb6; its receiving tree matches reviewed e04 source.
+Ten real-source middleware tests pass. Candidate CI38063102852 and manual38063073320 full builds/CodeQL38063076912
+passed, including unique visible gallery destinations. Exact Gemini response j1fKaseqO9qR-8YPm9ObkAg passed, all31
+source hashes verified, receipt6099060224. Earlier975 manual Build failure remains preserved; no earlier review
+was adopted for this source. Production3qy6PjqamyUnfo7ZHvDhtdhhjvaN is READY at2ed6ae8b on www/apex/app.
+Four real production HTTP cases pass private/no-store and correct307 login destination without following redirects.
+Receiving CI38063668160 and CodeQL38063668125 passed. Recheck live main before a new source integration.
+Keep every failed receipt and scope difference. Stop session-owned processes at handoff; no new agents/local browser/build
+while PP browser-qa HOLD7429MB/8192required. Ordinary edits/small tests and hosted verification remain available.
 
-Follow up on the pending private test-account location. No browser is connected;
-production anonymous sign-in returns422disabled and no service-role key exists in
-Vercel. No account/email created or authentication policy changed. Actual auth/RLS,
-edit/save/reopen/recovery/export behavior and paid/editorial comparison remain
-required. Review migration first, verify current schema/ownership, then apply only
-the exact additive owner repair when its gates pass. No bulk historical replay,
-publication/canon promotion or money action. Reconcile findings and rerun changed
-gates before guarded normalmerge. Verify receivingmain/production after release.
+Then reconcile the accepted creator-entry505 against receiving main in an admitted isolated lane, preserving its
+foreign uncommitted request-deadline work. Its existing real auth/paid value proof is incomplete. Inspect MCP388's
+actual34-file head18b139831955, preserve source commits and current security fixes; old Build failure was gallery
+strict-mode duplication. Do not blindly merge old heads or reuse old package/runtime proof. Thirty draft PRs and
+canon/editorial502/372 remain separate gates. Do not close or archive source proposals for tidiness.
 
-Preserve505/500/512/494/513/AuthorOS3 and all other owners' work and human rights,
-premium and publication gates. Arcanea universe/readers/releases remain the
-priority; security and voice do not establish full creator acceptance. Serious
-comparison is direct Anthropic plus the author's saved document; no superiority
-or paid demand proved. Broader security/dependency backlog stays separate.
-Save to the hub's existing three files and owning276/529. Hub229 merges main
-without rewriting pushed history and preserves all other owners' sections/audit.
+Publication and New chapter UI are disabled; their APIs, Guardian review, rich export/rights and durable private
+chapter creation/navigation remain uncertified. Paid model/editorial comparison and demand are unproved.
+Billing525 source merged, but production billing schema/seller wiring/sandbox recovery/entitlements/credits remain open.
+Preserve the world-first allocation and rights/canon/human publication gates. No money movement or new vendor rail.
+Save final release evidence in this hub's three owned sections and existing product issues276/529/511 as appropriate.
 
 ## GenCreator: managed identity and an accepted creator journey
 
