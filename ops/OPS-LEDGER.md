@@ -1,5 +1,23 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: AGY source review and Antigravity harmony fix
+
+[SIS346](https://github.com/frankxai/Starlight-Intelligence-System/pull/346) merged
+to df806312 after35 adapter tests, typecheck, required CI and reconciled independent
+xAI PASS at20eddb98. Default MCP scaffold inert; explicit entry preserved without
+full-scope or unverified native activation claims. Actual isolated AGY review of
+first draft observed no effectful steps; advertised tools remain and its older
+PASS is not final-revision approval. All owned reviewers stopped/links removed.
+[SDK8.5.1 release347](https://github.com/frankxai/Starlight-Intelligence-System/pull/347)
+merged to9887aa8f after independent c2fe2fc3 PASS, required CI and main candidate
+38052541563 PASS. Earlier RAM HOLD resolved with bounded8674MB/quietCPU70%.
+Both8.5.1 npm publications verified against tested main bytes and latest tags
+at12:40:46Z.377 non-manifest files match across scopes. Production canary
+38052578072 PASS; live doctor retains creator-MCP0.1 blocked. Current AGY prompt in NEXT-PROMPTS drives real creator
+edit/recovery/export/receiving-owner acceptance and retains all broader goals.
+Creator issue4 and SIS144 stay open; no foreign ownership/unknown-run cleanup.
+
+
 ## 2026-10-10: GenCreator Supabase identity choice implemented
 
 Frank confirmed Supabase sessions with explicit Starlight linking. [PR196](https://github.com/frankxai/gencreator.ai/pull/196)
@@ -113,6 +131,39 @@ retained; 141 keeps unique Honor-edition rehearsal. Failures/review limits are i
 identity/provisioning, actual clients/memory, customer/editorial acceptance and
 commercial comparison remain open. Both cloud test machines and owned local
 workers stopped; the original full goal remains active.
+
+## 2026-10-10: Arcanea voice555 live; author556 recovery under review
+
+[Voice555](https://github.com/frankxai/arcanea-ai-app/pull/555) merged normally at
+8a47d6b7154164770d9fbd6daafe4a08fca38678 from reviewed79de1581be6c.
+Customer audio keys, safe errors, exact draft/text preservation, same-origin room
+transport, elapsed-time VAD and accessible persistent recovery are live.
+Independent Grok PASS has zero remaining critical/high/medium findings after the
+retry-alert Dismiss correction; formal source/file/hash receipt is on the PR.
+Candidate CI38049456450 and refreshed38050132165 passed, including24 voice/21chat
+native cases and six compiled desktop/mobile/reduced-motion behavior rows.
+CodeQL38049456393 analysis/findings passed. Receiving-main CI38050586413 passed.
+Production dpl_F4kk81cSsSd3jus8SaiV2Jjeq9Nu is READY at8a47, with all three aliases.
+Eight directwww denials and all24 canonical host cases are verified across
+receipts: initial308alias expectations were corrected; three cases then hit the
+existing20/min quota and passed after its window. No spoofed IP, live provider
+key, paid audio-quality claim or publication. Failed receipts remain preserved.
+
+[Author556](https://github.com/frankxai/arcanea-ai-app/pull/556) is open at
+af79dbbde4b6077694cfbc8fd228b3aba2c425b3, from receiving-main8a47, fifteen files.
+Exact revision saves, rich owner reopening, account-bound browser recovery,
+current editor feedback/customer Anthropic admission and mobile controls are
+implemented. Production lacked book_chapter_drafts despite its committed20260414
+migration. Additive/idempotent owner-only repair plus real disposablePostgreSQL
+ownership/reapplication cases passed CI38050697708, alongside native10,
+full lint/types/build. Ready-event browser/CodeQL and exact review remain pending.
+Owned native reviewer82446 runs under BOUNDED12422MB/6144required,45-minute limit;
+private lifecycle/packet bind exactaf79. No parallel agents or local browser.
+Production DDL remains unapplied. SupportedBrowser reports no connected instance;
+anonymous sign-in is disabled and no admin key configured. Frank chose an
+existing private test-account setup; its location is requested. Authenticated
+save/reopen and paid/editorial acceptance remain open under276/529. The native
+tracker still reports paused despite explicit continuation; do not call complete.
 
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
