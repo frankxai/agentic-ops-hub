@@ -155,38 +155,64 @@ identity/provisioning, actual clients/memory, customer/editorial acceptance and
 commercial comparison remain open. Both cloud test machines and owned local
 workers stopped; the original full goal remains active.
 
-## 2026-10-10: Arcanea voice555 live; author556 recovery under review
+## 2026-10-10: Arcanea author and session recovery live; adoption remains open
 
-[Voice555](https://github.com/frankxai/arcanea-ai-app/pull/555) merged normally at
-8a47d6b7154164770d9fbd6daafe4a08fca38678 from reviewed79de1581be6c.
-Customer audio keys, safe errors, exact draft/text preservation, same-origin room
-transport, elapsed-time VAD and accessible persistent recovery are live.
-Independent Grok PASS has zero remaining critical/high/medium findings after the
-retry-alert Dismiss correction; formal source/file/hash receipt is on the PR.
-Candidate CI38049456450 and refreshed38050132165 passed, including24 voice/21chat
-native cases and six compiled desktop/mobile/reduced-motion behavior rows.
-CodeQL38049456393 analysis/findings passed. Receiving-main CI38050586413 passed.
-Production dpl_F4kk81cSsSd3jus8SaiV2Jjeq9Nu is READY at8a47, with all three aliases.
-Eight directwww denials and all24 canonical host cases are verified across
-receipts: initial308alias expectations were corrected; three cases then hit the
-existing20/min quota and passed after its window. No spoofed IP, live provider
-key, paid audio-quality claim or publication. Failed receipts remain preserved.
+[Author556](https://github.com/frankxai/arcanea-ai-app/pull/556) merged normally at
+9cdbbe3b73c198fdd56b83c56782d9e4e235dc9d from reviewed a74d7fc04ea64680a729f87e90de32ee3fccbb10.
+The receiving tree is identical to the reviewed tree. Required candidate CI38060656191,
+CodeQL38060656284 and receiving CI38061356138/CodeQL38061356177 passed.
+Production dpl_J6MdFrSM1tdJhfH6QBkDQL1UpGPf is READY at9cdbbe3b with www/apex/app aliases.
+Immediate rich edits, serialized revision saves, owner reopening, account-bound backup recovery,
+interrupted-save retry/download/native Back, distinct chapter names and mobile controls are live.
+An inherited editor crash was repaired using the existing StarterKit codeBlock node.
 
-[Author556](https://github.com/frankxai/arcanea-ai-app/pull/556) is open at
-af79dbbde4b6077694cfbc8fd228b3aba2c425b3, from receiving-main8a47, fifteen files.
-Exact revision saves, rich owner reopening, account-bound browser recovery,
-current editor feedback/customer Anthropic admission and mobile controls are
-implemented. Production lacked book_chapter_drafts despite its committed20260414
-migration. Additive/idempotent owner-only repair plus real disposablePostgreSQL
-ownership/reapplication cases passed CI38050697708, alongside native10,
-full lint/types/build. Ready-event browser/CodeQL and exact review remain pending.
-Owned native reviewer82446 runs under BOUNDED12422MB/6144required,45-minute limit;
-private lifecycle/packet bind exactaf79. No parallel agents or local browser.
-Production DDL remains unapplied. SupportedBrowser reports no connected instance;
-anonymous sign-in is disabled and no admin key configured. Frank chose an
-existing private test-account setup; its location is requested. Authenticated
-save/reopen and paid/editorial acceptance remain open under276/529. The native
-tracker still reports paused despite explicit continuation; do not call complete.
+Manual38060829914 proved normal login and real Supabase saves on desktop/mobile/reduced motion,
+plus a second account's isolation. Latest-editor/model/customer-key binding uses a deterministic
+provider refusal fixture; paid creator-provider calls were0. Exact independent Gemini3.1Pro response
+J1DKavj2Lfm2sOIPvubtgAc returned PASS with0 critical/high/medium findings. All48 complete source hashes
+and final response hash matched; [formal receipt6098756758](https://github.com/frankxai/arcanea-ai-app/pull/556#issuecomment-6098756758).
+Two exclusively owned test accounts and editor memberships were confined to an isolated preview;
+no credentials were requested again or copied here. The temporary GitHub fixture secret was removed.
+
+Only the reviewed idempotent draft repair20261010140429 and correlated book-author invitation repair
+20261010144038 were applied to production. Their source SHA256 values are
+056bdb053dee91c8195e55f221e52627bd279015480cabc43bfc6887cb880a69 and
+f70fb79f6290ef252c84eee9e5d74a2aafc3b0744c7f61db443a25baf7c91bba respectively.
+Both actual applied versions are preserved in source. Real rollback-only production tests proved
+owner save/reopen/stale-write denial, cross-account denial and legitimate own-book invitations,
+with foreign-book/editor-escalation/expired/anonymous invitations denied and0 proof rows retained.
+No historical replay/history rewrite, production test account, manuscript/canon publication or billing action.
+Production still has5 account-less catalog bylines and0 account-bound authors/creators. Verified GitHub
+connector actor has0 matching Supabase GitHub identity records; signed-in production author onboarding remains open.
+
+[Follow-up557](https://github.com/frankxai/arcanea-ai-app/pull/557) merged normally15:27:12UTC from
+e04bb35502a9c1af10111952191992201dd9c5be to2ed6ae8b362689d21075aa983ecc3f438e36bcb6; their trees match. Live anonymous401 refusals inherited a public cache header;
+actual compiled middleware tests also reproduced dropped refresh-cookie chunks and discarded redirect cookies.
+Private/no-store and accumulated-cookie preservation are implemented; ten focused tests pass.
+Candidate CI38063102852 and manual38063073320 full builds, CodeQL38063076912 and exact Gemini response
+j1fKaseqO9qR-8YPm9ObkAg passed; all31 source hashes match and receipt6099060224 is onPR557.
+The inherited gallery test now requires one visible destination, preserving its failed earlier receipt.
+Production dpl_3qy6PjqamyUnfo7ZHvDhtdhhjvaN is READY at2ed6ae8b with www/apex/app aliases.
+Four actual production HTTP cases passed: private/no-store GET/POST401, author-page307 to login without
+following it, and keyless companion401. Receiving CI38063668160 and CodeQL38063668125 passed; the deployed receiving revision is verified.
+Only Publish/New chapter UI controls are disabled; their inherited endpoints and Guardian review remain uncertified.
+Durable chapter creation/navigation, paid/editorial usefulness, public export/rights and the full adoption goal remain open.
+
+[Voice555](https://github.com/frankxai/arcanea-ai-app/pull/555) remains included from8a47:
+customer audio keys, safe errors, cancellation/draft preservation, same-origin room transport,
+VAD and44px persistent recovery. Candidate/receiving CI and actual independent Grok review passed;
+24 canonical-host denial cases passed across retained receipts with ordinary quota-window retries.
+Direct ElevenLabs and paid audio quality remain uncertified. Billing525 is merged; production billing DDL,
+seller wiring, sandbox purchase/redelivery, credits/BotID and entitlement acceptance remain open.
+Programme276 owns the broad world-first adoption goal;529 owns credit debit/refund/BotID and511 commerce.
+The native goal tracker reports paused despite Frank's explicit continuation; its tools cannot resume it.
+
+Fresh15:07UTC queue:40 open app PRs,30 drafts and37 mergeability results temporarily unknown after main changed.
+The14:37 snapshot had22 conflicting PRs; do not carry that count forward as current computed mergeability.
+Creator-entry505 has preserved foreign uncommitted work. MCP388 has34 source files at18b139831955,
+not its stale nine-file description; old failed Build36796888537 was a duplicate gallery locator,
+not proof of an MCP runtime failure. Full current-base package review/tests remain required.
+Canon/editorial502/372 and other occupied/publication/financial fronts are preserved.
 
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
