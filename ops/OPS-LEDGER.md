@@ -4,7 +4,7 @@
 
 ## 2026-10-10: Duplicate Git ref preservation verified (Codex)
 
-Eight checkouts/four duplicate-source groups have private full-ref bundles and strict isolated-object-store recovery checks. Source metadata was unchanged. Four dirty checkouts still require worktree/index preservation; LFS, submodules and offsite recovery remain unproved. Missing configured storage capability was diagnosed using an inspected private historical NoWrite copy; its owner repair is open. [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains reviewed589e0d4; management/protection and organization decisions pending. Existing issues29/55 retain the remaining work. See today's session.
+Eight checkouts/four duplicate-source groups have private full-ref bundles and strict isolated-object-store recovery checks. Source metadata was unchanged. All four dirty checkouts now also have private snapshots of46 listed files, indexes and staged/unstaged binary patches, verified by CRC/byte checks. Ignored files, LFS, submodules, offsite recovery and applied restores remain unproved. Missing configured storage capability was diagnosed using an inspected private historical NoWrite copy; its owner repair is open. [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains reviewed589e0d4; management/protection and organization decisions pending. Existing issues29/55 retain the remaining work. See today's session.
 
 ## 2026-10-10: Estate exact-head provider PASS; activation pending (Codex)
 

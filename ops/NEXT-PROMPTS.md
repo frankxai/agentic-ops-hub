@@ -21,9 +21,10 @@ and publication/data authority; proposed records72, reviewed main54. Ratificatio
 and downstream refresh require accepted main SHA. Preserve archived sources,
 agent-branch production, missing Git provenance, public-code/private-instance
 boundaries and all existing owners. Eight duplicate-source checkouts now have private full-ref bundles with strict
-isolated-object-store recovery checks. Preserve the four dirty worktrees and index
-staging separately before cleanup; LFS, submodules and offsite recovery remain
-unproved. Missing/placeholder source guides and the configured storage tool/skill
+isolated-object-store recovery checks. All four dirty checkouts also have private snapshots
+of46 listed files, indexes and staged/unstaged binary patches, verified by CRC/byte
+checks. Prove an applied restore and review ignored/LFS/submodule/offsite coverage
+before cleanup. Missing/placeholder source guides and the configured storage tool/skill
 require owner repair. Historical NoWrite diagnostics are not installed policy.
 Continue available safe independent work while awaiting decisions. No transfer,
 privacy/spend change, cleanup or production promotion is authorized by test results.
