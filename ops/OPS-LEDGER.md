@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: malformed npm archives rejected in both release verifiers (Codex)
+
+SIS draft342 now44346d9f; creator draft6 now3e88447. Regression fixtures first
+failed on the previous parsers, then passed after rejecting incomplete terminators,
+hidden trailing members, missing padding, malformed octal and ambiguous paths.
+SIS13 and creator10 release/audit tests pass; three SIS and ten creator existing
+actual archives remain accepted. Mandatory SIS135 tests and creator Gitleaks pass.
+Hosted SIS38027724509 completed SUCCESS across all six jobs; creator38027820273
+completed SUCCESS including Linux/Windows fresh artifact consumers. Earlier
+clean receipts and review packets retain their earlier source bindings.
+Local build admission is HOLD7222MB/8192required; no new local build, consumer or
+reviewer launched. Independent review, account bootstrap/final versions and release
+remain open. Both production environment configurations remain saved and verified.
+Arcanea primary is occupied; no source repair or extra worktree was attempted.
+
 ## 2026-10-10: creator installation repaired; hosted consumers and release environments verified (Codex)
 
 [Creator draft6](https://github.com/frankxai/starlight-creator-mcp/pull/6),
