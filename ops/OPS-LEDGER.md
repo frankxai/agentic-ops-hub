@@ -1,5 +1,17 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: hook fixes merged; conditional merge admission is live
+
+Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
+`13ebcf0` returned PASS. All 16 reviewed file hashes match main. Config PR110 merged
+normally at `12cd533e` after live no-receipt denial, real receipt acceptance,
+revocation denial and restoration acceptance. Required CI plus the trusted
+exact-head receipt check now applies to administrators; routine notes merge with
+zero blanket approvals. Fifty-one targeted tests and a fresh 13-hook native turn
+pass. FrankX's two conservative shell-wrapper findings, Desktop/untriggered events,
+PR80 and estate conformance remain open. See today's latest session entry.
+
+
 ## 2026-10-10: hook follow-up passes; estate conformance remains open
 
 Fresh Arcanea native inventory: 28 trusted hooks, 26 enabled, no errors/warnings. Doctor and all 38 safety/repair tests pass in the observed config worktree; the owner subsequently began further edits. Published config109 remains `1bf683a` and requires eligible approval. Refreshed census confirms 85 exact Git roots without a root guide among 232 Git-marked folders. Git hook paths resolve to three directories, with SIS/Orchestrator exceptions to shared hooks. Parent guidance, nested scope and runtime enforcement remain separate. Preserve config78/101/98 and PR80 owners; see the [session](sessions/2026-10-10.md).
