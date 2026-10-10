@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: stray home repos drawer removed (Grok)
+
+`C:\Users\frank\repos` was renamed away and the empty folder removed. Unique product trees now sit under `C:\Users\frank\starlight\repos`. `gmail-os` is in `iis-private`. Suno skill cards and loose zips are in `starlight\scratch`. The unpushed Suno checkout is `awesome-suno-agent-skills-unpushed-20260701` at `fbd820e`, not the canonical Hermes checkout. No remote was created and no moved tree was pushed. Home twins, third-party clones, and worktrees stayed. See [session](sessions/2026-10-10.md). Comment on [hub #90](https://github.com/frankxai/agentic-ops-hub/issues/90).
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.
