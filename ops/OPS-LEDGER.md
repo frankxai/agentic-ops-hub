@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: SIS milestone verification and fresh core import coverage (Codex)
+
+All four requested milestones are implemented on SIS draft342: dependency-free
+core, scoped AI SDK middleware, official standalone MCP suite, pnpm/Turbo/
+Changesets and gated OIDC release. Latest pushed source5dd614f5 strengthens the
+portability test to cold-import without process, Buffer or global before exercising
+sanitization, scoped recall and cancellation. Seven tests pass against the verified
+prior hosted tarball; existing local dist was stale. Hosted38031947510 completed
+SUCCESS all six jobs. Current archive/consumer/benchmark source binding validated;
+current55-file independent review packet prepared/not reviewed, Gitleaks clear.
+Exact-revision independent review, browser/edge provider deployments, npm trust
+bootstrap and final main-source publication remain open. Prior green six-job
+run38031220942 retains its a3651c55 boundary. Build preflight HOLD3832MB/8192;
+no rebuild, reviewer or process interference. See today's session for digests.
+
 ## 2026-10-10: installed adapter comparison against direct AI SDK middleware (Codex)
 
 SIS draft342 is clean/pushed at a3651c5590288199a2aa3fb63cad49e181903cbe.
