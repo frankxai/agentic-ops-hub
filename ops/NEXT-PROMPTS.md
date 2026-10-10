@@ -107,7 +107,7 @@ Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 
 ## Hooks and instruction architecture: finish the remaining owned rollout
 
-Config109/110 merged; read today's latest session and issues78/101/98. Preserve
+Config109/110/111 merged; read today's latest session and issues78/101/98. Preserve
 the tested conditional merge policy: required CI and exact-head independent review
 for sensitive changes, direct admission only for the narrow routine notes class.
 Keep product-release approvals separate. Reuse the actual AGY review receipts;
