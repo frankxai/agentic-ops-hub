@@ -1,5 +1,30 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: native Grok review authentication discovered (Codex)
+
+Grok Build1.0.50 native models command exit0 reports logged in with grok.com,
+defaultgrok-4.7 and five models. Native review credentials are accessible through
+that CLI; no model request or review verdict. Current inspect discovers25hooks,
+19MCPservers,19plugins,1006skills,87agents. Child-only vendor/subagent/managed-MCP/
+memory flags leave hook/MCP/plugin discovery counts unchanged. These are discovery
+counts, not execution or isolation guarantees. Native headless/hooks docs confirm
+--tools retains MCP meta-tools and SessionStart hooks can execute before tools.
+Do not launch naive empty-tools reviewer with inherited lifecycle services.
+
+Redacted evidencecreator artifacts/review-d4eb905/grok-discovery.json. No raw auth
+or inspected config stored, credential copy, login/logout, global config mutation,
+extra services or heavy work. Supplied canonical capability-loading/progressive-
+skill guide paths absent; no delegated-auth workaround created. Official Zen docs
+require login/API-key workflow; free model labels are not proof of anonymous access.
+Creator sourced4eb905 and SIS07b43079 unchanged/clean; prior hosted/package checks
+retain exact scopes. Product issue4 checkpoint saved. Hub guide read, verified
+root/origin/branch/explicitfiles guard/check and owned lanes before writes.
+
+Next: obtain documented isolated authenticated native-provider review of current
+76-file creator and61-file SIS packets, or Claude after11October06:00Amsterdam
+quota reset. Reconcile actual findings before protected main npm bootstrap/trust
+release. All estate/platform/customer/paid-value objectives remain unfinished.
+
 ## 2026-10-10: creator filesystem boundary repaired (Codex)
 
 Current creator draft6 sourced4eb90502fdeee0ccd9c3c431cb030324b39ba09 pushed.

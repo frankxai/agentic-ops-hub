@@ -2,6 +2,20 @@
 
 ## Current npm ecosystem prompt
 
+Grok native1.0.50 models confirms authenticated grok.com/defaultgrok-4.7. Review
+still needs proven isolation:25hooks,19MCPservers,19plugins discovered even with
+vendor/subagent/managed-MCP/memory flags disabled; empty --tools keeps MCP tools.
+Use documented isolated authenticated route, or Claude after11October06:00Amsterdam
+quota reset. Do not copy credentials, mutate global settings or start inherited
+services to obtain a verdict. Review exact creator6d4eb905 and SIS34207b43079;
+current packets prepared, hosted/package checks passed at their recorded scopes.
+Complete protected main-source/npm bootstrap/trust and broader platform/customer/
+paid-value acceptance. Source lanes and other estate work remain preserved.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
 Creator38038645613 at d4eb905 completed SUCCESS typecheck/unit and Linux/Windows
 archive consumers; draft e2e skipped. Currentpacketartifacts/review-d4eb905 prepared/not reviewed. Prior5ec/a172 packets
 historical. Local28pass/1POSIX skipped,12release pass; publisher now requires actual
