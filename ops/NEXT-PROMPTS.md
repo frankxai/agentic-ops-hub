@@ -2,6 +2,17 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Creator draft6 is now clean/pushed at26b9646c187985e63907f846949dd6fdb46f260f.
+Publisher isolates cwd/project/user/global npmrc, allowlists provenance/OIDC env,
+drops tokens/provider keys/Node preloads and checks exact manual main workflow.
+Removed the workflow's duplicate user/global config path; local npm rejects it.
+Consumer runs invalidate previous success before manifest parsing or installation.
+Local12 release tests pass, including actual malformed-manifest executable denial.
+Hosted38032449883 pending at this record; inspect final Linux/Windows artifact
+consumers before reporting fresh runtime acceptance. Review71-file source packet
+artifacts/review-26b9646 is prepared/not reviewed, Gitleaks clear. Earlier creator
+3e88447/1ce433d evidence is historical. Release/account/provider/customer gates open.
+
 SIS mission checkpoint: all four requested modular milestones are implemented in
 draft342. Latest source is 5dd614f57d8f1e6f662a2c94639949e89d500c3e: strengthened
 core portability coverage cold-imports a fresh module graph without process,

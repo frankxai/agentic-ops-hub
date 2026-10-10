@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: creator publisher isolation and failed-consumer recovery (Codex)
+
+Creator draft6 source26b9646c187985e63907f846949dd6fdb46f260f is clean/pushed.
+Fixed inherited npm project config/environment and duplicate user/global rc path;
+publisher now uses private cwd, distinct empty rc files, explicit public registry,
+allowlisted provenance/OIDC metadata and exact manual main workflow. Consumer
+verification clears stale success before any manifest/install failure. Local12
+release tests pass with offline config reproduction and an executable failed rerun.
+Hosted38032449883 completed SUCCESS typecheck/unit and Linux/Windows archive
+consumers. Locally validated Linux ten archives and nine consumer checks against
+mergeef8a81a4, manifest1c31845553d69632b4d11ab6663d429c66f1617640f6040c75a2ec5bb38df55a.
+Separate draft e2e skipped. Current71-file review packet prepared/not reviewed and
+Gitleaks clear. No local build/install/provider launch or registry publication.
+Independent review/account bootstrap/platform/live-provider/paid acceptance open.
+
 ## 2026-10-10: SIS milestone verification and fresh core import coverage (Codex)
 
 All four requested milestones are implemented on SIS draft342: dependency-free
