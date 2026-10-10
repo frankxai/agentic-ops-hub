@@ -1,5 +1,12 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Estate delivery audit and handover conflict recovery
+
+Serial reconciliation found653 open PRs across138 repositories and944 open issues:461 drafts,123 with failed checks,96 conflicting,116 without observed checks. The private full matrix gives every inspected PR an owner action;255 lane records and1908 local branches preserve dirty/unpublished candidates. Counts describe an observation interval and overlap. No blanket review, merge, dispatch or completion is inferred. See [today's session](sessions/2026-10-10.md).
+
+Lead order: hook safety/config109 exact1bf683ac and eligible independent approval; Arcanea525 owned billing recovery with production gates separate; terminal327/fleet328/AIS10 with AIS's open path/routing findings and one real creator proof. PP pauses new swarms. Queue and instance labels need task/lease/head/result bindings. Preserved the changing objective ledger and all peers. Recovered owned [hub216](https://github.com/frankxai/agentic-ops-hub/pull/216) against merged hook213 with both records retained. A30s Grok text health fixture produced no answer and was stopped; no reviewer remains. Keep SIS151/143 and other fronts open.
+
+
 ## 2026-10-10: Fleet collector hardened and draft opened (Codex continuation)
 
 [SIS328](https://github.com/frankxai/Starlight-Intelligence-System/pull/328) is draft at `a2e3b53a3d13d8cdaf4d3a162a762aea4987688e`; it supersedes the earlier local-only status. Reproduced and fixed quota input/output collision; reads enforce4MiB+1 before parsing; failed process observation is unknown. Twenty focused tests, actual Windows collection, staged whitespace and gitleaks across3 commits pass. No release or update was initiated by this session.
@@ -21,6 +28,18 @@ Routing stays with the accepted routing owner; SIS supplies evidence, Foundry co
 Independent exact-revision provider review remains pending. Machine admission paused new swarms; no independent verdict for this code is claimed. Installed-version/release comparison, native inheritance/config adapters, executable capability probes and routing/UI/cloud integration remain open. Existing [SIS151](https://github.com/frankxai/Starlight-Intelligence-System/issues/151) and parent143 stay open. Operator-private evidence is under `.starlight/reports/harness-fleet/`; conversation export remains under `.starlight/reports/conversation-20261010-01a12297/`. No owned server or watcher remains.
 
 Next: fresh admission and independent exact-source review, preserve all owners, then prove one real maker/checker workflow using current account/tool receipts. Do not call the collector an autonomous meta-harness or infer tested support from declarations.
+## 2026-10-10: hook repairs and native runtime verified; config merge requires review
+
+[Config109](https://github.com/frankxai/starlight-agent-config/pull/109) is ready
+at `1bf683a`. It integrates cloud PR103 with canonical repo discovery, parse-error
+denial, Windows override checks and CI coverage. 28 doctor/checker and ten repair
+tests pass. Removed 12 further Claude security-plugin CMD wrappers with backups;
+bounded advisory launch budgets and reconciled Claude's Registry pointer.
+One ephemeral native turn ran git status successfully: all 13 triggered hooks
+completed. Fresh native CLI proof does not establish Desktop UI reload or every
+event. Normal config merge was refused for the required eligible approval;
+provider review remains unavailable. Preserve issues78/101/98 and PR80 ownership.
+See [session](sessions/2026-10-10.md) for source, receipts and remaining coverage.
 
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 

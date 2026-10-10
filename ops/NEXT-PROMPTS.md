@@ -1,9 +1,28 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Estate delivery: lead the existing fronts through verified integration
+
+Read the10October session, SIS151/143 and C:/Users/frank/.starlight/reports/harness-fleet/estate-delivery-20261010/README.md plus pr-action-matrix.csv. Audit coverage653PRs/138repos/944issues is an interval, not final outcomes;255lane records/1908branches contain preserved recovery candidates. Refresh exact heads/owners before writes. Lead serially: hook109 independent review plus eligible approval; Arcanea525 existing billing recovery owner, with migrations/payment activation separately gated; terminal327/fleet328 and AIS10's P1 path escape/P2 wrong-script findings, then one real creator proof. Preserve all other goals. PP pauses new swarms; zero task-ID bindings and floor-only Queen dispatch-open do not authorize launches. Repair existing card envelopes through the Queen owner's validator rather than duplicating queues. Fresh30s Grok text health emitted no stream/answer, was stopped and supplies no review; require a demonstrated completion route before another source packet. Own one leased writer lane, keep exact source/recovery/spend receipts, independently review and use normal integration gates. Read back main, CI and actual user outcome. Save both this hub and the existing product issue; never archive unfinished work for tidiness.
+
+
 ## Harness fleet: validate reviewer route, then integrate evidence
 
 Read SIS328 draft at a2e3b53a and SIS151 plus this hub session2026-10-10. The collector now has20passing tests, real Windows collection and clean gitleaks; quota/output collision and read bounds are fixed. All3 independent Grok attempts failed to produce an accepted review: first tool boundary mismatch, then240s grok-4.7 timeout and120s grok-4.7-build-fast timeout with verified empty tools/MCP. No owned reviewer remains; do not poll nonexistent workers or treat runtime init as successful capability proof. Refresh admission/quota and diagnose a small native text-completion fixture before another full source review. Obtain independent exact-head review before making328 ready. AIS route code belongs to its existing Claude PR10 atd8bd2e3e and is absent from cached main788a0c1; preserve that lane and reconcile the accepted integration API with its owner. AIS supplies cited capability resolution, Queen/Observatory supplies execution/interface. Then prove one admitted maker/checker workflow with immutable base, lease, privacy/spend bounds and independent acceptance. Reuse SIS six-vault memory, work/loop graphs, Foundry contracts and one durable orchestrator. Keep151/143 and broader cloud/upgrade goals open. Save both hub and product issue.
 
+## Hooks and instruction architecture: approve the tested integration and complete rollout
+
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
+1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
+the final source bindings. Obtain exact-head independent provider review and
+one eligible GitHub approval; normal merge was refused, and older review attempts
+are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
+status turn with 13 completed hooks pass. Preserve exact operator backups and
+both startup disables. Complete Desktop UI reload and write/design event proof,
+then adopt the merged source without overwriting occupied primary lanes. Check
+installed versions before re-projection. Continue PR80's guarded shared-guide
+rollout and issue98's authority reconciliation with their current owners. Validate
+exact roots before classifying missing guides; preserve SOUL and graph brakes,
+write-back and distinct-verifier contracts. Save existing issues and hub receipts.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 
