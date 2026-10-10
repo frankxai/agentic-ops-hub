@@ -1,5 +1,35 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: core denies coerced retention deadlines (Codex)
+
+SIS draft342 source511c00757961ef7e3442644522820b2a211bbfb4 pushed clean.
+Reproduced against the verified prior hosted core0.2.0 archive: retention_until
+number2099 and array['2099-01-01'] both enter projected context after Date.parse
+coercion. Shared core now rejects present non-string deadlines before parsing,
+protecting all providers and AI SDK/MCP paths. Future valid strings and absent
+optional expiry remain accepted; delete_by still requires a deadline.
+New regression exercises direct projection and actual recall with malformed,
+expired and missing-delete_by rows among valid neighbors. Core README documents
+this behavior. Syntax/diff checks and all eight rebuilt core tests pass.
+First Python output capture hit a Windows cp1252 encoding error after test execution;
+reran native test command and verified8/8PASS, no inference from truncated output.
+Build PP BOUNDED9958MB/8192,CPU20%,oneworkload,45minlimit; compilation/test commands
+bounded180seconds and terminated. No new agents or other tasks archived/killed.
+Disk107182329856bytesfree; configured storage sensor script remains missing.
+
+Hosted38035032307 is live/queued at checkpoint; Node18 core and Ubuntu22/24
+jobs already passed. Remaining Windows/artifact jobs must finish before current
+archive claims. Prior38033646827/d3d archive results stay historical. Current
+61-file immutable git-show packetartifacts/npm-review/511c0075 is prepared/not
+reviewed; Gitleaks scanned332009bytes and found no leaks. Current source hashes
+are in source.json; deleted npm lock tracked separately. Issue329 comment6095198643
+saved. Root guides/clean owned lane/explicit-file checks verified, no foreign edits.
+Creator26b9646 unchanged. Independent review routes remain Claudequota and Gemini
+UNSUPPORTED_CLIENT; no repeated blocked request. Publication/trust/bootstrap,
+source ownership for other package repairs, live-provider/platform/customer
+acceptance and full goal01a1235e scope remain open. No release/merge/tokenfallback.
+
+
 ## 2026-10-10: isolated Gemini review route verified, account rejects client (Codex)
 
 SIS source remains d3d66f7eae731cfd19b1256a1de0796a66847e47 on draft342;

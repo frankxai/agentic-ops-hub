@@ -2,6 +2,17 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Latest source: SIS511c00757961ef7e3442644522820b2a211bbfb4 rejects present
+non-string provider retention_until before Date.parse. Exact prior hosted core
+reproduction admitted numeric2099 and array['2099-01-01']; common projection now
+denies both. Eight rebuilt core tests pass. Hosted38035032307 confirmed live:
+Node18/Ubuntu22/24 passed, remaining jobs queued. Poll that same run and verify
+its archives/consumer/benchmark source binding before declaring hosted completion.
+Current61-file packetartifacts/npm-review/511c0075 is prepared/not reviewed and
+Gitleaks clear; d3d packet/archives are historical for this runtime. Issue329
+comment6095198643 records the fix. Preserve all review/account/platform/value gates.
+
+
 Current review-route checkpoint: Gemini CLI0.60.0 was safely isolated using its
 supported workspace settings and explicit all-tools-denied admin policy, then
 failed authentication in6.04seconds with UNSUPPORTED_CLIENT. No verdict. Do not
