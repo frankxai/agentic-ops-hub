@@ -1,4 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+## 2026-10-10: Arcanea CLI/SDK/Vercel/Cloudflare E2E audit (Codex)
+
+Arcanea production READY at 088eba0 uses Next 16.3.8/Node 24/pnpm 11/AI SDK 6; HTTP 200. Author preview ba6ce10 predates new editor; generic alias 404. api.arcanea.ai does not resolve locally. Existing world SDK 9 tests pass; multiple arcanea command owners and gateway dispatch remain unresolved. Deployed public chat gateway trusts caller tier and in-memory quotas with server-key fallback: harden before funded inference. SDK 7 and Vercel WebSockets/Queues beta change the Cloudflare necessity assessment. Prefer existing Vercel path for first creator acceptance; evaluate Cloudflare DO/R2 against concrete needs. No configuration/deployment/paid call or independent acceptance. See [session](sessions/2026-10-10.md); hub PR215/ecosystem6.
+
 
 ## 2026-10-10: Arcanea sovereign implementation preserved locally; release gates open (Codex)
 
