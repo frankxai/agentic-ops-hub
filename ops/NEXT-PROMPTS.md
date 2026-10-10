@@ -181,43 +181,55 @@ Connect existing CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud and provider in
 ## Arcanea adoption: finish the accepted creator journey
 
 Continue Frank's explicit production/merge request in thread01a123df-58c6-72f3-b86c-65083426cf65.
-Programme276 owns the complete world-first creator/platform/CLI/SDK/ADK/mobile/desktop/router/memory/cloud/API/
-narrative/GTM objective;529 is specifically credit debit/refund/BotID and511 commerce. Keep the broad goal open.
-Native get_goal remains paused; the available status tool cannot resume it. Do not invent goal completion.
+Programme276 owns the full world-first creator/platform/CLI/SDK/ADK/mobile/desktop/router/memory/
+cloud/API/narrative/GTM goal;529 is credit debit/refund/BotID and511 commerce. Keep276 open.
+Native get_goal remains paused; do not recreate it or invent completion. No password or test-account
+path question is pending. Author556 real authenticated preview save/reopen and production SQL role
+proofs already passed. Those prove preview/role recovery, not signed-in production author onboarding.
+Do not impersonate a live user or assign the account-less catalog bylines to a guessed account.
 
-Author556 is merged/live at9cdbbe3b73c198fdd56b83c56782d9e4e235dc9d, exact tree equal to reviewed a74d7fc0.
-Candidate and receiving CI/CodeQL passed. Production J6MdFrSM1tdJhfH6QBkDQL1UpGPf is READY on www/apex/app.
-Real authenticated isolated-preview save/reopen/retry/recovery/native Back/stale409 and second-account isolation
-passed desktop/mobile/reduced motion; exact Gemini response J1DKavj2Lfm2sOIPvubtgAc PASS0 blocking findings,
-all48 source hashes verified. Receipt6098756758. Both reviewed production repairs are applied/preserved under
-actual versions20261010140429 and20261010144038; production rollback-only ownership/invitation proofs retain0 rows.
-No password request is pending. Do not ask Frank again for test-account paths or impersonate a live user.
-Production has0 linked authors/creators and0 GitHub identity matches for the verified connector actor;
-preview login and production database-role tests are not a signed-in production browser walkthrough.
+Voice555, author556, privacy557 and MCP558 are merged/live. Current receiving main is
+123f84ea2d05586f780b89edca68533d7b8d9786; production3UzJANwwqdjYboXpwkXpecEtYjEj is READY
+with www/apex/app aliases. Receiving CI38070470942 and CodeQL38070470935 passed; four actual
+stable-domain author privacy cases passed with zero paid calls. MCP reviewed0646 exact tree and all93
+source hashes match, Gemini3.1Pro response3mnKat2PO9C739IP0oOywAc PASS0 blocking findings,
+receipt6099804853. Full candidate/manual CI and real fresh packed-consumer save/restart/reopen passed.
+Package1.0.0 remains unpublished; registry0.7.0 is broken. Existing npm identity works but write
+access is unverified. A distribution question is pending: code-only/separately licensed canon
+data or full existing-MIT archive. Do not publish or assume silence authorizes a license change. Preserve exact archive
+SHA25694e0c0e3f5b6ebd3175956ee1a64e796ec997e7c000c9d2a60858683ee39b0ed and every failed receipt.
+Template/placeholder tools and unauthed single-local-user HTTP are not paid AI/swarm or hosted auth.
 
-The exclusively owned app worktree is C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010,
-now branch agent/codex/auth-response-privacy-20261010 ate04bb35502a9c1af10111952191992201dd9c5be, PR557.
-PR557 is merged at2ed6ae8b362689d21075aa983ecc3f438e36bcb6; its receiving tree matches reviewed e04 source.
-Ten real-source middleware tests pass. Candidate CI38063102852 and manual38063073320 full builds/CodeQL38063076912
-passed, including unique visible gallery destinations. Exact Gemini response j1fKaseqO9qR-8YPm9ObkAg passed, all31
-source hashes verified, receipt6099060224. Earlier975 manual Build failure remains preserved; no earlier review
-was adopted for this source. Production3qy6PjqamyUnfo7ZHvDhtdhhjvaN is READY at2ed6ae8b on www/apex/app.
-Four real production HTTP cases pass private/no-store and correct307 login destination without following redirects.
-Receiving CI38063668160 and CodeQL38063668125 passed. Recheck live main before a new source integration.
-Keep every failed receipt and scope difference. Stop session-owned processes at handoff; no new agents/local browser/build
-while PP browser-qa HOLD7429MB/8192required. Ordinary edits/small tests and hosted verification remain available.
+Owned app worktree C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010
+now has branch agent/codex/review-handover-20261010, PR559, with four owned review-workflow files.
+PR559 is merged/live123f84ea from revieweded5b330d41e0d1c6b112f6d0123466690a4d200c.
+Exact Gemini responseum7KatmzBN_rqtsP1sasoQs PASS0 blocking findings, all six hashes verified,
+receipt6100000755; candidate/manual/receiving CI and CodeQL passed. Actual offline admission
+cases pass. Use the existing job with review_hub_release=true and full head/base hashes to review
+this hub's exact full commit and first parent, fixed repository and three ops files. Do not reuse hub238's
+review for the new record. Hub lane C:/Users/frank/starlight/repos/.codex-worktrees/hub-arcanea-adoption-20261010,
+branch agent/codex/arcanea-mcp-release-20261010 from2f7585d16ad7b95ed9ca60e6ceb0638817c7d07b after reconciling the other owner's new record; preserve all other owners' sections.
 
-Then reconcile the accepted creator-entry505 against receiving main in an admitted isolated lane, preserving its
-foreign uncommitted request-deadline work. Its existing real auth/paid value proof is incomplete. Inspect MCP388's
-actual34-file head18b139831955, preserve source commits and current security fixes; old Build failure was gallery
-strict-mode duplication. Do not blindly merge old heads or reuse old package/runtime proof. Thirty draft PRs and
-canon/editorial502/372 remain separate gates. Do not close or archive source proposals for tidiness.
+The consequential next product work is the accepted world creation/save/return journey, with real
+auth and paid/BYOK usefulness proof. The current generation route only accepts platform keys, none
+are configured in production, and the form sends no customer key. Anonymous denial is401 private/no-store;
+no provider was called. Saving already writes private owner-derived IDs with recoverable partial-child writes.
+Preserve foreign creator-entry505 uncommitted deadline work.
+Read and reconcile source in a separately owned admitted lane; do not reset, stage or amend that checkout.
+MCP553 sourcefd25711441251e608fedabf0842ac80ed8c1e251 has twelve files, real audience validation and
+closed gateway mode. Its stale body/old CI is not proof of live auth. Resource-bound OAuth issuance,
+consent, client registration and successful owned-world retrieval still require real verification.
+Supabase official current docs support custom audience hooks; no preview or production hook was changed.
 
-Publication and New chapter UI are disabled; their APIs, Guardian review, rich export/rights and durable private
-chapter creation/navigation remain uncertified. Paid model/editorial comparison and demand are unproved.
-Billing525 source merged, but production billing schema/seller wiring/sandbox recovery/entitlements/credits remain open.
-Preserve the world-first allocation and rights/canon/human publication gates. No money movement or new vendor rail.
-Save final release evidence in this hub's three owned sections and existing product issues276/529/511 as appropriate.
+Publish/New chapter UI remain disabled. Durable private chapter creation/navigation, Guardian review,
+rich export/rights and paid/editorial comparison remain incomplete. Billing525 source merged; production
+billing schema, seller wiring, sandbox purchase/redelivery, credits/BotID and entitlements remain open.
+Canon/editorial502/372 and other proposals keep their distinct ownership/publication gates.
+Do not blanket merge, close or archive unfinished work. Maintain world-first allocation and honest GTM.
+Native memory below4GiB blocks heavy clients/builds/browsers and extra agents; hosted CI remains available.
+Restore shared chromium1217 only after fresh PP/storage admission with cache GC disabled; preserve all
+other caches and processes. No native session-owned server or reviewer is active. Save completed evidence in
+this hub and existing programme/financial issues as appropriate; do not archive this unfinished objective.
 
 ## GenCreator prior checkpoint: managed identity and an accepted creator journey
 
