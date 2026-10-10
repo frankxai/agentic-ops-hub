@@ -13,6 +13,66 @@ Read the10October session, SIS151/143 and C:/Users/frank/.starlight/reports/harn
 ## Harness fleet: validate reviewer route, then integrate evidence
 
 Read SIS328 draft at a2e3b53a and SIS151 plus this hub session2026-10-10. The collector now has20passing tests, real Windows collection and clean gitleaks; quota/output collision and read bounds are fixed. All3 independent Grok attempts failed to produce an accepted review: first tool boundary mismatch, then240s grok-4.7 timeout and120s grok-4.7-build-fast timeout with verified empty tools/MCP. No owned reviewer remains; do not poll nonexistent workers or treat runtime init as successful capability proof. Refresh admission/quota and diagnose a small native text-completion fixture before another full source review. Obtain independent exact-head review before making328 ready. AIS route code belongs to its existing Claude PR10 atd8bd2e3e and is absent from cached main788a0c1; preserve that lane and reconcile the accepted integration API with its owner. AIS supplies cited capability resolution, Queen/Observatory supplies execution/interface. Then prove one admitted maker/checker workflow with immutable base, lease, privacy/spend bounds and independent acceptance. Reuse SIS six-vault memory, work/loop graphs, Foundry contracts and one durable orchestrator. Keep151/143 and broader cloud/upgrade goals open. Save both hub and product issue.
+||||||| 6c749cb
+## SIS8.4: complete one community creator acceptance journey
+
+SIS327/339 merged; npm8.4.0 published from tested main8087a0fa and public bytes
+verified. Read today's latest session and SIS144. Preserve original unknown runs
+and all previous goals. Reuse existing GenCreator/Canvas receiving owner for one
+real installed-SDK creator journey: source-backed generation, reopen/edit,
+interruption recovery, export and actual editorial/receiving-owner acceptance.
+Measure usable output, repairs, time and cost against manual Markdown on same
+brief. Six descriptor-only domains do not establish installed brand products.
+Track plugin security update_not_possible and existing alerts separately; re-query
+production canary. Conversation migration and broad programme remain open.
+
+
+## SIS: close current review and live provider gates before integration
+
+Continue SIS327 at6b0df6c3 and existing issue144. Current local full package tests,
+terminal64, lint/build and negative source-lock probe pass; Foundry31pass/twoWindows
+skips and risk34pass/sevenTODOs retain their limits. Two package.json closure pins
+were repaired without changing rule versions or review dates. Obtain independent
+review of the current complete diff and reconcile findings; prior663d5646 Grok
+review timed out with no verdict. Verify current CI, including jobs skipped while
+draft, before normal merge. Do not retry the retained native-recovery-guide run.
+Its native1.18.35 anonymous provider route returned403; no generation accepted.
+Use an admitted supported provider/account route for a separately authorized
+attempt, then prove editing, recovery/export, usage and receiving-owner acceptance.
+Preserve existing creator proofs, all earlier prompts and the full brand programme.
+
+## Portfolio: connect preserved goals to one accepted creator outcome
+
+Read the portfolio audit in ops/sessions/2026-10-10.md and re-query exact heads.
+Preserve all25portfolio objectives,65recovered goal areas and native paused states.
+Coordinate existing receiving owners rather than creating another queue. Finish
+one cited source-to-owner-to-editable-artifact roundtrip with recovery and export;
+SIS327 owns the terminal boundary, Canvas45 owns its visual acceptance, Config106
+owns proposed brand commands, and memory/source authority stays with its existing
+owner. Before launch, reconcile quota and machine admission; one maker per lane.
+Arcanea525's billing BLOCK stays with its recovery owner. Resolve independent
+review and actual host/cold-use behavior before release. Record accepted output,
+repair effort, elapsed time, measured usage and remaining gaps. Preserve all older
+pickup prompts and the broad programme; do not resume another paused goal here.
+
+## SIS: prove the admitted OpenCode creator turn and connect the product
+
+Read the latest ops/sessions/2026-10-10.md and SIS issue144. Start with
+`codex --cd C:/Users/frank/starlight/repos/.codex-worktrees/sis-terminal-orchestration-20261010`.
+Verify `56dae5f1` in draft SIS327 and the owned lane; preserve every other front.
+Read the exact-source Grok review and reconcile its actual verdict before release.
+61 terminal tests, lint/build, 135 hooks and byte-verified built export passed.
+Native OpenCode1.18.35 health/OpenAPI and one denied session were checked with
+no model call; that server is stopped. The current example is Codex-authored content
+captured through a host callback, not native generation. Resolve the repeated missing GenCreator375 reference capture without relaxing the gate. Then run one authenticated,
+admitted source-only OpenCode model turn and test real denied-tool behavior,
+interruption and usage, using the same brief/direct baseline. Host authority/cost
+enforcement remains external. Connect accepted GenCreator and SIS web surfaces to
+shared run/editorial records under separate owned lanes. Keep six domain packs,
+native Codex/Claude/Hermes/Goose adapters, academy/experiment/subscription features
+and the whole objective open. Current MCP2026-07-28 extensions are not implemented;
+do not auto-upgrade, fork upstreams or mistake a catalog for tested capability.
+Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
@@ -28,6 +88,8 @@ installed versions before re-projection. Continue PR80's guarded shared-guide
 rollout and issue98's authority reconciliation with their current owners. Validate
 exact roots before classifying missing guides; preserve SOUL and graph brakes,
 write-back and distinct-verifier contracts. Save existing issues and hub receipts.
+
+Fresh follow-up: live Arcanea inventory has28 trusted/26 enabled hooks and zero errors/warnings; doctor and38 tests pass. The bounded census now confirms85 exact Git roots without a root guide among232 Git-marked folders; do not retain71 as a current count. Resolve inherited/nested/native instruction coverage before per-repo rollout. Git hooks resolve to three directories; inspect SIS and Arcanea Orchestrator's separate hook chains for security-check parity in admitted owned lanes. Preserve the existing config repair/review owner, now actively refining tracked source and adding native inventory/merge-review files. Review the published frozen head separately; new edits need their own exact-revision checks. This follow-up made no runtime edits.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 
@@ -64,6 +126,12 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 > **2026-10-02:** Queen foundation and hardening are on main; its current prompt covers activation access and proof. Earlier integration work remains open. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
+
+### Arcanea: verify receiving main and complete existing release gates
+
+```text
+Continue Arcanea issues529/511 after PR525 merged as c79b6f4fa4283614ddf12129a7ab1a6e27e3318c (reviewed head dbbd5b17c26eceb7808cade28ed476d8fc0f3a02). Read repository instructions and latest planning/control records, refresh reviewed Registry authority, owner leases and actual remote state. Preserve foreign branches and dirty edits. First verify receiving-main CI/deployment; final candidate had independent Grok4.7 source PASS, Linux/PG concurrency PASS and a READY pricing preview with reduced-motion and intercepted waitlist recovery proof. Do not reimplement those repairs. Checkout is default-off. Keep the existing launch gates: authorized production migrations and seller/product setup, real sandbox purchase and duplicate/redelivery proof, refund/proration/replacement reconciliation, dead-worker receipt recovery, retention/private large-image storage, BotID/auth recovery, image BYOK and plan entitlement enforcement.3MiB inline outputs refund before debit; validate actual model sizes. No production migration, paid call or release activation is authorized by this pickup. Acquire an admitted owned lane for the next bounded issue slice; preserve accounts/financial history on rollback. Save public source-safe findings to the existing issues and agentic-ops-hub; keep private task records and instruction/source hashes private.
+```
 
 ### Starlight interfaces: connect source-backed creation and knowledge
 
