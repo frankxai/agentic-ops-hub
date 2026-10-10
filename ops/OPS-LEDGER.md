@@ -875,3 +875,8 @@ One cited triage note completed through9 acknowledged source packets and read ba
 All 529 active saved note texts now semantically reviewed; 529 current hashes match. Six cached images inspected/four missing. All 748 earlier demand projections preserved; 1587 overlapping projections and 65 nested goal areas now linked under the existing recovery programme; 25 objectives preserved. New invention areas remain proposed; owner/task integration and useful acceptance remain open. Raw/personal/possible credential material stays private. See the expanded reconciliation plan.
 
 Four saved text meanings remain unresolved; 208 original numbered saved items/lines are retained with source context.
+
+
+### Cited recovery update, 10 October 2026
+
+Selected native batch: two complete cited triage notes, eight pending summaries, ten preserved source sessions/950 retained messages; zero deliberate receiving-owner resumes. Latest recovered Arcanea conversation is reconciled to merged PR147 and open issue146. Existing README work must be preserved; original media, topics, licensing wording and theme/mobile review remain open. Source reading, unchanged hashes and safe completion/retry verified by the lead; provider/creator acceptance remains pending. This updates recovery progress, not the dated 622-open-PR inventory or product completion counts.
