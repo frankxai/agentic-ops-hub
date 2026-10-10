@@ -1,5 +1,6 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+<<<<<<< HEAD
 
 
 ## 2026-10-10: Estate review repairs and 18 deployment source captures (Codex)
@@ -28,6 +29,34 @@ Registry ratification or production promotion. See today's session.
 ## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
 
 [Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
+||||||| e333580
+=======
+## 2026-10-10: hook fixes merged; conditional merge admission is live
+
+Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
+`13ebcf0` returned PASS. All 16 reviewed file hashes match main. Config PR110 merged
+normally at `12cd533e` after live no-receipt denial, real receipt acceptance,
+revocation denial and restoration acceptance. Required CI plus the trusted
+exact-head receipt check now applies to administrators; routine notes merge with
+zero blanket approvals. Fifty-one targeted tests and a fresh 13-hook native turn
+pass. FrankX's two conservative shell-wrapper findings, Desktop/untriggered events,
+PR80 and estate conformance remain open. See today's latest session entry.
+
+
+
+## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
+
+[SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged
+atfe964d5a after independent xAI review/all checks. Existing organization system
+and Arcanea compatibility8.5.0 published; both public bytes match tested main
+artifacts. All377payload files identical, four installed exports and six descriptor
+domains verified. New ecosystem doctor reports bounded live package health without
+installing or granting authority. Both SDKs/memory metadata now pass; creator MCP
+workspace dependencies remain blocked. Today's session and SIS144 comment6093445212
+record proof and remaining user/creator/security/trusted-publishing gaps. Broad
+programme stays partial; preserve all previous owners and histories.
+
+>>>>>>> origin/main
 
 ## 2026-10-10: hook independent review WARN; current source owner refining
 

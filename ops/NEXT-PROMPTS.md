@@ -26,6 +26,19 @@ product issues and the sanitized hub record; preserve all other fronts.
 
 Read ops/reviews/arcanea-migration-crown-audit-20261010.md and ecosystem issue6. Preserve Gemini's handover/strategy and all unfinished source branches. Reconcile the distinct Arcanea-Labs/Arcanea and frankxai/arcanea histories and the existing Arcanea-Labs/Starlight-Intelligence-System repository. Verify every named source/destination ID, visibility, archive state, private protections, Actions secrets, deployment app access, OIDC trust, Packages and Pages dependency. Correct the gh repo rename transfer instructions in the owner's lane. Use selective public migration; retain private Pro-dependent repositories until the feature/cost decision is accepted. Reuse the existing creator/billing recovery work; compare one actual consented task through the accepted inference path and Worker before adding a gateway. Obtain exact-revision release review and live recovery/latency evidence. No transfer, archival, visibility or paid-plan change is authorized by the old embedded commands. Save both the hub and existing product issue; keep unresolved work open.
 
+## Creator MCP: repair publication, then prove connected creator acceptance
+
+Read today's SDK8.5 organization handover and SIS144 comment6093445212. Existing
+@starlight-intelligence/system and Arcanea8.5 public tarballs match tested main
+fe964d5a; ecosystem doctor reports creator-mcp0.1 workspace:* dependencies blocked.
+Use the existing starlight-creator-mcp issue4 and verified available owner lane to
+repair independent package installation, review and versioned release. Preserve
+its auth/tenant/provenance/publishing contracts. Then prove one actual source-
+backed memory/creator/edit/recovery/export journey and receiving-owner/user
+acceptance. Retain all broader goals and unknown runs; no automatic MCP activation,
+provider quota, OIDC setup, commercial readiness or estate-wide completion assumed.
+
+
 ## SIS8.4: complete one community creator acceptance journey
 
 SIS327/339 merged; npm8.4.0 published from tested main8087a0fa and public bytes
@@ -86,23 +99,19 @@ and the whole objective open. Current MCP2026-07-28 extensions are not implement
 do not auto-upgrade, fork upstreams or mistake a catalog for tested capability.
 Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 
-## Hooks and instruction architecture: approve the tested integration and complete rollout
+## Hooks and instruction architecture: finish the remaining owned rollout
 
-Read ops/sessions/2026-10-10.md and config issues78/101/98. Requery PR109 head; the owner published13ebcf059285b866c4618bc8306c53cf22e0263d.
-Older1bf683a received independent Grok WARN, not approval; see review6093421779.
-Preserve the active owner, validate remaining findings and new native inventory/merge-review gate,
-including cloud PR103 provenance and final source bindings. Obtain exact-head review and
-one eligible GitHub approval; normal merge was refused, and older review attempts
-are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
-status turn with 13 completed hooks pass. Preserve exact operator backups and
-both startup disables. Complete Desktop UI reload and write/design event proof,
-then adopt the merged source without overwriting occupied primary lanes. Check
-installed versions before re-projection. Continue PR80's guarded shared-guide
-rollout and issue98's authority reconciliation with their current owners. Validate
-exact roots before classifying missing guides; preserve SOUL and graph brakes,
-write-back and distinct-verifier contracts. Save existing issues and hub receipts.
+Config109/110 merged; read today's latest session and issues78/101/98. Preserve
+the tested conditional merge policy: required CI and exact-head independent review
+for sensitive changes, direct admission only for the narrow routine notes class.
+Keep product-release approvals separate. Reuse the actual AGY review receipts;
+never count missing source or timeout as review. Take a separate admitted FrankX
+lane to review/refactor the two conservative variable-shell findings, preserving
+its Antigravity checkout and owner. Then prove Desktop write/design and untriggered
+event behavior. Continue PR80's shared guides and measured per-repo instruction/
+Git-hook exceptions with their existing owners. Preserve historical censuses,
+unfinished goals and every earlier front; do not claim estate-wide conformance.
 
-Fresh follow-up: live Arcanea inventory has28 trusted/26 enabled hooks and zero errors/warnings; doctor and38 tests pass. The bounded census now confirms85 exact Git roots without a root guide among232 Git-marked folders; do not retain71 as a current count. Resolve inherited/nested/native instruction coverage before per-repo rollout. Git hooks resolve to three directories; inspect SIS and Arcanea Orchestrator's separate hook chains for security-check parity in admitted owned lanes. Preserve the existing config repair/review owner, now actively refining tracked source and adding native inventory/merge-review files. Review the published frozen head separately; new edits need their own exact-revision checks. This follow-up made no runtime edits.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 
