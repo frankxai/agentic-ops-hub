@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: home product drawers moved into the estate (Grok)
+
+Continuation of the stray-repos move. Unique mind, studio, student, community, and release folders now live under `starlight\repos`. Dream100 is in `iis-private`. Drafts are in `scratch`. Duplicate checkouts whose commits are already in the estate stayed at home: `batch3-awesome`, `projects\pv-lager-agentic`, and `frankxai-empire-audit`. `plugins` still has 71 packs. `second-brain-v6` was not moved. See [session](sessions/2026-10-10.md).
+
 ## 2026-10-10: stray home repos drawer removed (Grok)
 
 `C:\Users\frank\repos` was renamed away and the empty folder removed. Unique product trees now sit under `C:\Users\frank\starlight\repos`. `gmail-os` is in `iis-private`. Suno skill cards and loose zips are in `starlight\scratch`. The unpushed Suno checkout is `awesome-suno-agent-skills-unpushed-20260701` at `fbd820e`, not the canonical Hermes checkout. No remote was created and no moved tree was pushed. Home twins, third-party clones, and worktrees stayed. See [session](sessions/2026-10-10.md). Comment on [hub #90](https://github.com/frankxai/agentic-ops-hub/issues/90).
