@@ -1,6 +1,5 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-<<<<<<< HEAD
 
 
 ## 2026-10-10: Estate review repairs and 18 deployment source captures (Codex)
@@ -29,8 +28,7 @@ Registry ratification or production promotion. See today's session.
 ## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
 
 [Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
-||||||| e333580
-=======
+
 ## 2026-10-10: hook fixes merged; conditional merge admission is live
 
 Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
@@ -56,7 +54,6 @@ workspace dependencies remain blocked. Today's session and SIS144 comment6093445
 record proof and remaining user/creator/security/trusted-publishing gaps. Broad
 programme stays partial; preserve all previous owners and histories.
 
->>>>>>> origin/main
 
 ## 2026-10-10: hook independent review WARN; current source owner refining
 
