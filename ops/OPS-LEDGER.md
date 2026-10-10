@@ -1,5 +1,17 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Harness fleet evidence and integration (Codex)
+
+User outcome: aggregate coding harnesses, capabilities, memory/graphs and cloud workers into the existing Starlight owners. Implemented a bounded operational evidence adapter in SIS, branch `agent/codex/harness-fleet-20261010`, exact local commit `640f6a12ddcb1facda2083d0081fe491ae223b87`. Files: `tools/harness-fleet/fleet.py`, `test_fleet.py`, `docs/architecture/harness-fleet.md`. Commit is local, not pushed/merged/deployed.
+
+Collector separates command availability, process-tree memory, model/config declarations, MCP declarations, top-level skill packages and source-timestamp quota gates. Child attribution avoids shell mentions and reused parent PIDs. Private reports omit raw commands, credential fields and chats; failed replacement preserves the old snapshot. Refreshed quota can be supplied without modifying the shared capacity writer. Sixteen failure/recovery tests pass; actual Windows collection completed; staged whitespace check and native hook passed.
+
+Routing stays with the accepted routing owner; SIS supplies evidence, Foundry contracts/prover/receipts and existing memory/work/loop graphs. No new scheduler, database, cloud runtime or global MCP activation was created. Other terminal, source-intake and Arcanea lanes were preserved. Registry authority was read at agentic-ops `cf99c95559b741c6ed372c06f1030d2bd731913b`.
+
+Independent exact-revision provider review remains pending. Machine admission paused new swarms; no independent verdict for this code is claimed. Installed-version/release comparison, native inheritance/config adapters, executable capability probes and routing/UI/cloud integration remain open. Existing [SIS151](https://github.com/frankxai/Starlight-Intelligence-System/issues/151) and parent143 stay open. Operator-private evidence is under `.starlight/reports/harness-fleet/`; conversation export remains under `.starlight/reports/conversation-20261010-01a12297/`. No owned server or watcher remains.
+
+Next: fresh admission and independent exact-source review, preserve all owners, then prove one real maker/checker workflow using current account/tool receipts. Do not call the collector an autonomous meta-harness or infer tested support from declarations.
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.
