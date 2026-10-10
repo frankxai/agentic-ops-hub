@@ -1,8 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight & Arcanea NPM: execute frontier lab transformation
+## Starlight & GenCreator NPM: advance enterprise distribution and Phase 2 monorepos
 
-Read ops/sessions/2026-10-10.md and Starlight-Intelligence-System docs/architecture/NPM_ECOSYSTEM_STRATEGY.md. All 6 packages are verified live on NPM: @starlight-intelligence/system@8.3.0, @starlight-intelligence/memory@0.2.0, @starlight-intelligence/creator-mcp@0.1.0, @frankxai/agentic-creator-os@15.0.0, @frankxai/suno-mcp-server@0.1.1, and @arcanea/starlight-intelligence-system@8.3.0 shim. Legacy SIS < 8.0.0 versions deprecated. Execute Phase 2 and 3 of the Frontier Lab Transformation: extract featherlight zero-dependency @starlight-intelligence/core, package @starlight-intelligence/ai-sdk memory provider for Vercel AI SDK, standalone @starlight-intelligence/mcp server, configure Turborepo + pnpm workspaces with @changesets/cli, and stand up starlightintelligence.org/docs. See FRONTIER_LAB_TRANSFORMATION_PROMPT.md.
+Read ops/sessions/2026-10-10.md, Starlight-Intelligence-System docs/architecture/NPM_ECOSYSTEM_STRATEGY.md, and GenCreator-OS docs/architecture/GENCREATOR_ECOSYSTEM_MASTER_PLAN.md. Both organizations are live on NPM:
+- @starlight-intelligence/system@8.3.0, @starlight-intelligence/memory@0.2.0, @starlight-intelligence/creator-mcp@0.1.0, @frankxai/agentic-creator-os@15.0.0, and @arcanea/starlight-intelligence-system@8.3.0 shim.
+- @gencreator/core@0.1.0, @gencreator/social@0.1.0, @gencreator/dam@0.1.0, @gencreator/sound@0.1.0, and @gencreator/cli@0.1.0. Standalone Suno MCP server deprecated.
+Next: Build remaining GenCreator packages (@gencreator/studio, @gencreator/cms, @gencreator/design, @gencreator/analytics), wire GitHub Actions CI release workflows with changesets, and connect the live CLI cockpit to Frank's daily creation workflow.
+
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
