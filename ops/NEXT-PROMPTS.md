@@ -5,18 +5,23 @@
 Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
 Read today's session/PR554 and requery heads. Own lane
 `C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/gateway-admission-20261010`, published7135673753 from accepted
-e739. All19 native cases/direct types/lint/format and current full Linux CI/
-CodeQL analysis/findings/compiled browser pass. Current713 READY preview
-passes15 safe HTTP contracts. Public operator implementation removed,403 retained;
-deferred errors sanitized in client/server. Preserve customer-key-only/tool denial
-boundaries. Poll final frozen reviewer handle7869 (05:36UTC, deadline06:21UTC),
-no tools/web/subagents. Prior a311 PASS with medium fix does not approve current
-source. Stop only owned reviewer on deadline/handoff; keep unknown attempts.
+branch `agent/codex/gateway-admission-20261010`, published6def4ff717 from accepted
+e739. All21 native cases/direct types/lint/format and current Linux lint/types/
+CodeQL pass; full build/browser pending. Current6def READY preview passes18 safe
+HTTP contracts. Public operator implementation removed,403 retained; deferred
+errors sanitized client/server. UI streams are private/no-store/no-transform with
+no buffering; malformed body400 and blank key401 recover clearly. Poll final
+reviewer16622 (05:53:12UTC, deadline06:38:12UTC), no tools/web/subagents. Earlier
+713 complete PASS had two medium corrections now fixed; older review does not
+approve current source. Stop only owned reviewer on deadline/handoff.
 
 Integrate normally after exact-source review/full gates. Verify production aliases,
 source SHA, compatibility health200/key denial401, UI/alias401, surrounding auth401
-and tool/operator403. Keep managed inference disabled until durable authenticated
+and tool/operator403. Next close the separately reproduced anonymous server-key
+spending in transcribe/speak, preserving customer voice behavior with tested
+request-key admission and sanitized failures. Dummy-only actual-route/proxy proof
+is in the private voice-admission-audit receipt; live keys were not inspected.
+Keep managed inference disabled until durable authenticated
 entitlements/reservations exist. Prove actual existing-source generation, reopening,
 editing, interruption recovery and export with user/editorial acceptance; compare
 the same task with the user's current provider editor. Reuse accepted workspace/
