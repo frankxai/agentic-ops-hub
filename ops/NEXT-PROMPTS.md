@@ -29,6 +29,38 @@ privacy/spend change, cleanup or production promotion is authorized by test resu
 
 Read ops/reviews/arcanea-migration-crown-audit-20261010.md and ecosystem issue6. Preserve Gemini's handover/strategy and all unfinished source branches. Reconcile the distinct Arcanea-Labs/Arcanea and frankxai/arcanea histories and the existing Arcanea-Labs/Starlight-Intelligence-System repository. Verify every named source/destination ID, visibility, archive state, private protections, Actions secrets, deployment app access, OIDC trust, Packages and Pages dependency. Correct the gh repo rename transfer instructions in the owner's lane. Use selective public migration; retain private Pro-dependent repositories until the feature/cost decision is accepted. Reuse the existing creator/billing recovery work; compare one actual consented task through the accepted inference path and Worker before adding a gateway. Obtain exact-revision release review and live recovery/latency evidence. No transfer, archival, visibility or paid-plan change is authorized by the old embedded commands. Save both the hub and existing product issue; keep unresolved work open.
 
+## GenCreator: connect the accepted creator loop and managed platform
+
+Continue the original active GenCreator/Starlight goal in thread
+`01a123db-5493-7220-8d0d-f80760cad443`; do not shrink it to the completed release.
+Read today's GenCreator session entry, issues74/5 and the current states of191/192.
+191 merged at5f7c3c2;192 is live atb6938e7 from reviewed0ee51f2. Re-query actual
+receiving-main/production metadata and its full CI before relying on that state.
+Preserve the primary programme checkout, all source branches and other owners.
+
+Reuse135/141/146 for the source-to-authored-edit-to-recovery-to-editable-export
+journey. The API edition schema differs from the current browser schema; its save
+key is deliberately separate. Define and verify a preserving migration/import
+path before mounting those helpers. Recovery141's old preview failed resolving
+js-yaml; integrate current main dependency state instead of reverting lockfiles.
+
+Managed setup is an engineering dependency: Starlight Platform Supabase has
+shared tenant/principal/entitlement tables but no GenCreator tables. The existing
+additive migration requires absent CreatorPack base tables. Prepare a reviewed
+fresh-provision path, reconcile GenCreator's Supabase/member identity with the
+shared platform authority, prove browser/service and cross-workspace denial and
+actual receipt/retry behavior, then configure an isolated preview and authenticate
+the creator loop. No historical monolithic-schema replay or assumed OAuth issuer.
+Keep public checkout/posting closed until the accepted gates pass.
+
+Connect actual installed CLI/SDK/ADK/Desktop/Mobile versions and memory to that same
+journey; SDK8.5 publication is another owner's verified slice, while creator-mcp0.1
+installation remains blocked under its issue4. Reconcile all remaining PRs by
+unique work, current checks and owner authority. Compare accepted useful output,
+editing/recovery, time/cost and repeat use against a capable assistant plus the
+creator's presentation/design tool before subscription/GTM claims. Save product
+issues and the hub; maintain one admitted workload and the full goal as active.
+
 ## Creator MCP: repair publication, then prove connected creator acceptance
 
 Read today's SDK8.5 organization handover and SIS144 comment6093445212. Existing
