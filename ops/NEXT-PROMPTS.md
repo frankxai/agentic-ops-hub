@@ -1,23 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Npm ecosystem: verify and review the preserved four-milestone implementation
+## Npm ecosystem: finish PR 342 gates and release verified modular packages
 
-Read the appended ops/sessions/2026-10-10.md, SIS issue329, and the product pickup
-at C:/Users/frank/starlight/repos/.codex-worktrees/sis-npm-modular-ecosystem/docs/ops/HANDOVER-npm-modular-ecosystem.md.
-Preserve the local uncommitted implementation on agent/codex/npm-modular-ecosystem,
-base 421c8735, source fingerprint 101e29cb. Confirm ownership, current guides and
-source-snapshot.json before editing. Latest build admission held at 3283 MB RAM;
-restore admitted capacity without killing or archiving other tasks. Run frozen
-pnpm install, package tests, actual tarball whitelist/secret/size audit, installed
-consumer declarations/generation/streaming/MCP stdio tests, root compatibility and
-mandatory hooks. Materialize only required tracked fixtures in the sparse lane.
-Obtain exact-source independent provider review, resolve findings, commit explicit
-owned files and open a draft SIS PR linked to 329. Rebuild artifact receipts from
-the clean commit. Reconcile the other session's primary rename/shim separately,
-including omitted legacy exports/binaries and blocked CLI import. Verify npm org
-rights, per-package trusted publishers and GitHub npm-production protections.
-Publishing/deprecation needs approval of the concrete reviewed bytes. Update 329
-and hub 217; preserve all earlier evidence and unfinished work.
+Read today's appended session, SIS issue329, draft PR342 and the owned product
+pickup. Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
+Owned branch agent/codex/npm-modular-ecosystem is pushed at 5a977a1db747a84459d2fcdc6c8f507619206b06.
+Verify guides, routing and separate lane ownership. Inspect modular CI run38023639393
+on that exact head, repair remaining failures and verify hosted artifact consumers.
+SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
+Obtain independent provider review using an admitted isolated supported route;
+Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
+Rebuild a clean final receipt, finalize the initial Changeset/version set, reconcile
+npm org rights, first-publication trusted publishers and npm-production setup, then
+publish exact reviewed bytes through the authorized OIDC path after normal gates.
+Do not force merges or use a token fallback. Preserve accepted terminal/creator SDK.
+Continue artifact/source audits beyond the45 metadata records in their registered
+owned lanes. Respect separate memory publication boundaries and site/plugin alerts.
+Resolve commercial integration authority and buyer evidence before platform changes
+or revenue claims. Save issue329 and hub217 with fresh evidence; leave the goal open.
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
