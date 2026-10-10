@@ -3,18 +3,22 @@
 ## Estate management: complete review, admission and source-specific recovery
 
 Continue the active end-to-end goal from private Ops213 at
-60ffbb499232059f4612b5c05c55ab84fc81cdaa, issues29/55 and today's latest
+e62dea4f2b75e2e13f938aadbcd9c8bd249397f7, issues29/55 and today's latest
 session. Twenty-six cloud findings across six rounds are repaired; 117 local tests
 and exact-head hosted verify/validate pass. Final independent approval is open:
 cloud quota exhausted and scoped second-provider review timed out at450s.
 Use an admitted independent provider with complete exact-revision coverage;
+Antigravity CLI is installed but its global memory write-profile/v0 MCPs require
+verified tool isolation before launching a review. Do not change global config;
 partial output and green CI do not count as approval. Preserve global credentials,
 security hooks and other sessions' processes. Owned review workers are stopped.
 
 Three production bindings and visibility evidence remain proposals until reviewed
-main accepts them. All 18 unregistered deployment sources have captured exact
-repository IDs and provider targets; source ownership and customer flows remain
-unverified. Review archived sources, agent-branch production and missing Git
+main accepts them. All18 deployment sources now have proposed Registry candidate records with exact
+provider identities and unresolved owner/product/source/release authority. Reviewed
+main still has54 records; proposed branch has72. Candidate reconciliation retains
+owner-review-required state and no mutation authority. Source ownership and customer
+flows remain unverified. Review archived sources, agent-branch production and missing Git
 provenance separately. Public family code and private-instance data need separate
 boundaries. Fresh duplicate-source histories and missing/placeholder instructions
 require owner-led recovery; do not delete or reset clones. The prepared Ops
