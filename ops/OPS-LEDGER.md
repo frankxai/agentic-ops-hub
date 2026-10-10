@@ -1,5 +1,22 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: GenCreator isolated Companion provision verified
+
+[195](https://github.com/frankxai/gencreator.ai/pull/195), reviewed candidate
+82ef94c, merged normally to 57fcf5b. All fourteen changed files match main.
+The twelve-table gencreator_companion plane preserves founding gencreator and
+shared public. Final candidate full CI 38041775148 passes native PostgreSQL 2/2,
+948 unit cases and 244 browser cases; two existing opt-in visual captures skip.
+Exact-source Dots static review and 22 final-preview checks pass. Stable production
+READY dpl_6QAkAA1iVoon6dtahYTGWuKXjoNQ at the merge passes all 22 site/MCP checks.
+Receiving-main full CI 38042747768 passes all required jobs, including native
+SQL 2/2, 948 unit cases and 244 browser cases with the same two visual skips. Three review fixes and
+all failures are retained in [today's session](sessions/2026-10-10.md).
+PR 194 already merged/live 802e9aa with full CI and 22 stable checks.
+Managed 503, identity/provisioning, actual creation/customer/client/memory and
+commercial programme remain open. [Issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6095569523)
+and the original full goal stay active; no production database writes.
+
 ## 2026-10-10: GenCreator design-hook findings triaged
 
 Two unique warnings were duplicate-reported: a real edition-cover spine and an
@@ -8,8 +25,8 @@ semantics and Territory B contract; both keep their intentional design. Two
 file-scoped rule/value exceptions are saved in repo and home-session configs.
 Prior exceptions remain; configured scans are clear and raw scans retain both
 rules. No UI changes or remaining reported findings. [PR 194](https://github.com/frankxai/gencreator.ai/pull/194),
-candidate 9a56388, has full CI 38036742704 pending; normal merge/receiving-main
-verification follows. [Today's session](sessions/2026-10-10.md) records evidence.
+candidate 9a56388, merged normally at 802e9aa. Candidate/main full CI
+38036742704/38037313656 and 22 stable-production site/MCP checks pass. [Today's session](sessions/2026-10-10.md) records evidence.
 Issue 5 and the full native programme stay open; no new production claim.
 
 ## 2026-10-10: GenCreator browser recovery and editable decks live

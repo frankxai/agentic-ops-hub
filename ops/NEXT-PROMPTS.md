@@ -34,12 +34,19 @@ Honor machine admission, secret checks and publication/payment/migration gates.
 
 ## GenCreator: managed identity and an accepted creator journey
 
-First finish config-only PR 194 at reviewed 9a56388: two intentional design-hook
-exceptions, no CSS or behavior changes. Full CI 38036742704 was pending at the
-triage save. Re-query required checks/reviews, merge normally with exact head,
-verify receiving-main/deployment, update issue 5 and preserve source branches.
-Repo/home configured detectors are clear; raw detector still reports both rules.
-Then resume the original product programme below.
+PR 194 is complete: merged/live 802e9aa, full CI and 22 stable checks pass.
+PR 195 reviewed candidate 82ef94c merged normally to 57fcf5b; all fourteen files
+match main. Native SQL 2/2, actual-store recovery, all 948 unit cases, 244 browser
+cases (two existing opt-in visual skips), final static review and 22 final-preview
+checks pass. Stable production READY dpl_6QAkAA1iVoon6dtahYTGWuKXjoNQ at 57fcf5b
+passes 22 site/MCP checks. Receiving-main full CI 38042747768 passes all required jobs, including native
+SQL 2/2, 948 unit cases and 244 browser cases with the same two visual skips.
+Pursue authoritative identity mapping, approved provision/
+API exposure and real authenticated source-to-reviewed-export recovery. Current
+Starlight main verifies Clerk with a fixed Starlight origin; it does not establish
+GenCreator's identity decision. No live database or credential writes occurred;
+managed 503 remains honest. Read today's session and preserve reviewed source,
+all three review fixes, failed attempts and the full product programme below.
 
 Continue active goal `01a123db-5493-7220-8d0d-f80760cad443` and issue 5; retain the
 CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, subscription/GTM and creator/
