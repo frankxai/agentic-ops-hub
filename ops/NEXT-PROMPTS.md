@@ -1,5 +1,19 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## SIS: close current review and live provider gates before integration
+
+Continue SIS327 at6b0df6c3 and existing issue144. Current local full package tests,
+terminal64, lint/build and negative source-lock probe pass; Foundry31pass/twoWindows
+skips and risk34pass/sevenTODOs retain their limits. Two package.json closure pins
+were repaired without changing rule versions or review dates. Obtain independent
+review of the current complete diff and reconcile findings; prior663d5646 Grok
+review timed out with no verdict. Verify current CI, including jobs skipped while
+draft, before normal merge. Do not retry the retained native-recovery-guide run.
+Its native1.18.35 anonymous provider route returned403; no generation accepted.
+Use an admitted supported provider/account route for a separately authorized
+attempt, then prove editing, recovery/export, usage and receiving-owner acceptance.
+Preserve existing creator proofs, all earlier prompts and the full brand programme.
+
 ## Portfolio: connect preserved goals to one accepted creator outcome
 
 Read the portfolio audit in ops/sessions/2026-10-10.md and re-query exact heads.

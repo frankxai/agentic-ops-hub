@@ -1,5 +1,27 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Usage evidence and Foundry closure repair; release held
+
+[SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) is pushed
+at `6b0df6c3`. OpenCode final-message token/cost observations now bind to the packet,
+session, runtime and output. `run usage` checks those bindings; failed receipt saves
+retain unknown outcomes without redispatch. Provider-reported cost remains separate
+from invoices and whole-run usage. Two stale package source pins caused Foundry
+failures; the candidate updates only those hashes, preserving rules and review dates.
+
+64 terminal tests, lint/build, 135 native commit-hook checks and full `npm test`
+pass. Foundry passes 31 with two existing Windows symlink skips; risk evals pass 34
+with seven existing TODOs. A wrong source hash still fails preflight. Harness drift
+passes. CI-scoped mesh passes (one measured, 63 carried); default worktree/estate
+mesh remains a separate stale projection. Current npm OpenCode is 1.18.35.
+
+A real isolated native OpenCode attempt received provider HTTP403. The original
+run/session/unknown marker are preserved; no generation accepted or retry/bypass.
+The server is stopped. Different-provider review at663d5646 timed out after240s
+without a verdict; the current lock revision still needs exact-head review. No
+merge, npm publication or deployment. Preserve all six-domain programme requirements
+and other owners. See today's session; existing SIS144 receives this continuation.
+
 ## 2026-10-10: Portfolio and goal reconciliation, observed 02:53–02:57 CEST
 
 Read current GitHub main and selected open handover/product branches, the private
