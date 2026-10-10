@@ -1,5 +1,24 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: installed adapter comparison against direct AI SDK middleware (Codex)
+
+SIS draft342 is clean/pushed at a3651c5590288199a2aa3fb63cad49e181903cbe.
+Added an executable comparison using the same core policy, scoped provider,
+multi-turn inputs and deterministic model. Alternating order,20 warmups excluded,
+100 measured calls per variant. Equivalent prompt and scope/privacy/retention/
+sanitizer/read-count/error/hung-provider assertions pass. Failure assertions require
+actual recall calls; successful consumer evidence follows the comparison.
+Hosted38031220942 completed SUCCESS across all six jobs. The installed comparison
+ran on Linux Node24.21.0: direct median0.139ms/p950.470ms, Starlight median0.151ms/
+p950.280ms. These noisy synthetic timings establish no speed/quality advantage;
+real provider calls0, real token usage/task cost null. Actual archives, consumer and
+benchmark evidence bind merge2e74984bb5f835e1fc0d1ab8ac8ca985ff28caa0,dirty=false,
+manifestSHA256f5a44fcbb63a0ca016b802b99c82f5f789530a046634e73b5ee8bd83db744859.
+Current55-file review packet prepared/not reviewed and Gitleaks clear. Issue329
+comment6094694168 records the slice. Local16 release/audit tests pass; build remains
+HOLD5411MB/8192required. No local heavy workload/reviewer/publish. Account/review,
+Doctor issue6 and broader platform/customer/revenue acceptance remain open.
+
 ## 2026-10-10: published MCP Doctor falsely reports runtime health (Codex)
 
 Expanded beyond SIS to @frankxai/mcp-doctor0.4.1. Exact live artifact identity,

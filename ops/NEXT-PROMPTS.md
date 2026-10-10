@@ -14,7 +14,16 @@ official-SDK inspector with safe configured environment and handshake health dis
 from optional tool lint/capabilities. Implement issue6 denial/timeout/cleanup/Windows
 and installed-consumer acceptance before calling full audit trustworthy or releasing.
 Latest build admission HOLD3285MB/8192required; no new build/reviewer/agent.
-Owned branch agent/codex/npm-modular-ecosystem is pushed at10835dde426ed292b815e58366ead2b161fe8496.
+Owned branch agent/codex/npm-modular-ecosystem is pushed at a3651c5590288199a2aa3fb63cad49e181903cbe.
+Hosted38031220942 completed SUCCESS all six jobs, including an installed comparison
+against direct AI SDK middleware with the same core policy/model/provider. Both
+variants pass projection/scope/privacy/retention/read-count and actual provider
+failure assertions;100 measured calls each,20 excluded warmups, alternating order.
+Linux24.21 fixture median direct0.139ms vs Starlight0.151ms establishes no speed,
+retrieval or customer advantage. Real cost/tokens null. Downloaded archive/consumer/
+benchmark receipts validate merge2e74984b and manifestf5a44fcb. Current55-file review
+packet artifacts/npm-review/a3651c55 is prepared/not reviewed and Gitleaks clear.
+Latest build admission HOLD5411MB/8192required; no local heavy workload or reviewer.
 Core now forwards host workspace in RecallRequest; gateway rejects wrong scope or
 invalid query/limit before HTTP; MCP handshake follows installed package version.
 Official-client and installed stdio tests exercise workspace-scoped recall/reconnects.
@@ -43,7 +52,7 @@ including hosted artifact consumers; preserve the head/merge-receipt distinction
 SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
 Obtain independent provider review using an admitted isolated supported route;
 Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
-Use the refreshed54-file artifacts/npm-review/10835dde source packet (not reviewed),
+Use the refreshed55-file artifacts/npm-review/a3651c55 source packet (not reviewed),
 and rebuild a clean final main-source receipt after normal integration. Reconcile
 npm org rights and first-publication trusted publishers, then
 publish exact reviewed bytes through the authorized OIDC path after normal gates.
