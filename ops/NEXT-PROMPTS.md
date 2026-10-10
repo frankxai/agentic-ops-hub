@@ -2,6 +2,17 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Latest continuation: native tool-free Claude review of creator26b9646 returned
+usage_limit_reached, no inference/verdict. Actual reset timestamp is11 October
+2026 at06:00Europe/Amsterdam; do not repeat that route before account state changes.
+Interactive preflight ALLOW5865MB/4096; build HOLD7628MB/8192. No MCP fanout.
+SIS doc-only tip0f1983b3 records exact published flag triage: arcanea3.4.0's two
+scanner matches span empty environment assignments and are noncredential examples;
+skills1.0.0's single match remains unresolved. Sanitized receipt at SIS
+artifacts/npm-estate/secret-triage.json; no values stored or credentials tested.
+Core/runtime bytes are unchanged from5dd614f5; exact full-source packet at5dd is
+historical for the new doc tip. Keep unpublished/review/account/platform gates open.
+
 Creator draft6 is now clean/pushed at26b9646c187985e63907f846949dd6fdb46f260f.
 Publisher isolates cwd/project/user/global npmrc, allowlists provenance/OIDC env,
 drops tokens/provider keys/Node preloads and checks exact manual main workflow.

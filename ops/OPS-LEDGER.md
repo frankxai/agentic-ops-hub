@@ -1,5 +1,16 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: independent-review route and published scanner triage (Codex)
+
+Creator26b9646 review attempted with native Claude2.1.295, no tools/MCP and bounded
+180seconds/$5 API cap. Returned usage_limit_reached,0inference/$0, no verdict.
+Reported reset11 October06:00Amsterdam. Builds HOLD7628MB/8192; interactive
+ALLOW5865MB/4096 admitted one lightweight client. No service/new swarm started.
+SIS doc tip0f1983b3 records redacted exact-byte triage of two flagged archives:
+arcanea3.4.0's two matches are empty environment assignments; skills1.0.0's one
+match unresolved. No raw values retained or credential validation/rotation.
+Source runtime unchanged; review/main/account/publication and product gates open.
+
 ## 2026-10-10: creator publisher isolation and failed-consumer recovery (Codex)
 
 Creator draft6 source26b9646c187985e63907f846949dd6fdb46f260f is clean/pushed.
