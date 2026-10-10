@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: hook recovery and ownership hardening merged
+
+Config111 merged normally after exact-head AGY PASS and green Linux/Windows CI. All six source hashes match main. Interrupted repair restoration now refuses later edits; lock replacement and escaping paths are protected. See today’s session for proof and remaining foreign-lane/Desktop/estate gaps.
+
 ## 2026-10-10: hook fixes merged; conditional merge admission is live
 
 Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
