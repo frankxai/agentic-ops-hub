@@ -1,24 +1,26 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Estate management: review and ratify the implemented Registry proposal
+## Estate management: complete review, admission and source-specific recovery
 
-Continue the active end-to-end goal. Read private ops PR213 at
-64fa59356835fc5ef5b316f3fa9d93d451bc49a0, issues29/55, the current reviewed
-Registry and today's session. Three production bindings and 20 visibility
-observations are proposed; 12 private declarations are resolved and eight public
-observations retain unknown publication classification. All 104 tests and hosted
-verify/validate pass; 14 findings were repaired across four review rounds.
-Obtain complete exact-revision independent review: Claude reported its weekly
-limit; Grok's first packet truncated and two bounded reviews timed out without
-verdicts. Failed or partial runs are not approvals. Ratify boundaries and source
-records through normal review, then refresh projections with the merged SHA.
-Preserve classic production branch protections as well as rulesets. Private Ops
-main lacks both; prepare its enforcement change without guessing required check
-contexts or bypassing review. The red production probe reports two unknown DPI
-routes, zero confirmed failures and incomplete inventory; investigate separately.
-Continue source admissions and duplicate-history recovery in admitted owner lanes.
-No bulk transfer/reset/deletion, privacy/spend change or foreign-lane cleanup.
-Keep private observations private and save both existing issues and the hub.
+Continue the full end-to-end goal from private Ops213 at
+167b3e7fe4fceb3e22032e2a74a1aa79913bc1d8, issues29/55 and today's latest
+session. Twenty findings across five cloud rounds are repaired; 109 tests and
+current-head hosted verify/validate pass. Three production bindings and visibility
+evidence remain proposals until reviewed main accepts them. The complete Grok
+attempt timed out at600s without verdict; source review does not follow from
+partial output or a successful test. Recover complete exact-head review without
+starting broad MCP services, modifying global credentials/config or bypassing gates.
+The 18 unregistered deployment sources now have exact repository IDs and fresh
+project/production/domain observations. READY is not customer-flow acceptance.
+Review archived sources, the agent-branch production target and missing Git
+provenance separately. Public family code and private deployment data have distinct
+boundaries; documentation is not a full privacy audit. Preserve classic production
+protections and rulesets. Ratify accepted source records through normal review,
+then refresh projections from the merged SHA. Admit source repair lanes with their
+owners; preserve duplicate histories and dirty worktrees. Keep Ops protection and
+DPI unknown-route investigation in the existing issues. No bulk transfer/reset,
+deletion, provider privacy/spend change or foreign-lane cleanup. Save both existing
+product issues and the sanitized hub record; preserve all other fronts.
 
 ## Arcanea: reconcile the migration map before any transfers
 
