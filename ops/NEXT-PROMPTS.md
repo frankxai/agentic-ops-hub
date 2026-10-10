@@ -1,3 +1,14 @@
+<!-- v0-design-programme-20261011:start -->
+## v0: refresh one flagship source and prove the design
+
+Continue design issue48 and its private 11 October programme/prompt. Re-query GitHub main, Vercel serving deployment, the six prepared context metadata records and existing product/design candidates. Four dated source snapshots require reimport; two source-matching contexts still have adoption gaps. Metadata updates are verified, but do not refresh source attachments or saved skills. Keep original chats/private visibility and occupied checkouts intact.
+
+Start with GenCreator's accepted source/edit/review/export/recovery workflow. Coordinate existing identity/Studio candidates and CLI/plugin release with their owners. Preserve hub PR245's paused implementation goal and identity decisions; this prompt alone does not resume that goal. Obtain current desktop/phone captures and an admitted generation allowance. Use the actual available model catalogue; GPT6.1 Sol-in-v0 remains untested. Reuse accepted code and brand inputs, compare three directions against the same native baseline, then integrate only a selected reviewed delta through the product's release path.
+
+Keep full strategy and private tool evidence outside public Git. Use one local workload until machine admission changes. Exact-head independent review, useful creator output, phone/accessibility/recovery evidence and production source/alias/rollback proof remain required for consequential release. Continue other brand and native-app/CLI goals through their existing owners, without treating a browser prototype as an installed app. Save sanitized hub continuity and update existing design issue48.
+<!-- v0-design-programme-20261011:end -->
+
+
 # ⏭️ Next Prompts — per active front / terminal
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: review and release Supabase auth, then prove live account activation
