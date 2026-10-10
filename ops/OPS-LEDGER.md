@@ -2,6 +2,16 @@
 
 ## 2026-10-10: core denies coerced retention deadlines (Codex)
 
+Final hosted38035032307 completed SUCCESS all six jobs (Linux/Windows22/24,
+core18, artifacts and installed consumers). Downloaded three archives and validated
+SHA256/SHA512, identities/versions/allowlists, clean merge31277d046809237da847af8a0a5fc21c53922b07,
+consumer and benchmark binding to manifestSHA256
+8039b8d36183c4832b1b62d60dc013696696e3db1ed3543aecde2665423d0827.
+Merge parentsbc73db9b/511c0075 confirmed through GitHub. Core archive12753bytes;
+AI SDK3027, MCP6276. Current61-file packet refreshed with final results, still
+prepared/not reviewed. No provider/publication/customer completion inferred.
+
+
 SIS draft342 source511c00757961ef7e3442644522820b2a211bbfb4 pushed clean.
 Reproduced against the verified prior hosted core0.2.0 archive: retention_until
 number2099 and array['2099-01-01'] both enter projected context after Date.parse
