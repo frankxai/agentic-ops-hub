@@ -1,20 +1,24 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Estate management: review the source map, then repair in owned lanes
+## Estate management: review and ratify the implemented Registry proposal
 
-Read private canonical ops PR213 at 2944009f23312062440dedbc9cb1b5dfacd5dea5,
-issues29/55 and the reviewed Registry. The hosted Claude review failed incomplete
-and the security-review connector reported a usage limit. Recover independent
-review for this exact head; no failed run counts as a verdict. Twelve earlier
-cloud code-review findings across three rounds were fixed and all 91 tests pass. Compare one company namespace with the
-two-boundary proposal; preserve independently governed communities and private
-personal sources. Inspect the private captured reconciliation, classify missing
-admissions and resolve separate local histories with their owners before any
-cleanup. Prioritize exact production source, release branch, project, domain,
-release commit and recovery receipts. Keep the accepted media fabric. No bulk
-transfer, reset, deletion, private-to-public change or new scheduled service.
-Use explicit per-repo guidance, ownership and admission checks; keep the hub
-sanitized and save follow-up in the existing issue. Preserve unfinished work.
+Continue the active end-to-end goal. Read private ops PR213 at
+64fa59356835fc5ef5b316f3fa9d93d451bc49a0, issues29/55, the current reviewed
+Registry and today's session. Three production bindings and 20 visibility
+observations are proposed; 12 private declarations are resolved and eight public
+observations retain unknown publication classification. All 104 tests and hosted
+verify/validate pass; 14 findings were repaired across four review rounds.
+Obtain complete exact-revision independent review: Claude reported its weekly
+limit; Grok's first packet truncated and two bounded reviews timed out without
+verdicts. Failed or partial runs are not approvals. Ratify boundaries and source
+records through normal review, then refresh projections with the merged SHA.
+Preserve classic production branch protections as well as rulesets. Private Ops
+main lacks both; prepare its enforcement change without guessing required check
+contexts or bypassing review. The red production probe reports two unknown DPI
+routes, zero confirmed failures and incomplete inventory; investigate separately.
+Continue source admissions and duplicate-history recovery in admitted owner lanes.
+No bulk transfer/reset/deletion, privacy/spend change or foreign-lane cleanup.
+Keep private observations private and save both existing issues and the hub.
 
 ## Arcanea: reconcile the migration map before any transfers
 
