@@ -1,6 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 
+## 2026-10-10: Second Brain recovery repair has a receiving PR
+
+[Second Brain17](https://github.com/frankxai/second-brain-os/pull/17) is a two-file stacked DRAFT at dd188269 against existing owner PR15. Fresh37PASS/1optionalSKIP; same-head earlier full210PASS/2optionalSKIP source hashes match. Estate guard PASS; hosted matrix and independent review pending. [Issue14](https://github.com/frankxai/second-brain-os/issues/14#issuecomment-6093941136) records handoff. No live vault mutation or creator acceptance.
+
+
 ## 2026-10-10: Continuity repair is reviewable with hosted proof
 
 [Ops214](https://github.com/frankxai/agentic-ops/pull/214) is DRAFT at d8de549;31local tests and exact-head Linux ASPH/pinned SIS conformance PASS. PR178 has merged; this three-file follow-up refuses abnormal Git failures before exporting intent. [Issue211](https://github.com/frankxai/agentic-ops/issues/211#issuecomment-6093908476) records evidence. Independent review skipped/pending; no automatic resume, production change or accepted creator artifact.
