@@ -298,3 +298,58 @@ The 137 scoped demand proposals remain unaccepted candidates. The 36 domain head
 The first cited triage note is now saved and read back: all nine bounded packets were actually read and acknowledged across 52,158 private source bytes, with full hash coverage and unchanged original sources. It preserves the founder's email backlog, recent-mail workflow, partnership implementation/team and priority-alignment request separately from historical assistant proposals. Nine selected notes remain pending summaries. An editable private email/partnership pilot prepares a 20-thread read-only sample and three unsent evidence-backed opportunity briefs; neither mailbox sampling nor sending/cleanup has been launched. Founder and different-provider acceptance remain pending; intentional owner resume and useful product artifact/recovery/export are still open.
 
 The FrankX tests run transpiled component functions with substituted framework hooks and external effects; they do not mount React in a browser. The existing loading state hides the optional form, leaving its saving/disabled feedback untested and unreachable in that state. Preserve this UI gap with explicit failure feedback and privacy disclosure for the receiving owner.
+
+
+## Complete active-note text review and recovered invention candidates, 10 October 2026
+
+The earlier 88-source semantic sample was insufficient to represent Frank's saved vision. A lead and one admitted semantic reviewer now actually read the remaining 441 source texts. All 529 active notes in the dated read-only app snapshot have semantic reviews. A separate fresh read-only audit matches 529 of 529 source text hashes, with no changed/missing sources or new rows at that observation. One deleted row remains excluded. This verifies reconstructed saved text; subsequent edits, unseen chats and missing attachment bodies remain outside the coverage. Six cached original images were visually inspected; four uncached image bodies are unavailable. Source and cache files were not edited.
+
+The private catalog preserves all 748 previous overlapping demand projections and adds 839 further projections, for 1587 total. They overlap; this is not a count of independent jobs or delivered products. All 25 current objective records are preserved. The existing recovery programme now holds 65 nested measurable goal areas. Newly uncovered historical invention areas remain proposed, without new brands, hardware purchases, external sends, launches or automatic workers. Current-owner and task/PR matching remains incomplete. Personal reflections, drafts, references and empty text records retain their context instead of being forced into product work. Raw note text, screenshots, customer/account names and possible credential fragments remain private. Possible sensitive fragments appeared in private semantic-reading output; their validity was not tested and they were not used or published.
+
+### Additional historical invention areas
+
+| Candidate area | First bounded useful output | Measure |
+|---|---|---|
+| physical innovation | Preserved physical invention specification and a falsifiable feasibility experiment | Physical constraints, testable predictions, existing alternatives, safe recovery and uncertainty |
+| sustainable habitats | Habitat concept retaining biotop/safe-zone constraints and a feasibility study | Habitat requirements, ecological/engineering evidence, cost and useful existing alternative |
+| flood resilience | Source-faithful flood-resilience concept and existing-solution comparison | Hazard evidence, engineering constraints, maintenance, cost and bounded feasibility |
+| marine restoration | Marine-restoration hypothesis with ecological evidence and a bounded research plan | Ecological evidence, intervention risks, measurable restoration signal and uncertainty |
+| transport networks | Source-faithful transport-network concept and a bounded route/model experiment | Trip usefulness, network constraints, safety, engineering evidence and existing-network comparison |
+| immersive education | A complete immersive learning experience prototype | Learner achievement, retention, accessibility, useful interaction and existing-course comparison |
+| mobility rental | Mobility-rental service concept tested against an existing journey | Availability, safe/legal eligibility, useful trip completion, demand and costs |
+| energy storage | Documented storage hypothesis and safe evidence-based feasibility study | Capacity, efficiency, cycle life, safety, costs and uncertainty against existing options |
+| creation retreats | Complete retreat experience concept with a bounded demand experiment | Participant creation outcomes, location constraints, capacity and measured demand |
+| property media | Rights-cleared property media prototype for its saved use case | Useful viewer journey, asset rights, fidelity, editability and owner acceptance |
+| personalized nutrition | Personalized-nutrition concept with evidence and nonclinical prototype boundaries | Evidence quality, user usefulness, privacy and unsupported health claim count |
+| animal welfare | Source-backed animal-welfare concept and adopted small pilot | Welfare evidence, affected animals/people, useful improvement and unintended harm |
+| physical commerce | Physical-product concept and demand/fulfillment experiment before purchasing inventory | Buyer response, fulfillment feasibility, unit economics and return/recovery burden |
+| regulated marketplace | Marketplace concept with verified regulated-activity boundaries | Eligible actors, lawful transaction requirements, privacy and unresolved licensing assumptions |
+| food product | Food-product concept with source-backed safety and demand requirements | Ingredient/safety evidence, reproducibility, packaging constraints and buyer response |
+| financial administration | Recoverable private bookkeeping workflow on explicitly authorized records | Correct classification, reconciliation errors, privacy and audit/export fidelity |
+| fitness technology | Nonclinical fitness concept and consent-aware interaction prototype | Useful training interaction, device feasibility, privacy and unsupported claim count |
+| venture incubation | A substantive incubation journey and one founder-usefulness pilot | Founder progress, useful artifacts, resource constraints and accepted experiment results |
+| insurance technology | Insurance concept and verified eligibility/regulatory requirements before implementation | Evidence quality, consumer understanding, data privacy and unresolved regulatory assumptions |
+| sustainability participation | One sustainability participation experience with measurable action | Actual participant action, verified impact assumptions, accessibility and repeat usefulness |
+| accessible learning | One accessible lesson prototype grounded in its saved learner needs | Learner task completion, comprehension, access barriers and recovery |
+| neurotechnology research | Explicit neurotechnology research hypothesis and evidence review | Claim provenance, consent/privacy, safety requirements and realistic prototype boundaries |
+| authoring hardware | Authoring-device interaction prototype before any hardware purchase | Writing usefulness, edit/export fidelity, fatigue and existing-device comparison |
+| local services | A source-faithful local service concept and a bounded usefulness/demand pilot | Actual useful task completion, eligibility, privacy, measured demand and repair burden |
+| healthcare administration | An adopted nonclinical healthcare-administration workflow prototype | Administrative task completion, privacy, access boundaries and recovery; no clinical claims |
+| consumer comparisons | A source-faithful private comparison for the explicitly adopted buying decision | Verified current requirements, prices, tradeoffs and decision usefulness; no purchase implied |
+| delivery logistics | One useful delivery/logistics concept and a bounded route/fulfillment experiment | Fulfillment reliability, constraints, cost, recovery and existing-alternative comparison |
+| energy generation | A testable energy-generation hypothesis and source-backed feasibility review | Physical constraints, measured energy balance, safety, cost and unsupported claim count |
+| author craft research | One substantive author-craft study applied to a source-faithful scene or chapter | Voice, narrative usefulness, source attribution, reader judgment and editability |
+
+### Priority and responsibility after source recovery
+
+1. Complete a recovered work conversation into a useful editable artifact, with cited recall, a deliberate correct-owner handoff, interruption/recovery and export. Native capture already preserves ten sessions/950 messages and one cited note has been reviewed; nine still await summaries. These results do not close the end-to-end outcome.
+2. Integrate the observed FrankX failed-demand repair through its receiving owner and finish feedback/privacy plus required release checks. Reconcile overlapping PR930/931 work using exact heads; do not treat the existing local five-regression pass as release acceptance.
+3. Continue the accepted Queen/terminal execution programme with identity, exclusive file leases, bounded cost and receiving receipts. The new screenshot-only cost/secrets and cockpit demands join existing owners after verification; do not deploy historical suggested proxies or start another controller.
+4. Deliver one complete creation-to-monetization package using existing accepted assets/products: useful content or media, editing/export, rights/provenance, audience journey and actual buyer evidence. Preserve the original spoken/laptop-operated vision and the demand for substantive learning/community work.
+5. Adopt research/physical invention candidates individually against feasibility, safety, existing alternatives and current founder intent. Personal aspirations and speculative science/health concepts remain private historical material until deliberately adopted.
+
+One capable lead keeps source coverage and priority; admitted makers receive exclusive bounded artifacts; reviewers inspect exact revisions; receiving owners integrate one lane at a time. Add a specialist only for independent useful work with fresh admission. At the last check, the machine admitted two concurrent workers, 13.6 GB free RAM and about 115 GiB free disk. No new daemon, scheduler, purchase, external message or product deployment was performed for this semantic expansion.
+
+Coverage and acceptance stay separate: source reviews 529/529 for the dated text snapshot; six cached images inspected/four unavailable; native session references 21 matched/eight unmatched; original attribution locators 147; PR inventory 622 is dated metadata with routing still tentative/unresolved. Most useful-artifact and buyer baselines remain UNKNOWN. The paid-product revenue objective keeps its original deadline; actual revenue remains unmeasured.
+
+Four saved text meanings remain unresolved; 208 original numbered saved items/lines are retained with source context.

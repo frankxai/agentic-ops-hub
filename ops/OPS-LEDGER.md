@@ -868,3 +868,10 @@ Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged 
 [Expanded reconciliation](plans/intent-pr-goal-reconciliation-2026-10-10.md):88 notes reviewed,36 nested measurable goals,748 overlapping demand records,25 objectives preserved. SBO1867de5 provides tested native Codex intake;ten real work sessions/950 retained messages verified. FrankX2a5ddf713 is a local failed-capture retry repair withfive regression passes. Both preserve their existing receiving issues/owners. Full continuity roundtrip, release/buyer evidence and different-provider review remain open; actual revenue unmeasured.
 
 One cited triage note completed through9 acknowledged source packets and read back;9 selected summaries pending. Operator pilot prepared privately.137 scoped proposals remain candidates, not approved products. Founder/provider acceptance and intentional owner resume remain open; no broader completion inferred.
+
+
+## 2026-10-10: Complete active-note text coverage (Codex)
+
+All 529 active saved note texts now semantically reviewed; 529 current hashes match. Six cached images inspected/four missing. All 748 earlier demand projections preserved; 1587 overlapping projections and 65 nested goal areas now linked under the existing recovery programme; 25 objectives preserved. New invention areas remain proposed; owner/task integration and useful acceptance remain open. Raw/personal/possible credential material stays private. See the expanded reconciliation plan.
+
+Four saved text meanings remain unresolved; 208 original numbered saved items/lines are retained with source context.
