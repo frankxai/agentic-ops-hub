@@ -1,5 +1,18 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
+
+[SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged
+atfe964d5a after independent xAI review/all checks. Existing organization system
+and Arcanea compatibility8.5.0 published; both public bytes match tested main
+artifacts. All377payload files identical, four installed exports and six descriptor
+domains verified. New ecosystem doctor reports bounded live package health without
+installing or granting authority. Both SDKs/memory metadata now pass; creator MCP
+workspace dependencies remain blocked. Today's session and SIS144 comment6093445212
+record proof and remaining user/creator/security/trusted-publishing gaps. Broad
+programme stays partial; preserve all previous owners and histories.
+
+
 ## 2026-10-10: hook independent review WARN; current source owner refining
 
 Grok4.7 high completed source review of older config109 `1bf683a`: WARN, nine-file coverage. Owner revision `13ebcf` addresses Node launch failure and adds native discovery; remaining findings/new merge gate require fresh review. Eligible approval still required. Older frozen source38 tests pass. [Review](https://github.com/frankxai/starlight-agent-config/pull/109#issuecomment-6093421779); preserve owner and issues78/101/98.
