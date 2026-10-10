@@ -8,8 +8,10 @@ drops tokens/provider keys/Node preloads and checks exact manual main workflow.
 Removed the workflow's duplicate user/global config path; local npm rejects it.
 Consumer runs invalidate previous success before manifest parsing or installation.
 Local12 release tests pass, including actual malformed-manifest executable denial.
-Hosted38032449883 pending at this record; inspect final Linux/Windows artifact
-consumers before reporting fresh runtime acceptance. Review71-file source packet
+Hosted38032449883 completed SUCCESS: typecheck/unit and Linux/Windows actual
+artifact consumers. Linux ten archives and nine consumer checks validate merge
+ef8a81a4 and manifest1c31845553d69632b4d11ab6663d429c66f1617640f6040c75a2ec5bb38df55a.
+Separate draft e2e job skipped. Review71-file source packet
 artifacts/review-26b9646 is prepared/not reviewed, Gitleaks clear. Earlier creator
 3e88447/1ce433d evidence is historical. Release/account/provider/customer gates open.
 
