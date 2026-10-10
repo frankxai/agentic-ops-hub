@@ -1,4 +1,19 @@
 # ⏭️ Next Prompts — per active front / terminal
+
+## Codex hooks: restore CI admission and prove Desktop adoption
+
+Read ops/sessions/2026-10-11.md and existing config issue101. Config112 at739d570
+is independently reviewed and installed; 27 active trusted hooks and 135 command
+replays across five recent cwd contexts pass. Keep both secret guards enabled and
+the two existing startup disables unchanged. Original exit106 remains unobserved;
+synthetic tests and standalone CLI reads do not establish its cause or Desktop
+hot reload. After Actions account admission is restored, rerun required CI at the
+exact reviewed head and merge normally. Reload/resume Desktop sessions and prove
+actual shell/patch/Stop events, secret denials and the upstream model-review path.
+Correlate any recurring106 with hook name/event and fresh health receipts. Preserve
+private backups, newer writers, foreign FrankX/academy Claude owners and all older
+fronts. Do not bypass CI, reset credentials or terminate other sessions.
+
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: review and release Supabase auth, then prove live account activation
 
