@@ -2,6 +2,10 @@
 
 
 
+## 2026-10-10: Estate management accepted and protection live (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213) merged at b4b82e3 from exact independently reviewed589e0d4; merged-main verify/validate pass. Registry72 preserves candidate qualifications. Unrelated documentation215 passed verify and closed without merge. Main protection requires strict app-bound verify, enforces admins, disallows force push/deletion and requires conversation resolution. Native review count0 leaves provider review as a policy gate. Three current production targets are READY under their existing owners. Prior authorization blocker is superseded; source conflicts, product acceptance and recovery gaps remain in issues29/55. See today's session.
+
 ## 2026-10-10: Estate activation blocked pending acceptance (Codex)
 
 Fresh inspection: [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains open at reviewed589e0d4; all eight committed review hashes match and verify/validate pass. Management/protection acceptance and organization/source-owner decisions remain unanswered across three consecutive turns. Independent implementation, local preservation and scoped restores are complete; the full goal is incomplete and activation is BLOCKED. Resume after the concrete decision, preserving issues29/55 and all owners. No provider settings or source checkouts changed. See today's session.
@@ -48,6 +52,70 @@ Registry ratification or production promotion. See today's session.
 ## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
 
 [Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
+
+## 2026-10-10: GenCreator isolated Companion provision verified
+
+[195](https://github.com/frankxai/gencreator.ai/pull/195), reviewed candidate
+82ef94c, merged normally to 57fcf5b. All fourteen changed files match main.
+The twelve-table gencreator_companion plane preserves founding gencreator and
+shared public. Final candidate full CI 38041775148 passes native PostgreSQL 2/2,
+948 unit cases and 244 browser cases; two existing opt-in visual captures skip.
+Exact-source Dots static review and 22 final-preview checks pass. Stable production
+READY dpl_6QAkAA1iVoon6dtahYTGWuKXjoNQ at the merge passes all 22 site/MCP checks.
+Receiving-main full CI 38042747768 passes all required jobs, including native
+SQL 2/2, 948 unit cases and 244 browser cases with the same two visual skips. Three review fixes and
+all failures are retained in [today's session](sessions/2026-10-10.md).
+PR 194 already merged/live 802e9aa with full CI and 22 stable checks.
+Managed 503, identity/provisioning, actual creation/customer/client/memory and
+commercial programme remain open. [Issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6095569523)
+and the original full goal stay active; no production database writes.
+
+## 2026-10-10: GenCreator design-hook findings triaged
+
+Two unique warnings were duplicate-reported: a real edition-cover spine and an
+`aria-pressed` selected-button underline. Inspected the released capture, source
+semantics and Territory B contract; both keep their intentional design. Two
+file-scoped rule/value exceptions are saved in repo and home-session configs.
+Prior exceptions remain; configured scans are clear and raw scans retain both
+rules. No UI changes or remaining reported findings. [PR 194](https://github.com/frankxai/gencreator.ai/pull/194),
+candidate 9a56388, merged normally at 802e9aa. Candidate/main full CI
+38036742704/38037313656 and 22 stable-production site/MCP checks pass. [Today's session](sessions/2026-10-10.md) records evidence.
+Issue 5 and the full native programme stay open; no new production claim.
+
+## 2026-10-10: GenCreator browser recovery and editable decks live
+
+[193](https://github.com/frankxai/gencreator.ai/pull/193) merged normally at 373d411
+from reviewed 6ce8692; all 25 integrated files match. Exact-final source-delta and
+visual reviews PASS; candidate/main full CI 38034399944/38034975870 pass.
+READY production dpl_FYduZEAp1GZE3hLe7NqX3qDmuaEu serves gencreator.ai/www and
+passes 117 real browser cases, 22 site/MCP and 13 editable-delivery checks. Seven
+fresh mobile samples measure CLS 0. Current downloaded deck bytes match the earlier
+native PowerPoint open/edit/save/reopen proof. Source 135 closes with its branch
+retained; 141 keeps unique Honor-edition rehearsal. Failures/review limits are in
+[the session](sessions/2026-10-10.md) and [issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6095264268). Managed readiness 503,
+identity/provisioning, actual clients/memory, customer/editorial acceptance and
+commercial comparison remain open. Both cloud test machines and owned local
+workers stopped; the original full goal remains active.
+
+## 2026-10-10: Arcanea customer chat and operator repair live
+
+[Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), reviewed6def4ff717,
+requires customer keys, binds provider identity, ignores caller tiers and denies
+unadmitted funded tools. Exact compatibility GET/POST reaches its own admission
+without cookies. The operator route contains only403; CodeQL analysis AND findings
+pass after legacy host removal. Deferred errors use fixed client/server messages.
+All21 native cases/types/lint/format, exact candidate full CI/browser and final
+Grok PASS with no critical/high/medium findings. Merged normally at6e774c165393;
+all23 reviewed files match. Production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC is READY
+at that merge, with all three Arcanea aliases;18 safe stable-domain checks pass.
+Receiving-main CI38029825907 passes on attempt2. Initial gallery duplicate-selector
+failure remains recorded; six production browser attempts did not reproduce it.
+CodeQL analysis38029825929 passes; repository-wide200 open scan alerts and12
+Dependabot alerts remain separate. Voice credential/privacy repair follows the
+private native audit. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
+and today's session retain creator/platform/commercial goals, failed/unknown
+attempts and other owners. Paid provider acceptance/full adoption remain unproved.
+
 
 ## 2026-10-10: GenCreator security/MCP and editable PPTX live
 
