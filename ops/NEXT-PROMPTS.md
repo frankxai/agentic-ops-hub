@@ -1,5 +1,19 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Portfolio: connect preserved goals to one accepted creator outcome
+
+Read the portfolio audit in ops/sessions/2026-10-10.md and re-query exact heads.
+Preserve all25portfolio objectives,65recovered goal areas and native paused states.
+Coordinate existing receiving owners rather than creating another queue. Finish
+one cited source-to-owner-to-editable-artifact roundtrip with recovery and export;
+SIS327 owns the terminal boundary, Canvas45 owns its visual acceptance, Config106
+owns proposed brand commands, and memory/source authority stays with its existing
+owner. Before launch, reconcile quota and machine admission; one maker per lane.
+Arcanea525's billing BLOCK stays with its recovery owner. Resolve independent
+review and actual host/cold-use behavior before release. Record accepted output,
+repair effort, elapsed time, measured usage and remaining gaps. Preserve all older
+pickup prompts and the broad programme; do not resume another paused goal here.
+
 ## SIS: prove the admitted OpenCode creator turn and connect the product
 
 Read the latest ops/sessions/2026-10-10.md and SIS issue144. Start with

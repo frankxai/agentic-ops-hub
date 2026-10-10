@@ -1,5 +1,29 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Portfolio and goal reconciliation, observed 02:53–02:57 CEST
+
+Read current GitHub main and selected open handover/product branches, the private
+objective ledger, native Codex goal metadata and recent lease receipts. Native
+goals total77:12active,29blocked,16paused,19usage-limited,1complete. These are stored
+states, not worker liveness. The private portfolio ledger separately has25objectives
+and205signals; its six VERIFIED outcomes include evidence-only work. Do not sum
+these stores or infer product completion. Older interface handovers say active;
+the current native goal state is paused. Preserve that pause.
+
+The latest [intent recovery211](https://github.com/frankxai/agentic-ops-hub/pull/211)
+records529 source texts and65goal areas, with only two cited recovery notes and no
+accepted receiving-owner resume. Terminal327, Canvas45, Config106/109, Command67
+and Investor42 remain drafts. Arcanea525 has a source-bound BLOCK and a separately
+owned recovery lane; its production payment path is unverified. The main local hub
+checkout is a stale July Hermes branch; preserve it and use fresh remote records.
+
+Priority proposal: finish source recovery into one owner-accepted creator artifact;
+integrate existing admission/memory/runtime receipts; complete Arcanea billing
+recovery before activation; prove one community cold-use journey before expanding
+domain packs. No service, goal state, product source, merge or deployment changed.
+This audit is an unreviewed documentation addition. See today's appended session
+for coverage, implementation boundaries and the recommended founder/community loop.
+
 ## 2026-10-10: OpenCode contract and creator revision workflow implemented
 
 [Draft SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327)
