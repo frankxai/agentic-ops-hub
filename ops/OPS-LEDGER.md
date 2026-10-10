@@ -1,29 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 <!-- starlight-delivery-20261010:start -->
-## Starlight: bound accounting recovery verified; full rollout open
+## Starlight: security patch live; full platform rollout open
 
 - Source goal `01a123d5-efa4-7420-9fc1-2d26cbcfeb27` remains active.
-- [Draft site PR 107](https://github.com/frankxai/starlightintelligence.ai/pull/107)
-  is at `4eb3c575a56df765506542ff34b9a40fc69b13a6`; production remains on
-  `4854f8800db7d8ac102c6c13e6f2aa231ec65bfb`.
-- Full CI 38033481417 passes: 192 browser cases without failures/skips/flakes,
-  17 physical financial and 16 same-database route cases. Git source matches
-  65 browser, 12 route/SQL and 14 independent-review hashes.
-- Independent source review PASS closes the two prior accounting findings only.
-  Two low-severity error-label findings remain. The broader review stays FAIL
-  for open signup ownership recovery, durable missing-output recovery and
-  retention/deletion. No unknown usage is refunded or model replay resumed.
-- Current READY preview `dpl_B2bafsyrLQ7USSfmGbbPKJj34LA5` passed eight HTTP checks.
-  Design detector flags remain 24 uppercase, 12 source caps and one touch target.
-- Clerk choice, reviewed SQL/bridge installation, maintenance invocation/alerts,
-  provider reconciliation, outbox delivery and authenticated acceptance remain
-  production gates. No live configuration, funds, inference or migration changed.
-- [Issue 82](https://github.com/frankxai/starlightintelligence.ai/issues/82) and
-  [issue 95](https://github.com/frankxai/starlightintelligence.ai/issues/95) remain
-  open. Today's session records exact revisions, failed fixture evidence and
-  review dispositions. Complete apps, memory, domains and commerce stay active.
-- Main still has high Dependabot alerts 4/3 (sharp/source-map-js). Tested fixes
-  0.35.5/1.2.2 are in PR107; separate production promotion is the next priority.
+- [Merged PR 108](https://github.com/frankxai/starlightintelligence.ai/pull/108) is live on `dbf8b5d459a1b47c80880620d84cfc5df6db1ab6`. Sharp 0.35.5 and source-map-js 1.2.2 fixes close both high alerts; current open Dependabot alerts: zero. Vercel production `dpl_74gLrvh7K9qs7zJThjm4PgUggkg6` is READY, and eight live GETs pass including WebP optimization.
+- Independent dependency source review PASS, registry integrity checks, PR/main CI and production canary pass. Main CI has 35 tests; wider PR107's 192 browser/17 financial/16 route cases remain separate. The preview filter still needs its low-severity workspace-only correction.
+- [Draft PR 107](https://github.com/frankxai/starlightintelligence.ai/pull/107) remains at `4eb3c575a56df765506542ff34b9a40fc69b13a6`. Its narrower accounting/limiter reviews pass; broader review stays FAIL for open signup and output recovery and production acceptance. Two low accounting labels remain. Unknown usage is neither refunded nor replayed.
+- Design acceptance remains open: selected release routes have zero overflow but 24 uppercase, 12 source caps and one touch flag. The wider production canary reports 59 flags, including 19 contrast and four touch findings across 138 page/viewport cases. Inspect and refine the affected surfaces. Clerk selection, reviewed SQL/bridge installation, maintenance/alerts, provider reconciliation, outbox delivery and authenticated acceptance remain gates. No live finance/identity/configuration/schedule changed in the security release.
+- [Issue 82](https://github.com/frankxai/starlightintelligence.ai/issues/82) and [issue 95](https://github.com/frankxai/starlightintelligence.ai/issues/95) stay open. Complete CLI/SDK/ADK, desktop/mobile, customer-owned memory/runtime, five domains and commercial delivery remain active. The session preserves exact source/review/failure evidence and other owners' work.
 <!-- starlight-delivery-20261010:end -->
 
 

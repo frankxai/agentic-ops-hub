@@ -1,22 +1,8 @@
 # ⏭️ Next Prompts — per active front / terminal
 <!-- starlight-delivery-20261010:start -->
-## Starlight: finish recovery and design before production activation
+Continue the active Starlight goal. Security PR108 is merged and live at `dbf8b5d459a1b47c80880620d84cfc5df6db1ab6`; both high dependency alerts are fixed and zero remain open. Review/registry/CI, eight production GETs and the production canary passed. Keep security branch `ea12d0a5819fc4bb2f3f9786a260e07c9743838a` and the larger draft PR107 at `4eb3c575a56df765506542ff34b9a40fc69b13a6` distinct.
 
-Continue goal `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`, draft site PR 107 and
-issues 82/95. Candidate `4eb3c575a56df765506542ff34b9a40fc69b13a6` on
-`agent/codex/starlight-platform-delivery-20261010` has full CI 38033481417 green:
-192 browser, 17 physical financial and 16 same-database route cases. Accounting
-review PASS closes lost-start/daily closure and empty unknown-usage telemetry
-findings. Limiter PASS covers TTL repair/mapped IPv4. Both are narrow; the broader
-a3cb804 review remains FAIL. Read extracted verdicts, never raw reasoning JSONL.
-Re-query candidate, receiving main, preview and production before release.
-
-First inspect open dependency-related PR diffs and current Dependabot alerts
-4/3. Main still reports high sharp/source-map-js advisories; tested fixes
-0.35.5/1.2.2 are in this candidate. Promote only that reviewed security patch
-through an owned branch with CI and actual production verification, without
-waiting for Clerk or claiming a product launch. Preserve the larger PR107 work.
-Use fresh storage/machine admission before any additional worktree or build.
+First fix the review's low workspace-only preview-filter omission in `scripts/should-deploy.sh`, with a meaningful deploy-filter regression, in the existing owned platform worktree after fresh routing/lane checks. Then close first-join lost-response ownership recovery using stable first-request proof and an atomic join/token contract; an email-only repeat cannot gain answer authority. Test lost ACK, concurrent retries, different request proof and native/enhanced forms. Preserve the rejection evidence and existing product decisions.
 
 Preserve the atomic bridge and its installation order: lifecycle and financial
 schemas first, `budget-curator-runs.sql` afterward. Fix the two low-severity labels
@@ -26,8 +12,8 @@ Implement missing-brief retrieval with explicit retention/deletion and customer
 ownership/consent, retaining editing/export and avoiding a second provider call.
 Resolve actual provider-unknown holds through evidence and an operational owner.
 
-Inspect `/trust` uppercase kickers in `app/trust/trust.module.css` and the touch
-target from current responsive evidence, then verify rendered corrections under
+Inspect the wider production canary's 19 contrast and four touch flags, alongside
+`/trust` uppercase kickers in `app/trust/trust.module.css`, then verify rendered corrections under
 Emil/brand/accessibility rules. Design acceptance remains open. The Clerk app
 name/URL question is pending; inspect the actual app before dependent config.
 The healthy existing Supabase has no candidate migrations/linked users; Vercel
@@ -39,6 +25,8 @@ Continue the complete CLI/SDK/ADK, desktop/mobile, customer-owned memory/runtime
 OAuth/jobs, five-domain design and commercial outcome. Preserve all source PRs,
 unfinished tasks and other owners. Fresh guards, guide hashes and write lanes are
 required; handoff lanes are released. Save the hub handover and existing issues.
+
+Use fresh storage/machine admission before heavy work. The task has used all three admitted new worktrees; preserve and reuse its existing owned lanes.
 <!-- starlight-delivery-20261010:end -->
 
 
