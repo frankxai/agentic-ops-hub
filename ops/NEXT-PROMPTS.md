@@ -1,3 +1,10 @@
+
+## Arcanea current engineering slice: exact router review, then live sandbox acceptance
+
+```text
+Read ops/sessions/2026-10-10.md and ecosystem issue #6. Resume the owned local agent/codex/sovereign-router-20261010 branch (HEAD 1851d7f) in arcanea-orchestrator/packages/router. Hono + CF text proxy, capability routing, DO quota/attempt receipts and Polar sandbox outbox pass 9 tests, scoped lint and frozen pnpm lock checks. Do not expose this as paid inference. Obtain a strictly tool-free, independently provided review on the final source hash; prior Claude/Grok/Gemini attempts produced no verdict. Then verify actual CF account catalog, native Vertex/Groq/DeepSeek access, cancellation and sandbox Polar dedup/reconciliation. Add evaluated routing/caching only with tenant/canon/version isolation and cloud consent; caching/logging currently disabled. Paid credits, streaming, unknown usage, retention and actual latency/cost acceptance remain open. Preserve local Author 06e2fc7, Studio 096e127 and archived Claw 4040a06; browser QA and gateway-owner patch are still pending. Neither C2PA nor Polar covers the proposed Bazaar automatically. Never replace the governance's goals with unmeasured compliance/margin/FPS claims. Keep issue and ledger current, source branches local until review, and preserve all other owners.
+```
+
 # ⏭️ Next Prompts — per active front / terminal
 
 ## Arcanea: scaffold Edge Model Router (api.arcanea.ai) on Hono + Cloudflare Workers
