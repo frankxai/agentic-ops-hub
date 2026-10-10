@@ -2,6 +2,20 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+SIS current tipd3d66f7eae731cfd19b1256a1de0796a66847e47 fixes malformed gateway
+metadata: invalid present expiry or non-array/non-string privacy tags drop the row.
+Reproduced before the fix against exact previously hosted gateway bytes: null
+expiry became a public fact without expiry; string private tags became shareable.
+New exported-reader and official MCP-client regression keeps valid neighbors,
+preserves valid expired metadata and excludes private/expired/malformed recall.
+Hosted38033646827 completed SUCCESS all six jobs. Current three archives and
+consumer/benchmark binding validate merge7a2309fa and clean manifest
+c069394134012c68c8ee4bf62a8cbbfbae55ea14c555811fddf45916581926b2.
+Current61-file immutable git-blob review packet artifacts/npm-review/d3d66f7e
+is prepared/not reviewed and Gitleaks clear, deleted npm lock recorded separately.
+Local build HOLD5793MB/8192, no rebuild/install/reviewer. Earlier0f/5dd/a365
+review/receipt evidence is historical for current runtime. Preserve full goal.
+
 Latest continuation: native tool-free Claude review of creator26b9646 returned
 usage_limit_reached, no inference/verdict. Actual reset timestamp is11 October
 2026 at06:00Europe/Amsterdam; do not repeat that route before account state changes.

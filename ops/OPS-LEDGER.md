@@ -1,5 +1,18 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: reject malformed gateway privacy and retention (Codex)
+
+SIS draft342 pushed atd3d66f7eae731cfd19b1256a1de0796a66847e47. Verified previous
+hosted gateway accepts null expiry as unexpired public data and string private
+tags as shareable. Present invalid expiry or malformed tag shape now drops the
+record, preserving valid neighbors. Added exported-reader/official-client recall
+regression with authorized shareable access. Hosted38033646827 completed SUCCESS
+all six jobs; current three archives/consumer validate merge7a2309fa and manifest
+c069394134012c68c8ee4bf62a8cbbfbae55ea14c555811fddf45916581926b2.
+Current61-file review packet prepared/not reviewed and Gitleaks clear.
+Build HOLD5793MB/8192, no local rebuild; syntax/diff pass.
+Independent review/account/publication and full platform/value acceptance open.
+
 ## 2026-10-10: independent-review route and published scanner triage (Codex)
 
 Creator26b9646 review attempted with native Claude2.1.295, no tools/MCP and bounded
