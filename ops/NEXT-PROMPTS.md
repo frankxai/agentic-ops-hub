@@ -1,26 +1,27 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Arcanea adoption: finish security release, then prove a creator journey
+## Arcanea adoption: voice admission and a verified creator journey
 
 Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
-Read today's session/PR554 and requery heads. Own lane
+Read today's session, merged PR554 and requery heads. Preserved release lane
 `C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/gateway-admission-20261010`, published6def4ff717 from accepted
-e739. All21 native cases/direct types/lint/format and current Linux lint/types/
-CodeQL pass; full build/browser pending. Current6def READY preview passes18 safe
-HTTP contracts. Public operator implementation removed,403 retained; deferred
-errors sanitized client/server. UI streams are private/no-store/no-transform with
-no buffering; malformed body400 and blank key401 recover clearly. Poll final
-reviewer16622 (05:53:12UTC, deadline06:38:12UTC), no tools/web/subagents. Earlier
-713 complete PASS had two medium corrections now fixed; older review does not
-approve current source. Stop only owned reviewer on deadline/handoff.
+branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
+e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
+full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
+reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
+has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
+CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
+selector with duplicate matches. Six bounded cloud-browser production attempts
+passed without reproducing it; keep the failure and unresolved cause visible.
+No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
+findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
 
-Integrate normally after exact-source review/full gates. Verify production aliases,
-source SHA, compatibility health200/key denial401, UI/alias401, surrounding auth401
-and tool/operator403. Next close the separately reproduced anonymous server-key
-spending in transcribe/speak, preserving customer voice behavior with tested
-request-key admission and sanitized failures. Dummy-only actual-route/proxy proof
-is in the private voice-admission-audit receipt; live keys were not inspected.
+Create the next owned branch from verified current main; retain the merged source
+branch and foreign lanes. Next repair voice credential admission and privacy,
+preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
+private voice-admission-audit receipt; live keys were not inspected. Repository
+security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
+the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
 Keep managed inference disabled until durable authenticated
 entitlements/reservations exist. Prove actual existing-source generation, reopening,
 editing, interruption recovery and export with user/editorial acceptance; compare

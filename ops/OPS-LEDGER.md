@@ -1,19 +1,21 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: Arcanea customer chat and operator security, release pending
+## 2026-10-10: Arcanea customer chat and operator repair live
 
-[Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), candidate6def4ff717,
+[Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), reviewed6def4ff717,
 requires customer keys, binds provider identity, ignores caller tiers and denies
 unadmitted funded tools. Exact compatibility GET/POST reaches its own admission
 without cookies. The operator route contains only403; CodeQL analysis AND findings
 pass after legacy host removal. Deferred errors use fixed client/server messages.
-All21 native cases/types/lint/format/current security pass. Previous713 full CI/
-desktop/mobile/reduced-motion passed; current rerun pending. Current6def preview
-READY,18 safe HTTP contracts pass. Complete713 Grok PASS had two medium cache/
-recovery corrections now fixed; complete6def review is running. A separate
-dummy-only actual proxy/voice-route audit reproduced anonymous server-key forwarding
-in transcribe/speak, next repair under529. Production READY at accepted
-e739; this repair not promoted. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
+All21 native cases/types/lint/format, exact candidate full CI/browser and final
+Grok PASS with no critical/high/medium findings. Merged normally at6e774c165393;
+all23 reviewed files match. Production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC is READY
+at that merge, with all three Arcanea aliases;18 safe stable-domain checks pass.
+Receiving-main CI38029825907 passes on attempt2. Initial gallery duplicate-selector
+failure remains recorded; six production browser attempts did not reproduce it.
+CodeQL analysis38029825929 passes; repository-wide200 open scan alerts and12
+Dependabot alerts remain separate. Voice credential/privacy repair follows the
+private native audit. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
 and today's session retain creator/platform/commercial goals, failed/unknown
 attempts and other owners. Paid provider acceptance/full adoption remain unproved.
 
