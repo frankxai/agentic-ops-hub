@@ -2,6 +2,16 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Final creator hosted38035482758 completed SUCCESS: typecheck/unit plus Windows/
+Linux release-artifact consumers. Separate draft e2e skipped. Downloaded Linux
+all ten archives, validated both digests, entry/license/version/dependency order
+and nine consumer checks against clean mergeb3b6356ce99f5952f746c4569dd7e54f69539e90,
+manifestSHA256bbd14d22f77072aaff4179f29a0ddc7ed505afcebb092c507c0e493e970df3de.
+GitHub confirms merge parentsffdbdc68/bd0b303. Current73-file packet refreshed,
+prepared/not reviewed. Windows receipt locally undownloaded; hosted job success
+only. Review/publication/DNS/body/provider/customer gates remain open.
+
+
 Creator current tipbd0b30367ae5d60e4ec622df3dd016cc69ed39c4 fixes provider
 redirect header leakage and cancellation. Cross-origin caller headers/credentials
 removed; payload replay/downgrade/URL credentials denied;20-hop cap/sharedtimer/

@@ -2,6 +2,16 @@
 
 ## 2026-10-10: creator provider redirect and cancellation boundary (Codex)
 
+Final creator hosted38035482758 completed SUCCESS: typecheck/unit plus Windows/
+Linux release-artifact consumers. Separate draft e2e skipped. Downloaded Linux
+all ten archives, validated both digests, entry/license/version/dependency order
+and nine consumer checks against clean mergeb3b6356ce99f5952f746c4569dd7e54f69539e90,
+manifestSHA256bbd14d22f77072aaff4179f29a0ddc7ed505afcebb092c507c0e493e970df3de.
+GitHub confirms merge parentsffdbdc68/bd0b303. Current73-file packet refreshed,
+prepared/not reviewed. Windows receipt locally undownloaded; hosted job success
+only. Review/publication/DNS/body/provider/customer gates remain open.
+
+
 Creator draft6 pushedbd0b30367ae5d60e4ec622df3dd016cc69ed39c4, clean owned
 agent/codex/creator-npm-release-20261010 lane, root guides absent, README/SECURITY
 explicitly read before edits; no deeper scope guides. Guard/named-file check pass.
