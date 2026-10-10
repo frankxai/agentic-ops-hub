@@ -1,5 +1,58 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+
+
+## 2026-10-10: Estate management accepted and protection live (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213) merged at b4b82e3 from exact independently reviewed589e0d4; merged-main verify/validate pass. Registry72 preserves candidate qualifications. Unrelated documentation215 passed verify and closed without merge. Main protection requires strict app-bound verify, enforces admins, disallows force push/deletion and requires conversation resolution. Native review count0 leaves provider review as a policy gate. Three current production targets are READY under their existing owners. Prior authorization blocker is superseded; source conflicts, product acceptance and recovery gaps remain in issues29/55. See today's session.
+
+## 2026-10-10: Estate activation blocked pending acceptance (Codex)
+
+Fresh inspection: [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains open at reviewed589e0d4; all eight committed review hashes match and verify/validate pass. Management/protection acceptance and organization/source-owner decisions remain unanswered across three consecutive turns. Independent implementation, local preservation and scoped restores are complete; the full goal is incomplete and activation is BLOCKED. Resume after the concrete decision, preserving issues29/55 and all owners. No provider settings or source checkouts changed. See today's session.
+
+## 2026-10-10: Duplicate Git ref preservation verified (Codex)
+
+Eight checkouts/four duplicate-source groups have private full-ref bundles and strict isolated-object-store recovery checks. Source metadata was unchanged. All four dirty checkouts now also have private snapshots of46 listed files, indexes and staged/unstaged binary patches, verified by CRC/byte checks. Scoped applied restores now pass for all46 captured files and332 index objects, including four tracked files reconstructed from patches. Complete checkouts, ignored files, LFS, submodules and offsite recovery remain unproved. Missing configured storage capability was diagnosed using an inspected private historical NoWrite copy; its owner repair is open. [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains reviewed589e0d4; management/protection and organization decisions pending. Existing issues29/55 retain the remaining work. See today's session.
+
+## 2026-10-10: Estate exact-head provider PASS; activation pending (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `589e0d4`: actual Antigravity PASS covers prior full8-file/13-part source and complete2-file delta, matching all current hashes. All117 tests and exact-head verify/validate pass. Governance verify now runs all PRs; push restricted to main avoids duplicate branch runs. Corrected app-bound verify protection payload remains unapplied. Concrete merge/protection acceptance and organization choice pending; Registry owner/source/publication review, local recovery and production acceptance remain open in issues29/55. Reviewer stopped; static review is not a release or legal/ownership verdict. See today's session.
+
+## 2026-10-10: Deployment source candidate records prepared (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `e62dea4`:18 source candidate records proposed with unresolved owner/product/source/release authority; original54 records/conflicts preserved. Proposed Registry72; reviewed main54. Nine provider-public sources retain pending publication review. All117 tests, Registry validation and exact-head verify/validate pass. Candidate reconciliation retains required owner review and no mutation authority for all18. Independent approval, owner decision, acceptance, protection, local recovery and production-flow proof remain open in issues29/55. See today's session.
+
+## 2026-10-10: Estate continuation and recovery evidence (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `60ffbb4`: 26 cloud findings repaired across six rounds; 117 local tests and exact-head verify/validate pass. Scoped second-provider review timed out at450s; cloud quota exhausted; approval remains open. Four duplicate-source groups retain distinct observed histories and guide gaps. Ops protection payload prepared, not applied; sole reviewer cannot independently approve own changes. Owner decision, 18 source admissions, local recovery and production-flow acceptance remain open in issues29/55. Session-owned reviewer and credential link removed. See today's session.
+
+## 2026-10-10: Estate review repairs and 18 deployment source captures (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `167b3e7`: six additional findings repaired, 20 across five rounds; 109 tests and current-head verify/validate pass. All 18 missing source admissions have exact identities and fresh READY target metadata; source authority/customer flows remain unverified. Public family-code versus private-instance treatment corrected from documentation. Complete Grok review timed out at600s without verdict; final approval/ratification open. Owned reviewer stopped and credential link removed; foreign processes preserved. Existing issues29/55 and full end-to-end goal remain open. See today's session.
+
+## 2026-10-10: Production Registry proposal implemented; end-to-end goal continues (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `64fa593`: three validated production bindings, 20 visibility observations, 12 private declarations resolved; eight public observations remain unclassified. 104 tests and exact-head verify/validate pass. Four review rounds repaired 14 findings. Final independent approval remains open: Claude weekly limit; bounded Grok reviews timed out without verdict. Production protections preserved; private Ops main lacks enforcement. Existing issues29/55 retain ratification and source recovery. Goal remains active; no transfer, permission/spend change or production promotion. See today's session.
+
+## 2026-10-10: Estate ownership proposal and reconciliation ready for review (Codex)
+
+Private canonical [ops PR213](https://github.com/frankxai/agentic-ops/pull/213)
+at `2944009f23312062440dedbc9cb1b5dfacd5dea5` proposes two active company
+namespaces, preserves personal/community boundaries and adds a read-only
+source reconciler. All 91 script tests and final-head verify CI passed. Twelve
+cloud code-review findings across three rounds were fixed with regressions. The hosted Claude
+review failed incomplete before a verdict; the security-review connector reported
+a usage limit. Final-head independent approval remains open.
+Detailed deployment,
+local-path and provider observations stay
+private. [Issue29](https://github.com/frankxai/agentic-ops/issues/29) records
+ratification; issue55 retains reconciliation. No transfer, privacy/spend change,
+Registry ratification or production promotion. See today's session.
+
+## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
+
+[Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
+
 ## 2026-10-10: GenCreator isolated Companion provision verified
 
 [195](https://github.com/frankxai/gencreator.ai/pull/195), reviewed candidate

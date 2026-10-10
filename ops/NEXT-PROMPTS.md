@@ -1,5 +1,33 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Estate management: use accepted main and continue source recovery
+
+Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
+All eight committed hashes match Antigravity PASS; merged-main verify/validate
+pass. Main requires strict app-bound verify15368, enforced for admins, with no
+force push/deletion. Unrelated documentation215 passed and closed without merge.
+Independent provider review remains a policy gate, not technical enforcement.
+Frank's explicit merge/production instruction supersedes the acceptance blocker.
+
+Use the accepted72-record Registry and preserve all18 source candidate
+qualifications. Refresh projections at accepted main SHA; unresolved owners
+remain unresolved. Preserve existing product owners and source conflicts.
+Current READY production targets: Arcanea6e774c1, FrankXb7e617b, GenCreator57fcf5b.
+Customer acceptance belongs to their existing product issues.
+
+Eight Git bundles and four dirty snapshots have scoped applied restore proof
+for46 files and332 index objects. Complete checkouts, ignored files, LFS,
+external submodules and offsite recovery remain open. Repair missing source
+guidance and storage capability in admitted lanes. Retain issues29/55. Keep
+private Pro-dependent sources until equivalent protection/integration gates
+pass; no mass transfer or paid-plan change follows from this acceptance.
+
+## Arcanea: reconcile the migration map before any transfers
+
+Read ops/reviews/arcanea-migration-crown-audit-20261010.md and ecosystem issue6. Preserve Gemini's handover/strategy and all unfinished source branches. Reconcile the distinct Arcanea-Labs/Arcanea and frankxai/arcanea histories and the existing Arcanea-Labs/Starlight-Intelligence-System repository. Verify every named source/destination ID, visibility, archive state, private protections, Actions secrets, deployment app access, OIDC trust, Packages and Pages dependency. Correct the gh repo rename transfer instructions in the owner's lane. Use selective public migration; retain private Pro-dependent repositories until the feature/cost decision is accepted. Reuse the existing creator/billing recovery work; compare one actual consented task through the accepted inference path and Worker before adding a gateway. Obtain exact-revision release review and live recovery/latency evidence. No transfer, archival, visibility or paid-plan change is authorized by the old embedded commands. Save both the hub and existing product issue; keep unresolved work open.
+
+## GenCreator: connect the accepted creator loop and managed platform
+
 ## Arcanea adoption: voice admission and a verified creator journey
 
 Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
