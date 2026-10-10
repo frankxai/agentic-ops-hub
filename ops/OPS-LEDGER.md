@@ -1,4 +1,337 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+<!-- starlight-delivery-20261010:start -->
+## Starlight platform delivery, 10 October 2026
+
+- Done: [PR107](https://github.com/frankxai/starlightintelligence.ai/pull/107) and [PR109](https://github.com/frankxai/starlightintelligence.ai/pull/109) merged normally. Latest main `1f1ff7e`, Vercel `dpl_7qLawsYTWXmZrhmn7uQV24W9aeWh` READY; security PR108 preserved. Released interruption/edit/export recovery, first-signup proof recovery, scoped original-brief recovery, corrected accounting labels and pytest security pin.
+- Verified: two exact-head recovery source PASS reviews plus the test-security PASS review, failed/time-limited evidence preserved. [Latest main CI38052675008](https://github.com/frankxai/starlightintelligence.ai/actions/runs/38052675008) PASS: 443 Node / 17 financial PostgreSQL / 210 browser cases and 79 main source hashes. [Latest live canary38052701792](https://github.com/frankxai/starlightintelligence.ai/actions/runs/38052701792) PASS: 138 page/viewport rows / seven team HTTP cases. Live 24 HTTP checks / five public MCP checks / five homes HTTP200. Seventy-eight current candidate/platform-main capture companions/ledger records; latest follow-up JSON proofs retained.
+- Database: existing EU migration `20261010122233` installed; exact stored 45,655-byte SQL/hash bound, eight RLS tables / sixteen service-only invoker RPCs verified. Existing business rows and identity/Reality Architect preserved; no customer/funds/usage rows created. Two pre-existing unrelated advisor warnings remain scoped in the session.
+- Security: GitHub alert5 fixed at12:40:07 UTC; fresh query zero open Dependabot alerts. Code scanning is not enabled, so no whole-product security certification. Secret hooks stayed enabled; hub verify/estate scan required.
+- Open: actual Clerk app/server credentials, customer membership/funding/rates, KV/Resend/reconciliation, maintenance invocation/alerts/expiry/backups, billing/licensing, wider craft and real customer acceptance. Full apps/router/cloud/five-domain/commercial objective remains unfinished. Peer SDK8.5.1/AGY handover PR237 is preserved; do not duplicate its published release or claim its creator acceptance.
+- Saves: current hub session/ledger/prompt and product issues [82 release update](https://github.com/frankxai/starlightintelligence.ai/issues/82#issuecomment-6097629776) / [95 release update](https://github.com/frankxai/starlightintelligence.ai/issues/95#issuecomment-6097630223). Source task `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`; hub lane `codex-7d9cfc62`, dedicated worktree. Earlier pause and other records preserved; full objective not closed.
+<!-- starlight-delivery-20261010:end -->
+
+
+## 2026-10-10: AGY source review and Antigravity harmony fix
+
+[SIS346](https://github.com/frankxai/Starlight-Intelligence-System/pull/346) merged
+to df806312 after35 adapter tests, typecheck, required CI and reconciled independent
+xAI PASS at20eddb98. Default MCP scaffold inert; explicit entry preserved without
+full-scope or unverified native activation claims. Actual isolated AGY review of
+first draft observed no effectful steps; advertised tools remain and its older
+PASS is not final-revision approval. All owned reviewers stopped/links removed.
+[SDK8.5.1 release347](https://github.com/frankxai/Starlight-Intelligence-System/pull/347)
+merged to9887aa8f after independent c2fe2fc3 PASS, required CI and main candidate
+38052541563 PASS. Earlier RAM HOLD resolved with bounded8674MB/quietCPU70%.
+Both8.5.1 npm publications verified against tested main bytes and latest tags
+at12:40:46Z.377 non-manifest files match across scopes. Production canary
+38052578072 PASS; live doctor retains creator-MCP0.1 blocked. Current AGY prompt in NEXT-PROMPTS drives real creator
+edit/recovery/export/receiving-owner acceptance and retains all broader goals.
+Creator issue4 and SIS144 stay open; no foreign ownership/unknown-run cleanup.
+
+
+## 2026-10-10: GenCreator Supabase identity choice implemented
+
+Frank confirmed Supabase sessions with explicit Starlight linking. [PR196](https://github.com/frankxai/gencreator.ai/pull/196)
+reviewed cc6965d merged normally to8d17f46; all27 files match. Consent/OIDC proof,
+existing canonical membership, durable retries/removal and the preserving14-table
+upgrade pass final full CI38047625481: native3/3 without skips,971 unit and250 browser
+cases; two existing optional visual skips. Independent auth/data and exact-final
+delta reviews PASS. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd at8d17f46
+passes22 site/MCP and7 account failure contracts. MainCI38048478637 attempt2 passes
+all required jobs; first execution canceled during metadata updates and is retained. Public375/1440 sign-in captures inspected;
+authenticated linking is unproved. No live SQL/config/credential writes; managed503.
+Frank's infrastructure approval, staging/real-account/retention acceptance and
+full adoption programme remain open. [Today's session](sessions/2026-10-10.md) and
+[issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6097126763) retain the evidence.
+
+ 🛰️ Agentic Ops Ledger — Single Source of Truth
+
+
+
+## 2026-10-10: Estate management accepted and protection live (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213) merged at b4b82e3 from exact independently reviewed589e0d4; merged-main verify/validate pass. Registry72 preserves candidate qualifications. Unrelated documentation215 passed verify and closed without merge. Main protection requires strict app-bound verify, enforces admins, disallows force push/deletion and requires conversation resolution. Native review count0 leaves provider review as a policy gate. Three current production targets are READY under their existing owners. Prior authorization blocker is superseded; source conflicts, product acceptance and recovery gaps remain in issues29/55. See today's session.
+
+## 2026-10-10: Estate activation blocked pending acceptance (Codex)
+
+Fresh inspection: [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains open at reviewed589e0d4; all eight committed review hashes match and verify/validate pass. Management/protection acceptance and organization/source-owner decisions remain unanswered across three consecutive turns. Independent implementation, local preservation and scoped restores are complete; the full goal is incomplete and activation is BLOCKED. Resume after the concrete decision, preserving issues29/55 and all owners. No provider settings or source checkouts changed. See today's session.
+
+## 2026-10-10: Duplicate Git ref preservation verified (Codex)
+
+Eight checkouts/four duplicate-source groups have private full-ref bundles and strict isolated-object-store recovery checks. Source metadata was unchanged. All four dirty checkouts now also have private snapshots of46 listed files, indexes and staged/unstaged binary patches, verified by CRC/byte checks. Scoped applied restores now pass for all46 captured files and332 index objects, including four tracked files reconstructed from patches. Complete checkouts, ignored files, LFS, submodules and offsite recovery remain unproved. Missing configured storage capability was diagnosed using an inspected private historical NoWrite copy; its owner repair is open. [Ops213](https://github.com/frankxai/agentic-ops/pull/213) remains reviewed589e0d4; management/protection and organization decisions pending. Existing issues29/55 retain the remaining work. See today's session.
+
+## 2026-10-10: Estate exact-head provider PASS; activation pending (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `589e0d4`: actual Antigravity PASS covers prior full8-file/13-part source and complete2-file delta, matching all current hashes. All117 tests and exact-head verify/validate pass. Governance verify now runs all PRs; push restricted to main avoids duplicate branch runs. Corrected app-bound verify protection payload remains unapplied. Concrete merge/protection acceptance and organization choice pending; Registry owner/source/publication review, local recovery and production acceptance remain open in issues29/55. Reviewer stopped; static review is not a release or legal/ownership verdict. See today's session.
+
+## 2026-10-10: Deployment source candidate records prepared (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `e62dea4`:18 source candidate records proposed with unresolved owner/product/source/release authority; original54 records/conflicts preserved. Proposed Registry72; reviewed main54. Nine provider-public sources retain pending publication review. All117 tests, Registry validation and exact-head verify/validate pass. Candidate reconciliation retains required owner review and no mutation authority for all18. Independent approval, owner decision, acceptance, protection, local recovery and production-flow proof remain open in issues29/55. See today's session.
+
+## 2026-10-10: Estate continuation and recovery evidence (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `60ffbb4`: 26 cloud findings repaired across six rounds; 117 local tests and exact-head verify/validate pass. Scoped second-provider review timed out at450s; cloud quota exhausted; approval remains open. Four duplicate-source groups retain distinct observed histories and guide gaps. Ops protection payload prepared, not applied; sole reviewer cannot independently approve own changes. Owner decision, 18 source admissions, local recovery and production-flow acceptance remain open in issues29/55. Session-owned reviewer and credential link removed. See today's session.
+
+## 2026-10-10: Estate review repairs and 18 deployment source captures (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `167b3e7`: six additional findings repaired, 20 across five rounds; 109 tests and current-head verify/validate pass. All 18 missing source admissions have exact identities and fresh READY target metadata; source authority/customer flows remain unverified. Public family-code versus private-instance treatment corrected from documentation. Complete Grok review timed out at600s without verdict; final approval/ratification open. Owned reviewer stopped and credential link removed; foreign processes preserved. Existing issues29/55 and full end-to-end goal remain open. See today's session.
+
+## 2026-10-10: Production Registry proposal implemented; end-to-end goal continues (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `64fa593`: three validated production bindings, 20 visibility observations, 12 private declarations resolved; eight public observations remain unclassified. 104 tests and exact-head verify/validate pass. Four review rounds repaired 14 findings. Final independent approval remains open: Claude weekly limit; bounded Grok reviews timed out without verdict. Production protections preserved; private Ops main lacks enforcement. Existing issues29/55 retain ratification and source recovery. Goal remains active; no transfer, permission/spend change or production promotion. See today's session.
+
+## 2026-10-10: Estate ownership proposal and reconciliation ready for review (Codex)
+
+Private canonical [ops PR213](https://github.com/frankxai/agentic-ops/pull/213)
+at `2944009f23312062440dedbc9cb1b5dfacd5dea5` proposes two active company
+namespaces, preserves personal/community boundaries and adds a read-only
+source reconciler. All 91 script tests and final-head verify CI passed. Twelve
+cloud code-review findings across three rounds were fixed with regressions. The hosted Claude
+review failed incomplete before a verdict; the security-review connector reported
+a usage limit. Final-head independent approval remains open.
+Detailed deployment,
+local-path and provider observations stay
+private. [Issue29](https://github.com/frankxai/agentic-ops/issues/29) records
+ratification; issue55 retains reconciliation. No transfer, privacy/spend change,
+Registry ratification or production promotion. See today's session.
+
+## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
+
+[Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
+
+## 2026-10-10: GenCreator isolated Companion provision verified
+
+[195](https://github.com/frankxai/gencreator.ai/pull/195), reviewed candidate
+82ef94c, merged normally to 57fcf5b. All fourteen changed files match main.
+The twelve-table gencreator_companion plane preserves founding gencreator and
+shared public. Final candidate full CI 38041775148 passes native PostgreSQL 2/2,
+948 unit cases and 244 browser cases; two existing opt-in visual captures skip.
+Exact-source Dots static review and 22 final-preview checks pass. Stable production
+READY dpl_6QAkAA1iVoon6dtahYTGWuKXjoNQ at the merge passes all 22 site/MCP checks.
+Receiving-main full CI 38042747768 passes all required jobs, including native
+SQL 2/2, 948 unit cases and 244 browser cases with the same two visual skips. Three review fixes and
+all failures are retained in [today's session](sessions/2026-10-10.md).
+PR 194 already merged/live 802e9aa with full CI and 22 stable checks.
+Managed 503, identity/provisioning, actual creation/customer/client/memory and
+commercial programme remain open. [Issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6095569523)
+and the original full goal stay active; no production database writes.
+
+## 2026-10-10: GenCreator design-hook findings triaged
+
+Two unique warnings were duplicate-reported: a real edition-cover spine and an
+`aria-pressed` selected-button underline. Inspected the released capture, source
+semantics and Territory B contract; both keep their intentional design. Two
+file-scoped rule/value exceptions are saved in repo and home-session configs.
+Prior exceptions remain; configured scans are clear and raw scans retain both
+rules. No UI changes or remaining reported findings. [PR 194](https://github.com/frankxai/gencreator.ai/pull/194),
+candidate 9a56388, merged normally at 802e9aa. Candidate/main full CI
+38036742704/38037313656 and 22 stable-production site/MCP checks pass. [Today's session](sessions/2026-10-10.md) records evidence.
+Issue 5 and the full native programme stay open; no new production claim.
+
+## 2026-10-10: GenCreator browser recovery and editable decks live
+
+[193](https://github.com/frankxai/gencreator.ai/pull/193) merged normally at 373d411
+from reviewed 6ce8692; all 25 integrated files match. Exact-final source-delta and
+visual reviews PASS; candidate/main full CI 38034399944/38034975870 pass.
+READY production dpl_FYduZEAp1GZE3hLe7NqX3qDmuaEu serves gencreator.ai/www and
+passes 117 real browser cases, 22 site/MCP and 13 editable-delivery checks. Seven
+fresh mobile samples measure CLS 0. Current downloaded deck bytes match the earlier
+native PowerPoint open/edit/save/reopen proof. Source 135 closes with its branch
+retained; 141 keeps unique Honor-edition rehearsal. Failures/review limits are in
+[the session](sessions/2026-10-10.md) and [issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6095264268). Managed readiness 503,
+identity/provisioning, actual clients/memory, customer/editorial acceptance and
+commercial comparison remain open. Both cloud test machines and owned local
+workers stopped; the original full goal remains active.
+
+## 2026-10-10: Arcanea voice555 live; author556 recovery under review
+
+[Voice555](https://github.com/frankxai/arcanea-ai-app/pull/555) merged normally at
+8a47d6b7154164770d9fbd6daafe4a08fca38678 from reviewed79de1581be6c.
+Customer audio keys, safe errors, exact draft/text preservation, same-origin room
+transport, elapsed-time VAD and accessible persistent recovery are live.
+Independent Grok PASS has zero remaining critical/high/medium findings after the
+retry-alert Dismiss correction; formal source/file/hash receipt is on the PR.
+Candidate CI38049456450 and refreshed38050132165 passed, including24 voice/21chat
+native cases and six compiled desktop/mobile/reduced-motion behavior rows.
+CodeQL38049456393 analysis/findings passed. Receiving-main CI38050586413 passed.
+Production dpl_F4kk81cSsSd3jus8SaiV2Jjeq9Nu is READY at8a47, with all three aliases.
+Eight directwww denials and all24 canonical host cases are verified across
+receipts: initial308alias expectations were corrected; three cases then hit the
+existing20/min quota and passed after its window. No spoofed IP, live provider
+key, paid audio-quality claim or publication. Failed receipts remain preserved.
+
+[Author556](https://github.com/frankxai/arcanea-ai-app/pull/556) is open at
+af79dbbde4b6077694cfbc8fd228b3aba2c425b3, from receiving-main8a47, fifteen files.
+Exact revision saves, rich owner reopening, account-bound browser recovery,
+current editor feedback/customer Anthropic admission and mobile controls are
+implemented. Production lacked book_chapter_drafts despite its committed20260414
+migration. Additive/idempotent owner-only repair plus real disposablePostgreSQL
+ownership/reapplication cases passed CI38050697708, alongside native10,
+full lint/types/build. Ready-event browser/CodeQL and exact review remain pending.
+Owned native reviewer82446 runs under BOUNDED12422MB/6144required,45-minute limit;
+private lifecycle/packet bind exactaf79. No parallel agents or local browser.
+Production DDL remains unapplied. SupportedBrowser reports no connected instance;
+anonymous sign-in is disabled and no admin key configured. Frank chose an
+existing private test-account setup; its location is requested. Authenticated
+save/reopen and paid/editorial acceptance remain open under276/529. The native
+tracker still reports paused despite explicit continuation; do not call complete.
+
+## 2026-10-10: Arcanea customer chat and operator repair live
+
+[Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), reviewed6def4ff717,
+requires customer keys, binds provider identity, ignores caller tiers and denies
+unadmitted funded tools. Exact compatibility GET/POST reaches its own admission
+without cookies. The operator route contains only403; CodeQL analysis AND findings
+pass after legacy host removal. Deferred errors use fixed client/server messages.
+All21 native cases/types/lint/format, exact candidate full CI/browser and final
+Grok PASS with no critical/high/medium findings. Merged normally at6e774c165393;
+all23 reviewed files match. Production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC is READY
+at that merge, with all three Arcanea aliases;18 safe stable-domain checks pass.
+Receiving-main CI38029825907 passes on attempt2. Initial gallery duplicate-selector
+failure remains recorded; six production browser attempts did not reproduce it.
+CodeQL analysis38029825929 passes; repository-wide200 open scan alerts and12
+Dependabot alerts remain separate. Voice credential/privacy repair follows the
+private native audit. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
+and today's session retain creator/platform/commercial goals, failed/unknown
+attempts and other owners. Paid provider acceptance/full adoption remain unproved.
+
+
+## 2026-10-10: GenCreator security/MCP and editable PPTX live
+
+[GenCreator191](https://github.com/frankxai/gencreator.ai/pull/191) merged at
+`5f7c3c2`; exact-source independent Poolside review, candidate/main full CI and
+22 stable-domain smoke checks passed. READY production deployment is
+`dpl_6mY7BRikkAE3AsBEDZe6A5Cnwmxa`; GitHub open dependency alerts are zero.
+Superseded186/187 closed with source branches preserved. Editable PPTX integration
+[192](https://github.com/frankxai/gencreator.ai/pull/192) merged at `b6938e7` from
+reviewed `0ee51f2`:11 focused cases, candidate full CI and independent review pass.
+Native PowerPoint open/edit/save/reopen and first-slide renders were inspected.
+READY production `dpl_AcUownSYpdtgSy9fd3EvvjUvwMwu` passes13 delivery checks and22
+site/MCP checks; downloaded bytes match the native-tested specimen. Receiving-main
+full CI38024968968 also passed. Managed readiness remains503: no Vercel envs
+or GenCreator tables in the documented shared Supabase project. The full original
+creator/client/memory/cloud/subscription goal stays active; issues74/5 stay open.
+
+## 2026-10-10: hook recovery and ownership hardening merged
+
+Config111 merged normally after exact-head AGY PASS and green Linux/Windows CI. All six source hashes match main. Interrupted repair restoration now refuses later edits; lock replacement and escaping paths are protected. See today’s session for proof and remaining foreign-lane/Desktop/estate gaps.
+
+## 2026-10-10: hook fixes merged; conditional merge admission is live
+
+Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
+`13ebcf0` returned PASS. All 16 reviewed file hashes match main. Config PR110 merged
+normally at `12cd533e` after live no-receipt denial, real receipt acceptance,
+revocation denial and restoration acceptance. Required CI plus the trusted
+exact-head receipt check now applies to administrators; routine notes merge with
+zero blanket approvals. Fifty-one targeted tests and a fresh 13-hook native turn
+pass. FrankX's two conservative shell-wrapper findings, Desktop/untriggered events,
+PR80 and estate conformance remain open. See today's latest session entry.
+
+
+
+## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
+
+[SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged
+atfe964d5a after independent xAI review/all checks. Existing organization system
+and Arcanea compatibility8.5.0 published; both public bytes match tested main
+artifacts. All377payload files identical, four installed exports and six descriptor
+domains verified. New ecosystem doctor reports bounded live package health without
+installing or granting authority. Both SDKs/memory metadata now pass; creator MCP
+workspace dependencies remain blocked. Today's session and SIS144 comment6093445212
+record proof and remaining user/creator/security/trusted-publishing gaps. Broad
+programme stays partial; preserve all previous owners and histories.
+
+
+## 2026-10-10: hook independent review WARN; current source owner refining
+
+Grok4.7 high completed source review of older config109 `1bf683a`: WARN, nine-file coverage. Owner revision `13ebcf` addresses Node launch failure and adds native discovery; remaining findings/new merge gate require fresh review. Eligible approval still required. Older frozen source38 tests pass. [Review](https://github.com/frankxai/starlight-agent-config/pull/109#issuecomment-6093421779); preserve owner and issues78/101/98.
+
+## 2026-10-10: hook follow-up passes; estate conformance remains open
+
+Fresh Arcanea native inventory: 28 trusted hooks, 26 enabled, no errors/warnings. Doctor and all 38 safety/repair tests pass in the observed config worktree; the owner subsequently began further edits. Published config109 remains `1bf683a` and requires eligible approval. Refreshed census confirms 85 exact Git roots without a root guide among 232 Git-marked folders. Git hook paths resolve to three directories, with SIS/Orchestrator exceptions to shared hooks. Parent guidance, nested scope and runtime enforcement remain separate. Preserve config78/101/98 and PR80 owners; see the [session](sessions/2026-10-10.md).
+
+## 2026-10-10: Terminal SDK8.4.0 published; broad programme remains open
+
+[SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) merged
+at9707ea9d and [release339](https://github.com/frankxai/Starlight-Intelligence-System/pull/339)
+at8087a0fa after exact-revision independent xAI code/source-pin reviews. Main
+artifact38018894204 passed build/tests and independent installation. npm8.4.0 is
+published; downloaded public bytes match tested SHA256
+52e297ce06c95433162c8f3bde8389f17119f3812aefc2f667ec6d186e91c548.
+Native Grok creator output captured/reopened/refined/exported/imported; original
+unknown attempts preserved. Editorial/user/external-owner acceptance and measured
+comparison remain pending. Domain descriptors are not installed brand products.
+Today's session has exact evidence and security/admission limits. Existing
+[SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
+stays open. Later evidence supersedes older held-release statuses below.
+
+
+## 2026-10-10: Usage evidence and Foundry closure repair; release held
+
+[SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) is pushed
+at `6b0df6c3`. OpenCode final-message token/cost observations now bind to the packet,
+session, runtime and output. `run usage` checks those bindings; failed receipt saves
+retain unknown outcomes without redispatch. Provider-reported cost remains separate
+from invoices and whole-run usage. Two stale package source pins caused Foundry
+failures; the candidate updates only those hashes, preserving rules and review dates.
+
+64 terminal tests, lint/build, 135 native commit-hook checks and full `npm test`
+pass. Foundry passes 31 with two existing Windows symlink skips; risk evals pass 34
+with seven existing TODOs. A wrong source hash still fails preflight. Harness drift
+passes. CI-scoped mesh passes (one measured, 63 carried); default worktree/estate
+mesh remains a separate stale projection. Current npm OpenCode is 1.18.35.
+
+A real isolated native OpenCode attempt received provider HTTP403. The original
+run/session/unknown marker are preserved; no generation accepted or retry/bypass.
+The server is stopped. Different-provider review at663d5646 timed out after240s
+without a verdict; the current lock revision still needs exact-head review. No
+merge, npm publication or deployment. Preserve all six-domain programme requirements
+and other owners. See today's session; existing SIS144 receives this continuation.
+
+## 2026-10-10: Portfolio and goal reconciliation, observed 02:53–02:57 CEST
+
+Read current GitHub main and selected open handover/product branches, the private
+objective ledger, native Codex goal metadata and recent lease receipts. Native
+goals total77:12active,29blocked,16paused,19usage-limited,1complete. These are stored
+states, not worker liveness. The private portfolio ledger separately has25objectives
+and205signals; its six VERIFIED outcomes include evidence-only work. Do not sum
+these stores or infer product completion. Older interface handovers say active;
+the current native goal state is paused. Preserve that pause.
+
+The latest [intent recovery211](https://github.com/frankxai/agentic-ops-hub/pull/211)
+records529 source texts and65goal areas, with only two cited recovery notes and no
+accepted receiving-owner resume. Terminal327, Canvas45, Config106/109, Command67
+and Investor42 remain drafts. Arcanea525 has a source-bound BLOCK and a separately
+owned recovery lane; its production payment path is unverified. The main local hub
+checkout is a stale July Hermes branch; preserve it and use fresh remote records.
+
+Priority proposal: finish source recovery into one owner-accepted creator artifact;
+integrate existing admission/memory/runtime receipts; complete Arcanea billing
+recovery before activation; prove one community cold-use journey before expanding
+domain packs. No service, goal state, product source, merge or deployment changed.
+This audit is an unreviewed documentation addition. See today's appended session
+for coverage, implementation boundaries and the recommended founder/community loop.
+
+## 2026-10-10: OpenCode contract and creator revision workflow implemented
+
+[Draft SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327)
+is at `56dae5f1`. A version-bound OpenCode server adapter records the owned session
+before prompting; a creator workspace binds source snapshots, preserves revisions,
+rejects stale edits and exports provenance. 61 terminal tests, lint/build, 135 hooks
+and staged secret scan pass. Native 1.18.35 health/schema and denied-session probe
+passed without a model request; the owned server was stopped. A Codex-authored
+article with LinkedIn/newsletter drafts was captured as a host-supplied result,
+reopened, edited and exported with verified byte hash. External model generation,
+comparative quality/cost and current MCP extension compatibility are unproven.
+Exact-source independent acceptance remains pending; see the latest
+[session receipt](sessions/2026-10-10.md) for actual verdict/CI and earlier failures.
+Keep [SIS144](https://github.com/frankxai/Starlight-Intelligence-System/issues/144)
+and the full six-domain objective open. Native adapters, admitted live model proof,
+domain packs, fleet enforcement, web and academy integration remain unfinished.
+
+## 2026-10-10: Arcanea billing recovery merged; paid rollout stays closed (Codex)
+
+[PR525](https://github.com/frankxai/arcanea-ai-app/pull/525) merged as `c79b6f4`, reviewed head `dbbd5b17`. Two BLOCK rounds were repaired; final independent source review PASS for code merge.30 tests, exact Linux CI and PostgreSQL rollback/concurrency pass. Final READY pricing preview checked on desktop/mobile; reduced motion and intercepted waitlist recovery verified. Keep[529](https://github.com/frankxai/arcanea-ai-app/issues/529)/[511](https://github.com/frankxai/arcanea-ai-app/issues/511) open for migrations, seller setup, sandbox fulfillment, reconciliation/retention, BotID/auth and entitlement gates. Checkout default-off; no production migration, purchase or permission changes. Receiving-main CI/deployment pending at this record. See [session](sessions/2026-10-10.md).
 
 ## 2026-10-10: final package CI green; reviewed defects repaired; final review capacity blocked (Codex)
 
@@ -1518,3 +1851,12 @@ CI37565170026 passed the browser installation and retained four actual desktop P
 Every baseline PNG's SHA256 and VIS sidecar schema passed. Capture ledgers were appended to the existing estate logs without duplicate lines; memory-vault synchronization remains pending. Figma native upload succeeded200 and placed desktop-first-chapter.png on node11:110 in the existing board. The subsequent use_figma annotation/layout operation returned the Starter quota limit. Image import therefore works; editing/layout and read tools remain blocked. The upload is an unannotated historical failure image, not an accepted design or current screenshot. Saved metadata identifies the node and source; no upgrade or quota evasion was attempted. The actual AI review P1 browser-installer finding was explicitly answered with later fix5d2fa75; required Review Gate is now passing. The current local browser admission held at6346MB free versus8192 required; no new local browser/build or agent started.
 
 Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged application inputs from10b9fc7. CI37565957085 passed the repaired reading round trip and saved five desktop screens, then correctly retained a failed304-versus200 test assertion on cached reload. QA now records legitimate200/304 document responses while retaining real DOM/heading/link assertions; API statuses stay exact. Visual inspection also showed the focus PNG captured the hero while the target was offscreen. The runner now instantly centers the already Tab-focused link, requires full viewport visibility below global navigation and checks its hit target before screenshotting. No programmatic focus shortcut was added. CI37566659772 verifies these corrections; superseded21cb3163 CI was canceled by existing concurrency policy. Production promotion and current-head provider/visual review remain pending. Preserved failed-run images establish only their observed states.
+
+## 2026-10-10: Arcanea foundation source assessment
+
+Public source `6e774c1` inspected: projects/retrieval, CLI executable overlap and creation-engine proposal boundaries recorded. Continue existing531/532 with current storage authority, execution admission and one recoverable browser/MCP creator outcome. No product implementation, paid execution or launch approval in this assessment;529/511 stay open. See today's session. Private strategy remains private.
+
+
+## Npm handover reconciled with accepted peer records, 10 October 2026
+
+Integrated hub main c2c19a601742da49c01843aaca0b76d94639f28f into this owned lane, preserving complete platform, Arcanea, GenCreator, SDK/AGY and other session records and prompts. The three-way conflict contained additive records; retained the complete main content and this lane's additions without choosing one owner's history over another. Peer PR237 reports both SDK8.5.1 scope publications and cold installation; peer PR227 reports platform PR107/109, deployment/database and scoped CI/canary acceptance. Those release reports were read, not rerun here. Creator-MCP0.1 remains blocked in the peer doctor record, and live account/customer activation remains open. Our SIS342 cb915a01 and creator6 ebf0f633 are distinct unmerged candidates. Do not duplicate the published SDK release or treat either candidate as covered by the peer reviews.
