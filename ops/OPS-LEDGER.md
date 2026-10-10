@@ -1,5 +1,15 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Fleet collector hardened and draft opened (Codex continuation)
+
+[SIS328](https://github.com/frankxai/Starlight-Intelligence-System/pull/328) is draft at `a2e3b53a3d13d8cdaf4d3a162a762aea4987688e`; it supersedes the earlier local-only status. Reproduced and fixed quota input/output collision; reads enforce4MiB+1 before parsing; failed process observation is unknown. Twenty focused tests, actual Windows collection, staged whitespace and gitleaks across3 commits pass. No release or update was initiated by this session.
+
+Independent review remains pending. First owned Grok attempt advertised tools and was stopped. Corrected grok-4.7 verified no tools/MCP but exceeded240s; latest-head grok-4.7-build-fast verified no tools/MCP but exceeded120s. No qualifying review answer exists. All owned reviewers stopped and temporary native-auth links were removed. The delays have no established cause; do not call init metadata a successful capability proof.
+
+Read-only AIS discovery found its route API in the existing [Claude PR10](https://github.com/frankxai/agentic-intelligence-system/pull/10), head d8bd2e3e, absent from cached main788a0c1. Preserved that lane. AIS resolves capabilities/citations; Queen/Observatory owns execution/interface. Do not wire a released integration to an unmerged API. Native versions were observed, not upgraded. Private evidence/receipts remain under `.starlight/reports/harness-fleet/` and `.starlight/reviews/harness-fleet-*`.
+
+Next: diagnose a bounded native text-completion fixture on a fresh admitted route before another full review, obtain independent exact-head review for SIS328, and reconcile the existing AIS API with its owner. Keep [SIS151](https://github.com/frankxai/Starlight-Intelligence-System/issues/151) and parent143 open. Preserve broader memory/cloud work and all other owners.
+
 ## 2026-10-10: Harness fleet evidence and integration (Codex)
 
 User outcome: aggregate coding harnesses, capabilities, memory/graphs and cloud workers into the existing Starlight owners. Implemented a bounded operational evidence adapter in SIS, branch `agent/codex/harness-fleet-20261010`, exact local commit `640f6a12ddcb1facda2083d0081fe491ae223b87`. Files: `tools/harness-fleet/fleet.py`, `test_fleet.py`, `docs/architecture/harness-fleet.md`. Commit is local, not pushed/merged/deployed.
