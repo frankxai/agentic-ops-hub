@@ -900,3 +900,14 @@ The clean existing Codex worktree was reused; its earlier continuity-save branch
 
 
 Workspace fix follow-through: local Ops head `7e2334852daa2444584529b8cad9b558647fe9be` now also registers the new failure regression suite in the existing ASPH CI command. This closes the preceding CI-registration gap; hosted execution, independent-provider review and receiving-owner integration remain pending. The31 full-module tests bind the unchanged implementation files; both local commits passed the secret hook. The latest hub handover before this addition was cf428fdf1be77a817ab9da3b63683b6c0f714593 with verify/scan SUCCESS.
+
+
+### Third cited recovery: compute-guide design work already exists, 10 October 2026
+
+Recovered the complete11-message delegated Codex task01a10e69-f4ce-7782-87be-dba762ef26c7 from77,718 private source bytes, read and acknowledged in three packets. Native metadata records originator Claude Code; preserve the eight deliverable groups as a delegated task brief rather than claiming founder authorship from a role label. The audited summary is triage; original imported/native hashes remain unchanged and an already-complete retry refused without mutation.
+
+Current receiving task is frankxai/frankx.ai-vercel-website#903. Its clean local/remote branch head6e30d062171f24ff22ab6e9a92eab2bd76ca0c46 already contains16 raster assets,16 sidecars, social copy, a Python builder and the article's hero/four graphic placements. All media meet the byte limits. Preserve this later work rather than rebuilding from the older blocked session. Five existing images were visually inspected against the full current article; all16 hashes/dimensions and source metadata are retained privately.
+
+Remaining gaps: actual mobile/thumbnail review; Python/Pillow source versus the requested SVG/HTML sources; font suitability; the opening's unqualified128GB claim; full atlas claims audit; repository and independent review gates. Atlas PRs25/35 remain OPEN. The current website has31 open PRs, above issue903's10-PR threshold; no new PR or publication. No foreign checkout edits, generation, receiving-owner resume or creator acceptance is claimed.
+
+Selected native recovery progress is now three audited cited notes/seven pending. Preserve all529 active note texts,1587 overlapping demands,65 goal areas and25 existing objectives. This recovery preserved all24 other objective records exactly. Continue the first deliberate recovery-to-owner-to-useful-artifact journey and the existing continuity/demand repairs. Full customer acceptance and revenue remain open.
