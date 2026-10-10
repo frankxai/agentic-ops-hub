@@ -1207,3 +1207,17 @@ Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged 
 ## 2026-10-10: Arcanea foundation source assessment
 
 Public source `6e774c1` inspected: projects/retrieval, CLI executable overlap and creation-engine proposal boundaries recorded. Continue existing531/532 with current storage authority, execution admission and one recoverable browser/MCP creator outcome. No product implementation, paid execution or launch approval in this assessment;529/511 stay open. See today's session. Private strategy remains private.
+
+## v0 and design alignment: connected workflow and released pilot — 10 October 2026
+
+OAuth works for the existing Starlight Intelligence team. Inventory covered 21 original accessible chats; six private source contexts and one review context were added on existing project bindings. Vercel returned 62 registered projects, not 62 verified live products. Private mapping stays in local evidence; unseen ChatGPT chats are outside this coverage.
+
+Design Intelligence [49](https://github.com/frankxai/starlight-design-intelligence/pull/49) and [50](https://github.com/frankxai/starlight-design-intelligence/pull/50) are merged; receiving main `31543da` passed CI. The adapter passed 28 tests and exact-source independent review. Native v0 treated commit SHAs as branches and failed; the repaired workflow uses hash-verified source attachments and preserves immutable provenance without failing mounts.
+
+GenCreator [197](https://github.com/frankxai/gencreator.ai/pull/197) is merged at `6dc5419` and live at [Creator Studio](https://gencreator.ai/creator-studio). Candidate `568f045` passed 971 unit tests, 262 browser tests, lint/typecheck, production build and required checks; two visual cases are intentionally skipped, with no final flakes. Exact-source independent review and original mobile/desktop inspection passed. Production is READY. Public HTTP 200 confirms reachability; inspection of the fetched server HTML confirms source-first ordering and the initially open recovery shelf. Receiving-main CI38053065436 passed; reviewed files match receiving main.
+
+The team `gencreator` design system now loads through the native skill interface, with exact Territory B tokens, a checked starter and five verified dated source snapshots. SKILL SHA256: `002b808c8ecb81e371334cc625ec8a8d3e97f85eed614c6c1544ae3ec0165d0e`. No opaque revision was exposed. The independent reader confirmed virtual paths and metadata; it could not recompute virtual-file hashes. Source snapshots require explicit refresh. Existing defaults and product adoption pins are preserved.
+
+Next priorities: Arcanea's saved-world journey, SIS Memory Studio recovery, FrankX Foundry handoff, Income's first inspectable workflow and Academy's lesson-to-artifact journey. Their contexts are prepared; implementation and adoption remain separate. SIS public-site ownership, Income commercial gates and Academy brand/licensing need reconciliation. Figma authenticates, but Starter file reads remain quota-blocked; keep it optional.
+
+No founder taste, customer outcome, complete accessibility audit, measured CWV or managed-account activation is claimed. Rejected screenshot transfers were quarantined; 120 original CI PNGs have sidecars and both visual-ledger receipts. The reference schema returns 404; memory-vault synchronization is pending. Preserve other owners' work and wider goals under existing Design48 and GenCreator5.
