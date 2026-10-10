@@ -2,7 +2,7 @@
 
 ## Current npm ecosystem prompt
 
-Goal is blocked, not complete. Obtain an existing isolated authenticated reviewer or completed exact-revision review for SIS PR #342 at 07b430790f9fb88427f9b1815455490d7c6c7728 and creator PR #6 at d4eb90502fdeee0ccd9c3c431cb030324b39ba09. Alternatively, after the recorded Claude reset on 2026-10-11 at 06:00 Europe/Amsterdam, revalidate provider availability and review those packets. Reconcile findings, then finish protected main-source/npm bootstrap/trust release. Preserve occupied source lanes and the broader estate/platform/customer/paid-value objective. Current hosted checks passed; no independent review or publication is claimed. Resume only when new evidence permits meaningful progress.
+Continue authorized production/merge from SIS PR #342 e91a49dc8fb143d7947126a162bf49ed4677f0bd and creator PR #6 3e962a8b7602981898eeb2822dfa8be3bea496f5. Ready/open, clean/pushed, not merged/published. Explicit Anthropic Claude Opus 5.5 hosted read-only reviews in progress: SIS task 88536847-f4d8-4bca-8ed0-e09d61b9e741, creator task 871431eb-04b7-4054-aaf5-5e1788db7768. Retrieve model/SHA-bound findings, reconcile defects, verify fresh CI/archive/consumer evidence (SIS run 38051967135, creator run 38051964350), merge accepted revisions and generate protected-main bytes. npm identity/ownership pass; profile/trust HTTP 403. Frank asked for authenticated verification/2FA, no secrets in chat. Complete legitimate first-publication/bootstrap/trust without security bypass or stale feature bytes. Preserve foreign lanes and broad estate/platform/customer/value objective. Local machine HOLD, no new local workers. Update existing product issues and three hub files with actual outcomes.
 
 ## Earlier prompts retained for provenance
 
