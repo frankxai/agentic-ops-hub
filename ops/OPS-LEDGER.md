@@ -205,6 +205,26 @@ not its stale nine-file description; old failed Build36796888537 was a duplicate
 not proof of an MCP runtime failure. Full current-base package review/tests remain required.
 Canon/editorial502/372 and other occupied/publication/financial fronts are preserved.
 
+MCP runtime [558](https://github.com/frankxai/arcanea-ai-app/pull/558) is now merged/live
+e98249fd8f84499cacfec864a9d0aef9f1b0396f, reviewed0646e9884c9d24ee2683416274b0c7b0281cbcab.
+Trees and all93 reviewed source hashes match. Candidate CI38067949200/full manual38068350202,
+CodeQL38067949203 and receiving CI38068958042/CodeQL38068958058 passed. Exact Gemini3.1Pro
+response3mnKat2PO9C739IP0oOywAc PASS0 blocking findings; formal receipt6099804853. Real fresh
+packed consumer installs, resolves its own SDK and saves/reopens a world across stdio restart.
+Production XafSW7TR5knNaSbNuTVaeZcrkDJB is READY with www/apex/app aliases; four real author
+privacy cases pass. Earlier launcher/symlink/type/provider-format failures remain preserved.
+The1.0.0 package remains unpublished; public0.7.0 is broken. No paid AI/swarm, hosted HTTP auth,
+rights/license, public publishing, live author onboarding or whole-platform completion is certified.
+Review rail559 is merged/live123f84ea2d05586f780b89edca68533d7b8d9786 from revieweded5b330d41;
+all six source hashes/receiving tree match. Exact Gemini responseum7KatmzBN_rqtsP1sasoQs
+PASS0 blocking findings, receipt6100000755; candidate/manual/receiving CI and CodeQL passed.
+Current production3UzJANwwqdjYboXpwkXpecEtYjEj READY with www/apex/app aliases and four
+live author privacy cases passed. All80 MCP package sources remain unchanged. The new hub
+head still needs its own pinned review; public npm distribution waits for the asset-license choice. Native memory is below4GiB, so no new heavy local worker or extra agent. Hub238
+is already merged with receiving CI passed. Programme276 update6099954470 records this slice;
+529/511 remain financial gates and foreign505 edits remain untouched. See the appended session.
+
+
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
 [Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), reviewed6def4ff717,
