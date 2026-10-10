@@ -1,4 +1,321 @@
 # ⏭️ Next Prompts — per active front / terminal
+
+## Current npm ecosystem prompt
+
+Continue authorized release from SIS #342 cb915a0128e4af0ddd1f9f9b8f7766bd2c64f927 and creator #6 ebf0f6337d1485519c6c416775e546cc7e9b035b. Both ready/open, clean/pushed, mergeable; neither merged to main or published. All twelve SIS workflows and all seven creator CI jobs pass. Final archive/consumer evidence validated: SIS run 38053627657, source 7c38aa82, ignored artifacts/npm-review/cb915a01-ci; creator run 38053618919, source 89ce6c07, ignored artifacts/review-ebf0f633-ci/{linux,windows}. Prior Claude reviews found real defects now repaired; final SIS follow-up gave no verdict and creator worker saved 293c05d before monthly AI quota failure, safely integrated through ebf0f633. Obtain independent-provider review of both exact final heads after actual capacity restoration or through an existing supplied service/report. Do not retry unchanged quota or bypass review. Local review-lite HOLD (1504 MB free vs 6144 required); no new local reviewer/build/services. npm identity/org ownership pass; profile/trust administration 403, exact cause/2FA state unverified. Frank asked for authenticated account access and review capacity; no answer presumed. npm trust requires >=11.15 while local 11.13 is below it; existing package/account/write prerequisites also apply. After review, merge approved revisions, regenerate protected-main artifacts, finish legitimate initial bootstrap/trust and registry/provenance/install proof. Preserve accepted root 8.5.1; canonical pnpm reproducibility replaces root npm ci. Keep all broad platform/customer/value work open and foreign lanes intact; primary 8.3.0 blueprint is foreign/outdated and does not supersede accepted source. Refresh existing product issues and hub three-file record with actual outcomes.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
+Review gate remains unchanged: creator6d4eb905 and SIS34207b43079 prepared/CI-
+verified, not independently reviewed/published. Grok authenticated but startup
+hooks/MCP isolation unproven; Claude quota reset11Oct06Amsterdam. Frank asked for
+existing isolated-review service/completed-review link; no answer presumed.
+Revalidated skills1.0.0 archive/CRLF line404 hash; credential finding unresolved.
+Do not repeat unchanged route probes or placeholder guessing. Revalidate remaining
+safe owned work and audit genuine impasse; follow goal blocked threshold if the
+same blocker persists without meaningful progress. Preserve whole estate/platform/
+customer/value objective and all unfinished work; do not claim goal achieved.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
+Grok native1.0.50 models confirms authenticated grok.com/defaultgrok-4.7. Review
+still needs proven isolation:25hooks,19MCPservers,19plugins discovered even with
+vendor/subagent/managed-MCP/memory flags disabled; empty --tools keeps MCP tools.
+Use documented isolated authenticated route, or Claude after11October06:00Amsterdam
+quota reset. Do not copy credentials, mutate global settings or start inherited
+services to obtain a verdict. Review exact creator6d4eb905 and SIS34207b43079;
+current packets prepared, hosted/package checks passed at their recorded scopes.
+Complete protected main-source/npm bootstrap/trust and broader platform/customer/
+paid-value acceptance. Source lanes and other estate work remain preserved.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
+Creator38038645613 at d4eb905 completed SUCCESS typecheck/unit and Linux/Windows
+archive consumers; draft e2e skipped. Currentpacketartifacts/review-d4eb905 prepared/not reviewed. Prior5ec/a172 packets
+historical. Local28pass/1POSIX skipped,12release pass; publisher now requires actual
+installed-storage-link-boundary consumer. Ten current Linux archives and ten consumer checks validated against clean
+mergece1dc97c; Windows hosted success, receipt locally undownloaded. SIS07b43079 unchanged/all-six pass/current61-filepacket.
+Obtain authenticated isolated independent provider review of both exact revisions,
+reconcile findings, finish main-source npm bootstrap/trust/protected release and
+full estate/platform/customer/value acceptance. Preserve foreign ownership; path
+checks do not defeat concurrently malicious local filesystem mutation.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
+Hosted SIS38037804627 for current07b43079 completed SUCCESS all six jobs. Source closes stale-success
+receipt before manifest preflight; real entrypoint regressions/17audit tests pass.
+Three hosted archives/consumer receipt verified against merge96fa1529. Current
+61-file immutable review packetartifacts/npm-review/07b43079 is prepared, not
+reviewed. Obtain authenticated isolated independent provider review for SIS342
+at07b43079 and creator6 at5ec9873; reconcile actual findings, finish protected
+main-source/npm bootstrap/trust release. Preserve full estate/platform/customer/
+paid-value scope and separate site/plugin dependency repair ownership.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
+Hosted SIS38037404137 for source34201a7f completed all six jobs SUCCESS.
+Downloaded three archives and consumer validated
+against mergeb638b19e. New gateway privacy-tag whitespace regression fixed and
+covered through official MCP client. Prepare immutable exact34201a7f review
+packet; prior511c packet historical. Review SIS342 and creator6 (5ec9873) with an
+authenticated isolated independent provider before protected main release and
+npm bootstrap/trust. Track separate site/plugin dependency alerts with their
+owners; preserve full platform/customer/value acceptance and foreign lanes.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
+Review SIS PR342 at 511c00757961ef7e3442644522820b2a211bbfb4 and creator
+PR6 at 5ec98735d0e591b1ea3df24967432877e49cbf5b with an authenticated,
+isolated independent provider. Current immutable packets and hosted archive
+receipts are prepared. OpenCode native auth check found zero credentials and
+isolated config no provider/model; no request/verdict. Claude quota resets
+11 October 2026 06:00 Europe/Amsterdam; Gemini installed-client eligibility and
+Grok MCP/hook isolation remain open. Preserve credentials/global configuration.
+Reconcile actual review findings before npm bootstrap/trust and protected
+main-source release. Preserve broader estate/platform/customer/value scope.
+
+## Prior prompts retained for provenance
+
+## Npm ecosystem: review SIS342 and creator6, then release verified packages
+
+Current creator5ec98735d0e591b1ea3df24967432877e49cbf5b closes connection-time
+DNS rebinding via request-local Undici7.30 Agent checked socket lookup.40targeted
+tests include actual public-preflight→private-connection denial with0fixture-server
+requests; positive checked-DNS fixture and equivalent IPv6 classification pass.
+Tsc/lint/audit pass. Hosted38036500463 SUCCESS Linux/Windows archive consumers;
+draft e2e skipped. Ten downloaded Linux archives/ninechecks bind merge0819d2c2782549e33629bba67a7b35db12d3c175,
+manifest77c0cf02054ff4b0ed92f8e8eadae04bf1b927d235d4c1fe43c935419942ae6a.
+Current73-file packetartifacts/review-5ec9873 prepared/not reviewed, Gitleaks clear.
+OS DNS cannot be cancelled; policy/address guards do not prove general provider
+trust or complete network security. Earlier creator4f/bd/26b packets historical.
+SIS511c0075 unchanged. Preserve full review/account/bootstrap/platform/customer/
+value scope. Obtain exact-revision admitted isolated provider review and reconcile
+findings before main-source release; do not repeat account-blocked routes unchanged.
+
+
+Latest creator source4f25f64b82bf6a3257ea625d87f28d4eb236599a closes DNS/body
+request deadline gaps.37 targeted tests including native HTTP stall pass; core
+tsc/lint pass. Hosted38035977057 SUCCESS typecheck/unit and Linux/Windows archives;
+draft e2e skipped. Ten downloaded Linux archives plus nine consumer checks bind
+mergea7ad572695da4a66cb0278c9799e8f91283d4e04 and manifestf9c669e12a0899725d3327f996a86287f2555a7e3a5f96220c9bf88b605574cd.
+Current73-file packetartifacts/review-4f25f64 prepared/not reviewed, Gitleaks clear.
+DNS rebinding remains open; timer cannot cancel OS lookup. Priorcreatorbd/26b
+artifacts and review packets now historical. SIS511c0075 unchanged. Obtain actual
+exact-revision isolated provider review when account routes permit, reconcile any
+findings and complete main-source/npm bootstrap before release. Preserve broader
+platform/provider/customer/value goal and other package ownership boundaries.
+
+
+Final creator hosted38035482758 completed SUCCESS: typecheck/unit plus Windows/
+Linux release-artifact consumers. Separate draft e2e skipped. Downloaded Linux
+all ten archives, validated both digests, entry/license/version/dependency order
+and nine consumer checks against clean mergeb3b6356ce99f5952f746c4569dd7e54f69539e90,
+manifestSHA256bbd14d22f77072aaff4179f29a0ddc7ed505afcebb092c507c0e493e970df3de.
+GitHub confirms merge parentsffdbdc68/bd0b303. Current73-file packet refreshed,
+prepared/not reviewed. Windows receipt locally undownloaded; hosted job success
+only. Review/publication/DNS/body/provider/customer gates remain open.
+
+
+Creator current tipbd0b30367ae5d60e4ec622df3dd016cc69ed39c4 fixes provider
+redirect header leakage and cancellation. Cross-origin caller headers/credentials
+removed; payload replay/downgrade/URL credentials denied;20-hop cap/sharedtimer/
+preabort/listenercleanup. Eight new and22 existing core tests, tsc/lint pass.
+Hosted38035482758 queued: poll that same run and validate resulting ten archives,
+consumer binding and merge parents. Current73-file packetartifacts/review-bd0b303
+prepared/not reviewed, Gitleaks clear;26b archive/review packets now historical.
+DNS resolution/rebinding and body-consumption bounds remain open. SIS remains
+511c0075 with validated six-job success. Preserve full account/provider/platform/
+customer scope and source ownership for other package repairs; do not claimrelease.
+
+
+Final hosted38035032307 completed SUCCESS all six jobs (Linux/Windows22/24,
+core18, artifacts and installed consumers). Downloaded three archives and validated
+SHA256/SHA512, identities/versions/allowlists, clean merge31277d046809237da847af8a0a5fc21c53922b07,
+consumer and benchmark binding to manifestSHA256
+8039b8d36183c4832b1b62d60dc013696696e3db1ed3543aecde2665423d0827.
+Merge parentsbc73db9b/511c0075 confirmed through GitHub. Core archive12753bytes;
+AI SDK3027, MCP6276. Current61-file packet refreshed with final results, still
+prepared/not reviewed. No provider/publication/customer completion inferred.
+
+
+Latest source: SIS511c00757961ef7e3442644522820b2a211bbfb4 rejects present
+non-string provider retention_until before Date.parse. Exact prior hosted core
+reproduction admitted numeric2099 and array['2099-01-01']; common projection now
+denies both. Eight rebuilt core tests pass. Hosted38035032307 confirmed live:
+Node18/Ubuntu22/24 passed, remaining jobs queued. Poll that same run and verify
+its archives/consumer/benchmark source binding before declaring hosted completion.
+Current61-file packetartifacts/npm-review/511c0075 is prepared/not reviewed and
+Gitleaks clear; d3d packet/archives are historical for this runtime. Issue329
+comment6095198643 records the fix. Preserve all review/account/platform/value gates.
+
+
+Current review-route checkpoint: Gemini CLI0.60.0 was safely isolated using its
+supported workspace settings and explicit all-tools-denied admin policy, then
+failed authentication in6.04seconds with UNSUPPORTED_CLIENT. No verdict. Do not
+retry before eligibility changes. Temporary system-settings override failed the
+Windows ACL check and was not used. Grok inspect has18 MCP definitions,25 hooks
+and19 plugins; do not launch a naive tools-empty client that starts services.
+Native Claude remains usage-limit blocked until11October06:00Amsterdam. Keep the
+61-file SISd3d66f7e and71-file creator26b9646 immutable packets current; obtain an
+actual exact-revision independent review through an admitted isolated provider,
+then reconcile findings before approval/main-source release and npm trust/bootstrap.
+SIS issue329 comment6095160376 records this result; ignored gemini-isolation.json,
+gemini-review.json and gemini-review-status.md are the local receipt. Source tips
+are unchanged, current hosted archive checks retain their existing evidence scope.
+Continue useful release/platform/foundation work within existing owned lanes.
+
+
+SIS current tipd3d66f7eae731cfd19b1256a1de0796a66847e47 fixes malformed gateway
+metadata: invalid present expiry or non-array/non-string privacy tags drop the row.
+Reproduced before the fix against exact previously hosted gateway bytes: null
+expiry became a public fact without expiry; string private tags became shareable.
+New exported-reader and official MCP-client regression keeps valid neighbors,
+preserves valid expired metadata and excludes private/expired/malformed recall.
+Hosted38033646827 completed SUCCESS all six jobs. Current three archives and
+consumer/benchmark binding validate merge7a2309fa and clean manifest
+c069394134012c68c8ee4bf62a8cbbfbae55ea14c555811fddf45916581926b2.
+Current61-file immutable git-blob review packet artifacts/npm-review/d3d66f7e
+is prepared/not reviewed and Gitleaks clear, deleted npm lock recorded separately.
+Local build HOLD5793MB/8192, no rebuild/install/reviewer. Earlier0f/5dd/a365
+review/receipt evidence is historical for current runtime. Preserve full goal.
+
+Latest continuation: native tool-free Claude review of creator26b9646 returned
+usage_limit_reached, no inference/verdict. Actual reset timestamp is11 October
+2026 at06:00Europe/Amsterdam; do not repeat that route before account state changes.
+Interactive preflight ALLOW5865MB/4096; build HOLD7628MB/8192. No MCP fanout.
+SIS doc-only tip0f1983b3 records exact published flag triage: arcanea3.4.0's two
+scanner matches span empty environment assignments and are noncredential examples;
+skills1.0.0's single match remains unresolved. Sanitized receipt at SIS
+artifacts/npm-estate/secret-triage.json; no values stored or credentials tested.
+Core/runtime bytes are unchanged from5dd614f5; exact full-source packet at5dd is
+historical for the new doc tip. Keep unpublished/review/account/platform gates open.
+
+Creator draft6 is now clean/pushed at26b9646c187985e63907f846949dd6fdb46f260f.
+Publisher isolates cwd/project/user/global npmrc, allowlists provenance/OIDC env,
+drops tokens/provider keys/Node preloads and checks exact manual main workflow.
+Removed the workflow's duplicate user/global config path; local npm rejects it.
+Consumer runs invalidate previous success before manifest parsing or installation.
+Local12 release tests pass, including actual malformed-manifest executable denial.
+Hosted38032449883 completed SUCCESS: typecheck/unit and Linux/Windows actual
+artifact consumers. Linux ten archives and nine consumer checks validate merge
+ef8a81a4 and manifest1c31845553d69632b4d11ab6663d429c66f1617640f6040c75a2ec5bb38df55a.
+Separate draft e2e job skipped. Review71-file source packet
+artifacts/review-26b9646 is prepared/not reviewed, Gitleaks clear. Earlier creator
+3e88447/1ce433d evidence is historical. Release/account/provider/customer gates open.
+
+SIS mission checkpoint: all four requested modular milestones are implemented in
+draft342. Latest source is 5dd614f57d8f1e6f662a2c94639949e89d500c3e: strengthened
+core portability coverage cold-imports a fresh module graph without process,
+Buffer or global, then exercises sanitizer, scoped recall and cancellation.
+All seven core tests pass against the verified prior hosted tarball; local dist
+was stale and is not current evidence. Hosted38031947510 completed SUCCESS all
+six jobs. Current archives/consumer/benchmark bind merge5a0dda41 and manifest
+78376ce26d27082512728723a9ac9b9158fb6d6b3a96647a2d7ffe6f5b89a47e. Browser/edge
+deployment, exact-revision independent review and npm bootstrap remain open.
+Build preflight HOLD3832MB/8192required; no local build or new reviewer. Storage
+sensor pointer was missing; do not claim it ran. Current55-file review packet
+artifacts/npm-review/5dd614f5 is prepared/not reviewed and Gitleaks clear; the
+a3651c55 packet is historical. Preserve broader goal scope.
+
+Read today's appended session, SIS issue329/draft342 and creator issue4/draft6.
+Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
+New confirmed package defect: mcp-doctor issue6. Exact published0.4.1 health module
+reports healthy for no response, silent process and invalid JSON. All three owned
+fixtures terminated; ignored evidence is SIS artifacts/npm-review/mcp-doctor/.
+Main eca9f0a2 still has that audit logic despite candidate0.5.0/merged check+score.
+Resolve registered source lane before fixes; primary codex/daily-observability and
+Hermes observability worktree are occupied, no extra worktree admitted. Reuse main's
+official-SDK inspector with safe configured environment and handshake health distinct
+from optional tool lint/capabilities. Implement issue6 denial/timeout/cleanup/Windows
+and installed-consumer acceptance before calling full audit trustworthy or releasing.
+Latest build admission HOLD3285MB/8192required; no new build/reviewer/agent.
+Owned branch agent/codex/npm-modular-ecosystem is pushed at a3651c5590288199a2aa3fb63cad49e181903cbe.
+Hosted38031220942 completed SUCCESS all six jobs, including an installed comparison
+against direct AI SDK middleware with the same core policy/model/provider. Both
+variants pass projection/scope/privacy/retention/read-count and actual provider
+failure assertions;100 measured calls each,20 excluded warmups, alternating order.
+Linux24.21 fixture median direct0.139ms vs Starlight0.151ms establishes no speed,
+retrieval or customer advantage. Real cost/tokens null. Downloaded archive/consumer/
+benchmark receipts validate merge2e74984b and manifestf5a44fcb. Current55-file review
+packet artifacts/npm-review/a3651c55 is prepared/not reviewed and Gitleaks clear.
+Latest build admission HOLD5411MB/8192required; no local heavy workload or reviewer.
+Core now forwards host workspace in RecallRequest; gateway rejects wrong scope or
+invalid query/limit before HTTP; MCP handshake follows installed package version.
+Official-client and installed stdio tests exercise workspace-scoped recall/reconnects.
+Hosted38029958479 completed SUCCESS all six jobs. Actual archives and consumer
+receipt validate merge65cfcef4,dirty=false,parentsbc73db9b/10835dde. Core8689JSbytes/
+12509gzipbytes. Current54-file review packet artifacts/npm-review/10835dde is
+prepared/not reviewed and full-packet Gitleaks clean. Obtain exact-revision review.
+Local build HOLD5597MB/8192required; no local rebuild or provider launch. Keep
+first-package account bootstrap, fresh main release and broader goal scope open.
+Publication now binds all consumer checks to exact manifest bytes/source, requires
+the exact manual main workflow/clean checkout and isolates inherited npm configs.
+Local16 release/artifact tests and mandatory135 tests pass. Hosted38029407740
+completed SUCCESS across all six jobs. Downloaded real archives and new
+consumer.json validate against merge sourcef6db18a6, dirty=false, not PR head.
+Obtain review for current revision; priorfdb packet
+is stale for the publisher changes. Fresh admission was BOUNDED10668MB/8192;
+one workload/no agents, no heavy workload needed. Do not infer current admission.
+Verify guides, routing and separate lane ownership. Modular CI run38025179265
+passed all six jobs for prior54c41ddf. Latest38027724509 passes all six for44346d9f.
+Current38028360568 passes all six forfdb1e47f. Changesets applied core/ai-sdk/mcp0.2.0
+with changelogs and consumed the initial Changeset; root8.5.0/lockfile unchanged.
+Downloaded exact hosted archives and manifest bind PR merge51e02553, dirty=false,
+digests/integrity/identity validated. Keep that source separate from the PR head.
+Earlier run38023639393 passed all six jobs at5a977a1d,
+including hosted artifact consumers; preserve the head/merge-receipt distinction.
+SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
+Obtain independent provider review using an admitted isolated supported route;
+Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
+Use the refreshed55-file artifacts/npm-review/a3651c55 source packet (not reviewed),
+and rebuild a clean final main-source receipt after normal integration. Reconcile
+npm org rights and first-publication trusted publishers, then
+publish exact reviewed bytes through the authorized OIDC path after normal gates.
+Do not force merges or use a token fallback. Preserve accepted terminal/creator SDK.
+Read NPM_ARTIFACT_AUDIT.md and ignored sanitized artifact-audit.json:42/45 exact
+tarballs inspected, three published workspace-dependency failures, arcanea-soul
+declarations missing, two scanner findings needing private triage, three archives
+uninspected. Fix dependencies in registered owned source lanes and test actual
+installed consumers; do not substitute dry-run packing or scanner flags for proof.
+Creator owned branch agent/codex/creator-npm-release-20261010 is clean/pushed at
+3e88447c23f6e65aacb3aefb564849865aa1b655. Ten real tarballs, nine installed-consumer
+checks, 52 existing tests and ten release safety tests pass. Hosted38027000087
+completed SUCCESS for prior1ce433d including both Linux/Windows artifact consumers.
+Latest38027820273 completed SUCCESS including fresh Linux/Windows artifact consumers.
+SIS13/creator10 release tests now reject incomplete/hidden/ambiguous tar members.
+Review packet artifacts/review-1ce433d is historical, not reviewed; regenerate for
+the new source and obtain exact-revision independent review. Preserve readiness provenance
+f2c05c7/860f4c0 and the foreign dirty primary checkout. Bundle candidate is0.1.1;
+nine internal dependencies are0.1.0. Finalize account identity and exact reviewed
+bytes before ordered publication; never republish existing immutable0.1.0.
+Both npm-production environments now exist with frankxai required reviewer and
+main branch policy; API readback verified. Admin bypass remains enabled and owner
+self-review allowed. This does not satisfy distinct-provider review.
+Respect separate memory publication boundaries and site/plugin alerts. Latest
+build admission HOLD7334MB/8192required; obtain fresh admission before
+heavy work. Account bootstrap must
+precede new-package trusted publishers: npm trust requires an existing package,
+maintainerwrite/account2FA/CLI11.15+; localCLI11.13 is below that management floor.
+A new trust connection must validate first successful publish within2days; configure
+near the reviewed release. Do not collect OTPs/secrets into source or handovers.
+Repository Actions secrets list is empty in both repos; organization/environment
+secret coverage and an admitted hosted independent reviewer remain unestablished.
+Storage100.78GiB/10.5% passes hard floors;30%target remains advisory.
+Resolve commercial integration authority and buyer evidence before platform changes
+or revenue claims. Save issues329/4 and hub217 with fresh evidence; leave the goal open.
+
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: finish live account activation and preserve the full delivery objective
 
