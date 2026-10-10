@@ -1,5 +1,43 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Memory tenant boundary repaired and final-head CI passes
+
+[SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340) at `2bf05c96f77a46a4534ab24a4013315b1d738988` now repairs tenant-ID collisions and caller mutation as well as SQLite recall.15 provider/routing tests,135 native conformance checks, nine Python regressions and seven smokes pass; final Windows/Linux focused CI and estate/editorial/design checks pass. Draft's broad harness build is skipped. Independent provider review and upstream production wiring remain open. Bounded discovery found initialized but empty AgentDB application tables and a schema-only Antigravity helper. Prescribed storage sensor entry point is missing; no upstream package installation was performed. Earlier RAM floor observation was followed by recovery; re-check fresh admission before the next workload. Hub merge preserved both peer and owned records.
+
+
+## 2026-10-10: AgentDB recall correctness implemented; upstream wiring pending
+
+[SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340), head `27b67d5a79a71f7334e1483d017a687afce83799`: current-value recall, filter-before-pagination and literal namespaces repaired in the existing phase-0 SQLite adapter. Nine regressions and seven original smokes pass; Windows/Linux CI and estate/editorial/design checks pass. Independent provider acceptance remains open. [SIS151 updated](https://github.com/frankxai/Starlight-Intelligence-System/issues/151#issuecomment-6093350076). Ruvnet AgentDB installation and production gateway adoption are pending; latest RAM reading holds new heavy work. Existing fleet328 and peer work preserved. SISmain now includes terminal SDK8.4.0 in339, replacing the earlier terminal327 observation. No owned worker remains.
+
+
+## 2026-10-10: Estate delivery audit and handover conflict recovery
+
+Serial reconciliation found653 open PRs across138 repositories and944 open issues:461 drafts,123 with failed checks,96 conflicting,116 without observed checks. The private full matrix gives every inspected PR an owner action;255 lane records and1908 local branches preserve dirty/unpublished candidates. Counts describe an observation interval and overlap. No blanket review, merge, dispatch or completion is inferred. See [today's session](sessions/2026-10-10.md).
+
+Lead order: hook safety/config109 exact1bf683ac and eligible independent approval; Arcanea525 owned billing recovery with production gates separate; terminal327/fleet328/AIS10 with AIS's open path/routing findings and one real creator proof. PP pauses new swarms. Queue and instance labels need task/lease/head/result bindings. Preserved the changing objective ledger and all peers. Recovered owned [hub216](https://github.com/frankxai/agentic-ops-hub/pull/216) against merged hook213 with both records retained. A30s Grok text health fixture produced no answer and was stopped; no reviewer remains. Keep SIS151/143 and other fronts open.
+
+
+## 2026-10-10: Fleet collector hardened and draft opened (Codex continuation)
+
+[SIS328](https://github.com/frankxai/Starlight-Intelligence-System/pull/328) is draft at `a2e3b53a3d13d8cdaf4d3a162a762aea4987688e`; it supersedes the earlier local-only status. Reproduced and fixed quota input/output collision; reads enforce4MiB+1 before parsing; failed process observation is unknown. Twenty focused tests, actual Windows collection, staged whitespace and gitleaks across3 commits pass. No release or update was initiated by this session.
+
+Independent review remains pending. First owned Grok attempt advertised tools and was stopped. Corrected grok-4.7 verified no tools/MCP but exceeded240s; latest-head grok-4.7-build-fast verified no tools/MCP but exceeded120s. No qualifying review answer exists. All owned reviewers stopped and temporary native-auth links were removed. The delays have no established cause; do not call init metadata a successful capability proof.
+
+Read-only AIS discovery found its route API in the existing [Claude PR10](https://github.com/frankxai/agentic-intelligence-system/pull/10), head d8bd2e3e, absent from cached main788a0c1. Preserved that lane. AIS resolves capabilities/citations; Queen/Observatory owns execution/interface. Do not wire a released integration to an unmerged API. Native versions were observed, not upgraded. Private evidence/receipts remain under `.starlight/reports/harness-fleet/` and `.starlight/reviews/harness-fleet-*`.
+
+Next: diagnose a bounded native text-completion fixture on a fresh admitted route before another full review, obtain independent exact-head review for SIS328, and reconcile the existing AIS API with its owner. Keep [SIS151](https://github.com/frankxai/Starlight-Intelligence-System/issues/151) and parent143 open. Preserve broader memory/cloud work and all other owners.
+
+## 2026-10-10: Harness fleet evidence and integration (Codex)
+
+User outcome: aggregate coding harnesses, capabilities, memory/graphs and cloud workers into the existing Starlight owners. Implemented a bounded operational evidence adapter in SIS, branch `agent/codex/harness-fleet-20261010`, exact local commit `640f6a12ddcb1facda2083d0081fe491ae223b87`. Files: `tools/harness-fleet/fleet.py`, `test_fleet.py`, `docs/architecture/harness-fleet.md`. Commit is local, not pushed/merged/deployed.
+
+Collector separates command availability, process-tree memory, model/config declarations, MCP declarations, top-level skill packages and source-timestamp quota gates. Child attribution avoids shell mentions and reused parent PIDs. Private reports omit raw commands, credential fields and chats; failed replacement preserves the old snapshot. Refreshed quota can be supplied without modifying the shared capacity writer. Sixteen failure/recovery tests pass; actual Windows collection completed; staged whitespace check and native hook passed.
+
+Routing stays with the accepted routing owner; SIS supplies evidence, Foundry contracts/prover/receipts and existing memory/work/loop graphs. No new scheduler, database, cloud runtime or global MCP activation was created. Other terminal, source-intake and Arcanea lanes were preserved. Registry authority was read at agentic-ops `cf99c95559b741c6ed372c06f1030d2bd731913b`.
+
+Independent exact-revision provider review remains pending. Machine admission paused new swarms; no independent verdict for this code is claimed. Installed-version/release comparison, native inheritance/config adapters, executable capability probes and routing/UI/cloud integration remain open. Existing [SIS151](https://github.com/frankxai/Starlight-Intelligence-System/issues/151) and parent143 stay open. Operator-private evidence is under `.starlight/reports/harness-fleet/`; conversation export remains under `.starlight/reports/conversation-20261010-01a12297/`. No owned server or watcher remains.
+
+Next: fresh admission and independent exact-source review, preserve all owners, then prove one real maker/checker workflow using current account/tool receipts. Do not call the collector an autonomous meta-harness or infer tested support from declarations.
 ## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
 
 [SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged

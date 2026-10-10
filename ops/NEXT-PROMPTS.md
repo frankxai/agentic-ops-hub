@@ -1,5 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Current memory pickup: review repairs, then prove actual upstream wiring
+
+Read the final memory-isolation session and SIS151/143. Freeze SIS340 at `2bf05c96f77a46a4534ab24a4013315b1d738988`: local-core tenant keys and mutation boundaries repaired,15 focused provider/routing and135 native conformance tests pass, plus nine Python regressions/seven smokes and final Windows/Linux focused CI. Obtain independent exact-head review before normal integration. Earlier advice to fix that collision is now historical; upstream package and production gateway adoption are still pending. Reconcile the missing canonical storage sensor entry point with its current owner before an install. Existing local ReasoningBank application tables are empty; the Antigravity helper writes schemas without a backend. Use the existing gateway/provider seam and canonical replay, test pinned AgentDB3.0.0-alpha.20 insert/search/delete/flush/reopen and denial, then compare a real creator task with OmO/Ruflo using output, repair cost and measured RAM. Current machine preflight permits one bounded workload and pauses new swarms; re-read numeric floors and owners. Preserve all other fronts, source records and fleet328; SDK8.4.0 is already on SISmain. Save the hub and existing product issue; leave broader objectives open.
+
+
+## AgentDB and cross-harness integration: continue from tested repairs
+
+Read today's AgentDB session, SIS151/143 and the private AGENTDB-WIRING.md pickup. SIS340 at `27b67d5a79a71f7334e1483d017a687afce83799` has nine regression tests, seven smoke checks and successful Windows/Linux CI, but needs independent exact-head review before normal integration. The phase-0 SQLite adapter is not production gateway wiring or the Ruvnet package. Re-check the numeric RAM floor before installs/builds/agents; latest PP printed ALLOW while below its required floor. Preserve all foreign lanes and fleet328. Refresh current heads: SISmain includes SDK8.4.0 release339; the earlier terminal327 status is stale. After admission recovers, test pinned AgentDB3.0.0-alpha.20 with isolated insert/search/delete/flush/reopen, denial, interruption, measured memory and SQLite comparison. Adopt through the existing memory-provider/gateway seam with canonical replay and deletion reconciliation. Fix the inspected in-memory local-core provider's tenant-ID collision in its own lane first. Reuse AIS routing, Queen execution and existing work graphs; test Ruflo controller isolation and use OmO continuation/category/reviewer mechanisms without another queue. Keep all broader objectives open until real creator output and matched comparative evidence exist. Save the estate handover and existing product issue; preserve prior prompts and session provenance.
+
+
+## Estate delivery: lead the existing fronts through verified integration
+
+Read the10October session, SIS151/143 and C:/Users/frank/.starlight/reports/harness-fleet/estate-delivery-20261010/README.md plus pr-action-matrix.csv. Audit coverage653PRs/138repos/944issues is an interval, not final outcomes;255lane records/1908branches contain preserved recovery candidates. Refresh exact heads/owners before writes. Lead serially: hook109 independent review plus eligible approval; Arcanea525 existing billing recovery owner, with migrations/payment activation separately gated; terminal327/fleet328 and AIS10's P1 path escape/P2 wrong-script findings, then one real creator proof. Preserve all other goals. PP pauses new swarms; zero task-ID bindings and floor-only Queen dispatch-open do not authorize launches. Repair existing card envelopes through the Queen owner's validator rather than duplicating queues. Fresh30s Grok text health emitted no stream/answer, was stopped and supplies no review; require a demonstrated completion route before another source packet. Own one leased writer lane, keep exact source/recovery/spend receipts, independently review and use normal integration gates. Read back main, CI and actual user outcome. Save both this hub and the existing product issue; never archive unfinished work for tidiness.
+
+
+## Harness fleet: validate reviewer route, then integrate evidence
+
+Read SIS328 draft at a2e3b53a and SIS151 plus this hub session2026-10-10. The collector now has20passing tests, real Windows collection and clean gitleaks; quota/output collision and read bounds are fixed. All3 independent Grok attempts failed to produce an accepted review: first tool boundary mismatch, then240s grok-4.7 timeout and120s grok-4.7-build-fast timeout with verified empty tools/MCP. No owned reviewer remains; do not poll nonexistent workers or treat runtime init as successful capability proof. Refresh admission/quota and diagnose a small native text-completion fixture before another full source review. Obtain independent exact-head review before making328 ready. AIS route code belongs to its existing Claude PR10 atd8bd2e3e and is absent from cached main788a0c1; preserve that lane and reconcile the accepted integration API with its owner. AIS supplies cited capability resolution, Queen/Observatory supplies execution/interface. Then prove one admitted maker/checker workflow with immutable base, lease, privacy/spend bounds and independent acceptance. Reuse SIS six-vault memory, work/loop graphs, Foundry contracts and one durable orchestrator. Keep151/143 and broader cloud/upgrade goals open. Save both hub and product issue.
 ## Creator MCP: repair publication, then prove connected creator acceptance
 
 Read today's SDK8.5 organization handover and SIS144 comment6093445212. Existing
@@ -72,6 +90,23 @@ native Codex/Claude/Hermes/Goose adapters, academy/experiment/subscription featu
 and the whole objective open. Current MCP2026-07-28 extensions are not implemented;
 do not auto-upgrade, fork upstreams or mistake a catalog for tested capability.
 Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
+
+## Hooks and instruction architecture: approve the tested integration and complete rollout
+
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
+1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
+the final source bindings. Obtain exact-head independent provider review and
+one eligible GitHub approval; normal merge was refused, and older review attempts
+are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
+status turn with 13 completed hooks pass. Preserve exact operator backups and
+both startup disables. Complete Desktop UI reload and write/design event proof,
+then adopt the merged source without overwriting occupied primary lanes. Check
+installed versions before re-projection. Continue PR80's guarded shared-guide
+rollout and issue98's authority reconciliation with their current owners. Validate
+exact roots before classifying missing guides; preserve SOUL and graph brakes,
+write-back and distinct-verifier contracts. Save existing issues and hub receipts.
+
+Fresh follow-up: live Arcanea inventory has28 trusted/26 enabled hooks and zero errors/warnings; doctor and38 tests pass. The bounded census now confirms85 exact Git roots without a root guide among232 Git-marked folders; do not retain71 as a current count. Resolve inherited/nested/native instruction coverage before per-repo rollout. Git hooks resolve to three directories; inspect SIS and Arcanea Orchestrator's separate hook chains for security-check parity in admitted owned lanes. Preserve the existing config repair/review owner, now actively refining tracked source and adding native inventory/merge-review files. Review the published frozen head separately; new edits need their own exact-revision checks. This follow-up made no runtime edits.
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
