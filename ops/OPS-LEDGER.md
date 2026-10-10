@@ -1,4 +1,50 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+<!-- starlight-delivery-20261010:start -->
+## Starlight platform delivery, 10 October 2026
+
+- Done: [PR107](https://github.com/frankxai/starlightintelligence.ai/pull/107) and [PR109](https://github.com/frankxai/starlightintelligence.ai/pull/109) merged normally. Latest main `1f1ff7e`, Vercel `dpl_7qLawsYTWXmZrhmn7uQV24W9aeWh` READY; security PR108 preserved. Released interruption/edit/export recovery, first-signup proof recovery, scoped original-brief recovery, corrected accounting labels and pytest security pin.
+- Verified: two exact-head recovery source PASS reviews plus the test-security PASS review, failed/time-limited evidence preserved. [Latest main CI38052675008](https://github.com/frankxai/starlightintelligence.ai/actions/runs/38052675008) PASS: 443 Node / 17 financial PostgreSQL / 210 browser cases and 79 main source hashes. [Latest live canary38052701792](https://github.com/frankxai/starlightintelligence.ai/actions/runs/38052701792) PASS: 138 page/viewport rows / seven team HTTP cases. Live 24 HTTP checks / five public MCP checks / five homes HTTP200. Seventy-eight current candidate/platform-main capture companions/ledger records; latest follow-up JSON proofs retained.
+- Database: existing EU migration `20261010122233` installed; exact stored 45,655-byte SQL/hash bound, eight RLS tables / sixteen service-only invoker RPCs verified. Existing business rows and identity/Reality Architect preserved; no customer/funds/usage rows created. Two pre-existing unrelated advisor warnings remain scoped in the session.
+- Security: GitHub alert5 fixed at12:40:07 UTC; fresh query zero open Dependabot alerts. Code scanning is not enabled, so no whole-product security certification. Secret hooks stayed enabled; hub verify/estate scan required.
+- Open: actual Clerk app/server credentials, customer membership/funding/rates, KV/Resend/reconciliation, maintenance invocation/alerts/expiry/backups, billing/licensing, wider craft and real customer acceptance. Full apps/router/cloud/five-domain/commercial objective remains unfinished. Peer SDK8.5.1/AGY handover PR237 is preserved; do not duplicate its published release or claim its creator acceptance.
+- Saves: current hub session/ledger/prompt and product issues [82 release update](https://github.com/frankxai/starlightintelligence.ai/issues/82#issuecomment-6097629776) / [95 release update](https://github.com/frankxai/starlightintelligence.ai/issues/95#issuecomment-6097630223). Source task `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`; hub lane `codex-7d9cfc62`, dedicated worktree. Earlier pause and other records preserved; full objective not closed.
+<!-- starlight-delivery-20261010:end -->
+
+
+## 2026-10-10: AGY source review and Antigravity harmony fix
+
+[SIS346](https://github.com/frankxai/Starlight-Intelligence-System/pull/346) merged
+to df806312 after35 adapter tests, typecheck, required CI and reconciled independent
+xAI PASS at20eddb98. Default MCP scaffold inert; explicit entry preserved without
+full-scope or unverified native activation claims. Actual isolated AGY review of
+first draft observed no effectful steps; advertised tools remain and its older
+PASS is not final-revision approval. All owned reviewers stopped/links removed.
+[SDK8.5.1 release347](https://github.com/frankxai/Starlight-Intelligence-System/pull/347)
+merged to9887aa8f after independent c2fe2fc3 PASS, required CI and main candidate
+38052541563 PASS. Earlier RAM HOLD resolved with bounded8674MB/quietCPU70%.
+Both8.5.1 npm publications verified against tested main bytes and latest tags
+at12:40:46Z.377 non-manifest files match across scopes. Production canary
+38052578072 PASS; live doctor retains creator-MCP0.1 blocked. Current AGY prompt in NEXT-PROMPTS drives real creator
+edit/recovery/export/receiving-owner acceptance and retains all broader goals.
+Creator issue4 and SIS144 stay open; no foreign ownership/unknown-run cleanup.
+
+
+## 2026-10-10: GenCreator Supabase identity choice implemented
+
+Frank confirmed Supabase sessions with explicit Starlight linking. [PR196](https://github.com/frankxai/gencreator.ai/pull/196)
+reviewed cc6965d merged normally to8d17f46; all27 files match. Consent/OIDC proof,
+existing canonical membership, durable retries/removal and the preserving14-table
+upgrade pass final full CI38047625481: native3/3 without skips,971 unit and250 browser
+cases; two existing optional visual skips. Independent auth/data and exact-final
+delta reviews PASS. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd at8d17f46
+passes22 site/MCP and7 account failure contracts. MainCI38048478637 attempt2 passes
+all required jobs; first execution canceled during metadata updates and is retained. Public375/1440 sign-in captures inspected;
+authenticated linking is unproved. No live SQL/config/credential writes; managed503.
+Frank's infrastructure approval, staging/real-account/retention acceptance and
+full adoption programme remain open. [Today's session](sessions/2026-10-10.md) and
+[issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6097126763) retain the evidence.
+
+ 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 ## 2026-10-10: Command Center native voice integration checkpoint (Codex)
 
@@ -98,6 +144,39 @@ retained; 141 keeps unique Honor-edition rehearsal. Failures/review limits are i
 identity/provisioning, actual clients/memory, customer/editorial acceptance and
 commercial comparison remain open. Both cloud test machines and owned local
 workers stopped; the original full goal remains active.
+
+## 2026-10-10: Arcanea voice555 live; author556 recovery under review
+
+[Voice555](https://github.com/frankxai/arcanea-ai-app/pull/555) merged normally at
+8a47d6b7154164770d9fbd6daafe4a08fca38678 from reviewed79de1581be6c.
+Customer audio keys, safe errors, exact draft/text preservation, same-origin room
+transport, elapsed-time VAD and accessible persistent recovery are live.
+Independent Grok PASS has zero remaining critical/high/medium findings after the
+retry-alert Dismiss correction; formal source/file/hash receipt is on the PR.
+Candidate CI38049456450 and refreshed38050132165 passed, including24 voice/21chat
+native cases and six compiled desktop/mobile/reduced-motion behavior rows.
+CodeQL38049456393 analysis/findings passed. Receiving-main CI38050586413 passed.
+Production dpl_F4kk81cSsSd3jus8SaiV2Jjeq9Nu is READY at8a47, with all three aliases.
+Eight directwww denials and all24 canonical host cases are verified across
+receipts: initial308alias expectations were corrected; three cases then hit the
+existing20/min quota and passed after its window. No spoofed IP, live provider
+key, paid audio-quality claim or publication. Failed receipts remain preserved.
+
+[Author556](https://github.com/frankxai/arcanea-ai-app/pull/556) is open at
+af79dbbde4b6077694cfbc8fd228b3aba2c425b3, from receiving-main8a47, fifteen files.
+Exact revision saves, rich owner reopening, account-bound browser recovery,
+current editor feedback/customer Anthropic admission and mobile controls are
+implemented. Production lacked book_chapter_drafts despite its committed20260414
+migration. Additive/idempotent owner-only repair plus real disposablePostgreSQL
+ownership/reapplication cases passed CI38050697708, alongside native10,
+full lint/types/build. Ready-event browser/CodeQL and exact review remain pending.
+Owned native reviewer82446 runs under BOUNDED12422MB/6144required,45-minute limit;
+private lifecycle/packet bind exactaf79. No parallel agents or local browser.
+Production DDL remains unapplied. SupportedBrowser reports no connected instance;
+anonymous sign-in is disabled and no admin key configured. Frank chose an
+existing private test-account setup; its location is requested. Authenticated
+save/reopen and paid/editorial acceptance remain open under276/529. The native
+tracker still reports paused despite explicit continuation; do not call complete.
 
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
@@ -1130,3 +1209,17 @@ Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged 
 ## 2026-10-10: Arcanea foundation source assessment
 
 Public source `6e774c1` inspected: projects/retrieval, CLI executable overlap and creation-engine proposal boundaries recorded. Continue existing531/532 with current storage authority, execution admission and one recoverable browser/MCP creator outcome. No product implementation, paid execution or launch approval in this assessment;529/511 stay open. See today's session. Private strategy remains private.
+
+## v0 and design alignment: connected workflow and released pilot — 10 October 2026
+
+OAuth works for the existing Starlight Intelligence team. Inventory covered 21 original accessible chats; six private source contexts and one review context were added on existing project bindings. Vercel returned 62 registered projects, not 62 verified live products. Private mapping stays in local evidence; unseen ChatGPT chats are outside this coverage.
+
+Design Intelligence [49](https://github.com/frankxai/starlight-design-intelligence/pull/49) and [50](https://github.com/frankxai/starlight-design-intelligence/pull/50) are merged; receiving main `31543da` passed CI. The adapter passed 28 tests and exact-source independent review. Native v0 treated commit SHAs as branches and failed; the repaired workflow uses hash-verified source attachments and preserves immutable provenance without failing mounts.
+
+GenCreator [197](https://github.com/frankxai/gencreator.ai/pull/197) is merged at `6dc5419` and live at [Creator Studio](https://gencreator.ai/creator-studio). Candidate `568f045` passed 971 unit tests, 262 browser tests, lint/typecheck, production build and required checks; two visual cases are intentionally skipped, with no final flakes. Exact-source independent review and original mobile/desktop inspection passed. Production is READY. Public HTTP 200 confirms reachability; inspection of the fetched server HTML confirms source-first ordering and the initially open recovery shelf. Receiving-main CI38053065436 passed; reviewed files match receiving main.
+
+The team `gencreator` design system now loads through the native skill interface, with exact Territory B tokens, a checked starter and five verified dated source snapshots. SKILL SHA256: `002b808c8ecb81e371334cc625ec8a8d3e97f85eed614c6c1544ae3ec0165d0e`. No opaque revision was exposed. The independent reader confirmed virtual paths and metadata; it could not recompute virtual-file hashes. Source snapshots require explicit refresh. Existing defaults and product adoption pins are preserved.
+
+Next priorities: Arcanea's saved-world journey, SIS Memory Studio recovery, FrankX Foundry handoff, Income's first inspectable workflow and Academy's lesson-to-artifact journey. Their contexts are prepared; implementation and adoption remain separate. SIS public-site ownership, Income commercial gates and Academy brand/licensing need reconciliation. Figma authenticates, but Starter file reads remain quota-blocked; keep it optional.
+
+No founder taste, customer outcome, complete accessibility audit, measured CWV or managed-account activation is claimed. Rejected screenshot transfers were quarantined; 120 original CI PNGs have sidecars and both visual-ledger receipts. The reference schema returns 404; memory-vault synchronization is pending. Preserve other owners' work and wider goals under existing Design48 and GenCreator5.

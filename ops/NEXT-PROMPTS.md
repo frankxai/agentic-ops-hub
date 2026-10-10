@@ -1,4 +1,136 @@
 # ⏭️ Next Prompts — per active front / terminal
+<!-- starlight-delivery-20261010:start -->
+## Starlight: finish live account activation and preserve the full delivery objective
+
+Continue task `01a123d5-efa4-7420-9fc1-2d26cbcfeb27` under Frank's explicit resume/production/normal-merge authority. PR107/109 are merged at latest main `1f1ff7e`; Vercel `dpl_7qLawsYTWXmZrhmn7uQV24W9aeWh` READY; Supabase EU migration `20261010122233` applied. Latest main CI38052675008 and production canary38052701792 passed with exact source bindings, 443 Node / 17 financial PostgreSQL / 210 browser cases, 138 live page/viewport rows and seven team HTTP cases. Alert5 fixed; zero open Dependabot alerts observed. Preserve rejected/time-limited reviews, three final scoped PASS verdicts, live HTTP/MCP checks, source/hash bindings, the security release and other harnesses' work. Re-query current main/deployment before further changes; snapshots are not a permanent green state.
+
+Complete dependent live activation using the chosen real Starlight Clerk application and securely provisioned server credentials. The prior application-name/dashboard-URL question is unanswered; never ask for secret values in chat. Current Vercel project has only Blob; Supabase connector exposes client-safe keys only. Keep inference/recovery-save flags off until active canonical membership, real customer funding/rate authority, protected maintenance invocation/alerts/retention and authenticated interruption/recovery/delete/export pass. Preserve GenCreator's separate Supabase-session actor and explicitly link Starlight accounts; no email-derived merge or inferred entitlement.
+
+Continue within the existing full CLI/SDK/ADK, desktop/mobile, platform/router/memory/cloud and five-domain/commercial objective. Read the newest SDK8.5.1/AGY owner handover PR237: its published SDK release is peer-reported verified work, while native/community creator acceptance and creator-MCP publication remain owned/open. Reuse published packages and accepted implementations; coordinate through their existing issues and respect their lanes. Keep customer-owned runtime/data/keys and BYOK boundaries. Resolve waitlist KV/Resend/contact reconciliation, licensing/billing and remaining craft from authoritative product decisions. A schema, HTTP200, synthetic CI or catalog plan does not establish adoption or an installable app. Do not archive unfinished work.
+
+Use fresh routing/ownership/machine admission and the existing shared tool plane; serial or remote verification while swarms are held. Reclaim a write lane before any edits. Normal exact-head merges only. Handover stays in this hub; update existing product issues82/95. No local workers/servers/watchers are intended to remain at handoff.
+<!-- starlight-delivery-20261010:end -->
+
+
+## AGY: prove one connected community creator journey
+
+Continue Frank's terminal-to-web programme for Starlight, Arcanea, GenCreator,
+AgenticIncome, AnimeLegends and RealityArchitect. Preserve its research, science,
+design, engineering, academy, social workflow and subscription-management goals.
+Use the existing SIS runtime, journal, memory and creator implementations. Your
+first outcome is one real, editable, recoverable creator artifact that another
+owner accepts. Keep the broader programme open until its separate gates pass.
+
+Read `frankxai/agentic-ops-hub`'s latest `ops/sessions/2026-10-10.md`,
+`ops/OPS-LEDGER.md` and this current prompt in `ops/NEXT-PROMPTS.md`. Re-query
+SIS issue144 and PR346, creator-MCP issue4, fleet PR328, modular-package PR342,
+and the GenCreator receiving owner's current implementation before acting.
+Saved heads are evidence snapshots. Do not merge another owner's unfinished PR.
+
+### Verified starting point
+
+- SDK8.5.1 is published under both existing scopes from reviewed main
+  9887aa8fbb4f6df966e8e2aeb8661561e2a730d1. Public version/latest endpoints
+  and tarball bytes match the tested main artifacts. Both packages were
+  independently cold-installed, including compiled Antigravity adapter checks.
+  Their 377 non-manifest files match. Ecosystem doctor checks public metadata,
+  with creator-MCP publication and native/community acceptance still open.
+- SIS PR346 corrects default Antigravity MCP scaffolding: blank entry point gives
+  an empty server map; explicit entry point produces one Node server without
+  full-scope flags or unsupported capability assertions. Final source reviewed
+  at `20eddb989ec6f7b4c6e8343368b1d1efe363aa18`; 35 adapter tests and typecheck
+  pass. This source correction is now in the verified published SDK8.5.1.
+- AGY was invoked for a real frozen-source review with Gemini3.1 Pro High using
+  a private profile. Its CLI reported no MCP servers or imported plugins. The
+  stream recorded user input, agent response and finish only. It returned PASS
+  for the first draft, then the fenced xAI reviewer BLOCKed residual generated
+  Markdown claims. Those claims were repaired and the final xAI review passed.
+  AGY's older PASS does not approve the later revision.
+- Installed AGY executable SHA256:
+  `fbbfb3f15c7628252c5e12765683c688ba05ee122b853cadeb0bbfd4e13ca25b`.
+  `--mode plan` has no effect with `--disable-slash-commands`. AGY advertises
+  native tools even under deny rules. This is not an empty-tool harness. The
+  sandbox and deny configuration were loaded; enforcement was not exhaustively
+  tested. Do not claim a universal safety boundary or Windows sandbox parity.
+- Published creator-MCP0.1 still has `workspace:*` dependencies. Its canonical
+  checkout is dirty on `agent/claude/publish-readiness`, and root repository
+  guides were missing on inspection. Preserve that lane and coordinate through
+  issue4. Neither an ambient boot nor a manifest check repairs its publication.
+- Native Grok generated a source-backed guide that was reopened, edited to
+  revision3, exported and imported into the SDK journal. Export SHA256:
+  `99691c60c165115c2f0672086ea6f69cfc6b5c78e09bb08beb7a57a24ca38e2f`.
+  Actual external receiving-owner/editorial acceptance is pending. The prior
+  OpenCode anonymous route returned403; retain its unknown attempt and do not
+  silently redispatch it.
+
+### Ownership and admission
+
+Start in a verified available repo/worktree. Explicitly read root and deeper
+instructions, `WORKFLOW.md`, product outcome and machine policies; hash the
+sources and record root/origin/branch/owner/explicit output files. Run routing
+guard then check, and inspect ownership separately before writes. Do not use
+Codex's owned write lane while it is active. Do not touch the foreign creator
+checkout. A missing guide or occupied lane blocks its dependent writes.
+
+Use one admitted worker, one bounded experiment and the existing shared tool
+plane. Honor fresh PP and storage gates, the 4GiB RAM floor, and cost/timeout
+limits. Do not start all MCP servers, import the default memory writer into a
+review profile, weaken permissions, kill another session's processes or remove
+locks by age. Keep credentials in the host. No Higgsfield. The ECC pointer is
+cold; do not install its full profile, observe hook or another orchestrator.
+
+### Implement and verify in this order
+
+1. Re-query PR346/347 and registry8.5.1 before further release work. Both PRs
+   merged after exact-revision independent review and required CI; main candidate
+   38052541563 cold-installs both scopes with compiled adapter assertions.
+   Public registry bytes and latest tags verified at2026-10-10T12:40:46Z.
+   Reuse the tested published package; do not republish an existing version.
+   Earlier RAM HOLD was honored and resolved with bounded8674MB/quietCPU70%.
+   Obtain fresh admission before any new local worker. A source merge, package
+   installation and actual native creator acceptance remain distinct gates.
+2. Coordinate creator-MCP's owner to eliminate published workspace protocols and
+   prove an independent consumer installation of its dependency graph, with
+   tenant/auth/provenance boundaries intact. Do not invent credentials, OAuth
+   consent, billing or deployment proof. Surface the exact dependency if blocked.
+3. Use the same real brief and cited sources across native AGY, the existing
+   Grok workflow and manual Markdown. Produce an editable creator artifact,
+   record repair effort/time/provider-reported usage, reopen after interruption,
+   edit without losing originals, export with a checksum, and import into the
+   actual GenCreator or other agreed receiving surface. Obtain that owner's
+   acceptance and inspect the resulting artifact. A simulated second owner or
+   SDK-journal import does not close this gate.
+4. Test wrong tenant, revoked capability, invalid payload, duplicate run ID,
+   transport loss, timeout and restart. A host write denial is not HTTP403.
+   Require explicit observations and no unintended write; do not boot a broken
+   package in the default profile to manufacture denial evidence. Preserve
+   `running`/`unknown` receipts and require owner reconciliation before a new
+   attempt. Do not assert that a local timeout stopped remote spending.
+5. Reuse fleet PR328's existing evidence collector and modular PR342's design
+   after their owners' review gates. Record each CLI's installed, configured,
+   authenticated, actually invoked and accepted states separately. Prefer
+   upstream CLI/protocol adapters over multiple permanent forks. Consider an
+   upstream contribution or small maintained patch only for a reproduced gap;
+   record license, pinned revision, regression and update/rollback strategy.
+6. Connect the accepted creator journey to one brand's web surface. Extend
+   progress, experiments, decisions and academy tracking through the existing
+   journals and memory boundaries. Social publishing, subscriptions, research
+   labs and academy product acceptance remain distinct work with owning repos.
+   Do not certify six products from six descriptors or enable global telemetry.
+
+For each R&D experiment, record hypothesis, same-brief alternative, source and
+executable revisions, admitted authority, owned process, input/output hashes,
+elapsed time, actual repair effort, usage versus billed cost, failure/recovery,
+decision and next falsification. Stop on denied admission, unexpected effects,
+secret exposure, occupied ownership, output/deadline cap or unconfirmed outcome.
+
+Deliver a tested usable artifact and a short evidence-backed report. Obtain
+independent review of the final exact revision before consequential merge or
+release. Save the handover only in ops-hub's three existing files and comment on
+SIS144/creator issue4 as applicable. Preserve old records and unfinished goals.
+Report source merge, package publication, native runtime behavior and community
+acceptance separately.
+
 
 ## Voice and Command Center: continue the full implementation
 
@@ -30,39 +162,96 @@ pass; no mass transfer or paid-plan change follows from this acceptance.
 
 Read ops/reviews/arcanea-migration-crown-audit-20261010.md and ecosystem issue6. Preserve Gemini's handover/strategy and all unfinished source branches. Reconcile the distinct Arcanea-Labs/Arcanea and frankxai/arcanea histories and the existing Arcanea-Labs/Starlight-Intelligence-System repository. Verify every named source/destination ID, visibility, archive state, private protections, Actions secrets, deployment app access, OIDC trust, Packages and Pages dependency. Correct the gh repo rename transfer instructions in the owner's lane. Use selective public migration; retain private Pro-dependent repositories until the feature/cost decision is accepted. Reuse the existing creator/billing recovery work; compare one actual consented task through the accepted inference path and Worker before adding a gateway. Obtain exact-revision release review and live recovery/latency evidence. No transfer, archival, visibility or paid-plan change is authorized by the old embedded commands. Save both the hub and existing product issue; keep unresolved work open.
 
-## GenCreator: connect the accepted creator loop and managed platform
+## GenCreator: activate reviewed account linking and prove the creator journey
 
-## Arcanea adoption: voice admission and a verified creator journey
+Continue active full goal `01a123db-5493-7220-8d0d-f80760cad443` and issue5. Frank
+confirmed “Keep Supabase sessions and explicitly link Starlight accounts.” Preserve
+Gen Supabase actor/workspace and separate Starlight Clerk principal; no email merge
+or inferred subscriptions/source rights. PR196 reviewed cc6965d merged normally
+to8d17f46 with all27 files identical. Final full CI38047625481 passes native3/3,
+971 unit cases and250 browser cases with two existing optional visual skips.
+Independent auth/data review468d28e and exact-final CSS delta reviewcc6965d PASS;
+source hashes bind the unchanged files. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd
+at8d17f46 passes22 site/MCP and7 safe account contracts. Receiving-main
+CI38048478637 attempt2 passes all required jobs with native3/3,971 unit and250
+browser cases plus the same two visual skips. First execution canceled during
+metadata updates and correctly failed CI Status. Read today's session, preserve all failures and
+re-query exact heads/deployments before new writes.
 
-Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
-Read today's session, merged PR554 and requery heads. Preserved release lane
-`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
-e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
-full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
-reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
-has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
-CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
-selector with duplicate matches. Six bounded cloud-browser production attempts
-passed without reproducing it; keep the failure and unresolved cause visible.
-No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
-findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
+The reviewed14-table renderer preserves recognized12-table creator evidence, founding
+namespace and shared canonical identity. User consent/OIDC proof, active membership,
+durable idempotency and removal are implemented. No production database/API exposure,
+OAuth registration or credential setting occurred. Supabase currently has no dev
+branches. Managed readiness503 and inactive linking remain honest. Follow the
+activation packet and alpha runbook: Frank owns additive Supabase migration and
+production deployment approval; use separate staging/production OAuth registrations,
+retain provider consent/PKCE, and prove real accounts plus deletion/retention before
+promotion. Public sign-in captures and synthetic protocol/SQL checks do not certify
+authenticated UI, live two-account acceptance or a managed cohort.
 
-Create the next owned branch from verified current main; retain the merged source
-branch and foreign lanes. Next repair voice credential admission and privacy,
-preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
-private voice-admission-audit receipt; live keys were not inspected. Repository
-security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
-the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
-Keep managed inference disabled until durable authenticated
-entitlements/reservations exist. Prove actual existing-source generation, reopening,
-editing, interruption recovery and export with user/editorial acceptance; compare
-the same task with the user's current provider editor. Reuse accepted workspace/
-427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
-router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
-branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
-Honor machine admission, secret checks and publication/payment/migration gates.
+PR195 isolated provision57fcf5b and PR194 hook triage802e9aa remain accepted; their
+source/main/deploy proof is in today's session. PR193 recovery/editable decks373d411
+and PR191/192 remain live. Source135 closes with its branch retained;141 retains
+unique Honor-edition rehearsal and owner-pending writing. Preserve other PRs/owners
+and previous source branches. Do not reopen the resolved Gen identity question.
 
+Connect existing clients and memory to a source-backed authored-edit/recovery/export
+journey; retain CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, provider creation,
+GTM and bundled-subscription scope. Re-query published SDK8.5 and creator-MCP issue4.
+Compare useful output, repairs, time/cost and repeat use with a capable assistant
+and creator's editor. A deterministic compiler and green tests do not establish
+customer/editorial acceptance. Keep publication/checkout closed until accepted
+gates pass. Save issue5 and the hub, preserve every other goal/hand over and keep
+the original native goal active. One admitted lead; no local heavy work while PP
+HOLD. Owned review/capture workers ended and the temporary preview share was revoked.
+Organization confirmation is pending for the existing Starlight Platform organization
+hblyvrhhjqkqndgpjcep; Supabase requires quoting and confirming branch cost before
+creation. Follow up on the pending answer; do not infer infrastructure approval.
+
+## Arcanea adoption: finish author556 and the accepted creator journey
+
+Continue authorized work in thread01a123df-58c6-72f3-b86c-65083426cf65, issue529
+and world-first Studio program276. The tracker still reports paused; available
+status tools cannot resume it. Frank explicitly requested continuation, production
+and merges. Keep the original creator/CLI/SDK/ADK/desktop/mobile/memory/router/
+cloud/API/narrative/bundle/GTM goal open and preserve every other owner's front.
+
+Voice555 is merged/live at8a47d6b7154164770d9fbd6daafe4a08fca38678. Exact79de
+Grok PASS zero remaining findings, native45/candidate fullCI/CodeQL/compiled six
+behavior rows pass; receiving-main CI38050586413 passes. READYproduction
+F4kk81cSsSd3jus8SaiV2Jjeq9Nu has the three aliases. Safe audio denials/canonical
+redirects pass across preserved receipts; quota429cases were retried after the
+window. Direct ElevenLabs, paid audio quality, durable quota/XSS and other model
+aliases remain outside certification. All previous failures/review attempts stay.
+
+Author product lane is C:/Users/frank/starlight/repos/.codex-worktrees/
+arcanea-gateway-admission-20261010, branchagent/codex/author-draft-recovery-20261010,
+clean af79dbbde4b6077694cfbc8fd228b3aba2c425b3, PR556 from8a47. Reuse Novel,
+existing manuscript/character tracker and publishing workflow. Exact save
+acknowledgements, owner/account isolation, rich reopening, browser restore,
+download recovery, latest-editor feedback/customer key admission and mobile
+controls are implemented; productiondrafttable was absent. CI38050697708 full
+lint/types/build/native10 and real PostgreSQL owner-policy/reapplication fixture
+pass. Ready-event browser/security gates and exact independent review pending.
+OwnedGrok82446 is running; consult private lifecycle/deadline before another
+workload. No parallel agents/local browser. Don't adopt old review for new source.
+
+Follow up on the pending private test-account location. No browser is connected;
+production anonymous sign-in returns422disabled and no service-role key exists in
+Vercel. No account/email created or authentication policy changed. Actual auth/RLS,
+edit/save/reopen/recovery/export behavior and paid/editorial comparison remain
+required. Review migration first, verify current schema/ownership, then apply only
+the exact additive owner repair when its gates pass. No bulk historical replay,
+publication/canon promotion or money action. Reconcile findings and rerun changed
+gates before guarded normalmerge. Verify receivingmain/production after release.
+
+Preserve505/500/512/494/513/AuthorOS3 and all other owners' work and human rights,
+premium and publication gates. Arcanea universe/readers/releases remain the
+priority; security and voice do not establish full creator acceptance. Serious
+comparison is direct Anthropic plus the author's saved document; no superiority
+or paid demand proved. Broader security/dependency backlog stays separate.
+Save to the hub's existing three files and owning276/529. Hub229 merges main
+without rewriting pushed history and preserves all other owners' sections/audit.
 
 ## GenCreator: managed identity and an accepted creator journey
 
@@ -930,3 +1119,7 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 ## Arcanea foundation: prove one recoverable creator journey
 
 Read the latest product instructions, planning files, issues531/532/533 and529/511. Refresh reviewed Registry and reconcile the older R2 proposal before choosing storage. Requery current main and active owners. Obtain a separate admitted product write lane; this handover grants none. First verify platform-funded agent/generation admission with mocked outbound calls, then complete one owner-scoped browser/MCP world round trip: import, source-cited context, editable scene and visual, approval, durable save, reopen and export. Reuse current projects, media and billing boundaries. Require failure/tenant/cost evidence and exact-revision independent review before promotion. Preserve all other fronts; no new service, paid activation or larger agent roster follows from this prompt.
+
+## v0 design alignment — 10 October 2026
+
+Continue existing Design Intelligence issue48 from the execution receipt in ops/sessions/2026-10-10.md. Connection, six source contexts, workflow49/50, repaired team gencreator skill and Creator Studio197 are implemented. Preserve original chats, defaults, source snapshots and accepted work. Read workflow31543da, verify the actual imported HEAD, and use verified attachments while native SHA checkout fails. Refresh skills explicitly before adoption. Next: coordinate Arcanea's entry-to-saved-world journey with its current owner; read canon/storage/recovery, compare three useful compositions against the native baseline, then integrate and verify one owned slice. Reconcile SIS ownership before adoption. Figma stays optional. Wider GenCreator identity and customer acceptance remain open under issue5.
