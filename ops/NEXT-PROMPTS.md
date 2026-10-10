@@ -1,5 +1,15 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## ECC: sign the two remaining drafts when RAM recovers
+
+The file port is already on main. Do not install the full ECC profile or wire the observe hook.
+
+When free RAM is at least 8 GiB, review and pr-gate merge agent/grok/ecc-upstream-watch-20261010 on Starlight-Intelligence-System and agent/grok/ecc-port-close-20261010 on agentic-ops-hub. The signer must not be Grok. Do not use --admin. If checks are pending, stop.
+
+When Claude's weekly cap resets, run /codex:setup and one /codex:review --base main. Leave typescript-lsp and pyright-lsp for that session. Do not install rtk unless a reviewed Windows binary is confirmed. Do not add claude-code-action until a repository secret name is confirmed.
+
+Issue: https://github.com/frankxai/claude-code-config/issues/42
+
 ## Estate management: use accepted main and continue source recovery
 
 Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
