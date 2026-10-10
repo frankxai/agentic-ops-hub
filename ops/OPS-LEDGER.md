@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: modular SIS npm implementation saved; final checks held (Codex)
+
+[SIS#329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) now
+has a local implementation of the requested core/AI SDK/MCP/workspace-release
+milestones, preserved on `agent/codex/npm-modular-ecosystem` in the isolated SIS
+worktree. Root consumes extracted contracts/sanitizer; new release code binds real
+tarballs to source/digests and checks registry recovery before tokenless OIDC publish.
+Earlier 13 package tests and later 35 legacy/release tests plus 5 current-source core
+tests passed. Final tarball/consumer/root/hosted-CI and independent review gates remain
+open. RAM 3283 MB holds builds and falls below 4 GiB; implementation is uncommitted,
+with a 49-file source fingerprint and in-repo pickup. No product PR, publication,
+deprecation, account configuration, or competitive superiority is claimed. Preserve
+the primary migration owner. See the appended [session](sessions/2026-10-10.md) and
+[hub draft217](https://github.com/frankxai/agentic-ops-hub/pull/217).
+
 ## 2026-10-10: npm namespace plan checked; SIS release gates remain open (Codex)
 
 [SIS #329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329)

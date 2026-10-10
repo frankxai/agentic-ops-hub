@@ -1,20 +1,23 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Npm migration: prove SIS installed-package compatibility before release
+## Npm ecosystem: verify and review the preserved four-milestone implementation
 
-Read ops/sessions/2026-10-10.md and SIS issue329. Reconcile the existing uncommitted
-SIS migration with its owner in a verified, exclusive lane; do not rerun the
-ecosystem publisher across occupied checkouts. Repair the legacy shim's omitted
-subpath/type exports and starlight-mcp binary, and replace its blocked /dist/cli.js
-import with a supported public entry. Reconcile root lockfile identity and verify
-the advertised runtime matrix. Build and inspect real tarballs, test secret and
-private-state exclusions, then install those exact bytes in an empty consumer.
-Exercise old/new imports, TypeScript, CLI help, MCP stdio, denied permissions and
-memory restart. Bind source SHA and artifact digest to independent review. Check
-current npm trusted-publisher/bootstrap requirements and prepare one fail-closed,
-artifact-bound release workflow. PACK READY stays a packing result. Do not publish
-or deprecate until the concrete reviewed release packet receives final approval.
-Update issue329 and the hub record; preserve every existing lane and unfinished task.
+Read the appended ops/sessions/2026-10-10.md, SIS issue329, and the product pickup
+at C:/Users/frank/starlight/repos/.codex-worktrees/sis-npm-modular-ecosystem/docs/ops/HANDOVER-npm-modular-ecosystem.md.
+Preserve the local uncommitted implementation on agent/codex/npm-modular-ecosystem,
+base 421c8735, source fingerprint 101e29cb. Confirm ownership, current guides and
+source-snapshot.json before editing. Latest build admission held at 3283 MB RAM;
+restore admitted capacity without killing or archiving other tasks. Run frozen
+pnpm install, package tests, actual tarball whitelist/secret/size audit, installed
+consumer declarations/generation/streaming/MCP stdio tests, root compatibility and
+mandatory hooks. Materialize only required tracked fixtures in the sparse lane.
+Obtain exact-source independent provider review, resolve findings, commit explicit
+owned files and open a draft SIS PR linked to 329. Rebuild artifact receipts from
+the clean commit. Reconcile the other session's primary rename/shim separately,
+including omitted legacy exports/binaries and blocked CLI import. Verify npm org
+rights, per-package trusted publishers and GitHub npm-production protections.
+Publishing/deprecation needs approval of the concrete reviewed bytes. Update 329
+and hub 217; preserve all earlier evidence and unfinished work.
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
