@@ -1,11 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: Native Voice conversation checkpoint (Codex)
+## 2026-10-10: Voice dialogue and turn observation checkpoint (Codex)
 
-[Voice draft4](https://github.com/frankxai/starlight-voice/pull/4), `b40a174`: native Grok/OpenAI browser conversation, same-origin credential broker, bounded read tools, signed-summary-only recall, explicit microphone controls and cleanup. Dispatch/approval remain blocked; local limits do not enforce provider spending. 122 offline Python tests and 13 Node tests pass, two Pipecat suites skip, Ruff/secrets pass. Exact-head [CI38053010223](https://github.com/frankxai/starlight-voice/actions/runs/38053010223) passes all four jobs: Windows/Linux Python, Node and Rust. Apps stayed stopped. Review, real audio/visual acceptance, managed intake, receipts, ElevenLabs playback and Command Center integration remain open in [Voice issue2](https://github.com/frankxai/starlight-voice/issues/2). Private evidence stays in the task record.
-
-
-
+[Voice draft4](https://github.com/frankxai/starlight-voice/pull/4), `f0fcfc9`: native Grok/OpenAI voice now has scoped metadata-only turn observations; the component graph has a lazy ElevenLabs v4/v3 dialogue binding. Pipecat audio start/PCM/stop ordering and prompt failure/silent-output shutdown pass with actual SDK1.3 and1.12. Each sentence uses a fresh socket; account voice audition remains open. Unknown audible latency, cost and quality stay unknown. Broker configuration/tool counts are separate from unverified browser metadata. No transcripts, audio, arguments or credentials enter the turn file. Local155 Python tests pass with5 skips;18 Node tests, Ruff and normal secret hooks pass. Final-head [CI38055363560](https://github.com/frankxai/starlight-voice/actions/runs/38055363560): Windows/Linux166 tests with5 skips, Node18 and both SDK jobs9 tests and Rust pass. All six jobs are green. Applications stayed stopped. Independent review is pending; real audio/visual acceptance, trusted receipt evidence, managed intake, signed projection deployment and Command Center integration remain open in [Voice issue2](https://github.com/frankxai/starlight-voice/issues/2).
 
 ## 2026-10-10: Estate management accepted and protection live (Codex)
 
