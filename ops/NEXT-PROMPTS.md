@@ -1,5 +1,21 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Npm migration: prove SIS installed-package compatibility before release
+
+Read ops/sessions/2026-10-10.md and SIS issue329. Reconcile the existing uncommitted
+SIS migration with its owner in a verified, exclusive lane; do not rerun the
+ecosystem publisher across occupied checkouts. Repair the legacy shim's omitted
+subpath/type exports and starlight-mcp binary, and replace its blocked /dist/cli.js
+import with a supported public entry. Reconcile root lockfile identity and verify
+the advertised runtime matrix. Build and inspect real tarballs, test secret and
+private-state exclusions, then install those exact bytes in an empty consumer.
+Exercise old/new imports, TypeScript, CLI help, MCP stdio, denied permissions and
+memory restart. Bind source SHA and artifact digest to independent review. Check
+current npm trusted-publisher/bootstrap requirements and prepare one fail-closed,
+artifact-bound release workflow. PACK READY stays a packing result. Do not publish
+or deprecate until the concrete reviewed release packet receives final approval.
+Update issue329 and the hub record; preserve every existing lane and unfinished task.
+
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
 Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at

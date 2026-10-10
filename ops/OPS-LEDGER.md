@@ -1,5 +1,19 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: npm namespace plan checked; SIS release gates remain open (Codex)
+
+[SIS #329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329)
+records the corrected three-namespace strategy and dependency-ordered release plan.
+Registry maintainer coverage is 40 packages: 33 Arcanea, one FrankX and six unscoped.
+Frank supplied six `PACK READY` results; installed-tarball and leak-scan evidence
+remain unverified here. SIS migration exists locally, but its legacy shim loses
+subpaths/MCP binary and uses a blocked CLI import; lockfile identity and tokenless
+publishing also need reconciliation. Preserve the existing migration owner.
+Next: repair compatibility and independently install/inspect exact tarballs before
+publication approval. Hub records are on the isolated Codex npm-architecture lane
+from current main; the Hermes primary checkout is preserved. See the
+[session](sessions/2026-10-10.md) for source revisions, instruction hashes and limits.
+
 ## 2026-10-10: hook repairs and native runtime verified; config merge requires review
 
 [Config109](https://github.com/frankxai/starlight-agent-config/pull/109) is ready
