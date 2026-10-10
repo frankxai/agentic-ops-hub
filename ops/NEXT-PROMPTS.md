@@ -2,6 +2,19 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Latest creator source4f25f64b82bf6a3257ea625d87f28d4eb236599a closes DNS/body
+request deadline gaps.37 targeted tests including native HTTP stall pass; core
+tsc/lint pass. Hosted38035977057 SUCCESS typecheck/unit and Linux/Windows archives;
+draft e2e skipped. Ten downloaded Linux archives plus nine consumer checks bind
+mergea7ad572695da4a66cb0278c9799e8f91283d4e04 and manifestf9c669e12a0899725d3327f996a86287f2555a7e3a5f96220c9bf88b605574cd.
+Current73-file packetartifacts/review-4f25f64 prepared/not reviewed, Gitleaks clear.
+DNS rebinding remains open; timer cannot cancel OS lookup. Priorcreatorbd/26b
+artifacts and review packets now historical. SIS511c0075 unchanged. Obtain actual
+exact-revision isolated provider review when account routes permit, reconcile any
+findings and complete main-source/npm bootstrap before release. Preserve broader
+platform/provider/customer/value goal and other package ownership boundaries.
+
+
 Final creator hosted38035482758 completed SUCCESS: typecheck/unit plus Windows/
 Linux release-artifact consumers. Separate draft e2e skipped. Downloaded Linux
 all ten archives, validated both digests, entry/license/version/dependency order
