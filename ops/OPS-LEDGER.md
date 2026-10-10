@@ -53,7 +53,17 @@ full adoption programme remain open. [Today's session](sessions/2026-10-10.md) a
 
  🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Voice mission handoff checkpoint (Codex)
 
+Voice `0d1478a` and Command Center `5daab47` reject hidden mission-text controls and malformed Unicode before offering a draft or saving a proposal. Ordinary language, accents, emoji, joiners and line breaks remain supported. Invalid edited text stays visible for correction. Browser/server lengths agree on84 sampled boundaries. CC pins the exact new Voice client/worklet/MIT blobs; the32-file Voice and19-file private CC packets are rebound with historical packets preserved.
+
+All six [Voice jobs](https://github.com/frankxai/starlight-voice/actions/runs/38078909910) and all five current CC jobs pass. [CC fixture CI](https://github.com/frankxai/starlight-command-center/actions/runs/38079037650) passes typecheck,356 tests, build and90 route captures without errors/warnings. New hidden-control rejection checks at375/768/1440 preserve both fields and perform zero proposal writes, then restore valid text and prove the existing same-id receipt recovery and Stop cleanup. All three validation captures were inspected. Devices and transport are synthetic; no local app/browser/microphone started. Local checks:48 Python broker,33 native client,25 CC targeted tests,84 boundary samples, Ruff and secret hooks.
+
+NVIDIA Nemotron Ultra returned a focused static PASS at the exact public Voice `0d1478a` in65.34 seconds for all five changed files;27 unchanged hashes match the prior packet. The full32-file WARN at `3bba50a` and MCP cleanup PASS at `db99f7d` remain separately preserved. Raw replies, failed attempts and source-based triage are retained. The reviewer executed no tests. Private CC/Memory were excluded from the public trial endpoint. Cross-process history-cap locking remains an engineering gap.
+
+The initial CC `13eac62` checkpoint was pushed with24 passing tests and one failing old revision assertion. This was acknowledged and recorded, then corrected at `5daab47`; all25 targeted tests and current hosted checks passed. Failed/cancelled earlier runs remain historical evidence. Shared quality policy and Emil govern the page by Frank's decision; the missing-guide question stays resolved.
+
+Both product PRs remain draft: [Voice4](https://github.com/frankxai/starlight-voice/pull/4), [CC70](https://github.com/frankxai/starlight-command-center/pull/70). The Memory atomic snapshot candidate remains unapplied on [issue8](https://github.com/frankxai/starlight-memory/issues/8#issuecomment-6100653499), with3 baseline failures/8 candidate passes and no HTTP/crypto integration proof. Its foreign lane is preserved; the one-extra-worktree question remains unanswered. The19:04 UTC sample had3712 MB free below4096,21/16 runtimes and maintenance/drain posture; bounded ordinary HTTPS review completed and no owned worker remains. Fresh storage measured111668047872 free bytes; the required sensor's named path remains missing. Live voice/account/audition, audible latency/interruption, billing/quality/RAM, signed-memory deployment and atomic result binding, approved managed execution, matched live comparison and private-source review remain open. Full goal stays active.
 
 ## 2026-10-10: Estate management accepted and protection live (Codex)
 

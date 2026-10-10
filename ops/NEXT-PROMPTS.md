@@ -132,6 +132,14 @@ Report source merge, package publication, native runtime behavior and community
 acceptance separately.
 
 
+## Voice and Command Center: continue the full implementation
+
+Continue the full Voice/Command Center outcome from Voice issue2/draft PR4 at `0d1478a`, CC issue69/draft PR70 at `5daab47`, and Memory issue8. Current Voice6/CC5 jobs pass; CC356 tests/typecheck/build/90 route captures and the three-width invalid-text/edit/recovery/Stop fixture pass. CC client/worklet/MIT source pin is exact Voice0d. Read the rebound Voice32/CC19 committed-source packets and preserved reviewer receipts. Public NVIDIA review is full WARN at3b plus focused MCP PASS atdb99 and mission-text PASS at0d; tests were not run by the reviewer and private packets were excluded. Cross-process history-cap locking is the next owned engineering gap to reproduce and repair, with bounded tests and another exact-source review. Preserve the initial CC13e failed assertion checkpoint and correction5da; do not repeat the failure or overwrite evidence.
+
+Frank selected the shared quality policy and Emil; do not reopen missing guides. Keep local apps stopped until explicit later authorization, even if RAM improves. Last19:04 sample3712MB/4096 floor,21/16 runtimes,maintenance/drain. Do not add local harnesses/agents or kill other owners. Memory's foreign checkout remains occupied; await the pending fourth-worktree decision before dependent integration and fresh storage admission. Candidate3fail/8pass is not gateway/crypto/deployment proof. Preserve GenCreator/Arcanea and foreign hub records.
+
+Carry the full goal through signed-memory atomic result binding, approved existing managed intake, real account/device voice audition and interruptions, audible latency, billing/quality/RAM and matched alternatives. Separate harness OAuth/subscription from paid API spend, retain zero default ceiling and disabled writers. Providerbilling has no proved hard cap. Obtain private-source independent review through an admitted private-capable route without copying OAuth or changing global configs. Rebind changed source and update existing product issues and this hub session/ledger/one prompt; do not mark the full goal complete on static/fixture passes.
+
 ## Estate management: use accepted main and continue source recovery
 
 Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
