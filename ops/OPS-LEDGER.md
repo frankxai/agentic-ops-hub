@@ -6,7 +6,7 @@ End-to-end multi-tenant NPM provision and live public package release orchestrat
 - `@gencreator` suite (4 packages): `@gencreator/core@0.1.0`, `@gencreator/media-engine@0.1.0`, `@gencreator/social@0.1.0`, `@gencreator/cli@0.1.0` (with 5-tool Stdio MCP server).
 - `@anime-legends` suite (4 packages): `@anime-legends/core@0.1.0` (Mascot Trinity + Legal Firewall), `@anime-legends/storyboard@0.1.0`, `@anime-legends/media@0.1.0`, `@anime-legends/cli@0.1.1` (with 5-tool Stdio MCP server).
 - `@agentic-income` suite (4 packages): `@agentic-income/core@0.1.0` (manifest schema + policy validator), `@agentic-income/catalog@0.1.0` (30+ tools + route alternatives), `@agentic-income/redirect@0.1.0` (edge 302 engine), `@agentic-income/cli@0.1.0` (with 6-tool Stdio MCP server).
-- `@reality-architect` suite (2 packages): `@reality-architect/reality-md@0.1.0` (canonical v0.1 parser/graph/emitter, 50/50 tests passing), `@reality-architect/diffusion@0.1.0` (confidence assessment engine, 28/28 tests passing).
+- `@reality-architect` suite (3 packages): `@reality-architect/reality-md@0.1.0` (canonical v0.1 parser/graph/emitter, 50/50 tests passing), `@reality-architect/diffusion@0.1.0` (confidence assessment engine, 28/28 tests passing), `@reality-architect/cli@0.1.0` (unified cockpit binary + 5-tool Stdio MCP server).
 Full source branches, worktree records, and verification proofs logged in [today's session](sessions/2026-10-10.md). Foreign harness checkouts preserved untouched.
 
 ## 2026-10-10: GenCreator isolated Companion provision verified
