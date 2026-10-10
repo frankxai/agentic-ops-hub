@@ -51,6 +51,12 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### Arcanea: verify receiving main and complete existing release gates
+
+```text
+Continue Arcanea issues529/511 after PR525 merged as c79b6f4fa4283614ddf12129a7ab1a6e27e3318c (reviewed head dbbd5b17c26eceb7808cade28ed476d8fc0f3a02). Read repository instructions and latest planning/control records, refresh reviewed Registry authority, owner leases and actual remote state. Preserve foreign branches and dirty edits. First verify receiving-main CI/deployment; final candidate had independent Grok4.7 source PASS, Linux/PG concurrency PASS and a READY pricing preview with reduced-motion and intercepted waitlist recovery proof. Do not reimplement those repairs. Checkout is default-off. Keep the existing launch gates: authorized production migrations and seller/product setup, real sandbox purchase and duplicate/redelivery proof, refund/proration/replacement reconciliation, dead-worker receipt recovery, retention/private large-image storage, BotID/auth recovery, image BYOK and plan entitlement enforcement.3MiB inline outputs refund before debit; validate actual model sizes. No production migration, paid call or release activation is authorized by this pickup. Acquire an admitted owned lane for the next bounded issue slice; preserve accounts/financial history on rollback. Save public source-safe findings to the existing issues and agentic-ops-hub; keep private task records and instruction/source hashes private.
+```
+
 ### Starlight interfaces: connect source-backed creation and knowledge
 
 ```text
