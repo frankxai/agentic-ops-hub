@@ -1,5 +1,20 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Hooks and instruction architecture: approve the tested integration and complete rollout
+
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
+1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
+the final source bindings. Obtain exact-head independent provider review and
+one eligible GitHub approval; normal merge was refused, and older review attempts
+are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
+status turn with 13 completed hooks pass. Preserve exact operator backups and
+both startup disables. Complete Desktop UI reload and write/design event proof,
+then adopt the merged source without overwriting occupied primary lanes. Check
+installed versions before re-projection. Continue PR80's guarded shared-guide
+rollout and issue98's authority reconciliation with their current owners. Validate
+exact roots before classifying missing guides; preserve SOUL and graph brakes,
+write-back and distinct-verifier contracts. Save existing issues and hub receipts.
+
 ## GenInvestor: obtain exact-head review before upstream trial
 
 Read ops/sessions/2026-10-09.md and product issue28 receipt6077597207. Hub205 is merged at c2446950. Planning42/private (82ddff6) and roadmap4/public (06f51f7) are held by explicit different-provider review and remain stacked on evidence-foundations; do not retarget unreviewed implementation into main. Refresh source/CI and independently review product2/private41 before ordered integration. Current machine free RAM1583MB blocks additional reviewer/runtime launch; preserve other tasks and credential boundaries. When admitted, select actual V5 OpenBB packages in a fresh environment, check the15 removed providers and provider-owned APIs, cap the default8GB SEC cache, confirm rights/basis and execute the matched direct/OpenBB benchmark from UPSTREAM_BENCHMARK.md. Complete one real audited research-and-replay workflow. QuantDinger remains a conditional isolated paper lab with denied live effects and no approved fork. Preserve local-first/L2/no-advice boundaries, all branches and unfinished book/UI/MCP/distribution work. User authorized merges if good; use exact-head normal gates, no admin bypass or self-certified independent review. Save both product issues and the hub. No upstream adoption/benchmark or review completion is established.
