@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Actual GenCreator exports reconciled
+
+Eight exact owner exports/manifest hashes and fresh-process readback verified at current PR141 head. Existing staged writing/source project linked to wider goal; accepted count remains0. [Issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6093751393) receives scoped evidence. Browser admission HOLD; actual creator/visual/return acceptance stays pending.
+
+
 ## 2026-10-10: GenCreator unchanged-head preview recovered
 
 PR141 e374345 now has READY cache-free preview dpl_GFeXCuv87bicGXZ9PA2P7KhF761H, exact HTML deployment markers and200for / + /creator-studio. Vercel contextSUCCESS; source/settings/production unchanged. [Issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6093718849) receives evidence and current acceptance action. Creator interaction/visual/customer gates remain pending; all broader goals preserved.
