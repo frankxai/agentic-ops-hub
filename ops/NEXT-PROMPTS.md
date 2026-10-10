@@ -1,4 +1,16 @@
 # ⏭️ Next Prompts — per active front / terminal
+<!-- starlight-delivery-20261010:start -->
+## Starlight: finish live account activation and preserve the full delivery objective
+
+Continue task `01a123d5-efa4-7420-9fc1-2d26cbcfeb27` under Frank's explicit resume/production/normal-merge authority. PR107/109 are merged at latest main `1f1ff7e`; Vercel `dpl_7qLawsYTWXmZrhmn7uQV24W9aeWh` READY; Supabase EU migration `20261010122233` applied. Latest main CI38052675008 and production canary38052701792 passed with exact source bindings, 443 Node / 17 financial PostgreSQL / 210 browser cases, 138 live page/viewport rows and seven team HTTP cases. Alert5 fixed; zero open Dependabot alerts observed. Preserve rejected/time-limited reviews, three final scoped PASS verdicts, live HTTP/MCP checks, source/hash bindings, the security release and other harnesses' work. Re-query current main/deployment before further changes; snapshots are not a permanent green state.
+
+Complete dependent live activation using the chosen real Starlight Clerk application and securely provisioned server credentials. The prior application-name/dashboard-URL question is unanswered; never ask for secret values in chat. Current Vercel project has only Blob; Supabase connector exposes client-safe keys only. Keep inference/recovery-save flags off until active canonical membership, real customer funding/rate authority, protected maintenance invocation/alerts/retention and authenticated interruption/recovery/delete/export pass. Preserve GenCreator's separate Supabase-session actor and explicitly link Starlight accounts; no email-derived merge or inferred entitlement.
+
+Continue within the existing full CLI/SDK/ADK, desktop/mobile, platform/router/memory/cloud and five-domain/commercial objective. Read the newest SDK8.5.1/AGY owner handover PR237: its published SDK release is peer-reported verified work, while native/community creator acceptance and creator-MCP publication remain owned/open. Reuse published packages and accepted implementations; coordinate through their existing issues and respect their lanes. Keep customer-owned runtime/data/keys and BYOK boundaries. Resolve waitlist KV/Resend/contact reconciliation, licensing/billing and remaining craft from authoritative product decisions. A schema, HTTP200, synthetic CI or catalog plan does not establish adoption or an installable app. Do not archive unfinished work.
+
+Use fresh routing/ownership/machine admission and the existing shared tool plane; serial or remote verification while swarms are held. Reclaim a write lane before any edits. Normal exact-head merges only. Handover stays in this hub; update existing product issues82/95. No local workers/servers/watchers are intended to remain at handoff.
+<!-- starlight-delivery-20261010:end -->
+
 
 ## AGY: prove one connected community creator journey
 
