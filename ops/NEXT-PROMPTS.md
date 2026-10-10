@@ -894,3 +894,15 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 - **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
 - **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
 - **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+
+## v0 design alignment — 10 October 2026
+
+Continue Design Intelligence issue 48 and the v0 assessment in ops/sessions/2026-10-10.md.
+Reconnect the existing v0 MCP through supported OAuth; inventory only accessible chats and map them to existing Vercel projects and canonical repos.
+Reuse FrankX /v0 Product Foundry and the production v0 MCP operating standard.
+Coordinate with GenCreator issue 5's owner before touching its released edition-based Creator Studio.
+Import the approved GenCreator brand source plus a consumer app as a v0 design-system projection with recorded revisions.
+Compare distinct source-to-artifact/review/export compositions against a native Next.js refinement on the same source material.
+Choose by creator usefulness, completion, repair effort and interruption recovery; integrate only the selected direction in an owned lane.
+Keep Figma optional while Starter reads are quota-blocked. Obtain current desktop/mobile, focus, touch, reduced-motion and interruption evidence
+through an admitted local browser or the existing hosted QA lane before proposing any rollout.

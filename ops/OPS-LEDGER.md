@@ -1071,3 +1071,17 @@ CI37565170026 passed the browser installation and retained four actual desktop P
 Every baseline PNG's SHA256 and VIS sidecar schema passed. Capture ledgers were appended to the existing estate logs without duplicate lines; memory-vault synchronization remains pending. Figma native upload succeeded200 and placed desktop-first-chapter.png on node11:110 in the existing board. The subsequent use_figma annotation/layout operation returned the Starter quota limit. Image import therefore works; editing/layout and read tools remain blocked. The upload is an unannotated historical failure image, not an accepted design or current screenshot. Saved metadata identifies the node and source; no upgrade or quota evasion was attempted. The actual AI review P1 browser-installer finding was explicitly answered with later fix5d2fa75; required Review Gate is now passing. The current local browser admission held at6346MB free versus8192 required; no new local browser/build or agent started.
 
 Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged application inputs from10b9fc7. CI37565957085 passed the repaired reading round trip and saved five desktop screens, then correctly retained a failed304-versus200 test assertion on cached reload. QA now records legitimate200/304 document responses while retaining real DOM/heading/link assertions; API statuses stay exact. Visual inspection also showed the focus PNG captured the hero while the target was offscreen. The runner now instantly centers the already Tab-focused link, requires full viewport visibility below global navigation and checks its hit target before screenshotting. No programmatic focus shortcut was added. CI37566659772 verifies these corrections; superseded21cb3163 CI was canceled by existing concurrency policy. Production promotion and current-head provider/visual review remain pending. Preserved failed-run images establish only their observed states.
+
+## v0 and design-tool alignment assessment — 10 October 2026
+
+[Design Intelligence issue 48](https://github.com/frankxai/starlight-design-intelligence/issues/48) tracks the open adoption work.
+The assessment is saved in ops/sessions/2026-10-10.md on agent/codex/v0-design-alignment-20261010.
+Native v0 OAuth and the existing API fallback cannot authenticate. Figma identity works, while Starter file-read quota is exhausted.
+Vercel project reads and public text/HTTP inspections succeeded; live v0 account inventory and rendered UI QA remain pending.
+
+Reuse the live /v0 Product Foundry, 19 historical study references, current v0 operating standard and existing brand packs.
+Use v0 for distinct interface directions and native Next.js for integration, behavior and recovery.
+Figma supports named multi-screen review when tool access is available. Avoid another catalog or universal brand theme.
+Proposed order: preserve/extend GenCreator's released Creator Studio, Arcanea creation flow, Starlight memory recovery,
+bounded FrankX product/music/navigation work, Agentic Income proof and Academy learning flows.
+Coordinate the GenCreator pilot with issue 5's active owner. Current-source and exact-revision visual evidence are prerequisites to a rollout claim.
