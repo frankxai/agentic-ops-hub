@@ -2,7 +2,7 @@
 
 ## Voice and Command Center: continue the full implementation
 
-Continue Voice issue2 from draft PR4 at a09f403 in the assigned Codex voice-architecture lane. Keep applications stopped until Frank changes that instruction. Read current source/instructions and ownership; reuse the shared tool plane for typed reviewed-memory tools, then connect native Grok/OpenAI session transport and the separate v4 Turbo dialogue adapter. Preserve divergent Command Center/Hermes work. Obtain independent revision review when admitted; measure preference, interruption, 20 session receipts, first playable audio, cost and RAM before declaring end-to-end acceptance. The full revamp remains active.
+Continue Voice issue2 from draft PR4 at 8c5184a in the assigned Codex voice-architecture lane. Keep applications stopped until Frank changes that instruction. Read current source/instructions and ownership; reuse the shared tool plane for typed reviewed-memory tools, then connect native Grok/OpenAI session transport and the separate v4 Turbo dialogue adapter. Compare GPT-Live client delegation with Grok while preserving backend policy/task authority. Preserve divergent Command Center/Hermes work. Obtain independent revision review when admitted; measure preference, interruption, 20 session receipts, first playable audio, cost and RAM before declaring end-to-end acceptance. The full revamp remains active. Check CI38050382502 for the final Rust result.
 
 
 ## Estate management: use accepted main and continue source recovery
