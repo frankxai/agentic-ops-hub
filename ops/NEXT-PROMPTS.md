@@ -64,6 +64,13 @@ Honor machine admission, secret checks and publication/payment/migration gates.
 
 ## GenCreator: managed identity and an accepted creator journey
 
+First finish config-only PR 194 at reviewed 9a56388: two intentional design-hook
+exceptions, no CSS or behavior changes. Full CI 38036742704 was pending at the
+triage save. Re-query required checks/reviews, merge normally with exact head,
+verify receiving-main/deployment, update issue 5 and preserve source branches.
+Repo/home configured detectors are clear; raw detector still reports both rules.
+Then resume the original product programme below.
+
 Continue active goal `01a123db-5493-7220-8d0d-f80760cad443` and issue 5; retain the
 CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, subscription/GTM and creator/
 developer-adoption scope. Read today's release record and re-query actual heads.

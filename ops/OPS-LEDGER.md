@@ -11,6 +11,18 @@
 <!-- starlight-delivery-20261010:end -->
 
 
+## 2026-10-10: GenCreator design-hook findings triaged
+
+Two unique warnings were duplicate-reported: a real edition-cover spine and an
+`aria-pressed` selected-button underline. Inspected the released capture, source
+semantics and Territory B contract; both keep their intentional design. Two
+file-scoped rule/value exceptions are saved in repo and home-session configs.
+Prior exceptions remain; configured scans are clear and raw scans retain both
+rules. No UI changes or remaining reported findings. [PR 194](https://github.com/frankxai/gencreator.ai/pull/194),
+candidate 9a56388, has full CI 38036742704 pending; normal merge/receiving-main
+verification follows. [Today's session](sessions/2026-10-10.md) records evidence.
+Issue 5 and the full native programme stay open; no new production claim.
+
 ## 2026-10-10: GenCreator browser recovery and editable decks live
 
 [193](https://github.com/frankxai/gencreator.ai/pull/193) merged normally at 373d411
