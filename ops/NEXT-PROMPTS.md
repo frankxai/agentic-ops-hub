@@ -1,32 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 <!-- starlight-delivery-20261010:start -->
-Continue the active Starlight goal. Security PR108 is merged and live at `dbf8b5d459a1b47c80880620d84cfc5df6db1ab6`; both high dependency alerts are fixed and zero remain open. Review/registry/CI, eight production GETs and the production canary passed. Keep security branch `ea12d0a5819fc4bb2f3f9786a260e07c9743838a` and the larger draft PR107 at `4eb3c575a56df765506542ff34b9a40fc69b13a6` distinct.
+Continue active Starlight goal `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`. Security PR108 is merged/live at `dbf8b5d459a1b47c80880620d84cfc5df6db1ab6`; GitHub reports zero open dependency alerts. Draft PR107 is `c476f48b57b43a706206ea316568afe28f25fcb3`. Its first-signup lost-ACK recovery and workspace-only preview filter pass 403 Node, 17 financial PostgreSQL and 198 browser cases with exact 70-source binding. Seven preview GETs verify fresh proofs/private-no-store headers; production storage/identity/inference acceptance remains absent. Focused reviews: atomic: PASS, reported grok-4.7-build, USD 0.11117728; forms/cache/filter/memory: PASS, reported grok-4.7-build, USD 0.06144412; the memory LOW is corrected and four atomic hashes carry unchanged. The initial larger review timed out with no verdict, and Anthropic hit its weekly limit. Read actual safe verdicts/source bindings; no full-product review PASS is claimed.
 
-First fix the review's low workspace-only preview-filter omission in `scripts/should-deploy.sh`, with a meaningful deploy-filter regression, in the existing owned platform worktree after fresh routing/lane checks. Then close first-join lost-response ownership recovery using stable first-request proof and an atomic join/token contract; an email-only repeat cannot gain answer authority. Test lost ACK, concurrent retries, different request proof and native/enhanced forms. Preserve the rejection evidence and existing product decisions.
+Implement durable retrieval of an unreceived curator brief, with explicit ownership/consent, retention/deletion and customer-owned memory portability. Preserve editing/export, submitted source, unknown-usage holds and no automatic inference replay. Correct the two low accounting labels without inferring quota from zero funds. Preserve stable signup proof on uncertain retries; email knowledge cannot promote authority, expiry is fixed and consumed first-request grants are not revived. Contact-sync loss still needs durable reconciliation before any future sending.
 
-Preserve the atomic bridge and its installation order: lifecycle and financial
-schemas first, `budget-curator-runs.sql` afterward. Fix the two low-severity labels
-without inferring unused quota from zero funds. Preserve first-request proof when
-recovering a lost signup response; email knowledge cannot promote answer authority.
-Implement missing-brief retrieval with explicit retention/deletion and customer
-ownership/consent, retaining editing/export and avoiding a second provider call.
-Resolve actual provider-unknown holds through evidence and an operational owner.
+Retain bridge installation order: lifecycle and financial SQL first, budget-curator-runs.sql afterward. Candidate SQL is unapplied; the existing healthy Supabase has no linked user/membership acceptance. Clerk app name/URL remains a pending question. Inspect actual selection before configuration. Maintenance needs reviewed migration/secret/invocation/failure alerts; provider-unknown settlement needs evidence and an operational owner. Prove authenticated generation and interruption recovery before availability claims.
 
-Inspect the wider production canary's 19 contrast and four touch flags, alongside
-`/trust` uppercase kickers in `app/trust/trust.module.css`, then verify rendered corrections under
-Emil/brand/accessibility rules. Design acceptance remains open. The Clerk app
-name/URL question is pending; inspect the actual app before dependent config.
-The healthy existing Supabase has no candidate migrations/linked users; Vercel
-metadata shows only Blob, with supported but untested OIDC model authentication.
-Maintenance needs its secret, reviewed migration, invocation and failure alerting.
-Prove authenticated generation and interrupted recovery before availability claims.
-
-Continue the complete CLI/SDK/ADK, desktop/mobile, customer-owned memory/runtime,
-OAuth/jobs, five-domain design and commercial outcome. Preserve all source PRs,
-unfinished tasks and other owners. Fresh guards, guide hashes and write lanes are
-required; handoff lanes are released. Save the hub handover and existing issues.
-
-Use fresh storage/machine admission before heavy work. The task has used all three admitted new worktrees; preserve and reuse its existing owned lanes.
+Refine actual canary contrast/touch selectors and uppercase styling under Emil/brand/accessibility rules; wider production has 19 contrast and four touch flags, and selected routes have 24 uppercase/12 source caps/one touch. Continue actual customer-owned install/restart/restore, CLI/SDK/ADK, desktop/mobile, memory, five-domain design and commercial delivery. Preserve source PRs, rejected reviews, existing products, unfinished tasks and other owners. Fresh guide hashes, Git/routing/lane checks and machine/storage admission are required; reuse the three admitted worktrees. Save the hub handover and existing issues82/95. The full goal stays active.
 <!-- starlight-delivery-20261010:end -->
 
 
