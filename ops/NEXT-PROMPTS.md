@@ -1,5 +1,20 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Hooks and instruction architecture: review the applied repairs
+
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Preserve draft109,
+exact head beadd9c, and the operator's private hooks-architecture-20261010 report
+and five exact backups. Obtain an independent provider review at that revision
+when available; previous Claude quota refusal and Grok timeout are not approvals.
+Verify a fresh desktop task loads the repaired router, native design launcher,
+n8n reminders and fail-closed secret matcher, retaining both startup disables.
+Check installed plugin versions before re-projection; updates can replace cache
+manifests. Continue issue98's source/authority reconciliation, validate exact Git
+roots before classifying the 71 missing guides, and preserve existing SOUL and
+graph brakes/write-back/distinct-verifier contracts. Issue101's fleet doctor
+enforcement remains open. Use owned lanes, normal review/merge gates and current
+machine admission. Save both product issue updates and the hub ledger.
+
 ## GenInvestor: obtain exact-head review before upstream trial
 
 Read ops/sessions/2026-10-09.md and product issue28 receipt6077597207. Hub205 is merged at c2446950. Planning42/private (82ddff6) and roadmap4/public (06f51f7) are held by explicit different-provider review and remain stacked on evidence-foundations; do not retarget unreviewed implementation into main. Refresh source/CI and independently review product2/private41 before ordered integration. Current machine free RAM1583MB blocks additional reviewer/runtime launch; preserve other tasks and credential boundaries. When admitted, select actual V5 OpenBB packages in a fresh environment, check the15 removed providers and provider-owned APIs, cap the default8GB SEC cache, confirm rights/basis and execute the matched direct/OpenBB benchmark from UPSTREAM_BENCHMARK.md. Complete one real audited research-and-replay workflow. QuantDinger remains a conditional isolated paper lab with denied live effects and no approved fork. Preserve local-first/L2/no-advice boundaries, all branches and unfinished book/UI/MCP/distribution work. User authorized merges if good; use exact-head normal gates, no admin bypass or self-certified independent review. Save both product issues and the hub. No upstream adoption/benchmark or review completion is established.

@@ -1,5 +1,19 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: local hook repairs applied; review and architecture rollout pending
+
+[Config draft109](https://github.com/frankxai/starlight-agent-config/pull/109),
+`beadd9c`, repairs router/Impeccable/n8n Windows launchers, native secret coverage
+and two unsafe Claude wrappers. Exact private backups retained. All 26 enabled
+registrations pass benign launch checks; native inventory has 28 trusted hooks
+with two intentional disables. Eight repair, six secret-input, five existing
+contract/trust and eight SIS loop tests pass; graph validator and required doctor
+pass. The six security launches exercise no-op/recursion, not model review.
+Instruction discovery covers 215 Git-marked folders and 320 visible files;
+nested authority reconciliation and missing shared guides remain on issue98.
+Independent review unavailable (Claude quota, Grok timeout); fresh desktop proof
+pending. Keep draft109 and issues78/101/98 open. See [session](sessions/2026-10-10.md).
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.
