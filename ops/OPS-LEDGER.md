@@ -1,5 +1,23 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: creator installation repaired; hosted consumers and release environments verified (Codex)
+
+[Creator draft6](https://github.com/frankxai/starlight-creator-mcp/pull/6),
+[issue4](https://github.com/frankxai/starlight-creator-mcp/issues/4), head
+`1ce433d8e9197cf6759c510afd9dcf98b4c52d69`: all ten packages build and install
+from actual tarballs. 52 existing tests, eight release safety tests, lint, full
+workspace audit (zero reported advisories), archive checks and Gitleaks pass.
+Hosted run38027000087 completed SUCCESS on Linux and Windows, including initialized
+workspace MCP launches and configuration preservation. Clean local receipt binds
+all ten archives to this revision; nine installed-consumer checks pass.
+SIS draft342 remains at54c41ddf with all six hosted jobs passing.
+Both repositories now have owner-reviewed npm-production environments and a main
+branch policy, verified through GitHub API readback. Admin bypass remains enabled;
+owner self-review is permitted. These settings do not establish independent review.
+Exact-provider review, npm trusted publishers, final versions, integration and
+publication remain open. No package was published by this session. Broader estate,
+platform, customer and commercial outcomes remain active. See today's session.
+
 ## 2026-10-10: published npm artifacts audited; installation gaps identified (Codex)
 
 [SIS issue329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329),

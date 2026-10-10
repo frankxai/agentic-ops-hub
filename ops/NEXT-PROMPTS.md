@@ -1,9 +1,9 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Npm ecosystem: finish PR 342 gates and release verified modular packages
+## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
-Read today's appended session, SIS issue329, draft PR342 and the owned product
-pickup. Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
+Read today's appended session, SIS issue329/draft342 and creator issue4/draft6.
+Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
 Owned branch agent/codex/npm-modular-ecosystem is pushed at 54c41ddf170b9a4693af97a1280b910c771e5c69.
 Verify guides, routing and separate lane ownership. Modular CI run38025179265
 passed all six jobs for this head. Earlier run38023639393 passed all six jobs at5a977a1d,
@@ -12,7 +12,7 @@ SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision bound
 Obtain independent provider review using an admitted isolated supported route;
 Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
 Rebuild a clean final receipt, finalize the initial Changeset/version set, reconcile
-npm org rights, first-publication trusted publishers and npm-production setup, then
+npm org rights and first-publication trusted publishers, then
 publish exact reviewed bytes through the authorized OIDC path after normal gates.
 Do not force merges or use a token fallback. Preserve accepted terminal/creator SDK.
 Read NPM_ARTIFACT_AUDIT.md and ignored sanitized artifact-audit.json:42/45 exact
@@ -20,10 +20,22 @@ tarballs inspected, three published workspace-dependency failures, arcanea-soul
 declarations missing, two scanner findings needing private triage, three archives
 uninspected. Fix dependencies in registered owned source lanes and test actual
 installed consumers; do not substitute dry-run packing or scanner flags for proof.
+Creator owned branch agent/codex/creator-npm-release-20261010 is clean/pushed at
+1ce433d8e9197cf6759c510afd9dcf98b4c52d69. Ten real tarballs, nine installed-consumer
+checks, 52 existing tests and eight release safety tests pass. Hosted38027000087
+completed SUCCESS including both Linux/Windows artifact consumers. Review packet
+artifacts/review-1ce433d is prepared, not reviewed. Preserve readiness provenance
+f2c05c7/860f4c0 and the foreign dirty primary checkout. Bundle candidate is0.1.1;
+nine internal dependencies are0.1.0. Finalize account identity and exact reviewed
+bytes before ordered publication; never republish existing immutable0.1.0.
+Both npm-production environments now exist with frankxai required reviewer and
+main branch policy; API readback verified. Admin bypass remains enabled and owner
+self-review allowed. This does not satisfy distinct-provider review.
 Respect separate memory publication boundaries and site/plugin alerts. Latest
-local build preflight HOLD at6494MB/8192required; small tests/records remain allowed.
+build admission recovered to11162MB/8192required; obtain fresh admission before
+heavy work. Storage100.78GiB/10.5% passes hard floors;30%target remains advisory.
 Resolve commercial integration authority and buyer evidence before platform changes
-or revenue claims. Save issue329 and hub217 with fresh evidence; leave the goal open.
+or revenue claims. Save issues329/4 and hub217 with fresh evidence; leave the goal open.
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
