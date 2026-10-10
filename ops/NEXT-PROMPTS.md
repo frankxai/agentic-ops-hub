@@ -146,6 +146,16 @@ Carry the full goal through signed-memory atomic result binding, approved existi
 
 For managed intake, first locate the owning objective-ledger schema/admission interface: the private ledger's README points to hub source, but no matching implementation was located in the checked hub/agentic-ops trees. Current CC main is still `44c95ab`; the daemon reads proposals and the generic applier refuses mission admission. Preserve that boundary. Voice account discovery found no inherited keys, no env files in the two named Voice checkouts and no direct ElevenLabs connector; other credential stores remain uninspected. The official v4 guide/v3-only reference conflict persists. Retrieve account models/voices only through an authorized credential route, then audition the deep-male and Ara-like choices when app/device startup is explicitly allowed.
 
+## ECC: sign the two remaining drafts when RAM recovers
+
+The file port is already on main. Do not install the full ECC profile or wire the observe hook.
+
+When free RAM is at least 8 GiB, review and pr-gate merge agent/grok/ecc-upstream-watch-20261010 on Starlight-Intelligence-System and agent/grok/ecc-port-close-20261010 on agentic-ops-hub. The signer must not be Grok. Do not use --admin. If checks are pending, stop.
+
+When Claude's weekly cap resets, run /codex:setup and one /codex:review --base main. Leave typescript-lsp and pyright-lsp for that session. Do not install rtk unless a reviewed Windows binary is confirmed. Do not add claude-code-action until a repository secret name is confirmed.
+
+Issue: https://github.com/frankxai/claude-code-config/issues/42
+
 ## Estate management: use accepted main and continue source recovery
 
 Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
