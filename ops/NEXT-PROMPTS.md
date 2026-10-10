@@ -2,25 +2,25 @@
 
 ## Estate management: complete review, admission and source-specific recovery
 
-Continue the full end-to-end goal from private Ops213 at
-167b3e7fe4fceb3e22032e2a74a1aa79913bc1d8, issues29/55 and today's latest
-session. Twenty findings across five cloud rounds are repaired; 109 tests and
-current-head hosted verify/validate pass. Three production bindings and visibility
-evidence remain proposals until reviewed main accepts them. The complete Grok
-attempt timed out at600s without verdict; source review does not follow from
-partial output or a successful test. Recover complete exact-head review without
-starting broad MCP services, modifying global credentials/config or bypassing gates.
-The 18 unregistered deployment sources now have exact repository IDs and fresh
-project/production/domain observations. READY is not customer-flow acceptance.
-Review archived sources, the agent-branch production target and missing Git
-provenance separately. Public family code and private deployment data have distinct
-boundaries; documentation is not a full privacy audit. Preserve classic production
-protections and rulesets. Ratify accepted source records through normal review,
-then refresh projections from the merged SHA. Admit source repair lanes with their
-owners; preserve duplicate histories and dirty worktrees. Keep Ops protection and
-DPI unknown-route investigation in the existing issues. No bulk transfer/reset,
-deletion, provider privacy/spend change or foreign-lane cleanup. Save both existing
-product issues and the sanitized hub record; preserve all other fronts.
+Continue the active end-to-end goal from private Ops213 at
+60ffbb499232059f4612b5c05c55ab84fc81cdaa, issues29/55 and today's latest
+session. Twenty-six cloud findings across six rounds are repaired; 117 local tests
+and exact-head hosted verify/validate pass. Final independent approval is open:
+cloud quota exhausted and scoped second-provider review timed out at450s.
+Use an admitted independent provider with complete exact-revision coverage;
+partial output and green CI do not count as approval. Preserve global credentials,
+security hooks and other sessions' processes. Owned review workers are stopped.
+
+Three production bindings and visibility evidence remain proposals until reviewed
+main accepts them. All 18 unregistered deployment sources have captured exact
+repository IDs and provider targets; source ownership and customer flows remain
+unverified. Review archived sources, agent-branch production and missing Git
+provenance separately. Public family code and private-instance data need separate
+boundaries. Fresh duplicate-source histories and missing/placeholder instructions
+require owner-led recovery; do not delete or reset clones. The prepared Ops
+protection payload is unapplied; one required approval needs a second eligible
+reviewer, while zero approvals leave provider review as policy only. Resolve the
+pending one-versus-two company organization choice before staged transfers.
 
 ## Arcanea: reconcile the migration map before any transfers
 

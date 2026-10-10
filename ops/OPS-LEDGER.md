@@ -2,6 +2,10 @@
 
 
 
+## 2026-10-10: Estate continuation and recovery evidence (Codex)
+
+[Ops213](https://github.com/frankxai/agentic-ops/pull/213), `60ffbb4`: 26 cloud findings repaired across six rounds; 117 local tests and exact-head verify/validate pass. Scoped second-provider review timed out at450s; cloud quota exhausted; approval remains open. Four duplicate-source groups retain distinct observed histories and guide gaps. Ops protection payload prepared, not applied; sole reviewer cannot independently approve own changes. Owner decision, 18 source admissions, local recovery and production-flow acceptance remain open in issues29/55. Session-owned reviewer and credential link removed. See today's session.
+
 ## 2026-10-10: Estate review repairs and 18 deployment source captures (Codex)
 
 [Ops213](https://github.com/frankxai/agentic-ops/pull/213), `167b3e7`: six additional findings repaired, 20 across five rounds; 109 tests and current-head verify/validate pass. All 18 missing source admissions have exact identities and fresh READY target metadata; source authority/customer flows remain unverified. Public family-code versus private-instance treatment corrected from documentation. Complete Grok review timed out at600s without verdict; final approval/ratification open. Owned reviewer stopped and credential link removed; foreign processes preserved. Existing issues29/55 and full end-to-end goal remain open. See today's session.
