@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: hook follow-up passes; estate conformance remains open
+
+Fresh Arcanea native inventory: 28 trusted hooks, 26 enabled, no errors/warnings. Doctor and all 38 safety/repair tests pass in the observed config worktree; the owner subsequently began further edits. Published config109 remains `1bf683a` and requires eligible approval. Refreshed census confirms 85 exact Git roots without a root guide among 232 Git-marked folders. Git hook paths resolve to three directories, with SIS/Orchestrator exceptions to shared hooks. Parent guidance, nested scope and runtime enforcement remain separate. Preserve config78/101/98 and PR80 owners; see the [session](sessions/2026-10-10.md).
+
 ## 2026-10-10: Terminal SDK8.4.0 published; broad programme remains open
 
 [SIS327](https://github.com/frankxai/Starlight-Intelligence-System/pull/327) merged
