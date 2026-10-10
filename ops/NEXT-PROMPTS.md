@@ -60,6 +60,21 @@ and the whole objective open. Current MCP2026-07-28 extensions are not implement
 do not auto-upgrade, fork upstreams or mistake a catalog for tested capability.
 Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 
+## Hooks and instruction architecture: approve the tested integration and complete rollout
+
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
+1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
+the final source bindings. Obtain exact-head independent provider review and
+one eligible GitHub approval; normal merge was refused, and older review attempts
+are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
+status turn with 13 completed hooks pass. Preserve exact operator backups and
+both startup disables. Complete Desktop UI reload and write/design event proof,
+then adopt the merged source without overwriting occupied primary lanes. Check
+installed versions before re-projection. Continue PR80's guarded shared-guide
+rollout and issue98's authority reconciliation with their current owners. Validate
+exact roots before classifying missing guides; preserve SOUL and graph brakes,
+write-back and distinct-verifier contracts. Save existing issues and hub receipts.
+
 ## GenInvestor: obtain exact-head review before upstream trial
 
 Read ops/sessions/2026-10-09.md and product issue28 receipt6077597207. Hub205 is merged at c2446950. Planning42/private (82ddff6) and roadmap4/public (06f51f7) are held by explicit different-provider review and remain stacked on evidence-foundations; do not retarget unreviewed implementation into main. Refresh source/CI and independently review product2/private41 before ordered integration. Current machine free RAM1583MB blocks additional reviewer/runtime launch; preserve other tasks and credential boundaries. When admitted, select actual V5 OpenBB packages in a fresh environment, check the15 removed providers and provider-owned APIs, cap the default8GB SEC cache, confirm rights/basis and execute the matched direct/OpenBB benchmark from UPSTREAM_BENCHMARK.md. Complete one real audited research-and-replay workflow. QuantDinger remains a conditional isolated paper lab with denied live effects and no approved fork. Preserve local-first/L2/no-advice boundaries, all branches and unfinished book/UI/MCP/distribution work. User authorized merges if good; use exact-head normal gates, no admin bypass or self-certified independent review. Save both product issues and the hub. No upstream adoption/benchmark or review completion is established.
@@ -95,6 +110,12 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 > **2026-10-02:** Queen foundation and hardening are on main; its current prompt covers activation access and proof. Earlier integration work remains open. Placement review notes are done (starlight-agent-config PR 75, `9c87802`). The Langfuse stack is stopped (this repo PR 86). F0 and F0b, under Highest leverage, came from PR 81, now merged as `977d04a`. The other July prompts were not re-derived.
 
 ## Current
+
+### Arcanea: verify receiving main and complete existing release gates
+
+```text
+Continue Arcanea issues529/511 after PR525 merged as c79b6f4fa4283614ddf12129a7ab1a6e27e3318c (reviewed head dbbd5b17c26eceb7808cade28ed476d8fc0f3a02). Read repository instructions and latest planning/control records, refresh reviewed Registry authority, owner leases and actual remote state. Preserve foreign branches and dirty edits. First verify receiving-main CI/deployment; final candidate had independent Grok4.7 source PASS, Linux/PG concurrency PASS and a READY pricing preview with reduced-motion and intercepted waitlist recovery proof. Do not reimplement those repairs. Checkout is default-off. Keep the existing launch gates: authorized production migrations and seller/product setup, real sandbox purchase and duplicate/redelivery proof, refund/proration/replacement reconciliation, dead-worker receipt recovery, retention/private large-image storage, BotID/auth recovery, image BYOK and plan entitlement enforcement.3MiB inline outputs refund before debit; validate actual model sizes. No production migration, paid call or release activation is authorized by this pickup. Acquire an admitted owned lane for the next bounded issue slice; preserve accounts/financial history on rollback. Save public source-safe findings to the existing issues and agentic-ops-hub; keep private task records and instruction/source hashes private.
+```
 
 ### Starlight interfaces: connect source-backed creation and knowledge
 
