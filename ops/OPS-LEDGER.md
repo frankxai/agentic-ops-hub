@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: AgentDB recall correctness implemented; upstream wiring pending
+
+[SIS340](https://github.com/frankxai/Starlight-Intelligence-System/pull/340), head `27b67d5a79a71f7334e1483d017a687afce83799`: current-value recall, filter-before-pagination and literal namespaces repaired in the existing phase-0 SQLite adapter. Nine regressions and seven original smokes pass; Windows/Linux CI and estate/editorial/design checks pass. Independent provider acceptance remains open. [SIS151 updated](https://github.com/frankxai/Starlight-Intelligence-System/issues/151#issuecomment-6093350076). Ruvnet AgentDB installation and production gateway adoption are pending; latest RAM reading holds new heavy work. Existing fleet328 and peer work preserved. SISmain now includes terminal SDK8.4.0 in339, replacing the earlier terminal327 observation. No owned worker remains.
+
+
 ## 2026-10-10: Estate delivery audit and handover conflict recovery
 
 Serial reconciliation found653 open PRs across138 repositories and944 open issues:461 drafts,123 with failed checks,96 conflicting,116 without observed checks. The private full matrix gives every inspected PR an owner action;255 lane records and1908 local branches preserve dirty/unpublished candidates. Counts describe an observation interval and overlap. No blanket review, merge, dispatch or completion is inferred. See [today's session](sessions/2026-10-10.md).
