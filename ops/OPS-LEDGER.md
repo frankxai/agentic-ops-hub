@@ -880,3 +880,8 @@ Four saved text meanings remain unresolved; 208 original numbered saved items/li
 ### Cited recovery update, 10 October 2026
 
 Selected native batch: two complete cited triage notes, eight pending summaries, ten preserved source sessions/950 retained messages; zero deliberate receiving-owner resumes. Latest recovered Arcanea conversation is reconciled to merged PR147 and open issue146. Existing README work must be preserved; original media, topics, licensing wording and theme/mobile review remain open. Source reading, unchanged hashes and safe completion/retry verified by the lead; provider/creator acceptance remains pending. This updates recovery progress, not the dated 622-open-PR inventory or product completion counts.
+
+
+### FrankX932 reproduced recovery gaps, 10 October 2026
+
+Demand feedback/loading regressions: one pass/five expected failures in a component-function fixture; red patch preserved locally and tests remain WIP. Existing failed-capture repair remains unchanged. UI implementation awaits an allowed baseline under the installed release skill; no rendered acceptance, owner integration or release claimed.
