@@ -10,6 +10,78 @@ Keep the two accounting labels, unknown-provider holds/reconciliation, KV/contac
 <!-- starlight-delivery-20261010:end -->
 
 
+## Estate management: use accepted main and continue source recovery
+
+Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
+All eight committed hashes match Antigravity PASS; merged-main verify/validate
+pass. Main requires strict app-bound verify15368, enforced for admins, with no
+force push/deletion. Unrelated documentation215 passed and closed without merge.
+Independent provider review remains a policy gate, not technical enforcement.
+Frank's explicit merge/production instruction supersedes the acceptance blocker.
+
+Use the accepted72-record Registry and preserve all18 source candidate
+qualifications. Refresh projections at accepted main SHA; unresolved owners
+remain unresolved. Preserve existing product owners and source conflicts.
+Current READY production targets: Arcanea6e774c1, FrankXb7e617b, GenCreator57fcf5b.
+Customer acceptance belongs to their existing product issues.
+
+Eight Git bundles and four dirty snapshots have scoped applied restore proof
+for46 files and332 index objects. Complete checkouts, ignored files, LFS,
+external submodules and offsite recovery remain open. Repair missing source
+guidance and storage capability in admitted lanes. Retain issues29/55. Keep
+private Pro-dependent sources until equivalent protection/integration gates
+pass; no mass transfer or paid-plan change follows from this acceptance.
+
+## Arcanea: reconcile the migration map before any transfers
+
+Read ops/reviews/arcanea-migration-crown-audit-20261010.md and ecosystem issue6. Preserve Gemini's handover/strategy and all unfinished source branches. Reconcile the distinct Arcanea-Labs/Arcanea and frankxai/arcanea histories and the existing Arcanea-Labs/Starlight-Intelligence-System repository. Verify every named source/destination ID, visibility, archive state, private protections, Actions secrets, deployment app access, OIDC trust, Packages and Pages dependency. Correct the gh repo rename transfer instructions in the owner's lane. Use selective public migration; retain private Pro-dependent repositories until the feature/cost decision is accepted. Reuse the existing creator/billing recovery work; compare one actual consented task through the accepted inference path and Worker before adding a gateway. Obtain exact-revision release review and live recovery/latency evidence. No transfer, archival, visibility or paid-plan change is authorized by the old embedded commands. Save both the hub and existing product issue; keep unresolved work open.
+
+## GenCreator: activate reviewed account linking and prove the creator journey
+
+Continue active full goal `01a123db-5493-7220-8d0d-f80760cad443` and issue5. Frank
+confirmed “Keep Supabase sessions and explicitly link Starlight accounts.” Preserve
+Gen Supabase actor/workspace and separate Starlight Clerk principal; no email merge
+or inferred subscriptions/source rights. PR196 reviewed cc6965d merged normally
+to8d17f46 with all27 files identical. Final full CI38047625481 passes native3/3,
+971 unit cases and250 browser cases with two existing optional visual skips.
+Independent auth/data review468d28e and exact-final CSS delta reviewcc6965d PASS;
+source hashes bind the unchanged files. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd
+at8d17f46 passes22 site/MCP and7 safe account contracts. Receiving-main
+CI38048478637 attempt2 passes all required jobs with native3/3,971 unit and250
+browser cases plus the same two visual skips. First execution canceled during
+metadata updates and correctly failed CI Status. Read today's session, preserve all failures and
+re-query exact heads/deployments before new writes.
+
+The reviewed14-table renderer preserves recognized12-table creator evidence, founding
+namespace and shared canonical identity. User consent/OIDC proof, active membership,
+durable idempotency and removal are implemented. No production database/API exposure,
+OAuth registration or credential setting occurred. Supabase currently has no dev
+branches. Managed readiness503 and inactive linking remain honest. Follow the
+activation packet and alpha runbook: Frank owns additive Supabase migration and
+production deployment approval; use separate staging/production OAuth registrations,
+retain provider consent/PKCE, and prove real accounts plus deletion/retention before
+promotion. Public sign-in captures and synthetic protocol/SQL checks do not certify
+authenticated UI, live two-account acceptance or a managed cohort.
+
+PR195 isolated provision57fcf5b and PR194 hook triage802e9aa remain accepted; their
+source/main/deploy proof is in today's session. PR193 recovery/editable decks373d411
+and PR191/192 remain live. Source135 closes with its branch retained;141 retains
+unique Honor-edition rehearsal and owner-pending writing. Preserve other PRs/owners
+and previous source branches. Do not reopen the resolved Gen identity question.
+
+Connect existing clients and memory to a source-backed authored-edit/recovery/export
+journey; retain CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, provider creation,
+GTM and bundled-subscription scope. Re-query published SDK8.5 and creator-MCP issue4.
+Compare useful output, repairs, time/cost and repeat use with a capable assistant
+and creator's editor. A deterministic compiler and green tests do not establish
+customer/editorial acceptance. Keep publication/checkout closed until accepted
+gates pass. Save issue5 and the hub, preserve every other goal/hand over and keep
+the original native goal active. One admitted lead; no local heavy work while PP
+HOLD. Owned review/capture workers ended and the temporary preview share was revoked.
+Organization confirmation is pending for the existing Starlight Platform organization
+hblyvrhhjqkqndgpjcep; Supabase requires quoting and confirming branch cost before
+creation. Follow up on the pending answer; do not infer infrastructure approval.
+
 ## Arcanea adoption: voice admission and a verified creator journey
 
 Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
@@ -904,3 +976,7 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 - **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
 - **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
 - **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+
+## Arcanea foundation: prove one recoverable creator journey
+
+Read the latest product instructions, planning files, issues531/532/533 and529/511. Refresh reviewed Registry and reconcile the older R2 proposal before choosing storage. Requery current main and active owners. Obtain a separate admitted product write lane; this handover grants none. First verify platform-funded agent/generation admission with mocked outbound calls, then complete one owner-scoped browser/MCP world round trip: import, source-cited context, editable scene and visual, approval, durable save, reopen and export. Reuse current projects, media and billing boundaries. Require failure/tenant/cost evidence and exact-revision independent review before promotion. Preserve all other fronts; no new service, paid activation or larger agent roster follows from this prompt.
