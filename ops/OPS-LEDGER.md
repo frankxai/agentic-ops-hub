@@ -1,5 +1,16 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Codex hook foundation installed and reviewed
+
+[Config112](https://github.com/frankxai/starlight-agent-config/pull/112) at739d570
+has exact-head Antigravity PASS and is installed locally. Bounded notifications,
+valid Stop output, native tool aliases, coordination-root containment and guarded
+recovery are verified. 27 active trusted hooks; 135 replays in five recent cwd
+contexts pass; both secret denials hold. 82 Node/39 Python cases pass with two
+Windows POSIX skips. Required CI could not start due the Actions account budget,
+so no merge. Original106, Desktop adoption/model-review proof and foreign Claude
+doctor findings remain open. See [today's handover](sessions/2026-10-11.md).
+
 ## 2026-10-10: GenCreator host revisions verified
 
 [PR 200](https://github.com/frankxai/gencreator.ai/pull/200) reviewed 431c149 merged normally to e540062; twenty source/artifact paths match and accepted PR 197 UI is unchanged. Public MCP prepares, previews and selectively applies host writing to an editable unapproved project; retained packet checksum binds protected phrases, target/source checks preserve concurrent work, and descriptions disclose remote processing/unknown retention. Plugin 0.5.1: fifteen tools, seven skills, 29,714-byte archive SHA-256 45ea4e0a306aad3762adbcd3b41fb5e7f237d377a38527db1ffe0c52b0dc2df6; live download matches fifteen sources. Candidate/main CI 38073503790/38074565426 pass: 1,058 unit/117 files, native PostgreSQL 3/3, 262 browser/two existing optional skips. Two exact-source PASS reviews plus current security-source PASS; current GitHub code review completed. Native security summary remains at 113bb6d and manual request was unacknowledged, explicitly excluded. Earlier WARN/PASS-missed-findings, editorial failures, canceled/skipped runs and invalid reviewer coverage percentages are retained; percentages excluded. READY dpl_85gXWaCbNL6ia7dVs8UqeDQLAYKf, both domains, 25 live checks plus phrase-tamper denial/three disclosures. These tools perform no server model inference or persistent account writes. Managed activation and owner/customer acceptance remain pending. [Issue 5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6100767032); full goal remains active.
