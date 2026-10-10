@@ -7,9 +7,9 @@
 head 5a977a1d. Core/AI SDK/MCP and release tooling are implemented. Local builds,
 14 installed-package tests, declarations, tarball secret/size audits, mandatory
 hooks and workspace dependency audit pass. Core is 8642 JS bytes/12483 compressed.
-Hosted legacy/organization SDK candidates passed at 235d0b3e; modular run
-38023639393 is checking platform fixes. Independent review attempts returned errors,
-not verdicts. No npm release by this session. Account/OIDC setup, latest CI,
+Hosted legacy/organization SDK candidates passed at 235d0b3e. Modular run
+38023639393 passed all six Linux/Windows/Node/artifact jobs at 5a977a1d. Independent review attempts returned errors,
+not verdicts. No npm release by this session. Account/OIDC setup, final versions,
 independent review and broader estate/platform/commercial work remain open.
 Current pickup and limited 45-package metadata coverage are recorded in today's
 appended session; earlier HOLD/uncommitted records remain historical evidence.
