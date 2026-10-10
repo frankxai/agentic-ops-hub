@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: SIS initial versions applied; exact hosted0.2.0 archives verified (Codex)
+
+SIS draft342 is clean/pushed atfdb1e47fe627250c614b30378e8acf5fb5ac1a3f.
+Changesets3.0.3 applied the existing minor release to core/ai-sdk/mcp0.2.0, generated
+their changelogs and consumed the completed Changeset. Root8.5.0 and lockfile stay
+unchanged. Read-only publish-plan lists exactly those three unpublished packages
+in dependency order. CI now checks that post-version plan.
+Hosted38028360568 completed SUCCESS across all six jobs. Uploaded manifest binds
+merge source51e02553b05d0dcae99258ec2fc222061521f87e, dirty=false; downloaded actual
+archive digests/integrity/identity verified. Core8642JSbytes/12465compressedbytes.
+Current source review packet54files is prepared, not reviewed. New-package account
+bootstrap remains an actual gate: npm trust requires existing package/write access/
+account2FA/CLI11.15+; current CLI11.13, authenticatedfrankxai/orgowner confirmed.
+Local build HOLD7334MB/8192required; no new build or reviewer. No publication.
+
 ## 2026-10-10: malformed npm archives rejected in both release verifiers (Codex)
 
 SIS draft342 now44346d9f; creator draft6 now3e88447. Regression fixtures first

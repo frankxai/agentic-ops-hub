@@ -4,15 +4,20 @@
 
 Read today's appended session, SIS issue329/draft342 and creator issue4/draft6.
 Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
-Owned branch agent/codex/npm-modular-ecosystem is pushed at44346d9f3def7c5c94bc6c33c91ca76fc5a399f4.
+Owned branch agent/codex/npm-modular-ecosystem is pushed atfdb1e47fe627250c614b30378e8acf5fb5ac1a3f.
 Verify guides, routing and separate lane ownership. Modular CI run38025179265
 passed all six jobs for prior54c41ddf. Latest38027724509 passes all six for44346d9f.
+Current38028360568 passes all six forfdb1e47f. Changesets applied core/ai-sdk/mcp0.2.0
+with changelogs and consumed the initial Changeset; root8.5.0/lockfile unchanged.
+Downloaded exact hosted archives and manifest bind PR merge51e02553, dirty=false,
+digests/integrity/identity validated. Keep that source separate from the PR head.
 Earlier run38023639393 passed all six jobs at5a977a1d,
 including hosted artifact consumers; preserve the head/merge-receipt distinction.
 SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
 Obtain independent provider review using an admitted isolated supported route;
 Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
-Rebuild a clean final receipt, finalize the initial Changeset/version set, reconcile
+Use the prepared54-file artifacts/npm-review/fdb1e47f source packet (not reviewed),
+and rebuild a clean final main-source receipt after normal integration. Reconcile
 npm org rights and first-publication trusted publishers, then
 publish exact reviewed bytes through the authorized OIDC path after normal gates.
 Do not force merges or use a token fallback. Preserve accepted terminal/creator SDK.
@@ -23,7 +28,7 @@ uninspected. Fix dependencies in registered owned source lanes and test actual
 installed consumers; do not substitute dry-run packing or scanner flags for proof.
 Creator owned branch agent/codex/creator-npm-release-20261010 is clean/pushed at
 3e88447c23f6e65aacb3aefb564849865aa1b655. Ten real tarballs, nine installed-consumer
-checks, 52 existing tests and eight release safety tests pass. Hosted38027000087
+checks, 52 existing tests and ten release safety tests pass. Hosted38027000087
 completed SUCCESS for prior1ce433d including both Linux/Windows artifact consumers.
 Latest38027820273 completed SUCCESS including fresh Linux/Windows artifact consumers.
 SIS13/creator10 release tests now reject incomplete/hidden/ambiguous tar members.
@@ -36,8 +41,15 @@ Both npm-production environments now exist with frankxai required reviewer and
 main branch policy; API readback verified. Admin bypass remains enabled and owner
 self-review allowed. This does not satisfy distinct-provider review.
 Respect separate memory publication boundaries and site/plugin alerts. Latest
-build admission HOLD7222MB/8192required; obtain fresh admission before
-heavy work. Storage100.78GiB/10.5% passes hard floors;30%target remains advisory.
+build admission HOLD7334MB/8192required; obtain fresh admission before
+heavy work. Account bootstrap must
+precede new-package trusted publishers: npm trust requires an existing package,
+maintainerwrite/account2FA/CLI11.15+; localCLI11.13 is below that management floor.
+A new trust connection must validate first successful publish within2days; configure
+near the reviewed release. Do not collect OTPs/secrets into source or handovers.
+Repository Actions secrets list is empty in both repos; organization/environment
+secret coverage and an admitted hosted independent reviewer remain unestablished.
+Storage100.78GiB/10.5% passes hard floors;30%target remains advisory.
 Resolve commercial integration authority and buyer evidence before platform changes
 or revenue claims. Save issues329/4 and hub217 with fresh evidence; leave the goal open.
 
