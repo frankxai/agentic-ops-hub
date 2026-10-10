@@ -1,8 +1,8 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: Voice provider and retrieval checkpoint (Codex)
+## 2026-10-10: Native Voice conversation checkpoint (Codex)
 
-[Voice draft4](https://github.com/frankxai/starlight-voice/pull/4), `8c5184a`: provider selection, bounded async retrieval, honest readiness, v4 Turbo dialogue transport and compatible WebSocket dependency. 81 offline tests pass, two provider suites skip, Ruff/secrets pass. Exact-head hosted Python on Windows/Linux and Rust pass in [CI38050382502](https://github.com/frankxai/starlight-voice/actions/runs/38050382502). Apps stayed stopped. Typed memory/tool integration, native speech, audio binding, independent review and live acceptance remain open in [Voice issue2](https://github.com/frankxai/starlight-voice/issues/2). Private evidence stays in the task record.
+[Voice draft4](https://github.com/frankxai/starlight-voice/pull/4), `b40a174`: native Grok/OpenAI browser conversation, same-origin credential broker, bounded read tools, signed-summary-only recall, explicit microphone controls and cleanup. Dispatch/approval remain blocked; local limits do not enforce provider spending. 122 offline Python tests and13 Node tests pass, two Pipecat suites skip, Ruff/secrets pass. [CI38052521231](https://github.com/frankxai/starlight-voice/actions/runs/38052521231) passes all four jobs at predecessor2fdbf31; final-head [CI38053010223](https://github.com/frankxai/starlight-voice/actions/runs/38053010223) is in progress. Apps stayed stopped. Review, real audio/visual acceptance, managed intake, receipts, ElevenLabs playback and Command Center integration remain open in [Voice issue2](https://github.com/frankxai/starlight-voice/issues/2). Private evidence stays in the task record.
 
 
 
