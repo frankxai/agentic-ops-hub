@@ -75,7 +75,7 @@ rollout and issue98's authority reconciliation with their current owners. Valida
 exact roots before classifying missing guides; preserve SOUL and graph brakes,
 write-back and distinct-verifier contracts. Save existing issues and hub receipts.
 
-Fresh follow-up: live Arcanea inventory has28 trusted/26 enabled hooks and zero errors/warnings; doctor and38 tests pass. The bounded census now confirms85 exact Git roots without a root guide among232 Git-marked folders; do not retain71 as a current count. Resolve inherited/nested/native instruction coverage before per-repo rollout. Git hooks resolve to three directories; inspect SIS and Arcanea Orchestrator's separate hook chains for security-check parity in admitted owned lanes. Preserve the existing config repair/review owner. No new runtime repair was needed in this follow-up.
+Fresh follow-up: live Arcanea inventory has28 trusted/26 enabled hooks and zero errors/warnings; doctor and38 tests pass. The bounded census now confirms85 exact Git roots without a root guide among232 Git-marked folders; do not retain71 as a current count. Resolve inherited/nested/native instruction coverage before per-repo rollout. Git hooks resolve to three directories; inspect SIS and Arcanea Orchestrator's separate hook chains for security-check parity in admitted owned lanes. Preserve the existing config repair/review owner, now actively refining tracked source and adding native inventory/merge-review files. Review the published frozen head separately; new edits need their own exact-revision checks. This follow-up made no runtime edits.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 
