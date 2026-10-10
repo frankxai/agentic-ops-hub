@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Estate ownership proposal and reconciliation ready for review (Codex)
+
+Private canonical [ops PR213](https://github.com/frankxai/agentic-ops/pull/213)
+at `a204fefa9dffabf9a012b5c39159ab6093d42cfe` proposes two active company
+namespaces, preserves personal/community boundaries and adds a read-only
+source reconciler. All 82 script tests and final-head verify CI passed. Three
+cloud code-review findings were fixed with regressions. The hosted Claude
+review failed incomplete before a verdict; the security-review connector reported
+a usage limit. A fresh ordinary cloud review of the final head was requested.
+Detailed deployment,
+local-path and provider observations stay
+private. [Issue29](https://github.com/frankxai/agentic-ops/issues/29) records
+ratification; issue55 retains reconciliation. No transfer, privacy/spend change,
+Registry ratification or production promotion. See today's session.
+
 ## 2026-10-10: Arcanea migration Crown audit holds bulk transfers (Codex)
 
 [Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
