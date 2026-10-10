@@ -1,5 +1,23 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: published MCP Doctor falsely reports runtime health (Codex)
+
+Expanded beyond SIS to @frankxai/mcp-doctor0.4.1. Exact live artifact identity,
+SHA512 and static archive/Gitleaks checks pass, but its published health module
+returns healthy for exit-without-response, silent process and invalid JSON. Three
+controlled real Node fixtures reproduce the false positives; all owned children
+terminated, no user MCP configuration or credentials used. ArtifactSHA256
+a934a4cfd52b459b23535d19eca5b4792039f58ac6d0098fb8add4a34a3c2265,
+moduleSHA2565ec191f3fa95d3677311fbeb5440eb3836bcbca4cb900f01fd8bf29cbb192b18.
+Main eca9f0a2e633c15e10f815c31c8fa320300c5b39 still has the audit logic; candidate
+package0.5.0 and merged check/score work do not repair it. Product issue6 now tracks
+the defect/acceptance. Reuse the existing official-SDK inspector, with safe config
+environment and handshake health separate from optional tool-lint quality.
+Source lane unresolved/occupied: cached routefind has no candidate; primary
+codex/daily-observability and Hermes worktree contain unfinished state. No source
+patch, takeover, new worktree or publication. Build HOLD3285MB/8192required.
+SIS10835dde and creator3e88447 remain unchanged; full release/platform/value goal open.
+
 ## 2026-10-10: workspace-aware provider requests and correct MCP release identity (Codex)
 
 SIS draft342 now10835dde426ed292b815e58366ead2b161fe8496, clean/pushed. Reproducing

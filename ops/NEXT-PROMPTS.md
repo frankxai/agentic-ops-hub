@@ -4,6 +4,16 @@
 
 Read today's appended session, SIS issue329/draft342 and creator issue4/draft6.
 Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
+New confirmed package defect: mcp-doctor issue6. Exact published0.4.1 health module
+reports healthy for no response, silent process and invalid JSON. All three owned
+fixtures terminated; ignored evidence is SIS artifacts/npm-review/mcp-doctor/.
+Main eca9f0a2 still has that audit logic despite candidate0.5.0/merged check+score.
+Resolve registered source lane before fixes; primary codex/daily-observability and
+Hermes observability worktree are occupied, no extra worktree admitted. Reuse main's
+official-SDK inspector with safe configured environment and handshake health distinct
+from optional tool lint/capabilities. Implement issue6 denial/timeout/cleanup/Windows
+and installed-consumer acceptance before calling full audit trustworthy or releasing.
+Latest build admission HOLD3285MB/8192required; no new build/reviewer/agent.
 Owned branch agent/codex/npm-modular-ecosystem is pushed at10835dde426ed292b815e58366ead2b161fe8496.
 Core now forwards host workspace in RecallRequest; gateway rejects wrong scope or
 invalid query/limit before HTTP; MCP handshake follows installed package version.
