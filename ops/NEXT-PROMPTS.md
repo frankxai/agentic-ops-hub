@@ -2,6 +2,20 @@
 
 ## Current npm ecosystem prompt
 
+Creator38038645613 at d4eb905 completed SUCCESS typecheck/unit and Linux/Windows
+archive consumers; draft e2e skipped. Currentpacketartifacts/review-d4eb905 prepared/not reviewed. Prior5ec/a172 packets
+historical. Local28pass/1POSIX skipped,12release pass; publisher now requires actual
+installed-storage-link-boundary consumer. Ten current Linux archives and ten consumer checks validated against clean
+mergece1dc97c; Windows hosted success, receipt locally undownloaded. SIS07b43079 unchanged/all-six pass/current61-filepacket.
+Obtain authenticated isolated independent provider review of both exact revisions,
+reconcile findings, finish main-source npm bootstrap/trust/protected release and
+full estate/platform/customer/value acceptance. Preserve foreign ownership; path
+checks do not defeat concurrently malicious local filesystem mutation.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
 Hosted SIS38037804627 for current07b43079 completed SUCCESS all six jobs. Source closes stale-success
 receipt before manifest preflight; real entrypoint regressions/17audit tests pass.
 Three hosted archives/consumer receipt verified against merge96fa1529. Current
