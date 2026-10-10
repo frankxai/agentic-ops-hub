@@ -75,9 +75,10 @@ Save issue144 and the hub. No new recurring jobs, live posts or spending grants.
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
 
-Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
-1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
-the final source bindings. Obtain exact-head independent provider review and
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Requery PR109 head; the owner published13ebcf059285b866c4618bc8306c53cf22e0263d.
+Older1bf683a received independent Grok WARN, not approval; see review6093421779.
+Preserve the active owner, validate remaining findings and new native inventory/merge-review gate,
+including cloud PR103 provenance and final source bindings. Obtain exact-head review and
 one eligible GitHub approval; normal merge was refused, and older review attempts
 are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
 status turn with 13 completed hooks pass. Preserve exact operator backups and
