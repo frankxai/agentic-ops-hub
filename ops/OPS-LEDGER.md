@@ -37,6 +37,10 @@ Registry ratification or production promotion. See today's session.
 
 [Independent audit](reviews/arcanea-migration-crown-audit-20261010.md): Free plans, active owner access and four $0 hard-stop product budgets verified in both organizations. Transfer commands are invalid; Arcanea destination name collides; private protection/secret restrictions, archived router/Claw remotes and unproven performance invalidate the zero-friction completion claim. Router9/9, Studio4/4, provenance4 passed/1 skipped. Preserve ecosystem issue6 and the author lanes. Next is selective migration after history/integration checks and creator recovery acceptance. See [session](sessions/2026-10-10.md).
 
+## 2026-10-10: hook recovery and ownership hardening merged
+
+Config111 merged normally after exact-head AGY PASS and green Linux/Windows CI. All six source hashes match main. Interrupted repair restoration now refuses later edits; lock replacement and escaping paths are protected. See today’s session for proof and remaining foreign-lane/Desktop/estate gaps.
+
 ## 2026-10-10: hook fixes merged; conditional merge admission is live
 
 Config PR109 merged at `24e60463` after Antigravity FAIL findings were fixed and exact
