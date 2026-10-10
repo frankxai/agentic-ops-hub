@@ -36,9 +36,10 @@ to8d17f46 with all27 files identical. Final full CI38047625481 passes native3/3,
 971 unit cases and250 browser cases with two existing optional visual skips.
 Independent auth/data review468d28e and exact-final CSS delta reviewcc6965d PASS;
 source hashes bind the unchanged files. READY production dpl_JwGhcKqNDh9jkSkVcW8QiJBGcTXd
-at8d17f46 passes22 site/MCP and7 safe account contracts. Finish receiving-main
-CI38048478637 full rerun; first execution canceled during metadata updates and
-correctly failed CI Status. Read today's session, preserve all failures and
+at8d17f46 passes22 site/MCP and7 safe account contracts. Receiving-main
+CI38048478637 attempt2 passes all required jobs with native3/3,971 unit and250
+browser cases plus the same two visual skips. First execution canceled during
+metadata updates and correctly failed CI Status. Read today's session, preserve all failures and
 re-query exact heads/deployments before new writes.
 
 The reviewed14-table renderer preserves recognized12-table creator evidence, founding
@@ -66,7 +67,10 @@ and creator's editor. A deterministic compiler and green tests do not establish
 customer/editorial acceptance. Keep publication/checkout closed until accepted
 gates pass. Save issue5 and the hub, preserve every other goal/hand over and keep
 the original native goal active. One admitted lead; no local heavy work while PP
-HOLD. Stop owned workers and temporary preview access at handoff.
+HOLD. Owned review/capture workers ended and the temporary preview share was revoked.
+Organization confirmation is pending for the existing Starlight Platform organization
+hblyvrhhjqkqndgpjcep; Supabase requires quoting and confirming branch cost before
+creation. Follow up on the pending answer; do not infer infrastructure approval.
 
 ## Arcanea adoption: voice admission and a verified creator journey
 
