@@ -1,5 +1,23 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: AGY source review and Antigravity harmony fix
+
+[SIS346](https://github.com/frankxai/Starlight-Intelligence-System/pull/346) merged
+to df806312 after35 adapter tests, typecheck, required CI and reconciled independent
+xAI PASS at20eddb98. Default MCP scaffold inert; explicit entry preserved without
+full-scope or unverified native activation claims. Actual isolated AGY review of
+first draft observed no effectful steps; advertised tools remain and its older
+PASS is not final-revision approval. All owned reviewers stopped/links removed.
+[SDK8.5.1 release347](https://github.com/frankxai/Starlight-Intelligence-System/pull/347)
+merged to9887aa8f after independent c2fe2fc3 PASS, required CI and main candidate
+38052541563 PASS. Earlier RAM HOLD resolved with bounded8674MB/quietCPU70%.
+Both8.5.1 npm publications verified against tested main bytes and latest tags
+at12:40:46Z.377 non-manifest files match across scopes. Production canary
+38052578072 PASS; live doctor retains creator-MCP0.1 blocked. Current AGY prompt in NEXT-PROMPTS drives real creator
+edit/recovery/export/receiving-owner acceptance and retains all broader goals.
+Creator issue4 and SIS144 stay open; no foreign ownership/unknown-run cleanup.
+
+
 ## 2026-10-10: GenCreator Supabase identity choice implemented
 
 Frank confirmed Supabase sessions with explicit Starlight linking. [PR196](https://github.com/frankxai/gencreator.ai/pull/196)
