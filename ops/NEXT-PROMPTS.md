@@ -2,6 +2,19 @@
 
 ## Current npm ecosystem prompt
 
+Hosted SIS38037404137 for source34201a7f completed all six jobs SUCCESS.
+Downloaded three archives and consumer validated
+against mergeb638b19e. New gateway privacy-tag whitespace regression fixed and
+covered through official MCP client. Prepare immutable exact34201a7f review
+packet; prior511c packet historical. Review SIS342 and creator6 (5ec9873) with an
+authenticated isolated independent provider before protected main release and
+npm bootstrap/trust. Track separate site/plugin dependency alerts with their
+owners; preserve full platform/customer/value acceptance and foreign lanes.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
 Review SIS PR342 at 511c00757961ef7e3442644522820b2a211bbfb4 and creator
 PR6 at 5ec98735d0e591b1ea3df24967432877e49cbf5b with an authenticated,
 isolated independent provider. Current immutable packets and hosted archive
