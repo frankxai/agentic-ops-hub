@@ -1,5 +1,13 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
+
+Deploy and wire the Starlight Queen Meta-Orchestrator (`src/queen/`) and Universal Knowledge Tree (`src/knowledge/`) into live operator surfaces:
+- Mount Queen Meta-Orchestrator into the central Starlight daemon and cockpit (`agy-tools.ps1`, `scripts/starlight-dashboard`).
+- Connect the Universal Knowledge Graph to local memory vaults (`local_core`), Mem0 remote provider synchronization, and the infinite canvas (`starlight-agent-canvas`).
+- Instantiate the 4 synthesized swarms (`phd_research_deep`, `staff_eng_hyper`, `luxury_creative_cinema`, `autonomous_revenue_ops`) for real autonomous multi-agent task execution.
+- Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktrees and zero-leak secrets policies remain strictly enforced.
+
 ## NPM Ecosystem: Agent Harness Integration and Documentation Portals
 
 Integrate the newly published NPM package suites into production agent harness skills and developer portals:
