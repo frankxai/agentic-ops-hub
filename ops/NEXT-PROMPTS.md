@@ -1,36 +1,37 @@
 # ⏭️ Next Prompts — per active front / terminal
 <!-- starlight-delivery-20261010:start -->
-## Starlight: resolve run recovery before production activation
+## Starlight: finish recovery and design before production activation
 
-Continue active goal `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`, draft site PR107
-and issues82/95. Owned site branch is `agent/codex/starlight-platform-delivery-20261010`;
-candidate `3eebe2a3a413c3d67123748b140afdcdd90b450a`. Full CI38030540613 and
-the narrow limiter review pass; preview `dpl_3MvzqobatEKSjz2KgSDYaZm1G41A` is READY.
-Re-query exact head and receiving-main/production state before release. Earlier
-a3cb804 full CI38029305739 passed all 192 browser checks but its independent
-fifteen-file source review failed. Read the extracted verdict and dispositions
-in today's session; do not expose private reasoning output or replace that FAIL
-with a narrow limiter PASS.
+Continue goal `01a123d5-efa4-7420-9fc1-2d26cbcfeb27`, draft site PR 107 and
+issues 82/95. Candidate `4eb3c575a56df765506542ff34b9a40fc69b13a6` on
+`agent/codex/starlight-platform-delivery-20261010` has full CI 38033481417 green:
+192 browser, 17 physical financial and 16 same-database route cases. Accounting
+review PASS closes lost-start/daily closure and empty unknown-usage telemetry
+findings. Limiter PASS covers TTL repair/mapped IPv4. Both are narrow; the broader
+a3cb804 review remains FAIL. Read extracted verdicts, never raw reasoning JSONL.
+Re-query candidate, receiving main, preview and production before release.
 
-Resolve uncertain daily start/terminal closure without treating unknown provider
-usage as zero, refunding quota without authority or starting a second model.
-Preserve first-token answer ownership when recovering a lost join response.
-Implement generated-brief recovery with an explicit retention/retrieval/deletion
-contract, keeping the accepted editable workspace, source and exports intact.
-The Clerk application choice remains an asynchronous question to Frank; verify
-the actual Clerk application before dependent configuration. The healthy existing
-Supabase project has no candidate finance/lifecycle migrations or linked users.
-The Vercel project lists only Blob env metadata; its OIDC model-auth path is
-supported in source but untested. Maintenance needs CRON_SECRET, reviewed SQL,
-an actual production invocation and failure alerting before enabling its schedule.
+Preserve the atomic bridge and its installation order: lifecycle and financial
+schemas first, `budget-curator-runs.sql` afterward. Fix the two low-severity labels
+without inferring unused quota from zero funds. Preserve first-request proof when
+recovering a lost signup response; email knowledge cannot promote answer authority.
+Implement missing-brief retrieval with explicit retention/deletion and customer
+ownership/consent, retaining editing/export and avoiding a second provider call.
+Resolve actual provider-unknown holds through evidence and an operational owner.
 
-The current probe also flags `/trust` uppercase styling and one touch target;
-inspect those with the existing design contract and verify rendered fixes.
-Then prove one authenticated generation, interrupted recovery, editable output
-and export with trustworthy usage receipts. Preserve PR97/101 and the other
-design/runtime owners. Continue the full CLI/SDK/ADK, desktop/mobile, cloud memory,
-OAuth/jobs, domain design and commercial outcome under the existing customer-owned
-and BYOK doctrine. Save both the hub handover and the existing product issues.
+Inspect `/trust` uppercase kickers in `app/trust/trust.module.css` and the touch
+target from current responsive evidence, then verify rendered corrections under
+Emil/brand/accessibility rules. Design acceptance remains open. The Clerk app
+name/URL question is pending; inspect the actual app before dependent config.
+The healthy existing Supabase has no candidate migrations/linked users; Vercel
+metadata shows only Blob, with supported but untested OIDC model authentication.
+Maintenance needs its secret, reviewed migration, invocation and failure alerting.
+Prove authenticated generation and interrupted recovery before availability claims.
+
+Continue the complete CLI/SDK/ADK, desktop/mobile, customer-owned memory/runtime,
+OAuth/jobs, five-domain design and commercial outcome. Preserve all source PRs,
+unfinished tasks and other owners. Fresh guards, guide hashes and write lanes are
+required; handoff lanes are released. Save the hub handover and existing issues.
 <!-- starlight-delivery-20261010:end -->
 
 
