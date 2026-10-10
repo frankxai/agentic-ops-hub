@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: main integration and Jev Router pilot pushed
+
+[SIS345](https://github.com/frankxai/Starlight-Intelligence-System/pull/345) at `1c7f40d7` targets main `bc73db9b`, preserving current terminal/process/OpenCode adapters and the older PR330 branch. Bounded continuity, durable review state and owned gateway locks are ported without unrelated integration-branch changes. Added public-only Jev Router request/admission policy and a market/reuse/authentication/rollout decision. Parent132 targeted tests, scoped TypeScript, final9 changed-scope checks and135 pre-commit checks pass; exact-head Linux/Windows CI, secret scan and editorial/design contracts pass. Jev transport, provider credentials, live continuation, sandbox/signing, independent approval and customer evidence remain open. Grok timed out; Gemini rejected the client as ineligible; both returned no verdict and owned processes were stopped. Claude's earlier weekly quota refusal also remains non-approval. Machine recovered from RAM HOLD to one bounded workload, while new swarms remain paused. No merge, release or background service was enabled. See today's session and SIS49.
+
 ## 2026-10-10: context resume scoped and checker binding verified
 
 [SIS330](https://github.com/frankxai/Starlight-Intelligence-System/pull/330) pushed at `000e2637`, base `codex/consolidate`: exact-revision checkpoint handoff, provider binding check and sequential Linux/Windows runtime CI. 96 targeted tests, strict scoped TypeScript and 135 pre-commit checks passed locally. Synthetic CLI restart/recovery is verified; live cross-provider completion, sandbox evidence and independent approval remain open under issue49. Estate4/config46 remain separate repairs. See today's session; no production release or local automation was enabled.
