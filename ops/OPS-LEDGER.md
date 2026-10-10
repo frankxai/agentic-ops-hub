@@ -922,3 +922,14 @@ Codex reused its clean exclusive intake worktree on agent/codex/continuity-resto
 New regression baseline:11 failed/one passed. Fixed focused suite:31 passed/one optional skip. Full suite:204 passed/two skips; Ruff, whitespace and commit secret hook pass. Existing product issue second-brain-os#14 tracks receiving integration. PR15's foreign owner branch remains unchanged. This repair is not a full PR approval or production deployment. Independent exact-fix review, optional SIS/macOS verification, separate policy-copy/PID-query review and receiving acceptance remain open.
 
 No new swarm workers were started: fresh machine admission held swarm work. All529 active note texts,1587 overlapping demand projections,65 goal areas and25 existing objectives remain; the24 other objective records and private catalog hash were verified unchanged. Recovery remains three cited notes/seven pending, with zero receiving resumes or accepted creator artifacts evidenced.
+
+
+### Follow-through: policy and lock recovery failures repaired, 10 October 2026
+
+Second Brain OS repair branch now contains dd1882694df006d75715898faea6041e85560392 on top of cb2a3a8d45768cf46e8e37428982fdcd9845093d. Four regressions reproduced policy mutation after verification, concurrent policy overwrite and two Windows query failures permitting synthetic lock removal. The original source PR15 remains unchanged at7cb67be0a851d6cd87e3b219aba6d04346526db2.
+
+Restore now captures and rechecks policy bytes before store mutation, activates atomically/exclusively and retains a concurrently activated policy. The private binary writer preserves verified bytes. Windows PID probing declares pointer-sized handles and preserves locks when process status cannot be confirmed. The native read-only check recognized the current test process without signalling it. No live vault, policy, store or lock was changed.
+
+Before: four failed/14 passed. After:37 focused passes/one optional skip;210 full passes/two optional skips in38.55s. Ruff, whitespace and secret hook pass. The existing native-intake branch remains at1867de59d05328541a17548261b1c36a4e5394a0. Source references are the Microsoft GetExitCodeProcess/OpenProcess and Python ctypes documentation, retained in the private receipt.
+
+Independent exact-fix review, existing issue14/PR15 owner integration and optional real SIS/macOS checks remain open. Recovery-to-owner continuation and creator acceptance are still not evidenced; three cited summaries/seven pending. All25 objectives, the24 unrelated objective records and the529-note/65-area catalog remain preserved. No new workers, worktrees or product PRs were created.
