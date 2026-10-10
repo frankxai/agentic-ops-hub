@@ -12,7 +12,8 @@ PASS is not final-revision approval. All owned reviewers stopped/links removed.
 merged to9887aa8f after independent c2fe2fc3 PASS, required CI and main candidate
 38052541563 PASS. Earlier RAM HOLD resolved with bounded8674MB/quietCPU70%.
 Both8.5.1 npm publications verified against tested main bytes and latest tags
-at12:40:46Z.377 non-manifest files match across scopes. Current AGY prompt in NEXT-PROMPTS drives real creator
+at12:40:46Z.377 non-manifest files match across scopes. Production canary
+38052578072 PASS; live doctor retains creator-MCP0.1 blocked. Current AGY prompt in NEXT-PROMPTS drives real creator
 edit/recovery/export/receiving-owner acceptance and retains all broader goals.
 Creator issue4 and SIS144 stay open; no foreign ownership/unknown-run cleanup.
 
