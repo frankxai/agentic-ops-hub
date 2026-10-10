@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: plugin junctions, Suno archive branch, redundant clones removed (Grok)
+
+`plugins\loop-system` and `plugins\domain-intelligence-system` are junctions to `starlight\repos`. Suno `fbd820e` is on `agent/grok/suno-unpushed-20260701` and has no merge base with `main`, so no PR. Five redundant home clones were removed (`batch3-awesome` and `projects\pv-lager-agentic`). `frankxai-empire-audit` stays because it owns the copilot worktrees. See [session](sessions/2026-10-10.md).
+
 ## 2026-10-10: home product drawers moved into the estate (Grok)
 
 Continuation of the stray-repos move. Unique mind, studio, student, community, and release folders now live under `starlight\repos`. Dream100 is in `iis-private`. Drafts are in `scratch`. Duplicate checkouts whose commits are already in the estate stayed at home: `batch3-awesome`, `projects\pv-lager-agentic`, and `frankxai-empire-audit`. `plugins` still has 71 packs. `second-brain-v6` was not moved. See [session](sessions/2026-10-10.md).

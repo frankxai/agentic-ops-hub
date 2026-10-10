@@ -36,14 +36,18 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
-### Placement: keep the stray drawer closed
+### Placement: do not delete the empire-audit git dirs
 
 ```text
-C:\Users\frank\repos is gone. Do not recreate it. Canonical clones stay in C:\Users\frank\starlight\repos. Read ops/sessions/2026-10-10.md.
+Read ops/sessions/2026-10-10.md. C:\Users\frank\repos is gone. Canonical clones stay in C:\Users\frank\starlight\repos.
 
-Next: C:\Users\frank\starlight\repos\awesome-suno-agent-skills-unpushed-20260701 is local main fbd820e (2026-07-01). That commit is not on GitHub and not in the canonical checkout. Push it as agent/grok/suno-unpushed-20260701 on frankxai/awesome-suno-agent-skills. Do not touch the canonical checkout on agent/hermes/monthly-curation-20260803.
+Do not delete C:\Users\frank\frankxai-empire-audit. Those folders are the git directories for the copilot worktrees under C:\Users\frank\copilot-worktrees. The website checkout there has a broken HEAD and still owns frankxai-animated-engine.
 
-Leave frank-gym-os without git init until a private remote exists. It contains .env.local. Leave home agentic-ops and home starlightintelligence.ai. Their estate checkouts are on other harness branches.
+Do not move C:\Users\frank\plugins. It is the live plugin root. loop-system and domain-intelligence-system are junctions back to starlight\repos.
+
+Suno fbd820e is already on frankxai/awesome-suno-agent-skills as agent/grok/suno-unpushed-20260701. It has no merge base with main. Do not open a pull request from it. Do not touch the Hermes checkout.
+
+Leave frank-gym-os without git init until a private remote exists. Leave home agentic-ops and home starlightintelligence.ai.
 ```
 
 ### Starlight interfaces: connect source-backed creation and knowledge
