@@ -1,35 +1,58 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Arcanea adoption: voice admission and a verified creator journey
+## Arcanea adoption: finish voice555 review, then prove the creator journey
 
-Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
-Read today's session, merged PR554 and requery heads. Preserved release lane
-`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
-e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
-full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
-reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
-has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
-CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
-selector with duplicate matches. Six bounded cloud-browser production attempts
-passed without reproducing it; keep the failure and unresolved cause visible.
-No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
-findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
+Continue full native goal `01a123df-58c6-72f3-b86c-65083426cf65` and issue529.
+Read today's voice session/product pickup; requery heads and current checks.
+Owned product worktree `C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
+branch `agent/codex/voice-admission-20261010`, clean c09f9d99a207e0826b7108424028096a4f99f948
+from6e774, PR555 ready. Native22 voice+21 chat and source lint/format/secret
+checks pass. Full CI38035055770, CodeQL38035055759 analysis AND findings pass.
+Compiled desktop1440/mobile375/reduced375 verifies keyboard/Settings recovery,
+44px Listen/Stop, audio-only credentials, actual fetch abort/no extra request or
+error, mobile reflow and zero page errors. READY preview dpl_4VnNEXYPSCG7PHiHhLxMXgjEGckK
+passes eight safe audio denials. Frozen22 hashes match compiled merge8b14575027f5.
 
-Create the next owned branch from verified current main; retain the merged source
-branch and foreign lanes. Next repair voice credential admission and privacy,
-preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
-private voice-admission-audit receipt; live keys were not inspected. Repository
-security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
-the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
-Keep managed inference disabled until durable authenticated
-entitlements/reservations exist. Prove actual existing-source generation, reopening,
-editing, interruption recovery and export with user/editorial acceptance; compare
-the same task with the user's current provider editor. Reuse accepted workspace/
-427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
-router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
-branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
-Honor machine admission, secret checks and publication/payment/migration gates.
+Final native Grok review is running through owned handle41381 atc09, one turn,
+tools/web/subagents off, model requestgrok-4.7,45-minute deadline in private
+voice-review-lifecycle-c09f9d99a207.json. Fresh BOUNDED8839MB vs6144MB admits this
+one workload; earlier holds honored. Frozen v2 input/manifest includes actual22
+sources/raw diff and Prettier3.9.9-normalized comparisons for three legacy clients.
+No final verdict/resolved model/usage/cost yet. Preserve initial3ebb selector and
+CodeQL test URL failures,698 short-timer cancellation failure and644 superseded/
+cancelled CI. The corrected fixture stays pending until named Stop, observes
+fetch abort and releases its synthetic failure afterward. Review698 stopped via
+own86850, exit1/no output/verdict/cost known; no residual matching reviewer remains.
+
+Reconcile final findings; re-run changed gates and obtain exact changed-source
+review if needed. Before normal merge, requery head/main/required gates, preserve
+all other branches and reconcile source hashes. After merge verify receiving-main,
+production metadata and safe stable-domain voice/chat contracts. Prior554 PASS
+cannot approve555. Actual provider audio/tonal/customer/account/billing acceptance
+is unproved; direct browser voice paths and CLI marketing remain outside this scope.
+
+Chat/operator554 already live at6e774:21 native cases, full candidate/main gates,
+final exact Grok PASS,23 hashes match, READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC,
+18 safe stable-domain contracts. Main CI passed attempt2; first gallery selector
+failure retained, six cloud attempts did not reproduce it, no selector weakened.
+Repository-wide200 recorded CodeQL and12 Dependabot alerts remain separate.
+Hub226 merged; main CI passed, Fleet watch38032021361 still reports stale c940/
+missing Last sweep under176. The session bridge returns metadata summaries with
+incorrect own-goal/old-branch labels; native goal/Git/source receipts govern this
+task, not inferred index labels or15-minute activity. No unseen chats claimed.
+
+Next trust repair: Author Companion still has signed-in platform-key spending
+without durable credits and raw error/default SDK logging/cache; current source
+also separates its own key from global provider settings and calls Haiku free.
+Preserve its existing source-backed book/chapter/draft implementation and owners.
+The product outcome remains actual source generation→reopen/edit→interruption
+recovery→export with receiving-owner/editorial/user acceptance and same-brief
+comparison to the current provider editor. Reuse427/531/532/533 and billing511;
+managed inference stays disabled until authenticated durable entitlement/reservation
+gates pass. Preserve all CLI/SDK/ADK/desktop/mobile/memory/router/cloud/APIs/narrative/
+bundle/GTM goals, foreign Gemini/foundation work, SDK8.5 and creator-MCP owners,
+unknown attempts and source branches. Save529/hub; honor secret, admission, payment/
+migration/publication gates. Stop only session-owned workers at handoff.
 
 
 ## GenCreator: connect the accepted creator loop and managed platform

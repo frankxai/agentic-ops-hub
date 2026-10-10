@@ -1,5 +1,25 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Arcanea voice555 passes cloud gates; independent review running
+
+[Arcanea555](https://github.com/frankxai/arcanea-ai-app/pull/555), candidatec09f9d99a207,
+requires customer audio credentials, preserves speech/transcripts/audio and masks
+provider errors. Settings recovery and44px named Stop controls are implemented;
+Orpheus replaces the retired Groq model with explicit text-limit recovery.
+Native43 cases, source lint/format/secret checks and full CI38035055770 pass,
+including compiled desktop/mobile/reduced-motion browser recovery and actual
+fetch cancellation. CodeQL38035055759 analysis AND findings pass. READY exact
+preview passes eight safe audio denials; all22 frozen hashes match compiled8b145.
+Earlier selector/URL/mock-timing failures and superseded runs remain recorded.
+Native698 review stopped before source changes, exit1/no verdict, cost unknown.
+Fresh BOUNDED8839MB vs6144MB admits one final exact-source review, owned41381,
+one turn/tools/web/subagents off with45-minute deadline. No final verdict yet.
+No live audio/account/billing/customer proof. Chat554 remains live at6e774 with
+18 safe production checks. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
+and today's session retain the full creator/platform/commercial goal. Hub CI
+passes; separate fleet signals remain in176. Session-index labels were found to
+disagree with native goal/Git and were not adopted as truth or lane ownership.
+
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
 [Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), reviewed6def4ff717,
