@@ -1,5 +1,4 @@
 # ⏭️ Next Prompts — per active front / terminal
-
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: resolve run recovery before production activation
 
@@ -33,6 +32,39 @@ design/runtime owners. Continue the full CLI/SDK/ADK, desktop/mobile, cloud memo
 OAuth/jobs, domain design and commercial outcome under the existing customer-owned
 and BYOK doctrine. Save both the hub handover and the existing product issues.
 <!-- starlight-delivery-20261010:end -->
+
+
+## Arcanea adoption: voice admission and a verified creator journey
+
+Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
+Read today's session, merged PR554 and requery heads. Preserved release lane
+`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
+branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
+e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
+full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
+reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
+has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
+CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
+selector with duplicate matches. Six bounded cloud-browser production attempts
+passed without reproducing it; keep the failure and unresolved cause visible.
+No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
+findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
+
+Create the next owned branch from verified current main; retain the merged source
+branch and foreign lanes. Next repair voice credential admission and privacy,
+preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
+private voice-admission-audit receipt; live keys were not inspected. Repository
+security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
+the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
+Keep managed inference disabled until durable authenticated
+entitlements/reservations exist. Prove actual existing-source generation, reopening,
+editing, interruption recovery and export with user/editorial acceptance; compare
+the same task with the user's current provider editor. Reuse accepted workspace/
+427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
+router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
+branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
+Honor machine admission, secret checks and publication/payment/migration gates.
+
 
 ## GenCreator: connect the accepted creator loop and managed platform
 
