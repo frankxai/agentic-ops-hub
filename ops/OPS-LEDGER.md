@@ -1,5 +1,30 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: review gate unchanged; archive triage revalidated (Codex)
+
+Installed agent-runtime-trust-boundaries skill explicitly read from correct
+.agents/skills/agentic-orchestration path; first shortened path missing. Policy
+requires runtime capability limits, not caller-authored prompt/approval claims.
+Canonical capability-loading/progressive guides still absent; no auth workaround.
+No isolated independent review or publication advanced. Grok native route remains
+authenticated but lifecycle/MCP isolation unresolved; Claude reset11Oct06Amsterdam.
+Asked Frank for existing isolated reviewer service or completed review link; no
+reply presumed. No live process/job wait claimed, no new heavy work or services.
+
+Re-fetched exact @arcanea/skills1.0.0 within2MB existing budgets and matched both
+archive digests. Reported404 raw-line hash matches when trailing CR preserved;
+initial normalizedCRLF assertion failed, corrected raw-line hash verified. Code
+fence/header and candidate placeholder checks still cannot classify as supplied
+credential versus example. Finding remains unresolved, no credential tested or
+raw secret retained. Redacted followup appended to ignoredsecret-triage.json;
+SIS issue329 checkpoint saved. This does not prove the package secret-free.
+
+No product source/registry state advancement this turn; review/account/ownership
+and full platform/customer/paid-value scope remain open. Current SIS07b43079 and
+creator d4eb905 source lanes unchanged/clean with prior scoped hosted verification.
+Hub/target guides and identity/explicitfiles guard/check/clean ownership verified.
+Retain current packets; do not manufacture another status-only release receipt.
+
 ## 2026-10-10: native Grok review authentication discovered (Codex)
 
 Grok Build1.0.50 native models command exit0 reports logged in with grok.com,

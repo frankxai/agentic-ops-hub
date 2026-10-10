@@ -2,6 +2,20 @@
 
 ## Current npm ecosystem prompt
 
+Review gate remains unchanged: creator6d4eb905 and SIS34207b43079 prepared/CI-
+verified, not independently reviewed/published. Grok authenticated but startup
+hooks/MCP isolation unproven; Claude quota reset11Oct06Amsterdam. Frank asked for
+existing isolated-review service/completed-review link; no answer presumed.
+Revalidated skills1.0.0 archive/CRLF line404 hash; credential finding unresolved.
+Do not repeat unchanged route probes or placeholder guessing. Revalidate remaining
+safe owned work and audit genuine impasse; follow goal blocked threshold if the
+same blocker persists without meaningful progress. Preserve whole estate/platform/
+customer/value objective and all unfinished work; do not claim goal achieved.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
 Grok native1.0.50 models confirms authenticated grok.com/defaultgrok-4.7. Review
 still needs proven isolation:25hooks,19MCPservers,19plugins discovered even with
 vendor/subagent/managed-MCP/memory flags disabled; empty --tools keeps MCP tools.
