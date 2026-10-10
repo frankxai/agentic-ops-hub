@@ -1,5 +1,35 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: creator provider redirect and cancellation boundary (Codex)
+
+Creator draft6 pushedbd0b30367ae5d60e4ec622df3dd016cc69ed39c4, clean owned
+agent/codex/creator-npm-release-20261010 lane, root guides absent, README/SECURITY
+explicitly read before edits; no deeper scope guides. Guard/named-file check pass.
+Reproduced exact prior hosted creator-core bytes: x-api-key synthetic fixture
+forwarded across origins; pre-aborted request still fetched. No real credential,
+provider call or network used (mock fetch, allowed private fixture addresses).
+
+Shared fetch guard now uses one controller/timer across redirect hops, caps20
+redirects, cancels redirect bodies and removes caller abort listeners. Pre-aborted
+signals deny fetch. Cross-origin GET/HEAD drops all caller headers/credentials;
+cross-origin body replay, HTTPS downgrade and URL credentials denied. Same-origin
+307 retains payload and headers; POST301/302 and303 use GET without body headers.
+New8tests plus22existing core tests pass; targeted tsc/ESLint/diff pass. Reused
+fresh BOUNDED build admission from previous turn, one short workload at a time,
+no new install/agents/services, all session commands terminate. Secret hook pass.
+Security doc states remaining DNS resolution and body deadline limitations;
+DNS rebinding remains open. No complete SSRF/provider/runtime safety claim.
+
+Hosted38035482758 queued at this checkpoint, previous26b hosted artifacts remain
+historical. Current73-file immutable git-show packetartifacts/review-bd0b303 is
+prepared/not reviewed; Gitleaks283851bytes clear. Issue4 comment6095258586 saved.
+Source types/runtime consumers need fresh hosted verification before final archive
+claims. No live publishing, tokenfallback, merge, foreign edits or credential use.
+SIS511c0075 unchanged/all-six verified; broader review/account/bootstrap/platform/
+provider/customer/value scope stays open. Native provider review routes remain
+Claudequota and GeminiUNSUPPORTED_CLIENT; no identical request repeated.
+
+
 ## 2026-10-10: core denies coerced retention deadlines (Codex)
 
 Final hosted38035032307 completed SUCCESS all six jobs (Linux/Windows22/24,

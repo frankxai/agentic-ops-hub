@@ -2,6 +2,18 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Creator current tipbd0b30367ae5d60e4ec622df3dd016cc69ed39c4 fixes provider
+redirect header leakage and cancellation. Cross-origin caller headers/credentials
+removed; payload replay/downgrade/URL credentials denied;20-hop cap/sharedtimer/
+preabort/listenercleanup. Eight new and22 existing core tests, tsc/lint pass.
+Hosted38035482758 queued: poll that same run and validate resulting ten archives,
+consumer binding and merge parents. Current73-file packetartifacts/review-bd0b303
+prepared/not reviewed, Gitleaks clear;26b archive/review packets now historical.
+DNS resolution/rebinding and body-consumption bounds remain open. SIS remains
+511c0075 with validated six-job success. Preserve full account/provider/platform/
+customer scope and source ownership for other package repairs; do not claimrelease.
+
+
 Final hosted38035032307 completed SUCCESS all six jobs (Linux/Windows22/24,
 core18, artifacts and installed consumers). Downloaded three archives and validated
 SHA256/SHA512, identities/versions/allowlists, clean merge31277d046809237da847af8a0a5fc21c53922b07,
