@@ -23,8 +23,10 @@ agent-branch production, missing Git provenance, public-code/private-instance
 boundaries and all existing owners. Eight duplicate-source checkouts now have private full-ref bundles with strict
 isolated-object-store recovery checks. All four dirty checkouts also have private snapshots
 of46 listed files, indexes and staged/unstaged binary patches, verified by CRC/byte
-checks. Prove an applied restore and review ignored/LFS/submodule/offsite coverage
-before cleanup. Missing/placeholder source guides and the configured storage tool/skill
+checks. Scoped applied restores now pass for46 captured files
+and332 index objects, including four tracked files reconstructed from Git blobs
+and patches. Verify complete-checkout/ignored/LFS/submodule/offsite coverage and
+source-owner acceptance before cleanup. Missing/placeholder source guides and the configured storage tool/skill
 require owner repair. Historical NoWrite diagnostics are not installed policy.
 Continue available safe independent work while awaiting decisions. No transfer,
 privacy/spend change, cleanup or production promotion is authorized by test results.
