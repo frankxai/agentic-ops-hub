@@ -1,4 +1,14 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+<!-- starlight-context-continuity-20261010:start -->
+## Starlight: multi-harness context continuity acceptance and production release, 10 October 2026 (Antigravity)
+
+- Done: [SIS PR #345](https://github.com/frankxai/Starlight-Intelligence-System/pull/345) (`9f89333b`) and [SIS PR #354](https://github.com/frankxai/Starlight-Intelligence-System/pull/354) (`af0caef7`) squashed and merged into `main`. Released bounded context continuity, durable journals, revision-scoped handoffs, review queue with provider binding, ownership-safe lock semantics, and bounded public-only Jev Router policy.
+- Verified: Independent source review conducted by Antigravity (Gemini 3.8 Flash High) across 5 core modules against target head `1c7f40d78869ee6cc3fbfb0ad7f858f2ce5b186a`, reporting 5 concrete findings (locks, temp journals, untrusted authority tagging, record formatting, Jev list fallback). Live acceptance suite (`test/live-cross-harness-acceptance.test.ts`) verifies real two-harness checkpoint handoff without duplicates, real child process command execution evidence (`node --version`), interruption capacity reservation recovery, and Jev Router refusal policy invariants.
+- CI: Exact-head GitHub Actions CI (Run 38069234500) passed: Ubuntu-latest (137 tests), Windows-latest (137 tests), design-contract, editorial-contract, harness, scan, and Vercel preview checks. Packaging dry-run (`npm pack --dry-run`) verified with 390 packaged files including all exported runtime bridges, context types, and type definitions.
+- Scope & Invariants: Local child processes and SHA-256 digests verified; OS kernel sandboxing and cryptographic signing are not present and not claimed. Jev transport strictly restricted to opt-in public data pilot. Peer branches preserved (Codex's `agent/codex/context-production-20261010`, PR #342, PR #340). All session-owned test processes and watchers stopped.
+- Open: Opt-in public pilot workflow rollout, external consumer package installation test, and coordination with PR #342 / PR #340. Product tracking in SIS [issue #49](https://github.com/frankxai/Starlight-Intelligence-System/issues/49).
+<!-- starlight-context-continuity-20261010:end -->
+
 <!-- starlight-delivery-20261010:start -->
 ## Starlight platform delivery, 10 October 2026
 
