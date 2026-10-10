@@ -1,59 +1,57 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Arcanea adoption: finish voice555 review, then prove the creator journey
+## Arcanea adoption: finish corrected voice555 gates and the creator journey
 
-Continue full native goal `01a123df-58c6-72f3-b86c-65083426cf65` and issue529.
-Read today's voice session/product pickup; requery heads and current checks.
-Owned product worktree `C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/voice-admission-20261010`, clean c09f9d99a207e0826b7108424028096a4f99f948
-from6e774, PR555 ready. Native22 voice+21 chat and source lint/format/secret
-checks pass. Full CI38035055770, CodeQL38035055759 analysis AND findings pass.
-Compiled desktop1440/mobile375/reduced375 verifies keyboard/Settings recovery,
-44px Listen/Stop, audio-only credentials, actual fetch abort/no extra request or
-error, mobile reflow and zero page errors. READY preview dpl_4VnNEXYPSCG7PHiHhLxMXgjEGckK
-passes eight safe audio denials. Frozen22 hashes match compiled merge8b14575027f5.
+Continue native goal `01a123df-58c6-72f3-b86c-65083426cf65`, trust issue529 and
+world-first Studio program276. Read today's session and product pickup; requery
+current heads/checks. Product lane is the existing owned worktree
+`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
+branch `agent/codex/voice-admission-20261010`, clean
+f76b75a7488b1579bb785af75306a4c283c40cc2, PR555 open from6e774.
 
-Final native Grok review is running through owned handle41381 atc09, one turn,
-tools/web/subagents off, model requestgrok-4.7,45-minute deadline in private
-voice-review-lifecycle-c09f9d99a207.json. Fresh BOUNDED8839MB vs6144MB admits this
-one workload; earlier holds honored. Frozen v2 input/manifest includes actual22
-sources/raw diff and Prettier3.9.9-normalized comparisons for three legacy clients.
-No final verdict/resolved model/usage/cost yet. Preserve initial3ebb selector and
-CodeQL test URL failures,698 short-timer cancellation failure and644 superseded/
-cancelled CI. The corrected fixture stays pending until named Stop, observes
-fetch abort and releases its synthetic failure afterward. Review698 stopped via
-own86850, exit1/no output/verdict/cost known; no residual matching reviewer remains.
+Native24 voice/21 chat tests pass; lint/types passed current CI38038371397,
+build/browser running. CodeQL38038371415 analysis and findings pass. C09's
+full gates/preview/source binding remain historical and do not approve changes.
+Its exact Grok review finished exit0/PASS with four medium findings, all corrected:
+silent transcription/exact draft loss and unintended draft auto-send, room
+Settings action, playback overlap before rerender and hidden message errors.
+Resolvedgrok-4.7-build, session01a124ca-6468-7423-a275-d00ada52436e,
+requestf22926b3-704e-4fa8-a898-3950bcfe7c6a, reported232649 tokens/USD0.39940888,
+not an invoice. Handle41381 ended; do not resume it or call it running.
 
-Reconcile final findings; re-run changed gates and obtain exact changed-source
-review if needed. Before normal merge, requery head/main/required gates, preserve
-all other branches and reconcile source hashes. After merge verify receiving-main,
-production metadata and safe stable-domain voice/chat contracts. Prior554 PASS
-cannot approve555. Actual provider audio/tonal/customer/account/billing acceptance
-is unproved; direct browser voice paths and CLI marketing remain outside this scope.
+Preserve failedffc CI38037675234: the room remained Listening after Space release.
+Fixture lacked byte analyser samples; keyboard effect also discarded held-key
+state on async briefing update. Corrected fixture releases briefing mid-hold;
+component ref retains gesture state. Prior698 stopped review/no verdict and
+all earlier failed/superseded candidates remain. Remote c09 reproduction was
+inconclusive and its session stopped. No owned reviewer/browser remains.
 
-Chat/operator554 already live at6e774:21 native cases, full candidate/main gates,
-final exact Grok PASS,23 hashes match, READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC,
-18 safe stable-domain contracts. Main CI passed attempt2; first gallery selector
-failure retained, six cloud attempts did not reproduce it, no selector weakened.
-Repository-wide200 recorded CodeQL and12 Dependabot alerts remain separate.
-Hub226 merged; main CI passed, Fleet watch38032021361 still reports stale c940/
-missing Last sweep under176. The session bridge returns metadata summaries with
-incorrect own-goal/old-branch labels; native goal/Git/source receipts govern this
-task, not inferred index labels or15-minute activity. No unseen chats claimed.
+Wait for actual corrected desktop/mobile/reduced-motion gates, retrieve exact
+preview denial/source receipts, freeze clean source, obtain fresh admitted
+independent review and reconcile findings. Normal merge requires matching head
+and all required gates. Then verify receiving-main, production source/aliases and
+safe voice/chat contracts. Keep issue529 open. Actual paid-provider audio,
+microphone quality, durable credits and whole-platform safety remain unproved.
 
-Next trust repair: Author Companion still has signed-in platform-key spending
-without durable credits and raw error/default SDK logging/cache; current source
-also separates its own key from global provider settings and calls Haiku free.
-Preserve its existing source-backed book/chapter/draft implementation and owners.
-The product outcome remains actual source generation→reopen/edit→interruption
-recovery→export with receiving-owner/editorial/user acceptance and same-brief
-comparison to the current provider editor. Reuse427/531/532/533 and billing511;
-managed inference stays disabled until authenticated durable entitlement/reservation
-gates pass. Preserve all CLI/SDK/ADK/desktop/mobile/memory/router/cloud/APIs/narrative/
-bundle/GTM goals, foreign Gemini/foundation work, SDK8.5 and creator-MCP owners,
-unknown attempts and source branches. Save529/hub; honor secret, admission, payment/
-migration/publication gates. Stop only session-owned workers at handoff.
+Next Author inspection: current companion omits live editor text, workspace
+reopens git source rather than the authenticated draft API, signed-in Haiku can
+spend the environment key without durable funding, and UI claims free/read
+context unsupported by admission/curation. Existing276 owns this enabling work;
+reuse accepted manuscripts, private Supabase drafts and AuthorOS. Preserve
+505/500/512/494 and every other owner's work. Native issue276 strategy still
+prioritizes Arcanea universe/readers/releases; do not redefine the full goal as
+security, voice or another general platform. Direct Anthropic is the serious
+comparison; actual output/edit/reopen/recovery/export and independent quality
+proof remain required. Official model lifecycle and SDK documentation were
+retrieved; candidate selection and paid verification remain pending.
 
+Chat554 remains live at6e774, with21 native cases, full candidate/main gates,
+exact independent PASS,23 matching source hashes and18 safe production contracts.
+Repo-wide200 recorded CodeQL and12 Dependabot alerts stay separate. Hub226
+merged, main CI passed; scheduled fleet signals38032021361 remain under176.
+Session-index labels disagreed with this goal/Git; metadata is not ownership,
+runtime liveness or access to unseen chats. Save to these three hub files and
+the owning product issue. Keep the full goal and all retained fronts active.
 
 ## GenCreator: connect the accepted creator loop and managed platform
 

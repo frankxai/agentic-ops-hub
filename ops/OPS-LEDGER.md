@@ -1,24 +1,26 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: Arcanea voice555 passes cloud gates; independent review running
+## 2026-10-10: Arcanea voice555 recovery corrected; final gates pending
 
-[Arcanea555](https://github.com/frankxai/arcanea-ai-app/pull/555), candidatec09f9d99a207,
-requires customer audio credentials, preserves speech/transcripts/audio and masks
-provider errors. Settings recovery and44px named Stop controls are implemented;
-Orpheus replaces the retired Groq model with explicit text-limit recovery.
-Native43 cases, source lint/format/secret checks and full CI38035055770 pass,
-including compiled desktop/mobile/reduced-motion browser recovery and actual
-fetch cancellation. CodeQL38035055759 analysis AND findings pass. READY exact
-preview passes eight safe audio denials; all22 frozen hashes match compiled8b145.
-Earlier selector/URL/mock-timing failures and superseded runs remain recorded.
-Native698 review stopped before source changes, exit1/no verdict, cost unknown.
-Fresh BOUNDED8839MB vs6144MB admits one final exact-source review, owned41381,
-one turn/tools/web/subagents off with45-minute deadline. No final verdict yet.
-No live audio/account/billing/customer proof. Chat554 remains live at6e774 with
-18 safe production checks. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
-and today's session retain the full creator/platform/commercial goal. Hub CI
-passes; separate fleet signals remain in176. Session-index labels were found to
-disagree with native goal/Git and were not adopted as truth or lane ownership.
+[Arcanea555](https://github.com/frankxai/arcanea-ai-app/pull/555) is open at
+f76b75a7488b1579bb785af75306a4c283c40cc2. Customer audio credentials, complete
+text/audio and safe errors are implemented. The c09 review finished PASS with
+four medium findings; all four were corrected. Failed transcription now preserves
+the exact draft without auto-sending it, room Settings actions persist, playback
+uses synchronous controller guards and errors remain visible outside hover.
+The new room test exposed a missing fixture method and effect-local held-key
+state lost on briefing updates; both corrected, with an explicit regression.
+Native24 voice/21 chat checks pass. Priorffc CI failed that new room case;
+its lint/types/compile and CodeQL passed, eight safe preview denials passed.
+Current CI38038371397 has lint/types passed and build/browser running;
+CodeQL38038371415 analysis and findings pass. New exact-source review pending.
+Owned c09 reviewer41381 ended exit0; resolvedgrok-4.7-build, reportedUSD0.39940888
+and232649 tokens, not an invoice. No local reviewer or remote browser remains.
+Earlier failures and stopped reviews remain recorded. Chat554 remains live at
+6e774 with18 safe production checks. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
+and the full creator/platform/commercial goal stay open. Hub fleet signals176
+remain separate. Author companion/current-draft work maps to existing276;
+public narrative, creator proof and other owners' branches remain unfinished.
 
 ## 2026-10-10: Arcanea customer chat and operator repair live
 
