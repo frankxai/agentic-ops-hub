@@ -13,7 +13,6 @@ Read the10October session, SIS151/143 and C:/Users/frank/.starlight/reports/harn
 ## Harness fleet: validate reviewer route, then integrate evidence
 
 Read SIS328 draft at a2e3b53a and SIS151 plus this hub session2026-10-10. The collector now has20passing tests, real Windows collection and clean gitleaks; quota/output collision and read bounds are fixed. All3 independent Grok attempts failed to produce an accepted review: first tool boundary mismatch, then240s grok-4.7 timeout and120s grok-4.7-build-fast timeout with verified empty tools/MCP. No owned reviewer remains; do not poll nonexistent workers or treat runtime init as successful capability proof. Refresh admission/quota and diagnose a small native text-completion fixture before another full source review. Obtain independent exact-head review before making328 ready. AIS route code belongs to its existing Claude PR10 atd8bd2e3e and is absent from cached main788a0c1; preserve that lane and reconcile the accepted integration API with its owner. AIS supplies cited capability resolution, Queen/Observatory supplies execution/interface. Then prove one admitted maker/checker workflow with immutable base, lease, privacy/spend bounds and independent acceptance. Reuse SIS six-vault memory, work/loop graphs, Foundry contracts and one durable orchestrator. Keep151/143 and broader cloud/upgrade goals open. Save both hub and product issue.
-||||||| 6c749cb
 ## SIS8.4: complete one community creator acceptance journey
 
 SIS327/339 merged; npm8.4.0 published from tested main8087a0fa and public bytes
