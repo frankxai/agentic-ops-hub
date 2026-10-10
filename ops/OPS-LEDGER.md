@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Voice provider and retrieval checkpoint (Codex)
+
+[Voice draft4](https://github.com/frankxai/starlight-voice/pull/4), `a09f403`: provider selection, bounded async retrieval, honest readiness and a separate v4 Turbo dialogue transport. 81 offline tests pass, two provider suites skip, Ruff/secrets pass. Apps stayed stopped. Typed memory/tool integration, native speech, audio binding, independent review and live acceptance remain open in [Voice issue2](https://github.com/frankxai/starlight-voice/issues/2). Private evidence stays in the task record.
+
+
 
 
 ## 2026-10-10: Estate management accepted and protection live (Codex)

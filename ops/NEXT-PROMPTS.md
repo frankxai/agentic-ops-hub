@@ -1,5 +1,10 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Voice and Command Center: continue the full implementation
+
+Continue Voice issue2 from draft PR4 at a09f403 in the assigned Codex voice-architecture lane. Keep applications stopped until Frank changes that instruction. Read current source/instructions and ownership; reuse the shared tool plane for typed reviewed-memory tools, then connect native Grok/OpenAI session transport and the separate v4 Turbo dialogue adapter. Preserve divergent Command Center/Hermes work. Obtain independent revision review when admitted; measure preference, interruption, 20 session receipts, first playable audio, cost and RAM before declaring end-to-end acceptance. The full revamp remains active.
+
+
 ## Estate management: use accepted main and continue source recovery
 
 Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
