@@ -36,6 +36,16 @@ Read starlightintelligence.ai issue #95 first. State: Codex #91 passed Grok at 2
 
 ## Current
 
+### frankx.ai: sign PR 952 from a different harness
+
+```text
+Read ops/sessions/2026-10-10.md, the production section. Draft https://github.com/frankxai/frankx.ai-vercel-website/pull/952 is commit 09b5f638f on agent/grok/prod-main-fixes-20261010. Grok wrote it and cannot sign it.
+
+Review that exact commit. If it holds, sign it from a different harness and merge through the repo gate. Then measure https://www.frankx.ai/ at 375×812: Map the Ecosystem must clear the music chip. Check one waitlist product page for InStock and a dollar bonus.
+
+Do not edit HomePageElite in that pull request. Do not start soulbook #927 from this branch. Leave the Suno 100+ line until there is a source for a replacement count.
+```
+
 ### Placement: do not delete the empire-audit git dirs
 
 ```text

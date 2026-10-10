@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: frankx.ai production defects prepared, not merged (Grok)
+
+Draft [frankx.ai-vercel-website #952](https://github.com/frankxai/frankx.ai-vercel-website/pull/952) at `09b5f638f` clears the 375 px music-chip overlap and takes InStock prices off waitlist product pages. https://www.frankx.ai is unchanged until a different harness merges. See [session](sessions/2026-10-10.md).
+
 ## 2026-10-10: website HEAD repaired, two archive branches pushed (Grok)
 
 `frankxai-empire-audit\frankx.ai-vercel-website` `HEAD` is `main` at `b7e617bd`. The animated-engine worktree stayed at `8a6cd80e`. Mind index draft is [awesome-mind-agent-skills #8](https://github.com/frankxai/awesome-mind-agent-skills/pull/8). Business OS `3fc3c75` is on `agent/grok/business-os-home-20261010` with no pull request. See [session](sessions/2026-10-10.md).
