@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: GenCreator unchanged-head preview recovered
+
+PR141 e374345 now has READY cache-free preview dpl_GFeXCuv87bicGXZ9PA2P7KhF761H, exact HTML deployment markers and200for / + /creator-studio. Vercel contextSUCCESS; source/settings/production unchanged. [Issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6093718849) receives evidence and current acceptance action. Creator interaction/visual/customer gates remain pending; all broader goals preserved.
+
+
 ## 2026-10-10: GenCreator owner continuation supersedes duplicate repair
 
 PR141 already integrates recovered cloud revision work and lifecycle repairs. Exact-head CI867unit/195E2Epassed,1flaky/2skipped; Vercel ERROR missing js-yaml. [Issue5 correction](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6093671900) and current session retain exact evidence. Do not replay older patch. Next is owner preview recovery and creator acceptance; broader vision remains intact.
