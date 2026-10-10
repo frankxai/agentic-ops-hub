@@ -15,18 +15,19 @@ SIS issue144 and PR346, creator-MCP issue4, fleet PR328, modular-package PR342,
 and the GenCreator receiving owner's current implementation before acting.
 Saved heads are evidence snapshots. Do not merge another owner's unfinished PR.
 
-## Verified starting point
+### Verified starting point
 
-- SDK8.5.0 is published under `@starlight-intelligence/system` and
-  `@arcanea/starlight-intelligence-system`. Tested tarballs came from SIS main
-  `fe964d5a`; registry bytes and both latest tags were verified. The packages have
-  377 identical non-manifest files. The `ecosystem doctor` metadata check does
-  not establish actual package installation or transitive security.
+- SDK8.5.1 is published under both existing scopes from reviewed main
+  9887aa8fbb4f6df966e8e2aeb8661561e2a730d1. Public version/latest endpoints
+  and tarball bytes match the tested main artifacts. Both packages were
+  independently cold-installed, including compiled Antigravity adapter checks.
+  Their 377 non-manifest files match. Ecosystem doctor checks public metadata,
+  with creator-MCP publication and native/community acceptance still open.
 - SIS PR346 corrects default Antigravity MCP scaffolding: blank entry point gives
   an empty server map; explicit entry point produces one Node server without
   full-scope flags or unsupported capability assertions. Final source reviewed
   at `20eddb989ec6f7b4c6e8343368b1d1efe363aa18`; 35 adapter tests and typecheck
-  pass. This source correction is not in the already published SDK8.5.0.
+  pass. This source correction is now in the verified published SDK8.5.1.
 - AGY was invoked for a real frozen-source review with Gemini3.1 Pro High using
   a private profile. Its CLI reported no MCP servers or imported plugins. The
   stream recorded user input, agent response and finish only. It returned PASS
@@ -50,7 +51,7 @@ Saved heads are evidence snapshots. Do not merge another owner's unfinished PR.
   OpenCode anonymous route returned403; retain its unknown attempt and do not
   silently redispatch it.
 
-## Ownership and admission
+### Ownership and admission
 
 Start in a verified available repo/worktree. Explicitly read root and deeper
 instructions, `WORKFLOW.md`, product outcome and machine policies; hash the
@@ -66,18 +67,16 @@ review profile, weaken permissions, kill another session's processes or remove
 locks by age. Keep credentials in the host. No Higgsfield. The ECC pointer is
 cold; do not install its full profile, observe hook or another orchestrator.
 
-## Implement and verify in this order
+### Implement and verify in this order
 
-1. PR346 merged after required CI at df80631271b6ecdbbd5409eab46af3101bb816e1.
-   Continue draft PR347 at c2fe2fc3a2febae65a4b0f3b1d2611fb3c229920 for SDK8.5.1.
-   PR347 merged to9887aa8f after independent exact-revision PASS and required CI.
-   Main candidate38052541563 passed; both8.5.1 publications accepted by npm.
-   Public availability/hash/latest-tag verification is pending. Earlier RAM HOLD
-   respected and resolved with bounded8674MB/quietCPU70% before final review.
-   For a published fix, use the prepared patch version from tested current main;
-   update source-closure pins with independent review, build both tarballs,
-   cold-install each independently and verify public registry bytes. Do not
-   republish8.5.0 or call source merge a delivered npm update.
+1. Re-query PR346/347 and registry8.5.1 before further release work. Both PRs
+   merged after exact-revision independent review and required CI; main candidate
+   38052541563 cold-installs both scopes with compiled adapter assertions.
+   Public registry bytes and latest tags verified at2026-10-10T12:40:46Z.
+   Reuse the tested published package; do not republish an existing version.
+   Earlier RAM HOLD was honored and resolved with bounded8674MB/quietCPU70%.
+   Obtain fresh admission before any new local worker. A source merge, package
+   installation and actual native creator acceptance remain distinct gates.
 2. Coordinate creator-MCP's owner to eliminate published workspace protocols and
    prove an independent consumer installation of its dependency graph, with
    tenant/auth/provenance boundaries intact. Do not invent credentials, OAuth
