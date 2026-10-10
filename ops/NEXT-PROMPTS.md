@@ -1,36 +1,30 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Arcanea adoption: voice admission and a verified creator journey
+## Estate management: use accepted main and continue source recovery
 
-Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
-Read today's session, merged PR554 and requery heads. Preserved release lane
-`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
-e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
-full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
-reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
-has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
-CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
-selector with duplicate matches. Six bounded cloud-browser production attempts
-passed without reproducing it; keep the failure and unresolved cause visible.
-No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
-findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
+Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
+All eight committed hashes match Antigravity PASS; merged-main verify/validate
+pass. Main requires strict app-bound verify15368, enforced for admins, with no
+force push/deletion. Unrelated documentation215 passed and closed without merge.
+Independent provider review remains a policy gate, not technical enforcement.
+Frank's explicit merge/production instruction supersedes the acceptance blocker.
 
-Create the next owned branch from verified current main; retain the merged source
-branch and foreign lanes. Next repair voice credential admission and privacy,
-preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
-private voice-admission-audit receipt; live keys were not inspected. Repository
-security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
-the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
-Keep managed inference disabled until durable authenticated
-entitlements/reservations exist. Prove actual existing-source generation, reopening,
-editing, interruption recovery and export with user/editorial acceptance; compare
-the same task with the user's current provider editor. Reuse accepted workspace/
-427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
-router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
-branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
-Honor machine admission, secret checks and publication/payment/migration gates.
+Use the accepted72-record Registry and preserve all18 source candidate
+qualifications. Refresh projections at accepted main SHA; unresolved owners
+remain unresolved. Preserve existing product owners and source conflicts.
+Current READY production targets: Arcanea6e774c1, FrankXb7e617b, GenCreator57fcf5b.
+Customer acceptance belongs to their existing product issues.
 
+Eight Git bundles and four dirty snapshots have scoped applied restore proof
+for46 files and332 index objects. Complete checkouts, ignored files, LFS,
+external submodules and offsite recovery remain open. Repair missing source
+guidance and storage capability in admitted lanes. Retain issues29/55. Keep
+private Pro-dependent sources until equivalent protection/integration gates
+pass; no mass transfer or paid-plan change follows from this acceptance.
+
+## Arcanea: reconcile the migration map before any transfers
+
+Read ops/reviews/arcanea-migration-crown-audit-20261010.md and ecosystem issue6. Preserve Gemini's handover/strategy and all unfinished source branches. Reconcile the distinct Arcanea-Labs/Arcanea and frankxai/arcanea histories and the existing Arcanea-Labs/Starlight-Intelligence-System repository. Verify every named source/destination ID, visibility, archive state, private protections, Actions secrets, deployment app access, OIDC trust, Packages and Pages dependency. Correct the gh repo rename transfer instructions in the owner's lane. Use selective public migration; retain private Pro-dependent repositories until the feature/cost decision is accepted. Reuse the existing creator/billing recovery work; compare one actual consented task through the accepted inference path and Worker before adding a gateway. Obtain exact-revision release review and live recovery/latency evidence. No transfer, archival, visibility or paid-plan change is authorized by the old embedded commands. Save both the hub and existing product issue; keep unresolved work open.
 
 ## GenCreator: activate reviewed account linking and prove the creator journey
 
@@ -73,6 +67,88 @@ customer/editorial acceptance. Keep publication/checkout closed until accepted
 gates pass. Save issue5 and the hub, preserve every other goal/hand over and keep
 the original native goal active. One admitted lead; no local heavy work while PP
 HOLD. Stop owned workers and temporary preview access at handoff.
+
+## Arcanea adoption: voice admission and a verified creator journey
+
+Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
+Read today's session, merged PR554 and requery heads. Preserved release lane
+`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
+branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
+e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
+full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
+reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
+has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
+CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
+selector with duplicate matches. Six bounded cloud-browser production attempts
+passed without reproducing it; keep the failure and unresolved cause visible.
+No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
+findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
+
+Create the next owned branch from verified current main; retain the merged source
+branch and foreign lanes. Next repair voice credential admission and privacy,
+preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
+private voice-admission-audit receipt; live keys were not inspected. Repository
+security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
+the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
+Keep managed inference disabled until durable authenticated
+entitlements/reservations exist. Prove actual existing-source generation, reopening,
+editing, interruption recovery and export with user/editorial acceptance; compare
+the same task with the user's current provider editor. Reuse accepted workspace/
+427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
+router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
+branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
+Honor machine admission, secret checks and publication/payment/migration gates.
+
+
+## GenCreator: managed identity and an accepted creator journey
+
+PR 194 is complete: merged/live 802e9aa, full CI and 22 stable checks pass.
+PR 195 reviewed candidate 82ef94c merged normally to 57fcf5b; all fourteen files
+match main. Native SQL 2/2, actual-store recovery, all 948 unit cases, 244 browser
+cases (two existing opt-in visual skips), final static review and 22 final-preview
+checks pass. Stable production READY dpl_6QAkAA1iVoon6dtahYTGWuKXjoNQ at 57fcf5b
+passes 22 site/MCP checks. Receiving-main full CI 38042747768 passes all required jobs, including native
+SQL 2/2, 948 unit cases and 244 browser cases with the same two visual skips.
+Pursue authoritative identity mapping, approved provision/
+API exposure and real authenticated source-to-reviewed-export recovery. Current
+Starlight main verifies Clerk with a fixed Starlight origin; it does not establish
+GenCreator's identity decision. No live database or credential writes occurred;
+managed 503 remains honest. Read today's session and preserve reviewed source,
+all three review fixes, failed attempts and the full product programme below.
+
+Continue active goal `01a123db-5493-7220-8d0d-f80760cad443` and issue 5; retain the
+CLI/SDK/ADK/Desktop/Mobile, memory/router/cloud, subscription/GTM and creator/
+developer-adoption scope. Read today's release record and re-query actual heads.
+193 reviewed 6ce8692 merged 373d411; candidate/main full CI 38034399944/38034975870 and
+117 stable-production browser,22 site/MCP and 13 editable-delivery cases passed.
+READY production dpl_FYduZEAp1GZE3hLe7NqX3qDmuaEu has gencreator.ai/www aliases.
+191/192 remain integrated; 135 closes with its branch retained, while 141 retains
+unique Honor-edition rehearsal and owner-review-pending writing. Preserve source
+branches, historical failures, the primary programme checkout and other owners.
+
+Use the live preserving migration, explicit saves, selected host revisions,
+opted-in recovery and editable PPTX. Recovered permissions/approval remain fresh
+human decisions. Global legacy chrome, mobile density/physical-device proof and
+native portable-font differences remain deferred; field metrics and founder/
+customer acceptance are open. Do not recast a deterministic local preview as a
+configured drafting service or a completed commercial product.
+
+Managed readiness is 503. Re-query managed preflight, retrieve the referenced shared
+identity ADR, and reconcile sharedClerk/principal authority with GenCreator
+Supabase/member identity before managed writes. Earlier preflight had no GenCreator
+envs/tables and an absent CreatorPack migration base. Prepare a reviewed isolated
+fresh-provision path, preserve existing tenants, prove authenticated browser/service
+and cross-workspace denial plus durable receipt/retry/recovery, then connect the
+accepted creator loop. No monolithic-schema replay or assumed OAuth issuer.
+Keep publication/checkout closed until their accepted gates pass.
+
+Re-query actual installed and published SDK 8.5 and creator-MCP issue 4; older packaging
+observations need fresh verification. Connect existing clients and memory to one
+source-backed authored-edit/recovery/export journey. Compare usable output, repairs,
+time/cost and repeat use with a capable assistant plus the creator's editor before
+subscription/GTM claims. Keep one admitted workload, secret checks, an owned lane,
+exact-revision review and production proof. Save issue 5 and the hub; preserve all
+other objectives and handovers, and keep the original full goal active.
 
 ## Creator MCP: repair publication, then prove connected creator acceptance
 
@@ -886,3 +962,7 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 - **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
 - **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
 - **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+
+## Arcanea foundation: prove one recoverable creator journey
+
+Read the latest product instructions, planning files, issues531/532/533 and529/511. Refresh reviewed Registry and reconcile the older R2 proposal before choosing storage. Requery current main and active owners. Obtain a separate admitted product write lane; this handover grants none. First verify platform-funded agent/generation admission with mocked outbound calls, then complete one owner-scoped browser/MCP world round trip: import, source-cited context, editable scene and visual, approval, durable save, reopen and export. Reuse current projects, media and billing boundaries. Require failure/tenant/cost evidence and exact-revision independent review before promotion. Preserve all other fronts; no new service, paid activation or larger agent roster follows from this prompt.
