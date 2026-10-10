@@ -2,11 +2,11 @@
 
 ## Estate management: review the source map, then repair in owned lanes
 
-Read private canonical ops PR213 at 46e32b8e6203cb21766fce7836139ad69b034c74,
+Read private canonical ops PR213 at 2944009f23312062440dedbc9cb1b5dfacd5dea5,
 issues29/55 and the reviewed Registry. The hosted Claude review failed incomplete
 and the security-review connector reported a usage limit. Recover independent
-review for this exact head; no failed run counts as a verdict. Six earlier
-cloud code-review findings were fixed and all 85 tests pass. Compare one company namespace with the
+review for this exact head; no failed run counts as a verdict. Twelve earlier
+cloud code-review findings across three rounds were fixed and all 91 tests pass. Compare one company namespace with the
 two-boundary proposal; preserve independently governed communities and private
 personal sources. Inspect the private captured reconciliation, classify missing
 admissions and resolve separate local histories with their owners before any

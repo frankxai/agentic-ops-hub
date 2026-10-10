@@ -3,12 +3,12 @@
 ## 2026-10-10: Estate ownership proposal and reconciliation ready for review (Codex)
 
 Private canonical [ops PR213](https://github.com/frankxai/agentic-ops/pull/213)
-at `46e32b8e6203cb21766fce7836139ad69b034c74` proposes two active company
+at `2944009f23312062440dedbc9cb1b5dfacd5dea5` proposes two active company
 namespaces, preserves personal/community boundaries and adds a read-only
-source reconciler. All 85 script tests and final-head verify CI passed. Six
-cloud code-review findings across two rounds were fixed with regressions. The hosted Claude
+source reconciler. All 91 script tests and final-head verify CI passed. Twelve
+cloud code-review findings across three rounds were fixed with regressions. The hosted Claude
 review failed incomplete before a verdict; the security-review connector reported
-a usage limit. A fresh ordinary cloud review of the final head was requested.
+a usage limit. Final-head independent approval remains open.
 Detailed deployment,
 local-path and provider observations stay
 private. [Issue29](https://github.com/frankxai/agentic-ops/issues/29) records
