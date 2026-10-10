@@ -1,30 +1,29 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Estate management: complete review, admission and source-specific recovery
+## Estate management: accept reviewed implementation and continue recovery
 
 Continue the active end-to-end goal from private Ops213 at
-e62dea4f2b75e2e13f938aadbcd9c8bd249397f7, issues29/55 and today's latest
-session. Twenty-six cloud findings across six rounds are repaired; 117 local tests
-and exact-head hosted verify/validate pass. Final independent approval is open:
-cloud quota exhausted and scoped second-provider review timed out at450s.
-Use an admitted independent provider with complete exact-revision coverage;
-Antigravity CLI is installed but its global memory write-profile/v0 MCPs require
-verified tool isolation before launching a review. Do not change global config;
-partial output and green CI do not count as approval. Preserve global credentials,
-security hooks and other sessions' processes. Owned review workers are stopped.
+589e0d4a6f1b0b6b8111f71de7b0c25791d71aac, issues29/55 and today's latest
+session. Actual Antigravity static PASS covers the complete8-file/13-part source
+at e62dea4 plus the complete2-file delta to current head. All current source hashes
+match; all117 tests and hosted verify/validate pass. Native reviewer is stopped.
+No self approval, GitHub approving review, legal evidence or live release is inferred.
 
-Three production bindings and visibility evidence remain proposals until reviewed
-main accepts them. All18 deployment sources now have proposed Registry candidate records with exact
-provider identities and unresolved owner/product/source/release authority. Reviewed
-main still has54 records; proposed branch has72. Candidate reconciliation retains
-owner-review-required state and no mutation authority. Source ownership and customer
-flows remain unverified. Review archived sources, agent-branch production and missing Git
-provenance separately. Public family code and private-instance data need separate
-boundaries. Fresh duplicate-source histories and missing/placeholder instructions
-require owner-led recovery; do not delete or reset clones. The prepared Ops
-protection payload is unapplied; one required approval needs a second eligible
-reviewer, while zero approvals leave provider review as policy only. Resolve the
-pending one-versus-two company organization choice before staged transfers.
+Concrete management-merge/protection acceptance and one-versus-two company org
+choice were requested and remain pending; silence is not approval. Governance verify
+runs every PR and push only on main, with Registry validation included. Proposed
+app-bound verify protection is unapplied: after authorized merge, prove unrelated-PR
+check presence before activation and preserve current provider configuration.
+Zero native reviewer count leaves independent provider review as a policy gate.
+
+The18 proposed source candidates retain unresolved owner/product/source/release
+and publication/data authority; proposed records72, reviewed main54. Ratification
+and downstream refresh require accepted main SHA. Preserve archived sources,
+agent-branch production, missing Git provenance, public-code/private-instance
+boundaries and all existing owners. Duplicate-source recovery must preserve
+commits and dirty work; missing/placeholder guidance requires owner repair.
+Continue available safe independent work while awaiting decisions. No transfer,
+privacy/spend change, cleanup or production promotion is authorized by test results.
 
 ## Arcanea: reconcile the migration map before any transfers
 
