@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Preserve source intent and reconcile current work (Codex)
+
+[Plan](plans/intent-pr-goal-reconciliation-2026-10-10.md) and [session](sessions/2026-10-10.md) preserve exact-source recovery privately and sanitized continuation publicly:46 recent notes,39 older candidates,21 linked local sessions,622 open PRs,24 saved objectives. Candidate routing requires live owner verification; this creates no replacement queue or scheduler. First outcome is real capture-to-owner-safe-resume-to-useful-artifact recovery, followed by existing product repairs and creation. No product execution or release acceptance is claimed. Existing Ops211/hub159 receive the receipt; previous goals and prompts remain intact.
+
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
 [Hub205](https://github.com/frankxai/agentic-ops-hub/pull/205) is merged into main c2446950, verified by the receiving session blob. Private planning42/public4 remain draft: checks reviewed, but their explicit docs/AGENTS.md different-provider review is missing; they target unmerged evidence-foundations branches. Implementation2/41 remain open. Ten exporter tests rerun pass; current free RAM1583MB blocks another reviewer runtime. Review packet and updated OpenBB V5 migration constraints saved on [product28](https://github.com/frankxai/starlight-investor-portal/issues/28#issuecomment-6077597207)/30. Next is independent exact-head review, then real source/OpenBB benchmark; no upstream tech has been integrated. See [today's session](sessions/2026-10-09.md). Preserve all existing goals and branches.
@@ -857,3 +861,53 @@ CI37565170026 passed the browser installation and retained four actual desktop P
 Every baseline PNG's SHA256 and VIS sidecar schema passed. Capture ledgers were appended to the existing estate logs without duplicate lines; memory-vault synchronization remains pending. Figma native upload succeeded200 and placed desktop-first-chapter.png on node11:110 in the existing board. The subsequent use_figma annotation/layout operation returned the Starter quota limit. Image import therefore works; editing/layout and read tools remain blocked. The upload is an unannotated historical failure image, not an accepted design or current screenshot. Saved metadata identifies the node and source; no upgrade or quota evasion was attempted. The actual AI review P1 browser-installer finding was explicitly answered with later fix5d2fa75; required Review Gate is now passing. The current local browser admission held at6346MB free versus8192 required; no new local browser/build or agent started.
 
 Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged application inputs from10b9fc7. CI37565957085 passed the repaired reading round trip and saved five desktop screens, then correctly retained a failed304-versus200 test assertion on cached reload. QA now records legitimate200/304 document responses while retaining real DOM/heading/link assertions; API statuses stay exact. Visual inspection also showed the focus PNG captured the hero while the target was offscreen. The runner now instantly centers the already Tab-focused link, requires full viewport visibility below global navigation and checks its hit target before screenshotting. No programmatic focus shortcut was added. CI37566659772 verifies these corrections; superseded21cb3163 CI was canceled by existing concurrency policy. Production promotion and current-head provider/visual review remain pending. Preserved failed-run images establish only their observed states.
+
+
+## 2026-10-10: Full vision goals and real source recovery (Codex)
+
+[Expanded reconciliation](plans/intent-pr-goal-reconciliation-2026-10-10.md):88 notes reviewed,36 nested measurable goals,748 overlapping demand records,25 objectives preserved. SBO1867de5 provides tested native Codex intake;ten real work sessions/950 retained messages verified. FrankX2a5ddf713 is a local failed-capture retry repair withfive regression passes. Both preserve their existing receiving issues/owners. Full continuity roundtrip, release/buyer evidence and different-provider review remain open; actual revenue unmeasured.
+
+One cited triage note completed through9 acknowledged source packets and read back;9 selected summaries pending. Operator pilot prepared privately.137 scoped proposals remain candidates, not approved products. Founder/provider acceptance and intentional owner resume remain open; no broader completion inferred.
+
+
+## 2026-10-10: Complete active-note text coverage (Codex)
+
+All 529 active saved note texts now semantically reviewed; 529 current hashes match. Six cached images inspected/four missing. All 748 earlier demand projections preserved; 1587 overlapping projections and 65 nested goal areas now linked under the existing recovery programme; 25 objectives preserved. New invention areas remain proposed; owner/task integration and useful acceptance remain open. Raw/personal/possible credential material stays private. See the expanded reconciliation plan.
+
+Four saved text meanings remain unresolved; 208 original numbered saved items/lines are retained with source context.
+
+
+### Cited recovery update, 10 October 2026
+
+Selected native batch: two complete cited triage notes, eight pending summaries, ten preserved source sessions/950 retained messages; zero deliberate receiving-owner resumes. Latest recovered Arcanea conversation is reconciled to merged PR147 and open issue146. Existing README work must be preserved; original media, topics, licensing wording and theme/mobile review remain open. Source reading, unchanged hashes and safe completion/retry verified by the lead; provider/creator acceptance remains pending. This updates recovery progress, not the dated 622-open-PR inventory or product completion counts.
+
+
+### FrankX932 reproduced recovery gaps, 10 October 2026
+
+Demand feedback/loading regressions: one pass/five expected failures in a component-function fixture; red patch preserved locally and tests remain WIP. Existing failed-capture repair remains unchanged. UI implementation awaits an allowed baseline under the installed release skill; no rendered acceptance, owner integration or release claimed.
+
+
+### Source-bound PR checkpoint refresh, 10 October 2026
+
+Scoped39PR/oneissue refresh:32 open/seven merged; nine saved clauses bound, eight matching heads/one stale Hub175 head; nine shared-path pairs flagged. Ops178 exact-function fault probe: two pass/four fail; unintegrated narrow candidate six pass. Current-owner integration, full-module/provider review and useful acceptance remain open. Canvas34 conflict and Config102 review gate retained; no automatic merges or source erasure.
+
+
+### Workspace verification fix implemented locally, 10 October 2026
+
+Ops178's complete continuity module reproduced four abnormal Git-failure cases that were accepted as verified workspaces. Local commit `5c21167b570872a738c7a4a9745aa9bc4a782b59` on `agent/codex/workspace-git-failure-20261010` now requires the normal Git not-a-repository exit, without a process signal or execution error. All31 selected continuity/native-goal tests pass, including five refusal cases with no exported intent or observation, actual Git verification, private text redaction and dirty-index preservation. The staged secret hook passes.
+
+The clean existing Codex worktree was reused; its earlier continuity-save branch remains preserved. The locked Claude PR178 checkout was untouched. This commit is local and unpushed. Independent provider review, receiving-owner integration and adding the new regression file to the existing explicit CI command remain open. No production, automatic resume or useful creator-artifact acceptance is claimed. Private source hashes and the exact command are retained in `ops178-full-module-fix-receipt-20261010.json`; private implementation source remains outside this public hub. Existing product issue: frankxai/agentic-ops#211.
+
+
+Workspace fix follow-through: local Ops head `7e2334852daa2444584529b8cad9b558647fe9be` now also registers the new failure regression suite in the existing ASPH CI command. This closes the preceding CI-registration gap; hosted execution, independent-provider review and receiving-owner integration remain pending. The31 full-module tests bind the unchanged implementation files; both local commits passed the secret hook. The latest hub handover before this addition was cf428fdf1be77a817ab9da3b63683b6c0f714593 with verify/scan SUCCESS.
+
+
+### Third cited recovery: compute-guide design work already exists, 10 October 2026
+
+Recovered the complete11-message delegated Codex task01a10e69-f4ce-7782-87be-dba762ef26c7 from77,718 private source bytes, read and acknowledged in three packets. Native metadata records originator Claude Code; preserve the eight deliverable groups as a delegated task brief rather than claiming founder authorship from a role label. The audited summary is triage; original imported/native hashes remain unchanged and an already-complete retry refused without mutation.
+
+Current receiving task is frankxai/frankx.ai-vercel-website#903. Its clean local/remote branch head6e30d062171f24ff22ab6e9a92eab2bd76ca0c46 already contains16 raster assets,16 sidecars, social copy, a Python builder and the article's hero/four graphic placements. All media meet the byte limits. Preserve this later work rather than rebuilding from the older blocked session. Five existing images were visually inspected against the full current article; all16 hashes/dimensions and source metadata are retained privately.
+
+Remaining gaps: actual mobile/thumbnail review; Python/Pillow source versus the requested SVG/HTML sources; font suitability; the opening's unqualified128GB claim; full atlas claims audit; repository and independent review gates. Atlas PRs25/35 remain OPEN. The current website has31 open PRs, above issue903's10-PR threshold; no new PR or publication. No foreign checkout edits, generation, receiving-owner resume or creator acceptance is claimed.
+
+Selected native recovery progress is now three audited cited notes/seven pending. Preserve all529 active note texts,1587 overlapping demands,65 goal areas and25 existing objectives. This recovery preserved all24 other objective records exactly. Continue the first deliberate recovery-to-owner-to-useful-artifact journey and the existing continuity/demand repairs. Full customer acceptance and revenue remain open.
