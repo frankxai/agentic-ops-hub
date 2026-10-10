@@ -1,5 +1,12 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: GenCreator portable release and CI cost controls verified
+
+[PR201](https://github.com/frankxai/gencreator.ai/pull/201) and [PR202](https://github.com/frankxai/gencreator.ai/pull/202) merged normally. Accepted mainf12797b passes all five CI jobs; Vercel production and both domains bind to it. Published0.5.3 matches17 files/41460bytes, actual downloaded Windows execution passes13 steps/3 live calls, and22 public smokes pass. Draft four-job deferral and real slim execution/rejection proved; ready/main full gates stay intact.34 local cases, exact Poolside source review and native code/security reviews passed for cost head3078739. PR201's earlier native quota substitute retained every finding and actual gate. No measured overall savings/customer adoption or managed activation is claimed.
+
+[Current capabilities](plans/gencreator-capabilities-2026-10-11.md), [execution prompt](plans/gencreator-starlight-execution-prompt-2026-10-11.md) and historical-plan update passed independent NVIDIA source review, reported cost0. G2-G6, server/OAuth setup, backup/retention, actual two-account creator proof and existing foreign owners remain open. No local fanout was admitted; no billing/SQL/credential/publication mutation occurred. Save this hub slice and [existing product issue5](https://github.com/frankxai/gencreator.ai/issues/5); next is the scoped managed creator journey, not another scaffold.
+
+
 ## 2026-10-11: GenCreator execution resumed; current CLI proof and CI cost branch
 
 Frank authorized production implementation and bounded Actions headroom; the cap-setting action is pending because no personal-budget writer/browser is available. PR201 a7cc25f now has13-step/3-live-call CURRENT extracted-client proof,116 local tests and exact independent general/security reviews. Native review credits are separately exhausted; documented independent source review substitutes only that provider completion, retaining all findings and actual CI/review/security/design/editorial gates. Full CI and receiving-main/production0.5.3 remain blocked, with no override or synthetic pass.

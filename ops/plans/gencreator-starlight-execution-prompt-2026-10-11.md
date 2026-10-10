@@ -1,21 +1,72 @@
-Frank explicitly resumed the existing GenCreator/Starlight implementation programme `01a123db-5493-7220-8d0d-f80760cad443` and authorized production execution on11 October2026. Continue that authorized work without asking for another resume. The native goal tracker still stores paused status because its available tools cannot resume it; do not claim otherwise. Use `ops/plans/gencreator-starlight-production-2026-10-11.md` for dependencies and acceptance, and `ops/plans/gencreator-capabilities-2026-10-11.md` plus the current NEXT-PROMPTS section for the later execution evidence. Re-query all recorded heads and constraints.
+# GenCreator and Starlight: current execution prompt
 
-Act as one Codex coordinator. Preserve the full CLI/SDK/ADK/desktop/mobile/platform/API/router/memory/cloud/user/adoption/GTM/subscription programme. The first customer milestone is an expert's own source becoming useful source-linked work they can edit, approve by exact revision, export and recover. Keep accepted ADR-007/010 and PR196/197/199/200 behavior. GenCreator keeps Supabase sessions and explicitly proves Starlight account links; that decision is settled. Email equality grants no identity link, membership, entitlement or source rights.
+Continue Frank's authorized end-to-end production programme. He explicitly
+resumed execution; the native goal tracker still stores paused and exposes no
+resume tool. That stale tracker field does not revoke his current instruction.
+Keep G2-G6 open until their actual outcomes are proved.
 
-Start with G0/G1: refresh product PR201, hub PR245, Starlight PR110, SIS SDK8.5.1 and creator-MCP PR6 through their actual owners. Read the destination repository's root and deeper instructions, the bootstrap workflow, product outcome and machine policies. Record instruction hashes, exact origin/root/base/head/branch, owner and writable files. Run routing guard then explicit-file check; verify ownership separately. Preserve all foreign dirty/untracked work and unfinished branches. Use `codex --cd` for new sessions; explicit reads are the handoff for an existing session.
+Read the destination root/deeper guides, workspace bootstrap, product-quality
+and machine policies. Verify origin/branch/head, named ownership and exact paths;
+run routing guard then check before writes/staging. Keep one writer per index.
+Preserve foreign work and donor provenance. Fresh storage and workload admission
+precede growing/heavy work; new fanout needs actual admission.
 
-Current owned checkouts are `C:/Users/frank/starlight/worktrees/gencreator-agent-release-20261010` and `C:/Users/frank/starlight/worktrees/hub-gencreator-agent-release-20261010`, both on `agent/codex/revision-cli-20261010` in separate repos. Product PR201 remains `a7cc25f` against main `e540062`. CURRENT extracted-client proof passes13 native steps/3 live stateless calls; local116 focused tests and independent19-file general/10-file security source reviews pass. Earlier79966f9 evidence remains historical. A separate cost-control checkout `C:/Users/frank/starlight/worktrees/gencreator-ci-efficiency-20261011` owns draft PR202, `17ea4b3`, branch `agent/codex/ci-efficiency-20261011`;34 local aggregate tests and five-file exact-source review pass, while hosted runner execution remains budget blocked. Release201 first, then refresh202 against receiving main before integration.
+Current accepted GenCreator main: `f12797bc94145bc9eab5ef591e6f7ff684dcb92c`.
+PR201 is merged as `47a798a`: candidate and receiving-main full CI passed;
+source-bound production and both domains were verified; published 0.5.3 matches
+all 17 files/41,460 bytes and its downloaded Windows consumer passes 13 steps/
+three live calls. Twenty-two public production smoke checks pass. Keep the
+earlier RAM holds and successful recovery receipts. This proves the portable
+workflow, not customer acceptance or a managed workspace.
 
-Before heavy work run fresh `pp preflight --workload <type>`; before new checkouts/installations obtain storage admission. Current posture permits one bounded interactive workload and holds new local swarms. Cloud workers need verified quota/privacy/cost admission and isolated ownership. Do not kill other owners, remove locks by age or archive unfinished tasks. Frank's bounded Actions increase is already authorized with the hard stop retained and Copilot unchanged; the private release receipt holds the exact amount. No connected browser or personal budget-write API is available. Await the owner cap-setting action, then verify usage/head/base and retry current CI once. If startup still fails, stop retries and resolve the reported cap. Do not request spending approval again, increase beyond its bound, buy native review credits, weaken required checks or post successful statuses manually. Continue independent reversible work while blocked.
+CI cost PR202 is merged as `f12797b`, after refresh against `47a798a`. Its full
+ready candidate passed all five jobs; the prior receiving-main CI also passed.
+Draft execution proved four skipped jobs and an actually running slim aggregate
+that rejects incomplete checks. All 34 local cases, exact five-file Poolside
+review and automatic native code/security reviews at `3078739` passed. Verify
+the latest receiving-main run38095053367 and production source/domains/artifact
+before closing that cost slice. Keep current-session final gate receipts.
 
-When resources permit, admit at most four active slots: coordinator, two writers and a read-only independent reviewer. Writer A owns admitted identity/data/API/SQL paths; writer B owns admitted Studio experience/UI-test paths. Freeze their smallest existing shared API/artifact/error/recovery contract before parallel edits, and name the sole owner of shared schemas, lockfiles, generated files and migrations. Later, client/router/memory writer C replaces a finished writer and coordinates with SIS/creator-MCP/memory owners. Do not launch every executive or specialist at once. Use existing repository agent briefs and admitted harnesses; verify capability and cost rather than inventing model superiority.
+Actions allowance is already authorized and the owner reported the cap saved;
+real runner admission succeeded. Keep Stop usage enabled and Copilot unchanged.
+Personal cap settings were not API-inspected. Do not repeatedly retry denied
+jobs or buy native review credits. PR201's manual native-review quota failure
+used a validated independent source substitute; all earlier findings and every
+real CI/review/security/design/editorial gate remained intact. PR202's later
+automatic native reviews completed. Never fabricate a status or use admin merge.
 
-Each worker must receive its intended user outcome, immutable input/base, exact origin/checkout/branch, owner, explicit writable files, artifact, privacy/authority/budget, acceptance tests, stop condition and report format. Tell writers they are not alone and must preserve others' edits. Reviewers stay read-only and inspect exact revisions with concrete counterexamples and limits. Require independent provider review for consequential changes, with the actual data/cost contract observed.
+Next consequential work is the managed creator journey, reusing ADR007/010/013,
+accepted Studio/director recovery and the host-revision engine. GenCreator keeps
+verified Supabase sessions and explicitly proves Starlight links. Resolve the
+secure server credential/OAuth configuration location; production env metadata,
+local env-name checks and the canonical GenCreator checkout have no configured
+credentials. The backend namespace is absent. A rendered14-table SQL packet at
+accepted source exists, but live migration/configuration requires the concrete
+target, backup/restore, retention/delete review and recorded authority. Never
+infer identity, membership, entitlement or source rights from matching email.
+Prove two actual accounts: login, link/cancel/retry/revoke, cross-tenant denial,
+idempotent readback, interruption recovery, review/approval of exact revisions
+and export. Keep managed routes unavailable until configured.
 
-Finish PR201 through full CURRENT candidate CI and actual configured review/security/editorial/design status gates. Native Codex review credits are exhausted. The repository contract permits the current independent exact-source general and security reviews as the documented alternative to native provider completion; the private gated merge helper revalidates their source hashes and quota evidence, retaining all21 previous answered native findings and every real status gate. No hosted-runtime or creator acceptance follows from static review. After ordinary protected merge verify receiving-main CI, production source/READY/domains, live0.5.3 bytes and published consumer behavior. Integrate one PR at a time, then refresh and normally validate/merge202. Stop subsequent integration on receiving-main or production failure and prepare reviewed repair/revert with a database-compatible known-good deployment.
+G3 requires real source-derived writing, editing and creator judgment; compare
+manual assistant/file work on time, cost, repair effort and retained voice.
+Reuse published SDK8.5.1 and existing owner contracts for G4/G5 clients, ADK,
+router, memory, cloud and actual desktop/mobile adoption. A published package
+does not prove a connected journey. Coordinate SIS, Creator-MCP and Starlight
+owners rather than taking their dirty checkouts or mass-merging donor branches.
 
-Next prepare the G2 migration/configuration packet and G3 authenticated creator journey. Production SQL/schema exposure/managed activation require the recorded concrete approval, after SQL hash, target, preserved data/grants, backup/recovery and rollback limits are reviewable. Identity approval alone does not authorize them. Prove two actual accounts through login/link/cancel/retry/revoke, tenant denial, durable idempotent save/readback, export, retention/delete and interruption recovery. Have a consented creator judge the resulting work and compare the same brief against their native assistant plus Markdown/manual workflow. Measure actual time, repair effort and provider-reported usage.
+G6 requires a deliverable offer, cancellation/export/disconnect/recovery and
+measured economics/adoption before enabling checkout. Personal subscriptions
+do not establish managed API/resale rights. Keep live publication human-gated.
 
-Advance G4 clients, G5 desktop/mobile/native apps and G6 adoption/entitlements/paid offer using that accepted contract. Keep native-app delivery distinct from responsive-web evidence. Respect separate npm/OIDC, provider billing, publishing, checkout and commercial approval boundaries. Preserve public stateless MCP's unreviewed outputs and authenticated human approval semantics. Personal model subscriptions do not establish managed API/resale rights. Keep price/margin/uptake targets labelled until measured.
+The current machine allows one bounded workload with no new parallel agents;
+when admitted, use lead + up to two distinct writers + one review slot. Give
+each writer exact paths, immutable base, outcome, budget and stop condition.
+Integrate through normal PRs into each repo's actual main one at a time. Bind
+reviews, runtime checks and production domains to exact sources; preserve useful
+state and recovery evidence after failure. Apply ordinary small local checks
+without Actions when appropriate, with hosted release validation as required.
 
-At every finished or genuinely blocked slice, save one concise handover in `agentic-ops-hub` and update the existing owning product issue. Report exact source/artifact, highest tested environment, real acceptance, review limits, failures/recovery, remaining gates and one next action. Stop session-owned workers/watchers. Do not repeat bookkeeping or review requests while the blocking state is unchanged. Mark the overall goal complete only when its full accepted scope is evidenced, or Frank explicitly reduces it.
+Save one current handover in agentic-ops-hub and update existing product issue5
+per finished or genuinely blocked slice. Preserve all foreign ledger sections.
+Do not substitute another plan, template or checklist for creator usefulness.

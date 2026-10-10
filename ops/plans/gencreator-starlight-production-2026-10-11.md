@@ -1,3 +1,39 @@
+TL;DR: The portable CLI is verified in production and the draft-CI cost fix is merged; the next product gate is a real authenticated creator journey, with G2-G6 still open.
+
+## Current execution update, 11 October 2026
+
+Frank resumed implementation after the historical planning snapshot below.
+The [current execution prompt](gencreator-starlight-execution-prompt-2026-10-11.md)
+and [capabilities record](gencreator-capabilities-2026-10-11.md) govern the next
+step. Earlier pause, budget-block and unexecuted-client statements below describe
+the planning snapshot; they do not pause his resumed instruction.
+
+G1's CLI release PR201 merged as `47a798a`; candidate and receiving-main full CI,
+source-bound production/domain checks, exact published0.5.3 archive and the
+downloaded Windows13-step/three-live-call consumer proof all pass. Public smoke
+passes22 checks. PR201 used a validated independent exact-source substitute
+after manual native requests hit a quota limit, preserving all21 earlier
+findings and every actual configured gate. The historical requirement for that
+specific native service is superseded by the current repository review contract
+and documented execution evidence; it was not a branch-protection requirement.
+
+CI cost PR202 merged as `f12797b` after refresh/source review against `47a798a`.
+Its draft ran only the slim aggregate and rejected the four skipped dependencies;
+marking ready ran all five successful jobs.34 local cases, exact independent
+source review and automatic native code/security reviews passed at `3078739`.
+The receiving-main run is [38095053367](https://github.com/frankxai/gencreator.ai/actions/runs/38095053367);
+its successful result remains a release requirement and the final observation
+belongs in the current session handover. No measured overall savings are claimed.
+
+Supabase sessions plus explicit Starlight linking is settled. Managed namespace,
+server/OAuth credentials, backup/recovery, retention/delete, real two-account
+acceptance and creator judgment remain unfinished. Fresh swarm admission still
+prohibits new parallel agents despite recovered RAM; use the one local lead and
+existing remote review/check services. Keep the phased writers, client adoption
+and commercial goals below, with existing owners and clean sequential merges.
+
+## Historical planning snapshot
+
 TL;DR: Use one Codex coordinator, two implementation lanes at a time and an independent reviewer; finish the pending release, prove one authenticated creator journey, then extend its tested contracts into clients, apps and the commercial offer.
 
 Frank requested this planning package on 11 October 2026. Native goal `01a123db-5493-7220-8d0d-f80760cad443` remains paused. This document defines proposed execution; it starts no workers and authorizes no billing, migration, merge or deployment. The full CLI, SDK, ADK, desktop, mobile, platform, API, router, memory, cloud, adoption and subscription programme remains open.
