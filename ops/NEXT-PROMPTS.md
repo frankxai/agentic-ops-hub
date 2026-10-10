@@ -2,9 +2,9 @@
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
 
-With the Universal Knowledge Tree (`src/knowledge/`) and Starlight Queen Meta-Orchestrator (`src/queen/`) fully wired into `@starlight-intelligence/system` core exports, CLI commands (`starlight knowledge`, `starlight queen`), and 6 Stdio MCP tools (`sis_knowledge_query`, `sis_queen_telemetry`, etc.) at commit `dbd3856f`:
+With the Universal Knowledge Tree (`src/knowledge/`), Starlight Queen Meta-Orchestrator (`src/queen/`), and `starlight-agent-canvas` 2D visual DAG MCP connector fully wired into `@starlight-intelligence/system` core exports, CLI commands (`starlight knowledge`, `starlight queen`), and 6 Stdio MCP tools (`sis_knowledge_query`, `sis_queen_telemetry`, etc.) at commit `a2f660a9`:
 - Mount the Starlight Queen Meta-Orchestrator into the central Starlight daemon and cockpit (`agy-tools.ps1`, `scripts/starlight-dashboard`).
-- Connect the Universal Knowledge Graph to local memory vaults (`local_core`), Mem0 remote provider synchronization, and the infinite canvas (`starlight-agent-canvas`).
+- Leverage the bound `starlight_agent_canvas` MCP connector to spatially organize research papers, image generation iterations, video cuts, and revenue redirects on an infinite 2D canvas.
 - Drive live production workloads through the 4 synthesized swarms (`phd_research_deep`, `staff_eng_hyper`, `luxury_creative_cinema`, `autonomous_revenue_ops`) with Santa adversarial consensus verification.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
