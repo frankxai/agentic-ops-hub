@@ -1,6 +1,6 @@
-## Context continuity: review the exact revision and bind the existing host
+## Context continuity: independently review 000e2637 and prove a live continuation
 
-Read SIS draft PR330 at afeb450d and docs/architecture/context-continuity.md. Start in the owned sis-context-continuity-20261010 worktree, verify origin/branch/instructions and lane ownership, and obtain an independent provider review when admitted. Keep PR330 based on codex/consolidate; do not merge unrelated base changes into main. Prove one exact-revision host-bound review, command evidence, and interrupted-run reconciliation through the existing RuntimeBridge. Preserve source taint and private/public scope; implement the remaining lifecycle under SIS issue49. Integrate the tested local routing repair into its config owner under issue46. Repair estate lane age-based lock deletion and inherited harness identity under starlight-command issue4 through the permitted source lane. Shared memory is still lexical-only; do not claim vectors, signing, sandbox enforcement, recurring automation, or completed rollout without fresh evidence. Preserve every other prompt and unfinished task below.
+Read SIS draft PR330 at 000e263791b16a74be880897dc7a12c4bae0785c and docs/architecture/context-continuity.md. Verify the existing owned worktree, instructions, machine admission and lane. Scoped handoff and host checker binding are implemented; 96 targeted tests, strict scoped TypeScript and 135 pre-commit checks pass locally. Observe Linux/Windows CI independently. Obtain an exact-head independent provider review and prove one live second-provider continuation with exact Git scope, actual command evidence and interrupted execution reconciliation. Keep the codex/consolidate base dependency explicit. Continue memory lifecycle under SIS49, portable routing under config46, and estate lock/harness-identity repair under command4 through their owning lanes. Do not claim vectors, sandbox execution, signing or recurring automation without live evidence. Preserve every prompt and unfinished task below.
 # ⏭️ Next Prompts — per active front / terminal
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
@@ -737,3 +737,4 @@ We are on the integrate/agent-native-main-2026-06-12 branch. The 13 JPG session 
 - **ARC-105** (overdue): request IONOS auth codes for arcanea.ai + realitydiffusion.ai, initiate Vercel transfer.
 - **ARC-205**: draft the Founding-50 DM template, pull top-200 engaged FrankX subscribers.
 - **ARC-108**: stand up Proton Mail for Business before IONOS WP cancellation kills bundled mail.
+

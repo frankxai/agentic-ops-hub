@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: context resume scoped and checker binding verified
+
+[SIS330](https://github.com/frankxai/Starlight-Intelligence-System/pull/330) pushed at `000e2637`, base `codex/consolidate`: exact-revision checkpoint handoff, provider binding check and sequential Linux/Windows runtime CI. 96 targeted tests, strict scoped TypeScript and 135 pre-commit checks passed locally. Synthetic CLI restart/recovery is verified; live cross-provider completion, sandbox evidence and independent approval remain open under issue49. Estate4/config46 remain separate repairs. See today's session; no production release or local automation was enabled.
+
 ## 2026-10-10: hook repairs and native runtime verified; config merge requires review
 
 [Config109](https://github.com/frankxai/starlight-agent-config/pull/109) is ready
@@ -876,3 +880,4 @@ Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged 
 SIS draft PR330 at da9aebb6 implements bounded native-session capture, durable continuation, revision review state, and owned gateway locks. 91 targeted tests, 135 pre-commit checks, scoped TypeScript, and secret scan pass. Real OpenCode capture: 101 observations, zero replay duplicates. Local routing repair: 15 tests pass. Independent provider approval remains open after Grok timeout and Claude weekly-limit refusal. SIS issue49, config issue46, and starlight-command issue4 retain the remaining work. See ops/sessions/2026-10-10.md; no recurring service, merge, or deployment occurred.
 
 Current context-continuity revision: SIS PR330 afeb450d. Checkout Gitlink defect repaired without filesystem deletion; design/editorial checks pass at this head, automatic preview status success. Routing tests: 18. Independent provider and runtime rollout gates remain open; no production deployment or merge.
+
