@@ -2,6 +2,21 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Current creator5ec98735d0e591b1ea3df24967432877e49cbf5b closes connection-time
+DNS rebinding via request-local Undici7.30 Agent checked socket lookup.40targeted
+tests include actual public-preflight→private-connection denial with0fixture-server
+requests; positive checked-DNS fixture and equivalent IPv6 classification pass.
+Tsc/lint/audit pass. Hosted38036500463 SUCCESS Linux/Windows archive consumers;
+draft e2e skipped. Ten downloaded Linux archives/ninechecks bind merge0819d2c2782549e33629bba67a7b35db12d3c175,
+manifest77c0cf02054ff4b0ed92f8e8eadae04bf1b927d235d4c1fe43c935419942ae6a.
+Current73-file packetartifacts/review-5ec9873 prepared/not reviewed, Gitleaks clear.
+OS DNS cannot be cancelled; policy/address guards do not prove general provider
+trust or complete network security. Earlier creator4f/bd/26b packets historical.
+SIS511c0075 unchanged. Preserve full review/account/bootstrap/platform/customer/
+value scope. Obtain exact-revision admitted isolated provider review and reconcile
+findings before main-source release; do not repeat account-blocked routes unchanged.
+
+
 Latest creator source4f25f64b82bf6a3257ea625d87f28d4eb236599a closes DNS/body
 request deadline gaps.37 targeted tests including native HTTP stall pass; core
 tsc/lint pass. Hosted38035977057 SUCCESS typecheck/unit and Linux/Windows archives;
