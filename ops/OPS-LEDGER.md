@@ -2,6 +2,16 @@
 
 
 
+## 2026-10-10: ECC harness port is on main
+
+Antigravity signed the three file-port heads and pr-gate squash-merged them. No admin merge.
+
+- [claude-skills-library#51](https://github.com/frankxai/claude-skills-library/pull/51) is main at 682b2ce. Validate run 38044697823 passed.
+- [claude-code-config#41](https://github.com/frankxai/claude-code-config/pull/41) is main at ebc0758. Pin 4eb71d92. The observe hook is unwired.
+- [awesome-hermes-agent-skills#28](https://github.com/frankxai/awesome-hermes-agent-skills/pull/28) is main at 17724a7. Watch row, not earned.
+
+Local seats now point at that pin. Hermes runs the session guard. Grok's idle v0, GitHub, Vercel, and Cloudflare plugins turn off on the next process. Codex, Antigravity, and OpenCode have one cold pointer each. Free RAM was 1.47 GiB, so the SIS watch branch and this handover still need another harness before merge. [Issue 42](https://github.com/frankxai/claude-code-config/issues/42) stays open for the blocked seats.
+
 ## 2026-10-10: Estate management accepted and protection live (Codex)
 
 [Ops213](https://github.com/frankxai/agentic-ops/pull/213) merged at b4b82e3 from exact independently reviewed589e0d4; merged-main verify/validate pass. Registry72 preserves candidate qualifications. Unrelated documentation215 passed verify and closed without merge. Main protection requires strict app-bound verify, enforces admins, disallows force push/deletion and requires conversation resolution. Native review count0 leaves provider review as a policy gate. Three current production targets are READY under their existing owners. Prior authorization blocker is superseded; source conflicts, product acceptance and recovery gaps remain in issues29/55. See today's session.
