@@ -1,5 +1,18 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Creator MCP: repair publication, then prove connected creator acceptance
+
+Read today's SDK8.5 organization handover and SIS144 comment6093445212. Existing
+@starlight-intelligence/system and Arcanea8.5 public tarballs match tested main
+fe964d5a; ecosystem doctor reports creator-mcp0.1 workspace:* dependencies blocked.
+Use the existing starlight-creator-mcp issue4 and verified available owner lane to
+repair independent package installation, review and versioned release. Preserve
+its auth/tenant/provenance/publishing contracts. Then prove one actual source-
+backed memory/creator/edit/recovery/export journey and receiving-owner/user
+acceptance. Retain all broader goals and unknown runs; no automatic MCP activation,
+provider quota, OIDC setup, commercial readiness or estate-wide completion assumed.
+
+
 ## SIS8.4: complete one community creator acceptance journey
 
 SIS327/339 merged; npm8.4.0 published from tested main8087a0fa and public bytes
