@@ -1,5 +1,25 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+<!-- starlight-delivery-20261010:start -->
+## 2026-10-10: Starlight funded recovery fixes; production gaps remain
+
+[Draft site PR107](https://github.com/frankxai/starlightintelligence.ai/pull/107)
+preserves existing PR97/101 work. a3cb804 passed full CI, 17 physical financial
+cases, nine production-route cases and all 192 browser cases; 65 source hashes
+match the exact revision. Its preview is READY and eight HTTP checks passed.
+Current candidate 3eebe2a fixes atomic rate-window expiry and mapped IPv4 buckets;
+30 local demand tests and fresh full CI38030540613 pass, again all 192 browser
+cases without skips/flakes. Its narrow four-file source review passes and its
+Vercel preview is READY. That verdict covers the limiter delta only.
+Independent review at a3cb804 remains FAIL for daily/unknown-usage/ownership
+recovery findings. Durable lost-output retrieval and retention/deletion are open.
+Production remains 4854f880; only Blob env metadata is configured. Existing
+StarlightPlatform Supabase is healthy but has no candidate financial/lifecycle
+schema or linked users. Clerk application selection is pending Frank's answer.
+Issues 82/95 and source goal 01a123d5 remain active. Today's session records exact
+evidence, preserved owners and the complete platform/commercial/design continuation.
+<!-- starlight-delivery-20261010:end -->
+
 ## 2026-10-10: GenCreator security/MCP and editable PPTX live
 
 [GenCreator191](https://github.com/frankxai/gencreator.ai/pull/191) merged at
