@@ -82,37 +82,50 @@ Organization confirmation is pending for the existing Starlight Platform organiz
 hblyvrhhjqkqndgpjcep; Supabase requires quoting and confirming branch cost before
 creation. Follow up on the pending answer; do not infer infrastructure approval.
 
-## Arcanea adoption: voice admission and a verified creator journey
+## Arcanea adoption: finish author556 and the accepted creator journey
 
-Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
-Read today's session, merged PR554 and requery heads. Preserved release lane
-`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
-branch `agent/codex/gateway-admission-20261010`, reviewed6def4ff717 from accepted
-e739, merged6e774c165393. All21 native cases/direct types/lint/format, candidate
-full CI/browser, CodeQL analysis/findings and independent Grok review pass. All23
-reviewed file hashes match the merge. READY production dpl_EnH7LhNoXDiM94vz2gELJckbPXXC
-has arcanea.ai/www/app aliases and passes18 safe HTTP contracts. Receiving-main
-CI38029825907 passes on attempt2; attempt1 failed an existing gallery strict
-selector with duplicate matches. Six bounded cloud-browser production attempts
-passed without reproducing it; keep the failure and unresolved cause visible.
-No checks relaxed. Final reviewer16622 ended0, PASS with no critical/high/medium
-findings; no tools/web/subagents. All owned reviewers and cloud browser stopped.
+Continue authorized work in thread01a123df-58c6-72f3-b86c-65083426cf65, issue529
+and world-first Studio program276. The tracker still reports paused; available
+status tools cannot resume it. Frank explicitly requested continuation, production
+and merges. Keep the original creator/CLI/SDK/ADK/desktop/mobile/memory/router/
+cloud/API/narrative/bundle/GTM goal open and preserve every other owner's front.
 
-Create the next owned branch from verified current main; retain the merged source
-branch and foreign lanes. Next repair voice credential admission and privacy,
-preserving customer voice behavior. Dummy-only actual-route/proxy proof is in the
-private voice-admission-audit receipt; live keys were not inspected. Repository
-security remains open:200 open CodeQL alerts (1critical/140high/59medium) across
-the query, none in changed chat/operator handlers;12 Dependabot alerts also remain.
-Keep managed inference disabled until durable authenticated
-entitlements/reservations exist. Prove actual existing-source generation, reopening,
-editing, interruption recovery and export with user/editorial acceptance; compare
-the same task with the user's current provider editor. Reuse accepted workspace/
-427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
-router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
-branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
-Honor machine admission, secret checks and publication/payment/migration gates.
+Voice555 is merged/live at8a47d6b7154164770d9fbd6daafe4a08fca38678. Exact79de
+Grok PASS zero remaining findings, native45/candidate fullCI/CodeQL/compiled six
+behavior rows pass; receiving-main CI38050586413 passes. READYproduction
+F4kk81cSsSd3jus8SaiV2Jjeq9Nu has the three aliases. Safe audio denials/canonical
+redirects pass across preserved receipts; quota429cases were retried after the
+window. Direct ElevenLabs, paid audio quality, durable quota/XSS and other model
+aliases remain outside certification. All previous failures/review attempts stay.
 
+Author product lane is C:/Users/frank/starlight/repos/.codex-worktrees/
+arcanea-gateway-admission-20261010, branchagent/codex/author-draft-recovery-20261010,
+clean af79dbbde4b6077694cfbc8fd228b3aba2c425b3, PR556 from8a47. Reuse Novel,
+existing manuscript/character tracker and publishing workflow. Exact save
+acknowledgements, owner/account isolation, rich reopening, browser restore,
+download recovery, latest-editor feedback/customer key admission and mobile
+controls are implemented; productiondrafttable was absent. CI38050697708 full
+lint/types/build/native10 and real PostgreSQL owner-policy/reapplication fixture
+pass. Ready-event browser/security gates and exact independent review pending.
+OwnedGrok82446 is running; consult private lifecycle/deadline before another
+workload. No parallel agents/local browser. Don't adopt old review for new source.
+
+Follow up on the pending private test-account location. No browser is connected;
+production anonymous sign-in returns422disabled and no service-role key exists in
+Vercel. No account/email created or authentication policy changed. Actual auth/RLS,
+edit/save/reopen/recovery/export behavior and paid/editorial comparison remain
+required. Review migration first, verify current schema/ownership, then apply only
+the exact additive owner repair when its gates pass. No bulk historical replay,
+publication/canon promotion or money action. Reconcile findings and rerun changed
+gates before guarded normalmerge. Verify receivingmain/production after release.
+
+Preserve505/500/512/494/513/AuthorOS3 and all other owners' work and human rights,
+premium and publication gates. Arcanea universe/readers/releases remain the
+priority; security and voice do not establish full creator acceptance. Serious
+comparison is direct Anthropic plus the author's saved document; no superiority
+or paid demand proved. Broader security/dependency backlog stays separate.
+Save to the hub's existing three files and owning276/529. Hub229 merges main
+without rewriting pushed history and preserves all other owners' sections/audit.
 
 ## GenCreator: managed identity and an accepted creator journey
 
