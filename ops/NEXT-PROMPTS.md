@@ -1,11 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight & GenCreator NPM: advance enterprise distribution and Phase 2 monorepos
+## Starlight & GenCreator NPM: all 10 packages live; automate CI release & adoption
 
-Read ops/sessions/2026-10-10.md, Starlight-Intelligence-System docs/architecture/NPM_ECOSYSTEM_STRATEGY.md, and GenCreator-OS docs/architecture/GENCREATOR_ECOSYSTEM_MASTER_PLAN.md. Both organizations are live on NPM:
+Read ops/sessions/2026-10-10.md, Starlight-Intelligence-System docs/architecture/NPM_ECOSYSTEM_STRATEGY.md, and GenCreator-OS docs/architecture/GENCREATOR_ECOSYSTEM_MASTER_PLAN.md. Both organizations and full package suites are LIVE on NPM:
 - @starlight-intelligence/system@8.3.0, @starlight-intelligence/memory@0.2.0, @starlight-intelligence/creator-mcp@0.1.0, @frankxai/agentic-creator-os@15.0.0, and @arcanea/starlight-intelligence-system@8.3.0 shim.
-- @gencreator/core@0.1.0, @gencreator/social@0.1.0, @gencreator/dam@0.1.0, @gencreator/sound@0.1.0, and @gencreator/cli@0.1.0. Standalone Suno MCP server deprecated.
-Next: Build remaining GenCreator packages (@gencreator/studio, @gencreator/cms, @gencreator/design, @gencreator/analytics), wire GitHub Actions CI release workflows with changesets, and connect the live CLI cockpit to Frank's daily creation workflow.
+- Full 10-package suite for @gencreator: @gencreator/core@0.1.0, @gencreator/social@0.1.0, @gencreator/dam@0.1.0, @gencreator/sound@0.1.0, @gencreator/cms@0.1.0, @gencreator/design@0.1.0, @gencreator/analytics@0.1.0, @gencreator/studio@0.1.0, @gencreator/strategy@0.1.0, and @gencreator/cli@0.2.0 (with 10 MCP tools). Standalone Suno MCP server deprecated.
+- Merged and pushed: GenCreator-OS `agent/antigravity/gencreator-packages` at `be82aa4`.
+Next: Open & merge GitHub PR into `main`, wire automated GitHub Actions CI/CD release workflow (`release-packages.yml`), and integrate `gencreator` CLI & MCP tools into Frank's daily desktop cockpits and harness configs.
 
 
 ## Hooks and instruction architecture: approve the tested integration and complete rollout
