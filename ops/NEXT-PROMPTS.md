@@ -1,19 +1,19 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Hooks and instruction architecture: review the applied repairs
+## Hooks and instruction architecture: approve the tested integration and complete rollout
 
-Read ops/sessions/2026-10-10.md and config issues78/101/98. Preserve draft109,
-exact head beadd9c, and the operator's private hooks-architecture-20261010 report
-and five exact backups. Obtain an independent provider review at that revision
-when available; previous Claude quota refusal and Grok timeout are not approvals.
-Verify a fresh desktop task loads the repaired router, native design launcher,
-n8n reminders and fail-closed secret matcher, retaining both startup disables.
-Check installed plugin versions before re-projection; updates can replace cache
-manifests. Continue issue98's source/authority reconciliation, validate exact Git
-roots before classifying the 71 missing guides, and preserve existing SOUL and
-graph brakes/write-back/distinct-verifier contracts. Issue101's fleet doctor
-enforcement remains open. Use owned lanes, normal review/merge gates and current
-machine admission. Save both product issue updates and the hub ledger.
+Read ops/sessions/2026-10-10.md and config issues78/101/98. Review ready PR109 at
+1bf683ac74b3f65e723c556210aa347d4f103781, including cloud PR103 provenance and
+the final source bindings. Obtain exact-head independent provider review and
+one eligible GitHub approval; normal merge was refused, and older review attempts
+are not approvals. 28 doctor tests, ten repair tests and a native end-to-end git
+status turn with 13 completed hooks pass. Preserve exact operator backups and
+both startup disables. Complete Desktop UI reload and write/design event proof,
+then adopt the merged source without overwriting occupied primary lanes. Check
+installed versions before re-projection. Continue PR80's guarded shared-guide
+rollout and issue98's authority reconciliation with their current owners. Validate
+exact roots before classifying missing guides; preserve SOUL and graph brakes,
+write-back and distinct-verifier contracts. Save existing issues and hub receipts.
 
 ## GenInvestor: obtain exact-head review before upstream trial
 

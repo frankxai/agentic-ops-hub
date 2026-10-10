@@ -1,18 +1,17 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
-## 2026-10-10: local hook repairs applied; review and architecture rollout pending
+## 2026-10-10: hook repairs and native runtime verified; config merge requires review
 
-[Config draft109](https://github.com/frankxai/starlight-agent-config/pull/109),
-`beadd9c`, repairs router/Impeccable/n8n Windows launchers, native secret coverage
-and two unsafe Claude wrappers. Exact private backups retained. All 26 enabled
-registrations pass benign launch checks; native inventory has 28 trusted hooks
-with two intentional disables. Eight repair, six secret-input, five existing
-contract/trust and eight SIS loop tests pass; graph validator and required doctor
-pass. The six security launches exercise no-op/recursion, not model review.
-Instruction discovery covers 215 Git-marked folders and 320 visible files;
-nested authority reconciliation and missing shared guides remain on issue98.
-Independent review unavailable (Claude quota, Grok timeout); fresh desktop proof
-pending. Keep draft109 and issues78/101/98 open. See [session](sessions/2026-10-10.md).
+[Config109](https://github.com/frankxai/starlight-agent-config/pull/109) is ready
+at `1bf683a`. It integrates cloud PR103 with canonical repo discovery, parse-error
+denial, Windows override checks and CI coverage. 28 doctor/checker and ten repair
+tests pass. Removed 12 further Claude security-plugin CMD wrappers with backups;
+bounded advisory launch budgets and reconciled Claude's Registry pointer.
+One ephemeral native turn ran git status successfully: all 13 triggered hooks
+completed. Fresh native CLI proof does not establish Desktop UI reload or every
+event. Normal config merge was refused for the required eligible approval;
+provider review remains unavailable. Preserve issues78/101/98 and PR80 ownership.
+See [session](sessions/2026-10-10.md) for source, receipts and remaining coverage.
 
 ## 2026-10-09: GenInvestor handover merged, product review held (Codex)
 
