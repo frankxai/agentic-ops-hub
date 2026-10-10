@@ -8,19 +8,17 @@ Continue from the 2026-10-10 Starlight context continuity production release in 
 - SIS [PR #345](https://github.com/frankxai/Starlight-Intelligence-System/pull/345) (`9f89333b`) and [PR #354](https://github.com/frankxai/Starlight-Intelligence-System/pull/354) (`af0caef7`) are merged into `main`.
 - Bounded context continuity, durable journals, review queue with provider binding, ownership-safe lock semantics, and bounded public-only Jev Router policy are active in source.
 - Live acceptance test suite (`test/live-cross-harness-acceptance.test.ts`) passed in exact-head CI on Ubuntu-latest and Windows-latest (137 tests passing each, run 38069234500).
-- External package export verified via `npm pack --dry-run` (390 files, all `./dist` targets present).
+- External package export & clean consumer installation verified via `npm pack` producing `@arcanea/starlight-intelligence-system-8.5.1.tgz` (390 files) installed in isolated external workspace with end-to-end tests for `RuntimeBridge`, `ContextBridge`, `ReviewQueue`, and Jev Router refusal/admission passing.
 - Independent review findings reported in [SIS issue #49](https://github.com/frankxai/Starlight-Intelligence-System/issues/49).
 
 ### Next Actions
 1. **Opt-in Public Data Workflow**:
    - Enable and exercise one opt-in public workflow demonstrating real cross-harness task resumption in practice.
    - Keep Jev Router strictly on public data pilot only; do not route private memory or confidential prompts through external router endpoints without explicit authorization.
-2. **External Consumer Installation Verification**:
-   - Verify clean installation and import of `@arcanea/starlight-intelligence-system` in an isolated consumer workspace without ambient repo resolution.
-3. **Ecosystem Coordination**:
+2. **Ecosystem Coordination**:
    - Coordinate with PR #342 (`agent/codex/npm-modular-ecosystem`) for portable core/AI SDK integration and PR #340 (`agent/codex/agentdb-recall-20261010`) for SQLite recall.
    - Maintain native subscription authentication in supported clients without proposing forks.
-4. **Governance & Records**:
+3. **Governance & Records**:
    - Keep all unfinished acceptance criteria visible on SIS issue #49.
    - Use admitted write lanes, verify 4-fact git status, and stop all session-owned processes at handoff.
 <!-- starlight-context-continuity-20261010:end -->
