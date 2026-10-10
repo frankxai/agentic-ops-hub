@@ -1,5 +1,23 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: SIS publication requires exact consumer evidence and isolated npm (Codex)
+
+SIS draft342 is clean/pushed at75132077ff1da8413fa76790f921d3a143a80ad2.
+All four modular milestones remain implemented, core/ai-sdk/mcp0.2.0. Publication
+now requires exact manual main workflow identity/source, clean checkout, matching
+installed-consumer receipt and isolated project/user/global npm configuration.
+Failed consumer attempts invalidate prior success. Malformed versions are denied
+before file reads. Local16 release/artifact tests and mandatory135 checks pass.
+Hosted38029407740 passed artifact/installed-consumer, coreNode18 and Linux22/24
+plus Windows22; Windows24 is in progress at this record. Downloaded actual
+archives and consumer.json validate against merge sourcef6db18a60fab57dc69761deec3d2b13c63f5c7c8,
+dirty=false, distinct from the PR head. Core8642JSbytes/12465compressedbytes.
+Issue329 comment6094459203 and draft342 description updated. Account bootstrap,
+exact-revision provider review and fresh main release remain pending. Priorfdb
+review packet is stale for new publisher source. No publication or review verdict.
+Latest local admission BOUNDED10668MB/8192required, one workload/no new agents;
+no heavy local workload was needed. Preserve previous holds as historical.
+
 ## 2026-10-10: SIS initial versions applied; exact hosted0.2.0 archives verified (Codex)
 
 SIS draft342 is clean/pushed atfdb1e47fe627250c614b30378e8acf5fb5ac1a3f.

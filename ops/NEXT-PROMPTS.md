@@ -4,7 +4,15 @@
 
 Read today's appended session, SIS issue329/draft342 and creator issue4/draft6.
 Preserve goal01a1235e's full estate/foundations/release/platform/value scope.
-Owned branch agent/codex/npm-modular-ecosystem is pushed atfdb1e47fe627250c614b30378e8acf5fb5ac1a3f.
+Owned branch agent/codex/npm-modular-ecosystem is pushed at75132077ff1da8413fa76790f921d3a143a80ad2.
+Publication now binds all consumer checks to exact manifest bytes/source, requires
+the exact manual main workflow/clean checkout and isolates inherited npm configs.
+Local16 release/artifact tests and mandatory135 tests pass. Hosted38029407740
+has passed five jobs, Windows24 in progress. Downloaded real archives and new
+consumer.json validate against merge sourcef6db18a6, dirty=false, not PR head.
+Recheck final CI result and obtain review for current revision; priorfdb packet
+is stale for the publisher changes. Fresh admission was BOUNDED10668MB/8192;
+one workload/no agents, no heavy workload needed. Do not infer current admission.
 Verify guides, routing and separate lane ownership. Modular CI run38025179265
 passed all six jobs for prior54c41ddf. Latest38027724509 passes all six for44346d9f.
 Current38028360568 passes all six forfdb1e47f. Changesets applied core/ai-sdk/mcp0.2.0
@@ -16,7 +24,7 @@ including hosted artifact consumers; preserve the head/merge-receipt distinction
 SDK candidate run38023490344 passed at235d0b3e; retain that exact-revision boundary.
 Obtain independent provider review using an admitted isolated supported route;
 Claude quota and Gemini client errors are not reviews. No unisolated Grok MCP launch.
-Use the prepared54-file artifacts/npm-review/fdb1e47f source packet (not reviewed),
+Regenerate the prepared54-file artifacts/npm-review/fdb1e47f source packet (not reviewed),
 and rebuild a clean final main-source receipt after normal integration. Reconcile
 npm org rights and first-publication trusted publishers, then
 publish exact reviewed bytes through the authorized OIDC path after normal gates.
