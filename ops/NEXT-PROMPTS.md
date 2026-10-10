@@ -2,6 +2,22 @@
 
 ## Npm ecosystem: review SIS342 and creator6, then release verified packages
 
+Current review-route checkpoint: Gemini CLI0.60.0 was safely isolated using its
+supported workspace settings and explicit all-tools-denied admin policy, then
+failed authentication in6.04seconds with UNSUPPORTED_CLIENT. No verdict. Do not
+retry before eligibility changes. Temporary system-settings override failed the
+Windows ACL check and was not used. Grok inspect has18 MCP definitions,25 hooks
+and19 plugins; do not launch a naive tools-empty client that starts services.
+Native Claude remains usage-limit blocked until11October06:00Amsterdam. Keep the
+61-file SISd3d66f7e and71-file creator26b9646 immutable packets current; obtain an
+actual exact-revision independent review through an admitted isolated provider,
+then reconcile findings before approval/main-source release and npm trust/bootstrap.
+SIS issue329 comment6095160376 records this result; ignored gemini-isolation.json,
+gemini-review.json and gemini-review-status.md are the local receipt. Source tips
+are unchanged, current hosted archive checks retain their existing evidence scope.
+Continue useful release/platform/foundation work within existing owned lanes.
+
+
 SIS current tipd3d66f7eae731cfd19b1256a1de0796a66847e47 fixes malformed gateway
 metadata: invalid present expiry or non-array/non-string privacy tags drop the row.
 Reproduced before the fix against exact previously hosted gateway bytes: null
