@@ -22,6 +22,8 @@
   [issue 95](https://github.com/frankxai/starlightintelligence.ai/issues/95) remain
   open. Today's session records exact revisions, failed fixture evidence and
   review dispositions. Complete apps, memory, domains and commerce stay active.
+- Main still has high Dependabot alerts 4/3 (sharp/source-map-js). Tested fixes
+  0.35.5/1.2.2 are in PR107; separate production promotion is the next priority.
 <!-- starlight-delivery-20261010:end -->
 
 

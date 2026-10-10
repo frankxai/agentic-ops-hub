@@ -11,6 +11,13 @@ findings. Limiter PASS covers TTL repair/mapped IPv4. Both are narrow; the broad
 a3cb804 review remains FAIL. Read extracted verdicts, never raw reasoning JSONL.
 Re-query candidate, receiving main, preview and production before release.
 
+First inspect open dependency-related PR diffs and current Dependabot alerts
+4/3. Main still reports high sharp/source-map-js advisories; tested fixes
+0.35.5/1.2.2 are in this candidate. Promote only that reviewed security patch
+through an owned branch with CI and actual production verification, without
+waiting for Clerk or claiming a product launch. Preserve the larger PR107 work.
+Use fresh storage/machine admission before any additional worktree or build.
+
 Preserve the atomic bridge and its installation order: lifecycle and financial
 schemas first, `budget-curator-runs.sql` afterward. Fix the two low-severity labels
 without inferring unused quota from zero funds. Preserve first-request proof when
