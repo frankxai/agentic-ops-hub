@@ -1,5 +1,31 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: consumer preflight stale-success recovery fixed (Codex)
+
+SIS draft342 clean/pushed source07b430790f9fb88427f9b1815455490d7c6c7728.
+Actual relocated consumer script regression reproduced old passed:true receipt
+surviving missing manifest failure. Now invalidates before input read/parse/Git
+lookup/archive validation; binds failed receipt after valid source/input identity.
+Missing/malformed/rejected manifest fixtures execute real entrypoint, assert
+nonzero exit, passed:false/emptychecks and publisher rejection. No fixture install.
+All17 release/audit tests pass;135 native hook symmetry tests pass. Small tests
+only; prior PP build HOLD preserved, no heavy local build or foreign cleanup.
+
+Hosted38037804627 completed SUCCESS all six jobs: artifacts/installed consumers,
+core18 compatibility and Linux/Windows22/24. Downloaded three archives and verified
+SHA256/SHA512/entry/license/version/consumer binding against clean merge
+96fa15297c7818fb5055dd65bddc7eb0a1ada836; GitHub parentsbc73db9b/07b43079.
+Manifesta494a002694ea5854a06619d85156bc56bb33434444d9211c4835537c991fc4b.
+Current immutable61-file packetartifacts/npm-review/07b43079 prepared-not-reviewed;
+git-show source/basefe964d5a/fingerprint and prompt digest bound. Gitleaks333925bytes
+clear. Prior SIS511c/34201 packets historical; creator5ec9873 unchanged.
+
+SIS guides/hub AGENTS hashes unchanged; hub guide explicitly reread. Exact Git
+root/origin/branch/explicit file guard/check/clean owned lanes verified before
+writes. Product issue329 checkpoint saved; handover in hub PR217. Full goal
+review/account/bootstrap/other-package/platform/customer/value scope remains
+open; no independent verdict, release, merge, credential copy or new services.
+
 ## 2026-10-10: gateway padded privacy tags regression fixed (Codex)
 
 SIS draft342 source34201a7fa293a5f2520c3450fa7d31c1031f8ad0 pushed/clean.

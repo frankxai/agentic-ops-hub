@@ -2,6 +2,19 @@
 
 ## Current npm ecosystem prompt
 
+Hosted SIS38037804627 for current07b43079 completed SUCCESS all six jobs. Source closes stale-success
+receipt before manifest preflight; real entrypoint regressions/17audit tests pass.
+Three hosted archives/consumer receipt verified against merge96fa1529. Current
+61-file immutable review packetartifacts/npm-review/07b43079 is prepared, not
+reviewed. Obtain authenticated isolated independent provider review for SIS342
+at07b43079 and creator6 at5ec9873; reconcile actual findings, finish protected
+main-source/npm bootstrap/trust release. Preserve full estate/platform/customer/
+paid-value scope and separate site/plugin dependency repair ownership.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem prompt
+
 Hosted SIS38037404137 for source34201a7f completed all six jobs SUCCESS.
 Downloaded three archives and consumer validated
 against mergeb638b19e. New gateway privacy-tag whitespace regression fixed and
