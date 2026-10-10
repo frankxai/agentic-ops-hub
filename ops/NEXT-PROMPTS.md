@@ -1,5 +1,31 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Arcanea adoption: finish security release, then prove a creator journey
+
+Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
+Read today's session/PR554 and requery heads. Own lane
+`C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
+branch `agent/codex/gateway-admission-20261010`, published7135673753 from accepted
+e739. All19 native cases/direct types/lint/format and current Linux lint/types/
+CodeQL analysis/findings pass; full build/browser pending. Current713 READY preview
+passes15 safe HTTP contracts. Public operator implementation removed,403 retained;
+deferred errors sanitized in client/server. Preserve customer-key-only/tool denial
+boundaries. Poll final frozen reviewer handle7869 (05:36UTC, deadline06:21UTC),
+no tools/web/subagents. Prior a311 PASS with medium fix does not approve current
+source. Stop only owned reviewer on deadline/handoff; keep unknown attempts.
+
+Integrate normally after exact-source review/full gates. Verify production aliases,
+source SHA, compatibility health200/key denial401, UI/alias401, surrounding auth401
+and tool/operator403. Keep managed inference disabled until durable authenticated
+entitlements/reservations exist. Prove actual existing-source generation, reopening,
+editing, interruption recovery and export with user/editorial acceptance; compare
+the same task with the user's current provider editor. Reuse accepted workspace/
+427/531/532/533 and existing owners. Retain CLI/SDK/ADK, desktop/mobile, memory/
+router, cloud/APIs, GTM/bundle and narrative goals. Preserve other sessions,
+branches, unknown runs and SDK8.5/creator-MCP ownership. Save issue529 and hub.
+Honor machine admission, secret checks and publication/payment/migration gates.
+
+
 ## Creator MCP: repair publication, then prove connected creator acceptance
 
 Read today's SDK8.5 organization handover and SIS144 comment6093445212. Existing

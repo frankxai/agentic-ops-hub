@@ -1,5 +1,21 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-10: Arcanea customer chat and operator security, release pending
+
+[Arcanea554](https://github.com/frankxai/arcanea-ai-app/pull/554), candidate7135673753,
+requires customer keys, binds provider identity, ignores caller tiers and denies
+unadmitted funded tools. Exact compatibility GET/POST reaches its own admission
+without cookies. The operator route contains only403; CodeQL analysis AND findings
+pass after legacy host removal. Deferred errors use fixed client/server messages.
+All19 native cases/types/lint/format pass. Compiled a311 desktop/mobile/reduced
+motion passes;713 full build/browser pending. Current713 preview is READY and15
+safe HTTP contracts pass. Grok a311 PASS had one medium now fixed; complete713
+source review running and required before release. Production READY at accepted
+e739; this repair not promoted. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)
+and today's session retain creator/platform/commercial goals, failed/unknown
+attempts and other owners. Paid provider acceptance/full adoption remain unproved.
+
+
 ## 2026-10-10: Starlight npm organization connected, SDK8.5.0 live
 
 [SIS341](https://github.com/frankxai/Starlight-Intelligence-System/pull/341) merged
