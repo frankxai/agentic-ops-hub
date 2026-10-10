@@ -1,5 +1,126 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## AGY: prove one connected community creator journey
+
+Continue Frank's terminal-to-web programme for Starlight, Arcanea, GenCreator,
+AgenticIncome, AnimeLegends and RealityArchitect. Preserve its research, science,
+design, engineering, academy, social workflow and subscription-management goals.
+Use the existing SIS runtime, journal, memory and creator implementations. Your
+first outcome is one real, editable, recoverable creator artifact that another
+owner accepts. Keep the broader programme open until its separate gates pass.
+
+Read `frankxai/agentic-ops-hub`'s latest `ops/sessions/2026-10-10.md`,
+`ops/OPS-LEDGER.md` and this current prompt in `ops/NEXT-PROMPTS.md`. Re-query
+SIS issue144 and PR346, creator-MCP issue4, fleet PR328, modular-package PR342,
+and the GenCreator receiving owner's current implementation before acting.
+Saved heads are evidence snapshots. Do not merge another owner's unfinished PR.
+
+## Verified starting point
+
+- SDK8.5.0 is published under `@starlight-intelligence/system` and
+  `@arcanea/starlight-intelligence-system`. Tested tarballs came from SIS main
+  `fe964d5a`; registry bytes and both latest tags were verified. The packages have
+  377 identical non-manifest files. The `ecosystem doctor` metadata check does
+  not establish actual package installation or transitive security.
+- SIS PR346 corrects default Antigravity MCP scaffolding: blank entry point gives
+  an empty server map; explicit entry point produces one Node server without
+  full-scope flags or unsupported capability assertions. Final source reviewed
+  at `20eddb989ec6f7b4c6e8343368b1d1efe363aa18`; 35 adapter tests and typecheck
+  pass. This source correction is not in the already published SDK8.5.0.
+- AGY was invoked for a real frozen-source review with Gemini3.1 Pro High using
+  a private profile. Its CLI reported no MCP servers or imported plugins. The
+  stream recorded user input, agent response and finish only. It returned PASS
+  for the first draft, then the fenced xAI reviewer BLOCKed residual generated
+  Markdown claims. Those claims were repaired and the final xAI review passed.
+  AGY's older PASS does not approve the later revision.
+- Installed AGY executable SHA256:
+  `fbbfb3f15c7628252c5e12765683c688ba05ee122b853cadeb0bbfd4e13ca25b`.
+  `--mode plan` has no effect with `--disable-slash-commands`. AGY advertises
+  native tools even under deny rules. This is not an empty-tool harness. The
+  sandbox and deny configuration were loaded; enforcement was not exhaustively
+  tested. Do not claim a universal safety boundary or Windows sandbox parity.
+- Published creator-MCP0.1 still has `workspace:*` dependencies. Its canonical
+  checkout is dirty on `agent/claude/publish-readiness`, and root repository
+  guides were missing on inspection. Preserve that lane and coordinate through
+  issue4. Neither an ambient boot nor a manifest check repairs its publication.
+- Native Grok generated a source-backed guide that was reopened, edited to
+  revision3, exported and imported into the SDK journal. Export SHA256:
+  `99691c60c165115c2f0672086ea6f69cfc6b5c78e09bb08beb7a57a24ca38e2f`.
+  Actual external receiving-owner/editorial acceptance is pending. The prior
+  OpenCode anonymous route returned403; retain its unknown attempt and do not
+  silently redispatch it.
+
+## Ownership and admission
+
+Start in a verified available repo/worktree. Explicitly read root and deeper
+instructions, `WORKFLOW.md`, product outcome and machine policies; hash the
+sources and record root/origin/branch/owner/explicit output files. Run routing
+guard then check, and inspect ownership separately before writes. Do not use
+Codex's owned write lane while it is active. Do not touch the foreign creator
+checkout. A missing guide or occupied lane blocks its dependent writes.
+
+Use one admitted worker, one bounded experiment and the existing shared tool
+plane. Honor fresh PP and storage gates, the 4GiB RAM floor, and cost/timeout
+limits. Do not start all MCP servers, import the default memory writer into a
+review profile, weaken permissions, kill another session's processes or remove
+locks by age. Keep credentials in the host. No Higgsfield. The ECC pointer is
+cold; do not install its full profile, observe hook or another orchestrator.
+
+## Implement and verify in this order
+
+1. PR346 merged after required CI at df80631271b6ecdbbd5409eab46af3101bb816e1.
+   Continue draft PR347 at c2fe2fc3a2febae65a4b0f3b1d2611fb3c229920 for SDK8.5.1.
+   PR347 merged to9887aa8f after independent exact-revision PASS and required CI.
+   Main candidate38052541563 passed; both8.5.1 publications accepted by npm.
+   Public availability/hash/latest-tag verification is pending. Earlier RAM HOLD
+   respected and resolved with bounded8674MB/quietCPU70% before final review.
+   For a published fix, use the prepared patch version from tested current main;
+   update source-closure pins with independent review, build both tarballs,
+   cold-install each independently and verify public registry bytes. Do not
+   republish8.5.0 or call source merge a delivered npm update.
+2. Coordinate creator-MCP's owner to eliminate published workspace protocols and
+   prove an independent consumer installation of its dependency graph, with
+   tenant/auth/provenance boundaries intact. Do not invent credentials, OAuth
+   consent, billing or deployment proof. Surface the exact dependency if blocked.
+3. Use the same real brief and cited sources across native AGY, the existing
+   Grok workflow and manual Markdown. Produce an editable creator artifact,
+   record repair effort/time/provider-reported usage, reopen after interruption,
+   edit without losing originals, export with a checksum, and import into the
+   actual GenCreator or other agreed receiving surface. Obtain that owner's
+   acceptance and inspect the resulting artifact. A simulated second owner or
+   SDK-journal import does not close this gate.
+4. Test wrong tenant, revoked capability, invalid payload, duplicate run ID,
+   transport loss, timeout and restart. A host write denial is not HTTP403.
+   Require explicit observations and no unintended write; do not boot a broken
+   package in the default profile to manufacture denial evidence. Preserve
+   `running`/`unknown` receipts and require owner reconciliation before a new
+   attempt. Do not assert that a local timeout stopped remote spending.
+5. Reuse fleet PR328's existing evidence collector and modular PR342's design
+   after their owners' review gates. Record each CLI's installed, configured,
+   authenticated, actually invoked and accepted states separately. Prefer
+   upstream CLI/protocol adapters over multiple permanent forks. Consider an
+   upstream contribution or small maintained patch only for a reproduced gap;
+   record license, pinned revision, regression and update/rollback strategy.
+6. Connect the accepted creator journey to one brand's web surface. Extend
+   progress, experiments, decisions and academy tracking through the existing
+   journals and memory boundaries. Social publishing, subscriptions, research
+   labs and academy product acceptance remain distinct work with owning repos.
+   Do not certify six products from six descriptors or enable global telemetry.
+
+For each R&D experiment, record hypothesis, same-brief alternative, source and
+executable revisions, admitted authority, owned process, input/output hashes,
+elapsed time, actual repair effort, usage versus billed cost, failure/recovery,
+decision and next falsification. Stop on denied admission, unexpected effects,
+secret exposure, occupied ownership, output/deadline cap or unconfirmed outcome.
+
+Deliver a tested usable artifact and a short evidence-backed report. Obtain
+independent review of the final exact revision before consequential merge or
+release. Save the handover only in ops-hub's three existing files and comment on
+SIS144/creator issue4 as applicable. Preserve old records and unfinished goals.
+Report source merge, package publication, native runtime behavior and community
+acceptance separately.
+
+
 ## Estate management: use accepted main and continue source recovery
 
 Ops213 merged at b4b82e3d1430846d62707973a66584de4f2e4776 from reviewed589e0d4.
