@@ -7,8 +7,8 @@ requires customer keys, binds provider identity, ignores caller tiers and denies
 unadmitted funded tools. Exact compatibility GET/POST reaches its own admission
 without cookies. The operator route contains only403; CodeQL analysis AND findings
 pass after legacy host removal. Deferred errors use fixed client/server messages.
-All19 native cases/types/lint/format pass. Compiled a311 desktop/mobile/reduced
-motion passes;713 full build/browser pending. Current713 preview is READY and15
+All19 native cases/types/lint/format and current713 full CI/security pass. Compiled
+desktop/mobile/reduced-motion passes. Current713 preview is READY and15
 safe HTTP contracts pass. Grok a311 PASS had one medium now fixed; complete713
 source review running and required before release. Production READY at accepted
 e739; this repair not promoted. [Issue529](https://github.com/frankxai/arcanea-ai-app/issues/529)

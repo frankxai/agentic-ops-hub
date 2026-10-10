@@ -6,8 +6,8 @@ Continue full goal `01a123df-58c6-72f3-b86c-65083426cf65` and Arcanea issue529.
 Read today's session/PR554 and requery heads. Own lane
 `C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010`,
 branch `agent/codex/gateway-admission-20261010`, published7135673753 from accepted
-e739. All19 native cases/direct types/lint/format and current Linux lint/types/
-CodeQL analysis/findings pass; full build/browser pending. Current713 READY preview
+e739. All19 native cases/direct types/lint/format and current full Linux CI/
+CodeQL analysis/findings/compiled browser pass. Current713 READY preview
 passes15 safe HTTP contracts. Public operator implementation removed,403 retained;
 deferred errors sanitized in client/server. Preserve customer-key-only/tool denial
 boundaries. Poll final frozen reviewer handle7869 (05:36UTC, deadline06:21UTC),
