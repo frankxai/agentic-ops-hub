@@ -1,6 +1,16 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 
+## Arcanea adoption: verified image review and stale fixture discovery
+
+Independent review of8b91ac129e is verified PASS, actual model gemini-3.1-pro-preview, zero critical/high/medium findings. All22 complete source hashes match Git blobs, receipt/manifest packet hashes agree and the final response hash is verified. Workflow38114865985/artifact11692878124. Formal receipt: https://github.com/frankxai/arcanea-ai-app/pull/574#issuecomment-6105891501. Fresh hosted types/lint pass; Build remains running and authenticated/CodeQL acceptance is unearned for this draft. Keep the four review limitations visible.
+
+The saved private author test-account setup was found in the existing objective evidence without exposing credentials. Fixtureestrxcuwacntfeafqttz is inaccessible now: connector SQL connection timeout, project lookup not found, public Auth health DNS gaierror. This does not prove deletion; do not attempt stale account sign-in or certify current acceptance from its oldera74d7fc0 head. Private freshness receipt: author-existing-fixture-freshness-20261011.json. Existing scripts/run-world-service-fixture.mjs provides a reusable GitHub-hosted disposable PostgreSQL17/GoTrue/PostgREST rail with local-only gateway and deterministic or explicitly gated real provider comparisons. Inspect/reuse that accepted rail for image Studio/Page and PostgreSQL recovery acceptance without new hosted vendor/project spend. Its current world branch/actor guards remain intact; any scoped extension needs ownership, exact-source review and fresh checks.
+
+Hub draft248 now holds the current record; product issues529/276 hold the repair update. No production/auth/provider/financial writes and no owned local workers remain. The broad goal stays ACTIVE.
+
+
+
 ## Arcanea adoption: image transport repair pushed, acceptance remains open
 
 Active goal/thread01a123df-58c6-72f3-b86c-65083426cf65 continues under Frank's full production/protected-merge authority. PR574 is draft at8b91ac129e9caaf327a0a01f8e5069b49b9fc11c. Two transport reproducers failed against9160f899 before correction. All64 native billing/generation tests, six changed TypeScript files' ESLint, nine files' formatting and staged secret checks pass. Native coverage is now part of required CI. Gemini review workflow38114865985 is running on exactly8b91ac129e; no verdict or hosted acceptance is claimed yet.
