@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Nine Creator package names staged with verified reviewed bytes
+
+Creator accepted69fca157 has ten artifact and both installed-consumer receipt validations. Nine missing package names are now staged at0.1.0; every downloaded staged tarball matches its reviewed SHA256, and native registry validation completed for all nine. Real-version promotion, provenance and publisher/OIDC authority remain pending. Creator-mcp0.1.1 was not restaged. Expected publisher binding is frankxai/starlight-creator-mcp / npm-release.yml / npm-production; owner sign-in/2FA is requested because trust settings return403. Preserve immutable stage IDs and reconcile staged versus direct-publish/provenance semantics before protected approval. Source, managed-platform, merchant and actual creator-value gates remain open. [Creator4](https://github.com/frankxai/starlight-creator-mcp/issues/4) and [session](sessions/2026-10-11.md).
+
 ## 2026-10-11: Higgsfield reader test is green; production and signoff are not
 
 FrankX production is still `34296a060e1fc92f2c211a159068eb08a6058965` (PR 959, deployment 6990789453). PR [963](https://github.com/frankxai/frankx.ai-vercel-website/pull/963) is open at `cce19cb80e255190e29f4f3c699cb45c8d0410ae`. Required checks on that SHA passed, including the CI reader journey. `mergeStateStatus` is UNSTABLE because a duplicate job named `review-gate` was cancelled. The required status context `Review Gate` succeeded. Antigravity has not signed `cce19cb`. Swarm preflight was HOLD at 4064 MB free against 10240 MB required, so no AGY process was started. Checkout stays closed. The affiliate hop stays `https://higgsfield.ai?fpr=frank-255866`. Income PRs 16-19 and frankx PR 901 stay unmerged. [Issue 962](https://github.com/frankxai/frankx.ai-vercel-website/issues/962) and [session](sessions/2026-10-11.md). The Q4 launch goal stays active.
