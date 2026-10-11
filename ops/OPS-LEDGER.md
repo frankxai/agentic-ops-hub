@@ -1425,3 +1425,26 @@ WARN with three unsupported concerns reconciled against current primary sources,
 with omitted record files explicitly outside that model review. Raw failures,
 the hub conflict-marker repair and interrupted dependency auto-repair are retained.
 See [today's evidence](sessions/2026-10-11.md) and [next action](NEXT-PROMPTS.md).
+
+## Arcanea selected edition proofs and live verification gap — 11 October 2026
+
+Reader PR573, routing PR575 and strategy/prompt hub PR252 are merged. Current-source
+reader CI/captures were inspected; routing passed 90 cases locally and in the
+receiving 3b8120b4 hosted step with zero skips/failures. That full run was later
+cancelled. The receiving 0661416b workflow is red in the provider/account browser
+fixture, with a diagnostic handed to PR576's owner. Production was observed
+READY at 0661416b with matched aliases/HTML deployment markers, but all four
+featured chapter initial documents contain zero visible article prose. A concrete
+direct-renderer/no-JavaScript patch is prepared and syntax-checked, deliberately
+unapplied because PR560's reader component remains held by its unfinished owner.
+
+Dragonborne: The Last Clutch is the selected engineering candidate. Complete
+seven-chapter private HTML and EPUB proofs now exist with exact source hashes,
+basic packaging and separate actual-artifact ordered-text/navigation checks.
+EPUBCheck, e-reader/print rendering, approved metadata/cover, manuscript/canon/
+rights and checkout/delivery/refund acceptance remain open. No release approval,
+publication, paid model call, creative superiority or managed API activation is
+inferred. See [today's receipts](sessions/2026-10-11.md) and [owner/edition issue280](https://github.com/frankxai/arcanea-ai-app/issues/280#issuecomment-6106348256).
+The [full lead brief](plans/2026-10-11-arcanea-community-lead.md) remains accepted;
+the next prompt names actual owners and remaining verification. Other fronts,
+source failures and private evidence are preserved. The founder goal stays active.
