@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea guides merged and production source verified
+
+- Handover ownership blocker recovered in an isolated checkout on the same branch. Three file hashes/17,647-byte patch and three unchanged foreign reservations verified; supported ops claim/gate passes. Existing hub242 records the current revision and remote checks. Full creator acceptance remains open: two complete chat reviews timed out; one13-file consumer response is rejected; Claude CLI is logged out. Provider preferences remain a shared-store/account-binding gap confirmed only by a synthetic pure-helper check.
+- [Merged PR566](https://github.com/frankxai/arcanea-ai-app/pull/566), main `5745705c6f881d250d6a46336a6662de0d746d24`; full tree matches reviewed72782cb8. Five source/proposal docs only; eight seats/nine missions/seven income channels remain proposed runtime/demand.
+- Candidate CI38109468579 and receiving CI38109840590 build/typecheck/lint pass; receiving CodeQL38109840501 analysis passes. Author/customer CI jobs skipped. NVIDIA full13-source WARN retained, source-based reconciliation records no supported remaining docs defect; earlier missing-evidence link fixed, incomplete Cohere PASS rejected. Reported model cost US$0.
+- Production dpl_4WBFRPvwW9wdWmXvCDsHaF8ehcdH READY/source5745705c; apex308 → www home/chat HTTP200 with matching HTML deployment ID. Application code unchanged; SSR proof is not customer acceptance.
+- Founder Node24/pinned-pnpm decision recorded; MCP public distribution517 and durable-runtime decision284 remain open. Preserve frozen567/086f2fe1,560/e6691535,562/86a412ef and all owners. Full founder goal active; no owned local worker/watcher remains. Pickup sessions/2026-10-11.md, hub242 and programme276.
+
 ## Arcanea team priorities and founder runtime decision
 
 - [PR566](https://github.com/frankxai/arcanea-ai-app/pull/566), source `76e2b2d78ccc2c16a4ee2ad94e0f2042ff2aeda7`: refined world-first delivery order, correct integrated-versus-npm MCP claims and explicit founder Node24/pinned-pnpm selection. Five-doc proposal; no active Queen team or launch.
