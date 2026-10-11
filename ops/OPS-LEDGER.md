@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Account credentials merged; SDK callback follow-up passes CI
+
+Frank merged [credentials 576](https://github.com/frankxai/arcanea-ai-app/pull/576) as `0661416`; production metadata is READY at that source. Its accepted head excluded the later SDK callback repair. [Draft 578](https://github.com/frankxai/arcanea-ai-app/pull/578), head `3a22e0ae`, repairs the reproduced stale-account callback race with explicit Chat instances and preserves accepted main. [CI 38120918429](https://github.com/frankxai/arcanea-ai-app/actions/runs/38120918429) passes types, lint, build, native regression and compiled desktop/mobile/reduced-motion fixtures. The same-head preview is READY. A separate read-only canonical chat probe returned HTTP 200 with no login or outbound mutations.
+
+The browser account fixture uses synthetic auth events and intercepted transport; real protected-settings saves remain open. Full static review passed at e2674c90; 19 of 21 hashes match the final head. The final full review timed out and the partial module was malformed, so final independent approval remains open. Earlier failures and the partial core WARN are retained. No follow-up promotion, live provider, billing, database, secret or permission change was performed. The broader programme remains active. See [the session](sessions/2026-10-11.md) and [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276).
+
 ## 2026-10-11: GitOps upgrade verified and one completed checkout recovered safely
 
 [Config PR115](https://github.com/frankxai/starlight-agent-config/pull/115) merged as `8997345326ab9bc88239dc7a668e8f19ff1d368e`; required checks and receiving-main CI38114309456 pass. Exact-reviewed candidate `a383ef30` is installed, with 37 doctor checks and actual scope-denial/secret-chain proof. Audit phases reserve worktree/cost time; installed source and projection targets remain protected. The two-day limited task retains its settings and returned 0 during a RAM hold. A later 4.65-second installed audit checked 8 repositories/8 worktrees and observed US$73.680468981 Actions usage; cap and overall savings remain unverified.
