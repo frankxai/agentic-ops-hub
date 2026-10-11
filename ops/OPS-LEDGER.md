@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Actual hosted Memory runtime and Voice evidence checked
+
+Foreign PR29/add74540 runtime artifacts38107757518 downloaded and independently recomputed: Linux/Windows pinned MiniLM/Granite vectors remain normalized with cosine above0.9999999999994, exact four-query hybrid/semantic rankings and zero warm-cache document calls. Tested synthetic merge68a698b4 equals the full source tree; Linux LF and Windows CRLF source hashes bind correctly. Native full hosted logs confirm302 full-CI tests and14 signed SDK HTTP/Voice contract tests, zero failures/skips. Candidate audits clear; historical baseline install still reports6 vulnerabilities. Hosted sampled RSS426.43–621.51 MiB is not a local RAM or fair cold-start comparison. [Issue8 evidence](https://github.com/frankxai/starlight-memory/issues/8#issuecomment-6115266054).
+
+PR29 remains foreign draft pending E2 retrieval-quality/source-owner decision, actual receiving/package delivery and live owner deployment. PR33 missing final Windows24/aggregate and SIS review-policy gates remain open. Machine HOLD2015 MB free RAM: no install/model/browser/server/local agent. Private complete logs/receipts/native reconciliation retained; no private-note reads or paid calls. Full ecosystem/managed goal ACTIVE.
+
 ## 2026-10-12: Memory integrity implemented; exact final consumer matrix held
 
 [Memory PR33](https://github.com/frankxai/starlight-memory/pull/33) at `3eec9aefd4a672845fa58da84ea4dd90e758dbd0` fixes newline metadata injection with a versioned JSON codec and reader-first deployment contract. Native65/65 and hosted326/326 pass. Actual235806-byte/124-file archive SHA256 `732771bb82d76ac0e36b1c8cdc8740ba99ff062332f0c5e4e0de76ceb5e53f96` passes five installed consumers; Windows24 never started because GitHub reports account billing/limit failure. The genuine five-receipt collector rejects completeness. Earlier-source six-consumer success does not approve final source. No billing/visibility changes or gate bypass. Merge, receiving-main proof, deployment and publication remain pending.
