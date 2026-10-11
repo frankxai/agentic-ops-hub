@@ -2,6 +2,18 @@
 
 ## Current npm ecosystem and managed activation prompt
 
+Continue full authorized goal. Creator6 merged69fca157, reviewed7d4128b, Jules4039933792079044115 PASS validated132 source paths/two reports. Full release38117483944 build/lint/tests/release-contract/audit/archive secret verification and both identical-release-byte consumers PASS. Ten downloaded tarballs/source/graph/digests verified;11 checks perOS. artifact-proof-creator-release-38117483944.json records compiled/data/docs byte matches and only dependency-key order changes in two manifests. Preserve original failed comparator; no cross-build byte-equality claim. Fresh release-integrity registry check all10MISSING. No registry publication.
+
+Hosted publication WAITING required npm-production owner review, main-only policy. Keep pending until native profile/2FA and all ten trusted-publisher identities/direct-publish permissions verified; profile/trust403 remains. No token/global rotation or reserved SIS stage changes. Artifacts expire in seven days; reconcile exact registry versions/receipts before approval or recovery. Keep accepted-main source/independent-review identity, no admin bypass.
+
+SIS359 exact33a6a972 draft,19pass/3skip/nine DOM receipts. Current14-file frozen admission3 packet copied without omissions. Standalone BOUNDED7166/6144 became runner HOLD5593/6144MB,27/12runtimes before spawn; no stream/worker. Do not rerun admission3 and overwrite evidence. Preserve prior admissions; actual capacity recovery precedes one newly receipted AGY review. No reduced reserve, foreign closure, fourth worktree, Jules lockfile bypass or v0 mislabeled as admitted provider. Browser cause/image approval unresolved.
+
+GenCreator peer main advanced tod015297; previous readiness503/ad55818 historical. EU isolated schema empty at last read; Stripe account reachable but Managed Payments eligibility unverified. Retain eligible Stripe Managed Payments/Lemon Squeezy fallback, Polar pack licensing and consented legacy buyers. Paid preview$0.01344/hour+usage remains undecided; no DB/Auth/env/customer/catalog changes. In free owned lane finish durable raw-signature inbox/projection/outbox/grants, tenant-denial/restore, funded reservations and actual generate/edit/reopen/export/settlement. Prices/caps/seats hypotheses or unwired. Save existing hub217/Creator4/SIS329/GenCreator5. Goal active; no local workers, hosted approval pending.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem and managed activation prompt
+
 Continue the full authorized goal. Creator6 MERGED main69fca1575a853eb39ed29a499ea01061336d4248, reviewed7d4128b764447f4c0d6ef1dd0a51f218a5c8e402, exact treee2d6fbdf. Google Jules4039933792079044115 completed PASS; strict two-report/all132Git-hash-byte/Markdown/digest validation accepted. Source repair11 regressions before/51 S3 tests after; scoped lint and normal secret hooks pass. Accepted-main CI38116509675 all8pass and actual20 archives/11 consumers perOS/11 Windows Linux-byte checks verified in artifact-proof-creator-69fca157.json. Do not redo consumed reviews/downloads or import report patches. Original e723 rejection and b67 two missed defects retained. Owner COMMENTED review records Google acceptance; owner is not the independent checker.12 verified threads resolved; async stack8 merge matched7d with default action/bypass_rules=false and only open lowest PR6. Main parents/tree proved.
 
 No package published. Fresh npm whoami/org role proves frankxai owner but profile and creator-core trust GET E403. Restore native owner sign-in/2FA and verify legitimate trusted publishers; do not rotate globals/use token fallback, approve/reject/restage reserved SIS0.2.0 or infer publisher authority from version absence/read access. npm-production has required Frank review/main-only policy; no approval issued. Confirm accepted-main full release audit/receipt/version/provenance/registry/cold consumers before irreversible publish. Creator Dependabot query reports alerts disabled403; no auth refresh/security-clean claim. Coordinate peer-owned immutable root patch; keep separate SIS215/207/206 alerts.
@@ -10,7 +22,7 @@ SIS359 exact33a6a972 still draft and unmerged. Hosted19pass/3skipped, nine DOM/o
 
 Managed readonly confirms selected gfrfcqyprekhazzugdkr Starlight Platform EU healthy PG17.6.1.155, gencreator_companion tables0. Stripe frankx.ai live connector works, Managed Payments eligibility unverified. Keep accepted eligible Stripe Managed Payments/Lemon Squeezy fallback, Polar existing pack licenses, consented Whop/Stripe links. Preview$0.01344/hour+usage remains undecided; no paid branch/migrations/Auth/env/catalog/customer changes. In an available owned GenCreator lane finish signature-verified durable inbox, ordered grants/outbox, tenant-denial/restore, funded reservations and actual generate/edit/reopen/export/settlement. Prices/caps/seats are hypotheses/unwired. Maintain hub217 and existing Creator4/SIS329/GenCreator5. Full objective active.
 
-## Earlier prompts retained for provenance
+
 
 ## Current npm ecosystem and managed activation prompt
 
