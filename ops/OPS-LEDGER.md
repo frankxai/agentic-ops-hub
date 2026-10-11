@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Dragonborne v5 cold read complete; private v6 and reader revision pending acceptance
+
+All seven private v5 chapters are cold-read; private v6/620729b9 has 32 source-bound proposals and original-source patch applicability. Complete v5 plus all v6 changes are inspected, with no fresh whole-v6 or independent/human approval claim. V6 HTML/EPUB preserve 38,770 ordered word tokens and navigation; actual v6 EPUBCheck is deferred under the fresh 1190 MB RAM observation, below the 4 GiB floor. Earlier versions and first-build corrections remain evidence. Source and locked canon are unchanged; publication, device, print, compiler, rights and delivery gates stay open.
+
+Active reader owner PR581 has passing hosted evidence at b1ec690f and a newer capture-timing revision39073b07 with CI38137289342 in progress. Its gate permits React inline reveal and blocks app bundles; complete JavaScript-disabled reading remains open. Preserve held560 and earlier production5328 failure. Runner582 receiving checks pass; the proposed capped24-call Aion comparison remains unrun with pending funding/credential. See [release280](https://github.com/frankxai/arcanea-ai-app/issues/280), [programme276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md). The founder goal remains active.
+
 ## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
 
 Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.
