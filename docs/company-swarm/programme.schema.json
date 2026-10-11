@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Company swarm proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "programmeId",
+    "status",
+    "authority",
+    "sourcePins",
+    "admission",
+    "teamPolicy",
+    "waves",
+    "lanes",
+    "acceptance"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "programmeId": {
+      "type": "string"
+    },
+    "status": {
+      "const": "proposal"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "sourcePins": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registry",
+        "visRemoteMain",
+        "rejectedBriefRevision",
+        "refreshBeforeExecution"
+      ],
+      "properties": {
+        "registry": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "visRemoteMain": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "rejectedBriefRevision": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "refreshBeforeExecution": {
+          "const": true
+        }
+      }
+    },
+    "admission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "admitted",
+        "executionStarted",
+        "requiresTrustedServerReceipt",
+        "workersStarted",
+        "reason",
+        "actualBudgetsRequired"
+      ],
+      "properties": {
+        "admitted": {
+          "const": false
+        },
+        "executionStarted": {
+          "const": false
+        },
+        "requiresTrustedServerReceipt": {
+          "const": true
+        },
+        "workersStarted": {
+          "const": 0
+        },
+        "reason": {
+          "type": "string"
+        },
+        "actualBudgetsRequired": {
+          "const": true
+        }
+      }
+    },
+    "teamPolicy": {
+      "type": "object"
+    },
+    "waves": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "W0",
+          "W1",
+          "W2",
+          "W3",
+          "W4",
+          "W5"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "lanes": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "$ref": "#/$defs/lane"
+      }
+    },
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stages",
+        "implementationComplete",
+        "releaseApproved",
+        "productAccepted",
+        "noCriticalFailureCanBeAveragedAway"
+      ],
+      "properties": {
+        "stages": {
+          "const": [
+            "proposed",
+            "implemented",
+            "executed",
+            "independently-reviewed",
+            "customer-accepted"
+          ]
+        },
+        "implementationComplete": {
+          "const": false
+        },
+        "releaseApproved": {
+          "const": false
+        },
+        "productAccepted": {
+          "const": false
+        },
+        "noCriticalFailureCanBeAveragedAway": {
+          "const": true
+        }
+      }
+    }
+  },
+  "$defs": {
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "wave",
+        "dependsOn",
+        "admitted",
+        "repo",
+        "origin",
+        "baseRevision",
+        "branch",
+        "owner",
+        "files",
+        "actualCashCap",
+        "actualTimeLimit",
+        "prompt",
+        "evaluationIds",
+        "requiredAssignmentFields",
+        "stopOn"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^S[0-9]{2}$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "wave": {
+          "enum": [
+            "W0",
+            "W1",
+            "W2",
+            "W3",
+            "W4",
+            "W5"
+          ]
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "admitted": {
+          "const": false
+        },
+        "repo": {
+          "type": "null"
+        },
+        "origin": {
+          "type": "null"
+        },
+        "baseRevision": {
+          "type": "null"
+        },
+        "branch": {
+          "type": "null"
+        },
+        "owner": {
+          "type": "null"
+        },
+        "files": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "actualCashCap": {
+          "type": "null"
+        },
+        "actualTimeLimit": {
+          "type": "null"
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "evaluationIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "requiredAssignmentFields": {
+          "type": "array"
+        },
+        "stopOn": {
+          "type": "array"
+        }
+      }
+    }
+  }
+}

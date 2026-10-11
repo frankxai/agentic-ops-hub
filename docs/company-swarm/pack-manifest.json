@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "status": "proposal-integrity-only",
+  "authority": "Hashes grant no permissions and do not prove product behavior or independent review",
+  "files": [
+    {
+      "path": "docs/COMPANY-BUILD-BUY-ECONOMICS.md",
+      "sha256": "6d4b0bc188d1ec74e92b202cf8cbbfbd51c570a4abc7fc1b522a86eb42471012"
+    },
+    {
+      "path": "docs/COMPANY-SWARM-BUILD-PROGRAMME.md",
+      "sha256": "a93aad880fd4fc96fbdd269ad0710bb485f6540be5fb0d37381c6a605187ecf9"
+    },
+    {
+      "path": "docs/COMPANY-SWARM-COORDINATOR.md",
+      "sha256": "174b7815c9953bbbb893259e54317d7d1a3a97e001eb50f3a144fbfecf14aa10"
+    },
+    {
+      "path": "docs/COMPANY-SWARM-LANE-PROMPTS.md",
+      "sha256": "c40e6222a84d7b49bcfb36f8ba44383f3cb7d05d0fb098b7d0fe89d4da59d3e6"
+    },
+    {
+      "path": "docs/company-swarm/programme.json",
+      "sha256": "93a794be38e97e0ed74cf9f01a704d010006caf83bbcbde661c7570d74261cc3"
+    },
+    {
+      "path": "docs/company-swarm/programme.schema.json",
+      "sha256": "5efc9a349f121e2b2486860ad7a328fd50031ed681732011165c40234faf6a78"
+    },
+    {
+      "path": "docs/company-swarm/evaluations.json",
+      "sha256": "ac25d51349f70c623ec9c94140e0b01c66f78cc0a9012bc43bd9fed6a8093746"
+    }
+  ]
+}

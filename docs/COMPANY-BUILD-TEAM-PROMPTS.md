@@ -1,5 +1,7 @@
 # Company build team: executable briefs
 
+Status: this brief set was rejected for insufficient depth on 11 October 2026. Use the [full swarm programme](COMPANY-SWARM-BUILD-PROGRAMME.md), [coordinator prompt](COMPANY-SWARM-COORDINATOR.md), [sixteen detailed lanes](COMPANY-SWARM-LANE-PROMPTS.md) and [build/buy economics](COMPANY-BUILD-BUY-ECONOMICS.md). The original revision remains at `a4d85dbb1b70b21ac41cad3f666f63c4027a544b` for provenance; it does not establish implementation acceptance.
+
 TL;DR: Use one capable lead, assign each implementation slice an existing product home and exclusive files, and prove the DAM/CMS journey before expanding the installation and company modules.
 
 Prepared 11 October 2026. These prompts are proposed execution briefs, not started agents, granted permissions or completed products. Read [foundation choices](COMPANY-FOUNDATION-CHOICES.md), [company architecture](AGENT-OPERATED-COMPANY-ARCHITECTURE.md), current repository instructions and existing issues before execution. Refresh source commits and ownership; the inspected VIS main revision was `812c538cdc2f773cd0735ffb49edbeac0b0116e9`.
