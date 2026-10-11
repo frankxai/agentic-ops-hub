@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: second-brain Jules session may open a draft only
+
+Session [3840010354543266367](https://jules.google.com/session/3840010354543266367) asked to open a pull request for a four-file idea-capture diff on second-brain-os. The reply told it to open a draft, request review, and leave every other file alone. It must not merge, deploy, or mark the pull request ready. After the reply, `auf` returned to 0. No new packet was sent. Daily stayed 20/100.
+
 ## 2026-10-11: noopener head is green and one commit behind main
 
 FrankX [961](https://github.com/frankxai/frankx.ai-vercel-website/pull/961) at `1f8468fb1933efc5ed5fdb922211266936b5a3a5` has combined commit status success. CI run [38141054531](https://github.com/frankxai/frankx.ai-vercel-website/actions/runs/38141054531) passed. Review Gate run [38141239822](https://github.com/frankxai/frankx.ai-vercel-website/actions/runs/38141239822) is success. The branch is BEHIND by `59a4d4bf9` (#960). GitHub reports MERGEABLE. #960 does not touch the noopener files. reviewDecision is empty. This login did not sign or merge.
