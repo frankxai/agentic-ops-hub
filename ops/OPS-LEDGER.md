@@ -9,6 +9,8 @@ Provider 578 is merged at 97801884 and receiving CI/security pass; READY product
 <!-- npm-managed-20261011:start -->
 ## Npm and managed activation, 11 October 2026
 
+- MCP Doctor release [9](https://github.com/frankxai/mcp-doctor/pull/9) and corrective [10](https://github.com/frankxai/mcp-doctor/pull/10) merged, latest main1fa90823. Initial runner-context422/staticPASS gap preserved; fresh exact Google6627997099637246078 and four61+26 candidate jobs accepted. Main CI38132624280 passes4; actual verify38132662618 passes source,4 matrices and same-byte handoff/registry checks with stage skipped. Owned no-file-delta ref denial38132725161 is verified with no artifacts. [Issue8](https://github.com/frankxai/mcp-doctor/issues/8#issuecomment-6108199293) remains open for legitimate OIDC trust/human2FA/public integrity and fresh consumer; no registry mutation.
+
 - SIS #359 merged `72dbb8fa` after exact-source Gemini review and ready-state CI. Browser diagnostics preserve original failure and visual limits.
 - SIS #360 merged `4c7e010d` after exact `31de59e3` Jules review; four accepted blobs match and 13 latest checks pass. Real Windows receipt defect reproduced and fixed; nine tests and actual receipt pass. Unmeasured reviewer coverage rejected; final preflight historical-skip error and subsequent merge are recorded.
 - SIS #361 guide merged `8e683011` under active [ruleset 24873080](https://github.com/frankxai/Starlight-Intelligence-System/rules/24873080). Exact five-file review, 14 latest CI checks, real hosted denial/acceptance and normal merge under enforcement verified. Required PR/current-base review, harness and scan checks bind to app 15368; no bypass actors. Existing protection and ruleset 18873540 unchanged. Same-app writer trust/model/race limits remain; no universal certification.
@@ -2177,3 +2179,11 @@ head or live auth/settings/provider use. Main stayed0661416b with failed receivi
 CI, and PR560's held reader repair remains unapplied. EPUBCheck/storage admission,
 manuscript/canon/rights, creator pilot, model funding and managed-supply gates stay
 open. See [current evidence](sessions/2026-10-11.md) and [pickup](NEXT-PROMPTS.md).
+
+
+### 2026-10-11 SIS plugin dependency security candidate
+
+- Draft [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362), head6dd836e8fe8ed58f377cc19810a2c535725ec6fa/base8e683011, two plugin manifests only; patched SDK1.31/client-core-server2.2 with agents-scoped overrides; current handler/auth preserved.
+- Actual plugin38134169582 passes clean install/0 reported vulnerabilities, validation/typecheck,21pass0fail0skip, build and health200/anonymous401 smoke. Ecosystem38134169607 all six jobs pass, including four Node22/24 Windows/Linux matrices.
+- Exact independent review pending: frozen220633-byte packet SHA25665bdb8396a10a076a7b78de619455c323d8dd4be866298a9236ca2c9f5e021be; launch-time review-lite HOLD6048/6144required/projected4000, no AGY worker launched. Jules lockfile guard unchanged. Protected review check correctly fails; PR remains draft/unmerged and alerts206/207 open on main.
+- Both saves: [SIS329 checkpoint6108383944](https://github.com/frankxai/Starlight-Intelligence-System/issues/329#issuecomment-6108383944), this session journal and current pickup. Reused owned WT/explicit scopes/native leases; foreign work preserved; no live worker/deploy/publication/account/customer mutation. Next admitted exact review, normal protected merge and main CI/alert closure. Root/site/Creator/MCP publisher and managed customer gates stay open; full goal active.
