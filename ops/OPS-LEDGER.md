@@ -1519,3 +1519,10 @@ all human release gates remain open. Private files were not published.
 GenCreator PR #203 is released with bounded live browser-copy recovery verified. Arcanea ready PR #579 preserves accepted main and five owned blobs, but combined-source CI 38123462180 failed mobile header clearance and a separate Chat provider fixture. Its original failure capture was inspected; the hosted keyboard timeline did not reproduce it or prove the cause. Preserve account-owner PR #578. No Arcanea promotion occurred.
 
 FrankX candidate 08044a6 has independently reviewed source and final corrections. Required local type/lint/build and actual browser proof remain held; it is unpushed and unreleased. The native design mission remains active to 15:26:56 UTC, with two additional qualifying releases open. The allowance is $25 existing credits; observed native team usage is 0.0103 plan-credit units, not an asserted dollar cost. Storage remains above the hard floors, and other sessions are preserved. See the current [session checkpoint](sessions/2026-10-11.md) and owning GenCreator #5, Arcanea #276, FrankX #339 and Design #48. Hub conflict recovery preserved both texts and foreign prompts.
+
+
+## 2026-10-11 08:58 UTC: editor browser pass and remaining release gates
+
+Arcanea dd29f2d / PR #579 passes the complete five-mode world-editor browser journey in CI 38125608173, with tree-bound original captures and final source STATIC PASS. Overall required CI still fails in the inherited account-provider fixture; preserve its owner PR #578 and the earlier overlap failures. No Arcanea release occurred.
+
+FrankX 08044a6 remains source-reviewed locally and unpushed under a fresh build HOLD. GenCreator is released with bounded live recovery verified. The mission remains active to 15:26:56 UTC; two additional qualifying releases remain open. Native observed team usage is 0.011 plan-credit units, with no asserted dollar conversion. Storage is above the hard floors. See the [current session](sessions/2026-10-11.md) and existing GenCreator #5, Arcanea #276, FrankX #339 and Design #48; preserve foreign records, active sessions and prepared identity work.
