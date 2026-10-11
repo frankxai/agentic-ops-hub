@@ -13,6 +13,7 @@ Authors, educators, speakers and founders need to reuse sources while preserving
 | Host revision/MCP | Common scoped contract lets hosts reuse work without losing provenance. | Accepted code/earlier tests. Managed MCP needs issuer, real scoped tokens and accounts. Public stateless transforms remain separately bounded. |
 | Supabase sessions + Starlight links | Verified GenCreator sign-in and explicit consent link to canonical Starlight membership; retry/remove without implicit privileges. | Frank's choice/ADR013/PR196 accepted. Live auth/link configuration and prepared schema absent. |
 | Durable managed workspace | Save/reopen/retry safely and resume decisions/drafts after interruption. | Reviewed fourteen-table renderer/store tests. Provisioning, backups and two real actors' isolation/recovery pending. |
+| Bounded readiness/configuration | Operators distinguish portable availability from managed configuration and exposed persistence. Failures stop probes within three seconds without counting customer rows. | Published e705527;23 actual-SDK fake-transport cases plus58 Node cases, independent source-only review, READY preview with truthful503. Genuine CI and live managed acceptance remain pending. |
 | SDK/ADK/SIS | Other assistants/developers consume the same source-aware artifact contract. | Existing implementations and limited portable proofs. Distributed cold installs, real scoped calls/cancel/restart and receiver/router acceptance need existing owners. |
 | Devices/memory | Cross-device resume and tenant-scoped recall/delete/expiry. | Browser/PWA code exists. Actual devices, native installs and memory recovery/delete unproved. |
 | Community/subscription | Learn repeatable workflow, share permitted work and later buy a scoped offer. | Plans exist. Demand, retention, entitlements/refunds, rights and economics unproved. Public alpha checkout/autonomous publication disabled. |
@@ -25,6 +26,6 @@ Per-harness fresh native adoption, foreign Claude projection and unmanaged machi
 
 Local code/testing/review/public smoke need no Actions. PR202 defers four validation jobs on drafts, while its slim aggregate rejects incomplete checks. Ready releases require genuine lint/types, unit, build and E2E. Batch revisions, reuse previews/cache, diagnose before retries.
 
-Last Actions usage$76.31 exceeds reported cap$75; personal scope is not API-visible. No extra jobs/budget edits follow from that observation. Vercel CLI provides a separately reviewed route with cost/environment/acceptance checks and cannot replace protected Git evidence. No unattended runner/external attestation service installed.
+Last Actions usage$77.81 exceeds reported cap$75; personal scope is not API-visible. No extra jobs/budget edits follow from that observation. Vercel CLI provides a separately reviewed route with cost/environment/acceptance checks and cannot replace protected Git evidence. No unattended runner/external attestation service installed.
 
 Measure all attempts and human repair per accepted artifact against native assistant plus Markdown/manual workflow. Savings and commercial/cohort goals remain unmeasured targets.

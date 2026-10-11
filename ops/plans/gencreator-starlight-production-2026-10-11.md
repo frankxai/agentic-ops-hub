@@ -19,6 +19,8 @@ Accepted product: ADR-007/010 and CreatorPack. Frank confirmed Supabase sessions
 
 The first managed milestone is a verified creator journey. Configuration checks and READY deployment are supporting evidence and cannot close creator acceptance, native-app delivery or commercial goals.
 
+Product source e705527 is now independently reviewed and published with a READY preview; readiness/configuration are supporting gates. See the latest session for exact checks, coverage follow-up, preserved failures and remaining release/activation dependencies.
+
 ## Current evidence and decisions
 
 Refreshed 11 October:
@@ -28,8 +30,8 @@ Refreshed 11 October:
 - Vercel CLI reports no variables in gencreator-ai, team starlight-intelligence, project prj_nIryRFHID247Sh0DEp2oH1T4amnO. Connector environment inspection returned 403; successful CLI fallback was used.
 - Recommended database: existing EU Starlight Platform gfrfcqyprekhazzugdkr, eu-central-1, reviewed gencreator_companion schema. This is the lead's recommendation after “idk you suggest”, not founder approval of production SQL. Metadata finds public but neither GenCreator namespace.
 - Inspected tools expose no secure privileged server-key retrieval or auth/SMTP/Clerk OIDC configuration. Publishable-key access is insufficient. No secrets were printed.
-- Actions usage: $76.314199111, separate from Copilot. Frank approved only $5 extra and reported a $75 cap; actual budget scope/value is not API-verified. Hold new release jobs pending verified allowance. Preserve Stop usage and Copilot.
-- PP admits bounded sequential work only: 9,366 MiB RAM, 69% CPU, 27 Codex runtimes, pause-new-swarms. Recheck before heavy work or review. No new agents, installs, builds or persistent servers.
+- Actions usage: $77.808568267, separate from Copilot. Frank approved only $5 extra and reported a $75 cap; actual budget scope/value is not API-verified. Hold new release jobs pending verified allowance. Preserve Stop usage and Copilot.
+- PP held review at1460MB, then admitted one bounded review at7240MB/77% CPU;27 task runtimes and pause-new-swarms. Recheck admission. One shared cloud reviewer, focused tests and one automatic Git preview ran; no new persistent local worker. A lockfile-verified private esbuild binary recovered tests without editing shared dependencies.
 - CSS hook repeats two unique findings. Main already contains PR194's narrow rule/value/file exceptions for the intentional edition-cover spine and selected-button underline. Preserve them; no CSS fix/new suppression needed. Earlier “no ignores” reporting was inaccurate.
 
 ## Goals and metrics
@@ -72,7 +74,7 @@ Serious alternative: simultaneous client-specific state/identity implementations
 
 | Unit | Outputs/owner | Specification and verification | Dependency |
 | --- | --- | --- | --- |
-| U1: configuration checks | gencreator.ai lead: scripts/preflight.mjs, scripts/tests/preflight.test.mjs, .github/workflows/ci.yml, docs/product/managed-alpha-configuration-20261011.md | Default managed profile accepts publishable-or-anon key with runtime precedence. Explicit portable/linked/MCP/legacy profiles validate their boundaries. Names-only output, no secrets/network/env writes. Native tests cover rejection, malformed flags, dotenv precedence, URLs/schema/link key and configuration-only reporting. Add tests to existing unit step, no new job/gate weakening. | Own lane; executable locally now. |
+| U1: configuration and readiness | gencreator.ai lead: scripts/preflight.mjs, scripts/tests/preflight.test.mjs, .github/workflows/ci.yml, docs/product/managed-alpha-configuration-20261011.md | Default managed profile accepts publishable-or-anon key with runtime precedence. Explicit portable/linked/MCP/legacy profiles validate their boundaries. Names-only output, no secrets/network/env writes. Native tests cover rejection, malformed flags, dotenv precedence, URLs/schema/link key and configuration-only reporting. Add tests to existing unit step, no new job/gate weakening. | Published e705527;23 focused plus58 Node checks; all nine files independently source-reviewed. READY preview, managed readiness503. Genuine protected CI and configured acceptance pending. |
 | U2: secure activation | Existing gencreator.ai renderer, alpha runbook/account-link packet; Vercel and selected Supabase project | Freeze exact additive SQL/hash/target/grants/exposure, preserved namespaces, backup/restore proof, retention/delete constraints and rollback limits. Secure scoped preview first, migration/auth proof, then concrete production approval. | Privileged secret access, auth/OIDC configuration, backups and accepted runbook's explicit migration approval. Paid branch/project requires its own confirmed cost. |
 | U3: actual creation | Existing Studio/stores/tests; exact paths assigned after U2 | Two actors: source→save/reopen→edit→approve→export. Interrupted save, stale approval, duplicate retry, provider outage, cross-tenant request and revoke fail/recover truthfully. Phone/desktop/keyboard/reduced-motion inspection. Real creator acceptance and named alternative. | U2, permitted source, participants/provider access. |
 | U4: clients/router | Existing SIS/SDK/ADK/creator-MCP owners | Reuse accepted adapters. Source-pin package/version/license, install from actual distribution, prove real auth/scopes/cancel/restart and receiver continuity. Publisher/OIDC owner retains release lane. | Stable U3 contract; publisher and harness admission. |
@@ -86,7 +88,7 @@ One Codex lead now. Later, only if PP/storage/cost and explicit ownership admit 
 
 | Lane | Existing checkout/branch | Receiving branch |
 | --- | --- | --- |
-| Product U1 | C:/Users/frank/starlight/worktrees/gencreator-agent-release-20261010; agent/codex/managed-alpha-execution-20261011, base d015297 | frankxai/gencreator.ai/main; four files; lease ops-c9b614bfaaf3315015d3.json |
+| Product U1 | C:/Users/frank/starlight/worktrees/gencreator-agent-release-20261010; agent/codex/managed-alpha-execution-20261011, base d015297 | frankxai/gencreator.ai/main; nine preflight/readiness/test/doc files; lease ops-c9b614bfaaf3315015d3.json |
 | Plan/record | C:/Users/frank/starlight/worktrees/hub-autonomous-ops-20261011; agent/codex/full-execution-contract-20261011, base c36c53b | frankxai/agentic-ops-hub/main; three plans + three handover files; lease ops-e6afea0fb857e3fab57c.json |
 | Guard sources | Retain agent-config-gitops-fairness-20261011 and agent-config-autonomous-ops-20261011 | Previously accepted config PR115; installed links/doctor depend on these trees. No writes this slice. |
 | Starlight identity | Existing starlight-platform-delivery-20261010; PR110/issues82/95 | Foreign owner; refresh and coordinate before integration. GenCreator Supabase does not replace Clerk baseline. |
@@ -113,6 +115,6 @@ Guide hashes: product AGENTS 6414599074ecd550007aa015d33f56d5a3f219d8acd1ac8a936
 
 Preserve PR141's Honor-edition/recovery donor, PR137/148/162 and money/security PR116 until owners reconcile useful unique work. Before cleanup inspect integration, ignored data, locks, consumers and verified recovery. Eight own historically released code leases were reconciled to complete only after merged-source verification and private backups. No foreign lease closed by age; live acceptance/programme stays open.
 
-Installed GenCreator product skill and ce-plan inform this revision. Planning research is inline under machine admission. Host-native ce-doc-review invocation is unavailable. Independent review remains pending: Claude is unauthenticated and the inspected Antigravity CLI cannot provide PP-required empty tool/MCP configuration; prior Grok/Gemini failures are preserved. No review PASS is claimed.
+Installed GenCreator product skill and ce-plan inform this revision. Planning research is inline under machine admission. Host-native ce-doc-review invocation is unavailable. Vercel v0-pro independently approves product e705527 after reading all nine changed files; this source-only review does not execute tests, prove managed acceptance or approve this whole plan. Historical native-provider failures remain preserved. The product feature branch and exact-source Vercel preview are published; zero Actions runs, no normal merge or production change.
 
 Append hub ops/sessions/2026-10-11.md, refresh OPS-LEDGER and one NEXT-PROMPTS entry while preserving foreign records; comment on existing product issue5. [Prompt](gencreator-starlight-execution-prompt-2026-10-11.md) and [capabilities](gencreator-capabilities-2026-10-11.md) continue this contract. Distinguish local, published, production and unknown coverage; no universal enforcement or unseen-chat access claim.
