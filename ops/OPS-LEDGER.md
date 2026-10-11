@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Higgsfield reader test is green; production and signoff are not
+
+FrankX production is still `34296a060e1fc92f2c211a159068eb08a6058965` (PR 959, deployment 6990789453). PR [963](https://github.com/frankxai/frankx.ai-vercel-website/pull/963) is open at `cce19cb80e255190e29f4f3c699cb45c8d0410ae`. Required checks on that SHA passed, including the CI reader journey. `mergeStateStatus` is UNSTABLE because a duplicate job named `review-gate` was cancelled. The required status context `Review Gate` succeeded. Antigravity has not signed `cce19cb`. Swarm preflight was HOLD at 4064 MB free against 10240 MB required, so no AGY process was started. Checkout stays closed. The affiliate hop stays `https://higgsfield.ai?fpr=frank-255866`. Income PRs 16-19 and frankx PR 901 stay unmerged. [Issue 962](https://github.com/frankxai/frankx.ai-vercel-website/issues/962) and [session](sessions/2026-10-11.md). The Q4 launch goal stays active.
+
 ## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
 
 Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.
