@@ -6,6 +6,8 @@ Prepared 11 October 2026. Proposed execution programme. No workers, infrastructu
 
 Read [economics](COMPANY-BUILD-BUY-ECONOMICS.md), [coordinator prompt](COMPANY-SWARM-COORDINATOR.md), [lane prompts](COMPANY-SWARM-LANE-PROMPTS.md), [foundation choices](COMPANY-FOUNDATION-CHOICES.md) and [architecture](AGENT-OPERATED-COMPANY-ARCHITECTURE.md). The machine-readable [programme](company-swarm/programme.json), [schema](company-swarm/programme.schema.json) and [evaluation cases](company-swarm/evaluations.json) are planning artifacts. No JSON field grants runtime authority.
 
+Maintain ownership, issues, OSS experiments, design decisions and source freshness through [rolling alignment](COMPANY-ROLLING-ALIGNMENT.md) and its dated capability projection. Run the read-only report when taking up work; reuse existing Projects and issues. No maintenance schedule or automatic agent dispatch is installed by these files.
+
 ## The complete useful outcome
 
 DAM work is optional and is not a prerequisite for the first revenue product. Use existing folders, desktop tools and already-approved assets when they satisfy the selected job. Admit an asset-library improvement only for an observed browsing, retrieval or delivery problem. The commercial DAM estimates describe a broader product, not the minimum internal R2 gallery. Execute the relevant parts of the waves; do not start every module.

@@ -9,7 +9,7 @@
     },
     {
       "path": "docs/COMPANY-SWARM-BUILD-PROGRAMME.md",
-      "sha256": "841a599bb439a29291745ea43784ebaa128bacf92a70b4c626be92ac5519e3bf"
+      "sha256": "03e873f5647d8e307c51cc051749e5bca0d2903f216b4f0bdbfe7101e44b2a94"
     },
     {
       "path": "docs/COMPANY-SWARM-COORDINATOR.md",
@@ -30,6 +30,18 @@
     {
       "path": "docs/company-swarm/evaluations.json",
       "sha256": "ac25d51349f70c623ec9c94140e0b01c66f78cc0a9012bc43bd9fed6a8093746"
+    },
+    {
+      "path": "docs/COMPANY-ROLLING-ALIGNMENT.md",
+      "sha256": "2e99fdf7fa2eff4a735f54852ed07cda3633dc82fa4ef40b0f2370035f4ebc1a"
+    },
+    {
+      "path": "docs/company-swarm/capability-map.json",
+      "sha256": "eb6dcf090d296fc3a51aef0895174ae1872db8d0b934fed0dd87607c635a1018"
+    },
+    {
+      "path": "scripts/company_alignment.py",
+      "sha256": "3a1301c0c4a03a39b8ee819b17918eff2fc88136b7900171c3c308ba746f8f58"
     }
   ]
 }

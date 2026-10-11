@@ -1,0 +1,549 @@
+{
+  "schema_version": "1.0",
+  "status": "proposed-capability-projection",
+  "checked_on": "2026-10-11",
+  "authority": "Private agentic-ops Registry and owning issues; this file grants no canonical mutation, worker assignment or release authority.",
+  "portfolio_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+  "project_views": {
+    "portfolio": "https://github.com/users/frankxai/projects/8",
+    "revenue": "https://github.com/users/frankxai/projects/10",
+    "estate": "https://github.com/users/frankxai/projects/9"
+  },
+  "freshness_days": 7,
+  "source_snapshots": [
+    {
+      "repository": "frankxai/agentic-ops",
+      "sha": "aeb0253c3009579fefc8cd62e87b261648b162e3",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    },
+    {
+      "repository": "frankxai/visual-intelligence",
+      "sha": "812c538cdc2f773cd0735ffb49edbeac0b0116e9",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    },
+    {
+      "repository": "frankxai/gencreator.ai",
+      "sha": "d01529702eef91188c35bc6cbdca6aa7074be9ec",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    },
+    {
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "sha": "34dcd4365266cdb04d35d42e81f771f06f58c145",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    },
+    {
+      "repository": "frankxai/agentic-business-os",
+      "sha": "85089dc1a3232460b6e19a33da5d2ed1a17fcafe",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    },
+    {
+      "repository": "frankxai/starlight-design-intelligence",
+      "sha": "31543da92ea93dbed64f0e02741a08419b25bef7",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    },
+    {
+      "repository": "frankxai/research-intelligence-os",
+      "sha": "c1420af0d9ffdb6d2703d6f66f420eee032831d8",
+      "branch": "main",
+      "observed_on": "2026-10-11",
+      "scope": "Source identity only; no live behavior or release acceptance inferred."
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "B01",
+      "name": "Portfolio and offers",
+      "implementation_candidate": "frankxai/agentic-ops",
+      "owner_status": "accepted-registry",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [],
+      "next_gate": "Resolve the selected buyer job and receiving product from reviewed authority; retain larger portfolio.",
+      "known_gap": "Foundry product packaging uses the existing issue 4, with placement reconciliation.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B02",
+      "name": "Research and OSS adoption",
+      "implementation_candidate": "frankxai/research-intelligence-os",
+      "owner_status": "registry-method-owner",
+      "recommended_mode": "reuse-and-evaluate",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/122",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [],
+      "next_gate": "Admit one source-bound same-task comparison in the receiving product.",
+      "known_gap": "Research issue 3 supplies lineage methods; technology adoption stays with the product/architecture owner.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B03",
+      "name": "Intelligence, memory and agent runtime",
+      "implementation_candidate": "frankxai/Starlight-Intelligence-System",
+      "owner_status": "existing-product-candidate",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B01"
+      ],
+      "next_gate": "Refresh current SIS changes and prove one scoped operation with recovery.",
+      "known_gap": "Earlier SDK/runtime evidence must be rechecked against current source.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B04",
+      "name": "Identity, secrets and permissions",
+      "implementation_candidate": null,
+      "owner_status": "unresolved-per-product",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/140",
+      "tracking_scope": "shared-dependency-or-decision",
+      "dependencies": [
+        "B01"
+      ],
+      "next_gate": "Name the receiving auth/credential owner and verify allowed, denied and revoked actions.",
+      "known_gap": "An architecture/security dependency is not a ready auth implementation issue.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B05",
+      "name": "Workflows and integration",
+      "implementation_candidate": "frankxai/agentic-ops",
+      "owner_status": "accepted-architecture",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B03",
+        "B04"
+      ],
+      "next_gate": "Select one durable owner and reconcile retries/unknown effects for the selected job.",
+      "known_gap": "No new shared queue or mirrored workflow.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B06",
+      "name": "Hosting and provisioning",
+      "implementation_candidate": "frankxai/agentic-ops",
+      "owner_status": "accepted-architecture",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B04"
+      ],
+      "next_gate": "Record actual workload, provider account owner, install and rollback path.",
+      "known_gap": "Vercel/Cloudflare boundaries accepted; Railway conditional.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B07",
+      "name": "Storage, backup and restore",
+      "implementation_candidate": "frankxai/visual-intelligence",
+      "owner_status": "existing-exception-candidate",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+      "tracking_scope": "shared-dependency-or-decision",
+      "dependencies": [
+        "B04",
+        "B06"
+      ],
+      "next_gate": "Select data/master/approval owners; restore one relevant version without losing provenance.",
+      "known_gap": "VIS private R2 exception; older local/shared metadata prose needs reconciliation.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B08",
+      "name": "DAM and visual curation",
+      "implementation_candidate": "frankxai/visual-intelligence",
+      "owner_status": "existing-product-candidate",
+      "recommended_mode": "optional",
+      "tracking_issue": "https://github.com/frankxai/visual-intelligence/issues/40",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B07"
+      ],
+      "next_gate": "Use current files/tools first; admit an improvement only for observed retrieval or approval pain.",
+      "known_gap": "No new DAM or Eagle purchase is a prerequisite to revenue.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B09",
+      "name": "Creator production",
+      "implementation_candidate": "frankxai/gencreator.ai",
+      "owner_status": "existing-product-candidate",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/gencreator.ai/issues/5",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B01"
+      ],
+      "next_gate": "Accept one real editable source-backed artifact, reopen/export/recover it.",
+      "known_gap": "Current-source customer/owner acceptance remains distinct from deployment receipts.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B10",
+      "name": "CMS and publishing",
+      "implementation_candidate": null,
+      "owner_status": "unresolved-per-product",
+      "recommended_mode": "reuse-then-evaluate",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/10",
+      "tracking_scope": "shared-dependency-or-decision",
+      "dependencies": [
+        "B09"
+      ],
+      "next_gate": "Select editorial owner; compare existing Git/content workflow with structured CMS on the same job.",
+      "known_gap": "No new universal CMS or copied corpus.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B11",
+      "name": "CRM and sales research",
+      "implementation_candidate": null,
+      "owner_status": "unresolved-per-product",
+      "recommended_mode": "defer-full-build",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/61",
+      "tracking_scope": "shared-dependency-or-decision",
+      "dependencies": [
+        "B01"
+      ],
+      "next_gate": "Use simple records; measure missed follow-ups and compare exportable OSS/free CRM before custom work.",
+      "known_gap": "Communications issue is a dependency; no dedicated CRM implementation admitted.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B12",
+      "name": "Communications and scheduling",
+      "implementation_candidate": "frankxai/agentic-ops",
+      "owner_status": "existing-outcome-owner",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/61",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B04",
+        "B05"
+      ],
+      "next_gate": "Confirm one provider/account and produce a scoped lead/support case with source-linked proposed action.",
+      "known_gap": "Owning integration lane is selected through issue 61; other mailbox access is unknown.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B13",
+      "name": "Social and distribution",
+      "implementation_candidate": "frankxai/gencreator.ai",
+      "owner_status": "existing-product-candidate",
+      "recommended_mode": "reuse-and-evaluate",
+      "tracking_issue": "https://github.com/frankxai/gencreator.ai/issues/68",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B09"
+      ],
+      "next_gate": "Approve one useful derivative and reconcile its selected-channel outcome/attribution.",
+      "known_gap": "No automatic external post or claimed audience outcome.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B14",
+      "name": "Commerce and delivery",
+      "implementation_candidate": null,
+      "owner_status": "unresolved-per-product",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/35",
+      "tracking_scope": "shared-dependency-or-decision",
+      "dependencies": [
+        "B01",
+        "B04",
+        "B09"
+      ],
+      "next_gate": "Name existing checkout/entitlement owner; verify permitted delivery/refund/export.",
+      "known_gap": "Portfolio issue is a dependency; do not claim orders or revenue.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B15",
+      "name": "Support and community",
+      "implementation_candidate": null,
+      "owner_status": "unresolved-per-product",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/171",
+      "tracking_scope": "shared-dependency-or-decision",
+      "dependencies": [
+        "B12",
+        "B14"
+      ],
+      "next_gate": "Resolve one actual case or access failure and record accepted resolution.",
+      "known_gap": "An existing community plan does not authorize a new paid service.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B16",
+      "name": "Finance and unit economics",
+      "implementation_candidate": "frankxai/agentic-ops",
+      "owner_status": "existing-outcome-owner",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/85",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B01"
+      ],
+      "next_gate": "Reconcile current subscriptions/provider invoices with actual job receipts and founder effort.",
+      "known_gap": "Actual private finance never enters the public projection.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B17",
+      "name": "Analytics and evaluations",
+      "implementation_candidate": "frankxai/Starlight-Intelligence-System",
+      "owner_status": "existing-product-candidate",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/Starlight-Intelligence-System/issues/244",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B03",
+        "B09",
+        "B16"
+      ],
+      "next_gate": "Join attributed job costs, accepted outputs and repair/recovery; preserve unknown ROI.",
+      "known_gap": "Issue receipts and old test scores do not establish current buyer value.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B18",
+      "name": "Engineering and release",
+      "implementation_candidate": "frankxai/agentic-ops",
+      "owner_status": "existing-outcome-owner",
+      "recommended_mode": "reuse",
+      "tracking_issue": "https://github.com/frankxai/agentic-ops/issues/37",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B04",
+        "B06"
+      ],
+      "next_gate": "Compile exact repo/files/budget; independent review and current-source behavior precede release.",
+      "known_gap": "A merged PR or issue closure alone is not live acceptance.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B19",
+      "name": "Design and experience quality",
+      "implementation_candidate": "frankxai/starlight-design-intelligence",
+      "owner_status": "accepted-registry",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/starlight-design-intelligence/issues/48",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B09"
+      ],
+      "next_gate": "Pin receiving brand pack; compare native/v0 direction on the same real task and recovery.",
+      "known_gap": "Design account limitations and source/Registry drift must be refreshed.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    },
+    {
+      "id": "B20",
+      "name": "Customer installation, modules and updates",
+      "implementation_candidate": "frankxai/agentic-business-os",
+      "owner_status": "issue-declared-pending-registry",
+      "recommended_mode": "extend-existing",
+      "tracking_issue": "https://github.com/frankxai/agentic-business-os/issues/4",
+      "tracking_scope": "existing-outcome",
+      "dependencies": [
+        "B03",
+        "B09",
+        "B18"
+      ],
+      "next_gate": "Reconcile Foundry placement; outside founder cold-installs and exports a useful module, then preserves edits through update.",
+      "known_gap": "Existing Foundry product gates remain open; open-core rights and terms are proposals.",
+      "budget": {
+        "hours": null,
+        "additional_api_cash": null,
+        "currency": null,
+        "token_limit": null,
+        "admitted": false
+      },
+      "acceptance_receipt": null
+    }
+  ],
+  "rd_rules": {
+    "candidate_statuses": [
+      "discovered",
+      "screened",
+      "experiment-admitted",
+      "measured",
+      "adoption-proposed",
+      "accepted-by-owning-review",
+      "maintained",
+      "rejected",
+      "deferred"
+    ],
+    "comparison": "Same useful task; include output acceptance, repair, recovery, founder hours and incremental cash.",
+    "license": "Exact upstream version, package/file terms and integration/distribution mode before adoption.",
+    "canonical_changes": "Reviewed owning PR only.",
+    "schedule_installed": false
+  },
+  "agent_access": {
+    "registry": "read/propose; canonical write through reviewed PR",
+    "product_records": "server-enforced workspace and operation grants",
+    "repository": "one named writer per admitted worktree",
+    "external_actions": "existing authorization boundary",
+    "host_support": "tested per host; local configuration is not ChatGPT cloud configuration"
+  },
+  "rollout": {
+    "DAM_required": false,
+    "full_CRM_admitted": false,
+    "stages": [
+      "pre-revenue",
+      "first-customers",
+      "repeatable-demand",
+      "maintained-modules",
+      "scale"
+    ],
+    "advance_rule": "Observed useful customer outcome, recovery and sustainable costs; calendar alone does not admit work."
+  }
+}
