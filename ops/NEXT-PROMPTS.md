@@ -1,4 +1,18 @@
 # ⏭️ Next Prompts — per active front / terminal
+<!-- queen-chatgpt-plan-20261011:start -->
+## Queen: reconcile review and deliver real native ChatGPT sign-in
+
+Continue the full Queen goal `01a12921-f8db-7cf0-9c3a-145949b04e09`; Frank explicitly said continue. The native tracker still reports paused because no resume tool is exposed; current manual work is authorized. Read the 11 October hub session and ledger, owning repository instructions, workflow/ownership policies and product/machine requirements. Preserve every other front and existing Queen identity. SIS draft PR358 is at `fb93b42cd7e1af6474d747823e18063dd0440e0b`, branch `agent/codex/queen-chatgpt-plan-20261011`, isolated worktree `sis-queen-chatgpt-plan-20261011`. Verify actual heads, final CI and owner before changing it.
+
+Reconcile the preserved Poolside and NVIDIA REVISE reviews against the exact source. Lead reconciliation does not establish independent approval. Keep account/token-change denial, bounded text-only output, refusal failure and unknown execution capacity. Any new semantic change needs behavioral proof and independent review at its exact revision. Check the current public OpenAI SIWC registration, accounts/session, token, inference and recovery guides; the preview may change. No DevKit code/dependency may be copied under its inspected noncommercial license for business product development.
+
+Deliver the native local sign-in flow in the existing product: stable host ID, first-time `dynamic_agent_client`, the app's actual name, loopback callback, per-attempt state/nonce/PKCE, the callback's issued client ID, verified JWKS/issuer/audience/nonce/sub, separately granted plan scopes, protected account-specific atomic storage, refresh/revoke and account-switch cancellation. This native flow needs no partner API key or client secret. Reuse a supported security implementation with a suitable license. A commercial website requires its own verified programme eligibility. Do not read native Codex token files or repurpose another app's registration.
+
+Then exercise actual browser consent/decline, real selected-account models plus completed inference, refresh/revoke, account switching and interrupted artifact repair under current admission. Show one useful editable/exportable creator artifact and compare the same brief with supported Codex app-server, measuring repair, latency and provider token use. Synthetic transport tests cannot establish this outcome. No inference or account grant is proven yet; no deployment, standing schedule or paid fallback is authorized by this pickup.
+
+Keep the full programme open: terminal/CLI/desktop/web, managed Eve, cross-harness profiles and specialist teams, durable goals/token budgets, spec/founder review, organization/cosmos records, bounded licensed repository learning, Hermes recovery/consolidation/dreaming, and separate Queen/general/worker/Genius memory. Use the architecture acceptance table. Save each finished slice here and on existing SIS issue350; do not replace the programme with a transport wrapper or close it from test counts.
+<!-- queen-chatgpt-plan-20261011:end -->
+
 <!-- autonomous-ops-20261011:start -->
 ## Operations: verify adoption and finish one useful cost or production improvement
 
