@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: FrankX Jules session 6423 must not open a second ADR pull request
+
+Session [6423379922387895427](https://jules.google.com/session/6423379922387895427) asked to finish frontend verification and prepare a pull request for issue 932. Draft [931](https://github.com/frankxai/frankx.ai-vercel-website/pull/931) already has that work at `f3167a8d438b3e0c3131faf4fd0a82a0c4af9263`. The reply told Jules to stop, change no files, and open no pull request. `auf` returned to 0. No packet was sent. Daily was 21/100.
+
 ## 2026-10-11: second-brain Jules session may open a draft only
 
 Session [3840010354543266367](https://jules.google.com/session/3840010354543266367) asked to open a pull request for a four-file idea-capture diff on second-brain-os. The reply told it to open a draft, request review, and leave every other file alone. It must not merge, deploy, or mark the pull request ready. After the reply, `auf` returned to 0. No new packet was sent. Daily stayed 20/100.
