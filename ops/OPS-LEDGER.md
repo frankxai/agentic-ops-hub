@@ -6,6 +6,37 @@
 
 Complete independent review covers all five changed and twelve context sources: raw WARN, five source/runtime-backed lead declinations, no independent PASS claimed. NVIDIA's timeout and all earlier failures remain evidence. Production `dpl_7SpakFZiq4Rp5JbzMCEXTTeCxSkc` is READY at 97801884 with canonical aliases; a read-only canonical chat probe returns HTTP 200 and that deployment ID, and the accepted merge tree equals the reviewed candidate. Receiving-main CI38128420246 is still building at this checkpoint. Production RLS/HTTPS/sign-out UI, live provider quality/cost, private media, credits/billing, community, books and customer evidence remain open. Next: finish source-bound receiving verification, then integrate the existing passage-to-private-scene candidate under its owner's gates. [Session](sessions/2026-10-11.md), [programme276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [PR evidence](https://github.com/frankxai/arcanea-ai-app/pull/578#issuecomment-6107577843) retain the detail.
 
+## Arcanea: original EPUB conformance proved; revised book and initial-HTML reader remain open
+
+- Selected Dragonborne's frozen original EPUB passed actual EPUBCheck5.4.0:0 fatal/error/warning, exit 0 with warnings fatal. The initial stack crash and empty report remain retained. This proves the original export's conformance, not revised-source/device/print/rights acceptance.
+- Private developmental v4 adds eight coherence repairs from the revised read, SHA256 b3099fed3971392e9b8e420fcbba89a7ac26b68c96bfd23b3b1b2f0e148842d3; patch applies to frozen source without repository/canon edits. Revised chapters 1/2 and selected late Gate paragraphs were read; full revised coverage and independent/human acceptance remain pending. Twenty prepared evaluations are still unrun/unqualified.
+- Required storage sensor/guide recovered task-locally from inspected historical a911b62c1f82f54794990e6e190d9e3f03339012; Quick no-write passed effective v1.2 floors while retaining 30% target/legacy classification. Actual PP 7377/5120 MB admitted one capped job; official archive hashes verified,179.11 MiB extraction. No global install/cleanup/task or extra agent.
+- Another owner merged generation PR 577; production source 0dd501281f89f0612454b1200ba40f8fac5799f6 and READY deployment marker verified, receiving CI/security passed. Actual08:57UTC initial HTML still contains zero visible prose in all four featured chapter articles; initial reader acceptance fails. Held reader PR 560 and unapplied repair preserve their owner. Provider PR 578's08:55UTC9abe snapshot remains conflicted with CI live, superseding passing a704 evidence.
+- Keep [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276), [book 280](https://github.com/frankxai/arcanea-ai-app/issues/280) and [eval282](https://github.com/frankxai/arcanea-ai-app/issues/282) open. The full founder goal remains active; live creator/commercial/funding/canon and exact revised export gates are separate. Pickup: [current session](sessions/2026-10-11.md) and current Arcanea prompt; no owned runtime persists.
+
+
+## 2026-10-11: Dragonborne selection now has a verified editorial diagnostic
+
+Dragonborne: The Last Clutch remains the delegated first edition candidate. A private source-backed memo and receipt verify the seven immutable chapter hashes, four stale chapter navigation labels, two terminology/timeline questions and one developmental reader question. Source remains unchanged; the bounded read does not approve the complete book. EPUBCheck assets are identified only, with execution held by RAM admission. Existing HTML/EPUB/PDF proofs and all human release gates remain intact. Provider follow-up PR578, full run 38120918429 at 3a22e0ae, passes actual reader/gallery steps with synthetic auth; live login, authenticated settings and provider acceptance remain unproven. Its current full independent review timed out. Main 0661416b retains failed receiving CI; the held PR560 reader lane and initial-prose gap remain open. [Release 280](https://github.com/frankxai/arcanea-ai-app/issues/280), [eval 282](https://github.com/frankxai/arcanea-ai-app/issues/282) and [session](sessions/2026-10-11.md) retain the evidence. Full founder goal remains active.
+
+
+## 2026-10-11: Arcanea routing, release and community strategy
+
+Proposal: extend existing router/CLI and shared AuthorOS/SIS contracts, build an original OpenCode plugin, and evaluate role-specific models before changing Publishing House defaults or forking a harness. Follow-up defines user pins and eligible fallbacks, private budgeted experiments, versioned tenant foundations, gated promotion/rollback and bounded production recovery. Existing adaptive code scores process exits/speed, so creative outcomes still need integration; inspected voice-tenant config does not prove customer isolation. Main source verified at 4441801; reviewed Registry at b4b82e3. Aion is absent from the inspected Vercel Gateway catalogue. Oh-my-openagent's license restricts commercial distribution; OpenRouter terms prohibit API resale, and Gateway BYOK can change payer on fallback. No paid trial, product edit, new runtime or release. [Program 276](https://github.com/frankxai/arcanea-ai-app/issues/276), [evaluation 282](https://github.com/frankxai/arcanea-ai-app/issues/282) and [session](sessions/2026-10-11.md) hold the handover. Records remain local on the existing research lane; creative quality, protocol compatibility, tenant security, commercial permissions and production acceptance remain open.
+
+Strategy follow-up: [reusable lead brief and autonomous prompt](plans/2026-10-11-arcanea-community-lead.md) connects original IP/audience, creator completion, recurring products and reliable autonomy. Aligns programme 276's 60/30/10 effort rule with a release/demo, proposed small opt-in creator pilot and cold-installable BYOK offer; retains requested managed APIs and tenant improvement as a second track gated by demand, rights, funding and live recovery. Six conditional waves and named existing-tool comparisons are proposals, not launch results. Latest main b452082 changes MEMORY.md; earlier code evidence stays bound to its earlier snapshot. Prompt Hub composition was not dispatched under machine HOLD. No paid experiment, independent-provider review, recruitment, new runtime, product write or publication. Draft remains local and uncommitted.
+
+Strategy save verified: [programme receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-6105127374), full brief SHA256 3566EA0B49A23F8DBEAC0578BCC20479E8DF15DF63E02100F173BC235EE260AE and whitespace checks for tracked/new Markdown. No new issue or competing queue.
+
+Execution now advances that strategy under Frank's active end-to-end/normal-merge authority. Initial routing569 merged to233013ca; [follow-up570](https://github.com/frankxai/arcanea-ai-app/pull/570) at a4d2f3d3 repairs three review findings, with 86 local cases and current exact-source Poolside PASS at US$0. [Reader integration573](https://github.com/frankxai/arcanea-ai-app/pull/573) at dfc90eb8 preserves490, passes six policy/seven series/fourteen public-boundary checks and current NVIDIA source PASS; hosted built-browser screenshots and final production verification remain pending. Proposed first edition: Dragonborne: The Last Clutch, existing seven-chapter source and registry lane. A full 17-chapter Dragonborne/Kael diagnostic covered all inputs but only 4/12 finding citations matched exactly and it invented canon claims; retain it as an unpromotable judge failure, not permission to rewrite. Human full-manuscript/canon/rights approval and the broader creator/community/commercial outcome remain open. [Current execution receipt](sessions/2026-10-11.md) distinguishes these changes from earlier research-only history.
+
+## 2026-10-10: Aion 3.5 Arcanea writing candidate
+
+Current execution correction: PR570 merged normally into `a131c1e9` and its Vercel production deployment is READY; metadata alone does not prove a reader journey. Later diagnostics findings are repaired in draft [575](https://github.com/frankxai/arcanea-ai-app/pull/575) at `c3c699ec`, with exact-source Poolside PASS. [573](https://github.com/frankxai/arcanea-ai-app/pull/573) is ready at `6d5ce085`, with ten title/policy assertions, two reproduced setup-failure receipts and renewed NVIDIA PASS. Failed and superseded browser runs remain recorded; full hosted/browser and stable reader proof are pending. The selected Dragonborne source still needs private edition artifacts and human editorial/canon/rights approval. Latest machine admission is HOLD, 3352 MB free/5120 MB required; no new agents or local heavy workload. The full goal remains active.
+
+
+Research complete; writing quality and integration remain untested. Recommend a bounded Aion scene-drafting pilot alongside GPT preparation/cold reads within the existing Publishing House commission/register/canon/voice gates, compared against approved Opus and GPT-only baselines. OpenCode supports per-agent models; Hermes delegated children share one model pin; a separate Codex Responses-provider profile is plausible but unverified. No paid inference, model/default change, manuscript, product edit or release. [Evaluation issue 282](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-6102441558) and [today's session](sessions/2026-10-10.md) retain the evidence. Records are local on agent/codex/aion-arcanea-research-20261010.
+
 ## 2026-10-11: GitOps upgrade verified and one completed checkout recovered safely
 
 [Config PR115](https://github.com/frankxai/starlight-agent-config/pull/115) merged as `8997345326ab9bc88239dc7a668e8f19ff1d368e`; required checks and receiving-main CI38114309456 pass. Exact-reviewed candidate `a383ef30` is installed, with 37 doctor checks and actual scope-denial/secret-chain proof. Audit phases reserve worktree/cost time; installed source and projection targets remain protected. The two-day limited task retains its settings and returned 0 during a RAM hold. A later 4.65-second installed audit checked 8 repositories/8 worktrees and observed US$73.680468981 Actions usage; cap and overall savings remain unverified.
@@ -1400,3 +1431,74 @@ No founder taste, customer outcome, complete accessibility audit, measured CWV o
 PR560 source `e6691535358a57c8cfd99552224dbf8e022a1017` integrates accepted main444 / Worlds561 through a normal merge. Full native CI 38090424386, Reading 38090424428 and CodeQL analysis 38090424398 pass; separate finding check 114326173444 reports zero new alerts. Four compiled browser modes pass shared-token geometry/restoration, privacy, focus, selection and recovery. Six PostgREST cases and five actual disposable GoTrue password/SSR-cookie/private-save/isolation checks pass. Artifact 11684150359 (378615 bytes) binds seven runner, six Auth, thirteen UI, four capture and four database hashes. Owned cleanup has no errors and removes private config. Desktop/mobile captures were inspected. READY preview dpl_DcEMTEiM5LYhjS2xHhUCU3s1Z52X serves chapter SSR at HTTP200 for this source. The 25 reader files and seven review-context hashes are unchanged from verified A4. Image generation remains synthetic; independent reader review, real provider/customer/credit/refund/private-media and comparative creator acceptance remain release gates. Worlds561 is merged; production was separately observed READY at `4441801b5e003499bd70ca25e141fa7986793e58`. All38 incoming independent-review source hashes match E7 and accepted main, and the final-text hash matches. Safe artifacts from run38086966377 / artifact11682788570 retain two actual world-generation/comparison calls previously executed by that owner, real disposable login/save/recovery and zero production writes or image calls. This reader session's adoption review makes zero provider calls. Arcanea produces a specific structured editable world with private recovery; the same-concept direct response has richer dialogue, character detail and a contested founding history. One sample establishes no creative superiority, demand, pricing or production onboarding. Character dialogue, present disagreement, mobile metadata density and the long footer remain bounded craft follow-ups.
 
 The <=US$1 exact reader-source review approval remains unanswered. The complete prepared review covers 25 changed files and seven contexts, with a 507445-byte source/delta footprint; no token-count or independent verdict is claimed. Private media/library/CSP and actual image, customer, credit/refund acceptance remain529/531/472 dependencies. Default-branch dependency findings remain open; no alert was dismissed. The eight-seat/nine-mission SIS8.5.1 routing candidate still has six component checks, with no live Queen dispatch, durable284, payload schemas or USD enforcement. Root SYSTEM.md, SCHEMA.md and SKILLS.md are missing. Swarm HOLD measurements remain dated evidence; no new local worker, browser or server started. Private Circle identifiers remain local, and academy/enrollment/community adoption is unproved. The full platform/team/research/maintenance/worlds/books/media/community/academy/developer/IP/revenue/mobile/desktop/API/MCP goal remains active.
+
+## Arcanea current-source review and edition selection — 11 October 2026
+
+Dragonborne: The Last Clutch is the selected seven-chapter engineering edition
+candidate; the private full-manuscript/source freeze exists with null release
+approval receipts. Reader573 at2a75cf2d has composed exact-source review and actual
+three-mode browser step evidence from38116709201; final CI, capture inspection,
+normal integration and production proof are separate. Routing575 atc3c699ec
+passed90 native cases and waits for the receiving hosted gate. Hub252 saves the
+strategy/prompt and current pickup; its complete strategy artifact has independent
+WARN with three unsupported concerns reconciled against current primary sources,
+with omitted record files explicitly outside that model review. Raw failures,
+the hub conflict-marker repair and interrupted dependency auto-repair are retained.
+See [today's evidence](sessions/2026-10-11.md) and [next action](NEXT-PROMPTS.md).
+
+## Arcanea selected edition proofs and live verification gap — 11 October 2026
+
+Reader PR573, routing PR575 and strategy/prompt hub PR252 are merged. Current-source
+reader CI/captures were inspected; routing passed 90 cases locally and in the
+receiving 3b8120b4 hosted step with zero skips/failures. That full run was later
+cancelled. The receiving 0661416b workflow is red in the provider/account browser
+fixture, with a diagnostic handed to PR576's owner. Production was observed
+READY at 0661416b with matched aliases/HTML deployment markers, but all four
+featured chapter initial documents contain zero visible article prose. A concrete
+direct-renderer/no-JavaScript patch is prepared and syntax-checked, deliberately
+unapplied because PR560's reader component remains held by its unfinished owner.
+
+Dragonborne: The Last Clutch is the selected engineering candidate. Complete
+seven-chapter private HTML and EPUB proofs now exist with exact source hashes,
+basic packaging and separate actual-artifact ordered-text/navigation checks.
+EPUBCheck, e-reader/print rendering, approved metadata/cover, manuscript/canon/
+rights and checkout/delivery/refund acceptance remain open. No release approval,
+publication, paid model call, creative superiority or managed API activation is
+inferred. See [today's receipts](sessions/2026-10-11.md) and [owner/edition issue280](https://github.com/frankxai/arcanea-ai-app/issues/280#issuecomment-6106348256).
+The [full lead brief](plans/2026-10-11-arcanea-community-lead.md) remains accepted;
+the next prompt names actual owners and remaining verification. Other fronts,
+source failures and private evidence are preserved. The founder goal stays active.
+
+The selected private Dragonborne format set now also includes a142-page PDF,
+SHA2563fbbc451844c0c652d6657953e1883f5dbf085274695a1606d742d0fd78e041f.
+One freshly admitted cached offline browser rendered all seven chapters; a
+separate actual-PDF check verified normalized source word order and6-by9-inch
+page dimensions. The earlier cleanup failure is retained; the fresh file check
+passed without another browser. Visual/print design, cover/bleed, EPUBCheck and
+all human release gates remain open. Private files were not published.
+
+
+## Arcanea whole-book revision and evaluation inputs — 11 October 2026
+
+The lead completed the original seven-chapter Dragonborne read and verified the
+locally read text against frozen a131c1e9 Git objects. Fifteen literal-citation
+findings now distinguish continuity contradictions from developmental questions.
+Separate private revision v3 contains an editable complete manuscript with the
+proposed repairs and trust scene. Combined SHA256
+bfe68fddc7568bf9789b74727c82cfbcec67d4a2cbe92c750cf67919f46fac0c.
+Original source/canon/exports remain unchanged; revised-book cold read, independent
+review, new name/lore and human release acceptance are still pending.
+
+Twenty source-bound narrative tasks are prepared, with a separate unapproved
+draft reference and12/4/4 development/calibration/holdout designations. No candidate
+comparison or human gold calibration has run; holdout isolation is not enforced.
+The independent public-original diagnostic returned raw WARN at reported US$0.
+Only five of ten finding quotes are unique literal matches at their declared
+lines. Its unsupported P0 extra-Gate allegations and missed direct contradictions
+remain a factual failure case. This is no narrative ranking or approved judge.
+
+Provider PR578 advanced through draft5b33f521 to drafta7041809. Earlier3a22 fixture CI cannot approve that
+head or live auth/settings/provider use. Main stayed0661416b with failed receiving
+CI, and PR560's held reader repair remains unapplied. EPUBCheck/storage admission,
+manuscript/canon/rights, creator pilot, model funding and managed-supply gates stay
+open. See [current evidence](sessions/2026-10-11.md) and [pickup](NEXT-PROMPTS.md).
