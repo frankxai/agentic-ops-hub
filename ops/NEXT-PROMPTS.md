@@ -180,15 +180,50 @@ Preserve PR 199/198 evidence including the premature PR 198 merge and repairs: n
 
 SDK 8.5.1/SIS PR 347 and foreign creator-MCP PR 6 at ebf0f633 are separate owned release scopes. Recheck their latest facts; do not take over unfinished npm trust/bootstrap or merge donor PRs 137/148/162/116 wholesale. Managed activation, actual creator acceptance and installed CLI/SDK/ADK/Desktop/Mobile/router/memory/cloud/GTM/bundled subscriptions remain the full programme. Make the next consequential actual artifact usable with one admitted lead; preserve all goals, machine/storage floors, issue 5 and this hub. Do not mark the full goal complete for this slice.
 
-## Arcanea adoption: authenticated baseline and post-merge repairs
+## Arcanea adoption: earn combined release gates, then retained creation
 
-PR574 merged from GitHub at2026-10-11T06:18:40Z, headb271159c0ad23b16380a11bb1ecdfde8f06f7c47, receiving main3b8120b424fb6f42f1aa62b82870bbb4b5c113de. This lead did not promote the PR or waive acceptance. Preserve that merge; authenticated rendering and production/provider activation are still unearned.
+Continue the existing ACTIVE full estate branch/product/subscription/client/harness
+goal in the owned arcanea-gateway-admission-20261010 worktree, originfrankxai/arcanea-ai-app,
+branchagent/codex/generation-admission-20261011. Read root/deeper guides and recorded
+hashes, routing/ownership, WORKFLOW and product/machine policies before writes.
+Review-lite HOLD1858/6144MB and27 runtimes prohibits local heavy work/fanout.
+Use the existing hosted rail; do not kill other owners or archive unfinished goals.
 
-Baseline b78f764964820e3eb4fac104881c6b4559c49ae7 / workflow38116846514 passed Install, Lint, TypeScript and Build. Actual isolated PostgreSQL17 billing kernel/recovery and concurrency assertions passed. Browser startup failed before rows/screenshots because the verifier used root @playwright/test resolution rather than the app-owned dependency. Zero production writes and zero paid inference. Gemini3.1Pro FAIL has32 verified source hashes, packet agreement and final-text hash: critical Luminor direct-image call without admission, plus high Studio/Page provider-image rendering findings. Do not reuse earlier8b PASS for this revision.
+Inspect full hosted38123399814 ated3c808a03555b7d445955b84b0c6ad6bbe3e6f7,
+draft577. It combines mobile Studio/CORS/real-auth fixture repairs and byte-bound
+PR578 donor3a22e0aea375eb6c2f79410fc023d4b3f789e676, with donor lane preserved.
+Native SDK1/1 and fixture7/7 plus changed lint/syntax/security pass; fresh full Build,
+exact-source independent review and nine authenticated generation rows are open.
+Verify every source/packet/final-response binding and inspect rendered output.
+No source approval transfers from the donor or previous revision.
 
-Repair043a5284add39c0c12110e3ef6992a23880ffe6a corrects the browser dependency and records controlled bootstrap phases. Luminor prepares a validated draft and local Imagine review link without provider or billing calls; the actual chat renderer escapes the prompt and ignores an injected href. Three native handoff/rendering tests and five fixture-isolation tests pass. Hosted workflow38117713666 is live; no authenticated pass is claimed. Since574 merged before this repair push, a follow-up PR based on receiving main is required. The two image-rendering repairs remain pending until compiled baseline evidence is available.
+Retained345 run38121817359 is FAIL, with9 rows and0 async failures: production
+CSP and3 cover save/reopen modes pass, Studio3 modes/settings/account-denial fail.
+Financial SQL/recovery/concurrency pass,4 fixture submissions/5 polls, zero paid
+inference. Its32-source static PASS is verified. The actual mobile Forge overflow
+is repaired but rendered acceptance is pending. CORS mock must explicitly reject
+origin because Playwright inserts allow-origin when omitted. Real-auth settings
+must sign out before another login. Inspect safe numeric phase diagnostics for B
+denials; keep them blocking. Earlier e777 run38123161220 was concurrency-canceled.
+CI Status still requires Build and Generation; skipped draft checks cannot release.
 
-Continue from the owned checkout C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010. Preserve other owners and accepted router/reader commits. First inspect38117713666 and its exact-head artifact, then fix real failures, integrate receiving main and earn fresh build/types/lint/source/security/creator evidence before protected merge and production verification. Issues529/276 remain the product record; hub draft248 holds this checkpoint. RAM3458MB is below the4096MB floor despite the probe's BOUNDED label: no local heavy work or extra agents. The full branch/product/subscription/client/harness goal stays ACTIVE.
+Refresh receiving main, owner gates and exact heads before protected merge; then
+verify canonical deployment source and behavior. Last production read READY at066,
+protected pages redirect, canonical anonymous generation401. Production billing
+schema/reservation/recovery absent on read-only SQL07:17:29UTC; no production money,
+provider or identity changes. Default media URLs expire. Durable private storage,
+quota/export/cancellation recovery, actual cost attribution and offer approvals
+remain required before paid beta. API credentials do not grant unlimited compute.
+
+Private PLAN/CSV preserve4574 estate branch and652 PR rows. Arcanea47 exact-head
+metadata comparisons contain2 ahead/45 diverged and four300-file caps; source
+acceptance remains separate. Preserve held560/562/567, dirty505, forks and owners.
+Finish world/chapter/continuity/media/reopen/export first. Web owns primary editing;
+local adapters explicitly selected files/keys; cloud bounded resumable jobs; shared
+CLI/SDK/MCP project operations; desktop/mobile earn device-specific value. Preserve
+academy/community/canon/native/commercial/estate gaps and all existing goal records.
+Save both hub248 session/ledger/own prompt and existing529/276 issue evidence.
+
 
 ## GenCreator prior checkpoint: managed identity and an accepted creator journey
 

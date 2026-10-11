@@ -1,5 +1,58 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: combined release candidate awaiting hosted gates
+
+Draft PR577 now contains candidate ed3c808a03555b7d445955b84b0c6ad6bbe3e6f7.
+Full hosted run38123399814 is queued. It combines the mobile Studio/CORS/real-auth
+fixture repairs from e777e8bad7c with exact PR578 donor source
+3a22e0aea375eb6c2f79410fc023d4b3f789e676. Four donor files match their recorded
+SHA256 bindings; only the donor CI test hunk is composed. The donor owner, checkout,
+branch and draft remain untouched. That donor has full hosted38120918429 PASS but
+final independent approval remains open; combined exact-head review is required.
+Native installed-SDK regression1/1 and generation fixture7/7, changed-source lint,
+syntax, whitespace and enabled ownership/security hooks pass. No protected merge.
+
+Retained full run38121817359 at345b7a3ff629fba252868511ef414e613c5312e8 fails.
+All nine browser rows and zero async failures are retained. Actual CSP policy and
+all three Page cover save/reopen modes pass, four of nine rows. Desktop Studio
+fails CORS refusal; mobile/reduced-motion Studio fail initial admission; real-auth
+settings fails B login; account-denial cause remains unresolved. Financial SQL,
+recovery and concurrency pass. Fixture supplier counters are4 submissions/5 polls,
+zero paid inference. Gemini3.1Pro static PASS binds32 full Git sources, packet and
+final response. Six render companions were verified and logged. These partial
+passes do not certify production generation, paid usefulness or durable assets.
+
+The actual375px capture exposes off-screen Forge controls. Controls now wrap with
+44px minimum touch targets and a catalog-derived10-credit quote. Playwright adds
+allow-origin when a fulfilled mock omits it, so the CORS-denial fixture now supplies
+an explicit different origin. The real-auth A/B/A journey signs out through the
+actual UI before another login, preserving authenticated-login redirects. Failures
+now retain safe kind/line/numeric diagnostics at each isolation boundary. Nine
+fresh browser passes and separate Build remain mandatory. Earlier e777 run38123161220
+was canceled by normal same-branch CI concurrency when this combined candidate was
+submitted; partial Install/Types/Lint/source-review success is not overall success.
+
+Last production custody read is READY at0661416b66c2674eb63a84a9597ca1163eb2d378;
+receiving main is still that SHA on this checkpoint's GitHub read. Protected pages
+redirect to login; canonical anonymous generation returns401. Read-only production
+SQL at07:17:29UTC found billing accounts/operations/reservation/recovery absent.
+No production DDL, identity, provider, subscription or payment activation. Expiring
+provider URLs, durable private media, quotas, customer export/cancellation recovery,
+actual supplier economics and offer approval still gate paid beta.
+
+The saved estate4574 branch rows and652 PR rows are historical inventory. Fresh
+Arcanea47 open PR comparisons pin main/head:2 ahead,45 diverged, four300-file caps
+(501/500/487/486), zero API errors. These are ancestry/metadata, not exhaustive
+source approval. Current577/578 heads must be refreshed at landing. Preserve held
+560/562/567, dirty505 and all foreign owners. Branches/forks are not bulk-deleted.
+The complete estate/creator/harness/web/native/CLI/SDK/subscription goal stays ACTIVE.
+
+Local review-lite is HOLD at1858MB free versus6144MB required,27 runtimes. No local
+heavy worker, new agent or server was started. Use existing hosted gates, inspect
+retained failures, then protected merge and production custody verification. Follow
+with the connected retained creator loop and commercial gates. Save both hub248
+handover and existing product529/276 issue evidence, preserving other fronts.
+
 ## Arcanea adoption: authenticated baseline and post-merge repairs
 
 PR574 merged from GitHub at2026-10-11T06:18:40Z, headb271159c0ad23b16380a11bb1ecdfde8f06f7c47, receiving main3b8120b424fb6f42f1aa62b82870bbb4b5c113de. This lead did not promote the PR or waive acceptance. Preserve that merge; authenticated rendering and production/provider activation are still unearned.
