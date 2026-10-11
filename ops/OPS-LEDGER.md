@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Arcanea generation safety deployed; client follow-up in draft
+
+[PR568](https://github.com/frankxai/arcanea-ai-app/pull/568) reviewedfd16a541 mergedfdd08677 with identical trees and all candidate gates. Exact provider reviewPASS/23 bound sources; production dpl_HLibKuJjWMFqaFAWdWftUENo1NUF READY, four live admission/privacy checks pass. Receiving CodeQL passes; main38113209559 Build still running. [Draft574](https://github.com/frankxai/arcanea-ai-app/pull/574),9160f899, migrates actual legacy image clients and removes fabricated Studio output;47 native cases pass, fresh review/hosted/auth acceptance pending. Image fallback/model repair, live billing schema/server keys, security findings and creator/commercial acceptance remain open. Full goal active. See [session](sessions/2026-10-11.md) and current Arcanea prompt; previous snapshots remain.
+
+
 ## 2026-10-11: Arcanea execution active; generation repair in fresh review
 
 [PR568](https://github.com/frankxai/arcanea-ai-app/pull/568), 40d9e24d, repairs legacy debit admission and durable video recovery. 45 native cases pass;15 pass after physical-preview privacy and scanner-test refinements. Older74922a source review PASS/23 hashes does not approve the changed head. Fresh hosted review/CI/CodeQL run; no merge or paid output yet. Production5745705c remains READY. Connector reads establish missing live billing schema; project metadata lacks service-role/XAI/FAL keys. Existing critical/high scanner findings and12 dependency vulnerabilities remain. Full native goal is active and unfinished, superseding the paused planning checkpoint below. See [session](sessions/2026-10-11.md). Existing issues276/529/511 and planning563/hub248 remain open. Preserve all foreign lanes and private inventory.
