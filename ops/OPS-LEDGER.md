@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Core recall snapshot repaired and verified; source authority holds merge
+
+[SIS364](https://github.com/frankxai/Starlight-Intelligence-System/pull/364) at820bd564 copies admitted options and retains provider/sanitizer methods across callbacks/awaits. Ten baseline failures are reproduced; all31 core cases now pass on Linux/Windows Node22/24 and Node18, with all six jobs38159981998 SUCCESS. Downloaded archive hashes and synthetic-merge/source trees match; actual core runtime10814 bytes/zero dependencies, fresh SDK/type/stdio consumers pass. Exact-head Google source PASS and terminal worker are verified. Required independent-review-policy still BLOCKS merge; immutable stages/public delivery and managed customer acceptance remain pending. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md). Goal ACTIVE.
+
 ## 2026-10-11: Actual memory archive installation verified on main
 
 [Memory32](https://github.com/frankxai/starlight-memory/pull/32) merged `b9e562b5a4cc37246a8803f3627cce520c31467e` after exact-source Google PASS, source CI and six fresh-installed Linux/Windows Node20/22/24 consumers. Receiving-main CI38157433204/package38157433278 and downloaded receipt replay PASS. The same 123-file archive serves SDK declarations, CLI and real tenant-scoped MCP persistence/deletion checks; runtime precedes dev dependencies. A read-only pinned workflow and MIT notice are merged. Public 0.2.0 remains old code; new-version owner integration, npm trust/provenance and managed-customer gates remain open. [Memory8](https://github.com/frankxai/starlight-memory/issues/8) / [session](sessions/2026-10-11.md). Goal ACTIVE.
