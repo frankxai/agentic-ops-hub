@@ -1,5 +1,12 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Queen programme status, costs and continuation audited
+
+[Status/value audit](plans/queen-status-value-2026-10-11.md) distinguishes deployed creator foundations, installed operations controls, merged libraries and tested Queen drafts. Fresh GitHub reads include SIS358, config90, Swarm23/38, Ops216/aed2b59 and CC70/cd43fa7. Native SIWC host sign-in, live managed Queen execution, independent worker approval, tenant-safe creator acceptance and measured ROI remain open. The shared memory read returned321 lexical records/zero vectors; source catalogs are not operating teams.
+
+Official protocol/prices, the existing EUR100 incremental pilot ceiling and explicit hypothetical cost/ROI scenarios are recorded. The [execution prompt](plans/queen-advance-prompt-2026-10-11.md) preserves the complete goal, existing owners, serious alternatives and bounded implementation. Static document review is tracked in hub PR250; it cannot approve worker code or runtime production. Current machine RAM was1289MB; no new worker/heavy build was admitted. Accepted hub mainf7e5e174 was integrated with all other source preserved. Save this hub record and existing SIS issue350; the full programme stays open.
+
+
 ## 2026-10-11: Queen ChatGPT-plan worker implemented; promotion remains open
 
 [SIS draft PR358](https://github.com/frankxai/Starlight-Intelligence-System/pull/358), source `9186ff2989340d4e2a35a58539a986142d6a1ae8`, adds an account-bound, text-only direct-plan worker to the existing runtime bridge. Current model discovery, explicit scope/expiry/account checks, terminal text reconciliation and provider token observations are implemented. Unknown post-dispatch work pauses the bridge and retains capacity; task context cannot supply credentials, select another account/model, add tools or trigger paid fallback. The final merge preserves accepted main `251494dc` action pins and keeps all worker/test/docs/export source bytes unchanged from reviewed `fb93b42c`.
@@ -8,6 +15,96 @@ All 44 focused worker/bridge checks, targeted strict TypeScript checking and 135
 
 The [Queen epic350](https://github.com/frankxai/Starlight-Intelligence-System/issues/350) stays open, as does the full native goal. Its complete acceptance table is retained in [the worker architecture](https://github.com/frankxai/Starlight-Intelligence-System/blob/fb93b42cd7e1af6474d747823e18063dd0440e0b/docs/architecture/queen-chatgpt-plan-worker.md). Native open-source sign-in supports dynamic registration without a client secret or partner API key; implementing PKCE, verified identity, secure storage, refresh/revoke and real browser consent is the next useful gap. Commercial web integration has separate eligibility. CLI/desktop/web creator value, managed Eve, durable budgets, cross-harness teams/profiles and task-scoped memory/learning remain unproven. One lead, two isolated worktrees, no new agents, local models, servers or standing jobs; foreign lanes and active work preserved.
 
+## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
+
+Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.
+
+The prepared 24-call Aion/frontier development comparison remains unrun: proposed US$10 cap, US$5.4887150 reservation estimate, pending founder answer and no task-environment experiment credential. Candidate requests exclude reference answers, private revisions and calibration/holdout tasks; that filtering does not provide a tenant sandbox. The old private prototype's paid entrypoint is disabled. Fresh v5 chapter-1 cold reading produced two private provisional notes; chapters 2-7, independent/human manuscript/canon/rights review and the held reader repair remain open. [Evaluation update](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-6108401283), [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md). The founder goal stays active.
+
+
+
+## 2026-10-11: deployed creator recovery verified; other design releases remain open
+
+GenCreator PR203/d015297 has bounded deployed 375px save/reload/review-import/recovery proof; owned browser closed, customer/device/managed acceptance unmeasured. Arcanea 1e1afdc has static PASS but [CI38121100835](https://github.com/frankxai/arcanea-ai-app/actions/runs/38121100835) measured persistent mobile heading overlap; original failure preserved and application correction required. FrankX 95fd798 is a local Foundry implementation with ten contract tests and strict language audit PASS, static WARN and required local build HOLD. It has not been pushed or released. Two other site releases remain open; the original mission deadline and all foreign work are preserved. See today's session and current owned prompt for exact next actions.
+
+## 2026-10-11: Arcanea source passed review; design mission continues
+
+GenCreator PR203 remains released and source-bound to d015297. Arcanea editor candidate c181173 has independent v0 Max static PASS; [hosted CI38117590844](https://github.com/frankxai/arcanea-ai-app/actions/runs/38117590844), current editor captures, preview and release remain pending. Earlier browser failures are retained and corrected, not relabelled as passes. The bounded job adds section navigation, cancellation protection and complete working-buffer download while preserving existing validation/save/export authority. Two other site improvements remain open until their actual gates qualify.
+
+Local heavy admission remains HOLD. The hosted production browser connector rejected opening for insufficient reserved-session credits, so no deployed browser journey is claimed. Academy required-guide discovery is unresolved; FrankX Foundry is read-only investigation. The native mission keeps its original 15:26:56 UTC deadline. Accepted hub main and other owners' records/prompts are preserved; see today's appended session for exact source and limits.
+
+## 2026-10-11: Edition desk released; design mission remains active
+
+[GenCreator PR203](https://github.com/frankxai/gencreator.ai/pull/203) merged normally at `d01529702eef91188c35bc6cbdca6aa7074be9ec`, preserving required checks and the independently reviewed candidate's ten source blobs. [Candidate CI38112315239](https://github.com/frankxai/gencreator.ai/actions/runs/38112315239) and [receiving-main CI38113731773](https://github.com/frankxai/gencreator.ai/actions/runs/38113731773) pass every job. Production `dpl_3vighctxAKV3JzsLjf6efKPkCtu2` is READY at that receiving revision. The apex studio route serves expected controls with HTTP200; www redirects308 to the same apex path. The independent v0 Max review was static. Original desktop/phone/tablet captures and browser CI provide separate evidence; physical devices, the deployed browser journey, customer acceptance and field performance remain unmeasured.
+
+The native design mission continues until its existing 15:26:56 UTC deadline or evidenced completion. Two meaningful other production-site improvements remain open. No credit purchase, identity approval, managed activation or machine fanout occurred. Existing source pins, foreign work and every other active prompt remain intact. Current release and next steps are recorded in the session below; [design issue48](https://github.com/frankxai/starlight-design-intelligence/issues/48) and [GenCreator issue5](https://github.com/frankxai/gencreator.ai/issues/5) retain the wider work.
+
+
+## 2026-10-11: Revised Dragonborne EPUB passes; public reader still needs recovery
+
+Private developmental v5 follows complete v4 prose coverage, with fresh chapters 3-7 and prior-read/changed-passage coverage for 1/2. Thirty-eight checked edits repair chronology, location and identities and give Theron's unsupervised choice a witnessed disclosure. The v4 inherited audit-string decoding error is repaired in a separate UTF-8 manifest; prior failures are retained. V5 Markdown SHA256 3e949af16a2fca7208f0f7dc800bf4a3fad91853d26d31466bbc476859fff9f4. Its private HTML/EPUB retain all 39,290 ordered tokens and navigation; exact revised EPUB passes actual EPUBCheck 5.4.0 with warnings fatal, zero fatal/error/warning and exit 0. Fresh bounded PP and historical quick no-write sensor evidence is retained. No manuscript/canon source edit, private candidate independent approval, v5 PDF, production compiler, device/print, rights or publication acceptance.
+
+Provider 578 is merged at 97801884 and receiving CI/security pass; READY production is verified against seven actual www HTML markers at 09:44 UTC. The candidate artifact has nine real disposable-backend logins, three browser modes, zero AI POSTs and cleanup; live production auth/CSP/provider/customer and billing gates remain separate. Four real chapter routes still have zero visible prose in their initial HTML; invalid-route initial recovery is also absent. Preserve the held unfinished reader 560 lane and unapplied repair. Twenty model tasks remain unrun/unqualified. [Book 280](https://github.com/frankxai/arcanea-ai-app/issues/280), [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md) retain the open outcome. Earlier dated snapshots remain history.
+
+<!-- npm-managed-20261011:start -->
+## Npm and managed activation, 11 October 2026
+
+- MCP Doctor release [9](https://github.com/frankxai/mcp-doctor/pull/9) and corrective [10](https://github.com/frankxai/mcp-doctor/pull/10) merged, latest main1fa90823. Initial runner-context422/staticPASS gap preserved; fresh exact Google6627997099637246078 and four61+26 candidate jobs accepted. Main CI38132624280 passes4; actual verify38132662618 passes source,4 matrices and same-byte handoff/registry checks with stage skipped. Owned no-file-delta ref denial38132725161 is verified with no artifacts. [Issue8](https://github.com/frankxai/mcp-doctor/issues/8#issuecomment-6108199293) remains open for legitimate OIDC trust/human2FA/public integrity and fresh consumer; no registry mutation.
+
+- SIS #359 merged `72dbb8fa` after exact-source Gemini review and ready-state CI. Browser diagnostics preserve original failure and visual limits.
+- SIS #360 merged `4c7e010d` after exact `31de59e3` Jules review; four accepted blobs match and 13 latest checks pass. Real Windows receipt defect reproduced and fixed; nine tests and actual receipt pass. Unmeasured reviewer coverage rejected; final preflight historical-skip error and subsequent merge are recorded.
+- SIS #361 guide merged `8e683011` under active [ruleset 24873080](https://github.com/frankxai/Starlight-Intelligence-System/rules/24873080). Exact five-file review, 14 latest CI checks, real hosted denial/acceptance and normal merge under enforcement verified. Required PR/current-base review, harness and scan checks bind to app 15368; no bypass actors. Existing protection and ruleset 18873540 unchanged. Same-app writer trust/model/race limits remain; no universal certification.
+- Creator #6 merged `69fca157`; full release 38117483944 checks, ten tarballs and identical release-byte consumers pass. Publication waits required owner review and unverified ten-package publisher authority. Supported private npm 11.15 reproduces profile/trust 403; browser connector has no browser. No global token, reserved-stage or registry change. Reconcile exact versions and artifacts before approval.
+- GenCreator `d015297` native PG proof and EU metadata/prepared isolated SQL remain scoped evidence. Live schema/API/Auth/restore, merchant authority, compute, seats and creator outcomes remain open. Paid preview undecided; foreign lanes preserved. Accepted Stripe Managed Payments/Lemon Squeezy fallback, Polar licenses and consented legacy grants remain.
+- MCP Doctor [PR7](https://github.com/frankxai/mcp-doctor/pull/7) merged normally as 6115227d, reviewed exact e7a03d13; Google/Jules18065976277210152428 PASS10 full blobs/no findings, runtime verified separately. Four candidate Windows/Linux Node18/24 jobs PASS52 workspace/26 installed tests each and actual tarball secret/hash/inventory checks. Entire main tree matches; main CI38129218531 all four jobs PASS. No public registry release or modern/stateless certification. Foreign checkouts preserved.
+- Prior maker/obsolete reviews completed; exact-head Google review completed and consumed; no owned local worker/server or fourth worktree. [Session](sessions/2026-10-11.md), [hub217](https://github.com/frankxai/agentic-ops-hub/pull/217), [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329), [Creator4](https://github.com/frankxai/starlight-creator-mcp/issues/4), [GenCreator5](https://github.com/frankxai/gencreator.ai/issues/5). Full goal active.
+<!-- npm-managed-20261011:end -->
+
+<!-- starlight-delivery-20261010:start -->
+## Starlight platform delivery, 10 October 2026
+
+## 2026-10-11: SDK recovery accepted; authenticated settings fixture merged
+
+[577](https://github.com/frankxai/arcanea-ai-app/pull/577) accepts actor-bound Chat callbacks and generation recovery at `0dd50128`; its READY production has canonical aliases. [578](https://github.com/frankxai/arcanea-ai-app/pull/578), exact candidate `ba06d229`, merged normally as `97801884` at 09:27 UTC. Its five-file fixture/CI/source-record delta preserves all accepted application source. [Required CI38127230817](https://github.com/frankxai/arcanea-ai-app/actions/runs/38127230817) and [manual38126956353](https://github.com/frankxai/arcanea-ai-app/actions/runs/38126956353) pass: nine real isolated logins, three browser modes, both-account saves, conflict and stale-save denial, storage recovery, account return, zero AI POSTs and successful cleanup. Fresh [CodeQL38126956865](https://github.com/frankxai/arcanea-ai-app/actions/runs/38126956865) has zero results; alert277 is fixed without dismissal and a regression fails on the earlier source.
+
+Complete independent review covers all five changed and twelve context sources: raw WARN, five source/runtime-backed lead declinations, no independent PASS claimed. NVIDIA's timeout and all earlier failures remain evidence. Production `dpl_7SpakFZiq4Rp5JbzMCEXTTeCxSkc` is READY at 97801884 with canonical aliases; a read-only canonical chat probe returns HTTP 200 and that deployment ID, and the accepted merge tree equals the reviewed candidate. [Receiving-main CI38128420246](https://github.com/frankxai/arcanea-ai-app/actions/runs/38128420246), CodeQL38128420250 and estate38128420254 pass at 97801884. Production RLS/HTTPS/sign-out UI, live provider quality/cost, private media, credits/billing, community, books and customer evidence remain open. Next: reconcile the prepared initial-HTML prose/recovery repair in the held reader lane, then complete the source-linked private-scene journey under its owner's gates. [Session](sessions/2026-10-11.md), [programme276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [PR evidence](https://github.com/frankxai/arcanea-ai-app/pull/578#issuecomment-6107577843) retain the detail.
+
+## Arcanea: original EPUB conformance proved; revised book and initial-HTML reader remain open
+
+- Selected Dragonborne's frozen original EPUB passed actual EPUBCheck5.4.0:0 fatal/error/warning, exit 0 with warnings fatal. The initial stack crash and empty report remain retained. This proves the original export's conformance, not revised-source/device/print/rights acceptance.
+- Private developmental v4 adds eight coherence repairs from the revised read, SHA256 b3099fed3971392e9b8e420fcbba89a7ac26b68c96bfd23b3b1b2f0e148842d3; patch applies to frozen source without repository/canon edits. Revised chapters 1/2 and selected late Gate paragraphs were read; full revised coverage and independent/human acceptance remain pending. Twenty prepared evaluations are still unrun/unqualified.
+- Required storage sensor/guide recovered task-locally from inspected historical a911b62c1f82f54794990e6e190d9e3f03339012; Quick no-write passed effective v1.2 floors while retaining 30% target/legacy classification. Actual PP 7377/5120 MB admitted one capped job; official archive hashes verified,179.11 MiB extraction. No global install/cleanup/task or extra agent.
+- Another owner merged generation PR 577; production source 0dd501281f89f0612454b1200ba40f8fac5799f6 and READY deployment marker verified, receiving CI/security passed. Actual08:57UTC initial HTML still contains zero visible prose in all four featured chapter articles; initial reader acceptance fails. Held reader PR 560 and unapplied repair preserve their owner. Provider PR 578's08:55UTC9abe snapshot remains conflicted with CI live, superseding passing a704 evidence.
+- Keep [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276), [book 280](https://github.com/frankxai/arcanea-ai-app/issues/280) and [eval282](https://github.com/frankxai/arcanea-ai-app/issues/282) open. The full founder goal remains active; live creator/commercial/funding/canon and exact revised export gates are separate. Pickup: [current session](sessions/2026-10-11.md) and current Arcanea prompt; no owned runtime persists.
+
+
+## 2026-10-11: Dragonborne selection now has a verified editorial diagnostic
+
+Dragonborne: The Last Clutch remains the delegated first edition candidate. A private source-backed memo and receipt verify the seven immutable chapter hashes, four stale chapter navigation labels, two terminology/timeline questions and one developmental reader question. Source remains unchanged; the bounded read does not approve the complete book. EPUBCheck assets are identified only, with execution held by RAM admission. Existing HTML/EPUB/PDF proofs and all human release gates remain intact. Provider follow-up PR578, full run 38120918429 at 3a22e0ae, passes actual reader/gallery steps with synthetic auth; live login, authenticated settings and provider acceptance remain unproven. Its current full independent review timed out. Main 0661416b retains failed receiving CI; the held PR560 reader lane and initial-prose gap remain open. [Release 280](https://github.com/frankxai/arcanea-ai-app/issues/280), [eval 282](https://github.com/frankxai/arcanea-ai-app/issues/282) and [session](sessions/2026-10-11.md) retain the evidence. Full founder goal remains active.
+
+
+## 2026-10-11: Arcanea routing, release and community strategy
+
+Proposal: extend existing router/CLI and shared AuthorOS/SIS contracts, build an original OpenCode plugin, and evaluate role-specific models before changing Publishing House defaults or forking a harness. Follow-up defines user pins and eligible fallbacks, private budgeted experiments, versioned tenant foundations, gated promotion/rollback and bounded production recovery. Existing adaptive code scores process exits/speed, so creative outcomes still need integration; inspected voice-tenant config does not prove customer isolation. Main source verified at 4441801; reviewed Registry at b4b82e3. Aion is absent from the inspected Vercel Gateway catalogue. Oh-my-openagent's license restricts commercial distribution; OpenRouter terms prohibit API resale, and Gateway BYOK can change payer on fallback. No paid trial, product edit, new runtime or release. [Program 276](https://github.com/frankxai/arcanea-ai-app/issues/276), [evaluation 282](https://github.com/frankxai/arcanea-ai-app/issues/282) and [session](sessions/2026-10-11.md) hold the handover. Records remain local on the existing research lane; creative quality, protocol compatibility, tenant security, commercial permissions and production acceptance remain open.
+
+Strategy follow-up: [reusable lead brief and autonomous prompt](plans/2026-10-11-arcanea-community-lead.md) connects original IP/audience, creator completion, recurring products and reliable autonomy. Aligns programme 276's 60/30/10 effort rule with a release/demo, proposed small opt-in creator pilot and cold-installable BYOK offer; retains requested managed APIs and tenant improvement as a second track gated by demand, rights, funding and live recovery. Six conditional waves and named existing-tool comparisons are proposals, not launch results. Latest main b452082 changes MEMORY.md; earlier code evidence stays bound to its earlier snapshot. Prompt Hub composition was not dispatched under machine HOLD. No paid experiment, independent-provider review, recruitment, new runtime, product write or publication. Draft remains local and uncommitted.
+
+Strategy save verified: [programme receipt](https://github.com/frankxai/arcanea-ai-app/issues/276#issuecomment-6105127374), full brief SHA256 3566EA0B49A23F8DBEAC0578BCC20479E8DF15DF63E02100F173BC235EE260AE and whitespace checks for tracked/new Markdown. No new issue or competing queue.
+
+Execution now advances that strategy under Frank's active end-to-end/normal-merge authority. Initial routing569 merged to233013ca; [follow-up570](https://github.com/frankxai/arcanea-ai-app/pull/570) at a4d2f3d3 repairs three review findings, with 86 local cases and current exact-source Poolside PASS at US$0. [Reader integration573](https://github.com/frankxai/arcanea-ai-app/pull/573) at dfc90eb8 preserves490, passes six policy/seven series/fourteen public-boundary checks and current NVIDIA source PASS; hosted built-browser screenshots and final production verification remain pending. Proposed first edition: Dragonborne: The Last Clutch, existing seven-chapter source and registry lane. A full 17-chapter Dragonborne/Kael diagnostic covered all inputs but only 4/12 finding citations matched exactly and it invented canon claims; retain it as an unpromotable judge failure, not permission to rewrite. Human full-manuscript/canon/rights approval and the broader creator/community/commercial outcome remain open. [Current execution receipt](sessions/2026-10-11.md) distinguishes these changes from earlier research-only history.
+
+## 2026-10-10: Aion 3.5 Arcanea writing candidate
+
+Current execution correction: PR570 merged normally into `a131c1e9` and its Vercel production deployment is READY; metadata alone does not prove a reader journey. Later diagnostics findings are repaired in draft [575](https://github.com/frankxai/arcanea-ai-app/pull/575) at `c3c699ec`, with exact-source Poolside PASS. [573](https://github.com/frankxai/arcanea-ai-app/pull/573) is ready at `6d5ce085`, with ten title/policy assertions, two reproduced setup-failure receipts and renewed NVIDIA PASS. Failed and superseded browser runs remain recorded; full hosted/browser and stable reader proof are pending. The selected Dragonborne source still needs private edition artifacts and human editorial/canon/rights approval. Latest machine admission is HOLD, 3352 MB free/5120 MB required; no new agents or local heavy workload. The full goal remains active.
+
+
+Research complete; writing quality and integration remain untested. Recommend a bounded Aion scene-drafting pilot alongside GPT preparation/cold reads within the existing Publishing House commission/register/canon/voice gates, compared against approved Opus and GPT-only baselines. OpenCode supports per-agent models; Hermes delegated children share one model pin; a separate Codex Responses-provider profile is plausible but unverified. No paid inference, model/default change, manuscript, product edit or release. [Evaluation issue 282](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-6102441558) and [today's session](sessions/2026-10-10.md) retain the evidence. Records are local on agent/codex/aion-arcanea-research-20261010.
+
+## 2026-10-11: GitOps upgrade verified and one completed checkout recovered safely
+
+[Config PR115](https://github.com/frankxai/starlight-agent-config/pull/115) merged as `8997345326ab9bc88239dc7a668e8f19ff1d368e`; required checks and receiving-main CI38114309456 pass. Exact-reviewed candidate `a383ef30` is installed, with 37 doctor checks and actual scope-denial/secret-chain proof. Audit phases reserve worktree/cost time; installed source and projection targets remain protected. The two-day limited task retains its settings and returned 0 during a RAM hold. A later 4.65-second installed audit checked 8 repositories/8 worktrees and observed US$73.680468981 Actions usage; cap and overall savings remain unverified.
+
+Completed GenCreator CI checkout removed after accepted-tree, ownership, ignored-file and consumer checks. Its local branch and verified incremental recovery bundle remain; no foreign or unfinished work was removed. Both config source worktrees stay pinned. Current [session](sessions/2026-10-11.md) records exact review, tests, recovery limits and evidence. [Issue30](https://github.com/frankxai/starlight-agent-config/issues/30) remains open for adoption. Native loading, local bypasses, unmanaged machines, foreignPR114 review and GenCreator G2-G6 remain open. Next: finish one named adoption gap through its owner and verify actual execution.
 
 ## Arcanea guides merged and production source verified
 
@@ -502,6 +599,654 @@ domain packs, fleet enforcement, web and academy integration remain unfinished.
 ## 2026-10-10: Arcanea billing recovery merged; paid rollout stays closed (Codex)
 
 [PR525](https://github.com/frankxai/arcanea-ai-app/pull/525) merged as `c79b6f4`, reviewed head `dbbd5b17`. Two BLOCK rounds were repaired; final independent source review PASS for code merge.30 tests, exact Linux CI and PostgreSQL rollback/concurrency pass. Final READY pricing preview checked on desktop/mobile; reduced motion and intercepted waitlist recovery verified. Keep[529](https://github.com/frankxai/arcanea-ai-app/issues/529)/[511](https://github.com/frankxai/arcanea-ai-app/issues/511) open for migrations, seller setup, sandbox fulfillment, reconciliation/retention, BotID/auth and entitlement gates. Checkout default-off; no production migration, purchase or permission changes. Receiving-main CI/deployment pending at this record. See [session](sessions/2026-10-10.md).
+
+## 2026-10-10: final package CI green; reviewed defects repaired; final review capacity blocked (Codex)
+
+Current SIS ready/open PR #342 is clean and pushed at cb915a0128e4af0ddd1f9f9b8f7766bd2c64f927. Creator ready/open PR #6 is clean and pushed at ebf0f6337d1485519c6c416775e546cc7e9b035b. Both merge cleanly. Neither product PR is merged into main and no package was published or deprecated by this task. Broad goal 01a1235e-2682-7b50-b4f8-078c1e3916b5 remains unfinished; the prior blocked tool state cannot be resumed by the agent. This turn made substantive progress after Frank resumed it.
+
+Independent Anthropic Claude Opus 5.5 reviews completed on SIS e91a49dc and creator 3e962a8. They reproduced defects missed by earlier green checks. SIS repairs: reject oversized recall facts before sanitization; remove quadratic email and JWT scanning; preserve standalone legacy root contracts/sanitizer without a dependency on unpublished core; disable Turbo instruction mutation; key local memory by tenant plus ID; retain authoritative Mem0 delete resolution and privacy/workspace projection. Frozen source installs now use the canonical pnpm lock. Root npm install/build/dev/lint/test are supported, root npm ci is not. Core/root duplicated compatibility contracts are deliberate until a separately versioned root migration. No 8.5.1 overwrite/downgrade is authorized by this change.
+
+Accepted SIS main 9887aa8fbb4f6df966e8e2aeb8661561e2a730d1 is integrated through ca51b43d, preserving 8.5.1 and Antigravity fixtures from #346/#347. Foundry closure hashes were refreshed for the actual root package/pnpm sources without changing historical reviewer identity. Final cb915a01 also repairs hostile '-eyJ', '=eyJ' and '@eyJ' JWT runs. Final focused local tests: 22 release/audit, 14 core and 24 legacy sanitizer pass. Earlier revisions passed 58 Foundry/adapters and 135 native hook checks; seven existing TODO cases remain. Current source does not assert browser/edge deployment or zero leakage for every input.
+
+Creator review reproduced real AWS SDK upload failures on Node 22/24 and ignored response bodies retaining timers/socket pools. Hosted task 90bf5035-bf7b-40d5-9693-3e8aa1eab8a6/session e77fdc4d-22ac-420d-aeae-440b46c1363b (API model sweagent-capi:claude-opus-5.5) failed on monthly AI quota, but saved 293c05d7bd5069de0323aac84554fceee020566d. Exact base 3e962a8, patch and 26 explicit files passed integration_preflight; merge ebf0f633 preserves worker commits. PR #9 is merged into the feature branch, not main. Repairs disable Expect, verify buffered signed Content-Length, test >3 MB uploads with independently verified on-wire SigV4/checksum, cancel ignored error bodies across providers/jobs/assets/license/publication, use read-only HeadBucket for doctor, and reject linked init workspace homes before writes. All configured secret/TLS checks remain enabled. Thirteen local release-contract tests pass; no local full install/build under HOLD.
+
+Final SIS CI: all twelve relevant workflows succeed at cb915a01. Npm run 38053627657 passes six jobs (Linux/Windows Node 22/24, portable core Node 18, archive/consumer). Downloaded three archives at ignored artifacts/npm-review/cb915a01-ci pass actual release and consumer validators. Clean source 7c38aa8257c04b6857bf48e4c70656ebfe0d649d has parents accepted main 9887aa8 and cb915a01. Manifest SHA256 612850a466eae54d3a6fbc78c94b33ea33fe7d9b928fbe2e09bbdac21b19f74e; five consumer checks pass. Core zero-runtime-dependency JS is 9784 bytes; archive 13186 bytes; unpacked package 43358 bytes. The <20 kB target applies to runtime JS, not the whole unpacked package. Benchmark: 100 mocked invocations per variant, zero live calls; direct middleware median ~0.282 ms versus adapter ~0.289 ms. No retrieval-quality, token-cost or speed advantage is established.
+
+Final creator CI run 38053618919 passes all seven jobs: clean typecheck/unit, storage runtime Node 22/24, Linux/Windows e2e and both OS release artifacts. Downloaded ten-package archives per OS at ignored artifacts/review-ebf0f633-ci/{linux,windows} pass actual release validator and eleven-check consumer/source/digest assertions. Clean merge source 89ce6c07e684409be8a54debcd31d9b81521c8e6 has parents ffdbdc68d95ef318c69c729347f0ad7a94917545 and ebf0f633. Linux manifest SHA256 89cf1b830af817319d48b1ae662e39801090aaddae587c88a0b8b207aa459eac; Windows 092fbb8afbb503588e8dce33ff12b82d0989f6e7d89b1de33da87f13880aad25. Consumer coverage includes full and S3-omitted install/doctor, strict declarations, wrapper identity, starter discovery, init/config preservation/isolation, link boundary, official stdio and unapproved publication denial. These are PR merge-source artifacts, not protected-main publication bytes.
+
+Final independent review remains blocked. SIS follow-up e8775c34-0f98-4076-a414-c2d3d9021caa/session fa29f7bc-200d-427b-b574-e6ac0e543917 (Claude Opus 5.5) ended without a verdict or requested test execution after quota interruption. Its main-conflict and possible JWT observations are now repaired; it does not approve cb915a01. Creator worker quota error: 'You have exceeded your monthly quota' (request DC04:36828:227E240:28763E4:6ACA341A). An implementation worker and a prior-head review do not approve ebf0f633. No unchanged quota retries, credits purchase or review-gate bypass. Frank was asked for restored hosted capacity or an existing independent reviewer/exact-head report.
+
+Machine preflight review-lite: HOLD, 1504 MB free versus 6144 required, 15 task runtimes versus 12, restart-soon/drain-handoff. No local reviewer/model, install/build, extra worktree, foreign process kill or global service start. Provider environment checks found no standard Anthropic/Gemini/Google/xAI/OpenRouter API keys; no credentials copied or exposed. Grok is authenticated but isolated startup remains unproven. Shared tool discovery found no callable inference connector. No session-owned workers/watchers remain running.
+
+npm identity frankxai and starlight-intelligence ownership pass. Profile/trusted-publisher administration HTTP 403 remains unresolved; it does not establish the account's 2FA state or the exact cause. Frank was asked to verify access/2FA in his authenticated browser without sharing credentials/codes. Current npm docs distinguish publication (npm >=11.5.1, Node >=22.14) from npm trust administration (npm >=11.15, existing package/write access/account 2FA). Pinned publish npm 11.10 meets publication minimum; local npm 11.13 is below the current trust-command minimum. Trust/account setup remains unverified. No token fallback, settings/billing mutation, dispatch or first-publication bootstrap occurred. Broken creator 0.1.0 deprecation waits for replacement acceptance.
+
+Engineering assessment: the modular boundaries and evidence chain are useful; top-tier production maturity and differentiation remain unproved. Compose Vercel AI SDK and official MCP; compare Mastra and Mem0 seriously; reuse one accepted durable execution owner (LangGraph, Temporal or Trigger.dev where a measured need exists). OpenTelemetry belongs in deployed adapters/runtime, outside zero-dependency core. Portable project memory plus creator provenance/recovery is a hypothesis requiring matched live workloads and user choice. Technical integrations are not commercial partnerships. Remaining fundamentals: real retrieval relevance/denial/cost, durable retention/deletion/restart recovery, remote auth/tenant isolation, deployed operations/rollback, compatibility/rights, customer acceptance and source-authorized legacy repairs.
+
+The requested master blueprint exists only in the foreign primary branch agent/antigravity/npm-ecosystem-alignment at 44ab8a4282c0065921ca84fdc888ba26b47db96d; its last source commit is e469fb7 and SHA256 13FB83D2A50F3A10C7F83B99252405658919EAFF5E29DC5C923F416C74A6B2A6. Read-only inspection confirms outdated 8.3.0/creator 0.1.0 plans and unsupported moat/superiority/zero-leakage assertions. Preserved that owner and all dirty work; did not copy it into accepted main. The owned NPM_PLATFORM_VALUE_MAP.md supplies evidence-based alternatives, boundaries and acceptance sequence. Canonical AGENTS/CLAUDE explicitly read: hashes 664B7DE4354F4DCECEAAE9B136AC6DEAE9092E495DC6F63C45809FC2D1C21ABF and 236244FACDA40C85B4A48EB527F0CEDED840DF1536C8EAC19CE127DBDCBB0CD1. Owned SIS guides after accepted main: AGENTS 7EE292D240004CF4A5C96C47B633EC881481FE46B44168E5BA9A413AEC55E008; CLAUDE F60B0802FF785C14945EA139CB00E45F68943F93FFD2FB6AF16CBDD9755F8F19. Hub AGENTS E9840259101EEBFC38D274561E1C7BC344F64071A3EBFB54B68090F2AB9C449E. WORKFLOW and source guides explicitly loaded; guard/check and clean ownership passed. Policy loading is not runtime enforcement.
+
+Next: obtain independent-provider verdicts on these exact heads; resolve findings and changed-head CI; merge approved product PRs; build/test new protected-main archives; establish legitimate npm bootstrap/trust and publish verified bytes with registry/provenance/install proof. Finish one accepted live product workflow and compare measured outcomes before expansion. Records: SIS #329/#342, creator #4/#6, hub #217. PR descriptions now reflect final heads and gates.
+
+## 2026-10-10: npm ecosystem implementation advanced; Anthropic review running (Codex)
+
+Frank resumed engineering, alternatives, production/merge and additional resources. Prior blocked receipts are historical. Broad goal 01a1235e-2682-7b50-b4f8-078c1e3916b5 remains unfinished; its tool status cannot be resumed by the agent.
+
+SIS ready PR #342 is clean/pushed at e91a49dc8fb143d7947126a162bf49ed4677f0bd; creator ready PR #6 at 3e962a8b7602981898eeb2822dfa8be3bea496f5. Neither merged to main or published. Accepted SIS main bc73db9 integrated preserving Designer/console/ENGINEERING work. Hosted creator task cfad75da-ca44-4b47-b38f-30756c601c54 produced a226857 on d4eb905; exact integration preflight passed; merge c85007b9 preserves worker provenance.
+
+Repeated reviews repaired actual memory ownership/workspace, prompt authority/sanitization, cancellation, identity, retention projection, audio contracts, guarded AWS/checksums, optional S3/loader resolution, wrapper identity, clean TypeScript graph and doctor/context SQLite cleanup. Mem0 is an injected contract with an authoritative tenant/SIS delete resolver; its in-memory queue is not durable or live-provider accepted. Latest SIS local checks pass: 21 release/audit, 23 Foundry, 11 official MCP client, 135 native commit-hook checks. Root native runtime now declares tested Node 22/24, core retains Node 18. Two Foundry manifest source hashes updated, reviewer provenance preserved. Local creator wrapper regressions pass; doctor fixture fails against stale installed dependency outputs, requiring fresh hosted install/build. No full local build, TLS bypass or secrets/config mutation.
+
+Previous exact-head CI passed SIS 38050638641 at 8abeea2a and creator 38050738417 at 6d4fdcf; creator's two downloaded OS manifests/consumer receipts match merge source 509ec7e and feature parent. Worker consumer certificate failure was not acceptance. Current SIS package matrix 38051967135 and creator 38051964350 still running; SIS other eleven workflows and creator clean typecheck, both e2e and Linux artifacts pass. Prior core size at 471077cf: 9629 runtime JS bytes, 13121 compressed, 43203 unpacked; 100 mocked direct AI SDK comparisons prove parity/failure handling only, zero live calls, no measured token/cost advantage. Earlier bytes do not attest current revision.
+
+Default Copilot review logs disclose GPT-5.6 Sol, independent service but same model provider as Codex. Documented GitHub task API now accepted explicit Claude Opus 5.5 reviews: SIS task 88536847-f4d8-4bca-8ed0-e09d61b9e741/session 650449fc-40ce-43e5-87d7-d0d8f144c3e4 at e91a49dc; creator task 871431eb-04b7-4054-aaf5-5e1788db7768/session f3067378-82e8-4038-8a6d-16c53314744e at 3e962a8. API confirms sweagent-capi:claude-opus-5.5, both in progress. Earlier Opus 4.6 request was model-not-enabled, no task created. Codex creator review quota exhausted; no unchanged retry/credits purchase. Review instructions are read-only, no new implementation/PR or publication.
+
+npm identity frankxai and starlight-intelligence org ownership confirmed; profile/trusted-publisher administration HTTP 403. Frank asked to complete authenticated account verification/2FA without sharing credentials/codes. First modular publication/bootstrap, matching trusted publisher and protected-main bytes remain required. No publication, deprecation or token fallback.
+
+Compose Vercel AI SDK/official MCP; compare Mastra/Mem0 seriously, reuse one accepted durable runtime (LangGraph or Temporal/Trigger.dev where needed), put OpenTelemetry in owning adapters. Portable project memory and creator provenance/recovery remain differentiation hypotheses. Live retrieval quality/cost, retention/authz, remote MCP auth, deployments/rollback, buyer evidence and estate legacy migration remain open.
+
+WORKFLOW/CLOUD_LOCAL, product/machine, home handoff, SIS AGENTS/CLAUDE/CREATOR/ENGINEERING, creator README/SECURITY/templates, hub AGENTS explicitly read; policy loading is not runtime enforcement. Hub guide SHA256 E9840259101EEBFC38D274561E1C7BC344F64071A3EBFB54B68090F2AB9C449E. Guard and explicit routing passed; one owner/clean checkout per isolated worktree separately checked. Local machine below 4 GiB/runtime cap: no extra local workers/full install/build. Foreign Hermes/Claude/MCP-doctor/root migration lanes preserved.
+
+Next: retrieve exact Claude reports, reconcile real defects, validate current archive/consumer/source receipts, merge accepted revisions, rebuild protected-main release artifacts, finish legitimate npm bootstrap/trust and registry/provenance/install proof. Existing SIS issue #329, creator issue #4 and hub PR #217 hold the record.
+
+## 2026-10-10: goal blocked after repeated release impasse (Codex)
+
+Goal 01a1235e-2682-7b50-b4f8-078c1e3916b5 is blocked, not complete. Three consecutive turns could not advance release or product implementation through the same review/account/ownership constraints. Current authoritative PR reads confirm SIS #342 remains draft/open at 07b430790f9fb88427f9b1815455490d7c6c7728 and creator #6 remains draft/open at d4eb90502fdeee0ccd9c3c431cb030324b39ba09, both with empty reviews. Both owned worktrees are clean. MCP-doctor primary remains codex/daily-observability with an untracked .claude directory; foreign Claude/Hermes worktrees remain preserved.
+
+The four SIS milestones are implemented with prior hosted checks passing (run 38037804627); creator hosted run 38038645613 passed its recorded checks. Exact-revision packets are prepared, not independently reviewed. No package published, main merge, deprecation, provider credential change or inherited reviewer service launch occurred. Grok authentication exists but startup isolation is unresolved; Claude quota reset is recorded for 2026-10-11 06:00 Europe/Amsterdam. An existing isolated reviewer service or completed exact-revision review can unblock review; npm bootstrap/trust and protected main-source release remain required afterward. The broader platform/customer/paid-value objective remains unfinished. No live worker or job wait is claimed.
+
+Handover lane: agent/codex/npm-architecture-20261010; origin github.com/frankxai/agentic-ops-hub; root .codex-worktrees/hub-npm-architecture-20261010. WORKFLOW and root AGENTS.md explicitly read; AGENTS SHA256 E9840259101EEBFC38D274561E1C7BC344F64071A3EBFB54B68090F2AB9C449E. Guard and explicit three-file routing check passed, clean ownership verified. Existing product issues SIS #329 and creator #4 retain the release record. Resume from current immutable packets after an actual external-state change; do not repeat unchanged authentication probes or credential-placeholder guesses.
+
+## 2026-10-10: review gate unchanged; archive triage revalidated (Codex)
+
+Installed agent-runtime-trust-boundaries skill explicitly read from correct
+.agents/skills/agentic-orchestration path; first shortened path missing. Policy
+requires runtime capability limits, not caller-authored prompt/approval claims.
+Canonical capability-loading/progressive guides still absent; no auth workaround.
+No isolated independent review or publication advanced. Grok native route remains
+authenticated but lifecycle/MCP isolation unresolved; Claude reset11Oct06Amsterdam.
+Asked Frank for existing isolated reviewer service or completed review link; no
+reply presumed. No live process/job wait claimed, no new heavy work or services.
+
+Re-fetched exact @arcanea/skills1.0.0 within2MB existing budgets and matched both
+archive digests. Reported404 raw-line hash matches when trailing CR preserved;
+initial normalizedCRLF assertion failed, corrected raw-line hash verified. Code
+fence/header and candidate placeholder checks still cannot classify as supplied
+credential versus example. Finding remains unresolved, no credential tested or
+raw secret retained. Redacted followup appended to ignoredsecret-triage.json;
+SIS issue329 checkpoint saved. This does not prove the package secret-free.
+
+No product source/registry state advancement this turn; review/account/ownership
+and full platform/customer/paid-value scope remain open. Current SIS07b43079 and
+creator d4eb905 source lanes unchanged/clean with prior scoped hosted verification.
+Hub/target guides and identity/explicitfiles guard/check/clean ownership verified.
+Retain current packets; do not manufacture another status-only release receipt.
+
+## 2026-10-10: native Grok review authentication discovered (Codex)
+
+Grok Build1.0.50 native models command exit0 reports logged in with grok.com,
+defaultgrok-4.7 and five models. Native review credentials are accessible through
+that CLI; no model request or review verdict. Current inspect discovers25hooks,
+19MCPservers,19plugins,1006skills,87agents. Child-only vendor/subagent/managed-MCP/
+memory flags leave hook/MCP/plugin discovery counts unchanged. These are discovery
+counts, not execution or isolation guarantees. Native headless/hooks docs confirm
+--tools retains MCP meta-tools and SessionStart hooks can execute before tools.
+Do not launch naive empty-tools reviewer with inherited lifecycle services.
+
+Redacted evidencecreator artifacts/review-d4eb905/grok-discovery.json. No raw auth
+or inspected config stored, credential copy, login/logout, global config mutation,
+extra services or heavy work. Supplied canonical capability-loading/progressive-
+skill guide paths absent; no delegated-auth workaround created. Official Zen docs
+require login/API-key workflow; free model labels are not proof of anonymous access.
+Creator sourced4eb905 and SIS07b43079 unchanged/clean; prior hosted/package checks
+retain exact scopes. Product issue4 checkpoint saved. Hub guide read, verified
+root/origin/branch/explicitfiles guard/check and owned lanes before writes.
+
+Next: obtain documented isolated authenticated native-provider review of current
+76-file creator and61-file SIS packets, or Claude after11October06:00Amsterdam
+quota reset. Reconcile actual findings before protected main npm bootstrap/trust
+release. All estate/platform/customer/paid-value objectives remain unfinished.
+
+## 2026-10-10: creator filesystem boundary repaired (Codex)
+
+Current creator draft6 sourced4eb90502fdeee0ccd9c3c431cb030324b39ba09 pushed.
+Reproduced actual outward-junction/new-leaf bypass and LocalStorage external reads/
+writes. LocalStorage never called assertRealInside. Now resolves existing ancestors,
+uses platform-relative containment, validates asset/provenance reads and writes,
+unique exclusive temp creation before rename. Denies outward links, dangling links
+and non-directory ancestors; preserves valid new roots and inward links. OS-level
+concurrent untrusted parent mutation remains outside this path-check guarantee.
+
+Local28tests pass/1POSIX dangling-link case skipped on Windows;12release tests
+pass. Unsupported minWorkers flag rejected then supported maxWorkers1 rerun.
+Initiale2605e5 accidentally pushed with new failing Windows non-directory test;
+8069f7c fixed and retested. a172e4f hosted Linux artifact/typecheck succeeded;
+Windows expected8.3alias versus canonical long name, fixed expected realpath in
+currentd4eb905. Current hosted38038645613 live at checkpoint. Installed archive
+consumer now exercises static link read/write denial and valid write; publisher
+requires installed-storage-link-boundary evidence before registry publication.
+
+Historical a172 ten downloaded Linux archives/tenchecks validated (SHA256/SHA512/
+entry/license/version/order/source) against clean merge601034ddeebace2edd7eccd4f9980ce9471354b3,
+parentsffdbdc68/a172e4f, manifesta911870801a929cc4c22fa4c38104b2a2b886ee6dbdaff8383943b861e32d68e.
+Current76-file git-show packetartifacts/review-d4eb905 prepared-not-reviewed;
+Gitleaks301702bytes clear. Previous creator5ec/a172 packets historical. SIS07b43079
+unchanged/all-six pass. Final current archives remain to inspect when CI completes.
+
+PP build HOLD6169MB/8192; disk99.65GiB; small tests only/no build/install/newagents/
+foreigncleanup. SECURITY explicitly read/updated with guarantee limits; no root/
+deeper guides found. Routing/identity/clean-owned-lane checks passed. Product issue4
+checkpoint saved, hub PR217 handover. Independent review/bootstrap/publication,
+other-package/platform/customer/value goal remains open. No npm publication.
+
+Final hosted38038645613 completed SUCCESS typecheck/unit and Linux/Windows
+installed-archive consumers; draft e2e skipped. Downloaded current ten Linux
+archives and ten exact consumer checks verified against clean merge
+ce1dc97c2ad21356c4eef2af6243551ba3d7309d (parentsffdbdc68/d4eb905 confirmed).
+Manifest0cd91c64cb3407e254620fe3713f0346980cb8df323cb2d3d264c07e0d7454f2.
+Windows receipt locally undownloaded, hosted success only. Currentd4eb905 packet
+metadata refreshed/prepared-not-reviewed; previousa172/5ec archives historical.
+Product issue4 final checkpoint updated. SIS07b43079 unchanged; no publication.
+
+## 2026-10-10: consumer preflight stale-success recovery fixed (Codex)
+
+SIS draft342 clean/pushed source07b430790f9fb88427f9b1815455490d7c6c7728.
+Actual relocated consumer script regression reproduced old passed:true receipt
+surviving missing manifest failure. Now invalidates before input read/parse/Git
+lookup/archive validation; binds failed receipt after valid source/input identity.
+Missing/malformed/rejected manifest fixtures execute real entrypoint, assert
+nonzero exit, passed:false/emptychecks and publisher rejection. No fixture install.
+All17 release/audit tests pass;135 native hook symmetry tests pass. Small tests
+only; prior PP build HOLD preserved, no heavy local build or foreign cleanup.
+
+Hosted38037804627 completed SUCCESS all six jobs: artifacts/installed consumers,
+core18 compatibility and Linux/Windows22/24. Downloaded three archives and verified
+SHA256/SHA512/entry/license/version/consumer binding against clean merge
+96fa15297c7818fb5055dd65bddc7eb0a1ada836; GitHub parentsbc73db9b/07b43079.
+Manifesta494a002694ea5854a06619d85156bc56bb33434444d9211c4835537c991fc4b.
+Current immutable61-file packetartifacts/npm-review/07b43079 prepared-not-reviewed;
+git-show source/basefe964d5a/fingerprint and prompt digest bound. Gitleaks333925bytes
+clear. Prior SIS511c/34201 packets historical; creator5ec9873 unchanged.
+
+SIS guides/hub AGENTS hashes unchanged; hub guide explicitly reread. Exact Git
+root/origin/branch/explicit file guard/check/clean owned lanes verified before
+writes. Product issue329 checkpoint saved; handover in hub PR217. Full goal
+review/account/bootstrap/other-package/platform/customer/value scope remains
+open; no independent verdict, release, merge, credential copy or new services.
+
+## 2026-10-10: gateway padded privacy tags regression fixed (Codex)
+
+SIS draft342 source34201a7fa293a5f2520c3450fa7d31c1031f8ad0 pushed/clean.
+Previous built gateway accepted public plus " privacy:secret " as public;
+projectRecall exposed the synthetic restricted fact. Now trims validated tags
+before privacy classification. Added official MCP-client regression covering
+spaces, tabs/newlines, nonbreaking spaces and shareable authorization on/off.
+Native Node24 source probe passed. Initial inline shell probe had literal escapes;
+corrected stdin probe passed with actual whitespace. Local build PP HOLD6854MB/
+8192required; no builds, installations, new agents or foreign cleanup. Disk99.70GiB.
+
+Hosted38037404137 all six jobs completed SUCCESS (Linux/Windows22/24, core18
+compatibility and artifact consumers). Artifact job
+passed installed consumer tests. Downloaded three archives and verified SHA256/
+SHA512/exports/license/version/consumer source binding. Clean mergeb638b19ea05816f6e3a5edc67016287d927ba152;
+GitHub parentsbc73db9b/34201a7f; manifestf4b0542b4f82709436c6766139e88d1f22a5d825f0cea9a863847f9333793f77.
+Prior SIS511c review packet is historical. Prepare exact current review packet;
+independent review/account/bootstrap/main-source publication remain open.
+
+GitHub six Dependabot alerts inspected: three in separate site/plugin lockfiles
+(sharp and two MCP dependencies) unresolved; two fast-uri alerts refer to removed
+root npm lock; current pnpm fast-uri3.1.8/esbuild0.28.2 above patched floors.
+No estate-wide clean claim. SIS guides hashes unchanged; hub AGENTS unchanged.
+Root/origin/branch, explicit files guard/check and clean lane ownership verified.
+Product issue329 checkpoint saved. Creator5ec9873 unchanged. Full estate/provider/
+platform/customer/value goal remains open; no package publication.
+
+## 2026-10-10: independent review route discovery (Codex)
+
+OpenCode 1.18.35 native providers list returned zero credentials and no provider
+API environment variables were present. Child-only XDG_CONFIG_HOME retained the
+native data/auth location. Resolved isolated configuration had no model/providers,
+MCP servers or external plugins. Used --pure and disabled project/Claude/external
+skill discovery. No model request, verdict, credential copy, global configuration
+change or tool-denial enforcement test. Empty configuration is not a completed
+security review. Evidence: creator artifacts/review-5ec9873/opencode-{isolation,review}.json.
+
+Creator source 5ec98735d0e591b1ea3df24967432877e49cbf5b and SIS source
+511c00757961ef7e3442644522820b2a211bbfb4 remain clean, pushed, open draft PRs
+6 and 342 respectively (GitHub heads reconfirmed). Prior hosted/installed-archive
+verification remains valid; no new build or package publication. Independent
+review remains open. Claude quota resets 2026-10-11 06:00 Europe/Amsterdam;
+Gemini client eligibility and Grok isolation remain unresolved. Do not repeat
+unchanged failed routes or copy credentials to obtain a verdict.
+
+Owner: Codex in existing creator/hub lanes. Hub AGENTS.md explicitly reread;
+creator SECURITY.md unchanged hash 4C51311F6636ADD2FBD8BCDC73058678A7357DFB298C5045326D32A3DADEA0B8.
+Git root/origin/branch and explicit path guard/check passed; both lanes clean
+before writes, no active-agents file found. Fresh interactive PP admission:
+9735 MB free, 4096 MB floor, CPU30%, one workload; no new workers/services.
+Existing product issue4 receives this checkpoint. Full goal remains active:
+review/account/bootstrap/platform/customer/paid acceptance and other package
+repairs are unfinished. Save in agentic-ops-hub PR217 and existing product issues.
+
+## 2026-10-10: creator connection-time DNS validation verified (Codex)
+
+Creator draft6 source5ec98735d0e591b1ea3df24967432877e49cbf5b pushed, clean owned
+lane. Added exact Undici7.30.0 dependency and lockfile; latest8.11.2 requires
+Node22.19 while7.30 supports existing22.13 floor (registry engines inspected).
+Native fetch receives request-local Agent. Socket lookup resolves and checks all
+addresses before passing those checked addresses directly to net.connect;
+private/invalid DNS answers denied. Per-request dispatcher destroyed on response
+completion/error/cancel; global dispatcher unchanged. No trust in preflight alone.
+Expanded IPv6 loopback/mapped addresses normalize before classification; full
+link-local fe80/10, IPv6 multicast and IPv4 non-unicast destinations denied.
+DNS caller deadline still bounds wait; OS resolver itself cannot be cancelled.
+
+Native HTTP regression: public preflight8.8.8.8 changes to127.0.0.1 at actual
+socket lookup, returnsprivate_host,fixture server receives0requests. Positive
+checked-DNS fixture with explicit private-host test policy works.40targeted tests,
+core tsc/targeted ESLint/diff pass; dependency audit no known vulnerabilities.
+Initial tsc caught older node undici-types dispatcher mismatch; documented type
+bridge applied and real native fetch tests/tsc rerun. No initial pass inferred.
+Fresh PP BOUNDED10568MB/8192,CPU32%,oneworkload; disk107087007744bytesfree.
+One bounded ignored-scripts pnpm install, no new agents/services/foreign cleanup.
+Fixture servers closed in finally; all command handles terminal. README/SECURITY
+read; no root/deeper guides. SEC current4C51311F6636ADD2FBD8BCDC73058678A7357DFB298C5045326D32A3DADEA0B8.
+Guard/explicit-file checks and ownership preserved; hub AGENTS hash unchanged.
+
+Hosted38036500463 completed SUCCESS typecheck/unit and Linux/Windows release
+artifact consumers; separate draft e2e skipped. Downloaded Linux alltenarchives,
+validated SHA256/SHA512, entry/license/version/ordered dependency graph and9checks
+against clean merge0819d2c2782549e33629bba67a7b35db12d3c175,
+manifestSHA25677c0cf02054ff4b0ed92f8e8eadae04bf1b927d235d4c1fe43c935419942ae6a.
+Parentsffdbdc68/5ec9873 confirmed. Windows receipt locally undownloaded, hosted
+success only. Current73-file packetartifacts/review-5ec9873 prepared/not reviewed;
+Gitleaks296250bytes clear; metadata refreshed. Creator issue4 checkpoint saved.
+Prior4f/bd/26b archives and packets historical. SIS511c0075 unchanged verified.
+Independent provider review, npm trust/bootstrap/main-source publication, other
+package ownership/repairs, live-provider/platform/customer/paid acceptance and
+full goal01a1235e scope remain open. No release/merge/tokenfallback/credentialcopy.
+
+
+## 2026-10-10: creator DNS and streamed-body deadlines verified (Codex)
+
+Creator draft6 pushed4f25f64b82bf6a3257ea625d87f28d4eb236599a, clean owned lane.
+Exact prior hosted core reproduction: stalled response body still pending50ms
+past a10ms configured timeout after headers succeeded. New shared deadline spans
+DNS checks, redirects, headers and JSON/text/stream consumption. DNS failure/empty
+answers deny before fetch; late DNS completion after timeout never invokes fetch.
+Transform stream counts actual bytes even without content-length, preserves
+response metadata and cleans deadline/listeners on normal completion/error/cancel.
+DNS rebinding before connection still open; OS DNS operation itself not cancelled.
+
+Thirty-seven targeted tests pass including native Node HTTP stalled-body fixture;
+its server/connections close in finally. Core tsc, targeted ESLint/diff and secret
+hook pass. Initial implementation hit node-types addAbortSignal webstream mismatch
+and asynchronous listener cleanup assertions; replaced with typed TransformStream
+error/flush cleanup and reran checks successfully. No claim that initial checks
+passed. Fresh PP BOUNDED10185MB/8192,CPU21%,oneworkload; disk107113312256bytesfree.
+No installs/new agents/foreign task closure. All session command handles terminal.
+Root README/SECURITY reread before changes; no root/deeper AGENTS; SEC nowSHA256
+9FD8927D185F338C0427AF9AAD2A7287F3F4557459FC3CBDF2174A00113F0D9A.
+Guard/named-file checks and clean-owned identity verified. Hub AGENTS hash unchanged.
+
+Hosted38035977057 completed SUCCESS typecheck/unit and Linux/Windows release
+artifacts/installed consumers; separate draft e2e skipped. Downloaded Linux allten
+archives, checked SHA256/SHA512, identities/entries/license/ordered dependency graph,
+nine consumer checks and clean mergea7ad572695da4a66cb0278c9799e8f91283d4e04,
+manifestSHA256f9c669e12a0899725d3327f996a86287f2555a7e3a5f96220c9bf88b605574cd.
+GitHub confirms parentsffdbdc68/4f25f64. Windows receipt locally undownloaded;
+hosted job success only. Current73-file immutable review packetartifacts/review-4f25f64
+prepared/not reviewed; Gitleaks291337bytes clear. Final source metadata refreshed.
+Creator issue4 checkpoint saved; priorbd0b303/26b packets now historical.
+
+SIS511c0075 unchanged/all-six verified. Independent provider review, npm trust/
+bootstrap/main-source publication, other package ownership/repairs, DNS rebinding,
+live-provider/platform/customer/paid acceptance and full goal01a1235e stay open.
+No release/merge/tokenfallback, credential copy or service left running.
+
+
+## 2026-10-10: creator provider redirect and cancellation boundary (Codex)
+
+Final creator hosted38035482758 completed SUCCESS: typecheck/unit plus Windows/
+Linux release-artifact consumers. Separate draft e2e skipped. Downloaded Linux
+all ten archives, validated both digests, entry/license/version/dependency order
+and nine consumer checks against clean mergeb3b6356ce99f5952f746c4569dd7e54f69539e90,
+manifestSHA256bbd14d22f77072aaff4179f29a0ddc7ed505afcebb092c507c0e493e970df3de.
+GitHub confirms merge parentsffdbdc68/bd0b303. Current73-file packet refreshed,
+prepared/not reviewed. Windows receipt locally undownloaded; hosted job success
+only. Review/publication/DNS/body/provider/customer gates remain open.
+
+
+Creator draft6 pushedbd0b30367ae5d60e4ec622df3dd016cc69ed39c4, clean owned
+agent/codex/creator-npm-release-20261010 lane, root guides absent, README/SECURITY
+explicitly read before edits; no deeper scope guides. Guard/named-file check pass.
+Reproduced exact prior hosted creator-core bytes: x-api-key synthetic fixture
+forwarded across origins; pre-aborted request still fetched. No real credential,
+provider call or network used (mock fetch, allowed private fixture addresses).
+
+Shared fetch guard now uses one controller/timer across redirect hops, caps20
+redirects, cancels redirect bodies and removes caller abort listeners. Pre-aborted
+signals deny fetch. Cross-origin GET/HEAD drops all caller headers/credentials;
+cross-origin body replay, HTTPS downgrade and URL credentials denied. Same-origin
+307 retains payload and headers; POST301/302 and303 use GET without body headers.
+New8tests plus22existing core tests pass; targeted tsc/ESLint/diff pass. Reused
+fresh BOUNDED build admission from previous turn, one short workload at a time,
+no new install/agents/services, all session commands terminate. Secret hook pass.
+Security doc states remaining DNS resolution and body deadline limitations;
+DNS rebinding remains open. No complete SSRF/provider/runtime safety claim.
+
+Hosted38035482758 queued at this checkpoint, previous26b hosted artifacts remain
+historical. Current73-file immutable git-show packetartifacts/review-bd0b303 is
+prepared/not reviewed; Gitleaks283851bytes clear. Issue4 comment6095258586 saved.
+Source types/runtime consumers need fresh hosted verification before final archive
+claims. No live publishing, tokenfallback, merge, foreign edits or credential use.
+SIS511c0075 unchanged/all-six verified; broader review/account/bootstrap/platform/
+provider/customer/value scope stays open. Native provider review routes remain
+Claudequota and GeminiUNSUPPORTED_CLIENT; no identical request repeated.
+
+
+## 2026-10-10: core denies coerced retention deadlines (Codex)
+
+Final hosted38035032307 completed SUCCESS all six jobs (Linux/Windows22/24,
+core18, artifacts and installed consumers). Downloaded three archives and validated
+SHA256/SHA512, identities/versions/allowlists, clean merge31277d046809237da847af8a0a5fc21c53922b07,
+consumer and benchmark binding to manifestSHA256
+8039b8d36183c4832b1b62d60dc013696696e3db1ed3543aecde2665423d0827.
+Merge parentsbc73db9b/511c0075 confirmed through GitHub. Core archive12753bytes;
+AI SDK3027, MCP6276. Current61-file packet refreshed with final results, still
+prepared/not reviewed. No provider/publication/customer completion inferred.
+
+
+SIS draft342 source511c00757961ef7e3442644522820b2a211bbfb4 pushed clean.
+Reproduced against the verified prior hosted core0.2.0 archive: retention_until
+number2099 and array['2099-01-01'] both enter projected context after Date.parse
+coercion. Shared core now rejects present non-string deadlines before parsing,
+protecting all providers and AI SDK/MCP paths. Future valid strings and absent
+optional expiry remain accepted; delete_by still requires a deadline.
+New regression exercises direct projection and actual recall with malformed,
+expired and missing-delete_by rows among valid neighbors. Core README documents
+this behavior. Syntax/diff checks and all eight rebuilt core tests pass.
+First Python output capture hit a Windows cp1252 encoding error after test execution;
+reran native test command and verified8/8PASS, no inference from truncated output.
+Build PP BOUNDED9958MB/8192,CPU20%,oneworkload,45minlimit; compilation/test commands
+bounded180seconds and terminated. No new agents or other tasks archived/killed.
+Disk107182329856bytesfree; configured storage sensor script remains missing.
+
+Hosted38035032307 is live/queued at checkpoint; Node18 core and Ubuntu22/24
+jobs already passed. Remaining Windows/artifact jobs must finish before current
+archive claims. Prior38033646827/d3d archive results stay historical. Current
+61-file immutable git-show packetartifacts/npm-review/511c0075 is prepared/not
+reviewed; Gitleaks scanned332009bytes and found no leaks. Current source hashes
+are in source.json; deleted npm lock tracked separately. Issue329 comment6095198643
+saved. Root guides/clean owned lane/explicit-file checks verified, no foreign edits.
+Creator26b9646 unchanged. Independent review routes remain Claudequota and Gemini
+UNSUPPORTED_CLIENT; no repeated blocked request. Publication/trust/bootstrap,
+source ownership for other package repairs, live-provider/platform/customer
+acceptance and full goal01a1235e scope remain open. No release/merge/tokenfallback.
+
+
+## 2026-10-10: isolated Gemini review route verified, account rejects client (Codex)
+
+SIS source remains d3d66f7eae731cfd19b1256a1de0796a66847e47 on draft342;
+creator remains 26b9646 on draft6. No source/runtime changes or new CI claims.
+Installed Gemini CLI0.60.0 supports a task-owned workspace configuration verified
+with its real loadSettings implementation: trusted workspace, no settings errors,
+zero configured MCP servers, hooks/skills/subagents disabled, absent review-only
+context filename and no directory tree. Extensions excluded and explicit admin
+policy denies all tools; native authentication retained, no credential copy or
+global configuration write. One bounded request failed before review after6.04s:
+IneligibleTierError/UNSUPPORTED_CLIENT for the account's Code Assist tier. No
+engineering verdict. Do not retry before client/account eligibility changes.
+
+Temporary system-settings route was rejected by the CLI's Windows ACL check;
+that override was not used for the final request. Supported workspace merge was
+verified instead. Grok read-only inspect found18 MCP definitions,25 hook entries,
+19 plugin entries; no Grok model session launched without proven isolation.
+Fresh interactive PP ALLOW6159MB/4096,CPU40%,14/16tasks,1parallel;
+no swarm/server/foreign-process interference. All commands completed.
+Ignored SIS artifacts/npm-review/d3d66f7e/gemini-{isolation,review}.json and
+review-status.md preserve actual configuration checks and auth failure.
+SIS issue329 comment6095160376 saved. Existing Claude route still quota-blocked
+until11October06:00Europe/Amsterdam; no inference/verdict there either.
+
+Latest SIS hosted38033646827 remains all-six SUCCESS with verified three archives
+and consumer/benchmark merge7a2309fa manifestc0693941. Current61-file packet remains
+prepared/not reviewed. Creator hosted38032449883 remains SUCCESS for its artifact
+jobs; draft e2e skipped. Exact-provider review, account/bootstrap/main-source
+publication, mcp-doctor source ownership, published defects and full platform/
+live-provider/customer acceptance remain open. Preserve full goal01a1235e scope.
+Hub root AGENTS explicitly reread; own clean lane and explicit-file guard/check
+verified. This is a review-route result, not a completed release or product goal.
+
+
+## 2026-10-10: reject malformed gateway privacy and retention (Codex)
+
+SIS draft342 pushed atd3d66f7eae731cfd19b1256a1de0796a66847e47. Verified previous
+hosted gateway accepts null expiry as unexpired public data and string private
+tags as shareable. Present invalid expiry or malformed tag shape now drops the
+record, preserving valid neighbors. Added exported-reader/official-client recall
+regression with authorized shareable access. Hosted38033646827 completed SUCCESS
+all six jobs; current three archives/consumer validate merge7a2309fa and manifest
+c069394134012c68c8ee4bf62a8cbbfbae55ea14c555811fddf45916581926b2.
+Current61-file review packet prepared/not reviewed and Gitleaks clear.
+Build HOLD5793MB/8192, no local rebuild; syntax/diff pass.
+Independent review/account/publication and full platform/value acceptance open.
+
+## 2026-10-10: independent-review route and published scanner triage (Codex)
+
+Creator26b9646 review attempted with native Claude2.1.295, no tools/MCP and bounded
+180seconds/$5 API cap. Returned usage_limit_reached,0inference/$0, no verdict.
+Reported reset11 October06:00Amsterdam. Builds HOLD7628MB/8192; interactive
+ALLOW5865MB/4096 admitted one lightweight client. No service/new swarm started.
+SIS doc tip0f1983b3 records redacted exact-byte triage of two flagged archives:
+arcanea3.4.0's two matches are empty environment assignments; skills1.0.0's one
+match unresolved. No raw values retained or credential validation/rotation.
+Source runtime unchanged; review/main/account/publication and product gates open.
+
+## 2026-10-10: creator publisher isolation and failed-consumer recovery (Codex)
+
+Creator draft6 source26b9646c187985e63907f846949dd6fdb46f260f is clean/pushed.
+Fixed inherited npm project config/environment and duplicate user/global rc path;
+publisher now uses private cwd, distinct empty rc files, explicit public registry,
+allowlisted provenance/OIDC metadata and exact manual main workflow. Consumer
+verification clears stale success before any manifest/install failure. Local12
+release tests pass with offline config reproduction and an executable failed rerun.
+Hosted38032449883 completed SUCCESS typecheck/unit and Linux/Windows archive
+consumers. Locally validated Linux ten archives and nine consumer checks against
+mergeef8a81a4, manifest1c31845553d69632b4d11ab6663d429c66f1617640f6040c75a2ec5bb38df55a.
+Separate draft e2e skipped. Current71-file review packet prepared/not reviewed and
+Gitleaks clear. No local build/install/provider launch or registry publication.
+Independent review/account bootstrap/platform/live-provider/paid acceptance open.
+
+## 2026-10-10: SIS milestone verification and fresh core import coverage (Codex)
+
+All four requested milestones are implemented on SIS draft342: dependency-free
+core, scoped AI SDK middleware, official standalone MCP suite, pnpm/Turbo/
+Changesets and gated OIDC release. Latest pushed source5dd614f5 strengthens the
+portability test to cold-import without process, Buffer or global before exercising
+sanitization, scoped recall and cancellation. Seven tests pass against the verified
+prior hosted tarball; existing local dist was stale. Hosted38031947510 completed
+SUCCESS all six jobs. Current archive/consumer/benchmark source binding validated;
+current55-file independent review packet prepared/not reviewed, Gitleaks clear.
+Exact-revision independent review, browser/edge provider deployments, npm trust
+bootstrap and final main-source publication remain open. Prior green six-job
+run38031220942 retains its a3651c55 boundary. Build preflight HOLD3832MB/8192;
+no rebuild, reviewer or process interference. See today's session for digests.
+
+## 2026-10-10: installed adapter comparison against direct AI SDK middleware (Codex)
+
+SIS draft342 is clean/pushed at a3651c5590288199a2aa3fb63cad49e181903cbe.
+Added an executable comparison using the same core policy, scoped provider,
+multi-turn inputs and deterministic model. Alternating order,20 warmups excluded,
+100 measured calls per variant. Equivalent prompt and scope/privacy/retention/
+sanitizer/read-count/error/hung-provider assertions pass. Failure assertions require
+actual recall calls; successful consumer evidence follows the comparison.
+Hosted38031220942 completed SUCCESS across all six jobs. The installed comparison
+ran on Linux Node24.21.0: direct median0.139ms/p950.470ms, Starlight median0.151ms/
+p950.280ms. These noisy synthetic timings establish no speed/quality advantage;
+real provider calls0, real token usage/task cost null. Actual archives, consumer and
+benchmark evidence bind merge2e74984bb5f835e1fc0d1ab8ac8ca985ff28caa0,dirty=false,
+manifestSHA256f5a44fcbb63a0ca016b802b99c82f5f789530a046634e73b5ee8bd83db744859.
+Current55-file review packet prepared/not reviewed and Gitleaks clear. Issue329
+comment6094694168 records the slice. Local16 release/audit tests pass; build remains
+HOLD5411MB/8192required. No local heavy workload/reviewer/publish. Account/review,
+Doctor issue6 and broader platform/customer/revenue acceptance remain open.
+
+## 2026-10-10: published MCP Doctor falsely reports runtime health (Codex)
+
+Expanded beyond SIS to @frankxai/mcp-doctor0.4.1. Exact live artifact identity,
+SHA512 and static archive/Gitleaks checks pass, but its published health module
+returns healthy for exit-without-response, silent process and invalid JSON. Three
+controlled real Node fixtures reproduce the false positives; all owned children
+terminated, no user MCP configuration or credentials used. ArtifactSHA256
+a934a4cfd52b459b23535d19eca5b4792039f58ac6d0098fb8add4a34a3c2265,
+moduleSHA2565ec191f3fa95d3677311fbeb5440eb3836bcbca4cb900f01fd8bf29cbb192b18.
+Main eca9f0a2e633c15e10f815c31c8fa320300c5b39 still has the audit logic; candidate
+package0.5.0 and merged check/score work do not repair it. Product issue6 now tracks
+the defect/acceptance. Reuse the existing official-SDK inspector, with safe config
+environment and handshake health separate from optional tool-lint quality.
+Source lane unresolved/occupied: cached routefind has no candidate; primary
+codex/daily-observability and Hermes worktree contain unfinished state. No source
+patch, takeover, new worktree or publication. Build HOLD3285MB/8192required.
+SIS10835dde and creator3e88447 remain unchanged; full release/platform/value goal open.
+
+## 2026-10-10: workspace-aware provider requests and correct MCP release identity (Codex)
+
+SIS draft342 now10835dde426ed292b815e58366ead2b161fe8496, clean/pushed. Reproducing
+tests first returned3pass/2fail: MCP advertised0.1.0 for package0.2.0; exported
+gateway accepted mismatched workspace before HTTP. Core now forwards optional
+RecallRequest.workspace_id, gateway denies mismatched scope/invalid budgets before
+HTTP, MCP handshake reads installed package version. Official-client/installed
+stdio tests exercise workspace-scoped recall and reconnects. Hosted38029958479
+completed SUCCESS across all six jobs; local16 release/artifact tests pass.
+Fresh actual archives and consumer evidence bind merge65cfcef43778d9f1c3368f706286fcf406784aed,
+dirty=false, parentsbc73db9b/10835dde. ManifestSHA256e2322b5c14f4510348c307563df8db10662e9044c16eae81474784b01a7f9bc6.
+Core8689JSbytes/12509compressedbytes. Current54-file exact-source review packet
+artifacts/npm-review/10835dde prepared/not reviewed, full packet Gitleaks clean.
+Issue329 comment6094533387 records this slice. No publication; account bootstrap,
+provider review and broader platform/customer/value acceptance remain open.
+Local build HOLD5597MB/8192required; no local rebuild, install, reviewer or agent.
+
+## 2026-10-10: SIS publication requires exact consumer evidence and isolated npm (Codex)
+
+SIS draft342 is clean/pushed at75132077ff1da8413fa76790f921d3a143a80ad2.
+All four modular milestones remain implemented, core/ai-sdk/mcp0.2.0. Publication
+now requires exact manual main workflow identity/source, clean checkout, matching
+installed-consumer receipt and isolated project/user/global npm configuration.
+Failed consumer attempts invalidate prior success. Malformed versions are denied
+before file reads. Local16 release/artifact tests and mandatory135 checks pass.
+Hosted38029407740 completed SUCCESS across all six jobs: artifact/installed-consumer,
+coreNode18 and Windows/Linux22/24. Downloaded actual
+archives and consumer.json validate against merge sourcef6db18a60fab57dc69761deec3d2b13c63f5c7c8,
+dirty=false, distinct from the PR head. Core8642JSbytes/12465compressedbytes.
+Issue329 comment6094459203 and draft342 description updated. Account bootstrap,
+exact-revision provider review and fresh main release remain pending. Priorfdb
+review packet is stale for new publisher source. No publication or review verdict.
+Latest local admission BOUNDED10668MB/8192required, one workload/no new agents;
+no heavy local workload was needed. Preserve previous holds as historical.
+
+## 2026-10-10: SIS initial versions applied; exact hosted0.2.0 archives verified (Codex)
+
+SIS draft342 is clean/pushed atfdb1e47fe627250c614b30378e8acf5fb5ac1a3f.
+Changesets3.0.3 applied the existing minor release to core/ai-sdk/mcp0.2.0, generated
+their changelogs and consumed the completed Changeset. Root8.5.0 and lockfile stay
+unchanged. Read-only publish-plan lists exactly those three unpublished packages
+in dependency order. CI now checks that post-version plan.
+Hosted38028360568 completed SUCCESS across all six jobs. Uploaded manifest binds
+merge source51e02553b05d0dcae99258ec2fc222061521f87e, dirty=false; downloaded actual
+archive digests/integrity/identity verified. Core8642JSbytes/12465compressedbytes.
+Current source review packet54files is prepared, not reviewed. New-package account
+bootstrap remains an actual gate: npm trust requires existing package/write access/
+account2FA/CLI11.15+; current CLI11.13, authenticatedfrankxai/orgowner confirmed.
+Local build HOLD7334MB/8192required; no new build or reviewer. No publication.
+
+## 2026-10-10: malformed npm archives rejected in both release verifiers (Codex)
+
+SIS draft342 now44346d9f; creator draft6 now3e88447. Regression fixtures first
+failed on the previous parsers, then passed after rejecting incomplete terminators,
+hidden trailing members, missing padding, malformed octal and ambiguous paths.
+SIS13 and creator10 release/audit tests pass; three SIS and ten creator existing
+actual archives remain accepted. Mandatory SIS135 tests and creator Gitleaks pass.
+Hosted SIS38027724509 completed SUCCESS across all six jobs; creator38027820273
+completed SUCCESS including Linux/Windows fresh artifact consumers. Earlier
+clean receipts and review packets retain their earlier source bindings.
+Local build admission is HOLD7222MB/8192required; no new local build, consumer or
+reviewer launched. Independent review, account bootstrap/final versions and release
+remain open. Both production environment configurations remain saved and verified.
+Arcanea primary is occupied; no source repair or extra worktree was attempted.
+
+## 2026-10-10: creator installation repaired; hosted consumers and release environments verified (Codex)
+
+[Creator draft6](https://github.com/frankxai/starlight-creator-mcp/pull/6),
+[issue4](https://github.com/frankxai/starlight-creator-mcp/issues/4), head
+`1ce433d8e9197cf6759c510afd9dcf98b4c52d69`: all ten packages build and install
+from actual tarballs. 52 existing tests, eight release safety tests, lint, full
+workspace audit (zero reported advisories), archive checks and Gitleaks pass.
+Hosted run38027000087 completed SUCCESS on Linux and Windows, including initialized
+workspace MCP launches and configuration preservation. Clean local receipt binds
+all ten archives to this revision; nine installed-consumer checks pass.
+SIS draft342 remains at54c41ddf with all six hosted jobs passing.
+Both repositories now have owner-reviewed npm-production environments and a main
+branch policy, verified through GitHub API readback. Admin bypass remains enabled;
+owner self-review is permitted. These settings do not establish independent review.
+Exact-provider review, npm trusted publishers, final versions, integration and
+publication remain open. No package was published by this session. Broader estate,
+platform, customer and commercial outcomes remain active. See today's session.
+
+## 2026-10-10: published npm artifacts audited; installation gaps identified (Codex)
+
+[SIS issue329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329),
+[draft PR342](https://github.com/frankxai/Starlight-Intelligence-System/pull/342),
+head `54c41ddf170b9a4693af97a1280b910c771e5c69`. Bounded exact-tarball audit
+inspected 42/45 inventory packages without executing package code. Three published
+packages retain local workspace dependencies; arcanea-soul lacks advertised
+declarations. Two scanner findings require private triage, not a confirmed-leak
+claim. Five new audit fixtures and six release tests pass; mandatory 135 tests pass.
+Hosted run38025179265 passed all six modular jobs for this head. Prior head5a977a1d
+passed all six modular jobs. Local build admission is HOLD at6494MB/8192required.
+Independent review, final version/account/OIDC setup and publication remain open.
+The full goal stays active; source repair ownership and scanner triage are next.
+
+## 2026-10-10: modular npm packages pushed; hosted CI passed and review open (Codex)
+
+[SIS issue 329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329),
+[draft PR 342](https://github.com/frankxai/Starlight-Intelligence-System/pull/342),
+head 5a977a1d. Core/AI SDK/MCP and release tooling are implemented. Local builds,
+14 installed-package tests, declarations, tarball secret/size audits, mandatory
+hooks and workspace dependency audit pass. Core is 8642 JS bytes/12483 compressed.
+Hosted legacy/organization SDK candidates passed at 235d0b3e. Modular run
+38023639393 passed all six Linux/Windows/Node/artifact jobs at 5a977a1d. Independent review attempts returned errors,
+not verdicts. No npm release by this session. Account/OIDC setup, final versions,
+independent review and broader estate/platform/commercial work remain open.
+Current pickup and limited 45-package metadata coverage are recorded in today's
+appended session; earlier HOLD/uncommitted records remain historical evidence.
+
+
+## 2026-10-10: modular SIS npm implementation saved; final checks held (Codex)
+
+[SIS#329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) now
+has a local implementation of the requested core/AI SDK/MCP/workspace-release
+milestones, preserved on `agent/codex/npm-modular-ecosystem` in the isolated SIS
+worktree. Root consumes extracted contracts/sanitizer; new release code binds real
+tarballs to source/digests and checks registry recovery before tokenless OIDC publish.
+Earlier 13 package tests and later 35 legacy/release tests plus 5 current-source core
+tests passed. Final tarball/consumer/root/hosted-CI and independent review gates remain
+open. RAM 3283 MB holds builds and falls below 4 GiB; implementation is uncommitted,
+with a 49-file source fingerprint and in-repo pickup. No product PR, publication,
+deprecation, account configuration, or competitive superiority is claimed. Preserve
+the primary migration owner. See the appended [session](sessions/2026-10-10.md) and
+[hub draft217](https://github.com/frankxai/agentic-ops-hub/pull/217).
+
+## 2026-10-10: npm namespace plan checked; SIS release gates remain open (Codex)
+
+[SIS #329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329)
+records the corrected three-namespace strategy and dependency-ordered release plan.
+Registry maintainer coverage is 40 packages: 33 Arcanea, one FrankX and six unscoped.
+Frank supplied six `PACK READY` results; installed-tarball and leak-scan evidence
+remain unverified here. SIS migration exists locally, but its legacy shim loses
+subpaths/MCP binary and uses a blocked CLI import; lockfile identity and tokenless
+publishing also need reconciliation. Preserve the existing migration owner.
+Next: repair compatibility and independently install/inspect exact tarballs before
+publication approval. Hub records are on the isolated Codex npm-architecture lane
+from current main; the Hermes primary checkout is preserved. See the
+[session](sessions/2026-10-10.md) for source revisions, instruction hashes and limits.
 
 ## 2026-10-10: hook repairs and native runtime verified; config merge requires review
 
@@ -1378,6 +2123,12 @@ Current verification head7fe2ace9b113aea315d24df7c98b5a510b1ed5c4 has unchanged 
 
 Public source `6e774c1` inspected: projects/retrieval, CLI executable overlap and creation-engine proposal boundaries recorded. Continue existing531/532 with current storage authority, execution admission and one recoverable browser/MCP creator outcome. No product implementation, paid execution or launch approval in this assessment;529/511 stay open. See today's session. Private strategy remains private.
 
+
+## Npm handover reconciled with accepted peer records, 10 October 2026
+
+Integrated hub main c2c19a601742da49c01843aaca0b76d94639f28f into this owned lane, preserving complete platform, Arcanea, GenCreator, SDK/AGY and other session records and prompts. The three-way conflict contained additive records; retained the complete main content and this lane's additions without choosing one owner's history over another. Peer PR237 reports both SDK8.5.1 scope publications and cold installation; peer PR227 reports platform PR107/109, deployment/database and scoped CI/canary acceptance. Those release reports were read, not rerun here. Creator-MCP0.1 remains blocked in the peer doctor record, and live account/customer activation remains open. Our SIS342 cb915a01 and creator6 ebf0f633 are distinct unmerged candidates. Do not duplicate the published SDK release or treat either candidate as covered by the peer reviews.
+
+
 ## v0 and design alignment: connected workflow and released pilot — 10 October 2026
 
 OAuth works for the existing Starlight Intelligence team. Inventory covered 21 original accessible chats; six private source contexts and one review context were added on existing project bindings. Vercel returned 62 registered projects, not 62 verified live products. Private mapping stays in local evidence; unseen ChatGPT chats are outside this coverage.
@@ -1392,8 +2143,150 @@ Next priorities: Arcanea's saved-world journey, SIS Memory Studio recovery, Fran
 
 No founder taste, customer outcome, complete accessibility audit, measured CWV or managed-account activation is claimed. Rejected screenshot transfers were quarantined; 120 original CI PNGs have sidecars and both visual-ledger receipts. The reference schema returns 404; memory-vault synchronization is pending. Preserve other owners' work and wider goals under existing Design48 and GenCreator5.
 
+
+## 2026-10-11: v0 design programme audit and context alignment
+
+Frank requested a cross-brand design execution plan spanning web, phone, desktop, CLI and brand foundations. Native v0 authentication was exercised, 28 accessible chats were inventoried, and the six existing brand contexts were checked against GitHub main and Vercel production history. Each audited production deployment was READY with the same source as its audited main; serving alias, current rendered journey and customer acceptance require separate evidence.
+
+Six private context metadata updates were read back. Original source pins and privacy were preserved. Four source snapshots need reimport; the two matching sources retain their adoption limitations. No new generation, project, webhook, product implementation, merge or deployment was made.
+
+The private programme and consolidated execution prompt retain design issue48, the released pilot and shared workflow, GenCreator issue5, hub PR245's production programme and PR200's proposal. The plan sequences foundations, one flagship creator journey, other brand jobs, cross-platform continuity and measured releases. Existing identity/Studio candidates and their trademark/review dependencies are preserved. This planning slice does not resume PR245's paused implementation goal.
+
+GPT6.1 Sol inside v0 remains untested: the exposed MCP model schema offers v0 Mini/Pro/Max/Max Fast, current documented ChatGPT options omit the requested model, and this session exposes no browser. Remaining credits and an approved programme allowance remain unknown. Browser captures, current Figma access, independent exact-revision plan review and product acceptance remain pending. One local workload was admitted; no workers/watchers were started.
+
+Full strategy, chat inventory, deployment bindings and original-source image receipt stay in private evidence. Public records contain continuity only. Next action: restore a usable browser surface, capture the current flagship desktop/phone journey, reconcile existing candidates through their owners, refresh its focused source/brand import and run one admitted study against the native baseline. Existing billing, identity, migration, trademark and release decisions remain scoped to their owners.
+
+Tracking: [design issue48](https://github.com/frankxai/starlight-design-intelligence/issues/48), [GenCreator issue5](https://github.com/frankxai/gencreator.ai/issues/5), [production plan245](https://github.com/frankxai/agentic-ops-hub/pull/245), [founder desk proposal200](https://github.com/frankxai/agentic-ops-hub/pull/200). No new task registry or retrospective issue.
+
+
+## 2026-10-11: twelve-hour design mission packet prepared
+
+Frank requested the installed orchestration workflow, specialised design/engineering lanes and a demanding twelve-hour autonomy prompt. SO, Starlight Swarm Ops, Emil design engineering, frontend design, GSAP React/performance and native imagegen guidance were read and applied to the private packet. No worker launch, twelve-hour execution clock, image generation, service activation or product UI verification is claimed. The inspected Swarm repository describes a dry-run planner.
+
+Fresh swarm preflight held dispatch: 9,174 MiB free versus 10,240 required, 25 task runtimes versus eight, with pause-new-swarms. The browser inventory exposes no apps/tabs. The prompt requires fresh admission, sequential progress while held, bounded jobs and independently verified runtime/cost access. Its target is one finished flagship creator-workflow improvement plus two bounded improvements on other sites, with actual acceptance controlling scope.
+
+Fresh source reconciliation supersedes the earlier pause/budget observation: hub245 is merged at c860e8b and records Frank's explicit implementation resume. Product CLI201 and CI202 are merged; latest observed GenCreator main/READY production source is ad558185, including the homepage layout-shift fix189. Re-query before execution; this packet does not repeat those releases or claim the managed customer journey is complete. Earlier handover observations remain historical.
+
+The private prompt defines rotating capability lanes, exclusive files, immutable inputs, stop conditions, original asset provenance, phone/accessibility/recovery/performance checks, independent exact-head review and ordinary release authority when Frank submits it for execution. Identity, trademark, migration, billing and protected-surface decisions retain their existing scope. Full strategy and private tool evidence remain outside public Git. Independent packet review remains pending.
+
+Hub main and this lane both added the same dated session file. The receiving-main session bytes and the design note were preserved when resolving the add/add conflict; other owners' ledger/prompt updates were retained. Generated-rule, preservation/hash, whitespace and enabled secret checks apply to this documentation slice. Existing design issue48 and GenCreator issue5 retain the product work.
+
+## 2026-10-11: active design mission checkpoint
+
+The native mission runs 03:26:56–15:26:56 UTC with a privately recorded existing-credit cap and no purchase authority. [GenCreator PR203](https://github.com/frankxai/gencreator.ai/pull/203), exact head cfa6bab, adds coordinated near-draft save/retry/backup, exact-copy feedback and keyboard task navigation. Independent v0 Max static review passed ten hashed source attachments. Lint/typecheck, unit and build pass; [current browser CI](https://github.com/frankxai/gencreator.ai/actions/runs/38112315239) and fresh exact-head originals remain pending. Prior failed attempts and limits are retained in the dated session.
+
+The exact Vercel preview is READY and its protected studio GET returned200, without deployed browser/customer proof. Three actual-source compositions were captured at phone/tablet/desktop widths; Edition desk was selected after original-image comparison. Alternatives are capture-only. Provenance/schema validation and taste records are saved privately; read-only memory access leaves vault sync pending. Local admission holds browser/fanout, so no local workers or services were started. Two other site improvements, production promotion, current UI model-picker inspection and customer acceptance remain open. Preserve identity/homepage/auth/billing owners.
+
+Tracking: [GenCreator issue5](https://github.com/frankxai/gencreator.ai/issues/5), [design issue48](https://github.com/frankxai/starlight-design-intelligence/issues/48), [hub PR246](https://github.com/frankxai/agentic-ops-hub/pull/246). Next: finish the exact release candidate, verify serving source, then select the next bounded product job from current site evidence.
+
 ## 2026-10-10: Arcanea passage-to-scene candidate
 
 PR560 source `e6691535358a57c8cfd99552224dbf8e022a1017` integrates accepted main444 / Worlds561 through a normal merge. Full native CI 38090424386, Reading 38090424428 and CodeQL analysis 38090424398 pass; separate finding check 114326173444 reports zero new alerts. Four compiled browser modes pass shared-token geometry/restoration, privacy, focus, selection and recovery. Six PostgREST cases and five actual disposable GoTrue password/SSR-cookie/private-save/isolation checks pass. Artifact 11684150359 (378615 bytes) binds seven runner, six Auth, thirteen UI, four capture and four database hashes. Owned cleanup has no errors and removes private config. Desktop/mobile captures were inspected. READY preview dpl_DcEMTEiM5LYhjS2xHhUCU3s1Z52X serves chapter SSR at HTTP200 for this source. The 25 reader files and seven review-context hashes are unchanged from verified A4. Image generation remains synthetic; independent reader review, real provider/customer/credit/refund/private-media and comparative creator acceptance remain release gates. Worlds561 is merged; production was separately observed READY at `4441801b5e003499bd70ca25e141fa7986793e58`. All38 incoming independent-review source hashes match E7 and accepted main, and the final-text hash matches. Safe artifacts from run38086966377 / artifact11682788570 retain two actual world-generation/comparison calls previously executed by that owner, real disposable login/save/recovery and zero production writes or image calls. This reader session's adoption review makes zero provider calls. Arcanea produces a specific structured editable world with private recovery; the same-concept direct response has richer dialogue, character detail and a contested founding history. One sample establishes no creative superiority, demand, pricing or production onboarding. Character dialogue, present disagreement, mobile metadata density and the long footer remain bounded craft follow-ups.
 
 The <=US$1 exact reader-source review approval remains unanswered. The complete prepared review covers 25 changed files and seven contexts, with a 507445-byte source/delta footprint; no token-count or independent verdict is claimed. Private media/library/CSP and actual image, customer, credit/refund acceptance remain529/531/472 dependencies. Default-branch dependency findings remain open; no alert was dismissed. The eight-seat/nine-mission SIS8.5.1 routing candidate still has six component checks, with no live Queen dispatch, durable284, payload schemas or USD enforcement. Root SYSTEM.md, SCHEMA.md and SKILLS.md are missing. Swarm HOLD measurements remain dated evidence; no new local worker, browser or server started. Private Circle identifiers remain local, and academy/enrollment/community adoption is unproved. The full platform/team/research/maintenance/worlds/books/media/community/academy/developer/IP/revenue/mobile/desktop/API/MCP goal remains active.
+
+## Arcanea current-source review and edition selection — 11 October 2026
+
+Dragonborne: The Last Clutch is the selected seven-chapter engineering edition
+candidate; the private full-manuscript/source freeze exists with null release
+approval receipts. Reader573 at2a75cf2d has composed exact-source review and actual
+three-mode browser step evidence from38116709201; final CI, capture inspection,
+normal integration and production proof are separate. Routing575 atc3c699ec
+passed90 native cases and waits for the receiving hosted gate. Hub252 saves the
+strategy/prompt and current pickup; its complete strategy artifact has independent
+WARN with three unsupported concerns reconciled against current primary sources,
+with omitted record files explicitly outside that model review. Raw failures,
+the hub conflict-marker repair and interrupted dependency auto-repair are retained.
+See [today's evidence](sessions/2026-10-11.md) and [next action](NEXT-PROMPTS.md).
+
+## Arcanea selected edition proofs and live verification gap — 11 October 2026
+
+Reader PR573, routing PR575 and strategy/prompt hub PR252 are merged. Current-source
+reader CI/captures were inspected; routing passed 90 cases locally and in the
+receiving 3b8120b4 hosted step with zero skips/failures. That full run was later
+cancelled. The receiving 0661416b workflow is red in the provider/account browser
+fixture, with a diagnostic handed to PR576's owner. Production was observed
+READY at 0661416b with matched aliases/HTML deployment markers, but all four
+featured chapter initial documents contain zero visible article prose. A concrete
+direct-renderer/no-JavaScript patch is prepared and syntax-checked, deliberately
+unapplied because PR560's reader component remains held by its unfinished owner.
+
+Dragonborne: The Last Clutch is the selected engineering candidate. Complete
+seven-chapter private HTML and EPUB proofs now exist with exact source hashes,
+basic packaging and separate actual-artifact ordered-text/navigation checks.
+EPUBCheck, e-reader/print rendering, approved metadata/cover, manuscript/canon/
+rights and checkout/delivery/refund acceptance remain open. No release approval,
+publication, paid model call, creative superiority or managed API activation is
+inferred. See [today's receipts](sessions/2026-10-11.md) and [owner/edition issue280](https://github.com/frankxai/arcanea-ai-app/issues/280#issuecomment-6106348256).
+The [full lead brief](plans/2026-10-11-arcanea-community-lead.md) remains accepted;
+the next prompt names actual owners and remaining verification. Other fronts,
+source failures and private evidence are preserved. The founder goal stays active.
+
+The selected private Dragonborne format set now also includes a142-page PDF,
+SHA2563fbbc451844c0c652d6657953e1883f5dbf085274695a1606d742d0fd78e041f.
+One freshly admitted cached offline browser rendered all seven chapters; a
+separate actual-PDF check verified normalized source word order and6-by9-inch
+page dimensions. The earlier cleanup failure is retained; the fresh file check
+passed without another browser. Visual/print design, cover/bleed, EPUBCheck and
+all human release gates remain open. Private files were not published.
+
+
+## Arcanea whole-book revision and evaluation inputs — 11 October 2026
+
+The lead completed the original seven-chapter Dragonborne read and verified the
+locally read text against frozen a131c1e9 Git objects. Fifteen literal-citation
+findings now distinguish continuity contradictions from developmental questions.
+Separate private revision v3 contains an editable complete manuscript with the
+proposed repairs and trust scene. Combined SHA256
+bfe68fddc7568bf9789b74727c82cfbcec67d4a2cbe92c750cf67919f46fac0c.
+Original source/canon/exports remain unchanged; revised-book cold read, independent
+review, new name/lore and human release acceptance are still pending.
+
+Twenty source-bound narrative tasks are prepared, with a separate unapproved
+draft reference and12/4/4 development/calibration/holdout designations. No candidate
+comparison or human gold calibration has run; holdout isolation is not enforced.
+The independent public-original diagnostic returned raw WARN at reported US$0.
+Only five of ten finding quotes are unique literal matches at their declared
+lines. Its unsupported P0 extra-Gate allegations and missed direct contradictions
+remain a factual failure case. This is no narrative ranking or approved judge.
+
+Provider PR578 advanced through draft5b33f521 to drafta7041809. Earlier3a22 fixture CI cannot approve that
+head or live auth/settings/provider use. Main stayed0661416b with failed receiving
+CI, and PR560's held reader repair remains unapplied. EPUBCheck/storage admission,
+manuscript/canon/rights, creator pilot, model funding and managed-supply gates stay
+open. See [current evidence](sessions/2026-10-11.md) and [pickup](NEXT-PROMPTS.md).
+
+
+### 2026-10-11 SIS plugin dependency security candidate
+
+- Draft [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362), head6dd836e8fe8ed58f377cc19810a2c535725ec6fa/base8e683011, two plugin manifests only; patched SDK1.31/client-core-server2.2 with agents-scoped overrides; current handler/auth preserved.
+- Actual plugin38134169582 passes clean install/0 reported vulnerabilities, validation/typecheck,21pass0fail0skip, build and health200/anonymous401 smoke. Ecosystem38134169607 all six jobs pass, including four Node22/24 Windows/Linux matrices.
+- Exact independent review pending: frozen220633-byte packet SHA25665bdb8396a10a076a7b78de619455c323d8dd4be866298a9236ca2c9f5e021be; launch-time review-lite HOLD6048/6144required/projected4000, no AGY worker launched. Jules lockfile guard unchanged. Protected review check correctly fails; PR remains draft/unmerged and alerts206/207 open on main.
+- Both saves: [SIS329 checkpoint6108383944](https://github.com/frankxai/Starlight-Intelligence-System/issues/329#issuecomment-6108383944), this session journal and current pickup. Reused owned WT/explicit scopes/native leases; foreign work preserved; no live worker/deploy/publication/account/customer mutation. Next admitted exact review, normal protected merge and main CI/alert closure. Root/site/Creator/MCP publisher and managed customer gates stay open; full goal active.
+## 2026-10-11: design checkpoint after combined-source failure
+
+GenCreator PR #203 is released with bounded live browser-copy recovery verified. Arcanea ready PR #579 preserves accepted main and five owned blobs, but combined-source CI 38123462180 failed mobile header clearance and a separate Chat provider fixture. Its original failure capture was inspected; the hosted keyboard timeline did not reproduce it or prove the cause. Preserve account-owner PR #578. No Arcanea promotion occurred.
+
+FrankX candidate 08044a6 has independently reviewed source and final corrections. Required local type/lint/build and actual browser proof remain held; it is unpushed and unreleased. The native design mission remains active to 15:26:56 UTC, with two additional qualifying releases open. The allowance is $25 existing credits; observed native team usage is 0.0103 plan-credit units, not an asserted dollar cost. Storage remains above the hard floors, and other sessions are preserved. See the current [session checkpoint](sessions/2026-10-11.md) and owning GenCreator #5, Arcanea #276, FrankX #339 and Design #48. Hub conflict recovery preserved both texts and foreign prompts.
+
+
+## 2026-10-11 08:58 UTC: editor browser pass and remaining release gates
+
+Arcanea dd29f2d / PR #579 passes the complete five-mode world-editor browser journey in CI 38125608173, with tree-bound original captures and final source STATIC PASS. Overall required CI still fails in the inherited account-provider fixture; preserve its owner PR #578 and the earlier overlap failures. No Arcanea release occurred.
+
+FrankX 08044a6 remains source-reviewed locally and unpushed under a fresh build HOLD. GenCreator is released with bounded live recovery verified. The mission remains active to 15:26:56 UTC; two additional qualifying releases remain open. Native observed team usage is 0.011 plan-credit units, with no asserted dollar conversion. Storage is above the hard floors. See the [current session](sessions/2026-10-11.md) and existing GenCreator #5, Arcanea #276, FrankX #339 and Design #48; preserve foreign records, active sessions and prepared identity work.
+
+
+## 2026-10-11 11:05 UTC: second production improvement delivered
+
+Arcanea [PR #579](https://github.com/frankxai/arcanea-ai-app/pull/579) is merged; accepted/serving46b77c58 and receiving-main CI 38131259624 pass. Complementary live anonymous synthetic checks verify mobile validation/navigation, actual working-edits download, Apply and reload recovery; earlier incomplete commands remain retained. Full source/doc correction and application-equivalent preview review are recorded with their scopes. Customer/account/provider, physical-device and field-performance acceptance remain separate.
+
+GenCreator is released. FrankX08044a6 remains source-reviewed locally, unpushed under build RAM HOLD, with required Node 20/pnpm 10.28 and local/runtime gates open. No owned heavy process is running. The active mission still needs one qualifying release by15:26:56 UTC. Three focused v0 source contexts are verified; imported workspace files and saved skills are unchanged. Forty complete team-wide events through 11:01 report 0.0175 charged credit units; the $15.7546 public token-rate estimate before discounts is not actual spend or balance. The cap is $25 existing credits, no purchases. See the [current session](sessions/2026-10-11.md) and existing product/programme issues; preserve accepted records, foreign prompts, active owners and prepared identity work.
+
+
+### 2026-10-11 SIS protected merge refusal and rejected native-job gate
+
+- Actual HTTP405 twice at6dd836e8 despite green API-created review checks. Exact independent two-manifest PASS preserved; no normal source merge occurred.
+- Exact Google04b81254 review BLOCK covers all five changed blobs: malicious PR workflow completion can overwrite trusted API-patched rejection. [Negative receipt6108701422](https://github.com/frankxai/Starlight-Intelligence-System/pull/362#issuecomment-6108701422). Existing15-test/plugin21-test/six-job CI successes did not establish protection against this Actions behavior.
+- Lead rejected the unaccepted850b3f86 status proposal's missing-first-status gap. Both experiments withdrawn at6fe932f3; full treec9aaba90 equals tested6dd. [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362) remains draft with only two plugin manifests; source gate paths match accepted8e, nine regressions pass and alerts206/207/215 remain open.
+- Next legitimate distinct review-app identity or immutable required-workflow binding, safe spoof/denial/restoration fixture, fresh exact-source review and normal protected merge/main proof. No weakening, forged approval, token/account workaround or publication. Browser inventory empty; GitHub connector installation metadata available but no check writer. Both isolated reviewers completed; foreign work and prior hub259/260/history preserved; broader managed/publisher/customer gates ACTIVE.
