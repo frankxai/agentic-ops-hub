@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Edition desk released; design mission remains active
+
+[GenCreator PR203](https://github.com/frankxai/gencreator.ai/pull/203) merged normally at `d01529702eef91188c35bc6cbdca6aa7074be9ec`, preserving required checks and the independently reviewed candidate's ten source blobs. [Candidate CI38112315239](https://github.com/frankxai/gencreator.ai/actions/runs/38112315239) and [receiving-main CI38113731773](https://github.com/frankxai/gencreator.ai/actions/runs/38113731773) pass every job. Production `dpl_3vighctxAKV3JzsLjf6efKPkCtu2` is READY at that receiving revision. The apex studio route serves expected controls with HTTP200; www redirects308 to the same apex path. The independent v0 Max review was static. Original desktop/phone/tablet captures and browser CI provide separate evidence; physical devices, the deployed browser journey, customer acceptance and field performance remain unmeasured.
+
+The native design mission continues until its existing 15:26:56 UTC deadline or evidenced completion. Two meaningful other production-site improvements remain open. No credit purchase, identity approval, managed activation or machine fanout occurred. Existing source pins, foreign work and every other active prompt remain intact. Current release and next steps are recorded in the session below; [design issue48](https://github.com/frankxai/starlight-design-intelligence/issues/48) and [GenCreator issue5](https://github.com/frankxai/gencreator.ai/issues/5) retain the wider work.
+
 ## 2026-10-11: Shared commit ownership gate and bounded operations audit activated
 
 [Config PR113](https://github.com/frankxai/starlight-agent-config/pull/113) merged normally as `3e7656561fda5a6bb0d14c0bbc9a2f6bcdf3beae`. Receiving-main Linux and Windows CI pass. Antigravity reviewed all 14 files at candidate `3612953bcf617a710600c1c0c3bd5b5d58408ecf`, returned PASS with two nonblocking limits, and the required exact-head review check passed. The merged tree matches that reviewed source.
