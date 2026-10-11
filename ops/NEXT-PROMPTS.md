@@ -1,9 +1,21 @@
 <!-- ecc-harness-20261011:start -->
 ## ECC harness, one current prompt
 
-The short ECC port and the executable verification and Santa tests are already on main. Do not install the rest of ECC.
+Complete the ECC harness program. Do not install the rest of ECC. Do not promote the eight absorbed skills. Do not kill a running Grok process. Do not start Claude, Antigravity, rtk, the observer, claude-code-action, or `jules login` unless that item's gate in the metric table is open.
 
-When Claude `/usage` shows the weekly cap has reset, open one Claude session and run `/codex:setup`, then one `/codex:review --base main`. After that, add typescript-lsp and pyright-lsp. Leave the eight absorbed skills cold until a saved task-success eval and an explicit promotion. Leave the observer, rtk, and claude-code-action off. Do not kill a running Grok to apply the MCP diet. The runners are `node absorbed/harness/verification-run.mjs --repo=<path>` and `node absorbed/harness/santa-round.mjs`. Full record: `ops/sessions/2026-10-11.md`, section "ECC harness close".
+Read `ops/sessions/2026-10-11.md`, section "ECC completion program", on draft https://github.com/frankxai/agentic-ops-hub/pull/265.
+
+Measured already: library #51 `682b2ce`, #52 `ca04fed`, #53 `854bb488` are merged. Config #41, Hermes #28, SIS #344, and hub #233 are merged. The shelf has 79 directories at `C:/Users/frank/.claude/ecc-reference/ecc-upstream`. The e2e is 10/10. Skills stay cold.
+
+Execute only open gates, in this order. If free RAM is under 8 GiB, record the reading and stop before any new local agent.
+
+1. If PR 265 is still open and free RAM is at least 8 GiB, Antigravity signs the exact head and squash-merges it through `pr-gate`. Grok does not sign.
+2. One model task-success pass: a harness that did not write the eight skills answers the eight fixture decisions in that section. A different harness scores them. 8 of 8 cited passes are required before anyone asks to promote a skill.
+3. A Foundry `report` is allowed at 8 GiB or more. Do not run `tier --apply`. Do not disable skills.
+4. Claude `/codex:setup`, one `/codex:review --base main`, then typescript-lsp and pyright-lsp, only after `/usage` shows the weekly cap reset and free RAM is at least 8 GiB.
+5. The Grok MCP diet loads on the next Grok process. Do not kill one to force it.
+
+Success is the metric table in that section. Each row is either PASS with a receipt, or still blocked with the number that blocked it.
 <!-- ecc-harness-20261011:end -->
 
 <!-- v0-design-programme-20261011:start -->
