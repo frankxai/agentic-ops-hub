@@ -1,5 +1,16 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: generated controls repaired; reader production advances
+
+Private draft580 now holdsdddba9923733d35d2bebc8245bdbef3e7a8f87cf. Previousb414a27 run38135786673 passes build/types/lint and independent37-source review, but required private browser/CI Status FAIL. All three modes pass real Auth/PostgREST/Postgres/private Blob-SDK retention, cache-loss reopen, exact68-byte downloads, lost favorite acknowledgement/revision restore, ownership/quota denial and real BroadcastChannel A/B/A with actual late gallery delivery (9 password logins). Desktop pagination passes. All modes fail generated-action visibility and report2 page errors per mode. Six original failed captures/companions are preserved and registered as failed fixtures. No failure is waived.
+
+Current source exposes a wrapping mobile action rail, desktop focus-within reveal,44px targets, brand-token controls and reduced motion. Error diagnostics record bounded/redacted phase/name/message; zero-pageerror acceptance remains required. Native9, targeted ImageCard lint, syntax/formatter/whitespace, owned lane and enabled staged secrets checks pass. Manual38138240992 Install/Lint/TypeScript and independent Gemini3.1 Pro PASS37 actual Git hashes succeed; Build/private browser are running or pending at this checkpoint. Exact runtime result must precede acceptance. No local heavy work or extra agents under PP browser HOLD6146/8192MB and27 runtimes. Disk85.60GiB/8.99% is above the hard floor; no owned local worker persists.
+
+The reader owner has now merged581 at39073b0 to accepted maine07d56866397e6eacc1093cc79505c173a681da8. Its actual ready PR CI38137289342/CodeQL/estate succeed; receiving main38138275589 CI remains running at checkpoint. Vercel dpl_Gc5hSHSZkFF1coRY62pX8FxGiN3K READY matches e07d568 with www/apex/app aliases. Read-only12:15:48UTC home200, real Studio/settings auth redirects, gallery401 and exact imgen CSP without wildcard pass. Signed-in production and private storage are not accepted. Preserve reader581 and narrative582 incoming files byte-identically on later integration; update immutable review base to accepted current main and retain bounded source limits.
+
+Keep580 DRAFT. Observe exact38138240992 without PR-body changes, duplicate runs or timeout cancellation. Diagnose redacted actual browser errors if they persist, inspect/register new renders, verify cleanup/accounting and run current-main exact gates before release. Live private provisioning/DDL/admin/capacity, durable video/job recovery, larger governed saves, creator quality, subscriptions/storage/API credits, local/cloud harness and connected clients, estate branch cleanup and security hardening remain open. Full native goal ACTIVE. Existing276/529 exact comments and private PLAN/source/receipt records are updated. Historical4574/652 branch/PR classifications remain dated evidence. Existing neutral semantic blockquote side-tab exception is preserved; no new ignore or suppression. No live price/money/store/schema/quota/rights activation, branch deletion or issue closure.
+
+
 
 ## Arcanea adoption: real private acceptance runner admitted
 
