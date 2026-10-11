@@ -1,5 +1,14 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: actual document SQL and full CI passed; exact review admitted
+
+Document candidate5398d9861495079c8d10d9e8ed5d104c3bb69786 completed CI38144386309 with Install/Lint/TypeScript/Build/CI Status SUCCESS. Actual PostgreSQL17 job114484729648 logs prove owner/parent/direct-write denial, atomic forced-history rollback, stable operation replay, retained duplicate old history, atomic creation and a real two-connection CAS race: one commit, one conflict. Nineteen recovery cases and six API contracts pass. Retained log SHA256f1d8025d7413dc2415c07d23259c60b6c6255622c5e59dee93b42ab75944d91f; full workspace TypeScript passes, superseding the earlier selected-import limitation.
+
+Current draft PR585 is94f62b6fe9042034d288c25cad366eecc2c4ae26. This follow-up admits only the owned document branch to the existing trusted manual independent provider review, pins accepted base e07d568 and preserves30-file/900KB complete-source bounds. Syntax, formatting, whitespace, the real existing provider-admission regression and enabled ownership/secret checks pass. Manual38145112813 is confirmed live on that exact head, with Install running; normal PR38145077073 also runs. Observe those exact handles without duplicate dispatch. No independent verdict or actual authenticated document browser/customer acceptance is claimed.
+
+No document production migration, write or merge. Private PR580 remains draft with its terminal authenticated acceptance PASS, live empty schema and disabled writes. Existing US$1 storage verification approval still has no answer; no store/token/capacity/financial provision. Full estate/premium/creative/subscription/storage/API/credits/local-cloud/client objective ACTIVE. Updated exact owned product issue comments276/529 and private evidence/current pickups. No owned local workers/servers/watchers remain.
+
+
 ## Arcanea adoption: document editor recovery implemented; hosted checks running
 
 Draft product PR585 is open at5398d9861495079c8d10d9e8ed5d104c3bb69786 from accepted main e07d56866397e6eacc1093cc79505c173a681da8. The editor now uses the atomic revision/operation contract, one existing createDraftSession writer, owner/project/document scoped immediate recovery, stable uncertain-operation replay after reload, verified receipts and account-epoch late-result denial. It offers retry, structured draft download, protected original unreadable-backup download and explicit conflict reopen; storage failure stays visible. Empty old content still opens with the existing rich-editor default. Token-based44px recovery controls and focus outlines are implemented locally, with real render review pending.
