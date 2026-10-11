@@ -1,3 +1,15 @@
+## Arcanea adoption: reader workflow admission corrected after document PASS
+
+Full Arcanea objective remains active. Document draft PR #585 is now `25c33401af78ebcc8825758c75412c692d1d2b32` against accepted main `a00d10b6cfd11558af57c516d4b4545c88cab03f`.
+
+Previous a40 completed normal CI38153050448 and trusted manual38153091941 SUCCESS. Independent Gemini3.1Pro review PASS has35 verified Git-byte source hashes. Actual disposable Auth/Postgres compiled document recovery passes desktop/mobile/reduced-motion, seven checks per mode, nine real password logins, zero page errors and zero supplier posts.14 service hashes and all six inspected PNG companions match source; private configuration removed, cleanup failures zero. Earlier failed attempts remain retained. This is isolated runtime acceptance, not signed-in production or paid creator usefulness.
+
+Receiving reader workflow38153050418 failed by invoking its owned Auth runner from this unadmitted document branch. The correction mirrors the unchanged runner's repository/actor/three-branch admission for only that step.14 actual-runner/workflow PR/manual admission cases pass. Other route/account/private-config/Postgres/PostgREST and compiled-reader checks still run. No Auth admission is expanded. The complete unchanged runner enters the next independent-review context.28 other incoming reader paths stay byte-identical to accepted main; the shared fixture-test conflict remains reconciled.
+
+Current exact manual38153894420, normal CI38153898140 and reader38153898138 are live; do not duplicate dispatch. Fresh exact-source gates must pass before protected merge. Production READY deployment `dpl_2T3aMyJRrgcaAiYSkApjxPfe7kDS` is bound to accepted a00, with www/apex/app aliases attached. Read-only production catalog confirms all four project/document tables and both document functions absent. No document migration, customer write or financial provision has occurred.
+
+Private PR #580 remains disabled pending the existing US$1 storage/live-verification answer. Private editor image upload/serving/export, long marketing footer, creator/continuity/media/video usefulness, subscriptions/storage/API/credit limits, connected clients/local-cloud harness, security and estate branch landing remain open. No new local heavy worker, browser, server, watcher, install, worktree or agent is started under the recorded RAM hold. Pickup remains in hub PR #248 and issues #276/#529.
+
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 ## Arcanea adoption: exact document pass and accepted reader integration
