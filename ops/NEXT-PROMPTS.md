@@ -1,15 +1,33 @@
 <!-- v0-design-programme-20261011:start -->
-## v0: execute the admitted twelve-hour design mission
+## v0: continue the active design mission
 
-Use the private `v0-design-autonomous-12h-20261011.md` only when Frank submits it as an execution instruction. Preparation does not start a clock or worker dispatch. It targets one complete flagship creator-workflow improvement and two bounded improvements elsewhere, with rotating specialist lanes, actual browser/phone evidence, independent exact-head review and truthful release receipts.
+Continue native goal thread 01a1254f-d5b4-7ba0-a3dd-9b8ca0969cea. Its UTC start is 2026-10-11T03:26:56Z and deadline 2026-10-11T15:26:56Z; do not restart the clock or mark the wider programme complete. Read the submitted private mission contract and current checkpoint. Frank authorised ordinary qualifying releases and a bounded allowance of existing credits, with no purchases. Preserve identity/trademark, protected homepage, money, migration, security and external-posting gates.
 
-Read current hub main's GenCreator production/execution/capabilities records. The earlier pause and Actions budget notes were superseded: Frank resumed execution; CLI201 and CI202 are merged, and the latest observed main/READY production source ad558185 includes layout-shift fix189. Do not repeat these releases. Managed activation and real creator/native-app acceptance remain unfinished. Preserve product owners and existing design/identity candidates.
+First finish GenCreator PR203 at cfa6bab32972adeb01c3b23544a6c54e38fef174. Independent v0 Max static review passed ten exact Git-source hashes. Lint/typecheck, unit and build passed; re-query CI38112315239 for browser results. Download and inspect the fresh originals with companions/ledger receipts, preserving failed attempts c60e02d and f1dcf63. The fixed retry finding has a reply but its review thread remains unresolved. The exact READY preview returned the expected studio page via protected HTTP200 GET; this is not a deployed browser journey. Resolve actual findings, use the ordinary owning release path when eligible, then verify receiving-main CI and serving deployment/source. Do not alter the unapproved identity stack or managed activation.
 
-The last swarm preflight held new dispatch and this session exposed no browser. Rediscover capability, source, ownership, budget and fresh machine/storage admission. Continue sequentially while held. Skills are applied to the packet; no product visual verification, image generation or live fleet activation is claimed. Keep full strategy/private inventories outside public Git; use existing design issue48 and GenCreator issue5, and preserve other prompts.
+Edition desk is selected: desktop source/draft comparison and source-first mobile order. Reading room and Sequence studio are capture-only comparisons against the same fixture. The private v0 Pro study is unadopted; no GPT6.1 Sol interface support or physical-device/customer acceptance is claimed. Current local admission holds browser/fanout. Continue useful sequential work and existing hosted checks without starting global services or killing other owners.
+
+Then deliver two meaningful other production-site improvements, selected from current rendered journeys and accepted components. Refresh each repo guide, source, ownership and release path before writes. Arcanea's accepted Visual QA workflow is source-bound; its foreign stale primary is not a writable lane. FrankX's homepage and local gate rules remain specific. Preserve native/mobile/desktop/CLI continuity and the larger programme. Keep private inventories, provider attachments and temporary authentication links out of public Git. Update this hub and existing product/design issues at coherent checkpoints.
 <!-- v0-design-programme-20261011:end -->
 
 
 # ⏭️ Next Prompts — per active front / terminal
+<!-- autonomous-ops-20261011:start -->
+## Operations: verify adoption and finish one useful cost or production improvement
+
+Continue Frank's 11 October instruction for autonomous, orderly, cost-aware agents and protected production work. Accepted config main is `3e7656561fda5a6bb0d14c0bbc9a2f6bcdf3beae`, from PR113. The local installation pins the byte-identical reviewed candidate `3612953bcf617a710600c1c0c3bd5b5d58408ecf`. Read the latest hub session and ledger, config `core/policies/autonomous-ops.v1.md`, `core/skills/starlight-ops/SKILL.md`, existing Queen `operations.md`, and the actual target repo's governing instructions. Verify current heads and ownership before acting.
+
+Run `starlight-ops audit --github-usage` and `installers/doctor.ps1 -OpsOnly -Json` from the verified configuration checkout. Inspect coverage and the 4 GiB floor; partial runs leave unvisited state unknown. Reports live under `.starlight/operations/ops-guard`. The limited two-day Windows task is the only new clock and performs metadata observation, with no model calls or implementation. Use the existing lead/Queen queue for improvements; do not add duplicate AI schedulers or re-enable older disabled jobs.
+
+Choose at most three evidence-backed findings and finish one bounded authorized artifact. First resolve a named repo hook override with its owner, or prove native fresh-session skill loading. Codex, Grok and Gemini skill links were installed; Grok command files were projected. Claude's existing linked checkout was intentionally preserved, and its owner must integrate any projection. Never infer universal agent compliance from installed files. Git hooks enforce ordinary local commits using the shared path; no-verify, configuration overrides, direct API writes and other machines need separate admission controls.
+
+For a cost improvement, inspect actual per-repo Actions or Vercel build evidence, compare duplicate work, preserve required validation and real customer recovery/acceptance, then make one coherent source-reviewed change. Budget usage is not the cap. Keep the founder's existing hard stop and Copilot setting; no further allowance is authorized by this prompt. Measured savings require a before/after observation.
+
+Use one lead and one owner per checkout, with explicit `starlight-ops claim` file scopes. Legacy leases remain reserved until their actual owner reconciles them; do not close a lane from age, a state label or a tidy-worktree preference. Fresh machine admission governs any additional writer or independent review process. Preserve unfinished work, dirty trees, locks, existing branches and the installed config worktree whose skill links are live. Merge normally after actual required checks and exact-source independent review. Vercel production claims require receiving-main, source/environment/domain binding and actual workflow proof.
+
+Save the finished slice in this hub and config issue30. Preserve the separate Starlight, AGY and GenCreator prompts and their incomplete customer, identity, creator and commercial gates. The GenCreator identity decision remains Supabase sessions plus explicit Starlight account linking.
+<!-- autonomous-ops-20261011:end -->
+
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: review and release Supabase auth, then prove live account activation
 
