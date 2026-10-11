@@ -1,5 +1,20 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: integrated document fixture correction and exact-source gates
+
+Current checkpoint: full Arcanea objective ACTIVE.
+
+Draft document PR585 is now1e0e345b7b93ec4278e6f19f338b90f1e83792bf. It integrates accepted main22aa23ba106d1b9affa0adcacbcfa73e99f6e59e without changing any of the six incoming ownerPR586 files. Root instructions are unchanged; explicit routing/ownership and enabled staged gitleaks checks pass.15 residual files against accepted main; lease21 paths includes six imported paths.
+
+Previous78a7017b earned full Install/Lint/TypeScript/Build and exact Gemini3.1 Pro PASS with35 verified complete-source hashes. Real PostgreSQL17 fresh and original-first migration fixtures both passed atomic history rollback, stable replay, retained legacy history, owner/parent/direct-write denials, creation and two-connection CAS races.23 native recovery, six API contracts and three document private-configuration cases pass. Actual installed-Supabase missing-session500 and foreign-parent201 regressions were corrected to401/404. Production lacks all four project/document tables; the unreleased migration supplies their canonical shapes.
+
+Manual38148018167 terminal FAILED CI Status because GitHub skipped the document browser job despite direct prerequisites passing. That failure remains preserved; no skipped browser acceptance was waived. The current correction explicitly admits the job with always(), !cancelled() and all four direct success gates. Workflow parsing and gate checks pass. Current manual38148947748 and normal PR38148951270 are verified LIVE on1e0e345b: Install passes and Lint/TypeScript/independent review run. Observe these handles without duplicate dispatch. Current source still needs exact checks/review and actual desktop/mobile/reduced-motion document recovery/account-switch execution.
+
+Production metadata is READY atdpl_Fd46HhRg7bhiNR6YvsbG9CaqQ5YX on accepted22aa23b, with receiving CI/CodeQL/estate/narrative checks successful. No document/private candidate merge or production document DDL/write. Private PR580 retains its isolated authenticated/SDK acceptance PASS and verified empty production schema, with new writes disabled. ExistingUS$1 private-store/bounded live-test cost approval remains unanswered; no store/token/capacity/financial provision or supplier call.
+
+Rich-editor image upload ownership, clean Back/Forward behavior, creator usefulness/continuity/media/video, live private/billing, subscription/storage/API/credit enforcement/economics, connected client/local-cloud harness roles, security and estate branch landing remain open. Fresh Arcanea PR snapshot49 open/35 drafts is metadata, not blanket source approval. Full historical branch CSVs remain unchanged. Build PP HOLD7755/8192MB and27 runtimes prevents new local heavy workers; no new agent/build/browser/server/watcher started. Product issues276/529 and owned hubPR248 carry pickup.
+
+
 ## Arcanea adoption: document foundation and authenticated recovery candidate
 
 Draft PR585 is now78a7017b53ec8ebc4568c891f8a45d5fbf8cfaae. Previous94f completed manual CI38145112813 and independent Gemini3.1 Pro PASS; all27 reviewed source hashes matched Git. Those receipts do not approve this candidate. Production catalog inspection found chat_projects and all three document tables absent. The new unreleased migration bootstraps their canonical shapes without unrelated graph migrations or shared helper replacement, and requires an actual owned project for creation and atomic saves.
