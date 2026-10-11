@@ -2,6 +2,18 @@
 
 ## Current npm ecosystem and managed activation prompt
 
+Continue the full authorized goal. Creator6 MERGED main69fca1575a853eb39ed29a499ea01061336d4248, reviewed7d4128b764447f4c0d6ef1dd0a51f218a5c8e402, exact treee2d6fbdf. Google Jules4039933792079044115 completed PASS; strict two-report/all132Git-hash-byte/Markdown/digest validation accepted. Source repair11 regressions before/51 S3 tests after; scoped lint and normal secret hooks pass. Accepted-main CI38116509675 all8pass and actual20 archives/11 consumers perOS/11 Windows Linux-byte checks verified in artifact-proof-creator-69fca157.json. Do not redo consumed reviews/downloads or import report patches. Original e723 rejection and b67 two missed defects retained. Owner COMMENTED review records Google acceptance; owner is not the independent checker.12 verified threads resolved; async stack8 merge matched7d with default action/bypass_rules=false and only open lowest PR6. Main parents/tree proved.
+
+No package published. Fresh npm whoami/org role proves frankxai owner but profile and creator-core trust GET E403. Restore native owner sign-in/2FA and verify legitimate trusted publishers; do not rotate globals/use token fallback, approve/reject/restage reserved SIS0.2.0 or infer publisher authority from version absence/read access. npm-production has required Frank review/main-only policy; no approval issued. Confirm accepted-main full release audit/receipt/version/provenance/registry/cold consumers before irreversible publish. Creator Dependabot query reports alerts disabled403; no auth refresh/security-clean claim. Coordinate peer-owned immutable root patch; keep separate SIS215/207/206 alerts.
+
+SIS359 exact33a6a972 still draft and unmerged. Hosted19pass/3skipped, nine DOM/owned-exit receipts, old browser cause and image review unresolved. Current14-file packet153165bytes plus source-bound CI update prepared as followup-SIS-dependency-diagnostics-33a6a972-admission2. Fresh runner PP HOLD3465/6144MB,27/12runtimes before spawn; no AGY stream/reviewer. Preserve original admissions. Jules SIS draft rejected by existing helper's explicit lockfile inventory gate; no cloud task or omitted inventory/bypass. After actual admitted capacity, run exactly one current independent source review; no lower reserve/foreign closure/fourth worktree. All own local and remote workers finished.
+
+Managed readonly confirms selected gfrfcqyprekhazzugdkr Starlight Platform EU healthy PG17.6.1.155, gencreator_companion tables0. Stripe frankx.ai live connector works, Managed Payments eligibility unverified. Keep accepted eligible Stripe Managed Payments/Lemon Squeezy fallback, Polar existing pack licenses, consented Whop/Stripe links. Preview$0.01344/hour+usage remains undecided; no paid branch/migrations/Auth/env/catalog/customer changes. In an available owned GenCreator lane finish signature-verified durable inbox, ordered grants/outbox, tenant-denial/restore, funded reservations and actual generate/edit/reopen/export/settlement. Prices/caps/seats are hypotheses/unwired. Maintain hub217 and existing Creator4/SIS329/GenCreator5. Full objective active.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem and managed activation prompt
+
 Continue the full authorized objective. Creator6 is now b67a11751d48cb660646dd2a39a920711fec0596, clean/pushed, baseffdbdc68. Nine-file repair preserves JSON/text/empty/locked canon but denies binary MCP resources, corrects MIME/deduplication, rejects standalone S3 dot-prefix segments, and exempts memory ledgers from nonexistent disk journal quotas while preserving persistent safeguards. Ten regressions fail before repair; focused67 tests/scoped ESLint pass afterward. Hosted CI38114534954 all8jobs PASS. Actual20 archives/11 consumers perOS and11 Windows checks of the exact Linux archive set verify against virtualmerge2d0209be2108cb20279573b3d657a2b1c99b8ef3, treef6133d02d32fcbcf28fe96933338fa5ce004cc3a. Private artifact-proof-creator-b67a1175.json; no full local reinstall or live-paid claim.
 
 Old Jules2536320996174217098 is COMPLETED but rejected as release authority. Native full patch has131 source sections identical to e723 plus four new files, including unauthorized git_info.txt/verification_results.txt. JSON has wrong observedStartHead and one truncated MuAPI hash; Markdown identities/paths blank; claimed modifiedPaths omits helpers. Do not apply the full or report-only patch or inherit its PASS. Preserve rejection/source-delta/raw reports.
@@ -12,7 +24,7 @@ SIS357 merged251494dc; SIS359 remains exact33a6a972a7486fdf29032d97a935aecf0fb5f
 
 Retain npm stage/owner/trust/provenance, coordinated immutable root patch and separate security alerts. GenCreator isolated EU schema/preview-cost decision/eligible Stripe Managed Payments account review with Lemon Squeezy fallback/Polar existing pack licenses and consented legacy buyer links remain. Finish durable verified merchant inbox, tenant grants, funded compute, real generate/edit/reopen/export/settlement and tenant-denial/restore in an available owned lane. No DB/Auth/env/customer/catalog/registry mutation was made; prices/caps/seats remain unproven. Save existing hub217/Creator4/SIS329/GenCreator5. Full objective active.
 
-## Earlier prompts retained for provenance
+
 
 ## Current npm ecosystem and managed activation prompt
 
