@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Distinct review-writer draft and hosted fixture proof
+
+[SIS365](https://github.com/frankxai/Starlight-Intelligence-System/pull/365) at6c5e6f7 adds repository-scoped installed-App token wiring, immutable trusted checkout, returned App identity checks and nonzero review-denial exit. Fifteen local/hosted fixture tests PASS; accepted-source comparison failed14 assertions. All five LF source blobs match the frozen41205-byte packet; initial Windows newline failure is preserved. All six existing npm check jobs report SUCCESS. Exact-head independent review is not started: RAM fell below4GiB and Jules creation is refused by a peer feedback hold. No App/environment/credential/rule activation or protected merge is claimed. SIS364 remains server405-held. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md). Full goal ACTIVE.
+
 ## 2026-10-11: Review receipt accepted; server still holds SIS merge
 
 [SIS364](https://github.com/frankxai/Starlight-Intelligence-System/pull/364) is ready at820bd564. The genuine exact-head Google report is attested in comment6111921846 and accepted by the trusted-main evaluator. All three visible required checks PASS. The original cancelled suite was rerun to SUCCESS; normal exact-head REST merge still returns405, requiring independent-review-policy. No bypass, rule change, fake status or source change. Distinct App writer is proposed; SIS credentials are unconfigured and browser owner setup is unavailable. Both requested Jules sessions are COMPLETED, with the132-path replacement retained. Public/managed gates remain open; goal ACTIVE. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md).
