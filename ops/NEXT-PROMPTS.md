@@ -1,3 +1,19 @@
+<!-- v0-design-programme-20261011:start -->
+## Continue the active design mission
+
+Keep native goal 01a1254f-d5b4-7ba0-a3dd-9b8ca0969cea active to its original 15:26:56 UTC deadline with the $25 existing-credit cap and no purchases. Read the private mission and current packet. GenCreator PR #203 is released at d0152970 with bounded live browser-copy save/import/recovery verified.
+
+Arcanea PR #579 merged normally at 10:14:48 UTC. Accepted and serving main is 46b77c58; receiving-main CI 38131259624 passes and production dpl_FEHwfJe1uk1UE12zUyvezGrx9uAt is READY on the canonical aliases. All five compiled world-editor modes pass. The full 076 source review had one stale-documentation warning; the doc-only 7ab correction passed review with unchanged executable blobs. Application-equivalent 076 preview passed. Complementary live 375px/320px synthetic checks verify validation focus, section anchors, both discard branches, actual working-edits JSON download, Apply and reload persistence. Earlier incomplete command attempts remain preserved. Customer/account/provider, physical-device, screen-reader and field-performance acceptance remain separate. Preserve accepted provider PR #578 and all other owners.
+
+FrankX candidate 08044a6 remains locally implemented, statically reviewed, unpushed and unreleased. Required local type-check, lint, strict audit, build and six-width candidate browser checks remain open. Its .nvmrc specifies Node 20 and pnpm 10.28; observed PATH Node 24 is not that required runtime. Resolve a task-scoped runtime without global changes. Use fresh PP build and storage admission, retain the existing book runner, protected homepage and wider issue #339 scope, then validate/refine and push one batch through ordinary protected release and live proof.
+
+Two qualifying production improvements are delivered; one remains unfinished. No owned heavy process is running. Raw RAM at 10:57 was 6,208 MiB; the last build PP remained HOLD and fresh admission governs any install/build/browser. C940's bounded SSH probe timed out; do not alter its access or bootstrap services. Preserve other sessions and all failure evidence. Current native team-wide 40 usage events through 11:01 report 0.0175 charged credit units; the public token-rate estimate before discounts is $15.7546, not actual spend or remaining balance. No purchases occurred.
+
+GenCreator, FrankX and Arcanea each have verified focused source attachments and native private-chat metadata. Imported workspace files and saved skills remain unchanged; these are scoped source intakes rather than a live Git mirror. v0's observed model enum remains Mini/Pro/Max/MaxFast; GPT6.1Sol is not verified in its picker. Use native repository engineering for integration and release, and v0 for bounded independent design/source/browser work with explicit context and credit admission. Keep each brand's accepted tokens/assets; Figma is optional for shared visual-library review. Existing logo variants and faithful favicon exports require role/adoption decisions, including issue #872. Responsive web proof does not certify native mobile/desktop or CLI/SDK products. Preserve Academy's missing guides and SIS/Income ownership gaps. Save coherent milestones to this hub and the existing product issues; keep private inventories/access URLs outside Git and stop only owned processes at handoff.
+
+<!-- v0-design-programme-20261011:end -->
+
+
 # ⏭️ Next Prompts — per active front / terminal
 
 ## Current npm ecosystem and managed activation prompt
