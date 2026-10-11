@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: duplicate ADR pull request 972 is closed
+
+FrankX [972](https://github.com/frankxai/frankx.ai-vercel-website/pull/972) came from Jules session `6327712614690309001` and was ready. Its diff matches draft [931](https://github.com/frankxai/frankx.ai-vercel-website/pull/931) except the blog image path. Both images exist on main. 972 was closed and the branch was left in place. 931 stays the draft for issue 932. Session `6423379922387895427` had its stop plan `d63c7ee2e67f443d9a82820bce13fd51` approved: revert local changes and open no pull request. Nothing was merged.
+
 ## 2026-10-11: FrankX Jules session 6423 must not open a second ADR pull request
 
 Session [6423379922387895427](https://jules.google.com/session/6423379922387895427) asked to finish frontend verification and prepare a pull request for issue 932. Draft [931](https://github.com/frankxai/frankx.ai-vercel-website/pull/931) already has that work at `f3167a8d438b3e0c3131faf4fd0a82a0c4af9263`. The reply told Jules to stop, change no files, and open no pull request. `auf` returned to 0. No packet was sent. Daily was 21/100.
