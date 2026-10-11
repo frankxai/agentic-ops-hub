@@ -1,11 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight Marketplace, Pack Hub & Cloud Managed Offerings
+## Starlight Cloud Managed Subsystem, Edge Mesh & Community Skill Economy
 
-With the Starlight Marketplace interactive client (`MarketplaceClient.tsx`), Cloud planner (`CloudClient.tsx`), Edge API routes (`/api/marketplace`, `/api/cloud`), CLI validation (`starlight pack validate`, `starlight marketplace submit`), and 10 E2E tests merged at commit `e99871d0`:
-- Connect live Stripe checkout webhook and session routing for Pro Cloud ($29/mo) and Enterprise Mesh ($199/mo) subscription tiers on `site/`.
-- Wire live Cloudflare D1 and Vectorize remote storage adapter sync to mirror local SQLite vaults into edge storage upon user opt-in.
-- Establish GitHub Action bot for automatic PR triage of submitted community skill packs, running `starlight pack validate` and attaching SIP attestation status.
+With the Cloud Managed subsystem (`src/cloud/`), Cloudflare D1 sync manager (`d1-sync.ts`), Vectorize ANN client (`vectorize.ts`), Stripe checkout billing & webhook endpoints (`billing.ts`, `/api/cloud/billing`, `/api/cloud/webhook`), and CLI cloud commands (`starlight cloud login/sync/status`) merged at commit `839e1a0a`:
+- Deploy and configure live Cloudflare D1 database and Vectorize index bindings on Cloudflare Workers / Vercel Edge.
+- Integrate Stripe live/test publishable keys on `site/` to test checkout flow and webhook token issuance end-to-end.
+- Wire the GitHub Action bot for automatic community skill pack PR triage and verification.
+- Run multi-harness skill distribution benchmarks across Cursor, Claude Code, and Codex using the new syndication bridge.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
