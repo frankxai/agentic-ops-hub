@@ -13,6 +13,11 @@ GenCreator, FrankX and Arcanea each have verified focused source attachments and
 
 <!-- v0-design-programme-20261011:end -->
 
+<!-- grok-jules-lead-20261011:start -->
+## Current Grok Jules lead prompt
+
+FrankX draft 961 is UNSTABLE at 2e06311e99b7ccca75e987b817b03d0d90af8c93. FrankX draft 956 is BEHIND at 37eac0a8244e897f6cd0accd7d77bded2ba4279d. starlight-agent-config draft 89 is BEHIND at 5acabe4f5e70daae9088929bbf6b66c4b5e0696e. Rebase the two behind owned branches onto current origin/main in their own worktrees before signoff. When a head is current and green, a harness other than grok signs that exact SHA, then `node C:/Users/frank/starlight/tools/pr-gate.mjs` squash with `--delete-branch` and `--match-head-commit`, one head at a time. Do not resend Jules sessions 2879871239864496640, 7371826055966468231, or 4923181157599779662. Do not mark those drafts ready from the grok login. Do not raise ESTATE_CAP or DAILY_CAP until the Jules CLI account is confirmed as the Ultra Gmail and a fresh verified one-file packet exists on origin/main. Do not start AGY, do not write heartbeats/c940.json from the Yoga Book, and do not merge hub 175. Across seven repos this read found 255 open pull requests and 193 drafts. Keep scheduler 01a123ed-93d1-7820-806e-124d074e5d71. Preserve every prompt below.
+<!-- grok-jules-lead-20261011:end -->
 
 # ⏭️ Next Prompts — per active front / terminal
 
