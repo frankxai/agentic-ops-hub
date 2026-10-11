@@ -182,40 +182,21 @@ SDK 8.5.1/SIS PR 347 and foreign creator-MCP PR 6 at ebf0f633 are separate owned
 
 ## Arcanea adoption: finish retained creator and paid-launch gates
 
-Continue the existing ACTIVE full estate/product/subscription/client/harness goal.
-PR577 reviewed bf478968692 merged normally to0dd501281f89f0612454b1200ba40f8fac5799f6;
-receiving tree matches. Manual38124444219, ready CI38125175492 and actual CodeQL
-pass, independent40-source Gemini PASS, all9 authenticated fixture rows/zero async
-failures and6 companion/ledger bindings verified. Production dpl_pn9b6gyZ8cNVjG4UD5YAcnU7pwLL
-is READY at that exact main. Anonymous canonical08:46UTC homepage/login/401 and
-exact imgen image/connect CSP pass. No paid or signed-in production fulfillment claim.
+Continue the original ACTIVE estate/branch/product/subscription/client/harness goal. Finish one durable private image journey before paid activation or broader client expansion. Programme276 and trust529 remain open; hub draft248 carries this record.
 
-Read current guides, hash sources, check explicit routing and lane ownership.
-Receiving-main CI38125836118, CodeQL and estate-guard all PASS. Refresh main and
-production before any new landing. PR578 owner has advanced to9abe0519fd3c4de55404de898c0363a84118d464;
-old3a22 donor is integrated, four new paths need residual composition/current review.
-GitHub reports DIRTY; old28-source review does not approve a newer head. Preserve
-PR579 dd29f2d, BEHIND, whose body cites an earlier candidate. Require current-head
-review/receiving gates. Do not replay old generation files over main
-or take its lane. Preserve held560/562/567, dirty505, forks and source provenance.
+Current main97801884c78afacdb718302c7655bae0f3a86580 includes the owner-merged provider fixture578 after reviewed generation577. Receiving CI38128420246, CodeQL and estate-guard pass. Production dpl_7SpakFZiq4Rp5JbzMCEXTTeCxSkc is READY at that exact main; anonymous09:52UTC home/login/401 and exact imgen image/connect CSP pass. Signed-in production storage/generation and actual customer/commercial acceptance remain separate.
 
-Production billing accounts/operations/recovery/reservation remain absent on
-read-only SQL08:46:43UTC. Next consequential product slice is durable private
-media and retained world/chapter/continuity/reopen/export, including tenant denial,
-interruption/cancellation, quotas and cost attribution. Reuse accepted storage and
-business truth. Prices and managed-money activation require separate release gates.
-The private economic model uses declared tax/FX/fee assumptions, not achieved margin.
+Owned draft580 now63f53bf7edbe4c3cd45c8d20ddc32e2eecb0d923 integrates that main without changing its four incoming provider files. The CI diff adds only the two private-image test steps. Forty focused native cases, changed-source lint, formatting, whitespace, lane checks and enabled staged secret checks pass. Private immutable saves, checksum readback, actor-bound receipts/exports, pending Postgres metadata/quota migration and owner-paginated gallery API are authored. New writes require explicit private-store configuration and approved account capacity; no default paid entitlement, production migration/store/configuration or rights grant was created.
 
-Saved PLAN/4574-branch/652-PR CSVs remain historical metadata; source-reviewed
-sequential landing still required. One account/project across clients: web primary
-editing, local explicit files/keys, cloud bounded resumable jobs, shared versioned
-CLI/SDK/MCP operations; mobile/desktop require device-specific evidence. Preserve
-all native/canon/community/commercial goals and compare a serious creator workflow.
+Observe CI38129833431 at63f53bf, including the actual PostgreSQL/RLS/two-connection quota race. The prior274ec3 CI was cancelled by normal concurrency after current-main integration; native step passes, database step was cancelled and earns no pass. Earlier103a3e9 build/types/lint success does not approve newer source. Repair actual failures, preserve attempt receipts and require exact-head independent provider review and real authenticated rendered acceptance.
 
-Latest review-lite BOUNDED9929/6144MB,27 runtimes: one45-minute workload, no parallel
-agents. Disk about87.85GiB free; recheck admission before heavy/disk-growing work.
-No owned server/worker/watchers persist. Save hub248 session/ledger/only this prompt
-and existing529/276 issue receipts. Never close the whole programme for a code slice.
+Next implement durable gallery hydration/cache-loss reopen and correct cross-device favorite lifecycle; metadata alone does not restore the UI. Repair private animation resolution/explicit handoff before billing reservation. The present animation caller still sends the former public-save contract and must not ship with this new backend. Verify downloads, guest/foreign/stale denial, interrupted upload/completion, quota/concurrency, cancellation/repair and actual desktop/mobile/reduced-motion behavior. Keep580 draft until this complete slice and receiving/production gates pass.
+
+Preserve owner579, now07689b9ec4dcd43cd88f851ea4f5c54a33b62795, and held560/562/567/dirty505/forks. Source hashes and historical branch CSVs are evidence scopes; no blanket branch merge/deletion approval. Billing accounts/operations/recovery/reservation were absent at the08:46UTC read-only probe and require fresh verification before activation. GitHub's push notice reports12 default-branch dependency findings, including3 high; inspect their actual reachability and fixes as part of production hardening.
+
+Retain full private world/chapter/continuity/media/reopen/export and commercial acceptance. Subscription value is retained workspace/storage with optional bounded compute; actual costs, approved capacity and API limits still need verification. Web is the primary creator flow; local harness owns explicit files/keys, cloud harness bounded resumable jobs, and shared CLI/SDK/MCP project contracts connect them. Native mobile/desktop need device-specific creator evidence. Do not substitute plans or tests for creator usefulness.
+
+Machine review-lite HOLD2774/6144MB and27 runtimes prevents new heavy local workers/agents. Ordinary edits/small tests and existing hosted gates continue. Disk09:46UTC about87GiB; recheck admission before heavy or disk-growing work. No session-owned server/watcher persists. Continue saving only this hub prompt/session/ledger and existing product issues.
 
 ## GenCreator prior checkpoint: managed identity and an accepted creator journey
 

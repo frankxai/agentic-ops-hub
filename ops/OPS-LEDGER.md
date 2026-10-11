@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: private media candidate backed up
+
+The broad native goal remains ACTIVE. Draft Arcanea580 is63f53bf7edbe4c3cd45c8d20ddc32e2eecb0d923, based on current main97801884c78afacdb718302c7655bae0f3a86580 after owner578 landed. Production at that main is READY; receiving-main CI/CodeQL/estate-guard and anonymous09:52UTC boundaries/CSP pass. Generation577's broader authenticated proof remains a separately scoped fixture result.
+
+Forty native cases and changed-source lint/format/ownership/secrets checks pass for the private candidate. Authenticated immutable bytes, checksum reconciliation, durable metadata/quota migration and owner gallery API are authored. CI38129833431 is pending at capture. The previous source's CI was superseded/cancelled, including its database step; no actual SQL pass is claimed yet. No live storage/database/account quota/configuration, financial activation or image rights grant occurred.
+
+The draft is unfinished: gallery UI/cache-loss recovery, cloud favorite lifecycle, private animation before billing reservation, real Auth/store rendering, exact-head independent review, full hosted checks and approved production setup remain required. Main's current provider fixture files were preserved byte-for-byte. Other owner branches and all substantive estate/client/commercial goals remain open. Local heavy work/fanout remains on RAM HOLD; no owned local worker remains.
+
 ## Arcanea adoption: receiving-main checks complete
 
 Receiving-main CI38125836118 completed SUCCESS at exact
