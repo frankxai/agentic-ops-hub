@@ -4,6 +4,25 @@
 Continue the full portable Queen programme from merged [Ops217](https://github.com/frankxai/agentic-ops/pull/217), exact aeb0253c3009579fefc8cd62e87b261648b162e3, and its20-gate plan. Reviewed0956573 has four green106-case Linux/Windows matrices and required verify; [Claude6110636366](https://github.com/frankxai/agentic-ops/pull/217#issuecomment-6110636366) gives limited-coverage source-only PASS. Inspect receiving-main run38152044219 and retain actual receipt. Preserve all old failures/verdicts and unfinished Queen/SIWC/native/business/creator/EU fronts. Refresh repo instructions/lanes/storage and workload-specific PP; latest interactive5563MB free/4096 floor with27runtimes/16 admits parallel1 and pauses new swarms. Implement the actual protected host using existing controller/worker/native transport: authenticated/ACL-bound ownership until admitted detach, isolated exact Git/lane attestation, continuous time/token/cost cancellation, canonical process fencing, immutable captured-output receipts before writable checkout reuse and durable native retirement until safe rebind. These default-denied callbacks are not delivered host implementations. Keep the finite pilot within8192-byte proof and128-nonce/256-turn bounds, preserve unknown/orphaned issuance and crashed ownership, and use independent reconciliation without age-deletion or an empty-store escape. Prove one useful issue-bound read-only native output through exact continuation, steering, real dirty-work preservation, interruption and restart, independent acceptance and measured owned-runtime release. Then bind deduplicated goal/issue/Notion roundtrip, curated lessons, reviewed indefinite retention, one second harness and offline/multi-machine recovery. Stop only the admitted task's owned processes; never archive unfinished peer tasks for capacity. Source is MERGED_NOT_LIVE and the full production objective remains open. Save actual progress to this hub and existing Ops134/51; Linear stays archive.
 <!-- queen-native-session-20261011:end -->
 
+<!-- ecc-harness-20261011:start -->
+## ECC harness, one current prompt
+
+The six broken ECC commands now stop before their missing tool. Draft https://github.com/frankxai/claude-code-config/pull/43 head `9e53d9c0e1f184d836e4859189415807a29b00aa` is open and not merged. Live `~/.claude/commands/ecc` already matches that commit. Main does not, until 43 merges.
+
+Do not install the rest of ECC. Do not promote the eight absorbed skills. Do not kill a running Grok process. Do not start Claude, Antigravity, rtk, the observer, claude-code-action, or `jules login` unless that item's gate is open. Free RAM when 43 was opened was 4.61 GiB. Another local agent needs 8 GiB.
+
+Read `ops/sessions/2026-10-11.md`, section "ECC completion program", on draft https://github.com/frankxai/agentic-ops-hub/pull/265.
+
+1. When free RAM is at least 8 GiB, Antigravity reviews config PR 43 on the exact head `9e53d9c0e1f184d836e4859189415807a29b00aa` and squash-merges it through pr-gate if the stop is still the first step. Grok does not sign. One pull request per sitting.
+2. If hub PR 265 is still open and free RAM is at least 8 GiB, Antigravity signs that exact head and squash-merges it through pr-gate.
+3. One model task-success pass: a harness that did not write the eight skills answers the eight fixture decisions. A different harness scores them. 8 of 8 cited passes are required before anyone asks to promote a skill.
+4. A Foundry `report` is allowed at 8 GiB or more. Do not run `tier --apply`. Do not disable skills.
+5. Claude `/codex:setup`, one `/codex:review --base main`, then typescript-lsp and pyright-lsp, only after `/usage` shows the weekly cap reset and free RAM is at least 8 GiB.
+6. The Grok MCP diet loads on the next Grok process. Do not kill one to force it.
+
+Success is the metric table in that section. Each row is either PASS with a receipt, or still blocked with the number that blocked it.
+<!-- ecc-harness-20261011:end -->
+
 <!-- v0-design-programme-20261011:start -->
 ## Continue the active design mission
 

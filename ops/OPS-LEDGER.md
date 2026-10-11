@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Six ECC commands fail closed in draft config PR 43
+
+`frankxai/claude-code-config` draft [#43](https://github.com/frankxai/claude-code-config/pull/43) head `9e53d9c0e1f184d836e4859189415807a29b00aa` stops `/ecc:security-scan`, `/ecc:harness-audit`, `/ecc:cost-report`, `/ecc:test-coverage`, infinite `/ecc:loop-start`, and `/ecc:quality-gate` before the missing tool or `npx`. Live `~/.claude/commands/ecc` matches those six files. Main does not, until 43 merges. Free RAM was 4.61 GiB and disk free was 83.9 GiB, so Antigravity was not started. The eight skills stay cold. Hub draft [#265](https://github.com/frankxai/agentic-ops-hub/pull/265) is the record. Grok cannot sign either `agent/grok` branch.
+
+## 2026-10-11: ECC completion program is specified; the gated steps are not run
+
+Free RAM at specification time was 6.92 GiB, under the 8 GiB line for another local agent. Shelf is 79 directories and the old skills path is absent. `rtk` is absent. `frankx.ai-vercel-website` has no Actions secret names. The eight skills stay cold. Hub draft [#265](https://github.com/frankxai/agentic-ops-hub/pull/265) carries the program, the prompt, and the metric table in [the session](sessions/2026-10-11.md). No Claude, Antigravity, Foundry apply, observer, rtk, or Jules login was started. Other owners' records below stay as they were.
+
 ## 2026-10-11: Tenant-scoped in-memory provider and independent snapshots
 
 [Memory31](https://github.com/frankxai/starlight-memory/pull/31) merged as `5689043fa8f81f317bff898203b3363b3b70ff69` after11 reproduced regressions,312-test Node22 candidate/receiving-main CI PASS and exact-source Google review PASS. Same-name tenant records and input/output snapshots are independent. Measured cloning overhead is retained; no speedup or production/provider-wide claim. The foreign checkout is preserved. Archive/installed-consumer and public release evidence remain missing, alongside the full managed/npm authority gates. [Memory8](https://github.com/frankxai/starlight-memory/issues/8) and [session](sessions/2026-10-11.md).
@@ -29,6 +37,12 @@ FrankX production is still `34296a060e1fc92f2c211a159068eb08a6058965` (PR 959, d
 All seven private v5 chapters are cold-read; private v6/620729b9 has 32 source-bound proposals and original-source patch applicability. Complete v5 plus all v6 changes are inspected, with no fresh whole-v6 or independent/human approval claim. V6 HTML/EPUB preserve 38,770 ordered word tokens and navigation. Exact v6 EPUB now passes actual EPUBCheck 5.4.0 with warnings fatal, zero fatal/errors/warnings, after fresh 7532 MB RAM recovery admitted the bounded checker. The earlier 1190 MB denial is retained. Earlier versions and first-build corrections remain evidence. Source and locked canon are unchanged; publication, device, print, compiler, rights and delivery gates stay open.
 
 Reader owner PR581 is normally merged as e07d5686 after final 39073b07 CI passed; canonical production is READY. Seven deployment-bound initial HTML observations pass article-text/link/noindex scope. Hosted checks permit React inline reveal while blocking app bundles; complete JavaScript-disabled reading remains open. Preserve held560 and earlier production5328 failure. Runner582 receiving checks pass; the proposed capped24-call Aion comparison remains unrun with pending funding/credential. See [release280](https://github.com/frankxai/arcanea-ai-app/issues/280), [programme276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md). The founder goal remains active.
+
+## 2026-10-11: ECC short port is on main; eight skills stay cold
+
+The agreed ECC cherry-pick is merged. Upstream pin `4eb71d92a39cab44ad40ac9d8a6a5ccb4029d6c2`. Library [#51](https://github.com/frankxai/claude-skills-library/pull/51) `682b2ce`, [#52](https://github.com/frankxai/claude-skills-library/pull/52) `ca04fed`, [#53](https://github.com/frankxai/claude-skills-library/pull/53) `854bb488`. Config [#41](https://github.com/frankxai/claude-code-config/pull/41) `ebc0758`. Hermes [#28](https://github.com/frankxai/awesome-hermes-agent-skills/pull/28) `17724a7`. SIS [#344](https://github.com/frankxai/Starlight-Intelligence-System/pull/344) `6bbf3a17`. Hub [#233](https://github.com/frankxai/agentic-ops-hub/pull/233) `0dff5f23` recorded the 10 October close. `claude-code-config` [#42](https://github.com/frankxai/claude-code-config/issues/42) stays closed. [#53](https://github.com/frankxai/claude-skills-library/pull/53) had no issue, so there is no retrospective.
+
+`node --test scripts/tests/harness-e2e.test.mjs` passed 10/10 locally and in the Antigravity checkout. Antigravity blocked head `131d9e8` (Windows `Path` only), then signed `458f9bcc385b13227e651aaedc7810bbb9428e62`. The file eval does not score a model on a product task. The eight skills stay out of the default prompt. Full prompts, files, and the remaining gates are in [the session](sessions/2026-10-11.md). Other owners' records below stay as they were.
 
 ## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
 
