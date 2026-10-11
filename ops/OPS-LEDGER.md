@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: real storage SQL acceptance and type repair
+
+Draft580 advances to832f3e81071e5ae04bd758e65b000776808dc5d8. At prior63f53bf, hosted38129833431 passes Lint/native and actual PostgreSQL migration/RLS/owner/pagination/guest/foreign/expired/duplicate/unknown-hold checks. Two actual concurrent connections reserve one15-byte operation in20-byte capacity and refuse the other. Its TypeScript result FAIL is preserved: an inherited ambient Blob shim hid installed SDK2.8.0 private get/token types.
+
+The current candidate repairs that shadowing by using the SDK's declarations. No casts, suppressions, dependencies or gates were added/disabled. Runtime exports probe passes with zero store calls. Fresh38130240060 runs at832f3e8; full types/build and private release remain pending. Current receiving main978/production READY and anonymous09:52UTC checks are separately recorded. No production storage/schema/quota/configuration or money/rights activation. Full goal ACTIVE; gallery/cloud favorite lifecycle, private animation, real Auth/store/rendering, independent review and commercial acceptance stay open. Existing product276/529 are updated; no issue was closed.
+
 ## Arcanea adoption: private media candidate backed up
 
 The broad native goal remains ACTIVE. Draft Arcanea580 is63f53bf7edbe4c3cd45c8d20ddc32e2eecb0d923, based on current main97801884c78afacdb718302c7655bae0f3a86580 after owner578 landed. Production at that main is READY; receiving-main CI/CodeQL/estate-guard and anonymous09:52UTC boundaries/CSP pass. Generation577's broader authenticated proof remains a separately scoped fixture result.
