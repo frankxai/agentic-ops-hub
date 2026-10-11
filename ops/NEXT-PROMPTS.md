@@ -191,10 +191,12 @@ is READY at that exact main. Anonymous canonical08:46UTC homepage/login/401 and
 exact imgen image/connect CSP pass. No paid or signed-in production fulfillment claim.
 
 Read current guides, hash sources, check explicit routing and lane ownership.
-Finish main CI38125836118; CodeQL/estate-guard already pass. Refresh main and
-production before any new landing. PR578 owner has advanced to a7041809f61e9441ca925ca0c8c6784b36cca006;
+Receiving-main CI38125836118, CodeQL and estate-guard all PASS. Refresh main and
+production before any new landing. PR578 owner has advanced to9abe0519fd3c4de55404de898c0363a84118d464;
 old3a22 donor is integrated, four new paths need residual composition/current review.
-Its28-source review remains pending. Do not replay old generation files over main
+GitHub reports DIRTY; old28-source review does not approve a newer head. Preserve
+PR579 dd29f2d, BEHIND, whose body cites an earlier candidate. Require current-head
+review/receiving gates. Do not replay old generation files over main
 or take its lane. Preserve held560/562/567, dirty505, forks and source provenance.
 
 Production billing accounts/operations/recovery/reservation remain absent on

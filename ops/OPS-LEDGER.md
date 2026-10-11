@@ -1,5 +1,31 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: receiving-main checks complete
+
+Receiving-main CI38125836118 completed SUCCESS at exact
+0dd501281f89f0612454b1200ba40f8fac5799f6. Install, TypeScript, Lint, Build,
+reader/gallery browser journeys and CI Status pass; actual CodeQL38125836112 and
+estate-guard38125836208 also pass. Narrow author/world/generation jobs are skipped
+on main by their existing restrictions; the reviewed candidate's manual9-case
+actual isolated Auth/Postgres generation gate passed separately at the identical
+Git tree. This completes the577 source/merge/production-boundary slice, not signed-in
+production fulfillment or the complete creator/commercial programme.
+
+Production remains READY at that exact receiving SHA; canonical anonymous security
+and exact vendor CSP were verified08:46UTC. Production billing objects remain absent
+at the recorded read-only check; durable private media, quotas/export/cancellation,
+cost attribution, actual creator acceptance and paid launch remain open. The broad
+native goal is ACTIVE. Fresh Arcanea metadata has47 open PRs and31 drafts; the
+historical estate CSVs remain4574 branch rows/652 PR rows and745 structural rows
+in9 repositories. Metadata cannot authorize source landing or deletion.
+
+PR578 owner subsequently advanced to9abe0519fd3c4de55404de898c0363a84118d464;
+GitHub reports DIRTY, with no auto-merge. PR579 currentdd29f2d15d4123562bbd4d9a44b54fdfbdc57f13
+reports BEHIND and its body cites an earlier candidate. Refresh both exact heads and
+review evidence with their existing owners; do not take lanes or replay old generation
+source over accepted577. Both the hub248 handover and existing529/276 issues retain
+the outcome. No session-owned local worker, server or watcher remains.
+
 ## Arcanea adoption: reviewed account-bound generation merged and serving
 
 PR577 merged normally at08:43:49UTC to
