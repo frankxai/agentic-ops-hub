@@ -1,3 +1,9 @@
+<!-- queen-native-session-20261011:start -->
+## Queen: assemble one accepted recoverable native task
+
+Continue the full portable Queen goal from [Ops draft217](https://github.com/frankxai/agentic-ops/pull/217), exact39e147d04b07e5908a748aac90ff821b8d3c2241, and its20-gate acceptance plan. Preserve existing Queen/SIWC/native goals, business/creator/EU fronts and live clock/mind ownership. Refresh exact-head CI, instructions, lane ownership and machine admission. 69 local worker/session tests plus three real Windows containment tests pass; installed Codex0.162.1 handshake succeeds with zero model turns/resumes and owned-process exit. All four hosted behavior matrices and registry verification pass; different-provider review remains open. These do not prove live continuation, model behavior, ACL/auth/budgets or acceptance. Obtain a different-provider source review, assemble the protected initialized transport/native profile/admission host, preserve real dirty work, and prove one useful issue-bound output through exact continuation, steering, interruption and restart. Keep lost acknowledgements held without duplicate model calls and crashed writers preserved until explicit fencing/reconciliation. Then integrate goal/issue/Notion receipts, measured owned-runtime release and one explicitly selected second harness. Do not widen permissions, install another durable owner, archive unfinished work or launch an inadmissible swarm. Save coherent evidence to this hub and existing Ops134/51; the full production programme remains open.
+<!-- queen-native-session-20261011:end -->
+
 <!-- v0-design-programme-20261011:start -->
 ## Continue the active design mission
 
