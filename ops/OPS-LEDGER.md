@@ -1,5 +1,12 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Marketplace Pack Submission CI & Cloudflare Edge Mesh Wrangler Config
+
+Engineered automated community submission CI gates and Cloudflare edge mesh configurations across `Starlight-Intelligence-System` (`905ffe4f`):
+- **Automated Pack Submission CI (`.github/workflows/marketplace-pack-ci.yml`)**: Implemented GitHub Actions workflow validating community skill and agent pack submissions against strict schema, inspecting permission descriptors, validating deterministic directory SHA-256 digests, and executing complete test suites (`marketplace.test.ts`, `marketplace-e2e.test.ts`, `skill-valuation-allocator.test.ts`, `cloud-sync-billing.test.ts`) alongside the 135-test substrate symmetry suite.
+- **Cloudflare Edge Mesh Configuration (`site/wrangler.toml`)**: Defined edge worker bindings for Cloudflare D1 distributed database (`STARLIGHT_D1_VAULT`), Vectorize ANN index (`STARLIGHT_VECTORIZE_INDEX`), R2 asset bucket (`STARLIGHT_R2_MEDIA`), and AI Gateway (`AI`) semantic caching and model degradation fallbacks.
+- **Verification**: Clean TypeScript build (`tsc` exit 0), 47/47 test cases passing across 20 suites, 135/135 substrate symmetry tests passing. Committed and pushed to `origin/agent/antigravity/npm-ecosystem-alignment` at `905ffe4f`. Full details in [today's session](sessions/2026-10-10.md).
+
 ## 2026-10-11: Cloud Managed Subsystem, Cloudflare D1 Edge Replica Sync, Vectorize ANN & Stripe Billing
 
 Architected, implemented, and verified the Starlight Cloud Managed subsystem, Cloudflare edge replication, Vectorize semantic indexing, and Stripe billing workflows across `Starlight-Intelligence-System` (`839e1a0a`):
