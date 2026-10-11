@@ -1,5 +1,45 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: account-bound generation repair awaiting fresh gates
+
+Candidate bf478968692a60fd041672d7e350557fc8346fad is pushed in draft577;
+full hosted38124444219 is running. The complete estate/product/subscription/client/
+harness goal remains ACTIVE. No protected merge or production mutation in this slice.
+
+Previous full38123399814 ated3c808a035 passes Build, Install, Types, Lint and static
+Gemini3.1Pro review with37 full Git source/packet/final-text bindings verified. It
+fails overall: six of nine browser rows pass, including actual CSP, all three cover
+save/reopen modes, mobile Studio recovery/replay/download/CORS fallback and real
+GoTrue A/B/A settings saves. Desktop/reduced-motion Studio refill and B available
+balance exhaustion fail. All rows and zero async failures remain retained. Financial
+SQL/recovery/concurrency pass; fixture supplier6 submissions/7 polls; zero paid
+inference or production writes. Six render companions are verified and logged.
+The B fixture now uses the existing privileged billing reservation RPC rather than
+requiring a denied direct table update. Studio input has an accessible stable name.
+
+A separate lead reproducer executes the actual request helper with mocked actors:
+A completion clears B's pending key for identical input, allowing a fresh B retry.
+This invalidates release approval despite the static PASS. The new helper requires
+current authenticated epoch authority, retains actor-scoped retry slots and rejects
+old A-B-A completions before returning/clearing results. Five generation browser
+clients bind their existing synchronous Auth epoch. Standalone generation state
+resets per account epoch; controlled Studio/Page editors preserve old draft state
+behind an account-change hold. Legacy pending keys remain preserved; per-actor
+adoption prevents completed legacy replay from blocking future new requests.
+Native request10/10, Luminor3/3, fixture7/7 and SDK1/1 pass; changed lint/syntax and
+enabled security/ownership checks pass. Fresh types/build/browser and independent
+review are mandatory. Pending cross-client recovery/export/customer/storage/money
+acceptance remains open; no paid-product completeness claim.
+
+The exact PR578 donor and source provenance stay preserved. Do not treat a previous
+revision's review or draft-skipped checks as current approval. Re-query receiving
+main and source before any protected landing. Existing issue529/276 and hub248 keep
+the evidence; private PLAN and historical CSVs retain the complete programme.
+Local heavy/fanout admission was HOLD1858/6144MB,27 runtimes on the last probe. No
+session-owned local heavy worker, watcher or server persists. Continue hosted
+failures to real protected merge and production verification, then durable private
+assets, quotas/export/cancellation recovery, economics and connected creator value.
+
 ## Arcanea adoption: combined release candidate awaiting hosted gates
 
 Draft PR577 now contains candidate ed3c808a03555b7d445955b84b0c6ad6bbe3e6f7.

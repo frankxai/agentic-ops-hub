@@ -180,49 +180,41 @@ Preserve PR 199/198 evidence including the premature PR 198 merge and repairs: n
 
 SDK 8.5.1/SIS PR 347 and foreign creator-MCP PR 6 at ebf0f633 are separate owned release scopes. Recheck their latest facts; do not take over unfinished npm trust/bootstrap or merge donor PRs 137/148/162/116 wholesale. Managed activation, actual creator acceptance and installed CLI/SDK/ADK/Desktop/Mobile/router/memory/cloud/GTM/bundled subscriptions remain the full programme. Make the next consequential actual artifact usable with one admitted lead; preserve all goals, machine/storage floors, issue 5 and this hub. Do not mark the full goal complete for this slice.
 
-## Arcanea adoption: earn combined release gates, then retained creation
+## Arcanea adoption: close account-bound generation gates before landing
 
-Continue the existing ACTIVE full estate branch/product/subscription/client/harness
-goal in the owned arcanea-gateway-admission-20261010 worktree, originfrankxai/arcanea-ai-app,
-branchagent/codex/generation-admission-20261011. Read root/deeper guides and recorded
-hashes, routing/ownership, WORKFLOW and product/machine policies before writes.
-Review-lite HOLD1858/6144MB and27 runtimes prohibits local heavy work/fanout.
-Use the existing hosted rail; do not kill other owners or archive unfinished goals.
+Continue the existing ACTIVE full estate/product/subscription/client/harness goal.
+Current owned candidatebf478968692a60fd041672d7e350557fc8346fad, draft577, full
+hosted38124444219. Read guides/policies, hash sources, check routing/owner, and inspect
+this run's exact-source review, Build and all nine browser rows. Last heavy admission
+HOLD1858/6144MB,27 runtimes; no local heavy work/fanout without fresh admission.
 
-Inspect full hosted38123399814 ated3c808a03555b7d445955b84b0c6ad6bbe3e6f7,
-draft577. It combines mobile Studio/CORS/real-auth fixture repairs and byte-bound
-PR578 donor3a22e0aea375eb6c2f79410fc023d4b3f789e676, with donor lane preserved.
-Native SDK1/1 and fixture7/7 plus changed lint/syntax/security pass; fresh full Build,
-exact-source independent review and nine authenticated generation rows are open.
-Verify every source/packet/final-response binding and inspect rendered output.
-No source approval transfers from the donor or previous revision.
+Previoused3 full38123399814 FAIL despite Build/types/lint and37-source static PASS.
+Six of nine browser rows pass: CSP,3 cover modes, mobile Studio recovery/export,
+real A/B/A provider-settings save/reopen. Desktop/reduced-motion refill and B balance
+exhaustion fail. Preserve nine-row/zero-async-failure receipts and six companions.
+The latter now uses existing privileged reservation RPC, not new table permissions.
 
-Retained345 run38121817359 is FAIL, with9 rows and0 async failures: production
-CSP and3 cover save/reopen modes pass, Studio3 modes/settings/account-denial fail.
-Financial SQL/recovery/concurrency pass,4 fixture submissions/5 polls, zero paid
-inference. Its32-source static PASS is verified. The actual mobile Forge overflow
-is repaired but rendered acceptance is pending. CORS mock must explicitly reject
-origin because Playwright inserts allow-origin when omitted. Real-auth settings
-must sign out before another login. Inspect safe numeric phase diagnostics for B
-denials; keep them blocking. Earlier e777 run38123161220 was concurrency-canceled.
-CI Status still requires Build and Generation; skipped draft checks cannot release.
+Lead actual-helper reproduction found A completion clearing B's shared pending key,
+so static PASS is insufficient. Newactor-scoped authority/slots reject old A-B-A
+responses and preserve B retry identity. All five browser callers bind Auth epochs;
+standalone state remounts by epoch, controlled private editors hold on account change.
+Legacy keys stay preserved with once-per-actor adoption. Native requests10/Luminor3/
+fixture7/SDK1 pass plus changed-source checks. Inspect fresh rendering and actual
+safe failure phases; do not weaken CI Status, Build or generation gates.
 
-Refresh receiving main, owner gates and exact heads before protected merge; then
-verify canonical deployment source and behavior. Last production read READY at066,
-protected pages redirect, canonical anonymous generation401. Production billing
-schema/reservation/recovery absent on read-only SQL07:17:29UTC; no production money,
-provider or identity changes. Default media URLs expire. Durable private storage,
-quota/export/cancellation recovery, actual cost attribution and offer approvals
-remain required before paid beta. API credentials do not grant unlimited compute.
+Preserve exact PR578 donor3a22e0aea375eb6c2f79410fc023d4b3f789e676, its lane,
+held560/562/567, dirty505, forks and provenance. Refresh main before protected merge;
+verify canonical production custody and behavior afterward. Last production READY066,
+billing reservation/recovery absent on read-only SQL07:17:29UTC. No live schema,
+identity/provider/payment/subscription activation. Durable private media, quota/export/
+cancellation recovery, actual economics and offer approval remain paid-beta gates.
 
-Private PLAN/CSV preserve4574 estate branch and652 PR rows. Arcanea47 exact-head
-metadata comparisons contain2 ahead/45 diverged and four300-file caps; source
-acceptance remains separate. Preserve held560/562/567, dirty505, forks and owners.
-Finish world/chapter/continuity/media/reopen/export first. Web owns primary editing;
-local adapters explicitly selected files/keys; cloud bounded resumable jobs; shared
-CLI/SDK/MCP project operations; desktop/mobile earn device-specific value. Preserve
-academy/community/canon/native/commercial/estate gaps and all existing goal records.
-Save both hub248 session/ledger/own prompt and existing529/276 issue evidence.
+The saved PLAN/CSV preserve4574 estate branches/652 PRs;47 Arcanea comparisons are
+metadata only (four300-file caps). Finish the retained world/chapter/continuity/media/
+reopen/export loop. Web primary editing; local explicit files/keys; cloud bounded
+resumable jobs; shared CLI/SDK/MCP operations; native clients earn device-specific value.
+Save both hub248 session/ledger/own prompt and existing529/276 issue updates. Keep
+all unfinished creator/native/canon/community/commercial/estate goals open.
 
 
 ## GenCreator prior checkpoint: managed identity and an accepted creator journey
