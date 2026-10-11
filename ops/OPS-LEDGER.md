@@ -1,5 +1,18 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: exact document pass and accepted reader integration
+
+Full Arcanea objective ACTIVE. Draft document PR585 is a40ecb8921a8ef0f3c3a71b47f6f0683a14eeec7, integrating accepted maina00d10b6cfd11558af57c516d4b4545c88cab03f. Manual38153091941 is in_progress; observe this exact handle without duplicate dispatch.
+
+Prior219307c9 completes normal38151481354 and manual38151783132 terminal SUCCESS: full build/types/lint/CI Status, independent Gemini3.1Pro PASS with35 verified Git source hashes, actual compiled desktop/mobile/reduced-motion recovery PASS (seven checks per mode,9 real password logins,0 page errors,0 supplier posts).14 service hashes and6 inspected PNG companions match source; private configuration removed, cleanup failures0. All rejected attempts remain preserved. This is real isolated Auth/Postgres behavior, not production/paid creator/customer acceptance.
+
+Main advanced through ownerPR584's accepted reader scene. This integration preserves29 of its30 paths byte-for-byte. The one shared private-config test now keeps accepted runner/source-ref admission and legacy env context while admitting the document runner. All three actual provider/reader/document private-configuration suites pass (9 cases); actual independent-review negative admission test also passes. No reader creation behavior is rewritten, no allowance broadened to arbitrary runner paths, and no secret check is waived. Reviewer base is pinned to accepted a00;15 residual document paths versus main. Lane claim50 paths, root guide unchanged, commit ownership/gitleaks pass. Fresh integrated source review, full CI and authenticated browser gates remain pending.
+
+No document merge, production migration or customer write yet. Production's four project/document tables remain absent; guest HTTP401 is verified without credentials but not deployment-source-bound. No browser is connected. No new local heavy worker, browser, server, watcher, install, worktree or agent was started under the RAM hold.
+
+Private PR580 stays disabled pending the existing US$1 storage/live-test answer; no new store/token/capacity/financial provision. Private image upload/serving/export, workspace footer and captured header timing, creator continuity/media/video/usefulness, subscription/storage/API/credits, connected clients/local-cloud harness, security and estate branch landing remain open. Root instruction reading/ownership checks are evidence, not universal runtime enforcement. Current pickup remains in hubPR248 and issues276/529.
+
+
 ## Arcanea adoption: full isolated document acceptance and final navigation candidate
 
 Full Arcanea objective ACTIVE. Draft document PR585 is219307c9a182ebf944d15280c2277217e8f56e85; manual38151783132 is in_progress. Observe this exact handle without duplicate dispatch.
