@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: recovered TypeScript, current CI handle
+
+Actual same-head832f3e8 TypeScript PASSES in CI38130336650. Lint/Build and full private release remain pending at capture. A PR description edited event superseded38130240060 through the existing retarget-safe concurrency trigger; avoid further body edits during validation. Preserve actual63f53bf PostgreSQL/RLS/concurrency PASS and its inherited-shim TypeScript FAIL. Full ACTIVE creator/estate/commercial/client/harness objective remains open. Existing276/529 comments were updated by their exact owned IDs; no foreign last-comment edit or PR merge occurred.
+
 ## Arcanea adoption: real storage SQL acceptance and type repair
 
 Draft580 advances to832f3e81071e5ae04bd758e65b000776808dc5d8. At prior63f53bf, hosted38129833431 passes Lint/native and actual PostgreSQL migration/RLS/owner/pagination/guest/foreign/expired/duplicate/unknown-hold checks. Two actual concurrent connections reserve one15-byte operation in20-byte capacity and refuse the other. Its TypeScript result FAIL is preserved: an inherited ambient Blob shim hid installed SDK2.8.0 private get/token types.
