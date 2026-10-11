@@ -117,6 +117,8 @@ sync ownership and stop conditions. Specify how to recover.
 Each company's authority remains its own. A method's trust terminology is descriptive guidance; enforce permissions in the actual service/API. A prompt or Markdown instruction alone does not establish runtime enforcement.
 
 ## Agent integration
+For an owned application spanning CRM, CMS, assets, research and publishing, use the proposed [OSS business stack blueprint](OSS-BUSINESS-STACK-BLUEPRINT.md) as a concrete comparison candidate. It includes deployment boundaries, scoped MCP actions, licenses, cost assumptions and a connected pilot. It remains proposed guidance; each company's accepted sources and decisions take precedence.
+
 Use official authenticated connectors where they satisfy the workflow. For custom software, expose an API/domain service; let UI, CLI, workflow and MCP adapters reuse its validation, permission and audit logic.
 
 Prefer job tools over unrestricted database/admin access. Issue grants per identity/scope/action. Interactive OAuth, unattended service identities and per-host availability require separate verification. A local MCP configuration does not automatically connect a cloud chat.
