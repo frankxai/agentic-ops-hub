@@ -1,5 +1,16 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: authenticated baseline and post-merge repairs
+
+PR574 merged from GitHub at2026-10-11T06:18:40Z, headb271159c0ad23b16380a11bb1ecdfde8f06f7c47, receiving main3b8120b424fb6f42f1aa62b82870bbb4b5c113de. This lead did not promote the PR or waive acceptance. Preserve that merge; authenticated rendering and production/provider activation are still unearned.
+
+Baseline b78f764964820e3eb4fac104881c6b4559c49ae7 / workflow38116846514 passed Install, Lint, TypeScript and Build. Actual isolated PostgreSQL17 billing kernel/recovery and concurrency assertions passed. Browser startup failed before rows/screenshots because the verifier used root @playwright/test resolution rather than the app-owned dependency. Zero production writes and zero paid inference. Gemini3.1Pro FAIL has32 verified source hashes, packet agreement and final-text hash: critical Luminor direct-image call without admission, plus high Studio/Page provider-image rendering findings. Do not reuse earlier8b PASS for this revision.
+
+Repair043a5284add39c0c12110e3ef6992a23880ffe6a corrects the browser dependency and records controlled bootstrap phases. Luminor prepares a validated draft and local Imagine review link without provider or billing calls; the actual chat renderer escapes the prompt and ignores an injected href. Three native handoff/rendering tests and five fixture-isolation tests pass. Hosted workflow38117713666 is live; no authenticated pass is claimed. Since574 merged before this repair push, a follow-up PR based on receiving main is required. The two image-rendering repairs remain pending until compiled baseline evidence is available.
+
+Continue from the owned checkout C:/Users/frank/starlight/repos/.codex-worktrees/arcanea-gateway-admission-20261010. Preserve other owners and accepted router/reader commits. First inspect38117713666 and its exact-head artifact, then fix real failures, integrate receiving main and earn fresh build/types/lint/source/security/creator evidence before protected merge and production verification. Issues529/276 remain the product record; hub draft248 holds this checkpoint. RAM3458MB is below the4096MB floor despite the probe's BOUNDED label: no local heavy work or extra agents. The full branch/product/subscription/client/harness goal stays ACTIVE.
+
+
 
 ## Arcanea adoption: hosted image candidate gates passed
 
