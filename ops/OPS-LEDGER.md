@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Arcanea private entry and account history verified candidate
+
+- [PR567](https://github.com/frankxai/arcanea-ai-app/pull/567), source `ca6489fe8b524deb6f9a168095c2b7ef58d84892`, draft: private home-to-chat prefill, IME-safe Enter, explicit draft recovery, visible token controls, actual Stop and actor-bound session/project caches. Unattributed legacy data is preserved; history API447/home505 remain untouched.
+- Native CI38104525569, compiled Entry38104525614 and companion38104525582 pass at this source. Seventeen unit tests; twenty-six source hashes, sixteen inspected captures, four browser modes and eight synthetic requests. Both fixture workers closed; sixteen provenance companions and sixteen entries in both existing visual ledgers; schema validation/memory sync pending.
+- Preview `dpl_AGdRGkQN4thZEXwvkNvwoc3xYw8z` is READY; root/chat SSR200. Production remains `b4520829`/`dpl_BKXFz8BfWwnSUi9K4z739aJAZznf`. No real provider, paid review, customer write or promotion. Exact-source independent review, receiving-main security, live tenant/provider acceptance and broader visual polish remain open.
+- Failed account-recovery runs at773089e1/5dcd2db3 are retained. Safe legacy recovery, durable history, account-key isolation, server cancellation/charges and Node pin reconciliation remain open. Chat562/reader560/team566 remain held with their own proofs; the Queen/SIS team proposal is not active dispatch. Full founder goal stays active.
+- Pickup: [11 October session](sessions/2026-10-11.md), [hub PR242](https://github.com/frankxai/agentic-ops-hub/pull/242), existing [issue276](https://github.com/frankxai/arcanea-ai-app/issues/276). Next: current-source independent review and owner447 real-account history/recovery. No local workers remain; privacy-aware scoped rollback preserves data and other owners.
+
 ## 2026-10-11: Arcanea guides and team proposal
 
 - [Draft PR566](https://github.com/frankxai/arcanea-ai-app/pull/566), `3548d78ca2f781991220a04fa47f0d219dad9441`: three restored source guides, eight-seat/nine-mission operating proposal and current pickup; five docs only.
