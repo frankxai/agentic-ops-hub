@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Agent-driven finance preparation implemented; source acceptance and tax work remain open
+
+The private finance foundation now has a tested, stage-only statement-control workflow at c27fbf645b9f5ec4e73490d6550b2818e4fffe53. [Draft PR 2](https://github.com/frankxai/agentic-money-os/pull/2) and [existing issue 1](https://github.com/frankxai/agentic-money-os/issues/1) retain implementation and open acceptance. Thirty-nine checks and a separate synthetic repeat run passed. Invoice matching, approved journal/Beancount validation, versioned tax mappings, actuals integration, deadlines, backups and independent review remain open. No final books, filing, money action or scheduled operation is claimed. Private evidence and figures remain private. See the [session record](sessions/2026-10-11.md). This local handover branch is not merged or published.
+
+
 ## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
 
 Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.
