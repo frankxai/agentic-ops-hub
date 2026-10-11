@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea team priorities and founder runtime decision
+
+- [PR566](https://github.com/frankxai/arcanea-ai-app/pull/566), source `76e2b2d78ccc2c16a4ee2ad94e0f2042ff2aeda7`: refined world-first delivery order, correct integrated-versus-npm MCP claims and explicit founder Node24/pinned-pnpm selection. Five-doc proposal; no active Queen team or launch.
+- Local formatter, eleven links, source/ownership/frozen-branch checks and enabled secret hooks pass. Product runtime/code/lockfile unchanged. Current hosted CI38108752576 pending; prior3548d78c CI passed; current docs CodeQL skipped. Exact-current adoption review pending.
+- Latest review-lite admission HOLD:1390MB freeRAM,6144MB required; no new local workers/reviews/build/browser, no foreign cleanup or paid call. Keep entry567086f2fe1, reader560e6691535 and chat56286a412ef frozen with their distinct proofs.
+- MCP integration558 merged; official npm latest still0.7.0, fresh execution untested, distribution/license gates stay with517. Durable mission284 and book280 remain open. Full founder goal active; no production promotion. Pickup sessions/2026-10-11.md, hub242 and programme276.
 
 ## 2026-10-11: Arcanea transcript recovery verified, wider release held
 
