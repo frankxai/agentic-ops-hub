@@ -4,6 +4,8 @@ TL;DR: Build one application for shared CRM, content, asset and decision workflo
 
 Research date: 11 October 2026. Status: proposed architecture, not implemented or independently approved. Prices and licenses need rechecking at the pinned implementation revision. This reusable blueprint does not change an existing company's accepted architecture or record ownership.
 
+Scope update: the founder subsequently rejected this proposal as insufficient for a modern agent-operated company. The [expanded company architecture](AGENT-OPERATED-COMPANY-ARCHITECTURE.md) covers strategy, product production, distribution, customer lifecycle, economics, agent learning and customer-owned delivery. This document remains the supporting shared-record/workflow design and comparative baseline.
+
 ## The useful job
 
 A solo founder should be able to research a prospective company, retain the evidence, prepare a professional follow-up, reuse an approved asset in content, publish after approval and see which effort produced a qualified opportunity. The founder should also be able to export the records, repair a failed step and understand the cost.
