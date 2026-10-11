@@ -1298,3 +1298,7 @@ No founder taste, customer outcome, complete accessibility audit, measured CWV o
 Prior short prompts rejected; preserve their revision. Full [programme](../docs/COMPANY-SWARM-BUILD-PROGRAMME.md), [coordinator](../docs/COMPANY-SWARM-COORDINATOR.md), [sixteen lanes](../docs/COMPANY-SWARM-LANE-PROMPTS.md) and [economics](../docs/COMPANY-BUILD-BUY-ECONOMICS.md) saved with dependency/specification artifacts and private founder scenario model. Next work prioritizes existing product activation/delivery, simple CRM and the current VIS/CMS workflow. Eight representative local repos plus accepted Registry metadata inspected; live behavior and entire-estate code were not audited.
 
 Schema/DAG/link/prose/math checks passed; 28 recovery/security/customer evaluation cases are specified, not executed. Actual machine HOLD prevented new swarm/build/browser work. No infrastructure or purchases; independent provider review and implementation remain pending. Existing architecture issue10 retains ownership; next prompt now includes economics before module admission. See today's session and private audit for exact revisions, failed/rejected evidence and local commit receipt.
+
+## 2026-10-11: DAM priority correction
+
+DAM is optional now; use existing tools and approved assets for the first useful revenue slice. Narrow internal R2 browsing is distinct from broad commercial DAM scope. Programme/coordinator/current prompt corrected; current VIS source inspected, deployment not tested. See today's session and private dam-scope correction. No implementation or purchase.

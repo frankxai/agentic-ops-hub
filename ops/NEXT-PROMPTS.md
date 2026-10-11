@@ -2,6 +2,8 @@
 
 ## Company: execute the economically admitted creator/delivery slice
 
+Latest founder correction: DAM is not essential now. Use existing tools and approved assets; do not make new DAM engineering a prerequisite. A narrow internal R2 viewer is a different scope from the commercial DAM estimates. Select the actual sellable outcome first and add asset work only for observed pain.
+
 Continue Frank's full company-runtime and customer-owned product programme. Read docs/COMPANY-SWARM-BUILD-PROGRAMME.md, docs/COMPANY-SWARM-COORDINATOR.md, docs/COMPANY-SWARM-LANE-PROMPTS.md and docs/COMPANY-BUILD-BUY-ECONOMICS.md, plus private company-build-buy-ceo-2026-10-11.md/json. Earlier brief revision a4d85db was rejected for depth; keep that evidence. The sixteen responsibilities and 28 proposed evaluations are not started agents or executed tests. Current prompt/JSON assignment placeholders remain unadmitted.
 
 First refresh private accepted Registry/product sources, issue10, receiving owners and actual PP/storage admission. The prior swarm HOLD prevented new agents/builds; do not kill other processes or archive unfinished work. Preserve existing portfolio and current WIP limits. The reusable docs contain hypothetical cash/tokens/hours, not actual savings; founder baseline and invoice/usage unknowns stay private. Calibrate with a 10-20 hour actual useful slice before a large CRM/DAM commitment.

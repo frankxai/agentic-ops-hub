@@ -8,6 +8,8 @@ Read [economics](COMPANY-BUILD-BUY-ECONOMICS.md), [coordinator prompt](COMPANY-S
 
 ## The complete useful outcome
 
+DAM work is optional and is not a prerequisite for the first revenue product. Use existing folders, desktop tools and already-approved assets when they satisfy the selected job. Admit an asset-library improvement only for an observed browsing, retrieval or delivery problem. The commercial DAM estimates describe a broader product, not the minimum internal R2 gallery. Execute the relevant parts of the waves; do not start every module.
+
 A founder can choose an offer from evidence, create an editable artifact using approved sources/assets, review it, place it in a CMS, prepare distribution, receive a permitted customer event, deliver the correct version, record costs and feedback, and resume after interruption. Another founder can install the selected components in their own accounts, update without losing edits, revoke a connector and export/restore the data.
 
 The creator still controls rights and external publication. The same operation can be reached from an appropriate web app, CLI, supported host or MCP client without bypassing permissions. A connected tool is not proof that these journeys work.
