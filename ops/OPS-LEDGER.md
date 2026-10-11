@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Paper-ready founder operating plan retained privately
+
+The existing finance task now includes a private business canvas, ranked operating options, checked goal arithmetic and founder commitments. These are proposals, not revised forecast figures or validated demand. Current source freshness was checked; product acceptance, financial originals and independent review remain open. [Issue update](https://github.com/frankxai/agentic-money-os/issues/1#issuecomment-6109149035); [session record](sessions/2026-10-11.md). No private figures or strategy are reproduced here. Local handover branch remains unpublished.
+
+
 ## 2026-10-11: Agent-driven finance preparation implemented; source acceptance and tax work remain open
 
 The private finance foundation now has a tested, stage-only statement-control workflow at c27fbf645b9f5ec4e73490d6550b2818e4fffe53. [Draft PR 2](https://github.com/frankxai/agentic-money-os/pull/2) and [existing issue 1](https://github.com/frankxai/agentic-money-os/issues/1) retain implementation and open acceptance. Thirty-nine checks and a separate synthetic repeat run passed. Invoice matching, approved journal/Beancount validation, versioned tax mappings, actuals integration, deadlines, backups and independent review remain open. No final books, filing, money action or scheduled operation is claimed. Private evidence and figures remain private. See the [session record](sessions/2026-10-11.md). This local handover branch is not merged or published.
