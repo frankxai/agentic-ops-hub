@@ -15,6 +15,7 @@
 
 - Registry progress at 02:17:55 UTC: accepted SIS core/ai-sdk/mcp 0.2.0 are all staged (validation completed). Actual registry downloads are byte-identical to reviewed main 279ce499; public exact versions still 404 at 02:16:32. Three stage IDs and digests in current session. No public promotion/provenance yet; staging reserves 0.2.0, so resolve records before a direct OIDC publish.
 - npm 11.15 task-scoped client is usable; global 11.13 unchanged. Native auth allows staging, but current supported-client trust-list/profile 403 remain. Owner session/2FA availability requested, response pending; no shared credential rotation, token bypass or automatic stage approval/rejection. GitHub owner-reviewed npm-production remains intact.
+- Actual root8.5.1 archives checked at02:32:30Z:378 files each, identical except package.json; legacy is full runtime copy. Both advertise Node>=18 but SQLite12.8 requires20/22/23/24/25. Published memory/sanitizer/lock lack merged279ce499 repairs; gitHead/attestations absent. No missing advertised entry; static-only bounded inspection, no secret scan/install/source attestation. Coordinate a later source-bound rootpatch with peer migration owner; modular publication alone cannot deliver those runtime fixes.
 <!-- npm-managed-20261011:end -->
 
 <!-- starlight-delivery-20261010:start -->
