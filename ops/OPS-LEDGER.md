@@ -1,3 +1,17 @@
+## Arcanea adoption: exact integrated document acceptance complete; protected ready checks live
+
+Full Arcanea objective remains active. Ready document PR #585 is at `25c33401af78ebcc8825758c75412c692d1d2b32` on accepted main `a00d10b6cfd11558af57c516d4b4545c88cab03f`.
+
+Trusted exact-source manual38153894420 is terminal SUCCESS: Install/Lint/TypeScript/Build/CI Status, complete-source independent Gemini3.1Pro PASS with37 verified Git-byte hashes, and actual compiled authenticated document acceptance. All three desktop/mobile/reduced-motion modes pass seven checks each, nine real password logins, zero page errors, zero supplier posts and one denied stale connected form submission per mode.14 service source hashes and six inspected PNG companions match source; private configuration removed, cleanup failures zero. Source review includes the complete reader Auth runner and corrected workflow. This is isolated Auth/Postgres behavior, not signed-in production or paid customer usefulness.
+
+Reader38153898138 and draft normal CI38153898140 pass. The three-line workflow correction matches the unchanged Auth runner's owned repository/actor/three-branch admission, with14 actual PR/manual admission cases passing and other reader route/database/compiled checks unconditional.28 other incoming reader paths remain byte-identical to accepted main; the shared fixture-test conflict is reconciled. Previous rejected attempts are retained.
+
+PR description now reflects the final behavior/evidence and is ready for review. This deliberately triggered fresh protected ready CI38154542385 and CodeQL38154542312, both live. Observe those handles without duplicate dispatch. Only after actual release gates pass, merge with expected head, apply the reviewed additive migration through Supabase apply_migration and verify source-bound production plus actual customer recovery. No protected merge or document production DDL has occurred yet.
+
+Production READY deployment `dpl_2T3aMyJRrgcaAiYSkApjxPfe7kDS` matches accepted a00 and www/apex/app aliases. Its catalog lacks all four project/document tables and both save/initialization functions. No customer or financial writes occurred. Private PR #580 stays disabled pending the existing US$1 storage/live-verification answer. No store, token, capacity or payment provision.
+
+Fresh metadata:49 open Arcanea PRs,34 drafts. Three open high dependency alerts all refer to docs/atlas/pnpm-lock.yaml; none is dismissed, and production reachability/remediation remain separate work. Private upload/serving/export, the long workspace marketing footer, creator/continuity/media/video usefulness, subscription/storage/API/credit limits, connected clients/local-cloud harness and estate source-based landing remain open. No new heavy local worker, browser, server, watcher, install, worktree or agent starts under the recorded RAM hold. Current pickup remains hub PR #248 and product issues #276/#529.
+
 ## Arcanea adoption: reader workflow admission corrected after document PASS
 
 Full Arcanea objective remains active. Document draft PR #585 is now `25c33401af78ebcc8825758c75412c692d1d2b32` against accepted main `a00d10b6cfd11558af57c516d4b4545c88cab03f`.
