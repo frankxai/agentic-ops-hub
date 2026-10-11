@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Memory router tenant identity and route ownership repaired
+
+[Memory30](https://github.com/frankxai/starlight-memory/pull/30) merged normally as `eec0e3faef0889b35d209c8ceca1351875ce1a14` with exact candidate tree match, independent Google static PASS, Node22.23.3 candidate/receiving-main CI PASS,300 tests and build/typecheck/MCP/synthetic checks. Nine regressions reproduced tenant mismatch and shared route mutation before repair. Local foreign checkout preserved; GitHub readback matches all three tested files. Broader [memory8](https://github.com/frankxai/starlight-memory/issues/8), npm owner authentication/public release and managed-platform customer gates remain open. [Session](sessions/2026-10-11.md).
+
 ## 2026-10-11: Nine Creator package names staged with verified reviewed bytes
 
 Creator accepted69fca157 has ten artifact and both installed-consumer receipt validations. Nine missing package names are now staged at0.1.0; every downloaded staged tarball matches its reviewed SHA256, and native registry validation completed for all nine. Real-version promotion, provenance and publisher/OIDC authority remain pending. Creator-mcp0.1.1 was not restaged. Expected publisher binding is frankxai/starlight-creator-mcp / npm-release.yml / npm-production; owner sign-in/2FA is requested because trust settings return403. Preserve immutable stage IDs and reconcile staged versus direct-publish/provenance semantics before protected approval. Source, managed-platform, merchant and actual creator-value gates remain open. [Creator4](https://github.com/frankxai/starlight-creator-mcp/issues/4) and [session](sessions/2026-10-11.md).
