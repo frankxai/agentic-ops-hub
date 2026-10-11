@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: ECC short port is on main; eight skills stay cold
+
+The agreed ECC cherry-pick is merged. Upstream pin `4eb71d92a39cab44ad40ac9d8a6a5ccb4029d6c2`. Library [#51](https://github.com/frankxai/claude-skills-library/pull/51) `682b2ce`, [#52](https://github.com/frankxai/claude-skills-library/pull/52) `ca04fed`, [#53](https://github.com/frankxai/claude-skills-library/pull/53) `854bb488`. Config [#41](https://github.com/frankxai/claude-code-config/pull/41) `ebc0758`. Hermes [#28](https://github.com/frankxai/awesome-hermes-agent-skills/pull/28) `17724a7`. SIS [#344](https://github.com/frankxai/Starlight-Intelligence-System/pull/344) `6bbf3a17`. Hub [#233](https://github.com/frankxai/agentic-ops-hub/pull/233) `0dff5f23` recorded the 10 October close. `claude-code-config` [#42](https://github.com/frankxai/claude-code-config/issues/42) stays closed. [#53](https://github.com/frankxai/claude-skills-library/pull/53) had no issue, so there is no retrospective.
+
+`node --test scripts/tests/harness-e2e.test.mjs` passed 10/10 locally and in the Antigravity checkout. Antigravity blocked head `131d9e8` (Windows `Path` only), then signed `458f9bcc385b13227e651aaedc7810bbb9428e62`. The file eval does not score a model on a product task. The eight skills stay out of the default prompt. Full prompts, files, and the remaining gates are in [the session](sessions/2026-10-11.md). Other owners' records below stay as they were.
+
 ## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
 
 Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.

@@ -1,3 +1,11 @@
+<!-- ecc-harness-20261011:start -->
+## ECC harness, one current prompt
+
+The short ECC port and the executable verification and Santa tests are already on main. Do not install the rest of ECC.
+
+When Claude `/usage` shows the weekly cap has reset, open one Claude session and run `/codex:setup`, then one `/codex:review --base main`. After that, add typescript-lsp and pyright-lsp. Leave the eight absorbed skills cold until a saved task-success eval and an explicit promotion. Leave the observer, rtk, and claude-code-action off. Do not kill a running Grok to apply the MCP diet. The runners are `node absorbed/harness/verification-run.mjs --repo=<path>` and `node absorbed/harness/santa-round.mjs`. Full record: `ops/sessions/2026-10-11.md`, section "ECC harness close".
+<!-- ecc-harness-20261011:end -->
+
 <!-- v0-design-programme-20261011:start -->
 ## Continue the active design mission
 
