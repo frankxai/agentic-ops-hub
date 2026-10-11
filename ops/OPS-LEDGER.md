@@ -1482,7 +1482,7 @@ Only five of ten finding quotes are unique literal matches at their declared
 lines. Its unsupported P0 extra-Gate allegations and missed direct contradictions
 remain a factual failure case. This is no narrative ranking or approved judge.
 
-Provider PR578 is now draft5b33f521. Earlier3a22 fixture CI cannot approve that
+Provider PR578 advanced through draft5b33f521 to drafta7041809. Earlier3a22 fixture CI cannot approve that
 head or live auth/settings/provider use. Main stayed0661416b with failed receiving
 CI, and PR560's held reader repair remains unapplied. EPUBCheck/storage admission,
 manuscript/canon/rights, creator pilot, model funding and managed-supply gates stay
