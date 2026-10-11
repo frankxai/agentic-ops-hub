@@ -1,4 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
+
+## Arcanea: finish a release, prove a creator workflow, then package it
+
+Continue the active founder goal using the [full autonomous lead brief](plans/2026-10-11-arcanea-community-lead.md) and [current execution receipts](sessions/2026-10-11.md). Re-query main and PR573/575 before acting: initial569 and follow-up570 merged; main `a131c1e9` has a READY production deployment, with actual stable reader proof pending. Later routing diagnostics are repaired in draft575 at `c3c699ec` with fresh exact-source Poolside PASS. Reader573 is ready at `6d5ce085` with ten title/policy assertions, seven series fixtures, fourteen public-boundary cases, two synthetic setup-failure receipts and fresh NVIDIA PASS. Finish its ready-PR hosted browser run and inspect actual screenshot/JSON source identities. Then normally integrate573, update575 to carry the new required native-routing CI gate, verify all90 cases and obtain current-source review before normal merge. Retain failed/cancelled runs, old490, earlier reviews that missed findings and other owners' branches. Verify stable production binding plus actual reading journeys; READY and CI cannot establish customer acceptance.
+
+Frank delegated the manuscript recommendation. Select the existing seven-chapter Dragonborne: The Last Clutch source for the first engineering edition proof, keeping ARC-REL-001's Dragonborne lane; reconcile its old working title in a draft manifest without opening publication gates. Preserve both Kael editions and all other manuscripts. Full17-chapter Dragonborne/Kael review at fdd08677 returned WARN but invented source claims and only 4/12 exact citations passed; no automatic correction or promotion. Inspect/reconcile actual narrative findings, freeze source hashes and build a private reviewable web/EPUB/print proof using existing compiler/manifest work. Human full-manuscript/canon/rights release acceptance remains required; no receipt has been invented.
+
+Preserve the programme's world-first60/30/10 allocation and full managed-subscription/fleet/community objective. After a usable creation/recovery/export proof, compare one capable author with equal-budget3/5-role workflows on the versioned20-task set, using calibrated frozen judges and held-out tasks. Every citation and acceptance claim must bind actual source; the rejected diagnostic is an evaluation fixture. Extend existing router/CLI/AuthorOS/SIS contracts and one durable owner. First creator offering remains a cold-installable BYOK workflow and worked example; managed APIs require authorized supply, funds, metering, tenant isolation and live recovery. Keep separate creator-owned worlds and brand communities, no invented consent/demand, no outreach or publication without its applicable authority. Machine HOLD forbids new parallel agents; continue bounded sequential/remote work and preserve other owners' processes.
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: review and release Supabase auth, then prove live account activation
 
@@ -182,7 +190,7 @@ SDK 8.5.1/SIS PR 347 and foreign creator-MCP PR 6 at ebf0f633 are separate owned
 
 ## Arcanea adoption: finish the accepted creator journey
 
-Continue Frank's explicit production/merge request in thread01a123df-58c6-72f3-b86c-65083426cf65.
+Continue Frank's explicit production/merge request in thread 01a123df-58c6-72f3-b86c-65083426cf65.
 Programme276 owns the full world-first creator/platform/CLI/SDK/ADK/mobile/desktop/router/memory/
 cloud/API/narrative/GTM goal;529 is credit debit/refund/BotID and511 commerce. Keep276 open.
 Native get_goal remains paused; do not recreate it or invent completion. No password or test-account
