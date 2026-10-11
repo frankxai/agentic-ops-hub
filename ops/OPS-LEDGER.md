@@ -1,5 +1,12 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Arcanea guides and team proposal
+
+- [Draft PR566](https://github.com/frankxai/arcanea-ai-app/pull/566), `3548d78ca2f781991220a04fa47f0d219dad9441`: three restored source guides, eight-seat/nine-mission operating proposal and current pickup; five docs only.
+- Local formatter, eleven links, source facts, branch/ownership and secret checks pass. Formatter lockfile side effect retained and restored; product code/lockfile unchanged. Hosted CI 38100941479 pending; CodeQL skipped for docs. Independent adoption review pending; no live team or launch.
+- Maintenance: three high open alerts belong to the Atlas nested lockfile; two patched versions already exist in the main workspace. Trace Atlas's actual build/deploy and consumers with its existing owner before a fix; no production exploitability claim.
+- Preserve chat 562 / 86a412ef and reader 560 / e6691535. Chat same-source reruns pass; current <=US$1 review question awaits an answer. Full founder goal remains active. Pickup: sessions/2026-10-11.md; existing programme 276 and hub PR242. No owned process remains.
+
 ## 2026-10-11: Arcanea chat candidate
 
 - Artifact: [PR562](https://github.com/frankxai/arcanea-ai-app/pull/562), `86a412efcebf3873bbed0d8796d6a684e85470da`; 13 changed files, 9 review contexts. Companion recovery, readable/scrollable welcome and keyboard dialog repaired.
