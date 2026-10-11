@@ -1,4 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+
+## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
+
+Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.
+
+The prepared 24-call Aion/frontier development comparison remains unrun: proposed US$10 cap, US$5.4887150 reservation estimate, pending founder answer and no task-environment experiment credential. Candidate requests exclude reference answers, private revisions and calibration/holdout tasks; that filtering does not provide a tenant sandbox. The old private prototype's paid entrypoint is disabled. Fresh v5 chapter-1 cold reading produced two private provisional notes; chapters 2-7, independent/human manuscript/canon/rights review and the held reader repair remain open. [Evaluation update](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-6108401283), [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md). The founder goal stays active.
+
+
+
 ## 2026-10-11: deployed creator recovery verified; other design releases remain open
 
 GenCreator PR203/d015297 has bounded deployed 375px save/reload/review-import/recovery proof; owned browser closed, customer/device/managed acceptance unmeasured. Arcanea 1e1afdc has static PASS but [CI38121100835](https://github.com/frankxai/arcanea-ai-app/actions/runs/38121100835) measured persistent mobile heading overlap; original failure preserved and application correction required. FrankX 95fd798 is a local Foundry implementation with ten contract tests and strict language audit PASS, static WARN and required local build HOLD. It has not been pushed or released. Two other site releases remain open; the original mission deadline and all foreign work are preserved. See today's session and current owned prompt for exact next actions.
