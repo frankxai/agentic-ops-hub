@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Higgsfield reader test is green; production and signoff are not
+
+FrankX production is still `34296a060e1fc92f2c211a159068eb08a6058965` (PR 959, deployment 6990789453). PR [963](https://github.com/frankxai/frankx.ai-vercel-website/pull/963) is open at `cce19cb80e255190e29f4f3c699cb45c8d0410ae`. Required checks on that SHA passed, including the CI reader journey. `mergeStateStatus` is UNSTABLE because a duplicate job named `review-gate` was cancelled. The required status context `Review Gate` succeeded. Antigravity has not signed `cce19cb`. Swarm preflight was HOLD at 4064 MB free against 10240 MB required, so no AGY process was started. Checkout stays closed. The affiliate hop stays `https://higgsfield.ai?fpr=frank-255866`. Income PRs 16-19 and frankx PR 901 stay unmerged. [Issue 962](https://github.com/frankxai/frankx.ai-vercel-website/issues/962) and [session](sessions/2026-10-11.md). The Q4 launch goal stays active.
+
 ## 2026-10-11: Dragonborne v5 cold read complete; private v6 and reader revision pending acceptance
 
 All seven private v5 chapters are cold-read; private v6/620729b9 has 32 source-bound proposals and original-source patch applicability. Complete v5 plus all v6 changes are inspected, with no fresh whole-v6 or independent/human approval claim. V6 HTML/EPUB preserve 38,770 ordered word tokens and navigation. Exact v6 EPUB now passes actual EPUBCheck 5.4.0 with warnings fatal, zero fatal/errors/warnings, after fresh 7532 MB RAM recovery admitted the bounded checker. The earlier 1190 MB denial is retained. Earlier versions and first-build corrections remain evidence. Source and locked canon are unchanged; publication, device, print, compiler, rights and delivery gates stay open.
