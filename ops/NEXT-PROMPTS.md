@@ -1,4 +1,20 @@
 # ⏭️ Next Prompts — per active front / terminal
+<!-- autonomous-ops-20261011:start -->
+## Operations: verify adoption and finish one useful cost or production improvement
+
+Continue Frank's 11 October instruction for autonomous, orderly, cost-aware agents and protected production work. Accepted config main is `3e7656561fda5a6bb0d14c0bbc9a2f6bcdf3beae`, from PR113. The local installation pins the byte-identical reviewed candidate `3612953bcf617a710600c1c0c3bd5b5d58408ecf`. Read the latest hub session and ledger, config `core/policies/autonomous-ops.v1.md`, `core/skills/starlight-ops/SKILL.md`, existing Queen `operations.md`, and the actual target repo's governing instructions. Verify current heads and ownership before acting.
+
+Run `starlight-ops audit --github-usage` and `installers/doctor.ps1 -OpsOnly -Json` from the verified configuration checkout. Inspect coverage and the 4 GiB floor; partial runs leave unvisited state unknown. Reports live under `.starlight/operations/ops-guard`. The limited two-day Windows task is the only new clock and performs metadata observation, with no model calls or implementation. Use the existing lead/Queen queue for improvements; do not add duplicate AI schedulers or re-enable older disabled jobs.
+
+Choose at most three evidence-backed findings and finish one bounded authorized artifact. First resolve a named repo hook override with its owner, or prove native fresh-session skill loading. Codex, Grok and Gemini skill links were installed; Grok command files were projected. Claude's existing linked checkout was intentionally preserved, and its owner must integrate any projection. Never infer universal agent compliance from installed files. Git hooks enforce ordinary local commits using the shared path; no-verify, configuration overrides, direct API writes and other machines need separate admission controls.
+
+For a cost improvement, inspect actual per-repo Actions or Vercel build evidence, compare duplicate work, preserve required validation and real customer recovery/acceptance, then make one coherent source-reviewed change. Budget usage is not the cap. Keep the founder's existing hard stop and Copilot setting; no further allowance is authorized by this prompt. Measured savings require a before/after observation.
+
+Use one lead and one owner per checkout, with explicit `starlight-ops claim` file scopes. Legacy leases remain reserved until their actual owner reconciles them; do not close a lane from age, a state label or a tidy-worktree preference. Fresh machine admission governs any additional writer or independent review process. Preserve unfinished work, dirty trees, locks, existing branches and the installed config worktree whose skill links are live. Merge normally after actual required checks and exact-source independent review. Vercel production claims require receiving-main, source/environment/domain binding and actual workflow proof.
+
+Save the finished slice in this hub and config issue30. Preserve the separate Starlight, AGY and GenCreator prompts and their incomplete customer, identity, creator and commercial gates. The GenCreator identity decision remains Supabase sessions plus explicit Starlight account linking.
+<!-- autonomous-ops-20261011:end -->
+
 <!-- starlight-delivery-20261010:start -->
 ## Starlight: review and release Supabase auth, then prove live account activation
 
