@@ -7,6 +7,7 @@ Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normal
 The prepared 24-call Aion/frontier development comparison remains unrun: proposed US$10 cap, US$5.4887150 reservation estimate, pending founder answer and no task-environment experiment credential. Candidate requests exclude reference answers, private revisions and calibration/holdout tasks; that filtering does not provide a tenant sandbox. The old private prototype's paid entrypoint is disabled. Fresh v5 chapter-1 cold reading produced two private provisional notes; chapters 2-7, independent/human manuscript/canon/rights review and the held reader repair remain open. [Evaluation update](https://github.com/frankxai/arcanea-ai-app/issues/282#issuecomment-6108401283), [programme 276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md). The founder goal stays active.
 
 
+
 ## 2026-10-11: Revised Dragonborne EPUB passes; public reader still needs recovery
 
 Private developmental v5 follows complete v4 prose coverage, with fresh chapters 3-7 and prior-read/changed-passage coverage for 1/2. Thirty-eight checked edits repair chronology, location and identities and give Theron's unsupervised choice a witnessed disclosure. The v4 inherited audit-string decoding error is repaired in a separate UTF-8 manifest; prior failures are retained. V5 Markdown SHA256 3e949af16a2fca7208f0f7dc800bf4a3fad91853d26d31466bbc476859fff9f4. Its private HTML/EPUB retain all 39,290 ordered tokens and navigation; exact revised EPUB passes actual EPUBCheck 5.4.0 with warnings fatal, zero fatal/error/warning and exit 0. Fresh bounded PP and historical quick no-write sensor evidence is retained. No manuscript/canon source edit, private candidate independent approval, v5 PDF, production compiler, device/print, rights or publication acceptance.
@@ -2186,3 +2187,11 @@ head or live auth/settings/provider use. Main stayed0661416b with failed receivi
 CI, and PR560's held reader repair remains unapplied. EPUBCheck/storage admission,
 manuscript/canon/rights, creator pilot, model funding and managed-supply gates stay
 open. See [current evidence](sessions/2026-10-11.md) and [pickup](NEXT-PROMPTS.md).
+
+
+### 2026-10-11 SIS plugin dependency security candidate
+
+- Draft [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362), head6dd836e8fe8ed58f377cc19810a2c535725ec6fa/base8e683011, two plugin manifests only; patched SDK1.31/client-core-server2.2 with agents-scoped overrides; current handler/auth preserved.
+- Actual plugin38134169582 passes clean install/0 reported vulnerabilities, validation/typecheck,21pass0fail0skip, build and health200/anonymous401 smoke. Ecosystem38134169607 all six jobs pass, including four Node22/24 Windows/Linux matrices.
+- Exact independent review pending: frozen220633-byte packet SHA25665bdb8396a10a076a7b78de619455c323d8dd4be866298a9236ca2c9f5e021be; launch-time review-lite HOLD6048/6144required/projected4000, no AGY worker launched. Jules lockfile guard unchanged. Protected review check correctly fails; PR remains draft/unmerged and alerts206/207 open on main.
+- Both saves: [SIS329 checkpoint6108383944](https://github.com/frankxai/Starlight-Intelligence-System/issues/329#issuecomment-6108383944), this session journal and current pickup. Reused owned WT/explicit scopes/native leases; foreign work preserved; no live worker/deploy/publication/account/customer mutation. Next admitted exact review, normal protected merge and main CI/alert closure. Root/site/Creator/MCP publisher and managed customer gates stay open; full goal active.
