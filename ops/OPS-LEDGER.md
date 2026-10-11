@@ -2267,3 +2267,18 @@ FrankX 08044a6 remains source-reviewed locally and unpushed under a fresh build 
 Arcanea [PR #579](https://github.com/frankxai/arcanea-ai-app/pull/579) is merged; accepted/serving46b77c58 and receiving-main CI 38131259624 pass. Complementary live anonymous synthetic checks verify mobile validation/navigation, actual working-edits download, Apply and reload recovery; earlier incomplete commands remain retained. Full source/doc correction and application-equivalent preview review are recorded with their scopes. Customer/account/provider, physical-device and field-performance acceptance remain separate.
 
 GenCreator is released. FrankX08044a6 remains source-reviewed locally, unpushed under build RAM HOLD, with required Node 20/pnpm 10.28 and local/runtime gates open. No owned heavy process is running. The active mission still needs one qualifying release by15:26:56 UTC. Three focused v0 source contexts are verified; imported workspace files and saved skills are unchanged. Forty complete team-wide events through 11:01 report 0.0175 charged credit units; the $15.7546 public token-rate estimate before discounts is not actual spend or balance. The cap is $25 existing credits, no purchases. See the [current session](sessions/2026-10-11.md) and existing product/programme issues; preserve accepted records, foreign prompts, active owners and prepared identity work.
+
+## 2026-10-11: current FrankX pickup aligned to Node 22
+
+The current design prompt now names local candidate a7b0c61 and its reviewed
+Node 22 pin, matching existing CI Node 22 and native Vercel 22.x. Five executable blobs
+remain unchanged from 08044a6; required local/runtime/browser gates are open and the
+candidate remains unpushed. Current [Foundry evidence](https://github.com/frankxai/frankx.ai-vercel-website/issues/339#issuecomment-6108620418)
+preserves the earlier documentation WARN and corrected STATIC_PASS.
+
+GenCreator and Arcanea remain the two released improvements. Arcanea's later
+accepted/serving 5328fbc9 has passing CI and changes only narrative scripts,
+their workflow/tests and planning. App/package/lock sources are unchanged from
+the released 46b77c58; no new live-browser or customer acceptance is claimed.
+Build RAM remains held and no owned heavy job is running. The active mission
+still needs one qualifying release; the $25 existing-credit cap remains.
