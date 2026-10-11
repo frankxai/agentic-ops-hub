@@ -2,11 +2,11 @@
 
 ## Starlight Cloud Managed Subsystem, Edge Mesh & Community Skill Economy
 
-With the Cloud Managed subsystem (`src/cloud/`), Cloudflare D1 sync manager (`d1-sync.ts`), Vectorize ANN client (`vectorize.ts`), Stripe checkout billing & webhook endpoints (`billing.ts`, `/api/cloud/billing`, `/api/cloud/webhook`), and CLI cloud commands (`starlight cloud login/sync/status`) merged at commit `839e1a0a`:
-- Deploy and configure live Cloudflare D1 database and Vectorize index bindings on Cloudflare Workers / Vercel Edge.
-- Integrate Stripe live/test publishable keys on `site/` to test checkout flow and webhook token issuance end-to-end.
-- Wire the GitHub Action bot for automatic community skill pack PR triage and verification.
-- Run multi-harness skill distribution benchmarks across Cursor, Claude Code, and Codex using the new syndication bridge.
+With commit `bf4d1afd` merged across `Starlight-Intelligence-System`:
+- **Universal 10-Harness Sync Engine (`starlight harness sync`)**: Run multi-harness sync across all active developer environments (`claude-code`, `codex`, `antigravity`, `grok`, `hermes`, `gemini-cli`, `cursor`, `opencode`, `kilo`, `windsurf`) to verify configuration projection and timestamped `.bak` backups.
+- **Sovereign Skill Publisher (`starlight skill publish`)**: Publish community and premium skill packs with 3-level progressive disclosure validation, empirical fair-market MSRP valuation, and dual monetization configurations for Stripe and Polar.
+- **Queen Adaptive Micro-Lane Scheduler (`starlight queen drain`, `starlight queen lane`)**: Verify automatic execution lane transitions (Micro <1.8GB, Medium 1.8-4.0GB, High >=4.0GB) and automated admission card healing under memory pressure.
+- **Interactive Glassmorphic Checkout (`/checkout`, `/api/cloud/checkout/fulfill`)**: Test instant cryptographic `CloudLicenseToken` minting, 1-click CLI login commands, and live Stripe Elements checkout flows.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
