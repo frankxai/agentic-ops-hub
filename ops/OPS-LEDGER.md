@@ -2,7 +2,7 @@
 
 ## 2026-10-11: Actual memory archive installation verified on main
 
-[Memory32](https://github.com/frankxai/starlight-memory/pull/32) merged `b9e562b5a4cc37246a8803f3627cce520c31467e` after exact-source Google PASS, source CI and six fresh-installed Linux/Windows Node20/22/24 consumers. Receiving-main CI38157433204/package38157433278 and downloaded receipt replay PASS. The same123-file archive serves SDK declarations, CLI and real tenant-scoped MCP persistence/deletion checks; runtime precedes dev dependencies. A read-only pinned workflow and MIT notice are merged. Public0.2.0 remains old code; new-version owner integration, npm trust/provenance and managed-customer gates remain open. [Memory8](https://github.com/frankxai/starlight-memory/issues/8) / [session](sessions/2026-10-11.md). Goal ACTIVE.
+[Memory32](https://github.com/frankxai/starlight-memory/pull/32) merged `b9e562b5a4cc37246a8803f3627cce520c31467e` after exact-source Google PASS, source CI and six fresh-installed Linux/Windows Node20/22/24 consumers. Receiving-main CI38157433204/package38157433278 and downloaded receipt replay PASS. The same 123-file archive serves SDK declarations, CLI and real tenant-scoped MCP persistence/deletion checks; runtime precedes dev dependencies. A read-only pinned workflow and MIT notice are merged. Public 0.2.0 remains old code; new-version owner integration, npm trust/provenance and managed-customer gates remain open. [Memory8](https://github.com/frankxai/starlight-memory/issues/8) / [session](sessions/2026-10-11.md). Goal ACTIVE.
 
 ## 2026-10-11: Tenant-scoped in-memory provider and independent snapshots
 
