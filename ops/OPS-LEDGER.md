@@ -12,6 +12,9 @@
 - Polar recommended for approved self-service software; standard Stripe for separately contracted services. Preserve legacy buyers in one entitlement ledger. No live merchant/catalog/charge changes; proposed prices/caps are hypotheses, Team seats unwired.
 - Next: admitted exact-source reviews, normal Creator merge, accepted-main archive checks, legitimate npm staging/trust/provenance/registry/cold installs, later SIS rootpatch. Managed: verified durable merchant inbox/projection/outbox, scoped grants, funded execution/settlement/reconcile and real generated/editable/reopenable/exportable output. Full objective active.
 - Saves: [session](sessions/2026-10-11.md), [hub217](https://github.com/frankxai/agentic-ops-hub/pull/217), [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329), [creator4](https://github.com/frankxai/starlight-creator-mcp/issues/4), [GenCreator5](https://github.com/frankxai/gencreator.ai/issues/5).
+
+- Registry progress at 02:17:55 UTC: accepted SIS core/ai-sdk/mcp 0.2.0 are all staged (validation completed). Actual registry downloads are byte-identical to reviewed main 279ce499; public exact versions still 404 at 02:16:32. Three stage IDs and digests in current session. No public promotion/provenance yet; staging reserves 0.2.0, so resolve records before a direct OIDC publish.
+- npm 11.15 task-scoped client is usable; global 11.13 unchanged. Native auth allows staging, but current supported-client trust-list/profile 403 remain. Owner session/2FA availability requested, response pending; no shared credential rotation, token bypass or automatic stage approval/rejection. GitHub owner-reviewed npm-production remains intact.
 <!-- npm-managed-20261011:end -->
 
 <!-- starlight-delivery-20261010:start -->
