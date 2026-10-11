@@ -2275,3 +2275,18 @@ GenCreator is released. FrankX08044a6 remains source-reviewed locally, unpushed 
 - Exact Google04b81254 review BLOCK covers all five changed blobs: malicious PR workflow completion can overwrite trusted API-patched rejection. [Negative receipt6108701422](https://github.com/frankxai/Starlight-Intelligence-System/pull/362#issuecomment-6108701422). Existing15-test/plugin21-test/six-job CI successes did not establish protection against this Actions behavior.
 - Lead rejected the unaccepted850b3f86 status proposal's missing-first-status gap. Both experiments withdrawn at6fe932f3; full treec9aaba90 equals tested6dd. [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362) remains draft with only two plugin manifests; source gate paths match accepted8e, nine regressions pass and alerts206/207/215 remain open.
 - Next legitimate distinct review-app identity or immutable required-workflow binding, safe spoof/denial/restoration fixture, fresh exact-source review and normal protected merge/main proof. No weakening, forged approval, token/account workaround or publication. Browser inventory empty; GitHub connector installation metadata available but no check writer. Both isolated reviewers completed; foreign work and prior hub259/260/history preserved; broader managed/publisher/customer gates ACTIVE.
+
+## 2026-10-11: current FrankX pickup aligned to Node 22
+
+The current design prompt now names local candidate a7b0c61 and its reviewed
+Node 22 pin, matching existing CI Node 22 and native Vercel 22.x. Five executable blobs
+remain unchanged from 08044a6; required local/runtime/browser gates are open and the
+candidate remains unpushed. Current [Foundry evidence](https://github.com/frankxai/frankx.ai-vercel-website/issues/339#issuecomment-6108620418)
+preserves the earlier documentation WARN and corrected STATIC_PASS.
+
+GenCreator and Arcanea remain the two released improvements. Arcanea's later
+accepted/serving 5328fbc9 has passing CI and changes only narrative scripts,
+their workflow/tests and planning. App/package/lock sources are unchanged from
+the released 46b77c58; no new live-browser or customer acceptance is claimed.
+Build RAM remains held and no owned heavy job is running. The active mission
+still needs one qualifying release; the $25 existing-credit cap remains.
