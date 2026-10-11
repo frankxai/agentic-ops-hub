@@ -1,6 +1,14 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
 
+## Arcanea adoption: hosted image candidate gates passed
+
+Workflow38114865985 completed SUCCESS on exact8b91ac129e: Install, Build, TypeScript, Lint (including new native generation suite), independent source review and CI Status PASS. Authenticated world/author jobs remain SKIPPED by their existing narrow lane gates; CodeQL is not earned while draft. Verified review22 source bindings/zero blocking findings and all64 native cases stand. Formal current receipt: https://github.com/frankxai/arcanea-ai-app/pull/574#issuecomment-6105891501.
+
+Fresh main is nowa131c1e9dfa2a2e6b8d93e1be4bd32c43794afc1 from merged router/orchestrator follow-up570. The nine files do not overlap image work. PR574 is MERGEABLE but BEHIND; integrate accepted main together with the next coherent acceptance change, then rerun exact-head source/receiving gates. No merge or provider activation was performed. Keep goal ACTIVE and reuse the disposable cloud fixture for actual authenticated Studio/Page and PostgreSQL recovery proof.
+
+
+
 ## Arcanea adoption: verified image review and stale fixture discovery
 
 Independent review of8b91ac129e is verified PASS, actual model gemini-3.1-pro-preview, zero critical/high/medium findings. All22 complete source hashes match Git blobs, receipt/manifest packet hashes agree and the final response hash is verified. Workflow38114865985/artifact11692878124. Formal receipt: https://github.com/frankxai/arcanea-ai-app/pull/574#issuecomment-6105891501. Fresh hosted types/lint pass; Build remains running and authenticated/CodeQL acceptance is unearned for this draft. Keep the four review limitations visible.
