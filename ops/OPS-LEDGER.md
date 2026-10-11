@@ -1,4 +1,7 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
+## 2026-10-11: deployed creator recovery verified; other design releases remain open
+
+GenCreator PR203/d015297 has bounded deployed 375px save/reload/review-import/recovery proof; owned browser closed, customer/device/managed acceptance unmeasured. Arcanea 1e1afdc has static PASS but [CI38121100835](https://github.com/frankxai/arcanea-ai-app/actions/runs/38121100835) measured persistent mobile heading overlap; original failure preserved and application correction required. FrankX 95fd798 is a local Foundry implementation with ten contract tests and strict language audit PASS, static WARN and required local build HOLD. It has not been pushed or released. Two other site releases remain open; the original mission deadline and all foreign work are preserved. See today's session and current owned prompt for exact next actions.
 
 ## 2026-10-11: Arcanea source passed review; design mission continues
 
