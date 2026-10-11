@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Interactive Marketplace & Cloud UX, Edge APIs, CLI Community Workflow & E2E Tests
+
+Delivered production-grade interactive client experiences, edge API routes, and CLI submission flows across `Starlight-Intelligence-System` (`e99871d0`):
+- **Interactive UI Surfaces (`site/src/app/`)**: Built `MarketplaceClient.tsx` featuring real-time client search, kind category tabs with count badges, pricing tier filter pills, one-click copy with feedback toast, and an inspectable permissions drawer. Built `CloudClient.tsx` with billing cadence toggles (20% annual discount), dynamic agent fleet capacity calculator (1-50 agents), and pluggable storage backend selector (Local SQLite Core, Cloudflare D1 Edge, PostgreSQL pgvector Enterprise, Graph Memory Engine).
+- **Edge & REST API Endpoints (`site/src/app/api/`)**: Built `/api/marketplace` GET endpoint with filtering and category discovery. Built `/api/cloud` edge-runtime endpoint (`runtime = "edge"`) implementing multi-provider intelligent model routing (creative, reasoning, coding, fast, knowledge) with automatic provider degradation fallback paths across Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, and Grok 2.
+- **CLI Community Submission & Validation Flow (`src/cli.ts`)**: Added `starlight pack validate <path>` for schema, permission descriptor (`<resource>:<verb>[:<scope>]`), and deterministic SHA-256 verification. Added `starlight marketplace submit <path>` generating structured PR catalog registration snippets.
+- **End-to-End Verification**: Created `test/marketplace-e2e.test.ts` (10/10 tests passing). Substrate symmetry suite passing 135/135 tests (`npm run test:substrate`). All 4 site contracts verified. Committed and pushed to `origin/agent/antigravity/npm-ecosystem-alignment` at `e99871d0`. Full details in [today's session](sessions/2026-10-10.md).
+
 ## 2026-10-10: Starlight Marketplace, Pack Hub, Cloud Managed Tiers & Web Storefront
 
 Implemented and verified the Starlight Marketplace & Ecosystem Hub, Pack Management runtime, and Managed Cloud subscription offerings across core engine (`src/marketplace/`), CLI (`starlight marketplace`, `starlight pack`), web storefront (`site/src/app/marketplace/page.tsx`, `site/src/app/cloud/page.tsx`), navigation (`site/src/lib/nav.ts`), and cinematic viewport mappings (`site/src/lib/cinematic.ts`).

@@ -2,10 +2,10 @@
 
 ## Starlight Marketplace, Pack Hub & Cloud Managed Offerings
 
-With the Starlight Marketplace (`src/marketplace/`), Pack Hub (`packs/registry.json`), Starlight Cloud Managed Subscription Architecture, and Web Storefront (`/marketplace`, `/cloud`) merged at commit `67029607`:
-- Expand community publishing: Wire an interactive CLI submit flow (`starlight marketplace submit <manifest-path>`) that runs automated SIP attestation and sandbox validation before emitting PR templates.
-- Connect live Vercel AI SDK route handlers on `site/` for the Pro Cloud frontier LLM proxy (`/api/cloud/route`), enabling developers to stream Claude 3.5 Sonnet, GPT-4o, and Gemini 1.5 Pro using pooled team keys.
-- Add live Cloudflare D1/Vectorize edge connector bindings for low-latency global memory vault sync.
+With the Starlight Marketplace interactive client (`MarketplaceClient.tsx`), Cloud planner (`CloudClient.tsx`), Edge API routes (`/api/marketplace`, `/api/cloud`), CLI validation (`starlight pack validate`, `starlight marketplace submit`), and 10 E2E tests merged at commit `e99871d0`:
+- Connect live Stripe checkout webhook and session routing for Pro Cloud ($29/mo) and Enterprise Mesh ($199/mo) subscription tiers on `site/`.
+- Wire live Cloudflare D1 and Vectorize remote storage adapter sync to mirror local SQLite vaults into edge storage upon user opt-in.
+- Establish GitHub Action bot for automatic PR triage of submitted community skill packs, running `starlight pack validate` and attaching SIP attestation status.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
