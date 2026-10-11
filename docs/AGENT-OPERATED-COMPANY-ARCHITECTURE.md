@@ -4,6 +4,8 @@ TL;DR: Build a reusable company runtime that turns market evidence into products
 
 Research date: 11 October 2026. Status: a proposed design, with current-source research and local estate inspection. No implementation, buyer acceptance or independent approval of this revision is claimed. This document expands the [record/workflow blueprint](OSS-BUSINESS-STACK-BLUEPRINT.md) after the founder rejected its breadth and intelligence as insufficient. Preserve that blueprint as one supporting layer and as a serious alternative to the larger investment.
 
+Implementation planning now has a [foundation choice matrix](COMPANY-FOUNDATION-CHOICES.md) and [team briefs](COMPANY-BUILD-TEAM-PROMPTS.md), including DAM/CMS/storage/desktop details. Fresh source inspection found the accepted private VIS R2 exception and newer remote VIS main; existing local/README metadata ownership must be reconciled with the shared approval plane before migration or hosted dual writes.
+
 ## The company outcome
 
 A founder should be able to choose a market problem, gather evidence, test a useful offer, build a product, distribute it, observe customer results and improve its economics without personally coordinating every step. The system must also handle interruption, conflicting evidence, failed releases and failed experiments. A billion-dollar ambition makes distribution, demand, retention and operating capacity consequential; installing tools supplies none of that evidence by itself.
