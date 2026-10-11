@@ -1,5 +1,59 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: reviewed account-bound generation merged and serving
+
+PR577 merged normally at08:43:49UTC to
+0dd501281f89f0612454b1200ba40f8fac5799f6. Receiving Git tree equals reviewed
+bf478968692a60fd041672d7e350557fc8346fad. Full manual38124444219 and normal
+ready CI38125175492 pass; real candidate CodeQL38125175453 passes. Independent
+Gemini3.1Pro static PASS binds40 full sources, packet agreement and final text.
+All nine authenticated generation rows pass with zero async failures: real
+isolated GoTrue/PostgreSQL, actual CSP, desktop/375px/reduced-motion Studio
+pending/reload/replay/download/CORS fallback, three cover save/reopen modes,
+real A/B/A provider settings and tenant/depleted-credit denial. Supplier fixture
+counts6 submissions/9 polls; zero paid inference and zero production writes.
+Six render companions and the visual ledger are verified. The lead account-key
+race reproducer and earlier failed/limited runs remain retained.
+
+Vercel production dpl_pn9b6gyZ8cNVjG4UD5YAcnU7pwLL is READY at that exact merge
+SHA. Canonical HTTP08:46:39UTC passes homepage200, protected Studio/settings
+login redirects and anonymous generation401. Exact imgen.x.ai image/connect
+allowance is published with no wildcard. These anonymous probes used no credentials
+and made zero retained writes. They do not certify signed-in production generation.
+Receiving-main CodeQL38125836112 and estate-guard38125836208 pass; main
+CI38125836118 remains running at this checkpoint and requires terminal inspection.
+
+Read-only production SQL08:46:43UTC still finds billing_accounts,
+billing_operations, billing_recovery_ready and reserve_billing_operation absent.
+No schema, identity, provider, payment, price or subscription activation occurred.
+Durable private media, enforceable quotas, export/cancellation recovery, provider
+cost attribution, commercial approval and real creator acceptance remain open.
+The private offer stress model uses declared assumptions, not actual invoices or
+achieved margin; existing prices remain unactivated.
+
+PR578 has advanced under its existing owner to a7041809f61e9441ca925ca0c8c6784b36cca006.
+Its previous exact donor3a22e0 was integrated into the reviewed577 release. Four
+new donor paths add authenticated provider-settings verification and workflow/docs;
+its own exact28-source independent review remains pending. Preserve that owner
+and rebase/compose only the residual changes against new main. A two-dot old-base
+diff includes generation reversals; it is not permission to replace accepted code.
+Held560/562/567, dirty505, forks and all unfinished programme fronts remain intact.
+No branch was deleted and no protection bypass was used.
+
+The complete estate/product/subscription/client/harness goal remains ACTIVE and
+unachieved. Historical4574-branch/652-PR manifests are preserved snapshots, not
+source approval. Next: finish receiving-main CI and donor residual gates, then one
+retained private world/chapter/continuity/media/reopen/export journey with measured
+cost and recovery. Web owns primary editing, local adapters explicitly selected
+files/keys, cloud bounded resumable jobs, CLI/SDK/MCP shared versioned operations;
+native clients require demonstrated device-specific value. No new platform follows.
+
+Fresh review-lite admission is BOUNDED:9929MB free/6144MB required, one workload,
+45-minute limit, no new parallel agents;27 task runtimes still exceed the budget.
+Disk has about87.85GiB free, above both hard floors. No session-owned worker,
+watcher or server persists. Both saves are the hub248 record and existing529/276
+product issues. Preserve all historical evidence and foreign sections.
+
 ## Arcanea adoption: account-bound generation repair awaiting fresh gates
 
 Candidate bf478968692a60fd041672d7e350557fc8346fad is pushed in draft577;
