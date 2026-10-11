@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Review receipt accepted; server still holds SIS merge
+
+[SIS364](https://github.com/frankxai/Starlight-Intelligence-System/pull/364) is ready at820bd564. The genuine exact-head Google report is attested in comment6111921846 and accepted by the trusted-main evaluator. All three visible required checks PASS. The original cancelled suite was rerun to SUCCESS; normal exact-head REST merge still returns405, requiring independent-review-policy. No bypass, rule change, fake status or source change. Distinct App writer is proposed; SIS credentials are unconfigured and browser owner setup is unavailable. Both requested Jules sessions are COMPLETED, with the132-path replacement retained. Public/managed gates remain open; goal ACTIVE. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md).
+
 ## 2026-10-11: Core recall snapshot repaired and verified; source authority holds merge
 
 [SIS364](https://github.com/frankxai/Starlight-Intelligence-System/pull/364) at 820bd564 copies admitted options and retains provider/sanitizer methods across callbacks/awaits. Ten baseline failures are reproduced; all 31 core cases now pass on Linux/Windows Node 22/24 and Node 18, with all six jobs 38159981998 SUCCESS. Downloaded archive hashes and synthetic-merge/source trees match; actual core runtime 10814 bytes/zero dependencies, fresh SDK/type/stdio consumers pass. Exact-head Google source PASS and terminal worker are verified. Required independent-review-policy still BLOCKS merge; immutable stages/public delivery and managed customer acceptance remain pending. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md). Goal ACTIVE.
