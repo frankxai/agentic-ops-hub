@@ -1,3 +1,9 @@
+## Arcanea adoption: receiving-main checks complete; full objective remains open
+
+Document recovery #585 is merged as a4285de66ce00cbbaa66d7f5b6910f9b627be49f, tree-identical to reviewed a3b1a75a. Canonical deployment dpl_BVi9xsxMexTeajVHq5EAvCqJPCPw is READY. Reviewed migration20261011131128 is applied; source-bound schema/function/grant checks, seven actual role denials and three anonymous HTTP401/no-store checks pass. Receiving-main CI38156811344 and CodeQL38156811343 are terminal SUCCESS. Customer login/save/reopen and private uploads remain unverified.
+
+Next: fix the oversized project editor footer in a correctly owned lane, preserve public marketing links, and verify actual desktop/mobile/reduced-motion/public renders alongside save recovery. Footer ownership is currently this root in gateway ops-f58e03ef6eff135b49a5.json; no overlapping code edit has occurred. The full creator, subscription/storage/API/credits, clients/harness, security and estate-landing objective remains active. Fresh Arcanea metadata47 open/33draft is not blanket source approval. US$1 private-store question remains pending; no financial provisioning, new local heavy worker or account creation occurred.
+
 ## Arcanea adoption: document recovery merged and database applied
 
 Full Arcanea objective remains active. Document PR #585 merged through normal branch protection on 2026-10-11 at 16:45:46 UTC as `a4285de66ce00cbbaa66d7f5b6910f9b627be49f`. Its Git tree exactly matches reviewed/tested candidate `a3b1a75aee2fc9aa48d9870ed8abd2e42ea079b1`; accepted reader #584/#587 work is preserved.
