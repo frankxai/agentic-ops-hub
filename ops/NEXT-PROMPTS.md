@@ -2,6 +2,18 @@
 
 ## Current npm ecosystem and managed activation prompt
 
+Continue full authorized goal. Creator6 merged69fca157, reviewed7d4128b, Jules4039933792079044115 PASS132 source paths/two reports. Full release38117483944 verification/audit/archive checks and both identical-release-byte consumers PASS:10 tarballs/11checksperOS. Proof records compiled/data/docs matches and only manifest dependency-key ordering differences across builds. All ten planned exact registry versions MISSING at release-integrity check. Publication WAITING required owner review; profile/trust403 and all ten legitimate publishers/direct-publish permissions remain unverified. No token/global rotation or reserved SIS stage changes. Seven-day artifact retention; reconcile exact registry versions/receipts before normal approval or recovery.
+
+Managed main d015297 has verified existing native CI38113731773:3 PostgreSQL tests passed/0skip, actual CreatorPack store creation/activation/history/retry/cross-workspace denial ran.12 exact Git blobs/raw log/hash evidence at gencreator-d015-native-db-proof.json. Native fixture covers fresh14table/12to14upgrade/rollback/replay/permissions/drift/account-link concurrency. Actual PG17.11 and resolved image digest recorded; target Supabase17.6.1.155 differs. Do not duplicate that completed native rehearsal or call it live Supabase/authenticated/customer proof. Production env list empty and fresh readiness503/d015297 at06:29; selected EU schema empty at last read. Next: cost-approved controlled target schema/API exposure, verified Supabase sessions plus explicit Starlight consent, two-account denial/recovery and backup restore. Legacy PR1161e6b4b7 requires public.purchases migration002 on its actual production target before merge; never apply it to shared EU by assumption.
+
+SIS35933a6a972 draft,19pass/3skip/nine DOM receipts; independent review absent. Fresh admission4 HOLD2274/6144MB,27/12runtimes before spawn, no stream. Preserve all original receipts; no lower reserve, foreign closures, fourth worktree, Jules lockfile bypass or v0 mislabeled as admitted provider. Accepted config policy8997345 still lists AGY/Grok/Claude/Gemini. Current14-file frozen packet available; only attempt a newly receipted exact review after real capacity recovery. Browser cause/image approval unresolved.
+
+Keep eligible Stripe Managed Payments/Lemon Squeezy fallback, Polar pack licenses and consented legacy buyers. Paid preview$0.01344/hour+usage undecided. No DB/Auth/env/customer/catalog changes. Finish durable raw-signature inbox/projection/outbox/grants, funded reservations/settlement, Team seats and actual generate/edit/reopen/export in a free owned product lane. Prices/caps hypotheses. Save existing hub217/GenCreator5/Creator4/SIS329. Full goal active; no local/reviewer worker, hosted publication approval pending.
+
+## Earlier prompts retained for provenance
+
+## Current npm ecosystem and managed activation prompt
+
 Continue full authorized goal. Creator6 merged69fca157, reviewed7d4128b, Jules4039933792079044115 PASS validated132 source paths/two reports. Full release38117483944 build/lint/tests/release-contract/audit/archive secret verification and both identical-release-byte consumers PASS. Ten downloaded tarballs/source/graph/digests verified;11 checks perOS. artifact-proof-creator-release-38117483944.json records compiled/data/docs byte matches and only dependency-key order changes in two manifests. Preserve original failed comparator; no cross-build byte-equality claim. Fresh release-integrity registry check all10MISSING. No registry publication.
 
 Hosted publication WAITING required npm-production owner review, main-only policy. Keep pending until native profile/2FA and all ten trusted-publisher identities/direct-publish permissions verified; profile/trust403 remains. No token/global rotation or reserved SIS stage changes. Artifacts expire in seven days; reconcile exact registry versions/receipts before approval or recovery. Keep accepted-main source/independent-review identity, no admin bypass.
@@ -10,7 +22,7 @@ SIS359 exact33a6a972 draft,19pass/3skip/nine DOM receipts. Current14-file frozen
 
 GenCreator peer main advanced tod015297; previous readiness503/ad55818 historical. EU isolated schema empty at last read; Stripe account reachable but Managed Payments eligibility unverified. Retain eligible Stripe Managed Payments/Lemon Squeezy fallback, Polar pack licensing and consented legacy buyers. Paid preview$0.01344/hour+usage remains undecided; no DB/Auth/env/customer/catalog changes. In free owned lane finish durable raw-signature inbox/projection/outbox/grants, tenant-denial/restore, funded reservations and actual generate/edit/reopen/export/settlement. Prices/caps/seats hypotheses or unwired. Save existing hub217/Creator4/SIS329/GenCreator5. Goal active; no local workers, hosted approval pending.
 
-## Earlier prompts retained for provenance
+
 
 ## Current npm ecosystem and managed activation prompt
 
