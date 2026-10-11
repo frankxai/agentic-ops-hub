@@ -1,14 +1,17 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight Multi-Harness: Skill Economy, Builder Guide, Council Demo, & End-to-End Test Suite 100% Green; PR #345 Ready to Merge
+## Starlight Multi-Harness: Skill Economy Studio UI, 10-Harness Exporter, API & Complete E2E Verified (e2c9ccf4); PR #345 Ready to Merge
 
-Read `ops/sessions/2026-10-11.md` and Starlight-Intelligence-System PR #345. Branch `agent/antigravity/npm-ecosystem-alignment` at `839e1a0a` has completed the full Skill Economy & Marketplace ecosystem end-to-end:
+Read `ops/sessions/2026-10-11.md` and Starlight-Intelligence-System PR #345. Branch `agent/antigravity/npm-ecosystem-alignment` at `e2c9ccf4` has completed the full Skill Economy & Marketplace ecosystem end-to-end:
 1. Canonical macro standard at `SKILLS.md` covering 3-level progressive disclosure, 10-harness runtime matrix, 5-stage maturation continuum, empirical valuation math, and multi-marketplace syndication.
 2. 6-mind Multi-Agent Skill Council (`starlight-skill-council-lead`, `starlight-skill-architect`, `starlight-skill-auditor`, `starlight-skill-valuation-specialist`, `starlight-harness-tuner`, `starlight-marketplace-syndicator`) and scaled agent fleet to 150 named agents with 100% symmetry across all registries and test suites.
 3. Production runtime in `src/skills/` with CLI subcommands (`starlight skills scan`, `value`, `matrix`, `harness`, `syndicate`).
 4. Developer & Builder Handbook at `docs/skills/BUILDER_GUIDE.md` and runnable 6-mind orchestration demo at `examples/skills/skill-council-orchestration-demo.ts`.
-5. 100% verified test passes across all 5 tiers: `test/skill-e2e.test.ts` (14/14 pass), `test/skill-system.test.ts` & `test/skill-valuation-allocator.test.ts` (24/24 pass), `npm run test:foundry` (53/53 pass), `npm run test:operational` (100% pass), `npm run test:substrate` (389/389 pass), `npm run test:federation` (70/70 pass), `npm run test:v01-evals` (34/34 pass), and `npm run agents:harness-check` (150 agents / 88 skills / v8.3.0).
-Next: Complete review and merge PR #345 into `main`, comment on tracking issue #49 with final verification receipts, and verify external consumer adoption of `@starlight-intelligence/system@8.3.0`.
+5. Interactive Skill Economy Studio web experience (`/skills`) with slider valuation calculator, 10-harness native code generator, context headroom allocator, and multi-marketplace syndication preview (`site/src/app/skills/SkillsClient.tsx` & `page.tsx`).
+6. Production Next.js App Router API route (`site/src/app/api/skills/route.ts`) supporting GET and POST (`value`, `harness`, `syndicate`, `matrix`) via native Web Standards.
+7. 100% verified test passes: `test/site-skills-api.test.ts` (10/10 pass), `test/skill-e2e.test.ts` (14/14 pass), all site contracts verified (`check-layout-contract`, `check-metrics-contract`, `check-public-install-contract`, `check-deploy-contract`), `npm run build` (`tsc`: 0 errors), `npm run test:operational` (100% pass), and all 135 git pre-commit symmetry hooks passed.
+Next: Complete review and merge PR #345 into `main`, comment on tracking issue #351 with final verification receipts, and verify external consumer adoption of `@starlight-intelligence/system@8.3.0`.
+
 
 ## Starlight & GenCreator NPM: all 10 packages live; automate CI release & adoption
 
