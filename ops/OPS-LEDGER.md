@@ -1,5 +1,18 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: document foundation and authenticated recovery candidate
+
+Draft PR585 is now78a7017b53ec8ebc4568c891f8a45d5fbf8cfaae. Previous94f completed manual CI38145112813 and independent Gemini3.1 Pro PASS; all27 reviewed source hashes matched Git. Those receipts do not approve this candidate. Production catalog inspection found chat_projects and all three document tables absent. The new unreleased migration bootstraps their canonical shapes without unrelated graph migrations or shared helper replacement, and requires an actual owned project for creation and atomic saves.
+
+A real installed-Supabase missing-session regression returned500 in both document routes, then401 after correction with zero network requests. The foreign-project creation regression returned201 before correction, then404. All23 native recovery cases, six API contracts, three actual document private-configuration ownership cases, changed-source lint/syntax/format/whitespace and enabled owner/gitleaks checks pass. Native Back/keyboard save and explicit-reopen callback invalidation are implemented. The new isolated GoTrue/Postgres/PostgREST runner applies the actual migration and admits only the trusted owned manual branch with no hosted credentials. Three-mode authenticated browser recovery/account-switch acceptance is authored, not yet passed.
+
+Manual38148018167 is confirmed live on this exact head; Install succeeds, Lint/TypeScript/independent review run. Normal PR38148018526 also runs. Observe these handles without duplicate dispatch or PR-body churn. Expanded fresh/original-first SQL, full checks, exact-source review and authenticated rendering remain pending. No document production migration, write or merge. Rich-editor image upload ownership and actual creator usefulness remain open.
+
+Private PR580 remains draft at a9464702 with terminal isolated authenticated/SDK acceptance PASS. Its production schema is verified empty and new writes disabled. The existingUS$1 private-store/two-account verification cost question has no answer; no store, token replacement, capacity or financial provision. Full estate/creator/continuity/media/video/subscription/storage/API/credits/local-cloud/client objective ACTIVE. Last recorded accepted production source is e07d568 from reader581/narrative582; this checkpoint does not recheck deployment health.
+
+Root guides and active leases reverified; hub source hash e9840259101eebfc38d274561e1c7bc344f64071a3ebfb54b68090f2ab9c449e, product36b534b6a33f240aa752e4360ab08468702cbaa366c85c3ca9db0e0b21fd2ca5. Routing passes explicit owned paths. Local build preflight HOLD7755/8192MB,27 runtimes; no new local build/browser/container/agent/server/watcher started. Product issues276/529 exact owned comments and private PLAN/checkpoint refreshed. Previous goal turn was status-only/no progress; this turn changed authoritative source and admitted fresh actual verification. Preserve foreign records and failed attempts.
+
+
 ## Arcanea adoption: actual document SQL and full CI passed; exact review admitted
 
 Document candidate5398d9861495079c8d10d9e8ed5d104c3bb69786 completed CI38144386309 with Install/Lint/TypeScript/Build/CI Status SUCCESS. Actual PostgreSQL17 job114484729648 logs prove owner/parent/direct-write denial, atomic forced-history rollback, stable operation replay, retained duplicate old history, atomic creation and a real two-connection CAS race: one commit, one conflict. Nineteen recovery cases and six API contracts pass. Retained log SHA256f1d8025d7413dc2415c07d23259c60b6c6255622c5e59dee93b42ab75944d91f; full workspace TypeScript passes, superseding the earlier selected-import limitation.
