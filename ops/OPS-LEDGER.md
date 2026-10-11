@@ -1,5 +1,17 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+
+## Arcanea adoption: image transport repair pushed, acceptance remains open
+
+Active goal/thread01a123df-58c6-72f3-b86c-65083426cf65 continues under Frank's full production/protected-merge authority. PR574 is draft at8b91ac129e9caaf327a0a01f8e5069b49b9fc11c. Two transport reproducers failed against9160f899 before correction. All64 native billing/generation tests, six changed TypeScript files' ESLint, nine files' formatting and staged secret checks pass. Native coverage is now part of required CI. Gemini review workflow38114865985 is running on exactly8b91ac129e; no verdict or hosted acceptance is claimed yet.
+
+One image provider is selected before paid work. Grok deferred requests use grok-imagine-image-2.0/aspect_ratio, checkpoint their accepted ID in the private actor-bound running operation and recover through GET only. OpenRouter upstream fallback is disabled; unknown synchronous batches remain pending. Direct Gemini uses the accepted Nano Banana 2 family with private key headers. Lost/expired/checkpoint/body/oversized output cannot refund by guess or trigger a provider fallback. Actual handler tests verify authenticated admission, no work on denial, actor-bound image recovery and delivery-limit pending behavior. Studio/Page client changes remain included; prior hosted Build/types/lint PASS applies only to9160f899.
+
+Public chat already refuses image generation and directs creators to Imagine. The separate Luminor executor's direct image tool lacks durable admission and now refuses network work; a governed adapter remains open. OpenRouter/Gemini synchronous lost output needs reconciliation; output above the existing delivery cap needs governed media storage. No paid provider generation, production DDL/account/configuration/billing write or authenticated rendering occurred. Production schema/key and commercial release gaps remain. Prior568 production/receiving-main evidence is unchanged; requery current main for the next landing.
+
+PP interactive preflight reports3782MB free/4096MB floor,27 runtimes,drain-and-handoff. No new local browser/build/agent was started. Bounded edit/test/lint work finished and no owned watcher/server remains. Storage92.1GiB free. Preserve other owners' branches, dirty505 and all broad subscription/client/harness/GTM work. Evidence: private generation-image-transport-8b91ac129e.json. Hub draft248 and product issues529/276 are the pickup records.
+
+
 ## 2026-10-11: Arcanea generation safety deployed; client follow-up in draft
 
 [PR568](https://github.com/frankxai/arcanea-ai-app/pull/568) reviewedfd16a541 mergedfdd08677 with identical trees and all candidate gates. Exact provider reviewPASS/23 bound sources; production dpl_HLibKuJjWMFqaFAWdWftUENo1NUF READY, four live admission/privacy checks pass. Receiving CodeQL and full mainCI38113209559 pass. [Draft574](https://github.com/frankxai/arcanea-ai-app/pull/574),9160f899, migrates actual legacy image clients and removes fabricated Studio output;47 native cases pass, fresh review/hosted/auth acceptance pending. Image fallback/model repair, live billing schema/server keys, security findings and creator/commercial acceptance remain open. Full goal active. See [session](sessions/2026-10-11.md) and current Arcanea prompt; previous snapshots remain.
