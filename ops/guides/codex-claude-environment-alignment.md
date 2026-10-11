@@ -22,6 +22,14 @@ or put a v0 API key into the MCP configuration. Revert registration through
 `claude mcp remove v0 -s user` if needed; preserve newer settings rather than
 restoring an entire older config file.
 
+For v0 usage pagination, retain the initial response's exact `start`, `end` and
+`limit` when following its returned cursor. A cursor-only request returned409 in
+this session; repeating the matching range and page size recovered the next page
+and completed reconciliation. Deduplicate event IDs and preserve the largest
+observed token-rate estimate per event across snapshots. Stop new generation if
+pagination, model pricing or the approved spending allowance cannot be reconciled.
+The token-rate estimate and native charged credit units remain separate measures.
+
 ## Runtime and Cloud setup
 
 Use a repository's declared runtime. FrankX CI and its Vercel project use Node 22;
