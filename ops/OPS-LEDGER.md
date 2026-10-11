@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Execution packet backed up remotely; activation and review stay open
+
+Hub feature branch agent/codex/full-execution-contract-20261011 is published. Accepted main 226f096 was merged into it at 170c043; all current main records remain, including both append-conflict entries. No PR, receiving-main merge or Actions run was started. Plan/prompt/capability bytes remain at the published revision. Product commit 88a640e stays local and clean; independent review and protected release are pending. [GenCreator issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6109545559) and [config issue30](https://github.com/frankxai/starlight-agent-config/issues/30#issuecomment-6109546176) now have the actual results/dependencies. Only the existing own objective signal was refreshed; every objective and foreign byte was preserved. The full programme remains open. No session-owned worker/server/watcher was started or left running.
+
+
 ## 2026-10-11: Full GenCreator execution contract and local configuration fix
 
 Frank requested the complete prompt, plan, specifications, goals and metrics, followed by execution. The existing [plan](plans/gencreator-starlight-production-2026-10-11.md), [prompt](plans/gencreator-starlight-execution-prompt-2026-10-11.md) and [capabilities](plans/gencreator-capabilities-2026-10-11.md) now retain G0-G6 and operations O1-O3 with concrete units, ownership, real acceptance and external dependencies. Prior plan versions remain in Git; historical records are preserved.
