@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+
+## 2026-10-11: Arcanea transcript recovery verified, wider release held
+
+- Draft PR567/source086f2fe1943e0e91b97959cec872a75d89021808 prevents a metadata-only cloud refresh from erasing saved local messages/pins, and safely skips invalid cloud messages. Two failures reproduced before repair; twenty local tests and enabled secret hooks pass.
+- Exact CI38106474623 build/typecheck/lint, Entry38106474602 and companion38106474622 pass. Artifact11689642571 binds26 hashes/16 inspected captures/four modes/eight synthetic requests/closed workers; sidecars and both ledgers recorded. Preview dpl_7Wt9Q2E8B9NA1JhxYsosMemWpZrb READY/root-chat SSR200. Production unchanged.
+- Recovery-only static review: Cohere North Mini Code PASS, three changed code/test files plus full contexts, reported cost0. Wider failed/truncated/unsupported reviews are retained; full18-file release and frozen reader/chat reviews remain open. No paid spend or approval inferred; old ca6489fe question does not cover new entry source.
+- Receiving-main security, owner447 tenant/cloud recovery, provider/credentials/charges/CSP, broader craft and runtime-pin reconciliation remain open. Full Queen/SIS/product/books/community/developer/IP/revenue goal stays active. Pickup: sessions/2026-10-11.md, hub242 and existing programme276; no owned local worker remains.
+
 ## 2026-10-11: Arcanea private entry and account history verified candidate
 
 - [PR567](https://github.com/frankxai/arcanea-ai-app/pull/567), source `ca6489fe8b524deb6f9a168095c2b7ef58d84892`, draft: private home-to-chat prefill, IME-safe Enter, explicit draft recovery, visible token controls, actual Stop and actor-bound session/project caches. Unattributed legacy data is preserved; history API447/home505 remain untouched.
