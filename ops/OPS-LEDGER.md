@@ -2,7 +2,7 @@
 
 ## 2026-10-11: Arcanea generation safety deployed; client follow-up in draft
 
-[PR568](https://github.com/frankxai/arcanea-ai-app/pull/568) reviewedfd16a541 mergedfdd08677 with identical trees and all candidate gates. Exact provider reviewPASS/23 bound sources; production dpl_HLibKuJjWMFqaFAWdWftUENo1NUF READY, four live admission/privacy checks pass. Receiving CodeQL passes; main38113209559 Build still running. [Draft574](https://github.com/frankxai/arcanea-ai-app/pull/574),9160f899, migrates actual legacy image clients and removes fabricated Studio output;47 native cases pass, fresh review/hosted/auth acceptance pending. Image fallback/model repair, live billing schema/server keys, security findings and creator/commercial acceptance remain open. Full goal active. See [session](sessions/2026-10-11.md) and current Arcanea prompt; previous snapshots remain.
+[PR568](https://github.com/frankxai/arcanea-ai-app/pull/568) reviewedfd16a541 mergedfdd08677 with identical trees and all candidate gates. Exact provider reviewPASS/23 bound sources; production dpl_HLibKuJjWMFqaFAWdWftUENo1NUF READY, four live admission/privacy checks pass. Receiving CodeQL and full mainCI38113209559 pass. [Draft574](https://github.com/frankxai/arcanea-ai-app/pull/574),9160f899, migrates actual legacy image clients and removes fabricated Studio output;47 native cases pass, fresh review/hosted/auth acceptance pending. Image fallback/model repair, live billing schema/server keys, security findings and creator/commercial acceptance remain open. Full goal active. See [session](sessions/2026-10-11.md) and current Arcanea prompt; previous snapshots remain.
 
 
 ## 2026-10-11: Arcanea execution active; generation repair in fresh review
