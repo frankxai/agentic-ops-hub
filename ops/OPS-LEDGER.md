@@ -1448,3 +1448,11 @@ inferred. See [today's receipts](sessions/2026-10-11.md) and [owner/edition issu
 The [full lead brief](plans/2026-10-11-arcanea-community-lead.md) remains accepted;
 the next prompt names actual owners and remaining verification. Other fronts,
 source failures and private evidence are preserved. The founder goal stays active.
+
+The selected private Dragonborne format set now also includes a142-page PDF,
+SHA2563fbbc451844c0c652d6657953e1883f5dbf085274695a1606d742d0fd78e041f.
+One freshly admitted cached offline browser rendered all seven chapters; a
+separate actual-PDF check verified normalized source word order and6-by9-inch
+page dimensions. The earlier cleanup failure is retained; the fresh file check
+passed without another browser. Visual/print design, cover/bleed, EPUBCheck and
+all human release gates remain open. Private files were not published.
