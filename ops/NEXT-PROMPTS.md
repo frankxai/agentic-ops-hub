@@ -1,5 +1,10 @@
 # ⏭️ Next Prompts — per active front / terminal
 
+## Starlight Multi-Harness: Foundry healed, benchmarks complete; open PR review & issue #49 close
+
+Read `ops/sessions/2026-10-11.md` and Starlight-Intelligence-System PR #345. Branch `agent/antigravity/npm-ecosystem-alignment` at `3e984eb7` has healed all 53 foundry conformance tests, passed 135 pre-commit checks, verified 100% recall@1/3/5 in retrieval, validated 300-atom concurrent JSONL writes, and passed 16/16 FastAPI SSE spec-trace pytest cases.
+Next: Review and merge PR #345 into `main`, update tracking issue #49 with final verification receipts, and verify external consumer installation of `@starlight-intelligence/system@8.3.0`.
+
 ## Starlight & GenCreator NPM: all 10 packages live; automate CI release & adoption
 
 Read ops/sessions/2026-10-10.md, Starlight-Intelligence-System docs/architecture/NPM_ECOSYSTEM_STRATEGY.md, and GenCreator-OS docs/architecture/GENCREATOR_ECOSYSTEM_MASTER_PLAN.md. Both organizations and full package suites are LIVE on NPM:
