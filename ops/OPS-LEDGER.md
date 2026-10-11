@@ -2,7 +2,7 @@
 
 ## 2026-10-11: Core recall snapshot repaired and verified; source authority holds merge
 
-[SIS364](https://github.com/frankxai/Starlight-Intelligence-System/pull/364) at820bd564 copies admitted options and retains provider/sanitizer methods across callbacks/awaits. Ten baseline failures are reproduced; all31 core cases now pass on Linux/Windows Node22/24 and Node18, with all six jobs38159981998 SUCCESS. Downloaded archive hashes and synthetic-merge/source trees match; actual core runtime10814 bytes/zero dependencies, fresh SDK/type/stdio consumers pass. Exact-head Google source PASS and terminal worker are verified. Required independent-review-policy still BLOCKS merge; immutable stages/public delivery and managed customer acceptance remain pending. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md). Goal ACTIVE.
+[SIS364](https://github.com/frankxai/Starlight-Intelligence-System/pull/364) at 820bd564 copies admitted options and retains provider/sanitizer methods across callbacks/awaits. Ten baseline failures are reproduced; all 31 core cases now pass on Linux/Windows Node 22/24 and Node 18, with all six jobs 38159981998 SUCCESS. Downloaded archive hashes and synthetic-merge/source trees match; actual core runtime 10814 bytes/zero dependencies, fresh SDK/type/stdio consumers pass. Exact-head Google source PASS and terminal worker are verified. Required independent-review-policy still BLOCKS merge; immutable stages/public delivery and managed customer acceptance remain pending. [SIS329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329) / [session](sessions/2026-10-11.md). Goal ACTIVE.
 
 ## 2026-10-11: Actual memory archive installation verified on main
 
