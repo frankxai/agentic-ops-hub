@@ -1513,3 +1513,9 @@ separate actual-PDF check verified normalized source word order and6-by9-inch
 page dimensions. The earlier cleanup failure is retained; the fresh file check
 passed without another browser. Visual/print design, cover/bleed, EPUBCheck and
 all human release gates remain open. Private files were not published.
+
+## 2026-10-11: design checkpoint after combined-source failure
+
+GenCreator PR #203 is released with bounded live browser-copy recovery verified. Arcanea ready PR #579 preserves accepted main and five owned blobs, but combined-source CI 38123462180 failed mobile header clearance and a separate Chat provider fixture. Its original failure capture was inspected; the hosted keyboard timeline did not reproduce it or prove the cause. Preserve account-owner PR #578. No Arcanea promotion occurred.
+
+FrankX candidate 08044a6 has independently reviewed source and final corrections. Required local type/lint/build and actual browser proof remain held; it is unpushed and unreleased. The native design mission remains active to 15:26:56 UTC, with two additional qualifying releases open. The allowance is $25 existing credits; observed native team usage is 0.0103 plan-credit units, not an asserted dollar cost. Storage remains above the hard floors, and other sessions are preserved. See the current [session checkpoint](sessions/2026-10-11.md) and owning GenCreator #5, Arcanea #276, FrankX #339 and Design #48. Hub conflict recovery preserved both texts and foreign prompts.
