@@ -1,5 +1,18 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## Arcanea adoption: full isolated document acceptance and final navigation candidate
+
+Full Arcanea objective ACTIVE. Draft document PR585 is219307c9a182ebf944d15280c2277217e8f56e85; manual38151783132 is in_progress. Observe this exact handle without duplicate dispatch.
+
+Previous9fcdc305 manual38150886810 is terminal SUCCESS: Install/Lint/TypeScript/Build/CI Status and independent Gemini3.1Pro PASS with35 verified source hashes. All three actual compiled desktop/mobile/reduced-motion modes pass seven checks each,9 real password logins,0 page errors and0 supplier posts. Actual cloud save/reopen, lost-ack replay before newer edits, revision conflicts/export, unreadable recovery, failed storage/native Back, keyboard/touch/overflow, saved Back/Forward and actual A/B/A switching with a connected old form and held response pass.14 service source hashes and6 inspected PNG companions match source; private config removed, cleanup failures0. All prior rejected attempts remain preserved. These are isolated Auth/Postgres checks, not production or paid creator usefulness.
+
+Current219307c9 adds a five-line clean-Forward handler correction after an actual-source Node VM reproduced a retained-guard defect; three controlled handler cases pass. The previous real browser sequence passed with the old handler, so no browser RED for that specific retained-guard case is claimed.23 native recovery and6 API contracts pass again; changed-page ESLint, syntax, format, ownership and gitleaks pass. Fresh exact source review and hosted browser/full gates for219 remain pending.
+
+Production catalog rechecked: chat_projects and all three document tables are absent. Reviewed target migration remains unapplied; no product/private merge, customer write, store/token/capacity/financial provision. Private PR580 remains disabled pending the existing US$1 private store/live-test answer. Ready PR562/560 are BEHIND and owner-held for exact review and actual provider/customer acceptance; green structure is insufficient.
+
+Image upload ownership and private rendering/export remain open: DocEditor targets nonexistent /api/upload/image; existing /api/upload returns public creations URLs. The private editor also retains the global marketing footer. Full creator continuity/media/video, subscription/storage/API/credits, client/local-cloud harness roles, security and estate landing remain open. Local PP HOLD6096/8192MB and27 runtimes is honored; no new local heavy worker, server, watcher or agent. HubPR248 and issues276/529 retain pickup.
+
+
 ## Arcanea adoption: actual mobile recovery pass and expanded navigation acceptance
 
 Full Arcanea objective remains active. Draft document PR585 is 9fcdc305e4b190523692bec11fd27ae790a101e2; trusted manual run38150886810 is in_progress.
