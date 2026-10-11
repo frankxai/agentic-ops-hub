@@ -1,5 +1,15 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Higgsfield reader test is green; production and signoff are not
+
+FrankX production is still `34296a060e1fc92f2c211a159068eb08a6058965` (PR 959, deployment 6990789453). PR [963](https://github.com/frankxai/frankx.ai-vercel-website/pull/963) is open at `cce19cb80e255190e29f4f3c699cb45c8d0410ae`. Required checks on that SHA passed, including the CI reader journey. `mergeStateStatus` is UNSTABLE because a duplicate job named `review-gate` was cancelled. The required status context `Review Gate` succeeded. Antigravity has not signed `cce19cb`. Swarm preflight was HOLD at 4064 MB free against 10240 MB required, so no AGY process was started. Checkout stays closed. The affiliate hop stays `https://higgsfield.ai?fpr=frank-255866`. Income PRs 16-19 and frankx PR 901 stay unmerged. [Issue 962](https://github.com/frankxai/frankx.ai-vercel-website/issues/962) and [session](sessions/2026-10-11.md). The Q4 launch goal stays active.
+
+## 2026-10-11: Dragonborne v5 cold read complete; private v6 and reader revision pending acceptance
+
+All seven private v5 chapters are cold-read; private v6/620729b9 has 32 source-bound proposals and original-source patch applicability. Complete v5 plus all v6 changes are inspected, with no fresh whole-v6 or independent/human approval claim. V6 HTML/EPUB preserve 38,770 ordered word tokens and navigation. Exact v6 EPUB now passes actual EPUBCheck 5.4.0 with warnings fatal, zero fatal/errors/warnings, after fresh 7532 MB RAM recovery admitted the bounded checker. The earlier 1190 MB denial is retained. Earlier versions and first-build corrections remain evidence. Source and locked canon are unchanged; publication, device, print, compiler, rights and delivery gates stay open.
+
+Reader owner PR581 is normally merged as e07d5686 after final 39073b07 CI passed; canonical production is READY. Seven deployment-bound initial HTML observations pass article-text/link/noindex scope. Hosted checks permit React inline reveal while blocking app bundles; complete JavaScript-disabled reading remains open. Preserve held560 and earlier production5328 failure. Runner582 receiving checks pass; the proposed capped24-call Aion comparison remains unrun with pending funding/credential. See [release280](https://github.com/frankxai/arcanea-ai-app/issues/280), [programme276](https://github.com/frankxai/arcanea-ai-app/issues/276) and [session](sessions/2026-10-11.md). The founder goal remains active.
+
 ## 2026-10-11: Narrative screening runner accepted; actual model comparison awaits funding
 
 Arcanea [582](https://github.com/frankxai/arcanea-ai-app/pull/582) merged normally as 5328fbc92e2c621946af5b941cf4b01d96bc53b1; its complete accepted tree matches reviewed 57f7f10b. The sequential runner binds plan/credential/approval scope, checks a non-resetting provider cap, reserves before inference, preserves uncertain attempts and verifies returned payer/model/cost. Twenty-two synthetic checks pass locally and on Linux/Windows, plus latest required candidate application checks. Receiving offline and estate checks pass; general receiving CI and CodeQL were still running in the saved observation. Raw WARN reviews and HTTP429 remain preserved and reconciled separately; no independent PASS or live billing proof is claimed.
@@ -2267,6 +2277,29 @@ FrankX 08044a6 remains source-reviewed locally and unpushed under a fresh build 
 Arcanea [PR #579](https://github.com/frankxai/arcanea-ai-app/pull/579) is merged; accepted/serving46b77c58 and receiving-main CI 38131259624 pass. Complementary live anonymous synthetic checks verify mobile validation/navigation, actual working-edits download, Apply and reload recovery; earlier incomplete commands remain retained. Full source/doc correction and application-equivalent preview review are recorded with their scopes. Customer/account/provider, physical-device and field-performance acceptance remain separate.
 
 GenCreator is released. FrankX08044a6 remains source-reviewed locally, unpushed under build RAM HOLD, with required Node 20/pnpm 10.28 and local/runtime gates open. No owned heavy process is running. The active mission still needs one qualifying release by15:26:56 UTC. Three focused v0 source contexts are verified; imported workspace files and saved skills are unchanged. Forty complete team-wide events through 11:01 report 0.0175 charged credit units; the $15.7546 public token-rate estimate before discounts is not actual spend or balance. The cap is $25 existing credits, no purchases. See the [current session](sessions/2026-10-11.md) and existing product/programme issues; preserve accepted records, foreign prompts, active owners and prepared identity work.
+
+
+### 2026-10-11 SIS protected merge refusal and rejected native-job gate
+
+- Actual HTTP405 twice at6dd836e8 despite green API-created review checks. Exact independent two-manifest PASS preserved; no normal source merge occurred.
+- Exact Google04b81254 review BLOCK covers all five changed blobs: malicious PR workflow completion can overwrite trusted API-patched rejection. [Negative receipt6108701422](https://github.com/frankxai/Starlight-Intelligence-System/pull/362#issuecomment-6108701422). Existing15-test/plugin21-test/six-job CI successes did not establish protection against this Actions behavior.
+- Lead rejected the unaccepted850b3f86 status proposal's missing-first-status gap. Both experiments withdrawn at6fe932f3; full treec9aaba90 equals tested6dd. [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362) remains draft with only two plugin manifests; source gate paths match accepted8e, nine regressions pass and alerts206/207/215 remain open.
+- Next legitimate distinct review-app identity or immutable required-workflow binding, safe spoof/denial/restoration fixture, fresh exact-source review and normal protected merge/main proof. No weakening, forged approval, token/account workaround or publication. Browser inventory empty; GitHub connector installation metadata available but no check writer. Both isolated reviewers completed; foreign work and prior hub259/260/history preserved; broader managed/publisher/customer gates ACTIVE.
+
+## 2026-10-11: current FrankX pickup aligned to Node 22
+
+The current design prompt now names local candidate a7b0c61 and its reviewed
+Node 22 pin, matching existing CI Node 22 and native Vercel 22.x. Five executable blobs
+remain unchanged from 08044a6; required local/runtime/browser gates are open and the
+candidate remains unpushed. Current [Foundry evidence](https://github.com/frankxai/frankx.ai-vercel-website/issues/339#issuecomment-6108620418)
+preserves the earlier documentation WARN and corrected STATIC_PASS.
+
+GenCreator and Arcanea remain the two released improvements. Arcanea's later
+accepted/serving 5328fbc9 has passing CI and changes only narrative scripts,
+their workflow/tests and planning. App/package/lock sources are unchanged from
+the released 46b77c58; no new live-browser or customer acceptance is claimed.
+Build RAM remains held and no owned heavy job is running. The active mission
+still needs one qualifying release; the $25 existing-credit cap remains.
 
 ## 2026-10-11: Public reader released; creator feature remains held
 
