@@ -1461,3 +1461,29 @@ separate actual-PDF check verified normalized source word order and6-by9-inch
 page dimensions. The earlier cleanup failure is retained; the fresh file check
 passed without another browser. Visual/print design, cover/bleed, EPUBCheck and
 all human release gates remain open. Private files were not published.
+
+
+## Arcanea whole-book revision and evaluation inputs — 11 October 2026
+
+The lead completed the original seven-chapter Dragonborne read and verified the
+locally read text against frozen a131c1e9 Git objects. Fifteen literal-citation
+findings now distinguish continuity contradictions from developmental questions.
+Separate private revision v3 contains an editable complete manuscript with the
+proposed repairs and trust scene. Combined SHA256
+bfe68fddc7568bf9789b74727c82cfbcec67d4a2cbe92c750cf67919f46fac0c.
+Original source/canon/exports remain unchanged; revised-book cold read, independent
+review, new name/lore and human release acceptance are still pending.
+
+Twenty source-bound narrative tasks are prepared, with a separate unapproved
+draft reference and12/4/4 development/calibration/holdout designations. No candidate
+comparison or human gold calibration has run; holdout isolation is not enforced.
+The independent public-original diagnostic returned raw WARN at reported US$0.
+Only five of ten finding quotes are unique literal matches at their declared
+lines. Its unsupported P0 extra-Gate allegations and missed direct contradictions
+remain a factual failure case. This is no narrative ranking or approved judge.
+
+Provider PR578 is now draft5b33f521. Earlier3a22 fixture CI cannot approve that
+head or live auth/settings/provider use. Main stayed0661416b with failed receiving
+CI, and PR560's held reader repair remains unapplied. EPUBCheck/storage admission,
+manuscript/canon/rights, creator pilot, model funding and managed-supply gates stay
+open. See [current evidence](sessions/2026-10-11.md) and [pickup](NEXT-PROMPTS.md).
