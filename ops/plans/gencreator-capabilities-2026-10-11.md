@@ -1,89 +1,30 @@
-# GenCreator capabilities and release status
+# Capabilities and workflows
 
-Observation: 11 October 2026. The portable CLI release is verified in production.
-Managed accounts, native apps and the wider adoption programme remain unfinished.
+Observed 11 October 2026. Public production: d015297/PR203. Managed readiness503. See [execution contract](gencreator-starlight-production-2026-10-11.md) and [prompt](gencreator-starlight-execution-prompt-2026-10-11.md).
 
-## Who the first workflow serves
+Authors, educators, speakers and founders need to reuse sources while preserving their voice, argument and authorship. Community members need useful practice/support; developers need stable scope and recovery.
 
-An author, educator, speaker or founder brings an essay, interview or other source
-they have permission to use. They want the argument and voice to survive when
-they turn it into a newsletter, social draft or presentation. They need editable
-work with its source and decisions available for later review.
-
-| Capability | Workflow and benefit | Evidence and limits |
+| Capability | Workflow and value | Evidence and remaining proof |
 | --- | --- | --- |
-| Creator Studio | Work from permitted source, inspect and edit drafts, and export a local project for continued work and recovery. | Public production verified, with 22 HTTP/protocol smoke checks passing. Real creator acceptance of the full managed journey remains open. |
-| Public MCP transforms | An assistant supplies source/project data to compile, prepare revision, preview edits and apply a selection. The host writes the content; GenCreator performs stateless transformations. | Accepted engine through PR200; deployed discovery, protocol, compile and peer-feedback checks pass. These calls establish neither managed inference nor authenticated human approval. |
-| Plugin and revision CLI 0.5.3 | Retain a source-bound request, inspect host-written proposals, selectively apply edits and verify a new checkpoint. Original files and unrelated drafts survive. | [PR201](https://github.com/frankxai/gencreator.ai/pull/201) merged as `47a798a`. Actual downloaded Windows consumer passes 13 steps and three live calls; all 17 archive files and 41,460 bytes match source. Candidate and receiving-main lint/typecheck, unit, build, browser E2E and CI Status passed. General/security independent source reviews passed at `a7cc25f`; 116 focused local tests passed. Supported-host installation and customer judgment remain separate acceptance gates. |
-| Managed Companion and account link | Verified Supabase sessions and deliberately proven Starlight links support tenant isolation, durable state and accountable collaboration. | Linking code is accepted, but the fresh backend has no `gencreator_companion` namespace and production env metadata is empty. Schema activation, server credentials, real Clerk OAuth registration, backup/recovery, retention/delete review and two-account acceptance remain required. |
-| Starlight SDK/client adoption | Reuse published SDK 8.5.1 and existing MCP/router/memory contracts, then prove one connected creator task with its receiving owner. | SDK publication/cold-install evidence belongs to the SIS owner. Connected adoption, Creator-MCP publication and actual desktop/mobile acceptance remain unfinished. |
+| Creator Studio | Permitted source→inspect/edit drafts→retain project→export. PR203 places save next to drafts and exposes source/recovery/export navigation. | Accepted/deployed source and earlier browser/public smoke. Real managed save/readback, creator acceptance and actual phone journey pending. |
+| Portable CLI/plugin0.5.3 | An assistant changes revisions, checks approvals/exports and recovers portable work. Useful for creators already using an agent. | Earlier downloaded Windows consumer13 steps/three live calls; 17 published files/41,460 bytes match. Not proof of cloud persistence/native app. |
+| CreatorPack and approval | Preserve sources/rights and review the exact approved artifact. Later edits need another decision. | Accepted contracts and synthetic/local checks. Actual creator acceptance/recovery open. |
+| Director/media recovery | Edit sequence, retain successful shots and retry interrupted work before export. | Earlier installed SDK/CLI and synthetic media/transport proof. Paid live generation and audiovisual/editorial usefulness open. |
+| Host revision/MCP | Common scoped contract lets hosts reuse work without losing provenance. | Accepted code/earlier tests. Managed MCP needs issuer, real scoped tokens and accounts. Public stateless transforms remain separately bounded. |
+| Supabase sessions + Starlight links | Verified GenCreator sign-in and explicit consent link to canonical Starlight membership; retry/remove without implicit privileges. | Frank's choice/ADR013/PR196 accepted. Live auth/link configuration and prepared schema absent. |
+| Durable managed workspace | Save/reopen/retry safely and resume decisions/drafts after interruption. | Reviewed fourteen-table renderer/store tests. Provisioning, backups and two real actors' isolation/recovery pending. |
+| SDK/ADK/SIS | Other assistants/developers consume the same source-aware artifact contract. | Existing implementations and limited portable proofs. Distributed cold installs, real scoped calls/cancel/restart and receiver/router acceptance need existing owners. |
+| Devices/memory | Cross-device resume and tenant-scoped recall/delete/expiry. | Browser/PWA code exists. Actual devices, native installs and memory recovery/delete unproved. |
+| Community/subscription | Learn repeatable workflow, share permitted work and later buy a scoped offer. | Plans exist. Demand, retention, entitlements/refunds, rights and economics unproved. Public alpha checkout/autonomous publication disabled. |
 
-Current accepted `main` is `f12797b`, after the CI cost change. Vercel reports a
-READY production deployment at that source. Final domain/archive/smoke and
-receiving-main gate results belong in the current session handover. The released
-archive and runtime implementation are unchanged by the four-file CI/doc change.
+## Agent operations and cost
 
-## A usable revision workflow
+The accepted local guard checks leases, exact staging and protected publication while retaining secret checks. Its prior installed revision passed37 doctor cases and live denials. Existing two-day task performs bounded metadata audits; weekly maintenance chooses one evidenced improvement. It does not itself invoke paid AI/Actions. A scheduled capacity hold is truthful, not full-estate acceptance.
 
-1. Export and retain your current project. Confirm the actual source rights.
-2. Prepare a request with explicit consent to send the complete supplied source
-   and drafts. GenCreator's host/infrastructure retention is unverified; use
-   Studio's local file handoff for private material.
-3. Give the retained brief/request to your assistant under its data policy. Ask
-   it to write a proposal while preserving the request and protected phrases.
-4. Preview against the current project. Inspect claims, rights, quotations and
-   voice, then select only the edits you want.
-5. Apply into a new checkpoint and verify it. Import the resulting project into
-   Studio for continued review/export. Import clears source permission, which
-   must be confirmed again. Unsigned local checksums establish byte integrity;
-   they do not authenticate authorship or a human approval.
+Per-harness fresh native adoption, foreign Claude projection and unmanaged machines remain coverage gaps. Instruction loading and executable enforcement need separate evidence. No-verify/direct API/unmanaged runtime bypass paths remain possible; universal compliance is not claimed.
 
-The serious alternative is the same assistant writing with manually assembled
-HTTP requests and loose JSON files. Controlled checks show original/unrelated
-work preservation, overwrite denial and checksum-drift detection. Customer time,
-writing quality, repair effort, total cost and demand still need measurement.
+Local code/testing/review/public smoke need no Actions. PR202 defers four validation jobs on drafts, while its slim aggregate rejects incomplete checks. Ready releases require genuine lint/types, unit, build and E2E. Batch revisions, reuse previews/cache, diagnose before retries.
 
-## Work without Actions and control release cost
+Last Actions usage$76.31 exceeds reported cap$75; personal scope is not API-visible. No extra jobs/budget edits follow from that observation. Vercel CLI provides a separately reviewed route with cost/environment/acceptance checks and cannot replace protected Git evidence. No unattended runner/external attestation service installed.
 
-Implementation, focused local tests, independent source review, package building
-and public smoke checks can run without GitHub Actions. The current protected
-merge path requires `CI Status`; it must represent successful execution. An
-external trusted check service could supply checks under a separately reviewed
-contract. No such migration or unattended self-hosted runner was installed.
-
-[PR202](https://github.com/frankxai/gencreator.ai/pull/202) is merged. Drafts defer
-all four validation jobs. Its hosted draft actually skipped them and ran the
-aggregate on `ubuntu-slim`; the aggregate rejected skipped dependencies as
-designed. Marking ready triggered all five jobs without another source commit,
-and they passed. All 34 local aggregate cases and a five-file independent source
-review passed at `3078739`. Automatic native code and security reviews completed
-at that head with no inline findings. Receiving-main validation is recorded in
-[run 38095053367](https://github.com/frankxai/gencreator.ai/actions/runs/38095053367).
-
-Keep work in a draft, run the smallest useful local check when admitted, batch
-coherent changes and mark ready once. Security, design, editorial, Review Gate,
-Surface Guard and full ready/main validation stay enabled. Other draft workflows
-and Vercel previews can still cost money. Overall savings have not been measured.
-At equal rounded duration, GitHub's short aggregate runner is $0.002/minute
-versus $0.006/minute for standard Linux. [Runner pricing](https://docs.github.com/en/billing/reference/actions-runner-pricing).
-
-PR201's manual native-review requests returned a quota limit. Its documented
-independent exact-source alternative retained all 21 earlier findings and their
-fixes, plus every actual release gate. PR202's later automatic native reviews
-completed. These are separate observations; no review-credit purchase or
-synthetic successful status was used.
-
-## Team and remaining work
-
-One Codex lead owns the release, CI cost and hub record in separate checkouts.
-Poolside supplied independent static code reviews; GitHub supplied actual hosted
-checks and native reviews. Fresh swarm preflight still prohibits new parallel
-agents: CPU 83%, 25 task runtimes and `pause-new-swarms`, despite recovered RAM.
-
-The [production plan](gencreator-starlight-production-2026-10-11.md) phases later
-work into identity/data and creator-experience writers, then client/router/memory
-integration, with one independent review slot after admission. Shared contracts
-and sequential main merges reduce conflicting edits and expose failures before
-another client depends on them. Existing SIS, Creator-MCP and Starlight owners
-retain their branches and unfinished work. The full account, app, cloud,
-commercial and customer-adoption programme stays open.
+Measure all attempts and human repair per accepted artifact against native assistant plus Markdown/manual workflow. Savings and commercial/cohort goals remain unmeasured targets.
