@@ -4,7 +4,7 @@
 
 [Memory31](https://github.com/frankxai/starlight-memory/pull/31) merged as `5689043fa8f81f317bff898203b3363b3b70ff69` after11 reproduced regressions,312-test Node22 candidate/receiving-main CI PASS and exact-source Google review PASS. Same-name tenant records and input/output snapshots are independent. Measured cloning overhead is retained; no speedup or production/provider-wide claim. The foreign checkout is preserved. Archive/installed-consumer and public release evidence remain missing, alongside the full managed/npm authority gates. [Memory8](https://github.com/frankxai/starlight-memory/issues/8) and [session](sessions/2026-10-11.md).
 
-Fresh public registry/archive inspection: memory0.2.0 exists from older38941a and still contains both repaired implementations. The226375-byte tarball matches npm SHA512 and its SHA256b036f171d63f5c6cb623a6b5638e093e5278c93d2147eca446313269bea8b956. A new reviewed version and exact installed-consumer proof are required; source merge does not fix existing installs. No registry state changed.
+Fresh public registry/archive inspection: memory0.2.0 exists from older38941a and still contains the pre-repair router and provider implementations. The226375-byte tarball matches npm SHA512 and its SHA256b036f171d63f5c6cb623a6b5638e093e5278c93d2147eca446313269bea8b956. A new reviewed version and exact installed-consumer proof are required; source merge does not fix existing installs. No registry state changed.
 
 ## 2026-10-11: Queen exact-session source tested; live supervision remains open
 
