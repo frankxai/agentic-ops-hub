@@ -1,15 +1,13 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight Multi-Harness: Skill Economy Studio UI, 10-Harness Exporter, API & Complete E2E Verified (e2c9ccf4); PR #345 Ready to Merge
+## Starlight Multi-Harness: Universal 10-Harness Sync, Sovereign Skill Publisher & Queen Adaptive Scheduler (bf4d1afd); PR #345 Ready to Merge
 
-Read `ops/sessions/2026-10-11.md` and Starlight-Intelligence-System PR #345. Branch `agent/antigravity/npm-ecosystem-alignment` at `e2c9ccf4` has completed the full Skill Economy & Marketplace ecosystem end-to-end:
-1. Canonical macro standard at `SKILLS.md` covering 3-level progressive disclosure, 10-harness runtime matrix, 5-stage maturation continuum, empirical valuation math, and multi-marketplace syndication.
-2. 6-mind Multi-Agent Skill Council (`starlight-skill-council-lead`, `starlight-skill-architect`, `starlight-skill-auditor`, `starlight-skill-valuation-specialist`, `starlight-harness-tuner`, `starlight-marketplace-syndicator`) and scaled agent fleet to 150 named agents with 100% symmetry across all registries and test suites.
-3. Production runtime in `src/skills/` with CLI subcommands (`starlight skills scan`, `value`, `matrix`, `harness`, `syndicate`).
-4. Developer & Builder Handbook at `docs/skills/BUILDER_GUIDE.md` and runnable 6-mind orchestration demo at `examples/skills/skill-council-orchestration-demo.ts`.
-5. Interactive Skill Economy Studio web experience (`/skills`) with slider valuation calculator, 10-harness native code generator, context headroom allocator, and multi-marketplace syndication preview (`site/src/app/skills/SkillsClient.tsx` & `page.tsx`).
-6. Production Next.js App Router API route (`site/src/app/api/skills/route.ts`) supporting GET and POST (`value`, `harness`, `syndicate`, `matrix`) via native Web Standards.
-7. 100% verified test passes: `test/site-skills-api.test.ts` (10/10 pass), `test/skill-e2e.test.ts` (14/14 pass), all site contracts verified (`check-layout-contract`, `check-metrics-contract`, `check-public-install-contract`, `check-deploy-contract`), `npm run build` (`tsc`: 0 errors), `npm run test:operational` (100% pass), and all 135 git pre-commit symmetry hooks passed.
+Read `ops/sessions/2026-10-11.md` and Starlight-Intelligence-System PR #345. Branch `agent/antigravity/npm-ecosystem-alignment` at `bf4d1afd` has completed the full Skill Economy, Universal 10-Harness Sync, Dual Monetization (Stripe + Polar), and Queen Adaptive Micro-Lane Dispatcher end-to-end:
+1. Universal 10-Harness Sync Engine (`src/skills/harness-sync.ts`) auto-discovers active markers and projects configs with `.bak` backups across Claude Code, Codex, Antigravity, Grok, Hermes, Gemini CLI, Cursor, OpenCode, Kilo, and Windsurf.
+2. Sovereign Skill Publisher (`src/skills/skill-publisher.ts`) enforces 3-level progressive disclosure, computes empirical valuation with canonical tier floors ($0 Community, $29 Builder, $79 Pro, $199 Team, $999 Enterprise), configures dual Stripe + Polar rails, and stamps SIP v1.1.1 SHA-256 attestation seals.
+3. Queen Adaptive Micro-Lane Dispatcher (`src/queen/adaptive-scheduler.ts`) dynamically adapts to host RAM (< 1.8GB micro, 1.8-4.0GB medium, >= 4.0GB high) and auto-repairs missing prompts for cards held in `queen/inbox/_hold-admission`.
+4. Interactive Skill Economy Studio (`/skills`), Checkout flow (`/checkout`), and API route (`/api/cloud/checkout/fulfill`).
+5. 100% verified test passes: `test/harness-sync-publisher.test.ts` (8/8 pass), `test/cloud-sync-billing.test.ts` (14/14 pass), `test/site-skills-api.test.ts` (10/10 pass), `test/skill-e2e.test.ts` (14/14 pass), `npm run build` (`tsc`: 0 errors), `npm run test:operational` (100% pass), and all 135 git pre-commit symmetry hooks passed.
 Next: Complete review and merge PR #345 into `main`, comment on tracking issue #351 with final verification receipts, and verify external consumer adoption of `@starlight-intelligence/system@8.3.0`.
 
 
