@@ -2268,6 +2268,14 @@ Arcanea [PR #579](https://github.com/frankxai/arcanea-ai-app/pull/579) is merged
 
 GenCreator is released. FrankX08044a6 remains source-reviewed locally, unpushed under build RAM HOLD, with required Node 20/pnpm 10.28 and local/runtime gates open. No owned heavy process is running. The active mission still needs one qualifying release by15:26:56 UTC. Three focused v0 source contexts are verified; imported workspace files and saved skills are unchanged. Forty complete team-wide events through 11:01 report 0.0175 charged credit units; the $15.7546 public token-rate estimate before discounts is not actual spend or balance. The cap is $25 existing credits, no purchases. See the [current session](sessions/2026-10-11.md) and existing product/programme issues; preserve accepted records, foreign prompts, active owners and prepared identity work.
 
+
+### 2026-10-11 SIS protected merge refusal and rejected native-job gate
+
+- Actual HTTP405 twice at6dd836e8 despite green API-created review checks. Exact independent two-manifest PASS preserved; no normal source merge occurred.
+- Exact Google04b81254 review BLOCK covers all five changed blobs: malicious PR workflow completion can overwrite trusted API-patched rejection. [Negative receipt6108701422](https://github.com/frankxai/Starlight-Intelligence-System/pull/362#issuecomment-6108701422). Existing15-test/plugin21-test/six-job CI successes did not establish protection against this Actions behavior.
+- Lead rejected the unaccepted850b3f86 status proposal's missing-first-status gap. Both experiments withdrawn at6fe932f3; full treec9aaba90 equals tested6dd. [SIS362](https://github.com/frankxai/Starlight-Intelligence-System/pull/362) remains draft with only two plugin manifests; source gate paths match accepted8e, nine regressions pass and alerts206/207/215 remain open.
+- Next legitimate distinct review-app identity or immutable required-workflow binding, safe spoof/denial/restoration fixture, fresh exact-source review and normal protected merge/main proof. No weakening, forged approval, token/account workaround or publication. Browser inventory empty; GitHub connector installation metadata available but no check writer. Both isolated reviewers completed; foreign work and prior hub259/260/history preserved; broader managed/publisher/customer gates ACTIVE.
+
 ## 2026-10-11: current FrankX pickup aligned to Node 22
 
 The current design prompt now names local candidate a7b0c61 and its reviewed
