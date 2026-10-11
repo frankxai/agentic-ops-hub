@@ -1,5 +1,7 @@
 ## Arcanea adoption: exact integrated document acceptance complete; protected ready checks live
 
+Latest landing action: CodeQL38154542312 is terminal SUCCESS. Protected squash auto-merge enabled16:19:18UTC for exact25c33401 head; PR585 is still OPEN awaiting required ready CI38154542385. No admin override, branch deletion or production document DDL. Re-poll the same live CI handle and verify actual merge/source before migration/deployment claims.
+
 Full Arcanea objective remains active. Ready document PR #585 is at `25c33401af78ebcc8825758c75412c692d1d2b32` on accepted main `a00d10b6cfd11558af57c516d4b4545c88cab03f`.
 
 Trusted exact-source manual38153894420 is terminal SUCCESS: Install/Lint/TypeScript/Build/CI Status, complete-source independent Gemini3.1Pro PASS with37 verified Git-byte hashes, and actual compiled authenticated document acceptance. All three desktop/mobile/reduced-motion modes pass seven checks each, nine real password logins, zero page errors, zero supplier posts and one denied stale connected form submission per mode.14 service source hashes and six inspected PNG companions match source; private configuration removed, cleanup failures zero. Source review includes the complete reader Auth runner and corrected workflow. This is isolated Auth/Postgres behavior, not signed-in production or paid customer usefulness.
