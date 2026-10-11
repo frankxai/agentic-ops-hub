@@ -1,5 +1,10 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-11: Arcanea execution active; generation repair in fresh review
+
+[PR568](https://github.com/frankxai/arcanea-ai-app/pull/568), 40d9e24d, repairs legacy debit admission and durable video recovery. 45 native cases pass;15 pass after physical-preview privacy and scanner-test refinements. Older74922a source review PASS/23 hashes does not approve the changed head. Fresh hosted review/CI/CodeQL run; no merge or paid output yet. Production5745705c remains READY. Connector reads establish missing live billing schema; project metadata lacks service-role/XAI/FAL keys. Existing critical/high scanner findings and12 dependency vulnerabilities remain. Full native goal is active and unfinished, superseding the paused planning checkpoint below. See [session](sessions/2026-10-11.md). Existing issues276/529/511 and planning563/hub248 remain open. Preserve all foreign lanes and private inventory.
+
+
 ## 2026-10-11: Arcanea world creator live; branch and product-layer plan prepared
 
 World creator [PR561](https://github.com/frankxai/arcanea-ai-app/pull/561) merged to4441801b5e003499bd70ca25e141fa7986793e58. Production dpl_289Z8sZJhL7T6gXsycdbg8qdzCSb is READY at that exact main. Exact-source independent review, hosted authenticated recovery and bounded live text generation passed; source/merge trees match. Seven fresh anonymous production checks passed; authenticated production onboarding and broader creator adoption remain open. The incorrect prepared author-path probe was corrected and its original failure retained.
