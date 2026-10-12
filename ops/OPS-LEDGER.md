@@ -2958,3 +2958,14 @@ The first new task returned no diff: its immutable main was correct, but the lar
 The full native queue was refreshed from 12:24:43 through 12:24:52 UTC: 145 unique visible tasks across eight pages and 16 environment labels, with one pending, 142 ready and two error states. The pending task was the accepted-main font/runtime repair. The private report retains every native task URL; live pagination is not an atomic snapshot.
 
 <!-- codex-cloud-routing-20261012:end -->
+
+
+<!-- arcanea-reading-auth-20261012:start -->
+
+## Arcanea: mobile authenticated reading recovery released
+
+[PR625](https://github.com/frankxai/arcanea-ai-app/pull/625) is accepted at `aabf262e5864b7a0290cf0e4a9b6fefae1716ef7`, whole-tree and twenty-one-source equal to reviewed `d610b482`. Candidate/receiving required CI, real disposable compiled-app password/SDK/RLS acceptance, both-OS account/admission checks and CodeQL pass. Committed-but-unacknowledged saves retry into one row; reload/collection/account-switch/interrupted-load/mobile article-end and anonymous/cross-account denial pass. Single tracker/article/main, local keyboard-scrolling equations and breadcrumb/header geometry are verified. Receiving fourteen captures are accounted for and exact-once in both local ledgers. Dots source-bound static PASS with no findings reports US$0; failed and unsupported attempts remain retained. The separate Claude Review Router is startup-failed by the selected action allowlist, with no Max job run; that policy is preserved.
+
+Canonical www.arcanea.ai is metadata-bracketed to READY `dpl_ASUZJVAUtNdgEi9TDKmEsTY4d6bm` at the accepted source with public health 200/ready/no-store and single-main/article/skip-target initial HTML. One exact-Git build used the existing project without setting changes after no automatic production deployment was observed; the cause remains unverified. Customer sign-in, production HTTPS CSP, complete database grants/triggers/lifecycle and customer value are not certified. The shared assistant can overlap lower copy, visual schema conformance is unverified, and memory-vault sync is pending. Dragonborne remains selected; final pages 137/138/pagination rendering is held by3,385/8,192 MB admission. Human/cold-read/canon/rights/print/device/cover/publication and unanswered US$10 creative funding remain open. Full world-first 60/30/10 programme stays ACTIVE, including models/harnesses, tenant/commercial supply, cold delivery, signed promotion and consenting creator acceptance.
+
+<!-- arcanea-reading-auth-20261012:end -->
