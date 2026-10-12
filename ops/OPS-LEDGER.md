@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: GenCreator 206 stays a conflicting draft
+
+GenCreator [206](https://github.com/frankxai/gencreator.ai/pull/206) at `c468a23efb9ec09a3187771ca035a37cf24970bd` is a draft and GitHub reports it CONFLICTING. The diff changes `app/integrations/page.tsx`, `lib/creator-studio/integrations.ts`, and adds `tests/unit/integrations.test.ts`. This login did not rebase or merge it. Daily Jules count was 23/100. No packet was sent.
+
 ## 2026-10-12: FrankX 961 is green and still unsigned
 
 FrankX [961](https://github.com/frankxai/frankx.ai-vercel-website/pull/961) at `d308783c7557c668b85fca10a9694ca74fcd8d3d` is MERGEABLE. CI, Contract Guard, Merge Gate, and Review Gate are success. `reviewDecision` is empty and `mergeStateStatus` is BLOCKED. This login did not sign or merge. GenCreator [211](https://github.com/frankxai/gencreator.ai/pull/211) stays a draft. It adds a multi-brand plan and a SaaS subscription audit across three files, and it is behind main.
