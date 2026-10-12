@@ -1,6 +1,15 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Dual-Merchant Webhook Clearing Engine: Polar.sh MoR Standard Webhook + Stripe Route Handlers
+
+Engineered and verified full Polar.sh Standard Webhook signature verification and automated license lifecycle management alongside Stripe across `Starlight-Intelligence-System` (`29d216836`):
+- **Polar.sh Standard Webhook Verification (`src/cloud/billing.ts`, `src/cloud/types.ts`)**: Built `PolarBillingService` implementing the Standard Webhooks specification (`webhook-id`, `webhook-timestamp`, `webhook-signature` in `v1,<base64>` or `v1,<hex>` format), 300s replay drift validation, base64 secret handling (`whsec_...`), and automated license minting for `subscription.created`, `subscription.active`, and `order.created` with `merchant: "polar"` and dynamic tier resolution (`pro`, `team`, `enterprise`). Revokes licenses on `subscription.canceled` / `subscription.revoked`.
+- **Unified Dual-Merchant Route Handler (`site/src/app/api/cloud/webhook/route.ts`)**: Single endpoint dynamically inspecting webhook signature headers (`stripe-signature` -> `StripeBillingService`, `webhook-signature` / `webhook-id` -> `PolarBillingService`), returning authenticated license metadata.
+- **Checkout API Alignment (`site/src/app/api/cloud/billing/route.ts`)**: Updated request contract to accept `tier: "pro" | "team" | "enterprise"` and optional `merchant: "polar" | "stripe"`.
+- **Verification**: Strict TypeScript compilation (`tsc -b` exit 0), 19/19 tests passing in `test/cloud-sync-billing.test.ts` (+5 Polar tests), 36/36 tests in `site-skills-api.test.ts` and skill suites, operational test battery passing 100%, all 4 site preflight contracts passing, and 135/135 substrate symmetry tests passing cleanly. Committed and pushed to `origin/agent/antigravity/npm-ecosystem-alignment` at `29d216836`. GitHub verification posted on Issue #351. Full details in [today's session](sessions/2026-10-10.md).
+
 ## 2026-10-12: Comprehensive Enterprise PRD & SDLC Blueprint, 85/15 Creator Revenue Clearing & MoR Take-Home Economics
+
 
 Delivered an exhaustive, production-grade Product Requirements Document (PRD) and complete Software Development Life Cycle (SDLC) blueprint across the full Starlight ecosystem, while engineering 85/15 creator revenue clearing, MoR fee calculations, and projected recurring income modeling in `Starlight-Intelligence-System` (`f7a29c567`):
 - **Comprehensive Enterprise PRD & SDLC Specification (`starlight-enterprise-prd-and-sdlc-blueprint.md`)**: Full architectural specification covering the 4-layer service hierarchy (IaaS, PaaS, SaaS, ASaaS), Quad-Domain Topology Matrix (`starlightintelligence.org` free substrate, `starlightintelligence.ai` commercial platform, `starlight.you` personal twin, `starlight.technology` hardware sizing, `starlightintelligence.academy` operator certification), 90-day agile release waves, unit economics (90.5%–93.1% gross margin), and Santa adversarial convergence loops.

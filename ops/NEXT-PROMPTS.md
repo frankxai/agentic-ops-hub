@@ -1,12 +1,12 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight Enterprise Substrate, PRD/SDLC & Sovereign Creator Economy
+## Starlight Enterprise Substrate, PRD/SDLC & Dual-Merchant Clearing Engine
 
-With commit `f7a29c567` merged across `Starlight-Intelligence-System`:
-- **PRD & SDLC Execution Blueprint**: Operationalize the 4-layer architecture (IaaS edge fabric, PaaS memory engine, SaaS cloud console, ASaaS skill matrix) defined in `starlight-enterprise-prd-and-sdlc-blueprint.md`.
+With commit `29d216836` merged across `Starlight-Intelligence-System`:
+- **Dual-Merchant Clearing Engine**: Test and verify the unified `/api/cloud/webhook` route handler for both Polar.sh Standard Webhooks (validating `webhook-id`, `webhook-timestamp`, `webhook-signature` `v1,...` headers) and Stripe signatures (`stripe-signature`).
 - **Creator Revenue Clearing (85/15) & MoR Modeling**: Verify automated creator payout calculations and recurring income modeling across developer tools with `starlight skill value <path>`.
+- **PRD & SDLC Execution Blueprint**: Operationalize the 4-layer architecture (IaaS edge fabric, PaaS memory engine, SaaS cloud console, ASaaS skill matrix) defined in `starlight-enterprise-prd-and-sdlc-blueprint.md`.
 - **Multi-Marketplace Syndication Engine**: Test `starlight skill syndicate <path>` to package skills into Starlight, Smithery, Claude Code, OpenAI AgentKit, and OpenClaw manifests with SIP § 1 attestation.
-- **Polar MoR & Stripe Enterprise Routing**: Validate automated VAT compliance on Pro ($29) and Team ($99) tiers via Polar.sh, alongside Stripe enterprise invoice fulfillment.
 - **Universal 10-Harness Sync (`starlight harness sync`)**: Run multi-harness sync across all active developer environments (`claude-code`, `codex`, `antigravity`, `grok`, `hermes`, `gemini-cli`, `cursor`, `opencode`, `kilo`, `windsurf`) to verify configuration projection and timestamped `.bak` backups.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
