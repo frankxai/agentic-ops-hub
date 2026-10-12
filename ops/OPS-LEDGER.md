@@ -2,6 +2,10 @@
 
 **Last sweep:** 2026-10-04 (recorded date retained; no new estate sweep claimed).
 
+## 2026-10-12 07:11 UTC: Doctor maintained SDK and reproducible release artifact verified
+
+[Doctor #11](https://github.com/frankxai/mcp-doctor/pull/11) is normally merged as d03eb82e; exact 3-file Google review passes and full receiving tree matches 50601067. SDK 1.32.1 and scoped LF inputs preserve Node18 and eliminate real crossplatform CRLF archive differences. Candidate38214919485, receiving 38215473208 and release verification 38215549996 each pass all four61+26 matrices,0 failures/skips. All tarballs share 7e92760a6442cfacd89c97fdc2de82c1a5b2dff128f28c3c37328c60861d5674; actual verified-release 11731882333 matches. Frozen pnpm 9.15.9 passes; manual regeneration remains unclaimed. Registry0.5.0 is missing, trust 403, stage SKIPPED in verification mode. No public release or managed activation. Foreign local lanes remain untouched; both reviewers terminal. SIS protected publisher and merchant/paid-preview/customer gates remain open.
+
 ## 2026-10-12 06:35 UTC: Doctor maintained-SDK proposal awaits an owned lane
 
 Live Jules2536320996174217098 is COMPLETED; approval recovery is finished. Preserve rejection of its original report and acceptance of the replacement. Doctor8 has a private two-file SDK1.32.1 proposal at immutable main1fa90823; registry metadata matches prior dependency ranges/peers/Node engine. Structural comparison passes, but pnpm regeneration, execution, independent candidate review and merge remain unperformed. Four foreign checkouts and TIGHT storage prevent local integration; no remote source write was used. Preserve version0.5.0 reservations until verified. SIS release38210385590 still has successful verification and WAITING publisher. Managed billing, database and customer-value gates remain open.
