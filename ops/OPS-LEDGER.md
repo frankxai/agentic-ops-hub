@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: agentic-ops 223 is a draft again
+
+Agentic-ops [223](https://github.com/frankxai/agentic-ops/pull/223) at `ebaec24b055ffedfe2078462d3fb029bfd7935ad` was ready. It is a draft again. It adds a BSC and EuroHPC Playground request for issue 199. The request names Frank Riemer and asks for 5,000 GPU-hours and 20,000 CPU core-hours. The lawful-data section says anonymized developer interaction traces comply with GDPR and the EU AI Act. This review did not verify that. The test only checks that the headings exist. The title names UvA, RVO, and SURF, and this diff does not contain those routes. The comment is [6121847861](https://github.com/frankxai/agentic-ops/pull/223#issuecomment-6121847861). The issue note is [6121848170](https://github.com/frankxai/agentic-ops/issues/199#issuecomment-6121848170). This login did not merge it and did not submit any request. The hourly tick read auf 0, in flight 0, daily 15/100, and sent no packet. Next unread ready auto-ship is [227](https://github.com/frankxai/agentic-ops/pull/227) for issue 189.
+
 ## 2026-10-12: agentic-ops 226, 225, and 224 are drafts again
 
 Agentic-ops [226](https://github.com/frankxai/agentic-ops/pull/226) at `b49d0e3c2927f8e819913b16e599a758051619d8` was ready. It is a draft again. It adds a funding and program-application plan for issue 196. The plan names Frank Riemer, FrankX Operations B.V., and a Notion packet. The comment is [6120975541](https://github.com/frankxai/agentic-ops/pull/226#issuecomment-6120975541).
