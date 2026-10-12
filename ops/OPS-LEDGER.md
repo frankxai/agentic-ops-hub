@@ -1,5 +1,14 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Polar.sh MoR Default, Stripe Enterprise Invoicing, Free Value Bundling & Starlight Pro Superpowers
+
+Engineered and verified default Polar.sh Merchant of Record resolution for self-serve subscriptions (automating EU VAT and international digital goods taxes), Stripe dedicated enterprise invoicing, 3 free verified pack inclusions (`safety/secret-detector`, `orchestration/multi-agent-coordination`, `memory/vault-management`), and Starlight Pro superpowers across `Starlight-Intelligence-System` (`febdf7d2b`):
+- **Merchant of Record Architecture**: Polar.sh resolved as primary default for self-serve Pro ($29/mo) and Team ($99/mo) with automated EU VAT compliance and instant digital fulfillment; Stripe handles Enterprise Mesh ($199–$499/mo) and bespoke commissions. Implemented in `src/cloud/billing.ts`, `src/cloud/types.ts`, and `site/src/app/api/cloud/checkout/fulfill/route.ts`.
+- **Free Value Bundling**: Embedded 3 foundational verified intelligence packs as free value inclusions with all subscriptions, minting verified entitlements directly into HMAC-SHA256 license tokens.
+- **Starlight Pro Superpowers**: Wired license issuance and cloud contracts for `edge_semantic_mirror` (<10ms global lookup via Cloudflare D1/Vectorize), `twin_cloud_sync` (real-time `reality.md` sync across 10 harnesses), `queen_autopilot` (dynamic memory lane allocation & auto git rollbacks), `semantic_cache` (40%–60% token savings across developer harnesses), and `pro_packs_access`.
+- **Checkout & Plan Matrix Polish**: Enriched `CheckoutClient.tsx` with dynamic MoR indicators, Free Value Inclusions callouts, and Pro superpowers checklist; enriched `CloudClient.tsx` introducing Team Studio ($99/mo).
+- **Verification**: Strict TypeScript compilation (`tsc` exit 0), 14/14 tests in `test/cloud-sync-billing.test.ts`, 8/8 tests in `test/harness-sync-publisher.test.ts`, 135/135 substrate symmetry tests passing, and all 4 site contracts passing. Committed and pushed to `origin/agent/antigravity/npm-ecosystem-alignment` at `febdf7d2b`. Full details in [today's session](sessions/2026-10-10.md).
+
 ## 2026-10-12: Universal 10-Harness Sync, Sovereign Skill Publisher, Queen Adaptive Scheduler & Reactive Checkout
 
 Engineered and verified the Universal 10-Harness Sync Engine, Sovereign Skill Publisher with Dual Monetization (Stripe + Polar), Queen Adaptive Micro-Lane Scheduler & Card Auto-Repair, and Reactive Glassmorphic Checkout UX across `Starlight-Intelligence-System` (`bf4d1afd`):

@@ -2,11 +2,11 @@
 
 ## Starlight Cloud Managed Subsystem, Edge Mesh & Community Skill Economy
 
-With commit `bf4d1afd` merged across `Starlight-Intelligence-System`:
+With commit `febdf7d2b` merged across `Starlight-Intelligence-System`:
+- **Polar.sh MoR Routing vs. Stripe Enterprise**: Test default Polar.sh Merchant of Record resolution for self-serve subscriptions (Pro $29/mo, Team $99/mo) and Stripe for Enterprise Mesh ($199–$499/mo) with live test tokens in `/checkout`.
+- **Free Value Bundling & Verified Pack Entitlements**: Verify that the 3 free foundational packs (`safety/secret-detector`, `orchestration/multi-agent-coordination`, `memory/vault-management`) are automatically granted and verified in minted HMAC-SHA256 license tokens.
+- **Starlight Pro Superpowers**: Test `edge_semantic_mirror` (<10ms global lookup via Cloudflare D1/Vectorize), `twin_cloud_sync` (real-time `reality.md` sync across 10 harnesses), `queen_autopilot` (dynamic memory lane allocation & auto git rollbacks), and `semantic_cache` (40%–60% token savings across harnesses).
 - **Universal 10-Harness Sync Engine (`starlight harness sync`)**: Run multi-harness sync across all active developer environments (`claude-code`, `codex`, `antigravity`, `grok`, `hermes`, `gemini-cli`, `cursor`, `opencode`, `kilo`, `windsurf`) to verify configuration projection and timestamped `.bak` backups.
-- **Sovereign Skill Publisher (`starlight skill publish`)**: Publish community and premium skill packs with 3-level progressive disclosure validation, empirical fair-market MSRP valuation, and dual monetization configurations for Stripe and Polar.
-- **Queen Adaptive Micro-Lane Scheduler (`starlight queen drain`, `starlight queen lane`)**: Verify automatic execution lane transitions (Micro <1.8GB, Medium 1.8-4.0GB, High >=4.0GB) and automated admission card healing under memory pressure.
-- **Interactive Glassmorphic Checkout (`/checkout`, `/api/cloud/checkout/fulfill`)**: Test instant cryptographic `CloudLicenseToken` minting, 1-click CLI login commands, and live Stripe Elements checkout flows.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
