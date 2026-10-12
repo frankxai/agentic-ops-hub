@@ -2930,4 +2930,7 @@ Next: inspect the original final spread after fresh matching admission; render t
 ## Codex Cloud routing, 12 October 2026
 
 Native account-visible queue fully paginated:143 tasks/16 environment labels at11:49 UTC; 141 ready/two error. Full private inventory retains native URLs and unknown integration states. [FrankX build/source repair](https://chatgpt.com/codex/tasks/task_e_6acccc67836c8320aaa10f145b945d71) submitted once against main c8eeb33f57276d6e909858ebea11bf534d02bdc5 with exact preserved candidate source and expected checkpoint tree 56922bb52122f51d4a096d4d3b1c4ce583747015. Pending at last read; full build/browser/review/release gates remain open. Heavy local work was held by 4008 MiB free against 8192 required. No new local worker, worktree, purchase or production source release. Existing config PR 112 checks still fail; no waiver. [Session](sessions/2026-10-12.md) and [routing guide](guides/codex-claude-environment-alignment.md) hold the current pickup. Product tracking stays at FrankX #339; prior design #48/config #46 remain open.
+
+The first new task returned no diff: its immutable main was correct, but the large unpublished packet could not be materialized. No source checkpoint/build/browser pass is claimed. [Accepted-main font/runtime repair](https://chatgpt.com/codex/tasks/task_e_6accd087feec8320b358d5a87b5d4c65) was then submitted once with a small contract and no unpublished payload. The original local candidate and all task receipts remain preserved.
+
 <!-- codex-cloud-routing-20261012:end -->
