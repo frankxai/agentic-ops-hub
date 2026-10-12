@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: hourly Jules tick stopped
+
+Frank asked why the hourly loop was still running. Scheduler `01a123ed-93d1-7820-806e-124d074e5d71` is cancelled. Recent firings reported auf 0 and sent no packet, after a failed refresh and one allowed session list. The reviews that followed were one ready auto-ship at a time. Do not recreate the scheduler unless Frank asks. The next unread ready pull request remains agentic-ops [222](https://github.com/frankxai/agentic-ops/pull/222).
+
 ## 2026-10-12: agentic-ops 227 is a draft again
 
 Agentic-ops [227](https://github.com/frankxai/agentic-ops/pull/227) at `d0fd922168fa699046c4cdf22922ee88bb521387` was ready. It is a draft again. The diff adds one local-before-cloud sentence in `docs/PORTFOLIO-PLATFORM-ARCHITECTURE.md`, one rule in `registry/runtime_cost_model.yaml`, and a test that `scripts/validate_runtime_policy.py` requires that rule string. Each test reloads the YAML, so the removal does not leak. The new string is not a router. The pull request body says issue 189 is resolved and a council ratified it, and it pastes an unrelated FrankX library checklist. The comment is [6122824443](https://github.com/frankxai/agentic-ops/pull/227#issuecomment-6122824443). The issue note is [6122824772](https://github.com/frankxai/agentic-ops/issues/189#issuecomment-6122824772). This login did not merge it.
