@@ -1,5 +1,13 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+**Last sweep:** 2026-10-04 (recorded date retained; no new estate sweep claimed).
+
+## 2026-10-12: Ledger freshness restored; protected release and EU rehearsal gates verified
+
+[Fleet watch 38191289592](https://github.com/frankxai/agentic-ops-hub/actions/runs/38191289592) found a stale C940 heartbeat and a missing ledger timestamp. The actual Last sweep date, 2026-10-04, had moved to character 202,521 outside the monitor's 4,000-character header. Its recorded date is restored above; no new sweep or heartbeat is claimed. Actual production check_ledger reproduces the failure before and passes afterward on 12 October; a 19 October probe still reports the recorded date expired. C940 remains stale and [issue 176](https://github.com/frankxai/agentic-ops-hub/issues/176) stays open.
+
+SIS PR364 at 820bd564 remains protected despite successful required checks. One ordinary expected-head connector merge returned 405: independent-review-policy expected; no bypass or merge. Distinct writer PR365 has no configured repository/environment variables or secrets; App installation lookup 403 does not prove absence. Native exact review of PR367/366 and legitimate check-writer activation remain pending. EU Starlight project is ACTIVE_HEALTHY on PostgreSQL 17.6 with no development branches. Accepted 373ae6 SQL packet is prepared, not applied. A temporary branch costs $0.01344/hour plus usage; user cost confirmation is pending and no branch was created. Local native-review admission remains HOLD. Keep release, managed identity/isolation/restore, eligible merchant, entitlements/usage and actual customer creation gates open; full goal ACTIVE.
+
 ## 2026-10-12: Real archive JavaScript measurements implemented
 
 [SIS PR367](https://github.com/frankxai/Starlight-Intelligence-System/pull/367) at68a18150 counts actual JS bytes for all packages, retaining core limits. Native baseline1pass/2fail becomes3pass; full release/archive25pass. Hosted38191158349 all six jobs pass; four complete logs confirm release25 and core18/MCP12/AI6, zero failures/skips. Downloaded11721368777 manifest now matches physical core10,221/AI2,159/MCP11,933 JS bytes, exact tree and installed-consumer receipt. No public promotion. Completed Jules13625632843727286142 scoped source PASS accepted with two exact hashes; zero-matching baseline rejected, scratch/cleanup limits retained, native gate unfulfilled. [Issue329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329#issuecomment-6116079827). PR364/365/366 and managed/release fronts preserved. Full goal ACTIVE.
