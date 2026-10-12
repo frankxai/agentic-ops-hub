@@ -1,12 +1,13 @@
 # ⏭️ Next Prompts — per active front / terminal
 
-## Starlight Cloud Managed Subsystem, Edge Mesh & Community Skill Economy
+## Starlight Enterprise Substrate, PRD/SDLC & Sovereign Creator Economy
 
-With commit `febdf7d2b` merged across `Starlight-Intelligence-System`:
-- **Polar.sh MoR Routing vs. Stripe Enterprise**: Test default Polar.sh Merchant of Record resolution for self-serve subscriptions (Pro $29/mo, Team $99/mo) and Stripe for Enterprise Mesh ($199–$499/mo) with live test tokens in `/checkout`.
-- **Free Value Bundling & Verified Pack Entitlements**: Verify that the 3 free foundational packs (`safety/secret-detector`, `orchestration/multi-agent-coordination`, `memory/vault-management`) are automatically granted and verified in minted HMAC-SHA256 license tokens.
-- **Starlight Pro Superpowers**: Test `edge_semantic_mirror` (<10ms global lookup via Cloudflare D1/Vectorize), `twin_cloud_sync` (real-time `reality.md` sync across 10 harnesses), `queen_autopilot` (dynamic memory lane allocation & auto git rollbacks), and `semantic_cache` (40%–60% token savings across harnesses).
-- **Universal 10-Harness Sync Engine (`starlight harness sync`)**: Run multi-harness sync across all active developer environments (`claude-code`, `codex`, `antigravity`, `grok`, `hermes`, `gemini-cli`, `cursor`, `opencode`, `kilo`, `windsurf`) to verify configuration projection and timestamped `.bak` backups.
+With commit `f7a29c567` merged across `Starlight-Intelligence-System`:
+- **PRD & SDLC Execution Blueprint**: Operationalize the 4-layer architecture (IaaS edge fabric, PaaS memory engine, SaaS cloud console, ASaaS skill matrix) defined in `starlight-enterprise-prd-and-sdlc-blueprint.md`.
+- **Creator Revenue Clearing (85/15) & MoR Modeling**: Verify automated creator payout calculations and recurring income modeling across developer tools with `starlight skill value <path>`.
+- **Multi-Marketplace Syndication Engine**: Test `starlight skill syndicate <path>` to package skills into Starlight, Smithery, Claude Code, OpenAI AgentKit, and OpenClaw manifests with SIP § 1 attestation.
+- **Polar MoR & Stripe Enterprise Routing**: Validate automated VAT compliance on Pro ($29) and Team ($99) tiers via Polar.sh, alongside Stripe enterprise invoice fulfillment.
+- **Universal 10-Harness Sync (`starlight harness sync`)**: Run multi-harness sync across all active developer environments (`claude-code`, `codex`, `antigravity`, `grok`, `hermes`, `gemini-cli`, `cursor`, `opencode`, `kilo`, `windsurf`) to verify configuration projection and timestamped `.bak` backups.
 - Review verification evidence in `ops/sessions/2026-10-10.md` and `ops/OPS-LEDGER.md`. Ensure worktree isolation and zero-leak secrets policies remain strictly enforced.
 
 ## Starlight Queen Meta-Orchestrator & Universal Knowledge Graph Integration
