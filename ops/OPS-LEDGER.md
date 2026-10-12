@@ -2,6 +2,10 @@
 
 **Last sweep:** 2026-10-04 (recorded date retained; no new estate sweep claimed).
 
+## 2026-10-12 08:25 UTC: Legacy and core privacy candidate qualified; native acceptance unresolved
+
+SIS374 now761c4721/five files with exact native Google PASS. Both Git sanitizer bodies match; old root regressions fail, repaired source28pass, actual packed root/organization modules each28pass. Fresh hosted38222462245 has495pass0fail0skip and verified artifact11735065566; root38222686472 also builds/tests/installs actual454-file variants. Pending Changeset; no public release. Both eligible review-event reruns pass, but normal REST405 still expects independent-review-policy; source OPEN/BLOCKED with exact auto-merge enabled. No bypass/check/protection mutation. Old publisher remains CANCELLED. GenCreator ownership, merchant/paid-preview/live EU/customer and site advisory gates stay open. Reviewer terminal; full goal ACTIVE.
+
 ## 2026-10-12 07:59 UTC: Supabase memory redaction candidate passes; public release held
 
 SIS374 at45b6374a has exact three-file native Google PASS, four complete 81-case Linux/Windows Node22/24 matrices, Node18 core34 and artifact81+56 installed cases, 495 passes/zero failures/skips. Actual artifact11733622335 differs from the cancelled e487 release only in reviewed core sanitizer JavaScript; core10,945 bytes/zero runtime dependencies. Older release38210385590 is CANCELLED. Native check-update failure was preserved and trusted replay succeeded; normal API still expects independent-review-policy. Auto-merge enabled; source is OPEN/BLOCKED, receiving and fresh release qualification pending. No admin/check/protection changes. GenCreator preflight files remain in the active managed-alpha owner's scope; root sanitizer adoption, site sharp alert215 and managed/public delivery gates stay open. Both reviewers terminal; full goal ACTIVE.
