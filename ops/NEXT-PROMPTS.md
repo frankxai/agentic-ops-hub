@@ -1,3 +1,9 @@
+<!-- gencreator-real-edition-20261012:start -->
+## GenCreator: one real edition on the canvas
+
+Start from gencreator.ai#5 comment 6124332517, the brief https://claude.ai/artifact/21xdi5KVCkBAzEqyr7L2Cg and the concept https://claude.ai/artifact/576Btu4s9QA7EE7KVBajYD. First stop the leak: confirm with Frank that autonomous executors are drafts-only, land #216, #217 and #218 through pr-gate with a different-provider signoff, and bring open PRs to 10 or fewer. Then open the agent-guide PR from `agent/claude/gencreator-agent-guide` (`71ec4c9`). Build target: in `/creator-studio`, one real creator-owned talk renders into a playable 9:16 reel and a 4:5 carousel through the `video-engine` skill (frankxai/gencreator-skills, ffmpeg 8, local captions), shown on the canvas with transcript-backed claims and a revision-bound signature that reopens on edit. Run `pp preflight --workload build` first; prefer a Vercel preview for QA. Reuse CreatorPack, revision-bound approval and the director CLI; no new orchestration layer, no reselling, no Higgsfield. Done when a stranger can sign and download a real reel from a real source on a Vercel preview, verified at 390 and 1440 px, with a cross-provider buyer critique attached.
+<!-- gencreator-real-edition-20261012:end -->
+
 <!-- queen-native-session-20261011:start -->
 ## Queen: assemble one accepted recoverable native task
 
