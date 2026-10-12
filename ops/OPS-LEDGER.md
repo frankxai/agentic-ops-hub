@@ -2,6 +2,11 @@
 
 **Last sweep:** 2026-10-04 (recorded date retained; no new estate sweep claimed).
 
+## 2026-10-12 07:59 UTC: Supabase memory redaction candidate passes; public release held
+
+SIS374 at45b6374a has exact three-file native Google PASS, four complete 81-case Linux/Windows Node22/24 matrices, Node18 core34 and artifact81+56 installed cases, 495 passes/zero failures/skips. Actual artifact11733622335 differs from the cancelled e487 release only in reviewed core sanitizer JavaScript; core10,945 bytes/zero runtime dependencies. Older release38210385590 is CANCELLED. Native check-update failure was preserved and trusted replay succeeded; normal API still expects independent-review-policy. Auto-merge enabled; source is OPEN/BLOCKED, receiving and fresh release qualification pending. No admin/check/protection changes. GenCreator preflight files remain in the active managed-alpha owner's scope; root sanitizer adoption, site sharp alert215 and managed/public delivery gates stay open. Both reviewers terminal; full goal ACTIVE.
+
+
 ## 2026-10-12 07:11 UTC: Doctor maintained SDK and reproducible release artifact verified
 
 [Doctor #11](https://github.com/frankxai/mcp-doctor/pull/11) is normally merged as d03eb82e; exact 3-file Google review passes and full receiving tree matches 50601067. SDK 1.32.1 and scoped LF inputs preserve Node18 and eliminate real crossplatform CRLF archive differences. Candidate38214919485, receiving 38215473208 and release verification 38215549996 each pass all four61+26 matrices,0 failures/skips. All tarballs share 7e92760a6442cfacd89c97fdc2de82c1a5b2dff128f28c3c37328c60861d5674; actual verified-release 11731882333 matches. Frozen pnpm 9.15.9 passes; manual regeneration remains unclaimed. Registry0.5.0 is missing, trust 403, stage SKIPPED in verification mode. No public release or managed activation. Foreign local lanes remain untouched; both reviewers terminal. SIS protected publisher and merchant/paid-preview/customer gates remain open.
