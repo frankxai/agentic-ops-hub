@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Real archive JavaScript measurements implemented
+
+[SIS PR367](https://github.com/frankxai/Starlight-Intelligence-System/pull/367) at68a18150 counts actual JS bytes for all packages, retaining core limits. Native baseline1pass/2fail becomes3pass; full release/archive25pass. Hosted38191158349 all six jobs pass; four complete logs confirm release25 and core18/MCP12/AI6, zero failures/skips. Downloaded11721368777 manifest now matches physical core10,221/AI2,159/MCP11,933 JS bytes, exact tree and installed-consumer receipt. No public promotion. Scoped Jules13625632843727286142 source PASS accepted with two exact hashes; zero-matching baseline rejected, scratch/cleanup limits retained, native gate unfulfilled. [Issue329](https://github.com/frankxai/Starlight-Intelligence-System/issues/329#issuecomment-6116079827). PR364/365/366 and managed/release fronts preserved. Full goal ACTIVE.
+
 ## 2026-10-12: MCP configured methods retained; actual candidate package verified
 
 [SIS draft366](https://github.com/frankxai/Starlight-Intelligence-System/pull/366), sourceba273ddb, captures selected provider/sanitizer methods and receivers without freezing internal state. Four native official-client regressions reproduce4fail against old compiled baseline; hosted38188569831 all6jobs pass and full4matrix logs prove16 MCP tests each0fail0skip. Actual3 downloaded archives/integrities/inventories checked; MCP7196-byte archive9e00d1b0 contains fix, synthetic merge4e8c0a77 has full source-tree equality927a5d7a, installed-consumer fixture passes. Adapter runtimeBytes0 fields are placeholders; physical AI2159/MCP12309 bytes computed separately. No public/live/market acceptance.
