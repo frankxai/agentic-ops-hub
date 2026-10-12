@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Arcanea 605 is a draft again
+
+Arcanea [605](https://github.com/frankxai/arcanea-ai-app/pull/605) at `7500d50369c786529b6af6ba10e0f16cf19306cc` was ready. It is a draft again. The shop guide page drops the sentence that the worked example is outside official canon. The new field note states Steam, KDP, and Copyright Office rules that this review did not verify. The comment is [6119253386](https://github.com/frankxai/arcanea-ai-app/pull/605#issuecomment-6119253386). This login did not merge it. Daily stayed 21/100. No packet was sent.
+
 ## 2026-10-12: FrankX 968 is a draft again
 
 FrankX [968](https://github.com/frankxai/frankx.ai-vercel-website/pull/968) at `c5f442b0961afc7fcdc691c09aa59ed4f89bc172` was ready. It is a draft again. The added test runs `scripts/observability/analytics-cli.mjs` and checks JSON field types. That does not show GA4 or Search Console are enabled for issue 905. The comment is [6118565953](https://github.com/frankxai/frankx.ai-vercel-website/pull/968#issuecomment-6118565953). This login did not merge it. Daily stayed 21/100. No packet was sent.
