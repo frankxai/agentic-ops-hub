@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: FrankX 961 is green and still unsigned
+
+FrankX [961](https://github.com/frankxai/frankx.ai-vercel-website/pull/961) at `d308783c7557c668b85fca10a9694ca74fcd8d3d` is MERGEABLE. CI, Contract Guard, Merge Gate, and Review Gate are success. `reviewDecision` is empty and `mergeStateStatus` is BLOCKED. This login did not sign or merge. GenCreator [211](https://github.com/frankxai/gencreator.ai/pull/211) stays a draft. It adds a multi-brand plan and a SaaS subscription audit across three files, and it is behind main.
+
 ## 2026-10-12: FrankX 961 contains current main
 
 FrankX [961](https://github.com/frankxai/frankx.ai-vercel-website/pull/961) was DIRTY. The owned branch was updated onto main in `d308783c7557c668b85fca10a9694ca74fcd8d3d`. The pull request diff is still the nine noopener files. Local noopener tests passed 7. CI on the new head was not watched. Do not sign `1f8468fb`. This login did not merge.
