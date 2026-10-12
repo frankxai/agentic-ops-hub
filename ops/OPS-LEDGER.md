@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: FrankX 961 contains current main
+
+FrankX [961](https://github.com/frankxai/frankx.ai-vercel-website/pull/961) was DIRTY. The owned branch was updated onto main in `d308783c7557c668b85fca10a9694ca74fcd8d3d`. The pull request diff is still the nine noopener files. Local noopener tests passed 7. CI on the new head was not watched. Do not sign `1f8468fb`. This login did not merge.
+
 ## 2026-10-11: duplicate ADR pull request 972 is closed
 
 FrankX [972](https://github.com/frankxai/frankx.ai-vercel-website/pull/972) came from Jules session `6327712614690309001` and was ready. Its diff matches draft [931](https://github.com/frankxai/frankx.ai-vercel-website/pull/931) except the blog image path. Both images exist on main. 972 was closed and the branch was left in place. 931 stays the draft for issue 932. Session `6423379922387895427` had its stop plan `d63c7ee2e67f443d9a82820bce13fd51` approved: revert local changes and open no pull request. Nothing was merged.
