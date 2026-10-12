@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: FrankX 969 is a draft again
+
+FrankX [969](https://github.com/frankxai/frankx.ai-vercel-website/pull/969) at `714b9909ecc96c4e79e81b1aef8df931ba063db8` was ready. It is a draft again. The SEO health script now passes a sitemap check when the source contains `siteConfig.url`, and the full llms check passes when the source is longer than 500 characters. The comment is [6117968430](https://github.com/frankxai/frankx.ai-vercel-website/pull/969#issuecomment-6117968430). This login did not merge it. Daily Jules count was 21/100. No packet was sent.
+
 ## 2026-10-12: GenCreator 212 stays a draft for issue 133
 
 GenCreator [212](https://github.com/frankxai/gencreator.ai/pull/212) at `34e215ae21f868cb439ae42f4f750374c3c96122` is a draft and behind main. It adds `lib/science-documentary-pilot.ts` and `tests/unit/science-documentary-pilot.test.ts` for issue 133. Draft [134](https://github.com/frankxai/gencreator.ai/pull/134) remains the docs pull request. This login did not mark 212 ready or merge it. No packet was sent. Daily stayed 23/100.
