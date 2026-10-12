@@ -2652,3 +2652,8 @@ Read-only live Supabase schema identifies absent messages/model/project fields a
 
 
 - 2026-10-12 Arcanea private chat9411392b: draft610;15 native cases/four regressions; exact hosted history, full CI38196791533 and compiled38196791528 terminal PASS.31 Git hashes/12 image sidecars verified; mobile image viewed; skipped authenticated/independent gates remain unearned. Production now READY33b437e (#607, other lane), neither610 nor602 promoted. Legacy recovery, atomic cloud messages, Auth/RLS/private reopen/export and independent review block promotion; full programme276/goal01a1269f ACTIVE. See current session and owned pickup; no owned workers. Preserve10 ERR_ABORTED artifact records.
+
+
+- 2026-10-12 Arcanea atomic private chat: PR610 d19536c3;30 native/five project cases; real PG17.6 snapshots/CAS/rollback/race pass.98e/957 full CI pass; compiled98e/957/ca0 failed418, all artifacts/hash bindings retained. Diagnosticca0 pins /chat; reproduced parent-auth-before-hydration and corrected entry. Current history38203230372 PASS; CI38203230235/Companion38203230329 confirmed live. Supabase metadata-only/no writes: candidate functions absent. Production READY a2e1f4a (#612 other owner). Full programme276/goal01a1269f ACTIVE; independent/real Auth/legacy recovery/backup/activation gaps remain. No owned workers. See session pickup.
+
+- d195 qualification update: compiled114660979985 PASS,38 source/12 PNG hashes bound and desktop/mobile viewed; history/PG PASS; CI Build114662078279 confirmed live. Real Auth, recovery-state visual acceptance, exact independent review and activation remain pending; full goal ACTIVE.
