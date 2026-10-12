@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Arcanea 603 is a draft again
+
+Arcanea [603](https://github.com/frankxai/arcanea-ai-app/pull/603) at `410710430cf28a07f11fca4ab8309ce55c38912f` was ready. It is a draft again. The chat-traces cursor is split and placed into the filter string without a format check. Sign-in is still required. The comment is [6120050123](https://github.com/frankxai/arcanea-ai-app/pull/603#issuecomment-6120050123). This login did not merge it. Daily Jules count was 19/100. No packet was sent.
+
 ## 2026-10-12: Arcanea 605 is a draft again
 
 Arcanea [605](https://github.com/frankxai/arcanea-ai-app/pull/605) at `7500d50369c786529b6af6ba10e0f16cf19306cc` was ready. It is a draft again. The shop guide page drops the sentence that the worked example is outside official canon. The new field note states Steam, KDP, and Copyright Office rules that this review did not verify. The comment is [6119253386](https://github.com/frankxai/arcanea-ai-app/pull/605#issuecomment-6119253386). This login did not merge it. Daily stayed 21/100. No packet was sent.
