@@ -1,5 +1,15 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: agentic-ops 226, 225, and 224 are drafts again
+
+Agentic-ops [226](https://github.com/frankxai/agentic-ops/pull/226) at `b49d0e3c2927f8e819913b16e599a758051619d8` was ready. It is a draft again. It adds a funding and program-application plan for issue 196. The plan names Frank Riemer, FrankX Operations B.V., and a Notion packet. The comment is [6120975541](https://github.com/frankxai/agentic-ops/pull/226#issuecomment-6120975541).
+
+Agentic-ops [225](https://github.com/frankxai/agentic-ops/pull/225) at `023f88b021e907fcfb8d4ae44a9e23bbc941c3f6` was ready. It is a draft again. The evidence-gates table marks incorporation, exclusions, spend safety, and claim accuracy as passed. The test checks that `company_frankx_operations_bv` and the names frankx.ai, starlight.technology, and arcanean.dev exist in the registry. The comment is [6120975977](https://github.com/frankxai/agentic-ops/pull/225#issuecomment-6120975977).
+
+Agentic-ops [224](https://github.com/frankxai/agentic-ops/pull/224) at `9fdba691a764cc718c74ecd183443931bac35c56` was ready. It is a draft again. It writes ownership and prior-credit fields into `registry/companies.yaml` for issue 197. Shareholding is 100 percent, verification stays conversation-derived, and legal evidence stays false. The comment is [6120976230](https://github.com/frankxai/agentic-ops/pull/224#issuecomment-6120976230).
+
+Issue notes are [6120983449](https://github.com/frankxai/agentic-ops/issues/196#issuecomment-6120983449) and [6120983762](https://github.com/frankxai/agentic-ops/issues/197#issuecomment-6120983762). This login did not merge these pull requests and did not submit any application. No Jules packet was sent. The next unread ready auto-ship is [223](https://github.com/frankxai/agentic-ops/pull/223). Its title is a collaboration route for issue 199. [227](https://github.com/frankxai/agentic-ops/pull/227) is also ready, for issue 189. Read 223 before converting either.
+
 ## 2026-10-12: Arcanea 603 is a draft again
 
 Arcanea [603](https://github.com/frankxai/arcanea-ai-app/pull/603) at `410710430cf28a07f11fca4ab8309ce55c38912f` was ready. It is a draft again. The chat-traces cursor is split and placed into the filter string without a format check. Sign-in is still required. The comment is [6120050123](https://github.com/frankxai/arcanea-ai-app/pull/603#issuecomment-6120050123). This login did not merge it. Daily Jules count was 19/100. No packet was sent.
