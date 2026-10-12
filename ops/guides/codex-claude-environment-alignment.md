@@ -138,3 +138,32 @@ Continue through [config issue46](https://github.com/frankxai/starlight-agent-co
 [design programme48](https://github.com/frankxai/starlight-design-intelligence/issues/48).
 The private setup, source-proof and rollback receipts remain in the existing
 `.starlight/workspace-bootstrap/cloud-cli-client-20261011/` directory.
+
+## Codex Cloud routing, 12 October
+
+Frank clarified that the setup request targets Codex Cloud and that repository work should move there when local RAM is constrained. Use the native Cloud task workflow for code, dependency setup, builds, browser tests and source reviews. Keep Windows runtime integration, local device/asset access and OAuth sign-ins in their owning local/browser surface. This is a dispatch workflow; no new scheduler, automatic RAM hook or always-on queue collector was installed.
+
+The native CLI 0.162.1 account-visible queue was fully paginated at 11:49 UTC: 143 tasks in eight pages across 16 environment labels, with 141 ready and two error states. There were no pending tasks at that snapshot. The full task URLs and metadata are in the existing private source packet's `cloud-alignment-20261012/CLOUD-TASKS.md` and `queue-complete.json`. This is account-visible Cloud history, not proof of access to every chat, archived task or estate account. A ready task means the worker finished; integration/review/merge/deployment remain separate. Historical environment labels include older organization namespaces and do not establish canonical repository ownership.
+
+Native reads now return task IDs and task URLs; environment IDs still return null. Preserve all original tasks and rejected returns. Use the independently verified FrankX environment `68c9ecc423808191a6dcbb75df22d497`; do not guess an environment from a null field or change the saved SIS default.
+
+```powershell
+codex cloud list --json --limit 20
+codex cloud list --json --limit 20 --cursor <returned-cursor>
+codex cloud list --json --limit 20 --env <verified-environment-id>
+codex cloud status <task-id>
+codex cloud diff <task-id>
+codex cloud exec --env <verified-environment-id> --branch main --attempts 1 <source-bound-prompt>
+```
+
+Follow each returned cursor until none remains. Preserve the complete receipt, capture time and coverage. The inspected CLI supports list/status/diff/exec/apply; it has no environment-settings editor or documented Cloud model selector. The local configured model does not prove the remote worker's model. Existing account allowance and network/repository/runtime access can still block remote jobs. No purchases are authorized by the user's existing-credit allowance.
+
+A new [FrankX Cloud build repair](https://chatgpt.com/codex/tasks/task_e_6acccc67836c8320aaa10f145b945d71) was submitted once after the inventory. Its last native observation was pending. It is a new implementation contract to repair font loading and portable browser QA, rather than repeating the previous unchanged build conditions. It pins today's remote main `c8eeb33f57276d6e909858ebea11bf534d02bdc5` and carries an exact compressed seven-file Git patch from preserved candidate `debc9a895a13c24b6f39a9dd254d2866e26613ef`. The expected source checkpoint tree is `56922bb52122f51d4a096d4d3b1c4ce583747015`. These files are approved repository inputs; no credential or private runtime file was included. The worker must prove all file hashes and this tree before repairs. The original local candidate and three older Cloud attempts remain unchanged.
+
+The job must use Node 22.23.3, pnpm 10.28.0, frozen dependencies and the real `CI=true pnpm run build`. If Google font access is denied, it must repair the eight existing font-loading files with pinned licensed sources, preserving all ten families, weights, styles, CSS variables and latin/latin-ext coverage. Homepage structure/copy/logos stay outside this build-plumbing scope. The existing GitHub-only QA runner guard stays intact; generic Cloud QA must use an honest separate runner. Required product gates remain type-check, lint, strict language audit, full production build, six-width rendered/recovery proof and exact-revision independent review. The new job has not yet established those results.
+
+At 11:56 UTC local build admission was HOLD: 4008 MiB free against 8192 required, with 29 task runtimes. Fresh disk admission was 80.44 GiB/8.45%, above the hard disk floor. Only bounded source reads, text edits and lightweight CLI calls were used locally; no new local build, install, browser worker or parallel agent was started.
+
+Integrate one return at a time. Verify its source task, immutable base, checkpoint/final head and tree, changed paths, patch, runtime/test evidence and browser artifacts. Run the existing integration preflight and obtain a fresh owned lane before applying once. Reject source drift instead of reconstructing it. Reconcile onto the latest accepted main, obtain exact-revision review, then use draft-first PRs and required CI/protection. Cloud builds do not satisfy unrelated Windows execution or failed required GitHub checks. Configuration PR 112 still has failed required checks at its previously inspected head; no protection waiver was used.
+
+Official behavior is documented in [Codex Cloud](https://learn.chatgpt.com/docs/cloud) and [legacy environment setup](https://developers.openai.com/codex/cloud/environments/). The native inspected task surfaces and exact receipts remain the execution evidence.

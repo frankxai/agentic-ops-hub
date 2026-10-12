@@ -2925,3 +2925,9 @@ Dragonborne: The Last Clutch remains selected private v9 for ARC-REL-001. Indepe
 
 Next: inspect the original final spread after fresh matching admission; render the private style-only alternative and recompute all paragraph/order/trim/split checks before visually comparing reflow and chapter endings. Continue independent cold-read and human release disposition. Save this hub session/ledger/current prompt and existing product issues283/280. Private evidence stays under `.starlight/evidence/arcanea-manuscript-selection-20261011/`; public metadata review supplies no private-book acceptance.
 <!-- arcanea-realm-graph-20261012:end -->
+
+<!-- codex-cloud-routing-20261012:start -->
+## Codex Cloud routing, 12 October 2026
+
+Native account-visible queue fully paginated:143 tasks/16 environment labels at11:49 UTC; 141 ready/two error. Full private inventory retains native URLs and unknown integration states. [FrankX build/source repair](https://chatgpt.com/codex/tasks/task_e_6acccc67836c8320aaa10f145b945d71) submitted once against main c8eeb33f57276d6e909858ebea11bf534d02bdc5 with exact preserved candidate source and expected checkpoint tree 56922bb52122f51d4a096d4d3b1c4ce583747015. Pending at last read; full build/browser/review/release gates remain open. Heavy local work was held by 4008 MiB free against 8192 required. No new local worker, worktree, purchase or production source release. Existing config PR 112 checks still fail; no waiver. [Session](sessions/2026-10-12.md) and [routing guide](guides/codex-claude-environment-alignment.md) hold the current pickup. Product tracking stays at FrankX #339; prior design #48/config #46 remain open.
+<!-- codex-cloud-routing-20261012:end -->
