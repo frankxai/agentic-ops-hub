@@ -1,5 +1,11 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: GenCreator EU target and frozen PostgreSQL 17.6 evidence qualified
+
+Existing EU Supabase target ACTIVE_HEALTHY, PostgreSQL17.6/vendor17.6.1.155: isolated Creator schema absent, canonical typed account-link dependencies present. Catalog/role/advisor and caller-bound ResearchAtlas RPC inspection only; no customer rows or live changes. Accepted373ae frozen12 sources match earlier d015 proof; unchanged renderer emits52073-byte SQL SHA256ff4b53fd1e0de4abd7e4814932dc6f52bd71ce10c23e843f11b01a822f41facb. Jules6765635592643304708 COMPLETED, actual12 blobs/hashes checked, reported raw3+4 native tests pass after retained setup failures. Broad static PASS rejected for wrong columns/function permissions/membership-race/paid-access claims; completed-session correction refused. Only two reports retrieved, no patch applied or approval issued. Cleanup/setup log limits retained. [Issue5](https://github.com/frankxai/gencreator.ai/issues/5#issuecomment-6115457553).
+
+Correct current PR208 evidence: units pass; lint1error32warnings, build/e2e skipped. Actual target rehearsal/restore, PostgREST/Auth/browser denial, production secrets, customer value and merchant/managed authorization remain open. Machine BOUNDED3712MB, storage TIGHT79.82GiB: no new worktree/local heavy worker. Prior fronts preserved. Full goal ACTIVE.
+
 ## 2026-10-12: Actual hosted Memory runtime and Voice evidence checked
 
 Foreign PR29/add74540 runtime artifacts38107757518 downloaded and independently recomputed: Linux/Windows pinned MiniLM/Granite vectors remain normalized with cosine above0.9999999999994, exact four-query hybrid/semantic rankings and zero warm-cache document calls. Tested synthetic merge68a698b4 equals the full source tree; Linux LF and Windows CRLF source hashes bind correctly. Native full hosted logs confirm302 full-CI tests and14 signed SDK HTTP/Voice contract tests, zero failures/skips. Candidate audits clear; historical baseline install still reports6 vulnerabilities. Hosted sampled RSS426.43–621.51 MiB is not a local RAM or fair cold-start comparison. [Issue8 evidence](https://github.com/frankxai/starlight-memory/issues/8#issuecomment-6115266054).
