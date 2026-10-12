@@ -1,5 +1,9 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: FrankX 968 is a draft again
+
+FrankX [968](https://github.com/frankxai/frankx.ai-vercel-website/pull/968) at `c5f442b0961afc7fcdc691c09aa59ed4f89bc172` was ready. It is a draft again. The added test runs `scripts/observability/analytics-cli.mjs` and checks JSON field types. That does not show GA4 or Search Console are enabled for issue 905. The comment is [6118565953](https://github.com/frankxai/frankx.ai-vercel-website/pull/968#issuecomment-6118565953). This login did not merge it. Daily stayed 21/100. No packet was sent.
+
 ## 2026-10-12: FrankX 969 is a draft again
 
 FrankX [969](https://github.com/frankxai/frankx.ai-vercel-website/pull/969) at `714b9909ecc96c4e79e81b1aef8df931ba063db8` was ready. It is a draft again. The SEO health script now passes a sitemap check when the source contains `siteConfig.url`, and the full llms check passes when the source is longer than 500 characters. The comment is [6117968430](https://github.com/frankxai/frankx.ai-vercel-website/pull/969#issuecomment-6117968430). This login did not merge it. Daily Jules count was 21/100. No packet was sent.
