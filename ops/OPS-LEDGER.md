@@ -1,5 +1,12 @@
 # 🛰️ Agentic Ops Ledger — Single Source of Truth
 
+## 2026-10-12: Codex owns Command Center and native ChatGPT sign-in
+
+Frank selected Command Center and desktop Suite for Codex; other Queen workstreams stay with Claude/current owners. [App issue73](https://github.com/frankxai/starlight-command-center/issues/73) and [Friday16October review](plans/suite-app-eow-2026-10-16.md) retain goals, unknown baselines and metrics: live sign-in, accepted editable/exportable journeys, recovery, time/repair against native Codex, privacy, cost and install/release evidence.
+
+[Native-auth draftPR74](https://github.com/frankxai/starlight-command-center/pull/74),9cca6baa, adds OAuth/callback/protected account storage/IPC/model discovery/refresh/revoke.20fixture checks and syntax/ownership/secret gates pass; real provider/keychain/app journey and independent approval remain open. Review is REVISE plus timeout; build admission HOLD2626/8192MiB, disk79.6GiB/8.4%. Reported default-branch119dependency alerts/39high remain untriaged. No production claim or new service. Preserve the complete Queen programme and all other fronts.
+
+
 ## 2026-10-11: Queen programme status, costs and continuation audited
 
 [Status/value audit](plans/queen-status-value-2026-10-11.md) distinguishes deployed creator foundations, installed operations controls, merged libraries and tested Queen drafts. Fresh GitHub reads include SIS358, config90, Swarm23/38, Ops216/aed2b59 and CC70/cd43fa7. Native SIWC host sign-in, live managed Queen execution, independent worker approval, tenant-safe creator acceptance and measured ROI remain open. The shared memory read returned321 lexical records/zero vectors; source catalogs are not operating teams.
