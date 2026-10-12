@@ -2,6 +2,10 @@
 
 **Last sweep:** 2026-10-04 (recorded date retained; no new estate sweep claimed).
 
+## 2026-10-12 06:35 UTC: Doctor maintained-SDK proposal awaits an owned lane
+
+Live Jules2536320996174217098 is COMPLETED; approval recovery is finished. Preserve rejection of its original report and acceptance of the replacement. Doctor8 has a private two-file SDK1.32.1 proposal at immutable main1fa90823; registry metadata matches prior dependency ranges/peers/Node engine. Structural comparison passes, but pnpm regeneration, execution, independent candidate review and merge remain unperformed. Four foreign checkouts and TIGHT storage prevent local integration; no remote source write was used. Preserve version0.5.0 reservations until verified. SIS release38210385590 still has successful verification and WAITING publisher. Managed billing, database and customer-value gates remain open.
+
 ## 2026-10-12 06:06 UTC: Modular release source accepted; production job waits for Frank
 
 [SIS368](https://github.com/frankxai/Starlight-Intelligence-System/pull/368) merged normally at05:53:10UTC from76db5b9dd63badcf80c74020fa6622a64588b061 to e48722d7771f52c0f96877b602161cd3694f37b5, complete reviewed/receiving tree dd3114adf900fa4d8ce25b06d73737e731141a57. Core/AI SDK0.2.1 and MCP0.2.2 are accepted release source. The earlier feb39 BLOCK and admission refusal remain preserved; recovered RAM allowed fresh PP26820 BOUNDED7451MiB free/6144required/CPU23 and one exact76db native Google review. It returned PASS/no findings in63.63s, exit0, full ten-file coverage including both deletion preimages. [Attestation6118582869](https://github.com/frankxai/Starlight-Intelligence-System/pull/368#issuecomment-6118582869) binds delivered packet SHA2564d9ec3fd288c396d21c89e057739b28e7140446c76ed6224b57b04f14a86701f; lead independently verified19 canonical remote blobs. Reviewer did not execute tests, compute remote hashes or authenticate its backend cryptographically. OwnedPID8124 is terminal.
