@@ -1,3 +1,13 @@
+<!-- queen-evolution-doctor-20261013:start -->
+## Continue Queen from verified diagnosis to one protected native result
+
+Continue Frank's Queen evolution and session-preservation objective from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, and [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51. Read the installation/evolution guide, private recovery index/Claude pickup, exact reviews and current repository instructions. Preserve35 original Codex transcript files, corrected reading views, partial recovery bundles and unfinished peer work. Do not claim existing terminals were stopped or full Queen activation accepted.
+
+Recheck capacity and lane ownership first. Last observation72.35GiB/7.60% disk and PP swarm HOLD prevents new installation, building, swarms and worktrees. Use the read-only doctor; prepare exact authorized reclamation/owner handoff and fresh admission before dependent work. Never delete captures or closed receipts, kill foreign processes, change spend/protection or replay uncertain execution to make admission green. The installed ownership CLI has no owner-transfer command.
+
+All20 follow-on checks and exact twelve-file source review pass in their scopes; older67 passes/one skip belong to288132b. Read current hosted checks and normal receiving-source gates. After admission, integrate the existing protected Codex native transport and prove one useful issue-bound read-only task with exact provider/session/turn identity, permissions, budgets, saved prompt/output/files, steering, interruption, restart/recovery and independent artifact acceptance. Compare with manual native resume. Then add Claude through the same contract and one-owner budgeted scheduling. Cloudflare migration, Temporal comparison, Rust host and broader healing remain scoped proposals. Save actual progress in this hub and existing Ops134; preserve all prompts below.
+<!-- queen-evolution-doctor-20261013:end -->
+
 <!-- queen-agent-manager-recovery-20261013:start -->
 ## Claude: finish Queen recovery and one protected native task
 

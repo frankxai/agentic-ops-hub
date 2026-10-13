@@ -1,3 +1,11 @@
+<!-- queen-evolution-doctor-20261013:start -->
+## Queen: activation diagnosis and admission repair
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, adds observation-only `doctor`, preserves PP swarm drain/pause restrictions and supplies an explicit installation/evolution guide. All20 focused follow-on cases pass; independent v0 Max twelve-file source review PASSES after repairing documentation CI filters. This is DRAFT_NOT_LIVE, with no independent execution or real-provider acceptance. Earlier67 passing cases and one skip belong to288132b and were not broadly rerun under machine HOLD.
+
+Latest observation is about72.35GiB/7.60% disk free and PP swarm HOLD. Roughly3.8GiB reclaim plus the operation reserve is needed at that observation; exact authorization and fresh measurements remain required. No new swarm, service, install, build, cleanup or worktree occurred. The original archives and all unfinished work remain preserved. [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51 track protected native control, useful provider output, continuation/interruption/restart and broader scheduling. Follow the13October session and current prompt; full swarm management remains open.
+<!-- queen-evolution-doctor-20261013:end -->
+
 <!-- queen-agent-manager-recovery-20261013:start -->
 ## Queen: private session preservation and owned CLI control
 
