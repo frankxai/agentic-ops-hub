@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/frankxai/agentic-ops-hub/registry/estate-lifecycle.schema.json",
+  "title": "Estate lifecycle registry row",
+  "type": "object",
+  "required": ["id", "brand", "kind", "layer", "state", "owner_general", "human_gate", "next_gate", "kill"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "brand": {"type": "string", "enum": ["frankx", "arcanea", "sis", "gencreator", "agentic-income", "blue-life", "animelegends", "vibeclubs", "personal", "unassigned"]},
+    "kind": {"type": "string", "enum": ["product", "repo", "substrate", "vertical", "client-vertical", "experiment", "pack", "utility", "runtime", "snapshot", "personal", "unlabeled"]},
+    "layer": {"type": "string", "enum": ["L0", "L1", "L2", "L3", "L4", "L5", "L6", "L7", "—"]},
+    "state": {"type": "string", "enum": ["S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7"]},
+    "tier": {"type": ["string", "null"], "enum": ["T0", "T1", "T2", "T3", null]},
+    "owner_general": {"type": "string", "enum": ["ceo", "cfo", "coo", "cto", "cpo", "cmo", "caio", "chro", "cco", "frank"]},
+    "owner_squad": {"type": ["string", "null"]},
+    "human_gate": {"type": "string"},
+    "surfaces": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "domain": {"type": ["string", "null"]},
+        "vercel_project": {"type": ["string", "null"]},
+        "npm": {"type": ["string", "null"]},
+        "plugin": {"type": ["string", "null"]},
+        "mcp": {"type": ["string", "null"]},
+        "repo": {"type": ["string", "null"]}
+      }
+    },
+    "offer": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "price": {"type": ["number", "null"]},
+        "currency": {"type": ["string", "null"], "enum": ["EUR", "USD", null]},
+        "rail": {"type": ["string", "null"], "enum": ["polar", null]},
+        "state": {"type": "string", "enum": ["proposed", "gated", "open", "retired"]},
+        "offer_truth_ref": {"type": ["string", "null"]}
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "description": "null means never pulled; never write 0 for a metric that was not measured",
+      "additionalProperties": false,
+      "properties": {
+        "payers": {"type": ["integer", "null"]},
+        "mrr_eur": {"type": ["number", "null"]},
+        "traffic_14d": {"type": ["integer", "null"]},
+        "consumers": {"type": ["integer", "null"]},
+        "last_verified": {"type": ["string", "null"], "format": "date"}
+      }
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tokens_month": {"type": ["integer", "null"]},
+        "ram_class": {"type": ["string", "null"], "enum": ["allow", "bounded", "hold", null]},
+        "frank_hours_month": {"type": ["number", "null"]}
+      }
+    },
+    "next_gate": {
+      "type": "object",
+      "required": ["to", "receipt", "due"],
+      "additionalProperties": false,
+      "properties": {
+        "to": {"type": "string", "enum": ["S1", "S2", "S3", "S4", "S5", "S6", "S7"]},
+        "receipt": {"type": "string"},
+        "due": {"type": "string"}
+      }
+    },
+    "kill": {"type": "string"},
+    "receipts": {"type": "array", "items": {"type": "string", "format": "uri"}}
+  }
+}
