@@ -1,3 +1,11 @@
+<!-- sis-executive-and-queen-lifecycle-20261013:start -->
+## 2026-10-13: Starlight Executive Tier (151 Agents) Hardened & Queen Terminal Agent Lifecycle Qualified
+
+- **Executive Tier & 151 Agents ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Re-lands 7 Executive cards (`starlight-ceo.md`, `starlight-cfo.md`, `starlight-coo.md`, `starlight-cto.md`, `starlight-cmo.md`, `starlight-caio.md`, `starlight-chief-of-staff.md`). Directly resolves all 3 Codex P1 review findings: CAIO substrate version bumps require explicit human Frank approval; CTO paid vendor platforms/cloud dependencies require Frank human approval and CFO spend gate (money fails closed); Chief of Staff routes private/financial verdicts exclusively to `private/memory/` (operator-private, gitignored). Tracking [Issue #408](https://github.com/frankxai/Starlight-Intelligence-System/issues/408).
+- **Queen Terminal Agent Lifecycle ([SIS PR #406](https://github.com/frankxai/Starlight-Intelligence-System/pull/406))**: Provider-neutral CLI-agent discovery, lifecycle management, and session preservation. 4 native MCP tools exposed: `sis_queen_agent_inspect`, `sis_queen_agent_save`, `sis_queen_agent_stop`, `sis_queen_agent_resume`. Clean branch replaces superseded PR #401. Tracking [Issue #398](https://github.com/frankxai/Starlight-Intelligence-System/issues/398#issuecomment-6153816908).
+- **100% Green Verification**: `npm run test:substrate` (142/142), `npm run test:operational` (73/73), `npm run test:v01-evals` (34/34), `test/queen-agent-lifecycle.test.ts` (11/11). Clean compilation via `tsc`.
+<!-- sis-executive-and-queen-lifecycle-20261013:end -->
+
 <!-- estate-agent-delivery-20261013:start -->
 ## Estate agent routing and backlog reconciliation
 
