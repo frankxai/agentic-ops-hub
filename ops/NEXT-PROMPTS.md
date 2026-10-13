@@ -1,6 +1,8 @@
 <!-- queen-evolution-doctor-20261013:start -->
 ## Continue Queen from verified diagnosis to one protected native result
 
+This is the current pickup for this Queen evolution and recovery slice. It supersedes the earlier “Claude: finish Queen recovery and one protected native task” prompt below as the next-action instructions for this slice; that prompt remains historical evidence. Other active fronts retain their own pickup prompts and unfinished objectives.
+
 Continue Frank's Queen evolution and session-preservation objective from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, and [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51. Read the installation/evolution guide, private recovery index/Claude pickup, exact reviews and current repository instructions. Preserve35 original Codex transcript files, corrected reading views, partial recovery bundles and unfinished peer work. Do not claim existing terminals were stopped or full Queen activation accepted.
 
 Recheck capacity and lane ownership first. Last observation72.35GiB/7.60% disk and PP swarm HOLD prevents new installation, building, swarms and worktrees. Use the read-only doctor; prepare exact authorized reclamation/owner handoff and fresh admission before dependent work. Never delete captures or closed receipts, kill foreign processes, change spend/protection or replay uncertain execution to make admission green. The installed ownership CLI has no owner-transfer command.
