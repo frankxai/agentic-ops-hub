@@ -1,105 +1,57 @@
-# 🏛️ Curated Coding Agents Index & Orchestration Guide
+# Coding agents inventory and orchestration
 
-This document is a first-principles guide for selecting, running, and orchestrating the AI coding agents available on this workstation. By understanding the relative strengths, architecture, and interfaces of each agent, you can delegate tasks to the tool best suited for the job.
+Selection guide reviewed on 13 October 2026. Use the [local and Cloud delivery guide](ESTATE-AGENT-DELIVERY.md) for roles, skills, costs, task packets and merge boundaries. This page activates no harness, model or team.
 
----
+## Coding agents inventory
 
-## 📋 Coding Agents Inventory
+A harness, model, personality, tool connection and execution environment are separate choices. Verify each in the actual task runtime.
 
-| Agent | CLI / IDE | Primary Model | Strength | Best For |
-| :--- | :--- | :--- | :--- | :--- |
-| **Claude Code** | CLI | `claude-3-5-sonnet` | Deep reasoning, tool discovery, git & CLI autonomy | Multi-file refactors, debugging test failures, library upgrades |
-| **DeepAgent (dcode)** | CLI | Model-agnostic (Anthropic, OpenAI, Gemini) | Long-horizon planning, sub-agent delegation, remote sandboxing | Complex multi-stage research + coding, isolated sandbox runs |
-| **Cursor** | IDE (VS Code Fork) | GPT-4o, Claude 3.5, custom | Visual inline editing, codebase chat, multi-file edits (Composer) | Frontend UI, daily feature building, human-in-the-loop editing |
-| **Codex** | CLI | OpenAI GPT-4 / GPT-5 | Raw benchmark-grade execution and automation | Standard developer tasks requiring high accuracy |
-| **Grok CLI** | CLI | xAI Grok-2 | Fast terminal operations, real-time web access | Fast terminal scripting, checking real-time API changes |
-| **OpenCode** | CLI | Groq llama-4-scout | Speed and zero-cost local/cloud model integration | Rapid scratchpad edits, speed-coding, and testing APIs |
-| **Antigravity (agy)** | CLI | Custom Gemini / OS-level | High-velocity OS & creator workspace automation (YOLO) | Fast system scripting, cross-repo synchronization, workspace ops |
+| Interface | Appropriate work | Verification boundary |
+| --- | --- | --- |
+| Local Codex | Inspection, implementation and integration in an owned checkout | Native instructions, admission, actual model and scoped tools |
+| Codex Cloud | Isolated repository-contained implementation, builds and tests | Exact environment/source, allowance, full patch and actual command evidence |
+| Claude Code | An admitted maker or independent reviewer | Actual login/model, permissions and maker/checker separation |
+| Antigravity/Gemini | Engineering or visual contribution where actual tools fit | Exposed model/environment; local skills are not automatically present |
+| Grok | Independent source review or a bounded worker | Authentication, model, context isolation and reviewed head |
+| OpenCode or another installed CLI | A provider adapter for a measured task | Version, provider, permissions, recovery and payer |
+| v0 | Visual alternatives, reusable components and interactive refinement | Brand pack, branch, active payer/model and responsive evidence |
+| Figma | Shared design source, variables and component governance | Pinned library, permissions and verified code handoff |
 
----
+No row establishes superiority, unattended authority or a running service. Preserve accepted product work and compare a serious alternative on the same user job.
 
-## 🔍 First-Principles Selection Matrix
+## First-principles selection matrix
 
-To orchestrate these agents effectively, apply these four selection axes:
+1. Name the useful output, original intent, owner and acceptance.
+2. Use deterministic CLI/API checks for inventory, revisions, check state and caps.
+3. Use an available small model for bounded interpretation after a representative accuracy test.
+4. Use a capable maker and a separate checker for consequential source, design or release decisions.
+5. Offload heavy work only when the remote environment, source and quota are verified.
+6. Integrate one exact-reviewed change at a time through normal protection; verify receiving source and relevant behaviour.
 
-```
-                      Autonomy Axis
-             High Autonomy (Set & Forget)
-                         │
-                         │    [DeepAgent]
-                         │
-                         │    [Claude Code]
-                         │
-CLI-First ───────────────┼─────────────── IDE-First (Visual)
-                         │
-     [OpenCode]          │    [Cursor]
-                         │
-     [Antigravity]       │    [Cline]
-                         │
-             Low Autonomy (Interactive)
-```
+Choose models by task quality, total repair/review cost and latency. Keep development subscriptions separate from production API spend. Local model settings do not prove what ran in Cloud or v0.
 
-### 1. The Interface Choice: CLI vs. IDE
-* **Use CLI-first agents (Claude Code, DeepAgent, OpenCode)** when you want the agent to operate like a junior developer in the terminal: executing commands, reading compiler errors, running test loops, and updating git status autonomously.
-* **Use IDE-first agents (Cursor, Cline)** when you need a visual editor. These are optimal for frontend work (CSS/HTML/React layout changes), side-by-side diff reviews, and interactive file editing.
+## Starlight orchestration
 
-### 2. Autonomy Level: Interactive vs. YOLO/Autonomous
-* **Low-autonomy (Cursor, OpenCode):** Best when you want to review every line as it's written. Prevents the model from going down "rabbit holes."
-* **High-autonomy (Claude Code, DeepAgent):** Best when you can write a comprehensive prompt, set a goal, and let the agent write code, compile, run tests, and iterate until success.
+Keep the existing coordinator, Registry, issue/objective records, lane tools and [merge steward](MERGE-STEWARD.md). Do not create a second command centre or an unbounded polling swarm.
 
-### 3. Context & Token Management
-* **Claude Code** uses a massive context window (Sonnet 3.5), making it excellent for searching across large codebases.
-* **DeepAgent** includes aggressive context compaction (summarizing past history and writing files/tool outputs to disk) which enables it to handle long-running, multi-hour threads without overflowing context limits.
+Native Codex starts with `codex --cd <verified-repository-or-owned-worktree>`. A later shell directory change does not reload its instruction chain; explicitly read destination and deeper guides. Shortcuts are machine-local conveniences: inspect installed definitions and verify root, origin, branch and lane.
 
-### 4. Sandboxing & Security
-* **DeepAgent (dcode)** is built with first-class remote sandboxing (LangSmith, Daytona, Runloop, Modal). Use it when executing untrusted code or when you need a reproducible environment.
-* **Claude Code & OpenCode** run natively on the host workstation. Use them for trusted internal repositories.
+Use explicit Starlight SO routing for a packet and admitted dispatch. Hooks supply context and checks; they do not authorize fanout. Roles can run sequentially under one coordinator. Additional workers need independent work and machine/remote and cost admission.
 
----
+Cloud receives the original task/issue, immutable base, environment, exclusive paths, tools, time/token/retry limits, payer, acceptance and full return format. Local-only files and unpublished patches need a supported transfer path. `READY`, `ERROR` and no-diff returns require inspection; they do not imply integration.
 
-## 📦 Sources & Installation Guide
+The [existing alignment guide](../ops/guides/codex-claude-environment-alignment.md) records dated evidence. Re-read current status and instructions before reuse.
 
-If you need to install or update these agents on a new machine or environment, use these canonical packages:
+## Current model and billing references
 
-### 1. DeepAgent (Deep Agents Code)
-* **Website/GitHub:** [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents)
-* **Installation:**
-  ```bash
-  uv tool install deepagents-code
-  # OR (natively on macOS/Linux)
-  curl -LsSf https://langch.in/dcode | bash
-  ```
+- [v0 ChatGPT integration](https://v0.app/docs/chatgpt) lists supported subscription models and the billing indicator. GPT-6.1 Sol is not listed in the inspected 13 October documentation; the installed MCP method exposes a separate four-model v0 enum.
+- [v0 pricing](https://v0.app/pricing) publishes input, output and cache rates. History and source context count; integration credit units are not automatically dollars.
+- [Anthropic pricing](https://platform.claude.com/docs/en/about-claude/pricing) supports the Haiku 5.5 classification scenario in the delivery guide. Access, payer and accuracy still need verification.
+- [Codex plan usage](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) governs allowance; Cloud is not unlimited capacity.
+- [Jules usage limits](https://jules.google/docs/usage-limits/) describe a possible remote worker. Inspect the actual account and task contract before routing there.
 
-### 2. Claude Code
-* **Website/GitHub:** [anthropic-ai/claude-code](https://github.com/anthropic/claude-code)
-* **Installation:**
-  ```bash
-  npm install -g @anthropic-ai/claude-code
-  ```
+A model route is a proposal until its configuration, output, recovery and cost are measured. Unknown balances, runtime identities and outcomes remain unknown.
 
-### 3. OpenCode
-* **Website/GitHub:** [opencode-ai/opencode](https://github.com/opencode-ai/opencode)
-* **Installation:**
-  ```bash
-  npm install -g opencode-ai
-  ```
+## Sources and installation guide
 
-### 4. Cursor
-* **Website:** [cursor.sh](https://cursor.sh)
-* **Installation:** Download desktop app for Windows/macOS/Linux.
-
-### 5. Antigravity (agy)
-* **Ecosystem Path:** Local binary managed via ACOS (`C:\Users\frank\agentic-creator-os`).
-
----
-
-## ⚡ Starlight Orchestration
-
-To run these agents instantly in their respective repository contexts, use the **Starlight Command Grid** in PowerShell:
-
-* Launch **Claude Code**: `cl <repo>` or shortcut (`clsis`, `clfx`, `clarc`, `clapp`, `clacos`)
-* Launch **Codex**: `cd <repo>` or shortcut (`cdsis`, `cdfx`, `cdarc`, `cdapp`, `cdacos`)
-* Launch **Grok**: `gr <repo>` or shortcut (`grsis`, `grfx`, `grarc`, `grapp`, `gracos`)
-* Launch **OpenCode**: `oa <repo>` or shortcut (`oasis`, `oafx`, `oarc`, etc.)
-* Launch **DeepAgent (dcode)**: `da <repo>` or shortcut (`dasis`, `dafx`, `daarc`, etc.)
-* Launch **Antigravity**: `ay <repo>` or shortcut (`agysis`, `agyfx`, `agyarc`, etc.)
+Use current provider documentation and the existing estate installation/projection owner. Inventory is not permission to run installers, copy credentials, alter billing or start every service. Local profiles, Cloud environments and product agents retain separate ownership and release contracts.
