@@ -44,7 +44,7 @@ The [existing alignment guide](../ops/guides/codex-claude-environment-alignment.
 
 ## Current model and billing references
 
-- [v0 ChatGPT integration](https://v0.app/docs/chatgpt) lists supported subscription models and the billing indicator. GPT-6.1 Sol is not listed in the inspected 13 October documentation; the installed MCP method exposes a separate four-model v0 enum.
+- [v0 ChatGPT integration](https://v0.app/docs/chatgpt) lists supported subscription models and the billing indicator. GPT-6.1 Sol is not listed in the inspected 13 October documentation; the installed MCP method exposes a separate four-model v0 enum. Re-check the documentation, actual interface and payer before each dispatch.
 - [v0 pricing](https://v0.app/pricing) publishes input, output and cache rates. History and source context count; integration credit units are not automatically dollars.
 - [Anthropic pricing](https://platform.claude.com/docs/en/about-claude/pricing) supports the Haiku 5.5 classification scenario in the delivery guide. Access, payer and accuracy still need verification.
 - [Codex plan usage](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan) governs allowance; Cloud is not unlimited capacity.
