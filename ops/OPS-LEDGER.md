@@ -1,3 +1,24 @@
+<!-- queen-bus-live-gaps-20261014:start -->
+## Queen: machine-bus ownership and publication repaired
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`e6470703a459209aaf8f95ebb09a8f4b6d60dcf9`, retains runtime code reviewed at
+`5c3a0965a3ac88530c821915ebfdb33c40f74a4c`, preserves task identity and crashed
+writers, binds completion to an attempt and restricts publication to one pinned
+envelope commit under protected host scope. Success follows ownership cleanup.
+Local tests: 26 passes/one Windows symlink-privilege skip; real child-process crash
+coverage, mocked adversarial Git boundaries and a real three-transition Git remote
+fixture with unchanged runtime queue and enabled hooks. Retained independent FAIL repaired; final source QA
+PASS. No global execution lease, hosted/live acceptance or runtime install is claimed.
+
+Fresh Queen/runtime and GenCreator private activation observations are recorded in
+the [14 October session](sessions/2026-10-14.md). Existing archives, business drafts
+and peer work remain. Current admission, hosted gates and protected activation are
+blocked; no new local swarm, cache purge, account change, deployment or foreign
+process stop occurred. Full founder goal remains unachieved; use the current pickup
+and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51.
+<!-- queen-bus-live-gaps-20261014:end -->
+
 ## 2026-10-14: Estate pulse #1 run; 62 Vercel projects re-checked, 73 repo entities classified, capacity split measured 3/88/9
 
 `registry/pulse-2026-10-14.md`. Vercel 10-14: S0 1 / S1 20 / S2 11 / S3 15 / S4 0 / S5 0 / S6 4 / S7 11; six rows changed (vibeclubs-web recovered READY, anime-legends now ERROR, solarcarport-tech and rova-resort are live commercial surfaces, starlight-technology and arcanea-academy active). `registry/entities-2026-10-14.{json,md}` adds 73 repo/non-Vercel rows (S7 candidates: 9). S7 objection window open 2026-10-14 → 2026-10-21 for 11 Vercel projects and 9 repo rows; tags and redirects are COO actions after the window, Frank signs anything with traffic or paid history. Ledger entries 10-06 → 10-14 bucket to flagship 3 % / candidate-substrate 88 % / experiment 9 % against the 60/30/10 target: CEO drift flag raised. Zero S4 receipts estate-wide. Private `agentic-ops` registry not readable from this projection; mirror pending.
