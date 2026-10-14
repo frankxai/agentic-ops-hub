@@ -168,11 +168,11 @@ Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and
 Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and PR #407 (Hardened Executive Tier cards, 151 agents, issue #408). Both draft PRs are cleanly branched from origin/main with 100% green test passes across substrate (142/142), operational (73/73), Track D evals (34/34), and lifecycle unit tests (11/11). Run independent review via allowlisted GitHub Apps per `tools/merge-review/merge_review_gate.py` (`STARLIGHT-INDEPENDENT-REVIEW-V1`). Once signed receipts pass, promote PRs from draft and execute sequential fast-forward merge into main. Verify post-merge receiving main CI and rebuild dist/ artifacts.
 <!-- sis-executive-and-queen-lifecycle-20261013:end -->
 
-<!-- estate-lifecycle-pulse-1-20261013:start -->
-## Run estate pulse #1 against the lifecycle registry
+<!-- estate-lifecycle-pulse-2-20261014:start -->
+## Run estate pulse #2 (due 2026-10-21)
 
-Read `registry/README.md`, `registry/vercel-projects-2026-10-13.md` and `docs/SWARM-RUNTIME-ARCHITECTURE.md`. For each of the 62 Vercel projects confirm or change `state_proposed` with one line of evidence, assign brand and owner General where `unassigned`, and record S7 candidates with a recovery tag plus a 7-day objection entry in this ledger. Extend the snapshot to the 68 registry entities and the 55 cloned repos. Report the actual 60/30/10 capacity split from the 10-06 → 10-13 ledger entries. Do not create repos, Vercel projects, cockpits or strategy docs; do not open Polar or Whop; do not start any Cloudflare or Vercel workflow. Save the result as `registry/pulse-2026-10-20.md` and a one-line ledger entry.
-<!-- estate-lifecycle-pulse-1-20261013:end -->
+Read `registry/pulse-2026-10-14.md` first. Close the S7 objection window: for each candidate not claimed by an owner, record the recovery tag and redirect README as COO actions (Frank signs anything with traffic or paid history); do not archive from this hub. Give the 21 S0/S1 Vercel projects a row (brand, question, metric, 30-day TTL, token budget) or an S7 entry. Mirror the private `agentic-ops` registry rows into `registry/` once the COO exports them. Re-bucket ledger entries 10-14 → 10-21 into the 60/30/10 pools and report drift; the only acceptable 60 % content is the revenue sequence (Polar sole rail, Blueprint $67, Vibe OS $97, Worldbuilder EUR99, Kit page, Trinity SOW). Record whether starlight-evals produced a fresh scorecard; if not, no S1→S2 move is signed. Fix or roll back `anime-legends` production (ERROR 2026-10-14). Do not create repos, Vercel projects, cockpits or strategy docs; do not open Polar or Whop; do not start any Cloudflare or Vercel workflow. Save as `registry/pulse-2026-10-21.md` plus a one-line ledger entry.
+<!-- estate-lifecycle-pulse-2-20261014:end -->
 
 <!-- queen-native-session-20261011:start -->
 ## Queen: assemble one accepted recoverable native task

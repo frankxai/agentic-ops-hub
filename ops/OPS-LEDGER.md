@@ -19,6 +19,10 @@ process stop occurred. Full founder goal remains unachieved; use the current pic
 and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51.
 <!-- queen-bus-live-gaps-20261014:end -->
 
+## 2026-10-14: Estate pulse #1 run; 62 Vercel projects re-checked, 73 repo entities classified, capacity split measured 3/88/9
+
+`registry/pulse-2026-10-14.md`. Vercel 10-14: S0 1 / S1 20 / S2 11 / S3 15 / S4 0 / S5 0 / S6 4 / S7 11; six rows changed (vibeclubs-web recovered READY, anime-legends now ERROR, solarcarport-tech and rova-resort are live commercial surfaces, starlight-technology and arcanea-academy active). `registry/entities-2026-10-14.{json,md}` adds 73 repo/non-Vercel rows (S7 candidates: 9). S7 objection window open 2026-10-14 → 2026-10-21 for 11 Vercel projects and 9 repo rows; tags and redirects are COO actions after the window, Frank signs anything with traffic or paid history. Ledger entries 10-06 → 10-14 bucket to flagship 3 % / candidate-substrate 88 % / experiment 9 % against the 60/30/10 target: CEO drift flag raised. Zero S4 receipts estate-wide. Private `agentic-ops` registry not readable from this projection; mirror pending.
+
 <!-- queen-budget-dispatch-20261014:start -->
 ## Queen: actual cost gate composed with durable dispatch
 
