@@ -1,3 +1,23 @@
+<!-- queen-cost-demand-20261014:start -->
+## Queen: cost admission repaired; partner and demand evidence prepared
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`d8597347397686d85087ddf0a5ce4bbfbfd7ac59`, revalidates paid routing/privacy/maker
+binding, preserves unknown ledgers and validates accounting invariants. A bounded
+in-memory cost audit reports unresolved costs and unknown baseline headroom.
+All29 focused Windows cases pass; exact six-text source and three-artifact private
+business-draft QA PASS, without independent execution or production acceptance.
+Two earlier source FAILs remain retained. Windows/Ubuntu coverage is configured.
+
+Four sourced research targets were added to the existing private partner tracker;
+application/research drafts and current-price scenarios are saved. Actual demand,
+membership, credit awards, invoices, savings and ROI remain unknown. Vercel billing
+queries returned404for the verified team. No send, application, spend or schedule
+occurred. Machine RAM/storage holds still prohibit new local fanout/build/install.
+See [14October session](sessions/2026-10-14.md) and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51.
+Source remains DRAFT_NOT_LIVE and the full multi-layer goal stays ACTIVE.
+<!-- queen-cost-demand-20261014:end -->
+
 <!-- queen-evolution-doctor-20261013:start -->
 ## Queen: activation diagnosis and admission repair
 
