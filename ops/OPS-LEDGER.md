@@ -1,3 +1,25 @@
+<!-- sis-swarm-topology-and-demand-doors-20261014:start -->
+## 2026-10-14: Swarm Fleet Architecture Codified, Demand Doors Proactively Fixed, and Queen Handoff Substrate Operational
+
+- **Swarm Topology & Cloud Blueprint ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Codified and committed `docs/architecture/STARLIGHT-SWARM-AND-CLOUD-TOPOLOGY.md`. Establishes the 5-Tier Swarm Hierarchy (Kings, Queens, Model Councils, 151 Specialists, Front-Door), 3-Tier Heterogeneous Model Routing Matrix (Flash/Haiku, Sonnet/Codex, Opus/Pro), and Multi-Cloud Architecture (Cloudflare R2, OCI bare-metal GPU/ADK, Vercel preview gate, Upstash Redis/Vector, Supabase Postgres).
+- **Proactive Demand Doors Resolution**:
+  - **Door #2 (KV Alias)**: Added Upstash Redis REST fallback (`UPSTASH_REDIS_REST_URL`/`TOKEN`) in `packages/demand-capture/src/store.ts` and `report.mjs`.
+  - **Door #5 (Sender Authentication)**: Enforced verified `mail.frankx.ai` DKIM domain across Stripe/LemonSqueezy webhooks and GenCreator starter download.
+  - **Door #6 (Akamoto Surface 404)**: Updated `graph/products.graph.json` marking gift deliverable as `on-disk` and held dark until `akamoto.io` deployment is verified.
+- **Queue Blocker Reduction**: 3 completed demand door cards archived into `_archive-completed-202610/`. Total Queen queue blockers reduced from 24 down to 21 (demand door blockers reduced from 5 down to 2).
+- **PowerShell 5.1 Terminal Cleanliness**: Fixed SSOT path in `Import-StarlightShell.ps1` and sanitized Unicode emojis in `scripts/agy-tools.ps1` with UTF-8 BOM (`b71056465`), resolving Windows PowerShell 5.1 ANSI boot warnings.
+- **100% Multi-Layer Verification**: Verified Cloudflare Worker Edge router E2E (12/12 pass), Sovereign Durability & Transports (73/73 pass), Foundry upstream conformance and OpenAI preflight (53/53 pass, 40+ checks pass), and Finance IS PnL / Stripe / runway (34/34 pass). Core test matrix 100% green: `npm run test:operational` (73/73), `npm run test:substrate` (142/142), `npm run test:v01-evals` (34/34), `npm run build` (tsc clean).
+- **Tool Plane & Preflight**: Machine RAM measured at 6.3 GiB free (safe above 4.0 GiB floor); Starlight tool plane running on PID 14552 / port 7317 with 37 active client sessions.
+<!-- sis-swarm-topology-and-demand-doors-20261014:end -->
+
+<!-- sis-executive-and-queen-lifecycle-20261013:start -->
+## 2026-10-13: Starlight Executive Tier (151 Agents) Hardened & Queen Terminal Agent Lifecycle Qualified
+
+- **Executive Tier & 151 Agents ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Re-lands 7 Executive cards (`starlight-ceo.md`, `starlight-cfo.md`, `starlight-coo.md`, `starlight-cto.md`, `starlight-cmo.md`, `starlight-caio.md`, `starlight-chief-of-staff.md`). Directly resolves all 3 Codex P1 review findings: CAIO substrate version bumps require explicit human Frank approval; CTO paid vendor platforms/cloud dependencies require Frank human approval and CFO spend gate (money fails closed); Chief of Staff routes private/financial verdicts exclusively to `private/memory/` (operator-private, gitignored). Tracking [Issue #408](https://github.com/frankxai/Starlight-Intelligence-System/issues/408).
+- **Queen Terminal Agent Lifecycle ([SIS PR #406](https://github.com/frankxai/Starlight-Intelligence-System/pull/406))**: Provider-neutral CLI-agent discovery, lifecycle management, and session preservation. 4 native MCP tools exposed: `sis_queen_agent_inspect`, `sis_queen_agent_save`, `sis_queen_agent_stop`, `sis_queen_agent_resume`. Clean branch replaces superseded PR #401. Tracking [Issue #398](https://github.com/frankxai/Starlight-Intelligence-System/issues/398#issuecomment-6153816908).
+- **100% Green Verification**: `npm run test:substrate` (142/142), `npm run test:operational` (73/73), `npm run test:v01-evals` (34/34), `test/queen-agent-lifecycle.test.ts` (11/11). Clean compilation via `tsc`.
+<!-- sis-executive-and-queen-lifecycle-20261013:end -->
+
 <!-- estate-agent-delivery-20261013:start -->
 ## Estate agent routing and backlog reconciliation
 
