@@ -62,6 +62,36 @@ Local focused verification passes48 of49 cases with one POSIX-only skip on Windo
 Local swarm fanout remained held/constrained despite founder authorization. One existing remote private source reviewer was used; no additional local agents were spawned. Machine policy v1.2 numerical storage floors remain8% and50GiB; fresh local filesystem receipts supplement absent disk fields in the legacy PP CLI without overriding explicit PP holds/unknown state. Recheck admission before the next workload. The private `~/.starlight/agent-manager/INDEX.md` and `CLAUDE-QUEEN-CONTINUE.md` give per-source and implementation pickup. Preserve earlier AGY drafts and peer worktrees. Next: resolve any remaining review findings, restore normal hosted checks within account policy, then prove one admitted real-provider continuation/interruption/restart through the accepted twenty-gate plan before claiming global Queen control.
 <!-- queen-agent-manager-recovery-20261013:end -->
 
+---
+
+<!-- claude-queen-scan-containment-20261014:start -->
+## 2026-10-14: Queen programme scan, SIS containment, demand doors and estate hygiene (Claude)
+
+Read-only scan of the Queen/SIS programme (requirements, evidence ladder, architecture, lab and open-source technology, cloud cost, partnerships) with full notes kept private. Result: every Queen item is at source plus CI or below, zero Queen model turns have run, and seven Queen surfaces plus four routers overlap. SIS PR377 merged through a locally forged review receipt plus auto-merge; contained by turning repo auto-merge off, reverting it ([PR399](https://github.com/frankxai/Starlight-Intelligence-System/pull/399), merged by the owner login, merge basis not inspected) and reopening [epic 350](https://github.com/frankxai/Starlight-Intelligence-System/issues/350). The replacement gate and hosted-runner checker is draft [PR400](https://github.com/frankxai/Starlight-Intelligence-System/pull/400), head `fe0079287778e696d55fe11688e2fa8c0b6b4447`: two independent Codex reviews returned REVISE, round 3 closed what code can close, three newer automated findings are open, nothing has run on GitHub. It cannot become a real control until a second identity exists (checker App, independent reviewer, ruleset without admin bypass). Demand doors: waitlist-first draft PRs on starlight.domains 21, starlight.you 11 and frankx.ai 1018 and 1019 replace priced checkouts that had no gate PASS; merges are Frank's (pricing). Google: DNS verification and DMARC added for starlightintelligence.ai; dedicated Cloud project with billing, BigQuery and a budget alert exists; the Search Console export form and a read-only BigQuery MCP are not done. Estate hygiene: about 76 clean, fully pushed worktrees removed by a safe rule. Session detail: [2026-10-14](sessions/2026-10-14.md). Status vocabulary: MERGED_NOT_LIVE and DRAFT only; no customer outcome verified.
+<!-- claude-queen-scan-containment-20261014:end -->
+
+<!-- sis-swarm-topology-and-demand-doors-20261014:start -->
+## 2026-10-14: Swarm Fleet Architecture Codified, Demand Doors Proactively Fixed, and Queen Handoff Substrate Operational
+
+- **Swarm Topology & Cloud Blueprint ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Codified and committed `docs/architecture/STARLIGHT-SWARM-AND-CLOUD-TOPOLOGY.md`. Establishes the 5-Tier Swarm Hierarchy (Kings, Queens, Model Councils, 151 Specialists, Front-Door), 3-Tier Heterogeneous Model Routing Matrix (Flash/Haiku, Sonnet/Codex, Opus/Pro), and Multi-Cloud Architecture (Cloudflare R2, OCI bare-metal GPU/ADK, Vercel preview gate, Upstash Redis/Vector, Supabase Postgres).
+- **Proactive Demand Doors Resolution**:
+  - **Door #2 (KV Alias)**: Added Upstash Redis REST fallback (`UPSTASH_REDIS_REST_URL`/`TOKEN`) in `packages/demand-capture/src/store.ts` and `report.mjs`.
+  - **Door #5 (Sender Authentication)**: Enforced verified `mail.frankx.ai` DKIM domain across Stripe/LemonSqueezy webhooks and GenCreator starter download.
+  - **Door #6 (Akamoto Surface 404)**: Updated `graph/products.graph.json` marking gift deliverable as `on-disk` and held dark until `akamoto.io` deployment is verified.
+- **Queue Blocker Reduction**: 3 completed demand door cards archived into `_archive-completed-202610/`. Total Queen queue blockers reduced from 24 down to 21 (demand door blockers reduced from 5 down to 2).
+- **PowerShell 5.1 Terminal Cleanliness**: Fixed SSOT path in `Import-StarlightShell.ps1` and sanitized Unicode emojis in `scripts/agy-tools.ps1` with UTF-8 BOM (`b71056465`), resolving Windows PowerShell 5.1 ANSI boot warnings.
+- **100% Multi-Layer Verification**: Verified Cloudflare Worker Edge router E2E (12/12 pass), Sovereign Durability & Transports (73/73 pass), Foundry upstream conformance and OpenAI preflight (53/53 pass, 40+ checks pass), and Finance IS PnL / Stripe / runway (34/34 pass). Core test matrix 100% green: `npm run test:operational` (73/73), `npm run test:substrate` (142/142), `npm run test:v01-evals` (34/34), `npm run build` (tsc clean).
+- **Tool Plane & Preflight**: Machine RAM measured at 6.3 GiB free (safe above 4.0 GiB floor); Starlight tool plane running on PID 14552 / port 7317 with 37 active client sessions.
+<!-- sis-swarm-topology-and-demand-doors-20261014:end -->
+
+<!-- sis-executive-and-queen-lifecycle-20261013:start -->
+## 2026-10-13: Starlight Executive Tier (151 Agents) Hardened & Queen Terminal Agent Lifecycle Qualified
+
+- **Executive Tier & 151 Agents ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Re-lands 7 Executive cards (`starlight-ceo.md`, `starlight-cfo.md`, `starlight-coo.md`, `starlight-cto.md`, `starlight-cmo.md`, `starlight-caio.md`, `starlight-chief-of-staff.md`). Directly resolves all 3 Codex P1 review findings: CAIO substrate version bumps require explicit human Frank approval; CTO paid vendor platforms/cloud dependencies require Frank human approval and CFO spend gate (money fails closed); Chief of Staff routes private/financial verdicts exclusively to `private/memory/` (operator-private, gitignored). Tracking [Issue #408](https://github.com/frankxai/Starlight-Intelligence-System/issues/408).
+- **Queen Terminal Agent Lifecycle ([SIS PR #406](https://github.com/frankxai/Starlight-Intelligence-System/pull/406))**: Provider-neutral CLI-agent discovery, lifecycle management, and session preservation. 4 native MCP tools exposed: `sis_queen_agent_inspect`, `sis_queen_agent_save`, `sis_queen_agent_stop`, `sis_queen_agent_resume`. Clean branch replaces superseded PR #401. Tracking [Issue #398](https://github.com/frankxai/Starlight-Intelligence-System/issues/398#issuecomment-6153816908).
+- **100% Green Verification**: `npm run test:substrate` (142/142), `npm run test:operational` (73/73), `npm run test:v01-evals` (34/34), `test/queen-agent-lifecycle.test.ts` (11/11). Clean compilation via `tsc`.
+<!-- sis-executive-and-queen-lifecycle-20261013:end -->
+
 <!-- estate-agent-delivery-20261013:start -->
 ## Estate agent routing and backlog reconciliation
 

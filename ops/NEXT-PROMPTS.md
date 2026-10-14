@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- queen-budget-dispatch-20261014:start -->
 ## Continue Queen from budgeted contained dispatch to protected live proof
 
@@ -99,6 +100,26 @@ First finish exact-source review and normal hosted verification. Local49-case fo
 
 Then deliver one useful issue-bound read-only real-provider task through the accepted protected host: prove native permission scope, continuous wall/token/cost limits, exact owned process fencing, task-bound byte/file preservation, continuation/steering, graceful interruption and restart, independent output acceptance and measured worker release. The current operator pilot has exact force cancellation and uncertain-start fencing, not authenticated multi-user control or real-provider acceptance. Final termination and recovery must remain separate results; full archival cannot be guaranteed when storage/I/O fails. Add a second harness through the same adapter only after the first proof. Complete issue/objective roundtrip, durable retention and offline/multi-machine recovery without silently closing unfinished programmes. Save progress to this hub and existing issue134; keep raw histories and operational identifiers private.
 <!-- queen-agent-manager-recovery-20261013:end -->
+
+---
+
+<!-- claude-queen-second-identity-20261014:start -->
+## Queen: create the second identity, then make one accepted recoverable task
+
+Frank must first create the `starlight-checker` GitHub App and name one independent human reviewer account; only then continue [PR400](https://github.com/frankxai/Starlight-Intelligence-System/pull/400) (draft, head fe0079287778e696d55fe11688e2fa8c0b6b4447). Close its three newer automated findings, run a fresh independent review at the exact head, verify one hosted run on a throwaway PR, then apply the ruleset fields documented in `docs/merge-review.md` (approvals, code-owner review, no admin bypass). Until then do not treat any owner-login comment receipt as independent review, including the older prompts below that say to run review through allowlisted Apps. Keep repo auto-merge off. In parallel, run the one baseline the programme still lacks: a real open issue through one Codex session with a deliberate interrupt, manual exact-thread resume, a different-vendor review at the exact SHA, and one `ops/tasks.jsonl` row with attempted task, accepted quality, cost per accepted artifact (billed or estimated, never zero for unknown), restart success and review minutes. Cut active objectives to three and hold the rest with triggers. Finish the Search Console bulk export (needs the browser extension) and the read-only BigQuery connection. Frank merges the waitlist PRs (starlight.domains 21, starlight.you 11, frankx.ai 1018 and 1019) after confirming KV and Resend variables on each Vercel project. Preserve all peer work and the earlier prompts below. Save progress to this hub and Ops issues 134 and 51.
+<!-- claude-queen-second-identity-20261014:end -->
+
+<!-- sis-swarm-topology-and-demand-doors-20261014:start -->
+## Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run
+
+Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and PR #407 (Hardened Executive Tier cards, 151 agents, and Swarm & Cloud Topology Blueprint, issue #408). Demand doors #2 (KV alias), #5 (sender auth), and #6 (Akamoto surface) are resolved, reducing queue blockers to 21. Run independent review via allowlisted GitHub Apps per `tools/merge-review/merge_review_gate.py` (`STARLIGHT-INDEPENDENT-REVIEW-V1`). Once signed receipts pass, promote PRs from draft and execute sequential fast-forward merge into main. Supply local Upstash credentials in `.env.local` to run `node packages/demand-capture/report.mjs` for live estate demand reporting.
+<!-- sis-swarm-topology-and-demand-doors-20261014:end -->
+
+<!-- sis-executive-and-queen-lifecycle-20261013:start -->
+## Starlight: Independent review and sequential merge of PR #406 and PR #407
+
+Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and PR #407 (Hardened Executive Tier cards, 151 agents, issue #408). Both draft PRs are cleanly branched from origin/main with 100% green test passes across substrate (142/142), operational (73/73), Track D evals (34/34), and lifecycle unit tests (11/11). Run independent review via allowlisted GitHub Apps per `tools/merge-review/merge_review_gate.py` (`STARLIGHT-INDEPENDENT-REVIEW-V1`). Once signed receipts pass, promote PRs from draft and execute sequential fast-forward merge into main. Verify post-merge receiving main CI and rebuild dist/ artifacts.
+<!-- sis-executive-and-queen-lifecycle-20261013:end -->
 
 <!-- queen-native-session-20261011:start -->
 ## Queen: assemble one accepted recoverable native task
