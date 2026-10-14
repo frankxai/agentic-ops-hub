@@ -1,3 +1,24 @@
+<!-- queen-budget-dispatch-20261014:start -->
+## Queen: actual cost gate composed with durable dispatch
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`1b785c0ced37df508e024cea67c8e1bc9860a377`, persists operation identity before
+admission and composes the existing Python cost gate into the controller. Pinned
+route/input/budget evidence flows into native containment; duplicate/uncertain
+reservations hold. Exact reconciled retry now survives a second admission failure.
+Final local checks: 121 pass, three Unix-only skips; a separate unchanged verifier
+fixture remains blocked by the installed Git guard. No checks were disabled.
+Independent source FAIL retained and repaired; final scoped v0 Max source QA PASS.
+
+This is IN_PROGRESS source, not active-loop installation or production acceptance.
+Hosted/receiving gates, capacity, protected host configuration, authenticated
+billing/allowance and one real-provider recovery task remain open. Example policy
+stays paused; no new swarm/service, deployment, spend change, cache purge or foreign
+process stop occurred. See the [14 October session](sessions/2026-10-14.md), existing
+[Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51 and the current pickup.
+Earlier preservation/business work and the full multi-layer goal remain active.
+<!-- queen-budget-dispatch-20261014:end -->
+
 <!-- queen-cost-demand-20261014:start -->
 ## Queen: cost admission repaired; partner and demand evidence prepared
 
