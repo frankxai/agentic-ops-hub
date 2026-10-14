@@ -1,3 +1,69 @@
+<!-- queen-budget-dispatch-20261014:start -->
+## Queen: actual cost gate composed with durable dispatch
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`1b785c0ced37df508e024cea67c8e1bc9860a377`, persists operation identity before
+admission and composes the existing Python cost gate into the controller. Pinned
+route/input/budget evidence flows into native containment; duplicate/uncertain
+reservations hold. Exact reconciled retry now survives a second admission failure.
+Final local checks: 121 pass, three Unix-only skips; a separate unchanged verifier
+fixture remains blocked by the installed Git guard. No checks were disabled.
+Independent source FAIL retained and repaired; final scoped v0 Max source QA PASS.
+
+This is IN_PROGRESS source, not active-loop installation or production acceptance.
+Hosted/receiving gates, capacity, protected host configuration, authenticated
+billing/allowance and one real-provider recovery task remain open. Example policy
+stays paused; no new swarm/service, deployment, spend change, cache purge or foreign
+process stop occurred. See the [14 October session](sessions/2026-10-14.md), existing
+[Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51 and the current pickup.
+Earlier preservation/business work and the full multi-layer goal remain active.
+<!-- queen-budget-dispatch-20261014:end -->
+
+<!-- queen-cost-demand-20261014:start -->
+## Queen: cost admission repaired; partner and demand evidence prepared
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`d8597347397686d85087ddf0a5ce4bbfbfd7ac59`, revalidates paid routing/privacy/maker
+binding, preserves unknown ledgers and validates accounting invariants. A bounded
+in-memory cost audit reports unresolved costs and unknown baseline headroom.
+All29 focused Windows cases pass; exact six-text source and three-artifact private
+business-draft QA PASS, without independent execution or production acceptance.
+Two earlier source FAILs remain retained. Windows/Ubuntu coverage is configured.
+
+Four sourced research targets were added to the existing private partner tracker;
+application/research drafts and current-price scenarios are saved. Actual demand,
+membership, credit awards, invoices, savings and ROI remain unknown. Vercel billing
+queries returned404for the verified team. No outreach, programme application,
+spend-setting change or scheduled follow-up occurred. Machine RAM/storage holds
+still prohibit new local fanout/build/install.
+See [14October session](sessions/2026-10-14.md) and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51.
+Source remains DRAFT_NOT_LIVE and the full multi-layer goal stays ACTIVE.
+<!-- queen-cost-demand-20261014:end -->
+
+<!-- queen-evolution-doctor-20261013:start -->
+## Queen: activation diagnosis and admission repair
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, adds observation-only `doctor`, preserves PP swarm drain/pause restrictions and supplies an explicit installation/evolution guide. All20 focused follow-on cases pass; independent v0 Max twelve-file source review PASSES after repairing documentation CI filters. This is DRAFT_NOT_LIVE, with no independent execution or real-provider acceptance. Earlier67 passing cases and one skip belong to288132b and were not broadly rerun under machine HOLD.
+
+Latest observation is about72.35GiB/7.60% disk free and PP swarm HOLD. Roughly3.8GiB reclaim plus the operation reserve is needed at that observation; exact authorization and fresh measurements remain required. No new swarm, service, install, build, cleanup or worktree occurred. The original archives and all unfinished work remain preserved. [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51 track protected native control, useful provider output, continuation/interruption/restart and broader scheduling. Follow the13October session and current prompt; full swarm management remains open.
+<!-- queen-evolution-doctor-20261013:end -->
+
+<!-- queen-agent-manager-recovery-20261013:start -->
+## Queen: private session preservation and owned CLI control
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `288132ba7e83a89e3b0889b786ae77dbca29d782`, implements native provider discovery, immutable private archives, repository recovery, Claude pickup files and an operator host using the accepted QueenWorker, controller and Windows Job Object adapter. Existing [issue134](https://github.com/frankxai/agentic-ops/issues/134) tracks this slice; the full native/portable programme and issue51 remain open. Source is DRAFT_NOT_LIVE. No persistent service, second queue or Rust rewrite was installed.
+
+The real local batch preserved 35 original Codex transcript files covering 33 distinct session IDs within a four-day source window, with no inventory omissions or failed source saves. Recorded views contain870 user-role messages,238 supplemental history entries,6,636 assistant outputs and198,942 tool records. These representations overlap and include repeated session sources; human authorship and historical file authorship are unverified. Current snapshots cover104 repository/worktree paths. Thirty-one recovery bundles are partial and four are complete observed bundles, because of explicit file/patch/repository budgets, linked paths or missing origin. Original repositories remain intact. Initial v1 bundles verify artifact bytes but have no separate manifest metadata checksum. Private originals total1,431,440,152 source bytes and stay outside this public hub.
+
+Operator commands preview by default. Applied explicit cancellation requires the exact managed attempt, verified original stdin/stdout/stderr, complete required repository recovery and fresh admission; final fencing/quiescence and stable raw streams are separate proofs. Failed final preservation is reported independently from termination and produces a nonzero result. Uncertain-start reconciliation uses existing abandonment/fencing and never automatically replays the identity. Foreground owner loss must contain its own jobs even when I/O prevents a complete archive; emergency references are retained where possible. Existing arbitrary terminal sessions were not stopped: process observations and saved histories do not supply owned native control streams. Graceful connected control and current unowned-session attachment remain open.
+
+Local focused verification passes48 of49 cases with one POSIX-only skip on Windows. Existing native Node nine-case and Python ten-case suites pass; they include real fixture Job Object containment, exact cancellation and survival of another owned job. No real coding-model launch or provider permission acceptance is claimed. Three earlier source-review FAILs and one ordering WARN remain retained. The final independent v0 Max source-only review PASSES exact288132b across20 supplied source files; it independently executed no tests and does not accept production activation. Hosted recovery CI and installed Claude review did not start because of the account's Actions budget. Required checks and security hooks remain enabled.
+
+Local swarm fanout remained held/constrained despite founder authorization. One existing remote private source reviewer was used; no additional local agents were spawned. Machine policy v1.2 numerical storage floors remain8% and50GiB; fresh local filesystem receipts supplement absent disk fields in the legacy PP CLI without overriding explicit PP holds/unknown state. Recheck admission before the next workload. The private `~/.starlight/agent-manager/INDEX.md` and `CLAUDE-QUEEN-CONTINUE.md` give per-source and implementation pickup. Preserve earlier AGY drafts and peer worktrees. Next: resolve any remaining review findings, restore normal hosted checks within account policy, then prove one admitted real-provider continuation/interruption/restart through the accepted twenty-gate plan before claiming global Queen control.
+<!-- queen-agent-manager-recovery-20261013:end -->
+
+---
+
 <!-- claude-queen-scan-containment-20261014:start -->
 ## 2026-10-14: Queen programme scan, SIS containment, demand doors and estate hygiene (Claude)
 

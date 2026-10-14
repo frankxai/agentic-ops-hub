@@ -1,3 +1,108 @@
+<<<<<<< HEAD
+<!-- queen-budget-dispatch-20261014:start -->
+## Continue Queen from budgeted contained dispatch to protected live proof
+
+This is the current pickup for the Queen/cloud-cost/demand slice. It supersedes
+the older 14 October pickup below for this slice, preserving that history and every
+other front's distinct active objective. Keep Frank's full multi-layer goal active.
+
+Read the 14 October session, private Claude recovery pickup and current repository,
+Registry and machine contracts. Start from draft
+[Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`1b785c0ced37df508e024cea67c8e1bc9860a377`. Budgeted controller dispatch, exact
+operation recovery and the Windows contained artifact path have 121 locally passing
+cases and three Unix-only skips, plus final scoped independent source QA PASS.
+Retain prior FAIL/RED evidence. The unchanged legacy verifier's synthetic Git
+fixture is locally blocked by the installed guard; do not disable hooks or claim
+that suite passed. Read current hosted and receiving-source status before adoption.
+
+The active Queen has not loaded this integration. Resolve admission without
+starting more workers under HOLD or deleting caches without approval. Configure
+the existing protected bootstrap using docs/QUEEN-CONTROLLER.md: pinned host policy
+and observations, expected route/provider/privacy class, all-in bound, fixed
+reconciled ledger and authenticated retry authority. Never reset/replace a ledger
+to escape unknown cost. Preserve old deployments until their native runs are
+drained or reconciled. Legacy `budget: null` is still the host's budget obligation.
+
+Prove one useful real-provider output with exact provider/session/turn identity,
+worker-excluded stores, current PP/cost permission, containment, steering,
+interruption, restart and independent acceptance. Diagnose the native 10050 socket
+error through supported interfaces; do not infer daemon state or reset networking
+and do not stop foreign processes. Measure accepted-output cost/latency and recovery
+against manual native resume before increasing concurrency or rewriting in Rust.
+
+Preserve accessible-session archives, partial recovery bundles and all unfinished
+peer/product work. Keep the prior private partner/runway packets and tracker;
+validate billing/programme eligibility and obtain authorization for external
+contact/application/spend. Continue cloud placement under the current Registry
+without another durable orchestrator or a process per persona. Update this hub
+and existing Ops134/51 as real runtime, buyer and partner evidence arrives.
+<!-- queen-budget-dispatch-20261014:end -->
+
+<!-- queen-cost-demand-20261014:start -->
+## Continue the active multi-layer Queen, cloud and demand goal
+
+This is the current pickup for this Queen/cloud-cost/demand slice. It supersedes
+the earlier13October Queen pickup as next-action instructions for this slice,
+while preserving that history and all other fronts' active objectives.
+
+Keep Frank's full goal: coherent autonomous teams across all layers, high
+performance and cost-effective cloud architecture, partnerships, demand and
+proactive implementation. Read the14October session, current repository/policy
+sources, private recovery pickup and business-ops packets. Preserve all previous
+archives, partial recoveries, creator products, peer work and distinct goals.
+
+Start from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`d8597347397686d85087ddf0a5ce4bbfbfd7ac59`, with29 locally passing focused cases
+and scoped source/business QA PASS. Read current hosted and receiving-source
+state; do not promote configuration or static review to protected-host execution.
+The accounting library remains unactivated and example policy paused. Preserve
+legacy/unknown ledgers; no empty-store escape, automatic migration or same-user
+worker access. Keep one authenticated cost owner and one execution authority.
+
+Recheck machine and lane admission. Last swarm HOLD6544/10240MiB and disk below8%
+prohibit new local fanout/build/install/worktrees. Continue safe source work and
+admitted existing remote review. Prove one useful protected native task with exact
+provider/session/turn binding, permissions, recovery, steering, interruption,
+restart and independent acceptance. Integrate fresh paid-step reservations only
+through authenticated host observations and reconciled baseline/billing evidence.
+
+Private partner/runway packets and four research tracker entries are prepared.
+Validate company/programme eligibility and Vercel billing access or an owner export;
+404does not mean zero spend. Public issue reports are problem signals, not buyer
+proof. Obtain consent/authorization before contact, application, recording, spend
+or public case study; measure the same recovery task against native manual resume.
+Advance cloud placement using the current Registry, without a duplicate durable
+orchestrator or service per persona. Save progress to this hub and existing Ops134/51;
+leave the full goal active until its actual requirements are verified.
+<!-- queen-cost-demand-20261014:end -->
+
+<!-- queen-evolution-doctor-20261013:start -->
+## Continue Queen from verified diagnosis to one protected native result
+
+This is the current pickup for this Queen evolution and recovery slice. It supersedes the earlier “Claude: finish Queen recovery and one protected native task” prompt below as the next-action instructions for this slice; that prompt remains historical evidence. Other active fronts retain their own pickup prompts and unfinished objectives.
+
+Continue Frank's Queen evolution and session-preservation objective from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, and [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51. Read the installation/evolution guide, private recovery index/Claude pickup, exact reviews and current repository instructions. Preserve35 original Codex transcript files, corrected reading views, partial recovery bundles and unfinished peer work. Do not claim existing terminals were stopped or full Queen activation accepted.
+
+Recheck capacity and lane ownership first. Last observation72.35GiB/7.60% disk and PP swarm HOLD prevents new installation, building, swarms and worktrees. Use the read-only doctor; prepare exact authorized reclamation/owner handoff and fresh admission before dependent work. Never delete captures or closed receipts, kill foreign processes, change spend/protection or replay uncertain execution to make admission green. The installed ownership CLI has no owner-transfer command.
+
+All20 follow-on checks and exact twelve-file source review pass in their scopes; older67 passes/one skip belong to288132b. Read current hosted checks and normal receiving-source gates. After admission, integrate the existing protected Codex native transport and prove one useful issue-bound read-only task with exact provider/session/turn identity, permissions, budgets, saved prompt/output/files, steering, interruption, restart/recovery and independent artifact acceptance. Compare with manual native resume. Then add Claude through the same contract and one-owner budgeted scheduling. Cloudflare migration, Temporal comparison, Rust host and broader healing remain scoped proposals. Save actual progress in this hub and existing Ops134; preserve all prompts below.
+<!-- queen-evolution-doctor-20261013:end -->
+
+<!-- queen-agent-manager-recovery-20261013:start -->
+## Claude: finish Queen recovery and one protected native task
+
+Continue Frank's session preservation and CLI agent control outcome from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `288132ba7e83a89e3b0889b786ae77dbca29d782`, and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51. Read private `~/.starlight/agent-manager/INDEX.md` and `CLAUDE-QUEEN-CONTINUE.md`, retained review failures and current evidence. Thirty-five Codex source files cover33 distinct session IDs; all original source bytes were saved, but31 repository bundles are partial. Native prompts/history can overlap. Respect explicit omissions and unverified historical authorship; preserve original repositories and unfinished AGY/Queen/creator work.
+
+Re-read current repository/deeper instructions, accepted architecture and twenty-gate plan, machine/product quality policies and lane ownership. Use an admitted owned worktree and exact file scope. Founder authorizes skilled independent work, but local PP/storage admission still controls concurrency. Use the existing controller/worker/native transport and shared tool plane. Do not create a competing queue or start every installed service. Existing arbitrary terminals remain unmanaged; history/process access is not a native control connection or termination authority.
+
+First finish exact-source review and normal hosted verification. Local49-case focused suite has48 passes/one Windows platform skip; nine native Node and ten Python fixture cases pass. Earlier source-review FAILs remain preserved and final exact288132b source-only review PASSES20 supplied files with no independent execution or production acceptance; its limits must be read. GitHub recovery CI and installed Claude reviewer were blocked before execution by Actions budget; preserve security hooks/checks and account spending boundaries. Do not infer acceptance from a draft, test report or missing reviewer response.
+
+Then deliver one useful issue-bound read-only real-provider task through the accepted protected host: prove native permission scope, continuous wall/token/cost limits, exact owned process fencing, task-bound byte/file preservation, continuation/steering, graceful interruption and restart, independent output acceptance and measured worker release. The current operator pilot has exact force cancellation and uncertain-start fencing, not authenticated multi-user control or real-provider acceptance. Final termination and recovery must remain separate results; full archival cannot be guaranteed when storage/I/O fails. Add a second harness through the same adapter only after the first proof. Complete issue/objective roundtrip, durable retention and offline/multi-machine recovery without silently closing unfinished programmes. Save progress to this hub and existing issue134; keep raw histories and operational identifiers private.
+<!-- queen-agent-manager-recovery-20261013:end -->
+
+---
+
 <!-- claude-queen-second-identity-20261014:start -->
 ## Queen: create the second identity, then make one accepted recoverable task
 
