@@ -7,7 +7,9 @@
   - **Door #5 (Sender Authentication)**: Enforced verified `mail.frankx.ai` DKIM domain across Stripe/LemonSqueezy webhooks and GenCreator starter download.
   - **Door #6 (Akamoto Surface 404)**: Updated `graph/products.graph.json` marking gift deliverable as `on-disk` and held dark until `akamoto.io` deployment is verified.
 - **Queue Blocker Reduction**: 3 completed demand door cards archived into `_archive-completed-202610/`. Total Queen queue blockers reduced from 24 down to 21 (demand door blockers reduced from 5 down to 2).
-- **Tool Plane & Preflight**: Machine RAM measured at 4.5 GiB free (safe above 4.0 GiB floor); Starlight tool plane running on PID 14552 / port 7317 with 37 active client sessions.
+- **PowerShell 5.1 Terminal Cleanliness**: Fixed SSOT path in `Import-StarlightShell.ps1` and sanitized Unicode emojis in `scripts/agy-tools.ps1` with UTF-8 BOM (`b71056465`), resolving Windows PowerShell 5.1 ANSI boot warnings.
+- **100% Multi-Layer Verification**: Verified Cloudflare Worker Edge router E2E (12/12 pass), Sovereign Durability & Transports (73/73 pass), Foundry upstream conformance and OpenAI preflight (53/53 pass, 40+ checks pass), and Finance IS PnL / Stripe / runway (34/34 pass). Core test matrix 100% green: `npm run test:operational` (73/73), `npm run test:substrate` (142/142), `npm run test:v01-evals` (34/34), `npm run build` (tsc clean).
+- **Tool Plane & Preflight**: Machine RAM measured at 6.3 GiB free (safe above 4.0 GiB floor); Starlight tool plane running on PID 14552 / port 7317 with 37 active client sessions.
 <!-- sis-swarm-topology-and-demand-doors-20261014:end -->
 
 <!-- sis-executive-and-queen-lifecycle-20261013:start -->
