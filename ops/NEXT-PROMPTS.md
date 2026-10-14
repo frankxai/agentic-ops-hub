@@ -120,6 +120,12 @@ Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and
 Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and PR #407 (Hardened Executive Tier cards, 151 agents, issue #408). Both draft PRs are cleanly branched from origin/main with 100% green test passes across substrate (142/142), operational (73/73), Track D evals (34/34), and lifecycle unit tests (11/11). Run independent review via allowlisted GitHub Apps per `tools/merge-review/merge_review_gate.py` (`STARLIGHT-INDEPENDENT-REVIEW-V1`). Once signed receipts pass, promote PRs from draft and execute sequential fast-forward merge into main. Verify post-merge receiving main CI and rebuild dist/ artifacts.
 <!-- sis-executive-and-queen-lifecycle-20261013:end -->
 
+<!-- estate-lifecycle-pulse-1-20261013:start -->
+## Run estate pulse #1 against the lifecycle registry
+
+Read `registry/README.md`, `registry/vercel-projects-2026-10-13.md` and `docs/SWARM-RUNTIME-ARCHITECTURE.md`. For each of the 62 Vercel projects confirm or change `state_proposed` with one line of evidence, assign brand and owner General where `unassigned`, and record S7 candidates with a recovery tag plus a 7-day objection entry in this ledger. Extend the snapshot to the 68 registry entities and the 55 cloned repos. Report the actual 60/30/10 capacity split from the 10-06 → 10-13 ledger entries. Do not create repos, Vercel projects, cockpits or strategy docs; do not open Polar or Whop; do not start any Cloudflare or Vercel workflow. Save the result as `registry/pulse-2026-10-20.md` and a one-line ledger entry.
+<!-- estate-lifecycle-pulse-1-20261013:end -->
+
 <!-- queen-native-session-20261011:start -->
 ## Queen: assemble one accepted recoverable native task
 
