@@ -1,3 +1,15 @@
+<!-- sis-swarm-topology-and-demand-doors-20261014:start -->
+## 2026-10-14: Swarm Fleet Architecture Codified, Demand Doors Proactively Fixed, and Queen Handoff Substrate Operational
+
+- **Swarm Topology & Cloud Blueprint ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Codified and committed `docs/architecture/STARLIGHT-SWARM-AND-CLOUD-TOPOLOGY.md`. Establishes the 5-Tier Swarm Hierarchy (Kings, Queens, Model Councils, 151 Specialists, Front-Door), 3-Tier Heterogeneous Model Routing Matrix (Flash/Haiku, Sonnet/Codex, Opus/Pro), and Multi-Cloud Architecture (Cloudflare R2, OCI bare-metal GPU/ADK, Vercel preview gate, Upstash Redis/Vector, Supabase Postgres).
+- **Proactive Demand Doors Resolution**:
+  - **Door #2 (KV Alias)**: Added Upstash Redis REST fallback (`UPSTASH_REDIS_REST_URL`/`TOKEN`) in `packages/demand-capture/src/store.ts` and `report.mjs`.
+  - **Door #5 (Sender Authentication)**: Enforced verified `mail.frankx.ai` DKIM domain across Stripe/LemonSqueezy webhooks and GenCreator starter download.
+  - **Door #6 (Akamoto Surface 404)**: Updated `graph/products.graph.json` marking gift deliverable as `on-disk` and held dark until `akamoto.io` deployment is verified.
+- **Queue Blocker Reduction**: 3 completed demand door cards archived into `_archive-completed-202610/`. Total Queen queue blockers reduced from 24 down to 21 (demand door blockers reduced from 5 down to 2).
+- **Tool Plane & Preflight**: Machine RAM measured at 4.5 GiB free (safe above 4.0 GiB floor); Starlight tool plane running on PID 14552 / port 7317 with 37 active client sessions.
+<!-- sis-swarm-topology-and-demand-doors-20261014:end -->
+
 <!-- sis-executive-and-queen-lifecycle-20261013:start -->
 ## 2026-10-13: Starlight Executive Tier (151 Agents) Hardened & Queen Terminal Agent Lifecycle Qualified
 
