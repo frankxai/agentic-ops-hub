@@ -1,3 +1,125 @@
+<!-- queen-budget-dispatch-20261014:start -->
+## Continue Queen from budgeted contained dispatch to protected live proof
+
+This is the current pickup for the Queen/cloud-cost/demand slice. It supersedes
+the older 14 October pickup below for this slice, preserving that history and every
+other front's distinct active objective. Keep Frank's full multi-layer goal active.
+
+Read the 14 October session, private Claude recovery pickup and current repository,
+Registry and machine contracts. Start from draft
+[Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`1b785c0ced37df508e024cea67c8e1bc9860a377`. Budgeted controller dispatch, exact
+operation recovery and the Windows contained artifact path have 121 locally passing
+cases and three Unix-only skips, plus final scoped independent source QA PASS.
+Retain prior FAIL/RED evidence. The unchanged legacy verifier's synthetic Git
+fixture is locally blocked by the installed guard; do not disable hooks or claim
+that suite passed. Read current hosted and receiving-source status before adoption.
+
+The active Queen has not loaded this integration. Resolve admission without
+starting more workers under HOLD or deleting caches without approval. Configure
+the existing protected bootstrap using docs/QUEEN-CONTROLLER.md: pinned host policy
+and observations, expected route/provider/privacy class, all-in bound, fixed
+reconciled ledger and authenticated retry authority. Never reset/replace a ledger
+to escape unknown cost. Preserve old deployments until their native runs are
+drained or reconciled. Legacy `budget: null` is still the host's budget obligation.
+
+Prove one useful real-provider output with exact provider/session/turn identity,
+worker-excluded stores, current PP/cost permission, containment, steering,
+interruption, restart and independent acceptance. Diagnose the native 10050 socket
+error through supported interfaces; do not infer daemon state or reset networking
+and do not stop foreign processes. Measure accepted-output cost/latency and recovery
+against manual native resume before increasing concurrency or rewriting in Rust.
+
+Preserve accessible-session archives, partial recovery bundles and all unfinished
+peer/product work. Keep the prior private partner/runway packets and tracker;
+validate billing/programme eligibility and obtain authorization for external
+contact/application/spend. Continue cloud placement under the current Registry
+without another durable orchestrator or a process per persona. Update this hub
+and existing Ops134/51 as real runtime, buyer and partner evidence arrives.
+<!-- queen-budget-dispatch-20261014:end -->
+
+<!-- queen-cost-demand-20261014:start -->
+## Continue the active multi-layer Queen, cloud and demand goal
+
+This is the current pickup for this Queen/cloud-cost/demand slice. It supersedes
+the earlier13October Queen pickup as next-action instructions for this slice,
+while preserving that history and all other fronts' active objectives.
+
+Keep Frank's full goal: coherent autonomous teams across all layers, high
+performance and cost-effective cloud architecture, partnerships, demand and
+proactive implementation. Read the14October session, current repository/policy
+sources, private recovery pickup and business-ops packets. Preserve all previous
+archives, partial recoveries, creator products, peer work and distinct goals.
+
+Start from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`d8597347397686d85087ddf0a5ce4bbfbfd7ac59`, with29 locally passing focused cases
+and scoped source/business QA PASS. Read current hosted and receiving-source
+state; do not promote configuration or static review to protected-host execution.
+The accounting library remains unactivated and example policy paused. Preserve
+legacy/unknown ledgers; no empty-store escape, automatic migration or same-user
+worker access. Keep one authenticated cost owner and one execution authority.
+
+Recheck machine and lane admission. Last swarm HOLD6544/10240MiB and disk below8%
+prohibit new local fanout/build/install/worktrees. Continue safe source work and
+admitted existing remote review. Prove one useful protected native task with exact
+provider/session/turn binding, permissions, recovery, steering, interruption,
+restart and independent acceptance. Integrate fresh paid-step reservations only
+through authenticated host observations and reconciled baseline/billing evidence.
+
+Private partner/runway packets and four research tracker entries are prepared.
+Validate company/programme eligibility and Vercel billing access or an owner export;
+404does not mean zero spend. Public issue reports are problem signals, not buyer
+proof. Obtain consent/authorization before contact, application, recording, spend
+or public case study; measure the same recovery task against native manual resume.
+Advance cloud placement using the current Registry, without a duplicate durable
+orchestrator or service per persona. Save progress to this hub and existing Ops134/51;
+leave the full goal active until its actual requirements are verified.
+<!-- queen-cost-demand-20261014:end -->
+
+<!-- queen-evolution-doctor-20261013:start -->
+## Continue Queen from verified diagnosis to one protected native result
+
+This is the current pickup for this Queen evolution and recovery slice. It supersedes the earlier “Claude: finish Queen recovery and one protected native task” prompt below as the next-action instructions for this slice; that prompt remains historical evidence. Other active fronts retain their own pickup prompts and unfinished objectives.
+
+Continue Frank's Queen evolution and session-preservation objective from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, and [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51. Read the installation/evolution guide, private recovery index/Claude pickup, exact reviews and current repository instructions. Preserve35 original Codex transcript files, corrected reading views, partial recovery bundles and unfinished peer work. Do not claim existing terminals were stopped or full Queen activation accepted.
+
+Recheck capacity and lane ownership first. Last observation72.35GiB/7.60% disk and PP swarm HOLD prevents new installation, building, swarms and worktrees. Use the read-only doctor; prepare exact authorized reclamation/owner handoff and fresh admission before dependent work. Never delete captures or closed receipts, kill foreign processes, change spend/protection or replay uncertain execution to make admission green. The installed ownership CLI has no owner-transfer command.
+
+All20 follow-on checks and exact twelve-file source review pass in their scopes; older67 passes/one skip belong to288132b. Read current hosted checks and normal receiving-source gates. After admission, integrate the existing protected Codex native transport and prove one useful issue-bound read-only task with exact provider/session/turn identity, permissions, budgets, saved prompt/output/files, steering, interruption, restart/recovery and independent artifact acceptance. Compare with manual native resume. Then add Claude through the same contract and one-owner budgeted scheduling. Cloudflare migration, Temporal comparison, Rust host and broader healing remain scoped proposals. Save actual progress in this hub and existing Ops134; preserve all prompts below.
+<!-- queen-evolution-doctor-20261013:end -->
+
+<!-- queen-agent-manager-recovery-20261013:start -->
+## Claude: finish Queen recovery and one protected native task
+
+Continue Frank's session preservation and CLI agent control outcome from draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `288132ba7e83a89e3b0889b786ae77dbca29d782`, and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51. Read private `~/.starlight/agent-manager/INDEX.md` and `CLAUDE-QUEEN-CONTINUE.md`, retained review failures and current evidence. Thirty-five Codex source files cover33 distinct session IDs; all original source bytes were saved, but31 repository bundles are partial. Native prompts/history can overlap. Respect explicit omissions and unverified historical authorship; preserve original repositories and unfinished AGY/Queen/creator work.
+
+Re-read current repository/deeper instructions, accepted architecture and twenty-gate plan, machine/product quality policies and lane ownership. Use an admitted owned worktree and exact file scope. Founder authorizes skilled independent work, but local PP/storage admission still controls concurrency. Use the existing controller/worker/native transport and shared tool plane. Do not create a competing queue or start every installed service. Existing arbitrary terminals remain unmanaged; history/process access is not a native control connection or termination authority.
+
+First finish exact-source review and normal hosted verification. Local49-case focused suite has48 passes/one Windows platform skip; nine native Node and ten Python fixture cases pass. Earlier source-review FAILs remain preserved and final exact288132b source-only review PASSES20 supplied files with no independent execution or production acceptance; its limits must be read. GitHub recovery CI and installed Claude reviewer were blocked before execution by Actions budget; preserve security hooks/checks and account spending boundaries. Do not infer acceptance from a draft, test report or missing reviewer response.
+
+Then deliver one useful issue-bound read-only real-provider task through the accepted protected host: prove native permission scope, continuous wall/token/cost limits, exact owned process fencing, task-bound byte/file preservation, continuation/steering, graceful interruption and restart, independent output acceptance and measured worker release. The current operator pilot has exact force cancellation and uncertain-start fencing, not authenticated multi-user control or real-provider acceptance. Final termination and recovery must remain separate results; full archival cannot be guaranteed when storage/I/O fails. Add a second harness through the same adapter only after the first proof. Complete issue/objective roundtrip, durable retention and offline/multi-machine recovery without silently closing unfinished programmes. Save progress to this hub and existing issue134; keep raw histories and operational identifiers private.
+<!-- queen-agent-manager-recovery-20261013:end -->
+
+---
+
+<!-- claude-queen-second-identity-20261014:start -->
+## Queen: create the second identity, then make one accepted recoverable task
+
+Frank must first create the `starlight-checker` GitHub App and name one independent human reviewer account; only then continue [PR400](https://github.com/frankxai/Starlight-Intelligence-System/pull/400) (draft, head fe0079287778e696d55fe11688e2fa8c0b6b4447). Close its three newer automated findings, run a fresh independent review at the exact head, verify one hosted run on a throwaway PR, then apply the ruleset fields documented in `docs/merge-review.md` (approvals, code-owner review, no admin bypass). Until then do not treat any owner-login comment receipt as independent review, including the older prompts below that say to run review through allowlisted Apps. Keep repo auto-merge off. In parallel, run the one baseline the programme still lacks: a real open issue through one Codex session with a deliberate interrupt, manual exact-thread resume, a different-vendor review at the exact SHA, and one `ops/tasks.jsonl` row with attempted task, accepted quality, cost per accepted artifact (billed or estimated, never zero for unknown), restart success and review minutes. Cut active objectives to three and hold the rest with triggers. Finish the Search Console bulk export (needs the browser extension) and the read-only BigQuery connection. Frank merges the waitlist PRs (starlight.domains 21, starlight.you 11, frankx.ai 1018 and 1019) after confirming KV and Resend variables on each Vercel project. Preserve all peer work and the earlier prompts below. Save progress to this hub and Ops issues 134 and 51.
+<!-- claude-queen-second-identity-20261014:end -->
+
+<!-- sis-swarm-topology-and-demand-doors-20261014:start -->
+## Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run
+
+Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and PR #407 (Hardened Executive Tier cards, 151 agents, and Swarm & Cloud Topology Blueprint, issue #408). Demand doors #2 (KV alias), #5 (sender auth), and #6 (Akamoto surface) are resolved, reducing queue blockers to 21. Run independent review via allowlisted GitHub Apps per `tools/merge-review/merge_review_gate.py` (`STARLIGHT-INDEPENDENT-REVIEW-V1`). Once signed receipts pass, promote PRs from draft and execute sequential fast-forward merge into main. Supply local Upstash credentials in `.env.local` to run `node packages/demand-capture/report.mjs` for live estate demand reporting.
+<!-- sis-swarm-topology-and-demand-doors-20261014:end -->
+
+<!-- sis-executive-and-queen-lifecycle-20261013:start -->
+## Starlight: Independent review and sequential merge of PR #406 and PR #407
+
+Continue from Starlight PR #406 (Queen Terminal Agent Lifecycle, issue #398) and PR #407 (Hardened Executive Tier cards, 151 agents, issue #408). Both draft PRs are cleanly branched from origin/main with 100% green test passes across substrate (142/142), operational (73/73), Track D evals (34/34), and lifecycle unit tests (11/11). Run independent review via allowlisted GitHub Apps per `tools/merge-review/merge_review_gate.py` (`STARLIGHT-INDEPENDENT-REVIEW-V1`). Once signed receipts pass, promote PRs from draft and execute sequential fast-forward merge into main. Verify post-merge receiving main CI and rebuild dist/ artifacts.
+<!-- sis-executive-and-queen-lifecycle-20261013:end -->
+
 <!-- estate-lifecycle-pulse-1-20261013:start -->
 ## Run estate pulse #1 against the lifecycle registry
 
@@ -11,15 +133,15 @@ Continue the full portable Queen programme from merged [Ops217](https://github.c
 <!-- queen-native-session-20261011:end -->
 
 <!-- v0-design-programme-20261011:start -->
-## Review the FrankX Cloud repair and continue the design programme
+## Deliver one accepted agent/Cloud pilot and design slice
 
-Read the 12 October session and [Cloud routing guide](guides/codex-claude-environment-alignment.md). Frank explicitly wants repository implementation/build/browser work delegated to Codex Cloud when local RAM is constrained, with one local lead reviewing and integrating returns. The full native account-visible queue was143 tasks/16 environment labels at11:49 UTC; ready does not mean merged. Preserve all historical tasks and rejected returns.
+Continue Frank's local/Cloud personality, model, GitOps and design programme from the13October session and [delivery guide](../docs/ESTATE-AGENT-DELIVERY.md). Re-read reviewed Registry/config authority, current native repo/deeper instructions, source and lane owners. Existing controller and merge steward stay the only orchestration path. Agent identities remain unreconciled; existing config116/Ops218/Claude35 proposals require their actual gates. Preserve peer cost/merge drafts and original branch intent. Do not merge stale Hub175 or close/delete branches by age or title.
 
-First inspect [the accepted-main Cloud font/runtime repair](https://chatgpt.com/codex/tasks/task_e_6accd087feec8320b358d5a87b5d4c65) using native status/diff. Verified FrankX environment is68c9ecc423808191a6dcbb75df22d497. It pins remote main c8eeb33f57276d6e909858ebea11bf534d02bdc5 and uses only source already present there. The earlier task_e_6acccc67836c8320aaa10f145b945d71 returned no diff after correctly refusing to reconstruct a large unpublished packet; no checkpoint or build was produced. The local debc9a895a13c24b6f39a9dd254d2866e26613ef candidate remains preserved on agent/codex/foundry-environment-alignment-20261011. Validate the exact combined Foundry source after the font repair, through a usable source branch/artifact route. Never apply source drift or repeat the rejected reconstruction.
+Start with fresh admission and budget. Last PP3384MiB and disk7.77% held local fanout/build/install/new worktrees. Use permitted text/read work and an actually admitted remote task with immutable source/environment and a complete return. The existing FrankX font task tracked in issue339 is ERROR/no diff; its native detail did not expose a cause. Diagnose supported access/quota/environment before any bounded retry. Preserve debc9a8 unpublished Foundry candidate and rejected returns; no conversational reconstruction. Cloud READY is not integrated or accepted.
 
-Require Node 22/pnpm 10.28, frozen install, all four real repository gates and six-width rendered/recovery QA. The Google-font blocker may be repaired with pinned licensed self-hosted sources preserving every current font family, weight/style, variable and language coverage. Keep homepage structure outside this plumbing scope. Never fake GitHub Actions or weaken the GitHub-only runner; use a separate honest Cloud runner. Verify returned assets/licenses and exact final head/tree, run integration preflight, acquire fresh local ownership, apply once, reconcile latest accepted main, then exact-revision independent review and protected draft-first PR/CI/live verification. Cloud success does not replace native Windows tests or required GitHub checks.
+Use deterministic metadata first, benchmark ten representative Haiku/Luna classification cases only when actual model access/payer is verified, and escalate consequential source/design/architecture to a capable maker plus independent checker. Existing USD25 credits cap remains; last conservative v0 estimateUSD17.25545215, actual balance/charges unknown. No purchases or new recurring allowance. Verify v0's active ChatGPT payer/interface model; GPT-6.1Sol is not in the inspected v0 subscription list or MCP enum. Native local settings do not prove Cloud model identity.
 
-Last local admission wasHOLD11:56 UTC, 4008/8192 MiB with 29 runtimes; do not start local heavy work without fresh admission or kill other sessions. Cloud settings and Claude v0 OAuth remain separate native/browser steps. Preserve the $25 existing v0/image/model credit allowance; no purchases, no assumed native-credit USD conversion, no fabricated remote model choice. Reconcile existing config PR 112 failed checks, draft/conflicting PR 80 and PR 108 lifecycle/review gaps in their owned lanes. Shared config stays in starlight-agent-config, estate handovers in this Hub, and canonical portfolio truth in the Registry. No new orchestrator/daemon. The original 12-hour goal is still blocked and expired; this is the user's subsequent Cloud-routing work, not a completion claim.
+Prove one useful, recoverable issue-bound output; review exact source, pass normal CI/protection, merge sequentially if authorized and verify receiving behaviour. Then one brand-pinned design slice with mobile, focus/touch, reduced motion, failure/recovery and measured performance; retain the existing protected homepage selection gate. No unconditional redesign, motion library, image batch or production promotion. Update existing FrankX339 and this Hub; distinguish prepared guidance, implemented enforcement, merged source and verified customer outcome. The broad programme and old blocked/expired goal remain preserved.
 <!-- v0-design-programme-20261011:end -->
 
 
@@ -1879,3 +2001,8 @@ Original Jules2536320996174217098 was read live COMPLETED, checker=false; no pla
 ## Previous npm pickup retained after System 8.5.2 acceptance
 
 Continue the full npm/customer goal from normally merged SIS374 accepted f5d46ebf0d32ee252eee1a1a4301878b5a532cf3/tree9c368568aea794af763e4357a461c4b09f006fa2. Native Changesets prepared core/AI0.2.2 and MCP0.2.3; both packed adapters require core^0.2.2. Exact native Google review6122236549 covers10changed files/20complete Git bodies. Source-before-push attestation plus normal synchronization checks restored normal merge acceptance without bypass; earlier backend refusal cause remains unproven. Candidate38235348455 and receiving38235883002 each pass495logged executions and actual installed consumers; all three tar archives are byte-identical. Receiving root38235883023 qualifies unchanged454-file legacy/organization8.5.1 packages and both packed sanitizers. Fresh production release38236389295 on exact f5 verifies137logged executions; artifact11741215717 tarballs and manifest equal receiving bytes. Publish114768281606 remains WAITING for configured Frank npm-production review; account can technically approve, recorded human boundary is preserved. npm trust read403 leaves first-publisher mappings UNVERIFIED; use legitimate npm package Settings mapping frankxai/Starlight-Intelligence-System/npm-ecosystem-release.yml/npm-production with direct publication allowed. Browser PP HOLD7,541MiB<8,192required; no browser started. Registry only0.0.0-stage; do not approve cancelled older38210385590 or claim publication. After authority and founder approval, inspect actual OIDC response, public integrity/provenance and fresh installed clients, reconciling registry before ambiguous retry. Vercel dpl_Fd6UQneJ4RHm9udMgcCS1WpdkbKK READY at f5; three public routes200. Canary38235935071 marked CANCELLED despite probe/upload SUCCESS; interaction QA unverified. Preserve all failed/rejected/earlier records, draft365 and foreign GenCreator/Memory lanes. Original Jules approval is no longer pending; old original report stays rejected/superseded. Merchant eligibility/reauth, priced EU preview consent, auth/tenant/restore and durable usage/refund/seats/customer outcome remain open. No forced approval, token publish, foreign termination, unfinished-task archive or unapproved spend. Save actual evidence in this Hub and SIS329; full goal ACTIVE.
+<!-- agy-implementation-20261012:start -->
+## AGY: verify the committed operator workflow
+
+Continue private agy-clients draft PR2 at e5ae1e4 and agy-community draft PR2 at 4c0026e4509c946bdb81ae52c2676dc610b4f258; issues1 remain open. Prompt record `agy-implementation-20261012` has been preserved locally; SHA-256 `4ae790466303a4ab0e9f3b8be5780e0e41a0b8fac8aaa54476dbc2aff2b4a773` is recorded in the hub, while raw prompts stay private. Read each repository's current AGENTS/SYSTEM/operations and refresh exact routing/ownership before writes. Both Git histories remain private. Seventeen client and five community tests plus exporter/consumer trust checks pass, but no production build or actual browser capture has run. GitHub jobs fail before execution because the Actions budget prevents use; local build admission was HOLD. The optional bounded non-production Vercel Sandbox run has no owner approval in this task; do not create one or change billing limits. Obtain fresh local admission, build sequentially, run desktop/mobile/reduced-motion and private sign-in/import/save/restore/sign-out tests, inspect captures, then obtain independent exact-revision engineering/design review and reconcile findings. Keep client ERP/model/hardware/pilot evidence, Academy integration, Registry registration and public/customer release gates open. Update the existing repo issues and this hub with evidence. Do not launch a larger fleet or load the entire skill corpus.
+<!-- agy-implementation-20261012:end -->

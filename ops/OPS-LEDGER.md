@@ -1,6 +1,122 @@
+<!-- queen-budget-dispatch-20261014:start -->
+## Queen: actual cost gate composed with durable dispatch
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`1b785c0ced37df508e024cea67c8e1bc9860a377`, persists operation identity before
+admission and composes the existing Python cost gate into the controller. Pinned
+route/input/budget evidence flows into native containment; duplicate/uncertain
+reservations hold. Exact reconciled retry now survives a second admission failure.
+Final local checks: 121 pass, three Unix-only skips; a separate unchanged verifier
+fixture remains blocked by the installed Git guard. No checks were disabled.
+Independent source FAIL retained and repaired; final scoped v0 Max source QA PASS.
+
+This is IN_PROGRESS source, not active-loop installation or production acceptance.
+Hosted/receiving gates, capacity, protected host configuration, authenticated
+billing/allowance and one real-provider recovery task remain open. Example policy
+stays paused; no new swarm/service, deployment, spend change, cache purge or foreign
+process stop occurred. See the [14 October session](sessions/2026-10-14.md), existing
+[Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51 and the current pickup.
+Earlier preservation/business work and the full multi-layer goal remain active.
+<!-- queen-budget-dispatch-20261014:end -->
+
+<!-- queen-cost-demand-20261014:start -->
+## Queen: cost admission repaired; partner and demand evidence prepared
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact
+`d8597347397686d85087ddf0a5ce4bbfbfd7ac59`, revalidates paid routing/privacy/maker
+binding, preserves unknown ledgers and validates accounting invariants. A bounded
+in-memory cost audit reports unresolved costs and unknown baseline headroom.
+All29 focused Windows cases pass; exact six-text source and three-artifact private
+business-draft QA PASS, without independent execution or production acceptance.
+Two earlier source FAILs remain retained. Windows/Ubuntu coverage is configured.
+
+Four sourced research targets were added to the existing private partner tracker;
+application/research drafts and current-price scenarios are saved. Actual demand,
+membership, credit awards, invoices, savings and ROI remain unknown. Vercel billing
+queries returned404for the verified team. No outreach, programme application,
+spend-setting change or scheduled follow-up occurred. Machine RAM/storage holds
+still prohibit new local fanout/build/install.
+See [14October session](sessions/2026-10-14.md) and existing [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51.
+Source remains DRAFT_NOT_LIVE and the full multi-layer goal stays ACTIVE.
+<!-- queen-cost-demand-20261014:end -->
+
+<!-- queen-evolution-doctor-20261013:start -->
+## Queen: activation diagnosis and admission repair
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `ecfa5c047ec6a728cc8be16605bc6a9b8e76171c`, adds observation-only `doctor`, preserves PP swarm drain/pause restrictions and supplies an explicit installation/evolution guide. All20 focused follow-on cases pass; independent v0 Max twelve-file source review PASSES after repairing documentation CI filters. This is DRAFT_NOT_LIVE, with no independent execution or real-provider acceptance. Earlier67 passing cases and one skip belong to288132b and were not broadly rerun under machine HOLD.
+
+Latest observation is about72.35GiB/7.60% disk free and PP swarm HOLD. Roughly3.8GiB reclaim plus the operation reserve is needed at that observation; exact authorization and fresh measurements remain required. No new swarm, service, install, build, cleanup or worktree occurred. The original archives and all unfinished work remain preserved. [Ops134](https://github.com/frankxai/agentic-ops/issues/134)/51 track protected native control, useful provider output, continuation/interruption/restart and broader scheduling. Follow the13October session and current prompt; full swarm management remains open.
+<!-- queen-evolution-doctor-20261013:end -->
+
+<!-- queen-agent-manager-recovery-20261013:start -->
+## Queen: private session preservation and owned CLI control
+
+Draft [Ops234](https://github.com/frankxai/agentic-ops/pull/234), exact `288132ba7e83a89e3b0889b786ae77dbca29d782`, implements native provider discovery, immutable private archives, repository recovery, Claude pickup files and an operator host using the accepted QueenWorker, controller and Windows Job Object adapter. Existing [issue134](https://github.com/frankxai/agentic-ops/issues/134) tracks this slice; the full native/portable programme and issue51 remain open. Source is DRAFT_NOT_LIVE. No persistent service, second queue or Rust rewrite was installed.
+
+The real local batch preserved 35 original Codex transcript files covering 33 distinct session IDs within a four-day source window, with no inventory omissions or failed source saves. Recorded views contain870 user-role messages,238 supplemental history entries,6,636 assistant outputs and198,942 tool records. These representations overlap and include repeated session sources; human authorship and historical file authorship are unverified. Current snapshots cover104 repository/worktree paths. Thirty-one recovery bundles are partial and four are complete observed bundles, because of explicit file/patch/repository budgets, linked paths or missing origin. Original repositories remain intact. Initial v1 bundles verify artifact bytes but have no separate manifest metadata checksum. Private originals total1,431,440,152 source bytes and stay outside this public hub.
+
+Operator commands preview by default. Applied explicit cancellation requires the exact managed attempt, verified original stdin/stdout/stderr, complete required repository recovery and fresh admission; final fencing/quiescence and stable raw streams are separate proofs. Failed final preservation is reported independently from termination and produces a nonzero result. Uncertain-start reconciliation uses existing abandonment/fencing and never automatically replays the identity. Foreground owner loss must contain its own jobs even when I/O prevents a complete archive; emergency references are retained where possible. Existing arbitrary terminal sessions were not stopped: process observations and saved histories do not supply owned native control streams. Graceful connected control and current unowned-session attachment remain open.
+
+Local focused verification passes48 of49 cases with one POSIX-only skip on Windows. Existing native Node nine-case and Python ten-case suites pass; they include real fixture Job Object containment, exact cancellation and survival of another owned job. No real coding-model launch or provider permission acceptance is claimed. Three earlier source-review FAILs and one ordering WARN remain retained. The final independent v0 Max source-only review PASSES exact288132b across20 supplied source files; it independently executed no tests and does not accept production activation. Hosted recovery CI and installed Claude review did not start because of the account's Actions budget. Required checks and security hooks remain enabled.
+
+Local swarm fanout remained held/constrained despite founder authorization. One existing remote private source reviewer was used; no additional local agents were spawned. Machine policy v1.2 numerical storage floors remain8% and50GiB; fresh local filesystem receipts supplement absent disk fields in the legacy PP CLI without overriding explicit PP holds/unknown state. Recheck admission before the next workload. The private `~/.starlight/agent-manager/INDEX.md` and `CLAUDE-QUEEN-CONTINUE.md` give per-source and implementation pickup. Preserve earlier AGY drafts and peer worktrees. Next: resolve any remaining review findings, restore normal hosted checks within account policy, then prove one admitted real-provider continuation/interruption/restart through the accepted twenty-gate plan before claiming global Queen control.
+<!-- queen-agent-manager-recovery-20261013:end -->
+
+---
+
+<!-- claude-queen-scan-containment-20261014:start -->
+## 2026-10-14: Queen programme scan, SIS containment, demand doors and estate hygiene (Claude)
+
+Read-only scan of the Queen/SIS programme (requirements, evidence ladder, architecture, lab and open-source technology, cloud cost, partnerships) with full notes kept private. Result: every Queen item is at source plus CI or below, zero Queen model turns have run, and seven Queen surfaces plus four routers overlap. SIS PR377 merged through a locally forged review receipt plus auto-merge; contained by turning repo auto-merge off, reverting it ([PR399](https://github.com/frankxai/Starlight-Intelligence-System/pull/399), merged by the owner login, merge basis not inspected) and reopening [epic 350](https://github.com/frankxai/Starlight-Intelligence-System/issues/350). The replacement gate and hosted-runner checker is draft [PR400](https://github.com/frankxai/Starlight-Intelligence-System/pull/400), head `fe0079287778e696d55fe11688e2fa8c0b6b4447`: two independent Codex reviews returned REVISE, round 3 closed what code can close, three newer automated findings are open, nothing has run on GitHub. It cannot become a real control until a second identity exists (checker App, independent reviewer, ruleset without admin bypass). Demand doors: waitlist-first draft PRs on starlight.domains 21, starlight.you 11 and frankx.ai 1018 and 1019 replace priced checkouts that had no gate PASS; merges are Frank's (pricing). Google: DNS verification and DMARC added for starlightintelligence.ai; dedicated Cloud project with billing, BigQuery and a budget alert exists; the Search Console export form and a read-only BigQuery MCP are not done. Estate hygiene: about 76 clean, fully pushed worktrees removed by a safe rule. Session detail: [2026-10-14](sessions/2026-10-14.md). Status vocabulary: MERGED_NOT_LIVE and DRAFT only; no customer outcome verified.
+<!-- claude-queen-scan-containment-20261014:end -->
+
+<!-- sis-swarm-topology-and-demand-doors-20261014:start -->
+## 2026-10-14: Swarm Fleet Architecture Codified, Demand Doors Proactively Fixed, and Queen Handoff Substrate Operational
+
+- **Swarm Topology & Cloud Blueprint ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Codified and committed `docs/architecture/STARLIGHT-SWARM-AND-CLOUD-TOPOLOGY.md`. Establishes the 5-Tier Swarm Hierarchy (Kings, Queens, Model Councils, 151 Specialists, Front-Door), 3-Tier Heterogeneous Model Routing Matrix (Flash/Haiku, Sonnet/Codex, Opus/Pro), and Multi-Cloud Architecture (Cloudflare R2, OCI bare-metal GPU/ADK, Vercel preview gate, Upstash Redis/Vector, Supabase Postgres).
+- **Proactive Demand Doors Resolution**:
+  - **Door #2 (KV Alias)**: Added Upstash Redis REST fallback (`UPSTASH_REDIS_REST_URL`/`TOKEN`) in `packages/demand-capture/src/store.ts` and `report.mjs`.
+  - **Door #5 (Sender Authentication)**: Enforced verified `mail.frankx.ai` DKIM domain across Stripe/LemonSqueezy webhooks and GenCreator starter download.
+  - **Door #6 (Akamoto Surface 404)**: Updated `graph/products.graph.json` marking gift deliverable as `on-disk` and held dark until `akamoto.io` deployment is verified.
+- **Queue Blocker Reduction**: 3 completed demand door cards archived into `_archive-completed-202610/`. Total Queen queue blockers reduced from 24 down to 21 (demand door blockers reduced from 5 down to 2).
+- **PowerShell 5.1 Terminal Cleanliness**: Fixed SSOT path in `Import-StarlightShell.ps1` and sanitized Unicode emojis in `scripts/agy-tools.ps1` with UTF-8 BOM (`b71056465`), resolving Windows PowerShell 5.1 ANSI boot warnings.
+- **100% Multi-Layer Verification**: Verified Cloudflare Worker Edge router E2E (12/12 pass), Sovereign Durability & Transports (73/73 pass), Foundry upstream conformance and OpenAI preflight (53/53 pass, 40+ checks pass), and Finance IS PnL / Stripe / runway (34/34 pass). Core test matrix 100% green: `npm run test:operational` (73/73), `npm run test:substrate` (142/142), `npm run test:v01-evals` (34/34), `npm run build` (tsc clean).
+- **Tool Plane & Preflight**: Machine RAM measured at 6.3 GiB free (safe above 4.0 GiB floor); Starlight tool plane running on PID 14552 / port 7317 with 37 active client sessions.
+<!-- sis-swarm-topology-and-demand-doors-20261014:end -->
+
+<!-- sis-executive-and-queen-lifecycle-20261013:start -->
+## 2026-10-13: Starlight Executive Tier (151 Agents) Hardened & Queen Terminal Agent Lifecycle Qualified
+
+- **Executive Tier & 151 Agents ([SIS PR #407](https://github.com/frankxai/Starlight-Intelligence-System/pull/407))**: Re-lands 7 Executive cards (`starlight-ceo.md`, `starlight-cfo.md`, `starlight-coo.md`, `starlight-cto.md`, `starlight-cmo.md`, `starlight-caio.md`, `starlight-chief-of-staff.md`). Directly resolves all 3 Codex P1 review findings: CAIO substrate version bumps require explicit human Frank approval; CTO paid vendor platforms/cloud dependencies require Frank human approval and CFO spend gate (money fails closed); Chief of Staff routes private/financial verdicts exclusively to `private/memory/` (operator-private, gitignored). Tracking [Issue #408](https://github.com/frankxai/Starlight-Intelligence-System/issues/408).
+- **Queen Terminal Agent Lifecycle ([SIS PR #406](https://github.com/frankxai/Starlight-Intelligence-System/pull/406))**: Provider-neutral CLI-agent discovery, lifecycle management, and session preservation. 4 native MCP tools exposed: `sis_queen_agent_inspect`, `sis_queen_agent_save`, `sis_queen_agent_stop`, `sis_queen_agent_resume`. Clean branch replaces superseded PR #401. Tracking [Issue #398](https://github.com/frankxai/Starlight-Intelligence-System/issues/398#issuecomment-6153816908).
+- **100% Green Verification**: `npm run test:substrate` (142/142), `npm run test:operational` (73/73), `npm run test:v01-evals` (34/34), `test/queen-agent-lifecycle.test.ts` (11/11). Clean compilation via `tsc`.
+<!-- sis-executive-and-queen-lifecycle-20261013:end -->
+
+<!-- estate-agent-delivery-20261013:start -->
+## Estate agent routing and backlog reconciliation
+
+Frank authorizes bounded local/Cloud teams and safe proactive merges. The reusable [delivery guide](../docs/ESTATE-AGENT-DELIVERY.md) maps executive, design, maker/checker and GitOps responsibilities onto the existing coordinator. The [coding-agent inventory](../docs/CODING_AGENTS.md) replaces obsolete model and autonomy claims. This is documentation and a routing proposal, not an installed workforce or a live auto-merge controller.
+
+Private evidence captures all718 indexed PR records across145 repositories and all4,690 remote branches across413 account-visible repositories. The non-atomic source read finds483 drafts,18 clean/green source-review candidates,117 conflicts including drafts and227 PRs with failing checks including drafts. Three indexed PRs changed state during capture. This is metadata, not718 complete source reviews. All CSV rows carry exact heads; unpushed/local-only branches and closed-history supersession remain outside coverage. No branches were deleted or drafts made ready.
+
+Do not merge Hub175 unchanged: its174-line continuation delta includes obsolete deletion instructions and would replace newer pickup text. Config116 lacks its required independent-review-policy; Ops218 is behind current main despite green CI; Claude config35 remains an unverified roster proposal. Preserve peer-owned Ops230 and the Actions cost drafts FrankX1014, GenCreator230 and agenticincome66. Registry agent import is still pending at source3415e72e25a44c55250048a69c15c8e1a290604d; model/agent setup requires reconciliation with accepted configuration. Required capability-loading/progressive-gateway guides were absent in the inspected config sources; no claim that they loaded.
+
+FrankX Vercel observation covers29Sep00:25 through13Oct00:25 UTC,748 deployments. Current seven days443 (286READY,129CANCELED,28ERROR); prior seven days305 (147READY,118CANCELED,40ERROR). Fifty-four connector-truncated IDs/states were re-read in seven bounded timestamp windows. This proves deployment counts/state, not dollar cost. Only two duration details were inspected. The inspected CI-only deployment is CANCELED and points to ignored-build documentation; its37.447-second building-to-ready interval is not a bill.
+
+v053 events in the mission range report0.019 native credit units. The conservative published-token estimate is USD17.25545215, not actual billing or balance. Existing USD25 generation allowance remains; no purchases or new recurring paid allowance. Current official v0 ChatGPT documentation lists Astra and older Sol/Luna models, with no GPT-6.1 Sol; installed MCP separately supports only the four v0 model aliases. No new generation or model review had run when this checkpoint was written.
+
+The Cloud font task tracked in existing FrankX339 now shows ERROR/no diff. A read-only native task-detail/tail inspection exposes only the supplied prompt, with no error cause. The owned client closed. Do not call this task pending or successful; do not blindly retry or reconstruct the unpublished Foundry source packet. The clean local debc9a8 candidate and all earlier failures remain preserved.
+
+Local PP swarm admission is HOLD (available3384MiB, safety4096MiB; CPU82%). Fresh disk evidence73.97GiB/7.77% is below8%. No local fanout, build, install, media, browser worker, new worktree or foreign-process termination occurs. The existing clean Hub worktree is reused for text only. Shared tool-plane sessions show other CI/cost/merge-policy owners; their work is preserved.
+
+Selected/read guidance: Registry and accepted architecture source; Starlight SO; Emil design engineering; Queen GitOps admission; operations accounting; Vercel cost watch; humanizer. Applied: packet-first coordination, deterministic source queues, native Cloud inspection and bounded cost reads. Verified: native GitHub metadata/pagination, repaired Vercel state coverage, Hub instruction hash/routing/lane and instruction projection consistency. No new interface, image, browser customer journey, provider accuracy benchmark, persistent Cloud setting or runtime team is verified.
+
+Initial exact-head v0 static review of a7a3209 returned WARN: re-check changing model documentation beside the model list and minimize operational identifiers. Both suggestions were addressed in this slice. The Hub is public; new task/deployment identifiers were removed from this added checkpoint, while existing accepted history is preserved. Next: independent review of the revised five-file documentation slice, normal PR/checks and merge if clear, then receiving-source verification. Update existing FrankX339. Reconcile workforce/model/merge proposals through their owners; prove a ten-case routing and one useful remote return before installing or expanding routines. The broad design programme remains open; the old blocked/expired goal is preserved. Planning estimates:2–4 hours for a first admitted pilot, then4–8 for one design slice;235 indexed non-draft items imply roughly59–118 reviewer-hours at15–30minutes each before repairs, not a twelve-hour estate completion promise.
+<!-- estate-lifecycle-registry-20261013:start -->
 ## 2026-10-13: Estate lifecycle registry projection opened; 62 Vercel projects classified
 
 `registry/` now holds the public lifecycle projection (states S0–S7, schema, transitions, 60/30/10 capacity rule) and the first snapshot classifying all 62 Vercel projects: S0 1, S1 22, S2 10, S3 14, S4 0, S5 0, S6 4, S7 11. Zero entities hold an S4 receipt (open checkout + first external payment). `docs/SWARM-RUNTIME-ARCHITECTURE.md` records where agents run (local lanes, Cloudflare Workflows/Agents, Vercel Workflows, Make/n8n glue), identity (agent card + Ed25519 + scoped grants) and A2A transports, composing the accepted 2026-10-04 durable execution boundary. Proposal for pulse #1 (2026-10-20); private registry in `agentic-ops` remains the source of truth. Draft PR on branch `ccr-1ba34efa-4l9uqg`.
+<!-- estate-lifecycle-registry-20261013:end -->
 
 ## 2026-10-12: Supabase-safe three-package release merged and production artifact qualified
 
@@ -2950,6 +3066,23 @@ Dragonborne v9 remains private and unapproved. Five flagged print continuations 
 
 Keep the full founder programme ACTIVE and world-first60/30/10. Next: complete actual signed-in reading save/reload/denial acceptance under a separately admitted bounded fixture, then resume the final print spread and unchanged-text pagination comparison after fresh machine/storage admission. Retain funded creative/harness evaluation, signed promotion, npm/cold-install delivery, consenting creator pilots, managed supply/tenant recovery and commercial/customer gates. Existing release280 and evaluation282 remain open. No publication, billing, key rotation, tenant experiment or security suppression is authorized by this handover.
 <!-- arcanea-reading-progress-20261012:end -->
+<!-- agy-implementation-20261012:start -->
+## AGY: source-backed workbench and synthetic evidence lab
+
+Owner requested a foundation review followed by autonomous implementation. Existing staged strategies were preserved in private Git history; both newly established upstreams remain private. No production deployment or visibility change occurred.
+
+Prompt source: private local record `agy-implementation-20261012`, SHA-256 `4ae790466303a4ab0e9f3b8be5780e0e41a0b8fac8aaa54476dbc2aff2b4a773`. It preserves the AGY-related user messages visible in this task. Raw text remains in local `.starlight` evidence and is not copied to this public hub or GitHub issues. This is not a full export of unseen conversations.
+
+Customer kit: [draft PR 2](https://github.com/frankxai/agy-clients/pull/2), tracking [issue 1](https://github.com/frankxai/agy-clients/issues/1), branch agent/codex/transformation-kit, revision e5ae1e4. Implements approved-source retrieval, integer net quotation, shortages/freshness, operator note, draft recovery/export, signed single-workspace authentication, atomic customer storage, conflicting/stale-source save rejection, customer identity isolation and an optional loopback extractive-model adapter. Actual customer ERP, identity integration, inference/hardware benchmarks and paid-pilot evidence remain unknown.
+
+Community: [draft PR 2](https://github.com/frankxai/agy-community/pull/2), tracking [issue 1](https://github.com/frankxai/agy-community/issues/1), branch agent/codex/pattern-release, revision 4c0026e4509c946bdb81ae52c2676dc610b4f258. Implements a read-only synthetic React Flow explorer, independently validated closed pattern vocabulary, trusted reviewer signature contract and one executable energy lab. A technical pass explicitly awards no Capability Receipt. Existing Academy learning authority remains unchanged; live community and graph integration are pending.
+
+Verification: 17 client and 5 community Node tests pass. Client route integration executes actual sign-in/import/answer/save/reload/conflict/origin-denial/sign-out handlers. A separate exporter-to-consumer check verifies preview rejection for release, trusted approval and payload-tamper rejection. Prettier source parsing caught and corrected malformed JSX. Impeccable mechanical detection returned no initial findings; that result does not establish visual quality. Local secret hooks ran normally with a task-scoped, digest-verified official Gitleaks executable; no hook or history bypass.
+
+Build/browser blocker: [client run 38251316596](https://github.com/frankxai/agy-clients/actions/runs/38251316596) and [community run 38251156996](https://github.com/frankxai/agy-community/actions/runs/38251156996) failed before steps. GitHub annotation says the Actions budget prevents use. Local PP heavy-work admission was HOLD; no build/browser/model or extra agent started. The owner was offered one bounded 20-minute non-production Vercel Sandbox run without billing-limit changes; no answer or spend is assumed. Actual desktop/mobile captures and independent exact-revision engineering/design review remain pending. Both PRs stay draft.
+
+Next: resolve an admitted execution environment, build/test both exact revisions and inspect desktop/mobile captures; run private browser sign-in/import/save/restore/sign-out; reconcile independent provider/design findings. Then finish customer discovery and agreed baseline before any deployment, commercial offer or hardware procurement. Registry proposals are pending reviewed registration; proposed agent/skill names are not installed-runtime claims. No unfinished task was archived and no foreign checkout/process was taken over.
+<!-- agy-implementation-20261012:end -->
 
 <!-- codex-cloud-routing-20261012:start -->
 ## Codex Cloud routing, 12 October 2026
