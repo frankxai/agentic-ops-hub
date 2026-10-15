@@ -1,3 +1,23 @@
+<!-- sis-managed-roadmap-20261015:start -->
+## Current pickup: connected SIS product plan
+
+Read [agentic-ops PR #244](https://github.com/frankxai/agentic-ops/pull/244) and
+[the session handover](sessions/2026-10-15.md), then use the existing programme owners.
+
+```text
+Continue the connected SIS managed-service plan at its exact current PR head.
+Read the owning repository instructions, reviewed Registry, strategy and roadmap.
+Inspect #109/#151 and acceptance #242/#243; preserve unfinished products and WIP.
+First obtain independent review of the paid/OSS promise, useful customer workflow,
+tenant authority, recovery, costs, support and beta fallback. Do not call the
+lead-authored Board challenge independent. Resolve product ownership through #82.
+Use the prepared board definition with the existing Projects board when a
+Projects-capable connection is available; do not create a second queue.
+Admit one bounded useful implementation only after ownership, capacity and
+authority pass. Return exact artifact, actual checks, remaining gates and next action.
+```
+<!-- sis-managed-roadmap-20261015:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
