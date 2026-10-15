@@ -1,3 +1,22 @@
+<!-- sis-managed-roadmap-20261015:start -->
+## Connected SIS managed-service planning, 15 October 2026
+
+Documentation proposal: [agentic-ops #244](https://github.com/frankxai/agentic-ops/pull/244).
+Acceptance cards: [paid/OSS #242](https://github.com/frankxai/agentic-ops/issues/242) and
+[receiving-user proof #243](https://github.com/frankxai/agentic-ops/issues/243).
+[Session evidence](sessions/2026-10-15.md) records the exact scope and limitations.
+
+The proposal connects existing strategy, architecture, Cloud/frontier/security/federation
+programmes, useful OSS, paid features, specialist packets and beta adoption gates.
+Exact content readback and planning-graph checks passed in their stated scope.
+Independent review and implementation remain open. Board challenge is lead-authored;
+live Projects integration is blocked by connection scope. No new runtime, paid service
+or recurring job was activated. Private economics remain in the private owning repo.
+
+Next: independent exact-revision review, existing product admission and customer-value
+acceptance; then an admitted bounded implementation through existing owners.
+<!-- sis-managed-roadmap-20261015:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
