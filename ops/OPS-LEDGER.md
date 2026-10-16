@@ -3189,3 +3189,11 @@ Existing canonical web production is READY at `dpl_2cZVYViSYRuQHsi9fGFVxrxe8zZq`
 The full world-first 60/30/10 programme remains ACTIVE. Next work is an admitted actual creator workflow and funded equal-budget role/harness evaluation using existing AuthorOS/SIS contracts. Guardian keyword classification remains distinct from provider dispatch. Preserve user pins, consent, privacy, payer, bounded fallbacks, immutable foundations and rollback. Signed human canon promotion, durable tenant recovery, consenting pilots and authorized managed subscription/API supply remain open. Dragonborne: The Last Clutch stays selected for ARC-REL-001; private v9/PDF/EPUB are candidates. Independent cold read and human manuscript/canon/rights/cover/device/publication remain pending. Private prose was excluded from free/public source review; unanswered private-screen funding is not approved.
 
 <!-- arcanea-opencode-delivery-20261012:end -->
+
+<!-- unified-ai-os-20261016:start -->
+## Unified AI OS: connected existing system and exercised isolated staging
+
+Private Content OS [draft PR #7](https://github.com/frankxai/content-os/pull/7), current `bf1922b9afdb306b56fc94f5b96f66cb535cf7bb`, consolidates A–J, prompts, workflow contracts and diagnostics; connects its Notion index to the existing backplane; and verifies restored native workflow engineering access against an unpublished isolated candidate. It remains stacked on preserved draft #6. Sixty-six focused local tests and six pinned runtime cases pass. Generation used authored fixtures; actual provider output/quality/cost remains unverified. Existing [issue #5](https://github.com/frankxai/content-os/issues/5) retains detailed private evidence and remains open.
+
+The incumbent production version is unchanged. Current model route/real output, production authentication/network recovery, architecture reconciliation where applicable, independent review, reported security-review maintenance, release checks and a measured live pilot remain open. The temporary transport is closed; no new recurring service, schedule, public post, customer send, cleanup or foreign process action occurred. The owned hub worktree preserves Hermes's dirty primary and all other records. See [16 October session](sessions/2026-10-16.md).
+<!-- unified-ai-os-20261016:end -->
