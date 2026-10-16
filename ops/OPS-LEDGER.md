@@ -1,3 +1,11 @@
+<!-- n8n-self-host-agents-20261016:start -->
+## n8n spine pinned, Agents held off the queue
+
+16 October 2026. Railway project `n8n w/workers` is on `n8nio/n8n:2.43.7` for Primary deploy `2d076fc3-64bd-4496-9a5d-e0f6ebc508cc` and Worker deploy `57e96f3b-2baf-4f22-ac98-4af6a2e6d25a`, region `europe-west4-drams3a`. Health and readiness returned ok. Previous image was `2.36.8`. Queue mode stays. n8n Cloud was compared and refused: Starter €20 and Pro €50 add a cap and drop the worker. Business at €667 is still self-hosted.
+
+First-class Agents ship in this version and do not run in queue mode. Phase 1 uses the AI Agent node on the spine. A regular-mode seat is specified and not deployed, pending the Railway cost cut in [agentic-ops#83](https://github.com/frankxai/agentic-ops/issues/83). Full design: [16 October plan](plans/2026-10-16-n8n-self-host-agents.md) and [session](sessions/2026-10-16.md). The pin file is `railway/platform-manifest.json` on `agent/grok/n8n-2437-pin` in agentic-ops, which is not on `main`. API key on Primary still returns 401. No workflow run was proved after the pin.
+<!-- n8n-self-host-agents-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
