@@ -1,3 +1,19 @@
+<!-- estate-operating-map-20261016:start -->
+## Harness, voice and estate operating map
+
+Local agent-config candidate `0468f8a9de6f97f52de6274302dad943ddb95505` adds
+a bounded metadata auditor, offline interactive map, portable kickoff prompt and
+delivery/testing plan. Ten focused tests, generated-script syntax, routing,
+ownership and secret checks pass. Runtime projection, browser/device proof and
+independent exact-source review remain open. Resource admission held; the existing
+doctor found unrelated hook-safety failures. No additional worker or service started.
+
+Continue [agent-config46](https://github.com/frankxai/starlight-agent-config/issues/46),
+existing memory recovery, and Voice2/Command Center69. Full details and preservation
+boundaries: [16 October session](sessions/2026-10-16.md). This extends the existing
+Queen profile and does not take the chair or replace any active runtime/queue.
+<!-- estate-operating-map-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

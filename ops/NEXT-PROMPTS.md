@@ -1,3 +1,24 @@
+<!-- estate-operating-map-20261016:start -->
+## Continue the harness and voice operating plan
+
+Read the 16 October session and the owned local agent-config branch
+`agent/codex/estate-operating-map-20261016`, exact candidate
+`0468f8a9de6f97f52de6274302dad943ddb95505`. Preserve other lanes and all
+unfinished objectives. Obtain independent exact-source review before promotion.
+The map is an offline artifact and voice rehearsal, not a runtime activation receipt.
+
+Inspect current source, ownership, machine admission and private budget/spend
+evidence. Reuse the existing Queen and managed intake. Restore shared memory under
+SIS49/memory2/8, then prove one existing Voice/controller/native-harness mission:
+microphone input, corrected intent, typed scope/duplicate denial, owned execution,
+interruption, reconnect and spoken result. Keep secrets server-side and preserve
+current Voice and Command Center source/review work. Compare a frozen task against
+the single-lead baseline with actual repair, review, elapsed time and total cost.
+Do not launch every repo or a new daily scheduler from one kickoff. Route all
+lanes, activate admitted work, and keep held work visible with its reason. Save
+the next checkpoint here and on the existing product issue.
+<!-- estate-operating-map-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
