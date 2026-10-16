@@ -1,7 +1,7 @@
 <!-- browser-session-audit-20261016:start -->
-## Browser sessions: protection patch prepared, live repair remains open
+## Browser sessions: Windows encryption failure found; local hook repair tested
 
-Codex [16 October audit](sessions/2026-10-16.md): Chrome has saved account-authentication error metadata; causal actor remains unverified. Keep both password managers and preserve local passwords. Draft [PP6](https://github.com/frankxai/peak-performance/pull/6) at `b497cc3` protects Chrome, Edge, Brave and Comet in process classification, with seven passing focused regressions and a clean secret scan. Full type checks, independent review and installed adoption remain pending under [PP3](https://github.com/frankxai/peak-performance/issues/3). Existing browser guard works on the inspected Codex path; universal enforcement is unproved. No live profile or process changed.
+Codex [16 October audit and follow-up](sessions/2026-10-16.md): a preserved empty-cookie-store replacement failed the user's restart test. Chrome counters show cookie encryption failures; a dummy Windows DPAPI test independently confirms user encryption fails while machine encryption works. Pending user password unlock and retest; upstream trigger/agent culprit unproven. Password/profile/settings stores preserved. Local Codex hook upgrade and damaged security-runtime repairs pass three Stop replays, scanner replay and retained denial checks; real Desktop end-of-turn adoption remains unobserved under [Config78](https://github.com/frankxai/starlight-agent-config/issues/78). Draft [PP6](https://github.com/frankxai/peak-performance/pull/6) `b497cc3` has seven focused passes; type checks, independent review and installed adoption remain pending under [PP3](https://github.com/frankxai/peak-performance/issues/3). Universal protection is unproved.
 <!-- browser-session-audit-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
