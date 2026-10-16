@@ -1,3 +1,18 @@
+<!-- infisical-langfuse-20261016:start -->
+## Infisical and Langfuse: collector-free connection verified
+
+Infisical credentials authenticated to Langfuse Cloud EU. Missing development
+URL settings and stale nonsecret Windows User URLs were corrected and read back.
+A direct synthetic OTLP span returned HTTP 200 and was retrieved through
+Observations v2. No local collector, model call or transcript export occurred.
+
+Automatic runtime tracing remains open; existing applications retain inherited
+environment settings until refreshed. Railway services remain unchanged. See the
+[16 October session](sessions/2026-10-16.md) and existing
+[configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
+Private credentials and tenant references are excluded from this projection.
+<!-- infisical-langfuse-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

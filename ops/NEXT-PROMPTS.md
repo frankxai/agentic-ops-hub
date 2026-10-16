@@ -1,3 +1,18 @@
+<!-- infisical-langfuse-20261016:start -->
+## Continue direct Langfuse tracing from the verified Infisical connection
+
+Read the [16 October session](sessions/2026-10-16.md) and existing
+[configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
+Infisical credentials, corrected Cloud EU URLs, direct OTLP ingestion and exact
+span read-back are verified. Automatic session tracing is not enabled. Confirm
+whether Frank wants Codex, Claude Code, an application or LiteLLM instrumented,
+and agree the conversation-data scope before enabling transcript capture.
+Refresh inherited environment settings, use the selected runtime's supported
+direct exporter or bounded hook, and verify one real run plus failure recovery.
+Keep credentials in Infisical and retain the no-local-collector constraint.
+Preserve the existing Railway services and their separate unresolved gates.
+<!-- infisical-langfuse-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
