@@ -12,11 +12,12 @@ environment settings until refreshed. Railway services remain unchanged. See the
 [configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
 Private credentials and tenant references are excluded from this projection.
 
-Workstream 3 now follows Frank's no-local-collector direction: prefer native
-harness trace export with Infisical-backed authentication. Codex, Claude Code and
-Gemini have documented native paths; Grok's external OTLP stream is logs/metrics
-only, so its Langfuse trace path remains open. The five-harness scope and real-run
-proof are still pending. This follow-up changed records only.
+Workstream 3 follows Frank's no-local-collector direction. His five named targets
+are OpenCode, Claude Code, OpenClaw, Hermes and Codex. All five direct routes are
+now documented; Codex CLI 0.163.0's native span exporter and its pinned dependency's
+environment-header support were also inspected in source. Grok is outside this
+five-harness scope. Installed activation, credential/capture handling and one real
+retrieved trace per harness remain pending. These follow-ups changed records only.
 <!-- infisical-langfuse-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
