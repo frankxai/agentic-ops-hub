@@ -1,3 +1,16 @@
+<!-- memory-architecture-20261016:start -->
+## Memory and context: service recovery precedes provider expansion
+
+The [16 October audit](sessions/2026-10-16.md) reproduced shared-memory startup
+failure at vault-file admission. Existing bounds and source material must be
+preserved during owner-coordinated recovery. SIS context-continuity PR345/354/355
+are merged; stale pending receipts do not describe their current merge state.
+Current service health, provider lifecycle, real cloud-account acceptance and
+paired outcome evaluation remain open under SIS49, memory8/2 and SIS150.
+Responsibility and provider recommendations are proposals; no migration, new
+standing orchestrator, deployment or independent approval is claimed.
+<!-- memory-architecture-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

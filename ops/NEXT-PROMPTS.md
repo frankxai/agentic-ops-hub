@@ -1,3 +1,22 @@
+<!-- memory-architecture-20261016:start -->
+## Restore scoped shared memory and verify continuation
+
+Read the 16 October session and current private memory audit, then current
+repository instructions and source-owner/lease state. Preserve the active
+consolidation task, canonical sources, privacy classes and all held writer locks.
+Coordinate recovery of the oversized generated index without weakening loader
+bounds or copying private content into public code. Add writer-side admission
+and verify shared initialize, tool discovery, a cited authorized recall and
+useful failure reporting. Continue existing SIS49 and memory8/2 conformance work;
+verify deletion/revocation, tenant isolation, duplicate close and interrupted
+task recovery across admitted harnesses. Keep SIS345/354/355 recorded as merged.
+Retain the local hybrid baseline. Hindsight/Graphiti/Caura are evaluation
+candidates, not a migration decision. Respect current resource admission, obtain
+an independent exact-revision review when admitted, and save receipts plus the
+remaining gaps to this hub and the existing issues. Do not start another
+scheduler, bulk-import chats or activate a new provider as part of recovery.
+<!-- memory-architecture-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
