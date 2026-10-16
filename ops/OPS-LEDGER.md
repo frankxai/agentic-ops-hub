@@ -1,3 +1,22 @@
+<!-- website-factory-20261016:start -->
+## Website factories: product direction and supporting compiler
+
+[Programme proposal #244](https://github.com/frankxai/agentic-ops/pull/244),
+exact `3bc470e72e52489796baea1f08137e0b834b7b65`, expands the customer direction
+to durable research, creation and agent-team delivery in existing products.
+[Factory issue #252](https://github.com/frankxai/agentic-ops/issues/252) joins
+the existing programme owners; [session](sessions/2026-10-16.md).
+
+Supporting catalog/compiler work passed four portfolio validators and 137 Python
+tests in UTF-8 mode. Foreman/eve is a pinned execution candidate. No live factory,
+model integration, paid offer or customer acceptance was established. Independent
+review, required private CI and implementation/release admission remain open.
+Live Projects access is still scope-blocked; the issue-backed projection is linked.
+
+Next: independent review of the actual revision, then one admitted complete
+Starlight research-to-artifact and recovery slice through its existing owners.
+<!-- website-factory-20261016:end -->
+
 <!-- sis-managed-roadmap-20261015:start -->
 ## Connected SIS managed-service planning, 15 October 2026
 
