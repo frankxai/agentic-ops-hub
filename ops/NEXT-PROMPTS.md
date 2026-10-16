@@ -1,3 +1,25 @@
+<!-- voice-live-face-20261016:start -->
+## Build the Starlight Voice live face
+
+Current pickup for the voice face only. Leave the Queen prompts below untouched.
+
+You are building the face of the clap operator. The ear already runs. Do not start a second one, a second Queen, or a new app.
+
+Read `C:\Users\frank\starlight\worktrees\hub-voice-live-face-20261016\ops\sessions\2026-10-16.md` and `frankxai/starlight-voice` tip `ead2fba`. Confirm `http://127.0.0.1:8765/api/live`. If phase is `open` or `speaking`, wait. If phase is `armed`, you may stop that listen only when your replacement page is ready to serve.
+
+Write lane: a new worktree from `ead2fba`, branch `agent/<harness>/voice-live-face`. Do not write `C:\Users\frank\starlight\worktrees\starlight-voice-xvoice` while that listen is running. Do not write `C:\Users\frank\starlight\repos\starlight-voice`.
+
+Stack: grow `dashboard/live.html` and `dashboard/live.css` on the existing server at `dashboard/server.py`. Do not add Vite. Do not move the face into `starlight-command-center` Observatory. That Next.js app is the private desk. GSAP on this vanilla page for one timeline of house lights. Do not install `gsap-react`.
+
+Skills, in order, four at most. Run `python C:/Users/frank/.starlight/design-capabilities/design-sight.py --estate` first. Then `emil-design-eng` for the feel contract: what presses, what eases, what must not move. Then GSAP, because this is a timeline and the user asked for it. Skip `apple-design` unless you add a real drag or interrupt gesture. After you open the page at 375, 768, and 1440, and with reduced motion, one Impeccable finish from the marketplace skill. Do not load a second motion skill.
+
+The screen shows five houses and nothing else pretending to be a team: FrankX, Arcanea, GenCreator, Starlight, show. A house lights only when `meta_harness` names that seat. No seat means no house lit. The orb has four true states from `/api/live`: armed, open, speaking, and the tool that just ran (`estate_lookup`, `web_search`, `x_search`, or `meta_harness`). Under the orb, one line says what it did: the tool, the file or the seat, and that `started` is false. Ara already speaks. The page shows her line. It does not open a second microphone and it does not attach to Chrome, Edge, Brave, or Comet.
+
+Reduced motion freezes the lights. Keyboard focus reaches the transcript. A missing `/api/live` says the listener is stopped, not a fake pulse.
+
+Checks: `python -m pytest sidecar/tests/test_clap.py sidecar/tests/test_x_voice.py sidecar/tests/test_session_store.py` with `PYTHONPATH=sidecar/src`. Then load `/live` and confirm the phase matches `/api/live`. Commit on your branch, push, open a draft PR. Do not self-merge. Comment on starlight-voice issue 2. Leave the grok CLI token, Infisical, and the vault unread by the page.
+<!-- voice-live-face-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
