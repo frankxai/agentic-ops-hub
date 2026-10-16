@@ -1,3 +1,22 @@
+<!-- software-factory-20261016:start -->
+## Per-website software factories: source proposal and evidence inspection
+
+[Program](plans/software-factory-2026-10-16.md) extends existing
+[Ops252](https://github.com/frankxai/agentic-ops/issues/252)/PR244 with customer
+journeys, brand-specific teams, architecture, research, rollout and a Registry-bound
+24-domain catalog across 13 brands. Provider inventory is 62 projects, not 62
+verified products. Four core homepages returned200; authenticated customer journeys
+and new production releases remain unverified.
+
+Read-only evidence tooling reuses the existing mission envelope, emits only held
+packets with no effective grant, and refuses false-green supplied evidence. New20
+and existing176 tests pass; CI includes the new suite. Independent exact-revision
+review and hosted results remain open. Disk recovered externally above its floor;
+fresh swarm admission still holds on RAM/task counts. No worker fleet, new service,
+product build, deployment, spend or foreign-session change occurred. See the
+[16 October session](sessions/2026-10-16.md). Preserve every prior front below.
+<!-- software-factory-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

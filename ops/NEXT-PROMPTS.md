@@ -1,3 +1,31 @@
+<!-- software-factory-20261016:start -->
+## Continue the software factory toward one valuable production journey
+
+Continue existing Ops252 and PR244 from the 16 October session and
+`ops/plans/software-factory-2026-10-16.md`, including its teams, research, rollout
+and 24-domain catalog. Preserve the full multi-brand goal, the existing admitted
+release pair, current product owners and the recorded EUR250/month planning ceiling.
+The hub's read-only evidence-gap tool and held mission-envelope packet are source
+work, not installed orchestration or customer acceptance. New20 and existing176
+tests pass; independent exact-revision review and hosted CI remain pending.
+
+Refresh source, task ownership and host/budget admission. Disk recovered externally
+above its hard floor; the latest swarm probe still held at9520MiB against10240,
+with ten runtimes against eight. Do not start a fleet from old receipts or bypass
+the missing required storage probe. Preserve essential browsers, login files and
+unfinished tasks. Read each destination's full current instructions and its current
+issue before assigning exact owned files.
+
+Select the existing Starlight research-to-build receiving lane with its owner,
+retain its actual project/research/memory contracts, and finish a useful editable
+artifact with sources, human steering, denial, cancel/resume, export/reopen and
+independent exact-revision evaluation. Only after actual CI, protected preview,
+receiving-user proof and applicable release gates may it go to authorized production
+with domain/source observation and rollback. Extend that proven protocol to FrankX,
+Arcanea and GenCreator, then other admitted cells. Save evidence here and Ops252;
+do not close the program from this documentation or a READY build.
+<!-- software-factory-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
