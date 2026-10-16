@@ -1,3 +1,19 @@
+<!-- asset-intelligence-20261016:start -->
+## Image management and ChatGPT/mobile provenance
+
+VIS remains the owner. A local read-only coverage audit and an intake engineering
+design are saved on `agent/codex/asset-intelligence-20261016`, final local head
+`b3e7ee1b02d71e79a11a1c31a26081732524809c`. Four focused tests, lint and secret
+checks passed. Existing Drive/Cloudinary metadata and a small downloaded-image
+sample were inspected; automatic intake, source-chat recovery, calibrated visual
+ranking and website publication remain open. Preserve #40 / PR #39 and reconcile
+their storage contract before more implementation. See the
+[16 October session](sessions/2026-10-16.md) and
+[VIS #15](https://github.com/frankxai/visual-intelligence/issues/15#issuecomment-6221908330).
+No production acceptance, upload, new scheduled automation or independent review
+is claimed. Private evidence is recorded in the session. Earlier objectives remain.
+<!-- asset-intelligence-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

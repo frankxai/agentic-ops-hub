@@ -1,3 +1,20 @@
+<!-- asset-intelligence-20261016:start -->
+## Continue image management from the existing VIS implementation
+
+Read the 16 October image-management session, VIS repository instructions,
+`docs/CHATGPT_ASSET_INTAKE.md`, the private asset-intelligence report and VIS #15.
+Keep the existing asset product, Drive vault, Cloudinary connection, source chats
+and unfinished #40 / PR #39 library/storage work. Local VIS head is
+`b3e7ee1b02d71e79a11a1c31a26081732524809c`; it has not been pushed or merged.
+First reconcile the existing intake/storage branch work and acquire an available
+lane/browser under current machine admission. Then prove one selected original
+plus per-image context, preserve unknown prompt/model values, retry without
+duplicates, record provider IDs and prepare one approved website/content placement.
+Keep actual human taste separate from model suggestions and readiness scores.
+Do not claim an old index is a fresh census or a detected source reference is a live
+publication. Record tested recovery, exact-revision review and remaining gaps.
+<!-- asset-intelligence-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
