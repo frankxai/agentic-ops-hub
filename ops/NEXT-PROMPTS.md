@@ -1,6 +1,16 @@
 <!-- asset-intelligence-20261016:start -->
 ## Continue image management from the existing VIS implementation
 
+Current GitHub entry: draft PR #53, branch `agent/codex/asset-cloud-handoff-20261016`,
+head `298c51fa624b734cafe0395e1c327097b8126519`. This starts from main `812c538`
+and preserves the merged library. Read `docs/CLOUD_CONTINUATION.md` and the reusable
+operator prompt. The public source/tests/portable instructions are pushed; the
+private index, images, account/machine evidence and detailed brand planning are not.
+GitHub lint and full node tests passed, run 38969139330. Continue independent review
+and synthetic/sample-based rendered QA in a cloud repository session. Use an online
+authorised host only for local files/browser/desktop work. No cloud account setting
+or separate session was configured. Preserve the earlier local source branch below.
+
 Latest steering: Frank wants visible asset/folder work, a coherent visual operator
 across CLI/DAM/CMS/LMS/content tools and a proactive future-looking execution prompt.
 Continue local VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` (unpushed/unmerged).

@@ -1,6 +1,15 @@
 <!-- asset-intelligence-20261016:start -->
 ## Image management and ChatGPT/mobile provenance
 
+Published continuation: [VIS draft PR #53](https://github.com/frankxai/visual-intelligence/pull/53),
+head `298c51fa624b734cafe0395e1c327097b8126519` on
+`agent/codex/asset-cloud-handoff-20261016`, based on main `812c538`.
+Portable source/tests/capture kit and `docs/CLOUD_CONTINUATION.md` are on GitHub;
+private assets, index, account inventories, machine evidence and brand planning
+remain local. Existing merged library is preserved. GitHub lint/full node test CI
+passed at that exact head. Draft remains open for independent and rendered QA;
+no merge/deployment or cloud session startup. Earlier private source branch is intact.
+
 Current: local VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` adds location/
 processing evidence to the existing cockpit, read-only snapshot export and bounded
 file-presence checks. A private 40-asset snapshot was generated; 80 checked paths
