@@ -3193,5 +3193,5 @@ The full world-first 60/30/10 programme remains ACTIVE. Next work is an admitted
 <!-- marketplace-budget-review-20261016:start -->
 ## Marketplace proposal: verified source, independent acceptance pending
 
-[16 October session](sessions/2026-10-16.md) records private [Ops251](https://github.com/frankxai/agentic-ops/pull/251) at `8e6b2cac3282e766b3f96bee376040a370be842b`: four local governance validators and 149 tests pass; exact blob/hash and secret checks pass. Claude source approval and required hosted checks remain open. State IN_PROGRESS; no deployment or partnership acceptance. Existing [Ops250](https://github.com/frankxai/agentic-ops/issues/250)/51 retain ownership.
+[16 October session](sessions/2026-10-16.md) records private [Ops251](https://github.com/frankxai/agentic-ops/pull/251) at `f9b192d0b6a8f4c228364ad002739ba1566edfe9`: four local governance validators and 149 tests pass; exact blob/hash and secret checks pass. Claude source approval and required hosted checks remain open. State IN_PROGRESS; no deployment or partnership acceptance. Existing [Ops250](https://github.com/frankxai/agentic-ops/issues/250)/51 retain ownership.
 <!-- marketplace-budget-review-20261016:end -->
