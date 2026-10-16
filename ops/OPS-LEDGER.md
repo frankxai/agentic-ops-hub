@@ -1,3 +1,9 @@
+<!-- codemode-seats-20261016:start -->
+## Code mode: local runner, seat law, transcript redaction
+
+Draft [PR 122](https://github.com/frankxai/starlight-agent-config/pull/122) on `frankxai/starlight-agent-config`, exact `06e67011c6e0a51b625c44b1af3ce2bf7699d82a`, branch `agent/grok/codemode-seats-20261016`. Tracker is [issue 121](https://github.com/frankxai/starlight-agent-config/issues/121). `node --test core/codemode/run.test.mjs`: 11 pass, 0 fail. The host runs QuickJS WASM with a jailed read, read-only `gh`, and outbound replacement of emails, E.164 numbers, and common token shapes. The store file keeps raw values and is not printed. Codex reviewed `6d68d77` and reproduced a clustered-flag mutation and an `@file` read outside `--root`. Both are closed on this head. This head itself has not been re-reviewed. Issue 46 stays open. HarnessAgent was not deployed. This Grok session still had 847 tools after the gateway deny key was written. PR 122 stays a draft. Detail is in the [16 October session](sessions/2026-10-16.md).
+<!-- codemode-seats-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

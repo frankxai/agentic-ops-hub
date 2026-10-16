@@ -1,3 +1,9 @@
+<!-- codemode-seats-20261016:start -->
+## Count the next Grok tool list, then leave PR 122 as a draft
+
+Read the [16 October session](sessions/2026-10-16.md). Code head is `06e67011c6e0a51b625c44b1af3ce2bf7699d82a` on draft [PR 122](https://github.com/frankxai/starlight-agent-config/pull/122), tracker [issue 121](https://github.com/frankxai/starlight-agent-config/issues/121). Codex reviewed `6d68d77` only. The clustered-flag mutation and the `@file` read are closed on this head. A different provider still has to review this exact head before merge. On the next Grok start, record the MCP tool count. The user config lists both `managed_gateway:<name>` and the bare name for mcphiggsfieldai, cursor, github, google_drive, linear, notion, and vercel. If those servers are still connected, the id shape is wrong and only that key should change. Do not call Higgsfield. Do not merge PR 122 until the issue comment names a different provider's review of the exact head. Do not close issue 46. Do not deploy HarnessAgent. Do not edit the FrankX checkout on `agent/antigravity/v0-sovereign-creator-engine`. Leave the Queen blocks below in place.
+<!-- codemode-seats-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
