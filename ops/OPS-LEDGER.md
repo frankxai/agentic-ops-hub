@@ -1,3 +1,16 @@
+<!-- work-registry-plan-20261016:start -->
+## Work registry: plan recorded, nothing wired
+
+`docs/WORK-REGISTRY.md` decides that GitHub Issues plus one Project v2 are the
+estate work registry, that a mission id is the join key every runtime carries,
+that prompts stay in a local vault and only receipt hashes and digests reach
+GitHub, and that this hub reconciles on the `fleet-watch` cadence. It inventories
+the existing primitives and names three Starlight builds: the `mission-ledger`
+hook pack, `session_index.py` plus `project_sync.py` under `work-registry.yml`,
+and a six-hour CCR observer routine. Status PLAN_ONLY: no pack, script, Project,
+token or routine exists yet. See the [16 October session](sessions/2026-10-16.md).
+<!-- work-registry-plan-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

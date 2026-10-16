@@ -1,3 +1,26 @@
+<!-- work-registry-plan-20261016:start -->
+## Build the mission-ledger pack from the work registry plan
+
+Current pickup for the work-registry slice. Preserves every other active
+objective below; it supersedes nothing.
+
+Read `docs/WORK-REGISTRY.md` and the [16 October session](sessions/2026-10-16.md).
+Start with phase 1: in `claude-skills-library`, create `packs/mission-ledger`
+following the `estate-guard` pack layout (`hooks/`, `ci/`, `install.sh`,
+`settings.snippet.json`, `tests/`). Hooks: `SessionStart` resolves or mints
+`M-YYYYMMDD-xxxxxx` from `STARLIGHT_MISSION`, the branch name, or the top entry
+of this file; `UserPromptSubmit` appends `{ts, harness, repo, branch, session,
+prompt_sha256, prompt}` to `~/.starlight/missions/<id>/prompts.jsonl`; `Stop`
+writes an unsigned run-receipt v1 draft to `receipts/<session>.json`, updates the
+`pulse/<machine>` summary through `scripts/fleet_bus.py`, and comments a
+three-bullet digest on the bound issue only when `STARLIGHT_MISSION_ISSUE` is set.
+A test must prove prompt text never appears in any git-tracked or GitHub-bound
+output. Run `node .claude/ci/estate-guard-scan.mjs --root .` before the PR.
+Install into this hub, `FrankX` and `Starlight-Intelligence-System` as one draft
+PR each. Do not create the Project, a token or a routine in this slice; those
+are phases 3 and 5 and the token is Frank's.
+<!-- work-registry-plan-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
