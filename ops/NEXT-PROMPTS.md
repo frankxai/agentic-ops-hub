@@ -1,23 +1,28 @@
 <!-- infisical-langfuse-20261016:start -->
-## Continue direct Langfuse tracing from the verified Infisical connection
+## Finish four-harness Langfuse verification
 
 Read the [16 October session](sessions/2026-10-16.md) and existing
 [configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
-Infisical credentials, corrected Cloud EU URLs, direct OTLP ingestion and exact
-span read-back are verified. Frank's five targets are OpenCode, Claude Code,
-OpenClaw, Hermes and Codex. Their direct routes and source links are recorded in
-the session's latest table; no harness was enabled by that research. Keep the
-no-local-collector constraint and agree the conversation-data scope.
-Use OpenCode's 2.x OTEL plugin, Claude's native beta trace exporter, OpenClaw's
-official diagnostics-otel plugin, Hermes's explicit Langfuse backend and Codex's
-native otlp-http trace exporter. Codex 0.163.0's pinned dependency reads
-OTEL_EXPORTER_OTLP_TRACES_HEADERS; supply it from Infisical in the process
-environment and keep secrets out of persisted config. Verify this at runtime.
-Refresh inherited environment settings and retrieve one real run per harness.
-Check v4 ingestion headers, attribution, capture scope, shutdown and failure
-behavior. OpenClaw agent exec does not start its exporter. Grok is outside these
-five targets; preserve its separate logs/metrics-only finding.
-Preserve the existing Railway services and their separate unresolved gates.
+Frank excluded OpenClaw. Four CLI integrations are applied: OpenCode, Claude
+Code, Hermes and Codex. Keep direct Cloud EU export, Infisical runtime credentials
+and no local collector. Source is [draft PR 126](https://github.com/frankxai/starlight-agent-config/pull/126)
+at `009b5ba62a857f050a9c8bddc7348613ef2769fe`; preserve private projection receipts.
+
+Four focused tests and header-helper authentication pass. Hermes's bundled plugin
+fixture exported two retrieved observations with content omitted. Obtain real
+model-run trace read-back for each harness under fresh machine admission. Check
+usage/cost attribution, hierarchy, failure/shutdown and actual startup adoption.
+OpenCode's context flags do not hide normal assistant-output attributes; its
+metrics-only retry counts are absent from Langfuse. Running Desktop/gateway
+processes are not covered merely by changing CLI launchers. Preserve other sessions.
+
+The independent Claude review timed out after 100 seconds. Obtain a real
+exact-head provider review before release. PR 126 Actions jobs did not start due
+account budget, which remains a merge blocker. Preserve the repaired Impeccable
+4.6.0 Windows adapter and trusted enabled hook hashes: both failing events now
+exit 0 and the native doctor passes. Verify fresh Desktop adoption separately in
+[issue 101](https://github.com/frankxai/starlight-agent-config/issues/101).
+Keep private tenant IDs, trace IDs, credentials and machine receipts out of this repo.
 <!-- infisical-langfuse-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
