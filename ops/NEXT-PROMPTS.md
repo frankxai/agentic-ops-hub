@@ -3,9 +3,11 @@
 
 Read the 16 October session and the owned local agent-config branch
 `agent/codex/estate-operating-map-20261016`, exact candidate
-`0468f8a9de6f97f52de6274302dad943ddb95505`. Preserve other lanes and all
+`cdb76e0057574143e63b7854b9502d70e16e570c`. Preserve other lanes and all
 unfinished objectives. Obtain independent exact-source review before promotion.
 The map is an offline artifact and voice rehearsal, not a runtime activation receipt.
+Read `voice-studio.md` in the existing Queen profile for startup/cloud acceptance,
+the useful studio journey, scoped autonomy and evidence-linked team/harness graphs.
 
 Inspect current source, ownership, machine admission and private budget/spend
 evidence. Reuse the existing Queen and managed intake. Restore shared memory under
@@ -14,6 +16,11 @@ microphone input, corrected intent, typed scope/duplicate denial, owned executio
 interruption, reconnect and spoken result. Keep secrets server-side and preserve
 current Voice and Command Center source/review work. Compare a frozen task against
 the single-lead baseline with actual repair, review, elapsed time and total cost.
+Prove one existing startup path and a client-disconnected cloud attempt with durable
+recovery, idempotency and cost before claiming autonomous continuity. Preserve the
+reviewed Cloudflare/Vercel boundary and the Cloud109 security/tenancy gates. Keep
+native CLI login files on their owning machines. Treat current resource presence
+and successful deployment metadata as limited evidence.
 Do not launch every repo or a new daily scheduler from one kickoff. Route all
 lanes, activate admitted work, and keep held work visible with its reason. Save
 the next checkpoint here and on the existing product issue.

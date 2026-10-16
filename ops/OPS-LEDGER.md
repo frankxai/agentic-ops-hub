@@ -1,12 +1,14 @@
 <!-- estate-operating-map-20261016:start -->
 ## Harness, voice and estate operating map
 
-Local agent-config candidate `0468f8a9de6f97f52de6274302dad943ddb95505` adds
-a bounded metadata auditor, offline interactive map, portable kickoff prompt and
-delivery/testing plan. Ten focused tests, generated-script syntax, routing,
-ownership and secret checks pass. Runtime projection, browser/device proof and
-independent exact-source review remain open. Resource admission held; the existing
-doctor found unrelated hook-safety failures. No additional worker or service started.
+Current local agent-config candidate `cdb76e0057574143e63b7854b9502d70e16e570c`
+adds the bounded metadata auditor, interactive map, portable kickoff, hard-floor
+and startup observations, and Voice studio/cloud-resume delivery plan. Fifteen
+focused tests, real held CLI exit, generated-script syntax, structural HTML,
+routing, ownership and secret checks pass. Runtime projection, actual restart,
+cloud task completion, browser/device proof and independent review remain open.
+The existing doctor found low-RAM/memory/Observatory and hook-safety gaps. Connected
+cloud resources were inspected; no additional worker, service or schedule started.
 
 Continue [agent-config46](https://github.com/frankxai/starlight-agent-config/issues/46),
 existing memory recovery, and Voice2/Command Center69. Full details and preservation
