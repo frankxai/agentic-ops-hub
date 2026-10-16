@@ -50,6 +50,7 @@ jobs:
             tests.test_fleet_control \
             tests.test_token_planner \
             tests.test_cli_capacity \
+            tests.test_software_factory_readiness \
             tests.test_night_runner \
             -v
 

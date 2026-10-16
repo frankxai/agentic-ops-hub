@@ -1,0 +1,859 @@
+{
+  "schema": "starlight.software-factory-planning-catalog.v1",
+  "state": "planning-projection-not-runtime-authority",
+  "observed_at": "2026-10-16T01:12:06.032493+00:00",
+  "registry_revision": "149dd3c652edf6c3868e25ebd2dba8a69e0b70d1",
+  "source_repository": "frankxai/agentic-ops",
+  "owner_issue": "https://github.com/frankxai/agentic-ops/issues/252",
+  "related_proposal": "https://github.com/frankxai/agentic-ops/pull/244",
+  "coverage": {
+    "brands": 13,
+    "registered_domains": 24,
+    "registry_repositories": 73,
+    "observed_vercel_projects": 62
+  },
+  "budget": {
+    "incremental_monthly_eur_planning_ceiling": 250,
+    "new_spend_authorized_by_this_catalog": false
+  },
+  "studios": [
+    "Publishing",
+    "Templates",
+    "Software",
+    "Media",
+    "World and Experience"
+  ],
+  "sites": [
+    {
+      "domain": "frankx.ai",
+      "domain_id": "domain_frankx_ai",
+      "brand_id": "brand_frankx",
+      "brand": "FrankX",
+      "role": "primary",
+      "repository_id": "repo_frankx_site",
+      "repository": "frankxai/frankx.ai-vercel-website",
+      "design_system_id": "design_frankx",
+      "design_pack": "frankx",
+      "team": "frankx-systems-cell",
+      "customer_result": "Adapt a worked AI-system example into independently useful files and understand its constraints without founder support.",
+      "workflow_status": "accepted-product-contract-to-revalidate",
+      "sequence": "first-wave-candidate",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission.",
+      "provider_observation": {
+        "project": "frankx-ai-vercel-website",
+        "id": "prj_NHVIKZtglNidOE1FJiq6eYx5QjIL",
+        "domains": [
+          "www.frankx.ai",
+          "frankx.ai",
+          "frankx-ai-vercel-website-starlight-intelligence.vercel.app",
+          "frankx-ai-vercel-website-git-main-starlight-intelligence.vercel.app"
+        ],
+        "latestDeployment": {
+          "id": "dpl_9qguQnKd7Vnf6XLJvMJFhVtv5XTd",
+          "url": "frankx-ai-vercel-website-4bb78kgg2-starlight-intelligence.vercel.app",
+          "createdAt": 1792111772154,
+          "readyState": "READY",
+          "target": null
+        },
+        "production": [
+          {
+            "id": "dpl_CiXDfnPPbXhrh4nfkz3YiqphbrFd",
+            "url": "frankx-ai-vercel-website-dq7zn6rw5-starlight-intelligence.vercel.app",
+            "state": "READY",
+            "target": "production",
+            "sha": "61fc5266bc2d3f048a5edce9d8eaeca79e6bb45b",
+            "repo": "frankx.ai-vercel-website",
+            "created": 1792050828621
+          }
+        ]
+      },
+      "public_http_observation": {
+        "domain": "frankx.ai",
+        "status": 200,
+        "title": "FrankX \u2014 AI Architect &amp; Musician \u00b7 Building Sovereign Systems",
+        "selected_links": [
+          "https://gencreator.ai/create",
+          "/start",
+          "/research"
+        ],
+        "scope": "Public HTTP GET only; no rendered or authenticated customer-workflow verification"
+      }
+    },
+    {
+      "domain": "arcanea.ai",
+      "domain_id": "domain_arcanea_ai",
+      "brand_id": "brand_arcanea",
+      "brand": "Arcanea",
+      "role": "primary",
+      "repository_id": "repo_arcanea_ai_app",
+      "repository": "frankxai/arcanea-ai-app",
+      "design_system_id": "design_arcanea",
+      "design_pack": "arcanea",
+      "team": "arcanea-world-cell",
+      "customer_result": "Develop a canon-aware creative project, preserve revisions and export/reopen an owned or licensed artifact.",
+      "workflow_status": "accepted-product-contract-to-revalidate",
+      "sequence": "first-wave-candidate",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission.",
+      "provider_observation": {
+        "project": "arcanea-ai-app",
+        "id": "prj_90OIWsAmfeswv8IG8WxqEAFefTOV",
+        "domains": [
+          "www.arcanea.ai",
+          "arcanea-ai-app.vercel.app",
+          "arcanea.ai",
+          "app.arcanea.ai",
+          "arcanea-ai-app-starlight-intelligence.vercel.app",
+          "arcanea-ai-app-git-main-starlight-intelligence.vercel.app"
+        ],
+        "latestDeployment": {
+          "id": "dpl_3okLF3Fuo2kyrRv3LT44Lnp2eHMm",
+          "url": "arcanea-ai-q4te7suf3-starlight-intelligence.vercel.app",
+          "createdAt": 1792110571168,
+          "readyState": "READY",
+          "target": null
+        },
+        "production": [
+          {
+            "id": "dpl_7jfzAT1Ye294ddmuJu3krZGKGwJq",
+            "url": "arcanea-ai-pxybn4vkn-starlight-intelligence.vercel.app",
+            "state": "READY",
+            "target": "production",
+            "sha": "73ebf94a67fb0a4d078b403c012f01c69706cacc",
+            "repo": "arcanea-ai-app",
+            "created": 1791978775649
+          }
+        ]
+      },
+      "public_http_observation": {
+        "domain": "arcanea.ai",
+        "status": 200,
+        "title": "Arcanea\u2122 \u2014 Creative Intelligence Platform",
+        "selected_links": [
+          "/create",
+          "/studio",
+          "/music-studio",
+          "/cinema-studio",
+          "/academy",
+          "/academy/courses"
+        ],
+        "scope": "Public HTTP GET only; no rendered or authenticated customer-workflow verification"
+      }
+    },
+    {
+      "domain": "arcanean.dev",
+      "domain_id": "domain_arcanean_dev",
+      "brand_id": "brand_arcanea",
+      "brand": "Arcanea",
+      "role": "developer",
+      "repository_id": "repo_arcanea_ai_app",
+      "repository": "frankxai/arcanea-ai-app",
+      "design_system_id": "design_arcanea",
+      "design_pack": "arcanea",
+      "team": "arcanea-world-cell",
+      "customer_result": "Develop a canon-aware creative project, preserve revisions and export/reopen an owned or licensed artifact.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "arcanean.org",
+      "domain_id": "domain_arcanean_org",
+      "brand_id": "brand_arcanea",
+      "brand": "Arcanea",
+      "role": "community_and_library",
+      "repository_id": "repo_arcanean_library",
+      "repository": "frankxai/arcanean-library",
+      "design_system_id": "design_arcanea",
+      "design_pack": "arcanea",
+      "team": "arcanea-world-cell",
+      "customer_result": "Develop a canon-aware creative project, preserve revisions and export/reopen an owned or licensed artifact.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "arcanea.academy",
+      "domain_id": "domain_arcanea_academy",
+      "brand_id": "brand_arcanea",
+      "brand": "Arcanea",
+      "role": "academy",
+      "repository_id": "repo_arcanea_academy",
+      "repository": "frankxai/arcanea-academy",
+      "design_system_id": "design_arcanea",
+      "design_pack": "arcanea",
+      "team": "arcanea-world-cell",
+      "customer_result": "Develop a canon-aware creative project, preserve revisions and export/reopen an owned or licensed artifact.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "starlightintelligence.ai",
+      "domain_id": "domain_starlightintelligence_ai",
+      "brand_id": "brand_starlight_intelligence",
+      "brand": "Starlight Intelligence",
+      "role": "primary",
+      "repository_id": "repo_starlightintelligence_site",
+      "repository": "frankxai/starlightintelligence.ai",
+      "design_system_id": "design_starlight_intelligence",
+      "design_pack": "sis",
+      "team": "starlight-software-cell",
+      "customer_result": "Turn an investigation or invention question into source-backed editable work that can be steered, exported and resumed.",
+      "workflow_status": "accepted-product-contract-to-revalidate",
+      "sequence": "first-wave-candidate",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission.",
+      "provider_observation": {
+        "project": "starlightintelligence-ai",
+        "id": "prj_ftKChFdlU15okomAnqWj7FufsEQM",
+        "domains": [
+          "starlightintelligence.ai",
+          "starlightintelligence-ai.vercel.app",
+          "starlightintelligence-ai-starlight-intelligence.vercel.app",
+          "starlightintelligence-ai-git-main-starlight-intelligence.vercel.app"
+        ],
+        "latestDeployment": {
+          "id": "dpl_CZ5ktmggyAZ86S5oGK7JwKeeoUMA",
+          "url": "starlightintelligence-nub6g78xs-starlight-intelligence.vercel.app",
+          "createdAt": 1792109764561,
+          "readyState": "READY",
+          "target": null
+        },
+        "production": [
+          {
+            "id": "dpl_HdCQTg3yMX5kTzBjtx8Xn5ZeTVW5",
+            "url": "starlightintelligence-pb1gkptdv-starlight-intelligence.vercel.app",
+            "state": "READY",
+            "target": "production",
+            "sha": "013812d250d8a431b1937109ace4a707a81d9b44",
+            "repo": "starlightintelligence.ai",
+            "created": 1791951848115
+          }
+        ]
+      },
+      "public_http_observation": {
+        "domain": "starlightintelligence.ai",
+        "status": 200,
+        "title": "Starlight Intelligence \u2014 For the ideas you can\u2019t leave alone",
+        "selected_links": [
+          "/platform",
+          "/research",
+          "/start"
+        ],
+        "scope": "Public HTTP GET only; no rendered or authenticated customer-workflow verification"
+      }
+    },
+    {
+      "domain": "starlight.you",
+      "domain_id": "domain_starlight_you",
+      "brand_id": "brand_starlight_intelligence",
+      "brand": "Starlight Intelligence",
+      "role": "personal_intelligence_surface",
+      "repository_id": "repo_starlightintelligence_site",
+      "repository": "frankxai/starlightintelligence.ai",
+      "design_system_id": "design_starlight_intelligence",
+      "design_pack": "sis",
+      "team": "starlight-software-cell",
+      "customer_result": "Turn an investigation or invention question into source-backed editable work that can be steered, exported and resumed.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "starlight.technology",
+      "domain_id": "domain_starlight_technology",
+      "brand_id": "brand_starlight_intelligence",
+      "brand": "Starlight Intelligence",
+      "role": "technology_and_documentation",
+      "repository_id": "repo_starlight_technology",
+      "repository": "frankxai/starlight-technology",
+      "design_system_id": "design_starlight_intelligence",
+      "design_pack": "sis",
+      "team": "starlight-software-cell",
+      "customer_result": "Turn an investigation or invention question into source-backed editable work that can be steered, exported and resumed.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "starlight.domains",
+      "domain_id": "domain_starlight_domains",
+      "brand_id": "brand_starlight_intelligence",
+      "brand": "Starlight Intelligence",
+      "role": "public_registry_surface",
+      "repository_id": "repo_starlightintelligence_site",
+      "repository": "frankxai/starlightintelligence.ai",
+      "design_system_id": "design_starlight_intelligence",
+      "design_pack": "sis",
+      "team": "starlight-software-cell",
+      "customer_result": "Turn an investigation or invention question into source-backed editable work that can be steered, exported and resumed.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "starlightintelligence.academy",
+      "domain_id": "domain_starlightintelligence_academy",
+      "brand_id": "brand_starlight_intelligence",
+      "brand": "Starlight Intelligence",
+      "role": "academy",
+      "repository_id": "repo_starlight_intelligence_academy",
+      "repository": "frankxai/starlight-intelligence-academy",
+      "design_system_id": "design_starlight_intelligence",
+      "design_pack": "sis",
+      "team": "starlight-software-cell",
+      "customer_result": "Turn an investigation or invention question into source-backed editable work that can be steered, exported and resumed.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "starlightintelligence.org",
+      "domain_id": "domain_starlightintelligence_org",
+      "brand_id": "brand_starlight_intelligence",
+      "brand": "Starlight Intelligence",
+      "role": "institution_and_community",
+      "repository_id": "repo_starlight_intelligence_system",
+      "repository": "frankxai/Starlight-Intelligence-System",
+      "design_system_id": "design_starlight_intelligence",
+      "design_pack": "sis",
+      "team": "starlight-software-cell",
+      "customer_result": "Turn an investigation or invention question into source-backed editable work that can be steered, exported and resumed.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "realityarchitect.ai",
+      "domain_id": "domain_realityarchitect_ai",
+      "brand_id": "brand_reality_architect",
+      "brand": "Reality Architect",
+      "role": "primary",
+      "repository_id": "repo_reality_architect",
+      "repository": "frankxai/realityarchitect",
+      "design_system_id": "design_reality_architect",
+      "design_pack": "reality-architect",
+      "team": "reality-architect-practice-cell",
+      "customer_result": "Create an editable evidence-aware practice plan with private recovery and no clinical diagnosis.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "gencreator.ai",
+      "domain_id": "domain_gencreator_ai",
+      "brand_id": "brand_gencreator",
+      "brand": "GenCreator",
+      "role": "primary",
+      "repository_id": "repo_gencreator_ai",
+      "repository": "frankxai/gencreator.ai",
+      "design_system_id": "design_gencreator",
+      "design_pack": "gencreator",
+      "team": "gencreator-authorship-cell",
+      "customer_result": "Turn an owned source and guided conversation into source-linked drafts with preserved edits, exact approval and CreatorPack export/recovery.",
+      "workflow_status": "accepted-product-contract-to-revalidate",
+      "sequence": "first-wave-candidate",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission.",
+      "provider_observation": {
+        "project": "gencreator-ai",
+        "id": "prj_nIryRFHID247Sh0DEp2oH1T4amnO",
+        "domains": [
+          "gencreator.ai",
+          "gencreator-ai.vercel.app",
+          "www.gencreator.ai",
+          "gencreator-ai-starlight-intelligence.vercel.app",
+          "gencreator-ai-git-main-starlight-intelligence.vercel.app"
+        ],
+        "latestDeployment": {
+          "id": "dpl_BzqM34TE5t9h2WsaWxaf99GRRpBe",
+          "url": "gencreator-nmj1eudrl-starlight-intelligence.vercel.app",
+          "createdAt": 1792111770350,
+          "readyState": "READY",
+          "target": null
+        },
+        "production": [
+          {
+            "id": "dpl_FXnEhC1yKvELgBWrpa2QJ9jh4yGf",
+            "url": "gencreator-esp1kdq54-starlight-intelligence.vercel.app",
+            "state": "READY",
+            "target": "production",
+            "sha": "4b7169e0651ceb41965897cdc4a8720ea6f8843f",
+            "repo": "gencreator.ai",
+            "created": 1791944351355
+          }
+        ]
+      },
+      "public_http_observation": {
+        "domain": "gencreator.ai",
+        "status": 200,
+        "title": "GenCreator \u2014 Your ideas. Everywhere you create.",
+        "selected_links": [
+          "/creator-studio",
+          "/research",
+          "/studio",
+          "/studio/apply",
+          "/create"
+        ],
+        "scope": "Public HTTP GET only; no rendered or authenticated customer-workflow verification"
+      }
+    },
+    {
+      "domain": "gencreator.community",
+      "domain_id": "domain_gencreator_community",
+      "brand_id": "brand_gencreator",
+      "brand": "GenCreator",
+      "role": "community",
+      "repository_id": "repo_gencreator_community",
+      "repository": "frankxai/gencreator-community",
+      "design_system_id": "design_gencreator",
+      "design_pack": "gencreator",
+      "team": "gencreator-authorship-cell",
+      "customer_result": "Turn an owned source and guided conversation into source-linked drafts with preserved edits, exact approval and CreatorPack export/recovery.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "vibeclubs.ai",
+      "domain_id": "domain_vibeclubs_ai",
+      "brand_id": "brand_vibe_clubs",
+      "brand": "Vibe Clubs",
+      "role": "primary",
+      "repository_id": "repo_vibeclubs",
+      "repository": "frankxai/vibeclubs",
+      "design_system_id": "design_vibe_clubs",
+      "design_pack": "vibeclubs",
+      "team": "vibe-clubs-experience-cell",
+      "customer_result": "Run an artifact-centered creative session with an existing-tool host pack, consent and useful peer feedback.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "animelegends.ai",
+      "domain_id": "domain_animelegends_ai",
+      "brand_id": "brand_anime_legends",
+      "brand": "Anime Legends",
+      "role": "primary",
+      "repository_id": "repo_anime_legends",
+      "repository": "frankxai/AnimeLegends",
+      "design_system_id": "design_anime_legends",
+      "design_pack": null,
+      "team": "anime-legends-media-cell",
+      "customer_result": "Turn an owned or licensed story concept into a coherent editable storyboard and production packet.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "agenticincome.ai",
+      "domain_id": "domain_agenticincome_ai",
+      "brand_id": "brand_agentic_income",
+      "brand": "Agentic Income",
+      "role": "primary",
+      "repository_id": "repo_agentic_income",
+      "repository": "frankxai/agenticincome",
+      "design_system_id": "design_agentic_income",
+      "design_pack": null,
+      "team": "income-software-cell",
+      "customer_result": "Complete a repeatable workflow with editable implementation, measured effort and explicit operating-cost assumptions.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "agenticpassiveincome.com",
+      "domain_id": "domain_agenticpassiveincome_com",
+      "brand_id": "brand_agentic_income",
+      "brand": "Agentic Income",
+      "role": "campaign",
+      "repository_id": "repo_agentic_passive_income",
+      "repository": "frankxai/agenticpassiveincome",
+      "design_system_id": "design_agentic_income",
+      "design_pack": null,
+      "team": "income-software-cell",
+      "customer_result": "Complete a repeatable workflow with editable implementation, measured effort and explicit operating-cost assumptions.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "disruptivepassiveincome.com",
+      "domain_id": "domain_disruptivepassiveincome_com",
+      "brand_id": "brand_agentic_income",
+      "brand": "Agentic Income",
+      "role": "campaign",
+      "repository_id": "repo_dpi",
+      "repository": "frankxai/dpi",
+      "design_system_id": "design_agentic_income",
+      "design_pack": null,
+      "team": "income-software-cell",
+      "customer_result": "Complete a repeatable workflow with editable implementation, measured effort and explicit operating-cost assumptions.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "aiarchitectacademy.com",
+      "domain_id": "domain_aiarchitectacademy_com",
+      "brand_id": "brand_ai_architect_academy",
+      "brand": "AI Architect Academy",
+      "role": "primary_academy",
+      "repository_id": "repo_ai_architect_academy",
+      "repository": "frankxai/ai-architect-academy",
+      "design_system_id": "design_ai_architect_academy",
+      "design_pack": "ai-coe",
+      "team": "architecture-learning-cell",
+      "customer_result": "Solve a real architecture problem, produce a reference implementation and explain tradeoffs and failure recovery.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "oceanintelligence.app",
+      "domain_id": "domain_oceanintelligence_app",
+      "brand_id": "brand_ocean_intelligence",
+      "brand": "Ocean Intelligence",
+      "role": "primary_product",
+      "repository_id": "repo_ocean_intelligence",
+      "repository": "frankxai/ocean-intelligence",
+      "design_system_id": "design_ocean_intelligence",
+      "design_pack": null,
+      "team": "ocean-evidence-cell",
+      "customer_result": "Produce source-located marine research and a bounded scenario with explicit uncertainty and specialist review.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "bluelifecommons.org",
+      "domain_id": "domain_bluelifecommons_org",
+      "brand_id": "brand_blue_life_commons",
+      "brand": "Blue Life Commons",
+      "role": "primary_institution",
+      "repository_id": "repo_blue_life_commons",
+      "repository": "frankxai/blue-life-commons",
+      "design_system_id": "design_blue_life_commons",
+      "design_pack": null,
+      "team": "blue-life-publishing-cell",
+      "customer_result": "Contribute and review a source-linked knowledge artifact with attribution and durable version history.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "anaceciliacancino.com",
+      "domain_id": "domain_anaceciliacancino_com",
+      "brand_id": "brand_ana_cecilia_cancino",
+      "brand": "Ana Cecilia Cancino",
+      "role": "primary",
+      "repository_id": "repo_ana",
+      "repository": "frankxai/Ana",
+      "design_system_id": "design_ana_cecilia_cancino",
+      "design_pack": null,
+      "team": "ana-editorial-cell",
+      "customer_result": "Explore authentic creative work and prepare the owner-approved inquiry or collection action accessibly.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    },
+    {
+      "domain": "cecilia.chat",
+      "domain_id": "domain_cecilia_chat",
+      "brand_id": "brand_cecilia",
+      "brand": "Cecilia",
+      "role": "conversational_interface",
+      "repository_id": "repo_cecilia_chat",
+      "repository": "frankxai/cecilia-chat",
+      "design_system_id": "design_cecilia",
+      "design_pack": null,
+      "team": "cecilia-private-task-cell",
+      "customer_result": "Complete a conversational task with editable saved context, explicit memory consent, export and deletion.",
+      "workflow_status": "proposed-owner-validation-required",
+      "sequence": "after-owning-lane-admission",
+      "release_state": "not-verified-by-this-program",
+      "execution_state": "not-dispatched",
+      "next_action": "Read current product instructions/issues, claim exact files, and prove one useful complete customer journey under real host and budget admission."
+    }
+  ],
+  "vercel_projects_not_reconciled_in_this_pass": [
+    {
+      "id": "prj_wDNGrb1R1rB5PJOG9cUEICSER887",
+      "name": "site"
+    },
+    {
+      "id": "prj_eZ2DDrIt3eP9o8P6EqUzsqBHhHPD",
+      "name": "vibeclubs-web"
+    },
+    {
+      "id": "prj_MHRvWhrLVzB4zmJbF2WaLiXme4xh",
+      "name": "realityarchitect"
+    },
+    {
+      "id": "prj_63YMZfKdHdxcx56M2Xc5FEWTPQpP",
+      "name": "akamoto"
+    },
+    {
+      "id": "prj_oJb8gtCP2ZswdeMJW2IO6TnWQGju",
+      "name": "arcanea-academy"
+    },
+    {
+      "id": "prj_a4uDLsOlIp54oSBb0o9B3O2o00xg",
+      "name": "solarcarport-tech"
+    },
+    {
+      "id": "prj_YHhpzehDzOpD5OqLf1vgEAVlWYhE",
+      "name": "starlight-technology"
+    },
+    {
+      "id": "prj_EhWOyjmGYVOo8Z90tcmgGc1GP5rH",
+      "name": "aiarchitectacademy"
+    },
+    {
+      "id": "prj_YITDTBK6qZUCBACYItrUg7QTUO8k",
+      "name": "blue-life-commons"
+    },
+    {
+      "id": "prj_h8sRP6o1Q16RIgznvD2VtFPaZgV4",
+      "name": "agenticincome"
+    },
+    {
+      "id": "prj_lHsJAVy4I84t4GkzWZOdo0TE7dUt",
+      "name": "anime-legends"
+    },
+    {
+      "id": "prj_RM8v2Z6RKwbtYgccfwkTQeaOBTz4",
+      "name": "starlight-intelligence-academy"
+    },
+    {
+      "id": "prj_J63Rdxh0wbQJlcGxFycJkN0f4MN0",
+      "name": "agenticpassiveincome"
+    },
+    {
+      "id": "prj_DVggqrjPZqHWLIRPJt2TPGiQlfod",
+      "name": "gencreator-community"
+    },
+    {
+      "id": "prj_xkcmj8kWkh0ZpH0sHYfxmNCuQg32",
+      "name": "rova-resort"
+    },
+    {
+      "id": "prj_hmP01Z17haxMBhXgY7ggR5dcC7Fi",
+      "name": "go-agenticincome"
+    },
+    {
+      "id": "prj_1hZG5xIUd9IgVUy6vEaQptoyPr2v",
+      "name": "physical-ai-stack-desk"
+    },
+    {
+      "id": "prj_sRdahSmwBbbeZoSSC5qmMPJEU5AZ",
+      "name": "geninvestor-research"
+    },
+    {
+      "id": "prj_xYnp6JjzND3wlrs3qRvuf0b5x4k5",
+      "name": "my-libraryx"
+    },
+    {
+      "id": "prj_RALEcgsvMUeQ6xqy8iql4V5VFO5y",
+      "name": "dpi-open-core"
+    },
+    {
+      "id": "prj_5vI1MJeVrgs1ivzKSCHjFJf8uT7K",
+      "name": "starlight-you"
+    },
+    {
+      "id": "prj_gE0lmdRFjJPN7x6TrR7iyyEn8WYF",
+      "name": "disruptivepassiveincome"
+    },
+    {
+      "id": "prj_LaiMd3DEqUEXEGreEcXfuszYhMgr",
+      "name": "starlight-domains"
+    },
+    {
+      "id": "prj_63OFb2fzLqlc1EId40EIV7VdvWRp",
+      "name": "ocean-intelligence"
+    },
+    {
+      "id": "prj_Tq1y2NBB0MMbFkk94xDKsFQ66xSF",
+      "name": "ana"
+    },
+    {
+      "id": "prj_s2kS2gSlBIOqbfYVVBgU6mLTg56B",
+      "name": "kura"
+    },
+    {
+      "id": "prj_U09Lh10yahNPAsYRlDjfUR8n8KkQ",
+      "name": "starlight-human-roster"
+    },
+    {
+      "id": "prj_DbwkvkmUGyQQXU9tHcLId5EWqsex",
+      "name": "arcanea-domain-portals"
+    },
+    {
+      "id": "prj_eCZBuxpK9pfHvt8oWKhd6rtuzmny",
+      "name": "vercel-sandbox-default-project"
+    },
+    {
+      "id": "prj_4BkA3lqt5SHFinwG0uCQSKpZiZmh",
+      "name": "property-intelligence"
+    },
+    {
+      "id": "prj_tZ2nbq2PS0w8jIJemEmsi32TiqxF",
+      "name": "starlight-experience-lab"
+    },
+    {
+      "id": "prj_uIww9JdE2ioGEwsFexdQ6RaiAVcR",
+      "name": "retreat-os"
+    },
+    {
+      "id": "prj_vUky4qYqEHng0WTxV4ccO4O2w0Sw",
+      "name": "creator-launch-os"
+    },
+    {
+      "id": "prj_hQRnHGCrOXCsYSPVacLm0kGTlzlz",
+      "name": "cecilia-chat"
+    },
+    {
+      "id": "prj_D1Y2KWFL84YuD1NIhKChDznCjB4R",
+      "name": "animelegends-arena-al-bench-001"
+    },
+    {
+      "id": "prj_QCEny37bhMsKaVOepyn9N0ZLX4LK",
+      "name": "starlight-research-hub"
+    },
+    {
+      "id": "prj_DE8dd1wCFyPZtNLMC0XfsP6sfWFd",
+      "name": "starlight-music-studio"
+    },
+    {
+      "id": "prj_WjyZ28hvKiFEnwP4BSULiJdANxQo",
+      "name": "agentic-life-os"
+    },
+    {
+      "id": "prj_tS91nXJCk56lt3QdIVhoMdw0Aobb",
+      "name": "amsterdam-ai-systems-lab"
+    },
+    {
+      "id": "prj_uh0Z4focAfeh0c87xTlvwQWQOeyv",
+      "name": "ai-sdk-roundtrips"
+    },
+    {
+      "id": "prj_X09nyBxlWW0fcmjfsQnS0WFo8m3Y",
+      "name": "trinity-ai-slackbot"
+    },
+    {
+      "id": "prj_tk62taxi3muuxFGZKFG1XWYFOnsf",
+      "name": "realitydiffusion"
+    },
+    {
+      "id": "prj_VcqbjNnbSLs4i5vaM0L3c4c8r4x6",
+      "name": "family-history-atlas"
+    },
+    {
+      "id": "prj_niU25Zfj1uxSLSIEdjG7bgnFr05l",
+      "name": "family-intelligence-os"
+    },
+    {
+      "id": "prj_pY5Hc6jLvOn0CmVvJ2Ye4UJoqhQv",
+      "name": "pv-lager-agentic"
+    },
+    {
+      "id": "prj_vHNHK126412Ff2CdycZkj4AM0whF",
+      "name": "aurevia-solar"
+    },
+    {
+      "id": "prj_2MVW7ZucPbAqxSzzSQTlgFnRXWII",
+      "name": "starlight-intelligence"
+    },
+    {
+      "id": "prj_Q14cYosRxFpi4xBAwka3MJzKF0vH",
+      "name": "agentic-gym-os"
+    },
+    {
+      "id": "prj_U8OISO7cN6SZqbZAik8sb0cBYqWE",
+      "name": "eve-slack-agent"
+    },
+    {
+      "id": "prj_NWbp6pWL1oFx6MgQz6qrb1048wQe",
+      "name": "agentic-intelligence-system"
+    },
+    {
+      "id": "prj_PIWrDmXErdstsLZ3WUnUFfSd03rr",
+      "name": "frankx-ai-architecture-20260712"
+    },
+    {
+      "id": "prj_FBvC2K7F4gnNwQFbJABYMTbbw7pW",
+      "name": "ana-production-excellence-20260710"
+    },
+    {
+      "id": "prj_BoBcI2GW1HiVFuReRrpdVp0fNBub",
+      "name": "go-agenticincome-trust-2026-07-10"
+    },
+    {
+      "id": "prj_W5adnIs469IQFRjXWkIDqvyG2mSn",
+      "name": "anime-studio-landing"
+    },
+    {
+      "id": "prj_Tr460jE03i0272fZin4nh52Zuj5h",
+      "name": "frankx-community-hub"
+    },
+    {
+      "id": "prj_egkMJ3M6ew4hLvx3vm0pwVUSrvEj",
+      "name": "author-os"
+    },
+    {
+      "id": "prj_RweHpUTiRjDidRjYI8f2i9nIL3JN",
+      "name": "ag-student-os"
+    },
+    {
+      "id": "prj_PJC6S90L9pr5QQtRpkRZ8Uj6L3EE",
+      "name": "grok-creative-studio"
+    }
+  ],
+  "assurance": "Registry placement and provider/HTTP observations; no authenticated receiving-user, rendered design or production release verification."
+}
