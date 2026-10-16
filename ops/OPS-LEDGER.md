@@ -13,6 +13,12 @@ The session also records the source-priced economics follow-up: published RAM
 requirements and list prices are distinct from measured whole-stack usage and
 realized ROI. Actual task volumes, operating effort and accepted outcome gains
 remain required under SIS150 before provider expansion.
+The founder's current pickup requests preservation and verified session closure
+before the infrastructure waves. A private execution prompt is prepared; coverage,
+checkpoints, canary restoration and closure remain unexecuted. Preserve native
+threads, unfinished work and goal states, and label inaccessible cloud/cache
+coverage. The current prompt supersedes the earlier recovery-first sequence for
+this slice only; other objectives remain intact.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

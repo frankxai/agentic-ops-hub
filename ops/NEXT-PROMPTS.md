@@ -1,24 +1,30 @@
 <!-- memory-architecture-20261016:start -->
-## Restore scoped shared memory and verify continuation
+## Preserve sessions, close verified runtimes, then repair shared infrastructure
 
-Read the 16 October session and current private memory audit, then current
-repository instructions and source-owner/lease state. Preserve the active
-consolidation task, canonical sources, privacy classes and all held writer locks.
-Coordinate recovery of the oversized generated index without weakening loader
-bounds or copying private content into public code. Add writer-side admission
-and verify shared initialize, tool discovery, a cited authorized recall and
-useful failure reporting. Continue existing SIS49 and memory8/2 conformance work;
-verify deletion/revocation, tenant isolation, duplicate close and interrupted
-task recovery across admitted harnesses. Keep SIS345/354/355 recorded as merged.
-Retain the local hybrid baseline. Hindsight/Graphiti/Caura are evaluation
-candidates, not a migration decision. Respect current resource admission, obtain
-an independent exact-revision review when admitted, and save receipts plus the
-remaining gaps to this hub and the existing issues. Do not start another
-scheduler, bulk-import chats or activate a new provider as part of recovery.
-For the economics follow-up, use the current source-priced model, replace static
-RAM guesses with receipts, and measure cost per accepted resumed task plus active
-operator time. Include maintenance, integration, main-agent context and deletion
-costs; do not convert a vendor benchmark or fixed subscription headroom into ROI.
+Read the 16 October session, current private session/infra execution handover and
+memory audit, then current repository, machine and source-owner contracts. Keep
+one coordinator. Inventory accessible native session/thread sources, goal/task
+IDs, dirty work, artifacts and coverage gaps using existing ledgers and indices.
+Create and read back a resume packet before closing each selected session; retain
+original histories, unfinished work, accepted constraints, goals and budgets.
+Test a canary restoration when admitted, then gracefully close verified task
+runtimes in batches. Preserve human browsers, credentials, held writer locks and
+registered shared services. Do not equate runtime closure with task completion
+or destructive archive. Inaccessible cloud histories and temporary caches remain
+explicit limitations; do not claim universal recovery.
+
+After fresh admission, coordinate oversized-index recovery with its source owner,
+keep loader bounds, add writer admission and verify shared recall. Configure the
+existing shared plane, memory/context/continuity paths, harness projections and
+resource/cost receipts in waves. Reuse SIS49, memory8/2/20 and SIS150; keep
+SIS345/354/355 recorded as merged. Verify interruption, duplicate close, tenant
+denial, source freshness, deletion after restart and actual supported cross-host
+continuation. Obtain independent exact-revision review when admitted. Reopen only
+selected work within measured capacity while every other thread stays recoverable.
+Preserve current private sources; save sanitized progress and one current prompt
+here plus the existing product issues. Provider additions, purchases, deployments
+and new recurring jobs retain their separate gates. This pickup is an execution
+plan; no preservation census or session shutdown has been performed by writing it.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
