@@ -2,15 +2,23 @@
 ## AI team entry products: source candidate, release gates open
 
 FrankX draft [PR 280](https://github.com/frankxai/FrankX/pull/280), exact
-`c28b980899c58ccbce3612950a362b9401591e14`, adds original free / EUR 1 / EUR 7
+`f6a3aaec82e67c9c83e848a7292e1b1d2496c761`, adds original free / EUR 1 / EUR 7
 material, three practice missions and a proposed five-tier lifecycle registry.
 [Issue 279](https://github.com/frankxai/FrankX/issues/279) owns acceptance.
 All 11 source-asset references resolve; 13 committed digests match; scoped
 whitespace, ownership and secret checks pass. EUR 47/97 remain planned.
 
+Continuation adds researched provider/CI/memory/hosting decisions and a reusable
+execution prompt to the existing private release brief. Graphite, Graphiti and
+Buildkite have distinct jobs. Current connector/billing limits and proposed
+pilots are recorded; no service or budget change was made. Existing ops issues
+85/149/20/51 retain ownership. Private cost evidence stays outside this public hub.
+
 Hosted security checks executed zero steps because GitHub's Actions budget
 prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
 Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).
+The same zero-step budget block recurred at the latest source revision in runs
+38983569809 / 38983569839. Required checks remain enabled.
 
 This is a private source candidate. Registry automation, designed exports,
 fresh-user and independent review, seller/checkout/delivery and a genuine sale
@@ -18,6 +26,8 @@ remain open. Existing lead magnet catalog page counts and unsupported metrics
 need reconciliation before reuse. Read the
 [17 October session](sessions/2026-10-17.md) for coverage, exact lanes and pickup.
 No public release, spending, fanout or production deployment occurred.
+Heavy work remains inadmissible at the later 3100 MB free-RAM observation;
+independent review and runtime comparisons have not been run.
 <!-- ai-team-products-20261017:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

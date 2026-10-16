@@ -3,13 +3,20 @@
 
 Start Codex in `C:/Users/frank/starlight/worktrees/frankx-product-lifecycle-20261017`.
 Read this hub's 17 October session, FrankX issue 279 and draft PR 280, exact
-source `c28b980899c58ccbce3612950a362b9401591e14`. Re-read destination instructions,
+source `f6a3aaec82e67c9c83e848a7292e1b1d2496c761`. Re-read destination instructions,
 verify current branch/origin, machine admission, routing and the explicit-file
 lane before writes. Preserve other work and line-ending-only sparse-checkout noise.
 
 Hosted security jobs could not start due to the account Actions budget; both
 executed zero steps. Keep checks enabled and do not infer a code/security verdict.
 Handover draft PR 355 records the exact annotations and local verification.
+
+The private release brief now includes a provider/CI/memory/hosting proposal and
+reusable execution prompt. Frank confirmed Graphite plus Graphiti and Buildkite
+CI. Follow existing ops issues 85/149/20/51; do not create a parallel scheduler,
+cost registry or runner fleet. Current billing and runner-health evidence is
+incomplete. No vendor purchase, budget change or runtime pilot was performed.
+The later RAM observation was below the 4 GiB floor; re-admit heavy work first.
 
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/
