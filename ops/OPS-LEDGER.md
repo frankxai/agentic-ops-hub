@@ -1,17 +1,16 @@
 <!-- voice-live-face-20261016:start -->
-## Voice: ear is live, the face is the next session
+## Voice: three orbs are on the live page
 
-Clap listener tip `ead2fba` on `agent/grok/x-voice-clap` in
-`C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`. It speaks as Ara,
-writes `memory/voice/live.json`, and can look up the desk. It does not spawn a
-seat. Public web search can be refused on the grok CLI login. The watch page is
-`http://127.0.0.1:8765/live`. Draft
+Clap listener on `agent/grok/x-voice-clap` at `15e79e5` in
+`C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`. The page
+`http://127.0.0.1:8765/live` draws Eve, Ara, and Leo from `/api/live`. It does
+not open a microphone and it does not spawn a seat. Draft
 [starlight-voice#5](https://github.com/frankxai/starlight-voice/pull/5). Issue
 [#2](https://github.com/frankxai/starlight-voice/issues/2) stays open.
 
-The next session builds the house lights on `dashboard/live.html` in a new
-worktree from `ead2fba`. No Vite app. No move into Observatory. GSAP on the
-vanilla page, not `gsap-react`. Stop the listener only when its phase is armed.
+Do not add GSAP house lights on top of those orbs. A 375, 768, and 1440 look
+waits on free RAM above the browse gate. Leave the listener alone while its
+phase is open or speaking.
 Session: [16 October](sessions/2026-10-16.md).
 <!-- voice-live-face-20261016:end -->
 
