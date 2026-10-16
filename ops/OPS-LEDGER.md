@@ -8,6 +8,10 @@ material, three practice missions and a proposed five-tier lifecycle registry.
 All 11 source-asset references resolve; 13 committed digests match; scoped
 whitespace, ownership and secret checks pass. EUR 47/97 remain planned.
 
+Hosted security checks executed zero steps because GitHub's Actions budget
+prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
+Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).
+
 This is a private source candidate. Registry automation, designed exports,
 fresh-user and independent review, seller/checkout/delivery and a genuine sale
 remain open. Existing lead magnet catalog page counts and unsupported metrics

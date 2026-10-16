@@ -7,6 +7,10 @@ source `c28b980899c58ccbce3612950a362b9401591e14`. Re-read destination instructi
 verify current branch/origin, machine admission, routing and the explicit-file
 lane before writes. Preserve other work and line-ending-only sparse-checkout noise.
 
+Hosted security jobs could not start due to the account Actions budget; both
+executed zero steps. Keep checks enabled and do not infer a code/security verdict.
+Handover draft PR 355 records the exact annotations and local verification.
+
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/
 commerce/delivery lifecycle. Inspect the actual material in
