@@ -1,3 +1,15 @@
+<!-- n8n-self-host-agents-20261016:start -->
+## Build the n8n morning desk on the existing queue
+
+Current pickup for the n8n spine. Read `ops/plans/2026-10-16-n8n-self-host-agents.md` and `ops/sessions/2026-10-16.md` first. Preserve the Queen pickup below. Do not open an n8n Cloud workspace. Do not add a second n8n service. Do not publish an agent on Primary while `EXECUTIONS_MODE=queue`.
+
+Primary and Worker are `n8nio/n8n:2.43.7` in `europe-west4-drams3a`. Health URLs were ok on 16 October. `N8N_API_KEY` on Primary returned 401 and the n8n MCP handshake failed. Create a new API key in the n8n UI, replace the Railway or Infisical variable, and reconnect MCP. Do not paste the key into chat.
+
+Then build two workflows on the spine: a deterministic signal pack, and a morning desk whose AI Agent node calls that pack, writes one brief, and waits on a human approval node before any send. Opt in Anthropic prompt caching only if the system prompt is large. Put header auth on an MCP Server Trigger for the desk. After five successful weekday runs, deactivate the overlapping schedules listed in the plan. Leave Stripe, newsletter, and the old social publishers inactive until a live caller is confirmed. Postiz remains the publisher.
+
+Open Settings, then Migration Report, before saving an old workflow. 2.43 blocks a save that still contains a deprecated node. Comment the result on [agentic-ops#20](https://github.com/frankxai/agentic-ops/issues/20). The regular-mode agent seat in the plan stays unbuilt unless a Slack, Telegram, or Linear channel, or a knowledge file, is the actual requirement and [agentic-ops#83](https://github.com/frankxai/agentic-ops/issues/83) accepts the extra service.
+<!-- n8n-self-host-agents-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
