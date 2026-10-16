@@ -15,6 +15,10 @@ candidates, not a migration decision. Respect current resource admission, obtain
 an independent exact-revision review when admitted, and save receipts plus the
 remaining gaps to this hub and the existing issues. Do not start another
 scheduler, bulk-import chats or activate a new provider as part of recovery.
+For the economics follow-up, use the current source-priced model, replace static
+RAM guesses with receipts, and measure cost per accepted resumed task plus active
+operator time. Include maintenance, integration, main-agent context and deletion
+costs; do not convert a vendor benchmark or fixed subscription headroom into ROI.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

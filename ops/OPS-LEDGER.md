@@ -9,6 +9,10 @@ Current service health, provider lifecycle, real cloud-account acceptance and
 paired outcome evaluation remain open under SIS49, memory8/2 and SIS150.
 Responsibility and provider recommendations are proposals; no migration, new
 standing orchestrator, deployment or independent approval is claimed.
+The session also records the source-priced economics follow-up: published RAM
+requirements and list prices are distinct from measured whole-stack usage and
+realized ROI. Actual task volumes, operating effort and accepted outcome gains
+remain required under SIS150 before provider expansion.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
