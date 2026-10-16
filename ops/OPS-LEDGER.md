@@ -1,6 +1,13 @@
 <!-- asset-intelligence-20261016:start -->
 ## Image management and ChatGPT/mobile provenance
 
+Latest: local VIS `374ea624e3dc46e0c34b992e69111c56ddb88118` adds the visual
+editorial team plan, brand-specific placement strategy and 19 unselected briefs
+across four brands. Existing content cells, brand authority and homepage contracts
+are preserved. No team dispatch, site edits, asset approvals or posts occurred.
+Source/JSON/secret checks establish planning scope only; visual/runtime and
+independent review remain pending. See the latest session follow-up.
+
 Follow-up: local VIS head `b3a89d103f8d8f5fc44d9ca759d68a9935ecd792` adds a
 reusable ChatGPT instruction block, cost-aware execution playbook, context example
 and root agent pointer. Settings remain unapplied: project target is unidentified

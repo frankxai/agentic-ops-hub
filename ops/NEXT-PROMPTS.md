@@ -1,8 +1,18 @@
 <!-- asset-intelligence-20261016:start -->
 ## Continue image management from the existing VIS implementation
 
-Latest steering: cost-efficient execution and future ChatGPT capture instructions.
-Current VIS head is `b3a89d103f8d8f5fc44d9ca759d68a9935ecd792`, local only.
+Current steering: dedicated visual team, image-to-brand decisions, homepage/
+component placements and social stories. Latest local VIS head is
+`374ea624e3dc46e0c34b992e69111c56ddb88118` (not pushed/merged). Read
+`docs/VISUAL_EDITORIAL_TEAM.md`, `docs/BRAND_PLACEMENT_STRATEGY.md` and the 19-slot
+planning example. Reuse existing content cells; no dedicated processes are running.
+Execute one owned placement plus its social adaptation after actual crop/context
+review. Preserve FrankX's homepage, GenCreator Territory B and Arcanea canon; verify
+Starlight live/source mapping. Candidate/slot decisions are unapproved proposals.
+The earlier project-instruction setup and intake integration below remain open.
+
+Earlier steering: cost-efficient execution and future ChatGPT capture instructions.
+The instruction-kit baseline is `b3a89d103f8d8f5fc44d9ca759d68a9935ecd792`, local only.
 Read `docs/CHATGPT_PROJECT_INSTRUCTIONS.md` and `docs/ASSET_EXECUTION_PLAYBOOK.md`.
 The target ChatGPT project is pending Frank's name/link. Once identified and browser
 admission permits, read/preserve its existing settings, append the block, reopen
