@@ -1,11 +1,20 @@
 <!-- asset-intelligence-20261016:start -->
 ## Continue image management from the existing VIS implementation
 
+Latest steering: cost-efficient execution and future ChatGPT capture instructions.
+Current VIS head is `b3a89d103f8d8f5fc44d9ca759d68a9935ecd792`, local only.
+Read `docs/CHATGPT_PROJECT_INSTRUCTIONS.md` and `docs/ASSET_EXECUTION_PLAYBOOK.md`.
+The target ChatGPT project is pending Frank's name/link. Once identified and browser
+admission permits, read/preserve its existing settings, append the block, reopen
+to verify, and check one new-chat/mobile handoff. The local agent pointer is applied;
+cloud settings are not. Keep additional unattended API spend at zero until a budget
+is explicit. The original integration work below remains open.
+
 Read the 16 October image-management session, VIS repository instructions,
 `docs/CHATGPT_ASSET_INTAKE.md`, the private asset-intelligence report and VIS #15.
 Keep the existing asset product, Drive vault, Cloudinary connection, source chats
-and unfinished #40 / PR #39 library/storage work. Local VIS head is
-`b3e7ee1b02d71e79a11a1c31a26081732524809c`; it has not been pushed or merged.
+and unfinished #40 / PR #39 library/storage work. The earlier audit baseline is
+`b3e7ee1b02d71e79a11a1c31a26081732524809c`; use the current local head above.
 First reconcile the existing intake/storage branch work and acquire an available
 lane/browser under current machine admission. Then prove one selected original
 plus per-image context, preserve unknown prompt/model values, retry without

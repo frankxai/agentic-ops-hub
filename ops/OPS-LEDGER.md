@@ -1,8 +1,14 @@
 <!-- asset-intelligence-20261016:start -->
 ## Image management and ChatGPT/mobile provenance
 
+Follow-up: local VIS head `b3a89d103f8d8f5fc44d9ca759d68a9935ecd792` adds a
+reusable ChatGPT instruction block, cost-aware execution playbook, context example
+and root agent pointer. Settings remain unapplied: project target is unidentified
+and browser admission is held. No new API budget, subscription or background
+processor was enabled. See the appended follow-up in the session below.
+
 VIS remains the owner. A local read-only coverage audit and an intake engineering
-design are saved on `agent/codex/asset-intelligence-20261016`, final local head
+design are saved on `agent/codex/asset-intelligence-20261016`, audit baseline
 `b3e7ee1b02d71e79a11a1c31a26081732524809c`. Four focused tests, lint and secret
 checks passed. Existing Drive/Cloudinary metadata and a small downloaded-image
 sample were inspected; automatic intake, source-chat recovery, calibrated visual
