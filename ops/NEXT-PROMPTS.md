@@ -2,6 +2,8 @@
 ## Continue browser-session protection
 
 Read the 16 October session follow-up and private `.starlight/evidence/browser-cookie-repair-20261016/` case. The fresh empty cookie DB failed Frank's restart test; Chrome's cookie encryption counters and a dummy Windows DPAPI probe establish Windows user encryption failure. Frank normally uses a PIN; the pending step is his password lock/unlock, then rerun `Test-WindowsUserEncryption.ps1` before another website login. Trigger remains unproven. Preserve all original keys, passwords and profiles; do not repeat resets or weaken encryption. Local hook repairs in `.starlight/hook-repairs/2026-10-16/` pass direct replays/denial probes; verify a real Desktop Stop event and keep Config78 updated. PP6 `b497cc3` remains draft: independently review, complete type checks, reconcile PP3/PP4 and verify an owned installed projection with rollback. Current shared PP wrapper is unchanged. Other objectives and prompts below remain open.
+
+Latest evening step: `latest-recovery-backup.txt` points to a verified partial critical-file backup. Six live Default files including Login Data and active session files are locked; await Frank's normal Chrome closure, create a fresh restricted backup directory, and run the bounded save helper without overwriting the first backup. Preserve the older populated bookmark backup. Finish user password authentication and the harmless DPAPI test. Downloads-directory write works with ample disk space; inspect the actual failed-download symptom before changing browser settings. Never force locks or infer full backup from a partial manifest.
 <!-- browser-session-audit-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
