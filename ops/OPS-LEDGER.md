@@ -1,3 +1,21 @@
+<!-- ai-team-products-20261017:start -->
+## AI team entry products: source candidate, release gates open
+
+FrankX draft [PR 280](https://github.com/frankxai/FrankX/pull/280), exact
+`c28b980899c58ccbce3612950a362b9401591e14`, adds original free / EUR 1 / EUR 7
+material, three practice missions and a proposed five-tier lifecycle registry.
+[Issue 279](https://github.com/frankxai/FrankX/issues/279) owns acceptance.
+All 11 source-asset references resolve; 13 committed digests match; scoped
+whitespace, ownership and secret checks pass. EUR 47/97 remain planned.
+
+This is a private source candidate. Registry automation, designed exports,
+fresh-user and independent review, seller/checkout/delivery and a genuine sale
+remain open. Existing lead magnet catalog page counts and unsupported metrics
+need reconciliation before reuse. Read the
+[17 October session](sessions/2026-10-17.md) for coverage, exact lanes and pickup.
+No public release, spending, fanout or production deployment occurred.
+<!-- ai-team-products-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

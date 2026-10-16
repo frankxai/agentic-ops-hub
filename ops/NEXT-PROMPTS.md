@@ -1,3 +1,28 @@
+<!-- ai-team-products-20261017:start -->
+## Continue the AI team product family toward a verified first buyer outcome
+
+Start Codex in `C:/Users/frank/starlight/worktrees/frankx-product-lifecycle-20261017`.
+Read this hub's 17 October session, FrankX issue 279 and draft PR 280, exact
+source `c28b980899c58ccbce3612950a362b9401591e14`. Re-read destination instructions,
+verify current branch/origin, machine admission, routing and the explicit-file
+lane before writes. Preserve other work and line-ending-only sparse-checkout noise.
+
+Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
+for a first-sale attempt, with EUR 47/97 planned and connected source/design/
+commerce/delivery lifecycle. Inspect the actual material in
+`docs/strategy/portfolio-productization/weekend-ai-team-20261017/`.
+Freeze the first buyer and mission; improve the paid exercise against a plain-chat
+alternative, then render and inspect one coherent PDF/HTML edition with editable
+files. Obtain cold-user completion/resumption and independent exact-edition review.
+Keep prior GenCreator/AI Architect/CoE work and brand decisions intact.
+
+The proposed registry links resources; it does not synchronize or authorize.
+Use existing catalog/graph and native marketplace delivery. Verify seller,
+currency/tax, terms and receipt/download/recovery on each chosen channel before
+public launch. Keep unproven prices, reviews, savings and sales unclaimed.
+Do not count structural checks or a test purchase as a customer result.
+<!-- ai-team-products-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
