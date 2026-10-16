@@ -1,3 +1,54 @@
+<!-- website-factory-20261016:start -->
+## Current pickup: valuable website workflows and software factories
+
+[Session](sessions/2026-10-16.md), [private proposal #244](https://github.com/frankxai/agentic-ops/pull/244),
+exact starting revision `3bc470e72e52489796baea1f08137e0b834b7b65`.
+
+```text
+Continue the full website software-factory outcome through existing issue #252
+and its #151/#109 programme links. Read the owning instructions, reviewed Registry,
+product decisions, current source and the programme/research/team/evidence files.
+Preserve the rejection of repair alone as sufficient product scope.
+
+Obtain independent exact-revision review and resolve current CI/capacity/source
+admission without weakening checks or discarding unfinished work. Qualify one
+pinned Foreman/eve adapter beneath the existing Queen/Software Studio boundaries.
+Keep unsupported issue closure, Linear intake and private shared memory disabled.
+
+Complete the existing Starlight desk/Research vertical through site
+#130/#132/#137/#138: source-linked decision, editable useful artifact,
+disconnect/reopen/export, negative permissions, cancellation and unknown-effect
+reconciliation. Compare against the direct/manual baseline and retain actual
+supplier usage, repair and support evidence. Apply the owning brand, Emil,
+humanizer and independent visual/release gates.
+
+A catalog, prompt pack or passing tests cannot close product or live-factory
+acceptance. Return the actual artifact, exact source/deployment/alias proof,
+checks, independent verdict, remaining gates and cleanup. Save the estate
+handover here and update the owning issue; preserve all other active work.
+```
+<!-- website-factory-20261016:end -->
+
+<!-- sis-managed-roadmap-20261015:start -->
+## Current pickup: connected SIS product plan
+
+Read [agentic-ops PR #244](https://github.com/frankxai/agentic-ops/pull/244) and
+[the session handover](sessions/2026-10-15.md), then use the existing programme owners.
+
+```text
+Continue the connected SIS managed-service plan at its exact current PR head.
+Read the owning repository instructions, reviewed Registry, strategy and roadmap.
+Inspect #109/#151 and acceptance #242/#243; preserve unfinished products and WIP.
+First obtain independent review of the paid/OSS promise, useful customer workflow,
+tenant authority, recovery, costs, support and beta fallback. Do not call the
+lead-authored Board challenge independent. Resolve product ownership through #82.
+Use the prepared board definition with the existing Projects board when a
+Projects-capable connection is available; do not create a second queue.
+Admit one bounded useful implementation only after ownership, capacity and
+authority pass. Return exact artifact, actual checks, remaining gates and next action.
+```
+<!-- sis-managed-roadmap-20261015:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 

@@ -1,3 +1,41 @@
+<!-- website-factory-20261016:start -->
+## Website factories: product direction and supporting compiler
+
+[Programme proposal #244](https://github.com/frankxai/agentic-ops/pull/244),
+exact `3bc470e72e52489796baea1f08137e0b834b7b65`, expands the customer direction
+to durable research, creation and agent-team delivery in existing products.
+[Factory issue #252](https://github.com/frankxai/agentic-ops/issues/252) joins
+the existing programme owners; [session](sessions/2026-10-16.md).
+
+Supporting catalog/compiler work passed four portfolio validators and 137 Python
+tests in UTF-8 mode. Foreman/eve is a pinned execution candidate. No live factory,
+model integration, paid offer or customer acceptance was established. Independent
+review, required private CI and implementation/release admission remain open.
+Live Projects access is still scope-blocked; the issue-backed projection is linked.
+
+Next: independent review of the actual revision, then one admitted complete
+Starlight research-to-artifact and recovery slice through its existing owners.
+<!-- website-factory-20261016:end -->
+
+<!-- sis-managed-roadmap-20261015:start -->
+## Connected SIS managed-service planning, 15 October 2026
+
+Documentation proposal: [agentic-ops #244](https://github.com/frankxai/agentic-ops/pull/244).
+Acceptance cards: [paid/OSS #242](https://github.com/frankxai/agentic-ops/issues/242) and
+[receiving-user proof #243](https://github.com/frankxai/agentic-ops/issues/243).
+[Session evidence](sessions/2026-10-15.md) records the exact scope and limitations.
+
+The proposal connects existing strategy, architecture, Cloud/frontier/security/federation
+programmes, useful OSS, paid features, specialist packets and beta adoption gates.
+Exact content readback and planning-graph checks passed in their stated scope.
+Independent review and implementation remain open. Board challenge is lead-authored;
+live Projects integration is blocked by connection scope. No new runtime, paid service
+or recurring job was activated. Private economics remain in the private owning repo.
+
+Next: independent exact-revision review, existing product admission and customer-value
+acceptance; then an admitted bounded implementation through existing owners.
+<!-- sis-managed-roadmap-20261015:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
