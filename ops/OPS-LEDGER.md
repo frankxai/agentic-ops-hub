@@ -11,6 +11,12 @@ environment settings until refreshed. Railway services remain unchanged. See the
 [16 October session](sessions/2026-10-16.md) and existing
 [configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
 Private credentials and tenant references are excluded from this projection.
+
+Workstream 3 now follows Frank's no-local-collector direction: prefer native
+harness trace export with Infisical-backed authentication. Codex, Claude Code and
+Gemini have documented native paths; Grok's external OTLP stream is logs/metrics
+only, so its Langfuse trace path remains open. The five-harness scope and real-run
+proof are still pending. This follow-up changed records only.
 <!-- infisical-langfuse-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

@@ -4,12 +4,17 @@
 Read the [16 October session](sessions/2026-10-16.md) and existing
 [configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
 Infisical credentials, corrected Cloud EU URLs, direct OTLP ingestion and exact
-span read-back are verified. Automatic session tracing is not enabled. Confirm
-whether Frank wants Codex, Claude Code, an application or LiteLLM instrumented,
-and agree the conversation-data scope before enabling transcript capture.
-Refresh inherited environment settings, use the selected runtime's supported
-direct exporter or bounded hook, and verify one real run plus failure recovery.
-Keep credentials in Infisical and retain the no-local-collector constraint.
+span read-back are verified. Frank's Workstream 3 direction is direct native
+harness trace export to Langfuse Cloud, with no local collector. Confirm the five
+harnesses and conversation-data scope. Codex, Claude Code and Gemini have
+documented native paths; Claude's traces require enhanced-telemetry beta opt-in.
+Grok's documented external stream exports logs and metrics only, so its Langfuse
+trace path requires separate evidence. OpenCode and Hermes remain unverified in
+this session. OTLP support alone does not prove trace compatibility.
+Refresh inherited environment settings, configure compatible HTTP trace exporters
+with Infisical-backed authentication, and retrieve one real run per harness with
+useful attribution and checked failure behavior. Verify credential handling for
+each exporter and retain the no-local-collector constraint.
 Preserve the existing Railway services and their separate unresolved gates.
 <!-- infisical-langfuse-20261016:end -->
 
