@@ -1,10 +1,10 @@
 <!-- voice-live-face-20261016:start -->
 ## Voice: three orbs are on the live page
 
-Clap listener on `agent/grok/x-voice-clap` at `15e79e5` in
+Clap listener on `agent/grok/x-voice-clap` at `0334b56` in
 `C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`. The page
 `http://127.0.0.1:8765/live` draws Eve, Ara, and Leo from `/api/live`. It does
-not open a microphone and it does not spawn a seat. Draft
+not open a microphone and it does not spawn a seat. The socket uses the EU Infisical `XAI_API_KEY` when the value starts with `xai-`, and it stops at 15 minutes in a UTC day. Draft
 [starlight-voice#5](https://github.com/frankxai/starlight-voice/pull/5). Issue
 [#2](https://github.com/frankxai/starlight-voice/issues/2) stays open.
 

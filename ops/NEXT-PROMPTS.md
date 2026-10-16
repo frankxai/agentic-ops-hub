@@ -3,7 +3,7 @@
 
 Current pickup for the voice face only. Leave the Queen prompts below untouched.
 
-The orbs are already on `http://127.0.0.1:8765/live` at `15e79e5` (`agent/grok/x-voice-clap`). Eve, Ara, and Leo. The voice in `/api/live` is the bright one. Refreshing that page does not restart the socket.
+The orbs are already on `http://127.0.0.1:8765/live` at `0334b56` (`agent/grok/x-voice-clap`). Eve, Ara, and Leo. The voice in `/api/live` is the bright one. The socket uses the EU Infisical `XAI_API_KEY` only when it starts with `xai-`. The day cap is 15 minutes. Refreshing that page does not restart the socket.
 
 Read `C:\Users\frank\starlight\worktrees\hub-voice-live-face-20261016\ops\sessions\2026-10-16.md`. Confirm `/api/live`. If phase is `open` or `speaking`, do not stop the listener and do not write `C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`. Do not write the Hermes primary checkout.
 
