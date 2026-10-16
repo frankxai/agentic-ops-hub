@@ -1,3 +1,13 @@
+<!-- unified-ai-os-20261016:start -->
+## Unified AI OS: move verified source into an admitted first production slice
+
+Continue Frank's full multi-platform operating-system outcome from private Content OS [draft PR #7](https://github.com/frankxai/content-os/pull/7), exact `e130bf36e23bb7e976e291f0391fb6bfe64b16c9`, stacked on #6, and existing [issue #5](https://github.com/frankxai/content-os/issues/5). Read the [16 October session](sessions/2026-10-16.md), product operating manual, private research/audit evidence, current Registry and machine/repository contracts. Preserve other active portfolio objectives and earlier creator work.
+
+The A–J manual, eight prompts, nine contracts, staging configuration and diagnostic CLI exist; 53 focused tests pass. No independent provider acceptance or production activation is claimed. Refresh source/configuration versions and admission. Through the existing official tool plane, admit n8n editing/testing against isolated staging, reproduce and repair the documented incumbent input/auth/request/recovery defects, inspect saved connections and test success/denial/partial failure without triggering real messages. Resolve new orchestration placement through reviewed Registry authority; do not add another timer or universal runtime.
+
+Repair the reported model security-review SDK before relying on it, retain deterministic checks and obtain independent exact-revision review. Verify destination/rights/source/CTA and authenticated action release; complete the required paired pilot and observe one real provider result plus measurement. The initial disk hold cleared outside this session, but RAM/concurrency and workload-specific gates remain. Do not assume the current Intel host is the planned AMD target. Keep production work open until actual acceptance evidence exists; update the same product issue and this hub.
+<!-- unified-ai-os-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
