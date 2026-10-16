@@ -1,6 +1,17 @@
 <!-- asset-intelligence-20261016:start -->
 ## Image management and ChatGPT/mobile provenance
 
+Current: local VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` adds location/
+processing evidence to the existing cockpit, read-only snapshot export and bounded
+file-presence checks. A private 40-asset snapshot was generated; 80 checked paths
+were present. Seven focused tests and lint pass, including generated browser-script
+compilation and index non-mutation. A pre-existing inline-script escaping bug was
+fixed. Operating guide and reusable creative-operator prompt are linked from AGENTS.
+Browser fleet admission is held and native Windows app enumeration fails with a
+missing helper pipe. Rendered QA, independent review and physical move/undo remain
+open. PR #39 is already merged upstream (2 October); earlier unmerged claims below
+are stale. Reconcile current main before extending the watched library. No deployment.
+
 Latest: local VIS `374ea624e3dc46e0c34b992e69111c56ddb88118` adds the visual
 editorial team plan, brand-specific placement strategy and 19 unselected briefs
 across four brands. Existing content cells, brand authority and homepage contracts

@@ -1,6 +1,23 @@
 <!-- asset-intelligence-20261016:start -->
 ## Continue image management from the existing VIS implementation
 
+Latest steering: Frank wants visible asset/folder work, a coherent visual operator
+across CLI/DAM/CMS/LMS/content tools and a proactive future-looking execution prompt.
+Continue local VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` (unpushed/unmerged).
+Read `docs/VISUAL_WORKSPACE.md` and `docs/CREATIVE_OPERATOR_PROMPT.md`. The private
+snapshot is `C:/Users/frank/.starlight/evidence/asset-intelligence-20261016/asset-desk.html`.
+It has 40 assets from the stale 26 September index and 80 current presence checks;
+it is not a refreshed census, move console, cloud upload or live publication.
+First reconcile with current main: PR #39 actually merged on 2 October, despite
+older notes below. Preserve the library/operator implementation. Obtain fresh
+machine/browser admission and restore native computer use through supported host
+workflow; its package loaded but app enumeration failed with native pipe os error 2.
+Do not modify security settings, start a custom helper or steal the owned ChatGPT tab.
+Inspect the interface at 375/768/1440, keyboard/focus, touch and reduced motion;
+complete independent exact-revision review before release. Then prove one authorised
+capture-to-placement with context, dedup/retry and a real receipt. Do not replace
+these pending outcomes with more documents or another dashboard.
+
 Current steering: dedicated visual team, image-to-brand decisions, homepage/
 component placements and social stories. Latest local VIS head is
 `374ea624e3dc46e0c34b992e69111c56ddb88118` (not pushed/merged). Read
