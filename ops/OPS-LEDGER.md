@@ -1,3 +1,9 @@
+<!-- browser-session-audit-20261016:start -->
+## Browser sessions: protection patch prepared, live repair remains open
+
+Codex [16 October audit](sessions/2026-10-16.md): Chrome has saved account-authentication error metadata; causal actor remains unverified. Keep both password managers and preserve local passwords. Draft [PP6](https://github.com/frankxai/peak-performance/pull/6) at `b497cc3` protects Chrome, Edge, Brave and Comet in process classification, with seven passing focused regressions and a clean secret scan. Full type checks, independent review and installed adoption remain pending under [PP3](https://github.com/frankxai/peak-performance/issues/3). Existing browser guard works on the inspected Codex path; universal enforcement is unproved. No live profile or process changed.
+<!-- browser-session-audit-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

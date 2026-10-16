@@ -1,3 +1,9 @@
+<!-- browser-session-audit-20261016:start -->
+## Continue browser-session protection
+
+Read the 16 October session and private browser audit. Preserve both password managers, all human browser profiles and pending consent to close Chrome. Review PP6 `b497cc3`, run dependency/type checks under current admission, reconcile PP3/PP4 and verify an owned installed projection with rollback. The shared PP wrapper remains on the producer checkout. Re-check live Chrome account/sync and cookie persistence only through supported UI and an authorized normal close/reopen. No causal actor or successful repair is established. Treat low resources as admission pressure; never remove profiles, cookies, login/extension/vault storage or CLI authentication. Other objectives and prompts below remain open.
+<!-- browser-session-audit-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
