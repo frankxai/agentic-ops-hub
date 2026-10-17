@@ -2,7 +2,7 @@
 // Handover lifecycle for this hub: one file per handover under ops/handovers/, with the index table in
 // ops/HANDOVER-INDEX.md and the pickup list in ops/NEXT-PROMPTS.md generated from those files.
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, statSync, realpathSync } from 'node:fs';
-import { join, resolve, dirname, sep } from 'node:path';
+import { join, resolve, dirname, sep, isAbsolute } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const STATUSES = ['open', 'open-unverified', 'claimed', 'processing', 'processed', 'archived', 'superseded', 'abandoned'];
@@ -30,7 +30,7 @@ export function parseHandover(text) {
     const at = line.indexOf(':');
     if (at > 0) meta[line.slice(0, at).trim()] = line.slice(at + 1).trim();
   }
-  return { meta, body: match[2] };
+  return { meta, body: match[2].replace(/\r\n/g, '\n') };
 }
 
 export function renderHandover({ meta, body }) {
@@ -46,7 +46,7 @@ export function loadAll(root) {
     .map((file) => ({ file, ...parseHandover(readFileSync(join(dir, file), 'utf8')) }));
 }
 
-const cell = (s) => String(s ?? '').replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
+const cell = (s) => String(s ?? '').replace(/\\/g, '\\\\').replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
 
 export function renderIndexTable(handovers) {
   const rows = [...handovers]
@@ -130,6 +130,7 @@ export function lint(root) {
   }
   for (const { meta } of all) {
     if (meta.superseded_by && !ids.has(meta.superseded_by)) errors.push(`${meta.id}: superseded_by ${meta.superseded_by} has no file`);
+    if (meta.supersedes && !ids.has(meta.supersedes)) errors.push(`${meta.id}: supersedes ${meta.supersedes} has no file`);
   }
 
   const index = readFileSync(p.index, 'utf8');
@@ -180,6 +181,7 @@ export function isEvidence(root, v) {
       return (url.protocol === 'https:' || url.protocol === 'http:') && url.hostname.length > 0;
     } catch { return false; }
   }
+  if (isAbsolute(v) || /^[\\/]/.test(v)) return false;
   const target = resolve(root, v);
   if (!existsSync(target)) return false;
   const base = realpathSync(root);

@@ -90,6 +90,23 @@ test('evidence reached through a junction or symlink that leaves the repository 
   assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'link/receipt.md' }), /repository-relative/);
 });
 
+test('absolute and drive-rooted evidence paths are refused even inside the repository', () => {
+  const root = fixture();
+  const inside = join(root, 'ops', 'HANDOVER-INDEX.md');
+  for (const bad of [inside, inside.replace(/^[A-Za-z]:/, ''), '\\ops\\HANDOVER-INDEX.md']) {
+    assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: bad }), /repository-relative/, bad);
+  }
+});
+
+test('a dangling supersedes, a trailing backslash cell and a CRLF body are handled', () => {
+  const root = fixture();
+  writeFileSync(join(paths(root).dir, 'H-e.md'), '---\r\nid: H-e\r\nwhat: ends\\\r\nstatus: open\r\nsupersedes: H-missing\r\n---\r\n\r\n## Prompt\r\n\r\nx\r\n');
+  regenerate(root);
+  assert.ok(lint(root).some((e) => e.includes('supersedes H-missing has no file')));
+  assert.match(readFileSync(paths(root).index, 'utf8'), /\| ends\\\\ \|/);
+  assert.doesNotMatch(parseHandover(readFileSync(join(paths(root).dir, 'H-e.md'), 'utf8')).body, /\r/);
+});
+
 test('fences match by character and length, and a fenced-only prompt is not a pickup', () => {
   const root = fixture();
   create(root, { id: 'H-four', what: 'Four', where: 'x', owner: 'codex' }, '\n## Prompt\n\n````md\n```\n## Example\n```\n## Example\n````\n');
