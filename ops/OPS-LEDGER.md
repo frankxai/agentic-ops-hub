@@ -1,3 +1,15 @@
+<!-- ci-economics-20261017:start -->
+## CI economics: $0 Actions budget, Blacksmith proven, weekly git-ops live
+
+Draft [Ops270](https://github.com/frankxai/agentic-ops/pull/270) adds the CI census and
+fleet CI templates (Codex-reviewed, 18 tests pass). Private repos bill at least 5,231
+minutes a week; public repos bill nothing. Blacksmith proven green on draft
+[command-center 79](https://github.com/Starlight-Intelligence/starlight-command-center/pull/79)
+after the repo moved to Starlight-Intelligence. Actions off on 37 dormant private repos.
+Routine "Estate git-ops weekly" reports every Monday. Both PRs await different-harness
+review. Details in the [17 October session](sessions/2026-10-17.md).
+<!-- ci-economics-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 

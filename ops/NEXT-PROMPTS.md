@@ -1,3 +1,20 @@
+<!-- ci-economics-20261017:start -->
+## Continue the $0-budget CI migration and org placement
+
+Current pickup for the CI/org slice only; other slices keep their own prompts below.
+Read the [17 October session](sessions/2026-10-17.md) and Frank's estate plan artifact.
+1. Get different-harness pr-gate review on Ops270 and command-center 79; fix findings.
+2. Once Frank rules on the six org questions in Ops29, open one reviewed Registry PR:
+   new org paths (starlight-command-center first) and remove the 39 duplicate rows.
+3. Publish public `Starlight-Intelligence/ci-workflows@v1` from Ops270's reusable template.
+4. gencreator.ai: draft-guard its contract workflows, fix the failing surface-guard, then
+   move it per Frank's ruling (GenCreator-ai on Team + Blacksmith).
+5. After Frank installs the Vercel GitHub App on Starlight-Intelligence, transfer
+   starlightintelligence.ai and set `CI_RUNNER` to Blacksmith.
+Read Monday's "Weekly estate git-ops report" issue before choosing the next move.
+Never raise the Actions budget; never put a self-hosted runner on a public repo.
+<!-- ci-economics-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
