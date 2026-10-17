@@ -1,6 +1,14 @@
 <!-- estate-operating-map-20261016:start -->
 ## Harness, voice and estate operating map
 
+Founder scope correction: agent-config local candidate
+`6c428c1f17374460313c186a76af9d3070948be2` now preserves multiple voice-agent
+experiments, a local harness/Queen-connected operator and estate overview, and
+cloud agents for different brands/jobs with selected always-on availability.
+The first spoken mission is an integration test. Experiment comparison, per-agent
+preview/launch, isolation, health/cost, pause/recovery/rollback and portfolio proof
+remain part of acceptance. This is a source-plan correction, with no activation.
+
 17 October: Command Center local candidate
 `f345a332236dd1d34d1c59323279809a944b06cf` adds read-only saved mission recovery
 and a mission-bound Queen/harness/artifact graph model. All51 focused Node cases,
@@ -11,7 +19,7 @@ cloud acceptance remain open. The original Voice/Command Center owner lanes are
 preserved. See the [17 October session](sessions/2026-10-17.md) and
 [Command Center69](https://github.com/frankxai/starlight-command-center/issues/69).
 
-Current local agent-config candidate `cdb76e0057574143e63b7854b9502d70e16e570c`
+Earlier agent-config checkpoint `cdb76e0057574143e63b7854b9502d70e16e570c`
 adds the bounded metadata auditor, interactive map, portable kickoff, hard-floor
 and startup observations, and Voice studio/cloud-resume delivery plan. Fifteen
 focused tests, real held CLI exit, generated-script syntax, structural HTML,

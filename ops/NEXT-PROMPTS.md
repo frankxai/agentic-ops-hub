@@ -1,6 +1,19 @@
 <!-- estate-operating-map-20261016:start -->
 ## Continue the existing Voice studio journey
 
+Preserve Frank's clarified full scope: experiment with multiple voice agents;
+operate one local voice agent connected to the existing harnesses and Queen for
+kickoff and estate overview; smoothly launch and manage cloud voice agents for
+different brands/jobs, with selected agents always available when the laptop is
+off. One spoken mission is the first integration test, not the entire product.
+Read the expanded `voice-studio.md`, operating plan and estate-cycle prompt at
+agent-config local candidate `6c428c1f17374460313c186a76af9d3070948be2` in the
+owned operating-map lane. Build the repeatable profile/variant, audition,
+comparison, preview, review, launch and operate loop. Initial portfolio proof
+includes the local operator and at least two independently scoped cloud candidates.
+Keep per-brand identity/context/tools, health/cost, pause, recovery and rollback
+visible in the shared overview. Admit actual work within capacity and budget.
+
 Read the 17 October session. Continue the owned Command Center lane
 `agent/codex/voice-studio-journey-20261017`, local candidate
 `f345a332236dd1d34d1c59323279809a944b06cf`, from
