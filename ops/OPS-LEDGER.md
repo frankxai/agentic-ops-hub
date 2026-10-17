@@ -1,8 +1,17 @@
 <!-- ai-team-products-20261017:start -->
 ## AI team entry products: source candidate, release gates open
 
+Private restart packet added at `af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`:
+master vision with 13 visible product messages, internal-first Studio and customer
+productization plan, portable visual index, continuation prompt and two generated
+concept references. Eleven exact files committed; 12 contextual/output digests
+match committed bytes. Local ownership/whitespace/secret checks pass. Contrast/
+spacing refined and GenCreator brand exceptions scoped to this one private index.
+Browser, independent review, application behavior and commercial gates remain open.
+Open START-HERE.html in the private packet at restart; raw prompts stay private.
+
 FrankX draft [PR 280](https://github.com/frankxai/FrankX/pull/280), exact
-`0b46db3463f97ec0b6eb4be7dcbe25ed022cc90c`, adds original free / EUR 1 / EUR 7
+`af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`, adds original free / EUR 1 / EUR 7
 material, three practice missions and a proposed five-tier lifecycle registry.
 [Issue 279](https://github.com/frankxai/FrankX/issues/279) owns acceptance.
 All 11 source-asset references resolve; 13 committed digests match; scoped

@@ -1,76 +1,52 @@
 <!-- ai-team-products-20261017:start -->
-## Continue the AI team product family toward a verified first buyer outcome
+## Resume GenCreator Product Studio from the saved visual and founder brief
 
 Start Codex in `C:/Users/frank/starlight/worktrees/frankx-product-lifecycle-20261017`.
-Read this hub's 17 October session, FrankX issue 279 and draft PR 280, exact
-source `0b46db3463f97ec0b6eb4be7dcbe25ed022cc90c`. Re-read destination instructions,
-verify current branch/origin, machine admission, routing and the explicit-file
-lane before writes. Preserve other work and line-ending-only sparse-checkout noise.
-
-Hosted security jobs could not start due to the account Actions budget; both
-executed zero steps. Keep checks enabled and do not infer a code/security verdict.
-Handover draft PR 355 records the exact annotations and local verification.
-
-The private release brief now includes a provider/CI/memory/hosting proposal and
-reusable execution prompt. Frank confirmed Graphite plus Graphiti and Buildkite
-CI. Follow existing ops issues 85/149/20/51; do not create a parallel scheduler,
-cost registry or runner fleet. Current billing and runner-health evidence is
-incomplete. No vendor purchase, budget change or runtime pilot was performed.
-The later RAM observation was below the 4 GiB floor; re-admit heavy work first.
-
-Locate the existing internal Studio in FrankX's foreign
-`agent/antigravity/v0-sovereign-creator-engine` branch at 7fe4fde1. Its studio/
-and studio-graph script are absent from main; preserve the checkout and review a
-scoped integration. Graph is dated 30 August, WIP is 3/3. Reconcile the new family
-with existing L1 work without replacing unfinished packs or silently adding a
-fourth slot. The registry records four homes, seven proposed lanes and ten
-customer stages; it does not dispatch workers. GenCreator owns the customer
-workspace, SIS the graph source. Connect one complete mission and delivery path.
-
-Visual recommendation: native GitHub Projects, Figma/FigJam and Vercel preview
-feedback now; Canva/Drive asset links join by release. Current Projects reads
-lack read:project scope. Later extend existing Studio with Today/Product/Work/
-Review/Delivery views over verified evidence; do not add another task authority.
-Emil guidance is selected/read and applied to the proposal, not rendered QA.
-
-Founder now explicitly chose both owned interfaces through a shared backend.
-Coordinate with GenCreator issues 235/119 and existing 245/PR247 owner. PR247 at
-e478b926 has a READY preview; inspect it after admission, preserve its write lane.
-Reuse CreatorPack/Mission/AgentRuntime contracts. Implement one real source-to-
-draft-to-review-to-export journey with durable recovery and tenant/budget denial.
-Share product services, keep private estate adapters/credentials outside customer
-authority. Existing GenCreator-Studio /hv is a static-batch reuse source, not the
-managed backend. Re-admit heavy work; latest RAM was 2214 MB. No new app installed.
-
-Correction from Frank: “Vite and Cloudflare Void” means void.cloud SDK/CLI/platform,
-not Void editor or v0. Read official current guides before implementation. Evaluate
-Vite + Void against the existing product on the same complete mission; preserve
-domain contracts and data. Prefer a direct-account app pilot before self-hosting
-a team deployment platform. Core Void Platform does not include its user dashboard
-or managed GitHub builds. Do not mistake agent setup skills for hosted execution.
-
-Latest brand/architecture recommendations are proposals: keep GenCreator creation
-and productization coherent; AgenticIncome supplies commercial/agent-service jobs.
-Reconcile its education-first/service-first docs before changing positioning.
-Prefer a scoped Cloudflare core evaluation, retain existing Next/Vercel surfaces,
-and compare the same real creation-to-delivery outcome. Connect brand-specific
-views through product/release/evidence IDs with scoped account/connector authority.
-Engineering agents use owned PRs; customer jobs use tenant/budget/recovery controls.
-
-Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
-for a first-sale attempt, with EUR 47/97 planned and connected source/design/
-commerce/delivery lifecycle. Inspect the actual material in
+Read FrankX issue 279 and draft PR 280, exact source
+`af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`. The private packet is under
 `docs/strategy/portfolio-productization/weekend-ai-team-20261017/`.
-Freeze the first buyer and mission; improve the paid exercise against a plain-chat
-alternative, then render and inspect one coherent PDF/HTML edition with editable
-files. Obtain cold-user completion/resumption and independent exact-edition review.
-Keep prior GenCreator/AI Architect/CoE work and brand decisions intact.
+Open START-HERE.html, inspect visuals/product-studio-concept-v2.png, then read
+GENCREATOR-PRODUCT-STUDIO-MASTER-BRIEF.md and RESTART-PROMPT.md in full.
 
-The proposed registry links resources; it does not synchronize or authorize.
-Use existing catalog/graph and native marketplace delivery. Verify seller,
-currency/tax, terms and receipt/download/recovery on each chosen channel before
-public launch. Keep unproven prices, reviews, savings and sales unclaimed.
-Do not count structural checks or a test purchase as a customer result.
+The master preserves all 13 visible product-related messages. It separates
+founder choices from brand/platform proposals and unverified implementation.
+Raw prompts and the private provider inventory remain in FrankX; this public
+hub holds a sanitized pointer. The static index is a planning aid, not the app.
+
+Frank now asks for internal Product Studio first, plus the customer productization
+plan. Preserve his accepted separate interfaces/shared backend choice. Reuse
+GenCreator CreatorPack/Mission/revision/review/export contracts, programme
+235/119 and the other owner's editorial work in 245/PR247. Inspect the existing
+foreign FrankX Studio candidate rather than creating another task authority.
+Use the image as art direction, not as the product or runtime proof.
+
+Re-read destination instructions and current accepted decisions. Verify exact
+root/origin/branch, explicit-file routing and separate lane ownership before
+writes. Preserve other agents' changes and sparse-checkout line-ending noise.
+Recheck machine/storage admission; latest document-task observation was 3269 MB
+RAM, below the 4 GiB floor for heavy work. No browser/build/server/fanout ran.
+
+Select one useful source -> real draft -> edit -> revision-bound review -> export
+-> durable resume mission. Verify denied access, interruption, retries, cancellation,
+source drift and costs. Compare actual Cloudflare Vite/Void against the existing
+Next/Vercel candidate on that same task; no broad migration is approved. Keep
+private estate adapters outside customer authority and use existing coordination.
+
+Continue the free/EUR 1/EUR 7 native-download launch in parallel only within actual
+admission/ownership; EUR 47/97 remain planned. Refine and inspect the real exports,
+obtain fresh-user and independent current-revision review, verify seller/receipt/
+download behavior and record sale separately from useful application. No sale or
+managed Studio is evidenced by this packet. Keep hosted security checks enabled;
+previous jobs ran zero steps due to Actions budget. No vendor/budget/DNS changes.
+
+restart-pack.verification.json records 12 matching committed-byte digests, 13
+source messages, local-link/prompt/JS/PNG checks and calculated text contrast.
+Two generated concepts retain prompt sidecars and lineage. Detector passes with
+single-document GenCreator brand exceptions; browser and independent acceptance,
+external provenance-schema validation and memory-vault sync remain open.
+
+Finish with actual artifact/revision/checks/gaps and update the existing issue and
+hub. Do not mark the wider creation business complete from this document slice.
 <!-- ai-team-products-20261017:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
