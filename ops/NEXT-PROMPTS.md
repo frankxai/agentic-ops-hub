@@ -1,20 +1,29 @@
 <!-- memory-architecture-20261016:start -->
-## Preserve sessions, close verified runtimes, then repair shared infrastructure
+## Continue preservation from verified checkpoints and native owner confirmation
 
-Read the 16 October session, current private session/infra execution handover and
-memory audit, then current repository, machine and source-owner contracts. Keep
-one coordinator. Inventory accessible native session/thread sources, goal/task
-IDs, dirty work, artifacts and coverage gaps using existing ledgers and indices.
-Create and read back a resume packet before closing each selected session; retain
-original histories, unfinished work, accepted constraints, goals and budgets.
-Test a canary restoration when admitted, then gracefully close verified task
-runtimes in batches. Preserve human browsers, credentials, held writer locks and
-registered shared services. Do not equate runtime closure with task completion
-or destructive archive. Inaccessible cloud histories and temporary caches remain
-explicit limitations; do not claim universal recovery.
+Read the 17 October session, private execution verification receipt, original
+session/infra handover and current source-owner/machine/repository contracts.
+Keep one coordinator. The existing PP owner has published a fresh drain directive;
+recheck its freshness and actual Queen observation. Private evidence contains
+39 recovery drafts, 37 verified native-history checkpoints, five worktree
+checkpoints, 23 untracked copies, consistent Codex metadata, existing ledgers,
+153 cloud task metadata records and 11 Pages content snapshots. Treat these as
+scoped coverage. Native process counts, recent activity and readable history do
+not establish closure readiness, goal completion or complete cloud coverage.
 
-After fresh admission, coordinate oversized-index recovery with its source owner,
-keep loader bounds, add writer admission and verify shared recall. Configure the
+Closed by this coordinator: zero. Resumed: zero. Native control endpoint access
+failed, and this tool surface cannot operate terminal tabs. Use the prepared
+private owner-checkpoint request in one existing native thread. Obtain and read
+back its owner confirmation, reconcile actual goal/budget/deadline and dirty-work
+and artifact fields, then use a supported graceful exit. Recheck admission and
+prove a representative native resume before widening closure. Retain originals,
+unfinished work, paused states, human browsers, credentials, shared services and
+held writer locks. Record any missing source or non-exportable temporary cache.
+
+After fresh admission, coordinate the offline three-shard index candidate with
+the source owner. Its 2,043 existing directive blocks survive losslessly and the
+unchanged loader accepts it. Reconcile newer ledger rows and repeated IDs; repair
+writer admission, pin the release and verify live pooled recall. Configure the
 existing shared plane, memory/context/continuity paths, harness projections and
 resource/cost receipts in waves. Reuse SIS49, memory8/2/20 and SIS150; keep
 SIS345/354/355 recorded as merged. Verify interruption, duplicate close, tenant
@@ -22,9 +31,10 @@ denial, source freshness, deletion after restart and actual supported cross-host
 continuation. Obtain independent exact-revision review when admitted. Reopen only
 selected work within measured capacity while every other thread stays recoverable.
 Preserve current private sources; save sanitized progress and one current prompt
-here plus the existing product issues. Provider additions, purchases, deployments
-and new recurring jobs retain their separate gates. This pickup is an execution
-plan; no preservation census or session shutdown has been performed by writing it.
+here plus existing product issues. Thirty offline safety/conflict tests passed;
+live continuity and independent review are pending. Provider additions, purchases,
+deployments and new recurring jobs retain their separate gates. Partial
+preservation and an offline repair candidate do not complete the full operation.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

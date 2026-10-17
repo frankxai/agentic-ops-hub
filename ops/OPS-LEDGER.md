@@ -1,5 +1,5 @@
 <!-- memory-architecture-20261016:start -->
-## Memory and context: service recovery precedes provider expansion
+## Memory and context: preservation underway; native closure remains gated
 
 The [16 October audit](sessions/2026-10-16.md) reproduced shared-memory startup
 failure at vault-file admission. Existing bounds and source material must be
@@ -13,12 +13,18 @@ The session also records the source-priced economics follow-up: published RAM
 requirements and list prices are distinct from measured whole-stack usage and
 realized ROI. Actual task volumes, operating effort and accepted outcome gains
 remain required under SIS150 before provider expansion.
-The founder's current pickup requests preservation and verified session closure
-before the infrastructure waves. A private execution prompt is prepared; coverage,
-checkpoints, canary restoration and closure remain unexecuted. Preserve native
-threads, unfinished work and goal states, and label inaccessible cloud/cache
-coverage. The current prompt supersedes the earlier recovery-first sequence for
-this slice only; other objectives remain intact.
+The [17 October execution](sessions/2026-10-17.md) published a fresh drain directive
+through the existing PP owner and retained partial private source coverage:
+39 recovery drafts, 37 verified native-history checkpoints, five worktree
+checkpoints, 23 untracked copies, 153 cloud task metadata records and 11 Pages
+content snapshots. These are scoped observations; unseen chats and unresolved
+references remain explicit. Zero sessions have been closed or resumed by this
+coordinator. Native control access, owner confirmation and the first resume canary
+still block widening shutdown. An offline lossless three-shard index candidate
+passes the unchanged loader; the live memory backend remains degraded. Thirty
+offline safety/conflict tests passed. Live continuity, release pinning, source
+reconciliation and independent review remain open. Preserve native threads,
+paused goals, unfinished work, locks and private recovery evidence.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
