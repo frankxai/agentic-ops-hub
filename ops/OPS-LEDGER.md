@@ -2,18 +2,26 @@
 ## Image management and ChatGPT/mobile provenance
 
 Published continuation: [VIS draft PR #53](https://github.com/frankxai/visual-intelligence/pull/53),
-head `2d63c915f30a99af0c09a94d95ea60b545b19850` on
+head `1b400ba980f7e8f565134eb5a863c87d835ec152` on
 `agent/codex/asset-cloud-handoff-20261016`, based on main `812c538`.
 Portable source/tests/capture kit and `docs/CLOUD_CONTINUATION.md` are on GitHub;
 private assets, index, account inventories, machine evidence and brand planning
 remain local. Existing merged library is preserved. Primary code review fixed
 read-only serving, index-output aliases, focus/motion, missing previews and saved
-feedback retry failures. At that exact head, hosted CI passes all 75 library/unit
+feedback retry failures. At code/test revision `2d63c91`, hosted CI passes all 75 library/unit
 tests and 16 Chromium cases. Desktop/tablet/mobile touch emulation/reduced-motion
 screenshots were inspected; active transition reversal is verified. Draft remains
 open for independent review. Real private capture-to-placement, native host work
 and human gates remain open. No merge/deployment or cloud session startup.
 See the [17 October review](sessions/2026-10-17.md). Earlier private source branch is intact.
+
+Latest steering: dedicated asset teams and visible post-ingestion recommendations.
+The documentation-only `1b400ba` update maps roles and Library/Suggested uses/
+Brands/Team jobs/Review views onto the existing operator. `docs/VISUAL_WORKSPACE.md`
+distinguishes today's rank/set/tag/rights proposal queue from the unbuilt placement
+comparison and team telemetry views. No new Vite app, workers or automated visual
+analysis were started. Local fleet holds at 2.7 GB free RAM. Next useful product
+slice: one brand/slot, three authorised assets and a reviewed contextual comparison.
 
 Earlier local slice: VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` adds location/
 processing evidence to the existing cockpit, read-only snapshot export and bounded

@@ -2,11 +2,11 @@
 ## Continue image management from the existing VIS implementation
 
 Current GitHub entry: draft PR #53, branch `agent/codex/asset-cloud-handoff-20261016`,
-head `2d63c915f30a99af0c09a94d95ea60b545b19850`. This starts from main `812c538`
+head `1b400ba980f7e8f565134eb5a863c87d835ec152`. This starts from main `812c538`
 and preserves the merged library. Read `docs/CLOUD_CONTINUATION.md` and the reusable
 operator prompt. The public source/tests/portable instructions are pushed; the
 private index, images, account/machine evidence and detailed brand planning are not.
-GitHub CI passes 75 library/unit tests (38991839870) and 16 Chromium cases
+At code/test revision `2d63c91`, GitHub CI passes 75 library/unit tests (38991839870) and 16 Chromium cases
 (38991839865). Read `docs/DASHBOARD_REVIEW.md`: primary review and sample screenshot
 inspection are done, including focus, touch emulation, reduced motion and interrupted
 transitions. Independently review the exact current head, resolve concrete findings
@@ -15,6 +15,15 @@ prove one authorised source image plus context through dedup/retry and a reviewe
 placement using the existing library. Use an online
 authorised host only for local files/browser/desktop work. No cloud account setting
 or separate session was configured. Preserve the earlier local source branch below.
+
+Current visual-team steering: read `docs/VISUAL_WORKSPACE.md`, sections "Agent teams
+you can see" and "App, build tooling and agent control". Reuse the existing operator
+and proposal record. Build a contextual comparison for one brand/slot and three
+authorised assets, showing actual crops, reasons, owner and review state. Add visible
+job state only from real receipts/events. Existing folder-based set suggestions are
+not visual placement intelligence. Keep runtime selection separate from role identity;
+no fanout/recurring dispatch is authorised by the plan. Do not start another app or
+claim the team board is already built. Current browser admission is held.
 
 Latest steering: Frank wants visible asset/folder work, a coherent visual operator
 across CLI/DAM/CMS/LMS/content tools and a proactive future-looking execution prompt.
