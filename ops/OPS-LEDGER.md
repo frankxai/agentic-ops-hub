@@ -1,3 +1,25 @@
+<!-- agent-hygiene-contract-20261017:start -->
+## Agent hygiene: the agent and skill quality bar is now an installable, enforced pack
+
+Draft [CSL72](https://github.com/frankxai/claude-skills-library/pull/72), exact
+`6a2d516361662f1ef1d18ccdb143f3bb49d826be`, ships `packs/agent-hygiene`: the canonical
+`agent-hygiene` skill (the bar, the agent-file contract, the verification line,
+top-tier routing), a 17-check linter that ratchets on changed agent and skill files,
+and a Stop hook that requires `Verified: <command> → <result>` after a change and
+checks the command ran. 83 pack tests and every library CI check pass locally.
+Draft [ACOS124](https://github.com/frankxai/agentic-creator-os/pull/124), exact
+`4ae87a6543601b3965fa2c84de378b48d6e20bb1`, and draft
+[SIS450](https://github.com/frankxai/Starlight-Intelligence-System/pull/450), exact
+`a94ef73c33d86f5c3081c838f6e1ec6a9d65bc9a`, install it into the two agent-authoring hubs; SIS450
+records the decision in the strategic vault. Estate lint at install time: 741 agent
+files, 297 errors, 2,004 warnings; the ratchet exposes a file only when touched.
+
+Nothing is merged; no hook is active on any `main`. Band A is unchanged. The 144
+SIS cards without a description, the 37 arcanea files without frontmatter and the
+remaining four carrier repos are the pickup. See the
+[17 October session](sessions/2026-10-17.md).
+<!-- agent-hygiene-contract-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
