@@ -42,39 +42,59 @@ handover is `processed` or `superseded` is moved out of `NEXT-PROMPTS.md` into `
 
 ## Known handovers
 
+<!-- handover-index:start -->
 | Id | What | Where | Owner | Status |
 |---|---|---|---|---|
-| H-2026-10-17-triage | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | branch `agent/claude/restart-pack-20261017`; local pack in an untracked scratch folder | Claude | open; pack needs relocation |
-| H-preservation | Preservation-first restart closure, native checkpoints | branch `agent/codex/memory-architecture-20261016` | Codex | processing |
-| H-ai-team-products | Free / EUR 1 / EUR 7 AI team product ladder | `agent/codex/product-lifecycle-handover-20261017`; FrankX issue 279, draft PR 280 | Codex | open |
-| H-product-studio | GenCreator Product Studio: master brief of the founder's prompts and vision, a visual start page with concept images, and a restart prompt | Codex session 01a146b1, files untracked in the `frankx-product-lifecycle-20261017` worktree under `docs/strategy/portfolio-productization/weekend-ai-team-20261017/` (START-HERE.html, GENCREATOR-PRODUCT-STUDIO-MASTER-BRIEF.md, RESTART-PROMPT.md, visuals/); images under `cms-dam/assets/gencreator/product-studio-20261017` | Codex | processing; uncommitted |
-| H-voice-journey | Voice studio journey | `agent/codex/estate-operating-map-20261016` (hub 3 and agent-config 2 commits unpushed); `agent/codex/voice-studio-journey-20261017` has no upstream | Codex | open; unpushed |
-| H-voice-x | X-voice and live face | `agent/grok/x-voice-clap` (gate BLOCK at 0334b56); `agent/grok/voice-live-face-handover` | Grok | open |
-| H-unified-ai-os | Unified AI OS | `agent/codex/unified-ai-os-handover-20261016`; content-os draft PR 7 | Codex | open |
-| H-asset-intelligence | Asset intelligence | `agent/codex/asset-intelligence-handover-20261016` (7 commits unpushed) | Codex | open; unpushed |
-| H-infisical-langfuse | Secrets and tracing | `agent/codex/infisical-langfuse-20261016`, `agent/codex/langfuse-native-20261016` | Codex | open |
-| H-n8n | n8n agent architecture | `agent/grok/n8n-agent-architecture-20261016`, `agent/grok/n8n-2437-pin` | Grok | open |
-| H-browser | Browser session audit and protection | `agent/codex/browser-session-audit-20261016`, `agent/codex/browser-session-protection-20261016` | Codex | open |
-| H-codemode | Code-mode seats | `agent/grok/codemode-handover-20261016` | Grok | open |
-| H-marketplace | Marketplace budget review | `agent/codex/marketplace-budget-review-20261016` | Codex | open |
-| H-estate-consolidation | Estate audit, waves, undo receipts | agentic-ops draft PR 273, hub draft PR 357 | Claude | open |
-| H-arcanea-backlog | Arcanea 57-PR backlog triage | local file in an untracked scratch folder | Claude | open; needs relocation |
-| H-queen | Queen cost, demand, native task, recovery | `NEXT-PROMPTS.md` sections `queen-*` (6), agentic-ops draft PR 234 | Claude, Codex | open-unverified |
-| H-sis-review | Review and merge of SIS PR 406 and 407 | `NEXT-PROMPTS.md` sections `sis-*` | any non-maker | open-unverified |
-| H-v0-npm | v0 design programme, npm ecosystem and activation | `NEXT-PROMPTS.md` marker `v0-design-programme-20261011` with 28 repeated sections | unknown | open-unverified, likely superseded |
-| H-overnight-lead | Reviews, gate blocks, queued Queen cards | `queen/inbox`, pull request comments | Claude | partly processed |
+| [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | prompt below | unknown | open-unverified; not reconciled since the split |
+| [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | prompt below | unknown | open-unverified; not reconciled since the split |
+| [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | prompt below | unknown | open-unverified; not reconciled since the split |
+| [estate-lifecycle-pulse-1-20261013](handovers/estate-lifecycle-pulse-1-20261013.md) | Run estate pulse #1 against the lifecycle registry | prompt below | unknown | open-unverified; not reconciled since the split |
+| [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | branch `agent/claude/restart-pack-20261017`; local pack in an untracked scratch folder | Claude | processing; split and lint landed on agent/claude/operating-model-20261017; pack relocation, worktree registry and start-up wiring pending |
+| [H-ai-team-products](handovers/H-ai-team-products.md) | Free / EUR 1 / EUR 7 AI team product ladder | `agent/codex/product-lifecycle-handover-20261017`; FrankX issue 279, draft PR 280 | Codex | open |
+| [H-arcanea-backlog](handovers/H-arcanea-backlog.md) | Arcanea 57-PR backlog triage | local file in an untracked scratch folder | Claude | open; needs relocation |
+| [H-asset-intelligence](handovers/H-asset-intelligence.md) | Asset intelligence | `agent/codex/asset-intelligence-handover-20261016` (7 commits unpushed) | Codex | open; unpushed |
+| [H-browser](handovers/H-browser.md) | Browser session audit and protection | `agent/codex/browser-session-audit-20261016`, `agent/codex/browser-session-protection-20261016` | Codex | open |
+| [H-codemode](handovers/H-codemode.md) | Code-mode seats | `agent/grok/codemode-handover-20261016` | Grok | open |
+| [H-estate-consolidation](handovers/H-estate-consolidation.md) | Estate audit, waves, undo receipts | agentic-ops draft PR 273, hub draft PR 357 | Claude | open |
+| [H-infisical-langfuse](handovers/H-infisical-langfuse.md) | Secrets and tracing | `agent/codex/infisical-langfuse-20261016`, `agent/codex/langfuse-native-20261016` | Codex | open |
+| [H-marketplace](handovers/H-marketplace.md) | Marketplace budget review | `agent/codex/marketplace-budget-review-20261016` | Codex | open |
+| [H-n8n](handovers/H-n8n.md) | n8n agent architecture | `agent/grok/n8n-agent-architecture-20261016`, `agent/grok/n8n-2437-pin` | Grok | open |
+| [H-overnight-lead](handovers/H-overnight-lead.md) | Reviews, gate blocks, queued Queen cards | `queen/inbox`, pull request comments | Claude | processing; partly processed |
+| [H-preservation](handovers/H-preservation.md) | Preservation-first restart closure, native checkpoints | branch `agent/codex/memory-architecture-20261016` | Codex | processing |
+| [H-product-studio](handovers/H-product-studio.md) | GenCreator Product Studio: master brief of the founder's prompts and vision, a visual start page with concept images, and a restart prompt | Codex session 01a146b1, files untracked in the `frankx-product-lifecycle-20261017` worktree under `docs/strategy/portfolio-productization/weekend-ai-team-20261017/` (START-HERE.html, GENCREATOR-PRODUCT-STUDIO-MASTER-BRIEF.md, RESTART-PROMPT.md, visuals/); images under `cms-dam/assets/gencreator/product-studio-20261017` | Codex | processing; uncommitted |
+| [H-queen](handovers/H-queen.md) | Queen cost, demand, native task, recovery | handovers queen-*-2026101x and claude-queen-second-identity-20261014; agentic-ops draft PR 234 | Claude, Codex | open-unverified |
+| [H-sis-review](handovers/H-sis-review.md) | Review and merge of SIS PR 406 and 407 | handovers sis-swarm-topology-and-demand-doors-20261014 and sis-executive-and-queen-lifecycle-20261013 | any non-maker | open-unverified |
+| [H-unified-ai-os](handovers/H-unified-ai-os.md) | Unified AI OS | `agent/codex/unified-ai-os-handover-20261016`; content-os draft PR 7 | Codex | open |
+| [H-v0-npm](handovers/H-v0-npm.md) | v0 design programme, npm ecosystem and activation | ops/archive/prompts/2026-10-17-next-prompts-legacy.md (marker v0-design-programme-20261011 plus the repeated npm sections) | unknown | open-unverified; likely superseded |
+| [H-voice-journey](handovers/H-voice-journey.md) | Voice studio journey | `agent/codex/estate-operating-map-20261016` (hub 3 and agent-config 2 commits unpushed); `agent/codex/voice-studio-journey-20261017` has no upstream | Codex | open; unpushed |
+| [H-voice-x](handovers/H-voice-x.md) | X-voice and live face | `agent/grok/x-voice-clap` (gate BLOCK at 0334b56); `agent/grok/voice-live-face-handover` | Grok | open |
+| [queen-agent-manager-recovery-20261013](handovers/queen-agent-manager-recovery-20261013.md) | Claude: finish Queen recovery and one protected native task | prompt below | unknown | open-unverified; not reconciled since the split |
+| [queen-budget-dispatch-20261014](handovers/queen-budget-dispatch-20261014.md) | Continue Queen from budgeted contained dispatch to protected live proof | prompt below | unknown | open-unverified; not reconciled since the split |
+| [queen-bus-live-gaps-20261014](handovers/queen-bus-live-gaps-20261014.md) | Resume full Queen goal from verified admission and protected runtime | prompt below | unknown | open-unverified; not reconciled since the split |
+| [queen-cost-demand-20261014](handovers/queen-cost-demand-20261014.md) | Continue the active multi-layer Queen, cloud and demand goal | prompt below | unknown | open-unverified; not reconciled since the split |
+| [queen-evolution-doctor-20261013](handovers/queen-evolution-doctor-20261013.md) | Continue Queen from verified diagnosis to one protected native result | prompt below | unknown | open-unverified; not reconciled since the split |
+| [queen-native-session-20261011](handovers/queen-native-session-20261011.md) | Queen: assemble one accepted recoverable native task | prompt below | unknown | open-unverified; not reconciled since the split |
+| [sis-executive-and-queen-lifecycle-20261013](handovers/sis-executive-and-queen-lifecycle-20261013.md) | Starlight: Independent review and sequential merge of PR #406 and PR #407 | prompt below | unknown | open-unverified; not reconciled since the split |
+| [sis-swarm-topology-and-demand-doors-20261014](handovers/sis-swarm-topology-and-demand-doors-20261014.md) | Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run | prompt below | unknown | open-unverified; not reconciled since the split |
+| [starlight-delivery-20261010](handovers/starlight-delivery-20261010.md) | Starlight: review and release Supabase auth, then prove live account activation | prompt below | unknown | open-unverified; not reconciled since the split |
+| [v0-design-programme-20261011](handovers/v0-design-programme-20261011.md) | Deliver one accepted agent/Cloud pilot and design slice | prompt below | unknown | open-unverified; not reconciled since the split |
+<!-- handover-index:end -->
 
-## Proposed rules (each gets a command or it is not a rule)
+The table above is generated from `ops/handovers/*.md`; edit those files, then run `node scripts/handover.mjs index`.
 
-1. A new handover adds one row here and one file `ops/handovers/<id>.md` with frontmatter (id, scope, repo, branch, owner,
-   status, supersedes, evidence). `NEXT-PROMPTS.md` links to it instead of embedding it.
-2. `tools/handover.mjs new|claim|process|supersede|index|lint` writes the frontmatter and regenerates this table. `lint` fails
-   on a prompt section over 60 lines, a repeated heading, a missing evidence link on `processed`, or an index row with no file.
-3. Every harness start-up reads `AGENT_START_OVERVIEW.md`, which points here. Test it by starting a fresh session in each harness
+## Rules (each gets a command or it is not a rule)
+
+1. Live since 17 October: a new handover is one file `ops/handovers/<id>.md` with frontmatter (id, what, where, owner,
+   status, note, supersedes, superseded_by, evidence, updated) and its pickup prompt under `## Prompt`. `NEXT-PROMPTS.md` is a
+   generated list that links to those files; nothing is embedded in it.
+2. Live since 17 October: `node scripts/handover.mjs new|claim|process|supersede|status|index|lint`. `lint` exits 1 on a stale
+   index or prompt list, a `NEXT-PROMPTS.md` section over 60 lines or file over 300 lines, a repeated heading, `processed`
+   without evidence, `superseded` without a target, or an id that does not match its file. CI runs it.
+3. Proposed: every harness start-up reads `AGENT_START_OVERVIEW.md`, which points here. Test it by starting a fresh session in each harness
    and checking that it names the lane-claim and handover rules before any write.
-4. Worktrees: register every root in the placement inventory, claim a lane for each live one, and treat an unclaimed dirty tree as
+4. Proposed. Worktrees: register every root in the placement inventory, claim a lane for each live one, and treat an unclaimed dirty tree as
    KEEP. Reap only trees that are clean, merged, bundled and unclaimed. No new top-level folders under the home directory.
-5. Checkpoints are snapshots (bundle plus a pinned ref), never commits on a shared branch.
+5. Proposed. Checkpoints are snapshots (bundle plus a pinned ref), never commits on a shared branch.
 
 ## Open decisions for the founder
 
