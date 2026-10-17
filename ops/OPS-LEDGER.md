@@ -2,23 +2,28 @@
 ## Image management and ChatGPT/mobile provenance
 
 Published continuation: [VIS draft PR #53](https://github.com/frankxai/visual-intelligence/pull/53),
-head `298c51fa624b734cafe0395e1c327097b8126519` on
+head `2d63c915f30a99af0c09a94d95ea60b545b19850` on
 `agent/codex/asset-cloud-handoff-20261016`, based on main `812c538`.
 Portable source/tests/capture kit and `docs/CLOUD_CONTINUATION.md` are on GitHub;
 private assets, index, account inventories, machine evidence and brand planning
-remain local. Existing merged library is preserved. GitHub lint/full node test CI
-passed at that exact head. Draft remains open for independent and rendered QA;
-no merge/deployment or cloud session startup. Earlier private source branch is intact.
+remain local. Existing merged library is preserved. Primary code review fixed
+read-only serving, index-output aliases, focus/motion, missing previews and saved
+feedback retry failures. At that exact head, hosted CI passes all 75 library/unit
+tests and 16 Chromium cases. Desktop/tablet/mobile touch emulation/reduced-motion
+screenshots were inspected; active transition reversal is verified. Draft remains
+open for independent review. Real private capture-to-placement, native host work
+and human gates remain open. No merge/deployment or cloud session startup.
+See the [17 October review](sessions/2026-10-17.md). Earlier private source branch is intact.
 
-Current: local VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` adds location/
+Earlier local slice: VIS `85e6dd58e274cf0d7281e3a5d1c2408ea876779d` adds location/
 processing evidence to the existing cockpit, read-only snapshot export and bounded
 file-presence checks. A private 40-asset snapshot was generated; 80 checked paths
 were present. Seven focused tests and lint pass, including generated browser-script
 compilation and index non-mutation. A pre-existing inline-script escaping bug was
 fixed. Operating guide and reusable creative-operator prompt are linked from AGENTS.
 Browser fleet admission is held and native Windows app enumeration fails with a
-missing helper pipe. Rendered QA, independent review and physical move/undo remain
-open. PR #39 is already merged upstream (2 October); earlier unmerged claims below
+missing helper pipe. Sample rendered QA is now recorded above; independent review
+and physical move/undo remain open. PR #39 is already merged upstream (2 October); earlier unmerged claims below
 are stale. Reconcile current main before extending the watched library. No deployment.
 
 Latest: local VIS `374ea624e3dc46e0c34b992e69111c56ddb88118` adds the visual

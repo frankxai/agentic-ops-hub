@@ -2,12 +2,17 @@
 ## Continue image management from the existing VIS implementation
 
 Current GitHub entry: draft PR #53, branch `agent/codex/asset-cloud-handoff-20261016`,
-head `298c51fa624b734cafe0395e1c327097b8126519`. This starts from main `812c538`
+head `2d63c915f30a99af0c09a94d95ea60b545b19850`. This starts from main `812c538`
 and preserves the merged library. Read `docs/CLOUD_CONTINUATION.md` and the reusable
 operator prompt. The public source/tests/portable instructions are pushed; the
 private index, images, account/machine evidence and detailed brand planning are not.
-GitHub lint and full node tests passed, run 38969139330. Continue independent review
-and synthetic/sample-based rendered QA in a cloud repository session. Use an online
+GitHub CI passes 75 library/unit tests (38991839870) and 16 Chromium cases
+(38991839865). Read `docs/DASHBOARD_REVIEW.md`: primary review and sample screenshot
+inspection are done, including focus, touch emulation, reduced motion and interrupted
+transitions. Independently review the exact current head, resolve concrete findings
+and repeat affected checks. Keep the PR draft until that gate is satisfied. Then
+prove one authorised source image plus context through dedup/retry and a reviewed
+placement using the existing library. Use an online
 authorised host only for local files/browser/desktop work. No cloud account setting
 or separate session was configured. Preserve the earlier local source branch below.
 
@@ -23,8 +28,9 @@ older notes below. Preserve the library/operator implementation. Obtain fresh
 machine/browser admission and restore native computer use through supported host
 workflow; its package loaded but app enumeration failed with native pipe os error 2.
 Do not modify security settings, start a custom helper or steal the owned ChatGPT tab.
-Inspect the interface at 375/768/1440, keyboard/focus, touch and reduced motion;
-complete independent exact-revision review before release. Then prove one authorised
+Sample interface review at 375/768/1440 and keyboard/focus, touch emulation and
+reduced motion are now complete on the GitHub head above. Complete independent
+exact-revision review before release. Then prove one authorised
 capture-to-placement with context, dedup/retry and a real receipt. Do not replace
 these pending outcomes with more documents or another dashboard.
 
