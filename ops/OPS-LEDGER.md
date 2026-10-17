@@ -1,3 +1,34 @@
+<!-- infisical-langfuse-20261016:start -->
+## Direct Langfuse tracing: four real runs passed, ingestion quota blocks delivery
+
+OpenCode, Claude Code, Hermes and Codex CLI each completed a real model run and
+exited 0. Infisical supplies direct Cloud EU exporter credentials at runtime;
+OpenClaw is excluded and no collector or service was added. The authenticated
+OTLP endpoint returns HTTP 403 with ingestion suspended due to the usage threshold.
+Project API authentication succeeds. Restore quota or explicitly select an
+existing funded project before repeating trace read-back.
+
+Source [draft PR 126](https://github.com/frankxai/starlight-agent-config/pull/126)
+is at `dde0d319541b73371a845a5422fa50ccfeb18684`. Eight focused tests pass and an
+exact-source independent Claude review found no blockers. Real Codex tool execution
+confirmed no OTLP credential in its environment; Hermes's native SDK authenticated
+with scoped keys that its subprocess sanitizer removed. Missing Infisical CLI and
+stale credentials are covered by the failure path. Private projection receipts
+preserve before/after hashes and backups.
+
+The repaired Impeccable Stop hook and completion notification exited 0 in real
+Codex runs; native discovery passes across 28 active hooks. Existing broad doctor
+findings remain separate. Security checks and explicit disables were preserved.
+See the [17 October session](sessions/2026-10-17.md),
+[issue 73](https://github.com/frankxai/starlight-agent-config/issues/73) and
+[issue 101](https://github.com/frankxai/starlight-agent-config/issues/101).
+
+Full cloud delivery, usage/cost mapping and Desktop/gateway adoption remain open.
+OpenCode still captures assistant-output attributes. Required CI jobs did not
+start because of the Actions budget; neither draft PR is merged. Private tenant,
+trace, credential and machine identifiers remain outside this public record.
+<!-- infisical-langfuse-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
