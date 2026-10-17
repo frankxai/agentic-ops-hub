@@ -1,3 +1,29 @@
+<!-- agent-hygiene-contract-20261017:start -->
+## Land the agent-hygiene pack and roll it to the four remaining carriers
+
+Current pickup for the agent-hygiene slice only; every other active prompt below
+stands. Read the 17 October session first.
+
+Three drafts are open: [CSL72](https://github.com/frankxai/claude-skills-library/pull/72)
+(exact `6a2d516361662f1ef1d18ccdb143f3bb49d826be`), [ACOS124](https://github.com/frankxai/agentic-creator-os/pull/124)
+(exact `4ae87a6543601b3965fa2c84de378b48d6e20bb1`) and
+[SIS450](https://github.com/frankxai/Starlight-Intelligence-System/pull/450) (exact
+`a94ef73c33d86f5c3081c838f6e1ec6a9d65bc9a`). Land CSL72 first; the installs point at it. Mark ready only
+when CI is green on the head; do not merge on local results alone.
+
+After CSL72 merges, install into FrankX, frankx.ai-vercel-website, arcanea and
+arcanea-ai-app, one PR each: `packs/agent-hygiene/install.sh <repo>`, one
+CLAUDE.md paragraph (copy the ACOS one), `agent-lint.py --changed --base origin/main`
+green on the branch, estate-guard scan at fail-on high exit 0. Expect FrankX and
+frankx.ai-vercel-website to already carry a web-excellence Stop hook; the merge
+keeps it. Expect arcanea's CRLF agent files to warn W10 only when touched.
+
+Then the debt, as separate PRs by the roster owner's call: backfill the 144 SIS card
+descriptions (one sentence from each card's Identity section; Sonnet), add
+frontmatter to the 37 arcanea agent files, and decide whether W5 becomes an error.
+Do not amend Band A from this slice; that goes through `/starlight-board`.
+<!-- agent-hygiene-contract-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
