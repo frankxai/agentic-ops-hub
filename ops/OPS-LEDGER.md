@@ -1,31 +1,32 @@
 <!-- infisical-langfuse-20261016:start -->
-## Direct Langfuse tracing: four CLI integrations applied, verification open
+## Direct Langfuse tracing: four real runs passed, ingestion quota blocks delivery
 
-Infisical credentials authenticated to Langfuse Cloud EU. Missing development
-URL settings and stale nonsecret Windows User URLs were corrected and read back.
-A direct synthetic OTLP span returned HTTP 200 and was retrieved through
-Observations v2. No local collector, model call or transcript export occurred.
+OpenCode, Claude Code, Hermes and Codex CLI each completed a real model run and
+exited 0. Infisical supplies direct Cloud EU exporter credentials at runtime;
+OpenClaw is excluded and no collector or service was added. The authenticated
+OTLP endpoint returns HTTP 403 with ingestion suspended due to the usage threshold.
+Project API authentication succeeds. Restore quota or explicitly select an
+existing funded project before repeating trace read-back.
 
-Automatic runtime tracing remains open; existing applications retain inherited
-environment settings until refreshed. Railway services remain unchanged. See the
-[16 October session](sessions/2026-10-16.md) and existing
-[configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
-Private credentials and tenant references are excluded from this projection.
+Source [draft PR 126](https://github.com/frankxai/starlight-agent-config/pull/126)
+is at `dde0d319541b73371a845a5422fa50ccfeb18684`. Eight focused tests pass and an
+exact-source independent Claude review found no blockers. Real Codex tool execution
+confirmed no OTLP credential in its environment; Hermes's native SDK authenticated
+with scoped keys that its subprocess sanitizer removed. Missing Infisical CLI and
+stale credentials are covered by the failure path. Private projection receipts
+preserve before/after hashes and backups.
 
-Frank excluded OpenClaw. OpenCode, Claude Code, Codex CLI and Hermes now have
-direct Cloud EU tracing configuration with runtime Infisical authentication.
-Source is [draft PR 126](https://github.com/frankxai/starlight-agent-config/pull/126),
-commit `009b5ba62a857f050a9c8bddc7348613ef2769fe`; four focused tests pass.
-Hermes's native plugin fixture produced two retrieved observations with content
-omitted. Real model runs, independent review and Desktop/gateway adoption remain
-open. OpenCode still captures assistant-output span attributes.
+The repaired Impeccable Stop hook and completion notification exited 0 in real
+Codex runs; native discovery passes across 28 active hooks. Existing broad doctor
+findings remain separate. Security checks and explicit disables were preserved.
+See the [17 October session](sessions/2026-10-17.md),
+[issue 73](https://github.com/frankxai/starlight-agent-config/issues/73) and
+[issue 101](https://github.com/frankxai/starlight-agent-config/issues/101).
 
-The Impeccable 4.6.0 PowerShell/Bash exit-1 error was reproduced and repaired with
-the existing Windows adapter. Both failed events now exit 0 and the native hook
-doctor passes. Security checks and explicit disables were preserved. Track
-[hook issue 101](https://github.com/frankxai/starlight-agent-config/issues/101).
-PR CI jobs did not start due the Actions budget. The bounded Claude review timed
-out; no passing review or complete runtime coverage is claimed.
+Full cloud delivery, usage/cost mapping and Desktop/gateway adoption remain open.
+OpenCode still captures assistant-output attributes. Required CI jobs did not
+start because of the Actions budget; neither draft PR is merged. Private tenant,
+trace, credential and machine identifiers remain outside this public record.
 <!-- infisical-langfuse-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

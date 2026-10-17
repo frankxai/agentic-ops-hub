@@ -1,28 +1,35 @@
 <!-- infisical-langfuse-20261016:start -->
-## Finish four-harness Langfuse verification
+## Restore Langfuse ingestion, then verify four real traces
 
-Read the [16 October session](sessions/2026-10-16.md) and existing
-[configuration issue](https://github.com/frankxai/starlight-agent-config/issues/73#issuecomment-6223413077).
-Frank excluded OpenClaw. Four CLI integrations are applied: OpenCode, Claude
-Code, Hermes and Codex. Keep direct Cloud EU export, Infisical runtime credentials
-and no local collector. Source is [draft PR 126](https://github.com/frankxai/starlight-agent-config/pull/126)
-at `009b5ba62a857f050a9c8bddc7348613ef2769fe`; preserve private projection receipts.
+Read the [17 October session](sessions/2026-10-17.md) and existing
+[issue 73](https://github.com/frankxai/starlight-agent-config/issues/73).
+OpenCode, Claude Code, Hermes and Codex CLI all completed real model runs with
+exit 0. OpenClaw is excluded. Keep direct Cloud EU export, Infisical runtime
+credentials and no local collector. Source [draft PR 126](https://github.com/frankxai/starlight-agent-config/pull/126)
+is `dde0d319541b73371a845a5422fa50ccfeb18684`; eight tests pass and an exact-source
+independent Claude review found no blockers. Preserve private projection receipts.
 
-Four focused tests and header-helper authentication pass. Hermes's bundled plugin
-fixture exported two retrieved observations with content omitted. Obtain real
-model-run trace read-back for each harness under fresh machine admission. Check
-usage/cost attribution, hierarchy, failure/shutdown and actual startup adoption.
-OpenCode's context flags do not hide normal assistant-output attributes; its
-metrics-only retry counts are absent from Langfuse. Running Desktop/gateway
-processes are not covered merely by changing CLI launchers. Preserve other sessions.
+The live authenticated endpoint reports HTTP 403, ingestion suspended due to the
+usage threshold. Project API authentication succeeds. Frank's quota restoration
+or selection of an existing funded project is pending. Run the runtime's empty
+OTLP `check` before spending tokens on more model tests. Do not create projects
+to evade the limit or change billing without authorization. When ready, repeat
+bounded real runs and retrieve exact observations through API v2. Check attribution,
+usage/cost, hierarchy and shutdown; successful model calls do not prove delivery.
 
-The independent Claude review timed out after 100 seconds. Obtain a real
-exact-head provider review before release. PR 126 Actions jobs did not start due
-account budget, which remains a merge blocker. Preserve the repaired Impeccable
-4.6.0 Windows adapter and trusted enabled hook hashes: both failing events now
-exit 0 and the native doctor passes. Verify fresh Desktop adoption separately in
-[issue 101](https://github.com/frankxai/starlight-agent-config/issues/101).
-Keep private tenant IDs, trace IDs, credentials and machine receipts out of this repo.
+Preserve credential isolation: Codex's keyed shell-policy blank keeps the OTLP
+header out of shell tools, and Hermes uses only scoped keys stripped by its native
+subprocess sanitizer. Failure removes stale credentials and continues without
+tracing. OpenCode's normal assistant-output attributes are still captured, and
+its metrics-only retry counts are absent from Langfuse. Already-running Desktop
+and Hermes GUI/gateway coverage requires separate launch integration and verification.
+
+The repaired Impeccable and completion Stop hooks exited 0 in real Codex runs;
+native discovery passes across 28 active hooks. Preserve security guards, explicit
+disables and other sessions. See [issue 101](https://github.com/frankxai/starlight-agent-config/issues/101).
+Broad doctor findings remain separate. Required Actions jobs did not start due to
+account budget; CI remains a merge blocker. Keep private tenant/trace identifiers,
+credentials and machine receipts out of this repo. The full objective stays open.
 <!-- infisical-langfuse-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
