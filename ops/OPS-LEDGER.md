@@ -31,6 +31,11 @@ services, with separate permissions. GenCreator 235/119 own the existing program
 a READY preview, not release acceptance. Preserve its lane; use existing product
 contracts and private estate adapters. Heavy work held at 2214 MB free RAM.
 
+Correction: founder meant Cloudflare Void, the Vite full-stack SDK/CLI/platform
+announced 15 October, not the editor/v0. Evaluate this actual shared-app candidate.
+Direct Cloudflare deploy does not require a team Platform; core Platform excludes
+the user dashboard and managed GitHub builds. No install or migration performed.
+
 Hosted security checks executed zero steps because GitHub's Actions budget
 prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
 Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).

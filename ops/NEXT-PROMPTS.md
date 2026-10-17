@@ -42,6 +42,13 @@ Share product services, keep private estate adapters/credentials outside custome
 authority. Existing GenCreator-Studio /hv is a static-batch reuse source, not the
 managed backend. Re-admit heavy work; latest RAM was 2214 MB. No new app installed.
 
+Correction from Frank: “Vite and Cloudflare Void” means void.cloud SDK/CLI/platform,
+not Void editor or v0. Read official current guides before implementation. Evaluate
+Vite + Void against the existing product on the same complete mission; preserve
+domain contracts and data. Prefer a direct-account app pilot before self-hosting
+a team deployment platform. Core Void Platform does not include its user dashboard
+or managed GitHub builds. Do not mistake agent setup skills for hosted execution.
+
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/
 commerce/delivery lifecycle. Inspect the actual material in
