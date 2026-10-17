@@ -8,6 +8,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 |---|---|---|---|
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | open |
+| [H-org-migration](handovers/H-org-migration.md) | GitHub org migration state, measured 17 October; 63 org copies made today, no transfers, Registry still says frankxai | unassigned | open |
 | [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | Claude | processing |
 | [H-turn0-budget](handovers/H-turn0-budget.md) | Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design | unassigned | open |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified |
