@@ -33,6 +33,13 @@ then process the backlog through it.
 7. Then hand the lanes to the swarm conductor: foundation F1 to F9, migration M1 and M2, and the separate digital-products
    launch session, all from the local pack until relocated.
 
+8. Ground-up pass (add-on, one bounded workload at a time, propose before applying): Turn-0 instructions total about 35,000
+   tokens against an 8,000 target, with 400+ skills, 80 agents, 150+ commands and duplicated doctrine, so design one generated
+   core per harness and measure before and after; 114 claude/node processes mean per-harness MCP duplication despite the shared
+   tool plane; the system drive is about 89 percent used; the backup-continuity heartbeat is a month old and needs a restore
+   test; 75 of 94 heartbeats are over 7 days old and 12 of 57 scheduled tasks are enabled; the home directory holds a stray
+   node_modules, twin clones and about 100 hidden agent-tool folders; seven second-brain generations need one authority.
+
 Stop at anything needing spend, a send, a publish, a deletion, a credential, a repository visibility change or a cron. A different
 harness reviews every change. Finish with a result line and update this ledger and the index.
 <!-- restart-pack-20261017:end -->
