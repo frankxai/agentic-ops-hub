@@ -9,7 +9,12 @@ Read the [17 October session](sessions/2026-10-17.md), the local restart pack un
 `~/.reality/proposals/reality.md.proposed-2026-10-17`, `OBJECTIVES.md` and `TRUTH.md` sections 5 and 6. Run
 `pp preflight --workload review-lite` first and honor HOLD: one bounded workload, no new parallel agents.
 
-Order: (1) re-run the git sweep and diff it against `git-sweep-2026-10-17.json`; (2) protect first, publish second: take
+One coordinator: the Codex preservation lane (`agent/codex/memory-architecture-20261016`, 17 October session) already holds
+verified native-history and worktree checkpoints and the PP drain directive. Read its receipts first, reuse them, start no
+second closure, and close no thread, browser or MCP child. The full live-lane list with each lane's own pickup is in the local
+pack file `UNIFIED-RESTART.md`; swarm, migration, launch-day and resume prompts are in `SWARM-AND-LAUNCH-PROMPTS.md`.
+
+Order: (1) re-run the git sweep, ignoring line-ending-only changes, and diff it against `git-sweep-2026-10-17.json`; (2) protect first, publish second: take
 non-invasive snapshots (git bundle of unpushed refs plus a `git stash create` commit pinned at `refs/checkpoints/20261017`,
 never a commit on a shared branch), then push branches, not PRs, where the owner agrees, starting with the 159-commit
 editorial-renewal branch, and only snapshot the live claude-code-config checkout; (3) `git init` and commit locally the
