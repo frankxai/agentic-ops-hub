@@ -1,3 +1,26 @@
+<!-- restart-pack-20261017:start -->
+## Restart lead: save unprotected work, re-measure, land, then build the intent layer
+
+Current pickup after the 17 October restart. It supersedes older pickups only for the estate-triage slice; every other
+front's prompt below stays active.
+
+Read the [17 October session](sessions/2026-10-17.md), the local restart pack under `starlight/scratch/restart-2026-10-17/`
+(RESTART.md, PROMPTS.md, at-risk manifest), `~/.reality/intents/2026-10-17-seed.md`, the proposed
+`~/.reality/proposals/reality.md.proposed-2026-10-17`, `OBJECTIVES.md` and `TRUTH.md` sections 5 and 6. Run
+`pp preflight --workload review-lite` first and honor HOLD: one bounded workload, no new parallel agents.
+
+Order: (1) re-run the git sweep and diff it against `git-sweep-2026-10-17.json`; (2) check lane claims and last activity,
+then push the highest-risk unpushed worktrees as drafts, starting with the 159-commit editorial-renewal branch, and
+snapshot rather than push the live claude-code-config checkout; (3) `git init` and commit locally the non-git folders,
+listing a private repository name for each and creating none without the founder's yes; (4) run `pr-closer` report-only
+and land at most 10 PRs, each signed by a different harness through `pr-gate`, in a repository that is not over budget;
+(5) report what only the founder can unblock (production checkout slot, demand-door credentials, `TRUTH.md` section 6
+rulings). Staged follow-ups in PROMPTS.md items 1 to 4: ingest the other harnesses' transcripts into the intent ledger, land
+the queue, build `reality-md intents` inside the existing Reality Architect repository, and define three small agents
+routed by the existing Queen. One chair: add no orchestrator and no daemon. `reality.md` is the founder's; propose
+edits, never apply them. Finish with a result line and update this ledger.
+<!-- restart-pack-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 

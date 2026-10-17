@@ -1,3 +1,15 @@
+<!-- restart-pack-20261017:start -->
+## Estate triage: queue growth, unprotected local work, no intent store
+
+Read-only triage on 17 October 2026 (details in [the session](sessions/2026-10-17.md)). Open PRs grew from 432 to 803 in four
+weeks against a budget of 10 per repository. A sweep of 607 repositories and worktrees found 226 with unsaved or unpushed
+work and 79 folders with no version control; no lane claim covered any of them. `~/reality.md` was missing, and no durable
+store maps the founder's stated intents to repositories and PRs. Peak Performance held parallel work (3.3 GB free), so the
+pass ran as sequential reads. Prepared, not applied: a restart runbook, a redacted prompt corpus, an at-risk manifest,
+a seeded intent ledger and a proposed `reality.md` that passes the validator at level 4. Nothing was pushed, closed, merged
+or deleted elsewhere. The hub was over its PR budget, so this change is a pushed branch without a PR.
+<!-- restart-pack-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
