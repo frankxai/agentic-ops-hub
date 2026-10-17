@@ -2,9 +2,9 @@
 id: H-turn0-budget
 what: Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design
 where: ~/.claude, ~/.codex, ~/.gemini plugins, Hermes skill dirs, starlight/AGENTS.md
-owner: unassigned
-status: open
-note: measured 2026-10-17 from disk, tokens = bytes/4 (likely 10 to 25 percent low); harness built-in prompts excluded
+owner: Antigravity
+status: processing
+note: Generated Turn-0 Doctrine & Catalog compiler (tools/compile-turn0-core.mjs, 2,057 tokens <= 8KB + 8KB) + GEMINI.md (8,214 B) shipped on starlight-estate PR #54 (e6f4727); Codex project_doc_max_bytes = 98304 set in ~/.codex/config.toml
 updated: 2026-10-17
 ---
 

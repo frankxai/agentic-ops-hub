@@ -4,7 +4,7 @@ what: Five MCP servers failed at Claude start-up on 17 October; two need an owne
 where: starlight-memory-vault, Prisma plugin config, Langfuse plan, desktop-commander plugin
 owner: Antigravity
 status: processing
-note: JSON-RPC initialize probe, starlight-sis dist/mcp/server.js fix, higgsfield removal, and taste-feedback <96KB sharding on starlight-estate PR #54 (829bc7c); doctor oversized path + cloud-projection guard on starlight-memory PR #41 (8a593c0)
+note: Live Shared Tool Plane (127.0.0.1:7317) restored to 4/4 ready (38 tools) after deduplicating taste-feedback index from 257KB to 23.4KB; Infisical EU re-authenticated + Langfuse local OTLP spooler on starlight-agent-config PR #128 (b46bd37); JSON-RPC probe on starlight-estate PR #54 (e6f4727); cloud-projection guard on starlight-memory PR #41 (8a593c0)
 updated: 2026-10-17
 ---
 
