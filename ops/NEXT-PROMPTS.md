@@ -1,3 +1,71 @@
+<!-- voice-live-face-20261016:start -->
+## Stop the voice ear overnight, then make the face tell the truth
+
+Current pickup for the voice operator. Leave every Queen block below this marker untouched.
+
+Frank left the clap listener armed overnight. That was the wrong default. At 13:21 +02 on 17 October 2026 the listener process was already gone, `/api/live` was `phase=stopped` with `updated=10/17/2026 11:48:38`, and `memory/voice/spend.jsonl` did not exist, so no billed socket minutes were written. The tray and `dashboard/server.py` were still serving `http://127.0.0.1:8765/live` (healthz 200). Confirm that again before you touch a process. If phase is `open` or `speaking`, stop and leave the checkout alone.
+
+Read `ops/sessions/2026-10-17.md` and `ops/sessions/2026-10-16.md`.
+
+### Lane
+
+Write only `C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`, branch `agent/grok/x-voice-clap`, tip `0334b56` unless a later commit on that branch is yours. Origin `https://github.com/frankxai/starlight-voice.git`. Draft PR https://github.com/frankxai/starlight-voice/pull/5 stays based on `agent/hermes/perplexity-grade-voice-experience`. Do not retarget `main`. Issue https://github.com/frankxai/starlight-voice/issues/2 stays open. It still owes the seven-tool MCP allowlist, receipts, and the 12-case corpus.
+
+Do not write `C:\Users\frank\starlight\repos\starlight-voice`, the Codex worktree `starlight-voice-architecture-20261010`, the hub primary checkout, or `C:\Users\frank\universe`. Hub notes for this slice stay in this worktree on `agent/grok/voice-live-face-handover`. Do not stage `docs/DISPATCH-WRITE-LANE.md`.
+
+Run `starlight-ops claim --adopt` on the voice checkout after any `AGENTS.md` edit, with the exact file list, before commit. Commit on the owned branch, push, and update draft PR 5. Do not merge.
+
+### Already true
+
+Double clap opens and closes. One clap, and speech, stay shut. Ara is the voice. Reasoning default is `high`. `STARLIGHT_XVOICE_REASONING=none` is the fast override. Frank heard "claude local" when effort was none, so leave the default at high.
+
+Token order in `sidecar/src/starlight_voice/x_voice.py`: an `xai-` shaped `XAI_API_KEY` in the environment, then Infisical EU `XAI_API_KEY` from project `5578966b-0c74-4253-9a3c-bace21d97b24` environment `dev` when `STARLIGHT_XVOICE_INFISICAL` is not `0`, then an unexpired grok CLI JWT. OpenRouter values in that project are ignored. Never print the secret, never write it to `live.json`, logs, or git, and never send it to the browser. Do not create a new console key. Do not refresh the grok OIDC token.
+
+Server tools (`web_search`) turn on only for source `api-key` or `infisical`. `x_search` stays off unless `STARLIGHT_XVOICE_X_SEARCH=1`. Caps in `spend.py`: 15 minutes per UTC day (clamp 1 to 60), 10 minutes per call, 45 seconds of quiet, 3 finished `web_search` calls, 1 `x_search` if enabled. `$0.08/min` is the October list estimate for grok-voice-3.0 while the socket is open. It is an estimate, and API billing is separate from SuperGrok plan minutes. Search is extra (`web_search` about $5/1k calls, `x_search` about $5/1k posts).
+
+`meta_harness` calls `node C:\Users\frank\starlight\tools\dispatch-route.mjs` and `started` is always false. The spoken line names the seat and says the work was not started. `estate_lookup` reads the session store plus command-center `state.json` and `OPS-DESK.md`. One Memory Gateway recall runs at socket open and may return none. Resume appends `conversation_id` when the id matches `^[A-Za-z0-9_.:-]{6,128}$`. A saved id existed (`22d2ef04-6f58-419d-ba2f-05df882bb1fc`). Do not claim resume was proved in a live call unless you watch the server accept it. If the live API rejects `resumption`, remove that field and say so.
+
+`/live` is a watcher. It has no `getUserMedia`. The three orbs are original WebGL in `dashboard/live.html` (Eve, Ara, Leo). xAI did not publish the homepage shader. The page must not attach to Chrome, Edge, Brave, or Comet. The tray opens `/live`. Quitting the tray does not stop listen.
+
+Tests: both autouse fixtures in `sidecar/tests/conftest.py` stay (`STARLIGHT_RUNS_FILE` and `STARLIGHT_XVOICE_INFISICAL=0`). A test may set Infisical to `1` only around `key_from_infisical` with a fake runner. Do not call `resolve_token()` in a test while Infisical is enabled. Pytest from the worktree uses `sidecar\.venv\Scripts\python.exe` with `PYTHONPATH=sidecar/src`.
+
+### What Frank asked for
+
+He wants one chair. Clap, speak, Ara, high reasoning, and a visible operator that knows which estate seat would own the job. The face shows the voice, the last line, the cap, the key source, whether this call resumed, and the seat name with the work held. Memory is the gateway recall, the local session, and the desk files. Public web search uses the xAI key. This chair does not spawn a CLI, claim a worktree, open a second Queen, merge, send, or spend.
+
+He asked for the orbs on https://x.ai/voice, characters beside the operator, and a founder-style switch that shows which team a spoken job would light. He asked whether this should sit in Observatory, Vite, Next, GSAP, the command-center Aurora page, or a React dashboard of every harness. The decision already made: grow `dashboard/live.html` on the stdlib server. Do not add Vite. Do not move the face into Observatory. Do not put GSAP or a second motion system on the shader. Aurora and `/voice/` have their own microphones. Leave them.
+
+He asked for a buyer product: one window after a person sets their own xAI key, then skills and MCP into harnesses they already have. That product is the local Tauri shell already named in the repo. Estate mode on this machine keeps Queen and `started` false. A buyer build has no Queen and starts a harness only after a spoken or clicked yes. No checkout until gesture, session, interrupt, receipt, failure, privacy, access, uninstall, and the issue 2 corpus are green. The page stays a waitlist until then. Do not scaffold that installer in this session.
+
+Spoken "write" does not act. The content seat command is empty, implement and codex-cloud have unfilled placeholders, and cheap-async-pr points at remote Jules. The voice forces `started` false. The untracked note `docs/DISPATCH-WRITE-LANE.md` says why. Leave it untracked. On the face, a held job with an empty command should read as held, with the seat name.
+
+### Study these, and leave their code where it is
+
+- https://x.ai/voice for three voices in one field. Our shader stays original. A pixel compare is still undone. Do it only when `browser-fleet route` is allowed and free RAM clears the 8.5 GB shared-browse gate. A raw fetch of that page has returned Cloudflare 403.
+- https://github.com/livekit/agents/tree/main/examples/voice_agents/grok for the official Grok Voice Agent example and how it discloses search. Leave LiveKit transport and LiveKit Cloud billing. Our socket stays `wss://api.x.ai/v1/realtime?model=grok-voice-latest`.
+- https://livekit.io/ui for the session states connecting, listening, thinking, speaking, and an explicit end. Map those words onto our phases `armed`, `open`, `speaking`, `stopped`. Leave the React visualizer package. Our orbs already move with phase.
+- https://docs.livekit.io/agents/models/llm/xai/ is a second host for Grok. Do not migrate this ear onto it.
+- The xAI cookbook React realtime client owns a microphone. It stays out.
+- The OpenAI realtime console pattern mints an ephemeral client secret so a browser can open the socket. Use that only in a later slice if audio moves to the page. This slice keeps the key and the socket in Python. `POST https://api.x.ai/v1/realtime/client_secrets` needs the console key. The grok CLI JWT is not that key.
+- Pipecat is already skipped by the clap path. WhisperFlow is dictation, not the estate harness. Do not replace the ear with either.
+
+### Build this session
+
+1. Armed lifetime. `listen` exits by itself. Quiet hours default `23:00-08:00` in `Europe/Berlin`, overridable with `STARLIGHT_XVOICE_QUIET_HOURS`. The machine clock was `+02`. Also exit after 4 hours armed with no open socket, overridable with `STARLIGHT_XVOICE_MAX_ARMED_HOURS` (clamp 1 to 12). If the socket is open, keep the existing 10 minute and 45 second closes. Finish that turn. After the close, do not arm again during quiet hours. Publish `phase=stopped` and a short reason (`quiet hours` or `armed cap`) into `live.json`. The page shows that reason. The tray does not restart listen. A night of armed, with the socket never opened, still writes no `spend.jsonl` row. Tests use a fake clock. Do not leave a live listener running when you finish. Say which processes you left.
+
+2. The page tells the truth of the call. Show phase, the bright voice, cap label, key source (`infisical`, `api-key`, or `grok-cli`), last transcript line, resume or fresh, search count out of 3, and the last held seat. Add a field to `live.json` before the page reads it. Do not invent a tool light for a name the listener did not publish. Keep the three orbs, the 1.25 dpr cap, `prefers-reduced-motion` frozen after one frame, and no `getUserMedia`. Sentence case. Focus stays visible on the console link. Look at 375, 768, and 1440 only when the browse gate allows. If it does not, say so and ship the data on the page anyway. One Impeccable finish only after that look, and only on this page.
+
+3. Keep the spoken line that names the seat and says the work was not started. Show that same sentence on the page.
+
+### Leave these alone this session
+
+Do not launch an Opus or Fable swarm unless `pp preflight --workload swarm` prints allow or bounded. Do not open a team Chrome under 12.5 GB free or the shared browse Chromium under 8.5 GB. Do not kill human browsers or their cookies. Do not remote-debug a real User Data directory. Do not tunnel `127.0.0.1:7317`. Do not call Higgsfield. Do not print secrets, grok auth tokens, emails, or team ids. Do not add a checkout, a waitlist form, or a new repo. Do not start Observatory on port 4321.
+
+### Done when
+
+A test proves the fake clock stops an armed listen at quiet hours and at 4 hours, with zero spend rows. `/api/live` shows the new reason when you run that path. The page renders the cap, the key source, and the held seat from those fields. `ruff` is clean on the files you touch. Voice tests pass. You restarted nothing while phase was open or speaking. PR 5 is updated and unmerged. Issue 2 has a comment and stays open. The hub session for the day names the exact commit.
+<!-- voice-live-face-20261016:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 
