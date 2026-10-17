@@ -4,7 +4,7 @@ what: Five MCP servers failed at Claude start-up on 17 October; two need an owne
 where: starlight-memory-vault, Prisma plugin config, Langfuse plan, desktop-commander plugin
 owner: unassigned
 status: open
-note: tool plane recovered by its watchdog; desktop-commander connects warm
+note: health check now does a real initialize (estate-root branch agent/claude/mcp-health-handshake, 8dd9ce2, not pushed: estate-root write target is the founder's call)
 updated: 2026-10-17
 ---
 
