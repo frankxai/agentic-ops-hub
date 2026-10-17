@@ -3,9 +3,10 @@ id: queen-native-session-20261011
 what: Queen: assemble one accepted recoverable native task
 where: prompt below
 owner: unknown
-status: open-unverified
+status: superseded
 note: not reconciled since the split
-updated: 2026-10-11
+superseded_by: queen-bus-live-gaps-20261014
+updated: 2026-10-17
 ---
 
 ## Prompt

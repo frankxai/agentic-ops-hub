@@ -11,16 +11,10 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 | [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | unassigned | open |
 | [H-turn0-budget](handovers/H-turn0-budget.md) | Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design | unassigned | open |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified |
-| [queen-budget-dispatch-20261014](handovers/queen-budget-dispatch-20261014.md) | Continue Queen from budgeted contained dispatch to protected live proof | unknown | open-unverified |
 | [queen-bus-live-gaps-20261014](handovers/queen-bus-live-gaps-20261014.md) | Resume full Queen goal from verified admission and protected runtime | unknown | open-unverified |
-| [queen-cost-demand-20261014](handovers/queen-cost-demand-20261014.md) | Continue the active multi-layer Queen, cloud and demand goal | unknown | open-unverified |
 | [sis-swarm-topology-and-demand-doors-20261014](handovers/sis-swarm-topology-and-demand-doors-20261014.md) | Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run | unknown | open-unverified |
 | [estate-lifecycle-pulse-1-20261013](handovers/estate-lifecycle-pulse-1-20261013.md) | Run estate pulse #1 against the lifecycle registry | unknown | open-unverified |
-| [queen-agent-manager-recovery-20261013](handovers/queen-agent-manager-recovery-20261013.md) | Claude: finish Queen recovery and one protected native task | unknown | open-unverified |
-| [queen-evolution-doctor-20261013](handovers/queen-evolution-doctor-20261013.md) | Continue Queen from verified diagnosis to one protected native result | unknown | open-unverified |
-| [sis-executive-and-queen-lifecycle-20261013](handovers/sis-executive-and-queen-lifecycle-20261013.md) | Starlight: Independent review and sequential merge of PR #406 and PR #407 | unknown | open-unverified |
 | [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open-unverified |
 | [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | unknown | open-unverified |
-| [queen-native-session-20261011](handovers/queen-native-session-20261011.md) | Queen: assemble one accepted recoverable native task | unknown | open-unverified |
 | [v0-design-programme-20261011](handovers/v0-design-programme-20261011.md) | Deliver one accepted agent/Cloud pilot and design slice | unknown | open-unverified |
 | [starlight-delivery-20261010](handovers/starlight-delivery-20261010.md) | Starlight: review and release Supabase auth, then prove live account activation | unknown | open-unverified |

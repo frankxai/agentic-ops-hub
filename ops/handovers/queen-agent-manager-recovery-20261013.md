@@ -3,9 +3,10 @@ id: queen-agent-manager-recovery-20261013
 what: Claude: finish Queen recovery and one protected native task
 where: prompt below
 owner: unknown
-status: open-unverified
+status: superseded
 note: not reconciled since the split
-updated: 2026-10-13
+superseded_by: queen-bus-live-gaps-20261014
+updated: 2026-10-17
 ---
 
 ## Prompt

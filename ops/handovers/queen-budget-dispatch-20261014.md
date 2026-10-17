@@ -3,9 +3,10 @@ id: queen-budget-dispatch-20261014
 what: Continue Queen from budgeted contained dispatch to protected live proof
 where: prompt below
 owner: unknown
-status: open-unverified
+status: superseded
 note: not reconciled since the split
-updated: 2026-10-14
+superseded_by: queen-bus-live-gaps-20261014
+updated: 2026-10-17
 ---
 
 ## Prompt
