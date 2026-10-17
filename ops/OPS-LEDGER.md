@@ -36,6 +36,12 @@ announced 15 October, not the editor/v0. Evaluate this actual shared-app candida
 Direct Cloudflare deploy does not require a team Platform; core Platform excludes
 the user dashboard and managed GitHub builds. No install or migration performed.
 
+Brand/platform proposal: GenCreator for authored work and digital products;
+AgenticIncome for offers/economics and implementation services; FrankX for trust.
+No rebrand accepted. AgenticIncome source mixes education-first and service-first
+wording. Evaluate Cloudflare for the new core while preserving current Next/Vercel
+surfaces; maintain scoped connectors and PR-based agent updates. No global move.
+
 Hosted security checks executed zero steps because GitHub's Actions budget
 prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
 Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).

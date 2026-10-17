@@ -49,6 +49,14 @@ domain contracts and data. Prefer a direct-account app pilot before self-hosting
 a team deployment platform. Core Void Platform does not include its user dashboard
 or managed GitHub builds. Do not mistake agent setup skills for hosted execution.
 
+Latest brand/architecture recommendations are proposals: keep GenCreator creation
+and productization coherent; AgenticIncome supplies commercial/agent-service jobs.
+Reconcile its education-first/service-first docs before changing positioning.
+Prefer a scoped Cloudflare core evaluation, retain existing Next/Vercel surfaces,
+and compare the same real creation-to-delivery outcome. Connect brand-specific
+views through product/release/evidence IDs with scoped account/connector authority.
+Engineering agents use owned PRs; customer jobs use tenant/budget/recovery controls.
+
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/
 commerce/delivery lifecycle. Inspect the actual material in
