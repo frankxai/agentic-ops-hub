@@ -27,6 +27,12 @@ fourth slot. The registry records four homes, seven proposed lanes and ten
 customer stages; it does not dispatch workers. GenCreator owns the customer
 workspace, SIS the graph source. Connect one complete mission and delivery path.
 
+Visual recommendation: native GitHub Projects, Figma/FigJam and Vercel preview
+feedback now; Canva/Drive asset links join by release. Current Projects reads
+lack read:project scope. Later extend existing Studio with Today/Product/Work/
+Review/Delivery views over verified evidence; do not add another task authority.
+Emil guidance is selected/read and applied to the proposal, not rendered QA.
+
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/
 commerce/delivery lifecycle. Inspect the actual material in

@@ -19,6 +19,12 @@ lanes and ten customer stages. Internal Studio is tracked on a foreign FrankX
 branch and absent from main; its graph is dated 30 August and WIP remains 3/3.
 Customer workspace is GenCreator; work graph is SIS. Integration remains open.
 
+Status refresh: PR 280 is still draft/unmerged; its current required jobs ran zero
+steps due to Actions budget. Existing site deployment records are READY, which
+does not verify this funnel. Recommend native GitHub Projects + Figma + Vercel
+preview feedback first; later project evidence into existing Studio views.
+Projects inventory lacks read:project scope; no auth or UI changes were made.
+
 Hosted security checks executed zero steps because GitHub's Actions budget
 prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
 Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).
