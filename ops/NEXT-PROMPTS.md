@@ -1,31 +1,40 @@
 <!-- restart-pack-20261017:start -->
-## Restart lead: save unprotected work, re-measure, land, then build the intent layer
+## Operating-model consolidator: one index, one coordinator, clean homes, then process the backlog
 
-Current pickup after the 17 October restart. It supersedes older pickups only for the estate-triage slice; every other
-front's prompt below stays active.
+Current pickup for the estate-triage slice after the 17 October restart. It supersedes the earlier version of this section only;
+every other front's prompt below stays active. Read `ops/HANDOVER-INDEX.md` first.
 
-Read the [17 October session](sessions/2026-10-17.md), the local restart pack under `starlight/scratch/restart-2026-10-17/`
-(RESTART.md, PROMPTS.md, at-risk manifest), `~/.reality/intents/2026-10-17-seed.md`, the proposed
-`~/.reality/proposals/reality.md.proposed-2026-10-17`, `OBJECTIVES.md` and `TRUTH.md` sections 5 and 6. Run
-`pp preflight --workload review-lite` first and honor HOLD: one bounded workload, no new parallel agents.
+Read: the [17 October session](sessions/2026-10-17.md), the preservation coordinator's latest receipts (branch
+`agent/codex/memory-architecture-20261016`), `starlight/AGENTS.md` sections 0, 1, 5e and 13, `ops/NEW-CHAT-GIT-CONTRACT.md`,
+`ops/MULTI-HARNESS-COLLABORATION-PROTOCOL.md`, `~/.starlight/workspace-bootstrap/AGENT_START_OVERVIEW.md` with its placement
+inventory, and the Registry. Run `pp preflight` first and honor HOLD. Keep one coordinator for preservation and closure; close
+no thread, browser or MCP child. Add no orchestrator, queue or daemon. Public-safe text only in this repository.
 
-One coordinator: the Codex preservation lane (`agent/codex/memory-architecture-20261016`, 17 October session) already holds
-verified native-history and worktree checkpoints and the PP drain directive. Read its receipts first, reuse them, start no
-second closure, and close no thread, browser or MCP child. The full live-lane list with each lane's own pickup is in the local
-pack file `UNIFIED-RESTART.md`; swarm, migration, launch-day and resume prompts are in `SWARM-AND-LAUNCH-PROMPTS.md`.
+Goal: one coordinated operating model that every harness follows for start-up, handover, lane claim, checkpoint and cleanup,
+then process the backlog through it.
 
-Order: (1) re-run the git sweep, ignoring line-ending-only changes, and diff it against `git-sweep-2026-10-17.json`; (2) protect first, publish second: take
-non-invasive snapshots (git bundle of unpushed refs plus a `git stash create` commit pinned at `refs/checkpoints/20261017`,
-never a commit on a shared branch), then push branches, not PRs, where the owner agrees, starting with the 159-commit
-editorial-renewal branch, and only snapshot the live claude-code-config checkout; (3) `git init` and commit locally the
-non-git folders, listing a private repository name for each and creating none without the founder's yes; (4) run
-`pr-closer` report-only and land at most 10 PRs, each signed by a different harness through `pr-gate`, in a repository that
-is not over budget; (5) report what only the founder can unblock (production checkout slot, demand-door credentials,
-`TRUTH.md` section 6 rulings, LAND-lane ratification). Staged follow-ups in PROMPTS.md items 1 to 4: ingest the other
-harnesses' transcripts into the intent ledger, land the queue, compile the intent ledger through the existing
-`starlight-memory` work graph (no intents CLI in Reality Architect, no second memory system, Graphiti only through the paired
-eval), and define three small agents routed by the existing Queen. One chair: add no orchestrator and no daemon.
-`reality.md` is the founder's; propose edits, never apply them. Finish with a result line and update this ledger.
+1. Inventory, read only. Find every handover and prompt artifact in named locations only: this hub (prompt sections, sessions,
+   all hub worktree branches), unmerged handover branches, the scratch folders, repo `docs/ops/HANDOVER-*`, `queen/inbox` and
+   `queen/reports`, memory notes, `~/.reality`. Reconcile with the index; set each status with evidence or mark it unverified.
+2. One question sheet for the founder: the private durable home for raw prompts and intents, the worktree root policy, and
+   permission to archive processed prompt sections and prune broken worktree stubs.
+3. Repair this hub's structure: split `NEXT-PROMPTS.md` (2,056 lines) into one file per handover under `ops/handovers/`, archive
+   processed or superseded sections to `ops/archive/prompts/` with provenance kept, target under 300 lines, add `lint` for section
+   length, repeated headings and missing evidence, and a minimal `tools/handover.mjs`. Branch only if the hub is over its PR budget.
+4. Worktrees and branches: register every root (starlight/worktrees, Codex, Hermes, Grok, repo-local `.claude/worktrees`,
+   `starlight/.claude/worktrees`, the home-level `copilot-worktrees`) in the placement inventory. Classify with the combined sweep:
+   live, parked with unsaved work, orphan with unsaved work, local branch with no upstream, clean and reapable, broken stub,
+   line-ending noise. Snapshot first (bundle plus a pinned ref, never a commit on a shared branch), push branches where the owner
+   agrees, reap only trees that are clean, merged, bundled and unclaimed. Move the home-level folder into the estate root only with
+   `git worktree move` on clean trees.
+5. Start-up enforcement: confirm each harness (Claude, Codex, Grok, Antigravity, Hermes) loads the start overview and the handover
+   rule. Test it with a fresh session per harness, both directions, and record failures as failures.
+6. Relocate the local restart pack out of the scratch folder into the agreed homes and leave only a pointer behind.
+7. Then hand the lanes to the swarm conductor: foundation F1 to F9, migration M1 and M2, and the separate digital-products
+   launch session, all from the local pack until relocated.
+
+Stop at anything needing spend, a send, a publish, a deletion, a credential, a repository visibility change or a cron. A different
+harness reviews every change. Finish with a result line and update this ledger and the index.
 <!-- restart-pack-20261017:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
