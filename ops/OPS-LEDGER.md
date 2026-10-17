@@ -1,17 +1,22 @@
 <!-- voice-live-face-20261016:start -->
-## Voice: three orbs are on the live page
+## Voice: the ear must stop overnight
 
-Clap listener on `agent/grok/x-voice-clap` at `0334b56` in
-`C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`. The page
-`http://127.0.0.1:8765/live` draws Eve, Ara, and Leo from `/api/live`. It does
-not open a microphone and it does not spawn a seat. The socket uses the EU Infisical `XAI_API_KEY` when the value starts with `xai-`, and it stops at 15 minutes in a UTC day. Draft
-[starlight-voice#5](https://github.com/frankxai/starlight-voice/pull/5). Issue
-[#2](https://github.com/frankxai/starlight-voice/issues/2) stays open.
+Clap listener code is still `0334b56` on `agent/grok/x-voice-clap` in
+`C:\Users\frank\starlight\worktrees\starlight-voice-xvoice`. At 13:21 +02 on
+17 October 2026 the listener process was gone, `/api/live` was `phase=stopped`
+(`updated=10/17/2026 11:48:38`), and `memory/voice/spend.jsonl` was absent, so
+no billed socket minutes were written. The tray and dashboard were still
+serving `http://127.0.0.1:8765/live`. The page draws Eve, Ara, and Leo, does
+not open a microphone, and does not spawn a seat. The socket uses the EU
+Infisical `XAI_API_KEY` when the value starts with `xai-`, and the open socket
+stops at 15 minutes in a UTC day. Armed-all-night is the next code change.
+Draft [starlight-voice#5](https://github.com/frankxai/starlight-voice/pull/5).
+Issue [#2](https://github.com/frankxai/starlight-voice/issues/2) stays open.
 
 Do not add GSAP house lights on top of those orbs. A 375, 768, and 1440 look
 waits on free RAM above the browse gate. Leave the listener alone while its
 phase is open or speaking.
-Session: [16 October](sessions/2026-10-16.md).
+Sessions: [17 October](sessions/2026-10-17.md), [16 October](sessions/2026-10-16.md).
 <!-- voice-live-face-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
