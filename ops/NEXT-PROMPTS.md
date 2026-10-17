@@ -1,3 +1,56 @@
+<!-- ai-team-products-20261017:start -->
+## Resume GenCreator Product Studio from the saved visual and founder brief
+
+Start Codex in `C:/Users/frank/starlight/worktrees/frankx-product-lifecycle-20261017`.
+Read FrankX issue 279 and draft PR 280, exact source
+`af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`. The private packet is under
+`docs/strategy/portfolio-productization/weekend-ai-team-20261017/`.
+Open START-HERE.html, inspect visuals/product-studio-concept-v2.png, then read
+GENCREATOR-PRODUCT-STUDIO-MASTER-BRIEF.md and RESTART-PROMPT.md in full.
+
+The master preserves all 13 visible product-related messages. It separates
+founder choices from brand/platform proposals and unverified implementation.
+Raw prompts and the private provider inventory remain in FrankX; this public
+hub holds a sanitized pointer. The static index is a planning aid, not the app.
+
+Frank now asks for internal Product Studio first, plus the customer productization
+plan. Preserve his accepted separate interfaces/shared backend choice. Reuse
+GenCreator CreatorPack/Mission/revision/review/export contracts, programme
+235/119 and the other owner's editorial work in 245/PR247. Inspect the existing
+foreign FrankX Studio candidate rather than creating another task authority.
+Use the image as art direction, not as the product or runtime proof.
+
+Re-read destination instructions and current accepted decisions. Verify exact
+root/origin/branch, explicit-file routing and separate lane ownership before
+writes. Preserve other agents' changes and sparse-checkout line-ending noise.
+Recheck machine/storage admission; latest document-task observation was 3269 MB
+RAM, below the 4 GiB floor for heavy work. No browser/build/server/fanout ran.
+
+Select one useful source -> real draft -> edit -> revision-bound review -> export
+-> durable resume mission. Verify denied access, interruption, retries, cancellation,
+source drift and costs. Compare actual Cloudflare Vite/Void against the existing
+Next/Vercel candidate on that same task; no broad migration is approved. Keep
+private estate adapters outside customer authority and use existing coordination.
+
+Continue the free/EUR 1/EUR 7 native-download launch in parallel only within actual
+admission/ownership; EUR 47/97 remain planned. Refine and inspect the real exports,
+obtain fresh-user and independent current-revision review, verify seller/receipt/
+download behavior and record sale separately from useful application. No sale or
+managed Studio is evidenced by this packet. Keep hosted security checks enabled;
+previous jobs ran zero steps due to Actions budget. No vendor/budget/DNS changes.
+
+restart-pack.verification.json records 12 matching committed-byte digests, 13
+source messages, local-link/prompt/JS/PNG checks and calculated text contrast.
+Two generated concepts retain prompt sidecars and lineage.
+A later home-started Stop-hook font warning was triaged with an exact-file
+Instrument Serif exception; retain the documented GenCreator typography. Detector passes with
+single-document GenCreator brand exceptions; browser and independent acceptance,
+external provenance-schema validation and memory-vault sync remain open.
+
+Finish with actual artifact/revision/checks/gaps and update the existing issue and
+hub. Do not mark the wider creation business complete from this document slice.
+<!-- ai-team-products-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Resume full Queen goal from verified admission and protected runtime
 

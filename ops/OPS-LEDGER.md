@@ -1,3 +1,74 @@
+<!-- ai-team-products-20261017:start -->
+## AI team entry products: source candidate, release gates open
+
+Private restart packet added at `af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`:
+master vision with 13 visible product messages, internal-first Studio and customer
+productization plan, portable visual index, continuation prompt and two generated
+concept references. Eleven exact files committed; 12 contextual/output digests
+match committed bytes. Local ownership/whitespace/secret checks pass. Contrast/
+spacing refined and GenCreator brand exceptions scoped to this one private index.
+Browser, independent review, application behavior and commercial gates remain open.
+Open START-HERE.html in the private packet at restart; raw prompts stay private.
+Stop-hook follow-up: exact Instrument Serif exception mirrored for home-started
+hook context; original packet unchanged and remaining QA gates open.
+
+FrankX draft [PR 280](https://github.com/frankxai/FrankX/pull/280), exact
+`af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`, adds original free / EUR 1 / EUR 7
+material, three practice missions and a proposed five-tier lifecycle registry.
+[Issue 279](https://github.com/frankxai/FrankX/issues/279) owns acceptance.
+All 11 source-asset references resolve; 13 committed digests match; scoped
+whitespace, ownership and secret checks pass. EUR 47/97 remain planned.
+
+Continuation adds researched provider/CI/memory/hosting decisions and a reusable
+execution prompt to the existing private release brief. Graphite, Graphiti and
+Buildkite have distinct jobs. Current connector/billing limits and proposed
+pilots are recorded; no service or budget change was made. Existing ops issues
+85/149/20/51 retain ownership. Private cost evidence stays outside this public hub.
+
+Studio location/lead continuation adds four implementation homes, seven proposed
+lanes and ten customer stages. Internal Studio is tracked on a foreign FrankX
+branch and absent from main; its graph is dated 30 August and WIP remains 3/3.
+Customer workspace is GenCreator; work graph is SIS. Integration remains open.
+
+Status refresh: PR 280 is still draft/unmerged; its current required jobs ran zero
+steps due to Actions budget. Existing site deployment records are READY, which
+does not verify this funnel. Recommend native GitHub Projects + Figma + Vercel
+preview feedback first; later project evidence into existing Studio views.
+Projects inventory lacks read:project scope; no auth or UI changes were made.
+
+Founder confirmed owned internal and customer interfaces sharing product backend
+services, with separate permissions. GenCreator 235/119 own the existing programme;
+245/PR247 already implement editorial comparison. Exact PR247 source e478b926 has
+a READY preview, not release acceptance. Preserve its lane; use existing product
+contracts and private estate adapters. Heavy work held at 2214 MB free RAM.
+
+Correction: founder meant Cloudflare Void, the Vite full-stack SDK/CLI/platform
+announced 15 October, not the editor/v0. Evaluate this actual shared-app candidate.
+Direct Cloudflare deploy does not require a team Platform; core Platform excludes
+the user dashboard and managed GitHub builds. No install or migration performed.
+
+Brand/platform proposal: GenCreator for authored work and digital products;
+AgenticIncome for offers/economics and implementation services; FrankX for trust.
+No rebrand accepted. AgenticIncome source mixes education-first and service-first
+wording. Evaluate Cloudflare for the new core while preserving current Next/Vercel
+surfaces; maintain scoped connectors and PR-based agent updates. No global move.
+
+Hosted security checks executed zero steps because GitHub's Actions budget
+prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
+Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).
+The same zero-step budget block recurred at source f6a3aaec in runs
+38983569809 / 38983569839. Required checks remain enabled.
+
+This is a private source candidate. Registry automation, designed exports,
+fresh-user and independent review, seller/checkout/delivery and a genuine sale
+remain open. Existing lead magnet catalog page counts and unsupported metrics
+need reconciliation before reuse. Read the
+[17 October session](sessions/2026-10-17.md) for coverage, exact lanes and pickup.
+No public release, spending, fanout or production deployment occurred.
+Heavy work was held at the 3100 MB free-RAM observation;
+independent review and runtime comparisons have not been run.
+<!-- ai-team-products-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
