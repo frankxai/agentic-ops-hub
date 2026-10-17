@@ -3,7 +3,7 @@
 
 Start Codex in `C:/Users/frank/starlight/worktrees/frankx-product-lifecycle-20261017`.
 Read this hub's 17 October session, FrankX issue 279 and draft PR 280, exact
-source `f6a3aaec82e67c9c83e848a7292e1b1d2496c761`. Re-read destination instructions,
+source `0b46db3463f97ec0b6eb4be7dcbe25ed022cc90c`. Re-read destination instructions,
 verify current branch/origin, machine admission, routing and the explicit-file
 lane before writes. Preserve other work and line-ending-only sparse-checkout noise.
 
@@ -17,6 +17,15 @@ CI. Follow existing ops issues 85/149/20/51; do not create a parallel scheduler,
 cost registry or runner fleet. Current billing and runner-health evidence is
 incomplete. No vendor purchase, budget change or runtime pilot was performed.
 The later RAM observation was below the 4 GiB floor; re-admit heavy work first.
+
+Locate the existing internal Studio in FrankX's foreign
+`agent/antigravity/v0-sovereign-creator-engine` branch at 7fe4fde1. Its studio/
+and studio-graph script are absent from main; preserve the checkout and review a
+scoped integration. Graph is dated 30 August, WIP is 3/3. Reconcile the new family
+with existing L1 work without replacing unfinished packs or silently adding a
+fourth slot. The registry records four homes, seven proposed lanes and ten
+customer stages; it does not dispatch workers. GenCreator owns the customer
+workspace, SIS the graph source. Connect one complete mission and delivery path.
 
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/

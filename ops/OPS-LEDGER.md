@@ -2,7 +2,7 @@
 ## AI team entry products: source candidate, release gates open
 
 FrankX draft [PR 280](https://github.com/frankxai/FrankX/pull/280), exact
-`f6a3aaec82e67c9c83e848a7292e1b1d2496c761`, adds original free / EUR 1 / EUR 7
+`0b46db3463f97ec0b6eb4be7dcbe25ed022cc90c`, adds original free / EUR 1 / EUR 7
 material, three practice missions and a proposed five-tier lifecycle registry.
 [Issue 279](https://github.com/frankxai/FrankX/issues/279) owns acceptance.
 All 11 source-asset references resolve; 13 committed digests match; scoped
@@ -14,10 +14,15 @@ Buildkite have distinct jobs. Current connector/billing limits and proposed
 pilots are recorded; no service or budget change was made. Existing ops issues
 85/149/20/51 retain ownership. Private cost evidence stays outside this public hub.
 
+Studio location/lead continuation adds four implementation homes, seven proposed
+lanes and ten customer stages. Internal Studio is tracked on a foreign FrankX
+branch and absent from main; its graph is dated 30 August and WIP remains 3/3.
+Customer workspace is GenCreator; work graph is SIS. Integration remains open.
+
 Hosted security checks executed zero steps because GitHub's Actions budget
 prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
 Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).
-The same zero-step budget block recurred at the latest source revision in runs
+The same zero-step budget block recurred at source f6a3aaec in runs
 38983569809 / 38983569839. Required checks remain enabled.
 
 This is a private source candidate. Registry automation, designed exports,
@@ -26,7 +31,7 @@ remain open. Existing lead magnet catalog page counts and unsupported metrics
 need reconciliation before reuse. Read the
 [17 October session](sessions/2026-10-17.md) for coverage, exact lanes and pickup.
 No public release, spending, fanout or production deployment occurred.
-Heavy work remains inadmissible at the later 3100 MB free-RAM observation;
+Heavy work was held at the 3100 MB free-RAM observation;
 independent review and runtime comparisons have not been run.
 <!-- ai-team-products-20261017:end -->
 
