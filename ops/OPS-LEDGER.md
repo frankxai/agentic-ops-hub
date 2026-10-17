@@ -1,3 +1,10 @@
+<!-- github-org-federation-20261017:start -->
+## Estate: 10-organization GitHub federation, `.github` governance, and dual-remote wiring
+
+Executed on 17 October 2026 ([session](sessions/2026-10-17.md), handover [`H-github-org-federation-20261017`](handovers/H-github-org-federation-20261017.md)).
+Patched metadata and deployed standardized `<Org>/.github` governance repositories (`profile/README.md`, `AGENTS.md`, community health files, issue/PR templates, and draft-gated `reusable-ci.yml`) across all 9 active domain organizations (`Starlight-Intelligence` `b6dc10e`, `Starlight-Intelligence-Systems` `f6d1413`, `Arcanea-Labs` `2b82945`, `GenCreator-ai` `9b6e6c3`, `FrankX-AI` `834512d`, `AI-Architect-Studio` `a5bd5b9`, `AI-Architect-Academy` `a5df798`, `Agentic-Income` `a8a6cbf`, `Life-Commons` `9bc6990`; `oci-ai-architects` preserved read-only during reshape PR #1). Federated 68 flagship repositories with strict public/private visibility parity and wired `org` git remotes across `C:/Users/frank/starlight/repos` while preserving `origin` (`frankxai/*`) for the 41 Vercel project bindings and npm OIDC. Pushed 6 stranded local agent branches and backed up `starlight-android` (`1631097`). Audit CLI and tests pushed to `Starlight-Intelligence-System` (`daaf40484`); organization registry pushed to `agentic-ops` (`2c39fdf`).
+<!-- github-org-federation-20261017:end -->
+
 <!-- operating-model-20261017:start -->
 ## Hub: handovers are files, the prompt list is generated, lint runs in CI
 
