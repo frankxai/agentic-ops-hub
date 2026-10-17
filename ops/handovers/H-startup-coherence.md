@@ -2,9 +2,9 @@
 id: H-startup-coherence
 what: Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions
 where: starlight/AGENTS.md, ~/.starlight/workspace-bootstrap (unversioned), starlight/ops contract files
-owner: Claude
+owner: Antigravity
 status: processing
-note: edit 4 done on starlight-agent-config agent/claude/bootstrap-gate-versioning (55 tests; under security review; deploy needs the founder); Registry gap fixed on agentic-ops agent/claude/registry-gaps; edits 1, 2, 3 and 5 open
+note: edit 4 done on starlight-agent-config PR #127 (73c8697, signed off by Antigravity); edits 1, 2, 5 and harness-identity done on starlight-estate PR #54 (829bc7c) and starlight-agent-config PR #128 (83717c4)
 updated: 2026-10-17
 ---
 
