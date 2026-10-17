@@ -23,3 +23,10 @@ Diagnosed read-only on 17 October; nothing was killed or reconfigured.
 - `langfuse` returns 403 "usage threshold exceeded": a plan limit. Upgrade, or remove the project-scoped entry.
 - `desktop-commander` timed out on a cold `npx @latest` install (cached since); pin a version or raise `MCP_TIMEOUT`.
 - `starlight-tool-plane` was down 16:35 to 16:40 and its `StarlightToolPlaneWatchdog` relaunched it; reconnect in `/mcp`.
+
+The fail-open check is fixed on estate-root branch `agent/claude/mcp-health-handshake` (commit 8dd9ce2, based on
+`estate/main` because `tools/check-mcp-health.mjs` is not on `origin/main`; not pushed, since the estate root's write target is
+the founder's call). It now performs a real `initialize` over stdio and HTTP; 16 tests, including the old fail-open case.
+Its first real run against the registry: starlight-memory FAIL (vault budget), starlight-bridge FAIL (`src/mcp/server.mjs`
+missing), starlight-sis FAIL (`mcp-server.mjs` missing), cdp-multiplexer DOWN (nothing on 9223), nano-banana-mcp FAIL (missing
+dependency), github FAIL at 15 s and PASS at 60 s (npx cold start; the package is deprecated), starlight-gdrive PASS.
