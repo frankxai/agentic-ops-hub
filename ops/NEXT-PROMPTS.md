@@ -7,6 +7,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
+| [H-github-org-federation-20261017](handovers/H-github-org-federation-20261017.md) | 10-organization GitHub federation, .github governance repos, dual-remote wiring, and multi-agent branch backup | Antigravity | open |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | open |
 | [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | unassigned | open |
 | [H-turn0-budget](handovers/H-turn0-budget.md) | Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design | unassigned | open |
