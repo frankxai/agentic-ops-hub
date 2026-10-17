@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, appendFileSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, appendFileSync, symlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { create, regenerate, lint, setStatus, parseHandover, parseArgs, paths } from '../scripts/handover.mjs';
@@ -58,7 +58,7 @@ test('processed without evidence is refused on write and fails lint when hand-wr
 
 test('evidence must be a URL or an existing repository path', () => {
   const root = fixture();
-  assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'true' }), /neither an http\(s\) URL nor a path/);
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'true' }), /neither an http\(s\) URL nor a repository-relative file path/);
   writeFileSync(join(paths(root).dir, 'H-a.md'), '---\nid: H-a\nwhat: First\nstatus: processed\nevidence: true\n---\n');
   regenerate(root);
   assert.ok(lint(root).some((e) => e.includes('evidence "true"')));
@@ -70,7 +70,7 @@ test('evidence must be a URL or an existing repository path', () => {
 test('evidence outside the repository, a directory or a hostless URL is refused', () => {
   const root = fixture();
   for (const bad of ['../../../../AGENTS.md', '.', 'ops', 'https://?', 'http://', 'ftp://example.com/x', 'true']) {
-    assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: bad }), /neither an http\(s\) URL nor a path/, bad);
+    assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: bad }), /neither an http\(s\) URL nor a repository-relative file path/, bad);
   }
   setStatus(root, 'H-a', 'processed', { evidence: 'https://github.com/frankxai/agentic-ops-hub/pull/9' });
 });
@@ -80,6 +80,25 @@ test('headings inside a fenced code block are content, not sections', () => {
   create(root, { id: 'H-fence', what: 'Fence', where: 'x', owner: 'codex' }, '\n## Prompt\n\n```md\n## Example\na\n## Example\nb\n```\n');
   regenerate(root);
   assert.deepEqual(lint(root), []);
+});
+
+test('evidence reached through a junction or symlink that leaves the repository is refused', () => {
+  const root = fixture();
+  const outside = mkdtempSync(join(tmpdir(), 'outside-'));
+  writeFileSync(join(outside, 'receipt.md'), 'x');
+  symlinkSync(outside, join(root, 'link'), 'junction');
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'link/receipt.md' }), /repository-relative/);
+});
+
+test('fences match by character and length, and a fenced-only prompt is not a pickup', () => {
+  const root = fixture();
+  create(root, { id: 'H-four', what: 'Four', where: 'x', owner: 'codex' }, '\n## Prompt\n\n````md\n```\n## Example\n```\n## Example\n````\n');
+  create(root, { id: 'H-hidden', what: 'Hidden', where: 'x', owner: 'codex' }, '\n```\n## Prompt\n```\n');
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+  const prompts = readFileSync(paths(root).prompts, 'utf8');
+  assert.doesNotMatch(prompts, /H-hidden/);
+  assert.match(prompts, /H-four/);
 });
 
 test('a flag with no value, an unknown flag and --flag=value are all handled', () => {

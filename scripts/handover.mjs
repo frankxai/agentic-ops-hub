@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Handover lifecycle for this hub: one file per handover under ops/handovers/, with the index table in
 // ops/HANDOVER-INDEX.md and the pickup list in ops/NEXT-PROMPTS.md generated from those files.
-import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, statSync, realpathSync } from 'node:fs';
 import { join, resolve, dirname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -60,7 +60,7 @@ export function renderIndexTable(handovers) {
 
 export function renderPrompts(handovers) {
   const live = handovers
-    .filter(({ meta, body }) => LIVE.has(meta.status) && /^## Prompt\b/m.test(body))
+    .filter(({ meta, body }) => LIVE.has(meta.status) && sectionLengths(body).some((s) => /^## Prompt\b/.test(s.heading)))
     .sort((a, b) => (b.meta.updated ?? '').localeCompare(a.meta.updated ?? '') || a.meta.id.localeCompare(b.meta.id));
   const rows = live.map(({ meta }) => `| [${meta.id}](handovers/${meta.id}.md) | ${cell(meta.what)} | ${cell(meta.owner)} | ${meta.status} |`);
   return [
@@ -96,10 +96,16 @@ function sectionLengths(text) {
   const lines = text.split(/\r?\n/);
   const out = [];
   let current = null;
-  let fenced = false;
+  let fence = null;
   lines.forEach((line, i) => {
-    if (/^\s*(```|~~~)/.test(line)) fenced = !fenced;
-    if (!fenced && /^#{1,2} /.test(line)) {
+    const marker = line.match(/^ {0,3}(`{3,}|~{3,})(.*)$/);
+    if (marker && !fence) fence = marker[1];
+    else if (marker && marker[1][0] === fence[0] && marker[1].length >= fence.length && !marker[2].trim()) {
+      fence = null;
+      if (current) current.length += 1;
+      return;
+    }
+    if (!fence && /^#{1,2} /.test(line)) {
       current = { heading: line, start: i + 1, length: 0 };
       out.push(current);
     } else if (current) current.length += 1;
@@ -119,7 +125,7 @@ export function lint(root) {
     ids.add(meta.id);
     if (!STATUSES.includes(meta.status)) errors.push(`${meta.id}: status "${meta.status}" not in ${STATUSES.join(', ')}`);
     if (meta.status === 'processed' && !meta.evidence) errors.push(`${meta.id}: processed without an evidence link`);
-    if (meta.evidence && !isEvidence(root, meta.evidence)) errors.push(`${meta.id}: evidence "${meta.evidence}" is neither an http(s) URL nor a path in this repository`);
+    if (meta.evidence && !isEvidence(root, meta.evidence)) errors.push(`${meta.id}: evidence "${meta.evidence}" is neither an http(s) URL nor a repository-relative file path`);
     if (meta.status === 'superseded' && !meta.superseded_by) errors.push(`${meta.id}: superseded without superseded_by`);
   }
   for (const { meta } of all) {
@@ -161,7 +167,7 @@ export function setStatus(root, id, status, { evidence, by, owner, note, today }
   if (by) meta.superseded_by = by;
   if (owner) meta.owner = owner;
   if (note !== undefined) meta.note = note;
-  if (meta.evidence !== undefined && !isEvidence(root, meta.evidence)) throw new Error(`evidence "${meta.evidence}" is neither an http(s) URL nor a path in this repository`);
+  if (meta.evidence !== undefined && !isEvidence(root, meta.evidence)) throw new Error(`evidence "${meta.evidence}" is neither an http(s) URL nor a repository-relative file path`);
   if (status === 'processed' && !meta.evidence) throw new Error('processed needs evidence: a merged PR, receipt or issue comment URL');
   writeFileSync(file, renderHandover({ meta, body: h.body }));
 }
@@ -174,9 +180,11 @@ export function isEvidence(root, v) {
       return (url.protocol === 'https:' || url.protocol === 'http:') && url.hostname.length > 0;
     } catch { return false; }
   }
-  const base = resolve(root);
-  const target = resolve(base, v);
-  return target.startsWith(base + sep) && existsSync(target) && statSync(target).isFile();
+  const target = resolve(root, v);
+  if (!existsSync(target)) return false;
+  const base = realpathSync(root);
+  const real = realpathSync(target);
+  return real.startsWith(base + sep) && statSync(real).isFile();
 }
 
 export function create(root, meta, body = '') {
