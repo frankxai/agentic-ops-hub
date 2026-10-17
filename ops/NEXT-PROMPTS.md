@@ -1,5 +1,31 @@
 <!-- estate-operating-map-20261016:start -->
-## Continue the harness and voice operating plan
+## Continue the existing Voice studio journey
+
+Read the 17 October session. Continue the owned Command Center lane
+`agent/codex/voice-studio-journey-20261017`, local candidate
+`f345a332236dd1d34d1c59323279809a944b06cf`, from
+`starlight/worktrees/command-center-voice-journey-20261017`.
+Read its root instructions and `docs/VOICE-STUDIO-JOURNEY-2026-10-17.md`.
+The prior owner integration remains intact at `792bb6d` and PR70; do not take
+its lease or primary checkout. Inspect current ownership, admission, exact source,
+unfinished attempts and aggregate budget before execution.
+
+The new read endpoint and graph model restore a saved mission without redispatch;
+51 focused tests pass, including two fresh-process fixture reads. Wire recovery
+and the observed graph into the existing Voice UI after resolving its required
+design-guide handoff. Complete project typecheck/build and real desktop/mobile,
+focus, touch, reduced-motion and interruption checks. Obtain independent critique
+at the exact source through a verified private-data/cost route. Repair the missing
+security-review SDK through explicit maintenance; keep checks enabled.
+
+Through the existing Queen and product owners, prove one real spoken request,
+corrected intent, scoped tool denial, admitted mission, useful owned repo artifact,
+observable attempt/harness graph, interruption, recovery and spoken result.
+Reconcile current startup health, then prove one existing startup path and one
+admitted client-disconnected durable cloud task. Preserve credentials and active
+work. Fixtures, configured triggers, source branches and deployment metadata are
+narrower evidence. Compare actual task artifacts with the incumbent and LiveKit
+before claiming an advantage. Keep the overall programme and prior work open.
 
 Read the 16 October session and the owned local agent-config branch
 `agent/codex/estate-operating-map-20261016`, exact candidate

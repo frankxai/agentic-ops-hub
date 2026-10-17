@@ -1,6 +1,16 @@
 <!-- estate-operating-map-20261016:start -->
 ## Harness, voice and estate operating map
 
+17 October: Command Center local candidate
+`f345a332236dd1d34d1c59323279809a944b06cf` adds read-only saved mission recovery
+and a mission-bound Queen/harness/artifact graph model. All51 focused Node cases,
+routing/ownership and enabled secret checks pass. Actual proposal reopening was
+exercised across two fresh processes with fixture state. UI integration, project
+typecheck/build, independent exact-source critique, live voice, startup and durable
+cloud acceptance remain open. The original Voice/Command Center owner lanes are
+preserved. See the [17 October session](sessions/2026-10-17.md) and
+[Command Center69](https://github.com/frankxai/starlight-command-center/issues/69).
+
 Current local agent-config candidate `cdb76e0057574143e63b7854b9502d70e16e570c`
 adds the bounded metadata auditor, interactive map, portable kickoff, hard-floor
 and startup observations, and Voice studio/cloud-resume delivery plan. Fifteen
