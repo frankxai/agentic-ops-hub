@@ -1,7 +1,7 @@
 <!-- estate-consolidation-20261017:start -->
 ## Estate: 438-repo audit and consolidation plan, nothing applied
 
-Draft [Ops273](https://github.com/frankxai/agentic-ops/pull/273) holds the classification of 438 repos across 11 owners against Registry `149dd3c6` and a five-wave plan (archive, privatize, consolidate, PR backlog, orgs). No GitHub state changed: the archive call for six verified-dead repos was blocked by the permission classifier. Six zero-repo orgs verified empty. Partner first pass flags MCP spec `2026-07-28` against seven of our MCP repos. Details in the [17 October session](sessions/2026-10-17.md). Status PR_READY, next gate is Frank.
+Draft [Ops273](https://github.com/frankxai/agentic-ops/pull/273) holds the classification of 438 repos across 11 owners against Registry `149dd3c6` and a five-wave plan (archive, privatize, consolidate, PR backlog, orgs). Waves applied after Frank granted permission: 6 dead repos archived, 6 idea repos made private (receipts with undo lines in the PR). 9 more held for homepage links. Six zero-repo orgs verified empty. Partner first pass flags MCP spec `2026-07-28` against seven of our MCP repos. Details in the [17 October session](sessions/2026-10-17.md). Status PR_READY. Next gate: wave 4 destinations.
 <!-- estate-consolidation-20261017:end -->
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired

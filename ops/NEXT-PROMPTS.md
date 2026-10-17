@@ -1,7 +1,7 @@
 <!-- estate-consolidation-20261017:start -->
 ## Apply the estate consolidation waves
 
-Read [Ops273](https://github.com/frankxai/agentic-ops/pull/273) and the 17 October session. After a different harness reviews the PR, run wave 1 (`apply-wave.ps1 -Action archive -List wave1-archive.txt`, dry run first, then `-Apply` with Frank's go or a PowerShell permission rule). Then wave 3 once Frank has struck repos from `wave3-privatize-candidates.csv`.
+Read [Ops273](https://github.com/frankxai/agentic-ops/pull/273) and the 17 October session. Waves 1 (6 archived) and 3a (6 made private) are applied; read the receipts in the PR. Next: check inbound links for the 9 held privatize repos (`wave3-privatize-candidates.csv` notes), then privatize with `apply-wave.ps1 -Action privatize`. Then confirm Frank's wave 4 destinations from `wave4-destination-map.csv` and move repos by PR with history preserved.
 
 Then in order: audit the seven MCP repos for the removed session handshake and teach `mcp-doctor` to flag it; land the ten `pr-closer` lands and sample-check the 94 proposed closes; read the Vercel, Anthropic, Google, NVIDIA and Arrow vendor changelogs directly, one read-only agent each, once `pp preflight` allows. Do not touch `oci-ai-architects` before its reshape PR lands. Preserve every foreign lane and unfinished objective.
 <!-- estate-consolidation-20261017:end -->
