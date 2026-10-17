@@ -25,6 +25,12 @@ does not verify this funnel. Recommend native GitHub Projects + Figma + Vercel
 preview feedback first; later project evidence into existing Studio views.
 Projects inventory lacks read:project scope; no auth or UI changes were made.
 
+Founder confirmed owned internal and customer interfaces sharing product backend
+services, with separate permissions. GenCreator 235/119 own the existing programme;
+245/PR247 already implement editorial comparison. Exact PR247 source e478b926 has
+a READY preview, not release acceptance. Preserve its lane; use existing product
+contracts and private estate adapters. Heavy work held at 2214 MB free RAM.
+
 Hosted security checks executed zero steps because GitHub's Actions budget
 prevented startup (runs 38974748653 / 38974748646); no hosted PASS is claimed.
 Handover: draft [PR 355](https://github.com/frankxai/agentic-ops-hub/pull/355).

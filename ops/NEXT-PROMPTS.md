@@ -33,6 +33,15 @@ lack read:project scope. Later extend existing Studio with Today/Product/Work/
 Review/Delivery views over verified evidence; do not add another task authority.
 Emil guidance is selected/read and applied to the proposal, not rendered QA.
 
+Founder now explicitly chose both owned interfaces through a shared backend.
+Coordinate with GenCreator issues 235/119 and existing 245/PR247 owner. PR247 at
+e478b926 has a READY preview; inspect it after admission, preserve its write lane.
+Reuse CreatorPack/Mission/AgentRuntime contracts. Implement one real source-to-
+draft-to-review-to-export journey with durable recovery and tenant/budget denial.
+Share product services, keep private estate adapters/credentials outside customer
+authority. Existing GenCreator-Studio /hv is a static-batch reuse source, not the
+managed backend. Re-admit heavy work; latest RAM was 2214 MB. No new app installed.
+
 Frank wants a substantial free lead magnet, EUR 1 brief and EUR 7 working kit
 for a first-sale attempt, with EUR 47/97 planned and connected source/design/
 commerce/delivery lifecycle. Inspect the actual material in
