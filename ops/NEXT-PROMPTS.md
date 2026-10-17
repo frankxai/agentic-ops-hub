@@ -7,6 +7,8 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
+| [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | open |
+| [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | unassigned | open |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified |
 | [queen-budget-dispatch-20261014](handovers/queen-budget-dispatch-20261014.md) | Continue Queen from budgeted contained dispatch to protected live proof | unknown | open-unverified |
 | [queen-bus-live-gaps-20261014](handovers/queen-bus-live-gaps-20261014.md) | Resume full Queen goal from verified admission and protected runtime | unknown | open-unverified |

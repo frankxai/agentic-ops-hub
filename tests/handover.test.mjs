@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, appendFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { create, regenerate, lint, setStatus, parseHandover, paths } from '../scripts/handover.mjs';
+import { create, regenerate, lint, setStatus, parseHandover, parseArgs, paths } from '../scripts/handover.mjs';
 
 function fixture() {
   const root = mkdtempSync(join(tmpdir(), 'handover-'));
@@ -45,13 +45,48 @@ test('a repeated heading and an oversized section are both reported', () => {
   assert.ok(errors.some((e) => /repeats heading/.test(e)), errors.join('\n'));
 });
 
-test('processed without evidence fails lint, with evidence passes', () => {
+test('processed without evidence is refused on write and fails lint when hand-written', () => {
   const root = fixture();
-  setStatus(root, 'H-a', 'processed', { today: '2026-10-17' });
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { today: '2026-10-17' }), /processed needs evidence/);
+  writeFileSync(join(paths(root).dir, 'H-a.md'), '---\nid: H-a\nwhat: First\nstatus: processed\n---\n');
   regenerate(root);
   assert.ok(lint(root).some((e) => e.includes('H-a: processed without an evidence link')));
   setStatus(root, 'H-a', 'processed', { evidence: 'https://github.com/frankxai/agentic-ops-hub/pull/1', today: '2026-10-17' });
   regenerate(root);
+  assert.deepEqual(lint(root), []);
+});
+
+test('evidence must be a URL or an existing repository path', () => {
+  const root = fixture();
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'true' }), /neither an http\(s\) URL nor a path/);
+  writeFileSync(join(paths(root).dir, 'H-a.md'), '---\nid: H-a\nwhat: First\nstatus: processed\nevidence: true\n---\n');
+  regenerate(root);
+  assert.ok(lint(root).some((e) => e.includes('evidence "true"')));
+  setStatus(root, 'H-a', 'processed', { evidence: 'ops/HANDOVER-INDEX.md' });
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+});
+
+test('a flag with no value, an unknown flag and --flag=value are all handled', () => {
+  assert.throws(() => parseArgs(['process', 'H-x', '--evidence']), /--evidence needs a value/);
+  assert.throws(() => parseArgs(['status', 'H-x', 'open', '--note', '--pending']), /--note needs a value/);
+  assert.throws(() => parseArgs(['claim', 'H-x', '--evidence', 'x']), /claim does not take --evidence/);
+  assert.equal(parseArgs(['status', 'H-x', 'open', '--note=--pending review']).note, '--pending review');
+});
+
+test('a handover body with an oversized or repeated section fails lint', () => {
+  const root = fixture();
+  const long = Array.from({ length: 61 }, (_, i) => `line ${i}`).join('\n');
+  create(root, { id: 'H-long', what: 'Long', where: 'x', owner: 'codex' }, `\n## Prompt\n${long}\n## Same\nx\n## Same\ny\n`);
+  regenerate(root);
+  const errors = lint(root);
+  assert.ok(errors.some((e) => /handovers\/H-long\.md:\d+ section "## Prompt" is 61 lines/.test(e)), errors.join('\n'));
+  assert.ok(errors.some((e) => /handovers\/H-long\.md:\d+ repeats heading/.test(e)), errors.join('\n'));
+});
+
+test('CRLF checkouts of generated files are not reported stale', () => {
+  const root = fixture();
+  for (const f of [paths(root).index, paths(root).prompts]) writeFileSync(f, readFileSync(f, 'utf8').replace(/\n/g, '\r\n'));
   assert.deepEqual(lint(root), []);
 });
 

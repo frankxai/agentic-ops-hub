@@ -3,6 +3,7 @@
 Verbatim copy of every line of `ops/NEXT-PROMPTS.md` (commit 0b8caff) that sat outside a `<!-- id:start/end -->` marker.
 Marker sections moved to `ops/handovers/<id>.md`. Nothing here was edited. Treat each prompt as `open-unverified` until a
 handover file claims it; the 18 copies of "Current npm ecosystem and managed activation prompt" are successive versions of one pickup.
+Relative links below were written from `ops/`: read `sessions/x.md` as `../../sessions/x.md` from this file.
 
 ---
 

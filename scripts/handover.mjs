@@ -117,6 +117,7 @@ export function lint(root) {
     ids.add(meta.id);
     if (!STATUSES.includes(meta.status)) errors.push(`${meta.id}: status "${meta.status}" not in ${STATUSES.join(', ')}`);
     if (meta.status === 'processed' && !meta.evidence) errors.push(`${meta.id}: processed without an evidence link`);
+    if (meta.evidence && !isEvidence(root, meta.evidence)) errors.push(`${meta.id}: evidence "${meta.evidence}" is neither an http(s) URL nor a path in this repository`);
     if (meta.status === 'superseded' && !meta.superseded_by) errors.push(`${meta.id}: superseded without superseded_by`);
   }
   for (const { meta } of all) {
@@ -125,20 +126,27 @@ export function lint(root) {
 
   const index = readFileSync(p.index, 'utf8');
   try {
-    if (spliceIndex(index, renderIndexTable(all)) !== index) errors.push('HANDOVER-INDEX.md table is stale: run `node scripts/handover.mjs index`');
+    if (spliceIndex(lf(index), renderIndexTable(all)) !== lf(index)) errors.push('HANDOVER-INDEX.md table is stale: run `node scripts/handover.mjs index`');
   } catch (e) { errors.push(e.message); }
 
   const prompts = readFileSync(p.prompts, 'utf8');
-  if (prompts !== renderPrompts(all)) errors.push('NEXT-PROMPTS.md is stale or hand-edited: run `node scripts/handover.mjs index`');
+  if (lf(prompts) !== renderPrompts(all)) errors.push('NEXT-PROMPTS.md is stale or hand-edited: run `node scripts/handover.mjs index`');
   const lineCount = prompts.split(/\r?\n/).length;
   if (lineCount > MAX_PROMPT_FILE_LINES) errors.push(`NEXT-PROMPTS.md has ${lineCount} lines (max ${MAX_PROMPT_FILE_LINES})`);
+  checkSections('NEXT-PROMPTS.md', prompts, errors);
+  for (const { file, body } of all) checkSections(`handovers/${file}`, body, errors);
+  return errors;
+}
+
+const lf = (s) => s.replace(/\r\n/g, '\n');
+
+function checkSections(label, text, errors) {
   const seen = new Map();
-  for (const s of sectionLengths(prompts)) {
-    if (s.length > MAX_SECTION_LINES) errors.push(`NEXT-PROMPTS.md:${s.start} section "${s.heading}" is ${s.length} lines (max ${MAX_SECTION_LINES})`);
-    if (seen.has(s.heading)) errors.push(`NEXT-PROMPTS.md:${s.start} repeats heading from line ${seen.get(s.heading)}: ${s.heading}`);
+  for (const s of sectionLengths(text)) {
+    if (s.length > MAX_SECTION_LINES) errors.push(`${label}:${s.start} section "${s.heading}" is ${s.length} lines (max ${MAX_SECTION_LINES})`);
+    if (seen.has(s.heading)) errors.push(`${label}:${s.start} repeats heading from line ${seen.get(s.heading)}: ${s.heading}`);
     else seen.set(s.heading, s.start);
   }
-  return errors;
 }
 
 export function setStatus(root, id, status, { evidence, by, owner, note, today } = {}) {
@@ -147,12 +155,16 @@ export function setStatus(root, id, status, { evidence, by, owner, note, today }
   if (!existsSync(file)) throw new Error(`no handover ${id}`);
   const h = parseHandover(readFileSync(file, 'utf8'));
   const meta = { ...h.meta, status, updated: today ?? isoDate() };
-  if (evidence) meta.evidence = evidence;
+  if (evidence !== undefined) meta.evidence = evidence;
   if (by) meta.superseded_by = by;
   if (owner) meta.owner = owner;
   if (note !== undefined) meta.note = note;
+  if (meta.evidence !== undefined && !isEvidence(root, meta.evidence)) throw new Error(`evidence "${meta.evidence}" is neither an http(s) URL nor a path in this repository`);
+  if (status === 'processed' && !meta.evidence) throw new Error('processed needs evidence: a merged PR, receipt or issue comment URL');
   writeFileSync(file, renderHandover({ meta, body: h.body }));
 }
+
+export const isEvidence = (root, v) => /^https?:\/\/\S+$/.test(v) || (v !== '' && !v.startsWith('-') && existsSync(join(root, v)));
 
 export function create(root, meta, body = '') {
   const { dir } = paths(root);
@@ -164,12 +176,30 @@ export function create(root, meta, body = '') {
 
 const isoDate = () => new Date().toISOString().slice(0, 10);
 
-function parseArgs(argv) {
+const FLAGS = {
+  new: ['what', 'where', 'owner', 'status', 'body'],
+  claim: ['owner'],
+  process: ['evidence'],
+  supersede: ['by'],
+  status: ['note', 'evidence'],
+  index: [],
+  lint: [],
+};
+
+// Every flag takes a value; a value that itself begins with -- must use the --flag=value form.
+export function parseArgs(argv) {
   const out = { _: [] };
   for (let i = 0; i < argv.length; i++) {
-    if (argv[i].startsWith('--')) out[argv[i].slice(2)] = argv[i + 1]?.startsWith('--') || argv[i + 1] === undefined ? 'true' : argv[++i];
-    else out._.push(argv[i]);
+    const arg = argv[i];
+    if (!arg.startsWith('--')) { out._.push(arg); continue; }
+    const eq = arg.indexOf('=');
+    const key = eq > 0 ? arg.slice(2, eq) : arg.slice(2);
+    if (eq > 0) { out[key] = arg.slice(eq + 1); continue; }
+    if (argv[i + 1] === undefined || argv[i + 1].startsWith('--')) throw new Error(`--${key} needs a value (use --${key}=<value> for a value starting with --)`);
+    out[key] = argv[++i];
   }
+  const allowed = FLAGS[out._[0]];
+  if (allowed) for (const key of Object.keys(out)) if (key !== '_' && !allowed.includes(key)) throw new Error(`${out._[0]} does not take --${key}`);
   return out;
 }
 
@@ -186,11 +216,14 @@ function main(argv) {
   const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
   const a = parseArgs(argv);
   const [cmd, id, extra] = a._;
+  if (FLAGS[cmd] && !['index', 'lint'].includes(cmd) && !id) throw new Error(`${cmd} needs a handover id`);
   switch (cmd) {
     case 'new':
       create(root, { id, what: a.what, where: a.where, owner: a.owner, status: a.status ?? 'open' }, a.body ? `\n${a.body}\n` : '');
       break;
-    case 'claim': setStatus(root, id, 'claimed', { owner: a.owner }); break;
+    case 'claim':
+      if (!a.owner) throw new Error('claim needs --owner <harness>');
+      setStatus(root, id, 'claimed', { owner: a.owner }); break;
     case 'process':
       if (!a.evidence) throw new Error('process needs --evidence <merged PR, receipt or issue comment URL>');
       setStatus(root, id, 'processed', { evidence: a.evidence }); break;
