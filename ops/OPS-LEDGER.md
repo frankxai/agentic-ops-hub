@@ -1,3 +1,25 @@
+<!-- operating-model-20261017:start -->
+## Hub: handovers are files, the prompt list is generated, lint runs in CI
+
+`NEXT-PROMPTS.md` went from 2,102 lines to a generated list of 25; 35 handovers now live in `ops/handovers/`, the retired
+1,848 unmarked lines are kept verbatim in `ops/archive/prompts/`, and `node scripts/handover.mjs lint` (nine failure-path
+tests) runs in CI. Local cleanup with receipts under `~/.starlight/operations/cleanup-receipts/`: 34 worktree stubs pruned,
+4 clean merged worktrees removed, 182 stale non-git scratch folders (2.9 GB) moved to `scratch/_archive/2026-10-17/`. Not
+pushed: this machine has no GitHub credential (`gh` 401). Details in [the session](sessions/2026-10-17.md).
+<!-- operating-model-20261017:end -->
+
+<!-- restart-pack-20261017:start -->
+## Estate triage: queue growth, unprotected local work, no intent store
+
+Read-only triage on 17 October 2026 (details in [the session](sessions/2026-10-17.md)). Open PRs grew from 432 to 803 in four
+weeks against a budget of 10 per repository. A sweep of 607 repositories and worktrees found 226 with unsaved or unpushed
+work and 79 folders with no version control; no lane claim covered any of them. `~/reality.md` was missing, and no durable
+store maps the founder's stated intents to repositories and PRs. Peak Performance held parallel work (3.3 GB free), so the
+pass ran as sequential reads. Prepared, not applied: a restart runbook, a redacted prompt corpus, an at-risk manifest,
+a seeded intent ledger and a proposed `reality.md` that passes the validator at level 4. Nothing was pushed, closed, merged
+or deleted elsewhere. The hub was over its PR budget, so this change is a pushed branch without a PR.
+<!-- restart-pack-20261017:end -->
+
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
 
