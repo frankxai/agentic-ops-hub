@@ -9,6 +9,8 @@ match committed bytes. Local ownership/whitespace/secret checks pass. Contrast/
 spacing refined and GenCreator brand exceptions scoped to this one private index.
 Browser, independent review, application behavior and commercial gates remain open.
 Open START-HERE.html in the private packet at restart; raw prompts stay private.
+Stop-hook follow-up: exact Instrument Serif exception mirrored for home-started
+hook context; original packet unchanged and remaining QA gates open.
 
 FrankX draft [PR 280](https://github.com/frankxai/FrankX/pull/280), exact
 `af54c12b4cf4ffd6ca35ac44edcc000445ae0d9b`, adds original free / EUR 1 / EUR 7

@@ -41,7 +41,9 @@ previous jobs ran zero steps due to Actions budget. No vendor/budget/DNS changes
 
 restart-pack.verification.json records 12 matching committed-byte digests, 13
 source messages, local-link/prompt/JS/PNG checks and calculated text contrast.
-Two generated concepts retain prompt sidecars and lineage. Detector passes with
+Two generated concepts retain prompt sidecars and lineage.
+A later home-started Stop-hook font warning was triaged with an exact-file
+Instrument Serif exception; retain the documented GenCreator typography. Detector passes with
 single-document GenCreator brand exceptions; browser and independent acceptance,
 external provenance-schema validation and memory-vault sync remain open.
 
