@@ -25,6 +25,19 @@ passes the unchanged loader; the live memory backend remains degraded. Thirty
 offline safety/conflict tests passed. Live continuity, release pinning, source
 reconciliation and independent review remain open. Preserve native threads,
 paused goals, unfinished work, locks and private recovery evidence.
+The continuation restored ten tracked file versions and 23 untracked files from
+the captured work, verifying their recorded hashes in an isolated fixture.
+Seven synthetic projection lifecycle cases and 18 additional reader/export tests
+passed. A fresh `idle-pp-hold` heartbeat confirms the Queen consumed the drain
+directive. Dormant bridge controls were inspected and remain excluded: forced
+termination and a broad preparation sweep do not satisfy graceful scoped closure.
+These proofs advance recovery acceptance; native closure/resume and the live
+memory rollout remain pending.
+An adversarial fixture also reproduced source deletion when managed projection
+output contains its source. Original synthetic data and the failure are preserved.
+A private, unapplied containment/alias repair passes eight boundary cases and
+the seven repeated lifecycle scenarios. Coordinate its integration through the
+existing source owner, admission and independent review; live code is unchanged.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->

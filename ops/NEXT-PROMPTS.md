@@ -35,6 +35,19 @@ here plus existing product issues. Thirty offline safety/conflict tests passed;
 live continuity and independent review are pending. Provider additions, purchases,
 deployments and new recurring jobs retain their separate gates. Partial
 preservation and an offline repair candidate do not complete the full operation.
+Continuation evidence now includes actual restoration of ten tracked file
+versions and 23 untracked files, seven synthetic projection lifecycle cases and
+18 additional reader/export tests. The Queen's fresh `idle-pp-hold` confirms drain
+consumption. Native session resume and authenticated cloud continuation remain
+unproved. The dormant bridge process tool force-kills; its checkpoint tool runs
+a broad sweep. Keep their shared-plane exclusion and do not use them as a
+substitute for the required graceful close and verified owner packet.
+Before another projection export, review the retained source-deletion reproduction
+and private containment/alias repair. A managed output containing its source passes
+the current equality-only guard and can remove that source. Only synthetic data
+was affected. The unapplied candidate passes eight boundary cases and the seven
+repeated lifecycle scenarios with the existing reader. Preserve the failure and
+route the repair through its existing owner and independent review after admission.
 <!-- memory-architecture-20261016:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
