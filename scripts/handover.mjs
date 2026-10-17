@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Handover lifecycle for this hub: one file per handover under ops/handovers/, with the index table in
 // ops/HANDOVER-INDEX.md and the pickup list in ops/NEXT-PROMPTS.md generated from those files.
-import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
-import { join, resolve, dirname } from 'node:path';
+import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, statSync } from 'node:fs';
+import { join, resolve, dirname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const STATUSES = ['open', 'open-unverified', 'claimed', 'processing', 'processed', 'archived', 'superseded', 'abandoned'];
@@ -96,8 +96,10 @@ function sectionLengths(text) {
   const lines = text.split(/\r?\n/);
   const out = [];
   let current = null;
+  let fenced = false;
   lines.forEach((line, i) => {
-    if (/^#{1,2} /.test(line)) {
+    if (/^\s*(```|~~~)/.test(line)) fenced = !fenced;
+    if (!fenced && /^#{1,2} /.test(line)) {
       current = { heading: line, start: i + 1, length: 0 };
       out.push(current);
     } else if (current) current.length += 1;
@@ -164,7 +166,18 @@ export function setStatus(root, id, status, { evidence, by, owner, note, today }
   writeFileSync(file, renderHandover({ meta, body: h.body }));
 }
 
-export const isEvidence = (root, v) => /^https?:\/\/\S+$/.test(v) || (v !== '' && !v.startsWith('-') && existsSync(join(root, v)));
+export function isEvidence(root, v) {
+  if (!v) return false;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(v)) {
+    try {
+      const url = new URL(v);
+      return (url.protocol === 'https:' || url.protocol === 'http:') && url.hostname.length > 0;
+    } catch { return false; }
+  }
+  const base = resolve(root);
+  const target = resolve(base, v);
+  return target.startsWith(base + sep) && existsSync(target) && statSync(target).isFile();
+}
 
 export function create(root, meta, body = '') {
   const { dir } = paths(root);

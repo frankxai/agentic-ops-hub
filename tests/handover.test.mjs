@@ -67,6 +67,21 @@ test('evidence must be a URL or an existing repository path', () => {
   assert.deepEqual(lint(root), []);
 });
 
+test('evidence outside the repository, a directory or a hostless URL is refused', () => {
+  const root = fixture();
+  for (const bad of ['../../../../AGENTS.md', '.', 'ops', 'https://?', 'http://', 'ftp://example.com/x', 'true']) {
+    assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: bad }), /neither an http\(s\) URL nor a path/, bad);
+  }
+  setStatus(root, 'H-a', 'processed', { evidence: 'https://github.com/frankxai/agentic-ops-hub/pull/9' });
+});
+
+test('headings inside a fenced code block are content, not sections', () => {
+  const root = fixture();
+  create(root, { id: 'H-fence', what: 'Fence', where: 'x', owner: 'codex' }, '\n## Prompt\n\n```md\n## Example\na\n## Example\nb\n```\n');
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+});
+
 test('a flag with no value, an unknown flag and --flag=value are all handled', () => {
   assert.throws(() => parseArgs(['process', 'H-x', '--evidence']), /--evidence needs a value/);
   assert.throws(() => parseArgs(['status', 'H-x', 'open', '--note', '--pending']), /--note needs a value/);
