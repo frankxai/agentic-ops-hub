@@ -6,7 +6,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
-| [H-2026-10-18-queen-sovereign](handovers/H-2026-10-18-queen-sovereign.md) | Starlight Queen v2.0 Sovereign Meta-Harness (10-Rail Subscription Governor, Open-Window Conductor & 14-Card Self-Healer, Absorbed RuFlow×OmO×Graphiti, 30/30 Founder Intents & 36-Slide Visual Estate Deck) | Antigravity | open |
+| [H-2026-10-18-queen-sovereign](handovers/H-2026-10-18-queen-sovereign.md) | Starlight Queen v3.0 Overnight Autonomous Swarm CEO (1GB RAM Governor, AgentDB×JEV v2.3.6, Turn-0 Diet <8k, 6-Slice PR Drainer & 8-Brand Platform Batteries) | Antigravity | open |
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | open |
 | [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | Claude | processing |

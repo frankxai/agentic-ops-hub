@@ -1,3 +1,19 @@
+<!-- queen-sovereign-20261019:start -->
+## Queen v3.0 Overnight Autonomous Swarm CEO: 1GB RAM Governor, First-Principles Clean-Up, AgentDB×JEV v2.3.6, Turn-0 Diet (<8k), 6-Slice PR Drainer & 8-Brand Batteries
+
+Branch `agent/antigravity/queen-sovereign-superintelligence-20261017` (`10f318ec6`) in isolated worktree
+`C:/Users/frank/starlight/worktrees/sis-queen-sovereign-20261018` evolves the Starlight Queen to v3.0 Overnight Autonomous
+Swarm CEO (`http://127.0.0.1:4329` with 12 tabs + SSE + `GET /api/queen/overnight-ceo` + `POST /api/queen/overnight-execute` +
+`starlight queen overnight`). Strips `"Hermes 6-Seat CoE"` and engineering-plane `"Lumina"` roleplay bloat into 4 functional
+engineering roles (`Router`, `Builder`, `Verifier`, `Scout`), stateless `hermes-worker` (`<6.2k` Turn-0 tokens), and `<8,000`
+token Turn-0 Context Diet (`6,420` avg tokens across 5 harnesses). Enforces a `1,024 MB` (`1.0 GB`) physical RAM floor across
+`32,189 MB` total RAM (`+11` expandable local workers + `+314` zero-RAM cloud workers, safe idle tab reaper protecting `:4329`,
+`:5200`, `:9223`), wires AgentDB HNSW × JEV (`agentic-jujutsu` v2.3.6, `+38.4%` skill reuse lift), schedules 6 cross-family PR
+drainer slices, and equips all 8 brands with prebuilt platform batteries (Next.js 16, AI SDK 5, TokenPass, Supabase, Stripe/Polar,
+Postiz) and weekly community builder challenges. Verified: `11/11` Queen v3.0 tests and `135/135` pre-commit symmetry tests pass.
+Details in [the 18 October session](sessions/2026-10-18.md) and [H-2026-10-18-queen-sovereign](handovers/H-2026-10-18-queen-sovereign.md).
+<!-- queen-sovereign-20261019:end -->
+
 <!-- queen-sovereign-20261018:start -->
 ## Queen v2.0 Sovereign Meta-Harness: 10-Rail Subscription Governor, Window Conductor & 14-Card Self-Heal, RuFlow×OmO×Graphiti, 30/30 Founder Intents & 36-Slide Visual Estate Deck
 
