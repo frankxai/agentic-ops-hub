@@ -1,10 +1,10 @@
 <!-- federation-ab-20261018:start -->
-## Org federation: A/B ruling applied, batch 1 awaits a yes
+## Org federation: A/B ruling applied, batch 1 transferred
 
 Founder ruling 18 October: deployed repos stay on the primary account with a read-only synced org mirror (A); org-only
 repos transfer to their org (B), at most 5 per batch, each with an explicit yes. The 69 pairs are classified in a private
 plan (product-plans PR 30: 42 A, 23 B, 4 unclear). agentic-ops PR 280, stacked on PR 275, adds the enforced per-repo owner
-map and marks the SIS duplicate decision unverified. Nothing transferred yet. Private-repo CI is blocked by the Actions
+map and marks the SIS duplicate decision unverified. Batch 1 transferred the same day on the founder's yes: five public repos moved to their orgs after their mirrors were archived (registry record agentic-ops PR 281); batch 2 awaits a yes. Private-repo CI is blocked by the Actions
 budget ($80.00 net in October). Details in [the session](sessions/2026-10-18.md) and `H-org-migration`.
 <!-- federation-ab-20261018:end -->
 
