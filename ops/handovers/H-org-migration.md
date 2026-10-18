@@ -4,7 +4,7 @@ what: GitHub org migration state, measured 17 October; 63 org copies made today,
 where: agentic-ops draft PRs 273 (consolidation plan), 275 (org federation registry), 241 (Starlight org launch); hub draft PR 357
 owner: unassigned
 status: open
-note: re-measured 2026-10-18 with registry/scripts/federation-drift.mjs (agentic-ops agent/claude/federation-drift-report 2009800): 69 pairs, 61 in sync, 4 mirrors behind, 4 unrelated, 0 diverged, no private source with a public copy; the 17 October figure of 37 differing pairs is superseded. PR 275 non-maker review posted: two P0s (sync job missing; a duplicate conflict recorded as decided by the founder with no evidence).
+note: Frank ruled 2026-10-18 (A for deployed repos, frankxai canonical with a read-only synced org mirror; B for org-only repos, transfer to the org). Classification of the 69 pairs is a private plan (product-plans PR 30); the per-repo owner map plus an enforcing validator rule is agentic-ops PR 280, stacked on PR 275, which also marks the SIS duplicate decision unverified. Transfer batch 1 (5 public repos) awaits Frank's yes. Drift on 2026-10-18 was 8 of 69 pairs (federation-drift.mjs).
 updated: 2026-10-18
 ---
 
@@ -22,19 +22,38 @@ know the copies exist.
 The copies are already drifting. Of 69 same-name pairs between `frankxai` and an org, 37 have a different default-branch
 HEAD. Of today's 63 copies, 31 differ. Nothing keeps them in sync, and Dependabot opened 28 PRs on the copies within hours.
 
+Frank ruled on 18 October: copies stay only where the repo is deployed (model A), everything else moves (model B).
+
+- **A, deployed** (Vercel project, npm package, live domain, or publish workflow): `frankxai/<repo>` stays canonical.
+  The org copy is a read-only mirror kept in sync. Vercel and npm OIDC bindings stay on `frankxai`.
+- **B, org-only**: transfer `frankxai/<repo>` to its org. GitHub's redirect covers the old URL. The same-name org copy
+  must be renamed and archived first, because GitHub refuses a transfer onto an existing name. Rename, never delete.
+- Transfers run only in batches of at most 5, each with Frank's explicit yes ("yes batch 1").
+
+State on 18 October:
+
+| Item | Where | State |
+|---|---|---|
+| Classification of 69 pairs: 42 A (26 strong evidence, 16 homepage-only), 23 B, 4 unclear, 27 org-native | product-plans PR 30 (private; names private repos) | Draft. Evidence from Vercel `link.repo`, npm `repository.url`, workflows, Pages, homepage |
+| Per-repo `repository_federation` owner map and validator rule; SIS duplicate decision set to `unverified` | agentic-ops PR 280, stacked on PR 275 | Draft, cross-provider review via pr-gate |
+| Transfer batch 1: `dino-life-commons`, `mind-intelligence-systems` (Life-Commons); `agentic-architecture-field-guide`, `awesome-ai-coe` (AI-Architect-Studio); `awesome-wealth-agent-skills` (Agentic-Income) | plan section "Batch 1" | Awaiting Frank's "yes batch 1". All public, 0 open PRs, no secrets, hooks or Pages |
+
 Do these in order:
 
-1. Ask Frank one question: copies or transfers. A copy that takes its own PRs and issues splits a repo's history in two.
-   Recommendation: read-only mirrors for now. Turn off Actions, Dependabot, issues and PRs on each copy, add a README
-   banner that names the canonical `frankxai` repo, then pilot one real transfer of a low-dependency public repo by the
-   Codex crown audit method (`ops/reviews/arcanea-migration-crown-audit-20261010.md`).
-2. Once Frank rules, close the 28 Dependabot PRs on the copies and apply the freeze. Reversible; record an undo line per repo.
-3. If mirrors stay, write a sync job and a drift check (default-branch SHA per pair) that writes a heartbeat. If not,
-   archive the copies. Archiving or deleting is Frank's call.
-4. Reconcile the Registry. Either merge PR 275 together with a mirror role per repo in `repositories.yaml`, or close it.
-   Resolve the open `conflict_starlight_intelligence_system_duplicates`: there are now three copies of
-   `Starlight-Intelligence-System` (frankxai, Arcanea-Labs, Starlight-Intelligence-Systems).
-5. Then return to the consolidation waves (section Waves) and the PR backlog.
+1. When Frank says "yes batch 1", run the plan's batch 1 pre-steps, commands and verification exactly. Record an undo line
+   per repo. After each transfer, update `registry/repositories.yaml`, move the repo to `org_native_repositories`, set
+   its federation entry to `transferred_<date>`, and drop it from the sync pair list.
+2. Get Frank's answer on the SIS duplicate (`conflict_starlight_intelligence_system_duplicates`). It stays `unverified`
+   until he confirms. The proposed resolution keeps `frankxai/Starlight-Intelligence-System` canonical (model A: Vercel
+   project and npm package) with one mirror. There are two org copies, so one home has to be picked.
+3. Write the mirror sync job for the A repos. PR 275 names `org-federation-audit.mjs --sync-mirrors`, but it does not
+   exist yet. It needs a heartbeat and a drift check (default-branch SHA per pair). On 18 October four mirrors were
+   behind. GitHub cannot disable PRs on a repo, so the job closes stray PRs on mirrors.
+4. Merge PR 280 into PR 275, then land PR 275 through pr-gate. Its two P0s from the non-maker review: the sync job is
+   missing (step 3), and the founder decision is now unverified (PR 280).
+5. Decide the 4 unclear pairs with Frank: `arcanea-plugins`, `arcanea-orchestrator`, `oci-ai-architect`, and one private
+   AI-Architect-Academy pair. Before batch 5, re-check `FrankX`: it carries a `vercel.json`, but no Vercel project links it.
+6. Then return to the consolidation waves (section Waves) and the PR backlog.
 
 Human-only, never agent: transfers, repo visibility, deleting or archiving copies, org base permission, billing and
 budgets, branch protection, Vercel project rebinding. Agent-doable: Registry and README edits, mirror banners, drift
