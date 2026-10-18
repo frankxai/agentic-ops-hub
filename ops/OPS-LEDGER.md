@@ -1,17 +1,18 @@
 <!-- queen-sovereign-20261018:start -->
-## Queen v2.0 Sovereign Meta-Harness: 10-Rail Subscription Governor, Window Conductor & 14-Card Self-Heal, RuFlow×OmO×Graphiti & 30/30 Founder Intents
+## Queen v2.0 Sovereign Meta-Harness: 10-Rail Subscription Governor, Window Conductor & 14-Card Self-Heal, RuFlow×OmO×Graphiti, 30/30 Founder Intents & 36-Slide Visual Estate Deck
 
-Branch `agent/antigravity/queen-sovereign-superintelligence-20261017` (`bf204b978`) in isolated worktree
+Branch `agent/antigravity/queen-sovereign-superintelligence-20261017` (`642262cad`) in isolated worktree
 `C:/Users/frank/starlight/worktrees/sis-queen-sovereign-20261018` ships the Starlight Queen v2.0 Sovereign Meta-Harness,
 11-tab live cockpit (`http://127.0.0.1:4329` with SSE), 10-rail OAuth Subscription Max-Out & Cloud Burst Governor (`10.5x`
 leverage across Claude Max 20x, Codex Pro/Cloud, Google AI Ultra/Jules, SuperGrok, Meta Muse Wonder, OpenCode Zen Arena,
 Vercel TokenPass, Cloudflare Durable Agents, and Layer-0 Rust), Open-Window CLI Prompt Conductor (`.starlight/steered-prompts/`
 for 6 active windows), 14/14 Stuck Control-Plane Card Self-Healer (`queen/inbox/_hold-admission/*.json`), 6-Server vMCP
 Unifier (`-88.7%` schema bloat) + `memory-mcp` shard healing, Absorbed RuFlow v3 × OmO 11-Role × AgentDB+Graphiti Bi-Temporal
-Spine, and 30/30 Founder Intents (`I-001`..`I-030`) unblocked under canonical `TRUTH.md` Freedom Engine doctrine. Verified:
-`10/10` Queen v2.0 tests, `3/3` temporal spine tests, `7/7` gateway tests, `5/5` org federation tests (`71/71` local checkouts
-wired), and `135/135` pre-commit symmetry tests pass. Details in [the 18 October session](sessions/2026-10-18.md) and
-[H-2026-10-18-queen-sovereign](handovers/H-2026-10-18-queen-sovereign.md).
+Spine, 30/30 Founder Intents (`I-001`..`I-030`) unblocked under canonical `TRUTH.md` Freedom Engine doctrine, and the
+30-Surface Visual Estate Auditor (`tools/queen/capture-estate-screenshots.mjs`) + 36-Slide `.pptx`/HTML5 CEO & Investor Deck
+Generator (`tools/queen/executive-snapshot-deck.mjs`). Verified: `10/10` Queen v2.0 tests, `3/3` temporal spine tests, `7/7`
+gateway tests, `5/5` org federation tests (`71/71` local checkouts wired), and `135/135` pre-commit symmetry tests pass.
+Details in [the 18 October session](sessions/2026-10-18.md) and [H-2026-10-18-queen-sovereign](handovers/H-2026-10-18-queen-sovereign.md).
 <!-- queen-sovereign-20261018:end -->
 
 <!-- operating-model-20261017:start -->
