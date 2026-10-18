@@ -3,9 +3,9 @@ id: H-turn0-budget
 what: Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design
 where: ~/.claude, ~/.codex, ~/.gemini plugins, Hermes skill dirs, starlight/AGENTS.md
 owner: unassigned
-status: open
-note: measured 2026-10-17 from disk, tokens = bytes/4 (likely 10 to 25 percent low); harness built-in prompts excluded
-updated: 2026-10-17
+status: processing
+note: 2026-10-18: Codex -9.4k tokens (416 duplicate skill junctions removed), Gemini now loads AGENTS.md, RTK hook installed (Bash tool only), Nucleus doctrine compiler prototype on starlight-agent-config agent/claude/starlight-nucleus 1f20577 (keeping every binding rule needs ~23 KB per core). Hermes deny list and Antigravity plugins are Frank's call.
+updated: 2026-10-18
 ---
 
 ## Prompt
