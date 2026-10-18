@@ -1,3 +1,18 @@
+<!-- queen-sovereign-20261018:start -->
+## Queen v1.0 Sovereign Superintelligence, 10-Org Federation (71/71 local remotes wired) & 151-Agent Master Codex
+
+Branch `agent/antigravity/queen-sovereign-superintelligence-20261017` (`346a4ed0e`) in isolated worktree
+`C:/Users/frank/starlight/worktrees/sis-queen-sovereign-20261018` ships the Starlight Queen v1.0 Sovereign Engine,
+8-tab live cockpit (`http://127.0.0.1:4329` with SSE), native compiled Rust Layer-0 binary binding (`starlight.exe`,
+`96.9%` context bloat reduction), 8-Brand × 8-Moat Switchboard (`64` cells), Pareto + Thompson router with Cross-Family
+`Maker != Checker`, and the Sovereign Master Codex (`10` GitHub Orgs / `71` mapped repos, `151` Named Agents across `10`
+tiers, `12` Canonical Truths & Anti-Drift Gates, and `Now / 2h / 12h / 1w / Q4 2026` horizon plans). Converged sibling
+breakthroughs: `TemporalFactSpine` (`b4f20cb16`), gateway dead-PID lock recovery (`bdf9042a6`), OpenCode R5 Free Arena
+(`77cb3de71`), and 10-Org Federation (`0ac4790e7`, `71/71` local checkouts wired via `--wire-local`). Verified: `7/7` Queen
+tests, `3/3` temporal spine tests, `5/5` org federation tests, and `135/135` pre-commit symmetry tests pass. Details in
+[the 18 October session](sessions/2026-10-18.md) and [H-2026-10-18-queen-sovereign](handovers/H-2026-10-18-queen-sovereign.md).
+<!-- queen-sovereign-20261018:end -->
+
 <!-- operating-model-20261017:start -->
 ## Hub: handovers are files, the prompt list is generated, lint runs in CI
 
