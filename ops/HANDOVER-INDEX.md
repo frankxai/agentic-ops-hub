@@ -45,6 +45,7 @@ handover is `processed` or `superseded` is moved out of `NEXT-PROMPTS.md` into `
 <!-- handover-index:start -->
 | Id | What | Where | Owner | Status |
 |---|---|---|---|---|
+| [2026-10-18-portfolio-visual-review](handovers/2026-10-18-portfolio-visual-review.md) | Complete fresh portfolio site captures in the existing Observatory | Starlight-Intelligence/starlight-command-center issue 59 | codex | open; Private dated review prepared; current browser capture held |
 | [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | prompt below | unknown | open-unverified; not reconciled since the split |
 | [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | prompt below | unknown | open-unverified; not reconciled since the split |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | prompt below | unknown | open-unverified; not reconciled since the split |

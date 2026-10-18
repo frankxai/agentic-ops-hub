@@ -1,3 +1,19 @@
+<!-- portfolio-visual-review-20261018:start -->
+## Portfolio visual review: dated evidence prepared, fresh capture held
+
+The private review connects 237 immediate-child local Git roots, 510 GitHub repository metadata rows across the account
+and ten exposed organisations, 226 root READMEs, 29,857 tracked document paths, 1,612 Drive document metadata rows,
+25 saved objectives and 39 current HTTP observations. Fifteen historical screenshot references are preserved unchanged;
+fresh screenshots remain zero. Browser QA is held, the in-app browser is unavailable and Cloudflare subscription
+inspection failed authentication. The dated presentation passes package/XML/relationship/hash checks; native rendering,
+fresh interaction acceptance, production binding, independent review and commercial outcomes remain open.
+
+Use [the existing site-wall issue](https://github.com/Starlight-Intelligence/starlight-command-center/issues/59),
+[the handover](handovers/2026-10-18-portfolio-visual-review.md) and [the session](sessions/2026-10-18.md).
+The private evidence pack is a review export, not a new dashboard or source of portfolio authority.
+No production change, paid cloud capture, scheduler or new worker was started. Other owners' work remains intact.
+<!-- portfolio-visual-review-20261018:end -->
+
 <!-- operating-model-20261017:start -->
 ## Hub: handovers are files, the prompt list is generated, lint runs in CI
 
