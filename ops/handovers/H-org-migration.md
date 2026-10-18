@@ -4,8 +4,8 @@ what: GitHub org migration state, measured 17 October; 63 org copies made today,
 where: agentic-ops draft PRs 273 (consolidation plan), 275 (org federation registry), 241 (Starlight org launch); hub draft PR 357
 owner: unassigned
 status: open
-note: first decision is Frank's (copies or transfers); every count below came from gh on 2026-10-17 and goes stale fast
-updated: 2026-10-17
+note: re-measured 2026-10-18 with registry/scripts/federation-drift.mjs (agentic-ops agent/claude/federation-drift-report 2009800): 69 pairs, 61 in sync, 4 mirrors behind, 4 unrelated, 0 diverged, no private source with a public copy; the 17 October figure of 37 differing pairs is superseded. PR 275 non-maker review posted: two P0s (sync job missing; a duplicate conflict recorded as decided by the founder with no evidence).
+updated: 2026-10-18
 ---
 
 ## Prompt
@@ -81,7 +81,7 @@ repos were last pushed on 27 August, so it is still dormant.
 | Registry main `repositories.yaml` | Owner of record is `frankxai` for all 73 | True. No repo moved. Copies are unregistered |
 | Registry conflict list | `Arcanea-Labs/Starlight-Intelligence-System` unresolved | Still unresolved; a third copy now exists in Starlight-Intelligence-Systems |
 | PR 273 plan, section Orgs | Six orgs empty, leave dormant | Superseded the same day by the copies |
-| PR 275 federation | Nine orgs dual-remote, org copy kept in step | 37 of 69 pairs out of step; no sync job or heartbeat found |
+| PR 275 federation | Nine orgs dual-remote, org copy kept in step | 37 of 69 pairs out of step on 17 October; 8 of 69 on 18 October (federation-drift.mjs); no sync job or heartbeat found |
 | Crown audit, 10 October | Hold bulk transfers; pilot one public repo | No transfer and no pilot. Bulk copying went around the hold |
 | PR 241 (Codex) | Starlight-Intelligence org identity and publishing standards | Open, not merged |
 
