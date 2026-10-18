@@ -2,9 +2,9 @@
 id: H-mcp-health
 what: Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing
 where: starlight-memory-vault, Prisma plugin config, Langfuse plan, desktop-commander plugin
-owner: unassigned
-status: open
-note: health check now does a real initialize (estate-root branch agent/claude/mcp-health-handshake, 8dd9ce2, not pushed: estate-root write target is the founder's call)
+owner: Antigravity
+status: processing
+note: Live Shared Tool Plane (127.0.0.1:7317) restored to 4/4 ready (38 tools) after deduplicating taste-feedback index from 257KB to 23.4KB; Infisical EU re-authenticated + Langfuse local OTLP spooler on starlight-agent-config PR #128 (b46bd37); JSON-RPC probe on starlight-estate PR #54 (e6f4727); cloud-projection guard on starlight-memory PR #41 (8a593c0)
 updated: 2026-10-17
 ---
 

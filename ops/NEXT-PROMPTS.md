@@ -6,15 +6,11 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open |
+| [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open |
+| [queen-bus-live-gaps-20261014](handovers/queen-bus-live-gaps-20261014.md) | Resume full Queen goal from verified admission and protected runtime | unknown | open |
+| [starlight-delivery-20261010](handovers/starlight-delivery-20261010.md) | Starlight: review and release Supabase auth, then prove live account activation | unknown | open |
+| [v0-design-programme-20261011](handovers/v0-design-programme-20261011.md) | Deliver one accepted agent/Cloud pilot and design slice | unknown | open |
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
-| [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | open |
-| [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | Claude | processing |
-| [H-turn0-budget](handovers/H-turn0-budget.md) | Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design | unassigned | open |
-| [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified |
-| [queen-bus-live-gaps-20261014](handovers/queen-bus-live-gaps-20261014.md) | Resume full Queen goal from verified admission and protected runtime | unknown | open-unverified |
-| [sis-swarm-topology-and-demand-doors-20261014](handovers/sis-swarm-topology-and-demand-doors-20261014.md) | Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run | unknown | open-unverified |
-| [estate-lifecycle-pulse-1-20261013](handovers/estate-lifecycle-pulse-1-20261013.md) | Run estate pulse #1 against the lifecycle registry | unknown | open-unverified |
-| [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open-unverified |
-| [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | unknown | open-unverified |
-| [v0-design-programme-20261011](handovers/v0-design-programme-20261011.md) | Deliver one accepted agent/Cloud pilot and design slice | unknown | open-unverified |
-| [starlight-delivery-20261010](handovers/starlight-delivery-20261010.md) | Starlight: review and release Supabase auth, then prove live account activation | unknown | open-unverified |
+| [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | Antigravity | processing |
+| [H-turn0-budget](handovers/H-turn0-budget.md) | Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design | Antigravity | processing |

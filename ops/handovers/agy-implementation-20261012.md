@@ -3,9 +3,9 @@ id: agy-implementation-20261012
 what: AGY: verify the committed operator workflow
 where: prompt below
 owner: unknown
-status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-12
+status: open
+note: Verified 2026-10-18: Starlight-Visual-Studio#2 open
+updated: 2026-10-18
 ---
 
 ## Prompt

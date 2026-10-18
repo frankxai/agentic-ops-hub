@@ -3,9 +3,10 @@ id: estate-lifecycle-pulse-1-20261013
 what: Run estate pulse #1 against the lifecycle registry
 where: prompt below
 owner: unknown
-status: open-unverified
+status: superseded
 note: not reconciled since the split
-updated: 2026-10-13
+superseded_by: H-estate-consolidation
+updated: 2026-10-18
 ---
 
 ## Prompt

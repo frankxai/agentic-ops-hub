@@ -3,9 +3,9 @@ id: v0-design-programme-20261011
 what: Deliver one accepted agent/Cloud pilot and design slice
 where: prompt below
 owner: unknown
-status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-11
+status: open
+note: Verified 2026-10-18: starlight-v0#2 open; supersedes H-v0-npm
+updated: 2026-10-18
 ---
 
 ## Prompt
