@@ -41,7 +41,7 @@ State on 18 October:
 Do these in order:
 
 1. Batch 1 is done (see table). Merge agentic-ops PR 281 into PR 275 if it is still open. Batch 2 (`ai-coe`,
-   `claude-code-hooks`, `publishing-house`, `starlight-android`, `awesome-agentic-income`) runs only on Frank's
+   `claude-code-hooks`, `publishing-house`, `awesome-agentic-income`, plus one private Starlight-Intelligence repo) runs only on Frank's
    "yes batch 2", by the same steps. Fix `federation-drift.mjs` first: `gh api repos/frankxai/<r>` now follows the
    redirect, so it can pair a transferred repo with itself.
 2. Get Frank's answer on the SIS duplicate (`conflict_starlight_intelligence_system_duplicates`). It stays `unverified`
