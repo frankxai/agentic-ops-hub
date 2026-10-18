@@ -3,9 +3,9 @@ id: H-mcp-health
 what: Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing
 where: starlight-memory-vault, Prisma plugin config, Langfuse plan, desktop-commander plugin
 owner: unassigned
-status: open
-note: health check now does a real initialize (estate-root branch agent/claude/mcp-health-handshake, 8dd9ce2, not pushed: estate-root write target is the founder's call)
-updated: 2026-10-17
+status: processing
+note: 2026-10-18: starlight-memory answers initialize again (0.2.0, 3 tools; index file 23 KB). Real-handshake checker 8dd9ce2 and bridge/sis/nano-banana registry fixes be00621 sit on local estate-root branches awaiting the push ruling; sharded generator 21b478e local. Prisma-Local pin and Langfuse quota still Frank's.
+updated: 2026-10-18
 ---
 
 ## Prompt

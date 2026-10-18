@@ -4,8 +4,8 @@ what: Resume full Queen goal from verified admission and protected runtime
 where: prompt below
 owner: unknown
 status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-14
+note: 2026-10-18: bridge front door fixed on agentic-ops agent/claude/bridge-queen-envelope 0f71b11 (Grok pass after 3 blocks); Queen evidence scope bdbf832 on a local estate-root branch; one e2e read-only card admitted in queen/inbox.
+updated: 2026-10-18
 ---
 
 ## Prompt
