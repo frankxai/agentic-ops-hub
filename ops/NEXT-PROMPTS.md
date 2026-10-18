@@ -6,6 +6,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [Programme-control-Codex-2026-10-19-v1](handovers/Programme-control-Codex-2026-10-19-v1.md) | Lead the existing interface and outcome programme from current acceptance evidence | codex | open |
 | [2026-10-18-portfolio-visual-review](handovers/2026-10-18-portfolio-visual-review.md) | Complete fresh portfolio site captures in the existing Observatory | codex | open |
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | open |

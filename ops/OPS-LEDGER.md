@@ -1,3 +1,13 @@
+<!-- founder-programme-20261019:start -->
+## Founder programme: here first, Slack later
+
+Codex records the founder's explicit interface choice and the requested larger delivery programme. Continue the existing
+interface, visual evidence and recoverable execution work through current owners and issues. The private dated programme
+distinguishes actual capability evidence from planned integration. No new runtime, team or recurring process was activated.
+The wider outcome remains open. Use the [19 October session](sessions/2026-10-19.md) and
+[programme pickup](handovers/Programme-control-Codex-2026-10-19-v1.md).
+<!-- founder-programme-20261019:end -->
+
 <!-- portfolio-visual-review-20261018:start -->
 ## Portfolio visual review: dated evidence prepared, fresh capture held
 
