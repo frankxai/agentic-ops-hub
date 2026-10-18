@@ -3,9 +3,9 @@ id: claude-queen-second-identity-20261014
 what: Queen: create the second identity, then make one accepted recoverable task
 where: prompt below
 owner: unknown
-status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-14
+status: open
+note: Verified 2026-10-18: SIS#399 open
+updated: 2026-10-18
 ---
 
 ## Prompt

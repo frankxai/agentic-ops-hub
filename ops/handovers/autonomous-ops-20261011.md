@@ -3,9 +3,10 @@ id: autonomous-ops-20261011
 what: Operations: verify adoption and finish one useful cost or production improvement
 where: prompt below
 owner: unknown
-status: open-unverified
+status: superseded
 note: not reconciled since the split
-updated: 2026-10-11
+superseded_by: H-2026-10-17-triage
+updated: 2026-10-18
 ---
 
 ## Prompt

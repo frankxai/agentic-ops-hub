@@ -3,9 +3,9 @@ id: queen-bus-live-gaps-20261014
 what: Resume full Queen goal from verified admission and protected runtime
 where: prompt below
 owner: unknown
-status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-14
+status: open
+note: Verified 2026-10-18: SIS#403 open; supersedes H-queen
+updated: 2026-10-18
 ---
 
 ## Prompt

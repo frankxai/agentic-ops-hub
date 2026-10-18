@@ -3,9 +3,10 @@ id: sis-swarm-topology-and-demand-doors-20261014
 what: Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run
 where: prompt below
 owner: unknown
-status: open-unverified
+status: processed
 note: not reconciled since the split
-updated: 2026-10-14
+evidence: https://github.com/frankxai/Starlight-Intelligence-System/pull/406
+updated: 2026-10-18
 ---
 
 ## Prompt

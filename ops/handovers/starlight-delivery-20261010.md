@@ -3,9 +3,9 @@ id: starlight-delivery-20261010
 what: Starlight: review and release Supabase auth, then prove live account activation
 where: prompt below
 owner: unknown
-status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-10
+status: open
+note: Verified 2026-10-18: starlight-delivery#1 open
+updated: 2026-10-18
 ---
 
 ## Prompt
