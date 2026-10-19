@@ -13,6 +13,67 @@ nothing merged, independent checker outstanding. Placement A/B/C is
 A later); interface note on [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
 Session: `ops/sessions/2026-10-19.md`.
 <!-- queen-open-kernel-20261019:end -->
+<!-- queen-converge-20261019:start -->
+## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
+
+The Queen loop ran code that matched no commit; starlight-estate PR 60 holds it as it runs. Codex and
+Antigravity both blocked the first head on real defects (process liveness, tab closing, file and
+dispatch routes, headless RAM admission, -MinFreeGB, codex/ branches); all are fixed, Codex passed
+the third round and the PR is gate-clear for a non-Claude merge. A read-only seat-phase reader names
+finished seats and the memory they hold. The 4096 MB floor is unchanged. Founder items are in
+[the session](sessions/2026-10-19.md).
+<!-- queen-converge-20261019:end -->
+
+<!-- estate-drain-20261019:start -->
+## Estate drain: 5 merges through pr-gate, invented advisory IDs found in 16 PRs
+
+Five public PRs merged with Grok or Codex as checker (one verified in production), three closed as empty or duplicate,
+and fixes pushed to four more. Three advisory IDs cited by 16 Next.js security PRs from 14 October do not exist; the real
+ones are posted on the open PRs. Private CI stays blocked (no Blacksmith runner), SIS PRs need a review receipt no headless
+reviewer can post, and federation drift is 50 of 59 pairs in sync with no mirror PRs to close. Founder items with commands
+are in [the session](sessions/2026-10-19.md).
+<!-- estate-drain-20261019:end -->
+
+<!-- estate-pulse-spend-planner-20261019:start -->
+## Estate pulse: true numbers in the terminal, spend planner placed, one CLI from many packages
+
+frankx.ai had recorded zero pageviews since 13 July; the cause and fix are in frankx.ai-vercel-website PR 1068. The token
+tracker moved to the Starlight-Intelligence org and ships `starlight-spend` and `starlight-plan` (PR 21); SIS PR 462 lets
+`starlight <name>` run any installed `starlight-<name>` command; agentic-ops PR 283 records the owner. Org repositories run
+CI on their own allowance while personal private repositories stay blocked. Details in [the session](sessions/2026-10-19.md).
+<!-- estate-pulse-spend-planner-20261019:end -->
+
+<!-- federation-ab-20261018:start -->
+## Org federation: A/B ruling applied, batch 1 transferred
+
+Founder ruling 18 October: deployed repos stay on the primary account with a read-only synced org mirror (A); org-only
+repos transfer to their org (B), at most 5 per batch, each with an explicit yes. The 69 pairs are classified in a private
+plan (product-plans PR 30: 42 A, 23 B, 4 unclear). agentic-ops PR 280, stacked on PR 275, adds the enforced per-repo owner
+map and marks the SIS duplicate decision unverified. Batch 1 transferred the same day on the founder's yes: five public repos moved to their orgs after their mirrors were archived (registry record agentic-ops PR 281); batch 2 awaits a yes. Private-repo CI is blocked by the Actions
+budget ($80.00 net in October). Details in [the session](sessions/2026-10-18.md) and `H-org-migration`.
+<!-- federation-ab-20261018:end -->
+
+<!-- operating-model-20261017:start -->
+## Hub: handovers are files, the prompt list is generated, lint runs in CI
+
+`NEXT-PROMPTS.md` went from 2,102 lines to a generated list of 25; 35 handovers now live in `ops/handovers/`, the retired
+1,848 unmarked lines are kept verbatim in `ops/archive/prompts/`, and `node scripts/handover.mjs lint` (nine failure-path
+tests) runs in CI. Local cleanup with receipts under `~/.starlight/operations/cleanup-receipts/`: 34 worktree stubs pruned,
+4 clean merged worktrees removed, 182 stale non-git scratch folders (2.9 GB) moved to `scratch/_archive/2026-10-17/`. Not
+pushed: this machine has no GitHub credential (`gh` 401). Details in [the session](sessions/2026-10-17.md).
+<!-- operating-model-20261017:end -->
+
+<!-- restart-pack-20261017:start -->
+## Estate triage: queue growth, unprotected local work, no intent store
+
+Read-only triage on 17 October 2026 (details in [the session](sessions/2026-10-17.md)). Open PRs grew from 432 to 803 in four
+weeks against a budget of 10 per repository. A sweep of 607 repositories and worktrees found 226 with unsaved or unpushed
+work and 79 folders with no version control; no lane claim covered any of them. `~/reality.md` was missing, and no durable
+store maps the founder's stated intents to repositories and PRs. Peak Performance held parallel work (3.3 GB free), so the
+pass ran as sequential reads. Prepared, not applied: a restart runbook, a redacted prompt corpus, an at-risk manifest,
+a seeded intent ledger and a proposed `reality.md` that passes the validator at level 4. Nothing was pushed, closed, merged
+or deleted elsewhere. The hub was over its PR budget, so this change is a pushed branch without a PR.
+<!-- restart-pack-20261017:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired

@@ -1,0 +1,8 @@
+---
+id: H-ai-team-products
+what: Free / EUR 1 / EUR 7 AI team product ladder
+where: `agent/codex/product-lifecycle-handover-20261017`; FrankX issue 279, draft PR 280
+owner: Codex
+status: open
+updated: 2026-10-17
+---

@@ -1,0 +1,174 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, appendFileSync, symlinkSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { create, regenerate, lint, setStatus, parseHandover, parseArgs, paths } from '../scripts/handover.mjs';
+
+function fixture() {
+  const root = mkdtempSync(join(tmpdir(), 'handover-'));
+  mkdirSync(join(root, 'ops'), { recursive: true });
+  writeFileSync(join(root, 'ops', 'HANDOVER-INDEX.md'), '# Index\n\n<!-- handover-index:start -->\n<!-- handover-index:end -->\n\n## Rules\n');
+  writeFileSync(join(root, 'ops', 'NEXT-PROMPTS.md'), '');
+  create(root, { id: 'H-a', what: 'First', where: 'branch x', owner: 'claude', updated: '2026-10-17' }, '\n## Prompt\n\nDo the thing.\n');
+  create(root, { id: 'H-b', what: 'Second | piped', where: 'branch y', owner: 'codex', updated: '2026-10-16' });
+  regenerate(root);
+  return root;
+}
+
+test('a freshly generated hub lints clean', () => {
+  assert.deepEqual(lint(fixture()), []);
+});
+
+test('index lists every handover and escapes pipes; prompt list holds only live handovers with a prompt', () => {
+  const root = fixture();
+  const index = readFileSync(paths(root).index, 'utf8');
+  assert.match(index, /\[H-a\]\(handovers\/H-a\.md\)/);
+  assert.match(index, /Second \\\| piped/);
+  const prompts = readFileSync(paths(root).prompts, 'utf8');
+  assert.match(prompts, /H-a/);
+  assert.doesNotMatch(prompts, /H-b/);
+});
+
+test('hand-editing NEXT-PROMPTS.md fails lint', () => {
+  const root = fixture();
+  appendFileSync(paths(root).prompts, '\n## Current npm prompt\n\nembedded again\n');
+  assert.ok(lint(root).some((e) => e.includes('NEXT-PROMPTS.md is stale or hand-edited')));
+});
+
+test('a repeated heading and an oversized section are both reported', () => {
+  const root = fixture();
+  const long = Array.from({ length: 61 }, (_, i) => `line ${i}`).join('\n');
+  appendFileSync(paths(root).prompts, `\n## Same\n${long}\n## Same\nx\n`);
+  const errors = lint(root);
+  assert.ok(errors.some((e) => /section "## Same" is 61 lines/.test(e)), errors.join('\n'));
+  assert.ok(errors.some((e) => /repeats heading/.test(e)), errors.join('\n'));
+});
+
+test('processed without evidence is refused on write and fails lint when hand-written', () => {
+  const root = fixture();
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { today: '2026-10-17' }), /processed needs evidence/);
+  writeFileSync(join(paths(root).dir, 'H-a.md'), '---\nid: H-a\nwhat: First\nstatus: processed\n---\n');
+  regenerate(root);
+  assert.ok(lint(root).some((e) => e.includes('H-a: processed without an evidence link')));
+  setStatus(root, 'H-a', 'processed', { evidence: 'https://github.com/frankxai/agentic-ops-hub/pull/1', today: '2026-10-17' });
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+});
+
+test('evidence must be a URL or an existing repository path', () => {
+  const root = fixture();
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'true' }), /neither an http\(s\) URL nor a repository-relative file path/);
+  writeFileSync(join(paths(root).dir, 'H-a.md'), '---\nid: H-a\nwhat: First\nstatus: processed\nevidence: true\n---\n');
+  regenerate(root);
+  assert.ok(lint(root).some((e) => e.includes('evidence "true"')));
+  setStatus(root, 'H-a', 'processed', { evidence: 'ops/HANDOVER-INDEX.md' });
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+});
+
+test('evidence outside the repository, a directory or a hostless URL is refused', () => {
+  const root = fixture();
+  for (const bad of ['../../../../AGENTS.md', '.', 'ops', 'https://?', 'http://', 'ftp://example.com/x', 'true']) {
+    assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: bad }), /neither an http\(s\) URL nor a repository-relative file path/, bad);
+  }
+  setStatus(root, 'H-a', 'processed', { evidence: 'https://github.com/frankxai/agentic-ops-hub/pull/9' });
+});
+
+test('headings inside a fenced code block are content, not sections', () => {
+  const root = fixture();
+  create(root, { id: 'H-fence', what: 'Fence', where: 'x', owner: 'codex' }, '\n## Prompt\n\n```md\n## Example\na\n## Example\nb\n```\n');
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+});
+
+test('evidence reached through a junction or symlink that leaves the repository is refused', () => {
+  const root = fixture();
+  const outside = mkdtempSync(join(tmpdir(), 'outside-'));
+  writeFileSync(join(outside, 'receipt.md'), 'x');
+  symlinkSync(outside, join(root, 'link'), 'junction');
+  assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: 'link/receipt.md' }), /repository-relative/);
+});
+
+test('absolute and drive-rooted evidence paths are refused even inside the repository', () => {
+  const root = fixture();
+  const inside = join(root, 'ops', 'HANDOVER-INDEX.md');
+  for (const bad of [inside, inside.replace(/^[A-Za-z]:/, ''), '\\ops\\HANDOVER-INDEX.md']) {
+    assert.throws(() => setStatus(root, 'H-a', 'processed', { evidence: bad }), /repository-relative/, bad);
+  }
+});
+
+test('a dangling supersedes, a trailing backslash cell and a CRLF body are handled', () => {
+  const root = fixture();
+  writeFileSync(join(paths(root).dir, 'H-e.md'), '---\r\nid: H-e\r\nwhat: ends\\\r\nstatus: open\r\nsupersedes: H-missing\r\n---\r\n\r\n## Prompt\r\n\r\nx\r\n');
+  regenerate(root);
+  assert.ok(lint(root).some((e) => e.includes('supersedes H-missing has no file')));
+  assert.match(readFileSync(paths(root).index, 'utf8'), /\| ends\\\\ \|/);
+  assert.doesNotMatch(parseHandover(readFileSync(join(paths(root).dir, 'H-e.md'), 'utf8')).body, /\r/);
+});
+
+test('fences match by character and length, and a fenced-only prompt is not a pickup', () => {
+  const root = fixture();
+  create(root, { id: 'H-four', what: 'Four', where: 'x', owner: 'codex' }, '\n## Prompt\n\n````md\n```\n## Example\n```\n## Example\n````\n');
+  create(root, { id: 'H-hidden', what: 'Hidden', where: 'x', owner: 'codex' }, '\n```\n## Prompt\n```\n');
+  regenerate(root);
+  assert.deepEqual(lint(root), []);
+  const prompts = readFileSync(paths(root).prompts, 'utf8');
+  assert.doesNotMatch(prompts, /H-hidden/);
+  assert.match(prompts, /H-four/);
+});
+
+test('a flag with no value, an unknown flag and --flag=value are all handled', () => {
+  assert.throws(() => parseArgs(['process', 'H-x', '--evidence']), /--evidence needs a value/);
+  assert.throws(() => parseArgs(['status', 'H-x', 'open', '--note', '--pending']), /--note needs a value/);
+  assert.throws(() => parseArgs(['claim', 'H-x', '--evidence', 'x']), /claim does not take --evidence/);
+  assert.equal(parseArgs(['status', 'H-x', 'open', '--note=--pending review']).note, '--pending review');
+});
+
+test('a handover body with an oversized or repeated section fails lint', () => {
+  const root = fixture();
+  const long = Array.from({ length: 61 }, (_, i) => `line ${i}`).join('\n');
+  create(root, { id: 'H-long', what: 'Long', where: 'x', owner: 'codex' }, `\n## Prompt\n${long}\n## Same\nx\n## Same\ny\n`);
+  regenerate(root);
+  const errors = lint(root);
+  assert.ok(errors.some((e) => /handovers\/H-long\.md:\d+ section "## Prompt" is 61 lines/.test(e)), errors.join('\n'));
+  assert.ok(errors.some((e) => /handovers\/H-long\.md:\d+ repeats heading/.test(e)), errors.join('\n'));
+});
+
+test('CRLF checkouts of generated files are not reported stale', () => {
+  const root = fixture();
+  for (const f of [paths(root).index, paths(root).prompts]) writeFileSync(f, readFileSync(f, 'utf8').replace(/\n/g, '\r\n'));
+  assert.deepEqual(lint(root), []);
+});
+
+test('superseded needs a target that exists', () => {
+  const root = fixture();
+  setStatus(root, 'H-b', 'superseded', { by: 'H-missing', today: '2026-10-17' });
+  regenerate(root);
+  assert.ok(lint(root).some((e) => e.includes('superseded_by H-missing has no file')));
+});
+
+test('a handover file added without regenerating makes the index stale', () => {
+  const root = fixture();
+  create(root, { id: 'H-c', what: 'Third', where: 'z', owner: 'grok' });
+  assert.ok(lint(root).some((e) => e.includes('HANDOVER-INDEX.md table is stale')));
+});
+
+test('unknown status and mismatched id are rejected', () => {
+  const root = fixture();
+  writeFileSync(join(paths(root).dir, 'H-d.md'), '---\nid: H-other\nstatus: maybe\n---\n');
+  regenerate(root);
+  const errors = lint(root);
+  assert.ok(errors.some((e) => e.includes('does not match file name')));
+  assert.ok(errors.some((e) => e.includes('status "maybe"')));
+  assert.throws(() => setStatus(root, 'H-a', 'maybe'), /unknown status/);
+});
+
+test('frontmatter round-trips and body is kept', () => {
+  const root = fixture();
+  setStatus(root, 'H-a', 'claimed', { owner: 'grok', today: '2026-10-18' });
+  const h = parseHandover(readFileSync(join(paths(root).dir, 'H-a.md'), 'utf8'));
+  assert.equal(h.meta.owner, 'grok');
+  assert.equal(h.meta.updated, '2026-10-18');
+  assert.match(h.body, /Do the thing\./);
+});
