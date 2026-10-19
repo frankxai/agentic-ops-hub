@@ -6,6 +6,8 @@ interface, visual evidence and recoverable execution work through current owners
 distinguishes actual capability evidence from planned integration. No new runtime, team or recurring process was activated.
 The wider outcome remains open. Use the [19 October session](sessions/2026-10-19.md) and
 [programme pickup](handovers/Programme-control-Codex-2026-10-19-v1.md).
+Follow-through: a focused interface startup repair is source-tested and retained on its own branch, with review references
+in the existing private issue. Independent review, actual app verification and release remain pending; no service was replaced.
 <!-- founder-programme-20261019:end -->
 
 <!-- portfolio-visual-review-20261018:start -->

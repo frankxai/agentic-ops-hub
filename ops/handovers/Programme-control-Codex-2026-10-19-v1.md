@@ -4,7 +4,7 @@ what: Lead the existing interface and outcome programme from current acceptance 
 where: Existing Command Center and owning product issues
 owner: codex
 status: open
-note: Founder chose this conversation first and Slack later; programme remains in progress
+note: Startup repair source-tested; independent review and interface acceptance remain open
 evidence: https://github.com/Starlight-Intelligence/starlight-command-center/issues/62
 updated: 2026-10-19
 ---
@@ -21,6 +21,10 @@ A private source-linked programme now connects the existing interface, visual re
 
 This public handover deliberately excludes private source bodies, account information and operational strategy. Retrieve the private evidence through the authorized local workspace. Continue through the current product issues and decision register; a programme document does not close those outcomes.
 
+## Runtime follow-through
+
+Updated by Codex on 19 October 2026, revision 2. The existing private product issue now links an isolated source repair and focused startup/failure/recovery verification. Independent review, full app build, installed behavior and visual acceptance remain pending. Current machine admission holds new concurrency. No service was replaced or released; no broader programme outcome was closed.
+
 ## Prompt
 
-Read the 19 October founder programme and baseline in the existing private portfolio evidence folder, then the current owning repo instructions and issue acceptance. Honour the founder's here-first interface choice. Verify the runtime entrance and source identity, reconcile the existing interface dependencies and complete one consequential user journey in an admitted, exclusively owned lane. Preserve the existing visual capture and runtime owners, obtain exact-revision independent review and report outcomes rather than activity counts. Keep the full programme open until its acceptance is demonstrated. Save the result in this hub and update the existing product issue; do not create another platform, duplicate umbrella issue or unapproved recurring process.
+Read the 19 October private programme, runtime repair review and current product issue, then the owning repo instructions. Honour the founder's here-first choice. Recheck admission, review the linked startup repair at its exact revision and verify build, package and actual runtime behavior before promotion. Identify the current service owner without replacing it implicitly. Reconcile existing interface dependencies and finish the consequential founder task/result/restart journey in an exclusive lane. Preserve the visual capture and Queen owners. Keep the full programme open and save evidence here and in the existing product issue. Do not create another platform, duplicate umbrella issue or unapproved recurring process.
