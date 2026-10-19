@@ -1,3 +1,18 @@
+<!-- queen-open-kernel-20261019:start -->
+## Queen: open kernel drafted, placement proposed
+
+19 October 2026. Draft [starlight-swarm #39](https://github.com/frankxai/starlight-swarm/pull/39)
+(`74bd51e`) ships `@starlight-intelligence/queen`: Brief admission with
+Maker ≠ Checker, reported model routing that refuses on critical lanes, the
+re-run completion verifier ported from `lifecycle/queen-verify.js`, one signed
+`starlight.run-receipt.v1` per dispatch, Domain Generals vendored from SIS #436,
+and the `starlight-queen` bin. Payments governance in `stepLoop()` is now
+audit-first. 510/510 + 29/29 tests, build, dry-run and estate-guard pass at head;
+nothing merged, independent checker outstanding. Placement A/B/C is
+[Ops289](https://github.com/frankxai/agentic-ops/issues/289) (recommend B now,
+A later); interface note on [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
+Session: `ops/sessions/2026-10-19.md`.
+<!-- queen-open-kernel-20261019:end -->
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 
