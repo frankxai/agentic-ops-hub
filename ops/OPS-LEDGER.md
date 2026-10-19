@@ -1,3 +1,4 @@
+<!-- queen-open-kernel-20261019:start -->
 ## Queen: open kernel drafted, placement proposed
 
 19 October 2026. Draft [starlight-swarm #39](https://github.com/frankxai/starlight-swarm/pull/39)
@@ -11,6 +12,7 @@ nothing merged, independent checker outstanding. Placement A/B/C is
 [Ops289](https://github.com/frankxai/agentic-ops/issues/289) (recommend B now,
 A later); interface note on [Ops134](https://github.com/frankxai/agentic-ops/issues/134).
 Session: `ops/sessions/2026-10-19.md`.
+<!-- queen-open-kernel-20261019:end -->
 
 <!-- queen-bus-live-gaps-20261014:start -->
 ## Queen: machine-bus ownership and publication repaired
