@@ -1,3 +1,8 @@
+<!-- starlight-kernel-20261019:start -->
+## Starlight Kernel v0: acceptance engine across vendor agents, three reviews closed
+
+New private repo `frankxai/starlight-kernel`, draft PR 1 at `a7686e1`, 46/46 tests. Codex once and Antigravity twice found 21 issues across three reviews; all are fixed with a regression test each. A live Claude-maker, Codex-grader run passed. Waiting: a final re-review and live demos (RAM floor), and live containers (no runtime). Also starlight-memory PR 42 (Actions budget), and the Impeccable hook command injection, fixed locally. Details in [the session](sessions/2026-10-19.md).
+<!-- starlight-kernel-20261019:end -->
 <!-- estate-pulse-spend-planner-20261019:start -->
 ## Estate pulse: true numbers in the terminal, spend planner placed, one CLI from many packages
 
