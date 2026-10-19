@@ -1,3 +1,12 @@
+<!-- si-lab-front-door-20261019:start -->
+## starlightintelligence.ai: the lab's front door, built and critiqued, waiting on one label
+
+The homepage now leads with the Kernel and its real runs, a sourced eight-layer landscape and weekly lab notes; `/waitlist`
+uses the standard capture and `/.well-known/starlight.json` answers. Codex passed the code and Antigravity's buyer critique
+reshaped the copy before Frank saw it. PR 172 also fixes the stale image manifest that has blocked every production deploy
+of `main` today. Waiting on Frank's `surface-approved` label and the `kv-env` click. Details in
+[the session](sessions/2026-10-19.md).
+<!-- si-lab-front-door-20261019:end -->
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 

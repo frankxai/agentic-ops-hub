@@ -9,6 +9,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 | [estate-pulse-spend-planner-20261019](handovers/estate-pulse-spend-planner-20261019.md) | Land the estate pulse, spend planner, starlight extension dispatch and frankx.ai analytics fix | claude | open |
 | [H-org-migration](handovers/H-org-migration.md) | GitHub org migration state, measured 17 October; 63 org copies made today, no transfers, Registry still says frankxai | unassigned | open |
 | [queen-converge-20261019](handovers/queen-converge-20261019.md) | Land the Queen as she runs (starlight-estate PR 60), then open the seat-phase follow-up | Claude (maker); Codex or Grok (checker) | open |
+| [si-lab-front-door-20261019](handovers/si-lab-front-door-20261019.md) | starlightintelligence.ai as the lab's front door: Kernel waitlist, sourced landscape, lab notes, discovery JSON | Claude (maker); Codex or Grok (checker); Frank (surface-approved label, kv-env click) | open |
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | processing |
 | [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | Claude | processing |
