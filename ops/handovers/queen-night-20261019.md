@@ -1,7 +1,7 @@
 ---
 id: queen-night-20261019
-what: Queen night staged four inbox cards and held three seats
-where: starlight/queen inbox; gate commit 49c451c on agent/grok/queen-night-gates-20261019; jev-fail-closed stays at de6f43c
+what: Queen night held the performance card on a foreign checkout
+where: starlight/queen inbox; gate commit 24d7fc0 on agent/grok/queen-night-gates-20261019; jev-fail-closed stays at de6f43c
 owner: Grok
 status: open
 note: overnight preflight HOLD, no worker spawned
@@ -10,29 +10,28 @@ updated: 2026-10-19
 
 ## Desk
 
-Author: Grok. Date: 19 October 2026. Revision: 2. Source: heartbeat `20261019-020222`, operator-idle at that tick, and two `node tools/queen-reach.mjs` reads.
+Author: Grok. Date: 19 October 2026. Revision: 3. Source: heartbeat `20261019-020222`, operator-idle, and two `node tools/queen-reach.mjs` reads after the chair fix.
 
-Last completed tick `20261019-020222` recorded status `idle-held`, dispatched 0, queue depth 8, held count 16, resourceGuard false, free RAM 1979 MB. The operator-idle file at that tick had away true. That empty-candidate path returns before the presence gate, the RAM gate, and the Peak Performance gate, so the heartbeat stayed `idle-held`.
+Last completed tick `20261019-020222` recorded status `idle-held`, dispatched 0, queue depth 8, held count 16, resourceGuard false, free RAM 1979 MB. The operator was away. That empty-candidate path returns before the presence, RAM, and Peak Performance gates.
 
-A later pair of reach reads both exited 0 and agreed: status `idle-held`, queue depth 12, dispatched 0, resourceGuard false, tick outcome `idle-held`, free RAM 2399 MB, floor 4096 MB, occupied checkouts 1. A confirming pair after the gate commit agreed again at free RAM 4273 MB. Both pairs started no loop, spawned no worker, and stopped no process.
+The reach pair after the chair fix both exited 0 and agreed: status `idle-held`, queue depth 12 on the heartbeat, dispatched 0, resourceGuard false, tick outcome `idle-held`, free RAM 5299 MB, floor 4096 MB, occupied checkouts 1. Neither read started a loop, spawned a worker, or stopped a process.
 
 ## Cards
 
-The five-minute loop admits one inbox card at a time.
+The chair now builds branch, operator presence, and the Peak Performance hold before `steerCard`. One chair run wrote `chair-pulse.json` with `20261019-night-performance` at spawn false, branch `agent/hermes/pp-admission-control-20260811`, foreignBranch true, ppHold true, reason `foreign-branch`.
 
-- `20261019-night-performance.json`: Codex, performance, peak-performance, 25 minutes. This is the one improvement. It records the overnight HOLD.
-- `20261019-night-quality.json`: Claude, quality, starlight-command-center, 20 minutes. That checkout is dirty.
-- `20261019-night-aesthetics.json`: Grok, aesthetics, starlight-agent-config, 20 minutes. That checkout is dirty.
-- `20261019-night-community.json`: Codex, community, frankx.ai-vercel-website, 20 minutes. That checkout belongs to another harness.
+The performance card records the fresh preflight: HOLD, exit 2, 4328 MB free, 10240 MB required, posture constrain, swarm posture pause-new-swarms, CPU 32 percent, 10 Codex task runtimes over a budget of 6. Do not spawn.
 
-`queen/inbox/_hold-night-20261019` stays out of away-promote. Hermes remains the cron and memory seat. OpenCode remains filler. Antigravity remains without a headless grant. `SOVEREIGN.txt` keeps money, publish, and identity items for Frank, including voice run `20261017-201656`. The 6 October inbox cards stay on their checkout gates.
+`2026-10-06-compute-guide-publish-gates`, `2026-10-06-health-audit-intake`, and `2026-10-06-sli-94-rebase` moved to `queen/inbox/_hold-night-20261019` with a reason file each. They are absent from the pulse. The other 6 October inbox cards stayed, with `concern` and `estateClass` added and their task `class` kept. Voice run `20261017-201656` stays in `queen/failed`.
+
+The overnight guard was written by `writeOvernightGuardPlan` from a dry plan whose level was already `hold`. `latest.json` is timestamp `2026-10-19T00:59:18.420Z`, level `hold`, `allowNewSwarms` false, swarm posture `pause-new-swarms`.
 
 ## Checks
 
-The first overnight preflight exited 2, HOLD, at 1305 MB free against 10240 MB required, posture restart-soon. A later preflight still exited 2, HOLD, at 5048 MB free, posture constrain, swarm posture pause-new-swarms, CPU 66 percent, 8 Codex task runtimes over a budget of 6. Envelope tests on the shipped `steerCard` passed twice: 2 tests, 0 failures. Learning row `queen-night-20261019` read back with outcome `idle-held` and was not appended again. The floor stayed 4096 MB.
+`node --test` of the shipped chair context, the night envelopes, and `queen-steer.test.mjs` passed: 30 tests, 0 failures. A second run of the chair-context and envelope files passed: 4 tests, 0 failures. Learning row `queen-night-20261019` is still one row, outcome `idle-held`, refuse false, floor 4096 MB, and was not appended again. The chair run appended per-card steer rows. Two of those rows refuse the performance card for `foreign-branch`, so the next identical refusal can block it. The floor stayed 4096 MB.
 
-The gate files are commit `49c451c` on `agent/grok/queen-night-gates-20261019` in frankxai/starlight-command. That branch is pushed. A pull request into main would carry 52 commits of older history, so none was opened. `agent/grok/jev-fail-closed` stays at `de6f43c`. No product repo received a commit, so no product GitHub issue was opened.
+Gate commit `24d7fc0` is pushed on `agent/grok/queen-night-gates-20261019`. A pull request into main would carry the older history, so none was opened. `agent/grok/jev-fail-closed` stays at `de6f43c`. No product repo received a commit, so no product GitHub issue was opened.
 
 ## Prompt
 
-When a fresh `pp preflight --workload overnight` returns allow, and `starlight/repos/peak-performance` is a clean checkout on `agent/codex/<scope>`, carry out only `queen/inbox/20261019-night-performance.json`. Write a local note with the preflight verdict, the free RAM reading, and the fact that no worker was started. Stop if that checkout is dirty or is off `agent/codex/`. Leave the 4096 MB floor as it is. Leave personal sessions running. Leave voice run `20261017-201656` in `queen/failed`. Leave hold folders in place. Leave `agent/grok/jev-fail-closed` uncommitted. The gate code is commit `49c451c` on `agent/grok/queen-night-gates-20261019`. A different harness reviews before any merge.
+When a fresh `pp preflight --workload overnight` returns allow, and `starlight/repos/peak-performance` is a clean checkout on `agent/codex/<scope>`, carry out only `queen/inbox/20261019-night-performance.json`. Stop if that checkout is dirty, foreign, or the guard level is a fresh hold. Leave the 4096 MB floor as it is. Leave personal sessions running. Leave voice run `20261017-201656` in `queen/failed`. Leave hold folders in place. Leave `agent/grok/jev-fail-closed` uncommitted. The gate code is commit `24d7fc0` on `agent/grok/queen-night-gates-20261019`. A different harness reviews before any merge.
