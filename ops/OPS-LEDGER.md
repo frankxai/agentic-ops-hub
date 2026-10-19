@@ -5,8 +5,8 @@ The Queen loop ran code that matched no commit; starlight-estate PR 60 holds it 
 Antigravity both blocked the first head on real defects (process liveness, tab closing, file and
 dispatch routes, headless RAM admission, -MinFreeGB, codex/ branches); all are fixed, Codex passed
 the third round and the PR is gate-clear for a non-Claude merge. A read-only seat-phase reader names
-finished seats and the memory they hold. The 4096 MB floor is unchanged. Unreviewed merges by a local
-script were found and recorded privately. Founder items are in [the session](sessions/2026-10-19.md).
+finished seats and the memory they hold. The 4096 MB floor is unchanged. Founder items are in
+[the session](sessions/2026-10-19.md).
 <!-- queen-converge-20261019:end -->
 
 <!-- estate-drain-20261019:start -->
