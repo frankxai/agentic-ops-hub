@@ -24,7 +24,10 @@ If Frank chooses A, move the package with `git subtree split` and update the
 Registry records named in the issue; if B, add only the `artifact_queen_open_kernel`
 authority id. Either way, decide the `starlight queen` built-in collision from SIS #462.
 
-Then ship the rest of the slice, one draft PR each, Maker ≠ Checker on every one:
+The rest of the slice is already up as drafts (profile: starlight-agent-config #132; pack:
+claude-skills-library #74; consumers: agentic-creator-os #132, frankx.ai-vercel-website #1074,
+arcanea #158; skills: starlight-agent-skills). Drive each to a checked head; nothing merges
+without an independent seat. What each one is, for reference:
 the `starlight-queen` profile and doctrine in starlight-agent-config (text only;
 private Actions budget blocked, Frank merges); the `queen-ops` hooks pack in
 claude-skills-library (TaskCompleted / TeammateIdle / TaskCreated / PreToolUse /
