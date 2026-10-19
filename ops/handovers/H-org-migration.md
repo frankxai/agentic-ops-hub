@@ -36,23 +36,24 @@ State on 18 October:
 | Item | Where | State |
 |---|---|---|
 | Classification of 69 pairs: 42 A (26 strong evidence, 16 homepage-only), 23 B, 4 unclear, 27 org-native | product-plans PR 30 (private; names private repos) | Draft. Evidence from Vercel `link.repo`, npm `repository.url`, workflows, Pages, homepage |
-| Per-repo `repository_federation` owner map and validator rule; SIS duplicate decision set to `unverified` | agentic-ops PR 280, stacked on PR 275 | Draft, cross-provider review via pr-gate |
+| Per-repo `repository_federation` owner map and validator rule; SIS duplicate decision set to `unverified` | agentic-ops PR 280, merged into PR 275 | Merged (Grok pr-gate signed) |
 | Transfer batch 1: `dino-life-commons`, `mind-intelligence-systems` (Life-Commons); `agentic-architecture-field-guide`, `awesome-ai-coe` (AI-Architect-Studio); `awesome-wealth-agent-skills` (Agentic-Income) | plan section "Batch 1" | **Done 2026-10-18** on Frank's "yes batch 1". Mirrors renamed `<r>-retired-20261018` and archived, then transferred. Verified: frankxai URLs redirect, PRs and secrets match pre-counts, Actions on. Registry: agentic-ops PR 281. Undo log in `~/.starlight/operations/cleanup-receipts/batch1-20261018/undo.tsv` |
+| Transfer batch 2: `ai-coe`, `claude-code-hooks`, `publishing-house`, `awesome-agentic-income`, plus one private Starlight-Intelligence repo | plan section "Batch 2" | **Done 2026-10-18** on Frank's yes, same steps. Registry: agentic-ops PR 285 (merged 90a27de). Undo log in `~/.starlight/operations/cleanup-receipts/batch2-20261018/` |
 
 Do these in order:
 
-1. Batch 1 is done (see table). Merge agentic-ops PR 281 into PR 275 if it is still open. Batch 2 (`ai-coe`,
-   `claude-code-hooks`, `publishing-house`, `awesome-agentic-income`, plus one private Starlight-Intelligence repo) runs only on Frank's
-   "yes batch 2", by the same steps. Fix `federation-drift.mjs` first: `gh api repos/frankxai/<r>` now follows the
-   redirect, so it can pair a transferred repo with itself.
+1. Batches 1 and 2 are done (see table). Batch 3 runs only on Frank's "yes batch 3", by the same steps. Re-measure
+   drift first with `registry/scripts/federation-drift.mjs`. Checked 2026-10-19: it pairs only repos still owned by
+   `frankxai` (from `user/repos?affiliation=owner`), so a transferred repo cannot pair with itself; all 9 transferred
+   repos and their `-retired-20261018` copies show as org-native.
 2. Get Frank's answer on the SIS duplicate (`conflict_starlight_intelligence_system_duplicates`). It stays `unverified`
    until he confirms. The proposed resolution keeps `frankxai/Starlight-Intelligence-System` canonical (model A: Vercel
    project and npm package) with one mirror. There are two org copies, so one home has to be picked.
-3. Write the mirror sync job for the A repos. PR 275 names `org-federation-audit.mjs --sync-mirrors`, but it does not
-   exist yet. It needs a heartbeat and a drift check (default-branch SHA per pair). On 18 October four mirrors were
+3. Review and land the mirror sync job for the A repos: drafted as agentic-ops PR 284 (no schedule enabled; a cron
+   needs Frank). It needs a heartbeat and a drift check (default-branch SHA per pair). On 19 October five mirrors were
    behind. GitHub cannot disable PRs on a repo, so the job closes stray PRs on mirrors.
-4. Merge PR 280 into PR 275, then land PR 275 through pr-gate. Its two P0s from the non-maker review: the sync job is
-   missing (step 3), and the founder decision is now unverified (PR 280).
+4. PRs 280 and 281 are merged into PR 275. Land PR 275 through pr-gate once PR 284 covers its sync-job P0; the other
+   P0 (founder decision unverified) waits on step 2.
 5. Decide the 4 unclear pairs with Frank: `arcanea-plugins`, `arcanea-orchestrator`, `oci-ai-architect`, and one private
    AI-Architect-Academy pair. Before batch 5, re-check `FrankX`: it carries a `vercel.json`, but no Vercel project links it.
 6. Then return to the consolidation waves (section Waves) and the PR backlog.
