@@ -1,3 +1,12 @@
+<!-- estate-pulse-spend-planner-20261019:start -->
+## Estate pulse: true numbers in the terminal, spend planner placed, one CLI from many packages
+
+frankx.ai had recorded zero pageviews since 13 July; the cause and fix are in frankx.ai-vercel-website PR 1068. The token
+tracker moved to the Starlight-Intelligence org and ships `starlight-spend` and `starlight-plan` (PR 21); SIS PR 462 lets
+`starlight <name>` run any installed `starlight-<name>` command; agentic-ops PR 283 records the owner. Org repositories run
+CI on their own allowance while personal private repositories stay blocked. Details in [the session](sessions/2026-10-19.md).
+<!-- estate-pulse-spend-planner-20261019:end -->
+
 <!-- federation-ab-20261018:start -->
 ## Org federation: A/B ruling applied, batch 1 transferred
 
