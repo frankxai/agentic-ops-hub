@@ -1,3 +1,13 @@
+<!-- build-fix-loop-20261020:start -->
+## Build-fix loop: one test-run-fix driver for every harness, Codex review passed, CI blocked by budget
+
+starlight-agent-config draft PR 133 adds a bounded test-run-fix driver with a run ledger and a guard against tests
+weakened to go green, plus the `starlight-build-fix` skill and `/starlight-fix`. Codex passed it at 0559aa8 after
+seven rounds; 61 driver and 14 census tests pass locally. CI never started (Actions budget, 0 steps). Codex is proven
+as a runner; Grok, Gemini CLI and OpenCode are not. Next: a non-Claude `pr-gate` signoff, Frank's approval, install,
+then the three harness proofs. Details in [the session](sessions/2026-10-20.md) and `build-fix-loop-20261020`.
+<!-- build-fix-loop-20261020:end -->
+
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 
