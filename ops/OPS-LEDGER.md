@@ -1,7 +1,7 @@
 <!-- queen-night-20261019:start -->
 ## Queen night: cards staged, the five-minute loop stays the dispatcher
 
-Tick `20261019-020222` was `idle-held` with dispatched 0. The operator was away and resourceGuard was false. A fresh overnight preflight was HOLD at 1305 MB free against 10240 MB required. Four inbox cards cover performance, quality, aesthetics, and community. Hermes, OpenCode, and Antigravity stay in `_hold-night-20261019`. Money, publish, identity, and voice run `20261017-201656` stay with Frank. Learning row `queen-night-20261019` was appended once. Control-plane branch `agent/grok/jev-fail-closed` stays uncommitted. Details in [the session](sessions/2026-10-19.md) and `queen-night-20261019`.
+Tick `20261019-020222` was `idle-held` with dispatched 0. The operator was away and resourceGuard was false. A fresh overnight preflight was HOLD at 1305 MB free against 10240 MB required. Four inbox cards cover performance, quality, aesthetics, and community. Hermes, OpenCode, and Antigravity stay in `_hold-night-20261019`. Money, publish, identity, and voice run `20261017-201656` stay with Frank. Learning row `queen-night-20261019` was appended once. The gate commit is `49c451c` on `agent/grok/queen-night-gates-20261019`. Control-plane branch `agent/grok/jev-fail-closed` stays at `de6f43c`. Details in [the session](sessions/2026-10-19.md) and `queen-night-20261019`.
 <!-- queen-night-20261019:end -->
 
 <!-- federation-ab-20261018:start -->
