@@ -38,8 +38,11 @@ Next, in order:
    `node tools/pr-gate.mjs signoff --repo frankxai/starlightintelligence.ai --pr 172 --harness codex --verdict pass`,
    then `gh pr ready 172` and `node tools/pr-gate.mjs merge --repo frankxai/starlightintelligence.ai --pr 172 --squash`
    only after the label. Any new commit voids the sign-off.
-3. If the label waits, unblock production separately: one PR on `main` that only runs
-   `node scripts/image-inventory.mjs --write`; it will conflict with PR 172 on that one file, so regenerate again after.
+3. Unblock production first: PR 173 (`agent/claude/image-manifest-regen`, f89999b) is the manifest-only fix, ready
+   for review, Codex PASS with no findings. A non-Claude harness signs off and merges it through `tools/pr-gate.mjs`,
+   then confirms the production deployment is READY (revert the same session if not). PR 172 then reruns
+   `node scripts/image-inventory.mjs --write` on rebase. Root cause: `scripts/should-deploy.sh` skips previews whose
+   changes sit only in `docs/` or `design/`, so #121's stale manifest first failed on `main`.
 4. Estate root (on Grok's `agent/grok/jev-fail-closed`, never pushed): `graph/products.graph.json` holds two
    uncommitted edits from this lane: the new `starlight-kernel` row and a corrected `starlight-knowledge-tree`
    gate (its "G1 PASS 2026-09-09" has no receipt). The root's owner commits them; the receipt files too.
