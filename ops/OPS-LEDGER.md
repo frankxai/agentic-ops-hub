@@ -1,3 +1,14 @@
+<!-- queen-converge-20261019:start -->
+## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
+
+The Queen loop ran code that matched no commit; starlight-estate PR 60 holds it as it runs. Codex and
+Antigravity both blocked the first head on real defects (process liveness, tab closing, file and
+dispatch routes, headless RAM admission, -MinFreeGB, codex/ branches); all are fixed, Codex passed
+the third round and the PR is gate-clear for a non-Claude merge. A read-only seat-phase reader names
+finished seats and the memory they hold. The 4096 MB floor is unchanged. Founder items are in
+[the session](sessions/2026-10-19.md).
+<!-- queen-converge-20261019:end -->
+
 <!-- estate-drain-20261019:start -->
 ## Estate drain: 5 merges through pr-gate, invented advisory IDs found in 16 PRs
 
