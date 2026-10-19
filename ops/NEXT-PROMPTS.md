@@ -6,6 +6,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [queen-night-20261019](handovers/queen-night-20261019.md) | Queen night staged four inbox cards and held three seats | Grok | open |
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | processing |
 | [H-org-migration](handovers/H-org-migration.md) | GitHub org migration state, measured 17 October; 63 org copies made today, no transfers, Registry still says frankxai | unassigned | open |
