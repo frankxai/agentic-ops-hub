@@ -1,7 +1,7 @@
 ---
 id: queen-night-20261019
 what: Queen night held the performance card on a foreign checkout
-where: starlight/queen inbox; gate commit 24d7fc0 on agent/grok/queen-night-gates-20261019; jev-fail-closed stays at de6f43c
+where: starlight/queen inbox; gate commit 0b3bb34 on agent/grok/queen-night-gates-20261019; jev-fail-closed stays at de6f43c
 owner: Grok
 status: open
 note: overnight preflight HOLD, no worker spawned
@@ -28,10 +28,10 @@ The overnight guard was written by `writeOvernightGuardPlan` from a dry plan who
 
 ## Checks
 
-`node --test` of the shipped chair context, the night envelopes, and `queen-steer.test.mjs` passed: 30 tests, 0 failures. A second run of the chair-context and envelope files passed: 4 tests, 0 failures. Learning row `queen-night-20261019` is still one row, outcome `idle-held`, refuse false, floor 4096 MB, and was not appended again. The chair run appended per-card steer rows. Two of those rows refuse the performance card for `foreign-branch`, so the next identical refusal can block it. The floor stayed 4096 MB.
+`node --test` of the shipped chair context, the night envelopes, and `queen-steer.test.mjs` passed: 30 tests, 0 failures. A second run of the chair-context and envelope files passed: 4 tests, 0 failures. After the four inbox cards each gained a seat, concern, and gate assertion, `queen-steer-envelopes.test.mjs` passed twice: 3 tests, 0 failures. Learning row `queen-night-20261019` is still one row, outcome `idle-held`, refuse false, floor 4096 MB, and was not appended again. The chair run appended per-card steer rows. Two of those rows refuse the performance card for `foreign-branch`, so the next identical refusal can block it. The floor stayed 4096 MB.
 
-Gate commit `24d7fc0` is pushed on `agent/grok/queen-night-gates-20261019`. A pull request into main would carry the older history, so none was opened. `agent/grok/jev-fail-closed` stays at `de6f43c`. No product repo received a commit, so no product GitHub issue was opened.
+Gate commit `0b3bb34` is pushed on `agent/grok/queen-night-gates-20261019`. A pull request into main would carry the older history, so none was opened. `agent/grok/jev-fail-closed` stays at `de6f43c`. No product repo received a commit, so no product GitHub issue was opened.
 
 ## Prompt
 
-When a fresh `pp preflight --workload overnight` returns allow, and `starlight/repos/peak-performance` is a clean checkout on `agent/codex/<scope>`, carry out only `queen/inbox/20261019-night-performance.json`. Stop if that checkout is dirty, foreign, or the guard level is a fresh hold. Leave the 4096 MB floor as it is. Leave personal sessions running. Leave voice run `20261017-201656` in `queen/failed`. Leave hold folders in place. Leave `agent/grok/jev-fail-closed` uncommitted. The gate code is commit `24d7fc0` on `agent/grok/queen-night-gates-20261019`. A different harness reviews before any merge.
+When a fresh `pp preflight --workload overnight` returns allow, and `starlight/repos/peak-performance` is a clean checkout on `agent/codex/<scope>`, carry out only `queen/inbox/20261019-night-performance.json`. Stop if that checkout is dirty, foreign, or the guard level is a fresh hold. Leave the 4096 MB floor as it is. Leave personal sessions running. Leave voice run `20261017-201656` in `queen/failed`. Leave hold folders in place. Leave `agent/grok/jev-fail-closed` uncommitted. The gate code is commit `0b3bb34` on `agent/grok/queen-night-gates-20261019`. A different harness reviews before any merge.
