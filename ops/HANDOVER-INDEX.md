@@ -82,6 +82,7 @@ handover is `processed` or `superseded` is moved out of `NEXT-PROMPTS.md` into `
 | [sis-executive-and-queen-lifecycle-20261013](handovers/sis-executive-and-queen-lifecycle-20261013.md) | Starlight: Independent review and sequential merge of PR #406 and PR #407 | prompt below | unknown | processed; not reconciled since the split |
 | [sis-swarm-topology-and-demand-doors-20261014](handovers/sis-swarm-topology-and-demand-doors-20261014.md) | Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run | prompt below | unknown | open-unverified; not reconciled since the split |
 | [starlight-delivery-20261010](handovers/starlight-delivery-20261010.md) | Starlight: review and release Supabase auth, then prove live account activation | prompt below | unknown | open-unverified; not reconciled since the split |
+| [starlight-kernel-20261019](handovers/starlight-kernel-20261019.md) | Starlight Kernel v0: get a clean cross-vendor re-review, run the live demos, then land | prompt below | claude | open; frankxai/starlight-kernel PR 1 at a7686e1, 46/46 tests; issue 2 tracks the rest |
 | [v0-design-programme-20261011](handovers/v0-design-programme-20261011.md) | Deliver one accepted agent/Cloud pilot and design slice | prompt below | unknown | open-unverified; not reconciled since the split |
 <!-- handover-index:end -->
 
