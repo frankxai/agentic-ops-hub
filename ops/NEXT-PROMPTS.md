@@ -7,9 +7,9 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
 | [estate-pulse-spend-planner-20261019](handovers/estate-pulse-spend-planner-20261019.md) | Land the estate pulse, spend planner, starlight extension dispatch and frankx.ai analytics fix | claude | open |
+| [H-org-migration](handovers/H-org-migration.md) | GitHub org migration state, measured 17 October; 63 org copies made today, no transfers, Registry still says frankxai | unassigned | open |
 | [H-2026-10-17-triage](handovers/H-2026-10-17-triage.md) | Restart triage, unified lane map, foundation, swarm, migration, launch prompts | Claude | processing |
 | [H-mcp-health](handovers/H-mcp-health.md) | Five MCP servers failed at Claude start-up on 17 October; two need an owner change, one needs billing | unassigned | processing |
-| [H-org-migration](handovers/H-org-migration.md) | GitHub org migration state, measured 17 October; 63 org copies made today, no transfers, Registry still says frankxai | unassigned | open |
 | [H-startup-coherence](handovers/H-startup-coherence.md) | Make the start-up path name the Registry, lane claim and this index; resolve nine doctrine contradictions | Claude | processing |
 | [H-turn0-budget](handovers/H-turn0-budget.md) | Turn-0 instructions measured at 50k to 83k tokens per harness against an 8k target; ranked cuts and a generated-core design | unassigned | processing |
 | [queen-bus-live-gaps-20261014](handovers/queen-bus-live-gaps-20261014.md) | Resume full Queen goal from verified admission and protected runtime | unknown | open-unverified |

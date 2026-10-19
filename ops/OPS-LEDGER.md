@@ -1,3 +1,13 @@
+<!-- estate-drain-20261019:start -->
+## Estate drain: 5 merges through pr-gate, invented advisory IDs found in 16 PRs
+
+Five public PRs merged with Grok or Codex as checker (one verified in production), three closed as empty or duplicate,
+and fixes pushed to four more. Three advisory IDs cited by 16 Next.js security PRs from 14 October do not exist; the real
+ones are posted on the open PRs. Private CI stays blocked (no Blacksmith runner), SIS PRs need a review receipt no headless
+reviewer can post, and federation drift is 50 of 59 pairs in sync with no mirror PRs to close. Founder items with commands
+are in [the session](sessions/2026-10-19.md).
+<!-- estate-drain-20261019:end -->
+
 <!-- estate-pulse-spend-planner-20261019:start -->
 ## Estate pulse: true numbers in the terminal, spend planner placed, one CLI from many packages
 
