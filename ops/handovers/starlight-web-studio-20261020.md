@@ -65,6 +65,13 @@ updated: 2026-10-20
   board: https://claude.ai/artifact/7yMQrAGTkVfBDpUM8SFicc (v8). Both private to Frank.
 - The panel's fourth row ("waiting for a person to approve") goes false when #77 merges or closes; update it then.
 
+## Round five (same day): capability gaps
+
+- three.js liquid-glass lab `examples/gpu-glass/` (28a1840, e1db0cf): it is the gpu-artist reference wrapper, with a tested gate,
+  a frame-budget probe and a single teardown. It runs at 0.05 to 0.40 ms per frame on one device, for 167 KB extra. The homepage keeps CSS glass.
+- Higgsfield `/hf-plan` for a 5 s seamless hero loop, costed at 24.5 credits (cap 25). Nothing was uploaded or generated.
+- Claude Motion is unavailable on this account (no Motion artifact type). Tests: 59/59.
+
 ## Founder decisions
 
 1. Open the PR over budget, or land or close others first.
@@ -72,6 +79,7 @@ updated: 2026-10-20
    as reserved by Anthropic. Renaming breaks current installs.
 4. Keep or remove the registered daily sweep.
 5. Go or no-go on the frankx.ai R4 homepage cut (removes over half the page).
+6. Approve or skip the Higgsfield hero loop (upload one file, ≤ 25 credits).
 
 ## Prompt
 
