@@ -4,7 +4,7 @@ what: Take the Starlight Web Studio plugin from pushed branch to its first real 
 where: frankxai/claude-skills-library, branch agent/claude/web-studio, plugins/starlight-web-studio/
 owner: claude
 status: open
-note: branch pushed, PR held by the repo's PR budget (14 open vs 10)
+note: draft PRs claude-skills-library#77 (plugin) and agenticincome#80 (first fix); both need a non-Claude reviewer
 updated: 2026-10-20
 ---
 
@@ -34,12 +34,20 @@ updated: 2026-10-20
 - Daily sweep staged, not registered: `schedule/Register-StudioSweep.ps1` (dry run by default, `-Register` turns it on).
 - Not run: `claude plugin eval` (needs a signed-in headless Claude), motion and second-theme observation, any site edit.
 
+## Round two (same day)
+
+- Eye pass extended to all 25 live sites (tier-3 at 360 px, desktop 1440 for every site); tier-3 scores 29 to 37.
+- realityarchitect.ai corrected 26 to 29: the blank capture was a CSS scroll-driven scene; studio-audit now
+  requires a source check before scoring a blank capture.
+- go.agenticincome.ai `noindex` is intended (redirect utility).
+- Draft PR claude-skills-library#77 opened with the over-budget reason in its body.
+- First studio-built fix: agenticincome#80 (buyer labels; sale gate untouched; verified on the Vercel preview).
+
 ## Founder decisions
 
 1. Open the PR over budget, or land or close others first.
 2. `claude plugin validate .` rejects the existing marketplace plugin name `claude-skills-library`
    as reserved by Anthropic. Renaming breaks current installs.
-3. go.agenticincome.ai noindex: deliberate or a leak.
 4. Whether to run `Register-StudioSweep.ps1 -Register` for the daily sweep.
 5. Go or no-go on the frankx.ai R4 homepage cut (removes over half the page).
 
