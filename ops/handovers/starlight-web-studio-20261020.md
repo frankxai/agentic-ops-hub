@@ -27,7 +27,12 @@ updated: 2026-10-20
   noindex in meta and X-Robots-Tag (confirm intent). frankx.ai ships 53 elements at inline
   opacity:0. arcanea.ai is 30/30 for crawlers. Eye scores date from 2026-08-03 and are stale.
 - Proposal page: https://claude.ai/artifact/QoHMrm19fxTPgAMytLLLf1 (private).
-- Not run: `claude plugin eval` (needs a signed-in headless Claude), the visual eye pass, any site edit.
+- Eye pass done on all 9 tier-1 and tier-2 sites (real 360 px screenshots, desktop for frankx.ai; remote capture because
+  `pp preflight` held local browsers). Scores /50: animelegends 36, gencreator 35, aiarchitectacademy 33,
+  gencreator.community 31, arcanea 30, starlightintelligence.org 28, realityarchitect 26, agenticincome 25, frankx 24.
+  Report `starlight/logs/excellence/eye-pass-2026-10-20.md`; scoreboard appended; issue #76 commented.
+- Daily sweep staged, not registered: `schedule/Register-StudioSweep.ps1` (dry run by default, `-Register` turns it on).
+- Not run: `claude plugin eval` (needs a signed-in headless Claude), motion and second-theme observation, any site edit.
 
 ## Founder decisions
 
@@ -35,7 +40,8 @@ updated: 2026-10-20
 2. `claude plugin validate .` rejects the existing marketplace plugin name `claude-skills-library`
    as reserved by Anthropic. Renaming breaks current installs.
 3. go.agenticincome.ai noindex: deliberate or a leak.
-4. Whether to schedule a daily `/studio-sweep`.
+4. Whether to run `Register-StudioSweep.ps1 -Register` for the daily sweep.
+5. Go or no-go on the frankx.ai R4 homepage cut (removes over half the page).
 
 ## Prompt
 
@@ -43,8 +49,7 @@ Continue the Starlight Web Studio from branch `agent/claude/web-studio` in
 `frankxai/claude-skills-library` (worktree `.worktrees/web-studio`). Read this handover and
 `plugins/starlight-web-studio/README.md`. If Frank has ruled on the PR budget, open the draft PR and
 have a non-Claude harness review it through `tools/pr-gate.mjs`. Then run the studio's first real
-job: `node plugins/starlight-web-studio/bin/studio-doctor.mjs` in each tier-1 repo, then the scout
-eye pass (screenshots at 375, 768, 1440; 50-point rubric) on frankx.ai, arcanea.ai and gencreator.ai,
-appending to `starlight/logs/excellence/scoreboard.jsonl`. After that, R2 hygiene draft PRs for the
-JSON-LD gaps on the board. Never merge, publish a route or touch go.agenticincome.ai noindex without
+jobs from `starlight/logs/excellence/eye-pass-2026-10-20.md`: the agenticincome.ai R3 copy fix (status strings
+under prices), a live-scroll check of the realityarchitect.ai pinned scene, and R2 hygiene draft PRs for the
+JSON-LD gaps on the board. Run `studio-doctor.mjs` in each repo first. Never merge, publish a route or touch go.agenticincome.ai noindex without
 Frank's word.
