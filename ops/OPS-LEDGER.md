@@ -1,3 +1,12 @@
+<!-- starlight-web-studio-20261020:start -->
+## Web studio: an eleven-agent design team shipped to a branch, first sweep of 24 sites
+
+The Starlight Web Studio plugin (claude-skills-library, branch agent/claude/web-studio) audits, ranks,
+proposes and builds with a different-provider critic and a read-only verifier. Codex review found no P0;
+its engineering findings are fixed and tested. The PR waits on the repo PR budget. Founder items are in
+[the session](sessions/2026-10-20.md).
+<!-- starlight-web-studio-20261020:end -->
+
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 
