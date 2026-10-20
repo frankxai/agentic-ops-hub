@@ -43,12 +43,22 @@ updated: 2026-10-20
 - Draft PR claude-skills-library#77 opened with the over-budget reason in its body.
 - First studio-built fix: agenticincome#80 (buyer labels; sale gate untouched; verified on the Vercel preview).
 
+## Round three (same day)
+
+- Daily sweep registered as Windows task `StarlightStudioSweep` (07:10, model-free, read-only fetches, local logs only),
+  per Frank's goal to make the team proactive. First runs exit 0, heartbeat `logs/heartbeats/heartbeat-studio-sweep.json`
+  ok, `--accept go-agenticincome:noindex`. Remove with `Register-StudioSweep.ps1 -Unregister`. It runs the copy in the
+  web-studio worktree; re-register after #77 merges.
+- Codex review: #77 PASS after six rounds (52 tests), #80 PASS after three rounds (7 tests). Relayed as PR comments,
+  not as pr-gate sign-offs; a non-Claude harness must sign off itself before merge.
+- agenticincome GitHub Actions fail in 2 to 3 s with no steps (account Actions budget); Vercel preview builds pass.
+
 ## Founder decisions
 
 1. Open the PR over budget, or land or close others first.
 2. `claude plugin validate .` rejects the existing marketplace plugin name `claude-skills-library`
    as reserved by Anthropic. Renaming breaks current installs.
-4. Whether to run `Register-StudioSweep.ps1 -Register` for the daily sweep.
+4. Keep or remove the registered daily sweep.
 5. Go or no-go on the frankx.ai R4 homepage cut (removes over half the page).
 
 ## Prompt
