@@ -53,6 +53,18 @@ updated: 2026-10-20
   not as pr-gate sign-offs; a non-Claude harness must sign off itself before merge.
 - agenticincome GitHub Actions fail in 2 to 3 s with no steps (account Actions budget); Vercel preview builds pass.
 
+## Round four (same day): worked case
+
+- `plugins/starlight-web-studio/examples/frankx-homepage/` on #77 (c2992f4, 9ed3d73, e770e16): one full R4 run on
+  the frankx.ai homepage: signature, brief, three directions, decision (B, no WebGL), motion score, and a GSAP + CSS
+  liquid-glass prototype. Hero media came from Codex image generation with provenance sidecars; the first render
+  failed its packet and was regenerated.
+- Codex critique, two rounds, both "revise"; every finding fixed and recorded in `critique.md`. Round 3 not run.
+  Safari and a real phone remain unverified (`handoff.md`).
+- Prototype: https://claude.ai/artifact/QS11b2xvgueZ7FziESXczw (v6). Claude Design canvas with A, B, C and the B phone
+  board: https://claude.ai/artifact/7yMQrAGTkVfBDpUM8SFicc (v8). Both private to Frank.
+- The panel's fourth row ("waiting for a person to approve") goes false when #77 merges or closes; update it then.
+
 ## Founder decisions
 
 1. Open the PR over budget, or land or close others first.
