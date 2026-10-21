@@ -83,6 +83,7 @@ handover is `processed` or `superseded` is moved out of `NEXT-PROMPTS.md` into `
 | [sis-executive-and-queen-lifecycle-20261013](handovers/sis-executive-and-queen-lifecycle-20261013.md) | Starlight: Independent review and sequential merge of PR #406 and PR #407 | prompt below | unknown | processed; not reconciled since the split |
 | [sis-swarm-topology-and-demand-doors-20261014](handovers/sis-swarm-topology-and-demand-doors-20261014.md) | Starlight: Independent review, merge of PR #406 / #407, and Demand Reporting Run | prompt below | unknown | open-unverified; not reconciled since the split |
 | [starlight-delivery-20261010](handovers/starlight-delivery-20261010.md) | Starlight: review and release Supabase auth, then prove live account activation | prompt below | unknown | open-unverified; not reconciled since the split |
+| [tella-guide-cluster-20261020](handovers/tella-guide-cluster-20261020.md) | Take the frankx.ai Tella and demo-video guide cluster (PR 1076) from draft to merge | frankxai/frankx.ai-vercel-website PR 1076, branch agent/claude/tella-guide-cluster | Frank (merge, first-time publication); any non-Claude harness (review signoff) | open; preview verified 2026-10-21 except browser-only checks; no GitHub issue |
 | [v0-design-programme-20261011](handovers/v0-design-programme-20261011.md) | Deliver one accepted agent/Cloud pilot and design slice | prompt below | unknown | open-unverified; not reconciled since the split |
 <!-- handover-index:end -->
 

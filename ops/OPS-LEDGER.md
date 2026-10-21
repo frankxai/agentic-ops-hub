@@ -1,3 +1,13 @@
+<!-- tella-guide-cluster-20261020:start -->
+## frankx.ai: Tella and demo-video guide cluster drafted, preview verified
+
+Draft frankx.ai-vercel-website PR 1076 adds eight guides around Tella, a `/go/tella` referral route, the `/guide` and
+`/tella` aliases and a "Demos and video" category on `/guides`. Codex's read-only critique was fixed in `544983eca`. The
+preview passes on pages, matrices, FAQs, redirects and embed CSP; a real embed click and the 375px check wait on browser
+admission (held at 136 MB free RAM). Merge is Frank's: first-time publication. No issue tracks the slice. Details in
+[the session](sessions/2026-10-20.md) and `tella-guide-cluster-20261020`.
+<!-- tella-guide-cluster-20261020:end -->
+
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 
