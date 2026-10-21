@@ -45,9 +45,15 @@ python weekly_routing_review.py
 ## Guardrails
 
 - Free tier first; Token Pass only for bulk/code/hard-reasoning/ultrabrain.
-- Cost ceiling enforced per class in `record_receipt`.
-- Used model must be in the chain (off-chain models rejected).
-- Receipts are append-only JSONL under `receipts/routing.jsonl`.
+- `--preflight --est-cost` checks the per-class ceiling and the monthly Token Pass hard cap BEFORE a call.
+- Spend that already happened is always recorded: over-ceiling costs get `over_ceiling: true` (exit 3), NaN/inf/negative are rejected.
+- ZDR classes (bulk, code, hard-reasoning, ultrabrain) only walk Token Pass models. Free fallbacks are excluded unless `--allow-non-zdr`, which is stamped `zdr_override` on the receipt.
+- Used model must be in the (ZDR-safe) chain; off-chain models are rejected.
+- Unmatched or ambiguous task text classifies to the free `scout` class; paid classes need explicit signals.
+- Receipts are append-only JSONL under `receipts/routing.jsonl`, written under a cross-process lock (Windows and POSIX), LF endings. Set `STARLIGHT_RECEIPTS_DIR` to redirect (tests, dry runs); `--synthetic` marks test receipts so the weekly review ignores them.
+- The weekly review skips malformed lines, needs 5 samples per compared model, and only proposes models already in the class's ZDR-safe chain.
+- `gen_omo_config.py` gives every agent and category (including OmO built-ins `sisyphus-junior`, `deep-high`, `deep-low`, `artistry`) an explicit list so OmO never falls back to its own paid chains; `--dry-run`, `--out`, and a timestamped backup protect the live file. Pair it with `"enabled_providers": ["opencode", "vercel"]` in opencode.json.
+- Not implemented yet: `night_cap_usd` and `soft_alert_usd` enforcement beyond the `preflight` soft-alert flag.
 - Proposals require human approval; never auto-commit.
 
 ## Token Pass credit
