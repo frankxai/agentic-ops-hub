@@ -17,7 +17,7 @@ L7 ASSURANCE      starlight-evals (red/blue lane) · ACOS safety hooks · santa-
 L6 SWARM RUNTIME  starlight-swarm (queens + workers + cockpit)
                   ▲ executes the income streams under governance
 L5 PAYMENTS       payment-intelligence-system (vertical + MCP) · awesome-payment-agent-skills
-                  ▲ authorizes + settles money (AP2 mandate / x402 rail / ACP checkout)
+                  ▲ authorizes money (AP2 mandate + spend caps); never moves it
 L4 INCOME ENGINE  affiliate-agent-skills (ext engine) → agentic-income-skills (brain)
                   → agenticincome (hub) + agenticpassiveincome (spoke) + agentic-income-template
                   ▲ generates active + passive income streams
@@ -33,7 +33,7 @@ L0 SUBSTRATE      Starlight-Intelligence-System (SIP, vaults, attestation, MCP)
                   ▲ memory, identity, governance — the ground everything stands on
 ```
 
-**Reading the stack:** an income stream is a vertical slice. It draws *capability* from L1, is *configured* coherently by L2, *packaged* as an OS at L3, *generates* revenue at L4, *settles* money at L5, *runs* as a governed swarm at L6, and is *continuously attacked and defended* at L7 — all *remembering* through L0.
+**Reading the stack:** an income stream is a vertical slice. It draws *capability* from L1, is *configured* coherently by L2, *packaged* as an OS at L3, *generates* revenue at L4, *authorizes* money at L5, *runs* as a governed swarm at L6, and is *continuously attacked and defended* at L7 — all *remembering* through L0.
 
 ---
 
@@ -56,7 +56,7 @@ Legend: 🟢 production · 🟡 real scaffold · 🔴 seeded this wave (was empt
 | `agentic-income-template` | L4 | 🟢 | Clone-and-deploy starter | **WP1** CI |
 | `awesome-agentic-income` | L4 | 🟢 | Curated list (CC0) | **WP1** CI |
 | `agenticpassiveincome` | L4 | 🔴→🟡 | Passive/AI-architect spoke (was README-only stub) | **WP5** scaffold |
-| `payment-intelligence-system` | L5 | 🔴→🟡 | Payments vertical + MCP scaffold (AP2/x402/ACP) | **WP2** seed |
+| `payment-intelligence-system` | L5 | 🔴→🟡 | Payments vertical + verify-only MCP scaffold (AP2 verified; x402/ACP are downstream rails, not implemented) | **WP2** seed |
 | `awesome-payment-agent-skills` | L5 | 🔴→🟡 | Curated payments-protocol/tooling list | **WP3** seed |
 | `starlight-swarm` | L6 | 🔴→🟡 | Queen/worker income-swarm runtime + cockpit | **WP6** seed |
 | `starlight-evals` | L7 | 🟢 | Whole-system eval; gaining Income & Payments Safety lane | **WP7** red/blue lane |
@@ -90,6 +90,8 @@ Legend: 🟢 production · 🟡 real scaffold · 🔴 seeded this wave (was empt
      red team attacks every hop; blue team must hold
      before any of it touches real funds
 ```
+
+L5 returns the authorization verdict. The x402 and ACP rails in the diagram run downstream of it, and a human decides each settlement.
 
 **Two income modes, one engine:**
 - **Active income** — workshops, products, consulting surfaced through L3 OS family + L4 content. Human in the loop per transaction.

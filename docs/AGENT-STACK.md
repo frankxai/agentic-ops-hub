@@ -56,7 +56,7 @@ Each queen reuses the `queen-coordinator` + `hierarchical-coordinator` harness p
 | **Affiliate Queen** | Recurring affiliate revenue (`agenticincome` + spoke) | catalog-auditor · link-binder · disclosure-checker · ranker | audit → join programs → bind links → measure → re-rank |
 | **Products Queen** | Digital products, templates, courses | product-architect · packager · pricer · launch-coordinator | gap-scan → build → price → launch → retro |
 | **Content Queen** | Traffic → trust → routing | researcher · writer · hook-engineer · distributor | top-queries → draft → gate → publish → learn |
-| **Payments Queen** | Authorization + settlement | mandate-verifier · spend-cap-enforcer · settlement-auditor · fraud-sentinel | propose-charge → verify mandate → check cap → settle → audit |
+| **Payments Queen** | Authorization (verify-only, never settles) | mandate-verifier · spend-cap-enforcer · settlement-auditor · fraud-sentinel | propose-charge → verify mandate → check cap → audit → verdict to a human (settlement happens elsewhere) |
 
 **Queen discipline:** a queen may act autonomously **within its scope and below its caps**. It must escalate the moment an action crosses a stream boundary, exceeds a cap, or becomes irreversible.
 
@@ -77,14 +77,14 @@ This is the safety spine of the hybrid model. **No autonomous money movement. Ev
 | Worker task within stream (draft, audit, research) | Worker → Queen | Queen review |
 | Bind an affiliate link, schedule a post, build a product page | Queen | brand/claims gate (`@integrity-guard`, `@claims-guard`) |
 | **Verify** a payment is authorized (AP2 mandate + spend-cap) | Payments Queen | Payments MCP, **verify-only, fail-closed**. The Queen authorizes; it never holds standing rail credentials. |
-| **Settle** a *pre-authorized, capped merchant* payment | Payments Queen, agent-signed via x402/ACP | mandate verified + under cap + audit entry; signed with a **single-use, scope-limited credential released per settlement** by the governance layer — never a standing key |
+| **Settle** a merchant payment on any rail (x402 / ACP) | Founder | **human approval, always.** The Payments Queen supplies the verdict (mandate verified + under cap + audit entry). It does not sign, release, or hold a rail credential, and the Payments MCP has no settlement tool |
 | Spend **above cap**, new rail, new vendor contract | Founder | `/starlight-board` pressure-test + **human approval** |
-| Move funds outside a pre-authorized capped settlement (treasury, arbitrary transfer) | Founder | **human approval, always** + multi-sig / HSM on the signature (per FrankX hard-stops) |
+| Move funds outside a merchant settlement (treasury, arbitrary transfer) | Founder | **human approval, always** + multi-sig / HSM on the signature (per FrankX hard-stops) |
 | Other irreversible (delete, rename live URL, rotate key, send blast) | Founder | **human approval, always** |
 
-**Reconciling "verify-only" with "settle":** the swarm never holds a standing rail credential (matches `MCP-STRATEGY.md` — income swarm = verify-only). A *capped, pre-authorized merchant* settlement may be agent-signed, but only with a single-use, scope-limited credential the governance layer releases for that one settlement after mandate + cap verification. Everything larger, novel, or treasury-level escalates to the Founder + human gate.
+**"Verify-only" and "settle" do not mix:** the swarm never holds a rail credential, standing or per settlement (matches `MCP-STRATEGY.md` — income swarm = verify-only). A charge with a valid mandate under all caps gets a `within-cap` verdict. That verdict is an input to a human's settle decision, not a settlement. Anything over cap, novel, or treasury-level escalates to the Founder + human gate. This follows `payment-intelligence-system`, whose code exposes no tool that moves funds.
 
-**The standing rule (inherited from `agentic-business-os`):** *agents draft, gate, and commit; humans deploy, post, and send.* Arbitrary or treasury-level money movement and irreversibility are never delegated to autonomy.
+**The standing rule (inherited from `agentic-business-os`):** *agents draft, gate, and commit; humans deploy, post, and send.* Money movement and irreversibility are never delegated to autonomy.
 
 ---
 
