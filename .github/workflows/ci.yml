@@ -62,7 +62,8 @@ jobs:
       - name: Research lab registry validates and the dashboard builds
         run: |
           set -e
-          python -m unittest tests.test_lab_registry -v
+          python -m pip install --quiet jsonschema==4.26.0
+          python -m unittest tests.test_lab_registry tests.test_receipt_bridge -v
           python lab/build_lab.py --check
           python lab/build_lab.py --out "$RUNNER_TEMP/lab.html"
 

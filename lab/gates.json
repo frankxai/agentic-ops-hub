@@ -68,10 +68,10 @@
     {
       "id": "dec-receipt-schema",
       "kind": "decision",
-      "title": "Rule on one receipt schema: SIS run-receipt v1 as the envelope, Routing Brain fields as an extension",
+      "title": "Ruled 2026-10-21: SIS run-receipt v1 is the envelope; routing detail travels in stage notes and hash-bound evidence",
       "owner": "frank",
-      "status": "open",
-      "why": "Three receipt formats exist (routing.jsonl, SIS run-receipt v1, Queen's signed receipt). One verifier needs one format. See ops/plans/2026-10-21-product-prd-ard-funnel.md section 3."
+      "status": "done",
+      "why": "Frank approved SIS run-receipt v1 as the envelope. v1 forbids extra properties, so there is no extension block; see ops/plans/2026-10-21-receipt-schema-decision.md."
     },
     {
       "id": "dec-open-core",
@@ -104,6 +104,22 @@
       "owner": "claude",
       "status": "open",
       "why": "A skill without a saved eval stays out of the default prompt. EXP-009 needs the drafts to test."
+    },
+    {
+      "id": "receipt-fields",
+      "kind": "work",
+      "title": "Add harness, experiment, task id and token counts to the routing receipt so the bridge can build a full v1 receipt",
+      "owner": "claude",
+      "status": "open",
+      "why": "The routing record has no harness, experiment, task id or tokens today. Lands in a PR after PR 377 merges."
+    },
+    {
+      "id": "receipt-verifier",
+      "kind": "work",
+      "title": "Ship a standalone verify command: signature, recomputed totals, maker not equal to checker, planted-fault fixtures",
+      "owner": "claude",
+      "status": "open",
+      "why": "No public verifier reads the run-receipt predicate yet (SIS docs/receipts.md). The product's trust claim depends on one."
     }
   ]
 }

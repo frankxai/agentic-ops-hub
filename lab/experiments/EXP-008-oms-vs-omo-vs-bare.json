@@ -2,7 +2,11 @@
   "id": "EXP-008",
   "title": "Does the OmS layer pay for itself against plain OmO and bare opencode?",
   "pillar": "harness",
-  "projects": ["agentic-ops", "sis", "acos"],
+  "projects": [
+    "agentic-ops",
+    "sis",
+    "acos"
+  ],
   "hypothesis": "With the same task packs and the same Token Pass budget, opencode with the OmS layer (routing brain, ZDR rules, receipts) matches stock OmO on accepted rate and costs at least 30% less per accepted task, with zero ZDR violations, and both beat bare opencode on the agentic traps.",
   "status": "blocked",
   "state": "S1",
@@ -11,24 +15,65 @@
   "verifier": "codex",
   "human_gate": "Frank approves the spend (Token Pass cap) and any new install; arms run in the Railway container, not on the laptop.",
   "runs_on": [
-    {"where": "railway", "why": "Same clean image for every arm, so differences come from the layer and not from the machine. Keeps load off the YELLOW-zone laptop."}
+    {
+      "where": "railway",
+      "why": "Same clean image for every arm, so differences come from the layer and not from the machine. Keeps load off the YELLOW-zone laptop."
+    }
   ],
   "arms": [
-    {"harness": "opencode-bare", "model": "one fixed model chosen in EXP-001", "role": "control: no plugin, no routing"},
-    {"harness": "now", "model": "OmO default routing", "role": "incumbent: stock OmO config"},
-    {"harness": "oms", "model": "routing brain chain per task class", "role": "challenger: our layer, generated from routing.schema.json"}
+    {
+      "harness": "opencode-bare",
+      "model": "one fixed model chosen in EXP-001",
+      "role": "control: no plugin, no routing"
+    },
+    {
+      "harness": "now",
+      "model": "OmO default routing",
+      "role": "incumbent: stock OmO config"
+    },
+    {
+      "harness": "oms",
+      "model": "routing brain chain per task class",
+      "role": "challenger: our layer, generated from routing.schema.json"
+    }
   ],
   "suite": "starlight-core-v0 + agentic-traps-v0 + web-v0 (structure, responsive and a11y tasks only)",
   "metric": {
     "primary": "cost_per_accepted_task_usd",
-    "secondary": ["accepted_rate", "first_try_accept_rate", "trap_pass_rate", "zdr_violations", "receipt_completeness", "median_wall_seconds", "human_interventions"]
+    "secondary": [
+      "accepted_rate",
+      "first_try_accept_rate",
+      "trap_pass_rate",
+      "zdr_violations",
+      "receipt_completeness",
+      "median_wall_seconds",
+      "human_interventions"
+    ]
   },
   "success_rule": "OmS is kept as a named layer only if accepted_rate is within 3 points of stock OmO, cost_per_accepted is at least 30% lower, zdr_violations is 0, receipt_completeness is 100%, and trap_pass_rate is not lower. If OmS only matches on cost, the value is governance and receipts, and that is stated as the result, not as a quality win.",
   "kill": "Stop at $4 of Token Pass or when two arms cannot run headless. Any arm with telemetry we cannot disable is dropped. With fewer than 10 runs per cell the report says directional and decides nothing.",
-  "budget": {"token_pass_usd_cap": 4, "infra_usd_cap": 1, "frank_hours": 1},
-  "blocked_by": ["pr-377", "suite-curation", "harness-runner", "pack-authoring", "dec-token-pass-key"],
-  "clock": {"ttl_days": 30, "started": null},
-  "next_gate": {"to": "S2", "receipt": "lab/results/EXP-008.md with the arm table, intervals and the pre-registration", "due": "30 days after start"},
+  "budget": {
+    "token_pass_usd_cap": 4,
+    "infra_usd_cap": 1,
+    "frank_hours": 1
+  },
+  "blocked_by": [
+    "pr-377",
+    "suite-curation",
+    "harness-runner",
+    "pack-authoring",
+    "dec-token-pass-key",
+    "receipt-fields"
+  ],
+  "clock": {
+    "ttl_days": 30,
+    "started": null
+  },
+  "next_gate": {
+    "to": "S2",
+    "receipt": "lab/results/EXP-008.md with the arm table, intervals and the pre-registration",
+    "due": "30 days after start"
+  },
   "decision_it_feeds": "Whether OmS ships as a product layer, and what starlight-ai-harness (the public template) claims about itself.",
   "preconditions": [
     "Pre-register the hypothesis, the prediction and the falsifier before the first run (SIS R5-DESIGN.md is the template).",

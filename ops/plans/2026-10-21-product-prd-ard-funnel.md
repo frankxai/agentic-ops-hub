@@ -26,7 +26,7 @@ This is the north star already in the estate: "Sovereign delegation, proven by r
 
 ## 3. Decisions this plan needs from Frank (summary)
 
-1. **One receipt schema.** Recommendation: adopt SIS run-receipt v1 as the envelope; Routing Brain fields (`class`, `model`, `cost_usd`, `zdr`, `reservation_id`) become a namespaced extension. Retire `routing.jsonl` as a separate format after a migration shim. Reason: three formats cannot be verified by one tool.
+1. **One receipt schema. DECIDED 2026-10-21: SIS run-receipt v1 is the envelope.** Correction: v1 forbids extra properties, so there is no extension block; routing detail travels in stage notes and hash-bound evidence. See `ops/plans/2026-10-21-receipt-schema-decision.md`. `routing.jsonl` stays as the raw call-level source, not a competing format.
 2. **One router.** Recommendation: Routing Brain owns policy data and classification (it has the budget and ZDR code); Queen consumes it as its model-selection step. Reason: Queen#39 has no independent checker yet and Routing Brain has the tests.
 3. **Open-core boundary.** Recommendation below (section 7). Needs Frank's licence and trademark ruling.
 4. **ZDR default.** Recommendation: fail-closed (unrecognised task means ZDR class). The PR 377 fork is implementing this on the draft branch; it is reversible.
@@ -96,7 +96,7 @@ Key decisions (ADRs, each with the alternative rejected):
 | A1 | Policy is data (`routing.schema.json`), code only enforces it | Hard-coded chains: unreviewable, drifts (the OmO generator already drifted) |
 | A2 | Fail closed on ZDR and on an unusable ledger root | Fail open: one checkout gets its own budget (Codex finding 5) |
 | A3 | Reserve then settle, holds bound to (class, model), expiry never frees budget silently | Plain timeout release: both calls settle, spend exceeds cap (Codex finding 2) |
-| A4 | One receipt envelope (SIS run-receipt v1) plus extension | Three formats: no single verifier |
+| A4 | One receipt envelope (SIS run-receipt v1), routing detail in stage notes and hash-bound evidence | Three formats: no single verifier. A custom extension: v1 forbids extra properties |
 | A5 | Maker and checker are different actors, enforced by the verifier | Self-attestation: the author never checks their own box |
 | A6 | Harness-neutral: opencode headless first, others as challengers measured in EXP-002 | Betting on one harness: the market moves weekly |
 | A7 | oh-my-starlight is a config and governance pack on upstream tools, not a fork | Fork OmO: licence bars commercial use, permanent merge debt |
