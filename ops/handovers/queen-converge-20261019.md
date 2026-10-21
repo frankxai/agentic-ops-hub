@@ -4,8 +4,9 @@ what: Land the Queen as she runs (starlight-estate PR 60), then open the seat-ph
 where: starlight-estate PR 60 (agent/claude/queen-converge-20261019); branch agent/claude/queen-seat-phase-20261019
 owner: Claude (maker); Codex or Grok (checker)
 status: open
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait
 evidence: https://github.com/frankxai/starlight-estate/pull/60#issuecomment-6265474280
-updated: 2026-10-19
+updated: 2026-10-21
 ---
 
 ## Prompt

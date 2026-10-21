@@ -14,8 +14,9 @@ updated: 2026-10-21
 Read `ops/plans/estate-convergence-2026-10-21.md` and `ops/sessions/2026-10-21.md` first. The five decisions were ruled on 21
 October; the last table of the plan says what is done and what waits on Frank's own accounts.
 
-1. Merges follow the plan's drain order only. Before any CI runs, disable every auto-merge the estate guardian armed and
-   record the list in this ledger. Once Frank sets the Actions budget: cost cuts and the draft-CI rule, then
+1. Merges follow the plan's drain order only. Before any budget or runner returns: Frank lowers `ESTATE_AUTONOMY`
+   everywhere estate-pr-guardian is installed, then you disable every auto-merge it already armed and record the list in
+   this ledger. Once Frank sets the Actions budget: cost cuts and the draft-CI rule, then
    security PRs (the plan names the private document that lists them), then spine PRs, then Dependabot minor/patch in the
    spine repositories not on hold, then the approved close sweep. Record every close and merge in this ledger the same day.
 2. Until then, prepare the first spine PRs so they are ready at step 3, without merging them:

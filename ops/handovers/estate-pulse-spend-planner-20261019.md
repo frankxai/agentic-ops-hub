@@ -4,9 +4,9 @@ what: Land the estate pulse, spend planner, starlight extension dispatch and fra
 where: prompt below
 owner: claude
 status: open
-note: five PRs in review on 2026-10-19; two need gates only Frank's seats can satisfy
+note: focus window to 20 Nov: only item 1 (frankx.ai-vercel-website#1068, a bug fix in a spine repository) may proceed; items 2-5 are outside the spine or a feature in a hold repository; five PRs in review on 2026-10-19; two need gates only Frank's seats can satisfy
 evidence: https://github.com/frankxai/frankx.ai-vercel-website/pull/1068
-updated: 2026-10-19
+updated: 2026-10-21
 ---
 
 ## Prompt

@@ -124,10 +124,13 @@ armed.
 
 ## The drain, in order
 
-1. Runners first. Before any CI runs, the drain owner disables every auto-merge the estate guardian armed
-   (`gh pr merge --disable-auto`) and records the list in the ledger, since returning runners would otherwise merge them
-   outside pr-gate. Frank sets a bounded personal-account Actions budget for one drain month; the Railway `CI_RUNNER` toggle
-   drafts are the fallback. No drain step can run CI before this. The first minutes go to the Actions cost cuts already
+1. Runners first, in this order, and no budget or runner before the first two are done:
+   1. Frank lowers `ESTATE_AUTONOMY` in every repository where estate-pr-guardian is installed (`off` in frozen and hold
+      repositories, at most `assist` elsewhere). Until then, any guardian job that runs can arm new auto-merges.
+   2. The drain owner disables every auto-merge the guardian already armed (`gh pr merge --disable-auto`, which acts on one
+      PR at a time) and records the list in the ledger.
+   3. Frank sets a bounded personal-account Actions budget for one drain month; the Railway `CI_RUNNER` toggle drafts are
+      the fallback. No drain step can run CI before this. The first minutes go to the Actions cost cuts already
    drafted (gencreator.ai#253, arcanea-platform#47) and the draft-CI rule above, which merge before any other PR runs CI.
 2. Security PRs: Next.js advisory upgrades and the open security fixes in five repositories. The list is not here, because
    some of these repositories are live and private. It is in step 2 of the drain order in Frank's private Claude Docs
@@ -182,6 +185,6 @@ worktrees that are clean, merged, bundled and unclaimed, and writes a receipt pe
 |---|---|---|---|
 | Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Stripe Payment Link and Polar checkout link support in #180 | Polar organization, products and webhook secret, and Polar's approval of the merchant and each AI-generation offering; finish Stripe business and bank onboarding for payouts; a Codex cloud environment for starlightintelligence.ai, so Codex can make #175's funding fixes |
 | Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` (guardrail 7) and the handover prompt | Set `ESTATE_AUTONOMY` where estate-pr-guardian is installed: `off` in frozen and hold repositories, at most `assist` elsewhere |
-| Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Ruled; the budget itself is not set yet | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
+| Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Ruled; the budget itself is not set yet, and waits until `ESTATE_AUTONOMY` is lowered and armed auto-merges are disabled | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
 | Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read; it is pinned by path and commit in the ledger before use |
 | Archive batch 1 | ai-architectures-observatory, oci-ai-architects/oci-ai-life-sciences | Not done: archiving is a human-only action under the federation rules | Archive both in repository settings |

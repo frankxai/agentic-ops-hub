@@ -4,9 +4,9 @@ what: GitHub org migration state, measured 17 October; 63 org copies made today,
 where: agentic-ops draft PRs 273 (consolidation plan), 275 (org federation registry), 241 (Starlight org launch); hub draft PR 357
 owner: unassigned
 status: open
-note: Batches 1 and 2 executed 2026-10-18 on Frank's yes (9 repos; batch 2 registry = agentic-ops PR 285, merged 90a27de). Drift re-measured 2026-10-19 00:03Z: 59 pairs, 50 in-sync, 5 mirror-behind, 4 unrelated, 0 P0, 0 Dependabot PRs on mirrors. federation-drift.mjs does not self-pair transferred repos (pairs come from repos owned by frankxai; all 9 transferred repos appear as org-native). Sync job drafted as agentic-ops PR 284 (draft, no schedule). Batch 3 awaits Frank.
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; Batches 1 and 2 executed 2026-10-18 on Frank's yes (9 repos; batch 2 registry = agentic-ops PR 285, merged 90a27de). Drift re-measured 2026-10-19 00:03Z: 59 pairs, 50 in-sync, 5 mirror-behind, 4 unrelated, 0 P0, 0 Dependabot PRs on mirrors. federation-drift.mjs does not self-pair transferred repos (pairs come from repos owned by frankxai; all 9 transferred repos appear as org-native). Sync job drafted as agentic-ops PR 284 (draft, no schedule). Batch 3 awaits Frank.
 evidence: https://github.com/frankxai/agentic-ops/pull/285
-updated: 2026-10-19
+updated: 2026-10-21
 ---
 
 ## Prompt
