@@ -28,7 +28,9 @@ The correct shape is neither. It is **event-driven CI that acts on real events, 
 ## Autonomy levels (per repo)
 
 > **No repository runs at `auto` until 20 November 2026.** During the estate focus window pr-gate is the only merge
-> mechanism (`ops/plans/estate-convergence-2026-10-21.md`), so `ESTATE_AUTONOMY` is `assist` or `off` everywhere. After
+> mechanism (`ops/plans/estate-convergence-2026-10-21.md`). `ESTATE_AUTONOMY` is `off` in frozen and hold repositories,
+> because `assist` lets `@estate fix` push commits, and at most `assist` elsewhere. Lowering it does not cancel an
+> auto-merge already armed with `gh pr merge --auto`; the drain owner disables those before runners return. After
 > 20 November, or earlier if Frank revises that ruling, this hold ends. Until then `scripts/rollout-ops-governance.mjs --apply`
 > refuses to run, and its `auto` recommendations do not apply.
 
