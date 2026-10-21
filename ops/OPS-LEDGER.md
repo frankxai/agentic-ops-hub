@@ -1,3 +1,9 @@
+<!-- required-checks-always-report-20261021:start -->
+## Required checks: Merge Gate and Contract Guard stop blocking pull requests that match no path
+
+frankx.ai-vercel-website PR 1083 (draft) removes the `paths:` filter from two required checks and pins the trigger and job names with a test. PR 1029 is the pull request that was stuck. Codex reviewed; one finding fixed, three existing gaps listed as follow-ups in [the session](sessions/2026-10-21.md). Not merged: needs ready, a non-Claude sign-off and an update-branch on 1029.
+<!-- required-checks-always-report-20261021:end -->
+
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 

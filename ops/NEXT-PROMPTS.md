@@ -6,6 +6,7 @@ Sections retired on 17 October 2026 are kept verbatim in [archive/prompts/](arch
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [required-checks-always-report-20261021](handovers/required-checks-always-report-20261021.md) | Land frankx.ai-vercel-website PR 1083 so Merge Gate and Contract Guard report on every pull request, then unblock PR 1029 | unclaimed (author harness claude; the checker must be another harness) | open |
 | [estate-pulse-spend-planner-20261019](handovers/estate-pulse-spend-planner-20261019.md) | Land the estate pulse, spend planner, starlight extension dispatch and frankx.ai analytics fix | claude | open |
 | [H-org-migration](handovers/H-org-migration.md) | GitHub org migration state, measured 17 October; 63 org copies made today, no transfers, Registry still says frankxai | unassigned | open |
 | [queen-converge-20261019](handovers/queen-converge-20261019.md) | Land the Queen as she runs (starlight-estate PR 60), then open the seat-phase follow-up | Claude (maker); Codex or Grok (checker) | open |
