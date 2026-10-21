@@ -10,6 +10,14 @@ one drain owner and a drain order for when runners return. Five founder decision
 [the session](sessions/2026-10-21.md).
 <!-- estate-convergence-20261021:end -->
 
+<!-- estate-convergence-rulings-20261021:start -->
+## Convergence rulings: Polar rail, nine-repository spine, wave 1 of closes
+
+Frank delegated the five decisions. Polar is the rail for his own sales, the spine holds until 20 November (now in
+`AGENTS.md`), and 11 stale PRs in frozen repositories closed with their branches kept. Polar and Stripe account setup, the
+Actions budget and two archives wait on Frank's accounts. Details in [the session](sessions/2026-10-21.md).
+<!-- estate-convergence-rulings-20261021:end -->
+
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 

@@ -4,15 +4,15 @@ what: Rule the rail and spine, then drain in the order of the convergence plan o
 where: prompt below
 owner: claude
 status: open
-note: plan proposed 21 Oct; five founder decisions open; starlightintelligence.ai#180 needs a non-Claude pr-gate check at its head
+note: decisions ruled 21 Oct (delegated); wave 1 closed; starlightintelligence.ai#180 needs a non-Claude pr-gate check at its head
 evidence: https://github.com/frankxai/starlightintelligence.ai/pull/180
 updated: 2026-10-21
 ---
 
 ## Prompt
 
-Read `ops/plans/estate-convergence-2026-10-21.md` and `ops/sessions/2026-10-21.md` first. Check which of the five founder
-decisions at the end of the plan Frank has answered; act only on answered ones.
+Read `ops/plans/estate-convergence-2026-10-21.md` and `ops/sessions/2026-10-21.md` first. The five decisions were ruled on 21
+October; the last table of the plan says what is done and what waits on Frank's own accounts.
 
 1. starlightintelligence.ai#180 (head `1f7775f` or later): needs a non-Claude pr-gate check on the exact head, a Vercel READY
    preview for that head, and CI once runners exist. Merge only through pr-gate by a non-Claude harness or Frank.

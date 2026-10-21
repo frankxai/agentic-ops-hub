@@ -60,6 +60,7 @@ Multiple agents (Claude, Grok, Gemini, Codex, Cursor, Cline) may work this repo 
 * **One agent = one branch:** `agent/<harness>/<short-scope>`. For heavy parallel work use a worktree: `git worktree add .worktrees/<name> -b agent/<harness>/<scope>`.
 * **Don't edit a file another live agent is mid-rewrite on.** Last-write-wins silently clobbers work. If the tree churns under you, pause and report.
 * **Integrate one at a time.** Stage your own scope with explicit pathspecs — never sweep another agent's in-flight changes into your commit.
+* **Focus window, 21 October to 20 November 2026 (founder ruling).** Open PRs only in the spine repositories of `ops/plans/estate-convergence-2026-10-21.md`, within their caps. Every other repository is read-only to agents; a security fix there goes through the drain owner. No new repositories, Vercel projects or one-branch fan-outs across repositories. Record every close and merge in `ops/OPS-LEDGER.md` the same day.
 
 ---
 

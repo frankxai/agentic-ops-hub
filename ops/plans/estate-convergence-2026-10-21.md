@@ -2,7 +2,8 @@
 
 Written 21 October 2026 by Claude from three read-only inventories of the 57 repositories attached to this session, a digest
 of this hub's records to 19 October, and the Vercel lifecycle snapshot of 13 October (`registry/vercel-projects-2026-10-13.md`).
-Everything here is a proposal until Frank says yes. Nothing in this plan has been closed, archived, merged or moved.
+Frank delegated the five decisions on 21 October ("U suggest"); the recommendations below are now rulings. What was executed
+and what still needs Frank's own accounts is in the last section.
 
 ## The call
 
@@ -141,12 +142,12 @@ The restart pack from 17 October already holds the runbook, the at-risk manifest
 unblock it: the private home for prompts and intents, and the worktree-root policy. After that, the reaper removes only
 worktrees that are clean, merged, bundled and unclaimed, and writes a receipt per removal.
 
-## Decisions for Frank
+## Decisions, ruled 21 October
 
-1. **Rail:** Polar for your own sales, Stripe Payment Links for the founders using the factory. Or Stripe Managed Payments,
-   if your dashboard says the account is eligible.
-2. **Spine:** approve the table above. Everything else freezes until 20 November.
-3. **Runners:** set the personal-account Actions budget for November, or run the Railway runner toggle
-   (starlightintelligence.ai#147).
-4. **Closes:** approve the sweep in step 5 of the drain.
-5. **Archives:** the two in the consolidation table, as batch 1.
+| Decision | Ruling | Done | Needs Frank's account |
+|---|---|---|---|
+| Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Payment Link checkout in #180 | Polar organization, products and webhook secret; finish Stripe business and bank onboarding for payouts |
+| Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` and the handover prompt | None |
+| Runners | Personal-account Actions budget for November, cost cuts merged first | Recommendation only | Set the budget in GitHub billing; Railway toggle (#147) stays the fallback |
+| Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read |
+| Archive batch 1 | ai-architectures-observatory, oci-ai-architects/oci-ai-life-sciences | Not done: archiving is a human-only action under the federation rules | Archive both in repository settings |
