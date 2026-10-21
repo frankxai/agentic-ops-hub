@@ -24,6 +24,13 @@ MIN_MODEL_SAMPLES = 5
 REQUIRED = ("ts", "task_class", "used", "success", "cost_usd", "latency_ms")
 
 
+def _well_typed(r: dict) -> bool:
+    """Keys are hashed and compared downstream, so a list or dict there is a
+    malformed receipt, not a crash."""
+    return (isinstance(r["task_class"], str) and isinstance(r["used"], str)
+            and isinstance(r["ts"], str) and isinstance(r["success"], bool))
+
+
 def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None = None) -> tuple[list[dict], dict]:
     path = path or receipts_dir() / "routing.jsonl"
     skipped = {"malformed": 0, "incomplete": 0, "synthetic": 0, "non_finite": 0}
@@ -47,6 +54,9 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
         if r.get("synthetic"):
             skipped["synthetic"] += 1
             continue
+        if not _well_typed(r):
+            skipped["malformed"] += 1
+            continue
         try:
             ts = datetime.fromisoformat(r["ts"])
             if ts.tzinfo is None:
@@ -69,7 +79,8 @@ def analyze(receipts: list[dict], schema: dict) -> dict:
     by_class = defaultdict(lambda: {"n": 0, "success": 0, "cost": 0.0, "latency": 0.0, "over": 0,
                                     "models": defaultdict(lambda: {"n": 0, "success": 0, "cost": 0.0})})
     for r in receipts:
-        if r["task_class"] not in known:
+        if not isinstance(r["task_class"], str) or not isinstance(r["used"], str) \
+                or r["task_class"] not in known:
             continue
         c = by_class[r["task_class"]]
         c["n"] += 1

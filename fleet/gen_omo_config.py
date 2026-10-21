@@ -88,8 +88,10 @@ def build(schema: dict) -> dict:
         entry = {"model": first["model"] if isinstance(first, dict) else first}
         if isinstance(first, dict):
             entry["reasoning"] = first["reasoning"]
-        if len(ms) > 1:
-            entry["fallback_models"] = ms[1:]
+        # Always explicit, even when empty: a category without the key inherits
+        # the fallbacks of the agent that delegates to it (OmO checks truthiness,
+        # and [] is truthy), which would leak ZDR data to free models.
+        entry["fallback_models"] = ms[1:]
         categories[cat] = entry
 
     return {

@@ -4,9 +4,12 @@
 Combines route_classifier + route_executor. Prints the chosen model + fallback
 chain. Flow around a call:
 
-  1. route_task.py "<task>" --preflight --est-cost 0.02   (before the call)
+  1. route_task.py "<task>" --preflight --est-cost 0.02   (before the call; a paid
+     model needs an explicit estimate and gets a reservation_id that holds the
+     budget)
   2. make the call with the chosen model
   3. route_task.py "<task>" --record success --used <model> --cost <usd> --latency <ms>
+     [--reservation <reservation_id>]
 
 Exit codes: 0 ok, 2 rejected input, 3 receipt recorded but cost passed the
 class ceiling (the spend is in the ledger; treat the route as needing review).
@@ -19,7 +22,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from route_classifier import classify
-from route_executor import BudgetError, preflight, record_receipt, route
+from route_executor import BudgetError, preflight, record_receipt, reserve, route
 
 
 def _fail(msg: str, code: int = 2):
@@ -34,7 +37,11 @@ def main():
     ap.add_argument("--allow-non-zdr", action="store_true",
                     help="Let ZDR-required classes fall back to non-ZDR (free) models; stamped on the receipt")
     ap.add_argument("--preflight", action="store_true", help="Check a planned call against ceiling and budget")
-    ap.add_argument("--est-cost", type=float, default=0.0, help="Estimated cost USD for --preflight")
+    ap.add_argument("--est-cost", type=float, default=None,
+                    help="Estimated cost USD for --preflight (required and > 0 for paid models)")
+    ap.add_argument("--no-reserve", action="store_true",
+                    help="With --preflight: check only, hold no budget")
+    ap.add_argument("--reservation", help="reservation_id printed by --preflight; settled by --record")
     ap.add_argument("--record", choices=["success", "fail"], help="Record a receipt")
     ap.add_argument("--used", help="Model actually used (required with --record/--preflight)")
     ap.add_argument("--cost", type=float, default=None, help="Cost USD (required with --record)")
@@ -54,7 +61,8 @@ def main():
     if args.preflight:
         model = args.used or r["primary"]
         try:
-            status = preflight(c["class"], model, args.est_cost, args.allow_non_zdr)
+            admit = preflight if args.no_reserve else reserve
+            status = admit(c["class"], model, args.est_cost, args.allow_non_zdr)
         except BudgetError as e:
             _fail(str(e))
         except ValueError as e:
@@ -72,7 +80,8 @@ def main():
         try:
             receipt = record_receipt(c["class"], args.used, args.used != r["primary"], args.cost,
                                      args.latency, args.record == "success", args.provider,
-                                     allow_non_zdr=args.allow_non_zdr, synthetic=args.synthetic)
+                                     allow_non_zdr=args.allow_non_zdr, synthetic=args.synthetic,
+                                     reservation_id=args.reservation)
         except (ValueError, FileNotFoundError, TimeoutError) as e:
             _fail(str(e))
         print(f"receipt recorded: class={c['class']} used={args.used} success={args.record == 'success'}")

@@ -16,13 +16,17 @@ SCHEMA_PATH = Path(__file__).resolve().parent / "routing.schema.json"
 # Keyword rules, first match wins. Paid classes need an explicit multi-word or
 # unambiguous signal; a single common word ("plan", "complex", "novel") must
 # never lift a task out of the free tier.
+#
+# Order is a privacy rule: every ZDR class (ultrabrain, hard-reasoning, bulk,
+# code) is tested before the free vision and review classes, so a coding request
+# that merely mentions a screenshot or an audit stays on ZDR models.
 FAST_RULES = [
-    ("vision",        re.compile(r"\b(screenshots?|screencasts?|video|multimodal|looker|ui mock(up)?s?|analy[sz]e (the |this )?(image|photo|picture))\b", re.I)),
     ("ultrabrain",    re.compile(r"\b(ultrabrain|deep think|research-grade|greenfield|from scratch)\b", re.I)),
     ("hard-reasoning",re.compile(r"\b(root[- ]cause|multi[- ]?step|deep codegen|long[- ]context|hard[- ]reasoning|plan the (migration|rollout|architecture)|reason (about|through))\b", re.I)),
     ("bulk",          re.compile(r"\b((extract|classify|summari[sz]e) (all|many|every|bulk)|bulk|batch)\b", re.I)),
-    ("review",        re.compile(r"\b(review|lint|audit|best practices?|style guide)\b", re.I)),
     ("code",          re.compile(r"\b(implement|refactor|edit|fix|write|add (a )?(feature|test|function)|rename|change|update (the )?(file|function|module)|create|build)\b", re.I)),
+    ("vision",        re.compile(r"\b(screenshots?|screencasts?|video|multimodal|looker|ui mock(up)?s?|analy[sz]e (the |this )?(image|photo|picture))\b", re.I)),
+    ("review",        re.compile(r"\b(review|lint|audit|best practices?|style guide)\b", re.I)),
     ("scout",         re.compile(r"\b(find|search|locate|list|explore|scout|map (the )?codebase|where is|show|read|summari[sz]e|what|how|why|explain|describe)\b", re.I)),
 ]
 

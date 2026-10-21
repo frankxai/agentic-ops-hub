@@ -10,8 +10,11 @@ Policy enforced here (not just documented):
 - ZDR: a class with zdr_required only walks models listed under token_pass
   (zero data retention). Free/non-ZDR fallbacks are excluded unless the caller
   passes allow_non_zdr=True, which is stamped on the receipt.
-- Budget: preflight() refuses a paid model when the month's paid spend plus the
-  estimate would pass token_pass.hard_cap_usd.
+- Budget: preflight() refuses a paid model when the month's paid spend, the live
+  reservations and the estimate would pass token_pass.hard_cap_usd. reserve()
+  does the same check and records the reservation in one locked step, so two
+  callers cannot both be admitted into the same headroom; record_receipt()
+  settles the reservation. Unsettled reservations expire after RESERVATION_TTL_S.
 - Ledger: an over-ceiling cost is still recorded (flagged over_ceiling) so the
   ledger sees the events the ceiling exists to catch.
 """
@@ -27,6 +30,7 @@ from pathlib import Path
 SCHEMA_PATH = Path(__file__).resolve().parent / "routing.schema.json"
 DEFAULT_RECEIPTS_DIR = Path(__file__).resolve().parent / "receipts"
 LOCK_TIMEOUT_S = 10.0
+RESERVATION_TTL_S = 1800
 
 
 class BudgetError(ValueError):
@@ -34,8 +38,21 @@ class BudgetError(ValueError):
 
 
 def receipts_dir() -> Path:
+    """Ledger directory. Order: STARLIGHT_RECEIPTS_DIR (tests, dry runs), then the
+    schema's receipts.root so every worktree shares one budget, then this checkout
+    (only when the schema root is missing or not an absolute path on this OS)."""
     override = os.environ.get("STARLIGHT_RECEIPTS_DIR")
-    return Path(override) if override else DEFAULT_RECEIPTS_DIR
+    if override:
+        return Path(override)
+    try:
+        root = load_schema().get("receipts", {}).get("root")
+    except (FileNotFoundError, ValueError):
+        root = None
+    if isinstance(root, str) and root:
+        path = Path(os.path.expandvars(root)).expanduser()
+        if path.is_absolute():
+            return path
+    return DEFAULT_RECEIPTS_DIR
 
 
 def load_schema() -> dict:
@@ -141,28 +158,85 @@ def month_paid_spend(now: datetime | None = None) -> float:
     return total
 
 
-def preflight(task_class: str, model: str, est_cost_usd: float,
-              allow_non_zdr: bool = False) -> dict:
-    """Check a call BEFORE it is made. Raises on anything that should not run."""
-    if not math.isfinite(est_cost_usd) or est_cost_usd < 0:
-        raise ValueError("est_cost_usd must be a finite non-negative number")
+def reserved_usd(now: datetime | None = None) -> float:
+    """Estimated spend held by unsettled, unexpired reservations."""
+    now = now or datetime.now(timezone.utc)
+    path = receipts_dir() / "reservations.jsonl"
+    held: dict[str, float] = {}
+    settled: set[str] = set()
+    for e in _read_receipts(path):
+        try:
+            if e["kind"] == "settle":
+                settled.add(e["id"])
+                continue
+            ts = datetime.fromisoformat(e["ts"])
+            est = float(e["est_cost_usd"])
+            if ts.tzinfo is None:
+                ts = ts.replace(tzinfo=timezone.utc)
+            held_id = str(e["id"])
+        except (KeyError, ValueError, TypeError):
+            continue
+        if math.isfinite(est) and est >= 0 and (now - ts).total_seconds() < RESERVATION_TTL_S:
+            held[held_id] = est
+    return sum(v for k, v in held.items() if k not in settled)
+
+
+def _admit(task_class: str, model: str, est_cost_usd: float | None, allow_non_zdr: bool) -> dict:
+    """Pure admission check; raises on anything that should not run."""
     r = route(task_class, allow_non_zdr)
     if model not in r["chain"]:
         raise ValueError(f"model '{model}' is not allowed for '{task_class}': {r['chain']}")
+    schema = load_schema()
+    paid = is_paid(model, schema)
+    if est_cost_usd is None:
+        if paid:
+            raise ValueError(f"'{model}' is a paid model: pass an explicit positive estimate")
+        est_cost_usd = 0.0
+    if not isinstance(est_cost_usd, (int, float)) or not math.isfinite(est_cost_usd) or est_cost_usd < 0:
+        raise ValueError("est_cost_usd must be a finite non-negative number")
+    if paid and est_cost_usd == 0:
+        raise ValueError(f"'{model}' is a paid model: the estimate must be greater than zero")
     if est_cost_usd > r["cost_ceiling_usd"]:
         raise BudgetError(
             f"estimate ${est_cost_usd} exceeds the ${r['cost_ceiling_usd']} ceiling for '{task_class}'")
-    schema = load_schema()
     tp = schema.get("token_pass", {})
-    status = {"model": model, "month_paid_spend_usd": 0.0, "soft_alert": False}
-    if is_paid(model, schema):
-        spent = month_paid_spend()
+    status = {"model": model, "month_paid_spend_usd": 0.0, "reserved_usd": 0.0, "soft_alert": False,
+              "reservation_id": None}
+    if paid:
+        spent, held = month_paid_spend(), reserved_usd()
+        cap = tp.get("hard_cap_usd", float("inf"))
         status["month_paid_spend_usd"] = round(spent, 6)
-        if spent + est_cost_usd > tp.get("hard_cap_usd", float("inf")):
+        status["reserved_usd"] = round(held, 6)
+        if spent + held >= cap or spent + held + est_cost_usd > cap:
             raise BudgetError(
-                f"month spend ${spent:.4f} + ${est_cost_usd} would pass the "
-                f"${tp['hard_cap_usd']} Token Pass hard cap")
-        status["soft_alert"] = spent + est_cost_usd >= tp.get("soft_alert_usd", float("inf"))
+                f"month spend ${spent:.4f} + reserved ${held:.4f} + ${est_cost_usd} would pass the "
+                f"${cap} Token Pass hard cap")
+        status["soft_alert"] = spent + held + est_cost_usd >= tp.get("soft_alert_usd", float("inf"))
+    return status
+
+
+def preflight(task_class: str, model: str, est_cost_usd: float | None = None,
+              allow_non_zdr: bool = False) -> dict:
+    """Check a call BEFORE it is made, without holding any headroom."""
+    return _admit(task_class, model, est_cost_usd, allow_non_zdr)
+
+
+def reserve(task_class: str, model: str, est_cost_usd: float | None = None,
+            allow_non_zdr: bool = False) -> dict:
+    """Admit a call and hold its estimate against the cap until record_receipt()
+    settles it. Check and hold happen under one lock, so concurrent callers
+    cannot be admitted into the same headroom."""
+    ledger = receipts_dir() / "routing.jsonl"
+    ledger.parent.mkdir(parents=True, exist_ok=True)
+    with _locked(ledger):
+        status = _admit(task_class, model, est_cost_usd, allow_non_zdr)
+        if is_paid(model, load_schema()):
+            rid = uuid.uuid4().hex[:12]
+            event = {"kind": "reserve", "id": rid, "ts": datetime.now(timezone.utc).isoformat(),
+                     "model": model, "task_class": task_class, "est_cost_usd": round(float(est_cost_usd), 6)}
+            _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(event, allow_nan=False))
+            status["reservation_id"] = rid
+            status["reserved_usd"] = round(status["reserved_usd"] + float(est_cost_usd), 6)
     return status
 
 
@@ -206,24 +280,32 @@ def _locked(path: Path):
         os.close(fd)
 
 
+def _append_unlocked(path: Path, line: str) -> None:
+    """One binary write, LF endings. The caller must hold _locked on the ledger."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    data = (line + "\n").encode("utf-8")
+    fd = os.open(path, os.O_WRONLY | os.O_APPEND | os.O_CREAT | getattr(os, "O_BINARY", 0))
+    try:
+        os.write(fd, data)
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+
+
 def append_line(path: Path, line: str) -> None:
     """Append one line under the lock, LF endings, exactly one write call."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    data = (line + "\n").encode("utf-8")
     with _locked(path):
-        fd = os.open(path, os.O_WRONLY | os.O_APPEND | os.O_CREAT | getattr(os, "O_BINARY", 0))
-        try:
-            os.write(fd, data)
-            os.fsync(fd)
-        finally:
-            os.close(fd)
+        _append_unlocked(path, line)
 
 
 def record_receipt(task_class: str, used: str, fallback_used: bool,
                    cost_usd: float, latency_ms: int, success: bool,
                    provider: str = "", machine: str = "",
-                   allow_non_zdr: bool = False, synthetic: bool = False) -> dict:
-    """Append a routing receipt (jsonl) and return it.
+                   allow_non_zdr: bool = False, synthetic: bool = False,
+                   reservation_id: str | None = None) -> dict:
+    """Append a routing receipt (jsonl) and return it. A reservation_id from
+    reserve() is settled in the same locked step.
 
     Spend that already happened is always recorded. A cost over the class
     ceiling is flagged over_ceiling rather than refused, so the ledger and the
@@ -253,7 +335,13 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
         "zdr_override": bool(allow_non_zdr and r["zdr_required"] and not is_paid(used, load_schema())),
         "synthetic": bool(synthetic),
     }
-    append_line(receipts_dir() / "routing.jsonl", json.dumps(receipt, allow_nan=False))
+    ledger = receipts_dir() / "routing.jsonl"
+    ledger.parent.mkdir(parents=True, exist_ok=True)
+    with _locked(ledger):
+        _append_unlocked(ledger, json.dumps(receipt, allow_nan=False))
+        if reservation_id:
+            settle = {"kind": "settle", "id": reservation_id, "ts": receipt["ts"]}
+            _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(settle, allow_nan=False))
     return receipt
 
 

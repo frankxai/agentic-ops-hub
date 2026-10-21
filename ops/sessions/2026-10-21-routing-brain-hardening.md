@@ -44,3 +44,22 @@ ZDR classes no longer fall back to free models by default. If Token Pass is down
 - `beam-free` is missing from the Oct 16 model catalog but answers headless; confirm.
 - Per-agent model overrides on opencode v2.1.2 were not confirmed to apply; OmO v1 agents do not register on v2.
 - `fleet/model-routing.json` is modified in the main checkout by an unrelated change and is not part of this branch.
+
+## Codex round 1 (reviewed SHA 69194f0): CHANGES REQUESTED, fixed in the next commit
+
+Codex ran the 30 tests green, then broke the design with six findings. Each now has a failing-first test in `tests/test_routing_brain.py` (48 tests total).
+
+| Finding | Fix |
+|---|---|
+| P1 singleton ZDR chain left `fallback_models` off, so `bulk-extraction` inherited `sisyphus-junior`'s free fallbacks (OmO checks truthiness, `[]` is truthy) | every category now emits `fallback_models`, empty when the ZDR-safe chain has one model; exact-slot-set test |
+| P1 classifier tested vision/review before code, so `fix the screenshot upload bug` went to free non-ZDR vision | all ZDR classes are tested before vision and review; test asserts coding phrasings never land in a non-ZDR class |
+| P1 preflight held nothing, two callers could pass the cap together | `reserve()` checks and writes a hold in one locked step (`reservations.jsonl`); `record_receipt(reservation_id=)` settles it; holds expire after 30 min; 6 concurrent processes against 1.0 USD headroom admit exactly 2 |
+| P1 each worktree defaulted to its own `receipts/`, ignoring `schema.receipts.root` | `receipts_dir()` = `STARLIGHT_RECEIPTS_DIR`, else `schema.receipts.root`, else the checkout only when the root is not an absolute path on this OS |
+| P2 missing `--est-cost` defaulted to 0 and admitted paid calls at the cap | paid models need an explicit estimate above zero; paid admission is refused once spend plus holds reach the cap; free models may omit it |
+| P2 `"task_class":[]` crashed the weekly review | loader counts wrongly-typed `task_class`, `used`, `ts`, `success` as malformed; `analyze` guards too |
+
+CLI: `--preflight` now reserves and prints `reservation_id`; pass it to `--record --reservation <id>`. `--no-reserve` checks without holding. Exit codes unchanged (0, 2, 3).
+
+Test coverage gap Codex named (removing `oracle` still passed) is closed: the generated agent and category sets are compared for equality with the expected OmO slots.
+
+Caveat: the schema root is `C:/Users/frank/agentic-ops/fleet/receipts`, so on this machine every worktree now writes the live ledger. Other machines (Railway worker) resolve to their own checkout and keep their own budget; a shared Token Pass cap across machines still needs a central ledger.

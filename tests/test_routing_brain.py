@@ -258,5 +258,168 @@ class Cli(TmpLedger):
         self.assertEqual(json.loads(p.stdout)["class"], "code")
 
 
+def _reserve_worker(args):
+    d, est = args
+    os.environ["STARLIGHT_RECEIPTS_DIR"] = d
+    try:
+        route_executor.reserve("code", "vercel/zai/glm-5.3", est)
+        return True
+    except route_executor.BudgetError:
+        return False
+
+
+class BudgetReservation(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+
+    def test_second_admission_cannot_pass_the_cap(self):
+        with patch.object(route_executor, "month_paid_spend", return_value=79.70):
+            route_executor.reserve("code", self.GLM, 0.20)
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.reserve("code", self.GLM, 0.20)
+
+    def test_settling_releases_the_reservation(self):
+        res = route_executor.reserve("code", self.GLM, 0.20)
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.20)
+        route_executor.record_receipt("code", self.GLM, False, 0.05, 10, True,
+                                      reservation_id=res["reservation_id"])
+        self.assertEqual(route_executor.reserved_usd(), 0.0)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.05)
+
+    def test_stale_reservation_expires(self):
+        route_executor.reserve("code", self.GLM, 0.20)
+        later = datetime.now(timezone.utc) + timedelta(seconds=route_executor.RESERVATION_TTL_S + 5)
+        self.assertEqual(route_executor.reserved_usd(now=later), 0.0)
+
+    def test_free_models_reserve_nothing(self):
+        res = route_executor.reserve("scout", "opencode/mimo-v2.6-flash-free", None)
+        self.assertIsNone(res["reservation_id"])
+        self.assertFalse((Path(self.tmp.name) / "reservations.jsonl").exists())
+
+    def test_concurrent_reservations_never_exceed_the_cap(self):
+        route_executor.record_receipt("code", self.GLM, False, 79.0, 10, True, synthetic=True)
+        with multiprocessing.Pool(6) as pool:
+            admitted = pool.map(_reserve_worker, [(self.tmp.name, 0.5)] * 6)
+        self.assertEqual(sum(admitted), 2)
+
+    def test_missing_or_zero_estimate_is_refused_for_paid_models(self):
+        for est in (None, 0, 0.0):
+            with self.assertRaises(ValueError):
+                route_executor.preflight("code", self.GLM, est)
+        route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", None)
+
+    def test_paid_admission_stops_once_the_cap_is_reached(self):
+        cap = SCHEMA["token_pass"]["hard_cap_usd"]
+        with patch.object(route_executor, "month_paid_spend", return_value=cap):
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.preflight("code", self.GLM, 0.0001)
+
+    def test_cli_preflight_reserves_and_record_settles(self):
+        env = {**os.environ, "STARLIGHT_RECEIPTS_DIR": self.tmp.name}
+
+        def run(*a):
+            return subprocess.run([sys.executable, "-I", "-B", str(FLEET / "route_task.py"), *a],
+                                  capture_output=True, text=True, env=env)
+
+        no_est = run("refactor the auth module", "--preflight")
+        self.assertEqual(no_est.returncode, 2, no_est.stderr)
+        pre = run("refactor the auth module", "--preflight", "--est-cost", "0.2")
+        self.assertEqual(pre.returncode, 0, pre.stderr)
+        rid = json.loads(pre.stdout)["reservation_id"]
+        self.assertTrue(rid)
+        rec = run("refactor the auth module", "--record", "success", "--used", self.GLM, "--cost", "0.05",
+                  "--latency", "10", "--reservation", rid, "--synthetic")
+        self.assertEqual(rec.returncode, 0, rec.stderr)
+        with patch.dict(os.environ, {"STARLIGHT_RECEIPTS_DIR": self.tmp.name}):
+            self.assertEqual(route_executor.reserved_usd(), 0.0)
+
+
+class SharedLedgerRoot(unittest.TestCase):
+    def test_default_follows_schema_root_not_the_checkout(self):
+        with tempfile.TemporaryDirectory() as d:
+            schema = {**SCHEMA, "receipts": {**SCHEMA["receipts"], "root": d}}
+            env = {k: v for k, v in os.environ.items() if k != "STARLIGHT_RECEIPTS_DIR"}
+            with patch.dict(os.environ, env, clear=True), patch.object(route_executor, "load_schema",
+                                                                        return_value=schema):
+                self.assertEqual(route_executor.receipts_dir(), Path(d))
+
+    def test_env_override_wins(self):
+        with tempfile.TemporaryDirectory() as d, patch.dict(os.environ, {"STARLIGHT_RECEIPTS_DIR": d}):
+            self.assertEqual(route_executor.receipts_dir(), Path(d))
+
+    def test_unusable_root_falls_back_to_checkout(self):
+        schema = {**SCHEMA, "receipts": {"root": "relative/or/foreign"}}
+        env = {k: v for k, v in os.environ.items() if k != "STARLIGHT_RECEIPTS_DIR"}
+        with patch.dict(os.environ, env, clear=True), patch.object(route_executor, "load_schema",
+                                                                    return_value=schema):
+            self.assertEqual(route_executor.receipts_dir(), route_executor.DEFAULT_RECEIPTS_DIR)
+
+
+class ClassifierZdrPrecedence(unittest.TestCase):
+    CODING = [
+        "fix the screenshot upload bug",
+        "implement the audit logging module",
+        "update the function that handles video uploads",
+        "refactor the lint config",
+        "add a test for the multimodal parser",
+    ]
+
+    def test_coding_requests_never_land_in_a_non_zdr_class(self):
+        for task in self.CODING:
+            c = route_classifier.classify(task)
+            self.assertTrue(c["zdr_required"], (task, c["class"]))
+
+    def test_plain_vision_and_review_stay_free(self):
+        self.assertEqual(route_classifier.classify("analyze this screenshot")["class"], "vision")
+        self.assertEqual(route_classifier.classify("review this PR for style")["class"], "review")
+
+
+class ReviewTypeSafety(TmpLedger):
+    def _line(self, **kw):
+        base = {"ts": datetime.now(timezone.utc).isoformat(), "task_class": "code",
+                "used": "vercel/zai/glm-5.3", "success": True, "cost_usd": 0.1, "latency_ms": 5}
+        return json.dumps({**base, **kw})
+
+    def test_wrongly_typed_fields_are_skipped_not_fatal(self):
+        bad = [self._line(task_class=[]), self._line(used={"a": 1}), self._line(success="yes"),
+               self._line(task_class=None)]
+        self.ledger.write_text("\n".join([self._line(), *bad]) + "\n", encoding="utf-8")
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(len(got), 1)
+        self.assertEqual(skipped["malformed"], len(bad))
+        review.analyze(got, SCHEMA)
+
+    def test_analyze_tolerates_unhashable_class_directly(self):
+        rs = [{"task_class": [], "used": "x", "success": True, "cost_usd": 0.0, "latency_ms": 1.0}]
+        self.assertEqual(review.analyze(rs, SCHEMA), {})
+
+
+class OmoSlotCoverage(unittest.TestCase):
+    AGENTS = {"sisyphus", "sisyphus-junior", "hephaestus", "oracle", "prometheus", "metis", "atlas",
+              "librarian", "explore", "multimodal-looker", "momus"}
+    CATEGORIES = {"visual-engineering", "ultrabrain", "deep", "deep-low", "deep-high", "artistry", "quick",
+                  "unspecified-low", "unspecified-high", "writing", "research", "bulk-extraction",
+                  "code-review"}
+
+    def test_generated_slots_match_the_expected_set_exactly(self):
+        cfg = gen_omo_config.build(SCHEMA)["[opencode]"]
+        self.assertEqual(set(cfg["agents"]), self.AGENTS)
+        self.assertEqual(set(cfg["categories"]), self.CATEGORIES)
+
+    def test_every_category_pins_its_fallbacks_explicitly(self):
+        cats = gen_omo_config.build(SCHEMA)["[opencode]"]["categories"]
+        for cat, v in cats.items():
+            self.assertIn("fallback_models", v, cat)
+        self.assertEqual(cats["bulk-extraction"]["fallback_models"], [])
+
+    def test_zdr_categories_never_list_a_non_zdr_fallback(self):
+        cats = gen_omo_config.build(SCHEMA)["[opencode]"]["categories"]
+        safe = route_executor.zdr_models(SCHEMA)
+        for cat, cls in gen_omo_config.CATEGORY_MAP.items():
+            if SCHEMA["task_classes"][cls]["zdr_required"]:
+                for m in [cats[cat]["model"], *cats[cat]["fallback_models"]]:
+                    name = m["model"] if isinstance(m, dict) else m
+                    self.assertIn(name, safe, (cat, name))
+
+
 if __name__ == "__main__":
     unittest.main()
