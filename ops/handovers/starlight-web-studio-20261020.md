@@ -72,9 +72,25 @@ updated: 2026-10-20
 - Higgsfield `/hf-plan` for a 5 s seamless hero loop, costed at 24.5 credits (cap 25). Nothing was uploaded or generated.
 - Claude Motion is unavailable on this account (no Motion artifact type). Tests: 59/59.
 
+## Round six (2026-10-21): PR 77 review to merge-ready
+
+- Another Claude session (Fable) added `bin/materials-gate.mjs` overnight (91 tests, frozen at e7d9889, lanes in
+  `docs/next-prompts-Claude-Fable-2026-10-21.md`). This round reviewed the whole PR at db7217b.
+- Checkers: Codex CLI read-only (relayed verbatim on the PR) and the Codex GitHub app (its own reviews; triggered by
+  commenting `@codex review` on a draft). Antigravity: quota, resets ~2026-10-24.
+- Fixed with regressions, commits 8863d3f, c006b52, eedd331, f5685af, d3ea928 and 9202137:
+  - scanner SSRF: per-hop checks, pinned connection, IPv6 allowlist, absolute deadline, stream pipeline;
+  - gate counts renderer instances, and a non-Next app with no route graph fails coverage;
+  - catalog regenerated, Medium link-check 403 ignored;
+  - ten P2s.
+- Verdicts: Codex CLI PASS at d3ea928; the app reported no major issues at f5685af. CI: 5/5 green on 9202137, 501 tests.
+  17 app threads answered and resolved.
+- Lane 1 (gencreator.ai materials pass) not started: C: at 48.7 GiB is CRITICAL (no new worktrees), the gencreator
+  checkout is on an Antigravity branch with 6 dirty files, and cloud sessions need the app on screen and the repo named.
+
 ## Founder decisions
 
-1. Open the PR over budget, or land or close others first.
+1. Mark #77 ready and merge it (a first public marketplace listing); a non-Claude harness records the pr-gate sign-off.
 2. `claude plugin validate .` rejects the existing marketplace plugin name `claude-skills-library`
    as reserved by Anthropic. Renaming breaks current installs.
 4. Keep or remove the registered daily sweep.
