@@ -17,7 +17,8 @@ October; the last table of the plan says what is done and what waits on Frank's 
 1. Merges follow the plan's drain order only. Before any budget or runner returns: Frank lowers `ESTATE_AUTONOMY`
    everywhere estate-pr-guardian is installed, then you run `gh pr merge --disable-auto` on every PR where it already armed
    auto-merge and record the list in this ledger. Once Frank sets the Actions budget: cost cuts and the draft-CI rule, then
-   security PRs (the plan names the private document that lists them), then spine PRs, then Dependabot minor/patch in the
+   security PRs (first copy their list from the private document the plan names into agentic-ops and pin it in the ledger
+   by path and commit; if you can read neither, stop and ask Frank), then spine PRs, then Dependabot minor/patch in the
    spine repositories not on hold, then the approved close sweep. Record every close and merge in this ledger the same day.
 2. Until then, prepare the first spine PRs so they are ready at step 3, without merging them:
    - starlightintelligence.ai#180 (head `27f6fb1` or later) needs a non-Claude pr-gate check on the exact head and a Vercel
