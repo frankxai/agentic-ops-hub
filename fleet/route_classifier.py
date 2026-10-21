@@ -70,8 +70,8 @@ ACTION_WORDS = re.compile(
 
 # Anything that joins or chains requests. One short question has none of these.
 CLAUSE_BREAK = re.compile(
-    r"\b(?:and|then|also|next|afterwards?|after that|before|once|plus|while)\b"
-    r"|[;&+\n`]|->|=>|[,:]\s|[.!?]\s+\S",
+    r"\b(?:and|or|then|also|next|afterwards?|after that|before|once|plus|while)\b"
+    r"|[;&+\n`|<>$]|->|=>|[,:]\s|[.!?]\s+\S",
     re.I,
 )
 

@@ -41,7 +41,7 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
     now = now or datetime.now(timezone.utc)
     cutoff = now.timestamp() - days * 86400
     out = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in path.read_bytes().decode("utf-8", errors="replace").splitlines():
         line = line.strip()
         if not line:
             continue

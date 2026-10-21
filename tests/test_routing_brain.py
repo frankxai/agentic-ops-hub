@@ -525,11 +525,12 @@ class ReservationBinding(TmpLedger):
         with self.assertRaises(ValueError):
             route_executor.record_receipt("code", self.GLM, False, 0.01, 5, True, reservation_id="nope")
         res = route_executor.reserve("code", self.GLM, 0.50)
-        route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True,
-                                      reservation_id=res["reservation_id"])
-        with self.assertRaises(ValueError):
-            route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True,
-                                          reservation_id=res["reservation_id"])
+        first = route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True,
+                                              reservation_id=res["reservation_id"])
+        again = route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True,
+                                              reservation_id=res["reservation_id"])
+        self.assertEqual(again["id"], first["id"])
+        self.assertEqual(len(self.ledger.read_text().splitlines()), 1)
 
     def test_spend_plus_holds_never_pass_the_cap_after_a_mismatch_attempt(self):
         cap = SCHEMA["token_pass"]["hard_cap_usd"]
@@ -930,6 +931,110 @@ class Round4(TmpLedger):
     def test_recording_a_receipt_rejects_an_absurd_latency(self):
         with self.assertRaises(ValueError):
             route_executor.record_receipt("code", self.GLM, False, 0.1, 10 ** 308, True)
+
+
+class Round5Mechanical(TmpLedger):
+    """Codex round 5, findings 2 to 7 (finding 1 is the open classifier policy)."""
+    GLM = "vercel/zai/glm-5.3"
+
+    def test_structural_connectors_keep_a_request_off_free_classes(self):
+        for task in ("Read settings.json or erase backups", "List files | xargs unlink",
+                     "Show the file > out.txt", "Read $(whoami)"):
+            self.assertTrue(route_classifier.classify(task)["zdr_required"], task)
+
+    # 3: a short write must not lose a receipt
+    def test_a_short_write_is_completed_not_lost(self):
+        real = os.write
+        calls = []
+
+        def short(fd, data):
+            calls.append(len(data))
+            return real(fd, bytes(data[:25])) if len(calls) == 1 else real(fd, data)
+
+        with patch.object(route_executor.os, "write", side_effect=short):
+            route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True)
+        self.assertGreater(len(calls), 1)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.50)
+
+    # 2: the retry must make the receipt durable before it closes the hold
+    def test_retry_syncs_the_receipt_before_closing_the_hold(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        real = os.fsync
+        n = {"i": 0}
+
+        def flaky(fd):
+            n["i"] += 1
+            if n["i"] == 1:
+                raise OSError("fsync failed")
+            return real(fd)
+
+        with patch.object(route_executor.os, "fsync", side_effect=flaky):
+            with self.assertRaises(OSError):
+                route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                              reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
+        with patch.object(route_executor, "_sync_file", wraps=route_executor._sync_file) as spy:
+            got = route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                                reservation_id=res["reservation_id"])
+        self.assertIn(self.ledger, [c.args[0] for c in spy.call_args_list])
+        self.assertEqual(got["reservation_id"], res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.0)
+
+    # 5: a retry after a completed (but errored) settlement returns the receipt
+    def test_retry_after_a_settlement_that_errored_after_writing_is_idempotent(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        real = os.fsync
+        n = {"i": 0}
+
+        def flaky(fd):
+            n["i"] += 1
+            if n["i"] == 2:  # receipt synced, settle bytes written, settle fsync fails
+                raise OSError("fsync failed")
+            return real(fd)
+
+        with patch.object(route_executor.os, "fsync", side_effect=flaky):
+            with self.assertRaises(OSError):
+                route_executor.record_receipt("code", self.GLM, False, 0.20, 5, True,
+                                              reservation_id=res["reservation_id"])
+        got = route_executor.record_receipt("code", self.GLM, False, 0.20, 5, True,
+                                            reservation_id=res["reservation_id"])
+        self.assertEqual(got["reservation_id"], res["reservation_id"])
+        self.assertEqual(len(self.ledger.read_text().splitlines()), 1)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.20)
+
+    def test_a_retry_with_another_class_or_model_is_still_refused(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        route_executor.record_receipt("code", self.GLM, False, 0.20, 5, True,
+                                      reservation_id=res["reservation_id"])
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", "vercel/deepseek/deepseek-v4.1-flash", True, 0.01, 5, True,
+                                          reservation_id=res["reservation_id"])
+
+    # 4: a relative override gives every working directory its own budget
+    def test_relative_receipts_dir_refuses_paid_admission_but_not_free(self):
+        with patch.dict(os.environ, {"STARLIGHT_RECEIPTS_DIR": "receipts"}):
+            self.assertFalse(route_executor.shared_root_usable())
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.preflight("code", self.GLM, 0.10)
+            route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free")
+
+    # 6: an absurd reservation estimate is malformed, not a crash
+    def test_absurd_reservation_estimate_does_not_crash_admission(self):
+        (Path(self.tmp.name) / "reservations.jsonl").write_text(json.dumps(
+            {"kind": "reserve", "id": "x", "ts": datetime.now(timezone.utc).isoformat(), "model": self.GLM,
+             "task_class": "code", "est_cost_usd": 1e308}) + "\n", encoding="utf-8")
+        route_executor.preflight("code", self.GLM, 0.10)
+        self.assertEqual(route_executor.reserved_usd(), 0.0)
+
+    # 7: a torn multi-byte tail must not stop recovery
+    def test_torn_utf8_tail_does_not_block_admission_or_the_review(self):
+        self.ledger.write_bytes(b'{"ts":"torn-\xe2\x82')
+        route_executor.preflight("code", self.GLM, 0.10)
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(got, [])
+        self.assertEqual(skipped["malformed"], 1)
+        route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.10)
 
 
 if __name__ == "__main__":

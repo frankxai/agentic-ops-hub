@@ -103,3 +103,17 @@ Five findings, 83 tests total (was 71). Frank chose Option A for the classifier.
 - P2 weekly review: negative cost or latency is malformed, so it can no longer drive a proposal.
 
 Cost of Option A: a read-only request with a comma, "and", or more than 30 words now uses Token Pass credit. "review the code" stays free; "review the diff and commit it" does not.
+
+## Codex round 5 (reviewed SHA 741e130): CHANGES REQUESTED, mechanical findings fixed, finding 1 left open
+
+Seven findings; 91 tests total (was 83). No further Codex round was run on the fixes.
+
+Fixed (findings 2 to 7, all mechanical):
+- 2: a settle retry that finds the receipt already written now fsyncs the ledger (and the holds file) before it closes the hold.
+- 3: `_append_unlocked` loops until every byte is written; a short `os.write` no longer loses a receipt.
+- 4: `shared_root_usable()` is true only for an absolute `STARLIGHT_RECEIPTS_DIR`; a relative override refuses paid admission (free calls still work).
+- 5: the existing-receipt lookup runs before the open-hold check, so a retry after a settlement that errored after writing returns the receipt. A retry with another class or model is still refused. A repeat settle with the same id now returns the first receipt instead of raising (the old test was updated).
+- 6: a reservation estimate over $1,000,000 is malformed and skipped, so it cannot overflow the micro-dollar math.
+- 7: both ledger readers decode bytes with `errors="replace"`, so a torn UTF-8 tail is one malformed line, not a crash.
+
+Finding 1 (P1, classifier) is NOT resolved: "Read settings.json or erase backups" and "List files | xargs unlink" reached free classes. Only structural connectors were added (`or`, `|`, `<`, `>`, `$`). Verbs such as `erase` and `unlink` are still not listed, and any verb list will keep losing. It needs a policy decision: a closed set of request templates for free routing, or a ZDR-only gateway key so a classifier miss cannot leak.

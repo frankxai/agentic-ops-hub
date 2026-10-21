@@ -94,8 +94,12 @@ def _schema_root() -> Path | None:
 
 def shared_root_usable() -> bool:
     """True when every checkout on this machine resolves to one ledger: either
-    STARLIGHT_RECEIPTS_DIR is set or the schema root is absolute on this OS."""
-    return bool(os.environ.get("STARLIGHT_RECEIPTS_DIR")) or _schema_root() is not None
+    STARLIGHT_RECEIPTS_DIR is an absolute path or the schema root is absolute on
+    this OS. A relative override means one ledger per working directory."""
+    override = os.environ.get("STARLIGHT_RECEIPTS_DIR")
+    if override:
+        return Path(override).is_absolute()
+    return _schema_root() is not None
 
 
 def load_schema() -> dict:
@@ -173,7 +177,8 @@ def _read_receipts(path: Path) -> list[dict]:
     if not path.exists():
         return []
     out = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+    # errors="replace": a torn multi-byte tail becomes one malformed line, not a crash
+    for line in path.read_bytes().decode("utf-8", errors="replace").splitlines():
         line = line.strip()
         if not line:
             continue
@@ -221,7 +226,7 @@ def reservations(now: datetime | None = None) -> list[dict]:
                     "model": e.get("model")}
         except (KeyError, ValueError, TypeError, AttributeError, OverflowError):
             continue
-        if math.isfinite(est) and est >= 0:
+        if math.isfinite(est) and 0 <= est <= MAX_SANE_USD:
             reserves[rid] = hold
     out = []
     for rid, h in reserves.items():
@@ -384,7 +389,22 @@ def _append_unlocked(path: Path, line: str) -> None:
             os.lseek(fd, size - 1, os.SEEK_SET)
             if os.read(fd, 1) != b"\n":
                 data = b"\n" + data
-        os.write(fd, data)
+        view = memoryview(data)
+        while view:  # os.write may write fewer bytes than asked
+            n = os.write(fd, view)
+            if n <= 0:
+                raise OSError(f"could not write to {path}")
+            view = view[n:]
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+
+
+def _sync_file(path: Path) -> None:
+    """Flush a file to disk. Used before a retry closes a hold over a receipt that
+    an earlier, interrupted attempt wrote."""
+    fd = os.open(path, os.O_RDWR | getattr(os, "O_BINARY", 0))
+    try:
         os.fsync(fd)
     finally:
         os.close(fd)
@@ -457,7 +477,26 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
     ledger = receipts_dir() / "routing.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)
     with _locked(ledger):
+        holds = receipts_dir() / "reservations.jsonl"
         if reservation_id:
+            prior = next((r for r in _read_receipts(ledger)
+                          if isinstance(r, dict) and r.get("reservation_id") == reservation_id), None)
+            if prior is not None:
+                # An earlier attempt already wrote this call's receipt. Never write a second
+                # one: make both files durable, finish the settlement if it is missing, and
+                # return the receipt that is already there.
+                if prior.get("task_class") != task_class or prior.get("used") != used:
+                    raise ValueError(
+                        f"reservation '{reservation_id}' already settled for "
+                        f"{prior.get('task_class')}/{prior.get('used')}, not {task_class}/{used}")
+                _sync_file(ledger)
+                if any(h["id"] == reservation_id for h in reservations()):
+                    _append_unlocked(holds, json.dumps(
+                        {"kind": "settle", "id": reservation_id, "ts": prior.get("ts", receipt["ts"])},
+                        allow_nan=False))
+                elif holds.exists():
+                    _sync_file(holds)
+                return prior
             hold = next((h for h in reservations() if h["id"] == reservation_id), None)
             if hold is None:
                 raise ValueError(f"reservation '{reservation_id}' is unknown, already settled or released")
@@ -465,22 +504,13 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
                 raise ValueError(
                     f"reservation '{reservation_id}' was made for {hold['task_class']}/{hold['model']}, "
                     f"not {task_class}/{used}; nothing was recorded")
-            prior = next((r for r in _read_receipts(ledger)
-                          if isinstance(r, dict) and r.get("reservation_id") == reservation_id), None)
-            if prior is not None:
-                # An earlier attempt wrote the receipt but not the settlement. Finish the
-                # settlement and return that receipt; a second one would count the call twice.
-                _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(
-                    {"kind": "settle", "id": reservation_id, "ts": prior.get("ts", receipt["ts"])},
-                    allow_nan=False))
-                return prior
         _append_unlocked(ledger, json.dumps(receipt, allow_nan=False))
         if reservation_id:
             if not _receipt_is_last_line(ledger, receipt["id"]):
                 raise OSError(f"receipt {receipt['id']} could not be verified in {ledger}; "
                               f"reservation '{reservation_id}' stays open")
             settle = {"kind": "settle", "id": reservation_id, "ts": receipt["ts"]}
-            _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(settle, allow_nan=False))
+            _append_unlocked(holds, json.dumps(settle, allow_nan=False))
     return receipt
 
 
