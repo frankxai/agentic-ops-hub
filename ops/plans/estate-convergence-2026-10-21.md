@@ -92,9 +92,9 @@ repositories, starlight-swarm and starlight-factory.
 | agentic-ops-hub | This record; drain only | 3 |
 | gencreator.ai, arcanea-ai-app | Hold: security and S4 gate only | 2 each |
 
-Every other repository is read-only to agents until 20 November. A PR a frozen repository needs for security goes through the
-drain owner, not a new lane. The drain owner may also merge the two cost-cut PRs named below and close PRs on the approved
-close list.
+Every other repository is read-only to agents until 20 November. A security fix a frozen repository needs goes through the
+drain owner, not a new lane: the drain owner may open and merge it, one narrowly scoped PR per fix. The drain owner may also
+merge the two cost-cut PRs named below and close PRs on the approved close list.
 
 ## Operating rules for the 30 days
 
@@ -102,17 +102,19 @@ close list.
   second lane that closes PRs without recording them is stopped.
 - **One merge mechanism: pr-gate.** The maker never checks its own head; the checker signs the exact head, and a new commit
   voids the sign-off. Claude-written spine PRs are checked by Codex, Grok or Antigravity and merged by a non-Claude harness or
-  Frank. The Merge Steward docs (`docs/MERGE-STEWARD.md` and its rollout) carry a "not in use" banner until 20 November,
-  so nobody installs a second merge path during the drain.
+  Frank. The other two paths are held until 20 November, or earlier if Frank revises this ruling: the Merge Steward docs
+  (`docs/MERGE-STEWARD.md` and its rollout) carry a "not in use" banner, and no repository runs `estate-pr-guardian` at
+  `ESTATE_AUTONOMY=auto`, whose trivial-tier auto-merge would bypass pr-gate (`docs/ESTATE-OPS-GOVERNANCE.md` says so). The
+  variable is a repository setting, so Frank changes it; the drain owner first lists the repositories where it is `auto`.
 - **Drafts do not run CI.** Copy gencreator.ai's pattern (drafts defer every job; `ready_for_review` starts them) to each
   spine repository. Three in four PRs are drafts, so this is the largest single cut in Actions minutes. The drain owner may
   open one PR per spine repository for this rule even when that repository is over its cap; it is drain step 1, not new
   work.
 - **No new repositories, Vercel projects or cross-repo fan-outs** (one branch opening drafts in many repositories) for 30
-  days.
+  days. The drain owner's draft-CI PRs (one per spine repository) and security-fix PRs are the named exceptions.
 - **Budgets hold.** 10 open PRs per repository estate-wide, the caps above on the spine. A repository over budget gets no new
-  PR from any harness, with two exceptions: the draft-CI PR above, and in this repository one open ledger PR at a time from
-  the drain owner, carrying only the same-day close and merge records.
+  PR from any harness, with three exceptions, all opened by the drain owner: the draft-CI PR above, a narrowly scoped
+  security-fix PR, and in this repository one open ledger PR at a time carrying only the same-day close and merge records.
 
 ## The drain, in order
 
@@ -133,8 +135,8 @@ close list.
      Frank's yes to offer coaching and the same KV variable.
    - #185 adds `/meet/frank`, `/connect` and the `/c/*` card redirects. It has no READY preview yet (both builds failed the
      homepage film check), and the new cards are not printed until those routes serve in production.
-4. Dependabot minor and patch groups in spine repositories; frozen repositories take only security updates until 20
-   November. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
+4. Dependabot minor and patch groups in the spine repositories that are not on hold. Hold repositories (gencreator.ai,
+   arcanea-ai-app, Starlight-Intelligence-System) and frozen repositories take only security updates until 20 November. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
 5. Close, each with a one-line reason and "reopen if still needed": PRs older than 30 days outside the spine, except
    agentic-income-template#8, which was reopened on purpose on 10 September to keep its work; the drafts from
    the `ccr-30cf70e3-tha5nf` fan-out in frozen repositories; duplicate cross-repo pointer and error-boundary PRs. The existing
