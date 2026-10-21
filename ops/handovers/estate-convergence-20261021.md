@@ -22,4 +22,5 @@ October; the last table of the plan says what is done and what waits on Frank's 
 3. Once Frank sets the Actions budget, drain in the plan's order: cost cuts and the draft-CI rule, security PRs (the plan
    names the private document that lists them), spine PRs, spine Dependabot minor/patch, then the approved close sweep.
    Record every close and merge in this ledger the same day.
-4. Do not open PRs outside the spine table until 20 November unless Frank names the repository.
+4. Do not open PRs outside the spine table until 20 November. The only writes outside it are the drain owner's, as the
+   focus rule in `AGENTS.md` lists them; anything else needs Frank to revise that ruling first.

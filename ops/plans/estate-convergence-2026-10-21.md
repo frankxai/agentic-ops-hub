@@ -104,11 +104,13 @@ close list.
   voids the sign-off. Claude-written spine PRs are checked by Codex, Grok or Antigravity and merged by a non-Claude harness or
   Frank. The Merge Steward docs get a "not in use" banner rather than a fourth parallel path.
 - **Drafts do not run CI.** Copy gencreator.ai's pattern (drafts defer every job; `ready_for_review` starts them) to each
-  spine repository. Three in four PRs are drafts, so this is the largest single cut in Actions minutes.
+  spine repository. Three in four PRs are drafts, so this is the largest single cut in Actions minutes. The drain owner may
+  open one PR per spine repository for this rule even when that repository is over its cap; it is drain step 1, not new
+  work.
 - **No new repositories, Vercel projects or cross-repo fan-outs** (one branch opening drafts in many repositories) for 30
   days.
 - **Budgets hold.** 10 open PRs per repository estate-wide, the caps above on the spine. A repository over budget gets no new
-  PR from any harness.
+  PR from any harness, except the draft-CI PR above.
 
 ## The drain, in order
 
@@ -121,17 +123,27 @@ close list.
    account). Check that each cited advisory ID exists before merging.
 3. Spine PRs in dependency order. For starlightintelligence.ai: #180 (launch factory, now carrying #183 and #187), then #175
    (default-off; its funding fixes land before `STARLIGHT_COMMERCE_ENABLED` is set), then #174 (docs hub) and #177 (import
-   integrity). #172, #184 and #185 change the homepage or add offer surfaces and wait for Frank's direction (see the 21
-   October session).
+   integrity). Three PRs wait for Frank, not for the drain:
+   - #172 makes the Starlight Kernel the homepage product and publishes `/waitlist` for the first time. It needs Frank's
+     `surface-approved` label, the waitlist's KV environment variable on Vercel, and the runtime decision under
+     consolidation proposals below, since it presumes the Kernel.
+   - #184 adds a Founder AI Lab coaching page at `/founders`. Its waitlist reports `open:false` in production, so it needs
+     Frank's yes to offer coaching and the same KV variable.
+   - #185 adds `/meet/frank`, `/connect` and the `/c/*` card redirects. It has no READY preview yet (both builds failed the
+     homepage film check), and the new cards are not printed until those routes serve in production.
 4. Dependabot minor and patch groups in spine repositories; frozen repositories take only security updates until 20
    November. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
-5. Close, each with a one-line reason and "reopen if still needed": PRs older than 30 days outside the spine; the drafts from
+5. Close, each with a one-line reason and "reopen if still needed": PRs older than 30 days outside the spine, except
+   agentic-income-template#8, which was reopened on purpose on 10 September to keep its work; the drafts from
    the `ccr-30cf70e3-tha5nf` fan-out in frozen repositories; duplicate cross-repo pointer and error-boundary PRs. The existing
    pr-closer list (94 proposed closes) goes first, after a 10-PR sample check.
-6. Branches: delete only branches whose PR is merged or closed. Unmerged work keeps its branch, per the existing reaper rule
-   (clean, merged, bundled and unclaimed only).
+6. Branches: delete a branch only when its PR merged and the branch meets the existing reaper rule (clean, merged, bundled
+   and unclaimed). A PR closed without merging keeps its branch, which is what "reopen if still needed" relies on.
 
-## Consolidation proposals (each needs Frank's yes; rename and archive, never delete)
+## Consolidation proposals (rename and archive, never delete)
+
+The first two rows were ruled on 21 October as archive batch 1 (last section); they need only Frank's archive action in
+repository settings, not another yes. Every other row still needs Frank's yes.
 
 | Proposal | Basis |
 |---|---|
