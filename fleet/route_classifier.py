@@ -9,12 +9,18 @@ non-ZDR class only when ALL of these hold:
   (a) it opens with a word from READ_ONLY_VERBS;
   (b) it has at most MAX_FREE_WORDS words;
   (c) every other word is in the closed vocabulary (function words and plain
-      nouns, no verbs) or is path/identifier-like (see IDENTIFIER) or is quoted;
-  (d) it uses only letters, digits, spaces and . / _ - ' " (one trailing ? or .
-      is ignored).
+      nouns, no verbs) or is a file name or path whose extension we know (see
+      _data_token). Joined words (a-b, a_b) must have every part in the vocabulary;
+  (d) it uses only letters, digits, spaces and . / _ - (one trailing ? or . is
+      ignored). Quotes are not allowed: quoted text is never routed free;
+  (e) it names nothing sensitive (SENSITIVE substrings, matched anywhere).
 Any unknown word means ZDR. A verb nobody listed ("erase", "unlink", "nuke") is
 unknown, so it cannot reach a free model. The cost is Token Pass credit for
 requests that are harmless but use a word we do not know, never a leak.
+
+This is a cost heuristic, not the security boundary. Rounds 4-6 of review kept
+finding phrasings a word list misses. The guarantee that ZDR work cannot reach a
+non-ZDR provider is a gateway key that can only reach ZDR providers.
 """
 import argparse
 import json
@@ -50,33 +56,38 @@ FUNCTION_WORDS = frozenset({
 NOUNS = frozenset({
     "file", "files", "folder", "folders", "directory", "directories", "dir", "path", "paths",
     "function", "functions", "class", "classes", "method", "methods", "module", "modules",
-    "package", "packages", "repo", "repos", "repository", "codebase", "code", "text", "document",
+    "package", "packages", "repo", "repos", "repository", "codebase", "text", "document",
     "documents", "doc", "docs", "readme", "plan", "script", "scripts", "error", "errors", "log",
-    "logs", "output", "outputs", "test", "tests", "suite", "config", "configuration", "setting",
-    "settings", "schema", "schemas", "key", "keys", "field", "fields", "name", "names", "line",
-    "lines", "word", "words", "type", "types", "variable", "variables", "import", "imports",
-    "dependency", "dependencies", "endpoint", "endpoints", "route", "routes", "handler", "logic",
-    "flow", "order", "chain", "diff", "pr", "style", "rules", "rule", "layout", "structure", "size",
+    "logs", "output", "outputs", "suite", "config", "configuration", "setting",
+    "settings", "schema", "schemas", "field", "fields", "name", "names", "line",
+    "lines", "word", "words", "variable", "variables", 
+    "dependency", "dependencies", "endpoint", "endpoints", "handler", "logic",
+    "flow", "chain", "diff", "pr", "style", "rules", "rule", "layout", "structure", "size",
     "number", "src", "lib", "app", "bin", "root", "branch", "branches", "reason", "cause",
-    "difference", "purpose", "meaning", "usage", "example", "examples", "comment", "comments",
+    "difference", "purpose", "meaning", "usage", "example", "examples", 
     "version", "date", "time", "history", "table", "tables", "column", "columns", "row", "rows",
-    "api", "cli", "command", "commands", "option", "options", "flag", "flags", "argument",
+    "api", "cli", "command", "commands", "option", "options", "argument",
     "arguments", "parameter", "parameters", "value", "values", "result", "results", "task", "tasks",
     "dataset", "service", "services", "server", "component", "components", "page", "pages", "site",
     "dashboard", "model", "models", "provider", "providers", "receipt", "receipts", "ledger",
     "budget", "cost", "ceiling", "cap", "screenshot", "screenshots", "screencast", "screencasts",
     "video", "videos", "image", "images", "photo", "photos", "picture", "pictures", "mockup",
     "mockups", "chart", "thumbnail", "python", "javascript", "typescript", "json", "yaml",
-    "markdown", "sql", "list", "map", "count", "print",
+    "markdown", "sql", "list", 
 })
+# Nouns that are also everyday commands ("code a login", "test it", "route it") stay out
+# of NOUNS, so they cannot hide an action behind a read-only opening.
 VOCABULARY = FUNCTION_WORDS | NOUNS
+EXTENSIONS = frozenset({"py", "js", "ts", "tsx", "jsx", "md", "json", "yaml", "yml", "toml", "txt", "csv", "html", "css"})
+# (e) Anything that smells of a credential goes to ZDR, matched as a substring of the
+# whole request, case-insensitively: ".env", "api_key", "passwords.txt", "id_rsa".
+SENSITIVE = ("env", "key", "token", "secret", "password", "passwd", "credential", "cred", "pem", "ssh",
+             "auth", "cert", "private", "wallet", "seed", "mnemonic", "bearer", "jwt", "rsa", "gpg")
 
-# (c) Identifier or path: letters/digits joined by . / _ - with no separator at either end
-# (a leading ./ ../ ~/ or . is fine), or a token that contains a digit. "erase." and "-rf"
-# are not identifiers; "settings.json", "src/app.py", "wipe_disk" and "v2" are.
+# A token made of letters/digits joined by . / _ - with no separator at either end (a leading
+# ./ ../ ~/ or . is fine). Whether it is data is decided by _data_token, not by this shape.
 IDENTIFIER = re.compile(r"[./~]{0,2}[A-Za-z0-9]+(?:[./_-][A-Za-z0-9]+)*")
-QUOTED = re.compile(r"\"[^\"]*\"|'[^']*'")
-ALLOWED_CHARS = re.compile(r"[A-Za-z0-9 ./_'\"-]+")
+ALLOWED_CHARS = re.compile(r"[A-Za-z0-9 ./_-]+")
 MAX_FREE_WORDS = 15
 
 # Looking at media: a read-only verb directly in front of the media noun, and the
@@ -110,10 +121,29 @@ Task: {task}
 Reply with ONLY the class name, nothing else."""
 
 
-def _identifier_like(token: str) -> bool:
+def _piece_ok(piece: str, bare: bool) -> bool:
+    return piece.lower() in VOCABULARY or any(c.isdigit() for c in piece) or not bare
+
+
+def _data_token(token: str) -> bool:
+    """A file name or path is data, but joined words are not: "then-delete-it" and "wipe_disk"
+    must have every part in the vocabulary. A lone word counts as data only inside a path or
+    file name, and a dotted name must end in a known extension (or carry a digit, like v1.2)."""
     if not IDENTIFIER.fullmatch(token):
         return False
-    return any(c in token for c in "./_-") or any(c.isdigit() for c in token)
+    body = token.lstrip("./~")
+    in_path = "/" in body or "." in body
+    for seg in body.split("/"):
+        stem, dot, ext = seg.rpartition(".")
+        if not dot:
+            stem = seg
+        elif ext.lower() not in EXTENSIONS and not any(c.isdigit() for c in seg):
+            return False
+        for part in stem.split("."):
+            pieces = [p for p in re.split(r"[_-]", part) if p]
+            if not all(_piece_ok(p, bare=not in_path or len(pieces) > 1) for p in pieces):
+                return False
+    return True
 
 
 def is_short_read_only(task: str) -> bool:
@@ -123,10 +153,12 @@ def is_short_read_only(task: str) -> bool:
         text = text[:-1].rstrip()
     if not text or len(text.split()) > MAX_FREE_WORDS or not ALLOWED_CHARS.fullmatch(text):
         return False
-    tokens = QUOTED.sub(" 0 ", text).split()  # a quoted span is data, like an identifier
-    if not tokens or tokens[0].lower() not in READ_ONLY_VERBS:
+    if any(word in text.lower() for word in SENSITIVE):
         return False
-    return all(t.lower() in VOCABULARY or _identifier_like(t) for t in tokens[1:])
+    tokens = text.split()
+    if tokens[0].lower() not in READ_ONLY_VERBS:
+        return False
+    return all(t.lower() in VOCABULARY or _data_token(t) for t in tokens[1:])
 
 
 def fast_classify(task: str) -> str | None:

@@ -128,7 +128,7 @@ class Ledger(TmpLedger):
 class Classifier(unittest.TestCase):
     CASES = {
         "where is the plan file": "scout",
-        "search the repo for the word 'complex'": "scout",
+        "search the repo for the word 'complex'": "code",   # quoted text is never routed free (option A)
         "find the reason for the error": "scout",
         "list all files in src": "scout",
         "summarize README": "scout",
@@ -483,6 +483,37 @@ class ClassifierFailClosed(unittest.TestCase):
         self.assertTrue(route_classifier.classify("zzz qqq")["zdr_required"])
 
 
+class OptionAHardening(unittest.TestCase):
+    """Mechanical hardening after Codex round 6. The classifier is a cost heuristic; the ZDR-only gateway key is the guarantee."""
+
+    def zdr(self, task):
+        return route_classifier.classify(task)["zdr_required"]
+
+    def test_verb_like_nouns_are_not_in_the_vocabulary(self):
+        for word in ("code", "test", "tests", "build", "run", "set", "patch", "change", "update", "fix",
+                     "import", "route", "flag", "order", "print", "map", "count", "type", "key", "keys"):
+            self.assertNotIn(word, route_classifier.VOCABULARY, word)
+
+    def test_no_vocabulary_word_or_extension_is_sensitive(self):
+        for word in route_classifier.VOCABULARY | route_classifier.EXTENSIONS:
+            self.assertFalse(any(bad in word for bad in route_classifier.SENSITIVE), word)
+
+    def test_sensitive_names_are_zdr_in_any_case_and_inside_identifiers(self):
+        for task in ("Read .env", "Read .ENV", "Print API_KEY", "Show id_rsa", "Show passwords.txt", "List cert.pem",
+                     "Read ~/.ssh/config", "Show the Credentials", "Find the seed phrase"):
+            self.assertTrue(self.zdr(task), task)
+
+    def test_joined_words_need_every_part_in_the_vocabulary(self):
+        self.assertTrue(self.zdr("Show the file then-delete-it"))
+        self.assertTrue(self.zdr("Show the file then_delete_it"))
+        self.assertFalse(self.zdr("Read error-log"))
+        self.assertFalse(self.zdr("Read src/app.py"))
+
+    def test_quoted_text_is_never_free(self):
+        for task in ("Read 'settings.json'", 'Read "the file"', "Read file 'and' 'erase' it"):
+            self.assertTrue(self.zdr(task), task)
+
+
 class ReservationBinding(TmpLedger):
     GLM = "vercel/zai/glm-5.3"
     FLASH = "vercel/deepseek/deepseek-v4.1-flash"
@@ -728,7 +759,7 @@ class Round4(TmpLedger):
             self.assertTrue(c["zdr_required"], (task, c["class"]))
 
     def test_corpus_has_200_prompts(self):
-        self.assertEqual(len(MUST_BE_ZDR), 100)
+        self.assertGreaterEqual(len(MUST_BE_ZDR), 100)
         self.assertEqual(len(MAY_BE_FREE), 100)
 
     def test_no_mutating_or_multi_clause_prompt_leaks_to_a_free_class(self):
@@ -862,14 +893,17 @@ class Round6Grammar(unittest.TestCase):
     def test_only_a_closed_character_set_is_allowed(self):
         for ch in "|&;<>$`,(){}[]=+*#@!~%^:" + chr(10) + chr(9) + chr(92):
             self.assertTrue(self.zdr(f"Show the file {ch} log"), repr(ch))
-        for ok in ("Show the file.", "Show the file?", "Show 'the file'", 'Show "the file"', "Show src/app.py"):
+        for ok in ("Show the file.", "Show the file?", "Show src/app.py"):
             self.assertFalse(self.zdr(ok), ok)
+        for quoted in ("Show 'the file'", 'Show "the file"', "Read file 'and' 'erase' it"):   # option A: quotes are never free
+            self.assertTrue(self.zdr(quoted), quoted)
 
     def test_identifiers_and_quoted_text_are_data_but_bare_or_broken_tokens_are_not(self):
-        for ok in ("Read settings.json", "Read ./src/app.py", "Read wipe_disk", "Show v2", "Read 'erase everything'",
-                   'Read "erase everything"', "Count last 10 lines"):
+        for ok in ("Read settings.json", "Read ./src/app.py", "Show v2", "Read src/erase.py", "Read error-log"):
             self.assertFalse(self.zdr(ok), ok)
-        for bad in ("Show erase.", "Show the file erase.", "Show -rf", "Show the file. erase.", "Show erase"):
+        for bad in ("Show erase.", "Show the file erase.", "Show -rf", "Show the file. erase.", "Show erase",
+                    "Read wipe_disk", "Read wipe_disk.py", "Show the file then-delete-it", "Read 'erase everything'",
+                    'Read "erase everything"'):
             self.assertTrue(self.zdr(bad), bad)
 
     def test_the_vocabulary_holds_no_verb_that_changes_or_runs_anything(self):

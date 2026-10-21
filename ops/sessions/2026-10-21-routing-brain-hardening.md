@@ -146,3 +146,18 @@ Verdict: `scratchpad/codex-verdict-6.txt`. No further Codex round was run. Three
 - OPEN (finding 2, P1, not mechanical): the vocabulary lets nouns act as verbs and lets hyphens hide connectors: `Review auth.py code a new function`, `How to code a new function`, `Read file 'and' 'erase' it`, `Show the file then-delete-it` all route free. Needs a decision: remove `code` and similar verb-nouns from the vocabulary, forbid hyphenated or quoted tokens that contain a connector, or enforce a fixed sentence template.
 
 Two review rounds in a row (5 and 6) found classifier leaks that a word list cannot close. The reliable control is outside the classifier: a gateway key that can only reach ZDR providers for ZDR work, so a classifier miss cannot leak.
+
+## Option A hardening
+
+Frank approved option A on 2026-10-22: mechanical tightening of the classifier, then stop the Codex loop. No further Codex round was run on this change.
+
+What changed in `fleet/route_classifier.py`:
+- Verb-like nouns left the vocabulary: code, test(s), import(s), comment(s), route(s), flag(s), order, print, map, count, type(s), key(s). `build`, `run`, `set`, `patch`, `change`, `update`, `fix` were never in it. `log`, `name`, `branch` stay (reading them as verbs is rare and the words are common in real questions).
+- Quotes are not an allowed character any more. Quoted text is never routed free.
+- Joined words (`a-b`, `a_b`) need every part in the vocabulary, so `then-delete-it` and `wipe_disk` go to ZDR. A lone word counts as data only inside a path or file name, and a dotted name needs a known extension.
+- Sensitive guard: the whole request is lower-cased and checked for env, key, token, secret, password, passwd, credential, cred, pem, ssh, auth, cert, private, wallet, seed, mnemonic, bearer, jwt, rsa, gpg as substrings. It over-matches on purpose (`author`, `keyboard` go to ZDR).
+- All eight round-6 leak examples plus 30 variants are in `MUST_BE_ZDR`; none reaches a free class.
+
+Cost: free routing of the 100 natural read-only prompts fell from 41 to 35. The floor test stays at 35 and was not loosened.
+
+Plainly: the classifier is a cost heuristic, not the security boundary. Four review rounds found leaks a word list cannot close, and this change does not claim otherwise. The real control is a gateway key that can only reach ZDR providers, so that a classifier miss fails instead of leaking. Frank creates that key in the dashboard. Until then, treat free routing as best effort for requests that carry nothing sensitive.
