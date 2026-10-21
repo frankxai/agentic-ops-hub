@@ -1,3 +1,15 @@
+<!-- estate-convergence-20261021:start -->
+## Launch factory on one PR, Payment Link checkout ported, estate convergence plan proposed
+
+starlightintelligence.ai#180 now carries Codex's #187 (deploy approvals bound to environment and account) and #183 (portable
+handoff inspection) after review, plus a `checkout` call to action that accepts only an exact Stripe Payment Link (ported from
+#179, now closed). #178 and #163 closed as superseded; #186 and #175 got integration notes. 556 tests pass and the build passes
+at `1f7775f`. A read-only inventory of the 57 attached repositories (about 360 open PRs, 0 of 62 Vercel projects taking money)
+produced [the convergence plan](plans/estate-convergence-2026-10-21.md): one merchant rail, a nine-repository spine for 30 days,
+one drain owner and a drain order for when runners return. Five founder decisions are open. Details in
+[the session](sessions/2026-10-21.md).
+<!-- estate-convergence-20261021:end -->
+
 <!-- queen-converge-20261019:start -->
 ## Queen: the running code put in one gate-clear PR after three review rounds, seat phase added
 
