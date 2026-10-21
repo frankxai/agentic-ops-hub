@@ -117,3 +117,22 @@ Fixed (findings 2 to 7, all mechanical):
 - 7: both ledger readers decode bytes with `errors="replace"`, so a torn UTF-8 tail is one malformed line, not a crash.
 
 Finding 1 (P1, classifier) is NOT resolved: "Read settings.json or erase backups" and "List files | xargs unlink" reached free classes. Only structural connectors were added (`or`, `|`, `<`, `>`, `$`). Verbs such as `erase` and `unlink` are still not listed, and any verb list will keep losing. It needs a policy decision: a closed set of request templates for free routing, or a ZDR-only gateway key so a classifier miss cannot leak.
+
+## Codex round 6: finding 1 resolved structurally (closed grammar for free routing)
+
+Frank approved continuing; the coordinator asked for a structural fix. The mutation-verb blacklist (`MUTATION`, `ACTION_WORDS`, `CLAUSE_BREAK`, `READ_ONLY`) is gone from `fleet/route_classifier.py`. A request may use a free class only if ALL hold:
+
+- (a) it opens with a word from `READ_ONLY_VERBS` (read, list, show, summarise/summarize, explain, find, search, describe, map, count, print, plus review, audit, lint, analyze, inspect, locate and where/what/how/why, which the review and vision classes need). `check` is excluded on purpose;
+- (b) at most 15 words;
+- (c) every other word is in the closed vocabulary (function words and plain nouns, no verbs) or is an identifier/path (`settings.json`, `src/app.py`, `wipe_disk`, `v2`: alphanumerics joined by `. / _ -`, no separator at either end) or is quoted;
+- (d) only letters, digits, spaces and `. / _ - ' "` are used. One trailing `?` or `.` is ignored (a small widening of the coordinator's list: it cannot hide anything).
+
+Any unknown word means ZDR. `erase`, `unlink`, `truncate`, `wipe`, `drop`, `purge`, `overwrite`, `nuke` and `shred` need no entry anywhere, because they are not in the vocabulary. The strong rules (ultrabrain, hard-reasoning, bulk) still run first and are all ZDR classes.
+
+A mutation test caught one mistake of mine: `private` was in the vocabulary as an adjective, so "Find the private key" went free. It is removed, and a test pins that the vocabulary holds no mutating, connector or sensitive word.
+
+Tests: 101 (was 91). The corpus is now `tests/routing_corpus.py`: 100 must-be-ZDR prompts (zero leaks) and 100 natural read-only prompts.
+
+Free hit rate, honestly: **41 of 100** natural read-only prompts still route free. On the 50 prompts the old blacklist classifier let through, the new grammar lets 17 through (34%). Natural questions often contain a word the vocabulary lacks ("does", "uses", "happens", "retry", "fails"), so they now pay Token Pass credit. This is the accepted cost; the vocabulary can grow by reviewed pull request. `Explain the retry logic` is ZDR (retry is unknown) and `Explain the error log` is free, pinned by a test. A floor test keeps the hit rate at or above 35 of 100.
+
+Known limit: an identifier or quoted span is treated as data, so `Read 'erase everything'` and `Show ./rm` stay free. The text is only sent to a model that was already allowed to read.

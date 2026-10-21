@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
 """Starlight routing classifier: task prompt -> task class.
 
-Regex rules only; there is no LLM call. LLM_PROMPT below is kept for a future
-free-model classifier.
+Regex and word lists only; there is no LLM call. LLM_PROMPT below is kept for a
+future free-model classifier.
 
-Fail closed: only an explicit read-only request (find, list, explain, review,
-analyze this screenshot ...) may reach a free, non-ZDR class. A request that
-changes something, and any request with no recognised signal, goes to a ZDR
-class, because the text may carry code or data that must not leave on a free
-model. The cost of a wrong guess is Token Pass credit, never a leak.
+Fail closed, by a closed grammar and not a blacklist. A request may reach a free,
+non-ZDR class only when ALL of these hold:
+  (a) it opens with a word from READ_ONLY_VERBS;
+  (b) it has at most MAX_FREE_WORDS words;
+  (c) every other word is in the closed vocabulary (function words and plain
+      nouns, no verbs) or is path/identifier-like (see IDENTIFIER) or is quoted;
+  (d) it uses only letters, digits, spaces and . / _ - ' " (one trailing ? or .
+      is ignored).
+Any unknown word means ZDR. A verb nobody listed ("erase", "unlink", "nuke") is
+unknown, so it cannot reach a free model. The cost is Token Pass credit for
+requests that are harmless but use a word we do not know, never a leak.
 """
 import argparse
 import json
@@ -26,25 +32,52 @@ STRONG_RULES = [
     ("bulk",          re.compile(r"\b((extract|classify|summari[sz]e) (all|many|every|bulk)|bulk|batch)\b", re.I)),
 ]
 
-# Any word that starts one of these changes something. It beats every read-only
-# signal, so "update the screenshot upload handler" can never look like vision.
-MUTATION = re.compile(
-    r"\b(implement|refactor|edit|fix|write|add|remove|delete|drop|rename|change|update|patch|modify|"
-    r"create|build|migrate|replace|rewrite|port|install|deploy|merge|revert|commit|push|apply|insert|"
-    r"append|improve|optimi[sz]e|clean|bump|upgrade|wire|make|generate|configure|tweak|move|handle|"
-    r"support|enable|disable|set up|correct|repair|resolve|adjust|rework|address)\w*",
-    re.I,
-)
+# (a) The only words a free-routed request may open with. All read-only.
+# "check" is absent on purpose: "check and fix" starts as a read and ends as an edit.
+READ_ONLY_VERBS = frozenset({
+    "read", "list", "show", "summarise", "summarize", "explain", "find", "search", "describe",
+    "map", "count", "print", "review", "audit", "lint", "analyze", "analyse", "inspect", "locate",
+    "where", "what", "how", "why",
+})
 
-# Free-eligible only when the request OPENS with a read-only verb or question word.
-# A keyword anywhere else is not enough ("code a search function").
-READ_ONLY = re.compile(
-    r"^\W*(?:(?:please|can you|could you|just)\s+)*"
-    r"(?:find|search|locate|list|explore|scout|map (?:the )?codebase|where is|show|read|summari[sz]e|"
-    r"what|how|why|explain|describe|review|lint|audit|best practices?|style guide|"
-    r"analy[sz]e|inspect|look (?:up|at))\b",
-    re.I,
-)
+# (c) Closed vocabulary: function words and plain nouns. No verbs that change or run anything.
+FUNCTION_WORDS = frozenset({
+    "the", "a", "an", "of", "in", "on", "at", "to", "for", "from", "with", "by", "about", "this", "that",
+    "these", "those", "it", "its", "my", "our", "your", "me", "us", "is", "are", "was", "were", "does",
+    "do", "did", "all", "each", "every", "any", "some", "many", "most", "first", "last", "top", "main",
+    "public", "current", "new", "old", "whole", "entire", "which", "there", "here",
+})
+NOUNS = frozenset({
+    "file", "files", "folder", "folders", "directory", "directories", "dir", "path", "paths",
+    "function", "functions", "class", "classes", "method", "methods", "module", "modules",
+    "package", "packages", "repo", "repos", "repository", "codebase", "code", "text", "document",
+    "documents", "doc", "docs", "readme", "plan", "script", "scripts", "error", "errors", "log",
+    "logs", "output", "outputs", "test", "tests", "suite", "config", "configuration", "setting",
+    "settings", "schema", "schemas", "key", "keys", "field", "fields", "name", "names", "line",
+    "lines", "word", "words", "type", "types", "variable", "variables", "import", "imports",
+    "dependency", "dependencies", "endpoint", "endpoints", "route", "routes", "handler", "logic",
+    "flow", "order", "chain", "diff", "pr", "style", "rules", "rule", "layout", "structure", "size",
+    "number", "src", "lib", "app", "bin", "root", "branch", "branches", "reason", "cause",
+    "difference", "purpose", "meaning", "usage", "example", "examples", "comment", "comments",
+    "version", "date", "time", "history", "table", "tables", "column", "columns", "row", "rows",
+    "api", "cli", "command", "commands", "option", "options", "flag", "flags", "argument",
+    "arguments", "parameter", "parameters", "value", "values", "result", "results", "task", "tasks",
+    "dataset", "service", "services", "server", "component", "components", "page", "pages", "site",
+    "dashboard", "model", "models", "provider", "providers", "receipt", "receipts", "ledger",
+    "budget", "cost", "ceiling", "cap", "screenshot", "screenshots", "screencast", "screencasts",
+    "video", "videos", "image", "images", "photo", "photos", "picture", "pictures", "mockup",
+    "mockups", "chart", "thumbnail", "python", "javascript", "typescript", "json", "yaml",
+    "markdown", "sql", "list", "map", "count", "print",
+})
+VOCABULARY = FUNCTION_WORDS | NOUNS
+
+# (c) Identifier or path: letters/digits joined by . / _ - with no separator at either end
+# (a leading ./ ../ ~/ or . is fine), or a token that contains a digit. "erase." and "-rf"
+# are not identifiers; "settings.json", "src/app.py", "wipe_disk" and "v2" are.
+IDENTIFIER = re.compile(r"[./~]{0,2}[A-Za-z0-9]+(?:[./_-][A-Za-z0-9]+)*")
+QUOTED = re.compile(r"\"[^\"]*\"|'[^']*'")
+ALLOWED_CHARS = re.compile(r"[A-Za-z0-9 ./_'\"-]+")
+MAX_FREE_WORDS = 15
 
 # Looking at media: a read-only verb directly in front of the media noun, and the
 # noun not the head of a code phrase ("screenshot upload handler").
@@ -57,25 +90,6 @@ VISION = re.compile(
     re.I,
 )
 REVIEW = re.compile(r"\b(review|lint|audit|best practices?|style guide)\b", re.I)
-
-# Whole words that change something or run something, on top of MUTATION above.
-# "code" only counts as a verb ("code a login function"), not in "review the code".
-ACTION_WORDS = re.compile(
-    r"\b(?:save|store|run|execute|exec|send|post|upload|copy|export|dump|overwrite|truncate|kill|"
-    r"restart|launch|publish|release|ship|sync|pull|clone|download|mount|pipe|redirect|tee|touch|"
-    r"chmod|sudo|rm|mv|cp)(?:s|es|d|ed|ing)?\b"
-    r"|\bcode\s+(?:a|an|the|up|me|it|that|this|new|some)\b",
-    re.I,
-)
-
-# Anything that joins or chains requests. One short question has none of these.
-CLAUSE_BREAK = re.compile(
-    r"\b(?:and|or|then|also|next|afterwards?|after that|before|once|plus|while)\b"
-    r"|[;&+\n`|<>$]|->|=>|[,:]\s|[.!?]\s+\S",
-    re.I,
-)
-
-MAX_FREE_WORDS = 30  # a longer request is not a short single question
 
 DEFAULT_CLASS = "code"  # ZDR; no recognised signal means do not send it to a free model
 
@@ -96,23 +110,29 @@ Task: {task}
 Reply with ONLY the class name, nothing else."""
 
 
+def _identifier_like(token: str) -> bool:
+    if not IDENTIFIER.fullmatch(token):
+        return False
+    return any(c in token for c in "./_-") or any(c.isdigit() for c in token)
+
+
 def is_short_read_only(task: str) -> bool:
-    """True only for one short clause that opens with a read-only verb and holds
-    no mutation or action word anywhere. Everything else stays on a ZDR class."""
+    """The closed grammar for free routing. See the module docstring."""
     text = task.strip()
-    if not text or len(text.split()) > MAX_FREE_WORDS:
+    if text.endswith(("?", ".")):
+        text = text[:-1].rstrip()
+    if not text or len(text.split()) > MAX_FREE_WORDS or not ALLOWED_CHARS.fullmatch(text):
         return False
-    if CLAUSE_BREAK.search(text) or MUTATION.search(text) or ACTION_WORDS.search(text):
+    tokens = QUOTED.sub(" 0 ", text).split()  # a quoted span is data, like an identifier
+    if not tokens or tokens[0].lower() not in READ_ONLY_VERBS:
         return False
-    return bool(READ_ONLY.search(text))
+    return all(t.lower() in VOCABULARY or _identifier_like(t) for t in tokens[1:])
 
 
 def fast_classify(task: str) -> str | None:
     for cls, pat in STRONG_RULES:
         if pat.search(task):
             return cls
-    if MUTATION.search(task):
-        return "code"
     if not is_short_read_only(task):
         return None
     if VISION.search(task):

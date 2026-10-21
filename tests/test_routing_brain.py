@@ -18,6 +18,9 @@ import route_classifier  # noqa: E402
 import route_executor  # noqa: E402
 import weekly_routing_review as review  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from routing_corpus import MAY_BE_FREE, MUST_BE_ZDR  # noqa: E402
+
 SCHEMA = json.loads((FLEET / "routing.schema.json").read_text(encoding="utf-8"))
 PAID_PREFIXES = ("openai/", "anthropic/", "google/", "groq/", "openrouter/", "xai/")
 
@@ -125,8 +128,8 @@ class Ledger(TmpLedger):
 class Classifier(unittest.TestCase):
     CASES = {
         "where is the plan file": "scout",
-        "search the repo for the word complex": "scout",
-        "find the reason this import fails": "scout",
+        "search the repo for the word 'complex'": "scout",
+        "find the reason for the error": "scout",
         "list all files in src": "scout",
         "summarize README": "scout",
         "hello there": "code",
@@ -463,8 +466,8 @@ class ClassifierFailClosed(unittest.TestCase):
         "analyze this screenshot": "vision",
         "review this PR for style": "review",
         "audit the dependency list": "review",
-        "find the reason this import fails": "scout",
-        "explain the multimodal parser": "scout",
+        "find the reason for the error": "scout",
+        "explain the error log": "scout",
     }
 
     def test_coding_requests_with_media_or_audit_nouns_stay_zdr(self):
@@ -638,7 +641,7 @@ class Round3(TmpLedger):
                      "repair the audit endpoint", "resolve the screenshot upload failure",
                      "please explain and then patch the parser"):
             self.assertTrue(route_classifier.classify(task)["zdr_required"], task)
-        for task in ("find the reason this import fails", "what does the audit endpoint return",
+        for task in ("find the reason for the error", "what is the cost ceiling",
                      "review this PR for style", "analyze this screenshot"):
             self.assertFalse(route_classifier.classify(task)["zdr_required"], task)
 
@@ -716,118 +719,6 @@ class Round3(TmpLedger):
         route_executor.preflight("code", self.GLM, 0.1)
 
 
-MUST_BE_ZDR = [
-    # exact Codex round-4 repros
-    "Review auth.py, then code a new login function",
-    "Read settings.json and save it to backup.json",
-    # a read-only lead verb followed by something that changes state
-    "Explain the parser and fix the bug",
-    "List the files; delete the temp ones",
-    "Show the config then update it",
-    "Find the failing test and run it",
-    "Search for TODOs, then write a summary file",
-    "What does main.py do. Also rename it",
-    "Summarize README and push it to the wiki",
-    "Look at the logs then restart the service",
-    "Read the schema and generate migrations",
-    "Inspect the endpoint and send a request to it",
-    "Explain how to deploy the app",
-    "How do I run the tests",
-    "Describe the module, then refactor it",
-    "Review the diff and commit it",
-    "Audit the dependencies and upgrade the old ones",
-    "Find the config loader and change the default port",
-    "Read the file and copy it to the backup folder",
-    "Explain the bug and patch it",
-    "Show the failing job and rerun it",
-    "Review this change and then merge it",
-    "Locate the secret and delete it",
-    "What is in the log; upload it to the ticket",
-    "Read the key from the vault and store it in the env file",
-    "Explain this function & rewrite it",
-    "Find the handler -> update it",
-    "Review auth.py, code a login function",
-    "Read the file\nthen save the result",
-    "Explain this ```print(secret_key)``` snippet",
-    # coding and mutating requests with no read-only opening
-    "code a search function",
-    "write a novel caching layer",
-    "update the screenshot upload handler",
-    "patch the video parser",
-    "add a screenshot test",
-    "remove the audit endpoint",
-    "implement the login flow",
-    "deploy the site to production",
-    "create a migration for the users table",
-    "save the report to disk",
-    "run the build and publish the package",
-    "execute the nightly job",
-    "refactor the auth module",
-    "fix the failing import",
-    "install the package and configure it",
-    "build a landing page",
-    # no recognised signal at all
-    "hello there",
-    "zzz qqq",
-    "Check the lockfile, then bump the version",
-    # a read-only opening, but too long to be one short question
-    "Explain " + " ".join(["the way this module is wired to the rest of the system"] * 4),
-]
-
-MAY_BE_FREE = [
-    "find where the config loader is defined",
-    "what does the audit endpoint return",
-    "search the repo for the word complex",
-    "list all files in src",
-    "where is the plan file",
-    "explain the multimodal parser",
-    "review this PR for style",
-    "audit the dependency list",
-    "analyze this screenshot",
-    "describe the folder layout",
-    "find the reason this import fails",
-    "how does the router pick a model",
-    "why is the lint rule noisy",
-    "show the public functions in the executor",
-    "read the readme for the setup steps",
-    "inspect the schema for unused fields",
-    "look at the test names in the suite",
-    "what is the cost ceiling for the vision class",
-    "explain what a reservation is",
-    "summarize the readme",
-    "locate the weekly review script",
-    "where is the receipts directory",
-    "review the style of this module",
-    "lint rules for the python files",
-    "best practices for naming test cases",
-    "what are the task classes",
-    "list the models in the code chain",
-    "explore the fleet folder",
-    "scout the repo for large files",
-    "describe what the classifier returns",
-    "how many tests are in the suite",
-    "what file defines the hard cap",
-    "what does the lock file protect",
-    "explain the fallback order",
-    "find the function that reads receipts",
-    "why does the preflight need an estimate",
-    "show the schema keys for token pass",
-    "inspect the screenshot of the dashboard",
-    "analyze this image of the chart",
-    "what is in the video thumbnail",
-    "look up the ledger path rules",
-    "explain the review proposal format",
-    "how is the budget checked",
-    "what class covers vision work",
-    "where is the proposals folder",
-    "what is the latency field for",
-    "describe the receipt fields",
-    "what calls the executor",
-    "what happens when the chain is empty",
-    "explain the receipt settlement flow",
-]
-
-
 class Round4(TmpLedger):
     GLM = "vercel/zai/glm-5.3"
 
@@ -836,18 +727,20 @@ class Round4(TmpLedger):
             c = route_classifier.classify(task)
             self.assertTrue(c["zdr_required"], (task, c["class"]))
 
-    def test_corpus_has_100_prompts(self):
-        self.assertEqual(len(MUST_BE_ZDR), 50)
-        self.assertEqual(len(MAY_BE_FREE), 50)
+    def test_corpus_has_200_prompts(self):
+        self.assertEqual(len(MUST_BE_ZDR), 100)
+        self.assertEqual(len(MAY_BE_FREE), 100)
 
     def test_no_mutating_or_multi_clause_prompt_leaks_to_a_free_class(self):
         leaks = [(t, route_classifier.classify(t)["class"]) for t in MUST_BE_ZDR
                  if not route_classifier.classify(t)["zdr_required"]]
         self.assertEqual(leaks, [])
 
-    def test_short_single_clause_read_only_prompts_may_still_use_free_classes(self):
-        paid = [t for t in MAY_BE_FREE if route_classifier.classify(t)["zdr_required"]]
-        self.assertEqual(paid, [])
+    def test_free_hit_rate_on_natural_read_only_prompts_stays_above_the_floor(self):
+        """A cost measure, not a safety check. Measured 41 of 100 on 2026-10-21. The closed
+        grammar sends any prompt with an unknown word to ZDR, so most natural questions pay."""
+        free = [t for t in MAY_BE_FREE if not route_classifier.classify(t)["zdr_required"]]
+        self.assertGreaterEqual(len(free), 35, f"free hit rate fell to {len(free)} of {len(MAY_BE_FREE)}")
 
     # finding 2: an unterminated tail must not swallow the next paid receipt
     def test_torn_ledger_tail_does_not_swallow_the_next_receipt(self):
@@ -931,6 +824,73 @@ class Round4(TmpLedger):
     def test_recording_a_receipt_rejects_an_absurd_latency(self):
         with self.assertRaises(ValueError):
             route_executor.record_receipt("code", self.GLM, False, 0.1, 10 ** 308, True)
+
+
+class Round6Grammar(unittest.TestCase):
+    """Free routing uses a closed grammar, not a verb blacklist (Codex round 5, finding 1)."""
+
+    def zdr(self, task):
+        return route_classifier.classify(task)["zdr_required"]
+
+    def test_coordinator_repros_are_zdr(self):
+        for task in ("Read settings.json or erase backups", "List files | xargs unlink",
+                     "Show me the file and delete it"):
+            self.assertTrue(self.zdr(task), task)
+
+    def test_unknown_verbs_are_zdr_because_they_are_unknown(self):
+        for verb in ("erase", "unlink", "truncate", "wipe", "drop", "purge", "overwrite", "nuke", "shred",
+                     "zap", "obliterate", "defenestrate"):
+            self.assertTrue(self.zdr(f"Show the file {verb} it"), verb)
+            self.assertTrue(self.zdr(f"{verb} the file"), verb)
+
+    def test_an_unknown_word_decides_it_deterministically(self):
+        self.assertTrue(self.zdr("Explain the retry logic"))        # "retry" is not in the vocabulary
+        self.assertFalse(self.zdr("Explain the error log"))         # every word is
+        self.assertFalse(self.zdr("Explain the retry logic of the error log".replace("retry ", "")))
+
+    def test_the_first_word_must_be_a_read_only_verb(self):
+        for task in ("check the file", "check and fix the file", "fix the file", "the file", "please show the file"):
+            self.assertTrue(self.zdr(task), task)
+        for task in ("read the file", "list the files", "show the file", "summarise the log", "describe the module"):
+            self.assertFalse(self.zdr(task), task)
+
+    def test_word_cap_is_15(self):
+        ok = "Explain " + " ".join(["the file"] * 7)       # 15 words
+        self.assertFalse(self.zdr(ok))
+        self.assertTrue(self.zdr(ok + " file"))             # 16 words
+
+    def test_only_a_closed_character_set_is_allowed(self):
+        for ch in "|&;<>$`,(){}[]=+*#@!~%^:" + chr(10) + chr(9) + chr(92):
+            self.assertTrue(self.zdr(f"Show the file {ch} log"), repr(ch))
+        for ok in ("Show the file.", "Show the file?", "Show 'the file'", 'Show "the file"', "Show src/app.py"):
+            self.assertFalse(self.zdr(ok), ok)
+
+    def test_identifiers_and_quoted_text_are_data_but_bare_or_broken_tokens_are_not(self):
+        for ok in ("Read settings.json", "Read ./src/app.py", "Read wipe_disk", "Show v2", "Read 'erase everything'",
+                   'Read "erase everything"', "Count last 10 lines"):
+            self.assertFalse(self.zdr(ok), ok)
+        for bad in ("Show erase.", "Show the file erase.", "Show -rf", "Show the file. erase.", "Show erase"):
+            self.assertTrue(self.zdr(bad), bad)
+
+    def test_the_vocabulary_holds_no_verb_that_changes_or_runs_anything(self):
+        mutating = {"delete", "remove", "erase", "unlink", "truncate", "wipe", "drop", "purge", "overwrite", "nuke",
+                    "shred", "write", "save", "store", "run", "execute", "send", "post", "upload", "copy", "move",
+                    "rename", "update", "change", "fix", "patch", "edit", "create", "add", "build", "deploy",
+                    "install", "commit", "push", "pull", "merge", "release", "publish", "restart", "kill",
+                    "and", "or", "then", "also", "next", "before", "after", "while", "once", "plus", "not", "private",
+                    "secret", "secrets", "password", "passwords", "token", "credential", "credentials"}
+        self.assertEqual(route_classifier.VOCABULARY & mutating, set())
+        self.assertEqual(route_classifier.READ_ONLY_VERBS & mutating, set())
+
+    def test_media_and_review_classes_still_come_from_the_grammar(self):
+        self.assertEqual(route_classifier.classify("analyze this screenshot")["class"], "vision")
+        self.assertEqual(route_classifier.classify("what is in the screenshot")["class"], "vision")
+        self.assertEqual(route_classifier.classify("audit the dependency list")["class"], "review")
+        self.assertEqual(route_classifier.classify("find the reason for the error")["class"], "scout")
+
+    def test_strong_rules_still_route_to_their_zdr_classes_first(self):
+        self.assertEqual(route_classifier.classify("find the root cause of the crash")["class"], "hard-reasoning")
+        self.assertTrue(self.zdr("extract all emails from every log"))
 
 
 class Round5Mechanical(TmpLedger):
