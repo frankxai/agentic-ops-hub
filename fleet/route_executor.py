@@ -400,6 +400,20 @@ def _append_unlocked(path: Path, line: str) -> None:
         os.close(fd)
 
 
+def _countable_receipt(r: dict) -> bool:
+    """True when a stored receipt is complete and month_paid_spend() will count it:
+    every field present and typed, a parseable timestamp, a finite cost in range."""
+    try:
+        datetime.fromisoformat(r["ts"])
+        return (isinstance(r["id"], str) and isinstance(r["used"], str) and isinstance(r["task_class"], str)
+                and _finite_number(r["cost_usd"]) and r["cost_usd"] >= 0
+                and isinstance(r["latency_ms"], int) and not isinstance(r["latency_ms"], bool)
+                and 0 <= r["latency_ms"] <= MAX_SANE_LATENCY_MS
+                and isinstance(r["success"], bool) and isinstance(r["over_ceiling"], bool))
+    except (KeyError, ValueError, TypeError):
+        return False
+
+
 def _sync_file(path: Path) -> None:
     """Flush a file to disk. Used before a retry closes a hold over a receipt that
     an earlier, interrupted attempt wrote."""
@@ -484,7 +498,11 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
             if prior is not None:
                 # An earlier attempt already wrote this call's receipt. Never write a second
                 # one: make both files durable, finish the settlement if it is missing, and
-                # return the receipt that is already there.
+                # return the receipt that is already there, provided it can be counted.
+                if not _countable_receipt(prior):
+                    raise ValueError(
+                        f"reservation '{reservation_id}' has a receipt that is incomplete or cannot be "
+                        f"counted; the hold stays open until it is reconciled with --release")
                 if prior.get("task_class") != task_class or prior.get("used") != used:
                     raise ValueError(
                         f"reservation '{reservation_id}' already settled for "

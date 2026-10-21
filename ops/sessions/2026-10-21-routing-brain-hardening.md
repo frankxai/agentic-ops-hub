@@ -136,3 +136,13 @@ Tests: 101 (was 91). The corpus is now `tests/routing_corpus.py`: 100 must-be-ZD
 Free hit rate, honestly: **41 of 100** natural read-only prompts still route free. On the 50 prompts the old blacklist classifier let through, the new grammar lets 17 through (34%). Natural questions often contain a word the vocabulary lacks ("does", "uses", "happens", "retry", "fails"), so they now pay Token Pass credit. This is the accepted cost; the vocabulary can grow by reviewed pull request. `Explain the retry logic` is ZDR (retry is unknown) and `Explain the error log` is free, pinned by a test. A floor test keeps the hit rate at or above 35 of 100.
 
 Known limit: an identifier or quoted span is treated as data, so `Read 'erase everything'` and `Show ./rm` stay free. The text is only sent to a model that was already allowed to read.
+
+## Codex round 6 verdict (reviewed SHA 0e64f42, whole branch vs hub/main): CHANGES REQUESTED
+
+Verdict: `scratchpad/codex-verdict-6.txt`. No further Codex round was run. Three findings:
+
+- Fixed, mechanical (finding 3, P2): a settle retry trusted any prior receipt for the reservation id. A corrupted timestamp or an incomplete record closed the hold, reopened budget, or crashed the CLI with `KeyError: 'over_ceiling'`. `_countable_receipt()` now requires every field present and typed, a parseable timestamp, and a finite in-range cost and latency. Otherwise `record_receipt` raises `ValueError`, the hold stays open, and `--release` reconciles it. 104 tests (was 101).
+- OPEN (finding 1, P1, not mechanical): quoted text and identifiers are treated as data, so `Read .env`, `Print api_key`, `Show passwords.txt` and `Print 'the api token is sk-live-123456789'` route free. The grammar says nothing about what the data IS. Closing it needs a policy: drop identifiers and quotes from free routing (many paths then pay), or add a sensitive-name list (a blacklist again), or use a ZDR-only gateway key.
+- OPEN (finding 2, P1, not mechanical): the vocabulary lets nouns act as verbs and lets hyphens hide connectors: `Review auth.py code a new function`, `How to code a new function`, `Read file 'and' 'erase' it`, `Show the file then-delete-it` all route free. Needs a decision: remove `code` and similar verb-nouns from the vocabulary, forbid hyphenated or quoted tokens that contain a connector, or enforce a fixed sentence template.
+
+Two review rounds in a row (5 and 6) found classifier leaks that a word list cannot close. The reliable control is outside the classifier: a gateway key that can only reach ZDR providers for ZDR work, so a classifier miss cannot leak.

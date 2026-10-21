@@ -997,5 +997,64 @@ class Round5Mechanical(TmpLedger):
         self.assertAlmostEqual(route_executor.month_paid_spend(), 0.10)
 
 
+class Round6Recovery(TmpLedger):
+    """Codex round 6, finding 3: a retry must not settle a hold against a receipt that cannot be counted."""
+    GLM = "vercel/zai/glm-5.3"
+
+    def _interrupt_settlement(self, res):
+        real = route_executor._append_unlocked
+
+        def flaky(path, line):
+            if '"settle"' in line:
+                raise OSError("disk full")
+            return real(path, line)
+
+        with patch.object(route_executor, "_append_unlocked", side_effect=flaky):
+            with self.assertRaises(OSError):
+                route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                              reservation_id=res["reservation_id"])
+
+    def test_a_corrupted_prior_receipt_does_not_close_the_hold(self):
+        cap = SCHEMA["token_pass"]["hard_cap_usd"]
+        route_executor.record_receipt("code", self.GLM, False, cap - 0.50, 5, True)
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        self._interrupt_settlement(res)
+        rows = [json.loads(line) for line in self.ledger.read_text().splitlines()]
+        rows[-1]["ts"] = "garbage"
+        self.ledger.write_text("\n".join(json.dumps(r) for r in rows) + "\n", encoding="utf-8")
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                          reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
+        with self.assertRaises(route_executor.BudgetError):
+            route_executor.reserve("code", self.GLM, 0.50)
+
+    def test_an_incomplete_prior_receipt_is_refused_and_the_cli_does_not_crash(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        with open(self.ledger, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"task_class": "code", "used": self.GLM,
+                                "reservation_id": res["reservation_id"]}) + "\n")
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                          reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
+        p = subprocess.run([sys.executable, "-I", "-B", str(FLEET / "route_task.py"), "implement auth",
+                            "--record", "success", "--used", self.GLM, "--cost", "0.50", "--latency", "5",
+                            "--reservation", res["reservation_id"]],
+                           capture_output=True, text=True,
+                           env={**os.environ, "STARLIGHT_RECEIPTS_DIR": self.tmp.name})
+        self.assertNotIn("Traceback", p.stderr)
+        self.assertNotEqual(p.returncode, 0)
+
+    def test_a_complete_prior_receipt_still_makes_the_retry_idempotent(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        self._interrupt_settlement(res)
+        got = route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                            reservation_id=res["reservation_id"])
+        self.assertEqual(got["reservation_id"], res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.0)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.50)
+
+
 if __name__ == "__main__":
     unittest.main()
