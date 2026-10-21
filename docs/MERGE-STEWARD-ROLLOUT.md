@@ -1,5 +1,9 @@
 # Merge Steward — rollout
 
+> **Not in use until 20 November 2026.** During the estate focus window, pr-gate is the only merge mechanism
+> (`ops/plans/estate-convergence-2026-10-21.md`). Do not install the App, add a workflow or enable live mode until Frank
+> revises that ruling.
+
 Design: [`MERGE-STEWARD.md`](MERGE-STEWARD.md). Each phase has an exit test; nothing advances on a calendar alone.
 
 ## Phase 0 — Frank's setup (~15 min, once)

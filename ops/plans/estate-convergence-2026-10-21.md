@@ -67,8 +67,8 @@ The same product exists more than once:
    (agenticpassiveincome folds into it, as the snapshot proposes). frankx.ai analytics were broken from July until
    frankx.ai-vercel-website#1068; the first week of real numbers decides which offer leads.
 3. **Starlight's first customer-validated launch (by 20 November).** The launch factory builds Starlight's own founding-offer
-   page, with a `checkout` call to action pointing at a Polar checkout link (the factory accepts Polar checkout links and
-   founders' Stripe Payment Links), and one managed run is
+   page, with a `checkout` call to action pointing at a Polar checkout link (starlightintelligence.ai#180 accepts
+   `https://buy.polar.sh/polar_cl_<id>` beside founders' Stripe Payment Links since `536f9dd`), and one managed run is
    settled on the budget ledger for a funded tenant. This is the platform bet; it depends on 1.
 
 **Hold** (security, bugs and the named S4 gate only, no new features): gencreator.ai (Companion alpha stays on hold),
@@ -102,7 +102,8 @@ close list.
   second lane that closes PRs without recording them is stopped.
 - **One merge mechanism: pr-gate.** The maker never checks its own head; the checker signs the exact head, and a new commit
   voids the sign-off. Claude-written spine PRs are checked by Codex, Grok or Antigravity and merged by a non-Claude harness or
-  Frank. The Merge Steward docs get a "not in use" banner rather than a fourth parallel path.
+  Frank. The Merge Steward docs (`docs/MERGE-STEWARD.md` and its rollout) carry a "not in use" banner until 20 November,
+  so nobody installs a second merge path during the drain.
 - **Drafts do not run CI.** Copy gencreator.ai's pattern (drafts defer every job; `ready_for_review` starts them) to each
   spine repository. Three in four PRs are drafts, so this is the largest single cut in Actions minutes. The drain owner may
   open one PR per spine repository for this rule even when that repository is over its cap; it is drain step 1, not new
@@ -110,7 +111,8 @@ close list.
 - **No new repositories, Vercel projects or cross-repo fan-outs** (one branch opening drafts in many repositories) for 30
   days.
 - **Budgets hold.** 10 open PRs per repository estate-wide, the caps above on the spine. A repository over budget gets no new
-  PR from any harness, except the draft-CI PR above.
+  PR from any harness, with two exceptions: the draft-CI PR above, and in this repository one open ledger PR at a time from
+  the drain owner, carrying only the same-day close and merge records.
 
 ## The drain, in order
 
@@ -136,7 +138,9 @@ close list.
 5. Close, each with a one-line reason and "reopen if still needed": PRs older than 30 days outside the spine, except
    agentic-income-template#8, which was reopened on purpose on 10 September to keep its work; the drafts from
    the `ccr-30cf70e3-tha5nf` fan-out in frozen repositories; duplicate cross-repo pointer and error-boundary PRs. The existing
-   pr-closer list (94 proposed closes) goes first, after a 10-PR sample check.
+   pr-closer list (94 proposed closes, in `agentic-ops`) goes first, but only as a pinned snapshot: before closing anything
+   from it, the drain owner records its path and commit in the ledger and checks a 10-PR sample. A list generated later is
+   a new proposal, not the approved one.
 6. Branches: delete a branch only when its PR merged and the branch meets the existing reaper rule (clean, merged, bundled
    and unclaimed). A PR closed without merging keeps its branch, which is what "reopen if still needed" relies on.
 
@@ -166,8 +170,8 @@ worktrees that are clean, merged, bundled and unclaimed, and writes a receipt pe
 
 | Decision | Ruling | Done | Needs Frank's account |
 |---|---|---|---|
-| Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Payment Link checkout in #180 | Polar organization, products and webhook secret; finish Stripe business and bank onboarding for payouts |
+| Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Stripe Payment Link and Polar checkout link support in #180 | Polar organization, products and webhook secret; finish Stripe business and bank onboarding for payouts; a Codex cloud environment for starlightintelligence.ai, so Codex can make #175's funding fixes |
 | Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` and the handover prompt | None |
-| Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Recommendation only | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
-| Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read |
+| Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Ruled; the budget itself is not set yet | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
+| Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read; it is pinned by path and commit in the ledger before use |
 | Archive batch 1 | ai-architectures-observatory, oci-ai-architects/oci-ai-life-sciences | Not done: archiving is a human-only action under the federation rules | Archive both in repository settings |
