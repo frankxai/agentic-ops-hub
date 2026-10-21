@@ -11,7 +11,7 @@ chain. Flow around a call:
   3. route_task.py "<task>" --record success --used <model> --cost <usd> --latency <ms>
      [--reservation <reservation_id>]
 
-Exit codes: 0 ok, 2 rejected input, 3 receipt recorded but cost passed the
+Exit codes: 0 ok, 2 rejected input (a busy ledger lock and a refused paid call included), 3 receipt recorded but cost passed the
 class ceiling (the spend is in the ledger; treat the route as needing review).
 """
 import argparse
@@ -22,7 +22,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from route_classifier import classify
-from route_executor import BudgetError, preflight, record_receipt, reserve, route
+from route_executor import preflight, record_receipt, release_reservation, reserve, route
 
 
 def _fail(msg: str, code: int = 2):
@@ -42,6 +42,8 @@ def main():
     ap.add_argument("--no-reserve", action="store_true",
                     help="With --preflight: check only, hold no budget")
     ap.add_argument("--reservation", help="reservation_id printed by --preflight; settled by --record")
+    ap.add_argument("--release", metavar="RESERVATION_ID",
+                    help="Release a hold whose call is known not to be running (expired holds keep counting)")
     ap.add_argument("--record", choices=["success", "fail"], help="Record a receipt")
     ap.add_argument("--used", help="Model actually used (required with --record/--preflight)")
     ap.add_argument("--cost", type=float, default=None, help="Cost USD (required with --record)")
@@ -58,14 +60,20 @@ def main():
     except (FileNotFoundError, ValueError, KeyError) as e:
         _fail(str(e))
 
+    if args.release:
+        try:
+            release_reservation(args.release, "released by caller via --release")
+        except (ValueError, FileNotFoundError, TimeoutError, OSError) as e:
+            _fail(str(e))
+        print(f"reservation released: {args.release}")
+        return
+
     if args.preflight:
         model = args.used or r["primary"]
         try:
             admit = preflight if args.no_reserve else reserve
             status = admit(c["class"], model, args.est_cost, args.allow_non_zdr)
-        except BudgetError as e:
-            _fail(str(e))
-        except ValueError as e:
+        except (ValueError, TimeoutError, OSError) as e:  # BudgetError and LedgerBusy are ValueErrors
             _fail(str(e))
         print(json.dumps({"class": c["class"], **status}))
         return
@@ -82,7 +90,7 @@ def main():
                                      args.latency, args.record == "success", args.provider,
                                      allow_non_zdr=args.allow_non_zdr, synthetic=args.synthetic,
                                      reservation_id=args.reservation)
-        except (ValueError, FileNotFoundError, TimeoutError) as e:
+        except (ValueError, FileNotFoundError, TimeoutError, OSError) as e:
             _fail(str(e))
         print(f"receipt recorded: class={c['class']} used={args.used} success={args.record == 'success'}")
         if receipt["over_ceiling"]:

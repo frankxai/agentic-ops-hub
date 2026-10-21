@@ -63,3 +63,20 @@ CLI: `--preflight` now reserves and prints `reservation_id`; pass it to `--recor
 Test coverage gap Codex named (removing `oracle` still passed) is closed: the generated agent and category sets are compared for equality with the expected OmO slots.
 
 Caveat: the schema root is `C:/Users/frank/agentic-ops/fleet/receipts`, so on this machine every worktree now writes the live ledger. Other machines (Railway worker) resolve to their own checkout and keep their own budget; a shared Token Pass cap across machines still needs a central ledger.
+
+## Codex round 2 (reviewed SHA 95270ea): CHANGES REQUESTED, fixed in the next commit
+
+Eight findings, each with a failing-first test (64 tests total, was 48).
+
+| Finding | Fix |
+|---|---|
+| P1 OmO `applyDisabledProviders()` turns `[]` into undefined, so singleton ZDR categories inherit `sisyphus-junior`'s free fallbacks again | a ZDR category never emits an empty `fallback_models`; a singleton chain repeats its own primary. Test simulates the collapse |
+| P1 a hold expiring at 1800 s released budget while the call could still run (spend reached $80.50) | expiry only relabels the hold `expired-unsettled`; it keeps counting against the cap until a late settle replaces it or `release_reservation()` / `--release <id>` reconciles it |
+| P1 any receipt could settle any reservation | settle needs the same task class and model, and an open hold; otherwise `ValueError` and nothing is recorded |
+| P1 coding verbs with screenshot/video/audit nouns still reached free vision/review | classifier is fail-closed: a mutation verb wins, and only an explicit read-only signal can reach scout/review/vision. No signal defaults to `code` (`source: default-zdr`) |
+| P1 a Windows schema root on another OS silently gave each checkout its own budget | paid `preflight`/`reserve` are refused with a clear error unless `STARLIGHT_RECEIPTS_DIR` is set or the root is absolute on this OS; free calls still work |
+| P2 sub-micro estimates were admitted but held as zero | paid estimates round up to a whole micro-dollar (minimum 1e-6); the cap check runs in integer micro-dollars |
+| P2 lock timeout in `reserve()` crashed the CLI with exit 1 | `reserve()` raises `LedgerBusy` (a `BudgetError`); the CLI exits 2 with no traceback. `STARLIGHT_LOCK_TIMEOUT_S` shortens the wait for tests |
+| P2 `cost_usd = 10**309` crashed the weekly review | overflow and values over $1,000,000 are counted as malformed; the spend scan and `record_receipt` also survive it |
+
+Cost of the fail-closed classifier: ambiguous tasks ("hello there", "handle the upload") now use Token Pass credit instead of a free model. Known limit: the vision rule needs a read-only verb directly before the media noun, so "what is wrong with this screenshot" lands on `scout`, not `vision`.

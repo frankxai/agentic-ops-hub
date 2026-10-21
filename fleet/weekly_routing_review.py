@@ -20,6 +20,7 @@ HERE = Path(__file__).resolve().parent
 PROPOSALS = HERE / "routing-proposals"
 SCHEMA = HERE / "routing.schema.json"
 DEFAULT_MIN_SAMPLES = 20
+MAX_SANE_COST_USD = 1_000_000.0  # a single call above this is a corrupt receipt, not spend
 MIN_MODEL_SAMPLES = 5
 REQUIRED = ("ts", "task_class", "used", "success", "cost_usd", "latency_ms")
 
@@ -62,11 +63,14 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
             if ts.tzinfo is None:
                 ts = ts.replace(tzinfo=timezone.utc)
             cost, latency = float(r["cost_usd"]), float(r["latency_ms"])
-        except (ValueError, TypeError):
+        except (ValueError, TypeError, OverflowError):
             skipped["malformed"] += 1
             continue
         if not (math.isfinite(cost) and math.isfinite(latency)):
             skipped["non_finite"] += 1
+            continue
+        if abs(cost) > MAX_SANE_COST_USD:
+            skipped["malformed"] += 1
             continue
         if ts.timestamp() >= cutoff:
             out.append({**r, "cost_usd": cost, "latency_ms": latency})

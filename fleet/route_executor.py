@@ -14,7 +14,12 @@ Policy enforced here (not just documented):
   reservations and the estimate would pass token_pass.hard_cap_usd. reserve()
   does the same check and records the reservation in one locked step, so two
   callers cannot both be admitted into the same headroom; record_receipt()
-  settles the reservation. Unsettled reservations expire after RESERVATION_TTL_S.
+  settles the reservation, and only a receipt for the same class and model can.
+  A hold older than RESERVATION_TTL_S is reported as expired-unsettled but keeps
+  counting against the cap (the call may still be running) until a late
+  settlement replaces it or release_reservation() reconciles it.
+- Shared budget: paid calls are refused when the schema's receipts root cannot
+  be used on this OS, because each checkout would otherwise keep its own ledger.
 - Ledger: an over-ceiling cost is still recorded (flagged over_ceiling) so the
   ledger sees the events the ceiling exists to catch.
 """
@@ -25,6 +30,7 @@ import os
 import time
 import uuid
 from datetime import datetime, timezone
+from decimal import ROUND_CEILING, Decimal
 from pathlib import Path
 
 SCHEMA_PATH = Path(__file__).resolve().parent / "routing.schema.json"
@@ -37,6 +43,31 @@ class BudgetError(ValueError):
     """Raised when a paid call would pass the Token Pass hard cap."""
 
 
+class LedgerBusy(BudgetError):
+    """The ledger lock could not be taken in time; the paid call is not admitted."""
+
+
+MICRO = Decimal("0.000001")
+
+
+def _finite_number(x) -> bool:
+    if isinstance(x, bool) or not isinstance(x, (int, float)):
+        return False
+    try:
+        return math.isfinite(float(x))
+    except OverflowError:
+        return False
+
+
+def _ceil6(x: float) -> float:
+    """Round up to a whole micro-dollar, never below one."""
+    return max(float(Decimal(repr(float(x))).quantize(MICRO, rounding=ROUND_CEILING)), 0.000001)
+
+
+def _micros(x: float) -> int:
+    return int(round(x * 1_000_000))
+
+
 def receipts_dir() -> Path:
     """Ledger directory. Order: STARLIGHT_RECEIPTS_DIR (tests, dry runs), then the
     schema's receipts.root so every worktree shares one budget, then this checkout
@@ -44,15 +75,25 @@ def receipts_dir() -> Path:
     override = os.environ.get("STARLIGHT_RECEIPTS_DIR")
     if override:
         return Path(override)
+    return _schema_root() or DEFAULT_RECEIPTS_DIR
+
+
+def _schema_root() -> Path | None:
     try:
         root = load_schema().get("receipts", {}).get("root")
     except (FileNotFoundError, ValueError):
-        root = None
+        return None
     if isinstance(root, str) and root:
         path = Path(os.path.expandvars(root)).expanduser()
         if path.is_absolute():
             return path
-    return DEFAULT_RECEIPTS_DIR
+    return None
+
+
+def shared_root_usable() -> bool:
+    """True when every checkout on this machine resolves to one ledger: either
+    STARLIGHT_RECEIPTS_DIR is set or the schema root is absolute on this OS."""
+    return bool(os.environ.get("STARLIGHT_RECEIPTS_DIR")) or _schema_root() is not None
 
 
 def load_schema() -> dict:
@@ -150,7 +191,7 @@ def month_paid_spend(now: datetime | None = None) -> float:
         try:
             ts = datetime.fromisoformat(r["ts"])
             cost = float(r["cost_usd"])
-        except (KeyError, ValueError, TypeError):
+        except (KeyError, ValueError, TypeError, OverflowError):
             continue
         if ts.year == now.year and ts.month == now.month and is_paid(r.get("used", ""), schema) \
                 and math.isfinite(cost):
@@ -158,27 +199,54 @@ def month_paid_spend(now: datetime | None = None) -> float:
     return total
 
 
-def reserved_usd(now: datetime | None = None) -> float:
-    """Estimated spend held by unsettled, unexpired reservations."""
+def reservations(now: datetime | None = None) -> list[dict]:
+    """Open holds: reserved and neither settled nor released. A hold past
+    RESERVATION_TTL_S is "expired-unsettled": it still counts against the cap."""
     now = now or datetime.now(timezone.utc)
-    path = receipts_dir() / "reservations.jsonl"
-    held: dict[str, float] = {}
-    settled: set[str] = set()
-    for e in _read_receipts(path):
+    reserves: dict[str, dict] = {}
+    closed: set[str] = set()
+    for e in _read_receipts(receipts_dir() / "reservations.jsonl"):
         try:
-            if e["kind"] == "settle":
-                settled.add(e["id"])
+            if e["kind"] in ("settle", "release"):
+                closed.add(str(e["id"]))
                 continue
             ts = datetime.fromisoformat(e["ts"])
             est = float(e["est_cost_usd"])
             if ts.tzinfo is None:
                 ts = ts.replace(tzinfo=timezone.utc)
-            held_id = str(e["id"])
-        except (KeyError, ValueError, TypeError):
+            rid = str(e["id"])
+            hold = {"id": rid, "ts": ts, "est_cost_usd": est, "task_class": e.get("task_class"),
+                    "model": e.get("model")}
+        except (KeyError, ValueError, TypeError, AttributeError, OverflowError):
             continue
-        if math.isfinite(est) and est >= 0 and (now - ts).total_seconds() < RESERVATION_TTL_S:
-            held[held_id] = est
-    return sum(v for k, v in held.items() if k not in settled)
+        if math.isfinite(est) and est >= 0:
+            reserves[rid] = hold
+    out = []
+    for rid, h in reserves.items():
+        if rid in closed:
+            continue
+        age = (now - h["ts"]).total_seconds()
+        out.append({**h, "ts": h["ts"].isoformat(),
+                    "status": "expired-unsettled" if age >= RESERVATION_TTL_S else "active"})
+    return out
+
+
+def reserved_usd(now: datetime | None = None) -> float:
+    """Estimated spend held by open reservations, expired-unsettled ones included."""
+    return sum(h["est_cost_usd"] for h in reservations(now))
+
+
+def release_reservation(reservation_id: str, reason: str) -> dict:
+    """Reconcile a hold whose call is known not to be running (or not to have spent)."""
+    ledger = receipts_dir() / "routing.jsonl"
+    ledger.parent.mkdir(parents=True, exist_ok=True)
+    with _locked(ledger):
+        if not any(h["id"] == reservation_id for h in reservations()):
+            raise ValueError(f"reservation '{reservation_id}' is unknown, already settled or released")
+        event = {"kind": "release", "id": reservation_id, "ts": datetime.now(timezone.utc).isoformat(),
+                 "reason": str(reason)[:200]}
+        _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(event, allow_nan=False))
+    return event
 
 
 def _admit(task_class: str, model: str, est_cost_usd: float | None, allow_non_zdr: bool) -> dict:
@@ -192,22 +260,30 @@ def _admit(task_class: str, model: str, est_cost_usd: float | None, allow_non_zd
         if paid:
             raise ValueError(f"'{model}' is a paid model: pass an explicit positive estimate")
         est_cost_usd = 0.0
-    if not isinstance(est_cost_usd, (int, float)) or not math.isfinite(est_cost_usd) or est_cost_usd < 0:
+    if not _finite_number(est_cost_usd) or est_cost_usd < 0:
         raise ValueError("est_cost_usd must be a finite non-negative number")
     if paid and est_cost_usd == 0:
         raise ValueError(f"'{model}' is a paid model: the estimate must be greater than zero")
+    if paid:
+        est_cost_usd = _ceil6(est_cost_usd)  # what is held is never less than what was checked
+        if not shared_root_usable():
+            raise BudgetError(
+                "paid calls are refused: the schema receipts.root is not an absolute path on this OS and "
+                "STARLIGHT_RECEIPTS_DIR is unset, so this checkout would keep its own budget instead of "
+                "the shared one. Set STARLIGHT_RECEIPTS_DIR to the shared ledger directory.")
     if est_cost_usd > r["cost_ceiling_usd"]:
         raise BudgetError(
             f"estimate ${est_cost_usd} exceeds the ${r['cost_ceiling_usd']} ceiling for '{task_class}'")
     tp = schema.get("token_pass", {})
     status = {"model": model, "month_paid_spend_usd": 0.0, "reserved_usd": 0.0, "soft_alert": False,
-              "reservation_id": None}
+              "reservation_id": None, "held_usd": est_cost_usd if paid else 0.0}
     if paid:
         spent, held = month_paid_spend(), reserved_usd()
         cap = tp.get("hard_cap_usd", float("inf"))
         status["month_paid_spend_usd"] = round(spent, 6)
         status["reserved_usd"] = round(held, 6)
-        if spent + held >= cap or spent + held + est_cost_usd > cap:
+        spent_m, held_m, est_m, cap_m = _micros(spent), _micros(held), _micros(est_cost_usd), _micros(cap)
+        if spent_m + held_m >= cap_m or spent_m + held_m + est_m > cap_m:
             raise BudgetError(
                 f"month spend ${spent:.4f} + reserved ${held:.4f} + ${est_cost_usd} would pass the "
                 f"${cap} Token Pass hard cap")
@@ -228,15 +304,19 @@ def reserve(task_class: str, model: str, est_cost_usd: float | None = None,
     cannot be admitted into the same headroom."""
     ledger = receipts_dir() / "routing.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)
-    with _locked(ledger):
-        status = _admit(task_class, model, est_cost_usd, allow_non_zdr)
-        if is_paid(model, load_schema()):
-            rid = uuid.uuid4().hex[:12]
-            event = {"kind": "reserve", "id": rid, "ts": datetime.now(timezone.utc).isoformat(),
-                     "model": model, "task_class": task_class, "est_cost_usd": round(float(est_cost_usd), 6)}
-            _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(event, allow_nan=False))
-            status["reservation_id"] = rid
-            status["reserved_usd"] = round(status["reserved_usd"] + float(est_cost_usd), 6)
+    try:
+        with _locked(ledger):
+            status = _admit(task_class, model, est_cost_usd, allow_non_zdr)
+            if is_paid(model, load_schema()):
+                rid = uuid.uuid4().hex[:12]
+                held = status["held_usd"]
+                event = {"kind": "reserve", "id": rid, "ts": datetime.now(timezone.utc).isoformat(),
+                         "model": model, "task_class": task_class, "est_cost_usd": held}
+                _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(event, allow_nan=False))
+                status["reservation_id"] = rid
+                status["reserved_usd"] = round(status["reserved_usd"] + held, 6)
+    except TimeoutError as e:
+        raise LedgerBusy(f"ledger busy, paid call not admitted: {e}") from e
     return status
 
 
@@ -245,7 +325,13 @@ def _locked(path: Path):
     """Exclusive cross-process lock on a sidecar file (Windows and POSIX)."""
     lock_path = path.with_name(path.name + ".lock")
     fd = os.open(lock_path, os.O_RDWR | os.O_CREAT)
-    deadline = time.monotonic() + LOCK_TIMEOUT_S
+    try:
+        timeout = float(os.environ.get("STARLIGHT_LOCK_TIMEOUT_S", LOCK_TIMEOUT_S))
+    except ValueError:
+        timeout = LOCK_TIMEOUT_S
+    if not math.isfinite(timeout) or timeout <= 0:
+        timeout = LOCK_TIMEOUT_S
+    deadline = time.monotonic() + timeout
     try:
         if os.name == "nt":
             import msvcrt
@@ -314,7 +400,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
     r = route(task_class, allow_non_zdr)  # validates up front
     if used not in r["chain"]:
         raise ValueError(f"used model '{used}' is not in the chain for '{task_class}': {r['chain']}")
-    if not isinstance(cost_usd, (int, float)) or not math.isfinite(cost_usd) or cost_usd < 0:
+    if not _finite_number(cost_usd) or cost_usd < 0:
         raise ValueError("cost_usd must be a finite non-negative number")
     if not isinstance(latency_ms, int) or isinstance(latency_ms, bool) or latency_ms < 0:
         raise ValueError("latency_ms must be a non-negative integer")
@@ -338,6 +424,14 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
     ledger = receipts_dir() / "routing.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)
     with _locked(ledger):
+        if reservation_id:
+            hold = next((h for h in reservations() if h["id"] == reservation_id), None)
+            if hold is None:
+                raise ValueError(f"reservation '{reservation_id}' is unknown, already settled or released")
+            if hold["task_class"] != task_class or hold["model"] != used:
+                raise ValueError(
+                    f"reservation '{reservation_id}' was made for {hold['task_class']}/{hold['model']}, "
+                    f"not {task_class}/{used}; nothing was recorded")
         _append_unlocked(ledger, json.dumps(receipt, allow_nan=False))
         if reservation_id:
             settle = {"kind": "settle", "id": reservation_id, "ts": receipt["ts"]}

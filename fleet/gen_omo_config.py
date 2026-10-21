@@ -88,10 +88,15 @@ def build(schema: dict) -> dict:
         entry = {"model": first["model"] if isinstance(first, dict) else first}
         if isinstance(first, dict):
             entry["reasoning"] = first["reasoning"]
-        # Always explicit, even when empty: a category without the key inherits
-        # the fallbacks of the agent that delegates to it (OmO checks truthiness,
-        # and [] is truthy), which would leak ZDR data to free models.
-        entry["fallback_models"] = ms[1:]
+        # Always explicit and, for a ZDR class, never empty. A category without the
+        # key inherits the fallbacks of the delegating agent. OmO's
+        # applyDisabledProviders() also turns [] into undefined, which makes the
+        # category inherit them again, and those are free models. A singleton ZDR
+        # chain therefore repeats its own primary as the only fallback.
+        fallbacks = ms[1:]
+        if not fallbacks and classes[cls]["zdr_required"]:
+            fallbacks = [entry["model"]]
+        entry["fallback_models"] = fallbacks
         categories[cat] = entry
 
     return {

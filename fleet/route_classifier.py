@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """Starlight routing classifier: task prompt -> task class.
 
-Regex rules only. Unmatched text defaults to the free scout class; there is no
-LLM call. LLM_PROMPT below is kept for a future free-model classifier.
+Regex rules only; there is no LLM call. LLM_PROMPT below is kept for a future
+free-model classifier.
+
+Fail closed: only an explicit read-only request (find, list, explain, review,
+analyze this screenshot ...) may reach a free, non-ZDR class. A request that
+changes something, and any request with no recognised signal, goes to a ZDR
+class, because the text may carry code or data that must not leave on a free
+model. The cost of a wrong guess is Token Pass credit, never a leak.
 """
 import argparse
 import json
@@ -13,24 +19,44 @@ from pathlib import Path
 
 SCHEMA_PATH = Path(__file__).resolve().parent / "routing.schema.json"
 
-# Keyword rules, first match wins. Paid classes need an explicit multi-word or
-# unambiguous signal; a single common word ("plan", "complex", "novel") must
-# never lift a task out of the free tier.
-#
-# Order is a privacy rule: every ZDR class (ultrabrain, hard-reasoning, bulk,
-# code) is tested before the free vision and review classes, so a coding request
-# that merely mentions a screenshot or an audit stays on ZDR models.
-FAST_RULES = [
+# Strong signals, first match wins. All ZDR classes.
+STRONG_RULES = [
     ("ultrabrain",    re.compile(r"\b(ultrabrain|deep think|research-grade|greenfield|from scratch)\b", re.I)),
     ("hard-reasoning",re.compile(r"\b(root[- ]cause|multi[- ]?step|deep codegen|long[- ]context|hard[- ]reasoning|plan the (migration|rollout|architecture)|reason (about|through))\b", re.I)),
     ("bulk",          re.compile(r"\b((extract|classify|summari[sz]e) (all|many|every|bulk)|bulk|batch)\b", re.I)),
-    ("code",          re.compile(r"\b(implement|refactor|edit|fix|write|add (a )?(feature|test|function)|rename|change|update (the )?(file|function|module)|create|build)\b", re.I)),
-    ("vision",        re.compile(r"\b(screenshots?|screencasts?|video|multimodal|looker|ui mock(up)?s?|analy[sz]e (the |this )?(image|photo|picture))\b", re.I)),
-    ("review",        re.compile(r"\b(review|lint|audit|best practices?|style guide)\b", re.I)),
-    ("scout",         re.compile(r"\b(find|search|locate|list|explore|scout|map (the )?codebase|where is|show|read|summari[sz]e|what|how|why|explain|describe)\b", re.I)),
 ]
 
-DEFAULT_CLASS = "scout"  # free; "Default to free tier" is a schema routing rule
+# Any word that starts one of these changes something. It beats every read-only
+# signal, so "update the screenshot upload handler" can never look like vision.
+MUTATION = re.compile(
+    r"\b(implement|refactor|edit|fix|write|add|remove|delete|drop|rename|change|update|patch|modify|"
+    r"create|build|migrate|replace|rewrite|port|install|deploy|merge|revert|commit|push|apply|insert|"
+    r"append|improve|optimi[sz]e|clean|bump|upgrade|wire|make|generate|configure|tweak|move|handle|"
+    r"support|enable|disable|set up)\w*",
+    re.I,
+)
+
+# Explicit read-only signals. Without one of these the task is not free-eligible.
+READ_ONLY = re.compile(
+    r"\b(find|search|locate|list|explore|scout|map (the )?codebase|where is|show|read|summari[sz]e|"
+    r"what|how|why|explain|describe|review|lint|audit|best practices?|style guide|"
+    r"analy[sz]e|inspect|look (up|at))\b",
+    re.I,
+)
+
+# Looking at media: a read-only verb directly in front of the media noun, and the
+# noun not the head of a code phrase ("screenshot upload handler").
+VISION = re.compile(
+    r"\b(analy[sz]e|describe|inspect|look at|read|explain|review|summari[sz]e|what(?:'s| is) in)\s+"
+    r"(?:(?:this|the|that|my|these|attached)\s+)?"
+    r"(?:screenshots?|screencasts?|videos?|images?|photos?|pictures?|ui mock(?:up)?s?)\b"
+    r"(?!\s+(?:upload|handler|parser|validation|bug|code|function|module|endpoint|player|component|"
+    r"pipeline|processor|encoder|decoder|api|service|test|tests|logic|renderer|worker))",
+    re.I,
+)
+REVIEW = re.compile(r"\b(review|lint|audit|best practices?|style guide)\b", re.I)
+
+DEFAULT_CLASS = "code"  # ZDR; no recognised signal means do not send it to a free model
 
 LLM_PROMPT = """Classify the following task into exactly one of these classes:
 scout, review, bulk, code, hard-reasoning, vision, ultrabrain.
@@ -50,17 +76,25 @@ Reply with ONLY the class name, nothing else."""
 
 
 def fast_classify(task: str) -> str | None:
-    for cls, pat in FAST_RULES:
+    for cls, pat in STRONG_RULES:
         if pat.search(task):
             return cls
-    return None
+    if MUTATION.search(task):
+        return "code"
+    if not READ_ONLY.search(task):
+        return None
+    if VISION.search(task):
+        return "vision"
+    if REVIEW.search(task):
+        return "review"
+    return "scout"
 
 
 def classify(task: str) -> dict:
     cls = fast_classify(task)
     source = "fast-path"
     if cls is None:
-        cls, source = DEFAULT_CLASS, "default-free"
+        cls, source = DEFAULT_CLASS, "default-zdr"
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     route = schema["task_classes"][cls]
     return {

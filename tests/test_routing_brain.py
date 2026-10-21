@@ -129,7 +129,7 @@ class Classifier(unittest.TestCase):
         "find the reason this import fails": "scout",
         "list all files in src": "scout",
         "summarize README": "scout",
-        "hello there": "scout",
+        "hello there": "code",
         "write a novel caching layer": "code",
         "refactor the auth module": "code",
         "review this PR for style": "review",
@@ -143,10 +143,10 @@ class Classifier(unittest.TestCase):
         for task, want in self.CASES.items():
             self.assertEqual(route_classifier.classify(task)["class"], want, task)
 
-    def test_unmatched_text_defaults_to_free(self):
+    def test_unmatched_text_defaults_to_a_zdr_class(self):
         c = route_classifier.classify("zzz qqq")
-        self.assertEqual(c["source"], "default-free")
-        self.assertEqual(SCHEMA["task_classes"][c["class"]]["cost_ceiling_usd"], 0)
+        self.assertEqual(c["source"], "default-zdr")
+        self.assertTrue(SCHEMA["task_classes"][c["class"]]["zdr_required"])
 
 
 class WeeklyReview(TmpLedger):
@@ -285,9 +285,13 @@ class BudgetReservation(TmpLedger):
         self.assertEqual(route_executor.reserved_usd(), 0.0)
         self.assertAlmostEqual(route_executor.month_paid_spend(), 0.05)
 
-    def test_stale_reservation_expires(self):
-        route_executor.reserve("code", self.GLM, 0.20)
+    def test_stale_reservation_keeps_counting_until_reconciled(self):
+        res = route_executor.reserve("code", self.GLM, 0.20)
         later = datetime.now(timezone.utc) + timedelta(seconds=route_executor.RESERVATION_TTL_S + 5)
+        self.assertAlmostEqual(route_executor.reserved_usd(now=later), 0.20)
+        states = {r["id"]: r["status"] for r in route_executor.reservations(now=later)}
+        self.assertEqual(states[res["reservation_id"]], "expired-unsettled")
+        route_executor.release_reservation(res["reservation_id"], "caller confirmed the call never ran")
         self.assertEqual(route_executor.reserved_usd(now=later), 0.0)
 
     def test_free_models_reserve_nothing(self):
@@ -409,7 +413,9 @@ class OmoSlotCoverage(unittest.TestCase):
         cats = gen_omo_config.build(SCHEMA)["[opencode]"]["categories"]
         for cat, v in cats.items():
             self.assertIn("fallback_models", v, cat)
-        self.assertEqual(cats["bulk-extraction"]["fallback_models"], [])
+        # Never empty for a ZDR class: OmO turns [] into undefined and then inherits
+        # the delegating agent's (free) fallbacks. A singleton chain repeats its primary.
+        self.assertEqual(cats["bulk-extraction"]["fallback_models"], [cats["bulk-extraction"]["model"]])
 
     def test_zdr_categories_never_list_a_non_zdr_fallback(self):
         cats = gen_omo_config.build(SCHEMA)["[opencode]"]["categories"]
@@ -419,6 +425,208 @@ class OmoSlotCoverage(unittest.TestCase):
                 for m in [cats[cat]["model"], *cats[cat]["fallback_models"]]:
                     name = m["model"] if isinstance(m, dict) else m
                     self.assertIn(name, safe, (cat, name))
+
+
+class OmoNormalizationCollapse(unittest.TestCase):
+    """OmO's applyDisabledProviders() turns an empty fallback_models list into undefined,
+    and resolution then inherits the delegating agent's fallbacks (free models)."""
+
+    @staticmethod
+    def _collapse(fallbacks):
+        return fallbacks if fallbacks else None
+
+    def test_no_zdr_category_can_collapse_to_inherited_free_fallbacks(self):
+        cats = gen_omo_config.build(SCHEMA)["[opencode]"]["categories"]
+        safe = route_executor.zdr_models(SCHEMA)
+        for cat, cls in gen_omo_config.CATEGORY_MAP.items():
+            if not SCHEMA["task_classes"][cls]["zdr_required"]:
+                continue
+            kept = self._collapse(cats[cat]["fallback_models"])
+            self.assertIsNotNone(kept, cat)
+            for m in kept:
+                self.assertIn(m["model"] if isinstance(m, dict) else m, safe, (cat, m))
+
+
+class ClassifierFailClosed(unittest.TestCase):
+    CODING = [
+        "update the screenshot upload handler",
+        "patch the video parser",
+        "add screenshot upload validation",
+        "remove the audit endpoint",
+        "add a screenshot test",
+        "patch the video audit",
+        "delete the lint step from the pipeline",
+        "the upload handler crashes on large screenshots",
+        "migrate the audit table",
+    ]
+    READ_ONLY = {
+        "analyze this screenshot": "vision",
+        "review this PR for style": "review",
+        "audit the dependency list": "review",
+        "find the reason this import fails": "scout",
+        "explain the multimodal parser": "scout",
+    }
+
+    def test_coding_requests_with_media_or_audit_nouns_stay_zdr(self):
+        for task in self.CODING:
+            c = route_classifier.classify(task)
+            self.assertTrue(c["zdr_required"], (task, c["class"]))
+
+    def test_explicit_read_only_requests_may_use_free_classes(self):
+        for task, want in self.READ_ONLY.items():
+            self.assertEqual(route_classifier.classify(task)["class"], want, task)
+
+    def test_text_with_no_signal_is_zdr(self):
+        self.assertTrue(route_classifier.classify("zzz qqq")["zdr_required"])
+
+
+class ReservationBinding(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+    FLASH = "vercel/deepseek/deepseek-v4.1-flash"
+    FREE = "opencode/mimo-v2.6-flash-free"
+
+    def _age_reservations(self, seconds):
+        path = Path(self.tmp.name) / "reservations.jsonl"
+        out = []
+        for line in path.read_text(encoding="utf-8").splitlines():
+            e = json.loads(line)
+            if e.get("kind") == "reserve":
+                e["ts"] = (datetime.fromisoformat(e["ts"]) - timedelta(seconds=seconds)).isoformat()
+            out.append(json.dumps(e))
+        path.write_text("\n".join(out) + "\n", encoding="utf-8")
+
+    def test_expiry_does_not_release_budget_for_a_possibly_running_call(self):
+        with patch.object(route_executor, "month_paid_spend", return_value=79.50):
+            route_executor.reserve("code", self.GLM, 0.50)
+            self._age_reservations(route_executor.RESERVATION_TTL_S)
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.reserve("code", self.GLM, 0.50)
+
+    def test_late_settle_replaces_the_hold_and_never_adds(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        self._age_reservations(route_executor.RESERVATION_TTL_S + 60)
+        route_executor.record_receipt("code", self.GLM, False, 0.30, 10, True,
+                                      reservation_id=res["reservation_id"])
+        self.assertEqual(route_executor.reserved_usd(), 0.0)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.30)
+
+    def test_unrelated_receipt_cannot_settle_a_reservation(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("scout", self.FREE, False, 0, 5, True,
+                                          reservation_id=res["reservation_id"])
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.FLASH, True, 0.01, 5, True,
+                                          reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
+        self.assertFalse(self.ledger.exists())
+
+    def test_unknown_and_already_settled_ids_are_refused(self):
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.GLM, False, 0.01, 5, True, reservation_id="nope")
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True,
+                                      reservation_id=res["reservation_id"])
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.GLM, False, 0.10, 5, True,
+                                          reservation_id=res["reservation_id"])
+
+    def test_spend_plus_holds_never_pass_the_cap_after_a_mismatch_attempt(self):
+        cap = SCHEMA["token_pass"]["hard_cap_usd"]
+        with patch.object(route_executor, "month_paid_spend", return_value=cap - 0.50):
+            res = route_executor.reserve("code", self.GLM, 0.50)
+            with self.assertRaises(ValueError):
+                route_executor.record_receipt("scout", self.FREE, False, 0, 5, True,
+                                              reservation_id=res["reservation_id"])
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.reserve("code", self.GLM, 0.50)
+
+
+class SubMicroEstimates(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+
+    def test_tiny_estimates_are_rounded_up_and_still_consume_headroom(self):
+        cap = SCHEMA["token_pass"]["hard_cap_usd"]
+        admitted = 0
+        with patch.object(route_executor, "month_paid_spend", return_value=cap - 0.000001):
+            for _ in range(10):
+                try:
+                    route_executor.reserve("code", self.GLM, 0.0000004)
+                    admitted += 1
+                except route_executor.BudgetError:
+                    pass
+            self.assertEqual(admitted, 1)
+            self.assertAlmostEqual(route_executor.reserved_usd(), 0.000001, places=9)
+
+
+class UnusableSharedRoot(unittest.TestCase):
+    GLM = "vercel/zai/glm-5.3"
+
+    def _env(self):
+        return {k: v for k, v in os.environ.items() if k != "STARLIGHT_RECEIPTS_DIR"}
+
+    def test_paid_admission_is_refused_but_free_calls_still_work(self):
+        schema = {**SCHEMA, "receipts": {"root": "C:/not/absolute/on/this/os/../relative"}}
+        schema["receipts"]["root"] = "relative/or/foreign"
+        with patch.dict(os.environ, self._env(), clear=True), \
+                patch.object(route_executor, "load_schema", return_value=schema):
+            for fn in (route_executor.preflight, route_executor.reserve):
+                with self.assertRaises(route_executor.BudgetError) as cm:
+                    fn("code", self.GLM, 0.1)
+                self.assertIn("shared", str(cm.exception).lower())
+            free = route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", None)
+            self.assertEqual(free["model"], "opencode/mimo-v2.6-flash-free")
+
+    def test_env_override_counts_as_a_usable_root(self):
+        with tempfile.TemporaryDirectory() as d, patch.dict(os.environ, {"STARLIGHT_RECEIPTS_DIR": d}):
+            self.assertTrue(route_executor.shared_root_usable())
+
+
+class LockContention(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+
+    def test_reserve_turns_a_lock_timeout_into_a_budget_error(self):
+        import contextlib
+
+        @contextlib.contextmanager
+        def busy(_path):
+            raise TimeoutError("could not lock")
+            yield
+
+        with patch.object(route_executor, "_locked", busy):
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.reserve("code", self.GLM, 0.1)
+
+    def test_cli_exits_2_without_a_traceback_when_the_ledger_is_busy(self):
+        self.tmp_ledger = Path(self.tmp.name) / "routing.jsonl"
+        env = {**os.environ, "STARLIGHT_RECEIPTS_DIR": self.tmp.name, "STARLIGHT_LOCK_TIMEOUT_S": "0.3"}
+        with route_executor._locked(self.tmp_ledger):
+            p = subprocess.run([sys.executable, "-I", "-B", str(FLEET / "route_task.py"),
+                                "refactor the auth module", "--preflight", "--est-cost", "0.2"],
+                               capture_output=True, text=True, env=env)
+        self.assertEqual(p.returncode, 2, p.stderr)
+        self.assertNotIn("Traceback", p.stderr)
+
+
+class OverflowingCosts(TmpLedger):
+    def test_weekly_review_counts_an_overflowing_cost_as_malformed(self):
+        base = {"ts": datetime.now(timezone.utc).isoformat(), "task_class": "code",
+                "used": "vercel/zai/glm-5.3", "success": True, "latency_ms": 5}
+        lines = [json.dumps({**base, "cost_usd": 0.1}),
+                 '{"ts": "%s", "task_class": "code", "used": "vercel/zai/glm-5.3", "success": true, '
+                 '"latency_ms": 5, "cost_usd": 1%s}' % (base["ts"], "0" * 309),
+                 json.dumps({**base, "cost_usd": 1e12})]
+        self.ledger.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(len(got), 1)
+        self.assertEqual(skipped["malformed"], 2)
+
+    def test_spend_scan_and_receipts_survive_an_overflowing_cost(self):
+        self.ledger.write_text('{"ts": "%s", "used": "vercel/zai/glm-5.3", "cost_usd": 1%s}\n'
+                               % (datetime.now(timezone.utc).isoformat(), "0" * 309), encoding="utf-8")
+        self.assertEqual(route_executor.month_paid_spend(), 0.0)
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", "vercel/zai/glm-5.3", False, 10 ** 309, 5, True)
 
 
 if __name__ == "__main__":
