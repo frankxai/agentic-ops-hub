@@ -23,7 +23,7 @@ products than any amount of new code.
 | Vercel projects with revenue (S4/S5) | 0 of 62 | lifecycle snapshot, 13 Oct |
 | Priced products that cannot be bought | frankx.ai 15 SKUs all waitlisted; agenticincome 7 SKUs gated on Polar (readiness 503); realityarchitect $39 edition closed; arcanea.ai edition unavailable; gencreator.ai checkout on hold | same snapshot |
 | Open PRs, the 57 repos in this session | about 360 (agentic-ops-hub 85, Starlight-Intelligence-System 32, gencreator.ai 30, frankx.ai 23, arcanea-ai-app 22, starlightintelligence.ai 18) | inventories, 21 Oct |
-| Open PRs, whole frankxai account | 801 on 17 Oct against a budget of 10 per repository | `sessions/2026-10-17.md` |
+| Open PRs, whole frankxai account | 803 on 17 Oct against a budget of 10 per repository | `sessions/2026-10-17.md` |
 | Drafts | about three in four | inventories |
 | Harnesses opening PRs | Codex, Claude (plus remote sessions), Grok, Antigravity, Jules, Gemini, Cursor, Copilot | head-ref prefixes |
 | One overnight fan-out | the remote session branch `ccr-30cf70e3-tha5nf` holds open drafts in 17 repositories | inventories |
@@ -148,6 +148,6 @@ worktrees that are clean, merged, bundled and unclaimed, and writes a receipt pe
 |---|---|---|---|
 | Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Payment Link checkout in #180 | Polar organization, products and webhook secret; finish Stripe business and bank onboarding for payouts |
 | Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` and the handover prompt | None |
-| Runners | Personal-account Actions budget for November, cost cuts merged first | Recommendation only | Set the budget in GitHub billing; Railway toggle (#147) stays the fallback |
-| Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read |
+| Runners | Personal-account Actions budget for November, cost cuts merged first | Recommendation only | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
+| Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read |
 | Archive batch 1 | ai-architectures-observatory, oci-ai-architects/oci-ai-life-sciences | Not done: archiving is a human-only action under the federation rules | Archive both in repository settings |
