@@ -132,6 +132,11 @@ memory. What estate-guard adds for a multi-machine, multi-harness fleet:
 
 ## Rollout
 
+> **Held until 20 November 2026.** The estate focus window (`AGENTS.md` guardrail 7,
+> `ops/plans/estate-convergence-2026-10-21.md`) forbids one-branch fan-outs across repositories, and most of the repos in
+> waves 2 to 4 are frozen. Until then `scripts/estate-guard-rollout.sh` refuses to run without `--dry-run`, and the waves
+> below are not open. A security fix one repository needs goes through the drain owner as one narrowly scoped PR.
+
 | Wave | Repos | Mode | Status |
 |---|---|---|---|
 | 1 | `claude-skills-library` (source), `agentic-ops-hub` (control plane), `arcanea-ai-app` (highest exposure: public, 206 routes, 30 workflows, comment-triggered agent) | full | PRs open 2026-10-05 |

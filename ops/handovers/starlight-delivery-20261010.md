@@ -4,7 +4,7 @@ what: Starlight: review and release Supabase auth, then prove live account activ
 where: prompt below
 owner: unknown
 status: open-unverified
-note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): starlightintelligence.ai is on the spine, but PR110 waits behind drain step 3 of ops/plans/estate-convergence-2026-10-21.md (that repository's order is #180, #175, #174, #177) and is then reviewed against the new main; it is draft and conflicted on 21 Oct; not reconciled since the split
 updated: 2026-10-21
 ---
 

@@ -73,9 +73,9 @@ The same product exists more than once:
    `https://buy.polar.sh/polar_cl_<id>` beside founders' Stripe Payment Links since `536f9dd`), and one managed run is
    settled on the budget ledger for a funded tenant. This is the platform bet; it depends on 1.
 
-**Hold** (security, bugs and the named S4 gate only, no new features): gencreator.ai (Companion alpha stays on hold),
-arcanea-ai-app (the EUR 99 edition only once a buyer asks), Starlight-Intelligence-System (substrate fixes and the pricing
-page's TODO links).
+**Hold** (security, bugs, the named S4 gate and the drain owner's draft-CI PR only, no new features): gencreator.ai
+(Companion alpha stays on hold), arcanea-ai-app (the EUR 99 edition only once a buyer asks), Starlight-Intelligence-System
+(substrate fixes and the pricing page's TODO links).
 
 **Freeze** (no agent lanes for 30 days, open PRs parked or closed with a reopen note): the mind, ocean, music and payment
 intelligence repositories, the `awesome-*` catalogs, starlight-cosmos-engine, vibe-os, the academies, the OCI skill
@@ -92,7 +92,7 @@ repositories, starlight-swarm and starlight-factory.
 | Starlight-Intelligence-System | Substrate and pricing page; hold rules | 3 |
 | claude-skills-library | Source of the gates every repository installs | 3 |
 | agentic-ops-hub | This record; drain only | 3 |
-| gencreator.ai, arcanea-ai-app | Hold: security and S4 gate only | 2 each |
+| gencreator.ai, arcanea-ai-app | Hold: security, S4 gate and the draft-CI PR only | 2 each |
 
 Every other repository is read-only to agents until 20 November. A security fix a frozen repository needs goes through the
 drain owner, not a new lane: the drain owner may open and merge it, one narrowly scoped PR per fix. The drain owner may also
@@ -114,8 +114,8 @@ armed.
   already armed with `gh pr merge --auto`, so drain step 1 disables those first.
 - **Drafts do not run CI.** Copy gencreator.ai's pattern (drafts defer every job; `ready_for_review` starts them) to each
   spine repository. Three in four PRs are drafts, so this is the largest single cut in Actions minutes. The drain owner may
-  open one PR per spine repository for this rule even when that repository is over its cap; it is drain step 1, not new
-  work.
+  open one PR per spine repository for this rule even when that repository is over its cap or on hold; it is drain step 1,
+  not new work.
 - **No new repositories, Vercel projects or cross-repo fan-outs** (one branch opening drafts in many repositories) for 30
   days. The drain owner's draft-CI PRs (one per spine repository) and security-fix PRs are the named exceptions.
 - **Budgets hold.** 10 open PRs per repository estate-wide, the caps above on the spine. A repository over budget gets no new
@@ -138,7 +138,9 @@ armed.
    account). Check that each cited advisory ID exists before merging.
 3. Spine PRs in dependency order. For starlightintelligence.ai: #180 (launch factory, now carrying #183 and #187), then #175
    (default-off; its funding fixes land before `STARLIGHT_COMMERCE_ENABLED` is set), then #174 (docs hub) and #177 (import
-   integrity). Three PRs wait for Frank, not for the drain:
+   integrity). Every other open starlightintelligence.ai PR, among them #110 (Supabase email sign-in, draft, conflicted),
+   waits until those four have landed and is then reviewed against the new main, except three that wait for Frank, not
+   for the drain:
    - #172 makes the Starlight Kernel the homepage product and publishes `/waitlist` for the first time. It needs Frank's
      `surface-approved` label, the waitlist's KV environment variable on Vercel, and the runtime decision under
      consolidation proposals below, since it presumes the Kernel.
