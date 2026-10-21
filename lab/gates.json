@@ -64,6 +64,22 @@
       "owner": "claude",
       "status": "open",
       "why": "Isolated place to run harnesses we do not want installed on the YELLOW-zone laptop."
+    },
+    {
+      "id": "dec-receipt-schema",
+      "kind": "decision",
+      "title": "Rule on one receipt schema: SIS run-receipt v1 as the envelope, Routing Brain fields as an extension",
+      "owner": "frank",
+      "status": "open",
+      "why": "Three receipt formats exist (routing.jsonl, SIS run-receipt v1, Queen's signed receipt). One verifier needs one format. See ops/plans/2026-10-21-product-prd-ard-funnel.md section 3."
+    },
+    {
+      "id": "dec-open-core",
+      "kind": "decision",
+      "title": "Rule on the open-core boundary, licence and trademark for the receipts product",
+      "owner": "frank",
+      "status": "open",
+      "why": "No ruling found in the estate. Recommendation: open spec, verifier, free profile; closed hosted ledger and aggregate data. See the product plan section 7."
     }
   ]
 }
