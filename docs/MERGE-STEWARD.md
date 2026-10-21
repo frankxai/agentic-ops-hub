@@ -1,8 +1,8 @@
 # Merge Steward
 
-> **Not in use until 20 November 2026.** During the estate focus window, pr-gate is the only merge mechanism
+> **Not in use through 20 November 2026.** During the estate focus window, pr-gate is the only merge mechanism
 > (`ops/plans/estate-convergence-2026-10-21.md`). Do not install the App, add a workflow or enable live mode before
-> 20 November, unless Frank revises that ruling earlier. After 20 November this hold ends.
+> 21 November, unless Frank revises that ruling earlier. The hold ends on 21 November.
 
 **Problem.** Agents open more PRs than one person can review. Green, low-risk PRs (a docs fix, a patch bump) wait days for Frank's click, while a PR that changes payouts gets the same one-line glance.
 

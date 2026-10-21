@@ -13,7 +13,7 @@ one drain owner and a drain order for when runners return. Five founder decision
 <!-- estate-convergence-rulings-20261021:start -->
 ## Convergence rulings: Polar rail, nine-repository spine, wave 1 of closes
 
-Frank delegated the five decisions. Polar is the rail for his own sales, the spine holds until 20 November (now in
+Frank delegated the five decisions. Polar is the rail for his own sales, the spine holds through 20 November (now in
 `AGENTS.md`), and 11 stale PRs closed with their branches kept: nine in frozen repositories, two in starlightintelligence.ai. Polar and Stripe account setup, Polar's approval of each AI-generation offering, the
 Actions budget, two archives, a Codex cloud environment for starlightintelligence.ai and the `ESTATE_AUTONOMY` levels wait on Frank's accounts. Merged on starlightintelligence.ai `main` at 20:48Z by the frankxai account: #188 (lint in CI) and #167 (Dependabot minor and patch). Details in [the session](sessions/2026-10-21.md).
 <!-- estate-convergence-rulings-20261021:end -->

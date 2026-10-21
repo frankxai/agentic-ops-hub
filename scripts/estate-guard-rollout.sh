@@ -21,9 +21,9 @@ while [ $# -gt 0 ]; do
     *) echo "unknown flag: $1" >&2; exit 2 ;;
   esac; shift
 done
-# The estate focus window (AGENTS.md guardrail 7) forbids one-branch fan-outs across repositories until 20 November 2026.
+# The estate focus window (AGENTS.md guardrail 7) forbids one-branch fan-outs across repositories through 20 November 2026.
 if [ $DRY -eq 0 ] && [ "$(date -u +%Y%m%d)" -lt 20261121 ]; then
-  echo "Held until 20 November 2026 by the estate focus window (AGENTS.md guardrail 7). Nothing was changed; --dry-run still works." >&2
+  echo "Held through 20 November 2026 by the estate focus window (AGENTS.md guardrail 7). Nothing was changed; --dry-run still works." >&2
   exit 1
 fi
 PACK="${ESTATE_GUARD_PACK:-}"

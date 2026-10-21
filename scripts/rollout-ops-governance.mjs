@@ -39,7 +39,7 @@ const APPLY = args.includes('--apply');
 const FOCUS_WINDOW_ENDS = Date.parse('2026-11-21T00:00:00Z');
 const HELD = Date.now() < FOCUS_WINDOW_ENDS;
 if (APPLY && HELD) {
-  console.error('Held until 20 November 2026 by the estate focus window (AGENTS.md guardrail 7). Nothing was opened.');
+  console.error('Held through 20 November 2026 by the estate focus window (AGENTS.md guardrail 7). Nothing was opened.');
   process.exit(1);
 }
 const only = args.includes('--repo') ? args[args.indexOf('--repo') + 1] : null;
@@ -78,5 +78,5 @@ for (const t of targets) {
   console.log('    ✓ draft PR opened\n');
 }
 
-if (!APPLY) console.log(HELD ? 'Held until 20 November 2026 by the estate focus window: do not run these steps or --apply before then.'
+if (!APPLY) console.log(HELD ? 'Held through 20 November 2026 by the estate focus window: do not run these steps or --apply before then.'
   : 'Re-run with --apply to open the draft PRs (nothing merges automatically).');

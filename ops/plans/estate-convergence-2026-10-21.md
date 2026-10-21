@@ -94,7 +94,7 @@ repositories, starlight-swarm and starlight-factory.
 | agentic-ops-hub | This record; drain only | 3 |
 | gencreator.ai, arcanea-ai-app | Hold: security, S4 gate and the draft-CI PR only | 2 each |
 
-Every other repository is read-only to agents until 20 November. A security fix a frozen repository needs goes through the
+Every other repository is read-only to agents through 20 November. A security fix a frozen repository needs goes through the
 drain owner, not a new lane: the drain owner may open and merge it, one narrowly scoped PR per fix. The drain owner may also
 merge the two cost-cut PRs named below, close PRs on the approved close list, and disable auto-merges the estate guardian
 armed.
@@ -105,7 +105,7 @@ armed.
   second lane that closes PRs without recording them is stopped.
 - **One merge mechanism: pr-gate.** The maker never checks its own head; the checker signs the exact head, and a new commit
   voids the sign-off. Claude-written spine PRs are checked by Codex, Grok or Antigravity and merged by a non-Claude harness or
-  Frank. The other two paths are held until 20 November, or earlier if Frank revises this ruling: the Merge Steward docs
+  Frank. The other two paths are held through 20 November, unless Frank revises this ruling earlier: the Merge Steward docs
   (`docs/MERGE-STEWARD.md` and its rollout) carry a "not in use" banner, and no repository runs `estate-pr-guardian` at
   `ESTATE_AUTONOMY=auto`, whose trivial-tier auto-merge would bypass pr-gate (`docs/ESTATE-OPS-GOVERNANCE.md` says so).
   Frozen and hold repositories run `off`, because `assist` lets a maintainer's `@estate fix` push commits; the rest run at
@@ -149,7 +149,7 @@ armed.
    - #185 adds `/meet/frank`, `/connect` and the `/c/*` card redirects. It has no READY preview yet (both builds failed the
      homepage film check), and the new cards are not printed until those routes serve in production.
 4. Dependabot minor and patch groups in the spine repositories that are not on hold. Hold repositories (gencreator.ai,
-   arcanea-ai-app, Starlight-Intelligence-System) and frozen repositories take only security updates until 20 November. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
+   arcanea-ai-app, Starlight-Intelligence-System) and frozen repositories take only security updates through 20 November. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
 5. Close, each with a one-line reason and "reopen if still needed": PRs older than 30 days outside the spine, except
    agentic-income-template#8, which was reopened on purpose on 10 September to keep its work; the drafts from
    the `ccr-30cf70e3-tha5nf` fan-out in frozen repositories; duplicate cross-repo pointer and error-boundary PRs. The existing
@@ -186,7 +186,7 @@ worktrees that are clean, merged, bundled and unclaimed, and writes a receipt pe
 | Decision | Ruling | Done | Needs Frank's account |
 |---|---|---|---|
 | Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Stripe Payment Link and Polar checkout link support in #180 | Polar organization, products and webhook secret, and Polar's approval of the merchant and each AI-generation offering; finish Stripe business and bank onboarding for payouts; a Codex cloud environment for starlightintelligence.ai, so Codex can make #175's funding fixes |
-| Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` (guardrail 7) and the handover prompt | Set `ESTATE_AUTONOMY` where estate-pr-guardian is installed: `off` in frozen and hold repositories, at most `assist` elsewhere |
+| Spine | The table above, through 20 November | Focus window added to this repository's `AGENTS.md` (guardrail 7) and the handover prompt | Set `ESTATE_AUTONOMY` where estate-pr-guardian is installed: `off` in frozen and hold repositories, at most `assist` elsewhere |
 | Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Ruled; the budget itself is not set yet, and waits until `ESTATE_AUTONOMY` is lowered and armed auto-merges are disabled | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
 | Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read; it is pinned by path and commit in the ledger before use |
 | Archive batch 1 | ai-architectures-observatory, oci-ai-architects/oci-ai-life-sciences | Not done: archiving is a human-only action under the federation rules | Archive both in repository settings |

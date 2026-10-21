@@ -1,6 +1,6 @@
 # Estate Ops — Activation
 
-> **Held until 20 November 2026.** The estate focus window (`ops/plans/estate-convergence-2026-10-21.md`) keeps pr-gate as
+> **Held through 20 November 2026.** The estate focus window (`ops/plans/estate-convergence-2026-10-21.md`) keeps pr-gate as
 > the only merge mechanism: no rollout PRs, no `ESTATE_AUTONOMY=auto`, and `off` in frozen and hold repositories. `scripts/rollout-ops-governance.mjs --apply`
 > refuses to run until then, unless Frank revises the ruling earlier.
 

@@ -132,7 +132,7 @@ memory. What estate-guard adds for a multi-machine, multi-harness fleet:
 
 ## Rollout
 
-> **Held until 20 November 2026.** The estate focus window (`AGENTS.md` guardrail 7,
+> **Held through 20 November 2026.** The estate focus window (`AGENTS.md` guardrail 7,
 > `ops/plans/estate-convergence-2026-10-21.md`) forbids one-branch fan-outs across repositories, and most of the repos in
 > waves 2 to 4 are frozen. Until then `scripts/estate-guard-rollout.sh` refuses to run without `--dry-run`, and the waves
 > below are not open. A security fix one repository needs goes through the drain owner as one narrowly scoped PR.
