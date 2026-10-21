@@ -258,8 +258,8 @@ a { color: var(--accent); }
 .eyebrow { font-family: var(--font-data); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 header { display: flex; flex-direction: column; gap: 10px; }
 .north { font-size: 1.1rem; max-width: 70ch; }
-.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-.grid.wide { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); }
+.grid.wide { grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
 .pill { display: inline-block; font-family: var(--font-data); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--ink); white-space: nowrap; }
 .pill.running { background: var(--ok); color: var(--accent-ink); }
@@ -273,9 +273,10 @@ header { display: flex; flex-direction: column; gap: 10px; }
 .seg i.running { background: var(--ok); } .seg i.ready { background: var(--accent); } .seg i.blocked { background: var(--warn); }
 .seg i.concluded { background: var(--ink); } .seg i.killed { background: var(--crit); }
 .attention { display: flex; flex-direction: column; gap: 8px; }
-.attention li { list-style: none; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 10px 12px; border-left: 3px solid var(--warn); background: var(--surface); border-radius: 0 6px 6px 0; }
+.attention li { min-width: 0; overflow-wrap: anywhere; list-style: none; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 10px 12px; border-left: 3px solid var(--warn); background: var(--surface); border-radius: 0 6px 6px 0; }
 .attention ul { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
 .attention .unblocks { grid-column: 2; }
+.attention .pill { align-self: start; justify-self: start; }
 .card header { flex-direction: row; justify-content: space-between; align-items: baseline; gap: 8px; }
 .kv { display: grid; grid-template-columns: 7.5rem 1fr; gap: 4px 10px; font-size: 0.88rem; }
 .kv dt { color: var(--muted); } .kv dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
