@@ -19,7 +19,7 @@ October; the last table of the plan says what is done and what waits on Frank's 
 2. The rail is Polar, so starlightintelligence.ai#175 needs offers that may grant `starlight.factory`, refund revoking the
    entitlement, a dispute rule and one sandbox purchase-to-run receipt before `STARLIGHT_COMMERCE_ENABLED` is set anywhere.
    Codex cannot edit that branch until Frank creates a Codex cloud environment for starlightintelligence.ai.
-3. When runners return, drain in the plan's order: cost cuts and the draft-CI rule, security PRs (list in the founder's private
-   plan), spine PRs, Dependabot minor/patch, then the approved close sweep. Record every close and merge in this ledger the
-   same day.
+3. Once Frank sets the Actions budget, drain in the plan's order: cost cuts and the draft-CI rule, security PRs (the plan
+   names the private document that lists them), spine PRs, spine Dependabot minor/patch, then the approved close sweep.
+   Record every close and merge in this ledger the same day.
 4. Do not open PRs outside the spine table until 20 November unless Frank names the repository.

@@ -48,17 +48,18 @@ The same product exists more than once:
 ## Goals, in order
 
 1. **The rail is live (week 1).** One merchant of record for Frank's own digital sales. This unblocks every gated SKU above at
-   once. Recommendation: Polar, which the 13 October snapshot already proposes for frankx.ai, agenticincome, realityarchitect
+   once. Ruled 21 October: Polar, which the 13 October snapshot already proposes for frankx.ai, agenticincome, realityarchitect
    and the SIS pricing page, and which starlightintelligence.ai#163 already verifies. Polar pays out through Stripe, so the
-   Stripe account still needs its business and bank onboarding finished. Stripe Managed Payments is the alternative if
-   Frank's account is eligible; that needs one check in the Stripe dashboard. Plain Stripe Checkout or Billing for Frank's own
-   sales is not recommended: it makes the BV the seller of record, so it registers and files EU VAT (OSS) and handles US sales
-   tax itself. Stripe still has a role: founders who build with the launch factory sell through their own Stripe Payment Link,
-   with their own account as merchant (starlightintelligence.ai#180).
+   Stripe account still needs its business and bank onboarding finished. Stripe Managed Payments was the alternative
+   considered. Plain Stripe Checkout or Billing for Frank's own sales was not chosen: it makes the BV the seller of record,
+   so it registers and files EU VAT (OSS) and handles US sales tax itself. Stripe still has a role: founders who build with
+   the launch factory sell through their own Stripe Payment Link, with their own account as merchant
+   (starlightintelligence.ai#180).
 
-   The repository records disagree today and need one ruling: starlightintelligence.ai `docs/ROADMAP.md` says "Settled:
-   Polar", its `README.md` names Stripe plus Metronome as the proposed target, and `docs/FOUNDATIONAL_TECH_DECISIONS.md` says
-   Stripe. For Starlight's own credits, #175 is the Polar boundary (signed webhooks, idempotent grants on the existing ledger,
+   The ruling settles a disagreement in the starlightintelligence.ai records: `docs/ROADMAP.md` says "Settled: Polar", its
+   `README.md` names Stripe plus Metronome as the proposed target, and `docs/FOUNDATIONAL_TECH_DECISIONS.md` says Stripe. The
+   README and the decisions file still need a docs fix to match. For Starlight's own credits, starlightintelligence.ai#175 is
+   the Polar boundary (signed webhooks, idempotent grants on the existing ledger,
    default off). Before it takes money it needs: offers that can grant `starlight.factory` (today only `starlight.curator`,
    so a buyer could not start a factory run), refund revoking the entitlement, a dispute rule, and one sandbox
    purchase-to-run receipt.
@@ -66,7 +67,8 @@ The same product exists more than once:
    (agenticpassiveincome folds into it, as the snapshot proposes). frankx.ai analytics were broken from July until
    frankx.ai-vercel-website#1068; the first week of real numbers decides which offer leads.
 3. **Starlight's first customer-validated launch (by 20 November).** The launch factory builds Starlight's own founding-offer
-   page, with a `checkout` call to action pointing at a Payment Link (the factory's own feature), and one managed run is
+   page, with a `checkout` call to action pointing at a Polar checkout link (the factory accepts Polar checkout links and
+   founders' Stripe Payment Links), and one managed run is
    settled on the budget ledger for a funded tenant. This is the platform bet; it depends on 1.
 
 **Hold** (security, bugs and the named S4 gate only, no new features): gencreator.ai (Companion alpha stays on hold),
@@ -91,7 +93,8 @@ repositories, starlight-swarm and starlight-factory.
 | gencreator.ai, arcanea-ai-app | Hold: security and S4 gate only | 2 each |
 
 Every other repository is read-only to agents until 20 November. A PR a frozen repository needs for security goes through the
-drain owner, not a new lane.
+drain owner, not a new lane. The drain owner may also merge the two cost-cut PRs named below and close PRs on the approved
+close list.
 
 ## Operating rules for the 30 days
 
@@ -107,16 +110,21 @@ drain owner, not a new lane.
 - **Budgets hold.** 10 open PRs per repository estate-wide, the caps above on the spine. A repository over budget gets no new
   PR from any harness.
 
-## When runners return: the drain, in order
+## The drain, in order
 
-1. Merge the Actions cost cuts already drafted (gencreator.ai#253, arcanea-platform#47) and the draft-CI rule above; then set
-   the personal-account budget for one drain month.
-2. Security PRs first: Next.js advisory upgrades and the open security fixes in five repositories. The list is in the private
-   plan, not here, because some of these repositories are live and private.
+1. Runners first. Frank sets a bounded personal-account Actions budget for one drain month; the Railway `CI_RUNNER` toggle
+   drafts are the fallback. No drain step can run CI before this. The first minutes go to the Actions cost cuts already
+   drafted (gencreator.ai#253, arcanea-platform#47) and the draft-CI rule above, which merge before any other PR runs CI.
+2. Security PRs: Next.js advisory upgrades and the open security fixes in five repositories. The list is not here, because
+   some of these repositories are live and private. It is in step 2 of the drain order in Frank's private Claude Docs
+   document "Estate convergence: decisions" (https://claude.ai/artifact/Lkmk7X4qBygrq8zh1psFrT, readable only from Frank's
+   account). Check that each cited advisory ID exists before merging.
 3. Spine PRs in dependency order. For starlightintelligence.ai: #180 (launch factory, now carrying #183 and #187), then #175
-   once the rail is ruled, then #174 (docs hub) and #177 (import integrity). #172, #184 and #185 change the homepage or add
-   offer surfaces and wait for Frank's direction (see the 21 October session).
-4. Dependabot minor and patch groups. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
+   (default-off; its funding fixes land before `STARLIGHT_COMMERCE_ENABLED` is set), then #174 (docs hub) and #177 (import
+   integrity). #172, #184 and #185 change the homepage or add offer surfaces and wait for Frank's direction (see the 21
+   October session).
+4. Dependabot minor and patch groups in spine repositories; frozen repositories take only security updates until 20
+   November. Major bumps (TypeScript 7, zod 4, Sentry 11, openai 7) wait for their own PRs.
 5. Close, each with a one-line reason and "reopen if still needed": PRs older than 30 days outside the spine; the drafts from
    the `ccr-30cf70e3-tha5nf` fan-out in frozen repositories; duplicate cross-repo pointer and error-boundary PRs. The existing
    pr-closer list (94 proposed closes) goes first, after a 10-PR sample check.
@@ -148,6 +156,6 @@ worktrees that are clean, merged, bundled and unclaimed, and writes a receipt pe
 |---|---|---|---|
 | Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Payment Link checkout in #180 | Polar organization, products and webhook secret; finish Stripe business and bank onboarding for payouts |
 | Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` and the handover prompt | None |
-| Runners | Personal-account Actions budget for November, cost cuts merged first | Recommendation only | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
+| Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Recommendation only | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
 | Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read |
 | Archive batch 1 | ai-architectures-observatory, oci-ai-architects/oci-ai-life-sciences | Not done: archiving is a human-only action under the federation rules | Archive both in repository settings |
