@@ -33,6 +33,15 @@ const TARGETS = [
 
 const args = process.argv.slice(2);
 const APPLY = args.includes('--apply');
+
+// The estate focus window (ops/plans/estate-convergence-2026-10-21.md) holds this rollout: it would open
+// PRs in frozen repositories and recommend ESTATE_AUTONOMY=auto. Frank moves this date to revise the ruling.
+const FOCUS_WINDOW_ENDS = Date.parse('2026-11-21T00:00:00Z');
+const HELD = Date.now() < FOCUS_WINDOW_ENDS;
+if (APPLY && HELD) {
+  console.error('Held until 20 November 2026 by the estate focus window (AGENTS.md guardrail 7). Nothing was opened.');
+  process.exit(1);
+}
 const only = args.includes('--repo') ? args[args.indexOf('--repo') + 1] : null;
 const targets = only ? TARGETS.filter((t) => t.repo === only) : TARGETS;
 
@@ -69,4 +78,5 @@ for (const t of targets) {
   console.log('    ✓ draft PR opened\n');
 }
 
-if (!APPLY) console.log('Re-run with --apply to open the draft PRs (nothing merges automatically).');
+if (!APPLY) console.log(HELD ? 'Held until 20 November 2026 by the estate focus window: do not run these steps or --apply before then.'
+  : 'Re-run with --apply to open the draft PRs (nothing merges automatically).');

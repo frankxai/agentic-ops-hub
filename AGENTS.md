@@ -50,6 +50,9 @@ These guidelines enforce discipline, conceptual clarity, and simplicity:
 * Branch `agent/<harness>/<scope>` from `origin/main`. If the primary checkout is another harness's branch, use a separate worktree. Do not write the handover into `C:/Users/frank/starlight` or `agentic-ops`.
 * A file such as FrankX `docs/ops/HANDOVER-*.md`, or the agentic-ops Desktop reboot pack, is the in-repo pickup for the next session in that checkout. The estate record is still this ledger.
 
+### 7. Focus window, 21 October to 20 November 2026 (founder ruling)
+* Open PRs only in the spine repositories of `ops/plans/estate-convergence-2026-10-21.md`, within their caps; the drain owner's one draft-CI PR per spine repository, narrowly scoped security-fix PRs, and one open ledger PR at a time in this repository carrying only same-day close and merge records, are exempt from the cap. Every other repository is read-only to agents except the drain owner, who may open and merge narrowly scoped security fixes, merge the two Actions cost-cut PRs the plan names (gencreator.ai#253, arcanea-platform#47), and close PRs on the plan's approved close list with a reason and the branch kept. Until 20 November pr-gate is the only merge mechanism: Merge Steward stays off and no repository runs `ESTATE_AUTONOMY=auto`. No new repositories, Vercel projects or one-branch fan-outs across repositories, except the drain owner's draft-CI and security-fix PRs. Record every close and merge in `ops/OPS-LEDGER.md` the same day.
+
 ---
 
 ## Multi-Agent Coordination Protocol
@@ -60,7 +63,7 @@ Multiple agents (Claude, Grok, Gemini, Codex, Cursor, Cline) may work this repo 
 * **One agent = one branch:** `agent/<harness>/<short-scope>`. For heavy parallel work use a worktree: `git worktree add .worktrees/<name> -b agent/<harness>/<scope>`.
 * **Don't edit a file another live agent is mid-rewrite on.** Last-write-wins silently clobbers work. If the tree churns under you, pause and report.
 * **Integrate one at a time.** Stage your own scope with explicit pathspecs — never sweep another agent's in-flight changes into your commit.
-* **Focus window, 21 October to 20 November 2026 (founder ruling).** Open PRs only in the spine repositories of `ops/plans/estate-convergence-2026-10-21.md`, within their caps; the drain owner's one draft-CI PR per spine repository, narrowly scoped security-fix PRs, and one open ledger PR at a time in this repository carrying only same-day close and merge records, are exempt from the cap. Every other repository is read-only to agents except the drain owner, who may open and merge narrowly scoped security fixes, merge the two Actions cost-cut PRs the plan names (gencreator.ai#253, arcanea-platform#47), and close PRs on the plan's approved close list with a reason and the branch kept. Until 20 November pr-gate is the only merge mechanism: Merge Steward stays off and no repository runs `ESTATE_AUTONOMY=auto`. No new repositories, Vercel projects or one-branch fan-outs across repositories, except the drain owner's draft-CI and security-fix PRs. Record every close and merge in `ops/OPS-LEDGER.md` the same day.
+* **Focus window, 21 October to 20 November 2026.** Guardrail 7 above is the rule; it sits in the synced section so every generated agent configuration carries it.
 
 ---
 

@@ -29,7 +29,8 @@ The correct shape is neither. It is **event-driven CI that acts on real events, 
 
 > **No repository runs at `auto` until 20 November 2026.** During the estate focus window pr-gate is the only merge
 > mechanism (`ops/plans/estate-convergence-2026-10-21.md`), so `ESTATE_AUTONOMY` is `assist` or `off` everywhere. After
-> 20 November, or earlier if Frank revises that ruling, this hold ends.
+> 20 November, or earlier if Frank revises that ruling, this hold ends. Until then `scripts/rollout-ops-governance.mjs --apply`
+> refuses to run, and its `auto` recommendations do not apply.
 
 Every repo runs at exactly one level, set by the `ESTATE_AUTONOMY` repository variable. Unset behaves as `off` (fail closed); `assist` is the recommended working level. Production websites stay `assist` or `off`.
 

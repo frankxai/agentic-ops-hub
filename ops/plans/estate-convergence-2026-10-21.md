@@ -47,8 +47,10 @@ The same product exists more than once:
 
 ## Goals, in order
 
-1. **The rail is live (week 1).** One merchant of record for Frank's own digital sales. This unblocks every gated SKU above at
-   once. Ruled 21 October: Polar, which the 13 October snapshot already proposes for frankx.ai, agenticincome, realityarchitect
+1. **The rail is live (week 1).** One merchant of record for Frank's own digital sales. Once Polar approves the merchant
+   and each offering, this unblocks the gated SKUs above. Approval is a launch gate, not an assumption: Polar's
+   acceptable-use policy reviews AI-generation offerings more closely, and the ledger records merchant approval as
+   unverified. No checkout is enabled for an offering before Polar accepts it. Ruled 21 October: Polar, which the 13 October snapshot already proposes for frankx.ai, agenticincome, realityarchitect
    and the SIS pricing page, and which starlightintelligence.ai#163 already verifies. Polar pays out through Stripe, so the
    Stripe account still needs its business and bank onboarding finished. Stripe Managed Payments was the alternative
    considered. Plain Stripe Checkout or Billing for Frank's own sales was not chosen: it makes the BV the seller of record,
@@ -61,8 +63,8 @@ The same product exists more than once:
    README and the decisions file still need a docs fix to match. For Starlight's own credits, starlightintelligence.ai#175 is
    the Polar boundary (signed webhooks, idempotent grants on the existing ledger,
    default off). Before it takes money it needs: offers that can grant `starlight.factory` (today only `starlight.curator`,
-   so a buyer could not start a factory run), refund revoking the entitlement, a dispute rule, and one sandbox
-   purchase-to-run receipt.
+   so a buyer could not start a factory run), refund revoking the entitlement, a dispute rule, one sandbox
+   purchase-to-run receipt, and Polar's approval of the offering.
 2. **First sales on traffic that exists (by 4 November).** frankx.ai Blueprint at $67 and agenticincome as the single store
    (agenticpassiveincome folds into it, as the snapshot proposes). frankx.ai analytics were broken from July until
    frankx.ai-vercel-website#1068; the first week of real numbers decides which offer leads.
@@ -172,7 +174,7 @@ worktrees that are clean, merged, bundled and unclaimed, and writes a receipt pe
 
 | Decision | Ruling | Done | Needs Frank's account |
 |---|---|---|---|
-| Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Stripe Payment Link and Polar checkout link support in #180 | Polar organization, products and webhook secret; finish Stripe business and bank onboarding for payouts; a Codex cloud environment for starlightintelligence.ai, so Codex can make #175's funding fixes |
+| Rail | Polar for Frank's own sales; founders' own Stripe Payment Links for pages the factory builds | Ruling recorded on starlightintelligence.ai#175; Stripe Payment Link and Polar checkout link support in #180 | Polar organization, products and webhook secret, and Polar's approval of the merchant and each AI-generation offering; finish Stripe business and bank onboarding for payouts; a Codex cloud environment for starlightintelligence.ai, so Codex can make #175's funding fixes |
 | Spine | The table above, until 20 November | Focus window added to this repository's `AGENTS.md` and the handover prompt | None |
 | Runners | A bounded personal-account Actions budget for November; the cost cuts are the first PRs to run CI and merge | Ruled; the budget itself is not set yet | Set the budget in GitHub billing; the Railway `CI_RUNNER` toggle drafts (starlightintelligence.ai#147 and its sibling PRs, runners in `railway-ci-runners`) stay the fallback |
 | Close sweep | Wave 1: PRs open more than 30 days in frozen repositories, plus two stale starlightintelligence.ai PRs | 11 closed with a reason and the branch kept: nine in frozen repositories, two in starlightintelligence.ai (list in the 21 October session) | The 94-PR pr-closer list lives in `agentic-ops`, which this session cannot read; it is pinned by path and commit in the ledger before use |

@@ -22,7 +22,7 @@ October; the last table of the plan says what is done and what waits on Frank's 
      READY preview for that head; CI runs once runners exist. It merges only through pr-gate, by a non-Claude harness or
      Frank.
    - The rail is Polar, so starlightintelligence.ai#175 needs offers that may grant `starlight.factory`, refund revoking
-     the entitlement, a dispute rule and one sandbox purchase-to-run receipt before `STARLIGHT_COMMERCE_ENABLED` is set
-     anywhere. Codex cannot edit that branch until Frank creates a Codex cloud environment for starlightintelligence.ai.
+     the entitlement, a dispute rule, one sandbox purchase-to-run receipt and Polar's approval of the offering before
+     `STARLIGHT_COMMERCE_ENABLED` is set anywhere. Codex cannot edit that branch until Frank creates a Codex cloud environment for starlightintelligence.ai.
 3. Do not open PRs outside the spine table until 20 November. The only writes outside it are the drain owner's, as the
    focus rule in `AGENTS.md` lists them; anything else needs Frank to revise that ruling first.
