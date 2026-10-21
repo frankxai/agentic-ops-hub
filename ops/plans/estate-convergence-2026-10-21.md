@@ -65,8 +65,9 @@ The same product exists more than once:
    default off). Before it takes money it needs: offers that can grant `starlight.factory` (today only `starlight.curator`,
    so a buyer could not start a factory run), refund revoking the entitlement, a dispute rule, one sandbox
    purchase-to-run receipt, and Polar's approval of the offering.
-2. **First sales on traffic that exists (by 4 November).** frankx.ai Blueprint at $67 and agenticincome as the single store
-   (agenticpassiveincome folds into it, as the snapshot proposes). frankx.ai analytics were broken from July until
+2. **First sales on traffic that exists (by 4 November).** frankx.ai Blueprint at $67 and agenticincome as the store.
+   Folding agenticpassiveincome into it is a consolidation proposal that still needs Frank's yes (below); until he gives it,
+   neither site is changed for the fold. frankx.ai analytics were broken from July until
    frankx.ai-vercel-website#1068; the first week of real numbers decides which offer leads.
 3. **Starlight's first customer-validated launch (by 20 November).** The launch factory builds Starlight's own founding-offer
    page, with a `checkout` call to action pointing at a Polar checkout link (starlightintelligence.ai#180 accepts
@@ -87,12 +88,12 @@ repositories, starlight-swarm and starlight-factory.
 |---|---|---|
 | starlightintelligence.ai | Launch factory, managed runs, the funding boundary | 5 |
 | frankx.ai-vercel-website | Audience and the first sale | 5 |
-| agenticincome | The single store | 3 |
+| agenticincome | The store for the income products; the agenticpassiveincome fold waits on Frank | 3 |
 | realityarchitect | The $39 edition, one switch | 2 |
 | Starlight-Intelligence-System | Substrate and pricing page; hold rules | 3 |
 | claude-skills-library | Source of the gates every repository installs | 3 |
 | agentic-ops-hub | This record; drain only | 3 |
-| gencreator.ai, arcanea-ai-app | Hold: security, S4 gate and the draft-CI PR only | 2 each |
+| gencreator.ai, arcanea-ai-app | Hold: security, bug fixes, the S4 gate and the draft-CI PR only | 2 each |
 
 Every other repository is read-only to agents through 20 November. A security fix a frozen repository needs goes through the
 drain owner, not a new lane: the drain owner may open and merge it, one narrowly scoped PR per fix. The drain owner may also
