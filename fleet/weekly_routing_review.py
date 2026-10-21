@@ -21,6 +21,7 @@ PROPOSALS = HERE / "routing-proposals"
 SCHEMA = HERE / "routing.schema.json"
 DEFAULT_MIN_SAMPLES = 20
 MAX_SANE_COST_USD = 1_000_000.0  # a single call above this is a corrupt receipt, not spend
+MAX_SANE_LATENCY_MS = 86_400_000  # one day; a longer single call is a corrupt receipt
 MIN_MODEL_SAMPLES = 5
 REQUIRED = ("ts", "task_class", "used", "success", "cost_usd", "latency_ms")
 
@@ -69,7 +70,7 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
         if not (math.isfinite(cost) and math.isfinite(latency)):
             skipped["non_finite"] += 1
             continue
-        if abs(cost) > MAX_SANE_COST_USD:
+        if not (0 <= cost <= MAX_SANE_COST_USD and 0 <= latency <= MAX_SANE_LATENCY_MS):
             skipped["malformed"] += 1
             continue
         if ts.timestamp() >= cutoff:

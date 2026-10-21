@@ -49,6 +49,7 @@ class LedgerBusy(BudgetError):
 
 MICRO = Decimal("0.000001")
 MAX_SANE_USD = 1_000_000.0  # no single call or receipt is worth more; larger is corrupt input
+MAX_SANE_LATENCY_MS = 86_400_000  # one day; a longer single call is a corrupt receipt
 
 
 def _finite_number(x) -> bool:
@@ -313,7 +314,10 @@ def reserve(task_class: str, model: str, est_cost_usd: float | None = None,
                 held = status["held_usd"]
                 event = {"kind": "reserve", "id": rid, "ts": datetime.now(timezone.utc).isoformat(),
                          "model": model, "task_class": task_class, "est_cost_usd": held}
-                _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(event, allow_nan=False))
+                holds = receipts_dir() / "reservations.jsonl"
+                _append_unlocked(holds, json.dumps(event, allow_nan=False))
+                if not _receipt_is_last_line(holds, rid):
+                    raise OSError(f"hold {rid} could not be verified in {holds}; paid call not admitted")
                 status["reservation_id"] = rid
                 status["reserved_usd"] = round(status["reserved_usd"] + held, 6)
     except TimeoutError as e:
@@ -368,15 +372,42 @@ def _locked(path: Path):
 
 
 def _append_unlocked(path: Path, line: str) -> None:
-    """One binary write, LF endings. The caller must hold _locked on the ledger."""
+    """One binary write, LF endings. The caller must hold _locked on the ledger.
+    A file whose last byte is not a newline (a torn write) gets one first, so the
+    new record never joins the torn fragment and disappears with it."""
     path.parent.mkdir(parents=True, exist_ok=True)
     data = (line + "\n").encode("utf-8")
-    fd = os.open(path, os.O_WRONLY | os.O_APPEND | os.O_CREAT | getattr(os, "O_BINARY", 0))
+    fd = os.open(path, os.O_RDWR | os.O_APPEND | os.O_CREAT | getattr(os, "O_BINARY", 0))
     try:
+        size = os.fstat(fd).st_size
+        if size:
+            os.lseek(fd, size - 1, os.SEEK_SET)
+            if os.read(fd, 1) != b"\n":
+                data = b"\n" + data
         os.write(fd, data)
         os.fsync(fd)
     finally:
         os.close(fd)
+
+
+def _receipt_is_last_line(path: Path, record_id: str) -> bool:
+    """True when the last line of the file parses and carries this record id.
+    Called under the lock right after an append, so the last line is ours."""
+    try:
+        with open(path, "rb") as f:
+            f.seek(0, os.SEEK_END)
+            f.seek(max(0, f.tell() - 8192))
+            tail = f.read()
+    except OSError:
+        return False
+    lines = [ln for ln in tail.splitlines() if ln.strip()]
+    if not lines:
+        return False
+    try:
+        rec = json.loads(lines[-1])
+    except (ValueError, RecursionError):
+        return False
+    return isinstance(rec, dict) and rec.get("id") == record_id
 
 
 def append_line(path: Path, line: str) -> None:
@@ -403,8 +434,8 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
         raise ValueError(f"used model '{used}' is not in the chain for '{task_class}': {r['chain']}")
     if not _finite_number(cost_usd) or cost_usd < 0:
         raise ValueError("cost_usd must be a finite non-negative number")
-    if not isinstance(latency_ms, int) or isinstance(latency_ms, bool) or latency_ms < 0:
-        raise ValueError("latency_ms must be a non-negative integer")
+    if not isinstance(latency_ms, int) or isinstance(latency_ms, bool) or not 0 <= latency_ms <= MAX_SANE_LATENCY_MS:
+        raise ValueError(f"latency_ms must be an integer from 0 to {MAX_SANE_LATENCY_MS}")
     machine = machine or os.environ.get("STARLIGHT_MACHINE", "unknown")
     receipt = {
         "ts": datetime.now(timezone.utc).isoformat(),
@@ -421,6 +452,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
         "over_ceiling": cost_usd > r["cost_ceiling_usd"],
         "zdr_override": bool(allow_non_zdr and r["zdr_required"] and not is_paid(used, load_schema())),
         "synthetic": bool(synthetic),
+        "reservation_id": reservation_id or None,
     }
     ledger = receipts_dir() / "routing.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)
@@ -433,8 +465,20 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
                 raise ValueError(
                     f"reservation '{reservation_id}' was made for {hold['task_class']}/{hold['model']}, "
                     f"not {task_class}/{used}; nothing was recorded")
+            prior = next((r for r in _read_receipts(ledger)
+                          if isinstance(r, dict) and r.get("reservation_id") == reservation_id), None)
+            if prior is not None:
+                # An earlier attempt wrote the receipt but not the settlement. Finish the
+                # settlement and return that receipt; a second one would count the call twice.
+                _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(
+                    {"kind": "settle", "id": reservation_id, "ts": prior.get("ts", receipt["ts"])},
+                    allow_nan=False))
+                return prior
         _append_unlocked(ledger, json.dumps(receipt, allow_nan=False))
         if reservation_id:
+            if not _receipt_is_last_line(ledger, receipt["id"]):
+                raise OSError(f"receipt {receipt['id']} could not be verified in {ledger}; "
+                              f"reservation '{reservation_id}' stays open")
             settle = {"kind": "settle", "id": reservation_id, "ts": receipt["ts"]}
             _append_unlocked(receipts_dir() / "reservations.jsonl", json.dumps(settle, allow_nan=False))
     return receipt

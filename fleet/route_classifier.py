@@ -58,6 +58,25 @@ VISION = re.compile(
 )
 REVIEW = re.compile(r"\b(review|lint|audit|best practices?|style guide)\b", re.I)
 
+# Whole words that change something or run something, on top of MUTATION above.
+# "code" only counts as a verb ("code a login function"), not in "review the code".
+ACTION_WORDS = re.compile(
+    r"\b(?:save|store|run|execute|exec|send|post|upload|copy|export|dump|overwrite|truncate|kill|"
+    r"restart|launch|publish|release|ship|sync|pull|clone|download|mount|pipe|redirect|tee|touch|"
+    r"chmod|sudo|rm|mv|cp)(?:s|es|d|ed|ing)?\b"
+    r"|\bcode\s+(?:a|an|the|up|me|it|that|this|new|some)\b",
+    re.I,
+)
+
+# Anything that joins or chains requests. One short question has none of these.
+CLAUSE_BREAK = re.compile(
+    r"\b(?:and|then|also|next|afterwards?|after that|before|once|plus|while)\b"
+    r"|[;&+\n`]|->|=>|[,:]\s|[.!?]\s+\S",
+    re.I,
+)
+
+MAX_FREE_WORDS = 30  # a longer request is not a short single question
+
 DEFAULT_CLASS = "code"  # ZDR; no recognised signal means do not send it to a free model
 
 LLM_PROMPT = """Classify the following task into exactly one of these classes:
@@ -77,13 +96,24 @@ Task: {task}
 Reply with ONLY the class name, nothing else."""
 
 
+def is_short_read_only(task: str) -> bool:
+    """True only for one short clause that opens with a read-only verb and holds
+    no mutation or action word anywhere. Everything else stays on a ZDR class."""
+    text = task.strip()
+    if not text or len(text.split()) > MAX_FREE_WORDS:
+        return False
+    if CLAUSE_BREAK.search(text) or MUTATION.search(text) or ACTION_WORDS.search(text):
+        return False
+    return bool(READ_ONLY.search(text))
+
+
 def fast_classify(task: str) -> str | None:
     for cls, pat in STRONG_RULES:
         if pat.search(task):
             return cls
     if MUTATION.search(task):
         return "code"
-    if not READ_ONLY.search(task):
+    if not is_short_read_only(task):
         return None
     if VISION.search(task):
         return "vision"

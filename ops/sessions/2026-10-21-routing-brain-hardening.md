@@ -91,3 +91,15 @@ Seven findings, 71 tests total (was 64).
 - Costs above $1,000,000 are rejected as input (`1e308` exited 1 with a traceback) and ignored when read back from the ledger.
 - Ledger readers catch `ValueError`, so a 5,000-digit integer cost is skipped instead of crashing.
 - `is_paid` ignores a non-string `used`, so one malformed row no longer blocks paid admission.
+
+## Codex round 4 (reviewed SHA 6159c4b): CHANGES REQUESTED, fixed in the next commit
+
+Five findings, 83 tests total (was 71). Frank chose Option A for the classifier.
+
+- P1 classifier: a read-only lead verb let a later, unlisted mutation through ("Review auth.py, then code a new login function", "Read settings.json and save it to backup.json"). Free classes now need a short single-clause request: at most 30 words, a read-only opening verb, no clause connector (and, then, also, next, before, ; , : & + newline, backtick, `->`, a second sentence) and no mutation or action word anywhere (save, store, run, execute, send, post, upload, copy, export, publish, release, sync, pull, `code a ...`, plus the earlier mutation verbs). Everything else is ZDR. A 100-prompt corpus (50 must be ZDR, 50 may be free) asserts zero leaks and no over-blocking of the plain read-only set.
+- P1 ledger: an unterminated tail line swallowed the next paid receipt while the hold closed. Every append now starts a new line when the file does not end in a newline. A reservation only closes after the receipt is read back as the last line of the ledger; otherwise `OSError` and the hold stays open. The reserve event is verified the same way.
+- P2 settle retry: a receipt now carries its `reservation_id`. If a retry finds a receipt for that id (the settle event failed after the receipt was written), it finishes the settlement and returns that receipt; no second receipt is written.
+- P2 weekly review and `record_receipt`: `latency_ms` is bounded (0 to 86,400,000); out-of-range is malformed, so two `10**308` latencies no longer sum to infinity.
+- P2 weekly review: negative cost or latency is malformed, so it can no longer drive a proposal.
+
+Cost of Option A: a read-only request with a comma, "and", or more than 30 words now uses Token Pass credit. "review the code" stays free; "review the diff and commit it" does not.

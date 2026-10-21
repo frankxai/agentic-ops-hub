@@ -715,5 +715,222 @@ class Round3(TmpLedger):
         route_executor.preflight("code", self.GLM, 0.1)
 
 
+MUST_BE_ZDR = [
+    # exact Codex round-4 repros
+    "Review auth.py, then code a new login function",
+    "Read settings.json and save it to backup.json",
+    # a read-only lead verb followed by something that changes state
+    "Explain the parser and fix the bug",
+    "List the files; delete the temp ones",
+    "Show the config then update it",
+    "Find the failing test and run it",
+    "Search for TODOs, then write a summary file",
+    "What does main.py do. Also rename it",
+    "Summarize README and push it to the wiki",
+    "Look at the logs then restart the service",
+    "Read the schema and generate migrations",
+    "Inspect the endpoint and send a request to it",
+    "Explain how to deploy the app",
+    "How do I run the tests",
+    "Describe the module, then refactor it",
+    "Review the diff and commit it",
+    "Audit the dependencies and upgrade the old ones",
+    "Find the config loader and change the default port",
+    "Read the file and copy it to the backup folder",
+    "Explain the bug and patch it",
+    "Show the failing job and rerun it",
+    "Review this change and then merge it",
+    "Locate the secret and delete it",
+    "What is in the log; upload it to the ticket",
+    "Read the key from the vault and store it in the env file",
+    "Explain this function & rewrite it",
+    "Find the handler -> update it",
+    "Review auth.py, code a login function",
+    "Read the file\nthen save the result",
+    "Explain this ```print(secret_key)``` snippet",
+    # coding and mutating requests with no read-only opening
+    "code a search function",
+    "write a novel caching layer",
+    "update the screenshot upload handler",
+    "patch the video parser",
+    "add a screenshot test",
+    "remove the audit endpoint",
+    "implement the login flow",
+    "deploy the site to production",
+    "create a migration for the users table",
+    "save the report to disk",
+    "run the build and publish the package",
+    "execute the nightly job",
+    "refactor the auth module",
+    "fix the failing import",
+    "install the package and configure it",
+    "build a landing page",
+    # no recognised signal at all
+    "hello there",
+    "zzz qqq",
+    "Check the lockfile, then bump the version",
+    # a read-only opening, but too long to be one short question
+    "Explain " + " ".join(["the way this module is wired to the rest of the system"] * 4),
+]
+
+MAY_BE_FREE = [
+    "find where the config loader is defined",
+    "what does the audit endpoint return",
+    "search the repo for the word complex",
+    "list all files in src",
+    "where is the plan file",
+    "explain the multimodal parser",
+    "review this PR for style",
+    "audit the dependency list",
+    "analyze this screenshot",
+    "describe the folder layout",
+    "find the reason this import fails",
+    "how does the router pick a model",
+    "why is the lint rule noisy",
+    "show the public functions in the executor",
+    "read the readme for the setup steps",
+    "inspect the schema for unused fields",
+    "look at the test names in the suite",
+    "what is the cost ceiling for the vision class",
+    "explain what a reservation is",
+    "summarize the readme",
+    "locate the weekly review script",
+    "where is the receipts directory",
+    "review the style of this module",
+    "lint rules for the python files",
+    "best practices for naming test cases",
+    "what are the task classes",
+    "list the models in the code chain",
+    "explore the fleet folder",
+    "scout the repo for large files",
+    "describe what the classifier returns",
+    "how many tests are in the suite",
+    "what file defines the hard cap",
+    "what does the lock file protect",
+    "explain the fallback order",
+    "find the function that reads receipts",
+    "why does the preflight need an estimate",
+    "show the schema keys for token pass",
+    "inspect the screenshot of the dashboard",
+    "analyze this image of the chart",
+    "what is in the video thumbnail",
+    "look up the ledger path rules",
+    "explain the review proposal format",
+    "how is the budget checked",
+    "what class covers vision work",
+    "where is the proposals folder",
+    "what is the latency field for",
+    "describe the receipt fields",
+    "what calls the executor",
+    "what happens when the chain is empty",
+    "explain the receipt settlement flow",
+]
+
+
+class Round4(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+
+    def test_the_two_codex_repros_are_zdr(self):
+        for task in MUST_BE_ZDR[:2]:
+            c = route_classifier.classify(task)
+            self.assertTrue(c["zdr_required"], (task, c["class"]))
+
+    def test_corpus_has_100_prompts(self):
+        self.assertEqual(len(MUST_BE_ZDR), 50)
+        self.assertEqual(len(MAY_BE_FREE), 50)
+
+    def test_no_mutating_or_multi_clause_prompt_leaks_to_a_free_class(self):
+        leaks = [(t, route_classifier.classify(t)["class"]) for t in MUST_BE_ZDR
+                 if not route_classifier.classify(t)["zdr_required"]]
+        self.assertEqual(leaks, [])
+
+    def test_short_single_clause_read_only_prompts_may_still_use_free_classes(self):
+        paid = [t for t in MAY_BE_FREE if route_classifier.classify(t)["zdr_required"]]
+        self.assertEqual(paid, [])
+
+    # finding 2: an unterminated tail must not swallow the next paid receipt
+    def test_torn_ledger_tail_does_not_swallow_the_next_receipt(self):
+        self.ledger.write_text('{"ts":', encoding="utf-8")
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                      reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.50)
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.0)
+
+    def test_torn_tail_cannot_let_spend_reach_the_cap_unseen(self):
+        cap = SCHEMA["token_pass"]["hard_cap_usd"]
+        route_executor.record_receipt("code", self.GLM, False, cap - 0.50, 5, True)
+        with open(self.ledger, "ab") as f:
+            f.write(b'{"ts":')
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                      reservation_id=res["reservation_id"])
+        with self.assertRaises(route_executor.BudgetError):
+            route_executor.reserve("code", self.GLM, 0.50)
+
+    def test_reservation_stays_open_when_the_receipt_cannot_be_verified(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        with patch.object(route_executor, "_receipt_is_last_line", return_value=False):
+            with self.assertRaises(OSError):
+                route_executor.record_receipt("code", self.GLM, False, 0.50, 5, True,
+                                              reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
+
+    # finding 3: a retry after an interrupted settle must not count the call twice
+    def test_retrying_an_interrupted_settlement_counts_the_call_once(self):
+        res = route_executor.reserve("code", self.GLM, 0.50)
+        real = route_executor._append_unlocked
+
+        def flaky(path, line):
+            if '"settle"' in line:
+                raise OSError("disk full")
+            return real(path, line)
+
+        with patch.object(route_executor, "_append_unlocked", side_effect=flaky):
+            with self.assertRaises(OSError):
+                route_executor.record_receipt("code", self.GLM, False, 0.20, 5, True,
+                                              reservation_id=res["reservation_id"])
+        again = route_executor.record_receipt("code", self.GLM, False, 0.20, 5, True,
+                                              reservation_id=res["reservation_id"])
+        self.assertEqual(again["reservation_id"], res["reservation_id"])
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.20)
+        self.assertEqual(len(self.ledger.read_text().splitlines()), 1)
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.0)
+
+    # findings 4 and 5: readers bound and reject out-of-range latency and cost
+    def _write(self, rows):
+        lines = []
+        for cost, latency in rows:
+            lines.append(json.dumps({"ts": datetime.now(timezone.utc).isoformat(), "task_class": "code",
+                                     "used": self.GLM, "success": True, "cost_usd": cost,
+                                     "latency_ms": latency}))
+        self.ledger.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    def test_huge_latencies_are_malformed_and_the_report_still_writes(self):
+        self._write([(0.1, 10 ** 308), (0.1, 10 ** 308)])
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(got, [])
+        self.assertEqual(skipped["malformed"], 2)
+        out = Path(self.tmp.name) / "proposals"
+        with patch.object(review, "PROPOSALS", out):
+            review.main()
+        self.assertTrue(list(out.glob("*.json")))
+
+    def test_negative_cost_and_latency_are_malformed(self):
+        self._write([(-1.0, 5), (0.1, -5)])
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(got, [])
+        self.assertEqual(skipped["malformed"], 2)
+
+    def test_negative_costs_cannot_drive_a_proposal(self):
+        self._write([(0.1, 5)] * 10 + [(-1.0, 5)] * 10)
+        got, _ = review.load_receipts(self.ledger)
+        self.assertEqual(len(got), 10)
+
+    def test_recording_a_receipt_rejects_an_absurd_latency(self):
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.GLM, False, 0.1, 10 ** 308, True)
+
+
 if __name__ == "__main__":
     unittest.main()
