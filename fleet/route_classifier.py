@@ -32,15 +32,17 @@ MUTATION = re.compile(
     r"\b(implement|refactor|edit|fix|write|add|remove|delete|drop|rename|change|update|patch|modify|"
     r"create|build|migrate|replace|rewrite|port|install|deploy|merge|revert|commit|push|apply|insert|"
     r"append|improve|optimi[sz]e|clean|bump|upgrade|wire|make|generate|configure|tweak|move|handle|"
-    r"support|enable|disable|set up)\w*",
+    r"support|enable|disable|set up|correct|repair|resolve|adjust|rework|address)\w*",
     re.I,
 )
 
-# Explicit read-only signals. Without one of these the task is not free-eligible.
+# Free-eligible only when the request OPENS with a read-only verb or question word.
+# A keyword anywhere else is not enough ("code a search function").
 READ_ONLY = re.compile(
-    r"\b(find|search|locate|list|explore|scout|map (the )?codebase|where is|show|read|summari[sz]e|"
+    r"^\W*(?:(?:please|can you|could you|just)\s+)*"
+    r"(?:find|search|locate|list|explore|scout|map (?:the )?codebase|where is|show|read|summari[sz]e|"
     r"what|how|why|explain|describe|review|lint|audit|best practices?|style guide|"
-    r"analy[sz]e|inspect|look (up|at))\b",
+    r"analy[sz]e|inspect|look (?:up|at))\b",
     re.I,
 )
 

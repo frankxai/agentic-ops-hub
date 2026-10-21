@@ -80,3 +80,14 @@ Eight findings, each with a failing-first test (64 tests total, was 48).
 | P2 `cost_usd = 10**309` crashed the weekly review | overflow and values over $1,000,000 are counted as malformed; the spend scan and `record_receipt` also survive it |
 
 Cost of the fail-closed classifier: ambiguous tasks ("hello there", "handle the upload") now use Token Pass credit instead of a free model. Known limit: the vision rule needs a read-only verb directly before the media noun, so "what is wrong with this screenshot" lands on `scout`, not `vision`.
+
+## Codex round 3 (reviewed SHA e36f76c): CHANGES REQUESTED, fixed in the next commit
+
+Seven findings, 71 tests total (was 64).
+
+- Classifier: free classes need a read-only verb at the START of the request ("code a search function" no longer matches); more mutation verbs (correct, repair, resolve, adjust, rework, address).
+- OmO: `sisyphus-junior`, `quick`, `unspecified-low`, `artistry` and `visual-engineering` execute edits, so they now sit on the `code` ZDR class. Only explore, librarian, multimodal-looker, momus and `code-review` stay free. A test removes each provider in turn and checks no ZDR category can resolve to a free model. If `vercel` is disabled the ZDR chains empty out and OmO has no model, which is an error rather than a leak.
+- Settlement stores the cost rounded up to a micro-dollar, so tiny real costs cannot reopen budget.
+- Costs above $1,000,000 are rejected as input (`1e308` exited 1 with a traceback) and ignored when read back from the ledger.
+- Ledger readers catch `ValueError`, so a 5,000-digit integer cost is skipped instead of crashing.
+- `is_paid` ignores a non-string `used`, so one malformed row no longer blocks paid admission.

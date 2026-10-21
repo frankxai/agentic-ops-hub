@@ -26,10 +26,12 @@ from route_executor import zdr_safe_chain  # noqa: E402
 SCHEMA = HERE / "routing.schema.json"
 OMO = Path.home() / ".omo" / "omo.jsonc"
 
-# OmO agent -> schema task class. Free-class agents are the scout/review/vision chains.
+# OmO agent -> schema task class. Only agents that never edit (explore, librarian,
+# multimodal-looker, momus) sit on free chains; anything that can execute work, the
+# junior executor included, is on a ZDR class.
 AGENT_MAP = {
     "sisyphus": "code",
-    "sisyphus-junior": "scout",
+    "sisyphus-junior": "code",
     "hephaestus": "code",
     "oracle": "hard-reasoning",
     "prometheus": "hard-reasoning",
@@ -44,14 +46,14 @@ AGENT_MAP = {
 # OmO category -> schema task class. Includes built-in categories that must not
 # reach OmO's own paid chains (deep-high, artistry, deep-low).
 CATEGORY_MAP = {
-    "visual-engineering": "vision",
+    "visual-engineering": "code",
     "ultrabrain": "ultrabrain",
     "deep": "hard-reasoning",
     "deep-low": "code",
     "deep-high": "hard-reasoning",
-    "artistry": "scout",
-    "quick": "scout",
-    "unspecified-low": "scout",
+    "artistry": "code",
+    "quick": "code",
+    "unspecified-low": "code",
     "unspecified-high": "code",
     "writing": "code",
     "research": "hard-reasoning",

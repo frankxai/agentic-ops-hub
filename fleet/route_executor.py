@@ -48,13 +48,14 @@ class LedgerBusy(BudgetError):
 
 
 MICRO = Decimal("0.000001")
+MAX_SANE_USD = 1_000_000.0  # no single call or receipt is worth more; larger is corrupt input
 
 
 def _finite_number(x) -> bool:
     if isinstance(x, bool) or not isinstance(x, (int, float)):
         return False
     try:
-        return math.isfinite(float(x))
+        return math.isfinite(float(x)) and abs(float(x)) <= MAX_SANE_USD
     except OverflowError:
         return False
 
@@ -111,7 +112,7 @@ def zdr_models(schema: dict) -> set[str]:
 
 
 def is_paid(model: str, schema: dict) -> bool:
-    return model in zdr_models(schema)
+    return isinstance(model, str) and model in zdr_models(schema)
 
 
 def zdr_safe_chain(schema: dict, task_class: str) -> list[str]:
@@ -177,7 +178,7 @@ def _read_receipts(path: Path) -> list[dict]:
             continue
         try:
             out.append(json.loads(line))
-        except json.JSONDecodeError:
+        except (ValueError, RecursionError):  # JSONDecodeError, int-conversion limit
             continue
     return out
 
@@ -194,7 +195,7 @@ def month_paid_spend(now: datetime | None = None) -> float:
         except (KeyError, ValueError, TypeError, OverflowError):
             continue
         if ts.year == now.year and ts.month == now.month and is_paid(r.get("used", ""), schema) \
-                and math.isfinite(cost):
+                and math.isfinite(cost) and 0 <= cost <= MAX_SANE_USD:
             total += cost
     return total
 
@@ -412,7 +413,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
         "primary": r["primary"],
         "used": used,
         "fallback_used": fallback_used,
-        "cost_usd": round(cost_usd, 6),
+        "cost_usd": _ceil6(cost_usd) if cost_usd > 0 else 0.0,  # a real cost never rounds to zero
         "latency_ms": latency_ms,
         "success": bool(success),
         "provider": provider,

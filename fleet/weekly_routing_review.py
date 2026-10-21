@@ -46,7 +46,7 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
             continue
         try:
             r = json.loads(line)
-        except json.JSONDecodeError:
+        except (ValueError, RecursionError):  # JSONDecodeError, int-conversion limit
             skipped["malformed"] += 1
             continue
         if not isinstance(r, dict) or any(k not in r for k in REQUIRED):

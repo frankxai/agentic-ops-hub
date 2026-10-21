@@ -629,5 +629,91 @@ class OverflowingCosts(TmpLedger):
             route_executor.record_receipt("code", "vercel/zai/glm-5.3", False, 10 ** 309, 5, True)
 
 
+class Round3(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+
+    def test_only_a_leading_read_only_verb_can_reach_a_free_class(self):
+        for task in ("code a search function", "correct the lint configuration",
+                     "repair the audit endpoint", "resolve the screenshot upload failure",
+                     "please explain and then patch the parser"):
+            self.assertTrue(route_classifier.classify(task)["zdr_required"], task)
+        for task in ("find the reason this import fails", "what does the audit endpoint return",
+                     "review this PR for style", "analyze this screenshot"):
+            self.assertFalse(route_classifier.classify(task)["zdr_required"], task)
+
+    def test_omo_slots_that_execute_edits_are_all_zdr(self):
+        cfg = gen_omo_config.build(SCHEMA)["[opencode]"]
+        safe = route_executor.zdr_models(SCHEMA)
+        read_only_agents = {"explore", "librarian", "multimodal-looker", "momus"}
+        read_only_categories = {"code-review"}
+
+        def names(entry):
+            ms = entry.get("models") or [entry["model"], *entry.get("fallback_models", [])]
+            return [m["model"] if isinstance(m, dict) else m for m in ms]
+
+        for agent, entry in cfg["agents"].items():
+            if agent not in read_only_agents:
+                for m in names(entry):
+                    self.assertIn(m, safe, agent)
+        for cat, entry in cfg["categories"].items():
+            if cat not in read_only_categories:
+                for m in names(entry):
+                    self.assertIn(m, safe, cat)
+
+    def test_disabling_any_provider_never_resolves_a_zdr_category_to_a_free_model(self):
+        cfg = gen_omo_config.build(SCHEMA)["[opencode]"]
+        safe = route_executor.zdr_models(SCHEMA)
+        for disabled in ([], ["vercel"], ["openai"], ["opencode"], ["vercel", "opencode"]):
+            def keep(models):
+                return [m for m in models if m.split("/")[0] not in disabled]
+
+            for cat, cls in gen_omo_config.CATEGORY_MAP.items():
+                if not SCHEMA["task_classes"][cls]["zdr_required"]:
+                    continue
+                entry = cfg["categories"][cat]
+                own = keep([m["model"] if isinstance(m, dict) else m for m in entry["fallback_models"]])
+                for agent, a in cfg["agents"].items():
+                    if agent in ("explore", "librarian", "multimodal-looker", "momus"):
+                        continue
+                    inherited = keep([m["model"] if isinstance(m, dict) else m for m in a["models"]])
+                    resolved = own or inherited
+                    for m in resolved:
+                        self.assertIn(m, safe, (disabled, cat, agent))
+
+    def test_settling_a_tiny_cost_still_counts_it(self):
+        for _ in range(3):
+            res = route_executor.reserve("code", self.GLM, 0.0000004)
+            r = route_executor.record_receipt("code", self.GLM, False, 0.0000004, 5, True,
+                                              reservation_id=res["reservation_id"])
+            self.assertGreaterEqual(r["cost_usd"], 0.000001)
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.000003, places=9)
+
+    def test_extreme_finite_numbers_are_rejected_not_crashes(self):
+        with self.assertRaises(ValueError):
+            route_executor.preflight("code", self.GLM, 1e308)
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", self.GLM, False, 1e308, 5, True)
+        p = subprocess.run([sys.executable, "-I", "-B", str(FLEET / "route_task.py"), "implement auth",
+                            "--preflight", "--est-cost", "1e308", "--no-reserve"],
+                           capture_output=True, text=True,
+                           env={**os.environ, "STARLIGHT_RECEIPTS_DIR": self.tmp.name})
+        self.assertEqual(p.returncode, 2, p.stderr)
+        self.assertNotIn("Traceback", p.stderr)
+
+    def test_huge_integer_receipts_do_not_crash_the_readers(self):
+        huge = '{"ts": "%s", "task_class": "code", "used": "%s", "success": true, "latency_ms": 5, ' \
+               '"cost_usd": 1%s}' % (datetime.now(timezone.utc).isoformat(), self.GLM, "0" * 5000)
+        self.ledger.write_text(huge + "\n", encoding="utf-8")
+        self.assertEqual(route_executor.month_paid_spend(), 0.0)
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(got, [])
+        self.assertEqual(skipped["malformed"], 1)
+
+    def test_unhashable_used_field_does_not_block_paid_admission(self):
+        self.ledger.write_text('{"ts": "%s", "used": [], "cost_usd": 0.1}\n'
+                               % datetime.now(timezone.utc).isoformat(), encoding="utf-8")
+        route_executor.preflight("code", self.GLM, 0.1)
+
+
 if __name__ == "__main__":
     unittest.main()
