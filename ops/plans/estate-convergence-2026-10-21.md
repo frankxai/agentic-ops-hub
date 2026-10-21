@@ -111,7 +111,7 @@ armed.
   Frozen and hold repositories run `off`, because `assist` lets a maintainer's `@estate fix` push commits; the rest run at
   most `assist`. The variable is a repository setting, so Frank changes it; the drain owner first lists the repositories
   where the guardian is installed and their current level. Lowering the variable does not cancel an auto-merge the guardian
-  already armed with `gh pr merge --auto`, so drain step 1 disables those first.
+  already armed, so drain step 1 disables each one with `gh pr merge --disable-auto` before any runner returns.
 - **Drafts do not run CI.** Copy gencreator.ai's pattern (drafts defer every job; `ready_for_review` starts them) to each
   spine repository. Three in four PRs are drafts, so this is the largest single cut in Actions minutes. The drain owner may
   open one PR per spine repository for this rule even when that repository is over its cap or on hold; it is drain step 1,
