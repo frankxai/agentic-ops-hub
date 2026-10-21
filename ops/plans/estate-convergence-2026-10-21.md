@@ -110,7 +110,7 @@ drain owner, not a new lane.
 
 1. Merge the Actions cost cuts already drafted (gencreator.ai#253, arcanea-platform#47) and the draft-CI rule above; then set
    the personal-account budget for one drain month.
-2. Security PRs first: Next.js advisory upgrades and the open security fixes in six repositories. The list is in the private
+2. Security PRs first: Next.js advisory upgrades and the open security fixes in five repositories. The list is in the private
    plan, not here, because some of these repositories are live and private.
 3. Spine PRs in dependency order. For starlightintelligence.ai: #180 (launch factory, now carrying #183 and #187), then #175
    once the rail is ruled, then #174 (docs hub) and #177 (import integrity). #172, #184 and #185 change the homepage or add
