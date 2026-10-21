@@ -47,6 +47,10 @@ EXP_REQUIRED = (
 GENERALS = ("ceo", "cfo", "coo", "cto", "cpo", "cmo", "caio", "chro", "cco", "frank")
 BUDGET_KEYS = ("token_pass_usd_cap", "infra_usd_cap", "frank_hours")
 ID_PATTERN = re.compile(r"^EXP-[0-9]{3}$")
+LAYERS = ("L0", "L0+L2", "L2", "L3", "L4")
+HARNESS_STATUSES = ("live", "installed", "candidate", "to-build")
+PACK_STATUSES = ("spec", "curating", "ready")
+MAX_JUDGED_SHARE = 0.5
 
 
 def read_json(path: Path):
@@ -59,6 +63,8 @@ def load() -> dict:
         "goals": read_json(LAB / "goals.json"),
         "gates": read_json(LAB / "gates.json"),
         "budget": read_json(LAB / "budget.json"),
+        "harnesses": read_json(LAB / "harnesses.json"),
+        "packs": read_json(LAB / "packs.json"),
         "experiments": experiments,
     }
 
@@ -165,7 +171,59 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
         problems.append(f"experiment infra caps {caps['infra_usd_cap']} exceed Railway cap {budget['railway_infra']['monthly_cap_usd']}")
     if budget["token_pass"]["lab_allocation_usd"] > budget["token_pass"]["monthly_usd"]:
         problems.append("lab allocation exceeds the Token Pass monthly credit")
+    problems += validate_harnesses(data) + validate_packs(data)
     return problems
+
+
+def validate_harnesses(data: dict) -> list[str]:
+    problems: list[str] = []
+    ids = [h.get("id") for h in data["harnesses"]["items"]]
+    if len(set(ids)) != len(ids):
+        problems.append("harnesses: duplicate id")
+    for h in data["harnesses"]["items"]:
+        hid = h.get("id", "?")
+        if h.get("layer") not in LAYERS:
+            problems.append(f"harness {hid}: layer {h.get('layer')!r} not in {LAYERS}")
+        if h.get("status") not in HARNESS_STATUSES:
+            problems.append(f"harness {hid}: status {h.get('status')!r} not in {HARNESS_STATUSES}")
+        measured = h.get("measured")
+        if measured is None:
+            continue
+        floor = data["packs"].get("sample_floor_per_cell", 10)
+        if not isinstance(measured, dict) or not measured.get("source") or not isinstance(measured.get("n"), int):
+            problems.append(f"harness {hid}: measured needs an integer n and a source")
+        elif measured["n"] < floor:
+            problems.append(f"harness {hid}: measured n={measured['n']} is below the sample floor {floor}; keep it null or call it directional elsewhere")
+    return problems
+
+
+def validate_packs(data: dict) -> list[str]:
+    problems: list[str] = []
+    ids = [p.get("id") for p in data["packs"]["items"]]
+    if len(set(ids)) != len(ids):
+        problems.append("packs: duplicate id")
+    for pack in data["packs"]["items"]:
+        pid = pack.get("id", "?")
+        if pack.get("status") not in PACK_STATUSES:
+            problems.append(f"pack {pid}: status {pack.get('status')!r} not in {PACK_STATUSES}")
+        tasks = pack.get("tasks") or []
+        if not tasks:
+            problems.append(f"pack {pid}: needs tasks")
+            continue
+        for t in tasks:
+            check = str(t.get("verifier", {}).get("check", "")).strip()
+            if not check:
+                problems.append(f"pack {pid}: task {t.get('id', '?')} has no checker")
+            if t.get("judged") and t.get("verifier", {}).get("type") != "blind-judge":
+                problems.append(f"pack {pid}: judged task {t.get('id', '?')} must use a blind-judge verifier")
+        if pack_judged_share(pack) > MAX_JUDGED_SHARE:
+            problems.append(f"pack {pid}: more than {int(MAX_JUDGED_SHARE * 100)}% of tasks are judged")
+    return problems
+
+
+def pack_judged_share(pack: dict) -> float:
+    tasks = pack.get("tasks") or []
+    return sum(1 for t in tasks if t.get("judged")) / len(tasks) if tasks else 0.0
 
 
 def receipts_path() -> Path:
@@ -446,6 +504,32 @@ def render_receipts(summary: dict) -> str:
             f'<p class="source" style="margin-top:6px">source: {esc(summary["path"])} · {summary["used"]} receipts used, {summary["skipped"]} malformed skipped, {summary["synthetic"]} synthetic ignored</p></section>')
 
 
+def render_harnesses(data: dict) -> str:
+    rows = []
+    for h in data["harnesses"]["items"]:
+        m = h["measured"]
+        measured = ("not measured" if m is None else f'n={m["n"]}, {esc(json.dumps({k: v for k, v in m.items() if k not in ("n", "source")}))}')
+        rows.append(f'<tr><td><strong>{esc(h["name"])}</strong><br><span class="small muted">{esc(h["role"])}</span></td>'
+                    f'<td class="mono">{esc(h["layer"])}</td><td><span class="pill">{esc(h["status"])}</span></td>'
+                    f'<td class="mono">{esc(h["headless"])}</td><td class="small">{measured}</td></tr>')
+    return ('<section><h2>Harnesses we compare</h2><div class="panel table-scroll"><table><thead><tr><th>Harness</th><th>Layer</th><th>Status</th><th>Headless</th><th>Measured</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            '<p class="small muted" style="margin-top:8px">L0 commodity · L2 routing brain · L3 OmS · L4 public template. A measured cell needs at least the sample floor of runs and a source file.</p></section>')
+
+
+def render_packs(data: dict) -> str:
+    rows = []
+    for p in data["packs"]["items"]:
+        rows.append(f'<tr><td><strong class="mono">{esc(p["id"])}</strong><br><span class="small muted">{esc(p["title"])}</span></td>'
+                    f'<td>{esc(p["domain"])}</td><td><span class="pill">{esc(p["status"])}</span></td>'
+                    f'<td class="mono">{len(p["tasks"])}</td><td class="mono">{100 * pack_judged_share(p):.0f}%</td>'
+                    f'<td class="small">{esc(p["weakness"])}</td></tr>')
+    floor = data["packs"].get("sample_floor_per_cell", 10)
+    return ('<section><h2>Task packs</h2><div class="panel table-scroll"><table><thead><tr><th>Pack</th><th>Domain</th><th>Status</th><th>Tasks</th><th>Judged</th><th>Known weakness</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            f'<p class="small muted" style="margin-top:8px">At least {floor} runs per harness and task before any claim. Judged tasks are at most half of a pack and use a blind judge from another family.</p></section>')
+
+
 def render(data: dict, summary: dict, fragment: bool = False) -> str:
     now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     counts = {s: sum(1 for e in data["experiments"] if e["status"] == s) for s in STATUSES}
@@ -456,7 +540,7 @@ def render(data: dict, summary: dict, fragment: bool = False) -> str:
         f'<p class="north">{esc(data["goals"]["north_star"]["text"])}</p>'
         f'<p class="small muted mono">{esc(tally)}</p></header>'
         + render_direction(data) + render_attention(data) + render_board(data) + render_where(data)
-        + render_projects(data) + render_budget(data, summary) + render_receipts(summary)
+        + render_harnesses(data) + render_packs(data) + render_projects(data) + render_budget(data, summary) + render_receipts(summary)
         + f'<footer class="small muted"><p>Generated {esc(now)} from commit {esc(git_sha())}. Edit lab/*.json, never this page.</p>'
         '<p>Lifecycle rules (S1 experiment: hypothesis, metric, token budget, 30-day limit) come from registry/README.md.</p></footer></div>'
     )

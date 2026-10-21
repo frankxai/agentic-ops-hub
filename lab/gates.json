@@ -80,6 +80,30 @@
       "owner": "frank",
       "status": "open",
       "why": "No ruling found in the estate. Recommendation: open spec, verifier, free profile; closed hosted ledger and aggregate data. See the product plan section 7."
+    },
+    {
+      "id": "harness-runner",
+      "kind": "work",
+      "title": "Build the harness-neutral runner: replay a task at its parent commit, run any harness headless, run the checker, write a receipt with experiment and harness fields",
+      "owner": "claude",
+      "status": "open",
+      "why": "The current battery calls the gateway directly, so it ranks models, not harnesses. Needs PR 377's receipt API."
+    },
+    {
+      "id": "pack-authoring",
+      "kind": "work",
+      "title": "Author the web-v0 and content-v0 packs: briefs, fixtures and mechanical checkers (axe, Playwright, link and constraint scripts)",
+      "owner": "claude",
+      "status": "open",
+      "why": "EXP-008 and EXP-009 need website and content tasks with checkers written before any run. Checker tools are not yet confirmed in the worker image."
+    },
+    {
+      "id": "playbooks-draft",
+      "kind": "work",
+      "title": "Draft the three playbooks (build-a-website, build-a-product, run-an-experiment) as skills with saved evals",
+      "owner": "claude",
+      "status": "open",
+      "why": "A skill without a saved eval stays out of the default prompt. EXP-009 needs the drafts to test."
     }
   ]
 }

@@ -109,5 +109,70 @@ class RenderTests(unittest.TestCase):
         self.assertIn("<title>Starlight Lab</title>", fragment)
 
 
+class HarnessAndPackTests(unittest.TestCase):
+    def setUp(self):
+        self.data = lab.load()
+
+    def mutated(self, fn):
+        import copy
+        data = copy.deepcopy(self.data)
+        fn(data)
+        return lab.validate(data)
+
+    def test_the_four_layers_are_registered(self):
+        ids = {h["id"] for h in self.data["harnesses"]["items"]}
+        self.assertTrue({"now", "oms", "starlight-ai-harness", "opencode-bare"} <= ids)
+
+    def test_unknown_layer_is_rejected(self):
+        problems = self.mutated(lambda d: d["harnesses"]["items"][0].update(layer="L9"))
+        self.assertTrue(any("layer" in p for p in problems))
+
+    def test_a_measured_claim_needs_n_and_a_source(self):
+        problems = self.mutated(lambda d: d["harnesses"]["items"][0].update(measured={"accepted_rate": 0.9}))
+        self.assertTrue(any("measured" in p for p in problems))
+
+    def test_measured_claim_below_the_sample_floor_is_rejected(self):
+        problems = self.mutated(lambda d: d["harnesses"]["items"][0].update(
+            measured={"n": 3, "accepted_rate": 0.9, "source": "lab/results/EXP-008.md"}))
+        self.assertTrue(any("sample floor" in p for p in problems))
+
+    def test_duplicate_harness_id_is_rejected(self):
+        problems = self.mutated(lambda d: d["harnesses"]["items"].append(dict(d["harnesses"]["items"][0])))
+        self.assertTrue(any("duplicate" in p and "harness" in p for p in problems))
+
+    def test_a_pack_cannot_be_more_than_half_judged(self):
+        def judge_all(d):
+            for t in d["packs"]["items"][0]["tasks"]:
+                t["judged"] = True
+        problems = self.mutated(judge_all)
+        self.assertTrue(any("judged" in p for p in problems))
+
+    def test_every_task_needs_a_checker(self):
+        problems = self.mutated(lambda d: d["packs"]["items"][0]["tasks"][0]["verifier"].update(check=""))
+        self.assertTrue(any("checker" in p for p in problems))
+
+    def test_judged_task_must_use_a_blind_judge(self):
+        def bad(d):
+            for pack in d["packs"]["items"]:
+                for t in pack["tasks"]:
+                    if t["judged"]:
+                        t["verifier"]["type"] = "script"
+                        return
+        problems = self.mutated(bad)
+        self.assertTrue(any("blind-judge" in p for p in problems))
+
+    def test_experiments_that_name_a_pack_use_a_registered_one(self):
+        packs = {p["id"] for p in self.data["packs"]["items"]}
+        for exp in self.data["experiments"]:
+            if exp["id"] in ("EXP-008", "EXP-009"):
+                self.assertTrue(any(pid in exp["suite"] for pid in packs), exp["id"])
+
+    def test_page_shows_harnesses_and_packs(self):
+        page = lab.render(self.data, lab.summarize_receipts(Path("none.jsonl")))
+        self.assertIn("starlight-ai-harness", page)
+        self.assertIn("web-v0", page)
+        self.assertIn("not measured", page)
+
+
 if __name__ == "__main__":
     unittest.main()

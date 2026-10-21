@@ -1,0 +1,134 @@
+{
+  "as_of": "2026-10-21",
+  "source": "agentic-ops/fleet/HARNESS-STACK.md (v1, 2026-10-21) plus ops/plans/2026-10-21-research-lab-and-cloud-workers.md",
+  "note": "One row per thing we measure. Layers: L0 commodity, L2 routing brain (our policy and receipts), L3 OmS (our packaged layer), L4 public template. 'measured' stays null until receipts from a lab run exist.",
+  "items": [
+    {
+      "id": "opencode-bare",
+      "name": "opencode, no plugin",
+      "layer": "L0",
+      "status": "live",
+      "headless": "yes",
+      "runs_on": ["local-c940", "railway"],
+      "governed_by_routing_brain": false,
+      "licence": "upstream",
+      "role": "Control arm: what a user gets with no layer from us.",
+      "evidence": [],
+      "measured": null
+    },
+    {
+      "id": "now",
+      "name": "now: opencode + OmO 5.1.40 + routing brain + Token Pass",
+      "layer": "L0+L2",
+      "status": "live",
+      "headless": "yes",
+      "runs_on": ["local-c940"],
+      "governed_by_routing_brain": true,
+      "licence": "OmO SUL-1.0 (internal use only)",
+      "role": "The working harness today. Its OmO config is the OLD generator output until PR 377 merges and the generator is re-run.",
+      "evidence": [
+        {"claim": "Token Pass call resolved to token-pass; a 403 fallback walk succeeded.", "source": "OPS-LEDGER 2026-10-21", "caveat": "Single live proof, not a benchmark."}
+      ],
+      "measured": null
+    },
+    {
+      "id": "oms",
+      "name": "OmS (oh my starlight): config, governance and receipts pack on upstream OmO",
+      "layer": "L3",
+      "status": "to-build",
+      "headless": "inherits from the host harness",
+      "runs_on": ["local-c940", "railway"],
+      "governed_by_routing_brain": true,
+      "licence": "ours; must not copy OmO source (SUL-1.0)",
+      "role": "Our layer. No fork. Generated from routing.schema.json, with a free profile and a Token Pass profile.",
+      "evidence": [
+        {"claim": "gen_omo_config.py generates an OmO config from the routing schema.", "source": "fleet/gen_omo_config.py", "caveat": "Profiles are not split yet; PR 377 changes its fallbacks."}
+      ],
+      "measured": null
+    },
+    {
+      "id": "starlight-ai-harness",
+      "name": "starlight-ai-harness: public template repo",
+      "layer": "L4",
+      "status": "to-build",
+      "headless": "n/a",
+      "runs_on": [],
+      "governed_by_routing_brain": true,
+      "licence": "to be decided by Frank (dec-open-core)",
+      "role": "OmS plus playbooks, evals and setup docs, with no private state. Published only after the OmS evals pass.",
+      "evidence": [],
+      "measured": null
+    },
+    {
+      "id": "omo-native",
+      "name": "native omo (senpi, a pi fork)",
+      "layer": "L0",
+      "status": "candidate",
+      "headless": "unverified",
+      "runs_on": ["railway"],
+      "governed_by_routing_brain": false,
+      "licence": "SUL-1.0",
+      "role": "Holds the 'mass ulw' swarm. Tested in EXP-002 and EXP-003.",
+      "evidence": [],
+      "measured": null
+    },
+    {
+      "id": "pi",
+      "name": "pi",
+      "layer": "L0",
+      "status": "candidate",
+      "headless": "unverified",
+      "runs_on": ["railway"],
+      "governed_by_routing_brain": false,
+      "licence": "upstream",
+      "role": "Minimal-harness challenger in EXP-002.",
+      "evidence": [
+        {"claim": "One vendor benchmark: pi 20/30 vs oh-my-pi 17/30 at about a quarter of the cost per success.", "source": "Composio blog on pi vs omp", "caveat": "Vendor blog, one model, 30 tasks. Motivates the test only."}
+      ],
+      "measured": null
+    },
+    {
+      "id": "fx",
+      "name": "fx",
+      "layer": "L0",
+      "status": "candidate",
+      "headless": "unverified",
+      "runs_on": ["railway"],
+      "governed_by_routing_brain": false,
+      "licence": "upstream",
+      "role": "Challenger in EXP-002.",
+      "evidence": [],
+      "measured": null
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code (subscription)",
+      "layer": "L0",
+      "status": "live",
+      "headless": "yes",
+      "runs_on": ["local-c940"],
+      "governed_by_routing_brain": false,
+      "licence": "vendor",
+      "role": "Primary interactive harness. Subscription spend is not visible to the router, so its tasks need receipts written by a wrapper to be comparable.",
+      "evidence": [
+        {"claim": "Four harnesses (OpenCode, Claude Code, Hermes, Codex CLI) each completed a real traced model run.", "source": "hub PR 353", "caveat": "Tracing proof, not quality."}
+      ],
+      "measured": null
+    },
+    {
+      "id": "codex-cli",
+      "name": "Codex CLI",
+      "layer": "L0",
+      "status": "live",
+      "headless": "yes",
+      "runs_on": ["local-c940"],
+      "governed_by_routing_brain": false,
+      "licence": "vendor",
+      "role": "Independent verifier harness. Rejected 15 of 15 earlier Claude PRs with real security bugs, and has returned CHANGES REQUESTED on every PR 377 round so far.",
+      "evidence": [
+        {"claim": "Cross-family review catches defects the author's family misses.", "source": "memory: estate absorb pipeline 2026-10-01; PR 377 rounds 1-4", "caveat": "Small sample; not yet scored as a harness."}
+      ],
+      "measured": null
+    }
+  ]
+}
