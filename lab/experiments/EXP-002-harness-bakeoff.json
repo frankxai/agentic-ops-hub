@@ -1,0 +1,43 @@
+{
+  "id": "EXP-002",
+  "title": "Which harness gets the most accepted work per dollar on the same model?",
+  "pillar": "harness",
+  "projects": ["agentic-ops", "acos"],
+  "hypothesis": "With the model held fixed, a minimal harness (pi) matches the heavier ones (opencode, native omo, fx) on accepted rate at a lower cost per accepted task.",
+  "status": "blocked",
+  "state": "S1",
+  "owner": "claude",
+  "owner_general": "cto",
+  "verifier": "codex",
+  "human_gate": "Frank approves installing any new harness on a machine; the container is the default place.",
+  "runs_on": [
+    {"where": "railway", "why": "Isolated scratch container. Keeps new harnesses and their telemetry off the YELLOW-zone laptop."}
+  ],
+  "arms": [
+    {"harness": "opencode", "model": "winner of EXP-001", "role": "incumbent"},
+    {"harness": "pi", "model": "winner of EXP-001", "role": "challenger"},
+    {"harness": "omo-native", "model": "winner of EXP-001", "role": "challenger"},
+    {"harness": "fx", "model": "winner of EXP-001", "role": "challenger"}
+  ],
+  "suite": "starlight-core-v0",
+  "metric": {"primary": "cost_per_accepted_task_usd", "secondary": ["accepted_rate", "median_wall_seconds", "tokens_per_accepted_task"]},
+  "success_rule": "A challenger replaces opencode as the worker default only if accepted_rate is within 5 points of opencode and cost_per_accepted is at least 20% lower.",
+  "kill": "Stop at $8 or when one arm cannot run headless with the Gateway key (record that as a result). Any arm that sends telemetry we could not disable is dropped.",
+  "budget": {"token_pass_usd_cap": 8, "infra_usd_cap": 3, "frank_hours": 1},
+  "blocked_by": ["dec-token-pass-key", "suite-curation", "worker-phase-0"],
+  "clock": {"ttl_days": 30, "started": null},
+  "next_gate": {"to": "S2", "receipt": "lab/results/EXP-002.md harness table plus install provenance notes", "due": "30 days after start"},
+  "decision_it_feeds": "Which harness the cloud worker runs, and which one oh-my-starlight targets first.",
+  "preconditions": [
+    "Install omo from a pinned package (bun add omo-ai@<version>), not the curl-pipe-shell installer.",
+    "Set OMO_SEND_ANONYMOUS_TELEMETRY=0 and OMO_DISABLE_POSTHOG=1; do not run omo setup against a config holding live keys.",
+    "Confirm native omo has a headless mode and can use an OpenAI-compatible Gateway endpoint (open issues 8815, 6813). If not, that is the result."
+  ],
+  "prior_evidence": [
+    {
+      "claim": "One vendor benchmark on DeepSeek V4 Flash found pi passed 20 of 30 tasks against oh-my-pi at 17 of 30, at about a quarter of the cost per success.",
+      "source": "Composio blog on pi vs omp",
+      "caveat": "Vendor blog, one model, 30 tasks. It motivates the test only."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "EXP-007",
+  "title": "Can a Vercel Eve agent turn a GitHub issue into a draft PR as well as the Railway worker?",
+  "pillar": "cloud-workers",
+  "projects": ["agentic-ops", "acos"],
+  "hypothesis": "An Eve agent on Vercel completes the same 5 issue-to-draft-PR jobs as the Railway worker at comparable cost, with less operational work for us.",
+  "status": "proposed",
+  "state": "S1",
+  "owner": "claude",
+  "owner_general": "cto",
+  "verifier": "frank",
+  "human_gate": "Frank defines 'software factory' and approves any Vercel project creation.",
+  "runs_on": [
+    {"where": "vercel", "why": "Eve is built to run on Vercel Sandboxes and Workflows."}
+  ],
+  "arms": [
+    {"harness": "eve", "model": "vercel/deepseek/deepseek-v4.1-flash", "role": "challenger"},
+    {"harness": "worker from EXP-004", "model": "same", "role": "incumbent"}
+  ],
+  "suite": "5 real low-risk issues in agentic-ops",
+  "metric": {"primary": "accepted_draft_prs_of_5", "secondary": ["cost_per_accepted_usd", "setup_hours"]},
+  "success_rule": "Eve matches the incumbent on accepted PRs and its setup plus operating hours are lower.",
+  "kill": "Stop at $5 of Token Pass or if Eve cannot spend a Token Pass key (OIDC cannot), which would be a result.",
+  "budget": {"token_pass_usd_cap": 5, "infra_usd_cap": 0, "frank_hours": 1},
+  "blocked_by": ["dec-software-factory", "EXP-004"],
+  "clock": {"ttl_days": 30, "started": null},
+  "next_gate": {"to": "S2", "receipt": "lab/results/EXP-007.md side-by-side with EXP-004", "due": "30 days after start"},
+  "decision_it_feeds": "Whether the factory runs on Vercel Eve, Railway, or both.",
+  "prior_evidence": []
+}

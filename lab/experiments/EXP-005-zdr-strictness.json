@@ -1,0 +1,30 @@
+{
+  "id": "EXP-005",
+  "title": "What does strict ZDR routing cost us in failed tasks?",
+  "pillar": "routing-brain",
+  "projects": ["agentic-ops", "sis"],
+  "hypothesis": "Fewer than 3% of ZDR-class tasks reach the end of their chain without an answer, so strict routing is affordable.",
+  "status": "blocked",
+  "state": "S1",
+  "owner": "claude",
+  "owner_general": "caio",
+  "verifier": "frank",
+  "human_gate": "Frank decides the ZDR default; this experiment only supplies the number.",
+  "runs_on": [
+    {"where": "local-c940", "why": "Passive. Reads receipts that real work already writes."},
+    {"where": "ci", "why": "The weekly review runs from receipts without calling any model."}
+  ],
+  "arms": [
+    {"harness": "any", "model": "ZDR-safe chain only", "role": "strict (current default)"}
+  ],
+  "suite": "live receipts from two weeks of normal work",
+  "metric": {"primary": "share_of_zdr_class_tasks_that_exhausted_chain", "secondary": ["share_using_allow_non_zdr"]},
+  "success_rule": "Exhaustion under 3% keeps strict as the default. Over 10% means the chain needs another Token Pass model before any free fallback is allowed.",
+  "kill": "None needed, spend is zero. Closes after 14 days of receipts or 40 ZDR-class tasks, whichever is later.",
+  "budget": {"token_pass_usd_cap": 0, "infra_usd_cap": 0, "frank_hours": 0.25},
+  "blocked_by": ["pr-377", "dec-zdr-strictness"],
+  "clock": {"ttl_days": 30, "started": null},
+  "next_gate": {"to": "S2", "receipt": "weekly_routing_review.py output attached to lab/results/EXP-005.md", "due": "30 days after start"},
+  "decision_it_feeds": "dec-zdr-strictness.",
+  "prior_evidence": []
+}

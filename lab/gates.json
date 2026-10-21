@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-10-21",
+  "items": [
+    {
+      "id": "dec-token-pass-key",
+      "kind": "decision",
+      "title": "Create a Token Pass key named lab-worker in the Vercel dashboard (Token Pass tab), then rotate the exposed key",
+      "owner": "frank",
+      "status": "open",
+      "why": "A Token Pass key can only be created in the dashboard. The old key was pasted in chat and sits in plaintext in the opencode config."
+    },
+    {
+      "id": "dec-zdr-strictness",
+      "kind": "decision",
+      "title": "ZDR classes: stay strict (no free fallback) or allow free fallbacks",
+      "owner": "frank",
+      "status": "open",
+      "why": "Strict is the safe default and the current code. EXP-005 measures what strictness costs before you loosen it."
+    },
+    {
+      "id": "dec-railway-budget",
+      "kind": "decision",
+      "title": "Approve a Railway infra cap of $20 per month for the lab",
+      "owner": "frank",
+      "status": "open",
+      "why": "Proposal, not a quote. Railway pricing and sleep behaviour are unverified until EXP-004 measures them."
+    },
+    {
+      "id": "dec-software-factory",
+      "kind": "decision",
+      "title": "Say what 'software factory' refers to",
+      "owner": "frank",
+      "status": "open",
+      "why": "The term was not found in the repos. EXP-007 is parked until it is defined."
+    },
+    {
+      "id": "dec-delete-low-budget-keys",
+      "kind": "decision",
+      "title": "Delete the $1-budget gateway keys after a week of zero spend",
+      "owner": "frank",
+      "status": "open",
+      "why": "Housekeeping. Fewer keys means fewer leak paths."
+    },
+    {
+      "id": "pr-377",
+      "kind": "work",
+      "title": "Routing brain hardening: Codex round 1 asked for changes, fixes in progress, then re-review, registry preflight, merge",
+      "owner": "claude",
+      "status": "in-progress",
+      "why": "Receipts and budget enforcement that every experiment depends on."
+    },
+    {
+      "id": "suite-curation",
+      "kind": "work",
+      "title": "Curate suite starlight-core-v0: 12 replayable tasks from closed estate PRs",
+      "owner": "claude",
+      "status": "open",
+      "why": "A comparison needs the same tasks with a test that decides pass or fail."
+    },
+    {
+      "id": "worker-phase-0",
+      "kind": "work",
+      "title": "Worker Phase 0: container, entrypoint, per-key budget, receipts out",
+      "owner": "claude",
+      "status": "open",
+      "why": "Isolated place to run harnesses we do not want installed on the YELLOW-zone laptop."
+    }
+  ]
+}

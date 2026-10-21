@@ -59,6 +59,13 @@ jobs:
             tests.test_night_runner \
             -v
 
+      - name: Research lab registry validates and the dashboard builds
+        run: |
+          set -e
+          python -m unittest tests.test_lab_registry -v
+          python lab/build_lab.py --check
+          python lab/build_lab.py --out "$RUNNER_TEMP/lab.html"
+
       - name: Queue documents validate empty-active + no closed-PR actives
         run: |
           set -e

@@ -1,0 +1,30 @@
+{
+  "id": "EXP-006",
+  "title": "How far do free models go on their own?",
+  "pillar": "ecosystem",
+  "projects": ["agentic-ops", "frankx", "acos"],
+  "hypothesis": "A free-only profile accepts at least 60% of scout, review and bulk tasks and at least 35% of code tasks.",
+  "status": "blocked",
+  "state": "S1",
+  "owner": "claude",
+  "owner_general": "caio",
+  "verifier": "codex",
+  "human_gate": "Frank approves publishing any oh-my-starlight pack.",
+  "runs_on": [
+    {"where": "local-c940", "why": "Free models cost nothing, so one arm at a time on the laptop is fine."}
+  ],
+  "arms": [
+    {"harness": "opencode", "model": "opencode/* free models only, via enabled_providers", "role": "free profile"},
+    {"harness": "opencode", "model": "winner of EXP-001", "role": "paid reference"}
+  ],
+  "suite": "starlight-core-v0",
+  "metric": {"primary": "accepted_rate_by_task_class", "secondary": ["median_wall_seconds"]},
+  "success_rule": "Per class, the free profile is marketed for a class only if it reaches the thresholds in the hypothesis. Classes below threshold are documented as needing Token Pass.",
+  "kill": "None needed, spend is zero. Stop after 12 tasks x 2 arms.",
+  "budget": {"token_pass_usd_cap": 0, "infra_usd_cap": 0, "frank_hours": 0.5},
+  "blocked_by": ["suite-curation"],
+  "clock": {"ttl_days": 30, "started": null},
+  "next_gate": {"to": "S2", "receipt": "lab/results/EXP-006.md class table; draft of the free profile", "due": "30 days after start"},
+  "decision_it_feeds": "What oh-my-starlight-free promises, and which classes it routes to Token Pass.",
+  "prior_evidence": []
+}
