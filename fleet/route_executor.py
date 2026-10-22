@@ -10,6 +10,13 @@ Policy enforced here (not just documented):
 - ZDR: a class with zdr_required only walks models listed under token_pass
   (zero data retention). Free/non-ZDR fallbacks are excluded unless the caller
   passes allow_non_zdr=True, which is stamped on the receipt.
+- Free routing is opt-in: a class that does not require ZDR (scout, review, vision)
+  lists opencode/*-free models, which run on OpenCode's endpoint and outside the
+  Vercel gateway key. Unless the caller passes allow_free=True those classes are
+  served by the cheapest ZDR gateway model with an explicit non-zero ceiling
+  (the class's zdr_cost_ceiling_usd), so the gateway key covers the call and the
+  ledger counts its cost. effective_route() is the one function that decides this;
+  route(), the admission checks, record_receipt() and gen_omo_config all use it.
 - Budget: preflight() refuses a paid model when the month's paid spend, the live
   reservations and the estimate would pass token_pass.hard_cap_usd. reserve()
   does the same check and records the reservation in one locked step, so two
@@ -135,8 +142,19 @@ def zdr_safe_chain(schema: dict, task_class: str) -> list[str]:
     return out
 
 
-def route(task_class: str, allow_non_zdr: bool = False) -> dict:
-    schema = load_schema()
+def cheapest_zdr_model(schema: dict) -> str:
+    """Cheapest model priced under token_pass.models (input + output per 1M), name breaks ties."""
+    models = schema["token_pass"]["models"]
+    return min(models, key=lambda m: (models[m]["input"] + models[m]["output"], m))
+
+
+def effective_route(schema: dict, task_class: str, allow_non_zdr: bool = False,
+                    allow_free: bool = False) -> dict:
+    """The route a class actually gets: chain, primary and cost ceiling in one place.
+
+    A class that does not require ZDR is served by the cheapest ZDR gateway model
+    (ceiling zdr_cost_ceiling_usd, which must be positive) unless allow_free is set,
+    in which case it keeps its own free chain and zero ceiling."""
     if task_class not in schema.get("task_classes", {}):
         raise ValueError(f"Unknown task class: {task_class}")
     route_def = schema["task_classes"][task_class]
@@ -145,28 +163,46 @@ def route(task_class: str, allow_non_zdr: bool = False) -> dict:
         if k not in route_def:
             raise ValueError(f"task class '{task_class}' missing field: {k}")
     full = [route_def["primary"]] + list(route_def["fallbacks"])
-    chain = full if allow_non_zdr else zdr_safe_chain(schema, task_class)
+    ceiling = route_def["cost_ceiling_usd"]
+    replaced = not route_def["zdr_required"] and not allow_free
+    if replaced:
+        ceiling = route_def.get("zdr_cost_ceiling_usd")
+        if not _finite_number(ceiling) or ceiling <= 0:
+            raise ValueError(f"task class '{task_class}' needs a positive zdr_cost_ceiling_usd "
+                             f"to be served without free models")
+        chain = [cheapest_zdr_model(schema)]
+    elif allow_non_zdr:
+        chain = full
+    else:
+        chain = zdr_safe_chain(schema, task_class)
     excluded = [m for m in full if m not in chain]
     return {
         "task_class": task_class,
-        "primary": route_def["primary"],
+        "primary": chain[0] if replaced else route_def["primary"],
         "variant": route_def["variant"],
-        "fallbacks": [m for m in chain if m != route_def["primary"]],
-        "cost_ceiling_usd": route_def["cost_ceiling_usd"],
+        "fallbacks": [m for m in chain if m != (chain[0] if replaced else route_def["primary"])],
+        "cost_ceiling_usd": ceiling,
         "zdr_required": route_def["zdr_required"],
         "chain": chain,
         "zdr_excluded": excluded,
         "allow_non_zdr": allow_non_zdr,
+        "allow_free": allow_free,
+        "free_replaced": replaced,
     }
 
 
-def pick_next(failed: list[str], task_class: str, allow_non_zdr: bool = False) -> str | None:
+def route(task_class: str, allow_non_zdr: bool = False, allow_free: bool = False) -> dict:
+    return effective_route(load_schema(), task_class, allow_non_zdr, allow_free)
+
+
+def pick_next(failed: list[str], task_class: str, allow_non_zdr: bool = False,
+              allow_free: bool = False) -> str | None:
     """Walk the fallback chain, skipping already-failed models.
 
     Returns None when the entire chain is exhausted; callers MUST handle None
     (do not dereference the result without a guard).
     """
-    r = route(task_class, allow_non_zdr)
+    r = route(task_class, allow_non_zdr, allow_free)
     for m in r["chain"]:
         if m not in failed:
             return m
@@ -261,9 +297,10 @@ def release_reservation(reservation_id: str, reason: str) -> dict:
     return event
 
 
-def _admit(task_class: str, model: str, est_cost_usd: float | None, allow_non_zdr: bool) -> dict:
+def _admit(task_class: str, model: str, est_cost_usd: float | None, allow_non_zdr: bool,
+           allow_free: bool = False) -> dict:
     """Pure admission check; raises on anything that should not run."""
-    r = route(task_class, allow_non_zdr)
+    r = route(task_class, allow_non_zdr, allow_free)
     if model not in r["chain"]:
         raise ValueError(f"model '{model}' is not allowed for '{task_class}': {r['chain']}")
     schema = load_schema()
@@ -304,13 +341,13 @@ def _admit(task_class: str, model: str, est_cost_usd: float | None, allow_non_zd
 
 
 def preflight(task_class: str, model: str, est_cost_usd: float | None = None,
-              allow_non_zdr: bool = False) -> dict:
+              allow_non_zdr: bool = False, allow_free: bool = False) -> dict:
     """Check a call BEFORE it is made, without holding any headroom."""
-    return _admit(task_class, model, est_cost_usd, allow_non_zdr)
+    return _admit(task_class, model, est_cost_usd, allow_non_zdr, allow_free)
 
 
 def reserve(task_class: str, model: str, est_cost_usd: float | None = None,
-            allow_non_zdr: bool = False) -> dict:
+            allow_non_zdr: bool = False, allow_free: bool = False) -> dict:
     """Admit a call and hold its estimate against the cap until record_receipt()
     settles it. Check and hold happen under one lock, so concurrent callers
     cannot be admitted into the same headroom."""
@@ -318,7 +355,7 @@ def reserve(task_class: str, model: str, est_cost_usd: float | None = None,
     ledger.parent.mkdir(parents=True, exist_ok=True)
     try:
         with _locked(ledger):
-            status = _admit(task_class, model, est_cost_usd, allow_non_zdr)
+            status = _admit(task_class, model, est_cost_usd, allow_non_zdr, allow_free)
             if is_paid(model, load_schema()):
                 rid = uuid.uuid4().hex[:12]
                 held = status["held_usd"]
@@ -409,13 +446,13 @@ def _countable_receipt(r: dict) -> bool:
     """True when a stored receipt is complete and month_paid_spend() will count it:
     every field present and typed, a parseable timestamp, a finite cost in range."""
     try:
-        datetime.fromisoformat(r["ts"])
+        _as_utc(datetime.fromisoformat(r["ts"]))  # the path month_paid_spend() takes; may overflow
         return (isinstance(r["id"], str) and isinstance(r["used"], str) and isinstance(r["task_class"], str)
                 and _finite_number(r["cost_usd"]) and r["cost_usd"] >= 0
                 and isinstance(r["latency_ms"], int) and not isinstance(r["latency_ms"], bool)
                 and 0 <= r["latency_ms"] <= MAX_SANE_LATENCY_MS
                 and isinstance(r["success"], bool) and isinstance(r["over_ceiling"], bool))
-    except (KeyError, ValueError, TypeError):
+    except (KeyError, ValueError, TypeError, OverflowError):
         return False
 
 
@@ -460,7 +497,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
                    cost_usd: float, latency_ms: int, success: bool,
                    provider: str = "", machine: str = "",
                    allow_non_zdr: bool = False, synthetic: bool = False,
-                   reservation_id: str | None = None) -> dict:
+                   reservation_id: str | None = None, allow_free: bool = False) -> dict:
     """Append a routing receipt (jsonl) and return it. A reservation_id from
     reserve() is settled in the same locked step.
 
@@ -468,7 +505,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
     ceiling is flagged over_ceiling rather than refused, so the ledger and the
     weekly review can see it.
     """
-    r = route(task_class, allow_non_zdr)  # validates up front
+    r = route(task_class, allow_non_zdr, allow_free)  # validates up front
     if used not in r["chain"]:
         raise ValueError(f"used model '{used}' is not in the chain for '{task_class}': {r['chain']}")
     if not _finite_number(cost_usd) or cost_usd < 0:
@@ -544,9 +581,11 @@ def main():
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--allow-non-zdr", action="store_true",
                     help="Include non-ZDR fallbacks for ZDR-required classes (stamped on receipts)")
+    ap.add_argument("--allow-free", action="store_true",
+                    help="Keep opencode/*-free models for scout, review and vision (outside the ZDR gateway key)")
     args = ap.parse_args()
     try:
-        r = route(args.task_class, args.allow_non_zdr)
+        r = route(args.task_class, args.allow_non_zdr, args.allow_free)
     except (FileNotFoundError, ValueError) as e:
         print(f"error: {e}", file=__import__("sys").stderr)
         raise SystemExit(2)

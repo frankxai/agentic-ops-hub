@@ -36,6 +36,9 @@ def main():
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--allow-non-zdr", action="store_true",
                     help="Let ZDR-required classes fall back to non-ZDR (free) models; stamped on the receipt")
+    ap.add_argument("--allow-free", action="store_true",
+                    help="Keep opencode/*-free models for scout, review and vision. They run outside the "
+                         "Vercel gateway key, so use only when nothing confidential can reach the call")
     ap.add_argument("--preflight", action="store_true", help="Check a planned call against ceiling and budget")
     ap.add_argument("--est-cost", type=float, default=None,
                     help="Estimated cost USD for --preflight (required and > 0 for paid models)")
@@ -56,7 +59,7 @@ def main():
 
     try:
         c = classify(task)
-        r = route(c["class"], args.allow_non_zdr)
+        r = route(c["class"], args.allow_non_zdr, args.allow_free)
     except (FileNotFoundError, ValueError, KeyError) as e:
         _fail(str(e))
 
@@ -72,7 +75,7 @@ def main():
         model = args.used or r["primary"]
         try:
             admit = preflight if args.no_reserve else reserve
-            status = admit(c["class"], model, args.est_cost, args.allow_non_zdr)
+            status = admit(c["class"], model, args.est_cost, args.allow_non_zdr, args.allow_free)
         except (ValueError, TimeoutError, OSError) as e:  # BudgetError and LedgerBusy are ValueErrors
             _fail(str(e))
         print(json.dumps({"class": c["class"], **status}))
@@ -89,7 +92,7 @@ def main():
             receipt = record_receipt(c["class"], args.used, args.used != r["primary"], args.cost,
                                      args.latency, args.record == "success", args.provider,
                                      allow_non_zdr=args.allow_non_zdr, synthetic=args.synthetic,
-                                     reservation_id=args.reservation)
+                                     reservation_id=args.reservation, allow_free=args.allow_free)
         except (ValueError, FileNotFoundError, TimeoutError, OSError) as e:
             _fail(str(e))
         print(f"receipt recorded: class={c['class']} used={args.used} success={args.record == 'success'}")
@@ -110,6 +113,8 @@ def main():
         "zdr_excluded": r["zdr_excluded"],
         "cost_ceiling_usd": r["cost_ceiling_usd"],
         "zdr_required": r["zdr_required"],
+        "free_replaced": r["free_replaced"],
+        "allow_free": r["allow_free"],
     }
     if args.json:
         print(json.dumps(out, indent=2))
@@ -120,6 +125,8 @@ def main():
         if out["zdr_excluded"]:
             print(f"excluded (not ZDR): {out['zdr_excluded']}  (use --allow-non-zdr to include)")
         print(f"cost_ceiling=${out['cost_ceiling_usd']}  zdr={out['zdr_required']}")
+        if out["free_replaced"]:
+            print("free models skipped (outside the ZDR gateway key); use --allow-free to opt in")
 
 
 if __name__ == "__main__":

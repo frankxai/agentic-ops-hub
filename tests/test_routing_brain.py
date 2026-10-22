@@ -30,7 +30,7 @@ def _write_worker(args):
     os.environ["STARLIGHT_RECEIPTS_DIR"] = d
     for _ in range(n):
         route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0, 5, True,
-                                      synthetic=True)
+                                      synthetic=True, allow_free=True)
 
 
 class TmpLedger(unittest.TestCase):
@@ -56,7 +56,7 @@ class CostGuards(TmpLedger):
         self.assertEqual(len(self.ledger.read_text().splitlines()), 1)
 
     def test_free_class_ceiling_is_zero(self):
-        r = route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0.0001, 5, True)
+        r = route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0.0001, 5, True, allow_free=True)
         self.assertTrue(r["over_ceiling"])
 
     def test_off_chain_model_rejected(self):
@@ -76,14 +76,14 @@ class CostGuards(TmpLedger):
         with patch.object(route_executor, "month_paid_spend", return_value=cap - 0.01):
             with self.assertRaises(route_executor.BudgetError):
                 route_executor.preflight("code", "vercel/zai/glm-5.3", 0.05)
-            route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", 0)
+            route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", 0, allow_free=True)
 
 
 class ZdrEnforcement(unittest.TestCase):
     def test_zdr_required_classes_exclude_free_fallbacks(self):
         for cls, d in SCHEMA["task_classes"].items():
             if d["zdr_required"]:
-                chain = route_executor.route(cls)["chain"]
+                chain = route_executor.route(cls, allow_free=True)["chain"]
                 self.assertTrue(all(m.startswith("vercel/") for m in chain), (cls, chain))
 
     def test_override_restores_free_fallbacks_and_is_stamped(self):
@@ -98,12 +98,12 @@ class ZdrEnforcement(unittest.TestCase):
 
     def test_free_classes_never_resolve_to_paid_models(self):
         for cls in ("scout", "review", "vision"):
-            for m in route_executor.route(cls)["chain"]:
+            for m in route_executor.route(cls, allow_free=True)["chain"]:
                 self.assertTrue(m.startswith("opencode/"), (cls, m))
 
     def test_pick_next_returns_none_when_exhausted(self):
-        chain = route_executor.route("scout")["chain"]
-        self.assertIsNone(route_executor.pick_next(chain, "scout"))
+        chain = route_executor.route("scout", allow_free=True)["chain"]
+        self.assertIsNone(route_executor.pick_next(chain, "scout", allow_free=True))
 
 
 class Ledger(TmpLedger):
@@ -117,11 +117,11 @@ class Ledger(TmpLedger):
             json.loads(ln)
 
     def test_lf_line_endings(self):
-        route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0, 5, True)
+        route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0, 5, True, allow_free=True)
         self.assertNotIn(b"\r", self.ledger.read_bytes())
 
     def test_receipt_timestamp_is_utc(self):
-        r = route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0, 5, True)
+        r = route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0, 5, True, allow_free=True)
         self.assertEqual(datetime.fromisoformat(r["ts"]).utcoffset(), timedelta(0))
 
 
@@ -384,7 +384,7 @@ class BudgetReservation(TmpLedger):
         self.assertEqual(route_executor.reserved_usd(now=later), 0.0)
 
     def test_free_models_reserve_nothing(self):
-        res = route_executor.reserve("scout", "opencode/mimo-v2.6-flash-free", None)
+        res = route_executor.reserve("scout", "opencode/mimo-v2.6-flash-free", None, allow_free=True)
         self.assertIsNone(res["reservation_id"])
         self.assertFalse((Path(self.tmp.name) / "reservations.jsonl").exists())
 
@@ -398,7 +398,7 @@ class BudgetReservation(TmpLedger):
         for est in (None, 0, 0.0):
             with self.assertRaises(ValueError):
                 route_executor.preflight("code", self.GLM, est)
-        route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", None)
+        route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", None, allow_free=True)
 
     def test_paid_admission_stops_once_the_cap_is_reached(self):
         cap = SCHEMA["token_pass"]["hard_cap_usd"]
@@ -634,7 +634,7 @@ class ReservationBinding(TmpLedger):
         res = route_executor.reserve("code", self.GLM, 0.50)
         with self.assertRaises(ValueError):
             route_executor.record_receipt("scout", self.FREE, False, 0, 5, True,
-                                          reservation_id=res["reservation_id"])
+                                          reservation_id=res["reservation_id"], allow_free=True)
         with self.assertRaises(ValueError):
             route_executor.record_receipt("code", self.FLASH, True, 0.01, 5, True,
                                           reservation_id=res["reservation_id"])
@@ -658,7 +658,7 @@ class ReservationBinding(TmpLedger):
             res = route_executor.reserve("code", self.GLM, 0.50)
             with self.assertRaises(ValueError):
                 route_executor.record_receipt("scout", self.FREE, False, 0, 5, True,
-                                              reservation_id=res["reservation_id"])
+                                              reservation_id=res["reservation_id"], allow_free=True)
             with self.assertRaises(route_executor.BudgetError):
                 route_executor.reserve("code", self.GLM, 0.50)
 
@@ -695,7 +695,7 @@ class UnusableSharedRoot(unittest.TestCase):
                 with self.assertRaises(route_executor.BudgetError) as cm:
                     fn("code", self.GLM, 0.1)
                 self.assertIn("shared", str(cm.exception).lower())
-            free = route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", None)
+            free = route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", None, allow_free=True)
             self.assertEqual(free["model"], "opencode/mimo-v2.6-flash-free")
 
     def test_env_override_counts_as_a_usable_root(self):
@@ -1096,7 +1096,7 @@ class Round5Mechanical(TmpLedger):
             self.assertFalse(route_executor.shared_root_usable())
             with self.assertRaises(route_executor.BudgetError):
                 route_executor.preflight("code", self.GLM, 0.10)
-            route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free")
+            route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", allow_free=True)
 
     # 6: an absurd reservation estimate is malformed, not a crash
     def test_absurd_reservation_estimate_does_not_crash_admission(self):
@@ -1174,6 +1174,132 @@ class Round6Recovery(TmpLedger):
         self.assertEqual(got["reservation_id"], res["reservation_id"])
         self.assertAlmostEqual(route_executor.reserved_usd(), 0.0)
         self.assertAlmostEqual(route_executor.month_paid_spend(), 0.50)
+
+
+class Round8FreeOptIn(TmpLedger):
+    """Codex round 8: free routing is opt-in at every entry point, and one function owns the effective route."""
+    FLASH = "vercel/deepseek/deepseek-v4.1-flash"
+
+    def run_cli(self, *args):
+        env = {**os.environ, "STARLIGHT_RECEIPTS_DIR": self.tmp.name}
+        return subprocess.run([sys.executable, "-I", "-B", str(FLEET / "route_task.py"), *args],
+                              capture_output=True, text=True, env=env)
+
+    def test_library_default_never_returns_a_non_gateway_model(self):
+        for cls in ("scout", "review", "vision"):
+            r = route_executor.route(cls)
+            self.assertTrue(all(m in route_executor.zdr_models(SCHEMA) for m in r["chain"]), (cls, r["chain"]))
+            self.assertGreater(r["cost_ceiling_usd"], 0)
+            self.assertTrue(r["free_replaced"])
+            free = route_executor.route(cls, allow_free=True)
+            self.assertTrue(any(m.startswith("opencode/") for m in free["chain"]))
+            self.assertEqual(free["cost_ceiling_usd"], 0)
+
+    def test_cli_read_only_request_goes_to_the_gateway_by_default(self):
+        p = self.run_cli("Read notes.txt", "--json")
+        self.assertEqual(p.returncode, 0, p.stderr)
+        out = json.loads(p.stdout)
+        self.assertEqual(out["class"], "scout")
+        self.assertEqual(out["chain"], [self.FLASH])
+        self.assertTrue(out["free_replaced"])
+
+    def test_cli_allow_free_is_the_only_way_to_a_free_model(self):
+        p = self.run_cli("Read notes.txt", "--json", "--allow-free")
+        out = json.loads(p.stdout)
+        self.assertTrue(out["primary"].startswith("opencode/"))
+        self.assertFalse(out["free_replaced"])
+
+    def test_replacement_is_admitted_and_recorded_with_a_positive_ceiling(self):
+        for cls in ("scout", "review", "vision"):
+            r = route_executor.route(cls)
+            status = route_executor.preflight(cls, self.FLASH, r["cost_ceiling_usd"] / 2)
+            self.assertEqual(status["model"], self.FLASH)
+            rec = route_executor.record_receipt(cls, self.FLASH, False, r["cost_ceiling_usd"] / 2, 5, True)
+            self.assertFalse(rec["over_ceiling"])
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.preflight(cls, self.FLASH, r["cost_ceiling_usd"] * 2)
+        with self.assertRaises(ValueError):
+            route_executor.preflight("scout", "opencode/mimo-v2.6-flash-free", 0)
+
+    def test_every_model_in_the_generated_config_passes_executor_admission(self):
+        for allow_free in (False, True):
+            cfg = gen_omo_config.build(SCHEMA, allow_free)["[opencode]"]
+            slots = [(a, gen_omo_config.AGENT_MAP[a], v) for a, v in cfg["agents"].items()]
+            slots += [(c, gen_omo_config.CATEGORY_MAP[c], v) for c, v in cfg["categories"].items()]
+            for name, cls, slot in slots:
+                models = [m["model"] if isinstance(m, dict) else m
+                          for m in slot.get("models", []) + slot.get("fallback_models", []) + [slot.get("model")] if m]
+                for m in models:
+                    r = route_executor.route(cls, allow_free=allow_free)
+                    self.assertIn(m, r["chain"], (name, cls, m, allow_free))
+                    est = None if not route_executor.is_paid(m, SCHEMA) else r["cost_ceiling_usd"] / 2
+                    route_executor.preflight(cls, m, est, allow_free=allow_free)
+                    route_executor.record_receipt(cls, m, False, 0, 1, True, allow_free=allow_free, synthetic=True)
+
+    def test_a_class_without_a_zdr_ceiling_is_refused_not_given_zero(self):
+        schema = json.loads(json.dumps(SCHEMA))
+        del schema["task_classes"]["scout"]["zdr_cost_ceiling_usd"]
+        with self.assertRaises(ValueError):
+            route_executor.effective_route(schema, "scout")
+
+    def test_concurrent_generations_do_not_cross_install(self):
+        import threading
+        out = Path(self.tmp.name) / "omo.jsonc"
+        texts = {i: f"// run {i}" + chr(10) + "x" * 5000 for i in range(12)}
+        errors = []
+
+        def go(i):
+            try:
+                gen_omo_config._install(out, texts[i])
+            except Exception as e:  # noqa: BLE001
+                errors.append(e)
+
+        threads = [threading.Thread(target=go, args=(i,)) for i in texts]
+        [t.start() for t in threads]
+        [t.join() for t in threads]
+        self.assertEqual(errors, [])
+        self.assertIn(out.read_text(encoding="utf-8"), texts.values())
+        self.assertEqual([p.name for p in Path(self.tmp.name).glob("*.tmp")], [])
+
+    def test_each_invocation_gets_its_own_temp_file(self):
+        names = []
+        real = tempfile.mkstemp
+
+        def spy(*a, **k):
+            fd, name = real(*a, **k)
+            names.append(name)
+            return fd, name
+
+        out = Path(self.tmp.name) / "omo.jsonc"
+        with patch.object(gen_omo_config.tempfile, "mkstemp", side_effect=spy):
+            gen_omo_config._install(out, "a")
+            gen_omo_config._install(out, "b")
+        self.assertEqual(len(set(names)), 2)
+
+    def test_overflowing_timestamp_is_not_countable_and_keeps_the_hold(self):
+        glm = "vercel/zai/glm-5.3"
+        self.assertFalse(route_executor._countable_receipt(
+            {"ts": "0001-01-01T00:00:00+01:00", "id": "a", "used": glm, "task_class": "code", "cost_usd": 0.5,
+             "latency_ms": 5, "success": True, "over_ceiling": False}))
+        cap = SCHEMA["token_pass"]["hard_cap_usd"]
+        route_executor.record_receipt("code", glm, False, cap - 0.50, 5, True)
+        res = route_executor.reserve("code", glm, 0.50)
+        real = route_executor._append_unlocked
+
+        def flaky(path, line):
+            if '"settle"' in line:
+                raise OSError("disk full")
+            return real(path, line)
+
+        with patch.object(route_executor, "_append_unlocked", side_effect=flaky):
+            with self.assertRaises(OSError):
+                route_executor.record_receipt("code", glm, False, 0.50, 5, True, reservation_id=res["reservation_id"])
+        rows = [json.loads(line) for line in self.ledger.read_text().splitlines()]
+        rows[-1]["ts"] = "0001-01-01T00:00:00+01:00"
+        self.ledger.write_text(chr(10).join(json.dumps(r) for r in rows) + chr(10), encoding="utf-8")
+        with self.assertRaises(ValueError):
+            route_executor.record_receipt("code", glm, False, 0.50, 5, True, reservation_id=res["reservation_id"])
+        self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
 
 
 if __name__ == "__main__":

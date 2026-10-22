@@ -161,3 +161,13 @@ What changed in `fleet/route_classifier.py`:
 Cost: free routing of the 100 natural read-only prompts fell from 41 to 35. The floor test stays at 35 and was not loosened.
 
 Plainly: the classifier is a cost heuristic, not the security boundary. Four review rounds found leaks a word list cannot close, and this change does not claim otherwise. The real control is a gateway key that can only reach ZDR providers, so that a classifier miss fails instead of leaking. Frank creates that key in the dashboard. Until then, treat free routing as best effort for requests that carry nothing sensitive.
+
+## Codex round 8 fixes
+
+Codex round 8 (on `749bff5`) found two design issues and two mechanical ones. Fixed in this commit:
+- P1, free routing was opt-in only in the generator. Now it is opt-in at every entry point: `route()` and the admission, receipt and `pick_next` calls take `allow_free` (default off), and `route_task.py` and `route_executor.py` take `--allow-free`. Without it scout, review and vision are served by the cheapest ZDR gateway model.
+- P1, the generator's paid replacements were off-chain for the executor and had a zero ceiling. `route_executor.effective_route()` now derives the chain and ceiling in one place, and `gen_omo_config.py` calls it. Each free class has an explicit `zdr_cost_ceiling_usd` in the schema; a missing or non-positive value is an error, not zero. A test checks that every model in the generated config (both modes) passes `preflight` and `record_receipt` for its class.
+- P2, concurrent generator runs shared one `.tmp` name. The temp file is now created with `tempfile.mkstemp` in the target directory, one per invocation, and the replace retries on a Windows `PermissionError`.
+- P3, `_countable_receipt` accepted a timestamp that overflows UTC conversion (`0001-01-01T00:00:00+01:00`). It now uses `_as_utc`, the path `month_paid_spend` takes, and treats `OverflowError` as uncountable.
+
+Cost of the safe default: scout, review and vision calls spend Token Pass credit unless the caller passes `--allow-free`. Plainly: the gateway key guarantees only the calls that go through the gateway.

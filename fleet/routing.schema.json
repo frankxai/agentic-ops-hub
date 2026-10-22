@@ -29,12 +29,12 @@
     }
   },
   "task_classes": {
-    "scout":      { "description": "Fast exploration, file search, codebase mapping", "primary": "opencode/mimo-v2.6-flash-free", "variant": null, "fallbacks": ["opencode/beam-free", "opencode/minimax-m3.1-flash-free"], "cost_ceiling_usd": 0, "zdr_required": false },
-    "review":     { "description": "Code review, lint, style, best-practice", "primary": "opencode/deepseek-v4.1-flash-free", "variant": "medium", "fallbacks": ["opencode/beam-free", "opencode/minimax-m3.1-flash-free"], "cost_ceiling_usd": 0, "zdr_required": false },
+    "scout":      { "description": "Fast exploration, file search, codebase mapping", "primary": "opencode/mimo-v2.6-flash-free", "variant": null, "fallbacks": ["opencode/beam-free", "opencode/minimax-m3.1-flash-free"], "cost_ceiling_usd": 0, "zdr_cost_ceiling_usd": 0.02, "zdr_required": false },
+    "review":     { "description": "Code review, lint, style, best-practice", "primary": "opencode/deepseek-v4.1-flash-free", "variant": "medium", "fallbacks": ["opencode/beam-free", "opencode/minimax-m3.1-flash-free"], "cost_ceiling_usd": 0, "zdr_cost_ceiling_usd": 0.05, "zdr_required": false },
     "bulk":       { "description": "High-volume extraction, classification, summaries", "primary": "vercel/deepseek/deepseek-v4.1-flash", "variant": null, "fallbacks": ["opencode/deepseek-v4.1-flash-free", "opencode/minimax-m3.1-flash-free"], "cost_ceiling_usd": 0.05, "zdr_required": true },
     "code":       { "description": "Everyday coding, edits, refactoring, docs", "primary": "vercel/zai/glm-5.3", "variant": "medium", "fallbacks": ["vercel/deepseek/deepseek-v4.1-flash", "opencode/deepseek-v4.1-flash-free", "opencode/beam-free"], "cost_ceiling_usd": 0.50, "zdr_required": true },
     "hard-reasoning": { "description": "Complex multi-step reasoning, deep codegen, planning", "primary": "vercel/moonshotai/kimi-k3", "variant": "high", "fallbacks": ["vercel/zai/glm-5.3", "opencode/beam-free"], "cost_ceiling_usd": 2.00, "zdr_required": true },
-    "vision":     { "description": "Image/video/multimodal analysis", "primary": "opencode/nemotron-3.5-super-vl-free", "variant": null, "fallbacks": ["opencode/beam-free"], "cost_ceiling_usd": 0, "zdr_required": false },
+    "vision":     { "description": "Image/video/multimodal analysis", "primary": "opencode/nemotron-3.5-super-vl-free", "variant": null, "fallbacks": ["opencode/beam-free"], "cost_ceiling_usd": 0, "zdr_cost_ceiling_usd": 0.02, "zdr_required": false },
     "ultrabrain": { "description": "Hardest tasks, max reasoning", "primary": "vercel/moonshotai/kimi-k3", "variant": "max", "fallbacks": ["vercel/zai/glm-5.3"], "cost_ceiling_usd": 5.00, "zdr_required": true }
   },
   "routing_rules": [

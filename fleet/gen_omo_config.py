@@ -11,7 +11,8 @@ Run after editing routing.schema.json to keep OmO config in sync:
 By default no slot uses an opencode/* free model. Those calls go to OpenCode's own
 endpoint, not through the Vercel gateway, so a ZDR-only gateway key cannot cover them.
 Free-class slots (scout, review, vision) are mapped to the cheapest ZDR model in the
-schema's token_pass.models instead. That costs Token Pass credit and a text-only model
+schema's token_pass.models instead, through route_executor.effective_route(), the same
+function the executor admits and records calls with. That costs Token Pass credit and a text-only model
 stands in for vision until a ZDR vision model is listed in the schema.
 
 Every agent and category gets an explicit model list built from the schema's
@@ -24,12 +25,14 @@ import json
 import os
 import shutil
 import sys
+import tempfile
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from route_executor import zdr_safe_chain  # noqa: E402
+from route_executor import cheapest_zdr_model, effective_route  # noqa: E402,F401
 
 SCHEMA = HERE / "routing.schema.json"
 OMO = Path.home() / ".omo" / "omo.jsonc"
@@ -77,12 +80,6 @@ def _entry(model: str, variant: str | None) -> object:
     return {"model": model, "reasoning": variant} if variant else model
 
 
-def cheapest_zdr_model(schema: dict) -> str:
-    """Cheapest model priced under token_pass.models (input + output per 1M), name breaks ties."""
-    models = schema["token_pass"]["models"]
-    return min(models, key=lambda m: (models[m]["input"] + models[m]["output"], m))
-
-
 def build(schema: dict, allow_free_agents: bool = False) -> dict:
     classes = schema["task_classes"]
 
@@ -90,9 +87,7 @@ def build(schema: dict, allow_free_agents: bool = False) -> dict:
         return classes[cls]["zdr_required"] or not allow_free_agents
 
     def models_for(cls: str) -> list:
-        chain = zdr_safe_chain(schema, cls)
-        if not allow_free_agents and not classes[cls]["zdr_required"]:
-            chain = [cheapest_zdr_model(schema)]
+        chain = effective_route(schema, cls, allow_free=allow_free_agents)["chain"]
         variant = classes[cls]["variant"]
         return [_entry(chain[0], variant)] + chain[1:]
 
@@ -157,6 +152,27 @@ def _backup(path: Path) -> Path:
     raise RuntimeError(f"could not create a unique backup name for {path}")
 
 
+def _install(out: Path, text: str) -> None:
+    """Write text to out through a temp file only this invocation owns, so two runs
+    can never install each other's output."""
+    fd, name = tempfile.mkstemp(prefix=out.name + ".", suffix=".tmp", dir=out.parent)
+    tmp = Path(name)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as f:
+            f.write(text)
+        for attempt in range(50):
+            try:
+                tmp.replace(out)
+                break
+            except PermissionError:  # Windows: another invocation is replacing the same target right now
+                if attempt == 49:
+                    raise
+                time.sleep(0.01)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--out", type=Path, default=OMO, help="Output path (default ~/.omo/omo.jsonc)")
@@ -174,9 +190,7 @@ def main(argv=None):
     if args.out.exists():
         backup = _backup(args.out)
         print(f"Backed up {args.out} -> {backup}")
-    tmp = args.out.with_name(args.out.name + ".tmp")
-    tmp.write_text(text, encoding="utf-8")
-    tmp.replace(args.out)
+    _install(args.out, text)
     print(f"Wrote {args.out}")
     print("Restart OpenCode/OmO to pick up changes.")
 
