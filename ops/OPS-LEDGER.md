@@ -1,3 +1,11 @@
+<!-- convergence-plan-merged-20261022:start -->
+## Convergence plan merged on Frank's instruction
+
+Frank asked for #378 to be merged on 22 October. It was squash-merged at its reviewed head `4a914cb` as `13766bf` by the
+frankxai account at 10:50Z, with `scan` and `verify` green and 46 of 46 review threads resolved. `main` now holds
+[the convergence plan](plans/estate-convergence-2026-10-21.md) and the rulings recorded on 21 October.
+<!-- convergence-plan-merged-20261022:end -->
+
 <!-- estate-convergence-20261021:start -->
 ## Launch factory on one PR, Payment Link checkout ported, estate convergence plan proposed
 
