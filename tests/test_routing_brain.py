@@ -1539,5 +1539,103 @@ ok = cls in classes""",
         self.assertEqual(offenders, [], "take model fields from route_executor.effective_route()")
 
 
+class FilteredPrimary(unittest.TestCase):
+    """effective_route() must never hand back a primary that the ZDR filter removed."""
+
+    @staticmethod
+    def _schema_with_free_primary():
+        schema = json.loads(json.dumps(SCHEMA))
+        schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
+        return schema
+
+    def test_primary_comes_from_the_filtered_chain(self):
+        r = route_executor.effective_route(self._schema_with_free_primary(), "code")
+        self.assertNotEqual(r["primary"], "opencode/beam-free")
+        self.assertEqual(r["primary"], r["chain"][0])
+        self.assertIn("opencode/beam-free", r["zdr_excluded"])
+        self.assertNotIn(r["primary"], r["fallbacks"])
+
+    def test_free_primary_is_kept_only_when_non_zdr_is_explicitly_allowed(self):
+        r = route_executor.effective_route(self._schema_with_free_primary(), "code", allow_non_zdr=True)
+        self.assertEqual(r["primary"], "opencode/beam-free")
+
+    def test_empty_safe_chain_is_refused(self):
+        schema = json.loads(json.dumps(SCHEMA))
+        schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
+        schema["task_classes"]["code"]["fallbacks"] = ["opencode/minimax-m3.1-flash-free"]
+        with self.assertRaises(ValueError):
+            route_executor.effective_route(schema, "code")
+
+    def test_stock_schema_primaries_are_unchanged_for_zdr_classes(self):
+        for cls, d in SCHEMA["task_classes"].items():
+            if d["zdr_required"]:
+                self.assertEqual(route_executor.effective_route(SCHEMA, cls)["primary"], d["primary"], cls)
+
+
+class PoolAccounting(TmpLedger):
+    GLM = "vercel/zai/glm-5.3"
+    FLASH = "vercel/deepseek/deepseek-v4.1-flash"
+
+    def _row(self, i, used, cost, **extra):
+        row = {"ts": datetime.now(timezone.utc).isoformat(), "id": f"p{i}", "used": used, "task_class": "code",
+               "cost_usd": cost, "latency_ms": 1, "success": True, "over_ceiling": False}
+        row.update(extra)
+        return row
+
+    def _write(self, rows):
+        self.ledger.write_text("".join(json.dumps(r) + chr(10) for r in rows), encoding="utf-8")
+
+    def test_record_receipt_stamps_the_pool(self):
+        paid = route_executor.record_receipt("code", self.GLM, False, 0.05, 10, True)
+        free = route_executor.record_receipt("scout", "opencode/mimo-v2.6-flash-free", False, 0, 5, True,
+                                             allow_free=True)
+        self.assertEqual(paid["pool"], "token-pass")
+        self.assertEqual(free["pool"], "free")
+
+    def test_retired_model_spend_still_counts_and_blocks_the_cap(self):
+        self._write([self._row(1, self.GLM, 79.99, pool="token-pass")])
+        retired = json.loads(json.dumps(SCHEMA))
+        del retired["token_pass"]["models"][self.GLM]
+        with patch.object(route_executor, "load_schema", return_value=retired):
+            self.assertAlmostEqual(route_executor.month_paid_spend(), 79.99)
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.preflight("bulk", self.FLASH, 0.05)
+
+    def test_legacy_retired_model_receipt_without_a_pool_counts(self):
+        self._write([self._row(1, self.GLM, 79.99)])
+        retired = json.loads(json.dumps(SCHEMA))
+        del retired["token_pass"]["models"][self.GLM]
+        with patch.object(route_executor, "load_schema", return_value=retired):
+            self.assertAlmostEqual(route_executor.month_paid_spend(), 79.99)
+            with self.assertRaises(route_executor.BudgetError):
+                route_executor.preflight("bulk", self.FLASH, 0.05)
+
+    def test_legacy_free_and_zero_cost_receipts_never_count(self):
+        self._write([self._row(1, "opencode/beam-free", 0), self._row(2, "opencode/retired-thing-free", 0.0),
+                     self._row(3, self.GLM, 0)])
+        self.assertEqual(route_executor.month_paid_spend(), 0.0)
+
+    def test_declared_free_and_other_pools_do_not_count(self):
+        self._write([self._row(1, "opencode/beam-free", 0, pool="free"), self._row(2, "x/y", 0, pool="other"),
+                     self._row(3, self.GLM, 0.30, pool="token-pass")])
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.30)
+
+    def test_malformed_pool_counts_conservatively(self):
+        for bad in (None, 7, True, ["free"], {"pool": "free"}, "FREE ", "bogus"):
+            self._write([self._row(1, self.GLM, 0.25, pool=bad)])
+            self.assertAlmostEqual(route_executor.month_paid_spend(), 0.25, msg=repr(bad))
+
+    def test_mixed_pools_add_only_token_pass(self):
+        self._write([self._row(1, self.GLM, 1.0, pool="token-pass"), self._row(2, self.FLASH, 0.5),
+                     self._row(3, "opencode/beam-free", 0, pool="free"), self._row(4, "x/unlisted", 0.4),
+                     self._row(5, "x/unlisted", 0.0, pool="other")])
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 1.9)
+
+    def test_unlisted_model_that_cost_money_is_stamped_token_pass(self):
+        self.assertEqual(route_executor.receipt_pool("x/unlisted", 0.2, SCHEMA), "token-pass")
+        self.assertEqual(route_executor.receipt_pool("x/unlisted", 0.0, SCHEMA), "other")
+        self.assertEqual(route_executor.receipt_pool("opencode/beam-free", 0.0, SCHEMA), "free")
+
+
 if __name__ == "__main__":
     unittest.main()

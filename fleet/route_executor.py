@@ -127,6 +127,39 @@ def is_paid(model: str, schema: dict) -> bool:
     return isinstance(model, str) and model in zdr_models(schema)
 
 
+POOL_TOKEN_PASS, POOL_FREE, POOL_OTHER = "token-pass", "free", "other"
+
+
+def is_free_model(model: str, schema: dict) -> bool:
+    """Explicitly free: listed under free_tier.models now, or named like a free model
+    (so a retired free model is still recognised in old receipts)."""
+    if not isinstance(model, str):
+        return False
+    listed = schema.get("free_tier", {}).get("models", {})
+    return model in listed or model.endswith("-free")
+
+
+def receipt_pool(used: str, cost_usd: float, schema: dict) -> str:
+    """Which budget a call belongs to. Fail closed: only a zero-cost call on a free-marked
+    model is "free"; a model outside the catalog that cost money is Token Pass spend."""
+    if is_paid(used, schema) or cost_usd > 0:
+        return POOL_TOKEN_PASS
+    return POOL_FREE if is_free_model(used, schema) else POOL_OTHER
+
+
+def counts_toward_token_pass(r: dict, schema: dict) -> bool:
+    """Whether a stored receipt's cost belongs to the Token Pass month. Uses the receipt's own
+    pool, so retiring a model from token_pass.models cannot erase what it already cost. A pool
+    that is present but unreadable counts (conservative). A legacy receipt without a pool counts
+    when it cost money and its model is not explicitly free."""
+    if "pool" in r:
+        pool = r["pool"]
+        if pool in (POOL_FREE, POOL_OTHER):
+            return False
+        return True  # "token-pass", or anything malformed
+    return is_paid(r.get("used", ""), schema) or not is_free_model(r.get("used", ""), schema)
+
+
 def zdr_safe_chain(schema: dict, task_class: str) -> list[str]:
     """Full chain for a class, restricted to ZDR models when the class needs it."""
     d = schema["task_classes"][task_class]
@@ -175,12 +208,16 @@ def effective_route(schema: dict, task_class: str, allow_non_zdr: bool = False,
         chain = full
     else:
         chain = zdr_safe_chain(schema, task_class)
+    if not chain:
+        raise ValueError(f"task class '{task_class}' has no ZDR-safe model left in its chain; "
+                         f"add a model to token_pass.models or pass allow_non_zdr")
     excluded = [m for m in full if m not in chain]
+    primary = chain[0]  # never the raw schema primary: that model may have been filtered out
     return {
         "task_class": task_class,
-        "primary": chain[0] if replaced else route_def["primary"],
+        "primary": primary,
         "variant": route_def["variant"],
-        "fallbacks": [m for m in chain if m != (chain[0] if replaced else route_def["primary"])],
+        "fallbacks": [m for m in chain if m != primary],
         "cost_ceiling_usd": ceiling,
         "zdr_required": route_def["zdr_required"],
         "chain": chain,
@@ -241,7 +278,7 @@ def month_paid_spend(now: datetime | None = None) -> float:
             cost = float(r["cost_usd"])
         except (KeyError, ValueError, TypeError, OverflowError):
             continue
-        if ts.year == now.year and ts.month == now.month and is_paid(r.get("used", ""), schema) \
+        if ts.year == now.year and ts.month == now.month and counts_toward_token_pass(r, schema) \
                 and math.isfinite(cost) and 0 <= cost <= MAX_SANE_USD:
             total += cost
     return total
@@ -530,6 +567,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
         "synthetic": bool(synthetic),
         "reservation_id": reservation_id or None,
         "allow_free": bool(allow_free),
+        "pool": receipt_pool(used, cost_usd, load_schema()),
     }
     ledger = receipts_dir() / "routing.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)

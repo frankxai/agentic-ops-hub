@@ -43,12 +43,12 @@
     "Classes with zdr_required true (bulk, code, hard-reasoning, ultrabrain) only ever use ZDR gateway models, with or without the opt-in.",
     "Subagent background slots use bulk-class DS flash by default (cost + 403 risk on non-featured GLM/Kimi); free models only with the opt-in.",
     "Fallback chain walks on any error or empty response.",
-    "A receipt {task_class, primary, used, fallback_used, cost_usd, latency_ms, success, provider, allow_free} is written only by route_executor.record_receipt(), which route_task.py --record and library callers use. The generated OmO config, the classifier and OpenCode itself record nothing; calls made outside record_receipt() leave no receipt."
+    "A receipt {task_class, primary, used, fallback_used, cost_usd, latency_ms, success, provider, allow_free, pool} is written only by route_executor.record_receipt(), which route_task.py --record and library callers use. The generated OmO config, the classifier and OpenCode itself record nothing; calls made outside record_receipt() leave no receipt."
   ],
   "receipts": {
     "root": "C:/Users/frank/agentic-ops/fleet/receipts",
     "format": "jsonl",
-    "fields": ["ts", "task_class", "primary", "used", "fallback_used", "cost_usd", "latency_ms", "success", "provider", "machine", "allow_free"]
+    "fields": ["ts", "task_class", "primary", "used", "fallback_used", "cost_usd", "latency_ms", "success", "provider", "machine", "allow_free", "pool"]
   },
   "feedback_loop": {
     "cron": "weekly-routing-review",

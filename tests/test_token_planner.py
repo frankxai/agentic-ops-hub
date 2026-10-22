@@ -156,5 +156,34 @@ class TokenPlannerTests(unittest.TestCase):
         }
 
 
+class PinnedModelIgnoresFilteredPrimary(unittest.TestCase):
+    def test_excluded_raw_primary_is_never_pinned(self):
+        import json
+        from unittest.mock import patch
+        from fleet import route_executor
+        from fleet.token_planner import pinned_opencode_model
+
+        schema = json.loads(route_executor.SCHEMA_PATH.read_text(encoding="utf-8"))
+        schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
+        with patch.object(route_executor, "load_schema", return_value=schema):
+            pinned = pinned_opencode_model("code")
+            argv = ["opencode", "run", "-m", pinned, "task"]
+        self.assertNotIn("opencode/beam-free", " ".join(argv))
+        self.assertTrue(pinned.startswith("vercel/"), pinned)
+
+    def test_class_with_no_safe_model_refuses_to_launch(self):
+        import json
+        from unittest.mock import patch
+        from fleet import route_executor
+        from fleet.token_planner import pinned_opencode_model
+
+        schema = json.loads(route_executor.SCHEMA_PATH.read_text(encoding="utf-8"))
+        schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
+        schema["task_classes"]["code"]["fallbacks"] = ["opencode/minimax-m3.1-flash-free"]
+        with patch.object(route_executor, "load_schema", return_value=schema):
+            with self.assertRaises(PlannerError):
+                pinned_opencode_model("code")
+
+
 if __name__ == "__main__":
     unittest.main()
