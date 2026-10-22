@@ -6,7 +6,7 @@ Author: Claude Code. Status: **draft for Frank. Nothing here is sent, published,
 
 ## Who it is for
 
-A person or small team that runs **two or more coding agents** (Claude Code, OpenCode, OmO, Codex and similar) and pays for models through a gateway or provider keys they control. This is persona P1 and P2 in the product plan (`2026-10-21-product-prd-ard-funnel.md` section 4.2). It is not yet for organisations that need tenant isolation or a compliance attestation (P3).
+A person or small team that runs **two or more coding agents** (Claude Code, OpenCode, OmO, Codex and similar) and pays for models through a gateway (one account that forwards your calls to many model providers) or through provider keys they control. This is persona P1 and P2 in the product plan (`2026-10-21-product-prd-ard-funnel.md` section 4.2). It is not yet for organisations that need tenant isolation or a compliance attestation (P3).
 
 ## The problem
 
@@ -26,12 +26,12 @@ A written findings report on your configuration, produced by a **read-only** rev
 - Whether your run records are consistent, and, if you issue signed receipts, whether they verify and whether maker and checker are different parties.
 - Each finding has a severity, the file and setting it refers to, a redacted piece of evidence, and the smallest fix.
 
-Every check comes from a defect class we found in our own system during review (13 Codex review rounds on the Routing Brain, 5 on the receipt verifier). The runbook cites each one. We run the same audit on our own setup first.
+Every check comes from a defect class we found in our own system during independent review (13 review rounds on our routing layer, 5 on our receipt verifier). The runbook cites each one. So far we have run only the configuration checks (C1 to C3) on our own setup; the rest are not yet run on anyone.
 
 ## What the audit does not claim
 
 - It is not a security certification, a penetration test, or legal advice. It does not make you GDPR-compliant.
-- It does not prove a provider's zero-data-retention promise. It checks which route your calls take and whether your own controls would enforce the route you intended.
+- It does not prove a provider's zero-data-retention (ZDR: the provider keeps no copy of your prompts) promise. It checks which route your calls take and whether your own controls would enforce the route you intended.
 - It does not measure model quality, and it does not promise a saving. We have no cost-saving result yet; the experiment that would produce one (EXP-008) has not run (`lab/experiments/EXP-008-oms-vs-omo-vs-bare.json`, status `blocked`).
 - A signed receipt shows who signed what, not that its contents are true (`docs/receipts.md` in the Starlight Intelligence System repo, "The rule").
 - It reviews configuration and records you show us. It does not run your code or your agents.
@@ -42,6 +42,10 @@ Every check comes from a defect class we found in our own system during review (
 - Either a screen-share where you run the read-only commands we give you, or redacted exports of config files. We never ask for key values.
 - Your list of gateway keys with names, caps and last-use dates (from your own dashboard).
 - An hour for the walkthrough. [Frank decides: any further time estimate; none has been measured.]
+
+## Who does the work
+
+Frank, or an AI agent following the runbook under his supervision. [Frank decides: which to say, and whether the checklist itself is published free so that the paid part is the walkthrough and fixes.]
 
 ## Honest limits
 

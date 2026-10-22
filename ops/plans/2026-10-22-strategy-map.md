@@ -55,7 +55,7 @@ Author: Claude Code. Status: draft for Frank and a different-harness review. Thi
 6. **Focus rule.** Until 2026-11-20 only a nine-repo spine gets features (PR 378). The plan says which repo hosts `fleet/` is UNVERIFIED. The audit is a service plus documents, not a feature, but the helper script `scripts/audit_inspect.py` is a feature in whichever repo holds it. Confirm the host repo before merging this branch.
 7. **Dates.** First sale by 4 Nov and a customer-validated launch by 20 Nov (plan section 2) sit beside "no demand evidence" and an unpublished template. They can only both hold if the audit or an edition sells first. Flagged, not resolved.
 8. **Two routers.** Queen's model routing (starlight-swarm#39) overlaps the Routing Brain. The plan recommends Routing Brain owns policy and Queen consumes it. Still Frank's decision.
-9. **A source document that is not on main.** `fleet/HARNESS-STACK.md` defines the layer names (L0 to L4) and is cited by the measurement plan, `lab/goals.json` consumers and this map, but it is tracked only on `agent/c940/massive-action-receipts-20260803` (42 commits ahead of main, fast-forward blocked by a dirty ledger file, per the restart card). Until that branch is merged, the layer model is not on main.
+9. **A source document that is not on main.** `fleet/HARNESS-STACK.md` defines the layer names (L0 to L4) and is cited by the measurement plan, `lab/harnesses.json`, EXP-008 and this map, but it is tracked only on `agent/c940/massive-action-receipts-20260803` (42 commits ahead of main, fast-forward blocked by a dirty ledger file, per the restart card). Until that branch is merged, the layer model is not on main.
 
 ## 6. Decisions left for Frank
 
@@ -79,4 +79,18 @@ Author: Claude Code. Status: draft for Frank and a different-harness review. Thi
 
 ## Review notes
 
-Filled in after review (see below).
+**Caveat on independence.** The two reviews below were written by the same agent that drafted the documents, in two separate passes with different questions (a marketing-honesty lens and a sourcing lens). They were not run by fresh subagents, because the drafting agent was a fork and may not spawn agents. Treat them as self-review. A different harness still has to sign this branch.
+
+Marketing-honesty pass on the offer (would a stranger understand it; does it promise only what we can show; is demand evidence missing):
+- Jargon: "gateway" and "ZDR" were undefined. Fixed: both now explained in plain words.
+- "We run the same audit on our own setup first" overstated it: only C1 to C3 were run, by a script on one config. Fixed: the offer now says exactly that.
+- "13 Codex review rounds" reads as tool trivia to a stranger. Fixed: "independent review rounds".
+- Missing: who does the work, and why pay if the checklist could be free. Added a "Who does the work" section and a decision for Frank.
+- Demand evidence: none exists. The offer says so; no change possible without conversations.
+
+Sourcing pass on all three documents (is every claim sourced; contradictions with existing registries; is the map true):
+- All cited files, gates and section numbers were checked against the branch. `fleet/HARNESS-STACK.md` is not on this branch: it is tracked only on `agent/c940/massive-action-receipts-20260803`. Added as contradiction 9 and the map's L0 row now says so.
+- A reference to `lab/goals.json` as a user of the layer names was wrong (they appear in `lab/harnesses.json` and EXP-008). Fixed.
+- The "$80 cap equal to the pool" observation is not in any repo file; the runbook says so.
+- Figures: no price or saving appears. Counts used (13 and 5 review rounds, $25 and $80 caps, 9 experiments, 15 gates) each trace to a file or session note cited in the text. The 161 routing tests are the fix agent's report, not re-run here.
+- Checks run on this branch: `python lab/build_lab.py --check` (ok, 9 experiments, 15 gates); `tests.test_lab_registry`, `tests.test_receipt_bridge` and `tests.test_audit_inspect` (77 tests, all pass).
