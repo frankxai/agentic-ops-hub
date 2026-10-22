@@ -16,7 +16,7 @@ non-ZDR class only when ALL of these hold:
   (e) it names nothing sensitive (SENSITIVE substrings, matched anywhere).
 Any unknown word means ZDR. A verb nobody listed ("erase", "unlink", "nuke") is
 unknown, so it cannot reach a free model. The cost is Token Pass credit for
-requests that are harmless but use a word we do not know, never a leak.
+requests that are harmless but use a word we do not know.
 
 This is a cost heuristic, not the security boundary. Rounds 4-6 of review kept
 finding phrasings a word list misses. The guarantee that ZDR work cannot reach a

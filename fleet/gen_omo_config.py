@@ -6,6 +6,13 @@ Run after editing routing.schema.json to keep OmO config in sync:
     python gen_omo_config.py --dry-run          # print, write nothing
     python gen_omo_config.py --out PATH         # write somewhere else
     python gen_omo_config.py                    # write ~/.omo/omo.jsonc, backing up the old file
+    python gen_omo_config.py --allow-free-agents  # keep opencode/*-free models (outside the ZDR gateway key)
+
+By default no slot uses an opencode/* free model. Those calls go to OpenCode's own
+endpoint, not through the Vercel gateway, so a ZDR-only gateway key cannot cover them.
+Free-class slots (scout, review, vision) are mapped to the cheapest ZDR model in the
+schema's token_pass.models instead. That costs Token Pass credit and a text-only model
+stands in for vision until a ZDR vision model is listed in the schema.
 
 Every agent and category gets an explicit model list built from the schema's
 chains. OmO falls back to its own built-in chains (which name paid openai,
@@ -14,6 +21,7 @@ left bare, including the built-in ones that are not in the maps below.
 """
 import argparse
 import json
+import os
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -69,11 +77,22 @@ def _entry(model: str, variant: str | None) -> object:
     return {"model": model, "reasoning": variant} if variant else model
 
 
-def build(schema: dict) -> dict:
+def cheapest_zdr_model(schema: dict) -> str:
+    """Cheapest model priced under token_pass.models (input + output per 1M), name breaks ties."""
+    models = schema["token_pass"]["models"]
+    return min(models, key=lambda m: (models[m]["input"] + models[m]["output"], m))
+
+
+def build(schema: dict, allow_free_agents: bool = False) -> dict:
     classes = schema["task_classes"]
+
+    def zdr_only(cls: str) -> bool:
+        return classes[cls]["zdr_required"] or not allow_free_agents
 
     def models_for(cls: str) -> list:
         chain = zdr_safe_chain(schema, cls)
+        if not allow_free_agents and not classes[cls]["zdr_required"]:
+            chain = [cheapest_zdr_model(schema)]
         variant = classes[cls]["variant"]
         return [_entry(chain[0], variant)] + chain[1:]
 
@@ -96,7 +115,7 @@ def build(schema: dict) -> dict:
         # category inherit them again, and those are free models. A singleton ZDR
         # chain therefore repeats its own primary as the only fallback.
         fallbacks = ms[1:]
-        if not fallbacks and classes[cls]["zdr_required"]:
+        if not fallbacks and zdr_only(cls):
             fallbacks = [entry["model"]]
         entry["fallback_models"] = fallbacks
         categories[cat] = entry
@@ -112,26 +131,48 @@ def build(schema: dict) -> dict:
     }
 
 
-def render(out: dict) -> str:
-    return "// OMO configuration — GENERATED from routing.schema.json (do not hand-edit)\n" + json.dumps(out, indent=2) + "\n"
+def render(out: dict, allow_free_agents: bool = False) -> str:
+    head = "// OMO configuration — GENERATED from routing.schema.json (do not hand-edit)\n"
+    if allow_free_agents:
+        head += ("// --allow-free-agents: opencode/* free models are in use. Those calls go to OpenCode's endpoint,\n"
+                 "// outside the Vercel gateway key, so the ZDR guarantee does not cover them.\n"
+                 "// Use only in repos with nothing confidential.\n")
+    else:
+        head += "// ZDR mode: every slot uses a gateway model; no opencode/* free model is configured.\n"
+    return head + json.dumps(out, indent=2) + "\n"
+
+
+def _backup(path: Path) -> Path:
+    """Copy path to a backup name that cannot collide, never replacing an existing backup."""
+    for _ in range(100):
+        stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M-%S-%fZ")
+        backup = path.with_name(f"{path.name}.bak.{stamp}-{os.urandom(3).hex()}")
+        try:
+            with open(path, "rb") as src, open(backup, "xb") as dst:
+                shutil.copyfileobj(src, dst)
+        except FileExistsError:
+            continue
+        shutil.copystat(path, backup)
+        return backup
+    raise RuntimeError(f"could not create a unique backup name for {path}")
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--out", type=Path, default=OMO, help="Output path (default ~/.omo/omo.jsonc)")
     ap.add_argument("--dry-run", action="store_true", help="Print the config, write nothing")
+    ap.add_argument("--allow-free-agents", action="store_true",
+                    help="Keep opencode/* free models for scout, review and vision (outside the ZDR gateway key)")
     args = ap.parse_args(argv)
 
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    text = render(build(schema))
+    text = render(build(schema, args.allow_free_agents), args.allow_free_agents)
     if args.dry_run:
         print(text, end="")
         return
     args.out.parent.mkdir(parents=True, exist_ok=True)
     if args.out.exists():
-        stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H-%M-%SZ")
-        backup = args.out.with_name(f"{args.out.name}.bak.{stamp}")
-        shutil.copy2(args.out, backup)
+        backup = _backup(args.out)
         print(f"Backed up {args.out} -> {backup}")
     tmp = args.out.with_name(args.out.name + ".tmp")
     tmp.write_text(text, encoding="utf-8")

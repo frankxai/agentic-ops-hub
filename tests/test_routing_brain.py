@@ -8,7 +8,7 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 FLEET = Path(__file__).resolve().parents[1] / "fleet"
 sys.path.insert(0, str(FLEET))
@@ -234,7 +234,76 @@ class OmoGenerator(unittest.TestCase):
             gen_omo_config.main(["--out", str(out)])
             self.assertTrue(out.exists())
             self.assertEqual(len(list(Path(d).glob("omo.jsonc.bak.*"))), 1)
-            json.loads(out.read_text().split("\n", 1)[1])
+            json.loads("".join(l for l in out.read_text(encoding="utf-8").splitlines(True) if not l.startswith("//")))
+
+    def test_two_runs_in_one_second_keep_the_original_backup(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d) / "omo.jsonc"
+            out.write_text("// my hand-tuned config\n", encoding="utf-8")
+            for _ in range(3):
+                gen_omo_config.main(["--out", str(out)])
+            backups = list(Path(d).glob("omo.jsonc.bak.*"))
+            self.assertEqual(len(backups), 3)
+            self.assertEqual(len({b.name for b in backups}), 3)
+            self.assertIn("my hand-tuned config", "".join(b.read_text(encoding="utf-8") for b in backups))
+
+    def test_backup_never_overwrites_an_existing_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d) / "omo.jsonc"
+            out.write_text("original", encoding="utf-8")
+            with patch.object(gen_omo_config.os, "urandom", Mock(return_value=b"\x00\x00\x01")), \
+                    patch.object(gen_omo_config, "datetime") as dt:
+                dt.now.return_value = datetime(2026, 10, 22, 1, 2, 3, 4, tzinfo=timezone.utc)
+                first = gen_omo_config._backup(out)
+                out.write_text("changed", encoding="utf-8")
+                with self.assertRaises(RuntimeError):
+                    gen_omo_config._backup(out)
+            self.assertEqual(first.read_text(encoding="utf-8"), "original")
+
+
+def _config_body(path: Path) -> str:
+    return "".join(l for l in path.read_text(encoding="utf-8").splitlines(True) if not l.startswith("//"))
+
+
+class FreeAgentsMode(unittest.TestCase):
+    @staticmethod
+    def _models(cfg):
+        names = []
+        for slot in list(cfg["agents"].values()) + list(cfg["categories"].values()):
+            for m in slot.get("models", []) + slot.get("fallback_models", []) + [slot.get("model")]:
+                if m:
+                    names.append(m["model"] if isinstance(m, dict) else m)
+        return names
+
+    def test_default_output_has_no_opencode_free_model(self):
+        names = self._models(gen_omo_config.build(SCHEMA)["[opencode]"])
+        self.assertTrue(names)
+        self.assertEqual([n for n in names if n.startswith("opencode/")], [])
+
+    def test_default_maps_free_classes_to_the_cheapest_zdr_model(self):
+        cfg = gen_omo_config.build(SCHEMA)["[opencode]"]
+        cheapest = gen_omo_config.cheapest_zdr_model(SCHEMA)
+        self.assertIn(cheapest, route_executor.zdr_models(SCHEMA))
+        for agent in ("explore", "librarian", "momus", "multimodal-looker"):
+            first = cfg["agents"][agent]["models"][0]
+            self.assertEqual(first["model"] if isinstance(first, dict) else first, cheapest)
+        self.assertEqual(cfg["categories"]["code-review"]["model"], cheapest)
+        self.assertTrue(cfg["categories"]["code-review"]["fallback_models"])
+
+    def test_allow_free_agents_keeps_free_models_and_says_so_in_the_header(self):
+        cfg = gen_omo_config.build(SCHEMA, allow_free_agents=True)["[opencode]"]
+        self.assertTrue(any(n.startswith("opencode/") for n in self._models(cfg)))
+        text = gen_omo_config.render(gen_omo_config.build(SCHEMA, True), True)
+        self.assertIn("outside the Vercel gateway key", text)
+        self.assertIn("nothing confidential", text)
+
+    def test_cli_flag_switches_mode(self):
+        with tempfile.TemporaryDirectory() as d:
+            a, b = Path(d) / "a.jsonc", Path(d) / "b.jsonc"
+            gen_omo_config.main(["--out", str(a)])
+            gen_omo_config.main(["--out", str(b), "--allow-free-agents"])
+            self.assertNotIn("opencode/", _config_body(a))
+            self.assertIn("opencode/", _config_body(b))
 
 
 class Cli(TmpLedger):
@@ -287,6 +356,23 @@ class BudgetReservation(TmpLedger):
                                       reservation_id=res["reservation_id"])
         self.assertEqual(route_executor.reserved_usd(), 0.0)
         self.assertAlmostEqual(route_executor.month_paid_spend(), 0.05)
+
+    def test_month_is_judged_in_utc_not_in_the_receipt_offset(self):
+        # 2026-11-01 00:30 at +01:00 is 2026-10-31 23:30 UTC: October spend.
+        rows = [{"ts": "2026-11-01T00:30:00+01:00", "id": "a", "used": self.GLM, "task_class": "code",
+                 "cost_usd": 0.50, "latency_ms": 1, "success": True, "over_ceiling": False},
+                {"ts": "2026-10-31T23:30:00-05:00", "id": "b", "used": self.GLM, "task_class": "code",
+                 "cost_usd": 0.25, "latency_ms": 1, "success": True, "over_ceiling": False},
+                {"ts": "2026-10-15T12:00:00", "id": "c", "used": self.GLM, "task_class": "code",
+                 "cost_usd": 1.00, "latency_ms": 1, "success": True, "over_ceiling": False}]
+        self.ledger.write_text("".join(json.dumps(r) + chr(10) for r in rows), encoding="utf-8")
+        october = datetime(2026, 10, 31, 23, 45, tzinfo=timezone.utc)
+        november = datetime(2026, 11, 1, 0, 15, tzinfo=timezone.utc)
+        # Row b is 2026-11-01 04:30 UTC, so it is November; a and c are October.
+        self.assertAlmostEqual(route_executor.month_paid_spend(october), 1.50)
+        self.assertAlmostEqual(route_executor.month_paid_spend(november), 0.25)
+        # The same instant expressed with an offset still lands in the same month.
+        self.assertAlmostEqual(route_executor.month_paid_spend(october.astimezone(timezone(timedelta(hours=9)))), 1.50)
 
     def test_stale_reservation_keeps_counting_until_reconciled(self):
         res = route_executor.reserve("code", self.GLM, 0.20)

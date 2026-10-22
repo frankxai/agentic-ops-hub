@@ -189,14 +189,19 @@ def _read_receipts(path: Path) -> list[dict]:
     return out
 
 
+def _as_utc(ts: datetime) -> datetime:
+    """Naive timestamps are UTC; aware ones are converted, so a month boundary never depends on the offset."""
+    return ts.replace(tzinfo=timezone.utc) if ts.tzinfo is None else ts.astimezone(timezone.utc)
+
+
 def month_paid_spend(now: datetime | None = None) -> float:
     """Token Pass spend recorded in the ledger for the current UTC month."""
-    now = now or datetime.now(timezone.utc)
+    now = _as_utc(now or datetime.now(timezone.utc))
     schema = load_schema()
     total = 0.0
     for r in _read_receipts(receipts_dir() / "routing.jsonl"):
         try:
-            ts = datetime.fromisoformat(r["ts"])
+            ts = _as_utc(datetime.fromisoformat(r["ts"]))
             cost = float(r["cost_usd"])
         except (KeyError, ValueError, TypeError, OverflowError):
             continue
