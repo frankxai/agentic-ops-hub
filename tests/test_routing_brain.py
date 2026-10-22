@@ -1673,6 +1673,22 @@ class SettlementBindsToTheReservation(TmpLedger):
             self.assertNotIn(rid, [h["id"] for h in route_executor.reservations()])
         self.assertAlmostEqual(route_executor.month_paid_spend(), 0.84)
 
+    def test_cli_repeating_the_same_settlement_after_retirement_is_idempotent(self):
+        import route_task  # noqa: E402
+        for removed_class in (False, True):
+            rid = self._hold()
+            schema = self._retired_schema()
+            if removed_class:
+                schema["task_classes"].pop("code")
+            argv = ["route_task.py", "refactor the auth module", "--record", "success", "--used", self.GLM,
+                    "--cost", "0.42", "--latency", "100", "--reservation", rid, "--synthetic"]
+            with patch.object(route_executor, "load_schema", return_value=schema), patch.object(sys, "argv", argv):
+                route_task.main()
+                route_task.main()  # the retry after the hold closed must exit 0, not 2
+            written = [r for r in route_executor._read_receipts(self.ledger) if r.get("reservation_id") == rid]
+            self.assertEqual(len(written), 1, "a retry must not write a second receipt")
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.84)
+
     def test_retired_model_without_a_reservation_is_still_refused(self):
         with patch.object(route_executor, "load_schema", return_value=self._retired_schema()):
             with self.assertRaises(ValueError):

@@ -530,6 +530,16 @@ def append_line(path: Path, line: str) -> None:
         _append_unlocked(path, line)
 
 
+def settled_receipt(reservation_id: str) -> dict | None:
+    """The receipt already written for a reservation, if any (a retried settlement finds its own
+    earlier receipt here once the hold is closed)."""
+    ledger = receipts_dir() / "routing.jsonl"
+    if not ledger.exists():
+        return None
+    return next((r for r in _read_receipts(ledger)
+                 if isinstance(r, dict) and r.get("reservation_id") == reservation_id), None)
+
+
 def record_receipt(task_class: str, used: str, fallback_used: bool,
                    cost_usd: float, latency_ms: int, success: bool,
                    provider: str = "", machine: str = "",

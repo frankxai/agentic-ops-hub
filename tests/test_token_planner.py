@@ -130,6 +130,16 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertNotIn("--allow-free", args)
         self.assertEqual(args[-2], "--")
 
+    def test_opencode_wrapper_deadline_is_shorter_than_the_runner_deadline(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "scout"
+        mission["timeout_minutes"] = 2
+        args = self.planner.command_args(mission)
+        inner = int(args[args.index("--timeout") + 1])
+        self.assertLess(inner, 2 * 60)
+        self.assertGreater(inner, 60)
+        self.assertLess(args.index("--timeout"), args.index("--"))
+
     def test_opencode_launch_keeps_the_class_variant(self):
         mission = self._mission(agent="opencode", budget=30)
         mission["route_class"] = "code"

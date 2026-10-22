@@ -142,6 +142,36 @@ class SupervisionTests(unittest.TestCase):
             time.sleep(0.8)
             self.assertEqual(stamp, marker.read_text() if marker.exists() else "0", "the grandchild kept running")
 
+    @unittest.skipUnless(os.name == "nt", "Windows Job-object containment")
+    def test_windows_descendant_spawned_immediately_is_contained(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            pidfile = Path(tmp) / "pid.txt"
+            sleeper = "import time;time.sleep(60)"
+            parent = ("import subprocess,sys,time;"
+                      "p=subprocess.Popen([sys.executable,'-c',%r]);"
+                      "open(r'%s','w').write(str(p.pid));"
+                      "time.sleep(60)" % (sleeper, pidfile))
+            with self.assertRaises(subprocess.TimeoutExpired):
+                opencode_launch.supervised_run([sys.executable, "-c", parent], env=dict(os.environ), timeout=1.5)
+            time.sleep(0.5)
+            self.assertTrue(pidfile.exists(), "the parent must have started and spawned its child")
+            pid = int(pidfile.read_text())
+            out = subprocess.run(["tasklist", "/FI", f"PID eq {pid}"], capture_output=True, text=True, errors="replace").stdout or ""
+            self.assertNotIn(str(pid), out, "the immediately spawned descendant survived containment")
+
+    def test_windows_job_setup_failure_runs_nothing(self):
+        if os.name != "nt":
+            self.skipTest("Windows only")
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            marker = Path(tmp) / "ran.txt"
+            code = "open(r'%s','w').write('x')" % marker
+            with patch.object(opencode_launch, "_windows_job", side_effect=OSError("boom")):
+                with self.assertRaises(opencode_launch.LaunchError):
+                    opencode_launch.supervised_run([sys.executable, "-c", code], env=dict(os.environ), timeout=5)
+            time.sleep(0.5)
+            self.assertFalse(marker.exists(), "a child must not run when it cannot be contained")
+
     def test_return_code_propagates(self):
         res = opencode_launch.supervised_run([sys.executable, "-c", "raise SystemExit(7)"], env=dict(os.environ))
         self.assertEqual(res.returncode, 7)
@@ -245,6 +275,20 @@ class RunTests(unittest.TestCase):
         with opencode_launch.launch_dir({"model": "vercel/x/y"}) as directory:
             with self.assertRaises(FileExistsError):
                 os.close(os.open(directory / "opencode.json", os.O_WRONLY | os.O_CREAT | os.O_EXCL))
+
+
+class ConsumerDeadlineTests(unittest.TestCase):
+    def test_wrapper_argv_carries_the_timeout_before_the_task(self):
+        argv = opencode_launch.wrapper_argv("scout", "t", timeout=100.9)
+        self.assertEqual(argv[argv.index("--timeout") + 1], "100")
+        self.assertLess(argv.index("--timeout"), argv.index("--"))
+        self.assertNotIn("--timeout", opencode_launch.wrapper_argv("scout", "t"))
+
+    def test_capacity_probe_wrapper_deadline_is_shorter_than_the_outer_one(self):
+        from scripts import cli_capacity
+        argv = cli_capacity.opencode_probe_command()
+        inner = int(argv[argv.index("--timeout") + 1])
+        self.assertLess(inner, cli_capacity.LIVE_PROBE_TIMEOUT_S)
 
 
 class WrapperCommandTests(unittest.TestCase):

@@ -10,6 +10,9 @@ from pathlib import Path
 from typing import Any
 
 
+OPENCODE_WRAPPER_MARGIN_S = 15
+
+
 class PlannerError(ValueError):
     pass
 
@@ -195,7 +198,11 @@ class Planner:
                 from fleet.opencode_launch import wrapper_argv
             except ImportError:  # run as a script from the fleet directory
                 from opencode_launch import wrapper_argv  # type: ignore[no-redef]
-            return wrapper_argv(mission["route_class"], task, allow_free=self.allow_free)
+            # The runner's own deadline is timeout_minutes; the wrapper gets 15 seconds less so it ends the
+            # OpenCode tree itself before the runner's timeout kills the wrapper.
+            outer = int(mission.get("timeout_minutes", 60)) * 60
+            return wrapper_argv(mission["route_class"], task, allow_free=self.allow_free,
+                                timeout=max(1, outer - OPENCODE_WRAPPER_MARGIN_S))
         if agent == "gemini":
             return ["gemini", "-p", task]
         raise PlannerError(f"agent {agent!r} has no unattended launcher")

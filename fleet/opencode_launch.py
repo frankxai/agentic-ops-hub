@@ -170,30 +170,31 @@ def opencode_argv(model_ref: str, task: str, binary: str = "opencode") -> list[s
     return [binary, "run", "--standalone", "-m", model_ref, "--", task]  # `--`: task text is never an option
 
 
-def wrapper_argv(route_class: str, task: str, *, allow_free: bool = False) -> list[str]:
-    """A self-contained command: a manifest or night runner can run it without knowing the config."""
+def wrapper_argv(route_class: str, task: str, *, allow_free: bool = False, timeout: float | None = None) -> list[str]:
+    """A self-contained command: a manifest or night runner can run it without knowing the config.
+    A consumer that has its own deadline passes it as `timeout` (a little under its own), so the
+    wrapper ends the OpenCode tree itself before the consumer's timeout kills the wrapper."""
     argv = ["python", "-B", str(Path(__file__).resolve()), "--class", route_class]
     if allow_free:
         argv.append("--allow-free")
+    if timeout:
+        argv += ["--timeout", str(max(1, int(timeout)))]
     return argv + ["--", task]
 
 
 class _TreeGuard:
-    """Ends the child's whole process tree. Windows: a kill-on-close Job object, so the tree also
-    dies if this wrapper is killed (falls back to `taskkill /T`). POSIX: a new session/process
-    group, killed on exit paths of this wrapper; a SIGKILL of the wrapper itself leaves the child."""
+    """Ends the child's whole process tree. Windows: a kill-on-close Job object that the child joins
+    BEFORE it runs any code (see supervised_run), so the tree also dies if this wrapper is killed.
+    POSIX: a new session/process group, killed on the exit paths of this wrapper; a SIGKILL of the
+    wrapper itself leaves the child."""
 
     def __init__(self, proc: subprocess.Popen) -> None:
         self.proc, self.job, self._k = proc, None, None
-        if os.name == "nt":
-            with contextlib.suppress(Exception):
-                self._k, self.job = _windows_job(proc)
 
     def kill(self) -> None:
         if os.name == "nt":
-            if self.job is not None and self._k.TerminateJobObject(self.job, 1):
-                return
-            subprocess.run(["taskkill", "/F", "/T", "/PID", str(self.proc.pid)], capture_output=True)
+            if self.job is not None:
+                self._k.TerminateJobObject(self.job, 1)
             return
         with contextlib.suppress(ProcessLookupError, PermissionError):
             os.killpg(self.proc.pid, signal.SIGKILL)
@@ -202,6 +203,9 @@ class _TreeGuard:
         if self.job is not None:
             self._k.CloseHandle(self.job)  # KILL_ON_JOB_CLOSE ends any straggler
             self.job = None
+
+
+_CREATE_SUSPENDED = 0x00000004
 
 
 def _windows_job(proc: subprocess.Popen):
@@ -233,27 +237,50 @@ def _windows_job(proc: subprocess.Popen):
         raise OSError("CreateJobObject failed")
     info = Extended()
     info.basic.flags = 0x2000  # JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE
-    if not k.SetInformationJobObject(job, 9, ctypes.byref(info), ctypes.sizeof(info)) \
-            or not k.AssignProcessToJobObject(job, int(proc._handle)):  # type: ignore[attr-defined]
+    if not k.SetInformationJobObject(job, 9, ctypes.byref(info), ctypes.sizeof(info))             or not k.AssignProcessToJobObject(job, int(proc._handle)):  # type: ignore[attr-defined]
         k.CloseHandle(job)
         raise OSError("job setup failed")
     return k, job
 
 
+def _resume_windows_process(proc: subprocess.Popen) -> None:
+    import ctypes
+    from ctypes import wintypes
+    nt = ctypes.WinDLL("ntdll")
+    nt.NtResumeProcess.argtypes = [wintypes.HANDLE]
+    nt.NtResumeProcess.restype = ctypes.c_long
+    status = nt.NtResumeProcess(int(proc._handle))  # type: ignore[attr-defined]
+    if status != 0:
+        raise OSError(f"NtResumeProcess failed (status {status})")
+
+
 def supervised_run(argv: list[str], env: Mapping[str, str] | None = None, timeout: float | None = None) -> Any:
     """Run argv (shell=False) and always end its process tree: on normal exit, timeout, Ctrl-C or
-    any error in this wrapper. Raises subprocess.TimeoutExpired after the kill on timeout."""
-    kwargs: dict[str, Any] = {"start_new_session": True} if os.name != "nt" else {}
+    any error in this wrapper. Raises subprocess.TimeoutExpired after the kill on timeout.
+
+    Windows: the child is created suspended, joined to a kill-on-close Job object, and only then
+    resumed, so no descendant can be created before containment exists. If the Job cannot be set
+    up, the suspended child is killed and nothing runs (LaunchError): there is no weaker fallback."""
+    on_windows = os.name == "nt"
+    kwargs: dict[str, Any] = {"creationflags": _CREATE_SUSPENDED} if on_windows else {"start_new_session": True}
     proc = subprocess.Popen(argv, env=None if env is None else dict(env), shell=False, **kwargs)
     guard = _TreeGuard(proc)
     try:
+        if on_windows:
+            try:
+                guard._k, guard.job = _windows_job(proc)
+                _resume_windows_process(proc)
+            except Exception as exc:
+                proc.kill()  # still suspended: it has run no code and has no descendants
+                proc.wait()
+                raise LaunchError(f"could not contain the OpenCode process tree; nothing was run ({exc})") from exc
         code = proc.wait(timeout=timeout)
     except BaseException:
         guard.kill()
         proc.wait()
         raise
     finally:
-        if os.name != "nt":
+        if not on_windows:
             guard.kill()  # stragglers in the group; the child already exited
         guard.close()
     return SimpleNamespace(returncode=code)

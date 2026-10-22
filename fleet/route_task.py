@@ -22,7 +22,8 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from route_classifier import classify
-from route_executor import preflight, record_receipt, release_reservation, reserve, reservations, route
+from route_executor import (preflight, record_receipt, release_reservation, reserve, reservations, route,
+                            settled_receipt)
 
 
 def _fail(msg: str, code: int = 2):
@@ -63,6 +64,10 @@ def main():
     if args.record and args.reservation:
         try:
             hold = next((h for h in reservations() if h["id"] == args.reservation), None)
+            if hold is None:  # already settled: a retry binds to the class of the receipt it wrote
+                prior = settled_receipt(args.reservation)
+                if prior and isinstance(prior.get("task_class"), str):
+                    hold = {"task_class": prior["task_class"]}
         except (ValueError, OSError) as e:
             _fail(str(e))
     try:

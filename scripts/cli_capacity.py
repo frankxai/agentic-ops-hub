@@ -24,6 +24,9 @@ if __package__ in {None, ""}:
 from scripts.fleet_bus import detect_machine
 
 
+LIVE_PROBE_TIMEOUT_S = 120
+
+
 def run(command: list[str], *, cwd: str | None = None, timeout: int = 90) -> tuple[int, str]:
     try:
         executable = shutil.which(command[0]) or command[0]
@@ -263,7 +266,7 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     live_detail = "not run"
     live_checked = live and installed and auth_declared
     if live_checked:
-        code, output = run(live_command, timeout=120)
+        code, output = run(live_command, timeout=LIVE_PROBE_TIMEOUT_S)
         live_ok = code == 0 and "PONG" in output.upper()
         live_detail = output[-500:]
     return {
@@ -286,7 +289,8 @@ def opencode_probe_command(allow_free: bool = False) -> list[str]:
     from fleet.opencode_launch import wrapper_argv
     from fleet.token_planner import pinned_opencode_model
     pinned_opencode_model("scout", allow_free=allow_free)  # refuse here when the route cannot be resolved
-    return wrapper_argv("scout", "Reply exactly PONG.", allow_free=allow_free)
+    # the probe's outer deadline is LIVE_PROBE_TIMEOUT_S; the wrapper stops OpenCode a little sooner
+    return wrapper_argv("scout", "Reply exactly PONG.", allow_free=allow_free, timeout=LIVE_PROBE_TIMEOUT_S - 20)
 
 
 def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow_free: bool = False) -> dict[str, Any]:
