@@ -1,3 +1,19 @@
+<!-- opencode-docs-platform-20261022:start -->
+## Multi-brand docs platform built in one new repo, draft PR #1 open (OpenCode)
+
+Frank's five-brand docs platform (frankx, gencreator, akamoto, arcanea, starlight) is built in the new canonical repo
+[frankxai/docs-platform](https://github.com/frankxai/docs-platform): one Next.js 16.4.2 deployment serving every brand on its
+own `docs.<brand>` host, content as `content/<brand>/*.mdx` on Fumadocs v16, and agent-native markdown on every page — the
+`.md` suffix or `Accept: text/markdown` rewrites to `/llms.mdx/<brand>/<path>/content.md` with `Vary: Accept`, so an agent reads
+any doc without a browser. Commit `5c83bc2` (44 files, 8,180 insertions) passed the ops-guard gate and gitleaks, is pushed on
+`agent/opencode/docs-platform`, and is open as [draft PR #1](https://github.com/frankxai/docs-platform/pull/1). A 14-point curl
+sweep is green against `npm run build` + `next start` locally. Two session lessons recorded: a fresh repo cannot pass the
+ops-guard (no HEAD) — resolved with a one-file bootstrap commit through the GitHub Contents API; and `git reset --hard` deletes
+staged files — recovered byte-identical from the dangling tree object (`gc.auto=0` until safe). Waiting on Frank: merge ruling,
+repo visibility, Vercel project, `docs.*` DNS. Pickup in [the handover](handovers/opencode-docs-platform-20261022.md); details
+in [the session](sessions/2026-10-22.md).
+<!-- opencode-docs-platform-20261022:end -->
+
 <!-- estate-convergence-20261021:start -->
 ## Launch factory on one PR, Payment Link checkout ported, estate convergence plan proposed
 
