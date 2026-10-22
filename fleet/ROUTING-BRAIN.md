@@ -8,10 +8,10 @@ Self-improving, cost-aware model router for the Starlight sovereign agent estate
 |---|---|
 | `routing.schema.json` | Single source of truth: task classes → model chains, Token Pass pricing, cost ceilings, ZDR flags |
 | `gen_omo_config.py` | Generates `~/.omo/omo.jsonc` from the schema (run after editing schema) |
-| `route_classifier.py` | Classifies a task prompt into a routing class (regex fast-path + heuristic) |
+| `route_classifier.py` | Classifies a task prompt into a routing class (regex fast-path + heuristic); its model fields come from `effective_route()` (`--allow-free` to opt in to free models) |
 | `route_executor.py` | Decision layer: model + fallback chain; atomic+locked receipt append |
 | `route_task.py` | One-shot CLI: classify + route (+ optional receipt recording) |
-| `weekly_routing_review.py` | Parses receipts, proposes routing diffs (human approval, never auto-commit) |
+| `weekly_routing_review.py` | Parses receipts, proposes routing diffs (human approval, never auto-commit). Reviews one mode (strict by default, `--allow-free` for the opt-in mode); receipts record `allow_free`, and receipts from the other mode are filtered out and counted as `other_mode` |
 
 ## Usage
 

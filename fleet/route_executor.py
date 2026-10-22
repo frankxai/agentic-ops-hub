@@ -529,6 +529,7 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
         "zdr_override": bool(allow_non_zdr and r["zdr_required"] and not is_paid(used, load_schema())),
         "synthetic": bool(synthetic),
         "reservation_id": reservation_id or None,
+        "allow_free": bool(allow_free),
     }
     ledger = receipts_dir() / "routing.jsonl"
     ledger.parent.mkdir(parents=True, exist_ok=True)

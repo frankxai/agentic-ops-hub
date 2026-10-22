@@ -29,6 +29,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from route_executor import effective_route  # noqa: E402
+
 SCHEMA_PATH = Path(__file__).resolve().parent / "routing.schema.json"
 
 # Strong signals, first match wins. All ZDR classes.
@@ -174,13 +177,16 @@ def fast_classify(task: str) -> str | None:
     return "scout"
 
 
-def classify(task: str) -> dict:
+def classify(task: str, allow_free: bool = False) -> dict:
+    """Class plus the route that class actually gets. Every model field comes from
+    route_executor.effective_route(), so a class that would use free models is served
+    by the cheapest ZDR gateway model unless allow_free is set."""
     cls = fast_classify(task)
     source = "fast-path"
     if cls is None:
         cls, source = DEFAULT_CLASS, "default-zdr"
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-    route = schema["task_classes"][cls]
+    route = effective_route(schema, cls, allow_free=allow_free)
     return {
         "task": task,
         "class": cls,
@@ -188,8 +194,11 @@ def classify(task: str) -> dict:
         "primary": route["primary"],
         "variant": route["variant"],
         "fallbacks": route["fallbacks"],
+        "chain": route["chain"],
         "cost_ceiling_usd": route["cost_ceiling_usd"],
         "zdr_required": route["zdr_required"],
+        "allow_free": route["allow_free"],
+        "free_replaced": route["free_replaced"],
     }
 
 
@@ -197,9 +206,11 @@ def main():
     ap = argparse.ArgumentParser(description="Classify a task into a routing class.")
     ap.add_argument("task", nargs="+", help="Task description")
     ap.add_argument("--json", action="store_true", help="Output JSON")
+    ap.add_argument("--allow-free", action="store_true",
+                    help="Opt in to free opencode/* models, which run outside the ZDR gateway key")
     args = ap.parse_args()
     task = " ".join(args.task)
-    result = classify(task)
+    result = classify(task, allow_free=args.allow_free)
     if args.json:
         print(json.dumps(result, indent=2))
     else:

@@ -6,15 +6,21 @@ Never auto-commits (money/merges stay on the human's button).
 Receipts are read tolerantly: torn or malformed lines, unknown classes and
 non-finite numbers are skipped and counted, never fatal. Synthetic (test)
 receipts are ignored. A proposal must name a model that is already in the
-class's ZDR-safe chain, and both models need a per-model sample floor.
+class's effective chain, and both models need a per-model sample floor.
+
+The review is for one mode. By default that is the strict mode (free opencode/*
+models are not routed); --allow-free reviews the opt-in free mode. The current
+primary and the allowed models come from route_executor.effective_route(), and
+receipts from the other mode are filtered out and counted, never compared.
 """
+import argparse
 import json
 import math
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from route_executor import receipts_dir, zdr_safe_chain
+from route_executor import effective_route, receipts_dir
 
 HERE = Path(__file__).resolve().parent
 PROPOSALS = HERE / "routing-proposals"
@@ -78,6 +84,23 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
     return out, skipped
 
 
+def in_mode(receipt: dict, schema: dict, allow_free: bool) -> bool:
+    """True when the receipt belongs to the reviewed mode. A receipt that records
+    allow_free must match it; one that does not (legacy) belongs to the mode only
+    if the model it used is in that mode's effective chain for its class."""
+    cls = receipt["task_class"]
+    if cls not in schema["task_classes"]:
+        return True  # unknown classes are dropped later by analyze, not counted as a mode mismatch
+    if "allow_free" in receipt and bool(receipt["allow_free"]) != allow_free:
+        return False
+    return receipt["used"] in effective_route(schema, cls, allow_free=allow_free)["chain"]
+
+
+def filter_mode(receipts: list[dict], schema: dict, allow_free: bool = False) -> tuple[list[dict], int]:
+    kept = [r for r in receipts if in_mode(r, schema, allow_free)]
+    return kept, len(receipts) - len(kept)
+
+
 def analyze(receipts: list[dict], schema: dict) -> dict:
     min_samples = schema.get("feedback_loop", {}).get("min_samples_per_class", DEFAULT_MIN_SAMPLES)
     known = schema["task_classes"]
@@ -120,16 +143,17 @@ def analyze(receipts: list[dict], schema: dict) -> dict:
     return result
 
 
-def propose(analysis: dict, schema: dict) -> list[dict]:
+def propose(analysis: dict, schema: dict, allow_free: bool = False) -> list[dict]:
     """Conservative: propose a new primary only when both it and the current
     primary have at least MIN_MODEL_SAMPLES, the target is already in the
-    class's ZDR-safe chain, and it is clearly better."""
+    class's effective chain for this mode, and it is clearly better."""
     proposals = []
     for cls, d in analysis.items():
         if not d["meets_min_samples"]:
             continue
-        current = schema["task_classes"][cls]["primary"]
-        allowed = set(zdr_safe_chain(schema, cls))
+        route = effective_route(schema, cls, allow_free=allow_free)
+        current = route["primary"]
+        allowed = set(route["chain"])
         cur = d["models"].get(current)
         if not cur or cur["n"] < MIN_MODEL_SAMPLES:
             continue
@@ -151,17 +175,23 @@ def propose(analysis: dict, schema: dict) -> list[dict]:
     return proposals
 
 
-def main():
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Weekly routing review.")
+    ap.add_argument("--allow-free", action="store_true", help="Review the opt-in free mode instead of the strict default")
+    args = ap.parse_args(argv)
     PROPOSALS.mkdir(parents=True, exist_ok=True)
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
     receipts, skipped = load_receipts()
+    receipts, other_mode = filter_mode(receipts, schema, args.allow_free)
+    skipped["other_mode"] = other_mode
     analysis = analyze(receipts, schema)
-    proposals = propose(analysis, schema)
+    proposals = propose(analysis, schema, args.allow_free)
     now = datetime.now(timezone.utc)
 
     report = {
         "generated": now.isoformat(),
         "window_days": 7,
+        "mode": "allow-free" if args.allow_free else "strict-zdr",
         "receipt_count": len(receipts),
         "skipped": skipped,
         "analysis": analysis,

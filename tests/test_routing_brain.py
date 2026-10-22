@@ -189,7 +189,7 @@ class WeeklyReview(TmpLedger):
 
     def test_report_is_strict_json_and_utc(self):
         with tempfile.TemporaryDirectory() as d, patch.object(review, "PROPOSALS", Path(d)):
-            review.main()
+            review.main([])
             report = json.loads(next(Path(d).iterdir()).read_text(), parse_constant=lambda c: self.fail(c))
             self.assertEqual(datetime.fromisoformat(report["generated"]).utcoffset(), timedelta(0))
 
@@ -924,7 +924,7 @@ class Round4(TmpLedger):
         self.assertEqual(skipped["malformed"], 2)
         out = Path(self.tmp.name) / "proposals"
         with patch.object(review, "PROPOSALS", out):
-            review.main()
+            review.main([])
         self.assertTrue(list(out.glob("*.json")))
 
     def test_negative_cost_and_latency_are_malformed(self):
@@ -1300,6 +1300,129 @@ class Round8FreeOptIn(TmpLedger):
         with self.assertRaises(ValueError):
             route_executor.record_receipt("code", glm, False, 0.50, 5, True, reservation_id=res["reservation_id"])
         self.assertAlmostEqual(route_executor.reserved_usd(), 0.50)
+
+
+class Round9Consistency(TmpLedger):
+    FREE_SCOUT = "opencode/mimo-v2.6-flash-free"
+    GATEWAY = "vercel/deepseek/deepseek-v4.1-flash"
+    TS = "2026-10-21T10:00:00+00:00"
+
+    def _run_cli(self, script, *argv):
+        out = subprocess.run([sys.executable, "-B", str(FLEET / script), *argv], capture_output=True, text=True,
+                             env={**os.environ, "STARLIGHT_RECEIPTS_DIR": self.tmp.name}, timeout=60)
+        self.assertEqual(out.returncode, 0, out.stderr)
+        return out.stdout
+
+    def test_classifier_cli_default_never_emits_a_free_model(self):
+        c = json.loads(self._run_cli("route_classifier.py", "Read notes.txt", "--json"))
+        self.assertEqual(c["class"], "scout")
+        self.assertEqual(c["primary"], self.GATEWAY)
+        self.assertEqual(c["chain"], [self.GATEWAY])
+        self.assertEqual(c["cost_ceiling_usd"], 0.02)
+        everything = c["chain"] + c["fallbacks"] + [c["primary"]]
+        self.assertFalse(any(m.startswith("opencode/") for m in everything))
+
+    def test_classifier_cli_free_is_an_explicit_opt_in(self):
+        c = json.loads(self._run_cli("route_classifier.py", "Read notes.txt", "--json", "--allow-free"))
+        self.assertEqual(c["primary"], self.FREE_SCOUT)
+        self.assertEqual(c["cost_ceiling_usd"], 0)
+        self.assertTrue(c["allow_free"])
+
+    def test_classify_matches_the_executor(self):
+        for free in (False, True):
+            want = route_executor.effective_route(SCHEMA, "scout", allow_free=free)
+            got = route_classifier.classify("Read notes.txt", allow_free=free)
+            for k in ("primary", "fallbacks", "chain", "cost_ceiling_usd", "zdr_required"):
+                self.assertEqual(got[k], want[k], (free, k))
+
+    def test_route_task_cli_and_classifier_cli_agree(self):
+        a = json.loads(self._run_cli("route_task.py", "Read notes.txt", "--json"))
+        b = json.loads(self._run_cli("route_classifier.py", "Read notes.txt", "--json"))
+        for k in ("primary", "fallbacks", "chain", "cost_ceiling_usd"):
+            self.assertEqual(a[k], b[k], k)
+
+    def _legacy_free_receipts(self):
+        rows = []
+        for _ in range(10):
+            rows.append({"ts": self.TS, "task_class": "scout", "used": self.FREE_SCOUT, "success": False,
+                         "cost_usd": 0.0, "latency_ms": 5})
+        for _ in range(15):
+            rows.append({"ts": self.TS, "task_class": "scout", "used": "opencode/beam-free", "success": True,
+                         "cost_usd": 0.0, "latency_ms": 5})
+        return rows
+
+    def test_strict_review_filters_legacy_free_receipts_and_proposes_nothing(self):
+        kept, other = review.filter_mode(self._legacy_free_receipts(), SCHEMA, allow_free=False)
+        self.assertEqual((kept, other), ([], 25))
+        self.assertEqual(review.propose(review.analyze(kept, SCHEMA), SCHEMA, allow_free=False), [])
+
+    def test_free_mode_review_still_sees_free_receipts(self):
+        kept, other = review.filter_mode(self._legacy_free_receipts(), SCHEMA, allow_free=True)
+        self.assertEqual((len(kept), other), (25, 0))
+        chain = route_executor.effective_route(SCHEMA, "scout", allow_free=True)["chain"]
+        for p in review.propose(review.analyze(kept, SCHEMA), SCHEMA, allow_free=True):
+            self.assertIn(p["to"], chain)
+
+    def test_review_respects_the_recorded_allow_free_flag(self):
+        row = {"ts": self.TS, "task_class": "scout", "used": self.GATEWAY, "success": True,
+               "cost_usd": 0.001, "latency_ms": 5}
+        self.assertTrue(review.in_mode({**row, "allow_free": False}, SCHEMA, False))
+        self.assertFalse(review.in_mode({**row, "allow_free": True}, SCHEMA, False))
+
+    def test_strict_review_never_proposes_a_free_model(self):
+        rows = []
+        for model, ok in ((self.GATEWAY, False), ("vercel/zai/glm-5.3", True)):
+            for _ in range(25):
+                rows.append({"ts": self.TS, "task_class": "scout", "used": model, "success": ok,
+                             "cost_usd": 0.001, "latency_ms": 5})
+        kept, _ = review.filter_mode(rows, SCHEMA, allow_free=False)
+        for p in review.propose(review.analyze(kept, SCHEMA), SCHEMA, allow_free=False):
+            self.assertFalse(p["to"].startswith("opencode/"))
+
+    def test_new_receipts_record_the_mode(self):
+        r = route_executor.record_receipt("scout", self.GATEWAY, False, 0.001, 5, True, synthetic=True)
+        self.assertIs(r["allow_free"], False)
+        r = route_executor.record_receipt("scout", self.FREE_SCOUT, False, 0, 5, True, synthetic=True, allow_free=True)
+        self.assertIs(r["allow_free"], True)
+
+    def test_schema_rules_describe_strict_by_default(self):
+        text = " ".join(SCHEMA["routing_rules"]).lower()
+        self.assertNotIn("default to free tier", text)
+        self.assertNotIn("never use token pass for scout", text)
+        self.assertIn("strict by default", text)
+        self.assertIn("--allow-free", text)
+        self.assertIn("allow_free", SCHEMA["receipts"]["fields"])
+
+
+class Round9NoDirectSchemaReads(unittest.TestCase):
+    """Only route_executor reads a class's own model fields. Every other module takes the route
+    from effective_route(); a direct read would bring the free default back."""
+    # (file, stripped line) -> why a read of task_classes there is safe.
+    ALLOWED = {
+        ("gen_omo_config.py", 'classes = schema["task_classes"]'): "class names, variant and zdr_required only",
+        ("weekly_routing_review.py", 'known = schema["task_classes"]'): "class-name membership check",
+        ("weekly_routing_review.py", 'if cls not in schema["task_classes"]:'): "class-name membership check",
+    }
+
+    def test_no_module_outside_the_executor_reads_task_classes_unreviewed(self):
+        offenders = []
+        for path in sorted(FLEET.glob("*.py")):
+            if path.name == "route_executor.py":
+                continue
+            for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                code = line.strip()
+                if "task_classes" in code and not code.startswith("#") and (path.name, code) not in self.ALLOWED:
+                    offenders.append(f"{path.name}:{n}: {code}")
+        self.assertEqual(offenders, [], "read model fields through route_executor.effective_route()")
+
+    def test_allow_list_entries_still_exist(self):
+        for name, code in self.ALLOWED:
+            self.assertIn(code, (FLEET / name).read_text(encoding="utf-8"), (name, code))
+
+    def test_allowed_gen_omo_reads_touch_no_model_field(self):
+        src = (FLEET / "gen_omo_config.py").read_text(encoding="utf-8")
+        for field in ("primary", "fallbacks", "cost_ceiling_usd"):
+            self.assertNotIn(f'classes[cls]["{field}"]', src)
 
 
 if __name__ == "__main__":

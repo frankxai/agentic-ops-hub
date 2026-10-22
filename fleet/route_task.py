@@ -58,7 +58,7 @@ def main():
     task = " ".join(args.task)
 
     try:
-        c = classify(task)
+        c = classify(task, args.allow_free)
         r = route(c["class"], args.allow_non_zdr, args.allow_free)
     except (FileNotFoundError, ValueError, KeyError) as e:
         _fail(str(e))

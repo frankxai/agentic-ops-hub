@@ -38,17 +38,17 @@
     "ultrabrain": { "description": "Hardest tasks, max reasoning", "primary": "vercel/moonshotai/kimi-k3", "variant": "max", "fallbacks": ["vercel/zai/glm-5.3"], "cost_ceiling_usd": 5.00, "zdr_required": true }
   },
   "routing_rules": [
-    "Default to free tier unless task requires quality or ZDR.",
-    "Token Pass models only for classes: bulk, code, hard-reasoning, ultrabrain.",
-    "Never use Token Pass for scout/review/vision (free alternatives exist).",
-    "Subagent background slots MUST be free or bulk (DS flash) — never GLM/Kimi (cost + 403 risk on non-featured).",
+    "Strict by default: scout, review and vision are served by the cheapest ZDR gateway model (token_pass.models) under their zdr_cost_ceiling_usd, not by free models.",
+    "Free opencode/* models are an opt-in (--allow-free, allow_free=True, or --allow-free-agents for the OmO generator). They run outside the Vercel gateway key, so the ZDR-only key does not cover them: opt in only for non-confidential work.",
+    "Classes with zdr_required true (bulk, code, hard-reasoning, ultrabrain) only ever use ZDR gateway models, with or without the opt-in.",
+    "Subagent background slots use bulk-class DS flash by default (cost + 403 risk on non-featured GLM/Kimi); free models only with the opt-in.",
     "Fallback chain walks on any error or empty response.",
-    "Every routing emits a receipt: {task_class, primary, used, fallback_used, cost_usd, latency_ms, success, provider}."
+    "Every routing emits a receipt: {task_class, primary, used, fallback_used, cost_usd, latency_ms, success, provider, allow_free}."
   ],
   "receipts": {
     "root": "C:/Users/frank/agentic-ops/fleet/receipts",
     "format": "jsonl",
-    "fields": ["ts", "task_class", "primary", "used", "fallback_used", "cost_usd", "latency_ms", "success", "provider", "machine"]
+    "fields": ["ts", "task_class", "primary", "used", "fallback_used", "cost_usd", "latency_ms", "success", "provider", "machine", "allow_free"]
   },
   "feedback_loop": {
     "cron": "weekly-routing-review",
