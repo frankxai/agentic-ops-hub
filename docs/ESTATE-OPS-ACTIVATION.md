@@ -1,5 +1,9 @@
 # Estate Ops — Activation
 
+> **Held through 20 November 2026.** The estate focus window (`ops/plans/estate-convergence-2026-10-21.md`) keeps pr-gate as
+> the only merge mechanism: no rollout PRs, no `ESTATE_AUTONOMY=auto`, and `off` in frozen and hold repositories. `scripts/rollout-ops-governance.mjs --apply`
+> refuses to run until then, unless Frank revises the ruling earlier.
+
 The governance in [`ESTATE-OPS-GOVERNANCE.md`](ESTATE-OPS-GOVERNANCE.md) is **off until you turn it on, once, per repo.** That one-time gate is deliberate — it's cost (paid API calls) and security (write access), which are correctly yours. After it, the estate runs itself and only surfaces the digest.
 
 ## The one-time setup (per repo)

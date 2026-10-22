@@ -4,8 +4,8 @@ what: Queen: create the second identity, then make one accepted recoverable task
 where: prompt below
 owner: unknown
 status: open-unverified
-note: not reconciled since the split
-updated: 2026-10-14
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split
+updated: 2026-10-21
 ---
 
 ## Prompt

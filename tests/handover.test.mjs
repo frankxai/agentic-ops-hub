@@ -172,3 +172,10 @@ test('frontmatter round-trips and body is kept', () => {
   assert.equal(h.meta.updated, '2026-10-18');
   assert.match(h.body, /Do the thing\./);
 });
+
+test('the prompt list shows each pickup note beside its status', () => {
+  const root = fixture();
+  setStatus(root, 'H-a', 'open', { note: 'held until 20 November', today: '2026-10-21' });
+  regenerate(root);
+  assert.match(readFileSync(paths(root).prompts, 'utf8'), /\| open; held until 20 November \|/);
+});

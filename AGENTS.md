@@ -50,6 +50,14 @@ These guidelines enforce discipline, conceptual clarity, and simplicity:
 * Branch `agent/<harness>/<scope>` from `origin/main`. If the primary checkout is another harness's branch, use a separate worktree. Do not write the handover into `C:/Users/frank/starlight` or `agentic-ops`.
 * A file such as FrankX `docs/ops/HANDOVER-*.md`, or the agentic-ops Desktop reboot pack, is the in-repo pickup for the next session in that checkout. The estate record is still this ledger.
 
+### 7. Focus window, 21 October to 20 November 2026 (founder ruling)
+`ops/plans/estate-convergence-2026-10-21.md` holds the detail. These rules bind every agent through 20 November and lift on 21 November, unless Frank revises the ruling earlier.
+* **Where PRs may open.** Only in the spine repositories of the plan, within their caps. Until the plan's drain order is complete, a new spine PR carries drain work the plan names or a bug fix; new features wait. In the hold repositories (gencreator.ai, arcanea-ai-app, Starlight-Intelligence-System), only security fixes, bug fixes, the named S4 gate and the drain owner's draft-CI PR. Exempt from caps: the drain owner's one draft-CI PR per spine repository, narrowly scoped security-fix PRs, one open ledger PR at a time in this repository carrying only same-day close and merge records, and one open evidence PR at a time in this repository from the weekly estate-guard sweep.
+* **Everywhere else is read-only**, except for the drain owner, who may open and merge narrowly scoped security fixes, merge the two Actions cost-cut PRs the plan names (gencreator.ai#253, arcanea-platform#47), close PRs on the plan's approved close list with a reason and the branch kept, disable auto-merges the estate guardian armed, and record the drain's private lists in the private agentic-ops repository, pinned in the ledger by path and commit.
+* **pr-gate is the only merge mechanism.** Merge Steward stays off. `ESTATE_AUTONOMY` is `off` in frozen and hold repositories, because `assist` lets `@estate fix` push commits, and at most `assist` elsewhere. Before runners return, Frank lowers the variable everywhere the guardian is installed and only then does the drain owner run `gh pr merge --disable-auto` on every PR where the guardian already armed auto-merge (lowering the variable does not cancel those), recording the list in the ledger; no budget or runner comes back before both are done.
+* **No new repositories, Vercel projects or one-branch fan-outs across repositories**, except the drain owner's draft-CI and security-fix PRs.
+* **Record every close and merge** in `ops/OPS-LEDGER.md` the same day.
+
 ---
 
 ## Multi-Agent Coordination Protocol
@@ -60,6 +68,7 @@ Multiple agents (Claude, Grok, Gemini, Codex, Cursor, Cline) may work this repo 
 * **One agent = one branch:** `agent/<harness>/<short-scope>`. For heavy parallel work use a worktree: `git worktree add .worktrees/<name> -b agent/<harness>/<scope>`.
 * **Don't edit a file another live agent is mid-rewrite on.** Last-write-wins silently clobbers work. If the tree churns under you, pause and report.
 * **Integrate one at a time.** Stage your own scope with explicit pathspecs — never sweep another agent's in-flight changes into your commit.
+* **Focus window, 21 October to 20 November 2026.** Guardrail 7 above is the rule; it sits in the synced section so every generated agent configuration carries it.
 
 ---
 

@@ -4,8 +4,8 @@ what: Turn-0 instructions measured at 50k to 83k tokens per harness against an 8
 where: ~/.claude, ~/.codex, ~/.gemini plugins, Hermes skill dirs, starlight/AGENTS.md
 owner: unassigned
 status: processing
-note: 2026-10-18: Codex -9.4k tokens (416 duplicate skill junctions removed), Gemini now loads AGENTS.md, RTK hook installed (Bash tool only), Nucleus doctrine compiler prototype on starlight-agent-config agent/claude/starlight-nucleus 1f20577 (keeping every binding rule needs ~23 KB per core). Hermes deny list and Antigravity plugins are Frank's call.
-updated: 2026-10-18
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; 2026-10-18: Codex -9.4k tokens (416 duplicate skill junctions removed), Gemini now loads AGENTS.md, RTK hook installed (Bash tool only), Nucleus doctrine compiler prototype on starlight-agent-config agent/claude/starlight-nucleus 1f20577 (keeping every binding rule needs ~23 KB per core). Hermes deny list and Antigravity plugins are Frank's call.
+updated: 2026-10-21
 ---
 
 ## Prompt

@@ -4,8 +4,8 @@ what: Resume full Queen goal from verified admission and protected runtime
 where: prompt below
 owner: unknown
 status: open-unverified
-note: 2026-10-18: bridge front door fixed on agentic-ops agent/claude/bridge-queen-envelope 0f71b11 (Grok pass after 3 blocks); Queen evidence scope bdbf832 on a local estate-root branch; one e2e read-only card admitted in queen/inbox.
-updated: 2026-10-18
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; 2026-10-18: bridge front door fixed on agentic-ops agent/claude/bridge-queen-envelope 0f71b11 (Grok pass after 3 blocks); Queen evidence scope bdbf832 on a local estate-root branch; one e2e read-only card admitted in queen/inbox.
+updated: 2026-10-21
 ---
 
 ## Prompt

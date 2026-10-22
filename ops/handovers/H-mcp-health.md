@@ -4,8 +4,8 @@ what: Five MCP servers failed at Claude start-up on 17 October; two need an owne
 where: starlight-memory-vault, Prisma plugin config, Langfuse plan, desktop-commander plugin
 owner: unassigned
 status: processing
-note: 2026-10-18: starlight-memory answers initialize again (0.2.0, 3 tools; index file 23 KB). Real-handshake checker 8dd9ce2 and bridge/sis/nano-banana registry fixes be00621 sit on local estate-root branches awaiting the push ruling; sharded generator 21b478e local. Prisma-Local pin and Langfuse quota still Frank's.
-updated: 2026-10-18
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; 2026-10-18: starlight-memory answers initialize again (0.2.0, 3 tools; index file 23 KB). Real-handshake checker 8dd9ce2 and bridge/sis/nano-banana registry fixes be00621 sit on local estate-root branches awaiting the push ruling; sharded generator 21b478e local. Prisma-Local pin and Langfuse quota still Frank's.
+updated: 2026-10-21
 ---
 
 ## Prompt

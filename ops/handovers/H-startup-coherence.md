@@ -4,8 +4,8 @@ what: Make the start-up path name the Registry, lane claim and this index; resol
 where: starlight/AGENTS.md, ~/.starlight/workspace-bootstrap (unversioned), starlight/ops contract files
 owner: Claude
 status: processing
-note: edits 1, 2, 5 on local estate-root agent/claude/authority-map 8eac13d (Codex pass, Haiku follow-ups fixed); edits 3 and 4 in starlight-agent-config PR 127 head 5bac568 (Codex pass on gate logic and overview); gate fix deployed by Frank 2026-10-17 19:40. Remaining: Actions budget to merge 127, estate-root push ruling.
-updated: 2026-10-18
+note: held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; edits 1, 2, 5 on local estate-root agent/claude/authority-map 8eac13d (Codex pass, Haiku follow-ups fixed); edits 3 and 4 in starlight-agent-config PR 127 head 5bac568 (Codex pass on gate logic and overview); gate fix deployed by Frank 2026-10-17 19:40. Remaining: Actions budget to merge 127, estate-root push ruling.
+updated: 2026-10-21
 ---
 
 ## Prompt
