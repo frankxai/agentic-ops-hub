@@ -188,8 +188,14 @@ class Planner:
                 task,
             ]
         if agent == "opencode":
-            model = pinned_opencode_model(mission.get("route_class"), allow_free=self.allow_free)
-            return ["opencode", "run", "-m", model, task]
+            # Resolve (and so refuse) here, then hand back a self-contained command: the wrapper builds the
+            # provider-restricted launch config and runs `opencode run --standalone` under it.
+            pinned_opencode_model(mission.get("route_class"), allow_free=self.allow_free)
+            try:
+                from fleet.opencode_launch import wrapper_argv
+            except ImportError:  # run as a script from the fleet directory
+                from opencode_launch import wrapper_argv  # type: ignore[no-redef]
+            return wrapper_argv(mission["route_class"], task, allow_free=self.allow_free)
         if agent == "gemini":
             return ["gemini", "-p", task]
         raise PlannerError(f"agent {agent!r} has no unattended launcher")

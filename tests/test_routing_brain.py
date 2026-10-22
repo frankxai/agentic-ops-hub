@@ -1637,5 +1637,59 @@ class PoolAccounting(TmpLedger):
         self.assertEqual(route_executor.receipt_pool("opencode/beam-free", 0.0, SCHEMA), "free")
 
 
+class SettlementBindsToTheReservation(TmpLedger):
+    """A model retired between reserve() and settle must still record the money that was spent."""
+    GLM = "vercel/zai/glm-5.3"
+
+    def _retired_schema(self):
+        retired = json.loads(json.dumps(SCHEMA))
+        retired["task_classes"]["code"]["primary"] = "vercel/moonshotai/kimi-k3"
+        retired["task_classes"]["code"]["fallbacks"] = []
+        retired["token_pass"]["models"].pop(self.GLM, None)
+        return retired
+
+    def _hold(self):
+        return route_executor.reserve("code", self.GLM, 0.50)["reservation_id"]
+
+    def test_retired_model_still_settles_and_its_cost_counts(self):
+        rid = self._hold()
+        with patch.object(route_executor, "load_schema", return_value=self._retired_schema()):
+            receipt = route_executor.record_receipt("code", self.GLM, False, 0.42, 100, True, reservation_id=rid)
+            self.assertEqual(receipt["pool"], "token-pass")
+            self.assertAlmostEqual(route_executor.month_paid_spend(), 0.42)
+        self.assertEqual(route_executor.reservations(), [])
+
+    def test_retired_model_without_a_reservation_is_still_refused(self):
+        with patch.object(route_executor, "load_schema", return_value=self._retired_schema()):
+            with self.assertRaises(ValueError):
+                route_executor.record_receipt("code", self.GLM, False, 0.42, 100, True)
+        self.assertFalse(self.ledger.exists())
+
+    def test_settlement_for_a_different_class_or_model_is_refused_and_leaves_the_hold_open(self):
+        rid = self._hold()
+        with patch.object(route_executor, "load_schema", return_value=self._retired_schema()):
+            with self.assertRaises(ValueError):
+                route_executor.record_receipt("code", "vercel/other/model", False, 0.42, 100, True, reservation_id=rid)
+            with self.assertRaises(ValueError):
+                route_executor.record_receipt("bulk", self.GLM, False, 0.42, 100, True, reservation_id=rid)
+        self.assertEqual(len(route_executor.reservations()), 1)
+        self.assertFalse(self.ledger.exists())
+
+    def test_unknown_reservation_id_is_refused_even_for_an_admitted_model(self):
+        with patch.object(route_executor, "load_schema", return_value=self._retired_schema()):
+            with self.assertRaises(ValueError):
+                route_executor.record_receipt("code", self.GLM, False, 0.42, 100, True, reservation_id="nope")
+
+    def test_class_removed_from_the_schema_between_reserve_and_settle_still_records(self):
+        rid = self._hold()
+        gone = self._retired_schema()
+        del gone["task_classes"]["code"]
+        with patch.object(route_executor, "load_schema", return_value=gone):
+            receipt = route_executor.record_receipt("code", self.GLM, False, 0.42, 100, True, reservation_id=rid)
+        self.assertFalse(receipt["zdr_override"])
+        self.assertEqual(receipt["used"], self.GLM)
+        self.assertEqual(route_executor.reservations(), [])
+
+
 if __name__ == "__main__":
     unittest.main()

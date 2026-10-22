@@ -123,12 +123,21 @@ class TokenPlannerTests(unittest.TestCase):
         mission = self._mission(agent="opencode", budget=30)
         mission["route_class"] = "scout"
         args = self.planner.command_args(mission)
-        self.assertEqual(args[:4], ["opencode", "run", "-m", "vercel/deepseek/deepseek-v4.1-flash"])
+        # The command is the launch wrapper: it builds the provider-restricted config, then runs
+        # `opencode run --standalone -m <pinned model>` (see tests/test_opencode_launch.py).
+        self.assertEqual(args[0], "python")
+        self.assertEqual(args[args.index("--class") + 1], "scout")
+        self.assertNotIn("--allow-free", args)
+        self.assertEqual(args[-2], "--")
 
     def test_opencode_launch_keeps_the_class_variant(self):
         mission = self._mission(agent="opencode", budget=30)
         mission["route_class"] = "code"
-        self.assertEqual(self.planner.command_args(mission)[3], "vercel/zai/glm-5.3#medium")
+        from fleet import opencode_launch
+        from fleet.token_planner import pinned_opencode_model
+        self.assertEqual(pinned_opencode_model("code"), "vercel/zai/glm-5.3#medium")
+        self.assertEqual(opencode_launch.opencode_argv("vercel/zai/glm-5.3#medium", "t", "oc")[3:5],
+                         ["-m", "vercel/zai/glm-5.3#medium"])
 
     def test_opencode_launch_refuses_without_a_resolvable_class(self):
         for bad in (None, "", "nonsense", 7):
@@ -142,8 +151,11 @@ class TokenPlannerTests(unittest.TestCase):
         mission = self._mission(agent="opencode", budget=30)
         mission["route_class"] = "scout"
         free = Planner(self.planner.config, allow_free=True).command_args(mission)
-        self.assertTrue(free[3].startswith("opencode/"), free[:4])
-        self.assertTrue(self.planner.command_args(mission)[3].startswith("vercel/"))
+        self.assertIn("--allow-free", free)
+        self.assertNotIn("--allow-free", self.planner.command_args(mission))
+        from fleet.token_planner import pinned_opencode_model
+        self.assertTrue(pinned_opencode_model("scout", allow_free=True).startswith("opencode/"))
+        self.assertTrue(pinned_opencode_model("scout").startswith("vercel/"))
 
     def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md", receipt="C:/reports/n1.json"):
         return {
@@ -167,7 +179,7 @@ class PinnedModelIgnoresFilteredPrimary(unittest.TestCase):
         schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
         with patch.object(route_executor, "load_schema", return_value=schema):
             pinned = pinned_opencode_model("code")
-            argv = ["opencode", "run", "-m", pinned, "task"]
+            argv = ["opencode", "run", "--standalone", "-m", pinned, "task"]
         self.assertNotIn("opencode/beam-free", " ".join(argv))
         self.assertTrue(pinned.startswith("vercel/"), pinned)
 

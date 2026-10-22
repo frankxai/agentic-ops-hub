@@ -542,9 +542,21 @@ def record_receipt(task_class: str, used: str, fallback_used: bool,
     ceiling is flagged over_ceiling rather than refused, so the ledger and the
     weekly review can see it.
     """
-    r = route(task_class, allow_non_zdr, allow_free)  # validates up front
-    if used not in r["chain"]:
-        raise ValueError(f"used model '{used}' is not in the chain for '{task_class}': {r['chain']}")
+    # New admissions are checked against the CURRENT chain. A settlement of an existing hold is
+    # checked against the hold's own (class, model) binding below, so a model that was retired
+    # between reserve() and settle still records the money that was really spent.
+    r = None
+    try:
+        r = route(task_class, allow_non_zdr, allow_free)
+    except ValueError:
+        if not reservation_id:
+            raise
+    if r is None or used not in r["chain"]:
+        if not reservation_id:
+            raise ValueError(f"used model '{used}' is not in the chain for '{task_class}': {r['chain']}")
+        # the reservation lookup inside the lock refuses this unless the hold names the same class and model
+        if r is None:
+            r = {"primary": used, "chain": [used], "cost_ceiling_usd": float("inf"), "zdr_required": False}
     if not _finite_number(cost_usd) or cost_usd < 0:
         raise ValueError("cost_usd must be a finite non-negative number")
     if not isinstance(latency_ms, int) or isinstance(latency_ms, bool) or not 0 <= latency_ms <= MAX_SANE_LATENCY_MS:

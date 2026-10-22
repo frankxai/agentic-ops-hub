@@ -283,8 +283,10 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
 
 def opencode_probe_command(allow_free: bool = False) -> list[str]:
     """The live OpenCode probe, pinned to the scout class route so ambient config cannot pick the model."""
+    from fleet.opencode_launch import wrapper_argv
     from fleet.token_planner import pinned_opencode_model
-    return ["opencode", "run", "-m", pinned_opencode_model("scout", allow_free=allow_free), "Reply exactly PONG."]
+    pinned_opencode_model("scout", allow_free=allow_free)  # refuse here when the route cannot be resolved
+    return wrapper_argv("scout", "Reply exactly PONG.", allow_free=allow_free)
 
 
 def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow_free: bool = False) -> dict[str, Any]:

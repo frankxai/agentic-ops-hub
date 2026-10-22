@@ -171,3 +171,20 @@ Codex round 8 (on `749bff5`) found two design issues and two mechanical ones. Fi
 - P3, `_countable_receipt` accepted a timestamp that overflows UTC conversion (`0001-01-01T00:00:00+01:00`). It now uses `_as_utc`, the path `month_paid_spend` takes, and treats `OverflowError` as uncountable.
 
 Cost of the safe default: scout, review and vision calls spend Token Pass credit unless the caller passes `--allow-free`. Plainly: the gateway key guarantees only the calls that go through the gateway.
+
+
+## Codex round 12 fixes
+
+Codex round 12 (on `4938ab1`) found one design issue and two mechanical ones.
+
+- **P1, `-m` pins only the primary model.** Fixed with `fleet/opencode_launch.py` (see "Launches under a generated config" in `fleet/ROUTING-BRAIN.md`). The empirical check, run read-only on opencode 2.1.2 with no model call, using `opencode models` as the observable. A temporary HOME and config directory held a hostile global `opencode.json` (`enabled_providers: ["opencode","vercel"]`, `small_model: "opencode/beam-free"`), and all temporary material was deleted afterwards:
+  - `opencode debug config`, `opencode models` and `opencode debug agents` without `--standalone` talk to the managed background service (port 45278, started with the user's own config). With a launch directory set in the client environment, `opencode models` still listed 11 `opencode` models and 49 `vercel` models: the environment is ignored.
+  - With `opencode models --standalone` and a hostile global config: 11 `opencode` models.
+  - Adding `OPENCODE_CONFIG=<file with disabled_providers:["opencode"]>` did NOT remove them, and neither did `OPENCODE_CONFIG_CONTENT`. A project-level `opencode.json` did not either. `OPENCODE_CONFIG_DIR=<dir>` did.
+  - A launch directory with `model`, `small_model`, `enabled_providers: ["vercel"]`, `disabled_providers: ["opencode","omniroute"]` and no provider block listed zero models even with the real credentials present. The directory replaces the global config, so it must carry the gateway `provider` block. With that block copied in: 316 `vercel` models, no `opencode`.
+  - The same directory plus a hostile `OPENCODE_CONFIG` file (re-enabling `opencode`, `small_model: opencode/beam-free`), and again plus a hostile project-level `opencode.json` in the working directory: still 316 `vercel` models, no `opencode`.
+  - Not verified: the effective `small_model` value, which cannot be read without a model call.
+- **P2, variant.** Codex asked for `--variant`. The installed `opencode run --help` documents `-m provider/model#variant` and lists no `--variant` flag, so the variant stays inside `-m`; a test asserts this.
+- **P2, settlement after a model is retired.** `record_receipt()` now checks a reservation settlement against the hold's own class and model, not the current chain. A retired model between `reserve()` and settle records its real cost (pool `token-pass`, counted in monthly spend). New admissions are still checked against the current chain, an unknown or mismatched reservation is still refused and leaves the hold open, and a class removed from the schema still settles.
+
+Plainly: the guarantee covers launches made through `opencode_launch.py`, and it depends on `--standalone` plus `OPENCODE_CONFIG_DIR` behaving as observed on this version. A different OpenCode version needs the same check.
