@@ -1,3 +1,9 @@
+<!-- marketing-team-hiring-20261022:start -->
+## Marketing team built and reviewed, first two hires measured
+
+An 11-seat marketing team plugin with checks as code, a send gate and 24 eval cases is in Starlight-Intelligence/marketing-intelligence #3, #4 and #5 (the repo moved to Starlight-Intelligence the same day). Hire 1 found the leak: 546 unique visitors to the skills library in 14 days and no way to sign up. The signup link in claude-skills-library#73 is blocked by Codex on a copy-versus-page mismatch, with the fix posted. Agent cards and registry entries are on review branches. Founder items: waitlist env, a private home for the team brain, first publication and licence. Details in [the session](sessions/2026-10-22.md).
+<!-- marketing-team-hiring-20261022:end -->
+
 <!-- estate-convergence-20261021:start -->
 ## Launch factory on one PR, Payment Link checkout ported, estate convergence plan proposed
 

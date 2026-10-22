@@ -9,6 +9,7 @@ feature in a hold repository, waits unless the plan lets the drain owner do it, 
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [marketing-team-hiring-20261022](handovers/marketing-team-hiring-20261022.md) | Marketing team: land the review-passed PRs, get PR 73's signup link merged, run hire 2 (AI visibility baseline) | claude | open; plan page https://claude.ai/artifact/GyC5jHyRJG5Yec6Fjsp2cP; team brain is local-only at starlight/scratch/marketing-brain/.marketing/ until Frank picks a private repo |
 | [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
