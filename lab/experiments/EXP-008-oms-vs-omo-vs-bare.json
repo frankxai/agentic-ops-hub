@@ -7,7 +7,7 @@
     "sis",
     "acos"
   ],
-  "hypothesis": "With the same task packs and the same Token Pass budget, opencode with the OmS layer (routing brain, ZDR rules, receipts) matches stock OmO on accepted rate and costs at least 30% less per accepted task, with zero ZDR violations, and both beat bare opencode on the agentic traps.",
+  "hypothesis": "With the same task packs and the same Token Pass budget, opencode with the OmS layer (routing brain, ZDR rules, receipts) matches stock OmO (no routing brain) on accepted rate and costs at least 30% less per accepted task, with zero ZDR violations, and the OmO-based arms beat bare opencode on the agentic traps.",
   "status": "blocked",
   "state": "S1",
   "owner": "claude",
@@ -27,9 +27,14 @@
       "role": "control: no plugin, no routing"
     },
     {
+      "harness": "omo-stock",
+      "model": "OmO default routing, unmodified config",
+      "role": "stock OmO control: no routing brain, no Token Pass governance"
+    },
+    {
       "harness": "now",
-      "model": "OmO default routing",
-      "role": "incumbent: stock OmO config"
+      "model": "OmO plus the routing brain as installed today",
+      "role": "incumbent: what we run today"
     },
     {
       "harness": "oms",
@@ -50,7 +55,7 @@
       "human_interventions"
     ]
   },
-  "success_rule": "OmS is kept as a named layer only if accepted_rate is within 3 points of stock OmO, cost_per_accepted is at least 30% lower, zdr_violations is 0, receipt_completeness is 100%, and trap_pass_rate is not lower. If OmS only matches on cost, the value is governance and receipts, and that is stated as the result, not as a quality win.",
+  "success_rule": "OmS is kept as a named layer only if accepted_rate is within 3 points of stock OmO (the omo-stock arm), cost_per_accepted is at least 30% lower, zdr_violations is 0, receipt_completeness is 100%, and trap_pass_rate is not lower. If OmS only matches on cost, the value is governance and receipts, and that is stated as the result, not as a quality win.",
   "kill": "Stop at $4 of Token Pass or when two arms cannot run headless. Any arm with telemetry we cannot disable is dropped. With fewer than 10 runs per cell the report says directional and decides nothing.",
   "budget": {
     "token_pass_usd_cap": 4,
@@ -63,7 +68,9 @@
     "harness-runner",
     "pack-authoring",
     "dec-token-pass-key",
-    "receipt-fields"
+    "receipt-fields",
+    "worker-phase-0",
+    "dec-railway-budget"
   ],
   "clock": {
     "ttl_days": 30,
@@ -86,5 +93,6 @@
       "source": "agentic-ops/fleet/HARNESS-STACK.md baseline",
       "caveat": "n=1 per cell, toy tasks, model rails not harness loops. It shows the battery works, not who is better."
     }
-  ]
+  ],
+  "tier": "T2"
 }

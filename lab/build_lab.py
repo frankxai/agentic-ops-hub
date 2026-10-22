@@ -51,10 +51,16 @@ LAYERS = ("L0", "L0+L2", "L2", "L3", "L4")
 HARNESS_STATUSES = ("live", "installed", "candidate", "to-build")
 PACK_STATUSES = ("spec", "curating", "ready")
 MAX_JUDGED_SHARE = 0.5
+MIN_SAMPLE_FLOOR = 10
+TIERS = ("T0", "T1", "T2", "T3")
+
+
+def _reject_constant(name: str):
+    raise ValueError(f"non-finite JSON number {name} is not allowed")
 
 
 def read_json(path: Path):
-    return json.loads(path.read_text(encoding="utf-8"))
+    return json.loads(path.read_text(encoding="utf-8"), parse_constant=_reject_constant)
 
 
 def load() -> dict:
@@ -67,6 +73,15 @@ def load() -> dict:
         "packs": read_json(LAB / "packs.json"),
         "experiments": experiments,
     }
+
+
+def is_int(value) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
+def sample_floor(data: dict) -> int:
+    floor = data["packs"].get("sample_floor_per_cell")
+    return floor if is_int(floor) and floor >= MIN_SAMPLE_FLOOR else MIN_SAMPLE_FLOOR
 
 
 def is_number(value) -> bool:
@@ -96,6 +111,12 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
     goals, gates, budget, experiments = data["goals"], data["gates"], data["budget"], data["experiments"]
     pillar_ids = {p["id"] for p in goals["pillars"]}
     project_ids = {p["id"] for p in goals["projects"]}
+    for label, items in (("pillars", goals["pillars"]), ("projects", goals["projects"])):
+        seen = [i.get("id") for i in items]
+        if any(not isinstance(i, str) or not i.strip() for i in seen):
+            problems.append(f"goals {label}: every entry needs a non-empty id")
+        if len(set(seen)) != len(seen):
+            problems.append(f"goals {label}: duplicate id")
     gate_ids = [g["id"] for g in gates["items"]]
     exp_ids = [e.get("id") for e in experiments]
 
@@ -134,6 +155,11 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
             problems.append(f"{eid}: runs_on needs entries whose 'where' is one of {sorted(PLACES)}")
         if not exp["arms"]:
             problems.append(f"{eid}: needs at least one arm")
+        tier = exp.get("tier")
+        if tier is not None and tier not in TIERS:
+            problems.append(f"{eid}: tier {tier!r} not in {TIERS}")
+        if tier in ("T1", "T2", "T3") and any(r.get("where") == "local-c940" for r in exp["runs_on"]):
+            problems.append(f"{eid}: {tier} runs never go on the laptop (scale policy); use a cloud worker")
         if not all(is_number(exp["budget"].get(k)) for k in BUDGET_KEYS):
             problems.append(f"{eid}: budget needs non-negative numbers for {BUDGET_KEYS}")
         if not exp.get("metric", {}).get("primary"):
@@ -154,15 +180,24 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
         started = exp["clock"].get("started")
         if exp["status"] in ("running", "concluded", "killed") and not started:
             problems.append(f"{eid}: status {exp['status']} needs clock.started")
-        if started and exp["status"] == "running":
+        if started:
             try:
                 age = (today - dt.date.fromisoformat(started)).days
-            except ValueError:
+            except (ValueError, TypeError):
                 problems.append(f"{eid}: clock.started {started!r} is not a date")
             else:
-                if age > exp["clock"]["ttl_days"]:
+                if age < 0:
+                    problems.append(f"{eid}: clock.started {started} is in the future")
+                elif exp["status"] == "running" and age > exp["clock"]["ttl_days"]:
                     problems.append(f"{eid}: past its {exp['clock']['ttl_days']}-day time to live; conclude or kill it")
 
+    numbers = {"token_pass.lab_allocation_usd": budget["token_pass"].get("lab_allocation_usd"),
+               "token_pass.monthly_usd": budget["token_pass"].get("monthly_usd"),
+               "railway_infra.monthly_cap_usd": budget["railway_infra"].get("monthly_cap_usd")}
+    bad = [name for name, value in numbers.items() if not is_number(value)]
+    if bad:
+        problems.append(f"budget: {bad} must be finite non-negative numbers")
+        return problems + validate_harnesses(data) + validate_packs(data)
     caps = {k: sum(e.get("budget", {}).get(k, 0) for e in experiments if e.get("status") not in ("concluded", "killed"))
             for k in ("token_pass_usd_cap", "infra_usd_cap")}
     if caps["token_pass_usd_cap"] > budget["token_pass"]["lab_allocation_usd"]:
@@ -189,10 +224,10 @@ def validate_harnesses(data: dict) -> list[str]:
         measured = h.get("measured")
         if measured is None:
             continue
-        floor = data["packs"].get("sample_floor_per_cell", 10)
-        if not isinstance(measured, dict) or not measured.get("source") or not isinstance(measured.get("n"), int):
+        floor = sample_floor(data)
+        if not isinstance(measured, dict) or not measured.get("source") or not is_int(measured.get("n")):
             problems.append(f"harness {hid}: measured needs an integer n and a source")
-        elif measured["n"] < floor:
+        elif measured["n"] < max(floor, 1):
             problems.append(f"harness {hid}: measured n={measured['n']} is below the sample floor {floor}; keep it null or call it directional elsewhere")
     return problems
 
@@ -202,6 +237,9 @@ def validate_packs(data: dict) -> list[str]:
     ids = [p.get("id") for p in data["packs"]["items"]]
     if len(set(ids)) != len(ids):
         problems.append("packs: duplicate id")
+    floor = data["packs"].get("sample_floor_per_cell")
+    if not is_int(floor) or floor < MIN_SAMPLE_FLOOR:
+        problems.append(f"packs: sample_floor_per_cell must be an integer of at least {MIN_SAMPLE_FLOOR} (SIS doctrine A2)")
     for pack in data["packs"]["items"]:
         pid = pack.get("id", "?")
         if pack.get("status") not in PACK_STATUSES:
@@ -210,20 +248,27 @@ def validate_packs(data: dict) -> list[str]:
         if not tasks:
             problems.append(f"pack {pid}: needs tasks")
             continue
+        task_ids = [t.get("id") for t in tasks]
+        if any(not isinstance(i, str) or not i.strip() for i in task_ids) or len(set(task_ids)) != len(task_ids):
+            problems.append(f"pack {pid}: task ids must be non-empty and unique")
         for t in tasks:
             check = str(t.get("verifier", {}).get("check", "")).strip()
             if not check:
                 problems.append(f"pack {pid}: task {t.get('id', '?')} has no checker")
-            if t.get("judged") and t.get("verifier", {}).get("type") != "blind-judge":
-                problems.append(f"pack {pid}: judged task {t.get('id', '?')} must use a blind-judge verifier")
+            if bool(t.get("judged")) != (t.get("verifier", {}).get("type") == "blind-judge"):
+                problems.append(f"pack {pid}: task {t.get('id', '?')} judged flag and blind-judge verifier must agree")
         if pack_judged_share(pack) > MAX_JUDGED_SHARE:
             problems.append(f"pack {pid}: more than {int(MAX_JUDGED_SHARE * 100)}% of tasks are judged")
     return problems
 
 
+def is_judged(task: dict) -> bool:
+    return bool(task.get("judged")) or task.get("verifier", {}).get("type") == "blind-judge"
+
+
 def pack_judged_share(pack: dict) -> float:
     tasks = pack.get("tasks") or []
-    return sum(1 for t in tasks if t.get("judged")) / len(tasks) if tasks else 0.0
+    return sum(1 for t in tasks if is_judged(t)) / len(tasks) if tasks else 0.0
 
 
 def receipts_path() -> Path:
@@ -418,7 +463,7 @@ def render_card(exp: dict, data: dict) -> str:
         f'<dt>Serves</dt><dd class="chips">{projects}</dd>'
         f'<dt>Runs on</dt><dd>{esc(places)}</dd>'
         f'<dt>Measures</dt><dd class="mono">{esc(exp["metric"]["primary"])}</dd>'
-        f'<dt>Spend cap</dt><dd class="mono">{money(b["token_pass_usd_cap"])} Token Pass · {money(b["infra_usd_cap"])} infra · {b["frank_hours"]} h Frank</dd>'
+        f'<dt>Spend cap</dt><dd class="mono">{money(b["token_pass_usd_cap"])} Token Pass · {money(b["infra_usd_cap"])} infra · {esc(b["frank_hours"])} h Frank</dd>'
         f'<dt>Waiting on</dt><dd class="chips">{chips}</dd>'
         f'<dt>Clock</dt><dd class="mono">{esc(clock)} · 30-day limit</dd>'
         f'<dt>Feeds</dt><dd>{esc(exp["decision_it_feeds"])}</dd>'
@@ -499,7 +544,7 @@ def render_receipts(summary: dict) -> str:
         rows.append(f'<tr><td class="mono">{esc(cls)}</td><td class="mono">{esc(model)}</td><td class="mono">{r["n"]}</td>'
                     f'<td class="mono">{100*r["ok"]/r["n"]:.0f}%</td><td class="mono">{money(r["cost"])}</td>'
                     f'<td class="mono">{"n/a" if per is None else "$" + format(per, ".4f")}</td></tr>')
-    return ('<section><h2>Measured so far</h2><div class="panel table-scroll"><table><thead><tr><th>Class</th><th>Model</th><th>Calls</th><th>Accepted</th><th>Cost</th><th>Per accepted</th></tr></thead>'
+    return ('<section><h2>Measured so far</h2><div class="panel table-scroll"><table><thead><tr><th>Class</th><th>Model</th><th>Calls</th><th>Call success</th><th>Cost</th><th>Cost per successful call</th></tr></thead>'
             f'<tbody>{"".join(rows)}</tbody></table></div>'
             f'<p class="source" style="margin-top:6px">source: {esc(summary["path"])} · {summary["used"]} receipts used, {summary["skipped"]} malformed skipped, {summary["synthetic"]} synthetic ignored</p></section>')
 
@@ -508,7 +553,7 @@ def render_harnesses(data: dict) -> str:
     rows = []
     for h in data["harnesses"]["items"]:
         m = h["measured"]
-        measured = ("not measured" if m is None else f'n={m["n"]}, {esc(json.dumps({k: v for k, v in m.items() if k not in ("n", "source")}))}')
+        measured = ("not measured" if m is None else f'n={esc(m["n"])}, {esc(json.dumps({k: v for k, v in m.items() if k not in ("n", "source")}))}')
         rows.append(f'<tr><td><strong>{esc(h["name"])}</strong><br><span class="small muted">{esc(h["role"])}</span></td>'
                     f'<td class="mono">{esc(h["layer"])}</td><td><span class="pill">{esc(h["status"])}</span></td>'
                     f'<td class="mono">{esc(h["headless"])}</td><td class="small">{measured}</td></tr>')
@@ -524,10 +569,10 @@ def render_packs(data: dict) -> str:
                     f'<td>{esc(p["domain"])}</td><td><span class="pill">{esc(p["status"])}</span></td>'
                     f'<td class="mono">{len(p["tasks"])}</td><td class="mono">{100 * pack_judged_share(p):.0f}%</td>'
                     f'<td class="small">{esc(p["weakness"])}</td></tr>')
-    floor = data["packs"].get("sample_floor_per_cell", 10)
+    floor = sample_floor(data)
     return ('<section><h2>Task packs</h2><div class="panel table-scroll"><table><thead><tr><th>Pack</th><th>Domain</th><th>Status</th><th>Tasks</th><th>Judged</th><th>Known weakness</th></tr></thead>'
             f'<tbody>{"".join(rows)}</tbody></table></div>'
-            f'<p class="small muted" style="margin-top:8px">At least {floor} runs per harness and task before any claim. Judged tasks are at most half of a pack and use a blind judge from another family.</p></section>')
+            f'<p class="small muted" style="margin-top:8px">At least {esc(floor)} runs per harness and task before any claim. Judged tasks are at most half of a pack and use a blind judge from another family.</p></section>')
 
 
 def render(data: dict, summary: dict, fragment: bool = False) -> str:

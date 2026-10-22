@@ -9,10 +9,28 @@
       "layer": "L0",
       "status": "live",
       "headless": "yes",
-      "runs_on": ["local-c940", "railway"],
+      "runs_on": [
+        "local-c940",
+        "railway"
+      ],
       "governed_by_routing_brain": false,
       "licence": "upstream",
       "role": "Control arm: what a user gets with no layer from us.",
+      "evidence": [],
+      "measured": null
+    },
+    {
+      "id": "omo-stock",
+      "name": "stock OmO 5.1.40 on opencode, default config",
+      "layer": "L0",
+      "status": "installed",
+      "headless": "yes",
+      "runs_on": [
+        "railway"
+      ],
+      "governed_by_routing_brain": false,
+      "licence": "OmO SUL-1.0 (internal use only)",
+      "role": "Control arm for EXP-008: plain OmO with its own default routing and no routing brain, so 'now' (OmO plus routing brain) is measured against it.",
       "evidence": [],
       "measured": null
     },
@@ -22,12 +40,18 @@
       "layer": "L0+L2",
       "status": "live",
       "headless": "yes",
-      "runs_on": ["local-c940"],
+      "runs_on": [
+        "local-c940"
+      ],
       "governed_by_routing_brain": true,
       "licence": "OmO SUL-1.0 (internal use only)",
       "role": "The working harness today. Its OmO config is the OLD generator output until PR 377 merges and the generator is re-run.",
       "evidence": [
-        {"claim": "Token Pass call resolved to token-pass; a 403 fallback walk succeeded.", "source": "OPS-LEDGER 2026-10-21", "caveat": "Single live proof, not a benchmark."}
+        {
+          "claim": "Token Pass call resolved to token-pass; a 403 fallback walk succeeded.",
+          "source": "OPS-LEDGER 2026-10-21",
+          "caveat": "Single live proof, not a benchmark."
+        }
       ],
       "measured": null
     },
@@ -37,12 +61,19 @@
       "layer": "L3",
       "status": "to-build",
       "headless": "inherits from the host harness",
-      "runs_on": ["local-c940", "railway"],
+      "runs_on": [
+        "local-c940",
+        "railway"
+      ],
       "governed_by_routing_brain": true,
       "licence": "ours; must not copy OmO source (SUL-1.0)",
       "role": "Our layer. No fork. Generated from routing.schema.json, with a free profile and a Token Pass profile.",
       "evidence": [
-        {"claim": "gen_omo_config.py generates an OmO config from the routing schema.", "source": "fleet/gen_omo_config.py", "caveat": "Profiles are not split yet; PR 377 changes its fallbacks."}
+        {
+          "claim": "gen_omo_config.py generates an OmO config from the routing schema.",
+          "source": "fleet/gen_omo_config.py",
+          "caveat": "Profiles are not split yet; PR 377 changes its fallbacks."
+        }
       ],
       "measured": null
     },
@@ -65,7 +96,9 @@
       "layer": "L0",
       "status": "candidate",
       "headless": "unverified",
-      "runs_on": ["railway"],
+      "runs_on": [
+        "railway"
+      ],
       "governed_by_routing_brain": false,
       "licence": "SUL-1.0",
       "role": "Holds the 'mass ulw' swarm. Tested in EXP-002 and EXP-003.",
@@ -78,12 +111,18 @@
       "layer": "L0",
       "status": "candidate",
       "headless": "unverified",
-      "runs_on": ["railway"],
+      "runs_on": [
+        "railway"
+      ],
       "governed_by_routing_brain": false,
       "licence": "upstream",
       "role": "Minimal-harness challenger in EXP-002.",
       "evidence": [
-        {"claim": "One vendor benchmark: pi 20/30 vs oh-my-pi 17/30 at about a quarter of the cost per success.", "source": "Composio blog on pi vs omp", "caveat": "Vendor blog, one model, 30 tasks. Motivates the test only."}
+        {
+          "claim": "One vendor benchmark: pi 20/30 vs oh-my-pi 17/30 at about a quarter of the cost per success.",
+          "source": "Composio blog on pi vs omp",
+          "caveat": "Vendor blog, one model, 30 tasks. Motivates the test only."
+        }
       ],
       "measured": null
     },
@@ -93,7 +132,9 @@
       "layer": "L0",
       "status": "candidate",
       "headless": "unverified",
-      "runs_on": ["railway"],
+      "runs_on": [
+        "railway"
+      ],
       "governed_by_routing_brain": false,
       "licence": "upstream",
       "role": "Challenger in EXP-002.",
@@ -106,12 +147,18 @@
       "layer": "L0",
       "status": "live",
       "headless": "yes",
-      "runs_on": ["local-c940"],
+      "runs_on": [
+        "local-c940"
+      ],
       "governed_by_routing_brain": false,
       "licence": "vendor",
       "role": "Primary interactive harness. Subscription spend is not visible to the router, so its tasks need receipts written by a wrapper to be comparable.",
       "evidence": [
-        {"claim": "Four harnesses (OpenCode, Claude Code, Hermes, Codex CLI) each completed a real traced model run.", "source": "hub PR 353", "caveat": "Tracing proof, not quality."}
+        {
+          "claim": "Four harnesses (OpenCode, Claude Code, Hermes, Codex CLI) each completed a real traced model run.",
+          "source": "hub PR 353",
+          "caveat": "Tracing proof, not quality."
+        }
       ],
       "measured": null
     },
@@ -121,12 +168,18 @@
       "layer": "L0",
       "status": "live",
       "headless": "yes",
-      "runs_on": ["local-c940"],
+      "runs_on": [
+        "local-c940"
+      ],
       "governed_by_routing_brain": false,
       "licence": "vendor",
       "role": "Independent verifier harness. Rejected 15 of 15 earlier Claude PRs with real security bugs, and has returned CHANGES REQUESTED on every PR 377 round so far.",
       "evidence": [
-        {"claim": "Cross-family review catches defects the author's family misses.", "source": "memory: estate absorb pipeline 2026-10-01; PR 377 rounds 1-4", "caveat": "Small sample; not yet scored as a harness."}
+        {
+          "claim": "Cross-family review catches defects the author's family misses.",
+          "source": "memory: estate absorb pipeline 2026-10-01; PR 377 rounds 1-4",
+          "caveat": "Small sample; not yet scored as a harness."
+        }
       ],
       "measured": null
     }

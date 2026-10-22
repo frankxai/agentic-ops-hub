@@ -30,6 +30,10 @@ One receipt is one **run**: the routing calls made for one task attempt, then th
 | raw routing records, checker output, routing schema | `evidence[]` with sha256 | Hash-bound references to files |
 | pass, partial, fail | `verdict` | See next section |
 
+## Trust level: who checked is self-asserted
+
+Codex review of PR 379 (2026-10-22) found that every claim about WHO accepted the work comes from the caller. The bridge now refuses malformed input (real booleans, finite non-negative numbers, a 64-hex subject digest, evidence with exactly kind, ref and sha256, no `;` or `=` in note fields), compares actors case-insensitively after trimming, requires exactly one `verify:*` stage that the accept decision names, requires a human decision to carry an https URL or a GitHub PR or commit reference, and validates the finished draft against the vendored v1 schema. None of that proves the named checker ran or that a human approved. The accept decision therefore carries `provenance=self-asserted` in its note, and `accepted()` means "internally consistent and claims an independent checker passed". Real provenance arrives with the standalone verifier (gate `receipt-verifier`).
+
 ## Acceptance is not the verdict
 
 v1 refuses `PASS` when any stage failed. A task that passed its tests after a 403 fallback therefore has verdict `PARTIAL`. So the lab defines **accepted** separately: a different actor approved it (`decisions[gate=accept]`), the checker stage is ok, and the accepting actor is not the harness that made the work. `accepted()` and `separation_problems()` in the bridge implement that. Reports use accepted, not verdict. If this turns out to confuse readers, that is a case to raise with SIS for v1.1.

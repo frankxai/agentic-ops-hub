@@ -31,15 +31,15 @@ The dashboard shows measured numbers only from real receipts in `fleet/receipts/
 
 | Id | Question | Cap | Blocked by |
 |---|---|---|---|
-| EXP-001 | Flash vs GLM 5.3 as default coder | $6 | key rotation, PR 377, suite |
+| EXP-001 | Flash vs GLM 5.3 as default coder | $6 + $1 infra | key rotation, PR 377, suite, worker Phase 0 |
 | EXP-002 | Harness bake-off on one model (opencode, pi, omo, fx) | $8 + $3 infra | key, suite, worker Phase 0 |
 | EXP-003 | OmO swarm vs best single agent | $4 + $1 infra | EXP-002 |
 | EXP-004 | Always-on vs activated worker | $3 infra | Railway cap approval, worker Phase 0 |
 | EXP-005 | Cost of strict ZDR routing | $0 | PR 377, ZDR decision |
-| EXP-006 | Ceiling of free-only models | $0 | suite |
+| EXP-006 | Ceiling of free-only models (one free arm, no paid reference) | $0 + $1 infra | suite, worker Phase 0 |
 | EXP-007 | Eve vs Railway worker for issue to draft PR | $5 | what "software factory" means, EXP-004 |
 
-Committed caps: $23 of the $30 Token Pass lab allocation, $7 of the proposed $20 Railway cap. The validator rejects a registry that goes over.
+Committed caps: $27 of the $30 Token Pass lab allocation, $11 of the proposed $20 Railway cap. The validator rejects a registry that goes over.
 
 ## Cloud worker phases
 

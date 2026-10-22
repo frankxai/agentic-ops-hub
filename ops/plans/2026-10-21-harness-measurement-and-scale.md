@@ -37,7 +37,7 @@ Subscription harnesses (Claude Code) are not metered by the router. Compare them
 
 ## 4. How we compare now, OmO, OmS and the template
 
-EXP-008 is the direct test: arms `opencode-bare` (control), `now` (stock OmO), `oms` (routing brain chain per class). Same packs, same order, same per-task wall budget, paired comparison. Pre-registered before data. The pass rule is in the experiment; in short, OmS is kept as a named layer only if it holds accepted rate within 3 points of stock OmO, costs 30% less per accepted task, has zero ZDR violations and complete receipts, and does not do worse on traps. If it only matches on cost, we say the value is governance and receipts, not quality.
+EXP-008 is the direct test: arms `opencode-bare` (control), `omo-stock` (stock OmO, no routing brain), `now` (OmO plus the routing brain as installed today), `oms` (routing brain chain per class). Same packs, same order, same per-task wall budget, paired comparison. Pre-registered before data. The pass rule is in the experiment; in short, OmS is kept as a named layer only if it holds accepted rate within 3 points of stock OmO (the `omo-stock` arm), costs 30% less per accepted task, has zero ZDR violations and complete receipts, and does not do worse on traps. If it only matches on cost, we say the value is governance and receipts, not quality.
 
 starlight-ai-harness is not an arm. It is the **output**: it ships only after OmS passes EXP-008, and its README claims only what the result file shows.
 
@@ -68,7 +68,7 @@ Illustration, with caveats: 3 arms x 20 tasks x 10 runs = 600 attempts. A public
 | Tier | Size | Where | Cost guard | Purpose |
 |---|---|---|---|---|
 | T0 smoke | 4-10 tasks, 1 run | Free rail, nightly | $0 | Liveness: did a model or harness break |
-| T1 pack | 1 pack, n=10 per cell | Railway, one arm at a time | reserve/settle cap per run | First real numbers (EXP-006 free-only first, then EXP-001) |
+| T1 pack | 1 pack, n=10 per cell | Railway worker, one arm at a time (EXP-001, 006, 009 are T1; EXP-008 is T2) | reserve/settle cap per run | First real numbers (EXP-006 free-only first, then EXP-001) |
 | T2 compare | 3-4 arms, paired, n=10-30 | Railway, serial or low parallelism | experiment cap ($4-8) | Decisions (EXP-008, EXP-002) |
 | T3 massive | n of 100 or more, swarm arms (EXP-003) | Railway or another cloud, never the laptop | only after cost per accepted is known and Frank sets the cap | Genius-scale sweeps and training the routing table |
 

@@ -114,6 +114,131 @@ class AcceptanceTests(unittest.TestCase):
         self.assertEqual(zdr[0]["outcome"], "rejected")
 
 
+class StrictInputTests(unittest.TestCase):
+    """Codex review of PR 379: malformed input must be refused, never coerced into a successful receipt."""
+
+    def test_truthy_non_boolean_synthetic_is_refused(self):
+        for bad in (1, "yes", "false", [1]):
+            with self.assertRaises(ValueError, msg=repr(bad)):
+                build([call(synthetic=bad)])
+
+    def test_string_booleans_are_not_success(self):
+        with self.assertRaises(ValueError):
+            build([call(ok="false")])
+        with self.assertRaises(ValueError):
+            build(passed="false")
+        with self.assertRaises(ValueError):
+            build([call(fallback_used="no")])
+
+    def test_bad_numbers_are_refused(self):
+        for field, bad in (("latency_ms", -1), ("latency_ms", float("nan")), ("cost_usd", True), ("cost_usd", -0.1),
+                           ("input_tokens", -3), ("input_tokens", 1.5), ("output_tokens", True)):
+            with self.assertRaises(ValueError, msg=f"{field}={bad!r}"):
+                build([call(**{field: bad})])
+
+    def test_bad_verifier_latency_is_refused(self):
+        for bad in (-5, float("nan"), float("inf")):
+            with self.assertRaises(ValueError, msg=repr(bad)):
+                bridge.build_receipt([call()], run={"id": "r", "kind": "k", "host": "h"}, subject={"name": "x", "sha256": SHA},
+                                     verifier={"actor": "codex", "checker": "t", "passed": True, "latency_ms": bad,
+                                               "at": "2026-10-21T10:00:30+00:00"},
+                                     fx_eur_per_usd=FX, evidence=[{"kind": "k", "ref": "r", "sha256": SHA}],
+                                     now="2026-10-21T10:01:00+00:00")
+
+    def test_subject_digest_must_be_a_sha256(self):
+        for bad in ("nope", "A" * 64, "a" * 63, None):
+            with self.assertRaises(ValueError, msg=repr(bad)):
+                bridge.build_receipt([call()], run={"id": "r", "kind": "k", "host": "h"}, subject={"name": "x", "sha256": bad},
+                                     verifier={"actor": "codex", "checker": "t", "passed": True, "at": "2026-10-21T10:00:30+00:00"},
+                                     fx_eur_per_usd=FX, evidence=[{"kind": "k", "ref": "r", "sha256": SHA}],
+                                     now="2026-10-21T10:01:00+00:00")
+
+    def test_evidence_with_extra_keys_is_refused(self):
+        with self.assertRaises(ValueError):
+            bridge.build_receipt([call()], run={"id": "r", "kind": "k", "host": "h"}, subject={"name": "x", "sha256": SHA},
+                                 verifier={"actor": "codex", "checker": "t", "passed": True, "at": "2026-10-21T10:00:30+00:00"},
+                                 fx_eur_per_usd=FX, evidence=[{"kind": "k", "ref": "r", "sha256": SHA, "extra": 1}],
+                                 now="2026-10-21T10:01:00+00:00")
+
+    def test_note_delimiters_cannot_be_injected(self):
+        for field in ("primary", "used", "task_class", "id"):
+            for bad in ("x;usd=0;fx=0", "a=b", "line\nbreak", "tab\tbed"):
+                with self.assertRaises(ValueError, msg=f"{field}={bad!r}"):
+                    build([call(**{field: bad})])
+
+    def test_checker_name_cannot_carry_delimiters(self):
+        with self.assertRaises(ValueError):
+            bridge.build_receipt([call()], run={"id": "r", "kind": "k", "host": "h"}, subject={"name": "x", "sha256": SHA},
+                                 verifier={"actor": "codex", "checker": "pytest;provenance=verified", "passed": True,
+                                           "at": "2026-10-21T10:00:30+00:00"},
+                                 fx_eur_per_usd=FX, evidence=[{"kind": "k", "ref": "r", "sha256": SHA}],
+                                 now="2026-10-21T10:01:00+00:00")
+
+    def test_returned_receipt_is_always_schema_valid(self):
+        import jsonschema
+        schema = json.loads(VENDORED.read_text(encoding="utf-8"))
+        validator = jsonschema.Draft202012Validator(schema)
+        for receipt in (build(), build(passed=False), build([call(0, ok=False), call(1, ts="2026-10-21T10:00:12+00:00")])):
+            self.assertEqual(list(validator.iter_errors(receipt)), [])
+
+
+class IdentityAndBindingTests(unittest.TestCase):
+    def test_actor_comparison_ignores_case_and_whitespace(self):
+        for actor in ("OpenCode-Bare", "opencode-bare ", "  OPENCODE-BARE"):
+            r = build(actor=actor, host="opencode-bare")
+            self.assertTrue(any("maker" in p for p in bridge.separation_problems(r)), actor)
+            self.assertFalse(bridge.accepted(r), actor)
+
+    def test_a_decoy_checker_stage_cannot_launder_a_failed_check(self):
+        r = copy.deepcopy(build(passed=False))
+        r["stages"].insert(0, {"name": "verify:decoy", "status": "ok"})
+        self.assertFalse(bridge.accepted(r))
+        self.assertTrue(any("exactly one checker" in p for p in bridge.separation_problems(r)))
+
+    def test_accept_decision_must_name_the_checker_stage(self):
+        r = copy.deepcopy(build())
+        next(d for d in r["decisions"] if d["gate"] == "accept")["note"] = "checker=other;provenance=self-asserted"
+        self.assertTrue(any("does not name" in p for p in bridge.separation_problems(r)))
+        self.assertFalse(bridge.accepted(r))
+
+    def test_two_accept_decisions_are_ambiguous(self):
+        r = copy.deepcopy(build())
+        r["decisions"].append(copy.deepcopy(next(d for d in r["decisions"] if d["gate"] == "accept")))
+        self.assertFalse(bridge.accepted(r))
+
+    def test_accept_decision_is_labelled_self_asserted(self):
+        r = build()
+        accept = next(d for d in r["decisions"] if d["gate"] == "accept")
+        self.assertIn("provenance=self-asserted", accept["note"])
+
+    def test_a_schema_invalid_receipt_is_never_accepted(self):
+        r = copy.deepcopy(build())
+        r["stages"][0]["latencyMs"] = -1
+        self.assertFalse(bridge.accepted(r))
+
+    def test_human_approval_needs_a_real_reference(self):
+        for bad in ("urn:fake", "", None, "http://insecure.example/x", "trust me"):
+            with self.assertRaises(ValueError, msg=repr(bad)):
+                bridge.build_receipt(
+                    [call()], run={"id": "r", "kind": "k", "host": "opencode-bare"}, subject={"name": "x", "sha256": SHA},
+                    verifier={"actor": "frank", "checker": "review", "passed": True, "decided_by": "human",
+                              "approval_ref": bad, "at": "2026-10-21T10:00:30+00:00"},
+                    fx_eur_per_usd=FX, evidence=[{"kind": "k", "ref": "r", "sha256": SHA}], now="2026-10-21T10:01:00+00:00")
+
+    def test_human_approval_accepts_https_and_github_references(self):
+        for ref, expected in (("https://github.com/frankxai/agentic-ops-hub/pull/377", "https://github.com/frankxai/agentic-ops-hub/pull/377"),
+                              ("frankxai/agentic-ops-hub#377", "gh:frankxai/agentic-ops-hub#377"),
+                              ("gh:frankxai/agentic-ops-hub@bc7427b", "gh:frankxai/agentic-ops-hub@bc7427b")):
+            r = bridge.build_receipt(
+                [call()], run={"id": "r", "kind": "k", "host": "opencode-bare"}, subject={"name": "x", "sha256": SHA},
+                verifier={"actor": "frank", "checker": "review", "passed": True, "decided_by": "human",
+                          "approval_ref": ref, "at": "2026-10-21T10:00:30+00:00"},
+                fx_eur_per_usd=FX, evidence=[{"kind": "k", "ref": "r", "sha256": SHA}], now="2026-10-21T10:01:00+00:00")
+            accept = next(d for d in r["decisions"] if d["gate"] == "accept")
+            self.assertEqual(accept["approvalRef"], expected)
+            self.assertTrue(bridge.accepted(r))
+
+
 @unittest.skipUnless((SIS / "protocol" / "run-receipt.v1.schema.json").exists(), "SIS checkout not present")
 class ConformanceTests(unittest.TestCase):
     def test_vendored_schema_matches_sis(self):

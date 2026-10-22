@@ -138,7 +138,7 @@ Distribution that exists: frankx.ai (founder proof and front door), Starlight In
 | Tier | Contents | Price | Basis |
 |---|---|---|---|
 | Open | Router, schema, verifier, free profile, spec | Free | Open-core; builds trust and the standard |
-| Pro (individual) | Token Pass profile, digest, benchmark data feed, lab dashboard template | Test at about $9-19 a month or a one-off edition | Estate editions already priced $39-$99 (Blueprint $67, Realityarchitect $39, Founding Council EUR99); a one-off edition is the cheapest first test |
+| Pro (individual) | Token Pass profile, digest, benchmark data feed, lab dashboard template | Test at about $9-19 a month or a one-off edition | Estate editions are listed at roughly $39-$99 in earlier notes (Blueprint $67, Realityarchitect $39, Founding Council EUR99); UNVERIFIED, no live offer or repo evidence was checked for these figures, so confirm each against the live offer before quoting; a one-off edition is the cheapest first test |
 | Team (R1) | Hosted ledger, shared budgets, digest to Slack/GitHub, audit export | Test at about $49-99 a seat-group a month | Hypothesis only; validate with 3 design partners before pricing |
 | Workers (R2) | Managed activated workers | Usage-based plus margin | Needs EXP-004 cost data first |
 
