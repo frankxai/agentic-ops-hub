@@ -41,6 +41,34 @@ class AuditInspectTests(unittest.TestCase):
         self.assertIn("provider-prefix=opencode", out)
         self.assertIn("prefixes=['vercel', 'opencode']", out)
 
+    def test_reads_jsonc_comments_trailing_commas_and_keeps_urls_in_strings(self):
+        text = '{\n // a comment\n "model": "vercel/a/b", /* block */\n "u": "https://x.example/a//b",\n "env": {"ANTHROPIC_BASE_URL": "https://proxy.example/v1",},\n}\n'
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "omo.jsonc"
+            path.write_text(text, encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                code = audit_inspect.main([str(path)])
+        self.assertEqual(code, 0)
+        self.assertIn("provider-prefix=vercel", out.getvalue())
+        self.assertIn("ENDPOINT /env/ANTHROPIC_BASE_URL: host=proxy.example", out.getvalue())
+
+    def test_reports_anthropic_base_url_host_only(self):
+        _, out = run({"env": {"ANTHROPIC_BASE_URL": "https://u:" + SECRET + "@gw.example/v1", "ANTHROPIC_AUTH_TOKEN": SECRET}})
+        self.assertIn("host=gw.example", out)
+        self.assertNotIn(SECRET, out)
+
+    def test_unreadable_file_is_reported_without_echoing_content(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "config.toml"
+            path.write_text('api_key = "' + SECRET + '"\n', encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                code = audit_inspect.main([str(path)])
+        self.assertEqual(code, 1)
+        self.assertIn("UNREADABLE", out.getvalue())
+        self.assertNotIn(SECRET, out.getvalue())
+
     def test_no_arguments_prints_usage_and_exits_2(self):
         out = io.StringIO()
         with contextlib.redirect_stdout(out):
