@@ -22,7 +22,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from route_classifier import classify
-from route_executor import preflight, record_receipt, release_reservation, reserve, route
+from route_executor import preflight, record_receipt, release_reservation, reserve, reservations, route
 
 
 def _fail(msg: str, code: int = 2):
@@ -57,9 +57,22 @@ def main():
 
     task = " ".join(args.task)
 
+    # Settling an existing hold is bound to the hold's own class and model, not to today's chain:
+    # a model or class retired since reserve() must still record the money that was spent.
+    hold = None
+    if args.record and args.reservation:
+        try:
+            hold = next((h for h in reservations() if h["id"] == args.reservation), None)
+        except (ValueError, OSError) as e:
+            _fail(str(e))
     try:
-        c = classify(task, args.allow_free)
-        r = route(c["class"], args.allow_non_zdr, args.allow_free)
+        c = {"class": hold["task_class"], "source": "reservation"} if hold else classify(task, args.allow_free)
+        try:
+            r = route(c["class"], args.allow_non_zdr, args.allow_free)
+        except (ValueError, KeyError):
+            if not hold:
+                raise
+            r = None  # retired class: the reservation binding is checked inside record_receipt
     except (FileNotFoundError, ValueError, KeyError) as e:
         _fail(str(e))
 
@@ -86,10 +99,10 @@ def main():
             _fail("--record requires --used")
         if args.cost is None or args.latency is None:
             _fail("--record requires --cost and --latency")
-        if args.used not in r["chain"]:
+        if r is not None and args.used not in r["chain"] and not hold:
             _fail(f"--used '{args.used}' not in chain {r['chain']}")
         try:
-            receipt = record_receipt(c["class"], args.used, args.used != r["primary"], args.cost,
+            receipt = record_receipt(c["class"], args.used, r is not None and args.used != r["primary"], args.cost,
                                      args.latency, args.record == "success", args.provider,
                                      allow_non_zdr=args.allow_non_zdr, synthetic=args.synthetic,
                                      reservation_id=args.reservation, allow_free=args.allow_free)
@@ -97,7 +110,7 @@ def main():
             _fail(str(e))
         print(f"receipt recorded: class={c['class']} used={args.used} success={args.record == 'success'}")
         if receipt["over_ceiling"]:
-            print(f"warning: cost ${receipt['cost_usd']} passed the ${r['cost_ceiling_usd']} ceiling for "
+            print(f"warning: cost ${receipt['cost_usd']} passed the ${r['cost_ceiling_usd'] if r else 'n/a'} ceiling for "
                   f"'{c['class']}'; recorded as over_ceiling", file=sys.stderr)
             sys.exit(3)
         return

@@ -188,3 +188,14 @@ Codex round 12 (on `4938ab1`) found one design issue and two mechanical ones.
 - **P2, settlement after a model is retired.** `record_receipt()` now checks a reservation settlement against the hold's own class and model, not the current chain. A retired model between `reserve()` and settle records its real cost (pool `token-pass`, counted in monthly spend). New admissions are still checked against the current chain, an unknown or mismatched reservation is still refused and leaves the hold open, and a class removed from the schema still settles.
 
 Plainly: the guarantee covers launches made through `opencode_launch.py`, and it depends on `--standalone` plus `OPENCODE_CONFIG_DIR` behaving as observed on this version. A different OpenCode version needs the same check.
+
+## Round 13 (Codex on 51536b1: CHANGES REQUESTED, 2 P1, 2 P2, 1 P3)
+
+- **P1, Windows shim injection.** `shutil.which("opencode")` returns `opencode.CMD`; cmd.exe parses its arguments even with `shell=False`, so task text such as `x" & echo MARKER & rem "` ran a command. `resolve_opencode()` now returns the native exe (found next to the shim) and refuses a shim-only install; the task is passed after `--`. Test: a real child process echoes its argv, and the metacharacter task arrives as one literal argument.
+- **P1, copied provider block.** The global `provider.vercel` could carry `baseURL`, `api`, `npm` or model overrides that survive `enabled_providers`. The launch config now holds a fixed gateway block (`{env:AI_GATEWAY_API_KEY}` only); `gateway_key()` takes just `options.apiKey` from the global file and passes it in the child's environment. Tests: a hostile global block contributes nothing but the key, and the key never reaches the generated file.
+- **P2, CLI settle.** `route_task.py --record --reservation` now takes the class from the hold and skips the current-chain check, so a retired model or a removed class still records its spend. Test covers both cases.
+- **P2, lifecycle.** `supervised_run()` ends the whole tree on exit, timeout, Ctrl-C or error (Windows kill-on-close Job object, `taskkill /T` fallback; POSIX new session and `killpg`). Test: a timed-out child and its grandchild both stop. No literal credential is on disk any more, so a skipped cleanup leaves only an inert config. Residual limits are in `fleet/ROUTING-BRAIN.md`: POSIX SIGKILL of the wrapper leaves the child.
+- **P3, CI.** `tests.test_opencode_launch` added to the unit-test step.
+
+Verified locally: opencode_launch 26/26, routing_brain 161/161, the eight neighbouring suites 183/183. Full Windows ACL behaviour of the temp directory is still unverified.
+

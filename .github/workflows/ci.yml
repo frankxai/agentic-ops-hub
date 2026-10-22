@@ -55,6 +55,7 @@ jobs:
             tests.test_merge_steward \
             tests.test_fleet_control \
             tests.test_token_planner \
+            tests.test_opencode_launch \
             tests.test_cli_capacity \
             tests.test_night_runner \
             tests.test_routing_brain \

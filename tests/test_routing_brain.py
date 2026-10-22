@@ -1659,6 +1659,20 @@ class SettlementBindsToTheReservation(TmpLedger):
             self.assertAlmostEqual(route_executor.month_paid_spend(), 0.42)
         self.assertEqual(route_executor.reservations(), [])
 
+    def test_cli_record_settles_a_retired_model_and_a_removed_class(self):
+        import route_task  # noqa: E402
+        for removed_class in (False, True):
+            rid = self._hold()
+            schema = self._retired_schema()
+            if removed_class:
+                schema["task_classes"].pop("code")
+            argv = ["route_task.py", "refactor the auth module", "--record", "success", "--used", self.GLM,
+                    "--cost", "0.42", "--latency", "100", "--reservation", rid, "--synthetic"]
+            with patch.object(route_executor, "load_schema", return_value=schema), patch.object(sys, "argv", argv):
+                route_task.main()  # must not sys.exit(2)
+            self.assertNotIn(rid, [h["id"] for h in route_executor.reservations()])
+        self.assertAlmostEqual(route_executor.month_paid_spend(), 0.84)
+
     def test_retired_model_without_a_reservation_is_still_refused(self):
         with patch.object(route_executor, "load_schema", return_value=self._retired_schema()):
             with self.assertRaises(ValueError):
