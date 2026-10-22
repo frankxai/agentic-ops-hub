@@ -6,6 +6,7 @@
   "hypothesis": "With the model held fixed, a minimal harness (pi) matches the heavier ones (opencode, native omo, fx) on accepted rate at a lower cost per accepted task.",
   "status": "blocked",
   "state": "S1",
+  "tier": "T2",
   "owner": "claude",
   "owner_general": "cto",
   "verifier": "codex",
@@ -14,7 +15,7 @@
     {"where": "railway", "why": "Isolated scratch container. Keeps new harnesses and their telemetry off the YELLOW-zone laptop."}
   ],
   "arms": [
-    {"harness": "opencode", "model": "winner of EXP-001", "role": "incumbent"},
+    {"harness": "opencode-bare", "model": "winner of EXP-001", "role": "incumbent"},
     {"harness": "pi", "model": "winner of EXP-001", "role": "challenger"},
     {"harness": "omo-native", "model": "winner of EXP-001", "role": "challenger"},
     {"harness": "fx", "model": "winner of EXP-001", "role": "challenger"}

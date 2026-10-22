@@ -6,6 +6,7 @@
   "hypothesis": "An activate-on-trigger worker handles 20 jobs a day for under half the monthly cost of an always-on worker, with time to first action under 60 seconds.",
   "status": "blocked",
   "state": "S1",
+  "tier": "T0",
   "owner": "claude",
   "owner_general": "coo",
   "verifier": "codex",
@@ -14,8 +15,8 @@
     {"where": "railway", "why": "The thing being measured."}
   ],
   "arms": [
-    {"harness": "opencode", "model": "opencode/deepseek-v4.1-flash-free", "role": "always-on, one worker polling for issues"},
-    {"harness": "opencode", "model": "opencode/deepseek-v4.1-flash-free", "role": "activated by GitHub webhook or cron, sleeps when idle"}
+    {"harness": "opencode-bare", "model": "opencode/deepseek-v4.1-flash-free", "role": "always-on, one worker polling for issues"},
+    {"harness": "opencode-bare", "model": "opencode/deepseek-v4.1-flash-free", "role": "activated by GitHub webhook or cron, sleeps when idle"}
   ],
   "suite": "synthetic trigger load: 20 no-op jobs per day for 7 days",
   "metric": {"primary": "projected_monthly_cost_usd", "secondary": ["seconds_trigger_to_first_action", "missed_jobs"]},

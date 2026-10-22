@@ -22,7 +22,7 @@
   ],
   "arms": [
     {
-      "harness": "opencode",
+      "harness": "opencode-bare",
       "model": "opencode/* free models only, via enabled_providers",
       "role": "free profile"
     }
@@ -34,8 +34,8 @@
       "median_wall_seconds"
     ]
   },
-  "success_rule": "Per class, the free profile is marketed for a class only if it reaches the thresholds in the hypothesis. Classes below threshold are documented as needing Token Pass. No paid reference arm runs here; compare with EXP-001 results afterwards, not inside this run.",
-  "kill": "Token Pass cap is $0 because there is no paid arm; any Token Pass spend ends the run. Stop after 12 tasks x 1 arm. Free-model calls go through the OpenCode endpoint, outside the Vercel gateway key, so only non-confidential lab tasks are used.",
+  "success_rule": "Directional only (design.decision_effect none). Per class, the free profile reaches the thresholds in the hypothesis or it does not. A class that reaches them is a candidate for a 10-per-cell confirmation before the free profile is marketed for it; classes below threshold are documented as needing Token Pass. No paid reference arm runs here; compare with EXP-001 results afterwards, not inside this run.",
+  "kill": "Token Pass cap is $0 because there is no paid arm; any Token Pass spend ends the run. Directional pilot: stop after 12 tasks x 1 arm (one run per cell, below the 10-per-cell floor), so no result changes routing or marketing by itself. Free-model calls go through the OpenCode endpoint, outside the Vercel gateway key, so only non-confidential lab tasks are used.",
   "budget": {
     "token_pass_usd_cap": 0,
     "infra_usd_cap": 1,
@@ -57,5 +57,10 @@
   },
   "decision_it_feeds": "What oh-my-starlight-free promises, and which classes it routes to Token Pass.",
   "prior_evidence": [],
-  "tier": "T1"
+  "tier": "T1",
+  "design": {
+    "runs_per_cell": 1,
+    "decision_effect": "none",
+    "note": "12 tasks x 1 arm is one attempt per cell, below the 10-per-cell floor. Directional pilot: thresholds below are not used to market a free profile until a 10-per-cell confirmation."
+  }
 }

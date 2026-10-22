@@ -22,3 +22,11 @@ Branch `agent/claude/research-lab`, based on `hub/main` (1b2c09e). Author: Claud
 ## Needs Frank
 
 See `lab/gates.json`: create a Token Pass key named lab-worker in the dashboard, ZDR strictness, Railway cap approval, what "software factory" means, delete the $1-budget keys.
+
+## Codex pass 2 (2026-10-22, on b30511f): CHANGES REQUESTED, 10 P2 and 1 P3, all addressed in the next commit
+
+- `lab/receipt_bridge.py`: `accepted()` and `build_receipt()` now also run `semantic_problems()`, a Python mirror of the SIS `receiptProblems()` checks that JSON Schema cannot express: RFC 3339 dates with a zone, time order, finite non-negative numbers, and totals not below the stage sums (cost with the SIS rounding allowance, latency, tokens). A cost that overflows when converted (1e308 at fx 2) is refused at build time.
+- `lab/build_lab.py`: routing rows count only with real booleans and an explicit finite non-negative `cost_usd`; checker types are classified (`blind-judge` and `human-review` are judged, unknown types are an error and count as judged); required dashboard fields are validated for harnesses, packs, gates, pillars and projects; a measured claim needs a non-empty source that is an existing repo file; every experiment declares a tier and T1 or above never runs on the laptop; owner and verifier are compared after trim and casefold; arm harnesses must be registered or carry `harness_pending`; `design.runs_per_cell` below the sample floor requires `decision_effect: none`.
+- Data: tiers added to EXP-002 (T2), 003 (T3), 004 (T0), 005 (T0), 007 (T1); arms that said `opencode` now say `opencode-bare`; open choices (`any`, `best of EXP-002`, `eve`, `worker from EXP-004`) are `harness_pending`; EXP-001 and EXP-006 are labelled one-run-per-cell directional pilots that change no routing, and their kill and pass rules say so.
+- `ops/plans/2026-10-21-harness-measurement-and-scale.md`: the "4 toy tasks, 16 rows" figures are marked unverified (the files are not in this branch), and the tier table lists the new tiers.
+- Tests: `tests.test_lab_registry` 57, `tests.test_receipt_bridge` 42 (99 in total). 24 of the new tests fail against the previous code. Codex has not re-reviewed this change.

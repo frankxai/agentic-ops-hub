@@ -6,6 +6,7 @@
   "hypothesis": "An Eve agent on Vercel completes the same 5 issue-to-draft-PR jobs as the Railway worker at comparable cost, with less operational work for us.",
   "status": "proposed",
   "state": "S1",
+  "tier": "T1",
   "owner": "claude",
   "owner_general": "cto",
   "verifier": "frank",
@@ -14,8 +15,8 @@
     {"where": "vercel", "why": "Eve is built to run on Vercel Sandboxes and Workflows."}
   ],
   "arms": [
-    {"harness": "eve", "model": "vercel/deepseek/deepseek-v4.1-flash", "role": "challenger"},
-    {"harness": "worker from EXP-004", "model": "same", "role": "incumbent"}
+    {"harness_pending": "eve (a Vercel agent runtime; not yet a registry harness)", "model": "vercel/deepseek/deepseek-v4.1-flash", "role": "challenger"},
+    {"harness_pending": "the worker design chosen in EXP-004", "model": "same", "role": "incumbent"}
   ],
   "suite": "5 real low-risk issues in agentic-ops",
   "metric": {"primary": "accepted_draft_prs_of_5", "secondary": ["cost_per_accepted_usd", "setup_hours"]},

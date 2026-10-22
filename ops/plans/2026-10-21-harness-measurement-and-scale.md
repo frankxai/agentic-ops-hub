@@ -16,7 +16,7 @@ Grades are my judgement from what exists, not measurements. A means evidence sup
 |---|---|---|---|
 | Routing Brain design (classes, chains, ZDR, reserve/settle) | Built and live on one box | **C+** | Good design, but 4 Codex rounds each found new leaks (65 -> 71 tests). Only 5 test receipts, no real measurement. |
 | Classifier | Fail-closed rewrite on PR 377 | **C** | Verb lists lost the game every round; policy decision pending (Option A in progress). |
-| Harness battery (`harness_eval.py`) | 4 toy tasks, 16 stored rows, n=1 per cell | **D** | Calls the gateway, so it ranks **models**, not harnesses. No software, website or content tasks. One line in the file has a merged comment (`_check_code# ---`), a sign it was not reviewed. |
+| Harness battery (`harness_eval.py`) | **Unverified in this branch:** reported as 4 toy tasks, 16 stored rows, n=1 per cell. `fleet/harness_eval.py` and the stored rows are not tracked here or in PR 377's tree, so the figures are not bound to a source SHA | **D** (unverified) | Calls the gateway, so it ranks **models**, not harnesses. No software, website or content tasks. One line in the file has a merged comment (`_check_code# ---`), a sign it was not reviewed. |
 | SIS Model Arena (`tools/arena`) | Rounds R1-R5 as receipts, pre-registration, blind judge, traps | **A- for method** | Best method in the estate. Claude-subagent only, not harness-neutral. We reuse its rules. |
 | "now" OmO config | Installed 5.1.40; `~/.omo/omo.jsonc` is the old generator output | **C-** | Stale; PR 377 changes fallbacks; not regenerated. |
 | OmS | `gen_omo_config.py` exists, profiles not split | **F (not built)** | No package, no free versus Token Pass profile, no battery gate. |
@@ -68,7 +68,7 @@ Illustration, with caveats: 3 arms x 20 tasks x 10 runs = 600 attempts. A public
 | Tier | Size | Where | Cost guard | Purpose |
 |---|---|---|---|---|
 | T0 smoke | 4-10 tasks, 1 run | Free rail, nightly | $0 | Liveness: did a model or harness break |
-| T1 pack | 1 pack, n=10 per cell | Railway worker, one arm at a time (EXP-001, 006, 009 are T1; EXP-008 is T2) | reserve/settle cap per run | First real numbers (EXP-006 free-only first, then EXP-001) |
+| T1 pack | 1 pack, n=10 per cell | Railway worker, one arm at a time (EXP-001, 006, 007, 009 are T1; EXP-002 and EXP-008 are T2; EXP-003 is T3; EXP-004 and EXP-005 are T0). EXP-001 and EXP-006 are first designed as one-run-per-cell directional pilots (`design.decision_effect` none): they change no routing until a 10-per-cell confirmation runs | reserve/settle cap per run | First real numbers (EXP-006 free-only first, then EXP-001) |
 | T2 compare | 3-4 arms, paired, n=10-30 | Railway, serial or low parallelism | experiment cap ($4-8) | Decisions (EXP-008, EXP-002) |
 | T3 massive | n of 100 or more, swarm arms (EXP-003) | Railway or another cloud, never the laptop | only after cost per accepted is known and Frank sets the cap | Genius-scale sweeps and training the routing table |
 

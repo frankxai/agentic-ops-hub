@@ -240,6 +240,65 @@ class IdentityAndBindingTests(unittest.TestCase):
 
 
 @unittest.skipUnless((SIS / "protocol" / "run-receipt.v1.schema.json").exists(), "SIS checkout not present")
+class SemanticInvariantTests(unittest.TestCase):
+    """Codex pass 2 of PR 379: accepted() must enforce the SIS checks JSON Schema cannot express."""
+
+    def mutated(self, fn):
+        r = copy.deepcopy(build())
+        fn(r)
+        return r
+
+    def test_understated_total_cost_is_not_accepted(self):
+        r = self.mutated(lambda r: r["totals"].update(costEur=0))
+        self.assertFalse(bridge.accepted(r))
+        self.assertTrue(any("below the stage sum" in p for p in bridge.semantic_problems(r)))
+
+    def test_rounding_allowance_is_kept(self):
+        r = self.mutated(lambda r: r["totals"].update(costEur=r["totals"]["costEur"] - 0.00004))
+        self.assertTrue(bridge.accepted(r))
+
+    def test_understated_latency_and_tokens_are_not_accepted(self):
+        self.assertFalse(bridge.accepted(self.mutated(lambda r: r["totals"].update(latencyMs=0))))
+        r = build([call(input_tokens=500, output_tokens=7)])
+        r["totals"]["tokens"]["input"] = 1
+        self.assertFalse(bridge.accepted(r))
+
+    def test_unparseable_dates_are_not_accepted(self):
+        for path in (("issuedAt",), ("run", "startedAt"), ("run", "endedAt")):
+            def bad(r, path=path):
+                node = r
+                for key in path[:-1]:
+                    node = node[key]
+                node[path[-1]] = "not-a-date"
+            self.assertFalse(bridge.accepted(self.mutated(bad)), path)
+        self.assertFalse(bridge.accepted(self.mutated(lambda r: r["decisions"][2].update(at="2026"))))
+
+    def test_dates_need_a_zone_designator(self):
+        self.assertFalse(bridge.accepted(self.mutated(lambda r: r["run"].update(startedAt="2026-10-21T10:00:00"))))
+
+    def test_time_order_is_enforced(self):
+        self.assertFalse(bridge.accepted(self.mutated(lambda r: r["run"].update(endedAt="2026-10-21T09:00:00+00:00"))))
+        self.assertFalse(bridge.accepted(self.mutated(lambda r: r.update(issuedAt="2026-10-21T10:00:00+00:00"))))
+        self.assertFalse(bridge.accepted(self.mutated(lambda r: r["decisions"][2].update(at="2026-10-21T11:00:00+00:00"))))
+
+    def test_non_finite_numbers_are_not_accepted(self):
+        for value in (float("inf"), float("nan"), -1.0):
+            self.assertFalse(bridge.accepted(self.mutated(lambda r, v=value: r["stages"][0].update(costEur=v))), value)
+            self.assertFalse(bridge.accepted(self.mutated(lambda r, v=value: r["totals"].update(costEur=v))), value)
+
+    def test_a_cost_that_overflows_when_converted_is_refused(self):
+        with self.assertRaises(ValueError):
+            bridge.build_receipt(
+                [call(usd=1e308)], run={"id": "r", "kind": "k", "host": "h"}, subject={"name": "x", "sha256": SHA},
+                verifier={"actor": "codex", "checker": "t", "passed": True, "at": "2026-10-21T10:00:30+00:00",
+                          "evidence_ref": "e", "evidence_sha256": SHA},
+                fx_eur_per_usd=2, evidence=[{"kind": "k", "ref": "r", "sha256": SHA}], now="2026-10-21T10:01:00+00:00")
+
+    def test_a_clean_receipt_has_no_semantic_problems(self):
+        self.assertEqual(bridge.semantic_problems(build()), [])
+        self.assertEqual(bridge.semantic_problems(build([call(0), call(1, ts="2026-10-21T10:00:12+00:00")])), [])
+
+
 class ConformanceTests(unittest.TestCase):
     def test_vendored_schema_matches_sis(self):
         self.assertEqual(VENDORED.read_bytes(), (SIS / "protocol" / "run-receipt.v1.schema.json").read_bytes())

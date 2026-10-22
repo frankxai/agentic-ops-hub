@@ -327,5 +327,159 @@ class ReviewHardeningTests(unittest.TestCase):
         self.assertIn(want, doc.read_text(encoding="utf-8"))
 
 
+class PassTwoHardeningTests(unittest.TestCase):
+    """Codex pass 2 of PR 379: every finding gets a test that fails on the previous validators."""
+
+    def setUp(self):
+        self.data = lab.load()
+
+    def mutated(self, fn):
+        data = copy.deepcopy(self.data)
+        fn(data)
+        return lab.validate(data)
+
+    def exp(self, d, eid):
+        return next(e for e in d["experiments"] if e["id"] == eid)
+
+    # 3: routing rows need real booleans and an explicit cost
+    def summary(self, rows):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "routing.jsonl"
+            path.write_text("\n".join(json.dumps(r) for r in rows) + "\n", encoding="utf-8")
+            return lab.summarize_receipts(path, now=dt.datetime(2026, 10, 21, tzinfo=dt.timezone.utc))
+
+    def test_a_row_is_not_a_measurement_without_real_booleans_and_an_explicit_cost(self):
+        base = {"task_class": "code", "used": "m", "success": True, "cost_usd": 0.5}
+        bad_rows = [
+            {**base, "synthetic": 1, "success": "false"},
+            {**base, "success": "false"},
+            {**base, "success": 1},
+            {k: v for k, v in base.items() if k != "cost_usd"},
+            {**base, "cost_usd": "0.5"},
+            {**base, "cost_usd": True},
+            {**base, "cost_usd": -1},
+            {k: v for k, v in base.items() if k != "success"},
+        ]
+        s = self.summary(bad_rows + [base])
+        self.assertEqual(s["used"], 1)
+        self.assertEqual(s["skipped"], len(bad_rows))
+        self.assertEqual(s["synthetic"], 0)
+
+    # 4: checker types are classified
+    def test_relabelling_a_judge_cannot_hide_it_from_the_share(self):
+        def relabel(d):
+            for t in d["packs"]["items"][0]["tasks"]:
+                t["judged"] = False
+                t["verifier"]["type"] = "human-review"
+        problems = self.mutated(relabel)
+        self.assertTrue(any("tasks are judged" in p for p in problems))
+
+    def test_unknown_checker_types_are_an_error_and_count_as_judged(self):
+        def unknown(d):
+            for t in d["packs"]["items"][0]["tasks"]:
+                t["judged"] = False
+                t["verifier"]["type"] = "vibes"
+        problems = self.mutated(unknown)
+        self.assertTrue(any("checker type 'vibes'" in p for p in problems))
+        self.assertTrue(any("tasks are judged" in p for p in problems))
+        self.assertEqual(lab.pack_judged_share({"tasks": [{"verifier": {"type": "vibes", "check": "x"}, "judged": False}]}), 1.0)
+
+    def test_judged_must_be_a_real_boolean(self):
+        problems = self.mutated(lambda d: d["packs"]["items"][0]["tasks"][0].update(judged="no"))
+        self.assertTrue(any("real boolean" in p for p in problems))
+
+    # 5: required fields never reach the renderer as a KeyError
+    def test_missing_dashboard_fields_are_validation_errors_not_render_crashes(self):
+        cases = {
+            "harness name": lambda d: d["harnesses"]["items"][0].pop("name"),
+            "harness id": lambda d: d["harnesses"]["items"][0].update(id=" "),
+            "pack id": lambda d: d["packs"]["items"][0].update(id="  "),
+            "pack title": lambda d: d["packs"]["items"][0].pop("title"),
+            "gate id": lambda d: d["gates"]["items"][0].pop("id"),
+            "gate status": lambda d: d["gates"]["items"][0].update(status="maybe"),
+            "gate kind": lambda d: d["gates"]["items"][0].pop("kind"),
+            "pillar name": lambda d: d["goals"]["pillars"][0].pop("name"),
+        }
+        for label, fn in cases.items():
+            self.assertTrue(self.mutated(fn), label)
+
+    # 6: measured claims need a real evidence file
+    def test_a_measured_claim_needs_an_existing_evidence_file(self):
+        for source in (True, "", "  ", "lab/results/does-not-exist.md", "../outside.md", "C:/Windows/win.ini", "lab"):
+            problems = self.mutated(lambda d, s=source: d["harnesses"]["items"][0].update(
+                measured={"n": 10, "source": s, "accepted_rate": 1}))
+            self.assertTrue(any("measured" in p for p in problems), repr(source))
+
+    def test_a_measured_claim_with_an_existing_source_passes(self):
+        problems = self.mutated(lambda d: d["harnesses"]["items"][0].update(
+            measured={"n": 10, "source": "lab/budget.json", "accepted_rate": 1}))
+        self.assertEqual(problems, [])
+
+    # 7: every experiment declares its tier
+    def test_every_experiment_has_a_tier(self):
+        for exp in self.data["experiments"]:
+            self.assertIn(exp["tier"], lab.TIERS, exp["id"])
+        problems = self.mutated(lambda d: self.exp(d, "EXP-008").pop("tier"))
+        self.assertTrue(any("explicit tier" in p for p in problems))
+
+    def test_a_t2_experiment_cannot_run_on_the_laptop(self):
+        def move(d):
+            self.exp(d, "EXP-008")["runs_on"] = [{"where": "local-c940", "why": "x"}]
+        problems = self.mutated(move)
+        self.assertTrue(any("never go on the laptop" in p for p in problems))
+
+    # 8: actor ids are normalised
+    def test_owner_and_verifier_variants_are_the_same_actor(self):
+        for variant in (" CLAUDE ", "Claude", "claude\t"):
+            problems = self.mutated(lambda d, v=variant: self.exp(d, "EXP-001").update(owner="claude", verifier=v))
+            self.assertTrue(any("different actor" in p for p in problems), repr(variant))
+
+    def test_blank_actor_ids_are_rejected(self):
+        problems = self.mutated(lambda d: self.exp(d, "EXP-001").update(owner=" ", verifier=" "))
+        self.assertTrue(any("non-empty actor" in p for p in problems))
+
+    # 9: arms name registered harnesses
+    def test_an_arm_must_name_a_registered_harness(self):
+        problems = self.mutated(lambda d: self.exp(d, "EXP-008")["arms"][0].update(harness="does-not-exist"))
+        self.assertTrue(any("not in lab/harnesses.json" in p for p in problems))
+
+    def test_every_shipped_arm_is_registered_or_explicitly_pending(self):
+        registered = {h["id"] for h in self.data["harnesses"]["items"]}
+        for exp in self.data["experiments"]:
+            for arm in exp["arms"]:
+                self.assertTrue(arm.get("harness") in registered or arm.get("harness_pending"), (exp["id"], arm))
+                self.assertFalse("harness" in arm and "harness_pending" in arm, (exp["id"], arm))
+
+    def test_an_arm_cannot_be_both_registered_and_pending_or_neither(self):
+        both = self.mutated(lambda d: self.exp(d, "EXP-008")["arms"][0].update(harness_pending="x"))
+        self.assertTrue(any("both harness and harness_pending" in p for p in both))
+        neither = self.mutated(lambda d: self.exp(d, "EXP-008")["arms"][0].pop("harness"))
+        self.assertTrue(any("needs a registered harness" in p for p in neither))
+
+    def test_pending_arms_are_shown_as_to_be_decided(self):
+        page = lab.render(self.data, lab.summarize_receipts(Path("none.jsonl")))
+        self.assertIn("TBD: best harness from EXP-002", page)
+
+    # 10: sub-floor designs are directional pilots
+    def test_a_sub_floor_design_must_declare_no_decision_effect(self):
+        def one_run(d):
+            self.exp(d, "EXP-001")["design"] = {"runs_per_cell": 1, "decision_effect": "routing"}
+        problems = self.mutated(one_run)
+        self.assertTrue(any("below the sample floor" in p for p in problems))
+
+    def test_exp_001_and_006_are_labelled_directional_pilots(self):
+        for eid in ("EXP-001", "EXP-006"):
+            exp = next(e for e in self.data["experiments"] if e["id"] == eid)
+            self.assertEqual(exp["design"]["runs_per_cell"], 1, eid)
+            self.assertEqual(exp["design"]["decision_effect"], "none", eid)
+            self.assertIn("Directional", exp["kill"], eid)
+            self.assertIn("Directional", exp["success_rule"], eid)
+
+    def test_runs_per_cell_must_be_a_positive_integer(self):
+        for bad in (0, -1, 1.5, True, "10", None):
+            problems = self.mutated(lambda d, b=bad: self.exp(d, "EXP-001").update(design={"runs_per_cell": b, "decision_effect": "none"}))
+            self.assertTrue(any("runs_per_cell" in p for p in problems), repr(bad))
+
+
 if __name__ == "__main__":
     unittest.main()

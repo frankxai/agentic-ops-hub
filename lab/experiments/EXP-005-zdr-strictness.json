@@ -6,6 +6,7 @@
   "hypothesis": "Fewer than 3% of ZDR-class tasks reach the end of their chain without an answer, so strict routing is affordable.",
   "status": "blocked",
   "state": "S1",
+  "tier": "T0",
   "owner": "claude",
   "owner_general": "caio",
   "verifier": "frank",
@@ -15,7 +16,7 @@
     {"where": "ci", "why": "The weekly review runs from receipts without calling any model."}
   ],
   "arms": [
-    {"harness": "any", "model": "ZDR-safe chain only", "role": "strict (current default)"}
+    {"harness_pending": "any harness: the strictness test runs on live receipts, not on a chosen arm", "model": "ZDR-safe chain only", "role": "strict (current default)"}
   ],
   "suite": "live receipts from two weeks of normal work",
   "metric": {"primary": "share_of_zdr_class_tasks_that_exhausted_chain", "secondary": ["share_using_allow_non_zdr"]},

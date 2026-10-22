@@ -37,6 +37,7 @@ ACCEPT_GATE = "accept"
 VERIFY_PREFIX = "verify:"
 EVIDENCE_KEYS = {"kind", "ref", "sha256"}
 PROVENANCE = "provenance=self-asserted"
+DATE_TIME = re.compile(r"^\d{4}-\d{2}-\d{2}[Tt]\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[Zz]|[+-]\d{2}:\d{2})$")
 
 
 def _finite(value) -> bool:
@@ -89,6 +90,74 @@ def _iso(value: dt.datetime) -> str:
     return value.isoformat()
 
 
+def _date(value) -> dt.datetime | None:
+    """An RFC 3339 date-time with a zone designator, as SIS requires; anything else is None."""
+    if not isinstance(value, str) or not DATE_TIME.match(value):
+        return None
+    try:
+        return dt.datetime.fromisoformat(value.upper().replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _cost_tolerance(priced_stages: int) -> float:
+    """Mirror of SIS eurTolerance: half a 4-decimal rounding unit per priced stage, plus one."""
+    return 0.00005 * (priced_stages + 1)
+
+
+def semantic_problems(receipt: dict) -> list[str]:
+    """The SIS receiptProblems() checks that JSON Schema cannot express: real dates, time order,
+    finite numbers, and totals that are not below the stage sums. Mirrors src/run-receipt.ts."""
+    problems: list[str] = []
+    run = receipt.get("run") if isinstance(receipt.get("run"), dict) else {}
+    issued = _date(receipt.get("issuedAt"))
+    started, ended = _date(run.get("startedAt")), _date(run.get("endedAt"))
+    for label, parsed in (("issuedAt", issued), ("run.startedAt", started), ("run.endedAt", ended)):
+        if parsed is None:
+            problems.append(f"{label} is not an RFC 3339 date-time with a zone")
+    if started and ended and ended < started:
+        problems.append("run.endedAt is before run.startedAt")
+    if issued and ended and issued < ended:
+        problems.append("issuedAt is before run.endedAt")
+
+    cost_sum, latency_max, in_sum, out_sum, priced = 0.0, 0.0, 0, 0, 0
+    for i, stage in enumerate(receipt.get("stages") or []):
+        for key in ("costEur", "latencyMs"):
+            if key in stage and not (_finite(stage[key]) and stage[key] >= 0):
+                problems.append(f"stages[{i}].{key} is not a finite non-negative number")
+        if _finite(stage.get("costEur")) and stage["costEur"] >= 0:
+            cost_sum += stage["costEur"]
+            priced += 1
+        if _finite(stage.get("latencyMs")) and stage["latencyMs"] >= 0:
+            latency_max = max(latency_max, stage["latencyMs"])
+        in_sum += stage["inputTokens"] if isinstance(stage.get("inputTokens"), int) else 0
+        out_sum += stage["outputTokens"] if isinstance(stage.get("outputTokens"), int) else 0
+    if not math.isfinite(cost_sum):
+        problems.append("the stage costs sum to a non-finite number")
+
+    totals = receipt.get("totals") if isinstance(receipt.get("totals"), dict) else {}
+    for key in ("costEur", "latencyMs"):
+        if not (_finite(totals.get(key)) and totals[key] >= 0):
+            problems.append(f"totals.{key} is not a finite non-negative number")
+    if _finite(totals.get("costEur")) and priced and totals["costEur"] + _cost_tolerance(priced) < cost_sum:
+        problems.append(f"totals.costEur {totals['costEur']} is below the stage sum {cost_sum:.4f}")
+    if _finite(totals.get("latencyMs")) and totals["latencyMs"] < latency_max:
+        problems.append(f"totals.latencyMs {totals['latencyMs']} is below the longest stage {latency_max}")
+    tokens = totals.get("tokens") if isinstance(totals.get("tokens"), dict) else {}
+    if isinstance(tokens.get("input"), int) and tokens["input"] < in_sum:
+        problems.append(f"totals.tokens.input {tokens['input']} is below the stage sum {in_sum}")
+    if isinstance(tokens.get("output"), int) and tokens["output"] < out_sum:
+        problems.append(f"totals.tokens.output {tokens['output']} is below the stage sum {out_sum}")
+
+    for i, decision in enumerate(receipt.get("decisions") or []):
+        at = _date(decision.get("at"))
+        if at is None:
+            problems.append(f"decisions[{i}].at is not an RFC 3339 date-time with a zone")
+        elif issued and at > issued:
+            problems.append(f"decisions[{i}].at is after issuedAt")
+    return problems
+
+
 def _check_evidence(entries: list[dict]) -> list[dict]:
     clean = []
     for entry in entries:
@@ -131,8 +200,11 @@ def _call_stage(index: int, rec: dict, fx: float) -> tuple[dict, dt.datetime, dt
     provider = rec.get("provider", "")
     if not isinstance(provider, str):
         raise ValueError(f"provider must be a string, got {provider!r}")
+    cost_eur = usd * fx
+    if not math.isfinite(cost_eur):
+        raise ValueError(f"cost_usd {usd!r} at fx {fx!r} converts to a non-finite EUR cost")
     stage = {"name": f"call:{task_class}#{index}", "status": "ok" if ok else "failed",
-             "model": used, "provider": provider, "costEur": usd * fx, "latencyMs": latency, "note": note}
+             "model": used, "provider": provider, "costEur": cost_eur, "latencyMs": latency, "note": note}
     for src, dst in (("input_tokens", "inputTokens"), ("output_tokens", "outputTokens")):
         if rec.get(src) is None:
             continue
@@ -221,7 +293,7 @@ def build_receipt(calls: list[dict], *, run: dict, subject: dict, verifier: dict
                "issuer": {"name": issuer_name}, "run": receipt_run,
                "subject": {"name": subject["name"].strip(), "digest": {"sha256": subject["sha256"]}},
                "stages": stages, "totals": totals, "decisions": decisions, "evidence": evidence, "verdict": verdict}
-    problems = _schema_problems(receipt)
+    problems = _schema_problems(receipt) + semantic_problems(receipt)
     if problems:
         raise ValueError("draft is not a valid run-receipt v1: " + "; ".join(problems[:5]))
     return receipt
@@ -258,11 +330,11 @@ def separation_problems(receipt: dict) -> list[str]:
 
 
 def accepted(receipt: dict) -> bool:
-    """True when the receipt is a valid v1 receipt, one different actor approved it, and its single checker
+    """True when the receipt is a valid v1 receipt (schema and the SIS semantic checks), one different actor approved it, and its single checker
     stage passed. Self-asserted: it does not prove the checker ran. Verdict can still be PARTIAL when a
     fallback call failed on the way; v1 verdicts describe stage health, not acceptance."""
     try:
-        if _schema_problems(receipt):
+        if _schema_problems(receipt) or semantic_problems(receipt):
             return False
         accept = next(d for d in receipt["decisions"] if d["gate"] == ACCEPT_GATE)
         check = next(s for s in receipt["stages"] if s["name"].startswith(VERIFY_PREFIX))

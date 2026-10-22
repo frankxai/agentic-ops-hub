@@ -53,6 +53,14 @@ PACK_STATUSES = ("spec", "curating", "ready")
 MAX_JUDGED_SHARE = 0.5
 MIN_SAMPLE_FLOOR = 10
 TIERS = ("T0", "T1", "T2", "T3")
+GATE_STATUSES = ("open", "in-progress", "done")
+GATE_KINDS = ("decision", "work")
+# Every checker type is classified. A judged type counts toward the 50% limit; an unknown type is an error,
+# so relabelling a task cannot move it out of the judged share.
+JUDGED_CHECKER_TYPES = ("blind-judge", "human-review")
+DETERMINISTIC_CHECKER_TYPES = ("script", "exact-match", "exec-asserts", "test-suite", "dom-assertions",
+                               "axe", "lighthouse", "behaviour", "ablation")
+CHECKER_TYPES = JUDGED_CHECKER_TYPES + DETERMINISTIC_CHECKER_TYPES
 
 
 def _reject_constant(name: str):
@@ -84,22 +92,40 @@ def sample_floor(data: dict) -> int:
     return floor if is_int(floor) and floor >= MIN_SAMPLE_FLOOR else MIN_SAMPLE_FLOOR
 
 
+def nonblank(value) -> bool:
+    return isinstance(value, str) and bool(value.strip())
+
+
+def actor_key(value) -> str:
+    return value.strip().casefold() if isinstance(value, str) else ""
+
+
+def evidence_exists(source) -> bool:
+    """A measured claim's source is a repo-relative file that exists; absolute paths and '..' are refused."""
+    if not nonblank(source):
+        return False
+    path = Path(source.strip())
+    if path.is_absolute() or ".." in path.parts or path.drive:
+        return False
+    return (ROOT / path).is_file()
+
+
 def is_number(value) -> bool:
     return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value >= 0
 
 
 def blockers_of(exp: dict, data: dict) -> list[dict]:
     """Each blocker as {id, kind, title, resolved}."""
-    gates = {g["id"]: g for g in data["gates"]["items"]}
-    experiments = {e["id"]: e for e in data["experiments"]}
+    gates = {g["id"]: g for g in data["gates"]["items"] if isinstance(g.get("id"), str)}
+    experiments = {e["id"]: e for e in data["experiments"] if isinstance(e.get("id"), str)}
     out = []
     for ref in exp.get("blocked_by", []):
         if ref in gates:
             g = gates[ref]
-            out.append({"id": ref, "kind": g["kind"], "title": g["title"], "resolved": g["status"] == "done"})
+            out.append({"id": ref, "kind": g.get("kind", "?"), "title": g.get("title", ref), "resolved": g.get("status") == "done"})
         elif ref in experiments:
             e = experiments[ref]
-            out.append({"id": ref, "kind": "experiment", "title": e["title"], "resolved": e["status"] == "concluded"})
+            out.append({"id": ref, "kind": "experiment", "title": e.get("title", ref), "resolved": e.get("status") == "concluded"})
         else:
             out.append({"id": ref, "kind": "unknown", "title": ref, "resolved": False})
     return out
@@ -117,7 +143,8 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
             problems.append(f"goals {label}: every entry needs a non-empty id")
         if len(set(seen)) != len(seen):
             problems.append(f"goals {label}: duplicate id")
-    gate_ids = [g["id"] for g in gates["items"]]
+    problems += validate_gates(data) + validate_names(data)
+    gate_ids = [g.get("id") for g in gates["items"]]
     exp_ids = [e.get("id") for e in experiments]
 
     if len(set(gate_ids)) != len(gate_ids):
@@ -144,7 +171,9 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
             problems.append(f"{eid}: unknown pillar {exp['pillar']!r}")
         if not exp["projects"] or not set(exp["projects"]) <= project_ids:
             problems.append(f"{eid}: projects must be a non-empty subset of {sorted(project_ids)}")
-        if exp["owner"] == exp["verifier"]:
+        if not actor_key(exp["owner"]) or not actor_key(exp["verifier"]):
+            problems.append(f"{eid}: owner and verifier must be non-empty actor ids")
+        elif actor_key(exp["owner"]) == actor_key(exp["verifier"]):
             problems.append(f"{eid}: the verifier must be a different actor than the owner")
         if exp["owner_general"] not in GENERALS:
             problems.append(f"{eid}: owner_general {exp['owner_general']!r} unknown")
@@ -153,11 +182,13 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
                 problems.append(f"{eid}: {field} is empty")
         if not exp["runs_on"] or any(r.get("where") not in PLACES for r in exp["runs_on"]):
             problems.append(f"{eid}: runs_on needs entries whose 'where' is one of {sorted(PLACES)}")
-        if not exp["arms"]:
-            problems.append(f"{eid}: needs at least one arm")
+        elif any(not nonblank(r.get("why")) for r in exp["runs_on"]):
+            problems.append(f"{eid}: every runs_on entry needs a 'why'")
+        problems += validate_arms(eid, exp["arms"], data)
+        problems += validate_design(eid, exp, data)
         tier = exp.get("tier")
-        if tier is not None and tier not in TIERS:
-            problems.append(f"{eid}: tier {tier!r} not in {TIERS}")
+        if tier not in TIERS:
+            problems.append(f"{eid}: needs an explicit tier from {TIERS}, got {tier!r}")
         if tier in ("T1", "T2", "T3") and any(r.get("where") == "local-c940" for r in exp["runs_on"]):
             problems.append(f"{eid}: {tier} runs never go on the laptop (scale policy); use a cloud worker")
         if not all(is_number(exp["budget"].get(k)) for k in BUDGET_KEYS):
@@ -210,13 +241,83 @@ def validate(data: dict, today: dt.date | None = None) -> list[str]:
     return problems
 
 
+def validate_gates(data: dict) -> list[str]:
+    problems: list[str] = []
+    for g in data["gates"]["items"]:
+        gid = g.get("id", "?")
+        if not nonblank(g.get("id")):
+            problems.append("gates: every gate needs a non-empty id")
+        for field in ("title", "owner"):
+            if not nonblank(g.get(field)):
+                problems.append(f"gate {gid}: {field} is required")
+        if g.get("kind") not in GATE_KINDS:
+            problems.append(f"gate {gid}: kind {g.get('kind')!r} not in {GATE_KINDS}")
+        if g.get("status") not in GATE_STATUSES:
+            problems.append(f"gate {gid}: status {g.get('status')!r} not in {GATE_STATUSES}")
+    return problems
+
+
+def validate_names(data: dict) -> list[str]:
+    problems: list[str] = []
+    for label, items, fields in (("pillar", data["goals"]["pillars"], ("name",)),
+                                 ("project", data["goals"]["projects"], ("name", "gets"))):
+        for item in items:
+            for field in fields:
+                if not nonblank(item.get(field)):
+                    problems.append(f"{label} {item.get('id', '?')}: {field} is required (the dashboard renders it)")
+    return problems
+
+
+def validate_arms(eid: str, arms, data: dict) -> list[str]:
+    """Every arm names a registered harness, or says in `harness_pending` that the choice is still open."""
+    if not isinstance(arms, list) or not arms:
+        return [f"{eid}: needs at least one arm"]
+    registered = {h.get("id") for h in data["harnesses"]["items"]}
+    problems: list[str] = []
+    for i, arm in enumerate(arms):
+        if not isinstance(arm, dict):
+            problems.append(f"{eid}: arm {i} must be an object")
+            continue
+        for field in ("model", "role"):
+            if not nonblank(arm.get(field)):
+                problems.append(f"{eid}: arm {i} needs a {field}")
+        harness, pending = arm.get("harness"), arm.get("harness_pending")
+        if harness is not None and pending is not None:
+            problems.append(f"{eid}: arm {i} sets both harness and harness_pending")
+        elif harness is not None:
+            if harness not in registered:
+                problems.append(f"{eid}: arm {i} harness {harness!r} is not in lab/harnesses.json; register it or use harness_pending")
+        elif not nonblank(pending):
+            problems.append(f"{eid}: arm {i} needs a registered harness or a harness_pending note")
+    return problems
+
+
+def validate_design(eid: str, exp: dict, data: dict) -> list[str]:
+    """An experiment that plans fewer runs per cell than the sample floor is a directional pilot and decides nothing."""
+    design = exp.get("design")
+    if design is None:
+        return []
+    runs = design.get("runs_per_cell") if isinstance(design, dict) else None
+    if not is_int(runs) or runs < 1:
+        return [f"{eid}: design.runs_per_cell must be an integer of at least 1"]
+    floor = sample_floor(data)
+    if runs < floor and design.get("decision_effect") != "none":
+        return [f"{eid}: {runs} run(s) per cell is below the sample floor {floor}; set design.decision_effect to 'none' (directional pilot)"]
+    return []
+
+
 def validate_harnesses(data: dict) -> list[str]:
     problems: list[str] = []
     ids = [h.get("id") for h in data["harnesses"]["items"]]
     if len(set(ids)) != len(ids):
         problems.append("harnesses: duplicate id")
+    if any(not nonblank(i) for i in ids):
+        problems.append("harnesses: every entry needs a non-empty id")
     for h in data["harnesses"]["items"]:
         hid = h.get("id", "?")
+        for field in ("name", "role", "headless"):
+            if not nonblank(h.get(field)):
+                problems.append(f"harness {hid}: {field} is required (the dashboard renders it)")
         if h.get("layer") not in LAYERS:
             problems.append(f"harness {hid}: layer {h.get('layer')!r} not in {LAYERS}")
         if h.get("status") not in HARNESS_STATUSES:
@@ -225,10 +326,12 @@ def validate_harnesses(data: dict) -> list[str]:
         if measured is None:
             continue
         floor = sample_floor(data)
-        if not isinstance(measured, dict) or not measured.get("source") or not is_int(measured.get("n")):
-            problems.append(f"harness {hid}: measured needs an integer n and a source")
+        if not isinstance(measured, dict) or not nonblank(measured.get("source")) or not is_int(measured.get("n")):
+            problems.append(f"harness {hid}: measured needs an integer n and a non-empty source path")
         elif measured["n"] < max(floor, 1):
             problems.append(f"harness {hid}: measured n={measured['n']} is below the sample floor {floor}; keep it null or call it directional elsewhere")
+        elif not evidence_exists(measured["source"]):
+            problems.append(f"harness {hid}: measured source {measured['source']!r} is not a file in this repository")
     return problems
 
 
@@ -237,11 +340,16 @@ def validate_packs(data: dict) -> list[str]:
     ids = [p.get("id") for p in data["packs"]["items"]]
     if len(set(ids)) != len(ids):
         problems.append("packs: duplicate id")
+    if any(not nonblank(i) for i in ids):
+        problems.append("packs: every pack needs a non-empty id")
     floor = data["packs"].get("sample_floor_per_cell")
     if not is_int(floor) or floor < MIN_SAMPLE_FLOOR:
         problems.append(f"packs: sample_floor_per_cell must be an integer of at least {MIN_SAMPLE_FLOOR} (SIS doctrine A2)")
     for pack in data["packs"]["items"]:
         pid = pack.get("id", "?")
+        for field in ("title", "domain", "weakness"):
+            if not nonblank(pack.get(field)):
+                problems.append(f"pack {pid}: {field} is required (the dashboard renders it)")
         if pack.get("status") not in PACK_STATUSES:
             problems.append(f"pack {pid}: status {pack.get('status')!r} not in {PACK_STATUSES}")
         tasks = pack.get("tasks") or []
@@ -255,15 +363,23 @@ def validate_packs(data: dict) -> list[str]:
             check = str(t.get("verifier", {}).get("check", "")).strip()
             if not check:
                 problems.append(f"pack {pid}: task {t.get('id', '?')} has no checker")
-            if bool(t.get("judged")) != (t.get("verifier", {}).get("type") == "blind-judge"):
-                problems.append(f"pack {pid}: task {t.get('id', '?')} judged flag and blind-judge verifier must agree")
+            ctype = t.get("verifier", {}).get("type")
+            if ctype not in CHECKER_TYPES:
+                problems.append(f"pack {pid}: task {t.get('id', '?')} has checker type {ctype!r}; classify it in {CHECKER_TYPES}")
+            if not isinstance(t.get("judged"), bool):
+                problems.append(f"pack {pid}: task {t.get('id', '?')} judged must be a real boolean")
+            elif t["judged"] != (ctype in JUDGED_CHECKER_TYPES):
+                problems.append(f"pack {pid}: task {t.get('id', '?')} judged flag and judged (blind-judge or human-review) verifier must agree")
         if pack_judged_share(pack) > MAX_JUDGED_SHARE:
             problems.append(f"pack {pid}: more than {int(MAX_JUDGED_SHARE * 100)}% of tasks are judged")
     return problems
 
 
 def is_judged(task: dict) -> bool:
-    return bool(task.get("judged")) or task.get("verifier", {}).get("type") == "blind-judge"
+    """Judged if flagged or if the checker type is judged. An unclassified type counts as judged,
+    so an unknown label can never lower the share."""
+    ctype = task.get("verifier", {}).get("type")
+    return bool(task.get("judged")) or ctype in JUDGED_CHECKER_TYPES or ctype not in CHECKER_TYPES
 
 
 def pack_judged_share(pack: dict) -> float:
@@ -291,14 +407,17 @@ def summarize_receipts(path: Path | None = None, now: dt.datetime | None = None)
             rec = json.loads(line)
             if not isinstance(rec, dict):
                 raise ValueError("not an object")
-            if rec.get("synthetic") is True:
+            synthetic = rec.get("synthetic", False)
+            if not isinstance(synthetic, bool):
+                raise ValueError("synthetic must be a real boolean")
+            if synthetic:
                 result["synthetic"] += 1
                 continue
-            cls, model = rec["task_class"], rec["used"]
-            cost = float(rec.get("cost_usd", 0.0))
-            if not isinstance(cls, str) or not isinstance(model, str) or not math.isfinite(cost) or cost < 0:
+            cls, model, ok, cost = rec["task_class"], rec["used"], rec["success"], rec["cost_usd"]
+            if not isinstance(cls, str) or not isinstance(model, str) or not isinstance(ok, bool):
                 raise ValueError("bad field")
-            ok = bool(rec.get("success"))
+            if not is_number(cost):
+                raise ValueError("cost_usd must be an explicit finite non-negative number")
         except (ValueError, KeyError, TypeError):
             result["skipped"] += 1
             continue
@@ -445,7 +564,7 @@ def render_card(exp: dict, data: dict) -> str:
     chips = "".join(f'<span class="pill" title="{esc(b["title"])}">{"✓ " if b["resolved"] else ""}{esc(b["id"])}</span>' for b in blockers) or '<span class="muted">none</span>'
     projects = "".join(f'<span class="pill">{esc(p)}</span>' for p in exp["projects"])
     places = ", ".join(PLACES[r["where"]] for r in exp["runs_on"])
-    arms = "".join(f'<li><span class="mono">{esc(a["harness"])}</span> on <span class="mono">{esc(a["model"])}</span> <span class="muted">({esc(a["role"])})</span></li>' for a in exp["arms"])
+    arms = "".join(f'<li><span class="mono">{esc(a.get("harness") or "TBD: " + str(a.get("harness_pending", "")))}</span> on <span class="mono">{esc(a["model"])}</span> <span class="muted">({esc(a["role"])})</span></li>' for a in exp["arms"])
     why = "".join(f'<li>{esc(r["where"])}: {esc(r["why"])}</li>' for r in exp["runs_on"])
     evidence = "".join(f'<li>{esc(ev["claim"])} <span class="source">{esc(ev["source"])}</span><br><span class="muted">Caveat: {esc(ev["caveat"])}</span></li>' for ev in exp.get("prior_evidence", []))
     pre = "".join(f'<li>{esc(x)}</li>' for x in exp.get("preconditions", []))

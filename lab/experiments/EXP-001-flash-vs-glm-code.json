@@ -23,17 +23,17 @@
   ],
   "arms": [
     {
-      "harness": "opencode",
+      "harness": "opencode-bare",
       "model": "vercel/deepseek/deepseek-v4.1-flash",
       "role": "challenger"
     },
     {
-      "harness": "opencode",
+      "harness": "opencode-bare",
       "model": "vercel/zai/glm-5.3",
       "role": "incumbent"
     },
     {
-      "harness": "opencode",
+      "harness": "opencode-bare",
       "model": "opencode/deepseek-v4.1-flash-free",
       "role": "free control"
     }
@@ -46,8 +46,8 @@
       "median_wall_seconds"
     ]
   },
-  "success_rule": "accepted_rate(flash) >= 0.85 * accepted_rate(glm) AND cost_per_accepted(flash) <= 0.25 * cost_per_accepted(glm). Then Flash becomes the code-class primary and GLM the escalation.",
-  "kill": "Stop after 12 tasks x 3 arms or $6, whichever comes first. If Flash accepts under 70% of what GLM accepts, GLM stays primary and this closes.",
+  "success_rule": "Directional only (design.decision_effect none): accepted_rate(flash) >= 0.85 * accepted_rate(glm) AND cost_per_accepted(flash) <= 0.25 * cost_per_accepted(glm). If both hold, the result justifies a confirmation run at 10 or more attempts per cell; only that confirmation can make Flash the code-class primary and GLM the escalation.",
+  "kill": "Directional pilot at one run per cell, below the 10-per-cell floor, so no result changes routing. Stop after 12 tasks x 3 arms or $6, whichever comes first. If Flash accepts under 70% of what GLM accepts, GLM stays primary and no confirmation run is scheduled.",
   "budget": {
     "token_pass_usd_cap": 6,
     "infra_usd_cap": 1,
@@ -82,5 +82,10 @@
       "caveat": "One anecdote. It is the reason GLM stays the incumbent arm."
     }
   ],
-  "tier": "T1"
+  "tier": "T1",
+  "design": {
+    "runs_per_cell": 1,
+    "decision_effect": "none",
+    "note": "12 tasks x 3 arms is one attempt per cell, below the 10-per-cell floor (lab/packs.json sample_floor_per_cell). Directional pilot: it changes no routing."
+  }
 }

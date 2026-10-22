@@ -6,6 +6,7 @@
   "hypothesis": "On three hard multi-file tasks, a bounded OmO swarm accepts more tasks than the best single-agent arm, and the extra cost per accepted task stays under 3x.",
   "status": "blocked",
   "state": "S1",
+  "tier": "T3",
   "owner": "claude",
   "owner_general": "cto",
   "verifier": "frank",
@@ -15,7 +16,7 @@
   ],
   "arms": [
     {"harness": "omo-native", "model": "mixed per OmO graph, restricted to the allowlist", "role": "swarm"},
-    {"harness": "best of EXP-002", "model": "best of EXP-001", "role": "single-agent baseline"}
+    {"harness_pending": "best harness from EXP-002", "model": "best of EXP-001", "role": "single-agent baseline"}
   ],
   "suite": "starlight-hard-v0 (3 tasks, curated after EXP-002)",
   "metric": {"primary": "accepted_tasks_of_3", "secondary": ["total_cost_usd", "wall_seconds"]},
