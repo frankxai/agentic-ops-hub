@@ -72,6 +72,7 @@ class TokenPlannerTests(unittest.TestCase):
     def test_no_launcher_emits_a_bypass_flag(self):
         for agent in ("claude", "codex", "opencode", "gemini"):
             mission = self._mission(agent=agent, budget=30)
+            mission["route_class"] = "code"
             task = self.planner._task_contract(mission)
             flags = [a.lower() for a in self.planner.command_args(mission) if a != task]
             for token in ("danger-full-access", "--dangerously-skip-permissions",
@@ -117,6 +118,32 @@ class TokenPlannerTests(unittest.TestCase):
             self.assertIn("N1", text)
             self.assertIn("incomplete", text)
             self.assertIn("Human review required", text)
+
+    def test_opencode_launch_is_pinned_to_the_gateway_model_for_its_class(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "scout"
+        args = self.planner.command_args(mission)
+        self.assertEqual(args[:4], ["opencode", "run", "-m", "vercel/deepseek/deepseek-v4.1-flash"])
+
+    def test_opencode_launch_keeps_the_class_variant(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "code"
+        self.assertEqual(self.planner.command_args(mission)[3], "vercel/zai/glm-5.3#medium")
+
+    def test_opencode_launch_refuses_without_a_resolvable_class(self):
+        for bad in (None, "", "nonsense", 7):
+            mission = self._mission(agent="opencode", budget=30)
+            if bad is not None:
+                mission["route_class"] = bad
+            with self.assertRaisesRegex(PlannerError, "route_class|cannot resolve"):
+                self.planner.command_args(mission)
+
+    def test_allow_free_changes_the_pinned_model_only_when_asked(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "scout"
+        free = Planner(self.planner.config, allow_free=True).command_args(mission)
+        self.assertTrue(free[3].startswith("opencode/"), free[:4])
+        self.assertTrue(self.planner.command_args(mission)[3].startswith("vercel/"))
 
     def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md", receipt="C:/reports/n1.json"):
         return {

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Weekly routing review: parse routing receipts, propose routing diffs.
-Writes fleet/routing-proposals/YYYY-MM-DD.json for human approval.
+Writes fleet/routing-proposals/YYYY-MM-DD-<mode>.json (mode: strict-zdr or allow-free) for human approval.
 Never auto-commits (money/merges stay on the human's button).
 
 Receipts are read tolerantly: torn or malformed lines, unknown classes and
@@ -79,6 +79,9 @@ def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None 
         if not (0 <= cost <= MAX_SANE_COST_USD and 0 <= latency <= MAX_SANE_LATENCY_MS):
             skipped["malformed"] += 1
             continue
+        if "allow_free" in r and not isinstance(r["allow_free"], bool):
+            skipped["malformed"] += 1  # a string like "false" must not silently count as true
+            continue
         if ts.timestamp() >= cutoff:
             out.append({**r, "cost_usd": cost, "latency_ms": latency})
     return out, skipped
@@ -91,7 +94,7 @@ def in_mode(receipt: dict, schema: dict, allow_free: bool) -> bool:
     cls = receipt["task_class"]
     if cls not in schema["task_classes"]:
         return True  # unknown classes are dropped later by analyze, not counted as a mode mismatch
-    if "allow_free" in receipt and bool(receipt["allow_free"]) != allow_free:
+    if "allow_free" in receipt and receipt["allow_free"] is not allow_free:
         return False
     return receipt["used"] in effective_route(schema, cls, allow_free=allow_free)["chain"]
 
@@ -198,7 +201,7 @@ def main(argv=None):
         "proposals": proposals,
         "note": "Proposals require human approval. Apply manually to routing.schema.json + regenerate OmO config. Never auto-commit.",
     }
-    out_path = PROPOSALS / f"{now.date().isoformat()}.json"
+    out_path = PROPOSALS / f"{now.date().isoformat()}-{report['mode']}.json"
     out_path.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
     print(f"Wrote {out_path}")
     print(f"Receipts: {len(receipts)}  Skipped: {sum(skipped.values())}  Classes analyzed: {len(analysis)}  Proposals: {len(proposals)}")

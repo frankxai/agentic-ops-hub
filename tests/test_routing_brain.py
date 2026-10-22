@@ -1424,6 +1424,120 @@ class Round9NoDirectSchemaReads(unittest.TestCase):
         for field in ("primary", "fallbacks", "cost_ceiling_usd"):
             self.assertNotIn(f'classes[cls]["{field}"]', src)
 
+class Round10WeeklyReviewModes(TmpLedger):
+    def _line(self, **kw):
+        base = {"ts": datetime.now(timezone.utc).isoformat(), "task_class": "code",
+                "used": "vercel/zai/glm-5.3", "success": True, "cost_usd": 0.1, "latency_ms": 5}
+        return json.dumps({**base, **kw})
+
+    def test_a_string_allow_free_is_malformed_and_in_neither_review(self):
+        lines = [self._line(allow_free="false"), self._line(allow_free=0), self._line(allow_free=False)]
+        self.ledger.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        got, skipped = review.load_receipts(self.ledger)
+        self.assertEqual(len(got), 1)
+        self.assertIs(got[0]["allow_free"], False)
+        self.assertEqual(skipped["malformed"], 2)
+        strict, _ = review.filter_mode(got, SCHEMA, allow_free=False)
+        free, _ = review.filter_mode(got, SCHEMA, allow_free=True)
+        self.assertEqual((len(strict), len(free)), (1, 0))
+
+    def test_strict_and_free_proposals_do_not_overwrite_each_other(self):
+        self.ledger.write_text(self._line() + "\n", encoding="utf-8")
+        out = Path(self.tmp.name) / "proposals"
+        with patch.object(review, "PROPOSALS", out):
+            review.main([])
+            review.main(["--allow-free"])
+        names = sorted(p.name for p in out.glob("*.json"))
+        self.assertEqual(len(names), 2, names)
+        self.assertTrue(any(n.endswith("-strict-zdr.json") for n in names))
+        self.assertTrue(any(n.endswith("-allow-free.json") for n in names))
+        modes = {json.loads(p.read_text())["mode"] for p in out.glob("*.json")}
+        self.assertEqual(modes, {"strict-zdr", "allow-free"})
+
+
+
+# `variant` is a reasoning-effort label, not a route choice, so reading it cannot bring back a free model.
+MODEL_FIELDS = frozenset({"primary", "fallbacks", "fallback", "cost_ceiling_usd", "zdr_cost_ceiling_usd"})
+
+
+def model_field_reads(source: str) -> list[str]:
+    """Reads of a class's own model fields in `source`, whatever the quoting or access form.
+
+    Flags subscripts and .get() calls with a model-field key whose base expression comes from
+    task_classes, including through a name assigned from such an expression."""
+    import ast
+    tree = ast.parse(source)
+    tainted: set[str] = set()
+    changed = True
+
+    def from_classes(node: ast.AST) -> bool:
+        return any((isinstance(n, ast.Constant) and n.value == "task_classes")
+                   or (isinstance(n, ast.Name) and n.id in tainted) for n in ast.walk(node))
+
+    while changed:
+        changed = False
+        for n in ast.walk(tree):
+            targets, value = [], None
+            if isinstance(n, ast.Assign):
+                targets, value = n.targets, n.value
+            elif isinstance(n, (ast.AnnAssign, ast.NamedExpr)) and n.value is not None:
+                targets, value = [n.target], n.value
+            elif isinstance(n, (ast.For, ast.comprehension)):
+                targets, value = [n.target], n.iter
+            if value is not None and from_classes(value):
+                for tgt in targets:
+                    for name in ast.walk(tgt):
+                        if isinstance(name, ast.Name) and name.id not in tainted:
+                            tainted.add(name.id)
+                            changed = True
+    found = []
+    for n in ast.walk(tree):
+        key = base = None
+        if isinstance(n, ast.Subscript) and isinstance(n.slice, ast.Constant):
+            key, base = n.slice.value, n.value
+        elif (isinstance(n, ast.Call) and isinstance(n.func, ast.Attribute) and n.func.attr in ("get", "setdefault", "pop")
+              and n.args and isinstance(n.args[0], ast.Constant)):
+            key, base = n.args[0].value, n.func.value
+        if key in MODEL_FIELDS and from_classes(base):
+            found.append(f"line {n.lineno}: {ast.unparse(n)}")
+    return found
+
+
+class Round10ModelFieldScan(unittest.TestCase):
+    MUTATIONS = {
+        "double quotes": 'x = schema["task_classes"][cls]["primary"]',
+        "single quotes": "x = schema['task_classes'][cls]['primary']",
+        "get call": 'x = schema["task_classes"][cls].get("fallbacks", [])',
+        "alias name": """d = schema["task_classes"][cls]
+y = d['cost_ceiling_usd']""",
+        "loop alias": """for name, d in schema["task_classes"].items():
+    y = d.get("primary")""",
+        "nested alias": """classes = schema["task_classes"]
+x = classes[cls]["fallbacks"]""",
+        "walrus": """if (d := schema["task_classes"][cls]):
+    y = d["zdr_cost_ceiling_usd"]""",
+    }
+
+    def test_scanner_catches_every_access_form(self):
+        for name, source in self.MUTATIONS.items():
+            self.assertTrue(model_field_reads(source), f"scanner missed: {name}")
+
+    def test_scanner_ignores_effective_route_results_and_class_names(self):
+        for source in ("""r = effective_route(schema, cls)
+x = r["primary"]""",
+                       """classes = schema["task_classes"]
+ok = cls in classes""",
+                       'x = receipt["task_class"]'):
+            self.assertEqual(model_field_reads(source), [], source)
+
+    def test_no_fleet_module_outside_the_executor_reads_model_fields(self):
+        offenders = []
+        for path in sorted(FLEET.glob("*.py")):
+            if path.name == "route_executor.py":
+                continue
+            offenders += [f"{path.name}: {hit}" for hit in model_field_reads(path.read_text(encoding="utf-8"))]
+        self.assertEqual(offenders, [], "take model fields from route_executor.effective_route()")
+
 
 if __name__ == "__main__":
     unittest.main()

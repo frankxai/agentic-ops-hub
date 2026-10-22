@@ -25,9 +25,32 @@ _FORBIDDEN_LAUNCH_TOKENS = (
 )
 
 
+def pinned_opencode_model(route_class: Any, *, allow_free: bool = False) -> str:
+    """The provider/model string an unattended OpenCode run is pinned to.
+
+    The model comes from route_executor.effective_route() for the routing class, so an
+    ambient OpenCode config can never choose it. An unknown or missing class refuses to launch."""
+    if not isinstance(route_class, str) or not route_class:
+        raise PlannerError("opencode mission needs a 'route_class' (a routing.schema.json task class); "
+                           "refusing to launch with an unpinned model")
+    try:
+        from fleet import route_executor
+    except ImportError:  # run as a script from the fleet directory
+        import route_executor  # type: ignore[no-redef]
+    try:
+        route = route_executor.effective_route(route_executor.load_schema(), route_class, allow_free=allow_free)
+    except (ValueError, OSError) as exc:
+        raise PlannerError(f"cannot resolve a route for class {route_class!r}: {exc}; "
+                           "refusing to launch with an unpinned model") from exc
+    model = route["primary"]
+    variant = route.get("variant")
+    return f"{model}#{variant}" if variant else model
+
+
 @dataclass
 class Planner:
     config: dict[str, Any]
+    allow_free: bool = False
 
     @classmethod
     def from_file(cls, path: Path | str) -> "Planner":
@@ -165,7 +188,8 @@ class Planner:
                 task,
             ]
         if agent == "opencode":
-            return ["opencode", "run", task]
+            model = pinned_opencode_model(mission.get("route_class"), allow_free=self.allow_free)
+            return ["opencode", "run", "-m", model, task]
         if agent == "gemini":
             return ["gemini", "-p", task]
         raise PlannerError(f"agent {agent!r} has no unattended launcher")
@@ -256,6 +280,8 @@ def load_json(path: str) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Starlight Token Planner")
     parser.add_argument("--config", default=str(Path(__file__).with_name("model-routing.json")))
+    parser.add_argument("--allow-free", action="store_true",
+                        help="let opencode missions use opencode/* free models (outside the ZDR gateway key)")
     sub = parser.add_subparsers(dest="command", required=True)
     recommend = sub.add_parser("recommend")
     recommend.add_argument("job_class")
@@ -266,6 +292,7 @@ def main() -> int:
         cmd.add_argument("manifest")
     args = parser.parse_args()
     planner = Planner.from_file(args.config)
+    planner.allow_free = args.allow_free
     try:
         if args.command == "recommend":
             result = planner.recommend(args.job_class, args.complexity, args.unattended)

@@ -281,21 +281,31 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     }
 
 
-def build_report(*, machine: str, live: bool, repo: str, codex_model: str) -> dict[str, Any]:
+def opencode_probe_command(allow_free: bool = False) -> list[str]:
+    """The live OpenCode probe, pinned to the scout class route so ambient config cannot pick the model."""
+    from fleet.token_planner import pinned_opencode_model
+    return ["opencode", "run", "-m", pinned_opencode_model("scout", allow_free=allow_free), "Reply exactly PONG."]
+
+
+def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow_free: bool = False) -> dict[str, Any]:
     usage = shutil.disk_usage(repo)
     gate = resource_gate(
         disk_free_gb=usage.free / (1024**3),
         memory_percent=memory_percent(),
     )
     effective_live = live and gate["launch_allowed"]
+    try:
+        opencode_command, opencode_live = opencode_probe_command(allow_free), effective_live
+    except ValueError:  # no resolvable route: never fall back to an unpinned live call
+        opencode_command, opencode_live = ["opencode", "run", "(refused: no pinned route)"], False
     probes = {
         "claude-max": _probe_claude(effective_live),
         "openai-codex-max": _probe_codex(effective_live, repo, codex_model),
         "gemini-ultra": _probe_gemini(effective_live),
         "opencode": _probe_simple(
             "opencode",
-            effective_live,
-            ["opencode", "run", "Reply exactly PONG."],
+            opencode_live,
+            opencode_command,
             ["opencode", "auth", "list"],
         ),
     }
@@ -328,10 +338,13 @@ def main() -> int:
     parser.add_argument("--repo", default=str(ROOT))
     parser.add_argument("--codex-model", default="gpt-5.6-terra")
     parser.add_argument("--live", action="store_true")
+    parser.add_argument("--allow-free", action="store_true",
+                        help="pin the OpenCode probe to a free opencode/* model (outside the ZDR gateway key)")
     parser.add_argument("--output", default=None)
     args = parser.parse_args()
     machine = args.machine or detect_machine()
-    report = build_report(machine=machine, live=args.live, repo=args.repo, codex_model=args.codex_model)
+    report = build_report(machine=machine, live=args.live, repo=args.repo, codex_model=args.codex_model,
+                          allow_free=args.allow_free)
     output = Path(args.output) if args.output else ROOT / "fleet" / "reports" / "cli-capacity" / f"{machine}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2), encoding="utf-8")

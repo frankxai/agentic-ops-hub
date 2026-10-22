@@ -67,3 +67,12 @@ Soft alert at $60. Hard cap $80. No rollover, no overage (requests fail with 403
 - Use commodities (OpenCode, OmO, Vercel, OpenRouter), build the moat (this).
 - Done = verified. Every phase ships a runnable proof.
 - Money/merges/deployments stay on the human's button.
+
+## What the guarantee covers (and what it does not)
+
+The classifier is a cost heuristic. The control is the gateway key: calls that go through the Vercel gateway with a ZDR-restricted key cannot reach a non-ZDR provider, whatever the classifier decided.
+
+- **Pinned launches.** Unattended OpenCode runs started by `fleet/token_planner.py` (missions with `agent: "opencode"` need a `route_class`) and the live probe in `scripts/cli_capacity.py` pass `-m <provider/model>` taken from `route_executor.effective_route()`. They never use whatever model an ambient OpenCode config selects. An unknown or missing class refuses to launch. `--allow-free` on either tool pins an `opencode/*` free model instead, outside the gateway key.
+- **Not covered.** A person typing `opencode` (or any other agent CLI) directly uses their own config and model choice. That use is outside the guarantee, as is any call that does not go through the gateway.
+- **Receipts.** Only `route_executor.record_receipt()` writes a routing receipt (`route_task.py --record` and library callers). The generated OmO config, the classifier and OpenCode itself record nothing.
+- **Weekly review.** `weekly_routing_review.py` writes `routing-proposals/YYYY-MM-DD-strict-zdr.json` or `...-allow-free.json`, so the two modes never overwrite each other. A receipt whose `allow_free` is not a real boolean is counted as malformed and appears in neither review.

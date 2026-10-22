@@ -34,6 +34,12 @@ class CliCapacityTests(unittest.TestCase):
         self.assertTrue(gate["launch_allowed"])
         self.assertEqual([], gate["blockers"])
 
+    def test_opencode_live_probe_is_pinned_and_never_ambient(self) -> None:
+        command = cli_capacity.opencode_probe_command()
+        self.assertEqual(command[:4], ["opencode", "run", "-m", "vercel/deepseek/deepseek-v4.1-flash"])
+        free = cli_capacity.opencode_probe_command(allow_free=True)
+        self.assertTrue(free[3].startswith("opencode/"), free[:4])
+
 
 if __name__ == "__main__":
     unittest.main()
