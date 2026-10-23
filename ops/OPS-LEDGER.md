@@ -1,3 +1,15 @@
+<!-- docs-platform-live-20261023:start -->
+## docs-platform live: three brand hosts public, two DNS records and repo visibility on Frank
+
+`frankxai/docs-platform` merged and deployed: `docs.gencreator.ai`, `docs.akamoto.io` and
+`docs.starlightintelligence.ai` serve brand-scoped pages, search and `llms.txt` feeds over HTTPS; the atlas sits on
+`docs-platform-nine.vercel.app`. Six codex-review findings closed through pr-gate (PR #1, squash `1bdbf4c`; PR #3
+`9ecd13c` fixed the atlas host). The phase-2 asks landed too: server-rendered coverage and context visualizations, and
+the context-layer verdict (Supabase+pgvector first; the differentiator is an MCP endpoint sharing that substrate).
+Frank's two calls: the IONOS CNAMEs for `docs.frankx.ai` and `docs.arcanea.ai`, and repo visibility (repo is private
+while pages link into it). Registry rows are the next agent's. Details in [the session](sessions/2026-10-23.md).
+<!-- docs-platform-live-20261023:end -->
+
 <!-- estate-convergence-20261021:start -->
 ## Launch factory on one PR, Payment Link checkout ported, estate convergence plan proposed
 

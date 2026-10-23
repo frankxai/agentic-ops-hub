@@ -9,6 +9,7 @@ feature in a hold repository, waits unless the plan lets the drain owner do it, 
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [docs-platform-live-20261023](handovers/docs-platform-live-20261023.md) | Attach two DNS records on IONOS, decide repo visibility for frankxai/docs-platform, then registry rows; the platform itself is live and verified | frank | open; three of five brand hosts live and verified 23 Oct; docs-platform-nine.vercel.app serves the atlas |
 | [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
