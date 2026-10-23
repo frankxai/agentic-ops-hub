@@ -284,16 +284,21 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     }
 
 
-def opencode_probe_command(allow_free: bool = False) -> list[str]:
+def opencode_probe_command(allow_free: bool = False, allowance_usd: float | None = None) -> list[str]:
     """The live OpenCode probe, pinned to the scout class route so ambient config cannot pick the model."""
     from fleet.opencode_launch import wrapper_argv
     from fleet.token_planner import pinned_opencode_model
-    pinned_opencode_model("scout", allow_free=allow_free)  # refuse here when the route cannot be resolved
+    pinned = pinned_opencode_model("scout", allow_free=allow_free)  # refuse here when the route cannot be resolved
+    if pinned.startswith("vercel/") and (isinstance(allowance_usd, bool) or
+            not isinstance(allowance_usd, (int, float)) or not 0 < allowance_usd < float("inf")):
+        raise ValueError("paid OpenCode probe needs an explicit positive allowance_usd")
     # the probe's outer deadline is LIVE_PROBE_TIMEOUT_S; the wrapper stops OpenCode a little sooner
-    return wrapper_argv("scout", "Reply exactly PONG.", allow_free=allow_free, timeout=LIVE_PROBE_TIMEOUT_S - 20)
+    return wrapper_argv("scout", "Reply exactly PONG.", allow_free=allow_free, timeout=LIVE_PROBE_TIMEOUT_S - 20,
+                        allowance_usd=allowance_usd)
 
 
-def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow_free: bool = False) -> dict[str, Any]:
+def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow_free: bool = False,
+                 opencode_allowance_usd: float | None = None) -> dict[str, Any]:
     usage = shutil.disk_usage(repo)
     gate = resource_gate(
         disk_free_gb=usage.free / (1024**3),
@@ -301,9 +306,9 @@ def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow
     )
     effective_live = live and gate["launch_allowed"]
     try:
-        opencode_command, opencode_live = opencode_probe_command(allow_free), effective_live
+        opencode_command, opencode_live = opencode_probe_command(allow_free, opencode_allowance_usd), effective_live
     except ValueError:  # no resolvable route: never fall back to an unpinned live call
-        opencode_command, opencode_live = ["opencode", "run", "(refused: no pinned route)"], False
+        opencode_command, opencode_live = ["opencode", "run", "(refused: no route or paid allowance)"], False
     probes = {
         "claude-max": _probe_claude(effective_live),
         "openai-codex-max": _probe_codex(effective_live, repo, codex_model),
@@ -344,13 +349,15 @@ def main() -> int:
     parser.add_argument("--repo", default=str(ROOT))
     parser.add_argument("--codex-model", default="gpt-5.6-terra")
     parser.add_argument("--live", action="store_true")
+    parser.add_argument("--opencode-allowance-usd", type=float, default=None,
+                        help="explicit ledger allowance for paid OpenCode probe; actual usage requires reconciliation")
     parser.add_argument("--allow-free", action="store_true",
                         help="pin the OpenCode probe to a free opencode/* model (outside the ZDR gateway key)")
     parser.add_argument("--output", default=None)
     args = parser.parse_args()
     machine = args.machine or detect_machine()
     report = build_report(machine=machine, live=args.live, repo=args.repo, codex_model=args.codex_model,
-                          allow_free=args.allow_free)
+                          allow_free=args.allow_free, opencode_allowance_usd=args.opencode_allowance_usd)
     output = Path(args.output) if args.output else ROOT / "fleet" / "reports" / "cli-capacity" / f"{machine}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2), encoding="utf-8")

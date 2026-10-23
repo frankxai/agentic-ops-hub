@@ -35,12 +35,19 @@ class CliCapacityTests(unittest.TestCase):
         self.assertEqual([], gate["blockers"])
 
     def test_opencode_live_probe_is_pinned_and_never_ambient(self) -> None:
-        command = cli_capacity.opencode_probe_command()
+        command = cli_capacity.opencode_probe_command(allowance_usd=0.01)
         self.assertEqual(command[0], "python")
         self.assertEqual(command[command.index("--class") + 1], "scout")
         self.assertNotIn("--allow-free", command)
         free = cli_capacity.opencode_probe_command(allow_free=True)
         self.assertIn("--allow-free", free)
+
+    def test_paid_opencode_probe_refuses_without_explicit_allowance(self):
+        for bad in (None, 0, -1, float("nan"), float("inf"), True):
+            with self.assertRaisesRegex(ValueError, "allowance"):
+                cli_capacity.opencode_probe_command(allowance_usd=bad)
+        argv = cli_capacity.opencode_probe_command(allowance_usd=0.01)
+        self.assertEqual(argv[argv.index("--allowance-usd") + 1], "0.01")
 
 
 if __name__ == "__main__":

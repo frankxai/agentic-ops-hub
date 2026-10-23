@@ -27,6 +27,13 @@ gateway key). A person typing `opencode` directly uses their own config and is o
 `small_model` and `model` are pinned in the same file; the effective small_model value could
 not be read back without a model call, so that part rests on the provider restriction plus the
 file precedence shown above, not on a direct read.
+
+Paid launches also require a positive allowance admitted atomically by the routing ledger.
+An allowance is headroom held against that ledger, NOT a provider-enforced spending ceiling.
+A free primary has only the OpenCode provider enabled, with the paid gateway disabled.
+OpenCode can make several model calls. Until measured provider usage is reconciled by the
+caller, its hold remains unresolved even when the process exits successfully. Never infer
+zero cost from an exit code or refund an interrupted run merely because it timed out.
 """
 from __future__ import annotations
 
@@ -109,9 +116,11 @@ def build_launch_config(model_ref: str, *, allow_free: bool, provider_block: Map
         "small_model": model,
         "provider": {GATEWAY_PROVIDER: copy.deepcopy(dict(provider_block))},
     }
-    if allow_free:
-        # Outside the ZDR gateway guarantee: opencode/*-free models run on OpenCode's own endpoint.
-        config["enabled_providers"] = [GATEWAY_PROVIDER, "opencode"]
+    if allow_free and model.startswith("opencode/"):
+        # A zero-allowance primary may not fall back to a paid provider in side calls.
+        config["provider"] = {}
+        config["enabled_providers"] = ["opencode"]
+        config["disabled_providers"] = [GATEWAY_PROVIDER, "omniroute"]
     else:
         config["enabled_providers"] = [GATEWAY_PROVIDER]
         config["disabled_providers"] = list(DISABLED_PROVIDERS)
@@ -170,7 +179,8 @@ def opencode_argv(model_ref: str, task: str, binary: str = "opencode") -> list[s
     return [binary, "run", "--standalone", "-m", model_ref, "--", task]  # `--`: task text is never an option
 
 
-def wrapper_argv(route_class: str, task: str, *, allow_free: bool = False, timeout: float | None = None) -> list[str]:
+def wrapper_argv(route_class: str, task: str, *, allow_free: bool = False, timeout: float | None = None,
+                 allowance_usd: float | None = None) -> list[str]:
     """A self-contained command: a manifest or night runner can run it without knowing the config.
     A consumer that has its own deadline passes it as `timeout` (a little under its own), so the
     wrapper ends the OpenCode tree itself before the consumer's timeout kills the wrapper."""
@@ -179,6 +189,8 @@ def wrapper_argv(route_class: str, task: str, *, allow_free: bool = False, timeo
         argv.append("--allow-free")
     if timeout:
         argv += ["--timeout", str(max(1, int(timeout)))]
+    if allowance_usd is not None:
+        argv += ["--allowance-usd", str(allowance_usd)]
     return argv + ["--", task]
 
 
@@ -288,18 +300,34 @@ def supervised_run(argv: list[str], env: Mapping[str, str] | None = None, timeou
 
 def run(route_class: str, task: str, *, allow_free: bool = False, env: Mapping[str, str] | None = None,
         config_path: Path | None = None, binary: str | None = None, timeout: float | None = None,
+        allowance_usd: float | None = None, on_admission: Callable[[dict], None] | None = None,
         runner: Callable[..., Any] = supervised_run) -> int:
     try:
         from fleet.token_planner import pinned_opencode_model
     except ImportError:  # executed as a script from the fleet directory
         from token_planner import pinned_opencode_model  # type: ignore[no-redef]
+    try:
+        from fleet import route_executor
+    except ImportError:
+        import route_executor  # type: ignore[no-redef]
     model_ref = pinned_opencode_model(route_class, allow_free=allow_free)  # raises PlannerError when unresolved
-    key = gateway_key(env, config_path)
+    key = gateway_key(env, config_path) if _base_model(model_ref).startswith(GATEWAY_PROVIDER + "/") else None
     config = build_launch_config(model_ref, allow_free=allow_free, provider_block=gateway_provider_block())
     exe = binary or resolve_opencode()
     extra = {"timeout": timeout} if timeout else {}
     with launch_dir(config) as directory:
-        result = runner(opencode_argv(model_ref, task, exe), env=launch_env(directory, env, key), **extra)
+        admission = route_executor.reserve(route_class, _base_model(model_ref), allowance_usd, allow_free=allow_free)
+        entered_runner = False
+        try:
+            if on_admission is not None:
+                on_admission({**admission, "usage_state": "unresolved" if admission["reservation_id"] else "unmetered-free"})
+            child_env = launch_env(directory, env, key)
+            argv = opencode_argv(model_ref, task, exe)
+            entered_runner = True
+            result = runner(argv, env=child_env, **extra)
+        finally:
+            if not entered_runner and admission["reservation_id"]:
+                route_executor.release_reservation(admission["reservation_id"], "launch failed before process runner entry")
     return int(getattr(result, "returncode", 0) or 0)
 
 
@@ -309,6 +337,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--allow-free", action="store_true",
                     help="also allow opencode/*-free models (outside the ZDR gateway guarantee)")
     ap.add_argument("--timeout", type=float, default=None, help="seconds; the whole OpenCode process tree is killed")
+    ap.add_argument("--allowance-usd", type=float, default=None,
+                    help="positive ledger allowance for paid execution; not a provider spending cap; usage remains unresolved")
     ap.add_argument("task", nargs=argparse.REMAINDER)
     args = ap.parse_args(argv)
     task = " ".join(a for a in args.task if a != "--").strip()
@@ -316,7 +346,9 @@ def main(argv: list[str] | None = None) -> int:
         print("error: no task given", file=sys.stderr)
         return 2
     try:
-        return run(args.route_class, task, allow_free=args.allow_free, timeout=args.timeout)
+        return run(args.route_class, task, allow_free=args.allow_free, timeout=args.timeout,
+                   allowance_usd=args.allowance_usd,
+                   on_admission=lambda status: print(json.dumps({"event": "admitted", **status}), file=sys.stderr))
     except ValueError as exc:  # LaunchError and PlannerError are both ValueError
         print(f"refused: {exc}", file=sys.stderr)
         return 2
