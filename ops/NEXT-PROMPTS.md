@@ -9,6 +9,7 @@ feature in a hold repository, waits unless the plan lets the drain owner do it, 
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [execution-service-20261023](handovers/execution-service-20261023.md) | Review demonstrated execution service, then close live maker and usage gates | unassigned | open; real development MCP endpoint and deterministic estate proof; live makers remain off |
 | [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [claude-queen-second-identity-20261014](handovers/claude-queen-second-identity-20261014.md) | Queen: create the second identity, then make one accepted recoverable task | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |

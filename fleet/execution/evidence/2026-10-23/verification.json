@@ -1,0 +1,30 @@
+{
+  "schema": "starlight.execution-verification.v1",
+  "task_id": "4af8cc56-cc88-4221-b58e-67b3d5a481a4",
+  "repository": "frankxai/agentic-ops-hub",
+  "revision": "9f5999f18b9e1ec6a181b70d8b2b3ce080ded11f",
+  "contract_id": "0527a67f8cc410630f0937375766712a2be09644d367edccd913e53f6c1e5764",
+  "kernel_summary": {
+    "state": "accepted",
+    "attempts": 1,
+    "contractId": "0527a67f8cc410630f0937375766712a2be09644d367edccd913e53f6c1e5764",
+    "verdict": "accept",
+    "receiptId": "0dfdeff4d972f6ef9783910a"
+  },
+  "kernel_check": {
+    "taskId": "4af8cc56-cc88-4221-b58e-67b3d5a481a4",
+    "receiptId": "0dfdeff4d972f6ef9783910a",
+    "isolation": "process",
+    "valid": true,
+    "reasons": []
+  },
+  "public_key_verification": {
+    "valid": true,
+    "reasons": []
+  },
+  "verification_kind": "deterministic-estate-fixture",
+  "independent_model_review": false,
+  "model_calls": 0,
+  "model_cost_microusd": 0,
+  "infrastructure_cost_microusd": null
+}

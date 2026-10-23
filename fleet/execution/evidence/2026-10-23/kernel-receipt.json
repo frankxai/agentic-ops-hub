@@ -1,0 +1,27 @@
+{
+  "schema": "starlight.receipt.v1",
+  "issuedAt": "2026-10-23T01:36:58.589Z",
+  "taskId": "4af8cc56-cc88-4221-b58e-67b3d5a481a4",
+  "verdict": "accept",
+  "artifactSha": "8cc87ad408e7f0e74ad9e48ddb79420dc622ace9",
+  "targetSha": "9f5999f18b9e1ec6a181b70d8b2b3ce080ded11f",
+  "contractId": "0527a67f8cc410630f0937375766712a2be09644d367edccd913e53f6c1e5764",
+  "evaluatorVersion": "kernel-eval-1",
+  "policyVersion": "p-43bd93b231c4",
+  "maker": "shell:/workspace/scratch/25749ae4333b/execution-service/fleet/execution/fixtures/lab-portability-maker.mjs",
+  "grader": "shell:/workspace/scratch/25749ae4333b/execution-service/fleet/execution/fixtures/lab-portability-checker.mjs",
+  "evidence": {
+    "testsPassed": true,
+    "violations": [],
+    "review": {
+      "verdict": "accept",
+      "findings": [
+        "Only the expected test guard moved; protected suite is the behavioral judge"
+      ]
+    },
+    "isolation": "process",
+    "files": []
+  },
+  "keyId": "03aef5c97e8f15d1",
+  "signature": "JzLy33DUzwtTQmwNkPF6g0GsUGJvTGgtAF+NG2GZhDiBiZXNscrTQU4iY28Bjna8v/31Y8PpfXnuoh/3jnTHDQ=="
+}

@@ -1,0 +1,20 @@
+name: Execution candidate
+on:
+  pull_request:
+    paths: ['fleet/execution/**', '.github/workflows/execution-candidate.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24.19.0'
+      - run: npm ci --ignore-scripts
+        working-directory: fleet/execution/cloudflare
+      - run: node fleet/execution/verify.mjs
