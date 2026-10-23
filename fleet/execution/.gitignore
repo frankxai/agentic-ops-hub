@@ -1,0 +1,7 @@
+.wrangler/
+.dev.vars
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+operator-config.json
+presets.local.json

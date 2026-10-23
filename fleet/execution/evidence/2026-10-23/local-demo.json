@@ -1,0 +1,124 @@
+{
+  "schema": "starlight.execution-demo.v1",
+  "task": "actual estate lab portability repair",
+  "source_revision": "9f5999f18b9e1ec6a181b70d8b2b3ce080ded11f",
+  "kernel_revision": "c69e582f61b25cbb92791aa8acedef0dfcf29b21",
+  "protocol": "2025-03-26",
+  "mcp_tools": [
+    "submit_task",
+    "get_run",
+    "cancel_run",
+    "get_artifacts",
+    "get_eval_report"
+  ],
+  "execution": {
+    "claimed": true,
+    "run_id": "c97aff81-e8e6-4e7b-a450-89b23b9b1246",
+    "status": "succeeded",
+    "usage_known": true
+  },
+  "run": {
+    "run": {
+      "idempotency_key": "estate-lab-portability-v1",
+      "repository": "frankxai/agentic-ops-hub",
+      "revision": "9f5999f18b9e1ec6a181b70d8b2b3ce080ded11f",
+      "task_kind": "lab-portability",
+      "prompt": "",
+      "allowance_microusd": 1,
+      "deadline_seconds": 300,
+      "id": "c97aff81-e8e6-4e7b-a450-89b23b9b1246",
+      "tenant_id": "starlight-demo",
+      "status": "succeeded",
+      "created_at": 1792718783358,
+      "updated_at": 1792718788544,
+      "deadline_at": 1792719083358,
+      "held_microusd": 0,
+      "actual_cost_microusd": 0,
+      "artifacts": [
+        {
+          "name": "candidate.patch",
+          "sha256": "eb60f35bf32c335fd648666b3c4b2f880a54557929ee40e9ffa512cbe08c885f",
+          "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/candidate.patch"
+        },
+        {
+          "name": "kernel-receipt.json",
+          "sha256": "64626dfa7f5abee57e9ae06b53279ce67902e785ca937b771fa74eee5490c9bf",
+          "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/kernel-receipt.json"
+        },
+        {
+          "name": "public-key.pem",
+          "sha256": "a57a5c74b6beca247641d8a69333117ec7d25929890f1599105660b4ad1e7947",
+          "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/public-key.pem"
+        },
+        {
+          "name": "verification.json",
+          "sha256": "10a485016584e6810a7da0d438323262043dcc85acb425c116bbb16393566404",
+          "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/verification.json"
+        }
+      ],
+      "verification": {
+        "passed": true,
+        "actor": "deterministic-protected-checks",
+        "maker": "deterministic-estate-repair",
+        "evidence_sha256": "10a485016584e6810a7da0d438323262043dcc85acb425c116bbb16393566404"
+      },
+      "provenance": "worker-self-asserted",
+      "worker_id": "local-estate-fixture",
+      "receipt_sha256": "64626dfa7f5abee57e9ae06b53279ce67902e785ca937b771fa74eee5490c9bf",
+      "completion_status": "succeeded",
+      "completion_was_late": false,
+      "over_allowance": false,
+      "over_budget": false
+    }
+  },
+  "artifacts": {
+    "run_id": "c97aff81-e8e6-4e7b-a450-89b23b9b1246",
+    "status": "succeeded",
+    "accepted": true,
+    "artifacts": [
+      {
+        "name": "candidate.patch",
+        "sha256": "eb60f35bf32c335fd648666b3c4b2f880a54557929ee40e9ffa512cbe08c885f",
+        "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/candidate.patch"
+      },
+      {
+        "name": "kernel-receipt.json",
+        "sha256": "64626dfa7f5abee57e9ae06b53279ce67902e785ca937b771fa74eee5490c9bf",
+        "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/kernel-receipt.json"
+      },
+      {
+        "name": "public-key.pem",
+        "sha256": "a57a5c74b6beca247641d8a69333117ec7d25929890f1599105660b4ad1e7947",
+        "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/public-key.pem"
+      },
+      {
+        "name": "verification.json",
+        "sha256": "10a485016584e6810a7da0d438323262043dcc85acb425c116bbb16393566404",
+        "ref": "artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246/verification.json"
+      }
+    ],
+    "provenance": "worker-self-asserted"
+  },
+  "evaluation": {
+    "run_id": "c97aff81-e8e6-4e7b-a450-89b23b9b1246",
+    "status": "succeeded",
+    "verification": {
+      "passed": true,
+      "actor": "deterministic-protected-checks",
+      "maker": "deterministic-estate-repair",
+      "evidence_sha256": "10a485016584e6810a7da0d438323262043dcc85acb425c116bbb16393566404"
+    },
+    "actual_cost_microusd": 0,
+    "held_microusd": 0,
+    "receipt_sha256": "64626dfa7f5abee57e9ae06b53279ce67902e785ca937b771fa74eee5490c9bf",
+    "provenance": "worker-self-asserted"
+  },
+  "runtime_restart_before_execution": true,
+  "duplicate_submission_same_run": true,
+  "verification_kind": "deterministic-estate-fixture",
+  "independent_model_review": false,
+  "model_calls": 0,
+  "measured_model_cost_microusd": 0,
+  "infrastructure_cost_microusd": null,
+  "artifact_directory": "/tmp/starlight-execution-demo-K9Qkzn/artifacts/c97aff81-e8e6-4e7b-a450-89b23b9b1246"
+}

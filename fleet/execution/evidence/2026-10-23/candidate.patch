@@ -1,0 +1,20 @@
+diff --git a/tests/test_receipt_bridge.py b/tests/test_receipt_bridge.py
+index 2c6512b..ec8d142 100644
+--- a/tests/test_receipt_bridge.py
++++ b/tests/test_receipt_bridge.py
+@@ -239,7 +239,6 @@ class IdentityAndBindingTests(unittest.TestCase):
+             self.assertTrue(bridge.accepted(r))
+ 
+ 
+-@unittest.skipUnless((SIS / "protocol" / "run-receipt.v1.schema.json").exists(), "SIS checkout not present")
+ class SemanticInvariantTests(unittest.TestCase):
+     """Codex pass 2 of PR 379: accepted() must enforce the SIS checks JSON Schema cannot express."""
+ 
+@@ -299,6 +298,7 @@ class SemanticInvariantTests(unittest.TestCase):
+         self.assertEqual(bridge.semantic_problems(build([call(0), call(1, ts="2026-10-21T10:00:12+00:00")])), [])
+ 
+ 
++@unittest.skipUnless((SIS / "protocol" / "run-receipt.v1.schema.json").exists(), "SIS checkout not present")
+ class ConformanceTests(unittest.TestCase):
+     def test_vendored_schema_matches_sis(self):
+         self.assertEqual(VENDORED.read_bytes(), (SIS / "protocol" / "run-receipt.v1.schema.json").read_bytes())

@@ -1,0 +1,57 @@
+{
+  "schema": "starlight.live-fault-probes.v1",
+  "endpoint": "https://starlight-execution-dev.frankxai.workers.dev",
+  "cases": [
+    {
+      "name": "client cannot claim execution",
+      "passed": true
+    },
+    {
+      "name": "worker cannot submit client work",
+      "passed": true
+    },
+    {
+      "name": "task cannot expand command authority",
+      "passed": true
+    },
+    {
+      "name": "submission replay same run",
+      "passed": true
+    },
+    {
+      "name": "exhausted budget refuses admission",
+      "passed": true
+    },
+    {
+      "name": "conflicting idempotency reuse refused",
+      "passed": true
+    },
+    {
+      "name": "queued cancellation releases allowance",
+      "passed": true
+    },
+    {
+      "name": "concurrent admission has one winner",
+      "passed": true
+    },
+    {
+      "name": "client views omit lease credentials",
+      "passed": true
+    },
+    {
+      "name": "unknown usage remains reserved",
+      "passed": true
+    },
+    {
+      "name": "cancellation survives later known-zero reconciliation",
+      "passed": true
+    },
+    {
+      "name": "reconciliation replay idempotent",
+      "passed": true
+    }
+  ],
+  "model_calls": 0,
+  "verification_kind": "development-infrastructure-probes",
+  "infrastructure_cost_microusd": null
+}

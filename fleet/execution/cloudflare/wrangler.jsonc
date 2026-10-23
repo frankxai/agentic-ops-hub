@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "starlight-execution-dev",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-10-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "send_metrics": false,
+  "durable_objects": {"bindings": [{"name": "EXECUTION", "class_name": "ExecutionCoordinator"}]},
+  "migrations": [{"tag": "execution-v1", "new_sqlite_classes": ["ExecutionCoordinator"]}],
+  "vars": {
+    "TENANT_ID": "starlight-development",
+    "ALLOWED_REPOSITORIES_JSON": "[\"frankxai/agentic-ops-hub\"]",
+    "ALLOWED_TASK_KINDS_JSON": "[\"lab-portability\"]",
+    "BUDGET_MICROUSD": "1"
+  },
+  "observability": {"enabled": false},
+  "limits": {"cpu_ms": 10}
+}
