@@ -167,12 +167,23 @@ class TokenPlannerTests(unittest.TestCase):
         self.assertTrue(pinned_opencode_model("scout", allow_free=True).startswith("opencode/"))
         self.assertTrue(pinned_opencode_model("scout").startswith("vercel/"))
 
+    def test_paid_opencode_requires_separate_explicit_run_allowance(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "code"
+        for bad in (None, 0, -1, float("nan"), float("inf"), True):
+            mission["run_allowance_usd"] = bad
+            with self.assertRaisesRegex(PlannerError, "run_allowance_usd"):
+                self.planner.command_args(mission)
+        mission["run_allowance_usd"] = 0.1
+        argv = self.planner.command_args(mission)
+        self.assertEqual(argv[argv.index("--allowance-usd") + 1], "0.1")
+
     def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md", receipt="C:/reports/n1.json"):
         return {
             "id": "N1", "agent": agent,
             "model": "sonnet" if agent == "claude" else "gpt-5.6-terra",
             "repo": "C:/repo", "branch": "night/2026-07-17-test",
-            "budget_usd": budget, "max_turns": 20, "timeout_minutes": 60,
+            "budget_usd": budget, "run_allowance_usd": 0.01, "max_turns": 20, "timeout_minutes": 60,
             "task": "Fix backend safely", "why": "fit", "report": report,
             "receipt": receipt, "acceptance_commands": ["python -m unittest discover -v"],
         }

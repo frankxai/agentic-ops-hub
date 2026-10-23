@@ -193,7 +193,12 @@ class Planner:
         if agent == "opencode":
             # Resolve (and so refuse) here, then hand back a self-contained command: the wrapper builds the
             # provider-restricted launch config and runs `opencode run --standalone` under it.
-            pinned_opencode_model(mission.get("route_class"), allow_free=self.allow_free)
+            pinned = pinned_opencode_model(mission.get("route_class"), allow_free=self.allow_free)
+            allowance = mission.get("run_allowance_usd")
+            if pinned.startswith("vercel/") and (isinstance(allowance, bool) or
+                    not isinstance(allowance, (int, float)) or not 0 < allowance < float("inf")):
+                raise PlannerError("paid opencode mission needs a positive run_allowance_usd; "
+                                   "the wrapper reserves it and leaves unknown usage unresolved")
             try:
                 from fleet.opencode_launch import wrapper_argv
             except ImportError:  # run as a script from the fleet directory
@@ -202,7 +207,7 @@ class Planner:
             # OpenCode tree itself before the runner's timeout kills the wrapper.
             outer = int(mission.get("timeout_minutes", 60)) * 60
             return wrapper_argv(mission["route_class"], task, allow_free=self.allow_free,
-                                timeout=max(1, outer - OPENCODE_WRAPPER_MARGIN_S))
+                                timeout=max(1, outer - OPENCODE_WRAPPER_MARGIN_S), allowance_usd=allowance)
         if agent == "gemini":
             return ["gemini", "-p", task]
         raise PlannerError(f"agent {agent!r} has no unattended launcher")

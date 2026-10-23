@@ -7,6 +7,8 @@ import time
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
+from unittest.mock import patch
+from fleet import route_executor as router
 
 from fleet import opencode_launch
 from fleet.token_planner import PlannerError
@@ -22,6 +24,15 @@ def global_config(tmp: Path, *, key=KEY_FILE_VALUE, hostile=True) -> Path:
     path = tmp / "opencode.json"
     path.write_text(json.dumps(cfg), encoding="utf-8")
     return path
+
+
+class IsolatedLedger(unittest.TestCase):
+    def setUp(self):
+        self.ledger_tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.ledger_tmp.cleanup)
+        env = patch.dict(os.environ, {"STARLIGHT_RECEIPTS_DIR": self.ledger_tmp.name})
+        env.start()
+        self.addCleanup(env.stop)
 
 
 class LaunchConfigTests(unittest.TestCase):
@@ -40,10 +51,18 @@ class LaunchConfigTests(unittest.TestCase):
         with self.assertRaises(opencode_launch.LaunchError):
             opencode_launch.build_launch_config("opencode/beam-free", allow_free=False, provider_block=self.block())
 
-    def test_allow_free_config_enables_opencode_and_disables_nothing(self):
+    def test_free_primary_config_cannot_make_paid_gateway_side_calls(self):
         cfg = opencode_launch.build_launch_config("opencode/beam-free", allow_free=True, provider_block=self.block())
-        self.assertEqual(cfg["enabled_providers"], ["vercel", "opencode"])
-        self.assertNotIn("disabled_providers", cfg)
+        self.assertEqual(cfg["enabled_providers"], ["opencode"])
+        self.assertIn("vercel", cfg["disabled_providers"])
+        self.assertEqual(cfg["provider"], {})
+
+    def test_paid_primary_stays_gateway_only_even_with_free_opt_in(self):
+        cfg = opencode_launch.build_launch_config("vercel/zai/glm-5.3#medium", allow_free=True,
+                                                  provider_block=self.block())
+        self.assertEqual(cfg["enabled_providers"], ["vercel"])
+        self.assertIn("opencode", cfg["disabled_providers"])
+        self.assertIn("omniroute", cfg["disabled_providers"])
 
     def test_argv_is_standalone_and_keeps_the_variant_inside_dash_m(self):
         argv = opencode_launch.opencode_argv("vercel/zai/glm-5.3#medium", "do it", "oc")
@@ -102,7 +121,7 @@ class BinaryResolutionTests(unittest.TestCase):
         self.assertEqual(opencode_launch.resolve_opencode("/usr/bin/opencode", windows=False), "/usr/bin/opencode")
 
 
-class ShellInjectionTests(unittest.TestCase):
+class ShellInjectionTests(IsolatedLedger):
     TASK = 'x" & echo MARKER & rem "'
 
     def test_task_with_cmd_metacharacters_reaches_the_child_as_one_literal_argument(self):
@@ -121,12 +140,12 @@ class ShellInjectionTests(unittest.TestCase):
             return SimpleNamespace(returncode=0)
 
         opencode_launch.run("scout", self.TASK, env={"AI_GATEWAY_API_KEY": "x"}, binary="C:/bin/opencode.exe",
-                            runner=fake_runner)
+                            allowance_usd=0.01, runner=fake_runner)
         self.assertEqual(seen["argv"][0], "C:/bin/opencode.exe")
         self.assertEqual(seen["argv"][-2:], ["--", self.TASK])
 
 
-class SupervisionTests(unittest.TestCase):
+class SupervisionTests(IsolatedLedger):
     def test_timeout_kills_the_child_and_its_descendant(self):
         with tempfile.TemporaryDirectory() as tmp:
             marker = Path(tmp) / "alive.txt"
@@ -184,7 +203,7 @@ class SupervisionTests(unittest.TestCase):
             raise subprocess.TimeoutExpired(argv, timeout)
 
         with self.assertRaises(subprocess.TimeoutExpired):
-            opencode_launch.run("scout", "t", env={"AI_GATEWAY_API_KEY": "x"}, binary="oc", timeout=1, runner=slow)
+            opencode_launch.run("scout", "t", env={"AI_GATEWAY_API_KEY": "x"}, binary="oc", timeout=1, allowance_usd=0.01, runner=slow)
         self.assertFalse(holder["dir"].exists())
 
     def test_global_file_key_goes_to_the_child_environment_never_to_disk(self):
@@ -197,12 +216,12 @@ class SupervisionTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmp:
             opencode_launch.run("scout", "t", env={}, config_path=global_config(Path(tmp)), binary="oc",
-                                runner=fake_runner)
+                                allowance_usd=0.01, runner=fake_runner)
         self.assertEqual(seen["env"]["AI_GATEWAY_API_KEY"], KEY_FILE_VALUE)
         self.assertNotIn(KEY_FILE_VALUE, seen["text"])
 
 
-class RunTests(unittest.TestCase):
+class RunTests(IsolatedLedger):
     def run_launch(self, route_class="scout", allow_free=False):
         seen = {}
 
@@ -214,7 +233,7 @@ class RunTests(unittest.TestCase):
             return SimpleNamespace(returncode=0)
 
         base = {"AI_GATEWAY_API_KEY": "x", "OPENCODE_CONFIG": "hostile.json", "OPENCODE_CONFIG_CONTENT": "{}"}
-        code = opencode_launch.run(route_class, "task", allow_free=allow_free, env=base, binary="oc", runner=fake_runner)
+        code = opencode_launch.run(route_class, "task", allow_free=allow_free, env=base, binary="oc", allowance_usd=None if allow_free else 0.01, runner=fake_runner)
         return code, seen
 
     def test_launch_sets_the_config_dir_strips_overrides_and_cleans_up(self):
@@ -237,7 +256,7 @@ class RunTests(unittest.TestCase):
             raise RuntimeError("crash")
 
         with self.assertRaises(RuntimeError):
-            opencode_launch.run("scout", "t", env={"AI_GATEWAY_API_KEY": "x"}, binary="oc", runner=boom)
+            opencode_launch.run("scout", "t", env={"AI_GATEWAY_API_KEY": "x"}, binary="oc", allowance_usd=0.01, runner=boom)
         self.assertFalse(holder["dir"].exists())
 
     def test_generated_file_holds_no_secret_when_the_key_comes_from_env(self):
@@ -277,6 +296,98 @@ class RunTests(unittest.TestCase):
                 os.close(os.open(directory / "opencode.json", os.O_WRONLY | os.O_CREAT | os.O_EXCL))
 
 
+class PaidAdmissionTests(IsolatedLedger):
+    def launch(self, **kw):
+        options = dict(env={"AI_GATEWAY_API_KEY": "synthetic-key"}, binary="oc", allowance_usd=0.01,
+                       runner=lambda *a, **k: SimpleNamespace(returncode=0))
+        options.update(kw)
+        return opencode_launch.run("scout", "test fixture", **options)
+
+    def test_missing_or_invalid_allowance_refuses_before_runner(self):
+        called = []
+        for bad in (None, 0, -1, float("inf"), float("nan"), True):
+            with self.assertRaises(ValueError):
+                self.launch(allowance_usd=bad, runner=lambda *a, **k: called.append(True))
+        self.assertEqual(called, [])
+        self.assertEqual(router.reservations(), [])
+
+    def test_allowance_over_class_ceiling_refuses_before_runner(self):
+        called = []
+        with self.assertRaises(router.BudgetError):
+            self.launch(allowance_usd=1, runner=lambda *a, **k: called.append(True))
+        self.assertEqual(called, [])
+
+    def test_exhausted_monthly_ledger_cannot_launch(self):
+        from datetime import datetime, timezone
+        ledger = Path(self.ledger_tmp.name) / "routing.jsonl"
+        ledger.write_text(json.dumps({"ts": datetime.now(timezone.utc).isoformat(), "cost_usd": 80,
+                                      "used": GATEWAY, "pool": "token-pass"}) + "\n")
+        called = []
+        with self.assertRaises(router.BudgetError):
+            self.launch(runner=lambda *a, **k: called.append(True))
+        self.assertEqual(called, [])
+
+    def test_two_concurrent_launches_cannot_reserve_the_same_headroom(self):
+        import copy
+        from concurrent.futures import ThreadPoolExecutor
+        schema = copy.deepcopy(router.load_schema())
+        schema["token_pass"]["hard_cap_usd"] = 0.01
+        called = []
+        def launch_one(_):
+            try:
+                self.launch(runner=lambda *a, **k: (called.append(True) or SimpleNamespace(returncode=0)))
+                return "launched"
+            except router.BudgetError:
+                return "refused"
+        with patch.object(router, "load_schema", return_value=schema):
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                results = list(pool.map(launch_one, range(2)))
+        self.assertCountEqual(results, ["launched", "refused"])
+        self.assertEqual(len(called), 1)
+        self.assertEqual(len(router.reservations()), 1)
+
+    def test_success_surfaces_unresolved_hold_without_a_fake_zero_receipt(self):
+        events = []
+        self.assertEqual(self.launch(on_admission=events.append), 0)
+        self.assertEqual(events[0]["usage_state"], "unresolved")
+        self.assertEqual(events[0]["held_usd"], 0.01)
+        self.assertEqual(router.reservations()[0]["id"], events[0]["reservation_id"])
+        self.assertFalse((Path(self.ledger_tmp.name) / "routing.jsonl").exists())
+        self.assertNotIn("synthetic-key", json.dumps(events))
+
+    def test_callback_failure_releases_the_hold_before_runner_entry(self):
+        called = []
+        def callback(_):
+            raise RuntimeError("cannot persist admission")
+        with self.assertRaises(RuntimeError):
+            self.launch(on_admission=callback, runner=lambda *a, **k: called.append(True))
+        self.assertEqual(called, [])
+        self.assertEqual(router.reservations(), [])
+
+    def test_missing_executable_refuses_before_reservation(self):
+        with patch.object(opencode_launch, "resolve_opencode", side_effect=opencode_launch.LaunchError("missing")):
+            with self.assertRaises(opencode_launch.LaunchError):
+                self.launch(binary=None)
+        self.assertEqual(router.reservations(), [])
+
+    def test_nonzero_timeout_and_runner_error_keep_unknown_usage_reserved(self):
+        runners = [lambda *a, **k: SimpleNamespace(returncode=1),
+                   lambda *a, **k: (_ for _ in ()).throw(subprocess.TimeoutExpired("oc", 1)),
+                   lambda *a, **k: (_ for _ in ()).throw(OSError("unknown launch outcome"))]
+        for runner in runners:
+            before = len(router.reservations())
+            try:
+                self.launch(runner=runner)
+            except (subprocess.TimeoutExpired, OSError):
+                pass
+            self.assertEqual(len(router.reservations()), before + 1)
+        self.assertFalse((Path(self.ledger_tmp.name) / "routing.jsonl").exists())
+
+    def test_explicit_free_route_does_not_require_paid_allowance(self):
+        self.assertEqual(self.launch(allow_free=True, allowance_usd=None, env={}), 0)
+        self.assertEqual(router.reservations(), [])
+
+
 class ConsumerDeadlineTests(unittest.TestCase):
     def test_wrapper_argv_carries_the_timeout_before_the_task(self):
         argv = opencode_launch.wrapper_argv("scout", "t", timeout=100.9)
@@ -286,7 +397,7 @@ class ConsumerDeadlineTests(unittest.TestCase):
 
     def test_capacity_probe_wrapper_deadline_is_shorter_than_the_outer_one(self):
         from scripts import cli_capacity
-        argv = cli_capacity.opencode_probe_command()
+        argv = cli_capacity.opencode_probe_command(allowance_usd=0.01)
         inner = int(argv[argv.index("--timeout") + 1])
         self.assertLess(inner, cli_capacity.LIVE_PROBE_TIMEOUT_S)
 
