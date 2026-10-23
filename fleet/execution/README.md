@@ -38,6 +38,8 @@ node fleet/execution/verify.mjs --demo \
 
 The demo creates an isolated temporary source clone, kernel home, private worker journal and persisted local Cloudflare database. It prints a report path. It writes a draft-publication packet but does not contact GitHub. It never reads a real model key. `actual_cost_microusd:0` in this fixture means no inference was invoked; infrastructure cost is unmeasured, not zero.
 
+`live-faults.mjs --credentials <private-json> --endpoint <development-url> --report <output.json>` runs the 12 development API fault probes. It never starts an executor. Do not point it at a production tenant or a tenant with real pending work; use the isolated development ledger. Live probes passed and their sanitized report is included in the evidence directory.
+
 ## Worker configuration
 
 Operator configuration is private JSON, passed as the single argument to `node fleet/execution/worker.mjs <config>`. Fields: `endpoint`, `presets`, `journal`, `worker_id`, `kernelRoot`, `kernelHome`, `kernelPolicy`, `artifactRoot`, and explicit `allowFixtures:true` for this demonstration. Set `EXECUTION_WORKER_TOKEN` in the worker environment. Neither worker nor client credentials belong in source or command arguments.
