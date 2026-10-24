@@ -34,6 +34,14 @@ class CliCapacityTests(unittest.TestCase):
         self.assertTrue(gate["launch_allowed"])
         self.assertEqual([], gate["blockers"])
 
+    def test_opencode_live_probe_is_pinned_and_never_ambient(self) -> None:
+        command = cli_capacity.opencode_probe_command()
+        self.assertEqual(command[0], "python")
+        self.assertEqual(command[command.index("--class") + 1], "scout")
+        self.assertNotIn("--allow-free", command)
+        free = cli_capacity.opencode_probe_command(allow_free=True)
+        self.assertIn("--allow-free", free)
+
 
 if __name__ == "__main__":
     unittest.main()

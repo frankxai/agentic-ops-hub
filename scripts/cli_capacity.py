@@ -24,6 +24,9 @@ if __package__ in {None, ""}:
 from scripts.fleet_bus import detect_machine
 
 
+LIVE_PROBE_TIMEOUT_S = 120
+
+
 def run(command: list[str], *, cwd: str | None = None, timeout: int = 90) -> tuple[int, str]:
     try:
         executable = shutil.which(command[0]) or command[0]
@@ -263,7 +266,7 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     live_detail = "not run"
     live_checked = live and installed and auth_declared
     if live_checked:
-        code, output = run(live_command, timeout=120)
+        code, output = run(live_command, timeout=LIVE_PROBE_TIMEOUT_S)
         live_ok = code == 0 and "PONG" in output.upper()
         live_detail = output[-500:]
     return {
@@ -281,21 +284,34 @@ def _probe_simple(binary: str, live: bool, live_command: list[str], auth_command
     }
 
 
-def build_report(*, machine: str, live: bool, repo: str, codex_model: str) -> dict[str, Any]:
+def opencode_probe_command(allow_free: bool = False) -> list[str]:
+    """The live OpenCode probe, pinned to the scout class route so ambient config cannot pick the model."""
+    from fleet.opencode_launch import wrapper_argv
+    from fleet.token_planner import pinned_opencode_model
+    pinned_opencode_model("scout", allow_free=allow_free)  # refuse here when the route cannot be resolved
+    # the probe's outer deadline is LIVE_PROBE_TIMEOUT_S; the wrapper stops OpenCode a little sooner
+    return wrapper_argv("scout", "Reply exactly PONG.", allow_free=allow_free, timeout=LIVE_PROBE_TIMEOUT_S - 20)
+
+
+def build_report(*, machine: str, live: bool, repo: str, codex_model: str, allow_free: bool = False) -> dict[str, Any]:
     usage = shutil.disk_usage(repo)
     gate = resource_gate(
         disk_free_gb=usage.free / (1024**3),
         memory_percent=memory_percent(),
     )
     effective_live = live and gate["launch_allowed"]
+    try:
+        opencode_command, opencode_live = opencode_probe_command(allow_free), effective_live
+    except ValueError:  # no resolvable route: never fall back to an unpinned live call
+        opencode_command, opencode_live = ["opencode", "run", "(refused: no pinned route)"], False
     probes = {
         "claude-max": _probe_claude(effective_live),
         "openai-codex-max": _probe_codex(effective_live, repo, codex_model),
         "gemini-ultra": _probe_gemini(effective_live),
         "opencode": _probe_simple(
             "opencode",
-            effective_live,
-            ["opencode", "run", "Reply exactly PONG."],
+            opencode_live,
+            opencode_command,
             ["opencode", "auth", "list"],
         ),
     }
@@ -328,10 +344,13 @@ def main() -> int:
     parser.add_argument("--repo", default=str(ROOT))
     parser.add_argument("--codex-model", default="gpt-5.6-terra")
     parser.add_argument("--live", action="store_true")
+    parser.add_argument("--allow-free", action="store_true",
+                        help="pin the OpenCode probe to a free opencode/* model (outside the ZDR gateway key)")
     parser.add_argument("--output", default=None)
     args = parser.parse_args()
     machine = args.machine or detect_machine()
-    report = build_report(machine=machine, live=args.live, repo=args.repo, codex_model=args.codex_model)
+    report = build_report(machine=machine, live=args.live, repo=args.repo, codex_model=args.codex_model,
+                          allow_free=args.allow_free)
     output = Path(args.output) if args.output else ROOT / "fleet" / "reports" / "cli-capacity" / f"{machine}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2), encoding="utf-8")

@@ -72,6 +72,7 @@ class TokenPlannerTests(unittest.TestCase):
     def test_no_launcher_emits_a_bypass_flag(self):
         for agent in ("claude", "codex", "opencode", "gemini"):
             mission = self._mission(agent=agent, budget=30)
+            mission["route_class"] = "code"
             task = self.planner._task_contract(mission)
             flags = [a.lower() for a in self.planner.command_args(mission) if a != task]
             for token in ("danger-full-access", "--dangerously-skip-permissions",
@@ -118,6 +119,54 @@ class TokenPlannerTests(unittest.TestCase):
             self.assertIn("incomplete", text)
             self.assertIn("Human review required", text)
 
+    def test_opencode_launch_is_pinned_to_the_gateway_model_for_its_class(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "scout"
+        args = self.planner.command_args(mission)
+        # The command is the launch wrapper: it builds the provider-restricted config, then runs
+        # `opencode run --standalone -m <pinned model>` (see tests/test_opencode_launch.py).
+        self.assertEqual(args[0], "python")
+        self.assertEqual(args[args.index("--class") + 1], "scout")
+        self.assertNotIn("--allow-free", args)
+        self.assertEqual(args[-2], "--")
+
+    def test_opencode_wrapper_deadline_is_shorter_than_the_runner_deadline(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "scout"
+        mission["timeout_minutes"] = 2
+        args = self.planner.command_args(mission)
+        inner = int(args[args.index("--timeout") + 1])
+        self.assertLess(inner, 2 * 60)
+        self.assertGreater(inner, 60)
+        self.assertLess(args.index("--timeout"), args.index("--"))
+
+    def test_opencode_launch_keeps_the_class_variant(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "code"
+        from fleet import opencode_launch
+        from fleet.token_planner import pinned_opencode_model
+        self.assertEqual(pinned_opencode_model("code"), "vercel/zai/glm-5.3#medium")
+        self.assertEqual(opencode_launch.opencode_argv("vercel/zai/glm-5.3#medium", "t", "oc")[3:5],
+                         ["-m", "vercel/zai/glm-5.3#medium"])
+
+    def test_opencode_launch_refuses_without_a_resolvable_class(self):
+        for bad in (None, "", "nonsense", 7):
+            mission = self._mission(agent="opencode", budget=30)
+            if bad is not None:
+                mission["route_class"] = bad
+            with self.assertRaisesRegex(PlannerError, "route_class|cannot resolve"):
+                self.planner.command_args(mission)
+
+    def test_allow_free_changes_the_pinned_model_only_when_asked(self):
+        mission = self._mission(agent="opencode", budget=30)
+        mission["route_class"] = "scout"
+        free = Planner(self.planner.config, allow_free=True).command_args(mission)
+        self.assertIn("--allow-free", free)
+        self.assertNotIn("--allow-free", self.planner.command_args(mission))
+        from fleet.token_planner import pinned_opencode_model
+        self.assertTrue(pinned_opencode_model("scout", allow_free=True).startswith("opencode/"))
+        self.assertTrue(pinned_opencode_model("scout").startswith("vercel/"))
+
     def _mission(self, agent="claude", budget=40, report="C:/reports/n1.md", receipt="C:/reports/n1.json"):
         return {
             "id": "N1", "agent": agent,
@@ -127,6 +176,35 @@ class TokenPlannerTests(unittest.TestCase):
             "task": "Fix backend safely", "why": "fit", "report": report,
             "receipt": receipt, "acceptance_commands": ["python -m unittest discover -v"],
         }
+
+
+class PinnedModelIgnoresFilteredPrimary(unittest.TestCase):
+    def test_excluded_raw_primary_is_never_pinned(self):
+        import json
+        from unittest.mock import patch
+        from fleet import route_executor
+        from fleet.token_planner import pinned_opencode_model
+
+        schema = json.loads(route_executor.SCHEMA_PATH.read_text(encoding="utf-8"))
+        schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
+        with patch.object(route_executor, "load_schema", return_value=schema):
+            pinned = pinned_opencode_model("code")
+            argv = ["opencode", "run", "--standalone", "-m", pinned, "task"]
+        self.assertNotIn("opencode/beam-free", " ".join(argv))
+        self.assertTrue(pinned.startswith("vercel/"), pinned)
+
+    def test_class_with_no_safe_model_refuses_to_launch(self):
+        import json
+        from unittest.mock import patch
+        from fleet import route_executor
+        from fleet.token_planner import pinned_opencode_model
+
+        schema = json.loads(route_executor.SCHEMA_PATH.read_text(encoding="utf-8"))
+        schema["task_classes"]["code"]["primary"] = "opencode/beam-free"
+        schema["task_classes"]["code"]["fallbacks"] = ["opencode/minimax-m3.1-flash-free"]
+        with patch.object(route_executor, "load_schema", return_value=schema):
+            with self.assertRaises(PlannerError):
+                pinned_opencode_model("code")
 
 
 if __name__ == "__main__":

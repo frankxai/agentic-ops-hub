@@ -1,0 +1,215 @@
+#!/usr/bin/env python3
+"""Weekly routing review: parse routing receipts, propose routing diffs.
+Writes fleet/routing-proposals/YYYY-MM-DD-<mode>.json (mode: strict-zdr or allow-free) for human approval.
+Never auto-commits (money/merges stay on the human's button).
+
+Receipts are read tolerantly: torn or malformed lines, unknown classes and
+non-finite numbers are skipped and counted, never fatal. Synthetic (test)
+receipts are ignored. A proposal must name a model that is already in the
+class's effective chain, and both models need a per-model sample floor.
+
+The review is for one mode. By default that is the strict mode (free opencode/*
+models are not routed); --allow-free reviews the opt-in free mode. The current
+primary and the allowed models come from route_executor.effective_route(), and
+receipts from the other mode are filtered out and counted, never compared.
+"""
+import argparse
+import json
+import math
+from collections import defaultdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+from route_executor import effective_route, receipts_dir
+
+HERE = Path(__file__).resolve().parent
+PROPOSALS = HERE / "routing-proposals"
+SCHEMA = HERE / "routing.schema.json"
+DEFAULT_MIN_SAMPLES = 20
+MAX_SANE_COST_USD = 1_000_000.0  # a single call above this is a corrupt receipt, not spend
+MAX_SANE_LATENCY_MS = 86_400_000  # one day; a longer single call is a corrupt receipt
+MIN_MODEL_SAMPLES = 5
+REQUIRED = ("ts", "task_class", "used", "success", "cost_usd", "latency_ms")
+
+
+def _well_typed(r: dict) -> bool:
+    """Keys are hashed and compared downstream, so a list or dict there is a
+    malformed receipt, not a crash."""
+    return (isinstance(r["task_class"], str) and isinstance(r["used"], str)
+            and isinstance(r["ts"], str) and isinstance(r["success"], bool))
+
+
+def load_receipts(path: Path | None = None, days: int = 7, now: datetime | None = None) -> tuple[list[dict], dict]:
+    path = path or receipts_dir() / "routing.jsonl"
+    skipped = {"malformed": 0, "incomplete": 0, "synthetic": 0, "non_finite": 0}
+    if not path.exists():
+        return [], skipped
+    now = now or datetime.now(timezone.utc)
+    cutoff = now.timestamp() - days * 86400
+    out = []
+    for line in path.read_bytes().decode("utf-8", errors="replace").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            r = json.loads(line)
+        except (ValueError, RecursionError):  # JSONDecodeError, int-conversion limit
+            skipped["malformed"] += 1
+            continue
+        if not isinstance(r, dict) or any(k not in r for k in REQUIRED):
+            skipped["incomplete"] += 1
+            continue
+        if r.get("synthetic"):
+            skipped["synthetic"] += 1
+            continue
+        if not _well_typed(r):
+            skipped["malformed"] += 1
+            continue
+        try:
+            ts = datetime.fromisoformat(r["ts"])
+            if ts.tzinfo is None:
+                ts = ts.replace(tzinfo=timezone.utc)
+            cost, latency = float(r["cost_usd"]), float(r["latency_ms"])
+        except (ValueError, TypeError, OverflowError):
+            skipped["malformed"] += 1
+            continue
+        if not (math.isfinite(cost) and math.isfinite(latency)):
+            skipped["non_finite"] += 1
+            continue
+        if not (0 <= cost <= MAX_SANE_COST_USD and 0 <= latency <= MAX_SANE_LATENCY_MS):
+            skipped["malformed"] += 1
+            continue
+        if "allow_free" in r and not isinstance(r["allow_free"], bool):
+            skipped["malformed"] += 1  # a string like "false" must not silently count as true
+            continue
+        if ts.timestamp() >= cutoff:
+            out.append({**r, "cost_usd": cost, "latency_ms": latency})
+    return out, skipped
+
+
+def in_mode(receipt: dict, schema: dict, allow_free: bool) -> bool:
+    """True when the receipt belongs to the reviewed mode. A receipt that records
+    allow_free must match it; one that does not (legacy) belongs to the mode only
+    if the model it used is in that mode's effective chain for its class."""
+    cls = receipt["task_class"]
+    if cls not in schema["task_classes"]:
+        return True  # unknown classes are dropped later by analyze, not counted as a mode mismatch
+    if "allow_free" in receipt and receipt["allow_free"] is not allow_free:
+        return False
+    return receipt["used"] in effective_route(schema, cls, allow_free=allow_free)["chain"]
+
+
+def filter_mode(receipts: list[dict], schema: dict, allow_free: bool = False) -> tuple[list[dict], int]:
+    kept = [r for r in receipts if in_mode(r, schema, allow_free)]
+    return kept, len(receipts) - len(kept)
+
+
+def analyze(receipts: list[dict], schema: dict) -> dict:
+    min_samples = schema.get("feedback_loop", {}).get("min_samples_per_class", DEFAULT_MIN_SAMPLES)
+    known = schema["task_classes"]
+    by_class = defaultdict(lambda: {"n": 0, "success": 0, "cost": 0.0, "latency": 0.0, "over": 0,
+                                    "models": defaultdict(lambda: {"n": 0, "success": 0, "cost": 0.0})})
+    for r in receipts:
+        if not isinstance(r["task_class"], str) or not isinstance(r["used"], str) \
+                or r["task_class"] not in known:
+            continue
+        c = by_class[r["task_class"]]
+        c["n"] += 1
+        c["success"] += int(bool(r["success"]))
+        c["cost"] += r["cost_usd"]
+        c["latency"] += r["latency_ms"]
+        c["over"] += int(bool(r.get("over_ceiling")))
+        m = c["models"][r["used"]]
+        m["n"] += 1
+        m["success"] += int(bool(r["success"]))
+        m["cost"] += r["cost_usd"]
+
+    result = {}
+    for cls, d in by_class.items():
+        models = {
+            m: {
+                "n": md["n"],
+                "success_rate": round(md["success"] / md["n"], 3),
+                "avg_cost_usd": round(md["cost"] / md["n"], 6),
+            }
+            for m, md in d["models"].items()
+        }
+        result[cls] = {
+            "samples": d["n"],
+            "success_rate": round(d["success"] / d["n"], 3),
+            "avg_cost_usd": round(d["cost"] / d["n"], 6),
+            "avg_latency_ms": round(d["latency"] / d["n"], 1),
+            "over_ceiling": d["over"],
+            "meets_min_samples": d["n"] >= min_samples,
+            "models": models,
+        }
+    return result
+
+
+def propose(analysis: dict, schema: dict, allow_free: bool = False) -> list[dict]:
+    """Conservative: propose a new primary only when both it and the current
+    primary have at least MIN_MODEL_SAMPLES, the target is already in the
+    class's effective chain for this mode, and it is clearly better."""
+    proposals = []
+    for cls, d in analysis.items():
+        if not d["meets_min_samples"]:
+            continue
+        route = effective_route(schema, cls, allow_free=allow_free)
+        current = route["primary"]
+        allowed = set(route["chain"])
+        cur = d["models"].get(current)
+        if not cur or cur["n"] < MIN_MODEL_SAMPLES:
+            continue
+        candidates = [
+            (m, s) for m, s in d["models"].items()
+            if m != current and m in allowed and s["n"] >= MIN_MODEL_SAMPLES
+        ]
+        if not candidates:
+            continue
+        best, bs = sorted(candidates, key=lambda kv: (-kv[1]["success_rate"], kv[1]["avg_cost_usd"]))[0]
+        if bs["success_rate"] > cur["success_rate"] + 0.02:
+            reason = f"success_rate {bs['success_rate']} vs {cur['success_rate']} (n={bs['n']} vs {cur['n']})"
+        elif (abs(bs["success_rate"] - cur["success_rate"]) < 0.02
+              and bs["avg_cost_usd"] < cur["avg_cost_usd"] * 0.8):
+            reason = f"equal success, lower cost ${bs['avg_cost_usd']} vs ${cur['avg_cost_usd']}"
+        else:
+            continue
+        proposals.append({"class": cls, "action": "reroute_primary", "from": current, "to": best, "reason": reason})
+    return proposals
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Weekly routing review.")
+    ap.add_argument("--allow-free", action="store_true", help="Review the opt-in free mode instead of the strict default")
+    args = ap.parse_args(argv)
+    PROPOSALS.mkdir(parents=True, exist_ok=True)
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    receipts, skipped = load_receipts()
+    receipts, other_mode = filter_mode(receipts, schema, args.allow_free)
+    skipped["other_mode"] = other_mode
+    analysis = analyze(receipts, schema)
+    proposals = propose(analysis, schema, args.allow_free)
+    now = datetime.now(timezone.utc)
+
+    report = {
+        "generated": now.isoformat(),
+        "window_days": 7,
+        "mode": "allow-free" if args.allow_free else "strict-zdr",
+        "receipt_count": len(receipts),
+        "skipped": skipped,
+        "analysis": analysis,
+        "proposals": proposals,
+        "note": "Proposals require human approval. Apply manually to routing.schema.json + regenerate OmO config. Never auto-commit.",
+    }
+    out_path = PROPOSALS / f"{now.date().isoformat()}-{report['mode']}.json"
+    out_path.write_text(json.dumps(report, indent=2, allow_nan=False), encoding="utf-8")
+    print(f"Wrote {out_path}")
+    print(f"Receipts: {len(receipts)}  Skipped: {sum(skipped.values())}  Classes analyzed: {len(analysis)}  Proposals: {len(proposals)}")
+    for p in proposals:
+        print(f"  PROPOSE: {p['class']}: {p['from']} -> {p['to']} ({p['reason']})")
+    if not proposals:
+        print("  No proposals (insufficient samples or current routing optimal).")
+
+
+if __name__ == "__main__":
+    main()
