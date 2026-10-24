@@ -602,7 +602,7 @@ def package_lock_change(path: str, base_text, head_text, name: str) -> set:
     return locked
 
 
-def _line_manifest_change(path: str, patch: str, name: str) -> tuple[str, str]:
+def _line_manifest_change(path: str, patch: Any, name: str) -> tuple[str, str]:
     base = _basename(path)
     pattern = LINE_MANIFEST["requirements" if base.startswith("requirements") else base]
     removed, added = _changed_lines(patch or "")
@@ -654,7 +654,7 @@ def dependency_verdict(snapshot: dict, dep_files: list[dict]) -> tuple[str, str]
                 locked |= package_lock_change(path, f.get("base_text"), f.get("head_text"), name)
                 continue
             elif base == "go.mod" or re.fullmatch(r"requirements[\w.-]*\.txt", base):
-                v = _line_manifest_change(path, f.get("patch") or "", name)
+                v = _line_manifest_change(path, f.get("patch"), name)
             else:
                 raise DepError(f"{path}: {base} is not a format the steward can verify")
             if versions and versions != v:
