@@ -4,6 +4,8 @@ import unittest
 from datetime import datetime, timedelta, timezone
 
 from scripts.queue_reconcile import (
+    is_retired,
+    item_is_expired,
     heartbeat_is_fresh,
     move_active_to_historical,
     source_pr_blocks_active,
@@ -85,6 +87,41 @@ class QueueReconcileTests(unittest.TestCase):
         errors = validate_queue_document(doc)
         self.assertTrue(any("duplicate queue_item_id: A" in e for e in errors))
 
+
+    def test_is_retired_requires_status_and_time(self) -> None:
+        self.assertFalse(is_retired(None))
+        self.assertFalse(is_retired({"status": "live"}))
+        self.assertFalse(is_retired({"status": "retired"}))  # Missing time
+        self.assertFalse(is_retired({"status": "retired", "retired_at": "invalid"}))
+        self.assertTrue(is_retired({"status": "retired", "retired_at": "2026-08-01T12:00:00Z"}))
+        self.assertTrue(is_retired({"status": "decommissioned", "retired_at": "2026-08-01T12:00:00Z"}))
+
+    def test_item_is_expired_with_expires_at(self) -> None:
+        now = datetime(2026, 8, 7, 15, 0, tzinfo=timezone.utc)
+        self.assertFalse(item_is_expired({"expires_at": "2026-08-08T15:00:00Z"}, now=now))
+        self.assertTrue(item_is_expired({"expires_at": "2026-08-06T15:00:00Z"}, now=now))
+
+    def test_item_is_expired_with_ttl_hours(self) -> None:
+        now = datetime(2026, 8, 7, 15, 0, tzinfo=timezone.utc)
+        self.assertFalse(item_is_expired({}, now=now))  # No TTL info
+        # Anchor updated_at
+        self.assertFalse(item_is_expired({"updated_at": "2026-08-07T10:00:00Z", "ttl_hours": 24}, now=now))
+        self.assertTrue(item_is_expired({"updated_at": "2026-08-06T10:00:00Z", "ttl_hours": 24}, now=now))
+        # Anchor issued_at
+        self.assertFalse(item_is_expired({"issued_at": "2026-08-07T10:00:00Z", "ttl_hours": 24}, now=now))
+        self.assertTrue(item_is_expired({"issued_at": "2026-08-06T10:00:00Z", "ttl_hours": 24}, now=now))
+        # Unparseable ttl counts as expired
+        self.assertTrue(item_is_expired({"updated_at": "2026-08-07T10:00:00Z", "ttl_hours": "invalid"}, now=now))
+
+    def test_move_active_to_historical_raises_on_missing_item(self) -> None:
+        doc = {"active": [], "historical": []}
+        with self.assertRaises(KeyError):
+            move_active_to_historical(doc, "MISSING", terminal_status="delivered", evidence="x")
+
+    def test_move_active_to_historical_raises_on_invalid_status(self) -> None:
+        doc = {"active": [{"id": "A", "status": "queued"}], "historical": []}
+        with self.assertRaises(ValueError):
+            move_active_to_historical(doc, "A", terminal_status="active", evidence="x")
 
 if __name__ == "__main__":
     unittest.main()
