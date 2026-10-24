@@ -1,3 +1,12 @@
+<!-- frankx-voice-layer-20261024:start -->
+## FrankX voice layer merged in 7 PRs; website design-contract check repaired
+
+FrankX now has a stated point of view (design-intelligence#56), founder and frontier-lab reference lanes (content-os#8) and
+pointers in every repo and skill that drafts FrankX copy (website #1094, FrankX #296, frankx-x-growth #1, claude-code-config
+#52). All signed by Codex through pr-gate. Website #1098 repinned the required design-contract check, red on every run checked
+since 21 October 04:22 UTC. Open: the editorial contract still pins closed kernel PR #14. Details in [the session](sessions/2026-10-24.md).
+<!-- frankx-voice-layer-20261024:end -->
+
 <!-- estate-convergence-20261021:start -->
 ## Launch factory on one PR, Payment Link checkout ported, estate convergence plan proposed
 
