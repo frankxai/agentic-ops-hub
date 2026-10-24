@@ -1,3 +1,13 @@
+<!-- brand-overhaul-20261024:start -->
+## Brand overhaul: two merges, five PRs in Grok review, lint gate and slop purge next
+
+Research scored the design and memory stacks 5/10 each and ranked eight brands from markup (FrankX and AgenticIncome lowest
+at 5). Merged with Grok sign-off: starlight-memory-vault#5 (vault sync origin) and agenticincome#81 (main build). In review:
+agenticincome#87, frankx.ai-vercel-website#1099, claude-skills-library#84, starlight-design-intelligence#60; gencreator.ai#281
+is a draft that conflicts with #214. Frank holds the vault sync resume, the TRUTH.md §2 ladder conflict and two spend asks.
+Tracked in starlight-design-intelligence#61. Details in [the session](sessions/2026-10-24.md).
+<!-- brand-overhaul-20261024:end -->
+
 <!-- frankx-voice-layer-20261024:start -->
 ## FrankX voice layer merged in 7 PRs; website design-contract check repaired
 

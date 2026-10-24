@@ -9,6 +9,7 @@ feature in a hold repository, waits unless the plan lets the drain owner do it, 
 
 | Handover | Pickup | Owner | Status |
 |---|---|---|---|
+| [H-brand-overhaul-2026-10-24](handovers/H-brand-overhaul-2026-10-24.md) | Brand overhaul: land the four reviewed PRs, QA GenCreator #281, then roll out the brand lint and slop purge | claude | open; 2 merged (vault #5, agenticincome #81); 5 open in Grok review or draft; Frank decisions listed in the prompt |
 | [H-frankx-voice-layer-2026-10-24](handovers/H-frankx-voice-layer-2026-10-24.md) | FrankX voice layer is merged; finish the editorial pin and local skill pull | claude | open; 7 PRs merged through pr-gate with Codex sign-off on 2026-10-23/24 |
 | [agy-implementation-20261012](handovers/agy-implementation-20261012.md) | AGY: verify the committed operator workflow | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
 | [autonomous-ops-20261011](handovers/autonomous-ops-20261011.md) | Operations: verify adoption and finish one useful cost or production improvement | unknown | open-unverified; held to 20 Nov by the focus window (AGENTS.md guardrail 7): steps outside the spine, or features in a hold repository, wait; not reconciled since the split |
