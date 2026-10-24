@@ -1,3 +1,16 @@
+<!-- frankxai-docs-path-20261024:start -->
+## frankx.ai/docs live on production, PR #1090 merged through pr-gate, 15/15 e2e verified
+
+PR frankx.ai-vercel-website#1090 (docs_platform proxy route) merged at `bc8803c` (squash `98733b04`)
+after review round 2: three codex findings fixed in `f2c337265` (negotiation scoped to document
+routes; abort timer released at response start so streamed feeds never truncate; brand segment
+forced to frankx on platform pass-throughs), one P1 declined with GPT-5.6 concurrence (runtime
+chunk paths resolve upstream; resolved by assetPrefix or the path-mount going away under
+docs.frankx.ai). 33/33 in-memory suite, type-check and lint clean. Production verified 15/15 on
+2026-10-24: `/docs`, search API, feeds, `.md` suffix, accept negotiation, foreign-brand forcing,
+upstream unchanged. Issue #1091 holds the evidence. Details in [the session](sessions/2026-10-24.md).
+<!-- frankxai-docs-path-20261024:end -->
+
 <!-- docs-platform-live-20261023:start -->
 ## docs-platform live: three brand hosts public, two DNS records and repo visibility on Frank
 
