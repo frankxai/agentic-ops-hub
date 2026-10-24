@@ -76,8 +76,8 @@ Multiple agents (Claude, Grok, Gemini, Codex, Cursor, Cline) may work this repo 
 
 | Action | Command |
 | :--- | :--- |
-| Build project | `npm run build` or `pnpm build` |
-| Run tests | `npm test` or `pnpm test` |
-| Format code | `npm run format` or `pnpm format` |
+| Build project | `python -m compileall -q scripts fleet tests` |
+| Run tests | `node --test tests/handover.test.mjs && node scripts/handover.mjs lint && python -m unittest tests.test_queue_reconcile tests.test_fleet_watch tests.test_estate_ci_watch tests.test_merge_steward tests.test_fleet_control tests.test_token_planner tests.test_cli_capacity tests.test_night_runner -v` |
+| Format code | `(None configured)` |
 | Sync agent rules | `node scripts/sync-agent-rules.mjs` |
 | Verify rules in CI | `node scripts/sync-agent-rules.mjs --check` |
