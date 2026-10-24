@@ -1,0 +1,125 @@
+{
+  "as_of": "2026-10-21",
+  "items": [
+    {
+      "id": "dec-token-pass-key",
+      "kind": "decision",
+      "title": "Create a Token Pass key named lab-worker in the Vercel dashboard (Token Pass tab), then rotate the exposed key",
+      "owner": "frank",
+      "status": "open",
+      "why": "A Token Pass key can only be created in the dashboard. The old key was pasted in chat and sits in plaintext in the opencode config."
+    },
+    {
+      "id": "dec-zdr-strictness",
+      "kind": "decision",
+      "title": "ZDR classes: stay strict (no free fallback) or allow free fallbacks",
+      "owner": "frank",
+      "status": "open",
+      "why": "Strict is the safe default and the current code. EXP-005 measures what strictness costs before you loosen it."
+    },
+    {
+      "id": "dec-railway-budget",
+      "kind": "decision",
+      "title": "Approve a Railway infra cap of $20 per month for the lab",
+      "owner": "frank",
+      "status": "open",
+      "why": "Proposal, not a quote. Railway pricing and sleep behaviour are unverified until EXP-004 measures them."
+    },
+    {
+      "id": "dec-software-factory",
+      "kind": "decision",
+      "title": "Say what 'software factory' refers to",
+      "owner": "frank",
+      "status": "open",
+      "why": "The term was not found in the repos. EXP-007 is parked until it is defined."
+    },
+    {
+      "id": "dec-delete-low-budget-keys",
+      "kind": "decision",
+      "title": "Delete the $1-budget gateway keys after a week of zero spend",
+      "owner": "frank",
+      "status": "open",
+      "why": "Housekeeping. Fewer keys means fewer leak paths."
+    },
+    {
+      "id": "pr-377",
+      "kind": "work",
+      "title": "Routing brain hardening: Codex round 1 asked for changes, fixes in progress, then re-review, registry preflight, merge",
+      "owner": "claude",
+      "status": "in-progress",
+      "why": "Receipts and budget enforcement that every experiment depends on."
+    },
+    {
+      "id": "suite-curation",
+      "kind": "work",
+      "title": "Curate suite starlight-core-v0: 12 replayable tasks from closed estate PRs",
+      "owner": "claude",
+      "status": "open",
+      "why": "A comparison needs the same tasks with a test that decides pass or fail."
+    },
+    {
+      "id": "worker-phase-0",
+      "kind": "work",
+      "title": "Worker Phase 0: container, entrypoint, per-key budget, receipts out",
+      "owner": "claude",
+      "status": "open",
+      "why": "Isolated place to run harnesses we do not want installed on the YELLOW-zone laptop."
+    },
+    {
+      "id": "dec-receipt-schema",
+      "kind": "decision",
+      "title": "Ruled 2026-10-21: SIS run-receipt v1 is the envelope; routing detail travels in stage notes and hash-bound evidence",
+      "owner": "frank",
+      "status": "done",
+      "why": "Frank approved SIS run-receipt v1 as the envelope. v1 forbids extra properties, so there is no extension block; see ops/plans/2026-10-21-receipt-schema-decision.md."
+    },
+    {
+      "id": "dec-open-core",
+      "kind": "decision",
+      "title": "Rule on the open-core boundary, licence and trademark for the receipts product",
+      "owner": "frank",
+      "status": "open",
+      "why": "No ruling found in the estate. Recommendation: open spec, verifier, free profile; closed hosted ledger and aggregate data. See the product plan section 7."
+    },
+    {
+      "id": "harness-runner",
+      "kind": "work",
+      "title": "Build the harness-neutral runner: replay a task at its parent commit, run any harness headless, run the checker, write a receipt with experiment and harness fields",
+      "owner": "claude",
+      "status": "open",
+      "why": "The current battery calls the gateway directly, so it ranks models, not harnesses. Needs PR 377's receipt API."
+    },
+    {
+      "id": "pack-authoring",
+      "kind": "work",
+      "title": "Author the web-v0 and content-v0 packs: briefs, fixtures and mechanical checkers (axe, Playwright, link and constraint scripts)",
+      "owner": "claude",
+      "status": "open",
+      "why": "EXP-008 and EXP-009 need website and content tasks with checkers written before any run. Checker tools are not yet confirmed in the worker image."
+    },
+    {
+      "id": "playbooks-draft",
+      "kind": "work",
+      "title": "Draft the three playbooks (build-a-website, build-a-product, run-an-experiment) as skills with saved evals",
+      "owner": "claude",
+      "status": "open",
+      "why": "A skill without a saved eval stays out of the default prompt. EXP-009 needs the drafts to test."
+    },
+    {
+      "id": "receipt-fields",
+      "kind": "work",
+      "title": "Add harness, experiment, task id and token counts to the routing receipt so the bridge can build a full v1 receipt",
+      "owner": "claude",
+      "status": "open",
+      "why": "The routing record has no harness, experiment, task id or tokens today. Lands in a PR after PR 377 merges."
+    },
+    {
+      "id": "receipt-verifier",
+      "kind": "work",
+      "title": "Ship a standalone verify command: signature, recomputed totals, maker not equal to checker, planted-fault fixtures",
+      "owner": "claude",
+      "status": "open",
+      "why": "No public verifier reads the run-receipt predicate yet (SIS docs/receipts.md). The product's trust claim depends on one."
+    }
+  ]
+}

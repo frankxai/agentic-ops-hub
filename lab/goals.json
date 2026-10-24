@@ -1,0 +1,48 @@
+{
+  "north_star": {
+    "text": "Sovereign delegation, proven by receipts.",
+    "source": "project_starlight_strategy_2026-09-18 (Frank-approved strategy)",
+    "test": "Any agent task can be routed, run, paid for and checked without Frank reading the transcript, and the receipt shows which model and harness did it and what it cost."
+  },
+  "pillars": [
+    {
+      "id": "routing-brain",
+      "name": "Routing Brain",
+      "moat": "Our own data on which model wins which task class at what cost. Nobody can rent this.",
+      "metric": "Cost per accepted task, per class, from receipts",
+      "state": "Hardened and under review (draft PR 377). Live ledger holds only synthetic test receipts, so no real measurement exists yet.",
+      "source": "fleet/ROUTING-BRAIN.md"
+    },
+    {
+      "id": "harness",
+      "name": "Harness tech",
+      "moat": "A harness-neutral runner: any harness (opencode, pi, omo, fx) runs the same task suite and is judged on the same receipts.",
+      "metric": "Accepted tasks per dollar and per minute, by harness, same model",
+      "state": "Candidates identified. Nothing has been compared yet.",
+      "source": "ops/plans/2026-10-21-research-lab-and-cloud-workers.md"
+    },
+    {
+      "id": "cloud-workers",
+      "name": "Cloud workers",
+      "moat": "Work continues while the laptop is off, with a hard budget and a receipt for every job.",
+      "metric": "Monthly cost at a stated job volume, and time from trigger to first action",
+      "state": "Plan only. Railway MCP connector is available. Sleep and pricing behaviour unverified.",
+      "source": "ops/plans/2026-10-21-research-lab-and-cloud-workers.md"
+    },
+    {
+      "id": "ecosystem",
+      "name": "Starlight ecosystem",
+      "moat": "oh-my-starlight: our own config, governance and receipts pack on top of upstream tools, in a free profile and a Token Pass profile. We own the pack, not a fork.",
+      "metric": "Pass rate of the free profile per class; number of estate projects running on the pack",
+      "state": "Generator exists. Profiles not split yet.",
+      "source": "fleet/gen_omo_config.py"
+    }
+  ],
+  "projects": [
+    {"id": "agentic-ops", "name": "agentic-ops (hub)", "repo": "frankxai/agentic-ops-hub", "gets": "Control plane, routing brain, receipts, this lab."},
+    {"id": "sis", "name": "Starlight Intelligence System", "repo": "Starlight-Intelligence-System", "gets": "Cheap bulk extraction and memory writes; receipts feed its memory."},
+    {"id": "acos", "name": "Agentic Creator OS", "repo": "agentic-creator-os", "gets": "Skills and agents that run on whichever harness wins."},
+    {"id": "arcanea", "name": "Arcanea", "repo": "Arcanea", "gets": "Cheap coding lane for CI repair and content tooling."},
+    {"id": "frankx", "name": "FrankX", "repo": "FrankX", "gets": "Content and site chores on the free profile."}
+  ]
+}

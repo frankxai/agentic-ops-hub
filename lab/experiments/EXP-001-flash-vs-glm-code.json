@@ -1,0 +1,91 @@
+{
+  "id": "EXP-001",
+  "title": "Is DeepSeek V4.1 Flash good enough to be the default coder?",
+  "pillar": "routing-brain",
+  "projects": [
+    "agentic-ops",
+    "arcanea",
+    "acos",
+    "sis"
+  ],
+  "hypothesis": "On our own replayed tasks, Flash accepts at least 85% as many tasks as GLM 5.3 at no more than 25% of the cost per accepted task.",
+  "status": "blocked",
+  "state": "S1",
+  "owner": "claude",
+  "owner_general": "caio",
+  "verifier": "codex",
+  "human_gate": "Frank signs the routing.schema.json change that reorders the code class.",
+  "runs_on": [
+    {
+      "where": "railway",
+      "why": "T1 run (12 tasks x 3 arms, repeated). The laptop never runs T1 or higher, so this waits for the Railway worker."
+    }
+  ],
+  "arms": [
+    {
+      "harness": "opencode-bare",
+      "model": "vercel/deepseek/deepseek-v4.1-flash",
+      "role": "challenger"
+    },
+    {
+      "harness": "opencode-bare",
+      "model": "vercel/zai/glm-5.3",
+      "role": "incumbent"
+    },
+    {
+      "harness": "opencode-bare",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "role": "free control"
+    }
+  ],
+  "suite": "starlight-core-v0",
+  "metric": {
+    "primary": "cost_per_accepted_task_usd",
+    "secondary": [
+      "accepted_rate",
+      "median_wall_seconds"
+    ]
+  },
+  "success_rule": "Directional only (design.decision_effect none): accepted_rate(flash) >= 0.85 * accepted_rate(glm) AND cost_per_accepted(flash) <= 0.25 * cost_per_accepted(glm). If both hold, the result justifies a confirmation run at 10 or more attempts per cell; only that confirmation can make Flash the code-class primary and GLM the escalation.",
+  "kill": "Directional pilot at one run per cell, below the 10-per-cell floor, so no result changes routing. Stop after 12 tasks x 3 arms or $6, whichever comes first. If Flash accepts under 70% of what GLM accepts, GLM stays primary and no confirmation run is scheduled.",
+  "budget": {
+    "token_pass_usd_cap": 6,
+    "infra_usd_cap": 1,
+    "frank_hours": 0.5
+  },
+  "blocked_by": [
+    "dec-token-pass-key",
+    "pr-377",
+    "suite-curation",
+    "worker-phase-0",
+    "dec-railway-budget"
+  ],
+  "clock": {
+    "ttl_days": 30,
+    "started": null
+  },
+  "next_gate": {
+    "to": "S2",
+    "receipt": "lab/results/EXP-001.md with the per-arm table from receipts",
+    "due": "30 days after start"
+  },
+  "decision_it_feeds": "Order of the code-class chain in fleet/routing.schema.json.",
+  "prior_evidence": [
+    {
+      "claim": "Vendor-independent leaderboard: DeepSeek V4 Flash 0731 scored 88.8% on SWE-bench Verified at about $0.01 per test, Kimi K3 93.4% at $0.76, DeepSeek V4 Pro 77.4%, GLM 5 71.4%.",
+      "source": "vals.ai/benchmarks/swebench (fetched 2026-10-21, mini-SWE-agent harness, archived benchmark)",
+      "caveat": "SWE-bench Verified is public and likely contaminated. The listing says V4 Flash 0731, our route is v4.1-flash, and the quoted price ($0.44/$1.32) differs from Token Pass ($0.15/$0.60). Treat as a reason to test, not as proof."
+    },
+    {
+      "claim": "A user report prefers GLM over Flash on design and coding issues Flash struggled with.",
+      "source": "reddit.com/r/opencode, GLM 5.3 Flash vs DeepSeek V4.1 Flash thread",
+      "caveat": "One anecdote. It is the reason GLM stays the incumbent arm."
+    }
+  ],
+  "tier": "T1",
+  "design": {
+    "runs_per_cell": 1,
+    "decision_effect": "none",
+    "note": "12 tasks x 3 arms is one attempt per cell, below the 10-per-cell floor (lab/packs.json sample_floor_per_cell). Directional pilot: it changes no routing."
+  }
+}

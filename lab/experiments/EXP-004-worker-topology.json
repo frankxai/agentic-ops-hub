@@ -1,0 +1,37 @@
+{
+  "id": "EXP-004",
+  "title": "Always-on worker or activate-on-demand: which costs less for the same jobs?",
+  "pillar": "cloud-workers",
+  "projects": ["agentic-ops", "sis"],
+  "hypothesis": "An activate-on-trigger worker handles 20 jobs a day for under half the monthly cost of an always-on worker, with time to first action under 60 seconds.",
+  "status": "blocked",
+  "state": "S1",
+  "tier": "T0",
+  "owner": "claude",
+  "owner_general": "coo",
+  "verifier": "codex",
+  "human_gate": "Frank approves the monthly Railway cap before any service is created.",
+  "runs_on": [
+    {"where": "railway", "why": "The thing being measured."}
+  ],
+  "arms": [
+    {"harness": "opencode-bare", "model": "opencode/deepseek-v4.1-flash-free", "role": "always-on, one worker polling for issues"},
+    {"harness": "opencode-bare", "model": "opencode/deepseek-v4.1-flash-free", "role": "activated by GitHub webhook or cron, sleeps when idle"}
+  ],
+  "suite": "synthetic trigger load: 20 no-op jobs per day for 7 days",
+  "metric": {"primary": "projected_monthly_cost_usd", "secondary": ["seconds_trigger_to_first_action", "missed_jobs"]},
+  "success_rule": "Activated topology projected cost is under 50% of always-on and p50 trigger-to-first-action is under 60 seconds with zero missed jobs.",
+  "kill": "Stop at $3 of Railway spend. If Railway cannot sleep a service or bill by use, record that and keep the always-on design with a single worker.",
+  "budget": {"token_pass_usd_cap": 0, "infra_usd_cap": 3, "frank_hours": 0.5},
+  "blocked_by": ["dec-railway-budget", "worker-phase-0"],
+  "clock": {"ttl_days": 30, "started": null},
+  "next_gate": {"to": "S2", "receipt": "lab/results/EXP-004.md with the Railway usage export and latency table", "due": "30 days after start"},
+  "decision_it_feeds": "The topology and monthly cap for the cloud worker fleet.",
+  "prior_evidence": [
+    {
+      "claim": "Railway sleep-when-idle behaviour and pricing have not been verified.",
+      "source": "none yet",
+      "caveat": "That is why this experiment exists. Do not quote a Railway price until it has measured one."
+    }
+  ]
+}

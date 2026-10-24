@@ -1,0 +1,74 @@
+{
+  "id": "EXP-009",
+  "title": "Do our playbooks and skills beat the same agent without them?",
+  "pillar": "ecosystem",
+  "projects": [
+    "acos",
+    "agentic-ops",
+    "frankx"
+  ],
+  "hypothesis": "For each playbook (build-a-website, build-a-product, run-an-experiment), the same model and harness with the playbook loaded passes more gates at equal or lower cost than without it.",
+  "status": "blocked",
+  "state": "S1",
+  "owner": "claude",
+  "owner_general": "chro",
+  "verifier": "skill-judge",
+  "human_gate": "Frank approves moving any skill into the default prompt. New skills stay out of the default prompt until they have a saved eval.",
+  "runs_on": [
+    {
+      "where": "railway",
+      "why": "T1 run (repeated with/without ablation, n of at least 10 per arm). The laptop never runs T1 or higher, so this waits for the Railway worker."
+    }
+  ],
+  "arms": [
+    {
+      "harness": "claude-code",
+      "model": "same model both arms",
+      "role": "with the playbook loaded"
+    },
+    {
+      "harness": "claude-code",
+      "model": "same model both arms",
+      "role": "without the playbook (baseline)"
+    }
+  ],
+  "suite": "skills-playbooks-v0 (paired with web-v0 and starlight-core-v0 tasks)",
+  "metric": {
+    "primary": "gate_pass_rate_delta",
+    "secondary": [
+      "cost_per_accepted_task_usd",
+      "turn0_token_cost",
+      "trigger_rate"
+    ]
+  },
+  "success_rule": "A playbook is kept only if its with-versus-without gate pass rate is higher at n of at least 10 per arm and the skill's Turn-0 token cost stays inside the 8,000-token gateway listing cap. Otherwise it is retired or merged.",
+  "kill": "Stop when a playbook fails its own evals twice. Skills that never trigger are retired.",
+  "budget": {
+    "token_pass_usd_cap": 0,
+    "infra_usd_cap": 1,
+    "frank_hours": 0.5
+  },
+  "blocked_by": [
+    "playbooks-draft",
+    "pack-authoring",
+    "suite-curation",
+    "worker-phase-0",
+    "dec-railway-budget"
+  ],
+  "clock": {
+    "ttl_days": 30,
+    "started": null
+  },
+  "next_gate": {
+    "to": "S2",
+    "receipt": "lab/results/EXP-009.md with the ablation table per playbook",
+    "due": "30 days after start"
+  },
+  "decision_it_feeds": "Which playbooks go into starlight-ai-harness and which skills are retired by Skill Foundry.",
+  "preconditions": [
+    "The judge that runs the ablation did not write the skill.",
+    "No skill is registered in the default prompt before its eval is saved."
+  ],
+  "prior_evidence": [],
+  "tier": "T1"
+}

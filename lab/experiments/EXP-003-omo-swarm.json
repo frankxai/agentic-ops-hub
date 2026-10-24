@@ -1,0 +1,31 @@
+{
+  "id": "EXP-003",
+  "title": "Does an OmO mass-ultrawork swarm beat one agent on a hard task?",
+  "pillar": "harness",
+  "projects": ["agentic-ops", "arcanea"],
+  "hypothesis": "On three hard multi-file tasks, a bounded OmO swarm accepts more tasks than the best single-agent arm, and the extra cost per accepted task stays under 3x.",
+  "status": "blocked",
+  "state": "S1",
+  "tier": "T3",
+  "owner": "claude",
+  "owner_general": "cto",
+  "verifier": "frank",
+  "human_gate": "Frank sets the dollar cap for each swarm run before it starts.",
+  "runs_on": [
+    {"where": "railway", "why": "A swarm of many agents is too heavy for the laptop and must be isolated."}
+  ],
+  "arms": [
+    {"harness": "omo-native", "model": "mixed per OmO graph, restricted to the allowlist", "role": "swarm"},
+    {"harness_pending": "best harness from EXP-002", "model": "best of EXP-001", "role": "single-agent baseline"}
+  ],
+  "suite": "starlight-hard-v0 (3 tasks, curated after EXP-002)",
+  "metric": {"primary": "accepted_tasks_of_3", "secondary": ["total_cost_usd", "wall_seconds"]},
+  "success_rule": "Swarm accepts at least one more task than the baseline and total cost per accepted task is under 3x the baseline.",
+  "kill": "Hard stop at $4 total and at 20 minutes per run. A swarm that spawns outside the model allowlist ends the run and the experiment.",
+  "budget": {"token_pass_usd_cap": 4, "infra_usd_cap": 1, "frank_hours": 1},
+  "blocked_by": ["EXP-002"],
+  "clock": {"ttl_days": 30, "started": null},
+  "next_gate": {"to": "S2", "receipt": "lab/results/EXP-003.md with run logs and cost", "due": "30 days after start"},
+  "decision_it_feeds": "Whether swarms are a default lane, an on-demand lane, or not worth the spend.",
+  "prior_evidence": []
+}

@@ -1,0 +1,745 @@
+#!/usr/bin/env python3
+"""Validate the Starlight Lab registry and render the dashboard.
+
+    python lab/build_lab.py --check                 # validate only, exit 1 on any problem
+    python lab/build_lab.py                         # write lab/dist/index.html (standalone)
+    python lab/build_lab.py --artifact --out F.html # page fragment for an Artifact publish
+
+The registry in lab/*.json and lab/experiments/*.json is the only source. The page is
+generated, never edited. Receipt numbers come from fleet/receipts/routing.jsonl (or
+$STARLIGHT_RECEIPTS_DIR/routing.jsonl); with no receipts the page says so instead of
+showing zeros.
+"""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import html
+import json
+import math
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+LAB = Path(__file__).resolve().parent
+ROOT = LAB.parent
+
+STATUSES = ("running", "ready", "blocked", "proposed", "concluded", "killed")
+PLACES = {
+    "local-c940": "Laptop c940",
+    "railway": "Railway container",
+    "vercel": "Vercel",
+    "ci": "GitHub Actions",
+}
+PLACE_NOTES = {
+    "local-c940": "Machine zone YELLOW. One process at a time; the preflight floor is 8,192 MiB free RAM.",
+    "railway": "Isolated container with its own Token Pass key. Monthly cap is a proposal until Frank approves it.",
+    "vercel": "Eve runs here. A Token Pass key can be used as an env var, but OIDC cannot spend it.",
+    "ci": "Deterministic jobs only. No model calls.",
+}
+EXP_REQUIRED = (
+    "id", "title", "pillar", "projects", "hypothesis", "status", "state", "owner", "owner_general",
+    "verifier", "human_gate", "runs_on", "arms", "suite", "metric", "success_rule", "kill", "budget",
+    "blocked_by", "clock", "next_gate", "decision_it_feeds",
+)
+GENERALS = ("ceo", "cfo", "coo", "cto", "cpo", "cmo", "caio", "chro", "cco", "frank")
+BUDGET_KEYS = ("token_pass_usd_cap", "infra_usd_cap", "frank_hours")
+ID_PATTERN = re.compile(r"^EXP-[0-9]{3}$")
+LAYERS = ("L0", "L0+L2", "L2", "L3", "L4")
+HARNESS_STATUSES = ("live", "installed", "candidate", "to-build")
+PACK_STATUSES = ("spec", "curating", "ready")
+MAX_JUDGED_SHARE = 0.5
+MIN_SAMPLE_FLOOR = 10
+TIERS = ("T0", "T1", "T2", "T3")
+GATE_STATUSES = ("open", "in-progress", "done")
+GATE_KINDS = ("decision", "work")
+# Every checker type is classified. A judged type counts toward the 50% limit; an unknown type is an error,
+# so relabelling a task cannot move it out of the judged share.
+JUDGED_CHECKER_TYPES = ("blind-judge", "human-review")
+DETERMINISTIC_CHECKER_TYPES = ("script", "exact-match", "exec-asserts", "test-suite", "dom-assertions",
+                               "axe", "lighthouse", "behaviour", "ablation")
+CHECKER_TYPES = JUDGED_CHECKER_TYPES + DETERMINISTIC_CHECKER_TYPES
+
+
+def _reject_constant(name: str):
+    raise ValueError(f"non-finite JSON number {name} is not allowed")
+
+
+def read_json(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"), parse_constant=_reject_constant)
+
+
+def load() -> dict:
+    experiments = [read_json(p) for p in sorted((LAB / "experiments").glob("EXP-*.json"))]
+    return {
+        "goals": read_json(LAB / "goals.json"),
+        "gates": read_json(LAB / "gates.json"),
+        "budget": read_json(LAB / "budget.json"),
+        "harnesses": read_json(LAB / "harnesses.json"),
+        "packs": read_json(LAB / "packs.json"),
+        "experiments": experiments,
+    }
+
+
+def is_int(value) -> bool:
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
+def sample_floor(data: dict) -> int:
+    floor = data["packs"].get("sample_floor_per_cell")
+    return floor if is_int(floor) and floor >= MIN_SAMPLE_FLOOR else MIN_SAMPLE_FLOOR
+
+
+def nonblank(value) -> bool:
+    return isinstance(value, str) and bool(value.strip())
+
+
+def actor_key(value) -> str:
+    return value.strip().casefold() if isinstance(value, str) else ""
+
+
+def evidence_exists(source) -> bool:
+    """A measured claim's source is a repo-relative file that exists; absolute paths and '..' are refused."""
+    if not nonblank(source):
+        return False
+    path = Path(source.strip())
+    if path.is_absolute() or ".." in path.parts or path.drive:
+        return False
+    return (ROOT / path).is_file()
+
+
+def is_number(value) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value) and value >= 0
+
+
+def blockers_of(exp: dict, data: dict) -> list[dict]:
+    """Each blocker as {id, kind, title, resolved}."""
+    gates = {g["id"]: g for g in data["gates"]["items"] if isinstance(g.get("id"), str)}
+    experiments = {e["id"]: e for e in data["experiments"] if isinstance(e.get("id"), str)}
+    out = []
+    for ref in exp.get("blocked_by", []):
+        if ref in gates:
+            g = gates[ref]
+            out.append({"id": ref, "kind": g.get("kind", "?"), "title": g.get("title", ref), "resolved": g.get("status") == "done"})
+        elif ref in experiments:
+            e = experiments[ref]
+            out.append({"id": ref, "kind": "experiment", "title": e.get("title", ref), "resolved": e.get("status") == "concluded"})
+        else:
+            out.append({"id": ref, "kind": "unknown", "title": ref, "resolved": False})
+    return out
+
+
+def validate(data: dict, today: dt.date | None = None) -> list[str]:
+    today = today or dt.datetime.now(dt.timezone.utc).date()
+    problems: list[str] = []
+    goals, gates, budget, experiments = data["goals"], data["gates"], data["budget"], data["experiments"]
+    pillar_ids = {p["id"] for p in goals["pillars"]}
+    project_ids = {p["id"] for p in goals["projects"]}
+    for label, items in (("pillars", goals["pillars"]), ("projects", goals["projects"])):
+        seen = [i.get("id") for i in items]
+        if any(not isinstance(i, str) or not i.strip() for i in seen):
+            problems.append(f"goals {label}: every entry needs a non-empty id")
+        if len(set(seen)) != len(seen):
+            problems.append(f"goals {label}: duplicate id")
+    problems += validate_gates(data) + validate_names(data)
+    gate_ids = [g.get("id") for g in gates["items"]]
+    exp_ids = [e.get("id") for e in experiments]
+
+    if len(set(gate_ids)) != len(gate_ids):
+        problems.append("gates: duplicate id")
+    if len(set(exp_ids)) != len(exp_ids):
+        problems.append("experiments: duplicate id")
+    overlap = set(gate_ids) & set(exp_ids)
+    if overlap:
+        problems.append(f"ids used as both gate and experiment: {sorted(overlap)}")
+
+    for exp in experiments:
+        eid = exp.get("id", "?")
+        missing = [k for k in EXP_REQUIRED if k not in exp]
+        if missing:
+            problems.append(f"{eid}: missing {missing}")
+            continue
+        if not ID_PATTERN.match(eid):
+            problems.append(f"{eid}: id must look like EXP-001")
+        if exp["status"] not in STATUSES:
+            problems.append(f"{eid}: status {exp['status']!r} not in {STATUSES}")
+        if exp["state"] != "S1":
+            problems.append(f"{eid}: lab experiments live in lifecycle state S1")
+        if exp["pillar"] not in pillar_ids:
+            problems.append(f"{eid}: unknown pillar {exp['pillar']!r}")
+        if not exp["projects"] or not set(exp["projects"]) <= project_ids:
+            problems.append(f"{eid}: projects must be a non-empty subset of {sorted(project_ids)}")
+        if not actor_key(exp["owner"]) or not actor_key(exp["verifier"]):
+            problems.append(f"{eid}: owner and verifier must be non-empty actor ids")
+        elif actor_key(exp["owner"]) == actor_key(exp["verifier"]):
+            problems.append(f"{eid}: the verifier must be a different actor than the owner")
+        if exp["owner_general"] not in GENERALS:
+            problems.append(f"{eid}: owner_general {exp['owner_general']!r} unknown")
+        for field in ("hypothesis", "success_rule", "kill", "human_gate", "decision_it_feeds"):
+            if not str(exp[field]).strip():
+                problems.append(f"{eid}: {field} is empty")
+        if not exp["runs_on"] or any(r.get("where") not in PLACES for r in exp["runs_on"]):
+            problems.append(f"{eid}: runs_on needs entries whose 'where' is one of {sorted(PLACES)}")
+        elif any(not nonblank(r.get("why")) for r in exp["runs_on"]):
+            problems.append(f"{eid}: every runs_on entry needs a 'why'")
+        problems += validate_arms(eid, exp["arms"], data)
+        problems += validate_design(eid, exp, data)
+        tier = exp.get("tier")
+        if tier not in TIERS:
+            problems.append(f"{eid}: needs an explicit tier from {TIERS}, got {tier!r}")
+        if tier in ("T1", "T2", "T3") and any(r.get("where") == "local-c940" for r in exp["runs_on"]):
+            problems.append(f"{eid}: {tier} runs never go on the laptop (scale policy); use a cloud worker")
+        if not all(is_number(exp["budget"].get(k)) for k in BUDGET_KEYS):
+            problems.append(f"{eid}: budget needs non-negative numbers for {BUDGET_KEYS}")
+        if not exp.get("metric", {}).get("primary"):
+            problems.append(f"{eid}: metric.primary is required")
+        if exp["clock"].get("ttl_days") != 30:
+            problems.append(f"{eid}: S1 time to live is 30 days (registry/README.md)")
+
+        blockers = blockers_of(exp, data)
+        for b in blockers:
+            if b["kind"] == "unknown":
+                problems.append(f"{eid}: blocked_by {b['id']!r} is not a gate or experiment")
+        unresolved = [b for b in blockers if not b["resolved"]]
+        if exp["status"] == "blocked" and not unresolved:
+            problems.append(f"{eid}: status blocked but nothing unresolved blocks it")
+        if exp["status"] in ("running", "ready", "concluded") and unresolved:
+            problems.append(f"{eid}: status {exp['status']} but blocked by {[b['id'] for b in unresolved]}")
+
+        started = exp["clock"].get("started")
+        if exp["status"] in ("running", "concluded", "killed") and not started:
+            problems.append(f"{eid}: status {exp['status']} needs clock.started")
+        if started:
+            try:
+                age = (today - dt.date.fromisoformat(started)).days
+            except (ValueError, TypeError):
+                problems.append(f"{eid}: clock.started {started!r} is not a date")
+            else:
+                if age < 0:
+                    problems.append(f"{eid}: clock.started {started} is in the future")
+                elif exp["status"] == "running" and age > exp["clock"]["ttl_days"]:
+                    problems.append(f"{eid}: past its {exp['clock']['ttl_days']}-day time to live; conclude or kill it")
+
+    numbers = {"token_pass.lab_allocation_usd": budget["token_pass"].get("lab_allocation_usd"),
+               "token_pass.monthly_usd": budget["token_pass"].get("monthly_usd"),
+               "railway_infra.monthly_cap_usd": budget["railway_infra"].get("monthly_cap_usd")}
+    bad = [name for name, value in numbers.items() if not is_number(value)]
+    if bad:
+        problems.append(f"budget: {bad} must be finite non-negative numbers")
+        return problems + validate_harnesses(data) + validate_packs(data)
+    caps = {k: sum(e.get("budget", {}).get(k, 0) for e in experiments if e.get("status") not in ("concluded", "killed"))
+            for k in ("token_pass_usd_cap", "infra_usd_cap")}
+    if caps["token_pass_usd_cap"] > budget["token_pass"]["lab_allocation_usd"]:
+        problems.append(f"experiment Token Pass caps {caps['token_pass_usd_cap']} exceed lab allocation {budget['token_pass']['lab_allocation_usd']}")
+    if caps["infra_usd_cap"] > budget["railway_infra"]["monthly_cap_usd"]:
+        problems.append(f"experiment infra caps {caps['infra_usd_cap']} exceed Railway cap {budget['railway_infra']['monthly_cap_usd']}")
+    if budget["token_pass"]["lab_allocation_usd"] > budget["token_pass"]["monthly_usd"]:
+        problems.append("lab allocation exceeds the Token Pass monthly credit")
+    problems += validate_harnesses(data) + validate_packs(data)
+    return problems
+
+
+def validate_gates(data: dict) -> list[str]:
+    problems: list[str] = []
+    for g in data["gates"]["items"]:
+        gid = g.get("id", "?")
+        if not nonblank(g.get("id")):
+            problems.append("gates: every gate needs a non-empty id")
+        for field in ("title", "owner"):
+            if not nonblank(g.get(field)):
+                problems.append(f"gate {gid}: {field} is required")
+        if g.get("kind") not in GATE_KINDS:
+            problems.append(f"gate {gid}: kind {g.get('kind')!r} not in {GATE_KINDS}")
+        if g.get("status") not in GATE_STATUSES:
+            problems.append(f"gate {gid}: status {g.get('status')!r} not in {GATE_STATUSES}")
+    return problems
+
+
+def validate_names(data: dict) -> list[str]:
+    problems: list[str] = []
+    for label, items, fields in (("pillar", data["goals"]["pillars"], ("name",)),
+                                 ("project", data["goals"]["projects"], ("name", "gets"))):
+        for item in items:
+            for field in fields:
+                if not nonblank(item.get(field)):
+                    problems.append(f"{label} {item.get('id', '?')}: {field} is required (the dashboard renders it)")
+    return problems
+
+
+def validate_arms(eid: str, arms, data: dict) -> list[str]:
+    """Every arm names a registered harness, or says in `harness_pending` that the choice is still open."""
+    if not isinstance(arms, list) or not arms:
+        return [f"{eid}: needs at least one arm"]
+    registered = {h.get("id") for h in data["harnesses"]["items"]}
+    problems: list[str] = []
+    for i, arm in enumerate(arms):
+        if not isinstance(arm, dict):
+            problems.append(f"{eid}: arm {i} must be an object")
+            continue
+        for field in ("model", "role"):
+            if not nonblank(arm.get(field)):
+                problems.append(f"{eid}: arm {i} needs a {field}")
+        harness, pending = arm.get("harness"), arm.get("harness_pending")
+        if harness is not None and pending is not None:
+            problems.append(f"{eid}: arm {i} sets both harness and harness_pending")
+        elif harness is not None:
+            if harness not in registered:
+                problems.append(f"{eid}: arm {i} harness {harness!r} is not in lab/harnesses.json; register it or use harness_pending")
+        elif not nonblank(pending):
+            problems.append(f"{eid}: arm {i} needs a registered harness or a harness_pending note")
+    return problems
+
+
+def validate_design(eid: str, exp: dict, data: dict) -> list[str]:
+    """An experiment that plans fewer runs per cell than the sample floor is a directional pilot and decides nothing."""
+    design = exp.get("design")
+    if design is None:
+        return []
+    runs = design.get("runs_per_cell") if isinstance(design, dict) else None
+    if not is_int(runs) or runs < 1:
+        return [f"{eid}: design.runs_per_cell must be an integer of at least 1"]
+    floor = sample_floor(data)
+    if runs < floor and design.get("decision_effect") != "none":
+        return [f"{eid}: {runs} run(s) per cell is below the sample floor {floor}; set design.decision_effect to 'none' (directional pilot)"]
+    return []
+
+
+def validate_harnesses(data: dict) -> list[str]:
+    problems: list[str] = []
+    ids = [h.get("id") for h in data["harnesses"]["items"]]
+    if len(set(ids)) != len(ids):
+        problems.append("harnesses: duplicate id")
+    if any(not nonblank(i) for i in ids):
+        problems.append("harnesses: every entry needs a non-empty id")
+    for h in data["harnesses"]["items"]:
+        hid = h.get("id", "?")
+        for field in ("name", "role", "headless"):
+            if not nonblank(h.get(field)):
+                problems.append(f"harness {hid}: {field} is required (the dashboard renders it)")
+        if h.get("layer") not in LAYERS:
+            problems.append(f"harness {hid}: layer {h.get('layer')!r} not in {LAYERS}")
+        if h.get("status") not in HARNESS_STATUSES:
+            problems.append(f"harness {hid}: status {h.get('status')!r} not in {HARNESS_STATUSES}")
+        measured = h.get("measured")
+        if measured is None:
+            continue
+        floor = sample_floor(data)
+        if not isinstance(measured, dict) or not nonblank(measured.get("source")) or not is_int(measured.get("n")):
+            problems.append(f"harness {hid}: measured needs an integer n and a non-empty source path")
+        elif measured["n"] < max(floor, 1):
+            problems.append(f"harness {hid}: measured n={measured['n']} is below the sample floor {floor}; keep it null or call it directional elsewhere")
+        elif not evidence_exists(measured["source"]):
+            problems.append(f"harness {hid}: measured source {measured['source']!r} is not a file in this repository")
+    return problems
+
+
+def validate_packs(data: dict) -> list[str]:
+    problems: list[str] = []
+    ids = [p.get("id") for p in data["packs"]["items"]]
+    if len(set(ids)) != len(ids):
+        problems.append("packs: duplicate id")
+    if any(not nonblank(i) for i in ids):
+        problems.append("packs: every pack needs a non-empty id")
+    floor = data["packs"].get("sample_floor_per_cell")
+    if not is_int(floor) or floor < MIN_SAMPLE_FLOOR:
+        problems.append(f"packs: sample_floor_per_cell must be an integer of at least {MIN_SAMPLE_FLOOR} (SIS doctrine A2)")
+    for pack in data["packs"]["items"]:
+        pid = pack.get("id", "?")
+        for field in ("title", "domain", "weakness"):
+            if not nonblank(pack.get(field)):
+                problems.append(f"pack {pid}: {field} is required (the dashboard renders it)")
+        if pack.get("status") not in PACK_STATUSES:
+            problems.append(f"pack {pid}: status {pack.get('status')!r} not in {PACK_STATUSES}")
+        tasks = pack.get("tasks") or []
+        if not tasks:
+            problems.append(f"pack {pid}: needs tasks")
+            continue
+        task_ids = [t.get("id") for t in tasks]
+        if any(not isinstance(i, str) or not i.strip() for i in task_ids) or len(set(task_ids)) != len(task_ids):
+            problems.append(f"pack {pid}: task ids must be non-empty and unique")
+        for t in tasks:
+            check = str(t.get("verifier", {}).get("check", "")).strip()
+            if not check:
+                problems.append(f"pack {pid}: task {t.get('id', '?')} has no checker")
+            ctype = t.get("verifier", {}).get("type")
+            if ctype not in CHECKER_TYPES:
+                problems.append(f"pack {pid}: task {t.get('id', '?')} has checker type {ctype!r}; classify it in {CHECKER_TYPES}")
+            if not isinstance(t.get("judged"), bool):
+                problems.append(f"pack {pid}: task {t.get('id', '?')} judged must be a real boolean")
+            elif t["judged"] != (ctype in JUDGED_CHECKER_TYPES):
+                problems.append(f"pack {pid}: task {t.get('id', '?')} judged flag and judged (blind-judge or human-review) verifier must agree")
+        if pack_judged_share(pack) > MAX_JUDGED_SHARE:
+            problems.append(f"pack {pid}: more than {int(MAX_JUDGED_SHARE * 100)}% of tasks are judged")
+    return problems
+
+
+def is_judged(task: dict) -> bool:
+    """Judged if flagged or if the checker type is judged. An unclassified type counts as judged,
+    so an unknown label can never lower the share."""
+    ctype = task.get("verifier", {}).get("type")
+    return bool(task.get("judged")) or ctype in JUDGED_CHECKER_TYPES or ctype not in CHECKER_TYPES
+
+
+def pack_judged_share(pack: dict) -> float:
+    tasks = pack.get("tasks") or []
+    return sum(1 for t in tasks if is_judged(t)) / len(tasks) if tasks else 0.0
+
+
+def receipts_path() -> Path:
+    override = os.environ.get("STARLIGHT_RECEIPTS_DIR")
+    return (Path(override) if override else ROOT / "fleet" / "receipts") / "routing.jsonl"
+
+
+def summarize_receipts(path: Path | None = None, now: dt.datetime | None = None) -> dict:
+    """Aggregate real receipts. Malformed lines and synthetic receipts are counted, not used."""
+    path = path or receipts_path()
+    now = now or dt.datetime.now(dt.timezone.utc)
+    result = {"path": str(path), "exists": path.exists(), "used": 0, "skipped": 0, "synthetic": 0,
+              "by_class_model": {}, "by_experiment": {}, "token_pass_month_usd": 0.0}
+    if not path.exists():
+        return result
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        if not line.strip():
+            continue
+        try:
+            rec = json.loads(line)
+            if not isinstance(rec, dict):
+                raise ValueError("not an object")
+            synthetic = rec.get("synthetic", False)
+            if not isinstance(synthetic, bool):
+                raise ValueError("synthetic must be a real boolean")
+            if synthetic:
+                result["synthetic"] += 1
+                continue
+            cls, model, ok, cost = rec["task_class"], rec["used"], rec["success"], rec["cost_usd"]
+            if not isinstance(cls, str) or not isinstance(model, str) or not isinstance(ok, bool):
+                raise ValueError("bad field")
+            if not is_number(cost):
+                raise ValueError("cost_usd must be an explicit finite non-negative number")
+        except (ValueError, KeyError, TypeError):
+            result["skipped"] += 1
+            continue
+        row = result["by_class_model"].setdefault((cls, model), {"n": 0, "ok": 0, "cost": 0.0})
+        row["n"] += 1
+        row["ok"] += 1 if ok else 0
+        row["cost"] += cost
+        result["used"] += 1
+        exp = rec.get("experiment")
+        if isinstance(exp, str):
+            result["by_experiment"][exp] = result["by_experiment"].get(exp, 0.0) + cost
+        stamp = str(rec.get("ts", ""))
+        if rec.get("provider") == "token-pass" and stamp[:7] == now.strftime("%Y-%m"):
+            result["token_pass_month_usd"] += cost
+    return result
+
+
+def git_sha() -> str:
+    try:
+        out = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True, timeout=5)
+        return out.stdout.strip() or "unknown"
+    except (OSError, subprocess.SubprocessError):
+        return "unknown"
+
+
+def esc(value) -> str:
+    return html.escape(str(value), quote=True)
+
+
+def money(value: float) -> str:
+    return f"${value:,.2f}" if value != int(value) else f"${int(value):,}"
+
+
+STYLE = """
+/* Layout concept: a lab notebook index. Direction first, then what needs Frank, then the experiments, then the evidence. */
+:root {
+  --bg: #f1f4f8; --surface: #ffffff; --ink: #161b24; --muted: #596377; --line: #d8dee8; --chip: #e6eaf2;
+  --accent: #3947b8; --accent-ink: #ffffff;
+  --ok: #1b7a4b; --warn: #9a5b06; --crit: #b3261e;
+  --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1218; --surface: #171d27; --ink: #e5e9f1; --muted: #98a2b6; --line: #29313f; --chip: #212a38;
+  --accent: #9aa6ff; --accent-ink: #0e1218; --ok: #4fc58a; --warn: #e3a64b; --crit: #ff7b72; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0e1218; --surface: #171d27; --ink: #e5e9f1; --muted: #98a2b6; --line: #29313f; --chip: #212a38;
+  --accent: #9aa6ff; --accent-ink: #0e1218; --ok: #4fc58a; --warn: #e3a64b; --crit: #ff7b72; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font-body); padding-inline: 16px; padding-block: 24px 64px; }
+.wrap { max-width: 1180px; margin-inline: auto; display: flex; flex-direction: column; gap: 36px; }
+h1 { font-size: 1.9rem; line-height: 1.15; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+h2 { font-size: 1.05rem; margin: 0 0 12px; letter-spacing: 0.02em; }
+h3 { font-size: 0.98rem; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--accent); }
+.data, .mono { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.small { font-size: 0.84rem; }
+.eyebrow { font-family: var(--font-data); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+header { display: flex; flex-direction: column; gap: 10px; }
+.north { font-size: 1.1rem; max-width: 70ch; }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); }
+.grid.wide { grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.pill { display: inline-block; font-family: var(--font-data); font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--ink); white-space: nowrap; }
+.pill.running { background: var(--ok); color: var(--accent-ink); }
+.pill.ready { background: var(--accent); color: var(--accent-ink); }
+.pill.blocked { background: var(--warn); color: var(--accent-ink); }
+.pill.concluded { background: var(--ink); color: var(--bg); }
+.pill.killed { background: var(--crit); color: var(--accent-ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg { display: flex; gap: 3px; height: 10px; }
+.seg i { flex: 1; border-radius: 2px; background: var(--chip); }
+.seg i.running { background: var(--ok); } .seg i.ready { background: var(--accent); } .seg i.blocked { background: var(--warn); }
+.seg i.concluded { background: var(--ink); } .seg i.killed { background: var(--crit); }
+.attention { display: flex; flex-direction: column; gap: 8px; }
+.attention li { min-width: 0; overflow-wrap: anywhere; list-style: none; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; padding: 10px 12px; border-left: 3px solid var(--warn); background: var(--surface); border-radius: 0 6px 6px 0; }
+.attention ul { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.attention .unblocks { grid-column: 2; }
+.attention .pill { align-self: start; justify-self: start; }
+.card header { flex-direction: row; justify-content: space-between; align-items: baseline; gap: 8px; }
+.kv { display: grid; grid-template-columns: 7.5rem 1fr; gap: 4px 10px; font-size: 0.88rem; }
+.kv dt { color: var(--muted); } .kv dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+details { border-top: 1px solid var(--line); padding-top: 8px; font-size: 0.88rem; }
+details summary { cursor: pointer; color: var(--accent); }
+details summary:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+details ul { margin: 8px 0 0; padding-left: 18px; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--font-data); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 500; }
+td.mark { text-align: center; font-family: var(--font-data); color: var(--accent); }
+.bar { height: 12px; background: var(--chip); border-radius: 3px; position: relative; overflow: hidden; }
+.bar > span { position: absolute; inset: 0 auto 0 0; background: var(--accent); }
+.bar > span.spent { background: var(--ok); }
+.source { font-family: var(--font-data); font-size: 0.72rem; color: var(--muted); overflow-wrap: anywhere; }
+.empty { border: 1px dashed var(--line); border-radius: 6px; padding: 16px; color: var(--muted); }
+footer { display: flex; flex-direction: column; gap: 4px; }
+@media (max-width: 520px) { .kv { grid-template-columns: 1fr; } .kv dt { margin-top: 6px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+"""
+
+
+def pill(status: str) -> str:
+    return f'<span class="pill {esc(status)}">{esc(status)}</span>'
+
+
+def render_direction(data: dict) -> str:
+    goals = data["goals"]
+    cards = []
+    for pillar in goals["pillars"]:
+        mine = [e for e in data["experiments"] if e["pillar"] == pillar["id"]]
+        segs = "".join(f'<i class="{esc(e["status"])}" title="{esc(e["id"])} {esc(e["status"])}"></i>' for e in mine)
+        ids = ", ".join(e["id"] for e in mine) or "none yet"
+        cards.append(
+            f'<article class="panel"><h3>{esc(pillar["name"])}</h3>'
+            f'<p class="small">{esc(pillar["moat"])}</p>'
+            f'<div class="seg" role="img" aria-label="{len(mine)} experiments">{segs}</div>'
+            f'<p class="small mono muted">{esc(ids)}</p>'
+            f'<dl class="kv"><dt>Measured by</dt><dd>{esc(pillar["metric"])}</dd><dt>Now</dt><dd>{esc(pillar["state"])}</dd></dl>'
+            f'<p class="source">source: {esc(pillar["source"])}</p></article>'
+        )
+    return (f'<section><h2>Direction</h2><div class="grid wide">{"".join(cards)}</div>'
+            f'<p class="small muted" style="margin-top:10px">Test of the north star: {esc(goals["north_star"]["test"])}</p></section>')
+
+
+def render_attention(data: dict) -> str:
+    items = []
+    for gate in data["gates"]["items"]:
+        if gate["status"] == "done":
+            continue
+        unblocks = sorted(e["id"] for e in data["experiments"] if gate["id"] in e["blocked_by"] and e["status"] != "concluded")
+        who = "Frank" if gate["owner"] == "frank" else gate["owner"].capitalize()
+        tail = f'<span class="unblocks small muted">Unblocks {esc(", ".join(unblocks))}. {esc(gate["why"])}</span>' if unblocks else f'<span class="unblocks small muted">{esc(gate["why"])}</span>'
+        items.append((0 if gate["owner"] == "frank" else 1, gate["id"],
+                      f'<li><span class="pill">{esc(who)}</span><strong>{esc(gate["title"])}</strong>{tail}</li>'))
+    body = "".join(html_ for _, _, html_ in sorted(items))
+    return f'<section class="attention"><h2>Needs a decision or a task</h2><ul>{body}</ul></section>'
+
+
+def render_card(exp: dict, data: dict) -> str:
+    blockers = blockers_of(exp, data)
+    chips = "".join(f'<span class="pill" title="{esc(b["title"])}">{"✓ " if b["resolved"] else ""}{esc(b["id"])}</span>' for b in blockers) or '<span class="muted">none</span>'
+    projects = "".join(f'<span class="pill">{esc(p)}</span>' for p in exp["projects"])
+    places = ", ".join(PLACES[r["where"]] for r in exp["runs_on"])
+    arms = "".join(f'<li><span class="mono">{esc(a.get("harness") or "TBD: " + str(a.get("harness_pending", "")))}</span> on <span class="mono">{esc(a["model"])}</span> <span class="muted">({esc(a["role"])})</span></li>' for a in exp["arms"])
+    why = "".join(f'<li>{esc(r["where"])}: {esc(r["why"])}</li>' for r in exp["runs_on"])
+    evidence = "".join(f'<li>{esc(ev["claim"])} <span class="source">{esc(ev["source"])}</span><br><span class="muted">Caveat: {esc(ev["caveat"])}</span></li>' for ev in exp.get("prior_evidence", []))
+    pre = "".join(f'<li>{esc(x)}</li>' for x in exp.get("preconditions", []))
+    b = exp["budget"]
+    clock = exp["clock"]["started"] or "starts when unblocked"
+    extra = ""
+    if pre:
+        extra += f'<details><summary>Preconditions</summary><ul>{pre}</ul></details>'
+    if evidence:
+        extra += f'<details><summary>Prior evidence, not proof</summary><ul>{evidence}</ul></details>'
+    return (
+        f'<article class="panel card" id="{esc(exp["id"])}"><header><h3>{esc(exp["title"])}</h3>{pill(exp["status"])}</header>'
+        f'<p class="small">{esc(exp["hypothesis"])}</p>'
+        f'<dl class="kv"><dt>Id</dt><dd class="mono">{esc(exp["id"])} · {esc(exp["pillar"])}</dd>'
+        f'<dt>Serves</dt><dd class="chips">{projects}</dd>'
+        f'<dt>Runs on</dt><dd>{esc(places)}</dd>'
+        f'<dt>Measures</dt><dd class="mono">{esc(exp["metric"]["primary"])}</dd>'
+        f'<dt>Spend cap</dt><dd class="mono">{money(b["token_pass_usd_cap"])} Token Pass · {money(b["infra_usd_cap"])} infra · {esc(b["frank_hours"])} h Frank</dd>'
+        f'<dt>Waiting on</dt><dd class="chips">{chips}</dd>'
+        f'<dt>Clock</dt><dd class="mono">{esc(clock)} · 30-day limit</dd>'
+        f'<dt>Feeds</dt><dd>{esc(exp["decision_it_feeds"])}</dd>'
+        f'<dt>Owner / verifier</dt><dd class="mono">{esc(exp["owner"])} / {esc(exp["verifier"])}</dd></dl>'
+        f'<details><summary>Arms ({len(exp["arms"])})</summary><ul>{arms}</ul></details>'
+        f'<details><summary>Pass rule and kill rule</summary><ul><li>Pass: {esc(exp["success_rule"])}</li><li>Kill: {esc(exp["kill"])}</li><li>Human gate: {esc(exp["human_gate"])}</li></ul></details>'
+        f'<details><summary>Why these places</summary><ul>{why}</ul></details>{extra}</article>'
+    )
+
+
+def render_board(data: dict) -> str:
+    groups = []
+    for status in STATUSES:
+        mine = [e for e in data["experiments"] if e["status"] == status]
+        if mine:
+            groups.append(f'<div><p class="eyebrow">{esc(status)} · {len(mine)}</p><div class="grid wide" style="margin-top:8px">{"".join(render_card(e, data) for e in mine)}</div></div>')
+    return f'<section><h2>Experiments</h2><div style="display:flex;flex-direction:column;gap:22px">{"".join(groups)}</div></section>'
+
+
+def render_where(data: dict) -> str:
+    exps = data["experiments"]
+    head = "".join(f'<th><a href="#{esc(e["id"])}">{esc(e["id"][4:])}</a></th>' for e in exps)
+    rows = []
+    for key, label in PLACES.items():
+        cells = "".join(f'<td class="mark">{"●" if any(r["where"] == key for r in e["runs_on"]) else ""}</td>' for e in exps)
+        rows.append(f'<tr><td><strong>{esc(label)}</strong><br><span class="small muted">{esc(PLACE_NOTES[key])}</span></td>{cells}</tr>')
+    return (f'<section><h2>What runs where</h2><div class="panel table-scroll"><table><thead><tr><th>Place</th>{head}</tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            f'<p class="small muted" style="margin-top:8px">Column headings are experiment numbers (EXP-001 is 001).</p></section>')
+
+
+def render_projects(data: dict) -> str:
+    exps = data["experiments"]
+    head = "".join(f'<th><a href="#{esc(e["id"])}">{esc(e["id"][4:])}</a></th>' for e in exps)
+    rows = []
+    for proj in data["goals"]["projects"]:
+        cells = "".join(f'<td class="mark">{"●" if proj["id"] in e["projects"] else ""}</td>' for e in exps)
+        rows.append(f'<tr><td><strong>{esc(proj["name"])}</strong><br><span class="small muted">{esc(proj["gets"])}</span></td>{cells}</tr>')
+    return (f'<section><h2>Which projects each experiment serves</h2><div class="panel table-scroll"><table><thead><tr><th>Project</th>{head}</tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div></section>')
+
+
+def render_budget(data: dict, summary: dict) -> str:
+    b = data["budget"]
+    live = [e for e in data["experiments"] if e["status"] not in ("concluded", "killed")]
+    tp_caps = sum(e["budget"]["token_pass_usd_cap"] for e in live)
+    infra_caps = sum(e["budget"]["infra_usd_cap"] for e in live)
+    alloc, monthly = b["token_pass"]["lab_allocation_usd"], b["token_pass"]["monthly_usd"]
+    infra_cap = b["railway_infra"]["monthly_cap_usd"]
+    spent = f'{money(summary["token_pass_month_usd"])} this month' if summary["used"] else "not measured: no real receipts yet"
+    keys = "".join(f'<tr><td>{esc(k["name"])}</td><td class="mono">{money(k["cap_usd"])}</td></tr>' for k in b["gateway_key_caps"]["keys"])
+    return (
+        '<section><h2>Budget</h2><div class="grid wide">'
+        f'<article class="panel"><h3>Token Pass, lab share</h3>'
+        f'<div class="bar" role="img" aria-label="Committed caps {tp_caps} of {alloc}"><span style="width:{min(100, 100*tp_caps/alloc if alloc else 0):.0f}%"></span></div>'
+        f'<p class="mono">{money(tp_caps)} committed of {money(alloc)} lab allocation ({money(monthly)} shared monthly credit)</p>'
+        f'<p class="small">Measured spend: {esc(spent)}</p><p class="small muted">{esc(b["token_pass"]["note"])}</p>'
+        f'<p class="source">committed: sum of open experiment caps · allocation: lab/budget.json · measured: {esc(summary["path"])}</p></article>'
+        f'<article class="panel"><h3>Railway infra (proposed)</h3>'
+        f'<div class="bar"><span style="width:{min(100, 100*infra_caps/infra_cap if infra_cap else 0):.0f}%"></span></div>'
+        f'<p class="mono">{money(infra_caps)} committed of {money(infra_cap)} per month</p>'
+        f'<p class="small muted">{esc(b["railway_infra"]["note"])}</p><p class="source">lab/budget.json · status: {esc(b["railway_infra"]["status"])}</p></article>'
+        f'<article class="panel"><h3>Gateway key caps</h3><div class="table-scroll"><table><thead><tr><th>Key</th><th>Cap</th></tr></thead><tbody>{keys}</tbody></table></div>'
+        f'<p class="small muted">Team cap {money(b["gateway_key_caps"]["team_cap_usd"])}; default for new keys {money(b["gateway_key_caps"]["default_cap_usd"])}.</p>'
+        f'<p class="source">{esc(b["gateway_key_caps"]["source"])}</p></article></div></section>'
+    )
+
+
+def render_receipts(summary: dict) -> str:
+    if not summary["used"]:
+        note = f' {summary["synthetic"]} synthetic test receipts ignored.' if summary["synthetic"] else ""
+        return ('<section><h2>Measured so far</h2><div class="empty">No real routing receipts yet.' + esc(note) +
+                ' This table fills from the first experiment run; until then the experiments above are plans, not results.</div>'
+                f'<p class="source" style="margin-top:6px">source: {esc(summary["path"])}</p></section>')
+    rows = []
+    for (cls, model), r in sorted(summary["by_class_model"].items()):
+        per = r["cost"] / r["ok"] if r["ok"] else None
+        rows.append(f'<tr><td class="mono">{esc(cls)}</td><td class="mono">{esc(model)}</td><td class="mono">{r["n"]}</td>'
+                    f'<td class="mono">{100*r["ok"]/r["n"]:.0f}%</td><td class="mono">{money(r["cost"])}</td>'
+                    f'<td class="mono">{"n/a" if per is None else "$" + format(per, ".4f")}</td></tr>')
+    return ('<section><h2>Measured so far</h2><div class="panel table-scroll"><table><thead><tr><th>Class</th><th>Model</th><th>Calls</th><th>Call success</th><th>Cost</th><th>Cost per successful call</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            f'<p class="source" style="margin-top:6px">source: {esc(summary["path"])} · {summary["used"]} receipts used, {summary["skipped"]} malformed skipped, {summary["synthetic"]} synthetic ignored</p></section>')
+
+
+def render_harnesses(data: dict) -> str:
+    rows = []
+    for h in data["harnesses"]["items"]:
+        m = h["measured"]
+        measured = ("not measured" if m is None else f'n={esc(m["n"])}, {esc(json.dumps({k: v for k, v in m.items() if k not in ("n", "source")}))}')
+        rows.append(f'<tr><td><strong>{esc(h["name"])}</strong><br><span class="small muted">{esc(h["role"])}</span></td>'
+                    f'<td class="mono">{esc(h["layer"])}</td><td><span class="pill">{esc(h["status"])}</span></td>'
+                    f'<td class="mono">{esc(h["headless"])}</td><td class="small">{measured}</td></tr>')
+    return ('<section><h2>Harnesses we compare</h2><div class="panel table-scroll"><table><thead><tr><th>Harness</th><th>Layer</th><th>Status</th><th>Headless</th><th>Measured</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            '<p class="small muted" style="margin-top:8px">L0 commodity · L2 routing brain · L3 OmS · L4 public template. A measured cell needs at least the sample floor of runs and a source file.</p></section>')
+
+
+def render_packs(data: dict) -> str:
+    rows = []
+    for p in data["packs"]["items"]:
+        rows.append(f'<tr><td><strong class="mono">{esc(p["id"])}</strong><br><span class="small muted">{esc(p["title"])}</span></td>'
+                    f'<td>{esc(p["domain"])}</td><td><span class="pill">{esc(p["status"])}</span></td>'
+                    f'<td class="mono">{len(p["tasks"])}</td><td class="mono">{100 * pack_judged_share(p):.0f}%</td>'
+                    f'<td class="small">{esc(p["weakness"])}</td></tr>')
+    floor = sample_floor(data)
+    return ('<section><h2>Task packs</h2><div class="panel table-scroll"><table><thead><tr><th>Pack</th><th>Domain</th><th>Status</th><th>Tasks</th><th>Judged</th><th>Known weakness</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>'
+            f'<p class="small muted" style="margin-top:8px">At least {esc(floor)} runs per harness and task before any claim. Judged tasks are at most half of a pack and use a blind judge from another family.</p></section>')
+
+
+def render(data: dict, summary: dict, fragment: bool = False) -> str:
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    counts = {s: sum(1 for e in data["experiments"] if e["status"] == s) for s in STATUSES}
+    tally = " · ".join(f"{n} {s}" for s, n in counts.items() if n)
+    body = (
+        '<div class="wrap"><header>'
+        '<p class="eyebrow">Research lab · agentic-ops-hub</p><h1>Starlight Lab</h1>'
+        f'<p class="north">{esc(data["goals"]["north_star"]["text"])}</p>'
+        f'<p class="small muted mono">{esc(tally)}</p></header>'
+        + render_direction(data) + render_attention(data) + render_board(data) + render_where(data)
+        + render_harnesses(data) + render_packs(data) + render_projects(data) + render_budget(data, summary) + render_receipts(summary)
+        + f'<footer class="small muted"><p>Generated {esc(now)} from commit {esc(git_sha())}. Edit lab/*.json, never this page.</p>'
+        '<p>Lifecycle rules (S1 experiment: hypothesis, metric, token budget, 30-day limit) come from registry/README.md.</p></footer></div>'
+    )
+    if fragment:
+        return f'<title>Starlight Lab</title>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">\n<style>{STYLE}</style>\n{body}\n'
+    return ('<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
+            '<title>Starlight Lab</title>'
+            '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">'
+            f'<style>{STYLE}</style></head><body>{body}</body></html>\n')
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--check", action="store_true", help="validate the registry and exit")
+    parser.add_argument("--artifact", action="store_true", help="emit a page fragment for an Artifact publish")
+    parser.add_argument("--out", help="output file (default lab/dist/index.html)")
+    parser.add_argument("--receipts", help="routing.jsonl path override")
+    args = parser.parse_args(argv)
+
+    data = load()
+    problems = validate(data)
+    for p in problems:
+        print(f"lab: {p}", file=sys.stderr)
+    if problems:
+        return 1
+    if args.check:
+        print(f"lab: ok, {len(data['experiments'])} experiments, {len(data['gates']['items'])} gates")
+        return 0
+    summary = summarize_receipts(Path(args.receipts) if args.receipts else None)
+    out = Path(args.out) if args.out else LAB / "dist" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(render(data, summary, fragment=args.artifact), encoding="utf-8", newline="\n")
+    print(f"lab: wrote {out}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

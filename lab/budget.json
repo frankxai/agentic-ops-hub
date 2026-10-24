@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-10-21",
+  "token_pass": {
+    "team": "starlight-intelligence",
+    "monthly_usd": 80,
+    "lab_allocation_usd": 30,
+    "note": "One shared $80 credit per month, no rollover, 403 when empty. The lab gets its own key with a $30 budget so experiments cannot drain production work.",
+    "source": "Vercel AI Gateway Token Pass terms, read 2026-10"
+  },
+  "railway_infra": {
+    "monthly_cap_usd": 20,
+    "status": "proposed",
+    "note": "Needs Frank's approval (dec-railway-budget). EXP-004 replaces this guess with a measurement."
+  },
+  "gateway_key_caps": {
+    "source": "vercel ai-gateway budgets list, 2026-10-21",
+    "note": "Caps set on every existing key so one leaked key has a bounded loss.",
+    "keys": [
+      {"name": "Starlight Yogabook", "cap_usd": 80},
+      {"name": "starlight-ci-2", "cap_usd": 50},
+      {"name": "Arcanea", "cap_usd": 25},
+      {"name": "Arcanea Imagine", "cap_usd": 25},
+      {"name": "Lobe Arcanea", "cap_usd": 25},
+      {"name": "AI Gateway v0 Key", "cap_usd": 10},
+      {"name": "v0", "cap_usd": 10},
+      {"name": "v0 AI Architect Academy", "cap_usd": 10},
+      {"name": "Vercel Coding Agent", "cap_usd": 10},
+      {"name": "X", "cap_usd": 1},
+      {"name": "Verce", "cap_usd": 1},
+      {"name": "Vercel AI Agent", "cap_usd": 1}
+    ],
+    "team_cap_usd": 150,
+    "default_cap_usd": 10
+  }
+}
