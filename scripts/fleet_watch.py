@@ -115,7 +115,7 @@ def check_heartbeats(
 def check_ledger(now: datetime, max_age_hours: float) -> list[str]:
     rel = LEDGER_PATH.relative_to(REPO_ROOT)
     try:
-        head = LEDGER_PATH.read_text(encoding="utf-8")[:4000]
+        head = LEDGER_PATH.read_text(encoding="utf-8")[:131072]
     except OSError as err:
         return [f"{rel}: unreadable ({err})"]
     match = LAST_SWEEP_RE.search(head)
