@@ -34,6 +34,8 @@ Every protection below exists so that a single compromised prompt, drifted instr
   └─────────────────────────────────────────────────────────────┘
 ```
 
+These L1–L7 number *defenses*. The L0–L7 in `ECOSYSTEM.md` number *repos*, and only L5 means payments in both. There L6 is the swarm runtime and L7 is assurance, not the human gate.
+
 ### L1 — Audit trail (foundation)
 Append-only JSONL of every significant action, across the whole stack.
 - **Source:** ACOS audit-trail hook; payments echo to `record_audit_entry` (Payments MCP).
@@ -53,19 +55,19 @@ Per-tool, per-directory scoping. The 6 ACOS IAM profiles, applied to the agent s
 The queen→founder→human ladder from `AGENT-STACK.md`. Structural, not discretionary: crossing a cap, a stream boundary, or into irreversibility forces escalation.
 
 ### L5 — Payment governance
-The control surface that makes money safe. Enforced by the Payments MCP (fail-closed):
+The control surface that makes money safe. Implemented by the Payments MCP (verify-only, fail-closed): it returns verdicts and pending-approval objects and never moves money.
 - **Mandate verification (AP2):** every charge must carry a cryptographically signed mandate proving the human authorized *this* purchase for *this* amount. No mandate → reject.
-- **Spend caps:** per-transaction, per-day, per-stream. Over cap → escalate, never auto-approve.
-- **Audit entry:** every settlement writes to L1 first.
-- **Multi-agent consensus (Byzantine):** high-value or cross-stream payments require agreement from independent verifier agents (`agentic-payments` pattern) — no single agent authorizes large money.
+- **Spend caps:** per-transaction, per-day, per-stream. Over cap → escalate, never auto-approve. The MCP checks each charge against the ceilings its caller (the Payments Queen) passes in; it holds no cap configuration, and raising a ceiling is a Founder + human decision.
+- **Audit entry:** every payment verdict is recorded with `record_audit_entry` before it is acted on, and a failed write fails the action. The Payments Queen sequences this; the MCP does not require a prior audit entry.
+- **Multi-agent consensus (Byzantine):** high-value or cross-stream payments require agreement from independent verifier agents (`agentic-payments` pattern) — no single agent authorizes large money. **Not implemented in the MCP yet:** until it is, high-value and over-cap payments escalate to a human via `require_human_approval`.
 
 ### L6 — Red/blue
 Continuous adversarial testing (`starlight-evals` Income & Payments Safety lane). Red team forges mandates, removes disclosures, tampers links, attempts exfiltration; blue team must hold. See `RED-BLUE-CHARTER.md`.
 
 ### L7 — Human gate (last line)
-The non-negotiable hard-stops (from FrankX doctrine): moving funds **outside a pre-authorized, capped merchant settlement** (treasury moves, arbitrary transfers), sending blasts, rotating keys, deleting/renaming live URLs, force-pushing production. **Always human** — and fund movement is additionally multi-sig / HSM-gated on the signature itself.
+The non-negotiable hard-stops (from FrankX doctrine): moving funds (merchant settlements, treasury moves, arbitrary transfers), sending blasts, rotating keys, deleting/renaming live URLs, force-pushing production. **Always human** — and fund movement is additionally multi-sig / HSM-gated on the signature itself.
 
-A *capped, mandate-verified merchant settlement* may be agent-signed per L5 (using a single-use, scope-limited credential released for that one settlement). Everything larger, novel, or treasury-level is human. Agents prepare; humans commit.
+A *capped, mandate-verified charge* earns a `within-cap` verdict from L5. That verdict is not a settlement and releases no credential: a human decides and signs the settlement, and the Payments MCP has no tool that moves funds. Agents prepare; humans commit.
 
 ---
 
