@@ -21,5 +21,5 @@ Consumers point at them: frankx.ai-vercel-website #1094, FrankX-AI/FrankX #296, 
 Open:
 
 1. The website editorial contract (`.starlight/editorial-contract.json`, its CI workflow and the STARLIGHT-EDITORIAL blocks) pins design-intelligence `50ae34c` from Codex PR #14, which was closed unmerged. Decide: revive #14 on the new namespace, or retire the projection. Codex owns that lane.
-2. The local claude-code-config checkout (where `~/.claude/agents` and the brand-voice skill load from) was 11 commits behind main with 571 uncommitted entries on 2026-10-24 (`git rev-list`, `git status --porcelain`); 15 of 139 incoming files overlap them, so it was not pulled. Whoever owns that tree pulls once it is clean.
+2. The local claude-code-config checkout (where `~/.claude/agents` and the brand-voice skill load from) was 11 commits behind main with 571 uncommitted entries, and 15 of 139 incoming files overlapped them, as measured by Claude on 2026-10-24 (session measurement, not stored). Re-measure before acting: `git -C repos/claude-code-config rev-list --count HEAD..origin/main` and `git -C repos/claude-code-config status --porcelain | wc -l`, so it was not pulled. Whoever owns that tree pulls once it is clean.
 3. Hyperagent: give it the read-order prompt from the 2026-10-23 session and grade its first six specimens against POINT_OF_VIEW.
