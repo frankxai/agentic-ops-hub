@@ -27,6 +27,7 @@ Stdlib only: the job that holds the App token installs nothing.
 """
 from __future__ import annotations
 
+from typing import Any
 import argparse
 import hashlib
 import json
@@ -198,7 +199,7 @@ MAX_REVIEW_TRIES = 3
 
 SEVERITIES = ("critical", "high", "medium", "low")
 VERDICTS = ("approve", "request_changes")
-REVIEW_SCHEMA = {
+REVIEW_SCHEMA: dict[str, Any] = {
     "type": "object",
     "properties": {
         "verdict": {"type": "string", "enum": list(VERDICTS)},
@@ -243,7 +244,7 @@ def _strip_comment(line: str) -> str:
     return line.rstrip()
 
 
-def _scalar(raw: str):
+def _scalar(raw: str) -> Any:
     raw = raw.strip()
     if raw == "":
         return None
@@ -280,7 +281,7 @@ def parse_policy_text(text: str) -> dict:
             continue
         lines.append((len(line) - len(line.lstrip(" ")), line.strip(), number))
 
-    def block(i: int, indent: int):
+    def block(i: int, indent: int) -> tuple[Any, int]:
         if lines[i][1].startswith("- ") or lines[i][1] == "-":
             out: list = []
             while i < len(lines) and lines[i][0] == indent and (lines[i][1].startswith("- ") or lines[i][1] == "-"):
@@ -315,7 +316,7 @@ def parse_policy_text(text: str) -> dict:
                 mapping[key] = None
         return mapping, i
 
-    def _list_mapping(i: int, indent: int):
+    def _list_mapping(i: int, indent: int) -> tuple[dict[str, Any], int]:
         entry: dict = {}
         first = lines[i][1][1:].strip()
         inner_indent = indent + (len(lines[i][1]) - len(first))
@@ -520,7 +521,7 @@ class DepError(ValueError):
     """A dependency change the steward cannot prove is a plain version bump."""
 
 
-def _json(text, what: str):
+def _json(text: Any, what: str) -> Any:
     if not isinstance(text, str):
         raise DepError(f"{what}: file content unavailable")
     try:
@@ -601,7 +602,7 @@ def package_lock_change(path: str, base_text, head_text, name: str) -> set:
     return locked
 
 
-def _line_manifest_change(path: str, patch: str, name: str) -> tuple[str, str]:
+def _line_manifest_change(path: str, patch: Any, name: str) -> tuple[str, str]:
     base = _basename(path)
     pattern = LINE_MANIFEST["requirements" if base.startswith("requirements") else base]
     removed, added = _changed_lines(patch or "")
@@ -845,7 +846,8 @@ def parse_verdict(raw) -> dict:
             raw = json.loads(raw)
         except (json.JSONDecodeError, UnicodeDecodeError):
             return {**invalid, "summary": "reviewer output is not valid JSON"}
-    if not isinstance(raw, dict) or set(raw) != set(REVIEW_SCHEMA["required"]):
+    req: list[str] = REVIEW_SCHEMA["required"] # type: ignore
+    if not isinstance(raw, dict) or set(raw.keys()) != set(req):
         return {**invalid, "summary": "reviewer output does not match the verdict schema"}
     if raw["verdict"] not in VERDICTS or not isinstance(raw["summary"], str) or not isinstance(raw["brief"], str):
         return {**invalid, "summary": f"bad verdict/summary/brief: {str(raw.get('verdict'))[:40]!r}"}
@@ -867,7 +869,7 @@ def parse_verdict(raw) -> dict:
 # --------------------------------------------------------------------------
 # Decision — pure
 # --------------------------------------------------------------------------
-def decide(tier: str, mode: str, kill: bool, checks: str, primary: dict | None, secondary: dict | None,
+def decide(tier: str, mode: str, kill: bool, checks: str, primary: dict[str, Any] | None, secondary: dict[str, Any] | None,
            merged_24h: int, daily_cap: int, incidents: int, merges_left: int) -> dict:
     """What to do with a classified PR. `primary`/`secondary` come from parse_verdict.
 
@@ -1004,12 +1006,12 @@ def openai_review(system: str, content: str, model: str, api_key: str) -> dict:
 # GitHub API (stdlib). Transport is injectable so tests run without network.
 # --------------------------------------------------------------------------
 class GitHubError(RuntimeError):
-    def __init__(self, status: int, message: str):
+    def __init__(self, status: int, message: str) -> None:
         super().__init__(f"HTTP {status}: {message}")
         self.status = status
 
 
-def _urllib_transport(method: str, url: str, headers: dict, body: bytes | None):
+def _urllib_transport(method: str, url: str, headers: dict[str, str], body: bytes | None) -> tuple[int, dict[str, str], bytes]:
     req = urllib.request.Request(url, data=body, method=method, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
@@ -1019,11 +1021,11 @@ def _urllib_transport(method: str, url: str, headers: dict, body: bytes | None):
 
 
 class GitHub:
-    def __init__(self, token: str, transport=None, api: str = "https://api.github.com"):
+    def __init__(self, token: str, transport: Any = None, api: str = "https://api.github.com") -> None:
         self.token, self.api = token, api
         self.transport = transport or _urllib_transport
 
-    def request(self, method: str, path: str, body=None, accept: str = "application/vnd.github+json"):
+    def request(self, method: str, path: str, body: Any = None, accept: str = "application/vnd.github+json") -> tuple[Any, dict[str, str]]:
         url = path if path.startswith("http") else f"{self.api}/{path.lstrip('/')}"
         headers = {"Authorization": f"Bearer {self.token}", "Accept": accept,
                    "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "merge-steward"}
@@ -1041,7 +1043,7 @@ class GitHub:
         parsed = json.loads(raw) if raw else None
         return parsed, resp_headers
 
-    def get(self, path: str, **kw):
+    def get(self, path: str, **kw: Any) -> Any:
         return self.request("GET", path, **kw)[0]
 
     def get_text(self, path: str) -> str:
@@ -1056,7 +1058,7 @@ class GitHub:
             out.extend(items)
             if len(out) >= limit:
                 break
-            url = None
+            url = ""
             for part in (headers.get("Link") or headers.get("link") or "").split(","):
                 if 'rel="next"' in part:
                     url = part[part.index("<") + 1: part.index(">")]
@@ -1234,7 +1236,7 @@ class _Stop(Exception):
 
 
 class Steward:
-    def __init__(self, app: GitHub, hub: GitHub, config: dict, policies: dict, *, mode: str, kill_var: str,
+    def __init__(self, app: GitHub, hub: GitHub, config: dict[str, Any], policies: dict[str, Any], *, mode: str, kill_var: str,
                  steward_login: str, hub_sha: str, reviewer=None, now: datetime | None = None, log=print,
                  run_attempt: str = "1"):
         self.app, self.hub, self.cfg, self.policies = app, hub, config, policies
@@ -1361,7 +1363,7 @@ class Steward:
                 out.append({**fields, "issue": issue["number"]})
         return out
 
-    def ledger_write(self, repo: str, number: int, sha: str, state: str, review_id=None, issue=None, close=False):
+    def ledger_write(self, repo: str, number: int, sha: str, state: str, review_id: int | None = None, issue: int | None = None, close: bool = False) -> Any:
         body = "\n".join([
             f"{LEDGER_MARKER} repo={repo} pr={number} sha={sha} state={state} review={review_id or 'unknown'} -->",
             f"Merge Steward approval record for {repo}#{number} at `{sha[:12]}`: **{state}**.",
@@ -1705,7 +1707,7 @@ def _marker_fields(body: str) -> dict:
     return dict(re.findall(r"(\w+)=([\w.:-]+)", first))
 
 
-def render_comment(snap: dict, cls: dict, decision: dict, mode: str, hub_sha: str, checks: str, primary, secondary,
+def render_comment(snap: dict[str, Any], cls: dict[str, Any], decision: dict[str, Any], mode: str, hub_sha: str, checks: str, primary: dict[str, Any] | None, secondary: dict[str, Any] | None,
                    rules: str = "") -> str:
     icon = {"merge": "✅", "comment": "👀", "hold": "⏸️", "human": "🧑‍⚖️", "wait": "⏳", "skip": "⏹️"}[decision["action"]]
     lines = [
@@ -1768,7 +1770,7 @@ def _load_config() -> tuple[dict, dict]:
     return config, policies
 
 
-def make_reviewer(env: dict):
+def make_reviewer(env: Any) -> Any:
     anthropic_key, openai_key = env.get("ANTHROPIC_API_KEY", ""), env.get("OPENAI_API_KEY", "")
     primary_model = env.get("STEWARD_PRIMARY_MODEL") or "claude-opus-5"
     second_model = env.get("STEWARD_SECOND_MODEL") or "claude-sonnet-5"
